@@ -59,7 +59,7 @@ Using the **System Parameters** page, system administrators connect the pieces o
 2.  Select the BPM libraries (within the selected project) to retrieve task recordings from.
     - For Finance and Operations, for Microsoft content, select the February 2017 QPC Unified Library for Microsoft Dynamics 365 for Operations. 
     - For Retail, we will be releasing a library in July. 
-    - You do not need to select a library for Talent--the connection to the correct library is established for you. 
+    - You do not need to select a library for Talent—the connection to the correct library is established for you. 
 
 3.  Set the display order of the BPM libraries. This determines the order in which task recordings from the libraries will appear in the **Help** pane.
 
@@ -67,7 +67,7 @@ After you complete these steps, you can open the **Help** pane and click the **
 
 ### Showing translated task guides
 
-Translated task guides were first shipped in the May 2016 APQC Unified Library, and the Getting Started library. In Dynamics 365 for Operations, to see localized task guide help, make sure that you are connected to the May library. The language that a task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. 
+Translated task guides were first shipped in the May 2016 APQC Unified Library, and the Getting Started library. In Dynamics 365 Unified Operations, to see localized task guide help, make sure that you are connected to the May library. The language that a task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. 
 
 > [!NOTE]
 > Even though many task guides have been translated, right now our clients are not showing the translated task guide names. Also, only the task guides that were released in February 2016 are available in translation in the May library. We will release an updated library with additional translations.
