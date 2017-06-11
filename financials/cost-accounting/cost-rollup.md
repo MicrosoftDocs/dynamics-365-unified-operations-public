@@ -192,7 +192,7 @@ The dimension hierarchy **Profit & Loss statement** needs to be updated with the
 | &nbsp;&nbsp;&nbsp;&nbsp;Primary cost                        | 10001                   | 10003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Secondary cost                         | **SC-CC001**            | **SC-CC004**        |
 
-Create a **Cost rollup policy** were each cost center is mapped to a corresponding cost element of the type **Secondary**.
+Create a **Cost rollup policy** where each cost center is mapped to a corresponding cost element of the type **Secondary**.
 
 **Cost rollup polices**
 
