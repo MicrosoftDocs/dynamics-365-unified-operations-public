@@ -53,6 +53,7 @@
 ## [Price adjustments and discounts](price-adjustments-discounts.md)
 ## [Determine the optimal combination of overlapping discounts](optimal-combination-overlapping-discounts.md)
 ## [Define channel-specific discounts](define-channel-specific-discounts.md)
+## [Create coupons for retail sales](retail-coupons.md)
 # Products and merchandising
 ## [Retail hierarchies](retail-hierarchies.md)
 ## [Create and manage attributes](create-manage-attributes.md)
