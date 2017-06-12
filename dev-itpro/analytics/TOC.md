@@ -9,7 +9,7 @@
 ## [Cost accounting analysis](cost-accounting-analysis-content-pack.md)
 ### [Security for the Cost accounting analysis](setup-security-cost-accounting-content-pack.md)
 ## [Cost management](cost-management-content-pack.md)
-## [Credit and collections management](credit-collections-content-pack-power-bi.md)
+## [Credit and collections management](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
 ## [Employee competencies and development](employee-competencies-and-development-analysis-power-bi-content-pack.md)
 ## [Employee development](employee-development-PBI.md) 
 ## [Financial performance](financial-performance-power-bi-content-pack.md)
