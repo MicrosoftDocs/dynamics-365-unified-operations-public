@@ -44,11 +44,11 @@ Task recorder can record user actions in the client with exact fidelity. Each co
 ## Basic configuration
 To enable task recording in POS, follow these steps.
 
-1.  Click **Retail and commerce** &gt; **Channel Setup** &gt; **POS Setup** &gt; **Registers**.
+1.  Click **Retail** &gt; **Channel Setup** &gt; **POS Setup** &gt; **Registers**.
 2.  Click the register to enable task recording on.
 3.  On the **Register** tab, on the **General** FastTab, set the **Enable task recording** option to **Yes**.
 4.  Click **Save**.
-5.  Go to **Retail and commerce** &gt; **Retail IT** &gt; **Distribution schedule**.
+5.  Go to **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 6.  Select the **Registers (1090)** job, and then click **Run now**.
 
 ## Create a recording
@@ -129,7 +129,7 @@ Text that you enter in the **Text** field appears *above* the step text in the T
 Text that you enter in the **Notes** field appears *below* the step text in the Task guide. To read the note text, the user must expand the step text in the pop-up window. This location is appropriate for optional reading material or other information that might be useful to the user, but that the user doesn't require in order to complete the action.
 
 ## Help in Retail Modern POS and Cloud POS
-To show your own custom task recordings in the Help pane of Retail Modern POS and Cloud POS so that they can be viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connecting the Help system.](https://ax.help.dynamics.com/en/wiki/working-with-help/#connecting-the-help-system) Retail Modern POS and Cloud POS Help searches LCS in real time. It searches across all the BPM libraries that are selected in the Microsoft Dynamics AX Help system parameters and shows the relevant results. To access the **Help** menu, click the **Help** button (question mark) at the top of the screen and then in the search box type your process name and hit the search button. 
+To show your own custom task recordings in the Help pane of Retail Modern POS and Cloud POS so that they can be viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connecting the Help system](/dynamics365/unified-operations/dev-itpro/get-started/help-connect). Retail Modern POS and Cloud POS Help searches LCS in real time. It searches across all the BPM libraries that are selected in the Microsoft Dynamics 365 for Retail Help system parameters and shows the relevant results. To access the **Help** menu, click the **Help** button (question mark) at the top of the screen and then in the search box type your process name and hit the search button. 
 
 [![Help button](./media/help.jpg)](./media/help.jpg) 
 

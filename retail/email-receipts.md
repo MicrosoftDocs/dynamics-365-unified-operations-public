@@ -45,7 +45,7 @@ You must configure a SMTP server to send email receipts. 
 ## Set up email receipts
 ### Set default options for email receipts
 
-1.  Click **Retail and commerce &gt; Headquarters setup &gt; Parameters &gt; Retail parameters**.
+1.  Click **Retail &gt; Headquarters setup &gt; Parameters &gt; Retail parameters**.
 2.  Click the **Posting** tab, and then under **Email receipt**, in the **Receipt option** field, select a default option:
     -   **Standard receipt** – Print receipts from the point of sale register.
     -   **E-mail** – Send receipts to customers in email messages.
@@ -55,7 +55,7 @@ You must configure a SMTP server to send email receipts. 
 
 ### Set email receipt options for a customer
 
-1.  Click **Retail and commerce &gt; Customers &gt; All customers**.
+1.  Click **Retail &gt; Customers &gt; All customers**.
 2.  On the **All customers** list page, select a customer, then click **Edit**.
 3.  On the **Customers details** page, on the **Retail** FastTab, select an option in the **Receipt option** field:
     -   **Standard receipt** – The customer will receive only printed receipts. The printed receipt is generated from the point of sale register.
