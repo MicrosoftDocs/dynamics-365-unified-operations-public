@@ -83,7 +83,7 @@ Reports that are created by using Entity store take advantage of DirectQuery tec
 
 For an overview of Power BI integration with Entity store, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). For more information about how to create reports by using Entity store, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 
-If you're upgrading from Microsoft Dynamics AX 2012, you can upgrade cubes to aggregate measurements that use Entity store. You can then create Power BI reports by using Entity store. For more information, see [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](migrate-upgraded-cube-entity-store.md).
+If you're upgrading from Microsoft Dynamics AX 2012, you can upgrade cubes to aggregate measurements that use Entity store. You can then create Power BI reports by using Entity store. For more information, see [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](..migration-upgrade/migrate-upgraded-cube-entity-store.md).
 
 ### Creating self-service “data mash-up” reports by using OData
 _Data mash-up_ is a term that is used to refer to ad-hoc, self-service reports that combine data from multiple sources. As a power user or a business analyst, you can create Power BI reports by using Open Data Protocol (OData) endpoints.
