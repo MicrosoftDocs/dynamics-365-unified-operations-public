@@ -42,6 +42,7 @@
 ## Receipts
 ### [Set up receipt templates](receipt-templates-printing.md) 
 ### [Send email receipts from MPOS](email-receipts.md)
+## [Task recorder and Help for POS](task-recorder-retail-pos.md)
 # Monitoring and analysis
 ## [Monitor sales and margin performance](monitor-sales-margin-performance.md)
 ## [Analyze sales trends and patterns](analyze-sales-trends-patterns.md)
@@ -61,6 +62,7 @@
 ## [Set up bar codes](set-up-bar-codes.md)
 ## [Set up bar code masks](set-up-bar-code-masks.md)
 ## [Set up assortments](set-up-assortments.md)
+## [Sell and return products outside of an assortment](Sell-and-return-outside-assortments.md)
 # Loyalty
 ## [Set up a customer loyalty program](set-up-customer-loyalty-program.md)
 # Inventory
