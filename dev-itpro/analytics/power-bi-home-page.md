@@ -59,7 +59,7 @@ If you're using Dynamics 365 for Finance and Operations, Enterprise edition July
 
 ### How to access the content
 
-**Embedded content**
+#### Embedded content
 Except for the content listed above with an asterisk, the above content is embedded into the application. To learn more about where to view the Power BI content, click on the links above.
 
 #### .PBIX files available in Lifecycle Services
