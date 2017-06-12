@@ -2,10 +2,10 @@
 # required metadata
 
 title: Deprecated features
-description: This topic describes features that have been removed, or are planned for removal, from Dynamics 365 for Operations. It also lists features that were deprecated in Dynamics AX 7.0 releases.
+description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 04/18/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,8 +34,40 @@ ms.dyn365.ops.version: Platform update 6
 
 [!include[banner](../includes/banner.md)]
 
+This topic describes features that have been removed, or that are planned for removal.
 
-This topic describes features that have been removed, or are planned for removal, from Dynamics 365 for Operations. It also lists features that were deprecated in Dynamics AX 7.0 releases.
+## Features that have been deprecated in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+
+### Warehouse mobile devices portal
+
+Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment. This component is no longer supported in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. A native app that improves the user experience has replaced the functionality of WMDP. 
+
+|                                  |                                                 |
+|----------------------------------|-------------------------------------------------|
+| **Reason for deprecation**       | Duplicate functionality.                        |
+| **Replaced by another feature?** | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Modules affected**             | Warehouse management, Transportation management |
+
+### Advanced bank reconciliation matching rule for manual matching
+
+A matching rule was used to select and mark a bank document when documents were manually matched in the reconciliation worksheet.
+
+|                                  |                                                                                        |
+|----------------------------------|----------------------------------------------------------------------------------------|
+| **Reason for deprecation**       | Limited usage.                                                                         |
+| **Replaced by another feature?** | No. Column filtering capabilities should be used to find documents for reconciliation. |
+| **Modules affected**             | Cash and bank management                                                               |
+
+### Windows 8 tablet app
+
+The Windows 8 tablet app provided functionality for expense entry and approval.
+
+|                                  |                                                                                          |
+|----------------------------------|------------------------------------------------------------------------------------------|
+| **Reason for deprecation**       | Finance and Operations is compatible with tablets. The tablet app is no longer required. |
+| **Replaced by another feature?** | No.                                                                                      |
+| **Modules affected**             | Expense management                                                                       |
+
 
 Features that have been deprecated in Dynamics 365 for Operations 1611 with platform update 3
 ---------------------------------------------------------------------------------------------
@@ -813,8 +845,3 @@ Human Resources Payroll information
 | Reason for deprecation       | This functionality has been replaced by another feature.                                    |
 | Replaced by another feature? | Management Reporter (labeled **Financial reporting** in the current version of Dynamics AX) |
 | Modules affected             | General ledger                                                                              |
-
-
-
-
-

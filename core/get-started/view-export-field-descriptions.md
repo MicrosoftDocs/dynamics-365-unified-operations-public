@@ -41,7 +41,7 @@ Microsoft Dynamics 365 for Operations has descriptions for some of the more com
 
 Not all pages have field descriptions. We want to provide descriptions only for the more complex fields, not where the use of the field is obvious. Therefore, some pages don't have any field descriptions, some pages have a few descriptions, and some of the more complex pages, such as many of the parameters pages, have many descriptions. 
 
-If you have access to the Dynamics 365 for Operations development environment, you can add new field descriptions and customize existing descriptions. For example, you can add company-specific information to a field description. For more information, see [Customize field help](/dynamics365/operations/dev-itpro/user-interface/customize-field-help).
+If you have access to the Dynamics 365 for Operations development environment, you can add new field descriptions and customize existing descriptions. For example, you can add company-specific information to a field description. For more information, see [Customize field help](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help).
 
 ## See field descriptions in the user interface
 You can view field descriptions by hovering over a field. If no description is available, you see the field name when you hover over the field. (Note: In version 7.0.0, field descriptions can be viewed only on the **Field descriptions** page.) The following illustration shows the field description that appears when you hover over the **Lock items during count** field. 
@@ -105,7 +105,7 @@ For information about the various way to find pages, see the "Searching for page
 See also
 --------
 
-[Customize field help](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+[Customize field help](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help)
 
 
 

@@ -163,9 +163,9 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 See also
 --------
 
-[Office integration troubleshooting](/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting)
+[Office integration troubleshooting](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting)
 
-[Office integration tutorial](/dynamics365/operations/dev-itpro/office-integration/office-integration-tutorial)
+[Office integration tutorial](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial)
 
 [Configure email functionality in Microsoft Dynamics AX [AX 2012]](https://technet.microsoft.com/en-us/library/aa834374.aspx)
 

@@ -118,7 +118,7 @@ Importantly, your control should not only identify itself by name, but (using a 
 
     <p aria-live=”polite” aria-busy=”true”></p>
 
-**Indicate that the contents have been validated and are invalid** The async nature of Dynamics 365 for Operations will result in a dynamic field state change. The message bar will introduce itself to the visually-impaired user, and the control itself should express an invalid state.
+**Indicate that the contents have been validated and are invalid** The async nature will result in a dynamic field state change. The message bar will introduce itself to the visually-impaired user, and the control itself should express an invalid state.
 
 [aria-invalid (state)](http://www.w3.org/TR/wai-aria/states_and_properties#aria-invalid) - Indicates the entered value does not conform to the format expected by the application.
 
@@ -144,7 +144,7 @@ Importantly, your control should not only identify itself by name, but (using a 
 
 [aria-expanded (state)](http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded) - Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.
 
-**Describe applicable context menu** Dynamics Dynamics 365 for Operations provides a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
+**Describe applicable context menu** Microsoft Dynamics 365 for Finance and Operations, Enterprise edition provides a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
 
 [aria-haspopup](http://www.w3.org/TR/wai-aria/states_and_properties#aria-haspopup) - Indicates that the element has a pop-up context menu or sub-level menu.
 

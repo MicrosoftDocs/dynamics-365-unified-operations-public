@@ -45,7 +45,7 @@ You can turn on maintenance mode locally by running the following command.
 
 **Note:** On some virtual machines (VMs), the exact location of the Deployment.Setup.exe tool might differ. Check AosServiceWebRootbin.
 
-    c:\packagesbinMicrosoft.Dynamics.AX.Deployment.Setup.exe --metadatadir c:packages --bindir c:\packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd *********** --setupmode maintenancemode --isinmaintenancemode true
+    J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode true
 
 The following table describes the parameters that are used in this command.
 
@@ -67,7 +67,7 @@ If you try to access Dynamics 365 for Operations while the system is in mainten
 
 You can turn off maintenance mode by running the following command.
 
-    c:packagesbinMicrosoft.Dynamics.AX.Deployment.Setup.exe --metadatadir c:\packages --bindir c:packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd *********** --setupmode maintenancemode --isinmaintenancemode false
+    J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode false
 
 ## Maintenance mode in production environments
 To turn on maintenance mode in a production environment, you must submit a request to the Dynamics Service Engineering (DSE) team by using the **Other request** form in LCS on the **Service requests** page. For more information about submitting a request through LCS, see , see [Submit a request to the Dynamics Service Engineering team](../lifecycle-services/submit-request-dynamics-service-engineering-team.md). 

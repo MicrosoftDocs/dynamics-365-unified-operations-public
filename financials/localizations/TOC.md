@@ -1,4 +1,4 @@
-# [Localization overview](/dynamics365/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/financials/toc.json)
+# [Localization overview](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/toc.json)
 # Asia-Pacific
 ## Australia
 ### [Bank file formats](apac-aus-method-of-payment-pay-vendors-banks.md)
@@ -154,7 +154,9 @@
 ### [Fiscal books](latam-bra-fiscal-books.md)
 #### [ICMS tax fiscal documents](latam-bra-icms-tax-fiscal-documents.md)
 #### [Import fiscal documents](latam-bra-import-fiscal-documents.md)
+#### [Export and import legal entity transactions from General ledger consolidation](latam-bra-general-ledger-consolidation-transactions.md)
 #### [Import and verify NF-e XML documents and DANFE files](latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+#### [Process electronic payment remittances](latam-bra-process-electronic-payment-remittances.md)
 #### [Fiscal documents](latam-bra-fiscal-documents-fiscal-document-framework.md)
 #### [Fiscal document text placeholders](latam-bra-fiscal-document-text-placeholders.md)
 #### [Purchase complementary fiscal documents](latam-bra-purchase-complementary-fiscal-documents.md)
@@ -164,6 +166,8 @@
 ### [Journals generated during the electronic payment return process](latam-bra-examples-journals-generated-electronic-payment-return-process.md)
 ### [NF-e process](latam-bra-nf-e-process.md)
 ### [Parameters for legal entities](latam-bra-legal-entity-parameters.md)
+### [Acquire a CIAP fixed asset](latam-bra-ciap-fixed-asset.md)
+### [Dispose a CIAP fixed asset](latam-bra-ciap-fixed-asset.md)
 ### [Taxes](latam-bra-calculate-taxes.md)
 #### [Tax attributes](latam-bra-tax-attributes.md)
 #### [Tax payments](latam-bra-tax-payments.md)

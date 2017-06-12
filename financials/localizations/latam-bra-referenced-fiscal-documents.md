@@ -44,7 +44,7 @@ In some scenarios, a fiscal document must include another fiscal document's info
 
 ### Examples
 
--   If you try to reference a fiscal document that isn't in Microsoft Dynamics 365 for Operations, all the fiscal document information must be entered.
+-   If you try to reference a fiscal document that isn't in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, all the fiscal document information must be entered.
 -   When you return an item to a vendor or receive a return from a customer, a reference to the original document is added.
 -   Enter a manual fiscal document, model 01, in the system. You will create a fiscal document that references the original fiscal document.
 -   Enter a Sales Order for Retail Sales or NF-e (model 55). The fiscal document will reference the original retail document and fiscal printer.

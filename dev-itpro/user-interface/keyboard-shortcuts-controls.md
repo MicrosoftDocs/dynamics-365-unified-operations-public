@@ -56,7 +56,7 @@ Because of these potential issues, we recommend that you adhere to this guidance
 <h3>Keyboard shortcut links</h3>
 Here are links to the keyboard shortcuts that are documented for Dynamics 365 for Operations and supported browsers:
 <ul>
- 	<li><a href="https://ax.help.dynamics.com/en/wiki/shortcut-keys/">Dynamics 365 for Operations</a></li>
+ 	<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/get-started/shortcut-keys">Keyboard shortcuts</a></li>
  	<li><a href="https://support.microsoft.com/en-us/help/13805">Microsoft Edge</a></li>
  	<li><a href="https://support.google.com/chrome/answer/157179">Google Chrome</a></li>
  	<li><a href="https://support.microsoft.com/en-us/help/15357/windows-internet-explorer-11-keyboard-shortcuts">Internet Explorer 11</a></li>

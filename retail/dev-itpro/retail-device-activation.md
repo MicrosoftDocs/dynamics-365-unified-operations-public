@@ -45,7 +45,7 @@ Checklist to follow before activation
 3.  The worker must be mapped to a Microsoft Azure Active Directory (AAD) account (under **External identity**).
 4.  The AAD account to map must belong to the same tenant.
 5.  To map the worker to the AAD account, sign in to HQ by using the Admin account for Microsoft Dynamics Lifecycle Services (LCS).
-6.  Make sure that the worker is set up as a Dynamics 365 for Operations user in the Manager role (checked by validation).
+6.  Make sure that the worker is set up as a user in the Manager role (checked by validation).
 7.  Make sure that the channel is published (checked by validation).
 8.  Make sure that the channel database has the synced data from HQ, and that download jobs are running. To check this, run the following command in the channel database for the store.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recurring integrations
-description: This article provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, is a critical piece that any platform must support. For the current version of Microsoft Dynamics 365 for Operations, we have tried to simplify this process for all parties who are involved.
+description: This article provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, is a critical piece that any platform must support. 
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,20 +35,20 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, is a critical piece that any platform must support. For the current version of Microsoft Dynamics 365 for Operations, we have tried to simplify this process for all parties who are involved.
+This article provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, is a critical piece that any platform must support. 
 
-The process of data migration, and movement into and out of any enterprise system, is a critical piece that any platform must support. Considerable effort and planning go into building third-party integrations between an enterprise line of business (LOB) system such as Dynamics 365 for Operations and various source systems. Microsoft Dynamics AX 2012 enables these scenarios through Application Integration Framework (AIF). For the current version, we have tried to simplify this process for all parties who are involved, from integration solution builders to customer end users.
+The process of data migration, and movement into and out of any enterprise system, is a critical piece that any platform must support. Considerable effort and planning go into building third-party integrations between an enterprise line of business (LOB) system such as Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and various source systems. Microsoft Dynamics AX 2012 enables these scenarios through Application Integration Framework (AIF). For Finance and Operations, we have tried to simplify this process for all parties who are involved, from integration solution builders to customer end users.
 
 ## Architecture
-In Dynamics 365 for Operations, the integration does the following:
+Integration does the following:
 
 -   It builds on data entities and the rich data management platform (Data Import/Export Framework \[DIXF\]).
--   It enables the exchange of documents/files between Dynamics 365 for Operations and any third-party application or service.
+-   It enables the exchange of documents/files between Finance and Operations and any third-party application or service.
 -   It supports several document formats, source mapping, Extensible Stylesheet Language Transformations (XSLT), and filters. [![Formats](./media/image001-1024x348.png)](./media/image001.png)
 -   It uses secure REST application programming interfaces (APIs) and authorization mechanisms to receive data from and send data back to integration systems. [![REST](./media/image003-1024x431.png)](./media/image003.png)
 
 ## Authorization for the integration REST API
-The integration REST API uses the same OAuth 2.0 authentication model as the other service endpoints. Before the integrating client application can consume this endpoint, you must create an application ID in Microsoft Azure Active Directory (AAD) and give it appropriate permission to Dynamics 365 for Operations . When you create and enable a recurring job, you'll be prompted to enter the AAD application ID that will be interacting with that recurring job. Therefore, be sure to note down the application ID.
+The integration REST API uses the same OAuth 2.0 authentication model as the other service endpoints. Before the integrating client application can consume this endpoint, you must create an application ID in Microsoft Azure Active Directory (AAD) and give it appropriate permission to Finance and Operations. When you create and enable a recurring job, you'll be prompted to enter the AAD application ID that will be interacting with that recurring job. Therefore, be sure to note down the application ID.
 
 ## Set up a data project and recurring data jobs
 ### Create a data project
@@ -79,7 +79,7 @@ Open the System Administration workspace (not module) and click the Data Managem
 You can use well-known integration REST endpoints to integrate with the client, submit documents (import), or poll available documents for download (export). These endpoints support OAuth.
 
 ## Integration REST APIs
-The following set of APIs is used to exchange data between the integration client and Dynamics 365 for Operations.
+The following set of APIs is used to exchange data between the integration client and Finance and Operations.
 
 ### For import (enqueue)
 
@@ -103,7 +103,7 @@ To return a data package that contains all the data entities that were defined i
 
     GET https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/dequeue/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
 
-After the client downloads the data, an acknowledgment must be sent back to Dynamics 365 for Operations, so that we can mark the data as received.
+After the client downloads the data, an acknowledgment must be sent back to Finance and Operations, so that we can mark the data as received.
 
 ### For acknowledging
 

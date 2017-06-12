@@ -34,8 +34,8 @@
     "externalReference": [],
     "globalMetadata": {
       "layout": "Conceptual",
-      "searchScope": ["Operations"],
-      "breadcrumb_path": "/dynamics365/operations/breadcrumb/toc.json",
+      "searchScope": ["Unified Operations"],
+      "breadcrumb_path": "/dynamics365/unified-operations/fin-and-ops/breadcrumb/toc.json",
       "brand": "dyn-ops"
     },
     "fileMetadata": {},

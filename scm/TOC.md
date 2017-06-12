@@ -50,9 +50,10 @@
 ### [Purchase agreements](procurement/purchase-agreements.md)
 ## Product receipts and invoicing
 ### [Product receipt against purchase orders](procurement/product-receipt-against-purchase-orders.md)
-### [Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
-### [Vendor posting profiles](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Product information management
+## [Product information overview](pim/product-information.md)
 ## Maintain product categories
 ## Maintain product information
 ### Maintain product definition
@@ -187,7 +188,7 @@
 ### [Set up layout](warehousing/warehouse-configuration.md)
 ### [Warehouse work policies](warehousing/warehouse-work-policies.md)
 ### [Unit of measure and stocking policies](warehousing/unit-measure-stocking-policies.md)
-### [Warehouse Power BI content](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
+### [Warehouse Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
 ## Picking and packing
 ### [Packing materials and fees](warehousing/pack-materials-packing-material-fees.md)
 ## Inventory counting
@@ -207,15 +208,15 @@
 ### [Warehouse Mobile Devices Portal (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [Warehouse mobile device display settings](warehousing/change-warehouse-mobile-device-displays.md)
 
-# [Financials](/dynamics365/operations/financials/index)
+# [Financials](/dynamics365/unified-operations/financials/index)
 
-# [Human resources](/dynamics365/operations/human-resources/index)
+# [Human resources](/dynamics365/unified-operations/talent/index)
 
-# [Retail](/dynamics365/operations/retail/index)
+# [Retail](/dynamics365/unified-operations/retail/index)
 
-# [Developer and Administrator](/dynamics365/operations/dev-itpro/index)
+# [Developer and Administrator](/dynamics365/unified-operations/dev-itpro/index)
 
 # Other resources
-## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
-## [What's new or changed](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Dynamics 365 for Operations glossary](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
