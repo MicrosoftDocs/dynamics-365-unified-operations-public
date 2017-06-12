@@ -58,10 +58,6 @@ The table browser form is now in read-only mode on runtime environments (Sandbox
 
 The table browser form is designed for developers to quickly create and edit test data on development environments. It was also available to system administrators on runtime environments. As of Platform update 8, system administrators can only access the table browser in read-only mode on runtime environments, this is in reaction to live incidents caused by human error when system administrators inadvertently edited or removed live system data.
 
-
-## Templates for configuration data projects 
-This set of default configuration templates provides the necessary entities and sequencing to be able to complete the process of copying configuration data from one instance to another instance in a single step, using a configuration data project. 
-
 ## Deployment option - Local business data
 Some organizations are not ready to store their company’s mission critical data in the cloud. This requirement, in many cases, is due to industry regulations, country or geographic cloud adoption, recent data center investments, or an organization’s enterprise standards. For these customers, we are excited to announce a new deployment option that will not require business data to be stored in the cloud.
 This deployment option, “local business data,” supports running your business processes on-premises, supporting local transactions and storage of local business data, without replication of your business data to the Microsoft cloud. In these cases, the typical replication of business data in the Microsoft cloud (referenced in the cloud and edge scenario) is simply switched off.
