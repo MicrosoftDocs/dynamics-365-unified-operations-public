@@ -3,21 +3,21 @@
 
 title: Cross-docking from production orders to outbound docks | Microsoft Docs
 description: This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
-author: johanhoffmann
+author: BibiSp
 manager: AnnBe
-ms.date: 0000-00-00 00:00:00
-ms.topic: 
+ms.date: 04/04/2017
+ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form:  
 # ROBOTS: 
-# audience: 
+# audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: bis
 # ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1705903
