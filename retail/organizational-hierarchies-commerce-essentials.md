@@ -40,10 +40,10 @@ Commerce essentials has three types of internal organizations that you can defin
 An organization is a group of people who work together to carry out a business process or achieve a goal. An organizational hierarchy represents the relationships between the business units that make up your organization.
 
 ## Organizations
-In Commerce essentials, you can define three types of internal organizations: legal entities, operating units, and teams. In Microsoft Dynamics AX, all internal organizations are types of the Party entity. Therefore, these organizations use an address book to store addresses and other contact information. A party can be either a person or an organization, and it can belong to one or more address books.
+In Commerce essentials, you can define three types of internal organizations: legal entities, operating units, and teams. In Dynamics 365 for Retail, all internal organizations are types of the Party entity. Therefore, these organizations use an address book to store addresses and other contact information. A party can be either a person or an organization, and it can belong to one or more address books.
 ### Legal entities
 
-A legal entity is an organization that has a registered or legislated legal structure. Legal entities can enter into legal contracts and are required to prepare statements that report on their performance. A company is a type of legal entity in Microsoft Dynamics AX, and every legal entity is associated with a company ID. This association exists because a company ID, or DataAreaId, is used in some data models where companies are used as a boundary for data security. Users can access data only for the company that they are currently logged on to.
+A legal entity is an organization that has a registered or legislated legal structure. Legal entities can enter into legal contracts and are required to prepare statements that report on their performance. A company is a type of legal entity in Microsoft Dynamics 365 for Retail, and every legal entity is associated with a company ID. This association exists because a company ID, or DataAreaId, is used in some data models where companies are used as a boundary for data security. Users can access data only for the company that they are currently logged on to.
 
 ### Operating units
 

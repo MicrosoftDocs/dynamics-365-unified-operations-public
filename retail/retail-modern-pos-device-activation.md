@@ -58,7 +58,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 ### Verify that the device is correctly configured
 
 1. Use your Azure AD credentials to sign in to the Finance and Operations trial.
-2. On the **Welcome** page, use the menu in the upper left to go to **Retail and commerce** &gt; **Channels** &gt; **Channel deployment**.
+2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Channels** &gt; **Channel deployment**.
 3. On the **Channel deployment** page, select the **Registers** tile.
 4. On the **Registers** page, select a store register.
 
@@ -77,7 +77,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
 ### Download the Retail Modern POS installer
 
-1. On the **Welcome** page, use the menu in the upper left to go to **Retail and commerce** &gt; **Channels** &gt; **Channel deployment**.
+1. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Channels** &gt; **Channel deployment**.
 2. On the **Channel deployment** page, select the **Devices** tile.
 3. Select a device.
 
@@ -157,7 +157,7 @@ For this topic, we have already created workers and assigned them to the Houston
 
 ### Create a worker
 
-1. Go to **Retail and commerce** &gt; **Employees** &gt; **Workers**.
+1. Go to **Retail** &gt; **Employees** &gt; **Workers**.
 2. On the Action Pane, select **+New** to create a new employee.
 3. Enter the first and last name. For example, enter **John** as the first name and **Smith** as the last name.
 4. Verify that the **Legal entity** field is set to **USRT**, the **Worker type** field is set to **Employee**, and the **Employment start date** field is set to the current date at 12 AM, so that the worker's employment starts immediately.
