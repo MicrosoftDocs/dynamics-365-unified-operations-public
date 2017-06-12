@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Dynamics 365 for Retail
 # Payments FAQ
 
 ## What payment scenarios are supported?
-- Setting up a merchant account.
+- Set up a merchant account.
 - Process a call center order.
 - Process an online order.
 - Process a POS cash-and-carry transaction by using an accepting page.
