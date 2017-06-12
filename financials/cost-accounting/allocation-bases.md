@@ -2,7 +2,7 @@
 # required metadata
 
 title: Allocation bases
-description: Allocation bases are key components in Cost accounting and mostly used to allocate overhead costs. 
+description: This topic provides information about allocation bases. Allocation bases are key components in Cost accounting and are mostly used to allocate overhead costs. 
 author: YuyuScheller
 manager: AnnBe
 ms.date: 05/24/2017
@@ -34,409 +34,401 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
-An allocation base is the basis upon which Cost accounting allocates its overhead costs. An allocation base can be a quantity, for example, machine hours used, kilowatt hours consumed, or square footage occupied. Allocation bases are mostly used to assign overhead costs to produced inventory. For example, an IT department allocates its expenses based on the number of personal computers used by each department.
+An allocation base is the basis on which Cost accounting allocates overhead costs. An allocation base can be a quantity, such as machine hours that are used, kilowatt hours (kWh) that are consumed, or square footage that is occupied. Allocation bases are mostly used to assign overhead costs to inventory that is produced. For example, an IT department allocates its expenses according to the number of computers that each department uses.
 
 There are three types of allocation bases in Cost accounting:
--	 Predefined dimension member allocation bases
--	 Hierarchy allocation bases
--	 Formula allocation bases
+
+- Predefined dimension member allocation bases
+- Hierarchy allocation bases
+- Formula allocation bases
 
 ## Predefined dimension member allocation bases
 
-The predefined dimension member allocation bases are created automatically by the system when a dimension member is created. This applies to 
--  Statistical dimension members 
--  Cost element dimension members
+The predefined dimension member allocation bases are created automatically when a dimension member of one the following types is created:
+
+- Statistical dimension members
+- Cost element dimension members
 
 > [!NOTE]
-> The predefined dimension member allocation bases that are based on a cost element dimension member only consider the values from the data source provider, for example, general ledger or budget.
+> The predefined dimension member allocation bases that are based on a cost element dimension member consider the values only from the data source provider, such as the general ledger or budget.
 
-### Example 1: Use a cost element dimension member as the allocation base
-This example shows how to create a cost allocation rule to allocate the cost element 10002 Employee Insurance to the balance recorded on the cost element 10001 Salaries. The allocation rule is defined based on the ratio of each department salaries to total salaries. (Review needed!)
+### Example 1: Using a cost element dimension member as the allocation base
+This example shows how to create a cost allocation rule to allocate cost element 10002 (Employee insurance) to the balance that is recorded on cost element 10001 (Salaries). The allocation rule is defined based on the ratio of each department's salaries to total salaries. (Review needed!)
 
 In the general ledger, the chart of account is defined as follows.
 
-| Chart of account | Main account | Main account name |     Main account type    |
-|------------------|--------------|-------------------|---------|
-| Shared           | 10001        | Salaries          | Expense |
-| Shared           | 10002        | Employee insurance    | Expense |
+| Chart of account | Main account | Main account name  | Main account type |
+|------------------|--------------|--------------------|-------------------|
+| Shared           | 10001        | Salaries           | Expense           |
+| Shared           | 10002        | Employee insurance | Expense           |
 
-
-Define a cost element dimension and configure the data connector. After the data is imported, these entries are created in Cost accounting.
+Define a cost element dimension, and configure the data connector. After the data is imported, the following entries are created in Cost accounting.
 
 **Cost element dimension members**
 
-|    Cost element dimension name    |    Cost element    |    Cost element name            |          Type     |
-|-----------------------------------|---------------------|----------------------|---------------|
-|    Cost elements                  |    10001            |    Salaries          |    Primary    |
-|    Cost elements                  |    10002            |    Employee insurance    |    Primary    |
-
+| Cost element dimension name | Cost element | Cost element name  | Type    |
+|-----------------------------|--------------|--------------------|---------|
+| Cost elements               | 10001        | Salaries           | Primary |
+| Cost elements               | 10002        | Employee insurance | Primary |
 
 **Predefined dimension member allocation bases** 
 
-|    Name     |    Description       |    Cost element dimension    |
-|-------------|----------------------|------------------------------|
-|    10001    |    Salaries          |    Cost elements             |
-|    10002    |    Employee insurance    |    Cost elements             |
+| Name  | Description        | Cost element dimension |
+|-------|--------------------|------------------------|
+| 10001 | Salaries           | Cost elements          |
+| 10002 | Employee insurance | Cost elements          |
 
-In the general ledger, the following entries have been posted.
-- 	The entries that show main account salaries come from the Payroll system and are posted to cost centers.
--   The expense for employee insurance is manually posted to a default cost center.
+In the general ledger, the following entries have been posted:
 
+- The entries that show the Salaries main account come from the Payroll system and are posted to cost centers.
+- The expense for employee insurance is manually posted to a default cost center.
 
-|    Accounting date    |    Cost center     |    Main account            |    Amount in accounting currency    |                      |                |
-|-----------------------|--------------------|----------------------------|-------------------------------------|----------------------|----------------|
-|    03-01-2017         |    CC001           |    HR                      |    10001                            |    Salaries          |    2.000,00    |
-|    03-01-2017         |    CC002           |    FI                      |    10001                            |    Salaries          |    5.000,00    |
-|    03-01-2017         |    CC003           |    IT                      |    10001                            |    Salaries          |    3.000,00    |
-|    03-01-2017         |    CC099           |    Default cost center     |    10002                            |    Employee insurance    |    1.000,00    |
+| Accounting date | Cost center |                     | Main account |                    | Amount in accounting currency |
+|-----------------|-------------|---------------------|--------------|--------------------|-------------------------------|
+| 03-01-2017      | CC001       | HR                  | 10001        | Salaries           | 2,000.00                      |
+| 03-01-2017      | CC002       | FI                  | 10001        | Salaries           | 5,000.00                      |
+| 03-01-2017      | CC003       | IT                  | 10001        | Salaries           | 3,000.00                      |
+| 03-01-2017      | CC099       | Default cost center | 10002        | Employee insurance | 1,000.00                      |
 
-After the general ledger source data processing is run, the following entries are created in Cost accounting.
+After the general ledger source data is processed, the following entries are created in Cost accounting.
 
 **Cost entries**
 
-|    Cost object    |    Cost element           |    Cost behavior    |    Amount            |    Accounting date    |
-|-------------------|---------------------------|---------------------|----------------------|-----------------------|
-|    CC001          |    HR                     |    10001            |    Salaries          |    Unclassified       |
-|    CC002          |    FI                     |    10001            |    Salaries          |    Unclassified       |
-|    CC003          |    IT                     |    10001            |    Salaries          |    Unclassified       |
-|    CC099          |    Default cost center    |    10002            |    Employee insurance    |    Unclassified       |
+| Cost object | Cost element        | Cost behavior | Amount             | Accounting date |
+|-------------|---------------------|---------------|--------------------|-----------------|
+| CC001       | HR                  | 10001         | Salaries           | Unclassified    |
+| CC002       | FI                  | 10001         | Salaries           | Unclassified    |
+| CC003       | IT                  | 10001         | Salaries           | Unclassified    |
+| CC099       | Default cost center | 10002         | Employee insurance | Unclassified    |
 
-
-In this simplified example, a cost allocation rule is created to allocate the cost element 10002 employee insurance relatively to the balance recorded on the cost element 10001 Salaries. 
+In this simplified example, a cost allocation rule is created to allocate cost element 10002 (Employee insurance) relative to the balance that is recorded on cost element 10001 (Salaries).
 
 **Cost distribution rule**
 
-|    Cost object dimension hierarchy node    |    Cost element dimension hierarchy node    |    Cost behavior    |    Allocation base    |   |
-|--------------------------------------------|---------------------------------------------|---------------------|-----------------------|---|
-|    CC099                                   |    10002                                    |     Unclassified    |    10001              |   |
+| Cost object dimension hierarchy node | Cost element dimension hierarchy node | Cost behavior | Allocation base |
+|--------------------------------------|---------------------------------------|---------------|-----------------|
+| CC099                                | 10002                                 | Unclassified  | 10001           |
 
-**Perform overhead calculation** 
+**Perform overhead calculation**
 
-After the cost element 10001 Salaries is applied as the allocation base, here is the result of the overhead calculation. 
+After cost element 10001 (Salaries) is applied as the allocation base, the result of the overhead calculation is as follows.
 
-|    Cost object    |    Description  |   Magnitude             |      Allocation factor        |   Amount     |
-|-------------------|-----------------|-------------------------|-------------------------------|--------------|
-|    CC001          |    HR           |    2000                 |    (2000/10000) * 1000.00     |    200,00    |
-|    CC002          |    FI           |    5000                 |    (5000/10000) * 1000.00     |    500,00    |
-|    CC003          |    IT           |    3000                 |    (3000/10000) * 1000.00     |    300.00    |
-
+| Cost object | Description | Magnitude |   Allocation factor         | Amount |
+|-------------|-------------|-----------|-----------------------------|--------|
+| CC001       | HR          | 2,000     | (2,000 ÷ 10,000) × 1,000.00 | 200.00 |
+| CC002       | FI          | 5,000     | (5,000 ÷ 10,000) × 1,000.00 | 500.00 |
+| CC003       | IT          | 3,000     | (3,000 ÷ 10,000) × 1,000.00 | 300.00 |
 
 **Journal**
 
-|    Journal    |    Journal type                             |    Fiscal calendar period    |  Year |   Period             |                                                                   Version                   |
-|---------------|---------------------------------------------|------------------------------|---------------|----------------|---------------------------------------------------------------------------------|
-|    00001      |    Cost distribution calculation journal    |    Fiscal                    |    2017       |    Period 1    |    Overhead calculation / 01-02-2017 11:51:00 PM /   Ledger /2017 / Period 1    |
-
+| Journal | Journal type                          | Fiscal calendar period | Year | Period   | Version                                                                 |
+|---------|---------------------------------------|------------------------|------|----------|-------------------------------------------------------------------------|
+| 00001   | Cost distribution calculation journal | Fiscal                 | 2017 | Period 1 | Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1 |
 
 **Cost object balance journal entries**
 
-|    Accounting date    |    Cost object    | Cost object name           | Cost element | Cost element name    |  Cost behavior     |  Amount        |
-|-----------------------|-------------------|----------------------------|--------------|----------------------|--------------------|----------------|
-|    31-01-2017         |    CC099          |    Default cost center     |    10002     |    Employee insurance    |    Unclassified    |    1.000,00    |
+| Accounting date | Cost object | Cost object name    | Cost element | Cost element name  | Cost behavior |  Amount  |
+|-----------------|-------------|---------------------|--------------|--------------------|---------------|----------|
+| 31-01-2017      | CC099       | Default cost center | 10002        | Employee insurance | Unclassified  | 1,000.00 |
 
 **Cost entries**
 
+| Cost object |                     | Cost element |                    | Cost behavior | Amount    | Accounting date |
+|-------------|---------------------|--------------|--------------------|---------------|-----------|-----------------|
+| CC099       | Default cost center | 10002        | Employee insurance | Unclassified  | -1,000.00 | 31-01-2017      |
+| CC001       | HR                  | 10002        | Employee insurance | Unclassified  | 200.00    | 31-01-2017      |
+| CC002       | FI                  | 10002        | Employee insurance | Unclassified  | 500.00    | 31-01-2017      |
+| CC099       | IT                  | 10002        | Employee insurance | Unclassified  | 300.00    | 31-01-2017      |
 
-|    Cost object    |    Cost element            |    Cost behavior    |    Amount            |    Accounting date    |                 |                  |
-|-------------------|----------------------------|---------------------|----------------------|-----------------------|-----------------|------------------|
-|    CC099          |    Default cost center     |    10002            |    Employee insurance    |    Unclassified       |    -1.000,00    |    31-01-2017    |
-|    CC001          |    HR                      |    10002            |    Employee insurance    |    Unclassified       |    200,00       |    31-01-2017    |
-|    CC002          |    FI                      |    10002            |    Employee insurance    |    Unclassified       |    500,00       |    31-01-2017    |
-|    CC099          |    IT                      |    10002            |    Employee insurance    |    Unclassified       |    300,00       |    31-01-2017    |
+### Example 2: Using a statistical dimension member as the allocation base
 
-### Example 2: Use a statistical dimension member as the allocation base 
-
-Statistical dimension members can be used as allocation bases in defining policies or for reporting non-monetary consumption by cost objects. You can create statistical dimension members manually or import them from a file via **Data management import/export tool**.
+Statistical dimension members can be used as allocation bases to define policies or report non-monetary consumption by cost objects. You can manually create statistical dimension members or import them from a file by using the Data management import/export tool.
 
 **Statistical dimension members**
 
-|    Statistical dimension name    |    Statistical element    |  Statistical element name     |  Unit     |
-|----------------------------------|---------------------------|-------------------------------|-----------|
-|    Statistical elements          |    FTE                    |    Full time employees        |    Ea     |
-|    Statistical elements          |    Electricity            |    Electricity consumption    |    kWh    |
+| Statistical dimension name | Statistical element | Statistical element name  | Unit |
+|----------------------------|---------------------|---------------------------|------|
+| Statistical elements       | FTE                 | Full time employees       | Ea   |
+| Statistical elements       | Electricity         | Electricity consumption   | kWh  |
 
-When a statistical dimension members is saved, a corresponding record is created in the predefined dimension member allocation bases.
+When a statistical dimension member is saved, a corresponding record is created in the predefined dimension member allocation bases.
 
 **Predefined dimension member allocation bases**
 
-|    Name           |    Description                |    Statistical element dimension    |
-|-------------------|-------------------------------|-------------------------------------|
-|    FTE            |    Full time employees        |    Statistical elements             |
-|    Electricity    |    Electricity consumption    |    Statistical elements             |
+| Name        | Description             | Statistical element dimension |
+|-------------|-------------------------|-------------------------------|
+| FTE         | Full time employees     | Statistical elements          |
+| Electricity | Electricity consumption | Statistical elements          |
 
-Statistical measures can come from different sources. 
+Statistical measures can come from various sources:
 
-- Electricity consumption could be measured by meters installed in different areas of the company. 
+- Electricity consumption can be measured by meters that are installed in different areas of the company.
+- Tables hold statistical measures. For example, the HcmEmployment table holds a list of all employees and the cost centers that they work for.
 
-- Tables hold statitical measures. For example, the table **HcmEmployment** holds a list of all employees and which cost centers they work for.  
+| Name       | Cost center |    | Worker type |
+|------------|-------------|----|-------------|
+| Employee A | CC001       | HR | Employee    |
+| Employee B | CC002       | FI | Employee    |
+| Employee C | CC002       | FI | Employee    |
+| Employee D | CC003       | IT | Employee    |
+| Employee F | CC003       | IT | Employee    |
 
-|    Name        |    Cost center     |    Worker Type    |                |
-|----------------|--------------------|-------------------|----------------|
-|    Employee A      |    CC001           |    HR             |    Employee    |
-|    Employee B          |    CC002           |    FI             |    Employee    |
-|    Employee C    |    CC002           |    FI             |    Employee    |
-|    Employee D      |    CC003           |    IT             |    Employee    |
-|    Employee F     |    CC003           |    IT             |    Employee    |
+> [!NOTE]
+> All the tables that contain financial dimensions can be used as sources for statistical measures.
 
-[!NOTE] All the tables that contain financial dimensions can be used as sources for statistical measures.
-
-Cost accounting supports a collection of statistical measures by using the following data connections. 
+Cost accounting supports a collection of statistical measures by using the following data connections:
 
 - Data management import/export tool
-
 - Statistical measures
 
-To pull statistical measures from the system, a statistical measure provider template is required. Learn more about Statistical measure provider template. (Will add a link once this topic is written.)
+To pull statistical measures from the system, a statistical measure provider template is required. For more information, see Statistical measure provider template. (Will add a link once this topic is written.)
 
 **Statistical measure provider templates**
 
-|    Name     |    Function    |    Source table     |    Sum field    |    Date field    |
-|-------------|----------------|---------------------|-----------------|------------------|
-|    FTE’s    |    Count       |    HcmEmployment    |    NA           |    NA            |
+| Name  | Function | Source table  | Sum field      | Date field     |
+|-------|----------|---------------|----------------|----------------|
+| FTE’s | Count    | HcmEmployment | Not applicable | Not applicable |
 
-After the statistical measure source data processing is completed, the following entries will be created in Cost accounting.
-
-**Statistical entries**
-
-|    Cost object    | Cost object name      | Accounting date  | Statistical dimension member | Name          | Magnitude  |
-|-------------------|-----------|------------------|------------------------------|---------------------------|------------|
-|    CC001          |    HR     |    31-01-2017    |    FTE’s                     |    Full time employees    |    1,00    |
-|    CC002          |    FI     |    31-01-2017    |    FTE’s                     |    Full time employees    |    2,00    |
-|    CC003          |    IT     |    31-01-2017    |    FTE’s                     |    Full time employees    |    2,00    |
-
-In case the predefined dimension member allocation basis FTEs is assigned as the allocation base in a cost distribution rule, here is an example of the rule.
-
-|    Cost object    |       Name      |  Magnitude              |Allocation factor       |
-|-------------------|-----------------|-------------------------|------------------------|
-|    CC001          |    HR           |    1,00                 |    (1/5) * Amount      |
-|    CC002          |    FI           |    2,00                 |    (2/5) * Amount      |
-|    CC003          |    IT           |    2,00                 |    (2/5) * Amount      |
-
-You can use the data entity called **Imported statistical measures** to import statistical measures into Cost accounting. You can also use the **Data management import/export tool** to do the import. In Excel, the consumption of electricity is recorded. 
-
-|    Accounting date    |    Dimension member       |    Magnitude    |    Source identifier    |
-|-----------------------|---------------------------|-----------------|-------------------------|
-|    31-01-2017         |    CC001                  |    2450,00      |    Electricity          |
-|    31-01-2017         |    CC002                  |    4100,00      |    Electricity          |
-|    31-01-2017         |    CC003                  |    15000,00     |    Electricity          |
-
-After the statistical measure source data processing is completed, the following entries will be created in Cost accounting.
+After the statistical measure source data is processed, the following entries will be created in Cost accounting.
 
 **Statistical entries**
 
-|    Cost object    |    Accounting date     |    Statistical dimension member    |    Magnitude      |                               |                |
-|-------------------|------------------------|------------------------------------|-------------------|-------------------------------|----------------|
-|    CC001          |    HR                  |    31-01-2017                      |    Electricity    |    Electricity consumption    |    2450,00     |
-|    CC002          |    FI                  |    31-01-2017                      |    Electricity    |    Electricity consumption    |    4100,00     |
-|    CC003          |    IT                  |    31-01-2017                      |    Electricity    |    Electricity consumption    |    15000,00    |
+| Cost object | Cost object name | Accounting date | Statistical dimension member | Name                | Magnitude |
+|-------------|------------------|-----------------|------------------------------|---------------------|-----------|
+| CC001       | HR               | 31-01-2017      | FTE’s                        | Full time employees | 1.00      |
+| CC002       | FI               | 31-01-2017      | FTE’s                        | Full time employees | 2.00      |
+| CC003       | IT               | 31-01-2017      | FTE’s                        | Full time employees | 2.00      |
 
-In case the predefined dimension member allocation basis Electricity is assigned as the allocation base in a cost distribution rule, here is an example of the rule.
+Here is an example of a cost distribution rule if the FTE’s predefined dimension member allocation basis is assigned as the allocation base in it.
 
-|    Cost object    |    Name         | Magnitude               |    Allocation factor            |
-|-------------------|-----------------|-------------------------|---------------------------------|
-|    CC001          |    HR           |    2450,00              |    (2450/21550) *   Amount      |
-|    CC002          |    FI           |    4100,00              |    (4100/21550) *   Amount      |
-|    CC003          |    IT           |    15000,00             |    (15000/21550) * Amount       |
+| Cost object | Name | Magnitude | Allocation factor |
+|-------------|------|-----------|-------------------|
+| CC001       | HR   | 1.00      | (1/5) × Amount    |
+| CC002       | FI   | 2.00      | (2/5) × Amount    |
+| CC003       | IT   | 2.00      | (2/5) × Amount    |
+
+You can use the Imported statistical measures data entity to import statistical measures into Cost accounting. You can also use the Data management import/export tool. In Excel, the consumption of electricity is recorded as follows.
+
+| Accounting date | Dimension member | Magnitude | Source identifier |
+|-----------------|------------------|-----------|-------------------|
+| 31-01-2017      | CC001            | 2,450.00  | Electricity       |
+| 31-01-2017      | CC002            | 4,100.00  | Electricity       |
+| 31-01-2017      | CC003            | 15,000.00 | Electricity       |
+
+After the statistical measure source data is processed, the following entries will be created in Cost accounting.
+
+**Statistical entries**
+
+| Cost object |    | Accounting date | Statistical dimension member |                         | Magnitude |
+|-------------|----|-----------------|------------------------------|-------------------------|-----------|
+| CC001       | HR | 31-01-2017      | Electricity                  | Electricity consumption | 2,450.00  |
+| CC002       | FI | 31-01-2017      | Electricity                  | Electricity consumption | 4,100.00  |
+| CC003       | IT | 31-01-2017      | Electricity                  | Electricity consumption | 15,000.00 |
+
+Here is an example of a cost distribution rule if the Electricity predefined dimension member allocation basis is assigned as the allocation base in it.
+
+| Cost object | Name | Magnitude | Allocation factor          |
+|-------------|------|-----------|----------------------------|
+| CC001       | HR   | 2,450.00  | (2,450 ÷ 21,550) × Amount  |
+| CC002       | FI   | 4,100.00  | (4,100 ÷ 21,550) × Amount  |
+| CC003       | IT   | 15,000.00 | (15,000 ÷ 21,550) × Amount |
 
 ## Hierarchy allocation bases
 
-Cost accounts can create the hierarchy allocation bases manually by applying a cost object dimension hierarchy node to an existing allocation base. The purpose is to let you limit the range of the original predefined dimension member allocation basis. One predefined dimension member allocation basis can be used to create several hierarchy allocation bases. Maintenance of ranges can be done in the cost object dimension hierarchy that is associated with the hierarchy allocation bases.
+Cost accounts can manually create the hierarchy allocation bases by applying a cost object dimension hierarchy node to an existing allocation base. In this way, you can limit the range of the original predefined dimension member allocation basis. One predefined dimension member allocation basis can be used to create several hierarchy allocation bases. Ranges can be maintained in the cost object dimension hierarchy that is associated with the hierarchy allocation bases.
 
-### Example: Hierarchy allocation bases according to full time employees in the organization
-A cost object dimension hierarchy that describes a simplified organization can be created as follows. 
+### Example: Hierarchy allocation bases that are based on full-time employees in the organization
+Here is an example of a cost object dimension hierarchy that can be created to describe a simplified organization.
 
-|    Hierarchy name    |    Node Level 0     |    Node Level 1    |    Node Level 2    |    Dimension members    |
-|----------------------|---------------------|--------------------|--------------------|-------------------------|
-|    Organization      |    CEO              |    CFO             |    FICO            |    CC001                |
-|    Organization      |    CEO              |    CFO             |    HR              |    CC002                |
-|    Organization      |    CEO              |    CIO             |    IT              |    CC003                |
+| Hierarchy name | Node level 0 | Node level 1 | Node level 2 | Dimension members |
+|----------------|--------------|--------------|--------------|-------------------|
+| Organization   | CEO          | CFO          | FICO         | CC001             |
+| Organization   | CEO          | CFO          | HR           | CC002             |
+| Organization   | CEO          | CIO          | IT           | CC003             |
 
-The predefined dimension member allocation basis FTEs that has been created in the previous section holds the following entries.
+The FTE’s predefined dimension member allocation basis that was created in the previous section holds the following entries.
 
 **Statistical entries**
 
-|    Cost object    | Name       |              Accounting date   |    Statistical dimension member          |        Name       |         Magnitude    |
-|-------------------|------------------------|------------------------------------|-----------------|---------------------------|------------|
-|    CC001          |    HR                  |    31-01-2017                      |    FTE’s        |    Full time employees    |    1,00    |
-|    CC002          |    FI                  |    31-01-2017                      |    FTE’s        |    Full time employees    |    2,00    |
-|    CC003          |    IT                  |    31-01-2017                      |    FTE’s        |    Full time employees    |    2,00    |
+| Cost object | Name | Accounting date | Statistical dimension member | Name                | Magnitude |
+|-------------|------|-----------------|------------------------------|---------------------|-----------|
+| CC001       | HR   | 31-01-2017      | FTE’s                        | Full time employees | 1.00      |
+| CC002       | FI   | 31-01-2017      | FTE’s                        | Full time employees | 2.00      |
+| CC003       | IT   | 31-01-2017      | FTE’s                        | Full time employees | 2.00      |
 
-A cost must be distributed between cost centers reporting to the CFO in the organization. It is acknowledged that the correct allocation ratio is the number of FTEs by cost centers.   
+A cost must be distributed between cost centers that report to the organization's chief financial officer (CFO). It's acknowledged that the correct allocation ratio is the number of full-time employees (FTEs) by cost center.
 
 **Hierarchy allocation bases**
 
-|    Name                 |    Allocation base    |    Cost object dimension hierarchy    |    Cost object dimension hierarchy node    |
-|-------------------------|-----------------------|---------------------------------------|--------------------------------------------|
-|    Number of FTEs in CFO    |    FTE’s              |    Organization                       |    CFO                                     |
+| Name                  | Allocation base | Cost object dimension hierarchy | Cost object dimension hierarchy node |
+|-----------------------|-----------------|---------------------------------|--------------------------------------|
+| Number of FTEs in CFO | FTE’s           | Organization                    | CFO                                  |
 
-A preview function provides the ability to validate the hierarchy allocation basis created based on statistical entries in the system.
+A Preview function lets you validate the hierarchy allocation basis that is created, based on statistical entries in the system.
 
 **Allocation base details**
 
-|    Cost object    |    Name         |  Magnitude |
-|-------------------|-----------------|------------|
-|    CC001          |    HR           |    1,00    |
-|    CC002          |    FI     |    2,00    |
+| Cost object | Name |  Magnitude |
+|-------------|------|------------|
+| CC001       | HR   | 1.00       |
+| CC002       | FI   | 2.00       |
 
-In case the hierarchy allocation basis Number of FTEs in CFO is assigned as the allocation base in a cost distribution rule, here is an example of the rule. 
+Here is an example of a cost distribution rule if the Number of FTEs in CFO hierarchy allocation basis is assigned as the allocation base in it.
 
-|    Cost object    |   Name          |    Magnitude           |           Allocation factor            |
-|-------------------|-----------------|-------------------------|-----------------------|
-|    CC001          |    HR           |    1,00                 |    (1/3) * Amount     |
-|    CC002          |    FI           |    2,00                 |    (2/3) * Amount     |
+| Cost object | Name | Magnitude | Allocation factor |
+|-------------|------|-----------|-------------------|
+| CC001       | HR   | 1.00      | (1/3) × Amount    |
+| CC002       | FI   | 2.00      | (2/3) × Amount    |
 
 ## Formula allocation bases
 
-Formula allocation bases provide the ability to define advanced formulas to achieve the correct allocation basis. You can create them manually.
+Formula allocation bases let you define advanced formulas to achieve the correct allocation basis. You can manually create formula allocation bases.
 
-When you create a formula allocation base, you select which statistical dimension and cost element dimension should be the basis for the formula. All allocation bases that come from the selected dimensions above can be used in formula allocation base. 
+When you create a formula allocation base, you select which statistical dimension and cost element dimension should be the basis for the formula. All allocation bases that come from the previously selected dimensions can be used in a formula allocation base.
 
 > [!NOTE]
-> Previous defined formula allocation bases can be used in defining a new formula allocation base.
+> Previously defined formula allocation bases can be used to define a new formula allocation base.
 
-In formula allocation base factors, you create alias and associate it with either an allocation base or constant. The aliases are then used to define the formula.
+In formula allocation base factors, you create an alias, and associate it with either an allocation base or a constant. The aliases are then used to define the formula.
 
-The following operators can be used to express your formula.    
+You can use the following operators to define your formula.
 
-|    Symbols    |    Text              |
-|---------------|----------------------|
-|    (   )      |    Parentheses       |
-|    <          |    Smaller than      |
-|    >          |    Larger than       |
-|    +          |    Addition          |
-|    -          |    Subtraction       |
-|    *          |    Multiplication    |
+| Symbols | Text           |
+|---------|----------------|
+| ( )     | Parentheses    |
+| \<      | Smaller than   |
+| \>      | Larger than    |
+| +       | Addition       |
+| –       | Subtraction    |
+| \*      | Multiplication |
 
-IF traditional statements are not supported. You can create statements and validate if they are true or not. 
+Traditional **IF** statements aren't supported. However, you can create statements and validate whether they are true.
 
-|    Statement    |    validation    |    Result    |
-|-----------------|------------------|--------------|
-|    a > b        |    True          |    1         |
-|    a > b        |    False         |    0         |
+| Statement | Validation | Result |
+|-----------|------------|--------|
+| a \> b    | True       | 1      |
+| a \> b    | False      | 0      |
 
 ### Example 1: A simple formula
 
-Electricity bills often consist of 2 parts. 
+Electricity bills often consist of two parts:
 
-- Fixed fee for being connected to grid
+- A fixed fee for being connected to grid
+- A cost that is associated with consumption per kWh
 
-- A cost associcated with consumption per kWh
-
-The predefined dimension member allocation basis Electricity has already been established and holds these values.
+The Electricity predefined dimension member allocation basis has already been defined and holds these values.
 
 **Statistical entries**
 
-|    Cost object    |  Name       |  Accounting date   |     Statistical dimension member        |     Name                 |  Magnitude        |
-|-------------------|------------------------|------------------------------------|-------------------|-------------------------------|----------------|
-|    CC001          |    HR                  |    31-01-2017                      |    Electricity    |    Electricity consumption    |    2450,00     |
-|    CC002          |    FI                  |    31-01-2017                      |    Electricity    |    Electricity consumption    |    4100,00     |
-|    CC003          |    IT                  |    31-01-2017                      |    Electricity    |    Electricity consumption    |    15000,00    |
+| Cost object | Name | Accounting date | Statistical dimension member | Name                    | Magnitude |
+|-------------|------|-----------------|------------------------------|-------------------------|-----------|
+| CC001       | HR   | 31-01-2017      | Electricity                  | Electricity consumption | 2,450.00  |
+| CC002       | FI   | 31-01-2017      | Electricity                  | Electricity consumption | 4,100.00  |
+| CC003       | IT   | 31-01-2017      | Electricity                  | Electricity consumption | 15,000.00 |
 
-Now assume the fixed fee needs to be evenly spread over cost objects that consume electricity.
+If the fixed fee must now be evenly spread over cost objects that consume electricity, you have two options for allocating the costs:
 
-- One option to allocate the costs could be to create a new predefined allocation base Electricity fixed and then apply a statistical measure of 1,00 for each of the Cost objects that had consumed electricity. 
-
-- Second option could be to create a formula allocation base Electricity fixed that takes advantage of the predefined allocation base Electricity that is already defined in the system. The benefit by selecting the second option is that only one statistical dimension member Electricity requires data loaded into Cost accounting. 
+- Create a new predefined allocation base, Electricity fixed, and then apply a statistical measure of 1.00 for each cost object that consumed electricity.
+- Create a formula allocation base, Electricity fixed, that takes advantage of the Electricity predefined allocation base that is already defined in the system. The benefit of this option is that data must be loaded into Cost accounting for only one Electricity statistical dimension member.
 
 **Formula allocation base** 
 
-|    Name                 |    Cost element dimension    |    Statistical dimension    |    Formula    |
-|-------------------------|------------------------------|-----------------------------|---------------|
-|    Electricity fixed    |                              |    Statistical elements     |               |
+| Name              | Cost element dimension | Statistical dimension | Formula |
+|-------------------|------------------------|-----------------------|---------|
+| Electricity fixed |                        | Statistical elements  |         |
 
-You must specify the alias to be used in the formula before the **Formula** field can be populated.
+Before the **Formula** field can be filled, you must specify the alias that should be used in the formula.
 
 **Formula allocation base factors**
 
-|    Alias    |    Constant     |    Allocation base    |
-|-------------|-----------------|-----------------------|
-|    a        |                 |    Electricity        |
-|    b        |    0,01         |                       |
+| Alias | Constant | Allocation base |
+|-------|----------|-----------------|
+| a     |          | Electricity     |
+| b     | 0.01     |                 |
 
-Note that Zero is not supported as cnstant.
+Note that 0 (zero) isn't supported as a constant.
 
 **Formula allocation base**
 
-|    Name                 |    Cost element dimension    |    Statistical dimension    |    Formula    |
-|-------------------------|------------------------------|-----------------------------|---------------|
-|    Electricity fixed    |                              |    Statistical elements     |    a > b      |
+| Name              | Cost element dimension | Statistical dimension | Formula |
+|-------------------|------------------------|-----------------------|---------|
+| Electricity fixed |                        | Statistical elements  | a \> b  |
 
-A Preview function provides the ability to validate the formula allocation base created based on statistical entries in the system.
+A Preview function lets you validate the formula allocation base that is created, based on statistical entries in the system.
 
 **Allocation base details**
 
-|    Cost object    |   Name        |      Formula          |   agnitude |
-|-------------------|---------------|-----------------------|------------|
-|    CC001          |    HR         |    2450,00 > 0,01     |    1,00    |
-|    CC002          |    FI         |    4100,00 > 0,01     |    1,00    |
-|    CC003          |    IT         |    15000,00 > 0,01    |    1,00    |
+| Cost object | Name | Formula           | Magnitude |
+|-------------|------|-------------------|-----------|
+| CC001       | HR   | 2,450.00 \> 0.01  | 1.00      |
+| CC002       | FI   | 4,100.00 \> 0.01  | 1.00      |
+| CC003       | IT   | 15,000.00 \> 0.01 | 1.00      |
 
-In case the formula allocation base Electricity fixed is assigned as the allocation base in a cost distribution rule, here is an example of the rule.
+Here is an example of a cost distribution rule if the Electricity formula allocation base is assigned as the allocation base in it.
 
-**Cost object	Magnitude	Allocation factor**
+**Cost object magnitude allocation factor**
 
-|    Cost object    |   Name          |   Magnitude             |  Allocation factor    |
-|-------------------|-----------------|-------------------------|-----------------------|
-|    CC001          |    HR           |    1,00                 |    (1/3) * Amount     |
-|    CC002          |    FI           |    1,00                 |    (1/3) * Amount     |
-|    CC003          |    IT           |    1,00                 |    (1/3) * Amount     |
+| Cost object | Name | Magnitude |  Allocation factor |
+|-------------|------|-----------|--------------------|
+| CC001       | HR   | 1.00      | (1/3) × Amount     |
+| CC002       | FI   | 1.00      | (1/3) × Amount     |
+| CC003       | IT   | 1.00      | (1/3) × Amount     |
 
 ### Example 2: An advanced formula
-Now assume the cost of electricity should not just follow actual consumed electricity kWh. Management wants to incorporate sentiments for lowering the usage of electricity. 
+For this example, the cost of electricity should not follow the actual electricity that is consumed in kWh. Management wants to incorporate sentiments for lowering electricity usage. 
 
-|    Rule                 |    Rate     | 
-|-------------------------|-------------|
-|    a <= 10000,00 kWh    |    0,75     |
-|    a > 10000,00 kWh     |    1,15     |
+| Rule              | Rate | 
+|-------------------|------|
+| a <= 10000,00 kWh | 0.75 |
+| a > 10000,00 kWh  | 1.15 |
 
-A new formula allocation base Electricity usage is created.
+A new formula allocation base, Electricity usage, is created.
 
 **Formula allocation base**
 
-|    Name                 |    Cost element dimension    |    Statistical dimension    |    Formula    |
-|-------------------------|------------------------------|-----------------------------|---------------|
-|    Electricity usage    |                              |    Statistical elements     |               |
+| Name              | Cost element dimension | Statistical dimension | Formula |
+|-------------------|------------------------|-----------------------|---------|
+| Electricity usage |                        | Statistical elements  |         |
 
-The user must specify the alias to be used in the formula before the **Formula** field can be populated.
+Before the **Formula** field can be filled, you must specify the alias that should be used in the formula.
 
 **Formula allocation base factors**
 
-|    Alias    |    Constant     |    Allocation base    |
-|-------------|-----------------|-----------------------|
-|    a        |                 |    Electricity        |
-|    b        |    10000,00     |                       |
-|    c        |    0,75         |                       |
-|    d        |    1,15         |                       |
+| Alias | Constant  | Allocation base |
+|-------|-----------|-----------------|
+| a     |           | Electricity     |
+| b     | 10,000.00 |                 |
+| c     | 0.75      |                 |
+| d     | 1.15      |                 |
 
 **Formula allocation base**
 
-|    Name                 |    Cost element dimension    |    Statistical dimension    |    Formula                                                       |
-|-------------------------|------------------------------|-----------------------------|------------------------------------------------------------------|
-|    Electricity fixed    |                              |    Statistical elements     |    ((a > b) * ((b * c) + (a - b) * d)) + ((a <=   b) * a * c)    |
+| Name              | Cost element dimension | Statistical dimension | Formula                                                    |
+|-------------------|------------------------|-----------------------|------------------------------------------------------------|
+| Electricity fixed |                        | Statistical elements  | ([a \> b] × [(b × c) + (a – b) × d]) + ([a \<= b] × a × c) |
 
-A Preview function provides the ability to validate the formula allocation base created based on statistical entries in the system.
+A Preview function lets you validate the formula allocation base that is created, based on statistical entries in the system.
 
 **Allocation base details**
 
-|    Cost object    |    Formula    |    Magnitude                                                                                                                                    |                |
-|-------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
-|    CC001          |    HR         |    ((2450,00 > 10000,00) * ((10000,00 * 0,75) +   (2450,00 – 10000,00) * 1,15)) + ((2450,00 <= 10000,00) * 2450,00 * 0,75)                      |    1837,50     |
-|    CC002          |    FI         |    ((4100,00 > 10000,00) * ((10000,00 * 0,75) +   (4100,00 – 10000,00) * 1,15)) + ((4100,00 <= 10000,00) * 4100,00 * 0,75)                      |    3075,00     |
-|    CC003          |    IT         |    ((15000,00 > 10000,00) * ((10000,00 * 0,75) +   (15000,00 – 10000,00) * 1,15)) + ((15000,00 <= 10000,00) * 15000,00 * 0,75)                  |    13250,00    |
+| Cost object |    | Formula                                                                                                                             | Magnitude |
+|-------------|----|-------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| CC001       | HR | ([2,450.00 \> 10.000.00] × [(10,000.00 × 0.75) + (2,450.00 – 10,000.00) × 1.15]) + ([2,450.00 \<= 10,000.00] × 2,450.00 × 0.75)     | 1,837.50  |
+| CC002       | FI | ([4,100.00 \> 10.000.00] × [(10,000.00 × 0.75) + (4,100.00 – 10,000.00) × 1.15]) + ([4,100.00 \<= 10,000.00] × 4,100.00 × 0.75)     | 3,075.00  |
+| CC003       | IT | ([15,000.00 \> 10.000.00] × [(10,000.00 × 0.75) + (15,000.00 – 10,000.00) × 1.15]) + ([15,000.00 \<= 10,000.00] × 15,000.00 × 0.75) | 1,3250.00 |
 
-A closer look at the formula
+Here is a closer look at the formula for CC003 (IT):
 
-CC003	IT	((15000,00 > 10000,00) * ((10000,00 * 0,75) + (15000,00 – 10000,00) * 1,15)) + ((15000,00 <= 10000,00) * 15000,00 * 0,75)              	13250,00
+([15,000.00 \> 10,000.00] × [(10,000.00 × 0.75) + (15,000.00 – 10,000.00) × 1.15]) + ([15,000.00 \<= 10,000.00] × 15,000.00 × 0.75)
 
-(1 * (7500,00 + 5000,00 * 1,15)) + (0 * 15000,00 * 0,75)            
+(1 × [7,500.00 + 5,000.00 × 1.15]) + (0 × 15,000.00 × 0.75)            
 
-1 * 7500,00 + 5750,00 + 0
+1 × 7,500.00 + 5,750.00 + 0 = 13,250.00
 
-In case the formula allocation base Electricity fixed is assigned as the allocation base in a cost distribution rule, here is an example of the rule.
+Here is an example of a cost distribution rule if the Electricity fixed formula allocation base is assigned as the allocation base in it.
 
-|    Cost object    |    Magnitude    |    Allocation factor    |                                       |
-|-------------------|-----------------|-------------------------|---------------------------------------|
-|    CC001          |    HR           |    1837,50              |    (1837,50/18162,50) *   Amount      |
-|    CC002          |    FI           |    3075,00              |    (3075,00/18162,50) *   Amount      |
-|    CC003          |    IT           |    13250,00             |    (13250,00/18162,50) *   Amount     |
-
+| Cost object |    | Magnitude | Allocation factor                |
+|-------------|----|-----------|----------------------------------|
+| CC001       | HR | 1,837.50  | (1,837.50 ÷ 18,162.50) × Amount  |
+| CC002       | FI | 3,075.00  | (3,075.00 ÷ 18,162.50) × Amount  |
+| CC003       | IT | 13,250.00 | (13,250.00 ÷ 18,162.50) × Amount |
