@@ -7,22 +7,22 @@ manager: AnnBe
 ms.date: 05/11/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
+
 # optional metadata
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: shylaw
-# ms.search.scope: All topics: Operations Platform
+ms.reviewer: shylaw
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.assetid: 53658174-3830-49de-8d01-23d1623d97d5
-ms.search.region: Czech Republic, Hungary, Estonia, Poland,
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 # ms.search.industry: 
 ms.author: v-kikozl
-ms.search.validFrom: 2016-08-30
-ms.dyn365.ops.version: Platform update 2
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: Enterprise edition, July 2017 update
 ---
 
 # Invoice processing
@@ -99,8 +99,10 @@ This topic provides information about processing customer and vendor invoices fo
   </td>
   <td>
   <p>The sales date and the document receipt date are required for VAT reporting.</p>
-  <ul><li><p>The sales date is the fulfilment date of the transaction in Accounts receivable. </p><li>
-  <li><p>The document receipt date is a date that demonstrates the rights to claim VAT deduction in Accounts payable. Each received document has a date for audit purposes.</p></li></ul>
+  <ul>
+  <li><p>The sales date is the fulfilment date of the transaction in Accounts receivable.</p></li>
+  <li><p>The document receipt date is a date that demonstrates the rights to claim VAT deduction in Accounts payable. Each received document has a date for audit purposes.</p></li>
+  </ul>
   <p>The Hungarian functionality for date deadlines, the Czech Republic functionality for fulfill dates, and the Polish functionality for the VAT register date include the requirement for the tax information reporting based on a date that is different than the posting date. </p>
   <p>The <strong>Date of VAT register</strong> field supports this requirement and it appears on over 20 pages, including journals, sales orders, purchase orders, free-text invoices, vendor invoice journals, project invoices, etc. When you update or post the documents, all taxes are posted with the corresponding date of the VAT register, and the date is included on pages such as the customer and vendor invoice journals pages.</p>
   <p>Specifically, for the Czech Republic, the <strong>VAT register date</strong> field can be empty during posting just in case of Postponed VAT posting. Otherwise it must be mandatory filled in. Date validation parameters can be set on the <strong>Sales tax groups</strong> page:</p>
