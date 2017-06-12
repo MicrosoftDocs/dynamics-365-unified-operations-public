@@ -126,7 +126,7 @@ For example, a **Statistical measure provider template** can be set up as follow
 
 | Name  | Function | Source table  | Sum field | Date field |
 |-------|----------|---------------|-----------|------------|
-| FTE’s | Count    | HcmEmployment | NA        | NA         |
+| FTEs | Count    | HcmEmployment | NA        | NA         |
 
 You can also add a range(s) to narrow the measures from the source table.
 
@@ -164,23 +164,23 @@ After the **Statistical measure source data** processing is completed, the follo
 
 | Journal | Journal type                       | Fiscal calendar period | Version | Data connector source entries |                |       |
 |---------|------------------------------------|------------------------|---------|-------------------------------|----------------|-------|
-| 00001   | Statistical entry transfer journal | Fiscal                 | 2017    | Period 1                      | CA ledger USMF | FTE’s |
+| 00001   | Statistical entry transfer journal | Fiscal                 | 2017    | Period 1                      | CA ledger USMF | FTEs |
 
 **Statistical entry transfer journal entries**
 
 | Accounting date | Magnitude | Statistical element | Cost center         |       |
 |-----------------|-----------|---------------------|---------------------|-------|
-| 31-01-2017      | 1,00      | FTE’s               | Full time employees | CC001 |
-| 31-01-2017      | 2,00      | FTE’s               | Full time employees | CC002 |
-| 31-01-2017      | 2,00      | FTE’s               | Full time employees | CC003 |
+| 31-01-2017      | 1,00      | FTEs               | Full time employees | CC001 |
+| 31-01-2017      | 2,00      | FTEs               | Full time employees | CC002 |
+| 31-01-2017      | 2,00      | FTEs               | Full time employees | CC003 |
 
 **Statistical entries**
 
 | Cost object | Accounting date | Statistical dimension member | Magnitude |                     |      |
 |-------------|-----------------|------------------------------|-----------|---------------------|------|
-| CC001       | HR              | 31-01-2017                   | FTE’s     | Full time employees | 1,00 |
-| CC002       | FI              | 31-01-2017                   | FTE’s     | Full time employees | 2,00 |
-| CC003       | IT              | 31-01-2017                   | FTE’s     | Full time employees | 2,00 |
+| CC001       | HR              | 31-01-2017                   | FTEs     | Full time employees | 1,00 |
+| CC002       | FI              | 31-01-2017                   | FTEs     | Full time employees | 2,00 |
+| CC003       | IT              | 31-01-2017                   | FTEs     | Full time employees | 2,00 |
 
 In case the **Predefined dimension member allocation basis FTEs** is assigned as an allocation base in a cost distribution rule, the cost will be distributed by following allocation factor.
 
