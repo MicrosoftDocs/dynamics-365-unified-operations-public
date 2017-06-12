@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Upgrade Dynamics AX 2012 to Dynamics 365 for Finance and Operations, Enterprise edition 
@@ -138,7 +138,7 @@ The preceding diagram shows the process for running data upgrade in a sandbox en
 When you enter the Validate phase, you will have available environments that include your upgraded custom code and your upgraded data. This phase describes the process of validating and testing that the upgraded environment works as desired. It also describes the process of preparing for go-live.
 
 ### Perform cutover testing and create a cutover plan
-The term _cutover_ is used here to describe the final process of putting the new system live. This process consists of the tasks that occur after AX 2012 is turned off and before Finance and Operations is turned on. 
+The term *cutover* is used here to describe the final process of putting the new system live. This process consists of the tasks that occur after AX 2012 is turned off and before Finance and Operations is turned on. 
 
 The goal of the testing is to practice the cutover process. In this way, you can help guarantee that everyone who is involved in the actual cutover to go-live will have a smooth experience.
 
@@ -153,9 +153,9 @@ Complete a full functional test pass of all business processes. This test pass w
 Depending on code quality, several iterations of the functional test pass might be required to allow for issue remediation and re-testing. When an issue is fixed, be sure to re-test all processes that are involved, to help guarantee that the downstream or upstream process isn't affected by the change.
 
 ### Pre-go-live checklist
-The pre-go-live checklist is a recommended procedure that can help reduce the chance of errors during the final cutover to go-live. One week before go-live is due, stop configuration changes in AX 2012 (that is, under \<module\>\Setup). This configuration restriction is merely procedural. The Microsoft Dynamics AX system administrators just agree to put this type of changes on hold at this point.
+The pre-go-live checklist is a recommended procedure that can help reduce the chance of errors during the final cutover to go-live. One week before go-live is due, stop configuration changes in AX 2012 (that is, under \<module\>\Setup). This configuration restriction is  procedural. The Finance and Operations system administrators agree to put this type of changes on hold at this point.
 
-Freeze code changes in the Finance and Operations code base. No further changes allowed unless evaluated to block the go-live and acceptable risk.
+We recommend that you also freeze code changes in the Finance and Operations code base. No further changes should be allowed unless they have been evaluated, and have been shown that they will not block go-live. 
 
 After the configuration restriction and code freeze are in place, data upgrade should be run for the last time before cutover. In this way, you can make sure that everything still works as expected. 
 
