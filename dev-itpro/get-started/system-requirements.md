@@ -66,7 +66,7 @@ Retail Cloud POS can run in any of the following web browsers that run on the sp
 -   Chrome (latest publicly available version) on Windows 10, Windows 8.1, or Windows 7
 
 ## Network requirements
--   Dynamics 365 for Finance and Operations, Enterprise edition is designed for networks with latency of 250-300 milliseconds (ms) or less. This is the latency from a browser client to the Microsoft Azure data center that hosts Dynamics 365 for Operations. We recommend that you test network latency at <http://www.azurespeed.com>.
+-   Dynamics 365 for Finance and Operations, Enterprise edition is designed for networks with latency of 250-300 milliseconds (ms) or less. This is the latency from a browser client to the Microsoft Azure data center that hosts Finance and Operations. We recommend that you test network latency at <http://www.azurespeed.com>.
 -   Bandwidth requirements depend on your scenario. Most typical scenarios require a bandwidth of more than 50 kilobytes per second (KBps). However, for scenarios that have high payload requirements, such as workspaces or scenarios that involve extensive customization, more bandwidth is recommended.
 
 In general, Finance and Operations is optimized for the Internet. The number of round trips from a browser client to the Azure data center is very small, and the whole payload is compressed. 
