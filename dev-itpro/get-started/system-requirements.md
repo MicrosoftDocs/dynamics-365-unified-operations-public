@@ -2,10 +2,10 @@
 # required metadata
 
 title: System requirements
-description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Operations.
+description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,12 +35,12 @@ ms.dyn365.ops.version: Platform update 2
 [!include[banner](../includes/banner.md)]
 
 
-This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Operations.
+This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations. Enterprise edition.
 
 Supported web browsers
 ----------------------
 
-The Microsoft Dynamics 365 for Operations web application can run in any of the following web browsers that run on the specified operating systems:
+The web application can run in any of the following web browsers that run on the specified operating systems:
 
 -   Microsoft Edge (latest publicly available version) on Windows 10
 -   Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
@@ -51,7 +51,7 @@ To find the latest release for each web browser, go to the software manufacturer
 
 **Notes:**
 
--   To capture images that are generated from Task Recorder and include them in Microsoft Word documents, you must have a Chrome extension installed. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
+-   A pre-release Chrome extension must be installed to allow screenshot images to be captured by Task Recorder and included in generated Microsoft Word documents. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
 -   The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications. The Workflow Editor ClickOnce application requires a 64-bit compatible operating system.
 -   The Report Designer for Financial reporting is started as a ClickOnce application. It requires a 64-bit compatible operating system. If you’re using Chrome, you must install a ClickOnce extension in order to download the report designer client. If you’re using Chrome with the incognito mode, make sure that the ClickOnce extension is also enabled for incognito mode.
 -   To preview PDF files, we recommend that you use modern browsers like Microsoft Edge (latest publicly available version) on Windows 10,  or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
@@ -59,22 +59,22 @@ To find the latest release for each web browser, go to the software manufacturer
 
 ### Supported web browsers for Retail Cloud POS
 
-Retail Cloud POS for Dynamics 365 for Operations can run in any of the following web browsers that run on the specified operating systems:
+Retail Cloud POS can run in any of the following web browsers that run on the specified operating systems:
 
 -   Microsoft Edge (latest publicly available version) on Windows 10
 -   Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
 -   Chrome (latest publicly available version) on Windows 10, Windows 8.1, or Windows 7
 
 ## Network requirements
--   Dynamics 365 for Operations is designed for networks with latency of 250-300 milliseconds (ms) or less. This is the latency from a browser client to the Microsoft Azure data center that hosts Dynamics 365 for Operations. We recommend that you test network latency at <http://www.azurespeed.com>.
--   Bandwidth requirements for Dynamics 365 for Operations depend on your scenario. Most typical scenarios require a bandwidth of more than 50 kilobytes per second (KBps). However, for scenarios that have high payload requirements, such as workspaces or scenarios that involve extensive customization, more bandwidth is recommended.
+-   Dynamics 365 for Finance and Operations, Enterprise edition is designed for networks with latency of 250-300 milliseconds (ms) or less. This is the latency from a browser client to the Microsoft Azure data center that hosts Dynamics 365 for Operations. We recommend that you test network latency at <http://www.azurespeed.com>.
+-   Bandwidth requirements depend on your scenario. Most typical scenarios require a bandwidth of more than 50 kilobytes per second (KBps). However, for scenarios that have high payload requirements, such as workspaces or scenarios that involve extensive customization, more bandwidth is recommended.
 
-In general, Dynamics 365 for Operations is optimized for the Internet. The number of round trips from a browser client to the Azure data center is very small, and the whole payload is compressed. 
+In general, Finance and Operations is optimized for the Internet. The number of round trips from a browser client to the Azure data center is very small, and the whole payload is compressed. 
 
-**Warning:** Don't compute bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent usage of a given location is very difficult to calculate. For customers who are concerned about bandwidth requirements, use a preview version of Dynamics 365 for Operations.
+**Warning:** Don't compute bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent usage of a given location is very difficult to calculate. For customers who are concerned about bandwidth requirements, use a preview version of Finance and Operations.
 
 ## .NET Framework requirements
-Dynamics 365 for Operations requires .NET Framework version 4.6.2 for all click-once applications, such as the document routing agent. For installation instructions, see [Installing the .NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
+.NET Framework version 4.6.2 is required for all click-once applications, such as the document routing agent. For installation instructions, see [Installing the .NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
 
 ## Supported Microsoft Office applications
 -   To run the Microsoft Excel and Word add-ins, you must have Microsoft Office 2016 for Windows or Mac installed. For more details about version requirements, see [Office integration troubleshooting](/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting).
@@ -132,7 +132,7 @@ The computer must meet all system requirements for installing and using the foll
 -   2.4 GHz i7 (or equivalent) peak CPU speed per core (Four cores are recommended.)
 -   At least 10 GB of free space (The channel database can require a large amount of space.)
 
-## Connector for Microsoft Dynamics AX requirements
+## Connector requirements
 ### Supported operating systems
 
 -   The Connector for Microsoft Dynamics AX has two separate installers, the **Async Server Connector service** and the **Real-time service for Dynamics AX 2012 R3**
