@@ -283,7 +283,7 @@ The consumption of electricity is recorded in Microsoft Excel by using the prede
 |-----------------|------------------------|------------------------|------------------------|------------|-------------------|
 | 31-01-2017      | CC001                  |                        |                        | 2,450.00   | Electricity       |
 | 31-01-2017      | CC002                  |                        |                        | 4,100.00   | Electricity       |
-| 31-01-2017      | CC003                  |                        |                        | 1,5000.00  | Electricity       |
+| 31-01-2017      | CC003                  |                        |                        | 15,000.00  | Electricity       |
 
 When you've imported your data via Data management, the data will be stored in a Cost accounting staging table. Therefore, the imported data can be used in multiple Cost accounting ledgers. A reload of data isn't required.
 
