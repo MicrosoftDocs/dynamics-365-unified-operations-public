@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Migrate from AX 2012 to Dynamics 365 for Operations | Microsoft Docs
-description: This topic provides an overview of the product and warehouse management migration options within Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update.
-author: annbe
+title: Migrate from AX 2012 to Dynamics 365 for Operations 
+description: This article provides an overview of the product and warehouse management migration options within Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update.
+author: BibiSp
 manager: AnnBe
-ms.date: 0000-00-00 00:00:00
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,18 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+# ms.search.form:  InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 # ROBOTS: 
-# audience: 
+# audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: bis
 # ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1714054
 ms.assetid: 79a1a3b9-3a36-4162-8839-ec39b5e26602
 ms.search.region: Global
 # ms.industry: 
-ms.author: annbe
+ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
