@@ -49,7 +49,7 @@ The **Financial performance** Power BI content that is available from LCS suppor
 You can find the Power BI content in the Shared asset library in LCS. For more information about how to download the content pack and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
 ### Available from PowerBI.com
-The **Financial performance** Power BI content that is available from PowerBI.com supports Microsoft Dynamics AX versions 7.0 and 7.0.1. For more information about how to connect and load your Dynamics 365 for Operations data, see [Access Power BI content from PowerBI.com](power-bi-home-page.md).
+The **Financial performance** Power BI content that is available from PowerBI.com supports Microsoft Dynamics AX versions 7.0 and 7.0.1. For more information about how to connect and load your Dynamics AX data, see [Access Power BI content from PowerBI.com](power-bi-home-page.md).
 
 ## Main account setup
 Because organizations want liabilities and revenue amounts to appear as positive amounts on reports, the setup of the main accounts is important. For these main accounts to appear as positive amounts, the main account type must be set to **Liability** or **Revenue**. When these account types are used, reporting through Power BI will reverse the signs and show the amounts as positive.
