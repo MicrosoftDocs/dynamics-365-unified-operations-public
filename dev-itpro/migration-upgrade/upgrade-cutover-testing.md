@@ -40,6 +40,8 @@ There are two main workstreams during a cutover:
 
 The following illustration shows the overall process for cutover to go-live as it will occur in the production environment.
 
+![Cutover process](./media/cutover_1.png)
+
 This cutover process differs from a basic data upgrade in a sandbox environment in the following ways:
 
 - The AX 2012 database isn’t copied but is only backed up, and then the original database is modified. This approach is faster, and the backup provides rollback, if rollback is required.
