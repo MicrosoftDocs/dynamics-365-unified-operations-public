@@ -43,7 +43,7 @@ If you're using Dynamics 365 for Operations version 1611, the following Power BI
 - [CFO overview Power BI content](CFO-power-bi.md)
 - [Compensation Power BI content](compensation-power-bi.md)
 - [Cost accounting analysis Power BI content*](cost-accounting-analysis-content-pack.md) 
-- [Credit and collections management Power BI content](credit-collections-content-pack-power-bi.md)
+- [Credit and collections management Power BI content](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
 - [Employee development Power BI content](employee-development-PBI.md) 
 - [Financial performance Power BI content*](financial-performance-power-bi-content-pack.md)
 - [Fixed asset management Power BI content](/dynamics365/operations/financials/fixed-assets/Fixed-asset-management-workspace)
