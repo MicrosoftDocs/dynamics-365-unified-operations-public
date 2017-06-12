@@ -4,7 +4,7 @@
 ## [Benefits](benefits-power-bi.md)
 ## [Cash overview](/dynamics365/operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 ## [CFO overview](CFO-power-bi.md)
-## [Compensation Power BI content](compensation-power-bi.md)
+## [Compensation](compensation-power-bi.md)
 ## [Compensation and benefits](compensation-and-benefits-analysis-power-bi-content-pack.md)
 ## [Cost accounting analysis](cost-accounting-analysis-content-pack.md)
 ### [Security for the Cost accounting analysis](setup-security-cost-accounting-content-pack.md)
