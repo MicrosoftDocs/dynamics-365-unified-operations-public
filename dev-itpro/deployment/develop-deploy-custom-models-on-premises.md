@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 8
 ---
 
 # Develop and deploy custom models to on-premises environments
-This topic describes how to develop customizations and extensions, and deploy them to an on-premises environment. On-premises environments are also referred to as local business data (LBD) environments. This topic focuses on the ways that the development and deployment process in an on-premises environment differs from the process in a cloud environment.
+This topic describes how to develop customizations and extensions, and deploy them to an on-premises environment. On-premises environments are also referred to as local business data (LBD) environments. This topic focuses on the ways that this process differs from the process in a run-time cloud environment.
 
 The process has the following main steps:
 
