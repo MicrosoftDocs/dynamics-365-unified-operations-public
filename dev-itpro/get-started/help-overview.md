@@ -37,6 +37,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 
+> [!IMPORTANT] 
+> The following products are closely related: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; and Dynamics 365 for Talent. The same functionality may appear in all 3 products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations. Topics that are written for one product may apply to the same functionality in a related product
+
 Finance and Operations includes a Help system that is based on two main components:
 
 -   A documentation site
@@ -47,6 +50,7 @@ You can access both articles and task guides from the Help pane in Dynamics 365
 ![Help pane](./media/help-pane-ops-task-guides-1024x741.png)
 
 This article describes the Help system, and explains how you can create custom documentation and training resources for your organization.
+
 
 ## Help on docs.microsoft.com
 The docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) is the primary source of product documentation for Finance and Operations. The site offers the following features:
@@ -116,7 +120,7 @@ For more information about Task Recorder, see [Task recorder in Finance and Oper
 You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Finance and Operations implementation. To display a task recording in the Finance and Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](../user-interface/task-recorder.md).
 
 ## In-product Help
-To access Help content within Finance and Operations , either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. 
+To access Help content within Finance and Operations, either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. 
 
 ![Help pane](./media/help-pane-wiki-1024x684.png)
 
