@@ -22,12 +22,13 @@
 ## [Manage a benefits program](manage-benefit-program.md)
 ## [Benefit eligibility policies](benefit-eligibility-policies.md)
 ## [Manage items lent to workers](loan-items.md)
-# HR features available in Finance and Operations
-## Gather information using questionnaires
-### [Questionnaires](questionnaires.md)
-### [Design a questionnaire](design-questionnaires.md)
-### [Distribute and complete a questionnaire](distribute-questionnaires.md)
-### [Evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
+# Gather information using questionnaires
+## [Questionnaires](questionnaires.md)
+## [Design a questionnaire](design-questionnaires.md)
+## [Distribute and complete a questionnaire](distribute-questionnaires.md)
+## [Evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
+
+# Related features available in Finance and Operations
 ## United States features
 ### Workplace safety and compliance
 #### [Form I-9 employment verification](localizations/noam-usa-form-i-9-verification.md)
@@ -39,10 +40,10 @@
 ##### [Set up work cycles and work periods](localizations/noam-usa-work-cycle-work-period-tasks.md)
 ##### [Set up benefit accrual plans ](localizations/noam-usa-benefit-accrual-plan-tasks.md)
 ##### [Set up benefits](localizations/noam-usa-benefit-set-up-tasks.md)
-### Frequencies and cycles
+#### Frequencies and cycles
 ##### [Pay cycle and pay period tasks](localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md)
-#### [Payroll calculation and frequency tasks](localizations/noam-usa-payroll-calculation-frequencies-tasks.md)
-#### [Work schedule and leave tasks](localizations/noam-usa-work-schedule-leave-tasks.md)
+##### [Payroll calculation and frequency tasks](localizations/noam-usa-payroll-calculation-frequencies-tasks.md)
+##### [Work schedule and leave tasks](localizations/noam-usa-work-schedule-leave-tasks.md)
 #### Codes and taxes
 ##### [Earning code and earning code group tasks](localizations/noam-usa-earning-code-group-tasks.md)
 ##### [Tax information tasks](localizations/noam-usa-tax-information-tasks.md)
@@ -63,16 +64,3 @@
 #### Maintenance and reporting
 ##### [Payroll data updates FAQ](localizations/noam-usa-payroll-data-updates.md)
 ##### [Generate payroll reports](localizations/noam-usa-generate-payroll-reports.md)
-
-# [Financials](/dynamics365/unified-operations/financials/index)
-
-# [Retail](/dynamics365/unified-operations/retail/index)
-
-# [Supply chain management](/dynamics365/unified-operations/supply-chain/index)
-
-# [Developer and Administrator](/dynamics365/unified-operations/dev-itpro/index)
-
-# Other resources
-## [Finance and Operations glossary](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/talent/toc.json)
-## [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/talent/toc.json)
-
