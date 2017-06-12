@@ -45,15 +45,12 @@ We used a very simple example here, but the testing requirement can be more comp
 
 For example, here are the stages of a production test flow:
 
-- The item master is designed and released to a legal entity.
-- Item requirements are created.
-- Production orders are generated.
-- Purchase orders are generated.
-- Production order processing  occurs (shop floor).
-- Vendor payment (payment of purchase orders) occurs, and so on.
+1. The item master is designed and released to a legal entity.
+2. Item requirements are created.
+3. Production orders are generated.
+4. Purchase orders are generated.
+5. Production order processing  occurs (shop floor).
+6. Vendor payment (payment of purchase orders) occurs, and so on.
 
 In this production test flow, each stage can be performed by using either new records or old records as input. The result is a matrix of tests that covers every combination of old and new data. For some processes, test matrices might seem excessive, and they might actually be excessive in practice. Therefore, you can decide to focus on certain combinations that you predict will be used the most. However, it's still helpful for you to know what you aren't covering. Make a conscious decision, where you know what you have, what you’re going to focus most of the testing on, and what you’re not going to focus on.
 
-## Document states
-
-The state of a particular document, such as a production order or sales order, can affect how
