@@ -43,7 +43,7 @@ Before you start to upgrade data in a sandbox environment, you will have already
 
 Here are the high-level steps in the upgrade process.
 
-1. Create a copy of the AX 2012 database. We strongly recommend that you use a copy, because you must delete some objects in the copy or export.
+1. Create a copy of the AX 2012 database. We strongly recommend that you use a copy, because you must delete some objects in the copy that will be exported.
 2. Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
 3. Upload the bacpac file to Azure storage.
 4. Download the bacpac file to the Application Object Server (AOS) machine in the sandbox environment, and then import it by using SQLPackage.exe. You must then run a script against the imported database to reset the SQL database users.
