@@ -5,17 +5,17 @@ title: Reporting material consumption with the mobile device | Microsoft Docs
 description: This topic describes a workflow that enables registration of raw material consumption in production by using a handheld device.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 0000-00-00 00:00:00
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form:  
 # ROBOTS: 
-# audience: 
+# audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
 # ms.search.scope: AX 7.0.0, Operations
