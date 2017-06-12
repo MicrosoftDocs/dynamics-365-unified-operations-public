@@ -35,6 +35,9 @@ ms.dyn365.ops.version: Platform update 8
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 8. This version was released in June 2017 and has a build number of 7.0.XXXX.XXXXX.
 
+## Introducing Dynamics 365 for Finance and Operations, Enterprise edition
+Users and developers will see an updated product name ("Microsoft Dynamics 365 for Finance and Operations, Enterprise edition") and product icon in the web client. Some platform components (for example, the developer tools and the mobile application) that are shared by Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 for Talent will now appear as "Dynamics 365 Unified Operations." 
+
 ## Development and customization - Changing the extended data type (EDT) on a table field using table extensions
 Using table extensions, a developer can change the **Extended Data Type** (EDT) property of a table field. Developers can only select EDTs that are derived from the current one. For more information, see [Customize with extensions and overlayering](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/extensibility/customization-overlayering-extensions).
 
