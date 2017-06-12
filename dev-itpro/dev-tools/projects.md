@@ -42,7 +42,7 @@ To create a new, empty project, follow these steps.
 1.  On the **File** menu, point to **New**, and then click **Project**.
 2.  In the list of template types, expand the **Installed** node.
 3.  Expand the **Templates** node.
-4.  Select the **Dynamics 365 for Operations** category.
+4.  Select the **Finance and Operations** category.
 5.  Select the **Operations Project** template.
 6.  Enter the name and location for the new project.
 7.  Specify whether you want to create a new solution or add the project to the current solution.

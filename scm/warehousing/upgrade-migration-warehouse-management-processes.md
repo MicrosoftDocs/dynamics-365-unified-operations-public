@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Migrate from AX 2012 to Dynamics 365 for Operations 
+title: Migrate from AX 2012 to Finance and Operations 
 description: This article provides an overview of the product and warehouse management migration options within Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update.
 author: BibiSp
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Migrate from AX 2012 to Dynamics 365 for Operations
+# Migrate from AX 2012 to Finance and Operations
 
 This topic provides an overview of the product and warehouse management migration options within Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update.
 

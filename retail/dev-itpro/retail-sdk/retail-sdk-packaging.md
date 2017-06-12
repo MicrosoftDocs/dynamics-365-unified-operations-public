@@ -147,7 +147,7 @@ Both Modern POS and Hardware station are self-service components. To deploy sel
 
 [![UpdateRetailSelfService](./media/updateretailselfservice.png)](./media/updateretailselfservice.png) 
 
-After Retail self-service is updated, you can go to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to verify that the new customized self-service packages are available.
+After Retail self-service is updated, you can go to Microsoft Dynamics 365 for Retail to verify that the new customized self-service packages are available.
 
 ##### Modern POS
 

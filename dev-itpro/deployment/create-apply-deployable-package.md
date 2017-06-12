@@ -33,11 +33,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-A Dynamics 365 for Operations package is a deployment and compilation unit of one or more models. It includes model metadata, binaries, reports and other associated resources. One or more packages can be packaged into a deployable package, which is the vehicle used for deployment of code (and customizations) on demo, sandbox and production environments. This article guides you through the process of creating and applying a deployable package. 
+A Finance and Operations package is a deployment and compilation unit of one or more models. It includes model metadata, binaries, reports and other associated resources. One or more packages can be packaged into a deployable package, which is the vehicle used for deployment of code (and customizations) on demo, sandbox and production environments. This article guides you through the process of creating and applying a deployable package. 
 
 ## Overview of the process
 
-In order to deploy your code and customizations to a Dynamics 365 for Operations runtime environment (Demo, Sandbox or Production), you must create deployable packages of your solution or implementation. Deployable packages can be created using the **Visual Studio dev tools**, or by the **build automation process** that are available on Dynamics 365 for Operation build environments. These deployable packages are referred to as Application Deployable Packages or AOT Deployable Packages. The image below is an overview of the process. Once a deployable package is created, it must be uploaded to the LCS project's asset library. An administrator can then go to the LCS environment page and apply the package to a runtime environment using the **Maintain &gt; Apply updates** tool. 
+In order to deploy your code and customizations to a Finance and Operations runtime environment (Demo, Sandbox or Production), you must create deployable packages of your solution or implementation. Deployable packages can be created using the **Visual Studio dev tools**, or by the **build automation process** that are available on Dynamics 365 for Operation build environments. These deployable packages are referred to as Application Deployable Packages or AOT Deployable Packages. The image below is an overview of the process. Once a deployable package is created, it must be uploaded to the LCS project's asset library. An administrator can then go to the LCS environment page and apply the package to a runtime environment using the **Maintain &gt; Apply updates** tool. 
 
 ![Create and apply a deployment package](./media/createandapplydeployablepackage.png)
 
@@ -58,4 +58,4 @@ After you have completed the development stage, follow these steps to create a d
 4.  Upload the deployable package that you created earlier.
 
 ## Apply a deployable package
-To apply a deployable package to a Dynamics 365 for Operations environment, see the article [Apply a deployable package on a Microsoft Dynamics 365 for Operations system](apply-deployable-package-system.md).
+To apply a deployable package to a Finance and Operations environment, see the article [Apply a deployable package on a Microsoft Dynamics 365 for Finance and Operations system](apply-deployable-package-system.md).

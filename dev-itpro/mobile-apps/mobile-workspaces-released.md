@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 This topic lists the mobile workspaces that have recently been released for the Dynamics 365 for Unified Operations mobile app.
 
 > [!NOTE]
-> The mobile app was previously named *Microsoft Dynamics 365 for Operations*.
+> The mobile app was previously named *Microsoft Dynamics 365 for Finance and Operations*.
 
 
 ## New mobile workspaces released in June 2017

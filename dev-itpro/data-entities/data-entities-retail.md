@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for Retail.
+This article provides a list of the data entities that are available for Microsoft Dynamics 365 for Retail.
 
 Available data entities
 -----------------------

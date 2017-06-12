@@ -1,6 +1,6 @@
 # [Introduction](index.md)
 
-# [Overview of Dynamics 365 for Operations](get-started/TOC.md)
+# [Overview of Finance and Operations](get-started/TOC.md)
 
 # [Development](dev-tools/TOC.md)
 
@@ -64,10 +64,10 @@
 # [Database management](database/TOC.md)
 
 # Support
-## [Get support for Dynamics 365 for Operations and Lifecycle Services](lifecycle-services/lcs-support.md)
+## [Get support for Finance and Operations and Lifecycle Services](lifecycle-services/lcs-support.md)
 ## [Log a premier support ticket](lifecycle-services/premier-support.md)
 ## [Submit a request to the Dynamics Service Engineering team](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
-## [Set up technical support for Dynamics 365 for Operations](lifecycle-services/support-experience.md) 
+## [Set up technical support for Finance and Operations](lifecycle-services/support-experience.md) 
 ## [Planned maintenance window FAQ](lifecycle-services/planned-maintenance-window-faq.md) 
 ## [Cloud operations and servicing](lifecycle-services/cloud-operations-servicing.md)
 
@@ -80,6 +80,6 @@
 # [Supply chain management](/dynamics365/unified-operations/supply-chain/index)
 
 # Other resources
-## [Dynamics 365 for Operations glossary](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+## [Finance and Operations glossary](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ## [What's new or changed](get-started/whats-new-changed.md)
 

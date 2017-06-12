@@ -160,7 +160,7 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [AX2012 MSDN List Page Guidelines (including FactBoxes)](http://msdn.microsoft.com/EN-US/library/gg853328.aspx)
+-   [AX 2012 MSDN List Page Guidelines (including FactBoxes)](http://msdn.microsoft.com/EN-US/library/gg853328.aspx)
 
 #### AX 2012 example
 

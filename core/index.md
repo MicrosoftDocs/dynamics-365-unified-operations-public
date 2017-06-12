@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
-# Introduction to Dynamics 365 for Operations
+# Introduction to Finance and Operations
 
 [!include[banner](includes/banner.md)]
 

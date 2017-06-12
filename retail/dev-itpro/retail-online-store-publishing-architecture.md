@@ -40,7 +40,7 @@ This topic contains conceptual information to help developers and system adminis
 Publish a Retail online store channel
 -------------------------------------
 
-When you publish a Retail online store channel, you replicate the basic structure of your online store between Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and Microsoft SharePoint. You create the basic structure of your online store channel in the **Retail** module. Before you can publish an online store channel, you must complete the following setup tasks:
+When you publish a Retail online store channel, you replicate the basic structure of your online store between Microsoft Dynamics 365 for Retail and Microsoft SharePoint. You create the basic structure of your online store channel in the **Retail** module. Before you can publish an online store channel, you must complete the following setup tasks:
 
 1.  Add the online store to the organization hierarchy.
 2.  Create the online store and configure properties.

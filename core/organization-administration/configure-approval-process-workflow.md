@@ -122,10 +122,10 @@ You can send notifications to people when a document has been approved, rejected
     </tr>
     <tr class="odd">
     <td><strong>User</strong></td>
-    <td>Specific Microsoft Dynamics 365 for Operations users</td>
+    <td>Specific Microsoft Dynamics 365 for Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong>: list includes all Microsoft Dynamics 365 for Operations users. Select the users to send notifications to, and then move these users to the <strong>Selected users</strong>: list.</li>
+    <li>The <strong>Available users</strong>: list includes all Microsoft Dynamics 365 for Finance and Operations users. Select the users to send notifications to, and then move these users to the <strong>Selected users</strong>: list.</li>
     </ol></td>
     </tr>
     </tbody>

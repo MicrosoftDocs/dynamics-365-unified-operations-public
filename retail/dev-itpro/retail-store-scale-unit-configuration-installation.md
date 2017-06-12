@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how you can use self-service to configure Retail Store Scale Unit in Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud POS components. A Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, environment already provides these components. However, you can now configure them so that they work locally in a store, in either a single-computer setup (the default option) or a multiple-computer setup. This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.
+This topic explains how you can use self-service to configure Retail Store Scale Unit in Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud POS components. A Microsoft Dynamics 365 for Retail environment already provides these components. However, you can now configure them so that they work locally in a store, in either a single-computer setup (the default option) or a multiple-computer setup. This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.
 
 ## Before you begin
 > [!IMPORTANT]
@@ -46,8 +46,8 @@ This topic explains how you can use self-service to configure Retail Store Scale
 ## Configure a new Retail Store Scale Unit
 To create a functioning Retail Store Scale Unit, complete the procedures in all sections of this topic through the "Running the Retail Store Scale Unit installer" section.
 
-1. Use your Azure AD credentials to sign in to the Retail headquarters or Finance and Operations trial.
-2. On the **Welcome** page, use the menu in the upper left to go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**.
+1. Use your Azure AD credentials to sign in to the Retail headquarters or Retail trial.
+2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**.
 3. On the **Channel database** page, on the Action Pane, select **New**.
 4. In the **Channel database ID** field, enter a unique value.
 5. In the **Channel data group** field, select the **Default** option.
@@ -72,7 +72,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
     > Each environment generates a base Retail Store Scale Unit package. Therefore, this field always contains at least one option.
 
 10. On the Action Pane, select **Save**.
-11. Go to **Retail and commerce** &gt; **Channel setup** &gt; **Channel profiles**.
+11. Go to **Retail** &gt; **Channel setup** &gt; **Channel profiles**.
 12. On the Action Pane, select **New**.
 13. In the **Name** field, enter a unique name for the channel profile.
 14. On the Action Pane, select **Save**.
@@ -91,19 +91,19 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
     > The standard format for the URL of an on-premises store installation of Retail Store Scale Unit is **https://&lt;Computer Name&gt;:&lt;Port&gt;/POS**. In this format, **&lt;Computer Name&gt;** is either the FQDN of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that will be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
 
 21. On the Action Pane, select **Save**.
-22. Go to **Retail and commerce** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.
+22. Go to **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.
 23. Select the Retail channel ID for the retail store that will use the new channel database.
 24. On the details page for the selected store, on the Action Pane, select **Edit**.
 25. On the **General** FastTab for the store, in the **Live channel database** field, select the channel database that you created in step 3.
 26. On the Action Pane, select **Save**.
 27. On the **General** FastTab for the store, in the **Channel profile** field, select the channel profile that you created in step 12.
-28. Go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel data group**.
+28. Go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel data group**.
 29. Select the **Default** data group, and then, on the Action Pane, select **Full data sync**. In the **Select a distribution schedule** field, select job **9999**, and then select **OK**. In the dialog box that appears, select **OK** to confirm the full synchronization. All the data in the channel database is prepared for download.
 
 ### Download the Retail Store Scale Unit installer
 
 1. Use your Azure AD credentials to sign in to the Retail headquarters or Finance and Operations trial.
-2. On the **Welcome** page, use the menu in the upper left to go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**.
+2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**.
 3. In the list of channel databases on the left, select the channel database that you created earlier.
 4. On the Action Pane, select **Download**.
 5. On the drop-down menu, select **Configuration file**.
@@ -188,14 +188,14 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 10. After the installation is completed, the final health page appears. This page shows whether the installation was successful. It also shows the health of each component, based on basic connection tests, and the location of this topic. If the installation wasn't successful, the page shows the location of the log files.
 11. If Retail Cloud POS is configured for use, a client ID is shown at the end of the installation. You must add this client ID to the **Retail shared parameters** page in Finance and Operations.
 
-    1. In Finance and Operations, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+    1. In Finance and Operations, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
     3. On the **Identity providers** FastTab, select the provider that begins with **HTTPS://sts.windows.net/**. The values on the **Relying parties** FastTab are set, based on your selection.
     4. On the **Relying parties** FastTab, select **+Add**. Enter the client ID that is listed in the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
     5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter **https://retailstorescaleunit.retailserver.com**.
     6. On the Action Pane, select **Save**.
 
-12. In Finance and Operations, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+12. In Finance and Operations, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
 13. Select **Identity providers**.
 14. On the **Identity providers** FastTab, select **+Add**.
 15. In the new **Issuer** row, enter the Retail Server URL of the newly installed Retail Store Scale Unit.  At the end of the URL, add **/auth**.  The URL will resemble **https://MyComputerName/RetailServer/auth**.
@@ -308,14 +308,14 @@ On the second computer, run the Retail Store Scale Unit Self-service installer a
 
 10. If Retail Cloud POS is configured for use, a client ID is shown. You must add this client ID to the **Retail shared parameters** page in Finance and Operations.
 
-    1. In Finance and Operations, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+    1. In Finance and Operations, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
     3. On the **Identity providers** FastTab, select the provider that begins with **HTTPS://sts.windows.net/**. The values on the **Relying parties** FastTab are set, based on your selection.
     4. On the **Relying parties** FastTab, select **+Add**. Enter the client ID that is listed in the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
     5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter **https://retailstorescaleunit.retailserver.com**.
     6. On the Action Pane, select **Save**.
 
-11. In Finance and Operations, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**, and follow these steps:
+11. In Finance and Operations, go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**, and follow these steps:
 
     1. Select the channel database that you created at the beginning of this topic.
     2. On the Action Pane, select **Full Sync** &gt; **Job 9999**. Full synchronization might require several minutes.
@@ -375,5 +375,5 @@ Use Control Panel in Microsoft Windows to uninstall Retail Store system.
 
 1. Press the Windows logo key, and then enter **Control Panel** in the search box. In the search results, select **Control Panel**.
 2. In Control Panel, select **Programs** &gt; **Uninstall a program**.
-3. In the **Programs and Features** window, select **Microsoft Dynamics 365 for Operations for Retail Store system**, and then, above the list of programs, select **Uninstall**.
+3. In the **Programs and Features** window, select **Microsoft Dynamics 365 for Retail Store system**, and then, above the list of programs, select **Uninstall**.
 4. Wait for the uninstaller to finish removing the program.

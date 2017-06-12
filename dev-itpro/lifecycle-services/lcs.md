@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Lifecycle Services for Dynamics 365 for Operations
-description: Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your Microsoft Dynamics 365 for Operations implementations.
+title: Lifecycle Services for Finance and Operations
+description: Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your Microsoft Dynamics 365 for Finance and Operations implementations.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Lifecycle Services for Dynamics 365 for Operations
+# Lifecycle Services for Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
 
-Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your Microsoft Dynamics 365 for Operations implementations.
+Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your Microsoft Dynamics 365 for Finance and Operations implementations.
 
 -   [What's new: Lifecycle Services for Microsoft Dynamics](whats-new-lcs.md)
 -   [Microsoft Dynamics Lifecycle Services User Guide](lcs-user-guide.md)
@@ -57,7 +57,7 @@ Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that p
 
 ### Additional resources
 
--   For information about how to contact Microsoft if you have technical questions about Microsoft Dynamics 365 for Operations, or if you need help accessing Microsoft Dynamics Lifecycle Services (LCS), see [Find support for Microsoft Dynamics 365 for Operations and Microsoft Dynamics Lifecycle Services](lcs-support.md).
+-   For information about how to contact Microsoft if you have technical questions about Microsoft Dynamics 365 for Finance and Operations, or if you need help accessing Microsoft Dynamics Lifecycle Services (LCS), see [Find support for Microsoft Dynamics 365 for Finance and Operations and Microsoft Dynamics Lifecycle Services](lcs-support.md).
 -   For information about how to contact Microsoft if you have technical questions about Microsoft Dynamics AX 2012 or need support, see [Microsoft Dynamics AX 2012 Support experience](cloud-powered-support-lcs.md).
 
 

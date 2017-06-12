@@ -2,7 +2,7 @@
 # required metadata
 
 title: Help overview
-description: This article provides an overview of the components of the Microsoft Dynamics 365 for Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
+description: This article provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 author: margoc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides an overview of the components of the Microsoft Dynamics 365 for Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
+This article provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 
-Dynamics 365 for Operations includes a Help system that is based on two main components:
+Finance and Operations includes a Help system that is based on two main components:
 
 -   A documentation site
 -   Task guides
@@ -49,17 +49,17 @@ You can access both articles and task guides from the Help pane in Dynamics 365
 This article describes the Help system, and explains how you can create custom documentation and training resources for your organization.
 
 ## Help on docs.microsoft.com
-The docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) is the primary source of product documentation for Dynamics 365 for Operations. The site offers the following features:
+The docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) is the primary source of product documentation for Finance and Operations. The site offers the following features:
 
 -   **Access to the most up-to-date content** – The site gives us a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps guarantee that you have access to the latest technical information.
 -   **Content that is written by experts** – The site provides a richer set of product documentation that can be enhanced by community members both inside and outside Microsoft.
--   **Access to different types of content** – The site lets you quickly access different types of content about Dynamics 365 for Operations, such as Microsoft Office Mix presentations, task guides, videos, and topics.
+-   **Access to different types of content** – The site lets you quickly access different types of content about Finance and Operations, such as Microsoft Office Mix presentations, task guides, videos, and topics.
 -   **Content that supports your business processes** – The site includes business process–focused content that takes advantage of the Business Process Modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
 
 We've migrated all of the content from our previous help wiki to docs. We’re very excited about our new site and hope that you will be too.
 
 ### Searching on docs.microsoft.com
-We get a lot of questions about how to search for our content. On our site, if you start from a page about Dynamics 365 for Operations, we scope your search to just be for Dynamics 365 for Operations content. You can remove the scoping by clicking the X next to Operations in the search box. 
+We get a lot of questions about how to search for our content. On our site, if you start from a page about Finance and Operations, we scope your search to just be for Finance and Operations content. You can remove the scoping by clicking the X next to Operations in the search box. 
 ![Search](./media/search-scope.png)
 
 You can also find our content with any search engine. We recommend that for best results, you use a site search, such as 
@@ -104,33 +104,33 @@ To begin the guided, interactive experience, click **Start task guide** at the b
 
 ### It all begins with Task Recorder
 
-Task guides are created by using Task Recorder. When you use Task Recorder, all the actions that you perform in the Dynamics 365 for Operations UI (such as clicking menus, changing settings, and entering data) are recorded. The steps that you record are collectively called a task recording. As we explained in the previous section, task recordings can be displayed in the Help pane and played as task guides. However, there are other ways that you can use task recordings:
+Task guides are created by using Task Recorder. When you use Task Recorder, all the actions that you perform in the Finance and Operations UI (such as clicking menus, changing settings, and entering data) are recorded. The steps that you record are collectively called a task recording. As we explained in the previous section, task recordings can be displayed in the Help pane and played as task guides. However, there are other ways that you can use task recordings:
 
--   **Save task recordings to BPM** – You can save a task recording to a line of a hierarchy in a BPM library in LCS. When you save a task recording to BPM, a flowchart diagram is generated and displayed, together with the steps of the recording. **Note:** To display a task recording in the Dynamics 365 for Operations Help pane and play it as a task guide, you'll have to save the recording to a BPM library.
+-   **Save task recordings to BPM** – You can save a task recording to a line of a hierarchy in a BPM library in LCS. When you save a task recording to BPM, a flowchart diagram is generated and displayed, together with the steps of the recording. **Note:** To display a task recording in the Finance and Operations Help pane and play it as a task guide, you'll have to save the recording to a BPM library.
 -   **Save task recordings as Word documents** – By saving a task recording as a Microsoft Word document, you can easily produce printable training guides for your organization.
 
-For more information about Task Recorder, see [Task recorder in Dynamics 365 for Operations](../user-interface/task-recorder.md).
+For more information about Task Recorder, see [Task recorder in Finance and Operations](../user-interface/task-recorder.md).
 
 ### Creating customized task recordings
 
-You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Dynamics 365 for Operations implementation. To display a task recording in the Dynamics 365 for Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](../user-interface/task-recorder.md).
+You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Finance and Operations implementation. To display a task recording in the Finance and Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](../user-interface/task-recorder.md).
 
 ## In-product Help
-To access Help content within Dynamics 365 for Operations , either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. 
+To access Help content within Finance and Operations , either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. 
 
 ![Help pane](./media/help-pane-wiki-1024x684.png)
 
 ### Accessing articles from the Help pane
 
-From the Help pane, you can access articles that apply to the Dynamics 365 for Operations client. When you first open the Help pane and click the **Wiki** tab, you’ll see the articles that apply to the page that you’re currently on in Dynamics 365 for Operations. If no articles are found, you can enter keywords to refine your search. When you click an article in the Help pane, a new tab opens in your browser and displays the article. 
+From the Help pane, you can access articles that apply to the Finance and Operations client. When you first open the Help pane and click the **Wiki** tab, you’ll see the articles that apply to the page that you’re currently on in Finance and Operations. If no articles are found, you can enter keywords to refine your search. When you click an article in the Help pane, a new tab opens in your browser and displays the article. 
 
 ### Accessing Task guides from the Help pane
 
-Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Dynamics 365 for Operations and configure some settings. 
+Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Finance and Operations and configure some settings. 
 
 > [!NOTE]
-> -   In order to configure help, you must be signed in with an account in the same tenant as the tenant in which Dynamics 365 for Operations is deployed.
-> -   It is not possible to connect to an LCS library from an instance of Dynamics 365 for Operations running in a local virtual hard drive (VHD).
+> -   In order to configure help, you must be signed in with an account in the same tenant as the tenant in which Finance and Operations is deployed.
+> -   It is not possible to connect to an LCS library from an instance of Finance and Operations running in a local virtual hard drive (VHD).
 
 ![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
 
@@ -142,24 +142,24 @@ On the **System parameters** page, follow these steps:
 3.  Select the BPM libraries (within the selected project) to retrieve task recordings from.
 4.  Set the display order of the BPM libraries. This determines the order in which task recordings from the libraries will appear in the Help pane.
 
-After a System administrator has completed these steps, you can open the Help pane and click the **Task guides** tab. You'll now see the Task guides that apply to the page that you’re currently on in Dynamics 365 for Operations. If no Task guides are found, you can enter keywords to refine your search. After you click a Task guide in the Help pane, the Help pane shows the step-by-step instructions, and you can play the task guide. 
+After a System administrator has completed these steps, you can open the Help pane and click the **Task guides** tab. You'll now see the Task guides that apply to the page that you’re currently on in Finance and Operations. If no Task guides are found, you can enter keywords to refine your search. After you click a Task guide in the Help pane, the Help pane shows the step-by-step instructions, and you can play the task guide. 
 ![Task guide reading view](./media/task-guide-ops-1024x742.png)
 
 ### Where are the translated Task guides?
 
-Translated Task guides are released in libraries with "All languages" in the title. In Dynamics 365 for Operations, to see localized Task guide help, make sure that you are connected to an apppropriate library. The language that a Task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. 
+Translated Task guides are released in libraries with "All languages" in the title. In Finance and Operations, to see localized Task guide help, make sure that you are connected to an apppropriate library. The language that a Task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. 
 -   If a Task guide has been translated, when you open that Task guide all the text of the Task guide will appear in your selected language.
 -   If a Task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
 
 ## Additional resources
-The following table lists websites that provide Dynamics 365 for Operations content. Our content websites are organized to support the customer life cycle. Each phase is supported by a different set of sites. Sites that have an asterisk (\*) next to the name require that you sign in by using an account that is associated with a service plan.
+The following table lists websites that provide Finance and Operations content. Our content websites are organized to support the customer life cycle. Each phase is supported by a different set of sites. Sites that have an asterisk (\*) next to the name require that you sign in by using an account that is associated with a service plan.
 
 | Site                                                                     | Description                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Docs.microsoft.com](/dynamics365/#pivot=solutions&panel=solutions_operations) | Hosts or links to all product documentation for Dynamics 365 for Operations.                                                                                                                                                               |
-| [Lifecycle Services](http://lcs.dynamics.com/en/)\*                      | Provides a cloud-based collaborative workspace that customers and partners can use to manage Dynamics 365 for Operations projects from pre-sales to implementation and operations. This site is useful in all phases of an implementation. |
-| [CustomerSource](http://www.customersource.com/)\*                       | Hosts extensive training resources and is the primary support site for Dynamics 365 for Operations. Sign in may be required to access specific resources on the site.                                                                      |
-| [Support blog](http://aka.ms/AXSupportBlog)                              | Provides tips and tricks that are posted by the Dynamics 365 for Operations Support team.                                                                                                                                                  |
+| [Docs.microsoft.com](/dynamics365/#pivot=solutions&panel=solutions_operations) | Hosts or links to all product documentation for Finance and Operations.                                                                                                                                                               |
+| [Lifecycle Services](http://lcs.dynamics.com/en/)\*                      | Provides a cloud-based collaborative workspace that customers and partners can use to manage Finance and Operations projects from pre-sales to implementation and operations. This site is useful in all phases of an implementation. |
+| [CustomerSource](http://www.customersource.com/)\*                       | Hosts extensive training resources and is the primary support site for Finance and Operations. Sign in may be required to access specific resources on the site.                                                                      |
+| [Support blog](http://aka.ms/AXSupportBlog)                              | Provides tips and tricks that are posted by the Finance and Operations Support team.                                                                                                                                                  |
 | [MSDN](http://aka.ms/AXMSDN)                                             | Hosts content from previous releases that is written for developers.                                                                                                                                                                       |
 | [TechNet](http://aka.ms/TechNet)                                         | Hosts content from previous releases that is written for IT professionals and application users.                                                                                                                                           |
 | [Dynamics Community](http://community.dynamics.com/)                  | Hosts blogs, forums, and videos.                                                                                                                                                                                                           |
@@ -170,9 +170,9 @@ The following table lists websites that provide Dynamics 365 for Operations cont
 See also
 --------
 
-[Dynamics 365 for Operations help system (downloadable fact sheet)](https://mbs.microsoft.com/files/public/CS/AX2012R3/DynamicsAXHelpSystemFactSheet.pdf)
+[Finance and Operations help system (downloadable fact sheet)](https://mbs.microsoft.com/files/public/CS/AX2012R3/DynamicsAXHelpSystemFactSheet.pdf)
 
-[Task Recorder in Microsoft Dynamics 365 for Operations](../user-interface/task-recorder.md)
+[Task Recorder in Microsoft Dynamics 365 for Finance and Operations](../user-interface/task-recorder.md)
 
 [Create documentation or training using Task recordings](../user-interface/task-recorder.md)
 

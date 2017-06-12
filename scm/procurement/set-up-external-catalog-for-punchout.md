@@ -50,7 +50,7 @@ When setting up the external catalog, you need to make sure that the purpose of 
 ### To set up an external vendor catalog, complete the following tasks:
 
 1. Set up a procurement category hierarchy. For more information, see [Set up policies for procurement category hierarchies](/https://ax.help.dynamics.com/en/wiki/set-up-policies-for-procurement-category-hierarchies/).
-2. Register the vendor in Dynamics 365 for Operations. Before you can set up configurations to access an external vendor’s catalog, you must set up the vendor and the vendor contact in Microsoft Dynamics 365. The external catalog’s vendor must also be added to the selected procurement category. For more information about registering vendors in Microsoft Dynamics 365, see [Manage vendor collaboration users](/procurement/manage-vendor-collaboration-users.md). 
+2. Register the vendor in Finance and Operations. Before you can set up configurations to access an external vendor’s catalog, you must set up the vendor and the vendor contact in Microsoft Dynamics 365. The external catalog’s vendor must also be added to the selected procurement category. For more information about registering vendors in Microsoft Dynamics 365, see [Manage vendor collaboration users](/procurement/manage-vendor-collaboration-users.md). 
 For information about how to assign vendor’s to a procurement category, see [Approve vendors for specific procurement categories](/https://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-procurement-categories/).
 3. Make sure that the units of measure and the currency that the vendor uses are set up. For information about how to create a unit of measure, see [Create units of measure](/https://ax.help.dynamics.com/en/wiki/manage-unit-of-measure/).
 4. Configure the external vendor catalog by using the requirements for your vendor’s external catalog site. For more details about this task, see the next section.
@@ -98,9 +98,9 @@ Specify a name for the extrinsic element that the vendor can recognize and map i
 For more information about the cXML protocol, see: http://cxml.org/
 
 ## Post back message
-The post back message is the message that is received from the vendor when the user checks out from the external site and returns to Dynamics 365 for Operations. Post back messages can’t be configured. The messages are based on the cXML protocol definition. Here is the information that can be part of the post back message that is received on a requisition line:
+The post back message is the message that is received from the vendor when the user checks out from the external site and returns to Finance and Operations. Post back messages can’t be configured. The messages are based on the cXML protocol definition. Here is the information that can be part of the post back message that is received on a requisition line:
 
-| Message received from vendor | Copied to requisition line in Dynamics 365 for Operations|
+| Message received from vendor | Copied to requisition line in Finance and Operations|
 |------------------------------|----------------------------------------------------------|
 |< ItemIn quantity=”” > |Quantity|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|External item ID|
