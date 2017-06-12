@@ -40,8 +40,8 @@ ms.dyn365.ops.version: Dynamics 365 for Retail
 - Process a POS cash-and-carry return by using an accepting page
 - Process a POS customer order by using an accepting page
 - Process a POS cash-and-carry transaction by using Microsoft Dynamics AX 2012 Retail Hardware Station
-- Process a POS cash-and-carry return by using Hardware station
-- Process a POS customer order by using Hardware station
+- Process a POS cash-and-carry return by using Hardware Station
+- Process a POS customer order by using Hardware Station
 
         
 ## WWhich payment providers are supported and in what regions?
