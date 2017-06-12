@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 This topic lists the Power BI content that is available, and points you to resources to learn more about it.
 
 ## Power BI content for Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
-If you're using Dynamics 365 for Operations version 1611, the following Power BI content is available:
+If you're using Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, the following Power BI content is available:
 
 - [Benefits Power BI content](benefits-power-bi.md)
 - [Cash overview Power BI content](/dynamics365/operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
@@ -59,7 +59,10 @@ If you're using Dynamics 365 for Operations version 1611, the following Power BI
 
 ### How to access the content
 
+**Embedded content**
+Except for the content listed above with an asterisk, the above content is embedded into the application. To learn more about where to view the Power BI content, click on the links above.
 
+#### .PBIX files available in Lifecycle Services
 This Power BI content is available in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and connect it to your Microsoft Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
 ## Power BI content for Dynamics 365 for Operations version 1611
