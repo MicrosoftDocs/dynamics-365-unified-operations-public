@@ -186,6 +186,8 @@
 ## [Transportation management](transportation/transportation-management-overview.md)
 ## [Transportation engine](transportation/transportation-management-engines.md)
 # Warehouse management
+## Advanced warehouse management
+### [Migrate from AX 2012 to Finance and Operations](migration-warehouse-management-processes.md)
 ## Setup 
 ### [Control work by using work templates and location directives](warehousing/control-warehouse-location-directives.md)
 ### [Manage warehouse workers](warehousing/manage-warehouse-workers.md)
