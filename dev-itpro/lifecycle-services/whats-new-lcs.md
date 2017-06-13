@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Lifecycle Services
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata
@@ -118,9 +118,9 @@ Additionally, improvements to the View changes page allows for viewable changes 
 
 
 ## July 2016
-The Microsoft Dynamics Lifecycle Services team is happy to announce the immediate availability of the July release of Lifecycle Services. **NEW FEATURES** **SharePoint integration improvements in LCS (Preview)** With the July release, we have made significant improvements to simplify the LCS SharePoint integration for AX7 projects. The new framework uses user OAuth for performing operations in SharePoint. **Set up SharePoint in an LCS project**
+The Microsoft Dynamics Lifecycle Services team is happy to announce the immediate availability of the July release of Lifecycle Services. **NEW FEATURES** **SharePoint integration improvements in LCS (Preview)** With the July release, we have made significant improvements to simplify the LCS SharePoint integration for Dynamics AX 7.0 projects. The new framework uses user OAuth for performing operations in SharePoint. **Set up SharePoint in an LCS project**
 
-1.  To set up a SharePoint site in an LCS project, go to your LCS AX7 Project, scroll to the right, and click the **Project Settings** tile.
+1.  To set up a SharePoint site in an LCS project, go to your LCS  Dynamics AX 7.0 Project, scroll to the right, and click the **Project Settings** tile.
 2.  On the **Project settings** page, click the **SharePoint Online** tab.
 3.  Enter your SharePoint site URL and then click **Next**. Make sure the account you are using has access to the SharePoint that you are trying to setup.
 [![LCSWhat'sNew July\_01](./media/lcswhatsnew-july_01.jpg)](./media/lcswhatsnew-july_01.jpg)
@@ -500,7 +500,7 @@ Functionality now enables the localization (translation) of business process lin
 1.  Update the localization.xml file with a new &lt;localization&gt; entry for every language you added.
 2.  Zip the localization folder and import it back into LCS using the import button in the **Localization Center**.
 
-If you have edited the title or description of your line after your last export, the import process will show a conflict in the import report and the conflicting lines will not be imported. You can override this behavior and force an import by modifying the &lt;ModifiedDate&gt; of the line in the \_manifest.xml file to a future date. **Work in progress ** After importing BPM localizations, a Dynamics AX client connected to your LCS project will be able to render task guides in the Dynamics AX user interface language. However, the LCS BPM portal does not have this functionality yet. Import functionality is still not available for AX2012 projects. **Solution creation** Solution creation partners can now create a process data package directly from the Asset library. To start solution creation, click **+**, enter the name and description, and then click confirm. 
+If you have edited the title or description of your line after your last export, the import process will show a conflict in the import report and the conflicting lines will not be imported. You can override this behavior and force an import by modifying the &lt;ModifiedDate&gt; of the line in the \_manifest.xml file to a future date. **Work in progress ** After importing BPM localizations, a Dynamics AX client connected to your LCS project will be able to render task guides in the Dynamics AX user interface language. However, the LCS BPM portal does not have this functionality yet. Import functionality is still not available for AX 2012 projects. **Solution creation** Solution creation partners can now create a process data package directly from the Asset library. To start solution creation, click **+**, enter the name and description, and then click confirm. 
 
 ![7](https://msdnshared.blob.core.windows.net/media/2016/04/72.png) 
 

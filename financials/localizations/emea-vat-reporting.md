@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 266844
-ms.assetid: 06798e29-6140-489e-9b4e-66b45b26be2b
 ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, Latvia, Lithuania, Netherlands, Sweden
 # ms.search.industry: 
 ms.author: v-elgolu
@@ -257,9 +256,9 @@ d<li>The transaction <strong>Tax base amount</strong> or <strong>Tax amount</str
 
 You can use Electronic Reporting (ER) to configure statements and report, and to export data different electronic formats without changing X++ code. For additional information:
 
--   [Electronic reporting overview](/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting)
--   [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
--   [Localization requirements – Create a GER configuration](/dynamics365/operations/dev-itpro/analytics/electronic-reporting-configuration)
+-   [Electronic reporting overview](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting)
+-   [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
+-   [Localization requirements – Create a GER configuration](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration)
 
 ## Countryspecific resources for VAT statements
 The VAT statement for each country must meet the requirements of the country’s legislation. There are predefined general models and formats of VAT statements for the countries listed in the following table.

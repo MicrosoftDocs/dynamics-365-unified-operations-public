@@ -2,13 +2,13 @@
 # required metadata
 
 title: View financial reports
-description: This article describes how to view and explore financial reports in Microsoft Dynamics AX. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
-author: RobinARH
+description: This article describes how to view and explore financial reports in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
+author: kweekley
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: RobinARH
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 10334
 ms.assetid: d20f435f-fb65-4068-ab09-7efc7be683a6
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: aolson
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes how to view and explore financial reports in Microsoft Dynamics AX. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
+This article describes how to view and explore financial reports in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
 
 Financial reporting overview
 ----------------------------
@@ -68,7 +68,7 @@ You can refresh (update) a financial report so that it shows the most recent dat
 After you update a financial report, you can publish it. Other people in the organization will then be able to view it. To publish a report, on the Action Pane, click **Publish**.
 
 ## Display a financial report in a different currency
-A financial report can be displayed in any currency at any time. To display a report in a different currency, on the Action Pane, click **Currency**, and then select a currency. The report is translated into that currency, and the results are displayed. Any currency codes or symbols that are included as part of the report design are updated to reflect the new currency. The currencies that appear in the list are the reporting currencies that are configured in Microsoft Dynamics AX.
+A financial report can be displayed in any currency at any time. To display a report in a different currency, on the Action Pane, click **Currency**, and then select a currency. The report is translated into that currency, and the results are displayed. Any currency codes or symbols that are included as part of the report design are updated to reflect the new currency. The currencies that appear in the list are the reporting currencies that are configured in Finance and Operations.
 
 ## Display a summarized view of the financial report
 A financial report can contain detail lines and summary lines. Detail lines are lines that contain main accounts or dimensions. Summary lines are description, total, and calculation lines. To display just the summary lines of a report, click **Show**, and then click **Summary lines only**. The report is collapsed and displays only the summary lines. To view the detail lines together with the summary lines, click **Show**, and then click **Summary lines only** again.
@@ -92,7 +92,8 @@ To export a financial report, on the Action Pane, click **Export**. The report i
 See also
 --------
 
-[Financial reporting for Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+[Financial reporting for Microsoft Dynamics AX](/dynamics365/unified-operations/dev-itpro/analytics/financial-reporting-intro)
+
 
 
 

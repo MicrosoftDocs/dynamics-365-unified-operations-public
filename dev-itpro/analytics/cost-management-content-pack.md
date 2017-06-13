@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -56,7 +56,7 @@ The **Cost management** Microsoft Power BI content is intended for inventory acc
 The primary data source for CostAggregatedCostStatementEntryEntity is the CostStatementCache table. This table is managed by the Data set cache framework. By default, the table is updated every 24 hours, but you can enable manual updates in the data cache configuration. You can then do a manual update in the **Cost management** or **Cost analysis** workspace. After the update of CostStatementCache is run, you must update the OData connection on Power BI.com to see updated data on the site. The variance (purchase, production) measures in this Power BI content pertain only to items that are valuated by the Standard cost inventory method. Production variance is calculated as the difference between active cost and realized cost. The production variance is calculated when the production order has a status of **Ended**. For more information about production variance types and how each type is calculated, see [About analyzing variances for a completed production order](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
 ## Accessing the Power BI content
-The **Cost management** Power BI content is available from PowerBI.com. For more information about how to connect and load your Microsoft Dynamics 365 for Operations data, see [Access Power BI content from PowerBI.com](power-bi-home-page.md).
+The **Cost management** Power BI content is available from PowerBI.com. For more information about how to connect and load your Microsoft Dynamics 365 for Finance and Operations data, see [Access Power BI content from PowerBI.com](power-bi-home-page.md).
 
 ## Metrics that are included in the Power BI content
 The content includes a set of report pages. Each page consists of a set of metrics that are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the **Cost management** Power BI content.
@@ -88,9 +88,9 @@ The content includes a set of report pages. Each page consists of a set of metri
 | |Production variances by Site name and Category name level 3 | |
 
 ## Understanding the data model and entities
-Dynamics 365 for Operations data is used to populate the report pages in the **Cost management** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). The following key aggregate measurements are used as the basis of the content.
+Finance and Operations data is used to populate the report pages in the **Cost management** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). The following key aggregate measurements are used as the basis of the content.
 
-| Entity            | Key aggregate measurement | Data source for Dynamics 365 for Operations | Field             | Description                       |
+| Entity            | Key aggregate measurement | Data source for Finance and Operations | Field             | Description                       |
 |-------------------|---------------------------|---------------------------------------------|-------------------|-----------------------------------|
 | Statement entries | Net change                | CostAggregatedCostStatementEntryEntity      | sum(\[Amount\])   | Amount in the accounting currency |
 | Statement entries | Net change quantity       | CostAggregatedCostStatementEntryEntity      | sum(\[Quantity\]) |                                   |

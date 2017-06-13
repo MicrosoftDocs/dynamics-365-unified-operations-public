@@ -2,13 +2,13 @@
 # required metadata
 
 title: Data entities and packages framework
-description: This topic provides information about using data entities and data entity packages in Microsoft Dynamics 365 for Operations. 
+description: This topic provides information about using data entities and data entity packages. 
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,12 +35,12 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides information about using data entities and data entity packages in Microsoft Dynamics 365 for Operations. 
+This topic provides information about using data entities and data entity packages. 
 
 Data entities
 -------------
 
-Data entities provide conceptual abstraction and encapsulation of underlying table schema that represent data concepts and functionalities. In Microsoft Dynamics AX 2012, most tables, like the Customer and Vendor tables, were de-normalized and split into multiple tables. This was beneficial from a database design point of view, but made it difficult for implementers and ISV’s to use without a thorough understanding of the physical schema. Data entities were introduced as part of data management to be used as a layer of abstraction to easily understand by using business concepts. In previous versions of Dynamics 365 for Operations, there were multiple ways to manage data, such as Microsoft Excel Add-ins, AIF, and DIXF. The concept of data entities combines those different concepts into one. After data entities are created, you should be able to reuse them for an Excel Add-ins, import/export, or integration. The following table shows core data management scenarios.
+Data entities provide conceptual abstraction and encapsulation of underlying table schema that represent data concepts and functionalities. In Microsoft Dynamics AX 2012, most tables, like the Customer and Vendor tables, were de-normalized and split into multiple tables. This was beneficial from a database design point of view, but made it difficult for implementers and ISV’s to use without a thorough understanding of the physical schema. Data entities were introduced as part of data management to be used as a layer of abstraction to easily understand by using business concepts. In previous versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, there were multiple ways to manage data, such as Microsoft Excel Add-ins, AIF, and DIXF. The concept of data entities combines those different concepts into one. After data entities are created, you should be able to reuse them for an Excel Add-ins, import/export, or integration. The following table shows core data management scenarios.
 
 <table>
 <colgroup>
@@ -79,18 +79,18 @@ The following pain points can occur during migration:
 -   Complexity due to repeated manual interventions.
 -   Difficulty in tracing and error troubleshooting.
 -   Difficulty migrating a large volume of data within a time constraint.
--   During migration, you can strategize and choose data entities. Data entities also save time during implementation because previous activities required data export from a database, data export validation, and data transformation to files such as Excel or XML. In the current version Dynamics 365 for Operations, these hops have been eliminated. If an import error occurs, you can skip selected records and choose to proceed with the import using the good data, opting to then fix and import the bad data later. You will be allowed to partially continue and bad data will be indicated by using errors. Data imports can be easily scheduled using a batch, which offers flexibility when it is required to run. For example, you can migrate customer groups, customers, vendors, and other data entities in the system at any time.
+-   During migration, you can strategize and choose data entities. Data entities also save time during implementation because previous activities required data export from a database, data export validation, and data transformation to files such as Excel or XML. These hoops have been eliminated. If an import error occurs, you can skip selected records and choose to proceed with the import using the good data, opting to then fix and import the bad data later. You will be allowed to partially continue and bad data will be indicated by using errors. Data imports can be easily scheduled using a batch, which offers flexibility when it is required to run. For example, you can migrate customer groups, customers, vendors, and other data entities in the system at any time.
 
 ## Set up and copy configuration
-Starting a new implementation can be difficult because the knowledge of the data that needs to be entered can sometimes be limited. Data must be entered by module, or it must be configured using business processes. It is even more difficult to determine data dependencies and how the data sequencing should be configured in the implementation. Re-usability is also a factor as to where and how data can be used across environments. These pain points are addressed in the current version of Dynamics 365 for Operations. Movement of data becomes easier as it moves from test to staging to production environments. Movement of data can occur in any order. This is not a movement of the entire database but rather, only the data entities that you have chosen. The migration with the new version of Dynamics 365 for Operations allows:
+Starting a new implementation can be difficult because the knowledge of the data that needs to be entered can sometimes be limited. Data must be entered by module, or it must be configured using business processes. It is even more difficult to determine data dependencies and how the data sequencing should be configured in the implementation. Re-usability is also a factor as to where and how data can be used across environments. These pain points are now addressed. Movement of data becomes easier as it moves from test to staging to production environments. Movement of data can occur in any order. This is not a movement of the entire database but rather, only the data entities that you have chosen. Migration now allows:
 
--   Moving data between two similar Dynamics 365 for Operations systems.
+-   Moving data between two similar systems.
 -   Discovering setup entities and any dependency between each entity for a given process or module.
 -   Maintaining a reusable library of data templates and datasets.
 -   Data packages is a new concept that allows you to build incremental data entities. Data entities can be sequenced inside the packages. You can name data packages, which can be easily identifiable during import or export. When building data packages, data entities can be mapped on staging tables in a tabular format or by using available visual representation in data management. You can also drag-and-drop columns manually, depending on the mapping that you want for an entity. During import, data can easily be viewed using data management enabling data comparison.
 
 ## Data management concepts
-The following terms are introduced in current version of Dynamics 365 for Operations. Take time to learn these terms, as they will be used in other sections of this document.
+The following terms are introduced.
 
 |                  |                                                                                                                                                                                        |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -100,7 +100,7 @@ The following terms are introduced in current version of Dynamics 365 for Operat
 | **Data package** | A single compressed file that contains a data project manifest and/or data files. This is generated from a data job and used for import or export of multiple files with the manifest. |
 
 ## Using data entities
-The following sections provide quick snapshots of the different functionalities of data management using data entities. The goal is to help to you strategize and make effective decisions on how to best utilize the available tools during data migration. You will also find tips and tricks on how to effectively use each area during data migration. A list of available data entities for each area can also be found with the suggested data sequences, showing data dependencies within Dynamics 365 for Operations. Microsoft provides data packages that can be found on Lifecycle Services (LCS) as an initial guide. The information in this document can be used as a guide for creating your own packages. The description of each data entity shows what the object contains and if it is needed during data migration.
+The following sections provide quick snapshots of the different functionalities of data management using data entities. The goal is to help to you strategize and make effective decisions on how to best utilize the available tools during data migration. You will also find tips and tricks on how to effectively use each area during data migration. A list of available data entities for each area can also be found with the suggested data sequences, showing data dependencies. Microsoft provides data packages that can be found on Lifecycle Services (LCS) as an initial guide. The information in this document can be used as a guide for creating your own packages. The description of each data entity shows what the object contains and if it is needed during data migration.
 
 ## Sequencing
 There are two types of sequencing that should be considered when working with data entities.
@@ -121,7 +121,7 @@ To further illustrate, the following screenshot shows the entity sequence that i
 
 [![DataEntitiesDataPackages02](./media/dataentitiesdatapackages02.png)](./media/dataentitiesdatapackages02.png)
 
-In order to successfully import sales tax codes and groups, the sales tax codes and details have to be loaded first, before sales tax groups can be imported. Sales tax codes and groups are all in Execution unit = 1, but the sequences are in the order that they will be imported. Other related sales tax entities that are not dependent upon other data entities being loaded are included in the package. For example, sales tax exempt numbers, is set in its own Execution unit = 2. This data entity will start loading immediately because there are no dependencies on other entities loading before it. **Sequencing of the data packages** In order to successfully load data, the order of loading the data packages is important because of dependencies that exist within and across modules in Dynamics 365 for Operations. The numbering format that has been created for the data packages within LCS are as follows:
+In order to successfully import sales tax codes and groups, the sales tax codes and details have to be loaded first, before sales tax groups can be imported. Sales tax codes and groups are all in Execution unit = 1, but the sequences are in the order that they will be imported. Other related sales tax entities that are not dependent upon other data entities being loaded are included in the package. For example, sales tax exempt numbers, is set in its own Execution unit = 2. This data entity will start loading immediately because there are no dependencies on other entities loading before it. **Sequencing of the data packages** In order to successfully load data, the order of loading the data packages is important because of dependencies that exist within and across modules. The numbering format that has been created for the data packages within LCS are as follows:
 
 -   First segment = Modulearea
 -   Second segment = Data type (SetupMasterTransaction)
@@ -164,7 +164,7 @@ After the job is completed you can choose how to download the files, either as e
 ## Import
 Import is the process of pulling data into a system utilizing data entities. The import process is done through the **Import** tile in the **Data Management** workspace. Data can be imported either for individual entities or for a group of logically related entities that are sequenced in the correct order. The file formats vary depending on the type of import. For an entity, it can be an Excel file that is comma-separated, tab-separated, text. For a data package, it is a .zip file. In both cases, the files are exported using the above mentioned export process. The detailed steps for importing data using data packages is as follows.
 
-1.  Log into the Dynamics 365 for Operations environment using a login with sufficient privileges (typically this is the Administrator role).
+1.  Log into the environment using a login with sufficient privileges (typically this is the Administrator role).
 2.  On the dashboard, select the **Data Management** workspace.
 3.  To begin importing, select the **Import** tile.
 4.  On the next page, do the following:

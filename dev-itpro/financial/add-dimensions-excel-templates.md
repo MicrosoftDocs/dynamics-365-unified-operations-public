@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
 
-In Dynamics 365 for Operations, the only value that is present on Microsoft Excel templates after installation is MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates, you need to complete the steps in the [Add dimensions to the Microsoft Excel templates](dimensions-overview.md) topic. After you have added the dimensions, if you want the ability to look up a list of dimension values, complete the steps in this topic. **Note:**  This information is subject to change for each release, so be sure to check back frequently for the most up-to-date information.
+The only value that is present on Microsoft Excel templates after installation is MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates, you need to complete the steps in the [Add dimensions to the Microsoft Excel templates](dimensions-overview.md) topic. After you have added the dimensions, if you want the ability to look up a list of dimension values, complete the steps in this topic. **Note:**  This information is subject to change for each release, so be sure to check back frequently for the most up-to-date information.
 
 1.  In Visual Studio, open the project where you modified **DimensionCombinationEntity** or **DimensionSetEntity.**
 2.  Right-click **DimensionCombinationEntity** or **DimensionSetEntity**. Select **Open**.

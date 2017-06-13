@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,7 +40,7 @@ This article explains how to configure a warehouse. It includes information abou
 **Note:** This article applies to features in the **Warehouse management** module (advanced warehousing). It doesn't apply to warehouse features in the **Inventory management** module.
 
 ## Warehouse layout
-The Warehouse management system in Microsoft Dynamics 365 for Operations gives you flexible ways to define your warehouse layout to meet changing needs, so that you can achieve optimal warehouse efficiency.
+The Warehouse management system in Microsoft Dynamics 365 for Finance and Operations gives you flexible ways to define your warehouse layout to meet changing needs, so that you can achieve optimal warehouse efficiency.
 
 -   You can establish high-priority and low-priority storages areas for optimum placement of goods.
 -   You can divide your warehouse into zones to accommodate various storage needs, such as temperature requirements, or various turnover rates for items.
@@ -48,7 +48,7 @@ The Warehouse management system in Microsoft Dynamics 365 for Operations gives y
 -   You can group locations by using physical capacity constraint settings.
 -   You can control how items are stored and picked, based on query-defined rules.
 
-To use warehouse management in Microsoft Dynamics 365 for Operations, you must create a warehouse and enable it for more advanced or specialized warehouse management activities. On the **Warehouses** page, select the **Use warehouse management processes** option.
+To use warehouse management in Microsoft Dynamics 365 for Finance and Operations, you must create a warehouse and enable it for more advanced or specialized warehouse management activities. On the **Warehouses** page, select the **Use warehouse management processes** option.
 
 ### Zone groups, zones, location types, and locations
 

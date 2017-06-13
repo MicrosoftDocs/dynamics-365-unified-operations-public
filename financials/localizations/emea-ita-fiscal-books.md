@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.search.form: CustParameters, LedgerJournalSetup, ProjJournalName, TaxBook, Ta
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 268654
-ms.assetid: 3e761795-22e4-4d40-8c51-1f4a3f94b573
 ms.search.region: Italy
 # ms.search.industry: 
 ms.author: ilyako
@@ -37,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 The topic describes how to set up and use Italian sales tax books and Italian sales tax book sections.
 
-According to Italian fiscal legislation, every value-added tax (VAT) transaction must belong to a tax book (*Libro IVA*) that will be used for tax reporting. To fulfill these legislative requirements, Microsoft Dynamics 365 for Operations implements Italian sales tax books. Sales tax books can be of different types. You must specify the sales tax book type to help guarantee that all sales and purchase transactions are included on the **Italian sales tax payment** report. You can keep as many sales tax books of the **Sales** and **Purchase** types as you require. Every tax book can be divided into multiple tax book sections (*Sezionale IVA*). All sales tax transactions must be sequentially numbered (without gaps) and ordered by posting date. A tax book section is equivalent to a number sequence for the Italian sales tax voucher number (*Protocollo IVA*) that must always be applied during posting to help guarantee chronological order by posting date.
+According to Italian fiscal legislation, every value-added tax (VAT) transaction must belong to a tax book (*Libro IVA*) that will be used for tax reporting. To fulfill these legislative requirements, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition implements Italian sales tax books. Sales tax books can be of different types. You must specify the sales tax book type to help guarantee that all sales and purchase transactions are included on the **Italian sales tax payment** report. You can keep as many sales tax books of the **Sales** and **Purchase** types as you require. Every tax book can be divided into multiple tax book sections (*Sezionale IVA*). All sales tax transactions must be sequentially numbered (without gaps) and ordered by posting date. A tax book section is equivalent to a number sequence for the Italian sales tax voucher number (*Protocollo IVA*) that must always be applied during posting to help guarantee chronological order by posting date.
 
 ## Prerequisites
 The following table shows the prerequisites that must be in place before you start.

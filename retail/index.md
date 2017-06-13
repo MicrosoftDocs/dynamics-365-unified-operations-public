@@ -2,13 +2,13 @@
 # required metadata
 
 title: Retail home page
-description: Home page for Dynamics 365 for Operations – Retail
+description: Home page for Dynamics 365 for Retail – Retail
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](includes/banner.md)]
 
-Dynamics 365 for Operations – Retail delivers a complete shopping experience, with a seamless and differentiating omni-channel solution that is modern, mobile, and global. End-to-end capabilities, from modern point of sale (POS) software solutions, store operations, merchandising, e-commerce, call center, marketing, and customer care, to supply chain, financials, and more, can be deployed in the way that makes the most sense for your business.
+Dynamics 365 for Retail – Retail delivers a complete shopping experience, with a seamless and differentiating omni-channel solution that is modern, mobile, and global. End-to-end capabilities, from modern point of sale (POS) software solutions, store operations, merchandising, e-commerce, call center, marketing, and customer care, to supply chain, financials, and more, can be deployed in the way that makes the most sense for your business.
 
-This page points to resources that will help you use Microsoft Dynamics 365 for Operations - Retail more effectively. On the leftmost pane, select a feature area to learn more about it. 
+This page points to resources that will help you use Microsoft Dynamics 365 for Retail more effectively. On the leftmost pane, select a feature area to learn more about it. 
 
 ## Set up Retail channels
 As you set up your Retail experience, you'll decide how to define and configure your stores -- brick and mortar store, online store, and call center. 
@@ -72,27 +72,27 @@ You can make price adjustments to products, and can also set up discounts that a
 -   [Determine the optimal combination of overlapping discounts](optimal-combination-overlapping-discounts.md)
 
 ## Set up retail products
-Before you can offer products for sale in your retail channels, you'll need to create and configure the products in Dynamics 365 for Operations. You can create the products, define the product properties and attributes, and assign the products to retail category hierarchies. To make the products available to your retail channels and add them to an active assortment, you'll then release the products to the legal entities in which they are available.
+Before you can offer products for sale in your retail channels, you'll need to create and configure the products in Dynamics 365 for Retail. You can create the products, define the product properties and attributes, and assign the products to retail category hierarchies. To make the products available to your retail channels and add them to an active assortment, you'll then release the products to the legal entities in which they are available.
 -   [Set up retail products](set-up-retail-products.md)
 
 ## Monitor and analyze performance
-Using your Dynamics 365 for Operations data, you can analyze store performance, customer and product profitability, sales trends, and more.
+Using your Dynamics 365 for Retail data, you can analyze store performance, customer and product profitability, sales trends, and more.
 -   [Assess customer and product profitability](assess-customer-product-profitability.md)
 -   [Analyze store performance](store-performance-information.md)
 
 ## Customize and administer Retail environments
-If you have been asked to customize your environment, or if you are tasked with deploying and maintaining your system, check out the developer and system administrator content specific to Retail, as well as the more general content for Microsoft Dynamics 365 for Operations. 
--   [Dynamics 365 for Operations - Retail for IT Pros and Developers](dev-itpro/dev-retail-home-page.md)
--   [Microsoft Dynamics 365 for Operations for Developers and IT Pros](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
+If you have been asked to customize your environment, or if you are tasked with deploying and maintaining your system, check out the developer and system administrator content specific to Retail, as well as the more general content for Microsoft Dynamics 365 for Retail. 
+-   [Dynamics 365 for Retail for IT Pros and Developers](dev-itpro/dev-retail-home-page.md)
+-   [Microsoft Dynamics 365 for Retail for Developers and IT Pros](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page)
 
 ## Additional resources
 ### What's new and in development
 Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development. 
 
 ### Blogs
-You can find opinions, news, and other information about Microsoft Dynamics 365 for Operations - Retail and other solutions on the <a href="https://community.dynamics.com/b/msftdynamicsblog">Microsoft Dynamics 365 blog</a>.
+You can find opinions, news, and other information about Microsoft Dynamics 365 for Retail and other solutions on the <a href="https://community.dynamics.com/b/msftdynamicsblog">Microsoft Dynamics 365 blog</a>.
 
-There are many topics about Retail on the <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX product team blog</a>. Some of these posts were written for the previous version of Dynamics 365 for Operations, but the same concepts still apply, and the procedures are similar in the current version.
+There are many topics about Retail on the <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX product team blog</a>. Some of these posts were written for the previous version of Dynamics 365 for Retail, but the same concepts still apply, and the procedures are similar in the current version.
 
 The <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations Partner Community Blog</a> provides Microsoft Dynamics Partners with a single resource to learn about what’s new and trending in MBS Operations.
 

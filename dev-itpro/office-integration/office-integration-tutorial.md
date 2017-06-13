@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -40,13 +40,13 @@ In this tutorial, you will use and build Office integration experiences that inv
 Overview
 --------
 
-In this tutorial, you will use and build Microsoft Office integration experiences that involve Microsoft Excel, Microsoft Word, the Document Management subsystem, and email. You will see how Microsoft Dynamics 365 for Operations integrates with Excel and Word by using data entities as an entry point into the system, how Excel can become a core part of the user experience, and how Excel and Word can be used for ad-hoc lightweight reporting. You will also see how files can be stored and shared by using the Document Management and email capabilities in Dynamics 365 for Operations.
+In this tutorial, you will use and build Microsoft Office integration experiences that involve Microsoft Excel, Microsoft Word, the Document Management subsystem, and email. You will see how Excel and Word use data entities as an entry point into the system, how Excel can become a core part of the user experience, and how Excel and Word can be used for ad-hoc lightweight reporting. You will also see how files can be stored and shared by using the Document Management and email capabilities.
 
 ## Prerequisites
 For this tutorial, you must access the environment by using Remote Desktop, and you must be provisioned as an administrator on the instance. For more information, see [Access development instances](..\dev-tools\access-instances.md). If you're running Internet Explorer on the virtual machine (VM), you must enable font and file downloads at **Internet Options** &gt; **Security** &gt; **Custom Level**. Microsoft Visual Studio 2015 runs on the VM, and it must run as an administrator so that metadata and compilation files can be overwritten. To make sure that Visual Studio runs as an administrator, search for the program, and pin it to the taskbar. Then right-click the shortcut on the taskbar, right-click **Visual Studio 2015**, click **Properties** &gt; **Advanced**, and select the **Run as administrator** check box. Visual Studio will now run as an administrator via a single left click of the taskbar shortcut.
 
 ## Key concepts
--   **Entities and OData** – You will use the Microsoft Dynamics Excel Data Connector App (Excel App) to create, read, update, and delete Dynamics 365 for Operations. The connector uses OData services that are created for any entity that is left in the default state of "public" (**DataEntity.Public**=**Yes**).
+-   **Entities and OData** – You will use the Microsoft Dynamics Excel Data Connector App (Excel App) to create, read, update, and delete. The connector uses OData services that are created for any entity that is left in the default state of "public" (**DataEntity.Public**=**Yes**).
 -   **Apps for Office** – The Excel App is built by using the Apps for Office framework (which is also known as the Office Web API). The Excel App is web-based, and therefore shares technology with the client and will run inside both on-premises Excel instances and Microsoft Excel Online (Microsoft Office 365). The app runs inside Excel in a task pane.
 -   **Microsoft Office 2016** – The Excel and Word Apps use advances in the Apps for Office framework that were introduced in Office 2016. Therefore, Office 2016 is required in order to run the Excel and Word Apps.
 -   **Authentication** – The Excel and Word Apps run in an Internet Explorer window inside Excel and Word. Even if the user is running the client in an InPrivate Browsing session in Internet Explorer, or in a different browser, such as Chrome, Internet Explorer is still used to run the app inside Excel or Word. Authentication is facilitated by OAuth, and the user can select accounts and sign in within the app. Internet Explorer will first try to automatically sign the user in. Therefore, if you aren't signed in as the correct user, or if you have trouble signing in, you might have to force a sign-out from the app by using the sign-out link on the user menu in the lower-right corner of the app. After sign-out, right-click in the app, and try to sign in again.
@@ -63,7 +63,7 @@ During this tutorial, we will mainly use forms, entities, and data in the Fleet 
 ## Static Export to Excel experiences
 ### Static Export to Excel
 
-Static Export to Excel provides a quick mechanism for getting data into grids on a page. The standard mechanism for triggering Export to Excel in Dynamics 365 for Operations is the **Open in** **Microsoft Office** menu. Static Export to Excel is also available via a shortcut menu on the grid.
+Static Export to Excel provides a quick mechanism for getting data into grids on a page. The standard mechanism for triggering Export to Excel is the **Open in** **Microsoft Office** menu. Static Export to Excel is also available via a shortcut menu on the grid.
 
 1.  In Internet Explorer, navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
 2.  Click **Open in** **Microsoft Office** &gt; **Export to Excel** &gt; **Customers**.
@@ -346,7 +346,7 @@ The Microsoft Dynamics App for Office can be run in Word to enable the creation 
 3.  Sign in to the app:
     1.  Click **Sign In**. The Azure Active Directory sign-in screen should provide a list of credentials. If you encounter an error, force a sign-out (by using the sign-out link in the lower-right corner of the app), and then sign in again.
     2.  Select the appropriate account, or click **Use another account**.
-    3.  Enter the credentials for that Microsoft Dynamics 365 for Operations environment, and then click **Sign in**.
+    3.  Enter the credentials for that environment, and then click **Sign in**.
 
 4.  Load the template designer applet:
     1.  After sign-in, click **Load applets**.
@@ -385,7 +385,7 @@ The Microsoft Dynamics App for Office can be run in Word to enable the creation 
 After you've built a Word template, you can upload it to create an Export to Word experience.
 
 1.  Upload a template:
-    1.  In Dynamics 365 for Operations, navigate to **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates**. Alternatively, search for the page.
+    1.  Navigate to **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates**. Alternatively, search for the page.
     2.  Click **New**.
     3.  Click **Browse**.
     4.  In the dialog box, select a previously created template, and then click **Open**. Note that the Root data entity is obtained from the template and appears near the bottom of the dialog box.
@@ -461,7 +461,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 9.  Click **Collect** &gt; **Customer balances** &gt; **Collections** to open the **Collections** page.
 10. Click **Communicate** &gt; **Email** &gt; **Statements to contact**.
 11. Click **OK** to accept the default values in the dialog box.
-12. If you're prompted for the mail option to use, select **Use the Microsoft Dynamics 365 for Operations email client**, and then click **OK**.
+12. If you're prompted for the mail option to use, select **Use the Microsoft Dynamics 365 for Finance and Operations email client**, and then click **OK**.
 13. To receive the test message, change the To address to your email address.
 14. Enter a subject and body for the message.
 15. Click **Send**. The message should be delivered in one to five minutes. Note that the message will appear to be sent from the email account that is set on the **Email parameters** page. If that email account is given "Send As" (or "Send email from this mailbox") permissions for the From address that is used in the **Send email** dialog box, messages will appear to come from that address.

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/21/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -909,7 +909,7 @@ The **doInsert** method generates values for the **RecId** field and other syste
 If steps aren't taken to help guarantee the integrity of transactions, data corruption could occur. At the very least, you might experience poor scalability with respect to concurrent users on the system. Two internal checking features help guarantee the integrity of transactions: the **forUpdate** check and the **tssLevel** check. A **forUpdate** check helps guarantee that a record can be updated or deleted only if it has first been selected for update. You can select a record for update by using either the **forUpdate** keyword in the **select** statement or the **selectForUpdate** method on tables. A **ttsLevel** check helps guarantee that a record can be updated or deleted only within the same transaction scope where it was selected for update. The following statements are used to help guarantee integrity:
 
 -   **ttsBegin** – This statement marks the beginning of a transaction. It helps guarantee data integrity, and also helps guarantees that all updates that are done until the transaction ends (through **ttsCommit** or **ttsAbort**) are consistent (all or none).
--   **ttsCommit** – This statement marks the successful end of a transaction. It ends and commits a transaction. Microsoft Dynamics 365 for Operations helps guarantee that a transaction that has been committed will be performed according to intentions.
+-   **ttsCommit** – This statement marks the successful end of a transaction. It ends and commits a transaction. Finance and Operations helps guarantee that a transaction that has been committed will be performed according to intentions.
 -   **ttsAbort** – This statement lets you explicitly discard all changes in the current transaction. In this case, the database is rolled back to the original state where nothing has been changed. Typically, you use this statement if you've detected that the user wants to break the current job. The **ttsAbort** statement helps guarantee that the database is consistent.
 
 Usually, it's a better idea to use exception handling instead of **ttsAbort**. The **throw** statement automatically aborts the current transaction. As the following example shows, statements between **ttsBegin** and **ttsCommit** can include one or more transaction blocks. In these cases, nothing is actually committed until the successful exit from the final **ttsCommit** statement.

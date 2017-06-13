@@ -2,13 +2,13 @@
 # required metadata
 
 title: Set up a customer loyalty program
-description: This article describes how to set up a loyalty program. Loyalty programs can help increase customer loyalty by rewarding customers for buying products in your retail stores. In Microsoft Dynamics 365 for Operations, you can set up simple or complex loyalty programs that apply across your legal entities in any retail channel.
+description: This article describes how to set up a loyalty program. Loyalty programs can help increase customer loyalty by rewarding customers for buying products in your retail stores. In Microsoft Dynamics 365 for Retail, you can set up simple or complex loyalty programs that apply across your legal entities in any retail channel.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](includes/banner.md)]
 
 
-This article describes how to set up a loyalty program. Loyalty programs can help increase customer loyalty by rewarding customers for buying products in your retail stores. In Microsoft Dynamics 365 for Operations, you can set up simple or complex loyalty programs that apply across your legal entities in any retail channel.
+This article describes how to set up a loyalty program. Loyalty programs can help increase customer loyalty by rewarding customers for buying products in your retail stores. In Microsoft Dynamics 365 for Retail, you can set up simple or complex loyalty programs that apply across your legal entities in any retail channel.
 
 Loyalty features
 ----------------
@@ -49,7 +49,7 @@ You can set up your loyalty program so that they include the following options:
 -   Manually adjust loyalty cards, or transfer the loyalty rewards balance from one card to another to accommodate or reward a customer.
 
 ## Setting up loyalty programs
-You must set up several components to enable the loyalty feature in Dynamics 365 for Operations - Retail. The following diagram illustrates the loyalty components and how they relate to each other. ![Loyalty setup process flow](./media/loyaltyprocess.gif)
+You must set up several components to enable the loyalty feature in Dynamics 365 for Retail. The following diagram illustrates the loyalty components and how they relate to each other. ![Loyalty setup process flow](./media/loyaltyprocess.gif)
 
 ## Loyalty components
 The following table describes each component and where it's used in the loyalty setup.
@@ -72,7 +72,7 @@ The following table describes the processes that must be run to send the loyalty
 
 | Process name                         | Description                                                                                                                                                                                                                                                                                                                                                                                                    | Page name                            |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| 1050 (loyalty information)           | Run this process to send the loyalty data from Dynamics 365 for Operations to the retail stores. It's a good idea to schedule this process to run frequently, so that loyalty data is transmitted to all stores.                                                                                                                                                                                               | Distribution schedule                |
+| 1050 (loyalty information)           | Run this process to send the loyalty data from Dynamics 365 for Retail to the retail stores. It's a good idea to schedule this process to run frequently, so that loyalty data is transmitted to all stores.                                                                                                                                                                                               | Distribution schedule                |
 | Process loyalty schemes              | Run this process to associate loyalty schemes with the retail channels that the loyalty scheme is assigned to. This process can be scheduled to run as a batch process. You must run this process if you change loyalty configuration data, such as loyalty schemes, loyalty programs, or loyalty reward points.                                                                                               | Process loyalty schemes              |
 | Process offline loyalty transactions | Run this process to update loyalty cards so that they include transactions that were processed offline. This process applies only if the **Earn offline** check box is selected on the **Retail shared parameters **page, so that rewards can be earned offline.                                                                                                                                               | Process offline loyalty transactions |
 | Update loyalty card tiers            | Run this process to evaluate the customer’s earning activity against the tier rules for a loyalty program, and to update the customer’s tier status. This process is required only if you change the tier rules in loyalty programs and want the updated rules to be retroactively applied to loyalty cards that have already been issued. This process can be run as a batch process or for individual cards. | Update loyalty card tiers            |

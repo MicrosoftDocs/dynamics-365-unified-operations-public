@@ -2,13 +2,13 @@
 # required metadata
 
 title: Reconciliation reports for Belgium
-description: This topic describes the standard reports that Dynamics 365 for Operations provides to help you with the INTERVAT tax declaration and reconciliation analysis.
+description: This topic describes the standard reports that Microsoft Dynamics 365 for Finance and Operations, Enterprise edition provides to help you with the INTERVAT tax declaration and reconciliation analysis.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,15 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.1, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 273103
-ms.assetid: 7f300068-6004-4a5f-9817-5bf22ef633a6
 ms.search.region: Belgium
 # ms.search.industry: 
 ms.author: ShylaThompson
-ms.dyn365.ops.intro: AX 7.0.1
+ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
 
 ---
@@ -35,7 +34,7 @@ ms.search.validFrom: 2016-05-31
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the standard reports that Dynamics 365 for Operations provides to help you with the INTERVAT tax declaration and reconciliation analysis.
+This topic describes the standard reports that Microsoft Dynamics 365 for Finance and Operations, Enterprise edition provides to help you with the INTERVAT tax declaration and reconciliation analysis.
 
 Based on the sales tax entries for selected periods, the Belgian periodic value-added tax (VAT) declaration combines sales tax amounts into boxes (sales tax reporting codes) by sorting, splitting, and totaling information in specific ways. Therefore, control reports are required, so that the amounts in the VAT declaration can be verified in detail. The rest of this topic describes the reports that include details of the data in the VAT declaration.
 

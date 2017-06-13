@@ -2,13 +2,13 @@
 # required metadata
 
 title: Service endpoints
-description: This topic describes the service endpoints that are available in Microsoft Dynamics 365 for Operations.
+description: This topic describes the service endpoints that are available.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -34,24 +34,21 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-
-This topic describes the service endpoints that are available in Microsoft Dynamics 365 for Operations.
-
 This article describes the service endpoints that are available.
 
 ## List of services
-The following table lists all the service endpoints that were available in Microsoft Dynamics AX 2012 and the service endpoints in Dynamics 365 for Operations.
+The following table lists all the service endpoints.
 
-| Service endpoint            | Dynamics AX 2012 | Dynamics 365 for Operations    |
+| Service endpoint            | Dynamics AX 2012 | Finance and Operations     |
 |-----------------------------|------------------|--------------------------------|
 | Document Services (AXDs)    | Yes              | No – Replaced by data entities |
 | SOAP-based Metadata Service | Yes              | No – Replaced by REST metadata |
 | SOAP-based Query Service    | Yes              | No – Replaced by OData         |
 | OData Query Service         | Yes              | No – Replaced by OData         |
 | SOAP-based Custom Service   | Yes              | Yes                            |
-| JSON-based Custom Service   | No               | Yes (**New**)                  |
-| OData Service               | No               | Yes (**New**)                  |
-| REST Metadata Service       | No               | Yes (**New**)                  |
+| JSON-based Custom Service   | No               | Yes                   |
+| OData Service               | No               | Yes                   |
+| REST Metadata Service       | No               | Yes                   |
 
 ## Custom services
 ### SOAP-based Custom Service
@@ -72,7 +69,7 @@ The SOAP endpoint is at https://&lt;host\_uri&gt;/soap/Services/&lt;service\_gro
 
 ### JSON-based Custom Service
 
-This feature enables X++ classes to be consumed as JSON services. In other words, the return data set is in JSON format. JSON, which stands for JavaScript Object Notation, is a compact, lightweight format that is commonly used communicate data between the client and the server. In Dynamics 365 for Operations, after the developer has written the services under service groups, the service groups are always deployed on two endpoints:
+This feature enables X++ classes to be consumed as JSON services. In other words, the return data set is in JSON format. JSON, which stands for JavaScript Object Notation, is a compact, lightweight format that is commonly used communicate data between the client and the server. After the developer has written the services under service groups, the service groups are always deployed on two endpoints:
 
 -   SOAP endpoint (mentioned in the previous section)
 -   JSON endpoint
@@ -80,7 +77,7 @@ This feature enables X++ classes to be consumed as JSON services. In other word
 The JSON Endpoint is at https://&lt;host\_uri&gt;/api/Services/&lt;service\_group\_name&gt;/&lt;service\_group\_service\_name&gt;/&lt;operation\_name&gt;. **Example:** https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo You can find a Microsoft Office Mix presentation about this topic [here](https://mix.office.com/watch/12e4fejbgj429). **Code examples -** We have some sample code examples for consuming Json services at <https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/JsonConsoleApplication>
 
 ## OData Services
-Dynamics 365 for Operations has an OData REST endpoint. This endpoint exposes all the data entities that are marked as **IsPublic** in the Application Object Tree (AOT). It supports complete CRUD (create, retrieve, update, and delete) functionality that users can use to insert and retrieve data from the system. Detailed labs for this feature are on the LCS methodology. You can find an Office Mix presentation about OData Services [here](https://mix.office.com/watch/1aym08mqyjghi).
+There is an OData REST endpoint. This endpoint exposes all the data entities that are marked as **IsPublic** in the Application Object Tree (AOT). It supports complete CRUD (create, retrieve, update, and delete) functionality that users can use to insert and retrieve data from the system. Detailed labs for this feature are on the LCS methodology. You can find an Office Mix presentation about OData Services [here](https://mix.office.com/watch/1aym08mqyjghi).
 
 ### Supported features from the OData specification
 

@@ -2,13 +2,13 @@
 # required metadata
 
 title: Brazilian taxes
-description: Microsoft Dynamics 365 for Operations calculates Brazilian taxes based on the tax type that you specify for the sales tax code. You can set up and calculate sales taxes on sales, purchases, transfers between fiscal establishments, delivery of items to a third party, or receipt of items from a third party.
-author: ShylaThompson
+description: Microsoft Dynamics 365 for Finance and Operations, Enterprise edition calculates Brazilian taxes based on the tax type that you specify for the sales tax code. You can set up and calculate sales taxes on sales, purchases, transfers between fiscal establishments, delivery of items to a third party, or receipt of items from a third party.
+author: sndray
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 101
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 268704
-ms.assetid: 00f3d59f-4c5b-4053-ac68-22063079bd91
 ms.search.region: Brazil
 # ms.search.industry: 
 ms.author: sndray
@@ -35,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Operations calculates Brazilian taxes based on the tax type that you specify for the sales tax code. You can set up and calculate sales taxes on sales, purchases, transfers between fiscal establishments, delivery of items to a third party, or receipt of items from a third party.
+Finance and Operations calculates Brazilian taxes based on the tax type that you specify for the sales tax code. You can set up and calculate sales taxes on sales, purchases, transfers between fiscal establishments, delivery of items to a third party, or receipt of items from a third party.
 
 You can set up taxation codes for Imposto sobre Circulação de Mercadorias e Serviços (ICMS), Imposto sobre Produtos Industrializados (IPI), Program de Integracao Social (PIS), and Contribuição para Financiamento da Seguridade Social (COFINS) taxes. The taxation codes are used for fiscal reporting and generating federal electronic fiscal documents (NF-e). You can also set up taxation codes for other tax types. When you set up a taxation code for a tax type, you assign a fiscal value to indicate the type of treatment that applies to taxes, such as taxable, not taxable or exempt, or taxable without credit. When a taxation code is not set up for a tax type, you can set up the fiscal value by selecting the **Without tax credit** and **Exempt** options on the **Sales tax groups** and **Item sales tax groups** pages. Sales taxes are calculated and saved on the **Posted sales tax** page. You can specify a default taxation code for the sales tax code in the **Taxation code** field on the **Sales tax codes** page. You can also specify the taxation code for a sales tax code when you attach the sales tax code to the following:
 -   A sales tax group and the sales tax code is exempt.

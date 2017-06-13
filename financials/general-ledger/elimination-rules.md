@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -136,7 +136,7 @@ Your legal entity, legal entity A, sells widgets to another legal entity in your
 All these transactions create intercompany transactions that are posted to due-to and due-from accounts. In addition, these transactions might include markup and markdown amounts when the amount of the intercompany sale doesn't equal the cost of the goods that were sold.
 
 ## Set up elimination rules
-When setting up elimination rules in Dynamics 365 for Operations, we recommend that you create a financial dimension specifically for elimination purposes. Most customers name it Trading Partner or something similar. If you decide not to use a financial dimension, then be sure to have main accounts that are specific for intercompany transactions only. 
+When setting up elimination rules in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, we recommend that you create a financial dimension specifically for elimination purposes. Most customers name it Trading Partner or something similar. If you decide not to use a financial dimension, then be sure to have main accounts that are specific for intercompany transactions only. 
 
 The setup for eliminations is found in the Setup area of the Consolidations module. After you enter a description for the rule, you must pick the company that the elimination journal will post to. This should be a company that has **Use for financial elimination process** selected in the Legal entity setup. 
 

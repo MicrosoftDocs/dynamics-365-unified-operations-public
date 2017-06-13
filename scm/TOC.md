@@ -4,6 +4,7 @@
 ## Create demand forecast
 ### [Demand forecast overview](master-planning/introduction-demand-forecasting.md)
 ### [Set up a demand forecast](master-planning/demand-forecasting-setup.md)
+### [Import historical data for demand forecasts](master-planning/import-historical-data.md)
 ### [Generate a statistical baseline forecast](master-planning/generate-statistical-baseline-forecast.md)
 ### [Make manual adjustment to the baseline forecast](master-planning/manual-adjustments-baseline-forecast.md)
 ### [Authorize an adjusted forecast](master-planning/authorize-adjusted-forecast.md)
@@ -49,19 +50,37 @@
 ### [Purchase agreements](procurement/purchase-agreements.md)
 ## Product receipts and invoicing
 ### [Product receipt against purchase orders](procurement/product-receipt-against-purchase-orders.md)
-### [Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
-### [Vendor posting profiles](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Product information management
-## Product information
-### [BOM and formula](production-control/bill-of-material-bom.md)
-### [BOM designer functionality](production-control/bom-designer-functionality.md)
-### [Product dimension](pim/product-dimensions.md)
-### [Default order settings for dimensions and product variants](production-control/default-order-settings.md)
-### [Product number nomenclature](pim/product-variant-identification-nomenclature.md)
-### [Product-related translation FAQ](pim/translations-product-related-information.md)
-### [Register serial number in the sales process](sales-marketing/register-serial-numbers-sales-process.md)
-### [Search for product during order entry](pim/search-products-product-variants.md)
-## Create product configuration
+## [Product information overview](pim/product-information.md)
+## Maintain product categories
+## Maintain product information
+### Maintain product definition
+#### [Product number nomenclature](pim/product-variant-identification-nomenclature.md)
+#### Product templates
+#### [Product dimension](pim/product-dimensions.md)
+#### Product attributes
+#### Product pictures and attachments
+#### Product identifiers
+#### [Translation of product information FAQ](pim/translations-product-related-information.md)
+### Release products to legal entities
+### Search for products
+#### [Search for product during order entry](pim/search-products-product-variants.md)
+### Prepare product for planning
+#### [Default order settings for dimensions and product variants](production-control/default-order-settings.md)
+#### Forecast models and item allocation keys
+### Prepare product for production
+#### BOM and formula
+##### [Bills of materials and formulas](production-control/bill-of-material-bom.md)
+##### [Use the BOM designer](production-control/bom-designer-functionality.md)
+##### [Use the formula designer](production-control/formula-designer.md)
+#### Routes
+#### Lean manufacturing
+### Prepare products for warehouse and logistics
+### Estimate cost for products
+#### [BOM calculations](cost-management/bom-calculations.md)
+## Maintain product configuration models
 ### [Build a product configuration model](pim/build-product-configuration-model.md)
 ### [Calculation for product configuration model FAQ](pim/calculate-product-configuration-models.md)
 ### [Configuration rule](pim/configuration-rules.md)
@@ -70,6 +89,8 @@
 ### [Reuse product configuration](pim/reuse-product-configurations.md)
 ### [Set up a configuration model](pim/set-up-maintain-product-configuration-model.md)
 ### [System-defined and user-defined table constraint](pim/system-defined-user-defined-table-constraints.md)
+## Import product information data
+## Export product information data
 # Production control
 ## [Production process overview](production-control/production-process-overview.md)
 ## [Mixed mode planning: Combine discrete, process, and lean sourcing](production-control/mixed-mode-plan.md)
@@ -79,7 +100,7 @@
 #### [Production setup requirements](production-control/production-set-up-requirements.md)
 #### [Bills of materials and formulas](production-control/bill-of-material-bom.md)
 #### [BOM designer functionality](production-control/bom-designer-functionality.md)
-#### [Bom calculations](cost-management/bom-calculations.md)
+#### [BOM calculations](cost-management/bom-calculations.md)
 #### [Operations resources](production-control/operations-resources.md)
 #### [Resource capabilities](production-control/resource-capabilities.md)
 #### [Routes and operations](production-control/routes-operations.md)
@@ -167,7 +188,7 @@
 ### [Set up layout](warehousing/warehouse-configuration.md)
 ### [Warehouse work policies](warehousing/warehouse-work-policies.md)
 ### [Unit of measure and stocking policies](warehousing/unit-measure-stocking-policies.md)
-### [Warehouse Power BI content](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
+### [Warehouse Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
 ## Picking and packing
 ### [Packing materials and fees](warehousing/pack-materials-packing-material-fees.md)
 ## Inventory counting
@@ -187,15 +208,15 @@
 ### [Warehouse Mobile Devices Portal (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [Warehouse mobile device display settings](warehousing/change-warehouse-mobile-device-displays.md)
 
-# [Financials](/dynamics365/operations/financials/index)
+# [Financials](/dynamics365/unified-operations/financials/index)
 
-# [Human resources](/dynamics365/operations/human-resources/index)
+# [Human resources](/dynamics365/unified-operations/talent/index)
 
-# [Retail](/dynamics365/operations/retail/index)
+# [Retail](/dynamics365/unified-operations/retail/index)
 
-# [Developer and Administrator](/dynamics365/operations/dev-itpro/index)
+# [Developer and Administrator](/dynamics365/unified-operations/dev-itpro/index)
 
 # Other resources
-## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
-## [What's new or changed](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Finance and Operations glossary](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 

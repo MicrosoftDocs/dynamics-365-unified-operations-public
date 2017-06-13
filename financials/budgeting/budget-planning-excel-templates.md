@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -56,7 +56,7 @@ The Excel template will contain all of the elements from the budget plan docume
 [![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
-> To avoid potential issues with viewing and editing budget plan data using Excel, the same user should be logged into both Dynamics 365 for Operations and the Microsoft Dynamics Office Add-in Data Connector.
+> To avoid potential issues with viewing and editing budget plan data using Excel, the same user should be logged into both Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and the Microsoft Dynamics Office Add-in Data Connector.
 
 ## Add a header to budget plan document template
 To add header information, select the top row in the Excel file and insert empty rows. Click **Design** in the **Data Connector** to add header fields to the Excel file.
@@ -85,11 +85,11 @@ The selected field group displays the columns that are available in the template
 [![bpt12](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> To define the formula, create the formula in the spreadsheet, and then copy it to the **Design** window. A Dynamics 365 for Operations bound table will typically be named "AXTable1". For example, to summarize Request Q1 : Request Q4 columns in the spreadsheet, the formula = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
+> To define the formula, create the formula in the spreadsheet, and then copy it to the **Design** window. A Finance and Operations bound table will typically be named "AXTable1". For example, to summarize Request Q1 : Request Q4 columns in the spreadsheet, the formula = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
 
 Repeat these steps to insert the **Adjustment** column. Use formula = AxTable1\[Total request\]\*$I$1 for this column. This will take the value in cell I1 and multiply the values in the **Total request** column to calculate adjustment amounts.
 
-Save and close the Excel file. Return to Dynamics 365 for Operations, and in **Layouts**, click **Template &gt; Upload** to upload the saved Excel template to be used for the budget plan. 
+Save and close the Excel file. Return to Finance and Operations, and in **Layouts**, click **Template &gt; Upload** to upload the saved Excel template to be used for the budget plan. 
 
 [![bpt10](./media/bpt10-1024x352.png)](./media/bpt10.png) 
 

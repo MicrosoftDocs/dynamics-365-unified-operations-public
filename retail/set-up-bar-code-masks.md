@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,7 +40,7 @@ This topic describes how to set up bar code mask characters, bar code masks, and
 Set up bar code mask characters
 -------------------------------
 
-Bar code masks are used to create bar codes and to quickly identify bar codes that are scanned into the point of sale (POS). Masks are comprised of characters which act as placeholders that indicate the format for the bar codes that will be created. To configure a bar code mask, you need to set up bar code mask characters. Go to **Retail and commerce** &gt; **Inventory management** &gt; **Barcodes and labels** &gt; **Mask characters**. Click **New** to create bar code mask characters. Mask characters can be created to indicate the following bar code data.
+Bar code masks are used to create bar codes and to quickly identify bar codes that are scanned into the point of sale (POS). Masks are comprised of characters which act as placeholders that indicate the format for the bar codes that will be created. To configure a bar code mask, you need to set up bar code mask characters. Go to **Retail** &gt; **Inventory management** &gt; **Barcodes and labels** &gt; **Mask characters**. Click **New** to create bar code mask characters. Mask characters can be created to indicate the following bar code data.
 
 |                      |                                                                                                                 |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -57,12 +57,13 @@ Bar code masks are used to create bar codes and to quickly identify bar codes th
 | **Employee**         | Indicates bar code segment for employee ID number used for bar code POS login.                                  |
 | **Customer**         | Indicates customer ID segment.                                                                                  |
 | **Data entry**       | *Not yet implemented.*                                                                                          |
-| **Discount code**    | Indicates discount code for a bar code that's used to add a discount to a point of sale transaction             |
+| **Discount code**    | *Depreciated* as of Dynamics 365 for Retail Spring 2017 release. Previously: Indicates discount code for a bar code that's used to add a discount to a point of sale transaction.                                                                   |
+| **Coupon code**      | Indicates coupon code for a bar code used to add a discount to a retail order. This replaced discount code.     |
 | **Gift card**        | Indicates a gift card number when issuing or paying by gift card.                                               |
 | **Loyalty card**     | Adds a loyalty customer to the transaction, and can be used when paying by loyalty.                             |
 
 ## Define bar code masks
-After bar code mask characters are specified for the necessary bar code masks, go to **Retail and commerce** &gt; **Inventory management** &gt; **Barcodes and labels** &gt; **Barcode mask setup**. On this page, you can define bar code masks that use the previously specified characters. These bar code masks will be used when generating bar codes and will also help to identify bar codes scanned at the POS.
+After bar code mask characters are specified for the necessary bar code masks, go to **Retail** &gt; **Inventory management** &gt; **Barcodes and labels** &gt; **Barcode mask setup**. On this page, you can define bar code masks that use the previously specified characters. These bar code masks will be used when generating bar codes and will also help to identify bar codes scanned at the POS.
 
 1.  Click **New** to create a new bar code mask.
 2.  Enter values in the **Mask ID** and **Description** fields, and then select a bar code mask type in the **Type** field.

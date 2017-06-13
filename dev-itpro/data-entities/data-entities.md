@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -98,7 +98,7 @@ A system implementer will use both a guided data collection wizard and bulk data
 
 ##### Data migration from legacy or external systems
 
-After the initial deployment is up and running, the system implementer will **migrate existing data assets of the customer** into Microsoft Dynamics 365 for Operations, especially the following assets:
+After the initial deployment is up and running, the system implementer will **migrate existing data assets of the customer** into Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, especially the following assets:
 
 -   Master data (for example, customers and vendors)
 -   Subsets of documents (for example, sales orders)

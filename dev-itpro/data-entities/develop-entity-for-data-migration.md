@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This tutorial shows how to develop data entities in Microsoft Visual Studio and then use them for data migration.
 
-This tutorial is broken out into two sections and four exercises. In the first section, you will build a **Project Category** entity in Visual Studio. You will then use this entity to export data from Microsoft Dynamics 365 for Operations. In the second section, you will use **Customer Groups** and **Customers** entities to import multiple sets of files by using the new Data Import/Export Framework. **Note:** This tutorial is designed to be slightly more challenging than [Building and consuming data entities](build-consuming-data-entities.md). Instead of providing a step-by-step guide, it has scenario exercises and describes the expected outcomes. The assumption is that you've already familiarized yourself with entities and the Data Import/Export Framework through Microsoft Office Mix videos.
+This tutorial is broken out into two sections and four exercises. In the first section, you will build a **Project Category** entity in Visual Studio. You will then use this entity to export data. In the second section, you will use **Customer Groups** and **Customers** entities to import multiple sets of files by using the new Data Import/Export Framework. **Note:** This tutorial is designed to be slightly more challenging than [Building and consuming data entities](build-consuming-data-entities.md). Instead of providing a step-by-step guide, it has scenario exercises and describes the expected outcomes. The assumption is that you've already familiarized yourself with entities and the Data Import/Export Framework through Microsoft Office Mix videos.
 
 ## Prerequisites
 This tutorial requires that you access the environment by using Remote Desktop. You must be provisioned as an administrator on the instance.
@@ -87,7 +87,7 @@ The entity also has the following fields.
 
 #### Steps
 
-1.  In Visual Studio, create a new Dynamics 365 for Operations project.
+1.  In Visual Studio, create a new Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
 2.  In Solution Explorer, select the project, and then right-click **Properties**.
 3.  Specify the following project properties, and then click **OK**.
 

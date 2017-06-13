@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -2368,7 +2368,7 @@ The attachments are numbered from 1. Therefore, the first attachment should be n
 | Method                                    | Description                                                                                                                                   |
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | public str address(\[str Address\])       |                                                                                                                                               |
-| public str name(\[str Name\])             | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str Name\])             | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int recipClass(\[int RecipClass\]) |                                                                                                                                               |
 | public void new()                         | Initializes a new instance of the MapiRecipDesc class.                                                                                        |
 | public void finalize()                    |                                                                                                                                               |
@@ -2385,7 +2385,7 @@ Address
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str Name])
 
@@ -2762,7 +2762,7 @@ The iterator points to the next element after the delete method is invoked.
 ## Class MemberFunction
     class MemberFunction extends TreeNode
 
-The MemberFunction class provides information about a specified node in the Microsoft Dynamics 365 for Operations Application Object Tree (AOT), such as a form, report, or class.
+The MemberFunction class provides information about a specified node in the Finance and Operations Application Object Tree (AOT), such as a form, report, or class.
 
 ### Remarks
 
@@ -2806,7 +2806,7 @@ The following example uses the TreeNode::findNode method to assign the node for 
 | public boolean canAddEventHandler()                        |                                                                                                                                         |
 | public boolean isEvent()                                   |                                                                                                                                         |
 | public boolean isStatic()                                  | Indicates whether a method is static.                                                                                                   |
-| public str name(\[str value\])                             | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                             | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
 | public void AOTedit(\[int Line\], \[int Column\])          | Opens the appropriate editor for a specified node in the AOT.                                                                           |
 | public void new()                                          | Initializes a new instance of the MemberFunction class.                                                                                 |
 | public void AOTsetSource(str source, \[boolean isStatic\]) | Sets the source code for a specified node in the AOT, such as a class or method.                                                        |
@@ -2849,7 +2849,7 @@ This method is associated with a specified node in the AOT, such as a form, repo
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 
@@ -2913,11 +2913,11 @@ A Boolean value: true for a static method or false for an instance method; optio
 ## Class Menu
     class Menu extends TreeNode
 
-The Menu system class lets you configure and run any of the Microsoft Dynamics 365 for OperationsMenu objects from code.
+The Menu system class lets you configure and run any of the Finance and OperationsMenu objects from code.
 
 ### Remarks
 
-The TreeNode system class serves as a more general approach to the menus in the Microsoft Dynamics 365 for Operations Application Object Tree (AOT). You use the Menu class to create or manipulate the menus contents, such as submenus and menu items. This class lets you create, read, update, and delete X++ code and metadata. Make sure that the user has access to the development security key (SysDevelopment) before this API is called.
+The TreeNode system class serves as a more general approach to the menus in the Finance and Operations Application Object Tree (AOT). You use the Menu class to create or manipulate the menus contents, such as submenus and menu items. This class lets you create, read, update, and delete X++ code and metadata. Make sure that the user has access to the development security key (SysDevelopment) before this API is called.
 
 ### Examples
 
@@ -3431,7 +3431,7 @@ A menu item represents the user interface of a menu function. Menu items are lin
 | public str menuFunctionName(\[str name\])                  |                                                                                                                                               |
 | public str menuItemName(\[str value\])                     |                                                                                                                                               |
 | public MenuItemType menuItemType(\[MenuItemType value\])   |                                                                                                                                               |
-| public str name(\[str value\])                             | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                             | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public str parameter(\[str parameter\])                    |                                                                                                                                               |
 | public str parameters(\[str value\])                       | Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.                                        |
 | public str shortCut(\[str value\])                         |                                                                                                                                               |
@@ -3501,7 +3501,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -3615,7 +3615,7 @@ The MenuReference class enables you to create, read, update, and delete X++ code
 ## Class MessageWin
     class MessageWin extends Object
 
-The MessageWin class gives access to the messageWindow class of the Microsoft Dynamics 365 for Operations development environment.
+The MessageWin class gives access to the messageWindow class of the Finance and Operations development environment.
 
 ### Remarks
 

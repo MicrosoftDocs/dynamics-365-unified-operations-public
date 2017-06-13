@@ -2,13 +2,13 @@
 # required metadata
 
 title: View and design financial reports
-description: This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 for Operations.  
+description: This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 for Finance and Operations.  
 author: jcart1106
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 for Operations. Financial reporting consists of a viewing experience within Dynamics 365 for Operations and a click-once report designer that lets you create and edit financial reports.  
+This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 for Finance and Operations. Financial reporting consists of a viewing experience within Finance and Operations and a click-once report designer that lets you create and edit financial reports.  
 
 Exercise 1: Generate and explore a default financial report
 -----------------------------------------------------------
@@ -63,7 +63,7 @@ For this exercise, you will be generating and exploring an existing default repo
 13. Select **Report Options**.
 14. Select **Add a dimension filter** and choose **Business Unit**.
 15. Type 001 into the field and select **OK**. The report now displays only the data for the 001 Business Unit. This is a personalized view of the report and isn’t available for others to view.
-16. Close the filtered report. Financial reports can be displayed in any currency that has been added to Dynamics 365 for Operations.
+16. Close the filtered report. Financial reports can be displayed in any currency that has been added to Finance and Operations.
 17. Select **Currency**, then select **EUR.** The report now displays in Euros. Any currency codes or currency symbols included in the report design now display in the applied currency. If no currency symbol is defined for a currency, the currency symbol is not displayed.
 18. Close the **GL Detail** report.
 19. Close **Report Designer**.
@@ -74,7 +74,7 @@ In this exercise, you will be modifying an existing default report. You will be 
 1.  Go to **Financial reports** under Inquiries and reports in General ledger.
 2.  Select the row for the report named **Summary Trial Balance – Default**
 3.  Select **Edit**. **Summary Trial Balance – Default** will open in the report designer.
-4.  Select **File**, then **Save As** and name the report Detailed Trial Balance with Attributes. Note: Any time a new report is created in report designer, the financial reports list is updated in Dynamics 365 for Operations.
+4.  Select **File**, then **Save As** and name the report Detailed Trial Balance with Attributes. Note: Any time a new report is created in report designer, the financial reports list is updated in Finance and Operations.
 5.  From the report definition, select the row definition icon to open the **Trial Balance – Default row definition**.
 6.  Save the row definition as **Detailed Trial Balance with Attributes**
 7.  With the cursor on row 50, select **Edit**, then **Insert Rows from Dimensions**. Insert rows from dimensions allows you to choose what dimensions you’d like to have in your row definition. For this exercise, we are going to build the row definition using Main Account.
@@ -187,8 +187,8 @@ In this exercise, you’ll be creating a new report. The report is a side-by-sid
 18. **Save** your changes and **generate**. Once the report completes generating and opens, you can explore the report.
 
 ## Additional resources
-[Financial reporting](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
-[View financial reports](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
+[Financial reporting](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
+[View financial reports](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
 [Dynamics Financial Reporting Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

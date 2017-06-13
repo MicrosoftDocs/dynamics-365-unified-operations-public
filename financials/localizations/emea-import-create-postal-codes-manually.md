@@ -2,13 +2,13 @@
 # required metadata
 
 title: Import or manually create postal codes
-description: This article explains how to import and manually create postal codes in the correct format. This topic includes information about feature that was added for Microsoft Dynamics 365 for Operations. 
+description: This article explains how to import and manually create postal codes in the correct format. This topic includes information about feature that was added for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.search.form: LogisticsAddressSetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 29901
-ms.assetid: 0c9cbc5f-88ae-4ed2-8331-13ecea029f79
 ms.search.region: Belgium, Netherlands, Sweden
 # ms.search.industry: 
 ms.author: epopov
@@ -35,12 +34,12 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This article explains how to import and manually create postal codes in the correct format. This topic includes information about feature that was added for Microsoft Dynamics 365 for Operations. 
+This article explains how to import and manually create postal codes in the correct format. This topic includes information about feature that was added for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 The import process lets you update the ZIP/postal codes for a specific country/region. You can also create postal codes manually.
 
 ## Import ZIP/postal codes
-You can use the **Import ZIP/postal codes** page to import new postal codes into Microsoft Dynamics 365 for Operations. When you import the codes, the existing ZIP or postal codes are replaced with the new format, and any new codes are added.
+You can use the **Import ZIP/postal codes** page to import new postal codes into Finance and Operations. When you import the codes, the existing ZIP or postal codes are replaced with the new format, and any new codes are added.
 
 For some countries, you must use the Data management framework to import codes, while for other countries only a upload file is required. Belgium, Netherlands, and Sweden require a file to upload.
 

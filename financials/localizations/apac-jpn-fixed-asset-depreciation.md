@@ -3,12 +3,12 @@
 
 title: Fixed asset depreciation for Japan FAQ
 description: This article answers some frequently asked questions about fixed asset depreciation for Japan.
-author: ShylaThompson
+author: RichardLuan
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 10294
 ms.assetid: 81dab75a-3760-48f2-b453-11b487def3b2
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: leguo
+ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -74,7 +74,7 @@ The allowable limit for accumulated depreciation is the maximum amount of accumu
 -   **Maximum allowable limit for accumulated depreciation** – This limit is applied to both tangible assets and intangible assets that are depreciated by using a deprecation method other than the old straight line method or the old declining balance method. For a tangible asset, the maximum allowable limit for accumulated depreciation is the acquisition cost of the asset. The maximum allowable limit for accumulated depreciation of an intangible asset is the acquisition cost of the asset minus 1 Japanese yen (JPY).
 
 ## Can I calculate depreciation for a fixed asset for a fiscal year that has fewer than 12 months?
-Yes. Microsoft Dynamics 365 for Operations supports depreciation calculation if a fiscal year has fewer than 12 months. You can set up multiple depreciation calendars and change between them. If the current fiscal year has fewer than 12 months after you change depreciation calendars, the depreciation ration is proportionally adjusted, based on the number of months in the current fiscal year and a fiscal year that has 12 months. The following example shows how depreciation is calculated for a fiscal year that has fewer than 12 months. The original fiscal year is from April 1, 2010, to March 31, 2011, and the depreciation is calculated for the whole fiscal year. After you change the depreciation calendar, the fiscal year is from January 1, 2011, to December 31, 2011. In this scenario, the months of January, February, and March become part of the previous fiscal calendar, and the current fiscal year consists of only nine months. The depreciation for the remaining nine months (from April 1, 2011, to December 31, 2011) is calculated by using a prorated method that uses the depreciation rates from the previous fiscal year.
+Yes. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports depreciation calculation if a fiscal year has fewer than 12 months. You can set up multiple depreciation calendars and change between them. If the current fiscal year has fewer than 12 months after you change depreciation calendars, the depreciation ration is proportionally adjusted, based on the number of months in the current fiscal year and a fiscal year that has 12 months. The following example shows how depreciation is calculated for a fiscal year that has fewer than 12 months. The original fiscal year is from April 1, 2010, to March 31, 2011, and the depreciation is calculated for the whole fiscal year. After you change the depreciation calendar, the fiscal year is from January 1, 2011, to December 31, 2011. In this scenario, the months of January, February, and March become part of the previous fiscal calendar, and the current fiscal year consists of only nine months. The depreciation for the remaining nine months (from April 1, 2011, to December 31, 2011) is calculated by using a prorated method that uses the depreciation rates from the previous fiscal year.
 
 ## What is the catchup rule for depreciation and how does it work?
 The catch-up rule for depreciation provides an effective way to allocate annual depreciation expenses to the depreciation expenses for each period. You can enable the catch-up rule by selecting the **Allow catch-up rule for depreciation** check box on the **Fixed assets parameters** page. You can also specify whether the catch-up is applied at the end of a fiscal period or at the end of a fiscal year.

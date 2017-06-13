@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -157,10 +157,10 @@ You can send notifications to people when a decision has been made, delegated, o
     </tr>
     <tr class="odd">
     <td>User</td>
-    <td>Specific Microsoft Dynamics 365 for Operations users</td>
+    <td>Specific Microsoft Dynamics 365 for Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Dynamics 365 for Operations users. Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -222,10 +222,10 @@ Follow these steps to specify who a manual decision should be assigned to.
     </tr>
     <tr class="even">
     <td>User</td>
-    <td>Specific Dynamics 365 for Operations users</td>
+    <td>Specific Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Dynamics 365 for Operations users. Select the users to assign the decision to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to assign the decision to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -312,10 +312,10 @@ If a user doesn't make the decision in the allotted time, the decision is overdu
     </tr>
     <tr class="odd">
     <td>User</td>
-    <td>Specific Dynamics 365 for Operations users</td>
+    <td>Specific Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Dynamics 365 for Operations users. Select the users to escalate the decision to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to escalate the decision to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>

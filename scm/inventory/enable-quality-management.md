@@ -2,13 +2,13 @@
 # required metadata
 
 title: Quality management overview
-description: This article describes how you can use quality management in Microsoft Dynamics 365 for Operations to help improve product quality within your supply chain.
+description: This article describes how you can use quality management in Microsoft Dynamics 365 for Finance and Operations to help improve product quality within your supply chain.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes how you can use quality management in Microsoft Dynamics 365 for Operations to help improve product quality within your supply chain.
+This article describes how you can use quality management in Microsoft Dynamics 365 for Finance and Operations to help improve product quality within your supply chain.
 
 Quality management can help you manage turnaround times when you handle nonconforming products, regardless of their point of origin. Because diagnostic types are linked to correction reporting, Microsoft Dynamics 365 for Operations can schedule tasks to correct problems and prevent them from recurring.
 

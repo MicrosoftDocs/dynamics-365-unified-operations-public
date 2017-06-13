@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,14 +37,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic contains links to topics about developing user interface elements.
 
-The user interface for Microsoft Dynamics 365 for Operations differs significantly from the interface for Microsoft Dynamics AX 2012. The client in Dynamics AX 2012 is a Microsoft Win32 application that has extensions that use ActiveX, WinForm, or WPF controls. The X++ application logic runs on the client for the form and table methods, and some logic occurs on the server. For controls, both the X++ logic application programming interface (API) and the physical Win32 control are tightly connected on the client. The client in Dynamics 365 for Operations is an HTML web client that runs in all major browsers. These browsers include Microsoft Edge, Internet Explorer 11, Chrome, and Safari (see [System requirements](../get-started/system-requirements.md)). The move to a web client has produced the following changes to client forms and controls:
+The user interface for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition differs significantly from the interface for Microsoft Dynamics AX 2012. The client in Dynamics AX 2012 is a Microsoft Win32 application that has extensions that use ActiveX, WinForm, or WPF controls. The X++ application logic runs on the client for the form and table methods, and some logic occurs on the server. For controls, both the X++ logic application programming interface (API) and the physical Win32 control are tightly connected on the client. The client is an HTML web client that runs in all major browsers. These browsers include Microsoft Edge, Internet Explorer 11, Chrome, and Safari (see [System requirements](../get-started/system-requirements.md)). The move to a web client has produced the following changes to client forms and controls:
 
 -   The physical presentation of forms and controls is now HTML, JavaScript, and CSS within the browser.
 -   Form controls are split into logical and physical parts. The X++ logical API and related state run on the server.
 -   The logical and physical parts are kept in sync through service calls that communicate changes from each side. For example, a user action on the client creates a service call to the server that is either sent immediately or queued so that it can be sent later.
 -   The server tier keeps the form state in memory while the form is open.
 
-The form metamodel continues to be used to define controls and application logic. This approach enables Dynamics 365 for Operations to support almost all the existing Form, Form DataSource, and Form Control metamodel and X++ override methods. However, some control types, properties, and override methods have been removed, either because of incompatibility with the new platform or for performance reasons. For example, ActiveX and ManagedHost controls can no longer be used to add custom controls, because they are incompatible with the HTML platform. Instead, a new extensible control framework has been added that lets you add additional controls.
+The form metamodel continues to be used to define controls and application logic. This approach supports almost all the existing Form, Form DataSource, and Form Control metamodel and X++ override methods. However, some control types, properties, and override methods have been removed, either because of incompatibility with the new platform or for performance reasons. For example, ActiveX and ManagedHost controls can no longer be used to add custom controls, because they are incompatible with the HTML platform. Instead, a new extensible control framework has been added that lets you add additional controls.
 
 ## Tutorials
 -   [Building the rental charge type form](build-rental-charge-type-form.md)
@@ -63,7 +63,7 @@ The form metamodel continues to be used to define controls and application logic
 -   [Sizing for input controls and grid columns](sizing-input-controls-grid-columns.md)
 -   [Check box support in tree controls](check-box-tree-controls.md)
 -   [Filtering](filtering.md)
--   [Window management](/dynamics365/operations/get-started/window-management)
+-   [Window management](/dynamics365/unified-operations/get-started/window-management)
 -   [Form statistics addin (Office Mix)](https://mix.office.com/watch/1kuwpf3ooohty)
 -   [Code migration - context menus](..\migration-upgrade\code-migration-context-menus.md)
 -   [Code migration - mouse double click](..\migration-upgrade\code-migration-double-click.md)

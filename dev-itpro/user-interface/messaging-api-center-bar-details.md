@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -40,7 +40,7 @@ This topic describes the messaging system.
 Message API
 -----------
 
-Microsoft Dynamics AX 2012 has an all-purpose, "one size fits all" window that displays a list of the most calls to **info()**, **warning()**, and **error()**. This window was appropriately and generically named the "Information Log," or “Infolog” for short. Although the Infolog was a useful tool in some cases, its “one size fits all” approach was deemed ineffective for differentiating severity and determining whether the user should be interrupted. Microsoft Dynamics 365 for Operations has implemented a new messaging system to improve the experience. This richer, more powerful messaging system that includes the following features:
+Microsoft Dynamics AX 2012 has an all-purpose, "one size fits all" window that displays a list of the most calls to **info()**, **warning()**, and **error()**. This window was appropriately and generically named the "Information Log," or “Infolog” for short. Although the Infolog was a useful tool in some cases, its “one size fits all” approach was deemed ineffective for differentiating severity and determining whether the user should be interrupted. A new messaging system improves the experience. This richer, more powerful messaging system that includes the following features:
 
 -   Improved association of a message with its context (form versus global).
 -   Improved level of interruption (none, subtle, and interrupting).
@@ -54,7 +54,7 @@ The legacy **info()**, **warning()**, and **error()** application programming in
 If **info()**, **warning()**/**checkfailed()**, or **error()** is called from an asynchronous process (for example, a batch), there is no form context to consider, and the messages are sent to the Message center. (To open the Message center, click the flag icon on the navigation bar.) [![2\_API](./media/2_api.png)](./media/2_api.png)
 
 ## Legacy API support: SetPrefix()
-This version also supports the **SetPrefix()** API. This too remains backward-compatible. However, in Dynamics 365 for Operations, the results of **SetPrefix()** don't actively interrupt the user. Instead, the results are collected and stored (as in previous versions), and a message bar or Message center notification is presented to the user. This notification indicates that the related task has been completed, and that it might have messages that the user should review. The "Notification of results" message actually uses the task's first call to **SetPrefix()** to frame the message. This behavior is similar to the behavior in previous versions, where the first call was the "title" of the results. In this example, "Posting Results" comes from the application's first call to **SetPrefix()**.[![3\_API](./media/3_api.png)](./media/3_api.png) The user can then click **Message Details** to open the new **Message details** pane. [![4\_API](./media/4_api.png)](./media/4_api.png)
+This version also supports the **SetPrefix()** API. This too remains backward-compatible. However, in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition the results of **SetPrefix()** don't actively interrupt the user. Instead, the results are collected and stored (as in previous versions), and a message bar or Message center notification is presented to the user. This notification indicates that the related task has been completed, and that it might have messages that the user should review. The "Notification of results" message actually uses the task's first call to **SetPrefix()** to frame the message. This behavior is similar to the behavior in previous versions, where the first call was the "title" of the results. In this example, "Posting Results" comes from the application's first call to **SetPrefix()**.[![3\_API](./media/3_api.png)](./media/3_api.png) The user can then click **Message Details** to open the new **Message details** pane. [![4\_API](./media/4_api.png)](./media/4_api.png)
 
 | Message type | Description                                                                                                                                                                                                                                                                                                                                  |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

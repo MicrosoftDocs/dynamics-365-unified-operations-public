@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -78,7 +78,7 @@ The IISApplicationObject class wraps the Application object that is offered by I
 
 ### Remarks
 
-There is a one-to-one connection between the methods of the IISApplicationObject class and the methods of the Application object that is offered by IIS. Therefore, for more information about the methods of the IISApplicationObject class, see the Microsoft documentation for IIS. Use of the IISApplicationObject class is valid only when code is run by the Microsoft Dynamics 365 for Operations Internet Connector under IIS.
+There is a one-to-one connection between the methods of the IISApplicationObject class and the methods of the Application object that is offered by IIS. Therefore, for more information about the methods of the IISApplicationObject class, see the Microsoft documentation for IIS. Use of the IISApplicationObject class is valid only when code is run by the Finance and Operations Internet Connector under IIS.
 
 ### Examples
 
@@ -335,7 +335,7 @@ The IISReadCookie class wraps the ReadCookie object that is offered by Internet 
 
 ### Remarks
 
-There is a one-to-one connection between the methods of the IISReadCookie class and the methods of the ReadCookie object that is offered by IIS. Therefore, for more information about the methods of the IISReadCookie class, see the Microsoft documentation for IIS. Use of the IISReadCookie class is valid only when code is run by the Microsoft Dynamics 365 for Operations Internet Connector under IIS.
+There is a one-to-one connection between the methods of the IISReadCookie class and the methods of the ReadCookie object that is offered by IIS. Therefore, for more information about the methods of the IISReadCookie class, see the Microsoft documentation for IIS. Use of the IISReadCookie class is valid only when code is run by the Finance and Operations Internet Connector under IIS.
 
 ### Examples
 
@@ -417,7 +417,7 @@ The IISRequest class wraps the Request object that is offered by Internet Inform
 
 ### Remarks
 
-There is a one-to-one connection between the methods of the IISRequest class and the methods of the Request object that is offered by IIS. Therefore, for more information about the methods of the IISRequest class, see the Microsoft documentation for IIS. Use of the IISRequest class is valid only when code is run by the Microsoft Dynamics 365 for Operations Internet Connector under IIS.
+There is a one-to-one connection between the methods of the IISRequest class and the methods of the Request object that is offered by IIS. Therefore, for more information about the methods of the IISRequest class, see the Microsoft documentation for IIS. Use of the IISRequest class is valid only when code is run by the Finance and Operations Internet Connector under IIS.
 
 ### Examples
 
@@ -534,7 +534,7 @@ The IISRequestDictionary class wraps the RequestDictionary object that is offere
 
 ### Remarks
 
-There is a one-to-one relationship between the methods of the IISRequestDictionary class and the methods of the RequestDictionary object that is offered by IIS. Therefore, for more information about the methods of the IISRequestDictionary class, see the Microsoft documentation for IIS. Use of the IISRequestDictionary class is valid only when code is run by the Microsoft Dynamics 365 for Operations Internet Connector under IIS.
+There is a one-to-one relationship between the methods of the IISRequestDictionary class and the methods of the RequestDictionary object that is offered by IIS. Therefore, for more information about the methods of the IISRequestDictionary class, see the Microsoft documentation for IIS. Use of the IISRequestDictionary class is valid only when code is run by the Finance and Operations Internet Connector under IIS.
 
 ### Examples
 
@@ -653,7 +653,7 @@ The IISResponse class wraps the Response object that is offered by Internet Info
 
 ### Remarks
 
-There is a one-to-one relationship between the methods of the IISResponse class and the methods of the Response object that is offered by IIS. Therefore, for more information about the methods of the IISResponse class, see the Microsoft documentation for IIS. Use of the IISResponse class is valid only when code is run by the Microsoft Dynamics 365 for Operations Internet Connector under IIS.
+There is a one-to-one relationship between the methods of the IISResponse class and the methods of the Response object that is offered by IIS. Therefore, for more information about the methods of the IISResponse class, see the Microsoft documentation for IIS. Use of the IISResponse class is valid only when code is run by the Finance and Operations Internet Connector under IIS.
 
 ### Examples
 
@@ -876,7 +876,7 @@ The IISServer class wraps the Server object that is offered by Internet Informat
 
 ### Remarks
 
-There is a one-to-one connection between the methods of the IISServer class and the methods of the Server object that is offered by IIS. Therefore, for more information about the methods of the IISServer class, see the Microsoft documentation for IIS. Use of the IISServer class is valid only when code is run by the Microsoft Dynamics 365 for Operations Internet Connector under IIS.
+There is a one-to-one connection between the methods of the IISServer class and the methods of the Server object that is offered by IIS. Therefore, for more information about the methods of the IISServer class, see the Microsoft documentation for IIS. Use of the IISServer class is valid only when code is run by the Finance and Operations Internet Connector under IIS.
 
 ### Examples
 
@@ -995,7 +995,7 @@ The IISSessionObject class wraps the Session object that is offered by Internet 
 
 ### Remarks
 
-There is a one-to-one connection between the methods of the IISSessionObject class and the methods of the Session object that is offered by IIS. Therefore, for more information about the methods of the IISSessionObject class, see the Microsoft documentation for IIS. Use of the IISSessionObject class is valid only when code is run by the Microsoft Dynamics 365 for Operations Internet Connector under IIS.
+There is a one-to-one connection between the methods of the IISSessionObject class and the methods of the Session object that is offered by IIS. Therefore, for more information about the methods of the IISSessionObject class, see the Microsoft documentation for IIS. Use of the IISSessionObject class is valid only when code is run by the Finance and Operations Internet Connector under IIS.
 
 ### Examples
 
@@ -1119,7 +1119,7 @@ The IISStringList class wraps the StringList object that is offered by Internet 
 
 ### Remarks
 
-There is a one-to-one connection between the methods of the IISStringList class and the methods of the StringList object that is offered by IIS. Therefore, for more information about the methods of the IISStringList class, see the Microsoft documentation for IIS. Use of the IISStringList class is valid only when code is run by the Microsoft Dynamics 365 for Operations Internet Connector under IIS.
+There is a one-to-one connection between the methods of the IISStringList class and the methods of the StringList object that is offered by IIS. Therefore, for more information about the methods of the IISStringList class, see the Microsoft documentation for IIS. Use of the IISStringList class is valid only when code is run by the Finance and Operations Internet Connector under IIS.
 
 ### Examples
 
@@ -1183,7 +1183,7 @@ The IISVariantDictionary class wraps the VariantDictionary object that is offere
 
 ### Remarks
 
-There is a one-to-one connection between the methods of the IISVariantDictionary class and the methods of the VariantDictionary object that is offered by IIS. Therefore, for more information about the methods of the IISVariantDictionary class, see the Microsoft documentation for IIS. Use of the IISVariantDictionary class is valid only when code is run by the Microsoft Dynamics 365 for Operations Internet Connector under IIS.
+There is a one-to-one connection between the methods of the IISVariantDictionary class and the methods of the VariantDictionary object that is offered by IIS. Therefore, for more information about the methods of the IISVariantDictionary class, see the Microsoft documentation for IIS. Use of the IISVariantDictionary class is valid only when code is run by the Finance and Operations Internet Connector under IIS.
 
 ### Examples
 
@@ -1365,7 +1365,7 @@ The IISWriteCookie class wraps the WriteCookie object that is offered by Interne
 
 ### Remarks
 
-There is a one-to-one connection between the methods of the IISWriteCookie class and the methods of the WriteCookie object that is offered by IIS. Therefore, for more information about the methods of the IISWriteCookie class, see the Microsoft documentation for IIS. Use of the IISWriteCookie class is valid only when code is run by the Microsoft Dynamics 365 for Operations Internet Connector under IIS.
+There is a one-to-one connection between the methods of the IISWriteCookie class and the methods of the WriteCookie object that is offered by IIS. Therefore, for more information about the methods of the IISWriteCookie class, see the Microsoft documentation for IIS. Use of the IISWriteCookie class is valid only when code is run by the Finance and Operations Internet Connector under IIS.
 
 ### Examples
 
@@ -1477,7 +1477,7 @@ If you want to work with several images at the same time, use the Imagelist clas
 -   Raster, which is a bitmap, formats - .bmp, .gif, .jpg, .png, .tiff, and .exif
 -   Vector formats - .emf and .wmf
 
-In Microsoft Dynamics 365 for Operations, the Image class is bound to the client. The class can no longer be run from the server because of the security risks that are associated with file handling.
+In Finance and Operations, the Image class is bound to the client. The class can no longer be run from the server because of the security risks that are associated with file handling.
 
 ### Examples
 
@@ -1509,7 +1509,7 @@ The following example prints the height of Picture.jpg in pixels.
 | public int imageSpotlight(int x, int y, int radius, int smoothing, int intensity)                           | Produces a spotlight effect within the circle that is defined by radius with center coordinates x and y.                                      |
 | public int importBitmap(Int64 hBitmap)                                                                      | Clones a bitmap from the image that is specified by the hBitmap parameter.                                                                    |
 | public int importFileIcon(str fileName)                                                                     | Creates an icon from the file specified by the fileName parameter by copying the icon that is used for the file.                              |
-| public int importIcon(str fileName, int iconIdx)                                                            | Retrieves a handle to an icon from an executable file in Microsoft Dynamics 365 for Operations. The icon is specified by the fileName and iconIdx parameters. |
+| public int importIcon(str fileName, int iconIdx)                                                            | Retrieves a handle to an icon from an executable file in Finance and Operations. The icon is specified by the fileName and iconIdx parameters. |
 | public int loadImage(str fileName)                                                                          | Loads an image from the file specified by the fileName parameter.                                                                             |
 | public int loadResource(int id)                                                                             | Loads a resource from Ax32.exe.                                                                                                               |
 | public int promoteColor(int noOfColorBits)                                                                  | Increases the color depth of the image.                                                                                                       |
@@ -1989,7 +1989,7 @@ The following example copies the icon that is used for the file test.bmp.
 
 ### Method importIcon
 
-Retrieves a handle to an icon from an executable file in Microsoft Dynamics 365 for Operations. The icon is specified by the fileName and iconIdx parameters.
+Retrieves a handle to an icon from an executable file in Finance and Operations. The icon is specified by the fileName and iconIdx parameters.
 
     public int importIcon(str fileName, int iconIdx)
 
@@ -3200,7 +3200,7 @@ usTableId
 | public str createdBy(\[str value\])      | Gets or sets the name of the user who created the application object.                                                                     |
 | public Date creationDate(\[Date value\]) | Gets or sets the date an application object was created.                                                                                  |
 | public str creationTime(\[str value\])   |                                                                                                                                           |
-| public str name(\[str value\])           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public Guid origin(\[Guid value\])       |                                                                                                                                           |
 | public str query(\[str value\])          |                                                                                                                                           |
 | public void new()                        | Initializes a new instance of the InfoPart class.                                                                                         |
@@ -3301,7 +3301,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -3365,7 +3365,7 @@ Initializes a new instance of the InfoPart class.
 | public str dataSource(\[str value\])              | Gets or sets a data source that will be used by the control or the form.                                                                  |
 | public str label(\[str value\])                   | Gets or sets the label for a control.                                                                                                     |
 | public boolean manualRetrieval(\[boolean value\]) |                                                                                                                                           |
-| public str name(\[str value\])                    | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                    | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int style(\[int value\])                   |                                                                                                                                           |
 | public void new()                                 | Initializes a new instance of the InfoPartField class.                                                                                    |
 
@@ -3433,7 +3433,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -3486,7 +3486,7 @@ Initializes a new instance of the InfoPartField class.
 | public str dataGroup(\[str value\])                            |                                                                                                                                               |
 | public str dataSource(\[str value\])                           | Gets or sets a data source that will be used by the control or the form.                                                                      |
 | public int labelPosition(\[int value\])                        |                                                                                                                                               |
-| public str name(\[str value\])                                 | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                 | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public boolean repeating(\[boolean value\])                    |                                                                                                                                               |
 | public int rowCountWhenSmall(\[int value\], \[AutoMode mode\]) |                                                                                                                                               |
 | public AutoMode rowCountWhenSmallMode(\[AutoMode mode\])       |                                                                                                                                               |
@@ -3547,7 +3547,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 

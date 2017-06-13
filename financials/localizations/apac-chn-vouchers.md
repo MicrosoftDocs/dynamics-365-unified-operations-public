@@ -2,13 +2,13 @@
 # required metadata
 
 title: Chinese vouchers
-description: This topic describes Chinese vouchers and how they are used in Microsoft Dynamics 365 for Operations.
+description: This topic describes Chinese vouchers and how they are used in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +17,7 @@ ms.search.form: LedgerVoucherType_CN, VoucherTypeWizard_CN
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 261454
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes Chinese vouchers and how they are used in Microsoft Dynamics 365 for Operations.
+This topic describes Chinese vouchers and how they are used in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 You must create a voucher document for every posted journal. You can print a paper voucher and a posted journal. Based on your requirements, you can use the Voucher type setup wizard to set up the **Get**, **Pay** and **Transfer** voucher types that are often used, or you can create new voucher types on the **Voucher type setup** page. You can use booking vouchers to enter and group transactions into the Receipt voucher, Payment voucher, or Transfer voucher. 
 

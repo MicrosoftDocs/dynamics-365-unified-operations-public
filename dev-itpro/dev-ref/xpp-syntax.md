@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -1446,7 +1446,7 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 <td>Modifiers</td>
 <td>The <strong>static</strong> modifier should not be applied to an interface</td>
 <td>It was possible to write <span class="code">static interface IMyInterface {}</span>, but the <strong>static</strong> modifier had no effect because it makes no sense in this context.</td>
-<td>Sometime after Microsoft Dynamics 365 for Operations 2009 the X++ compiler might stop allowing the <strong>static</strong> modifier on interface declarations. For more information, see Interfaces Overview.</td>
+<td>Sometime after Dynamics AX 2009 the X++ compiler might stop allowing the <strong>static</strong> modifier on interface declarations. For more information, see Interfaces Overview.</td>
 </tr>
 <tr class="even">
 <td>Modifiers</td>

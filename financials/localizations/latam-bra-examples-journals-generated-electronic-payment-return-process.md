@@ -3,12 +3,12 @@
 
 title: Journals generated during the electronic payment return process for Brazil
 description: This topic shows how payment journals are generated when you import and post the return file for electronic payments. The approved payment lines in the return file can be posted either to one journal or multiple journals.
-author: ShylaThompson
+author: sndray
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,11 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 101
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 269174
-ms.assetid: 41afdcbd-d53f-4034-a664-1e859195b672
+
 ms.search.region: Brazil
 # ms.search.industry: 
 ms.author: sndray
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic shows how payment journals are generated when you import and post the return file for electronic payments. The approved payment lines in the return file can be posted either to one journal or multiple journals.
 
-You can make electronic payments by transferring files between a legal entity and a bank. First, you generate and send electronic remittance files to the bank. Then, after the bank processes the exported files, you import a return file from the bank. The return file contains information about the acceptance of an invoice, together with the payment number that is provided by the bank, or information about the payments that are received from a customer or paid to a vendor. When you import a return file, the status of the payments is updated in the **Payment status** field on the **Payment transfers** page. The new status depends on the relationship between the bank return occurrence codes in the return file and the return occurrence codes in Microsoft Dynamics 365 for Operations. When you post the payments that the return file is imported for, only payments that have a status of **Approved** are posted. These payments can be posted to either the same payment journal or multiple payment journals.
+You can make electronic payments by transferring files between a legal entity and a bank. First, you generate and send electronic remittance files to the bank. Then, after the bank processes the exported files, you import a return file from the bank. The return file contains information about the acceptance of an invoice, together with the payment number that is provided by the bank, or information about the payments that are received from a customer or paid to a vendor. When you import a return file, the status of the payments is updated in the **Payment status** field on the **Payment transfers** page. The new status depends on the relationship between the bank return occurrence codes in the return file and the return occurrence codes in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. When you post the payments that the return file is imported for, only payments that have a status of **Approved** are posted. These payments can be posted to either the same payment journal or multiple payment journals.
 
 ## Approved payment lines that are posted to the same payment journal
 You can post all approved payment lines that belong to the same journal name to a payment journal. For example, you import a return file that contains six payment lines. Three payment lines have a status of **Approved**, and three payment lines have a status of **Rejected**. Two of the approved payment lines, for journal numbers 001 and 002, belong to the same journal name, DP. The third approved payment line, for journal number 100, belongs to the Test journal name. The following table contains information about the payment lines in the return file.

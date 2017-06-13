@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Copy Dynamics 365 for Operations database - SQL Server to production Azure SQL
-description: This topic describes how to move a Dynamics 365 for Operations database from an environment that runs on SQL Server (Tier 1 or one-box) to an environment that runs on an Azure SQL database (Tier 2 or higher). 
+title: Copy Finance and Operations database - SQL Server to production Azure SQL
+description: This topic describes how to move a Finance and Operations database from an environment that runs on SQL Server (Tier 1 or one-box) to an environment that runs on an Azure SQL database (Tier 2 or higher). 
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -30,16 +30,16 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Copy a Dynamics 365 for Operations database from SQL Server to a production Azure SQL Database environment
+# Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes how to move a Dynamics 365 for Operations database from an environment that runs on SQL Server (Tier 1 or one-box) to an environment that runs on an Azure SQL database (Tier 2 or higher). 
+This topic describes how to move a Finance and Operations database from an environment that runs on SQL Server (Tier 1 or one-box) to an environment that runs on an Azure SQL database (Tier 2 or higher). 
 
 Overview
 --------
 
-This procedure can be used to move a Microsoft Dynamics 365 for Operations database from an environment that runs on Microsoft SQL Server (Tier 1 or one-box) to an environment that runs on a Microsoft Azure SQL database (Tier 2 or higher). This process is typically performed before go-live to bring a golden (or seed) database that contains only system configuration data into a production environment. This process isn't suitable for all situations. For example, you should not use this process to import data for a new legal entity for an existing live deployment. In those situations, we recommend that you use [process data packages](../lcs-solutions/process-data-packages-lcs-solutions.md) or [data entity data packages](../data-entities/data-entities-data-packages.md). Here is the supported procedure for bringing a golden database into the production environment:
+This procedure can be used to move a Microsoft Dynamics 365 for Finance and Operations database from an environment that runs on Microsoft SQL Server (Tier 1 or one-box) to an environment that runs on a Microsoft Azure SQL database (Tier 2 or higher). This process is typically performed before go-live to bring a golden (or seed) database that contains only system configuration data into a production environment. This process isn't suitable for all situations. For example, you should not use this process to import data for a new legal entity for an existing live deployment. In those situations, we recommend that you use [process data packages](../lcs-solutions/process-data-packages-lcs-solutions.md) or [data entity data packages](../data-entities/data-entities-data-packages.md). Here is the supported procedure for bringing a golden database into the production environment:
 
 1.  A customer or partner exports the database from SQL Server.
 2.  The customer or partner imports the database to a sandbox environment that runs on an Azure SQL database. **Note:** If you're using Retail components raise a service request of the **Other request** type in Microsoft Dynamics Lifecycle Services (LCS) to ask that the Service Engineering Team update the imported database to be reconfigured for the new environment.
@@ -62,7 +62,7 @@ If you encounter issues, see the Known issues and limitations section at the end
 ## Prerequisites
 -   The source SQL Server–based environment must be running Microsoft SQL Server 2016 Release to Manufacturing (RTM) (13.0.1601.5) or later. The Community Technology Preview (CTP) versions of SQL Server 2016 might cause errors. If the source environment is running an earlier version of SQL Server 2016, you must first back up the database and restore it to another environment that is running SQL Server 2016 RTM (13.0.1601.5) or later.
 -   To import a database into an Azure SQL Database environment, you must install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the Application Object Server (AOS) computer in **that** environment and perform the bacpac import on the AOS computer. There are two reasons for this requirement:
-    -   Because of an Internet Protocol (IP) access restriction on all instances of Dynamics 365 for Operations that run on Azure SQL Database, connections are allowed only from a computer in that environment.
+    -   Because of an Internet Protocol (IP) access restriction on all instances of Finance and Operations that run on Azure SQL Database, connections are allowed only from a computer in that environment.
     -   The version of Management Studio that is installed by default is for a previous version of SQL Server and can't perform the required tasks.
 
 **Important:** If your environment includes Retail components, you must manually store some environment-specific values before you begin. See the Additional steps for Retail environments section.
@@ -110,7 +110,7 @@ Before the source SQL Server database can be exported, the database users must b
 ## Run a script to prepare the database
 Run the following script against the AxDB\_CopyForExport database that you created in the previous step. This script makes the following changes:
 
--   Set the **SysGlobalConfiguration** flag to inform Dynamics 365 for Operations that the database is Azure-based.
+-   Set the **SysGlobalConfiguration** flag to inform Finance and Operations that the database is Azure-based.
 -   Remove a reference to tempDB in the XU\_DisableEnableNonClusteredIndexes procedure. References to tempDB aren't allowed in an Azure SQL database. The reference will be re-created later by the database synchronization process.
 -   Drop users, because Microsoft Windows users are forbidden in Azure SQL databases. Other users must be re-created later to correctly link to the appropriate sign-in in the target server.
 
@@ -146,7 +146,7 @@ Here is an explanation of the parameters:
 -   **tf** (target file) – The path and name of the file to export to. The folder should already exist, but the export process will create the file.
 
 ## Import the database into an Azure SQL database
-Copy the .bacpac file that was generated in the previous step to the AOS computer in the target environment. A typical golden database .bacpac file will be smaller than 100 MB. Therefore, you can copy and paste the file through a Remote Desktop (RDP) window. If the .bacpac file is much larger than 100 MB, [upload the file to an Azure storage account,](https://azure.microsoft.com/en-gb/documentation/articles/storage-use-azcopy/) and then download it to the target AOS computer. **Note:** Microsoft doesn't provide a storage account as part of your Dynamics 365 for Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. For performance reasons, we recommend that you put the .bacpac file on drive D on the AOS computer. (For more details, see the Known issues section.) Open a **Command Prompt** window as an administrator, and run the following commands.
+Copy the .bacpac file that was generated in the previous step to the AOS computer in the target environment. A typical golden database .bacpac file will be smaller than 100 MB. Therefore, you can copy and paste the file through a Remote Desktop (RDP) window. If the .bacpac file is much larger than 100 MB, [upload the file to an Azure storage account,](https://azure.microsoft.com/en-gb/documentation/articles/storage-use-azcopy/) and then download it to the target AOS computer. **Note:** Microsoft doesn't provide a storage account as part of your Finance and Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. For performance reasons, we recommend that you put the .bacpac file on drive D on the AOS computer. (For more details, see the Known issues section.) Open a **Command Prompt** window as an administrator, and run the following commands.
 
     cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
@@ -211,9 +211,9 @@ Run the following script against the imported database. The script performs the 
     set TENANTID = '<tenant ID from existing database>'
 
 ## Synchronize the database
-1.  Use Remote Desktop to connect to all the computers in the target environment, and stop the following Windows services by using services.msc. These services will have open connections to the Dynamics 365 for Operations database. After you stop the services, you can replace the existing Dynamics 365 for Operations database with the newly imported database:
+1.  Use Remote Desktop to connect to all the computers in the target environment, and stop the following Windows services by using services.msc. These services will have open connections to the Finance and Operations database. After you stop the services, you can replace the existing Finance and Operations database with the newly imported database:
     -   World wide web publishing service (on all AOS computers)
-    -   Microsoft Dynamics 365 for Operations Batch Management Service (on non-private AOS computers only)
+    -   Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)
     -   Management Reporter 2012 Process Service (on BI computers only)
 
 2.  In Management Studio on the AOS computer where the bacpac import was performed, run the following script to rename the original database and then rename the newly imported database so that it uses the original database name. In this example, the original database was named axdb\_123456789, and the newly imported database was named importeddb. **Note:** Make sure that the you're using the SQL Server 2016 version of Management Studio.
@@ -229,10 +229,10 @@ Run the following script against the imported database. The script performs the 
 
 4.  Use services.msc to restart the services that you stopped earlier:
     -   World wide web publishing service (on all AOS computers)
-    -   Microsoft Dynamics 365 for Operations Batch Management Service (on non-private AOS computers only)
+    -   Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)
     -   Management Reporter 2012 Process Service (on BI computers only)
 
-5.  At this point, you can open the Dynamics 365 for Operations application URL and sign in. Verify that the program works as you expected, and then drop the original database by running the following script from Management Studio on the AOS computer where the bacpac import was performed.
+5.  At this point, you can open the Finance and Operations application URL and sign in. Verify that the program works as you expected, and then drop the original database by running the following script from Management Studio on the AOS computer where the bacpac import was performed.
 
         DROP DATABASE [axdb_123456789_original]
 
@@ -281,7 +281,7 @@ The values in the following forms are encrypted in the database, so all the impo
 -   Retail and commerce &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Hardware profiles
 
 ## Reenter data from encrypted and environment specific fields in the target database
-In the Dynamics 365 for Operations client, enter the values that you documented for the encrypted and environment-specific fields. The following fields are affected. (The field names are given in *Table*.*Field* format.)
+In the Finance and Operations client, enter the values that you documented for the encrypted and environment-specific fields. The following fields are affected. (The field names are given in *Table*.*Field* format.)
 
 |                                                          |                                                                                                                                                                                |
 |----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

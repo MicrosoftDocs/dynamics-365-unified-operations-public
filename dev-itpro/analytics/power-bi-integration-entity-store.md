@@ -2,13 +2,13 @@
 # required metadata
 
 title: Overview of Power BI integration with Entity store
-description: Entity store is an operational data store that is included with Microsoft Dynamics 365 for Operations. This topic describes how Entity store enables Power BI integration with Dynamics 365 for Operations.
+description: Entity store is an operational data store that is included with Microsoft Dynamics 365 for Finance and Operations. This topic describes how Entity store enables Power BI integration with Finance and Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: Platform update 1
 [!include[banner](../includes/banner.md)]
 
 
-Entity store is an operational data store that is included with Microsoft Dynamics 365 for Operations. This topic describes how Entity store enables Power BI integration with Dynamics 365 for Operations.
+Entity store is an operational data store that is included with Microsoft Dynamics 365 for Finance and Operations. This topic describes how Entity store enables Power BI integration with Finance and Operations.
 
-Entity store is an operational data store that is included with Microsoft Dynamics 365 for Operations. The Entity store feature was introduced in the Microsoft Dynamics AX platform update 1 (May 2016) release. This feature lets an administrator or power user stage aggregate measurements in a dedicated data store for reporting and analytics. (Aggregate measurements are a star schema that is modeled by using entities.) We call this data store Entity store. It’s a database that is optimized for reporting purposes. Entity store uses the in-memory, clustered columnstore index (CCI) functionality that is built into Microsoft SQL Server to optimize reporting and queries. Customers can use Microsoft Power BI DirectQuery models together with Entity store to enable high-volume, near-real-time analytical reporting over large volumes of data.
+Entity store is an operational data store that is included with Microsoft Dynamics 365 for Finance and Operations. The Entity store feature was introduced in the Microsoft Dynamics AX platform update 1 (May 2016) release. This feature lets an administrator or power user stage aggregate measurements in a dedicated data store for reporting and analytics. (Aggregate measurements are a star schema that is modeled by using entities.) We call this data store Entity store. It’s a database that is optimized for reporting purposes. Entity store uses the in-memory, clustered columnstore index (CCI) functionality that is built into Microsoft SQL Server to optimize reporting and queries. Customers can use Microsoft Power BI DirectQuery models together with Entity store to enable high-volume, near-real-time analytical reporting over large volumes of data.
 
 ## Power BI DirectQuery mode
 In the February 2016 release of Microsoft Dynamics AX, you could create Power BI reports by using OData endpoints that are exposed via data entities (both aggregate data entities and detailed or regular data entities). Although this approach is still supported in Dynamics 365 for Operations, Entity store also lets power users create Power BI DirectQuery reports.

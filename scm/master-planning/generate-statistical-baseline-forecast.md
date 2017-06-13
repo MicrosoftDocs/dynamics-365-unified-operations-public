@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,13 +52,13 @@ When the forecast strategy is set to **Copy over historical demand**, the end of
 
 To prevent confusion in the production plans, a certain number of forecast buckets can be frozen. This number is set in the **Freeze time fence** field. On the **Adjusted demand forecast** page, the cells for the frozen buckets are disabled, to give a visual indication that those values should not be changed. 
 
-The start date for the baseline demand forecast doesn’t have to be the current date or a date in the future. To set a different start date, use the **Baseline forecast start date - From date** field. For example, in June, users can generate a forecast for the next year. Because the forecast buckets between the end of historical demand and the start of the baseline are missing, the predictions might not be accurate. If you are using the Microsoft Dynamics 365 for Operations Demand forecasting service, there are four ways in which you can fill in the missing gaps. You can choose the method that you want by setting the MISSING\_VALUE\_SUBSTITUTION parameter on the **Demand forecasting parameters** page. 
+The start date for the baseline demand forecast doesn’t have to be the current date or a date in the future. To set a different start date, use the **Baseline forecast start date - From date** field. For example, in June, users can generate a forecast for the next year. Because the forecast buckets between the end of historical demand and the start of the baseline are missing, the predictions might not be accurate. If you are using the Microsoft Dynamics 365 for Finance and Operations Demand forecasting service, there are four ways in which you can fill in the missing gaps. You can choose the method that you want by setting the MISSING\_VALUE\_SUBSTITUTION parameter on the **Demand forecasting parameters** page. 
 
 The **Baseline forecast start date** - **From date** field has to be set to the beginning of a forecast bucket, for example, in the United States, a Sunday if the forecasting bucket is the week. The system automatically adjusts the **Baseline forecast start date** - **From date** field to match the beginning of a forecast bucket. 
 
 The **Baseline forecast start date** - **From date** field can be set to a date in in the past. In other words, it is possible to generate a demand forecast in the past. This is useful, because it lets users tweak the forecast service parameters so that the statistical forecast generated in the past matches the actual historical demand. Users can then continue using these parameter settings to generate a statistical baseline forecast for the future. 
 
-Manual adjustments made in previous demand forecasting iterations can be automatically applied to the new baseline forecast if the **Transfer manual adjustments to the demand forecas**t check box is selected. If the check box is cleared, the manual adjustments are not added to the baseline forecast – but they are not deleted. Manual adjustments made to a forecast can be deleted only at forecast import time, by clearing the **Save the manual adjustments made to the baseline demand forecast** check box. Manual adjustments are saved at authorization time. Therefore, if a user makes manual adjustments to the forecast, but doesn’t authorize the forecast back to Dynamics 365 for Operations, the changes are lost. For more information about manual adjustments and how they work, see [Authorizing the adjusted forecast](authorize-adjusted-forecast.md). 
+Manual adjustments made in previous demand forecasting iterations can be automatically applied to the new baseline forecast if the **Transfer manual adjustments to the demand forecas**t check box is selected. If the check box is cleared, the manual adjustments are not added to the baseline forecast – but they are not deleted. Manual adjustments made to a forecast can be deleted only at forecast import time, by clearing the **Save the manual adjustments made to the baseline demand forecast** check box. Manual adjustments are saved at authorization time. Therefore, if a user makes manual adjustments to the forecast, but doesn’t authorize the forecast back to Finance and Operations, the changes are lost. For more information about manual adjustments and how they work, see [Authorizing the adjusted forecast](authorize-adjusted-forecast.md). 
 
 A demand forecast generation can have a name and comments to help users identify the forecast that has been generated. These values are visible in forecast generation history on the **Statistical baseline forecast generation history** page. 
 

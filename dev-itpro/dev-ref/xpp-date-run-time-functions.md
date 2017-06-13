@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -197,7 +197,7 @@ A **date** value that is based on the values of the *day*, *month*, and *year* p
 
 ### Remarks
 
-If the date isn't valid, this method returns a **0** (zero, 1/1/1900) date. Beginning with Dynamics 365 for Operations (February 2016), shortcut values for the year, e.g. 75 for 1975, are not supported. If you provide a shortcut value for the year, a date of 1/1/1900 is returned.
+If the date isn't valid, this method returns a **0** (zero, 1/1/1900) date. Beginning with Dynamics AX 7.0(February 2016), shortcut values for the year, e.g. 75 for 1975, are not supported. If you provide a shortcut value for the year, a date of 1/1/1900 is returned.
 
 ### Example
 

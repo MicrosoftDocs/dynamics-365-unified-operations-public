@@ -3,12 +3,12 @@
 
 title: NF-e process overview for Brazil
 description: This topic provides an overview of the process for setting up and submitting a Nota fiscal eletrônica (NF-e) to register the movement of items and services between two parties.
-author: ShylaThompson
+author: sndray
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +17,7 @@ ms.search.form: EFDocContingencyMode_BR, EFDocContingencyModeHistory_BR, EFDocCo
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2231
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 269114
@@ -56,7 +56,7 @@ After you generate an NF-e, you can submit the digitally signed NF-e to the Secr
 
 1.  The fiscal establishment posts a fiscal document by using a fiscal document type that is set up for fiscal document model 55 to generate an NF-e.
 2.  The NF-e export or import process detects the posted fiscal document for the fiscal document model 55 and generates an XML message in the specified format. A separate XML message is generated for each NF-e. The XML message is transmitted to SEFAZ.
-3.  SEFAZ processes the XML message and returns a protocol and status for each NF-e. The NF-e status and protocol are then assigned to the NF-e that is used in the NF-e export or import process. The status that is returned can be **Approved**, **Denied**, **Discarded**, **Canceled**, **Rejected non fixable**, or **Rejected**. This information is used to update the fiscal document status in Microsoft Dynamics 365 for Operations.
+3.  SEFAZ processes the XML message and returns a protocol and status for each NF-e. The NF-e status and protocol are then assigned to the NF-e that is used in the NF-e export or import process. The status that is returned can be **Approved**, **Denied**, **Discarded**, **Canceled**, **Rejected non fixable**, or **Rejected**. This information is used to update the fiscal document status in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 After the status of the NF-e is received from SEFAZ, you can perform the following tasks, depending on the status:
 

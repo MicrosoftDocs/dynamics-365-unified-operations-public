@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -116,8 +116,8 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [MSDN Wizards in Microsoft Dynamics AX \[AX2012\]](http://msdn.microsoft.com/en-us/library/aa622644.aspx)
--   [MSDN Guidelines for Wizard Development \[AX2012\]](http://msdn.microsoft.com/EN-US/library/aa853845.aspx)
+-   [MSDN Wizards in Microsoft Dynamics AX \[AX 2012\]](http://msdn.microsoft.com/en-us/library/aa622644.aspx)
+-   [MSDN Guidelines for Wizard Development \[AX 2012\]](http://msdn.microsoft.com/EN-US/library/aa853845.aspx)
 
 #### AX 2012 example
 

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -245,7 +245,7 @@ Control of the input to the new method could be a security risk. Therefore, this
 ## Class AOSSessionInfo
     class AOSSessionInfo extends Object
 
-The AOSSessionInfo class is used to provide information about a session for Microsoft Dynamics 365 for Operations Application Object Server (AOS).
+The AOSSessionInfo class is used to provide information about a session for Finance and Operations Application Object Server (AOS).
 
 ### Remarks
 
@@ -1041,7 +1041,7 @@ The AsciiIo class provides functionality for reading and writing ASCII files.
 
 ### Remarks
 
-The TextIo class provides functionality for reading and writing files that use various code pages. The AsciiIO class supports only ANSI code page (ACP) characters. Existing code that uses the AsciiIO class must be converted to use the TextIO class if the file contains non-ACP characters, or if it is a file that is used only in Microsoft Dynamics 365 for Operations, such as an .xpo file.
+The TextIo class provides functionality for reading and writing files that use various code pages. The AsciiIO class supports only ANSI code page (ACP) characters. Existing code that uses the AsciiIO class must be converted to use the TextIO class if the file contains non-ACP characters, or if it is a file that is used only in Finance and Operations, such as an .xpo file.
 
 ### Examples
 

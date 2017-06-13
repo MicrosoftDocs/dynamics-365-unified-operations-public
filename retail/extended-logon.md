@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,7 +40,7 @@ This topic covers your options for setting up extended logon for Cloud POS and R
 Setting up extended logon
 =========================
 
-You can find the setup for bar code masks at **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Functionality profiles**. The **Functions** FastTab includes the following options that are related to extended logon.
+You can find the setup for bar code masks at **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Functionality profiles**. The **Functions** FastTab includes the following options that are related to extended logon.
 
 ### Staff bar code logon
 

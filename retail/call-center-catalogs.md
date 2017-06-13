@@ -2,13 +2,13 @@
 # required metadata
 
 title: Call center catalogs
-description: This article describes the call center–specific functionality for catalogs in Microsoft Dynamics 365 for Operations.
+description: This article describes the call center–specific functionality for catalogs in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](includes/banner.md)]
 
 
-This article describes the call center–specific functionality for catalogs in Microsoft Dynamics 365 for Operations.
+This article describes the call center–specific functionality for catalogs in Microsoft Dynamics 365 for Retail.
 
-In a call center, you can use product catalogs to identify the products that you want to offer to customers. Call centers typically use printed catalogs. The design and production of a printed catalog is handled outside Dynamics 365 for Operations. However, you can create and store a digital form of a catalog in Retail and commerce in Dynamics 365 for Operations by using the same pages that you use to set up online retail catalogs. Before you can create a catalog, you must set up product assortments and assign the assortments to a call center. You then add products to the catalog by selecting products from these assortments. After products have been added to the catalog, and the catalog is complete, you must validate the catalog to verify the data. You must then submit the catalog for review and approval. After the catalog is approved, it can be published. When a call center catalog is created, you can take a snapshot of the catalog data at the time that the catalog is published. This snapshot functionality lets you access a particular version of the catalog even if the catalog is later changed and updated. Call center catalogs can also be set up to include the following optional features:
+In a call center, you can use product catalogs to identify the products that you want to offer to customers. Call centers typically use printed catalogs. The design and production of a printed catalog is handled outside Dynamics 365 for Retail. However, you can create and store a digital form of a catalog by using the same pages that you use to set up online retail catalogs. Before you can create a catalog, you must set up product assortments and assign the assortments to a call center. You then add products to the catalog by selecting products from these assortments. After products have been added to the catalog, and the catalog is complete, you must validate the catalog to verify the data. You must then submit the catalog for review and approval. After the catalog is approved, it can be published. When a call center catalog is created, you can take a snapshot of the catalog data at the time that the catalog is published. This snapshot functionality lets you access a particular version of the catalog even if the catalog is later changed and updated. Call center catalogs can also be set up to include the following optional features:
 
 -   **Source codes** – Source codes are used to track the customer response to specific catalog mailings.
 -   **Free products** – Products can be included in a customer's order at no additional charge. These products are automatically added to an order when the source code for the catalog is entered into the order.

@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Navigation in Dynamics 365 for Operations
+title: Navigation
 description: This articles describes the primary navigation concepts including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Navigation in Dynamics 365 for Operations
+# Navigation
 
 [!include[banner](../includes/banner.md)]
 

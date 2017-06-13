@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 2016-02-18 10 - 21 - 53
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,11 +62,11 @@ Procurement and sourcing covers all steps from identifying a need for product an
 -   [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Manage vendor collaboration users](manage-vendor-collaboration-users.md)
 -   [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md)
--   [Inbound consignment inventory demo script for Microsoft Dynamics 365 for Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(white paper)
+-   [Inbound consignment inventory demo script for Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(white paper)
 -   [Monitor consignment inventory using vendor collaboration](http://ax.help.dynamics.com/en/wiki/monitor-consignment-inventory-using-vendor-collaboration/)
--   [Collaborating with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md)  (February 2016 and May 2016 versions of Dynamics 365 for Operations only)
--   [Configuration of security for Vendor portal users](configure-security-vendor-portal-users.md) (2016 and May 2016 versions of Dynamics 365 for Operations only)
--   [Vendor collaboration mobile workspace for Microsoft Dynamics 365 for Operations app](vendor-collaboration-mobile-workspace.md)
+-   [Collaborating with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md)  (February 2016 and May 2016 versions of Dynamics AX only)
+-   [Configuration of security for Vendor portal users](configure-security-vendor-portal-users.md) (2016 and May 2016 versions of Finance and Operations only)
+-   [Vendor collaboration mobile workspace for Microsoft Dynamics 365 for Finance and Operations app](vendor-collaboration-mobile-workspace.md)
 
 ## Procurement product management
 -   [Procurement catalogs](procurement-catalogs.md)
@@ -97,8 +97,8 @@ Procurement and sourcing covers all steps from identifying a need for product an
 
 ## Product receipt and invoicing
 -   [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
--   [Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
--   [Vendor posting profiles](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+-   [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+-   [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
 ## Procurement and sourcing workflows
 -   [Procurement and sourcing overview](procurement-sourcing-overview.md)

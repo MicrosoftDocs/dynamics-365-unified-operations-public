@@ -2,13 +2,13 @@
 # required metadata
 
 title: Process and consume data packages in an LCS solution
-description: A Microsoft Dynamics 365 for Operations data package can consist of one to many data entities. A typical data package consists of a group of entities for a particular task, process, or function. For example, the data entities that are required for General ledger setup might be part of one data package. The format of a data package is a compressed file that contains a package manifest, package header, and any additional files for the data entities that are included.
+description: A Microsoft Dynamics 365 for Finance and Operations data package can consist of one to many data entities. A typical data package consists of a group of entities for a particular task, process, or function. For example, the data entities that are required for General ledger setup might be part of one data package. The format of a data package is a compressed file that contains a package manifest, package header, and any additional files for the data entities that are included.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Lifecycle Services
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata
@@ -35,11 +35,11 @@ ms.dyn365.ops.version:
 [!include[banner](../includes/banner.md)]
 
 
-A Microsoft Dynamics 365 for Operations data package can consist of one to many data entities. A typical data package consists of a group of entities for a particular task, process, or function. For example, the data entities that are required for General ledger setup might be part of one data package. The format of a data package is a compressed file that contains a package manifest, package header, and any additional files for the data entities that are included.
+A Microsoft Dynamics 365 for Finance and Operations data package can consist of one to many data entities. A typical data package consists of a group of entities for a particular task, process, or function. For example, the data entities that are required for General ledger setup might be part of one data package. The format of a data package is a compressed file that contains a package manifest, package header, and any additional files for the data entities that are included.
 
-Before you create your data package, make a plan for what it should include. In this way, you make sure that the correct entities, entity sequence, and fields are included. You create a data package by using the **Data management** workspace in Dynamics 365 for Operations. Follow these steps to create a data package.
+Before you create your data package, make a plan for what it should include. In this way, you make sure that the correct entities, entity sequence, and fields are included. You create a data package by using the **Data management** workspace in Finance and Operations. Follow these steps to create a data package.
 
-1.  In Dynamics 365 for Operations, click **System administration** &gt; **Workspaces** &gt; **Data Management IT**.
+1.  In Finance and Operations, click **System administration** &gt; **Workspaces** &gt; **Data Management IT**.
 2.  Click the **Export** tile, and then, in the **Name** field, enter **Data project**.
 3.  In the **Target data format** field, select the format for the export. The data formats that are available include comma separated value (CSV) format and Microsoft Excel format.
 4.  In the **Entity name** field, enter or select an entity. You can add multiple entities, but you must add each entity separately.
@@ -96,7 +96,7 @@ Follow these steps to consolidate the data packages that you uploaded to LCS int
 7.  For step 4, "Associate business process to data packages," select the business process that will be used to configure the process nodes.
 
 ## Consume a PDP
-The Consume flow lets you review a business process and apply the required configuration and data for implementing the business process to your Dynamics 365 for Operations environment. To consume PDPs, you must have the following items:
+The Consume flow lets you review a business process and apply the required configuration and data for implementing the business process to your Finance and Operations environment. To consume PDPs, you must have the following items:
 
 -   An implementation business process library for the solution in your working LCS project
 -   PDPs

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -124,7 +124,7 @@ If the attribute type is <strong>Boolean</strong>, <strong>Integer</strong> with
 </tr>
 </tbody>
 </table>
-A system-defined table constraint represents a mapping between an attribute type and a field in a Dynamics 365 for Operations table. A system-defined table constraint dynamically links the attribute type to the field. The link enables the attribute in a product configuration model to reflect the data of the field in the Dynamics 365 for Operations table.</td>
+A system-defined table constraint represents a mapping between an attribute type and a field in a Finance and Operations table. A system-defined table constraint dynamically links the attribute type to the field. The link enables the attribute in a product configuration model to reflect the data of the field in the Finance and Operations table.</td>
 </tr>
 <tr class="odd">
 <td>Calculations</td>

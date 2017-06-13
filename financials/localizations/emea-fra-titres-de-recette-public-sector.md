@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +21,6 @@ ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 19931
-ms.assetid: 01d7ba2b-32b7-43aa-8edb-7a2ed700363a
 ms.search.region: France
 ms.search.industry: Public sector
 ms.author: brpotter
@@ -37,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The titre de recette is used by the director to notify the accountant that the organization is entitled to collect a specific amount from another entity, and to authorize the accountant to deposit that amount. The director or the accountant may delegate a representative to perform the task, but the responsibility for each task remains with the director or the accountant. The titre maintains the strict separation that is required between the operational role of the director and the accounting role of the accountant.
 
-In Microsoft Dynamics 365 for Operations, each titre is assigned a single free text invoice line. This guarantees that each titre concerns only one debtor and includes only one budgetary account. A group of related titres, together with all supporting documentation, are assigned to a bordereau de titre for submittal to the accountant.
+In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, each titre is assigned a single free text invoice line. This guarantees that each titre concerns only one debtor and includes only one budgetary account. A group of related titres, together with all supporting documentation, are assigned to a bordereau de titre for submittal to the accountant.
 
 ## Director’s tasks
 From the **Maintain titres de recette** page, the director can complete the following tasks:

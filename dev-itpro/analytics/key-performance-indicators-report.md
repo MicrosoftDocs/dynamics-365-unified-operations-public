@@ -2,13 +2,13 @@
 # required metadata
 
 title: Key performance indicator (KPI) report
-description: This topic points you to a report that lists the KPIs that are available in Dynamics 365 for Operations.
+description: This topic points you to a report that lists the KPIs that are available in Finance and Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 1
 [!include[banner](../includes/banner.md)]
 
 
-This topic points you to a report that lists the KPIs that are available in Dynamics 365 for Operations.
+This topic points you to a report that lists the KPIs that are available in Finance and Operations.
 
 A key performance indicator (KPI) is a collection of calculations used to measure business success. KPIs are used in the Fleet Management sample application.
 

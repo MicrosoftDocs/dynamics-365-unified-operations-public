@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -897,7 +897,7 @@ Initializes a new instance of the RelativeFieldBinding class.
 ## Class Report
     class Report extends TreeNode
 
-The Report class lets users use reports that are present in the Microsoft Dynamics 365 for Operations Application Object Tree (AOT) and report creation by using code instead of the AOT.
+The Report class lets users use reports that are present in the Finance and Operations Application Object Tree (AOT) and report creation by using code instead of the AOT.
 
 ### Remarks
 
@@ -950,7 +950,7 @@ The following code example creates and runs a report that is not present in the 
 | public int designCount()                                            | Retrieves the number of designs in a given report.                                                                                        |
 | public ReportDesign designNumber(\[int number\])                    | Gets an existing design.                                                                                                                  |
 | public boolean interactive(\[boolean value\])                       |                                                                                                                                           |
-| public str name(\[str value\])                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public Guid origin(\[Guid value\])                                  |                                                                                                                                           |
 | public container pack()                                             | Serializes the current instance of the Report class.                                                                                      |
 | public Query query(\[Query query\])                                 |                                                                                                                                           |
@@ -1223,7 +1223,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -1571,7 +1571,7 @@ You must have access to the development security key (SysDevelopment) before thi
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -2393,7 +2393,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -3427,7 +3427,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -4435,7 +4435,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -5103,7 +5103,7 @@ unit
 | public str menuItemName(\[str value\])                                   |                                                                                                                                            |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                            |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                            |
-| public str name(\[str value\])                                           | Gets or sets the name that used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                            |
 | public int position(\[int value\])                                       |                                                                                                                                            |
 | public str previewInfo(str string)                                       |                                                                                                                                            |
@@ -6111,7 +6111,7 @@ value
 
 ### Method name
 
-Gets or sets the name that used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that used in the code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -6690,7 +6690,7 @@ The ReportDesign class determines the contents of a report.
 
 ### Remarks
 
-A ReportDesign object is a collection of ReportSection objects or SectionTemplate objects that determines the contents of a report. Each report contains a ReportDesign node in the Microsoft Dynamics 365 for Operations Application Object Tree (AOT), below the Designs node. The ReportDesign node always contains a node that is named AutoDesignSpecs, and it can contain a node that is named Design, which is referred to as the generated design. A ReportDesign node should contain either one or more SectionTemplate nodes (below the AutoDesignSpecs node) or a generated design. If it contains both, only the generated design is used. This class lets you create, read, update, and delete X++ code and metadata. Make sure that the user has access to the development security key (SysDevelopment) before this API is called. A report that does not have a generated design offers more flexibility to the end user than a report that has a generated design. For example, a user who is running a report that does not have a generated design can decide in the query which sums to include in the report. A generated design is then created during the execution of the report, and it will contain footer sections that correspond to the user's choice. If a report has a generated design, the existence of footer sections in the generated design controls which sums are printed in the report.
+A ReportDesign object is a collection of ReportSection objects or SectionTemplate objects that determines the contents of a report. Each report contains a ReportDesign node in the Finance and Operations Application Object Tree (AOT), below the Designs node. The ReportDesign node always contains a node that is named AutoDesignSpecs, and it can contain a node that is named Design, which is referred to as the generated design. A ReportDesign node should contain either one or more SectionTemplate nodes (below the AutoDesignSpecs node) or a generated design. If it contains both, only the generated design is used. This class lets you create, read, update, and delete X++ code and metadata. Make sure that the user has access to the development security key (SysDevelopment) before this API is called. A report that does not have a generated design offers more flexibility to the end user than a report that has a generated design. For example, a user who is running a report that does not have a generated design can decide in the query which sums to include in the report. A generated design is then created during the execution of the report, and it will contain footer sections that correspond to the user's choice. If a report has a generated design, the existence of footer sections in the generated design controls which sums are printed in the report.
 
 ### Examples
 
@@ -6778,7 +6778,7 @@ The following example creates a simple report that is not present in the AOT.
 | public str lookupCaption(\[str lan\])                                                                  |                                                                                                                                           |
 | public str lookupLabel(str label, \[str lan\])                                                         |                                                                                                                                           |
 | public int makeAutoSection(\[Query query\])                                                            |                                                                                                                                           |
-| public str name(\[str value\])                                                                         | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                         | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int orientation(\[int value\])                                                                  |                                                                                                                                           |
 | public container pack()                                                                                | Serializes the current instance of the ReportDesign class.                                                                                |
 | public container packPageSettings()                                                                    |                                                                                                                                           |
@@ -7538,7 +7538,7 @@ query
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -8319,7 +8319,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -9287,7 +9287,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -10023,7 +10023,7 @@ The ReportGuidControl class enables you to create, read, update, and delete X++ 
 | public str menuItemName(\[str value\])                                   |                                                                                                                                               |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                               |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                               |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                               |
 | public int position(\[int value\])                                       |                                                                                                                                               |
 | public str previewInfo(str string)                                       |                                                                                                                                               |
@@ -10981,7 +10981,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -11656,7 +11656,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -12705,7 +12705,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -13367,7 +13367,7 @@ The height and height calculation mode can be set separately.
 | public Date creationDate(\[Date value\])     | Gets or sets the date an application object was created.                                                                                  |
 | public str creationTime(\[str value\])       |                                                                                                                                           |
 | public str designs(\[str value\])            |                                                                                                                                           |
-| public str name(\[str value\])               | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])               | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object. |
 | public Guid origin(\[Guid value\])           |                                                                                                                                           |
 | public str projectGuid(\[str value\])        |                                                                                                                                           |
 | public str referencedProjects(\[str value\]) |                                                                                                                                           |
@@ -13464,7 +13464,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -13761,7 +13761,7 @@ The ReportOutputUser class implements a user-defined target for report formattin
 
 ### Remarks
 
-By default, Microsoft Dynamics 365 for Operations prints reports to a screen, printer, file, or email address. The following API items support a user-defined target:
+By default, Finance and Operations prints reports to a screen, printer, file, or email address. The following API items support a user-defined target:
 
 -   ReportOutputUserType system enumeration
 -   ViewerClass value for the PrintMedium system enumeration
@@ -14348,7 +14348,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -15185,7 +15185,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -15852,7 +15852,7 @@ The ReportRealControl class enables you to create, read, update, and delete X++ 
 | public AutoMode minNoOfDecimalsMode(\[AutoMode mode\])                   |                                                                                                                                               |
 | public int minNoOfDecimalsValue(\[int value\])                           |                                                                                                                                               |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                               |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int noOfDecimals(\[int value\], \[AutoMode mode\])                |                                                                                                                                               |
 | public AutoMode noOfDecimalsMode(\[AutoMode mode\])                      |                                                                                                                                               |
 | public int noOfDecimalsValue(\[int value\])                              |                                                                                                                                               |
@@ -16969,7 +16969,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -19433,7 +19433,7 @@ The following example adds a section to a report:
 | public LineType lineLeft(\[LineType value\])                                                 | Gets or sets the type of line that is used as the left border of a section.                                                               |
 | public LineType lineRight(\[LineType value\])                                                |                                                                                                                                           |
 | public TableId map(\[TableId value\])                                                        |                                                                                                                                           |
-| public str name(\[str value\])                                                               | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                               | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int noOfHeadingLines(\[int value\], \[AutoMode mode\])                                |                                                                                                                                           |
 | public AutoMode noOfHeadingLinesMode(\[AutoMode mode\])                                      |                                                                                                                                           |
 | public int noOfHeadingLinesValue(\[int value\])                                              |                                                                                                                                           |
@@ -20783,7 +20783,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -21237,7 +21237,7 @@ Prints the section on the report.
 
 #### Remarks
 
-This method is called when the section is triggered. For example, a body section is triggered when ReportRun::send method is executed. It is the super method call in the executeSection method that actually prints the section in the report. In the Microsoft Dynamics 365 for Operations Application Object Tree (AOT), you will find the executeSection method below each section's methods node. If you want to perform some action before a section is printed, such as go to the next page, this action can be coded in the executeSection method.
+This method is called when the section is triggered. For example, a body section is triggered when ReportRun::send method is executed. It is the super method call in the executeSection method that actually prints the section in the report. In the Finance and Operations Application Object Tree (AOT), you will find the executeSection method below each section's methods node. If you want to perform some action before a section is printed, such as go to the next page, this action can be coded in the executeSection method.
 
 ### Method rightMargin
 
@@ -22914,7 +22914,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -23898,7 +23898,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -24579,7 +24579,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public AutoMode minNoOfDecimalsMode(\[AutoMode mode\])                   |                                                                                                                                   |
 | public int minNoOfDecimalsValue(\[int value\])                           |                                                                                                                                   |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                   |
-| public str name(\[str value\])                                           | Gets or sets the name used in code to identify a form, report, rable, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name used in code to identify a form, report, rable, query, or another Finance and Operations application object. |
 | public int noOfDecimals(\[int value\], \[AutoMode mode\])                |                                                                                                                                   |
 | public AutoMode noOfDecimalsMode(\[AutoMode mode\])                      |                                                                                                                                   |
 | public int noOfDecimalsValue(\[int value\])                              |                                                                                                                                   |
@@ -25694,7 +25694,7 @@ value
 
 ### Method name
 
-Gets or sets the name used in code to identify a form, report, rable, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name used in code to identify a form, report, rable, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -26456,7 +26456,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -27403,7 +27403,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -28088,7 +28088,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -29051,7 +29051,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -29809,7 +29809,7 @@ The ResultSet class provides access to a table of data generated by executing a 
 
 ### Remarks
 
-For maximum portability, ResultSet columns within each row should be read in left-to-right order and each column should be read only once. A ResultSet provides access to a table of data generated by executing a instance. The table rows are retrieved in sequence. Within a row its column values can be accessed in any order. A ResultSet maintains a cursor that points to its current row of data. Initially the cursor is positioned before the first row. The 'next' method moves the cursor to the next row. For the getXX methods, Microsoft Dynamics 365 for Operations attempts to convert the underlying data to the specified type and returns a suitable value. The getXX methods retrieve column values for the current row. You retrieve values using the index number of the column. Columns are numbered from 1. A ResultSet is automatically closed by the statement that generated it when that Statement is closed, re-executed, or is used to retrieve the next result from a sequence of multiple results.
+For maximum portability, ResultSet columns within each row should be read in left-to-right order and each column should be read only once. A ResultSet provides access to a table of data generated by executing a instance. The table rows are retrieved in sequence. Within a row its column values can be accessed in any order. A ResultSet maintains a cursor that points to its current row of data. Initially the cursor is positioned before the first row. The 'next' method moves the cursor to the next row. For the getXX methods, Finance and Operations attempts to convert the underlying data to the specified type and returns a suitable value. The getXX methods retrieve column values for the current row. You retrieve values using the index number of the column. Columns are numbered from 1. A ResultSet is automatically closed by the statement that generated it when that Statement is closed, re-executed, or is used to retrieve the next result from a sequence of multiple results.
 
 ### Examples
 
@@ -29837,7 +29837,7 @@ For maximum portability, ResultSet columns within each row should be read in lef
 |-------------------------------------------|-------------------------------------------------------------------------------------------|
 | public boolean getBoolean(int ColumnID)   | Retrieves the Boolean value of a column in the current row.                               |
 | public int getByte(int ColumnID)          |                                                                                           |
-| public Date getDate(int ColumnID)         | Retrieves the value of a column in the current row as an Microsoft Dynamics 365 for Operationsdate value. |
+| public Date getDate(int ColumnID)         | Retrieves the value of a column in the current row as an Finance and Operationsdate value. |
 | public DateTime getDateTime(int ColumnID) |                                                                                           |
 | public Guid getGuid(int ColumnID)         |                                                                                           |
 | public int getInt(int ColumnID)           | Retrieves the value of a column in the current row as an integer.                         |
@@ -29876,7 +29876,7 @@ ColumnID
 
 ### Method getDate
 
-Retrieves the value of a column in the current row as an Microsoft Dynamics 365 for Operationsdate value.
+Retrieves the value of a column in the current row as an Finance and Operationsdate value.
 
     public Date getDate(int ColumnID)
 
@@ -30180,7 +30180,7 @@ Initializes a new instance of the CodeAccessPermission class.
 #### Parameters
 
 userId  
-A userId system data type that specifies an Microsoft Dynamics 365 for Operations user.
+A userId system data type that specifies an Finance and Operations user.
 
 #### Examples
 

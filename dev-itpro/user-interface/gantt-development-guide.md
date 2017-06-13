@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -40,7 +40,7 @@ This article describes how to create new forms by using the Gantt control. We hi
 What’s new for Gantt
 --------------------
 
-In Microsoft Dynamics AX 2012, the client was a Win32 application, and extensions used Microsoft ActiveX, WinForm, or Microsoft Windows Presentation Foundation (WPF) controls. In Microsoft Dynamics 365 for Operations, ActiveX and ManagedHost controls can no longer be used to add custom controls, because they are incompatible with the HTML-based platform. Instead, a new extensible control framework lets you add controls by using HTML and JavaScript. The new Gantt control is implemented by using this framework. Note that, unlike in earlier versions, you don't have to pay an additional license fee to use the control in your own forms or to extend the control.
+In Microsoft Dynamics AX 2012, the client was a Win32 application, and extensions used Microsoft ActiveX, WinForm, or Microsoft Windows Presentation Foundation (WPF) controls. ActiveX and ManagedHost controls can no longer be used to add custom controls, because they are incompatible with the HTML-based platform. Instead, a new extensible control framework lets you add controls by using HTML and JavaScript. The new Gantt control is implemented by using this framework. Note that, unlike in earlier versions, you don't have to pay an additional license fee to use the control in your own forms or to extend the control.
 
 ## Highlevel overview of the control
 The following illustration shows the visual elements of the Gantt control.

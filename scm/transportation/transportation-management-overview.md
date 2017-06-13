@@ -2,13 +2,13 @@
 # required metadata
 
 title: Transportation management overview
-description: This topic gives an overview of the transportation management functionality in Microsoft Dynamics 365 for Operations.
+description: This topic gives an overview of the transportation management functionality in Microsoft Dynamics 365 for Finance and Operations.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic gives an overview of the transportation management functionality in Microsoft Dynamics 365 for Operations.
+This topic gives an overview of the transportation management functionality in Microsoft Dynamics 365 for Finance and Operations.
 
-Transportation management lets you use manage your company’s transportation, and also lets you identify vendor and routing solutions for inbound and outbound orders. For example, you can identify the fastest route or the least expensive rate for a shipment. The following table describes the main scenarios for using Transportation management in Microsoft Dynamics 365 for Operations.
+Transportation management lets you use manage your company’s transportation, and also lets you identify vendor and routing solutions for inbound and outbound orders. For example, you can identify the fastest route or the least expensive rate for a shipment. The following table describes the main scenarios for using Transportation management in Microsoft Dynamics 365 for Finance and Operations.
 
 <table>
 <colgroup>
@@ -73,23 +73,23 @@ Transportation management lets you use manage your company’s transportation, a
 </tbody>
 </table>
 
-## Planning transportation in Dynamics 365 for Operations
+## Planning transportation in Finance and Operations
 In Transportation management, transportation planning can be based either on orders or on the shipments that are created based on those orders. The shipments always exist at some point in time but aren't required for transportation planning. Transfer orders are part of the outbound scenario and can be planned together with sales orders. 
 
 ![Load drawing](./media/Load-drawing1-1024x477.jpg)
 
 ## Inbound transportation
-When you order items from a vendor, and the items must be delivered to your warehouse, you might want to arrange the transport of the items yourself. You can use Dynamics 365 for Operations to plan the transportation and receipt of the inbound load. The following illustration shows the business process flow for planning transportation for an inbound load. 
+When you order items from a vendor, and the items must be delivered to your warehouse, you might want to arrange the transport of the items yourself. You can use Finance and Operations to plan the transportation and receipt of the inbound load. The following illustration shows the business process flow for planning transportation for an inbound load. 
 
 ![Business process flow for inbound load transportation](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## Outbound transportation
-You can plan and process an outbound load to ship specific items from a company’s warehouse to a customer. You can use Dynamics 365 for Operations to plan the transportation and shipping of an outbound load. The following illustration shows the business process flow for planning and processing outbound loads for shipping. 
+You can plan and process an outbound load to ship specific items from a company’s warehouse to a customer. You can use Finance and Operations to plan the transportation and shipping of an outbound load. The following illustration shows the business process flow for planning and processing outbound loads for shipping. 
 
 ![Planning and processing outbound loads](./media/Planningandprocessingoutboundloads.jpg)
 
 ## Load building
-Dynamics 365 for Operations provides a load building strategy that is named the Volume-based load building strategy. This strategy lets you use the maximum values that are specified for height and weight in the load template, or you can override the settings by entering new values. To use this strategy, select it in the **Load building strategy** field on the **Setup** FastTab on the **Load building workbench** page. In addition, you can add your own load-building strategies by creating a new class in the Application Object Tree (AOT).
+Finance and Operations provides a load building strategy that is named the Volume-based load building strategy. This strategy lets you use the maximum values that are specified for height and weight in the load template, or you can override the settings by entering new values. To use this strategy, select it in the **Load building strategy** field on the **Setup** FastTab on the **Load building workbench** page. In addition, you can add your own load-building strategies by creating a new class in the Application Object Tree (AOT).
 
 
 

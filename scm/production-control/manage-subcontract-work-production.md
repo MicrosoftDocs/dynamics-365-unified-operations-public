@@ -2,13 +2,13 @@
 # required metadata
 
 title: Manage subcontracting work in production
-description: This topic explains how subcontracted operations are managed in Microsoft Dynamics 365 for Operations. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
+description: This topic explains how subcontracted operations are managed in Microsoft Dynamics 365 for Finance and Operations. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic explains how subcontracted operations are managed in Microsoft Dynamics 365 for Operations. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
+This topic explains how subcontracted operations are managed in Microsoft Dynamics 365 for Finance and Operations. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
 
 In [production processes](production-process-overview.md), work can be done by resources that are owned or administered by vendors. Typically, vendor resources are used to level periodic excess demand that surpasses the available capacity of a company's own resources. The vendor might also be able to offer specific [resource capabilities](resource-capabilities.md)or resources at a lower price.  
 
@@ -45,7 +45,7 @@ When subcontracting operations or activities are used, they affect all stages of
 
 For internal resources, a fixed cost rate is typically allocated for a period. By contrast, the cost of subcontracted resources is based on the purchase price of the related service. The service is defined as another product, and is used to drive the procurement and purchase processes for a given subcontracted operation.  
 
-Currently, there is no explicit concept of semi-finished products in Microsoft Dynamics 365 for Operations. For a production order that requires more than one operation in order to transform raw materials into a finished good, the finished good is posted back into inventory only in the last operation. The semi-finished products that the earlier operations produce are accounted in work in progress (WIP), but they aren't posted or tracked in inventory. Although you can split the routes and bills of materials (BOMs) into multiple smaller units, this approach increases the number of products, BOMs, and routes that must be managed.  
+Currently, there is no explicit concept of semi-finished products in Microsoft Dynamics 365 for Finance and Operations. For a production order that requires more than one operation in order to transform raw materials into a finished good, the finished good is posted back into inventory only in the last operation. The semi-finished products that the earlier operations produce are accounted in work in progress (WIP), but they aren't posted or tracked in inventory. Although you can split the routes and bills of materials (BOMs) into multiple smaller units, this approach increases the number of products, BOMs, and routes that must be managed.  
 
 There are two methods for modeling subcontracting work for production operations. These methods differ in the way that the subcontracting process can be modeled, the way that semi-finished products are represented in the process, and the way that cost control is managed.
 

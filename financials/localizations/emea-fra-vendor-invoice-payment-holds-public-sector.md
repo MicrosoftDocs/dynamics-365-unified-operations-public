@@ -2,13 +2,13 @@
 # required metadata
 
 title: Vendor invoice payment holds in the public sector in France
-description: The standard processes related to vendor invoice payment holds in Microsoft Dynamics 'AX 7' are augmented for French entities in the public sector. This topic describes the vendor invoice payment holds functionality used by the public sector in France.
+description: The standard processes related to vendor invoice payment holds in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are augmented for French entities in the public sector. This topic describes the vendor invoice payment holds functionality used by the public sector in France.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 27331
-ms.assetid: 09ece137-e8fd-41ec-ae46-dc922b327999
 ms.search.region: France
 ms.search.industry: Public sector
 ms.author: brpotter
@@ -35,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-The standard processes related to vendor invoice payment holds in Microsoft Dynamics 365 for Operations are augmented for French entities in the public sector. This topic describes the vendor invoice payment holds functionality used by the public sector in France.
+The standard processes related to vendor invoice payment holds in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are augmented for French entities in the public sector. This topic describes the vendor invoice payment holds functionality used by the public sector in France.
 
 Set up rules for vendor invoice payment holds
 ---------------------------------------------

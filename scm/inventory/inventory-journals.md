@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes how you can use inventory journals to post various types of physical inventory transactions. 
 
-The inventory journals in Microsoft Dynamics 365 for Operations are used to post physical inventory transactions of various types, such as the posting of issues and receipts, inventory movements, the creation of bills of materials (BOMs), and the reconciliation of physical inventory. All these inventory journals are used in a similar way, but they are divided into different types.
+The inventory journals in Microsoft Dynamics 365 for Finance and Operations are used to post physical inventory transactions of various types, such as the posting of issues and receipts, inventory movements, the creation of bills of materials (BOMs), and the reconciliation of physical inventory. All these inventory journals are used in a similar way, but they are divided into different types.
 
 ## Types of inventory journals
 The following types of inventory journals are available:
@@ -72,7 +72,7 @@ When you report a BOM as finished, you can create a BOM journal. By using a BOM 
 
 ### Item arrival
 
-You can use the item arrival journal to register the receipt of items (for example, from purchase orders). An item arrival journal can be created as part of arrival management from the **Arrival overview** page, or you can manually create a journal entry from the **Item arrival** page. If you enable the item arrival journal name to check for picking locations, Dynamics 365 for Operations looks for a location for received items and, if there is room, generates location destinations for the incoming items.
+You can use the item arrival journal to register the receipt of items (for example, from purchase orders). An item arrival journal can be created as part of arrival management from the **Arrival overview** page, or you can manually create a journal entry from the **Item arrival** page. If you enable the item arrival journal name to check for picking locations, Finance and Operations looks for a location for received items and, if there is room, generates location destinations for the incoming items.
 
 ### Production input
 

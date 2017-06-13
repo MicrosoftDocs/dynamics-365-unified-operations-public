@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -24,7 +24,7 @@ ms.custom: 83972
 ms.assetid: 247e4d72-610b-4fa5-9873-601ed0f4b2d6
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes the various methods that you can use to create purchase orders for a project. The method that you use depends on the purpose of the purchase order, and when the purchased items are consumed and charged to a project.
 
-In Microsoft Dynamics 365 for Operations, you can use multiple methods to create purchase orders for a project. The method that you use depends on the purpose of the purchase order, when the purchased items are consumed, and when the purchased items are charged to a project.
+In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you can use multiple methods to create purchase orders for a project. The method that you use depends on the purpose of the purchase order, when the purchased items are consumed, and when the purchased items are charged to a project.
 
 ### Methods for creating a purchase order
 

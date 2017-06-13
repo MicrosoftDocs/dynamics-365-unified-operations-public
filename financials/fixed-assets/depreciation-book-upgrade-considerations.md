@@ -2,13 +2,13 @@
 # required metadata
 
 title: Depreciation book upgrade overview
-description: In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books. In Microsoft Dynamics 365 for Operations version 1611, the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book. This topic provides some things to consider for the upgrade. 
+description: In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books. In Microsoft Dynamics 365 for Operations (1611), the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book. This topic provides some things to consider for the upgrade. 
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books. In Microsoft Dynamics 365 for Operations version 1611, the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book. This topic provides some things to consider for the upgrade. 
+In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books. In Microsoft Dynamics 365 for Operations (1611), the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book. This topic provides some things to consider for the upgrade. 
 
 The upgrade process will move your existing setup and all existing transactions to the new book structure. Value models will remain as they currently are, as a book that posts to the general ledger. Depreciation books will be moved to a book that has the **Post to general ledger** option set to **No**. Depreciation book journal names will be moved to a general ledger journal name with the posting layer set to **None**. Depreciation book transactions will be moved to Fixed asset transactions. 
 

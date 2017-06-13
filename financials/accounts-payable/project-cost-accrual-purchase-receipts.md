@@ -2,13 +2,13 @@
 # required metadata
 
 title: Project cost accrual on purchase receipts
-description: This topic describes how accrued project costs from purchase receipts can be tracked in Microsoft Dynamics 365 for Operations. 
+description: This topic describes how accrued project costs from purchase receipts can be tracked in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes how accrued project costs from purchase receipts can be tracked in Microsoft Dynamics 365 for Operations. 
+This topic describes how accrued project costs from purchase receipts can be tracked in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 Invoices for a project often arrive later than the goods and services are delivered, which might have a significant impact on project key performance indicators (KPIs). It important to be able to track these transactions in both financial and project reports.
 
@@ -43,7 +43,7 @@ The following example scenario illustrates this.
 
 Contoso Consulting has started a new cloud deployment project. A purchase order is created to buy a computer for the project. The computer will cost $1500 and installation services will cost $150. The vendor has delivered and installed the computer, but the invoice has not yet reached Contoso Consulting. The project manager would like to see project cost accrual of $1650 before the invoice gets delivered. This cost should also be reflected in the company's month end financial statements. 
 
-The accrued cost needs to be recorded on both the financial level and project level for reporting purposes. In Dynamics 365 for Operations, the financial update of the product receipt can be tracked for the item and procurement categories. 
+The accrued cost needs to be recorded on both the financial level and project level for reporting purposes. In Finance and Operations, the financial update of the product receipt can be tracked for the item and procurement categories. 
 
 For items, on the **Accounts payable parameters** page, select the **Post product receipts to ledger** option.
 [![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
@@ -78,7 +78,7 @@ It is possible to map procurement categories to project categories on the **Proc
 
 **Step 3:** Create a draft vendor invoice. 
 
-In Dynamics 365 for Operations, posting a product receipt does not impact project information. As a workaround, you could generate a draft vendor invoice right after posting the purchase receipt. Go to the **Purchase Order** page &gt; **Invoice tab** &gt; **Generate** &gt; **Invoice**. This creates a pending invoice document that updates project information. 
+In Finance and Operations, posting a product receipt does not impact project information. As a workaround, you could generate a draft vendor invoice right after posting the purchase receipt. Go to the **Purchase Order** page &gt; **Invoice tab** &gt; **Generate** &gt; **Invoice**. This creates a pending invoice document that updates project information. 
 
 Creating a draft vendor invoice will generate pending project transactions. 
 [![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 

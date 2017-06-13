@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -51,7 +51,7 @@ A budget plan template is created by the budget manager in Microsoft Word and as
 
 1.  Click **Design** in the Microsoft Dynamics Office Add-in after you’ve logged in.
 2.  For header information, use the **Add fields** button.
-3.  Select the entity data source of BudgetPlanJustification, and click **Next**. **Note:** This entity is required for any justification document. Other entities can be used but the upload back to Microsoft Dynamics 365 for Operations will fail if this entity isn’t included.
+3.  Select the entity data source of BudgetPlanJustification, and click **Next**. **Note:** This entity is required for any justification document. Other entities can be used but the upload back to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition will fail if this entity isn’t included.
 4.  Add the BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter, and DocumentNumber labels and values in the Word document. **Note:** You can use your own custom labels, rather than the standard labels, if needed.
 5.  Click **Done** to complete the header section.
 6.  For line level detail of budget plan amounts, click **Add table**.
@@ -62,7 +62,7 @@ A budget plan template is created by the budget manager in Microsoft Word and as
 
 ##### Set up the Budget planning process to use the Justification template
 
-1.  In Microsoft Dynamics 365 for Operations, go to **Budgeting** &gt; **Setup** &gt; **Budget planning** &gt; **Justification document templates**.
+1.  In Finance and Operations, go to **Budgeting** &gt; **Setup** &gt; **Budget planning** &gt; **Justification document templates**.
 2.  Click **New** and browse to your newly created Microsoft Word document.
 3.  Enter a template display name and description. Click **OK**.
 4.  Go to **Budgeting** &gt; **Setup** &gt; **Budget** **planning** &gt; **Budget planning process**.
@@ -71,7 +71,7 @@ A budget plan template is created by the budget manager in Microsoft Word and as
 
 ##### Edit and save personalized justification documents
 
-1.  In Dynamics 365 for Operations, create a new budget plan or open an existing budget plan.
+1.  In Finance and Operations, create a new budget plan or open an existing budget plan.
 2.  In the **Justification** drop-down menu, select **Create new justification**.
 3.  After filling in the details, select to upload the personalized document from the **Justification** drop-down menu.
 

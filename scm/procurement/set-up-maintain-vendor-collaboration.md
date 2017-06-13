@@ -2,13 +2,13 @@
 # required metadata
 
 title: Set up and maintain vendor collaboration
-description: This topic describes the configuration tasks that are needed to set up Dynamics 365 for Operations to use vendor collaboration. It also describes how to provision new vendor collaboration users.
+description: This topic describes the configuration tasks that are needed to set up Finance and Operations to use vendor collaboration. It also describes how to provision new vendor collaboration users.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,21 +35,24 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the configuration tasks that are needed to set up Dynamics 365 for Operations to use vendor collaboration. It also describes how to provision new vendor collaboration users.
+This topic describes the configuration tasks that are needed to set up Finance and Operations to use vendor collaboration. It also describes how to provision new vendor collaboration users.
 
-The vendor collaboration interface exposes a limited set of information about purchase orders, invoices, and consignment stock to external vendor users. This topic describes the configuration tasks that you need to set up vendor collaboration in Dynamics 365 for Operations. It also describes how to set up a workflow to provision new vendor collaboration users, and manage the security roles for these users.
+The vendor collaboration interface exposes a limited set of information about purchase orders, invoices, and consignment stock to external vendor users. This topic describes the configuration tasks that you need to set up vendor collaboration in Finance and Operations. It also describes how to set up a workflow to provision new vendor collaboration users, and manage the security roles for these users.
 
 ## Set up vendor collaboration security roles
-It’s important that you correctly set up user permissions for the vendor collaboration to ensure that vendors don’t have unintended access to additional information in Dynamics 365 for Operations. Unlike other users, external vendors should not have the **SystemUser** security role. Instead these users must be given a role that only grants access to a limited set of privileges.  
+A procurement professional or a vendor with sufficient permissions can request that a contact person is provisioned as a user by activating **Provision vendor user** on the contact person record. In this process the user permission for the new external user has to be selected and the new vendor user request is submitted. It’s important that you correctly set up the user permissions that are available to select in the vendor user request for the vendor collaboration to ensure that vendors don’t get unintended access to additional information in Finance and Operations.  
 
-To set up security roles for vendor collaboration:
+To set up security roles that are available to select when a new user request is used for a contact person:
 
 1.  Select **System administration** &gt; **Security** &gt; **External roles**.
-2.  Click **New** and select a security role and party role.
+2.  Click **New** and select a security role and party role **Vendor**.
 
-You may want to add the **Vendor admin (external)** and **Vendor (external)** roles that are provided with Dynamics 365 for Operations, or you may want to use security roles that have been created by your company. The Vendor admin (external) role is only useful if you want vendors to be able to create new contacts, and to submit vendor collaboration user requests for new users and changes in their information, and deal with these using a workflow. If you're going to manually set up vendor contacts and users, you could just use the Vendor (external) role.  
+You may want to add the **Vendor admin (external)** and **Vendor (external)** roles that are provided with Finance and Operations, or you may want to use security roles that have been created by your company. The Vendor admin (external) role is only useful if you want vendors to be able to create new contacts, and to submit vendor collaboration user requests for new users and changes in their information, and deal with these using a workflow. 
 
-**Note:** The **SystemUser** role is automatically granted when you manually create a new user account in Dynamics 365 for Operations. Therefore, you must remove that role and assign the Vendor (external), or Vendor admin (external), or an equivalent role. If the new user account is created using the workflow that's initiated by a vendor user request for provisioning a new user, the roles that are assigned will be one or more of those that you've set up for vendor collaboration.
+If you're going to manually set up vendor contacts and users, you could just make the Vendor (external) role available in External roles. Then this will be the only role that can be requested through the vendor user request.  
+
+> [!NOTE]
+> The **SystemUser** role is automatically granted when you manually create a new user account in Finance and Operations. Therefore, you must remove that role and assign the **SystemExternalUser** role. If the new user account is created using the workflow that's initiated by a vendor user request for provisioning a new user, the roles that are assigned will be one or more of those that you've set up for vendor collaboration and the **SystemExternalUser**.
 
 ### Vendor admin (external) security role
 
@@ -90,8 +93,8 @@ The branches of the workflow might contain the elements listed below.
 1.  Assign an approval task to the person who's responsible for approving that the new user is given access to vendor collaboration information.
 2.  Assign a task to the person who's responsible for requesting new AAD user accounts in Azure portal. Use the predefined **Send Azure B2B user invitation** task for this.
 3.  Assign an approval task to the person who uploads to Azure. If the process to create an account failed, they would reject the task and end the workflow.
-4.  Automatically provision a new user in Dynamics 365 for Operations. Use the predefined **Automated provision user** task for this.
-5.  Notify the new user. You might want to send a welcome mail to the new user and provide a URL to Dynamics 365 for Operations. The email can use a template which would be created in the **Email messages **page, and then selected on the **User workflow parameters** page. The template can include a tag: %portal URL% which will be replaced by the URL of the Dynamics 365 for Operations tenant.
+4.  Automatically provision a new user in Finance and Operations. Use the predefined **Automated provision user** task for this.
+5.  Notify the new user. You might want to send a welcome mail to the new user and provide a URL to Finance and Operations. The email can use a template which would be created in the **Email messages** page, and then selected on the **User workflow parameters** page. The template can include a tag: %portal URL% which will be replaced by the URL of the Dynamics 365 for Operations tenant.
 
 #### Branch to modify security roles
 
@@ -100,7 +103,7 @@ The branches of the workflow might contain the elements listed below.
 
 ### Example workflow for inactivating a user
 
-Create a workflow of type **SysUserRequestInactivateUserTemplate,** and then add the following tasks.
+Create a workflow of type **SysUserRequestInactivateUserTemplate**, and then add the following tasks.
 
 1.  Assign an approval task to the person who's responsible for accepting the request to inactivate a user.
 2.  Add an automated task for inactivating the user. Use the **Automated user inactivation** task to do this.
@@ -112,14 +115,15 @@ Before you create a user account for someone who will use vendor collaboration, 
 -   **Active (PO is auto-confirmed)** - Purchase orders are automatically confirmed when the vendor accepts them without changes.
 -   **Active (PO is not auto-confirmed)** - Purchase orders need to be manually confirmed by your organization, after the vendor has accepted them.
 
-**Note:** This task can also be carried out by procurement professionals in your company.
+> [!NOTE]
+> This task can also be carried out by procurement professionals in your company.
 
 ## Troubleshoot the provisioning of new vendor collaboration users
 New vendor collaboration users are provisioned using the workflow that you've set up to process vendor collaboration user requests of type **Provision vendor user**.  
 
 There are some requirements for the email address that's specified in the request:
 
--   Consumer email addresses with domains such as @hotmail.com, @gmail.com, or @comcast.net cannot be used to register a Dynamics 365 for Operations user.
+-   Consumer email addresses with domains such as @hotmail.com, @gmail.com, or @comcast.net cannot be used to register a Finance and Operations user.
 -   If the email address belongs to a domain registered as a tenant with Microsoft Azure (a managed domain account), then the email address has to be an existing Azure Active Directory (AAD) account in order for the provisioning process to complete successfully.
 
 For more information about the process used in the **Send Azure B2B user invitation** task that's used in the workflow for AAD account management, see [Azure Active Directory B2B collaboration](https://azure.microsoft.com/en-us/documentation/articles/active-directory-b2b-collaboration-overview/).

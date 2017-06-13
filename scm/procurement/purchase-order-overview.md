@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,7 +50,7 @@ The following articles provide an overview of the various stages that a PO goes 
 -   [Purchase order creation](purchase-order-creation.md)
 -   [Purchase order approval and confirmation](purchase-order-approval-confirmation.md)
 -   [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
--   [Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+-   [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 ## Types of purchase orders
 There are three types of POs. When you create a PO, you must specify the type. You can set up a default order type for new orders on the **Procurement and sourcing parameters** page.
@@ -94,7 +94,7 @@ See also
 
 [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 
-[Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

@@ -2,13 +2,13 @@
 # required metadata
 
 title: Set up the advanced bank reconciliation import process
-description: The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Operations. This article explains how to set up the import functionality for your bank statements. 
+description: The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This article explains how to set up the import functionality for your bank statements. 
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,12 +35,12 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Operations. This article explains how to set up the import functionality for your bank statements. 
+The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This article explains how to set up the import functionality for your bank statements. 
 
-The setup for bank statement import varies, depending on the format of your electronic bank statement. Microsoft Dynamics 365 for Operations supports three bank statement formats out of the box: ISO20022, MT940, and BAI2.
+The setup for bank statement import varies, depending on the format of your electronic bank statement. Finance and Operations supports three bank statement formats out of the box: ISO20022, MT940, and BAI2.
 
 ## Sample files
-For all three formats, you must have files that translate the electronic bank statement from the original format to a format that Dynamics 365 for Operations can use. You can find the required resource files under the **Resources** node in Application Explorer in Microsoft Visual Studio. After you find the files, copy them to a single known location, so that you can more easily upload them during the setup process.
+For all three formats, you must have files that translate the electronic bank statement from the original format to a format that Finance and Operations can use. You can find the required resource files under the **Resources** node in Application Explorer in Microsoft Visual Studio. After you find the files, copy them to a single known location, so that you can more easily upload them during the setup process.
 
 | Resource name                                           | File name                            |
 |---------------------------------------------------------|--------------------------------------|
@@ -75,7 +75,7 @@ First, you must define the bank statement format processing group for ISO20022 b
 7.  After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.
 8.  The Bank statements entity is a composite entity that consists of four separate entities. In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.
 9.  On the **Transformations** tab, click **New**.
-10. For sequence number 1, click **Upload file**, and select the **ISO20022XML-to-Reconciliation.xslt** file that you saved earlier. **Note:** Dynamics 365 for Operations transformation files are built for the standard format. Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+10. For sequence number 1, click **Upload file**, and select the **ISO20022XML-to-Reconciliation.xslt** file that you saved earlier. **Note:** Finance and Operations transformation files are built for the standard format. Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
 11. Click **New**.
 12. For sequence number 2, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.
 13. Click **Apply transforms**.
@@ -110,7 +110,7 @@ First, you must define the bank statement format processing group for MT940 bank
 9.  On the **Transformations** tab, click **New**.
 10. For sequence number 1, click **Upload file**, and select the **MT940TXT-to-MT940XML.xslt** file that you saved earlier.
 11. Click **New**.
-12. For sequence number 2, click **Upload file**, and select the **MT940XML-to-Reconciliation.xslt** file that you saved earlier. **Note:** Dynamics 365 for Operations transformation files are built for the standard format. Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
+12. For sequence number 2, click **Upload file**, and select the **MT940XML-to-Reconciliation.xslt** file that you saved earlier. **Note:** Finance and Operations transformation files are built for the standard format. Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
 13. Click **New**.
 14. For sequence number 3, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.
 15. Click **Apply transforms**.
@@ -146,7 +146,7 @@ First, you must define the bank statement format processing group for BAI2 bank 
 9.  On the **Transformations** tab, click **New**.
 10. For sequence number 1, click **Upload file**, and select the **BAI2CSV-to-BAI2XML.xslt** file that you saved earlier.
 11. Click **New**.
-12. For sequence number 2, click **Upload file**, and select the **BAI2XML-to-Reconciliation.xslt** file that you saved earlier. **Note:** Dynamics 365 for Operations transformation files are built for the standard format. Because banks often diverge from this format, and you may have to update the transformation file to map to your bank statement format. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
+12. For sequence number 2, click **Upload file**, and select the **BAI2XML-to-Reconciliation.xslt** file that you saved earlier. **Note:** Finance and Operations transformation files are built for the standard format. Because banks often diverge from this format, and you may have to update the transformation file to map to your bank statement format. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
 13. Click **New**.
 14. For sequence number 3, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.
 15. Click **Apply transforms**.

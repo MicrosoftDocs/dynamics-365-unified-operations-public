@@ -2,13 +2,13 @@
 # required metadata
 
 title: Developer home page
-description: This topic provides links to topics about development with Microsoft Dynamics 365 for Operations.
+description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,15 +35,15 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides links to topics about development with Microsoft Dynamics 365 for Operations.
+This topic provides links to topics about development.
 
 Overview
 --------
 
-Microsoft Dynamics 365 for Operations represents the next-generation enterprise resource planning (ERP) offering from Microsoft. It is designed to enable the entire ERP application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. It leverages the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft. This release introduces significant changes to the development experience. These changes include:
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition represents the next-generation enterprise resource planning (ERP) offering from Microsoft. It is designed to enable the entire ERP application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. It leverages the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft. This release introduces significant changes to the development experience. These changes include:
 
 -   Development tools that are decoupled from any running environment. You develop against local, XML-based files, not the online database.
--   Microsoft Visual Studio replaces MorphX as the development environment. Dynamics 365 for Operations customizes the Visual Studio environment to provide you with a smooth and familiar experience.
+-   Microsoft Visual Studio replaces MorphX as the development environment. The Visual Studio environment is customized to provide you with a smooth and familiar experience.
 -   The X++ compiler generates Common Intermediate Language (CIL) for all features. CIL is the same intermediate language used by other .NET-based (managed) languages, such as the C\# programming language.
 -   New browser-based client and new design patterns for forms that you can leverage to provide an improved end-user experience.
 -   The new Application Lifecycle Model (ALM) for build automation, test automation, and deployment of models to the cloud.
@@ -59,9 +59,8 @@ Microsoft Dynamics 365 for Operations represents the next-generation enterprise
 -   [Deprecated features](..\migration-upgrade\deprecated-features.md)
 -   [Deprecated API’s](..\migration-upgrade\deprecated-apis.md)
 -   [Feedback and support (Office Mix)](https://mix.office.com/watch/92azzna59jj6)
--   [Rename and reboot machines for Visual Studio Online (Office Mix)](..\migration-upgrade\vso-machine-renaming.md)
--   [Configure your developer VM (Office Mix)](configure-developer-vm.md)
--   [Introduction to Visual Studio Online (Video)](http://channel9.msdn.com/Events/Build/2014/2-575)
+-   [Rename and reboot machines for Visual Studio Team Services](..\migration-upgrade\vso-machine-renaming.md)
+-   [Introduction to Visual Studio Team Services (Video)](http://channel9.msdn.com/Events/Build/2014/2-575)
 
 ## Fleet Management
 -   [Fleet Management sample](introduction-fleet-management-sample.md)
@@ -73,13 +72,12 @@ Microsoft Dynamics 365 for Operations represents the next-generation enterprise
 -   [Introduction to Visual Studio development](introduction-visual-studio.md)
 -   [Create a simple data model](create-data-model-elements.md)
 -   [Building and debugging a project](build-debug-project.md)
--   [Version control, metadata search, navigation, and other features](development-tools.md)
+-   [Version control, metadata search, navigation, and other features](version-control-metadata-navigation.md)
 
 ### Tools, models, and VMs
 
--   [Development tools](development-tools.md)
+-   [Development tools](development-tools-overview.md)
 -   [Introduction to the development environment (Office Mix)](https://mix.office.com/watch/1tz7194y62m3s)
--   [Enable a new user account to develop on a development VM](enable-development-machine.md)
 -   [Application Explorer](application-explorer.md)
 -   [Projects](projects.md)
 -   [Element designers](element-designers.md)
@@ -88,12 +86,13 @@ Microsoft Dynamics 365 for Operations represents the next-generation enterprise
 -   [Build operations](build-operations.md)
 -   [Visual Studio code editor](code-editor.md)
 -   [Developer tools add-ins](developer-tools-add-ins.md)
+-   [Configure version control with VSTS (Office Mix)](https://mix.office.com/watch/1ftubtqzp3xxl)
 -   [Distribution of models: How to export and import a model](models-export-import.md)
--   [Configure your developer VM](configure-developer-vm.md)
 -   [Metadata search in Visual Studio](metadata-search-visual-studio.md)
 -   [Learn about packages, models and Visual Studio (Office Mix)](https://mix.office.com/watch/ies6lyit6773)
 -   [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)
 -   [Resolve conflicts using Visual Studio](https://mix.office.com/watch/1rl75ei2cs6d7)
+-   [Enable a new user account to develop on a development VM](enable-development-machine.md)
 
 ## X++ programming language
 ### Tutorials
@@ -119,23 +118,21 @@ Microsoft Dynamics 365 for Operations represents the next-generation enterprise
 ## Code migration
 ### Migrate your code
 
-To migrate your code to Dynamics 365 for Operations, use the "Migrate and Create Dynamics 365 for Operations Solutions" methodology in Lifecycle Services.
+To migrate your code, use the "Migrate and Create Solutions" methodology in Lifecycle Services.
 
 ### Key concepts
 
 The following links (also included in the methodology) describe key concepts and steps in the migration process. The links are listed here in the order that we recommend you read them.
 
--   [Overview: Prepare to migrate to Microsoft Dynamics 365 for Operations](..\migration-upgrade\prepare-migration.md)
--   [Migrate from AX 2012 to Dynamics 365 for Operations (Office Mix)](https://mix.office.com/watch/4gsvk592c685)
+-   [Overview: Prepare to migrate](..\migration-upgrade\prepare-migration.md)
+-   [Migrate from AX 2012 (Office Mix)](https://mix.office.com/watch/4gsvk592c685)
 -   [Migrate between versions (Office Mix)](https://mix.office.com/watch/os2wff38zi6f)
 -   [Configure your VSTS mapping after a code upgrade](..\migration-upgrade\configure-vso-solution.md)
--   [Configure version control with VSTS (Office Mix)](https://mix.office.com/watch/1ftubtqzp3xxl)
 -   [Resolve conflicts using Visual Studio (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7)
 -   [Understanding the model split](model-split.md)
 -   [Deprecated features](..\migration-upgrade\deprecated-features.md)
 -   [Deprecated API’s](..\migration-upgrade\deprecated-apis.md)
 -   [Development tools performance tips](https://mix.office.com/watch/rnp6ng9wu8kx)
--   [Configuring your developer VM](configure-developer-vm.md)
 
 ### Additional concepts
 
@@ -153,7 +150,7 @@ The following links (also included in the methodology) describe key concepts and
 -   [Download hotfixes from Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md)
 -   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
 -   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
--   [Install retail hotfixes](/dynamics365/operations/retail/dev-itpro/install-retail-hotfix?toc=/dynamics365/operations/dev-itpro/toc.json)
+-   [Install retail hotfixes](/dynamics365/unified-operations/retail/dev-itpro/install-retail-hotfix?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 -   [Installing a financial reporting binary hotfix](..\migration-upgrade\install-financial-reporting-binary-hotfix.md)
 -   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
 -   [Updating the Visual Studio development tools](update-development-tools.md)
@@ -227,7 +224,7 @@ The client is an HTML web client that runs in all major browsers. For informati
 -   [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)
 
 ## Mobile platform
--   [Dynamics 365 for Operations mobile platform](..\mobile-apps\mobile-platform.md)
+-   [Mobile platform](..\mobile-apps\mobile-platform.md)
 
 ## Global finance management
 -   [Dimension entry control dialog support](..\financial\dimension-entry-control-dialog-support.md)

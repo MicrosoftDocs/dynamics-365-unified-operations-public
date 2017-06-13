@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This tutorial is for developers to use advanced constructs of the X++ language and take advantage of productive debugger features. This is a walkthrough of the new features with exercises included to practice using these features. 
 
-In previous versions, the X++ code was compiled into pseudo-code, or p-code, that was interpreted on the server or on the client application. This code was then subject to further compilation into CIL. Today the story is much simpler--only CIL is supported, and this code is generated from a new compiler. In this tutorial, we’ll be discussing some of the new features that have been added to the X++ language for Microsoft Dynamics 365 for Operations. As we run through the scenarios, you’ll also see some of the new features in the debugger.
+In previous versions, the X++ code was compiled into pseudo-code, or p-code, that was interpreted on the server or on the client application. This code was then subject to further compilation into CIL. Today the story is much simpler--only CIL is supported, and this code is generated from a new compiler. In this tutorial, we’ll be discussing some of the new features that have been added to the X++ language. As we run through the scenarios, you’ll also see some of the new features in the debugger.
 
 ## Declare anywhere
 Previously, all local variables had to be placed at the start of the method in which they’re used. Now, you have fine-grained control over the scope of your variables. With this new feature, it’s possible to provide smaller scopes for variables, outside of which the variables can’t be referenced. The lifetime of the variable is the scope in which it’s declared. Scopes can be started at the block level (inside compound statements), in for statements, and in using statements as we will see below. There are several advantages to making scopes small.
@@ -423,7 +423,7 @@ No number of decimals will suffice to represent the value of 1/3 accurately. The
 A decimal number is a floating-point value that consists of a sign, a numeric value where each digit in the value ranges from 0 to 9, and a scaling factor that indicates the position of a floating decimal point that separates the integral and fractional parts of the numeric value. The binary representation of a real value consists of a 1-bit sign, a 96-bit integer number, and a scaling factor used to divide the 96-bit integer and specify what portion of it is a decimal fraction. The scaling factor is implicitly the number 10, raised to an exponent ranging from 0 to 28. Therefore, the binary representation of a decimal value represents ((-2⁹⁶ to 2⁹⁶)/10(0\\ to\\ 28)), where -(2⁹⁶-1) is equal to the minimum value and 2⁹⁶-1 is equal to the maximum value that can be expressed.
 
 ## String truncation
-String truncation is not a new feature for Dynamics 365 for Operations. However, when code is executed in IL in previous versions, the automatic string truncation described here doesn’t take place. String values can be declared in X++ to contain a maximum number of characters. Typically, this is achieved by encoding this information in an extended data type, as shown below: Credit card numbers cannot exceed 20 characters. [![StringTruncationSolutionExplorer\_DebugFeatures](./media/stringtruncationsolutionexplorer_debugfeatures.png)](./media/stringtruncationsolutionexplorer_debugfeatures.png) It's also possible to specify length constraints directly in the X++ syntax:
+String truncation is not a new feature. However, when code is executed in IL in previous versions, the automatic string truncation described here doesn’t take place. String values can be declared in X++ to contain a maximum number of characters. Typically, this is achieved by encoding this information in an extended data type, as shown below: Credit card numbers cannot exceed 20 characters. [![StringTruncationSolutionExplorer\_DebugFeatures](./media/stringtruncationsolutionexplorer_debugfeatures.png)](./media/stringtruncationsolutionexplorer_debugfeatures.png) It's also possible to specify length constraints directly in the X++ syntax:
 
     str 20 creditCardNumber;
 

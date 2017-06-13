@@ -2,13 +2,13 @@
 # required metadata
 
 title: Financial reporting
-description: This topic describes where to access financial reporting in Microsoft Dynamics 365 for Operations and how to use the financial reporting capabilities. It includes a description of the default financial reports that are provided.
+description: This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and how to use the financial reporting capabilities. It includes a description of the default financial reports that are provided.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,12 +35,12 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes where to access financial reporting in Microsoft Dynamics 365 for Operations and how to use the financial reporting capabilities. It includes a description of the default financial reports that are provided.
+This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and how to use the financial reporting capabilities. It includes a description of the default financial reports that are provided.
 
 Accessing financial reporting
 -----------------------------
 
-You can find the **Financial reporting** menu in the following places in Dynamics 365 for Operations:
+You can find the **Financial reporting** menu in the following places in Finance and Operations:
 
 -   **General Ledger** &gt; **Inquiries and reports**
 -   **Budgeting** &gt; **Inquires and reports** &gt; **Basic budgeting**
@@ -87,7 +87,7 @@ The financial reporting functions are available to users who have the appropriat
 After a user is added or a role is changed, the user should be able to access financial reporting within a few minutes. **Note:** The sysadmin role is added to all roles in financial reporting.
 
 ## Default reports
-Financial reporting provides 22 default financial reports. Every report uses the default main account categories in Dynamics 365 for Operations. You can use these reports as is or as a starting point for your financial reporting needs. In addition to the traditional financial statements, such as Income statement and Balance sheet, these default reports include reports that show the different types of financial reports that you can create. Each report in the following table links to an Office Mix presentation about the report.
+Financial reporting provides 22 default financial reports. Every report uses the default main account categories in Finance and Operations. You can use these reports as is or as a starting point for your financial reporting needs. In addition to the traditional financial statements, such as Income statement and Balance sheet, these default reports include reports that show the different types of financial reports that you can create. Each report in the following table links to an Office Mix presentation about the report.
 
 | Default report                                                                                         | Description                                                                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -118,7 +118,7 @@ Financial reporting provides 22 default financial reports. Every report uses the
 When you click the **Financial reporting** menu, the list of default financial reports for the company is shown. You can then open or modify a report. To open one of the default reports, select the report name. The first time that a report is opened, it's automatically generated for the previous month. For example, if you open a report for the first time in August 2016, the report is generated for July 31, 2016. After a report is opened, you can start exploring it by drilling down on specific pieces of data and changing report options.
 
 ## Creating and modifying financial reports
-From the financial reports list, you can create a new report or modify an existing report. If you have the appropriate permissions, you can create a new financial report by clicking **New** on the Action Pane. A report designer program is downloaded to your device. After the report designer starts you can then create the new report. After you save the new report, it appears in the financial reports list. The list shows only reports that were created for the company that you're using in Dynamics 365 for Operations. For more information about the process of creating and modifying financial reports in Dynamics 365 for Operations, refer to these [blog posts](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) from the Dynamics financial reporting blog. **Note:** The computer that you are downloading the report designer client on must have version 4.6.2 of the Microsoft .NET Framework installed on it. This version of the Microsoft .NET Framework can be downloaded and installed from [here](https://www.microsoft.com/en-us/download/details.aspx?id=53345). If you are using Chrome, you must install a ClickOnce extension in order to download the report designer client. If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. You can also modify a report that appears in the financial reports list. When the area around the report name is selected, click **Edit** on the Action Pane. The report designer program starts.
+From the financial reports list, you can create a new report or modify an existing report. If you have the appropriate permissions, you can create a new financial report by clicking **New** on the Action Pane. A report designer program is downloaded to your device. After the report designer starts you can then create the new report. After you save the new report, it appears in the financial reports list. The list shows only reports that were created for the company that you're using in Finance and Operations. For more information about the process of creating and modifying financial reports in Finance and Operations, refer to these [blog posts](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) from the Dynamics financial reporting blog. **Note:** The computer that you are downloading the report designer client on must have version 4.6.2 of the Microsoft .NET Framework installed on it. This version of the Microsoft .NET Framework can be downloaded and installed from [here](https://www.microsoft.com/en-us/download/details.aspx?id=53345). If you are using Chrome, you must install a ClickOnce extension in order to download the report designer client. If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. You can also modify a report that appears in the financial reports list. When the area around the report name is selected, click **Edit** on the Action Pane. The report designer program starts.
 
 See also
 --------

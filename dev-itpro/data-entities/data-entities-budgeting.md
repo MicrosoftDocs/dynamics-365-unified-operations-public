@@ -2,13 +2,13 @@
 # required metadata
 
 title: Data entities - Budgeting
-description: This article provides a list of the data entities that are available for the Budgeting functionality in Microsoft Dynamics 365 for Operations.
+description: This article provides a list of the data entities that are available for Budgeting. 
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: reference
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for the Budgeting functionality in Microsoft Dynamics 365 for Operations.
+This article provides a list of the data entities that are available for Budgeting. 
 
 Available data entities
 -----------------------

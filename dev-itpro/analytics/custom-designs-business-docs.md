@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 3
 
 This topic shows how to create a custom report design for an existing application business document by using a pure extension model. 
 
-Microsoft Dynamics 365 for Operations includes an expanded set of tools to support custom solutions. This topic focuses on the steps for creating a custom report design for an existing application business document by using a pure extension model. Follow the steps later in this topic to associate a custom report design with an instance of an application document. When you've finished, users can configure Print management settings to select the custom design whenever it's appropriate, based on transaction details. The following illustration shows a typical application customization.[![extendingprintmgt](./media/extendingprintmgt1.png)](./media/extendingprintmgt1.png)  
+Microsoft Dynamics 365 for Finance and Operations includes an expanded set of tools to support custom solutions. This topic focuses on the steps for creating a custom report design for an existing application business document by using a pure extension model. Follow the steps later in this topic to associate a custom report design with an instance of an application document. When you've finished, users can configure Print management settings to select the custom design whenever it's appropriate, based on transaction details. The following illustration shows a typical application customization.[![extendingprintmgt](./media/extendingprintmgt1.png)](./media/extendingprintmgt1.png)  
 
 ## What's important to know?
 Here are some important points that you should be aware of before you apply this solution:

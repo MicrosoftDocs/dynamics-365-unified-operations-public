@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Take a tour of Performance SDK and multiuser testing with Visual Studio Online and learn how convert a scenario recorded with Task Recorder into a single user test and then a multiuser test.
 
-*Time:* 30 minutes In this lab, you will take a tour of Performance SDK and multi user testing with Visual Studio Online. You will see how to convert a scenario recorded with Task Recorder and convert it to a single user test and then a multi user test. **Note:** This lab requires that you access the environment as an administrator. For more information, refer to the document named [Access Microsoft Dynamics 365 for Operations Instances](..\dev-tools\access-instances.md). **Prerequisites**
+*Time:* 30 minutes In this lab, you will take a tour of Performance SDK and multi user testing with Visual Studio Online. You will see how to convert a scenario recorded with Task Recorder and convert it to a single user test and then a multi user test. **Note:** This lab requires that you access the environment as an administrator. For more information, refer to the document named [Access Instances](..\dev-tools\access-instances.md). **Prerequisites**
 
 -   Visual Studio 2015 Enterprise
 -   Deployment with Volume Data
@@ -86,7 +86,7 @@ Put this thumbprint value in **CloudEnvironment.Config** file:
 
 [![config-thumbprint](./media/config-thumbprint.jpg)](./media/config-thumbprint.jpg) 
 
-The next step is to update **wif.config** to make AOS trust this certificate. To do that, open IIS and find Dynamics 365 for Operations in the list of sites. Click **Explore** to open and find a file **wif.config**. 
+The next step is to update **wif.config** to make AOS trust this certificate. To do that, open IIS and find Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in the list of sites. Click **Explore** to open and find a file **wif.config**. 
 
 [![wifconfig](./media/wifconfig.jpg)](./media/wifconfig.jpg) 
 
@@ -182,7 +182,24 @@ You can switch to **Graphs view** to view different indicators for the test cont
 [![perf103w](./media/perf103w.png)](./media/perf103w.png)
 
 ## Troubleshooting
-If you see an error message like this: *System.TypeInitializationException: System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---&gt; System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to https://sandbox.ax.dynamics.com/Services/AxUserManagement/Service.svc/ws2007FedHttp. **This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server.** ---&gt; System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---&gt; System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---&gt; System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host.* you would need to run the following powershell script on your **development machine**:
+
+### System.TypeInitializationException
+If you see an error message like this: 
+
+
+    System.TypeInitializationException: System.TypeInitializationException: The type initializer for
+    'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. --->
+    System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to
+    https://sandbox.ax.dynamics.com/Services/AxUserManagement/Service.svc/ws2007FedHttp. This could be due to the fact 
+    that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused 
+    by a mismatch of the security binding between the client and the server.** ---> System.Net.WebException: 
+    The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: 
+    Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> 
+    System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host. 
+
+
+### Solution
+You would need to run the following powershell script on your **development machine**:
 
     Set-ItemProperty HKLM:SOFTWAREMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
     if ((Test-Path HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319)) 
@@ -190,7 +207,93 @@ If you see an error message like this: *System.TypeInitializationException: Syst
         Set-ItemProperty HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false 
     }
 
+## Certificate thumbprint errors
 
+### Error example
+
+    Result StackTrace:          
+
+    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAuthenticator.MintToken(String email, 
+    String nameId, String identityProvider, String audience, String certThumbprint)
+    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAuthenticator.SignIn()
+    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement.get_Service()
+    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement.PopulateAxUsers()
+    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement..cctor()
+    --- End of inner exception stack trace ---
+    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement.get_AdminUser()
+        at MS.Dynamics.Performance.Application.TaskRecorder.TestRecord1Base.TestSetup() in 
+            J:PerfSDKPerfSDKLocalDirectorySampleProjectPerfSDKSampleGeneratedTestRecord1Base.cs:line 45
+    Result Message:             
+
+    Initialization method MS.Dynamics.Performance.Application.TaskRecorder.TestRecord1Base.TestSetup threw exception. 
+    System.TypeInitializationException: System.TypeInitializationException: The type initializer for 
+    'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. --> 
+    MS.Dynamics.TestTools.CloudCommonTestUtilities.Exceptions.WebAuthenticationException: 
+    Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc42718198852cd23957fc60a3e4bca2e
+
+### Solution:
+
+Make sure the thumbprint in CloudEnvironment.Config doesn't have invisible Unicode characters. To do that paste your error message into a tool that would show invisible Unicode characters. An example is [Unicode code converter](https://r12a.github.io/apps/conversion/).
+
+![Unicode code converter](media/unicode-extra.jpg)
+
+
+## Zoom factor
+Sometimes you get the error related to IE zoom factor. 
+
+## Error example
+
+```
+Result StackTrace:          
+at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 1108
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 862
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 830
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 89
+   at OpenQA.Selenium.IE.InternetExplorerDriver..ctor(InternetExplorerDriverService service, InternetExplorerOptions options) in c:\Projects\webdriver\dotnet\src\webdriver\IE\InternetExplorerDriver.cs:line 127
+   at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Browser.InternetExplorerBrowser.GetWebDriver(Uri initialUri)
+   at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Browser.SeleniumBrowser.LaunchWithAuthentication(Uri targetUri)
+   at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Browser.AuthenticatedBrowser.CreateSession(SupportedBrowser browser, IAuthenticator authenticator, Uri launchUri)
+   at Microsoft.Dynamics.TestTools.Dispatcher.JsDispatcher.OpenPipeline()
+   at Microsoft.Dynamics.TestTools.Dispatcher.JsDispatcher.OpenClient(ClientState initialState, ClientBehavior behavior)
+   at Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.SetClientState(ClientState state)
+   at Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.set_Company(String value)
+   at MS.Dynamics.Performance.Application.TaskRecorder.Free_Text_InvoiceBase.TestSetup() in C:\PerfSDK\Scripts\SampleProject\PerfSDKSample\Generated\Free_Text_InvoiceBase.cs:line 50
+Result Message:              Initialization method MS.Dynamics.Performance.Application.TaskRecorder.Free_Text_InvoiceBase.TestSetup threw exception. System.InvalidOperationException: System.InvalidOperationException: Unexpected error launching Internet Explorer. Browser zoom level was set to 200%. It should be set to 100% (NoSuchDriver).
+```
+
+### Solution
+The IE zoom factor can be set to 100% by changing the following keys:
++ Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\ResetZoomOnStartup = 0
++ Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\ResetZoomOnStartup2 = 0
++ Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\Zoomfactor = 80000
+
+Depending on the version of the local machine that is being used, before starting the RDP session it may be necessary to “Change the size of text, apps and other items”. This field is available by right-clicking on your display and selecting Display settings. 
+
+## Missing configuration file
+
+```
+Result Stack Trace:
+System.ServiceModel.Description.ConfigLoader.LoadChannelBehaviors(ServiceEndpoint serviceEndpoint, String configurationName)
+System.ServiceModel.ChannelFactory.ApplyConfiguration(String configurationName, Configuration configuration)
+System.ServiceModel.ChannelFactory.InitializeEndpoint(String configurationName, EndpointAddress address, Configuration configuration)
+System.ServiceModel.Configuration.ConfigurationChannelFactory`1..ctor(String endpointConfigurationName, Configuration configuration, EndpointAddress remoteAddress)
+MS.Dynamics.TestTools.CloudCommonTestUtilities.Services.ConfigurationClientBase`1.InitConfigurationChannelFactory(Configuration config, String endpointConfigurationName, EndpointAddress remoteAddress)
+MS.Dynamics.Test.Team.Foundation.WebClient.Common.InteractionService.ReliableCommunicationManagerProxy..ctor(String endpointConfigurationName, EndpointAddress remoteAddress)
+MS.Dynamics.Test.Team.Foundation.WebClient.Common.InteractionService.ClientCommunicationManager..ctor(String endpointConfigurationName)
+MS.Dynamics.Test.Team.Foundation.WebClient.Common.InteractionService.ClientCommunicationManager..ctor()
+Microsoft.Dynamics.TestTools.Dispatcher.ISDispatcher.ISDispatcher.OpenClient(ClientState initialState, ClientBehavior behavior)
+Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.SetClientState(ClientState state)
+Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.set_Company(String value)
+MS.Dynamics.Performance.Application.GFM.PDLTrend.ProcureToPayTrend.ProcureToPaymentTrend() in 
+
+Debug Trace:
+Default: DateTime="09/20/2016 23:53:42" "Changing company from  to USMF"
+Default: DateTime="09/20/2016 23:53:43" "Opening ISDispatcher client."
+Default: DateTime="09/20/2016 23:53:43" "Reliable communication manager proxy pointing to URL: https://<BaseURL>/Services/ReliableCommunicationManager.svc"
+```
+
+### Solution
+This error message indicates that you’re missing **MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config**. Check that this file has been added to vsonline.testsettings, note there are two files with similar names except one is a __\*.dll__ and the other is __\*dll.config__. 
 
 
 

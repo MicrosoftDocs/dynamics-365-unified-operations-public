@@ -2,13 +2,13 @@
 # required metadata
 
 title: Online store overview
-description: This article provides information about Retail online stores and how to set them up in Microsoft Dynamics 365 for Operations.
+description: This article provides information about Retail online stores and how to set them up in Microsoft Dynamics 365 for Retail.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](includes/banner.md)]
 
 
-This article provides information about Retail online stores and how to set them up in Microsoft Dynamics 365 for Operations.
+This article provides information about Retail online stores and how to set them up in Microsoft Dynamics 365 for Retail.
 
-Retail and commerce in Dynamics 365 for Operations supports multiple retail channels. These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores). Online stores give an online presence to a retailer, so that customers can purchase products from the retailer’s online store in addition to its retail stores. If customers purchase products from the online store, those products can be shipped to them, or the customers can pick the products up at a local retail store. You create an online store in the Dynamics 365 for Operations client. This online store is then published to a third-party online store that is integrated with Dynamics 365 for Operations . The third-party online store serves as the storefront (UI) for the online store, and gives you a choice of customer management system (CMS) and UI capabilities. Several integrations of this type are available for Dynamics 365 for Operations . The properties that you define for the online store control the behavior of the online store. For example, you define the navigation category hierarchy in Dynamics 365 for Operations and assign it to the online store. When you publish the online store to the third-party online store, the navigation category hierarchy appears in the online version of the store. Shoppers then use the navigation category hierarchy to browse the online store and search for products. To create an online store, you must set up the components that enable transactions to be processed for the store. For example, you must add assortments, apply attributes, and set up payment methods and shipping methods. You can also define prices, promotions, discounts, trade agreements, and shipping terms that are specific to the online store. After you publish the online store to the third-party online store, you can create retail product catalogs for the online store. The products in the catalog become product listings in the online store. When a shopper purchases products from the online store, the available inventory is updated and synchronized in the client. Additionally, sales orders are generated for the purchases, and are sent to the client for order fulfillment and processing.
+Dynamics 365 for Retail supports multiple retail channels. These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores). Online stores give an online presence to a retailer, so that customers can purchase products from the retailer’s online store in addition to its retail stores. If customers purchase products from the online store, those products can be shipped to them, or the customers can pick the products up at a local retail store. You create an online store in the Dynamics 365 for Retail client. This online store is then published to a third-party online store that is integrated with Dynamics 365 for Retail . The third-party online store serves as the storefront (UI) for the online store, and gives you a choice of customer management system (CMS) and UI capabilities. Several integrations of this type are available for Dynamics 365 for Retail . The properties that you define for the online store control the behavior of the online store. For example, you define the navigation category hierarchy in Dynamics 365 for Retail and assign it to the online store. When you publish the online store to the third-party online store, the navigation category hierarchy appears in the online version of the store. Shoppers then use the navigation category hierarchy to browse the online store and search for products. To create an online store, you must set up the components that enable transactions to be processed for the store. For example, you must add assortments, apply attributes, and set up payment methods and shipping methods. You can also define prices, promotions, discounts, trade agreements, and shipping terms that are specific to the online store. After you publish the online store to the third-party online store, you can create retail product catalogs for the online store. The products in the catalog become product listings in the online store. When a shopper purchases products from the online store, the available inventory is updated and synchronized in the client. Additionally, sales orders are generated for the purchases, and are sent to the client for order fulfillment and processing.
 
 ## Set up an online store
 To set up an online store, you must complete the following tasks.

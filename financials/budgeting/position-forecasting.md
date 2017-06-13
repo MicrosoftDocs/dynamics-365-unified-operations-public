@@ -2,13 +2,13 @@
 # required metadata
 
 title: Position forecasting
-description: 
+description: Expenses that are related to workers often make up a large proportion of an organization's costs. Position forecasting lets you plan those expenses and include them in the planning of budgets.
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Position forecasting
 
 [!include[banner](../includes/banner.md)]
-
 
 
 
@@ -101,7 +100,7 @@ The earning cost element that is selected on the compensation group is used whe
 
 ### Creating forecast positions for existing positions
 
-For the most accurate budget planning, you can create forecast positions by using details from existing positions in Microsoft Dynamics 365 for Operations, regardless of whether the position is currently filled or unfilled. 
+For the most accurate budget planning, you can create forecast positions by using details from existing positions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, regardless of whether the position is currently filled or unfilled. 
 
 The **Add existing positions** function displays all the positions for an organization. By setting the **As of** date, you can change the list of positions so that it contains the positions that existed at a date in the past or, more commonly, in the future (for example, the start of the next budget cycle). Select a budget planning process and budget plan scenario, select positions in the list, and then click **OK** to create forecast positions for the selected positions. Note that you can create only one forecast position for each existing position in a budget planning process and scenario. However, you can create additional versions by assigning different budget plan scenarios. 
 

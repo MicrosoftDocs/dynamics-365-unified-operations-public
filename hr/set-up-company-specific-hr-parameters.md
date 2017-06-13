@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,7 +40,7 @@ The settings of some Human resources (HR) parameters are shared across companies
 Two pages are used to set Human resources (HR) parameters. For parameters that are shared across companies, you use the **Human resources shared parameters** page. For parameters that are company-specific (in other words, the settings apply to a single company), you use the **Human resource parameters** page. On the **Human resources parameters** page, the settings are divided among six tabs:
 
 -   General
--   Recruitment
+-   Recruitment - this is not included in Dynamics 365 for Talent
 -   Compensation
 -   Number sequences
 -   Family and Medical Leave Act (FMLA)
@@ -50,9 +50,13 @@ Each tab contains information that pertains to a single company. The settings on
 
 The settings on the **Recruitment** tab define the document types that are used for correspondence that is automatically sent to applicants, and the recruitment project that is used for unsolicited applications (applications that aren't for a specific recruitment project). The period that is defined for the recruitment project aging determines the recruitment projects that are included on the **Aging projects** tile in the **Recruitment management** workspace. The period that is defined for the application deadline warning is used to display recruitment projects that are approaching their application deadline on the **Application deadline approaching** tile in the **Recruitment** workspace. 
 
-The settings on the **Compensation** tab define whether users must confirm that they want to save information for a fixed or variable compensation plan. If you select the **Enable save validation** check box, any time that users close a compensation-related page, they receive a message that asks whether they want to save the record. Some pages in compensation management don't let users delete information. Therefore, by prompting users to verify that they want to save information, you might be able to limit the amount of information that is saved but can't be deleted later. If the **Enable save validation** check box is cleared, records are always saved immediately, possibly before the user is ready. If you're using performance management, the **Compensation** tab also lets you select a rating model to use instead of the model that is assigned to compensation plans when performance is rated. 
+The settings on the **Compensation** tab define whether users must confirm that they want to save information for a fixed or variable compensation plan. If you select the **Enable save validation** check box, any time that users close a compensation-related page, they receive a message that asks whether they want to save the record. Some pages in compensation management don't let users delete information. Therefore, by prompting users to verify that they want to save information, you might be able to limit the amount of information that is saved but can't be deleted later. If the **Enable save validation** check box is cleared, records are always saved immediately, possibly before the user is ready. If you're using performance management, the **Compensation** tab also lets you select a rating model to use instead of the model that is assigned to compensation plans when performance is rated. 
 
-The settings on the **Number sequence** tab determine the sequences that are used to automatically assign IDs to items in Human resources, such as applications, absence registrations, compensation process results, case numbers, courses, and course agendas. To maintain number sequence references and codes, use the **Number sequences** list page (click **Organization administration** &gt; **Number sequences** &gt; **Number sequences**). 
+### Previously released functionality
+The settings on the **Number sequence** tab determine the sequences that are used to automatically assign IDs to items in Human resources, such as applications, absence registrations, compensation process results, case numbers, courses, and course agendas. To maintain number sequence references and codes, use the **Number sequences** list page (click **Organization administration** &gt; **Number sequences** &gt; **Number sequences**).
+
+### If you're using Dynamics 365 for Talent
+The settings on the **Number sequence** tab determine the sequences that are used to automatically assign IDs to items in Human resources, such as applications, absence registrations, compensation process results, case numbers, courses, and course agendas. To maintain number sequence references and codes, use the **Number sequences** list page (click **System administration** &gt; **Links tab** &gt; **Number sequences** &gt; **Number sequences**). 
 
 The settings on the **FMLA** tab define how many hours an employee must work in order to be eligible for FMLA benefits, the length of employment that is required for eligibility, and the employment start date that is used to determine the length of employment. The settings also define the number of FMLA hours that employees are entitled to and the FMLA leave calendar that is used to calculate how many FMLA hours employees have used. The **FMLA** tab is available only to companies in the United States. 
 

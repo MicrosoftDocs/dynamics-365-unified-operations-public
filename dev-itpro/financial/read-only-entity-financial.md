@@ -2,13 +2,13 @@
 # required metadata
 
 title: Build a read-only entity that exposes financial dimensions
-description: In this topic, we describe how to build an entity for transactions that are registered in Microsoft Dynamics 365 for Operations. 
+description: In this topic, we describe how to build an entity for registered transactions. 
 author: margoc
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -34,11 +34,12 @@ ms.search.validFrom: 2016-11-30
 "[!include[banner](../includes/banner.md)]"
 
 
-In this topic, we describe how to build an entity for transactions that are registered in Microsoft Dynamics 365 for Operations. 
+In this topic, we describe how to build an entity for registered transactions that are registered. 
 
 > [!NOTE] 
-> This topic comes from Per Baarsoe Jorgensen of the Microsoft Dynamics 365 for Operations Solutions Architecture team. It describes a real-world scenario that we have encountered as we work with customers. 
-magine a scenario where we must expose all vendor invoice line transactions together with the financial dimensions that were applied through the distributions. Because easy consumption by a third-party tool is essential, we will create an entity for this scenario. As a result, the entity should not have to be joined with other related entities but should be able to provide value on its own.
+> This topic comes from Per Baarsoe Jorgensen of the Solutions Architecture team. It describes a real-world scenario that we have encountered as we work with customers. 
+
+Imagine a scenario where we must expose all vendor invoice line transactions together with the financial dimensions that were applied through the distributions. Because easy consumption by a third-party tool is essential, we will create an entity for this scenario. As a result, the entity should not have to be joined with other related entities but should be able to provide value on its own.
 
 We will walk through the process of creating a sample entity to meet these requirements. (We will leave out instructions for integrating with Microsoft Visual Studio Team Services, because those steps are already well documented.)
 
@@ -90,13 +91,13 @@ In the properties, we assign **ReferenceDistribution** a range filter value of *
 ## Expose financial dimensions as fields
 The next important step is to expose the financial dimensions as separate fields on the entity. Because our scenario builds on top of a posted transaction, we must add the fields to the DimensionCombinationentity entity. We want to make the adjustments in a resilient manner by using the extension approach, so that minimal maintenance will be required when we upgrade the code base to newer versions in the future.
 
-### Dynamics 365 for Operations version 1611
+### Microsoft Dynamics 365 for Finance and Operations, Enterprise edition version 1611
 
-For Microsoft Dynamics 365 for Operations version 1611 or later, you should use the wizard that is available in Microsoft Visual Studio (at **Dynamics 365** &gt; **Addins** &gt; **Add financial dimensions for Odata**). For instructions, see [Add dimensions to the Microsoft Excel template](dimensions-overview.md).
+For version 1611 or later, you should use the wizard that is available in Microsoft Visual Studio (at **Dynamics 365** &gt; **Addins** &gt; **Add financial dimensions for Odata**). For instructions, see [Add dimensions to the Microsoft Excel template](dimensions-overview.md).
 
-### Earlier versions of Dynamics 365 for Operations
+### Earlier versions
 
-If you're working with earlier versions of Dynamics 365 for Operations, you must complete the steps that are outlined here. First, we add the entity extension itself. Select **Create extension** on the context menu (shortcut menu). Next, we create the code that retrieves the data. Because the entity extension is already in place, we must create a new class. The following example adds code for an arbitrary dimension that is named **ProductLine**.
+If you're working with earlier versions, you must complete the steps that are outlined here. First, we add the entity extension itself. Select **Create extension** on the context menu (shortcut menu). Next, we create the code that retrieves the data. Because the entity extension is already in place, we must create a new class. The following example adds code for an arbitrary dimension that is named **ProductLine**.
 
   [ExtensionOf(dataentityviewstr(DimensionCombinationentity))]
     public final class DimensionCombinationentity_Extension

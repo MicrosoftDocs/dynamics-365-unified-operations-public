@@ -2,13 +2,13 @@
 # required metadata
 
 title: Accounts payable in the public sector
-description: This article introduces you to the public sector Accounts payable functionality that is integrated with Microsoft Dynamics AX. This functionality includes PO codes, posting definitions, one-time vendor invoicing, 1099 tax forms, cash discounts, vendor certification types, Project Accounting activity summary, electronic payments, cover and signature pages for reports, PO line amounts, and vendor invoice journal pages. 
+description: This article introduces you to the public sector Accounts payable functionality that is integrated with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This functionality includes PO codes, posting definitions, one-time vendor invoicing, 1099 tax forms, cash discounts, vendor certification types, Project Accounting activity summary, electronic payments, cover and signature pages for reports, PO line amounts, and vendor invoice journal pages. 
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article introduces you to the public sector Accounts payable functionality that is integrated with Microsoft Dynamics AX. This functionality includes PO codes, posting definitions, one-time vendor invoicing, 1099 tax forms, cash discounts, vendor certification types, Project Accounting activity summary, electronic payments, cover and signature pages for reports, PO line amounts, and vendor invoice journal pages. 
+This article introduces you to the public sector Accounts payable functionality that is integrated with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This functionality includes PO codes, posting definitions, one-time vendor invoicing, 1099 tax forms, cash discounts, vendor certification types, Project Accounting activity summary, electronic payments, cover and signature pages for reports, PO line amounts, and vendor invoice journal pages. 
 
 What are the prerequisites for setting up Accounts payable in the public sector?
 --------------------------------------------------------------------------------

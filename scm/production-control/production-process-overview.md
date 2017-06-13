@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -41,12 +41,12 @@ The production of products, a process that is also known as the production life 
 
 The **Production control** module is linked to other modules, such as **Product information management**, **Inventory management**, **General ledger**, **Warehouse management**, **Project accounting**, and **Organization administration**. This integration supports the information flow that is required to complete the manufacturing of a finished item.  
 
-The production process is typically influenced by the cost accounting and inventory valuation methods that are chosen for a specific production process. Dynamics 365 for Operations supports both actual cost (first in, first out \[FIFO\]; last in, first out \[LIFO\]; moving average; and periodic weighted average) and standard cost methods. Lean manufacturing is implemented based on the backflush costing principle.  
+The production process is typically influenced by the cost accounting and inventory valuation methods that are chosen for a specific production process. Finance and Operations supports both actual cost (first in, first out \[FIFO\]; last in, first out \[LIFO\]; moving average; and periodic weighted average) and standard cost methods. Lean manufacturing is implemented based on the backflush costing principle.  
 
 The choice of the cost measurment methods also defines the requirements for reporting about material and resource consumption during the production process. Typically, actual cost methods require accurate reporting on the job level, whereas periodic costing methods allow for less granular reporting of material and resource consumption.
 
 ## Mixed mode manufacturing
-Different products and production topologies require the application of different order types. Dynamics 365 for Operations can apply the various order types in a mixed mode. In other words, all order types can occur during the end-to-end process of producing one finished product.
+Different products and production topologies require the application of different order types. Finance and Operations can apply the various order types in a mixed mode. In other words, all order types can occur during the end-to-end process of producing one finished product.
 
 -   **Production order** – This is the classic order type to produce a specific product or product variant in a given quantity on a specific date. Production orders are based on bills of materials (BOMs) and routes.
 -   **Batch order** – This order type is used for process industries and discrete processes where the manufacturing conversion is based on a formula, or where co-products and by-products can be end products, either in addition to or instead of the main product. Batch orders use **Formula** type BOMs and routes.

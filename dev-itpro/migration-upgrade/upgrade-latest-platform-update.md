@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Upgrade Dynamics 365 for Operations to the latest platform update
-description: This topic explains how to upgrade your Microsoft Dynamics 365 for Operations platform version to the latest platform release.
+title: Upgrade Finance and Operations to the latest platform update
+description: This topic explains how to upgrade your Microsoft Dynamics 365 for Finance and Operations platform version to the latest platform release.
 author: tariqbell
 manager: AnnBe
-ms.date: 05/08/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -30,28 +30,28 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Upgrade Dynamics 365 for Operations to the latest platform update
+# Upgrade Finance and Operations to the latest platform update
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic explains how to upgrade your Microsoft Dynamics 365 for Operations platform version to the latest platform release.
+This topic explains how to upgrade your Microsoft Dynamics 365 for Finance and Operations platform version to the latest platform release.
 
 Overview
 --------
 
-The Microsoft Dynamics 365 for Operations platform consists of the following components:
+The Microsoft Dynamics 365 for Finance and Operations platform consists of the following components:
 
--   Dynamics 365 for Operations platform binaries such as Application Object Server (AOS), the data management framework, the reporting and business intelligence (BI) framework, development tools, and analytics services.
+-   Finance and Operations platform binaries such as Application Object Server (AOS), the data management framework, the reporting and business intelligence (BI) framework, development tools, and analytics services.
 -   The following Application Object Tree (AOT) packages:
     -   Application Platform
     -   Application Foundation
     -   Test Essentials
 
-**Important:** To move to the latest Dynamics 365 for Operations platform, your Dynamics 365 for Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in platform update 3, so that seamless continuous updates can be made to the platform. If you are running on an platform that is older than platform update 3, see the **Upgrading to platform update 3 from an earlier build** section at the end of this topic.
+**Important:** To move to the latest Finance and Operations platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in platform update 3, so that seamless continuous updates can be made to the platform. If you are running on an platform that is older than platform update 3, see the **Upgrading to platform update 3 from an earlier build** section at the end of this topic.
 
 ## Overall flow
-The following illustration shows the overall process for upgrading the Dynamics 365 for Operations platform to the latest update.
+The following illustration shows the overall process for upgrading the Finance and Operations platform to the latest update.
 [![Upgrade process for implementations that have no customization of the platform](./media/flownocustomisations.jpg)](./media/flownocustomisations.jpg)
 
 ### Migrate files for Document management
@@ -64,7 +64,7 @@ There are 3 ways to get the latest platform update package.
 - Click the **Binary Updates** tile of your environment's page in LCS (As of platform update 4, binary updates from LCS include an upgrade to the latest platform).
 
 ### Import the platform update package
-Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Dynamics 365 packages are currently prefixed with *Dynamics 365 for Operations Platform Update* (for example, Dynamics 365 for Operations Platform Update 3)*.* Use these steps to import the platform update package:
+Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Dynamics 365 packages are currently prefixed with *Finance and Operations Platform Update* (for example, Finance and Operations Platform Update 3)*.* Use these steps to import the platform update package:
 
 1.  Go to your LCS project's Asset library.
 2.  On the **Software deployable package** tab, click **Import** to create a reference to the platform update package. [![Import button](./media/importupgradepackage.png)](./media/importupgradepackage.png)
@@ -74,7 +74,7 @@ Platform update packages are released by Microsoft and can be imported from the 
 From a process perspective, deploying a platform upgrade package resembles a binary hotfix deployable package.
 
 -   To apply a platform update package to your local development environment or build environment, follow the instructions in this topic.
--   To apply a platform update package to your cloud development, demo, tier-2 sandbox, or production environment, update directly from LCS. Follow the instructions for applying a binary hotfix in [Apply a deployable package on a Microsoft Dynamics 365 for Operations system](..\deployment\apply-deployable-package-system.md).
+-   To apply a platform update package to your cloud development, demo, tier-2 sandbox, or production environment, update directly from LCS. Follow the instructions for applying a binary hotfix in [Apply a deployable package on a Microsoft Dynamics 365 for Finance and Operations system](..\deployment\apply-deployable-package-system.md).
 
 ## Apply the platform update package on your development environment
 ### Delete platform metadata hotfixes from your VSTS project
@@ -150,7 +150,7 @@ If the build machine has been used for one or more builds, you should restore th
 
     if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\DynamicsSDK\PrepareForBuild.ps1 }
 
-**Note:** Run the preceding command only if a complete metadata backup exists. If a complete metadata backup doesn't exist, the command will create a new backup. This command will stop the Dynamics 365 for Operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder. You should see output that resembles the following example. <br><br>*6:17:52 PM: Preparing build environment...* *6:17:53 PM: Updating Dynamics SDK registry key with specified values...* *6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...* *6:17:53 PM: Stopping Dynamics 365 for Operations deployment...* *6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created**.* *6:18:06 PM: **Restoring metadata packages from backup...*** *6:22:56 PM: **Metadata packages successfully restored from backup**.* *6:22:57 PM: Preparing build environment complete.* *6:22:57 PM: Script completed with exit code: 0* <br><br> After the metadata backup has been restored, delete (or rename) the metadata backup folder (DynamicsBackup\\Packages), so that it will no longer be found by the build process.
+**Note:** Run the preceding command only if a complete metadata backup exists. If a complete metadata backup doesn't exist, the command will create a new backup. This command will stop the Finance and Operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder. You should see output that resembles the following example. <br><br>*6:17:52 PM: Preparing build environment...* *6:17:53 PM: Updating Dynamics SDK registry key with specified values...* *6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...* *6:17:53 PM: Stopping Finance and Operations deployment...* *6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created**.* *6:18:06 PM: **Restoring metadata packages from backup...*** *6:22:56 PM: **Metadata packages successfully restored from backup**.* *6:22:57 PM: Preparing build environment complete.* *6:22:57 PM: Script completed with exit code: 0* <br><br> After the metadata backup has been restored, delete (or rename) the metadata backup folder (DynamicsBackup\\Packages), so that it will no longer be found by the build process.
 
 ### Apply the platform update package
 
@@ -160,23 +160,23 @@ After you've prepared your build environment for this update, apply the platform
 When upgrading to platform update 3 from an earlier build, there are some very important considerations because of two key changes in update 3:
 
 - It is no longer possible to overlayer platform models (Application Platform, Application Foundation, Test Essentials).
-- The Directory model is no longer in platform, it has moved to the application in Dynamics 365 for Operations release 1611.
+- The Directory model is no longer in platform, it has moved to the application in Finance and Operations release 1611.
 
 This means two things:
 
-1.  If taking only platform update 3 and not taking the application update (Dynamics 365 for Operations version 1611), then you cannot have overlayering on any of the following models. All overlayering on these models must be removed before attempting to install update 3:
+1.  If taking only platform update 3 and not taking the application update (Finance and Operations version 1611), then you cannot have overlayering on any of the following models. All overlayering on these models must be removed before attempting to install update 3:
     -   Application Platform
     -   Application Foundation
     -   Test Essentials
     -   Directory
 
-2.  If you cannot remove over-layering from the Directory model, and you still want to upgrade, you will have to do a complete upgrade of the platform and the application (Dynamics 365 for Operations version 1611) as described in [Overview of moving to the latest update of Dynamics 365 for Operations](upgrade-latest-update.md).
+2.  If you cannot remove over-layering from the Directory model, and you still want to upgrade, you will have to do a complete upgrade of the platform and the application (Finance and Operations version 1611) as described in [Overview of moving to the latest update of Finance and Operations](upgrade-latest-update.md).
 
 
 See also
 --------
 
-[Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](upgrade-latest-update.md)
+[Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md)
 
 
 

@@ -2,13 +2,13 @@
 # required metadata
 
 title: Data entities - Global address book
-description: This article provides a list of the data entities that are available for the Global address book functionality in Microsoft Dynamics 365 for operations.
+description: This article provides a list of the data entities that are available for Global address book.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for the Global address book functionality in Microsoft Dynamics 365 for operations.
+This article provides a list of the data entities that are available for Global address book.
 
 Available data entities
 -----------------------

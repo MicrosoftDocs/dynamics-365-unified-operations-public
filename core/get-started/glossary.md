@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Operations glossary
-description: The Microsoft Dynamics 365 for Operations glossary defines key terms and concepts in the Dynamics 365 for Operations product. 
+title: Finance and Operations glossary
+description: The Microsoft Dynamics 365 for Finance and Operations glossary defines key terms and concepts in the Finance and Operations product. 
 author: tonyafehr
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Dynamics 365 for Operations glossary
+# Finance and Operations glossary
 
 [!include[banner](../includes/banner.md)]
 
 
-The Microsoft Dynamics 365 for Operations glossary defines key terms and concepts in the Dynamics 365 for Operations product. 
+The Microsoft Dynamics 365 for Finance and Operations glossary defines key terms and concepts in the Finance and Operations product. 
 
 ### **A**
 
@@ -227,7 +227,7 @@ The time taken to complete an activity.
 
 ###### **dashboard**
 
-The typical start page in Dynamics 365 for Operations. On the dashboard, users see a section for each workspace that they have access to. Each section displays the tiles from the summary sections in the related workspace. The dashboard consists of a name and sections with tiles.
+The typical start page in Finance and Operations. On the dashboard, users see a section for each workspace that they have access to. Each section displays the tiles from the summary sections in the related workspace. The dashboard consists of a name and sections with tiles.
 
 ###### **data entity**
 
@@ -511,7 +511,7 @@ The size, color, or configuration product attributes that are used for dimension
 
 ###### **product family**
 
-A unique grouping of items, services, or rights that either participates in the same production or delivery activities or that are offered to the same market segments. In Dynamics 365 for Operations, the grouping is represented by using a forecast allocation key.
+A unique grouping of items, services, or rights that either participates in the same production or delivery activities or that are offered to the same market segments. In Finance and Operations, the grouping is represented by using a forecast allocation key.
 
 ###### **product master**
 
@@ -671,11 +671,11 @@ A controlled, guided experience through the steps in a Task recording. A Task gu
 
 ###### **Task recorder**
 
-A tool that is pre-installed in Dynamics 365 for Operations. When recording, it records all events that the user enters in the Dynamics 365 for Operations user interface that get executed against the server—including values added, settings changed, data removed, etc.
+A tool that is pre-installed in Finance and Operations. When recording, it records all events that the user enters in the Finance and Operations user interface that get executed against the server—including values added, settings changed, data removed, etc.
 
 ###### **Task recording**
 
-A file that contains the actions and annotations that are captured when Task recorder is run in Microsoft Dynamics 365 for Operations.
+A file that contains the actions and annotations that are captured when Task recorder is run in Microsoft Dynamics 365 for Finance and Operations.
 
 ###### **three-way matching policy**
 

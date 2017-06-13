@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 51
-ms.search.scope: AX 2012
+ ms.search.scope: AX 2012, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62673
 ms.assetid: 0845ab95-9597-4813-9967-e4f3815849ba

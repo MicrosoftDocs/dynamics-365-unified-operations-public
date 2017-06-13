@@ -2,13 +2,13 @@
 # required metadata
 
 title: Retail Channel Performance Power BI content
-description: This article provides information about the Microsoft Dynamics 365 for Operations Retail Channel Performance Power BI content. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
+description: This article provides information about the Microsoft Dynamics 365 for Finance and Operations Retail Channel Performance Power BI content. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides information about the Microsoft Dynamics 365 for Operations Retail Channel Performance Power BI content. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
+This article provides information about the Microsoft Dynamics 365 for Finance and Operations Retail Channel Performance Power BI content. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 
-The Microsoft Dynamics 365 for Operations Retail Channel Performance content pack for Microsoft Power BI lets you quickly build your channel performance analytics. The content pack is designed specifically for channel managers who focus on sales performance to predict trends and uncover insights. Its components draw directly from Retail and commerce data in the Microsoft Dynamics 365 for Operations database, and provide drill-down reports about organization-wide sales performance across global geography by employee, category, product, terminal, channel, and more. Power BI automatically creates reports and dashboards that give you a great starting point for exploring and analyzing your Retail and commerce data. This article includes the following information:
+The Microsoft Dynamics 365 for Finance and Operations Retail Channel Performance content pack for Microsoft Power BI lets you quickly build your channel performance analytics. The content pack is designed specifically for channel managers who focus on sales performance to predict trends and uncover insights. Its components draw directly from Retail and commerce data in the Microsoft Dynamics 365 for Finance and Operations database, and provide drill-down reports about organization-wide sales performance across global geography by employee, category, product, terminal, channel, and more. Power BI automatically creates reports and dashboards that give you a great starting point for exploring and analyzing your Retail and commerce data. This article includes the following information:
 
 -   Learn how to connect the Retail Channel Performance content pack in Power BI to a Dynamics AX data source.
 -   View a list of reports that provide insights into retail channel performance.
@@ -49,7 +49,7 @@ The Microsoft Dynamics 365 for Operations Retail Channel Performance content pac
 2.  To sign in, enter a Microsoft Office 365 account that has a Power BI account.
 3.  If your workspace appears, click **Get Data** at the bottom of the left navigation pane.
 4.  In the **Content Pack Library** section, under **Services**, click **Get**.
-5.  Scroll or search to find **Microsoft Dynamics 365 for Operations Retail Channel Performance**, and then click **Get**. ****
+5.  Scroll or search to find **Microsoft Dynamics 365 for Finance and Operations Retail Channel Performance**, and then click **Get**. ****
 6.  Enter your Dynamics AX URL in the following format: https://*tenant*.cloudax.dynamics.com (for example, **https://YourAOSTenant.cloudax.dynamics.com**). Then click **Next** to pull data from Dynamics AX data storage into this Power BI dashboard.
 7.  Select **oAuth2** as the authentication method, and then click **Sign in**.
 8.  To sign in, enter an Office 365 account that has permission to access your Dynamics AX environment.

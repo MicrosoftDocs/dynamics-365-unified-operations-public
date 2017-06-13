@@ -2,13 +2,13 @@
 # required metadata
 
 title: Set up and maintain PRODCOM
-description: This topic explains how to set up and maintain PRODCOM in Microsoft Dynamics 365 for Operations. 
+description: This topic explains how to set up and maintain PRODCOM in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.search.form: IntrastatToProdcom, InventProdComLineDetail, InventProdComLineWi
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264804
-ms.assetid: b9c3b605-13fd-4764-9f7a-8d4a797297e0
 ms.search.region: Belgium
 # ms.search.industry: 
 ms.author: epopov
@@ -35,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic explains how to set up and maintain PRODCOM in Microsoft Dynamics 365 for Operations. 
+This topic explains how to set up and maintain PRODCOM in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 Manufacturers of industrial products are required to report the quantities and values of products sold, as well as employment data, to the Nationaal Instituut voor de Statistiek (NIS) in response to the routine PRODCOM survey. Most producers submit an itemized PRODCOM report to the NIS monthly, using one of six standard report formats. The NIS determines the report layout, depending on the nature of the materials produced. The PRODCOM report displays production statistics for industrial products that are manufactured by production companies operating in Belgium. This report is typically used by accounting managers and accountants.
 

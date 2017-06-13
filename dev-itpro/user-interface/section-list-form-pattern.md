@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -54,7 +54,7 @@ The Form Part Section List form patterns are workspace-specific patterns that ar
 
 [![formPartSectionListDoubleWireframe](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)
 
-## Pattern changes for Dynamics 365 for Operations
+## Pattern changes for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 These patterns did not exist for Microsoft Dynamics AX 2012.
 
 ## Model
@@ -108,7 +108,7 @@ Grid
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
 -   **General form guidelines**
-    -   Standard form guidelines have been consolidated into the Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md)document.
+    -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
 -   **Pattern-specific guidelines**
     -   If a backing form exists, and especially if not all the records are shown in the list, a **See more** button should appear at the bottom of the list, so that the user can see the full list.
     -   Up to two important filters exist above the list.

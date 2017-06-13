@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -659,7 +659,7 @@ The output from the C# program to the command line console is as follows:
 The **container** is a special data type that is available in X++. It can be considered as similar to an array, or similar to a `List` collection.
 
 # Comparison: Collections
-Microsoft Dynamics 365 for Operations provides the X++ `List` collection class. The .NET Framework that is used in C# has a similar class named `System.Collections.Generic.List`.
+Finance and Operations provides the X++ `List` collection class. The .NET Framework that is used in C# has a similar class named `System.Collections.Generic.List`.
 
 ## Comparing the Use of the List Classes
 
@@ -777,7 +777,7 @@ The following table contains code examples that combine the contents of two coll
 
 # Comparison: Collections of keys with values
 
-Microsoft Dynamics 365 for Operations provides the `Map` collection class. The `Map` collection holds pairs of values, the key value plus a data value. This resembles the .NET Framework class named `System.Collections.Generic.Dictionary`.
+Finance and Operations provides the `Map` collection class. The `Map` collection holds pairs of values, the key value plus a data value. This resembles the .NET Framework class named `System.Collections.Generic.Dictionary`.
 
 ## Similarities
 
@@ -1342,7 +1342,7 @@ The output from the previous C\# sample is as follows:
 
 ## Events and the AOT
 
-Microsoft Dynamics 365 for Operations has other event systems that apply only to items in the AOT. For more information, see Event Handler Nodes in the AOT.
+Finance and Operations has other event systems that apply only to items in the AOT. For more information, see Event Handler Nodes in the AOT.
 
 # Comparison: Precompiler Directives
 

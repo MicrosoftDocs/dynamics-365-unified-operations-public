@@ -2,13 +2,13 @@
 # required metadata
 
 title: Set up order processing options
-description: This topic provides information about how to process orders for call centers using Microsoft Dynamics 365 for Operations - Retail. 
+description: This topic provides information about how to process orders for call centers using Microsoft Dynamics 365 Retail. 
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](includes/banner.md)]
 
 
-This topic provides information about how to process orders for call centers using Microsoft Dynamics 365 for Operations - Retail. 
+This topic provides information about how to process orders for call centers using Microsoft Dynamics 365 Retail. 
 
-Retail and commerce in Dynamics 365 for Operations supports multiple retail channels, such as online stores, brick-and-mortar stores, and call centers. In call centers, workers take customer orders over the phone and create sales orders. This topic describes how to create a call center and configure call center options. Each call center can have its own users, payment methods, price groups, financial dimensions, and modes of delivery. You can configure these options when you create the call center. **Important:** Before the call center workflows can be used when the current Dynamics AX user creates sales orders, the user must be assigned to the call center as a call center user. You can use the **Call center** page to enable or disable groups of features that are unique to call centers. The following groups of features can be enabled:
+Retail supports multiple retail channels, such as online stores, brick-and-mortar stores, and call centers. In call centers, workers take customer orders over the phone and create sales orders. This topic describes how to create a call center and configure call center options. Each call center can have its own users, payment methods, price groups, financial dimensions, and modes of delivery. You can configure these options when you create the call center. **Important:** Before the call center workflows can be used when a user creates sales orders, the user must be assigned to the call center as a call center user. You can use the **Call center** page to enable or disable groups of features that are unique to call centers. The following groups of features can be enabled:
 
 -   **Order completion** – This group includes features that are related to payments and order completion on the **Sales order** page.
 -   **Directed selling** – This group includes features that are related to source codes, scripts, and catalog requests.

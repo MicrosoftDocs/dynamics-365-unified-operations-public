@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -186,7 +186,7 @@ data
 ## Class VSItemNode
     class VSItemNode extends TreeNode
 
-The VSItemNode class is a base class for Microsoft Visual Studio project nodes in the Microsoft Dynamics 365 for Operations Application Object Tree (AOT).
+The VSItemNode class is a base class for Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).
 
 ### Remarks
 
@@ -328,7 +328,7 @@ fileName
 ## Class VSProjectFileNode
     class VSProjectFileNode extends VSItemNode
 
-The VSProjectFileNode class represents files in the Microsoft Visual Studio project nodes in the Microsoft Dynamics 365 for Operations Application Object Tree (AOT).
+The VSProjectFileNode class represents files in the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).
 
 ### Remarks
 
@@ -456,7 +456,7 @@ This method is overridden by nodes that have source code.
 ## Class VSProjectFolderNode
     class VSProjectFolderNode extends TreeNode
 
-The VSProjectFolderNode class represents folders in the Microsoft Visual Studio project nodes in the Microsoft Dynamics 365 for Operations Application Object Tree (AOT).
+The VSProjectFolderNode class represents folders in the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).
 
 ### Remarks
 
@@ -639,7 +639,7 @@ fileName
 ## Class VSProjectLinkNode
     class VSProjectLinkNode extends VSItemNode
 
-The VSProjectLinkNode class represents links to other Microsoft Dynamics 365 for Operations Application Object Tree (AOT) nodes in the Microsoft Visual Studio project nodes in the AOT.
+The VSProjectLinkNode class represents links to other Finance and Operations Application Object Tree (AOT) nodes in the Microsoft Visual Studio project nodes in the AOT.
 
 ### Remarks
 
@@ -774,7 +774,7 @@ aotPath
 ## Class VSProjectNode
     class VSProjectNode extends xResourceNode
 
-The VSProjectNode class represents projects in the Microsoft Visual Studio project nodes in the Microsoft Dynamics 365 for Operations Application Object Tree (AOT).
+The VSProjectNode class represents projects in the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).
 
 ### Remarks
 
@@ -941,7 +941,7 @@ The deployTo property value.
 ## Class VSProjectsNode
     class VSProjectsNode extends xResourceNode
 
-The VSProjectNode class is the root of the Microsoft Visual Studio project nodes in the Microsoft Dynamics 365 for Operations Application Object Tree (AOT).
+The VSProjectNode class is the root of the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).
 
 ### Remarks
 
@@ -986,17 +986,17 @@ Creates a new instance of the VSProjectNode class.
 #### Parameters
 
 name  
-A Boolean value that indicates whether the node is created only in memory. In this case, the node will not be persisted in the Microsoft Dynamics 365 for Operations Store.
+A Boolean value that indicates whether the node is created only in memory. In this case, the node will not be persisted in the Finance and Operations Store.
 
 <!-- -->
 
 projectTypesString  
-A Boolean value that indicates whether the node is created only in memory. In this case, the node will not be persisted in the Microsoft Dynamics 365 for Operations Store.
+A Boolean value that indicates whether the node is created only in memory. In this case, the node will not be persisted in the Finance and Operations Store.
 
 <!-- -->
 
 virtualNode  
-A Boolean value that indicates whether the node is created only in memory. In this case, the node will not be persisted in the Microsoft Dynamics 365 for Operations Store.
+A Boolean value that indicates whether the node is created only in memory. In this case, the node will not be persisted in the Finance and Operations Store.
 
 #### Return Value
 

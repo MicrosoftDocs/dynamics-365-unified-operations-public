@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -48,7 +48,7 @@ Microsoft Dynamics AX 2012 offers the following filtering options.
 | Filter by selection (filter by field) | The user selects a field value and uses that value as a filter condition.                                                                                                     |
 | Advanced filter                       | The user opens a dialog box that contains advanced filtering options (filter on columns, not on the form; join additional data sources; sort by multiple columns; and so on). |
 
-Dynamics 365 for Operations offers the following filtering options.
+The following filtering options.
 
 | Filter option         | Description                                                                                                                                |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -58,9 +58,9 @@ Dynamics 365 for Operations offers the following filtering options.
 | Advanced filter/sort  | For most advanced filtering scenarios, the migrated **Advanced filter** form from Dynamics AX 2012 is still available.                     |
 
 ## Filter expressions
-One important difference between filtering in Dynamics 365 for Operations and filtering in Dynamics AX 2012 is related to the way that query symbols are used when filter values are defined (for example, "\*" to match 0 or more characters, or ".." to specify a range of values to match). In Dynamics AX 2012, these symbols are highly visible during the filtering experience. For example, for the filter by grid option, if a user selects the **contains** operator on a field, the system translates that operator by adding wildcard characters (\*) to each end of the current expression. In the current version of Dynamics 365 for Operations, the query symbols are implied by the selected operator and aren't injected into the user interface. This makes filtering more intuitive and simpler for users. For users who want to specify additional filter conditions by using specific query symbols, or users who must enter more complex conditions, the **matches** operator is provided for each data type. For all other operators, the query symbols are interpreted as literals. For example, the filter condition "First name MATCHES A" finds all records where the first name starts with the letter A. However, the filter condition "First Name IS A\*" finds records where the first name is literally equal to "A\*." The following table shows how the client translates between Dynamics 365 for Operations filter operators and Dynamics AX 2012 query syntax.
+One important difference between filtering in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and filtering in Dynamics AX 2012 is related to the way that query symbols are used when filter values are defined (for example, "\*" to match 0 or more characters, or ".." to specify a range of values to match). In Dynamics AX 2012, these symbols are highly visible during the filtering experience. For example, for the filter by grid option, if a user selects the **contains** operator on a field, the system translates that operator by adding wildcard characters (\*) to each end of the current expression. In the current version, the query symbols are implied by the selected operator and aren't injected into the user interface. This makes filtering more intuitive and simpler for users. For users who want to specify additional filter conditions by using specific query symbols, or users who must enter more complex conditions, the **matches** operator is provided for each data type. For all other operators, the query symbols are interpreted as literals. For example, the filter condition "First name MATCHES A" finds all records where the first name starts with the letter A. However, the filter condition "First Name IS A\*" finds records where the first name is literally equal to "A\*." The following table shows how the client translates between Finance and Operations filter operators and Dynamics AX 2012 query syntax.
 
-| Filter operator                      | Dynamics 365 for Operations query syntax |
+| Filter operator                      | Finance and Operations query syntax |
 |--------------------------------------|------------------------------------------|
 | Is “foo” /  Is equal to “foo”        | “foo”                                    |
 | Is not “foo” / Is not equal to “foo” | “!foo”                                   |
@@ -127,7 +127,7 @@ The fields that appear in the **Add a filter field** list are all the filterable
 The Filter Pane is simple and straightforward to use. First, select a filtering operator in the list that is associated with each filter field. Note that the set of operators that appears depends on the data type of the field. Then enter an appropriate value for the filter condition, and click **Apply**. The form is updated based on the filter criteria that you specified.
 
 ## QuickFilter
-In Dynamics AX 2012, the QuickFilter was a framework control that was automatically added only to list pages. In Dynamics 365 for Operations, the QuickFilter is now a modeled control that can be associated with any grid in the system. As the user starts to type, a column selector drop-down appears to guide the user toward the column that the filter will be applied to. The developer can also specify the default column for the QuickFilter. If no column is specified by the developer, the default column is the first field that can be filtered in the grid. [![3\_Filter](./media/3_filter.png)](./media/3_filter.png)
+In Dynamics AX 2012, the QuickFilter was a framework control that was automatically added only to list pages. In Finance and Operations, the QuickFilter is now a modeled control that can be associated with any grid in the system. As the user starts to type, a column selector drop-down appears to guide the user toward the column that the filter will be applied to. The developer can also specify the default column for the QuickFilter. If no column is specified by the developer, the default column is the first field that can be filtered in the grid. [![3\_Filter](./media/3_filter.png)](./media/3_filter.png)
 
 ### Why don't I have a column selector in my QuickFilter?
 
@@ -142,7 +142,7 @@ Yes, you can use the QuickFilter to filter other collection controls, but you mu
 -   Write code in that method to perform the desired filtering.
 
 ## Grid column header filtering/sorting
-In Dynamics 365 for Operations, the grid filtering experience is more closely aligned with the experience in Microsoft Excel. When the user clicks a column header (for columns that can be filtered), a drop dialog appears, and the user can use it to filter the column. The filtering experience here mimics the filtering experience in the Filter Pane. Additionally, there are options to sort the grid based on the column that is currently selected. [![4\_Filter](./media/4_filter.png)](./media/4_filter.png)
+In Finance and Operations, the grid filtering experience is more closely aligned with the experience in Microsoft Excel. When the user clicks a column header (for columns that can be filtered), a drop dialog appears, and the user can use it to filter the column. The filtering experience here mimics the filtering experience in the Filter Pane. Additionally, there are options to sort the grid based on the column that is currently selected. [![4\_Filter](./media/4_filter.png)](./media/4_filter.png)
 
 
 

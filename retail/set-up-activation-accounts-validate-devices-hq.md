@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -42,7 +42,7 @@ Setting up a device activation account for a single worker
 
 This procedure should be completed before you activate Cloud POS.
 
-1.  In Microsoft Dynamics 365 for Operations, from the **Workers** page, open the **Worker details** page for the worker to assign AAD device activation privileges to. Click **Edit**.
+1.  In Microsoft Dynamics 365 for Retail, from the **Workers** page, open the **Worker details** page for the worker to assign AAD device activation privileges to. Click **Edit**.
 2.  On the **Retail** tab, click the **POS permissions** link. Make sure that the worker is in the Manager Permission group, or that **Manage Devices** is set to **Yes** for the worker.
 3.  On the **Retail** tab, under **External identity**, update the values for the following fields:
     -   Alias
@@ -78,7 +78,7 @@ Before handing an activation account to a worker, an IT Pro must run the Validat
 3.  The worker must be mapped to an AAD account (under **External identity**).
 4.  The AAD account to map must belong to the same tenant.
 5.  To map the worker to the AAD account, sign in to HQ by using the Admin account for Microsoft Dynamics Lifecycle Services (LCS).
-6.  Make sure that the worker is set up as a Dynamics 365 for Operations user in the Manager role (checked by validation).
+6.  Make sure that the worker is set up as a Dynamics 365 for Retail user in the Manager role (checked by validation).
 7.  Make sure that the channel is published (checked by validation).
 8.  Make sure that the channel database has the synced data from HQ, and that download jobs are running. To check this, run the following command in the channel database for the store.
 

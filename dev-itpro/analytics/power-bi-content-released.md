@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Power BI content recently released for Dynamics 365 for Operations
-description: This topics lists Power BI content that has recently been released for use with Dynamics 365 for Operations.
+title: Power BI content recently released for Finance and Operations
+description: This topics lists Power BI content that has recently been released for use with Finance and Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 04/21/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -30,21 +30,21 @@ ms.search.validFrom: 2016-11-30
 
 ---
 
-# Power BI content recently released for Dynamics 365 for Operations
+# Power BI content recently released for Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
 "[!include[banner](../includes/banner.md)]"
 
 
-This topics lists Power BI content that has recently been released for use with Dynamics 365 for Operations.
+This topics lists Power BI content that has recently been released for use with Finance and Operations.
 
 Power BI content that was released in February 2017
 ---------------------------------------------------
 
 | Power BI content       | Description                                                                                                                                                                                                                                                                                                                                                                                   | Learn more                                                                                                         |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Warehouse performance  | This Microsoft Power BI content helps warehouse and operations managers monitor key inbound, outbound, and inventory metrics. It uses Warehouse management, product, and other transactional data from Microsoft Dynamics 365 for Operations, and provides both an aggregate view of warehouse performance and a breakdown for vendors, product groups and products, and site and warehouses. | [Warehouse performance Power BI content](warehouse-power-bi-content.md) |
+| Warehouse performance  | This Microsoft Power BI content helps warehouse and operations managers monitor key inbound, outbound, and inventory metrics. It uses Warehouse management, product, and other transactional data from Microsoft Dynamics 365 for Finance and Operations, and provides both an aggregate view of warehouse performance and a breakdown for vendors, product groups and products, and site and warehouses. | [Warehouse performance Power BI content](warehouse-power-bi-content.md) |
 | Production performance | This Power BI content helps production managers monitor the performance of manufacturing operations with respect to timely execution, quality, and cost. It provides both an aggregate view of company-wide production metrics and a breakdown of metrics by product and resource.                                                                                                            |                                                                                                                    |
 
 ## Power BI content that was released in January 2017
@@ -58,7 +58,7 @@ Power BI content that was released in February 2017
 | Power BI content                    | Description                                                                                                                                                                                                                                                                                                                      | Learn more                                                                                                                                                          |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Financial performance               | This Power BI content provides reports about the actual and budget balance from General ledger. Various key performance indicators (KPIs) are also included, such as the Quick Ratio and Current Ratio.                                                                                                                          | [Financial performance Power BI content](financial-performance-power-bi-content-pack.md)                                      |
-| Sales and profitability performance | This Power BI content helps sales managers monitor the key sales metrics of revenue, gross profit, and profit margins. It uses sales transactional data from Dynamics 365 for Operations, and provides both an aggregate view of the company-wide sales figures and a breakdown of sales performance for customers and products. | [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md) |
+| Sales and profitability performance | This Power BI content helps sales managers monitor the key sales metrics of revenue, gross profit, and profit margins. It uses sales transactional data from Finance and Operations, and provides both an aggregate view of the company-wide sales figures and a breakdown of sales performance for customers and products. | [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md) |
 
 ## Power BI content that was released in November 2016
 | Power BI content                              | Description                                                                                                                                                                  | Learn more                                                                                                                                                                   |

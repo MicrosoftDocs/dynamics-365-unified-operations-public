@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,7 +57,7 @@ To guarantee that discounts and prices are calculated correctly, be careful when
 
 ### Types of discounts in trade agreements
 
-Trade agreements in Microsoft Dynamics 365 for Operations can have four types of price discounts. These discounts can be set up for different items, customers, or price groups, and they can be limited by date. To avoid miscalculations, you must consider trade agreements when you run price simulations. Here are the four types of discounts in trade agreements:
+Trade agreements in Microsoft Dynamics 365 for Finance and Operations can have four types of price discounts. These discounts can be set up for different items, customers, or price groups, and they can be limited by date. To avoid miscalculations, you must consider trade agreements when you run price simulations. Here are the four types of discounts in trade agreements:
 
 -   **Sales price** – Separate sales prices can be specified for items. When quotation lines are created, the program searches for the correct sales price for an item and transfers it to the quotation lines. Therefore, a trade agreement that has this kind of discount doesn't affect the price simulation. The sales price that is used in the quotation line reflects the trade agreement.
 -   **Line discount** – Special discounts are specified for items, depending on the quantity that is ordered. Line amounts are typically reduced by the line discount before a price simulation is run. Therefore, a trade agreement that has this kind of discount affects the price simulation.

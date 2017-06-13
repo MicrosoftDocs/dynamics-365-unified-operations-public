@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -87,7 +87,7 @@ Fields ($Field) \[1..N\]
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
 
 -   **Standard form guidelines:**
-    -   Standard form guidelines have been consolidated into the Microsoft Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md)document.
+    -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
 -   **Fields and Field Groups guidelines:**
     -   The fields in groups should flow across the entire page. [![FieldsFieldGroups(2)](./media/fieldsfieldgroups2.png)](./media/fieldsfieldgroups2.png)
     -   When possible, remove unnecessary field group labels.

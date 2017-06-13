@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.search.form: Intrastat
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 28581
-ms.assetid: 7d53a168-1827-48b8-99f8-b1e77efd3dff
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 # ms.search.industry: 
 ms.author: epopov
@@ -44,7 +43,7 @@ The following sections describe the overall flow of information that is used fo
 
 ### 1. Enter a transaction that crosses the border of another EU country/region
 
-A customer invoice, free text invoice, purchase invoice, project invoice, customer packing slip, vendor product receipt, or transfer order is transferred to the Intrastat journal only if the country/region type of the destination (on dispatches) or consignment (on arrivals) is **EU**. This feature was extended for Microsoft Dynamics 365 for Operations version 1611 and allows you to specify lading addresses for an intra-community transaction. If a lading address differs with a vendor business address (or customer business address for return order) the Intrastat reporting will operate with this information. When you create a sales order, free text invoice, purchase order, vendor invoice, project invoice, or transfer order, some fields that are related to foreign trade have default values in the document header or on the line. The default transaction code is taken from the corresponding field on the **Foreign trade parameters** page. The default commodity code, country/region of origin, and state/province of origin are taken from the item. You can change the default values and can also fill in other foreign trade–related information: the statistics procedure, transport method, and port.
+A customer invoice, free text invoice, purchase invoice, project invoice, customer packing slip, vendor product receipt, or transfer order is transferred to the Intrastat journal only if the country/region type of the destination (on dispatches) or consignment (on arrivals) is **EU**. This feature was extended for Microsoft Dynamics 365 for Operations (1611) and allows you to specify lading addresses for an intra-community transaction. If a lading address differs with a vendor business address (or customer business address for return order) the Intrastat reporting will operate with this information. When you create a sales order, free text invoice, purchase order, vendor invoice, project invoice, or transfer order, some fields that are related to foreign trade have default values in the document header or on the line. The default transaction code is taken from the corresponding field on the **Foreign trade parameters** page. The default commodity code, country/region of origin, and state/province of origin are taken from the item. You can change the default values and can also fill in other foreign trade–related information: the statistics procedure, transport method, and port.
 
 ### 2. Use the Intrastat journal to generate information about trade among EU countries/regions
 

@@ -2,13 +2,13 @@
 # required metadata
 
 title: Operator precedence
-description: This article describes operator precedence in Microsoft Dynamics 365 for Operations.
+description: This article describes operator precedence in Microsoft Dynamics 365 for Finance and Operations.
 author: pvillads
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes operator precedence in Microsoft Dynamics 365 for Operations.
+This article describes operator precedence in Microsoft Dynamics 365 for Finance and Operations.
 
 The order in which a compound expression is evaluated is important. For example, (x + y / 100) gives a different result depending on whether the addition or the division is performed first. You can use parentheses ( ) to explicitly tell the X++ compiler how you want an expression to be evaluated. For example, (x + y)/ 100. If you do not explicitly tell the compiler the order that you want operations to be performed in, the order is based on the precedence assigned to the operators. For example, the division operator has a higher precedence than the addition operator. For x + y / 100, the compiler would evaluate y/100 first. So, x + y / 100 is equivalent to x + (y / 100). To make your code easy to read and maintain, be explicit. Indicate with parentheses which operators should be evaluated first.
 

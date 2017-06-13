@@ -2,13 +2,13 @@
 # required metadata
 
 title: Security architecture
-description: This article provides an overview of the security architecture of Microsoft Dynamics 365 for Operations.
+description: This article provides an overview of the security architecture of Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,25 +35,25 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides an overview of the security architecture of Microsoft Dynamics 365 for Operations.
+This article provides an overview of the security architecture of Microsoft Dynamics 365 for Finance and Operations.
 
-When you understand the security architecture of Microsoft Dynamics 365 for Operations, you can more easily customize security to fit the requirements of your business. The following diagram provides a high-level overview of the security architecture of Dynamics 365 for Operations. 
+When you understand the security architecture of Microsoft Dynamics 365 for Finance and Operations, you can more easily customize security to fit the requirements of your business. The following diagram provides a high-level overview of the security architecture of Finance and Operations. 
 
 [![security-architecture](./media/security-architecture.png)](./media/security-architecture.png)
 
 ## Authentication
-By default, only authenticated users who have user rights in Dynamics 365 for Operations can establish a connection. 
+By default, only authenticated users who have user rights in Finance and Operations can establish a connection. 
 
-Dynamics 365 for Operations uses Microsoft Azure Active Directory (AAD) as a primary identity provider. To access the system, users must be provisioned into a Dynamics 365 for Operations instance and should have a valid AAD account in an authorized tenant.
+Finance and Operations uses Microsoft Azure Active Directory (AAD) as a primary identity provider. To access the system, users must be provisioned into a Finance and Operations instance and should have a valid AAD account in an authorized tenant.
 
 ## Authorization
-Authorization is the control of access to the Dynamics 365 for Operations program. Security permissions are used to control access to individual elements of the program: menus, menu items, action and command buttons, reports, service operations, web URL menu items, web controls, and fields in the Dynamics 365 for Operations client. 
+Authorization is the control of access to the Finance and Operations program. Security permissions are used to control access to individual elements of the program: menus, menu items, action and command buttons, reports, service operations, web URL menu items, web controls, and fields in the Finance and Operations client. 
 
-In Dynamics 365 for Operations, individual security permissions are combined into privileges, and privileges are combined into duties. The administrator grants security roles access to the program by assigning duties and privileges to those roles. 
+In Finance and Operations, individual security permissions are combined into privileges, and privileges are combined into duties. The administrator grants security roles access to the program by assigning duties and privileges to those roles. 
 
-Dynamics 365 for Operations uses context-based security to determine access to securable objects. When a privilege is associated with an entry point (such as a menu item or a service operation), a level of access, such as **Read** or **Delete**, is specified. The Dynamics 365 for Operations authorization subsystem detects the access at run time, when that entry point is accessed, and applies the specified level of access to the securable object that the entry point leads to. This functionality helps guarantee that there is no over-permissioning, and the developer gets the access that he or she intended. 
+Finance and Operations uses context-based security to determine access to securable objects. When a privilege is associated with an entry point (such as a menu item or a service operation), a level of access, such as **Read** or **Delete**, is specified. The Finance and Operations authorization subsystem detects the access at run time, when that entry point is accessed, and applies the specified level of access to the securable object that the entry point leads to. This functionality helps guarantee that there is no over-permissioning, and the developer gets the access that he or she intended. 
 
-For more information about role-based security in Dynamics 365 for Operations, see [Role-based security](role-based-security.md).
+For more information about role-based security in Finance and Operations, see [Role-based security](role-based-security.md).
 
 ## Data security
 Authorization is used to grant access to elements of the program. By contrast, data security is used to deny access to tables, fields, and rows in the database. 

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -769,7 +769,7 @@ buildMode
 | public FormControl controlNum(int controlNo)                                                                        |                                                                                                                                                      |
 | public str dataRelationPath(\[str value\])                                                                          | Gets or sets the period-delimited list of relations that links the field binding of the DataField object to a relative table.                        |
 | public int dataSource(\[AnyType value\])                                                                            | Gets or sets a data source that will be used by the control or the form.                                                                             |
-| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the client, or in Enterprise Portal for Microsoft Dynamics 365 for Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the client, or in Enterprise Portal for Finance and Operations, or in both. |
 | public int dragDrop(\[int value\])                                                                                  | Determines whether to enable or disable drag-and-drop operations for the control.                                                                    |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                                   | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                       |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                                       | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                     |
@@ -802,7 +802,7 @@ buildMode
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                         | Is called when the user moves the mouse pointer over the control.                                                                                    |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                           | Is called when the user releases the mouse button over the control area.                                                                             |
 | public int moveControl(int controlId, \[int insertAfterId\])                                                        |                                                                                                                                                      |
-| public str name(\[str value\])                                                                                      | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.        |
+| public str name(\[str value\])                                                                                      | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.        |
 | public int neededPermission(\[int value\])                                                                          |                                                                                                                                                      |
 | public container SysObsoleteAttribute()                                                                             |                                                                                                                                                      |
 | public FormControl parentControl()                                                                                  | Retrieves the parent control for the control.                                                                                                        |
@@ -1341,7 +1341,7 @@ The identifier of the data source that will be used.
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the client, or in Enterprise Portal for Microsoft Dynamics 365 for Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, or in Enterprise Portal for Finance and Operations, or in both.
 
     public int displayTarget([int value])
 
@@ -1971,7 +1971,7 @@ insertAfterId
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -2938,7 +2938,7 @@ Shows the shortcut menu for the control.
 | public FieldId countryRegionContextField(\[FieldId value\])                                                         |                                                                                                                                                      |
 | public str dataRelationPath(\[str value\])                                                                          | Gets or sets the period-delimited list of relations that links the field binding of the DataField object to a relative table.                        |
 | public int dataSource(\[AnyType value\])                                                                            | Gets or sets a data source to be used by the control or the form.                                                                                    |
-| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal for Microsoft Dynamics 365 for Operations, or in both.    |
+| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal for Finance and Operations, or in both.    |
 | public int dragDrop(\[int value\])                                                                                  | Determines whether to enable or disable drag-and-drop operations for the control.                                                                    |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                                   | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                       |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                                       | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                     |
@@ -2974,7 +2974,7 @@ Shows the shortcut menu for the control.
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                         | Is called when the user moves the mouse pointer over the control.                                                                                    |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                           | Is called when the user releases the mouse button over the control area.                                                                             |
 | public int moveControl(int controlId, \[int insertAfterId\])                                                        |                                                                                                                                                      |
-| public str name(\[str value\])                                                                                      | Gets or sets the name used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.                    |
+| public str name(\[str value\])                                                                                      | Gets or sets the name used in code to identify a form, report, table, query, or another Finance and Operations application object.                    |
 | public int neededPermission(\[int value\])                                                                          |                                                                                                                                                      |
 | public str normalImage(\[str value\])                                                                               |                                                                                                                                                      |
 | public int normalResource(\[int value\])                                                                            |                                                                                                                                                      |
@@ -3537,7 +3537,7 @@ The identifier of the data source to be used.
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal for Microsoft Dynamics 365 for Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal for Finance and Operations, or in both.
 
     public int displayTarget([int value])
 
@@ -4193,7 +4193,7 @@ insertAfterId
 
 ### Method name
 
-Gets or sets the name used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -5124,7 +5124,7 @@ filterStr
 | public str custom(\[str value\])                                                                            |                                                                                                                                                      |
 | public str dataRelationPath(\[str value\])                                                                  | Gets or sets the period-delimited list of relations that links the field binding of the DataField object to a relative table.                        |
 | public AnyType dispatch(VarArg )                                                                            |                                                                                                                                                      |
-| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the client, or in Enterprise Portal for Microsoft Dynamics 365 for Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the client, or in Enterprise Portal for Finance and Operations, or in both. |
 | public int dragDrop(\[int value\])                                                                          | Determines whether to enable or disable drag-and-drop operations for the control.                                                                    |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                           | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                       |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                               | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                     |
@@ -5154,7 +5154,7 @@ filterStr
 | public int mouseDown(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user clicks the mouse button over the control.                                                                                    |
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user moves the mouse pointer over the control.                                                                                    |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                   | Is called when the user releases the mouse button over the control area.                                                                             |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.              |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.              |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                                      |
 | public container SysObsoleteAttribute()                                                                     |                                                                                                                                                      |
 | public FormControl parentControl()                                                                          | Retrieves the parent control for the control.                                                                                                        |
@@ -5436,7 +5436,7 @@ This method is used by the reference group control to track exactly which relati
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the client, or in Enterprise Portal for Microsoft Dynamics 365 for Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, or in Enterprise Portal for Finance and Operations, or in both.
 
     public int displayTarget([int value])
 
@@ -6020,7 +6020,7 @@ Typically, when this method is overridden, the return value from a call to super
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 
@@ -6832,7 +6832,7 @@ Indicates that the control has lost focus.
 | public List configurationKeyEx()                                                                            | Retrieves a list that contains the IDs of configuration keys that are in effect for the control.                                                     |
 | public str countryRegionCodes(\[str value\])                                                                | Gets or sets the comma-separated list of country/region codes for the control.                                                                       |
 | public str dataRelationPath(\[str value\])                                                                  | Gets or sets the period-delimited list of relations that links the field binding of the DataField object to a relative table.                        |
-| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the client, or in Enterprise Portal for Microsoft Dynamics 365 for Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the client, or in Enterprise Portal for Finance and Operations, or in both. |
 | public int dragDrop(\[int value\])                                                                          | Determines whether to enable or disable drag-and-drop operations for the control.                                                                    |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                           | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                       |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                               | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                     |
@@ -6861,7 +6861,7 @@ Indicates that the control has lost focus.
 | public int mouseDown(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user clicks the mouse button over the control.                                                                                    |
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user moves the mouse pointer over the control.                                                                                    |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                   | Is called when the user releases the mouse button over the control area.                                                                             |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.              |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.              |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                                      |
 | public container SysObsoleteAttribute()                                                                     |                                                                                                                                                      |
 | public FormControl parentControl()                                                                          | Retrieves the parent control for the control.                                                                                                        |
@@ -7156,7 +7156,7 @@ This method is used by the reference group control to track exactly which relati
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the client, or in Enterprise Portal for Microsoft Dynamics 365 for Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, or in Enterprise Portal for Finance and Operations, or in both.
 
     public int displayTarget([int value])
 
@@ -7738,7 +7738,7 @@ Typically, when this method is overridden, the return value from a call to super
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 
@@ -8742,7 +8742,7 @@ Initializes a new instance of the FormAutoLookupFactory class.
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                               |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                               |
 | public int moveControl(int controlId, \[int insertAfterControlId\])                                         | Moves a control that is specified by ID to the control.                                                                                       |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                               |
 | public int position(\[int value\])                                                                          |                                                                                                                                               |
 | public int rightMargin(\[int value\], \[AutoMode mode\])                                                    |                                                                                                                                               |
@@ -9319,7 +9319,7 @@ In general, if the specified control can be contained in the control and can be 
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -9733,7 +9733,7 @@ overrideObject
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                               |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                               |
 | public int moveControl(int controlId, \[int insertAfterControlId\])                                         | Moves a control that is specified by ID to the control.                                                                                       |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                               |
 | public str normalImage(\[str value\])                                                                       |                                                                                                                                               |
 | public int normalResource(\[int value\])                                                                    |                                                                                                                                               |
@@ -10350,7 +10350,7 @@ In general, if the specified control can be contained in the control and can be 
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -10746,7 +10746,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int left(int value, \[int mode\])                                                                    |                                                                                                                                         |
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                         |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public boolean rTLCapable(\[boolean value\])                                                                |                                                                                                                                         |
 | public SecurityKeyId securityKey(\[SecurityKeyId value\])                                                   |                                                                                                                                         |
@@ -11103,7 +11103,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 
@@ -11419,7 +11419,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                         |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                         |
 | public int loops(\[int value\])                                                                             |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public SecurityKeyId securityKey(\[SecurityKeyId value\])                                                   |                                                                                                                                         |
 | public boolean skip(\[boolean value\])                                                                      | Sets or returns a value that indicates whether the control is skipped when the user presses the TAB key to move to the control.         |
@@ -11808,7 +11808,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 

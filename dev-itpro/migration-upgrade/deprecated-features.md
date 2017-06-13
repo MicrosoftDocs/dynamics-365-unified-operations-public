@@ -2,13 +2,13 @@
 # required metadata
 
 title: Deprecated features
-description: This topic describes features that have been removed, or are planned for removal, from Dynamics 365 for Operations. It also lists features that were deprecated in Dynamics AX 7.0 releases.
+description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 04/18/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -34,8 +34,40 @@ ms.dyn365.ops.version: Platform update 6
 
 [!include[banner](../includes/banner.md)]
 
+This topic describes features that have been removed, or that are planned for removal.
 
-This topic describes features that have been removed, or are planned for removal, from Dynamics 365 for Operations. It also lists features that were deprecated in Dynamics AX 7.0 releases.
+## Features that have been deprecated in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+
+### Warehouse mobile devices portal
+
+Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment. This component is no longer supported in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. A native app that improves the user experience has replaced the functionality of WMDP. 
+
+|                                  |                                                 |
+|----------------------------------|-------------------------------------------------|
+| **Reason for deprecation**       | Duplicate functionality.                        |
+| **Replaced by another feature?** | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Modules affected**             | Warehouse management, Transportation management |
+
+### Advanced bank reconciliation matching rule for manual matching
+
+A matching rule was used to select and mark a bank document when documents were manually matched in the reconciliation worksheet.
+
+|                                  |                                                                                        |
+|----------------------------------|----------------------------------------------------------------------------------------|
+| **Reason for deprecation**       | Limited usage.                                                                         |
+| **Replaced by another feature?** | No. Column filtering capabilities should be used to find documents for reconciliation. |
+| **Modules affected**             | Cash and bank management                                                               |
+
+### Windows 8 tablet app
+
+The Windows 8 tablet app provided functionality for expense entry and approval.
+
+|                                  |                                                                                          |
+|----------------------------------|------------------------------------------------------------------------------------------|
+| **Reason for deprecation**       | Finance and Operations is compatible with tablets. The tablet app is no longer required. |
+| **Replaced by another feature?** | No.                                                                                      |
+| **Modules affected**             | Expense management                                                                       |
+
 
 Features that have been deprecated in Dynamics 365 for Operations 1611 with platform update 3
 ---------------------------------------------------------------------------------------------
@@ -306,7 +338,7 @@ A workflow for managing the creation of employee goals is one of several workflo
 
 |                              |                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Performance management has been completely redesigned in Microsoft Dynamics 365 for Operations.                                                                                                                                                                                                                                        |
+| Reason for deprecation       | Performance management has been completely redesigned in Microsoft Dynamics 365 for Finance and Operations.                                                                                                                                                                                                                                        |
 | Replaced by another feature? | The redesigned Performance management feature gives more control over the content of the goals, the measurements that are used to track progress, and the attachment of supporting documentation. Goals can be stored as templates and then reused. This feature can help you set up additional goals for your employees more quickly. |
 | Modules affected             | Human capital management                                                                                                                                                                                                                                                                                                               |
 
@@ -489,7 +521,7 @@ In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel 
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| Reason for deprecation       | Direct database connectivity required lower security protocols and was primarily used to achieve the highest levels of performance. Due to the performance and security enhancements that have occurred in Dynamics 365 for Operations, this functionality now causes more issues than it solves. |
+| Reason for deprecation       | Direct database connectivity required lower security protocols and was primarily used to achieve the highest levels of performance. Due to the performance and security enhancements that have occurred in Finance and Operations, this functionality now causes more issues than it solves. |
 | Replaced by another feature? | No. Only standard Retail Server communication is now supported.    |
 | Modules affected             | Channel DB/Retail Modern POS                                    |
 
@@ -813,8 +845,3 @@ Human Resources Payroll information
 | Reason for deprecation       | This functionality has been replaced by another feature.                                    |
 | Replaced by another feature? | Management Reporter (labeled **Financial reporting** in the current version of Dynamics AX) |
 | Modules affected             | General ledger                                                                              |
-
-
-
-
-

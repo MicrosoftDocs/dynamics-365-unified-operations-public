@@ -2,13 +2,13 @@
 # required metadata
 
 title: Compensation and Benefits Power BI content
-description: This topic describes the Dynamics 365 for Operations - Compensation and Benefits Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
+description: This topic describes the Finance and Operations - Compensation and Benefits Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,15 +35,15 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the Dynamics 365 for Operations - Compensation and Benefits Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
+This topic describes the Finance and Operations - Compensation and Benefits Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
 
 Accessing the content pack
 --------------------------
 
-You can find the Compensation and Benefits content pack in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your Microsoft Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
+You can find the Compensation and Benefits content pack in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your Microsoft Dynamics 365 for Finance and Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 
 ## Reports that are included in the content pack
-After you’ve connected the content pack to your Dynamics 365 for Operations data, the reports show your organization’s data. If you’ve never used Microsoft Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). The reports that are included in the content pack have both charts and tables that contain additional information. The following table describes the reports.
+After you’ve connected the content pack to your Finance and Operations data, the reports show your organization’s data. If you’ve never used Microsoft Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). The reports that are included in the content pack have both charts and tables that contain additional information. The following table describes the reports.
 
 | Report                     | Contents                                                                                                                              |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
@@ -53,7 +53,7 @@ After you’ve connected the content pack to your Dynamics 365 for Operations da
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
-Dynamics 365 for Operations data is used to populate the reports in the Compensation and Benefits content pack. The following table shows the entities that the content pack was based on.
+Finance and Operations data is used to populate the reports in the Compensation and Benefits content pack. The following table shows the entities that the content pack was based on.
 
 | Entity                            | Contents                                                                                                   | Relationships with other entities                                                                                                                                                                                                                                                                                                |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

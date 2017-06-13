@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,8 +50,8 @@ Here are some of the parameters that can be set on the **Retail parameters** pag
 
 -   **Default deposit percentage** – Specify the amount that the customer must pay as a deposit before an order can be confirmed. The default deposit amount is calculated as a percentage of the order value. Depending on privileges, a store associate might be able to override the amount by using **Deposit override**.
 -   **Cancellation charge percentage** – If a charge will be applied when a customer order is canceled, specify the amount of that charge.
--   **Cancellation charge code** – If a charge will be applied when a customer order is canceled, that charge will be reflected under a charge code on the sales order in Microsoft Dynamics AX. Use this parameter to define the cancellation charge code.
--   **Shipping charge code** – Retailers can charge an extra fee for shipping merchandise to a customer. The amount of that shipping charge will be reflected under a charge code on the sales order in Dynamics AX. Use this parameter to map the shipping charge code to shipping charges on the customer order.
+-   **Cancellation charge code** – If a charge will be applied when a customer order is canceled, that charge will be reflected under a charge code on the sales order. Use this parameter to define the cancellation charge code.
+-   **Shipping charge code** – Retailers can charge an extra fee for shipping merchandise to a customer. The amount of that shipping charge will be reflected under a charge code on the sales order. Use this parameter to map the shipping charge code to shipping charges on the customer order.
 -   **Refund shipping charges** – Specify whether shipping charges that are associated with a customer order are refundable.
 -   **Maximum amount without approval** – If shipping charges are refundable, specify the maximum amount of shipping charge refunds across return orders. If this amount is exceeded, manager override is required in order to continue with the refund. To accommodate the following scenarios, a refund of shipping charges can exceed the amount that was originally paid:
     -   Charges are applied at the level of the sales order header, and when some quantity of a product line is returned, the maximum refund of shipping charges that is allowed for the products and the quantity can't be determined in way that works for all retail customers.
@@ -94,10 +94,10 @@ Customer orders can be created from the point of sale (POS) client in either syn
 
 ### Enable customer orders to be created in asynchronous mode
 
-1.  In Dynamics AX, click **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profile** &gt; **Functionality profiles**.
+1.  Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profile** &gt; **Functionality profiles**.
 2.  On the **General** FastTab, set the **Create customer order in async mode** option to **Yes**.
 
-When the **Create customer order in async mode** option is set to **Yes**, customer orders are always created in asynchronous mode, even if Retail Transaction Service (RTS) is available. If you set this option to **No**, customer orders are always created in synchronous mode by using RTS. When customer orders are created in asynchronous mode, they are pulled and inserted into Dynamics AX by Pull (P) jobs. The corresponding sales orders are created in Dynamics AX when **Synchronize orders** is run either manually or through a batch process.
+When the **Create customer order in async mode** option is set to **Yes**, customer orders are always created in asynchronous mode, even if Retail Transaction Service (RTS) is available. If you set this option to **No**, customer orders are always created in synchronous mode by using RTS. When customer orders are created in asynchronous mode, they are pulled and inserted into Retail by Pull (P) jobs. The corresponding sales orders are created in Retail when **Synchronize orders** is run either manually or through a batch process.
 
 See also
 --------

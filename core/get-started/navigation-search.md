@@ -2,13 +2,13 @@
 # required metadata
 
 title: Navigation search
-description: This topic explains how to use the search functionality to navigate to pages in Microsoft Dynamics 365 for Operations.
+description: This topic explains how to use the search functionality to navigate to pages in Microsoft Dynamics 365 for Finance and Operations.
 author: aneesmsft
 manager: AnnBe
 ms.date: 04/27/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic explains how to use the search functionality to navigate to pages in Microsoft Dynamics 365 for Operations.
+This topic explains how to use the search functionality to navigate to pages in Microsoft Dynamics 365 for Finance and Operations.
 
-Dynamics 365 for Operations provides functionality for a wide array of industries and verticals. The application includes a number of areas and pages to help you perform various tasks. To quickly find the pages that you need to complete your tasks, use the navigation search feature. 
+Finance and Operations provides functionality for a wide array of industries and verticals. The application includes a number of areas and pages to help you perform various tasks. To quickly find the pages that you need to complete your tasks, use the navigation search feature. 
 
 To use this feature, click the **Search** icon to display the **Search** box. You can then type one or more words in the box. The system instantly searches for relevant pages in the application that match the words that you entered. For example, you could type “vendor invoice” as the input, and then the system displays results that match that input. 
 

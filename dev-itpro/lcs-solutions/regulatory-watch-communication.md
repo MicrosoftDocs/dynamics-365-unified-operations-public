@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -48,7 +48,7 @@ Follow these steps to set up the project.
 1.  Add a new project by clicking the plus sign (**+**).
 2.  Enter a name that uses the following project naming convention: **REG-Alerts-Country/region name**
 3.  Enter a project description.
-4.  For the product name, specify the latest version of Microsoft Dynamics 365 for Operations.
+4.  For the product name, specify the latest version of Microsoft Dynamics 365 for Finance and Operations.
 5.  For the product version, specify the latest version.
 6.  Specify the industry:
     -   Select **Other** if the solution is related to all industries.
@@ -58,7 +58,7 @@ Follow these steps to set up the project.
 8.  Click **Create**.
 
 ## Invite participants to the project
-Invite participants that should have access to the project, so that they can submit and review regulatory alerts. For information about how to invite users, see [Configure lifecycle services security](/dynamics365/operations/dev-itpro/lifecycle-services/configure-lcs-security).
+Invite participants that should have access to the project, so that they can submit and review regulatory alerts. For information about how to invite users, see [Configure lifecycle services security](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-lcs-security).
 
 ## Access the regulatory alert submission service
 1.  In your LCS project, scroll to the right side of the page, and then, under **More tools**, click **Localization and translation**.
@@ -143,7 +143,7 @@ The following table describes the processing options that are available for aler
 > Submitted alerts can be rejected for various reasons. Here are some examples:
 >    -   The alert is too vague to identify the underlying localization feature.
 >    -   The alert is related to an area where no features are localized.
->    -   The alert is related to an area that isn't currently supported by Dynamics 365 for Operations functionality.
+>    -   The alert is related to an area that isn't currently supported by Finance and Operations functionality.
 
 > Alerts can be stored in LCS as references.
 

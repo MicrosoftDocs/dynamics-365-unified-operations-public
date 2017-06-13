@@ -2,13 +2,13 @@
 # required metadata
 
 title: General journal processing
-description: This articles describes capabilities in Microsoft Dynamics 365 for Operations that can help make general journal processing easier, and that can also help guarantee that correct data is captured and internal control isn't compromised.  
+description: This articles describes capabilities in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition that can help make general journal processing easier, and that can also help guarantee that correct data is captured and internal control isn't compromised.  
 author: twheeloc
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +17,7 @@ ms.search.form: LedgerJournalSetup, LedgerJournalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 15721
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This articles describes capabilities in Microsoft Dynamics 365 for Operations that can help make general journal processing easier, and that can also help guarantee that correct data is captured and internal control isn't compromised.  
+This articles describes capabilities in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition that can help make general journal processing easier, and that can also help guarantee that correct data is captured and internal control isn't compromised.  
 
 Journal names
 

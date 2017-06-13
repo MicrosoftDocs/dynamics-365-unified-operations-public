@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Mobile platform for Dynamics 365 for Operations
-description: Microsoft Dynamics 365 for Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product. 
+title: Mobile platform for Finance and Operations
+description: Microsoft Dynamics 365 for Finance and Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product. 
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Mobile platform for Dynamics 365 for Operations
+# Mobile platform for Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product. 
+Microsoft Dynamics 365 for Finance and Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product. 
 
 In addition to this topic, there is a video series on create a mobile app:
 
@@ -59,7 +59,7 @@ We have created new, purpose-built forms in the **Fleet Management** module. The
 
 1.  [Download the file that contains the Fleet Management project](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp file).
 2.  Extract the contents of the zip file to a temporary location on the development computer.
-3.  Import the project (.axpp) file by using Microsoft Visual Studio (click **Dynamics 365 for Operations** &gt; **Import Project**).
+3.  Import the project (.axpp) file by using Microsoft Visual Studio (click **Finance and Operations** &gt; **Import Project**).
 4.  After you've imported the project file, build the project or module.
 
 ### Get the sample workspace
@@ -67,9 +67,9 @@ We have created new, purpose-built forms in the **Fleet Management** module. The
 We provide a sample workspace for Reservation management. This workspace is based on the **Fleet Management** module.
 
 1.  [Download the file that contains the sample workspace](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.xml file).
-2.  Sign in to your non-production client. (You must sign in as a Microsoft Dynamics 365 for Operations administrator.)
+2.  Sign in to your non-production client. (You must sign in as a Microsoft Dynamics 365 for Finance and Operations administrator.)
 3.  In the address bar, add **&mode=mobile** to the end of the URL, and then press Enter.
-4.  In the client, go to **Settings** &gt; **Mobile app**. The mobile app designer will appear docked next to the Dynamics 365 for Operations client.
+4.  In the client, go to **Settings** &gt; **Mobile app**. The mobile app designer will appear docked next to the Finance and Operations client.
 5.  Click the **Overflow** button (**…**), and then click **Import**.
 6.  Click the **Browse** button that appears at the bottom of the page.
 7.  In the file selection dialog box that appears, select one of the XML files that you previously extracted from the zip file.
@@ -78,33 +78,33 @@ We provide a sample workspace for Reservation management. This workspace is base
 
 ### Get the mobile app
 
-The mobile app is being made available for the most popular mobile operating systems. You must have a Dynamics 365 for Operations instance and valid user credentials in order to log in to the app.
+The mobile app is being made available for the most popular mobile operating systems. You must have a Finance and Operations instance and valid user credentials in order to log in to the app.
 
--   Android (available now) - [Dynamics 365 for Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   iPhone (available now) - [Dynamics 365 for Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+-   Android (available now) - [Finance and Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
+-   iPhone (available now) - [Finance and Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
 
 ## Understanding navigation in the mobile app
 Navigation in the mobile app consists of four simple concepts: the dashboard, workspaces, pages, and actions. 
 
 [![Navigation concepts in the mobile app](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
--   When you start the app, you land on the **dashboard**. On the **dashboard**, you can see a list of **workspaces** that are published in your Dynamics 365 for Operations environment.
+-   When you start the app, you land on the **dashboard**. On the **dashboard**, you can see a list of **workspaces** that are published in your Finance and Operations environment.
 -   In each **workspace**, you can see a list of **pages** that are available for that workspace.
--   On a **page**, you can view data that is collected from one or more Dynamics 365 for Operations forms.
+-   On a **page**, you can view data that is collected from one or more Finance and Operations forms.
 -   From a **page**, you can navigate to other **pages** for related data, such as an entity details or lines.
 -   On a **page**, you can see a list of **actions** that are available for that page.
 -   **Actions** let you create or edit existing data.
 
 ### Notes
 
-At any time, you can pull-to-refresh in the mobile app to make the mobile app update its data or metadata. After you edit an existing workspace or publish a workspace, be sure to pull-to-refresh in the mobile app, in either the list of workspaces (if you added a workspace or business logic) or the list of pages (if you modified a page or an action). Workspaces that have been published to Dynamics 365 for Operations are visible to all users. In Microsoft Dynamics 365 for Operations platform update 3, menu item security automatically hides pages that the user doesn’t have access to. If a user doesn’t have access to any pages in a workspace, the workspace itself is hidden.
+At any time, you can pull-to-refresh in the mobile app to make the mobile app update its data or metadata. After you edit an existing workspace or publish a workspace, be sure to pull-to-refresh in the mobile app, in either the list of workspaces (if you added a workspace or business logic) or the list of pages (if you modified a page or an action). Workspaces that have been published to Finance and Operations are visible to all users. In Microsoft Dynamics 365 for Finance and Operations platform update 3, menu item security automatically hides pages that the user doesn’t have access to. If a user doesn’t have access to any pages in a workspace, the workspace itself is hidden.
 
 ## Using the mobile app designer
 The mobile app designer lets you select the specific data fields from forms that should appear in the mobile app. 
 
 [![Mobile app designer](./media/mobileappdesigner-1024x468.png)](./media/mobileappdesigner.png)
 
-1.  Open the Dynamics 365 for Operations client. Include the **&mode=mobile** parameter in the URL to enable the designer.
+1.  Open the Finance and Operations client. Include the **&mode=mobile** parameter in the URL to enable the designer.
 2.  Go to **Settings** &gt; **Mobile app**.
 3.  Create a new workspace, or select an existing workspace to edit.
 4.  Specify the name of the workspace, an icon, and a color.
@@ -126,7 +126,7 @@ The mobile app designer lets you select the specific data fields from forms that
 | All other changes (new or changed pages or actions, or changes to business logic)         | Pull-to-refresh from the workspace that has the edited pages or actions.<br>[![Pull-to-refresh from a workspace](./media/refreshpages-187x300.png)](./media/refreshpages.png)                                             |
 
 ## Design considerations for the mobile app platform
-The mobile app platform doesn't assume connectivity to Dynamics 365 for Operations. Activities such as navigation, data view, and data entry don't require server connectivity after data has been cached.
+The mobile app platform doesn't assume connectivity to Finance and Operations. Activities such as navigation, data view, and data entry don't require server connectivity after data has been cached.
 
 ## Architecture
 The mobile app communicates with Application Object Server (AOS) to get the metadata for the mobile workspaces (and the pages and the fields that appear on the page), and to get the data for the fields on the pages. Each time that the mobile app requests data for a page, AOS creates a new session that uses the context of the user who is using the mobile app. AOS then uses the user's context to open the corresponding forms (by using the corresponding menu items). AOS can open multiple forms in quick succession and perform actions on those forms (for example, filtering, opening FactBoxes, changing tab pages, and clicking buttons). Any business logic on the forms is also run as usual. Through that process, AOS collects the data values from the requested fields and then sends that data back to the mobile app. 
@@ -138,7 +138,7 @@ Before you begin to use the designer to build pages and actions, it’s importan
 
 ### How do I create a list view for an entity in the mobile app?
 
-1.  Identify or create a form in Dynamics 365 for Operations that contains a grid for the entity.
+1.  Identify or create a form in Finance and Operations that contains a grid for the entity.
 2.  Make sure that the grid is bound to the table that represents the entity.
 3.  Make sure that the form has a menu item that is root-navigable.
 4.  Make sure that the form can be opened directly via a URL that includes the menu item parameter.
@@ -153,7 +153,7 @@ If you want just a details view for an entity, it's likely that the entity is a 
 
 ### How do I create a details view for an entity in the mobile app?
 
-1.  Identify or create a form in Dynamics 365 for Operations that contains the details view for this entity.
+1.  Identify or create a form in Finance and Operations that contains the details view for this entity.
 2.  Make sure that the Master Root Data Source on the form is bound to the table that represents the entity.
 3.  Make sure that the form has a menu item that is root-navigable.
 4.  Make sure that the form can be opened directly via a URL that includes the menu item parameter.
@@ -187,14 +187,14 @@ If you want just a details view for an entity, it's likely that the entity is a 
 
 ###### How do I make the list show up in-line in the details view?
 
-1.  Identify or create a form in Dynamics 365 for Operations that contains the details view for the entity, and make sure that the form adheres to the guidelines in the "How do I create a details view for an entity in the mobile app" section.
+1.  Identify or create a form in Finance and Operations that contains the details view for the entity, and make sure that the form adheres to the guidelines in the "How do I create a details view for an entity in the mobile app" section.
 2.  Make sure that the form contains a grid that is bound to the table that represents the related entity.
 3.  Make sure that the table for the related entity is *active joined* to the table for the entity that contains the reference.
 4.  Create a details view page that contains the desired fields for the entity, and that also contains a list that has the desired fields from the related entity.
 
 ###### How do I make the list accessible from a link in the details view (instead of in-line)?
 
-1.  Identify or create a form in Dynamics 365 for Operations that contains the details view for the entity, and make sure that the form adheres to the guidelines in the "How do I create a details view for an entity in the mobile app" section.
+1.  Identify or create a form in Finance and Operations that contains the details view for the entity, and make sure that the form adheres to the guidelines in the "How do I create a details view for an entity in the mobile app" section.
 2.  Make sure that the form contains a grid that is bound to the table that represents the related entity.
 3.  Make sure that the table for the related entity is *active joined* to the table for the entity that contains the reference.
 4.  Use the form to create a details view page that contains the desired fields for the entity.
@@ -267,7 +267,7 @@ Actions let users create, update, or delete data, and also run business processe
 
 ### How do I design an action that enables a field value to be set via a rich lookup?
 
-Lookups for fields in the mobile app don't have a correlation to the advanced lookup behaviors in Dynamics 365 for Operations. Regardless of whether you have a custom lookup in Dynamics 365 for Operations or an automatic lookup that uses a simple query, the mobile app doesn't run existing lookup code when it must determine which UI to show the user. (Remember that the user might be offline while he or she is using the app, and server-side code isn’t run until the action is synchronized.) However, lookup/control overrides such as *modified* are run when the value is set by the mobile back end as it synchronizes the data from the action. When the mobile app detects that a field on an action was selected from a lookup field on a form, it shows a device-native combo box/list picker control, and populates the items by directly querying the backing table of that lookup field. The items in the list show the user data from the TitleField for records in that table. Follow these steps to add the rich lookup experience to your action. This lookup experience includes a full-page multi-column lookup selector that has offline search.
+Lookups for fields in the mobile app don't have a correlation to the advanced lookup behaviors in Finance and Operations. Regardless of whether you have a custom lookup in Finance and Operations or an automatic lookup that uses a simple query, the mobile app doesn't run existing lookup code when it must determine which UI to show the user. (Remember that the user might be offline while he or she is using the app, and server-side code isn’t run until the action is synchronized.) However, lookup/control overrides such as *modified* are run when the value is set by the mobile back end as it synchronizes the data from the action. When the mobile app detects that a field on an action was selected from a lookup field on a form, it shows a device-native combo box/list picker control, and populates the items by directly querying the backing table of that lookup field. The items in the list show the user data from the TitleField for records in that table. Follow these steps to add the rich lookup experience to your action. This lookup experience includes a full-page multi-column lookup selector that has offline search.
 
 1.  Identify or create a list view page for the entity behind the lookup. You can reuse existing list view pages that you've already created.
 2.  After you've finished designing the action, select the field to add rich lookup functionality to, and then click **Properties**.
@@ -277,7 +277,7 @@ Lookups for fields in the mobile app don't have a correlation to the advanced lo
 
 4.  Save and publish your changes to the action.
 
-If you don't see the property for the existing list view page or can't access the **Control properties** dialog box when you're designing your action, you might be using an older build of Dynamics 365 for Operations. In this case, you can still add rich lookup functionality by using a business logic file.
+If you don't see the property for the existing list view page or can't access the **Control properties** dialog box when you're designing your action, you might be using an older build of Finance and Operations. In this case, you can still add rich lookup functionality by using a business logic file.
 
     function main(metadataService, dataService, cacheService, $q) { 
         return { 
@@ -317,7 +317,7 @@ To prevent an action from appearing in the list of actions for any page, call th
     }
 
 ## Form design requirements
-This section provides valuable guidelines for building Dynamics 365 for Operations forms that work well with the mobile app.
+This section provides valuable guidelines for building Finance and Operations forms that work well with the mobile app.
 
 -   Each form must have an associated Display Menu Item.
     -   The Display Menu Item's **Allow Root Navigation** property must be set to **Yes**. This setting enables the mobile framework to open the form that is referenced by the menu item.
@@ -333,7 +333,7 @@ This section provides valuable guidelines for building Dynamics 365 for Operatio
         [![Show filters button](./media/filterpane.png)](./media/filterpane.png) 
         
         Then click **Add a filter field**, and verify that the Master Root Data Source appears as the table for fields in the list of available fields. Other tables can also appear, but the Master Root Data Source **must** appear in this list. Otherwise, the mobile app won't enable searches and navigation that uses context.
-    -   Searching: The mobile app does online searches against Dynamics 365 for Operations data by using the Filters framework behind the scenes.
+    -   Searching: The mobile app does online searches against Finance and Operations data by using the Filters framework behind the scenes.
     -   Navigation that uses context: The mobile app enables list-to-details navigation (and other context-aware navigation) by first opening the target form via the menu item and then using the Filters framework to show only the specified record context.
     -   List-to-details navigation: The table that the grid is bound to on form A (the list form) must be the Master Root Data Source on the details form (form B). When a user selects a record in the list on form A, the mobile framework navigates with record context by applying filters on form B that uniquely identify the record.
 
@@ -343,14 +343,14 @@ This section provides valuable guidelines for building Dynamics 365 for Operatio
 
 You can use display methods to show data on pages (both list type pages and detail type pages). However, there are two key points to remember when you use display methods:
 
--   **Searching** – When a user performs an “online” search (that is, a search that is run against data in Dynamics 365 for Operations instead of locally cached data), the search won't match against display methods, because the Filtering framework in Dynamics 365 for Operations doesn't support searches against data methods. However, when a user does a search against locally cached data, the search will match against display methods, provided that the records have been cached on the device.
--   **Offline** – If a user creates or updates data while his or her device isn’t connected to the Dynamics 365 for Operations server, temporary records are created in the local cache. Because these temporary records haven't yet been processed in Dynamics 365 for Operations, if the records have any fields that are automatically populated or defaults by server-side business logic, these fields will remain empty until the records have been synced with Dynamics 365 for Operations. Display methods fall into this category of fields that will be empty for a temporary record.
+-   **Searching** – When a user performs an “online” search (that is, a search that is run against data in Finance and Operations instead of locally cached data), the search won't match against display methods, because the Filtering framework in Finance and Operations doesn't support searches against data methods. However, when a user does a search against locally cached data, the search will match against display methods, provided that the records have been cached on the device.
+-   **Offline** – If a user creates or updates data while his or her device isn’t connected to the Finance and Operations server, temporary records are created in the local cache. Because these temporary records haven't yet been processed in Finance and Operations, if the records have any fields that are automatically populated or defaults by server-side business logic, these fields will remain empty until the records have been synced with Finance and Operations. Display methods fall into this category of fields that will be empty for a temporary record.
 
 #### Designing for offline
 
-Unlike the Dynamics 365 for Operations web client, which is highly connected to the Dynamics 365 for Operations server and maintains an open user session that has open forms on the server, the mobile app creates user sessions (and opens forms) only in short bursts while the app is being synced with the server (via data read for pages, or via data write/update for actions). If there are no actions to sync with the server, and if the local data cache is up to date, the mobile app won't communicate with the Dynamics 365 for Operations server as a user navigates around the app (unless the user triggers an explicit pull-to-refresh). It's important that you keep this data flow pattern in mind while you design pages and actions in the mobile app. You should not expect Dynamics 365 for Operations form logic to run every time that a page is loaded or an action is started. You should also never expect form logic to run while a user is completing an action. Form logic is run only when the action is being synced with the Dynamics 365 for Operations server. The following list describes the only times when you should expect Form logic to run. **Dynamics 365 for Operations form logic runs right before a page is opened on the mobile app for the first time.**
+Unlike the Finance and Operations web client, which is highly connected to the Finance and Operations server and maintains an open user session that has open forms on the server, the mobile app creates user sessions (and opens forms) only in short bursts while the app is being synced with the server (via data read for pages, or via data write/update for actions). If there are no actions to sync with the server, and if the local data cache is up to date, the mobile app won't communicate with the Finance and Operations server as a user navigates around the app (unless the user triggers an explicit pull-to-refresh). It's important that you keep this data flow pattern in mind while you design pages and actions in the mobile app. You should not expect Finance and Operations form logic to run every time that a page is loaded or an action is started. You should also never expect form logic to run while a user is completing an action. Form logic is run only when the action is being synced with the Finance and Operations server. The following list describes the only times when you should expect Form logic to run. **Finance and Operations form logic runs right before a page is opened on the mobile app for the first time.**
 
-1.  When a user first opens a page, the mobile app reaches out to Dynamics 365 for Operations and opens the associated forms. *During this process, logic such as form init and data source init is all run in the usual manner.*
+1.  When a user first opens a page, the mobile app reaches out to Finance and Operations and opens the associated forms. *During this process, logic such as form init and data source init is all run in the usual manner.*
 2.  The mobile app framework reads the required data directly from the controls on the forms and sends the data back to the mobile app.
 3.  The mobile app caches the data and shows it in the page on the mobile app.
 4.  Future attempts to open the page will load the cached data. *These attempts won't run the form logic again, unless the user explicitly refreshes the page or the cache expires. (Currently, the cache set to expire after 30 minutes.)*
@@ -359,8 +359,8 @@ Unlike the Dynamics 365 for Operations web client, which is highly connected to 
 
 1.  When a user opens an action and fills in the data in that action, *no form logic is run*. A user can complete an action while he or she is either offline or online. The system behaves the same way in both cases.
 2.  After the user clicks **Done**/**Save** on the action, the mobile app queues a data synchronization operation. This operation will be synced with the server when the mobile app is connected to the Internet.
-3.  When an Internet connection is detected (which can happen immediately after the action is completed) the mobile app sends the data synchronization operation to the Dynamics 365 for Operations server for processing.
-4.  While the operation is processed on the server, the framework opens the associated forms and enters the data from the action by passing values into the form controls. *During this process, Dynamics 365 for Operations form logic is run in the usual manner (init, modified, clicked, and so on, are all run).* However, the mobile user might have moved to a different part of the app while this processing is occurring. *Any form logic that shows/hides controls will have no effect on the UI that is seen in the mobile app.* Therefore, to minimize synchronization times, it's best not to include any UI logic on the form.
+3.  When an Internet connection is detected (which can happen immediately after the action is completed) the mobile app sends the data synchronization operation to the Finance and Operations server for processing.
+4.  While the operation is processed on the server, the framework opens the associated forms and enters the data from the action by passing values into the form controls. *During this process, Finance and Operations form logic is run in the usual manner (init, modified, clicked, and so on, are all run).* However, the mobile user might have moved to a different part of the app while this processing is occurring. *Any form logic that shows/hides controls will have no effect on the UI that is seen in the mobile app.* Therefore, to minimize synchronization times, it's best not to include any UI logic on the form.
 
 #### Building mobile versions of existing forms
 
@@ -372,8 +372,8 @@ If you decide to modify existing forms so that they work with the mobile framewo
 
     SysTaskRecorderController::isExecutingApp()
 
-#### Dynamics 365 for Operations form control support
+#### Finance and Operations form control support
 
-The Dynamics 365 for Operations form controls for the various base data types (strings, dates, and numbers) and grids are supported. However, a few common controls have limited support. **Reference groups** Fields from within Reference groups controls are compatible when you design pages. However, they aren't compatible when you design Actions. Although you might be able to select these fields without experience any issue, Reference groups have a fundamental incompatibility with the mobile framework. We recommend that you not use Reference groups. Instead, add a control directly to the form, and then bind the control directly to the surrogate foreign key (SFK) by using the property sheet.
+The Finance and Operations form controls for the various base data types (strings, dates, and numbers) and grids are supported. However, a few common controls have limited support. **Reference groups** Fields from within Reference groups controls are compatible when you design pages. However, they aren't compatible when you design Actions. Although you might be able to select these fields without experience any issue, Reference groups have a fundamental incompatibility with the mobile framework. We recommend that you not use Reference groups. Instead, add a control directly to the form, and then bind the control directly to the surrogate foreign key (SFK) by using the property sheet.
 
 

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -92,7 +92,7 @@ Class FormBuildFilterPaneControl
 | public int leftMarginValue(\[int value\])                                                                   |                                                                                                                                           |
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                           |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                           |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                           |
 | public int rightMargin(\[int value\], \[AutoMode mode\])                                                    |                                                                                                                                           |
 | public AutoMode rightMarginMode(\[AutoMode mode\])                                                          |                                                                                                                                           |
@@ -664,7 +664,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -1056,7 +1056,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                                                      |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                                                    |                                                                                                                                           |
 | public int multiSelect(\[int value\])                                                                       |                                                                                                                                           |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                           |
 | public int needsRecord(\[int value\])                                                                       |                                                                                                                                           |
 | public str normalImage(\[str value\])                                                                       |                                                                                                                                           |
@@ -1859,7 +1859,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -2336,7 +2336,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int moreRowsIndicator(\[int value\])                                                                 |                                                                                                                                         |
 | public int moveControl(int controlId, \[int insertAfterControlId\])                                         | Moves a specified control to the control.                                                                                               |
 | public boolean multiSelect(\[boolean value\])                                                               |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public int rightMargin(\[int value\])                                                                       |                                                                                                                                         |
 | public int scrollbars(\[int value\])                                                                        |                                                                                                                                         |
@@ -2975,7 +2975,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 
@@ -3456,7 +3456,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                         |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                         |
 | public int moveControl(int controlId, \[int insertAfterControlId\])                                         | Moves a specified control to the control.                                                                                               |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public int optionValue(\[int value\])                                                                       |                                                                                                                                         |
 | public int rightMargin(\[int value\], \[AutoMode mode\])                                                    |                                                                                                                                         |
@@ -4362,7 +4362,7 @@ In general, if the specified control can be contained in the control and can be 
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 
@@ -4844,7 +4844,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int limitTextValue(\[int value\])                                                                    |                                                                                                                                         |
 | public int lookupButton(\[int value\])                                                                      |                                                                                                                                         |
 | public boolean mandatory(\[boolean value\])                                                                 |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public int promptrect(\[int value\])                                                                        |                                                                                                                                         |
 | public boolean replaceOnLookup(\[boolean value\])                                                           |                                                                                                                                         |
@@ -5833,7 +5833,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 
@@ -6232,7 +6232,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int left(int value, \[int mode\])                                                                    |                                                                                                                                         |
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                         |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public boolean rTLCapable(\[boolean value\])                                                                |                                                                                                                                         |
 | public SecurityKeyId securityKey(\[SecurityKeyId value\])                                                   |                                                                                                                                         |
@@ -6589,7 +6589,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 
@@ -6953,7 +6953,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int limitTextValue(\[int value\])                                                                    |                                                                                                                                         |
 | public int lookupButton(\[int value\])                                                                      |                                                                                                                                         |
 | public boolean mandatory(\[boolean value\])                                                                 |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public int promptrect(\[int value\])                                                                        |                                                                                                                                         |
 | public boolean replaceOnLookup(\[boolean value\])                                                           |                                                                                                                                         |
@@ -7989,7 +7989,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 
@@ -8456,7 +8456,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int left(int value, \[int mode\])                                                                    |                                                                                                                                         |
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                         |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public int promptrect(\[int value\])                                                                        |                                                                                                                                         |
 | public SecurityKeyId securityKey(\[SecurityKeyId value\])                                                   |                                                                                                                                         |
@@ -9354,7 +9354,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 
@@ -9740,7 +9740,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int left(int value, \[int mode\])                                                                    |                                                                                                                                         |
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                         |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public boolean oneClickActivate(\[boolean value\])                                                          |                                                                                                                                         |
 | public boolean rowSelect(\[boolean value\])                                                                 |                                                                                                                                         |
@@ -10407,7 +10407,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 
@@ -10801,7 +10801,7 @@ overrideObject
 | public int left(int value, \[int mode\])                                                                    |                                                                                                                                               |
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                               |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                               |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                               |
 | public boolean rTLCapable(\[boolean value\])                                                                |                                                                                                                                               |
 | public SecurityKeyId securityKey(\[SecurityKeyId value\])                                                   |                                                                                                                                               |
@@ -11146,7 +11146,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -11497,7 +11497,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                               |
 | public int moveControl(int controlId, \[int insertAfterControlId\])                                         | Moves a specified control to the control.                                                                                                     |
 | public int multiSelect(\[int value\])                                                                       |                                                                                                                                               |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                               |
 | public int needsRecord(\[int value\])                                                                       |                                                                                                                                               |
 | public str normalImage(\[str value\])                                                                       |                                                                                                                                               |
@@ -12274,7 +12274,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -12700,7 +12700,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | Method                         | Description                                                                                                                             |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | public int id()                |                                                                                                                                         |
-| public str name(\[str value\]) | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\]) | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
 | public void finalize()         |                                                                                                                                         |
 
 ### Method id
@@ -12711,7 +12711,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 
@@ -12774,7 +12774,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int left(int value, \[int mode\])                                                                    |                                                                                                                                         |
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                         |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public int pos(\[int value\])                                                                               |                                                                                                                                         |
 | public int progressType(\[int value\])                                                                      |                                                                                                                                         |
@@ -13112,7 +13112,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 
@@ -13506,7 +13506,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int leftMarginValue(\[int value\])                                                                   |                                                                                                                                         |
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                         |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public int rightMargin(\[int value\], \[AutoMode mode\])                                                    |                                                                                                                                         |
 | public AutoMode rightMarginMode(\[AutoMode mode\])                                                          |                                                                                                                                         |
@@ -14308,7 +14308,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 
@@ -14781,7 +14781,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int minNoOfDecimals(\[int value\], \[AutoMode mode\])                                                |                                                                                                                                         |
 | public AutoMode minNoOfDecimalsMode(\[AutoMode mode\])                                                      |                                                                                                                                         |
 | public int minNoOfDecimalsValue(\[int value\])                                                              |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public int noOfDecimals(\[int value\], \[AutoMode mode\])                                                   |                                                                                                                                         |
 | public AutoMode noOfDecimalsMode(\[AutoMode mode\])                                                         |                                                                                                                                         |
@@ -15885,7 +15885,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
 
     public str name([str value])
 

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -585,7 +585,7 @@ The TextIo class provides functionality for reading and writing text files.
 
 ### Remarks
 
-TextIO replaces AsciiIO to provide support for non-ANSI code page file I/O. The TextIO constructor has an additional optional parameter to set the code page of the file. The TextIO.new method has an optional argument that specifies the code page of the file. The default value is UTF-16LE (the Microsoft Windows native Unicode representation). It is best to use this in most instances, especially if end-users might edit the file in a text editor outside Microsoft Dynamics 365 for Operations. For more information, see TextIo.new. When files are read, TextIO examines the first few bytes of the file for a byte-order mark (BOM) and automatically handles UTF-8, UTF-16LE, and UTF-16BE. If no BOM is found, the file is assumed to be in the ANSI Code Page (ACP) format.
+TextIO replaces AsciiIO to provide support for non-ANSI code page file I/O. The TextIO constructor has an additional optional parameter to set the code page of the file. The TextIO.new method has an optional argument that specifies the code page of the file. The default value is UTF-16LE (the Microsoft Windows native Unicode representation). It is best to use this in most instances, especially if end-users might edit the file in a text editor outside Finance and Operations. For more information, see TextIo.new. When files are read, TextIO examines the first few bytes of the file for a byte-order mark (BOM) and automatically handles UTF-8, UTF-16LE, and UTF-16BE. If no BOM is found, the file is assumed to be in the ANSI Code Page (ACP) format.
 
 ### Examples
 
@@ -1578,7 +1578,7 @@ A string containing the properties of the tree node.
 
 #### Examples
 
-The following example provides a list of temporary tables in Microsoft Dynamics 365 for Operations.
+The following example provides a list of temporary tables in Finance and Operations.
 
     { 
         #aot 

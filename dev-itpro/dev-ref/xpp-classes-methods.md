@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -718,7 +718,7 @@ The following example shows the syntax for using several special variables that 
     }
 
 ## Running startup commands
-You use the **SysStartupCmd** class framework to run commands at startup. When Microsoft Dynamics 365 for Operations starts, calls are made to the **startup** methods on the application-substituted kernel classes **Application** (**Application.startup**) and **Info** (**Info.startup**). The **startup** methods are used for vital system and version-specific calls, and you must never directly modify these methods. Instead, use the **SysStartupCmd** framework. Serious issues can occur if the SYS layer versions of the **startup** methods aren't called. The following example shows the order that calls are run in when Dynamics 365 for Operations starts.
+You use the **SysStartupCmd** class framework to run commands at startup. When Finance and Operations starts, calls are made to the **startup** methods on the application-substituted kernel classes **Application** (**Application.startup**) and **Info** (**Info.startup**). The **startup** methods are used for vital system and version-specific calls, and you must never directly modify these methods. Instead, use the **SysStartupCmd** framework. Serious issues can occur if the SYS layer versions of the **startup** methods aren't called. The following example shows the order that calls are run in when Finance and Operations starts.
 
     appl.startup() // The SysStartupCmd class is instantiated here.
     sysStartupCmd.applInit()
@@ -729,15 +729,15 @@ You use the **SysStartupCmd** class framework to run commands at startup. When M
     super()
     sysStartupCmd.infoRun()
 
-### Commands that are available when Dynamics 365 for Operations starts
+### Commands that are available when Finance and Operations starts
 
-The **SysStartupCmd.construct** method lists the commands that are available when Dynamics 365 for Operations starts. Here are some of these commands:
+The **SysStartupCmd.construct** method lists the commands that are available when Finance and Operations starts. Here are some of these commands:
 
 -   AutoRun
 -   AOTImport
 -   Synchronize
 
-The following example shows how to run a new command when Dynamics 365 for Operations starts. First, a class that extends **SysStartupCmd** is created. This new class performs your specific task. You then modify the construct method on **SysStartupCmd** to call your class. In the Dynamics 365 for Operations Configuration Utility, on the **General** tab, in the **Command to run at application startup** field, you can add commands that are run at startup. Alternatively, you can use the **-startupcmd= *MyCommand*** command-line parameter.
+The following example shows how to run a new command when Finance and Operations starts. First, a class that extends **SysStartupCmd** is created. This new class performs your specific task. You then modify the construct method on **SysStartupCmd** to call your class. In the Finance and Operations Configuration Utility, on the **General** tab, in the **Command to run at application startup** field, you can add commands that are run at startup. Alternatively, you can use the **-startupcmd= *MyCommand*** command-line parameter.
 
     public class SysStartupCmdAutoRun : extends SysStartupCmd 
     {
@@ -816,7 +816,7 @@ When you implement a class by using the batch processing system, you can remove 
 Two system classes let you to manipulate graphics and icons: **Image** and **Imagelist**.
 
 -   **Image** – This class lets you load, save, and manipulate individual images. For example, you can capture a screen and save it as an image, crop or rotate an image, or manipulate the color depth.
--   **Imagelist** – This class lets you work with a set of images that have common properties, such as the size and transparency color. You can view the image lists that are used in Dynamics 365 for Operations in the **ImageListAppl\_\*** application classes.
+-   **Imagelist** – This class lets you work with a set of images that have common properties, such as the size and transparency color. You can view the image lists that are used in Finance and Operations in the **ImageListAppl\_\*** application classes.
 
 ## Query object model
 The query object model contains classes that are used to define and run a query. The query objects are used to define the query data source, the fields that are returned, record ranges, and relations to child data sources. The query classes are more visible when you create a dynamic query in code, but they are also used behind the scenes when you create a static query in Application Explorer. The following table describes the classes in the query object model.

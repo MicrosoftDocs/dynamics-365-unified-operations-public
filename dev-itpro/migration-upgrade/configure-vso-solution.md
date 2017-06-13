@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -45,7 +45,7 @@ The LCS code upgrade service automatically checks your upgraded code into Visua
 
 ## Key concepts
 -   **Export** is the project that contains the XML files after exporting from Microsoft Dynamics AX 2012. This is your metadata in XML format before it is upgraded. This is only relevant if you are upgrading from Dynamics AX 2012.
--   **Metadata** is your upgraded code (metadata XML file) on the latest version of Microsoft Dynamics 365 for Operations.
+-   **Metadata** is your upgraded code (metadata XML file) on the latest version of Microsoft Dynamics 365 for Finance and Operations.
 -   **Projects** are two solutions that you can use during upgrade. One solution, CodeMergeSolution, is the solution that contains projects with the elements that have conflicts and need to be resolved. The other solution, UpgradedSolution, contains a collection of projects, one for each upgraded model. For example, in VSTS, you should see something like the following structure. [![Project](./media/filestructure_configuringyourvsosolution.png)](./media/filestructure_configuringyourvsosolution.png)
 
 ## Map VSTS to your development box
@@ -59,9 +59,9 @@ The LCS code upgrade service automatically checks your upgraded code into Visua
         -   On earlier versions, this folder is C:\\packages
         -   **Important**:
             -   If you are migrating from Dynamics AX 2012 R3 or earlier, you will be mapping to the metadata folder under the **Main** branch.
-            -   If you are migrating between 2 versions of the new Dynamics AX (Dynamics 365 for Operations), you will be mapping to the metadata folder under one of the **Releases** branch.
+            -   If you are migrating between 2 versions of the new Dynamics AX (Finance and Operations), you will be mapping to the metadata folder under one of the **Releases** branch.
 
-[![vstsmapping](./media/vstsmapping.png)](./media/vstsmapping.png) Once you have mapped these folders, you can synchronize the code to your local box. Right-click on Metadata and select **Get latest**. Similarly synchronize the Projects folder. After synchronizing the metadata folder, refresh your models in Visual Studio from **Dynamics 365 for Operations** &gt; **Model Management** &gt; **Refresh Models**. [![VSRefreshModels](./media/vsrefreshmodels.png)](./media/vsrefreshmodels.png) You are now ready to open your projects, resolve conflicts, build, test and complete your code migration.
+[![vstsmapping](./media/vstsmapping.png)](./media/vstsmapping.png) Once you have mapped these folders, you can synchronize the code to your local box. Right-click on Metadata and select **Get latest**. Similarly synchronize the Projects folder. After synchronizing the metadata folder, refresh your models in Visual Studio from **Finance and Operations** &gt; **Model Management** &gt; **Refresh Models**. [![VSRefreshModels](./media/vsrefreshmodels.png)](./media/vsrefreshmodels.png) You are now ready to open your projects, resolve conflicts, build, test and complete your code migration.
 
 
 

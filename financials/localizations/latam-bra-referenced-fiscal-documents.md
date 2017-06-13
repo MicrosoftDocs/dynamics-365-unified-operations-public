@@ -3,12 +3,12 @@
 
 title: Referenced fiscal documents for Brazil
 description: This topic provides an overview of referenced fiscal documents that are used in Brazil.
-author: ShylaThompson
+author: sndray
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,11 @@ ms.search.form: FiscalDocument_BR, SalesEditLines, TmpFiscalReference_BR
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 270224
-ms.assetid: 4ffb4fd8-2eb0-430e-b601-013a31c0d188
+
 ms.search.region: Brazil
 # ms.search.industry: 
 ms.author: sndray
@@ -44,7 +44,7 @@ In some scenarios, a fiscal document must include another fiscal document's info
 
 ### Examples
 
--   If you try to reference a fiscal document that isn't in Microsoft Dynamics 365 for Operations, all the fiscal document information must be entered.
+-   If you try to reference a fiscal document that isn't in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, all the fiscal document information must be entered.
 -   When you return an item to a vendor or receive a return from a customer, a reference to the original document is added.
 -   Enter a manual fiscal document, model 01, in the system. You will create a fiscal document that references the original fiscal document.
 -   Enter a Sales Order for Retail Sales or NF-e (model 55). The fiscal document will reference the original retail document and fiscal printer.

@@ -2,13 +2,13 @@
 # required metadata
 
 title: Data entities - Project accounting
-description: This article provides a list of the data entities that are available for the Project management and accounting functionality in Microsoft Dynamics 365 for Operations.
+description: This article provides a list of the data entities that are available for Project management and accounting.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for the Project management and accounting functionality in Microsoft Dynamics 365 for Operations.
+This article provides a list of the data entities that are available for Project management and accounting.
 
 Available data entities
 -----------------------
@@ -70,7 +70,7 @@ Before you import Project journal approval details, verify that the User groups 
 
 | Suggested sequence | Entity name        | Area  | Entity type | Dependency | Comments                                                                                                                                   |
 |--------------------|--------------------|-------|-------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| 9                  | Project form setup | Forms | Setup       | None       | Define form note parameters for invoices, project quotations, and packing slips that are issued from Dynamics 365 for Operations projects. |
+| 9                  | Project form setup | Forms | Setup       | None       | Define form note parameters for invoices, project quotations, and packing slips that are issued from projects. |
 
 **26.1.005 PA - Resourcing setup**
 
@@ -145,7 +145,7 @@ Before you proceed with additional data import, you must setup the Project manag
 
 **26.1.013 PA - Projects master**
 
-Forecasts models aren’t part of the Dynamics 365 for Operations 7.0.0 release. During import, you can unmap the **EXTERNALREVISION mapping** field to import the Projects entity. If you’re using demo data to import, about 80 or more Project record will fail, because some of the inclusive projects dates are wrong.
+Forecasts models aren’t part of the Dynamics AX 7.0.0 release. During import, you can unmap the **EXTERNALREVISION mapping** field to import the Projects entity. If you’re using demo data to import, about 80 or more Project record will fail, because some of the inclusive projects dates are wrong.
 
 | Suggested sequence | Entity name | Area     | Entity type | Dependency | Comments                                |
 |--------------------|-------------|----------|-------------|------------|-----------------------------------------|

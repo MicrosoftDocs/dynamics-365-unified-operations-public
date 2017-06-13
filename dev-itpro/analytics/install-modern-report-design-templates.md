@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -40,10 +40,10 @@ This articles describes how to install the modern report design templates in the
 Introduction
 ------------
 
-This article introduces a new set of developer tools that take the form of report designs for several core business documents in the application suite. These report designs have been re-imagined so that flexible branding in the header and footer is rendered for publicly facing documents when transactions are generated in Microsoft Dynamics 365 for Operations. The following illustration shows how a legacy design for a sales invoice differs from a modern sales invoice. [![Examples of a legacy design for a sales invoice and a modern sales invoice](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
+This article introduces a new set of developer tools that take the form of report designs for several core business documents in the application suite. These report designs have been re-imagined so that flexible branding in the header and footer is rendered for publicly facing documents when transactions are generated in Microsoft Dynamics 365 for Finance and Operations. The following illustration shows how a legacy design for a sales invoice differs from a modern sales invoice. [![Examples of a legacy design for a sales invoice and a modern sales invoice](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
 
 ## Why aren't these designs the default designs for the application suite reports?
-There are two primary reasons why we are maintaining the legacy solutions for Dynamics 365 for Operations:
+There are two primary reasons why we are maintaining the legacy solutions for Finance and Operations:
 
 -   **Modern designs don't include code.** Although the legacy solutions use embedded Microsoft Visual Basic (VB) code to recognize configuration keys and honor regulatory requirements that vary by region, the modern designs offer much less flexibility. The benefit of a simple design that has minimal code behind it comes at the expense of reusability across regions.
 -   **Modern designs aren't available for all business documents.** There is a gap between supported business documents and the availability of a modern design. Although the legacy designs aren't as aesthetically pleasing, they provide a sense of consistency.
@@ -54,7 +54,7 @@ There are two primary reasons why we are maintaining the legacy solutions for Dy
 The report designs have been bundled into a model file and posted to Microsoft Dynamics Lifecycle Services (LCS), so that you can easily access them from your existing subscription. Use the following procedure to obtain the report design solutions and install them in your local development environment. After you've installed them, you must apply some customizations to incorporate the new report designs for the appropriate scenarios. Follow these steps to install the modern report designs for the application suite.
 
 1.  Download the ApplicationSuiteModernDesigns model file from the **Shared asset library** page on LCS. Sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) to access the deployment dashboard, and then save the model file to a location that is accessible from the development environment. [![ApplicationSuiteModernDesigns model file](./media/lcs-shared-asset-library-1024x489.png)](./media/lcs-shared-asset-library.png)
-2.  Import the model file into your local development environment. To install a model file in a Dynamics 365 for Operations development environment, use the ModelUtil.exe tool and the **-import** directive. Here is an example.
+2.  Import the model file into your local development environment. To install a model file in a Finance and Operations development environment, use the ModelUtil.exe tool and the **-import** directive. Here is an example.
 
         ModelUtil.exe -import -metadatastorepath=[path of the metadata store] -file=[full path of the file to import]
 

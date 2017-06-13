@@ -2,13 +2,13 @@
 # required metadata
 
 title: Message center, message bar, and message details FAQ
-description: This article introduces the rich, powerful messaging system that is available in Microsoft Dynamics 365 for Operations. This messaging system replaces the Infolog window that was used in previous versions.
+description: This topic describes the rich, powerful messaging system replaces the Infolog window that was used Microsoft Dynamics AX 2012.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -34,10 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+This topic describes the rich, powerful messaging system replaces the Infolog window that was used Microsoft Dynamics AX 2012.
 
-This article introduces the rich, powerful messaging system that is available in Microsoft Dynamics 365 for Operations. This messaging system replaces the Infolog window that was used in previous versions.
-
-Microsoft Dynamics AX 2012 uses an all-purpose window that opens to display a list of the most recently reported informational messages, warnings, or errors. This window is appropriately and generically named the Information Log or Infolog. Although the Infolog is a beneficial tool in some cases, its “one size fits all” approach was judged to be ineffective for differentiating the severity of messages and the need to interrupt the user. Therefore, Microsoft Dynamics 365 for Operations has a richer, more powerful messaging system:
+Microsoft Dynamics AX 2012 uses an all-purpose window that opens to display a list of the most recently reported informational messages, warnings, or errors. This window is appropriately and generically named the Information Log or Infolog. Although the Infolog is a beneficial tool in some cases, its “one size fits all” approach was judged to be ineffective for differentiating the severity of messages and the need to interrupt the user. The richer, more powerful messaging system:
 
 -   Improved association of a message with its context
 -   Improved level of interruption (none, subtle, and interrupting)
@@ -163,7 +162,7 @@ The deterministic messaging system tries to send messages to the current page. H
 If the client calls **closeOK()** or **close()** directly, then the final result might be the page or the parent page.
 
 ## Detailed, multiresult messaging that uses SetPrefix() and the Message details pane
-In Dynamics 365 for Operations, the results of **SetPrefix()** don't actively interrupt the user. Instead, the results are collected and stored, and a message bar or a Message Center notification is presented to the user. This message bar or Message Center notification indicates that the related task has been completed, and that there might be messages for the user to review. The *notification of results* message uses the task's first call to **SetPrefix()** to frame the message. (This behavior resembles the behavior in Dynamics AX 2012, where the first call is the “title” of the results). In the following example, the text “Posting Results” comes from the first call to **SetPrefix()**. 
+The results of **SetPrefix()** don't actively interrupt the user. Instead, the results are collected and stored, and a message bar or a Message Center notification is presented to the user. This message bar or Message Center notification indicates that the related task has been completed, and that there might be messages for the user to review. The *notification of results* message uses the task's first call to **SetPrefix()** to frame the message. (This behavior resembles the behavior in Dynamics AX 2012, where the first call is the “title” of the results). In the following example, the text “Posting Results” comes from the first call to **SetPrefix()**. 
 
 ![Messaging\_MessageDetailsMessageBar](./media/messaging_messagedetailsmessagebar.jpg) 
 

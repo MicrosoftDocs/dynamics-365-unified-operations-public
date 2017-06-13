@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Printing in Dynamics 365 for Operations applications
-description: In Microsoft Dynamics 365 for Operations, you can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
+title: Printing in Finance and Operations applications
+description: In Microsoft Dynamics 365 for Finance and Operations, you can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -30,26 +30,26 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Printing in Dynamics 365 for Operations applications
+# Printing in Finance and Operations applications
 
 [!include[banner](../includes/banner.md)]
 
 
-In Microsoft Dynamics 365 for Operations, you can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
+In Microsoft Dynamics 365 for Finance and Operations, you can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
 
 Printing overview
 -----------------
 
-Microsoft Dynamics 365 for Operations provides integrated services and client applications that make it easy to generate, store, and distribute documents that support business activity. In Dynamics 365 for Operations, you can print documents by using either a local printer or a network-connected device. In addition, you can export Dynamics 365 for Operations pages and reports directly from the client, as PDF files or Microsoft Office documents. Finally, the distributed workload lets you print business documents directly from a mobile device by using network resources. Although printing requirements might vary, all industries typically must create hard copies of business documents by using Dynamics 365 for Operations. Printing documents on network devices from hosted applications presents a unique set of challenges. Here are some examples:
+Microsoft Dynamics 365 for Finance and Operations provides integrated services and client applications that make it easy to generate, store, and distribute documents that support business activity. In Finance and Operations, you can print documents by using either a local printer or a network-connected device. In addition, you can export Finance and Operations pages and reports directly from the client, as PDF files or Microsoft Office documents. Finally, the distributed workload lets you print business documents directly from a mobile device by using network resources. Although printing requirements might vary, all industries typically must create hard copies of business documents by using Finance and Operations. Printing documents on network devices from hosted applications presents a unique set of challenges. Here are some examples:
 
 -   Print drivers might not be available on the user's device.
 -   The user’s device might not be connected to the corporate network.
 
 By using a dedicated host and following a few easy steps, system administrators can configure deployments so that users can print directly from business applications on network devices.
 
-### Printing scenarios in Dynamics 365 for Operations applications
+### Printing scenarios in Finance and Operations applications
 
-The following table describes the three primary printing scenarios in Dynamics 365 for Operations applications.
+The following table describes the three primary printing scenarios in Finance and Operations applications.
 
 | Scenario                        | Goal                                                      | Solution                                                                                                            |
 |---------------------------------|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -57,13 +57,13 @@ The following table describes the three primary printing scenarios in Dynamics 3
 | 2. Interactive printing         | Print a precision document on a locally connected device. | You can export a PDF version of the report and download it to the browser.                                          |
 | 3. Printing on a network device | Send a precision document to a domain printer device.     | A precision document is sent to a client application that runs on a server that is hosted in the customer’s domain. |
 
-Because the solution varies, depending on the scenario, Dynamics 365 for Operations applications provide built-in services and tooling to help users accomplish their goals:
+Because the solution varies, depending on the scenario, Finance and Operations applications provide built-in services and tooling to help users accomplish their goals:
 
 -   **Scenario 1** is supported by the browser’s rendering of the HTML5 client.
 -   **Scenario 2** uses client applications and Microsoft Office 365 services.
 -   **Scenario 3** requires support from client applications and from services that are hosted in Microsoft Azure.
 
-In addition to the platform that is deployed to the Azure subscription, Dynamics 365 for Operations applications provide customers with an integrated, first-party Azure application that helps them more easily use domain-hosted devices to print documents.
+In addition to the platform that is deployed to the Azure subscription, Finance and Operations applications provide customers with an integrated, first-party Azure application that helps them more easily use domain-hosted devices to print documents.
 
 ## Service overview
 While documents that are produced by the hosted applications are waiting to be printed on a network-connected device, they are stored in Azure blob storage. The [Document Routing Agent](install-document-routing-agent.md) uses Azure authentication to establish a secure channel to the Azure services. **Execution sequence**
@@ -76,7 +76,7 @@ The client-based solution lets customers manage the scale of their printing need
 
 ### Service components for network printing
 
-The following diagram shows the basic components that help support network printing operations. [![service-components-for-network-printing\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png) Note that a single printer can be registered with multiple Document Routing Agents. To resolve the printer preferences, the hosted service uses the network path that uniquely identifies every network printer. As a result, even when a printer is registered by multiple clients, it appears as a single selection in the list of printers available in Dynamics 365 for Operations applications.
+The following diagram shows the basic components that help support network printing operations. [![service-components-for-network-printing\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png) Note that a single printer can be registered with multiple Document Routing Agents. To resolve the printer preferences, the hosted service uses the network path that uniquely identifies every network printer. As a result, even when a printer is registered by multiple clients, it appears as a single selection in the list of printers available in Finance and Operations applications.
 
 
 

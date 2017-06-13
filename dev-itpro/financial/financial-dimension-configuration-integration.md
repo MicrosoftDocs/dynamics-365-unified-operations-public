@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -40,7 +40,7 @@ This topic describes the Financial dimension configuration for integrating appli
 Financial reporting
 -------------------
 
-The **Financial reporting** tab has a list of all financial dimensions in the system. Because different companies use different dimensions and account structures, there is no way to determine the order in which users want to view all financial dimensions on reports. This tab lets you set the order in which you want financial dimensions to appear when you build and view a report in Financial reporting. The Financial reporting tab is not available in Dynamics 365 for Operations. Instead, please see the Financial reporting setup page to select your Financial dimensions and Attributes.
+The **Financial reporting** tab has a list of all financial dimensions in the system. Because different companies use different dimensions and account structures, there is no way to determine the order in which users want to view all financial dimensions on reports. This tab lets you set the order in which you want financial dimensions to appear when you build and view a report in Financial reporting. The Financial reporting tab is not available the current release. Instead, please see the Financial reporting setup page to select your Financial dimensions and Attributes.
 
 ## Data entities
 The **Data entities** tab is where you define the order of financial dimensions for importing data. There is no rule about how you should set the order of your dimension formats. They are designed to be flexible enough that you can take your source files from an external system and import the data without spending time to make the source files match your account structures. Dimension validation still occurs during the import process, to verify that you aren't importing financial dimension values that don't exist for a particular segment. However, outside validation, account structures and dimension formats are independent of each other. There are four dimension format types:

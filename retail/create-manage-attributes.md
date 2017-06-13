@@ -2,13 +2,13 @@
 # required metadata
 
 title: Create and manage attributes
-description: This article describes attributes in Microsoft Dynamics 365 for Operations. Attributes let you describe a product and its characteristics through user-defined fields.
+description: This article describes attributes in Microsoft Dynamics 365 for Retail. Attributes let you describe a product and its characteristics through user-defined fields.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](includes/banner.md)]
 
 
-This article describes attributes in Microsoft Dynamics 365 for Operations. Attributes let you describe a product and its characteristics through user-defined fields.
+This article describes attributes in Microsoft Dynamics 365 for Retail. Attributes let you describe a product and its characteristics through user-defined fields.
 
 Attributes let you describe a product and its characteristics through user-defined fields. For example, you can specify the product's memory size and hard disk capacity, and indicate whether the product is Energy star–compliant. Attributes can be associated with various retail entities, such as product categories and retail channels, and default values can be set for them. Products inherit their attributes and the default values for those attributes when they are associated with product categories or retail channels. The default values can be overridden at the level of the individual product, at the retail channel level, or in a retail catalog.
 
@@ -62,7 +62,7 @@ Attributes let you describe a product and its characteristics through user-defin
 ## Attribute type
   [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
   
-Attributes are based on attribute types. Attribute types identify the type of data that can be entered for a specific attribute. Currently, Microsoft Dynamics 365 for Operations supports the following attribute types:
+Attributes are based on attribute types. Attribute types identify the type of data that can be entered for a specific attribute. Currently, Microsoft Dynamics 365 for Retail supports the following attribute types:
 
 -   **Currency** – This attribute type supports currency values. It can be bounded (that is, it can support a value range), or it can be left open.
 -   **DateTime** – This attribute type supports date and time values. It can be bounded (that is, it can support a value range), or it can be left open.

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -39,7 +39,7 @@ This topic explains how to download Electronic reporting (ER) configurations fro
 
 This tutorial guides you through the process of downloading the newest version of Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).
 
-1.  Sign in to Dynamics 365 for Operations by using one of the following roles:
+1.  Sign in to Finance and Operations by using one of the following roles:
     -   Electronic reporting developer
     -   Electronic reporting functional consultant
     -   System administrator
@@ -59,7 +59,7 @@ This tutorial guides you through the process of downloading the newest version o
 6.  Click **Open** to view the list of ER configurations for the selected repository. [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  In the configurations tree in the left pane, select the ER configuration that you require.
 8.  On the **Versions** FastTab, select the required version of the selected ER configuration.
-9.  Click **Import** to download the selected version from LCS to the current Dynamics 365 for Operations instance. **Note:** The **Import** button is unavailable for ER configuration versions that are already present in the current Dynamics 365 for Operations instance. [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+9.  Click **Import** to download the selected version from LCS to the current Finance and Operations instance. **Note:** The **Import** button is unavailable for ER configuration versions that are already present in the current Finance and Operations instance. [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 **Note:** Depending on the ER settings, configurations are validated after they are imported. You might be notified about any inconsistency issues that are discovered. You must resolve those issues before you can use the imported configuration version. For more information, see the list of related articles for this topic.
 

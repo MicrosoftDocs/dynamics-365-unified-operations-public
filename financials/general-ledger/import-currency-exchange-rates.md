@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,7 +40,7 @@ If a legal entity has received invoices in foreign currencies, it’s necessary 
 The following sections describe the flow of information that is used for setting up and processing the import of foreign exchange rates.
 
 ## Configure an exchange rate provider
-Before you can import exchange rates, you must set up the information that is required by the providers who offer the exchange rates. Use the **Configure exchange rate providers** page to select the exchange rate providers. Some exchange rate providers are included with the demo data in Microsoft Dynamics 365 for Operations. The following table provides descriptions for the controls on this page.
+Before you can import exchange rates, you must set up the information that is required by the providers who offer the exchange rates. Use the **Configure exchange rate providers** page to select the exchange rate providers. Some exchange rate providers are included with the demo data in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. The following table provides descriptions for the controls on this page.
 
 |           |                                                                                                                                                                                                                             |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

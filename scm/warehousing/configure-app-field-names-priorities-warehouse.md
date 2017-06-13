@@ -2,13 +2,13 @@
 # required metadata
 
 title: Configure app field names in Warehousing app
-description: This topic describes how to define and configure warehouse app field names and priorities in Dynamics 365 for Operations. 
+description: This topic describes how to define and configure warehouse app field names and priorities in Finance and Operations. 
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,14 +35,14 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes how to define and configure warehouse app field names and priorities in Dynamics 365 for Operations. 
+This topic describes how to define and configure warehouse app field names and priorities in Finance and Operations. 
 
-**Note:** This topic applies to features in Warehouse management. It doesn’t apply to features in Inventory management. Dynamics 365 for Operations - Warehousing is an application that you can use to perform warehouse tasks. You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned. This topic explains how to define and configure these warehouse app field names and priorities, and how they are used in Dynamics 365 for Operations - Warehousing. For detailed information about how to configure the connection to Dynamics 365 for Operations  - Warehousing, refer to the tutorial [Install and configure Dynamics 365 for Operations - Warehousing](install-configure-warehousing-app.md).
+**Note:** This topic applies to features in Warehouse management. It doesn’t apply to features in Inventory management. Finance and Operations - Warehousing is an application that you can use to perform warehouse tasks. You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned. This topic explains how to define and configure these warehouse app field names and priorities, and how they are used in Finance and Operations - Warehousing. For detailed information about how to configure the connection to Finance and Operations  - Warehousing, refer to the tutorial [Install and configure Finance and Operations - Warehousing](install-configure-warehousing-app.md).
 
 Configure warehouse app field names
 ===================================
 
-When you use Dynamics 365 for Operations - Warehousing on your mobile device, you can configure how metadata should be displayed on your device on the **Warehouse app field names** page. In a new company in Dynamics 365 for Operations, select **Create default setup** to generate all field names that will be used in the warehouse mobile device workflows, and then assign a preferred input mode and input type to them. After you have generated all field names, you can select the following input options.
+When you use Finance and Operations - Warehousing on your mobile device, you can configure how metadata should be displayed on your device on the **Warehouse app field names** page. In a new company in Finance and Operations, select **Create default setup** to generate all field names that will be used in the warehouse mobile device workflows, and then assign a preferred input mode and input type to them. After you have generated all field names, you can select the following input options.
 
 <table>
 <colgroup>
@@ -76,7 +76,7 @@ When you use Dynamics 365 for Operations - Warehousing on your mobile device, yo
 Configure warehouse app field priority
 ======================================
 
-On the **Warehouse app field priority** page, you can put field names into different priority groups. This makes it possible to decide what information should be displayed on the main task page when warehouse workers perform tasks using the app. If you click **Create default setup**, a default set of priority groups will be generated. It is possible to create as many priority groups as needed, but only three priority groups will be shown on the task page. When Dynamics 365 for Operations sends metadata to the app, it will assign each field a relative priority depending on its priority group, and the app will display the first three priority groups contained in the metadata on the task page. The rest of the overflowing metadata will be displayed on a secondary details page. The following table shows an example of five priority groups.
+On the **Warehouse app field priority** page, you can put field names into different priority groups. This makes it possible to decide what information should be displayed on the main task page when warehouse workers perform tasks using the app. If you click **Create default setup**, a default set of priority groups will be generated. It is possible to create as many priority groups as needed, but only three priority groups will be shown on the task page. When Finance and Operations sends metadata to the app, it will assign each field a relative priority depending on its priority group, and the app will display the first three priority groups contained in the metadata on the task page. The rest of the overflowing metadata will be displayed on a secondary details page. The following table shows an example of five priority groups.
 
 <table>
 <colgroup>
@@ -144,12 +144,12 @@ Based on the warehouse app field priority set up in the table above, the followi
 -   Row 2: Item description
 -   Row 3: Size
 
-The remaining metadata, for example, Location, will not be displayed on the task page, but will be displayed on a details page. To learn more and see examples of the user interface, refer to the blog post [Announcing Dynamics 365 for Operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
+The remaining metadata, for example, Location, will not be displayed on the task page, but will be displayed on a details page. To learn more and see examples of the user interface, refer to the blog post [Announcing Finance and Operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
 See also
 --------
 
-[Install and configure Microsoft Dynamics 365 for Operations – Warehousing](install-configure-warehousing-app.md)
+[Install and configure Microsoft Dynamics 365 for Finance and Operations – Warehousing](install-configure-warehousing-app.md)
 
 
 
