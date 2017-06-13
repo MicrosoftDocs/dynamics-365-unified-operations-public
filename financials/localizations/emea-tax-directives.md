@@ -20,7 +20,7 @@ ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, Germany, France, Hungary, Latvia, Lithuania, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, Turkey, United Kingdom
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Latvia, Lithuania, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, Turkey, United Kingdom
 # ms.search.industry: 
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30 
