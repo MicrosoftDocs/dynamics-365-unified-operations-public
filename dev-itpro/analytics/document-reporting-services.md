@@ -2,7 +2,7 @@
 # required metadata
 
 title: Document Reporting Services overview
-description: This article describes the integrated reporting solution that is available in Microsoft Dynamics 365 for Operations. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
+description: This article describes the integrated reporting solution that is available in Microsoft Dynamics 365 for Finance and Operations. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,12 +35,12 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes the integrated reporting solution that is available in Microsoft Dynamics 365 for Operations. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
+This article describes the integrated reporting solution that is available in Microsoft Dynamics 365 for Finance and Operations. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
 
 Document Reporting Services
 ---------------------------
 
-Document Reporting Services are based on Microsoft SQL Server Reporting Services (SSRS). In the current version of Microsoft Dynamics 365 for Operations, these services are hosted in the Microsoft Azure compute service. If you're developing in a one-box environment, the services also run locally in the Azure compute emulator.
+Document Reporting Services are based on Microsoft SQL Server Reporting Services (SSRS). In the current version of Microsoft Dynamics 365 for Finance and Operations, these services are hosted in the Microsoft Azure compute service. If you're developing in a one-box environment, the services also run locally in the Azure compute emulator.
 
 ### Service deployment – Local vs. cloud
 
@@ -50,12 +50,12 @@ In a one-box environment, developers can create, modify, and preview reports, fr
 
 ### Viewing reports in Dynamics 365 for Operations
 
-The enhanced report viewing experience that Dynamics 365 for Operations provides for end users is the same as the report preview experience in Microsoft Visual Studio. You no longer use a separate design preview in Visual Studio. Instead, just press Ctrl+F5 to build and preview the report in an Internet Explorer window. The report appears exactly as it would appear in the client. Even the user's parameter experience is the same. The following screen shot shows an example of a report preview that is opened from Visual Studio. 
+The enhanced report viewing experience that Finance and Operations provides for end users is the same as the report preview experience in Microsoft Visual Studio. You no longer use a separate design preview in Visual Studio. Instead, just press Ctrl+F5 to build and preview the report in an Internet Explorer window. The report appears exactly as it would appear in the client. Even the user's parameter experience is the same. The following screen shot shows an example of a report preview that is opened from Visual Studio. 
 
 [![Example of a report preview](./media/2_report.png)](./media/2_report.png)
 
 ## Service administration prerequisites
-The following table compares the service administration prerequisites for Microsoft Dynamics AX 2012 and the current version of Dynamics 365 for Operations.
+The following table compares the service administration prerequisites for Microsoft Dynamics AX 2012 and the current version of Finance and Operations.
 
 <table>
 <colgroup>
@@ -74,7 +74,7 @@ The following table compares the service administration prerequisites for Micros
 <ul>
 <li>SSRS must be installed.</li>
 <li>SSRS must be configured by using Reporting Services Configuration Manager.</li>
-<li>SSRS extensions for Dynamics 365 for Operations must be installed.</li>
+<li>SSRS extensions for Finance and Operations must be installed.</li>
 </ul></td>
 <td>Reporting services run in the Azure compute emulator, together with the application server. Therefore, there are no SSRS service administration prerequisites. After reports have been deployed to the local reporting services, they can be accessed from the client.</td>
 </tr>
@@ -82,7 +82,7 @@ The following table compares the service administration prerequisites for Micros
 </table>
 
 ## Developing application reports
-The process for developing a report in the current version of Dynamics 365 for Operations is easier than it is in AX 2012, because you can create and validate a reporting solution entirely in Visual Studio 2015. The following table describes how Dynamics 365 for Operations simplifies the basic procedure for adding an automatic design report that is based on a query.
+The process for developing a report in the current version of Finance and Operations is easier than it is in AX 2012, because you can create and validate a reporting solution entirely in Visual Studio 2015. The following table describes how Finance and Operations simplifies the basic procedure for adding an automatic design report that is based on a query.
 
 <table>
 <colgroup>
@@ -98,7 +98,7 @@ The process for developing a report in the current version of Dynamics 365 for O
 <tbody>
 <tr class="odd">
 <td><ol>
-<li>In the Microsoft Dynamics 365 for Operations client, create a query in the Application Object Tree (AOT).</li>
+<li>In the Microsoft Dynamics 365 for Finance and Operations client, create a query in the Application Object Tree (AOT).</li>
 <li>In Visual Studio, create a reporting project, and add the query to it.</li>
 <li>Edit the report in the Visual Studio model editor.</li>
 <li>Preview the report design in Visual Studio by using the model editor toolbar.</li>
@@ -112,7 +112,7 @@ The process for developing a report in the current version of Dynamics 365 for O
 <li>Edit the report in Visual Studio.</li>
 <li>In Visual Studio, add the report to a menu item, and set the menu item as a startup object.</li>
 <li>Use the AOT to deploy the report to the report server.</li>
-<li>Press Ctrl+F5 to verify the report in the Dynamics 365 for Operations client. <strong>Note:</strong> There is no longer a separate preview of the report design from the model editor.</li>
+<li>Press Ctrl+F5 to verify the report in the Finance and Operations client. <strong>Note:</strong> There is no longer a separate preview of the report design from the model editor.</li>
 <li>When the whole solution is completed, deploy it to the cloud in one package.</li>
 </ol></td>
 </tr>

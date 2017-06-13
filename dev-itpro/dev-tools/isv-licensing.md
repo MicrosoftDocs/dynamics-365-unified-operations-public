@@ -188,7 +188,7 @@ After the configuration key is enabled, the button become visible, as shown in t
 ![Button is visible after the configuration key is enabled](./media/isv19.png)
 
 ## Protection best practices
-In Microsoft Dynamics 365 for Operations, solutions can be delivered in two forms:
+Solutions can be delivered in two forms:
 
 -   Model files (source code)
 -   Deployable packages (binary)
@@ -198,7 +198,7 @@ To protect your configuration keys and license codes, we recommend that you rele
 ![Protected vs. unprotected ISV solutions](./media/isv20.png)
 
 ## Production environments
-To install ISV licenses in production systems, you must use a deployable package through LCS. You can find a template package for configuration mode at the following location in all Dynamics 365 for Operations installations: &lt;PackagesFolder&gt;\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (Packages folder is typically under j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\) 
+To install ISV licenses in production systems, you must use a deployable package through LCS. You can find a template package for configuration mode at the following location in all installations: &lt;PackagesFolder&gt;\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (Packages folder is typically under j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\) 
 
 ![Location of the template package for configuration mode](./media/isv21.png)
 

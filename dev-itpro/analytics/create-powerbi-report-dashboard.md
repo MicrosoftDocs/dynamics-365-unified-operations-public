@@ -40,8 +40,8 @@ This tutorial guides you though the process of creating a basic Power BI report 
 Key concepts
 ------------
 
--   **Power BI** – The cloud-based analytics visualization platform that is used to extract, transform, and present data from Microsoft Dynamics 365 for Operations (and other systems), so that users can interact with the data and share it.
--   **Microsoft Power Query for Excel** – The Microsoft Excel–based tool that you can use to extract and transform data from Dynamics 365 for Operations (through OData feeds) into an Excel-based data model that is used in Power BI reporting.
+-   **Power BI** – The cloud-based analytics visualization platform that is used to extract, transform, and present data from Microsoft Dynamics 365 for Finance and Operations (and other systems), so that users can interact with the data and share it.
+-   **Microsoft Power Query for Excel** – The Microsoft Excel–based tool that you can use to extract and transform data from Finance and Operations (through OData feeds) into an Excel-based data model that is used in Power BI reporting.
 -   **Self-service BI** – Tools and processes that let users create or modify analytic content such as reports, key performance indicators (KPIs), and dashboards.
 
 ## Supported platforms and environments
@@ -58,7 +58,7 @@ Excel and the latest version of Power Query are required. Note the following po
 View the OData feed in your web browser
 =======================================
 
-1.  Start a web browser, and enter the URL that is used to access your Dynamics 365 for Operations deployment. This URL will be in the following format: https://*yourenvrionment*.cloudax.dynamics.com
+1.  Start a web browser, and enter the URL that is used to access your Finance and Operations deployment. This URL will be in the following format: https://*yourenvrionment*.cloudax.dynamics.com
 2.  Sign in by entering your credentials, if you aren't already signed in.
 3.  To validate that data entities are exposed by using the OData v4 endpoint, add a suffix of “data” to the URL. The URL should now be in the following format: https://*yourenvironment*.cloudax.dynamics.com/data
 4.  If you’re using Internet Explorer, you must download the JSON file before you can view it. To view the JSON file, you must have Microsoft Visual Studio or a similar tool. If you’re using Chrome, you can view the feed in your browser window. 
@@ -76,7 +76,7 @@ Access OData endpoints in Power Query
     
     [![3](./media/3.png)](./media/3.png)
 
-4.  Power Query requests that you authenticate the OData feed. Select **Organizational account** as the authentication method, and then click **Sign in**. [![4](./media/4.png)](./media/4.png) **Note:** Dynamics 365 for Operations uses Microsoft Azure Active Directory (AAD) to authenticate users. When you select **Organizational account** and enter your credentials, you're authenticated against Dynamics 365 for Operations and are presented with only the data that you have access to through the Dynamics 365 for Operations security model. Power Query displays a list of available entities.
+4.  Power Query requests that you authenticate the OData feed. Select **Organizational account** as the authentication method, and then click **Sign in**. [![4](./media/4.png)](./media/4.png) **Note:** Finance and Operations uses Microsoft Azure Active Directory (AAD) to authenticate users. When you select **Organizational account** and enter your credentials, you're authenticated against Finance and Operations and are presented with only the data that you have access to through the Finance and Operations security model. Power Query displays a list of available entities.
 5.  Click **Connect**. The Power Query **Navigator** pane is loaded. 
 
     [![5](./media/5.png)](./media/5.png)
@@ -88,7 +88,7 @@ Access OData endpoints in Power Query
 
     [![6](./media/6.png)](./media/6.png) 
     
-    Power Query loads the data from Dynamics 365 for Operations into the Excel data model. Depending on the size of the data set, this process might require some time. 
+    Power Query loads the data from Finance and Operations into the Excel data model. Depending on the size of the data set, this process might require some time. 
     
     [![7](./media/7.png)](./media/7.png)
 
@@ -142,7 +142,7 @@ In this section, we will review the Excel data model to optimize the data for re
     1.  Click in the **Measure** pane, enter the following formula, and then press Enter: Total Expenses this year:=calculate(sum(\[Expenses\]),'FiscalCalendars'\[YearOffset\]=0)
     2.  Click in the cell below the previous cell, and enter the following formula: Total Expenses last year:=calculate(sum(\[Expenses\]),'FiscalCalendars'\[YearOffset\]=-1)
 
-    **Note:** These formulas use the Dynamics 365 for Operations language. Both formulas sum the **Expenses** column, but each applies a different filter to your fiscal calendars on the year offset. A year offset of **0** specifies the current financial year, and a year offset of **-1** specifies last financial year. This step lets users take advantage of their custom Dynamics 365 for Operations fiscal calendars in Power BI. 
+    **Note:** These formulas use the Finance and Operations language. Both formulas sum the **Expenses** column, but each applies a different filter to your fiscal calendars on the year offset. A year offset of **0** specifies the current financial year, and a year offset of **-1** specifies last financial year. This step lets users take advantage of their custom Finance and Operations fiscal calendars in Power BI. 
     
     [![11](./media/111.png)](./media/111.png)
 
@@ -226,7 +226,7 @@ You can repeat this process to build out your dashboard.
 
 # See also
 
-[Power BI integration in Dynamics 365 for Operations](power-bi-integration.md)
+[Power BI integration in Finance and Operations](power-bi-integration.md)
 [Configuring Power BI integration for workspaces](configure-power-bi-integration.md)
 
 

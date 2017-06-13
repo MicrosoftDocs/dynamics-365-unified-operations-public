@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade home page
-description: These topics describe the process for upgrading your Dynamics 365 for Operations environment and data.
+description: These topics describe the process for upgrading your Finance and Operations environment and data.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,14 +35,14 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-These topics describe the process for upgrading your Dynamics 365 for Operations environment and data.
+These topics describe the process for upgrading your Finance and Operations environment and data.
 
 Upgrading your environment and data
 -----------------------------------
 
--   [Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](upgrade-latest-update.md)
+-   [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md)
 -   [Upgrade data in development or demo environments](upgrade-data-to-latest-update.md)
--   [Upgrade to the latest platform of Dynamics 365 for Operations](upgrade-latest-platform-update.md)
+-   [Upgrade to the latest platform of Finance and Operations](upgrade-latest-platform-update.md)
 
 
 

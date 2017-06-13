@@ -2,7 +2,7 @@
 # required metadata
 
 title: Spanish promissory note options
-description: This topic describes options and changes for the basic promissory note functionality that is implemented in Microsoft Dynamics 365 for Operations for legal entities in Spain.
+description: This topic describes options and changes for the basic promissory note functionality that is implemented in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition for legal entities in Spain.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes options and changes for the basic promissory note functionality that is implemented in Microsoft Dynamics 365 for Operations for legal entities in Spain.
+This topic describes options and changes for the basic promissory note functionality that is implemented in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition for legal entities in Spain.
 
 For legal entities in Spain, the promissory note functionality has additional options:
 

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Operations  -  Retail for IT pros and developers
-description: This page lists the resources that are available for IT pros and developers who support Retail and commerce in Microsoft Dynamics 365 for Operations.
+title: Microsoft Dynamics 365 for Retail for IT pros and developers
+description: This page lists the resources that are available for IT pros and developers who support Retail.
 author: RobinARH
 nmanager: AnnBe
 ms.date: 04/04/2017
@@ -30,19 +30,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Dynamics 365 for Operations  -  Retail for IT pros and developers
+# Microsoft Dynamics 365 for Retail for IT pros and developers
 
 [!include[banner](../includes/banner.md)]
 
 
-This page lists the resources that are available for IT pros and developers who support Retail and commerce in Microsoft Dynamics 365 for Operations.
+This page lists the resources that are available for IT pros and developers who support Retail.
 
-Retail is dependent on Dynamics 365 for Operations. We recommend that you familiarize yourself with the core [deployment and development content](/dynamics365/unified-operations/dev-itpro/index).
+Retail is dependent on Finance and Operations. We recommend that you familiarize yourself with the core [deployment and development content](/dynamics365/unified-operations/dev-itpro/index).
 
 ## Retail components and architecture
--   [Components of Microsoft Dynamics 365 for Operations - Retail](..\retail-components.md)
+-   [Components of Dynamics 365 for Retail](..\retail-components.md)
 -   [MPOS architecture](retail-modern-pos-architecture.md)
--   [Architecture of Microsoft Dynamics 365 for Operations - Retail Server](retail-server-architecture.md)
+-   [Retail Server architecture](retail-server-architecture.md)
 -   [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)
 -   [Retail Channel Performance Power BI  content](/dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
 
@@ -54,13 +54,13 @@ Retail is dependent on Dynamics 365 for Operations. We recommend that you famili
 -   [Retail Hardware Station configuration and installation](..\retail-hardware-station-configuration-installation.md)
 -   [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
 -   [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
--   [Access Microsoft Dynamics 365 for Operations instances](/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances)
+-   [Access instances](/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances)
 
 ## Point of Sale (POS)
 -   [Retail Modern POS configuration and installation](..\retail-modern-pos-device-activation.md)
 -   [Manage Retail accounts and devices from headquarters](..\set-up-activation-accounts-validate-devices-hq.md)
 -   [Retail POS device activation](retail-device-activation.md)
--   [Security best practices for Dynamics 365 for Operations – Retail Cloud POS in a shared environment](secure-retail-cloud-pos.md)
+-   [Security best practices for Retail Cloud POS in a shared environment](secure-retail-cloud-pos.md)
 
 ## Customize POS
 -   [Retail POS screen layouts](..\pos-screen-layouts.md)

@@ -56,7 +56,7 @@ The **File** menu is available to all users and includes the following commands.
 | Save As                           | Save the current row definition, column definition, reporting tree definition, or report definition under a new name.                                                                            |
 | Properties                        | Open the **Properties** dialog box, where you can change the name and description of a report.                                                                                                   |
 | Generate                          | Generate the current report. This command is available from a report definition.                                                                                                                 |
-| View Report                       | Open the most recent version of the generated report in Dynamics 365 for Operations. This command is available from a report definition if you've generated at least one report.                                 |
+| View Report                       | Open the most recent version of the generated report in Finance and Operations. This command is available from a report definition if you've generated at least one report.                                 |
 | Recent Report Definitions         | Show a list of reports that have recently been created or modified. You can then select a report in the list.                                                                                    |
 | Recent Row Definitions            | Show a list of row definitions that have recently been created or modified. You can then select a row definition in the list.                                                                    |
 | Recent Column Definitions         | Show a list of column definitions that have recently been created or modified. You can then select a column definition in the list.                                                              |
@@ -166,7 +166,7 @@ The **Help** menu is available to all users and includes the following commands.
 
 | Command | Description                                                  |
 |---------|--------------------------------------------------------------|
-| Help    | Open the Dynamics 365 for Operations help topic page for financial reporting. |
+| Help    | Open the Finance and Operations help topic page for financial reporting. |
 |         |                                                              |
 
 ## Report Designer toolbar buttons

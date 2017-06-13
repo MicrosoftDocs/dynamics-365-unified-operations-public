@@ -43,14 +43,14 @@ Prerequisites
 None
 
 ## Search for product issues and regulatory features
-You can use Issue search to search for product issues, and determine whether an issue has been resolved, is open, or has a workaround. You can also search for regulatory features, and determine whether a feature is available or is planned in a future release. Finally, you can find regulatory white papers, certifications, and registrations for Microsoft Dynamics 365 for Operations.
+You can use Issue search to search for product issues, and determine whether an issue has been resolved, is open, or has a workaround. You can also search for regulatory features, and determine whether a feature is available or is planned in a future release. Finally, you can find regulatory white papers, certifications, and registrations for Microsoft Dynamics 365 for Finance and Operations.
 
 1.  [Go to Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com).
 2.  Select a project to work in.
 3.  Click the **Issue search** tile.
 4.  Enter search terms. You can enter a keyword or group of keywords, or a Microsoft Knowledge Base (KB) number. You can also use a dollar sign ($) to indicate an Application Object Tree (AOT) object path in the format $\\*ObjectType\\Object* or $\\*ObjectType\\Object*\#*Method* (for example, **$\\Classes\\Tax\#Save**). Standard search operators such as **AND** and **OR** are supported.
 
-You can filter the results list for resolved or open issues, workarounds, and issues that won't be fixed or are postponed. You can also filter by the version of Dynamics 365 for Operations. By default, the results are sorted by relevance. However, you can sort by date ascending, date descending, version ascending, or version descending instead. By default, all status and product version filters are selected. **Note:** Results for Microsoft Dynamics AX 2009 are included in Microsoft Dynamics AX 2012 projects only when you search for regulatory features. The following table describes the information that is provided for each status when you search by product issue.
+You can filter the results list for resolved or open issues, workarounds, and issues that won't be fixed or are postponed. You can also filter by the version of Finance and Operations. By default, the results are sorted by relevance. However, you can sort by date ascending, date descending, version ascending, or version descending instead. By default, all status and product version filters are selected. **Note:** Results for Microsoft Dynamics AX 2009 are included in Microsoft Dynamics AX 2012 projects only when you search for regulatory features. The following table describes the information that is provided for each status when you search by product issue.
 
 <table>
 <colgroup>

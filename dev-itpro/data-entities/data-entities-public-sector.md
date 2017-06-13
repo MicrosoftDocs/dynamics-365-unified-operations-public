@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data entities - Public sector
-description: This article provides a list of the data entities that are available for the Public sector functionality in Microsoft Dynamics 365 for Operations.
+description: This article provides a list of the data entities that are available for Public sector.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for the Public sector functionality in Microsoft Dynamics 365 for Operations.
+This article provides a list of the data entities that are available for Public sector.
 
 Available data entities
 -----------------------
@@ -302,7 +302,7 @@ All General ledger data entities and the setup are a prerequisite for importing 
 | 140                | 26.1.007 PA – Categories, posting, and line property. Note: If you’re using demo data, records will fail in the Line property setup because of a dependency on Projects. Re-import this package after you’ve imported the Project master data entity.                                                                                                    |
 | 141                | 26.1.008 PA – Forecasts setup                                                                                                                                                                                                                                                                                                                            |
 | 142                | 26.1.009 PA – Retention setup                                                                                                                                                                                                                                                                                                                            |
-|                    | Important: Before you proceed with additional data import, you must manually set up Project management and accounting parameters, because that information is required in order to complete the remaining steps. The data entity isn’t yet part of the Microsoft Dynamics 365 for Operations February 2016 release.                                      |
+|                    | Important: Before you proceed with additional data import, you must manually set up Project management and accounting parameters, because that information is required in order to complete the remaining steps.                                      |
 | 143                | 26.1.010 PA – Grants setup                                                                                                                                                                                                                                                                                                                               |
 | 144                | 26.1.011 PA – Project contracts. Note: Records will fail in Project funding source data entity because of a dependency on Grants. You must manually set up Grants from demo data by using the components that were imported in 26.1.010 PA – Grants setup. Records will fail in Project funding rule because of a dependency on Project funding sources. |
 | 145                | 26.1.012 PA – Inventory project consumption setup                                                                                                                                                                                                                                                                                                        |

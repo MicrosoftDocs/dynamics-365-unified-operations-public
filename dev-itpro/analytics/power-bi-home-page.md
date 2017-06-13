@@ -1,8 +1,10 @@
 ---
 # required metadata
 
+
 title: Power BI content available
 description: This topic lists the Power BI content that is available and points you to resources where you can learn more about it.
+
 author: sericks007
 manager: AnnBe
 ms.date: 06/16/2017
@@ -32,6 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Power BI content available
 [!include[banner](../includes/banner.md)]
+
 
 This topic lists the Microsoft Power BI content that is available and points you to resources where you can learn more about it.
 

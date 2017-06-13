@@ -156,10 +156,10 @@ When a document is submitted for processing, a workflow instance is created. You
     </tr>
     <tr class="odd">
     <td>User</td>
-    <td>Specific Dynamics 365 for Operations users</td>
+    <td>Specific Finance and Operations users</td>
     <td><ol>
     <li>On the <strong>Recipient</strong> tab, click <strong>User</strong>.</li>
-    <li>On the <strong>User</strong> tab, the <strong>Available users</strong> list includes all Dynamics 365 for Operations users. Select the users to send notifications to, and move those users into the <strong>Selected users</strong> list.</li>
+    <li>On the <strong>User</strong> tab, the <strong>Available users</strong> list includes all Finance and Operations users. Select the users to send notifications to, and move those users into the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>

@@ -119,11 +119,11 @@ LookupActions (ActionPane)
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps. **Standard form guidelines**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md)document.
+-   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
 
 **Lookup guidelines**
 
--   **Grid** guidelines have been consolidated into the Dynamics 365 for Operations [General Form Guidelines ](general-form-guidelines.md)document, in the Grid guidelines section.
+-   **Grid** guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md)document, in the Grid guidelines section.
 -   If you must show different “views” (tabs) within the lookup, use a combo box to let the user to switch between tabs.
 -   You can optionally use a tree view in the lookup. Also consider providing a standard grid because of the complexity that is involved in showing additional fields of data in a tree.
 -   Don't have more than five columns in the grid. The lookup resizes to show all columns, so five columns is very wide.

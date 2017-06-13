@@ -42,6 +42,7 @@
 ## Receipts
 ### [Set up receipt templates](receipt-templates-printing.md) 
 ### [Send email receipts from MPOS](email-receipts.md)
+## [Task recorder and Help for POS](task-recorder-retail-pos.md)
 # Monitoring and analysis
 ## [Monitor sales and margin performance](monitor-sales-margin-performance.md)
 ## [Analyze sales trends and patterns](analyze-sales-trends-patterns.md)
@@ -53,6 +54,7 @@
 ## [Price adjustments and discounts](price-adjustments-discounts.md)
 ## [Determine the optimal combination of overlapping discounts](optimal-combination-overlapping-discounts.md)
 ## [Define channel-specific discounts](define-channel-specific-discounts.md)
+## [Create coupons for retail sales](retail-coupons.md)
 # Products and merchandising
 ## [Retail hierarchies](retail-hierarchies.md)
 ## [Create and manage attributes](create-manage-attributes.md)
@@ -60,6 +62,7 @@
 ## [Set up bar codes](set-up-bar-codes.md)
 ## [Set up bar code masks](set-up-bar-code-masks.md)
 ## [Set up assortments](set-up-assortments.md)
+## [Sell and return products outside of an assortment](sell-return-outside-assortments.md)
 # Loyalty
 ## [Set up a customer loyalty program](set-up-customer-loyalty-program.md)
 # Inventory
@@ -78,6 +81,6 @@
 # [Developer and Administrator](/dynamics365/unified-operations/dev-itpro/index)
 
 # Other resources
-## [Dynamics 365 for Operations glossary](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/retail/toc.json)
+## [Dynamics 365 for Retail glossary](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/retail/toc.json)
 ## [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/retail/toc.json)
 

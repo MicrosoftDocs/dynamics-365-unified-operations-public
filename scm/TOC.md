@@ -43,6 +43,8 @@
 ### [Set up vendor accounts](procurement/set-up-vendor-accounts.md)
 ### [Vendor collaboration with external vendors](procurement/vendor-collaboration-work-external-vendors.md)
 ### [Vendor collaboration with customers](procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+### [Use external catalogs for PunchOut eProcurement](use-external-catalogs-for-punchout.md)
+### [Set up an external catalog for PunchOut eProcurement](set-up-external-catalog-for-punchout.md)
 ### [Collaborate with vendors by using the Vendor portal](procurement/collaborate-vendors-vendor-portal.md)
 ### [Vendor collaboration mobile workspace](procurement/vendor-collaboration-mobile-workspace.md)
 ### [Vendor portal user security](procurement/configure-security-vendor-portal-users.md)
@@ -53,6 +55,7 @@
 ### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 ### [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Product information management
+## [Product information overview](pim/product-information.md)
 ## Maintain product categories
 ## Maintain product information
 ### Maintain product definition
@@ -92,6 +95,8 @@
 ## Export product information data
 # Production control
 ## [Production process overview](production-control/production-process-overview.md)
+### [Cross-docking from production orders to outbound docks](cross-docking-opportunities.md)
+### [Register material consumption using a mobile device](register-material-consumption-hand-held-device.md)
 ## [Mixed mode planning: Combine discrete, process, and lean sourcing](production-control/mixed-mode-plan.md)
 ## [Manage subcontracting work in production](production-control/manage-subcontract-work-production.md)
 ## Discrete manufacturing
@@ -181,6 +186,8 @@
 ## [Transportation management](transportation/transportation-management-overview.md)
 ## [Transportation engine](transportation/transportation-management-engines.md)
 # Warehouse management
+## Advanced warehouse management
+### [Migrate from AX 2012 to Finance and Operations](migration-warehouse-management-processes.md)
 ## Setup 
 ### [Control work by using work templates and location directives](warehousing/control-warehouse-location-directives.md)
 ### [Manage warehouse workers](warehousing/manage-warehouse-workers.md)
@@ -188,8 +195,13 @@
 ### [Warehouse work policies](warehousing/warehouse-work-policies.md)
 ### [Unit of measure and stocking policies](warehousing/unit-measure-stocking-policies.md)
 ### [Warehouse Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
+### [Batch and license plate confirmation](batch-and-license-plate-confirmation.md)
+### [Movement of inventory with associated work in Warehouse management](move-inventory-associated-work.md)
+### [System grouping on an open work list](system-group-on-open-work-list.md)
+### [Product confirmation for cluster picking](cluster-picking-item-confirmation.md)
 ## Picking and packing
 ### [Packing materials and fees](warehousing/pack-materials-packing-material-fees.md)
+### [Piece picking confirmation](piece-picking-confirmation.md)
 ## Inventory counting
 ### [Block inventory](inventory/inventory-blocking.md)
 ### [Cycle counting](warehousing/cycle-counting.md)
@@ -216,6 +228,6 @@
 # [Developer and Administrator](/dynamics365/unified-operations/dev-itpro/index)
 
 # Other resources
-## [Dynamics 365 for Operations glossary](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## [Finance and Operations glossary](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 ## [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 

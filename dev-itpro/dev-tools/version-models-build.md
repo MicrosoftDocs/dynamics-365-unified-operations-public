@@ -58,7 +58,7 @@ As code is updated, the build is used to produce new packages that can be deploy
 ## Setting up versioning
 For build definitions that are created by Platform update 6 or newer deployments, the task to include build version in models is automatically added and active. The default build number of a new build definition in VSTS consists of the year, month, and day, and the incremental number of the build for that day. For more information about build numbers in VSTS, and the options that are available, see [Build definition options](https://www.visualstudio.com/en-us/docs/build/define/options#Buildnumberformat) on the Microsoft Visual Studio docs site.
 
-The Microsoft Dynamics 365 for Operations automated build will apply the build version number to the models that are built.
+The automated build will apply the build version number to the models that are built.
 
 ## Preventing models from being updated
 By default, the build task assigns versions only to models that are in layers above the ISP layer. Therefore, customers can consume code models from third-party vendors without overwriting the version numbers that are supplied in their models. However, you can also prevent other models from having their version numbers overwritten during the build, regardless of layer. When you edit the build definition, on the **Variables** tab, in the **ModelVersionExclusions** variable, supply a comma-separated list of model names to exclude.

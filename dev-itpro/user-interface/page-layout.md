@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Layout in Dynamics 365 for Operations
+title: Layout
 description: This article discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
 author: jasongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Layout in Dynamics 365 for Operations
+# Layout
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,7 +40,7 @@ This article discusses layout in the web client. Layout is a design process that
 Introduction
 ------------
 
-Layout is a design process that specifies how the controls on a page appear in the web client. Layout occurs within container controls. The following table lists the container controls for Dynamics 365 for Operations.
+Layout is a design process that specifies how the controls on a page appear in the web client. Layout occurs within container controls. The following table lists the container controls.
 
 | Container   | Description                                                                                                                                            |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -52,7 +52,7 @@ Layout is a design process that specifies how the controls on a page appear in t
 
 A grid is a special type of control that has some container behaviors, such as flexible sizing (**SizeToAvailable**). However, a grid has special visualizations and isn't a general-purpose container control.
 
-## Layout: Dynamics AX 2012 vs. Dynamics 365 for Operations
+## Layout: Dynamics AX 2012 vs. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 ### Layout in Dynamics AX 2012
 
 In Microsoft Dynamics AX 2012, the arrangement of controls in containers is almost always vertical, and columns are manually set to provide some horizontal spread.
@@ -61,16 +61,16 @@ In Microsoft Dynamics AX 2012, the arrangement of controls in containers is almo
 
 **Columns**=**1** 1 2 3 **Columns**=**2** 1 4 2 5 3 In Dynamics AX 2012, sizing is achieved via the **Height** and **Width** properties. If **Height** and **Width** are set to **Auto**, the size is as large as the child controls require. If **Height** and **Width** are set to **Column**, the container is as large as it can be within the parent container. By default, **Height** and **Width** are set to **Auto** for every container.
 
-### Layout in Dynamics 365 for Operations
+### Layout in Finance and Operations
 
-In Dynamics 365 for Operations, layout is controlled by the same basic properties that control layout in Dynamics AX 2012. However, additional options have been added to support a more responsive layout. In particular, the layout of a page is based on the following factors:
+In Finance and Operations, layout is controlled by the same basic properties that control layout in Dynamics AX 2012. However, additional options have been added to support a more responsive layout. In particular, the layout of a page is based on the following factors:
 
 -   The arrangement method that is specified by the **ArrangeMethod** property.
 -   The columns that are specified by the **Columns** property.
 -   The sizing that is specified by the **HeightMode**, **WidthMode**, **Height**, and **Width** properties.
 
 ## ArrangeMethod property
-The **ArrangeMethod** property specifies a base arrangement method for a container. In Dynamics 365 for Operations, the old values were maintained. Additionally, a new property that is named **HorizontalWrap** was added primarily for panoramas, especially for tile layouts. The following table describes the various options for the **ArrangeMethod** property.
+The **ArrangeMethod** property specifies a base arrangement method for a container. In Finance and Operations, the old values were maintained. Additionally, a new property that is named **HorizontalWrap** was added primarily for panoramas, especially for tile layouts. The following table describes the various options for the **ArrangeMethod** property.
 
 | Option          | Description                                                                                                                                                                                                                            |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -80,7 +80,7 @@ The **ArrangeMethod** property specifies a base arrangement method for a contain
 | HorizontalWrap  | Controls are arranged inside columns of fixed width that wrap horizontally. This option is typically used for tile layouts in panorama sections. This option is the default value for TabPages (where **Tab.Style**=**Panorama**).     |
 
 ## ColumnsMode property
-In Dynamics 365 for Operations, a new **Fill** option was added to support responsive layouts. When this property value is set, columns automatically flow as required. The following table describes the various options for the **ColumnsMode** property.
+In Finance and Operations, a new **Fill** option was added to support responsive layouts. When this property value is set, columns automatically flow as required. The following table describes the various options for the **ColumnsMode** property.
 
 | Option | Description                                                                                                                                                                                                                                                                                                                                                                                  |
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -88,7 +88,7 @@ In Dynamics 365 for Operations, a new **Fill** option was added to support respo
 | Fixed  | Specify the number of columns that the **Columns** property should generate. Controls are evenly distributed among the columns, and their order is maintained. If the controls can't be distributed evenly among the columns, the leftmost columns receive extra controls first. This option is the default value for all controls.                                                          |
 
 ## HeightMode/WidthMode properties
-In Dynamics 365 for Operations, sizing is still accomplished via the size properties **WidthMode**+**Width** and **HeightMode**+**Height**. The following table described the various options for these properties.
+In Finance and Operations, sizing is still accomplished via the size properties **WidthMode**+**Width** and **HeightMode**+**Height**. The following table described the various options for these properties.
 
 | Option          | Description                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
