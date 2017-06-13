@@ -37,6 +37,8 @@ This topic provides an overview of the cash register functionality available for
 
 3. A sample for integration of Dynamics 365 Retail POS with Sweden-specific fiscal devices named control units.
 
+## Overview of cash register functionality for Sweden 
+
 ### Common POS features
 
 Please refer to [Microsoft Dynamics 365 for Retail documentation](../index.md) to learn common POS features available to customers in all countries/regions.
@@ -49,7 +51,7 @@ A few additional common POS features implemented for Sweden but made available t
 
 2. An option to print text fields in receipt with large-sized font
 
-    You can use the Receipt format designer parameter **Font size** to specify that the large (~double) font size should be used for a tag in a receipt format. This option may be used to print the copy indication in a receipt copy with large characters.
+    You can use the Receipt format designer parameter **Font size** to specify that the large (~double) font size should be used for a field in a receipt format. This option may be used to print the copy indication in a receipt copy with large characters.
 
 3. An option to register printing of receipt copies in the POS audit event log
 
@@ -83,13 +85,13 @@ Microsoft Dynamics 365 for Retail includes a sample for integration of POS with 
 
   - Sales, returns, receipt copies are automatically registered in a control unit connected to the HW station paired with the POS;
   
-  - The control code and manufacturing number of the control unit for a registered transaction (further referred to as "fiscal data") are captured from the control unit and saved in the transaction. The fiscal data can be viewed in Dynamics 365 for Retail on the **Retail store transactions** page;
+  - The control code and the manufacturing number of the control unit for a registered transaction (further referred to as "fiscal data") are captured from the control unit and saved in the transaction. The fiscal data can be viewed in Dynamics 365 for Retail on the **Retail store transactions** page;
   
-  - Custom fields for the control code and manufacturing number of the control unit may be added to a receipt format to print the fiscal data for the transaction in a receipt;
+  - Custom fields for the control code and the manufacturing number of the control unit may be added to a receipt format to print the fiscal data for the transaction in a receipt;
 
   - The fiscal data for a transaction is printed in the channel report **Electronic journal (Sweden)**;
 
-  - If a failure happens during the registration of a transaction in the control unit, the fiscal data for the transaction remains blank. In this case, it will not be allowed to start a new transaction or to close the current shift. The operator will be requested to re-try registering the un-registered transaction in the control unit. If the repeated attempt fails, the operator will be offered to skip the registration. Skipping the registration requires a special permission to be enabled. If the registration of a transaction in the control unit is skipped, the information about this event will be saved in the transaction instead of the fiscal data.
+  - If a failure happens during the registration of a transaction in the control unit, the fiscal data for the transaction remains blank. In this case, it will not be allowed to start a new transaction or to close the current shift. The operator will be requested to re-try registering the un-registered transaction in the control unit. If the repeated attempt fails, the operator will be offered to skip the registration. Skipping the registration requires a special permission to be enabled. If the registration of a transaction in the control unit is skipped, the information about this event is saved in the transaction instead of the fiscal data.
 
 **NOTE**: customer orders are not supported by the sample for the integration. A sample for the control unit integration for customer orders will be available later.
 
@@ -125,9 +127,9 @@ The following settings need to be made for Sweden:
 
     - Sales tax settings in items (item sales tax groups for sales)
 
-    Please refer to the [Sales tax overview](../../operations/financials/general-ledger/indirect-taxes-overview.md) page for more information on setting up and using sales tax in Dynamics 365 for Finance and Operations. 
+    Please refer to the [Sales tax overview](../../operations/financials/general-ledger/indirect-taxes-overview.md) page for more information on setting up and using sales tax in Dynamics 365 for Finance and Operations and Dynamics 365 for Retail. 
 
-2. Update retail store details on the page **All retail stores**. In particular, set the following parameters:
+2. Update retail store details on the **All retail stores** page. In particular, set the following parameters:
     
     - Set the **Sales tax group** to be used for sales to the default retail customer;
 
@@ -183,7 +185,7 @@ The following settings need to be made for Sweden:
 
 ### Control unit-specific settings
 
-The following setting need to be made to enable the [sample of integration](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md) of Dynamics 365 Retail POS with control units for Sweden:
+The following settings need to be made to enable the [sample for integration](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md) of Dynamics 365 Retail POS with control units for Sweden:
 
 1. Create fiscal register configurations and assign them to hardware profiles:
 
@@ -206,9 +208,9 @@ The following setting need to be made to enable the [sample of integration](../d
 
         - Select the name of the newly created fiscal register configuration in the **Configuration** field.
 
-2. Set up custom fields of receipt layouts to print the manufacturing number of the control unit and the control code in receipts:
+2. Set up custom fields of receipt layouts to print the control code and the manufacturing number of the control unit in receipts:
 
-    - On the **Language text** page, add two records for captions of the custom receipt layout fields. Specify the **Language ID** the captions to be used for (e.g. "sv-se"), the **Text ID** (e.g. 900001 and 900002), and the caption **Text** (e.g. "Control code" and "Control unit ID");
+    - On the **Language text** page, add two records for the captions of the custom receipt layout fields. Specify the **Language ID** for the captions (e.g. "sv-se"), the **Text ID** (e.g. 900001 and 900002), and the caption **Text** (e.g. "Control code" and "Control unit ID");
 
     - On the **Custom fields** page, add two records for the custom receipt layout fields. Select **Receipt** in the **Type** field. Specify names and captions of the custom receipt layout fields:
 
