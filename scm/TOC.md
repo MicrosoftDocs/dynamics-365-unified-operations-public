@@ -198,7 +198,7 @@
 ### [Unit of measure and stocking policies](warehousing/unit-measure-stocking-policies.md)
 ### [Warehouse Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
 ### [Batch and license plate confirmation](warehousing/batch-and-license-plate-confirmation.md)
-### [Movement of inventory with associated work in Warehouse management](move-inventory-associated-work.md)
+### [Movement of inventory with associated work](warehousing/move-inventory-associated-work.md)
 ### [System grouping on an open work list](warehousing/system-group-on-open-work-list.md)
 ### [Product confirmation for cluster picking](warehousing/cluster-picking-item-confirmation.md)
 ## Picking and packing
