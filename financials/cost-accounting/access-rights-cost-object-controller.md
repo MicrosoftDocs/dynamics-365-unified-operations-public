@@ -106,5 +106,7 @@ The settings for the Access list hierarchy are used to control the data that is 
 > - This topic shows the prerequisites that must be in place before you can use the **Cost control** workspace.
 
 See also
-- [Dimension hierarchy](dimension-hierarchy.md)
+
 - [Cost control workspace](cost-control-workspace.md)
+- [Dimension hierarchy](dimension-hierarchy.md)
+- [Set up security for Cost accounting content pack](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
