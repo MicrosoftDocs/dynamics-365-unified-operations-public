@@ -2,7 +2,7 @@
 # required metadata
 
 title: Document generation, publishing, and printing capabilities in on-premises deployments
-description: This topic describes document generation, publishing, and printing capabilities in on-premises deployments.
+description: This topic describes the capabilities for generating, publishing, and printing documents in on-premises deployments.
 author: TJVass
 manager: AnnBe
 ms.date: 06/16/2017
@@ -31,50 +31,56 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[banner](../includes/banner.md)]
 
-This article describes the document generation, publishing, and printing capabilities present in the on-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.  The platform provides a fully integrated enterprise document generation experience powered by Microsoft SQL Server Reporting Services (SSRS).  The service allows users to produce standard industry documents linked to business processes like sales invoices, checks, and packing slips from any supported device.  Administrators can use built-in tools to configure the service to allow users to securely connect to network printers.
+This topic describes the capabilities for generating, publishing, and printing documents in on-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Finance and Operations provides a fully integrated experience for enterprise document generation that is powered by Microsoft SQL Server Reporting Services (SSRS). From any supported device, users can produce standard industry documents that are linked to business processes. These documents include sales invoices, checks, and packing slips. Built-in tools let administrators configure the service so that users can securely connect to network printers.
 
-Upgrade legacy solutions built on the AX 2012 SQL Reporting Services framework or take advantage of modern solutions available in [Lifecycle Services (LCS)](https://lcs.dynamics.com).
+You can upgrade solutions that are built on the Microsoft Dynamics AX 2012 SQL Reporting Services framework, or you can take advantage of the modern solutions that are available in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com).
 
 ## Document publishing services: secure, reliable, and convenient
-Employees spend a great deal of time on the go.  As a result, businesses depend heavily on their employees’ ability to stay productive while working remotely.  Even in today’s modern world, documents remain critical for business transactions and record keeping.  
+Employees spend lots of time on the go. Therefore, businesses depend on their employees’ ability to stay productive while they work remotely. However, even today, documents remain critical for business transactions and record keeping.  
 
-Finance and Operations allows customers to print documents on network printers from mobile devices, automate the creation of business documents, and use built-in tools to configure document routing instructions to multiple recipients.
+From their mobile devices, users can print documents on network printers. Users can also automate the creation of business documents and use built-in tools to configure instructions for routing documents to multiple recipients.
 
-**Publishing options:**
-- **Email –** Server based distribution of mail with reports linked as attachments
-- **Archive –** Store reports for future reference and regulatory compliance
-- **File –** Produce a PDF file that’s downloaded directly to the browser for local printing
-- **Print –** Send documents directly to network printers from all supported platforms including mobile devices
+The following options are available for document publishing:
+
+- **Email** – Distribute mail via a server, and link reports as attachments.
+- **Archive** – Store reports for future reference and regulatory compliance.
+- **File** – Produce a PDF file that is downloaded directly to the browser for local printing.
+- **Print** – Send documents directly to network printers from all supported platforms. These platforms include mobile devices.
 
 ![Document publishing services](media/document-publishing-services.png)
 
-For a high-level summary of information access options available in the cloud-hosted solution, see [Printing in Finance and Operations applications](print-documents.md) for additional details.
+For a high-level summary of the options for information access that are available in the cloud-hosted solution, see [Printing in Finance and Operations applications](print-documents.md).
 
-## Comparing cloud vs on-premises
-Unlike the cloud-hosted offering, the on-premises publication service renders documents as PDF files that are automatically downloaded to the browser.  This allows users to conveniently save documents and/or print hard copies using local connected devices.  Use built-in administrative forms to control access to network printers directly from the application.  Interact with reports on-demand or schedule automatic jobs to securely generate and distribute documents on a recurring basis.
+## Comparing the cloud-hosted and on-premises services
+Unlike the cloud-hosted service, the on-premises publishing service produces documents as PDF files that are automatically downloaded to the browser. Therefore, users can save documents or print hard copies by using local connected devices. Administrators can manage access to network printers directly from the application, by using built-in administrative pages. Users can interact with reports on demand, or they can schedule automatic jobs to securely generate and distribute documents on a recurring basis.
 
-The following illustration identifies the components involved in printing documents.
+The following illustration shows the components that are involved in document printing.
 
-![Printing documents](media/Cloud-vs-on-premises.png)
+![Document printing](media/Cloud-vs-on-premises.png)
 
-See related topic in the Appendix section for details on using extensions to manage availability of the embedded drill-through links in application reports.
+For information about how to use extensions to manage availability of the embedded drill-through links in application reports, see the Appendix.
 
 ## Managing access to network printers
-Use built-in administrative forms to manage access to network printers.  Network printers are secured per company and shared by users of the application.  The documents are then printed using a privileged domain account based on settings supplied by the user.  With on-premises deployments, there’s no need to install an adapter to connect to domain resources like printers and fax machines.
+Administrators can use built-in administrative pages to manage access to network printers. Network printers are secured per company and shared by users of the application. Documents are then printed by using a privileged domain account, based on settings that the user provides. In on-premises deployments, you don't have to install an adapter to connect to domain resources such as printers and fax machines.
 
-Here’s a screen shot of the form used to manage network printers.
+The following illustration shows the page that is used to manage network printers.
 
-![Manage network printers](media/manage-network-printers.png)
+![Manage network printers page](media/manage-network-printers.png)
 
 ## Appendix
 
-### How to turn-on embedded links in business documents?
-Here's the code used to enable embedded links in PDF documents. 
+### Turning on embedded links in business documents
+Here is the code that you can use to make embedded drill-through links available in PDF documents. 
 
-![Enable embedded links](media/enable-embedded-links.png)
-
-
-
-
-
-
+    class Controller extends SrsReportRunController
+    {
+        protected void preRunModifyContract()
+        {
+            this.parmReportContract().parmRdlContract().parmEnableFileDrillThrough(true);
+            super();
+        }
+        static void main(Args _args)
+        {
+            ...
+        }
+    }
