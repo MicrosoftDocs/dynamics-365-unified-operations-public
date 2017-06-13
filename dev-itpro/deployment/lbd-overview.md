@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 Dynamics 365 for Finance and Operations now supports on premises deployments to support running business processes in customer data centers with the “Local Business Data” deployment option. With this deployment option, application servers and the SQL database will run in a customer’s (or its partner’s) data center. Customers and partners will manage the application lifecycle through Lifecycle Service (LCS) in the Microsoft Cloud. LCS features such as business process modeling, software deployment and patching, and monitoring and diagnostics are available for on premises deployments. 
 
-Architecture 
+## Architecture 
 
 The Local Business Data deployment option uses proven Dynamics 365 for Finance and Operations cloud components deployed on premises using an Windows Server Service Fabric standalone clusters.  Service Fabric is Microsoft’s next-generation middleware platform for building and managing enterprise-class high-scale applications. Service Fabric standalone clusters can be deployed on any computer running Windows Server. 
 
