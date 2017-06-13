@@ -155,7 +155,7 @@ Depending on code quality, issue remediation and retesting might require several
 ### Pre-go-live checklist
 The pre-go-live checklist is a recommended procedure that can help reduce the chance of errors during the final cutover to go-live. One week before go-live is due, stop configuration changes in AX 2012 (that is, under \<module\>\Setup). This restriction on configuration changes is merely procedural. The Microsoft Dynamics AX system administrators just agree to put changes of this type on hold at this point.
 
-Freeze code changes in the Finance and Operations code base. No further changes are allowed unless evaluated to block the go-live and acceptable risk.
+We recommend that you also freeze code changes in the Finance and Operations code base. No further changes should be allowed unless they have been evaluated, and have been shown to not block go-live.  
 
 After the configuration restriction and code freeze are in place, data upgrade should be run for the last time before cutover. In this way, you can make sure that everything still works as expected. 
 
