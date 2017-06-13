@@ -3,7 +3,7 @@
 
 title: Sell and return products outside of an assortment
 description: With Dynamics 365 for Retail, you can sell and return products outside of assortments.
-author: prabhu-padhi
+author: pdp1207
 manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
