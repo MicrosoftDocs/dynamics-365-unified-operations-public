@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up earning codes and earning code groups
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]]
 
 
 This topic explains how to set up earning codes and earning code groups. Earning codes uniquely identify every type of earning that workers receive. They include parameters that are related to earnings, such as accounting rules, tax laws, reporting requirements, and gross-up capability.

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Post payroll and generate vendor invoices
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]]
 
 
 This topic walks you through the process for posting payroll distributions and generating the required vendor invoices.

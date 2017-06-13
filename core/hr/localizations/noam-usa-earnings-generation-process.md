@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Earnings and generating earnings FAQ
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]]
 
 
 This topic answers some frequently asked questions about earnings and generating earnings. It includes questions about distributions and earning lines, recurring earnings, calculating salaries for workers who are on leave, and earnings generation. 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Pay statements and generating payments FAQ
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]]
 
 
 This topic answers questions that are related to activities that go beyond standard payroll processing. Examples include payments that are made to workers outside Payroll and final payments to terminated workers. 

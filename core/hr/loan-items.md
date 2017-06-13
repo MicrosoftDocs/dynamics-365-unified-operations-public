@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage items lent to workers
 
-[!include[banner](includes/banner.md)]
+[!include[banner](../includes/banner.md)]
 
 
 Loan items are records that help managers track the physical items that your company lends to its workers. 

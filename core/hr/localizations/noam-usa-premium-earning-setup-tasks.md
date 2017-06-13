@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up premium earnings
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]]
 
 
 This topic provides information about premium earnings and how to set them up. Premium earnings are extra earnings, such as bonuses or overtime premiums, that are paid to workers when specific conditions are met. Other types of premium earnings include a differential for hours that are worked on a second or third shift, and additional pay for workers who hold a certificate for advanced training or qualifications.

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Garnishments, tax levies, and administrative fees FAQ
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]]
 
 
 This topic lists frequently asked questions and answers about garnishments and tax levies. It provides information to help you quickly and accurately set up garnishments and tax levies to keep your organization in compliance with applicable laws, regulations, and court orders. If you have a question that isn’t answered here or in the related topics, confer with your legal advisors.

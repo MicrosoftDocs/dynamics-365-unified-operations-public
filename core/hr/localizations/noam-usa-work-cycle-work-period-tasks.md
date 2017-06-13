@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up work cycles and work periods
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]]
 
 
 This topic explains how to set up work cycles and work periods. You use work cycles to specify the frequency of work periods. Some earnings, such as the regular-rate overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods.

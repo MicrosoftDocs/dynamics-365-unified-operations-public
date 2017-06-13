@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up pay cycles and pay periods
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]]
 
 
 Pay cycles determine the intervals that workers are paid in. This topic explains setup variations, how to generate periods for a pay cycle, and how to assign periods to a worker's position. 

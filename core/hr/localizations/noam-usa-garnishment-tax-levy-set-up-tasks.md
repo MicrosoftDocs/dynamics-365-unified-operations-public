@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up garnishments and tax levies
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]]
 
 
 This topic explains how to set up garnishments and tax levies. Garnishments and tax levies are created and managed by using the benefit framework. This framework helps guarantee that the effect that garnishments and tax levies have on payroll is handled correctly.

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up payroll calculation frequencies
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]]
 
 
 This topic describes how to set up payroll calculation frequencies. Payroll calculation frequencies determine how often payroll contributions and deductions take place throughout the payroll process.

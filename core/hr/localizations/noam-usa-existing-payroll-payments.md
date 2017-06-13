@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Process existing payroll payments
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]]
 
 
 This topic describes tasks such as reprinting pay statements, and replacing paychecks that have been lost or damaged. It also explains how to complete similar tasks after pay statements have been generated or payments have been issued to workers.

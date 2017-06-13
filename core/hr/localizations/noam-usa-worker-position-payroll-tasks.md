@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up payroll for workers
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]]
 
 
 Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits. This information is used when you generate pay statements for the worker. In addition, if contribution and deduction amounts are changed on a benefit, that change must be made for each worker who is enrolled in that benefit. This topics provides information about these tasks and the fields that are used to complete them.

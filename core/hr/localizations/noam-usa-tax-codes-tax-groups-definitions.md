@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Tax codes, tax groups, and posting definitions FAQ
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]]
 
 
 This topic answers frequently asked questions about tax and posting definitions.

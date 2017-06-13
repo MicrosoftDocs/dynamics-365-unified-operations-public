@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a department and associate it with the department hierarchy
 
-[!include[banner](includes/banner.md)]
+[!include[banner](../includes/banner.md)]
 
 
 A department is an operating unit that represents a category or functional area of an organization. A department is responsible for a specific area of the organization, such as sales, accounting, or human resources. You can use departments to report on functional areas. Departments might have profit and loss responsibility.

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Form I-9 employment verification
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]]
 
 
 This topic provides information about Form I-9 verification. Employers must complete Form I-9 for all new employees who will be working in the United States. The form documents that the employer has verified the identity of the new employee, and that the employee is authorized to work in the United States.

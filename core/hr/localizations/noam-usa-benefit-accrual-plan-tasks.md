@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up benefit accrual plans
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]]
 
 
 This topic describes the process for setting up benefit accrual plans. It includes information about how to gather information and enroll workers.
