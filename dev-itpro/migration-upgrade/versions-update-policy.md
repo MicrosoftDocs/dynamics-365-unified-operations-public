@@ -33,14 +33,9 @@ ms.dyn365.ops.version: Platform update 2
 
 [!include[banner](../includes/banner.md)]
 
-This document outlines the lifecycle and support policies for the Dynamics 365
-for Operations, Enterprise edition online service and Dynamics 365 for
-Operations on-premises, Enterprise edition software deployments.
+This document outlines the lifecycle and support policies for the Dynamics 365 for Operations, Enterprise edition online service and Dynamics 365 for Operations on-premises, Enterprise edition software deployments.
 
-Modern Lifecycle Policy
------------------------
-
-(<https://support.microsoft.com/en-us/help/30881>)
+## Modern Lifecycle Policy
 
 The Modern Lifecycle Policy covers products and services that are serviced and
 supported continuously. For more information about this policy, click
@@ -67,8 +62,7 @@ following servicing and system requirements:
 
 **Note:** Platform versions maintain backward compatibility.
 
-Online Service Update Policies
-------------------------------
+## Online Service Update Policies
 
 -   **Dynamics 365 for Operations platform updates** may be initiated by
     Microsoft or by the customer using Lifecycle Services. After the customer
@@ -91,8 +85,7 @@ customer of the required downtime window (if any) and apply the fix to the
 applicable Dynamics 365 for Operations environment. After fixes are applied,
 Microsoft will communicate completion to the customer.
 
-On-premises Software Update Policies
-------------------------------------
+## On-premises Software Update Policies
 
 The customer is in full control of its on-premises deployments and must follow
 this policy. The customer is in control of installing the updates in their
@@ -115,10 +108,9 @@ on-premises software.
 The initial release of the on-premises software will be based on platform update
 8 and Application version 7.2.
 
-Dates and versions for Dynamics 365 for Operations Application and Platform Releases
-====================================================================================
+## Dates and versions for Dynamics 365 for Operations Application and Platform Releases
 
-Table 1. Application Releases
+### Table 1. Application Releases
 -----------------------------
 
 | Release                                | Minor           | Version   | Build Number | Availability  | Expiration date | Product life  |
@@ -127,15 +119,13 @@ Table 1. Application Releases
 |                                        | Application 7.2 | July 2017 | 7.2.x        | July 2017     | November 2019   | December 2027 |
 | Application 8.0 (major future release) |                 | May 2018  | 8.0.x        | TBD           | TBD             | December 2027 |
 
-Table 2 Retail application release
-----------------------------------
+### Table 2 Retail application release
 
 | Release                | Minor | Version | Build Number | Availability | Expiration date | Product life  |
 |------------------------|-------|---------|--------------|--------------|-----------------|---------------|
 | Retail Application 7.2 |       | TBD     | 7.2. x?      | July         | ?               | December 2027 |
 
-Table 3 Platform Releases
--------------------------
+### Table 3 Platform Releases
 
 | Release           | Build Number    | Availability  | Support End date | Product Life  |
 |-------------------|-----------------|---------------|------------------|---------------|
@@ -147,8 +137,7 @@ Table 3 Platform Releases
 | Platform update 2 | 7.0.4230.16130  | August 2016   | August 31, 2017  | December 2027 |
 | Platform update 1 | 7.0.4127.16103  | May 2016      | May 31, 2017     | December 2027 |
 
-Date for Dynamics 365 for Operations On-Premises Release
-========================================================
+## Date for Dynamics 365 for Operations On-Premises Release
 
 The initial release of the on-premises software will be based on platform update
 8 and Application version 7.2. Microsoft commits to support the deployments of
