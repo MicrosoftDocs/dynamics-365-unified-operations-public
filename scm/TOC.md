@@ -135,6 +135,7 @@
 #### [Model a lean organization](production-control/lean-manufacturing-modeling-lean-organization.md)
 #### [Operations resources](production-control/operations-resources.md)
 ### Schedule kanban jobs
+#### [Visual scheduling for lean manufacturing](production-control/visual-scheduling-lean-manufacturing.md)
 #### [Kanban job scheduling for lean manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
 #### [Job scheduling](production-control/job-scheduling.md)
 ### Operate kanban jobs
@@ -152,6 +153,7 @@
 #### [Operations scheduling](production-control/operations-scheduling.md)
 #### [Operations scheduling options](production-control/operation-scheduling-options.md)
 #### [Job scheduling](production-control/job-scheduling.md)
+#### [Gantt chart for job scheduling](production-control/visual-scheduling-production.md)
 ### Operate production jobs
 #### [Consolidated batch orders](production-control/consolidated-batch-orders.md)
 #### [Material substitution in manufacturing](production-control/substitute-items-bom-lines.md)
@@ -205,6 +207,7 @@
 ## Inventory counting
 ### [Block inventory](inventory/inventory-blocking.md)
 ### [Cycle counting](warehousing/cycle-counting.md)
+### [Partial location cycle counting](warehousing/partial-location-cycle-counting.md)
 ### [Inventory journal](inventory/inventory-journals.md)
 ### [Inventory location](inventory/inventory-locations.md)
 ### [Inventory status](inventory/inventory-statuses.md)
@@ -212,6 +215,7 @@
 ## Containerization 
 ## Replenishment
 ### [Replenishment](warehousing/replenishment.md)
+### [Replenishment with withdrawal kanbans](warehousing/material-replenishment-withdrawal-kanban.md)
 ## Mobile devices
 ### [Install and configure the warehousing app ](warehousing/install-configure-warehousing-app.md)
 ### [Configure field names in warehousing app](warehousing/configure-app-field-names-priorities-warehouse.md)
