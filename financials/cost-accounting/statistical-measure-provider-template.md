@@ -68,7 +68,7 @@ A statistical dimension member automatically becomes a predefined allocation bas
 
 Here are some examples of typical statistical dimension members.
 
-| Statistical dimension name  | Statistical elements |                         | Unit |
+| Statistical dimension name  | Statistical elements | Description             | Unit |
 |-----------------------------|----------------------|-------------------------|------|
 | Shared Statistical elements | FTE                  | Full time employees     | Ea.  |
 | Shared Statistical elements | Electricity          | Electricity consumption | kWh  |
@@ -98,7 +98,7 @@ The HcmEmployment table holds a list of all employees in the instance. This tabl
 
 Here is an example of employees in the HcmEmployment table.
 
-| Name       | Cost center |    | Worker type |
+| Name       | Cost center | Description   | Worker type |
 |------------|-------------|----|-------------|
 | Employee 1 | CC001       | HR | Employee    |
 | Employee 2 | CC002       | FI | Employee    |
