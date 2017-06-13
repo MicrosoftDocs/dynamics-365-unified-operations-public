@@ -60,10 +60,10 @@
 ## Payments and settlements
 ### [Centralized payments for Accounts payable](accounts-payable/centralized-payments-accounts-payable.md)
 ### [Configure settlement](cash-bank-management/configure-settlement.md)
-### [Vendor payments workspace](Vendor-payments-workspace.md)
+### [Vendor payments workspace](vendor-payments-workspace.md)
 ### [Create vendor payments by using a payment proposal](accounts-payable/create-vendor-payments-payment-proposal.md)
 ### [Reverse a vendor payment](accounts-payable/reverse-vendor-payment.md)
-### [Electronic reporting for vendor checks](electronic reporting sample vendor checks.md)
+### [Electronic reporting for vendor checks](electronic-reporting-sample-vendor-checks.md)
 ### [Prepayment invoices and prepayments overview](accounts-payable/prepayments-invoices-vs-prepayments.md)
 ### [Settle a partial vendor payment before the discount date](accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 ### [Settle a partial vendor payment that has discounts on vendor credit notes](accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
@@ -98,7 +98,7 @@
 ### [Reimburse customers](accounts-receivable/reimburse-customers.md)
 ### [Customer payments for a partial amount](accounts-receivable/customer-payments-partial-amount.md)
 # [Cash and bank management](cash-bank-management/cash-bank-management.md)
-## [Cash flow forecasting](cash-flow-forecasting.md)
+## [Cash flow forecasting](cash-bank-management/cash-flow-forecasting.md)
 ## [Bank management workspace](cash-bank-management/bank-management-workspace.md)
 ## [Cash discounts](cash-bank-management/cash-discount-handling-overpayments.md)
 ## [Settlement overview](cash-bank-management/settlement-overview-centralized-payments.md)
@@ -228,5 +228,5 @@
 
 # Other resources
 
-## [Microsoft Dynamics 365 for Finance and Operations, Enterprise edition glossary](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/operations/financials/toc.json)
-## [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/financials/toc.json)
+## [Microsoft Dynamics 365 for Finance and Operations, Enterprise edition glossary](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/financials/toc.json)
+## [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/financials/toc.json)
