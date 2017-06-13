@@ -51,12 +51,8 @@ FAQ and guidelines
 - [Manage third-party models and runtime packages by using source control](manage-runtime-packages.md)
 - [Version models in the automated build](version-models-build.md)
 ### Blogs
+
 - [Developer ALM (blog)](https://blogs.msdn.microsoft.com/axdevalm/)
 
 ## Servicing
 - [Servicing environments](..\dev-tools\developer-home-page.md#service-environments)
-
-
-
-
-

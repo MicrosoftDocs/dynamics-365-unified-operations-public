@@ -58,7 +58,7 @@ You can create PO lines where the **New fixed asset** option is enabled. This op
 
 You can select multiple orders and process receipt on all those orders together. This approach isn’t used very often, but you might want to use it if a supplier has consolidated shipments for you into a single load. During product receipt on the purchase, there is a function for doing summary updates. Summary updates let you post a single packing slip from the supplier for more than one PO.  
 
-POs might be created from a sales order where the **Direct delivery** option was selected. When direct delivery is used, the products never arrive in your warehouse but are shipped directly from the supplier to the customer. In this case, the receipt is usually recorded directly on the PO. The receipt can be done automatically, such as through electronic data interchange (EDI) integration with the supplier. Alternatively, if the PO is an intercompany PO, Microsoft Dynamics 365 for Operations automates the receipt on the intercompany sales order when shipment occurs. When direct delivery is used, products are still accounted as inventory, even though they don’t physically arrive at the warehouse. Therefore, when product receipt is registered on the PO, the sales order is automatically updated with a packing slip, so that the overall change to inventory is 0 (zero). In direct delivery scenarios, you should not require preregistration. If you’re using warehouses that are enabled for warehouse management, you can get around the requirement for license plate registration by specifying a virtual warehouse instead. You specify this warehouse in the **Direct delivery warehouse** field on the product. 
+POs might be created from a sales order where the **Direct delivery** option was selected. When direct delivery is used, the products never arrive in your warehouse but are shipped directly from the supplier to the customer. In this case, the receipt is usually recorded directly on the PO. The receipt can be done automatically, such as through electronic data interchange (EDI) integration with the supplier. Alternatively, if the PO is an intercompany PO, Microsoft Dynamics 365 for Finance and Operations automates the receipt on the intercompany sales order when shipment occurs. When direct delivery is used, products are still accounted as inventory, even though they don’t physically arrive at the warehouse. Therefore, when product receipt is registered on the PO, the sales order is automatically updated with a packing slip, so that the overall change to inventory is 0 (zero). In direct delivery scenarios, you should not require preregistration. If you’re using warehouses that are enabled for warehouse management, you can get around the requirement for license plate registration by specifying a virtual warehouse instead. You specify this warehouse in the **Direct delivery warehouse** field on the product. 
 
 After the product receipt has been processed on the PO, the PO status is set to **Received** to indicate that the invoice can be processed for the order. You can review details about products that have already been received by using the **Product receipt journals** page.  
 
@@ -73,7 +73,7 @@ See also
 
 [Purchase order approval and confirmation](purchase-order-approval-confirmation.md)
 
-[Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

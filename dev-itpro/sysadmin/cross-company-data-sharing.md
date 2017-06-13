@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cross-company data sharing
-description: This article provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Microsoft Dynamics 365 for Operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
+description: This article provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Microsoft Dynamics 365 for Finance and Operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,12 +35,12 @@ ms.dyn365.ops.version: Platform update 1
 [!include[banner](../includes/banner.md)]
 
 
-This article provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Microsoft Dynamics 365 for Operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
+This article provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Microsoft Dynamics 365 for Finance and Operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
 
 What is this feature and how does it work?
 ------------------------------------------
 
-Cross-company data sharing lets you replicate (share) reference and group data among companies in a Dynamics 365 for Operations deployment. Data integrity is verified before replication occurs. 
+Cross-company data sharing lets you replicate (share) reference and group data among companies in a Finance and Operations deployment. Data integrity is verified before replication occurs. 
 
 Here are some examples of cross-company data sharing:
 
@@ -96,7 +96,7 @@ Cross-company data sharing isn't supported for the following scenarios:
 3.  In the **Asset type** list, click **Data package**.
 4.  Click any of the available data package files to download them.
 
-For details about how to configure Dynamics 365 for Operations to use a template, see [Configure financial cross-company data sharing (Task guide)](http://ax.help.dynamics.com/en/wiki/configure-financial-cross-company-data-sharing/).
+For details about how to configure Finance and Operations to use a template, see [Configure financial cross-company data sharing (Task guide)](http://ax.help.dynamics.com/en/wiki/configure-financial-cross-company-data-sharing/).
 
 ## Currently supported crosscompany data sharing templates
 <table>

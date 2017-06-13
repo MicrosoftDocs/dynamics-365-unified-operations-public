@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mobile invoice approvals
-description: Mobile capabilities in Microsoft Dynamics 365 for Operations let a business user design mobile experiences. For advanced scenarios, the platform also lets developers extend the capabilities as they desire. The most effective way to learn some of the new concepts on mobile is to go through the process of designing a few scenarios. This topic is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case. This topic should help you design other variations of the scenarios and can also be applied to other scenarios that aren’t related to vendor invoices.
+description: Mobile capabilities in Microsoft Dynamics 365 for Finance and Operations let a business user design mobile experiences. For advanced scenarios, the platform also lets developers extend the capabilities as they desire. The most effective way to learn some of the new concepts on mobile is to go through the process of designing a few scenarios. This topic is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case. This topic should help you design other variations of the scenarios and can also be applied to other scenarios that aren’t related to vendor invoices.
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,19 +35,19 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-Mobile capabilities in Microsoft Dynamics 365 for Operations let a business user design mobile experiences. For advanced scenarios, the platform also lets developers extend the capabilities as they desire. The most effective way to learn some of the new concepts on mobile is to go through the process of designing a few scenarios. This topic is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case. This topic should help you design other variations of the scenarios and can also be applied to other scenarios that aren’t related to vendor invoices.
+Mobile capabilities in Microsoft Dynamics 365 for Finance and Operations let a business user design mobile experiences. For advanced scenarios, the platform also lets developers extend the capabilities as they desire. The most effective way to learn some of the new concepts on mobile is to go through the process of designing a few scenarios. This topic is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case. This topic should help you design other variations of the scenarios and can also be applied to other scenarios that aren’t related to vendor invoices.
 
 Prerequisites
 -------------
 
 | Prerequisite                                                                                            | Description                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobile handbook pre-read                                                                                |(/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform.md)                                                                                                  |
+| Mobile handbook pre-read                                                                                |(/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform.md)                                                                                                  |
 | Dynamics 365 for Operations                                                                             | An environment that has Microsoft Dynamics 365 for Operations version 1611 and Microsoft Dynamics for Operations platform update 3 (November 2016)                   |
 | Install hotfix KB 3204341.                                                                              | Task recorder can erroneously record two Close commands for dropdown dialogs this is included in Dynamics 365 for Operation platform update 3 (November 2016 update) |
 | Install hotfix KB 3207800.                                                                              | This hotfix enables attachments to be viewed on the mobile client this is included in Dynamics 365 for Operation platform update 3 (November 2016 update).           |
 | Install hotfix KB 3208224.                                                                              | Application code for the mobile vendor invoice approval application this is included in Microsoft Dynamics AX application 7.0.1 (May 2016).                          |
-| An Android or iOS or a Windows device that has the mobile app installed for Dynamics 365 for Operations | Search for the app in the appropriate app store.                                                                                                                     |
+| An Android or iOS or a Windows device that has the mobile app installed for Finance and Operations | Search for the app in the appropriate app store.                                                                                                                     |
 
 ## Introduction
 Mobile approvals for vendor invoices require the three hotfixes that are mentioned in the “Prerequisites” section. These hotfixes don’t provide a workspace for the invoice approvals. To learn what a workspace is in the context of mobile, read the mobile handbook that is mentioned in the “Prerequisites” section. The invoice approvals workspace must be designed. 
@@ -131,7 +131,7 @@ As a general guidance, when working with the mobile designer, make sure to 'publ
 
 ### Create the workspace
 
-1.  In a browser, open Dynamics 365 for Operations, and sign in.
+1.  In a browser, open Finance and Operations, and sign in.
 2.  After you’ve signed in, append **&mode=mobile** to the URL as shown in the following example, and refresh the page: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
 3.  Click the **Settings** (gear) button in the upper right of the page, and then click **Mobile app**. The mobile app designer must show up just as Task recorder shows up.
 4.  Click **Add** to create a new workspace. For this example, name the workspace **My approvals**.
@@ -143,9 +143,9 @@ As a general guidance, when working with the mobile designer, make sure to 'publ
 
 ### Vendor invoices assigned to me
 
-The first mobile page that you should design is the list of invoices that are assigned to the user for review. To design this mobile page, use the **VendMobileInvoiceAssignedToMeListPage** page in Dynamics 365 for Operations. Before you complete this procedure, make sure that at least one vendor invoice is assigned to you for review, and that the invoice line has two distributions. This setup meets the requirements for this scenario.
+The first mobile page that you should design is the list of invoices that are assigned to the user for review. To design this mobile page, use the **VendMobileInvoiceAssignedToMeListPage** page in Finance and Operations. Before you complete this procedure, make sure that at least one vendor invoice is assigned to you for review, and that the invoice line has two distributions. This setup meets the requirements for this scenario.
 
-1.  In the Dynamics 365 for Operations URL, replace the name of the menu item with **VendMobileInvoiceAssignedToMeListPage** to open the mobile version of the **Pending vendor invoices assigned to me** list page in the **Accounts payable** module. Depending on the number of invoices that you have in your system assigned to you, this page will show those invoices. To find a specific invoice, you can use the filter on the left. However, we don’t require a specific invoice for this example. We just require some invoice assigned to you which is going to allow you to design the mobile page. The new pages that are available have been designed specifically for developing mobile scenarios for vendor invoice. Therefore, you must use these pages. The URL should resemble the following URL, and after you enter it, the page that is shown in the illustration must appear: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+1.  In the Finance and Operations URL, replace the name of the menu item with **VendMobileInvoiceAssignedToMeListPage** to open the mobile version of the **Pending vendor invoices assigned to me** list page in the **Accounts payable** module. Depending on the number of invoices that you have in your system assigned to you, this page will show those invoices. To find a specific invoice, you can use the filter on the left. However, we don’t require a specific invoice for this example. We just require some invoice assigned to you which is going to allow you to design the mobile page. The new pages that are available have been designed specifically for developing mobile scenarios for vendor invoice. Therefore, you must use these pages. The URL should resemble the following URL, and after you enter it, the page that is shown in the illustration must appear: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
 2.  Click the **Settings** (gear) button in the upper right of the page, and then click **Mobile app**
 3.  Select your workspace and click **Edit**
 4.  Click **Add page** to create the first mobile page.
@@ -175,9 +175,9 @@ The first mobile page that you should design is the list of invoices that are as
 
 ### Vendor invoice details
 
-To design the invoice details page for mobile, use the **VendMobileInvoiceHeaderDetails** page in Dynamics 365 for Operations. Note that, depending on the number of invoices that you have in your system, this page shows the oldest invoice (the invoice that was created first). To find a specific invoice, you can use the filter on the left. However, we don’t require a specific invoice for this example. We just require some invoice data so that we can design the mobile page. [![Workflow page](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+To design the invoice details page for mobile, use the **VendMobileInvoiceHeaderDetails** page in Finance and Operations. Note that, depending on the number of invoices that you have in your system, this page shows the oldest invoice (the invoice that was created first). To find a specific invoice, you can use the filter on the left. However, we don’t require a specific invoice for this example. We just require some invoice data so that we can design the mobile page. [![Workflow page](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
-1.  In the Dynamics 365 for Operations URL, replace the name of the menu item with **VendMobileInvoiceHeaderDetails** to open the form
+1.  In the Finance and Operations URL, replace the name of the menu item with **VendMobileInvoiceHeaderDetails** to open the form
 2.  Open the mobile designer from the **Settings** (gear) button.
 3.  Click the **Edit** button to start edit mode in the workspace.
 4.  Select the **My vendor invoices **page that you created earlier, and then click **Edit**.
@@ -209,7 +209,7 @@ To design the invoice details page for mobile, use the **VendMobileInvoiceHeader
 
 ### Workflow actions
 
-To add workflow actions, use the **VendMobileInvoiceHeaderDetails** page in Dynamics 365 for Operations. To open this page, replace the name of the menu item in the URL, as you did earlier. Then open the mobile designer from the **Settings** (gear) button. Follow these steps to add workflow actions on the details page.
+To add workflow actions, use the **VendMobileInvoiceHeaderDetails** page in Finance and Operations. To open this page, replace the name of the menu item in the URL, as you did earlier. Then open the mobile designer from the **Settings** (gear) button. Follow these steps to add workflow actions on the details page.
 
 1.  Click the **Edit** button to start edit mode in the workspace.
 2.  Select the **Invoice details** page that you created earlier, and then click **Edit**.
@@ -306,7 +306,7 @@ Note that, the name of the pages and other controls in the JS code must be the s
 
 ### Vendor invoice line distributions
 
-The requirements for this scenario confirm that there will be only line-level distributions, and that an invoice will always have only one line. Because this scenario is simple, the user experience on the mobile device must also be simple enough that the user doesn’t have to drill down several levels to view the distributions. Vendor invoices in Dynamics 365 for Operations include the option of showing all distributions from the invoice header. This experience is what we need for the mobile scenario. Therefore, we will use the **VendMobileInvoiceAllDistributionTree** page to design this part of the mobile scenario. 
+The requirements for this scenario confirm that there will be only line-level distributions, and that an invoice will always have only one line. Because this scenario is simple, the user experience on the mobile device must also be simple enough that the user doesn’t have to drill down several levels to view the distributions. Vendor invoices in Finance and Operations include the option of showing all distributions from the invoice header. This experience is what we need for the mobile scenario. Therefore, we will use the **VendMobileInvoiceAllDistributionTree** page to design this part of the mobile scenario. 
 
 > [!NOTE] 
 > Knowing the requirements helps us decide which specific page to use and how exactly to optimize the mobile experience for the user when we design the scenario. In the second scenario, we will use a different page to show the distributions, because the requirements for that scenario differ.
@@ -407,7 +407,7 @@ The requirements for this scenario confirm that there will be only line-level di
 
 ### Validation
 
-From your mobile device, open the app, and connect to your Dynamics 365 for Operations instance. Make sure that you sign in to the company where vendor invoices are assigned to you for review. You should be able to perform the following actions:
+From your mobile device, open the app, and connect to your Finance and Operations instance. Make sure that you sign in to the company where vendor invoices are assigned to you for review. You should be able to perform the following actions:
 
 -   See the **My approvals** workspace.
 -   Drill into the **My approvals** workspace and see the **My vendor invoices** page.

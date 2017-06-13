@@ -1,4 +1,4 @@
-# [Dynamics 365 for Operations versions and update policy](versions-update-policy.md)
+# [Finance and Operations versions and update policy](versions-update-policy.md)
 # [Prepare to move to the latest update](upgrade-latest-update.md)
 # [Upgrade to the latest platform update](upgrade-latest-platform-update.md)
 # [Upgrade the Dynamics platform to the August 2016 release](update-platform-each-release.md)

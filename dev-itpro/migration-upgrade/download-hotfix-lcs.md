@@ -2,7 +2,7 @@
 # required metadata
 
 title: Download hotfixes from Lifecycle Services
-description: Use this tutorial to download the Microsoft Dynamics 365 for Operations hotfixes from Lifecycle Services (LCS).
+description: Use this tutorial to download the Microsoft Dynamics 365 for Finance and Operations hotfixes from Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-Use this tutorial to download the Microsoft Dynamics 365 for Operations hotfixes from Lifecycle Services (LCS).
+Use this tutorial to download the Microsoft Dynamics 365 for Finance and Operations hotfixes from Lifecycle Services (LCS).
 
 This tutorial will guide you through downloading the newest version of Microsoft Dynamics hotfix from Lifecycle services (LCS).  This tutorial is a part of the [Servicing environments](..\dev-tools\developer-home-page.md#service-environments) content.
 

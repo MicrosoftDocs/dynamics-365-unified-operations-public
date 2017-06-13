@@ -108,7 +108,7 @@ You can save an existing building block group under a new name. You can then mod
 
 ### Export a building block group
 
-You can export a building block group or specific report building blocks in a building block group. You can use the exported building block group as a backup. You can also copy the exported data between building block groups or Dynamics 365 for Operations installations. Report designer includes the referenced font styles and dimension sets together with the building block group.
+You can export a building block group or specific report building blocks in a building block group. You can use the exported building block group as a backup. You can also copy the exported data between building block groups or Finance and Operations installations. Report designer includes the referenced font styles and dimension sets together with the building block group.
 1.  In Report Designer, on the **Company** menu, click **Building Block Groups**.
 2.  In the **Building Block Groups** dialog box, select the building block group to export, and then click **Export**.
 3.  In the **Export** dialog box, select the report definitions to export:

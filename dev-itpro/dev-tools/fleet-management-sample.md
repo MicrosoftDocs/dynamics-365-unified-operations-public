@@ -37,10 +37,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This tutorial walks you through an end-to-end scenario that the Fleet Management sample application is designed to support.
 
-In this tutorial, you’ll take a tour of the Fleet Management sample. The overviews in this tutorial provide some background knowledge and contextual info. You’ll walk through an end-to-end scenario that this sample application is designed to support. This is information that you should have before proceeding to other Microsoft Dynamics 365 for Operations tutorials.
+In this tutorial, you’ll take a tour of the Fleet Management sample. The overviews in this tutorial provide some background knowledge and contextual info. You’ll walk through an end-to-end scenario that this sample application is designed to support. This is information that you should have before proceeding to other tutorials.
 
 ## Prerequisite
--   You must first be provisioned as a Dynamics 365 for Operations end user before you start this tutorial.
+-   You must first be provisioned as an end user before you start this tutorial.
 -   This tutorial mainly explores the FleetManagement Migrated project and the application that it builds.
 
 ## Installing the demo data
@@ -62,8 +62,8 @@ To work with the sample, you must install the provided demo data.
 ## Use the Fleet Management application to rent a vehicle
 Keep in mind that you’re working with the migrated app in this section. The forms that you see are directly ported from the Microsoft Dynamics AX 2012 version of the sample. Although they have been modified and restyled, they have not been reimagined.
 
-1.  Open Internet Explorer, and sign into Microsoft Dynamics 365 for Operations.
-2.  To return to the **Dashboard**, click the Microsoft Dynamics logo in the top-left corner of the page.[![Return to Dash](./media/returntodash_introfleetmgmt.png)](./media/returntodash_introfleetmgmt.png) The dashboard is the main hub for working with Dynamics 365 for Operations. You can see the various tiles, organized into sections, which lead to parts of the application. The dashboard is designed for horizontal scrolling, which is an optimization for working well on modern devices. The button to the right of the dashboard shows the navigation bar.
+1.  Open Internet Explorer, and sign into Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+2.  To return to the **Dashboard**, click the Microsoft Dynamics logo in the top-left corner of the page.[![Return to Dash](./media/returntodash_introfleetmgmt.png)](./media/returntodash_introfleetmgmt.png) The dashboard is the main working hub. You can see the various tiles, organized into sections, which lead to parts of the application. The dashboard is designed for horizontal scrolling, which is an optimization for working well on modern devices. The button to the right of the dashboard shows the navigation bar.
 3.  From the Dashboard, open the navigation bar and go to **Fleet Management** &gt; **Common** &gt; **Customers** &gt; **Customer**. 
 
     [![Customers](./media/customers_introfleetmgmt.png)](./media/customers_introfleetmgmt.png) 
@@ -92,7 +92,7 @@ Keep in mind that you’re working with the migrated app in this section. The fo
         
         [![Add yourself](./media/addyourself_introfleetmgmt1.png)](./media/addyourself_introfleetmgmt1.png)
         
-    -   Fill in the form to add yourself as a customer. Make sure that you provide your name, a 16-digit number in the credit card field, and address information, at a minimum. **Note**: You don't have to take any action to save a new record in Dynamics 365 for Operations.
+    -   Fill in the form to add yourself as a customer. Make sure that you provide your name, a 16-digit number in the credit card field, and address information, at a minimum. **Note**: You don't have to take any action to save a new record.
 
 13. Create a new rental.
     1.  On the navigation bar, go to **Fleet management** &gt; **Rentals** &gt; **Rental**.
@@ -142,7 +142,7 @@ Keep in mind that you’re working with the migrated app in this section. The fo
 4.  When you are done, close the **Workflow** window.
 
 ## Create a new KPI definition
-The Microsoft Dynamics 365 for Operations web client enables users who have appropriate permissions to modify KPI definitions that have been modeled and deployed by developers. Users also have the ability to create new KPI definitions in the client. In this walkthrough, you create a new KPI definition in the Microsoft Dynamics 365 for Operations client.
+The web client enables users who have appropriate permissions to modify KPI definitions that have been modeled and deployed by developers. Users also have the ability to create new KPI definitions in the client. In this walkthrough, you create a new KPI definition in the client.
 
 1.  Open the **Reservation Management** workspace. On the navigation bar, go to** Fleet Management **&gt;** Workspaces &gt; Reservation Management**.
 2.  Notice the Total revenue KPI tile shown on the bottom left of the workspace. Click the **Total Revenue KPI** tile. Details of the total revenue KPI tile along with charts indicating top and bottom contributors to revenue will be shown on screen.
@@ -191,7 +191,7 @@ In this tutorial, you’ll launch an operational report that contains a list of 
 
     [![Customer List](./media/customerlist_introfleetmgmt1.png)](./media/customerlist_introfleetmgmt1.png)
     
-3.  Click **OK** to close the dialog box. Microsoft Dynamics 365 for Operations will render the report and show the list of customers. The report may take a minute to render.
+3.  Click **OK** to close the dialog box. The report will be rendered and show the list of customers. The report may take a minute to render.
 
 ## Secure access using the rolebased security system
 In this tutorial, you’ll access the system as a user that has been assigned a different security role. This tutorial requires that you have created at least one additional end user.

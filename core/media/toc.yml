@@ -1,17 +1,17 @@
-- name: Dynamics 365 for Operations
-  tocHref: /operations/
-  topicHref: /operations/index
+- name: Finance and Operations
+  tocHref: /unified-operations/
+  topicHref: /unified-operations/index
   items:
   - name: Core Operations UI
-    tocHref: /operations/core/
-    topicHref: /operations/core/index
+    tocHref: /unified-operations/core/
+    topicHref: /unified-operations/core/index
     items:
       - name: Get started
-        tocHref: /operations/core/get-started/
-        topicHref: /operations/core/get-started/
+        tocHref: /unified-operations/core/get-started/
+        topicHref: /unified-operations/core/get-started/
       - name: Organization administration
-        tocHref: /operations/core/organization-administration/
-        topicHref: /operations/core/organization-administration/
+        tocHref: /unified-operations/core/organization-administration/
+        topicHref: /unified-operations/core/organization-administration/
       - name: Localizations
-        tocHref: /operations/core/localizations/
-        topicHref: /operations/core/localizations/
+        tocHref: /unified-operations/core/localizations/
+        topicHref: /unified-operations/core/localizations/

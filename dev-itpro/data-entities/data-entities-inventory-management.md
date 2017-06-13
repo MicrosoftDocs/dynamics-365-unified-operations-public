@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data entities - Inventory management
-description: This article provides a list of the data entities that are available for the Inventory management functionality in Microsoft Dynamics 365 for Operations.
+description: This article provides a list of the data entities that are available for Inventory management.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for the Inventory management functionality in Microsoft Dynamics 365 for Operations.
+This article provides a list of the data entities that are available for Inventory management.
 
 Available data entities
 -----------------------
@@ -127,13 +127,13 @@ Available data entities
 
 | Suggested sequence | Entity name                                  | Area                 | Entity type   | Dependency                                   | Comments                                                                                                                                                                                                                                                                                                                                                                     |
 |--------------------|----------------------------------------------|----------------------|---------------|----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 37                 | Inventory movement journal headers and lines | Inventory management | Transactional | Released products, Released product variants | Exports all journal entries (posted and unposted). If a journal number isn’t specified in the import file, a new journal is created for every 1,000 lines. If a journal number is specified in the import file, the unposted journal header record must exist in Microsoft Dynamics 365 for Operations before import. The import file should contain fewer than 1,000 lines. |
+| 37                 | Inventory movement journal headers and lines | Inventory management | Transactional | Released products, Released product variants | Exports all journal entries (posted and unposted). If a journal number isn’t specified in the import file, a new journal is created for every 1,000 lines. If a journal number is specified in the import file, the unposted journal header record must exist before import. The import file should contain fewer than 1,000 lines. |
 
 **19.8.002 INV - Inventory adjustment journals**
 
 | Suggested sequence | Entity name                                    | Area                 | Entity type   | Dependency                                   | Comments                                                                                                                                                                                                                                                                                                                                                           |
 |--------------------|------------------------------------------------|----------------------|---------------|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 38                 | Inventory adjustment journal headers and lines | Inventory management | Transactional | Released products, Released product variants | Exports all journal entries (posted and unposted). If a journal number isn’t specified in the import file, a new journal is created for every 1,000 lines. If a journal number is specified in the import file, the unposted journal header record must exist in Dynamics 365 for Operations before import. The import file should contain fewer than 1,000 lines. |
+| 38                 | Inventory adjustment journal headers and lines | Inventory management | Transactional | Released products, Released product variants | Exports all journal entries (posted and unposted). If a journal number isn’t specified in the import file, a new journal is created for every 1,000 lines. If a journal number is specified in the import file, the unposted journal header record must exist before import. The import file should contain fewer than 1,000 lines. |
 
 See also
 --------

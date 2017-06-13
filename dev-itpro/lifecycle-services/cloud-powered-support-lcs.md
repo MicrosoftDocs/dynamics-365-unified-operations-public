@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage Dynamics 365 for Operations Support experiences
+title: Manage Finance and Operations Support experiences
 description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services (LCS) to manage support incidents. 
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Manage Dynamics 365 for Operations Support experiences
+# Manage Finance and Operations Support experiences
 
 [!include[banner](../includes/banner.md)]
 

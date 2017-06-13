@@ -592,7 +592,7 @@ self.colors = [
 <div data-dyn-bind="foreach...">
 <div data-dyn-bind="vars...foreach...">
 <div data-dyn-bind="text...">1.1 (0.2552) X++ Language</div>
-<div data-dyn-bind="text...">1.2 (0.7) Dynamics 365 for Operations Applications</div>
+<div data-dyn-bind="text...">1.2 (0.7) Applications</div>
 </div>
 </div>
 <div data-dyn-bind="vars...">

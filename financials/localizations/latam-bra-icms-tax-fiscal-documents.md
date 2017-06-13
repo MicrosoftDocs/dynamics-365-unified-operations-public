@@ -73,9 +73,9 @@ In accordance with Brazilian law No 102/2000, starting January 1, 2001, ICMS tax
 
 In Microsoft Dynamics 365 for Operations, the entries are as follows:
 
-**Purchase of Fixed Asset** **Dynamics 365 for Operations: Receipt Asset Purchase invoice**
+**Purchase of Fixed Asset** **Microsoft Dynamics 365 for Finance and Operations, Enterprise edition: Receipt Asset Purchase invoice**
 
-**ICMS Tax adjustment of year** **Dynamics 365 for Operations: Manual Journal voucher** **(R$ 12.000,00 / 48 installments) \* 12 (months)**
+**ICMS Tax adjustment of year** **Finance and Operations: Manual Journal voucher** **(R$ 12.000,00 / 48 installments) \* 12 (months)**
 
 Recoverable ICMS **long term** (deferred account)
 
@@ -95,7 +95,7 @@ Recoverable ICMS long term (deferred account)
 
 **Long term asset** (deferred account) balance: R$ 9.000,00
 
-**ICMS Tax adjustment of month** **Dynamics 365 for Operations: Issue an Incoming Tax fiscal document**
+**ICMS Tax adjustment of month** **Finance and Operations: Issue an Incoming Tax fiscal document**
 
 Recoverable ICMS tax account
 

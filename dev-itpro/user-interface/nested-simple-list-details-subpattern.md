@@ -49,10 +49,10 @@ This article describes a variant of the Simple List and Details (SL+D) pattern t
 ## Wireframe
 [![patternNSLD](./media/patternnsld.png)](./media/patternnsld.png)[](./media/nestedsimplelistanddetails1.png)
 
-## Pattern changes for Dynamics 365 for Operations
+## Pattern changes for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 
--   This pattern is new for Microsoft Dynamics 365 for Operations.  Any pattern changes to the SL+D pattern can be found in the [Simple List and Details](simple-list-details-form-pattern.md)pattern document.
+-   This pattern is new. Any pattern changes to the SL+D pattern can be found in the [Simple List and Details](simple-list-details-form-pattern.md)pattern document.
 
 ## Model
 ### High-level structure
@@ -89,7 +89,7 @@ The verification checklist shows the steps for manually verifying that the form 
 
 **Standard form guidelines**
 
--   Standard form guidelines have been consolidated into the Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md)document.
+-   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
 
 **Nested simple list & detail guidelines**
 
