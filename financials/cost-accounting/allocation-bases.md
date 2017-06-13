@@ -127,26 +127,26 @@ After cost element 10001 (Salaries) is applied as the allocation base, the resul
 
 **Cost object balance journal entries**
 
-| Accounting date | Cost object | Cost object name    | Cost element | Cost element name  | Cost behavior |  Amount  |
+| Accounting date | Cost object | Description         | Cost element | Description        | Cost behavior |  Amount  |
 |-----------------|-------------|---------------------|--------------|--------------------|---------------|----------|
 | 31-01-2017      | CC099       | Default cost center | 10002        | Employee insurance | Unclassified  | 1,000.00 |
 
 **Cost entries**
 
-| Cost object |                     | Cost element |                    | Cost behavior | Amount    | Accounting date |
+| Cost object |  Description        | Cost element |    Description     | Cost behavior | Amount    | Accounting date |
 |-------------|---------------------|--------------|--------------------|---------------|-----------|-----------------|
 | CC099       | Default cost center | 10002        | Employee insurance | Unclassified  | -1,000.00 | 31-01-2017      |
 | CC001       | HR                  | 10002        | Employee insurance | Unclassified  | 200.00    | 31-01-2017      |
 | CC002       | FI                  | 10002        | Employee insurance | Unclassified  | 500.00    | 31-01-2017      |
 | CC099       | IT                  | 10002        | Employee insurance | Unclassified  | 300.00    | 31-01-2017      |
 
-### Example 2: Using a statistical dimension member as the allocation base
+### Example 2: Use a statistical dimension member as the allocation base
 
 Statistical dimension members can be used as allocation bases to define policies or report non-monetary consumption by cost objects. You can manually create statistical dimension members or import them from a file by using the Data management import/export tool.
 
 **Statistical dimension members**
 
-| Statistical dimension name | Statistical element | Statistical element name  | Unit |
+| Statistical dimension name | Statistical element | Description               | Unit |
 |----------------------------|---------------------|---------------------------|------|
 | Statistical elements       | FTE                 | Full time employees       | Ea   |
 | Statistical elements       | Electricity         | Electricity consumption   | kWh  |
@@ -165,7 +165,7 @@ Statistical measures can come from various sources:
 - Electricity consumption can be measured by meters that are installed in different areas of the company.
 - Tables hold statistical measures. For example, the HcmEmployment table holds a list of all employees and the cost centers that they work for.
 
-| Name       | Cost center |    | Worker type |
+| Name       | Cost center |  Description  | Worker type |
 |------------|-------------|----|-------------|
 | Employee A | CC001       | HR | Employee    |
 | Employee B | CC002       | FI | Employee    |
@@ -193,7 +193,7 @@ After the statistical measure source data is processed, the following entries wi
 
 **Statistical entries**
 
-| Cost object | Cost object name | Accounting date | Statistical dimension member | Name                | Magnitude |
+| Cost object | Description      | Accounting date | Statistical dimension member | Description         | Magnitude |
 |-------------|------------------|-----------------|------------------------------|---------------------|-----------|
 | CC001       | HR               | 31-01-2017      | FTE’s                        | Full time employees | 1.00      |
 | CC002       | FI               | 31-01-2017      | FTE’s                        | Full time employees | 2.00      |
@@ -201,7 +201,7 @@ After the statistical measure source data is processed, the following entries wi
 
 Here is an example of a cost distribution rule if the FTE’s predefined dimension member allocation basis is assigned as the allocation base in it.
 
-| Cost object | Name | Magnitude | Allocation factor |
+| Cost object | Description  | Magnitude | Allocation factor |
 |-------------|------|-----------|-------------------|
 | CC001       | HR   | 1.00      | (1/5) × Amount    |
 | CC002       | FI   | 2.00      | (2/5) × Amount    |
@@ -219,7 +219,7 @@ After the statistical measure source data is processed, the following entries wi
 
 **Statistical entries**
 
-| Cost object |    | Accounting date | Statistical dimension member |                         | Magnitude |
+| Cost object |    | Accounting date | Statistical dimension member |    Description          | Magnitude |
 |-------------|----|-----------------|------------------------------|-------------------------|-----------|
 | CC001       | HR | 31-01-2017      | Electricity                  | Electricity consumption | 2,450.00  |
 | CC002       | FI | 31-01-2017      | Electricity                  | Electricity consumption | 4,100.00  |
@@ -227,7 +227,7 @@ After the statistical measure source data is processed, the following entries wi
 
 Here is an example of a cost distribution rule if the Electricity predefined dimension member allocation basis is assigned as the allocation base in it.
 
-| Cost object | Name | Magnitude | Allocation factor          |
+| Cost object | Description  | Magnitude | Allocation factor          |
 |-------------|------|-----------|----------------------------|
 | CC001       | HR   | 2,450.00  | (2,450 ÷ 21,550) × Amount  |
 | CC002       | FI   | 4,100.00  | (4,100 ÷ 21,550) × Amount  |
@@ -250,7 +250,7 @@ The FTE’s predefined dimension member allocation basis that was created in the
 
 **Statistical entries**
 
-| Cost object | Name | Accounting date | Statistical dimension member | Name                | Magnitude |
+| Cost object | Description  | Accounting date | Statistical dimension member | Description | Magnitude |
 |-------------|------|-----------------|------------------------------|---------------------|-----------|
 | CC001       | HR   | 31-01-2017      | FTE’s                        | Full time employees | 1.00      |
 | CC002       | FI   | 31-01-2017      | FTE’s                        | Full time employees | 2.00      |
@@ -268,14 +268,14 @@ A Preview function lets you validate the hierarchy allocation basis that is crea
 
 **Allocation base details**
 
-| Cost object | Name |  Magnitude |
+| Cost object | Description  |  Magnitude |
 |-------------|------|------------|
 | CC001       | HR   | 1.00       |
 | CC002       | FI   | 2.00       |
 
 Here is an example of a cost distribution rule if the Number of FTEs in CFO hierarchy allocation basis is assigned as the allocation base in it.
 
-| Cost object | Name | Magnitude | Allocation factor |
+| Cost object | Description  | Magnitude | Allocation factor |
 |-------------|------|-----------|-------------------|
 | CC001       | HR   | 1.00      | (1/3) × Amount    |
 | CC002       | FI   | 2.00      | (2/3) × Amount    |
@@ -320,7 +320,7 @@ The Electricity predefined dimension member allocation basis has already been de
 
 **Statistical entries**
 
-| Cost object | Name | Accounting date | Statistical dimension member | Name                    | Magnitude |
+| Cost object | Name | Accounting date | Statistical dimension member | Description             | Magnitude |
 |-------------|------|-----------------|------------------------------|-------------------------|-----------|
 | CC001       | HR   | 31-01-2017      | Electricity                  | Electricity consumption | 2,450.00  |
 | CC002       | FI   | 31-01-2017      | Electricity                  | Electricity consumption | 4,100.00  |
@@ -358,7 +358,7 @@ A Preview function lets you validate the formula allocation base that is created
 
 **Allocation base details**
 
-| Cost object | Name | Formula           | Magnitude |
+| Cost object | Description  | Formula           | Magnitude |
 |-------------|------|-------------------|-----------|
 | CC001       | HR   | 2,450.00 \> 0.01  | 1.00      |
 | CC002       | FI   | 4,100.00 \> 0.01  | 1.00      |
