@@ -55,23 +55,23 @@ Unlike the cloud-hosted offering, the on-premises publication service renders do
 
 The following illustration identifies the components involved in printing documents.
 
-![Cloud vs. on-premises](media/Cloud-vs-on-premises.png)
+![Printing documents](media/Cloud-vs-on-premises.png)
 
-See related topic in the Appendix section for details on using extensions to manage availability of the embedded drill-thru links in application reports.
+See related topic in the Appendix section for details on using extensions to manage availability of the embedded drill-through links in application reports.
 
 ## Managing access to network printers
-Use built-in administrative forms to manage access to network printers.  Network printers are secured per Company and shared by users of the application.  The documents are then printed using a privileged domain account based on settings supplied by the user.  With on-premise deployments of Dynamics 365 for Operations, there’s no need to install an adapter to connect to domain resources like printers and fax machines.
+Use built-in administrative forms to manage access to network printers.  Network printers are secured per company and shared by users of the application.  The documents are then printed using a privileged domain account based on settings supplied by the user.  With on-premises deployments, there’s no need to install an adapter to connect to domain resources like printers and fax machines.
 
 Here’s a screen shot of the form used to manage network printers.
 
-(graphic)
+![Manage network printers](media/manage-network-printers.png)
 
 ## Appendix
 
 ### How to turn-on embedded links in business documents?
-Here's the code used to enabled embedded links in PDF documents: 
+Here's the code used to enable embedded links in PDF documents. 
 
-(graphic)
+![Enable embedded links](media/enable-embedded-links.png)
 
 
 
