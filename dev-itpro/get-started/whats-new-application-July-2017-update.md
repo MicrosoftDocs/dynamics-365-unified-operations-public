@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, July 2017 update. This version was released in July 2017 and has a build number of XXX.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of XXX.
 author: tonyafehr
 manager: AnnBe
 ms.date: 05/31/2017
@@ -31,5 +31,5 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, July 2017 update. This version was released in July 2017 and has a build number of XXX.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of XXX.
 
