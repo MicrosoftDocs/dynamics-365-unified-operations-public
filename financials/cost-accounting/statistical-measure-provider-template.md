@@ -249,14 +249,14 @@ After the source data for the statistical measure processed, the following stati
 
 **Statistical entry transfer journal entries**
 
-| Accounting date | Magnitude | Statistical element |                       | Product group         |
+| Accounting date | Magnitude | Statistical element |  Description          | Product group         |
 |-----------------|-----------|---------------------|-----------------------|-----------------------|
 | 31-01-2017      | 16.00     | Pack CC             | Packaging Cost center | Orange juice B2B      |
 | 31-01-2017      | 8.00      | Pack CC             | Packaging Cost center | Orange juice Consumer |
 
 **Statistical entries**
 
-| Cost object           | Accounting date | Statistical dimension member |                       | Magnitude |
+| Cost object           | Accounting date | Statistical dimension member |    Description        | Magnitude |
 |-----------------------|-----------------|------------------------------|-----------------------|-----------|
 | Orange juice B2B      | 31-01-2017      | Pack CC                      | Packaging Cost center | 16.00     |
 | Orange juice Consumer | 31-01-2017      | Pack CC                      | Packaging Cost center | 8.00      |
@@ -319,13 +319,13 @@ Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statis
 
 **Journal**
 
-| Journal | Journal type                       | Fiscal calendar period | Version | Data connector source entries |                |             |
-|---------|------------------------------------|------------------------|---------|-------------------------------|----------------|-------------|
-| 00002   | Statistical entry transfer journal | Fiscal                 | 2017    | Period 1                      | CA ledger USMF | Electricity |
+| Journal | Journal type                       | Fiscal calendar period | Year  | Perid  |Version      |Data connector source entries |
+|---------|------------------------------------|------------------------|-------|----- --|---------------|-------------|
+| 00002   | Statistical entry transfer journal | Fiscal                 | 2017  | Period 1 | CA ledger USMF | Electricity |
 
 **Statistical entry transfer journal entries**
 
-| Accounting date | Magnitude  | Cost element |                         | Cost center |
+| Accounting date | Magnitude  | Cost element |   Description           | Cost center |
 |-----------------|------------|--------------|-------------------------|-------------|
 | 31-01-2017      | 2,450.00   | Electricity  | Electricity consumption | CC001       |
 | 31-01-2017      | 4,100.00   | Electricity  | Electricity consumption | CC002       |
@@ -333,7 +333,7 @@ Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statis
 
 **Statistical entries**
 
-| Cost object |    | Accounting date | Statistical dimension member |                         | Magnitude  |
+| Cost object |    | Accounting date | Statistical dimension member |      Description                   | Magnitude  |
 |-------------|----|-----------------|------------------------------|-------------------------|------------|
 | CC001       | HR | 31-01-2017      | Electricity                  | Electricity consumption | 2,450.00   |
 | CC002       | FI | 31-01-2017      | Electricity                  | Electricity consumption | 4,100.00   |
