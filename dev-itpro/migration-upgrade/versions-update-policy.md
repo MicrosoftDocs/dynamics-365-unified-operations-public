@@ -74,10 +74,10 @@ The initial release of the on-premises software will be based on Platform update
 ### Table 1: Application releases
 -----------------------------
 
-| Release                                   | Version   | Build Number | Availability  | Expiration date | Product life  |
-|-------------------------------------------|-----------|--------------|---------------|-----------------|---------------|
-|   Dynamics 365 for Finance and Operations, Entrprise edition          | July 2017 update | July 2017 | 7.2.x        | July 2017     | November 2019   | December 2027 |
-| Dynamics 365 for Operations                         | 1611      | 7.1.1541     | November 2016 | November 2019   | December 2027 |
+| Release              | Version   | Build Number | Availability  | Expiration date | Product life  |
+|----------------------|-----------|--------------|---------------|-----------------|---------------|
+|   Dynamics 365 for Finance and Operations, Entrprise edition  | July 2017 update | X | July 2017       | November 2019   | December 2027 |
+| Dynamics 365 for Operations         | 1611      | 7.1.1541     | November 2016 | November 2019   | December 2027 |
 
 
 
