@@ -36,13 +36,13 @@ ms.search.validFrom: 2016-02-28
 
 These topics describe how to manage the databases that support Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
-[Copy a database from Azure SQL Database to a SQL Server environment](https://docs.microsoft.com/dynamics365/operations/dev-itpro/index) 
+[Copy a database from Azure SQL Database to a SQL Server environment](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/index) 
 
-[Copy a database from SQL Server to an Azure SQL Database environment](https://docs.microsoft.com/dynamics365/operations/dev-itpro/database/copy-database-from-sql-server-to-azure-sql) 
+[Copy a database from SQL Server to an Azure SQL Database environment](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/copy-database-from-sql-server-to-azure-sql) 
 
-[Restore a database on a non-production environment](https://docs.microsoft.com/dynamics365/operations/dev-itpro/database/request-point-in-time-restore) 
+[Restore a database on a non-production environment](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/request-point-in-time-restore) 
 
-[Create a copy of a database to restore later](https://docs.microsoft.com/dynamics365/operations/dev-itpro/database/copy-operations-database) 
+[Create a copy of a database to restore later](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/copy-operations-database) 
 
 
 

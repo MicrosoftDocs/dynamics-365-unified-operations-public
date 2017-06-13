@@ -69,13 +69,13 @@ The charts and tiles on all these reports can be filtered and pinned to the dash
 ## Extending the Power BI content
 By using the content packs that are available in Microsoft Dynamics Lifecycle Services (LCS), you can provide great analytics to people who don't sign in to Finance and Operations. You can modify these content packs so that they include other reports or visuals, and then publish the content packs to your Power BI.com tenant for analysis.
 
-You can find the **Credit and collections management** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](/dynamics365/operations/dev-itpro/analytics/power-bi-content-microsoft-partners). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+You can find the **Credit and collections management** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
 Be sure to download the **Credit and collections management** Power BI content that applies to the version of Finance and Operations that you're using.
 
 ## Understanding the data model and entities
 
-The following data is used to fill the report in the **Credit and collections management** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](/dynamics365/operations/dev-itpro/analytics/power-bi-integration-entity-store).
+The following data is used to fill the report in the **Credit and collections management** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store).
 
 | Entity                                      | Key aggregate measurements           | Data source                                 | Field                                                      | Description |
 |---------------------------------------------|--------------------------------------|---------------------------------------------|------------------------------------------------------------|-------------|
