@@ -104,30 +104,16 @@ If Dynamics 365 for Operations version 1611 with platform update 3 or later has 
 </thead>
 <tbody>
 <tr class="odd">
-<<<<<<< HEAD
 <td>Implement KB 4013633.</td>
-=======
-<td>Dynamics 365 for Operations version 1611 with platform update 3 or later must be implemented.</td>
 <td>System administrator</td>
-<td>If you don’t already have Dynamics 365 for Operations deployed in your organization, the system administrator should see <a href="/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment/">Deploy a Finance and Operations demo environment</a>.</td>
-</tr>
-<tr class="even">
-<td>KB 4013633 must be implemented.</td>
->>>>>>> refs/remotes/origin/master
-<td>System administrator</td>
-<td>KB 4013633 is an X++ update or metadata hotfix that contains the <strong>Sales orders</strong> mobile workspace. To implement KB 4013633, your system administrator must follow these steps.
+
+<td>KB 4013633 is an X++ update or metadata hotfix that contains the <strong>Cost controlling</strong> mobile workspace. To implement KB 4013633, your system administrator must follow these steps.
 <ol>
-<<<<<<< HEAD
 <li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
 <li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
 <li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</li>
 <li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a>.</li>
-=======
-<li>Download KB 4013633 from Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a> to your Dynamics 365 for Operations system.</li>
->>>>>>> refs/remotes/origin/master
+
 </ol></td>
 </tr>
 <tr class="even">
