@@ -52,12 +52,12 @@ The predefined dimension member allocation bases are created automatically when 
 > [!NOTE]
 > The predefined dimension member allocation bases that are based on a cost element dimension member consider the values only from the data source provider, such as the general ledger or budget.
 
-### Example 1: Using a cost element dimension member as the allocation base
+### Example 1: Use a cost element dimension member as the allocation base
 This example shows how to create a cost allocation rule to allocate cost element 10002 (Employee insurance) to the balance that is recorded on cost element 10001 (Salaries). The allocation rule is defined based on the ratio of each department's salaries to total salaries. (Review needed!)
 
 In the general ledger, the chart of account is defined as follows.
 
-| Chart of account | Main account | Main account name  | Main account type |
+| Chart of account | Main account | Description        | Main account type |
 |------------------|--------------|--------------------|-------------------|
 | Shared           | 10001        | Salaries           | Expense           |
 | Shared           | 10002        | Employee insurance | Expense           |
@@ -66,7 +66,7 @@ Define a cost element dimension, and configure the data connector. After the dat
 
 **Cost element dimension members**
 
-| Cost element dimension name | Cost element | Cost element name  | Type    |
+| Cost element dimension name | Cost element |  Description       | Type    |
 |-----------------------------|--------------|--------------------|---------|
 | Cost elements               | 10001        | Salaries           | Primary |
 | Cost elements               | 10002        | Employee insurance | Primary |
@@ -83,7 +83,7 @@ In the general ledger, the following entries have been posted:
 - The entries that show the Salaries main account come from the Payroll system and are posted to cost centers.
 - The expense for employee insurance is manually posted to a default cost center.
 
-| Accounting date | Cost center |                     | Main account |                    | Amount in accounting currency |
+| Accounting date | Cost center |  Description        | Main account |  Description       | Amount in accounting currency |
 |-----------------|-------------|---------------------|--------------|--------------------|-------------------------------|
 | 03-01-2017      | CC001       | HR                  | 10001        | Salaries           | 2,000.00                      |
 | 03-01-2017      | CC002       | FI                  | 10001        | Salaries           | 5,000.00                      |
@@ -94,12 +94,12 @@ After the general ledger source data is processed, the following entries are cre
 
 **Cost entries**
 
-| Cost object | Cost element        | Cost behavior | Amount             | Accounting date |
-|-------------|---------------------|---------------|--------------------|-----------------|
-| CC001       | HR                  | 10001         | Salaries           | Unclassified    |
-| CC002       | FI                  | 10001         | Salaries           | Unclassified    |
-| CC003       | IT                  | 10001         | Salaries           | Unclassified    |
-| CC099       | Default cost center | 10002         | Employee insurance | Unclassified    |
+| Cost object |  Description        | Cost element  |  Description       | Cost behavior   |Amount|Accounting date|
+|-------------|---------------------|---------------|--------------------|-----------------|------|---------------|
+| CC001       | HR                  | 10001         | Salaries           | Unclassified    |2,000.00|  03-01-2017    |
+| CC002       | FI                  | 10001         | Salaries           | Unclassified    |5,000.00|     03-01-2017         |
+| CC003       | IT                  | 10001         | Salaries           | Unclassified    |3,000.00|      03-01-2017        |
+| CC099       | Default cost center | 10002         | Employee insurance | Unclassified    |1,000.00|      03-01-2017       |
 
 In this simplified example, a cost allocation rule is created to allocate cost element 10002 (Employee insurance) relative to the balance that is recorded on cost element 10001 (Salaries).
 
