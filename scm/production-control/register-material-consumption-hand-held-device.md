@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Reporting material consumption with the mobile device | Microsoft Docs
+title: Register material consumption using a mobile device | Microsoft Docs
 description: This topic describes a workflow that enables registration of raw material consumption in production by using a handheld device.
 author: johanhoffmann
 manager: AnnBe
@@ -29,8 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Reporting material consumption with the mobile device
-
+# Register material consumption using a mobile device
 This topic describes a workflow that enables registration of raw material consumption in production by using a handheld device.
 
 Introduction
