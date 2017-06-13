@@ -93,7 +93,7 @@ For more information about the factors to consider, see “How to size and on pr
 Finance and Operations on-premises utilizes Service Fabric to host the AOS, Batch, Data management, Management reporter, and Orchestrator services. SSRS is not hosted in the Service Fabric cluster. 
 Independent of that, SQL Server must be set up in a high availability hadron setup with at least 2 nodes. 
 
-The followign graphic shows the minimum amount of virtual machines allowed: 
+The following graphic shows the minimum amount of virtual machines allowed: 
 [![System requirements and virtual machines](./media/lbd-system-requirements-01.png)](./media/lbd-system-requirements-01.png)
 
 ### Processor and RAM requirements 
@@ -136,10 +136,10 @@ When setting up the virtual hosts for a Finance and Operations on-premises envir
  The following software must be present on a computer before any Finance and Operations components can be installed:
  
 •	Microsoft .NET Framework
+
 •	Service Fabric
  
-More information on Service Fabric: 
-https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#download-the-service-fabric-standalone-package
+More information, [Create a standalone cluster running in Windows Server](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#download-the-service-fabric-standalone-package)
  
 ### Supported server operating systems
 The following table lists the server operating systems that are supported for Finance and Operations components. 
