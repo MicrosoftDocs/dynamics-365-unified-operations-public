@@ -80,7 +80,7 @@ The overhead calculation performs several calculation steps on the source data, 
 
 On the **Fiscal periods per column** FastTab, the cost accountant decides which fiscal period should be shown in the report layout.
 
-The selected columns will be multiplied by the selected values on the **Fiscal periods per column** FastTab.
+The values in the selected columns will be multiplied by the selected values on the **Fiscal periods per column** FastTab.
 
 | Field                | Description |
 |----------------------|-------------|
@@ -156,3 +156,9 @@ If users click **Allocation base** on the **Cost entries** page, a dialog box ap
 In the following example, the allocation base is of the **Formula allocation base** type, and the formula is shown. The factors that define the formula are listed. Additionally, a grid shows the calculation that is done per cost object.
 
 ![Calculations per cost object](./media/cost-entries-allocation-base.png)
+
+See also 
+
+[Define access rights for cost object controllers](access-rights-cost-object-controller.md)
+
+
