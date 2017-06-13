@@ -17,6 +17,7 @@
 # Modern Point of Sale (MPOS) and Cloud POS
 ## Hardware peripherals
 ### [Retail peripherals overview](retail-peripherals-overview.md)
+### [Retail peripheral simulator](retail-peripheral-simulator.md)
 ### [Microsoft tested POS hardware peripherals](microsoft-tested-pos-hardware-peripherals.md)
 ### [Define and maintain channel clients, registers, and hardware stations](define-maintain-channel-clients-registers-hw-stations.md)
 ## Screen layout
