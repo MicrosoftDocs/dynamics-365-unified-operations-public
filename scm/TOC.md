@@ -119,7 +119,7 @@
 #### [Report production orders as finished](production-control/report-production-orders-as-finished.md)
 #### [Report BOMs as finished](production-control/report-boms-as-finished.md)
 #### [Cross-docking from production orders to outbound docks](production-control/cross-docking-opportunities.md)
-#### [Register material consumption using a mobile device](production-control/register-material-consumption-hand-held-device.md.md)
+#### [Register material consumption using a mobile device](production-control/register-material-consumption-hand-held-device.md)
 #### [Material substitution in manufacturing](production-control/substitute-items-bom-lines.md)
 #### [Registration for manufacturing execution](production-control/registration-manufacturing-execution.md)
 #### [Production feedback](production-control/production-feedback.md)
