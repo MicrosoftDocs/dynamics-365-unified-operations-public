@@ -111,7 +111,7 @@ A dimension hierarchy that fulfills the policy requirement can be set up as foll
 
 After the general ledger entries are processed, the cost entry balance by cost object looks like this.
 
-|                      | **Cost object** | **Total** |           |           |               |
+|                      | **Cost object** |           |           |           | **Total**     |
 |----------------------|-----------------|-----------|-----------|-----------|---------------|
 | **Cost element**     | **CC001**       | **CC002** | **CC003** | **CC004** |               |
 | **1001 Electricity** | 100,00          | 200,00    | 6.000,00  | 2.000,00  | **8.300,00**  |
@@ -264,7 +264,7 @@ The dimension hierarchies allow you to view data at different aggregation levels
 
 Here is an example of a Power Pivot reporting in Excel.
 
-| **Profit & Loss statement** | **Cost object** | **Total**      |               |               |               |
+| **Profit & Loss statement** | **Cost object** |                |               |               |  **Total**    |
 |-----------------------------|-----------------|----------------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002**      | **CC003**     | **CC004**     |               |
 | **Primary cost**            | **10.100,00**   | **14.200,00**  | **14.000,00** | **8.500,00**  | **46.800,00** |
@@ -282,7 +282,7 @@ Using **Cost rollup policy** and **Cost elements of the type secondary** allows 
 
 If the same example had been performed without creating the **Cost rollup policy,** the reporting result would be as shown below. The cost flows correctly but the traceability and insight into how cost flows between the cost centers are lost.
 
-| **Profit & Loss statement** | **Cost object** | **Total** |               |               |               |
+| **Profit & Loss statement** | **Cost object** |           |               |               |          **Total**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002** | **CC003**     | **CC004**     |               |
 | **Primary cost**            | **0,00**        | **0,00**  | **31.082,75** | **15.717,25** | **46.800,00** |
