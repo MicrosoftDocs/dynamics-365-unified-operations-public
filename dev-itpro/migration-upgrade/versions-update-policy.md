@@ -108,4 +108,4 @@ Microsoft commits to support the deployments of the Finance and Operations on-pr
 
 | Release                                                                        | Version               | Build number | Availability      | Expiration date                     |
 |--------------------------------------------------------------------------------|-----------------------|--------------|-------------------|-------------------------------------|
-|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017             | 7.2.x        | July 2017         |  Nov 2019 inline with 7.1 timeline. |
+|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 update            | 7.2.x        | June 2017         |  Nov 2019 inline with 7.1 timeline. |
