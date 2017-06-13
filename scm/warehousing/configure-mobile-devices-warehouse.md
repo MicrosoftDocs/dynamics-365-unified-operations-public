@@ -169,7 +169,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Movement by template</td>
-<td>Move items from one location to another in a semi-automated manner. The worker selects the location to move items from, and Microsoft Dynamics 365 for Operations uses the location directive to determine where to move the items to.</td>
+<td>Move items from one location to another in a semi-automated manner. The worker selects the location to move items from, and Finance and Operations uses the location directive to determine where to move the items to.</td>
 </tr>
 <tr>
 <td>Warehouse transfer</td>

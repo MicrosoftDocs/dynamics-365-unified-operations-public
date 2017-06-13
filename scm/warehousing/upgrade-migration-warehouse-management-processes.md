@@ -2,7 +2,7 @@
 # required metadata
 
 title: Migrate from AX 2012 to Finance and Operations 
-description: This article provides an overview of the product and warehouse management migration options within Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update.
+description: This article provides an overview of the product and warehouse management migration options within Dynamics 365 for Finance and Operations.
 author: BibiSp
 manager: AnnBe
 ms.date: 04/04/2017
@@ -31,19 +31,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Migrate from AX 2012 to Finance and Operations
 
-This topic provides an overview of the product and warehouse management migration options within Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update.
+This topic provides an overview of the product and warehouse management migration options within Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 Introduction
 ------------
 
-During an upgrade to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, products are blocked if they are associated with a storage dimension group that has settings that don't match the requirements for storage dimension group settings in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. However, after the upgrade, you can use a set of migration options in the **Change storage dimension group for items** process to unblock products that were blocked during upgrade. You can then process transactions for those products. Some of your items might already be associated with storage dimension groups where the Site, Warehouse, and Location inventory dimensions are active and physically tracked. In this case, you can use the **Change storage dimension group for items** process to enable those items to be used in warehouse management processes. This feature is useful if you want to use the warehouse management functionality for existing items.
+During an upgrade to Finance and Operations, products are blocked if they are associated with a storage dimension group that has settings that don't match the requirements for storage dimension group settings in Finance and Operations. However, after the upgrade, you can use a set of migration options in the **Change storage dimension group for items** process to unblock products that were blocked during upgrade. You can then process transactions for those products. Some of your items might already be associated with storage dimension groups where the Site, Warehouse, and Location inventory dimensions are active and physically tracked. In this case, you can use the **Change storage dimension group for items** process to enable those items to be used in warehouse management processes. This feature is useful if you want to use the warehouse management functionality for existing items.
 
-## Upgrading to Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, when AX 2012 R3 WMSII is used
-Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, no longer supports the legacy **WMSII** module from Microsoft Dynamics AX 2012. Instead, you can use the new **Warehouse management** module. For more information, see [Warehouse management home page](https://ax.help.dynamics.com/en/wiki/warehouse-management/). In previous versions, the Location and Pallet ID inventory dimensions could be selected for financial inventory. However, as part of the upgrade process, the Pallet ID inventory dimension can no longer be enabled for financial inventory. All products that are associated with a storage dimension group that uses the Pallet ID inventory dimension will be blocked and won't be processed.
+## Upgrading to Finance and Operations, when AX 2012 R3 WMSII is used
+Finance and Operations, no longer supports the legacy **WMSII** module from Microsoft Dynamics AX 2012. Instead, you can use the new **Warehouse management** module. For more information, see [Warehouse management home page](https://ax.help.dynamics.com/en/wiki/warehouse-management/). In previous versions, the Location and Pallet ID inventory dimensions could be selected for financial inventory. However, as part of the upgrade process, the Pallet ID inventory dimension can no longer be enabled for financial inventory. All products that are associated with a storage dimension group that uses the Pallet ID inventory dimension will be blocked and won't be processed.
 
-### Enabling items in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+### Enabling items in Finance and Operations
 
-In Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, items that will be used as part of warehouse management processes must be associated with a storage dimension group where the **Use warehouse management processes** parameter is selected. When this setting is selected, the Site, Warehouse, Inventory status, Location, and License plate inventory dimensions become active. You can change to this type of storage dimension group only for items that are already associated with storage dimension groups where the Location inventory dimension is active.
+In Finance and Operations, items that will be used as part of warehouse management processes must be associated with a storage dimension group where the **Use warehouse management processes** parameter is selected. When this setting is selected, the Site, Warehouse, Inventory status, Location, and License plate inventory dimensions become active. You can change to this type of storage dimension group only for items that are already associated with storage dimension groups where the Location inventory dimension is active.
 
 ### Items that are blocked for inventory updates
 
@@ -58,7 +58,7 @@ To unblock products that were blocked during upgrade, you must select a new stor
 
 ### Migration processes
 
-In Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, item tracking is part of the warehouse management processes. For these processes, all warehouses and their locations must be associated with a location profile. Conceptually, if you want to use warehouse management processes, two processes must be handled:
+In Finance and Operations, item tracking is part of the warehouse management processes. For these processes, all warehouses and their locations must be associated with a location profile. Conceptually, if you want to use warehouse management processes, two processes must be handled:
 
 -   Existing warehouses must be enabled to use warehouse management processes.
 -   Existing released products must be associated with a new storage dimension group that uses warehouse management processes.

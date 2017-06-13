@@ -41,7 +41,7 @@ Quality management can help you manage turnaround times when you handle nonconfo
 
 In addition to functionality for managing nonconformance, quality management includes functionality for tracking issues by problem type (even internal problems), and for identifying solutions as short-term or long-term. Statistics about key performance indicators (KPIs) provide insight into the history of previous nonconformance issues and the solutions that were used to correct them. You can use historical data to review the effectiveness of previous quality measures and determine appropriate measures to use in the future.
 
-When you set up a quality association, Microsoft Dynamics 365 for Operations can generate quality orders for various business processes, events, and conditions. The quality association can cover a specific item, a specific group of items, or all items.
+When you set up a quality association, Finance and Operations can generate quality orders for various business processes, events, and conditions. The quality association can cover a specific item, a specific group of items, or all items.
 
 ## Examples of the use of quality management
 Quality management is flexible and can be implemented in various ways to meet the requirements of specific levels of supply chain operations. The following examples illustrate possible uses of these features:

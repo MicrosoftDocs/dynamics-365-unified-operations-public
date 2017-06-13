@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes how to install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing.
 
-Finance and Operations - Warehousing is an application available on Google Play Store and Windows Store. For the current version of Microsoft Dynamics 365 for Finance and Operations, this app is provided as a standalone component, which means self-deployment on devices used for warehouse tasks. In order to use the app in your Finance and Operations environment, you must download the app on each device and configure it to connect to your Finance and Operations environment. This topic describes how to install the app on your devices. It also explains how to configure the app to connect to your Finance and Operations environment.
+Finance and Operations - Warehousing is an application available on Google Play Store and Windows Store. For the current version of Finance and Operations, this app is provided as a standalone component, which means self-deployment on devices used for warehouse tasks. In order to use the app in your Finance and Operations environment, you must download the app on each device and configure it to connect to your Finance and Operations environment. This topic describes how to install the app on your devices. It also explains how to configure the app to connect to your Finance and Operations environment.
 
 ## Prerequisites
 The app is available on Android and Windows operating systems. To use this app, you must have one of the following supported operating systems installed on your devices. You must also have one of the following supported versions of Finance and Operations. Use the information in the following table to evaluate if your hardware and software environment is ready to support the installation.
@@ -76,7 +76,7 @@ To enable the app to interact with a specific Finance and Operations server, you
 ## Create and configure a user account in Finance and Operations
 To enable Finance and Operations to use your Azure AD application, you need to complete the following configuration steps:
 
-1.  Create a new user account in Azure Active Directory for the Finance and Operations tenant. The purpose of this user account is to access the specific custom service of the warehousing app, which the Finance and Operations server exposes. After completing this step, you will have WMDP user credentials, which consist of a WMDP email address and a WMDP password. To learn about the basic steps for adding users to Azure AD and Finance and Operations, refer to this tutorial: [Sign up for a Microsoft Dynamics 365 for Operations subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription).
+1.  Create a new user account in Azure Active Directory for the Finance and Operations tenant. The purpose of this user account is to access the specific custom service of the warehousing app, which the Finance and Operations server exposes. After completing this step, you will have WMDP user credentials, which consist of a WMDP email address and a WMDP password. To learn about the basic steps for adding users to Azure AD and Finance and Operations, refer to this tutorial: [Sign up for a Finance and Operations subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription).
 2.  Create a Finance and Operations user that corresponds to the warehousing app user credentials.
     1.  In Finance and Operations, go to **System administration** &gt; **Common** &gt; **Users**.
     2.  Create a new user.

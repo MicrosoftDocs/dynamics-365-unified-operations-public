@@ -59,7 +59,7 @@ Demand replenishment is supported for sales orders, transfer orders, production 
 ## Min/Max replenishment
 In Min/Max replenishment, stock is replenished so that it's between the minimum and maximum limits that have been set. Typically, this process occurs one time every day to ensure that all picking locations are filled to the maximum level before picking starts. 
 
-The minimum and maximum amounts are set in a replenishment template. Many of the other settings in the template resemble the settings in templates that are used in Wave demand replenishment. The template should contain one line for each item and location. When you run replenishment by using the batch job, Microsoft Dynamics 365 for Operations evaluates whether replenishment is required, in the sequence that the lines are organized in. 
+The minimum and maximum amounts are set in a replenishment template. Many of the other settings in the template resemble the settings in templates that are used in Wave demand replenishment. The template should contain one line for each item and location. When you run replenishment by using the batch job, Finance and Operations evaluates whether replenishment is required, in the sequence that the lines are organized in. 
 
 Note that the Min/Max replenishment strategy can't replenish an empty location unless the location is set as the fixed location for the item. If the location that must be replenished isn't a fixed location, it's not possible to determine which item to replenish. Therefore, at least some on-hand quantity is required before replenishment occurs.
 
