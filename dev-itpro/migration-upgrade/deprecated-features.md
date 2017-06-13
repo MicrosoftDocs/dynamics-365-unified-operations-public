@@ -45,7 +45,7 @@ Warehouse mobile devices portal (WMDP) was a standalone component that was inten
 |                                  |                                                 |
 |----------------------------------|-------------------------------------------------|
 | **Reason for deprecation**       | Duplicate functionality.                        |
-| **Replaced by another feature?** | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Replaced by another feature?** | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Modules affected**             | Warehouse management, Transportation management |
 
 ### Advanced bank reconciliation matching rule for manual matching
@@ -338,7 +338,7 @@ A workflow for managing the creation of employee goals is one of several workflo
 
 |                              |                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Performance management has been completely redesigned in Microsoft Dynamics 365 for Operations.                                                                                                                                                                                                                                        |
+| Reason for deprecation       | Performance management has been completely redesigned in Microsoft Dynamics 365 for Finance and Operations.                                                                                                                                                                                                                                        |
 | Replaced by another feature? | The redesigned Performance management feature gives more control over the content of the goals, the measurements that are used to track progress, and the attachment of supporting documentation. Goals can be stored as templates and then reused. This feature can help you set up additional goals for your employees more quickly. |
 | Modules affected             | Human capital management                                                                                                                                                                                                                                                                                                               |
 
@@ -521,7 +521,7 @@ In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel 
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| Reason for deprecation       | Direct database connectivity required lower security protocols and was primarily used to achieve the highest levels of performance. Due to the performance and security enhancements that have occurred in Dynamics 365 for Operations, this functionality now causes more issues than it solves. |
+| Reason for deprecation       | Direct database connectivity required lower security protocols and was primarily used to achieve the highest levels of performance. Due to the performance and security enhancements that have occurred in Finance and Operations, this functionality now causes more issues than it solves. |
 | Replaced by another feature? | No. Only standard Retail Server communication is now supported.    |
 | Modules affected             | Channel DB/Retail Modern POS                                    |
 

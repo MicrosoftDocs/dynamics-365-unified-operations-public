@@ -100,7 +100,7 @@ For distinct released products, you can define general order settings or site sp
 
 To create site specific order settings, click **New**. In **Details view**, fill in the site in the **Settings applicable for** &gt; **Site** field. In the **Grid view**, fill in the site in the **Site** column. The new rule will automatically get a new rank value, higher than zero. You can create as many site specific rule as needed and you can assign all the site specific rules the same rank, to model that they are equally important. 
 
-If you are in **Details view**, you can't get the overview of the rules created for the item. Toggle the **Show/Hide list** button to see overview information. When an order line of any type is created and it has no site provided, Dynamics 365 for Operations searches for a rule with no site specified. This could help determine a default site on the order line. This site is then used to search for a site specific rule, where a default warehouse may have been set. This warehouse is applied to the order line.
+If you are in **Details view**, you can't get the overview of the rules created for the item. Toggle the **Show/Hide list** button to see overview information. When an order line of any type is created and it has no site provided, Finance and Operations searches for a rule with no site specified. This could help determine a default site on the order line. This site is then used to search for a site specific rule, where a default warehouse may have been set. This warehouse is applied to the order line.
 
 ### Specific order settings for product dimension
 
@@ -137,7 +137,7 @@ You can create the following default order settings rules.
 
 The two rules for stopping the old revisions have the same ranking, meaning they are equally important. Both of them have a higher rank than the rule for configuration C1, meaning that they take precedence over the rule for configuration C1. 
 
-This example explains the need for the rank. If a purchase order is created for configuration C1 and revision R2, in the absence of the rank, the two rules defined for R2 and C1 would be ambiguous. To solve the ambiguity, Dynamics 365 for Operations will search through the rules in descending order of rank and apply the first applicable rule. In the current example, when a purchase order line is created for configuration C1 and revision R2, the user will get a warning message that the item is on hold and that this is caused by the revision value. If the rule for the configuration had a higher rank than the one for revision, then the creation of a purchase order line for configuration C1 and revision R2 would have succeeded and no 'item on hold' message would have be given to the user. 
+This example explains the need for the rank. If a purchase order is created for configuration C1 and revision R2, in the absence of the rank, the two rules defined for R2 and C1 would be ambiguous. To solve the ambiguity, Finance and Operations will search through the rules in descending order of rank and apply the first applicable rule. In the current example, when a purchase order line is created for configuration C1 and revision R2, the user will get a warning message that the item is on hold and that this is caused by the revision value. If the rule for the configuration had a higher rank than the one for revision, then the creation of a purchase order line for configuration C1 and revision R2 would have succeeded and no 'item on hold' message would have be given to the user. 
 
 Consider the following default order setting rules.
 

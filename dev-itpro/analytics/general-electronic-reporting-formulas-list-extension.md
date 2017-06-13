@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Various types of functions are supported in Electronic reporting expressions for data transformation -  text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions). In addition to built-in functions, Electronic reporting lets you extend the list of available functions. This article includes an overview of key tasks that you must complete to introduce a new function.
 
-All Electronic reporting functions in Microsoft Dynamics 365 for Operations code are represented as classes that extend the **ERExpression** class. Two types of functions are recognized:
+All Electronic reporting functions in Microsoft Dynamics 365 for Finance and Operations code are represented as classes that extend the **ERExpression** class. Two types of functions are recognized:
 
 -   **Fixed number of arguments** – These functions are represented by classes that include methods that have the prefix **parm** (see **parmInput**, **parmStartNum** in the sample code the follows). The order of arguments is set by the **SysOperationDisplayOrderAttribute** attribute.
 -   **Variable number of arguments** – These functions (see the **ERExpressionGenericCase** class) are represented by classes that implement the **ERIObjectContainer** interface. An additional **Add** method is used to declare the types that a function accepts.
@@ -106,7 +106,7 @@ The following guidance is intended to help you design your custom Electronic rep
 
 -   Reuse the names of Microsoft Excel functions whenever you can, so that Electronic reporting formulas remain Excel-like. In this way, you will keep Electronic reporting formulas intelligible for end users.
 -   Electronic reporting doesn't support list types for primitive data types. Therefore, we have decided to use a data container list that has a single **Value** item in it.
--   Release a new function's list extension as a new Dynamics 365 for Operations hotfix. Electronic reporting designers will refer to the hotfix number in Electronic reporting configurations that use that new custom function. Whenever a configuration of this type is imported into a new instance of Dynamics 365 for Operations, Electronic reporting will evaluate whether the required hotfix has been installed, to maintain compliance between the Electronic reporting configuration and the Dynamics 365 for Operations version that configuration is imported into.
+-   Release a new function's list extension as a new Finance and Operations hotfix. Electronic reporting designers will refer to the hotfix number in Electronic reporting configurations that use that new custom function. Whenever a configuration of this type is imported into a new instance of Finance and Operations, Electronic reporting will evaluate whether the required hotfix has been installed, to maintain compliance between the Electronic reporting configuration and the Finance and Operations version that configuration is imported into.
 
 
 See also

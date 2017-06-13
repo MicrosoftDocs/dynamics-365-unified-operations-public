@@ -2,7 +2,7 @@
 # required metadata
 
 title: Power BI home page
-description: This topic lists resources to help you use Power BI with Dynamics 365 for Operations.
+description: This topic lists resources to help you use Power BI with Finance and Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,14 +35,14 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic lists resources to help you use Power BI with Dynamics 365 for Operations.
+This topic lists resources to help you use Power BI with Finance and Operations.
 
-Power BI content for Dynamics 365 for Operations
+Power BI content for Finance and Operations
 ------------------------------------------------
 
 | **Feature area**                  | **Power BI content**                          | **Where to find the Power BI content**                                                                                                                                                                                         | **Learn more**                                                                                                                                                               |
 |-----------------------------------|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Financial management              | Financial performance                         | Microsoft Dynamics Lifecycle Services (LCS) (This version of the content pack supports Dynamics 365 for Operations version 1611.) PowerBI.com (This version of the content pack supports Microsoft Dynamics 365 for Operations 7.0 and 7.0.1.) | [Financial Performance Power BI content](financial-performance-power-bi-content-pack.md)                                               |
+| Financial management              | Financial performance                         | Microsoft Dynamics Lifecycle Services (LCS) (This version of the content pack supports Dynamics 365 for Operations version 1611.) PowerBI.com (This version of the content pack supports Microsoft Dynamics AX 7.0 and 7.0.1.) | [Financial Performance Power BI content](financial-performance-power-bi-content-pack.md)                                               |
 |                                   | Credit and collections management             | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
 | Human capital management          | Recruiting reports                            | LCS                                                                                                                                                                                                                            | [Recruiting Power BI content](recruiting-analysis-power-bi-content-pack.md)                                                       |
 |                                   | Employee competencies and development reports | LCS                                                                                                                                                                                                                            | [Employee Competencies and Development Power BI content](employee-competencies-and-development-analysis-power-bi-content-pack.md) |
@@ -66,9 +66,9 @@ For information about how to download Power BI content and connect it to your or
 2.  Click **Get Data**.
 3.  In the **Services** box, click **Get**.
 4.  Select the content pack that you want, and then click **Get**.
-5.  Enter the URL of your Dynamics 365 for Operations environment. The URL must be in the format **https://&lt;YourAOSTenant&gt;.cloudax.dynamics.com**. Click **Next**.
+5.  Enter the URL of your Finance and Operations environment. The URL must be in the format **https://&lt;YourAOSTenant&gt;.cloudax.dynamics.com**. Click **Next**.
 6.  Select **oAuth2** as the authentication method, and then click **Sign in**.
-7.  When you're prompted, enter a Microsoft Office 365 account that has permission to access your Dynamics 365 for Operations environment.
+7.  When you're prompted, enter a Microsoft Office 365 account that has permission to access your Finance and Operations environment.
 8.  After you've signed in, the import process begins automatically. When the import is completed, the reports that are included in the content pack appear in the navigation pane. Select a report to view your imported data.
 
 ## Learn more about the Power BI integration
@@ -77,7 +77,7 @@ For information about how to download Power BI content and connect it to your or
 -   [Author and distribute Power BI reports with Entity store](author-distribute-power-bi-reports.md)
 -   [Pin Power BI reports to workspaces](pin-power-bi-reports.md)
 -   [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md)
--   [Use an Electronic reporting configuration to provide Power BI with data from Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Use an Electronic reporting configuration to provide Power BI with data from Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
 
 

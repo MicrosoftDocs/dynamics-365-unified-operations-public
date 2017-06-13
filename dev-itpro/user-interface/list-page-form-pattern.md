@@ -40,7 +40,7 @@ This article provides information about the List Page form pattern. A list page 
 Usage
 -----
 
-A list page presents a set of data on a user interface that is optimized so that you can browse records, find the right record, and then take an action upon that record. The list page lets the user search, filter, and sort the data. FactBoxes on the right side of the grid show related data for the active record. Actions that are relevant to the record are located on the ActionPane at the top of the page. In the current version of Microsoft Dynamics 365 for Operations, use of this pattern is discouraged when there is a 1:1 correspondence between the List Page and Details page. Current guidance is to use this pattern only in other situations, such as when list pages have no backing details pages or have multiple backing details page (for example, when project quotations and sales quotations are shown together in the same List Page).
+A list page presents a set of data on a user interface that is optimized so that you can browse records, find the right record, and then take an action upon that record. The list page lets the user search, filter, and sort the data. FactBoxes on the right side of the grid show related data for the active record. Actions that are relevant to the record are located on the ActionPane at the top of the page. The use of this pattern is now discouraged when there is a 1:1 correspondence between the List Page and Details page. Current guidance is to use this pattern only in other situations, such as when list pages have no backing details pages or have multiple backing details page (for example, when project quotations and sales quotations are shown together in the same List Page).
 
 ## Wireframe
 [![Wireframe](./media/listpage1-1024x576.png)](./media/listpage1.png)
@@ -94,7 +94,7 @@ Grid (Grid)
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md)document.
+-   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
 
 **List Page guidelines:**
 
@@ -139,8 +139,8 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [MSDN AX2012 List Page User Experience Guidelines](http://msdn.microsoft.com/EN-US/library/gg853328.aspx)
--   [MSDN AX2012 List Page Forms](http://msdn.microsoft.com/en-us/library/cc635077.aspx)
+-   [MSDN AX 2012 List Page User Experience Guidelines](http://msdn.microsoft.com/EN-US/library/gg853328.aspx)
+-   [MSDN AX 2012 List Page Forms](http://msdn.microsoft.com/en-us/library/cc635077.aspx)
 
 #### AX 2012 example
 

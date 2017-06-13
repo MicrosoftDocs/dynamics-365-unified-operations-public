@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Apply a deployable package in a Dynamics 365 for Operations environment
-description: This topic explains how to deploy a binary update or an application (AOT) deployable package that was created in your development or build environment.
+title: Apply a deployable package to a Finance and Operations environment
+description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a Finance and Operations environment.
 author: manalidongre
 manager: AnnBe
 ms.date: 04/22/2017
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Apply a deployable package in a Dynamics 365 for Operations environment
+# Apply a deployable package to a Finance and Operations environment
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,17 +40,18 @@ ms.dyn365.ops.version: Platform update 1
 
 The following topologies support package deployment that uses automated flows in Microsoft Dynamics Lifecycle Services (LCS):
 
-- **LCS Implementation Project** – All environments (development, build, demo, Tier-2 sandbox, and production) are supported. Automated package application is self-serve in all environments except production environments. For production environments, customers must use LCS to submit a request to the Service Engineering team to apply packages.
-- **LCS Partner or trial Projects** – Demo and single-box development/test environments are supported.
+- **LCS Implementation Project** – Most environments (development, demo, Tier-2 sandbox, and production) are supported except for build environments. Automated package application is self-serve in all environments except production environments. For production environments, customers must use LCS to submit a request to the Service Engineering team to apply packages.
+- **LCS Partner or trial Projects** – Demo environments are supported.
 
-For the following topologies, you must use Remote Desktop Protocol (RDP) to connect to the environment and install from the command line. For information about manual package deployment, see [Install  a deployable package](install-deployable-package.md).
+For other topologies (below), you must use Remote Desktop Protocol (RDP) to connect to the environment and install from the command line. For information about manual package deployment, see [Install  a deployable package](install-deployable-package.md).
 
 - Local development environments (Downloadable virtual hard disk [VHD])
-- Multi-box development/test environments in Microsoft Azure (Partner and trial projects)
+- Development/test environments in Microsoft Azure (Partner and trial projects)
+- Build environments in an LCS Implementation project
 
 ## Key concepts
 
-- **Deployable package** – A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Dynamics 365 for Operations application (AOT) package, or a new Dynamics 365 for Operations application (AOT) package.
+- **Deployable package** – A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Finance and Operations application (AOT) package, or a new Finance and Operations application (AOT) package.
 
     [![Example of a deployable package](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
 - **Runbook** – The deployment runbook is a series of steps that are generated in order to apply the deployable package to the target environment. Some steps are automated, and some steps are manual. AXUpdateInstaller lets you run these steps one at a time and in the correct order.
@@ -61,9 +62,9 @@ For the following topologies, you must use Remote Desktop Protocol (RDP) to conn
 ## Supported package types
 
 - **AOT deployable package** – A deployable package that is generated from application metadata and source code. This deployable package is created in a development or build environment.
-- **Binary package** – A deployable package that contains binary dynamic-link libraries (DLLs) that the platform and application depend on.
+- **Binary update package** – A deployable package that contains dynamic-link libraries (DLLs) and other binaries and metadata that the platform and application depend on. This is a package released by Microsoft.
 - **Combined Retail deployable package** – A combination of various Retail packages that are generated after the Retail code is combined.
-- **Merged package** – A package that is created by combining one package of each type. For example, one binary package, one AOT package, and one Retail package can be combined. The packages are merged in the Asset library for the project in LCS.
+- **Merged package** – A package that is created by combining one package of each type. For example, one binary update package, one AOT package, and one Retail package can be combined. The packages are merged in the Asset library for the project in LCS.
 
 ## Prerequisite steps
 
@@ -79,7 +80,7 @@ For the following topologies, you must use Remote Desktop Protocol (RDP) to conn
 - **Make sure that the package is applied in a sandbox environment before it's applied in the production environment.** To help guarantee that the production environment is always in a good state, we want to make sure that the package is tested in a sandbox environment before it's applied in the production environment. Therefore, before you request that the package be applied in your production environment, make sure that it has been applied in your sandbox environment by using the automated flows.
 - **If you want to apply multiple packages, create a merged package that can be applied first in a sandbox environment and then in the production environment.** Application of a single package in an average environment requires about 5 hours of downtime. To avoid additional hours of downtime when you must apply multiple packages, you can create a single combined package that contains one package of each type. If you select a binary package and an application deployable package in the Asset library, a **Merge** button becomes available on the toolbar. By clicking this button, you can merge the two packages into a single package and therefore reduce the total downtime by half.
 
-## Apply a package in a non-production environment by using LCS
+## Apply a package to a non-production environment by using LCS
 
 **Note:** Package application causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
 
@@ -110,9 +111,9 @@ To determine whether a complete metadata backup exists, look for a BackupComplet
 
     if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\DynamicsSDK\PrepareForBuild.ps1 }
 
-**Note:** Run the preceding command only if a complete metadata backup exists. If a complete metadata backup doesn't exist, the command will create a new backup. This command will stop the Dynamics 365 for Operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder. You should see output that resembles the following example.
+**Note:** Run the preceding command only if a complete metadata backup exists. If a complete metadata backup doesn't exist, the command will create a new backup. This command will stop the Finance and Operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder. You should see output that resembles the following example.
 
-*6:17:52 PM: Preparing build environment...* *6:17:53 PM: Updating Dynamics SDK registry key with specified values...* *6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...* *6:17:53 PM: Stopping Dynamics 365 for Operations deployment...* *6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created**.* *6:18:06 PM: **Restoring metadata packages from backup...*** *6:22:56 PM: **Metadata packages successfully restored from backup**.* *6:22:57 PM: Preparing build environment complete.* *6:22:57 PM: Script completed with exit code: 0*
+*6:17:52 PM: Preparing build environment...* *6:17:53 PM: Updating Dynamics SDK registry key with specified values...* *6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...* *6:17:53 PM: Stopping Finance and Operations deployment...* *6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created**.* *6:18:06 PM: **Restoring metadata packages from backup...*** *6:22:56 PM: **Metadata packages successfully restored from backup**.* *6:22:57 PM: Preparing build environment complete.* *6:22:57 PM: Script completed with exit code: 0*
 
 After the metadata backup has been restored, delete (or rename) the metadata backup folder (DynamicsBackup\\Packages), so that the build process will no longer find it.
 
@@ -149,7 +150,7 @@ If package application isn't successful, you have two options:
     
     [![Message box that appears when you abort package application](./media/applypackage_sandbox_13-1024x274.png)](./media/applypackage_sandbox_13.png)
 
-## Apply a package in a production environment by using LCS
+## Apply a package to a production environment by using LCS
 
 In a production environment, unlike in a sandbox environment or other types of environments, package application through LCS isn't self-serve. Customers and partners must submit a request to the Service Engineering team to apply a package when the customer is ready for the downtime. 
 
@@ -214,7 +215,7 @@ In a production environment, unlike in a sandbox environment or other types of e
 
 ## Deploying packages in Retail environments
 
-If you're using Microsoft Dynamics 365 for Operations - Retail components (such as Retail Modern POS), after you've applied a deployable package in your environment, you must also update your in-store components. For more information, see [Retail Modern POS installation and updates](/dynamics365/unified-operations/retail/retail-modern-pos-device-activation).
+If you're using Microsoft Dynamics 365 for Retail components (such as Retail Modern POS), after you've applied a deployable package in your environment, you must also update your in-store components. For more information, see [Retail Modern POS installation and updates](/dynamics365/unified-operations/retail/retail-modern-pos-device-activation).
 
 ## See also
 

@@ -1,7 +1,7 @@
 # [Introduction](index.md)
 
-# [Onboard to Dynamics 365 for Operations](get-started/onboarding-home.md)
-## Introduction to Dynamics 365 for Operations
+# [Onboard to Finance and Operations](get-started/onboarding-home.md)
+## Introduction to Finance and Operations
 ### [Get started with Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
 ### [Sign up for a subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [How to get the on-premises version of Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -10,7 +10,7 @@
 ## Explore the user interface
 ### [Action search](get-started/action-search.md)
 ### [Advanced filtering and query syntax](get-started/advanced-filtering-query-options.md)
-### [Dynamics 365 for Operations client FAQ](get-started/client-faq.md)
+### [Finance and Operations client FAQ](get-started/client-faq.md)
 ### [Configure and filter workspaces](get-started/configure-filter-workspaces.md)
 ### [Display pages side-by-side using the Open in New Window icon](get-started/display-pages-side-by-side.md)
 ### [Navigation search](get-started/navigation-search.md)
@@ -74,6 +74,6 @@
 # [Developer and Administrator](/dynamics365/unified-operations/dev-itpro/index)
 
 # Other resources
-## [Dynamics 365 for Operations glossary](get-started/glossary.md)
+## [Finance and Operations glossary](get-started/glossary.md)
 ## [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 

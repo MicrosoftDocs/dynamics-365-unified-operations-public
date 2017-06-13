@@ -156,9 +156,9 @@ The verification checklist shows the steps for manually verifying that the form 
 **Detail Transaction guidelines:**
 
 -   There should not be any duplicate **New** and **Delete** buttons.
--   **ActionPane** guidelines have been consolidated into the Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md) document, in the ActionPane guidelines section.
+-   **ActionPane** guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document, in the ActionPane guidelines section.
 -   In its **default** state, the content of the first FastTab should be fully visible without scrolling.
--   **FastTabs** guidelines have been consolidated into the Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md) document.
+-   **FastTabs** guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 -   **Page title area**:
     -   The following format should be used: **&lt;ID&gt; : &lt;Description&gt;**
     -   A link to the Details page should be provided on the Main Menu after the List page has been merged into the Details page.
@@ -175,7 +175,7 @@ The verification checklist shows the steps for manually verifying that the form 
     -   Focus should be in the Quick Filter when the list page is opened.
     -   **Grid**:
         -   The **ID** field should be the first column, followed by the master entity **ID** and **Name** fields.
-        -   Additional grid guidelines have been consolidated into the Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md) document, in the Grid guidelines section.
+        -   Additional grid guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document, in the Grid guidelines section.
     -   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md) document.
 
 ## Example

@@ -133,10 +133,10 @@ Follow these steps to specify who the approval step should be assigned to.
     </tr>
     <tr class="even">
     <td>User</td>
-    <td>Specific Microsoft Dynamics 365 for Operations users</td>
+    <td>Specific Microsoft Dynamics 365 for Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Dynamics 365 for Operations users. Select the users to assign the step to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to assign the step to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -238,10 +238,10 @@ If a user doesn't take action on a document in the allotted time, the document i
     </tr>
     <tr class="odd">
     <td>User</td>
-    <td>Specific Dynamics 365 for Operations users</td>
+    <td>Specific Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Dynamics 365 for Operations users. Select the users to escalate the document to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to escalate the document to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>

@@ -56,7 +56,7 @@ A simple route is sequential, and there is only one starting point for the route
 
 [![Simple route](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-If you enable only simple routes in the Production control parameters, Dynamics 365 for Operations automatically generates the operation numbers (10, 20, 30, and so on) when you define the route.
+If you enable only simple routes in the Production control parameters, Finance and Operations automatically generates the operation numbers (10, 20, 30, and so on) when you define the route.
 
 ### Route networks
 
@@ -153,7 +153,7 @@ If your business uses standard operations, and if the operational parameters are
 
 ### Applying operation relations
 
-In some cases, Dynamics 365 for Operations must find the operational properties for an operation. For example, when a purchase order is created, the operational properties of each operation must be copied from the operation relations to the production route. In these situations, Dynamics 365 for Operations searches the relevant operation relations from the most specific combination to the least specific combination.  
+In some cases, Dynamics 365 for Operations must find the operational properties for an operation. For example, when a purchase order is created, the operational properties of each operation must be copied from the operation relations to the production route. In these situations, Finance and Operations searches the relevant operation relations from the most specific combination to the least specific combination.  
 
 When Dynamics 365 for Operations searches for the most relevant operation relation for a released product, an operation relation that matches the item ID of the released product is preferred over an operation relation that matches the item group ID. In turn, an operation relation that matches the item group ID is preferred over the default operation relation. The search is done in the following order:
 
