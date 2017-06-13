@@ -72,8 +72,8 @@ The Dynamics 365 for Operations on-premises software is licensed and supported u
 
 The initial release of the on-premises software will be based on platform update 8 and Application version 7.2.
 
-Dates and versions for Dynamics 365 for Operations Application and Platform Releases
-====================================================================================
+## Dates and versions for Dynamics 365 for Operations Application and Platform Releases
+
 
 Table 1. Application Releases
 -----------------------------
