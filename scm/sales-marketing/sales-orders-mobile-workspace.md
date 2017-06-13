@@ -107,7 +107,7 @@ If Dynamics 365 for Operations version 1611 with platform update 3 or later has 
 <td>Implement KB 4013633.</td>
 <td>System administrator</td>
 
-<td>KB 4013633 is an X++ update or metadata hotfix that contains the <strong>Cost controlling</strong> mobile workspace. To implement KB 4013633, your system administrator must follow these steps.
+<td>KB 4013633 is an X++ update or metadata hotfix that contains the <strong>Sales orders</strong> mobile workspace. To implement KB 4013633, your system administrator must follow these steps.
 <ol>
 <li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
 <li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
