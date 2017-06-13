@@ -419,15 +419,15 @@ A Preview function lets you validate the formula allocation base that is created
 
 Here is a closer look at the formula for CC003 (IT):
 
-([15,000.00 \> 10,000.00] × [(10,000.00 × 0.75) + (15,000.00 – 10,000.00) × 1.15]) + ([15,000.00 \<= 10,000.00] × 15,000.00 × 0.75)
+((15,000.00 \> 10,000.00) × ((10,000.00 × 0.75) + (15,000.00 – 10,000.00) × 1.15)) + ((15,000.00 \<= 10,000.00) × 15,000.00 × 0.75) = 13,250.00
 
-(1 × [7,500.00 + 5,000.00 × 1.15]) + (0 × 15,000.00 × 0.75)            
+(1 × (7,500.00 + 5,000.00 × 1.15)) + (0 × 15,000.00 × 0.75)            
 
-1 × 7,500.00 + 5,750.00 + 0 = 13,250.00
+1 × 7,500.00 + 5,750.00 + 0 
 
 Here is an example of a cost distribution rule if the Electricity fixed formula allocation base is assigned as the allocation base in it.
 
-| Cost object |    | Magnitude | Allocation factor                |
+| Cost object |  Description  | Magnitude | Allocation factor                |
 |-------------|----|-----------|----------------------------------|
 | CC001       | HR | 1,837.50  | (1,837.50 ÷ 18,162.50) × Amount  |
 | CC002       | FI | 3,075.00  | (3,075.00 ÷ 18,162.50) × Amount  |
