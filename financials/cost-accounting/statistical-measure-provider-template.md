@@ -153,9 +153,9 @@ After the source data for the statistical measure is processed, the following st
 
 **Journal**
 
-| Journal | Journal type                       | Fiscal calendar period | Version | Data connector source entries |                |       |
-|---------|------------------------------------|------------------------|---------|-------------------------------|----------------|-------|
-| 00001   | Statistical entry transfer journal | Fiscal                 | 2017    | Period 1                      | CA ledger USMF | FTEs  |
+| Journal | Journal type                       | Fiscal calendar period | Year   |  Period  |  Version | Data connector source entries|
+|---------|------------------------------------|------------------------|--------|----------|----------|------------------------------|
+| 00001   | Statistical entry transfer journal | Fiscal                 | 2017   | Period 1 | CA ledger USMF | FTEs                   |
 
 **Statistical entry transfer journal entries**
 
