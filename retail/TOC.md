@@ -15,7 +15,7 @@
 ## [Configure and install a Retail hardware station](retail-hardware-station-configuration-installation.md)
 ## [Retail time and attendance](retail-time-attendance.md)
 # Modern Point of Sale (MPOS) and Cloud POS
-## Hardware peripherals
+## Hardware and peripherals
 ### [Retail peripherals overview](retail-peripherals-overview.md)
 ### [Retail peripheral simulator](retail-peripheral-simulator.md)
 ### [Microsoft tested POS hardware peripherals](microsoft-tested-pos-hardware-peripherals.md)
