@@ -99,7 +99,7 @@ The initial release of the on-premises software will be based on Platform update
 | Platform update 2 | 7.0.4230.16130  | August 2016   | August 31, 2017  | December 2027 |
 | Platform update 1 | 7.0.4127.16103  | May 2016      | May 31, 2017     | December 2027 |
 
-## Date for Finance and Operations on-premises releases
+## Dates for Finance and Operations on-premises releases
 
 The initial release of the on-premises software will be based on Platform update 8 and the July 2017 update of the applicaiton.
 
