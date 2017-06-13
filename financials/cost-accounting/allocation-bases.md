@@ -235,7 +235,7 @@ Here is an example of a cost distribution rule if the Electricity predefined dim
 
 ## Hierarchy allocation bases
 
-Cost accounts can manually create the hierarchy allocation bases by applying a cost object dimension hierarchy node to an existing allocation base. In this way, you can limit the range of the original predefined dimension member allocation basis. One predefined dimension member allocation basis can be used to create several hierarchy allocation bases. Ranges can be maintained in the cost object dimension hierarchy that is associated with the hierarchy allocation bases.
+Cost accountants can manually create the hierarchy allocation bases by applying a cost object dimension hierarchy node to an existing allocation base. In this way, you can limit the range of the original predefined dimension member allocation basis. One predefined dimension member allocation basis can be used to create several hierarchy allocation bases. Ranges can be maintained in the cost object dimension hierarchy that is associated with the hierarchy allocation bases.
 
 ### Example: Hierarchy allocation bases that are based on full-time employees in the organization
 Here is an example of a cost object dimension hierarchy that can be created to describe a simplified organization.
@@ -375,7 +375,7 @@ Here is an example of a cost distribution rule if the Electricity formula alloca
 | CC003       | IT   | 1.00      | (1/3) × Amount     |
 
 ### Example 2: An advanced formula
-For this example, the cost of electricity should not follow the actual electricity that is consumed in kWh. Management wants to incorporate sentiments for lowering electricity usage. 
+For this example, the cost of electricity should not just follow the actual electricity that is consumed in kWh. Management wants to incorporate incentive for lowering electricity usage. 
 
 | Rule              | Rate | 
 |-------------------|------|
