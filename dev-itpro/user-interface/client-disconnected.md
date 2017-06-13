@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: No client Internet connection in on-premises deployments 
+title: Client Internet connection troubleshooting 
 description: This topic covers what will happen if a client machine cannot access the Internet in on-premises deployments.
 author: jasongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 ---
 
-## No client Internet connection in on-premises deployments 
+## Client Internet connection troubleshooting
 
 The configuration of the local network for an on-premises deployment of Dynamics 365 for Finance and Operations, Enterprise edition can affect the available features in the web client. In particular, if the network configuration does not allow a client machine to access the Internet, several degradations in the web client will occur. These include:    
 
