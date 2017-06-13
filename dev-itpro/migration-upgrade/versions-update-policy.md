@@ -85,7 +85,7 @@ The initial release of the on-premises software will be based on Platform update
 
 | Release                | Version | Build Number | Availability | Expiration date | Product life  |
 |------------------------|---------|--------------|--------------|-----------------|---------------|
-| Dynamics 365 for Retail |   July 2017 update    | 7.2.XXXX   | 7.2. x?      | July         | ?               | December 2027 |
+| Dynamics 365 for Retail |   July 2017 update    | 7.2.XXXX   | July 2017         | ?               | December 2027 |
 
 ### Table 3: Platform releases
 
