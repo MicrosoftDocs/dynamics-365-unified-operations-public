@@ -46,6 +46,33 @@ Dynamics 365 for Operations allows customers to print documents on network print
 - **File –** produce a PDF file that’s downloaded directly to the browser for local printing
 - **Print –** send documents directly to network printers from all supported platforms including mobile devices.
 
-For a high-level summary of information access options available in the Cloud hosted solution, see the Document Reporting Services Overview article for additional details.
+For a high-level summary of information access options available in the Cloud hosted solution, see [Printing in Finance and Operations applications](print-documents.md) for additional details.
+
+## Comparing cloud vs on-premises
+Unlike the Cloud hosted offering, the on-premise publication service renders documents as PDF file automatically downloaded to the browser.  This allows users to conveniently save documents and/or print hard copies using local connected devices.  Use built-in administrative forms to control access to network printers directly from the application.  Interact with reports on-demand or schedule automatic jobs to securely generate and distribute documents on a recurring basis.
+
+The following illustration identifies the components involved in printing documents:
+
+(graphic)
+
+See related topic in the Appendix section for details on using extensions to manage availability of the embedded drill-thru links in application reports.
+
+## Managing access to network printers
+Use built-in administrative forms to manage access to network printers.  Network printers are secured per Company and shared by users of the application.  The documents are then printed using a privileged domain account based on settings supplied by the user.  With on-premise deployments of Dynamics 365 for Operations, there’s no need to install an adapter to connect to domain resources like printers and fax machines.
+
+Here’s a screen shot of the form used to manage network printers.
+
+(graphic)
+
+## Appendix
+
+### How to turn-on embedded links in business documents?
+Here's the code used to enabled embedded links in PDF documents: 
+
+(graphic)
+
+
+
+
 
 
