@@ -95,7 +95,6 @@
 ## Export product information data
 # Production control
 ## [Production process overview](production-control/production-process-overview.md)
-### [Cross-docking from production orders to outbound docks](cross-docking-opportunities.md)
 ### [Register material consumption using a mobile device](register-material-consumption-hand-held-device.md)
 ## [Mixed mode planning: Combine discrete, process, and lean sourcing](production-control/mixed-mode-plan.md)
 ## [Manage subcontracting work in production](production-control/manage-subcontract-work-production.md)
@@ -120,6 +119,7 @@
 #### [Reverse the production order status](production-control/reverse-production-order-status.md)
 #### [Report production orders as finished](production-control/report-production-orders-as-finished.md)
 #### [Report BOMs as finished](production-control/report-boms-as-finished.md)
+#### [Cross-docking from production orders to outbound docks](production-control/cross-docking-opportunities.md)
 #### [Material substitution in manufacturing](production-control/substitute-items-bom-lines.md)
 #### [Registration for manufacturing execution](production-control/registration-manufacturing-execution.md)
 #### [Production feedback](production-control/production-feedback.md)
