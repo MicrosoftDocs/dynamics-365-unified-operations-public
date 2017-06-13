@@ -95,6 +95,8 @@
 ## Export product information data
 # Production control
 ## [Production process overview](production-control/production-process-overview.md)
+### [Cross-docking from production orders to outbound docks](cross-docking-opportunities.md)
+### [Register material consumption using a mobile device](register-material-consumption-hand-held-device.md)
 ## [Mixed mode planning: Combine discrete, process, and lean sourcing](production-control/mixed-mode-plan.md)
 ## [Manage subcontracting work in production](production-control/manage-subcontract-work-production.md)
 ## Discrete manufacturing
