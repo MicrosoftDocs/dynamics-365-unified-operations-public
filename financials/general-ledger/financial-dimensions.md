@@ -3,7 +3,7 @@
 
 title: Financial dimensions
 description: This topic describes the various types of financial dimensions and how they are set up.
-author: RobinARH
+author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -17,17 +17,16 @@ ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: RobinARH
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 25871
-ms.assetid: af54621c-c8be-4b72-b6df-dcf886c40ce4
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-l
+
 ---
 
 # Financial dimensions
