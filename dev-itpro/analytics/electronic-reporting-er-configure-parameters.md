@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.2.0
 
 ---
 
@@ -69,7 +69,7 @@ In addition to the basic functionality, ER has other functionality that you can 
 
 **Question:** I have added a custom table to the AOT. I created a new ER model mapping configuration for my ER data model. During the design of the model mapping, I tried to add a new data source type, **Table records**, that refers to my table. I could manually add my table name to the **Table** lookup, and the ER model mapping accepted it without errors or warnings. However, my table’s name isn't included in the list of available choices that the **Table** lookup of this data source offers. How do I include the name of my table?
 
-**Answer:** To include the name of your custom table in the **Table** lookup, complete the "Rebuild table references" procedure to synchronize the ER metadata that is used to access application data.
+**Answer:** To include the name of your custom table in the **Table** lookup, use the **Rebuild table references** menu item as described in the **Optional setup for ER"** section earlier in this topic.
 
 **Question:** Why can’t I mark the Microsoft provider as **Active** in the **Electronic reporting** workspace in my production environment?
 
