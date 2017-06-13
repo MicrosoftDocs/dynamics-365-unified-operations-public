@@ -1,3 +1,31 @@
+---
+# required metadata
+
+title: Vendor invoice automation
+description: This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
+author: twheeloc
+manager: AnnBe
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: twheeloc
+# ms.search.scope:
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Global 
+# ms.search.industry: 
+ms.author: sunilg
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: AX 7.0.0
+---
 # Vendor invoice automation
 
 This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
