@@ -76,26 +76,26 @@ The initial release of the on-premises software will be based on Platform update
 
 | Release              | Version   | Build Number | Availability  | Expiration date | Product life  |
 |----------------------|-----------|--------------|---------------|-----------------|---------------|
-|   Dynamics 365 for Finance and Operations, Entrprise edition  | July 2017 update | X | July 2017       | November 2019   | December 2027 |
+|   Dynamics 365 for Finance and Operations, Entrprise edition  | July 2017 update | 7.2.XXXX | July 2017       | November 2019   | December 2027 |
 | Dynamics 365 for Operations         | 1611      | 7.1.1541     | November 2016 | November 2019   | December 2027 |
 
 
 
 ### Table 2: Retail application release
 
-| Release                | Minor | Version | Build Number | Availability | Expiration date | Product life  |
-|------------------------|-------|---------|--------------|--------------|-----------------|---------------|
-| Retail Application 7.2 |       | TBD     | 7.2. x?      | July         | ?               | December 2027 |
+| Release                | Version | Build Number | Availability | Expiration date | Product life  |
+|------------------------|---------|--------------|--------------|-----------------|---------------|
+| Dynamics 365 for Retail |   July 2017 update    | 7.2.XXXX   | 7.2. x?      | July         | ?               | December 2027 |
 
-### Table 3 Platform Releases
+### Table 3: Platform releases
 
-| Release           | Build Number    | Availability  | Support End date | Product Life  |
+| Release           | Build Number    | Availability  | Expiration date  | Product Life  |
 |-------------------|-----------------|---------------|------------------|---------------|
-| Platform update 7 |  7.0.4307.16141 | May 2017      | May 2018         | December 2027 |
-| Platform update 6 |  7.0.4307.16141 | April 2017    | April 2018       | December 2027 |
-| Platform update 5 |  7.0.4307.16141 | March 2017    | March 2018       | December 2027 |
-| Platform update 4 |  7.0.4307.16141 | February 2017 | February 2018    | December 2027 |
-| Platform update 3 |  7.0.4307.16141 | November 2016 | November 2017    | December 2027 |
+| Platform update 7 |  7.0.4542.16189 | May 2017      | May 31, 2018    | December 2027 |
+| Platform update 6 |  7.0.4509.16180 | April 2017    | April 30, 2018     | December 2027 |
+| Platform update 5 |  7.0.4475.16165 | March 2017    | March 31, 2018      | December 2027 |
+| Platform update 4 |  7.0.4425.16161 | February 2017 | February 28, 2018   | December 2027 |
+| Platform update 3 |  7.0.4307.16141 | November 2016 | November 30, 2017    | December 2027 |
 | Platform update 2 | 7.0.4230.16130  | August 2016   | August 31, 2017  | December 2027 |
 | Platform update 1 | 7.0.4127.16103  | May 2016      | May 31, 2017     | December 2027 |
 
