@@ -55,7 +55,7 @@ Unlike the cloud-hosted offering, the on-premises publication service renders do
 
 The following illustration identifies the components involved in printing documents.
 
-(graphic)
+![Cloud vs. on-premises](media/Cloud-vs-on-premises.png)
 
 See related topic in the Appendix section for details on using extensions to manage availability of the embedded drill-thru links in application reports.
 
