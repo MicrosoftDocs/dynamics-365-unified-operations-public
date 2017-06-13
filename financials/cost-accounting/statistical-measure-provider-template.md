@@ -133,7 +133,7 @@ In this example, if you just want a count of all full-time employees (FTEs), you
 Before you can get statistical measures into Cost accounting, you must establish the relation between the statistical measure provider template and the statistical dimension member. This relation is created per Cost accounting ledger and version. The relation consists of a data connector and a data provider. You can have several data connectors and data providers per statistical dimension member.
 
 > [!NOTE]
-> In this example, we will create a relation only for the **Actual** version.
+> In this example, we will create a relation only for the **Actual version**.
 
 Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statistical measures** to establish the relation. For this scenario, select the **Dynamics 365 for Finance and Operations, Enterprise edition – Statistical measures** data connector, because we want to extract data from Finance and Operations.
 
@@ -221,7 +221,7 @@ In this example, if you just want the sum of hours that are related to the CC010
 Before you can get statistical measures into Cost accounting, you must establish the relation between the statistical measure provider template and the statistical dimension member. This relation is created per Cost accounting ledger and version. The relation consists of a data connector and a data provider. You can have several data connectors and data providers per statistical dimension member.
 
 > [!NOTE]
-> In this example, we will create a relation only for the **Actual** version.
+> In this example, we will create a relation only for the **Actual version**.
 
 Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statistical measures** to establish the relation. For this scenario, select the **Dynamics 365 for Finance and Operations, Enterprise edition – Statistical measures** data connector, because we want to extract data from Finance and Operations.
 
@@ -298,7 +298,7 @@ To import the data, go to **Imported data** \> **Data entity** \> **Imported sta
 Before you can get statistical measures into Cost accounting, you must establish the relation between the source identifier and the statistical dimension member. This relation is created per Cost accounting ledger and version. The relation consists of a data connector and a data provider. You can have several data connectors and data providers per statistical dimension member.
 
 > [!NOTE]
-> In this example, we will create a relation only for the **Actual** version.
+> In this example, we will create a relation only for the **Actual version**.
 
 Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statistical measures** to establish the relation. For this scenario, select the **Imported statistical measures** data connector, because data has been imported from a third-party system into Cost accounting via Excel.
 
