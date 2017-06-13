@@ -38,31 +38,17 @@ This topic outlines the lifecycle and support policies for the Dynamics 365 for 
 
 Modern Lifecycle Policy
 -----------------------
+The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, click [here](https://support.microsoft.com/en-us/help/30881).
 
-(<https://support.microsoft.com/en-us/help/30881>)
+The Dynamics 365 for Operations online service and the Dynamics 365 for Operations on-premises software is covered by the Modern Lifecycle Policy. Licensed customers must stay current with updates to the Dynamics 365 for Operations online service or on-premises software in accordance with the following servicing and system requirements:
 
-The Modern Lifecycle Policy covers products and services that are serviced and
-supported continuously. For more information about this policy, click
-[here](https://support.microsoft.com/en-us/help/30881).
+-   Application versions are supported for three years from the initial date of a major release as specified in Table 1 below; and
 
-The Dynamics 365 for Operations online service and the Dynamics 365 for
-Operations on-premises software is covered by the Modern Lifecycle Policy.
-Licensed customers must stay current with updates to the Dynamics 365 for
-Operations online service or on-premises software in accordance with the
-following servicing and system requirements:
+-   Platform versions are supported as follows and as further specified in Table 3:
 
--   Application versions are supported for three years from the initial date of
-    a major release as specified in Table 1 below; and
+    -   **Critical Fixes:** One year from date Microsoft releases the cloud and on-premises platform version.
 
--   Platform versions are supported as follows and as further specified in Table
-    3:
-
-    -   **Critical Fixes:** One year from date Microsoft releases the cloud and
-        on-premises platform version.
-
-    -   **Non-critical Updates:** Customers must update to the most current
-        Dynamics 365 for Operations platform version in order to deploy
-        non-critical updates.
+    -   **Non-critical Updates:** Customers must update to the most current Dynamics 365 for Operations platform version in order to deploy non-critical updates.
 
 **Note:** Platform versions maintain backward compatibility.
 
