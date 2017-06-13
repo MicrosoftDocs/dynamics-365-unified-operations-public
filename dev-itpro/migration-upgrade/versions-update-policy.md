@@ -101,9 +101,11 @@ The initial release of the on-premises software will be based on Platform update
 
 ## Date for Finance and Operations on-premises releases
 
-The initial release of the on-premises software will be based on Platform update 8 and the July 2017 update of the applicaiton.osoft commits to support the deployments of the Dynamics 365 for Operations on-premises software, through calendar year 2027 at a minimum, provided that the customer keeps the deployed software current according to the Modern Lifecycle Policy.
+The initial release of the on-premises software will be based on Platform update 8 and the July 2017 update of the applicaiton.
+
+Microsoft commits to support the deployments of the Finance and Operations on-premises software through calendar year 2027 at a minimum, provided that the customer keeps the deployed software current according to the Modern Lifecycle Policy.
+
 
 | Release                                                                        | Version               | Build number | Availability      | Expiration date                     |
 |--------------------------------------------------------------------------------|-----------------------|--------------|-------------------|-------------------------------------|
-| (future) Microsoft Dynamics 365 for Operations, Enterprise Edition             | {Spring 2018} (Major) | 8.0          | Spring 2018 (TBD) | New 3 years of support.             |
-| (current)Microsoft Dynamics 365 for Operations on-premises, Enterprise Edition | July 2017             | 7.2.x        | July 2017         |  Nov 2019 inline with 7.1 timeline. |
+|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017             | 7.2.x        | July 2017         |  Nov 2019 inline with 7.1 timeline. |
