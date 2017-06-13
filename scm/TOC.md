@@ -43,6 +43,8 @@
 ### [Set up vendor accounts](procurement/set-up-vendor-accounts.md)
 ### [Vendor collaboration with external vendors](procurement/vendor-collaboration-work-external-vendors.md)
 ### [Vendor collaboration with customers](procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+### [Use external catalogs for PunchOut eProcurement](use-external-catalogs-for-punchout.md)
+### [Set up an external catalog for PunchOut eProcurement](set-up-external-catalog-for-punchout.md)
 ### [Collaborate with vendors by using the Vendor portal](procurement/collaborate-vendors-vendor-portal.md)
 ### [Vendor collaboration mobile workspace](procurement/vendor-collaboration-mobile-workspace.md)
 ### [Vendor portal user security](procurement/configure-security-vendor-portal-users.md)
@@ -192,6 +194,7 @@
 ### [Batch and license plate confirmation](batch-and-license-plate-confirmation.md)
 ### [Movement of inventory with associated work in Warehouse management](move-inventory-associated-work.md)
 ### [System grouping on an open work list](system-group-on-open-work-list.md)
+### [Product confirmation for cluster picking](cluster-picking-item-confirmation.md)
 ## Picking and packing
 ### [Packing materials and fees](warehousing/pack-materials-packing-material-fees.md)
 ### [Piece picking confirmation](piece-picking-confirmation.md)
