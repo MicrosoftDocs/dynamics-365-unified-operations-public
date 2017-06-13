@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides code to extend the ApiController class so that you can create a Web API controller for Retail Server.
 
-By default, all the Retail Server binaries in Microsoft Dynamics AX use only OData. If you want to use a controller that uses a traditional Web API, you can create your own Web API controller and extend the Web API configuration. The following example shows how to create a Web API controller for Retail Server.
+By default, all the Retail Server binaries in Microsoft Dynamics 365 for Retail use only OData. If you want to use a controller that uses a traditional Web API, you can create your own Web API controller and extend the Web API configuration. The following example shows how to create a Web API controller for Retail Server.
 
     namespace Microsoft.Dynamics.RetailServer.Samples.Extensions
     {

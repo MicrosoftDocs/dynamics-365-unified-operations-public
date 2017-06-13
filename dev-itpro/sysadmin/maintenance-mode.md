@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance mode
-description: This article provides information about maintenance mode in Microsoft Dynamics 365 for Operations. Maintenance mode is a new system-wide setting that lets system administrators safely make system changes that might affect system functionality.
+description: This article provides information about maintenance mode in Microsoft Dynamics 365 for Finance and Operations. Maintenance mode is a new system-wide setting that lets system administrators safely make system changes that might affect system functionality.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides information about maintenance mode in Microsoft Dynamics 365 for Operations. Maintenance mode is a new system-wide setting that lets system administrators safely make system changes that might affect system functionality.
+This article provides information about maintenance mode in Microsoft Dynamics 365 for Finance and Operations. Maintenance mode is a new system-wide setting that lets system administrators safely make system changes that might affect system functionality.
 
-Microsoft Dynamics 365 for Operations includes a new system-wide setting that is named maintenance mode. When maintenance mode is turned on, it provides a safe way for system administrators to make system changes that might affect system functionality. For example, configuration keys can be enabled or disabled. While maintenance mode is on, only system administrators and users who have the **Maintenance mode user** role can sign in to the system. By default, maintenance mode is turned off.
+Microsoft Dynamics 365 for Finance and Operations includes a new system-wide setting that is named maintenance mode. When maintenance mode is turned on, it provides a safe way for system administrators to make system changes that might affect system functionality. For example, configuration keys can be enabled or disabled. While maintenance mode is on, only system administrators and users who have the **Maintenance mode user** role can sign in to the system. By default, maintenance mode is turned off.
 
 ## Turning maintenance mode on and off
 When maintenance mode is off, you can't edit the **License configuration** page.
@@ -59,11 +59,11 @@ The following table describes the parameters that are used in this command.
 | --sqlpwd                    | Use this parameter to specify the SQL Server password.                                                            |
 | --isinmaintenancemode       | Use this parameter to turn configuration mode on or off. Use **true** to turn it on and **false** to turn it off. |
 
-After the instance of Microsoft Dynamics 365 for Operations Application Object Server (AOS) is restarted, the system will be in maintenance mode. You can then enable configuration keys, as shown in the following screen shot. 
+After the instance of Microsoft Dynamics 365 for Finance and Operations Application Object Server (AOS) is restarted, the system will be in maintenance mode. You can then enable configuration keys, as shown in the following screen shot. 
 
 [![license-configuration-page-when-not-in-maintenance-mode](./media/license-configuration-page-when-not-in-maintenance-mode.png)](./media/license-configuration-page-when-not-in-maintenance-mode.png) 
 
-If you try to access Dynamics 365 for Operations while the system is in maintenance mode, but you aren't a system administrator or a user who has the **Maintenance mode user** role, you receive an error message. 
+If you try to access Finance and Operations while the system is in maintenance mode, but you aren't a system administrator or a user who has the **Maintenance mode user** role, you receive an error message. 
 
 You can turn off maintenance mode by running the following command.
 

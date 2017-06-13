@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrate the Retail SDK with the continuous build system (VSTS)
-description: The LCS-integrated experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and Retail components. This article outlines the manual steps for merging both build systems. 
+description: The LCS-integrated experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Retail and Retail components. This article outlines the manual steps for merging both build systems. 
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../../includes/banner.md)]
 
 
-The LCS-integrated experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and Retail components. This article outlines the manual steps for merging both build systems. 
+The LCS-integrated experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Retail and Retail components. This article outlines the manual steps for merging both build systems. 
 
 Enable the build system
 -----------------------
@@ -201,7 +201,7 @@ Edit the build definition so that it includes the location of the Retail SDK. (I
 Add a new step at the beginning of the build pipeline, as shown in the following screen shot. [![Adding a new build step to build the Retail SDK](./media/new-build-step-1024x527.png)](./media/new-build-step.png)
 
 ## Add a copy step for binaries from the Retail SDK to the Finance and Operations  build
-This build step enables Microsoft to copy the latest built Retail binaries to the Finance and Operations bin folder, if Microsoft shares files/binaries. Make sure that you complete this step immediately after you add a build step for the Retail SDK, as described in the previous section. [![Adding a copy step for binaries from the Retail SDK to the Dynamics AX build](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
+This build step enables Microsoft to copy the latest built Retail binaries to the Finance and Operations bin folder, if Microsoft shares files/binaries. Make sure that you complete this step immediately after you add a build step for the Retail SDK, as described in the previous section. [![Adding a copy step for binaries from the Retail SDK to the Dynamics 365 for Retail build](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
 
 ## Add a copy step for all Retail packages
 Make sure that this step occurs after the “PowerShell: Generate packages” step (see image below). Here are the arguments.

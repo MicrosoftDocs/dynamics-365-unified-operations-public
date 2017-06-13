@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -  Retail for IT pros and developers
-description: This page lists the resources that are available for IT pros and developers who support Retail and commerce.
+title: Microsoft Dynamics 365 for Retail for IT pros and developers
+description: This page lists the resources that are available for IT pros and developers who support Retail.
 author: RobinARH
 nmanager: AnnBe
 ms.date: 04/04/2017
@@ -30,19 +30,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Microsoft Dynamics 365 for Finance and Operations, Enterprise edition  -  Retail for IT pros and developers
+# Microsoft Dynamics 365 for Retail for IT pros and developers
 
 [!include[banner](../includes/banner.md)]
 
 
-This page lists the resources that are available for IT pros and developers who support Retail and commerce.
+This page lists the resources that are available for IT pros and developers who support Retail.
 
 Retail is dependent on Finance and Operations. We recommend that you familiarize yourself with the core [deployment and development content](/dynamics365/operations/dev-itpro/index).
 
 ## Retail components and architecture
--   [Components of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition - Retail](..\retail-components.md)
+-   [Components of Dynamics 365 for Retail](..\retail-components.md)
 -   [MPOS architecture](retail-modern-pos-architecture.md)
--   [Architecture of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition - Retail Server](retail-server-architecture.md)
+-   [Retail Server architecture](retail-server-architecture.md)
 -   [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)
 -   [Retail Channel Performance Power BI  content](/dynamics365/operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
 
@@ -60,7 +60,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 -   [Retail Modern POS configuration and installation](..\retail-modern-pos-device-activation.md)
 -   [Manage Retail accounts and devices from headquarters](..\set-up-activation-accounts-validate-devices-hq.md)
 -   [Retail POS device activation](retail-device-activation.md)
--   [Security best practices for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition – Retail Cloud POS in a shared environment](secure-retail-cloud-pos.md)
+-   [Security best practices for Retail Cloud POS in a shared environment](secure-retail-cloud-pos.md)
 
 ## Customize POS
 -   [Retail POS screen layouts](..\pos-screen-layouts.md)

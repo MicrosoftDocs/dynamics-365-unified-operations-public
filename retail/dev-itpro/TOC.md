@@ -1,4 +1,4 @@
-# [Microsoft Dynamics 365 for Finance and Operations, Enterprise edition - Retail for IT pros and developers](dev-retail-home-page.md)
+# [Microsoft Dynamics 365 for Retail - Retail for IT pros and developers](dev-retail-home-page.md)
 
 # Architecture
 ## [Components](..\retail-components.md)

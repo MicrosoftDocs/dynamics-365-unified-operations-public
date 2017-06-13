@@ -48,7 +48,7 @@ In sales and marketing, the initial interactions that you have with potential cu
 
 ### Campaigns
 
-A campaign targets the contacts for prospects, leads, opportunities, and customers that have been selected to participate in the campaign. In Microsoft Dynamics 365 for Operations, you can create several types of campaigns, such as telemarketing, mailing, and email campaigns, to maximize your customer potential. As your campaign progresses and you receive positive responses, you can begin the sales process with those recipients who have responded positively to the campaign.
+A campaign targets the contacts for prospects, leads, opportunities, and customers that have been selected to participate in the campaign. In Microsoft Dynamics 365 for Finance and Operations, you can create several types of campaigns, such as telemarketing, mailing, and email campaigns, to maximize your customer potential. As your campaign progresses and you receive positive responses, you can begin the sales process with those recipients who have responded positively to the campaign.
 
 ## Sales
 You use the sales functionality to create quotations, up-sell and cross-sell to new and existing customers, create sales orders, and create sales invoices for customers. The following process flow shows the business process for sales. [![Business process for sales](./media/sales01.jpg)](./media/sales01.jpg)

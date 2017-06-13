@@ -2,7 +2,7 @@
 # required metadata
 
 title: Database management home page
-description: These topics describe how to manage the databases that support Microsoft Dynamics 365 for Operations. 
+description: These topics describe how to manage the databases that support Microsoft Dynamics 365 for Finance and Operations. 
 author: margoc
 manager: AnnBe
 ms.date: 04/10/2017
@@ -34,12 +34,12 @@ ms.search.validFrom: 2016-02-28
 
 [!include[banner](../includes/banner.md)]
 
-These topics describe how to manage the databases that support Microsoft Dynamics 365 for Operations. 
+These topics describe how to manage the databases that support Microsoft Dynamics 365 for Finance and Operations. 
 
-[Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](copy-database-from-azure-sql-to-sql-server.md) 
-[Copy a Microsoft Dynamics 365 for Operations database from SQL Server to an Azure SQL Database environment](copy-database-from-sql-server-to-azure-sql.md) 
+[Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](copy-database-from-azure-sql-to-sql-server.md) 
+[Copy a Microsoft Dynamics 365 for Finance and Operations database from SQL Server to an Azure SQL Database environment](copy-database-from-sql-server-to-azure-sql.md) 
 [Request a point-in-time restore on a non-production environment](request-point-in-time-restore.md) 
-[Retain a copy of a Microsoft Dynamics 365 for Operations database to restore later](copy-operations-database.md)
+[Retain a copy of a Microsoft Dynamics 365 for Finance and Operations database to restore later](copy-operations-database.md)
 
 
 

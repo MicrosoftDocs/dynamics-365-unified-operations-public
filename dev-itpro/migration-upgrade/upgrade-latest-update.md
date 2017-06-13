@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Overview of moving to the latest update of Dynamics 365 for Operations
-description: This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Operations. This topic is intended to describe the overall process and supported scenarios, not to provide detailed instructions for every step of the process.
+title: Overview of moving to the latest update of Finance and Operations
+description: This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations. This topic is intended to describe the overall process and supported scenarios, not to provide detailed instructions for every step of the process.
 author: MargoC
 manager: AnnBe
 ms.date: 05/23/2017
@@ -30,26 +30,26 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Overview of moving to the latest update of Dynamics 365 for Operations
+# Overview of moving to the latest update of Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Operations. This topic is intended to describe the overall process and supported scenarios, not to provide detailed instructions for every step of the process.
+This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations. This topic is intended to describe the overall process and supported scenarios, not to provide detailed instructions for every step of the process.
 
 Overview
 --------
 
-This topic describes the overall process and the supported scenarios that are related to an upgrade from earlier releases to the current update for Dynamics 365 for Operations. It isn't intended to provide detailed instructions for every step of the process. For details of the contents of each available upgrade see [What's new or changed](../get-started/whats-new-changed.md).
+This topic describes the overall process and the supported scenarios that are related to an upgrade from earlier releases to the current update for Finance and Operations. It isn't intended to provide detailed instructions for every step of the process. For details of the contents of each available upgrade see [What's new or changed](../get-started/whats-new-changed.md).
 
 ## Definitions
-Dynamics 365 for Operations platform updates consist mainly of the following components: Application Object Server (AOS), analytics and reporting, Microsoft Office integration, data management, integration services, the web client, and other binaries. It also includes the following Application Object Tree (AOT) models:
+Finance and Operations platform updates consist mainly of the following components: Application Object Server (AOS), analytics and reporting, Microsoft Office integration, data management, integration services, the web client, and other binaries. It also includes the following Application Object Tree (AOT) models:
 
 -   Application Platform
 -   Application Foundation
 -   Directory and Test Essentials
 
-All other components are referred to as the Dynamics 365 for Operations application.
+All other components are referred to as the Finance and Operations application.
 
 ## Introduction to scenarios
 ### Scenario 1: Update to a specific application hotfix
@@ -64,7 +64,7 @@ This process is required before embarking on scenario 3 and is to be completed b
 Use this scenario when business factors such as time or cost permit taking the complete latest update. Typical examples are:
 
 -   Complete upgrade (application and platform) from February 2016 release to May 2016 release.
--   Complete upgrade (application and platform) from Dynamics 365 for Operations to Dynamics 365 for Operations 1611 release.
+-   Complete upgrade (application and platform) from Finance and Operations to Finance and Operations 1611 release.
 
 ***Note:*** August 2016 release is a platform only release, applying this update to an environment is covered in scenario 4.
 
@@ -85,7 +85,7 @@ This scenario describes the process for upgrading code from an earlier release t
 
 | Source environment                                   | Target environment                                           | Do I need the code upgrade service? |
 |-----------------------------------------------------|--------------------------------------------------------------|-------------------------------------|
-| Microsoft Dynamics AX 2012                          | Dynamics 365 for Operations                                  | Yes                                 |
+| Microsoft Dynamics AX 2012                          | Finance and Operations                                  | Yes                                 |
 | February 2016                                              | May 2016 (Platform update 1, Application 7.0.1)              | Yes                                 |
 | February 2016                                              | August 2016 (Platform update 2, Application 7.0.1)           | Yes                                 |
 | May 2016 (Platform update 1, Application 7.0.1)     | August 2016 (Platform update 2, Application 7.0.1)           | No                                  |
@@ -97,7 +97,7 @@ This scenario describes the process for upgrading code from an earlier release t
 Regardless of whether you're a live customer or you're still in the implementation phase of your project, follow these steps to upgrade your code to the latest platform and application updates.
 
 1.  Use the Code upgrade service on Lifecycle Services to upgrade your code.
-    -   This step is not required if you're a customer that is running on standard Dynamics 365 for Operations and have no custom code.
+    -   This step is not required if you're a customer that is running on standard Finance and Operations and have no custom code.
 
 2.  Submit a request for a new Dev/Test environment that is running the latest update.
     -   You might have to delete your existing Dev/Test environment if your subscription doesn't allow for a new one.
@@ -127,7 +127,7 @@ First, upgrade your code as described in Scenario 2. This is a developer task a
 
 ### Upgrade your data
 
-Execute the data upgrade process on a copy of your target database – if already live in production then this would mean a copy of production, prior to go-live it would be your most current database. This is a validation process performed by a developer to ensure the data upgrade completes successfully with the specific set of customizations within this environment – and will drive success in the sandbox and production environments later. To copy your database back to a developer environment follow the steps in [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](..\database\copy-database-from-azure-sql-to-sql-server.md) To execute the data upgrade process follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
+Execute the data upgrade process on a copy of your target database – if already live in production then this would mean a copy of production, prior to go-live it would be your most current database. This is a validation process performed by a developer to ensure the data upgrade completes successfully with the specific set of customizations within this environment – and will drive success in the sandbox and production environments later. To copy your database back to a developer environment follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](..\database\copy-database-from-azure-sql-to-sql-server.md) To execute the data upgrade process follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
 
 ### Upgrade your sandbox environment
 
@@ -152,7 +152,7 @@ Execute the data upgrade process on a copy of your target database – if alread
 4.  When validation is completed successfully, notify the DSE via the LCS ticket and the DSE will retire your old environment.
 
 ## Scenario 4: Upgrade to the most current platform only
-If you're running an environment that doesn't contain any customization of the platform AOT models (Application Platform, Application Foundation, Directory and Test Essentials), you can do an in-place update of your platform, without upgrading to a new environment. For more information about this process, see: [Upgrade Dynamics 365 for Operations to the latest platform update](upgrade-latest-platform-update.md). If you only upgrade your platform, there is no need to do code upgrade (Scenario 2 above) or run data upgrade scripts.
+If you're running an environment that doesn't contain any customization of the platform AOT models (Application Platform, Application Foundation, Directory and Test Essentials), you can do an in-place update of your platform, without upgrading to a new environment. For more information about this process, see: [Upgrade Finance and Operations to the latest platform update](upgrade-latest-platform-update.md). If you only upgrade your platform, there is no need to do code upgrade (Scenario 2 above) or run data upgrade scripts.
 
 
 

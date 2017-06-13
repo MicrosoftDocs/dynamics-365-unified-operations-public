@@ -55,7 +55,7 @@ If this is the first tutorial that you are working on, review [Access Instances]
 If you have already imported the Fleet management tutorial project, skip to the next section.
 
 1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
-2.  In Visual Studio, on the **Dynamics 365 for Operations** menu, click **Import Project**.
+2.  In Visual Studio, on the **Finance and Operations** menu, click **Import Project**.
 3.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
 4.  In the **Select the file to import** window, browse to **C:\\FMLab**, click **FMTutorialDataModel.axpp,** and then click **Open**.
 5.  In the Project file location text box, enter **C:\\FMLab.**

@@ -37,14 +37,14 @@ ms.search.validFrom: 2017-02-28
 This topic describes the Microsoft Dynamics 365 for Unified Operations mobile app and provides links to resources that can help you implement it in your organization.
 
 > [!NOTE]
-> The mobile app was previously named *Microsoft Dynamics 365 for Operations*.
+> The mobile app was previously named *Microsoft Dynamics 365 for Finance and Operations*.
 
 Overview
 --------
 
 The mobile app enables your organization to make its business processes available on mobile devices. After your IT admin enables the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices. The mobile app includes the following features that can help increase productivity:
 
-- Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are completely offline. When a device reestablishes a network connection, offline data operations are automatically synchronized with Dynamics 365 for Finance and Operations, Enterprise edition, or Microsoft Dynamics 365 for Operations.
+- Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are completely offline. When a device reestablishes a network connection, offline data operations are automatically synchronized with Dynamics 365 for Finance and Operations, Enterprise edition, or Microsoft Dynamics 365 for Finance and Operations.
 - IT admins or developers can build and publish mobile workspaces that have been tailored to their organization. The app uses your existing code assets. Therefore, you don't have to re-implement your validation procedures, business logic, or security configuration.
 - IT admins or developers can easily design mobile workspaces by using the point-and-click workspace designer that is included with the web client.
 - IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework. Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don't have constant network connectivity.
@@ -89,7 +89,7 @@ The following table includes links to resources that can help you implement both
 <tr class="odd">
 <td>1</td>
 <td>System administrator</td>
-<td>Implement Finance and Operations or Dynamics 365 for Operations in your organization.</td>
+<td>Implement Finance and Operations or Finance and Operations in your organization.</td>
 <td><ul><li>If you haven't yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</li><li>To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</li></ul></td>
 </tr>
 <tr class="even">

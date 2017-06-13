@@ -67,7 +67,7 @@ Note that, in dynamic and agile organizations, product information data changes 
 
 ## Product masters and product variants
 
-In an agile world, where products must be quickly adapted to customer requirements, product definitions specify a set of products instead of distinct products. In Microsoft Dynamics 365 for Operations, those generic products are known as *product masters*. Product masters hold the definition and rules that specify how distinct products are described and behave in business processes. Based on these definitions, distinct products can be generated. These distinct products are known as *product variants*.
+In an agile world, where products must be quickly adapted to customer requirements, product definitions specify a set of products instead of distinct products. In Microsoft Dynamics 365 for Finance and Operations, those generic products are known as *product masters*. Product masters hold the definition and rules that specify how distinct products are described and behave in business processes. Based on these definitions, distinct products can be generated. These distinct products are known as *product variants*.
 
 In Finance and Operations, a product master is associated with a product dimension group and a configuration technology to specify the business rules. The product dimensions (Color, Size, Style, and Configuration) are a specific set of attributes that can be used throughout the application to define and track specific behaviors of the related products. These dimensions also help users search for and identify the products.
 

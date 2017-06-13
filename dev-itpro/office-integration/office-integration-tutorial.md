@@ -461,7 +461,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 9.  Click **Collect** &gt; **Customer balances** &gt; **Collections** to open the **Collections** page.
 10. Click **Communicate** &gt; **Email** &gt; **Statements to contact**.
 11. Click **OK** to accept the default values in the dialog box.
-12. If you're prompted for the mail option to use, select **Use the Microsoft Dynamics 365 for Operations email client**, and then click **OK**.
+12. If you're prompted for the mail option to use, select **Use the Microsoft Dynamics 365 for Finance and Operations email client**, and then click **OK**.
 13. To receive the test message, change the To address to your email address.
 14. Enter a subject and body for the message.
 15. Click **Send**. The message should be delivered in one to five minutes. Note that the message will appear to be sent from the email account that is set on the **Email parameters** page. If that email account is given "Send As" (or "Send email from this mailbox") permissions for the From address that is used in the **Send email** dialog box, messages will appear to come from that address.

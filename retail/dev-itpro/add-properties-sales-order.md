@@ -75,7 +75,7 @@ After you define an attribute, you can add it to an attribute group.
 ## Assign the attribute group to your online store
 After you create an attribute group, you can assign it to your online store.
 
-1.  Click **Retail and commerce** &gt; **Channels** &gt; **Online stores**.
+1.  Click **Retail** &gt; **Channels** &gt; **Online stores**.
 2.  In the **Online stores** list, double-click your store.
 3.  On the **Set up** tab, click **Sales order attributes**.
 4.  On the **Channel attribute groups** page, click **New**.
@@ -94,10 +94,10 @@ After you create a sales order in the commerce runtime, you can view the new att
 
 ### View the attribute
 
-1.  In the client, click **Retail and commerce** &gt; **Retail IT** &gt; **Distribution schedule**.
+1.  In the client, click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 2.  Run the **P-0001\_OC** job to run POS transactions in the online channel.
-3.  Click **Retail and commerce** &gt; **Retail IT** &gt; **Synchronize orders** to create a sales order.
-4.  Click **Retail and commerce** &gt; **Inquiries and reports** &gt; **Sales orders** &gt; **All sales orders**.
+3.  Click **Retail** &gt; **Retail IT** &gt; **Synchronize orders** to create a sales order.
+4.  Click **Retail** &gt; **Inquiries and reports** &gt; **Sales orders** &gt; **All sales orders**.
 5.  On the **Retail** tab, and click **Retail attributes**. You should see the attribute that you created.
 
 

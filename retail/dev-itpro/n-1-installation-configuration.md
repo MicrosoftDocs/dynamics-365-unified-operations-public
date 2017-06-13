@@ -39,13 +39,13 @@ This topic explains how you can use self-service to configure Connector for Micr
 > To help maintain a high level of security across the company, we strongly recommend that you create a new client ID and secret for this installation. This step requires a new Web App.
 
 1. Generate a Microsoft Azure Web App to create a client ID and secret. For instructions, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application).
-2. After you've created a client ID and secret for Connector for Microsoft Dynamics AX, the client ID must be accepted in Microsoft Dynamics 365 for Finance and Operations. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+2. After you've created a client ID and secret for Connector for Microsoft Dynamics AX, the client ID must be accepted in Retail. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
 ## Configure Connector for Microsoft Dynamics AX
 To configure Connector for Microsoft Dynamics AX, complete the procedures in all sections of this topic through the "Running the Connector for Microsoft Dynamics AX installers" section.
 
 1. Use Azure Active Directory (Azure AD) credentials to sign in to the Retail headquarters or Retail trial.
-2. On the **Welcome** page, use the menu in the upper left to go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Connector for Microsoft Dynamics AX**.
+2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Connector for Microsoft Dynamics AX**.
 3. On the Action Pane, select **New**.
 4. In the **Profile** field, enter a unique value.
 5. Under **Real-Time Service location**, in the **Server** field, enter the server URL where the Real-time service for 2012 R3 will be installed.
@@ -76,14 +76,14 @@ To configure Connector for Microsoft Dynamics AX, complete the procedures in all
     > In AX 2012 R3, the default value was **HQMessageDB**.
 
 16. On the Action Pane, select **Save**.
-17. Go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel data group**.
+17. Go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel data group**.
 18. Select the **Default** data group or the data group that is associated with the channels in your previous installation set (N-1 channels that used Enterprise POS and Modern POS from AX 2012 R3).
 19. On the Action Pane, select **Full data sync**. In the **Select a distribution schedule** field, select job **9999**, and then select **OK**. In the dialog box that appears, select **OK** to confirm the full synchronization. All the data in the channel database is prepared for download.
 
 ### Download the Connector for Microsoft Dynamics AX installers
 
 1. Use Azure AD credentials to sign in to the Microsoft Dynamics Retail headquarters or Retail trial.
-2. On the **Welcome** page, use the menu in the upper left to go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Connector for Microsoft Dynamics AX**.
+2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Connector for Microsoft Dynamics AX**.
 3. In the list of connectors on the left, select the connector that you created earlier for this installation.
 4. On the Action Pane, select **Download**.
 5. On the drop-down menu, under **Async Server Connector service**, select **Configuration file**.
@@ -154,7 +154,7 @@ The Connector for Microsoft Dynamics AX installers first extract the associated 
 8. After an application ID (client ID) and secret are created, the application ID must be accepted in Retail. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 9. Add the client ID to the **Retail shared parameters** page in Retail.
 
-    1. In Finance and Operations, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+    1. In Finance and Operations, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
     3. On the **Identity providers** FastTab, select the provider that begins with **HTTPS://sts.windows.net/**. The values on the **Relying parties** FastTab are set, based on your selection.
     4. On the **Relying parties** FastTab, select **+Add**. Enter the client ID that was created for this installation. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
@@ -199,7 +199,7 @@ The Connector for Microsoft Dynamics AX installers first extract the associated 
 8. If the application ID and secret aren't the same as the application ID and secret that you used for the Async Server Connector service, the application ID must be accepted in Retail. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 9. If the application ID and secret aren't the same as the application ID and secret that you used for the Async Server Connector service, you must add the application ID (client ID) that was created for this installation to the **Retail shared parameters** page in Retail.
 
-    1. In Finance and Operations, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+    1. In Finance and Operations, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
     3. On the **Identity providers** FastTab, select the provider that begins with **HTTPS://sts.windows.net/**. The values on the **Relying parties** FastTab are set, based on your selection.
     4. On the **Relying parties** FastTab, select **+Add**. Enter the client ID that was created for this installation. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
@@ -257,5 +257,5 @@ Use Control Panel in Microsoft Windows to uninstall Retail Store system.
 
 1. Press the Windows logo key, and then enter **Control Panel** in the search box. In the search results, select **Control Panel**.
 2. In Control Panel, select **Programs** &gt; **Uninstall a program**.
-3. In the **Programs and Features** window, select **Microsoft Dynamics 365 for Operations for Retail Store system**, and then, above the list of programs, select **Uninstall**.
+3. In the **Programs and Features** window, select **Microsoft Dynamics 365 for Retail Store system**, and then, above the list of programs, select **Uninstall**.
 4. Wait for the uninstaller to finish removing the program.

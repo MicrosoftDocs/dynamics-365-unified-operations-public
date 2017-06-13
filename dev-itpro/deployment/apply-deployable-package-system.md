@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Apply a deployable package to a Dynamics 365 for Operations environment
-description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a Dynamics 365 for Operations environment.
+title: Apply a deployable package to a Finance and Operations environment
+description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a Finance and Operations environment.
 author: manalidongre
 manager: AnnBe
 ms.date: 04/22/2017
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Apply a deployable package to a Dynamics 365 for Operations environment
+# Apply a deployable package to a Finance and Operations environment
 
 [!include[banner](../includes/banner.md)]
 
@@ -51,7 +51,7 @@ For other topologies (below), you must use Remote Desktop Protocol (RDP) to conn
 
 ## Key concepts
 
-- **Deployable package** – A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Dynamics 365 for Operations application (AOT) package, or a new Dynamics 365 for Operations application (AOT) package.
+- **Deployable package** – A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Finance and Operations application (AOT) package, or a new Finance and Operations application (AOT) package.
 
     [![Example of a deployable package](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
 - **Runbook** – The deployment runbook is a series of steps that are generated in order to apply the deployable package to the target environment. Some steps are automated, and some steps are manual. AXUpdateInstaller lets you run these steps one at a time and in the correct order.
@@ -111,9 +111,9 @@ To determine whether a complete metadata backup exists, look for a BackupComplet
 
     if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\DynamicsSDK\PrepareForBuild.ps1 }
 
-**Note:** Run the preceding command only if a complete metadata backup exists. If a complete metadata backup doesn't exist, the command will create a new backup. This command will stop the Dynamics 365 for Operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder. You should see output that resembles the following example.
+**Note:** Run the preceding command only if a complete metadata backup exists. If a complete metadata backup doesn't exist, the command will create a new backup. This command will stop the Finance and Operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder. You should see output that resembles the following example.
 
-*6:17:52 PM: Preparing build environment...* *6:17:53 PM: Updating Dynamics SDK registry key with specified values...* *6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...* *6:17:53 PM: Stopping Dynamics 365 for Operations deployment...* *6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created**.* *6:18:06 PM: **Restoring metadata packages from backup...*** *6:22:56 PM: **Metadata packages successfully restored from backup**.* *6:22:57 PM: Preparing build environment complete.* *6:22:57 PM: Script completed with exit code: 0*
+*6:17:52 PM: Preparing build environment...* *6:17:53 PM: Updating Dynamics SDK registry key with specified values...* *6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...* *6:17:53 PM: Stopping Finance and Operations deployment...* *6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created**.* *6:18:06 PM: **Restoring metadata packages from backup...*** *6:22:56 PM: **Metadata packages successfully restored from backup**.* *6:22:57 PM: Preparing build environment complete.* *6:22:57 PM: Script completed with exit code: 0*
 
 After the metadata backup has been restored, delete (or rename) the metadata backup folder (DynamicsBackup\\Packages), so that the build process will no longer find it.
 
@@ -215,7 +215,7 @@ In a production environment, unlike in a sandbox environment or other types of e
 
 ## Deploying packages in Retail environments
 
-If you're using Microsoft Dynamics 365 for Operations - Retail components (such as Retail Modern POS), after you've applied a deployable package in your environment, you must also update your in-store components. For more information, see [Retail Modern POS installation and updates](/dynamics365/unified-operations/retail/retail-modern-pos-device-activation).
+If you're using Microsoft Dynamics 365 for Retail components (such as Retail Modern POS), after you've applied a deployable package in your environment, you must also update your in-store components. For more information, see [Retail Modern POS installation and updates](/dynamics365/unified-operations/retail/retail-modern-pos-device-activation).
 
 ## See also
 
