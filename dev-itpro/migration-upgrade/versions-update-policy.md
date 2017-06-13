@@ -57,15 +57,15 @@ The Finance and Operations online service and the Finance and Operations on-prem
 
 -   **Finance and Operations application updates** can be initiated by the customer using Lifecycle Services.
 
-Before updates are applied to the customer’s production environment, they must be tested by the customer in a sandbox environment. For details about how the sandbox environment will be provided, see the [Dynamics 365 Licensing Guide](<https://www.microsoft.com/en-us/dynamics365/pricing>).
+Before updates are applied to the customer’s production environment, they must be tested by the customer in a sandbox environment. For details about how the sandbox environment will be provided, see the [Dynamics 365 Licensing Guide-NEED LINK](https://www.microsoft.com/en-us/dynamics365/pricing).
 
 **Important:** To help protect our customers and the online service, Microsoft may apply critical fixes directly to your Finance and Operations environments. If a critical fix must be applied, Microsoft will notify the customer of the required downtime window (if any) and apply the fix to the applicable environment. After fixes are applied, Microsoft will communicate completion to the customer.
 
 ## On-premises software update policies
 
-The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing the updates in their on-premise environments. Microsoft will support the Finance and Operations on-premises software through December 31, 2027, at a minimum, but only if the customer keeps the deployed on-premises software current according to this policy.
+The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing the updates in their on-premises environments. Microsoft will support the Finance and Operations on-premises software through December 31, 2027, at a minimum, but only if the customer keeps the deployed on-premises software current according to this policy.
 
-The Finance and Operations on-premises software is licensed and supported under the [Modern Support Lifecycle Policy](https://support.microsoft.com/en-us/help/447912/announcing-microsoft-modern-lifecycle-policy). This requires the customer to maintain Software Assurance (“SA”) or the Enhancement Plan and deploy updates as noted in Table 2 below. Customers who want to use the Fixed Support Lifecycle Policy (5+5), must downgrade to Microsoft Dynamics AX 2012 R3. If a customer lapses on SA or the Enhancement Plan, that customer will be eligible only for the perpetual license rights to Microsoft Dynamics AX 2012 R3 and must uninstall the Finance and Operations on-premises software.
+The Finance and Operations on-premises software is licensed and supported under the [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881/modern-lifecycle-policy). This requires the customer to maintain Software Assurance (“SA”) or the Enhancement Plan and deploy updates as noted in Table 2 below. Customers who want to use the Fixed Support Lifecycle Policy (5+5), must downgrade to Microsoft Dynamics AX 2012 R3. If a customer lapses on SA or the Enhancement Plan, that customer will be eligible only for the perpetual license rights to Microsoft Dynamics AX 2012 R3 and must uninstall the Finance and Operations on-premises software.
 
 The initial release of the on-premises software will be based on Platform update 8 and the July 2017 version of the applicaiton.
 
@@ -74,10 +74,11 @@ The initial release of the on-premises software will be based on Platform update
 ### Table 1: Application releases
 -----------------------------
 
-| Release                                | Minor           | Version   | Build Number | Availability  | Expiration date | Product life  |
-|----------------------------------------|-----------------|-----------|--------------|---------------|-----------------|---------------|
-| Application 7.1                        |                 | 1611      | 7.1.1541     | November 2016 | November 2019   | December 2027 |
-|                                        | Application 7.2 | July 2017 | 7.2.x        | July 2017     | November 2019   | December 2027 |
+| Release                                   | Version   | Build Number | Availability  | Expiration date | Product life  |
+|-------------------------------------------|-----------|--------------|---------------|-----------------|---------------|
+|   Dynamics 365 for Finance and Operations, Entrprise edition          | July 2017 update | July 2017 | 7.2.x        | July 2017     | November 2019   | December 2027 |
+| Dynamics 365 for Operations                         | 1611      | 7.1.1541     | November 2016 | November 2019   | December 2027 |
+
 
 
 ### Table 2: Retail application release
