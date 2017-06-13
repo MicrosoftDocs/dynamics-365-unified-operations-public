@@ -159,7 +159,7 @@ After the source data for the statistical measure is processed, the following st
 
 **Statistical entry transfer journal entries**
 
-| Accounting date | Magnitude | Statistical element |                     | Cost center |
+| Accounting date | Magnitude | Statistical element |   Description       | Cost center |
 |-----------------|-----------|---------------------|---------------------|-------------|
 | 31-01-2017      | 1.00      | FTEs                | Full time employees | CC001       |
 | 31-01-2017      | 2.00      | FTEs                | Full time employees | CC002       |
@@ -167,7 +167,7 @@ After the source data for the statistical measure is processed, the following st
 
 **Statistical entries**
 
-| Cost object |    | Accounting date | Statistical dimension member |                     | Magnitude |
+| Cost object |    | Accounting date | Statistical dimension member |  Description        | Magnitude |
 |-------------|----|-----------------|------------------------------|---------------------|-----------|
 | CC001       | HR | 31-01-2017      | FTEs                         | Full time employees | 1.00      |
 | CC002       | FI | 31-01-2017      | FTEs                         | Full time employees | 2.00      |
@@ -175,7 +175,7 @@ After the source data for the statistical measure is processed, the following st
 
 If the FTEs predefined dimension member allocation basis is assigned as an allocation base in a cost distribution rule, the cost will be distributed by using the following allocation factor.
 
-| Cost object |    | Magnitude | Allocation factor |
+| Cost object | Description    | Magnitude | Allocation factor |
 |-------------|----|-----------|-------------------|
 | CC001       | HR | 1.00      | (1/5) × Amount    |
 | CC002       | FI | 2.00      | (2/5) × Amount    |
@@ -243,9 +243,9 @@ After the source data for the statistical measure processed, the following stati
 
 **Journal**
 
-| Journal | Journal type                       | Fiscal calendar period | Version | Data connector source entries |                |         |
-|---------|------------------------------------|------------------------|---------|-------------------------------|----------------|---------|
-| 00002   | Statistical entry transfer journal | Fiscal                 | 2017    | Period 1                      | CA ledger USMF | Pack CC |
+| Journal | Journal type                     | Fiscal calendar period | Year   | Period | Version   |   Data connector source entries  |
+|---------|----------------------------------|------------------------|--------|---------|----------------|---------|
+| 00002   | Statistical entry transfer journal | Fiscal               | 2017    | Period 1  | CA ledger USMF | Pack CC |
 
 **Statistical entry transfer journal entries**
 
