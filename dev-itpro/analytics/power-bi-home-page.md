@@ -62,7 +62,7 @@ If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise ed
 #### Embedded content
 Except for the content that is marked with an asterisk (\*), all the content in the preceding list is embedded in the application. To learn more about where you can view the Power BI content, click the links.
 
-#### .pbix files available in Lifecycle Services
+#### Files available in Lifecycle Services
 This Power BI content is available in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and connect it to your data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
 ## Power BI content for Dynamics 365 for Operations version 1611
@@ -99,7 +99,7 @@ This Power BI content is available from PowerBI.com.
 2. Click **Get Data**.
 3. In the **Services** box, click **Get**.
 4. Select the content pack that you want, and then click **Get**.
-5. Enter the URL of your Dynamics 365 for Operations environment. The URL must be in the format **https://&lt;YourAOSTenant&gt;.cloudax.dynamics.com**. Click **Next**.
+5. Enter the URL of your Dynamics AX environment. The URL must be in the format **https://&lt;YourAOSTenant&gt;.cloudax.dynamics.com**. Click **Next**.
 6. Select **oAuth2** as the authentication method, and then click **Sign in**.
 7. When you're prompted, enter a Microsoft Office 365 account that has permission to access your Microsoft Dynamics AX environment.
 8. After you've signed in, the import process begins automatically. When the import is completed, the reports that are included in the content pack appear in the navigation pane. Select a report to view your imported data.
