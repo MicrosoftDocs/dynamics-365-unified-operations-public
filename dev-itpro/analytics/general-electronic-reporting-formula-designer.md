@@ -550,17 +550,16 @@ Here is the formula that can be designed: FORMAT (CONCATENATE (@&quot;SYS70894&q
 <td>PADLEFT (“1234”, 10, “ “) returns the text string “      1234”</td>
 </tr>
 <tr class="even">
+<td>TRIM (string)</td>
+<td>Returns given text after truncating leading and trailing spaces, and removes multiple spaces between words. </td>
+<td><strong>TRIM ("     Sample     text     ")</strong> returns <strong>"Sample text".</strong></td>
+=======
 <td>GETENUMVALUEBYNAME (enumeration data source path, enumeration value label text)</td>
 <td>Returns a value of a specified enumeration data source by specified text of this enumeration label.</td>
 <td>The following example shows the enumeration ReportDirection introduced in a data model. Note that labels are defined for enumeration values.
 The following examples show:
 <ul><li>Model enumeration <strong>ReportDirection</strong> inserted into a report as a data source <strong>$Direction</strong></li>
 <li>ER expression <strong>$IsArrivals</strong> designed to use model enumeration as parameter of this function. The value of this expression is <strong>TRUE</strong></li></ul></td>
-</tr>
-<tr class="odd">
-<td>TRIM (string)</td>
-<td>Returns text after truncating leading and trailing spaces.</td>
-<td><strong>TRIM (“ Sample text ”)</strong> returns <strong>“Sample text”</strong>.</td>
 </tr>
 </tbody>
 </table>
