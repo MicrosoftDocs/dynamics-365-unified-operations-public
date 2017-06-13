@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
- ms.search.scope: AX 2012, Operations
+ms.search.scope: AX 2012, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62753
 ms.assetid: fab3f6cf-03db-47c7-90fb-f8bc03dacf49
