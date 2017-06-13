@@ -50,11 +50,11 @@ The Local Business Data deployment defines two types of Service Fabric standalon
 
 Note: Retail Server is currently not supported in Local Business Data deployments. 
 
-GRAPHIC
+[![Service fabric standalone cluster](./media/lbd-overview-01.png)](./media/lbd-overview-01.png)
 
 Application lifecycle management scenarios for Local Business Data deployments use Lifecycle Services like the cloud service. Customers can use proven tools and methodologies to manage their on-premise deployments (Figure 2). 
 
-GRAPHIC
+[![Application lifecycle management for Local Business Data deployments](./media/lbd-overview-02.png)](./media/lbd-overview-02.png)
 
 ## Data Storage 
 The Local Business Data deployment option stores core customer data on premises. Local Business Data deployments depend on cloud services to manage the application lifecycle and support scenarios.  These services enable initial onboarding, initiation and tracking of support incidents, or service updates and upgrades.  Data supplied to supporting services is stored at rest in the United States.  See the table below for details. 
