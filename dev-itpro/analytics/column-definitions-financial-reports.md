@@ -25,8 +25,8 @@ ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 
 ---
 

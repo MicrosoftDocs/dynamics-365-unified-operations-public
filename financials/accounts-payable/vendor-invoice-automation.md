@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: sunilg
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: 	Version 1611
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Vendor invoice automation
 
