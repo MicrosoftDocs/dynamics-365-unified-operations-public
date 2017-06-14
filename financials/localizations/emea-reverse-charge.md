@@ -109,4 +109,4 @@ When a sales invoice is posted that has the reverse charge, the sales tax transa
 ## Reverse charge on a purchase invoice
 For purchases under the Reverse Charge schema, the purchaser that receives the invoice that has the reverse charge acts as a buyer and a seller for VAT accounting purposes.
 
-When a purchase invoice that has the reverse charge is posted, two sales tax transactions are created. One transaction has the **Sales tax receivable** tax direction. The other transaction has the **Sales tax payable** tax direction. The **Reverse charge** check box is selected.
+When a purchase invoice that has the reverse charge is posted, two sales tax transactions are created. One transaction has the **Sales tax receivable** tax direction. The other transaction has the **Sales tax payable** tax direction, and the **Reverse charge** check box is selected.
