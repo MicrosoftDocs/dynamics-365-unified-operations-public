@@ -62,7 +62,7 @@ A data package is the unit of work that must be sent to Finance and Operations, 
 
 Vendor invoice document attachment is a new data entity that is introduced as part of this feature. The Vendor invoice header entity has been modified so that it supports attachments. The Vendor invoice line entity hasn’t been modified for this feature.
 
-This topic doesn’t give a detailed definition of a data package. It also doesn’t explain how to create data packages. For this information, see [Data entities and packages framework](../unified-operations/dev-itpro/data-entities/data-entities-data-packages).
+This topic doesn’t give a detailed definition of a data package. It also doesn’t explain how to create data packages. For this information, see [Data entities and packages framework](dynamics365/en-us/unified-operations/dev-itpro/data-entities/data-entities-data-packages).
 
 To quickly generate test data that includes invoices and attachments, follow these steps.
 
