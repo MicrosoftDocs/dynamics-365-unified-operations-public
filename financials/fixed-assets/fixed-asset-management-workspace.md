@@ -63,7 +63,7 @@ You can navigate directly to the **Books setup** page, **Fixed asset transaction
 
 ### Analytics – all companies
 
-The **Analytics** page provides important metrics about fixed assets in all legal entities in the system. Access to this tab is controlled by the View fixed asset analytics for all companies duty.
+The **Analytics** page provides important metrics about fixed assets in all legal entities in the system. Access to this tab is controlled by the View fixed asset analytics for all companies security privilege.
 
 The following table shows the visualizations that are available on each report page.
 
