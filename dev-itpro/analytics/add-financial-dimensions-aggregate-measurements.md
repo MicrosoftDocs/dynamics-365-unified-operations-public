@@ -185,16 +185,16 @@ Notice that the newly created tables contain a key that can be used to join them
 
 If you had chosen a different Dimension table, you would need to relate the corresponding **FieldName\_FK** field from the Combination table to the **KEY\_** field in the Dimension table.
 
-How a developer can enable Financial dimensions
+How a developer can enable financial dimensions
 ===============================================
 
 For a user to see expanded financial dimensions in the Entity store, a developer must enable the use of financial dimensions in aggregate measurements. It is a best practice to include financial dimensions when modeling any aggregate measurement that involves financial data. This can be achieved by creating an aggregate dimension based on “**Financial dimension tables”.** Such an Aggregate dimension, ie. the Aggregate dimension created using “Financial dimension tables” will be expanded at runtime as we saw above.
 
-What are “**Financial dimension tables”**?
+## What are “**Financial dimension tables”**?
 
-We consider the base tables that contain Financial dimension data, as “Financial dimension tales” namely, **DimensionAttributeValueCombination** or **DimensionAttributeValueSet.**
+We consider the base tables that contain financial dimension data, as “Financial dimension tales” namely, **DimensionAttributeValueCombination** or **DimensionAttributeValueSet.**
 
-If you use a table, a view or an Entity based on these two tables, then the fields of the aggregate dimension will be expanded at runtime.
+If you use a table, a view, or an entity based on these two tables, then the fields of the aggregate dimension will be expanded at runtime.
 
 Let’s consider the example from the **LedgerActivityMeasure** aggregate measurement.
 
@@ -204,14 +204,12 @@ Let’s consider the example from the **LedgerActivityMeasure** aggregate measur
 
 At runtime, new dimension fields are added (ie. **DimensionCombination** table is expanded) as new Financial dimensions are defined in the system.
 
-Creating role playing financial dimensions
+Creating role-playing financial dimensions
 ------------------------------------------
 
-When reporting with Ledger data, you may require reporting on primary and offset accounts. For an example, in case of a Ledger transaction that involves transferring an amount from one account to another, the primary account would be the **From account** while the offset account is the **To account**. This pattern is known as Role playing dimensions.
+When reporting with Ledger data, you may require reporting on primary and offset accounts. For an example, in case of a Ledger transaction that involves transferring an amount from one account to another, the primary account would be the **From account** while the offset account is the **To account**. This pattern is known as *role-playing dimensions**.
 
-You need both primary and offset accounts to be associated with transaction data. This means, you would need to expand Financial dimension fields of both primary and offset accounts. Let’s see how this requirement can be achieved.
-
-See the example below
+You need both primary and offset accounts to be associated with transaction data. This means, you would need to expand financial dimension fields of both primary and offset accounts. Let’s see how this requirement can be achieved. See the example below.
 
 ![](media/062a0d860fe1633a6616bca6e871f95e.png)
 
