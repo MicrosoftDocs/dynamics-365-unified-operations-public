@@ -2,7 +2,7 @@
 # [Application stack and server architecture](application-stack-server-architecture.md)
 # [Get an evaluation copy](get-evaluation-copy.md)
 # [Sign up for a subscription](sign-up-preview-subscription.md)
-# [Access Dynamics 365 for Operations instances](../dev-tools/access-instances.md)
+# [Access instances](../dev-tools/access-instances.md)
 # [Development system requirements](development-system-requirements.md)
 # Fleet Management sample application
 ## [Fleet Management sample application](fleet-management-sample.md)
@@ -23,7 +23,7 @@
 ## [Export and import a model](models-export-import.md)
 ## [Metadata search in Visual Studio](metadata-search-visual-studio.md)
 ## [Models](models.md)
-## [Projects in Dynamics 365 for Operations](projects.md)
+## [Projects](projects.md)
 ## [Tools add-ins for Visual Studio](developer-tools-add-ins.md)
 ## [Turn off model customization and deprecate functionality](lock-models.md)
 ## [Update Visual Studio development tools](update-development-tools.md)

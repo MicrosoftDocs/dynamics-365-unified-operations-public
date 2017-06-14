@@ -47,9 +47,9 @@ To understand how Word “gets it right” and provides a great experience, you 
 Keeping track of character orientation in a financial program that might record billions of transactions and multi-billions of characters would produce significant transnational and spatial overhead if we stored contextual information for each character. Therefore, this behavior would be considered only for special conditions.
 
 ## Bidirectional text
-To support Arabic and Hebrew, both of which are RTL languages, there is an RTL orientation for the controls in each form, so that an RTL reader can interact with the form in a natural reading manner. For the most part, RTL orientation of the controls works as expected and provides RTL users with the experience that they expect. Dynamics 365 for Operations and modern browsers support RTL orientation, and Dynamics 365 for Operations conforms to that functionality. However, in some cases, extensible controls (custom controls) require special code to orient their elements correctly. 
+To support Arabic and Hebrew, both of which are RTL languages, there is an RTL orientation for the controls in each form, so that an RTL reader can interact with the form in a natural reading manner. For the most part, RTL orientation of the controls works as expected and provides RTL users with the experience that they expect. Finance and Operations and modern browsers support RTL orientation, and Finance and Operations conforms to that functionality. However, in some cases, extensible controls (custom controls) require special code to orient their elements correctly. 
 
-A point of reference in this article is the Win32 CEdit control, which is used primarily for standard text entry (account name, description, user name, and so on, in Microsoft Dynamics AX 2012). The behavior of the HTML Input control mimics the functionality of the CEdit control. Therefore, the same behavior applies to Dynamics 365 for Operations. 
+A point of reference in this article is the Win32 CEdit control, which is used primarily for standard text entry (account name, description, user name, and so on, in Microsoft Dynamics AX 2012). The behavior of the HTML Input control mimics the functionality of the CEdit control. Therefore, the same behavior applies to Finance and Operations. 
 
 The CEdit control is a Win32 control that is governed by the rules for bidirectional text management that are defined by the Unicode standard. Bidirectional text occurs when the control hosts both RTL text (such as Arabic or Hebrew) and LTR text within the same string of characters. 
 
@@ -159,7 +159,7 @@ The Unicode standard doesn’t provide for language-specific or keyboard-specifi
 
 The WPF RichTxt control provides the desired behavior according to the strict guidance. However, it isn't clear that this behavior is always the desired behavior. That is, phone numbers, US Social Security numbers, and so on, should always be read and appear in LTR order, regardless of the language orientation. The alternative is to identify fields that must enable this behavior. The program can't automatically determine that a field must have this behavior. Therefore, you might have to use a descriptive property on the control, so that users can specify “Structured Formatting.” If none of these approaches can be achieved, you must educate Hebrew users about the fundamental behavior when hyphens are used together with numbers. Users can then use one of the preceding workarounds to get the desired display behavior, by omitting the hyphens between numbers. 
 
-**Hebrew example:** (Desired and correct in Dynamics 365 for Operations for both Arabic and the Hebrew example in Hebrew) 
+**Hebrew example:** (Desired and correct Operations for both Arabic and the Hebrew example in Hebrew) 
 
 **Pattern:** First (עברית) hyphen second (English) hyphen third (שלום) hyphen forth (Hello) 
 
@@ -170,14 +170,14 @@ The WPF RichTxt control provides the desired behavior according to the strict gu
 1.  First (English letter) hyphen second (Hebrew letter) hyphen
 2.  First (Hebrew letter) hyphen second (English letter) hyphen
 
-A Dynamics 365 for Operations RTL form appears as desired:
+A RTL form appears as desired:
 
 1.  ש-**-a**
 2.  **-a**ש-
 
 **Exception for phone numbers:** Often, Arabic users don't have to use hyphens in phone numbers, because international phone numbers rarely use hyphens to separate digits. Any fundamental changes in the behavior of hyphens (for example, if you introduce use of the WPF RichTxt control) will cause phone numbers to appear incorrectly for Arabic users. 
 
-Phone numbers are always read LTR and often include hyphens. Phone numbers in Dynamics 365 for Operations sometimes appear correctly, when they are shown in a grid through a display method that presents the string as LTR.
+Phone numbers are always read LTR and often include hyphens. Phone numbers sometimes appear correctly, when they are shown in a grid through a display method that presents the string as LTR.
 
 Currently, the input of phone numbers by using numbers and hyphens produces the correct display, such as 701-225-2188. 
 

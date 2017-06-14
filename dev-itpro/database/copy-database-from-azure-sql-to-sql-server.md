@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Copy Dynamics 365 for Operations database - Azure SQL to SQL Server
-description: This topic provides information about how to export a Microsoft Dynamics 365 for Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
+title: Copy Finance and Operations database - Azure SQL to SQL Server
+description: This topic provides information about how to export a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Copy a Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment
+# Copy a Finance and Operations database from Azure SQL Database to a SQL Server environment
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides information about how to export a Microsoft Dynamics 365 for Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
+This topic provides information about how to export a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
 
 Overview
 --------
@@ -243,13 +243,13 @@ If using Financial Reporting (formerly Management Reporter) then follow the step
 To switch the environment and use the new database, stop the services in the following list, rename the AxDB database to AxDB\_orig, and then rename your newly imported database AxDB. Restart the services in the following list:
 
 -   World wide web publishing service
--   Dynamics 365 for Operations Batch Management service
+-   Finance and Operations Batch Management service
 -   Management Reporter 2012 Process service
 
 To switch back to the original database, reverse the step above. Stop the services, rename the databases, and then start the services.
 
 ## Reenter data from encrypted and environment specific fields in the target database
-In the Dynamics 365 for Operations client, enter the values that you documented for the encrypted and environment-specific fields. The following fields are affected. (The field names are given in *Table*.*Field* format.)
+In the Finance and Operations client, enter the values that you documented for the encrypted and environment-specific fields. The following fields are affected. (The field names are given in *Table*.*Field* format.)
 
 |                                                          |                                                                                                                                                                                |
 |----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

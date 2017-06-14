@@ -240,7 +240,7 @@ The following steps show the CRT code changes:
             return new GetReceiptResponse(new ReadOnlyCollection<Receipt>(result));
         }
 
-The full sample code is in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsSamplefolder folder of the SDK. **Note:** You should call the printing of the custom receipt type from the client. For more information, see [Dynamics 365 for Operations - Retail extensibility patterns and best practices](https://youtu.be/qQkHFubENIY)[.]()
+The full sample code is in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsSamplefolder folder of the SDK. **Note:** You should call the printing of the custom receipt type from the client. For more information, see [Extensibility patterns and best practices](https://youtu.be/qQkHFubENIY)[.]()
 
 ### Best practice
 

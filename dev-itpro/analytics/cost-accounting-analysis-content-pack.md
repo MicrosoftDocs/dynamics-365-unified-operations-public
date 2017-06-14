@@ -5,7 +5,7 @@ title: Cost accounting analysis Power BI content
 description: This topic describes what is included in the Cost accounting analysis Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,13 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 270274
 ms.assetid: b74549df-35d5-4f2f-b3c7-405b0d38ea78
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -34,18 +34,27 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
+This topic describes what is included in the **Cost accounting analysis** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
-This topic describes what is included in the Cost accounting analysis Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
+## Overview
 
-Overview
---------
+The **Cost accounting analysis** Power BI content is intended for cost controllers or anyone who is responsible for performing cost control of an organization. It includes the key metrics, such as cost, magnitude, and cost rate by actual cost, budget cost, and flexible budget cost. It uses transaction data from the **Cost accounting** module and provides an aggregate view of costs for the whole organization in one reporting currency. Managers can filter the data by cost objects to perform cost control of their organizational units, even if the organization can have several legal entities. 
 
-The **Cost accounting analysis** Microsoft Power BI content is intended for cost controllers or anyone who is responsible for performing cost control of an organization. It includes the key metrics, such as cost, magnitude, and cost rate by actual cost, budget cost, and flexible budget cost. It uses transaction data from Cost accounting in Microsoft Dynamics 365 for Operations and provides an aggregate view of costs for the whole organization in one reporting currency. Managers can filter the data by cost objects to perform cost control of their organizational units, even if the organization can have several legal entities. Because the **Cost accounting analysis** Power BI content highlights variances between the actual costs and budgeted costs, managers can be notified about positive and negative trends for their operational units. Managers can drill down to the cost element hierarchies or individual cost elements to gain detailed insight into how cost variances have occurred, and then take effective action. The **Cost accounting analysis** Power BI content lets cost accountants analyze how cost flows through the cost objects of the whole organization. To learn more about Cost accounting, see [Cost accounting home page](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page). By defining access-level security in Cost accounting and combining it with row-level security in Power BI, you can grant all cost object owners access to the **Cost accounting analysis** Power BI content. All data in the visualizations will then be filtered based on the access level that is controlled in Cost accounting. To learn more about access-level security and row-level security, see [Set up security for Cost accounting content for Power BI](setup-security-cost-accounting-content-pack.md).
+Because the **Cost accounting analysis** content highlights variances between the actual costs and budgeted costs, managers can be notified about positive and negative trends for their operational units. Managers can drill down to the cost element hierarchies or individual cost elements. In this way, managers can gain detailed insight into how cost variances have occurred, and then take effective action. 
+
+The **Cost accounting analysis** content lets cost accountants analyze how cost flows through the cost objects of the whole organization. 
+
+To learn more about Cost accounting, see [Cost accounting home page](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page). 
+
+By defining access-level security in Cost accounting and combining it with row-level security in Power BI, you can grant all cost object owners access to the **Cost accounting analysis** Power BI content. All data in the visualizations will then be filtered based on the access level that is controlled in Cost accounting. To learn more about access-level security and row-level security, see [Set up security for Cost accounting content for Power BI](setup-security-cost-accounting-content-pack.md).
 
 ## Accessing the Power BI content
-You can find the **Cost accounting analysis** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and connect it to your Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). 
+You can find the **Cost accounting analysis** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
-> NOTE - **KB4011327** is a prerequisite for this Power BI content. After you sign in to Lifecycle Services, you can access the KB here: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+Be sure to download the **Cost accounting analysis** content that applies to the version of Microsoft Dynamics 365 that you're using.
+
+> [!NOTE]
+> KB 4011327 is a prerequisite for this Power BI content. After you sign in to LCS, you can access the KB here at <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
 ## Metrics that are included in the Power BI content
 The content includes a set of report pages. Each page consists of a set of metrics that are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the **Cost accounting analysis** Power BI content.
@@ -69,12 +78,14 @@ The content includes a set of report pages. Each page consists of a set of metri
 |                                  | Actual cost by Cost object dimension member name and Cost element dimension member name                                       |                                               |
 
 ## Understanding the data model and entities
-Dynamics 365 for Operations data is used to fill the report pages in the **Cost accounting analysis** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). The following key aggregate measurements are used as the basis of the content.
+The following data is used to fill the report pages in the **Cost accounting analysis** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). 
 
-| Entity                  | Key aggregate measurement | Data source for Dynamics 365 for Operations | Field     | Description                                   |
-|-------------------------|---------------------------|---------------------------------------------|-----------|-----------------------------------------------|
-| Cost accounting entries | SUM(Amount)               | CAMDATAAggregatedCostEntry                  | Amount    | Amount in the Cost accounting ledger currency |
-| Statistical entries     | SUM(Magnitude)            | CAMDATAAggregatedStatisctialEntry           | Magnitude |                                               |
+The following key aggregate measurements are used as the basis of the content.
+
+| Entity                  | Key aggregate measurement | Data source for Dynamics 365      | Field     | Description                                        |
+|-------------------------|---------------------------|-----------------------------------|-----------|----------------------------------------------------|
+| Cost accounting entries | SUM(Amount)               | CAMDATAAggregatedCostEntry        | Amount    | The amount in the Cost accounting ledger currency. |
+| Statistical entries     | SUM(Magnitude)            | CAMDATAAggregatedStatisctialEntry | Magnitude |                                                    |
 
 The following table shows how the key aggregate measurements are used to create several calculated measures in the content's dataset.
 
@@ -119,15 +130,3 @@ The following key dimensions are used as filters to slice the aggregate measurem
 | Fiscal calendars                   | Calendar, Calendar description                                                                                       |
 | Fiscal years                       | Calendar year                                                                                                        |
 | Fiscal periods                     | Calendar year period                                                                                                 |
-
-## Additional resources
-Here are some helpful links that are related to entities and building Power BI content:
-
--   [Data entities](..\data-entities\data-entities.md)
--   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)
--   [Setting up security for Cost accounting content for Power BI](setup-security-cost-accounting-content-pack.md)
-
-
-

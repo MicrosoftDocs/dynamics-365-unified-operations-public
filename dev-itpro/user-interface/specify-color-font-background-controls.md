@@ -72,7 +72,7 @@ In Microsoft Dynamics AX 2012, color selection had these characteristics:
         }
     }
 
-## Color selection for input controls in Microsoft Dynamics 365 for Operations
+## Color selection for input controls
 In the current version, the color picker control is a standard control type. The color picker control can be put directly in a form, or it can be used as part of a custom lookup for an integer or string control. The following example shows how to interact with the color picker control in a custom lookup. However, the code is similar if you put the color picker in a form and provide the user with a button to select a color.
 
 -   A color picker control can be hosted in a form or a custom lookup to let the user visually pick a color or specify an RGB value.

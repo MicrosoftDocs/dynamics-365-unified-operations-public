@@ -40,12 +40,9 @@ The processes for each type of upgrade are similar, but different enough that we
 
 [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](upgrade-overview-2012.md)
 
+
 [Prepare to migrate code](prepare-migration.md)
 
 [Prepare to move to the latest update](upgrade-latest-update.md)
 
 [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md)
-
-
-
-
