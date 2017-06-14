@@ -5,7 +5,7 @@ title: Electronic reporting sample vendor checks
 description: This topic provides general information about how to use the Electronic reporting sample check formats.
 author: twheeloc
 manager: AnnBe
-ms.date: 05/09/2017
+ms.date: 06/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,4 +49,4 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition includes a
 - It is recommended that you print a test check to validate the check layout by selecting the Print test option. The sample check formats work best when the advanced printer properties for Microsoft Excel are set up with Margins = None. Once the test check has been generated, enable editing of the Microsoft Excel output to configure the page layout to have all margins set to zero. Compare the test copy of the checks to your check stock and adjust until you are satisfied with the position alignment.
 - When you generate payments for the configured bank account in the payment journal, the checks will be printed by using the specified format.
 
-For more information, see [Modify an Electronic reporting format](dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md)
+For more information, see [Modify an Electronic reporting format](/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
