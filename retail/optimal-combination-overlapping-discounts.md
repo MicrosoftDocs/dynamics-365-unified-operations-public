@@ -50,8 +50,7 @@ In this example, two products are required in order to qualify for each discount
 For any two products, the better of these two discounts depends on the prices of the two products. When the price of both products is equal or almost equal, discount 1 is better. When the price of one product is significantly less than the price of the other product, discount 2 is better. Here is the mathematical rule for evaluating these two discounts against each other: 
 ![Overlapping discount combo 02](./media/overlapping-discount-combo-02.jpg)
 
-> [!NOTE]
-> When the price of product 1 is equal to two-thirds of the price of product 2, the two discounts are equal. In this example, the effective discount percentage for discount 1 varies from a few percent (when the prices of the two products are far apart) to a maximum of 25 percent (when the two products have the same price). The effective discount percentage for discount 2 is fixed. It’s always 20 percent. Because the effective discount percentage for discount 1 has a range that can be more than or less than discount 2, the best discount depends on the prices of the two products that must be discounted. In this example, the calculation is completed quickly, because only two discounts are applied on only two products. There are only two possible combinations: one application of discount 1 or one application of discount 2. There are no permutations to calculate. The value of each discount is calculated by using both products, and the best discount is used.
+**Note:** When the price of product 1 is equal to two-thirds of the price of product 2, the two discounts are equal. In this example, the effective discount percentage for discount 1 varies from a few percent (when the prices of the two products are far apart) to a maximum of 25 percent (when the two products have the same price). The effective discount percentage for discount 2 is fixed. It’s always 20 percent. Because the effective discount percentage for discount 1 has a range that can be more than or less than discount 2, the best discount depends on the prices of the two products that must be discounted. In this example, the calculation is completed quickly, because only two discounts are applied on only two products. There are only two possible combinations: one application of discount 1 or one application of discount 2. There are no permutations to calculate. The value of each discount is calculated by using both products, and the best discount is used.
 
 ### Example 2: Four products and two discounts
 
@@ -67,11 +66,11 @@ First, we find the largest discount that is available from any two products by u
 
 ![Overlapping discount combo 04](./media/overlapping-discount-combo-04.jpg)
 
-> [!NOTE]
-> When prices vary, and two or more discount compete, the only way to guarantee the best combination of discounts is to evaluate both discounts and compare them.
+**Note:** When prices vary, and two or more discount compete, the only way to guarantee the best combination of discounts is to evaluate both discounts and compare them.
 
 ## Total possible combinations
 This section continues the example from the previous section. We will add more products and another discount, and see how many combinations must be calculated and compared. The following table shows the number of possible discount combinations as the product quantity increases. The table shows what happens both when there are two overlapping discounts, as in the previous example, and when there are three overlapping discounts. The number of possible discount combinations that must be evaluated soon exceeds what even a fast computer can calculate and compare quickly enough to be acceptable for retail transactions.
+
 ![Overlapping discount combo 05](./media/overlapping-discount-combo-05.jpg)
 
 When even larger quantities or more overlapping discounts are applied, the total number of possible discount combinations quickly goes into the millions, and the time that is required in order to evaluate and select the best possible combination quickly becomes noticeable. Some optimizations have been done in the retail price engine to reduce the total number of combinations that must be evaluated. However, because the number overlapping discounts and the quantities in a transaction aren’t limited, a large number of combinations will always have to be evaluated whenever there are overlapping discounts. This issue is the issue that the marginal value ranking method addresses.
