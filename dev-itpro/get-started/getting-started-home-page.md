@@ -1,9 +1,9 @@
----
+﻿---
 # required metadata
 
 title: Where to start
 description: Start here to onboard quickly and learn the Microsoft Dynamics 365 for Finance and Operations UI.
-eauthor: sericks007
+author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -13,17 +13,17 @@ ms.technology:
 
 # optional metadata
 
-rms.search.form: DefaultDashboard
+ms.search.form: DefaultDashboard
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
-oms.custom: 21761
+ms.custom: 21761
 ms.assetid: c395e9ff-ea43-42fe-a584-145d6ce10ae3
 ms.search.region: Global
-o# ms.search.industry: 
+# ms.search.industry: 
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
