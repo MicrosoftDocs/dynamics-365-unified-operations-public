@@ -2,13 +2,13 @@
 # required metadata
 
 title: Cash registers for Sweden
-description: Overview of the cash register functionality available for Sweden 
+description: This topic provides an overview of the cash register functionality available for Sweden. 
 author: epopov
-manager: vastrup
+manager: annbe
 ms.date: 07/1/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,10 +17,9 @@ ms.search.form:  RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFor
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-# ms.search.scope: [Which Operations client to show this topic as help for]
+ms.search.scope: Retail, Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.assetid: [Go get from guidgenerator.com]
 ms.search.region: Sweden
 ms.search.industry: retail
 ms.author: epopov
@@ -77,7 +76,8 @@ Sweden-specific POS features are enabled in POS when the POS functionality profi
 
     - Grand total sales, returns, and net.
 
-2. The channel report Electronic journal (Sweden) that lists continuous use events in the POS, including sales, returns, receipt copies, drawer openings, price overrides, etc. **NOTE**: the report cannot be exported and/or printed. The functionality to export and/or print the Electronic journal (Sweden) report will be made available later.
+2. The channel report Electronic journal (Sweden) that lists continuous use events in the POS, including sales, returns, receipt copies, drawer openings, price overrides, etc. 
+    > [!NOTE] the report cannot be exported and/or printed. The functionality to export and/or print the Electronic journal (Sweden)    report will be made available later.
 
 ### Integration of Dynamics 365 Retail POS with control units
 
@@ -93,7 +93,7 @@ Microsoft Dynamics 365 for Retail includes a sample for integration of POS with 
 
   - If a failure happens during the registration of a transaction in the control unit, the fiscal data for the transaction remains blank. In this case, it will not be allowed to start a new transaction or to close the current shift. The operator will be requested to re-try registering the un-registered transaction in the control unit. If the repeated attempt fails, the operator will be offered to skip the registration. Skipping the registration requires a special permission to be enabled. If the registration of a transaction in the control unit is skipped, the information about this event is saved in the transaction instead of the fiscal data.
 
-**NOTE**: customer orders are not supported by the sample for the integration. A sample for the control unit integration for customer orders will be available later.
+> [!NOTE] customer orders are not supported by the sample for the integration. A sample for the control unit integration for customer orders will be available later.
 
 You can find more information about the control unit integration sample in the [sample deployment guide](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md).
 
@@ -127,7 +127,7 @@ The following settings need to be made for Sweden:
 
     - Sales tax settings in items (item sales tax groups for sales)
 
-    Please refer to the [Sales tax overview](../../operations/financials/general-ledger/indirect-taxes-overview.md) page for more information on setting up and using sales tax in Dynamics 365 for Finance and Operations and Dynamics 365 for Retail. 
+    Please refer to the [Sales tax overview](../../operations/financials/general-ledger/indirect-taxes-overview) page for more information on setting up and using sales tax in Dynamics 365 for Finance and Operations and Dynamics 365 for Retail. 
 
 2. Update retail store details on the **All retail stores** page. In particular, set the following parameters:
     
@@ -149,13 +149,13 @@ The following settings need to be made for Sweden:
 
     -  Set the **Allow printing receipt copy** permission to an appropriate value:
 
-        - **Allow always**. If this permission is enabled, the operator will be allowed to print copies of a receipt multiple times;
+        - **Allow always** - If this permission is enabled, the operator will be allowed to print copies of a receipt multiple times;
 
-        - **Allow only once**. If this permission is enabled, the operator will be allowed to print a copy of a receipt only once;
+        - **Allow only once** - If this permission is enabled, the operator will be allowed to print a copy of a receipt only once;
 
-        - **Allow only once, and only if HQ DB is available**. If this permission is enabled, the operator will be allowed to print a copy of a receipt only once, and only if the Headquarters DB is available through the Real-Time service, and thus it is possible to verify that no copies of the receipt have been printed previously in any store;
+        - **Allow only once, and only if HQ DB is available** - If this permission is enabled, the operator will be allowed to print a copy of a receipt only once, and only if the Headquarters DB is available through the Real-Time service, and thus it is possible to verify that no copies of the receipt have been printed previously in any store;
 
-        - **Never**. If this permission is enabled, the operator will not be allowed to print a copy of a receipt.
+        - **Never** - If this permission is enabled, the operator will not be allowed to print a copy of a receipt.
 
 5. Make necessary changes to receipt formats for sales receipts:
 
