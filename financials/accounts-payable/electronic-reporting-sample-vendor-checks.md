@@ -33,7 +33,7 @@ ms.dyn365.version:
 
 # Electronic reporting sample check formats
 
-You can use Electronic reporting to format vendor checks. Many bank-specific and check provider–specific check formats are available in the market. Sample check formats have been included in the Electronic reporting tool repository.
+You can use Electronic reporting to format vendor checks. Many bank-specific and check provider–specific check formats are available in the market. Sample check formats have been included in the Electronic reporting tool repository in the Payment check model. The sample checks contained in the model are labeled Check in the middle (US) and Check on top stub below (US). 
 
 ## What check formats are currently supported?
 
@@ -45,5 +45,8 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition includes a
 
 - Before you can print checks by using Electronic reporting, at least one active check configuration must be imported into your Electronic reporting configurations. For instructions, see [Download Electronic reporting configurations from Lifecycle Services](/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 - When you configure Cash and bank management checks for the bank account, select the **Generic electronic Export format** check box, and select the appropriate check format as an export format configuration.
-- You must also specify the number of slip lines that will be printed on the remittance. Be sure to include the header rows when you calculate this number.
+- You must also specify the number of slip lines that will be printed on the remittance. Be sure to include the header rows when you calculate this number. The recommended setting for the number of slip lines for the two sample check formats is 17. This will vary based on your check stock and your printer drivers.
+- It is recommended that you print a test check to validate the check layout by selecting the Print test option. The sample check formats work best when the advanced printer properties for Microsoft Excel are set up with Margins = None. Once the test check has been generated, enable editing of the Microsoft Excel output to configure the page layout to have all margins set to zero. Compare the test copy of the checks to your check stock and adjust until you are satisfied with the position alignment.
 - When you generate payments for the configured bank account in the payment journal, the checks will be printed by using the specified format.
+
+For more information, see [Modify an Electronic reporting format](dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md)
