@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Sell and return products outside of an assortment
@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,14 +18,14 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope:
+# ms.search.scope: 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 ---
 

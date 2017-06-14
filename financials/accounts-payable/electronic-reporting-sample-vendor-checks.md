@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Electronic reporting sample vendor checks
@@ -17,15 +17,15 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: twheeloc 
-# ms.search.scope: 
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
 ms.search.region: Global 
 # ms.search.industry: 
 ms.author: twheeloc
-ms.dyn365.intro: 2017/06/01
-ms.dyn365.version:
+ms.dyn365.intro: 2017-06-30
+ms.dyn365.version: Enterprise edition, July 2017 update
 
 ---
 

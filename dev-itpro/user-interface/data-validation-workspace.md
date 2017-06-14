@@ -24,8 +24,7 @@ ms.assetid:
 ms.search.region: Global 
 # ms.search.industry: 
 ms.author: bking
-ms.search.validFrom: 
-ms.dyn365.ops.version:
+
 ---
 
 # Data validation workspace

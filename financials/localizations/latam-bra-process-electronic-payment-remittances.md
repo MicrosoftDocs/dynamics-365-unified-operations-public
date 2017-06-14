@@ -16,15 +16,15 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: twheeloc
-# ms.search.scope: 
+ms.reviewer: twheeloc
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Brazil 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: v-gonode
-ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: Enterprise edition, July 2017 update
 ---
 
 # Process electronic payment remittances for Brazil

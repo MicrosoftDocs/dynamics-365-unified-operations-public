@@ -17,14 +17,15 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: twheeloc
-# ms.search.scope: 
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: 
 ms.author: v-gonode
-ms.search.validFrom: 2017-06-01
-ms.dyn365.ops.version:
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: Enterprise edition, July 2017 update
+
 ---
 # Export and import transactions for General ledger consolidation for Brazil
 

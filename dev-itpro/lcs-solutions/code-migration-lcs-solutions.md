@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Migrate code for an LCS solution
@@ -25,8 +25,6 @@ ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omarc
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
 
 ---
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Process and consume data packages in an LCS solution
@@ -25,8 +25,7 @@ ms.assetid: ff06961e-2d11-4e4c-addf-5e4b9528a924
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omarc
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+
 
 ---
 
