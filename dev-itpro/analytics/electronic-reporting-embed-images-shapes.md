@@ -88,6 +88,6 @@ The following table lists the files that are required in order to complete the *
 | Microsoft Word template for printing payment checks  | Cheque template Word.docx   |
 | Microsoft Excel template for printing payment checks | Cheque template.xlsx        |
 
-The following graphic provides an example of the test printout for a payment check that is generated from this Excel template. 
+The following graphic provides an example of the test printout for a payment check that is generated from the Excel template. 
 
 [![Payment check test printout](./media/embed-images-shapes-02.png)](./media/embed-images-shapes-02.png)
