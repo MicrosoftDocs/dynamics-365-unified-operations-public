@@ -5,7 +5,7 @@ title: System requirements for on-premises environments
 description: This topic lists the system requirements for an on-premises environment.
 author: kfend
 manager: AnnBe
-ms.date: 06/013/2017
+ms.date: 06/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
