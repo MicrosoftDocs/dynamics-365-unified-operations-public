@@ -128,13 +128,11 @@ A business user can create a new report using financial dimensions using Power B
 Let’s create a Power BI desktop report using the Ledger Activity measure group. 
 
 1. In a development environment, connect to the Entity store database using the Power BI desktop tool. 
-2. Select the following tables
+2. Select the following tables:
 
-**LedgerActivityMeasure\_LedgerActivityMeasureGroup**
-
-**LedgerActivityMeasure\_FiscalPeriodDateAggregtateDimension**
-
-**LedgerActivityMeasure\_DimensionCombination**
+- **LedgerActivityMeasure\_LedgerActivityMeasureGroup**
+- **LedgerActivityMeasure\_FiscalPeriodDateAggregtateDimension**
+- **LedgerActivityMeasure\_DimensionCombination**
 
 3. Using the manage relationships option in Power BI desktop, define relationships with the following table fields:
 
