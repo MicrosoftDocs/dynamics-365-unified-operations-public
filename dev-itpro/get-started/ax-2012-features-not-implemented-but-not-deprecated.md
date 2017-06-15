@@ -67,7 +67,9 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="odd">
 <td>Vendor portal</td>
-<td>Vendor portal lets you certify and validate suppliers as claims users through identity providers such as Microsoft account or Yahoo. It also supports unsolicited vendor sign-up. Vendor portal lets vendors review purchase orders, update their own (supplier) data, review product receipts to generate invoices, and upload and maintain a product catalog. Vendor portal lets you collaborate with or notify a supplier, and also lets you upload requests for quotation (RFQs) and allow vendors to respond to them. A vendor portal interface will be available in the web client, for Microsoft Azure Active Directory (Azure AD) users who have a dedicated security role. These users can review, confirm, and reject purchase orders, and can view confirmed orders.</td>
+<td>Vendor portal lets you certify and validate suppliers as claims users through identity providers such as Microsoft account or Yahoo. It also supports unsolicited vendor sign-up. Vendor portal lets vendors review purchase orders, update their own (supplier) data, review product receipts to generate invoices, and upload and maintain a product catalog. Vendor portal lets you collaborate with or notify a supplier, and also lets you upload requests for quotation (RFQs) and allow vendors to respond to them. A vendor portal interface will be available in the web client, for Microsoft Azure Active Directory (Azure AD) users who have a dedicated security role. These users can review, confirm, and reject purchase orders, and can view confirmed orders.
+<p>The ability for the vendor to view and respond to purchase orders, and to create draft invoices has been included in Dynamics 365 for Financials and Operations in recent releases. So has the ability to initiate a Vendor user request workflow, to onboard new external (AAD account) users defined as contact persons for the vendor. </p>
+</td>
 </tr>
 <tr class="even">
 <td>Employee self-service (ESS)</td>
