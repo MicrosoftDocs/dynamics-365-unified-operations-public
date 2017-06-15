@@ -3,7 +3,7 @@
 
 title: Vendor collaboration with external vendors
 description: This topic describes how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
-author: YuyuScheller
+author: BibiSp
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -141,6 +141,35 @@ When you cancel a PO, the status is changed to **Approved**. You must send the P
 ### Adding attachments to a PO
 
 You can add attachments such as files, images, and notes to the PO by using the document management system. Attachments of the **External** type will be visible to the vendor when you send the PO.
+
+## Update the PO when a vendor suggests changes
+When a vendor has responded to the PO and suggested changes, the next step is to process the response.
+In the **Purchase order preparation workspace**, in In external review requires action list, you can identify a PO that a vendor responded to as accepted with changes. In the In external review requires action list, you can also navigate to the vendor’s response. On a response, a vendor can change the following information on the header.
+ 
+-   Vendor document reference
+-   Mode of delivery
+-   Delivery terms
+-   Confirmed delivery date
+
+The vendor can also add a note or attachment
+
+On the lines, the vendor can change the quantity and the delivery dates, add notes and attachments, reject a line, substitute a line with an other product that is keyed in as text, and split a line into multiple deliveries. Depending on which changes that are suggested by the vendor, the line status will have different line statuses:
+	
+-   **Accepted with changes**
+-   **Rejected**
+-   **Substituted** In this case an extra line will be added that has the status **Substitute**.
+-   **Confirmed** Split into schedule In this case extra lines will be added that have the status **Schedule lines**.
+
+If a line has no changes, the line status is **Accepted**.
+
+On the response, you can see the previously mentioned line statuses that indicate the types of changes that the vendor made. Additionally, all changed fields appear in bold to help you identify the changes.
+
+You can update a PO by clicking the **Process PO update** action on the response or on one line at a time. An indicator, **Is PO update processed?**, on the header and the lines lets you see whether the system has processed the header or lines to update the PO with any potential changes that originate from the response. You can run the **Process PO update** process only one time per header or line.
+
+Not all suggested changes can be updated on a PO. Only updates on the header, and updates of dates and quantities on lines can automatically be updated on the PO. For other changes, you must manually update the PO. In this case, the **Is PO update processed?** indicator shows **Manual update**. An example of a change that has to be handled manually would be when a vendor suggests to split a line into a schedule.
+
+A line that has a status of **Accepted** will have a confirmed delivery date that will be updated on the PO when you execute the **Process PO update**. Notes and attachments won’t automatically be transferred to the current PO. Note that when you update the current PO via the **Process PO update** action, trade agreements will not be reassessed on the PO lines.
+
 
 ## PO statuses and versions
 This section describes the various statuses that a PO can have up to the time when it’s confirmed. It also describes at what point new versions of the PO are made available to the vendor. The behavior varies, depending on whether you use change management for POs. 
