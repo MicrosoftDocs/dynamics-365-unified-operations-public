@@ -364,8 +364,8 @@
 #### [Post the pre-acquisition of a fixed asset](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset?toc=/dynamics365/unified-operations/toc.json)
 #### [Postal codes](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually?toc=/dynamics365/unified-operations/toc.json)
 #### [Registration IDs](/dynamics365/unified-operations/financials/localizations/emea-registration-ids?toc=/dynamics365/unified-operations/toc.json)
-#### [SEPA Credit transfer overview](/dynamics365/unified-operations/financials/localizations/../accounts-payable/sepa-credit-transfer?toc=/dynamics365/unified-operations/toc.json)
-#### [SEPA Direct debit overview](/dynamics365/unified-operations/financials/localizations/../accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/toc.json)
+#### [SEPA Credit transfer overview](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer?toc=/dynamics365/unified-operations/toc.json)
+#### [SEPA Direct debit overview](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/toc.json)
 #### [Set up signers for print forms](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms?toc=/dynamics365/unified-operations/toc.json)
 #### [VAT exchange rates](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate?toc=/dynamics365/unified-operations/toc.json)
 #### [View transactions on settlement](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form?toc=/dynamics365/unified-operations/toc.json)
@@ -561,38 +561,38 @@
 # Human resources
 
 ## Recruiting
-### [Manage a recruiting process](/dynamics365/unified-operations/human-resources/manage-recruiting-process?toc=/dynamics365/unified-operations/toc.json)
-### [Mass hire projects](mass-hire-projects?toc=/dynamics365/unified-operations/toc.json)
-## [Payroll, United States](/dynamics365/unified-operations/human-resources/localizations/noam-usa-payroll?toc=/dynamics365/unified-operations/toc.json)
+### [Manage a recruiting process](/dynamics365/unified-operations/fin-and-ops/hr/manage-recruiting-process?toc=/dynamics365/unified-operations/toc.json)
+### [Mass hire projects](/dynamics365/unified-operations/fin-and-ops/hr/mass-hire-projects?toc=/dynamics365/unified-operations/toc.json)
+## [Payroll, United States](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll?toc=/dynamics365/unified-operations/toc.json)
 ### Payroll setup
-#### [Set up payroll for workers](/dynamics365/unified-operations/human-resources/localizations/noam-usa-worker-position-payroll-tasks?toc=/dynamics365/unified-operations/toc.json)
-#### [Set up work cycles and work periods](/dynamics365/unified-operations/human-resources/localizations/noam-usa-work-cycle-work-period-tasks?toc=/dynamics365/unified-operations/toc.json)
-#### [Set up benefit accrual plans ](/dynamics365/unified-operations/human-resources/localizations/noam-usa-benefit-accrual-plan-tasks?toc=/dynamics365/unified-operations/toc.json)
-#### [Set up benefits](/dynamics365/unified-operations/human-resources/localizations/noam-usa-benefit-set-up-tasks?toc=/dynamics365/unified-operations/toc.json)
+#### [Set up payroll for workers](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-worker-position-payroll-tasks?toc=/dynamics365/unified-operations/toc.json)
+#### [Set up work cycles and work periods](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-work-cycle-work-period-tasks?toc=/dynamics365/unified-operations/toc.json)
+#### [Set up benefit accrual plans ](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-benefit-accrual-plan-tasks?toc=/dynamics365/unified-operations/toc.json)
+#### [Set up benefits](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-benefit-set-up-tasks?toc=/dynamics365/unified-operations/toc.json)
 ### Frequencies and cycles
-### [Pay cycle and pay period tasks](/dynamics365/unified-operations/human-resources/localizations/noam-usa-pay-cycle-pay-period-tasks-sample?toc=/dynamics365/unified-operations/toc.json)
-### [Payroll calculation and frequency tasks](/dynamics365/unified-operations/human-resources/localizations/noam-usa-payroll-calculation-frequencies-tasks?toc=/dynamics365/unified-operations/toc.json)
-### [Work schedule and leave tasks](/dynamics365/unified-operations/human-resources/localizations/noam-usa-work-schedule-leave-tasks?toc=/dynamics365/unified-operations/toc.json)
+### [Pay cycle and pay period tasks](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample?toc=/dynamics365/unified-operations/toc.json)
+### [Payroll calculation and frequency tasks](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll-calculation-frequencies-tasks?toc=/dynamics365/unified-operations/toc.json)
+### [Work schedule and leave tasks](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-work-schedule-leave-tasks?toc=/dynamics365/unified-operations/toc.json)
 ### Codes and taxes
-#### [Earning code and earning code group tasks](/dynamics365/unified-operations/human-resources/localizations/noam-usa-earning-code-group-tasks?toc=/dynamics365/unified-operations/toc.json)
-#### [Tax information tasks](/dynamics365/unified-operations/human-resources/localizations/noam-usa-tax-information-tasks?toc=/dynamics365/unified-operations/toc.json)
+#### [Earning code and earning code group tasks](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-earning-code-group-tasks?toc=/dynamics365/unified-operations/toc.json)
+#### [Tax information tasks](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-tax-information-tasks?toc=/dynamics365/unified-operations/toc.json)
 ### Garnishments, tax levies, and premium pay
-#### [Set up garnishments and tax levies](/dynamics365/unified-operations/human-resources/localizations/noam-usa-garnishment-tax-levy-set-up-tasks?toc=/dynamics365/unified-operations/toc.json)
-#### [Enroll workers in garnishment and tax levies](/dynamics365/unified-operations/human-resources/localizations/noam-usa-garnishment-tax-levy-enrollment-tasks?toc=/dynamics365/unified-operations/toc.json)
-#### [Set up premium earnings ](/dynamics365/unified-operations/human-resources/localizations/noam-usa-premium-earning-setup-tasks?toc=/dynamics365/unified-operations/toc.json)
-#### [Garnishments, tax levies, and administrative fees FAQ](/dynamics365/unified-operations/human-resources/localizations/noam-usa-garnishment-tax-levy-administrative-fees?toc=/dynamics365/unified-operations/toc.json)
+#### [Set up garnishments and tax levies](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-set-up-tasks?toc=/dynamics365/unified-operations/toc.json)
+#### [Enroll workers in garnishment and tax levies](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-enrollment-tasks?toc=/dynamics365/unified-operations/toc.json)
+#### [Set up premium earnings ](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-premium-earning-setup-tasks?toc=/dynamics365/unified-operations/toc.json)
+#### [Garnishments, tax levies, and administrative fees FAQ](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-administrative-fees?toc=/dynamics365/unified-operations/toc.json)
 ### Payroll processing tasks
-#### [Generate earnings](/dynamics365/unified-operations/human-resources/localizations/noam-usa-earnings-generation-process?toc=/dynamics365/unified-operations/toc.json)
-#### [Issue worker payments](/dynamics365/unified-operations/human-resources/localizations/noam-usa-issue-worker-payments?toc=/dynamics365/unified-operations/toc.json)
-#### [Post payroll and generate vendor invoices](/dynamics365/unified-operations/human-resources/localizations/noam-usa-post-payroll-generate-vendor-invoices?toc=/dynamics365/unified-operations/toc.json)
-#### [Pay statements and generating payments FAQ](/dynamics365/unified-operations/human-resources/localizations/noam-usa-pay-statements-payment-generation-process?toc=/dynamics365/unified-operations/toc.json)
+#### [Generate earnings](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-earnings-generation-process?toc=/dynamics365/unified-operations/toc.json)
+#### [Issue worker payments](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-issue-worker-payments?toc=/dynamics365/unified-operations/toc.json)
+#### [Post payroll and generate vendor invoices](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-post-payroll-generate-vendor-invoices?toc=/dynamics365/unified-operations/toc.json)
+#### [Pay statements and generating payments FAQ](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-statements-payment-generation-process?toc=/dynamics365/unified-operations/toc.json)
 ### Complete the payment process
-#### [Process existing payroll payments](/dynamics365/unified-operations/human-resources/localizations/noam-usa-existing-payroll-payments?toc=/dynamics365/unified-operations/toc.json)
-#### [Process existing earnings](/dynamics365/unified-operations/human-resources/localizations/noam-usa-existing-earnings?toc=/dynamics365/unified-operations/toc.json)
-#### [Process pay statements](/dynamics365/unified-operations/human-resources/localizations/noam-usa-pay-statements?toc=/dynamics365/unified-operations/toc.json)
+#### [Process existing payroll payments](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-existing-payroll-payments?toc=/dynamics365/unified-operations/toc.json)
+#### [Process existing earnings](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-existing-earnings?toc=/dynamics365/unified-operations/toc.json)
+#### [Process pay statements](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-statements?toc=/dynamics365/unified-operations/toc.json)
 ### Maintenance and reporting
-#### [Payroll data updates FAQ](/dynamics365/unified-operations/human-resources/localizations/noam-usa-payroll-data-updates?toc=/dynamics365/unified-operations/toc.json)
-#### [Generate payroll reports](/dynamics365/unified-operations/human-resources/localizations/noam-usa-generate-payroll-reports?toc=/dynamics365/unified-operations/toc.json)
+#### [Payroll data updates FAQ](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll-data-updates?toc=/dynamics365/unified-operations/toc.json)
+#### [Generate payroll reports](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-generate-payroll-reports?toc=/dynamics365/unified-operations/toc.json)
 
 ## Inventory management
 ### Create warehouse layout
@@ -1215,8 +1215,8 @@
 
 ### Office integration
 #### [Office integration](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration?toc=/dynamics365/unified-operations/toc.json)
-#### [Tutorial](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/toc.json)
-#### [Use the Excel add-in](office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/toc.json)
+#### [Office integration tutorial](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/toc.json)
+#### [Use the Excel add-in](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/toc.json)
 #### [Create Open in Excel experiences](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel?toc=/dynamics365/unified-operations/toc.json)
 #### [Add templates to the Open lines in Excel menu](/dynamics365/unified-operations/dev-itpro/user-interface/add-templates-open-lines-excel-menu?toc=/dynamics365/unified-operations/toc.json)
 #### [Customize the Open in Microsoft Office menu](/dynamics365/unified-operations/dev-itpro/office-integration/customize-open-office-menu?toc=/dynamics365/unified-operations/toc.json)
@@ -1260,50 +1260,50 @@
 
 #### [Cloud Service Provider downloads and Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/csp-download-customersource?toc=/dynamics365/unified-operations/toc.json)
 
-### [Upgrade and migration](dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=/dynamics365/unified-operations/toc.json)
-#### [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=/dynamics365/unified-operations/toc.json)
-##### [Analysis: Use the upgrade analyzer to plan migration work](dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool?toc=/dynamics365/unified-operations/toc.json)
-##### [Analysis: Estimate the effort to upgrade code](dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-code-upgrade?toc=/dynamics365/unified-operations/toc.json)
-##### [Analysis: Deploy a sandbox enviroment](dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox?toc=/dynamics365/unified-operations/toc.json)
-##### [Upgrade: Data upgrade in a development environment](dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=/dynamics365/unified-operations/toc.json)
-##### [Upgrade: AX 2012 data upgrade tasks](dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=/dynamics365/unified-operations/toc.json)
-##### [Upgrade: Data upgrade in a sandbox environment](dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=/dynamics365/unified-operations/toc.json)
-##### [Validate: Cutover testing](dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=/dynamics365/unified-operations/toc.json)
-##### [Validate: Functional testing](dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation?toc=/dynamics365/unified-operations/toc.json)
-##### [Validate: Prepare for go live](dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep?toc=/dynamics365/unified-operations/toc.json)
-##### [Validate: App validation process](dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=/dynamics365/unified-operations/toc.json)
+### [Upgrade and migration](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=/dynamics365/unified-operations/toc.json)
+#### [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=/dynamics365/unified-operations/toc.json)
+##### [Analysis: Use the upgrade analyzer to plan migration work](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool?toc=/dynamics365/unified-operations/toc.json)
+##### [Analysis: Estimate the effort to upgrade code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-code-upgrade?toc=/dynamics365/unified-operations/toc.json)
+##### [Analysis: Deploy a sandbox enviroment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox?toc=/dynamics365/unified-operations/toc.json)
+##### [Upgrade: Data upgrade in a development environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=/dynamics365/unified-operations/toc.json)
+##### [Upgrade: AX 2012 data upgrade tasks](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=/dynamics365/unified-operations/toc.json)
+##### [Upgrade: Data upgrade in a sandbox environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=/dynamics365/unified-operations/toc.json)
+##### [Validate: Cutover testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=/dynamics365/unified-operations/toc.json)
+##### [Validate: Functional testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation?toc=/dynamics365/unified-operations/toc.json)
+##### [Validate: Prepare for go live](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep?toc=/dynamics365/unified-operations/toc.json)
+##### [Validate: App validation process](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=/dynamics365/unified-operations/toc.json)
 
 ##### Changes that affect upgrade from AX 2012
-###### [Single voucher and currency revaluation upgrade ](dynamics365/unified-operations/dev-itpro/migration-upgrade/single-voucher-and-currency-revaluation-upgrade?toc=/dynamics365/unified-operations/toc.json)
-###### [Project resource scheduling data model](dynamics365/unified-operations/dev-itpro/migration-upgrade/data-model-changes-resource-management?toc=/dynamics365/unified-operations/toc.json)
-###### [Workflow subsystem changes](dynamics365/unified-operations/dev-itpro/migration-upgrade/workflow-subsystem?toc=/dynamics365/unified-operations/toc.json)
-###### [Why we moved from cubes to aggregate models](dynamics365/unified-operations/dev-itpro/migration-upgrade/in-memory-real-time-aggregate-models?toc=/dynamics365/unified-operations/toc.json)
-###### [Migrate an upgraded sales cube to the entity store](dynamics365/unified-operations/dev-itpro/migration-upgrade/migrate-upgraded-cube-entity-store?toc=/dynamics365/unified-operations/toc.json)
+###### [Single voucher and currency revaluation upgrade ](/dynamics365/unified-operations/dev-itpro/migration-upgrade/single-voucher-and-currency-revaluation-upgrade?toc=/dynamics365/unified-operations/toc.json)
+###### [Project resource scheduling data model](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-model-changes-resource-management?toc=/dynamics365/unified-operations/toc.json)
+###### [Workflow subsystem changes](/dynamics365/unified-operations/dev-itpro/migration-upgrade/workflow-subsystem?toc=/dynamics365/unified-operations/toc.json)
+###### [Why we moved from cubes to aggregate models](/dynamics365/unified-operations/dev-itpro/migration-upgrade/in-memory-real-time-aggregate-models?toc=/dynamics365/unified-operations/toc.json)
+###### [Migrate an upgraded sales cube to the entity store](/dynamics365/unified-operations/dev-itpro/migration-upgrade/migrate-upgraded-cube-entity-store?toc=/dynamics365/unified-operations/toc.json)
 
 #### Code migration and upgrade
-##### [Prepare to migrate code](dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-migration?toc=/dynamics365/unified-operations/toc.json)
-##### [Configure Visual Studio Team Services mapping during code migration](dynamics365/unified-operations/dev-itpro/migration-upgrade/configure-vso-solution?toc=/dynamics365/unified-operations/toc.json)
-##### [Split models](dynamics365/unified-operations/dev-itpro/migration-upgrade/../dev-tools/model-split?toc=/dynamics365/unified-operations/toc.json)
-##### [Use delegates to solve dependencies between models](dynamics365/unified-operations/dev-itpro/migration-upgrade/delegates-migration?toc=/dynamics365/unified-operations/toc.json)
+##### [Prepare to migrate code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-migration?toc=/dynamics365/unified-operations/toc.json)
+##### [Configure Visual Studio Team Services mapping during code migration](/dynamics365/unified-operations/dev-itpro/migration-upgrade/configure-vso-solution?toc=/dynamics365/unified-operations/toc.json)
+##### [Split models](/dynamics365/unified-operations/dev-itpro/dev-tools/model-split?toc=/dynamics365/unified-operations/toc.json)
+##### [Use delegates to solve dependencies between models](/dynamics365/unified-operations/dev-itpro/migration-upgrade/delegates-migration?toc=/dynamics365/unified-operations/toc.json)
 
 #### Upgrade to a recent update
-##### [Prepare to move to the latest update](dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update?toc=/dynamics365/unified-operations/toc.json)
-##### [Versions and update policy](dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/toc.json)
-##### [Upgrade to the latest platform update](dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update?toc=/dynamics365/unified-operations/toc.json)
-##### [Upgrade the Dynamics platform to the August 2016 release](dynamics365/unified-operations/dev-itpro/migration-upgrade/update-platform-each-release?toc=/dynamics365/unified-operations/toc.json)
-##### [Upgrade a sandbox environment](dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-sandbox-environment?toc=/dynamics365/unified-operations/toc.json)
-##### [Upgrade data in development or demo environments](dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-to-latest-update?toc=/dynamics365/unified-operations/toc.json)
-##### [Update development tools](dynamics365/unified-operations/dev-itpro/migration-upgrade/../dev-tools/update-development-tools?toc=/dynamics365/unified-operations/toc.json)
+##### [Prepare to move to the latest update](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update?toc=/dynamics365/unified-operations/toc.json)
+##### [Versions and update policy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/toc.json)
+##### [Upgrade to the latest platform update](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update?toc=/dynamics365/unified-operations/toc.json)
+##### [Upgrade the Dynamics platform to the August 2016 release](/dynamics365/unified-operations/dev-itpro/migration-upgrade/update-platform-each-release?toc=/dynamics365/unified-operations/toc.json)
+##### [Upgrade a sandbox environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-sandbox-environment?toc=/dynamics365/unified-operations/toc.json)
+##### [Upgrade data in development or demo environments](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-to-latest-update?toc=/dynamics365/unified-operations/toc.json)
+##### [Update development tools](/dynamics365/unified-operations/dev-itpro/dev-tools/update-development-tools?toc=/dynamics365/unified-operations/toc.json)
 
 #### Hotfixes and servicing
-##### [Download hotfixes from Lifecycle Services](dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs?toc=/dynamics365/unified-operations/toc.json)
-##### [Install a metadata hotfix](dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package?toc=/dynamics365/unified-operations/toc.json)
-##### [Install a financial reporting binary hotfix](dynamics365/unified-operations/dev-itpro/migration-upgrade/install-financial-reporting-binary-hotfix?toc=/dynamics365/unified-operations/toc.json)
-##### [Patch Reporting Services in a one-box environment](dynamics365/unified-operations/dev-itpro/migration-upgrade/patch-reporting-service-environment?toc=/dynamics365/unified-operations/toc.json)
+##### [Download hotfixes from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs?toc=/dynamics365/unified-operations/toc.json)
+##### [Install a metadata hotfix](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package?toc=/dynamics365/unified-operations/toc.json)
+##### [Install a financial reporting binary hotfix](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-financial-reporting-binary-hotfix?toc=/dynamics365/unified-operations/toc.json)
+##### [Patch Reporting Services in a one-box environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/patch-reporting-service-environment?toc=/dynamics365/unified-operations/toc.json)
 
 #### Deprecations
-##### [Deprecated APIs](dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-apis?toc=/dynamics365/unified-operations/toc.json)
-##### [Deprecated features](dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/toc.json)
+##### [Deprecated APIs](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-apis?toc=/dynamics365/unified-operations/toc.json)
+##### [Deprecated features](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/toc.json)
 
 
 
@@ -1603,4 +1603,4 @@
 #### [Retail SDK samples ](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-samples?toc=/dynamics365/unified-operations/toc.json)
 
 ### Commerce runtime
-#### [Loyalty extension](dynamics365/unified-operations/retail/dev-itpro/retail-sdk/loyalty-extension-sample.md)
+#### [Loyalty extension](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/loyalty-extension-sample?toc=/dynamics365/unified-operations/toc.json)
