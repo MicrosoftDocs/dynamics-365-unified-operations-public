@@ -120,7 +120,7 @@ The PO that was sent to the vendor and that is in **In External Review** statu
 <li>Substituting an item.</li>
 </ul>
 Price information and charges cannot be changed by the vendor. Suggestions for changes to these can be made using notes.</td>
-<td>The vendor response is recorded as <strong>Accepted with changes</strong>, and the status of the PO remains <strong>In External Review</strong>. The statuses show which types of changes the vendor has suggested.</td>
+<td>The vendor response is recorded as <strong>Accepted with changes</strong>, and the status of the PO remains <strong>In External Review</strong>. The statuses show which types of changes the vendor has suggested. For information about automatic consumption of the changes, see the section below on how to update the PO when a vendor suggests changes. </td>
 </tr>
 </tbody>
 </table>
