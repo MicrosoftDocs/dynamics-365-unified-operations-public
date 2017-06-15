@@ -1,15 +1,15 @@
 # [Upgrade home page](upgrade-home-page.md)
 ## [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](upgrade-overview-2012.md)
 ### [Analysis: Use the upgrade analyzer to plan migration work](upgrade-analyzer-tool.md)
-### [Analysis: Estimate the effort to upgrade code](analysis-code-upgrade.md)
+### [Analysis: Estimate the effort to upgrade code](analyze-code-upgrade.md)
 ### [Analysis: Deploy a sandbox enviroment](analysis-sandbox.md)
 ### [Upgrade: Data upgrade in a development environment](prepare-data-upgrade.md)
 ### [Upgrade: AX 2012 data upgrade tasks](data-upgrade-2012.md)
 ### [Upgrade: Data upgrade in a sandbox environment](upgrade-data-sandbox.md)
 ### [Validate: Cutover testing](upgrade-cutover-testing.md)
+### [Validate: App validation process](app-validation-process.md)
 ### [Validate: Functional testing](upgrade-functional-validation.md)
 ### [Validate: Prepare for go live](upgrade-go-live-prep.md)
-### [Validate: App validation process](app-validation-process.md)
 
 ### Changes that affect upgrade from AX 2012
 #### [Single voucher and currency revaluation upgrade ](single-voucher-and-currency-revaluation-upgrade.md)

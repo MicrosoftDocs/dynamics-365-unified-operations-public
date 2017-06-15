@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-audience: Developer;IT Pro
+audience: Developer,IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
 ms.search.scope: Operations Platform
