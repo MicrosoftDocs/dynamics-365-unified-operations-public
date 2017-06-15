@@ -66,7 +66,7 @@ The customer is in full control of its on-premises deployments and must follow t
 
 The Finance and Operations (on-premises) software is licensed and supported under the [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881/modern-lifecycle-policy). This policy requires that the customer maintain Software Assurance (SA) or the Enhancement Plan, and that it deploy updates as noted in Table 2 later in this topic. Customers who want to use the Fixed Support Lifecycle Policy (5+5) must downgrade to Microsoft Dynamics AX 2012 R3. If a customer lapses on SA or the Enhancement Plan, it will be eligible only for the perpetual license rights to AX 2012 R3 and must uninstall the Finance and Operations (on-premises) software.
 
-The initial release of the Finance and Operations (on-premises) software will be based on Platform update 8 and the July 2017 version of the application.
+The initial release of the Finance and Operations (on-premises) software will be based on Platform update 8 and the July 2017 update of the application.
 
 ## Dates and versions for Finance and Operations application and platform releases
 
