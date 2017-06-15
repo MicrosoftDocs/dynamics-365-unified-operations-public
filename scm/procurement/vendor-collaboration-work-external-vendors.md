@@ -110,7 +110,7 @@ The PO that was sent to the vendor and that is in **In External Review** statu
 </tr>
 <tr class="even">
 <td>The vendor <strong>rejects</strong> the order.</td>
-<td>The vendor response is recorded as <strong>Rejected</strong>, and the status of the PO remains <strong>In External Review</strong>. The rejection is received together with the vendors note.</td>
+<td>The vendor response is recorded as <strong>Rejected</strong>, and the status of the PO remains <strong>In External Review</strong>. The rejection is received together with the vendor's note.</td>
 </tr>
 <tr class="odd">
 <td>The vendor <strong>accepts the order with changes</strong>. Changes are suggested at the line level. It’s possible to accept or reject individual lines. Other possible changes include:
@@ -120,7 +120,7 @@ The PO that was sent to the vendor and that is in **In External Review** statu
 <li>Substituting an item.</li>
 </ul>
 Price information and charges cannot be changed by the vendor. Suggestions for changes to these can be made using notes.</td>
-<td>The vendor response is recorded as <strong>Accepted with changes</strong>, <strong></strong> and the status of the PO remains <strong>In External Review</strong>.</td>
+<td>The vendor response is recorded as <strong>Accepted with changes</strong>, and the status of the PO remains <strong>In External Review</strong>. The statuses show which types of changes the vendor has suggested.</td>
 </tr>
 </tbody>
 </table>
