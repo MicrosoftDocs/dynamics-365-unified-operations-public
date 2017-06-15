@@ -31,6 +31,10 @@ ms.dyn365.ops.version: Version 1611
 
 # Production parameters in manufacturing execution
 
+[!include[banner](../includes/banner.md)]
+
+
+
 This topic provides information about production parameter setup in the Manufacturing execution. 
 
 The **Manufacturing execution** module is primarily targeted at manufacturing companies. It can be used to register time and item consumption on production jobs or projects. Before you start to use the module for job registrations, you must first set up various production parameters that define how and when registrations are posted in the production process. Production parameter settings affect inventory management, production management, and cost calculation.
