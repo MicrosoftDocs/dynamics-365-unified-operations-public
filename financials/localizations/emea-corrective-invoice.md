@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Corrective invoicing
 
-A Credit note or Credit memorandum or Credit memo is a document that reduce or eliminate the amount the buyer has to pay.
+A credit note or credit memorandum or credit memo is a document that reduces or eliminates the amount that the buyer has to pay.
 
-A Сredit note lists the products, quantities and agreed prices for products or services the seller provided the buyer, but the buyer returned or did not receive. It may be issued in the case of damaged goods, errors or allowances. For some countries/regions, the Credit Note functionality allows you to add both correction line and new correct line. The credit note for both the sales invoice and free text invoice uses the exact same layout as for the invoice. The only differences are:
+A credit note lists the products, quantities and agreed prices for products or services that the seller provided the buyer, but the buyer returned or did not receive. It may be issued in the case of damaged goods, errors or allowances. For some countries/regions, the credit note functionality allows you to add both a correction line and a new correct line. The credit note for sales invoices and free text invoices uses the same layout as the invoice with the following differences: 
 
 -   Instead of printing "Invoice", it prints "Credit note" for the document name.
 -   The credit note includes the fields "Main invoice no." and "Reason for correction".
