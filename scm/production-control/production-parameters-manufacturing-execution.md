@@ -74,7 +74,7 @@ For each of the three stages, there are three methods for picking items for a pr
     -   Blank – No option is selected.
     -   **Available at location**
 
-    In the **Manufacturing execution** module, if **Flushing principle** is selected on the **Start** tab in the **Automatic BOM consumption** field, it means that all materials set to the **Start** value in the BOM will be deducted from inventory when the operation is started.
+In the **Manufacturing execution** module, if **Flushing principle** is selected on the **Start** tab in the **Automatic BOM consumption** field, it means that all materials set to the **Start** value in the BOM will be deducted from inventory when the operation is started.
     
 > [!NOTE]
 > If the **Flushing principle** field is selected on the **Start** tab in **Manufacturing execution**, you must also select that same principle on either the **Operations** tab or the **Report as finished** tab. This is to make sure that materials are deducted from inventory on the BOMs that use **Finish** as a flushing principle on the production order. It is important that either the **Operations** tab or the **Report as finished** tab – contains the **Flushing principle** selection. This is to prevent materials from being deducted two times from inventory. 
