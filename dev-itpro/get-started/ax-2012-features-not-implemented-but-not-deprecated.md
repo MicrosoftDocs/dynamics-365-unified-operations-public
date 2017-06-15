@@ -61,10 +61,6 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 <td>Generate an electronic file to communicate payment advice information. The file can be sent to a vendor.</td>
 <td>From the vendor payment journal, you can generate payment advice as either a report or a file. The payment advice is used to inform the vendor about the list of invoices that are being paid. The payment advice report is still available in the current version, but you can no longer generate this information in an electronic file format. That functionality depended on Application Integration Framework (AIF), which has been deprecated.</td>
 </tr>
-<tr class="even">
-<td>Cash flow forecasting</td>
-<td>The functionality for creating a cash flow forecast will be enhanced and will be included in a future update.</td>
-</tr>
 <tr class="odd">
 <td>Vendor portal</td>
 <td>Vendor portal lets you certify and validate suppliers as claims users through identity providers such as Microsoft account or Yahoo. It also supports unsolicited vendor sign-up. Vendor portal lets vendors review purchase orders, update their own (supplier) data, review product receipts to generate invoices, and upload and maintain a product catalog. Vendor portal lets you collaborate with or notify a supplier, and also lets you upload requests for quotation (RFQs) and allow vendors to respond to them. A vendor portal interface will be available in the web client, for Microsoft Azure Active Directory (Azure AD) users who have a dedicated security role. These users can review, confirm, and reject purchase orders, and can view confirmed orders.
