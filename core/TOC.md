@@ -1,4 +1,4 @@
-# [Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/fin-and-ops/index?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+# [Dynamics 365 for Finance and Operations, Enterprise edition]((/dynamics365/unified-operations/fin-and-ops/index?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## [Get started](/dynamics365/unified-operations/fin-and-ops/get-started/onboarding-home?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Microsoft FastTrack for Dynamics 365](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1177,11 +1177,11 @@
 ##### [Data entities: System administration](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-system-administration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Data entities: Workflow](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-workflow?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## Migrating entities
-### [Configuration data projects](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Configure data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Copy configuration data between companies](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Best practices for importing vouchers using the General journal entity](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### Migrating entities
+##### [Configuration data projects](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Configure data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Copy configuration data between companies](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Best practices for importing vouchers using the General journal entity](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Creating data entities
 ##### [Data entities and packages framework](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1444,7 +1444,7 @@
 ### [Configure and install a Retail hardware station](/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Retail time and attendance](/dynamics365/unified-operations/retail/retail-time-attendance?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## Modern Point of Sale (/dynamics365/unified-operations/retail/MPOS) and Cloud POS
+## Modern Point of Sale (MPOS) and Cloud POS
 ### Hardware peripherals
 #### [Retail peripherals overview](/dynamics365/unified-operations/retail/retail-peripherals-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Microsoft tested POS hardware peripherals](/dynamics365/unified-operations/retail/microsoft-tested-pos-hardware-peripherals?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
