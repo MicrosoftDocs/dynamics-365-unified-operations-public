@@ -39,7 +39,7 @@ This topic provides information about production parameter setup in the Manufact
 
 The **Manufacturing execution** module is primarily targeted at manufacturing companies. It can be used to register time and item consumption on production jobs or projects. Before you start to use the module for job registrations, you must first set up various production parameters that define how and when registrations are posted in the production process. Production parameter settings affect inventory management, production management, and cost calculation.
 
-You should carefully consider all settings in the **Production parameters** form before workers start making registrations on production jobs. Click **Production control** &gt; **Setup** &gt; **Manufacturing execution** &gt; **Production parameters**. If your company uses the multisite functionality, you may want to set up different production parameters by site. The parameters for integrating to the **Production** module are set up on the following tabs in the **Production parameters** page:
+You should carefully consider all settings in the **Production parameters** form before workers start making registrations on production jobs. Click **Production control** &gt; **Setup** &gt; **Manufacturing execution** &gt; **Production order defaults**. If your company uses the multisite functionality, you may want to set up different production parameters by site. The parameters for integrating to the **Production** module are set up on the following tabs in the **Production parameters** page:
 
 -   **General** - General parameter settings for production jobs in **Manufacturing execution**.
 -   **Start** - Parameters that are used when production operations are started.
