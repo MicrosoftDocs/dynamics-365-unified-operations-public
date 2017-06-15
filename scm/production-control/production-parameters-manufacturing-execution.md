@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Production parameters in manufacturing execution 
-description: This topic provides information about production parameter setup in the Manufacturing execution. 
+title: Production parameters in Manufacturing execution 
+description: This topic provides information about the setup of production parameters in Manufacturing execution. 
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/16/2017
@@ -29,137 +29,131 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
 ---
 
-# Production parameters in manufacturing execution
+# Production parameters in Manufacturing execution
 
 [!include[banner](../includes/banner.md)]
 
+This topic provides information about the setup of production parameters in Manufacturing execution.
 
+The **Manufacturing execution** module is intended primarily for manufacturing companies. It can be used to register time and item consumption on production jobs or projects. Before you start to use Manufacturing execution for job registrations, you must set up various production parameters that define how and when registrations are posted during the production process. The settings of production parameters affect inventory management, production management, and cost calculation.
 
-This topic provides information about production parameter setup in the Manufacturing execution. 
+Before workers start to make registrations on production jobs, you should carefully consider all settings on the **Production parameters** page. Click **Production control** &gt; **Setup** &gt; **Manufacturing execution** &gt; **Production order defaults**. If your company uses the multisite functionality, you might want to set up different production parameters for each site. The parameters for integration with the **Production** module are set up on the following tabs on the **Production parameters** page:
 
-The **Manufacturing execution** module is primarily targeted at manufacturing companies. It can be used to register time and item consumption on production jobs or projects. Before you start to use the module for job registrations, you must first set up various production parameters that define how and when registrations are posted in the production process. Production parameter settings affect inventory management, production management, and cost calculation.
-
-You should carefully consider all settings in the **Production parameters** form before workers start making registrations on production jobs. Click **Production control** &gt; **Setup** &gt; **Manufacturing execution** &gt; **Production order defaults**. If your company uses the multisite functionality, you may want to set up different production parameters by site. The parameters for integrating to the **Production** module are set up on the following tabs in the **Production parameters** page:
-
--   **General** - General parameter settings for production jobs in **Manufacturing execution**.
--   **Start** - Parameters that are used when production operations are started.
--   **Operations** - Parameters that are applied to production operations and feedback on operations during the production process.
--   **Report as finished** - Parameters that are applied when items are reported as finished on the last operation of a production order.
--   **Quantity validation** - Parameters for validating start and feedback quantities on production orders.
+- **General** – General parameter settings for production jobs in Manufacturing execution.
+- **Start** – Parameters that are used when production operations are started.
+- **Operations** – Parameters that are applied to production operations and feedback about operations during the production process.
+- **Report as finished** – Parameters that are used when items are reported as finished on the last operation of a production order.
+- **Quantity validation** – Parameters that are used to validate start and feedback quantities on production orders.
 
 ## Types of production jobs
 On the **Operations** tab, you select which types of production jobs require registration on the **Job registration** page.
 
-Typically, workers make registrations on setup jobs and process jobs. But if job scheduling is applied, you can select other job types, for example transport jobs, on which workers must also make registrations when processing a production order.
+Typically, workers make registrations on setup jobs and process jobs. However, if job scheduling is applied, you can select other job types that workers must make registrations on when production orders are processed. For example, you can require registrations on transport jobs.
 
 > [!IMPORTANT]
-> Make sure that all relevant job types are selected. Otherwise, jobs may not be available for registration in the **Job registration** form. Align your selections with selections made in the **Job management** column in the **Route groups** form. Click **Production control** &gt; **Setup** &gt; **Routes** &gt; **Route groups**. Then select the **Setup** tab. 
+> Make sure that you select all relevant job types. Otherwise, jobs might not be available for registration on the **Job registration** page. Your selections should match the selections in the **Job management** column on the **Setup** tab of the **Route groups** page (**Production control** &gt; **Setup** &gt; **Routes** &gt; **Route groups**).
 
-If **Job management** is selected on the route group, this job type will be reported as finished on the production order. This will occur when the job is reported as finished in **Manufacturing execution**. When all job types for which **Job management** is selected have been reported as finished on an operation, **Manufacturing execution** will also report the operation as finished.
+If **Job management** is selected on the route group, this job type is reported as finished on the production order when the job is reported as finished in Manufacturing execution. When all job types that **Job management** is selected for have been reported as finished on an operation, Manufacturing execution reports the operation as finished.
 
 > [!NOTE]
-> Some job types may be reported manually through production journals. If that is the case, select **Job management** for this job type, but do not select the job type for registration on the **Operations** tab in the **Production parameters** form in **Manufacturing execution**. 
+> Some job types can be manually reported through production journals. In this case, select **Job management** for the job type, but don't select the job type for registration on the **Operations** tab on the **Production parameters** page in Manufacturing execution.
 
 ## BOM consumption and picking list journals
-It is important that the BOM consumption setup is consistent to make sure that inventory management is efficient. For example, if BOM consumption parameters are not set up correctly in **Manufacturing execution**, it may result in materials deducted from inventory two times or not at all.
+A consistent setup for bill of materials (BOM) consumption is important, because it helps guarantee that inventory management is efficient. For example, if BOM consumption parameters aren't set up correctly in Manufacturing execution, materials might be deducted from inventory two times or not at all.
 
-In the **Production parameters** form, **Automatic BOM consumption** is set up in three stages:
--   At the start of a production. Set this up on the **Start** tab.
--   During the production process when an operation is completed. Set this up on the **Operations** tab.
--   When a production order is reported as finished. Set this up on the **Report as finished** tab.
+On the **Production parameters** page, automatic BOM consumption is set up in three stages:
 
-For each of the three stages, there are three methods for picking items for a production order in the **Automatic BOM consumption** field:
+- At the start of a production. Set up this stage on the **Start** tab.
+- During the production process when an operation is completed. Set up this stage on the **Operations** tab.
+- When a production order is reported as finished. Set up this stage on the **Report as finished** tab.
 
-1.  **Flushing principle** – This option is used in combination with an option defined in the BOM in the Production module. Click **Production control** &gt; **Common** &gt; **Production orders** &gt; **All production orders**. From the **All production orders** form, select a production order from the list and in the Action Pane, click the **BOM** button. From the **BOM** form, click the **Setup** tab, **Flushing principle** field. The **Flushing principle** options in **Production** are as follows:
+For each stage, the **Automatic BOM consumption** field lets you select one of three methods for picking items for a production order:
 
-    -   **Start**
-    -   **Finish**
-    -   **Manual**
-    -   Blank – No option is selected.
-    -   **Available at location**
+- **Flushing principle** – This option is used in combination with an option that is defined for the BOM in the **Production** module. Click **Production control** &gt; **Common** &gt; **Production orders** &gt; **All production orders**. On the **All production orders** page, select a production order in the list, and then, on the Action Pane, click **BOM**. On the **BOM** page, on the **Setup** tab, in **Flushing principle** field, select one of the following options:
 
-In the **Manufacturing execution** module, if **Flushing principle** is selected on the **Start** tab in the **Automatic BOM consumption** field, it means that all materials set to the **Start** value in the BOM will be deducted from inventory when the operation is started. The option **Available at location** is used for products enabled for the advanced warehouse processes. Using this principle will flush material when warehouse work for raw material picking is completed or when a bom line with this flushing principle is released to warehouse and the material is available at the production input location.
+    - **Start**
+    - **Finish**
+    - **Manual**
+    - Blank (No option is selected.)
+    - **Available at location**
+
+    In Manufacturing execution, if **Flushing principle** is selected in the **Automatic BOM consumption** field on the **Start** tab, all materials that are set to **Start** in the BOM are deducted from inventory when the operation is started. The **Available at location** option is used for products that are enabled for advanced warehouse processes. If you select this flushing principle, material is flushed when warehouse work for raw material picking is completed. Material is also flushed when a BOM line that uses this flushing principle is released to warehouse and the material is available at the production input location.
     
-> [!NOTE]
-> If the **Flushing principle** field is selected on the **Start** tab in **Manufacturing execution**, you must also select that same principle on either the **Operations** tab or the **Report as finished** tab. This is to make sure that materials are deducted from inventory on the BOMs that use **Finish** as a flushing principle on the production order. It is important that either the **Operations** tab or the **Report as finished** tab – contains the **Flushing principle** selection. This is to prevent materials from being deducted two times from inventory. 
+    > [!NOTE]
+    > If the **Flushing principle** field is set on the **Start** tab in Manufacturing execution, you must select the same principle on either the **Operations** tab or the **Report as finished** tab. This requirement helps guarantee that materials are deducted from inventory on BOMs that use **Finish** as a flushing principle on the production order. If the same flushing principle isn't selected on either the **Operations** tab or the **Report as finished** tab, materials might be deducted from inventory two times.
 
-In the BOM, the deduction of materials from inventory is based on the value set on every item. This value is mandatory for all items created in Microsoft Dynamics AX. This occurs when the **Flushing principle** is set to “blank”, and you have selected **Flushing principle** on, for example, the **Start** tab and the **Operations** tab in the **Production parameters** form in **Manufacturing execution**.
+    In the BOM, the deduction of materials from inventory is based on the value that is set on every item. This value is mandatory for all items that are created in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This occurs when the **Flushing principle** is left blank, but you've selected a flushing principle on, for example, the **Start** tab and the **Operations** tab of the **Production parameters** page in Manufacturing execution.
     
-2.  **Always** – If you select this option at a particular stage, materials are always deducted from inventory at that stage. For example, materials for the production will be deducted when the production order is started. This setting requires a “Never” selection on the **Operations** and **Report as finished** tabs. This will prevent items from being deducted two times from inventory.
-
-3.  **Never** – This means no BOM consumption occurs at a particular stage. For example, if “Never” is selected on all three **Start**, **Operations**, and **Report as finished** tabs, materials must be deducted manually from inventory.
+- **Always** – If you select this option for a stage, materials are always deducted from inventory at that stage. For example, materials for the production are deducted when the production order is started. This setting requires that **Never** be selected on the **Operations** and **Report as finished** tabs. This requirement helps prevent items from being deducted from inventory two times.
+- **Never** – If you select this option for a stage, no BOM consumption occurs at that stage. For example, if you select **Never** on all three tabs (**Start**, **Operations**, and **Report as finished**), materials must be manually deducted from inventory.
 
 > [!IMPORTANT]
-> Carefully consider your production parameter setup and make sure that the parameters selected on different tabs in the **Production parameters** form do not contradict each other. 
+> Carefully consider your setup of the production parameters, and make sure that the parameters that are selected on the various tabs of the **Production parameters** page don't contradict each other.
 
-The following examples illustrate parameter settings that support different BOM consumption principles. The parameters are set up in the **Production parameters** form in **Manufacturing execution**.
+The following examples illustrate parameter settings that support various BOM consumption principles. The parameters are set up on the **Production parameters** page in Manufacturing execution.
 
-### Example 1 - Backflushing on operations
+### Example 1: Backflushing on operations
 
 Use the following settings if picking list journals and BOM item consumption should be generated when items are reported as finished on an operation.
 
-| Tab / Field                                                 | Setting                             |
-|-------------------------------------------------------------|-------------------------------------|
-| **Start** <br> **Update start on-line**                        | **Status** or **Status + quantity**<br> |
-| **Start** <br> **Automatic BOM consumption**                   |  **Never**<br>                           |
-| **Operations** <br> **Automatic BOM consumption**              | **Always**<br>                          |
-| **Report as finished** <br> **Automatic BOM consumption**      | **Never**<br>                           |
-| **Report as finished** <br> **Update finished report on-line** | **Status + quantity**               |
+| Tab                | Field                          | Setting                             |
+|--------------------|--------------------------------|-------------------------------------|
+| Start              | Update start on-line           | **Status** or **Status + quantity** |
+| Start              | Automatic BOM consumption      | **Never**                           |
+| Operations         | Automatic BOM consumption      | **Always**                          |
+| Report as finished | Automatic BOM consumption      | **Never**                           |
+| Report as finished | Update finished report on-line | **Status + quantity**               |
 
-### Example 2 - Backflushing on production
+### Example 2: Backflushing on production
 
 Use the following settings if picking list journals and BOM item consumption should be generated when items are reported as finished on the production order.
 
-| Tab / Field                                                 | Setting                             |
-|-------------------------------------------------------------|-------------------------------------|
-| **Start** <br> **Update start on-line**                        | **Status** or **Status + quantity**<br> |
-| **Start** <br> **Automatic BOM consumption**                   | **Never**<br>                           |
-| **Operations** <br> **Automatic BOM consumption**              | **Never**<br>                           |
-| **Report as finished** <br> **Automatic BOM consumption**      | **Always**<br>                          |
-| **Report as finished** <br> **Update finished report on-line** | **Status + quantity**               |
+| Tab                | Field                          | Setting                             |
+|--------------------|--------------------------------|-------------------------------------|
+| Start              | Update start on-line           | **Status** or **Status + quantity** |
+| Start              | Automatic BOM consumption      | **Never**                           |
+| Operations         | Automatic BOM consumption      | **Never**                           |
+| Report as finished | Automatic BOM consumption      | **Always**                          |
+| Report as finished | Update finished report on-line | **Status + quantity**               |
 
-### Example 3 - Flushing principle
+### Example 3: Flushing principle
 
-Use the following settings if picking list journals and BOM item consumption should be generated according to the flushing principle setting of the BOM items.
+Use the following settings if picking list journals and BOM item consumption should be generated according to the flushing principle that is set for the BOM items.
 
-| Tab / Field                                                 | Setting                       |
-|-------------------------------------------------------------|-------------------------------|
-| **Start** <br> **Update start on-line**                        | **Status + quantity**<br>  |
-| **Start** <br> **Automatic BOM consumption**                   | **Flushing principle**<br> |
-| **Operations** <br> **Automatic BOM consumption**              | **Flushing principle**<br> |
-| **Report as finished** <br> **Automatic BOM consumption**      | **Never**<br>              |
-| **Report as finished** <br> **Update finished report on-line** | **Status + quantity**  |
+| Tab                | Field                          | Setting                |
+|--------------------|--------------------------------|------------------------|
+| Start              | Update start on-line           | **Status + quantity**  |
+| Start              | Automatic BOM consumption      | **Flushing principle** |
+| Operations         | Automatic BOM consumption      | **Flushing principle** |
+| Report as finished | Automatic BOM consumption      | **Never**              |
+| Report as finished | Update finished report on-line | **Status + quantity**  |
 
-### Example 4 – Deducting materials during start-up of a production order
+### Example 4: Deduction of materials during startup of a production order
 
 Use the following settings if picking list journals and BOM item consumption should be generated when a production is started.
 
-| Tab / Field                                                 | Setting                             |
-|-------------------------------------------------------------|-------------------------------------|
-| **Start** <br> **Update start on-line**                        | **Status + quantity**<br>               |
-| **Start** <br> **Automatic BOM consumption**                   | **Always**<br>                          |
-| **Operations** <br> **Automatic BOM consumption**              | **Never**<br>                           |
-| **Report as finished** <br> **Automatic BOM consumption**      | **Never**<br>                           |
-| **Report as finished** <br> **Update finished report on-line** | **Status** or **Status + quantity** |
+| Tab                | Field                          | Setting                             |
+|--------------------|--------------------------------|-------------------------------------|
+| Start              | Update start on-line           | **Status + quantity**               |
+| Start              | Automatic BOM consumption      | **Always**                          |
+| Operations         | Automatic BOM consumption      | **Never**                           |
+| Report as finished | Automatic BOM consumption      | **Never**                           |
+| Report as finished | Update finished report on-line | **Status** or **Status + quantity** |
 
-Based on the selections described earlier in this section, picking list journals are posted at various stages of the production order process:
--   When an operation is started.
--   When quantity feedback is reported on an operation.
--   When items are reported as finished on the production order.
+Based on the selections that are described earlier in this section, picking list journals are posted at various stages of the production order process:
 
-### Example 5 – Manual BOM consumption
+- When an operation is started
+- When quantity feedback is reported on an operation
+- When items are reported as finished on the production order
 
-The following settings can be used if materials should always be deducted from inventory manually. In this case, picking list journals are not posted.
+### Example 5: Manual BOM consumption
 
-| Tab / Field                                                 | Setting    |
-|-------------------------------------------------------------|------------|
-| **Start** <br> **Update start on-line**                        | **Status**<br> |
-| **Start** <br> **Automatic BOM consumption**                   | **Never**<br>  |
-| **Operations** <br> **Automatic BOM consumption**              | **Never**<br>  |
-| **Report as finished** <br> **Automatic BOM consumption**      | **Never**<br>  |
-| **Report as finished** <br> **Update finished report on-line** | **Status** |
+You can use the following settings if materials should always be manually deducted from inventory. In this case, picking list journals aren't posted.
 
- 
-
-
-
+| Tab                | Field                          | Setting    |
+|--------------------|--------------------------------|------------|
+| Start              | Update start on-line           | **Status** |
+| Start              | Automatic BOM consumption      | **Never**  |
+| Operations         | Automatic BOM consumption      | **Never**  |
+| Report as finished | Automatic BOM consumption      | **Never**  |
+| Report as finished | Update finished report on-line | **Status** |
