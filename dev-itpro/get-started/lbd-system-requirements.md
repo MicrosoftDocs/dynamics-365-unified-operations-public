@@ -44,7 +44,7 @@ The following table lists the minimum network requirements for the connection be
 
 | Value     | Web browser to AOS | AOS to database | AOS to LCS |
 |-----------|--------------------|-----------------|------------|
-| Bandwidth | 50 KBps            | 199 Mbps        |            |
+| Bandwidth | 50 KBps            | 100 Mbps        |            |
 | Latency   | 250–300 ms         | < 1 ms          |            |
 
 - Finance and Operations (on-premises) is designed for networks that have a latency of 250–300 milliseconds (ms) or less. This latency is the latency from a browser client to the data center that hosts Finance and Operations. 
@@ -185,6 +185,9 @@ The following table lists the SQL Server versions that are supported for the Fin
 
 ## Software requirements for client computers
 Any computer that can host a web browser can be used as a client computer. Tested browsers are Internet Explorer, Microsoft Edge, and Google Chrome.
+
+## Software requirements for Active Directory
+Use ADFS 3.0.
  
 ## Hardware and software requirements for Retail components 
 Finance and Operations (on-premises) doesn't include the Retail components.
