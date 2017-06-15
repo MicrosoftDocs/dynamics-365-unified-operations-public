@@ -105,3 +105,23 @@ Microsoft is committed to supporting the deployments of the Finance and Operatio
 | Release                                                                             | Version          | Build number | Availability | Expiration date |
 |-------------------------------------------------------------------------------------|------------------|--------------|--------------|-----------------|
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 update | 7.2.x        | June 2017    | ?               |
+
+## Support matrix
+The following table provides information about the recent releases of the
+application and platform for Microsoft Dynamics 365 for Finance and Operations,
+Enterprise edition, and shows which versions are compatible.
+
+|                       | **Dynamics AX 7.0** | **Dynamics AX application 7.0.1** | **Dynamics 365 for Operations (1611)** | **Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update** |
+|-----------------------|---------------------|-----------------------------------|----------------------------------------|----------------------------------------------------------------------------------|
+| **Platform update 8** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
+| **Platform update 7** | Compatible          | Compatible                        | Compatible                             |                                                                                  |
+| **Platform update 6** | Compatible          | Compatible                        | Compatible                             |                                                                                  |
+| **Platform update 5** | Compatible          | Compatible                        | Compatible                             |                                                                                  |
+| **Platform update 4** | Compatible          | Compatible                        | Compatible                             |                                                                                  |
+| **Platform update 3** | Compatible          | Compatible                        | Compatible                             |                                                                                  |
+| **Platform update 2** | Compatible          | Compatible                        |                                        |                                                                                  |
+| **Platform update 1** | Compatible          | Compatible                        |                                        |                                                                                  |
+| **Platform 7.0**      | Compatible          |                                   |                                        |                                                                                  |
+
+
+
