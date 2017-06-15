@@ -737,7 +737,7 @@
 #### [Workflow types report](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-types-report?toc=/dynamics365/unified-operations/toc.json)
 
 
-Planning
+## Planning
 ### Create demand forecast
 #### [Demand forecast overview](/dynamics365/unified-operations/supply-chain/master-planning/introduction-demand-forecasting?toc=/dynamics365/unified-operations/toc.json)
 #### [Set up a demand forecast](/dynamics365/unified-operations/supply-chain/master-planning/demand-forecasting-setup?toc=/dynamics365/unified-operations/toc.json)
