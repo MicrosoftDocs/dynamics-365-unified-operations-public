@@ -77,7 +77,7 @@ For each of the three stages, there are three methods for picking items for a pr
     In the **Manufacturing execution** module, if **Flushing principle** is selected on the **Start** tab in the **Automatic BOM consumption** field, it means that all materials set to the **Start** value in the BOM will be deducted from inventory when the operation is started.
     
 > [!NOTE]
-> If the **Flushing principle** field is selected on the **Start** tab in **Manufacturing execution**, you must also select that same principle on either the **Operations** tab or the **Report as finished** tab. This is to make sure that materials are deducted from inventory on the BOMs that use **Finish** as a flushing principle on the production order. It is important that either the **Operations** tab or the **Report as finished** tab – contains the **Flushing principle** selection. This is to prevent materials from being deducted two times from inventory. |
+> If the **Flushing principle** field is selected on the **Start** tab in **Manufacturing execution**, you must also select that same principle on either the **Operations** tab or the **Report as finished** tab. This is to make sure that materials are deducted from inventory on the BOMs that use **Finish** as a flushing principle on the production order. It is important that either the **Operations** tab or the **Report as finished** tab – contains the **Flushing principle** selection. This is to prevent materials from being deducted two times from inventory. 
 
     In the BOM, the deduction of materials from inventory is based on the value set on every item. This value is mandatory for all items created in Microsoft Dynamics AX. This occurs when the **Flushing principle** is set to “blank”, and you have selected **Flushing principle** on, for example, the **Start** tab and the **Operations** tab in the **Production parameters** form in **Manufacturing execution**.
     
@@ -117,8 +117,9 @@ Use the following settings if picking list journals and BOM item consumption sho
 ### [Example 3 - Flushing principle]
 
 Use the following settings if picking list journals and BOM item consumption should be generated according to the flushing principle setting of the BOM items.
-| Tab / Field                                                 | Setting                |
-|-------------------------------------------------------------|------------------------|
+
+| Tab / Field                                                 | Setting                       |
+|-------------------------------------------------------------|-------------------------------|
 | **Start** <br> **Update start on-line**                        | **Status + quantity**<br>  |
 | **Start** <br> **Automatic BOM consumption**                   | **Flushing principle**<br> |
 | **Operations** <br> **Automatic BOM consumption**              | **Flushing principle**<br> |
@@ -128,6 +129,7 @@ Use the following settings if picking list journals and BOM item consumption sho
 ### Example 4 – Deducting materials during start-up of a production order
 
 Use the following settings if picking list journals and BOM item consumption should be generated when a production is started.
+
 | Tab / Field                                                 | Setting                             |
 |-------------------------------------------------------------|-------------------------------------|
 | **Start** <br> **Update start on-line**                        | **Status + quantity**<br>               |
@@ -144,6 +146,7 @@ Based on the selections described earlier in this section, picking list journals
 ### Example 5 – Manual BOM consumption
 
 The following settings can be used if materials should always be deducted from inventory manually. In this case, picking list journals are not posted.
+
 | Tab / Field                                                 | Setting    |
 |-------------------------------------------------------------|------------|
 | **Start** <br> **Update start on-line**                        | **Status**<br> |
