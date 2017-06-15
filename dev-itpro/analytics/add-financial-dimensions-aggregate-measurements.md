@@ -43,7 +43,7 @@ After financial dimension fields are included in the report, you can share the r
 
 ## How does this feature work?
 
-The Entity store is an operational data warehouse that lets power users create reports. Whenever the Entity store is updated, all available financial dimensions are included in it. We will look at an example from the Ledger Activity aggregate measurement that contains General ledger journal-level details.
+The Entity store is an operational data warehouse that lets power users create reports. Whenever the Entity store is updated, all available financial dimensions are included in it. We will look at an example from the **Ledger Activity** aggregate measurement that contains General ledger journal-level details.
 
 The following list shows some of the tables are filled in the Entity store when it's updated. Tables that have changed are bold.
 
