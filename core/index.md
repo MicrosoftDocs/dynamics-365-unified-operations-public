@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Introduction to Dynamics 365 for Operations
-description: Microsoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. This page helps you learn and get start using the product. 
+title: Introduction to Dynamics 365 for Finance and Operations
+description: Microsoft Dynamics 365 for Finance and Operations is Microsoft’s business application for enterprises. This page helps you learn and get start using the product. 
 author: margoc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,13 +29,13 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
-# Introduction to Dynamics 365 for Operations
+# Introduction to Finance and Operations
 
 [!include[banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. It enables people to quickly make smarter decisions through an intelligent user interface that provides access to real-time insights and data. It enables businesses to transform and innnovate by delivering proven business logic that allows them to redesign their business processes faster. It gives businesses the flexibility to grow at their own pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
+Microsoft Dynamics 365 for Finance and Operations is Microsoft’s business application for enterprises. It enables people to quickly make smarter decisions through an intelligent user interface that provides access to real-time insights and data. It enables businesses to transform and innnovate by delivering proven business logic that allows them to redesign their business processes faster. It gives businesses the flexibility to grow at their own pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
 
-This user guide can help you learn how to make Dynamics 365 for Operations work for your business.    
+This documentation can help you learn how to make Dynamics 365 for Finance and Operations work for your business. It is connected to documentation for the related products in the Unified Operations suite, Dynamics 365 for Retail, and Dynamics 365 for Talent. 
 
 <table>
 <colgroup>
@@ -44,52 +44,52 @@ This user guide can help you learn how to make Dynamics 365 for Operations work 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="get-started/onboarding-home.md">Onboarding your organization</a></p>
+<td><p><a href="docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/onboarding-home">Onboarding your organization</a></p>
 <p>Financials</p>
-<ul><li><a href="financials/accounts-payable/accounts-payable.md">Accounts payable</a></li>
-<li><a href="financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></li>
-<li><a href="financials/budgeting/budgeting-overview.md">Budgeting</a></li>
-<li><a href="financials/cash-bank-management/cash-bank-management.md">Cash and bank management</a></li>
-<li><a href="financials/cost-accounting/cost-accounting-home-page.md">Cost accounting</a></li>
-<li><a href="financials/fixed-assets/fixed-assets.md">Fixed assets</a></li>
-<li><a href="financials/general-ledger/general-ledger.md">General ledger</a></li>
-<li><a href="financials/project-management/overview-project-management-accounting.md">Project management</a></li>
-<li><a href="financials/public-sector/public-sector-functionality.md">Public sector</a></li></ul>
-<p><a href="dev-itpro/lcs-solutions/country-region.md">Regional features</a></p>
+<ul><li><a href="docs.microsoft.com/dynamics365/unified-operations/financials/accounts-payable/accounts-payable">Accounts payable</a></li>
+<li><a href="docs.microsoft.com/dynamics365/unified-operations/financials/accounts-receivable/accounts-receivable">Accounts receivable</a></li>
+<li><a href="docs.microsoft.com/dynamics365/unified-operations/financials/budgeting/budgeting-overview">Budgeting</a></li>
+<li><a href="docs.microsoft.com/dynamics365/unified-operations/financials/cash-bank-management/cash-bank-management">Cash and bank management</a></li>
+<li><a href="docs.microsoft.com/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page">Cost accounting</a></li>
+<li><a href="docs.microsoft.com/dynamics365/unified-operations/financials/fixed-assets/fixed-assets">Fixed assets</a></li>
+<li><a href="docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/general-ledger">General ledger</a></li>
+<li><a href="docs.microsoft.com/dynamics365/unified-operations/financials/project-management/overview-project-management-accounting">Project management</a></li>
+<li><a href="docs.microsoft.com/dynamics365/unified-operations/financials/public-sector/public-sector-functionality">Public sector</a></li></ul>
+<p><a href="docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region">Regional features</a></p>
 <p>Human resources</p>
    <ul>
-  <li><a href="human-resources/departments-jobs-positions.md">HR strategy</a></li>
-  <li><a href="human-resources/manage-recruiting-process.md">Recruit, hire & motivate</a></li>
-  <li><a href="human-resources/performance-management-overview.md">Employee training</a></li>
-  <li><a href="human-resources/manage-benefit-program.md">Benefits</a></li>
-  <li><a href="human-resources/questionnaires.md">Questionnaire</a></li>
-  <li><a href="human-resources/localizations/noam-usa-payroll.md">US features</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions">HR strategy</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/talent/manage-recruiting-process">Recruit, hire & motivate</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/talent/performance-management-overview">Employee training</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/talent/manage-benefit-program">Benefits</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/talent/questionnaires">Questionnaire</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/talent/localizations/noam-usa-payroll">US features</a></li>
 </ul></td>
   <td>
   <p>Retail</p>
   <ul>
-<li><a href="retail/call-center-functionality.md">Call center</a></li>
-  <li><a href="retail/define-maintain-retail-channels.md">Channel setup and management</a></li>
-  <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">MPOS and Cloud POS</a></li>
-  <li><a href="retail/dev-itpro/dev-retail-home-page.md">Retail developer and administration </a></li></ul>
+<li><a href="docs.microsoft.com/dynamics365/unified-operations/retail/call-center-functionality">Call center</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/retail/define-maintain-retail-channels">Channel setup and management</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/retail/define-maintain-channel-clients-registers-hw-stations">MPOS and Cloud POS</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page">Retail developer and administration </a></li></ul>
   <p>Supply chain management</p>
 <ul>
-<li><a href="supply-chain/cost-management/costing-sheets.md">Cost management</a></li>
-  <li><a href="supply-chain/inventory/inventory-locations.md">Inventory management</a></li>
-  <li><a href="supply-chain/master-planning/master-plans.md">Master planning</a></li>
-  <li><a href="supply-chain/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></li>
-  <li><a href="supply-chain/pim/set-up-maintain-product-configuration-model.md">Product information management</a></li>
-  <li><a href="supply-chain/production-control/create-production-orders">Production control</a></li>
-  <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Sales and marketing</a></li>
-  <li><a href="supply-chain/transportation/transportation-management-overview.md">Transportation management</a></li>
-  <li><a href="supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></li></ul>
+<li><a href="docs.microsoft.com/dynamics365/unified-operations/supply-chain/cost-management/costing-sheets">Cost management</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/supply-chain/inventory/inventory-locations">Inventory management</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-plans">Master planning</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-overview">Procurement and sourcing</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/set-up-maintain-product-configuration-model">Product information management</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/create-production-orders">Production control</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/overview-sales-marketing">Sales and marketing</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/supply-chain/transportation/transportation-management-overview">Transportation management</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration">Warehouse management</a></li></ul>
   <p>Developer & admin functionality</p>
-  <ul><li><a href="dev-itpro/analytics/analytics.md">Analytics</a></li>
-  <li><a href="dev-itpro/data-entities/data-entities.md">Data entities</a></li>
-  <li><a href="dev-itpro/mobile-apps/mobile-platform.md">Mobile apps</a></li>
-  <li><a href="dev-itpro/office-integration/office-integration.md">Office integration</a></li>
-  <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">Administration</a></li>
-  <li><a href="dev-itpro/dev-tools/developer-home-page.md">Developer tools</a></li></ul></td>
+  <ul><li><a href="docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/analytics">Analytics</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities">Data entities</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform">Mobile apps</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration">Office integration</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page">Administration</a></li>
+  <li><a href="docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page">Developer tools</a></li></ul></td>
 </tr>
 </tbody>
 </table>

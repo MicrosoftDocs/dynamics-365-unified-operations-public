@@ -25,8 +25,8 @@ ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611 
 
 ---
 
@@ -52,7 +52,7 @@ Create a row definition
 A row definition can contain up to 20,000 financial dimension rows and can include the following information:
 
 -   Descriptive text that adds meaning to the report by creating section headings, lines, and spaces, such as **Cash** or **Total Revenue**
--   Links to financial data, which can include dimension values in the Microsoft Dynamics 365 for Operations **Note:** You can set up a row definition to pull data from the financial dimensions system every time that the report is generated.
+-   Links to financial data, which can include dimension values in the Microsoft Dynamics 365 for Finance and Operations **Note:** You can set up a row definition to pull data from the financial dimensions system every time that the report is generated.
 -   Row totals and formulas that are based on the linked financial data
 
 Usually, each row in a row definition contains one of the following types of information:

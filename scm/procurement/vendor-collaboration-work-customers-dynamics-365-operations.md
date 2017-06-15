@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor collaboration with customers
-description: This topic describes how you can use vendor collaboration in Dynamics 365 for Operations to work with POs and to monitor consignment inventory.
+description: This topic describes how you can use vendor collaboration in Finance and Operations to work with POs and to monitor consignment inventory.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes how you can use vendor collaboration in Dynamics 365 for Operations to work with POs and to monitor consignment inventory.
+This topic describes how you can use vendor collaboration in Finance and Operations to work with POs and to monitor consignment inventory.
 
-This topic describes how you can use vendor collaboration to work with customers in Microsoft Dynamics 365 for Operations. It includes information about how to monitor and respond to purchase orders, and how to monitor consignment inventory. It's also possible to use vendor collaboration to work with invoices. For more information, see [Vendor collaboration invoicing workspace](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
+This topic describes how you can use vendor collaboration to work with customers in Microsoft Finance and Operations. It includes information about how to monitor and respond to purchase orders, and how to monitor consignment inventory. It's also possible to use vendor collaboration to work with invoices. For more information, see [Vendor collaboration invoicing workspace](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
 
 ## Working with purchase orders
 The **Purchase order confirmation** workspace enables you to respond to the PO’s that have been sent to you for review. It also enables you to view information about POs that are awaiting action from the customer, and POs that have been confirmed, but are still open. There are three lists in the **Purchase order confirmation** workspace:

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Task Recorder in Dynamics 365 for Operations | Microsoft Docs
-description: This article describes the how to use Task Recorder to record Microsoft Dynamics 365 for Operations client functions.
+title: Task Recorder | Microsoft Docs
+description: This article describes the how to use Task Recorder to record client functions.
 author: jasongre
 manager: AnnBe
 ms.date: 05/23/2017
@@ -28,19 +28,19 @@ ms.author: jasongre
 
 ---
 
-# Task Recorder in Dynamics 365 for Operations
+# Task Recorder 
 
 [!include[banner](../includes/banner.md)]
 
 
-This article describes the how to use Task Recorder to record Microsoft Dynamics 365 for Operations client functions.
+This article describes the how to use Task Recorder to record client functions.
 
 Overview
 ========
 
 ### The new Task Recorder
 
-For the release of Dynamics 365 for Operations, Task Recorder has been re-built from the ground up with a focus on high-responsiveness, a flexible extensibility API, and seamless integrations with consumers of business process recordings. We're carrying forward Task Recorder integration with the Lifecycle Services BPM tool (<https://bpm.lcs.dynamics.com>), so that users can continue to produce rich business process diagrams from recordings for analyzing and designing their applications. We're also introducing the ability for Task Recorder to auto-generate application verification tests from business process recordings, as well as playback previously recorded processes. These new features also come with new gestures that allow users to take full advantage of the powerful new Task Recorder. If you're reading this tutorial for the first time and wish to practice the topics as they're discussed, note that arabic and Roman numerals indicate actionable steps that you should take. Alphabetical entries are used to indicate paragraphs with helpful details about using Task Recorder.
+For the release of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Task Recorder has been re-built from the ground up with a focus on high-responsiveness, a flexible extensibility API, and seamless integrations with consumers of business process recordings. We're carrying forward Task Recorder integration with the Lifecycle Services BPM tool (<https://bpm.lcs.dynamics.com>), so that users can continue to produce rich business process diagrams from recordings for analyzing and designing their applications. We're also introducing the ability for Task Recorder to auto-generate application verification tests from business process recordings, as well as playback previously recorded processes. These new features also come with new gestures that allow users to take full advantage of the powerful new Task Recorder. If you're reading this tutorial for the first time and wish to practice the topics as they're discussed, note that arabic and Roman numerals indicate actionable steps that you should take. Alphabetical entries are used to indicate paragraphs with helpful details about using Task Recorder.
 
 ### Architecture
 
@@ -48,7 +48,7 @@ Task Recorder is able to record user actions in the client with exact fidelity.
 
 ### Basic configuration
 
-Task Recorder comes pre-installed with Dynamics 365 for Operations and users are able to begin recording business processes immediately after opening the client for the first time. Task Recorder supports Microsoft Edge, Internet Explorer 11, and the latest version of Google Chrome.
+Task Recorder is pre-installed and users are able to begin recording business processes immediately after opening the client for the first time. Task Recorder supports Microsoft Edge, Internet Explorer 11, and the latest version of Google Chrome.
 
 ## Create a recording
 The following steps show the process for creating a new recording using Task Recorder.
@@ -170,7 +170,7 @@ The **Hide** option allows the author to prevent certain steps from appearing in
 
 ## Recording gestures
 
-The basic recording capability allows a user to record an end-to-end business process in Dynamics 365 for Operations using Task Recorder without adding overhead to the process. In some circumstances, more advanced recording features can be leveraged to create even richer business process recordings. Each of the following gestures are triggered by right-clicking on a control in the client that supports the gesture. Each gesture results in a step being added to the list of steps for the recording. If the gesture is not supported for a particular control, then the gesture will not appear in the right-click menu.
+The basic recording capability allows a user to record an end-to-end business process using Task Recorder without adding overhead to the process. In some circumstances, more advanced recording features can be leveraged to create even richer business process recordings. Each of the following gestures are triggered by right-clicking on a control in the client that supports the gesture. Each gesture results in a step being added to the list of steps for the recording. If the gesture is not supported for a particular control, then the gesture will not appear in the right-click menu.
 ### Copy
 
 This right-click gesture allows copying a control to the Task Recorder “clipboard”. The control may then be used later as part of a **Paste** or **Validate** gesture.
@@ -190,11 +190,11 @@ This right-click gesture allows the user to insert a step that validates the val
 
 ### Add info step
 
-This right-click gesture allows the user to insert a step and supply their own text for the step. This feature is primarily useful for creating Task guides. An **Informational Step** is a Task guide step where the instruction text for the step are user-specified. **Info steps** are useful for describing actions that are a part of the scenario but must take place outside of the Dynamics 365 for Operations system, such as searching for an item inventory or checking an email for information.
+This right-click gesture allows the user to insert a step and supply their own text for the step. This feature is primarily useful for creating Task guides. An **Informational Step** is a Task guide step where the instruction text for the step are user-specified. **Info steps** are useful for describing actions that are a part of the scenario but must take place outside of the client, such as searching for an item inventory or checking an email for information.
 
-The user can specify where an **Info step** should appear in the Task guide. The **Info step** can either point to a control on a form, if the step is associated with the control, or the **Info step** can appear in the upper-right of the form, if the step is external to the Dynamics 365 for Operations system and the step is an explanation that applies to the entire form.
+The user can specify where an **Info step** should appear in the Task guide. The **Info step** can either point to a control on a form, if the step is associated with the control, or the **Info step** can appear in the upper-right of the form, if the step is external to the client and the step is an explanation that applies to the entire form.
 
-**Note:** Because **Info steps** are manually specified steps, and are not automatically recorded by Task Recorder when the user takes an action on a control, the **Info step** does not have the capability to automatically progress when a user completes the step in the Task guide. Because the **Info step** is not associated with taking an action in the Dynamics 365 for Operations system, there is no action for the Task guide to detect that the user has completed in order to automatically progress to the next step.
+**Note:** Because **Info steps** are manually specified steps, and are not automatically recorded by Task Recorder when the user takes an action on a control, the **Info step** does not have the capability to automatically progress when a user completes the step in the Task guide. Because the **Info step** is not associated with taking an action in the client, there is no action for the Task guide to detect that the user has completed in order to automatically progress to the next step.
 
 ## Download options
 After clicking **Stop**, several options are shown for downloading files related to the completed recording. Click **Download recording**, and save the Task recording package to your desktop. We'll use this file later.
@@ -299,10 +299,10 @@ In order for Task Recorder to reliably select the correct grid rows during test 
 The **Rollback changes to business data** option will revert any business data that is created during recording when the recording is completed. This option is primarily for enabling developer scenarios related to creating Task recordings to be used as tests. The **Rollback** mechanism will only rollback records that are created during the recording session. It will not rollback changes made to existing recordings, nor will it rollback deletions made to existing records. In addition, because of security concerns the **Rollback** mechanism is only available for use on non-production systems where the Test tools, including the Test models, have been installed.
 ### Playing a Task guide
 
-A Task guide is an end-user focused experience that allows the user to follow a guided step-by-step set of instructions for how to complete a business scenario that is contained in a Task recording. The user is instructed to complete each step by way of a pop-up prompt, which will animate across the form and point to the UI element that the user should interact with, and also inform the user about how to interact with the element, such as by saying "Click here" or "In this field, enter data". Each step that the user is instructed to complete is based on the step that was originally recorded in the Task recording file that the Task guide is based off of. Since the Task recording file contains the data that describes the step that was originally recorded, the Task guide is able to automatically detect when the user has completed the step as expected. When the Task guide recognizes that the user has completed the step, the Task guide automatically progresses to the next step. **Note:** One of the ways the Task guide recognizes that a user has completed a step is by detecting when the value in a field has changed. While the Task guide does not require that specific values be set, it does require that the field value is changed in order to detect that the step was completed. In order to detect that the field value was changed, the user much first change the value and then press the Tab key or click in an area outside of the UI element. Only after pressing Tab or clicking outside of the UI element does the Dynamics 365 for Operations application recognize that the field value has been changed, and proceed to run any necessary application validation or business logic. The Task guide relies on the Dynamics 365 for Operations application to recognize that the field value has been changed before it can detect that the step was completed by the user.
+A Task guide is an end-user focused experience that allows the user to follow a guided step-by-step set of instructions for how to complete a business scenario that is contained in a Task recording. The user is instructed to complete each step by way of a pop-up prompt, which will animate across the form and point to the UI element that the user should interact with, and also inform the user about how to interact with the element, such as by saying "Click here" or "In this field, enter data". Each step that the user is instructed to complete is based on the step that was originally recorded in the Task recording file that the Task guide is based off of. Since the Task recording file contains the data that describes the step that was originally recorded, the Task guide is able to automatically detect when the user has completed the step as expected. When the Task guide recognizes that the user has completed the step, the Task guide automatically progresses to the next step. **Note:** One of the ways the Task guide recognizes that a user has completed a step is by detecting when the value in a field has changed. While the Task guide does not require that specific values be set, it does require that the field value is changed in order to detect that the step was completed. In order to detect that the field value was changed, the user much first change the value and then press the Tab key or click in an area outside of the UI element. Only after pressing Tab or clicking outside of the UI element does the client recognize that the field value has been changed, and proceed to run any necessary application validation or business logic. The Task guide relies on the client to recognize that the field value has been changed before it can detect that the step was completed by the user.
 ### What can a Task guide allow a user to do?
 
-When a user is completing a Task guide, the Dynamics 365 for Operations application behaves in the same manner,with the same data, security, and validation rules as it does when the user is not completing a Task guide. There is no difference of behavior in the Dynamics 365 for Operations application that would allow a user to take an action that they cannot otherwise take when they are not completing a Task guide. When a user is completing a Task guide:
+When a user is completing a Task guide, the client behaves in the same manner,with the same data, security, and validation rules as it does when the user is not completing a Task guide. There is no difference of behavior in the client that would allow a user to take an action that they cannot otherwise take when they are not completing a Task guide. When a user is completing a Task guide:
 -   Any data the user enters is subject to the same data validation rules as when not playing the Task guide.
 -   Any data the user enters may be saved, and the user may modify data according to the same restrictions and rules as when not playing the Task guide.
 -   Any security mechanisms the user encounters behave the same as when the user is not playing the Task guide.
@@ -349,11 +349,11 @@ Clicking this button will expand the Task guide pop-up to show additional inform
 -   A **Note**
     -   A Note may contain scenario-specific information that will help provide context to the user about the current step of the Task guide.
 
-## Screenshot Extension setup
+## (PRE-RELEASE) Screenshot Extension setup
 
 ### Document generation setup (optional)
 
-Task Recorder can take screenshots of the browser as a user records a business process. Task Recorder uses these screenshots to generate Microsoft Word documents after the user completes the recording. In order to have screenshots included in the generated document, a Google Chrome extension must be installed that enables Task Recorder to capture screenshots during recording. To install the extension:
+Using a pre-release Chrome extension, Task Recorder is able to take screenshots of the browser as a user records a business process. After the user completes the recording, Task Recorder can then use these screenshots to generate Microsoft Word documents. To enable this functionality, follow the steps below to install the pre-release Google Chrome extension that enables Task Recorder to capture screenshots during recording.
 
 1.  Open Google Chrome
 2.  Go to **Menu &gt; More tools &gt; Extensions**. 
@@ -379,7 +379,7 @@ After completing a business process recording using Task Recorder, a developer m
 1.  Open Visual Studio with the **Dynamics AX development tools**.
 2.  **Go to Dynamics AX &gt; Addins &gt; Import Task recording**.
 3.  In the **Import Task Recording** menu, use the **Browse** button to locate a previously downloaded recording file.
-4.  Optionally, choose to have the generated test code be added to the startup project. This requires that a solution containing a Dynamics 365 for Operations project is set as the startup project. This will place the generated X++ test into the same model as the Dynamics 365 for Operations project.
+4.  Optionally, choose to have the generated test code be added to the startup project. This requires that a solution containing a project is set as the startup project. This will place the generated X++ test into the same model as the project.
 5.  If creating a new project, select the Model for the project. The generated X++ test will be placed in this model. The model needs to have references to the TestEssentials model for the generated test to build successfully.
 6.  Click **Import**.
 

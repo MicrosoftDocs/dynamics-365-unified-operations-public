@@ -42,7 +42,7 @@ Add the RetailCustPreferences table in the data distribution to the CRT for the 
 
 The channel schema is the XML description of the data that is sent to the channel database.
 
-1.  Click **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Retail channel schema**.
+1.  Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Retail channel schema**.
 2.  Select the schema name that corresponds to the channel. Then click **Channel tables**.
 3.  Click **New**, and then, in the **Table name** field, enter **ax.RetailCustPreference** as the name of the new table.
 4.  On the **Channel table fields** tab, click **New**, and then enter the field names **ACCOUNTNUM**, **EMAILOPTIN**, and **RECID**.
@@ -51,9 +51,9 @@ The channel schema is the XML description of the data that is sent to the channe
 ## Create a subjob
 Next, you create a subjob of the CustTable job to move data in the new table to the channel database.
 
-1.  In Retail Headquarters, click **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Scheduler subjobs**, and then click **New**.
+1.  In Retail Headquarters, click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Scheduler subjobs**, and then click **New**.
 2.  In the **Subjob number** and **Description** fields, enter **RetailCustPreference**.
-3.  In the **Retail channel schema** field, select **Dynamics 365 for Operations.**
+3.  In the **Retail channel schema** field, select **Dynamics 365 for Retail.**
 4.  In the **Channel table name** field, select **ax.RetailCustPreference**.
 5.  In the **table name** field, select **RetailCustPreference**.
 6.  On the **Channel field mapping** tab, click **Match fields**. The **From** field and **To** field columns are filled in. **Alternative approach, instead of using the UI in the steps above this can also accomplished in code:**
@@ -75,9 +75,9 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
     3.  Compile the class.
     4.  Reset Internet Information Services (IIS).
     5.  Switch to the client.
-    6.  Click **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Initialize retail scheduler**. The required scheduler subjob definition is generated, and the subjob is added to the scheduler job.
+    6.  Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Initialize retail scheduler**. The required scheduler subjob definition is generated, and the subjob is added to the scheduler job.
 
-7.  Click **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Retail channel schema**.
+7.  Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Retail channel schema**.
 8.  On the **Retail channel schema** page, in the left navigation pane, click **Dynamics 365 for Operations.**
 9.  On the **Retail data distribution** tab, click **Export**.
 10. Follow one of these steps, depending on the browser that you're using:
@@ -98,10 +98,10 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
 13. On the **Retail data distribution** tab, click **Import**.
 14. In the dialog box that opens, click **Browse**, select the XML file that you just edited, and then click **OK** to import the file.
 15. Close the **Retail channel schema** page.
-16. Click **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Scheduler job**.
+16. Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Scheduler job**.
 17. On the **Scheduler job** page, click **1010** to select the “Customers” job.
 18. On the **Subjobs** tab, click **New**, and then enter **RetailCustPreference** as the subjob number. Click **Save**.
-19. On the **Retail channel schema** page, select **Dynamics 365 for Operations **as the schema name, and then click **Generate queries**.
+19. On the **Retail channel schema** page, select **Dynamics 365 for Retail **as the schema name, and then click **Generate queries**.
 
 
 

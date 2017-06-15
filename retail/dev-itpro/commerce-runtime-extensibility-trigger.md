@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article explains trigger support for the Microsoft Dynamics AX commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
+This article explains trigger support for the Dynamics 365 for Retail commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
 
 CRT trigger overview
 --------------------

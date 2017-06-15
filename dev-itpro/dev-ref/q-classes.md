@@ -121,7 +121,7 @@ The following example creates a query object that is used to create a QueryRun o
 | public int levelNo(int dataSourceNo)                                                                                                                                   | Determines the level of indentation of the specified data source.                                                                         |
 | public int levelTable(TableId table, \[int occurrence\])                                                                                                               | Determines the tree level, in the hierarchy of data sources, of the data source that is assigned to the specified table.                  |
 | public int literals(\[int value\])                                                                                                                                     |                                                                                                                                           |
-| public str name(\[str value\])                                                                                                                                         | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                                                                                         | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public Query newObject(AnyType source)                                                                                                                                 | Creates a query that exists on the same client side or server side as the source query.                                                   |
 | public int nextUniqueId(\[int value\])                                                                                                                                 |                                                                                                                                           |
 | public QueryOrderByField orderByField(int index, \[QueryBuildDataSource dataSource\])                                                                                  |                                                                                                                                           |
@@ -850,7 +850,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -1209,7 +1209,7 @@ The source to base the query object on; optional.
 
 #### Remarks
 
-If no arguments are supplied when this method is called, a temporary query is created that is not stored in the Microsoft Dynamics 365 for Operations Application Object Tree (AOT) for subsequent use.
+If no arguments are supplied when this method is called, a temporary query is created that is not stored in the Finance and Operations Application Object Tree (AOT) for subsequent use.
 
 ### Method checkFieldAccess
 
@@ -1458,7 +1458,7 @@ Data sources are arranged in hierarchies that define the sequence in which recor
 | public int level()                                                                                                                                           |                                                                                                                                           |
 | public QueryBuildLink link(int associationNo)                                                                                                                |                                                                                                                                           |
 | public int linkCount()                                                                                                                                       |                                                                                                                                           |
-| public str name(\[str value\])                                                                                                                               | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                                                                               | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public container oneToOneDataSources()                                                                                                                       |                                                                                                                                           |
 | public int orderMode(\[int value\])                                                                                                                          |                                                                                                                                           |
 | public QueryBuildDataSource parentDataSource()                                                                                                               |                                                                                                                                           |
@@ -2057,7 +2057,7 @@ associationNo
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -2719,7 +2719,7 @@ The following basic example shows how to use the QueryBuildRange class to specif
 | public int fieldArrayIndex()                                  |                                                                                                                                           |
 | public FieldName fieldName()                                  |                                                                                                                                           |
 | public str label(\[str value\])                               | Gets or sets the label for a control.                                                                                                     |
-| public str name(\[str value\])                                | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public str prompt()                                           |                                                                                                                                           |
 | public QueryRangeType rangeType(\[QueryRangeType rangeType\]) |                                                                                                                                           |
 | public int status(\[int value\])                              | Gets or sets the status of an object.                                                                                                     |
@@ -2812,7 +2812,7 @@ The label determines which text is displayed in the control or adjacent to it. T
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -3168,7 +3168,7 @@ tableSelector
 | public int fieldArrayIndex()                    |                                                                                                                                           |
 | public FieldName fieldName()                    |                                                                                                                                           |
 | public str label(\[str value\])                 | Gets or sets the label for a control.                                                                                                     |
-| public str name(\[str value\])                  | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                  | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public str prompt()                             |                                                                                                                                           |
 | public int status(\[int value\])                | Gets or sets the status of an object.                                                                                                     |
 | public TableId table(\[TableId value\])         | Gets or sets the table ID that is associated with the object.                                                                             |
@@ -3255,7 +3255,7 @@ The label determines which text is displayed in the control or adjacent to it. T
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -3465,7 +3465,7 @@ QueryRun objects are used to traverse tables in the database and fetch records t
 
 ### Examples
 
-In the following example, it is assumed that there is a query named Customer in the Microsoft Dynamics 365 for Operations Application Object Tree (AOT), and that it has one data source, the CustTable table.
+In the following example, it is assumed that there is a query named Customer in the Finance and Operations Application Object Tree (AOT), and that it has one data source, the CustTable table.
 
     static void example() 
     { 
@@ -3519,7 +3519,7 @@ In the following example, it is assumed that there is a query named Customer in 
 | public int literals(\[int value\])                                                                             |                                                                                                                                           |
 | public Guid loadCsv(str fileName)                                                                              |                                                                                                                                           |
 | public Guid loadXml(str fileName)                                                                              |                                                                                                                                           |
-| public str name(\[str value\])                                                                                 | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                                 | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public QueryRun newObject(AnyType source)                                                                      |                                                                                                                                           |
 | public boolean next()                                                                                          | Retrieves the next record from the query.                                                                                                 |
 | public int nextUniqueId(\[int value\])                                                                         |                                                                                                                                           |
@@ -3881,7 +3881,7 @@ fileName
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 

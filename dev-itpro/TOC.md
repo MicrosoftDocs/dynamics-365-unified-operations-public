@@ -1,6 +1,6 @@
 # [Introduction](index.md)
 
-# [Overview of Dynamics 365 for Operations](get-started/TOC.md)
+# [Overview of Finance and Operations](get-started/TOC.md)
 
 # [Development](dev-tools/TOC.md)
 
@@ -42,16 +42,16 @@
 ## [Create Open in Excel experiences](office-integration/office-integration-edit-excel.md)
 ## [Add templates to the Open lines in Excel menu](user-interface/add-templates-open-lines-excel-menu.md)
 ## [Customize the Open in Microsoft Office menu](office-integration/customize-open-office-menu.md)
-## [Configure and send email](/dynamics365/operations/organization-administration/configure-email)
+## [Configure and send email](/dynamics365/unified-operations/organization-administration/configure-email)
 ## [Troubleshooting](office-integration/office-integration-troubleshooting.md)
 
 # [Financials development](financial/TOC.md)
 
 # Supply chain development
 ## [Gantt development guide](user-interface/gantt-development-guide.md)
-## [Create a new transportation management engine](/dynamics365/operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/operations/dev-itpro/toc.json)
+## [Create a new transportation management engine](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
-# [Retail development](/dynamics365/operations/retail/dev-itpro/dev-retail-home-page)
+# [Retail development](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)
 
 # [Deployment](deployment/TOC.md)
 
@@ -64,22 +64,22 @@
 # [Database management](database/TOC.md)
 
 # Support
-## [Get support for Dynamics 365 for Operations and Lifecycle Services](lifecycle-services/lcs-support.md)
+## [Get support for Finance and Operations and Lifecycle Services](lifecycle-services/lcs-support.md)
 ## [Log a premier support ticket](lifecycle-services/premier-support.md)
 ## [Submit a request to the Dynamics Service Engineering team](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
-## [Set up technical support for Dynamics 365 for Operations](lifecycle-services/support-experience.md) 
+## [Set up technical support for Finance and Operations](lifecycle-services/support-experience.md) 
 ## [Planned maintenance window FAQ](lifecycle-services/planned-maintenance-window-faq.md) 
 ## [Cloud operations and servicing](lifecycle-services/cloud-operations-servicing.md)
 
-# [Financials](/dynamics365/operations/financials/index)
+# [Financials](/dynamics365/unified-operations/financials/index)
 
-# [Human resources](/dynamics365/operations/human-resources/index)
+# [Human resources](/dynamics365/unified-operations/talent/index)
 
-# [Retail](/dynamics365/operations/retail/index)
+# [Retail](/dynamics365/unified-operations/retail/index)
 
-# [Supply chain management](/dynamics365/operations/supply-chain/index)
+# [Supply chain management](/dynamics365/unified-operations/supply-chain/index)
 
 # Other resources
-## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/dev-itpro/toc.json)
+## [Finance and Operations glossary](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ## [What's new or changed](get-started/whats-new-changed.md)
 

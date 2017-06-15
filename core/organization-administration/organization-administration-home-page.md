@@ -2,7 +2,7 @@
 # required metadata
 
 title: Organization administration home page
-description: This topic points to resources that will help you use Microsoft Dynamics 365 for Operations in your organization.
+description: This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations in your organization.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic points to resources that will help you use Microsoft Dynamics 365 for Operations in your organization.
+This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations in your organization.
 
 Number sequences
 ----------------

@@ -4442,7 +4442,7 @@ Initializes a new instance of the xGlobal class.
 | public int createWorkspaceWindow()                                                                                                                                                                           | Opens a new workspace window. For example, this enables you to open different sets of application objects in different windows, or to work with two different sets of company accounts. |
 | public UtilEntryLevel currentAOLayer()                                                                                                                                                                       | Retrieves the current layer you are running in such as SYS, or USR.                                                                                                                     |
 | public container cut(int from, int to)                                                                                                                                                                       | Cuts lines from the Infolog buffer.                                                                                                                                                     |
-| public str documentationLanguage(\[str languageCode\])                                                                                                                                                       | Gets or sets the language that is used for the Microsoft Dynamics 365 for Operations documentation.                                                                                                     |
+| public str documentationLanguage(\[str languageCode\])                                                                                                                                                       | Gets or sets the language that is used for the Finance and Operations documentation.                                                                                                     |
 | public container export()                                                                                                                                                                                    |                                                                                                                                                                                         |
 | public TreeNode findNode(str nodePath)                                                                                                                                                                       | Retrieves the specified a tree node.                                                                                                                                                    |
 | public TreeNode getDocNode(UtilFileType helpType, int UtilType, str Name, \[UtilElementId ParentId\], \[int Type\], \[UtilEntryLevel UtilLevel\], \[boolean ForceLevel\], \[int Mode\], \[boolean OldUtil\]) | Retrieves the specified documentation nodes from the AOT.                                                                                                                               |
@@ -4452,7 +4452,7 @@ Initializes a new instance of the xGlobal class.
 | public Struct getTaskInfo(int taskNumber)                                                                                                                                                                    |                                                                                                                                                                                         |
 | public UserSetup getUserSetup()                                                                                                                                                                              | Retrieves a UserSetup object that is used to set user parameters.                                                                                                                       |
 | public container getWorkspaceList()                                                                                                                                                                          |                                                                                                                                                                                         |
-| public int hWnd(\[int workspaceNum\])                                                                                                                                                                        | Retrieves a handle to the Microsoft Dynamics 365 for OperationsNavigation Pane window.                                                                                                                  |
+| public int hWnd(\[int workspaceNum\])                                                                                                                                                                        | Retrieves a handle to the Finance and OperationsNavigation Pane window.                                                                                                                  |
 | public boolean import(container infologContainer, \[boolean clearExistingInfolog\])                                                                                                                          |                                                                                                                                                                                         |
 | public int importElement(int id, int utilfiletype, UtilElementType utiltype, str name, int fileposition, int Flag)                                                                                           | Specifies the object to be imported.                                                                                                                                                    |
 | public int importString(str source, UtilElementType kind, str name)                                                                                                                                          | Imports an object from a file.                                                                                                                                                          |
@@ -4469,35 +4469,35 @@ Initializes a new instance of the xGlobal class.
 | public xNavPane navPane()                                                                                                                                                                                    | Retrieves an xNavPane object, the primary navigation control class.                                                                                                                     |
 | public int num(\[Exception exceptionType\])                                                                                                                                                                  | Retrieves the number of exceptions of the specified type in the Infolog buffer.                                                                                                         |
 | public int prevInstance()                                                                                                                                                                                    | Retrieves a handle to the previous instance of the application.                                                                                                                         |
-| public int processId()                                                                                                                                                                                       | Retrieves the ID for the Microsoft Dynamics 365 for Operations process.                                                                                                                                 |
+| public int processId()                                                                                                                                                                                       | Retrieves the ID for the Finance and Operations process.                                                                                                                                 |
 | public TreeNode projectRootNode()                                                                                                                                                                            | Returns the X++ Projects node.                                                                                                                                                          |
 | public TreeNode rootNode()                                                                                                                                                                                   | Retrieves the root of the application object tree.                                                                                                                                      |
 | public int startImport(str file, int flag, \[str labelSubstitutes\])                                                                                                                                         | Creates an import context.                                                                                                                                                              |
 | public str text(\[int line\])                                                                                                                                                                                | Retrieves a line of text from the Infolog.                                                                                                                                              |
 | public TreeNode userNode()                                                                                                                                                                                   |                                                                                                                                                                                         |
 | public AnyType webSession(\[AnyType value\])                                                                                                                                                                 |                                                                                                                                                                                         |
-| ::public static container activeXControls()                                                                                                                                                                  | Retrieves a list of the ActiveX controls that are in Microsoft Dynamics 365 for Operations.                                                                                                             |
+| ::public static container activeXControls()                                                                                                                                                                  | Retrieves a list of the ActiveX controls that are in Finance and Operations.                                                                                                             |
 | ::public static str AOTLogDirectory()                                                                                                                                                                        | Gets the path to the log directory for the current installation.                                                                                                                        |
-| ::public static container automationObjects()                                                                                                                                                                | Retrieves the list of COM objects that are available in Microsoft Dynamics 365 for Operations.                                                                                                          |
-| ::public static str buildNo()                                                                                                                                                                                | Retrieves the kernel build number of the current Microsoft Dynamics 365 for Operations executable.                                                                                                      |
-| ::public static str compilationDate()                                                                                                                                                                        | Retrieves the date on which the current version of Microsoft Dynamics 365 for Operations was last compiled.                                                                                             |
-| ::public static str compilationTime()                                                                                                                                                                        | Retrieves the time at which the current version of Microsoft Dynamics 365 for Operations was last compiled.                                                                                             |
+| ::public static container automationObjects()                                                                                                                                                                | Retrieves the list of COM objects that are available in Finance and Operations.                                                                                                          |
+| ::public static str buildNo()                                                                                                                                                                                | Retrieves the kernel build number of the current Finance and Operations executable.                                                                                                      |
+| ::public static str compilationDate()                                                                                                                                                                        | Retrieves the date on which the current version of Finance and Operations was last compiled.                                                                                             |
+| ::public static str compilationTime()                                                                                                                                                                        | Retrieves the time at which the current version of Finance and Operations was last compiled.                                                                                             |
 | ::public static str componentName()                                                                                                                                                                          | Retrieves the path to the component.                                                                                                                                                    |
 | ::public static str configuration()                                                                                                                                                                          | Retrieves the current client configuration.                                                                                                                                             |
 | ::public static int currentWorkspaceNum()                                                                                                                                                                    | Retrieves the application window ID of the current workspace.                                                                                                                           |
-| ::public static str directory(DirectoryType type)                                                                                                                                                            | Retrieves the path to the directory where the Microsoft Dynamics 365 for Operations client has been installed.                                                                                          |
+| ::public static str directory(DirectoryType type)                                                                                                                                                            | Retrieves the path to the directory where the Finance and Operations client has been installed.                                                                                          |
 | ::public static Date expireDate()                                                                                                                                                                            | Retrieves the date on which the license for the current installation expires.                                                                                                           |
 | ::public static ApplicationObjectTreeWindow getApplicationObjectTreeWindow()                                                                                                                                 |                                                                                                                                                                                         |
 | ::public static int getCurrentModelId()                                                                                                                                                                      |                                                                                                                                                                                         |
 | ::public static int getNumberOfDecimals(Real number)                                                                                                                                                         | Retrieves the number of decimal places in the specified number.                                                                                                                         |
 | ::public static PropertiesWindow getPropertiesWindow()                                                                                                                                                       |                                                                                                                                                                                         |
 | ::public static int getSystemGeneratedModelId(UtilEntryLevel layer)                                                                                                                                          |                                                                                                                                                                                         |
-| ::public static str licenseName()                                                                                                                                                                            | Retrieves the name of the current Microsoft Dynamics 365 for Operations license.                                                                                                                        |
+| ::public static str licenseName()                                                                                                                                                                            | Retrieves the name of the current Finance and Operations license.                                                                                                                        |
 | ::public static str productName()                                                                                                                                                                            | Retrieves the name of the product.                                                                                                                                                      |
 | ::public static str productRegisteredName()                                                                                                                                                                  |                                                                                                                                                                                         |
-| ::public static str releaseVersion()                                                                                                                                                                         | Retrieves the version number of the current Microsoft Dynamics 365 for Operations executable; for example: 3.0, or 4.0.                                                                                 |
+| ::public static str releaseVersion()                                                                                                                                                                         | Retrieves the version number of the current Finance and Operations executable; for example: 3.0, or 4.0.                                                                                 |
 | ::public static str releaseYear()                                                                                                                                                                            |                                                                                                                                                                                         |
-| ::public static str serialNo()                                                                                                                                                                               | Retrieves the serial number of the current Microsoft Dynamics 365 for Operations license.                                                                                                               |
+| ::public static str serialNo()                                                                                                                                                                               | Retrieves the serial number of the current Finance and Operations license.                                                                                                               |
 | public void new()                                                                                                                                                                                            | Initializes a new xInfo object.                                                                                                                                                         |
 | public void workspaceWindowDestroyed(int hWnd)                                                                                                                                                               | Executes when a workspace is closed.                                                                                                                                                    |
 | public void writeCustomStatlineItem(str text)                                                                                                                                                                | Writes a line of text to the status bar.                                                                                                                                                |
@@ -4802,7 +4802,7 @@ The following example cuts the lines in the Infolog from the line specified by t
 
 ### Method documentationLanguage
 
-Gets or sets the language that is used for the Microsoft Dynamics 365 for Operations documentation.
+Gets or sets the language that is used for the Finance and Operations documentation.
 
     public str documentationLanguage([str languageCode])
 
@@ -5108,7 +5108,7 @@ The UserSetup system class provides an interface for setting user parameters.
 
 ### Method hWnd
 
-Retrieves a handle to the Microsoft Dynamics 365 for OperationsNavigation Pane window.
+Retrieves a handle to the Finance and OperationsNavigation Pane window.
 
     public int hWnd([int workspaceNum])
 
@@ -5119,7 +5119,7 @@ The handle to the workspace from which to get the Navigation Pane handle.
 
 #### Return Value
 
-An integer that represents the handle to the Microsoft Dynamics 365 for OperationsNavigation Pane window.
+An integer that represents the handle to the Finance and OperationsNavigation Pane window.
 
 ### Method import
 
@@ -5390,13 +5390,13 @@ This method should not be used.
 
 ### Method processId
 
-Retrieves the ID for the Microsoft Dynamics 365 for Operations process.
+Retrieves the ID for the Finance and Operations process.
 
     public int processId()
 
 #### Return Value
 
-The ID for the Microsoft Dynamics 365 for Operations process.
+The ID for the Finance and Operations process.
 
 ### Method projectRootNode
 
@@ -5513,7 +5513,7 @@ value
 
 ### Method activeXControls
 
-Retrieves a list of the ActiveX controls that are in Microsoft Dynamics 365 for Operations.
+Retrieves a list of the ActiveX controls that are in Finance and Operations.
 
     public static container activeXControls()
 
@@ -5527,7 +5527,7 @@ The returned container contains four containers. The first inner container conta
 
 #### Examples
 
-The following example prints a description of each of the ActiveX controls in Microsoft Dynamics 365 for Operations.
+The following example prints a description of each of the ActiveX controls in Finance and Operations.
 
     static void activeXcontents(Args _args) 
     { 
@@ -5572,7 +5572,7 @@ If you turn on the AOT Log option, information will be stored in the log directo
 
 ### Method automationObjects
 
-Retrieves the list of COM objects that are available in Microsoft Dynamics 365 for Operations.
+Retrieves the list of COM objects that are available in Finance and Operations.
 
     public static container automationObjects()
 
@@ -5602,7 +5602,7 @@ The following example unpacks the nested container that is returned from automat
 
 ### Method buildNo
 
-Retrieves the kernel build number of the current Microsoft Dynamics 365 for Operations executable.
+Retrieves the kernel build number of the current Finance and Operations executable.
 
     public static str buildNo()
 
@@ -5612,7 +5612,7 @@ A string that contains the kernel build number.
 
 #### Examples
 
-The following example uses this method to return the kernel build number as part of a string that contains Microsoft Dynamics 365 for Operations version information.
+The following example uses this method to return the kernel build number as part of a string that contains Finance and Operations version information.
 
     static client str axaptaReleaseID() 
     { 
@@ -5626,13 +5626,13 @@ The following example uses this method to return the kernel build number as part
 
 ### Method compilationDate
 
-Retrieves the date on which the current version of Microsoft Dynamics 365 for Operations was last compiled.
+Retrieves the date on which the current version of Finance and Operations was last compiled.
 
     public static str compilationDate()
 
 #### Return Value
 
-A string that contains the date on which Microsoft Dynamics 365 for Operations was last compiled.
+A string that contains the date on which Finance and Operations was last compiled.
 
 #### Examples
 
@@ -5650,13 +5650,13 @@ The following example returns system information, including the date on which th
 
 ### Method compilationTime
 
-Retrieves the time at which the current version of Microsoft Dynamics 365 for Operations was last compiled.
+Retrieves the time at which the current version of Finance and Operations was last compiled.
 
     public static str compilationTime()
 
 #### Return Value
 
-A string that contains the time at which Microsoft Dynamics 365 for Operations was last compiled.
+A string that contains the time at which Finance and Operations was last compiled.
 
 ### Method componentName
 
@@ -5670,7 +5670,7 @@ A string that contains the path to the executable.
 
 #### Remarks
 
-If this method is run on the client, it returns the path to the .exe file for the Microsoft Dynamics 365 for Operations client. If it is run on the server, it returns the path to the .exe file for the AOS.
+If this method is run on the client, it returns the path to the .exe file for the Finance and Operations client. If it is run on the server, it returns the path to the .exe file for the AOS.
 
 ### Method configuration
 
@@ -5702,7 +5702,7 @@ The createWorkspaceWindow method allows you to open additional workspaces in the
 
 ### Method directory
 
-Retrieves the path to the directory where the Microsoft Dynamics 365 for Operations client has been installed.
+Retrieves the path to the directory where the Finance and Operations client has been installed.
 
     public static str directory(DirectoryType type)
 
@@ -5779,7 +5779,7 @@ layer
 
 ### Method licenseName
 
-Retrieves the name of the current Microsoft Dynamics 365 for Operations license.
+Retrieves the name of the current Finance and Operations license.
 
     public static str licenseName()
 
@@ -5823,13 +5823,13 @@ The following example returns system information, including the name of the prod
 
 ### Method releaseVersion
 
-Retrieves the version number of the current Microsoft Dynamics 365 for Operations executable; for example: 3.0, or 4.0.
+Retrieves the version number of the current Finance and Operations executable; for example: 3.0, or 4.0.
 
     public static str releaseVersion()
 
 #### Return Value
 
-A string containing the Microsoft Dynamics 365 for Operations version number.
+A string containing the Finance and Operations version number.
 
 #### Remarks
 
@@ -5837,7 +5837,7 @@ Possible version numbers include 3.0 and 4.0.
 
 #### Examples
 
-The following example uses this return the version number as part of a string that contains Microsoft Dynamics 365 for Operations version information.
+The following example uses this return the version number as part of a string that contains Finance and Operations version information.
 
     static client str axaptaReleaseID() 
     { 
@@ -5857,13 +5857,13 @@ The following example uses this return the version number as part of a string th
 
 ### Method serialNo
 
-Retrieves the serial number of the current Microsoft Dynamics 365 for Operations license.
+Retrieves the serial number of the current Finance and Operations license.
 
     public static str serialNo()
 
 #### Return Value
 
-A string that contains the serial number of the Microsoft Dynamics 365 for Operations license.
+A string that contains the serial number of the Finance and Operations license.
 
 ### Method new
 
@@ -6068,7 +6068,7 @@ startupCmd
 
 #### Remarks
 
-Do not use this method. Use one following methods instead. Use the Info.startupPost Method to pass startup commands to the client. Use the Application.startupPost Method to pass startup commands to the server. Do not use the Application.startup or Info.startup methods. This might affect code in a new version of Microsoft Dynamics 365 for Operations, which could prevent the client or server from starting.
+Do not use this method. Use one following methods instead. Use the Info.startupPost Method to pass startup commands to the client. Use the Application.startupPost Method to pass startup commands to the server. Do not use the Application.startup or Info.startup methods. This might affect code in a new version of Finance and Operations, which could prevent the client or server from starting.
 
 ### Method endImport
 
@@ -6305,7 +6305,7 @@ The xLanguage class provides access to a list of language IDs and information ab
 
 ### Remarks
 
-ISO 639 defines the names of languages, such as "en" for English. Microsoft has listed a set of language codes, such "en-us" for English (United States). These language codes are referred to in Microsoft Dynamics 365 for Operations as Language IDs. Microsoft Dynamics 365 for Operations uses "ko-jo" for Korean (Johab). In the Microsoft list, "ko" is both Korean and Korean (Johab). Microsoft Dynamics 365 for Operations uses "no-ny" for Norwegian (Nynorsk). In the Microsoft list, "no" is both Norwegian (Bokmal) and Norwegian (Nynorsk). Microsoft Dynamics 365 for Operations uses "es-tr" to represent Spanish (Spain - Traditional Sort). In the Microsoft list, "es" is both Spanish (Spain - Modern Sort) and Spanish (Spain - Traditional Sort). A language name in the following format, such as "English (United States)", is referred to as the description in Microsoft Dynamics 365 for Operations.
+ISO 639 defines the names of languages, such as "en" for English. Microsoft has listed a set of language codes, such "en-us" for English (United States). These language codes are referred to in Finance and Operations as Language IDs. Finance and Operations uses "ko-jo" for Korean (Johab). In the Microsoft list, "ko" is both Korean and Korean (Johab). Finance and Operations uses "no-ny" for Norwegian (Nynorsk). In the Microsoft list, "no" is both Norwegian (Bokmal) and Norwegian (Nynorsk). Finance and Operations uses "es-tr" to represent Spanish (Spain - Traditional Sort). In the Microsoft list, "es" is both Spanish (Spain - Modern Sort) and Spanish (Spain - Traditional Sort). A language name in the following format, such as "English (United States)", is referred to as the description in Finance and Operations.
 
 ### Examples
 
@@ -6426,7 +6426,7 @@ lcid
 ## Class xMenuFunction
     class xMenuFunction extends SecureNode
 
-The xMenuFunction class represents an interface to other Microsoft Dynamics 365 for Operations Application objects, providing an easy way to access and run any Form, Report, Job, Class, and Query.
+The xMenuFunction class represents an interface to other Finance and Operations Application objects, providing an easy way to access and run any Form, Report, Job, Class, and Query.
 
 ### Remarks
 
@@ -6450,7 +6450,7 @@ Note: This system class represents MenuItem nodes in the AOT. This class enables
 | public int copyCallerQuery(\[int value\])                                                               |                                                                                                                                           |
 | public int correctPermissions(\[int value\])                                                            |                                                                                                                                           |
 | public str countryRegionCodes(\[str value\])                                                            |                                                                                                                                           |
-| public ObjectRun create(\[xArgs args\])                                                                 | Creates and returns a reference to an Microsoft Dynamics 365 for Operations application object.                                                           |
+| public ObjectRun create(\[xArgs args\])                                                                 | Creates and returns a reference to an Finance and Operations application object.                                                           |
 | public str createdBy(\[str value\])                                                                     | Gets or sets the name of the user who created the application object.                                                                     |
 | public int createPermissions(\[int value\])                                                             |                                                                                                                                           |
 | public Date creationDate(\[Date value\])                                                                | Gets or sets the date an application object was created.                                                                                  |
@@ -6472,7 +6472,7 @@ Note: This system class represents MenuItem nodes in the AOT. This class enables
 | public int linkedPermissionType(\[int value\])                                                          |                                                                                                                                           |
 | public int maintainUserLicense(\[int value\])                                                           |                                                                                                                                           |
 | public boolean multiSelect(\[boolean value\])                                                           |                                                                                                                                           |
-| public str name(\[str value\])                                                                          | Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                                                                          | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int needsRecord(\[int value\])                                                                   |                                                                                                                                           |
 | public str normalImage(\[str value\])                                                                   |                                                                                                                                           |
 | public int normalResource(\[int value\])                                                                |                                                                                                                                           |
@@ -6583,7 +6583,7 @@ value
 
 ### Method create
 
-Creates and returns a reference to an Microsoft Dynamics 365 for Operations application object.
+Creates and returns a reference to an Finance and Operations application object.
 
     public ObjectRun create([xArgs args])
 
@@ -6594,7 +6594,7 @@ An xArgs class object; optional.
 
 #### Return Value
 
-A reference to an Microsoft Dynamics 365 for Operations application object.
+A reference to an Finance and Operations application object.
 
 #### Remarks
 
@@ -6861,7 +6861,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -7978,7 +7978,7 @@ calledWhen
 | public boolean selectWithRepeatableRead(\[boolean useRepeatableRead\])                                                     | Gets and sets the property that indicates whether repeatable read is enabled.                                                  |
 | public boolean setTempDB()                                                                                                 |                                                                                                                                |
 | public boolean setTmp()                                                                                                    | Sets the table so that it is not persisted to the database.                                                                    |
-| public boolean skipAosValidation(\[boolean newValue\])                                                                     | Gets and sets the property that indicates whether to skip validation of Microsoft Dynamics 365 for Operations Application Object Server (AOS). |
+| public boolean skipAosValidation(\[boolean newValue\])                                                                     | Gets and sets the property that indicates whether to skip validation of Finance and Operations Application Object Server (AOS). |
 | public boolean skipDatabaseLog(\[boolean newValue\])                                                                       | Gets and sets the property that indicates whether to skip database log requests.                                               |
 | public boolean skipDataMethods(\[boolean newValue\])                                                                       | Gets and sets the property that indicates whether to discard overloaded methods.                                               |
 | public boolean skipDeleteActions(\[boolean newValue\])                                                                     | Gets and sets the property that indicates whether to skip delete actions on the table.                                         |
@@ -8826,7 +8826,7 @@ true if the operation was successful; otherwise, false.
 
 ### Method skipAosValidation
 
-Gets and sets the property that indicates whether to skip validation of Microsoft Dynamics 365 for Operations Application Object Server (AOS).
+Gets and sets the property that indicates whether to skip validation of Finance and Operations Application Object Server (AOS).
 
     public boolean skipAosValidation([boolean newValue])
 
@@ -9724,7 +9724,7 @@ image
 ## Class xSession
     class xSession extends Object
 
-Gets information about Microsoft Dynamics 365 for Operations sessions.
+Gets information about Finance and Operations sessions.
 
 ### Remarks
 
@@ -9913,7 +9913,7 @@ true if the session is a worker thread; otherwise, false.
 
 #### Remarks
 
-A worker thread is an instance of the Thread class, which creates a new instance of Microsoft Dynamics 365 for Operations without UI. If this method is called inside such a session, it will return true.
+A worker thread is an instance of the Thread class, which creates a new instance of Finance and Operations without UI. If this method is called inside such a session, it will return true.
 
 ### Method loginDate
 

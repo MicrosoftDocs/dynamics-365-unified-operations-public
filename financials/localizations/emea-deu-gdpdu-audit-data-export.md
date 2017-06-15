@@ -2,7 +2,7 @@
 # required metadata
 
 title: German audit file (GDPdU/GoBD)
-description: Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics 365 for Operations supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
+description: Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics 365 for Operations supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
+Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
 
 Companies in Germany and some other countries/regions are legally required to export data for all transactions and master data from a fiscal year, and to provide this data to auditors within a reasonable time. The data must be collected in a specific file format, so that it can be imported to the auditor’s audit environment. This procedure is controlled by tax authorities. The data that must be exported depends on the requirements for an audit. For example, a typical set of exported data includes the following master data and transaction tables:
 
@@ -51,7 +51,7 @@ Companies in Germany and some other countries/regions are legally required to e
 -   Fixed assets master data
 -   Fixed assets transactions
 
-In the current version of Microsoft Dynamics 365 for Operations, functionality that lets the user export the required data is implemented as GDPdU-specific electronic reporting configurations. Task guides are also available that show how to import GDPdU-specific configurations, add another table group for export, and perform the export.
+In the current version of Finance and Operations, functionality that lets the user export the required data is implemented as GDPdU-specific electronic reporting configurations. Task guides are also available that show how to import GDPdU-specific configurations, add another table group for export, and perform the export.
 
 ## Table groups and table definitions
 The following sections list the tables that are set up as examples in the GDPdU electronic data model configuration. You can use these tables out of the box to export the data. You can also customize existing table groups and extend the list of supported table groups in the configuration of the GDPdU electronic reporting data model.
@@ -62,7 +62,7 @@ The following tables show the General leger data structure definitions.
 
 #### Sachkonten
 
-|     | Feldname                  | Feldtyp | Beschreibung                                      | Table in Dynamics 365 for Operations | Field or method in Dynamics 365 for Operations |
+|     | Feldname                  | Feldtyp | Beschreibung                                      | Table in Finance and Operations| Field or method in Finance and Operations|
 |-----|---------------------------|---------|---------------------------------------------------|--------------------------------------|------------------------------------------------|
 | 1   | SACHKONTONUMMER           | Zeichen | Nummer des Sachkontos                             | MainAccount                          | MainAccountId                                  |
 | 2   | SACHKONTONAME             | Zeichen | Bezeichnung des Sachkontos                        | MainAccount                          | Name                                           |
@@ -74,7 +74,7 @@ The following tables show the General leger data structure definitions.
 
 #### Sachkontobuchungen
 
-|     | Feldname               | Feldtyp   | Beschreibung                                      | Table in Dynamics 365 for Operations | Field or method in Dynamics 365 for Operations |
+|     | Feldname               | Feldtyp   | Beschreibung                                      | Table in Finance and Operations | Field or method in Finance and Operations |
 |-----|------------------------|-----------|---------------------------------------------------|--------------------------------------|------------------------------------------------|
 | 1   | SACHKONTONUMMER        | Zeichen   | Nummer des Sachkontos                             | DiensionAttributeValueCombination    | DisplayValue                                   |
 | 2   | BUCHUNGSDATUM          | Datum     | Datum der Wertstellung                            | GeneralJournalEntry                  | AccountingDate                                 |
@@ -103,29 +103,29 @@ The following tables show the Tax data structure definitions.
 
 #### Umsatzsteuercodes
 
-|     | Feldname          | Feldtyp   | Beschreibung      | Table in Dynamics 365 for Operations | Field or method in Dynamics 365 for Operations |
-|-----|-------------------|-----------|-------------------|--------------------------------------|------------------------------------------------|
-| 1   | NAME              | Zeichen   | Name              | TaxTable                             | TaxName                                        |
-| 2   | BUCHUNGSGRUNDLAGE | Zeichen   | Buchungsgrundlage | TaxTable                             | TaxBase                                        |
-| 3   | PROZENTSATZ       | Num(2Dez) | Prozentsatz       | TaxData                              | TaxValue                                       |
-| 4   | GULTIGAB          | Datum     | Gültig ab         | TaxData                              | TaxFromDate                                    |
-| 5   | GULTIGBIS         | Datum     | Gültig bis        | TaxData                              | TaxToDate                                      |
+|     | Feldname          | Feldtyp   | Beschreibung      | Table in Finance and Operations | Field or method in Finance and Operations|
+|-----|-------------------|-----------|-------------------|--------------------------------------|-------------------------------------|
+| 1   | NAME              | Zeichen   | Name              | TaxTable                             | TaxName                             |
+| 2   | BUCHUNGSGRUNDLAGE | Zeichen   | Buchungsgrundlage | TaxTable                             | TaxBase                             |
+| 3   | PROZENTSATZ       | Num(2Dez) | Prozentsatz       | TaxData                              | TaxValue                           |
+| 4   | GULTIGAB          | Datum     | Gültig ab         | TaxData                              | TaxFromDate                         |
+| 5   | GULTIGBIS         | Datum     | Gültig bis        | TaxData                              | TaxToDate                           |
 
 #### MehrwertsteuerGruppen
 
-|     | Feldname                      | Feldtyp | Beschreibung               | Table in Dynamics 365 for Operations | Field or method in Dynamics 365 for Operations |
-|-----|-------------------------------|---------|----------------------------|--------------------------------------|------------------------------------------------|
-| 1   | MEHRWERTSTEUERGRUPPE          | Zeichen | Mehrwertsteuergruppe       | TaxGroupData                         | TaxGroup                                       |
-| 2   | BESCHREIBUNG                  | Zeichen | Beschreibung               | TaxGroupHeading                      | TaxGroupName                                   |
-| 3   | MWST\_AUF\_SKONTO\_STORNIEREN | Zeichen | MWSt auf Skonto stornieren | TaxGroupHeading                      | TaxReverseOnCashDisc                           |
-| 4   | MEHRWERTSTEUERCODE            | Zeichen | Mehrwertsteuercode         | TaxGroupData                         | TaxCode                                        |
-| 5   | MWST\_CODE\_NAME              | Zeichen | MWSt Code Name             | TaxTable                             | TaxName                                        |
-| 6   | ERWERBSSTEUER                 | Zeichen | Erwerbssteuer              | TaxGroupData                         | UseTax                                         |
+|     | Feldname                      | Feldtyp | Beschreibung               | Table in Finance and Operations | Field or method in Finance and Operations |
+|-----|-------------------------------|---------|----------------------------|--------------------------------------|-----------------|
+| 1   | MEHRWERTSTEUERGRUPPE          | Zeichen | Mehrwertsteuergruppe       | TaxGroupData                         | TaxGroup       |
+| 2   | BESCHREIBUNG                  | Zeichen | Beschreibung               | TaxGroupHeading                      | TaxGroupName     |
+| 3   | MWST\_AUF\_SKONTO\_STORNIEREN | Zeichen | MWSt auf Skonto stornieren | TaxGroupHeading       | TaxReverseOnCashDisc   |
+| 4   | MEHRWERTSTEUERCODE            | Zeichen | Mehrwertsteuercode         | TaxGroupData                         | TaxCode    |
+| 5   | MWST\_CODE\_NAME              | Zeichen | MWSt Code Name             | TaxTable                             | TaxName  |
+| 6   | ERWERBSSTEUER                 | Zeichen | Erwerbssteuer              | TaxGroupData                         | UseTax       |
 
 #### Umsatzsteuerbuchungen
 
-|     | Feldname               | Feldtyp   | Beschreibung                                | Table in Dynamics 365 for Operations | Field or method in Dynamics 365 for Operations |
-|-----|------------------------|-----------|---------------------------------------------|--------------------------------------|------------------------------------------------|
+|     | Feldname               | Feldtyp   | Beschreibung                                | Table in Finance and Operations | Field or method in Finance and Operations |
+|-----|------------------------|-----------|---------------------------------------------|--------------------------------------|-----|
 | 1   | STEUERART              | Zeichen   | Beschreibung der Steuerart                  | TaxTrans                             | TaxName()                                      |
 | 2   | MWST\_CODE             | Zeichen   | MWST Bezeichung                             | TaxTrans                             | TaxCode                                        |
 | 3   | WERTSTELLUNG           | Datum     | Datum der Wertstellung der Buchung          | TaxTrans                             | TransDate                                      |
@@ -151,7 +151,7 @@ The following tables show the Accounts receivable data structure definitions.
 
 #### Kunden
 
-|     | Feldname             | Feldtyp | Beschreibung                          | Table in Dynamics 365 for Operations | Field or method in Dynamics 365 for Operations |
+|     | Feldname             | Feldtyp | Beschreibung                          | Table in Finance and Operations | Field or method in Finance and Operations |
 |-----|----------------------|---------|---------------------------------------|--------------------------------------|------------------------------------------------|
 | 1   | KUNDENKONTONUMMER    | Zeichen | Nummer des Kundenkontos               | CustTable                            | AccountNum                                     |
 | 2   | KUNDENNAME           | Zeichen | Name des Kunden                       | DirPartyTable                        | Name                                           |
@@ -169,7 +169,7 @@ The following tables show the Accounts receivable data structure definitions.
 
 #### Kundenbuchungen
 
-|     | Feldname                 | Feldtyp   | Beschreibung                          | Table in Dynamics 365 for Operations | Field or method in Dynamics 365 for Operations |
+|     | Feldname                 | Feldtyp   | Beschreibung                          | Table in Finance and Operation | Field or method in Finance and Operation |
 |-----|--------------------------|-----------|---------------------------------------|--------------------------------------|------------------------------------------------|
 | 1   | KUNDENKONTONUMMER        | Zeichen   | Kontonummer des Kundenkontos          | CustTrans                            | AccountNum                                     |
 | 2   | BUCHUNGSNUMMER           | Zeichen   | Interne Belegnummer der Buchung       | CustTrans                            | Voucher                                        |
@@ -190,7 +190,7 @@ The following tables show the Accounts payable data structure definitions.
 
 #### Lieferanten
 
-|     | Feldname                  | Feldtyp | Beschreibung                             | Table in Dynamics 365 for Operations | Field or method in Dynamics 365 for Operations |
+|     | Feldname                  | Feldtyp | Beschreibung                             | Table in Finance and Operation | Field or method in Finance and Operation |
 |-----|---------------------------|---------|------------------------------------------|--------------------------------------|------------------------------------------------|
 | 1   | LIEFERANTENKONTONUMMER    | Zeichen | Nummer des Lieferantenkontos             | VendTable                            | AccountNum                                     |
 | 2   | LIEFERANTENNAME           | Zeichen | Name des Lieferanten                     | DirPartyTable                        | Name                                           |
@@ -207,7 +207,7 @@ The following tables show the Accounts payable data structure definitions.
 
 #### Lieferantenbuchungen
 
-|     | Feldname                 | Feldtyp   | Beschreibung                          | Table in Dynamics 365 for Operations | Field or method in Dynamics 365 for Operations |
+|     | Feldname                 | Feldtyp   | Beschreibung                          | Table in Finance and Operation | Field or method in Finance and Operation |
 |-----|--------------------------|-----------|---------------------------------------|--------------------------------------|------------------------------------------------|
 | 1   | LIEFERANTENKONTONUMMER   | Zeichen   | Nummer des Lieferantenkontos          | VendTrans                            | AccountNum                                     |
 | 2   | BUCHUNGSNUMMER           | Zeichen   | Interne Belegnummer der Buchung       | VendTrans                            | Voucher                                        |
@@ -228,7 +228,7 @@ The following tables show the Accounts payable data structure definitions.
 See also
 --------
 
-[Electronic Reporting overview](/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting)
+[Electronic Reporting overview](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting)
 
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Set up Business process modeler libraries for an LCS solution
@@ -25,8 +25,6 @@ ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omarc
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
 
 ---
 
@@ -84,11 +82,11 @@ Follow these steps to change or update the business process lines or hierarchy i
 There are two sections in business process libraries: **Core Business Processes** and **Support Processes**. The **Core Business Processes** section should include all custom business processes for your solution. All customizations and functionality should be covered in end-to-end scenarios. Task recordings should be created for all processes in this section. Import American Productivity & Quality Center (APQC) processes that are relevant to your solution into the **Support Processes** section. This section should not include any custom business processes. You don't have to create task recordings for processes in this section. Your business process library should be aligned with the descriptions and summaries in your methodology and your marketing material.
 
 ## Create a task recording and associate it with a business process
-Task recordings should be created in a Microsoft Dynamics 365 for Operations environment that has your custom data and customizations. For reference information about Task recorder, see [Task Recorder in Microsoft Dynamics 365 for Operations](../user-interface/task-recorder.md).
+Task recordings should be created in a Microsoft Finance and Operations environment that has your custom data and customizations. For reference information about Task recorder, see [Task Recorder in Microsoft Dynamics 365 for Operations](../user-interface/task-recorder.md).
 
 ### Create a task recording
 
-1.  In Dynamics 365 for Operations, click the **Settings** button in the upper-right corner, and then click **Task recorder**.
+1.  In Finance and Operations, click the **Settings** button in the upper-right corner, and then click **Task recorder**.
 2.  Click **Create recording**.
 3.  Enter a name and description for the recording.
 4.  Perform the task that you want to record.
@@ -109,14 +107,14 @@ Task recordings can be played as task guides. Task guides are used to guide user
 
 ### Set up task guides
 
-1.  In Dynamics 365 for Operations, click **System administration** &gt; **Setup** &gt; **System parameters**, and then click the **Help** tab.
+1.  In Finance and Operations, click **System administration** &gt; **Setup** &gt; **System parameters**, and then click the **Help** tab.
 2.  Select the LCS project where the business process library that you want to work with is stored.
 3.  Select the business process libraries that have the task recordings that you want to play as task guides.
 4.  Adjust the order of the business process libraries as required. The order of the business process libraries determines the order that the task guides appear in. Therefore, the task guides for the first business process library appear first when a user uses the task guide functionality.
 
 ### Use task guides
 
-1.  In Dynamics 365 for Operations, open the page where you want to run the task guide.
+1.  In Finance and Operations, open the page where you want to run the task guide.
 2.  In the upper-right corner, click the **Settings** button, and then click **Task recorder**.
 3.  Select a task guide.
 4.  Click **Start Task guide**.

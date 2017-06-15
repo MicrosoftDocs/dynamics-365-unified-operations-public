@@ -43,6 +43,8 @@
 ### [Set up vendor accounts](procurement/set-up-vendor-accounts.md)
 ### [Vendor collaboration with external vendors](procurement/vendor-collaboration-work-external-vendors.md)
 ### [Vendor collaboration with customers](procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+### [Use external catalogs for PunchOut eProcurement](procurement/use-external-catalogs-for-punchout.md)
+### [Set up an external catalog for PunchOut eProcurement](procurement/set-up-external-catalog-for-punchout.md)
 ### [Collaborate with vendors by using the Vendor portal](procurement/collaborate-vendors-vendor-portal.md)
 ### [Vendor collaboration mobile workspace](procurement/vendor-collaboration-mobile-workspace.md)
 ### [Vendor portal user security](procurement/configure-security-vendor-portal-users.md)
@@ -50,9 +52,10 @@
 ### [Purchase agreements](procurement/purchase-agreements.md)
 ## Product receipts and invoicing
 ### [Product receipt against purchase orders](procurement/product-receipt-against-purchase-orders.md)
-### [Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
-### [Vendor posting profiles](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Product information management
+## [Product information overview](pim/product-information.md)
 ## Maintain product categories
 ## Maintain product information
 ### Maintain product definition
@@ -115,6 +118,8 @@
 #### [Reverse the production order status](production-control/reverse-production-order-status.md)
 #### [Report production orders as finished](production-control/report-production-orders-as-finished.md)
 #### [Report BOMs as finished](production-control/report-boms-as-finished.md)
+#### [Cross-docking from production orders to outbound docks](production-control/cross-docking-opportunities.md)
+#### [Register material consumption using a mobile device](production-control/register-material-consumption-hand-held-device.md)
 #### [Material substitution in manufacturing](production-control/substitute-items-bom-lines.md)
 #### [Registration for manufacturing execution](production-control/registration-manufacturing-execution.md)
 #### [Production feedback](production-control/production-feedback.md)
@@ -130,6 +135,7 @@
 #### [Model a lean organization](production-control/lean-manufacturing-modeling-lean-organization.md)
 #### [Operations resources](production-control/operations-resources.md)
 ### Schedule kanban jobs
+#### [Visual scheduling for lean manufacturing](production-control/visual-scheduling-lean-manufacturing.md)
 #### [Kanban job scheduling for lean manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
 #### [Job scheduling](production-control/job-scheduling.md)
 ### Operate kanban jobs
@@ -147,6 +153,7 @@
 #### [Operations scheduling](production-control/operations-scheduling.md)
 #### [Operations scheduling options](production-control/operation-scheduling-options.md)
 #### [Job scheduling](production-control/job-scheduling.md)
+#### [Gantt chart for job scheduling](production-control/visual-scheduling-production.md)
 ### Operate production jobs
 #### [Consolidated batch orders](production-control/consolidated-batch-orders.md)
 #### [Material substitution in manufacturing](production-control/substitute-items-bom-lines.md)
@@ -181,18 +188,26 @@
 ## [Transportation management](transportation/transportation-management-overview.md)
 ## [Transportation engine](transportation/transportation-management-engines.md)
 # Warehouse management
+## Advanced warehouse management
+### [Migrate from AX 2012 to Finance and Operations](warehousing/upgrade-migration-warehouse-management-processes.md)
 ## Setup 
 ### [Control work by using work templates and location directives](warehousing/control-warehouse-location-directives.md)
 ### [Manage warehouse workers](warehousing/manage-warehouse-workers.md)
 ### [Set up layout](warehousing/warehouse-configuration.md)
 ### [Warehouse work policies](warehousing/warehouse-work-policies.md)
 ### [Unit of measure and stocking policies](warehousing/unit-measure-stocking-policies.md)
-### [Warehouse Power BI content](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
+### [Warehouse Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
+### [Batch and license plate confirmation](warehousing/batch-and-license-plate-confirmation.md)
+### [Movement of inventory with associated work](warehousing/move-inventory-associated-work.md)
+### [System grouping on an open work list](warehousing/system-group-on-open-work-list.md)
+### [Product confirmation for cluster picking](warehousing/cluster-picking-item-confirmation.md)
 ## Picking and packing
 ### [Packing materials and fees](warehousing/pack-materials-packing-material-fees.md)
+### [Piece picking confirmation](warehousing/piece-picking-confirmation.md)
 ## Inventory counting
 ### [Block inventory](inventory/inventory-blocking.md)
 ### [Cycle counting](warehousing/cycle-counting.md)
+### [Partial location cycle counting](warehousing/partial-location-cycle-counting.md)
 ### [Inventory journal](inventory/inventory-journals.md)
 ### [Inventory location](inventory/inventory-locations.md)
 ### [Inventory status](inventory/inventory-statuses.md)
@@ -200,6 +215,7 @@
 ## Containerization 
 ## Replenishment
 ### [Replenishment](warehousing/replenishment.md)
+### [Replenishment with withdrawal kanbans](warehousing/material-replenishment-withdrawal-kanban.md)
 ## Mobile devices
 ### [Install and configure the warehousing app ](warehousing/install-configure-warehousing-app.md)
 ### [Configure field names in warehousing app](warehousing/configure-app-field-names-priorities-warehouse.md)
@@ -207,15 +223,15 @@
 ### [Warehouse Mobile Devices Portal (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [Warehouse mobile device display settings](warehousing/change-warehouse-mobile-device-displays.md)
 
-# [Financials](/dynamics365/operations/financials/index)
+# [Financials](/dynamics365/unified-operations/financials/index)
 
-# [Human resources](/dynamics365/operations/human-resources/index)
+# [Human resources](/dynamics365/unified-operations/talent/index)
 
-# [Retail](/dynamics365/operations/retail/index)
+# [Retail](/dynamics365/unified-operations/retail/index)
 
-# [Developer and Administrator](/dynamics365/operations/dev-itpro/index)
+# [Developer and Administrator](/dynamics365/unified-operations/dev-itpro/index)
 
 # Other resources
-## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
-## [What's new or changed](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Finance and Operations glossary](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 

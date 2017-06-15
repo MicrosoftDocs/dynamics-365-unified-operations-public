@@ -40,7 +40,7 @@ In this lab you’ll create a Master Details form and apply the appropriate form
 Prerequisites
 -------------
 
-For this tutorial, you will need to access the Microsoft Dynamics 365 for Operations environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Dynamics 365 for Operations Instances](..\dev-tools\access-instances.md).
+For this tutorial, you will need to access the environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Instances](..\dev-tools\access-instances.md).
 
 ## Overview
 To create the form, you’ll start from the existing form, **FmtCustomer**. The form represents the old Master Details template. As a part of the tutorial, you’ll apply the Master Details pattern, which will enforce a consistent structure for this form type. The following illustration shows the **FmtCustomer** starting artifact. 
@@ -58,11 +58,11 @@ To create the form, you’ll start from the existing form, **FmtCustomer**. The 
 ## Setup
 ### Import the tutorial project and transactional data
 
-Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you are working on, review [Access Dynamics 365 for Operations Instances](..\dev-tools\access-instances.md) and make sure you provision your administrator user if you’re working on a local VM.
+Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you are working on, review [Access Instances](..\dev-tools\access-instances.md) and make sure you provision your administrator user if you’re working on a local VM.
 
 1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
 2.  On the desktop, double-click the Visual Studio shortcut to open the development environment.
-3.  On the **Dynamics 365 for Operations** menu, click **Import Project**.
+3.  On the **Finance and Operations** menu, click **Import Project**.
 4.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
 5.  In the **Select the file to import** window, browse to **C: \\FMLab**, click FMTutorialDataModel.axpp, and then click **Open**.
 6.  In the **Project file location** text box, enter **C:\\FMLab**.
@@ -299,7 +299,7 @@ Run the form to see the Details view and the Grid view.
 9.  Return to Visual Studio
 
 ## Determine the amount of remaining patterns work in a model
-1.  Click **Dynamics 365 for Operations**, point to **Addins**, and then select **Run form patterns report**. 
+1.  Click **Finance and Operations**, point to **Addins**, and then select **Run form patterns report**. 
 
     [![CustForm32](./media/custform32-1024x469.png)](./media/custform32.png) 
     

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Add a methodology to an LCS solution
@@ -25,8 +25,7 @@ ms.assetid: 368f2356-62a6-4d9f-9f80-0acf7a986085
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omarc
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+
 
 ---
 

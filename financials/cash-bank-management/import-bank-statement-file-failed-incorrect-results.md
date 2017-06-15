@@ -2,7 +2,7 @@
 # required metadata
 
 title: Bank statement file import troubleshooting
-description: It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Operations supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
+description: It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Operations supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
+It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
 
 What is the error?
 ------------------
@@ -43,7 +43,7 @@ What is the error?
 After you try to import a bank statement file, go to the Data management job history and its execution details to find the error. The error can help by pointing to the statement, balance, or statement line. However, it's unlikely to provide enough information to help you identify the field or element that is causing the issue.
 
 ## What are the differences?
-Compare the bank file layout definition to the Microsoft Dynamics 365 for Operations import definition, and note any differences in the fields and elements. Compare the bank statement file to the related sample Dynamics 365 for Operations file. In the ISO20022 files, any differences should be easy to see.
+Compare the bank file layout definition to the Finance and Operations import definition, and note any differences in the fields and elements. Compare the bank statement file to the related sample Finance and Operations file. In the ISO20022 files, any differences should be easy to see.
 
 ## Transformations
 Typically, the change must be made in one of three transformations. Each transformation is written for a specific standard.
@@ -85,7 +85,7 @@ When the transformation runs, it creates an output file that you can view in Vi
 
 ### Adjust the transformation
 
-Adjust the transformation to get the appropriate field or element in the bank statement file. Then map that field or element to the appropriate Dynamics 365 for Operations element.
+Adjust the transformation to get the appropriate field or element in the bank statement file. Then map that field or element to the appropriate Finance and Operations element.
 
 ### Debit/credit indicator
 
