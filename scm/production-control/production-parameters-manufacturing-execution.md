@@ -90,7 +90,7 @@ For each of the three stages, there are three methods for picking items for a pr
 
 The following examples illustrate parameter settings that support different BOM consumption principles. The parameters are set up in the **Production parameters** form in **Manufacturing execution**.
 
-### [Example 1 - Backflushing on operations]
+### Example 1 - Backflushing on operations
 
 Use the following settings if picking list journals and BOM item consumption should be generated when items are reported as finished on an operation.
 
@@ -102,7 +102,7 @@ Use the following settings if picking list journals and BOM item consumption sho
 | **Report as finished** <br> **Automatic BOM consumption**      | **Never**<br>                           |
 | **Report as finished** <br> **Update finished report on-line** | **Status + quantity**               |
 
-### [Example 2 - Backflushing on production]
+### Example 2 - Backflushing on production
 
 Use the following settings if picking list journals and BOM item consumption should be generated when items are reported as finished on the production order.
 
@@ -114,7 +114,7 @@ Use the following settings if picking list journals and BOM item consumption sho
 | **Report as finished** <br> **Automatic BOM consumption**      | **Always**<br>                          |
 | **Report as finished** <br> **Update finished report on-line** | **Status + quantity**               |
 
-### [Example 3 - Flushing principle]
+### Example 3 - Flushing principle
 
 Use the following settings if picking list journals and BOM item consumption should be generated according to the flushing principle setting of the BOM items.
 
