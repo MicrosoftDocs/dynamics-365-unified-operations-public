@@ -107,9 +107,7 @@ Microsoft is committed to supporting the deployments of the Finance and Operatio
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 update | 7.2.x        | June 2017    | ?               |
 
 ## Support matrix
-The following table provides information about the recent releases of the
-application and platform for Microsoft Dynamics 365 for Finance and Operations,
-Enterprise edition, and shows which versions are compatible.
+The following table provides information about the recent releases of the application and platform for Finance and Operations, and shows which versions are compatible.
 
 |                       | **Dynamics AX 7.0** | **Dynamics AX application 7.0.1** | **Dynamics 365 for Operations (1611)** | **Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update** |
 |-----------------------|---------------------|-----------------------------------|----------------------------------------|----------------------------------------------------------------------------------|
