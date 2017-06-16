@@ -86,5 +86,8 @@ Example for bi-monthly returns
 | 5th period – September/October |          054          |
 | 6th period – November/December |          064          |
 
+## Configure the ER model and format for the report
+You can use the **Electronic reporting** workspace to review or change the VAT statement configuration. Go to the **Configurations** page and select **VAT declaration model** from the list of models. This model is common for Austria, Czech Republic, Estonia, Finland, Latvia, Lithuania, and Norway and it aggregates tax data needed for VAT declaration. To review or change the VAT statement format for users in legal entities in Norway, select **VAT declaration (NO)**, which is a child of VAT declaration model in the model tree. Select it and click **Designer** on the Action Pane to review or change the format. For more information, see [Electronic reporting](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting).
+
 
 
