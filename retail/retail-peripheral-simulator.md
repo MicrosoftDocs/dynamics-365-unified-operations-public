@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail peripheral simulator
-description: This topic describes the peripheral simulator tool that is provided with Microsoft Dynamics 365 for Operations - Retail.
+description: This topic describes the peripheral simulator tool that is provided with Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,12 +35,12 @@ ms.dyn365.ops.version: AX 7.0.1
 [!include[banner](includes/banner.md)]
 
 
-This topic describes the peripheral simulator tool that is provided with Microsoft Dynamics 365 for Operations - Retail.
+This topic describes the peripheral simulator tool that is provided with Microsoft Dynamics 365 for Retail.
 
 Overview
 --------
 
-The Microsoft Dynamics 365 for Operations - Retail peripheral simulator is a tool that helps you set up, test, and troubleshoot peripheral devices that are used in retail environments. You can use the peripheral simulator to streamline the testing of retail peripherals, and to isolate issues that are caused by incorrect setup or malfunctioning device drivers. The peripheral simulator includes a desktop program that features virtual versions of devices that Dynamics 365 for Operations - Retail supports. A section for each virtual device shows the interaction between the device and the retail point of sale (POS). You can also use it to provide input that is valid for various POS scenarios. The peripheral simulator supports interaction between the POS and the following virtual devices:
+The Microsoft Dynamics 365 for Retail - Retail peripheral simulator is a tool that helps you set up, test, and troubleshoot peripheral devices that are used in retail environments. You can use the peripheral simulator to streamline the testing of retail peripherals, and to isolate issues that are caused by incorrect setup or malfunctioning device drivers. The peripheral simulator includes a desktop program that features virtual versions of devices that Dynamics 365 for Retail - Retail supports. A section for each virtual device shows the interaction between the device and the retail point of sale (POS). You can also use it to provide input that is valid for various POS scenarios. The peripheral simulator supports interaction between the POS and the following virtual devices:
 
 -   **Printer** – The peripheral simulator can show receipts that are configured for a POS printer.
 -   **Line display** – You can configure a virtual line display to show activity on a physical line display.
@@ -70,7 +70,7 @@ You can use the peripheral simulator to test product bar codes, receipt formats,
 ## Set up the peripheral simulator
 ### Set up a hardware profile
 
-1.  To set up the peripheral simulator, go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
+1.  To set up the peripheral simulator, go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
 2.  To create a new profile, click **New**.
 3.  Enter values in the **Profile number** and **Description** fields.
 4.  Use the following table to set up the virtual devices that must be tested. Here is an explanation of the columns in the table:
@@ -94,7 +94,7 @@ You can use the peripheral simulator to test product bar codes, receipt formats,
 
 ### Assign the hardware profile to a register
 
-1.  After the hardware profile is created, go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
+1.  After the hardware profile is created, go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
 2.  In the **POS registers** list, click the link in the **Register number** field for the register that should use the peripheral simulator.
 3.  Click **Edit**.
 4.  In the **Profiles** section, in the **Hardware profile** field, select the hardware profile that you created for virtual peripherals.
@@ -102,14 +102,14 @@ You can use the peripheral simulator to test product bar codes, receipt formats,
 
 ### Synchronize changes to the channel database
 
-1.  Go to **Retail and commerce** &gt; **Retail IT** &gt; **Distribution schedule**.
+1.  Go to **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 2.  Select the **1090** distribution schedule.
 3.  Click **Run now** to synchronize changes to the POS.
 
 After the data is synchronized, the new hardware profile and changes on the register are available in the channel database.
 
 ## Install the peripheral simulator
-1.  Go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
+1.  Go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
 2.  Click **Download**, and then click **PeripheralSimulator**. **Note:** You must turn off pop-up blockers before you can download the peripheral simulator.
 3.  After the download is completed, open the **Downloads** folder, and double-click **VirtualPeripherals.msi** to start the installer.
 4.  Install the peripheral simulator by using the default settings.
@@ -148,7 +148,7 @@ The virtual peripheral printer just shows receipts as they are printed from the 
 
 #### Configure receipt printing
 
-1.  Go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
+1.  Go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
 2.  Select the hardware profile that you created for virtual peripherals.
 3.  On the **Printer** FastTab, click **Edit**.
 4.  In the **Receipt profile ID** field, select a receipt profile.
@@ -167,7 +167,7 @@ When a scale product is added to the POS transaction, and a scale is configured,
 
 #### Synchronize changes to the channel database
 
-1.  Go to **Retail and commerce** &gt; **Retail IT** &gt; **Distribution schedule**.
+1.  Go to **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 2.  Select the **1040** distribution schedule.
 3.  Click **Run now** to synchronize changes to the POS.
 
@@ -175,11 +175,11 @@ After the data is synchronized, when a scale product is added to the POS transac
 
 ### Signature capture
 
-The virtual signature capture device prompts the user to provide a signature on the virtual signature capture pad when the tender that is used requires a signature. The user can accept the signature to show it at the POS. The cashier can then accept the signature. The signature is then saved together with the tender and is synchronized to the back office together with other transaction data.
+The virtual signature capture device prompts the user to provide a signature on the virtual signature capture pad when the tender that is used requires a signature. The user can accept the signature to show it at the POS. The cashier can then accept the signature. The signature is then saved together with the tender and is synchronized to Retail headquarters together with other transaction data.
 
 #### Set up a tender to require a signature
 
-1.  Go to **Retail and commerce** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.
+1.  Go to **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.
 2.  Select the retail store.
 3.  Click **Edit**.
 4.  Click **Set up**, and then, in the **Set up** section, click **Payment methods**.
@@ -190,7 +190,7 @@ The virtual signature capture device prompts the user to provide a signature on 
 
 #### Synchronize changes to the channel database
 
-1.  Go to **Retail and commerce** &gt; **Retail IT** &gt; **Distribution schedule**.
+1.  Go to **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 2.  Select the **1070** distribution schedule.
 3.  Click **Run now** to synchronize changes to the POS.
 

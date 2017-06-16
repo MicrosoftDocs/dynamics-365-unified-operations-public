@@ -142,7 +142,7 @@ This section shows how to create a date-effective entity.
 
 #### Create a new project
 
-1.  Click **File** &gt; **New** &gt; **Project** to create a new Microsoft Dynamics 365 for Operations project.
+1.  Click **File** &gt; **New** &gt; **Project** to create a new project.
 2.  In Solution Explorer, right-click your project, and then click **Properties**. The **Property Pages** dialog box for your project opens.
 3.  Change the value of the **Synchronize database on build** property to **True**, and then click **OK**. You must set this property only one time per project. [![Synchronize database on build = True](./media/date3.png)](./media/date3.png)
 

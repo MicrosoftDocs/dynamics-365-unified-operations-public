@@ -40,7 +40,7 @@ This article explains how to configure a warehouse. It includes information abou
 **Note:** This article applies to features in the **Warehouse management** module (advanced warehousing). It doesn't apply to warehouse features in the **Inventory management** module.
 
 ## Warehouse layout
-The Warehouse management system in Microsoft Dynamics 365 for Operations gives you flexible ways to define your warehouse layout to meet changing needs, so that you can achieve optimal warehouse efficiency.
+The Warehouse management system in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition gives you flexible ways to define your warehouse layout to meet changing needs, so that you can achieve optimal warehouse efficiency.
 
 -   You can establish high-priority and low-priority storages areas for optimum placement of goods.
 -   You can divide your warehouse into zones to accommodate various storage needs, such as temperature requirements, or various turnover rates for items.
@@ -48,7 +48,7 @@ The Warehouse management system in Microsoft Dynamics 365 for Operations gives y
 -   You can group locations by using physical capacity constraint settings.
 -   You can control how items are stored and picked, based on query-defined rules.
 
-To use warehouse management in Microsoft Dynamics 365 for Operations, you must create a warehouse and enable it for more advanced or specialized warehouse management activities. On the **Warehouses** page, select the **Use warehouse management processes** option.
+To use warehouse management in Finance and Operations, you must create a warehouse and enable it for more advanced or specialized warehouse management activities. On the **Warehouses** page, select the **Use warehouse management processes** option.
 
 ### Zone groups, zones, location types, and locations
 
@@ -60,7 +60,7 @@ As part of the process for enabling a warehouse layout, you must define warehous
 -   **Locations types** – A logical or physical grouping of the warehouse locations. For example, you can create a location type for all staging locations. Mandatory settings on the **Warehouse management parameters** page drive the process of defining staging location types and the final shipping location type.
 -   **Locations** – The lowest level of location information. Locations are used to track where the on-hand inventory is stored and picked in a warehouse.
 
-The entities that you create to define your warehouse layout are used in the queries that you set up in work templates to drive work orders in the warehouse. Therefore, when you define the zones, location types, and so on, consider how different areas in the warehouse are used for different processes. Additionally, consider factors such as the physical characteristics of a particular area. For example, there might be areas where you can use only a certain type of forklift truck. Or, if your company has both production and finished goods within the same facility, you might want to create a single warehouse in Dynamics 365 for Operations but then separate the two operations by creating two zone groups. Give your entities descriptive names, so that it's easy to identify them when you use them in template queries.
+The entities that you create to define your warehouse layout are used in the queries that you set up in work templates to drive work orders in the warehouse. Therefore, when you define the zones, location types, and so on, consider how different areas in the warehouse are used for different processes. Additionally, consider factors such as the physical characteristics of a particular area. For example, there might be areas where you can use only a certain type of forklift truck. Or, if your company has both production and finished goods within the same facility, you might want to create a single warehouse in Finance and Operations but then separate the two operations by creating two zone groups. Give your entities descriptive names, so that it's easy to identify them when you use them in template queries.
 
 ### Location stocking limits, location profiles, and fixed picking locations
 

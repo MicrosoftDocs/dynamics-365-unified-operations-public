@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data entities - Workflow
-description: This article provides a list of the data entities that are available for the Workflow functionality in Microsoft Dynamics 365 for Operations.
+description: This article provides a list of the data entities that are available for Workflow.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,12 +35,12 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for the Workflow functionality in Microsoft Dynamics 365 for Operations.
+This article provides a list of the data entities that are available for Workflow.
 
 Available data entities
 -----------------------
 
-These entities should be used as a mechanism to move existing and tested workflows between Microsoft Dynamics 365 for Operations environments. The IDs in these entities aren't intended to be created manually. Because of the length of some fields in the workflow data entities, the target data format must be comma-separated values (CSV). The CSV format can cause issues where preceding zeros (0) appear in some fields if the files are open between export and import. Be aware that some fields in a CSV file might show “151”, for example, whereas the actual value is 00151. Additionally, some fields might be split into different columns because of length.
+These entities should be used as a mechanism to move existing and tested workflows between environments. The IDs in these entities aren't intended to be created manually. Because of the length of some fields in the workflow data entities, the target data format must be comma-separated values (CSV). The CSV format can cause issues where preceding zeros (0) appear in some fields if the files are open between export and import. Be aware that some fields in a CSV file might show “151”, for example, whereas the actual value is 00151. Additionally, some fields might be split into different columns because of length.
 
 **02.1.003 WF – Workflow** **- SHARED**
 

@@ -57,7 +57,7 @@ All batch servers can be managed from a single location.
 
 One typical use of batch servers is to load balance jobs across multiple time zones and servers. You can define the period when an AOS instance acts as a batch server. You can also set the number of threads that the batch server will process during that period. The applicable times for the period are based on the user's time zone, not the time zone of the location of the AOS instance. The period is based on a scheduled start time and a scheduled end time. 
 
-Because batch servers are also active AOS instances that service requests from Microsoft Dynamics 365 for Operations clients and other associated components, you must carefully determine when an AOS instance should be available to process batches. 
+Because batch servers are also active AOS instances that service requests from Microsoft Dynamics 365 for Finance and Operations clients and other associated components, you must carefully determine when an AOS instance should be available to process batches. 
 
 For example, a batch server is set to process only two batch threads from 8:00 AM to 6:00 PM in the time zone where it's located. However, from 6:00 PM to 7:30 AM, the server can be set to process 20 threads.
 

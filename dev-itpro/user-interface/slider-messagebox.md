@@ -2,8 +2,8 @@
 # required metadata
 
 title: Slider and MessageBox
-description: In Microsoft Dynamics 365 for Operations, there are two new dialogs that replace the existing dialog box, the Slider and the MessageBox. 
-author: sericks007
+description: There are two dialogs that replace the existing dialog box, the Slider and the MessageBox from Dynamics AX 2012. 
+author: robinarh
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -34,13 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-
-In Microsoft Dynamics 365 for Operations, there are two new dialogs that replace the existing dialog box, the Slider and the MessageBox. 
-
 Dialogs
--------
 
-In Microsoft Dynamics 365 for Operations, there are two new dialogs that replace the existing dialog box, the Slider and the MessageBox:
+There are two dialogs that replace the existing dialog box, the Slider and the MessageBox from Dynamics AX 2012:
 
 -   Slider
 -   MessageBox

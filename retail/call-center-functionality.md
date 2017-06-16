@@ -2,7 +2,7 @@
 # required metadata
 
 title: Call center functionality
-description: This article provides an overview of the call center sales functionality in Microsoft Dynamics 365 for Operations.
+description: This article provides an overview of the call center sales functionality in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](includes/banner.md)]
 
 
-This article provides an overview of the call center sales functionality in Microsoft Dynamics 365 for Operations.
+This article provides an overview of the call center sales functionality in Microsoft Dynamics 365 for Retail.
 
-Retail and commerce in Microsoft Dynamics AX supports call centers as a type of retail channel. In a call center, workers take orders from customers over the phone and create sales orders. Call center functionality includes features that are designed to make it easier to take phone orders and handle customer service throughout the order fulfillment process. For example, call center workers can enter payment information directly into the sales order, and can view a detailed summary of charges and payments before they submit the order. Workers also have options for controlling pricing, and can access various data about customers, products, and prices from the **Sales order** page. Additionally, call centers have enhanced functionality for tracking customer history and order status. Each call center can have its own users, payment methods, price groups, financial dimensions, and modes of delivery. You can configure these options when you create the call center. Additionally, you can use the **Call center** page to enable or disable the following groups of features that are unique to call centers:
+Dynamics 365 for Retail supports call centers as a type of retail channel. In a call center, workers take orders from customers over the phone and create sales orders. Call center functionality includes features that are designed to make it easier to take phone orders and handle customer service throughout the order fulfillment process. For example, call center workers can enter payment information directly into the sales order, and can view a detailed summary of charges and payments before they submit the order. Workers also have options for controlling pricing, and can access various data about customers, products, and prices from the **Sales order** page. Additionally, call centers have enhanced functionality for tracking customer history and order status. Each call center can have its own users, payment methods, price groups, financial dimensions, and modes of delivery. You can configure these options when you create the call center. Additionally, you can use the **Call center** page to enable or disable the following groups of features that are unique to call centers:
 
 -   **Order completion** – This group includes features that are related to payments and order completion on the **Sales order** page.
 -   **Directed selling** – This group includes features that are related to source codes, scripts, and catalog requests.

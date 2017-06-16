@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data entities - System administration
-description: This article provides a list of the data entities that are available for the System administration functionality in Microsoft Dynamics 365 for Operations.
+description: This article provides a list of the data entities that are available for System administration.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for the System administration functionality in Microsoft Dynamics 365 for Operations.
+This article provides a list of the data entities that are available for System administration.
 
 
 **01.1.001 SYS - Currencies**
@@ -61,7 +61,7 @@ This article provides a list of the data entities that are available for the Sys
 | 7                  | Name sequences                          | Organization administration | Setup       | Language   | Create name sequence patterns that can be used when you enter a perosn's party record information.                                                                                                                                                                                                                                              |
 | 8                  | Relationship types                      | Organization administration | Setup       | None       | Define relationship types that can be used in the address book.                                                                                                                                                                                                                                                                                 |
 | 9                  | Address and contact information purpose | Organization administration | Setup       | Language   | Assign one or more purposes to a postal address record or a contact information record. A purpose describes how a particular address record or contact information record is used. It shows the list of addresses for a customer and the purposes that are assigned to each postal address.                                                     |
-| 10                 | Address parameters                      | Organization administration | Setup       | None       | Enables validation when you add address information. For example, if you enter the ZIP/postal code 12345 for a customer address, Microsoft Dynamics 365 for Operations validates that the ZIP/postal code matches information that was previously entered for the country/region, county, and city that are included in the customer’s address. |
+| 10                 | Address parameters                      | Organization administration | Setup       | None       | Enables validation when you add address information. For example, if you enter the ZIP/postal code 12345 for a customer address, it is validated that the ZIP/postal code matches information that was previously entered for the country/region, county, and city that are included in the customer’s address. |
 | 11                 | Address format                          | Organization administration | Setup       | None       | The setup of address component information and formatting.                                                                                                                                                                                                                                                                                      |
 
 **01.1.004 SYS - Address prerequisites for legal entities**
@@ -75,7 +75,7 @@ Some records that are related to languages that aren't supported in the Dynamics
 
 **01.1.005 SYS - Address setup**
 
-There are five records that will fail during Cities import because of bad data.
+There are five records that will fail during Cities import because of bad data. Demo data sample packages have been adjusted to account for these errors.
 
 | Suggested sequence | Entity name          | Area                        | Entity type | Dependency                                                     | Comments                                                                                                                                       |
 |--------------------|----------------------|-----------------------------|-------------|----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|

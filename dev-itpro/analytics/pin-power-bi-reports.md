@@ -2,7 +2,7 @@
 # required metadata
 
 title: Pin Power BI reports to workspaces
-description: Microsoft Dynamics 365 for Operations uses Power BI for data exploration. This topic explains how you can pin full-page Power BI reports to workspaces in Dynamics 365 for Operations to give your users an interactive data exploration experience.
+description: Microsoft Dynamics 365 for Finance and Operations uses Power BI for data exploration. This topic explains how you can pin full-page Power BI reports to workspaces in Finance and Operations to give your users an interactive data exploration experience.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 1
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Operations uses Power BI for data exploration. This topic explains how you can pin full-page Power BI reports to workspaces in Dynamics 365 for Operations to give your users an interactive data exploration experience.
+Microsoft Dynamics 365 for Finance and Operations uses Power BI for data exploration. This topic explains how you can pin full-page Power BI reports to workspaces in Finance and Operations to give your users an interactive data exploration experience.
 
 This topic assumes that you're familiar with the feature that lets you pin Microsoft Power BI tiles to a workspace. For more information, see [Power BI integration](power-bi-integration.md). If you're a developer who is creating a workspace, to let users pin Power BI tiles to the workspace, embed the Power BI tile control.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Task recorder and Help for POS
-description: This topic describes the how to use Task recorder in Retail Modern POS and Cloud POS.
+description: This topic describes how to use Task recorder in Retail Modern POS and Cloud POS.
 author: mugunthanm
 manager: AnnBe
 ms.date: 2017-05-15
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Task recorder and Help for POS
 
-This topic describes the how to use Task recorder in Retail Modern POS and Cloud POS.
+This topic describes how to use Task recorder in Retail Modern POS and Cloud POS.
 
 Overview
 --------
@@ -42,23 +42,25 @@ Task recorder in Retail Modern POS or Cloud POS is a new solution that was bui
 Task recorder can record user actions in the client with exact fidelity. Each control is instrumented to notify Task recorder about the execution of a user action. The control notifies Task recorder that an event occurred and passes along all pertinent information about the corresponding user action in real time. From this information, Task recorder can capture the type of user action (such as a button click, value entry, or navigation) and any data that is related to the user action (such as the input data value and type, form context, or record context). Task recorder persists the information with enough detail to help guarantee that a playback of the recording can perform the recorded actions exactly as the user performed them. (The playback feature isn't yet implemented at Retail modern POS or Cloud POS.)
 
 ## Basic configuration
-To enable task recording at POS, follow these steps.
+To enable task recording in POS, follow these steps.
 
-1.  Click **Retail and commerce** &gt; **Channel Setup** &gt; **POS Setup** &gt; **Registers**.
+1.  Click **Retail** &gt; **Channel Setup** &gt; **POS Setup** &gt; **Registers**.
 2.  Click the register to enable task recording on.
 3.  On the **Register** tab, on the **General** FastTab, set the **Enable task recording** option to **Yes**.
 4.  Click **Save**.
-5.  Go to **Retail and commerce** &gt; **Retail IT** &gt; **Distribution schedule**.
+5.  Go to **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 6.  Select the **Registers (1090)** job, and then click **Run now**.
 
 ## Create a recording
-Follow these steps to create a new recording by using Task recorder.
+Follow these steps to create a new recording using Task recorder.
 
 1.  Start Retail Modern POS or Cloud POS, and sign in.
 2.  On the **Settings** page, in the **Task Recorder** section, click **Open task recorder**. The **Task recorder** pane appears. You can click the **Close** button (**X**) in the upper-right corner to close the **Task recorder** pane before you begin a new recording. To reopen the pane, repeat step 2.
 [![Task recorder pane](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
-3.  Enter a name and description for the recording, and then click **Start**. The recording session begins as soon as you click **Start**. **Note:** If you click the **Close** button (**X**) in the upper-right corner while recording is in progress, the **Task recorder** pane is closed, but the recording session isn't ended. To reopen the Task recorder pane, click the Help button (question mark) at the top of the screen. 
+3.  Enter a name and description for the recording, and then click **Start**. The recording session begins as soon as you click **Start**.
+
+**Note:** If you click the **Close** button (**X**) in the upper-right corner while recording is in progress, the **Task recorder** pane is closed, but the recording session isn't ended. To reopen the Task recorder pane, click the **Help** button (question mark) at the top of the screen. 
 
 [![Question mark](./media/help.jpg)](./media/help.jpg)
 
@@ -99,7 +101,10 @@ To resume the recording session after you've paused it, click **Continue**.
 
 ### Capture screenshots
 
-Task recorder can capture screenshots of the Retail Modern POS UI as you record a business process. Task recorder uses the screenshots if you download the recording as a Word document. To turn on the screenshot capture feature, set the **Capture screenshot** option to **Yes**. Note: Capture screenshot functionality is not supported in Cloud POS.
+Task recorder can capture screenshots of the Retail Modern POS UI as you record a business process. Task recorder uses the screenshots if you download the recording as a Word document. To turn on the screenshot capture feature, set the **Capture screenshot** option to **Yes**. 
+
+#### Note
+> Capture screenshot functionality is not supported in Cloud POS.
 
 ### Start task and End task
 
@@ -123,10 +128,12 @@ Text that you enter in the **Text** field appears *above* the step text in the T
 
 Text that you enter in the **Notes** field appears *below* the step text in the Task guide. To read the note text, the user must expand the step text in the pop-up window. This location is appropriate for optional reading material or other information that might be useful to the user, but that the user doesn't require in order to complete the action.
 
-## Help at Retail Modern POS and Cloud POS
-To show your own custom task recordings in the Help pane of Retail Modern POS and Cloud POS so that they can be viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connecting the Help system.](https://ax.help.dynamics.com/en/wiki/working-with-help/#connecting-the-help-system) Retail Modern POS and Cloud POS Help searches LCS in real time. It searches across all the BPM libraries that are selected in the Microsoft Dynamics AX Help system parameters and shows the relevant results. To access the **Help** menu, click the **Help** button at the top of the screen and then in the search box type your process name and hit the search button. 
+## Help in Retail Modern POS and Cloud POS
+To show your own custom task recordings in the Help pane of Retail Modern POS and Cloud POS so that they can be viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connecting the Help system](/dynamics365/unified-operations/dev-itpro/get-started/help-connect). Retail Modern POS and Cloud POS Help searches LCS in real time. It searches across all the BPM libraries that are selected in the Microsoft Dynamics 365 for Retail Help system parameters and shows the relevant results. To access the **Help** menu, click the **Help** button (question mark) at the top of the screen and then in the search box type your process name and hit the search button. 
 
 [![Help button](./media/help.jpg)](./media/help.jpg) 
 
-When you click a Task guide in the search results, you can either view the steps as a Help topic or export the steps to a Word document. Note: Help system in Retail Modern POS and Cloud POS will not bring the task guides automatically based on your form or operations you have to type the process name in search box and hit the search button to get the results.
+When you click a Task guide in the search results, you can either view the steps as a Help topic or export the steps to a Word document. 
+#### Note
+> Help in Retail Modern POS and Cloud POS will not bring up task guides according to what form you're on or operation you're doing. You have to type the process name in the search box and then click **Search**.
 

@@ -46,7 +46,7 @@ You must present the IRS declaration report for each month on or before the se
 For example, provisional ISR payments for January 2014 are paid and presented in February 2014, the payments for February are paid and presented in March, and so on. Taxpayers must use the calendar year to file income tax. At the end of the year, taxpayers must also present the annual declaration, which shows the final calculation of income tax.
 
 ## Prerequisites
-Before you generate the ISR report, you can use Microsoft Dynamics 365 for Operations to configure the concept category and define the ISR rates that should be applied in the report. The ISR report is based on general journal transactions.
+Before you generate the ISR report, you can use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to configure the concept category and define the ISR rates that should be applied in the report. The ISR report is based on general journal transactions.
 
 ### Concepts
 

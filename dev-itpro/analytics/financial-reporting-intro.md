@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Financial reporting for Dynamics 365 for Operations
-description: Financial reporting for Dynamics 365 for Operations allows financial and business professionals to create, maintain, deploy, and view financial statements. It moves beyond traditional reporting constraints to help you efficiently design various types of reports.
+title: Financial reporting for Finance and Operations
+description: Financial reporting for Finance and Operations allows financial and business professionals to create, maintain, deploy, and view financial statements. It moves beyond traditional reporting constraints to help you efficiently design various types of reports.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,17 +25,17 @@ ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611 
 
 ---
 
-# Financial reporting for Dynamics 365 for Operations
+# Financial reporting for Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
 
-Financial reporting for Dynamics 365 for Operations allows financial and business professionals to create, maintain, deploy, and view financial statements. It moves beyond traditional reporting constraints to help you efficiently design various types of reports.
+Financial reporting for Finance and Operations allows financial and business professionals to create, maintain, deploy, and view financial statements. It moves beyond traditional reporting constraints to help you efficiently design various types of reports.
 
 Financial reporting includes dimension support. Therefore, account segments or dimensions are immediately available. No additional tools or configuration steps are required.
 

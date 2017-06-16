@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 3
 
 This topic shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. 
 
-Microsoft Dynamics 365 for Operations offers an expanded set of tools to support custom solutions. This topic focuses on the expansion of an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. You use custom delegate handlers and table extensions to include additional field data and/or calculations. You don't have to over-layer the Application Suite. You then create custom designs that replace the standard application solutions and present the data to users. The following illustration shows a typical application customization, as described in this topic.
+Microsoft Dynamics 365 for Finance and Operations offers an expanded set of tools to support custom solutions. This topic focuses on the expansion of an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. You use custom delegate handlers and table extensions to include additional field data and/or calculations. You don't have to over-layer the Application Suite. You then create custom designs that replace the standard application solutions and present the data to users. The following illustration shows a typical application customization, as described in this topic.
 
 [![extendingdatasets](./media/extendingdatasets.png)](./media/extendingdatasets.png)  
 

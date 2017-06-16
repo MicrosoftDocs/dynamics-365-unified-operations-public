@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create a copy of a Dynamics 365 for Operations database to restore later
-description: This topic provides instructions for exporting a Microsoft Dynamics 365 for Operations database to a file and then reimporting that file to the same instance or another instance of the application. This procedure can only be used in non-production environments. 
+title: Create a copy of a Finance and Operations database to restore later
+description: This topic provides instructions for exporting a Microsoft Dynamics 365 for Finance and Operations database to a file and then reimporting that file to the same instance or another instance of the application. This procedure can only be used in non-production environments. 
 author: tariqbell
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,34 +30,34 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Create a copy of a Dynamics 365 for Operations database to restore later
+# Create a copy of a Finance and Operations database to restore later
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides instructions for exporting a Microsoft Dynamics 365 for Operations database to a file and then reimporting that file to the same instance or another instance of the application. This procedure can only be used in non-production environments. 
+This topic provides instructions for exporting a Microsoft Dynamics 365 for Finance and Operations database to a file and then reimporting that file to the same instance or another instance of the application. This procedure can only be used in non-production environments. 
 
-You might want to retain a copy of a Dynamics 365 for Operations database process in several situations:
+You might want to retain a copy of a Finance and Operations database process in several situations:
 
 -   To take strategic backups to restore to in the future. For example, before or after a major code update you might want copies to use for reference later.
 -   To back up a database before destructive testing and then restore it afterward.
--   When upgrading to a new major release of Microsoft Dynamics 365 for Operations, this process can be used to export your old test database and bring it forward to the new version.
+-   When upgrading to a new major release of Microsoft Dynamics 365 for Finance and Operations, this process can be used to export your old test database and bring it forward to the new version.
 
 Be aware that Microsoft also provides a standard feature which provides the ability to restore an Azure SQL database environment to a point-in-time within the last 35 days via a service request. For more information, see [Request a point-in-time database restore on a non-production environment](request-point-in-time-restore.md).
 
 ## Prerequisites
 To export a database from a sandbox environment you must install the latest SQL Server 2016 Management Studio to the AOS machine in that environment and perform the export on that AOS machine. This is for two reasons. First, there is an IP access restriction on the sandbox SQL Server instance, which only allows a connection from a machine within that environment. Second, the version of SQL Server Management Studio installed by default is for a previous version of SQL Server and can’t complete the tasks required.
 
-## Export the Dynamics 365 for Operations database
+## Export the Finance and Operations database
 ### Stop services
 
-Use Remote Desktop to connect to all the computers in the environment and stop the following Windows services by using services.msc. These services will have open connections to the Dynamics 365 for Operations database.
+Use Remote Desktop to connect to all the computers in the environment and stop the following Windows services by using services.msc. These services will have open connections to the Finance and Operations database.
 
 -   World wide web publishing service (on all AOS computers)
--   Microsoft Dynamics 365 for Operations Batch Management Service (on non-private AOS computers only)
+-   Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)
 -   Management Reporter 2012 Process Service (on BI computers only)
 
-### Execute sqlpackage to export the Dynamics 365 for Operations database
+### Execute sqlpackage to export the Finance and Operations database
 
 Open a command prompt as an Administrator, and then execute the following commands.
 
@@ -73,23 +73,23 @@ The parameters include:
 -   **sp** (source password) - The SQL password for the source SQL Server.
 -   **su** (source user) - The SQL user name for the source SQL Server. We recommend that you use the **sqladmin** user, which the deployment will have created on every Dynamics SQL instance. You can retrieve the password for this user from your Lifecycle Services (LCS) project.
 
-Running this command creates a .bacpac file on the D:\\Exportedbacpac folder. You can take this file and copy or upload it to secure location so that it can be imported into a different environment at another time. You can use the AzCopy command line utility to upload the file to an Azure storage account[,](https://azure.microsoft.com/en-gb/documentation/articles/storage-use-azcopy/) and then download it to the target AOS computer. For more information, see [Copy or upload the file to an Azure storage account](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). **Note:** Microsoft doesn’t provide a storage account as part of your Dynamics 365 for Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. **Important:** Be aware of the behavior of the D drive on Azure Virtual Machines, do not keep your exported database files here permanently unless you are prepared to lose them. For details, see [Understanding the temporary drive on Windows Azure virtual machines (blog post)](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+Running this command creates a .bacpac file on the D:\\Exportedbacpac folder. You can take this file and copy or upload it to secure location so that it can be imported into a different environment at another time. You can use the AzCopy command line utility to upload the file to an Azure storage account[,](https://azure.microsoft.com/en-gb/documentation/articles/storage-use-azcopy/) and then download it to the target AOS computer. For more information, see [Copy or upload the file to an Azure storage account](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). **Note:** Microsoft doesn’t provide a storage account as part of your Finance and Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. **Important:** Be aware of the behavior of the D drive on Azure Virtual Machines, do not keep your exported database files here permanently unless you are prepared to lose them. For details, see [Understanding the temporary drive on Windows Azure virtual machines (blog post)](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
 ### Start services
 
 Use services.msc to restart the services that you stopped earlier:
 
 -   World wide web publishing service (on all AOS computers)
--   Microsoft Dynamics 365 for Operations Batch Management Service (on non-private AOS computers only)
+-   Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)
 -   Management Reporter 2012 Process Service (on BI computers only)
 
-## Import the Dynamics 365 for Operations database
+## Import the Finance and Operations database
 ### Stop services
 
-Use Remote Desktop to connect to all the computers in the environment and stop the following Windows services by using services.msc. These services will have open connections to the Dynamics 365 for Operations database.
+Use Remote Desktop to connect to all the computers in the environment and stop the following Windows services by using services.msc. These services will have open connections to the Finance and Operations database.
 
 -   World wide web publishing service (on all AOS computers)
--   Microsoft Dynamics 365 for Operations Batch Management Service (on non-private AOS computers only)
+-   Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)
 -   Management Reporter 2012 Process Service (on BI computers only)
 
 ### Import the bacpac file
@@ -108,7 +108,7 @@ The parameters include:
 -   **tu** (target user) – The SQL user name for the target Azure SQL database instance. We recommend that you use the standard **sqladmin** user. You can retrieve the password for this user from your LCS project.
 -   **tp** (target password) – The password for the target Azure SQL database user.
 
-### Run a script to update the Dynamics 365 for Operations database
+### Run a script to update the Finance and Operations database
 
 If the source and target environments have different SQL user passwords, then you will need to run this script. If you are not sure if the passwords are different, you need to run this script. Run the following script against the imported database. The script will drop the database users and recreate them with the correct passwords for the target environment.
 

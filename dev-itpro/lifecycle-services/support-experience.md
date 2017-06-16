@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up technical support for Dynamics 365 for Operations
+title: Set up technical support for Finance and Operations
 description: This article provides information about the support experience in the current version of Microsoft Dynamics AX. It describes the setup that is required in Dynamics AX, Microsoft Visual Studio Online, and Microsoft Dynamics Lifecycle Services, and also explains how to create and work with support issues.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Set up technical support for Dynamics 365 for Operations
+# Set up technical support for Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,16 +40,16 @@ This article provides information about the support experience in the current ve
  Prerequisites
 --------------
 
-A Microsoft Azure Active Directory (AAD) account. This account is created during the setup of the Microsoft Dynamics 365 for Operations subscription.
+A Microsoft Azure Active Directory (AAD) account. This account is created during the setup of the Microsoft Dynamics 365 for Finance and Operations subscription.
 
 ## Create a Visual Studio Team Services project
-The **Support** tile in a Lifecycle Services project uses Microsoft Visual Studio Team Services (VSTS) to store issues that are submitted through the Dynamics AX client and issues that are manually created from the **Support** tile. This functionality requires that a VSTS project be configured in the Lifecycle Services (LCS) project that you want to use for CPS. All users who need to use the **Support** tile to submit an issue must have access to the VSTS project, and must authorize LCS to access VSTS on his or her behalf. Most Dynamics 365 for Operations users don't have access to LCS or VSTS. Therefore, in the VSTS project, you should create a special system account that Dynamics 365 for Operations can use to submit issues.
+The **Support** tile in a Lifecycle Services project uses Microsoft Visual Studio Team Services (VSTS) to store issues that are submitted through the Dynamics AX client and issues that are manually created from the **Support** tile. This functionality requires that a VSTS project be configured in the Lifecycle Services (LCS) project that you want to use for CPS. All users who need to use the **Support** tile to submit an issue must have access to the VSTS project, and must authorize LCS to access VSTS on his or her behalf. Most Finance and Operations users don't have access to LCS or VSTS. Therefore, in the VSTS project, you should create a special system account that Finance and Operations can use to submit issues.
 
 ### Create a new VSTS project
 
 1.  Go to <https://www.visualstudio.com/>.
 2.  Click **Sign in** in the upper-right corner.
-3.  Sign in by using an AAD account that is in the tenant that your Dynamics 365 for Operations subscription is linked to. If the browser already has your credentials, you won't see the sign-in page and should instead click your name in the upper-right corner.
+3.  Sign in by using an AAD account that is in the tenant that your Finance and Operations subscription is linked to. If the browser already has your credentials, you won't see the sign-in page and should instead click your name in the upper-right corner.
 4.  On the right side of the page, under **Accounts**, click **Create a free account now**.
 5.  Specify an account URL, and then click **Create Account**.
 6.  Name your project, and specify a process template. Your project should now be created.
@@ -102,8 +102,8 @@ The **Support** tile in a Lifecycle Services project uses Microsoft Visual Stud
 12. Sign in to Visual Studio Online.
 13. Click **Accept**.
 
-## Create an issue in the Dynamics 365 for Operations client (Microsoft Dynamics AX 7.0, Microsoft Dynamics AX Platform update 1 or update 2, or Microsoft Dynamics 365 for Operations platform update 3)
-If you are on Microsoft Dynamics 365 for Operations platform update 4, or if you have consumed KB 4010473 for Platform update 3, skip to the next section.
+## Create an issue in the Finance and Operations client (Microsoft Dynamics AX 7.0, Microsoft Dynamics AX Platform update 1 or update 2, or Microsoft Finance and Operations platform update 3)
+If you are on Microsoft Finance and Operations platform update 4, or if you have consumed KB 4010473 for Platform update 3, skip to the next section.
 
 1.  In the Dynamics AX client, click the **Help** menu, or question mark icon, in the upper right corner. [![AX7-help-Contact\_Your\_Support](./media/ax7-help-contact_your_support1.png)](./media/ax7-help-contact_your_support1.png)
 2.  Click **Contact your support team**.
@@ -119,12 +119,12 @@ If you are on Microsoft Dynamics 365 for Operations platform update 4, or if you
 
 You should receive a confirmation message that states that the issue has been submitted to LCS. Users who are in the **Operations users** role are notified that a new issue has been submitted to LCS. To view the issue that was submitted, click the **Support** tile in the LCS project that is associated with this Dynamics AX instance.
 
-## Create an issue in the Dynamics 365 for Operations client (Microsoft Dynamics 365 for Operations platform update 4 and platform update 3 KB 4010473)
-If you have not taken platform update 4 for Microsoft Dynamics 365 for Operations, or if you have not consumed KB 4010473 for platform update 3, complete the procedure in the previous section. The Support experience has been updated to show updates that are published by Microsoft within the Dynamics 365 for Operations client. In Dynamics 365 for Operations, on the top bar, click **?**, and then click **Support**. [![wiki1](./media/wiki1-1024x518.png)](./media/wiki1.png) **Note:** If you haven’t already connected to Lifecycle Services (LCS) before you will see a dialog to connect to LCS. Click the link to connect before proceeding. [![wiki2](./media/wiki2.png)](./media/wiki2.png)
+## Create an issue in the Finance and Operations client (Microsoft Finance and Operations platform update 4 and platform update 3 KB 4010473)
+If you have not taken platform update 4 for Microsoft Finance and Operations, or if you have not consumed KB 4010473 for platform update 3, complete the procedure in the previous section. The Support experience has been updated to show updates that are published by Microsoft within the Dynamics 365 for Operations client. In Finance and Operations, on the top bar, click **?**, and then click **Support**. [![wiki1](./media/wiki1-1024x518.png)](./media/wiki1.png) **Note:** If you haven’t already connected to Lifecycle Services (LCS) before you will see a dialog to connect to LCS. Click the link to connect before proceeding. [![wiki2](./media/wiki2.png)](./media/wiki2.png)
 
 ### Search for a fix
 
-After you connect to LCS, you can search for existing Microsoft published updates (fixes). Enter your issue in the Search box and press Enter. **Note:** If you don't want the functionality to search for existing fixes enabled for all users, you can remove the **SearchExistingFixes** duty from the System user role and add it to only those roles which you want to have this functionality. Search results are based on the Microsoft Issue Search data that is relevant to your environment. Fixes you have already installed** **will not be included in your search results. To view a specific result, click on the link to view the details. Based on the duties which are assigned to you in Microsoft Dynamics 365 for Operations, you will see either the **Download view **or the **Request view**. **Download View: **By default, this view is only available to system administrators . From this view, you can directly download the hotfix. **Note:** The duty **DownloadHotfix** controls the ability to directly download fixes from LCS rather than requesting them. Only System Administrators will have access to it by default. If you want to assign this duty to users other than System Administrators, you can do so by adding the duty to the selected roles. **Request View:** By default, this view is available to all users who are not system administrators. From this view, you can make a request to download the hotfix. After you submit your request to download the hotfix, a work item will be created in the VSTS project that is associated to your LCS project. The customer IT admin can view all requested hotfixes by clicking the **Support** tile in LCS and then clicking on the **Hotfix requests** tab. .
+After you connect to LCS, you can search for existing Microsoft published updates (fixes). Enter your issue in the Search box and press Enter. **Note:** If you don't want the functionality to search for existing fixes enabled for all users, you can remove the **SearchExistingFixes** duty from the System user role and add it to only those roles which you want to have this functionality. Search results are based on the Microsoft Issue Search data that is relevant to your environment. Fixes you have already installed** **will not be included in your search results. To view a specific result, click on the link to view the details. Based on the duties which are assigned to you in Microsoft Dynamics 365 for Finance and Operations, you will see either the **Download view **or the **Request view**. **Download View: **By default, this view is only available to system administrators . From this view, you can directly download the hotfix. **Note:** The duty **DownloadHotfix** controls the ability to directly download fixes from LCS rather than requesting them. Only System Administrators will have access to it by default. If you want to assign this duty to users other than System Administrators, you can do so by adding the duty to the selected roles. **Request View:** By default, this view is available to all users who are not system administrators. From this view, you can make a request to download the hotfix. After you submit your request to download the hotfix, a work item will be created in the VSTS project that is associated to your LCS project. The customer IT admin can view all requested hotfixes by clicking the **Support** tile in LCS and then clicking on the **Hotfix requests** tab. .
 
 #### Create and submit a new issue
 

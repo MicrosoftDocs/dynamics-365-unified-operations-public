@@ -75,7 +75,7 @@ Table constraints can be user-defined or system-defined.
 
 A user-defined table constraint is built by the user. The user selects a combination of attribute types to represent the columns of the table and then enters values from the domains of the selected attribute types to form the rows in the table constraint.  
 
-A system-defined table constraint is defined by selecting which Microsoft Dynamics 365 for Operations table to use as a reference and then selecting fields from this table to form the columns in the constraint. The rows of the table constraint are the rows of the Dynamics 365 for Operations table that are present at configuration time.  
+A system-defined table constraint is defined by selecting which Microsoft Dynamics 365 for Finance and Operations table to use as a reference and then selecting fields from this table to form the columns in the constraint. The rows of the table constraint are the rows of the Finance and Operations table that are present at configuration time.  
 
 A table constraint is included in a product configuration model by referencing the table constraint definition and mapping the relevant attributes in the model to the columns in the table constraint.
 

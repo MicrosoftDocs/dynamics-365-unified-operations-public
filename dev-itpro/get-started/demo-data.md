@@ -2,7 +2,7 @@
 # required metadata
 
 title: Demo data overview
-description: This article provides an overview of the demo data that is available with Microsoft Dynamics 365 for Operations.
+description: This article provides an overview of the demo data that is available with Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides an overview of the demo data that is available with Microsoft Dynamics 365 for Operations.
+This article provides an overview of the demo data that is available with Microsoft Dynamics 365 for Finance and Operations.
 
-Demo data is the base data set that is released with Microsoft Dynamics 365 for Operations for implementation support and demonstration purposes. The current demo data set supports the following verticals:
+Demo data is the base data set that is released with Microsoft Dynamics 365 for Finance and Operations for implementation support and demonstration purposes. The current demo data set supports the following verticals:
 
 -   Retail
 -   Distribution

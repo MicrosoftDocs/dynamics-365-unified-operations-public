@@ -39,13 +39,13 @@ This article describes the steps for displaying images on a page or in a grid. T
 
 **Note:** For accessibility, when you use an image to indicate status or show data, the image must be accompanied by a tooltip, enhanced preview, label, or other textual representation that describes the value or status that the image represents. 
 
-Unlike Microsoft Dynamics AX 2012, Microsoft Dynamics 365 for Operations doesn’t use embedded resources for images. Instead, it uses lightweight symbols. The coding pattern has changed slightly to support the new image control. 
+Unlike Microsoft Dynamics AX 2012, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition doesn’t use embedded resources for images. Instead, it uses lightweight symbols. The coding pattern has changed slightly to support the new image control. 
 
 For ImageList uses, the runtime accepts the old **ImageID** value and maps it to a symbol, so that existing code continues to work.
 
 **Note:** In some cases, there is no image even after runtime mapping, and this behavior is intentional. 
 
-AX 2012 displays images in a grid column to indicate status. These images were sometimes retrieved from embedded resources that are no longer available in Dynamics 365 for Operations. 
+AX 2012 displays images in a grid column to indicate status. These images were sometimes retrieved from embedded resources that are no longer available. 
 
 AX 2012 offers the following storage options for images:
 
@@ -54,22 +54,22 @@ AX 2012 offers the following storage options for images:
 -   A file location where developers or ISVs can load images at run time
 -   A database field that is stored as a bitmap
 
-The Dynamics 365 for Operations offers the following storage options for images:
+Finance and Operations offers the following storage options for images:
 
 -   An AOS resource where developers or ISVs can add their own image resources
 -   A URL location where developers or ISVs can load images at run time
 -   A database field that is stored as a container.
 -   A symbol font, where images are rendered by name from the font
 
-In Dynamics 365 for Operations, embedded resources (kernel resources) have been retired. 
+In Finance and Operations, embedded resources (kernel resources) have been retired. 
 
 Images that are stored as AOS resources allow for the use of an image that isn't categorized as user data, and can be used with your application. 
 
-**Note:** If there are legacy embedded resource images that UX has approved for use with Dynamics 365 for Operations, those embedded images can be manually transferred to an AOS resource and used in Dynamics 365 for Operations. 
+**Note:** If there are legacy embedded resource images that UX has approved for use, those embedded images can be manually transferred to an AOS resource and used. 
 
-A typical web application maintains a collection of images on an Internet Information Services (IIS) server and just provides a URL to the image. Although this approach is supported in Dynamics 365 for Operations, we don't expect that it will be used very much. Instead, we expect that the symbol font will be used as an image source. 
+A typical web application maintains a collection of images on an Internet Information Services (IIS) server and just provides a URL to the image. Although this approach is supported, we don't expect that it will be used very much. Instead, we expect that the symbol font will be used as an image source. 
 
-Of course, application logic will store an image in a database to allow for strong employee photos, product images, and so on, and this approach is a first-class experience in Dynamics 365 for Operations. 
+Of course, application logic will store an image in a database to allow for strong employee photos, product images, and so on, and this approach is a first-class experience. 
 
 A symbol font is the most performant and scalable image format. We expect that characters from the symbol font will be used for most application use cases (grid row by row status, button images, and so on). 
 
@@ -151,7 +151,7 @@ When you use a display method for an image type to show an image in a grid, thre
 **Note:** ResID and Int are the same return types. If the **imageList** property of the image control instance has been assigned an instance value, the display method return value is considered an array index into the imagelist. If the **imageList** property is **null**, the return value is used to map a legacy ResID to a symbol.
 
 ## Images in a grid and the legacy ImageList collection
-In AX 2012 and earlier versions, a common use pattern for displaying images is to store an image as a resource or use a kernel-supplied image resource, and then at run time, extract that image and place it in a reusable collection that is known as an ImageList. For Dynamics 365 for Operations, the guidance is to use lighter-weight symbol images. You should rewrite all legacy code so that it uses symbols directly. You should also replace all code that uses the ImageList collection. If you don't make these changes, the legacy ImageList collection won't display images, because use of this collection relies on embedded (kernel) resources that no longer exist in Dynamics 365 for Operations. Therefore, to support legacy code until it can be updated, the ImageList collection maps the ResID for an embedded resource to a new font-based symbol to help guarantee that any code that uses the ImageList collection will continue to run and provide an image.
+In AX 2012 and earlier versions, a common use pattern for displaying images is to store an image as a resource or use a kernel-supplied image resource, and then at run time, extract that image and place it in a reusable collection that is known as an ImageList. The guidance is to use lighter-weight symbol images. You should rewrite all legacy code so that it uses symbols directly. You should also replace all code that uses the ImageList collection. If you don't make these changes, the legacy ImageList collection won't display images, because use of this collection relies on embedded (kernel) resources that no longer exist. Therefore, to support legacy code until it can be updated, the ImageList collection maps the ResID for an embedded resource to a new font-based symbol to help guarantee that any code that uses the ImageList collection will continue to run and provide an image.
 
 ## Using the imageList property for backward compatibility
 An image control has a property that is named **imageList**. You pass in an instance of the ImageList collection to this property. In this way, the image is an array of images that you select via the array number.

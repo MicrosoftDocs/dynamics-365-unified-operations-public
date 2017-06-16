@@ -169,7 +169,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Movement by template</td>
-<td>Move items from one location to another in a semi-automated manner. The worker selects the location to move items from, and Microsoft Dynamics 365 for Operations uses the location directive to determine where to move the items to.</td>
+<td>Move items from one location to another in a semi-automated manner. The worker selects the location to move items from, and Finance and Operations uses the location directive to determine where to move the items to.</td>
 </tr>
 <tr>
 <td>Warehouse transfer</td>
@@ -218,7 +218,7 @@ In addition to setting up menu items to create warehouse work, you can set up me
 </tr>
 <tr class="even">
 <td>System directed</td>
-<td>Microsoft Dynamics 365 for Operations controls the type of work that is assigned to a worker and the order that the worker performs the work in. When you select this option, you can click <strong>System-directed work</strong> on the Action pane to open the <strong>System-directed sorting order</strong> page, where you can set up sorting criteria for the work. The sorting criteria control the order that the worker performs the work in. You can add as many criteria as you require.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations controls the type of work that is assigned to a worker and the order that the worker performs the work in. When you select this option, you can click <strong>System-directed work</strong> on the Action pane to open the <strong>System-directed sorting order</strong> page, where you can set up sorting criteria for the work. The sorting criteria control the order that the worker performs the work in. You can add as many criteria as you require.</td>
 </tr>
 <tr class="odd">
 <td>User directed</td>
@@ -230,7 +230,7 @@ In addition to setting up menu items to create warehouse work, you can set up me
 </tr>
 <tr class="odd">
 <td>System grouping</td>
-<td>Microsoft Dynamics 365 for Operations groups work for the worker, based on a specified field. For example, picking work is grouped when a worker scans a shipment ID, load ID, or any value that can link each work unit. If you select this option, the following fields are required:
+<td>Microsoft Dynamics 365 for Finance and Operations groups work for the worker, based on a specified field. For example, picking work is grouped when a worker scans a shipment ID, load ID, or any value that can link each work unit. If you select this option, the following fields are required:
 <ul>
 <li><strong>System grouping field</strong> – Select the field that the worker scans to group the work.</li>
 <li><strong>System grouping label</strong> – Enter text to instruct the worker what to scan to group the work.</li>
@@ -251,7 +251,7 @@ This option is useful when, for example, multiple pallets are staged for a load.
 </tr>
 <tr class="even">
 <td>Cycle count grouping</td>
-<td>The worker selects a zone, work pool, or location, and Microsoft Dynamics 365 for Operations assigns work, based on the selection. If you select this option, you can click <strong>Cycle counting</strong> on the Action pane to specify additional information to display, and you can also specify the number of times that the worker must repeat the count if a difference is found.</td>
+<td>The worker selects a zone, work pool, or location, and Microsoft Dynamics 365 for Finance and Operations assigns work, based on the selection. If you select this option, you can click <strong>Cycle counting</strong> on the Action pane to specify additional information to display, and you can also specify the number of times that the worker must repeat the count if a difference is found.</td>
 </tr>
 </tbody>
 </table>
@@ -335,7 +335,7 @@ The following table describes these options.
 </tr>
 <tr class="odd">
 <td>Group put away</td>
-<td>Select this option to group the put-away work. This option is available when the work was grouped either by the worker or by Microsoft Dynamics 365 for Operations. When the worker has finished all the picking work in the group, put-away work is created for the same group.</td>
+<td>Select this option to group the put-away work. This option is available when the work was grouped either by the worker or by Microsoft Dynamics 365 for Finance and Operations. When the worker has finished all the picking work in the group, put-away work is created for the same group.</td>
 </tr>
 <tr class="even">
 <td>Inventory adjustment types</td>
@@ -368,11 +368,11 @@ The following table describes these options.
 </tr>
 <tr class="even">
 <td>System grouping field</td>
-<td>Select the field that determine how Microsoft Dynamics 365 for Operations will group picking work for workers. For example, if you select the <strong>ShipmentId</strong> field, the worker will scan the shipment ID to group the picking work. All work for the shipment is then assigned to the worker. This field requires that you create a menu item to use existing work that is grouped by the system. You must also enter text in the <strong>System grouping label</strong> field to instruct the worker what to scan.</td>
+<td>Select the field that determine how Microsoft Dynamics 365 for Finance and Operations will group picking work for workers. For example, if you select the <strong>ShipmentId</strong> field, the worker will scan the shipment ID to group the picking work. All work for the shipment is then assigned to the worker. This field requires that you create a menu item to use existing work that is grouped by the system. You must also enter text in the <strong>System grouping label</strong> field to instruct the worker what to scan.</td>
 </tr>
 <tr class="odd">
 <td>System grouping label</td>
-<td>Enter the text that will instruct the worker what to scan when picking work is grouped by Microsoft Dynamics 365 for Operations. For example, if you're using the <strong>ShipmentId</strong> field to group picking work by shipment, you might enter <strong>Shipment ID</strong> in the field. This field requires that you create a menu item to use existing work that is grouped by the system. You must also select the field to group by in the <strong>System grouping field</strong> field.</td>
+<td>Enter the text that will instruct the worker what to scan when picking work is grouped by Microsoft Dynamics 365 for Finance and Operations. For example, if you're using the <strong>ShipmentId</strong> field to group picking work by shipment, you might enter <strong>Shipment ID</strong> in the field. This field requires that you create a menu item to use existing work that is grouped by the system. You must also select the field to group by in the <strong>System grouping field</strong> field.</td>
 </tr>
 <tr class="even">
 <td>Use default data</td>
@@ -388,13 +388,13 @@ The following table describes these options.
 </tr>
 <tr class="odd">
 <td>Work template code</td>
-<td>Select the work template that will create the work for a process. For example, if you receive an item for a purchase order, the put-away work will be generated based on the work template. If you don't select a work template, Microsoft Dynamics 365 for Operations assigns a template, based on query criteria. For more information on work templates, see <a href="control-warehouse-location-directives.md">Controlling warehouse work with work templates and location directives</a>.</td>
+<td>Select the work template that will create the work for a process. For example, if you receive an item for a purchase order, the put-away work will be generated based on the work template. If you don't select a work template, Microsoft Dynamics 365 for Finance and Operations assigns a template, based on query criteria. For more information on work templates, see <a href="control-warehouse-location-directives.md">Controlling warehouse work with work templates and location directives</a>.</td>
 </tr>
 </tbody>
 </table>
 
 ## Require workers to confirm the product, location, or quantity when they pick items
-You can set up work confirmations that require that a worker use a mobile device to register the location or quantity when he or she performs work in the warehouse. Work confirmations help guarantee that the worker is at the correct location or is handling the correct quantity of items. You can also enable Microsoft Dynamics 365 for Operations to automatically confirm the worker’s registration. If you enable automatic confirmation, you can't also require confirmations for location or quantity. Work confirmations also include products and product variants. Additionally, you can register confirmations by scanning a bar code. To confirm products and product variants, you must enter an ID for the product or product variant. This ID can be a product ID, product search ID, external ID, GTIN, or bar code. After you enter the ID or scan the bar code, the dimensions for the product variant are displayed on the mobile device. 
+You can set up work confirmations that require that a worker use a mobile device to register the location or quantity when he or she performs work in the warehouse. Work confirmations help guarantee that the worker is at the correct location or is handling the correct quantity of items. You can also enable Microsoft Dynamics 365 for Finance and Operations to automatically confirm the worker’s registration. If you enable automatic confirmation, you can't also require confirmations for location or quantity. Work confirmations also include products and product variants. Additionally, you can register confirmations by scanning a bar code. To confirm products and product variants, you must enter an ID for the product or product variant. This ID can be a product ID, product search ID, external ID, GTIN, or bar code. After you enter the ID or scan the bar code, the dimensions for the product variant are displayed on the mobile device. 
 
 The following table describes the various work types that you can use work confirmations with.
 

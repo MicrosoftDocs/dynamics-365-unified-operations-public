@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Operations includes functionality for the country/regions documented in the [Product availability guide](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). This functionality is enabled based on the primary address of the active legal entity. 
+Microsoft Dynamics 365 for Finance and Operations includes functionality for the country/regions documented in the [Product availability guide](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). This functionality is enabled based on the primary address of the active legal entity. 
 
 This topic includes lists of resources that can help you learn more about country/region-specific functionality. 
 
@@ -71,7 +71,7 @@ The Electronic reporting (ER) tool allows you to configure formats for electroni
 ## Task guides
 Task guides are available from the product help pane and they provide a guided walk-through of key business processes. You can open a task guide to read the steps of a business process or you can play a task guide to walk through a business process and enter data.
 
-To find task guides, navigate to a page in Microsoft Dynamics 365 for Operations and click Help. Task guides that use the page are listed in the help pane. You can also use the help pane to search for task guides by title.
+To find task guides, navigate to a page in Microsoft Dynamics 365 for Finance and Operations and click Help. Task guides that use the page are listed in the help pane. You can also use the help pane to search for task guides by title.
 
 To learn more, see [Task guides](/dynamics365/unified-operations/dev-itpro/get-started/help-overview#task-guides).
 

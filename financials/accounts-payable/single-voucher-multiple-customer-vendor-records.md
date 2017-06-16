@@ -2,7 +2,7 @@
 # required metadata
 
 title: Single voucher with multiple customer or vendor records
-description: This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records. This functionality will be discontinued in future versions of Microsoft Dynamics 365 for Operations, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing. 
+description: This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records. This functionality will be discontinued in future versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing. 
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records. This functionality will be discontinued in future versions of Microsoft Dynamics 365 for Operations, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing. 
+This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records. This functionality will be discontinued in future versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing. 
 
 Some common examples where one voucher is used for multiple customers or vendors include balance transfers between customers, and netting balances between customers and vendors in the same organization. 
 
@@ -167,7 +167,7 @@ Now, when INV2 is paid, the following entry will be made. Notice that the exchan
 | 14000056    | 200110-001- | Vendor balance     |                                          | -2.00                                   |
 
 ## One voucher for balance transfers and netting scenarios
-Two commonly used scenarios that utilize one voucher that contains multiple customers or vendors include balance transfers from one customer/vendor to another customer/vendor, and netting of a customer and vendor that are the same organization. The following two examples illustrate the preferred method for entering these scenarios in Dynamics 365 for Operations, as an alternative to entering them in one voucher. 
+Two commonly used scenarios that utilize one voucher that contains multiple customers or vendors include balance transfers from one customer/vendor to another customer/vendor, and netting of a customer and vendor that are the same organization. The following two examples illustrate the preferred method for entering these scenarios in Finance and Operations, as an alternative to entering them in one voucher. 
 
 A *balance transfer* is one voucher with multiple customers, entered for the purpose of transferring the balance from one customer to another customer (same for vendors). This scenario can occur when the responsibility for paying the invoice shifts to another party, such as a child company shifting the responsibility to a parent company. 
 
@@ -181,7 +181,7 @@ To illustrate, assume the following sale is made to customer ACME. The following
 | 401100-002-023-    | Revenue          |           | 100        |
 | 130100-002-        | Customer balance | 100       |            |
 
-Next, the user transfers the balance due from ACME to the insurance company, in one voucher in the Accounts receivable payment journal. In Dynamics 365 for Operations, the insurance company is set up as customer Insurance.
+Next, the user transfers the balance due from ACME to the insurance company, in one voucher in the Accounts receivable payment journal. In Finance and Operations, the insurance company is set up as customer Insurance.
 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|

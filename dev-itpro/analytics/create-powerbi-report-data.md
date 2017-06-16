@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a Power BI report by using Dynamics 365 for Operations data
+title: Create a Power BI report by using Finance and Operations data
 description: This tutorial outlines the process for creating an end user–friendly data model, reports, and dashboards in the version of Power BI that is currently available from http - //app.powerbi.com.
 author: sericks007
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create a Power BI report by using Dynamics 365 for Operations data
+# Create a Power BI report by using Finance and Operations data
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,7 +40,7 @@ This tutorial outlines the process for creating an end user–friendly data mode
 Key concepts
 ------------
 
--   **Power BI** refers to the cloud-based analytics visualization platform that is used to extract, transform, and present data from Microsoft Dynamics 365 for Operations (together with other systems), so that users can interact with it and share it.
+-   **Power BI** refers to the cloud-based analytics visualization platform that is used to extract, transform, and present data from Microsoft Dynamics 365 for Finance and Operations (together with other systems), so that users can interact with it and share it.
 -   **Power Query** refers to the Microsoft Excel–based tool set for extracting and transforming data through OData feeds into an Excel-based data model that is used in Power BI reporting.
 -   **Self-service BI** refers to enabling users to tweak existing analytic content and create new analytic content, such as reports, key performance indicators (KPIs), and dashboards.
 
@@ -86,7 +86,7 @@ Microsoft Excel 2013 is required, together with PowerQuery (a post–February 20
 
     [![PowerBI6](./media/powerbi6.png)](./media/powerbi6.png)
 
-4.  When PowerQuery requests that you authenticate the OData feed, select **Organization ID** as the authentication method, and enter the user name and password that you entered earlier. **Note:** Dynamics 365 for Operations uses Azure AD to authenticate users. When you select **Organization ID** and enter your credentials, you're authenticated against Microsoft Dynamics 365 for Operations. Therefore, you will see only data that you have access to through the security model. PowerQuery displays a list of available entities, as shown in the following screen shot. 
+4.  When PowerQuery requests that you authenticate the OData feed, select **Organization ID** as the authentication method, and enter the user name and password that you entered earlier. **Note:** Finance and Operations uses Azure AD to authenticate users. When you select **Organization ID** and enter your credentials, you're authenticated against Microsoft Dynamics 365 for Finance and Operations. Therefore, you will see only data that you have access to through the security model. PowerQuery displays a list of available entities, as shown in the following screen shot. 
     
     [![PowerBI7](./media/powerbi7.png)](./media/powerbi7.png)
 
@@ -158,7 +158,7 @@ In this section, we will review the Excel data model to optimize our data for re
 
         > Total Expenses last year: =calculate(sum(\[Expenses\]),'FiscalCalendars'\[YearOffset\]=-1)
 
-        **Note:** These formulas use the DAX language. They will sum the **Expenses** column but apply a filter to your fiscal calendars on the year offset. A year offset of 0 indicates the current financial year, whereas a year offset of -1 indicates the last financial year. Year offsets let users take advantage of their custom Microsoft Dynamics 365 for Operations fiscal calendars in Power BI. 
+        **Note:** These formulas use the DAX language. They will sum the **Expenses** column but apply a filter to your fiscal calendars on the year offset. A year offset of 0 indicates the current financial year, whereas a year offset of -1 indicates the last financial year. Year offsets let users take advantage of their custom Microsoft Dynamics 365 for Finance and Operations fiscal calendars in Power BI. 
         
         [![PowerBI13](./media/powerbi13.png)](./media/powerbi13.png)
 
@@ -208,7 +208,7 @@ In this section you will create a basic report by using PowerView.
 In this section, you will create a dashboard by using the data model that you created in PowerQuery.
 
 1.  In a browser, go to [http://app.PowerBI.com](http://app.powerbi.com/).
-2.  Sign in by using the same credentials that you used to access Dynamics 365 for Operations.
+2.  Sign in by using the same credentials that you used to access Finance and Operations.
 3.  Create a new dashboard by click the plus sign (+) next to **Dashboards**. Enter a suitable name. A blank dashboard that resembles the following screen shot will appear.
 
     [![PowerBI17](./media/powerbi17.png)](./media/powerbi17.png)

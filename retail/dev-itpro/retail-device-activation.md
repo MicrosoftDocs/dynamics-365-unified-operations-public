@@ -45,7 +45,7 @@ Checklist to follow before activation
 3.  The worker must be mapped to a Microsoft Azure Active Directory (AAD) account (under **External identity**).
 4.  The AAD account to map must belong to the same tenant.
 5.  To map the worker to the AAD account, sign in to HQ by using the Admin account for Microsoft Dynamics Lifecycle Services (LCS).
-6.  Make sure that the worker is set up as a Dynamics 365 for Operations user in the Manager role (checked by validation).
+6.  Make sure that the worker is set up as a user in the Manager role (checked by validation).
 7.  Make sure that the channel is published (checked by validation).
 8.  Make sure that the channel database has the synced data from HQ, and that download jobs are running. To check this, run the following command in the channel database for the store.
 
@@ -87,7 +87,7 @@ Checklist to follow before activation
 ## Create a device ID from Modern POS and Cloud POS
 We have added features to create a device (that is, automatically generate a device ID) from Modern POS or Cloud POS, so that the device can be associated with a register that doesn't yet have devices mapped to it. This functionality can be used in Modern POS only if you set the HQ settings as follows.
 
-1.  Go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters** &gt; **General**.
+1.  Go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters** &gt; **General**.
 2.  Under **Devices,** set **Allow register association from device** to **Yes**.
 3.  In the Modern POS client, you can now add a device when you select a register that is listed as **No associated devices** in the guided activation flow.
 4.  After you select the register, you can either select a device that doesn't have register mapping or use the **Or, Add a Device** link.
@@ -95,7 +95,7 @@ We have added features to create a device (that is, automatically generate a dev
 6.  Click **Activate** to create a new device ID, associate it with the selected register, and complete the activation.
 
 ## Activate the device for Modern POS by using a configuration file
-IT Pros can now easily configure device activation for Modern POS by using a configuration file that can be downloaded together with Modern POS. This file is now available on the **Devices** page for the appropriate Modern POS device (**Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**). 
+IT Pros can now easily configure device activation for Modern POS by using a configuration file that can be downloaded together with Modern POS. This file is now available on the **Devices** page for the appropriate Modern POS device (**Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**). 
 
 [![Configuration file download](./media/p16_11_16-1024x481.png)](./media/p16_11_16.png) 
 
@@ -106,7 +106,7 @@ The configuration file is used to enter the Retail Server URL, device ID, and r
 Modern POS starts in Manual entry mode, and the Retail Server URL, device ID, and register ID are pre-populated for activation.
 
 ## Activate the device for Cloud POS by using syntactic sugar
-IT Pros can now configure device activation for Cloud POS by providing the device ID and register ID as the part of the Cloud POS URL. The link is available in the **Cloud POS URL** field on the **Devices** page. (**Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**). 
+IT Pros can now configure device activation for Cloud POS by providing the device ID and register ID as the part of the Cloud POS URL. The link is available in the **Cloud POS URL** field on the **Devices** page. (**Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**). 
 
 [![Cloud POS URL field](./media/p15_11_16.png)](./media/p15_11_16.png) 
 

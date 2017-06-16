@@ -43,7 +43,7 @@ Equally divided depreciation lets you depreciate a deferred, low-value, or lump-
 You can use the equally divided depreciation method to depreciate deferred, low-value, and lump-sum fixed assets. You can then generate reports to view the depreciation expenses for the assets over one or more fiscal periods.
 
 ## How is depreciation calculated using the equally divided depreciation method?
-You can set up a depreciation profile by selecting **Equally divided** as the depreciation method in the **Method** field on the **Depreciation profiles** page. When you use the equally divided depreciation profile to depreciate a fixed asset, Microsoft Dynamics 365 for Operations calculates the depreciation amounts by using the following formula: Depreciation = Remaining amount × rounding (1 ÷ Number of remaining years) × rounding (1 ÷ Number of periods in the current year) The following formula is used to calculate the remaining amount: Remaining amount = Acquisition cost – Accumulated depreciation When you use the equally divided depreciation method to calculate the depreciation amount, the value in the **Number of years to equally divide depreciation amounts** field on the **Depreciation profiles** page indicates the useful life of the fixed asset instead of the service life and the depreciation period that you specified on the **Books** page.
+You can set up a depreciation profile by selecting **Equally divided** as the depreciation method in the **Method** field on the **Depreciation profiles** page. When you use the equally divided depreciation profile to depreciate a fixed asset, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition calculates the depreciation amounts by using the following formula: Depreciation = Remaining amount × rounding (1 ÷ Number of remaining years) × rounding (1 ÷ Number of periods in the current year) The following formula is used to calculate the remaining amount: Remaining amount = Acquisition cost – Accumulated depreciation When you use the equally divided depreciation method to calculate the depreciation amount, the value in the **Number of years to equally divide depreciation amounts** field on the **Depreciation profiles** page indicates the useful life of the fixed asset instead of the service life and the depreciation period that you specified on the **Books** page.
 
 ## Does the depreciation amount that is calculated by using the equally divided depreciation method change if it's calculated at the beginning of the month instead of in the middle of the month?
 No. The depreciation amount does not change, depending upon when it's calculated during the month. For example, you acquire a lump-sum fixed asset:
@@ -55,28 +55,28 @@ No. The depreciation amount does not change, depending upon when it's calculated
 When the equally divided depreciation method is used, the depreciation amount for this fixed asset is JPY 4,166.67 for each month, regardless of whether you calculate it at the beginning of the month or in the middle of the month.
 
 ## How is equally divided depreciation calculated for a lowvalue asset that is acquired midyear?
-If you purchase a low-value fixed asset in the middle of a fiscal year, Microsoft Dynamics 365 for Operations considers the current fiscal year to be the first fiscal year for the depreciation calculation. For example, you acquire a low-value fixed asset in the middle of a fiscal year:
+If you purchase a low-value fixed asset in the middle of a fiscal year, Finance and Operations considers the current fiscal year to be the first fiscal year for the depreciation calculation. For example, you acquire a low-value fixed asset in the middle of a fiscal year:
 
 -   Fiscal year = April 1 to March 31
 -   Acquisition value of the low-value fixed asset = JPY 100,000
 -   Acquisition date = December 1, 2012
 -   Number of years to equally divide the depreciation amount = 1 year
 
-Microsoft Dynamics AX calculates the depreciation for the fiscal year from April 1, 2012, to March 31, 2013, as shown in the following table.
+Finance and Operations calculates the depreciation for the fiscal year from April 1, 2012, to March 31, 2013, as shown in the following table.
 
 | Start date    | End date       | Depreciation amount for the fiscal period | Accumulated depreciation | Remaining depreciation amount | Depreciation amount for the month |
 |---------------|----------------|-------------------------------------------|--------------------------|-------------------------------|-----------------------------------|
 | April 1, 2012 | March 31, 2013 | JPY 100,000                               | JPY 100,000              | 0                             | JPY 100, 000                      |
 
 ## How is equally divided depreciation calculated for a lumpsum asset that is acquired midyear?
-If you purchase a lump-sum fixed asset in the middle of a fiscal year, Microsoft Dynamics 365 for Operations calculates the current fiscal year from the purchase date of the fixed asset. For example, you acquire a lump-sum fixed asset in the middle of a fiscal year:
+If you purchase a lump-sum fixed asset in the middle of a fiscal year, Finance and Operations calculates the current fiscal year from the purchase date of the fixed asset. For example, you acquire a lump-sum fixed asset in the middle of a fiscal year:
 
 -   Fiscal year = April 1 to March 31
 -   Acquisition value of the lump-sum fixed asset = JPY 150,000
 -   Acquisition date = December 1, 2012
 -   Number of years to equally divide the depreciation amount = 3 years
 
-Microsoft Dynamics AX calculates the depreciation for the first year from December 1, 2012, to March 31, 2013, as shown in the following table.
+Finance and Operations calculates the depreciation for the first year from December 1, 2012, to March 31, 2013, as shown in the following table.
 
 | Start date       | End date       | Depreciation amount for a fiscal period | Accumulated depreciation | Remaining depreciation amount | Depreciation amount for a month |
 |------------------|----------------|-----------------------------------------|--------------------------|-------------------------------|---------------------------------|
@@ -85,7 +85,7 @@ Microsoft Dynamics AX calculates the depreciation for the first year from Decemb
 | April 1, 2014    | March 31, 2015 | JPY 50,000                              | JPY 150,000              | 0                             | JPY 4,167                       |
 
 ## How is depreciation calculated using the equally divided depreciation method if the asset calendar is changed during the asset life cycle?
-When Microsoft Dynamics 365 for Operations calculates depreciation by using the equally divided depreciation method, the calculation is based on the fiscal calendar that is selected in the **Calendar** field on the **Books** page. If an asset calendar is changed during the asset life cycle, the number of fiscal periods, such as months or quarters, in a fiscal year is calculated based on the current calendar. For example, you acquire a lump-sum fixed asset:
+When Finance and Operations calculates depreciation by using the equally divided depreciation method, the calculation is based on the fiscal calendar that is selected in the **Calendar** field on the **Books** page. If an asset calendar is changed during the asset life cycle, the number of fiscal periods, such as months or quarters, in a fiscal year is calculated based on the current calendar. For example, you acquire a lump-sum fixed asset:
 
 -   Fiscal calendar = April 1 to March 31
 -   Acquisition date of the lump-sum fixed asset = April 1, 2012

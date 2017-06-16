@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reconcile bank statements by using advanced bank reconciliation
-description: The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Operations. This topic explains the reconciliation process.  
+description: The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This topic explains the reconciliation process.  
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Operations. This topic explains the reconciliation process.  
+The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This topic explains the reconciliation process.  
 
 Import an electronic bank statement
 -----------------------------------
@@ -49,7 +49,7 @@ You can upload a bank statement that contains information for either a single ac
 
 If any statements in the electronic file can't be associated with a bank account by using the identifying fields, they won't be imported. However, other statements in the file can still be imported. The user then receives a message that states that the import of bank statements was unsuccessful for specific bank accounts. Note that the user who is importing the bank statement file must have access to a legal entity to import statements for that legal entity's bank accounts. 
 
-You can use a zip file to upload multiple statement files to Microsoft Dynamics 365 for Operations in a single process. To import multiple bank statement files for multiple accounts, combine all the bank statement files into one zip file. In the **Import bank statements** dialog box, set the **Import statement for multiple bank accounts in all legal entities** option to **Yes**. Click **Browse** to select the zip file that contains the bank statement files, and then click **Upload**. The import process will recognize the zip file and upload each statement that is included in it, regardless of the legal entity of the bank account. 
+You can use a zip file to upload multiple statement files to Finance and Operations in a single process. To import multiple bank statement files for multiple accounts, combine all the bank statement files into one zip file. In the **Import bank statements** dialog box, set the **Import statement for multiple bank accounts in all legal entities** option to **Yes**. Click **Browse** to select the zip file that contains the bank statement files, and then click **Upload**. The import process will recognize the zip file and upload each statement that is included in it, regardless of the legal entity of the bank account. 
 
 A **Reconcile after import** option is available. When you set this option to **Yes**, the system automatically validates the bank statement, creates a new bank reconciliation and worksheet, and runs the Default matching rule set when the bank statement is uploaded. This functionality automates the process up to the point where transactions must be manually matched.
 
@@ -81,7 +81,7 @@ There are three ways to match or reconcile bank statement transactions:
 
 -   Match the transactions with Operations bank transactions.
 -   Match the transactions with a reversal bank statement transaction.
--   Mark the transactions as **New**, so that they can be posted later as a bank transaction in Dynamics 365 for Operations.
+-   Mark the transactions as **New**, so that they can be posted later as a bank transaction in Finance and Operations.
 
 To manually match transactions, select the transactions in the **Bank statement transactions** grid, select the corresponding transactions in the **Operations bank transactions** grid, and then click **Match**. The selected transactions are moved from the upper grids for unmatched transactions to the lower grids for matched transactions. Additionally, the matched and unmatched total amounts are updated. You can have one-to-one, many-to-one, and many-to-many transaction matches. Matches must follow the rules for allowed date differences and transaction type mapping. These rules are set on the **Cash and bank management parameters** page.
 
@@ -91,7 +91,7 @@ Bank statement transaction reversals are matched by using the reconciliation wor
 
 Reversed Operations bank transactions must be reconciled by using the **Operations bank transactions** page. You can reconcile two Operations bank transactions together if the documents have the same bank account, document type, and payment reference, and if they have opposite amounts. You can also reconcile a single canceled check to prevent those transactions from appearing on the reconciliation worksheet. 
 
-If there are new bank-initiated transactions, such as interest, fees, and charges, that aren’t yet in Dynamics 365 for Operations, you can add them to a journal that is associated with the selected bank statement reconciliation. Select a bank statement transaction in the **Bank statement transactions** grid for unmatched transactions, and then click **Mark as new**. The status of the transaction is set to **New**, and the transaction is moved to the **Bank statement transactions** grid for matched transactions. You will post transactions that are marked as **New** later, from the **Bank statement** page. 
+If there are new bank-initiated transactions, such as interest, fees, and charges, that aren’t yet in Finance and Operations, you can add them to a journal that is associated with the selected bank statement reconciliation. Select a bank statement transaction in the **Bank statement transactions** grid for unmatched transactions, and then click **Mark as new**. The status of the transaction is set to **New**, and the transaction is moved to the **Bank statement transactions** grid for matched transactions. You will post transactions that are marked as **New** later, from the **Bank statement** page. 
 
 You can unmatch transactions that were incorrectly matched. Select the matched bank statement transaction, and then click **Unmatch**. All associated transactions are moved back to the upper grids for unmatched transactions, and the matched and unmatched total amounts are updated. 
 

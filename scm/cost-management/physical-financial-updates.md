@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides an overview of which types of transactions increase or decrease inventory quantities. 
 
-Inventory transactions can be physically updated and financially updated in Microsoft Dynamics 365 for Operations. Some types of physical and financial transactions increase inventory quantities, whereas others decrease the quantity.
+Inventory transactions can be physically updated and financially updated in Microsoft Dynamics 365 for Finance and Operations. Some types of physical and financial transactions increase inventory quantities, whereas others decrease the quantity.
 
 ## Physical increases
 When a physical transaction is posted, the status of the transaction record is **Received**. The following transactions are considered physical increases:
@@ -56,10 +56,10 @@ When a financial receipt transaction is posted, the status of the transaction re
 -   Positive quantity inventory journals, such as movement, profit and loss, counting, bill of materials, and transfer
 
 ## Transactions that increase quantity
-Transactions that increase quantity are posted at the running average cost price. Dynamics 365 for Operations calculates a running average cost price that is based on the cost of each of these transactions for each inventory dimension that is being tracked financially. For information about running average cost prices, see [Running average cost price](running-average-cost-price.md).
+Transactions that increase quantity are posted at the running average cost price. Finance and Operations calculates a running average cost price that is based on the cost of each of these transactions for each inventory dimension that is being tracked financially. For information about running average cost prices, see [Running average cost price](running-average-cost-price.md).
 
 ## Transactions that decrease quantity
-Dynamics 365 for Operations uses the calculated running average cost price when a transaction that decreases quantity is posted, regardless of the inventory model that is associated with that inventory. The transaction that decreases quantity must not have been marked to another transaction before it was posted. If the physical on-hand inventory becomes negative, Dynamics 365 for Operations uses the inventory cost that is defined for the item on the **Item** page. **Note:** If multisite functionality is enabled, this cost will instead be the inventory cost that is defined for a site on the **Default order settings** page.
+Finance and Operations uses the calculated running average cost price when a transaction that decreases quantity is posted, regardless of the inventory model that is associated with that inventory. The transaction that decreases quantity must not have been marked to another transaction before it was posted. If the physical on-hand inventory becomes negative, Finance and Operations uses the inventory cost that is defined for the item on the **Item** page. **Note:** If multisite functionality is enabled, this cost will instead be the inventory cost that is defined for a site on the **Default order settings** page.
 
 ## Physical issues vs. financial issues
 When a physical issue transaction is posted, the status of the transaction record is **Deducted**. The following transactions are considered physical issues:

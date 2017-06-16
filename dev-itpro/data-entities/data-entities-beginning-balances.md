@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data entities - Beginning balances
-description: This article provides a list of the data entities that are available for beginning balance functionality that is related to Budget control in Microsoft Dynamics 365 for Operations. If you're using Budget control, you must set it up and activate it before any balances are posted. Any transactional data that is posted before Budget control is activated won't be included.
+description: This article provides a list of the data entities that are available for beginning balance functionality that is related to Budget control. If you're using Budget control, you must set it up and activate it before any balances are posted. Any transactional data that is posted before Budget control is activated won't be included.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for beginning balance functionality that is related to Budget control in Microsoft Dynamics 365 for Operations. If you're using Budget control, you must set it up and activate it before any balances are posted. Any transactional data that is posted before Budget control is activated won't be included.
+This article provides a list of the data entities that are available for beginning balance functionality that is related to Budget control. If you're using Budget control, you must set it up and activate it before any balances are posted. Any transactional data that is posted before Budget control is activated won't be included.
 
 Suggested data entities to use to import beginning balances
 -----------------------------------------------------------
@@ -87,7 +87,7 @@ Suggested data entities to use to import beginning balances
 <td><ul>
 <li>This entity exports and imports only general journal lines of the <strong>Customer - Ledger journals</strong> account type.</li>
 <li>A composite entity can use XML format only.</li>
-<li>There is a known issue where import is successful only if the <strong>Journal batch number</strong> value in the source file exists in Microsoft Dynamics 365 for Operations. To work around this issue, manually create the general journal batch number before you import the source file.</li>
+<li>There is a known issue where import is successful only if the <strong>Journal batch number</strong> value in the source file exists. To work around this issue, manually create the general journal batch number before you import the source file.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -117,7 +117,7 @@ Suggested data entities to use to import beginning balances
 <td>Beginning balances for inventory items</td>
 <td><ul>
 <li>This entity exports and imports inventory movement journals.</li>
-<li>If a journal number is specified in the source file, the journal header must exist in Dynamics 365 for Operations, and it must have fewer than 1,000 lines to import. If a journal number isn't specified in the source file, a new journal is created for every 1,000 lines.</li>
+<li>If a journal number is specified in the source file, the journal header must exist, and it must have fewer than 1,000 lines to import. If a journal number isn't specified in the source file, a new journal is created for every 1,000 lines.</li>
 </ul></td>
 </tr>
 <tr class="odd">

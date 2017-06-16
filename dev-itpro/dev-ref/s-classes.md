@@ -242,7 +242,7 @@ endPos
 ## Class SearchParm
     class SearchParm extends Object
 
-The SearchParm class serves as an interface between the kernel and the sysTreeSearch class, and enables searches in the Microsoft Dynamics 365 for Operations5 for Operations Application Object Tree (AOT).
+The SearchParm class serves as an interface between the kernel and the sysTreeSearch class, and enables searches in the  Application Object Tree (AOT).
 
 ### Remarks
 
@@ -1344,7 +1344,7 @@ The Sequence class lets you perform transactions outside the main transaction sc
 
 ### Remarks
 
-Microsoft Dynamics 365 for Operations5 for Operations deals with three kinds of connections: The main user connection, an auxiliary system connection, and user connections. The first is used for the application logic. The second is used for internal sequence number generation (specifically the built-in field RecId). The third is used for the application maintained separate connections. This class provides an interface to the auxiliary system connection for number generation. However, it may be a better solution to use the UserConnection class, as this is the method the application uses or flexibility, and to avoid concurrency problems with the kernel's sequence number generation.
+There are three kinds of connections: The main user connection, an auxiliary system connection, and user connections. The first is used for the application logic. The second is used for internal sequence number generation (specifically the built-in field RecId). The third is used for the application maintained separate connections. This class provides an interface to the auxiliary system connection for number generation. However, it may be a better solution to use the UserConnection class, as this is the method the application uses or flexibility, and to avoid concurrency problems with the kernel's sequence number generation.
 
 ### Examples
 
@@ -2687,28 +2687,28 @@ The following example checks whether the UserInfo table exists in the database.
 
 | Method                                                                                                               | Description                                                                                                                   |
 |----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| public int indexCreate(\[TableId tableId\], \[IndexId indexId\])                                                     | Creates the indexes of an Microsoft Dynamics 365 for Operations5 for Operations table in the SQL database. You can also use this method to re-create indexes. |
-| public str indexCreateDDL(TableId tableId)                                                                           | Generates and returns the SQL statements needed to create the indexes of an Microsoft Dynamics 365 for Operations5 for Operations table.                      |
-| public int indexDrop(\[TableId tableId\], \[IndexId indexId\], \[boolean onlyNonUnique\])                            | Drops the indexes of an Microsoft Dynamics 365 for Operations5 for Operations table in the SQL database.                                                      |
+| public int indexCreate(\[TableId tableId\], \[IndexId indexId\])                                                     | Creates the indexes of a table in the SQL database. You can also use this method to re-create indexes. |
+| public str indexCreateDDL(TableId tableId)                                                                           | Generates and returns the SQL statements needed to create the indexes of a table.                      |
+| public int indexDrop(\[TableId tableId\], \[IndexId indexId\], \[boolean onlyNonUnique\])                            | Drops the indexes of a table in the SQL database.                                                      |
 | public str name(str bmsname, \[FieldId fieldId\], \[int arrayindex\])                                                | Translates any object name into a valid SQL database object-name; that is, valid for the database currently connected.        |
-| public int tableCreate(\[boolean indexes\], \[TableId tableId\])                                                     | Creates one or more Microsoft Dynamics 365 for Operations5 for Operations tables in the SQL database. Also, provides an option to create for index.           |
-| public str tableCreateDDL(TableId tableId)                                                                           | Generates and returns the SQL statement to create an Microsoft Dynamics 365 for Operations5 for Operations table.                                             |
-| public int tableDrop(TableId tableId, \[boolean prompt\_before\_drop\])                                              | Drops the Microsoft Dynamics 365 for Operations5 for Operations table in the SQL database.                                                                    |
-| public str tableDropDDL(TableId tableId)                                                                             | Generates and returns the SQL statement to drop an Microsoft Dynamics 365 for Operations5 for Operations table.                                               |
+| public int tableCreate(\[boolean indexes\], \[TableId tableId\])                                                     | Creates one or more  tables in the SQL database. Also, provides an option to create for index.           |
+| public str tableCreateDDL(TableId tableId)                                                                           | Generates and returns the SQL statement to create a table.                                             |
+| public int tableDrop(TableId tableId, \[boolean prompt\_before\_drop\])                                              | Drops the  table in the SQL database.                                                                    |
+| public str tableDropDDL(TableId tableId)                                                                             | Generates and returns the SQL statement to drop a table.                                               |
 | public boolean tableEmpty(TableId tableId, \[str company\], \[boolean not\_this\_company\])                          | Returns true if table is not empty; otherwise false.                                                                          |
 | public boolean tableExist(str sqltablename, \[boolean use\_within\_transaction\])                                    | Returns true if table exists; otherwise false.                                                                                |
 | public int tableMetaData(TableId tableId)                                                                            | Fills the SqlDescribe table with data dictionary meta data.                                                                   |
 | public int tableReindex(\[TableId tableId\], \[IndexId indexId\])                                                    | Updates index for the table.                                                                                                  |
-| public int tableSynchronize(TableId tableId, \[boolean update\_dict\_info\_only\], \[boolean check\_indexes\])       | Synchronizes the Microsoft Dynamics 365 for Operations5 for Operations table and the table of the SQL database.                                               |
-| public int tableTruncate(TableId tableId, \[boolean prompt\_before\_truncate\], \[boolean truncate\_system\_table\]) | Truncates the Microsoft Dynamics 365 for Operations5 for Operations table.                                                                                    |
-| public str tableTruncateDDL(TableId tableId)                                                                         | Generates and returns a SQL statement to truncate an Microsoft Dynamics 365 for Operations5 for Operations table.                                             |
-| ::public static int synchronize(\[boolean synchronize\_all\])                                                        | Synchronizes the Microsoft Dynamics 365 for Operations5 for Operations data dictionary and the data dictionary of the SQL database.                           |
+| public int tableSynchronize(TableId tableId, \[boolean update\_dict\_info\_only\], \[boolean check\_indexes\])       | Synchronizes the  table and the table of the SQL database.                                               |
+| public int tableTruncate(TableId tableId, \[boolean prompt\_before\_truncate\], \[boolean truncate\_system\_table\]) | Truncates the  table.                                                                                    |
+| public str tableTruncateDDL(TableId tableId)                                                                         | Generates and returns a SQL statement to truncate a table.                                             |
+| ::public static int synchronize(\[boolean synchronize\_all\])                                                        | Synchronizes the  data dictionary and the data dictionary of the SQL database.                           |
 | public void new()                                                                                                    | Initializes a new instance of the SqlDataDictionary class.                                                                    |
-| public void tableDelete(TableId tableId)                                                                             | Deletes the Microsoft Dynamics 365 for Operations5 for Operations table in the SQL database.                                                                  |
+| public void tableDelete(TableId tableId)                                                                             | Deletes the  table in the SQL database.                                                                  |
 
 ### Method indexCreate
 
-Creates the indexes of an Microsoft Dynamics 365 for Operations5 for Operations table in the SQL database. You can also use this method to re-create indexes.
+Creates the indexes of a table in the SQL database. You can also use this method to re-create indexes.
 
     public int indexCreate([TableId tableId], [IndexId indexId])
 
@@ -2739,7 +2739,7 @@ This method can be used to re-create indexes. Use 0 for the parameters to indica
 
 ### Method indexCreateDDL
 
-Generates and returns the SQL statements needed to create the indexes of an Microsoft Dynamics 365 for Operations5 for Operations table.
+Generates and returns the SQL statements needed to create the indexes of a table.
 
     public str indexCreateDDL(TableId tableId)
 
@@ -2750,11 +2750,11 @@ The table handle that the index should be created for.
 
 #### Return Value
 
-Returns SQL statements to create the indexes of the Microsoft Dynamics 365 for Operations5 for Operations table.
+Returns SQL statements to create the indexes of the  table.
 
 ### Method indexDrop
 
-Drops the indexes of an Microsoft Dynamics 365 for Operations5 for Operations table in the SQL database.
+Drops the indexes of a table in the SQL database.
 
     public int indexDrop([TableId tableId], [IndexId indexId], [boolean onlyNonUnique])
 
@@ -2812,11 +2812,11 @@ The valid object name.
 
 #### Remarks
 
-Because names may be truncated, a unique object identifier may be supplied. Also, a third parameter enables the method to return discrete SQL field names for Microsoft Dynamics 365 for Operations5 for Operations array fields.
+Because names may be truncated, a unique object identifier may be supplied. Also, a third parameter enables the method to return discrete SQL field names for  array fields.
 
 ### Method tableCreate
 
-Creates one or more Microsoft Dynamics 365 for Operations5 for Operations tables in the SQL database. Also, provides an option to create for index.
+Creates one or more  tables in the SQL database. Also, provides an option to create for index.
 
     public int tableCreate([boolean indexes], [TableId tableId])
 
@@ -2847,7 +2847,7 @@ Used for low-level maintenance only.
 
 ### Method tableCreateDDL
 
-Generates and returns the SQL statement to create an Microsoft Dynamics 365 for Operations5 for Operations table.
+Generates and returns the SQL statement to create a table.
 
     public str tableCreateDDL(TableId tableId)
 
@@ -2858,11 +2858,11 @@ The table handle of the table to be created.
 
 #### Return Value
 
-The SQL statement to create an Microsoft Dynamics 365 for Operations5 for Operations table.
+The SQL statement to create a table.
 
 ### Method tableDrop
 
-Drops the Microsoft Dynamics 365 for Operations5 for Operations table in the SQL database.
+Drops the  table in the SQL database.
 
     public int tableDrop(TableId tableId, [boolean prompt_before_drop])
 
@@ -2882,7 +2882,7 @@ Zero if the method succeeds.
 
 ### Method tableDropDDL
 
-Generates and returns the SQL statement to drop an Microsoft Dynamics 365 for Operations5 for Operations table.
+Generates and returns the SQL statement to drop a table.
 
     public str tableDropDDL(TableId tableId)
 
@@ -2893,7 +2893,7 @@ The table to be dropped.
 
 #### Return Value
 
-The SQL statement that drops the specified Microsoft Dynamics 365 for Operations5 for Operations table.
+The SQL statement that drops the specified  table.
 
 ### Method tableEmpty
 
@@ -2977,7 +2977,7 @@ Zero if the method succeeds.
 
 ### Method tableSynchronize
 
-Synchronizes the Microsoft Dynamics 365 for Operations5 for Operations table and the table of the SQL database.
+Synchronizes the  table and the table of the SQL database.
 
     public int tableSynchronize(TableId tableId, [boolean update_dict_info_only], [boolean check_indexes])
 
@@ -3002,7 +3002,7 @@ true if the method succeeds.
 
 ### Method tableTruncate
 
-Truncates the Microsoft Dynamics 365 for Operations5 for Operations table.
+Truncates the  table.
 
     public int tableTruncate(TableId tableId, [boolean prompt_before_truncate], [boolean truncate_system_table])
 
@@ -3027,7 +3027,7 @@ Zero if the method succeeds.
 
 ### Method tableTruncateDDL
 
-Generates and returns a SQL statement to truncate an Microsoft Dynamics 365 for Operations5 for Operations table.
+Generates and returns a SQL statement to truncate a table.
 
     public str tableTruncateDDL(TableId tableId)
 
@@ -3042,14 +3042,14 @@ The SQL statement to truncate the table.
 
 ### Method synchronize
 
-Synchronizes the Microsoft Dynamics 365 for Operations5 for Operations data dictionary and the data dictionary of the SQL database.
+Synchronizes the  data dictionary and the data dictionary of the SQL database.
 
     public static int synchronize([boolean synchronize_all])
 
 #### Parameters
 
 synchronize\_all  
-A boolean flag that determines whether to synchronize all tables; optional. If true, this method synchronizes all tables (instead of only those marked dirty by the Microsoft Dynamics 365 for Operations5 for Operations kernel). By default, false.
+A boolean flag that determines whether to synchronize all tables; optional. If true, this method synchronizes all tables (instead of only those marked dirty by the  kernel). By default, false.
 
 #### Return Value
 
@@ -3063,7 +3063,7 @@ Initializes a new instance of the SqlDataDictionary class.
 
 ### Method tableDelete
 
-Deletes the Microsoft Dynamics 365 for Operations5 for Operations table in the SQL database.
+Deletes the  table in the SQL database.
 
     public void tableDelete(TableId tableId)
 
@@ -3187,7 +3187,7 @@ The following code example deletes the data in the xRefNames table.
 ## Class SqlStatementExecutePermission
     class SqlStatementExecutePermission extends CodeAccessPermission
 
-Controls the ability to use SQL in Microsoft Dynamics 365 for Operations5 for Operations.
+Controls the ability to use SQL.
 
 ### Remarks
 
@@ -3388,15 +3388,15 @@ The SqlSystem class holds information about the active SQL system, typically log
 
 | Method                                                                                                                                   | Description                                                                                             |
 |------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| public LoginProperty createLoginProperty()                                                                                               | Creates the login property to the Microsoft Dynamics 365 for Operations5 for Operations database.                                       |
-| public DatabaseId databaseId()                                                                                                           | Returns the Microsoft Dynamics 365 for Operations5 for Operations ID for the database vendor used as the SQL database backend.          |
+| public LoginProperty createLoginProperty()                                                                                               | Creates the login property to the  database.                                       |
+| public DatabaseId databaseId()                                                                                                           | Returns the  ID for the database vendor used as the SQL database backend.          |
 | public str databaseName()                                                                                                                | Returns the name of the database vendor used as the SQL database backend.                               |
 | public boolean dbRequestedUnicodeEnabled()                                                                                               | Retrieves the value that indicates if Unicode is supported in the database.                             |
 | public str filenameDeadlocks(str Userid)                                                                                                 | Retrieves the name of the user specific deadlocks trace logfile.                                        |
 | public str filenameQuerytimelimit(str Userid)                                                                                            | Retrieves the name of the user specific querytime limit logfile.                                        |
 | public str filenameSqlTrace(str Userid)                                                                                                  | Retrieves the filename of the SQL trace log file for specific user.                                     |
 | public str filenameWarnings(str Userid)                                                                                                  | Retrieves the name of the user specific warnings log file.                                              |
-| public str logfileName(\[boolean fromCommandline\])                                                                                      | Retrieves the name of the standard Microsoft Dynamics 365 for Operations5 for Operations SQL error log file.                            |
+| public str logfileName(\[boolean fromCommandline\])                                                                                      | Retrieves the name of the standard  SQL error log file.                            |
 | public str loginConnectString()                                                                                                          | Retrieves the full ODBC connection string.                                                              |
 | public str loginDatabase()                                                                                                               | Retrieves the name of the database currently connected to.                                              |
 | public str loginDSN()                                                                                                                    | Retrieves the open database connectivity (ODBC) data source name (DSN) used to connect to the database. |
@@ -3414,11 +3414,11 @@ The SqlSystem class holds information about the active SQL system, typically log
 | ::public static str modelDatabaseBackendName()                                                                                           | Retrieves the name of the model database AOS currently connected to.                                    |
 | ::public static str managedConnectionString()                                                                                            |                                                                                                         |
 | public void new()                                                                                                                        | Initializes a new instance of the SqlSystem class.                                                      |
-| public void logfileWrite(str Text)                                                                                                       | Writes a text string into the standard Microsoft Dynamics 365 for Operations5 for Operations SQL error logfile.                         |
+| public void logfileWrite(str Text)                                                                                                       | Writes a text string into the standard  SQL error logfile.                         |
 
 ### Method createLoginProperty
 
-Creates the login property to the Microsoft Dynamics 365 for Operations5 for Operations database.
+Creates the login property to the  database.
 
     public LoginProperty createLoginProperty()
 
@@ -3428,17 +3428,17 @@ The login property that was created.
 
 ### Method databaseId
 
-Returns the Microsoft Dynamics 365 for Operations5 for Operations ID for the database vendor used as the SQL database backend.
+Returns the  ID for the database vendor used as the SQL database backend.
 
     public DatabaseId databaseId()
 
 #### Return Value
 
-The Microsoft Dynamics 365 for Operations5 for Operations ID for the database vendor used as the SQL database backend.
+The  ID for the database vendor used as the SQL database backend.
 
 #### Remarks
 
-If Microsoft Dynamics 365 for Operations5 for Operations cannot determine the database vendor for any reason, the enumeration DbBackend::UNKNOWN is returned.
+If the database vendor cannot be determined for any reason, the enumeration DbBackend::UNKNOWN is returned.
 
 ### Method databaseName
 
@@ -3520,7 +3520,7 @@ The name of the user specific warnings log file.
 
 ### Method logfileName
 
-Retrieves the name of the standard Microsoft Dynamics 365 for Operations5 for Operations SQL error log file.
+Retrieves the name of the standard  SQL error log file.
 
     public str logfileName([boolean fromCommandline])
 
@@ -3531,7 +3531,7 @@ A boolean value. Passing a non-zero value as parameter makes the call return the
 
 #### Return Value
 
-The file name of the standard Microsoft Dynamics 365 for Operations5 for Operations SQL error log file.
+The file name of the standard  SQL error log file.
 
 #### Remarks
 
@@ -3651,7 +3651,7 @@ The format string that is used for casting the string to one case.
 
 #### Remarks
 
-Microsoft Dynamics 365 for Operations5 for Operations style for placeholder(s) is used (i.e. "%1").
+Finance and Operations style for placeholder(s) is used (i.e. "%1").
 
 ### Method sqlLiteral
 
@@ -3758,7 +3758,7 @@ Initializes a new instance of the SqlSystem class.
 
 ### Method logfileWrite
 
-Writes a text string into the standard Microsoft Dynamics 365 for Operations5 for Operations SQL error logfile.
+Writes a text string into the standard  SQL error logfile.
 
     public void logfileWrite(str Text)
 
@@ -3822,7 +3822,7 @@ This method only updates the cross-reference XML stored on the specified SSRSRep
 ## Class SSRSReportConceptNode
     class SSRSReportConceptNode extends xResourceNode
 
-The SSRSReportConceptNode class lets you create, read, update, and delete SSRS reports, data sources, style templates, and images in the Microsoft Dynamics 365 for Operations5 for Operations Application Object Tree (AOT).
+The SSRSReportConceptNode class lets you create, read, update, and delete SSRS reports, data sources, style templates, and images in the  Application Object Tree (AOT).
 
 ### Remarks
 
@@ -3910,7 +3910,7 @@ This method is overridden by nodes that have source code.
 ## Class SSRSReportDesignNode
     class SSRSReportDesignNode extends xResourceNode
 
-The SSRSReportDesignNode class lets you create, read, update, and delete Microsoft SQL Server Reporting Services reports, data sources, style templates, and images in the Microsoft Dynamics 365 for Operations5 for Operations Application Object Tree (AOT).
+The SSRSReportDesignNode class lets you create, read, update, and delete Microsoft SQL Server Reporting Services reports, data sources, style templates, and images in the  Application Object Tree (AOT).
 
 ### Remarks
 
@@ -5414,11 +5414,11 @@ Initializes a new instance of the SystemMonitor class.
 ## Class systemSequence
     class systemSequence extends Object
 
-The systemSequence class takes manual control of the system sequence generator of Microsoft Dynamics 365 for Operations5 for Operations and delivers unique RecIds for all SQL tables.
+The systemSequence class takes manual control of the system sequence generator and delivers unique RecIds for all SQL tables.
 
 ### Remarks
 
-When Microsoft Dynamics 365 for Operations5 for Operations inserts records into SQL tables, a unique RecId is assigned to each record—regardless of the company each record is associated with. Use extreme caution when you use this class—data integrity could be destroyed. This class is typically used for data import or export routines, or for very large jobs. The record ID is an int64 data type value. The range in which record IDs are allocated is from 5637144576 to 2^63 (9223372036854775808). RecIds can be used up prematurely if large, unused ranges of RecIds are created. Reclaiming unused ranges of RecIds that lie between used ranges of RecIds is a very complicated process.
+When records are inserted into SQL tables, a unique RecId is assigned to each record—regardless of the company each record is associated with. Use extreme caution when you use this class—data integrity could be destroyed. This class is typically used for data import or export routines, or for very large jobs. The record ID is an int64 data type value. The range in which record IDs are allocated is from 5637144576 to 2^63 (9223372036854775808). RecIds can be used up prematurely if large, unused ranges of RecIds are created. Reclaiming unused ranges of RecIds that lie between used ranges of RecIds is a very complicated process.
 
 ### Examples
 

@@ -73,3 +73,4 @@ The following table shows the entities that the **Cash overview** Power BI conte
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Summarized net transaction amount and balance of currencies using the transaction currency |
 
 These entities were used to create calculated measures in the data model. These calculated measures are then used to calculate the charts and reports that are used in the **Cash overview** Power BI content. To include additional calculations on your reports and dashboard, you can download and modify the Power BI file from LCS. This file is the default data model that was used to create the content. After you've made modifications, you can create organizational content and dashboards that contain the information that you’ve added.
+

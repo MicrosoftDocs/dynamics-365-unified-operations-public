@@ -2,7 +2,7 @@
 # required metadata
 
 title: BI &amp; reporting home page
-description: This topic lists BI &amp; reporting resources that are available in Microsoft Dynamics 365 for Operations.
+description: This topic lists BI &amp; reporting resources that are available in Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic lists BI &amp; reporting resources that are available in Microsoft Dynamics 365 for Operations. 
+This topic lists BI &amp; reporting resources that are available in Microsoft Dynamics 365 for Finance and Operations. 
 
 Working with aggregate data
 ---------------------------
@@ -48,14 +48,14 @@ Working with aggregate data
 ## Self service reporting
 -   [Power BI integration](power-bi-integration.md)
 -   [Configuring Power BI integration for workspaces](configure-power-bi-integration.md)
--   [Create a Power BI report by using Microsoft Dynamics 365 for Operations data](create-powerbi-report-data.md)
+-   [Create a Power BI report by using Microsoft Dynamics 365 for Finance and Operations data](create-powerbi-report-data.md)
 -   [Create a Power BI report and dashboard](create-powerbi-report-dashboard.md)
 -   [Retail Channel Performance Power BI content](retail-channel-performance-dashboard-power-bi-data.md)
 -   [Financial Performance Power BI content](financial-performance-power-bi-content-pack.md)
 -   [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)
--   [Use an Electronic reporting configuration to provide Power BI with data from Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Use an Electronic reporting configuration to provide Power BI with data from Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
-## Building embedded analytical experiences in the Dynamics 365 for Operations client
+## Building embedded analytical experiences in the Finance and Operations client
 -   [Embedded business intelligence](analytics.md#embedded-business-intelligence)
 -   [KPI modeling and customization](analytics.md#kpi-modeling-and-customization)
 -   [Adding BI to workspaces](add-bi-workspaces.md)
@@ -63,7 +63,7 @@ Working with aggregate data
 
 ## Document reporting and printing
 -   [Document Reporting Services Overview](document-reporting-services.md)
--   [Printing in Dynamics 365 for Operations applications](print-documents.md)
+-   [Printing in Finance and Operations applications](print-documents.md)
 -   [Install the Document Routing Agent to enable network printer devices](install-document-routing-agent.md)
 -   [Run the Document Routing agent as a Windows service](run-document-routing-agent-as-windows-service.md)
 -   [Creating next-generation reporting solutions](create-nextgen-reporting-solutions.md)
@@ -77,7 +77,7 @@ Working with aggregate data
 -   [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 -   [Electronic reporting destinations](electronic-reporting-destinations.md)
 -   [Download Electronic reporting configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
--   [Use an Electronic reporting configuration to provide Power BI with data from Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Use an Electronic reporting configuration to provide Power BI with data from Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 -   [ER Create a configuration provider and mark it as active](http://ax.help.dynamics.com/en/wiki/er-select-service-provider/) (Task guide)
 -   [ER Design domain specific data model](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-data-model/) (Task guide)
 -   [ER Define model mapping and select data sources](http://ax.help.dynamics.com/en/wiki/er-define-model-mapping-and-select-data-sources/) (Task guide)

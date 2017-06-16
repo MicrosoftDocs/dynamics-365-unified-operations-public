@@ -76,7 +76,7 @@ The **Demand forecast details** page shows the following information in graphica
 **Notes:**
 
 -   The confidence interval that appears in the **Forecast** section of the page represents the difference between the confidence interval upper limit and the confidence interval lower limit. To see the values for the upper and lower limits, hover over the chart in the **Historical demand and forecast graphically** section.
--   If you use the Dynamics 365 for Operations Demand forecasting Microsoft Azure Machine Learning service, you can specify the confidence level percentage that the forecast that is generated should have. A confidence interval consists of a range of values that act as good estimates for the demand forecast. A 95-percent confidence level percentage indicates that there is a 5-percent risk that the demand forecast falls outside the confidence interval range.
+-   If you use the Finance and Operations Demand forecasting Microsoft Azure Machine Learning service, you can specify the confidence level percentage that the forecast that is generated should have. A confidence interval consists of a range of values that act as good estimates for the demand forecast. A 95-percent confidence level percentage indicates that there is a 5-percent risk that the demand forecast falls outside the confidence interval range.
 
 You can also make manual adjustments to the forecast on the **Demand forecast details** page, by modifying the values in the **Forecast** row in the **Forecast** section.
 

@@ -40,7 +40,7 @@ This article describes how you can use cycle counting with the warehousing solut
 Cycle counting is a warehouse process that you can use to audit on-hand inventory items. The cycle counting process can be described in three steps:
 
 1.  **Create cycle counting work** – Cycle counting work can be created automatically, based on threshold parameters for items or by using a cycle counting plan. Alternatively, you can manually create cycle counting work by using the item or warehouse parameters on the **Cycle count work by item** page or the **Cycle count work by location** page.
-2.  **Process the cycle count** – After cycle counting work is created, you do the cycle counting work by counting items in a warehouse location and then using a mobile device to enter the result in Microsoft Dynamics 365 for Operations. Alternatively, you can count items in a warehouse location without creating cycle counting work. This process is referred to as *spot cycle counting*.
+2.  **Process the cycle count** – After cycle counting work is created, you do the cycle counting work by counting items in a warehouse location and then using a mobile device to enter the result in Microsoft Dynamics 365 for Finance and Operations. Alternatively, you can count items in a warehouse location without creating cycle counting work. This process is referred to as *spot cycle counting*.
 3.  **Resolve differences in the counted value** – After a cycle count, any items that have differences in the counted value will have a work status of **Pending review** on the **All work** page. You can resolve these differences on the **Cycle count work pending review** page.
 
 The following illustration shows the cycle counting process. ![Process flow for cycle counting](./media/performcyclecountinginawarehouselocation.jpg)
@@ -119,10 +119,10 @@ You can schedule cycle counting plans to create cycle counting work immediately 
 To create cycle counting work manually, you can use the **Cycle count work by item** or **Cycle count work by location** page. You can specify the maximum number of cycle counts to create. For example, if the warehouse manager specifies a value of **5**, cycle counting work is created for five locations, even if the item is present in 10 locations. You can also select a work pool ID to assign the cycle counting work IDs that are created to. When a work pool ID is processed for cycle counting, the cycle counting work IDs that are assigned to the work pool are processed as a group.
 
 ## Perform a cycle count by using a mobile device
-There are several methods for processing cycle counting work by using Dynamics 365 for Operations on a mobile device:
+There are several methods for processing cycle counting work by using Finance and Operations on a mobile device:
 
 -   **User directed** – The worker can specify a cycle counting work ID that has a status of **Open**.
--   **System directed** – Dynamics 365 for Operations assigns a cycle counting work ID to the worker.
+-   **System directed** – Finance and Operations assigns a cycle counting work ID to the worker.
 -   **Cycle count grouping** – The worker can group cycle counting work IDs that are specific to a particular location, zone, or work pool.
 -   **Spot cycle counting** – The worker can count items in a warehouse location at any time, without creating cycle counting work. To perform spot cycle counting in a location, the worker enters the location ID.
 

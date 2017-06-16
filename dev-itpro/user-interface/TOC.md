@@ -5,8 +5,8 @@
 ## [Build navigation](build-navigation.md)
 ## [Build a workspace](build-workspace.md)
 # Forms
-## [Navigation in Dynamics 365 for Operations](page-navigation.md)
-## [Layout in Dynamics 365 for Operations](page-layout.md)
+## [Navigation](page-navigation.md)
+## [Layout](page-layout.md)
 ## [Symbol font](symbol-font.md)
 ## [Test forms with custom patterns](testing-forms-custom-patterns.md)
 ## [Create and use deep links](create-deep-links.md)
@@ -92,6 +92,6 @@
 ## [Build operational workspaces](build-workspaces.md)
 ## [Tile and list caching for workspaces](tile-list-caching-workspaces.md)
 # Task Recorder
-## [Task Recorder in Dynamics 365 for Operations](task-recorder.md)
+## [Task Recorder](task-recorder.md)
 ## [Task Recorder quick reference](task-recorder-quick-reference.md)
 
