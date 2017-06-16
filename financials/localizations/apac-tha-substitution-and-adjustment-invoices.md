@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 # Substitution/adjustment tax invoice for Thailand
 
-The Substitution/adjustment tax invoice feature enables tracking of printing of copies of tax invoices for customers. Whenever a copy of an invoice needs to be printed, it is required to specify the reason for the substitution. A special remark is printed in the tax invoice copy that includes the reason of the substitution and the number of copies printed.
+The Substitution/adjustment tax invoice feature enables tracking of printing of copies of tax invoices for customers. Whenever a copy of a tax invoice needs to be printed, it is required to specify the reason for the substitution. A special remark is printed in the tax invoice copy that includes the reason of the substitution and the number of copies printed.
 
-In addition, if the Adjustment option is used, it is also possible to adjust the customer information printed in the tax invoice, including the customer name, address, contact information, tax registration number, and branch number and name. The adjusted tax invoice gets a new invoice number, and references the original invoice.
+In addition, if the Adjustment option is used, it is also possible to adjust the customer information printed in the tax invoice, including the customer name, address, contact information, tax registration number, and branch number and name. The adjusted tax invoice gets a new tax invoice number and references the original tax invoice.
 
 ## Setting up the Substitution/adjustment tax invoice functionality
 
@@ -44,13 +44,13 @@ The following common setup for Thailand is required to use the Substitution/adju
 
 3. Create the **Taxbranch** financial dimension values on the **Tax branch** page;
 
-4. Set **Tax type** field for applicable sales tax codes on the **Sales tax codes** page;
+4. Set **Tax type** for applicable sales tax codes on the **Sales tax codes** page;
 
 5. Set **Tax registration number** of the legal entity on the **Legal entities** page, fast-tab **Tax registration**;
 
 6.  Map the registration type **THA** to the registration category **Enterprise ID (COID)** on the **Registration categories** page;
 
-7. Set up the **Taxbranch** dimension for customers, vendors, projects, etc.
+7. Set up the **Taxbranch** dimension for customers, vendors, projects, etc.;
 
 8. Set up customer and vendor addresses on the **Manage addresses** page:
 
@@ -62,7 +62,7 @@ The following common setup for Thailand is required to use the Substitution/adju
 
 10. Select the **Enable tax document's substitution/adjustment function** check-boxes for accounts receivable invoices and project invoices on the **Accounts receivable parameters** page,  tabs **Update** and **Project** respectively.
 
-## Printing substitution invoices
+## Printing substitution invoice
 
 If the substitution/adjustment tax invoice functionality is enabled, it is only possible to print a tax invoice original once. If you try to re-print it again, an error will be generated. Complete the following steps to re-print the tax invoice:
 
@@ -74,7 +74,7 @@ If the substitution/adjustment tax invoice functionality is enabled, it is only 
 
 4. Return to the **Invoice journal** page and click **View > Substitution preview**. Confirm printing the substitution invoice.
 
-The substitution tax invoice includes the same information as the original tax invoice. It also bears the "Substitution" mark. A remark is added to the bottom of the tax invoice that includes the reason for the substitution, the sequence number and the date of the substitution.
+The substitution tax invoice includes the same information as the original tax invoice. It also bears the "Substitution" mark. A remark is added to the bottom of the substitution tax invoice that includes the reason for the substitution, the sequence number and the date of the substitution.
 
 Note that you need to create a new substitution each time you need to re-print a tax invoice.
 
@@ -106,6 +106,6 @@ Complete the following steps to adjust the customer information and re-print the
 
 4. Return to the **Invoice journal** page and click **View > Adjustment preview**. Confirm printing the tax invoice.
 
-The adjusted tax invoice gets a new tax invoice number and adjusted customer information. All other information is the same as in the original tax invoice. A remark is added to the bottom of the tax invoice that includes the reference to the original tax invoice, the reason for the adjustment, and the date of the adjustment.
+The adjusted tax invoice gets a new tax invoice number and adjusted customer information. All other information is the same as in the original tax invoice. A remark is added to the bottom of the adjusted tax invoice that includes the reference to the original tax invoice, the reason for the adjustment, and the date of the adjustment.
 
 You can adjust a tax invoice multiple time. A new tax invoice number is allocated for each adjustment, and the adjusted invoice references the previous adjustment or the original tax invoice, respectively.
