@@ -582,6 +582,11 @@ Data partitions provide a logical separation of data in the Microsoft Dynamics A
 ### Database and file share storage for attachments
 Microsoft Dynamics AX 2012 allowed storage of attachments in the database and in file shares. Both of those options are no longer supported.
 
+|                              |                                        |
+|------------------------------|----------------------------------------|
+| Reason for deprecation       | Files share storage is no longer supported because cloud-hosted environments cannot communicate with local file shares. Database storage has been deprecated in favor of Azure Blob storage. Azure Blob storage is equivalent to storage in the database, as documents can only be accessed through Dynamics 365 for Finance and Operations client forms. This provides the added benefit of providing storage that doesn't negatively affect the performance of the database. Blob storage is the default storage mechanism for Document Management and works immediately. |
+| Replaced by another feature? | Database storage has been deprecated in favor of Azure Blob storage.       |
+| Modules affected             | All                   |
 
 ### Delimitation
 
