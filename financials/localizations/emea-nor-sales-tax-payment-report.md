@@ -34,7 +34,7 @@ This topic includes country-specific information about VAT statement setup for u
 
 ## Set up sales tax authorities
 To generate a VAT declaration in the required format for the specific tax authority, you must set up the report layout for the sales tax authorities. 
-  - On the **Sales tax authorities page**, in the **General section**, set the **Report layout** to Norwegian report format.
+  - On the **Sales tax authorities** page, in the **General section**, set the **Report layout** to Norwegian report format.
   - Select the same **Sales tax authority** for the **Sales tax settlement period** that you will use for the sales tax codes.
 
 ## Set up sales tax reporting codes
@@ -74,8 +74,9 @@ For users in legal entities in Norway, the following sales tax reporting codes c
 
 
 ## Set up Sales tax period code
-On **Sales tax settlement periods** page, create a list of periods. Set the period codes in **Sales tax period code** according to the submission periods and aligned with the values provided by Tax authorities. Values from this field will be used while generating an XML file.
-Example for bi-monthly returns
+On the **Sales tax settlement periods** page, create a list of periods. Set the period codes in the **Sales tax period code** according to the submission periods and aligned with the values provided by Tax authorities. Values from this field will be used while generating an XML file.
+
+Example for bi-monthly returns:
 
 |             Period             | Sales tax period code |
 |------------------------------|:---------------------:|
@@ -89,5 +90,14 @@ Example for bi-monthly returns
 ## Configure the ER model and format for the report
 You can use the **Electronic reporting** workspace to review or change the VAT statement configuration. Go to the **Configurations** page and select **VAT declaration model** from the list of models. This model is common for Austria, Czech Republic, Estonia, Finland, Latvia, Lithuania, and Norway and it aggregates tax data needed for VAT declaration. To review or change the VAT statement format for users in legal entities in Norway, select **VAT declaration (NO)**, which is a child of VAT declaration model in the model tree. Select it and click **Designer** on the Action Pane to review or change the format. For more information, see [Electronic reporting](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting).
 
-
+## Generate the VAT statement
+Open **Report sales tax for settlement period**, select applicable **Settlement period**, **From date** and **Sales tax payment version**, and click **OK**. 
+In the next dialog window select **Format mapping**: 
+  - **VAT declaration (NO)** - to generate XML file
+  - **Sales tax report (NO)** - to print report in MS Excel
+Enter the following values for the XML to be created: **Message type**: Main, Additional or Correction; enter **KID number**; select report form in the **Industry type**; enter text in **Explanation**.
+### Print report after Sales tax payment update
+To generate a report, open the **Sales tax payments** page, select vouchers, and then click **Export VAT file**.
+This form also provides possibility to combine several sales tax payments and print one combined report/XML file which will include summarized data for all selected records. Only records related to one settlement period and with the same From date and To date values can be combined, e.g. *Original version* and its *Corrections/Latest corrections*.
+Select output file in **Format mapping** to generate XML file – **VAT declaration (NO)**; or to print report in MS Excel – **Sales tax report (NO)**.
 
