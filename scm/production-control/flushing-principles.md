@@ -3,7 +3,6 @@
 
 title: Flushing principles
 description: This topic describes ***.
-
 author: BibiSp
 manager: AnnBe
 ms.date: 04/04/2017
@@ -43,18 +42,25 @@ The flushing principles...
 3.	Production input location
 4.	Raw material consumption
 5.	Production process
+
 Material consumption is controlled by the following four flushing principles
-•	Manual
-•	Start
-•	Finish
-•	Picked from location
+-   Manual
+-  	Start
+-   Finish
+-   Picked from location
+
 The flushing principles are configured in a defaulting hierarchy starting from the released product with the value Start. On the bill of material or formula line the flushing principle from the product can be overridden. The flushing principle on the production bill of material lines or batch order formula lines is defaulted from the product or overridden value on the bill of material or formulas.
-Description of the flushing principles
-Manual
+
+## Description of the flushing principles
+
+### Manual
 Using this principle, it is indicated that material consumption will be accounted for as a manual operation . This is for example relevant  when time and quantity of consumed batch or serial numbers needs to be accounted for, for tracking purposes. In D365 manual consumption is done with the use of the production picking list journal and for items enabled for advanced warehouse processes there is a hand-held flow that support that.
-Start
+
+### Start
 With the use of the flushing principle Start it is indicated that material will be automatically consumed when the production order is started. The amount of material consumed is proportional to the quantity that is started. If using the manufacturing execution system, the flushing principle Start can also be used to flush materials when an operation or process job is started.
-Finish
+
+### Finish
 With the use of Finish it is indicated that material will be automatically consumed when the production order is reported as finished or an operation that is set up to consume the materials is registered as completed. The amount of material consumed is proportional to the quantity that is reported as finished. If using the manufacturing execution system, the flushing principle Finish can also be used to flush material when an operation or a process job is completed.
-Picked from location
+
+### Picked from location
 With the user of Picked from location it is indicated that when the material is registered as picked for production, the material is automatically consumed. The material is registered as picked from location when work for raw material picking is completed or when material is available on the production input location and the material line is released to the warehouse. The picking list generated in the process is posted in a batch job.
