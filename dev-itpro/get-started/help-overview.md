@@ -198,7 +198,6 @@ See also
 
 [Create documentation or training using Task recordings](../user-interface/task-recorder.md)
 
-[New or updated Task guides (February 2017)](new-task-guides-february-2017.md)
 [New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
 [New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
 [New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
