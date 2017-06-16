@@ -34,33 +34,32 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](includes/banner.md)]
 
-The topic describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes. This information is valuable for Partners to migrate or transfer data for a new Payroll implementation from another system. As a pre-requisite before entering beginning balances for Payroll, we suggest verifying the following:
+The topic describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes. This information is valuable for partners who transfer data for a new Payroll implementation from another system. To prepare to enter beginning payroll balances, we verify the following information:
 
-> 1. Workers or Employees are all available in the system
-> 2. The following are setup and assigned to workers or employees in the system:
+> * Employee records are entered and available in the system
+> * The following data is set up and assigned to employees:
 
 > > * Pay cycles and pay periods
 > > * Earning codes
 > > * Taxes
-> > * Benefits and Deductions
+> > * Benefits and deductions
 
-3. The company should have chosen a date where payroll beginning balances can be set.
+> * The company should have chosen a date where payroll beginning balances can be set.
 
-4. Information were gathered on all earnings, benefits/deductions, benefit contributions, employee taxes, and employer taxes and their YTD amounts from the legacy system.
+> * Information were gathered on all earnings, benefits/deductions, benefit contributions, employee taxes, and employer taxes and their YTD amounts from the legacy system.
 
-When planning your beginning balance transition, you will want to determine how granular you need your data.  Most customers decide to bring the pay statement data over as a consolidated year-to-date value, however in some cases they may want to bring it over in quarter increments.  Identifying this will determine how many manual pay statements will need to be created for each worker.  If you are doing YTD transition, then only one manual statement is needed per worker. To do this you will use the YTD amounts from the final pay statement of the legacy system as the amounts you enter into the manual pay statement in AX.
+As you plan to enter beginning balances, consider how detailed the data needs to be. Most businesses enter a single, consolidated year-to-date amount. However if more detailed information is needed, balances can be entered in quarterly increments. Deciding the level of detail that's needed determines how many manual pay statements must be created for each worker. For a single year-to-date amount, only one manual statement is needed for each employee. To do this use year-to-date amounts from the final pay statement from the previous system as the amount entered in the new payroll system.
 
-The example below shows how this can be accomplished in entering employee payroll beginning balances - earning codes, benefits/deductions, and taxes.  In a real world example you would have a line item for each earning code, benefit deduction, benefit contribution, employee tax and employer tax with the amount entered being the YTD amount.  Using that list of codes and amounts, follow the steps for creating a manual earning and pay statement with accounting disabled to bring over beginning balances for payroll purposes.  You disable accounting as you do not want to post this beginning balance pay statement to the GL.  That was done in the legacy system and will come over to AX in your General Ledger beginning balance load.
+The following example shows how you can enter employee payroll beginning balances, including earning codes, benefits/deductions, and taxes. In a real-world example you would have a line item for each earning code, benefit deduction, benefit contribution, employee tax and employer tax with the amount entered being the year-to-date amount. Using that list of codes and amounts, follow the steps for creating a manual earning and pay statement with accounting disabled to bring over beginning balances for payroll purposes.  You disable accounting because you won't want to post this beginning balance pay statement to your general ledger. That was done in the legacy system and will come over to the new system when you set beginning balances in General ledger.
 
 > [!NOTE] 
 > If you want to reproduce the same steps below, you can use the Demo data. The Demo data can be downloaded on PartnerSource
 
-> A. How to setup Earnings Code to be used on Payroll Beginning Balances
-When you enter Payroll Beginning Balances, be sure the earning codes that you will be using are configured with the "Allow editing of earning statement rates" option enabled.  This will allow you to manually key the amount from the legacy system. 
+### A. How to set up earnings codes to be used on payroll beginning balances
+When you enter payroll beginning balances, be sure the earning codes that you will be using are configured with the "Allow editing of earning statement rates" option enabled. This will allow you to manually key the amount from the legacy system. 
 
-> B. Create Earnings statement for an employee to have a Beginning Balance
-
-This step creates earnings statement for the last pay period of the legacy system for each worker manually creating the earning statement lines in AX.  Enter one line per earning code and the YTD amount and hours. Below are sample steps:
+B. Create earnings statement for an employee to have a beginning balance
+This step creates earnings statement for the last pay period of the legacy system for each worker manually creating the earning statement lines in AX. Enter one line per earning code and the YTD amount and hours. Below are sample steps:
 
 1. Open the **All earnings statements** page and click **New**.  
 
@@ -72,7 +71,7 @@ Enter the following:
 | Pay cycle  | sm                    |
 | Pay period | 6/16/2017 - 6/30/2017 |
 
-2. Go to: Earnings Statement Line Tab. Enter the following:
+2. In the **Earnings statement line** tab, enter the following:
 
 Line 1: **Earning statement line** tab
 
@@ -106,11 +105,11 @@ Line 3: **Earning statement line** tab
 | Manual          | (Marked)   |
 
 > [!NOTE]
-> Marking Manual checkbox setting in the Line Details tab for each Earnings statement line is key to have payroll beginning balances entered in the system for each worker.
+> Marking Manual checkbox setting in the **Line Details** tab for each earnings statement line is key to have payroll beginning balances entered for each worker.
 
-3. On the Action pane, click Release Earnings statement USA-FED-ER-FICA.
+3. On the **Action** pane, click **Release earnings statement** USA-FED-ER-FICA.
 
-4. On the Action pane click Pay Statement to open Generate pat statements page and set the following:
+4. On the **Action** pane click **Pay statement** to open the **Generate pay statements** page and set the following:
 
 | Field              | Value     |
 |--------------------|-----------|
@@ -123,7 +122,7 @@ Line 3: **Earning statement line** tab
 Click **OK** and close the **Infolog**.
 
 ### Why Disable Accounting checkbox needs to be turned on when generating pay statements?
-This prevents any lines in the pay statement from being distributed and posted to the General Ledger. You do not want to post this beginning balance pay statement as its values are already in the GL from the legacy system.  This balance loading is used for reporting and limiting purposes only.
+This prevents any lines in the pay statement from being distributed and posted to the General ledger. You do not want to post this beginning balance pay statement as its values are already in the general ledger from the legacy system. This balance loading is used for reporting and limiting purposes only.
 
 ### C. Create pay statements for employees
 After you generate pay statements that have beginning balances, you must verify that the pay statements accurately reflect payroll data. You must also manually update the benefit and taxes information to match the values in the previous payroll system. After you verify that the amounts from the previous payroll system match the amounts on the current pay statements, you must finalize the pay statements.
@@ -173,14 +172,14 @@ After you generate pay statements that have beginning balances, you must verify 
 
 8. In the **Tax contributions** tab enter the following:
 
-9. Click Calculate.
+9. Click **Calculate**.
 > [!IMPORTANT] 
 > Validate the totals of the pay statement that they match the YTD of the legacy system for the worker. You may want to hold off on finalizing in the next step to do some overall validating of all pay statements in aggregate. Once validated run through all the pay statements and finalize them.
 
 The same process can be done in quarter increments if necessary for all prior quarters in each year. This is only needed if the customer needs to see the data by quarter without going back to the legacy system.
 
 ## If you make a mistake Entering Beginning Balances for an Employee
-It is possible to reverse and re-enter transactions. To reverse the transaction, all you have to do is to complete the  follow steps on the **All pay statements** page.
+It is possible to reverse and reenter transactions. To reverse the transaction, all you have to do is to complete the follow steps on the **All pay statements** page.
 
 1. Click **Reverse**.
 
