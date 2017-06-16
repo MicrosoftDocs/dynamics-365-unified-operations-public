@@ -154,10 +154,6 @@ separate these like in Microsoft Dynamics AX 2012.
 - Ensure that you have at least 1 to 2 more AOS available than you estimate.
 - Ensure that you have at least 3 to 4 virtual hosts available.
 
-### High availability 
-- Verify that you have at least one to two more AOSs available than you estimate
-- Verify that you have at least three to four virtual hosts available
-
 ## Management reporter
 In most cases, unless used extensively, the recommended minimum requirements
 using two nodes should work well. Only in cases where there is heavy use will
