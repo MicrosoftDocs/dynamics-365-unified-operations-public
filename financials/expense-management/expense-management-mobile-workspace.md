@@ -49,7 +49,7 @@ Specifically, the **Expense management** mobile workspace enables a user to:
 -   Upload a file as a captured receipt. A user can then attach that file to an expense report later.
 -   Create a new expense line by using an attached receipt. A user can then add the line item to an expense report later, and submit it for approval and reimbursement.
 
-If you're using Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can also take use these features:
+If you're using Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can also use these features:
 
 -   Create a new expense report.
 -   Attach credit card transactions and other previously created expenses to an expense report.
