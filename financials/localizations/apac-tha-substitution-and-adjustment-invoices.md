@@ -5,7 +5,7 @@ title: Substitution/adjustment tax invoice for Thailand
 description: The substitution/adjustment tax invoice feature enables tracking of printing of copies of tax invoices, as well as adjusting customer information in the tax invoice header.
 author: EvgenyPopovMBS
 ms.author: epopov
-ms.date: 16.06.2017
+ms.date: 06/16/2017
 ms.topic: article
 # ms.prod: [If you use ms.prod, don't use ms.service]
 ms.service: dynamics-ax-applications
