@@ -52,7 +52,8 @@ When planning your beginning balance transition, you will want to determine how 
 
 The example below shows how this can be accomplished in entering employee payroll beginning balances - earning codes, benefits/deductions, and taxes.  In a real world example you would have a line item for each earning code, benefit deduction, benefit contribution, employee tax and employer tax with the amount entered being the YTD amount.  Using that list of codes and amounts, follow the steps for creating a manual earning and pay statement with accounting disabled to bring over beginning balances for payroll purposes.  You disable accounting as you do not want to post this beginning balance pay statement to the GL.  That was done in the legacy system and will come over to AX in your General Ledger beginning balance load.
 
-> ![NOTE:] If you want to reproduce the same steps below, you can use the Demo data. The Demo data can be downloaded on PartnerSource
+> [!NOTE] 
+> If you want to reproduce the same steps below, you can use the Demo data. The Demo data can be downloaded on PartnerSource
 
 > A. How to setup Earnings Code to be used on Payroll Beginning Balances
 When you enter Payroll Beginning Balances, be sure the earning codes that you will be using are configured with the "Allow editing of earning statement rates" option enabled.  This will allow you to manually key the amount from the legacy system. 
@@ -104,7 +105,8 @@ Line 3: **Earning statement line** tab
 | Line detail tab |            |
 | Manual          | (Marked)   |
 
-> [!NOTE]: Marking Manual checkbox setting in the Line Details tab for each Earnings statement line is key to have payroll beginning balances entered in the system for each worker.
+> [!NOTE]
+> Marking Manual checkbox setting in the Line Details tab for each Earnings statement line is key to have payroll beginning balances entered in the system for each worker.
 
 3. On the Action pane, click Release Earnings statement USA-FED-ER-FICA.
 
@@ -116,21 +118,21 @@ Line 3: **Earning statement line** tab
 | Payment run type   | Manual    |
 | Disable accounting | (marked)  |
 
-> [!NOTE]: This is only available when the payment run type is manual and wherein the user want to disable accounting on the pay run.
+> [!NOTE] This is only available when the payment run type is manual and wherein the user want to disable accounting on the pay run.
 
 Click **OK** and close the **Infolog**.
 
 ### Why Disable Accounting checkbox needs to be turned on when generating pay statements?
 This prevents any lines in the pay statement from being distributed and posted to the General Ledger. You do not want to post this beginning balance pay statement as its values are already in the GL from the legacy system.  This balance loading is used for reporting and limiting purposes only.
 
-### C. Create Pay Statement for Employees
+### C. Create pay statements for employees
 After you generate pay statements that have beginning balances, you must verify that the pay statements accurately reflect payroll data. You must also manually update the benefit and taxes information to match the values in the previous payroll system. After you verify that the amounts from the previous payroll system match the amounts on the current pay statements, you must finalize the pay statements.
 
-1. Open the **All Pay statements** page.
+1. Open the **All pay statements** page.
 
 2. Highlight the last generated pay statement for Michael Redmond
 
-3. Click **Edit** to open the **Pay Statement** page.
+3. Click **Edit** to open the **Pay statement** page.
 
 4. Open the **Benefit deductions** tab and enter the following:
 
@@ -142,6 +144,46 @@ After you generate pay statements that have beginning balances, you must verify 
 | Dep care spending | Participate | 2500.00          |
 | Vision | SupSp                  | 500.00           |
 
+5. In the **Benefit deductions** tab enter the following: 
 
+| Field                           | Value            |
+|---------------------------------|------------------|
+| Benefit                         | Deduction amount |
+| 401K | Participate              | 3000.00          |
+| Dental | SubSp                  | 495.00           |
+| Dep care spending | Participate | 2500.00          |
+| Vision | SupSp                  | 500.00           |
 
+6. In the **Benefit contributions** tab and enter the following:
 
+| Field              | Value               |
+|--------------------|---------------------|
+| Benefit            | Contribution amount |
+| 401K | Participate | 3000,00             |
+| Dental | SubSp     | 495.00              |
+| Vision | SubSp     | 500.00              |
+
+7. In the **Tax deductions** tab, enter the following:
+
+| Field           | Value            |
+|-----------------|------------------|
+| Tax code        | Deduction amount |
+| USA-FED-ER-FICA | 1600.00          |
+| USA-FED-ER-MEDI | 825.75           |
+
+8. In the **Tax contributions** tab enter the following:
+
+9. Click Calculate.
+> [!IMPORTANT] 
+> Validate the totals of the pay statement that they match the YTD of the legacy system for the worker. You may want to hold off on finalizing in the next step to do some overall validating of all pay statements in aggregate. Once validated run through all the pay statements and finalize them.
+
+The same process can be done in quarter increments if necessary for all prior quarters in each year. This is only needed if the customer needs to see the data by quarter without going back to the legacy system.
+
+## If you make a mistake Entering Beginning Balances for an Employee
+It is possible to reverse and re-enter transactions. To reverse the transaction, all you have to do is to complete the  follow steps on the **All pay statements** page.
+
+1. Click **Reverse**.
+
+2. Click **Yes** when the message "When you reverse this pay statement, a reversing pay statement will be created to offset this pay statement. Neither pay statement can be edited. Do you want to reverse this pay statement?" displays. 
+
+After you reverse the pay statement, you can generate a new pay statement for the worker from the earnings statement that you created previously in the “Generate earnings statements and pay statements that have beginning balances” procedure earlier in this topic. Be sure to fix any incorrect lines on the earnings statement before you generate the new pay statement, and then repeat the “Update pay statements that have beginning balances for benefits and taxes” procedure in this topic.
