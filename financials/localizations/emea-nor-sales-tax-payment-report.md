@@ -94,7 +94,7 @@ You can use the **Electronic reporting** workspace to review or change the VAT s
 Open **Report sales tax for settlement period**, select applicable **Settlement period**, **From date** and **Sales tax payment version**, and click **OK**. 
 In the next dialog window select **Format mapping**: 
   - **VAT declaration (NO)** - to generate XML file
-  - **Sales tax report (NO)** - to print report in MS Excel
+  - **Sales tax report (NO)** - to print report in MS Excel.
 Enter the following values for the XML to be created: **Message type**: Main, Additional or Correction; enter **KID number**; select report form in the **Industry type**; enter text in **Explanation**.
 ### Create report after Sales tax payment update
 To generate a report, open the **Sales tax payments** page, select vouchers, and then click **Export VAT file**.
