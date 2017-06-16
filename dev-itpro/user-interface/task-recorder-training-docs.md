@@ -5,7 +5,7 @@ title: Create documentation or training using Task recordings
 description: This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
+This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides for the Unified Operations products and include them in your Help.
+
+> [!IMPORTANT]
+> You cannot create custom task guides for Dynamics 365 for Talent. The Help system for Talent is automatically connected to task guides for the product. 
 
 Learn about Task recorder
 -------------------------
@@ -130,9 +133,4 @@ See also
 
 [Recently added task recorder features](\core\get-started\recently-added-editing-features-in-task-recorder)
 
-[Creating new training libraries for Dynamics AX within Lifecycle Services using the Task recorder (External link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [Create Rich Help Topics with Task Recorder (external link)](https://mbspartner.microsoft.com/AX/Videos/970)
-
-
-
