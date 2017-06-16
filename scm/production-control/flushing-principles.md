@@ -33,7 +33,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
-The flushing principles...
+The flushing principles reflect different consumption strategies for raw materials used in production processes. Consumption is the process that deducts material from the on-hand inventory and sets the value of the consumed materials to Work in progress (WIP) for production and batch orders. Raw materials are normally consumed from a location that is configured for the process that  consumes the material. This location is called the Production input location. 
+
+Prior to material consumption the materials are moved to the input location:
 
 [![](./media/scenario4.png)](./media/scenario4.png)
 
@@ -43,7 +45,7 @@ The flushing principles...
 4.	Raw material consumption
 5.	Production process
 
-Material consumption is controlled by the following four flushing principles
+Material consumption is controlled by the following four flushing principles:
 -   Manual
 -  	Start
 -   Finish
@@ -54,7 +56,7 @@ The flushing principles are configured in a defaulting hierarchy starting from t
 ## Description of the flushing principles
 
 ### Manual
-Using this principle, it is indicated that material consumption will be accounted for as a manual operation . This is for example relevant  when time and quantity of consumed batch or serial numbers needs to be accounted for, for tracking purposes. In D365 manual consumption is done with the use of the production picking list journal and for items enabled for advanced warehouse processes there is a hand-held flow that support that.
+Using this principle, it is indicated that material consumption will be accounted for as a manual operation. This is, for example, relevant if you want to be able to track time and quantity of consumed batch or serial numbers needs to be accounted for, for tracking purposes. Manual consumption is registered in a production picking list journal and for items enabled for advanced warehouse processes, a hand-held flow can be applied.
 
 ### Start
 With the use of the flushing principle Start it is indicated that material will be automatically consumed when the production order is started. The amount of material consumed is proportional to the quantity that is started. If using the manufacturing execution system, the flushing principle Start can also be used to flush materials when an operation or process job is started.
