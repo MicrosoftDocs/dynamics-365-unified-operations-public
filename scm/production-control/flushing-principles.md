@@ -1,9 +1,10 @@
-
+---
 # required metadata
 
 title: Flushing principles
 description: This topic describes ***.
-author: 
+
+author: BibiSp
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -27,7 +28,6 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Controlling raw material consumption with the flushing principle 
