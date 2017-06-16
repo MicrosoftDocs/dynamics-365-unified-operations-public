@@ -1,0 +1,29 @@
+---
+# required metadata
+
+title: Sales tax report for Norway
+description: Set up and generate the VAT statement for users in legal entities located in Norway 
+author: epodkolz
+ms.author: epodkolz
+ms.date: 06/16/2017
+ms.topic: article
+# ms.prod: [If you use ms.prod, don't use ms.service]
+# ms.service: [If you use ms.service, don't use ms.prod; dynamics-ax-applications (?); Dynamics365Operations (?)]
+# ms.technology: [Required for some ms.prod values; leave blank if ms.service is specified]
+
+# optional metadata
+
+# manager: [You can use this field for your manager or counterparts such as PMs. Format: MSFT alias]
+# ms.search.form: [AOT names of the forms related to the topic, separated by comma]
+# audience: [Audience group for the topic; Application User]
+# ms.devlang: [Development language for the topic]
+# ms.reviewer: [Reviewers of the content audience: Attribute to identify audience group; shylaw]
+# ms.search.scope: [Which Operations client to show this topic as help for]
+# ms.tgt_pltfrm: [Target platform (for example, ios or android).]
+# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.assetid: [Go get from guidgenerator.com]
+# ms.search.region: [Country/region; e.g. Sweden]
+# ms.search.industry: [industry; e.g. retail]
+# ms.search.validFrom: [date the content is valid from; e.g. 2017-07-01]
+# ms.dyn365.ops.version: [Dyn365O version; e.g. Enterprise edition, July 2017 update]
+---
