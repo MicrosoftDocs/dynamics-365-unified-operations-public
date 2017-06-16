@@ -1,4 +1,4 @@
-
+ 
 ---
 # required metadata
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 # Overview of upgrade and support for previous versions in (N-1 support) Dynamics 365 for Operations or Retail
 
-Upgrade support and supportfor previous versions are now enabled in Microsoft Dynamics 365 for Retail and Dynamics 365 for Operations.  The main purpose of upgrade and support for previous versions is to let AX 2012 R3 customers take advantage of the benefits of the cloud by moving to the new Dynamics 365. Support for previous versions aka N-1 support, is the capability for enabling the Stores running 2012 R3 CU version, to be able to work against a Dynamics 365 for Operations or Retail head quarters, after the upgrade. We are initially supporting 2012 R3 CU10 for N-1 capability. The following are some capabilities that enable existing customers to move to Dynamics 365 in a seamless manner:
+Upgrade support and support for previous versions are now enabled in Microsoft Dynamics 365 for Retail and Dynamics 365 for Operations.  The main purpose of upgrade and support for previous versions is to let AX 2012 R3 customers take advantage of the benefits of the cloud by moving to the new Dynamics 365. Support for previous versions aka N-1 support, is the capability for enabling the Stores running 2012 R3 CU version, to be able to work against a Dynamics 365 for Operations or Retail head quarters, after the upgrade. We are initially supporting 2012 R3 CU10 for N-1 capability. The following are some capabilities that enable existing customers to move to Dynamics 365 in a seamless manner:
 
 - Users can now perform database upgrade from AX 2012 R3 to Retail headquarters through the upgrade process.
 - Users can operate their stores by using the components of AX 2012 R3 CU10.
