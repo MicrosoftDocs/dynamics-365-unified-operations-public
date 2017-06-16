@@ -35,6 +35,7 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 The flushing principles...
+
 [![](./media/scenario4.png)](./media/scenario4.png)
 
 1.	Material warehouse
