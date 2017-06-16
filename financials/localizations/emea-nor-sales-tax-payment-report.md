@@ -27,14 +27,14 @@ ms.topic: article
 # ms.search.validFrom: [date the content is valid from; e.g. 2017-07-01]
 # ms.dyn365.ops.version: [Dyn365O version; e.g. Enterprise edition, July 2017 update]
 ---
-# Sales tax report
+# VAT statement for Norway
 Set up and generate the VAT statement for users in legal entities located in Norway.
 
 This topic includes country-specific information about VAT statement setup for users in legal entities in Norway. For more information about general VAT reporting, see [VAT reporting](emea-vat-reporting.md).
 
 ## Set up sales tax authorities
 To generate a VAT declaration in the required format for the specific tax authority, you must set up the report layout for the sales tax authorities. 
-  - On the **Sales tax authorities** page, in the **General section**, set the **Report layout** to Norwegian report format.
+  - On the **Sales tax authorities** page, in the **General section**, set the **Report layout** to **Norwegian report format**.
   - Select the same **Sales tax authority** for the **Sales tax settlement period** that you will use for the sales tax codes.
 
 ## Set up sales tax reporting codes
@@ -76,7 +76,7 @@ For users in legal entities in Norway, the following sales tax reporting codes c
 ## Set up Sales tax period code
 On the **Sales tax settlement periods** page, create a list of periods. Set the period codes in the **Sales tax period code** according to the submission periods and aligned with the values provided by Tax authorities. Values from this field will be used while generating an XML file.
 
-Example for bi-monthly returns:
+Example for the bi-monthly reporting:
 
 |             Period             | Sales tax period code |
 |------------------------------|:---------------------:|
@@ -96,7 +96,7 @@ In the next dialog window select **Format mapping**:
   - **VAT declaration (NO)** - to generate XML file
   - **Sales tax report (NO)** - to print report in MS Excel
 Enter the following values for the XML to be created: **Message type**: Main, Additional or Correction; enter **KID number**; select report form in the **Industry type**; enter text in **Explanation**.
-### Print report after Sales tax payment update
+### Create report after Sales tax payment update
 To generate a report, open the **Sales tax payments** page, select vouchers, and then click **Export VAT file**.
 This form also provides possibility to combine several sales tax payments and print one combined report/XML file which will include summarized data for all selected records. Only records related to one settlement period and with the same From date and To date values can be combined, e.g. *Original version* and its *Corrections/Latest corrections*.
 Select output file in **Format mapping** to generate XML file – **VAT declaration (NO)**; or to print report in MS Excel – **Sales tax report (NO)**.
