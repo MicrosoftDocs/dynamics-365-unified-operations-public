@@ -34,7 +34,8 @@
       "searchScope": ["Unified Operations"],
       "breadcrumb_path": "/dynamics365/unified-operations/fin-and-ops/breadcrumb/toc.json",
       "brand": "dyn-ops",
-      "titleSuffix": "Talent"
+      "titleSuffix": "Talent", 
+      "ms.service": "dynamics-365-talent"
     },
     "fileMetadata": {},
     "template": [],
