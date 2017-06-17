@@ -1571,37 +1571,37 @@
 ### Commerce runtime
 #### [Loyalty extension](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/loyalty-extension-sample?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-# [Dynamics 365 for Talent](/dynamics365/unified-operations/human-resources/index)
+# [Dynamics 365 for Talent](/dynamics365/unified-operations/talent/index)
 
 ## Develop a Human resources strategy
-### [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/human-resources/departments-jobs-positions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Set up job components](/dynamics365/unified-operations/human-resources/create-job?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Create a department and associate it with the department hierarchy](/dynamics365/unified-operations/human-resources/create-department-add-department-hierarchy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Set up HR parameters across legal entities](/dynamics365/unified-operations/human-resources/set-up-hr-parameters-across-legal-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Set up company-specific HR parameters](/dynamics365/unified-operations/human-resources/set-up-company-specific-hr-parameters?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Use workflow to manage employee information](/dynamics365/unified-operations/human-resources/workflow-manage-employee-information?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Set up job components](/dynamics365/unified-operations/talent/create-job?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Create a department and associate it with the department hierarchy](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Set up HR parameters across legal entities](/dynamics365/unified-operations/talent/set-up-hr-parameters-across-legal-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Set up company-specific HR parameters](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Use workflow to manage employee information](/dynamics365/unified-operations/talent/workflow-manage-employee-information?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Motivate employees
-### [Compensation plans](/dynamics365/unified-operations/human-resources/compensation-plans?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Create fixed compensation plans](/dynamics365/unified-operations/human-resources/create-fixed-compensation-plans?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Create variable compensation plans](/dynamics365/unified-operations/human-resources/create-variable-compensation-plans?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Compensation plans](/dynamics365/unified-operations/talent/compensation-plans?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Create fixed compensation plans](/dynamics365/unified-operations/talent/create-fixed-compensation-plans?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Create variable compensation plans](/dynamics365/unified-operations/talent/create-variable-compensation-plans?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Develop and train employees
-### [Performance management overview](/dynamics365/unified-operations/human-resources/performance-management-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Align workforce skills with business needs](/dynamics365/unified-operations/human-resources/skills?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Set up training courses](/dynamics365/unified-operations/human-resources/courses?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Performance management overview](/dynamics365/unified-operations/talent/performance-management-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Align workforce skills with business needs](/dynamics365/unified-operations/talent/skills?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Set up training courses](/dynamics365/unified-operations/talent/courses?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Create and maintain benefits
-### [Manage a benefits program](/dynamics365/unified-operations/human-resources/manage-benefit-program?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Benefit eligibility policies](/dynamics365/unified-operations/human-resources/benefit-eligibility-policies?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Manage items lent to workers](/dynamics365/unified-operations/human-resources/loan-items?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Manage a benefits program](/dynamics365/unified-operations/talent/manage-benefit-program?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Benefit eligibility policies](/dynamics365/unified-operations/talent/benefit-eligibility-policies?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Manage items lent to workers](/dynamics365/unified-operations/talent/loan-items?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Gather information using questionnaires
-### [Questionnaires](/dynamics365/unified-operations/human-resources/questionnaires?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Design a questionnaire](/dynamics365/unified-operations/human-resources/design-questionnaires?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Distribute and complete a questionnaire](/dynamics365/unified-operations/human-resources/distribute-questionnaires?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Evaluate the results of a questionnaire](/dynamics365/unified-operations/human-resources/evaluate-questionnaire-results?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Questionnaires](/dynamics365/unified-operations/talent/questionnaires?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Design a questionnaire](/dynamics365/unified-operations/talent/design-questionnaires?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Distribute and complete a questionnaire](/dynamics365/unified-operations/talent/distribute-questionnaires?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Evaluate the results of a questionnaire](/dynamics365/unified-operations/talent/evaluate-questionnaire-results?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Workplace safety and compliance (United States)
-### [Form I-9 employment verification](/dynamics365/unified-operations/human-resources/localizations/noam-usa-form-i-9-verification?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Comply with the ADA](/dynamics365/unified-operations/human-resources/localizations/noam-usa-comply-ada?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Form I-9 employment verification](/dynamics365/unified-operations/talent/localizations/noam-usa-form-i-9-verification?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Comply with the ADA](/dynamics365/unified-operations/talent/localizations/noam-usa-comply-ada?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)

@@ -1,3 +1,2 @@
 > [!IMPORTANT]
-> Welcome to the documentation for Microsoft Talent on docs.microsoft.com. We are migrating our content here from the Talent Help Wiki. 
-
+> This topic applies to Dynamics 365 for Talent (pre-release), Dynamics 365 for Finance and Operations, Enterprise edition, and Dynamics 365 for Operations. 

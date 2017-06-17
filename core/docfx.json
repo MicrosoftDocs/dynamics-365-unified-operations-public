@@ -36,7 +36,10 @@
       "layout": "Conceptual",
       "searchScope": ["Unified Operations"],
       "breadcrumb_path": "/dynamics365/unified-operations/fin-and-ops/breadcrumb/toc.json",
-      "brand": "dyn-ops"
+      "brand": "dyn-ops",
+      "titleSuffix": "Finance and Operations, Enterprise", 
+      "ms.service": "dynamics-ax-applications"
+
     },
     "fileMetadata": {},
     "template": [],
