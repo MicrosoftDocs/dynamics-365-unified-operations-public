@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export entities to your own Azure SQL database
-description: This topic explains how to export entities to your own SQL Azure database.
+description: This topic explains how to export entities to your own Azure SQL database.
 author: MilindaV2
 manager: AnnBe
 ms.date: 06/16/2017
@@ -31,209 +31,150 @@ ms.dyn365.ops.version: Platform update 2
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how administrators can export Dynamics 365 for Finance and Operations, Enterprise edition data entities to their own SQL Azure database.This feature is also known as *Bring your own database*, or simply *BYOD*. The BYOD feature was released with Platform update 2 (August 2016). Minor improvements and bug fixes have been addressed in subsequent platform updates.
+This topic explains how administrators can export data entities from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, to their own Microsoft Azure SQL database. This feature is also known as *bring your own database* (BYOD). The BYOD feature was released in Platform update 2 (August 2016). Minor improvements and bug fixes have been included in subsequent platform updates.
 
-With this capability, administrators have the ability to “configure your own database” and export one or more of the 1700+ data entities available in Finance and Operations. This feature enables you to:
+This feature lets administrators configure their own database, and export one or more of the data entities that are available in Finance and Operations. (Currently, more than 1,700 data entities are available.) Specifically, this feature lets you complete these tasks:
 
-1.  Define one or more SQL Azure databases for exporting entity data from
-    Finance and Operations
+- Define one or more SQL databases into which you can export entity data from Finance and Operations.
+- Export either all the records (*full push*) or only the records that have changed (*incremental push*).
+- Use the rich scheduling capabilities of the Finance and Operations batch framework to enable recurring exports.
+- Access the entity database by using Transact-SQL (T-SQL), and even extend the database by adding more tables.
 
-2.  Export all the records (full push) or export only the records that changed
-    (ie. incremental push)
+## Entity store or BYOD?
 
-3.  Use rich scheduling capabilities of the Finance and Operations batch
-    framework to enable recurring exports
+If you followed the series of [blog posts about Microsoft Power BI integration](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/), you might be familiar with Entity store. Entity store is the operational data warehouse that is included with Finance and Operations. Entity store provides built-in integration of operational reports with Power BI. Ready-made reports and analytical workspaces that are built into Finance and Operations use Entity store. If you write Power BI reports by using data in your Finance and Operations environment, you should use Entity store.
 
-4.  Access the entity database using T-SQL and even extend the database by
-    adding more tables yourself
+The BYOD feature is recommended for the following scenarios:
 
-Entity store or BYOD – which one?
----------------------------------
+- You must export data from Finance and Operations into your own data warehouse.
+- You use analytical tools besides Power BI, and those tools require T-SQL access to data.
+- You must perform batch integration with other systems.
 
-If you followed the series of [blog posts ](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) on the Power BI integration, you may be familiar with Entity store, the operational data warehouse included with Finance and Operations. Entity store provides built-in integration for operational reports with Power BI. Ready-made reports and analytical workspaces, built into Finance and Operations, use the Entity store. If you are authoring Power BI reports using data within your Finance and Operations environment, you should use Entity store.
+> [!NOTE]
+> Finance and Operations doesn't allow T-SQL connections to the production database. If you're upgrading from a previous version of Finance and Operations, and you have integration solutions that require direct T-SQL access to the database, BYOD is the recommended upgrade path.
 
-The BYOD feature is recommended for following scenarios:
+As a customer of Finance and Operations, you can use either Entity store or BYOD. Ready-made operational reports (especially the reports in the July 2017 update), take advantage of embedded Power BI and Entity store. You should use ready-made operational reports as your first choice. You can also extend the operational reports to meet your requirements. You should consider BYOD as a complementary option that you use as you require.
 
--   You need to export data from Finance and Operations into your own data warehouse
+## Creating an SQL database
 
--   You use analytical tools other than Power BI and these tools require T-SQL access to data
+Before you begin this option, you must create an SQL database by using the Azure portal.
 
--   You need to perform batch integration with other systems
+For one-box development environments, you can create a database in the local Microsoft SQL Server database. However, this database should be used only for development and testing purposes. For production environments, you must create an SQL database.
 
-**NOTE:** Finance and Operations does not allow T-SQL connections to the production database. If you are a customer upgrading from previous versions of Finance and Operations, and if you had integration solutions that required direct T-SQL access to the database, BYOD is your recommended upgrade path.
+You should also create an SQL user account to sign in to the database. Write down the server name, database name, and the SQL user ID and password. You will use this information in the next step.
 
-As a customer of Finance and Operations, you have the option of choosing both. Ready-made operational reports (especially those in the July 2017 update), leverage embedded Power BI and Entity store. You should use ready-made operational reports as the first choice. You can also extend the operational reports to meet your needs. You should consider BYOD as a complementary option depending on the need.
+If you're using this functionality for integration with a business intelligence (BI) tool, you should consider creating an SQL premium database. Premium databases support clustered columnstore indexes (CCIs). CCIs are in-memory indexes that improve the performance of read queries that are typical in analytical and reporting workloads. If you're using this functionality to export data into a staging database or for general integration purposes, you can use a standard database.
 
-Create a SQL Azure database
----------------------------
+## Configuring the entity export option
 
-Prior to starting this option, you would need to create a SQL Azure database using Azure Management portal.
+Start the Finance and Operations client, and then, on the **Data management** area page, select the **Configure Entity export to database** tile.
 
-In case of one-box development environments, you can create a database in the local SQL Server database. But this is strictly for development and testing purposes only. In case of production environments, you do need to create a SQL Azure database.
+![Configure Entity export to database tile](media/6b9943828c28d71fa5624d89c2390831.png)
 
-You should also create SQL user account to log in to the database. Write down the server name, database name, and the SQL user ID and the password. You will need these for the next step.
+If you've configured any databases, a list is shown. Otherwise, you must configure a new database. Select **New**, and enter a unique name and a description for the new database. Note that you can export entities into multiple databases.
 
-If you are using this functionality for integration with a Business Intelligence tool, you should consider creating a SQL Azure premium database. Premium databases support Clustered Column Store indexes (CCI), in-memory indexes which improve the performance of read queries that are typical in analytical and reporting workloads. If you are using this functionality to export data into a staging database or for general integration purposes, you may use a standard database.
+![New Record page](media/76001d314ff150e6c1b4c87d349c2bea.png)
 
-Configuring the export entity option
-------------------------------------
+Next, you must enter the connection string in the following format.
 
-Launch the Finance and Operations client and navigate to the Data Management area page. Once in the Data Management area page, you can select the **Configure Entity export to Database** tile.
+    Data Source=<logical server name>,1433; Initial Catalog=<your DB name>; Integrated Security=False; User ID=<SQL user ID>; Password=<password>
 
-![configure-entity-export-to-database-tile](media/6b9943828c28d71fa5624d89c2390831.png)
+In this connection string, the logical server name should resemble **nnnn.database.windows.net**. You should be able to find the logical server name from the Azure portal.
 
-When selected, if you have configured any databases, you will see a list. Else you would need to configure a new database. Select **New** and enter a unique **Name** and a **Description**. Note that you can export entities into multiple databases.
+After you enter the connection string, select **Validate**, and make sure that the connection is successful.
 
-![entity-store\_new-record](media/76001d314ff150e6c1b4c87d349c2bea.png)
+The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining CCIs for entities that are copied from Finance and Operations. However, CCIs are currently supported only on SQL premium databases. Therefore, to enable this option, you must create an SQL premium database.
 
-Next you will enter the connection string as follows:
+When the validation is passed, the database that you configured for entity export now appears in the lists, as shown in the following illustration.
 
-Data Source=**\<Logical Server Name\>,**1433; Initial Catalog=**\<your DB name\>**; Integrated Security=False; User ID=**\<SQL User ID\>**; Password=**\<Password\>**
+![Database for entity export](media/e3bcecdb0ff1532d890915903b378c60.png)
 
-**Logical server name** should be similar to the nnnn.database.windows.net and you should be able to find the logical server name from the Azure Management portal.
+Next, you can publish one or more entities to the new database by selecting the **Publish** option on the menu.
 
-After you enter the connection string, click the **Validate** button and make sure that the connection is successful.
+### Publishing the entity schema to the database
 
-**Create Clustered Columnstore indexes** option optimizes the destination database for select queries by defining Clustered Columnstore indexes (CCI) for entities copied from Finance and Operations. However, at this point, CCIs are supported only on Azure SQL premium DBs, therefore, in order to enable this option, you should have created a SQL Azure premium database.
+The **Publish** page enables several scenarios:
 
-On successful completion, you will notice the database you have configured for Entity export listed as follows
+- Publish new entities to the database.
+- Delete previously published entities from the database. (For example, you might want to re-create the schema.)
+- Compare published entities with the entity schema in Finance and Operations. (For example, if new fields are added to Finance and Operations later, you can compare the fields with your database schema.)
+- Configure change tracking functionality that enables incremental updates of your data.
 
-![entitycci](media/e3bcecdb0ff1532d890915903b378c60.png)
+Let’s look at each option.
 
-Next you can publish one or more Entities into the newly created database by selecting the **Publish** option from the menu.
+#### Publish
 
-### **Publishing Entity schema to database**
+The **Publish** option defines the entity database schema on the destination database. When you select one or more entities, and then select the **Publish** option, a batch job is started. This job creates the entities in the destination database. When the database definition job is completed, you receive a message, which you can access by using the bell symbol in the upper right.
 
-Publish form enables several scenarios including;
+The actual data update occurs when you export data. At this point, you're just creating the schema.
 
-1.  Publishing of new Entities to the database
+#### Drop entity
 
-2.  Deleting already published entities from the DB (in case you want to
-    re-create the schema)
+The **Drop entity** option deletes the data and the entity definition from the destination database.
 
-3.  Comparison of published entities with Entity schema in Finance and Operations (ie. in case new fields get added to Dynamics 365 for Operations in the future, you can compare the fields with your Database schema)
+#### Compare source names
 
-4.  Configuring Change tracking functionality that enables incrementally
-    updating your data
+The **Compare source names** option lets you compare the entity schema in the destination with the entity schema in Finance and Operations. This option is used for version management. You can also use this option to remove any unwanted columns from the destination table.
 
-Let’s consider each of the options:
+#### Configure change tracking
 
-**Publish:** Publish option defines the Entity database schema on the
-destination DB. When you select one or more entities and select the publish
-option, a batch job is started to create the Entities in the destination
-database. When the database definition job is complete, you will be notified by
-a message in the InfoLog (ie. the bell icon on top right)
+Change tracking is a feature that is provided in SQL Server and SQL Database. Change tracking enables the database to track changes that are made on tables. The system uses change tracking to identify changes that are made to tables as transactions are performed in Finance and Operations.
 
-Actual updating of data happens when you export data. At this point you are only
-creating the schema.
+The **Change tracking** option on the **Publish** page lets you configure how changes are tracked on the underlying entity.
 
-**Drop entity** option deletes the data and the Entity definition from the
-destination DB.
+![Change tracking on the underlying entity](media/8918ed89bcc966252727af5a1b75e0fb.png)
 
-**Compare source names** option lets you compare the Entity schema in
-destination with the Entity schema in Finance and Operations. This option
-is used for version management. You can also use the compare option to remove
-any of the unwanted columns from the destination table.
-
-### **Configure change tracking**
-
-Change tracking is a feature provided with SQL Server and in SQL Azure that
-enables the database to track changes being performed on tables. Change tracking
-is used by the system to identify changes made to tables as transactions are
-performed in Finance and Operations.
-
-Change tracking option in the Publish form enables you to configure how the
-changes are tracked on the underlying entity.
-
-![change-tracking-on-the-underlying-entity](media/8918ed89bcc966252727af5a1b75e0fb.png)
-
-There are several change tracking options that can be used.
-
-| **Option**               | **What this means**                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Enable primary table** | An Entity is comprised of several tables. In case you are interested in tracking changes that happen to the primary table of the entity, choose this option. When this option is chosen, all changes that happen to primary table are tracked (therefore the corresponding record is inserted or updated to the destination DB)  While data from the entire entity is written to the destination table, the system triggers the insert or update option only when the primary table is modified.  |
-| **Enable entire entity** | Choose this option if you want all changes to the entity (including changes to all the tables that comprise the entity) to be tracked and corresponding updates to be made to destination                                                                                                                                                                                                                                                                                                         |
-| **Enable custom query**  | This option enables a developer to provide a custom query that would be run by the system to evaluate changes. This option is useful when you have a complex requirement to track changes only from a selected set of fields. You can also choose this option when Entities to be exported are built using a hierarchy of nested views                                                                                                                                                            |
-
-In order for Change tracking functionality to work, you do need to enable change
-tracking option in the Finance and Operations database. This option is
-enabled by default.
-
-In case you re-publish and Entity that exists in the destination database, the
-system warns you that existing data will be deleted as a result of the new
-operation.
-
-When you confirm the publish operation, the system publishes the schema to the
-database subsequently and you would be notified on completion. Back in the
-publish screen,
-
-By choosing the **Show published only** option, you can display only the
-entities that were published to a given destination database. Publish function
-creates the entity schema in the database. You can navigate to the Database and
-see the table schemas created along with corresponding indexes.
-
-**NOTE:** Exporting composite entities into BYOD is not supported at present.
-You would need to export each of the Entities within the composite.
-
-Export data into your database
-------------------------------
-
-Once entities are published to the destination database, you can use
-the **Export **function in **Data Management workspace** to move data. Export
-function enables you to define a Data movement job that contains one or more
-Entities.
-
-Export form is used for exporting data from Finance and Operations into
-many target data formats. This is the same form that you would use to export
-data into a CSV file. This form has the ability to support SQL Azure databases
-as yet another destination.
-
-![export-data-from-export-page](media/091eb0da74bf94c620c3785bca92b41e.png)
-
-When adding an entity for data export, you have the ability to choose
-incremental export (called “incremental push”) or full push. In order for
-incremental push to work, you do need to enable Change tracking in the Finance and Operations database and specify an appropriate change tracking option as
-described above.
-
-In case you choose incremental push, whenever a new record is inserted or a
-record is added, the corresponding change will be reflected in the destination
-entity. As of Platform update 8, records deleted in source are not updated in
-destination.
-
-Full push truncates the table and inserts all the records from the chosen
-Entity.
-
-You can create a data project with multiple Entities and it can be scheduled to
-execute using the Finance and  Operations batch framework. You also schedule
-the data export job to run on a recurring basis by selecting the **Create
-recurring data job** option.
-
-### **Best practices and Known limitations**
-
-There are several known limitations in this feature as of Platform update 8.
-
-**1. Incremental push does not propagate records deleted in source**: In case
-records are deleted from any of the tables in the source entity. corresponding
-deletes are not applied to the destination database. In case you are working
-with Entities where records are deleted, recommended approach if to conduct
-“full push” refresh operations periodically.
-
-**2. Export data projects are specific to a single Legal entity:** you can not
-create a single job to export data across multiple Legal entities. When creating
-a data project to export data, the job exports data from the current Legal
-entity. In case you need to export data from multiple Legal entities, you need
-to create multiple data projects by switching Legal entities.
-
-**3. Can not export composite Entities into BYOD:** Composite entities are not
-supported at this point in time.  You need to export individual entities that
-comprise the composite entity. However, you can export both the entities within
-the same data project.
-
-**4. Entities without unique keys can’t be exported with “incremental
-push”:** You may face this limitation especially when trying incrementally to
-export records from a few ready-made Entities. Since these Entities were
-designed to enable importing data into Finance and Operations, they do not
-contain a unique key. You can’t enable change tracking for Entities that do not
-contain a unique key – hence the limitation on incremental push. One workaround
-is to extend the required entity and define a unique key.
+The following table describes the change tracking options that are available.
 
+| Option               | Description |
+|----------------------|-------------|
+| Enable primary table | An entity is composed of several tables. Select this option to track all changes that are made to the primary table of the entity. When changes are made to the primary table, the corresponding record is inserted into or updated in the destination database. Although data from the whole entity is written to the destination table, the system triggers the insert or update option only when the primary table is modified. |
+| Enable entire entity | Select this option to track all changes to the entity. (These changes include changes to all the tables that make up the entity.) When changes are made to the entity, corresponding updates are made to the destination. |
+| Enable custom query  | This option lets a developer provide a custom query that the system runs to evaluate changes. This option is useful when you have a complex requirement to track changes from only a selected set of fields. You can also select this option when the entities that will be exported were built by using a hierarchy of nested views. |
+
+For the change tracking functionality to work, you must enable the **Change tracking** option in the Finance and Operations database. This option is enabled by default.
+
+If you republish an entity that exists in the destination database, the system warns you that existing data will be deleted as a result of the new operation.
+
+When you confirm the publish operation, the system publishes the schema to the database, and you're notified about when the operation is completed.
+
+By selecting the **Show published only** option back on the **Publish** page, you can show only the entities that were published to a given destination database. The Publish function creates the entity schema in the database. You can navigate to the database and see the table schemas that were created, together with corresponding indexes.
+
+> [!NOTE]
+> Currently, you can't export composite entities into BYOD. You must export each entity in the composite entity.
+
+## Export data into your database
+
+After entities are published to the destination database, you can use the Export function in the **Data management** workspace to move data. The Export function lets you to define a Data movement job that contains one or more entities.
+
+You can use the **Export** page to export data from Finance and Operations into many target data formats, such as a comma-separated values (CSV) file. This page also supports SQL databases as another destination.
+
+![Export page](media/091eb0da74bf94c620c3785bca92b41e.png)
+
+When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push. For incremental push to work, you must enable the **Change tracking** option in the Finance and Operations database and specify an appropriate change tracking option, as described earlier.
+
+If you select to do an incremental push, whenever a new record is inserted, or a record is added, the corresponding change will be reflected in the destination entity. In Platform update 8, records that are deleted in the source aren't updated in the destination.
+
+Full push truncates the table and inserts all the records from the selected entity.
+
+You can create a data project that has multiple entities. You can schedule this data project to run by using the Finance and Operations batch framework. You also schedule the data export job to run on a recurring basis by selecting the **Create recurring data job** option.
+
+### Best practices and known limitations
+
+In Platform update 8, there are several known limitations in this feature.
+
+**Incremental push doesn't propagate records that have been deleted in the source**
+
+If records are deleted from any table in the source entity, corresponding delete operations aren't applied to the destination database. If you work with entities where records are deleted, we recommended that you periodically do full-push update operations.
+
+**Export data projects are specific to a single legal entity**
+
+You can't create a single job to export data across multiple legal entities. When you create a data project to export data, the job exports data from the current legal entity. If you must export data from multiple legal entities, you must create multiple data projects by switching legal entities.
+
+**You can't export composite entities into BYOD**
+
+Currently, composite entities aren't supported. You must export individual entities that make up the composite entity. However, you can export both the entities in the same data project.
+
+**Entities that don't have unique keys can’t be exported by using incremental push**
+
+You might face this limitation especially when you try to incrementally export records from a few ready-made entities. Because these entities were designed to enable the import of data into Finance and Operations, they don't have a unique key. However, you can enable change tracking only for entities that have a unique key. Therefore, there is a limitation on incremental push. One workaround is to extend the required entity and define a unique key.
