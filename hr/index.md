@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Dynamics 365 for Talent streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization.These processes include employee retention, benefits administration, training, performance reviews, and change management. It also provides a framework for human resources staff to manage areas of oversight.
 
-Talent is closely related to Human resources in Dynamics 365 for Finance and Operations, Enterprise edition. The same functionality may appear in both products. As a result, in topics that are primarily related Finance and Operations, the product name will be Dynamics 365 for Finance and Operations, Enterprise Edition; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent. Topics that are written for one product may apply to the same functionality in a related product.
+Talent is closely related to Human resources in Dynamics 365 for Finance and Operations, Enterprise edition. The same functionality may appear in both products. As a result, in topics that are primarily related Human resources, the product name will be Dynamics 365 for Finance and Operations, Enterprise Edition; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent. Topics that are written for one product may apply to the same functionality in a related product.
 
 You can use Talent to complete these tasks:
 
