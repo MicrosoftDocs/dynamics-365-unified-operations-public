@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy a sandbox environment
+title: Analyze - Deploy a sandbox environment
 description: This topic explains why and how you should deploy a demo environment during the Analyze phase of your project for upgrading from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Operations.
 author: tariqbell
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 8
 
 ---
 
-# Deploy a sandbox environment
+# Analyze - Deploy a sandbox environment
 
 [!include[banner](../includes/banner.md)]
 
