@@ -782,10 +782,10 @@
 ##### [Bills of materials and formulas](/dynamics365/unified-operations/supply-chain/production-control/bill-of-material-bom?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [BOM designer functionality](/dynamics365/unified-operations/supply-chain/production-control/bom-designer-functionality?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Bom calculations](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Production parameters in Manufacturing execution](/dynamics365/unified-operations/supply-chain/production-control/production-parameters-manufacturing-execution?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Operations resources](/dynamics365/unified-operations/supply-chain/production-control/operations-resources?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Resource capabilities](/dynamics365/unified-operations/supply-chain/production-control/resource-capabilities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Routes and operations](/dynamics365/unified-operations/supply-chain/production-control/routes-operations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Production order defaults in manufacturing execution](/dynamics365/unified-operations/supply-chain/production-control/production-order-defaults-manufacturing-execution?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Warehouse work policies](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-work-policies?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Schedule production operations
 ##### [Operations scheduling](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -825,7 +825,7 @@
 ##### [Operations resources](/dynamics365/unified-operations/supply-chain/production-control/operations-resources?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Resource capabilities](/dynamics365/unified-operations/supply-chain/production-control/resource-capabilities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Batch attributes](/dynamics365/unified-operations/supply-chain/production-control/batch-attributes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Production order defaults in manufacturing execution](/dynamics365/unified-operations/supply-chain/production-control/production-order-defaults-manufacturing-execution?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Production parameters in Manufacturing execution](/dynamics365/unified-operations/supply-chain/production-control/production-parameters-manufacturing-execution?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Production setup requirements](/dynamics365/unified-operations/supply-chain/production-control/production-set-up-requirements?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Schedule production operations
 ##### [Operations scheduling](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
