@@ -643,7 +643,14 @@
 ##### [Warehouse work policies](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-work-policies?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Unit of measure and stocking policies](/dynamics365/unified-operations/supply-chain/warehousing/unit-measure-stocking-policies?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Warehouse Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
+##### [Batch and license plate confirmation](/dynamics365/unified-operations/supply-chain/warehousing/batch-and-license-plate-confirmation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Product confirmation for cluster picking](/dynamics365/unified-operations/supply-chain/warehousing/cluster-picking-item-confirmation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Mixed license plate receiving](/dynamics365/unified-operations/supply-chain/warehousing/mixed-license-plate-receiving?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Movement of inventory with associated work in Warehouse management](/dynamics365/unified-operations/supply-chain/warehousing/move-inventory-associated-work?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [System grouping on an open work list](/dynamics365/unified-operations/supply-chain/warehousing/system-group-on-open-work-list?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Picking and packing
+##### [Pick oldest batch on a mobile device](/dynamics365/unified-operations/supply-chain/warehousing/pick-oldest-batch?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Piece picking confirmation](/dynamics365/unified-operations/supply-chain/warehousing/piece-picking-confirmation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Packing materials and fees](/dynamics365/unified-operations/supply-chain/warehousing/pack-materials-packing-material-fees?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Inventory counting
 ##### [Block inventory](/dynamics365/unified-operations/supply-chain/inventory/inventory-blocking?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -663,6 +670,7 @@
 ##### [Set up mobile devices for warehouse work](/dynamics365/unified-operations/supply-chain/warehousing/configure-mobile-devices-warehouse?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Warehouse Mobile Devices Portal (WMDP)](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-mobile-devices-portal?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Warehouse mobile device display settings](/dynamics365/unified-operations/supply-chain/warehousing/change-warehouse-mobile-device-displays?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+
 
 ## Master planning
 ### Create demand forecast
@@ -710,6 +718,17 @@
 ##### [Product receipt against purchase orders](/dynamics365/unified-operations/supply-chain/procurement/product-receipt-against-purchase-orders?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 ##### [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Vendor management and collaboration
+##### [Set up and maintain vendor collaboration](/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Manage vendor collaboration users](/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-users?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Set up vendor accounts](/dynamics365/unified-operations/supply-chain/procurement/set-up-vendor-accounts?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Vendor collaboration with external vendors](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Vendor collaboration with customers](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Set up an external catalog for PunchOut eProcurement](/dynamics365/unified-operations/supply-chain/procurement/set-up-external-catalog-for-punchout?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Use external catalogs for PunchOut eProcurement](/dynamics365/unified-operations/supply-chain/procurement/use-external-catalogs-for-punchout?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Collaborate with vendors by using the Vendor portal](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Vendor collaboration mobile workspace](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Vendor portal user security](/dynamics365/unified-operations/supply-chain/procurement/configure-security-vendor-portal-users?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Sales and marketing
 #### [Marketing](/dynamics365/unified-operations/supply-chain/sales-marketing/overview-sales-marketing?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Sales orders
@@ -726,17 +745,6 @@
 ##### [Price simulation](/dynamics365/unified-operations/supply-chain/sales-marketing/price-simulation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Returns
 ##### [Sales returns](/dynamics365/unified-operations/supply-chain/warehousing/sales-returns?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-
-#### Vendor management and collaboration
-##### [Set up and maintain vendor collaboration](/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Manage vendor collaboration users](/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-users?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Set up vendor accounts](/dynamics365/unified-operations/supply-chain/procurement/set-up-vendor-accounts?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Vendor collaboration with external vendors](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Vendor collaboration with customers](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Collaborate with vendors by using the Vendor portal](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Vendor collaboration mobile workspace](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Vendor portal user security](/dynamics365/unified-operations/supply-chain/procurement/configure-security-vendor-portal-users?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-
 ## [Organization administration](/dynamics365/unified-operations/fin-and-ops/organization-administration/organization-administration-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Organizations and organizational hierarchies](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Configure organizational hierarchy](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-organizational-hierarchy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -804,6 +812,9 @@
 ##### [Allocate time to jobs in a job bundle](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Calculate material consumption](/dynamics365/unified-operations/supply-chain/production-control/consumption?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Production posting](/dynamics365/unified-operations/supply-chain/cost-management/production-posting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### Manage raw materials
+##### [Cross-docking from production orders to outbound docks](/dynamics365/unified-operations/supply-chain/production-control/cross-docking opportunities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Register material consumption using a mobile device](/dynamics365/unified-operations/supply-chain/production-control/register-material-consumption-hand-held-device?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Lean manufacturing 
 #### [Lean manufacturing overview](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Activity-based subcontracting](/dynamics365/unified-operations/supply-chain/production-control/activity-based-subcontracting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
