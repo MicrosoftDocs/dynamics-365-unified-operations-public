@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure document management
-description: [Configure document management (document handling) to store file attachments and notes for records]
+description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
 ms.date: 05/24/2017
@@ -31,71 +31,82 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 [!include[banner](../includes/banner.md)]
 
-This topic covers the concepts and features involved in configuring document management (document handling) to store file attachments and notes for records.
+This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
 
 ## Configure document types
 Document types are used to categorize the documents that you attach to records or the templates that you create. Each document type can be stored in a unique location.
 
-A set of document types is provided by default that can be used for categorizing attachments as file, image, note, or URL. The *File* and *Image* default document types are configured to use the **Location** of *Azure storage*.
+A default set of document types is provided. You can use these document types to categorize an attachment as a file, image, note, or URL. The **File** and **Image** default document types are configured to use **Azure storage** as the location.
 
-To create a new document type:
-1. Open **Organization administration > Setup > Document management > Document types**
-2. Click **New**
-3. Provide a short **Type** name e.g. *"SharePoint"* or *"HR Docs"*
-4. Provide a longer **Name** e.g. *"SharePoint files"* or *"HR Docs"*
-5. Provide a **Class** to define the document type behavior:
-    1. **Attach file** - prompts the user for a file.
-    2. **Attach URL** - enables the user to provide a URL in the **Notes** field e.g. *"http://www.microsoft.com"*. The **Open** button on the Attachments form will then open the URL in a browser tab.
-    3. **Simple note** - allows the user to add a simple note using the **Notes** field.
-6. If the **Class** was **Attach file** then provide a **Location** indicating what storage mechanism to use
-7. If the **Location** was **SharePoint** then provide a **SharePoint Address** by clicking the edit button (pencil) and using the **Folder selection** dialog
+To create a new document type, follow these steps.
+
+1. Go to **Organization administration** > **Setup** > **Document management** > **Document types**.
+2. Click **New**.
+3. In the **Type** field, enter a short name for the new document type, such as **SharePoint** or **HR Docs**.
+4. In the **Name** field, enter a longer name, such as **SharePoint files** or **HR Docs**.
+5. In the **Class** field, specify a class to define the behavior for the document type:
+
+    - **Attach file** – The user is prompted for a file.
+    - **Attach URL** – The user can enter a URL in the **Notes** field, such as **http://www.microsoft.com**. The **Open** button on the **Attachments** page will then open the URL on a browser tab.
+    - **Simple note** – The user can add a simple note in the **Notes** field.
+
+6. If you specified **Attach file** in the **Class** field, in the **Location** field, specify the storage mechanism to use.
+7. If you specified **SharePoint** in the **Location** field, specify the Microsoft SharePoint address in the **SharePoint Address** field by clicking the **Edit** button (pencil symbol) and using the **Folder selection** dialog box.
 
 ## Configure SharePoint storage
 
-SharePoint Online is one of the natively supported storage locations. At this time, only SharePoint Online is supported. SharePoint on-premises (local SharePoint server) support may be added in the future. 
+Microsoft SharePoint Online is one of the storage locations that are supported natively. Currently, only SharePoint Online is supported. However, support for on-premises SharePoint (a local SharePoint server) might be added in the future. 
 
-To use SharePoint storage, on a document type set the *Location* field to *SharePoint* and supply a valid *SharePoint Address*
+To use SharePoint storage, set the **Location** field for a document type to **SharePoint**. Then, in the **SharePoint Address** field, enter a valid SharePoint address.
 
-To configure SharePoint storage:
-1. Open **Organization administration > Setup > Document management > Document management parameters**
-2. On the SharePoint tab, review the *Default SharePoint server* field for the SharePoint site hostname that was automatically detected e.g. "contosoax7.sharepoint.com". The SharePoint hostname will usually be of the form "tenantname.sharepoint.com" where accounts on that tenant would look like user1@tenantname.onmicrosoft.com.
-3. If no SharePoint server is populated by default, that likely means that either there is no SharePoint site for the tenant or the current user (the admin) does not have a valid Office 365 license associated with them.
-4. If desired, click the *Test SharePoint connection* button to test the SharePoint hostname provided.
-5. If desired, click the *Open SharePoint* button to open the SharePoint hostname in a browser.
+To configure SharePoint storage, follow these steps.
+
+1. Go to **Organization administration** > **Setup** > **Document management** > **Document management parameters**.
+2. On the **SharePoint** tab, in the **Default SharePoint server** field, review the host name that was automatically detected for the SharePoint site, such as **contosoax7.sharepoint.com**. Typically, the SharePoint host name is in the form tenantname.sharepoint.com, and accounts on that tenant are in the form user1@tenantname.onmicrosoft.com.
+
+    Typically, if no default SharePoint server is specified, either there is no SharePoint site for the tenant, or a valid Microsoft Office 365 license isn't associated with the current user (the admin).
+
+4. Optional: Click **Test SharePoint connection** to test the specified SharePoint host name.
+5. Optional: Click **Open SharePoint** to open the specified SharePoint host name in a browser.
 
 ### Troubleshooting SharePoint communication
-SharePoint communication will only work for the current user if:
-1. The user has an Office 365 license associated with their account
-2. The user is a normal user on the tenant and is not an external user e.g. a user from another tenant
-3. There is a SharePoint site for the tenant e.g. Contoso.SharePoint.com.
+SharePoint communication works for the current user only if the following conditions are met:
+
+- An Office 365 license is associated with the user's account.
+- The user is a normal user on the tenant, not an external user (for example, a user from another tenant).
+- There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).
 
 ## Configure file types
 
-You can control which types of files that users can attach to records by editing the list of allowable file extensions.
+By modifying the list of file extensions that are allowed, you can control the types of files that users can attach to records.
 
-To specify file types, follow these steps:
-1. Open **Organization administration > Setup > Document management > Document management parameters**
-2. On the File types tab, review the default file types. 
-3. Remove the file types that users should not be able to attach to records, and add any additional file types that users should be able to attach to records.
+To specify file types, follow these steps.
+
+1. Go to **Organization administration** > **Setup** > **Document management** > **Document management parameters**.
+2. On the **File types** tab, review the default file types. 
+3. Remove any file types that users should not be able to attach to records, and add any file types that users should be able to attach to records.
 
 ## Configure document preview
-The attachments preview uses the Web Application Open Platform Interface (WOPI) provided by an Office Web Apps Server. **Document management parameters > General > Office Web Apps Server** sets the Office Online server to use for attachment previews. The default value for the **Office Web Apps Server** field is https://onenote.officeapps.live.com which points at the cloud WOPI server.
+The attachments preview uses the Web app Open Platform Interface (WOPI) that is provided by Microsoft Office Online Server. On the **Document management parameters** page, on the **General**, in the **Office Web Apps Server** field, specify the Office Online Server instance to use for attachment previews. The default value is **https://onenote.officeapps.live.com**. This value points at the cloud-based WOPI server.
 
-### If you are using an on-premises enviroment
-When an environment is on-premises, then the default cloud-based WOPI server cannot read the attachment file to provide a preview. If previews are needed, then an Office Online Server needs to be installed on-premises and configured inside the environment. Set the **Office Web Apps Server** field to the host name of the installed Office Online Server and click Save. If previews are not needed, then set the Office Web Apps Server field to https://localhost and the preview will indicate that there is “No preview available” rather presenting an error.
+### If you're using an on-premises environment
+When an environment is on-premises, the default cloud-based WOPI server can't read the attachment file to provide a preview. If previews are required, you must install an on-premises Office Online Server instance and configure it inside the environment. Set the **Office Web Apps Server** field to the host name of the installed Office Online Server instance, and then click **Save**.
+
+If previews aren't required, set the **Office Web Apps Server** field to **https://localhost**. The preview will then show the message “No preview available” instead of an error message.
 
 ## Other configuration
 
-There are a number of other configuration options that are seldom used:
-- **Document management parameters > General > Use Document Tables** enables the use of the *Active document tables* whitelist. If turned on, this will disable attachments on all other tables, so only use this when necessary.
-- **Document management parameters > General > Maximum file size in megabytes** sets the maximum file size for attachments. Note that the ability for users to provide files is also constrained by the file size limit set for the environment in configuration files that are not changable via a client form.
-- **Settings > User options > Preferences > Enabling document handling** allows a user to disable document handling (document management) if desired.
+There are some other configuration options that are rarely used:
 
-## Frequently Asked Questions
+- On the **Document management parameters** page, on the **General** tab, you can use the **Use Document Tables** option to enable the **Active document tables** allow list. If you set this option to **Yes**, you disable attachments on all other tables. Therefore, turn on this option only when it's required.
+- On the **Document management parameters** page, on the **General** tab, you can use the **Maximum file size in megabytes** field to set the maximum file size for attachments. Note that the ability of users to provide files is also constrained by the file size limit that is set for the environment in configuration files. These configuration files can't be changed via a client page.
+- On the **Options** page (**Settings** > **User options**), on the **Preferences** tab, you can use the **Enable document handling** option to disable document handling (document management).
+
+## Frequently asked questions
 
 ### What is the difference between document handling and document management?
 
-There is no difference. Both terms refer to the same functionality. Different terms were are used in different versions of the product.
+There is no difference between document handling and document management. Both terms refer to the same functionality. Different terms are used in different versions of the product.
 
 ### What is the difference between document management and print management?
 
@@ -105,11 +116,10 @@ Print management lets you control print settings for selected reports. Print set
 
 ### What is the difference between document types and file types?
 
-Document types are used to categorize the documents that you attach to records or the templates that you create. Each document type can be stored in a unique location. The table for document types is DocuType. 
+Document types are used to categorize the documents that you attach to records or the templates that you create. Each document type can be stored in a unique location. The table for document types is named DocuType. 
 
-File types include word documents, images, etc. A file type is denoted by the extension of the file. For example, .txt, .png, .doc, .xlsx, and .pdf are all file types.
+File types include Microsoft Word documents and images. A file type is denoted by the extension of the file, such as .txt, .png, .doc, .xlsx, or .pdf.
 
 ### Does document management integrate with Office 365?
 
-Yes. SharePoint storage is supported natively and can be selected as the storage location for a document type. In addition, any URL addressable file can be made an attachment via the URL document type.
-
+Yes. SharePoint storage is supported natively and can be selected as the storage location for a document type. In addition, any URL addressable file can be made an attachment via the **URL** document type.
