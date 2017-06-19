@@ -33,12 +33,12 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 This topic covers the concepts and features involved in configuring document management (document handling) to store file attachments and notes for records.
 
-## Configure Document Types
+## Configure document types
 Document types are used to categorize the documents that you attach to records or the templates that you create. Each document type can be stored in a unique location.
 
 A set of document types is provided by default that can be used for categorizing attachments as file, image, note, or URL. The *File* and *Image* default document types are configured to use the **Location** of *Azure storage*.
 
-To create a new Document Type:
+To create a new document type:
 1. Open **Organization administration > Setup > Document management > Document types**
 2. Click **New**
 3. Provide a short **Type** name e.g. *"SharePoint"* or *"HR Docs"*
@@ -52,9 +52,9 @@ To create a new Document Type:
 
 ## Configure SharePoint storage
 
-SharePoint Online is one of the natively supported storage locations. At this time, only SharePoint Online is supported. SharePoint on-premise (local SharePoint server) support may be added in the future. 
+SharePoint Online is one of the natively supported storage locations. At this time, only SharePoint Online is supported. SharePoint on-premises (local SharePoint server) support may be added in the future. 
 
-To use SharePoint storage, on a Document Type set the *Location* field to *SharePoint* and supply a valid *SharePoint Address*
+To use SharePoint storage, on a document type set the *Location* field to *SharePoint* and supply a valid *SharePoint Address*
 
 To configure SharePoint storage:
 1. Open **Organization administration > Setup > Document management > Document management parameters**
@@ -81,7 +81,7 @@ To specify file types, follow these steps:
 ## Configure document preview
 The attachments preview uses the Web Application Open Platform Interface (WOPI) provided by an Office Web Apps Server. **Document management parameters > General > Office Web Apps Server** sets the Office Online server to use for attachment previews. The default value for the **Office Web Apps Server** field is https://onenote.officeapps.live.com which points at the cloud WOPI server.
 
-When an environment is on-premise, then the default cloud-based WOPI server cannot read the attachment file to provide a preview. If previews are needed on-premise, then an Office Online Server needs to be installed on-premise and configured inside the environment. Set the **Office Web Apps Server** field to the host name of the installed Office Online Server and click Save. If previews are not needed, then set the Office Web Apps Server field to https://localhost and the preview will indicate that there is “No preview available” rather presenting an error.
+When an environment is on-premises, then the default cloud-based WOPI server cannot read the attachment file to provide a preview. If previews are needed on-premise, then an Office Online Server needs to be installed on-premise and configured inside the environment. Set the **Office Web Apps Server** field to the host name of the installed Office Online Server and click Save. If previews are not needed, then set the Office Web Apps Server field to https://localhost and the preview will indicate that there is “No preview available” rather presenting an error.
 
 ## Other configuration
 
