@@ -49,7 +49,7 @@ You can use Talent to complete these tasks:
 > + Review performance and implement worker goals.
 > + Set up, deliver, and analyze training courses that include agendas, sessions, and tracks.
 
-Develop a human resources strategy
+Develop a strategy for managing your human resources
 ---------------------------------------------------------
 
 As you work with Talent, you'll decide how to structure your organization, using elements, such as departments, jobs, and positions. These are among the foundational elements that you'll configure. Individual employees are assigned to positions which are associated with jobs.
