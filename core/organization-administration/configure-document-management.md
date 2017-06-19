@@ -101,7 +101,7 @@ There is no difference. Both terms refer to the same functionality. Different t
 
 Document management lets you add notes, documents, and other files to records.
 
-Print management lets you control print settings for selected reports. Print settings include the number of copies, the printer destination, and the multilanguage text that can be included on the report. For more information, see Print management.
+Print management lets you control print settings for selected reports. Print settings include the number of copies, the printer destination, and the multilanguage text that can be included on the report. For more information, see [Document Reporting Services overview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/document-reporting-services).
 
 ### What is the difference between document types and file types?
 
