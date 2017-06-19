@@ -533,6 +533,3 @@ Successful logs should be sent to drpc@microsoft.com. Include the manufacturerâ€
 
 For support if you're performing compatibility tests, and for other inquiries, send an email to drpc@microsoft.com.
 
-## See also
-
-[Retail peripherals overview](retail-peripherals-overview.md)
