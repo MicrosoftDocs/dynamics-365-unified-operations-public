@@ -72,6 +72,11 @@ Retail Modern POS (MPOS) is a point-of-sale app for PCs, tablets, and phones. Sa
 
 There are several components you’ll set up to define the relationships among a store, the POS registers within the store, and the retail peripherals that those registers use to process transactions. You’ll also define the characteristics of a specific instance of the POS, including the hardware profile or setup for retail peripherals that will be used at the register, the store that the register is mapped to, the visual experience for the user who logs on to that register, and the functionalities that are enabled in the register. You'll also define whether the register can operate in a disconnected or offline state.
 
+## Workforce management
+To be profitable in reducing margin environment, retailers are constantly striving to reduce their operational cost. For most retailers, retail staff cost is a significant portion of the operational cost and so by controlling this cost, they can make a significant impact on their bottom-line. Also, an empowered and productive workforce lends itself to improved customer experience.
+
+With Retail, store managers can create and publish shifts and schedules for workers in stores, annotate shifts with instructions,copy schedules from a previous week to the current week, have visibility into absence requests submitted by retail workers and have the ability to approve or reject requests, and have visibility into shift swap and offer shift requests and have the ability to approve or reject requests. Store associates can have visibility into shifts and assigned schedules, along with instructions for the shift, have visibility as to co-workers assigned to shifts, submit absence requests, submit requests for shift swaps with co-workers, and submit requests for an ‘Offer shift’.
+
 ## Customize and administer Retail environments
 If you have been asked to customize your environment, or if you are tasked with deploying and maintaining your system, check out the developer and system administrator content specific to Retail, as well as the more general content for Microsoft Dynamics 365 for Retail. 
 -   [Dynamics 365 for Retail for IT Pros and Developers](dev-itpro/dev-retail-home-page.md)
