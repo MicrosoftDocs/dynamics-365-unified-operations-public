@@ -2,10 +2,10 @@
 # required metadata
 
 title: Welcome to Talent
-description: Talent streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. It also provides a framework for human resources staff to manage areas of oversight. These areas include employee  retention, benefits administration, training, performance reviews, and change management.
+description: Talent streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. These processes include employee retention, benefits administration, training, performance reviews, and change management.
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/19/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,13 +30,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Welcome to human resources
+# Welcome to Talent
 
 [!include[banner](includes/banner.md)]
 
-Talent streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. It also provides a framework for human resources staff to manage areas of oversight. These areas include employee  retention, benefits administration, training, performance reviews, and change management.
+Microsoft Dynamics 365 for Talent streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization.These processes include employee retention, benefits administration, training, performance reviews, and change management. It also provides a framework for human resources staff to manage areas of oversight.
 
-You can use Human resources to complete these tasks:
+Dynamics 365 for Talent is closely related to Human resources in Dynamics 365 for Finance and Operations, Enterprise edition. The same functionality may appear in both products. As a result, in topics that are primarily related Human resources, the product name will be Dynamics 365 for Finance and Operations, Enterprise Edition; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent. Topics that are written for one product may apply to the same functionality in a related product.
+
+You can use Talent to complete these tasks:
 
 > + Administer organizational structures.
 > + Maintain comprehensive worker information from hire to retire.
@@ -46,9 +48,8 @@ You can use Human resources to complete these tasks:
 > + Manage worker competencies.
 > + Review performance and implement worker goals.
 > + Set up, deliver, and analyze training courses that include agendas, sessions, and tracks.
-> + Recruit workers and track applicants.
 
-Develop a human resources strategy
+Develop a strategy for managing your human resources
 ---------------------------------------------------------
 
 As you work with Talent, you'll decide how to structure your organization, using elements, such as departments, jobs, and positions. These are among the foundational elements that you'll configure. Individual employees are assigned to positions which are associated with jobs.
@@ -83,16 +84,16 @@ In addition to compensating your staff with wages, salaries, and bonuses, you ca
 
 ## Maintain workplace safety and compliance
 
-Microsoft Talent can help you maintain a safe work environment that’s in compliance with applicable laws, including the Americans with Disabilities Act and immigration and naturalization laws, among others. For example, you can manage the physical requirements for specific jobs, as well as track requests for accommodations that can help your organization optimize the skills of its workforce.
+Talent can help you maintain a safe work environment that’s in compliance with applicable laws, including the Americans with Disabilities Act and immigration and naturalization laws, among others. For example, you can manage the physical requirements for specific jobs, as well as track requests for accommodations that can help your organization optimize the skills of its workforce.
 
--   [Form I-9 employment verification](localizations/noam-usa-form-i-9-verification.md)
--   [Comply with the Americans with Disabilities Act](localizations/noam-usa-comply-ada.md)
+-   [Form I-9 employment verification](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
+-   [Comply with the Americans with Disabilities Act](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada)
 
 ## Gather information using questionnaires
 
 You can design and administer questionnaires to gather information that’s used for a variety of purposes. The Questionnaire feature lets you design and create questionnaires. When a questionnaire is ready, you distribute it broadly or to a specific set of respondents to complete. After the respondents provide their answers, you can review and analyze the results.
 
--   [Questionnaires](questionnaires.md)
--   [Design a questionnaire](design-questionnaires.md)
--   [Distribute and complete a questionnaire](distribute-questionnaires.md)
--   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
+-   [Questionnaires](/dynamics365/unified-operations/fin-and-ops/hr/questionnaires)
+-   [Design a questionnaire](/dynamics365/unified-operations/fin-and-ops/hr/design-questionnaires)
+-   [Distribute and complete a questionnaire](/dynamics365/unified-operations/fin-and-ops/hr/distribute-questionnaires)
+-   [View and evaluate the results of a questionnaire](/dynamics365/unified-operations/fin-and-ops/hr/evaluate-questionnaire-results)
