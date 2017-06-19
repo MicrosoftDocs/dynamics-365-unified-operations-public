@@ -81,9 +81,7 @@ For each stage, the **Automatic BOM consumption** field lets you select one of t
     
     > [!NOTE]
     > If the **Flushing principle** field is set on the **Start** tab in Manufacturing execution, you must select the same principle on either the **Operations** tab or the **Report as finished** tab. This requirement helps guarantee that materials are deducted from inventory on BOMs that use **Finish** as a flushing principle on the production order. If the same flushing principle isn't selected on either the **Operations** tab or the **Report as finished** tab, materials might be deducted from inventory two times.
-
-    In the BOM, the deduction of materials from inventory is based on the value that is set on every item. This value is mandatory for all items that are created in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This occurs when the **Flushing principle** is left blank, but you've selected a flushing principle on, for example, the **Start** tab and the **Operations** tab of the **Production parameters** page in Manufacturing execution.
-    
+ 
 - **Always** – If you select this option for a stage, materials are always deducted from inventory at that stage. For example, materials for the production are deducted when the production order is started. This setting requires that **Never** be selected on the **Operations** and **Report as finished** tabs. This requirement helps prevent items from being deducted from inventory two times.
 - **Never** – If you select this option for a stage, no BOM consumption occurs at that stage. For example, if you select **Never** on all three tabs (**Start**, **Operations**, and **Report as finished**), materials must be manually deducted from inventory.
 
