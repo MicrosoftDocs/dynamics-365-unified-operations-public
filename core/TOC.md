@@ -670,8 +670,35 @@
 ##### [Set up mobile devices for warehouse work](/dynamics365/unified-operations/supply-chain/warehousing/configure-mobile-devices-warehouse?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Warehouse Mobile Devices Portal (WMDP)](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-mobile-devices-portal?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Warehouse mobile device display settings](/dynamics365/unified-operations/supply-chain/warehousing/change-warehouse-mobile-device-displays?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Upgrade and migration
-##### [Migrate from AX 2012 to Finance and Operations](/dynamics365/unified-operations/supply-chain/warehousing/upgrade-migration-warehouse-management-processes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+
+
+## Master planning
+### Create demand forecast
+#### [Demand forecast overview](/dynamics365/unified-operations/supply-chain/master-planning/introduction-demand-forecasting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Set up a demand forecast](/dynamics365/unified-operations/supply-chain/master-planning/demand-forecasting-setup?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Import historical data for demand forecasts](/dynamics365/unified-operations/supply-chain/master-planning/import-historical-data?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Generate a statistical baseline forecast](/dynamics365/unified-operations/supply-chain/master-planning/generate-statistical-baseline-forecast?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Make manual adjustment to the baseline forecast](/dynamics365/unified-operations/supply-chain/master-planning/manual-adjustments-baseline-forecast?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Authorize an adjusted forecast](/dynamics365/unified-operations/supply-chain/master-planning/authorize-adjusted-forecast?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Monitor forecast accuracy](/dynamics365/unified-operations/supply-chain/master-planning/monitor-forecast-accuracy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Remove outliers from historical transaction data](/dynamics365/unified-operations/supply-chain/master-planning/remove-historical-outliers-calculating-demand-forecast?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Reduction keys](/dynamics365/unified-operations/supply-chain/master-planning/reduction-keys?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+
+### Master plan
+#### [Action messages](/dynamics365/unified-operations/supply-chain/master-planning/action-messages?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Coverage settings](/dynamics365/unified-operations/supply-chain/master-planning/coverage-settings?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Delays](/dynamics365/unified-operations/supply-chain/master-planning/delays?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Master plans](/dynamics365/unified-operations/supply-chain/master-planning/master-plans?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Master plans and multisite functionality](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-multisite-functionality?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Plan for site coverage, mandatory warehouse](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Plan for site coverage, warehouse not mandatory](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Plan for site and warehouse coverage, warehouse mandatory](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Plan for site and warehouse coverage, warehouse not mandatory](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Determine the BOM version](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-bom-version-determined?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Explosion of a BOM version](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-explosion-bom-version?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Maintain planned orders](/dynamics365/unified-operations/supply-chain/master-planning/maintain-planned-orders?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Trace an explosion](/dynamics365/unified-operations/supply-chain/master-planning/trace-explosion?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ## Order management
 ### Procurement and sourcing
 #### [Procurement and sourcing overview](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -750,34 +777,6 @@
 #### [Configure workflow properties](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-workflow-properties?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Configure the message processing batch job](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-batch-job-critical?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Workflow types report](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-types-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-
-
-## Planning
-### Create demand forecast
-#### [Demand forecast overview](/dynamics365/unified-operations/supply-chain/master-planning/introduction-demand-forecasting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Set up a demand forecast](/dynamics365/unified-operations/supply-chain/master-planning/demand-forecasting-setup?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Import historical data for demand forecasts](/dynamics365/unified-operations/supply-chain/master-planning/import-historical-data?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Generate a statistical baseline forecast](/dynamics365/unified-operations/supply-chain/master-planning/generate-statistical-baseline-forecast?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Make manual adjustment to the baseline forecast](/dynamics365/unified-operations/supply-chain/master-planning/manual-adjustments-baseline-forecast?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Authorize an adjusted forecast](/dynamics365/unified-operations/supply-chain/master-planning/authorize-adjusted-forecast?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Monitor forecast accuracy](/dynamics365/unified-operations/supply-chain/master-planning/monitor-forecast-accuracy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Remove outliers from historical transaction data](/dynamics365/unified-operations/supply-chain/master-planning/remove-historical-outliers-calculating-demand-forecast?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Reduction keys](/dynamics365/unified-operations/supply-chain/master-planning/reduction-keys?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-
-### Master plan
-#### [Action messages](/dynamics365/unified-operations/supply-chain/master-planning/action-messages?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Coverage settings](/dynamics365/unified-operations/supply-chain/master-planning/coverage-settings?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Delays](/dynamics365/unified-operations/supply-chain/master-planning/delays?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Master plans](/dynamics365/unified-operations/supply-chain/master-planning/master-plans?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Master plans and multisite functionality](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-multisite-functionality?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Plan for site coverage, mandatory warehouse](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Plan for site coverage, warehouse not mandatory](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Plan for site and warehouse coverage, warehouse mandatory](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Plan for site and warehouse coverage, warehouse not mandatory](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Determine the BOM version](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-bom-version-determined?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Explosion of a BOM version](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-explosion-bom-version?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Maintain planned orders](/dynamics365/unified-operations/supply-chain/master-planning/maintain-planned-orders?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Trace an explosion](/dynamics365/unified-operations/supply-chain/master-planning/trace-explosion?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Production
 ### [Production process overview](/dynamics365/unified-operations/supply-chain/production-control/production-process-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1282,16 +1281,16 @@
 
 ### [Upgrade and migration](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Analysis: Use the upgrade analyzer to plan migration work](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Analysis: Estimate the effort to upgrade code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analyze-code-upgrade?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Analysis: Deploy a sandbox enviroment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Upgrade: Data upgrade in a development environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Upgrade: AX 2012 data upgrade tasks](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Upgrade: Data upgrade in a sandbox environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Validate: Cutover testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Validate: App validation process](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Validate: Functional testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Validate: Prepare for go live](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Analyze - Use the Upgrade analyzer tool to plan upgrade](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Analyze – Use the Code upgrade service to estimate the effort to upgrade code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analyze-code-upgrade?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Analyze - Deploy a sandbox enviroment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Upgrade - Data upgrade in a development environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Upgrade - AX 2012 data upgrade tasks](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Upgrade - Data upgrade in a sandbox environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Validate - Cutover testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Validate- App validation process](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Validate- Functional testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Validate - Prepare for go live](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 
 ##### Changes that affect upgrade from AX 2012
