@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Upgrade validation: Functional test pass
+title: Upgrade validation - Functional test pass
 description: This topic explains how to perform a functional test pass to validate an upgraded Dynamics 365 for Finance and Operations, Enterprise edition, environment. 
 author: tariqbell
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Upgrade validation: Functional test pass
+# Upgrade validation - Functional test pass
 
 [!include[banner](../includes/banner.md)]
 
