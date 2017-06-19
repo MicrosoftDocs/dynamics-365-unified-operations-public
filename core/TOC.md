@@ -1601,14 +1601,14 @@
 ### [Create a department and associate it with the department hierarchy](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Set up HR parameters across legal entities](/dynamics365/unified-operations/talent/set-up-hr-parameters-across-legal-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Set up company-specific HR parameters](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Personnel actions FAQ](Dynamics-365-Operations/hr/personnel-actions-faq.md)
+### [Personnel actions FAQ](/dynamics365/unified-operations/talent/personnel-actions-faq?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Use workflow to manage employee information](/dynamics365/unified-operations/talent/workflow-manage-employee-information?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Motivate employees
 ### [Compensation plans](/dynamics365/unified-operations/talent/compensation-plans?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Create fixed compensation plans](/dynamics365/unified-operations/talent/create-fixed-compensation-plans?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Create variable compensation plans](/dynamics365/unified-operations/talent/create-variable-compensation-plans?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Process compensation](Dynamics-365-Operations/talent/process-compensation.md)
+### [Process compensation](/dynamics365/unified-operations/talent/process-compensation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Develop and train employees
 ### [Performance management overview](/dynamics365/unified-operations/talent/performance-management-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
