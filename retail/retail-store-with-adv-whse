@@ -39,25 +39,25 @@ configuration to serve as retail and advanced warehouse must be done at the time
 
 Following are the steps required for a warehouse to function as an advanced warehouse while also serving as a warehouse for a retail store: 
 
-Create an Advanced warehouse:  
+**Create an Advanced warehouse:**    
 Go to **Warehouse management > Setup > Warehouse > Warehouses**  
 Create a new warehouseImmediately after specifying **Warehouse ID**, navigate to **Warehouse** and set ** “Use warehouse management process” ** to **‘Yes’**.  
 Set the ** “Default inventory status ID”** to **‘Available’**.  
 Under **Retail**, keep ** “Store” ** = **‘No’**.
 
-Create a location profile:  
+**Create a location profile:**  
 Go to **Warehouse management > Setup > Warehouse > Location profiles**  
 Create a new location profile for use in the retail store.  
 Set ** “Allow mixed items” ** = ** ‘Yes’**.  
 Keep ** “Use license plate tracking” ** = ** ‘No’**.
 
-Create a location:  
+**Create a location:**  
 Go to **Warehouse management > Setup > Warehouse > Locations**  
 Create a new location.  
 For ** “Location Profile ID” **, specify the previously created location profile.  
 For ** “Use warehouse” **, specify the warehouse created above. 
 
-Set up warehouse as retail store:
+**Set up warehouse as retail store:**  
 Go to **Warehouse management > Setup > Warehouse > Warehouses**  
 Select the warehouse created above.  
 Under **Retail**, set ** “Store” ** = ** ‘Yes’**.  
@@ -74,7 +74,7 @@ Set a ** “Default location” **.
 
     Default locations should be set up according to instructions provided in ** ‘Create a location’**.
 
-Map a retail store to the warehouse:  
+**Map a retail store to the warehouse:**  
 Go to **Retail > Channels > Retail stores> All retail stores**  
 Select a store by clicking on the **Retail Channel ID**.  
 Under ** “Warehouse” ** click on the dropdown and select the warehouse created above and save.  
