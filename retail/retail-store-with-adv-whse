@@ -34,15 +34,53 @@ ms.dyn365.ops.version: AX 7.2
 
 [!include[banner](includes/banner.md)]
 
-This page explains how to enable Advanced warehouse for a retail store. Advanced Warehouse is a set of capabilities  created to help manage warehouse environments where goods are being received, stored, staged and shipped. Warehouses that map to a retail store may also use the Advanced Warehouse capabilities to help manage products. While retail capabilities and advanced warehouse may be applicable in the same environment, they should each be used to perform their primary capabilities. That is, retail point of sale is specifically intended to conduct point of sale transactions whereas advanced warehouse is specifically used to manage product movement.  
+Warehouses that map to retail stores may also be set up as advanced warehouses. In order for a warehouse to serve both functions, the
+configuration to serve as retail and advanced warehouse must be done at the time of warehouse creation. 
 
-When a retail store warehouse is also an advanced warehouse, the retail point of sale does not host a lot of advanced warehouse capabilities, but it does satisfy requirements related to product movement to keep advanced warehouse running smoothly. Specifically, advanced warehouse requires locations for all product movements. When a retail store is configured as an advanced warehouse, stock counts and purchase order receipts performed in the point of sale will prompt the user to specify an inventory location. This is done so that Advanced Warehouse has adequate information about the stock being received.  
+Following are the steps required for a warehouse to function as an advanced warehouse while also serving as a warehouse for a retail store: 
 
-Another capability added to retail to satisfy advanced warehouse capabilities is the definition of location defaults for sales and returns. When a product is sold from the point of sale, the stock is decremented from a specific location. In terms of how this location is handled be advanced warehouse, it could be considered a virtual location. This is because when the product is sold at the point of sale, the cashier does not have information about which specific inventory location it was pulled from on the showroom floor. In order to replenish the product sales from the default sales location, advanced warehouse must replenish actual physical locations where the goods are kept in the showroom. 
+Create an Advanced warehouse:  
+Go to **Warehouse management > Setup > Warehouse > Warehouses**  
+Create a new warehouseImmediately after specifying **Warehouse ID**, navigate to **Warehouse** and set ** “Use warehouse management process” ** to **‘Yes’**.  
+Set the ** “Default inventory status ID”** to **‘Available’**.  
+Under **Retail**, keep ** “Store” ** = **‘No’**.
 
-    > [!NOTE]
-    
-    
+Create a location profile:  
+Go to **Warehouse management > Setup > Warehouse > Location profiles**  
+Create a new location profile for use in the retail store.  
+Set ** “Allow mixed items” ** = ** ‘Yes’**.  
+Keep ** “Use license plate tracking” ** = ** ‘No’**.
+
+Create a location:  
+Go to **Warehouse management > Setup > Warehouse > Locations**  
+Create a new location.  
+For ** “Location Profile ID” **, specify the previously created location profile.  
+For ** “Use warehouse” **, specify the warehouse created above. 
+
+Set up warehouse as retail store:
+Go to **Warehouse management > Setup > Warehouse > Warehouses**  
+Select the warehouse created above.  
+Under **Retail**, set ** “Store” ** = ** ‘Yes’**.  
+Set default a **Default return location**.  
+Set a ** “Default location” **.
+
+  > [!NOTE] Default locations are used
+    when operations are performed at the point of sale which should not require
+    cashier to set location. For example, retail sales have a use the ‘Default
+    location’ because the cashier does not know from which location the product was
+    retrieved by the shopper. Return locations are also specified so products can
+    be accounted for separately before it is determined if the can be resold or
+    should be otherwise disposed. 
+
+    Default locations should be set up according to instructions provided in ** ‘Create a location’**.
+
+Map a retail store to the warehouse:  
+Go to **Retail > Channels > Retail stores> All retail stores**  
+Select a store by clicking on the **Retail Channel ID**.  
+Under ** “Warehouse” ** click on the dropdown and select the warehouse created above and save.  
+Go to **Retail > Retail IT > Distribution schedule** and select job ID **1070**.  
+Click ** ‘Run now’** to sync the changes to the channel database. 
+   
 See also
 --------
 
