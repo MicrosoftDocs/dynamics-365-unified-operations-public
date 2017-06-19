@@ -58,8 +58,8 @@ The following example shows how you can enter employee payroll beginning balance
 ### A. How to set up earnings codes to be used on payroll beginning balances
 When you enter payroll beginning balances, be sure the earning codes that you will be using are configured with the "Allow editing of earning statement rates" option enabled. This will allow you to manually key the amount from the legacy system. 
 
-B. Create earnings statement for an employee to have a beginning balance
-This step creates earnings statement for the last pay period of the legacy system for each worker manually creating the earning statement lines in AX. Enter one line per earning code and the YTD amount and hours. Below are sample steps:
+### B. Create earnings statement for an employee to have a beginning balance
+This step manually creates an earnings statement for each worker for the last pay period of the legacy system, which creates the earning statement lines in the new payroll system. Enter one line per earning code and the YTD amount and hours. The sample steps are as follows:
 
 1. Open the **All earnings statements** page and click **New**.  
 
@@ -121,7 +121,7 @@ Line 3: **Earning statement line** tab
 
 Click **OK** and close the **Infolog**.
 
-### Why Disable Accounting checkbox needs to be turned on when generating pay statements?
+#### Why Disable Accounting checkbox needs to be turned on when generating pay statements?
 This prevents any lines in the pay statement from being distributed and posted to the General ledger. You do not want to post this beginning balance pay statement as its values are already in the general ledger from the legacy system. This balance loading is used for reporting and limiting purposes only.
 
 ### C. Create pay statements for employees
