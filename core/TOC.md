@@ -787,6 +787,7 @@
 #### Schedule production operations
 ##### [Operations scheduling](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Job scheduling](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Gantt chart for job scheduling](/dynamics365/unified-operations/supply-chain/production-control/visual-scheduling-production?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Operations scheduling options](/dynamics365/unified-operations/supply-chain/production-control/operation-scheduling-options?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Operate production jobs
 ##### [Create production orders](/dynamics365/unified-operations/supply-chain/production-control/create-production-orders?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -809,6 +810,7 @@
 ##### [Model a lean organization](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-modeling-lean-organization?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Operations resources](/dynamics365/unified-operations/supply-chain/production-control/operations-resources?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Schedule kanban jobs
+##### [Visual scheduling for lean manufacturing](/dynamics365/unified-operations/supply-chain/production-control/visual-scheduling-lean-manufacturing?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Kanban job scheduling for lean manufacturing](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-kanban-job-scheduling?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Job scheduling](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Operate kanban jobs
