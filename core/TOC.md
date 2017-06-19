@@ -1583,18 +1583,20 @@
 
 # [Dynamics 365 for Talent](/dynamics365/unified-operations/talent/index)
 
-## Develop a Human resources strategy
+## Develop a human resources strategy
 ### [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Set up job components](/dynamics365/unified-operations/talent/create-job?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Create a department and associate it with the department hierarchy](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Set up HR parameters across legal entities](/dynamics365/unified-operations/talent/set-up-hr-parameters-across-legal-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Set up company-specific HR parameters](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Personnel actions FAQ](Dynamics-365-Operations/hr/personnel-actions-faq.md)
 ### [Use workflow to manage employee information](/dynamics365/unified-operations/talent/workflow-manage-employee-information?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Motivate employees
 ### [Compensation plans](/dynamics365/unified-operations/talent/compensation-plans?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Create fixed compensation plans](/dynamics365/unified-operations/talent/create-fixed-compensation-plans?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Create variable compensation plans](/dynamics365/unified-operations/talent/create-variable-compensation-plans?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Process compensation](Dynamics-365-Operations/talent/process-compensation.md)
 
 ## Develop and train employees
 ### [Performance management overview](/dynamics365/unified-operations/talent/performance-management-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
