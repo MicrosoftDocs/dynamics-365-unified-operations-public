@@ -17,7 +17,7 @@ ms.search.form: HcmJob, HcmPosition, OMOperatingUnit
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 87933
