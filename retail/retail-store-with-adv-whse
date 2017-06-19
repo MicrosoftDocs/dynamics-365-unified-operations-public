@@ -1,0 +1,49 @@
+---
+# required metadata
+
+title: Retail store Advanced Warehouse setup
+description: This topic how to configure a warehouse to work as a retail warehouse as well as an advanced warehouse.
+author: rubencdelgado
+manager: AnnBe
+ms.date: 06/17/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: margoc
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
+# ms.tgt_pltfrm: 
+ms.custom: 
+s.assetid:  
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: rubendel
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.2
+
+---
+
+# Retail store Advanced Warehouse setup
+
+[!include[banner](includes/banner.md)]
+
+This page explains how to enable Advanced warehouse for a retail store. Advanced Warehouse is a set of capabilities  created to help manage warehouse environments where goods are being received, stored, staged and shipped. Warehouses that map to a retail store may also use the Advanced Warehouse capabilities to help manage products. While retail capabilities and advanced warehouse may be applicable in the same environment, they should each be used to perform their primary capabilities. That is, retail point of sale is specifically intended to conduct point of sale transactions whereas advanced warehouse is specifically used to manage product movement.  
+
+When a retail store warehouse is also an advanced warehouse, the retail point of sale does not host a lot of advanced warehouse capabilities, but it does satisfy requirements related to product movement to keep advanced warehouse running smoothly. Specifically, advanced warehouse requires locations for all product movements. When a retail store is configured as an advanced warehouse, stock counts and purchase order receipts performed in the point of sale will prompt the user to specify an inventory location. This is done so that Advanced Warehouse has adequate information about the stock being received.  
+
+Another capability added to retail to satisfy advanced warehouse capabilities is the definition of location defaults for sales and returns. When a product is sold from the point of sale, the stock is decremented from a specific location. In terms of how this location is handled be advanced warehouse, it could be considered a virtual location. This is because when the product is sold at the point of sale, the cashier does not have information about which specific inventory location it was pulled from on the showroom floor. In order to replenish the product sales from the default sales location, advanced warehouse must replenish actual physical locations where the goods are kept in the showroom. 
+
+    > [!NOTE]
+    
+    
+See also
+--------
+
+[Warehouse confirguration](warehouse-configuration.md)
