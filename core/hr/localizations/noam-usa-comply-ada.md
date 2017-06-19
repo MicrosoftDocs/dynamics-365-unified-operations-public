@@ -22,7 +22,7 @@ ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 2741
 ms.assetid: 42504e87-7cb1-42e0-8a8b-9bc91fb54095
-ms.search.region: United States
+ms.search.region: USA
 # ms.search.industry: 
 ms.author: kherr
 ms.search.validFrom: 2016-02-28

@@ -28,7 +28,8 @@ ms.author: arifk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
----# Dynamics 365 for Finance and Operations, Enterprise edition on-premises overview 
+---
+# Dynamics 365 for Finance and Operations, Enterprise edition on-premises overview 
 
 Dynamics 365 for Finance and Operations, Enterprise edition now supports running business processes in customer data centers with the on-premises or Local Business Data (LBD) deployment option. With this deployment option, application servers and the Microsoft SQL Server database will run in the customer's data center or the data center of the customer's partner. Customers and partners will manage the application lifecycle through Lifecycle Service (LCS) in the Microsoft Cloud. LCS features, such as business process modeling, software deployment and patching, and monitoring and diagnostics, are available for on-premises deployments. 
 

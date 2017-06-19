@@ -62,9 +62,7 @@ The following tables show the General leger data structure definitions.
 
 #### Sachkonten
 
-|     | Feldname                  | Feldtyp | Beschreibung                                      | Table in Finance and Operations
- | Field or method in Finance and Operations
- |
+|     | Feldname                  | Feldtyp | Beschreibung                                      | Table in Finance and Operations| Field or method in Finance and Operations|
 |-----|---------------------------|---------|---------------------------------------------------|--------------------------------------|------------------------------------------------|
 | 1   | SACHKONTONUMMER           | Zeichen | Nummer des Sachkontos                             | MainAccount                          | MainAccountId                                  |
 | 2   | SACHKONTONAME             | Zeichen | Bezeichnung des Sachkontos                        | MainAccount                          | Name                                           |
@@ -76,9 +74,7 @@ The following tables show the General leger data structure definitions.
 
 #### Sachkontobuchungen
 
-|     | Feldname               | Feldtyp   | Beschreibung                                      | Table in Finance and Operations
- | Field or method in Finance and Operations
-s |
+|     | Feldname               | Feldtyp   | Beschreibung                                      | Table in Finance and Operations | Field or method in Finance and Operations |
 |-----|------------------------|-----------|---------------------------------------------------|--------------------------------------|------------------------------------------------|
 | 1   | SACHKONTONUMMER        | Zeichen   | Nummer des Sachkontos                             | DiensionAttributeValueCombination    | DisplayValue                                   |
 | 2   | BUCHUNGSDATUM          | Datum     | Datum der Wertstellung                            | GeneralJournalEntry                  | AccountingDate                                 |
@@ -107,30 +103,29 @@ The following tables show the Tax data structure definitions.
 
 #### Umsatzsteuercodes
 
-|     | Feldname          | Feldtyp   | Beschreibung      | Table in Finance and Operations | Field or method in Finance and Operations
- |
-|-----|-------------------|-----------|-------------------|--------------------------------------|------------------------------------------------|
-| 1   | NAME              | Zeichen   | Name              | TaxTable                             | TaxName                                        |
-| 2   | BUCHUNGSGRUNDLAGE | Zeichen   | Buchungsgrundlage | TaxTable                             | TaxBase                                        |
-| 3   | PROZENTSATZ       | Num(2Dez) | Prozentsatz       | TaxData                              | TaxValue                                       |
-| 4   | GULTIGAB          | Datum     | Gültig ab         | TaxData                              | TaxFromDate                                    |
-| 5   | GULTIGBIS         | Datum     | Gültig bis        | TaxData                              | TaxToDate                                      |
+|     | Feldname          | Feldtyp   | Beschreibung      | Table in Finance and Operations | Field or method in Finance and Operations|
+|-----|-------------------|-----------|-------------------|--------------------------------------|-------------------------------------|
+| 1   | NAME              | Zeichen   | Name              | TaxTable                             | TaxName                             |
+| 2   | BUCHUNGSGRUNDLAGE | Zeichen   | Buchungsgrundlage | TaxTable                             | TaxBase                             |
+| 3   | PROZENTSATZ       | Num(2Dez) | Prozentsatz       | TaxData                              | TaxValue                           |
+| 4   | GULTIGAB          | Datum     | Gültig ab         | TaxData                              | TaxFromDate                         |
+| 5   | GULTIGBIS         | Datum     | Gültig bis        | TaxData                              | TaxToDate                           |
 
 #### MehrwertsteuerGruppen
 
 |     | Feldname                      | Feldtyp | Beschreibung               | Table in Finance and Operations | Field or method in Finance and Operations |
-|-----|-------------------------------|---------|----------------------------|--------------------------------------|------------------------------------------------|
-| 1   | MEHRWERTSTEUERGRUPPE          | Zeichen | Mehrwertsteuergruppe       | TaxGroupData                         | TaxGroup                                       |
-| 2   | BESCHREIBUNG                  | Zeichen | Beschreibung               | TaxGroupHeading                      | TaxGroupName                                   |
-| 3   | MWST\_AUF\_SKONTO\_STORNIEREN | Zeichen | MWSt auf Skonto stornieren | TaxGroupHeading                      | TaxReverseOnCashDisc                           |
-| 4   | MEHRWERTSTEUERCODE            | Zeichen | Mehrwertsteuercode         | TaxGroupData                         | TaxCode                                        |
-| 5   | MWST\_CODE\_NAME              | Zeichen | MWSt Code Name             | TaxTable                             | TaxName                                        |
-| 6   | ERWERBSSTEUER                 | Zeichen | Erwerbssteuer              | TaxGroupData                         | UseTax                                         |
+|-----|-------------------------------|---------|----------------------------|--------------------------------------|-----------------|
+| 1   | MEHRWERTSTEUERGRUPPE          | Zeichen | Mehrwertsteuergruppe       | TaxGroupData                         | TaxGroup       |
+| 2   | BESCHREIBUNG                  | Zeichen | Beschreibung               | TaxGroupHeading                      | TaxGroupName     |
+| 3   | MWST\_AUF\_SKONTO\_STORNIEREN | Zeichen | MWSt auf Skonto stornieren | TaxGroupHeading       | TaxReverseOnCashDisc   |
+| 4   | MEHRWERTSTEUERCODE            | Zeichen | Mehrwertsteuercode         | TaxGroupData                         | TaxCode    |
+| 5   | MWST\_CODE\_NAME              | Zeichen | MWSt Code Name             | TaxTable                             | TaxName  |
+| 6   | ERWERBSSTEUER                 | Zeichen | Erwerbssteuer              | TaxGroupData                         | UseTax       |
 
 #### Umsatzsteuerbuchungen
 
 |     | Feldname               | Feldtyp   | Beschreibung                                | Table in Finance and Operations | Field or method in Finance and Operations |
-|-----|------------------------|-----------|---------------------------------------------|--------------------------------------|------------------------------------------------|
+|-----|------------------------|-----------|---------------------------------------------|--------------------------------------|-----|
 | 1   | STEUERART              | Zeichen   | Beschreibung der Steuerart                  | TaxTrans                             | TaxName()                                      |
 | 2   | MWST\_CODE             | Zeichen   | MWST Bezeichung                             | TaxTrans                             | TaxCode                                        |
 | 3   | WERTSTELLUNG           | Datum     | Datum der Wertstellung der Buchung          | TaxTrans                             | TransDate                                      |

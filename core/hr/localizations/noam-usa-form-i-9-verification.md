@@ -22,7 +22,7 @@ ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 15611
 ms.assetid: d740ddb6-b8d7-4c12-b920-1f8afa25d026
-ms.search.region: United States
+ms.search.region: USA
 # ms.search.industry: 
 ms.author: shielas
 ms.search.validFrom: 2016-02-28

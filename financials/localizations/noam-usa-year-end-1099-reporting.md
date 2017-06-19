@@ -22,7 +22,7 @@ ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 6861
 ms.assetid: 518633aa-b341-47e6-ac7b-7c5841b50dc3
-ms.search.region: United States
+ms.search.region: USA
 # ms.search.industry: 
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
