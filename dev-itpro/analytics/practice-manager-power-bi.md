@@ -53,7 +53,7 @@ The following table provides details about the metrics that are found on each re
 
 | Report page                                          | Metrics               |
 |------------------------------------------------------|-----------------------------------------------|
-| Dashboard  | Created projects<br>Estimated projects<br>In-process projects<br>Number of projects by stage<br>Number of projects by city<br>Actual revenue by customer<br>Budget gross margin by project<br>Earned value management overview |
+| Projects overview  | Created projects<br>Estimated projects<br>In-process projects<br>Number of projects by stage<br>Number of projects by city<br>Actual revenue by customer<br>Budget gross margin by project<br>Earned value management overview |
 | Cost                                                 | Actual vs. budget cost by month<br>Actual vs. budget cost by year<br>Actual vs. budget cost by category<br>Actual cost by transaction type       |
 | Revenue                                              | Actual revenue by month<br>Actual revenue by postal code<br>Actual vs. budget revenue by category<br>Actual revenue by customer industry        |
 | EVM                                                  | Cost and schedule performance index by project                 |
@@ -80,16 +80,16 @@ The following sections explains the aggregate measurements that are used in each
 
 | Key aggregate measurement                | Field                                | Description                            | 
 |------------------------------------------|--------------------------------------|----------------------------------------|
-| ActualBillableUtilizedHours              | Sum(ActualUtilizationBillableRate)   | Total of actual billable utilized hours |
-| ActualBillableBurdenHours                | Sum(ActualBurdenBillableRate)        | Total of actual burden rate             |
+| Actual billable utilized hours              | Sum(ActualUtilizationBillableRate)   | Total of actual billable utilized hours |
+| Actual billable burden hours                | Sum(ActualBurdenBillableRate)        | Total of actual burden rate             |
 
 ### Entity: ProjectAccountingCube_Actuals
 **Data source**: ProjTransPosting
 
 | Key aggregate measurement                | Field                                | Description                            | 
 |------------------------------------------|--------------------------------------|----------------------------------------|
-| ActualRevenue                            |     Sum(ActualRevenue)               |  Total of posted revenue for all transaction |   
-| ActualCost   |                             Sum(ActualCost)           |    Total of posted cost for all transaction types    |
+| Actual revenue                            |     Sum(ActualRevenue)               |  Total of posted revenue for all transaction |   
+| Actual cost   |                             Sum(ActualCost)           |    Total of posted cost for all transaction types    |
 
 ### Entity: ProjectAccountingCube_Customer
 **Data source**: CustTable
@@ -104,16 +104,16 @@ The following sections explains the aggregate measurements that are used in each
 
 | Key aggregate measurement                | Field                                | Description                            | 
 |------------------------------------------|--------------------------------------|----------------------------------------|
-|    BudgetCost    |       Sum(BudgetCost)  |       Total of forecasted cost for all transaction types     |
-|     BudgetRevenue    |         Sum(BudgetRevenue)    |    Total of forecast accrued/invoiced revenue         |
-|BudgetGrossMargin | Sum(BudgetGrossMargin) |Difference between sum of total forecast revenue and sum of total forecast cost
+|    Budget cost    |       Sum(BudgetCost)  |       Total of forecasted cost for all transaction types     |
+|     Budget revenue    |         Sum(BudgetRevenue)    |    Total of forecast accrued/invoiced revenue         |
+|Budget gross margin | Sum(BudgetGrossMargin) |Difference between sum of total forecast revenue and sum of total forecast cost
 
 ### Entity: ProjectAccountingCube_ProjectPlanCostsView
 **Data source**: Project
 
 | Key aggregate measurement                | Field                                | Description                            | 
 |------------------------------------------|--------------------------------------|----------------------------------------|
-|      PlannedCost      |        Sum(SumOfTotalCostPrice)   | Total cost price in estimates for all project transaction types with planned tasks |
+|      Planned cost      |        Sum(SumOfTotalCostPrice)   | Total cost price in estimates for all project transaction types with planned tasks |
 
 ### Entity: ProjectAccountingCube_Projects
 **Data source**: Project
@@ -123,7 +123,7 @@ The following sections explains the aggregate measurements that are used in each
 |   Cost performance index  |ProjectAccountingCube_Projects[Earned value] / ProjectAccountingCube_Projects[Total actual cost of completed tasks] |     Calculation of total earned value divided by total actual cost|
 |  Schedule performance index |ProjectAccountingCube_Projects[Earned value] / ProjectAccountingCube_Projects[Total planned cost of completed tasks]|Calculation of total earned value divided by total planned cost |
 |Percentage of work completed |Percentage of work completed = ProjectAccountingCube_Projects[Total actual cost of completed tasks] / (ProjectAccountingCube_Projects[Total actual cost of completed tasks] + ProjectAccountingCube_Projects[Total planned cost of project] - ProjectAccountingCube_Projects[Total planned cost of completed tasks])|Total percentage of completed work based on the total actual cost of completed task and planned cost of the project|
-|Project actual billable Hours ratio|ProjectAccountingCube_Projects[Project total actual billable utilized hours] / (ProjectAccountingCube_Projects[Project total actual billable utilized hours] + ProjectAccountingCube_Projects[Project total actual billable burden hours])|Total actual billable hours based on utilized + burden|
+|Actual billable hours ratio|ProjectAccountingCube_Projects[Project total actual billable utilized hours] / (ProjectAccountingCube_Projects[Project total actual billable utilized hours] + ProjectAccountingCube_Projects[Project total actual billable burden hours])|Total actual billable hours based on utilized + burden|
 |Earned value|ProjectAccountingCube_Projects[Total planned cost of project] * ProjectAccountingCube_Projects[Percentage of work completed]|Total planned cost multiplied by percentage of completed work|
 
 ### Entity: ProjectAccountingCube_TotalEstimatedCosts 
@@ -131,6 +131,6 @@ The following sections explains the aggregate measurements that are used in each
 
 | Key aggregate measurement                | Field                                | Description                            | 
 |------------------------------------------|--------------------------------------|----------------------------------------|
-| CompletedActivityPlannedCost  |  Sum(TotalCostPrice)  |   Total cost price in estimates for all project transaction types with completed tasks|
+| Completed activity planned cost  |  Sum(TotalCostPrice)  |   Total cost price in estimates for all project transaction types with completed tasks|
 
 
