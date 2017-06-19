@@ -159,7 +159,7 @@ The virtual MSR that the peripheral simulator provides also lets you configure s
 
 ### PIN pad
 
-You can configure the PIN pad simulator to simulate an OPOS PIN pad. When an electronic funds transfer (EFT) transaction is performed at the POS and requires that a PIN be entered, the hardware station calls the PIN device to prompt for PIN entry. To work, the PIN pad in the peripheral simulator requires EFT payment connector support.
+You can configure the PIN pad simulator to simulate an OPOS PIN pad. When an electronic funds transfer (EFT) transaction is performed at the POS and requires that a PIN be entered, the hardware station calls the PIN device to prompt for PIN entry. To work, the PIN pad in the peripheral simulator must support an EFT payment connector.
 
 ### Printer
 
