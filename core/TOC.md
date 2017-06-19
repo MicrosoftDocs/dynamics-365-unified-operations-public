@@ -648,6 +648,7 @@
 #### Inventory counting
 ##### [Block inventory](/dynamics365/unified-operations/supply-chain/inventory/inventory-blocking?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cycle counting](/dynamics365/unified-operations/supply-chain/warehousing/cycle-counting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Partial location cycle counting](/dynamics365/unified-operations/supply-chain/warehousing/partial-location-cycle-counting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Inventory journal](/dynamics365/unified-operations/supply-chain/inventory/inventory-journals?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Inventory location](/dynamics365/unified-operations/supply-chain/inventory/inventory-locations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Inventory status](/dynamics365/unified-operations/supply-chain/inventory/inventory-statuses?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -655,6 +656,7 @@
 #### Containerization 
 #### Replenishment
 ##### [Replenishment](/dynamics365/unified-operations/supply-chain/warehousing/replenishment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Replenishment with withdrawal kanbans](/dynamics365/unified-operations/supply-chain/warehousing/material-replenishment-withdrawal-kanban?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Mobile devices
 ##### [Install and configure the warehousing app ](/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Configure field names in warehousing app](/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -692,6 +694,7 @@
 ##### [Delivery schedules](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-schedules?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Serial numbers in the sales process](/dynamics365/unified-operations/supply-chain/sales-marketing/register-serial-numbers-sales-process?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Reservation from same batch](/dynamics365/unified-operations/supply-chain/sales-marketing/reserve-same-batch-sales-order?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Sales orders mobile workspace](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Sales agreements](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-agreements?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Sales quotations
 ##### [Price simulation](/dynamics365/unified-operations/supply-chain/sales-marketing/price-simulation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
