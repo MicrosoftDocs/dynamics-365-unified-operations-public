@@ -1428,6 +1428,9 @@
 <!-- Retail section -->
 # [Dynamics 365 for Retail](/dynamics365/unified-operations/retail/index?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
+## Payments
+### [Payment methods](/dynamics365/unified-operations/retail/payment-methods?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ## Call center
 ### [Call center overview](/dynamics365/unified-operations/retail/call-center-functionality?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Call center catalogs](/dynamics365/unified-operations/retail/call-center-catalogs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
