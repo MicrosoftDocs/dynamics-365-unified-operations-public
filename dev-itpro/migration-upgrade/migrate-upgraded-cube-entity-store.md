@@ -2,7 +2,7 @@
 # required metadata
 
 title: Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store
-description: In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in Microsoft Dynamics 365 for Operations. You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.
+description: In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in Microsoft Dynamics 365 for Finance and Operations. You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 1
 [!include[banner](../includes/banner.md)]
 
 
-In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in Microsoft Dynamics 365 for Operations. You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.
+In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in Microsoft Dynamics 365 for Finance and Operations. You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.
 
 The entity store will support near real-time Microsoft Power BI integration scenarios, as shown in the following diagram. For an overview of Power BI integration with entity store, see [Power BI integration with entity store](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). [![Power BI Architecture diagram](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
 
@@ -57,7 +57,7 @@ This tutorial requires the Dynamics 365 for Operations May 2016 update or lat
 As part of the code upgrade process, analysis services projects from the Application Object Tree (AOT) in Dynamics AX 2012 can be migrated to the new aggregate measurements metadata format.
 
 1.  Launch Visual Studio and create a new project in Application Suite. **Note**: You can create a model and include the customized aggregate measurement within that model. For more information, see [Customization: Overlayering and extensions](..\extensibility\customization-overlayering-extensions.md).
-2.  Open Application Explorer. Navigate to **Analytics** &gt; **Perspectives** &gt; **Aggregate measurements**. You will notice a set of aggregate measurements that were upgraded from Dynamics AX 2012 R3, as well as the measurements that ship in the current version of Dynamics 365 for Operations.
+2.  Open Application Explorer. Navigate to **Analytics** &gt; **Perspectives** &gt; **Aggregate measurements**. You will notice a set of aggregate measurements that were upgraded from Dynamics AX 2012 R3, as well as the measurements that ship in the current version of Finance and Operations.
 3.  Select **SalesCube**. Right-click and select **Duplicate in project**.
 4.  An aggregate measurement with the name **SalesCubeCopy** will be added to the project.
 5.  Rename this measurement. Select **SalesCubeCopy** in Solution Explorer. Right-click and select **Rename**. Enter **SalesCubeV2** as the new name.
@@ -164,7 +164,7 @@ Notice that the asset library enables adding **PowerBI report models** (PBIX fil
 
 ### Configure an LCS project
 
-If you haven’t already done so, associate your environment with an LCS project so that Dynamics 365 for Operations is able to consume assets within the project.
+If you haven’t already done so, associate your environment with an LCS project so that Finance and Operations is able to consume assets within the project.
 
 1.  Launch the client from the instance that you want to use to deploy the Power BI reports. Typically this is the test or a production instance where you want to see a report with a different set of data than what you worked with as a report developer.
 2.  Open **System Administration** &gt; **Setup** &gt; **System parameters**. Select the **Help** tab. Using the **Lifecycle services help configuration** list box, select the LCS project that you uploaded the PBIX file to. Click **Save**. **Note:** This form will only show the LCS projects that the current user has access to. If this step is being performed by an administrator, either the administrator needs to have access to the project, or the PBIX artifacts need to be imported into a project that the administrator has access to.

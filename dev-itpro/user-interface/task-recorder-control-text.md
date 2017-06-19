@@ -40,7 +40,7 @@ This article describes how Task recorder determines what instruction label to ge
 Every control must have useful and meaningful instruction labels, so that the task guide, Microsoft Word document, and Help content meet Content Publishing standards for readability. We must first define two terms:
 
 -   **Control label** – The value that comes from the label property on the control.
--   **Instruction label** – The Microsoft Dynamics 365 for Operations label that a control instructs Task recorder to use when it's describing how to use that control (for example, “Click OK” or “In the First name field, enter ‘John’”).
+-   **Instruction label** – The label that a control instructs Task recorder to use when it's describing how to use that control (for example, “Click OK” or “In the First name field, enter ‘John’”).
 
 When a control logs an event to Task recorder, three methods can be used to determine the instruction label that is shown to the user:
 
@@ -69,7 +69,7 @@ However, typical end users might not know what it means to set a Checkbox to **T
 
 > Check Show infolog on failure.
 
-To make this improvement, someone must add a new Dynamics 365 for Operations label ID. That user must then use the label ID when the event is logged to Task recorder by using method 1:
+To make this improvement, someone must add a new label ID. That user must then use the label ID when the event is logged to Task recorder by using method 1:
 
 -   **Label ID:** Checkbox\_Value
 -   **Label string:** "%2 %1."
@@ -78,7 +78,7 @@ This change produces output that looks like this:
 
 > True Show infolog on failure.
 
-This isn't quite what we want to see. Therefore, in addition, when the Checkbox logs the property change event to Task recorder, it should pass in a specific *value label* that says either “Check” or “Uncheck.” If the control explicitly specifies a value label, Task recorder will use that value label instead of the raw data value that was recorded (**True** or **False**, in this case). See the code example later in this article (**OptionalValueLabelOverride**). After the user creates the new Dynamics 365 for Operations label and specifies the value label when the event is logged to Task recorder, the control will have suitable text output:
+This isn't quite what we want to see. Therefore, in addition, when the Checkbox logs the property change event to Task recorder, it should pass in a specific *value label* that says either “Check” or “Uncheck.” If the control explicitly specifies a value label, Task recorder will use that value label instead of the raw data value that was recorded (**True** or **False**, in this case). See the code example later in this article (**OptionalValueLabelOverride**). After the user creates the new label and specifies the value label when the event is logged to Task recorder, the control will have suitable text output:
 
 > Check Show infolog on failure.
 

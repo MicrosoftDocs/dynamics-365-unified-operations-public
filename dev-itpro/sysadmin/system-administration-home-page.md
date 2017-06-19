@@ -47,27 +47,27 @@ Lifecycle Services
 -   [Sign up for a subscription](../dev-tools/sign-up-preview-subscription.md)
 
 ## Hotfixes and updates
--   [Microsoft Dynamics 365 for Operations versions and update policy](../migration-upgrade/versions-update-policy.md)
+-   [Microsoft Dynamics 365 for Finance and Operations versions and update policy](../migration-upgrade/versions-update-policy.md)
 -   [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md)
 -   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
 -   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
--   [Install retail hotfixes](/dynamics365/operations/retail/dev-itpro/install-retail-hotfix?toc=/dynamics365/operations/dev-itpro/toc.json)
+-   [Install retail hotfixes](/dynamics365/unified-operations/retail/dev-itpro/install-retail-hotfix?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 -   [Installing a financial reporting binary hotfix](..\migration-upgrade\install-financial-reporting-binary-hotfix.md)
 -   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
 
 ## Upgrade
--   [Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](../migration-upgrade/upgrade-latest-update.md) 
--   [Upgrade Dynamics 365 for Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md)
+-   [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](../migration-upgrade/upgrade-latest-update.md) 
+-   [Upgrade Finance and Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md)
 -   [Upgrade the Dynamics 365 for Operations platform to the August 2016 release](../migration-upgrade/update-platform-each-release.md)
 -   [Process for upgrading a sandbox environment](../migration-upgrade/upgrade-sandbox-environment.md)
 -   [Upgrade data in development, demo, or sandbox environments](../migration-upgrade/upgrade-data-to-latest-update.md)
 
 
 ## Database administration
--   [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md)
--   [Copy a Microsoft Dynamics 365 for Operations database from SQL Server to an Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md)
+-   [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md)
+-   [Copy a Microsoft Dynamics 365 for Finance and Operations database from SQL Server to an Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md)
 -   [Request a point-in-time database restore on a non-production environment](../database/request-point-in-time-restore.md)
--   [Retain a copy of a Dynamics 365 for Operations database to restore later](../database/copy-operations-database.md)
+-   [Retain a copy of a Finance and Operations database to restore later](../database/copy-operations-database.md)
 
 ## Security
 -   [Role-based security](role-based-security.md)
@@ -81,13 +81,13 @@ Lifecycle Services
 -   [ISV licensing](../dev-tools/isv-licensing.md)
 
 ## Retail
--   [Microsoft Dynamics 365 for Operations – Retail for IT Pros and developers](/dynamics365/operations/retail/dev-itpro/dev-retail-home-page)
+-   [Microsoft Dynamics 365 for Finance and Operations – Retail for IT Pros and developers](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)
 
 ## Mobile
--   [Dynamics 365 for Operations mobile platform](../mobile-apps/mobile-platform.md)
+-   [Finance and Operations mobile platform](../mobile-apps/mobile-platform.md)
 
 ## General administration
--   [Dynamics 365 for Operations cloud platform monthly updates](faq-platform-monthly-updates.md)
+-   [Finance and Operations cloud platform monthly updates](faq-platform-monthly-updates.md)
 -   [Batch processing overview](batch-processing-overview.md)
 -   [Batch server overview](batch-server-overview.md)
 -   [Create a batch job](http://ax.help.dynamics.com/en/wiki/create-a-batch-job/) (Task guide)

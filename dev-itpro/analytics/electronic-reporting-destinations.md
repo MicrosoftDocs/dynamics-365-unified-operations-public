@@ -40,9 +40,9 @@ You can configure a destination for each Electronic reporting (ER) format config
 Electronic reporting (ER) format configurations usually contain at least one output component: a file. Typically, configurations contain multiple file output components of different types (for example, XML, TXT, or XLSX) that are grouped into either a single folder or multiple folders. ER destination management lets you preconfigure what occurs when each component is run. By default, when a configuration is run, a dialog box appears that lets the user save or open the file. The same behavior is also used when you import an ER configuration and don't configure any specific destinations for it. After a destination is created for a main output component, that destination overrides the default behavior, and the folder or file is sent according to the destination's settings.
 
 ## Availability and general prerequisites
-The ER destinations functionality isn't available in the Microsoft Dynamics 365 for Operations 7.0 (February 2016) release. Therefore, you must install Microsoft Dynamics 365 for Operations (November 2016 release) to use all the functions that are described in this topic. Alternatively, you can install one of the following prerequisites. However, be aware that these alternative provide a more limited ER destination experience.
+The ER destinations functionality isn't available in the Microsoft Dynamics AX 7.0 (February 2016). Therefore, you must install Microsoft Dynamics 365 for Operations version 1611 (November 2016) to use all the functions that are described in this topic. Alternatively, you can install one of the following prerequisites. However, be aware that these alternative provide a more limited ER destination experience.
 
--   Microsoft Dynamics 365 for Operations application version 7.0.1 (May 2016)
+-   Microsoft Dynamics AX application version 7.0.1 (May 2016)
 -   ER destination management [application hotfix](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
 
 You can set up destinations only for ER configurations that have been imported, and for the formats that are available on the **Electronic reporting configurations** page.
@@ -65,7 +65,7 @@ Various types of destinations are supported. You can disable or enable all types
 
 ### Email destination
 
-Set **Enabled** to **Yes** to send an output file by email. After this option is enabled, you can specify the email recipients, and edit the subject and body of the email message. You can set up constant texts for the email subject and body, or you can use ER formulas to dynamically create email texts. You can configure email addresses for ER in two ways. The configuration can be completed in the same way that the Print management feature in Dynamics 365 for Operations completes it. Alternatively, you can resolve an email address by using a direct reference to the ER configuration through a formula.
+Set **Enabled** to **Yes** to send an output file by email. After this option is enabled, you can specify the email recipients, and edit the subject and body of the email message. You can set up constant texts for the email subject and body, or you can use ER formulas to dynamically create email texts. You can configure email addresses for ER in two ways. The configuration can be completed in the same way that the Print management feature in Finance and Operations completes it. Alternatively, you can resolve an email address by using a direct reference to the ER configuration through a formula.
 
 ### Email address types
 
@@ -93,7 +93,7 @@ Use this email type if the configuration that you use has a node in the data sou
 
 [![Assigning an email address data source for an email destination](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
 
-**Note:** A Simple Mail Transfer Protocol (SMTP) server must be configured and available. You can specify your SMTP server in Dynamics 365 for Operations, at **System administration** &gt; **Setup** &gt; **Email** &gt; **Email parameters**.
+**Note:** A Simple Mail Transfer Protocol (SMTP) server must be configured and available. You can specify your SMTP server in Finance and Operations, at **System administration** &gt; **Setup** &gt; **Email** &gt; **Email parameters**.
 
 ### Archive destination
 
@@ -101,7 +101,7 @@ You can use this option to send output to either a Microsoft SharePoint folder o
 
 [![Document types page](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
 
-The location determines where the file is saved. After the **Archive** destination is enabled, the results of configuration execution can be saved in the Job archive. You can view the results at **Organization administration** &gt; **Electronic reporting** &gt; **Electronic reporting archived jobs**. **Note:** You can select a document type for the Job archive in Dynamics 365 for Operations, at **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting** &gt; **Electronic reporting parameters**.
+The location determines where the file is saved. After the **Archive** destination is enabled, the results of configuration execution can be saved in the Job archive. You can view the results at **Organization administration** &gt; **Electronic reporting** &gt; **Electronic reporting archived jobs**. **Note:** You can select a document type for the Job archive in Finance and Operations, at **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting** &gt; **Electronic reporting parameters**.
 
 #### SharePoint
 
@@ -123,7 +123,7 @@ If you set **Enabled** to **Yes**, a preview of the output is created. You can v
 
 ### Power BI destination
 
-Set **Enabled** to **Yes** to use your ER configuration to arrange the transfer of data from your instance of Dynamics 365 for Operations to Microsoft Power BI services. The transferred files are stored on a Microsoft SharePoint Server instance that must be configured for that purpose. For more information, see [Use an Electronic reporting configuration to provide Power BI with data from Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md). **Hint:** To override the default behavior (that is, the dialog box for a configuration), you can create a destination reference and a file destination for the main output component, and then disable all the destinations.
+Set **Enabled** to **Yes** to use your ER configuration to arrange the transfer of data from your instance of Finance and Operations to Microsoft Power BI services. The transferred files are stored on a Microsoft SharePoint Server instance that must be configured for that purpose. For more information, see [Use an Electronic reporting configuration to provide Power BI with data from Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md). **Hint:** To override the default behavior (that is, the dialog box for a configuration), you can create a destination reference and a file destination for the main output component, and then disable all the destinations.
 
 ## Security considerations
 Two types of privileges and duties are used for ER destinations. One type controls the ability to maintain the overall destinations that are configured for a legal entity (that is, it controls access to the **Electronic reporting destinations** page). The other type controls the ability of an application user to override, at run time, the destination settings that are configured by an ER developer or ER functional consultant.

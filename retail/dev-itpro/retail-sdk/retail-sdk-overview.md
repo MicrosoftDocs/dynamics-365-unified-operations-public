@@ -44,9 +44,9 @@ The Retail software development kit (SDK) includes code, code samples, templates
 
 ### Download the Retail SDK
 
-The Retail SDK is available in Microsoft Dynamics 365 for Operations development environments, and in hotfix packages in a Retail SDK folder. For more information see:
+The Retail SDK is available in development environments, and in hotfix packages in a Retail SDK folder. For more information see:
 
--   [Access Microsoft Dynamics 365 for Operations Development Instances](/dynamics365/operations/dev-itpro/dev-tools/access-instances). If you get the SDK from a development instance, it is immediately ready for configuration and use.
+-   [Access instances](/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances). If you get the SDK from a development instance, it is immediately ready for configuration and use.
 -   [Install Retail hotfixes.](../install-retail-hotfix.md) If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder. Retail hotfixes are cumulative and includes all other fixes.
 
 We recommend that you put the SDK in a source control system such as Visual Studio Online.
@@ -65,7 +65,7 @@ The Retail SDK includes tools that generate new packages that include everythin
 
 ### Better code separation
 
-Whenever the Retail SDK must be updated, a potential code merge is required. This requirement applies if existing code was changed. Some new features in the implementation of Microsoft Dynamics 365 for Operations for Retail and in the folder structure of the SDK help provide better separation of customization code from sample code. Therefore, these features eliminate much of this issue. You can expect more improvements in this area in the future.
+Whenever the Retail SDK must be updated, a potential code merge is required. This requirement applies if existing code was changed. Some features in the implementation and in the folder structure of the SDK help provide better separation of customization code from sample code. Therefore, these features eliminate much of this issue. You can expect more improvements in this area in the future.
 
 ### Real-world implementation samples
 
@@ -230,7 +230,7 @@ A very important point to emphasize is that the non-customized Retail SDK should
 
 #### Customization branch
 
-After development can start, a new branch should be started (customization branch). At the beginning of the initial branch-out, this branch will be an exact copy of the Retail SDK mirror branch. This is the branch for a team’s development. The version of the customization branch must be incremented at least every time that a build is created for testing, or it can even be incremented daily. The file version to increment is defined in Customization.setting file by using the **CustomVersion** property. If you update it and rebuild, all binaries, packages, manifest files are updated accordingly. Note that the **CustomAssemblyVersion** property should be updated only when the update isn't backward compatible and/or for major new releases. In other words, this update should very rarely. For example, Microsoft’s assembly version stayed the same for the multiple CTP releases for the current version of Microsoft Dynamics 365 for Operations. Because there are both Microsoft assets and your own changes in the same branch, the branch essentially has two file versions. The first version is the Microsoft version of the Retail SDK that the current branch is based on, and the second version is the version that is set by the **CustomVersion** property. In the previous illustration, the current file version of the customization branch is 1.0.2.\* (based on Microsoft version 7.0.2200.3). The file version of the first rolled-out release was 1.0.0.40 (based on 7.0.2000.0). When a testing phase is completed, and the final packages are being deployed with that version, it's important that you increment the version (or create a source control label).
+After development can start, a new branch should be started (customization branch). At the beginning of the initial branch-out, this branch will be an exact copy of the Retail SDK mirror branch. This is the branch for a team’s development. The version of the customization branch must be incremented at least every time that a build is created for testing, or it can even be incremented daily. The file version to increment is defined in Customization.setting file by using the **CustomVersion** property. If you update it and rebuild, all binaries, packages, manifest files are updated accordingly. Note that the **CustomAssemblyVersion** property should be updated only when the update isn't backward compatible and/or for major new releases. In other words, this update should very rarely. For example, Microsoft’s assembly version stayed the same for the multiple CTP releases for the current version. Because there are both Microsoft assets and your own changes in the same branch, the branch essentially has two file versions. The first version is the Microsoft version of the Retail SDK that the current branch is based on, and the second version is the version that is set by the **CustomVersion** property. In the previous illustration, the current file version of the customization branch is 1.0.2.\* (based on Microsoft version 7.0.2200.3). The file version of the first rolled-out release was 1.0.0.40 (based on 7.0.2000.0). When a testing phase is completed, and the final packages are being deployed with that version, it's important that you increment the version (or create a source control label).
 
 
 

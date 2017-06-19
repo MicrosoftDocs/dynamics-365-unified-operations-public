@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Information access and reporting in Dynamics 365 for Operations
-description: This topic explains the various reporting options available as part of the Dynamics 365 for Operations platform.
+title: Information access and reporting in Finance and Operations
+description: This topic explains the various reporting options available as part of the Finance and Operations platform.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,33 +30,33 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Information access and reporting in Dynamics 365 for Operations
+# Information access and reporting in Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic explains the various reporting options available as part of the Dynamics 365 for Operations platform.
+This topic explains the various reporting options available as part of the Finance and Operations platform.
 
 Why information access is important?
 ------------------------------------
 
-Information access is an essential part of an ERP solution and represents a significant portion of the user engagement with the system. Consider the numerous methods of capturing information related to daily activities and the level of investments required to manage the data. Employees depend on logical interpretations of massive amounts of data to stay on top of their daily tasks. Out of the box the Dynamics 365 for Operations platform provides a collection of reporting solutions to address the various information access needs of an ERP solution. In an increasingly competitive environment, mergers and acquisitions seem to occur as often as the change in seasons. More than ever before, businesses today are finding ways to expand their global reach to attract more customers. To be successful, they must adapt legacy solutions used to communicate with customers and prepare for the enforcement of regional regulatory requirements associated with new markets. Beyond the primitive functions provided by Microsoft Azure – compute, networking, storage, and authentication – the Dynamics 365 for Operations platform provides tools to manage resources for organizations that span in size from small businesses to global enterprise conglomerates. These tools are designed with flexibility in mind, to accommodate a dynamic world of business.
+Information access is an essential part of an ERP solution and represents a significant portion of the user engagement with the system. Consider the numerous methods of capturing information related to daily activities and the level of investments required to manage the data. Employees depend on logical interpretations of massive amounts of data to stay on top of their daily tasks. Out of the box the Finance and Operations platform provides a collection of reporting solutions to address the various information access needs of an ERP solution. In an increasingly competitive environment, mergers and acquisitions seem to occur as often as the change in seasons. More than ever before, businesses today are finding ways to expand their global reach to attract more customers. To be successful, they must adapt legacy solutions used to communicate with customers and prepare for the enforcement of regional regulatory requirements associated with new markets. Beyond the primitive functions provided by Microsoft Azure – compute, networking, storage, and authentication – the Finance and Operations platform provides tools to manage resources for organizations that span in size from small businesses to global enterprise conglomerates. These tools are designed with flexibility in mind, to accommodate a dynamic world of business.
 
-## What is a 'report' in Dynamics 365 for Operations?
-A *report* can be defined simply as a structured presentation of data. Under ideal circumstances, reports materialize data in such a way that it allows the user to make informed decisions. Dynamics 365 for Operations supports a broad spectrum of information access scenarios: cross company all-up financial reporting; analytical dashboards and tiles; electronically transferable funds; customer sales invoices; checks and tax documents; and many more. Examples of integrated report scenarios that involve the consumption of business data include:
+## What is a 'report' in Finance and Operations?
+A *report* can be defined simply as a structured presentation of data. Under ideal circumstances, reports materialize data in such a way that it allows the user to make informed decisions. Finance and Operations supports a broad spectrum of information access scenarios: cross company all-up financial reporting; analytical dashboards and tiles; electronically transferable funds; customer sales invoices; checks and tax documents; and many more. Examples of integrated report scenarios that involve the consumption of business data include:
 
 -   **Native controls** including list pages, grid controls, and chart visualizations.
 -   **Dashboards and workspaces** containing predefined and personalized views.
 -   **Financial reporting** providing all-up views across legal entities.
 -   **Structured documents** distributed internally to employees or externally to customers and vendors.
 
-Although each of these scenarios at its core involves the presentation of structured business data, the process of accessing these reports and how the results are subsequently consumed varies greatly. Flexibility in the user tooling is essential for scenarios that involve data exploration. By contrast, layout precision is required for compliance with most regulatory documents. Given the diversity of information access scenarios it’s understandable that not all reports are created equal. This topic is intended to help familiarize you with the various reporting options available as part of the Dynamics 365 for Operations platform.
+Although each of these scenarios at its core involves the presentation of structured business data, the process of accessing these reports and how the results are subsequently consumed varies greatly. Flexibility in the user tooling is essential for scenarios that involve data exploration. By contrast, layout precision is required for compliance with most regulatory documents. Given the diversity of information access scenarios it’s understandable that not all reports are created equal. This topic is intended to help familiarize you with the various reporting options available as part of the Finance and Operations platform.
 
 ## Common myths of reporting
 To become a proficient *report* *maker*, it’s often useful to let go of past inhibitions. The following section seeks to rebuke three common myths about reporting. **Myth \#1: Operational reports require “real-time” data** To the contrary, there are relatively few reporting scenarios that require *real-time* results. And, in the grand scheme of things, taking a critical stance on a request for *real-time* views is recommended given the high development costs and potential heavy burden these solutions may incur on production environments. **Myth \#2: The best tool is the one the developer is most comfortable using** Consider a customer request for a report that allows them to monitor company’s assets. In the past, a developer would build a static report displaying a list of inventory items with complex calculations relying entirely on the user to provide filters to sufficiently reduce the result set. This solution may function perfectly in developer environments with a reduced data set. However, this approach is prone to unnecessarily consume significant amounts of compute resources when utilized in production. **Myth \#3: Developers are good at creating visually compelling designs** In reality, developers are the often the worst offenders when it comes to producing elegant design layouts that will appeal to the customer’s aesthetic preferences. When it comes to analytical reports you’re better off empowering users to both explore the data directly and share personalized views.
 
 ## Understanding report requirements
-The best reporting solutions are designed with the expertise, daily functions, and information access needs of the target user in mind. The Dynamics 365 for Operations platform offers several tools designed to meet the functional requirements which are common across various reporting experiences. Without question, selecting the right tool that most effectively addresses the *need* requires a clear understanding of the customer experience. You can drastically increase your chances of delivering a complete and robust solution that fully satisfies customer requirements by simply asking the right questions. Here are some leading questions to ask when evaluating customer requirements for reporting solutions:
+The best reporting solutions are designed with the expertise, daily functions, and information access needs of the target user in mind. The Finance and Operations platform offers several tools designed to meet the functional requirements which are common across various reporting experiences. Without question, selecting the right tool that most effectively addresses the *need* requires a clear understanding of the customer experience. You can drastically increase your chances of delivering a complete and robust solution that fully satisfies customer requirements by simply asking the right questions. Here are some leading questions to ask when evaluating customer requirements for reporting solutions:
 
 -   **Get to know the user**
     -   What is the proficiency of the target persona? Are they familiar with analytical tools like Microsoft Excel?
@@ -74,7 +74,7 @@ The best reporting solutions are designed with the expertise, daily functions, a
 It’s understandable that customers *want* a solution that aligns with the existing processes they are comfortable using. However, there’s a lot you can learn through these leading questions used to discover what the customer actually *needs* to be successful in their task. Delight your customers by providing them with solutions that empower them to be more productive.
 
 ## Reporting experiences in Dynamics 365 for Operations
-Information access scenarios supported in Dynamics 365 for Operations applications can be broken down into five distinct reporting experiences. Specialized tools are provided to meet the complex and diverse reporting needs of various functions throughout the organization.
+Information access scenarios supported in Finance and Operations applications can be broken down into five distinct reporting experiences. Specialized tools are provided to meet the complex and diverse reporting needs of various functions throughout the organization.
 
 -   **Operational views** – Designed to address the specific needs of a given business persona.
 -   **Business documents** – Static documents used to capture and exchange processed business data.
@@ -111,7 +111,7 @@ Operational views represent an essential part of the average employee’s daily 
 -   Form data sources now support aggregate queries for analytical views using native controls.
 
 ## Analytical tools and visualizations
-Embedded visuals based on analytical data allow users to navigate between aggregate views down to the transactional details that affect them. Power BI service integration in Dynamics 365 for Operations delivers world-class analytical tools with built-in support for accessing data. These tools empower "citizen developers" to author the reports they need and share the reports with others within the organization. Use the Power BI content packs available in Lifecycle Services to get started. Learn more about Power BI integration in [Power BI integration](power-bi-integration.md). Example applications of analytical tools and visualizations include customer sales per quarter, total revenue by region, and inventory turn-over. 
+Embedded visuals based on analytical data allow users to navigate between aggregate views down to the transactional details that affect them. Power BI service integration in Finance and Operations delivers world-class analytical tools with built-in support for accessing data. These tools empower "citizen developers" to author the reports they need and share the reports with others within the organization. Use the Power BI content packs available in Lifecycle Services to get started. Learn more about Power BI integration in [Power BI integration](power-bi-integration.md). Example applications of analytical tools and visualizations include customer sales per quarter, total revenue by region, and inventory turn-over. 
 
 [![supplier-quality-analysis-report](./media/supplier-quality-analysis-report.png)](./media/supplier-quality-analysis-report.png) 
 
@@ -132,7 +132,7 @@ Embedded visuals based on analytical data allow users to navigate between aggreg
 **What’s important to consider when selecting this tool for the job?**
 
 -   Developers are responsible for publishing data entities that can be consumed by Power BI.
--   Power users can produce mash-up views based on Dynamics 365 for Operations data combined with external data sources.
+-   Power users can produce mash-up views based on Finance and Operations data combined with external data sources.
 -   Visuals are highly-responsive to user interactions and provide near real-time results when using Direct Query access to the data source.
 
 ## Business documents
@@ -178,7 +178,7 @@ Electronic reporting (ER) is the tool to use to configure electronic document fo
 -   Use formulas to define data transformations into groups containing summary data and logical calculations.
 
 ## Financial reporting
-Standard financial reports are provided using the default main account categories in Dynamics 365 for Operations. Use the report designer to create or modify traditional financial statements, such as Income statement and Balance sheet and share the results with other members of your organization. For detailed information about the Financial reporting tooling, see [Financial reporting](/dynamics365/operations/financials/general-ledger/general-ledger). Example applications of electronic reporting include balance sheets, cash flow, and summary trial balance year over year. 
+Standard financial reports are provided using the default main account categories in Finance and Operations. Use the report designer to create or modify traditional financial statements, such as Income statement and Balance sheet and share the results with other members of your organization. For detailed information about the Financial reporting tooling, see [Financial reporting](/dynamics365/unified-operations/financials/general-ledger/general-ledger). Example applications of electronic reporting include balance sheets, cash flow, and summary trial balance year over year. 
 
 [![financial-reporting-example](./media/financial-reporting-example.png)](./media/financial-reporting-example.png) 
 

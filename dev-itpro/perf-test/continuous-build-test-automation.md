@@ -131,7 +131,7 @@ As part of code Migration process or development activities, we expect you to ch
 9.  After the deployment is complete, you can use Remote Desktop to view Developer and Build VM.
 
 ## Use a Developer VM environment
-When a Developer VM gets deployed, it’s auto-configured with a workspace that will be used to synchronize your code from source control (VSTS). As this Developer VM has Dynamics 365 for Operations deployed on it, it can also be used as a test VM.
+When a Developer VM gets deployed, it’s auto-configured with a workspace that will be used to synchronize your code from source control (VSTS). As this Developer VM has Microsoft Dynamics 365 for Finance and Operations, Enterprise edition deployed on it, it can also be used as a test VM.
 
 ### Configure Visual Studio to connect to VSTS
 

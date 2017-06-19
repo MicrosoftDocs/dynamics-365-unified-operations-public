@@ -2,7 +2,7 @@
 # required metadata
 
 title: Lean manufacturing overview
-description: This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics AX.
+description: This article provides an overview and description of the lean manufacturing features in Dynamics 365 for Finance and Operations.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,17 +35,17 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics AX.
+This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 Lean manufacturing offers tools that you can use to model lean operations. These tools support and promote the following concepts and business activities:
 -   Create a lean manufacturing foundation by modeling manufacturing and logistics processes as production flows.
 -   Implement a lean pull system by using kanbans to signal demand requirements.
 -   Monitor and maintain kanban jobs.
 
-The lean manufacturing architecture in Microsoft Dynamics AX 7 consists of production flows, activities, and kanban rules. These structures are fully integrated with Microsoft Dynamics AX 7 processes. You can use lean manufacturing in a mixed-mode manufacturing environment that combines various supply, production, and sourcing strategies. These strategies include production orders, batch orders for process industries, purchase orders, and transfer orders.
+The lean manufacturing architecture in Finance and Operations consists of production flows, activities, and kanban rules. These structures are fully integrated with Finance and Operations processes. You can use lean manufacturing in a mixed-mode manufacturing environment that combines various supply, production, and sourcing strategies. These strategies include production orders, batch orders for process industries, purchase orders, and transfer orders.
 | **Important**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| You can use Microsoft Dynamics AX 7 to support the implementation of lean manufacturing with kanbans. However, a successful implementation of lean principles depends on the internal business processes that you use, and the actual production conditions and environment. |
+| You can use Finance and Operations to support the implementation of lean manufacturing with kanbans. However, a successful implementation of lean principles depends on the internal business processes that you use, and the actual production conditions and environment. |
 
 ## Modeling manufacturing and logistics processes as production flows
 To create a lean manufacturing foundation, model the manufacturing and logistics processes as production flows. This activity consists of the following tasks:
@@ -73,8 +73,8 @@ The following list describes the specialized kanban boards:
 -   Kanban board for transfer jobs – This board provides an overview of the current transfer jobs. You can update and register picking lists, start and complete transfer jobs, and perform other tasks.
 -   Kanban board for process jobs – This board is designed to support the normal production flow and give an overview of the current situation in one or multiple work cells. From this board Kanbans can be prioritized, picked, or manufactured. The board is also designed to support barcode scanning for the reporting of Kanbans.
 
-## Kanban jobs and integration with Microsoft Dynamics AX processes
-Kanban jobs are fully integrated with current processes for inventory transactions in Microsoft Dynamics AX.
+## Kanban jobs and integration with Finance and Operations processes
+Kanban jobs are fully integrated with current processes for inventory transactions in Finance and Operations.
 -   You can perform picking activities to replenish material that is used to fulfill the requirements of kanban jobs.
 -   You can print kanban cards, circulating kanban cards, and picking lists to support the use of kanbans. These documents are used to represent, track, and register kanban jobs in the warehouse and on the production floor.
 -   You can register the picking and transfer activities in inventory by scanning bar codes.

@@ -1,12 +1,12 @@
-# [Dynamics 365 for Operations - Retail for IT pros and developers](dev-retail-home-page.md)
+# [Microsoft Dynamics 365 for Retail - Retail for IT pros and developers](dev-retail-home-page.md)
 
 # Architecture
-## [Components of Microsoft Dynamics 365 for Operations - Retail](..\retail-components.md)
+## [Components](..\retail-components.md)
 ## [Retail Server architecture](retail-server-architecture.md)
 ## [Retail channel communications](define-retail-channel-communications-cdx.md)
 ## [MPOS architecture](retail-modern-pos-architecture.md)
 ## [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)
-## [Retail Channel Performance Power BI content](/dynamics365/operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
+## [Retail Channel Performance Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
 
 # Deployment and hotfixes
 ## [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
@@ -17,7 +17,7 @@
 ### [Secure retail Cloud POS](secure-retail-cloud-pos.md)
 ## [Retail Hardware Station configuration and installation](../retail-hardware-station-configuration-installation.md)
 ## [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
-## [Apply a deployable package](/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system)
+## [Apply a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system)
 
 # Extensibility
 ## Point of sale

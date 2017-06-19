@@ -66,13 +66,13 @@ You can store contacts for a vendor. These contacts can then be used on document
 
 To add contacts for a vendor, on the **All vendors** page, on the **Vendor** tab, in the **Set up** group, click **Contacts** &gt; **Add contacts**.  
 
-You can create vendor contacts from scratch. Alternatively, you can copy details from another person who is already registered in Microsoft Dynamics 365 for Operations, and edit the information as you require.  
+You can create vendor contacts from scratch. Alternatively, you can copy details from another person who is already registered in Microsoft Dynamics 365 for Finance and Operations, and edit the information as you require.  
 
 **Note:** Adding a contact for a vendor isn't the same as adding contact information for that vendor. Although you might add general contact information for a vendor, you might also have several specific people who are contacts at that company, and who all have their own contact information.  
 
 You can't delete a contact person record if the contact is referenced on a document. Instead, you can inactivate the contact.  
 
-You can add vendor contacts to your personal contacts in Microsoft Office 365. However, you must first set up synchronization between Dynamics 365 for Operations and Office 365 in both Microsoft Exchange Server synchronization and the Microsoft Outlook setup wizard.
+You can add vendor contacts to your personal contacts in Microsoft Office 365. However, you must first set up synchronization between Finance and Operations and Office 365 in both Microsoft Exchange Server synchronization and the Microsoft Outlook setup wizard.
 
 ## Vendors in different legal entities
 If a vendor is registered for only one legal entity in your organization, and other legal entities must register the same vendor, you can use the **Add vendor to another legal entity** page to configure the vendor to do business with another legal entity. You must select a vendor group, currency, and hold status for the vendor in the selected legal entity.  

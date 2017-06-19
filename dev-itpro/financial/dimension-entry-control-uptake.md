@@ -102,7 +102,7 @@ Some Dimension Entry controls might not have the controller property set. The co
 Replace this based on the migration guidance. */
 DimensionEntryControl.reactivate();</code></pre>
 
-### Dynamics 365 for Operations 
+### Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 
 The reactivate method refreshes the Dimension Entry control with current settings. The method only refreshes the control if the company or displayed dimension list changes. This call can be removed if neither of these are changed before it. Otherwise leave the call as is. If parmCompany() is called immediately before reactivate(), and it is the only DEC API called before reactivate(), and the method it resides in is called during the active() of the datasource; an optimization can be manually made to improve performance and reduce code uptake:
 <p>1) Remove the parmCompany() and reactivate() calls during the datasource active process.</p>
 <p>2) In the form init(), run(), datasource init(), or similar methods called before initial user interaction with the form, add the following line of code:</p>
@@ -115,7 +115,7 @@ This change will allow the DEC to automatically find the company field reference
 Replace this based on the migration guidance. */
 DimensionEntryControl.setEditability(true, 0);</code></pre>
 
-### Dynamics 365 for Operations 
+### Finance and Operations  
 If a specific editable dimension set is needed, replace this call with:
 <pre><code>DimensionEntryControl.parmEditableDimensionSet(
     editableDimensionSet);</code></pre>
@@ -127,7 +127,7 @@ This method can be removed if there is
 no custom implementation */
 // dimensionDefaultingController.pageActivated();</code></pre>
 
-### Dynamics 365 for Operations 
+### Finance and Operations  
 If this call is made within the pageActivated method of the Dimension Entry control’s parent control or the form init method, it can be removed. The intent of this method call outside the above mentioned locations isn’t clear. Remove the call and test the control.
 
 ### Dynamics AX 2012
@@ -135,7 +135,7 @@ If this call is made within the pageActivated method of the Dimension Entry cont
 Replace this based on the migration guidance. */
 DimensionEntryControl.deleted();</code></pre>
 
-### Dynamics 365 for Operations 
+### Finance and Operations  
 A TODO will be left for a call to deleted() that is not inside a data source delete method. These calls are only expected to be in data source delete methods, and there is no replacement. Try to remove the call and test the control.
 
 ### Dynamics AX 2012
@@ -143,7 +143,7 @@ A TODO will be left for a call to deleted() that is not inside a data source del
 Replace this based on the migration guidance. */
 // dimensionDefaultingController.writing();</code></pre>
 
-### Dynamics 365 for Operations 
+### Finance and Operations  
 The Dimension Entry control framework will save values. Remove the call and test the control.
 
 ### Dynamics AX 2012
@@ -151,7 +151,7 @@ The Dimension Entry control framework will save values. Remove the call and test
 Replace this based on the migration guidance. */
 dimensionDefaultingController::findBackingEntityInstance();</code></pre>
 
-### Dynamics 365 for Operations 
+### Finance and Operations  
 To find the entity, the getEntityInstance method needs to be called from the DimensionAttributeValue. Replace this call with something similar to the following:
 <pre><code>DimensionAttributeValue dimAttrValue = 
     DimensionAttributeValue::
@@ -166,7 +166,7 @@ if (dimAttrValue) {
 Replace this based on the migration guidance. */
 DimensionEntryControlHeader.updateValues(NoYesUnchanged::Yes);</code></pre>
 
-### Dynamics 365 for Operations 
+### Finance and Operations  
 Since the updateValues() method is only called with one parameter here, the call can be replaced with a call to allowEdit().
 <pre><code>DimensionEntryControlHeader.allowEdit(
     NoYesUnchanged::Yes);</code></pre>
@@ -177,7 +177,7 @@ Replace this based on the migration guidance. */
 DimensionEntryControlHeader.updateValues(
     NoYesUnchanged::No, true);</code></pre>
 
-### Dynamics 365 for Operations
+### Finance and Operations 
 Since the call to updateValues() has two parameters in this case, it needs to be replaced with a call to allowEdit() to change the editability of the control and a call to loadAttributeValueSet() to clear the control’s values.
 <pre><code>DimensionEntryControlHeader.allowEdit(
     NoYesUnchanged::No);
@@ -190,51 +190,51 @@ Any leftover methods on the datasource or tabpage/group that holds the Dimension
 ### Dynamics AX 2012
 <pre><code>public int active(){int ret;ret = super();return ret;}</code></pre>
 
-### Dynamics 365 for Operations
+### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
 <pre><code>public void delete(){super();}</code></pre>
-### Dynamics 365 for Operations
+### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
 <pre><code>public void deleted(){super();}</code></pre>
 
-### Dynamics 365 for Operations
+### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
 <pre><code>public void deleting(){super();}</code></pre>
 
-### Dynamics 365 for Operations
+### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
 <pre><code>public boolean validateDelete(){boolean ret;ret = super();return ret;}</code></pre>
 
-### Dynamics 365 for Operations
+### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
 <pre><code>public void write(){super();}</code></pre>
 
-### Dynamics 365 for Operations
+### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
 <pre><code>public void writing(){super();}</code></pre>
-### Dynamics 365 for Operations
+### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
 <pre><code>public void written(){super();}</code></pre>
-### Dynamics 365 for Operations
+### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
 <pre><code>public boolean validateWrite(){boolean ret;ret = super();return ret;}</code></pre>
-### Dynamics 365 for Operations
+### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
@@ -245,7 +245,7 @@ This method will be on the data source. It can be removed if there is no custom 
     there is no custom implementation */
     // dimensionDefaultingController.pageActivated();
 }</code></pre>
-### Dynamics 365 for Operations
+### Finance and Operations 
 This method will be on the tabpage or group that holds the Dimension Entry control. If there is no custom logic, the method can be deleted.
 
 ## **Compile Errors**
@@ -269,7 +269,7 @@ parmDimensionDefaultingControllerHeader(
    return dimensionDefaultingControllerHeader;
 }</code></pre>
 
-### Dynamics 365 for Operations
+### Finance and Operations 
 
 <strong>On the form (PurchTable):</strong>
 <pre><code>purchTableForm.parmDimensionEntryControlHeader(

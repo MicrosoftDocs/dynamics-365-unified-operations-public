@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a new transportation management engine
-description: This article describes how to create a new transportation management engine in Microsoft Dynamics 365 for Operations. 
+description: This article describes how to create a new transportation management engine in Microsoft Dynamics 365 for Finance and Operations. 
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,14 +35,14 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes how to create a new transportation management engine in Microsoft Dynamics 365 for Operations. 
+This article describes how to create a new transportation management engine in Microsoft Dynamics 365 for Finance and Operations. 
 
-Transportation management (TMS) engines define the logic that is used to generate and process transportation rates in Transportation management. Microsoft Dynamics 365 for Operations provides several different engine types that calculate different parameters, such as rates, transit times, and the number of zones that will be crossed during transit. This article explains how to use the Microsoft Visual Studio development environment together with Dynamics 365 for Operations development tools to create and deploy a new TMS engine, and then how to set up the engine in Operations. For more information about the engines that Dynamics 365 for Operations provides, see [Transportation management engines](transportation-management-engines.md).
+Transportation management (TMS) engines define the logic that is used to generate and process transportation rates in Transportation management. Microsoft Dynamics 365 for Finance and Operations provides several different engine types that calculate different parameters, such as rates, transit times, and the number of zones that will be crossed during transit. This article explains how to use the Microsoft Visual Studio development environment together with Finance and Operations development tools to create and deploy a new TMS engine, and then how to set up the engine in Operations. For more information about the engines that Finance and Operations provides, see [Transportation management engines](transportation-management-engines.md).
 
 ## Create a new TMS engine
-This section explains how to create a class library that has a TMS engine implementation, and how to reference it from a Dynamics 365 for Operations model.
+This section explains how to create a class library that has a TMS engine implementation, and how to reference it from a Finance and Operations model.
 
-1.  To deploy your new engines, you must have a Dynamics 365 for Operations model that will contain the engines. On the **Dynamics 365** &gt; **Model Management** menu, click **Create model** to create a new model. On the first page of the **Create model** wizard, name the model **TMSEngines**. 
+1.  To deploy your new engines, you must have a Finance and Operations model that will contain the engines. On the **Dynamics 365** &gt; **Model Management** menu, click **Create model** to create a new model. On the first page of the **Create model** wizard, name the model **TMSEngines**. 
 
   [![Creating a model](./media/012.png)](./media/012.png)
 
@@ -58,9 +58,9 @@ This section explains how to create a class library that has a TMS engine implem
 
   [![Completing model creation](./media/042.png)](./media/042.png)
 
-5.  In a new solution, create a new Dynamics 365 for Operations project, and name it **TMSThirdParty**. In the project properties, set the project's model to **TMSEngines**.
+5.  In a new solution, create a new Finance and Operations project, and name it **TMSThirdParty**. In the project properties, set the project's model to **TMSEngines**.
 6.  Add a new C\# class library to your solution, and name it **ThirdPartyTMSEngines**.
-7.  In the ThirdPartyTMSEngines project, add references to Dynamics 365 for Operations–specific assemblies:
+7.  In the ThirdPartyTMSEngines project, add references to Finance and Operations–specific assemblies:
     -   Application assemblies that enable X++ types to be referenced. These assemblies can be found in the following locations. \[Packages root\] is the path of the location where all the deployed Dynamics 365 for Operations assemblies are placed, such as C:\\Packages.
 
             [Packages root]\ApplicationPlatform\bin\Dynamics.AX.ApplicationPlatform.dll
@@ -115,26 +115,26 @@ This section explains how to create a class library that has a TMS engine implem
   [![The new library in Application Explorer’s References node](./media/061.png)](./media/061.png)
 
 ## Deploy the TMS engine as a package
-One way to deploy third-party TMS engines is through a deployment package. This approach is recommended in a production environment. In a development environment, you can manually copy the assemblies, as described in the next section, "Set up a TMS engine in Dynamics 365 for Operations." To deploy the engine as a package, follow these steps.
+One way to deploy third-party TMS engines is through a deployment package. This approach is recommended in a production environment. In a development environment, you can manually copy the assemblies, as described in the next section, "Set up a TMS engine in Finance and Operations." To deploy the engine as a package, follow these steps.
 
 1.  On the **Dynamics 365 **&gt; **Deploy** menu, click **Create Deployment Package**.
 2.  In the **Create Deployment Package** dialog box, select the TMSEngines model, and enter the path where you want to store your package files. 
 
   [![Selecting the TMSEngines model ](./media/071.png)](./media/071.png)
 
-3.  You can now deploy the package to the target environment. For a tutorial, see [Install a deployable package](/dynamics365/operations/dev-itpro/deployment/install-deployable-package).
+3.  You can now deploy the package to the target environment. For a tutorial, see [Install a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/install-deployable-package).
 
-## Set up the TMS engine in Dynamics 365 for Operations
-This section explains how to set up Dynamics 365 for Operations to use a TMS engine, and shows how the new engine that we have created is used in rate shopping. The example in this section uses the USMF demo data company.
+## Set up the TMS engine in Finance and Operations
+This section explains how to set up Finance and Operations to use a TMS engine, and shows how the new engine that we have created is used in rate shopping. The example in this section uses the USMF demo data company.
 
 1.  Create a new engine as described in the "Create a new TMS engine" section.
 2.  Build your solution.
-3.  Copy the resulting assembly into the binary location of the Dynamics 365 for Operations server, \[AOSWebRoot\]bin. **Note:** This step is relevant only in a development environment. In a production environment, you should deploy through a deployment package. For instructions, see the previous section, "Deploy the TMS engine as a package."
-4.  In Dynamics 365 for Operations, on the **Rate engines** page, create a new rating engine. The engine should point to the engine assembly that is produced by building the engine class library and the engine class that you implemented. 
+3.  Copy the resulting assembly into the binary location of the Finance and Operations server, \[AOSWebRoot\]bin. **Note:** This step is relevant only in a development environment. In a production environment, you should deploy through a deployment package. For instructions, see the previous section, "Deploy the TMS engine as a package."
+4.  In Finance and Operations, on the **Rate engines** page, create a new rating engine. The engine should point to the engine assembly that is produced by building the engine class library and the engine class that you implemented. 
 
   [![Creating a new rating engine on the Rate engines page](./media/081.png)](./media/081.png)
 
-5.  Create a shipping carrier that uses the Sample rate engine. Because our engine doesn't use any data in Dynamics 365 for Operations, you don’t have to assign a rate master. 
+5.  Create a shipping carrier that uses the Sample rate engine. Because our engine doesn't use any data in Finance and Operations, you don’t have to assign a rate master. 
 
   [![Creating a new shipping carrier ](./media/092.png)](./media/092.png)
 
@@ -143,9 +143,9 @@ This section explains how to set up Dynamics 365 for Operations to use a TMS eng
   [![Rate route workbench](./media/101.png)](./media/101.png)
 
 ## Tips and tricks
--   If you’re using development tools for Dynamics 365 for Operations, it's useful to add a new Dynamics 365 for Operations project to your solution. If you set this project as your startup project and start a debugging session, you can debug both X++ and C\# code in the same debugging session.
--   Every time that you change and recompile your ThirdPartyTMSEngines project, you must manually copy the resulting assembly to the Dynamics 365 for Operations binary location or deploy through a deployment package. Otherwise, you might run by using a stale assembly.
--   After you execute TMS-specific operations in Dynamics 365 for Operations, the Internet Information Services (IIS) worker process might lock the ThirdPartyTMSEngines assembly so that the assembly can’t be updated. In this case, restart the w3svc process.
+-   If you’re using development tools for Finance and Operations, it's useful to add a new Finance and Operations project to your solution. If you set this project as your startup project and start a debugging session, you can debug both X++ and C\# code in the same debugging session.
+-   Every time that you change and recompile your ThirdPartyTMSEngines project, you must manually copy the resulting assembly to the Finance and Operations binary location or deploy through a deployment package. Otherwise, you might run by using a stale assembly.
+-   After you execute TMS-specific operations in Finance and Operations, the Internet Information Services (IIS) worker process might lock the ThirdPartyTMSEngines assembly so that the assembly can’t be updated. In this case, restart the w3svc process.
 
 
 

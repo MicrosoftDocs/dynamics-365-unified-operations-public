@@ -1,6 +1,6 @@
-# [Deploy a Microsoft Dynamics 365 for Operations demo environment](deploy-demo-environment.md)
+# [Deploy a Microsoft Dynamics 365 for Finance and Operations demo environment](deploy-demo-environment.md)
 # [Azure Resource Manager onboarding](arm-onboarding.md)
-# [Azure ExpressRoute and Dynamics 365 for Operations](expressroute.md)
+# [Azure ExpressRoute and Finance and Operations](expressroute.md)
 
 # Deploy custom code
 ## [Create a deployable package](create-apply-deployable-package.md)

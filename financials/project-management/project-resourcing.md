@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about project resourcing.
 
-One challenge for project managers and resource managers during the project planning stage is resource allocation, where they must determine and reserve the correct resource to work on a project. In Microsoft Dynamics 365 for Operations, resourcing capabilities for projects let you define roles that are treated as temporary resources that can be reserved for a specific engagement, or part of an engagement. This type of resourcing lets project managers and resource managers complete the following tasks:
+One challenge for project managers and resource managers during the project planning stage is resource allocation, where they must determine and reserve the correct resource to work on a project. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, resourcing capabilities for projects let you define roles that are treated as temporary resources that can be reserved for a specific engagement, or part of an engagement. This type of resourcing lets project managers and resource managers complete the following tasks:
 
 -   Define a role that has the required competencies to make it easy to match resources.
 -   Use roles to define an initial engagement schedule that is based on reserved resources.
@@ -69,7 +69,7 @@ When you set up a worker as an intercompany resource, you must complete the setu
 
 **In the lending company:**
 
-1.  In Dynamics 365 for Operations, verify that the lending company is selected, and then complete the procedure above, "Set up a worker as a project resource."
+1.  In Finance and Operations, verify that the lending company is selected, and then complete the procedure above, "Set up a worker as a project resource."
 2.  Go to **General ledger **&gt; **Posting setup **&gt; **Intercompany accounting**. Click **New**.
 3.  In the **Legal entity ID **field, select the lending company. Fill in the remaining fields as appropriate, and then click **Save**.
 4.  Go the **Project management and accounting **&gt; **Setup **&gt; **Prices ** &gt; **Transfer price**.** **
@@ -127,7 +127,7 @@ To set up competencies for a worker, you can use either the **Workers** list pa
 6.  In the **Remaining projects** pane, select a project, and then click the arrow to add it to the **Selected projects** pane.
 7.  Close the page.
 
-If needed, you can also assign categories for a resource. The category type is either Cost or Revenue. This is determined by your organization. If there are no assigned categories for the resource, Dynamics 365 for Operations will look up the default category on hour prices for cost and revenue.
+If needed, you can also assign categories for a resource. The category type is either Cost or Revenue. This is determined by your organization. If there are no assigned categories for the resource, Finance and Operations will look up the default category on hour prices for cost and revenue.
 
 ### Set up project resource and role characteristics
 
@@ -194,7 +194,7 @@ All cost, sales, and transfer prices can be set up for roles.
 5.  In the **Pricing** column, enter a price for the selected resource role.
 
 ## Form a project team
-To use the roles that were previously set up in a project, a project manager must associate the roles with the project. Multiple roles can be assigned for a project, and Dynamics 365 for Operations automatically labels these roles during reservation to prevent confusion. For example, if the project manager requires three software engineers, three Software engineer roles that have software engineer 1, software engineer 2, and software engineer 3 as their labels are automatically generated. If role characteristics were previously set for the role, they are applied as a filter during searches for a resource. Additional characteristics can be added as required to further refine the search. 
+To use the roles that were previously set up in a project, a project manager must associate the roles with the project. Multiple roles can be assigned for a project, and Finance and Operations automatically labels these roles during reservation to prevent confusion. For example, if the project manager requires three software engineers, three Software engineer roles that have software engineer 1, software engineer 2, and software engineer 3 as their labels are automatically generated. If role characteristics were previously set for the role, they are applied as a filter during searches for a resource. Additional characteristics can be added as required to further refine the search. 
 
 View settings can also be customized to give a better view of resource availability. There are options to show hourly, daily, weekly, monthly, quarterly, and annual availability. There is also an option to show available and remaining capacity on resources. This option is useful for time management when you're estimating available time for activities or resource availability. 
 
@@ -281,7 +281,7 @@ Additional options have been added in the WBS to better use the resourcing func
 </tr>
 <tr class="even">
 <td>Auto generate team</td>
-<td>Automatically add planned resources by using roles that are associated with a task. Dynamics 365 for Operations automatically suggests planned resources by using multi-criteria decision analysis that is based on roles. After the roles and effort (hours) have been set for the tasks in a WBS, and the structure has been released, click <strong>Auto generate team</strong>. The required number of planned resources is added to the WBS and the <strong>Project and team scheduling</strong> tab.</td>
+<td>Automatically add planned resources by using roles that are associated with a task. Finance and Operations automatically suggests planned resources by using multi-criteria decision analysis that is based on roles. After the roles and effort (hours) have been set for the tasks in a WBS, and the structure has been released, click <strong>Auto generate team</strong>. The required number of planned resources is added to the WBS and the <strong>Project and team scheduling</strong> tab.</td>
 </tr>
 <tr class="odd">
 <td>Resource (drop-down list)</td>

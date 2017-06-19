@@ -44,13 +44,13 @@ In order to install a new version of the development tools, you'll need to unins
 
 ### Verify your current version of the Visual Studio extension
 
-1.  Open the Visual Studio **Help &gt; About Microsoft Visual Studio** dialog and find **Dynamics 365 for Operations Developer Tools**.
+1.  Open the Visual Studio **Help &gt; About Microsoft Visual Studio** dialog and find **Finance and Operations Developer Tools**.
 2.  Select it and click **OK**.
 
 ### Uninstall the extension
 
 1.  Open the Visual Studio **Tools &gt; Extensions and Updates** dialog.
-2.  Select **Dynamics 365 for Operations Visual Studio Tools** and click **Uninstall**.
+2.  Select **Finance and Operations Visual Studio Tools** and click **Uninstall**.
 3.  When the extension is uninstalled, exit Visual Studio.
 
 ## Install a new version of the extension

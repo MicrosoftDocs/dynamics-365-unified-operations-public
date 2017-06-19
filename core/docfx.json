@@ -34,9 +34,12 @@
     "externalReference": [],
     "globalMetadata": {
       "layout": "Conceptual",
-      "searchScope": ["Operations"],
-      "breadcrumb_path": "/dynamics365/operations/breadcrumb/toc.json",
-      "brand": "dyn-ops"
+      "searchScope": ["Unified Operations"],
+      "breadcrumb_path": "/dynamics365/unified-operations/fin-and-ops/breadcrumb/toc.json",
+      "brand": "dyn-ops",
+      "titleSuffix": "Finance and Operations, Enterprise", 
+      "ms.service": "dynamics-ax-applications"
+
     },
     "fileMetadata": {},
     "template": [],

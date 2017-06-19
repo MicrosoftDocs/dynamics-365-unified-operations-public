@@ -2,7 +2,7 @@
 # required metadata
 
 title: Keyboard shortcuts
-description: The following keyboard shortcuts apply across Microsoft Dynamics 365 for Operations. 
+description: The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance and Operations. 
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-The following keyboard shortcuts apply across Microsoft Dynamics 365 for Operations. 
+The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance and Operations. 
 
 **Note:** The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
 
@@ -49,7 +49,7 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Operati
 | Move to next/previous option in a menu            | Down Arrow / Up Arrow            |
 | Close a tab in the action pane or a menu          | Esc                              |
 | Simulate a right-click                            | Shift+F10                        |
-| Open the Dynamics 365 for Operations context menu | Ctrl+F10                         |
+| Open the Finance and Operations context menu | Ctrl+F10                         |
 | Execute the default button on a form/dialog       | Alt+Enter                        |
 | Click a button or tile                            | Enter or Space                   |
 | View refresh information for a count tile         | Alt+Up Arrow                     |

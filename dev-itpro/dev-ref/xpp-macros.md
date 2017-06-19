@@ -509,7 +509,7 @@ To create a macro library:
 
 ### Code examples
 
-Dynamics 365 for Operations has an macro library that is named **Event.** This macro library contains the directive **\#define.DefaultEventPollFrequency(15)**. The following code sample shows that the **\#macrolib.Event** directive makes the macro **\#DefaultEventPollFrequency** available.
+Finance and Operations has an macro library that is named **Event.** This macro library contains the directive **\#define.DefaultEventPollFrequency(15)**. The following code sample shows that the **\#macrolib.Event** directive makes the macro **\#DefaultEventPollFrequency** available.
 
     static void SystemProvidedMacroLibraryJob(Args _args)
     {

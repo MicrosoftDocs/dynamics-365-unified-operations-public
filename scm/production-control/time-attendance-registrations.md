@@ -17,7 +17,7 @@ ms.search.form: HcmWorker, JmgCalcApprovePickDialog, JmgGroupApprove, JmgGroupCa
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 31
+ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 53351

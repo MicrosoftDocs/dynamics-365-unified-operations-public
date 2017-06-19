@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
 
-You can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. This topic explains how to build the app, connect to Microsoft Dynamics 365 for Operations, and apply your branding.
+You can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. This topic explains how to build the app, connect, and apply your branding.
 
 ## Development tools
 The Retail Experience app supports the Android and iOS phone platforms. The app is built by using Xamarin.Forms, and you must install Xamarin on your development computer. To build the iOS app, you must have a Mac that has Xamarin installed. Although you can do development for both Android and iOS on a computer that runs Microsoft Windows, you must use a Mac to complete the build for the iOS platform. If your Mac is a shared team resource, you might want to use a Mac just for the build process. You must install the Retail software development kit (SDK) on all the computers you use for development.
@@ -80,7 +80,7 @@ You must modify the Retail Experience app solution before it can be loaded corre
     1.  Open the .csproj files for both Android and iOS projects and replace the line "&lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)Xamarin.Forms.2.3.1.114&lt;/PkgXamarin\_Forms&gt;" with &lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)Xamarin.Forms.2.3.2.127&lt;/PkgXamarin\_Forms&gt;
     2.  Open the files package.config file for both Android and iOS projects and replace the line "&lt;package id="Xamarin.Forms" version="2.3.1.114" targetFramework="monoandroid60" /&gt;" with "&lt;package id="Xamarin.Forms" version="2.3.2.127" targetFramework="monoandroid60" /&gt;"
 
-## Connect to a Dynamics 365 for Operations online channel
+## Connect to an online channel
 The Retail Experience app uses an online channel to show the products. You can use any online channel. Depending on your requirements, you can use a different online channel for each apps, or you can use the same online channel for both apps. Any released product that is assorted to the online channel will appear in the app. **Note:** The app can't be used to issue gift cards. Therefore, gift cards must be excluded from the assortment for the online channel that the apps use. Information about the Retail Server endpoint and the online channel is added to the config.xml file that is present in each app project. You must make the following changes in the config.xml file:
 
 -   In the **&lt;DataServiceUrl&gt;** tag, add the URL of the Retail Server.

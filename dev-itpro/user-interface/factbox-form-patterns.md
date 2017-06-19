@@ -99,7 +99,7 @@ Button
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md)document.
+-   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
 
 **FactBox** **general guidelines:**
 
@@ -160,7 +160,7 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [AX2012 MSDN List Page Guidelines (including FactBoxes)](http://msdn.microsoft.com/EN-US/library/gg853328.aspx)
+-   [AX 2012 MSDN List Page Guidelines (including FactBoxes)](http://msdn.microsoft.com/EN-US/library/gg853328.aspx)
 
 #### AX 2012 example
 

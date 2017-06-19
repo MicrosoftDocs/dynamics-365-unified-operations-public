@@ -2,7 +2,7 @@
 # required metadata
 
 title: Public sector home page
-description: Microsoft Dynamics 365 for Operations enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
+description: Microsoft Dynamics 365 for Finance and Operations, Enterprise edition enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Operations enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
+Finance and Operations enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
 
 Use the Public sector functionality to meet the rules, regulations, and reporting requirements for organizations that serve the public. The business processes affected include: 
 

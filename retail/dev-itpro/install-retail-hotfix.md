@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-Use this tutorial to install Retail hotfixes for Microsoft Dynamics AX.
+This topic describes how to install Retail hotfixes for Microsoft Dynamics AX.
 
 Retail server
 -------------

@@ -40,10 +40,10 @@ This article describes how to generate a Customization Analysis Report for your 
 What is the Customization Analysis Report?
 ------------------------------------------
 
-The Customization Analysis Report is a tool that analyzes your customization and extension models, and runs a predefined set of best practice rules. The report is one of the requirements of the solution certification process for Microsoft Dynamics 365 for Operations. The report is in the form of a Microsoft Excel workbook.
+The Customization Analysis Report is a tool that analyzes your customization and extension models, and runs a predefined set of best practice rules. The report is one of the requirements of the solution certification process. The report is in the form of a Microsoft Excel workbook.
 
 ## How to generate the report
-To generate the Customization Analysis Report, run the following command in a Dynamics 365 for Operations development environment.
+To generate the Customization Analysis Report, run the following command in a development environment.
 
     xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
 
@@ -78,7 +78,7 @@ This section describes all best practice rules (errors, warnings, or informatio
 |---------------------|-----------------------------------------------------------------------------------|
 | Error message       | SQL code found in method %1                                                       |
 | Issue type/severity | Code/Warning                                                                      |
-| How to fix it       | Refactor your code to use X++ to access the Dynamics 365 for Operations database. |
+| How to fix it       | Refactor your code to use X++ to access the database. |
 
 ### BPCheckNestedLoopInCode
 

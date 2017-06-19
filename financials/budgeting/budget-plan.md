@@ -2,7 +2,7 @@
 # required metadata
 
 title: Budget planning
-description: The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Operations functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.  This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel 
+description: The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.  This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel 
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,12 +35,12 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Operations functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.  This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel 
+The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.  This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel 
 
 Prerequisites 
 ------------------
 
-For this tutorial, you’ll need to access the Dynamics 365 for Operations environment with Contoso demo data, and be provisioned as an administrator on the instance. Do not use In Private browser mode for this lab - sign out from any other account in the browser if needed and sign in with Dynamics 365 for Operations administrator credentials. When signing into Dynamics 365 for Operations, you **MUST** check the “Keep me signed in” checkbox. This creates a persistent cookie that the Excel App currently needs. If you sign in to the Dynamics 365 for Operations using a browser other than IE, then you’ll be prompted to sign in within the Excel App. When you click “Sign in” in the Excel App, an IE popup window will open and when signing in you **MUST** check the “Keep me signed in” checkbox. If clicking “Sign in” in the Excel App doesn’t appear to do anything then you should clear the IE cookie cache.
+For this tutorial, you’ll need to access the Finance and Operations environment with Contoso demo data, and be provisioned as an administrator on the instance. Do not use In Private browser mode for this lab - sign out from any other account in the browser if needed and sign in with Finance and Operations administrator credentials. When signing into Finance and Operations, you **MUST** check the “Keep me signed in” checkbox. This creates a persistent cookie that the Excel App currently needs. If you sign in to the Finance and Operations using a browser other than IE, then you’ll be prompted to sign in within the Excel App. When you click “Sign in” in the Excel App, an IE popup window will open and when signing in you **MUST** check the “Keep me signed in” checkbox. If clicking “Sign in” in the Excel App doesn’t appear to do anything then you should clear the IE cookie cache.
 
 ## **Scenario overview**
 Julia works as a finance manager in Contoso Entertainment Systems in Germany (DEMF). As FY2016 approaches, she needs to work on setting up the company’s budget for the upcoming year. Budget preparation looks as follows:
@@ -152,7 +152,7 @@ Budget plan columns are either Monetary or quantity based columns that can be us
 
 [![Autofill](./media/screenshot22.png)](./media/screenshot22.png) 
 
-4.7. Return to Dynamics 365 for Operations and refresh the page. Published values will appear in Dynamics 365 for Operations. 
+4.7. Return to Finance and Operations and refresh the page. Published values will appear in Finance and Operations. 
 
 [![Refresh](./media/screenshot23.png)](./media/screenshot23.png)
 
@@ -238,7 +238,7 @@ The previous year actual amounts will be copied to current year budget and alloc
 
 [![Publish](./media/screenshot36.png)](./media/screenshot36.png)
 
-9.3. Return to budget plan document in Dynamics 365 for Operations. Click Workflow &gt; Submit to Auto-approve the document
+9.3. Return to budget plan document in Finance and Operations. Click Workflow &gt; Submit to Auto-approve the document
 
 [![Auto-approve](./media/screenshot37.png)](./media/screenshot37.png) 
 

@@ -91,9 +91,9 @@ You can expand and collapse the **Recording name** and **Recording description**
 See also
 --------
 
-[Create documentation or training using Task recordings](/dynamics365/operations/dev-itpro/user-interface/task-recorder)
+[Create documentation or training using Task recordings](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder)
 
-[Task recorder quick reference](/dynamics365/operations/dev-itpro/user-interface/task-recorder-quick-reference)
+[Task recorder quick reference](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-quick-reference)
 
 
 

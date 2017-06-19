@@ -40,13 +40,13 @@ In this tutorial you'll model a form part that displays the previous rental hist
 Prerequisites
 -------------
 
-This tutorial requires you to access the Microsoft Dynamics 365 for Operations environment using Remote Desktop, and be provisioned as an administrator on the Dynamics 365 for Operations instance. For more information, see [Access Microsoft Dynamics 365 for Operations Instances](..\dev-tools\access-instances.md).
+This tutorial requires you to access the Microsoft Dynamics 365 for Finance and Operations environment using Remote Desktop, and be provisioned as an administrator on the Finance and Operations instance. For more information, see [Access Microsoft Dynamics 365 for Finance and Operations Instances](..\dev-tools\access-instances.md).
 
 ## Key concepts
--   **Aggregate measurements** - Similar to **perspectives** and **Cubes** from earlier versions of Microsoft Dynamics 365 for Operations, aggregate measurements let you model and consume aggregate data in Dynamics 365 for Operations.
+-   **Aggregate measurements** - Similar to **perspectives** and **Cubes** from earlier versions of Microsoft Dynamics 365 for Finance and Operations, aggregate measurements let you model and consume aggregate data in Finance and Operations.
 -   **Aggregate data entities** - Aggregate data can be consumed in building charts and other controls. Using the model driven approach, you have the ability to create data entities by directly referencing aggregate measurements and aggregate dimensions. These entities are referred to as **Aggregate data entities**. Aggregate data entities are read-only data entities used for reporting purposes.
 -   **Contextual BI** - Contextual BI refers to providing required insights as a part of the user experience so that the user has relevant insights to not only achieve the task, but be highly productive during the course of the day.
--   **Embedded BI -** Embedded BI refers to analytic content being embedded within the Dynamics 365 for Operations user experience. Contextual BI and embedded BI teams are closely related. Contextual BI implies the added notion that the context of analytic context revolves around the data or the task.
+-   **Embedded BI -** Embedded BI refers to analytic content being embedded within the Finance and Operations user experience. Contextual BI and embedded BI teams are closely related. Contextual BI implies the added notion that the context of analytic context revolves around the data or the task.
 -   **Self-service BI** - Self-service BI refers to enabling to user to tweak existing and/or create new analytic content such as reports, KPIs, and dashboards.
 
 ## Setup
@@ -59,7 +59,7 @@ If this is the first tutorial you’re working on, follow the steps in the **App
 This tutorial works on Fleet Management model.
 
 1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
-2.  In Visual Studio, on the **Dynamics 365 for Operations** menu, click **Import Project**.
+2.  In Visual Studio, on the **Finance and Operations** menu, click **Import Project**.
 3.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
 4.  In the Select the file to import window, browse to **C:\\FmLab\\Lab 10-2** folder, click **Add contextual BI to forms –Before Lab.axpp**, and then click **Open**.
 5.  Select the **Overwrite Elements** option, and then click **Ok**.
@@ -113,7 +113,7 @@ In this section, you’ll model an aggregate data entity. Next, you will add the
 ### Model an Aggregate data entity that shows the Number of Rentals by Vehicle model by month
 
 1.  Select the project node **BIR102 Adding contextual BI**, right-click, and then select **Add** &gt; **New Item**.
-2.  In the **Add new item** wizard, select **Dynamics 365 for Operations Artifacts** &gt; **Analytics** &gt; **Aggregate Data entity**. Enter the name **FMBIRevenueByVehicleModelbyMonth**, and select **Add**. The Aggregate Data Entity designer will be displayed.
+2.  In the **Add new item** wizard, select **Finance and Operations Artifacts** &gt; **Analytics** &gt; **Aggregate Data entity**. Enter the name **FMBIRevenueByVehicleModelbyMonth**, and select **Add**. The Aggregate Data Entity designer will be displayed.
 3.  Associate the aggregate Data entity **FMBIRevenueByVehicleModelbyMonth** with the aggregate measurement **FMAggregateMeasurements** as follows:
     1.  Select the **DataSource** node.
     2.  Right-click, and select **Properties**.
@@ -230,7 +230,7 @@ Model a chart within the form part by using the data in the temp table.
 
 To work with the sample, you must install the provided demo data.
 
-1.  Open Internet Explorer, and navigate to your Dynamics 365 for Operations instance base URL.
+1.  Open Internet Explorer, and navigate to your Finance and Operations instance base URL.
     -   On the cloud environment, the base URL is obtained from LCS
     -   On a local VM, the base URL is https://usnconeboxax1aos.cloud.onebox.dynamics.com
 2.  Sign in.

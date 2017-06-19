@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploy a payment connector
-description: This topic describes how to deploy a payment connector package to the appropriate components of Microsoft Dynamics 365 for Operations. 
+description: This topic describes how to deploy a payment connector package to the appropriate components. 
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,18 +35,16 @@ ms.dyn365.ops.version: AX 7.0.1
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes how to deploy a payment connector package to the appropriate components of Microsoft Dynamics 365 for Operations. 
-
 Overview
 --------
 
-This topic guides retail IT professionals or value-added resellers (VARs) through the process of deploying a payment connector to the appropriate components of Dynamics 365 for Operations. We assume that the payment connector has been implemented and tested by the payment provider or the payment independent software vendor (ISV), and that it's ready for validation and subsequent production deployment in a customer environment. This topic doesn't include information about how to package a payment connector by using the Retail software development kit (SDK). See the [Retail SDK overview](retail-sdk/retail-sdk-overview.md) for information about how to download the SDK. For guidelines about how to package a payment connector, within the downloaded SDK, review the Retail SDK Handbook section on Adding a payment connector, which became available in the SDK in hotfix KB 3183058. This topic also doesn't include information about how to deploy the payment web application, payment front-end processor, or back-end processor, because those applications are managed by payment providers or payment ISVs.
+This topic guides retail IT professionals or value-added resellers (VARs) through the process of deploying a payment connector to the appropriate components. We assume that the payment connector has been implemented and tested by the payment provider or the payment independent software vendor (ISV), and that it's ready for validation and subsequent production deployment in a customer environment. This topic doesn't include information about how to package a payment connector by using the Retail software development kit (SDK). See the [Retail SDK overview](retail-sdk/retail-sdk-overview.md) for information about how to download the SDK. For guidelines about how to package a payment connector, within the downloaded SDK, review the Retail SDK Handbook section on Adding a payment connector, which became available in the SDK in hotfix KB 3183058. This topic also doesn't include information about how to deploy the payment web application, payment front-end processor, or back-end processor, because those applications are managed by payment providers or payment ISVs.
 
 ## Before you begin
 A payment provider or a payment ISV creates a payment connector. The payment connector will include some or all of the following folders:
 
 -   **IPaymentProcessor Assemblies** – This folder contains the assembly that implements the IPaymentProcesor interface, and its dependent assemblies.
--   **Payment Web Files** – This folder contains the callback HTML, JavaScript, or CSS files that are required in Dynamics 365 for Operations in order to enable the payment accepting page. Payment connector developers will provide these web files if their payment accepting page requires them.
+-   **Payment Web Files** – This folder contains the callback HTML, JavaScript, or CSS files that are required in order to enable the payment accepting page. Payment connector developers will provide these web files if their payment accepting page requires them.
 -   **IPaymentDevice Assemblies** – This folder contains the assembly that implements the IPaymentDevice interface, and its dependent assemblies. These assemblies are used in Retail Hardware station and Retail Modern Point of Sale (Modern POS) to communicate with payment terminal devices, such as VeriFone MX925. If you don’t have a payment terminal device, you don't need these files.
 
 To package the payment connector files that a payment provider or payment ISV provides, you must uptake hotfix KB 3183058 (or later) for the Retail SDK. After you build the Retail SDK, you will obtain the following deployable packages:
@@ -86,7 +84,7 @@ A deployable package is an asset that can be consumed by the LCS deployment serv
 5.  Click **Upload**.
 6.  Select the zipped package, upload it, and then click **Confirm**.
 
-After you've uploaded your deployable packages to the LCS asset library, you can deploy them to your environments through the LCS portal. After you've validated your deployment in your sandbox environment, you can create a service request to deploy it to your production environment. For more information, see [Apply a deployable package](/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system).
+After you've uploaded your deployable packages to the LCS asset library, you can deploy them to your environments through the LCS portal. After you've validated your deployment in your sandbox environment, you can create a service request to deploy it to your production environment. For more information, see [Apply a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system).
 
 #### Download and run installers on client computers
 

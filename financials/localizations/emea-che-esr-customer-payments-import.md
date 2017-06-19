@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic provides information about importing customer payments in the ESR format.
 
-ESR is an electronic debtor service that uses payment slips to collect money. It is the standard electronic payment system created by the Swiss Post. You can receive customer payment files in the ESR format, which can include transactions and bank fees. This functionality is intended for imported customer transactions based on payment references that were originally generated in Microsoft Dynamics 365 for Operations and printed on the payment slip.
+ESR is an electronic debtor service that uses payment slips to collect money. It is the standard electronic payment system created by the Swiss Post. You can receive customer payment files in the ESR format, which can include transactions and bank fees. This functionality is intended for imported customer transactions based on payment references that were originally generated in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and printed on the payment slip.
 
 ## Generate payment references
 Payment references should be printed on the payment slip after posting. You can also verify payment references on the **Invoice journal** page for the selected sales order. To generate payment references, the following settings must be specified.

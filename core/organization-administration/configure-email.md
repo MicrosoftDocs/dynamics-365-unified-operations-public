@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users. This topic is divided into sections for administrators and users to make it easy to find relevant information.
 
-In Dynamics 365 for Operations, both administrators and users set the behavior of the email subsystem.
+In Finance and Operations, both administrators and users set the behavior of the email subsystem.
 
 ## Administrator: Email parameters page
 On the **Email parameters** page, note the following settings on the **Email providers** tab.
@@ -105,7 +105,7 @@ When an email is going to be sent, the user will see the **How would you like to
 |----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Use an email app, such as Outlook**                          | Provides the user with a generated email (.eml) file.                                                                                          |
 | **Use Exchange email server**                                  | Uses the Exchange Server associated with the tenant. The email will be sent using Exchange Web Services (EWS).                                 |
-| **Use the Microsoft Dynamics 365 for Operations email client** | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP.                                                   |
+| **Use the Microsoft Dynamics 365 for Finance and Operations email client** | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP.                                                   |
 | **Do not ask again**                                           | If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open. |
 
 ## User (optional): Send email dialog box
@@ -138,7 +138,7 @@ Email workflows that are enabled via the SysEmail framework can generate email m
 
 Email workflows that are enabled via the SysEmail framework can also be created in a simple email dialog box and then sent via Simple Mail Transfer Protocol (SMTP).
 
-1.  In Dynamics 365 for Operations, go to the **Email parameters** page.
+1.  In Finance and Operations, go to the **Email parameters** page.
 2.  Click **SMTP settings**.
 3.  Set the **Outgoing mail server** to the desired SMTP server:
     -   For [Office 365 production](https://support.office.com/en-us/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (including \*.onmicrosoft.com accounts) use smtp.office365.com. (Find this setting via outlook.office.com, at **Settings** &gt; **Mail** &gt; **POP and IMAP**.)
@@ -152,7 +152,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 9.  Click **Collect** &gt; **Customer balances** &gt; **Collections** to open the **Collections** page.
 10. Click **Communicate** &gt; **Email** &gt; **Statements to contact**.
 11. Click **OK** to accept the default values in the dialog box.
-12. If you’re prompted for the mail option to use, select **Use the Microsoft Dynamics 365 for Operations email client**, and then click **OK**.
+12. If you’re prompted for the mail option to use, select **Use the Microsoft Dynamics 365 for Finance and Operations email client**, and then click **OK**.
 13. To receive the test message, change the **To address** to your email address.
     -   Ensure that the account specified in the SMTP settings is able to **Send As** or **Send On Behalf Of** your email account. The easiest way to ensure this to use your email account in the SMTP settings.
 
@@ -163,9 +163,9 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 See also
 --------
 
-[Office integration troubleshooting](/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting)
+[Office integration troubleshooting](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting)
 
-[Office integration tutorial](/dynamics365/operations/dev-itpro/office-integration/office-integration-tutorial)
+[Office integration tutorial](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial)
 
 [Configure email functionality in Microsoft Dynamics AX [AX 2012]](https://technet.microsoft.com/en-us/library/aa834374.aspx)
 

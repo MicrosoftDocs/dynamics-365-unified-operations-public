@@ -65,7 +65,7 @@ Class FormFastTabSummarySeparator
 | public List configurationKeyEx()                                                                            | Retrieves a list that contains the IDs of configuration keys that are in effect for the control.                                                                        |
 | public str countryRegionCodes(\[str value\])                                                                | Gets or sets the comma-separated list of country/region codes for the control.                                                                                          |
 | public str dataRelationPath(\[str value\])                                                                  | Gets or sets the period-delimited list of relations that links the field binding of the DataField object to a relative table.                                           |
-| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the Microsoft Dynamics 365 for Operations5 for Operations client, in Enterprise PortaDynamics 365 for Operationssoft Dynamics 365 for Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed. |
 | public int dragDrop(\[int value\])                                                                          | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                           | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                               | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -95,7 +95,7 @@ Class FormFastTabSummarySeparator
 | public int mouseDown(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user clicks the mouse button over the control.                                                                                                       |
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user moves the mouse pointer over the control.                                                                                                       |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                   | Is called when the user releases the mouse button over the control area.                                                                                                |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations5 for Operations application object.                                 |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.                                 |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                                                         |
 | public container SysObsoleteAttribute()                                                                     |                                                                                                                                                                         |
 | public FormControl parentControl()                                                                          | Retrieves the parent control for the control.                                                                                                                           |
@@ -472,7 +472,7 @@ This method is used by the reference group control to track exactly which relati
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Microsoft Dynamics 365 for Operations5 for Operations client, in Enterprise PortaDynamics 365 for Operationssoft Dynamics 365 for Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise PortaFinance and Operationssoft Finance and Operations, or in both.
 
     public int displayTarget([int value])
 
@@ -483,7 +483,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Microsoft Dynamics 365 for Operations5 for Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the  client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 
@@ -1068,7 +1068,7 @@ Typically, when this method is overridden, the return value from a call to the s
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations5 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other  application object.
 
     public str name([str value])
 
@@ -1827,7 +1827,7 @@ Raises the dragLeave event to indicate that a mouse drag operation has left the 
 | public FieldId countryRegionContextField(\[FieldId value\])                                                 |                                                                                                                                                                         |
 | public str dataRelationPath(\[str value\])                                                                  | Gets or sets the period-delimited list of relations that links the field binding of the DataField object to a relative table.                                           |
 | public int dataSource(\[AnyType value\])                                                                    | Gets or sets a data source to be used by the control or the form.                                                                                                       |
-| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the Microsoft Dynamics 365 for Operations5 for Operations client, in Enterprise PortaDynamics 365 for Operationssoft Dynamics 365 for Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise PortaFinance and Operationssoft Finance and Operations, or in both. |
 | public int dragDrop(\[int value\])                                                                          | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                           | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                               | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -1859,7 +1859,7 @@ Raises the dragLeave event to indicate that a mouse drag operation has left the 
 | public int mouseDown(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user clicks the mouse button over the control.                                                                                                       |
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user moves the mouse pointer over the control.                                                                                                       |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                   | Is called when the user releases the mouse button over the control area.                                                                                                |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations5 for Operations application object.                                 |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other  application object.                                 |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                                                         |
 | public container SysObsoleteAttribute()                                                                     |                                                                                                                                                                         |
 | public FormControl parentControl()                                                                          | Retrieves the parent control for the control.                                                                                                                           |
@@ -2304,7 +2304,7 @@ The identifier of the data source to be used.
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Microsoft Dynamics 365 for Operations5 for Operations client, in Enterprise PortaDynamics 365 for Operationssoft Dynamics 365 for Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise PortaFinance and Operationssoft Finance and Operations, or in both.
 
     public int displayTarget([int value])
 
@@ -2315,7 +2315,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Microsoft Dynamics 365 for Operations5 for Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the  client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 
@@ -2920,7 +2920,7 @@ Typically, when this method is overridden, the return value from a call to the s
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations5 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other  application object.
 
     public str name([str value])
 
@@ -3815,7 +3815,7 @@ This event is not raised unless the DragDrop property is enabled for the control
 | public str disabledImage(\[str value\])                                                                     | Gets or sets the disabled image of the button.                                                                                                                          |
 | public int disabledImageLocation(\[int value\])                                                             |                                                                                                                                                                         |
 | public int disabledResource(\[int value\])                                                                  | Gets or sets the resource ID of the image to use as the disabled button image.                                                                                          |
-| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the Microsoft Dynamics 365 for Operations5 for Operations client, in Enterprise PortaDynamics 365 for Operationssoft Dynamics 365 for Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise PortaFinance and Operationssoft Finance and Operations, or in both. |
 | public int dragDrop(\[int value\])                                                                          | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                           | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                               | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -3854,7 +3854,7 @@ This event is not raised unless the DragDrop property is enabled for the control
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user moves the mouse pointer over the control.                                                                                                       |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                   | Is called when the user releases the mouse button over the control area.                                                                                                |
 | public int multiSelect(\[int value\])                                                                       |                                                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations5 for Operations application object.                                 |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other  application object.                                 |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                                                         |
 | public int needsRecord(\[int value\])                                                                       |                                                                                                                                                                         |
 | public str normalImage(\[str value\])                                                                       |                                                                                                                                                                         |
@@ -4441,7 +4441,7 @@ The resource ID of the image to use as the disabled button image. Both icon and 
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Microsoft Dynamics 365 for Operations5 for Operations client, in Enterprise PortaDynamics 365 for Operationssoft Dynamics 365 for Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise PortaFinance and Operationssoft Finance and Operations, or in both.
 
     public int displayTarget([int value])
 
@@ -4452,7 +4452,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Microsoft Dynamics 365 for Operations5 for Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the  client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 
@@ -5145,7 +5145,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations5 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other  application object.
 
     public str name([str value])
 
@@ -6112,7 +6112,7 @@ overrideObject
 | public int dataSource(\[AnyType value\])                                                                            | Gets or sets a data source to be used by the control or the form.                                                                                                       |
 | public str defaultAction(\[str value\])                                                                             |                                                                                                                                                                         |
 | public str defaultActionLabel(\[str value\])                                                                        |                                                                                                                                                                         |
-| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the Microsoft Dynamics 365 for Operations5 for Operations client, in Enterprise PortaDynamics 365 for Operationssoft Dynamics 365 for Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise PortaFinance and Operationssoft Finance and Operations, or in both. |
 | public int dragDrop(\[int value\])                                                                                  | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                                   | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                                       | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -6152,7 +6152,7 @@ overrideObject
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                           | Is called when the user releases the mouse button over the control area.                                                                                                |
 | public int moveControl(int controlId, \[int insertAfterId\])                                                        |                                                                                                                                                                         |
 | public boolean multiSelect(\[boolean value\])                                                                       |                                                                                                                                                                         |
-| public str name(\[str value\])                                                                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations5 for Operations application object.                                 |
+| public str name(\[str value\])                                                                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or other  application object.                                 |
 | public int neededPermission(\[int value\])                                                                          |                                                                                                                                                                         |
 | public container SysObsoleteAttribute()                                                                             |                                                                                                                                                                         |
 | public FormControl parentControl()                                                                                  | Retrieves the parent control for the control.                                                                                                                           |
@@ -6713,7 +6713,7 @@ value
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Microsoft Dynamics 365 for Operations5 for Operations client, in Enterprise PortaDynamics 365 for Operationssoft Dynamics 365 for Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise PortaFinance and Operationssoft Finance and Operations, or in both.
 
     public int displayTarget([int value])
 
@@ -6724,7 +6724,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Microsoft Dynamics 365 for Operations5 for Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the  client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 
@@ -7403,7 +7403,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Microsoft Dynamics 365 for Operations5 for Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other  application object.
 
     public str name([str value])
 

@@ -37,7 +37,7 @@ ms.search.validFrom: 2016-11-30
 
 This topic explains how to configure up Italy-specific settings for withholding tax and Italian withholding tax reports.
 
-For Italy, there is a country-specific legal requirement that a buyer withhold a tax amount from some types of vendor payments, such as payments to self-employed vendors. The company must then remit the tax to the tax authority. Withholding tax is a tax that is withheld from the payment amount for vendor invoices. This topic describes Italy-specific settings for withholding tax and the following Italian reports: **Withholding tax - certification**, **Withholding tax - monthly**, and **Withholding tax - yearly**. Set up withholding tax codes at **Tax** &gt; **Indirect taxes** &gt; **Withholding tax** &gt; **Withholding tax codes**. Define standard settings on the **General** and **Calculation** FastTabs. For more information about the fields on these FastTabs, see [Withholding tax code page (Fields description)](https://ax.help.dynamics.com/en/wiki/withholding-tax-codes-page-field-descriptions/). On the **Italian reporting** FastTab, define the following settings.
+For Italy, there is a country-specific legal requirement that a buyer withhold a tax amount from some types of vendor payments, such as payments to self-employed vendors. The company must then remit the tax to the tax authority. Withholding tax is a tax that is withheld from the payment amount for vendor invoices. This topic describes Italy-specific settings for withholding tax and the following Italian reports: **Withholding tax - certification**, **Withholding tax - monthly**, and **Withholding tax - yearly**. Set up withholding tax codes at **Tax** &gt; **Indirect taxes** &gt; **Withholding tax** &gt; **Withholding tax codes**. Define standard settings on the **General** and **Calculation** FastTabs. On the **Italian reporting** FastTab, define the following settings.
 
 |Field group|Field|Description|
 |------------|----------------|----------------|
@@ -67,7 +67,7 @@ On the Action Pane, click **Limits**, and set up limits for the withholding tax 
 | Minimum withholding tax | Enter the minimum withholding tax amount that can be posted for any transaction for the selected withholding tax code. |
 | Maximum withholding tax | Enter the maximum withholding tax amount that can be posted for any transaction for the selected withholding tax code. |
 
-Set up withholding tax groups at **Tax** &gt; **Indirect taxes** &gt; **Withholding tax** &gt; **Withholding tax groups**. Define the code and name for a withholding tax group, and assign a withholding tax code to the group. Find more information, see [Set up withholding tax](https://ax.help.dynamics.com/en/wiki/set-up-withholding-tax/). Set up a vendor account for the calculation of withholding tax at **Accounts payable** &gt; **Vendors** &gt; **All vendors**. Define the following settings.
+Set up withholding tax groups at **Tax** &gt; **Indirect taxes** &gt; **Withholding tax** &gt; **Withholding tax groups**. Define the code and name for a withholding tax group, and assign a withholding tax code to the group. Find more information, see [Set up withholding tax (Task guide)](https://ax.help.dynamics.com/en/wiki/set-up-withholding-tax/). Set up a vendor account for the calculation of withholding tax at **Accounts payable** &gt; **Vendors** &gt; **All vendors**. Define the following settings.
 
 |FastTab|Field|Description|
 |-------|---------|-----------|
