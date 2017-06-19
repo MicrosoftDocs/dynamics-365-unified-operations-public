@@ -56,6 +56,12 @@ Available options are:
 - System metadata - Data generated while running the service, not linkable to a user or tenant. 
 - Public non-personal data - Publicly available information that Microsoft obtains from external sources.  Does not contain Public personal data.
 
+## Improved viewing experience for Application reports
+There is a new and improved viewing experience for customers when interacting with Analytical and Operational reports in Dynamics 365 for Finance and Operations, Enterprise edition. This change offers a streamlined toolbar and clear preview of the document that is produced when rendered as a PDF file or sent directly to the printer. To date, customers have rendered over 1.1 million document reports powered by SQL Server Reporting Services (SSRS). In addition, the Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update includes 20+ analytical reports authored using Power BI Desktop. This feature offers a significantly enhanced viewing experience while interacting with both document and analytical style application reports. 
+Customer benefits:
+- Reliability - Customers will now be presented with a view that is consistent with the output when documents are sent directly to the printer. Based on telemetry data, the most common use case for viewing a report on screen is to preview the output that will be shared with others, most often by email. Customs can now rely on a screen rendition that more closely matches the document produced by SSRS.
+- Simplicity - Customers can fully engage with application reports using mobile devices with relatively small screens. On these devices, every inch of the screen is important. By removing the page caption, users have more screen space with which to view and interact with application reports.
+
 ## Table browser is now in read-only mode
 The table browser form is now in read-only mode on runtime environments (Sandbox Tier-2 and Production).
 
@@ -74,5 +80,3 @@ Our cloud-based Application Lifecycle Management (ALM) functions, including diag
 For the “local business data” deployment scenario, the application servers and SQL database will run in a customer’s or partner’s data center. Customers and partners manage the application lifecycle through LCS in the Microsoft cloud, including designing the business processes, creating and deploying the software image to deploy onto the on-premises nodes, monitoring the on-premises nodes in a system health dashboard, and keeping up with innovation from Microsoft.
 
 For more information, see [The right cloud option for your business](https://community.dynamics.com/b/msftdynamicsblog/archive/2017/02/06/the-right-cloud-option-for-your-business).
-
-GET UPDATED SCREENSHOT FROM JESPER
