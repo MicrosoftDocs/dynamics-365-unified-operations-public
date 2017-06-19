@@ -579,7 +579,7 @@ According to current security standards, the following settings should be used i
 **Note:** It’s very important that you review security guidelines for IIS and the Payment Card Industry (PCI) requirements.
 
 ## Peripheral simulator
-For information, see [Retail peripheral simulator](retail-peripheral-simulator.md).
+For information, see [Retail peripheral simulator](..dev-itpro/retail-peripheral-simulator.md).
 
 ## Microsofttested peripheral devices
 ### IPC (built-in) hardware station
@@ -810,7 +810,7 @@ The following peripherals were tested by using a shared IIS hardware station tog
 See also
 --------
 
-[Retail peripheral simulator](retail-peripheral-simulator.md)
+[Retail peripheral simulator](../dev-itpro/retail-peripheral-simulator.md)
 
 
 

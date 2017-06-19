@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 06/09/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -63,7 +63,7 @@ Then follow these steps.
 2. Select **Azure** or **Locally**. If you select **Locally**, find and download a development VHD. If you select **Azure**, you're prompted to select one of three topologies: **Build and Test**, **Demo**, or **Development**.
 3. Complete the deployment steps, and deploy a VM in your Azure subscription.
 
-For more information about how to configure a local development VHD, see [Access instances](./dev-itpro/dev-tools/access-instances#vm-that-is-running-onpremises).
+For more information about how to configure a local development VHD, see [Access instances](./dev-itpro/dev-tools/access-instances.md#vm-that-is-running-onpremises).
 
 > [!NOTE]
 > To deploy environments in your own Azure subscription, you must set up at least one Azure Connector. To set up an Azure Connector, in LCS, open the **Project settings** page, and then click the **Azure connectors** tab. Then follow the instructions to add an Azure Connector. To complete the steps, you must be the tenant administrator of the organization.  

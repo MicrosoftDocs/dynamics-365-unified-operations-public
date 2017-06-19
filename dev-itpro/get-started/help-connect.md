@@ -5,7 +5,7 @@ title: Connect the Help system
 description: This topic describes the components of the Help system for Microsoft Dynamics 365 for Finance and Operations, and provides an overview of how to connect them and a summary of how to create custom help. 
 author: margoc
 manager: AnnBe
-ms.date: 06/16/17
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

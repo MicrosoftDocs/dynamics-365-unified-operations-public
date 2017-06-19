@@ -1249,7 +1249,7 @@
 #### [Create Open in Excel experiences](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Add templates to the Open lines in Excel menu](/dynamics365/unified-operations/dev-itpro/user-interface/add-templates-open-lines-excel-menu?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Customize the Open in Microsoft Office menu](/dynamics365/unified-operations/dev-itpro/office-integration/customize-open-office-menu?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Configure and send email](/dynamics365/unified-operations/organization-administration/configure-email?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Configure and send email](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Troubleshooting](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Financials development
