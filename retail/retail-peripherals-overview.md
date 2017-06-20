@@ -810,7 +810,7 @@ The following peripherals were tested by using a shared IIS hardware station tog
 See also
 --------
 
-[Retail peripheral simulator](../dev-itpro/retail-peripheral-simulator.md)
+[Retail peripheral simulator](dev-itpro/retail-peripheral-simulator.md)
 
 
 
