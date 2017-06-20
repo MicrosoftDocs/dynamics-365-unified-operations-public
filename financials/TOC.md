@@ -817,7 +817,7 @@
 ##### [Calculate material consumption](/dynamics365/unified-operations/supply-chain/production-control/consumption?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Production posting](/dynamics365/unified-operations/supply-chain/cost-management/production-posting?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Manage raw materials
-##### [Cross-docking from production orders to outbound docks](/dynamics365/unified-operations/supply-chain/production-control/cross-docking opportunities?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Cross-docking from production orders to outbound docks](/dynamics365/unified-operations/supply-chain/production-control/cross-docking-opportunities?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Register material consumption using a mobile device](/dynamics365/unified-operations/supply-chain/production-control/register-material-consumption-hand-held-device?toc=/dynamics365/unified-operations/financials/toc.json)
 ### Lean manufacturing 
 #### [Lean manufacturing overview](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-overview?toc=/dynamics365/unified-operations/financials/toc.json)
