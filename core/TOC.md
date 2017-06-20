@@ -383,6 +383,8 @@
 #### [Tax directives]
 #### [Update how amounts are displayed on reports and documents](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
 #### [VAT exchange rates](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [VAT register transactions for Eastern Europe](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [VAT reporting](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [View transactions on settlement](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Austria
 ##### [Half-year depreciation](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
