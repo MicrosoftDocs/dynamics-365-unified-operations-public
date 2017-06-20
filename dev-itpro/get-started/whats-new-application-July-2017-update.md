@@ -510,7 +510,7 @@ many levels of approval your organization has or if the expense report has come
 back to the submitter multiple times for various reasons. This feature provides
 a more user-friendly way to view the workflow history for an expense report.
 
-**Financial Management \| Supply Chain Management**
+**Financial management \| Supply chain management**
 ===================================================
 
 Cost accounting – Cross legal entities 
@@ -578,7 +578,7 @@ The health of the cost accounting ledger and its related master data and
 reference data are monitored, such as cost objects dimensions, dimension
 hierarchies, and rules. This makes it easy to manage cost accounting ledgers.
 
-**Globalization & Translation**
+**Globalization & translation**
 ===============================
 
 Belgian Enterprise number Registration ID is used for customer and vendor accounts
@@ -815,11 +815,11 @@ employees easily distribute their paycheck to multiple accounts.
 
 Direct deposit lets employees:
 
--   Add multiple bank accounts
+-   Add multiple bank accounts.
 
--   Set priority of bank disbursements
+-   Set priority of bank disbursements.
 
--   Direct any remaining funds to a specific account
+-   Direct any remaining funds to a specific account.
 
 Employee and manager self-service 
 ----------------------------------
@@ -1367,7 +1367,7 @@ configuration data project and the sequences will align correctly.
 
 For more information, see [Configuration data templates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates).
 
-**Project Management \| Accounting**
+**Project management \| Accounting**
 ====================================
 
 Allow a project resource to delegate timesheet entry and submission to any user
@@ -1872,7 +1872,7 @@ LinkedIn engagement and acquisition
 You can monitor LinkedIn Company Pages owned by your company, and engagement on
 posts and comments from Company Pages.
 
-**Supply Chain Management**
+**Supply chain management**
 ===========================
 
 Batch and license plate confirmation 
@@ -2279,7 +2279,7 @@ Pre-employment access gives you:
 
 -   Ability to add personal information and view key data.
 
-**Workforce Management**
+**Workforce management**
 ========================
 
 Analytics and insights through Power BI
