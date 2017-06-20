@@ -1463,12 +1463,32 @@ After the project team is defined, open the **Work breakdown** structure on the
 be assigned to the task while the work breakdown structure is still in draft
 status.
 
-Microsoft Project Client Application integration
+Manage or view a project work breakdown structure using Microsoft Project Client
 ------------------------------------------------
 
-You can now open and manage the project work breakdown structure using Microsoft
-Project Client Application. The project manager can publish any changes back to
-Finance and Operations project work breakdown structure.
+Planning and maintaining a project schedule can be complex and project managers
+need to use tools that help them manage this. This feature provides support to
+open and manage the project work breakdown structure using the Microsoft Project
+Client Application. The project manager will be able to publish any changes back
+to Finance and Operations project work breakdown structure.
+
+To enable the integration, a Dynamics 365 add-in is required to be installed in
+the user’s client Microsoft Project application. This is done by opening the
+**Project management workspace**. Click the **Configure project client add-in**
+link in the **Setup** section under **Links**.
+
+A work breakdown structure that is in a draft status can be opened in the
+Microsoft Project Client Application by clicking **Open in Microsoft Project**
+from the project form (**Project management and accounting \> Projects \> All
+projects**) or can be opened from within Microsoft Project Client by clicking
+**Open** in the **Dynamics 365 for Operations** tab. Users can make necessary
+changes to the draft work breakdown structure, including assigning resources. If
+a project team has already been added to the project in Finance and Operations,
+the resource list will be populated with the team members. If a project team has
+not yet been added to the project, you can select the resources and build the
+team within Microsoft Project Client by clicking the **Resources** button on the
+**Dynamics 365 for Operations** tab. Edits to the work breakdown structure is
+published back to Finance and Operations.
 
 Project time entry mobile workspace 
 ------------------------------------
