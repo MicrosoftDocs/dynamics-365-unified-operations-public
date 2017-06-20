@@ -74,13 +74,13 @@ The Windows 8 tablet app provided functionality for expense entry and approval.
 
 #### SSRS Report Viewer control
 
-This feature was used to interact with HTML formatted reports in the Dynamics 365 for Finance and Operations
+This feature was used to interact with HTML formatted reports in the Finance and Operations
 web client.
 
 |                                  |  |
 |----------------------------------|--|
 | **Reason for deprecation**       | SQL Reporting Services (SSRS) does not support a report viewer control that is compatible with the on-premises web client.      |
-| **Replaced by another feature?** | Reports are rendered as PDF documents by the on-premise service. Use extensions to enable embedded drill-thru links in application reports. |
+| **Replaced by another feature?** | Reports are rendered as PDF documents by the on-premises service. Use extensions to enable embedded drill-thru links in application reports. |
 | **Modules affected**             | All    |
 
 #### Retail product recommendation
@@ -98,8 +98,8 @@ the cloud to domain-authenticated network printers.
 
 |                                  |  |
 |----------------------------------|--|
-| **Reason for deprecation**       | With on-premise of Dynamics 365 for Operations, deployments are hosted on domain authenticated servers. This offers secure direct access to network printer devices. |
-| **Replaced by another feature?** | This component is not necessary for on-premise deployments.|
+| **Reason for deprecation**       | On-premises deployments are hosted on domain authenticated servers. This offers secure, direct access to network printer devices. |
+| **Replaced by another feature?** | This component is not necessary for on-premises deployments.|
 | **Modules affected**             | None               |
 
 
