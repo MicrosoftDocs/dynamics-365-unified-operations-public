@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail home page
+title: Microsoft Dynamics 365 for Retail 
 description: Home page for Dynamics 365 for Retail
 author: josaw1
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Retail home page
+# Welcome to Dynamics 365 for Retail
 
 [!include[banner](includes/banner.md)]
 
