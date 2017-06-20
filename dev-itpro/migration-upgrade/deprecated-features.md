@@ -38,7 +38,9 @@ This topic describes features that have been removed, or that are planned for re
 
 ## Features that have been deprecated in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update with Platform update 8
 
-### Warehouse mobile devices portal
+### Features that have been deprecated for all deployments
+
+#### Warehouse mobile devices portal
 
 Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment. This component is no longer supported in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. A native app that improves the user experience has replaced the functionality of WMDP. 
 
@@ -48,7 +50,7 @@ Warehouse mobile devices portal (WMDP) was a standalone component that was inten
 | **Replaced by another feature?** | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Modules affected**             | Warehouse management, Transportation management |
 
-### Advanced bank reconciliation matching rule for manual matching
+#### Advanced bank reconciliation matching rule for manual matching
 
 A matching rule was used to select and mark a bank document when documents were manually matched in the reconciliation worksheet.
 
@@ -58,7 +60,7 @@ A matching rule was used to select and mark a bank document when documents were 
 | **Replaced by another feature?** | No. Column filtering capabilities should be used to find documents for reconciliation. |
 | **Modules affected**             | Cash and bank management                                                               |
 
-### Windows 8 tablet app
+#### Windows 8 tablet app
 
 The Windows 8 tablet app provided functionality for expense entry and approval.
 
@@ -68,10 +70,9 @@ The Windows 8 tablet app provided functionality for expense entry and approval.
 | **Replaced by another feature?** | No.                                                                                      |
 | **Modules affected**             | Expense management                                                                       |
 
-## Features that have been deprecated in on-premises deployments of Finance and Operations 
-This topics lists features that have been deprecated in Finance and Operations. If you use the on-premises deployment option of Finance and Operations, you'll need to note that the following features are deprecated, as well.
+### Features that have been deprecated for on-premises deployments 
 
-### SSRS Report Viewer control
+#### SSRS Report Viewer control
 
 This feature was used to interact with HTML formatted reports in the Dynamics 365 for Finance and Operations
 web client.
@@ -82,7 +83,7 @@ web client.
 | **Replaced by another feature?** | Reports are rendered as PDF documents by the on-premise service. Use extensions to enable embedded drill-thru links in application reports. |
 | **Modules affected**             | All    |
 
-### Retail product recommendation
+#### Retail product recommendation
 
 |                                  |  |
 |----------------------------------|--|
@@ -90,7 +91,7 @@ web client.
 | **Replaced by another feature?** | Indicate if the feature is replaced by something else.                  |
 | **Modules affected**             | List the modules affected such as Accounts payable, Accounts receivable |
 
-### Document Routing Agent
+#### Document Routing Agent
 
 The Document Routing Agent client is used as a service gateway to connect from
 the cloud to domain-authenticated network printers.
