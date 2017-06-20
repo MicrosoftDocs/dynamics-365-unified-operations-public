@@ -49,7 +49,7 @@ Material consumption is controlled by the following four flushing principles:
 -   Manual
 -  	Start
 -   Finish
--   Picked from location
+-   Available at location
 
 The flushing principles are configured in a defaulting hierarchy starting from the released product with the value Start. On the bill of material or formula line the flushing principle from the product can be overridden. The flushing principle on the production bill of material lines or batch order formula lines is defaulted from the product or overridden value on the bill of material or formulas.
 
