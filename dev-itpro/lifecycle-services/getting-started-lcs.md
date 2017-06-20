@@ -44,7 +44,7 @@ As a Microsoft Dynamics 365 for Finance and Operations partner, you can access 
 After you sign up for the current version of Finance and Operations as a partner, you can create two types of projects:
 
 -   Prospective presales
--   Migrate, create solutions, and learn Dynamics 365 for Operations
+-   Migrate, create solutions, and learn Dynamics 365 for Finance and Operations
 
 #### Prospective presales project
 

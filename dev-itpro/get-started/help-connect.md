@@ -56,7 +56,7 @@ Using the **System Parameters** page, system administrators connect the pieces o
 
 1.  Select the Lifecycle Services project to connect to.
 2.  Select the BPM libraries (within the selected project) to retrieve task recordings from.
-    - For Finance and Operations, for Microsoft content, select the February 2017 QPC Unified Library for Microsoft Dynamics 365 for Operations. 
+    - For Finance and Operations, for Microsoft content, select the February 2017 QPC Unified Library for Microsoft Dynamics 365 for Finance and Operations. 
     - For Retail, we will be releasing a library in July. 
     - You do not need to select a library for Talent—the connection to the correct library is established for you. 
 

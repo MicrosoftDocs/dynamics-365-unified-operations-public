@@ -95,7 +95,7 @@ The following table includes links to resources that can help you implement both
 <tr class="even">
 <td>2</td>
 <td>System administrator</td>
-<td><strong>If you're using Microsoft Dynamics 365 for Operations version 1611:</strong> Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</td>
+<td><strong>If you're using Microsoft Dynamics 365 for Finance and Operations version 1611:</strong> Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</td>
 <td>See the following topics for more information:
 <ul>
 

@@ -94,7 +94,7 @@ The branches of the workflow might contain the elements listed below.
 2.  Assign a task to the person who's responsible for requesting new AAD user accounts in Azure portal. Use the predefined **Send Azure B2B user invitation** task for this.
 3.  Assign an approval task to the person who uploads to Azure. If the process to create an account failed, they would reject the task and end the workflow.
 4.  Automatically provision a new user in Finance and Operations. Use the predefined **Automated provision user** task for this.
-5.  Notify the new user. You might want to send a welcome mail to the new user and provide a URL to Finance and Operations. The email can use a template which would be created in the **Email messages** page, and then selected on the **User workflow parameters** page. The template can include a tag: %portal URL% which will be replaced by the URL of the Dynamics 365 for Operations tenant.
+5.  Notify the new user. You might want to send a welcome mail to the new user and provide a URL to Finance and Operations. The email can use a template which would be created in the **Email messages** page, and then selected on the **User workflow parameters** page. The template can include a tag: %portal URL% which will be replaced by the URL of the Dynamics 365 for Finance and Operations tenant.
 
 #### Branch to modify security roles
 

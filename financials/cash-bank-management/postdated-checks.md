@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about support for postdated checks in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Postdated checks are checks that are issued to make and receive payments on a future date. Therefore, the check can't be cashed until the specified date.
 
-Microsoft Dynamics 365 for Operations supports the full management cycle for postdated checks in both Accounts receivable and Accounts payable, as shown in the following table.
+Microsoft Dynamics 365 for Finance and Operations supports the full management cycle for postdated checks in both Accounts receivable and Accounts payable, as shown in the following table.
 <table>
 <colgroup>
 <col width="50%" />
