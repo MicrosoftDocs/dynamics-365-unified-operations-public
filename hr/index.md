@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Welcome to Talent
+title: Microsoft Dynamics 365 for Talent
 description: Talent streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. These processes include employee retention, benefits administration, training, performance reviews, and change management.
 author: rschloma
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Welcome to Talent
+# Welcome to Microsoft Dynamics 365 for Talent
 
 [!include[banner](includes/banner.md)]
 
