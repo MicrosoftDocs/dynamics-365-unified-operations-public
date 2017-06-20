@@ -1648,11 +1648,9 @@ core business logic only, not for basic CRUD operations.)
 CRT handlers and extensible enums
 ---------------------------------
 
-To simplify the customization experience, many of the CRT handlers have been
-enhanced to have more granular message handlers so you can easily override or
-add triggers at specific extension points instead of owning the entire service
-or operation. Additionally, a few enums have been changed to be extensible
-enums.
+**Granular CRT handlers** - We are continuously improving our code base to simplify the customization experience. We have enhanced many of the CRT handlers with more granular message handlers, so you can easily override or add triggers at specific extension points instead of owning the entire service or operation. For example, loyalty service is enhanced with more granular handlers to support customization at earn (sale and return), redeem, calculation, or validation. Previously, to skip some standard checks you needed to override the entire calculate service but now this can be done just by overriding or adding pre/post triggers for the validation check request handlers. Refer to the commerce runtime messages.chm file in the Retail SDK folder for the available requests and responses for customization.
+
+**Extensible enums** – We have enhanced the CRT to support extensible enums. Extensible enums can be now accessed using the new API exposed in CRT. Using this new API you can easily set/get or validate values based on the enum type. In previous versions you needed to manually define the enums in the CRT layer and type match it without direct mapping between Finance and Operations enums and CRT enums. With the new extensible API exposed in CRT, you can directly map between Finance and Operations enums and CRT enums without manually creating the enums in CRT. Multiple partners and ISVs can create extensible enums and use them in their code independently, without any code merge. For example, if you create a new discount type extension enum, the same enum will be available for you in CRT. In your code you can check if discount type is equal to my discount enum type, instead of manually validating with some hardcoded values.
 
 Support for multiple Retail server extensions
 ---------------------------------------------
@@ -1700,16 +1698,13 @@ documentation for the full list.
 Enhanced channel database extension model
 -----------------------------------------
 
-Any extension to channel DB can be done using the new extension schema without
-modifying the existing schema. Also, the CRT data service now exposes the
-primary key, so you can perform custom extension scenarios as post operation.
+Extension to channel database can now be done using the extension schema without modifying the existing schema. All CRT database extension can be done in the extension schema, which supports CRUD operations for all extensions and for calling standard procedures and views from the extension. If you want to add new tables, procedures, functions, or views you can now do that all in the new extension schema. CRT data service is given access to extension schema to perform custom operations. Previously, you needed to modify the Microsoft schema to do this kind of change and it impacted the upgrade and hotfix uptake. You also needed to merge the custom script with the Microsoft script to avoid any overriding if there was any customization, so a partner or IT pro need to be involved in the upgrade process. With the new extension model, you can easily uptake a hotfix or upgrade without any script merge because the extensions are done in separate schema and maintained separately from the core scripts. Both are completely isolated, so the hotfix uptake will be as easy as a few button clicks.
+CRT data service now exposes the primary key for performing your custom extension scenario as post operation. For example, if you want to extend the shared retail parameters data service and fetch custom information, you can use the post triggers and do the extension. The post triggers expose the primary key and properties of the entities to perform any extension. From the extension, you can query the custom tables using the primary key and other information exposed through the entities. You can update the response with custom information as extension properties, which will be available in the client.
 
-CDX Extensibility Enhancements 
+CDX extensibility enhancements 
 -------------------------------
 
-You can extend the CDX seed data initialization class for custom tables and
-fields, using extension points. This helps you initialize the custom table and
-field in different environments without overlayering.
+We extended the Retail initialize feature to support custom table and field initialization for data sync between HQ and channel, and vice versa, without overlayering. The CDX seed data initialization class can be extended for custom tables and fields using the new extension points. These extension points will help you to initialize the custom tables and fields in different environments for data push and pull without overlayering. Previously, to achieve this you needed to modify the CDXDatagenerator class inline. Now all of this can be done using the extension. We have also enhanced the class to include a custom resource file to support custom tables and columns as extensions. Because the custom fields and tables information is added as an extension to the core class, you can now easily uptake any hotfix or upgrade without any code merge. You can also separate your code from different ISV and partner extensions. All extensions can be maintained and serviced separately, even if there are multiple ISV and partner extensions you can still perform servicing for your code or Microsoft code without disturbing or merging with the other extensions or core product code.
 
 Retail peripheral compatibility
 -------------------------------
@@ -1853,42 +1848,17 @@ For more information about discounts, see [Price adjustments and discounts](http
 POS Inventory visibility improvements
 -------------------------------------
 
-POS users can get a clear picture of the inventory status of any product in
-their store. They can also check the inventory status in other stores and
-warehouses of the company, to help the customer quickly buy the product they
-want. The **Inventory lookup** form displays the physical reserved inventory and
-incoming order quantity, along with the total physical inventory to help the
-cashier with the following scenarios:
+With the improved inventory visibility feature, cashiers can use POS to get a clear picture of the inventory status of any product in their store. They can also check the inventory status in other stores and warehouses of the company, thus helping customers to find the products that they want. The Inventory lookup form now displays the reserved inventory and incoming order quantity along with the total inventory to help the cashier with the following scenarios:
 
--   Determine if the current store has the product before the cashier goes to
-    the storage room to look for it.
+- Customer is looking for a product that is not on the shelf and the cashier wants to verify if the current store or any nearby store has it in stock.
+- Store manager realizes that the stock of a product is running low and wants to know if this product has been ordered for replenishment.
 
--   If the stock of a product is running low, then enable the cashier/store
-    manager to check if the product has been ordered.
-
--   If the current store is out of stock, then help the customer find another
-    store or warehouse that has the product in stock now or on order.
-
--   Determine when and how much new stock is expected to be delivered to any
-    store or warehouse in the current store’s group. This future product stock
-    information is the available to promise information as configured in the
-    headquarters.
+An additional capability named "Available to promise" (also known as ATP) is now available in POS. This allows cashiers to see when and how much new stock is expected to be delivered to current and other stores and warehouses. This future product stock information can help the cashier answer questions regarding the stock quantities on any future date.
 
 POS search improvements
 -----------------------
 
-This search improvement feature improves both product and customer search
-scenarios with the goal of enabling cashiers and sales associates to quickly
-find what they are searching. The search bar allows cashiers to choose whether
-they want to search for products or customers prior to performing the search.
-The search bar can be configured to display the product suggestions while
-typing, which empowers cashiers to search for products more quickly. The
-retailers also have the flexibility to configure whether the product search
-results should match 'all search terms' or match 'any search term'.
-Additionally, the product search searches the **Searchable** property of the
-products, thus ensuring higher product discoverability. Customer search has the
-logic to search for customers with or without the phone number masks, and return
-reliable results every time.
+With the search improvement feature we have improved both product and customer search scenarios with the goal of enabling the cashiers and sales associates to quickly find what they are searching. The search bar now enables the cashiers to choose whether they want to search for products or customers prior to performing the search. The search bar can be configured to display the product suggestions while typing, thus empowering the cashiers to search the products quickly. The retailers also have the flexibility to configure whether the product search results should match 'all search terms' or match 'any search term'. Additionally, the product search now searches in the 'Searchable' property of the products as well, thus ensuring higher product discoverability. Customer search is smarter now and can search for customers with or without the phone number masks, which means that reliable results are returned every time.
 
 Upgrade and support for previous versions
 -----------------------------------------
