@@ -573,7 +573,7 @@ In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel 
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Reason for deprecation       | Generic functionality is now used instead of localized functionality.                                                                                                                                                                 |
-| Replaced by another feature? | Yes, this functionality has been replaced by Advanced bank reconciliation functionality. Additionally, implementation of camt.053 ISO20022 account statement import is planned for General journal in the next update of Dynamics AX. |
+| Replaced by another feature? | Yes, this functionality has been replaced by Advanced bank reconciliation functionality. |
 | Modules affected             | All                                                                                                                                                                                                                                   |
 
 ### eBilanz (XBRL for Germany)
@@ -625,7 +625,7 @@ Prenote generation can't be done by using a batch, but it can still be done by
 |                              |                                                                                                                                                                                                                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Reason for deprecation       | The format is no longer applicable in Germany, because it has been replaced by Single Euro Payments Area (SEPA) functionality.                                                                                                                                                                 |
-| Replaced by another feature? | Yes, this functionality has been replaced by SEPA payment export and advanced bank reconciliation functionality for importing account statements. Additionally, implementation of camt.053 ISO20022 account statement import is planned for General journal in the next update of Dynamics AX. |
+| Replaced by another feature? | Yes, this functionality has been replaced by SEPA payment export and advanced bank reconciliation functionality for importing account statements. |
 | Modules affected             | All                                                                                                                                                                                                                                                                                            |
 
 ### German DTAZV payment format
@@ -641,7 +641,7 @@ Prenote generation can't be done by using a batch, but it can still be done by
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Reason for deprecation       | Generic functionality is now used instead of localized functionality.                                                                                                                                                                 |
-| Replaced by another feature? | Yes, this functionality has been replaced by Advanced bank reconciliation functionality. Additionally, implementation of camt.053 ISO20022 account statement import is planned for General journal in the next update of Dynamics AX. |
+| Replaced by another feature? | Yes, this functionality has been replaced by Advanced bank reconciliation functionality. |
 | Modules affected             | All                                                                                                                                                                                                                                   |
 
 ### German XML EU Sales list
