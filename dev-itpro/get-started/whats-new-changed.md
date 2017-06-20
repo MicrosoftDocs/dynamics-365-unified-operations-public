@@ -2,10 +2,10 @@
 # required metadata
 
 title: What's new or changed
-description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 06/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,6 +39,8 @@ This page points you to topics that can help you learn about the new features in
 For information about how to upgrade to the latest version, see [Process for upgrading to the latest update](../migration-upgrade/upgrade-latest-update.md).
 
 ## Application releases
+
+To learn more about the mobile workspaces and Power BI content recently released, see [Mobile workspaces recently released for the Dynamics 365 for Finance and Operations mobile app](../mobile-apps/mobile-workspaces-released.md) and [Power BI content recently released for Dynamics 365 for Finance and Operations](../analytics/power-bi-home-page.md)
 
 <table>
 <colgroup>
