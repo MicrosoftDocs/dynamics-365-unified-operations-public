@@ -74,6 +74,7 @@ The Windows 8 tablet app provided functionality for expense entry and approval.
 
 Used to interact with HTML formatted reports in the Dynamics 365 for Operations
 web client.
+
 |                                  |  |
 |----------------------------------|--|
 | **Reason for deprecation**       | SQL Reporting Services (SSRS) does not support a report viewer control that is compatible with the on-premises web client.      |
