@@ -315,7 +315,8 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tbody>
 </table>
 
-## On-premises
+## On-premises deployments
+If you're using the on-premises deployment option for Finance and Operations, note that the following features
 
 | **Feature**                                                      | **Description**                                                                                                                                                                          |
 |------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
