@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 41
-ms.search.scope: Operations, Core
+ms.search.scope: Retail, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
@@ -26,7 +26,7 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.dyn365.ops.version: Version 1611, Retail Version
 
 ---
 
