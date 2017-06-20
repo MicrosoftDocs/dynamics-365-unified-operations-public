@@ -58,6 +58,8 @@ You can access both help topics and task guides from the Help pane in whichever 
 
 This topic describes the Help system, and explains how you can create custom documentation and training resources for your organization.
 
+> [!IMPORTANT]
+> The **Task guides** tab is currently not available in Microsoft Dynamics 365 for Talent. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)).
 
 ## Help on docs.microsoft.com
 
