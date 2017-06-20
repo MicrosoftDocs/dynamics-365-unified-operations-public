@@ -26,7 +26,7 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 # Substitution/adjustment tax invoice for Thailand
 
-Youc an keep track of how many times copies of tax invoices for customers is printed. Whenever a copy of a tax invoice needs to be printed, it is required to specify the reason for the reprinted invoice, which is a substitution for the original invoice. A special comment is printed in the tax invoice copy that includes the reason for the substitution and the number of copies that have been printed.
+You can keep track of how many times copies of tax invoices for customers is printed. Whenever a copy of a tax invoice needs to be printed, it is required to specify the reason for the reprinted invoice, which is a substitution for the original invoice. A special comment is printed in the tax invoice copy that includes the reason for the substitution and the number of copies that have been printed.
 
 When you print a copy of the invoice, you can also select the Adjustment option which allows you to adjust the customer information printed in the tax invoice, including the customer name, address, contact information, tax registration number, branch number and branch name. The adjusted tax invoice gets a new tax invoice number and references the original tax invoice.
 
@@ -34,29 +34,29 @@ When you print a copy of the invoice, you can also select the Adjustment option 
 
 Before you can print a substituation or adjustment tax invoice for Thailand, you must complete the following setup: 
 
-1. Enable the parameters **Manage realized and unrealized VAT** and **Use tax branch** on the **General ledger parameters** page, fast-tab **Sales tax**;
+    - Enable the parameters **Manage realized and unrealized VAT** and **Use tax branch** on the **General ledger parameters** page, fast-tab **Sales tax**;
 
-2. Enable the financial dimension **Taxbranch** in the account structures for the legal entity. See [Plan your chart of accounts](../general-ledger/plan-chart-of-accounts.md) for more details on working with charts of accounts and account structures;
+    - Enable the financial dimension **Taxbranch** in the account structures for the legal entity. See [Plan your chart of accounts](../general-ledger/plan-chart-of-accounts.md) for more details on working with charts of accounts and account structures;
 
-3. Create the **Taxbranch** financial dimension values on the **Tax branch** page.
+    - Create the **Taxbranch** financial dimension values on the **Tax branch** page.
 
-4. Set **Tax type** for applicable sales tax codes on the **Sales tax codes** page.
+    - Set **Tax type** for applicable sales tax codes on the **Sales tax codes** page.
 
-5. Set **Tax registration number** of the legal entity on the **Legal entities** page, fast-tab **Tax registration**.
+    - Set **Tax registration number** of the legal entity on the **Legal entities** page, fast-tab **Tax registration**.
 
-6.  Map the registration type **THA** to the registration category **Enterprise ID (COID)** on the **Registration categories** page.
+    - Map the registration type **THA** to the registration category **Enterprise ID (COID)** on the **Registration categories** page.
 
-7. Set up the **Taxbranch** dimension for customers, vendors, projects, etc.
+    - Set up the **Taxbranch** dimension for customers, vendors, projects, etc.
 
-8. Set up customer and vendor addresses on the **Manage addresses** page:
+    - Set up customer and vendor addresses on the **Manage addresses** page:
 
     - Add registration IDs with the registration type **THA**;
 
     - Specify **Tax address type** and **Branch number** on the **Tax information** page;
 
-9. Set up report formats for customer invoice, free text invoice and project invoice on the **Print management setup** page opened from the **Form setup** page in the **Accounts receivable** or **Project management and accounting** modules. Select **SalesInvoice.ReportTH**, **FreeTextInvoice.ReportTH** and **PSAProjInvoice.ReportTH** respectively.
+    - Set up report formats for customer invoice, free text invoice and project invoice on the **Print management setup** page opened from the **Form setup** page in the **Accounts receivable** or **Project management and accounting** modules. Select **SalesInvoice.ReportTH**, **FreeTextInvoice.ReportTH** and **PSAProjInvoice.ReportTH** respectively.
 
-10. Select the **Enable tax document's substitution/adjustment function** check-boxes for accounts receivable invoices and project invoices on the **Accounts receivable parameters** page,  tabs **Update** and **Project** respectively.
+    - Select the **Enable tax document's substitution/adjustment function** check-boxes for accounts receivable invoices and project invoices on the **Accounts receivable parameters** page,  tabs **Update** and **Project** respectively.
 
 ## Printing substitution invoice
 
@@ -72,7 +72,7 @@ If the substitution/adjustment tax invoice functionality is enabled, it is only 
 
 The substitution tax invoice includes the same information as the original tax invoice. It also bears the "Substitution" mark. A remark is added to the bottom of the substitution tax invoice that includes the reason for the substitution, the sequence number and the date of the substitution.
 
-Note that you need to create a new substitution each time you need to re-print a tax invoice.
+> [!NOTE] You need to create a new substitution each time you need to re-print a tax invoice.
 
 ## Adjust customer information on a tax invoice
 
