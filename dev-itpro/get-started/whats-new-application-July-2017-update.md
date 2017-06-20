@@ -131,6 +131,51 @@ This means that you can make changes due to exceptions that occur periodically
 in the allocation process. This saves time having to regularly modify the
 allocation rule setup.
 
+Expense management mobile workspace
+-----------------------------------
+
+Many organizations require that a copy of a receipt be attached to a
+travel-related or business-related report that an employee submits for
+reimbursement. The **Expense management** mobile workspace lets users quickly
+create new expense lines on the mobile device of their choice by using an
+attached photo of a receipt. Alternatively, users can capture a photo of a
+receipt and then attach it to an expense report later. Employees also can create
+and manage their expense reports and submit for approval and reimbursement using
+their mobile device.
+
+Specifically, the **Expense management** mobile workspace enables a user to:
+
+-   Take a photo of a receipt, and upload it to Microsoft Dynamics for Finance
+    and Operations, Enterprise edition. A user can then attach that photo to an
+    expense report later.
+
+-   Upload a file as a captured receipt. A user can then attach that file to an
+    expense report later.
+
+-   Create a new expense line by using an attached receipt. A user can then add
+    the line item to an expense report later, and submit it for approval and
+    reimbursement.
+
+-   Create a new expense report.
+
+-   Attach credit card transactions and other previously created expenses to an
+    expense report.
+
+-   Create new expenses for an expense report.
+
+-   Attach a receipt to any expense for an expense report by either taking a
+    photo of the receipt or uploading a file as a captured receipt.
+
+-   Add the list of guests to an expense based on expense policy.
+
+-   Itemize expenses based on expense policy.
+
+-   Submit an expense report for approval and reimbursement.
+
+-   Approve or reject expense reports assigned to the employee as an approver.
+
+For more information, see [Expense management mobile workspace](https://docs.microsoft.com/en-us/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace).
+
 Expense management: Configuration related to employee's card ID
 ---------------------------------------------------------------
 
@@ -247,51 +292,6 @@ credit card transaction from the list of expenses for the employee. The employee
 can remove the match when viewing their matched expenses from the **Matched
 expenses** form (**Expense management** \> **My expenses** \> **Matched
 expenses**).
-
-Expense management mobile workspace
------------------------------------
-
-Many organizations require that a copy of a receipt be attached to a
-travel-related or business-related report that an employee submits for
-reimbursement. The **Expense management** mobile workspace lets users quickly
-create new expense lines on the mobile device of their choice by using an
-attached photo of a receipt. Alternatively, users can capture a photo of a
-receipt and then attach it to an expense report later. Employees also can create
-and manage their expense reports and submit for approval and reimbursement using
-their mobile device.
-
-Specifically, the **Expense management** mobile workspace enables a user to:
-
--   Take a photo of a receipt, and upload it to Microsoft Dynamics for Finance
-    and Operations, Enterprise edition. A user can then attach that photo to an
-    expense report later.
-
--   Upload a file as a captured receipt. A user can then attach that file to an
-    expense report later.
-
--   Create a new expense line by using an attached receipt. A user can then add
-    the line item to an expense report later, and submit it for approval and
-    reimbursement.
-
--   Create a new expense report.
-
--   Attach credit card transactions and other previously created expenses to an
-    expense report.
-
--   Create new expenses for an expense report.
-
--   Attach a receipt to any expense for an expense report by either taking a
-    photo of the receipt or uploading a file as a captured receipt.
-
--   Add the list of guests to an expense based on expense policy.
-
--   Itemize expenses based on expense policy.
-
--   Submit an expense report for approval and reimbursement.
-
--   Approve or reject expense reports assigned to the employee as an approver.
-
-For more information, see [Expense management mobile workspace](https://docs.microsoft.com/en-us/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace).
 
 Expense management: Split credit card expenses
 ----------------------------------------------
@@ -1429,6 +1429,47 @@ that are dependent on other entities. You can add one or more templates to a
 configuration data project and the sequences will align correctly.
 
 For more information, see [Configuration data templates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates).
+
+Upgrade 
+--------
+
+You can upgrade from Dynamics AX 2012 to Dynamics 365 for Finance and
+Operations, Enterprise edition. The complete Dynamics AX 2012 database can be
+brought forward, and your AX 2012 codebase can be upgraded to Finance and
+Operations. You can migrate from Dynamics AX 2009 to Finance and Operations via
+a migration toolset to bring forward master data and opening balances.
+
+Upgrade is now more predictable, which reduces the overall cost of the upgrade
+process. Upgrade kicks off with an automated analysis phase, which defines the
+preparation tasks required to reduce the time and cost to upgrade, as well as
+the ongoing future cost of Finance and Operations. Post upgrade, an automated
+validation phase provides statistics and metrics on the success of the upgrade
+process. The validation details can be used to quickly assess the state of the
+upgrade, so you can continue with functional testing and sign off.
+
+In Finance and Operations there are no expensive upgrades needed to stay current
+and take advantage of continuous innovation. You can update to the latest
+versions of the product with a click of a button. The product supports rich
+customizations but the need for costly code upgrade is gone. Extensions-based
+customizations easily migrate with every upgrade. New features introduced in the
+product are opt-in, which means that business processes will not be affected by
+the upgrade process. The Administrator can enable new features using the product
+post-upgrade, as they see fit. To minimize risks, upgrade enforces a workflow of
+an upgrade sandbox, validation, and then release to production.
+
+For more information, see the following topics:
+
+- [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012)
+- [Analysis: Use the upgrade analyzer to plan migration work](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool)
+- [Analysis: Estimate the effort to upgrade code](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-code-upgrade)
+- [Analysis: Deploy a sandbox environment](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox)
+- [Upgrade: Data upgrade in a development environment](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade)
+- [Upgrade: AX 2012 data upgrade tasks](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012)
+- [Upgrade: Data upgrade in a sandbox environment](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox)
+- [Validate: Tasks to complete after upgrade process](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process)
+- [Validate: Cutover testing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing)
+- [Validate: Functional testing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation)
+- [Validate: Prepare for go live](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep)
 
 **Project management \| Accounting**
 ====================================
