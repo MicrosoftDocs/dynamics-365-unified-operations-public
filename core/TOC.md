@@ -1607,7 +1607,7 @@
 ### Commerce runtime
 #### [Loyalty extension](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/loyalty-extension-sample?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-# [Dynamics 365 for Talent](/dynamics365/unified-operations/talent/index)
+# [Dynamics 365 for Talent](/dynamics365/unified-operations/talent/index?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Develop a human resources strategy
 ### [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1641,5 +1641,5 @@
 ### [Evaluate the results of a questionnaire](/dynamics365/unified-operations/talent/evaluate-questionnaire-results?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Workplace safety and compliance (United States)
-### [Form I-9 employment verification](/dynamics365/unified-operations/talent/localizations/noam-usa-form-i-9-verification?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Comply with the ADA](/dynamics365/unified-operations/talent/localizations/noam-usa-comply-ada?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Form I-9 employment verification](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Comply with the ADA](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)

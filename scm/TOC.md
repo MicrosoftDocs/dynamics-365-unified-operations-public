@@ -1641,5 +1641,5 @@
 ### [Evaluate the results of a questionnaire](/dynamics365/unified-operations/talent/evaluate-questionnaire-results?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
 ## Workplace safety and compliance (United States)
-### [Form I-9 employment verification](/dynamics365/unified-operations/talent/localizations/noam-usa-form-i-9-verification?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-### [Comply with the ADA](/dynamics365/unified-operations/talent/localizations/noam-usa-comply-ada?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Form I-9 employment verification](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Comply with the ADA](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada?toc=/dynamics365/unified-operations/supply-chain/toc.json)
