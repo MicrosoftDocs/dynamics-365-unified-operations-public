@@ -67,7 +67,7 @@ If you're using this functionality for integration with a business intelligence 
 
 ## Configuring the entity export option
 
-Start the Finance and Operations client, and then, on the **Data management** area page, select the **Configure Entity export to database** tile.
+Start the Finance and Operations client, and then, on the **Data management** workspace, select the **Configure Entity export to database** tile.
 
 ![Configure Entity export to database tile](media/6b9943828c28d71fa5624d89c2390831.png)
 
