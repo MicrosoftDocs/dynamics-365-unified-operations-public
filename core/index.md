@@ -86,12 +86,12 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
   <ul>
 <li><a href="../retail/call-center-functionality">Call center</a></li>
   <li><a href="../retail/define-maintain-retail-channels">Channel setup and management</a></li>
-  <li><a href="../retail/define-maintain-channel-clients-registers-hw-stations">MPOS and Cloud POS</a></li>
+  <li><a href="../retail/retail-peripherals-overview">MPOS and Cloud POS</a></li>
   <li><a href="../retail/dev-itpro/dev-retail-home-page">Retail developer and administration </a></li></ul>
 <p>Dynamics 365 for Talent</p>
    <ul>
   <li><a href="../talent/departments-jobs-positions">HR strategy</a></li>
-  <li><a href="../talent/performance-management-overview">Employee training</a></li>
+  <li><a href="../talent/performance-management-overview">Employee development and training</a></li>
   <li><a href="../talent/manage-benefit-program">Benefits</a></li>
   <li><a href="../talent/questionnaires">Questionnaire</a></li>
 </ul></td>
