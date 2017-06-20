@@ -6,6 +6,9 @@
 ### [How to get the on-premises version of Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [Deploy a demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Deprecated features](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [AX 2012 features not yet implemented](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Features not implemented in on-premises deployments](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### Explore the user interface
 #### [Action search](/dynamics365/unified-operations/fin-and-ops/get-started/action-search?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
