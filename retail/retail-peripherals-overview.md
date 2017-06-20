@@ -18,10 +18,9 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Core
+ms.search.scope: Operations, Core, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 268444
-ms.assetid: 2ea93e43-8019-49a0-a7f8-325565ebc52d
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
@@ -578,7 +577,7 @@ According to current security standards, the following settings should be used i
 **Note:** It’s very important that you review security guidelines for IIS and the Payment Card Industry (PCI) requirements.
 
 ## Peripheral simulator
-For information, see [Retail peripheral simulator](..dev-itpro/retail-peripheral-simulator.md).
+For information, see [Retail peripheral simulator](dev-itpro/retail-peripheral-simulator.md).
 
 ## Microsofttested peripheral devices
 ### IPC (built-in) hardware station
