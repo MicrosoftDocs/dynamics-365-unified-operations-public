@@ -59,7 +59,7 @@ If the process is successful, the task is marked as completed.
 
 Another goal during data upgrade is to preserve security role assignments. This task resembles the previous “Prepare model metadata” task. Security role information that is stored in the AX 2012 model database must be copied to the AX 2012 business data database, so that the information is preserved in the Finance and Operations environment after upgrade. During data upgrade runs, the same security role will be restored in the upgraded Finance and Operations environment.
 
-1. In the Dynamics 365 for Operations data upgrade checklist, click **Prepare security role metadata**.
+1. In the Dynamics 365 for Finance and Operations data upgrade checklist, click **Prepare security role metadata**.
 1. When you’re prompted, click **Yes**.
 1. Wait for the copy process to be completed.
 

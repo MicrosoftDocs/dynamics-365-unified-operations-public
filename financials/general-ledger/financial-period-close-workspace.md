@@ -68,7 +68,7 @@ The **Task complete** option must be manually selected after the task is complet
 You can view all current and previous period close tasks from the **All financial period close tasks** list page. This list page is best used for historical analysis of your closing process, because it includes information about the scheduled due date, the actual completion date, and the person who completed the task. You can easily export the information on this list page to Microsoft Excel for reporting and auditing purposes.
 
 ## Financial period close configuration page
-Before you can use the **Financial period close** workspace, you must configure the process in Microsoft Dynamics 365 for Operations by using the **Financial period close configuration** page. (Click **General ledger** &gt; **Period close** &gt; **Financial period close configuration**.)
+Before you can use the **Financial period close** workspace, you must configure the process in Microsoft Dynamics 365 for Finance and Operations by using the **Financial period close configuration** page. (Click **General ledger** &gt; **Period close** &gt; **Financial period close configuration**.)
 
 ### Resources
 

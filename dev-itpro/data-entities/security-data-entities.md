@@ -165,7 +165,7 @@ Because the approach that is described in the preceding table complies with the 
 </table>
 
 ## Duty naming guidelines
-When you create data entities for specific integration scenarios, you should also create separate duties. These duties grant the external application or service the required access to the data entities. The duties that you create should follow the same naming guidelines as the corresponding duties that provide access through the Dynamics 365 for Operations client UI. However, you should add a “using services” suffix.
+When you create data entities for specific integration scenarios, you should also create separate duties. These duties grant the external application or service the required access to the data entities. The duties that you create should follow the same naming guidelines as the corresponding duties that provide access through the Dynamics 365 for Finance and Operations client UI. However, you should add a “using services” suffix.
 
 <table>
 <tbody>

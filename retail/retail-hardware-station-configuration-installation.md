@@ -43,7 +43,7 @@ This topic explains how to configure, download, and install Retail hardware stat
 > [!NOTE]
 > This procedure is required only if you're running the February 2016 (RTW) version of Microsoft Dynamics 365 for Retail. If you're running version 1611, start with the next procedure.
 
-1. Use your Microsoft Azure Active Directory (Azure AD) credentials to sign in to the Retail headquarters or Microsoft Dynamics 365 for Operations trial.
+1. Use your Microsoft Azure Active Directory (Azure AD) credentials to sign in to the Retail headquarters or Microsoft Dynamics 365 for Retail trial.
 2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware station profiles**.
 3. On the **Hardware station profile** page, on the Action Pane, select **New**.
 4. In the **Hardware station ID** field, enter a unique hardware station ID.

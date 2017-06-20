@@ -44,7 +44,7 @@ The degree of detail in a WBS depends on the level of accuracy that is required 
 
 By contrast, projects in industries such as media and advertising, software, and IT infrastructure tend to be one of a kind, and productivity is relative to the experience and competency of the individual who is performing the task. Therefore, these industries use a WBS to get an approximation of the size of a project, not to track the progress of that project in detail. 
 
-Building a WBS is an intensive process that is usually done over a long period, and that requires collaboration and information from a wide variety of people. This topic describes how you can use WBS enhancements in Microsoft Dynamics 365 for Operations to meet your requirements for estimates and tracking.
+Building a WBS is an intensive process that is usually done over a long period, and that requires collaboration and information from a wide variety of people. This topic describes how you can use WBS enhancements in Microsoft Dynamics 365 for Finance and Operations to meet your requirements for estimates and tracking.
 
 ## Prerequisites for creating a WBS
 To create a WBS, you must be able to create a work schedule and estimate the cost of work.
@@ -117,7 +117,7 @@ Schedule estimation is usually the second step in creating a WBS. As a best prac
 **Task dependencies** 
 In a WBS, you can create a predecessor relationship between tasks. When you assign predecessor tasks to a task, that task can start only after all its predecessor tasks have been completed. The planned start date of the task is automatically set to the latest date of all its predecessors. 
 
-**Task scheduling in Microsoft Dynamics 365 for Operations** 
+**Task scheduling in Microsoft Dynamics 365 for Finance and Operations** 
 The following factors determine the scheduling of leaf node tasks:
 
 -   Predecessors

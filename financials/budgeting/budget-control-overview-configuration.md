@@ -40,7 +40,7 @@ This article introduces budget control and provides information to help you conf
 Overview
 --------
 
-Budget control in Microsoft Dynamics 365 for Operations supports management of an organization’s financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. 
+Budget control in Microsoft Dynamics 365 for Finance and Operations supports management of an organization’s financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. 
 
 After budgets have been approved in Finance and Operations, you can use budget plans to generate budget register entries to record the expenditure budget for an organization. Alternatively, you can create or import budget register entries from a third-party program instead of using budget planning functionality. 
 

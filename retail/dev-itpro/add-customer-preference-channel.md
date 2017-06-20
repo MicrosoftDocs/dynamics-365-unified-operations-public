@@ -78,7 +78,7 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
     6.  Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Initialize retail scheduler**. The required scheduler subjob definition is generated, and the subjob is added to the scheduler job.
 
 7.  Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Retail channel schema**.
-8.  On the **Retail channel schema** page, in the left navigation pane, click **Dynamics 365 for Operations.**
+8.  On the **Retail channel schema** page, in the left navigation pane, click **Dynamics 365 for Retail.**
 9.  On the **Retail data distribution** tab, click **Export**.
 10. Follow one of these steps, depending on the browser that you're using:
     -   If you're using Google Chrome, you should be prompted to download an XML file. Save the file to a path.
@@ -94,7 +94,7 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
                 </LinkGroup>
             </Table>
 
-12. After you've finished editing the file, go back to client and the **Retail channel schema** page. In the left navigation pane, click **Dynamics 365 for Operations.**
+12. After you've finished editing the file, go back to client and the **Retail channel schema** page. In the left navigation pane, click **Dynamics 365 for Retail.**
 13. On the **Retail data distribution** tab, click **Import**.
 14. In the dialog box that opens, click **Browse**, select the XML file that you just edited, and then click **OK** to import the file.
 15. Close the **Retail channel schema** page.
