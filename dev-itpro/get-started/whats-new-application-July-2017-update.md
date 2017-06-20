@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of XXX.
 author: tonyafehr
 manager: AnnBe
-ms.date: 05/31/2017
+ms.date: 06/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,9 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of XXX.
 
-Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see supplemental information about new features and learn more about what new features are in development. 
+**Note:** Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
+
+Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to find supplemental information about new features and learn more about what new features are in development. 
 
 Introducing Dynamics 365 for Finance and Operations, Enterprise edition
 =======================================================================
