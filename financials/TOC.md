@@ -7,7 +7,8 @@
 ### [Deploy a demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Deprecated features](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [AX 2012 features not yet implemented](/dynamics365/unified-operations//dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [AX 2012 features not yet implemented](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Features not implemented in on-premises deployments](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=/dynamics365/unified-operations/financials/toc.json)
 
 
 ### Explore the user interface
