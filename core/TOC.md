@@ -334,20 +334,20 @@
 ##### [Post inventory main accounts by site](/dynamics365/unified-operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up negative debits credits ](/dynamics365/unified-operations/financials/localizations/apac-chn-negative-debits-credits?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Japan
+##### [Allocation rules](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Bank payment fees covered by vendors](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Consolidated invoices](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### Fixed assets
-###### [Allocation rules](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Depreciation FAQ](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-####### [Equally divided depreciation method](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Impairment accounting](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-fixed-assets?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-####### [Impairment accounting on CGU](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Set up ARO](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Set up reduction entries](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Depreciation FAQ](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Equally divided depreciation method](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Impairment accounting](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-fixed-assets?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Impairment accounting on CGU](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Import postal codes](/dynamics365/unified-operations/financials/localizations/apac-jpn-import-postal-codes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
 ##### [Pay a vendor by endorsing a bill of exchange](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Progressive withholding tax calculation](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Set up ARO](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Set up reduction entries](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Malaysia
-##### [Goods and Services Tax ](/dynamics365/unified-operations/financials/localizations/apac-mys-gst?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Goods and Services Tax](/dynamics365/unified-operations/financials/localizations/apac-mys-gst?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Singapore
 ##### [Generate the GST-05 report](/dynamics365/unified-operations/financials/localizations/apac-sgp-generate-gst-05-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Thailand
@@ -357,6 +357,11 @@
 
 ### Europe
 #### [Advance holders](/dynamics365/unified-operations/financials/localizations/emea-advance-holders?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Advance holder transactions](/dynamics365/unified-operations/financials/localizations/emea-advance-holders-transactions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Advanced invoicing](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Bank reconciliation](/dynamics365/unified-operations/financials/localizations/emea-bank-reconciliation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Corrective invoicing](/dynamics365/unified-operations/financials/localizations/emea-corrective-invoice?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Create and post periodic journals](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Edit invoice IDs on sales orders](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [EU entry certificates](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [EU sales list reporting](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -364,6 +369,7 @@
 #### [File formats for methods of payment](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Fixed assets disposal for Estonia and Lithuania](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Inventory journal reports](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Invoice and packing slip numbering for Latvia and Lithuania](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Invoice issue deadlines](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [OIOUBL standards](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -372,14 +378,21 @@
 #### [Post the pre-acquisition of a fixed asset](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Postal codes](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Registration IDs](/dynamics365/unified-operations/financials/localizations/emea-registration-ids?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Reverse charges](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [SEPA Credit transfer overview](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [SEPA Direct debit overview](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Set up customer and vendor compensation](/dynamics365/unified-operations/financials/accounts-receivable/emea-compensation-customer-vendor-transactions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up signers for print forms](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Tax directives]
+#### [Update how amounts are displayed on reports and documents](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
 #### [VAT exchange rates](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [VAT register transactions for Eastern Europe](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [VAT reporting](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [View transactions on settlement](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Austria
 ##### [Half-year depreciation](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Packing material fees](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Purchase duties](/dynamics365/unified-operations/financials/localizations/emea-aut-purchase-duties?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [VAT statement](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Belgium
 ##### [CODA bank statement](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -402,6 +415,7 @@
 ###### [Public sector accounting](/dynamics365/unified-operations/financials/localizations/emea-fra-public-sector-accounting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Commitments](/dynamics365/unified-operations/financials/localizations/emea-fra-commitments-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Mandats de paiement](/dynamics365/unified-operations/financials/localizations/emea-fra-mandats-de-paiement?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Procurement and sourcing](/dynamics365/unified-operations/financials/localizations/emea-fra-procurement-sourcing-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Titres de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Vendor invoice payment holds](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Chronological invoices vouchers](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -495,11 +509,15 @@
 ##### [Electronic invoices ](/dynamics365/unified-operations/financials/localizations/latam-mex-CFDI-electronic-invoices?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Electronic ledger accounting statements](/dynamics365/unified-operations/financials/localizations/latam-mex-electronic-ledger-accounting-statements?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [ISR declaration report](/dynamics365/unified-operations/financials/localizations/latam-mex-isr-declaration-report-supporting-processes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-
+### Middle East
+#### [Zakat reporting for Saudi Arabia](/dynamics365/unified-operations/financials/localizations/emea-sau-zakat-reporting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### North America
 #### [Year-end 1099 reporting for the United States](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-## Human resources
+#### [Form 1099 for the public sector](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
+
+
+## Human resources
 ### Recruiting
 #### [Manage a recruiting process](/dynamics365/unified-operations/fin-and-ops/hr/manage-recruiting-process?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Mass hire projects](/dynamics365/unified-operations/fin-and-ops/hr/mass-hire-projects?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
