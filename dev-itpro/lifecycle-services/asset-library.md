@@ -6,13 +6,13 @@ Asset Library is a store for all the different assets associated with a tenant i
 1) *Shared Asset Library* - This is used by Microsoft and Partners to share assets across multiple tenants, projects and environments in LCS. This is accessible to every user that signs into LCS. To get to the Shared Asset Library:
     - Log into LCS.
     - **Click** on **Shared Asset Library** tile. 
-  [![sharedassetlibrary](./media/sharedassetlibrary.jpg)]
+  [![sharedassetlibrary](./media/SharedAssetLibrary.jpg)]
   
 2) *Project level Asset Library* - This is a project level asset library to share assets across environments within a project in LCS. This is accessible to users within a project. To get to the Project Asset Library:
     - Log into LCS.
     - Click on a **specific project**. 
     - In the hamburger menu at the top left, click on **Asset Library**. 
-    [![projectassetlibrary](./media/projectassetlibrary.jpg)]
+    [![projectassetlibrary](./media/ProjectAssetLibrary.jpg)]
 
 ## Asset library supports multiple kinds of assets. Some common used assets are:
 1) **Software deployable packages**  - This tab represents all the packages used for updating your environment with latest set of updates.
