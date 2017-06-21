@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Out-of-the-box security and licensing reports
+title: Out-of-the-box security reports
 description: [Full description that appears in the search results. Often the first paragraph of your topic.]
 author: [your GitHub alias]
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.intro: 2017-05-19
 ms.dyn365.version: Platform update 7
 ---
 
-# Out-of-the-box security and licensing reports
+# Out-of-the-box security reports
 
 [!include[banner](../includes/banner.md)]
 
