@@ -49,7 +49,7 @@ Before you can print a substitution tax invoice or an adjustment tax invoice for
 - On the **Print management setup** page that is opened from the **Form setup** page in either Accounts receivable or Project management and accounting, set up report formats for customer invoices, free text invoices, and project invoices. Select **SalesInvoice.ReportTH**, **FreeTextInvoice.ReportTH**, and **PSAProjInvoice.ReportTH**, respectively.
 - On the **Accounts receivable parameters** page, on the **Update** and **Project** tabs, select the **Enable tax document's substitution/adjustment function** check box for accounts receivable invoices and project invoices, respectively.
 
-## Printing substitution invoice
+## Print a substitution invoice
 
 If the substitution/adjustment tax invoice functionality is enabled, the original tax invoice can be printed only one time. If you try to reprint it, you receive an error. Follow these steps to reprint the tax invoice.
 
