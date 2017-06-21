@@ -4,12 +4,12 @@ This wiki describes the Asset Library functionality in Lifecycle Services.
 
 Asset Library is a store for all the different assets associated with a tenant in LCS. There are two kinds of Asset Libraries available in LCS:
 1) *Shared Asset Library* - This is used by Microsoft and Partners to share assets across multiple tenants, projects and environments in LCS. This is accessible to every user that signs into LCS. To get to the Shared Asset Library:
-    a. Log into LCS.
-    b. **Click** on **Shared Asset Library** tile. 
+    a) Log into LCS.
+    b) **Click** on **Shared Asset Library** tile. 
 2) *Project level Asset Library* - This is a project level asset library to share assets across environments within a project in LCS. This is accessible to users within a project. To get to the Project Asset Library:
-    a. Log into LCS.
-    b. Click on a **specific project**. 
-    c. In the hamburger menu at the top left, click on **Asset Library**. 
+    a) Log into LCS.
+    b) Click on a **specific project**. 
+    c) In the hamburger menu at the top left, click on **Asset Library**. 
 
 ## Asset library supports multiple kinds of assets. Some common used assets are:
 1) **Software deployable packages**  - This tab represents all the packages used for updating your environment with latest set of updates.
@@ -22,6 +22,10 @@ Asset Library is a store for all the different assets associated with a tenant i
 2) **Project** - when a project is imported from Global scope to a project, the scope is set to Project scope. 
 3) **Organization** - When an asset needs to be shared with multiple users within a tenant, the tenant admin can promote the asset to organization scope. 
 4) **Global** - Only Microsoft can upload assets to the Global scope. These are assets that Microsoft wants to be made publicly available to all the LCS projects and users.  
+
+## Each asset has a state:
+1) **Draft**
+2) **Published**
 
 ## Different actions that can be performed in the asset library:
 1) **Uploading an asset to the asset library**: To upload an asset to the asset library follow the below steps:
@@ -36,8 +40,9 @@ Asset Library is a store for all the different assets associated with a tenant i
     c) Follow the same steps as uploading a new asset. 
      This will upload a new asset in the asset library. To view multiple versions for a single asset, click on **Versions** in the toolbar. 
 
-2) **Move assets from global asset library to project asset library**: To move asset from the global to the project scope there are two options:
-  a) 
+2) **Move assets from global asset library to project asset library**: To move asset from the global to the project scope, first go the Project Asset Library. Below are two options to move assets to a project scope:
+  a) Import from Global scope
+  b) Copy from Global Scope 
 
 
 
