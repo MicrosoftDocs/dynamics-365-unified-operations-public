@@ -35,7 +35,7 @@ In Dynamics 365 for Retail, the statement posting process is used to account for
 
 The following diagram illustrates the statement posting process. In the process, transactions that are recorded in POS are transmitted to the client by using the Retail scheduler. After the client receives the transactions, you can create, calculate and post the transaction statement for the store. 
 
-![Statement posting process](../media/retail statements.png)
+[![Statement posting process](../media/retail statements.png)](../media/retail statements.png)
 
 ## Creating and posting statements
 You can create a statement manually or by using batch processes that you set up to run periodically throughout the day. In both cases, the following steps are used to create and post statements.
