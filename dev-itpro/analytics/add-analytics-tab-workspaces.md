@@ -100,6 +100,89 @@ To extend the form definition for the **Reservation Management** workspace:
 17.	Right-click again then select **Add pattern** > **Workspace Tabbed**.
 18.	Perform a build to verify your changes.
  
+Here’s what the design will look like after applying these changes:
 
+![FMClerkWorkspace after changes](media/analytical-workspace-definition-after.png)
 
+Now that you have added the form controls that will be used to embed the workspace report, you will need to define the size of the parent control to accommodate the layout.  By default, the report will be displayed with both the **Filters Pane** and the **Tab** pages in the report visible.  However, you can toggle the visibility of these controls as appropriate for the target consumer of the report.  
+ 
+> [!NOTE]
+> For embedded workspaces, we recommend using extensions to hide both the **Filters Pane** and **Tab** pages for consistency.
+ 
+You have completed the task of Extending the application Form definition.  For more information on customizations using extensions, see  [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
+
+# Add X++ business logic to embed a viewer control
+To add business logic to initialize the report viewer control embedded in the Reservation Management Workspace:
+1.	Open the **FMClerkWorkspace** form designer to extend the design definition.
+2.	Press **F7** to access the code behind the code definition.
+3.	Add the following X++ code:
+```
+[Form] 
+public class FMClerkWorkspace extends FormRun
+{
+    private boolean initReportControl = true;
+ 
+    protected void initAnalyticalReport()
+    {
+        if (!initReportControl)
+        {
+            return;
+        }
+ 
+        // Note: secure entry point into the Workspace's Analytics report
+        if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
+        {
+            FMPBIWorkspaceController controller = new FMPBIWorkspaceController();
+            PBIReportHelper::initializeReportControl('FMPBIWorkspaces', powerBIReportGroup);
+        }
+ 
+        initReportControl = false;
+    }
+ 
+    /// <summary>
+    /// Initializes the form.
+    /// </summary>
+    public void init()
+    {
+        super();
+        this.initAnalyticalReport();
+    }
+ 
+}
+```
+
+4. Perform a build to verify your changes.
+
+You have completed the task of Adding business logic to initialize the embedded report viewer control. Here’s what the workspace will look like after applying these changes:
+
+![Report embedded in workspace](media/analytical-workspace-final.png)
+
+> [!NOTE]
+> The existing operational view is accessible via the **Workspace Tabs** displayed below the page title.
+
+# Reference
+
+## PBIReportHelper.initializeReportControl Method [AX7.2]
+Helper class used to embed a Power BI report (PBIX resource) in a form group control
+
+### Syntax
+```
+public static void initializeReportControl(
+     str                 _resourceName,
+     FormGroupControl    _formGroupControl,
+     str                 _defaultPageName = '',
+     boolean             _showFilterPane = false,
+     boolean             _showNavPane = false,
+     List                _defaultFilters = new List(Types::Class))
+```
+
+### Parameters
+| Name | Description |
+|---|---|---|
+|resourceName|The pbix resource name|
+|formGroupControl|The form group control to apply power bi report control.|
+|defaultPageName|The default page name.|
+|showFilterPane|True show filter pane. Otherwise, false.|
+|showNavPane|True show navigation pane. Otherwise, false.|
+|defaultFilters|The default power bi report filters|
 
