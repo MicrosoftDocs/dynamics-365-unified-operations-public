@@ -1066,7 +1066,10 @@
 #### Move packages between environments
 ##### Create and apply a deployable package
 ##### [Continuous delivery](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-
+###### [Development and continuous delivery FAQ](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-faq.md?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Exclude test packages from the build output](/dynamics365/unified-operations/dev-itpro/dev-tools/exclude-test-packages.md?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Manage third-party models and runtime packages by using source control](/dynamics365/unified-operations/dev-itpro/dev-tools/manage-runtime-packages.md?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Version models in the automated build](/dynamics365/unified-operations/dev-itpro/dev-tools/version-models-build.md?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Performance home page
 ##### [Take a trace using Trace parser](/dynamics365/unified-operations/dev-itpro/perf-test/trace-trace-tutorial?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
