@@ -48,19 +48,19 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 <td><h3>Financials</h3>
 <p>Compliance</p>
 <p>Financial management</p>
-<ul><li><a href="../financials/accounts-payable/accounts-payable">Accounts payable</a></li>
+<ul style="list-style-type:none">
+<li><a href="../financials/accounts-payable/accounts-payable">Accounts payable</a></li>
 <li><a href="../financials/accounts-receivable/accounts-receivable">Accounts receivable</a></li>
 <li><a href="../financials/budgeting/budgeting-overview">Budgeting</a></li>
 <li><a href="../financials/cash-bank-management/cash-bank-management">Cash and bank management</a></li>
 <li><a href="../financials/cost-accounting/cost-accounting-home-page">Cost accounting</a></li>
 <li><a href="../financials/fixed-assets/fixed-assets">Fixed assets</a></li>
 <li><a href="../financials/general-ledger/general-ledger">General ledger</a></li>
-
 <li><a href="../financials/public-sector/public-sector-functionality">Public sector</a></li>
 <li><a href="../dev-itpro/lcs-solutions/country-region">Regional regulatory features</a></li></ul>
 <p><a href="../financials/project-management/overview-project-management-accounting">Project management</a></p>
 <H3>Human resources</h3>
-  <ul>
+  <ul style="list-style-type:none">
 <li><a href="hr/manage-recruiting-process">Recruiting</a></li>
 <li><a href="hr/localizations/noam-usa-payroll">US payroll</a></li>
 </ul>
@@ -68,19 +68,19 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 <p><a href="../supply-chain/cost-management/costing-sheets">Cost management</a></p>
 <p><a href="../supply-chain/inventory/inventory-locations">Inventory management</a></p>
 <p>Logistics</p>
-<ul><li><a href="../supply-chain/transportation/transportation-management-overview">Transportation management</a></li>
-<li><a href="../supply-chain/warehousing/warehouse-configuration">Warehouse management</a></li></ul></li>
+<ul style="list-style-type:none"><li><a href="../supply-chain/transportation/transportation-management-overview">Transportation management</a></li>
+<li><a href="../supply-chain/warehousing/warehouse-configuration">Warehouse management</a></li></ul>
 <p><a href="../supply-chain/master-planning/master-plans">Planning</a></p>
   <p><a href="../supply-chain/pim/set-up-maintain-product-configuration-model">Product information management</a></p>
   <p><a href="../supply-chain/production-control/create-production-orders">Production control</a></p>
 <p>Order management</p>
-  <ul><li><a href="../supply-chain/procurement/procurement-sourcing-overview">Procurement and sourcing</a></li>
+  <ul style="list-style-type:none"><li><a href="../supply-chain/procurement/procurement-sourcing-overview">Procurement and sourcing</a></li>
   <li><a href="../supply-chain/sales-marketing/overview-sales-marketing">Sales and marketing</a></li></ul>
 </td>
 <td>
 <h3>Unified Operations platform</h3>
 <p>Intelligence</p>
-<ul><li><a href="../dev-itpro/analytics/analytics">Analytics</a></li>
+<ul style="list-style-type:none"><li><a href="../dev-itpro/analytics/analytics">Analytics</a></li>
  <li><a href="../dev-itpro/analytics/document-reporting-services">Business documents</a></li>
 <li><a href="../dev-itpro/analytics/financial-reporting-intro">Financial reporting</a></li>
 <li><a href="../dev-itpro/analytics/general-electronic-reporting">Regulatory reporting</a></li></ul>
@@ -88,25 +88,25 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 <p><a href="../dev-itpro/mobile-apps/mobile-platform">Mobile platform</a></p>
 
  <p>Developer functionality</p>
-<ul>
-<li><a href="../dev-itpro/continuous-delivery-home-page">Continuous delivery</a></li>
+<ul style="list-style-type:none">
+<li><a href="../dev-itpro/dev-tools/continuous-delivery-home-page">Continuous delivery</a></li>
 <li><a href="../dev-itpro/get-started/demo-data">Demo data</a></li>
 <li><a href="../dev-itpro/dev-tools/developer-home-page">Developer tools</a></li>
 <li><a href="../dev-itpro/extensibility/customize-model-elements-extensions">Extensibility</a></li>
 <li><p>Integration</p>
-<ul><li><a href="../dev-itpro/data-entities/data-entities">Data entities</a></li>
+<ul style="list-style-type:none"><li><a href="../dev-itpro/data-entities/data-entities">Data entities</a></li>
 <li><a href="../dev-itpro/office-integration/office-integration">Office integration</a></li></ul></li></ul>
 
 <p>Administrator functionality<p>
-<ul>
-<li><a href="../get-started/onboarding-home">Onboarding your organization</a></li>
-<li><a href="../dev-itpro/deploy-demo-environment">Deployment and servicing</a></li>
+<ul style="list-style-type:none">
+<li><a href="../fin-and-ops/get-started/onboarding-home">Onboarding your organization</a></li>
+<li><a href="../dev-itpro/deployment/deploy-demo-environment">Deployment and servicing</a></li>
 <li><a href="../dev-itpro/migration-upgrade/upgrade-home-page">Upgrade</a></li>
 <li><a href="../dev-itpro/data-entities/data-management-integration-data-entity">Data management</a></li>
 <li><a href="../dev-itpro/lifecycle-services/lcs">Lifecycle Services</a></li>
 <li><a href="../fin-and-ops/organization-administration/organization-administration-home-page">Organization administration</a></li>
 <li><a href="../dev-itpro/sysadmin/system-administration-home-page">System administration</a></li>
-<ul>
+</ul>
 </td>
 <td>
 <h3>Dynamics 365 for Talent</h3>

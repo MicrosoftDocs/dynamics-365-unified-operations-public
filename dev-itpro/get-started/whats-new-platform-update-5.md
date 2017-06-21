@@ -50,7 +50,7 @@ Development and customization
 ## Personalization
 | Feature                                              | **Why this is important**                                                                                                                                                                                                                                                                                                  |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enhanced administration features for personalization | The personalization administrator can now apply or remove form personalizations for groups of users. Previously personalization administration was only possible one user at a time. For more information, see [Personalize the user experience](/fin-and-ops/get-started/personalize-user-experience). |
+| Enhanced administration features for personalization | The personalization administrator can now apply or remove form personalizations for groups of users. Previously personalization administration was only possible one user at a time. For more information, see [Personalize the user experience](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience). |
 
 
 

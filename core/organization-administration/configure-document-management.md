@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: cgarty
 ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: Enterprise edition, July 2017 update 
+ms.dyn365.ops.version: July 2017 update 
 ---
 
 # Configure document management

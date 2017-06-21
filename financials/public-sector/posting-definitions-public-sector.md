@@ -21,7 +21,6 @@ ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 27271
-ms.assetid: f6e0a75c-fb84-4b86-9ea1-8fd4fcf01c13
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: brpotter

@@ -37,16 +37,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the components of the Help system for Microsoft Dynamics 365 for Finance and Operations. It provides an overview of how to connect these components and a summary of how to create custom help. 
 
-Help architecture
------------------
-
+## Help architecture
 The following illustration shows the parts of the Finance and Operations Help system. The in-product Help system pulls articles from the Finance and Operations site on https://docs.microsoft.com, as well as task guides stored in Business Process Modeler in Lifecycle Services (LCS). 
 > [!NOTE]
 > The features listed in the diagram with an asterisk (\*) are planned, but are not available yet. [![Help architecture](./media/help-architecture.png)](./media/help-architecture.png)
 
 
 ## Connecting the Help system
-> [!IMPORTANT]
+> [!NOTE]
 > The **Task guides** tab is currently not available in Microsoft Dynamics 365 for Talent and Microsoft Dynamics 365 for Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) for both Retail and Talent.
  
 
@@ -75,10 +73,7 @@ Translated task guides were first shipped in the May 2016 APQC Unified Library, 
 > -   If a task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
 
 ## Creating custom help
-You can create custom help for Finance and Operations, and for Retail by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. 
-
-> [!NOTE]
-> You cannot create custom task guides for Talent. 
+You can create custom help for Finance and Operations, and for Retail by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. You cannot create custom task guides for Talent. 
 
 For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see [How to create a task recording to use as documentation or training](../user-interface/task-recorder.md).
 
