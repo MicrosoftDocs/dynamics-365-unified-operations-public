@@ -5,7 +5,7 @@ title: SQL Server Reporting Services reports
 description: This topic points you to a report that lists the SQL Server Reporting Services (SSRS) reports available in Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

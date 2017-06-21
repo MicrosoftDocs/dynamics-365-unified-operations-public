@@ -5,7 +5,7 @@ title: F Classes - FormGroupControl to FormIntControl
 description: This topic contains API reference documentation for classes from FormGroupControl to FormIntControl.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

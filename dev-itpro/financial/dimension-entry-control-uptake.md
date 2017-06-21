@@ -5,7 +5,7 @@ title: Dimension entry control uptake
 description: Describes the Dimension Entry control and associated Controller classes.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

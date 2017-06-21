@@ -5,7 +5,7 @@ title: Code migration - Context menus
 description: A new programming model is required for context menus (shortcut menus). This article outlines the process for migrating context menu code from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations. It also includes UX guidelines for context menus.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

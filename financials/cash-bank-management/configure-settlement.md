@@ -5,7 +5,7 @@ title: Configure settlement
 description: How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This article describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

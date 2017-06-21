@@ -5,7 +5,7 @@ title: Advance holder transactions
 description: Learn how to work with advance holder transactions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

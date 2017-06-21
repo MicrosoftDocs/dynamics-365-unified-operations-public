@@ -5,7 +5,7 @@ title: Message center, message bar, and message details FAQ
 description: This topic describes the rich, powerful messaging system replaces the Infolog window that was used Microsoft Dynamics AX 2012.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 ---
 # Generate Affordable Care Act reports

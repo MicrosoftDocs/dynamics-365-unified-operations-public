@@ -5,7 +5,7 @@ title: Turnover and balances statement for Poland
 description: This topic provides information about the Turnover and balances statement for Poland.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

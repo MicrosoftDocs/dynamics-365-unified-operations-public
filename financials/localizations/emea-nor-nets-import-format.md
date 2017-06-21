@@ -5,7 +5,7 @@ title: Nets import format | Microsoft Docs
 description: This topic provides information about importing payment information in the Nets format.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

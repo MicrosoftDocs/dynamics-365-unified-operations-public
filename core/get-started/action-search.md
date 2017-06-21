@@ -5,7 +5,7 @@ title: Action search
 description: This article describes the action search functionality in Microsoft Dynamics 365 for Finance and Operations. Action search will help you find and run actions on a page.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

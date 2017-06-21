@@ -5,7 +5,7 @@ title: Mobile invoice approvals
 description: This topic is intended to provide a practical approach to designing mobile scenarios in Dynamics 365 for Finance and Operations by taking vendor invoice approvals for mobile as a use case. 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

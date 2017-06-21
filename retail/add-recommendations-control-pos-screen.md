@@ -5,10 +5,10 @@ title: Add a recommendations control to the transaction page on a POS device
 description: This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 41
+ms.reviewer: josaw
 ms.search.scope: Retail, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 260624

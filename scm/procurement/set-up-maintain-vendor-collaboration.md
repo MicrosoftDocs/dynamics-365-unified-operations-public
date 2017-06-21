@@ -5,7 +5,7 @@ title: Set up and maintain vendor collaboration
 description: This topic describes the configuration tasks that are needed to set up Finance and Operations to use vendor collaboration. It also describes how to provision new vendor collaboration users.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

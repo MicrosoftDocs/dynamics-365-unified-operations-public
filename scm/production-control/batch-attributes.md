@@ -5,7 +5,7 @@ title: Batch attributes
 description: This article provides information about batch attributes. Batch attributes are characteristics of raw materials and finished products that make up inventory batches. The article also explains how to assign batch attributes, and how you can search on them when you reserve batches.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -5,7 +5,7 @@ title: Application Explorer
 description: This article reviews Application Explorer, and the various views and filtering methods in it. The article also describes how to work with elements in Application Explorer.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

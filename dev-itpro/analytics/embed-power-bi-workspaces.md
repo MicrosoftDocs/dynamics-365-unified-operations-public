@@ -5,7 +5,7 @@ title: Embed Power BI in workspaces
 description: Finance and Operations now delivers rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -5,7 +5,7 @@ title: Extensible controls  -  Public JavaScript APIs
 description: This topic shows where to find documentation about the public JavaScript APIs that can be used by extensible controls. 
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

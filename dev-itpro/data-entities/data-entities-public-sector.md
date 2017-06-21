@@ -5,7 +5,7 @@ title: Data entities - Public sector
 description: This article provides a list of the data entities that are available for Public sector.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: reference
 ms.prod: 
 ms.service: dynamics-ax-platform

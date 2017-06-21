@@ -5,7 +5,7 @@ title: Data entities - Fixed assets
 description: This article provides a list of the data entities that are available for Fixed assets.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

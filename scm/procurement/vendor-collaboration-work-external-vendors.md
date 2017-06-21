@@ -5,7 +5,7 @@ title: Vendor collaboration with external vendors
 description: This topic describes how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
 author: BibiSp
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

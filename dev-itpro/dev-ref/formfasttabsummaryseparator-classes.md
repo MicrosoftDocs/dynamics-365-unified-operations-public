@@ -5,7 +5,7 @@ title: F Classes - FormFastTabSummarySeparator to FormGridControl
 description: API reference for classes from FormFastTabSummarySeparator to FormGridControl.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

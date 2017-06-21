@@ -5,7 +5,7 @@ title: Registration for manufacturing execution
 description: This topic describes key concepts and terms that you need to understand to configure and use manufacturing execution. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

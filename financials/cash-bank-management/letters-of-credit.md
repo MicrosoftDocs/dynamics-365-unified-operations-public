@@ -5,7 +5,7 @@ title: Letters of credit
 description: Letters of credit are bank documents that are commonly used for the purchase and sale of goods across international borders. 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

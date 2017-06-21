@@ -5,7 +5,7 @@ title: Process existing payroll payments
 description: This topic describes tasks such as reprinting pay statements, and replacing paychecks that have been lost or damaged. It also explains how to complete similar tasks after pay statements have been generated or payments have been issued to workers.
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

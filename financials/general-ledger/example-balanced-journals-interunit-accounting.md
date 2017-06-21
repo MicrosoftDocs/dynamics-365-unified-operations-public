@@ -5,7 +5,7 @@ title: Balanced journals for interunit accounting
 description: This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page. 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

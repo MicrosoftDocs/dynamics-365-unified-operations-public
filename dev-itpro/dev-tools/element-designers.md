@@ -5,7 +5,7 @@ title: Element designers
 description: This article reviews the element designers and explains how to use them.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

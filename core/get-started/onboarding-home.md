@@ -5,7 +5,7 @@ title: Onboarding to Microsoft Dynamics 365 for Finance and Operations
 description: This page points to resources that will help you onboard to Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

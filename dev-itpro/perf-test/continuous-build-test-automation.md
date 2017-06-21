@@ -5,7 +5,7 @@ title: Deployment with continuous build and test automation
 description: This topic describes how to deploy a developer topology that supports continuous build and test automation.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

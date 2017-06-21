@@ -5,7 +5,7 @@ title: Author and distribute Power BI reports with Entity store
 description: This topic walks you through the process of authoring and publishing Power BI reports with Entity store. 
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

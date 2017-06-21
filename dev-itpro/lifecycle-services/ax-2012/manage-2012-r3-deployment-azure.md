@@ -5,7 +5,7 @@ title: Manage your Dynamics AX 2012 R3 deployment on Azure
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 

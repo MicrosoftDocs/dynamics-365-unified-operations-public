@@ -5,7 +5,7 @@ title: Prepare to migrate to Finance and Operations
 description: In this topic, we will describe the LCS code upgrade service and Visual Studio tools that help you migrate your code and metadata from Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Finance and Operations. Most of these steps also apply to code migration between two major versions of Finance and Operations. 
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

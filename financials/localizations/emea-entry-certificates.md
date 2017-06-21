@@ -5,7 +5,7 @@ title: EU Entry certificates
 description: This article provides information about European Union (EU) entry certificates.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

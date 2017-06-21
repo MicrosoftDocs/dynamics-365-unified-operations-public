@@ -5,7 +5,7 @@ title: Aggregate data entities report
 description: This topic points you to a report that lists the aggregate data entities that are available in Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

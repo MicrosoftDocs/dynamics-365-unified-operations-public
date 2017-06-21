@@ -5,7 +5,7 @@ title: Create record templates
 description: This article introduces the concept of record templates and explains how they can be used to create records that share information.
 author: pvillads
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

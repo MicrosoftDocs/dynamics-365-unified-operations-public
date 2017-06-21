@@ -5,7 +5,7 @@ title: Develop an entity for data migration
 description: This tutorial shows how to develop data entities in Microsoft Visual Studio and then use them for data migration.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

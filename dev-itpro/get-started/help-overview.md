@@ -40,17 +40,15 @@ This article provides an overview of the components of the Microsoft Dynamics 36
 > [!IMPORTANT] 
 > The following products are closely related: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; and Dynamics 365 for Talent. The same functionality may appear in all 3 products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations. Topics that are written for one product may apply to the same functionality in a related product
 
-Finance and Operations includes a Help system that is based on two main components:
-
--   A documentation site
--   Task guides
-
-The following products are closely related: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; and Dynamics 365 for Talent. The same functionality may appear in all 3 products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations. Topics that are written for one product may apply to the same functionality in a related product. 
-
 The Help system is shared by all Unified Operations products:
 - Dynamics 365 for Finance and Operations, Enterprise edition
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
+
+Finance and Operations includes a Help system that is based on two main components:
+
+-   A documentation site
+-   Task guides
 
 You can access both help topics and task guides from the Help pane in whichever product you are using. The following screenshot shows Dynamics 365 for Finance and Operations
 

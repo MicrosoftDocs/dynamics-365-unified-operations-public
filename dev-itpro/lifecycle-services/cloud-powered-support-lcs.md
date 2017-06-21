@@ -5,7 +5,7 @@ title: Manage Finance and Operations Support experiences
 description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services (LCS) to manage support incidents. 
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

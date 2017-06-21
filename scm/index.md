@@ -5,7 +5,7 @@ title: Supply chain management home page
 description: This page points to resources that will help you use the Microsoft Dynamics 365 for Finance and Operations - Supply Chain management more effectively. 
 author: yuyus
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
