@@ -3,7 +3,7 @@
 
 title: Use external catalogs for PunchOut eProcurement
 description: This topic explains how you can use external catalogs to create and submit requisitions.
-author: kirknel
+author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
