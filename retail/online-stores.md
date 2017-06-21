@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: 2041
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 16161
@@ -27,6 +27,7 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+
 
 ---
 

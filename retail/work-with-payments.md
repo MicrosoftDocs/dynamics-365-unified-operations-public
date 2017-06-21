@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Payment methods in a call center
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 41
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 92163
