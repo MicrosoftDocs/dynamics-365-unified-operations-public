@@ -1,4 +1,4 @@
----
+ ---
 # required metadata
 
 title: Online service and on-premises software lifecycle policy
@@ -48,7 +48,7 @@ The Finance and Operations online service and the Finance and Operations (on-pre
     - **Non-critical updates** – Customers must update to the most current Finance and Operations platform version to deploy non-critical updates.
 
 > [!NOTE]
-> Platform versions maintain backward compatibility.
+> Platform versions maintain backward compatibility. See the support matrix table below for more detail.
 
 ## Online service update policies
 
