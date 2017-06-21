@@ -4,8 +4,8 @@ This wiki describes the Asset Library functionality in Lifecycle Services.
 
 Asset Library is a store for all the different assets associated with a tenant in LCS. There are two kinds of Asset Libraries available in LCS:
 1) *Shared Asset Library* - This is used by Microsoft and Partners to share assets across multiple tenants, projects and environments in LCS. This is accessible to every user that signs into LCS. To get to the Shared Asset Library:
-    a) Log into LCS.
-    b) **Click** on **Shared Asset Library** tile. 
+    ..* Log into LCS.
+    ..* **Click** on **Shared Asset Library** tile. 
 2) *Project level Asset Library* - This is a project level asset library to share assets across environments within a project in LCS. This is accessible to users within a project. To get to the Project Asset Library:
     a) Log into LCS.
     b) Click on a **specific project**. 
