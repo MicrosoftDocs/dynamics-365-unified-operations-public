@@ -179,7 +179,7 @@ public static void initializeReportControl(
 ### Parameters
 
 | Name | Description |
-|---|---|---|
+|---|---|
 |resourceName|The pbix resource name|
 |formGroupControl|The form group control to apply power bi report control.|
 |defaultPageName|The default page name.|
