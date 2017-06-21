@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Add an Analytics tab to a workspace
-description: [Will fill in later].
+title: Add analytics to workspaces using Power BI Embedded
+description: This topic demonstrates how you embed a Power BI report in the Analytics tab of a workspace. 
 author: tjvass
 manager: AnnBe
 ms.date: 06/21/2017
@@ -13,20 +13,23 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
+# ms.search.form:
+# ROBOTS:
+audience: Application user, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: global
-# ms.search.industry: 
+# ms.custom:
+ms.search.region: Global
+# ms.search.industry:
 ms.author: tjvass
+ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.intro: Platform update 8
-ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: July 2017 update 
 ---
+
+
 
 
 # Add analytics to workspaces using Power BI Embedded
