@@ -969,9 +969,9 @@
 ##### [Debug X++ against a copy of a production database](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-x-issue-against-copy-of-production?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Debug X++ code](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-xpp?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [EventHandlerResult classes in request or response scenarios](/dynamics365/unified-operations/dev-itpro/dev-tools/event-handler-result-class?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Write business logic using C#### and X++ source code](/dynamics365/unified-operations/dev-itpro/dev-tools/write-business-logic?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Write business logic using C\# and X++ source code](/dynamics365/unified-operations/dev-itpro/dev-tools/write-business-logic?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Programming language support](/dynamics365/unified-operations/dev-itpro/dev-tools/programming-language-support?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [LINQ provider for C#](/dynamics365/unified-operations/dev-itpro/dev-tools/linq-provider-c?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [LINQ provider for C\#](/dynamics365/unified-operations/dev-itpro/dev-tools/linq-provider-c?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Authoring best practices](/dynamics365/unified-operations/dev-itpro/dev-tools/author-best-practice-rules?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Application Explorer properties](/dynamics365/unified-operations/dev-itpro/dev-ref/application-explorer-aot-properties?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### X++ language reference
@@ -984,7 +984,7 @@
 ###### [X++ data selection and manipulation](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-data-query?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [X++ macros](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-macros?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [X++ attribute classes](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-attribute-classes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [X++ and C#### comparison](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-cs-comparison?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [X++ and C\# comparison](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-cs-comparison?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [X++ syntax](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-syntax?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Compile-time functions
 ##### [X++ compile-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-compile-time-functions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1180,7 +1180,7 @@
 ##### [Submit a regulatory alert](/dynamics365/unified-operations/dev-itpro/lcs-solutions/submit-localization-alerts)
 
 
-### [Data entities](/dynamics365/unified-operations/dev-itpro/data-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Data entities](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Default data entities
 ##### [Data entities report](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Data entities: Accounts payable and taxes](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-payable-taxes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1355,9 +1355,9 @@
 ### Lifecycle Services
 #### [Overview of Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [LCS for customers](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [LCS for partners](/dynamics365/unified-operations/dev-itpro/get-started/getting-started-lcs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [What's new](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-lcs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Known issues](/dynamics365/unified-operations/dev-itpro/get-started/known-issues?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [LCS for partners](/dynamics365/unified-operations/dev-itpro/lifecycle-services/getting-started-lcs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [What's new](/dynamics365/unified-operations/dev-itpro/lifecycle-services/whats-new-lcs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Known issues](/dynamics365/unified-operations/dev-itpro/lifecycle-services/known-issues?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Dynamics Lifecycle Services user guide](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Configure security](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-lcs-security?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Issue search](/dynamics365/unified-operations/dev-itpro/lifecycle-services/issue-search-lcs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)

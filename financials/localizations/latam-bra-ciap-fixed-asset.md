@@ -24,7 +24,7 @@ ms.search.region: Brazil
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: v-gonode
 ms.search.validFrom: 2017-06-30]
-ms.dyn365.ops.version: Enterprise edition, July 2017 update 
+ms.dyn365.ops.version: July 2017 update 
 ---
 
 # CIAP fixed asset
