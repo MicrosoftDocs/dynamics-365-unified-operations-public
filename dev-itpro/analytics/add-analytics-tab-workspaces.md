@@ -66,7 +66,9 @@ To add a PBIX file as an Operations Resource artifact:
 2.	Select the project in the Solution Explorer, then right-click and select **Add** > **New Item** 
 3.	In the **Add New Item** form, select the **Resource** template under **Operations Artifacts**
 4.	Provide a name to use when referencing the report in X++ metadata then click **Add**
+    ![Add new item dialog](media/analytical-workspace-add.png)
 5.	Locate the PBIX file containing the analytical report definition and then click **Open**
+    ![Select a resource dialog](media/analytical-workspace-select-resource.png)
   
 Now that you've added the PBIX file as an Dynamics 365 Resource, you'll be able to embed the reports in workspaces and add direct links using menu items.
 
