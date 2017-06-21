@@ -93,7 +93,7 @@ Talent can help you maintain a safe work environment that’s in compliance with
 
 You can design and administer questionnaires to gather information that’s used for a variety of purposes. The Questionnaire feature lets you design and create questionnaires. When a questionnaire is ready, you distribute it broadly or to a specific set of respondents to complete. After the respondents provide their answers, you can review and analyze the results.
 
--   [Questionnaires](/dynamics365/unified-operations/fin-and-ops/hr/questionnaires)
--   [Design a questionnaire](/dynamics365/unified-operations/fin-and-ops/hr/design-questionnaires)
--   [Distribute and complete a questionnaire](/dynamics365/unified-operations/fin-and-ops/hr/distribute-questionnaires)
--   [View and evaluate the results of a questionnaire](/dynamics365/unified-operations/fin-and-ops/hr/evaluate-questionnaire-results)
+-   [Questionnaires](questionnaires.md)
+-   [Design a questionnaire](design-questionnaires.md)
+-   [Distribute and complete a questionnaire](distribute-questionnaires.md)
+-   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)

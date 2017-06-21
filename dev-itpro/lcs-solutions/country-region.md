@@ -312,9 +312,9 @@ The following sections list resources by country/region.
 
 ### United States
 
--   [Form I-9 verification](/dynamics365/unified-operations/talent/localizations/noam-usa-form-i-9-verification)
+-   [Form I-9 verification](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
 -   [Year-end 1099 reporting](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting)
--   [Payroll](/dynamics365/unified-operations/talent/localizations/noam-usa-payroll)
+-   [Payroll](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll)
 -   [Public sector](/dynamics365/unified-operations/financials/public-sector/public-sector-functionality)
 
 
