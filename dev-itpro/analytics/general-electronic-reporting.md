@@ -63,6 +63,7 @@ A data model component is an abstract representation of a data structure. It's u
 
 - A data model, as a set of domain-specific business entities and a hierarchically structured definition of relations between those entities.
 - A model mapping that links selected Dynamics 365 for Operations data sources to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
+
 A business entity of a data model is represented as a container (record). Business entity properties are represented as data items (fields). Each data item has a unique name, label, description, and value. The value of each data item can be designed so that it's recognized as a string, integer, real, date, enumeration, Boolean, and so on. Additionally, it can be another record or records list.
 
 A single data model component can contain several hierarchies of domain-specific business entities. It can also contain model mappings that support a report-specific data flow at run time. The hierarchies are differentiated by a single record that has been selected as a root for model mapping. For example, the data model of the payment domain area might support the following mappings:
@@ -84,6 +85,7 @@ A model mapping that supports incoming electronic documents has the following ca
 
 - It can use different Dynamics 365 for Operations updatable data elements as targets. These data elements include tables, data entities, and views. The data can be updated by using the data from incoming electronic documents. Multiple targets can be used in a single model mapping.
 - It supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
+
 A data model component is designed for each business domain that should be used as a unified data source for reporting that isolates reporting from the physical implementation of Dynamics 365 for Operations data sources. It represents domain-specific business concepts and functionalities in a form that makes a reporting format's initial design and further maintenance more efficient.
 
 #### Format components for outgoing electronic documents
@@ -286,7 +288,7 @@ ER lets you create (derive) a new component from the current version of a compo
 
 ### Upgrading a format selecting a new version of base format (rebase)
 
-ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component. This process is known as *rebasing*. For example, a new regulatory change that has been introduced in the latest version of the format that was imported from LCS can be automatically merged into the customized version of this format of the electronic document. Any changes that can’t be merged automatically are considered conflicts. These conflicts are presented for manual resolution in the designer tool for the appropriate component. To become familiar with the details of this scenario, play the **ER Upgrade format by adoption of new base version of it** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
+ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component. This process is known as *rebasing*. For example, a new regulatory change that has been introduced in the latest version of the format that was imported from LCS can be automatically merged into the customized version of this format of the electronic document. Any changes that can’t be merged automatically are considered conflicts. These conflicts are presented for manual resolution in the designer tool for the appropriate component. To become familiar with the details of this scenario, play the **ER Upgrade format by adoption of new base version of that format** task guide (part of the **7.5.5.3 Acquire/Develop changed IT service/solution component (10683)** business process).
 
 ## List of ER configurations that are delivered in the Finance and Operations solution
 | Domain-specific data model configurations: Title | Domain                | Data model–dependent format configurations: Title | Description                                                        |
