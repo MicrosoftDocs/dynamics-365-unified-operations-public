@@ -177,6 +177,7 @@ public static void initializeReportControl(
 ```
 
 ### Parameters
+
 | Name | Description |
 |---|---|---|
 |resourceName|The pbix resource name|
