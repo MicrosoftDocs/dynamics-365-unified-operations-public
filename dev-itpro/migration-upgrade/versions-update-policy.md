@@ -79,22 +79,22 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 ### Table 2: Retail application release
 
-| Release                           | Version          | Build number | Availability | Expiration date | Product life  |
-|-----------------------------------|------------------|--------------|--------------|-----------------|---------------|
-| Microsoft Dynamics 365 for Retail | July 2017 update | 7.2.XXXX     | July 2017    | ?               | December 2027 |
+| Release                           | Version          | Build number | Availability | Expiration date | 
+|-----------------------------------|------------------|--------------|--------------|-----------------|
+| Microsoft Dynamics 365 for Retail | July 2017 update | 7.2.XXXX     | July 2017    | November 2019   |
 
 ### Table 3: Platform releases
 
-| Release           | Build number   | Availability  | Expiration date   | Product life  |
-|-------------------|----------------|---------------|-------------------|---------------|
-| Platform update 8 | 7.0.xxxx.xxxxx | June 2017     | June 30, 2018    | December 2027 |
-| Platform update 7 | 7.0.4542.16189 | May 2017      | May 31, 2018      | December 2027 |
-| Platform update 6 | 7.0.4509.16180 | April 2017    | April 30, 2018    | December 2027 |
-| Platform update 5 | 7.0.4475.16165 | March 2017    | March 31, 2018    | December 2027 |
-| Platform update 4 | 7.0.4425.16161 | February 2017 | February 28, 2018 | December 2027 |
-| Platform update 3 | 7.0.4307.16141 | November 2016 | November 30, 2017 | December 2027 |
-| Platform update 2 | 7.0.4230.16130 | August 2016   | August 31, 2017   | December 2027 |
-| Platform update 1 | 7.0.4127.16103 | May 2016      | May 31, 2017      | December 2027 |
+| Release           | Build number   | Availability  | Expiration date   |
+|-------------------|----------------|---------------|-------------------|
+| Platform update 8 | 7.0.xxxx.xxxxx | June 2017     | June 30, 2018     |
+| Platform update 7 | 7.0.4542.16189 | May 2017      | May 31, 2018      |
+| Platform update 6 | 7.0.4509.16180 | April 2017    | April 30, 2018    |
+| Platform update 5 | 7.0.4475.16165 | March 2017    | March 31, 2018    |
+| Platform update 4 | 7.0.4425.16161 | February 2017 | February 28, 2018 |
+| Platform update 3 | 7.0.4307.16141 | November 2016 | November 30, 2017 |
+| Platform update 2 | 7.0.4230.16130 | August 2016   | August 31, 2017   | 
+| Platform update 1 | 7.0.4127.16103 | May 2016      | May 31, 2017      | 
 
 ## Dates for Finance and Operations (on-premises) releases
 
@@ -102,9 +102,9 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 Microsoft is committed to supporting the deployments of the Finance and Operations (on-premises) software through calendar year 2027, at a minimum, provided that the customer keeps the deployed software current according to the Modern Lifecycle Policy.
 
-| Release                                                                             | Version          | Build number | Availability | Expiration date |
-|-------------------------------------------------------------------------------------|------------------|--------------|--------------|-----------------|
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 update | 7.2.x        | June 2017    | ?               |
+| Release                                                                             | Version          | Build number | Availability | Expiration date | Product life  |
+|-------------------------------------------------------------------------------------|------------------|--------------|--------------|-----------------|---------------|
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 update | 7.2.x        | June 2017    |  November 2016   | December 2027 |
 
 ## Support matrix
 The following table provides information about the recent releases of the application and platform for Finance and Operations, and shows which versions are compatible.
