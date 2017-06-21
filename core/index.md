@@ -46,7 +46,7 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 <tbody>
 <tr class="odd">
 <td><h3>Financials</h3>
-<p>Compliance</p>
+<p><a href="../financials/general-ledger/audit-policy-rules"Compliance</p>
 <p>Financial management</p>
 <ul style="list-style-type:none">
 <li><a href="../financials/accounts-payable/accounts-payable">Accounts payable</a></li>
