@@ -1,4 +1,4 @@
- ---
+---
 # required metadata
 
 title: Online service and on-premises software lifecycle policy
