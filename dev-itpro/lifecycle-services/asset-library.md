@@ -6,13 +6,13 @@ Asset Library is a store for all the different assets associated with a tenant i
 1) *Shared Asset Library* - This is used by Microsoft and Partners to share assets across multiple tenants, projects and environments in LCS. This is accessible to every user that signs into LCS. To get to the Shared Asset Library:
     - Log into LCS.
     - **Click** on **Shared Asset Library** tile. 
-  [![SharedAssetLibrary](./media/sharedassetlibrary.jpg "Shared Asset Library")]
+  [![sharedassetlibrary](./media/sharedassetlibrary.jpg)]
   
 2) *Project level Asset Library* - This is a project level asset library to share assets across environments within a project in LCS. This is accessible to users within a project. To get to the Project Asset Library:
     - Log into LCS.
     - Click on a **specific project**. 
     - In the hamburger menu at the top left, click on **Asset Library**. 
-    [![ProjectAssetLibrary](./media/projectassetlibrary.jpg "Project Asset Library")]
+    [![projectassetlibrary](./media/projectassetlibrary.jpg)]
 
 ## Asset library supports multiple kinds of assets. Some common used assets are:
 1) **Software deployable packages**  - This tab represents all the packages used for updating your environment with latest set of updates.
@@ -32,34 +32,34 @@ Asset Library is a store for all the different assets associated with a tenant i
 
 ## Different actions that can be performed in the asset library:
 1) **Uploading an asset to the asset library**: To upload an asset to the asset library follow the below steps:
-    a) Select the tab where you want to upload the asset
-    b) Click on **'+'** button. 
-    c) Enter name and description for the asset. 
-    d) Upload the file for the asset and click **Confirm**. 
+    - Select the tab where you want to upload the asset
+    - Click on **'+'** button. 
+    - Enter name and description for the asset. 
+    - Upload the file for the asset and click **Confirm**. 
     
     For uploading a new version for a specific asset:
-    a) Select the asset in the asset library.
-    b) Click on the 'Upload' icon in the asset library toolbar. 
-    c) Follow the same steps as uploading a new asset. 
+    - Select the asset in the asset library.
+    - Click on the 'Upload' icon in the asset library toolbar. 
+    - Follow the same steps as uploading a new asset. 
      This will upload a new asset in the asset library. To view multiple versions for a single asset, click on **Versions** in the toolbar. 
 
 2) **Move assets from global asset library to project asset library**: To move asset from the global to the project scope, first go the Project Asset Library. Below are two options to move assets to a project scope:
-  a) *Import from Global scope* - Used to import assets from global scope into project scope so it can be applied across environments. 
-        1) In the project asset library, depending on the asset type that you want to import, select that specific tab.
-        2) Click on Import. This will open list of assets from the Shared asset library. 
-        3) Select the asset that you want to import and click **Pick**.
+  - *Import from Global scope* - Used to import assets from global scope into project scope so it can be applied across environments. 
+        - In the project asset library, depending on the asset type that you want to import, select that specific tab.
+        - Click on Import. This will open list of assets from the Shared asset library. 
+        - Select the asset that you want to import and click **Pick**.
       This will import the selected asset and put it in the Published state in the project asset library. This is for packages that you do not plan to edit. If you want to edit an imported package, create a copy using the steps below which will put the package in Draft state. 
     
-  b) *Copy from Global Scope* - Used to create a copy of the assets so they can be edited. 
-        1) In the project asset library, depending on the asset type that you want to import, select that specific tab.
-        2) Select the asset you want to copy.
-        3) Click on **Copy** in the asset library toolbar. 
+  - *Copy from Global Scope* - Used to create a copy of the assets so they can be edited. 
+        - In the project asset library, depending on the asset type that you want to import, select that specific tab.
+        - Select the asset you want to copy.
+        - Click on **Copy** in the asset library toolbar. 
         This will create a copy of the Published asset and put it in Draft state. 
         
-  c) *Save to My Library* - Used to move the edited asset back to the shared asset library so it can be promoted to the org scope to be shared with multiple customers. 
-        1) In the project asset library, depending on the asset type that you want to import, select that specific tab.
-        2) Select the asset you want to save.
-        3) Click on **Save to My Library**.
+  - *Save to My Library* - Used to move the edited asset back to the shared asset library so it can be promoted to the org scope to be shared with multiple customers. 
+        - In the project asset library, depending on the asset type that you want to import, select that specific tab.
+        - Select the asset you want to save.
+        - Click on **Save to My Library**.
       This will save the asset from the project asset library back to the shared asset library in the Me Scope. 
   
 
