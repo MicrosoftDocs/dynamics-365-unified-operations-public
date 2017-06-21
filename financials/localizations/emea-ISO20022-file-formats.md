@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Enterprise edition, July 2017 update
 ---
 
-# ISO20022 files import
+# Import ISO20022 files
 
 ## Overview
 You can import payment files that have the following formats:
@@ -92,8 +92,8 @@ You must complete the following prerequisites to import bank messages in the fol
 5. If the camt.054 file contains transaction charges that you want to post together with the incoming payment, create a payment fee on the **Vendor payment fee** page. Then, on the **Methods of payment** page, associate the payment fee with the bank account in the payment fee setup.
 
 ## Import the pain.002 status return or camt.054 debit advice files into the Vendor payment journal
-1. Open vendor the **Payment transfers** page.
-2. Click **Return file - vendor**.
+1. Open the **Payment transfers** page in Accounts Payable menu.
+2. On the **Payment transfers** page, click **Return file - vendor**.
 3. Select the method of payment that has the required settings for ISO20022 files, and then click **OK**.
 4. Select the file format that you plan to import, and then click **OK**.
 5. Specify the required parameters and the path of the file, and then click **OK**.
@@ -102,10 +102,10 @@ If you're importing the pain.002 file, the status of vendor payment lines is upd
 
 If you're importing the camt.054 file, you should specify the following additional parameters:
 
-- **Fee ID** – New payment fee lines will be created on the Vendor payment journal line if a charge amount is present in the camt.054 file.
+- **Fee ID** – Enter the Fee ID which will define new payment fee lines, which will be created on the Vendor payment journal line if a charge amount is present in the camt.054 file.
 - **New journal name** and **New journal description** – Enter the name and description of the journal that processed transactions will be transferred to. After the transfer, new voucher numbers should be assigned in the new journal.
-- **Import direct debit transactions** – Activate this field if outgoing direct debits must be imported into the Vendor payment journal.
+- **Import direct debit transactions** – Set this option to **Yes** if outgoing direct debits must be imported into the Vendor payment journal.
 - **Journal name** – Define a new journal name for the imported direct debit transactions.
-- **Settle transactions** – Activate this field if imported vendor payments must be settled with invoices that are found in the system.
+- **Settle transactions** – Set this option to **Yes** if imported vendor payments must be settled with invoices that are found in the system.
 
 You can view the imported information on the **Payment transfers** page. 
