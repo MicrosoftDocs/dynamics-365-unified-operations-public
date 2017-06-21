@@ -47,10 +47,7 @@ To download a customer's Finance and Operations (on-premises) license file from 
 
 1.  Log on to the [PartnerSource Business Center](https://businesscenter.mbs.microsoft.com/).
 
-2.  Click **Specific Customer Information**.
-
-3.  Enter search information in the **Customer Lookup** form to search for the
-    customer, and then click **Search**.
+3.  Enter the customer name or account number in the **Find A Customer** field, and then click **Search**.
 
 4.  Click the company name of the customer for whom you searched in step 3. This
     opens the **Customer Summary** page.
