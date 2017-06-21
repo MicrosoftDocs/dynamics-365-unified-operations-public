@@ -48,4 +48,5 @@ The following features have not been implemented in on-premises deployments of D
 | Dynamics 365 for Finance and Operations - Warehousing mobile app | This app is not supported for use with on-premises deployments.                                                                                                         |
 | Ability to export entities to your own database (BYOD)                      | This feature is currently not implemented.                                                                                                                                                |
 | Author Power BI reports using OData                              | Authoring Power BI reports with OData using Power BI desktop or Excel PowerQuery tools is not supported.                                                                                  |
+|Retail| No Retail features are available for use in on-premises deployments at this time.|
 
