@@ -31,5 +31,9 @@ ms.dyn365.ops.version: Retail Version
 ---
 
 # Retail statements
+In Dynamics 365 for Retail, the statement posting process is used to account for the transactions that occur in Cloud POS (point-of sale) or Modern POS (MPOS). The statement posting process uses the Distribution schedule to pull in a set of POS transactions to the HQ client. The parameters defined on the Retail parameters form and the Stores form are used to select the transactions that are pulled into individual statements.  
 
+The following diagram illustrates the statement posting process. In the process, transactions that are recorded in POS are transmitted to the client by using the Retail scheduler. After the client receives the transactions, you can create, calculate and post the transaction statement for the store. 
+
+![this is the alt text](../images/Logo_DotNet.png)
 
