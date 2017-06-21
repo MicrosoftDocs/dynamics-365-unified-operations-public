@@ -5,7 +5,7 @@ title: Get access to Dynamics AX 2012 through a Cloud Service Provider
 description: Customers who have purchased Finance and Operations through a Microsoft Cloud Solution Provider (CSP) and are entitled to on-premises software can download Dynamics AX 2012 R3 from CustomerSource. 
 author: margoc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

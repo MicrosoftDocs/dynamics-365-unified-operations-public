@@ -5,10 +5,10 @@ title: Commerce essentials overview
 description: This article provides information about Commerce essentials, which is a retail point of sale (POS) and e-commerce configuration option for Microsoft Dynamics 365 for Retail. Commerce essentials provides an out-of-box retail workload that can help retailers quickly go live with a Microsoft Dynamics-based retail solution and lets them focus on retail-specific capabilities. 
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -26,7 +26,7 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 

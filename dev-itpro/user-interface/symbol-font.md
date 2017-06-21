@@ -5,7 +5,7 @@ title: Symbol font
 description: This topic provides a link to the list of available symbols for each release. A description of the various locations where symbols are used in the product and usage guidelines for each location are also included.  
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

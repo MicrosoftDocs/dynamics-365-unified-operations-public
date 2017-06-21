@@ -5,7 +5,7 @@ title: Accessibility in forms, products, and controls
 description: This article describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

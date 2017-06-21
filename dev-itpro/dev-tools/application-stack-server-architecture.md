@@ -5,7 +5,7 @@ title: Application stack and server architecture
 description: The application stack is divided into three separate models -  Application Platform, Application Foundation, and Application Suite. 
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

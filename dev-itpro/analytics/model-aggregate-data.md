@@ -5,7 +5,7 @@ title: Modeling and aggregate data
 description: This tutorial will walk you through the process of modeling aggregate data .
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

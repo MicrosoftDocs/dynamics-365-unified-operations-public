@@ -5,7 +5,7 @@ title: X++ language reference
 description: This topic provides programming guidance for X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

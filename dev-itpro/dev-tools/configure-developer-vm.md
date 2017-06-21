@@ -5,7 +5,7 @@ title: Configure a one-box development environment
 description: This article describes recommended configurations of your one-box developer environment.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

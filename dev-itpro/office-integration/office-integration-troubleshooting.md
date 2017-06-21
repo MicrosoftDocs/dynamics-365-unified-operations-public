@@ -5,7 +5,7 @@ title: Office integration troubleshooting
 description: This article provides answers to questions, tips, and troubleshooting information for the Office integration capabilities. The questions and issues discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -5,7 +5,7 @@ title: Set up Configuration manager
 description: This topic provides information about how to set up the Configuration manager.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

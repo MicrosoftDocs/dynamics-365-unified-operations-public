@@ -5,7 +5,7 @@ title: Pay statements and generating payments FAQ
 description: This topic answers questions that are related to activities that go beyond standard payroll processing. Examples include payments that are made to workers outside Payroll and final payments to terminated workers. 
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

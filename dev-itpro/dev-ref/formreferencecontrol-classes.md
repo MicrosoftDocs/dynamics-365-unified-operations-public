@@ -5,7 +5,7 @@ title: F Classes - FormReferenceControl to FormStringControl
 description: API reference for classes from FormReferenceControl to FormStringControl.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -5,7 +5,7 @@ title: Role-based security
 description: This article provides an overview of the elements of role-based security in Microsoft Dynamics 365 for Finance and Operations. 
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

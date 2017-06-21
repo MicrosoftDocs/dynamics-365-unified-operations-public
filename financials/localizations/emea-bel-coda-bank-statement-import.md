@@ -5,7 +5,7 @@ title: CODA bank statement
 description: This topic includes information about CODA, which is a report format used in the Belgian electronic banking system. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

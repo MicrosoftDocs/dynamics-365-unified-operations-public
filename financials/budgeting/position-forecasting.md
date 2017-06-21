@@ -5,7 +5,7 @@ title: Position forecasting
 description: Expenses that are related to workers often make up a large proportion of an organization's costs. Position forecasting lets you plan those expenses and include them in the planning of budgets.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

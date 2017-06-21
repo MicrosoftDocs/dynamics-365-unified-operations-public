@@ -5,7 +5,7 @@ title: Introduction to Dynamics 365 for Finance and Operations
 description: Microsoft Dynamics 365 for Finance and Operations is Microsoft’s business application for enterprises. This page helps you learn and get start using the product. 
 author: margoc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

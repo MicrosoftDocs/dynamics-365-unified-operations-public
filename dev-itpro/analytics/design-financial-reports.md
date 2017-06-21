@@ -5,7 +5,7 @@ title: View and design financial reports
 description: This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 for Finance and Operations.  
 author: jcart1106
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -5,7 +5,7 @@ title: Set up work schedules and leave
 description: This topic describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

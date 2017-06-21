@@ -5,7 +5,7 @@ title: Details Master form pattern
 description: This article provides information about the Details Master form pattern. A details form is the primary method for entering data.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

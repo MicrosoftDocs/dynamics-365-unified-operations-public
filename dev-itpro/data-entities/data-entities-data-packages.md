@@ -5,7 +5,7 @@ title: Data entities and packages framework
 description: This topic provides information about using data entities and data entity packages. 
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -5,7 +5,7 @@ title: Sales tax overview
 description: This article provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

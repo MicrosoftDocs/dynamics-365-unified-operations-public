@@ -5,7 +5,7 @@ title: FactBox form patterns
 description: This article provides information about the FactBox form patterns. FactBoxes are used to provide related information for a record.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

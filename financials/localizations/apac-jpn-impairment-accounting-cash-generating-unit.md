@@ -5,7 +5,7 @@ title: Fixed asset impairment accounting on cash generating units
 description: This article introduces the features for fixed asset impairment that are included in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. The primary objective of this article is to give the user an overview of the conceptual model for impairment accounting. 
 author: rake-gui
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

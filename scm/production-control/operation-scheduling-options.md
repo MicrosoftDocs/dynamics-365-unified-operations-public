@@ -5,7 +5,7 @@ title: Operations scheduling options
 description: This topic describes the options for operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -5,7 +5,7 @@ title: Power BI Embedded integration
 description: With Microsoft Dynamics 365 for Finance and Operations, Power BI content developed by partners and ISVs can be embedded directly into the application. Read this topic to learn more about some of the amazing things possible using Power BI Embedded.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

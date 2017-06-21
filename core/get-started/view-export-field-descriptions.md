@@ -5,7 +5,7 @@ title: View and export field descriptions
 description: This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
