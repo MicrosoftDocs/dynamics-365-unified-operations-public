@@ -72,6 +72,13 @@ To add a PBIX file as an Operations Resource artifact:
   
 Now that you've added the PBIX file as an Dynamics 365 Resource, you'll be able to embed the reports in workspaces and add direct links using menu items.
 
+# Add a tab control to an application workspace
+For this walk-thru, we'll extend the Reservation Management Workspace in the Fleet Management model by adding the **Analytics** tab to the form definition **FMClerkWorkspace**.
+ 
+Here’s how the **FMClerkWorkspace** form appears in the Visual Studio designer:
+
+![FMClerkWorkspace before changes](media/analytical-workspace-definition-before.png)
+
 
 
 
