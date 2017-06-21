@@ -37,7 +37,8 @@ ms.dyn365.ops.version: July 2017 update
 [!include[banner](../includes/banner.md)]
 
 
-Note: This feature is supported in release Dynamics 365 (v7.2)
+> [!NOTE]
+> This feature is supported in release Dynamics 365 (v7.2) and after.
 
 # Introduction
 This topic demonstrates how you embed a Power BI report in the **Analytics** tab of a workspace.  For this scenario, we will extend the Reservation Management Workspace in the Fleet Management application to embed an analytical workspace in an **Analytics** tab.
@@ -53,8 +54,22 @@ Whether you are extending an existing application workspace or introducing one o
 2. Define Analytical Workspace Tab
 3. Embed the PBIX Resource in the Workspace tab
 4. Optionally - Add extensions to customize the view
+
+> [!NOTE]
+> For more information on creating analytical reports, the [Getting started with Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/) article is a great source for insights on authoring compelling analytical reporting solutions.
+
+# Add a PBIX file as a Dynamics 365 Resource
+To begin, you'll need to author or obtain the Power BI Report to embed in the workspace.  For more information on creating analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/).
  
-Note:  For more information on creating analytical reports, the Getting started with Power BI Desktop article is a great source for insights on authoring compelling analytical reporting solutions.
+To add a PBIX file as an Operations Resource artifact:
+1.	Create a new project in the appropriate model
+2.	Select the project in the Solution Explorer, then right-click and select **Add** > **New Item** 
+3.	In the **Add New Item** form, select the **Resource** template under **Operations Artifacts**
+4.	Provide a name to use when referencing the report in X++ metadata then click **Add**
+5.	Locate the PBIX file containing the analytical report definition and then click **Open**
+  
+Now that you've added the PBIX file as an Dynamics 365 Resource, you'll be able to embed the reports in workspaces and add direct links using menu items.
+
 
 
 
