@@ -80,6 +80,26 @@ Here’s how the **FMClerkWorkspace** form appears in the Visual Studio designer
 ![FMClerkWorkspace before changes](media/analytical-workspace-definition-before.png)
 
 
+To extend the form definition for the **Reservation Management** workspace:
+1.	Open the form designer to extend the design definition.
+2.	Select the top element in the design definition labeled **Design | Pattern: Workspace Operational**.
+3.	Right-click then select **New** > **Tab** to add a new control named **FormTabControl1**.
+4.	Select **FormTabControl1** in the form designer.
+5.	Right-click then select **New Tab Page** to add a new tab page.
+6.	Rename the tab page to something meaningful like **Workspace**.
+7.	Select **FormTabControl1** in the form designer.
+8.	Right-click then select **New Tab Page**.
+9.	Rename the tab page to something meaningful like **Analytics**.
+10.	Select **Analytics (Tab Page)** in the form designer.
+11.	Set the **Caption** property to **Analytics**.
+12.	Right-click on the control then select **New** > **Group** to add a new form group control.
+13.	Rename the form group to something meaningful like **powerBIReportGroup**.
+14.	Select **PanoramaBody (Tab)** in the designer, then drag and drop the control into the **Workspace** tab. 
+15.	Select the top element in the design definition labeled **Design | Pattern: Workspace Operational**.
+16.	Right-click then select **Remove pattern**.
+17.	Right-click again then select **Add pattern** > **Workspace Tabbed**.
+18.	Perform a build to verify your changes.
+ 
 
 
 
