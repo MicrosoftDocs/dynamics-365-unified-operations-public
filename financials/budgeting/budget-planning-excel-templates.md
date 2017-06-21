@@ -41,6 +41,7 @@ This topic shows how to create Excel templates that will be used with budget
 You can also follow the [Budget planning 101](budget-plan.md) tutorial to learn basic module configuration and usage principles.
 
 ## Generate a worksheet using budget plan document layout
+
 Budget plan documents can be viewed and edited using one or more layouts. Each layout can have an associated budget plan document template to view and edit the budget plan data in an Excel worksheet. In this topic, a budget plan document template will be generated using an existing layout configuration. 
 
 Open the **Budget plans list** (**Budgeting** &gt; **Budget plans**). Click **New** to create a new budget plan document. 
