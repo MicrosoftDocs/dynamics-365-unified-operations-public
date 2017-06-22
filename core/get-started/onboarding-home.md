@@ -40,9 +40,9 @@ Start here to onboard quickly and learn the Microsoft Dynamics 365 for Finance a
 The following resources provide an overview of how to work with your partner to get onboarded to Finance and Operations and how to use Finance and Operations Lifecycle Services. 
 
 - [Microsoft FastTrack for Dynamics 365 overview](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview) 
-- [Sign up for a subscription](../dev-tools/sign-up-preview-subscription.md) 
-- [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Finance and Operations customers](../lifecycle-services/lcs-works-lcs.md) 
-- [How customers who purchased Microsoft Dynamics 365 for Finance and Operations through a Cloud Service Provider can get the on-premises version of Dynamics AX 2012](../deployment/csp-download-customersource.md)
+- [Sign up for a subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription) 
+- [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Finance and Operations customers](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs) 
+- [How customers who purchased Microsoft Dynamics 365 for Finance and Operations through a Cloud Service Provider can get the on-premises version of Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource)
 
 ## User interface
 The following resources provide information about the Finance and Operations user experience. 
@@ -60,8 +60,8 @@ The following resources provide information about the Finance and Operations use
 ## Help system
 The following resources provide an overview of the Help system and explain how to view field descriptions.
 
--   [Getting started with Help](help-overview.md)
--   [Connect the Help system](help-connect.md)
+-   [Getting started with Help](/dynamics365/unified-operations/dev-itpro/get-started/help-overview)
+-   [Connect the Help system](/dynamics365/unified-operations/dev-itpro/get-started/help-connect)
 -   [How to view and export field descriptions](/dynamics365/unified-operations/fin-and-ops/get-started/view-export-field-descriptions)
 -   [Finance and Operations help system (fact sheet)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 
@@ -69,16 +69,16 @@ The following resources provide an overview of the Help system and explain how t
 
 Task Recorder is a Dynamics 365 for Finance and Operations tool that you can use to record the actions that you take in the user interface (UI). When you create a *task recording*, all events that are executed against the server are recorded as you perform them in the UI. These events include adding values, changing settings, and removing data. A *task guide* is a controlled, guided, interactive experience that leads you through the steps of a task recording. You can open (or *play*) a task guide from the Help system.
 -   [Connecting the help system](help-connect.md)
--   [Task Recorder in Finance and Operations](../user-interface/task-recorder.md)
--   [Create documentation or training using Task recordings](../user-interface/task-recorder.md)
--   [New task guides available (February 2016)](new-task-guides-available-february-2016.md)
+-   [Task Recorder in Finance and Operations](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder)
+-   [Create documentation or training using Task recordings](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs)
+-   [New task guides available (February 2016)](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016)
 
 
 See also
 --------
 
-[New Task guides (February 2016)](new-task-guides-available-february-2016.md)
+[New Task guides (February 2016)](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016)
 
-[New or updated Task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
+[New or updated Task guides (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016)
 
-[New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
+[New or updated Task guides (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016)
