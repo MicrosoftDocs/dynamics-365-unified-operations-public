@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+Remove all mentions of VMs and then send for review
+
 
 
 The Support tile on LCS lets you create a virtual machine (VM) in Microsoft Azure that has the same hotfixes installed as your local environment. You can reproduce and record the incident on the virtual machine, and then submit the VM to our support team. Support follows up by investigating the incident, testing a fix on the virtual machine, if a fix is found, and sending the VM and the fix back to you for verification.
