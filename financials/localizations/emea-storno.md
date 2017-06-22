@@ -5,10 +5,10 @@ title: Storno accounting | Microsoft Docs
 description: Storno accounting is the practice of using negative numbers to reverse original journal account entries.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 0000-00-00 00:00:00
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,10 +18,9 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 1219713
-ms.assetid: 6ddfc144-43f4-43ee-b8dc-be1b945d4536
 ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, Russia
 # ms.industry: 
 ms.author: v-semaz
@@ -36,7 +35,7 @@ Storno accounting is the practice of using negative numbers to reverse original 
 *Storno accounting* is a practice of using negative debit or credit amounts to reverse original journal account entries. Because bookkeepers typically write Storno entries in red ink, this accounting practice is also known as *Red Storno*. Using Storno accounting you can cancel a document with incorrect amounts, however you should always enter the correct document amount after the cancellation.
 
 ## Example
-A bookkeeper posts an invoice from a vendor for 120 USD. During the payment process, it's discovered that the bookkeeper mistakenly entered 120 USD instead of 102 USD. Now, the bookkeeper needs to create Storno for the original document, and then create the correct invoice for 102 USD. For more information, see [Invoice from Vendor](https://authoring.help.dynamics.com/en/wiki/vendor-invoices-overview/). The following table shows the general entry for Storno.
+A bookkeeper posts an invoice from a vendor for 120 USD. During the payment process, it's discovered that the bookkeeper mistakenly entered 120 USD instead of 102 USD. Now, the bookkeeper needs to create Storno for the original document, and then create the correct invoice for 102 USD. For more information, see [Invoice from Vendor](../accounts-payable/vendor-invoices-overview.md). The following table shows the general entry for Storno.
 
 | **Document ID** | **Account** | **Debit** | **Credit** | **Comment**                  |
 |-----------------|-------------|-----------|------------|------------------------------|
@@ -165,7 +164,9 @@ Dynamics 365 for Operations handles negative journal amounts in a special way. T
 </tbody>
 </table>
 
-You can customize the display of Storno in forms, grids, columns, and fields. For example, you can turn off sign display or change padding for negative amounts. You can also use the **Correction** field with all display settings, if the **Correction** field has ‘Yes’, then it is a Storno entry. [![Journal Entry Storno amounts](./media/journal-storno.png)]
+You can customize the display of Storno in forms, grids, columns, and fields. For example, you can turn off sign display or change padding for negative amounts. You can also use the **Correction** field with all display settings, if the **Correction** field has ‘Yes’, then it is a Storno entry.
+
+[![Journal Entry Storno amounts](./media/journal-storno.png)]
 
 ## How documents create Storno
 Certain documents create cancellation transactions. For example, the foreign currency revaluation for general ledger, accounts payable, and accounts receivable documents cancel unrealized gain and loss. For more details, see [Foreign currency revaluation for General Ledger](../general-ledger/foreign-currency-revaluation-general-ledger.md) or [Accounts payable and Accounts receivable.](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). After a cancellation transaction is created, new transactions will be created with unrealized gain and loss. Cancellation transactions are also created for inventory. For more information, see [Inventory close](dynamics-365/unified-operations/scm/cost-management/inventory-close). 
