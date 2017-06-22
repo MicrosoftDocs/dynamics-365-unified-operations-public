@@ -382,7 +382,8 @@
 #### [SEPA Direct debit overview](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up customer and vendor compensation](/dynamics365/unified-operations/financials/accounts-receivable/emea-compensation-customer-vendor-transactions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up signers for print forms](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Tax directives]
+#### [Storno accounting](/dynamics365/unified-operations/financials/localizations/emea-storno)
+#### [Tax directives](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
 #### [Update how amounts are displayed on reports and documents](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
 #### [VAT exchange rates](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [VAT register transactions for Eastern Europe](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -440,7 +441,7 @@
 ##### [Packing slip date verification on invoices](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Sales tax books](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Split payment for invoices issued to the Public Administration](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Withholding tax](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding tax?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Withholding tax](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding-tax?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Latvia
 ##### [Fixed assets accounting](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-accounting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Fixed assets location change tracking](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-location-fields-change?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
