@@ -178,7 +178,7 @@ public static void initializeReportControl(
 | Name | Description |
 |---|---|
 | resourceName | The name of the .pbix resource. |
-| formGroupControl | The form group control to apply Power BI report control to. |
+| formGroupControl | The form group control to apply the Power BI report control to. |
 | defaultPageName | The default page name. |
 | showFilterPane | A Boolean value that indicates whether the filter pane should be shown (**true**) or hidden (**false**). |
 | showNavPane | A Boolean value that indicates whether the navigation pane should be shown (**true**) or hidden (**false**). |
