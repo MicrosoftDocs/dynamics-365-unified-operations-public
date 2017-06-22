@@ -68,7 +68,7 @@ The following resources provide an overview of the Help system and explain how t
 ### Task recordings and Task guides
 
 Task Recorder is a Dynamics 365 for Finance and Operations tool that you can use to record the actions that you take in the user interface (UI). When you create a *task recording*, all events that are executed against the server are recorded as you perform them in the UI. These events include adding values, changing settings, and removing data. A *task guide* is a controlled, guided, interactive experience that leads you through the steps of a task recording. You can open (or *play*) a task guide from the Help system.
--   [Connecting the help system](help-connect.md)
+-   [Connecting the help system](/dynamics365/unified-operations/dev-itpro/get-started/help-connect)
 -   [Task Recorder in Finance and Operations](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder)
 -   [Create documentation or training using Task recordings](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs)
 -   [New task guides available (February 2016)](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016)
