@@ -83,7 +83,7 @@
 #### [Update standard cost for a new manufactured item](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-new-manufactured-item?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Update standard cost in a non-manufacturing environment](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-non-manufacturing-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## [Financial management](/dynamics365/unified-operations/financials/TOC)
+## Financial management
 
 ### [General ledger](/dynamics365/unified-operations/financials/general-ledger/general-ledger?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Accounts
