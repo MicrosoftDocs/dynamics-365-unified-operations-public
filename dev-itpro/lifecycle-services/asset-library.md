@@ -76,22 +76,22 @@ You can perform different actions in the asset library as needed.
 ### Upload a new version for a specific asset
 1. Select the asset in the Asset library.
 2. Click the **Upload** icon on the Asset library toolbar. 
-3. Follow the same steps as uploading a new asset. 
+3. Repeate steps 1-4 in the procedure above, **Upload an asset to the asset library**. 
 To view multiple versions for a single asset, on the toolbar, click **Versions**. 
 
 ### Move assets from the Global asset library to the Project asset library
-There are two ways to move an asset from the Global to the Project scope, import or copy.
+There are two ways to move an asset from the Global asset library to the Project asset library: import and copy.
 
-#### Import from Global scope
-Import an asset from the Global scope to the Project scope so that it can be applied across environments. 
+#### Import from the Global asset library
+Import an asset from the Global asset library to the Project asset library so that it can be applied across environments. 
 1. In the **Project asset library**, select the tab of the asset type that you want to import.
 2. Click **Import**. This will open list of assets from the **Shared asset library**. 
 3. Select the asset that you want to import, and then click **Pick**.
 This will import the selected asset and put it in the **Project asset library** with a status of **Published**. This is for packages that you do not plan to edit. If you want to edit an imported package, create a copy using the following steps which will put the package in a **Draft** state. 
     
-#### Copy from Global Scope
+#### Copy from Global asset library
 Create a copy of the assets so they can be edited. 
-1. In the project asset library, select the tab of the asset type that you want to copy.
+1. In the **Project asset library**, select the tab of the asset type that you want to copy.
 2. Select the asset that you want to copy, and on the toolbar, click **Copy**.
 This will create a copy of the published asset and put it in a **Draft** state.
         
