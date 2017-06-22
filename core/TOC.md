@@ -1297,7 +1297,6 @@
 #### [Gantt development guide](/dynamics365/unified-operations/dev-itpro/user-interface/gantt-development-guide?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create a new transportation management engine](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Retail development library](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Deployment
 #### [Deploy a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
