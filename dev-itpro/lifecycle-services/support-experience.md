@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+Change all cloud-powered (CSP) mentions to support.
+
 
 This article provides information about the support experience in the current version of Microsoft Dynamics AX. It describes the setup that is required in Dynamics AX, Microsoft Visual Studio Online, and Microsoft Dynamics Lifecycle Services, and also explains how to create and work with support issues.
 
