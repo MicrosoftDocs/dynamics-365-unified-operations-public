@@ -76,8 +76,8 @@ You can perform different actions in the asset library as needed.
 ### Upload a new version for a specific asset
 1. Select the asset in the Asset library.
 2. Click the **Upload** icon on the Asset library toolbar. 
-3. Repeate steps 1-4 in the procedure above, **Upload an asset to the asset library**. 
-To view multiple versions for a single asset, on the toolbar, click **Versions**. 
+3. Repeat the steps in the procedure above, **Upload an asset to the asset library**. 
+4. On the toolbar, click **Versions** to view multiple versions for a single asset. 
 
 ### Move assets from the Global asset library to the Project asset library
 There are two ways to move an asset from the Global asset library to the Project asset library: import and copy.
