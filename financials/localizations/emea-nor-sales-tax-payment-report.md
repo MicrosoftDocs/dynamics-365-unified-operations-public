@@ -26,6 +26,7 @@ ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Enterprise edition, July 2017 update
 ---
+
 # VAT statement for Norway
 This topic includes country-specific information about how to set up the value-added tax (VAT) statement for legal entities that have a primary address in Norway. For more information about general VAT reporting, see [VAT reporting](emea-vat-reporting.md).
 
@@ -67,7 +68,7 @@ For users in legal entities in Norway, the following sales tax reporting codes c
 | 142            | Deductible domestic input VAT, 25 %, calc. tax                                     | **Sales tax receivable** |
 | 152            | Deductible domestic input VAT, 15 %, calc. tax                                     | **Sales tax receivable** |
 | 162            | Deductible domestic input VAT, 10 %, calc. tax                                     | **Sales tax receivable** |
-| 172            | Deductible import VAT, 25 %, calc. tax                                             | **Offset use tax** if you aren't using. |
+| 172            | Deductible import VAT, 25 %, calc. tax                                             | **Offset use tax** if you aren't using reporting codes 93, 123, or 133. |
 | 182            | Deductible import VAT, 15 %, calc. tax                                             | **Offset use tax** if you aren't using reporting code 103. |
 
 ## Set up the sales tax period code
