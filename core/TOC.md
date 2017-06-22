@@ -441,7 +441,7 @@
 ##### [Packing slip date verification on invoices](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Sales tax books](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Split payment for invoices issued to the Public Administration](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Withholding tax](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding tax?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Withholding tax](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding-tax?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Latvia
 ##### [Fixed assets accounting](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-accounting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Fixed assets location change tracking](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-location-fields-change?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
