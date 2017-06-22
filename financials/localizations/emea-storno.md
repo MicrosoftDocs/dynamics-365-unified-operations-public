@@ -166,7 +166,7 @@ Dynamics 365 for Operations handles negative journal amounts in a special way. T
 
 You can customize the display of Storno in forms, grids, columns, and fields. For example, you can turn off sign display or change padding for negative amounts. You can also use the **Correction** field with all display settings, if the **Correction** field has ‘Yes’, then it is a Storno entry.
 
-[![Journal Entry Storno amounts](./media/journal-storno.png)]
+![Journal Entry Storno amounts](./media/journal-storno.png)
 
 ## How documents create Storno
 Certain documents create cancellation transactions. For example, the foreign currency revaluation for general ledger, accounts payable, and accounts receivable documents cancel unrealized gain and loss. For more details, see [Foreign currency revaluation for General Ledger](../general-ledger/foreign-currency-revaluation-general-ledger.md) or [Accounts payable and Accounts receivable.](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). After a cancellation transaction is created, new transactions will be created with unrealized gain and loss. Cancellation transactions are also created for inventory. For more information, see [Inventory close](dynamics-365/unified-operations/scm/cost-management/inventory-close). 
