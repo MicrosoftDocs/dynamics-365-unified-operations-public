@@ -11,15 +11,14 @@
 #### [Features not implemented in on-premises deployments](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### Explore the user interface
+#### [Client UI FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/client-faq?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Action search](/dynamics365/unified-operations/fin-and-ops/get-started/action-search?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Advanced filtering and query syntax](/dynamics365/unified-operations/fin-and-ops/get-started/advanced-filtering-query-options?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Dynamics 365 for Finance and Operations, Enterprise edition client FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/client-faq?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Configure and filter workspaces](/dynamics365/unified-operations/fin-and-ops/get-started/configure-filter-workspaces?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Display pages side-by-side using the Open in New Window icon](/dynamics365/unified-operations/fin-and-ops/get-started/display-pages-side-by-side?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Navigation search](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Keyboard shortcuts](/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys?toc=/dynamics365/unified-operations/talent/toc.json)#### [Manage how pages display](/dynamics365/unified-operations/fin-and-ops/get-started/window-management?toc=/dynamics365/unified-operations/talent/toc.json)#### [Navigation search](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Personalize the user experience](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Keyboard shortcuts](/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Manage how pages display](/dynamics365/unified-operations/fin-and-ops/get-started/window-management?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Use lookups to find information](/dynamics365/unified-operations/fin-and-ops//get-started/use-lookups-to-find-information?toc=/dynamics365/unified-operations/talent/toc.json))
 #### [Understand Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### Get help and support
@@ -28,7 +27,7 @@
 #### [View and export field descriptions](/dynamics365/unified-operations/fin-and-ops/get-started/view-export-field-descriptions?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Task guides and task recorder
 ##### [Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Create documentation or training](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Create documentation or training](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Country/region-specific Help content](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Glossary](/dynamics365/unified-operations/fin-and-ops/get-started/glossary?toc=/dynamics365/unified-operations/talent/toc.json)
 
@@ -780,6 +779,7 @@
 ### [Electronic signature overview](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Case management overview](/dynamics365/unified-operations/fin-and-ops/organization-administration/cases?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Configure case security, processes, and categories](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-case-management?toc=/dynamics365/unified-operations/talent/toc.json)
+### [Configure document management](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Create record templates](/dynamics365/unified-operations/fin-and-ops/organization-administration/record-templates?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Configure and send email](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Date/time data and time zones](/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -930,35 +930,31 @@
 
 ## [Development & administration using the Unified Operations Platform](/dynamics365/unified-operations/dev-itpro/index)
 
-### [Overview of development & administration](/dynamics365/unified-operations/dev-itpro/get-started/getting-started-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [System requirements](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Demo data overview](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/talent/toc.json)
-#### Help system
-##### [Help system overview](/dynamics365/unified-operations/dev-itpro/get-started/help-overview?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Connect the Help system](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Operations platform update 7 (May 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Operations platform update 6 (April 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Operations platform update 5 (March 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Operations platform update 4 (February 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Operations version 1611 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Operations platform update 3 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Dynamics AX platform update 2 (August 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=/dynamics365/unified-operations/talent/toc.json) 
-##### [Dynamics AX application version 7.0.1 (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Dynamics AX platform update 1 (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Dynamics AX 7.0 (February 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=/dynamics365/unified-operations/talent/toc.json)
-##### Updated task guides
-###### [November 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [August 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [May 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016?toc=/dynamics365/unified-operations/talent/toc.json)
-###### [February 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016?toc=/dynamics365/unified-operations/talent/toc.json)
+### [System requirements](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/talent/toc.json)
+### [Demo data](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/talent/toc.json)
+### [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Operations platform update 7 (May 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Operations platform update 6 (April 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Operations platform update 5 (March 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Operations platform update 4 (February 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Operations version 1611 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Operations platform update 3 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Dynamics AX platform update 2 (August 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=/dynamics365/unified-operations/talent/toc.json) 
+#### [Dynamics AX application version 7.0.1 (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Dynamics AX platform update 1 (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Dynamics AX 7.0 (February 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=/dynamics365/unified-operations/talent/toc.json)
+#### Updated task guides
+##### [November 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [August 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [May 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [February 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016?toc=/dynamics365/unified-operations/talent/toc.json)
 
 
 ### [Develop and customize using Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Application stack and server architecture](/dynamics365/unified-operations/dev-itpro/dev-tools/application-stack-server-architecture?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Get an evaluation copy](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Sign up for a subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Access Dynamics 365 for Finance and Operations, Enterprise edition instances](/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Access instances](/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Development system requirements](/dynamics365/unified-operations/dev-itpro/dev-tools/development-system-requirements?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Fleet Management sample application
 ##### [Fleet Management sample application](/dynamics365/unified-operations/dev-itpro/dev-tools/fleet-management-sample?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1056,7 +1052,7 @@
 ##### [W Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/w-classes?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [X Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/x-classes?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Customize with extensions and overlayering
-##### Extensibility
+##### [Extensibility](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Customize model elements using extensions](/dynamics365/unified-operations/dev-itpro/extensibility/customize-model-elements-extensions?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Customize with extensions and overlayering](/dynamics365/unified-operations/dev-itpro/extensibility/customization-overlayering-extensions?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Class extensions](/dynamics365/unified-operations/dev-itpro/extensibility/class-extensions?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1065,8 +1061,11 @@
 ##### Database synchronization
 #### Move packages between environments
 ##### Create and apply a deployable package
-##### [Continuous delivery](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
-
+#### [Continuous delivery home page](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Development and continuous delivery FAQ](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-faq?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Exclude test packages from the build output](/dynamics365/unified-operations/dev-itpro/dev-tools/exclude-test-packages?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Manage third-party models and runtime packages by using source control](/dynamics365/unified-operations/dev-itpro/dev-tools/manage-runtime-packages?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Version models in the automated build](/dynamics365/unified-operations/dev-itpro/dev-tools/version-models-build?toc=/dynamics365/unified-operations/talent/toc.json)
 
 #### Performance home page
 ##### [Take a trace using Trace parser](/dynamics365/unified-operations/dev-itpro/perf-test/trace-trace-tutorial?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1175,9 +1174,9 @@
 #### Build workspaces
 ##### [Build operational workspaces](/dynamics365/unified-operations/dev-itpro/user-interface/build-workspaces?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Tile and list caching for workspaces](/dynamics365/unified-operations/dev-itpro/user-interface/tile-list-caching-workspaces?toc=/dynamics365/unified-operations/talent/toc.json)
-#### Task Recorder
-##### [Task Recorder in Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Task Recorder quick reference](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-quick-reference?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Create documentation or training using Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### Release solutions using Lifecycle Services
 #### [Develop and release](/dynamics365/unified-operations/dev-itpro/lcs-solutions/lcs-solutions-app-source)
@@ -1483,6 +1482,7 @@
 
 ## Payments
 ### [Payment methods](/dynamics365/unified-operations/retail/payment-methods?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ## Call center
 ### [Call center overview](/dynamics365/unified-operations/retail/call-center-functionality?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1505,6 +1505,7 @@
 ### Hardware peripherals
 #### [Retail peripherals overview](/dynamics365/unified-operations/retail/retail-peripherals-overview?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Microsoft tested POS hardware peripherals](/dynamics365/unified-operations/retail/microsoft-tested-pos-hardware-peripherals?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Retail peripheral simulator](/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Define and maintain channel clients, registers, and hardware stations](/dynamics365/unified-operations/retail/define-maintain-channel-clients-registers-hw-stations?toc=/dynamics365/unified-operations/talent/toc.json)
 ### Screen layout
 #### [Configure screen layouts for POS](/dynamics365/unified-operations/retail/pos-screen-layouts?toc=/dynamics365/unified-operations/talent/toc.json)

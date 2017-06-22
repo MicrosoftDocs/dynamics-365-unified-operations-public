@@ -112,8 +112,6 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 -   [Create a Windows installer for a payment connector](create-windows-installer-payment-connector.md)
 -   [Deploy a payment connector](deploy-payment-connector.md)
 
-## Hotfixes
--   [Install Retail hotfixes](install-retail-hotfix.md)
 
 
 
