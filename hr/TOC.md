@@ -737,6 +737,7 @@
 ##### [Purchase order overview](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-overview?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Create purchase orders](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-creation?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Approve and confirm purchase orders](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-approval-confirmation?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Purchase order approval mobile workspace](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-mobile-workspace?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Prices and discounts
 ##### [Purchase agreements](/dynamics365/unified-operations/supply-chain/procurement/purchase-agreements?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Product receipts and invoicing
