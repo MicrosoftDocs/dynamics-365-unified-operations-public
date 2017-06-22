@@ -62,7 +62,6 @@ The SLA for the out-of-box connectors like Verifone and Mastercard is owned by t
         
 ## If a supported payment provider issues an update, will Microsoft automatically update the payment connector or do I need to work with the payment provider to get the updated payment connector?
 If a payment connector update is issued by the payment connector provider, the updated version of the payment connector will be included in the next planned release of Dynamics 365 for Retail. However, the customer can also work directly with the payment connector provider to uptake it earlier.
-        
 
         
 Related topics: 

@@ -1,11 +1,11 @@
----
+﻿---
 # required metadata
 
 title: Cash registers for Sweden
 description: This topic provides an overview of the cash register functionality that is available for Sweden. 
 author: epopov
 manager: annbe
-ms.date: 07/1/2017
+ms.date: 06/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -23,7 +23,7 @@ ms.search.scope: Retail, Operations, Core
 ms.search.region: Sweden
 ms.search.industry: retail
 ms.author: epopov
-ms.search.validFrom: 2017-07-01
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ---
 # Cash registers for Sweden

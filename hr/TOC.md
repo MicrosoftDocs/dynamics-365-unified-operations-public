@@ -27,7 +27,7 @@
 #### [View and export field descriptions](/dynamics365/unified-operations/fin-and-ops/get-started/view-export-field-descriptions?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Task guides and task recorder
 ##### [Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Create documentation or training](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Create documentation or training](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Country/region-specific Help content](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Glossary](/dynamics365/unified-operations/fin-and-ops/get-started/glossary?toc=/dynamics365/unified-operations/talent/toc.json)
 
@@ -1174,9 +1174,9 @@
 #### Build workspaces
 ##### [Build operational workspaces](/dynamics365/unified-operations/dev-itpro/user-interface/build-workspaces?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Tile and list caching for workspaces](/dynamics365/unified-operations/dev-itpro/user-interface/tile-list-caching-workspaces?toc=/dynamics365/unified-operations/talent/toc.json)
-#### Task Recorder
-##### [Task Recorder in Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Task Recorder quick reference](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-quick-reference?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Create documentation or training using Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### Release solutions using Lifecycle Services
 #### [Develop and release](/dynamics365/unified-operations/dev-itpro/lcs-solutions/lcs-solutions-app-source)
@@ -1482,6 +1482,7 @@
 
 ## Payments
 ### [Payment methods](/dynamics365/unified-operations/retail/payment-methods?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ## Call center
 ### [Call center overview](/dynamics365/unified-operations/retail/call-center-functionality?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1504,6 +1505,7 @@
 ### Hardware peripherals
 #### [Retail peripherals overview](/dynamics365/unified-operations/retail/retail-peripherals-overview?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Microsoft tested POS hardware peripherals](/dynamics365/unified-operations/retail/microsoft-tested-pos-hardware-peripherals?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Retail peripheral simulator](/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Define and maintain channel clients, registers, and hardware stations](/dynamics365/unified-operations/retail/define-maintain-channel-clients-registers-hw-stations?toc=/dynamics365/unified-operations/talent/toc.json)
 ### Screen layout
 #### [Configure screen layouts for POS](/dynamics365/unified-operations/retail/pos-screen-layouts?toc=/dynamics365/unified-operations/talent/toc.json)
