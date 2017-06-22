@@ -87,7 +87,7 @@ To specify file types, follow these steps.
 3. Remove any file types that users should not be able to attach to records, and add any file types that users should be able to attach to records.
 
 ## Configure document preview
-The attachments preview uses the Web app Open Platform Interface (WOPI) that is provided by Microsoft Office Online Server. On the **Document management parameters** page, on the **General**, in the **Office Web Apps Server** field, specify the Office Online Server instance to use for attachment previews. The default value is **https://onenote.officeapps.live.com**. This value points at the cloud-based WOPI server.
+The attachments preview uses the Web app Open Platform Interface (WOPI) that is provided by Microsoft Office Online Server. On the **Document management parameters** page, on the **General** tab, in the **Office Web Apps Server** field, specify the Office Online Server instance to use for attachment previews. The default value is **https://onenote.officeapps.live.com**. This value points at the cloud-based WOPI server.
 
 ### If you're using an on-premises environment
 When an environment is on-premises, the default cloud-based WOPI server can't read the attachment file to provide a preview. If previews are required, you must [install an on-premises Office Online Server instance](https://technet.microsoft.com/en-us/library/jj219455.aspx) and configure it inside the environment. Set the **Office Web Apps Server** field to the host name of the installed Office Online Server instance, and then click **Save**.
