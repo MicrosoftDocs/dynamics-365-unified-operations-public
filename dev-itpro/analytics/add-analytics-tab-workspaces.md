@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Add analytics to workspaces using Power BI Embedded
-description: This topic demonstrates how you embed a Power BI report in the Analytics tab of a workspace. 
+title: Add analytics to workspaces by using Power BI Embedded
+description: This topic shows how to embed a Power BI report on the Analytics tab of a workspace. 
 author: tjvass
 manager: AnnBe
 ms.date: 06/21/2017
@@ -29,141 +29,138 @@ ms.dyn365.ops.intro: Platform update 8
 ms.dyn365.ops.version: July 2017 update 
 ---
 
-
-
-
-# Add analytics to workspaces using Power BI Embedded
+# Add analytics to workspaces by using Power BI Embedded
 
 [!include[banner](../includes/banner.md)]
 
-
 > [!NOTE]
-> This feature is supported in release Dynamics 365 (v7.2) and after.
+> This feature is supported in Microsoft Dynamics 365 (version 7.2) and later.
 
 # Introduction
-This topic demonstrates how you embed a Power BI report in the **Analytics** tab of a workspace.  For this scenario, we will extend the Reservation Management Workspace in the Fleet Management application to embed an analytical workspace in an **Analytics** tab.
+This topic shows how to embed a Microsoft Power BI report on the **Analytics** tab of a workspace. For the example that is given here, we will extend the **Reservation management** workspace in the Fleet Management application to embed an analytical workspace on an **Analytics** tab.
 
 # Prerequisites
-+ Access to a developer environment running on Platform Update 8 or later.
-+ An analytical report (.PBIX file) authored using Power BI Desktop with a data model sourced from the Dynamics Entity Store Database.
++ Access to a developer environment that runs on Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with Platform update 8 or later.
++ An analytical report (.pbix file) that was created by using Microsoft Power BI Desktop, and that has a data model that is sourced from the Dynamics Entity store database.
 
 # Overview
-Whether you are extending an existing application workspace or introducing one of your own, embedded analytical views can be used to deliver insightful and interactive views of your business data.  The process for adding an analytical workspace tab is broken down into the four distinct steps:
+Whether you extend an existing application workspace or introduce a new workspace of your own, you can use embedded analytical views to deliver insightful and interactive views of your business data. The process for adding an analytical workspace tab has four steps.
 
-1. Add a PBIX file as a Dynamics 365 Resource
-2. Define Analytical Workspace Tab
-3. Embed the PBIX Resource in the Workspace tab
-4. Optionally - Add extensions to customize the view
+1. Add a .pbix file as a Dynamics 365 resource.
+2. Define an analytical workspace tab.
+3. Embed the .pbix resource on the workspace tab.
+4. Optional: Add extensions to customize the view.
 
 > [!NOTE]
-> For more information on creating analytical reports, the [Getting started with Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/) article is a great source for insights on authoring compelling analytical reporting solutions.
+> For more information about how to create analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/). This page is a great source for insights that can help you create compelling analytical reporting solutions.
 
-# Add a PBIX file as a Dynamics 365 Resource
-To begin, you'll need to author or obtain the Power BI Report to embed in the workspace.  For more information on creating analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/).
+# Add a .pbix file as a Dynamics 365 resource
+Before you begin, you must create or obtain the Power BI report that you will embed in the workspace. For more information about how to create analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/).
  
-To add a PBIX file as an Operations Resource artifact:
-1.	Create a new project in the appropriate model
-2.	Select the project in the Solution Explorer, then right-click and select **Add** > **New Item** 
-3.	In the **Add New Item** form, select the **Resource** template under **Operations Artifacts**
-4.	Provide a name to use when referencing the report in X++ metadata then click **Add**
-    ![Add new item dialog](media/analytical-workspace-add.png)
-5.	Locate the PBIX file containing the analytical report definition and then click **Open**
-    ![Select a resource dialog](media/analytical-workspace-select-resource.png)
+Follow these steps to add a .pbix file as an Operations Resource artifact.
+
+1. Create a new project in the appropriate model.
+2. In Solution Explorer, select the project, right-click, and then select **Add** > **New Item**.
+3. In the **Add New Item** dialog box, under **Operations Artifacts**, select the **Resource** template.
+4. Enter a name that will be used to reference the report in X++ metadata, and then click **Add**.
+
+    ![Add New Item dialog box](media/analytical-workspace-add.png)
+
+5. Find the .pbix file that contains the definition of the analytical report, and then click **Open**.
+
+    ![Select a Resource file dialog box](media/analytical-workspace-select-resource.png)
   
-Now that you've added the PBIX file as an Dynamics 365 Resource, you'll be able to embed the reports in workspaces and add direct links using menu items.
+Now that you've added the .pbix file as a Dynamics 365 resource, you can embed the reports in workspaces and add direct links by using menu items.
 
 # Add a tab control to an application workspace
-For this walk-thru, we'll extend the Reservation Management Workspace in the Fleet Management model by adding the **Analytics** tab to the form definition **FMClerkWorkspace**.
+In this example, we will extend the **Reservation management** workspace in the Fleet Management model by adding the **Analytics** tab to the definition of the **FMClerkWorkspace** form.
  
-Here’s how the **FMClerkWorkspace** form appears in the Visual Studio designer:
+The following illustration shows what the **FMClerkWorkspace** form looks like in the designer in Microsoft Visual Studio.
 
-![FMClerkWorkspace before changes](media/analytical-workspace-definition-before.png)
+![FMClerkWorkspace form before changes](media/analytical-workspace-definition-before.png)
 
+Follow these steps to extend the form definition for the **Reservation management** workspace.
 
-To extend the form definition for the **Reservation Management** workspace:
-1.	Open the form designer to extend the design definition.
-2.	Select the top element in the design definition labeled **Design | Pattern: Workspace Operational**.
-3.	Right-click then select **New** > **Tab** to add a new control named **FormTabControl1**.
-4.	Select **FormTabControl1** in the form designer.
-5.	Right-click then select **New Tab Page** to add a new tab page.
-6.	Rename the tab page to something meaningful like **Workspace**.
-7.	Select **FormTabControl1** in the form designer.
-8.	Right-click then select **New Tab Page**.
-9.	Rename the tab page to something meaningful like **Analytics**.
-10.	Select **Analytics (Tab Page)** in the form designer.
-11.	Set the **Caption** property to **Analytics**.
-12.	Right-click on the control then select **New** > **Group** to add a new form group control.
-13.	Rename the form group to something meaningful like **powerBIReportGroup**.
-14.	Select **PanoramaBody (Tab)** in the designer, then drag and drop the control into the **Workspace** tab. 
-15.	Select the top element in the design definition labeled **Design | Pattern: Workspace Operational**.
-16.	Right-click then select **Remove pattern**.
-17.	Right-click again then select **Add pattern** > **Workspace Tabbed**.
-18.	Perform a build to verify your changes.
+1. Open the form designer to extend the design definition.
+2. In the design definition, select the top element that is labeled **Design | Pattern: Workspace Operational**.
+3. Right-click, and then select **New** > **Tab** to add a new control that is named **FormTabControl1**.
+4. In the form designer, select **FormTabControl1**.
+5. Right-click, and then select **New Tab Page** to add a new tab page.
+6. Rename the tab page to something meaningful, such as **Workspace**.
+7. In the form designer, select **FormTabControl1**.
+8. Right-click, and then select **New Tab Page**.
+9. Rename the tab page to something meaningful, such as **Analytics**.
+10. In the form designer, select **Analytics (Tab Page)**.
+11. Set the **Caption** property to **Analytics**.
+12. Right-click the control, and then select **New** > **Group** to add a new form group control.
+13. Rename the form group to something meaningful, such as **powerBIReportGroup**.
+14. In the form designer, select **PanoramaBody (Tab)**, and then drag the control onto the **Workspace** tab.
+15. In the design definition, select the top element that is labeled **Design | Pattern: Workspace Operational**.
+16. Right-click, and then select **Remove pattern**.
+17. Right-click again, and then select **Add pattern** > **Workspace Tabbed**.
+18. Perform a build to verify your changes.
  
-Here’s what the design will look like after applying these changes:
+The following illustration shows what the design looks like after these changes are applied.
 
 ![FMClerkWorkspace after changes](media/analytical-workspace-definition-after.png)
 
-Now that you have added the form controls that will be used to embed the workspace report, you will need to define the size of the parent control to accommodate the layout.  By default, the report will be displayed with both the **Filters Pane** and the **Tab** pages in the report visible.  However, you can toggle the visibility of these controls as appropriate for the target consumer of the report.  
+Now that you've added the form controls that will be used to embed the workspace report, you must define the size of the parent control so that it accommodates the layout. By default, both the **Filters Pane** page and the **Tab** page will be visible on the report. However, you can change the visibility of these controls as appropriate for the target consumer of the report.
  
 > [!NOTE]
-> For embedded workspaces, we recommend using extensions to hide both the **Filters Pane** and **Tab** pages for consistency.
+> For embedded workspaces, we recommend that you use extensions to hide both the **Filters Pane** and **Tab** pages, for consistency.
  
-You have completed the task of Extending the application Form definition.  For more information on customizations using extensions, see  [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
+You've now completed the task of extending the application form definition. For more information about how to use extensions to do customizations, see  [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
 
 # Add X++ business logic to embed a viewer control
-To add business logic to initialize the report viewer control embedded in the Reservation Management Workspace:
-1.	Open the **FMClerkWorkspace** form designer to extend the design definition.
-2.	Press **F7** to access the code behind the code definition.
-3.	Add the following X++ code:
-```
-[Form] 
-public class FMClerkWorkspace extends FormRun
-{
-    private boolean initReportControl = true;
- 
-    protected void initAnalyticalReport()
+Follow these steps to add business logic that initializes the report viewer control that is embedded in the **Reservation management** workspace.
+
+1. Open the **FMClerkWorkspace** form designer to extend the design definition.
+2. Press F7 to access the code behind the code definition.
+3. Add the following X++ code.
+
+    ```
+    [Form] 
+    public class FMClerkWorkspace extends FormRun
     {
-        if (!initReportControl)
+        private boolean initReportControl = true;     
+        protected void initAnalyticalReport()
         {
-            return;
-        }
- 
-        // Note: secure entry point into the Workspace's Analytics report
-        if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
+            if (!initReportControl)
+            {
+                return;
+            }
+            // Note: secure entry point into the Workspace's Analytics report
+            if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
+            {
+                FMPBIWorkspaceController controller = new FMPBIWorkspaceController();
+                PBIReportHelper::initializeReportControl('FMPBIWorkspaces', powerBIReportGroup);
+            }
+            initReportControl = false;
+    }
+        /// <summary>
+        /// Initializes the form.
+        /// </summary>
+        public void init()
         {
-            FMPBIWorkspaceController controller = new FMPBIWorkspaceController();
-            PBIReportHelper::initializeReportControl('FMPBIWorkspaces', powerBIReportGroup);
+            super();
+            this.initAnalyticalReport();
         }
- 
-        initReportControl = false;
     }
- 
-    /// <summary>
-    /// Initializes the form.
-    /// </summary>
-    public void init()
-    {
-        super();
-        this.initAnalyticalReport();
-    }
- 
-}
-```
+    ```
 
 4. Perform a build to verify your changes.
 
-You have completed the task of Adding business logic to initialize the embedded report viewer control. Here’s what the workspace will look like after applying these changes:
+You've now completed the task of adding business logic to initialize the embedded report viewer control. The following illustration shows what the workspace looks like after these changes are applied.
 
-![Report embedded in workspace](media/analytical-workspace-final.png)
+![Report embedded in the workspace](media/analytical-workspace-final.png)
 
 > [!NOTE]
-> The existing operational view is accessible via the **Workspace Tabs** displayed below the page title.
+> You can access the existing operational view by using the workspace tabs below the page title.
 
 # Reference
 
-## PBIReportHelper.initializeReportControl Method [AX7.2]
-Helper class used to embed a Power BI report (PBIX resource) in a form group control
+## PBIReportHelper.initializeReportControl method [AX7.2]
+This section provides information about the helper class that is used to embed a Power BI report (.pbix resource) in a form group control.
 
 ### Syntax
 ```
@@ -180,10 +177,9 @@ public static void initializeReportControl(
 
 | Name | Description |
 |---|---|
-|resourceName|The pbix resource name|
-|formGroupControl|The form group control to apply power bi report control.|
-|defaultPageName|The default page name.|
-|showFilterPane|True show filter pane. Otherwise, false.|
-|showNavPane|True show navigation pane. Otherwise, false.|
-|defaultFilters|The default power bi report filters|
-
+| resourceName | The name of the .pbix resource. |
+| formGroupControl | The form group control to apply Power BI report control to. |
+| defaultPageName | The default page name. |
+| showFilterPane | A Boolean value that indicates whether the filter pane should be shown (**true**) or hidden (**false**). |
+| showNavPane | A Boolean value that indicates whether the navigation pane should be shown (**true**) or hidden (**false**). |
+| defaultFilters | The default filters for the Power BI report. |
