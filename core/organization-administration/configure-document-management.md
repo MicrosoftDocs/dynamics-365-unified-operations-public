@@ -40,7 +40,7 @@ A default set of document types is provided. You can use these document types to
 
 To create a new document type, follow these steps.
 
-1. Go to **Organization administration** > **Setup** > **Document management** > **Document types**.
+1. Go to the **Document types** page.
 2. Click **New**.
 3. In the **Type** field, enter a short name for the new document type, such as **SharePoint** or **HR Docs**.
 4. In the **Name** field, enter a longer name, such as **SharePoint files** or **HR Docs**.
@@ -61,7 +61,7 @@ To use SharePoint storage, set the **Location** field for a document type to **S
 
 To configure SharePoint storage, follow these steps.
 
-1. Go to **Organization administration** > **Setup** > **Document management** > **Document management parameters**.
+1. Go to the **Document management parameters** page.
 2. On the **SharePoint** tab, in the **Default SharePoint server** field, review the host name that was automatically detected for the SharePoint site, such as **contosoax7.sharepoint.com**. Typically, the SharePoint host name is in the form tenantname.sharepoint.com, and accounts on that tenant are in the form user1@tenantname.onmicrosoft.com.
 
     Typically, if no default SharePoint server is specified, either there is no SharePoint site for the tenant, or a valid Microsoft Office 365 license isn't associated with the current user (the admin).
@@ -82,7 +82,7 @@ By modifying the list of file extensions that are allowed, you can control the t
 
 To specify file types, follow these steps.
 
-1. Go to **Organization administration** > **Setup** > **Document management** > **Document management parameters**.
+1. Go to the **Document management parameters** page.
 2. On the **File types** tab, review the default file types. 
 3. Remove any file types that users should not be able to attach to records, and add any file types that users should be able to attach to records.
 
