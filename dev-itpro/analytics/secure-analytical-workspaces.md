@@ -71,14 +71,13 @@ Analytical workspaces are embedded Power BI reports displayed in a within form c
 Steps:
 1. Add an menu item for the analytical workspace.
 2. Form initialization verifies user has access to menu item using **hasMenuItemAccess** API: 
-```
-// Note: secure entry point into the Workspace's Analytics report
-if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
-{
-    FMPBIWorkspaceController controller = new FMPBIWorkspaceController();
-    PBIReportHelper::initializeReportControl('FMPBIWorkspaces', powerBIReportGroup);  
-}
-``` 
+
+    // Note: secure entry point into the Workspace's Analytics report
+    if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
+    {
+        FMPBIWorkspaceController controller = new FMPBIWorkspaceController();
+        PBIReportHelper::initializeReportControl('FMPBIWorkspaces', powerBIReportGroup);  
+    }
 
 This logic will prevent initialization of the Power BI Viewer control resulting in an empty tab section on the form.  By default, empty tabs are automatically hidden by the framework.  As a result, the **Analytics** tab is hidden and inaccessible in cases where the user does not have access to the menu item associated with the analytical workspace.   
 
