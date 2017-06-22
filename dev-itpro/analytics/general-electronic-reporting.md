@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
 
-Electronic reporting (ER) is a tool that you can use to configure formats for both incoming and outgoing electronic documents in accordance with the legal requirements of various countries/regions. ER lets you manage these formats during their lifecycle. For example, you can adopt new regulatory requirements, and generate business documents in the required format to electronically exchange information with government bodies, banks, and other parties.
+ER is a tool that you can use to configure formats for both incoming and outgoing electronic documents in accordance with the legal requirements of various countries/regions. ER lets you manage these formats during their lifecycle. For example, you can adopt new regulatory requirements, and generate business documents in the required format to electronically exchange information with government bodies, banks, and other parties.
 
 The ER engine is targeted at business users instead of developers. Because you configure formats instead of code, the processes for creating and adjusting formats for electronic documents are faster and easier.
 
@@ -46,8 +46,8 @@ ER currently supports the TEXT, XML, Microsoft Word document, and OPENXML worksh
 ## Capabilities
 The ER engine has the following capabilities:
 
-- It represents a single shared tool for electronic reporting in different domains and replaces more than 20 different engines that do some type of electronic reporting for Microsoft Dynamics 365 for Operations.
-- It makes a report’s format insulated from the current Dynamics 365 for Operations implementation. In other words, the format is applicable for different versions of Dynamics 365 for Operations.
+- It represents a single shared tool for electronic reporting in different domains and replaces more than 20 different engines that do some type of electronic reporting for Microsoft Dynamics 365 for Finance and Operations.
+- It makes a report’s format insulated from the current Finance and Operations implementation. In other words, the format is applicable for different versions of Finance and Operations.
 - It supports the creation of a custom format that is based on an original format. It also includes capabilities for automatically upgrading the customized format when the original format is changed because of localization/customization requirements.
 - It becomes the primary standard tool to support localization requirements in electronic reporting, both for Microsoft and for Microsoft partners.
 - It supports the ability to distribute formats to partners and customers through Microsoft Dynamics Lifecycle Services (LCS).
@@ -62,7 +62,7 @@ ER supports two types of components: **Data model** and **Format**.
 A data model component is an abstract representation of a data structure. It's used to describe a specific business domain area with enough detail to satisfy the reporting requirements for that domain. A data model component consists of the following parts:
 
 - A data model, as a set of domain-specific business entities and a hierarchically structured definition of relations between those entities.
-- A model mapping that links selected Dynamics 365 for Operations data sources to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
+- A model mapping that links selected Finance and Operations data sources to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
 
 A business entity of a data model is represented as a container (record). Business entity properties are represented as data items (fields). Each data item has a unique name, label, description, and value. The value of each data item can be designed so that it's recognized as a string, integer, real, date, enumeration, Boolean, and so on. Additionally, it can be another record or records list.
 
@@ -75,18 +75,18 @@ Note that business entities such as company and payment transactions are designe
 
 A model mapping that supports outgoing electronic documents has the following capabilities:
 
-- It can use different Dynamics 365 for Operations data types as data sources for a data model. For example, it can use tables, data entities, methods, or enums.
+- It can use different Finance and Operations data types as data sources for a data model. For example, it can use tables, data entities, methods, or enums.
 - It supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
-- It supports the transformation of Dynamics 365 for Operations data into required groups. It also lets you filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas, as shown in the following illustration. For more information, see [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)).
+- It supports the transformation of Finance and Operations data into required groups. It also lets you filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas, as shown in the following illustration. For more information, see [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)).
 
 [![Formula designer](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
 
 A model mapping that supports incoming electronic documents has the following capabilities:
 
-- It can use different Dynamics 365 for Operations updatable data elements as targets. These data elements include tables, data entities, and views. The data can be updated by using the data from incoming electronic documents. Multiple targets can be used in a single model mapping.
+- It can use different updatable data elements as targets. These data elements include tables, data entities, and views. The data can be updated by using the data from incoming electronic documents. Multiple targets can be used in a single model mapping.
 - It supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
 
-A data model component is designed for each business domain that should be used as a unified data source for reporting that isolates reporting from the physical implementation of Dynamics 365 for Operations data sources. It represents domain-specific business concepts and functionalities in a form that makes a reporting format's initial design and further maintenance more efficient.
+A data model component is designed for each business domain that should be used as a unified data source for reporting that isolates reporting from the physical implementation of data sources. It represents domain-specific business concepts and functionalities in a form that makes a reporting format's initial design and further maintenance more efficient.
 
 #### Format components for outgoing electronic documents
 
@@ -138,32 +138,32 @@ Versioning is supported for ER components. The following workflow is provided to
 
 Versions that have either **Completed** or **Shared** status are available for other data interchange. The following actions can be performed on a component that has these statuses:
 
-- The component can be serialized in XML format and exported from Dynamics 365 for Operations as a file in XML format.
-- The component can be reserialized from an XML file and imported into Dynamics 365 for Operations as a new version of an ER component.
+- The component can be serialized in XML format and exported as a file in XML format.
+- The component can be reserialized from an XML file and imported into Finance and Operations as a new version of an ER component.
 
 #### Component date effectivity
 
-ER component versions are date-effective. You can set the **Effective from** date for an ER component to specify the date that the component becomes effective for reporting processes. The Dynamics 365 for Operations session date is used to define whether a component is valid for execution. If more than one version is valid for a particular date, the latest version is used for reporting processes.
+ER component versions are date-effective. You can set the **Effective from** date for an ER component to specify the date that the component becomes effective for reporting processes. The Finance and Operations session date is used to define whether a component is valid for execution. If more than one version is valid for a particular date, the latest version is used for reporting processes.
 
 #### Component access
 
-Access to ER format components depends on the setting for the ISO country/region code. When this setting is blank for a selected version of a format configuration, a format component can be accessed from any Dynamics 365 for Operations company at run time. When this setting contains ISO country/region codes, a format component is available only from Dynamics 365 for Operations companies that have a primary address that is defined for one of a format component's ISO country/region codes.
+Access to ER format components depends on the setting for the ISO country/region code. When this setting is blank for a selected version of a format configuration, a format component can be accessed from any company at run time. When this setting contains ISO country/region codes, a format component is available only from companies that have a primary address that is defined for one of a format component's ISO country/region codes.
 
 Different versions of a data format component can have different settings for ISO country/region codes.
 
 #### Configuration
 
-An ER configuration is the wrapper of a particular ER component. That component can be either a data model component or a format component. A configuration can include different versions of an ER component. Each configuration is marked as owned by a specific configuration provider. The **Draft** version of a component of a configuration can be edited when the owner of the configuration has been selected as an active provider in the ER settings in Dynamics 365 for Operations.
+An ER configuration is the wrapper of a particular ER component. That component can be either a data model component or a format component. A configuration can include different versions of an ER component. Each configuration is marked as owned by a specific configuration provider. The **Draft** version of a component of a configuration can be edited when the owner of the configuration has been selected as an active provider in the ER settings in Finance and Operations.
 
 Each model configuration contains a data model component. A new format configuration can be derived from a specific data model configuration. In the configuration tree, the format configuration that is created appears as a child of the original data model configuration.
 
 The format configuration that is created contains a format component. The data model component of the original model configuration is automatically inserted into the format component of the child format configuration as a default data source.
 
-An ER configuration is shared for Dynamics 365 for Operations companies.
+An ER configuration is shared for Finance and Operations companies.
 
 #### Provider
 
-The ER provider is the party identifier that is used to indicate the author (owner) of each ER configuration. ER lets you manage the list of configuration providers. Format configurations that are released for electronic documents as part of the Dynamics 365 for Operations solution are marked as owned by the **Microsoft** configuration provider.
+The ER provider is the party identifier that is used to indicate the author (owner) of each ER configuration. ER lets you manage the list of configuration providers. Format configurations that are released for electronic documents as part of the Finance and Operations solution are marked as owned by the **Microsoft** configuration provider.
 
 To learn how to register a new ER provider, play the task guide, **ER Create a configuration provider and mark it as active** (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
@@ -171,11 +171,11 @@ To learn how to register a new ER provider, play the task guide, **ER Create a c
 
 An ER repository stores ER configurations. Two types of ER repositories are currently supported, **Operations resources** and **LCS project**.
 
-An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, releases as part of the Dynamics 365 for Operations solution. Those configurations can be imported into the current Dynamics 365 for Operations instance and used for electronic reporting. They can also be used for additional localizations and customizations.
+An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, releases as part of the Finance and Operations solution. Those configurations can be imported into the current Finance and Operations instance and used for electronic reporting. They can also be used for additional localizations and customizations.
 
-An **LCS project** repository provides access to the list of configurations of a specific LCS project (LCS project assets library) that was selected at the repository registration stage. ER lets you upload shared configurations from the current Dynamics 365 for Operations instance to a specific **LCS project** repository. You can also import configurations from an **LCS project** repository into the current Dynamics 365 for Operations instance.
+An **LCS project** repository provides access to the list of configurations of a specific LCS project (LCS project assets library) that was selected at the repository registration stage. ER lets you upload shared configurations from the current Finance and Operations instance to a specific **LCS project** repository. You can also import configurations from an **LCS project** repository into the current Finance and Operations instance.
 
-Required **LCS project** repositories can be registered individually for each configuration provider of the current Dynamics 365 for Operations instance. Each repository can be dedicated to a specific configuration provider.
+Required **LCS project** repositories can be registered individually for each configuration provider of the current Finance and Operations instance. Each repository can be dedicated to a specific configuration provider.
 
 ## Supported scenarios
 ### Building a data model
@@ -209,7 +209,7 @@ ER provides a model mapping designer that lets users map data models that they 
 To become familiar with the details of this scenario, play the **ER Define model mapping and select data sources** and **ER Map data model to selected data sources** task guides (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
 ### Configuring data model mappings for incoming documents
-ER provides a model mapping designer that lets users map data models that they have designed to specific destinations. For example, data models can be mapped to the Dynamics 365 for Operations updatable data components (tables, data entities, and views). Based on the mapping, the Dynamics 365 for Operations data will be updated at run time by using the data from the data model. As abstract storage of the ER format, the data model is filled with data that is imported from an incoming electronic document. The following illustration shows an example of this type of data model mapping. In this example, the **Import mapping for NETS** model mapping of the payment domain data model is used to support the import of bank statements in the NETS bank format for Norway.
+ER provides a model mapping designer that lets users map data models that they have designed to specific destinations. For example, data models can be mapped to the Finance and Operations updatable data components (tables, data entities, and views). Based on the mapping, the Finance and Operations data will be updated at run time by using the data from the data model. As abstract storage of the ER format, the data model is filled with data that is imported from an incoming electronic document. The following illustration shows an example of this type of data model mapping. In this example, the **Import mapping for NETS** model mapping of the payment domain data model is used to support the import of bank statements in the NETS bank format for Norway.
 
 [![Import mapping for NETS data model example](./media/ER-overview-08.png)](./media/ER-overview-08.png)
 
