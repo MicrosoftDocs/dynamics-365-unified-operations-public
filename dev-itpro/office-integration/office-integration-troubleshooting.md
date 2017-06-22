@@ -46,7 +46,7 @@ The Excel Add-in and Word Add-in are built using the Office Web/JavaScript Add-i
 
 ### Is Office for Mac supported for the Excel Add-in?
 
-Yes. The Excel Add-in requires the ExcelAPI 1.2, so use the [Office Add-in host and platform availability](http://dev.office.com/add-in-availability) matrix to view which platforms it is supported on.
+No. Mac and iOS support is currently under development. There are authentication differences in how the Office JS APIs function in Safari vs IE, particularly in the authentication space. See [Office Add-in host and platform availability](http://dev.office.com/add-in-availability) for details about Office JS API platform support.
 
 ### What version of Office is needed to allow the Excel Add-in to support ADFS?
 
