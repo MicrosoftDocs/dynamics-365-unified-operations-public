@@ -83,6 +83,15 @@ if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType
 This logic will prevent initialization of the Power BI Viewer control resulting in an empty tab section on the form.  By default, empty tabs are automatically hidden by the framework.  As a result, the **Analytics** tab is hidden and inaccessible in cases where the user does not have access to the menu item associated with the analytical workspace.   
 
 
+## Secure analytical reports 
+Embedded Power BI reports in the application are secured using menu items.  Users attempting to directly access a Power BI report using an AX menu item will receive an error.
+ 
+Steps:
+1. Add a menu item for the Report or specific tab. By default, the first tab of the report will be displayed if no other tab is selected.
+2. Link the menu item to the **PowerBIEmbedded_App** configuration key.
+ 
+The menu item will now be associated with the availability of the Power BI Embedded service.  In cases where the service is unavailable, the links for the menu items will be removed from the application.
+ 
 
 
 
