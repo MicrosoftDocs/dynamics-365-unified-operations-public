@@ -83,18 +83,9 @@ web client.
 | **Replaced by another feature?** | Reports are rendered as PDF documents by the on-premises service. Use extensions to enable embedded drill-thru links in application reports. |
 | **Modules affected**             | All    |
 
-#### Retail product recommendation
-
-|                                  |  |
-|----------------------------------|--|
-| **Reason for deprecation**       | Briefly explain why the feature is deprecated.                          |
-| **Replaced by another feature?** | Indicate if the feature is replaced by something else.                  |
-| **Modules affected**             | List the modules affected such as Accounts payable, Accounts receivable |
-
 #### Document Routing Agent
 
-The Document Routing Agent client is used as a service gateway to connect from
-the cloud to domain-authenticated network printers.
+The Document Routing Agent client is used as a service gateway to connect from the cloud to domain-authenticated network printers.
 
 |                                  |  |
 |----------------------------------|--|
