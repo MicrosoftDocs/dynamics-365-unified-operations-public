@@ -55,8 +55,34 @@ Analytical reports can be secured using menu items.  Once the user has access, t
 Create scenario-specific PBIX files to deliver analytical views:
 + Area overviews are delivered using workspaces
 + Subject matter specific analytical reports 
+    > [!NOTE]
+    > These are often used to deliver reports containing medium and high business impact data.
 
-> [!NOTE]
-> These are often used to deliver reports containing medium and high business impact data.
+For more information on creating analytical reports, [Getting started with Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/) is a great source for insights on authoring compelling analytical reporting solutions.
+
+# Secure analytical views provided through embedded Power BI reports
+Power BI report filters and the filter pane serve as a mechanism to pass session context into the report embedded in **Analytics** tab. Toggling filter pane visibility is not a security feature.  Using Power BI report filters and hiding/showing the filters pane is a user experience decision for the application designer. 
+ 
+Row level security defined in Dynamics 365 for Operations is not inherited by Power BI reports.  Instead, application developers can secure the workspace or secure the report.
+
+## Securing Analytical Workspace on the Analytics tab	
+Analytical workspaces are embedded Power BI reports displayed in a within form control.  Without this step, anyone who has access to the workspace would see the **Analytics** tab and have access to PBI report.
+ 
+Steps:
+1. Add an menu item for the analytical workspace.
+2. Form initialization verifies user has access to menu item using **hasMenuItemAccess** API: 
+```
+// Note: secure entry point into the Workspace's Analytics report
+if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
+{
+    FMPBIWorkspaceController controller = new FMPBIWorkspaceController();
+    PBIReportHelper::initializeReportControl('FMPBIWorkspaces', powerBIReportGroup);  
+}
+``` 
+
+This logic will prevent initialization of the Power BI Viewer control resulting in an empty tab section on the form.  By default, empty tabs are automatically hidden by the framework.  As a result, the **Analytics** tab is hidden and inaccessible in cases where the user does not have access to the menu item associated with the analytical workspace.   
+
+
+
 
 
