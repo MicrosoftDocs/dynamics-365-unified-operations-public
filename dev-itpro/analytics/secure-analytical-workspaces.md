@@ -93,6 +93,7 @@ Steps:
     
     ![Link menu item to configuration key](media/secure-workspace-key.png)
  
+
 The menu item will now be associated with the availability of the Power BI Embedded service.  In cases where the service is unavailable, the links for the menu items will be removed from the application.
  
 # Secure analytical workspaces and reports by company
