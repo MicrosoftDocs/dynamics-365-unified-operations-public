@@ -92,6 +92,18 @@ Steps:
  
 The menu item will now be associated with the availability of the Power BI Embedded service.  In cases where the service is unavailable, the links for the menu items will be removed from the application.
  
+# Secure analytical workspaces and reports by company
+Power BI workspaces and reports can be secured by Company (e.g. **DataAreaID**).  The following steps must be applied by application solutions for company-level security in analytical workspaces and reports.  
+ 
+In this scenario, the sales manager from Contoso USA is presented with analytical workspaces and reports limited to data related to Contoso USA. The report viewer must not have access data associated to any other company without switching company context.
 
+Steps:
+1. Open the analytical report in Power BI Desktop by double-clicking the resource in a Visual Studio project.
+1. On the **Modeling** tab, click **Manage Roles**. 
+1. Create a new role called **CompanyFilter** against a column in the data model containing the **Company** field. A **COMPANY** field must be present in the data model to restrict access by company.
+1. In the **Table** filter DAX expression enter the following: **[COMPANY] = USERNAME()**.
+1. To make sure the rules are working, on the **Modeling** tab, click **View as Roles**, and then enter the following:
+
+The reports will now show data as if you were running the USMF company. For more information, see the article on [Row level security with Power BI Embedded](https://docs.microsoft.com/en-us/azure/power-bi-embedded/power-bi-embedded-rls).
 
 
