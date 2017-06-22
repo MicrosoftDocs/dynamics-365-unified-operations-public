@@ -5,10 +5,10 @@ title: Performance timer
 description: This topic provides an overview of the Performance timer, which is a tool that helps you to determine why your system's performance might be slow. 
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

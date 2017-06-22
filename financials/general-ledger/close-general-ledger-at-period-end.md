@@ -5,10 +5,10 @@ title: Close the general ledger at period end
 description: This topic describes the tasks that are typically completed when performing a period closing for General ledger. 
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

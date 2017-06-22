@@ -5,10 +5,10 @@ title: Settle a partial customer payment that has discounts on credit notes
 description: This article walks you through a scenario where a cash discount is taken on a credit note when the original invoice also had a cash discount. 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

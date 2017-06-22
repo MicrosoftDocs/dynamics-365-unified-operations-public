@@ -5,10 +5,10 @@ title: Metadata properties - ReadOnly, AllowEdit, Mandatory
 description: This article covers the behavioral properties of metadata for ReadOnly, AllowEdit, and Mandatory. 
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

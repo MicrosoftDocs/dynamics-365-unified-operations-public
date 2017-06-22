@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -70,7 +70,7 @@ You will receive an email notification five days before the update is scheduled 
 In the future, we are planning to enable more notification types:
 - Email notification – Five days before the planned maintenance window an email reminder will be sent. Additional emails will be sent in the days leading up to the maintenance (T-5, T-3, T-1 day),
 - LCS notification – In LCS, in the Environment details, you can select Upcoming updates to see an entry for the upcoming maintenance window. In addition, 24 hrs before the maintenance window, there will be a message bar on the environment as a reminder.
-- Product based notification – In Dynamics 365 for Operations, a notification will be sent two hours prior to a planned system downtime informing users that the system will be unavailable in the planned downtime window.
+- Product based notification – In Finance and Operations, a notification will be sent two hours prior to a planned system downtime informing users that the system will be unavailable in the planned downtime window.
 
 ### Who will be notified about the upcoming planned maintenance?
 The following stakeholders will be notified about the upcoming maintenance:
@@ -85,7 +85,7 @@ When a platform update is applied, you don’t have to complete any validations.
 ### What validations does Microsoft do for changes that will be applied during the update?
 Before the update is applied, Microsoft runs validations to make sure that there is no impact on components outside the platform, such as Management reporter or Retail. Microsoft also makes sure that the changes are backward compatible and forward compatible.
 
-After the update is applied, Microsoft validates that it was successful, and that the environment is running as expected. As part of this validation, Microsoft runs some basic verification tests to make sure that Microsoft Dynamics 365 for Operations can be used to complete transactions.
+After the update is applied, Microsoft validates that it was successful, and that the environment is running as expected. As part of this validation, Microsoft runs some basic verification tests to make sure that Microsoft Dynamics 365 for Finance and Operations can be used to complete transactions.
 
 ### How do I reschedule the planned maintenance?
 You can reschedule planned maintenance by filing a support ticket with Microsoft to request a change in the schedule.

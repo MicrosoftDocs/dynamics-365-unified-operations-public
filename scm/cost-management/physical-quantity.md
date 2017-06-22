@@ -5,10 +5,10 @@ title: Inventory object values
 description: This article provides information about how the values of an inventory object are calculated. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -148,7 +148,7 @@ See also
 
 [Cost entries](cost-entries.md)
 
-[What's new and changed in Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[What's new and changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed)
 
 
 

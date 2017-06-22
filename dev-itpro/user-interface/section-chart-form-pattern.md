@@ -5,10 +5,10 @@ title: Section Chart form pattern
 description: This article provides information about the Section Chart form pattern. This pattern is primarily used in conjunction with the Operational Workspace pattern, and specifically on forms that contain a chart control.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -45,7 +45,7 @@ The Section Chart form pattern is intended to be used primarily in conjunction w
 ## Wireframe
 [![sectionChartWireframe](./media/sectionchartwireframe1.png)](./media/sectionchartwireframe1.png)
 
-## Pattern changes for Microsoft Dynamics 365 for Operations
+## Pattern changes for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 This pattern didn't exist for Microsoft Dynamics AX 2012.
 
 ## Model

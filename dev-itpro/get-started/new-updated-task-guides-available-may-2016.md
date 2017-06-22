@@ -5,10 +5,10 @@ title: New or updated task guides (May 2016)
 description: This article lists the new or updated Task guides that were released to the Microsoft (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX. No new Getting Started Library was released. 
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -135,7 +135,7 @@ The (May 2016) APQC Unified Library contains the Task guides that are intended t
 | BPM line                                                 | Country/region |
 |----------------------------------------------------------|----------------|
 | Create a new product                                     | Global         |
-| Create ..\financial-dimensions\dimension-based configurations                    | Global         |
+| Create dimension-based configurations                    | Global         |
 | Create predefined product variants                       | Global         |
 | Create sales price selection criteria                    | Global         |
 | Enter orders for configurable products                   | Global         |

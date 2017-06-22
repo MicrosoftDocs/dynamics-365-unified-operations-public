@@ -5,10 +5,10 @@ title: Set up a product configuration model
 description: This article describes the steps for setting up and creating a product configuration model.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

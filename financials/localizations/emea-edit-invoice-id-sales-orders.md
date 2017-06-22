@@ -5,10 +5,10 @@ title: Edit invoice IDs on sales orders for Eastern Europe
 description: This topic provides information about accounts receivable parameters that affect invoice numbers on packing slips and invoices for the Czech Republic, Estonia, Hungary, Lithuania, Latvia, and Poland.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 268014
-ms.assetid: 7d1676bf-4b6a-45f1-852b-1a80d1430e7f
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 # ms.search.industry: 
 ms.author: v-elgolu

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +17,7 @@ ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 272163
@@ -625,7 +625,7 @@ For detailed information about overhead rate policy, see Overhead rate policy an
 
 ### Step 4: Process the cost allocation calculation
 
-Allocation is used to allocate the balance of a cost object to other cost objects by applying an allocation base. Microsoft Dynamics 365 for Operations supports the reciprocal allocation method. In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized. The system automatically determines the correct order to perform the allocations in. The balance of a cost object is allocated by a single allocation base. Allocations across cost objects dimensions and their respective members are supported. The allocation order is controlled by the cost control unit. 
+Allocation is used to allocate the balance of a cost object to other cost objects by applying an allocation base. Finance and Operations supports the reciprocal allocation method. In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized. The system automatically determines the correct order to perform the allocations in. The balance of a cost object is allocated by a single allocation base. Allocations across cost objects dimensions and their respective members are supported. The allocation order is controlled by the cost control unit. 
 [![Reciprocal method](./media/reciprocal-method.png)]
 
 #### Define the cost allocation
@@ -727,7 +727,7 @@ Cost object CC004 Packaging contributes to several cost objects. A statistical d
 </tbody>
 </table>
 
-**Note:** In Dynamics 365 for Operations, statistical measures such as the production hours that a product consumes can be derived from source data. For more detailed information about statistical measure providers, see Statistical measure provider template. (Note that this topic isn't completed yet but is coming soon.) The following table shows the result when the HR services are applied as an allocation base for total cost (fixed cost and variable cost).
+**Note:** In Finance and Operations, statistical measures such as the production hours that a product consumes can be derived from source data. For more detailed information about statistical measure providers, see Statistical measure provider template. (Note that this topic isn't completed yet but is coming soon.) The following table shows the result when the HR services are applied as an allocation base for total cost (fixed cost and variable cost).
 
 <table>
 <thead>

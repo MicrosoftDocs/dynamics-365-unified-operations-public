@@ -5,10 +5,10 @@ title: Update standard costs for a new manufactured item
 description: This article provides guidance for updating standard costs for a new manufactured item. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

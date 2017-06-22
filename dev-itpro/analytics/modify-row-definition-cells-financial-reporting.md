@@ -5,10 +5,10 @@ title: Modify row definition cells
 description: This article describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -25,8 +25,8 @@ ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 
 ---
 

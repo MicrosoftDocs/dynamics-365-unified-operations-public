@@ -5,10 +5,10 @@ title: Report production orders as finished
 description: Report as finished is a production stage. At this stage, a finished product is reported and moved from the production order to the inventory.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

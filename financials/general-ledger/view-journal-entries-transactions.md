@@ -5,10 +5,10 @@ title: View journal entries and transactions
 description: This article explains the various ways that you can view journal entries and transactions. 
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
