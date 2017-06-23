@@ -2,6 +2,12 @@
   tocHref: /dynamics365/
   topicHref: /dynamics365
   items:
+  - name: Introduction to Dynamics 365
+    tocHref: /dynamics365/get-started/what-is/
+    topicHref: /dynamics365/get-started/what-is/index
+  - name: What's new
+    tocHref: /dynamics365/get-started/whats-new/
+    topicHref: /dynamics365/get-started/whats-new/index
   - name: Finance and Operations, Enterprise
     tocHref: /dynamics365/unified-operations/fin-and-ops/
     topicHref: /dynamics365/unified-operations/fin-and-ops/index
