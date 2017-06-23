@@ -38,14 +38,14 @@ Microsoft Dynamics 365 for Talent streamlines many routine recordkeeping tasks a
 
 You can use Talent to complete these tasks:
 
-> + Administer organizational structures.
-> + Maintain comprehensive worker information from hire to retire.
-> + Define and administer benefit plans, enroll workers, assign dependent coverage, and designate beneficiaries.
-> + Establish and monitor absence policies.
-> + Implement and track profile-based time management and generate pay information to export to a payroll system.
-> + Manage worker competencies.
-> + Review performance and implement worker goals.
-> + Set up, deliver, and analyze training courses that include agendas, sessions, and tracks.
++ Administer organizational structures.
++ Maintain comprehensive worker information from hire to retire.
++ Define and administer benefit plans, enroll workers, assign dependent coverage, and designate beneficiaries.
++ Establish and monitor absence policies.
++ Implement and track profile-based time management and generate pay information to export to a payroll system.
++ Manage worker competencies.
++ Review performance and implement worker goals.
++ Set up, deliver, and analyze training courses that include agendas, sessions, and tracks.
 
 > [!NOTE] 
 > Dynamics 365 for Talent is closely related to Human resources in Dynamics 365 for Finance and Operations, Enterprise edition. The same functionality may appear in both products. As a result, in topics that are primarily related Human resources, the product name will be Dynamics 365 for Finance and Operations, Enterprise Edition; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent. Topics that are written for one product may apply to the same functionality in a related product.
