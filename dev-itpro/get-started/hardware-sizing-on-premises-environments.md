@@ -49,14 +49,14 @@ As you understand the load that impacts your infrastructure, you also need to un
 - **Transactions** - Typically transactions have certain peaks throughout the day/week. This mostly depends on the transaction type. Time and expense entries usually show peaks once per week, whereas Sales order entries often come in bulk via integration or trickle in during the day. 
 
 - **Number of concurrent users** – The number of concurrent users is the second most important sizing factor. You cannot reliably get sizing estimates based on the number of concurrent users, so if this is the only data you have available, estimate an approximate number, and then revisit this when you have more data. An accurate concurrent user definition means that: 
- - Named users are not concurrent users.
- - Concurrent users are always a subset of named users. 
- - Peak workload defines the maximum concurrency for sizing.
+  - Named users are not concurrent users.
+  - Concurrent users are always a subset of named users. 
+  - Peak workload defines the maximum concurrency for sizing.
  
 - Criteria for concurrent users is that the user meets all the following criteria: 
- - Logged on. 
- - Working transactions/inquiries at the time of counting. 
- - Not an idle session. 
+  - Logged on. 
+  - Working transactions/inquiries at the time of counting. 
+  - Not an idle session. 
  
 - **Data composition** – This is mostly about how your system will be set up and configured. For example, how many legal entities you will have, how many items, how many BOM levels, and how complex your security setup will be. Each of those factors may have a small impact on performance, so these factors can be offset by using smart choices when it comes to infrastructure. 
 
@@ -78,17 +78,17 @@ To understand your sizing requirements, you need to know the peak volume of tran
 
 - 3K to 15K transaction lines per hour per core on DB server.
 - Typical AOS-to-SQL core ratio 3:1 for the primary SQL Server. Additional cores are required based on the chosen high availability configuration. 
- - Processing database-heavy operations may regress this to 2:1. 
+  - Processing database-heavy operations may regress this to 2:1. 
 - The following factors influence variations: 
- - Parameter settings in use. 
- - Levels of extensions. 
- - Usage of additional functionality, such as database log and alerts. Extreme database logging will further reduce throughput per hour per core below 3K lines. 
- - Complexity of data composition – A simple chart of accounts versus a detailed fine-grained chart of accounts has implications on throughput (as an example). 
- - Transaction characterization.
- - 2 GB to 4 GB memory for each core. 
- - Auxiliary databases on DB server such as Management reporter and SSRS databases.
- - Temp DB = 15% of DB size, with as many files as physical processors. 
- - SAN size and throughput based on total concurrent transaction volume/usage. 
+  - Parameter settings in use. 
+  - Levels of extensions. 
+  - Usage of additional functionality, such as database log and alerts. Extreme database logging will further reduce throughput per hour per core below 3K lines. 
+  - Complexity of data composition – A simple chart of accounts versus a detailed fine-grained chart of accounts has implications on throughput (as an example). 
+  - Transaction characterization.
+  - 2 GB to 4 GB memory for each core. 
+  - Auxiliary databases on DB server such as Management reporter and SSRS databases.
+  - Temp DB = 15% of DB size, with as many files as physical processors. 
+  - SAN size and throughput based on total concurrent transaction volume/usage. 
 
 ### High availability 
 We recommend always utilizing SQL Server in either a cluster or mirroring setup.
