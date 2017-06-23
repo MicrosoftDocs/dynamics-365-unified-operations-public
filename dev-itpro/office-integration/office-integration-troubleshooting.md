@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides answers to questions, tips, and troubleshooting information for the Office integration capabilities. The questions and issues discussed range across user, administration, and development scenarios.
+This article provides answers to questions, tips, and troubleshooting information about the Office integration capabilities. The questions and issues discussed range across user, administration, and development scenarios.
 
 Frequently asked questions
 --------------------------
@@ -69,7 +69,7 @@ The Excel Add-in runs inside an Internet Explorer (IE) window. The Excel Add-in�
 
 **Issue:** During Excel Add-in sign-in, an error appears "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ". 
 
-**Explanation:** This is usually caused when AAD cannot find the AAD application representing the Excel Add-in because during [PowerBI configuration](..\analytics\configure-power-bi-integration.md) an AAD application was added that has the App ID URI set to the environment URL. 
+**Explanation:** This is usually caused when AAD cannot find the AAD application representing the Excel Add-in because during [Power BI configuration](..\analytics\configure-power-bi-integration.md) an AAD application was added that has the App ID URI set to the environment URL. 
 
 **Fix:** Ensure that there are no AAD App ID URI's set to the environment URI. App ID URI's should be a made up unique URI like https://contosoAXPowerBI.
 
@@ -77,27 +77,29 @@ The Excel Add-in runs inside an Internet Explorer (IE) window. The Excel Add-in�
 
 **Issue:** During Excel Add-in sign-in, an error appears "AADSTS50001: The application named ABC was not found in the tenant named XYZ". 
 
-**Explanation:** This is likely a failure in the deployment system that caused the environment to get a URL that was not added in the configured list of Service Principals for the tenant. 
+**Explanation:** This is likely a failure in the deployment system that caused the environment to get a URL that was not added in the configured list of service principals for the tenant. 
 
 **Fix:** File a support issue for your environment so the problem can be investigated further and the configuration can be adjusted.
 
-### \[Fixed\] Issue: After the Excel Add-in opens and is refreshing data, an error appears "An error occurred while writing to the data cache"
+### \[Fixed\] Issue: After the Excel Add-in opens and refreshes data, an error appears saying, "An error occurred while writing to the data cache"
 
-**Issue:** After the Excel Add-in opens and is refreshing data, an error appears "An error occurred while writing to the data cache" with details of "The argument is invalid or missing or has an incorrect format". 
+**Issue:** After the Excel Add-in opens and refreshes data, an error appears saying, "An error occurred while writing to the data cache." Details of the error state, "The argument is invalid or missing or has an incorrect format." 
 
-**Explanation:** This error will appear if the client is open in Internet Explorer (IE) and after doing an "Open in Excel" option the user clicks "Open" immediately. The way IE handles Temporary Internet Files then causes an issue inside Excel which causes some API calls to fail. 
+**Explanation:** This error will appear if the client is open in Internet Explorer (IE) and after using the "Open in Excel" option, the user clicks "Open" immediately. The way IE handles temporary Internet files then causes an issue inside Excel which causes some API calls to fail. 
 
-**Workaround:** For IE, when opening a workbook... click Save first, then click Open. The file will then open from your Downloads folder. Alternately, Edge and Chrome will both not showcase this problem since they save files to a Downloads folder automatically. 
+**Workaround:** For IE, when opening a workbook, click **Save** first, then click **Open**. The file will then open from your Downloads folder. Alternately, Edge and Chrome will both not showcase this problem since they save files to a Downloads folder automatically. 
 
 **Long term fix:** We are helping the Office team understand and reproduce this issue so it can be fixed in Excel.
 
 ### Issue: The server response was: 5.7.60 SMTP; Client does not have permissions to send as this sender
 
-**Issue:** When sending email using SMTP you may see the error: The server response was: 5.7.60 SMTP; Client does not have permissions to send as this sender or Something went wrong while generating the report 
+**Issue:** When sending email using SMTP, you may see the error: The server response was: "5.7.60 SMTP; Client does not have permissions to send as this sender" or "Something went wrong while generating the report."
 
-**Explanation:** This is usually caused by incorrect setup of the Send as permissions setup for the email account 
+**Explanation:** This is usually caused by incorrect setup of the **Send as** permissions setup for the email account. 
 
-**Fix:** Send As permissions can be configured on the Office 365 admin center (portal.office.com/Admin) &gt; Users &gt; Active users &gt; User &gt; Edit mailbox permissions &gt; Send email from this mailbox ([Office 365 Help on Send email from another user’s mailbox](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)).SMTP setup Example: Below you see the Email parameters form where you need to provide the Outgoing mail server, port, User name, Password, and SSL requirements. 
+**Fix:** **Send as** permissions can be configured on the Office 365 admin center (portal.office.com/Admin) &gt; Users &gt; Active users &gt; User &gt; Edit mailbox permissions &gt; Send email from this mailbox ([Office 365 Help on Send email from another user’s mailbox](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)). 
+
+SMTP setup example: Below you see the Email parameters page where you need to provide the outgoing mail server, port, user name, password, and SSL requirements. 
 
 [![smtp](./media/smtp.jpg)](./media/smtp.jpg)   
 
