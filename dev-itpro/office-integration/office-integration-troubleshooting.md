@@ -101,15 +101,17 @@ The Excel Add-in runs inside an Internet Explorer (IE) window. The Excel Add-in�
 
 SMTP setup example: Below you see the **Email parameters** page where you need to provide the outgoing mail server, port, user name, password, and SSL requirements. 
 
-[![smtp](./media/smtp.jpg)](./media/smtp.jpg)   
+[![smtp](./media/smtp.jpg)](./media/smtp.png)   
 
-Permissions SMTP User account is serviceacct@d365forops.onmicrosoft.com Important: All Users like the example Test User below will need to allow the SMTP account to have SEND AS permissions on their email setup in O365. This is done in the Mailbox permissions in Exchange or in the Office 365 Admin portal. The screen shot below shows the setup for the test user account with the STMP service account added in the Send As section. 
+Permissions SMTP User account is serviceacct@d365forops.onmicrosoft.com 
+
+**Important:** All users, like the example Test User below, will need to allow the SMTP account to have Send As permissions on their email setup in O365. This is done in the Mailbox permissions in Exchange or in the Office 365 Admin portal. The screen shot below shows the setup for the test user account with the STMP service account added in the Send As section. 
 
 [![o365](./media/o365.png)](./media/o365.png)  
 
 ### \[Fixed\] Issue: The Office Add-ins don't yet support ADFS
 
-**Affected versions:** CTP8 and the February 2016 releases. 
+**Affected versions:** CTP8 and the February 2016 releases 
 
 **Issue:** When users from a Microsoft Azure Active Directory (Azure AD) tenant that uses Active Directory Federation Services (AD FS) try to sign in to Office Add-ins (that is, when the users enter their account, and then press tab or click to enter their password), a separate browser window opens. This browser window usually has a URL that starts with **https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.2.1.0/App/DynamicsApp.html\#id\_token=**. Nothing that the users do lets them sign in. 
 
@@ -117,7 +119,11 @@ Permissions SMTP User account is serviceacct@d365forops.onmicrosoft.com Importan
 
 **Long-term fix:** The long-term fix for this issue was put in place 5/10/2016. The long-term fix was for the Office Add-ins to use a new Dialog API that the Office team just added. 
 
-**To take advantage of the Add-in updates that support ADFS, all Office installations should be updated** via File &gt; Account &gt; Updates (for click to run installations) or via Windows Update (for MSI installations) . The ADFS Dialog API was definitely in the May Update [16.0.6868.2060](http://answers.microsoft.com/en-us/office/forum/office_2016-office_install/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2?auth=1). The [Office 365 client update channel releases](https://technet.microsoft.com/en-us/office/mt465751?f=255&MSPPError=-2147217396) page provides information about updates. If your Office build does not update then it might be because you are on the deferred track ([a "Microsoft Office 365 ProPlus" update channel option](https://technet.microsoft.com/en-us/library/mt455210.aspx)), in which case you could [use the "Office Deployment Tool" to move to the Current channel ](https://technet.microsoft.com/en-us/library/jj219422.aspx?f=255&MSPPError=-2147217396)or sign up for the [Office Insider program](https://products.office.com/en-us/office-insider)to ensure you have the latest updates. See also: [Install the latest version of Office 2016](https://dev.office.com/docs/add-ins/develop/install-latest-office-version) and [Office 2016 Deployment Guides for Admins](https://technet.microsoft.com/en-us/library/cc303401(v=office.16).aspx). If Office updates cannot be installed then there is a workaround that can unblock users.
+**To take advantage of the Add-in updates that support ADFS:** All Office installations should be updated via File &gt; Account &gt; Updates (for click to run installations) or via Windows Update (for MSI installations) . The ADFS Dialog API was definitely in the May Update [16.0.6868.2060](http://answers.microsoft.com/en-us/office/forum/office_2016-office_install/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2?auth=1). The [Office 365 client update channel releases](https://technet.microsoft.com/en-us/office/mt465751?f=255&MSPPError=-2147217396) page provides information about updates. 
+
+If your Office build does not update then it might be because you are on the deferred track ([a "Microsoft Office 365 ProPlus" update channel option](https://technet.microsoft.com/en-us/library/mt455210.aspx)), in which case you could [use the "Office Deployment Tool" to move to the Current channel ](https://technet.microsoft.com/en-us/library/jj219422.aspx?f=255&MSPPError=-2147217396)or sign up for the [Office Insider program](https://products.office.com/en-us/office-insider) to ensure you have the latest updates. Also refer to [Install the latest version of Office 2016](https://dev.office.com/docs/add-ins/develop/install-latest-office-version) and [Office 2016 Deployment Guides for Admins](https://technet.microsoft.com/en-us/library/cc303401(v=office.16).aspx). 
+
+If Office updates cannot be installed then there is a workaround that can unblock users.
 
 #### Workaround: Use Internet Explorer to sign in to the client before you use the Office add-ins
 
@@ -125,10 +131,10 @@ This workaround requires user knowledge and extra steps. After users have been e
 
 **User steps:** Before users open Excel (or Word), they should first sign in to the client by using Internet Explorer. 
 
-**Explanation:** The sign-in context will be used by the Excel (or Word) add-in, and no redirect will be required. The earlier sign-in must occur in Internet Explorer, because the Office add-ins run inside an Internet Explorer window in Excel and Word. The sign-in context lasts 6 to 24 hours, depending on policies. Therefore, a new sign-in through Internet Explorer is required only occasionally. Steps:
+**Explanation:** The sign-in context will be used by the Excel (or Word) add-in, and no redirect will be required. The earlier sign-in must occur in Internet Explorer because the Office add-ins run inside an Internet Explorer window in Excel and Word. The sign-in context lasts 6 to 24 hours, depending on policies. Therefore, a new sign-in through Internet Explorer is required only occasionally.
 
-1.  Close Internet Explorer and Excel
-2.  Open Internet Explorer and sign into the client
+1.  Close Internet Explorer and Excel.
+2.  Open Internet Explorer and sign into the client.
 3.  Test the Excel add-in using an Open in Excel experience. (For example, click **Fleet Management** &gt; **Customers** &gt; **Customer** &gt; **Open in Microsoft Office** &gt; **Open in Excel** &gt; **Fleet Management Customers**.)
 
 
