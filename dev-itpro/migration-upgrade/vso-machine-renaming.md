@@ -5,7 +5,7 @@ title: Rename a local environment to enable access to Visual Studio Team Service
 description: Renaming a local development VMs is required in order to access a VSTS project across multiple machines.
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

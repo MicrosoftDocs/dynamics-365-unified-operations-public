@@ -5,7 +5,7 @@ title: Create a Power BI report and dashboard
 description: This tutorial guides you though the process of creating a basic Power BI report and explains how to start to create a dashboard on PowerBI.com.
 author: clwesene
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 ---
 
@@ -36,18 +36,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Microsoft Dynamics 365 for Talent streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization.These processes include employee retention, benefits administration, training, performance reviews, and change management. It also provides a framework for human resources staff to manage areas of oversight.
 
-Dynamics 365 for Talent is closely related to Human resources in Dynamics 365 for Finance and Operations, Enterprise edition. The same functionality may appear in both products. As a result, in topics that are primarily related Human resources, the product name will be Dynamics 365 for Finance and Operations, Enterprise Edition; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent. Topics that are written for one product may apply to the same functionality in a related product.
-
 You can use Talent to complete these tasks:
 
-> + Administer organizational structures.
-> + Maintain comprehensive worker information from hire to retire.
-> + Define and administer benefit plans, enroll workers, assign dependent coverage, and designate beneficiaries.
-> + Establish and monitor absence policies.
-> + Implement and track profile-based time management and generate pay information to export to a payroll system.
-> + Manage worker competencies.
-> + Review performance and implement worker goals.
-> + Set up, deliver, and analyze training courses that include agendas, sessions, and tracks.
++ Administer organizational structures.
++ Maintain comprehensive worker information from hire to retire.
++ Define and administer benefit plans, enroll workers, assign dependent coverage, and designate beneficiaries.
++ Establish and monitor absence policies.
++ Implement and track profile-based time management and generate pay information to export to a payroll system.
++ Manage worker competencies.
++ Review performance and implement worker goals.
++ Set up, deliver, and analyze training courses that include agendas, sessions, and tracks.
+
+> [!NOTE] 
+> Dynamics 365 for Talent is closely related to Human resources in Dynamics 365 for Finance and Operations, Enterprise edition. The same functionality may appear in both products. As a result, in topics that are primarily related Human resources, the product name will be Dynamics 365 for Finance and Operations, Enterprise Edition; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent. Topics that are written for one product may apply to the same functionality in a related product.
 
 Develop a strategy for managing your human resources
 ---------------------------------------------------------
@@ -93,7 +94,7 @@ Talent can help you maintain a safe work environment that’s in compliance with
 
 You can design and administer questionnaires to gather information that’s used for a variety of purposes. The Questionnaire feature lets you design and create questionnaires. When a questionnaire is ready, you distribute it broadly or to a specific set of respondents to complete. After the respondents provide their answers, you can review and analyze the results.
 
--   [Questionnaires](/dynamics365/unified-operations/fin-and-ops/hr/questionnaires)
--   [Design a questionnaire](/dynamics365/unified-operations/fin-and-ops/hr/design-questionnaires)
--   [Distribute and complete a questionnaire](/dynamics365/unified-operations/fin-and-ops/hr/distribute-questionnaires)
--   [View and evaluate the results of a questionnaire](/dynamics365/unified-operations/fin-and-ops/hr/evaluate-questionnaire-results)
+-   [Questionnaires](questionnaires.md)
+-   [Design a questionnaire](design-questionnaires.md)
+-   [Distribute and complete a questionnaire](distribute-questionnaires.md)
+-   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)

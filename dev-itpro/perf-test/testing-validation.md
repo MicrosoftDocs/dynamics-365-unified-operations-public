@@ -5,7 +5,7 @@ title: Testing and validations
 description: This tutorial shows you how to create and run test cases.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

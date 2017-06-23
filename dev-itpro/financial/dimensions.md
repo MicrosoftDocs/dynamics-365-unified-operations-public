@@ -5,7 +5,7 @@ title: Dimensions
 description: To support different dimension patterns, a set of framework data entities has been created that can be used as data sources in other entities that involve dimensions.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

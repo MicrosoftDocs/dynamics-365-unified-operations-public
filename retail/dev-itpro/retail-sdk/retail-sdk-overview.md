@@ -5,10 +5,10 @@ title: Retail SDK overview
 description: This article provides general information about the Retail SDK. The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
@@ -46,8 +46,8 @@ The Retail software development kit (SDK) includes code, code samples, templates
 
 The Retail SDK is available in development environments, and in hotfix packages in a Retail SDK folder. For more information see:
 
--   [Access instances](/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances). If you get the SDK from a development instance, it is immediately ready for configuration and use.
--   [Install Retail hotfixes.](../install-retail-hotfix.md) If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder. Retail hotfixes are cumulative and includes all other fixes.
+- If you get the SDK from a development instance, it is immediately ready for configuration and use. For more information, see [Access instances](/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances). 
+- If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder. Retail hotfixes are cumulative and includes all other fixes. 
 
 We recommend that you put the SDK in a source control system such as Visual Studio Online.
 

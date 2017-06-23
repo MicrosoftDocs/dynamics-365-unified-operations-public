@@ -5,7 +5,7 @@ title: Demand forecasting setup
 description: This topic describes the setup tasks that you must perform to prepare for demand forecasting.  
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -5,7 +5,7 @@ title: Lean manufacturing overview
 description: This article provides an overview and description of the lean manufacturing features in Dynamics 365 for Finance and Operations.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

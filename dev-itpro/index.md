@@ -5,7 +5,7 @@ title: Overview of Microsoft Dynamics 365 for Finance and Operations for Develop
 description: This page helps IT Pros and developers get started wtih Microsoft Dynamics 365 for Finance and Operations.  
 author: margoc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform

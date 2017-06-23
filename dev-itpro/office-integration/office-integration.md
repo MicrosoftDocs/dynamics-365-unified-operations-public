@@ -5,7 +5,7 @@ title: Office integration
 description: This topic reviews Microsoft Office integration concepts and features.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

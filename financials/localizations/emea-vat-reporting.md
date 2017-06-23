@@ -5,7 +5,7 @@ title: VAT reporting for Europe
 description: This topic provides general information about setting up and generating the value-added tax (VAT) statement for some European countries.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

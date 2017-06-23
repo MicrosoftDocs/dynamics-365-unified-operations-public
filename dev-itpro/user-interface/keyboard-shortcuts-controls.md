@@ -5,7 +5,7 @@ title: Keyboard shortcuts for extensible controls
 description: This topic outlines the recommended method for implementing keyboard shortcuts for extensible controls.
 author: robinarh
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -56,7 +56,7 @@ Because of these potential issues, we recommend that you adhere to this guidance
 <h3>Keyboard shortcut links</h3>
 Here are links to the keyboard shortcuts that are documented for Dynamics 365 for Finance and Operations and supported browsers:
 <ul>
- 	<li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys">Keyboard shortcuts</a></li>
+ 	<li><a href="/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys">Keyboard shortcuts</a></li>
  	<li><a href="https://support.microsoft.com/en-us/help/13805">Microsoft Edge</a></li>
  	<li><a href="https://support.google.com/chrome/answer/157179">Google Chrome</a></li>
  	<li><a href="https://support.microsoft.com/en-us/help/15357/windows-internet-explorer-11-keyboard-shortcuts">Internet Explorer 11</a></li>

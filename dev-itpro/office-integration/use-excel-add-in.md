@@ -5,7 +5,7 @@ title: Use the Excel add-in
 description: This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Office add-in for Excel. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -95,7 +95,7 @@ You can use the designer to adjust the columns that are automatically added to t
 5. To apply your changes to the data source, click **Update**. Then click **Done** to exit the designer. 
 6. If you added a field (column), click **Refresh** to pull in an updated set of data.
 
-## [](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Troubleshooting
+## Troubleshooting
 There are a few issues that can be resolved through some easy steps.
 
 -   **The Load applets button is shown.** If the Excel add-in has a **Load applets** button after sign-in, you probably aren't signed in as the correct user. To resolve this issue, verify that the correct user name appears in the upper-right corner of the Excel add-in. If an incorrect user name appears, click it, sign out, and then sign back in.

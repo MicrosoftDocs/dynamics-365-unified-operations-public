@@ -31,7 +31,10 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) offers a variety of license types to best suit the needs of your organization. To better understand how Finance and Operations (on-premises) is licensed, please refer to the [Finance and Operations Licensing Guide](https://mbs.microsoft.com/Files/partner/All_Products/PriceOrder/Licensing_Policies/DynamicsOperationsOnPremEnterprise.pdf). When you are ready to purchase licenses for your organization, follow the steps outlined in this topic.
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) offers a variety of license types to best suit the needs of your organization. To better understand how Finance and Operations (on-premises) is licensed, please refer to the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=852079). When you are ready to purchase licenses for your organization, follow the steps outlined in this topic.
+
+> [!NOTE]
+> Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
 
 Purchasing client access licenses
 -------------------
@@ -47,10 +50,7 @@ To download a customer's Finance and Operations (on-premises) license file from 
 
 1.  Log on to the [PartnerSource Business Center](https://businesscenter.mbs.microsoft.com/).
 
-2.  Click **Specific Customer Information**.
-
-3.  Enter search information in the **Customer Lookup** form to search for the
-    customer, and then click **Search**.
+3.  Enter the customer name or account number in the **Find A Customer** field, and then click **Search**.
 
 4.  Click the company name of the customer for whom you searched in step 3. This
     opens the **Customer Summary** page.
@@ -82,8 +82,8 @@ If you have an existing Microsoft Online Services trial or paid subscription, yo
 
 Access to the Provisioning guide can be found here:
 
-- [Provisioning guide on CustomerSource](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/user-guides/D365Ops_OnPremEEProvisionGuide)
+- [Provisioning guide on CustomerSource](https://go.microsoft.com/fwlink/?linkid=852080)
 
-- [Provisioning guide on PartnerSource](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/user-guides/D365Ops_OnPremEEProvisionGuide)
+- [Provisioning guide on PartnerSource](https://go.microsoft.com/fwlink/?linkid=852081)
 
 After you have logged into LCS, a project will be automatically provisioned for you. The LCS project will allow you to deploy Finance and Operations (on-premises). For more details on getting started with your LCS project, see [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).

@@ -3,7 +3,7 @@
 
 title: Product confirmation for cluster picking
 description: This topic describes how you set up item verificatin together with cluster picking.
-author: BibiSp
+author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article

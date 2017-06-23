@@ -160,8 +160,8 @@ There are two main workstreams:
 - **Functional workstream** – After data upgrade, several configuration tasks will be required in the Finance and Operations environment. All these tasks must be documented and quantified, and a resource must be assigned to them, because they must fit together with the technical tasks within the business's downtime limit.
 
 For details, see 
+- [Validate: Tasks to complete after upgrade](app-validation-process.md)
 - [Validate: Cutover testing](upgrade-cutover-testing.md)
-- [Validate: App validation process](app-validation-process.md)
 
 ### Functional test pass
 Complete a full functional test pass of all business processes. This test pass will be an extensive retest of all business processes that involve Finance and Operations. These business processes include both old processes that were brought forward from AX 2012 and new processes that involve new features that were taken up for the first time in Finance and Operations. 

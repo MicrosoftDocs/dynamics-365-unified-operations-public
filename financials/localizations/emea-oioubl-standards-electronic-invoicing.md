@@ -5,7 +5,7 @@ title: OIOUBL standards for electronic invoicing
 description: This topic explains what level of coverage we have for electronic invoicing in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in the European region. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

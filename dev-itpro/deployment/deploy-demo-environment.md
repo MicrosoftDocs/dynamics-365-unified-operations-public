@@ -5,7 +5,7 @@ title: Deploy a Microsoft Dynamics 365 for Finance and Operations demo environme
 description: This topic explains how to deploy a single-box Microsoft Dynamics 365 for Finance and Operations demo environment on Microsoft Azure through Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

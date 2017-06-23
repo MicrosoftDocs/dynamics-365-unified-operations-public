@@ -5,7 +5,7 @@ title: Number sequence overview
 description: Number sequences in Microsoft Dynamics 365 for Finance and Operations are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. A master data record or transaction record that requires an identifier is referred to as a <em>reference</em>.
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

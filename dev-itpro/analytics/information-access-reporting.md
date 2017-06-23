@@ -5,7 +5,7 @@ title: Information access and reporting in Finance and Operations
 description: This topic explains the various reporting options available as part of the Finance and Operations platform.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

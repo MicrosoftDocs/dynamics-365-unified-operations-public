@@ -5,7 +5,7 @@ title: Finance and Operations client FAQ
 description: This article provides answers to frequently asked questions about the Microsoft Dynamics 365 for Finance and Operations client.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

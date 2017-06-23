@@ -3,7 +3,7 @@
 
 title: Movement of inventory with associated work in Warehouse management
 description: This topic describes how you set up and apply piece picking confirmation from a mobile device.
-author: BibiSp
+author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article

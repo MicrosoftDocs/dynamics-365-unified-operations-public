@@ -3,7 +3,7 @@
 
 title: Batch and license plate confirmation
 description: This topic describes how to set up and apply batch and license plate confirmation from a mobile device.
-author: BibiSp
+author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article

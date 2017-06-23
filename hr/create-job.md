@@ -5,10 +5,10 @@ title: Setting up the components of a job
 description: This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata

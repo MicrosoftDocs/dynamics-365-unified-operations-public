@@ -5,7 +5,7 @@ title: Organizational Training Power BI content
 description: This topic describes the Finance and Operations - Organizational Training Power BI content. It explains how to access the content pack, and describes the data model and entities that were used to build the content pack.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

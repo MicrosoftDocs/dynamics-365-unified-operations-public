@@ -5,7 +5,7 @@ title: Date/time data and time zones
 description: This article provides information about date and time fields, and time zones in Microsoft Dynamics 365 for Finance and Operations.
 author: pvillads
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

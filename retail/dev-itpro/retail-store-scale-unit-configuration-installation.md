@@ -6,10 +6,10 @@ description: This topic explains how you can use self-service to configure Retai
 
 author: jashanno
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-365-retail
 ms.technology: 
 # optional metadata
 

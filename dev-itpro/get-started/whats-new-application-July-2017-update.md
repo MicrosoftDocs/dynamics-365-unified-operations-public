@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: Enterprise edition, July 2017 update 
+ms.dyn365.ops.version: July 2017 update 
 ---
 
 # What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update

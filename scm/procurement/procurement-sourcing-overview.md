@@ -5,7 +5,7 @@ title: Procurement and sourcing overview
 description: This article gives an overview of the functionality that's available in the Procurement and sourcing module.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

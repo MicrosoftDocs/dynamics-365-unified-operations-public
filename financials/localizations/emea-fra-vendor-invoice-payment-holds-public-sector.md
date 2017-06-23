@@ -5,7 +5,7 @@ title: Vendor invoice payment holds in the public sector in France
 description: The standard processes related to vendor invoice payment holds in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are augmented for French entities in the public sector. This topic describes the vendor invoice payment holds functionality used by the public sector in France.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

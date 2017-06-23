@@ -5,7 +5,7 @@ title: Set up taxes, tax regions, tax codes, and tax groups
 description: This topic describes the configuration of tax data and employer tax regions. It also explains how to create tax regions, and then set up tax codes and tax groups.
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up taxes, tax regions, tax codes, and tax groups
 
-[!include[banner](../../includes/banner.md)]]
+[!include[banner](../../includes/banner.md)]
 
 
 This topic describes the configuration of tax data and employer tax regions. It also explains how to create tax regions, and then set up tax codes and tax groups.

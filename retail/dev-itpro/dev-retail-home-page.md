@@ -5,10 +5,10 @@ title: Microsoft Dynamics 365 for Retail for IT pros and developers
 description: This page lists the resources that are available for IT pros and developers who support Retail.
 author: RobinARH
 nmanager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
@@ -112,8 +112,6 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 -   [Create a Windows installer for a payment connector](create-windows-installer-payment-connector.md)
 -   [Deploy a payment connector](deploy-payment-connector.md)
 
-## Hotfixes
--   [Install Retail hotfixes](install-retail-hotfix.md)
 
 
 
