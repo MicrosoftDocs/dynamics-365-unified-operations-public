@@ -113,7 +113,7 @@ The permissions SMTP User account is `serviceacct@d365forops.onmicrosoft.com`.
 
 **Affected versions:** CTP8 and the February 2016 releases 
 
-**Issue:** When users from a Microsoft Azure Active Directory (Azure AD) tenant that uses Active Directory Federation Services (AD FS) try to sign in to Office Add-ins (that is, when the users enter their account, and then press tab or click to enter their password), a separate browser window opens. This browser window usually has a URL that starts with https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.2.1.0/App/DynamicsApp.html\#id\_token=. The user is not able to sign in. 
+**Issue:** When users from a Microsoft Azure Active Directory (Azure AD) tenant that uses Active Directory Federation Services (AD FS) try to sign in to Office Add-ins (that is, when the users enter their account, and then press tab or click to enter their password), a separate browser window opens. This browser window usually has a URL that starts with `https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.2.1.0/App/DynamicsApp.html\#id\_token=`. The user is not able to sign in. 
 
 **Explanation:** The issue that the Microsoft Office add-ins (both Microsoft Excel and Microsoft Word) have with ADFS is that a redirect to the ADFS site for the tenant occurs during sign-in. However, that site is an unknown (and therefore disallowed) application domain (AppDomain). 
 
