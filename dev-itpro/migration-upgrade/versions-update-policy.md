@@ -5,7 +5,7 @@ title: Online service and on-premises software lifecycle policy
 description: This topic outlines the lifecycle and support policies for both the Dynamics 365 for Finance and Operations, Enterprise edition online service and for Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) software deployments.
 author: ryanCcarlson 
 manager: AnnBe
-ms.date: 06/16/2017
+ems.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -14,8 +14,8 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
+r# ROBOTS: 
+haudience: Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
 ms.search.scope: Operations, Platform
@@ -24,8 +24,8 @@ ms.custom: 69914
 ms.assetid: cdc3fbe4-fa45-49fa-be97-caef16b58090
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rcarlson
-ms.search.validFrom: 2016-08-30
+ oms.author: rcarlson
+Tms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 
 ---
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 2
 [!include[banner](../includes/banner.md)]
 
 This topic outlines the lifecycle and support policies for both the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition online service and for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) software deployments.
-
+f
 > [!NOTE]
 > Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
 
@@ -45,13 +45,10 @@ The Modern Lifecycle Policy covers products and services that are serviced and s
 The Finance and Operations online service and the Finance and Operations (on-premises) software are covered by the Modern Lifecycle Policy. Licensed customers must stay current with updates to the Finance and Operations online service or the Finance and Operations (on-premises) software in accordance with the following servicing and system requirements:
 
 - Application versions are supported for three years from the initial date of a major release, as specified in Table 1 later in this topic.
-- Platform versions are supported as follows and as further specified in Table 3:
+- Platform versions are supported for one year as specified in Table 3 later in this topic. Platform versions maintain backward compatibility. See the support matrix table below for more detail. Critical fixes and non-critical updates are handled in the following way:
 
-    - **Critical fixes** – One year from the date when Microsoft releases the cloud and on-premises platform version.
+    - **Critical fixes** – Microsoft may provide the critical fix as a hotfix to the current customer Finance and Operations platform version or may provide the hotfix in the latest Finance and Operations platform version at its discretion.
     - **Non-critical updates** – Customers must update to the most current Finance and Operations platform version to deploy non-critical updates.
-
-> [!NOTE]
-> Platform versions maintain backward compatibility. See the support matrix table below for more detail.
 
 ## Online service update policies
 
