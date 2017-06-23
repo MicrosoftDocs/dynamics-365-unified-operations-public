@@ -842,6 +842,8 @@
 #### Manage raw materials
 ##### [Cross-docking from production orders to outbound docks](/dynamics365/unified-operations/supply-chain/production-control/cross-docking-opportunities?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Register material consumption using a mobile device](/dynamics365/unified-operations/supply-chain/production-control/register-material-consumption-hand-held-device?toc=/dynamics365/unified-operations/talent/toc.json)
+#### Manage finished goods
+##### [Set the production output location for finished goods](/dynamics365/unified-operations/supply-chain/production-control/production-output-location?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Lean manufacturing 
 #### [Lean manufacturing overview](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-overview?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Activity-based subcontracting](/dynamics365/unified-operations/supply-chain/production-control/activity-based-subcontracting?toc=/dynamics365/unified-operations/talent/toc.json)
