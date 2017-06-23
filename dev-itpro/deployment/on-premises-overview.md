@@ -40,10 +40,10 @@ The on-premises deployment option uses Finance and Operations cloud components r
 
 On-premises deployment defines two types of Service Fabric standalone clusters: clusters for production environments and clusters for sandbox environments. The following roles or node types are deployed into both types of clusters: 
 
-● Application Object Servers (AOS) – Provides the ability to run the Finance and Operations application functionality in client, batch, and import/export scenarios. 
-● Management Reporter (MR) – Provides financial reporting functionality. 
-● SQL Server Reporting Services (SSRS) – Provides document reporting functionality. 
-● Environment Orchestrator – Enables on-premises environment management from LCS. 
+- Application Object Servers (AOS) – Provides the ability to run the Finance and Operations application functionality in client, batch, and import/export scenarios. 
+- Management Reporter (MR) – Provides financial reporting functionality. 
+- SQL Server Reporting Services (SSRS) – Provides document reporting functionality. 
+- Environment Orchestrator – Enables on-premises environment management from LCS. 
 Note: Retail Server is not supported in on-premises deployments at this time. 
 
 Figure 1 shows a logical diagram of the node types deployed in a Service Fabric standalone cluster. 
