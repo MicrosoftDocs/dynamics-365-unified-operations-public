@@ -47,11 +47,11 @@ To create a new document type, follow these steps.
 5. In the **Class** field, specify a class to define the behavior for the document type:
 
     - **Attach file** – The user is prompted for a file.
-    - **Attach URL** – The user can enter a URL in the **Notes** field, such as **http://www.microsoft.com**. The **Open** button on the **Attachments** page will then open the URL on a browser tab.
+    - **Attach URL** – The user can enter a URL in the **Notes** field, such as `http://www.microsoft.com`. The **Open** button on the **Attachments** page will open the URL on a browser tab.
     - **Simple note** – The user can add a simple note in the **Notes** field.
 
 6. If you specified **Attach file** in the **Class** field, in the **Location** field, specify the storage mechanism to use.
-7. If you specified **SharePoint** in the **Location** field, specify the Microsoft SharePoint address in the **SharePoint Address** field by clicking the **Edit** button (pencil symbol) and using the **Folder selection** dialog box.
+7. If you specified **SharePoint** in the **Location** field, specify the Microsoft SharePoint address in the **SharePoint Address** field. To do this, click the **Edit** button (pencil symbol) and use the **Folder selection** dialog box.
 
 ## Configure SharePoint storage
 
@@ -62,9 +62,9 @@ To use SharePoint storage, set the **Location** field for a document type to **S
 To configure SharePoint storage, follow these steps.
 
 1. Go to the **Document management parameters** page.
-2. On the **SharePoint** tab, in the **Default SharePoint server** field, review the host name that was automatically detected for the SharePoint site, such as **contosoax7.sharepoint.com**. Typically, the SharePoint host name is in the form tenantname.sharepoint.com, and accounts on that tenant are in the form user1@tenantname.onmicrosoft.com.
+2. On the **SharePoint** tab, in the **Default SharePoint server** field, review the host name that was automatically detected for the SharePoint site, such as contosoax7.sharepoint.com. Typically, the SharePoint host name is in the form tenantname.sharepoint.com, and accounts on that tenant are in the form `user1@tenantname.onmicrosoft.com`.
 
-    Typically, if no default SharePoint server is specified, either there is no SharePoint site for the tenant, or a valid Microsoft Office 365 license isn't associated with the current user (the admin).
+Typically, if no default SharePoint server is specified, either there is no SharePoint site for the tenant, or a valid Microsoft Office 365 license isn't associated with the current user (the admin).
 
 4. Optional: Click **Test SharePoint connection** to test the specified SharePoint host name.
 5. Optional: Click **Open SharePoint** to open the specified SharePoint host name in a browser.
@@ -73,7 +73,7 @@ To configure SharePoint storage, follow these steps.
 SharePoint communication works for the current user only if the following conditions are met:
 
 - An Office 365 license is associated with the user's account.
-- The user is a normal user on the tenant, not an external user (for example, a user from another tenant).
+- The user is a typical user on the tenant, not an external user (for example, a user from another tenant).
 - There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).
 
 ## Configure file types
@@ -87,16 +87,16 @@ To specify file types, follow these steps.
 3. Remove any file types that users should not be able to attach to records, and add any file types that users should be able to attach to records.
 
 ## Configure document preview
-The attachments preview uses the Web app Open Platform Interface (WOPI) that is provided by Microsoft Office Online Server. On the **Document management parameters** page, on the **General** tab, in the **Office Web Apps Server** field, specify the Office Online Server instance to use for attachment previews. The default value is **https://onenote.officeapps.live.com**. This value points at the cloud-based WOPI server.
+The attachments preview uses the Web app Open Platform Interface (WOPI) that is provided by Microsoft Office Online Server. On the **Document management parameters** page, on the **General** tab, in the **Office Web Apps Server** field, specify the Office Online Server instance to use for attachment previews. The default value is https://onenote.officeapps.live.com. This value points to the cloud-based WOPI server.
 
-### If you're using an on-premises environment
+### For an on-premises environment
 When an environment is on-premises, the default cloud-based WOPI server can't read the attachment file to provide a preview. If previews are required, you must [install an on-premises Office Online Server instance](https://technet.microsoft.com/en-us/library/jj219455.aspx) and configure it inside the environment. Set the **Office Web Apps Server** field to the host name of the installed Office Online Server instance, and then click **Save**.
 
-If previews aren't required, set the **Office Web Apps Server** field to **https://localhost**. The preview will then show the message “No preview available” instead of an error message.
+If previews aren't required, set the **Office Web Apps Server** field to `https://localhost`. The preview will then show the message “No preview available” instead of an error message.
 
 ## Other configuration
 
-There are some other configuration options that are rarely used:
+Here are some other configuration options to consider, although these options are rarely used:
 
 - On the **Document management parameters** page, on the **General** tab, you can use the **Use Document Tables** option to enable the **Active document tables** allow list. If you set this option to **Yes**, you disable attachments on all other tables. Therefore, turn on this option only when it's required.
 - On the **Document management parameters** page, on the **General** tab, you can use the **Maximum file size in megabytes** field to set the maximum file size for attachments. Note that the ability of users to provide files is also constrained by the file size limit that is set for the environment in configuration files. These configuration files can't be changed via a client page.
