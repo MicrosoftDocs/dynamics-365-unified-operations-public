@@ -42,8 +42,8 @@ A bookkeeper posts an invoice from a vendor for 120 USD. During the payment pr
 | Invoice0001     | Purch acc   | 120       |            | Original Invoice (incorrect) |
 | Invoice0001     | Vendor acc  |           | 120        | Original Invoice (incorrect) |
 |                 |             |           |            |                              |
-| Storno0001      | Purch acc   | \-120     |            | Storno                       |
-| Storno0001      | Vendor acc  |           | \-120      | Storno                       |
+| Storno0001      | Purch acc   | -120     |            | Storno                       |
+| Storno0001      | Vendor acc  |           | -120      | Storno                       |
 |                 |             |           |            |                              |
 | Invoice0002     | Purch acc   | 102       |            | Correct Invoice              |
 | Invoice0002     | Vendor acc  |           | 102        | Correct Invoice              |
@@ -59,6 +59,7 @@ In this example, the balance statement shows the following.
 There are two ways in which to correct posting entries – reverse and storno. If you use a reverse entry, a copy of the original general entry is created with reverse debit and credit accounts, and the amounts remain with the same sign. If you use Storno, the system creates a copy of the original general entry, but the amounts are recorded with a negative sign. The following table shows the general entry for Storno.
 
 | **Document ID** | **Account** | **Debit** | **Credit** | **Comment**                  |
+|-----------------|-------------|-----------|------------|------------------------------|
 | Invoice0001     | Purch acc   | 120       |            | Original Invoice (incorrect) |
 | Invoice0001     | Vendor acc  |           | 120        | Original Invoice (incorrect) |
 |                 |             |           |            |                              |
@@ -81,6 +82,7 @@ Note that the balances are equal for the reverse and the storno. There is a dif
 *Partial Storno* is an accounting practice of using negative debit or credit amounts to reverse part of the original journal account entries. Some countries/regions allow the use the partial Storno. For example, a bookkeeper posts an invoice from a vendor for 120 USD. During the payment process, it's discovered that the bookkeeper mistakenly entered an incorrect number sequence. The original invoice for 102 USD had a mistake in the number sequence. Using partial Storno, the bookkeeper should create Storno for 18 USD. The following table shows the general entry for partial Storno.
 
 | **Document ID** | **Account** | **Debit** | **Credit** | **Comment**                  |
+|-----------------|-------------|-----------|------------|------------------------------|
 | Invoice0001     | Purch acc   | 120       |            | Original Invoice (incorrect) |
 | Invoice0001     | Vendor acc  |           | 120        | Original Invoice (incorrect) |
 |                 |             |           |            |                              |
