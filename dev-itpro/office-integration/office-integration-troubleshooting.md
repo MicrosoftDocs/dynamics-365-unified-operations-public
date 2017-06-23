@@ -101,7 +101,7 @@ The Excel Add-in runs inside an Internet Explorer (IE) window. The Excel Add-in�
 
 SMTP setup example: Below you see the **Email parameters** page where you need to provide the outgoing mail server, port, user name, password, and SSL requirements. 
 
-[![smtp](./media/smtp.jpg)](./media/smtp.png)   
+[![smtp](./media/smtp.png)](./media/smtp.png)   
 
 Permissions SMTP User account is serviceacct@d365forops.onmicrosoft.com 
 
