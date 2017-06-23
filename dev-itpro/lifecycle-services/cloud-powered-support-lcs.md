@@ -5,7 +5,7 @@ title: Manage Finance and Operations Support experiences
 description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services (LCS) to manage support incidents. 
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,15 +34,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Remove all mentions of VMs and then send for review
-
 To use the Support tool, you must have previously created a project in Lifecycle Services and installed and ran the System diagnostics in your environment. For more information, see [System diagnostics (Lifecycle Services, LCS)](/ax-2012/system-diagnostics-lcs.md).
 
 ## Open a new incident
 1.  [Go to Lifecycle Services](https://lcs.dynamics.com).
 2.  Open a project, and then click the **Support** tile.
 3.  On the **Incidents list** application bar, click **Create**.
-4.  Search for an existing solution by keyword or by object path in the Microsoft Dynamics AX Application Object Tree (AOT).
+4.  Search for an existing solution by keyword or by object path in the Application Object Tree (AOT).
     
     | **Note**                                                  |
     |-----------------------------------------------------------|
