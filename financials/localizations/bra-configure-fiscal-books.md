@@ -115,8 +115,8 @@ Set up requirements for SPED EFD - Contributions
 5.	Select the type of legal entity.
 6.	In the **Assessment regimen** field, select the assessment schema that is used for SPED EFD - Contributions from the following assessments: 
  - **Non cumulative – Calculate** - based on billing or debits and purchases and deductions or credits
-  - **Cumulative – Calculate** - based on billings that don’t have any deductions or credits
-  - **Both** – Calculate assessments based on both the Non cumulative and Cumulative regimens
+ - **Cumulative – Calculate** - based on billings that don’t have any deductions or credits
+ - **Both** – Calculate assessments based on both the Non cumulative and Cumulative regimens
 7.	In the **Booking and assessment criteria** field, select the criteria to use to book the tax credit. 
 > [!NOTE]
 > For Dynamics 365 for Operations, only the Detailed option is supported.
