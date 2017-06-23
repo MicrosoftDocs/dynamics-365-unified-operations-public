@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up technical support for Finance and Operations
-description: This article provides information about the support experience. It describes the setup that is required and also explains how to create and work with support issues.
+description: This article provides information about the support experience for cloud and on-premises deployments. It describes the setup that is required and also explains how to create and work with support issues.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -37,10 +37,10 @@ ms.dyn365.ops.version: AX 7.0.0
  Prerequisites
 --------------
 
-Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (AAD) account. This account is created during the setup of the Microsoft Dynamics 365 for Finance and Operations subscription.
+Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (AAD) account. This account is created during the setup of the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition subscription.
 
 ## Create a Visual Studio Team Services project
-The **Support** tile in a Lifecycle Services project uses Microsoft Visual Studio Team Services (VSTS) to store issues that are submitted through the Dynamics AX client and issues that are manually created from the **Support** tile. This functionality requires that a VSTS project be configured in the Lifecycle Services (LCS) project that you want to use for support. All users who need to use the **Support** tile to submit an issue must have access to the VSTS project, and must authorize LCS to access VSTS on his or her behalf. Most users don't have access to LCS or VSTS. Therefore, in the VSTS project, you should create a special system account that can be used to submit issues.
+The **Support** tile in a Lifecycle Services project uses Microsoft Visual Studio Team Services (VSTS) to store issues that are submitted through the client and issues that are manually created from the **Support** tile in Lifecycle Services (LCS). This functionality requires that a VSTS project be configured in the LCS project that you want to use for support. All users who need to use the **Support** tile to submit an issue must have access to the VSTS project, and must authorize LCS to access VSTS on his or her behalf. Most users don't have access to LCS or VSTS. Therefore, in the VSTS project, you should create a special system account that can be used to submit issues.
 
 ### Create a new VSTS project
 
@@ -102,6 +102,8 @@ The **Support** tile in a Lifecycle Services project uses Microsoft Visual Stud
 ## Create an issue in the Finance and Operations client (Microsoft Dynamics AX 7.0, Microsoft Dynamics AX Platform update 1 or update 2, or Microsoft Finance and Operations platform update 3)
 If you are on Microsoft Finance and Operations platform update 4, or if you have consumed KB 4010473 for Platform update 3, skip to the next section.
 
+**Important:** If you have an on-premises deployment of Finance and Operations, searching for existing issues and submitting a support incident from the Dynamics 365 for Finance and Operations on-premises client to your Visual Studio Team Services project is disabled.
+
 1.  In the client, click the **Help** menu, or question mark icon, in the upper right corner. [![AX7-help-Contact\_Your\_Support](./media/ax7-help-contact_your_support1.png)](./media/ax7-help-contact_your_support1.png)
 2.  Click **Contact your support team**.
 3.  Enter information in the **Issue** and **Description** fields.
@@ -118,10 +120,13 @@ You should receive a confirmation message that states that the issue has been su
 ## Create an issue in the Finance and Operations client (Microsoft Finance and Operations platform update 4 and platform update 3 KB 4010473)
 If you have not taken platform update 4 for Microsoft Finance and Operations, or if you have not consumed KB 4010473 for platform update 3, complete the procedure in the previous section. The Support experience has been updated to show updates that are published by Microsoft. In the client, on the top bar, click **?**, and then click **Support**. 
 
+**Important:** If you have an on-premises deployment of Finance and Operations, searching for existing issues and submitting a support incident from the Dynamics 365 for Finance and Operations on-premises client to your Visual Studio Team Services project is disabled.
+
 [![wiki1](./media/wiki1-1024x518.png)](./media/wiki1.png) 
 
 **Note:** If you haven’t already connected to Lifecycle Services (LCS), you will see a dialog to connect. Click the link to connect before proceeding. 
     [![wiki2](./media/wiki2.png)](./media/wiki2.png)
+
 
 ### Search for a fix
 
@@ -151,6 +156,8 @@ In the LCS **Support** tile, issues are stored as work items in the VSTS projec
 3.  The VSTS editor opens. Edit the issue, and then save your changes. The changes will be reflected in **Support** tile.
 
 ### Troubleshoot issues
+**Note:** The information in this section is not applicable to on-premises deployments.
+
 Issues that are created through the client contain metadata about the environment. When those issues are selected in the **Issue** grid, the **Troubleshoot** button becomes available. When you click **Troubleshoot**, the **Event monitoring** page opens. This page lets you access events and logs that are related to the issue. The page shows activities, error messages, and other information that has occurred within the last two hours since an issue was reported. 
 [![LCS-CPS-list-troubleshoot-1024x331](./media/lcs-cps-list-troubleshoot-1024x3311-1024x331.png)](./media/lcs-cps-list-troubleshoot-1024x3311.png) 
 [![LCS-Monitoring-1024x419](./media/lcs-monitoring-1024x4191-1024x419.png)](./media/lcs-monitoring-1024x4191.png)
@@ -166,9 +173,22 @@ You can submit issues to Microsoft support. When you submit an issue to Microsof
 5.  Share diagnostic data with the Microsoft support team. By providing version information, your issues can be resolved more quickly.
 6.  Describe your issue, provide your contact information, and then click **Submit**.
 
-## Support settings in Dynamics AX
-When you deploy Dynamics AX from Microsoft Dynamics Lifecycle Services (LCS), no configuration is required, because Support tool automatically saves any issues to the same LCS project that Dynamics AX was deployed from. To verify the LCS project that Support uses, go to **System administration** > **Setup** > **System parameters**, and then click **Help** > **Support Contact**. 
+## Support settings 
+**Note:** The information in this section is not applicable to on-premises deployments. 
+
+When you deploy Finance and Operations from Microsoft Dynamics Lifecycle Services (LCS), no configuration is required, because Support tool automatically saves any issues to the same LCS project that Finance and Operations was deployed from. To verify the LCS project that Support uses, go to **System administration** > **Setup** > **System parameters**, and then click **Help** > **Support Contact**. 
 [![Configure Contact support](./media/configure-contact-support.jpg)](./media/configure-contact-support.jpg)
+
+## Support plans (on-premises only)
+The following customer and partner support plans are available for on-premises deployments.
+- **Customer:** 
+    - Software assurance
+    - Advantage/Advantage Plus
+    - Premier
+- **Partner:**
+    - Partner Advantage/Partner Advantage Plus
+    - Advanced Support for Partners
+    - Premier
 
 ## Prevent users from creating issues from the client
 By default, the System User role has the privilege, *SysLCSCPSIssueEntry* assigned. This privilege controls access to the **Contact your support team** menu item on the Help menu. If you want to prevent users from being able to create and submit issues from the client, remove this privilege from the System User role.
