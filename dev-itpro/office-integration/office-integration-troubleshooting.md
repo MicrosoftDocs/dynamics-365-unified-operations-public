@@ -54,7 +54,7 @@ Read more about that in the troubleshooting section below.
 
 ### How can Office be forced into updating?
 
-If your Office build does not update then it might be because you are on the deferred track ([a "Microsoft Office 365 ProPlus" update channel option](https://technet.microsoft.com/en-us/library/mt455210.aspx)), in which case you could [use the "Office Deployment Tool" to move to the Current channel ](https://technet.microsoft.com/en-us/library/jj219422.aspx?f=255&MSPPError=-2147217396)or sign up for the [Office Insider program](https://products.office.com/en-us/office-insider)to ensure you have the latest updates. The easiest path is using the Office Deployment Tool to switch to the Current channel which will cause the latest updates to install immediately.
+If your Office build does not update then it might be because you are on the deferred track ([a "Microsoft Office 365 ProPlus" update channel option](https://technet.microsoft.com/en-us/library/mt455210.aspx)), in which case you could [use the "Office Deployment Tool" to move to the Current channel ](https://technet.microsoft.com/en-us/library/jj219422.aspx?f=255&MSPPError=-2147217396)or sign up for the [Office Insider program](https://products.office.com/en-us/office-insider) to ensure you have the latest updates. The easiest path is using the Office Deployment Tool to switch to the Current channel which will cause the latest updates to install immediately.
 
 ### Why can't you tell me what version of Office/Excel a particular issue is fixed in?
 
