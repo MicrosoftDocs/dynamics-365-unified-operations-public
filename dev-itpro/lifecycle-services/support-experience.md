@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up technical support for Finance and Operations
-description: This article provides information about the support experience for cloud and on-premises deployments. It describes the setup that is required and also explains how to create and work with support issues.
+description: This topic provides information about the support experience for cloud and on-premises deployments. It describes the setup that is required and explains how to create and work with support issues.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -40,7 +40,7 @@ ms.dyn365.ops.version: AX 7.0.0
 Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (AAD) account. This account is created during the setup of the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition subscription.
 
 ## Create a Visual Studio Team Services project
-The **Support** tile in a Lifecycle Services project uses Microsoft Visual Studio Team Services (VSTS) to store issues that are submitted through the client and issues that are manually created from the **Support** tile in Lifecycle Services (LCS). This functionality requires that a VSTS project be configured in the LCS project that you want to use for support. All users who need to use the **Support** tile to submit an issue must have access to the VSTS project, and must authorize LCS to access VSTS on his or her behalf. Most users don't have access to LCS or VSTS. Therefore, in the VSTS project, you should create a special system account that can be used to submit issues.
+The **Support** tile in a Lifecycle Services project uses Microsoft Visual Studio Team Services (VSTS) to store issues that are submitted through the client and issues that are manually created from the **Support** tile in Lifecycle Services (LCS). This functionality requires that a VSTS project be configured in the LCS project that you want to use for support. All users who need to use the **Support** tile to submit an issue must have access to the VSTS project, and must authorize LCS to access VSTS on their own behalf. Most users don't have access to LCS or VSTS. Therefore, in the VSTS project, you should create a special system account that can be used to submit issues.
 
 ### Create a new VSTS project
 
@@ -54,7 +54,7 @@ The **Support** tile in a Lifecycle Services project uses Microsoft Visual Stud
 ### Add users to the VSTS project
 
 1.  In the upper-left corner, click **Team Services**.
-2.  On the **Users **tab, click **Add**, and invite users who will use the Support experience to the VSTS account. For each user that you invite, select either **Basic** or **Stakeholder**.
+2.  On the **Users** tab, click **Add**, and invite users who will use the Support experience to the VSTS account. For each user that you invite, select either **Basic** or **Stakeholder**.
 3.  In the upper-left corner, click **Team Services**.
 4.  Click **Browse**, and browse to the project that you created in the previous procedure.
 5.  In the **Members** section of the project home page, click **Add**, and add the users that you invited in step 2.
@@ -78,7 +78,7 @@ The **Support** tile in a Lifecycle Services project uses Microsoft Visual Stud
 6.  Select an expiry of one year.
 7.  Click **Selected scopes**, and the select **Work items (read and write)**.
 8.  Click **Create token**.
-9.  Copy the token and paste it in a safe location, because it won't be accessible after you move away from the page.
+9.  Copy the token and paste it in a safe location because it won't be accessible after you move away from the page.
 
 ## Configure LCS
 1.  Sign in to LCS by using an account that has the **Owner** role for the LCS project that Finance and Operations is deployed in.
@@ -99,15 +99,15 @@ The **Support** tile in a Lifecycle Services project uses Microsoft Visual Stud
 12. Sign in to Visual Studio Online.
 13. Click **Accept**.
 
-## Create an issue in the Finance and Operations client (Microsoft Dynamics AX 7.0, Microsoft Dynamics AX Platform update 1 or update 2, or Microsoft Finance and Operations platform update 3)
-If you are on Microsoft Finance and Operations platform update 4, or if you have consumed KB 4010473 for Platform update 3, skip to the next section.
+## Create an issue in the Finance and Operations client (Microsoft Dynamics AX 7.0, Dynamics AX platform update 1 or update 2, or Finance and Operations platform update 3)
+If you are on Microsoft Finance and Operations platform update 4, or if you have consumed KB 4010473 for platform update 3, skip to the next section.
 
-**Important:** If you have an on-premises deployment of Finance and Operations, searching for existing issues and submitting a support incident from the Dynamics 365 for Finance and Operations on-premises client to your Visual Studio Team Services project is disabled.
+**Important:** If you have an on-premises deployment of Finance and Operations, the option to search for existing issues and submit a support incident from the Dynamics 365 for Finance and Operations on-premises client to your Visual Studio Team Services project is not available.
 
-1.  In the client, click the **Help** menu, or question mark icon, in the upper right corner. [![AX7-help-Contact\_Your\_Support](./media/ax7-help-contact_your_support1.png)](./media/ax7-help-contact_your_support1.png)
+1.  In the client, click the **Help** menu, or question mark icon, in the upper-right corner. [![AX7-help-Contact\_Your\_Support](./media/ax7-help-contact_your_support1.png)](./media/ax7-help-contact_your_support1.png)
 2.  Click **Contact your support team**.
 3.  Enter information in the **Issue** and **Description** fields.
-4.  Optional: Enter the time when the issue occurred (Platform Update 3 feature).
+4.  Optional: Enter the time when the issue occurred (Platform update 3 feature).
 5.  Optional: Set the **Work stoppage** fields to **Yes**.
 6.  Optional: Upload a task recording.
 7.  Set the option to share your email address with LCS to **Yes**. The **Submit** button won't be available unless you share your email address.
@@ -117,43 +117,48 @@ If you are on Microsoft Finance and Operations platform update 4, or if you have
 
 You should receive a confirmation message that states that the issue has been submitted to LCS. Users who are in the **Operations users** role are notified that a new issue has been submitted to LCS. To view the issue that was submitted, click the **Support** tile in the associated LCS project.
 
-## Create an issue in the Finance and Operations client (Microsoft Finance and Operations platform update 4 and platform update 3 KB 4010473)
-If you have not taken platform update 4 for Microsoft Finance and Operations, or if you have not consumed KB 4010473 for platform update 3, complete the procedure in the previous section. The Support experience has been updated to show updates that are published by Microsoft. In the client, on the top bar, click **?**, and then click **Support**. 
+## Create an issue in the Finance and Operations client (Finance and Operations platform update 4 and platform update 3 KB 4010473)
+If you have not taken platform update 4 for Finance and Operations, or if you have not consumed KB 4010473 for platform update 3, complete the procedure in the previous section. The Support experience has been updated to show updates that are published by Microsoft. In the client, on the top bar, click **?**, and then click **Support**. 
 
-**Important:** If you have an on-premises deployment of Finance and Operations, searching for existing issues and submitting a support incident from the Dynamics 365 for Finance and Operations on-premises client to your Visual Studio Team Services project is disabled.
+**Important:** If you have an on-premises deployment of Finance and Operations, the option to search for existing issues and submit a support incident from the Dynamics 365 for Finance and Operations on-premises client to your Visual Studio Team Services project is not available.
 
 [![wiki1](./media/wiki1-1024x518.png)](./media/wiki1.png) 
 
-**Note:** If you haven’t already connected to Lifecycle Services (LCS), you will see a dialog to connect. Click the link to connect before proceeding. 
+**Note:** If you haven’t already connected to Lifecycle Services (LCS), a dialog box will display where you can connect. Click the link to connect before proceeding. 
     [![wiki2](./media/wiki2.png)](./media/wiki2.png)
 
 
 ### Search for a fix
 
 After you connect to LCS, you can search for existing Microsoft published updates and fixes. Enter your issue in the **Search** box and press **Enter**. 
-**Note:** If you don't want the functionality to search for existing fixes enabled for all users, you can remove the **SearchExistingFixes** duty from the System user role and add it to only those roles which you want to have this functionality. Search results are based on the Microsoft Issue Search data that is relevant to your environment. Fixes you have already installed will not be included in your search results. To view a specific result, click on the link to view the details. 
+
+**Note:** If you don't want the functionality to search for existing fixes enabled for all users, you can remove the **SearchExistingFixes** duty from the System user role and add it to only those roles which you want to have this functionality. Search results are based on the Microsoft Issue Search data that is relevant to your environment. Fixes that you have already installed will not be included in your search results. To view a specific result, click the link to view the details. 
+
 Based on the duties assigned to you, you will see either the **Download view** or the **Request view**. 
-- **Download View:** By default, this view is only available to system administrators. From this view, you can directly download the hotfix. **Note:** The duty **DownloadHotfix** controls the ability to directly download fixes from LCS rather than requesting them. Only System Administrators will have access to it by default. If you want to assign this duty to users other than System Administrators, you can do so by adding the duty to the selected roles. 
-- **Request View:** By default, this view is available to all users who are not system administrators. From this view, you can make a request to download the hotfix. After you submit your request to download the hotfix, a work item will be created in the VSTS project that is associated to your LCS project. The customer IT admin can view all requested hotfixes by clicking the **Support** tile in LCS and then clicking on the **Hotfix requests** tab.
+- **Download view:** By default, this view is only available to system administrators. From this view, you can directly download the hotfix. 
+**Note:** The duty **DownloadHotfix** controls the ability to directly download fixes from LCS rather than requesting them. Only system administrators will have access to it by default. If you want to assign this duty to users other than system administrators, you can do so by adding the duty to the selected roles. 
+- **Request view:** By default, this view is available to all users who are not system administrators. From this view, you can make a request to download the hotfix. After you submit your request to download the hotfix, a work item will be created in the VSTS project that is associated to your LCS project. The customer IT admin can view all requested hotfixes by clicking the **Support** tile in LCS and then clicking the **Hotfix requests** tab.
 
-#### Create and submit a new issue
+### Create and submit a new issue
 
-If you don’t see a fix in the search results, you can create a new issue by clicking **Create**. This is same functionality that is available for previous releases and is documented in earlier procedures.
+If you don’t see a fix in the search results, you can create a new issue by clicking **Create**. This is the same functionality that is available for previous releases and is documented in earlier procedures.
 
 ## Work with issues in LCS
 ### View issues
-In the LCS **Support** tile, issues are stored as work items in the VSTS project that is associated with the LCS project. Specifically, issues are stored as work items of the **Issue** or **Impediment** type, depending on the type of VSTS project, in the **AxAndLcsGeneratedIssues** area. Every work item of one of those types in that area will be included in the list of issues in the **Support** tile. If an issue is modified in VSTS, the changes will be reflected in Support issues. Issues can be assigned to any user in the VSTS project. Users don't have to have access to LCS to work with issues in VSTS.
+In the LCS **Support** tile, issues are stored as work items in the VSTS project that is associated with the LCS project. Specifically, issues are stored as work items of the **Issue** or **Impediment** type, depending on the type of VSTS project, in the **AxAndLcsGeneratedIssues** area. Every work item of one of those types in that area will be included in the list of issues in the **Support** tile. If an issue is modified in VSTS, the changes will be reflected in Support issues. Issues can be assigned to any user in the VSTS project. Users don't need to have access to LCS to work with issues in VSTS.
 
 1.  Go to [lcs.dynamics.com,](https://lcs.dynamics.com/en/) and sign in.
-2.  Open the LCS project that is associated with the environment you want to view issues for.
+2.  Open the LCS project that is associated with the environment that you want to view issues for.
 3.  Click the **Support** tile. A list of the issues that have been created appears.
 [![LCS-CPS-list](./media/lcs-cps-list-1024x243.png)](./media/lcs-cps-list.png)
 
 ### Edit issues
 1.  In the **Issues** grid, click the title of an issue.
 2.  If necessary, sign in to Visual Studio Team Services by using an account that has access to the VSTS project that you set up in the first section of this topic, **Create a Visual Studio Team Services project**. 
+
 **Note:** There is an issue in VSTS, where the link to edit work items doesn't work correctly if sign-in is required. If you see the **Assigned to me** query after you sign in to VSTS, go back to LCS, and click the title of the issue in the issue grid again.
-3.  The VSTS editor opens. Edit the issue, and then save your changes. The changes will be reflected in **Support** tile.
+
+3.  The VSTS editor opens. Edit the issue, and then save your changes. The changes will be reflected in the **Support** tile.
 
 ### Troubleshoot issues
 **Note:** The information in this section is not applicable to on-premises deployments.
@@ -164,7 +169,9 @@ Issues that are created through the client contain metadata about the environmen
 
 ### Submit an issue to Microsoft
 
-You can submit issues to Microsoft support. When you submit an issue to Microsoft, the information and attachments in the issue can be included in the Microsoft support incident. **Note:** LCS users must have a valid Microsoft support plan to submit issues to Microsoft. If you have trouble submitting issues to Microsoft, work with your administrator to make sure that your LCS credentials are added to or associated with your organization's support plan with Microsoft Partner Source Business Center.
+You can submit issues to Microsoft support. When you submit an issue to Microsoft, the information and attachments in the issue can be included in the Microsoft support incident. 
+
+**Note:** LCS users must have a valid Microsoft support plan to submit issues to Microsoft. If you have trouble submitting issues to Microsoft, work with your administrator to make sure that your LCS credentials are added to or associated with your organization's support plan with Microsoft Partner Source Business Center.
 
 1.  In the **Issue** grid, select the issue to submit to Microsoft, and then click **Submit to Microsoft**.
 2.  If your account is associated with multiple support organizations, select the organization to use to create the Microsoft support incident.
@@ -176,7 +183,7 @@ You can submit issues to Microsoft support. When you submit an issue to Microsof
 ## Support settings 
 **Note:** The information in this section is not applicable to on-premises deployments. 
 
-When you deploy Finance and Operations from Microsoft Dynamics Lifecycle Services (LCS), no configuration is required, because Support tool automatically saves any issues to the same LCS project that Finance and Operations was deployed from. To verify the LCS project that Support uses, go to **System administration** > **Setup** > **System parameters**, and then click **Help** > **Support Contact**. 
+When you deploy Finance and Operations from Lifecycle Services, no configuration is required, because the Support tool automatically saves any issues to the same LCS project that Finance and Operations was deployed from. To verify the LCS project that Support uses, go to **System administration** > **Setup** > **System parameters**, and then click **Help** > **Support Contact**. 
 [![Configure Contact support](./media/configure-contact-support.jpg)](./media/configure-contact-support.jpg)
 
 ## Support plans (on-premises only)
@@ -191,7 +198,4 @@ The following customer and partner support plans are available for on-premises d
     - Premier
 
 ## Prevent users from creating issues from the client
-By default, the System User role has the privilege, *SysLCSCPSIssueEntry* assigned. This privilege controls access to the **Contact your support team** menu item on the Help menu. If you want to prevent users from being able to create and submit issues from the client, remove this privilege from the System User role.
-
-
-
+By default, the System user role has the privilege, *SysLCSCPSIssueEntry* assigned. This privilege controls access to the **Contact your support team** menu item on the Help menu. If you want to prevent users from being able to create and submit issues from the client, remove this privilege from the System user role.
