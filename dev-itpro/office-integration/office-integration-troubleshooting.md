@@ -133,11 +133,11 @@ This workaround requires user knowledge and extra steps. After users have been e
 See also
 --------
 
-[Office Integration](office-integration.md)
+[Office integration](office-integration.md)
 
-[Office Integration lab and walkthroughs](office-integration-tutorial.md)
+[Office integration tutorial](office-integration-tutorial.md)
 
-[Configuring Power BI Integration](..\analytics\configure-power-bi-integration.md)
+[Configuring Power BI integration](..\analytics\configure-power-bi-integration.md)
 
 
 
