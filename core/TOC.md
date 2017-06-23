@@ -401,7 +401,7 @@
 ##### [Reconciliation reports](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### The Czech Republic
-##### [Cash discount on credit note](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Credit note on cash discount](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Depreciation rounding](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-rounding?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Depreciation suspension](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Fixed assets depreciation](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
