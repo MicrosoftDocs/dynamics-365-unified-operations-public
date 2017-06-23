@@ -91,7 +91,7 @@ To understand your sizing requirements, you need to know the peak volume of tran
   - SAN size and throughput based on total concurrent transaction volume/usage. 
 
 ### High availability 
-We recommend always utilizing SQL Server in either a cluster or mirroring setup.
+We recommend always utilizing SQL Server in either a cluster or mirroring setup. The second SQL node should have the same number of cores as the primary node. 
 
 ### Active Directory Federation Services (AD FS)
 For AD FS sizing, see the [AD FS Server Capacity
@@ -107,15 +107,18 @@ AOS (Online and batch)
 
 - Sizing by transaction volume/usage
   - 2K to 6K lines per core
-  - 8 GB to 16 GB per instance
+  - 16 GB per instance
   - Standard box – 4 to 24 cores
-  - 10 to 50 users per core
+  - 10 to 15 Enterprise users per core
+  - 15 to 25 Activity users per core
+  - 25 to 50 Team members per core
 - Batch
    - 1 to 4 batch threads per core
    - Size based on batch window characterization
 - Note that the AOS, Data Management, and Batch are on the same role in the
 Service Fabric. You need to size for these three workloads combined, and not
 separate these like in Microsoft Dynamics AX 2012.
+- The same variability factors for SQL Server apply here.
 
 ### High availability
 - Ensure that you have at least 1 to 2 more AOS available than you estimate.
@@ -124,24 +127,15 @@ separate these like in Microsoft Dynamics AX 2012.
 ## Management reporter
 In most cases, unless used extensively, the recommended minimum requirements
 using two nodes should work well. Only in cases where there is heavy use will
-you need more than two nodes.
+you need more than two nodes. Please scale as needed.
 
 ## SQL Server Reporting Services
-For the general availability release, only one SSRS node can be deployed. Make
-sure that you have a preconfigured secondary node available on a virtual host
-that is different than the SSRS VM. This is important in case there is an issue
-with the virtual machine which hosts SSRS or the virtual host. If this the case,
-they would need to be replaced.
+For the general availability release, only one SSRS node can be deployed. Monitor your SSRS node while testing and increase the number of cores available for SSRS on a need basis. Make sure that you have a preconfigured secondary node available on a virtual host that is different than the SSRS VM. This is important if there is an issue with the virtual machine that hosts SSRS or the virtual host. If this the case, they would need to be replaced. 
 
 ## Environment Orchestrator
-The Orchestrator service is the service that manages your deployment and the
-related communication with LCS. As we deploy this as the primary Service Fabric
-service, you will need at least three VMs. These can be very lightweight,
-virtual machines with approximately 2 cores each.
+The Orchestrator service is the service that manages your deployment and the related communication with LCS. This service is deployed as the primary Service Fabric service and requires at least three VMs. This service is co-located with the Service Fabric orchestration services. This and should be sized to the peak load of the cluster. For more information, see [Service Fabric cluster capacity planning considerations](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-capacity).  
+
 
 ## Virtualization and oversubscription
-Generally, it’s okay to oversubscribe virtual hosts that host non-mission
-critical auxiliary services such as the Orchestrator service, or depending on
-your scenario, even Management reporter. Mission critical services like the AOS
-should be hosted on Virtual hosts that are not oversubscribed.
+Mission critical services like the AOS should be hosted on Virtual hosts that have dedicated resources – cores, memory, and disk.   
 
