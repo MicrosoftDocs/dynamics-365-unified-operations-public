@@ -55,10 +55,10 @@ The Finance and Operations online service and the Finance and Operations (on-pre
 
 ## Online service update policies
 
-- **Finance and Operations platform updates** can be initiated by Microsoft, or they can be initiated by the customer through Microsoft Dynamics Lifecycle Services (LCS). After the customer tests the updates and provides consent, the updates will be rolled out to production environments.
+- **Finance and Operations platform updates** can be initiated by Microsoft, or they can be initiated by the customer through Microsoft Dynamics Lifecycle Services (LCS).
 - **Finance and Operations application updates** can be initiated by the customer through LCS.
 
-Before updates are applied to the customer’s production environment, the customer must test them in a sandbox environment. For information about how the sandbox environment will be provided, see the [Microsoft Dynamics 365 Licensing Guide](https://www.microsoft.com/en-us/dynamics365/pricing) .
+Before updates are applied to the customer’s production environment, the customer must test them in a sandbox environment. After the customer tests the updates and provides consent, the updates will be rolled out to production environments. For information about how the sandbox environment will be provided, see the [Microsoft Dynamics 365 Licensing Guide](https://www.microsoft.com/en-us/dynamics365/pricing) .
 
 > [!IMPORTANT]
 > To help protect our customers, and the Finance and Operations online service, Microsoft might apply critical fixes directly to a customer's Finance and Operations environments. If a critical fix must be applied, Microsoft will notify the customer about the required downtime window (if there will be any downtime) and apply the fix to the applicable environment. After fixes are applied, Microsoft will communicate completion to the customer.
@@ -75,10 +75,10 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 ### Table 1: Application releases
 
-| Release                                                                | Version          | Build number | Availability  | Expiration date | Product life  |
-|------------------------------------------------------------------------|------------------|--------------|---------------|-----------------|---------------|
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition  | July 2017 update | 7.2.XXXX     | July 2017     | November 2019   | December 2027 |
-| Microsoft Dynamics 365 for Operations                                  | 1611             | 7.1.1541     | November 2016 | November 2019   | December 2027 |
+| Release                                                                | Version          | Build number | Availability  | Expiration date | 
+|------------------------------------------------------------------------|------------------|--------------|---------------|-----------------|
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition  | July 2017 update | 7.2.XXXX     | July 2017     | November 2019   | 
+| Microsoft Dynamics 365 for Operations                                  | 1611             | 7.1.1541     | November 2016 | November 2019   | 
 
 ### Table 2: Retail application release
 
