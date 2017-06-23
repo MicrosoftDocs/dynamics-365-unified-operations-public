@@ -382,7 +382,8 @@
 #### [SEPA Direct debit overview](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Set up customer and vendor compensation](/dynamics365/unified-operations/financials/accounts-receivable/emea-compensation-customer-vendor-transactions?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Set up signers for print forms](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Tax directives]
+#### [Storno accounting](/dynamics365/unified-operations/financials/localizations/emea-storno?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Tax directives](/dynamics365/unified-operations/financials/localizations/emea-tax-directives?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Update how amounts are displayed on reports and documents](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms?toc=/dynamics365/unified-operations/financials/toc.json) 
 #### [VAT exchange rates](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [VAT register transactions for Eastern Europe](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -440,7 +441,7 @@
 ##### [Packing slip date verification on invoices](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Sales tax books](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Split payment for invoices issued to the Public Administration](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Withholding tax](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding tax?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Withholding tax](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding-tax?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Latvia
 ##### [Fixed assets accounting](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-accounting?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Fixed assets location change tracking](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-location-fields-change?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -513,8 +514,6 @@
 ### North America
 #### [Year-end 1099 reporting for the United States](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Form 1099 for the public sector](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector?toc=/dynamics365/unified-operations/financials/toc.json)
-
-
 
 ## Human resources
 ### Recruiting
