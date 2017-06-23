@@ -34,14 +34,14 @@ ms.dyn365.ops.version: July 2017 update
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE]
-> This feature is supported in Microsoft Dynamics 365 (version 7.2) and later.
+> This feature is supported in Dynamics 365 for Finance and Operations (version 7.2 and later).
 
 # Introduction
 This topic shows how to embed a Microsoft Power BI report on the **Analytics** tab of a workspace. For the example that is given here, we will extend the **Reservation management** workspace in the Fleet Management application to embed an analytical workspace on an **Analytics** tab.
 
 # Prerequisites
-+ Access to a developer environment that runs on Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with Platform update 8 or later.
-+ An analytical report (.pbix file) that was created by using Microsoft Power BI Desktop, and that has a data model that is sourced from the Dynamics Entity store database.
++ Access to a developer environment that runs Platform update 8 or later.
++ An analytical report (.pbix file) that was created by using Microsoft Power BI Desktop, and that has a data model that is sourced from the Entity store database.
 
 # Overview
 Whether you extend an existing application workspace or introduce a new workspace of your own, you can use embedded analytical views to deliver insightful and interactive views of your business data. The process for adding an analytical workspace tab has four steps.
@@ -54,10 +54,10 @@ Whether you extend an existing application workspace or introduce a new workspac
 > [!NOTE]
 > For more information about how to create analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/). This page is a great source for insights that can help you create compelling analytical reporting solutions.
 
-# Add a .pbix file as a Dynamics 365 resource
+# Add a .pbix file as a resource
 Before you begin, you must create or obtain the Power BI report that you will embed in the workspace. For more information about how to create analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/).
  
-Follow these steps to add a .pbix file as an Operations Resource artifact.
+Follow these steps to add a .pbix file as a Visual Studio project artifact.
 
 1. Create a new project in the appropriate model.
 2. In Solution Explorer, select the project, right-click, and then select **Add** > **New Item**.
@@ -159,7 +159,7 @@ You've now completed the task of adding business logic to initialize the embedde
 
 # Reference
 
-## PBIReportHelper.initializeReportControl method [AX7.2]
+## PBIReportHelper.initializeReportControl method
 This section provides information about the helper class that is used to embed a Power BI report (.pbix resource) in a form group control.
 
 ### Syntax
