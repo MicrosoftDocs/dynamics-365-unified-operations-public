@@ -234,6 +234,14 @@ Execute the following SQL script against the imported database. This will add ba
 
     CREATE USER [NT AUTHORITY\NETWORK SERVICE] FROM LOGIN [NT AUTHORITY\NETWORK SERVICE]
     EXEC sp_addrolemember 'db_owner', 'NT AUTHORITY\NETWORK SERVICE'
+    
+    UPDATE T1
+    SET T1.storageproviderid = 0
+           , T1.accessinformation = ''
+           , T1.modifiedby = 'Admin'
+           , T1.modifieddatetime = getdate()
+    FROM docuvalue T1
+    WHERE T1.storageproviderid = 1 --Azure storage
 
 ### Reset the Financial Reporting database
 
