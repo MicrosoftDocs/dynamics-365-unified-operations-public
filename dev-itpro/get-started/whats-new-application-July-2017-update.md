@@ -35,7 +35,7 @@ This topic describes features that are either new or changed in Microsoft Dynami
 
 **Note:** Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
 
-Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to find supplemental information about new features and learn more about what new features are in development. 
+Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. 
 
 Introducing Dynamics 365 for Finance and Operations, Enterprise edition
 =======================================================================
@@ -57,7 +57,7 @@ Two default check format templates are provided in Accounts payable. These check
 templates have been created using the Excel capabilities of the Electronic
 reporting tool. These checks templates are compatible with US check formats.
 
-For more information, see [Electronic reporting sample check format](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/electronic-reporting-sample-vendor-checks).
+For more information, see [Electronic reporting sample check format](/dynamics365/unified-operations/financials/accounts-payable/electronic-reporting-sample-vendor-checks).
 
 Budget control data maintenance
 -------------------------------
