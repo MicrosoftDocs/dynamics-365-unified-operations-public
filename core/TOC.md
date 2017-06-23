@@ -315,7 +315,7 @@
 ### [Modify row definition cells](/dynamics365/unified-operations/dev-itpro/analytics/modify-row-definition-cells-financial-reporting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Reset the financial reporting data mart after restoring a database](/dynamics365/unified-operations/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Localization overview](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+## [Localization overview](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Asia-Pacific
 #### Australia
 ##### [Bank file formats](/dynamics365/unified-operations/financials/localizations/apac-aus-method-of-payment-pay-vendors-banks?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
