@@ -95,11 +95,11 @@ The Excel Add-in runs inside an Internet Explorer (IE) window. The Excel Add-in�
 
 **Issue:** When sending email using SMTP, you may see the error: The server response was: "5.7.60 SMTP; Client does not have permissions to send as this sender" or "Something went wrong while generating the report."
 
-**Explanation:** This is usually caused by incorrect setup of the **Send as** permissions setup for the email account. 
+**Explanation:** This is usually caused by incorrect setup of the Send As permissions setup for the email account. 
 
-**Fix:** **Send as** permissions can be configured on the Office 365 admin center (portal.office.com/Admin) &gt; Users &gt; Active users &gt; User &gt; Edit mailbox permissions &gt; Send email from this mailbox ([Office 365 Help on Send email from another user’s mailbox](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)). 
+**Fix:** Send As permissions can be configured on the Office 365 admin center (portal.office.com/Admin) &gt; Users &gt; Active users &gt; User &gt; Edit mailbox permissions &gt; Send email from this mailbox ([Office 365 Help on Send email from another user’s mailbox](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)). 
 
-SMTP setup example: Below you see the Email parameters page where you need to provide the outgoing mail server, port, user name, password, and SSL requirements. 
+SMTP setup example: Below you see the **Email parameters** page where you need to provide the outgoing mail server, port, user name, password, and SSL requirements. 
 
 [![smtp](./media/smtp.jpg)](./media/smtp.jpg)   
 
