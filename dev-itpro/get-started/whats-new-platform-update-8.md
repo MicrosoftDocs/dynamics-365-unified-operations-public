@@ -37,13 +37,13 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 **Note:** Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
 
-Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to find supplemental information about new features and learn more about what new features are in development. 
+Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. 
 
 ## Introducing Dynamics 365 for Finance and Operations, Enterprise edition
 Users and developers will see an updated product name ("Microsoft Dynamics 365 for Finance and Operations, Enterprise edition") and product icon in the web client. Some platform components (for example, the developer tools and the mobile application) that are shared by Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 for Talent will now appear as "Dynamics 365 Unified Operations." 
 
 ## Development and customization - Changing the extended data type (EDT) on a table field using table extensions
-Using table extensions, a developer can change the **Extended Data Type** (EDT) property of a table field. Developers can only select EDTs that are derived from the current one. For more information, see [Customize with extensions and overlayering](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/extensibility/customization-overlayering-extensions).
+Using table extensions, a developer can change the **Extended Data Type** (EDT) property of a table field. Developers can only select EDTs that are derived from the current one. For more information, see [Customize with extensions and overlayering](/dynamics365/operations/dev-itpro/extensibility/customization-overlayering-extensions).
 
 ## Development and customization - Compliance properties on table fields
 A new property named General Data Protection Regulation (GDPR) is now available on table fields for the developer to set. It is used to classify the data field for compliance with GDPR.
