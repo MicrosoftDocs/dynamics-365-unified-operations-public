@@ -5,10 +5,10 @@ title: Fleet Management sample application overview
 description: This topic is an overview of the Fleet Management sample application.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

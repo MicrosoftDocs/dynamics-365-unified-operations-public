@@ -5,10 +5,10 @@ title: Add a custom control to an MPOS screen layout
 description: This topic explains how to add a new custom control to a Modern POS (MPOS) screen layout.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
@@ -122,7 +122,7 @@ You want to provide the cashier and manager more information about sales. For ex
         }
 
 7.  Compile the project.
-8.  Before you deploy MPOS, you must add the new custom control in the screen layout designer and set the relative URL. Sign in to the client, and go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Screen layouts**.
+8.  Before you deploy MPOS, you must add the new custom control in the screen layout designer and set the relative URL. Sign in to the client, and go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Screen layouts**.
 9.  Select the **F2MP16:9M** screen layout, and then, on the Action Pane, click the **Designer** button.
 10. If you're prompted to install the designer tool, click **Open**, and follow the installation instructions.
 11. After the installation is completed, you're prompted for your Microsoft Azure Active Directory (Azure AD) credentials. Provide them to start the designer.
@@ -131,7 +131,7 @@ You want to provide the cashier and manager more information about sales. For ex
 14. Set the relative URI to **Views/Controls/CustomControl.html**, and then click **OK**.
 15. In the designer, click the **Close** button.
 16. When you're prompted to save your changes, click **Yes**.
-17. Go to **Retail and commerce** &gt; **Retail IT** &gt; **Distribution schedule**.
+17. Go to **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 18. Select the **Registers** (**1090**) job, and then click **Run now**.
 19. After the job has finished running, deploy MPOS from Visual Studio by clicking the **Deploy** button.
 

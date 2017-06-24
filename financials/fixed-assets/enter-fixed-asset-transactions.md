@@ -5,10 +5,10 @@ title: Fixed asset transaction options
 description: This article describes the different methods available to create fixed asset transactions.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

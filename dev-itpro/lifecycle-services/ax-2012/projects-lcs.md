@@ -5,11 +5,11 @@ title: Projects in Lifecycle Services (LCS)
 description: This article provides information about projects in Microsoft Dynamics Lifecycle Services (LCS). It describes some important features and also explains the role of the project methodology.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.service: Dynamics365Operations
-ms.technology: 
+ms.prod: dynamics-ax-2012 
+ms.service:
+ms.technology: ax-2012
 
 # optional metadata
 

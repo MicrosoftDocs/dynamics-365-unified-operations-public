@@ -5,10 +5,10 @@ title: Validations, defaults, and unmapped fields
 description: Validations are defined on the tables that back up the entities. Validations are defined at both the field level and the record level.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

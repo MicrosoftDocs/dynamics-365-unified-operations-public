@@ -2,13 +2,14 @@
 # required metadata
 
 title: Expense management mobile workspace
+
 description: This topic provides information about the Expense management mobile workspace. This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later. Users can also quickly create an expense line by using an attached receipt, and create and manage their expense reports. 
 author: KimANelson 
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -36,11 +37,14 @@ ms.search.validFrom: 2016-11-30
 
 This topic provides information about the **Expense management** mobile workspace. This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later. Users can also quickly create an expense line by using an attached receipt, and create and manage their expense reports. Additionally, approvers can use the **Expense management** mobile workspace to view expense reports that are assigned to them, and either approve or reject those expense reports.
 
+
 This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.
+
 
 ## Overview
 
 Many organizations require that a copy of a receipt be attached to a travel-related or business-related expense report that an employee submits for reimbursement. The **Expense management** mobile workspace lets users quickly create new expense lines on the mobile device of their choice by using an attached photo of a receipt. Alternatively, users can capture a photo of a receipt and then attach it to an expense report later. Employees can also create and manage their expense reports, and then submit them for approval and reimbursement by using their mobile device.
+
 
 Specifically, the **Expense management** mobile workspace lets users perform these tasks:
 
@@ -108,9 +112,11 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 4. The first time that you sign in, you're prompted for your user name and password. Enter your credentials.
 5. After you sign in, the available workspaces for your company are shown. Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.
 
+
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## Capture a receipt by using the Expense management mobile workspace
+
 1. On your mobile device, open the **Expense management** workspace.
 2. Select **Capture receipt**.
 3. Select **Take photo** or **Choose image**.

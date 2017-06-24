@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Retail home page
-description: Home page for Dynamics 365 for Operations – Retail
+title: Microsoft Dynamics 365 for Retail 
+description: Home page for Dynamics 365 for Retail
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,82 +18,85 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: josaw
-ms.search.scope: Operations, Core
+ms.search.scope: Operations, Core, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.search.validFrom: 2017-6-19
+ms.dyn365.ops.version: Version 1611, Retail Version
 
 ---
 
-# Retail home page
+# Welcome to Dynamics 365 for Retail
 
 [!include[banner](includes/banner.md)]
 
-Dynamics 365 for Operations – Retail delivers a complete shopping experience, with a seamless and differentiating omni-channel solution that is modern, mobile, and global. End-to-end capabilities, from modern point of sale (POS) software solutions, store operations, merchandising, e-commerce, call center, marketing, and customer care, to supply chain, financials, and more, can be deployed in the way that makes the most sense for your business.
+Microsoft Dynamics 365 for Retail is an end-to-end retail solution that delivers unified commerce across all channels. It encompasses sales, mobility, intelligence, and productivity to help retailers and workers achieve more in a cloud-first, mobile-first manner. Retail offers comprehensive support to operate a wide range of business processes, such as merchandising, inventory, and channel management capabilities. It also provides immersive customer experiences across all touchpoints.
 
-This page points to resources that will help you use Microsoft Dynamics 365 for Operations - Retail more effectively. On the leftmost pane, select a feature area to learn more about it. 
+The following three products are closely related:
 
-## Set up Retail channels
-As you set up your Retail experience, you'll decide how to define and configure your stores -- brick and mortar store, online store, and call center. 
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+- Microsoft Dynamics 365 for Retail
+- Microsoft Dynamics 365 for Talent
 
-Each retail store can have its own payment methods, delivery methods, price groups, income/expense accounts, registers, and staff. After you create your retail store, you create an assortment of products that you want the store to carry. You can also define store-specific prices and discounts that are applicable to products that are available in the store.
+The same functionality might appear in all three products. Therefore, in topics that are primarily related to Retail, the product name will be Microsoft Dynamics 365 for Retail. In topics that are primarily related to Talent, the product name will be Microsoft Dynamics 365 for Talent. Finally, in topics that are related to the core product (Finance and Operations), the product name will be Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Topics that are written for one product might apply to the same functionality in a related product.
 
--   [Define retail channels](define-maintain-retail-channels.md)
--   [Online store overview](online-stores.md)
+In the left pane, select a feature area to learn more about it.
 
-## Set up a call center
-You can set up a call center as a type of retail channel. In a call center, workers take orders from customers over the phone and create sales orders. To help your workers take orders and handle customer service throughout the order fulfillment process, you can set up what a sales order will contain, how pricing will be controlled, and what data about customers, products, and pricing can be accessed. For each call center, you can also set up users, payment methods, price groups, financial dimensions, and modes of delivery.
+## Channel management
+As you set up your Retail experience, you will decide how to define and configure your stores. They can be brick-and-mortar stores, online stores, or call centers.
 
--   [Call center functionality](call-center-functionality.md)
--   [Create call center catalogs](create-call-center-catalogs.md)
+Each retail store can have its own payment methods, delivery methods, price groups, income and expense accounts, registers, and staff. After you create your retail store, you create an assortment of products that you want the store to carry. You can also define store-specific prices and discounts that apply to products that are available in the store.
 
-## Define your POS solutions
-Retail Modern POS (MPOS) is a point-of-sale app for PCs, tablets, and phones. Sales staff can process sales transactions and customer orders, perform clienteling activities, and perform daily operations and inventory management with mobile devices anywhere in the store, as well as at PC-based registers. Cloud POS is a browser-based POS that can be launched on any standard browser. 
+## Clienteling and loyalty
+Customer needs constantly change. You must be able to quickly and effectively keep up with changes in buying habits and trends, so that you can target and attract new customers, but also keep your existing customer base happy.
 
-There are several components you’ll set up to define the relationships among a store, the POS registers within the store, and the retail peripherals that those registers use to process transactions. You’ll also define the characteristics of a specific instance of the POS, including the hardware profile or setup for retail peripherals that will be used at the register, the store that the register is mapped to, the visual experience for the user who logs on to that register, and the functionalities that are enabled in the register. You'll also define whether the register can operate in a disconnected or offline state.
+Furthermore, customers have many options for getting what they want, when they want it, and at the price they want. To maintain customer loyalty, you can use personalized notifications and offers that make shopping easier.
 
--   [Define and maintain channel clients, registers, and hardware stations](define-maintain-channel-clients-registers-hw-stations.md)
--   [Configure and install MPOS](retail-modern-pos-device-activation.md)
--   [Offline POS functionality](pos-offline-functionality.md)
+## Hardware and peripherals
+Retail Modern point of sale (MPOS) and Cloud POS can use a wide range of hardware peripherals. Both MPOS and Cloud POS offer multiple interfaces and deployment options to help you with your various business scenarios.
 
-## Set up a customer loyalty program
-You can set up your loyalty program so that customers earn points based on specific criteria, and the points can be calculated in various ways. Your loyalty program can be simple or complex, and apply across your legal entities in any retail channel.
--   [Set up a customer loyalty program](set-up-customer-loyalty-program.md)
+The Peripheral simulator for Retail includes a virtual peripheral simulator and a POS simulator. The virtual peripheral simulator primarily supports testing of scenarios that usually require physical POS peripheral devices. The POS simulator lets you test the compatibility of physical peripheral devices with Retail without having to deploy the POS client.
 
-## Set up discounts and price adjustments
-You can make price adjustments to products, and can also set up discounts that are applied to a line item or a transaction at the POS, in a call center sales order, or in an online order. 
--   [Price adjustments and discounts](price-adjustments-discounts.md)
--   [Define channel-specific discounts](define-channel-specific-discounts.md)
--   [Determine the optimal combination of overlapping discounts](optimal-combination-overlapping-discounts.md)
+## Intelligence
+Advanced analytics bring the power of machine learning to retail challenges, and enable predictive, optimized, and personalized insights that help lead to growth and profitability. Retail lets you deliver visual reports on any device, whether it's online or offline. Additionally, you can help customers identify products and services that meet their needs before the time of purchase.
 
-## Set up retail products
-Before you can offer products for sale in your retail channels, you'll need to create and configure the products in Dynamics 365 for Operations. You can create the products, define the product properties and attributes, and assign the products to retail category hierarchies. To make the products available to your retail channels and add them to an active assortment, you'll then release the products to the legal entities in which they are available.
--   [Set up retail products](set-up-retail-products.md)
+## Monitoring and diagnosis
+Retail lets you monitor sales and margin performance in real time across various levels of the organization hierarchy.
 
-## Monitor and analyze performance
-Using your Dynamics 365 for Operations data, you can analyze store performance, customer and product profitability, sales trends, and more.
--   [Assess customer and product profitability](assess-customer-product-profitability.md)
--   [Analyze store performance](store-performance-information.md)
+## Merchandising
+Before you can offer products for sale in your retail channels, you must create and configure the products in Retail. You can create the products, define the product properties and attributes, and assign the products to retail category hierarchies. To make the products available to your retail channels and add them to an active assortment, you must release the products to the legal entities where they are available.
+
+You can make price adjustments to products, and can also set up discounts that are applied to a line item or a transaction at the POS, in a call center sales order, or in an online order.
+
+## Store operations and POS
+MPOS is a POS app for PCs, tablets, and phones. Sales staff can process sales transactions and customer orders, perform clienteling activities, and perform daily operations and inventory management on mobile devices anywhere in the store, and also at PC-based registers. Cloud POS is a browser-based POS that can be started in any standard browser.
+
+You will set up several components to define the relationships among a store, the POS registers in the store, and the retail peripherals that those registers use to process transactions. You will also define the characteristics of a specific instance of the POS. These characteristics include the hardware profile or setup for retail peripherals that will be used at the register, the store that the register is mapped to, the visual experience for the user who signs in to that register, and the functionalities that are enabled in the register. You will also define whether the register can operate in a disconnected or offline state.
+
+## Workforce management
+To be profitable in an environment where margins are decreasing, retailers constantly try to reduce their operational cost. For most retailers, the cost of retail staff is a significant part of the operational cost. Therefore, by controlling this cost, retailers can have a significant impact on their bottom line. Additionally, an empowered and productive workforce lends itself to improved customer experience.
+
+Retail lets store managers create and publish shifts and schedules for workers in stores, annotate shifts via instructions, copy schedules from a previous week to the current week. Additionally, managers gain visibility into absence requests that retail workers submit, and can approve or reject those requests. They also gain visibility into "shift swap" and "shift offer" requests, and can approve or reject those requests.
+
+Store associates gain visibility into shifts and assigned schedules, together with instructions for the shifts, and gain visibility into the co-workers who are assigned to shifts. They can also submit absence requests, requests for shift swaps with co-workers, and shift offer requests.
 
 ## Customize and administer Retail environments
-If you have been asked to customize your environment, or if you are tasked with deploying and maintaining your system, check out the developer and system administrator content specific to Retail, as well as the more general content for Microsoft Dynamics 365 for Operations. 
--   [Dynamics 365 for Operations - Retail for IT Pros and Developers](dev-itpro/dev-retail-home-page.md)
--   [Microsoft Dynamics 365 for Operations for Developers and IT Pros](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
+If you've been asked to customize your environment, or if you're responsible for deploying and maintaining your system, be sure to see the developer and system administrator content that is specific to Retail, in addition to the more general content.
+
+- [Dynamics 365 for Retail for IT Pros and Developers](dev-itpro/dev-retail-home-page.md)
+- [Microsoft Dynamics 365 for Retail for Developers and IT Pros](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page)
 
 ## Additional resources
 ### What's new and in development
-Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development. 
+Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.
 
 ### Blogs
-You can find opinions, news, and other information about Microsoft Dynamics 365 for Operations - Retail and other solutions on the <a href="https://community.dynamics.com/b/msftdynamicsblog">Microsoft Dynamics 365 blog</a>.
+You can find opinions, news, and other information about Retail and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog).
 
-There are many topics about Retail on the <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX product team blog</a>. Some of these posts were written for the previous version of Dynamics 365 for Operations, but the same concepts still apply, and the procedures are similar in the current version.
+There are many posts about Retail on the [Microsoft Dynamics AX product team blog](https://blogs.msdn.microsoft.com/dax/). Although some of these posts were written for the previous version of Retail, the same concepts still apply. and the procedures are also similar in the current version.
 
-The <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations Partner Community Blog</a> provides Microsoft Dynamics Partners with a single resource to learn about what’s new and trending in MBS Operations.
-
-
+The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.

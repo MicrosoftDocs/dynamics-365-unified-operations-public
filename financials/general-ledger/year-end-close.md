@@ -5,10 +5,10 @@ title: Year-end close
 description: This topic describes the required setup and steps for running the general ledger year-end close process. 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

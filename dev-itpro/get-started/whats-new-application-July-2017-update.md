@@ -1,0 +1,2333 @@
+---
+# required metadata
+
+title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of XXX.
+author: tonyafehr
+manager: AnnBe
+ms.date: 06/19/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Developer, IT Pro
+# ms.devlang: 
+# ms.reviewer: sericks
+# ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global 
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: tfehr
+ms.search.validFrom: 2017-06-30 
+ms.dyn365.ops.version: July 2017 update 
+---
+
+# What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+
+[!include[banner](../includes/banner.md)]
+
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of XXX.
+
+**Note:** Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
+
+Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to find supplemental information about new features and learn more about what new features are in development. 
+
+Introducing Dynamics 365 for Finance and Operations, Enterprise edition
+=======================================================================
+
+Users and developers will see an updated product name ("Microsoft Dynamics 365
+for Finance and Operations, Enterprise edition") and product icon in the web
+client. Some platform components (for example, the developer tools and the
+mobile application) that are shared by Dynamics 365 for Finance and Operations,
+Dynamics 365 for Retail, and Dynamics 365 for Talent will now appear as
+"Dynamics 365 Unified Operations."
+
+**Financial management**
+========================
+
+Accounts payable check templates using Electronic Reporting 
+------------------------------------------------------------
+
+Two default check format templates are provided in Accounts payable. These check
+templates have been created using the Excel capabilities of the Electronic
+reporting tool. These checks templates are compatible with US check formats.
+
+For more information, see [Electronic reporting sample check format](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/electronic-reporting-sample-vendor-checks).
+
+Budget control data maintenance
+-------------------------------
+
+You can reprocess documents against budget control. Documents are scanned
+against a list of potential issues, including any budget register entries that
+were entered prior to budget control being enabled read-only audit trail is
+preserved for documents that are found, as well as the results of reprocessing.
+
+Budgeting Power BI for actual vs budget 
+----------------------------------------
+
+The Actual vs budget Power BI content provides visibility into your budget
+variances based on your budget register. You can analyze budget for the current
+year, using any of the following details to get a better understanding of any
+variances:
+
+-   Account category
+
+-   Budget code
+
+-   Main account
+
+-   Main account description
+
+-   Fiscal period
+
+For more information, see [Ledger Budget Power BI](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/ledger-budgets-power-bi).
+
+CFO Overview workspace
+----------------------
+
+The CFO or accounting manager can view the full state of the business on the CFO
+Overview workspace. The workspace contains common KPIs and uses embedded
+analytics to see financials, purchasing, sales, and cash flow data.
+
+For more information, see [CFO overview Power BI content](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/CFO-power-bi).
+
+Data validation
+---------------
+
+The **Data validation checklist** workspace lets you track data validation
+processes across companies, areas, and people. The checklist can be used during
+a new implementation, after an upgrade, or after a migration. Depending on your
+view of the **Data validation checklist** workspace, you'll see either all tasks
+and statuses for a data validation project.
+
+For more information, see [Data validation workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/user-interface/data-validation-workspace).
+
+Delete a main account and dimension value
+-----------------------------------------
+
+As companies go live they often have main accounts or dimension values that they
+have determined they no longer need. This feature lets you remove the main
+account and dimension values if there are no posted transaction, keeping the
+pristine golden template intact.
+
+For more information, see [Financial dimensions](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/financial-dimensions).
+
+Display payment information for an expense
+------------------------------------------
+
+This provides visibility into payment information for an expense, such as the
+related invoice number, payment date, and payment voucher.
+
+Edit account entries in the allocation journal
+----------------------------------------------
+
+You can now edit the account entries in the allocation journal before posting.
+This means that you can make changes due to exceptions that occur periodically
+in the allocation process. This saves time having to regularly modify the
+allocation rule setup.
+
+Expense management: Configuration related to employee's card ID
+---------------------------------------------------------------
+
+In prior releases, the employee’s expense credit card ID was designed to only
+allow up to 10 characters and displayed the last 4 digits entered as the card
+ID. The ability to enter more characters was required for organizations that
+have an agreement with their credit card company to use another key to identify
+an employee’s credit card number without entering the credit card number. This
+key is often greater than 10 characters and is typically between 20 and 30
+characters.
+
+This feature has lengthened the **Card ID** field for the employee’s credit card
+setup (**Human resources** \> **Workers** \> **Employees** \> **Expense** tab \>
+**Credit cards**) and provides a parameter to validate whether a 15- or
+16-character number is allowed as the card ID. The parameter, **Enter employee
+credit card number**, is found on the **General** tab of the **Expense
+management parameters** form (**Expense management** \> **Setup** \> **General**
+\> **Expense management parameters**). By default, credit card numbers are not
+allowed as the expense credit card ID.
+
+Expense management: Configure per diem locations per country/region, state/province, and location
+-------------------------------------------------------------------------------------------------
+
+This feature allows expense administrators to configure the per diem locations
+to be set up based on country/region, state/province, and location. This
+configuration can provide more granular setup of the per diem rates. To use this
+feature, go to **Expense management** \> **Setup** \> **Calculations and codes**
+\> **Per diem locations**.
+
+Expense management: Display related payment information for an expense report
+-----------------------------------------------------------------------------
+
+This feature provides visibility into related Accounts payable invoices that
+were generated for an expense report and the related payment information.
+Employees will have insight into the invoice number(s) and the payment voucher
+number for their expense reports to help them better understand the state of
+their reimbursement for travel expenses.
+
+A periodic process must be run before the invoice and payment related
+information can be displayed for an expense report (**Expense management** \>
+**Periodic tasks** \> **Update expense payment information**). The **Update
+expense payment information** process can be set up as a recurring batch process
+and set to update depending on how often the organization reimburses for travel
+expenses.
+
+If viewing expense reports in the grid view, columns for **Payment date**,
+**Payment voucher**, and **Invoice** are displayed. If multiple invoices or
+payments were generated for a selected expense report, the column will display
+**\<multiple\>**. The information is also displayed in the **Payment details**
+form for the expense report by clicking the **Payments** button when viewing the
+details of the expense report.
+
+Expense management: Export and import expense policies using data management
+----------------------------------------------------------------------------
+
+New data entities are available that enable support of the export and import of
+expense policies.
+
+The following entities are available to help manage implementation of expense
+policies:
+
+-   Policy type (SysPolicyTypeEntity)
+
+-   Policies (SysPolicyEntity)
+
+-   Policy rule type (SysPolicyRuleTypeEntity)
+
+-   Policy organization (SysPolicyOrganizationEntity)
+
+-   Policy organization assignments
+    (SysPolicyInternalOrganizationAssignmentEntity)
+
+-   Expense and travel policy rule (TrvPolicyRuleEntity)
+
+-   Expense policy translations (TrvPolicyLanguageTxtEntity)
+
+Expense management: Final approver defaulted for multi-level workflow approval
+------------------------------------------------------------------------------
+
+When expense management workflow is configured to use the multi-approval
+workflow, the default for the final approver will be based on the employee's
+manager. Prior to this release, the default final approver was empty and the
+employee had to enter the final approver and optionally set it as the default.
+This workflow can be configured for organizations where expense reports must go
+through a multi-approver process, such as having the project manager approve
+project related expenses or having a team administrator approve expenses prior
+to the employee's manager.
+
+Expense management: Match credit card expenses with manually entered expenses
+-----------------------------------------------------------------------------
+
+Employees may need to submit timely expense reports ahead of credit card
+expenses that are being imported into the system, depending on company policy or
+agreements with their clients for billing purposes. When the credit card expense
+is not yet available for an expense report, employees can create the expense for
+the expense report and submit for approval and reimbursement. Later, the credit
+card transaction comes in and the employee is unable to remove it from the list
+of expenses that they need to deal with.
+
+This feature provides support to match a credit card transaction to an existing,
+manually created expense from the **Expenses** form (**Expense management** \>
+**My expenses** \> **Expenses**) or from the **Expense report** form (**Expense
+management** \> **My expenses** \> **Expense reports**). If the manual expense
+has not yet been included in an expense report submitted for approval, the
+manual expense line and the credit card transaction will be merged with the
+credit card transaction as the master for information such as transaction date,
+merchant, and transaction amount. Any attached receipts, guests, or itemizations
+that may have been added to the manual expense line will be added to the credit
+card expense and the manual expense will be deleted.
+
+If the manual expense has been submitted with an expense report for approval,
+matching the manual expense with the credit card transaction will remove the
+credit card transaction from the list of expenses for the employee. The employee
+can remove the match when viewing their matched expenses from the **Matched
+expenses** form (**Expense management** \> **My expenses** \> **Matched
+expenses**).
+
+Expense management mobile workspace
+-----------------------------------
+
+Many organizations require that a copy of a receipt be attached to a
+travel-related or business-related report that an employee submits for
+reimbursement. The **Expense management** mobile workspace lets users quickly
+create new expense lines on the mobile device of their choice by using an
+attached photo of a receipt. Alternatively, users can capture a photo of a
+receipt and then attach it to an expense report later. Employees also can create
+and manage their expense reports and submit for approval and reimbursement using
+their mobile device.
+
+Specifically, the **Expense management** mobile workspace enables a user to:
+
+-   Take a photo of a receipt, and upload it to Microsoft Dynamics for Finance
+    and Operations, Enterprise edition. A user can then attach that photo to an
+    expense report later.
+
+-   Upload a file as a captured receipt. A user can then attach that file to an
+    expense report later.
+
+-   Create a new expense line by using an attached receipt. A user can then add
+    the line item to an expense report later, and submit it for approval and
+    reimbursement.
+
+-   Create a new expense report.
+
+-   Attach credit card transactions and other previously created expenses to an
+    expense report.
+
+-   Create new expenses for an expense report.
+
+-   Attach a receipt to any expense for an expense report by either taking a
+    photo of the receipt or uploading a file as a captured receipt.
+
+-   Add the list of guests to an expense based on expense policy.
+
+-   Itemize expenses based on expense policy.
+
+-   Submit an expense report for approval and reimbursement.
+
+-   Approve or reject expense reports assigned to the employee as an approver.
+
+For more information, see [Expense management mobile workspace](https://docs.microsoft.com/en-us/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace).
+
+Expense management: Split credit card expenses
+----------------------------------------------
+
+There are times when a credit card transaction expense needs to be split across
+multiple project activities or expense categories, for example, while keeping
+the credit card transaction intact for credit card statement reconciliation
+purposes. This feature provides support for an employee to split a credit card
+expense across:
+
+-   Legal entities
+
+-   Expense categories
+
+-   Projects
+
+-   Project activities
+
+-   Billable/nonbillable (Project line property)
+
+To use this feature, go to **Expense management** \> **My expenses** \>
+**Expense reports** or **Expense management** \> **My expenses** \>
+**Expenses**.
+
+When viewing the expenses in the details view or the grid view for a credit card
+expense, click the **Split** button to open a form that will allow the employee
+to split the expense. The split expenses will be displayed for the credit card
+expense in the list of expenses when in the details view. A visual indicator
+will be displayed for credit card expenses that have been split in the grid
+view.
+
+Expense management: Support for importing credit card itemization data
+----------------------------------------------------------------------
+
+Many organizations have expense policies requiring certain expenses, such as
+hotel, car rental, and airline expenses, to have itemization details entered
+before submitting the expense for approval. Organizations can work with their
+credit card company to receive files that contain itemization details for
+import. This feature provides the ability for expense administrators to set up
+mapping codes for the expense itemization subcategories and the ability to
+import the itemization details using data management.
+
+A new form is provided to configure the mapping of the itemization subcategories
+to the credit card codes provided by the credit card company. To import the file
+provided by the credit card company, the system administrator can import the
+file using data management by selecting to import into the **Credit card
+itemizations** entity (TrvPBSItemizationsEntity).
+
+To use this feature, go to **Expense management \> Setup \> Calculations and
+codes \> Subcategory codes**.
+
+Expense management: Usability enhancements
+------------------------------------------
+
+Multiple features have been added to improve the usability of creating and
+managing expense reports. Enhancements include:
+
+-   A new **Expense management** workspace to simplify the navigation for
+    creating and managing expense reports.
+
+-   Ability for an employee to view their list of expense reports in a grid
+    view.
+
+-   Providing visibility to the employee that a receipt is required for an
+    expense when the expense is saved or modified, depending on company
+    policies. A visual indicator is displayed for the expense if viewing
+    expenses in detail. If expenses are displayed in grid view, columns for
+    **Receipt required** and **Receipt attached** are displayed.
+
+-   The details view will be displayed as the default with a view. Receipts,
+    guests, itemizations, and financial dimensions will be displayed next to the
+    expense details in the same view. The employee will be able to easily find
+    how to enter this information for a selected expense.
+
+-   Enhanced visibility into expenses with policy violations by providing a
+    visual indicator with the expense. The visual indicator will include hover
+    text that displays the message provided by the expense policy.
+
+-   Simplified entry of itemizations for an expense including the ability to
+    copy itemizations from one day to the next.
+
+Expense management: View detailed workflow history for an expense report
+------------------------------------------------------------------------
+
+The workflow history for an expense report can be complicated depending on how
+many levels of approval your organization has or if the expense report has come
+back to the submitter multiple times for various reasons. This feature will
+provide a more user-friendly way to view the workflow history for an expense
+report. Clicking the **View history** button opens the **View history** form and
+displays the workflow history, including any comments provided at each workflow
+step.
+
+Financial dimensions in Financial reporting report definition
+-------------------------------------------------------------
+
+You can select what financial dimensions are relevant for a report in the
+Financial reporting report definition. For example, if you’re generating a
+balance sheet, and the organization only wants to evaluate it by main account
+and business unit, you can select those as the financial dimensions for the
+report. You will only see those in the drill down and analysis. This helps
+personalize and make the reporting experience more streamlined, only presenting
+the information that is necessary for a report.
+
+Financial dimensions in Power BI
+--------------------------------
+
+The financial dimensions in the Financial performance content pack are now
+available for analyzing financial data. For more information, see [Financial
+performance power BI](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/financial-performance-power-bi-content-pack).
+
+Financial report generation
+---------------------------
+
+You can generate financial reports from the Financial reports list page and
+select the date and units of the reporting hierarchy. This saves time because
+you no longer need to view a prior version of the report. You can open the
+Report designer, and only view the units of the reporting hierarchy that are
+relevant.
+
+Maintain carry-forward status
+-----------------------------
+
+This feature provides an alternate way to report on carry-forward budget. This
+maintains the carry-forward status on relieving documents, which are based on an
+originating document that was carry-forward.
+
+Map credit card data (itemization details)
+------------------------------------------
+
+This feature allows you to map level 3 credit card data (itemizations) to
+subcategories, which makes it easy to import itemization details received from
+your credit card company.
+
+Mobile invoice approvals
+------------------------
+
+New mobile capabilities allow you to review and approve vendor invoices that
+have been submitted through workflow using a mobile device.
+
+For more information, see [Mobile invoice approvals](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals).
+
+Save Financial reports to SharePoint
+------------------------------------
+
+You can utilize all the capabilities for SharePoint for managing your documents.
+You can now publish financial reports to SharePoint, and set up alerts so that
+you are notified when a report is available. Using the Office icon, click
+**Export users** and save the file to a SharePoint location.
+
+Suspended and inactive dimension values hidden from dimension value lookups
+---------------------------------------------------------------------------
+
+When a company decides to no longer use a specific dimension value, the value is
+hidden from the dimension value lookups. This makes the user experience
+consistent with the segmented entry control, and prevents re-active steps when
+validation messages are experienced during posting.
+
+You will see the date that used to determine whether the financial dimension
+value is active. If you want to see all possible financial dimension values,
+click **Show all**.
+
+Travel requisition functionality (Dynamics AX 2012 parity)
+----------------------------------------------------------
+
+This feature enables the travel requisition functionality in parity with
+Dynamics AX 2012. Employees can create and submit travel requisitions for
+approval and reconcile them with expense reports. Your organization may require
+that a travel requisition be submitted before an employee incurs an expense that
+is charged to the organization. This applies whether the employee is charging
+expenses to a corporate credit card, spending cash received from a cash advance,
+or incurring out-of-pocket expenses that will be reimbursed by the organization.
+
+Travel requisitions and policies can be used to help with budget control. For
+example, if your organization is working on a fixed-price project that requires
+travel, the travel expenses of the project team members must fit within the
+budget of the project. Requiring that travel expenses be approved before they
+are incurred can help to ensure that the project stays within budget.
+
+Vendor invoice attachment enhancements
+--------------------------------------
+
+As organizations look to streamline their Accounts payable processes, invoice
+processing is often one of the top process areas that needs efficiency.
+Oftentimes, organizations offload the paper invoice processing to a third-party
+optical character recognition (OCR) service provider to get machine readable
+invoice metadata along with the scanned image of the invoice. To help with
+automation, a solution is built in the invoicing system to enable consumption of
+these artifacts. Dynamics 365 for Finance and Operations, Enterprise edition
+enables this automation out of the box. 
+
+The basic premise of invoice automation is to enable a standard interface that
+can accept invoice metadata for invoice header and invoice lines, as well as the
+attachments that are applicable to the invoice. Any external system that can
+generate the artifacts and comply with the interface will be able to send the
+feed to Finance and Operations for automatic processing of invoices and
+attachments. 
+
+The following components make up the solution footprint of vendor invoice
+automation. 
+
+-   Data entities for invoice header, invoice lines, and invoice attachments. 
+
+-   Exception processing for invoices. This is a business user-friendly UI to
+    manage invoices that failed to get created.
+
+-   A side-by-side attachment viewer in invoices in exception handling forms,
+    pending invoices, and invoice journal inquiries.
+
+For more information, see [Vendor invoice automation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/vendor-invoice-automation).
+
+View detailed workflow history for an expense report 
+-----------------------------------------------------
+
+The workflow history for an expense report can be complicated depending on how
+many levels of approval your organization has or if the expense report has come
+back to the submitter multiple times for various reasons. This feature provides
+a more user-friendly way to view the workflow history for an expense report.
+
+**Financial management \| Supply chain management**
+===================================================
+
+Cost accounting – Cross legal entities 
+---------------------------------------
+
+To provide in-depth managerial insights, Cost accounting needs to be able to
+cross the boundaries of legal entities because all or some of these legal
+entities serve the purpose of statutory reporting. This is easy if all legal
+entities are in the same version of the product. This feature resolves the more
+challenging problem, where legal entities are running on different versions or
+instances of the same version, by connecting the data from instances in Dynamics
+AX 2012 R3 CU11 or later to Dynamics 365 for Finance and Operations, Enterprise
+edition.
+
+Cost accounting allocation bases
+--------------------------------
+
+The allocation base feature has been extended so Cost accountants can create an
+allocation base that matches their requirement.
+
+The following allocation base types have been introduced:
+
+-   **Predefined dimension member allocation base** - All cost element dimension
+    members and statistical dimension members are, by default, created as
+    predefined dimension member allocation bases.
+
+-   **Formula allocation base** - A formula can include one or more allocation
+    bases of any type and can include user-defined constants. The following
+    operators are supported: + , - , \* , = , \< , \> , ( , )
+
+-   **Hierarchy allocation bases** - Combine an allocation base of any type with
+    a cost object dimension hierarchy node to limit the range.
+
+Cost accounting dimension hierarchies 
+--------------------------------------
+
+Cost accounting dimension hierarchies provide a way for you to move a hierarchy
+node to a new parent node in the hierarchy or perform a simple re-order of nodes
+within a parent node by using the **Move up** or **Move down** buttons. This
+significantly reduces amount of the time spent maintaining dimension
+hierarchies.
+
+Cost accounting Get started wizard
+----------------------------------
+
+The Get started wizard provides an easy way to get started with Cost accounting.
+Basic master data and reference data is automatically generated based on how you
+answer a few simple questions in the wizard.
+
+Transactional data is also processed, which allows you to populate the Cost
+control workspace with your own data.
+
+The wizard provides a good foundation for further exploring the capabilities of
+Cost accounting.
+
+Cost accounting ledger administration workspace
+-----------------------------------------------
+
+The Cost accounting ledger administration workspace provides Cost accountants
+with an overview of the status of individual cost accounting ledgers. All
+functions required for the administration of a cost accounting ledger can easily
+be accessed directly from this workspace.
+
+The health of the cost accounting ledger and its related master data and
+reference data are monitored, such as cost objects dimensions, dimension
+hierarchies, and rules. This makes it easy to manage cost accounting ledgers.
+
+**Globalization & translation**
+===============================
+
+Belgian Enterprise number Registration ID is used for customer and vendor accounts
+----------------------------------------------------------------------------------
+
+The enterprise number is a unique identification code assigned by the Belgian
+government to each Belgian company to replace the nine-digit VAT number. For
+example, the enterprise number can be assigned to vendor accounts and customer
+accounts. The enterprise number is used for regulatory reporting, to generate
+the EU sales list, the Annual sales list, or to declare VAT.
+
+Setup of the enterprise number for vendor and customer accounts was aligned with
+how setup was previously used for legal entities. Now it uses Registration IDs
+and enterprise number setup for reporting.
+
+Enhancements to the German audit file (GDPdU)
+---------------------------------------------
+
+The following enhancements have been implemented to the GDPdU\\GoBD sample
+electronic reporting configurations:
+
+-   Significantly improved performance with use of filter() function in
+    calculated fields.
+
+-   Primary registration numbers for customer and vendor accounts are now
+    exported instead of tax exempt numbers.
+
+-   Labels are used in configurations.
+
+-   Encoding of index.xml file is updated.
+
+-   DTD file attachment embedded in the format configuration.
+
+For more information, see [German audit file
+(GDPdU/GoBD)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-deu-gdpdu-audit-data-export).
+
+Global coverage - Configurable Electronic Reporting
+---------------------------------------------------
+
+The following features have been added to the Electronic Reporting (ER) engine.
+
+**Configurable import from incoming documents** – You can use ER to configure
+the import of data from incoming documents in CSV format. Initially designed to
+support import from incoming files in only XML and TXT format, ER formats can be
+used for parsing incoming documents in another format – as plain text storing
+tabular data separated by a special character. This allows customers to easily
+adopt specific requirements that can be introduced for payment, settlement, and
+other processes.
+
+**Check prerequisites for the importing ER solution** - This functionality
+allows you to check the compliance of the entire importing ER solution that may
+consist of several ER configurations (ER format, ER data model, ER model
+mappings) to the current application.
+
+**Filter the ER configurations tree by metadata** – You can filter ER
+configurations in the configurations tree. For example, to access configurations
+in a repository for importing or to find a configuration for editing or sharing,
+by using ER configurations metadata: configuration type, prerequisites
+(including KB articles, hotfix codes, application version), dependent or base
+configurations, functional and feature area tags, and industry tags.
+
+**Support recursive data sources** – Using this feature, ER output can be
+generated as a recursive tree of XML elements from ER format containing a single
+XML element definition for that. With this functionality, you can create a view
+of grouped hierarchical data such as a company's organizational structure.
+
+**Improved ER user dialog** – This new functionality allows you to design user
+dialog in ER models and formats keeping it configurable but accessible for
+already developed logic, instead of developing it as hard-coded solution in
+application code.
+
+Global coverage – Languages
+---------------------------
+
+This feature allows ISVs and partners to create a new language in Dynamics 365
+for Finance and Operations, Enterprise edition, including managing this process
+throughout upgrades and updates of source labels via extensions.
+
+Global coverage - Retail 
+-------------------------
+
+Regulatory Retail features for Sweden have been added to support local
+requirements for cash registers, including general requirements to continuous
+use of cash registers, as well as an example of integration of Dynamics 365 for
+Retail POS with a fiscal device (control unit).
+
+For more information, see [Cash registers for
+Sweden](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers).
+
+Reverse charge functionality for European countries/regions
+-----------------------------------------------------------
+
+You can configure reverse charge applicability rules per document type
+(purchase/sales order, vendor invoice, free text invoice, etc.) and a reverse
+charge group that combines items, items groups, and purchase/sales categories.
+The applicability rules are date effective. You can also mark individual sales
+tax codes in sales tax groups as applicable for reverse charge. The sales
+invoice report is adjusted to represent details of the applied reverse charge.
+The functionality has been made available to all European countries/regions.
+
+For more information, see [Reverse
+charges](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-reverse-charge).
+
+Substitution/adjustment invoices for Thailand
+---------------------------------------------
+
+The Substitution/adjustment invoice feature has been implemented to track
+printing of copies of invoices. When a copy of an invoice needs to be printed,
+it is required to specify the reason for the substitution. A special remark is
+printed in the invoice copy that includes the reason of the substitution and the
+number of copies printed.
+
+In addition, if the Adjustment option is used, it is also possible to adjust the
+customer information printed in the invoice, including the customer name,
+address, contact information, tax registration number, and branch number and
+name. The Adjustment invoice gets a new invoice number and date, and references
+the original invoice.
+
+Tax invoices and tax reports for Thailand
+-----------------------------------------
+
+Tax invoice and other tax report layouts have been adjusted to comply with local
+requirements in Thailand. Sales invoices, free text invoices, debit/credit
+notes, and project invoices can now be printed using the Thai tax invoice
+layout. The Purchase/Sales VAT reports and the Withholding Tax Certificate
+report have also been amended.
+
+Several enhancements have been implemented to the invoicing process. Tax
+registration number and Branch number are now required in the Vendor master. It
+is not possible to post a vendor invoice with a date in the future or older than
+6 months. Return reason is required for sales credit/debit notes. Original
+invoice reference and amount are copied to a sales credit/debit note.
+
+**Human resources**
+===================
+
+Analytics and Insights
+----------------------
+
+Gain deeper insight about your most valuable resource, your people, using the
+flexible and comprehensive analysis provided by Power BI. These reports contain
+data visualizations for each area of Talent that help you gain a deeper
+understanding of the human capability within your organization.
+
+Analytics and insights provide the following data and visualizations:
+
+-   Benefits management
+
+    -   Benefit plan analysis
+
+    -   Employee group enrollment metrics
+
+-   Compensation management
+
+    -   Compensation plan analysis
+
+    -   Compensation analysis
+
+    -   Position pay analysis
+
+-   Employee development
+
+    -   Employee skill analysis
+
+    -   Skill profiles
+
+    -   Skill analysis
+
+-   Learning
+
+    -   Course and registration analysis
+
+    -   Instructor availability analysis
+
+-   Personnel management
+
+    -   People metrics
+
+    -   Headcount and FTE analysis
+
+    -   Workforce demographics
+
+    -   Attrition analysis
+
+    -   Employee milestones
+
+Benefits workspace 
+-------------------
+
+Benefits workspace allows you to easily view and manage benefits offered to
+workers in a central location. This workspace lets you:
+
+-   Gain insight into benefits not being used by employees.
+
+-   View which benefits are being phased out at the end of the year.
+
+-   Keep track of benefit costs and how costs may have changed in the past year.
+
+Configurable business processes
+-------------------------------
+
+The Configurable business process feature allows you to create a business
+process template for processes that need to be completed within your
+organization. For example, your company may have a HR audit that is performed
+each year. A template can be created to track all the tasks that need to be
+completed as part of the audit process. Templates can be re-used or copied for
+recurring processes.
+
+After a template is created, you can start a process, and track it in the
+**Business process** workspace. When a business process is started, the tasks
+will be assigned to the appropriate individuals with the appropriate due date.
+
+Configurable business processes let you:
+
+-   Define templates for processes within your organization.
+
+-   Define calendars to apply to tasks for all processes.
+
+-   Define a process owner for each business process template.
+
+-   Analyze past due tasks and identify bottlenecks in the process.
+
+-   Provide instructions to all tasks.
+
+-   Assign checklists at any point in the process.
+
+-   Re-assign tasks and update due dates.
+
+Direct deposit
+--------------
+
+Within ESS individuals can set up their direct deposit information, which lets
+employees easily distribute their paycheck to multiple accounts.
+
+Direct deposit lets employees:
+
+-   Add multiple bank accounts.
+
+-   Set priority of bank disbursements.
+
+-   Direct any remaining funds to a specific account.
+
+Employee and manager self-service 
+----------------------------------
+
+Employee self-service (ESS) and Manager self-service (MSS) pages offer a single
+location for employees to view and update their personal information, as well as
+view upcoming activities. Employees can view all items that have been assigned
+to them and review their compensation.
+
+Managers can view anyone in their organization from a single workspace,
+including employee summaries, position assignments, compensation, and
+performance.
+
+Mobile - Company directory and My team mobile workspaces
+--------------------------------------------------------
+
+The mobile solution includes two new workspaces to provide a phone experience
+for employees and managers. All employees will have access to the company
+directory as a direct line of contact with others in the organization. Managers
+can view information about their team or any individual within their
+organization.
+
+Company directory mobile workspace provides the following:
+
+-   Contact list for all employees in the organization.
+
+-   Search for any employee or contractor.
+
+-   View public information.
+
+-   Call, text, or email individuals from the director.
+
+For more information, see [Company directory mobile workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/mobile-apps/company-directory-mobile-workspace).
+
+My team mobile workspace provides the following:
+
+-   View your direct reports and all employees in your organization.
+
+-   View team members and open position.
+
+-   View key information for employees and contractors.
+
+-   Send praise.
+
+For more information see [My team mobile workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/mobile-apps/manager-self-service-mobile-workspace).
+
+**Employee and Manager self-service**
+
+-   Update direct deposit information.
+
+-   View of all employees in a manager’s organization.
+
+-   See appropriate information in a combined workspace for employees and
+    managers, based on their assigned security role.
+
+Onboarding
+----------
+
+The onboarding process lets HR professionals create tasks to track the
+onboarding progress of pending employees, as well as recently hired employees.
+Because the onboarding process can vary between positions in a single
+organization, multiple onboarding checklists can be created to fit the
+organization’s hiring process.
+
+Onboarding lets you complete the following tasks:
+
+-   Define templates for onboarding.
+
+-   Define calendars to apply to tasks based on location or business function.
+
+-   Assign checklists at the time of hiring, or after an employee has
+    started. Checklists can be assigned to future-dated hires.
+
+-   Analyze past due tasks and identify bottlenecks in the process.
+
+-   Assign tasks to employees, positions, managers, and the onboarding employee.
+
+-   Provide instructions to all tasks.
+
+-   Define “deep links” to drive consumers of tasks directly to the right areas
+    to immediately enter data regarding the new employee without needing to
+    search or filter.
+
+-   Ability to re-assign tasks and update due dates. Update checklists
+    throughout the process by marking items as complete, adding new tasks, or
+    removing tasks.
+
+-   Update checklists throughout the process by marking items as complete,
+    adding new tasks, or removing tasks.
+
+**Intelligence**
+================
+
+Analytics and insights through Power BI
+---------------------------------------
+
+Gain deeper insight about your most valuable resource, your people, using the
+flexible and comprehensive analysis provide by Finance and Operations. By taking
+advantage of Power BI, Finance and Operations provides embedded analytics that
+contains data visualizations that allow you to gain a deeper understanding of
+the talent in your organization.
+
+Analytics and insights provide the following data and visualizations:
+
+-   Benefits management
+
+-   Benefit plan analysis
+
+-   Employee group enrollment metrics
+
+-   Compensation management
+
+-   Compensation plan analysis
+
+-   Compensation analysis
+
+-   Position pay analysis
+
+-   Personnel management
+
+-   People metrics
+
+-   Headcount and FTE analysis
+
+-   Workforce demographics
+
+-   Attrition analysis
+
+-   Employee milestones
+
+-   Recruitment management
+
+-   Recruitment project analysis
+
+-   Applicant analysis
+
+-   Recruiting costs
+
+-   Applicant status
+
+For more information, see [Power BI content](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page).
+
+Cash flow forecasting Power BI
+------------------------------
+
+Managing cash flow effectively is a key function of the finance division in your
+organization. Cash flow analysis Power BI reports provide visibility into your
+cash flow and provide forecasts that allow you to make better decisions leading
+to healthy cash flows.
+
+You can analyze your future cash inflow and outflows, both at a high-level
+summary and at detailed levels. You can analyze cash inflows by legal entity,
+bank account, and currency to get a better understanding of surpluses and short
+falls. Overall, you can get a temporal view of gaps and address them
+proactively.
+
+For more information, see [Cash flow forecasting](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forcasting).
+
+Cost accounting Power BI reports
+--------------------------------
+
+Cost accounting Power BI reports provide the ability to build rich
+visualizations for C-level managers highlighting the performance of the entire
+organization in a common currency
+
+These reports allow you to view performance at any organizational or individual
+cost object level, such as cost centers and product groups. You can validate
+overhead calculation and view the net change by cost object origin from cost
+center allocations with cost roll-up details.
+
+You can also combine statistical elements and cost elements by cost objects.
+
+For more information, see [Cost accounting analysis Power BI content](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack).
+
+Credit and collections management Power BI
+------------------------------------------
+
+The Credit and collections management Power BI content pack provides deep
+insights into your credit management and collection process to help you
+effectively manage your credit and collections. This is an indispensable tool
+for credit and collection managers, collections clerk, as well as account
+managers, in that it provides the information needed to make decisions backed by
+data. Using key measures such as days sales outstanding (DSO) and customers over
+credit limit, you can locate customers, customer groups, and regions that are
+contributing to poor collections. You can take corrective action backed by data
+to avoid process delays and bottlenecks.
+
+You can use this tool to provide rich insights to your account and sales
+managers on customers’ collection performance, to enable them to identify
+valuable customers. You can encourage your customer-facing staff to seek
+valuable partnerships backed by data, and encourage sales staff to promote
+products and services with the right combination of pricing and terms. Power BI
+reports help you to become a master of managing by exception. You can identify
+customers over or nearing their credit limits and understand the likelihood of
+payment delays and past due payments, so that you can intervene before it’s too
+late. Reports can be used to detect payments and customer groups before they
+reach past due stage, so you will be able to understand probabilities of past
+due payments and define alert conditions to notify you in case of exceptions.
+Comprehensive reporting and dashboard capabilities built into Power BI mean that
+your collections and account management teams can proactively manage their
+customers. 
+
+For more information, see [Credit and collections management Power BI content](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi).
+
+Embedded Power BI reports licensed for all users
+------------------------------------------------
+
+In the August 2016 update of Dynamics 365 for Operations (referred to as
+Dynamics AX 7.0), users could pin full page Power BI reports to their
+workspaces. With full page, interactive reports, you could explore data and
+perform what-if analysis over large volumes of data. Accessing and pinning Power
+BI reports required you to have a PowerBI.com subscription. As additional
+reports are delivered by Microsoft and our partner ecosystem, Power BI
+capability is becoming a crucial reporting option for all users of your
+organization.
+
+All user can now access Power BI reports based on Entity store, the operational
+data warehouse that is included with Dynamics 365 for Finance and Operations,
+Enterprise edition.
+
+No Power BI licenses are required to access these reports, which are embedded in
+the Finance and Operations application. If a user requires access to Power BI
+reports and functionality outside of this embedded experience, a Power BI
+license must be obtained separately. Features that were introduced to pin tiles
+and reports from PowerBI.com will continue to be supported.
+
+Embedded Practice manager Power BI content
+------------------------------------------
+
+The Practice manager Power BI content pack has been embedded into the Project
+management workspace **Analytics** tab.
+
+The Practice manager Power BI content pack is also available in the Shared
+assets library in Microsoft Dynamics Lifecycle Services (LCS).
+
+The Practice manager Power BI content was created for practice managers and
+project managers. It provides key metrics that are related to the projects that
+the organization is working on. The content gives an overview of the projects
+and related customers. The Power BI content pulls data from the project
+accounting aggregate measurements for Microsoft Dynamics 365 for Finance and
+Operations, Enterprise edition.
+
+The Practice manager Power BI content contains five report pages: one overview
+page and four pages that provide details about project costs, revenues, earned
+value management, and hour metrics that are split out across various dimensions.
+For more information, see [Practice manager Power BI content](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/practice-manager-power-bi).
+
+Fixed asset management workspace and embedded Power BI content 
+---------------------------------------------------------------
+
+The Fixed asset management workspace provides accountants quick access to their
+fixed asset data. It has information regarding asset acquisitions and disposals,
+as well as direct navigation to the depreciation proposal and fixed asset
+journal. The Find fixed assets section allows you to search for specific assets
+by number, group, name, location, or person responsible and easily view
+financial details about the assets and associated books.
+
+Embedded Fixed asset management Power BI reports provide CFOs and Operations
+management with deep insights into fixed assets, including acquisitions, book
+value, and depreciation.
+
+You can view key asset book lifetime metrics, such as net book value (NBV),
+depreciation, and accumulated depreciation by asset category and location. You
+can dive into patterns and understand trends that lie hidden beneath the data,
+and make strategic decisions, such as major upgrades and plant re-tooling
+proactively, backed with data.
+
+For more information, see [Fixed asset management workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-management-workspace).
+
+Power BI reporting with financial dimensions 
+---------------------------------------------
+
+Financial dimensions are user defined “configuration” data that enables the
+ledger chart of accounts to retain additional information. By adding financial
+dimensions, a user can configure additional data fields to be included with the
+chart of accounts as well as with Financial reports. This enables the ledger
+chart of accounts to be sliced and diced with those fields.
+
+This is very powerful in Financial analysis and reporting because you will be
+able to explore ledger data using the newly added financial dimensions. With
+this capability, when Entity store is refreshed, all available Financial
+dimensions are expanded within corresponding data tables. As a user, you can
+slice and dice your Power BI reports with ease.
+
+Ready-made Power BI reports in Finance benefit from this capability without a
+developer having to make any changes. However, as a partner or an ISV developer,
+you can model the ways in which financial dimensions are added to Entity store.
+When you define an aggregate measurement that is backed with financial dimension
+fields, Entity store refresh automatically expands the aggregate measurement by
+adding additional tables and relationships into the data model. 
+
+You can empower your users to create Power BI reports that leverage this
+capability. When you define a report with modeled financial dimensions, they can
+be refreshed to include expanded fields.
+
+For more information, see [Add financial dimensions to aggregate measurements](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements).
+
+Purchase spend analysis Power BI reports 
+-----------------------------------------
+
+The Purchase spend analysis content pack for Microsoft Power BI was created for
+purchasing managers and managers who are responsible for budgets. It's designed
+to help them monitor purchase spending. It uses purchase transactional data from
+Dynamics 365 for Finance and Operations, Enterprise edition and provides both an
+aggregate view of the company-wide purchase figures and a breakdown of purchase
+spending by vendor and product. Reports highlight changes in purchase spending
+over time. Therefore, they can be used to alert managers about positive and
+negative spending trends for individual vendors and products. Charts show
+purchase spending for different procurement categories and vendor groups.
+Category and regional managers might find it useful to use these charts to help
+identify changes in spending behavior. The content pack lets purchase managers
+and managers who are responsible for budgets to analyze purchase spending in the
+following ways: 
+
+-   Year-to-date purchase (by vendor group and individual vendors, procurement
+    category and individual products, and vendor location).
+
+-   Year-over-year purchase change (by vendor group and procurement category).
+
+The Purchase spend analysis Power BI content pack is available via the Lifecycle
+Services (LCS) Asset library and as an embedded report in Dynamics 365 for
+Finance and Operations, Enterprise edition.  
+For more information, see [Purchase content pack for Power BI](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/purchase-content-pack-for-power-bi).
+
+Purchasing analysis Power BI content
+------------------------------------
+
+The Purchasing analytics Power BI content pack equips purchasing managers with
+deep insights that enable them to streamline their processes, and manage the
+cash flow while building relationships with suppliers.
+
+Whether you are a distributor or a manufacturer relying on strategic suppliers
+or a professional services company leveraging services of suppliers, as a
+purchasing manager, you are responsible for managing vital relationships. With
+comprehensive visibility into orders, payments, and payables, you can manage
+processes and take action where needed.
+
+Power BI reports can be used foster relationships with your strategic suppliers
+by ensuring compliance with pre-negotiated payment terms. You can quickly dive
+into exceptions and delays to take corrective action, as well as analyze trends
+and define alerts to be notified in case of exceptions.
+
+As a purchasing manager, you contribute to the financial health of the company.
+Power BI reports let you identify large payments and decide whether you should
+negotiate early settlement discounts proactively. You can also analyze options
+such as paying early versus waiting for the due date. By taking a strategic view
+of payments, you can help to proactively manage cash flow.
+
+Monitor and improve the effectiveness of your internal processes by reviewing
+the case load of invoices. Get insights into key metrics such as Number of days
+spent from receipts to posting. Load balance invoice processing among your staff
+members by reviewing and forecasting the case load.
+
+Comprehensive reporting and Dashboarding capabilities built into Power BI
+enables your purchasing managers to monitor, analyze and take action backed by
+data. They can author reports and KPIs without help from IT and pin them to
+workspaces for contextual insights.
+
+Sales and profitability performance Power BI reports 
+-----------------------------------------------------
+
+This content pack was created for sales managers to monitor the key sales
+metrics of revenue, gross profit, and profit margins. It uses sales
+transactional data from Dynamics 365 for Finance and Operations, Enterprise
+edition and provides both an aggregate view of the company-wide sales figures
+and a breakdown of sales performance for customers and products. By highlighting
+changes in the revenue and profit growth over time, reports can be used to alert
+managers about positive and negative trends for individual customers and
+products. Category and regional managers will find it useful to have charts that
+compare revenue and profitability of different product categories and customer
+groups to each other to single out laggards and leaders. A comprehensive report
+that plots individual customer’s revenue versus profit margin offers account
+managers a data-backed foundation to attune their sales and marketing efforts to
+each customer’s respective profile. The Sales and profitability performance
+content pack enables sales managers to analyze sales performance by: 
+
+-   Revenue, year-to-date (by customer group and individual customers, sales
+    categories, and individual products and geographies).
+
+-   Revenue change, year-over-year (by customer regions and sales categories).
+
+Profitability can be analyzed by:
+
+-   Gross profit and profit margin (by customer groups and product sales
+    categories).
+
+-   Gross profit change, year-over-year.
+
+-   Customer profitability (by revenue versus gross margin).
+
+The Sales and profitability performance Power BI content pack is available via
+the Lifecycle Services (LCS) Asset library and as an embedded report in Dynamics
+365 for Finance and Operations, Enterprise edition.
+
+For more information, see [Sales and profitability performance Power BI content pack](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/sales-profitability-performance-content-pack).
+
+Vendor payment analysis Power BI
+--------------------------------
+
+Vendor payment analysis Power BI reports provide visibility into your open
+invoices and posted vendor payments, enabling better decisions in your account
+payable processes. You can analyze overdue invoices, upcoming invoices that are
+due in the future, as well as your discount history.
+
+For more information, see [Vendor payment workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace).
+
+Warehousing Power BI reports
+----------------------------
+
+With Warehousing Power BI reports, the warehouse and supply chain
+manager can easily take advantage of the rich visualization and dashboard
+capabilities to analyze warehouse performance in the past, present, and future.
+
+Warehouse and operations managers can monitor the key inbound, outbound, and
+inventory metrics. This feature uses product and other transactional data from
+Dynamics 365 for Finance and Operations, Enterprise edition to provide both an
+aggregate view of the warehouse performance and a breakdown for customers,
+vendors, product groups, and product sites and warehouses. For more information,
+see [Warehouse performance Power BI content](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content).
+
+**Manufacturing**
+=================
+
+Cross docking from production to transfer orders
+------------------------------------------------
+
+A new option allows you to do cross docking from a production or batch order to
+released transfer orders. This is relevant in manufacturing scenarios if the
+material that’s been produced is immediately transferred to remote warehouse and
+distribution centers and not stored at the production site. A work policy is
+used to query for cross docking opportunities. This includes the product and the
+location for the produced goods.
+
+Flushing principle Available at location 
+-----------------------------------------
+
+A new flushing principle, Available at location, allows you to indicate that
+material should be automatically consumed with a picking journal when it becomes
+available on the production input location. The material either becomes
+available when warehouse work for raw material picking is completed or it is
+already available on the production input location, when it is released from the
+production order.
+
+The new flushing principle can be helpful for long-running production orders,
+such as machine assemblies, from where material is picked on a continuous basis
+to be consumed in the area where the machine is assembled. With this new
+flushing principle, the material is automatically flushed when picking of the
+material is completed. This will help you maintain a correct value of work in
+progress without having to manually register and post the material consumption
+each time pick work is completed.
+
+Optimize scheduling for planned production orders with overlap jobs 
+--------------------------------------------------------------------
+
+The enhanced scheduling functionality optimizes how planned production orders
+are scheduled when there are overlapping jobs and resources with different
+calendars. With this setup, you can avoid scheduling planned orders too early.
+
+Production output location added to the resource group member 
+--------------------------------------------------------------
+
+The Resource group member is now part of the defaulting mechanism that you can
+use to find the production output location when you report a production or batch
+order as finished. The Resource group member supports a definition of the output
+location per resource, which allows for more granularity than when the output
+location is defined per resource group.
+
+The mechanism for defaulting the production output location, when reporting a
+production or batch order as finished, has so far been controlled by a
+defaulting hierarchy where the search for an output location starts by the
+resource group that was used for the last operation in the production route. If
+no output location was defined on the resource group, the system will use the
+output location defined on the warehouse as a fallback location.
+
+The defaulting hierarchy has now been enhanced to also include the Resource
+group member. The Resource group member associates the resource to a specific
+resource group and is date efficient with an Effective date and an Expiration
+date. The Resource group member is located on the **Resource group** page under
+the **Resources** FastTab or on the Resource page under the **Resource groups**
+FastTab. The default production output location is now found by traversing the
+hierarchy in this order: Resource group member, Resource group, Warehouse.
+
+Turn off planning processes per company
+---------------------------------------
+
+Master planning takes a snapshot of the item’s net requirements before planning.
+The last step in the planning process is to take into consideration any changes
+that may have occurred in the net requirements since the snapshot was taken. All
+changes to the item’s net requirements, such as a sales order line quantity
+increase or transfer order line quantity decrease, are logged in a table called
+**InventSumLogTTS**. This table is used to maintain the state of the dynamic
+plan, by keeping track of all changes in demand and supply that occurred since
+the last master planning regeneration. This table is only cleaned up by a master
+planning regeneration. If it is never cleaned, the table keeps growing and clogs
+system performance. If you do not intend to run master planning or any other
+planning processes (explosion, production order scheduling with finite material,
+CTP delivery date control) in a specific company, set the **Master planning** \>
+**Setup** \> **Master planning parameters** \> **Disable all planning
+processes** parameter to **Yes**. This will prevent records from being logged in
+the **InventSumLogTTS** table.
+
+When a new company is created, this parameter is by default set to **Yes**. This
+means that if you intend to implement planning processes in a company, you need
+to manually set **Master planning** \> **Setup** \> **Master planning
+parameters** \> **Disable all planning processes** parameter to **No**.
+
+Visual scheduling
+-----------------
+
+The capabilities of the production Gantt have been enhanced to allow jobs in the
+production order view to be moved along with dependent jobs. You can switch the
+sequence of jobs on a resource. You can also trigger re-scheduling from the
+Gantt and show resulting actions and delays, which allows the ability to
+re-assign a job to a different resource.
+
+Withdrawal kanban for warehouse processes
+-----------------------------------------
+
+Support has been added for the withdrawal of kanban in production to replenish
+material on the production floor for lean, discrete, and process manufacturing.
+This makes it possible to release work for kanban picking for the withdrawal
+kanban, so that items can be picked from non-fixed locations in the warehouse.
+
+**Mobile**
+==========
+
+Sales orders mobile app 
+------------------------
+
+You can now view sales order details, sales order lines, status, customer
+contact information, order taker contact information, and historical shipping
+transactions. This app empowers salespeople to gain valuable insights into
+customer information and sales orders at any time and in any place.
+
+**Other**
+=========
+
+Configuration data project templates
+------------------------------------
+
+Configuration data project templates provide over 20 pre-defined lists of
+entities for each module area. The templates are sequenced to handle entities
+that are dependent on other entities. You can add one or more templates to a
+configuration data project and the sequences will align correctly.
+
+For more information, see [Configuration data templates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates).
+
+**Project management \| Accounting**
+====================================
+
+Allow a project resource to delegate timesheet entry and submission to any user
+-------------------------------------------------------------------------------
+
+A timesheet resource can have a delegate assigned who can enter and submit
+timesheets on behalf of the resource. This feature provides the ability to
+assign a delegate who may not be employed in the same legal entity as the
+timesheet resource. The delegate does not need to be set up as a project
+resource. A new security role (Timesheet delegate user) has been created and
+must be assigned to anyone who is designated as a timesheet delegate. To use
+this feature, go to **Project management and accounting** \> **Setup** \>
+**Timesheets** \> **All delegates**.
+
+Assign resources to draft work breakdown structure
+--------------------------------------------------
+
+This feature allows project managers and resource managers the ability to assign
+resources to tasks in the work breakdown structure while it is in a draft
+status. Prior to this release, resources could only be assigned to tasks in work
+breakdown structures that are published.
+
+Before assigning resources to the tasks in the work breakdown structure, be sure
+to define your team for the project. To define the team for the project, go to
+**Project management and accounting** \> **Projects** \> **All projects** \>
+**Project team and scheduling** tab.
+
+After the project team is defined, open the **Work breakdown** structure on the
+**Plan** tab of the project. Create the tasks for the project. The resource can
+be assigned to the task while the work breakdown structure is still in draft
+status.
+
+Microsoft Project Client Application integration
+------------------------------------------------
+
+You can now open and manage the project work breakdown structure using Microsoft
+Project Client Application. The project manager can publish any changes back to
+Finance and Operations project work breakdown structure.
+
+Project time entry mobile workspace 
+------------------------------------
+
+As part of their daily work, project resources are often on-site or traveling.
+The **Project time entry** mobile workspace lets users enter their billable or
+non-billable time against a project on the mobile device of their choice.
+Therefore, project resources can record time entries anytime and anywhere. They
+can also view time entries that have already been recorded.
+
+Specifically, the **Project time entry** mobile workspace provides these
+features:
+
+-   For any selected date, enter the number of hours that you spent on a
+    specific task.
+
+-   Search by project name or customer to find the project to enter time for.
+
+-   Specify the category and activity for the time that you spent.
+
+-   Record the time as billable or non-billable for the project.
+
+-   Optionally enter any external or internal comments.
+
+To implement the **Project time entry** mobile workspace, see the related
+documentation for Microsoft Dynamics 365 for Operations on docs.microsoft.com.
+For more information, see [Project time entry mobile workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace).
+
+Rename project stages 
+----------------------
+
+There are now 8 default project stages that can be used for the different
+project types. This feature provides the ability to give the default project
+stages a different name for each legal entity and provide language translation
+support for the project stage name.
+
+To view or edit the project stage name, go to **Project management and
+accounting** \> **Setup** \> **Project management and accounting parameters**,
+and select the **Project stage** tab.
+
+The **Stage** column will display the default project stage names. To rename,
+you need to enter the new project stage name in the **Project stage** column,
+and then select which project types the project stage applies.
+
+To translate the project stage name to another language, simply click the
+**Language** drop-down button, and then select the language to translate.
+
+Worker can be a project resource in multiple legal entities at the same time 
+-----------------------------------------------------------------------------
+
+This feature provides support for a worker that has employment in more than one
+legal entity to also be a project resource in multiple legal entities at the
+same time. Prior releases only allowed a worker to be mapped to a single project
+resource.
+
+Included in this feature is the ability to view schedulable resources,
+non-schedulable resources, or all resources in the **Resources list** page. This
+will help project managers and resource managers better understand if a resource
+is schedulable.
+
+You can enter an As of date to display resource data, such as sales price and
+cost price, as of a specific date. By default, the current date will be used.
+This date will also be used to allow users to view the project resource data for
+workers that may already be terminated, by changing the As of date to include
+when the worker was employed. To use this feature, go to **Project management
+and accounting** \> **Project resources** \> **Resources list**.
+
+**Retail** 
+===========
+
+Next generation Retail extensibility framework
+----------------------------------------------
+
+The POS extensibility framework has been redesigned and enhanced to simplify the
+developer experience and to do seamless servicing. With the new extensibility
+patterns, you can customize the application without modifying the core retail
+code. The new message-driven extensibility framework for POS allows you to
+isolate the extension from standard to support continuous integration and
+deployment. You can manage and maintain your code at your own pace. With the new
+model, multiple ISVs/partners can customize the solution independently without
+any code merge. There is also support for multiple individual POS extension
+packages.
+
+The benefits of this include:
+
+-   Simplified customization model.
+
+-   Easy maintenance.
+
+-   No code merge.
+
+-   Reduced cost and time to implement.
+
+-   Always on the latest and greatest version.
+
+With this new extensibility framework, you can uptake any hotfix or upgrade
+easily without any code merge. Previously you needed to do a code merge and
+update your code if there were conflicts between your code and core application
+code. If you also had ISV code, you needed to involve them in the process of
+servicing, retesting, and re-deploying it. In the new model, the core POS
+solution is completely isolated from the extension layer, so you no longer need
+to do any code merge to uptake a hotfix or upgrade. You can apply a hotfix or
+upgrade seamlessly, and you can continuously service your own customizations
+without modifying the core application code.
+
+To isolate the extension and core application in this release, we modified the
+extensibility patterns and sealed the retail components code from the Retail
+SDK. To customize the application in the sealed world, extension points and APIs
+are exposed to support all customization scenarios. The following component code
+is sealed/removed from the Retail SDK in this release and is available either as
+binary or APIs for extension:
+
+-   POS (Modern POS and Cloud POS)
+
+-   Commerce runtime (CRT)
+
+-   Hardware station
+
+-   Channel DB
+
+-   Retail proxy
+
+**Even though the code is sealed or removed from the Retail SDK, we still
+support extensibility through the extension points and APIs. In the new model,
+you will follow the extensibility pattern and customize the product without
+inline changes.**
+
+All the retail components will be completely sealed, and no inline changes will
+be supported, starting with this release. For any extension, you need to follow
+the extensibility pattern and extend it. In addition to the above retail
+components sealing, headquarters will also be sealed (no overlayering). In
+Dynamics 365 for Retail, extensibility is supported only through extensions.
+
+Configuration driven extension
+------------------------------
+
+The attribute framework now supports configuration-driven development for
+customer and sales order entities. You can use the attribute framework to add
+custom fields in customer master, sales order, cash and carry transactions, or
+call center orders. In previous versions you needed to modify POS, CRT, channel
+DB. With this new model, this can be done through configuration without any code
+changes.
+
+Customer attributes - With the new customer attribute framework, you can use
+configurations to add new fields to the customer add/edit or customer details
+screens in POS or HQ. Configure the customer attribute group, and POS and HQ
+will automatically show the new attribute without any code change or
+customization. The screen layout designer will also show the customer attributes
+in the transaction screen - customer panel.
+
+Order attributes - The attribute framework supports attributes in cash and carry
+transactions, customer orders, and call center orders. You can edit and set
+values directly in HQ or in CRT/POS. All this can be done through
+configurations, without any database changes. (You can use customization for
+core business logic only, not for basic CRUD operations.)
+
+CRT handlers and extensible enums
+---------------------------------
+
+To simplify the customization experience, many of the CRT handlers have been
+enhanced to have more granular message handlers so you can easily override or
+add triggers at specific extension points instead of owning the entire service
+or operation. Additionally, a few enums have been changed to be extensible
+enums.
+
+Support for multiple Retail server extensions
+---------------------------------------------
+
+Previously there was support for only one Retail server library, and all the
+extensions needed to be merged into one extension. If a customer wanted to use
+both an ISV extension and a partner extension, they needed to either merge both
+sets of code or reference one extension library from the other. In this release,
+the customer or partner can have multiple independent Retail server extensions,
+which will work seamlessly without any manual merge and build required.
+
+POS extensibility enhancements
+------------------------------
+
+POS extensibility framework is enhanced to support seamless servicing and
+extension without over layering or inline changes. In this release, the core POS
+code is removed from the SDK to avoid inline changes, and we exposed the POS.API
+project in the Retail SDK to support extensibility. By referencing this POS.API,
+you can customize POS for your business scenario. The typescript retail proxy is
+also enhanced to support proxy generation by extension to isolate extension from
+ISVs and partners. The following list shows the extension points added in this
+release based on the new extensibility pattern. Refer to the Retail SDK
+documentation for the full list.
+
+-   New operation and views
+
+-   Modify existing views
+
+-   Add custom logic
+
+-   Order and customer attributes
+
+-   Triggers (pre-and post before any operations)
+
+-   POS Controls (refer the SDK documentation for all the controls information)
+
+    -   App bar, dialog, Custom controls, Data list, Date, Time
+
+    -   Menu, Pivot, Toggle switch
+
+    -   Loader
+
+-   Localization and logging frameworks
+
+Enhanced channel database extension model
+-----------------------------------------
+
+Any extension to channel DB can be done using the new extension schema without
+modifying the existing schema. Also, the CRT data service now exposes the
+primary key, so you can perform custom extension scenarios as post operation.
+
+CDX Extensibility Enhancements 
+-------------------------------
+
+You can extend the CDX seed data initialization class for custom tables and
+fields, using extension points. This helps you initialize the custom table and
+field in different environments without overlayering.
+
+Retail peripheral compatibility
+-------------------------------
+
+The Peripheral simulator for Retail, included in Dynamics 365 for Retail and
+Dynamics 365 for Finance and Operations, Enterprise edition, introduces an
+important update to the previously released peripheral simulator. New to the
+Peripheral simulator for Retail is a point of sale simulator that can test
+peripheral devices for compatibility with the Modern point of sale and Hardware
+station without the need to deploy those components.
+
+Depending on the scenario, the POS simulator can simulate the peripheral
+business logic built into the Modern POS, or it can simulate a standalone
+hardware station as it would interact with point of sale peripherals.
+Traditionally, testing devices for compatibility with the point of sale has
+required deployment of back office followed by configuration and deployment of
+the point of sale application. With point of sale simulation capability, testing
+peripherals for compatibility no longer requires product knowledge or access.
+This enables peripheral manufacturers to test their devices for compatibility
+without the need to ship physical devices to Microsoft or ISVs for testing.
+
+Supported devices:
+
+-   Line display
+
+-   Cash drawer
+
+-   MSR
+
+-   PIN pad
+
+-   Printer
+
+-   Scale
+
+-   Signature capture pad
+
+-   Bar code scanner
+
+For each supported device, the POS simulator provides the ability to test device
+specific capabilities for ad hoc testing, such as card swipe or displaying
+specific strings of text on a line display. Each supported device also has a
+specific self-test routine that is used for official device compatibility
+testing. Results from compatibility testing can be sent to Microsoft to be
+listed as approved for new deployments of Microsoft Dynamics 365 for Retail.
+
+For a description of the Peripheral simulator, see [Retail Peripheral
+simulator](https://docs.microsoft.com/en-us/unified-operations/%20retail/dev-itpro/retail-peripheral-simulator).
+
+For more information about the compatibility program and how to participate,
+contact <drpc@microsoft.com>.
+
+For information about peripherals that have been previously tested by Microsoft,
+visit [Microsoft-tested peripheral
+devices](https://ax.help.dynamics.com/en/wiki/retail-peripherals-overview/).
+This page will also be updated with a link to the POS simulator-tested devices
+as soon as that page becomes available.
+
+Integrated Retail workforce management
+--------------------------------------
+
+To be profitable in reducing margin environment, retailers are constantly
+striving to reduce their operational cost. For most retailers, retail staff cost
+is a significant portion of the operational cost and so by controlling this
+cost, they can make a significant impact on their bottom-line. Also, an
+empowered and productive workforce lends itself to improved customer experience.
+
+An integrated workforce management capability for retail stores is now built on
+the Common Data Services (CDS) stack. Because this feature is built using the
+latest MPOS extensibility framework, it provides a mechanism for Microsoft to
+innovate and deliver additional capabilities at a faster cadence, without
+breaking existing customer customizations.
+
+This release of retail workforce management provides the following capabilities:
+
+**For store managers**
+
+-   Create and publish shifts and schedules for workers in stores.
+
+-   Annotate shifts with instructions.
+
+-   Copy schedules from a previous week to the current week.
+
+-   Visibility of absence requests submitted by retail workers with the ability
+    to approve or reject requests.
+
+-   Visibility of shift swap and offer shift requests with the ability to
+    approve or reject requests.
+
+**For store associates**
+
+-   Visibility of shifts and assigned schedules, along with instructions for the
+    shift.
+
+-   Visibility of co-workers assigned to shifts.
+
+-   Submit absence requests.
+
+-   Submit request for shift swap with a co-worker. Submit request for ‘Offer
+    shift’.
+
+Omni-channel coupons
+--------------------
+
+To improve the omni-channel experience, retailers can offer their customers call
+center coupons and retail discounts as part of one feature. Retailers can define
+and issue coupons that can be redeemed and tracked across all channels. In
+Microsoft Dynamics AX 2012 and previous versions of Microsoft Dynamics 365 for
+Operations, call center coupons and discount codes on retail discounts were two
+unrelated features that shared a common purpose; they enabled discount targeting
+and discount controls for a retailer. With these features, a retailer could
+control which customers are entitled to the discount.
+
+Call center coupons are merged with retail discounts to provide a unified
+experience for managing and accepting coupons in all retail channels. The
+combined experience uses the codes and bar codes from coupons to apply the
+discount value from retail discounts.
+
+For more information about coupons, see [Create coupons for retail sales](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/retail-coupons).
+
+Discounts - Quantity limit and exclude discount lines
+-----------------------------------------------------
+
+You can add a quantity limit to simple discounts and specify a number on a
+discount, which limits the maximum quantity of a product or a category of
+products. The quantity limit value can be set at the discount header, but it
+will be applied at the discount line. When you set a quantity limit each
+discount line will have that limit applied independently.
+
+You can also include or exclude property to discount lines. You can define the
+set of products a discount applies to with a combination of include and exclude
+discount lines. For example, you can have a discount with one discount line for
+the **Fashion** category set to **Include** and a second discount line for the
+product **81327** set to **Exclude**. This discount would then apply to all
+products in the **Fashion** category tree except for product **81327**. All
+previously existing discount lines are set to **Include**. This makes it easier
+for merchandizers to define discounts for some scenarios.
+
+For more information about discounts, see [Price adjustments and discounts](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/price-adjustments-discounts).
+
+POS Inventory visibility improvements
+-------------------------------------
+
+POS users can get a clear picture of the inventory status of any product in
+their store. They can also check the inventory status in other stores and
+warehouses of the company, to help the customer quickly buy the product they
+want. The **Inventory lookup** form displays the physical reserved inventory and
+incoming order quantity, along with the total physical inventory to help the
+cashier with the following scenarios:
+
+-   Determine if the current store has the product before the cashier goes to
+    the storage room to look for it.
+
+-   If the stock of a product is running low, then enable the cashier/store
+    manager to check if the product has been ordered.
+
+-   If the current store is out of stock, then help the customer find another
+    store or warehouse that has the product in stock now or on order.
+
+-   Determine when and how much new stock is expected to be delivered to any
+    store or warehouse in the current store’s group. This future product stock
+    information is the available to promise information as configured in the
+    headquarters.
+
+POS search improvements
+-----------------------
+
+This search improvement feature improves both product and customer search
+scenarios with the goal of enabling cashiers and sales associates to quickly
+find what they are searching. The search bar allows cashiers to choose whether
+they want to search for products or customers prior to performing the search.
+The search bar can be configured to display the product suggestions while
+typing, which empowers cashiers to search for products more quickly. The
+retailers also have the flexibility to configure whether the product search
+results should match 'all search terms' or match 'any search term'.
+Additionally, the product search searches the **Searchable** property of the
+products, thus ensuring higher product discoverability. Customer search has the
+logic to search for customers with or without the phone number masks, and return
+reliable results every time.
+
+Upgrade and support for previous versions
+-----------------------------------------
+
+**Upgrade support** – For Dynamics AX 2012, you had the option to perform the
+data upgrade for Retail, where all historical data, posted or unposted, was
+upgraded. Now you can upgrade from Dynamics AX 2012 R3 to the current version of
+Dynamics 365 for Retail. The platform will support all the cumulative update
+versions of Dynamics AX 2012 R3 for upgrade. The back office and channel side
+are expected to be upgraded together for some customers on existing Dynamics AX
+2012 R3 versions while others can leverage the N-1 support. We will support all
+Dynamics AX 2012 R3 versions from a database upgrade perspective for HQ. The
+Retailer will upgrade both HQ and Channel if you want to upgrade to Dynamics 365
+for Retail without N-1 support.
+
+The Retail customer will also have an option for N-1 support if they are using
+Dynamics AX 2012 R3 CU11 or higher, if they don't want to disturb their existing
+store and run it against the new HQ. After the database upgrade is complete in
+HQ, the retargeting of the new Dynamics 365 Retail channel side components will
+happen as part of the LCS methodology, so the new channels can work with the
+upgraded DB. If the Retailer wants N-1 support for Channels when they upgrade to
+HQ, they will have to ensure that the channel is at least on 2012 R3 CU11 or
+above.
+
+**Support for previous versions** – Now you can upgrade Dynamics AX 2012 R3 to
+Dynamics 365 for Retail. N-1 Support will enable existing Dynamics AX 2012
+customers to adopt the cloud faster, with minimal interruption to their current
+business process. N-1 Support will enable existing Dynamics AX 2012 R3 CU 11 and
+CU12 customers to be able to leverage the benefits of cloud for their businesses
+using Dynamics 365 Operations as HQ in a hybrid model, while operating their
+stores in Dynamics AX 2012 R3 CU 11 or CU12. All of this occurs without
+interrupting the existing infrastructure. For the initial phase, we are
+targeting customers with Dynamics AX 2012 R3 CU 11 and 12 releases for N-1
+support. Because Dynamics AX 2012 store systems are on-premises and distributed,
+we will support customers' existing Dynamics 2012 R3 store systems connecting to
+Dynamics 365 Operations HQ after they upgrade to the CU 11 and CU 12 versions.
+This will ensure minimal disruption in store operations.
+
+Enabling N-1 support requires customers to install the N-1 components that will
+enable the Dynamics AX 2012 R3 CU 11 or CU12 stores to connect with the new HQ.
+If the customer is using a pre-CU 11 version, then they must upgrade to at least
+Dynamics AX 2012 R3 CU 11 to leverage the N-1 support.
+
+For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](https://docs.microsoft.com/en-us/unified-operations/%20retail/dev-itpro/overview-upgrade-n-minus1) and [N-1 installation and configuration](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1).
+
+**Social**
+==========
+
+Conversation view for private messages and Twitter replies 
+-----------------------------------------------------------
+
+Starting with this update, Social Engagement shows you any conversation that
+involves private messages (Facebook or Twitter) and Twitter replies of one of
+your social profiles. It displays the back and forth between two authors sorted
+by showing the latest post first. At the top, you will see the two authors,
+including the one that belongs to your team. It also shows the team members who
+answered as that social profile.
+
+For more information, see [View posts and conversations in Social Engagement](https://www.microsoft.com/en-us/dynamics/social-engagement-help-and-training/view-posts-and-conversations-in-social-engagement.aspx).
+
+LinkedIn engagement and acquisition
+-----------------------------------
+
+You can monitor LinkedIn Company Pages owned by your company, and engagement on
+posts and comments from Company Pages.
+
+**Supply chain management**
+===========================
+
+Batch and license plate confirmation 
+-------------------------------------
+
+Batch confirmation and license plate confirmation has been added to this release
+of Finance and Operations. With this enhancement, using a mobile device, you can
+confirm that the correct batch or license plate is being picked.
+
+In previous versions, batch and license plate confirmation for items was not
+supported. For more information, see [Batch and license plate confirmation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/batch-and-license-plate-confirmation).
+
+Consignment inventory
+---------------------
+
+Consignment inventory capabilities have been extended to allow for batch and
+serial number dimensions.
+
+Demand replenishment for raw material picking
+---------------------------------------------
+
+Wave demand replenishment has been enhanced to include production and Kanban
+demand replenishment and raw material picking.
+
+In previous versions, demand replenishment only included support for sales
+orders and transfer orders.
+
+Item and warehouse migration process uses advanced warehouse management 
+------------------------------------------------------------------------
+
+During a data upgrade, products are blocked if they are associated with a
+storage dimension group with the Pallet ID inventory dimension active. However,
+after the upgrade, you can use a set of migration options in the Change storage
+dimension group for items process to unblock products that were blocked during
+upgrade. As part of this process you can also use the Enable warehouse setup
+process to enable an existing warehouse to be used in warehouse management
+processes and get the pallet ID migrated to the License plate inventory
+dimension.
+
+Some of your items might already be associated with storage dimension groups
+where the Site, Warehouse, and Location inventory dimensions are active and
+physically tracked. In this case, you can use the Change storage dimension group
+for items process to enable those items to be used in warehouse management
+processes. This feature is useful if you want to use the warehouse management
+functionality for existing items.
+
+Movement of inventory with associated work in Warehouse management 
+-------------------------------------------------------------------
+
+You can now control which warehouse workers should be allowed to move reserved
+inventory. Also, previously, the work reservations that you could move where
+limited to Sales order, Transfer order issue, Transfer order receipt, and
+Purchase order.
+
+For more information, see [Movement of inventory with associated work in Warehouse management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/move-inventory-associated-work).
+
+Piece picking confirmation 
+---------------------------
+
+A new piece picking capability allows you to confirm each piece of inventory by
+picking or counting work on a mobile device. You can also use the quantity and
+unit of measure (UOM) that is associated with a scanned bar code. This new
+functionality works for receiving on inbound flows, including mixed license
+plate receiving, purchase order item, transfer order item, and load item.
+
+In previous versions, it was not possible to, for example, verify item
+quantities to be picked by scanning item bar codes or to scan bar codes for
+larger quantities.
+
+For more information, see [Piece picking confirmation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/piece-picking-confirmation).
+
+Product work confirmation for cluster picking 
+----------------------------------------------
+
+Dynamics 365 for Finance and Operations, Enterprise edition now supports item
+scanning and verification in the cluster picking flow.
+
+When cluster picking is applied, item confirmation is crucial to verify the
+items that are added to clusters. Now you can verify Items in cluster picking
+during the cluster picking process. In previous versions, it was not possible to
+confirm item bar codes and verify items using a bar code scanner. For more
+information, see [Product confirmation for cluster picking](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/cluster-picking-item-confirmation).
+
+Punch-out to external catalog from purchase requisition 
+--------------------------------------------------------
+
+Employees can now punch-out to external shopping sites from a purchase
+requisition. It only takes one click on a requisition line action and a
+selection of one of the available catalogs as shown on the screenshot. This
+means that you don't need to maintain a copy of the vendor catalog and risk that
+the information is out of date. Instead, employees can browse the external
+catalog on the vendor's shopping site, and select the items that they want.
+After they've finished, lines will be created for those items and they can be
+added to the requisition.
+
+When you set up the external catalog, you set it up across all legal
+entities for which the vendor you choose is set up. The employees access to the
+external catalog is determined by the procurement categories that are set up for
+the catalog and purchasing policies. 
+
+The cXML protocol is used to communicate between Finance and Operations and the
+external catalog residing at the vendor's system.
+
+For more information, see [Use external catalogs for PunchOut eProcurement](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/use-external-catalogs-for-punchout).
+
+System grouping on an open work list 
+-------------------------------------
+
+You can define your own filters to filter work lists. If, for example, you want
+to group work by load ID, or by a specific sales order production order, you can
+set up the filtering from the work list menu item.
+
+In previous versions, the filtering options were limited to work group and it
+was not possible to filter or group work using work lists.
+
+Vendor collaboration
+--------------------
+
+Vendor collaboration was enabled in earlier releases. In Dynamics 365 for
+Finance and Operations, Enterprise edition, we have enabled a seamless
+consumption of changes to a purchase order when a vendor accepts or suggests
+changes to a purchase order in the vendor collaboration interface and returns
+the changed purchase order to the purchasing professionals.
+
+-   The vendor’s acceptance of the purchase order without changes will
+    automatically update the confirmed delivery date on the purchase order, and,
+    optionally, confirm the order.
+
+-   The vendor’s suggested changes in quantities or delivery dates or the
+    purchase order header info can easily be transferred to the purchase order.
+    This is a one-click action for purchasing professionals when they receive
+    the response with the suggested changes from the vendor.
+
+Both improvements will reduce time spent in the purchasing department and allow
+the procurement personnel to handle their tasks more efficiently.
+
+For more information, see [Vendor collaboration with external vendors](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+
+Warehousing
+-----------
+
+Improvements have been made to the cycle counting process by allowing partial
+location counting. This helps to ensure data integrity while using the
+warehousing system.
+
+The integration between production and warehouse has been improved by enhancing
+the following features:
+
+-   Opportunistic X-dock for transfer order when reporting as finished.
+
+-   Pick for withdrawing kanbans.
+
+-   Enable demand replenishment for raw material picking.
+
+-   Enable ability to assign a resource instead of resource group at output
+    location.
+
+Usability has been improved by adding the following capabilities:
+
+Throughout the distribution center operations, enabling piece-by-piece picking
+and product confirmation for cluster picking processes.
+
+-   Batch ID and License plate ID confirmation scan.
+
+-   Ability to combine system grouping with work list menu items.
+
+For the next major release, the following features are currently planned and
+more will be added to this list:
+
+-   Allow reservation hierarchy to shift from batch below to batch above for the
+    same item, allowing for ad-hoc reservation of specific batches.
+
+-   Improve the rewaving process to increase the visibility of the pick work
+    created.
+
+-   Support a split load scenario for the outbound flow.
+
+-   Allow to release for a partial quantity of the finished good and release per
+    operation number.
+
+-   Allow for partial quantity of the opportunistic X-dock to transfer when
+    reporting as finished.
+
+**Talent**
+==========
+
+Talent is an Azure native solution which is fully managed Software-as-a-Service
+(SaaS). The new Talent solution provides a complete human resources solution
+providing unique capabilities and combines intelligent analytics along with the
+most modern collaboration and productivity tools. In addition to including most
+of the functionality that’s available in Human resources for Dynamics 365 for
+Finance and Operations, Enterprise edition, Talent also includes the following
+enhancements.
+
+Benefits workspace 
+-------------------
+
+Benefits workspace allows you to easily view and manage benefits offered to
+workers in a central location. This workspace lets you:
+
+-   Gain insight into benefits not being used by employees.
+
+-   View which benefits are being phased out at the end of the year.
+
+-   Keep track of benefit costs and how costs may have changed in the past year.
+
+Configurable business processes 
+--------------------------------
+
+The Configurable business process feature allows you to create a business
+process template for processes that need to be completed within your
+organization. For example, your company may have a HR audit that is performed
+each year. A template can be created to track all the tasks that need to be
+completed as part of the audit process. Templates can be re-used or copied for
+recurring processes.
+
+After a template is created, you can start a process, and track it in the
+Business process workspace. When a business process is started, the tasks will
+be assigned to the appropriate individuals with the appropriate due date.
+
+Configurable business processes let you:
+
+-   Define templates for processes within your organization.
+
+-   Define calendars to apply to tasks for all processes.
+
+-   Define a process owner for each business process template.
+
+-   Analyze past due tasks and identify bottlenecks in the process.
+
+-   Provide instructions to all tasks.
+
+-   Assign checklists at any point in the process.
+
+-   Re-assign tasks and update due dates.
+
+Direct deposit
+--------------
+
+Within Employee self-service (ESS), individuals can set up their direct deposit
+information, which lets employees easily distribute their paycheck to multiple
+accounts. 
+
+Direct deposit lets employees:
+
+-   Add multiple bank accounts.
+
+-   Set priority of bank disbursements.
+
+-   Direct any remaining funds to a specific account.
+
+Integration to Talent Attract 
+------------------------------
+
+The Attract experience facilitates the hiring of individuals by creating
+candidate profiles, conducting collaborative interviews and improving the return
+on investment of your hiring process. As positions are opened in Talent, hiring
+managers can use Attract to collaborate with their hiring and interview team to
+determine the best fit for their position.
+
+Candidates who have accepted offers will be available within core Talent to
+complete the hiring process. This provides a seamless hiring process between the
+hiring manager and HR.
+
+The integration to Talent Attract includes:
+
+-   Open positions created in core Talent, displaying in Attract.
+
+-   As candidates are interviewed, HR professionals can view metrics regarding
+    candidates.
+
+-   Candidates to hire display will in core Talent.
+
+Integration to Talent onboarding 
+---------------------------------
+
+The onboarding experience provides an immediate opportunity for a manager to
+engage with their newly hired employee and brings disparate onboarding tasks
+together in a single view. Often, a new employee will receive multiple tasks to
+complete that are ambiguous or are in multiple systems. Furthermore, the
+onboarding process is rarely personalized.
+
+Using onboarding, managers can create a personalized experience with welcome
+messages, videos, introductions to a new mentor, and job-specific information.
+The onboarding application also integrates with core Talent so that an employee
+can view their HR administrative tasks and team-specific tasks in a single
+view. A manager can customize the onboarding experience to fit their needs while
+HR professionals can ensure that the administrative tasks are being completed,
+and the employee has one, personalized onboarding experience.
+
+The integration includes:
+
+-   Human resource and manager-created onboarding tasks that display in
+    Onboarding to create a single experience for new employees.
+
+-   The employee can complete tasks from within Onboarding or within Employee
+    self-service (ESS).
+
+Manage attachments 
+-------------------
+
+Employees can now upload documents from within Employee self-service (ESS) by
+selecting the **Manage Attachments** option on the new **Attachments**
+card. Uploaded documents will be associated with an employee record and
+accessible from that employee’s **ESS** page and the **Worker** page by
+selecting the attachment icon. Furthermore, HR professionals can add documents
+to the employee record and make them visible to employees within their **ESS**
+page. On the employee’s **ESS** page, select the attachment icon in the upper
+right corner. When the restriction is set to **Internal**, the document will not
+be visible to the employee. When the restriction is set to **External**, the
+employee will be able to view the document from their **ESS** page.
+
+Manage attachments has the following enhancements:
+
+-   Allow sharing of documents between employees and HR.
+
+-   Documents uploaded on the employee form can be marked internal, so the
+    document is not visible to employees.
+
+-   Most recent documents are shown in ESS, so an employee can easily view
+    documents shared with them.
+
+Mobile - Company directory and My team mobile workspaces
+--------------------------------------------------------
+
+The mobile solution includes two new workspaces to provide a phone experience
+for employees and managers. All employees will have access to the company
+directory as a direct line of contact with others in the organization. Managers
+can view information about their team or any individual within their
+organization.
+
+Company directory mobile workspace provides the following:
+
+-   Contact list for all employees in the organization.
+
+-   Search for any employee or contractor.
+
+-   View public information.
+
+-   Call, text, or email individuals from the director.
+
+For more information, see [Company directory mobile workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/mobile-apps/company-directory-mobile-workspace).
+
+My team mobile workspace provides the following:
+
+-   View your direct reports and all employees in your organization.
+
+-   View team members and open position.
+
+-   View key information for employees and contractors.
+
+-   Send praise.
+
+For more information see [My team mobile workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/mobile-apps/manager-self-service-mobile-workspace).
+
+Onboarding
+----------
+
+The onboarding process lets HR professionals create tasks to track the
+onboarding progress of pending employees, as well as recently hired employees.
+Because the onboarding process can vary between positions in a single
+organization, multiple onboarding checklists can be created to fit the
+organization’s hiring process.
+
+Onboarding lets you complete the following tasks:
+
+-   Define templates for onboarding.
+
+-   Define calendars to apply to tasks based on location or business function.
+
+-   Assign checklists at the time of hiring, or after an employee has
+    started. Checklists can be assigned to future-dated hires.
+
+-   Analyze past due tasks and identify bottlenecks in the process.
+
+-   Assign tasks to employees, positions, managers, and the onboarding employee.
+
+-   Provide instructions to all tasks.
+
+-   Define “deep links” to drive consumers of tasks directly to the right areas
+    to immediately enter data regarding the new employee without needing to
+    search or filter.
+
+-   Ability to re-assign tasks and update due dates. Update checklists
+    throughout the process by marking items as complete, adding new tasks, or
+    removing tasks.
+
+-   Update checklists throughout the process by marking items as complete,
+    adding new tasks, or removing tasks.
+
+Pre-employment access 
+----------------------
+
+Sometimes businesses need newly hired workers to have access to their Employee
+self-service (ESS) page before their start date. The pending worker role gives
+users a limited view of ESS prior to their start date so that they can complete
+key tasks. New employees can add personal information, view their benefits, read
+their job details, view the company directory, and complete any questionnaires
+that are assigned to them.
+
+Pre-employment access gives you:
+
+-   A limited view of the Employee self-service page.
+
+-   Ability to add personal information and view key data.
+
+**Workforce management**
+========================
+
+Analytics and insights through Power BI
+---------------------------------------
+
+Gain deeper insight about your most valuable resource, your people, using the
+flexible and comprehensive analysis provided by Power BI. These reports contain
+data visualizations for each area of Talent that help you gain a deeper
+understanding of the human capability within your organization.
+
+Analytics and insights provide the following data and visualizations:
+
+-   Benefits management
+
+    -   Benefit plan analysis
+
+    -   Employee group enrollment metrics
+
+-   Compensation management
+
+    -   Compensation plan analysis
+
+    -   Compensation analysis
+
+    -   Position pay analysis
+
+-   Employee development
+
+    -   Employee skill analysis
+
+    -   Skill profiles
+
+    -   Skill analysis
+
+-   Learning
+
+    -   Course and registration analysis
+
+    -   Instructor availability analysis
+
+-   Personnel management
+
+    -   People metrics
+
+    -   Headcount and FTE analysis
+
+    -   Workforce demographics
+
+    -   Attrition analysis
+
+    -   Employee milestones

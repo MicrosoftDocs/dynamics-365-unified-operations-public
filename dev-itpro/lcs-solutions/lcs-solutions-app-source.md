@@ -1,14 +1,14 @@
----
+﻿---
 # required metadata
 
 title: LCS Solutions for AppSource home page
 description: Lifecycle Services (LCS) solution packages for Microsoft AppSource, are partner-designed and developed solutions that can be automatically deployed on Microsoft Azure to deliver an end-to-end solution using industry and vertical-specific content.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Lifecycle Services
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -25,8 +25,6 @@ ms.assetid: 6a5b4272-c6f3-4747-a7bf-9664d7950dad
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omarc
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
 
 ---
 
