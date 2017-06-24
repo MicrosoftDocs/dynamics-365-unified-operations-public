@@ -580,7 +580,7 @@
 #### [Recruiting](/dynamics365/unified-operations/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Retail channel performance ](/dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Sales and profitability performance](/dynamics365/unified-operations/dev-itpro/analytics/sales-profitability-performance-content-pack?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Vendor payments]/dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace)
+#### [Vendor payments](/dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Warehouse performance](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Workforce metrics](/dynamics365/unified-operations/dev-itpro/analytics/workforce-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
