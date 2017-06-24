@@ -59,12 +59,12 @@ The data set backing the **Security role access** report can be very large, caus
 
 Expanding a role shows the category of objects the role has access to. Expanding one of the object types will show a detailed list of each object of that type included in the role.
 
-Security Duty Assignments
+Security duty assignments
 -------------------------
 
-The Security duty assignments report provides a view of all the duties contained within a role. This role can be configured to run on any collection of roles to ensure that segregation of duties is maintained between roles. By default, the report will include all roles, to limit the roles included leverage the filtering provided in the “Records to include” section.
+The **Security duty assignments** report provides a view of all the duties contained within a role. This role can be configured to run on any collection of roles to ensure that segregation of duties is maintained between roles. By default, the report will include all roles. To limit the roles included leverage the filtering provided in the **Records to include** section.
 
-![](media/9d71783ca5d3003a6837438429e71ff9.png)
+![Security duty assignments](media/9d71783ca5d3003a6837438429e71ff9.png)
 
 Expanding a role in the Security duty assignments report will show each duty assigned to the role, along with details of the duty.
 
