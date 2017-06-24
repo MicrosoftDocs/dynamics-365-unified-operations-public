@@ -208,27 +208,38 @@ Use the following procedure to add a DNS zone.
 
 #### Set up an A record for AOS
 
-In the new DNS zone, create one A record that is named **ax.d365ffo.onprem.contoso.com** for each Service Fabric cluster node of the **AOSNodeType** type. Don't create A records for the other node types.
+In the new DNS zone, create one A record that is named **ax.d365ffo.onprem.contoso.com** for **each** Service Fabric cluster node of the **AOSNodeType** type. Don't create A records for the other node types.
 
 1. Right-click the new zone, and then click **New Host**.
-2. Enter the name and IP address of the Service Fabric node (10.179.108.12), and then click **Add Host**.
+2. Enter the name and IP address of the Service Fabric node (e.g. 10.179.108.12), and then click **Add Host**.
 
 #### Set up an A Record for the orchestrator
 
-In the new DNS zone, create an A record that is named **sf.d365ffo.onprem.contoso.com** for each Service Fabric cluster node of the **OrchestratorType** type. Don't create A records for the other node types.
+In the new DNS zone, create an A record that is named **sf.d365ffo.onprem.contoso.com** for **each** Service Fabric cluster node of the **OrchestratorType** type. Don't create A records for the other node types.
 
 1. Right-click the new zone, and then click **New Host**.
-2. Enter the name and IP address of the Service Fabric node (10.179.108.15), and then click **Add Host**.
+2. Enter the name and IP address of the Service Fabric node (e.g. 10.179.108.15), and then click **Add Host**.
 
 #### Join VMs to the domain
 
-Join the VMs to the domain by completing the steps in [How to join Windows Server 2016 to an Active Directory domain](http://www.tomsitpro.com/articles/join-windows-server-2016-to-ad-domain,2-1063.html). Alternatively, use the Windows PowerShell script.
+Join each of the VMs to the domain by completing the steps in [How to join Windows Server 2016 to an Active Directory domain](http://www.tomsitpro.com/articles/join-windows-server-2016-to-ad-domain,2-1063.html). Alternatively, use the Windows PowerShell script.
 
 ```
 $domainName = Read-Host -Prompt 'Specify domain name (ex: contoso.com)'
 Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter domain credential')
 Restart-Computer
 ```
+#### Disable User Access Control 
+
+Execute the below script to disable the User Access Control on **every** Service Fabric node.
+```
+$RegPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"
+New-ItemProperty -Path $RegPath -Name "EnableLUA" -Value 0 -PropertyType "DWORD" -Force
+New-ItemProperty -Path $RegPath -Name "ConsentPromptBehaviorAdmin" -Value 0 -PropertyType "DWORD" -Force
+New-ItemProperty -Path $RegPath -Name "EnableUIADesktopToggle" -Value 0 -PropertyType "DWORD" -Force
+New-ItemProperty -Path $RegPath -Name "LocalAccountTokenFilterPolicy" -Value 1 -PropertyType "DWORD" -Force
+```
+**Reboot the node after the script completes successfully.**
 
 #### Add prerequisite software to VMs
 
@@ -584,7 +595,7 @@ $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$li
 
     ```
     GRANT VIEW SERVER STATE TO axdbadmin
-    GRANT VIEW SERVER STATE TO contososqlao\svc-AXSF$
+    GRANT VIEW SERVER STATE TO [contososqlao\svc-AXSF$]
     ```
 
 ### Configure the Financial Reporting database
