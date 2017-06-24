@@ -143,7 +143,7 @@ The computer must meet all system requirements for installing and using the foll
 ## Requirements for development on local VMs
 For information about the requirements for development on local virtual machines (VMs), see [VM running on-premises](../dev-tools/access-instances.md).
 
-# System requirements for all deployments
+# System requirements for on-premises deployments
 
 ## Network requirements
 Finance and Operations (on-premises) can work on networks that use Internet Protocol Version 4 (IPv4) or Internet Protocol Version 6 (IPv6). Consider the network environment when you plan your system and use the following guidelines.
@@ -232,7 +232,63 @@ The following table lists the number of processors and the amount of random-acce
 *These numbers are being validated by our preview customers and may be adjusted as needed based on that feedback.
 **Orchestrator is designated as the primary node type and will be used to run the Service Fabric services as well.
 
+**Backend SQL Server and AD initial estimates**
 
+[![backend SQL server and AD initial estimates](./media/system-reqs-on-premises-02.png)](./media/system-reqs-on-premises-02.png) 
+
+*SQL Server sizes are highly dependent on workloads. For more information, see the “Hardware sizing for on-premises environments” section.
+
+## Storage
+
+- **AOS** - Finance and Operations (on-premises) will use a Server Message Block (SMB) 3.0 share to store unstructured data. For more information, see [Storage Spaces Direct in Windows Server 2016](https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/storage-spaces-direct-overview).
+- **SQL** – Viable options:
+    - A highly available solid-state drive (SSD) setup.
+    - A storage area network (SAN) optimized for OLTP throughputs.
+    - High performance Direct-attached storage (DAS) 
+- **SQL and data management IOPS** – The storage for both data management and SQL Server should have at least 2,000 input/output operations per second (IOPS). Production IOPS depends on many factors. For more information, see the “Hardware sizing for on-premises environments” section. 
+- **Virtual machine IOPS** – Each virtual machine should have at least 100 write IOPS.
+
+## Virtual host requirements
+When you set up the virtual hosts for a Finance and Operations (on-premises) environment, refer to the following guidelines: [Plan and prepare your Service Fabric cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) and [Describing a service fabric cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-resource-manager-cluster-description). Each virtual host should have enough cores for the infrastructure that is being sized. Multiple advanced configurations are possible, where SQL Server resides on physical hardware but everything else is virtualized. If SQL Server is virtualized, the disk subsystem should be a fast SAN or the equivalent. In all cases, make sure that the basic setup of the virtual host is highly available and redundant. In all cases, when virtualization is used, no VM snapshots should be taken.
+
+## Software requirements for all server computers
+The following software must be present on a computer before any Finance and Operations (on-premises) components can be installed:
+
+- Microsoft .NET Framework 4.5.1 or higher
+- Service Fabric
+For more information, see [Plan and prepare your Service Fabric cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+
+## Supported server operating systems
+The following table lists the server operating systems that are supported for Finance and Operations components.
+
+| Operating system                                     | Notes                                                                                  |
+|------------------------------------------------------|----------------------------------------------------------------------------------------|
+| Microsoft Windows Server 2016 Datacenter or Standard | These requirements are for the database and the Service Fabric cluster that hosts AOS. |
+
+## Software requirements for database servers
+
+- Only 64-bit versions of SQL Server 2016 are supported.
+- In a production environment, we recommend that you install the latest cumulative update (CU) for the version of SQL Server that you’re using.
+- Finance and Operations (on-premises) supports Unicode collations that are case-insensitive, accent-sensitive, kana-sensitive, and width-insensitive. The collation must match the Windows locale of the computers that are running AOS instances. If you’re setting up a new installation, we recommend that you select a Windows collation instead of a SQL Server collation. For more information about how to select a collation for a SQL Server database, see the [SQL Server documentation](https://docs.microsoft.com/en-us/sql/sql-server/sql-server-technical-documentation).
+The following table lists the SQL Server versions that are supported for the Finance and Operations databases. For more information, see the minimum hardware requirements for [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2016).
+
+| Requirement                                                      | Notes                                                                                                                     |
+|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| Microsoft SQL Server 2016 Standard Edition or Enterprise Edition | For the hardware requirements for SQL Server 2016, see [Hardware and Software Requirements for Installing SQL Server 2016](https://docs.microsoft.com/en-us/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). |
+
+## Software requirements for client computers
+The Microsoft Dynamic 365 for Operations web application can run on any device with an HTML5.0 compliant web browser. Specific device/browser combinations that Microsoft has confirmed include:
+
+- Microsoft Edge (latest publicly available version) on Windows 10
+- Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
+- Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet
+- Apple Safari (latest publicly available version) on Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) or 10.12 (Sierra), or Apple iPad
+
+## Software requirements for Active Directory Federation Services 
+Use Active Directory Federation Services (AD FS) 3.0.
+
+## Hardware and software requirements for Retail components
+Finance and Operations (on-premises) does not include the Retail components at this time.
 
 See also
 --------
