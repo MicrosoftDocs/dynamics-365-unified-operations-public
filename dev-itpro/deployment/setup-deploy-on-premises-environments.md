@@ -164,7 +164,7 @@ Self-signed certificates can be used only for testing purposes. For convenience,
 | Service Fabric Client certificate            | This certificate is used by clients to view and manage the Service Fabric cluster. | |
 | Encipherment Certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords. | <p>The certificate key usage must include Data Encipherment (10) and should not include Server Authentication or Client Authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-secret-management).</p> |
 | AOS SSL Certificate                          | <p>This certificate is used as the Server certificate that is presented to the client for the AOS website. It's also used to enable Windows Communication Foundation (WCF)/Simple Object Access Protocol (SOAP) certificates.</p><p>The Service Fabric Server certificate can be used here if it's a wildcard certificate.</p> | <p>The domain name of the certificate must match the DNS zone where AOS and Service fabric are hosted.</p><p>For example, the domain name of the certificate might be \*.d365ffo.onprem.contoso.com, \*.onprem.contoso.com, or \*.contoso.com.</p><p>If you use a wildcard certificate, the wildcard applies to only one level. A subdomain, SAN, must be applied to the certificate if it's more than one level, such as \*.contoso.com in the previous example.</p> |
-| Session Authentication certificate           | This certificate is used by AOS to help secure a user's session information. This is also the File Share Certificate that will used at the time of deployment from LCS. | |
+| Session Authentication certificate           | This certificate is used by AOS to help secure a user's session information. | This is also the **File Share** Certificate that will used at the time of deployment from LCS. |
 | Data Encryption and Data Signing certificate | These certificates are used by AOS to encrypt sensitive information. | |
 | Financial Reporting client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and AOS. | |
 | Reporting Certificate                        | This certificate is used to help secure the communication between SSRS and AOS. | |
@@ -487,14 +487,26 @@ Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.
 
 ### Set up SQL Server
 
-1. Install SQL Server 2016 with high availability, either as clustered SQL that is backed by SAN or in an Always-On configuration. Verify that the Database Engine, Reporting Services, Full Text Search, and Management Tools are already installed.
+1. Install SQL Server 2016 with high availability, either as clustered SQL that is backed by SAN or in an Always-On configuration. Verify that the **Database Engine, Reporting Services, Full Text Search, and Management Tools** are already installed.
 2. Run the SQL Service as a domain user.
-3. Get an SSL certificate from a CA to configure Finance and Operations. For testing purposes, you can create and use the following self-signed certificate.
+3. Get an SSL certificate from a CA to configure Finance and Operations. For testing purposes, you can create and use a self-signed certificate.
 
+**Self-signed certificate for Clustered SQL instance**
    ```
    New-SelfSignedCertificate -CertStoreLocation "cert:\CurrentUser\My" -DnsName "DAX7SQLAOSQLA.contososqlao.com" -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -Subject "DAX7SQLAOSQLA.contososqlao.com"
    ```
+**Self-signed certificate for Always-On SQL instance**
+```
+#https://www.derekseaman.com/2014/11/sql-2014-alwayson-ag-pt-13-ssl.html
 
+# Create certificate for each SQL Node (i.e. 2 nodes = 2 certificates)
+# Run script on each node
+$computerName = $env:COMPUTERNAME.ToLower() 
+$domain = $env:USERDNSDOMAIN.ToLower()
+$listenerName = 'dax7sqlaosqla' 
+$cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$listenerName.$domain", $listenerName, $computerName -Provider 'Microsoft Enhanced RSA and AES Cryptographic Provider'
+
+```
 4. Using the certificate, complete the steps in [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/en-us/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console) to configure SSL on SQL Server.
 5. For each node of the cluster, follow these steps. Make sure that you make the changes on the non-active node and fail over to it after changes are made.
 
