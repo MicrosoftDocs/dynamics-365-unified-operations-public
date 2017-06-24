@@ -37,7 +37,7 @@ User role assignments
 
 The **User role assignments** report generates a view of the current user role assignments in your system. By default, the report includes all users with roles assigned. You can optionally limit the report to a specific set of users by entering a list of users when generating the report. On the **User role assignments** parameters pane, go to **Records to include** > **Filter.** From here you can add or remove filters to the list of users the report will be generated for.
 
-![User role assignments](media/841ef8a83a7c921c5524e40b084f90e0.png)
+![User role assignments](media/User-role-assignments.PNG)
 
 For each user in the report a list of roles given, along with any restrictions at the legal entity or organization level.
 
