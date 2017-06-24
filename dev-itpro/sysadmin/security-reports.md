@@ -66,9 +66,10 @@ The **Security duty assignments** report provides a view of all the duties conta
 
 ![Security duty assignments](media/security-duty-assignments.png)
 
-Expanding a role in the Security duty assignments report will show each duty assigned to the role, along with details of the duty.
+Expanding a role in the **Security duty assignments** report will show each duty assigned to the role, along with details of the duty.
 
-![](media/a6142c903497381171bf6c6b27495895.png)
 
 Any of the above reports can be set to run as a batch job by going to the “Run in the background” section of the reports parameter form. From the parameters for set “Batch processing” to Yes, then provide a batch task job name, batch group, and whether the job should run as Private or Critical. The report will then be created when the batch task runs.
+
+![](media/a6142c903497381171bf6c6b27495895.png)
 
