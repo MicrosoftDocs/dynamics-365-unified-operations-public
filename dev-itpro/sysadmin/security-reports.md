@@ -55,7 +55,7 @@ The **Security role access** report provides a view of the effective permissions
 
 The data set backing the **Security role access** report can be very large, causing the report to take some time to run. If there have been no changes to security roles since the last time the report was run, you can skip building the report by setting the **Rebuild collection** option to **No** on the report parameters pane. This will render the report from the existing data set. If it is the first time the report has run, or there could be changes to the role definitions, the **Rebuild collection** option should be set to **Yes**. You can optionally limit the roles to be included in the report by adding a filter under **Records to include**.
 
-![Security role access](media/95065a2382fb72c9d771ac6314006f4d.png)
+![Security role access](media/security-role-access.png)
 
 Expanding a role shows the category of objects the role has access to. Expanding one of the object types will show a detailed list of each object of that type included in the role.
 
