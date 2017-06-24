@@ -450,7 +450,8 @@ Only user accounts that have the Global Administrator directory role can add cer
 
 ### Set up file storage
 
-You must set up two highly available SMB 3.0 file shares.
+You must set up two highly available SMB 3.0 file shares. For information about how to enable SMB 3.0, see[SMB Security Enhancements](https://technet.microsoft.com/en-us/library/dn551363(v=ws.11).aspx#BKMK_disablesmb1).
+Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.0 to SMB 1.0. Because of this, and to take advantage of the full capabilities of SMB encryption, we strongly recommend that you disable the SMB 1.0 server
 
 > [!NOTE]
 > To help guarantee that your data is protected while it's at rest in your environment, BitLocker Drive Encryption must be enabled on every machine. For information about how to enable BitLocker, see [BitLocker: How to deploy on Windows Server 2012 and later](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-how-to-deploy-on-windows-server).
