@@ -44,11 +44,9 @@ For each user in the report a list of roles given, along with any restrictions a
 Role to user assignments 
 -------------------------
 
-The **Role to user assignment** report provides an aggregation of user role assignments group by the security role, rather than by user. The same method for filtering the set of users can be applied to this report as described for the **User role assignments** report.
+The **Role to user assignment** report provides an aggregation of role assignments. Expanding a role in the report shows the list of users assigned to the role, and expanding the user name shows any restrictions the role has applied. The same method for filtering the set of users can be applied to this report as described for the **User role assignments** report.
 
-![](media/cc339ed5f8b39f4bc9908a16f450f44d.png)
-
-Expanding a role shows the list of users assigned to the role and expanding the user shows any restrictions the role has applied.
+![Role to user assignment](media/role-to-user-assignments.png)
 
 Security Role Access
 --------------------
