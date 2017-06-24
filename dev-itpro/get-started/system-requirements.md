@@ -234,7 +234,7 @@ The following table lists the number of processors and the amount of random-acce
 
 **Backend SQL Server and AD initial estimates**
 
-[![backend SQL server and AD initial estimates](./media/system-reqs-on-premises-02.png)](./media/system-reqs-on-premises-02.png) 
+[![backend SQL server and AD initial estimates](./media/system-reqs-on-premises-02.PNG)](./media/system-reqs-on-premises-02.PNG) 
 
 *SQL Server sizes are highly dependent on workloads. For more information, see the “Hardware sizing for on-premises environments” section.
 
