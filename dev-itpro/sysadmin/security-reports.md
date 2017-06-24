@@ -64,7 +64,7 @@ Security duty assignments
 
 The **Security duty assignments** report provides a view of all the duties contained within a role. This role can be configured to run on any collection of roles to ensure that segregation of duties is maintained between roles. By default, the report will include all roles. To limit the roles included leverage the filtering provided in the **Records to include** section.
 
-![Security duty assignments](media/9d71783ca5d3003a6837438429e71ff9.png)
+![Security duty assignments](media/security-duty-assignments.png)
 
 Expanding a role in the Security duty assignments report will show each duty assigned to the role, along with details of the duty.
 
