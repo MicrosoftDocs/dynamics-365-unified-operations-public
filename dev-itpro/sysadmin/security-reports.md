@@ -48,14 +48,14 @@ The **Role to user assignment** report provides an aggregation of role assignmen
 
 ![Role to user assignment](media/role-to-user-assignments.png)
 
-Security Role Access
+Security role access
 --------------------
 
-The Security role access report provides a view of the effective permissions provided by each security role. This report will provide a flattened list of permissions grouped by type across all sub-roles, duties, and privileges contained in the role.
+The **Security role access** report provides a view of the effective permissions provided by each security role. This report will provide a flattened list of permissions grouped by type across all sub-roles, duties, and privileges contained in the role.
 
-The data set backing the Security role access report can be very large, causing the report to take longer to run. If there have been no changes to security roles since the last time the report was run, you can skip building the report by setting the “Rebuild collection” option to No on the report parameters form. This will render the report from the existing data set. If it is the first time the report has run, or there could be changes to the role definitions, the “Rebuild collection” should be set to yes. You can optionally limit the roles to be included in the report by adding a filter under “Records to include.”
+The data set backing the **Security role access** report can be very large, causing the report to take some time to run. If there have been no changes to security roles since the last time the report was run, you can skip building the report by setting the **Rebuild collection** option to **No** on the report parameters pane. This will render the report from the existing data set. If it is the first time the report has run, or there could be changes to the role definitions, the **Rebuild collection** option should be set to **Yes**. You can optionally limit the roles to be included in the report by adding a filter under **Records to include**.
 
-![](media/95065a2382fb72c9d771ac6314006f4d.png)
+![Security role access](media/95065a2382fb72c9d771ac6314006f4d.png)
 
 Expanding a role shows the category of objects the role has access to. Expanding one of the object types will show a detailed list of each object of that type included in the role.
 
