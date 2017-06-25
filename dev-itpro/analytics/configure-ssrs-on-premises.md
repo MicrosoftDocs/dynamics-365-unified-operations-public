@@ -56,7 +56,6 @@ Use the steps in this topic to configure SQL Server Reporting Services (SSRS) fo
     [![web portal url tab](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
     
   After the Portal is configured, the **Web Portal** tab will match the following graphic.
-  
     [![web portal tab](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)
     
 8. Click the reports URL to view the SQL Server Reporting Services web portal. 
@@ -73,7 +72,6 @@ Use the steps in this topic to configure SQL Server Reporting Services (SSRS) fo
     [![execution account tab](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)
     
   Don’t change the default settings on the **Encryption Keys** tab.
-  
     [![encryption keys tab](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
     
 12. Click the **Subscription Settings** tab, and verify that the settings match the following graphic.
@@ -81,11 +79,9 @@ Use the steps in this topic to configure SQL Server Reporting Services (SSRS) fo
     [![subscription settings tab](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
     
   Don’t change the default settings on the **Scale-out Deployment** tab.
-  
     [![scale-out deployment tab](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
     
   Don’t change the default settings on the **Power BI Integration** tab.
-  
     [![power bi integration tab](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
     
 13. Click **Exit** to close the **Reporting Services Configuration Manager**.
