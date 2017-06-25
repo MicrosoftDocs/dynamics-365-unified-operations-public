@@ -2,7 +2,7 @@
 # required metadata
 
 title: On-premises deployment landing page
-description: This topic provides information and links tocontent about on-premises deployments.
+description: This topic provides information and links to content about on-premises deployments.
 author: kfend
 manager: AnnBe
 ms.date: 06/24/2017
@@ -31,10 +31,10 @@ ms.dyn365.ops.version: Platform update 8
 ---
 # On-premises deployment landing page
 
-You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition on-premises. When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment. This topic provides links to content that contains information specific to on-premises deployments.
+You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises). When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment. This topic provides links to content that contains information specific to on-premises deployments.
 
 ## Get started
-- [Dynamics 365 for Finance and Operations, (Enterprise edition on-premises) overview](./deployment/setup-deploy-on-premises-environments.md)
+- [Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) overview](./deployment/setup-deploy-on-premises-environments.md)
 - [System requirements](./get-started/system-requirements.md)
 - [Hardware sizing for on-premises environments](./get-started/hardware-sizing-on-premises-environments.md)
 - [Dynamics 365 for Operations versions and update policy](./migration-upgrade/versions-update-policy.md)
