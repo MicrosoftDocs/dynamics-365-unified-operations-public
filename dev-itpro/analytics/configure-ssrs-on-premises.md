@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 8
 ---
 # Configure SQL Server Reporting Services for an on-premises deployment
 
-Use the steps in this topic to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition on-premises deployment.
+Use the steps in this topic to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) deployment.
 
 1. Open the Reporting Services Configuration Manager application.
 2. Leave the default **Server name**, which should be the name of the current machine, and the **Report Server Instance**, **MSSQLSERVER**. 
@@ -51,7 +51,7 @@ Use the steps in this topic to configure SQL Server Reporting Services (SSRS) fo
 
     [![database tab](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)
     
-7. Click the **Web Portal URL** tab and verify that the settings match the following graphic. Note: You must click **Apply** to create and properly configure the Portal.
+7. Click the **Web Portal URL** tab and verify that the settings match the following graphic. **Note:** You must click **Apply** to create and properly configure the Portal.
 
     [![web portal url tab](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
     
