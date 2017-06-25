@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: On-premises deployment landing page
+title: On-premises deployment
 description: This topic provides information and links to content about on-premises deployments.
 author: kfend
 manager: AnnBe
