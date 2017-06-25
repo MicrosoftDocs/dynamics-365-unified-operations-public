@@ -37,7 +37,7 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 - [Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) overview](./deployment/setup-deploy-on-premises-environments.md)
 - [System requirements](./get-started/system-requirements.md)
 - [Hardware sizing for on-premises environments](./get-started/hardware-sizing-on-premises-environments.md)
-- [Dynamics 365 for Operations versions and update policy](./migration-upgrade/versions-update-policy.md)
+- [Online service and on-premises software lifecycle policy](./migration-upgrade/versions-update-policy.md)
 - [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](./get-started/purchase-on-premises.md)
 
 ## Onboard
