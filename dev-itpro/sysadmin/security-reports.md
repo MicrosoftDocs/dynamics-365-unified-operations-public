@@ -2,7 +2,7 @@
 # required metadata
 
 title: Out-of-the-box security reports
-description: Dynamics 365 for Finance and Operations, Enterprise edition provides a set of rich, security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role.
+description: Dynamics 365 for Finance and Operations, Enterprise edition provides a set of rich security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role.
 author: sericks
 manager: AnnBe
 ms.date: 06/23/2017
@@ -30,7 +30,7 @@ ms.dyn365.version: Platform update 8
 
 [!include[banner](../includes/banner.md)]
 
-Dynamics 365 for Finance and Operations, Enterprise edition provides a set of rich, security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role. Each of these reports can be found under **System administration \> Inquiries \> Security.** A description of each report is provided below.
+Dynamics 365 for Finance and Operations, Enterprise edition provides a set of rich security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role. Each of these reports can be found under **System administration \> Inquiries \> Security.** A description of each report is provided below.
 
 User role assignments
 ----------------------------
@@ -39,7 +39,7 @@ The **User role assignments** report generates a view of the current user role a
 
 ![User role assignments](media/User-role-assignments.PNG)
 
-For each user in the report a list of roles given, along with any restrictions at the legal entity or organization level.
+For each user in the report a list of roles is provided, along with any restrictions at the legal entity or organization level.
 
 Role to user assignments 
 -------------------------
@@ -51,7 +51,7 @@ The **Role to user assignment** report provides an aggregation of role assignmen
 Security role access
 --------------------
 
-The **Security role access** report provides a view of the effective permissions provided by each security role. This report will provide a flattened list of permissions grouped by type across all sub-roles, duties, and privileges contained in the role.
+The **Security role access** report provides a view of the effective permissions for each security role. This report provides a flattened list of permissions grouped by type across all sub-roles, duties, and privileges contained in the role.
 
 The data set backing the **Security role access** report can be very large, causing the report to take some time to run. If there have been no changes to security roles since the last time the report was run, you can skip building the report by setting the **Rebuild collection** option to **No** on the report parameters pane. This will render the report from the existing data set. If it is the first time the report has run, or there could be changes to the role definitions, the **Rebuild collection** option should be set to **Yes**. You can optionally limit the roles to be included in the report by adding a filter under **Records to include**.
 
@@ -62,7 +62,7 @@ Expanding a role shows the category of objects the role has access to. Expanding
 Security duty assignments
 -------------------------
 
-The **Security duty assignments** report provides a view of all the duties contained within a role. This role can be configured to run on any collection of roles to ensure that segregation of duties is maintained between roles. By default, the report will include all roles. To limit the roles included leverage the filtering provided in the **Records to include** section.
+The **Security duty assignments** report provides a view of all the duties contained within a role. This report can be configured to run on any collection of roles to ensure that segregation of duties is maintained between roles. By default, the report will include all roles. To limit the roles included, leverage the filtering provided in the **Records to include** section.
 
 ![Security duty assignments](media/security-duty-assignments.png)
 
