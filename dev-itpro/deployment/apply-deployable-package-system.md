@@ -5,7 +5,7 @@ title: Apply a deployable package to a Finance and Operations environment
 description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a Finance and Operations environment.
 author: manalidongre
 manager: AnnBe
-ms.date: 04/22/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
