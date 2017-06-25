@@ -38,6 +38,8 @@ ms.dyn365.ops.version: Platform update 2
 This topic lists the system requirements for the current version of Microsoft Dynamics 365 Finance and Operations, Enterprise edition, for cloud and on-premises deployments. Before you install Finance and Operations, when appropriate, verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 
 
+
+
 ## Supported Microsoft Office applications
 These follwoing Office applications are suppored in the cloud and on-premises deployments of Finance and Operations.
 -   To run the Microsoft Excel and Word add-ins, you must have Microsoft Office 2016 for Windows or Mac installed. For more details about version requirements, see [Office integration troubleshooting](/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting).
@@ -59,6 +61,9 @@ Dynamics 365 for Operations requires .NET Framework version 4.6.2 for all click-
 
 The Microsoft Dynamics 365 Finance and Operations Enterprise edition web application can run in any of the following web browsers that run on the specified operating systems:
 
+The web application can run in any of the following web browsers that run on the specified operating systems:
+
+
 -   Microsoft Edge (latest publicly available version) on Windows 10
 -   Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
 -   Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet
@@ -68,15 +73,15 @@ To find the latest release for each web browser, go to the software manufacturer
 
 **Notes:**
 
--   To capture images that are generated from Task Recorder and include them in Microsoft Word documents, you must have a Chrome extension installed. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
+-   A pre-release Chrome extension must be installed to allow screenshot images to be captured by Task Recorder and included in generated Microsoft Word documents. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder).-->
 -   The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications. The Workflow Editor ClickOnce application requires a 64-bit compatible operating system.
--   The Report Designer for Financial reporting is started as a ClickOnce application. It requires a 64-bit compatible operating system. If you’re using Chrome, you must install a ClickOnce extension in order to download the report designer client. If you’re using Chrome with the incognito mode, make sure that the ClickOnce extension is also enabled for incognito mode.
--   To preview PDF files, we recommend that you use modern browsers like Microsoft Edge (latest publicly available version) on Windows 10,  or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
+-   The Report Designer for Financial reporting is started as a ClickOnce application. It requires a 64-bit compatible operating system. If you’re using Chrome, you must install a ClickOnce extension to download the report designer client. If you’re using Chrome with the incognito mode, make sure that the ClickOnce extension is also enabled for incognito mode.
+-   To preview PDF files, we recommend that you use browsers such as Microsoft Edge (latest publicly available version) on Windows 10,  or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
 
 
 ### Supported web browsers for Retail Cloud POS
 
-Retail Cloud POS for Dynamics 365 for Operations can run in any of the following web browsers that run on the specified operating systems:
+Retail Cloud POS can run in any of the following web browsers that run on the specified operating systems:
 
 -   Microsoft Edge (latest publicly available version) on Windows 10
 -   Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
@@ -132,6 +137,23 @@ The computer must meet all system requirements for installing and using the foll
 
 -   6 GB of RAM
 -   2.4 GHz i7 (or equivalent) peak CPU speed per core (Four cores are recommended.)
+-   At least 10 GB of free space (The channel database can require a large amount of space.)
+
+## Connector requirements
+### Supported operating systems
+
+-   The Connector for Microsoft Dynamics AX has two separate installers, the **Async Server Connector service** and the **Real-time service for Dynamics AX 2012 R3**.
+-   Both components are 32-bit applications, but will run on both x86 and x64 architectures.
+-   Both components are supported on the following operating systems:
+    -   Windows 7 Professional, Enterprise, and Ultimate editions
+    -   Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions
+    -   Windows 10 Pro, Enterprise, and Enterprise LTSB editions
+    -   Windows Server 2012 R2, Windows Server 2016
+
+### Minimum system requirements
+
+-   2 GB of RAM, 4 GB of RAM recommended
+-   1.6 GHz peak CPU speed per core (Two cores are the minimum.)
 -   At least 10 GB of free space (The channel database can require a large amount of space.)
 
 ## Requirements for development on local VMs
@@ -287,7 +309,8 @@ Finance and Operations (on-premises) does not include the Retail components at t
 See also
 --------
 
-[Get an evaluation copy of Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
+[Get an evaluation copy of Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy)
+
 
 
 

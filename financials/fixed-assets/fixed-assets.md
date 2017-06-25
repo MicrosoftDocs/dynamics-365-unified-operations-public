@@ -5,7 +5,7 @@ title: Fixed assets home page
 description: Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or organization.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

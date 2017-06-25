@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure expense management
-description: This article describes the considerations and the decisions that you must make during the planning process before you configure Expense management in Microsoft Dynamics AX. In the Expense management area, you can store information about payment methods, travel requisitions, expense reports, and policies, among other things. 
-author: kfend
+description: This article describes the considerations and the decisions that you must make during the planning process before you configure Expense management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. In the Expense management area, you can store information about payment methods, travel requisitions, expense reports, and policies, among other things. 
+author: KimANelson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,14 +17,14 @@ ms.search.form: GlobalCategory, ProjCategory, TrvLocations, TrvParameters, TrvPa
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 51
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 23001
 ms.assetid: aa3fd14d-7e94-4603-985f-ca26d6f860ea
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes the considerations and the decisions that you must make during the planning process before you configure Expense management in Microsoft Dynamics AX. In the Expense management area, you can store information about payment methods, travel requisitions, expense reports, and policies, among other things. 
+This article describes the considerations and the decisions that you must make during the planning process before you configure Expense management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. In the Expense management area, you can store information about payment methods, travel requisitions, expense reports, and policies, among other things. 
 
 Because many of the decisions that you make when you plan your configuration for Expense management are based on your organization’s hierarchy and financial structure, you must refer to the planning documents for those areas.
 

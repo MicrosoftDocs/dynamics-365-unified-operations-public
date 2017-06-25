@@ -108,8 +108,7 @@ The following entities might have to be unmapped or filtered.
 |------|--------|--------|
 | System setup | Operating unit | Unmap Manager personnel number unless workers have been imported. |
 | | User information | Apply a filter where **ID** isn't equal to **Admin**. Unmap Person name, and use the User to person relationship entity to map system users to directory users. |
-| | Global address book | Apply a filter where **Name** isn't equal to blank. |
-| Accounts payable | Vendors | Unmap Purchase site (DefaultPurchaseSite) and Warehouse (DefaultProcurementWarehouseID) unless they are set up. Unmap the 1099 box ID (Tax1099BoxID) and 1099 type (Tax1099Type) unless you've opened the 1099 form. Unmap the vendor bank account ID. The Vendor bank account entity will set up the link to the bank account when it's imported. |
+| Accounts payable | Vendors | Unmap Purchase site (DefaultPurchaseSite) and Warehouse (DefaultProcurementWarehouseID) unless they are set up. Unmap the vendor bank account ID. The Vendor bank account entity will set up the link to the bank account when it's imported. |
 | Accounts receivable | Customer details | Unmap Employee responsible number unless workers have been imported. Unmap Collections contact person (CollectionsContactPersonID) unless workers and their contact information have been imported. Unmap the site (SiteID) and warehouse (WarehouseID) unless they have already been imported. |
 | Inventory management | Warehouse current postal address | Unmap Picking store area and Input store area unless Retail information has been imported. | 
 | Product information management | Products | Unmap NMFCCode and STCCCode. Currently, no entities are available for those codes. |
@@ -233,3 +232,9 @@ We have added the class to several self-referencing entities, and we will add it
 - Warehouses
 - Budget plan workflow stage
 - Sales units
+
+### Adding entities in the appropriate country context
+
+When you add entities, the mappings are created in the context of the country of the company that is currently active. If there are any issues with the mappings, you will see a red X in the View map column. Click on the red X and repair the mappings as needed. 
+
+Note that the DAT company does not have a country context by default. Some entities, such as those used for transaction codes and 1099 fields will not map correctly if they are added to a data project for the DAT company because they are expecting a country context.  

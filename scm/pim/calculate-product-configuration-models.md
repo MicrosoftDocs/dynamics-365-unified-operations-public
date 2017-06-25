@@ -5,7 +5,7 @@ title: Calculations for product configuration models FAQ
 description: This article describes calculations for product configuration models and explains how to use calculations together with constraints.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

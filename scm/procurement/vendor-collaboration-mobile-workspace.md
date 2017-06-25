@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Vendor collaboration mobile workspace for Microsoft Dynamics 365 for Operations app
-description: With the vendor collaboration mobile workspace, your vendors can stay up-to-date on the purchase orders that have been sent to them for approval and view information about new and updated purchase orders and contacts.
-author: YuyuScheller
+title: Vendor collaboration mobile workspace
+description: This topic provides information about the Vendor collaboration mobile workspace. This workspace helps your vendors stay up to date about the purchase orders that have been sent to them for approval. They can also view information about new and updated purchase orders and contacts.
+author: mkirknel 
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: sericks
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 267074
@@ -30,122 +30,135 @@ ms.search.validFrom: 2016-11-30
 
 ---
 
-# Vendor collaboration mobile workspace for Microsoft Dynamics 365 for Operations app
+# Vendor collaboration mobile workspace
 
 [!include[banner](../includes/banner.md)]
 
+This topic provides information about the **Vendor collaboration** mobile workspace. This workspace helps your vendors stay up to date about the purchase orders that have been sent to them for approval. They can also view information about new and updated purchase orders and contacts.
 
-With the vendor collaboration mobile workspace, your vendors can stay up-to-date on the purchase orders that have been sent to them for approval and view information about new and updated purchase orders and contacts.
+This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.
 
-Prerequisites
--------------
+## Overview 
+The **Vendor collaboration** mobile workspace keeps vendors informed about new purchase orders, so that they can view purchase orders and then respond to them in the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, web client. 
+
+>[!NOTE]
+> The mobile workspace should be used as a supplement to the vendor collaboration web interface, not a replacement for it. 
+
+Your vendors can use the **Vendor collaboration** mobile workspace to view new purchase orders that are sent to them for approval. It shows purchase order information, such as products, quantities, and requested delivery dates. Price information is also available, depending on the configuration of each vendor. 
+
+A user who signs in as a vendor will see which purchase orders have been responded to, and which purchase orders are still awaiting customer action. For example, a purchase order might be awaiting customer action because the vendor suggested another delivery date, but the customer hasn't yet agreed to that date. The vendor will also see a list of purchase orders that have been confirmed but haven't yet been delivered. 
+
+To respond to a purchase order, the vendor must use the vendor collaboration web interface that is available in the web client. There, the vendor can also get more information about the order, such as document attachments, the delivery address per line, and charges that are associated with the vendor. 
+
+Vendors that have a special security role can see which contact persons are registered for a vendor account. The same security role lets a vendor view the status of any user request that has been submitted. 
+
+The vendor collaboration web interface in the web client must be used to create new contacts and submit new user requests. 
+
+The **Vendor collaboration** mobile workspace lets a vendor perform these tasks:
+
+-   View new purchase orders that are sent to the vendor.
+-   View purchase orders that the vendor has responded to, and that are awaiting customer action.
+-   View purchase orders that have been confirmed but haven't yet been fully received.
+-   View contact person information that is registered for the vendor account. (This task requires an additional security role.)
+-   View information about a user request that was submitted by the vendor, and follow the status of the request. (This task requires an additional security role.)
+
+## Prerequisites
+The prerequisites vary, depending on the version of Microsoft Dynamics 365 that has been deployed for your organization.
+
+### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update 
+If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, has been deployed for your organization, the system administrator must publish the **Vendor collaboration** mobile workspace. For instructions, see [Publish a mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or later
+If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Prerequisite</th>
+<th>Role</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Read about the Microsoft Dynamics 365 for Operations mobile platform</td>
-<td><a href="https://ax.help.dynamics.com/en/wiki/mobile-development-handbook/">Dynamics 365 for Operations mobile platform</a></td>
+<td>KB 3216943 must be implemented if you're using Platform update 3.</td>
+<td>System administrator</td>
+<td>KB 3216943 is a binary update that is required if you're using Platform update 3. To implement this KB, the system administrator must follow these steps.
+<ol>
+<li>Download KB 3216943 from Microsoft Dynamics Lifecycle Services (LCS).</li>
+<li>Install the binary update, which is delivered as a deployable package. For information about how to apply a deployable package, see <a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Apply a deployable package</a>.</li>
+</ol></td>
 </tr>
 <tr class="even">
-<td>Dynamics 365 for Operations</td>
-<td>Be sure that you are using an environment that has Microsoft Dynamics 365 for Operations version 1611 and Microsoft Dynamics for Operations platform update 3 (November 2016).</td>
+<td>KB 4013633 must be implemented.</td>
+<td>System administrator</td>
+<td>KB 4013633 is an X++ update or metadata hotfix that contains the <strong>Inventory on-hand</strong> mobile workspace. To implement KB 4013633, your system administrator must follow these steps.
+<ol>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from LCS</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li><li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a>.</li>
+</ol></td>
 </tr>
 <tr class="odd">
-<td><span style="color: #000000">Mobile device that has the Dynamics 365 for Operations app installed</span></td>
-<td><span style="color: #000000">Download the Dynamics 365 for Operations app from your mobile app store.</span></td>
+<td>The <strong>Vendor collaboration</strong> mobile workspace must be published.</td><td>System administrator</td>
+<td>See <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</td>
 </tr>
 <tr class="even">
-<td>Hotfix KB 4013633</td>
-<td>Install the hotfix to enable the workspaces that are provided in Dynamics 365 for Operations.</td>
-</tr>
-<tr class="odd">
-<td><span style="color: #ff0000"><span style="color: #000000">Hotfix KB 3216943</span> </span></td>
-<td>Install the hotfix to enable the vendor collaboration mobile workspace.</td>
-</tr>
-<tr class="even">
-<td>The vendor user must have access to the vendor collaboration web interface in Dynamics 365 for Operations and set up a vendor collaboration user.</td>
-<td>Follow the steps described in the following topics to set up and work with the vendor collaboration web interface.
+<td>The vendor user must have access to the vendor collaboration web interface in the web client and must set up a vendor collaboration user.</td><td>Purchasing professionals and the system administrator</td>
+<td>Follow the steps in the following topics to set up and work with the vendor collaboration web interface.
 <ul>
 <li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-external-vendors/">Use vendor collaboration to work with external vendors</a></li>
 <li><a href="https://ax.help.dynamics.com/en/wiki/manage-vendor-collaboration-users/">Manage vendor collaboration users</a></li>
 <li><a href="https://ax.help.dynamics.com/en/wiki/set-up-and-maintain-vendor-collaboration/">Set up and maintain vendor collaboration</a></li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-customers-in-dynamics-365-for-operations/">Use vendor collaboration to work with customers in Dynamics 365 for Operations</a></li>
+<li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-customers-in-dynamics-365-for-operations/">Use vendor collaboration to work with customers in Finance and Operations</a></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## Overview
-The Vendor collaboration mobile workspace keeps vendors informed about new purchase orders so that they can see and respond to purchase orders in the Dynamics 365 for Operations web client. 
+## Download and install the mobile app
 
-**Note:** The mobile workspace should be used as a supplement to the vendor collaboration web interface, but not a replacement. 
+Download and install the Dynamics 365 for Unified Operations mobile app:
 
-With the Vendor collaboration mobile workspace, your vendors can view new purchase orders that are sent for approval. It displays purchase order information, such as products, quantity, and requested delivery dates. Price information is available, depending on the configuration for each vendor. 
+-   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
-When a user logs in as a vendor, they will see which purchase orders have been responded to, or which purchase orders are still awaiting customer action. The vendor might have suggested another delivery date that is not yet agreed with the customer so the purchase order is awaiting customer action. The vendor will also see a list of purchase orders that are confirmed but not yet delivered. 
+## Sign in to the mobile app
+1.  Start the app on your mobile device.
+2.  Enter your Microsoft Dynamics 365 URL.
+4.  The first time that you sign in, you’re prompted for your user name and password. Enter your credentials.
+5.  After you sign in, the available workspaces for your company are shown. Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.
 
-To respond to a purchase order, the vendor has to use the vendor collaboration web interface that is available in the Dynamics 365 for Operations web client. This is also where the vendor will get more information about the order, such as document attachments, delivery address per line, and charges that are associated with the vendor. 
+    [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-With a special security role, the vendor can view which contact persons are registered for a vendor account. With the same security role, the vendor can view the status of any user request that has been submitted. 
+## Use the Vendor collaboration mobile workspace
+When you select the **Vendor collaboration** workspace, you’ll see the following options.
 
-Creating new contacts and submitting new user requests must be done in the vendor collaboration interface that is available in the Dynamics 365 for Operations web client. 
+![Vendor collaboration mobile workspace](./media/vendor-collaboration-mobile-app.png)
 
-With the mobile workspace, your vendor can:
+The **Vendor collaboration** workspace includes the following pages.
 
--   View new purchase orders sent to the vendor.
--   View purchase orders that the vendor has responded to and are awaiting customer action.
--   View purchase orders that are in a confirmed state and have not been fully received.
--   View contact person information that is registered for the vendor account (requires an additional security role).
--   View information and follow the status of a user request submitted by the vendor (requires an additional security role).
+### Contacts
+The **Contacts** page lets you see all the contacts that have been set up for the vendor account. It shows the contact person's name, primary email address, and user alias, if the contact person has an alias. This page also shows whether the contact person's user account is active. When you select a contact, you see contact details, such as the legal entities that the person is a contact for. You also see contact information, such as a telephone number or an alternative email address.
 
-## Get started
-To get started on your mobile device:
+### User requests
+The **User requests** page lets you see all the user requests that you've submitted via the vendor collaboration web interface. You can also follow the status of those requests. When you select a user request, you can see what was requested, add or inactivate a user, change security, and see which security roles were requested for the user.
 
-1.  On your mobile app store, download and install the Microsoft Dynamics 365 for Operations app.
-2.  Start the app on your device.
-3.  Enter your Dynamics 365 URL.
-4.  Enter the company to sign in to. For example, enter **USMF**.
-5.  The first time that you sign in, you are prompted for the user name and password for your Microsoft Dynamics 365 for Operations account.
+### Purchase orders ready for review
+The **Purchase orders ready for review** page lets you see all the purchase orders that the customer has sent, but that haven't yet been responded to. You can view selected information about the order, such as which products were requested and when those products should be delivered. Price information is also available, depending on the configuration of the vendor.
 
-After you log in the app, no workspaces are visible. To view workspaces on your mobile app, you must first publish the desired workspaces to the Dynamics 365 for Operations app. You need system administration permission to publish the workspace.
+You can also see whether the purchase order has notes or attachments. However, to open notes and attachments, you must use vendor collaboration web interface in the web client. Select **Purchase order line** to see all the lines together with their details. For each line, an indicator will show whether there are notes or attachments, or whether the delivery address differs from the delivery address that is shown on the header.
 
-1.  Start Dynamics 365 for Operations.
-2.  Go to **System administration** &gt; **Setup** &gt; **system parameters**.
-3.  Select **Manage mobile app**.
-4.  Select the workspace **Vendor collaboration** to publish to the mobile platform.
-5.  Select **Publish workspace**.
-6.  Refresh your device to see the published workspaces.
-7.  Select the **Vendor collaboration** workspace. You will the following page.
+To respond to the purchase order, you must use the vendor collaboration web interface in the web client.
 
-    [![vendor-collaboration-mobile-app](./media/vendor-collaboration-mobile-app.png)](./media/vendor-collaboration-mobile-app.png)
+### Awaiting customer action
+The **Awaiting customer action** page lets you find purchase orders that you or another person in your company who has access to vendor collaboration has responded to. The purchase orders are visible in this list only if the customer must take one of the following actions on the purchase order:
 
-## Contacts
-The **Contacts** page lets you see all the contacts that have been set up for the vendor account. It shows the contact person name, primary email, and the users alias, if available. It also shows whether the contact person's user account is active. When you select a contact, you see contact details, such as which legal entities the person is a contact for, and contact information such as phone number or a different email address.
+-   If the purchase order was rejected, the customer must either update or cancel the original order, and then send it again. When the purchase order is sent again, it no longer appears on the **Awaiting customer action** page.
+-   If the purchase order was accepted with changes, the customer must either update the original order and then send it again for review, or update the order per the requested changes and then confirm it immediately. In both cases, the purchase order no longer appears on the **Awaiting customer action** page.
+-   If the purchase order was accepted but still appears on the **Awaiting customer action** page, the purchase order wasn't automatically confirmed when it was accepted. It's now waiting for a purchasing agent to change the order status to **Confirmed**. Typically, a purchase order is considered an agreement between the customer and the vendor as soon as the vendor accepts the order. Therefore, the update to **Confirmed** status is usually just a formality.
 
-## User requests
-The **User requests** page lets you see all the user requests that you have submitted via the vendor collaboration web interface and follow the status. When you select a user request, you can see what was requested, add or inactivate a user, change security, and see which security roles were requested for the user.
-
-## Purchase orders ready for review
-The **Purchase orders ready for review** page lets you see all the purchase orders that were sent by the customer and have not been answered. You can view selected information about the order, such as which products have been requested and when to deliver. Price information is only available if this is configured for the vendor. You can see whether the purchase order has notes or attachments. To open attachments, you need to use vendor collaboration in the web client. Select **Purchase order line** to see all the lines with details. Note that for each line, an indicator will show whether there are notes or attachments or if there's a delivery address that's different than what's shown on the header. To respond to the purchase order, you must use the vendor collaboration web client.
-
-## Awaiting customer action
-The **Awaiting customer action** page lets you find purchase orders that you, or someone in your company who also has access to vendor collaboration, have responded to. The purchase orders are only visible in this list if the customer needs to perform one of the following actions on the purchase order.
-
--   If the purchase order was rejected, the customer would either need to update the sent order and send again, or cancel the order and resend. When the purchase order is sent again, it will disappear from the **Awaiting customer action** page.
--   If the purchase order was accepted with changes, the customer would need to update the original order and resend for review, or update it according to the changes and confirm it immediately. In both cases, the purchase order will disappear from the **Awaiting customer action** page.
--   If the purchase order was accepted and appears in the **Awaiting customer action** page, it is because the purchase order was not automatically confirmed when the acceptance was done. It is waiting for a purchasing agent to change the order to Confirmed. Typically, the purchase order would be regarded as an agreement between the customer and vendor as soon as the vendor accepts the order. Moving the purchase order to the Confirmed state would be a formality.
-
-By selecting the purchase order, additional details appear about the response. You can see the line details and response for every line. The line status shows which of the following responses has been given.
+When you select a purchase order, additional details appear about the response. You can see the line details and response for every line. The line status shows which of the following responses has been given:
 
 -   Accepted
 -   Rejected
@@ -153,11 +166,13 @@ By selecting the purchase order, additional details appear about the response. Y
 -   Substituted/Substitute
 -   Split into schedule/Schedule line
 
-Note that an indicator shows **Delivering**=yes/no, which is used to indicate that the lines will not be delivered. This could be because the line was rejected, or substituted where the original lines are not expected to be delivered, or a line that has been split into multiple schedule lines and the original line is not expected to be delivered as requested in the received order. Any changes made to the order line response are displayed, except for the uploaded notes and attachments, which you can see by using the vendor collaboration web interface.
+Note that the **Delivering** field is set to either **Yes** or **No** to indicate whether the lines will be delivered. A line might not be delivered because for the following reasons:
 
-## Open confirmed orders
-When the purchase order is confirmed by the customer, which means the purchase order is changed to the Confirmed state, it will appear in the open confirmed order. It will stay in the list until it is registered as received by the customer.
+- The line was rejected.
+- A substitution was made, and the original line isn't expected to be delivered as requested in the received order.
+- The line was split into multiple schedule lines, and the original line isn't expected to be delivered as requested in the received order.
 
+Any changes that have been made to the order line response are shown. However, uploaded notes and attachments aren't shown. To view notes and attachments, you must use the vendor collaboration web interface in the web client.
 
-
-
+### Open confirmed orders
+When the purchase order is confirmed by the customer (that is, the status of the purchase order is changed to **Confirmed**), it appears in the open confirmed order. It will remain in the list until it's registered as received by the customer.

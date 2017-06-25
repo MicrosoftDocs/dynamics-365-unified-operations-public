@@ -2,10 +2,10 @@
 # required metadata
 
 title: Log premier support tickets using Microsoft Dynamics Lifecycle Services
-description: This topic shows how Microsoft Premier customers can submit a support incident for Microsoft Dynamics 365 for Operations by using Microsoft Dynamics Lifecycle Services (LCS).
+description: This topic shows how Microsoft Premier customers can submit a support incident for Microsoft Dynamics 365 for Finance and Operations, Enterprise editionby using Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic shows how Microsoft Premier customers can submit a support incident for Microsoft Dynamics 365 for Operations by using Microsoft Dynamics Lifecycle Services (LCS).
+This topic shows how Microsoft Premier customers can submit a support incident for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition by using Microsoft Dynamics Lifecycle Services (LCS).
 
 1.  In LCS, use the **Support** tile to manage support incidents. To submit issues directly to Microsoft, go to the **Support** tile in your LCS project.
 ![Support menu](media/support1.png)
@@ -58,7 +58,7 @@ This topic shows how Microsoft Premier customers can submit a support incident f
 7. In the **Select support contract** window, select your support contract. Click **Continue**.
 ![Support contract](media/continue.png)
 
-8. In the Select severity window, select the issue severity level. Selecting **Severity level A** will redirect you to a page that has the Premier support phone number, which you will need to call Support to report the issue. Severity issues B and C can be reported by continuing with this wizard.
+8. In the **Select severity** window, select the issue severity level. Selecting **Severity level A** will redirect you to a page that has the Premier support phone number, which you will need to call to report the issue. Severity issues B and C can be reported by continuing with this wizard.
 ![Severity C issue](media/sev-c.png)
 
 9. In the **Enter issue details** window, describe the issue in detail. In the **Tell us more** field provide detailed repro steps of the issue, the result that you’re getting, and what result you expect to get. It’s also a good idea to attach screenshots that illustrate the problem, to do this, use **Attach file from computer**.

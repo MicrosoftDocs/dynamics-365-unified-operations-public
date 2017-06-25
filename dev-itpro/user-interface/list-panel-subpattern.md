@@ -5,7 +5,7 @@ title: List Panel subpattern
 description: This article provides information about the List Panel form subpattern. Application teams use this subpattern to manage two lists that move data between each other.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -105,7 +105,7 @@ MoveDownButton (Button)
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
 
 -   **Standard form guidelines:**
-    -   Standard form guidelines have been consolidated into the Microsoft Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md)document.
+    -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
 
 ## Examples
 Form: **CLIPatterns\_ListPanel** **(FormTabPageControl1)** 

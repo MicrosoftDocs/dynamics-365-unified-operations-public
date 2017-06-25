@@ -5,7 +5,7 @@ title: Customize model elements using extensions
 description: In this tutorial, you’ll become familiar with the Fleet Management Extension model. To demonstrate the extension capabilities of Dynamics AX, this model contains elements that extend the functionality of the Fleet Management application.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -5,7 +5,7 @@ title: Extend the RunBase class
 description: This topic contains an example that shows how a RunBase class can be augmented end to end.
 author: robinarh
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
