@@ -48,4 +48,6 @@ The following features have not been implemented in on-premises deployments of D
 | Ability to export entities to your own database (BYOD)                      | This feature is currently not implemented.                                                                                                                                                |
 | Author Power BI reports using OData                              | Authoring Power BI reports with OData using Power BI desktop or Excel PowerQuery tools is not supported.                                                                                  |
 |Retail| No Retail features are available for use in on-premises deployments at this time.|
+|Purchase requisitions: Punch-out from external catalogs|It is currently not possible to check out a shopping cart from an external catalog to a purchase requisition.|
+|Trace parcer and PerfTimer|Both tools are not working or work only limited for the initial release. This feature will be implemented with the successive releases.
 
