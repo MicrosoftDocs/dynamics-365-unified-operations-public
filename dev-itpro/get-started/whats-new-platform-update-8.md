@@ -37,7 +37,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 **Note:** Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
 
-Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. 
+Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 8, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=852224).
 
 ## Introducing Dynamics 365 for Finance and Operations, Enterprise edition
 Users and developers will see an updated product name ("Microsoft Dynamics 365 for Finance and Operations, Enterprise edition") and product icon in the web client. Some platform components (for example, the developer tools and the mobile application) that are shared by Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 for Talent will now appear as "Dynamics 365 Unified Operations." 
