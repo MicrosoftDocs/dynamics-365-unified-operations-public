@@ -17,7 +17,7 @@ ms.search.form: SysQueryForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 71
+ms.reviewer: sericks
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 3811
