@@ -370,6 +370,7 @@
 #### [Exchange rate adjustments](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [File formats for methods of payment](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Fixed assets disposal for Estonia and Lithuania](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Import ISO20022 files](/dynamics365/unified-operations/financials/localizations/emea-ISO20022-file-formats?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Inventory journal reports](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Invoice and packing slip numbering for Latvia and Lithuania](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -455,6 +456,7 @@
 ##### [VAT statement details](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Norway
 ##### [Nets import format](/dynamics365/unified-operations/financials/localizations/emea-nor-nets-import-format?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [VAT statement](/dynamics365/unified-operations/financials/localizations/emea-nor-sales-tax-payment-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
 #### Poland
 ##### [Calculate line discounts from the unit price](/dynamics365/unified-operations/financials/localizations/emea-pol-line-discount-calculation-from-unit-price?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Correction notes](/dynamics365/unified-operations/financials/localizations/emea-pol-correction-notes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
