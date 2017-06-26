@@ -55,7 +55,7 @@ The Finance and Operations online service and the Finance and Operations (on-pre
 - **Finance and Operations platform updates** can be initiated by Microsoft, or they can be initiated by the customer through Microsoft Dynamics Lifecycle Services (LCS).
 - **Finance and Operations application updates** can be initiated by the customer through LCS.
 
-Before updates are applied to the customer’s production environment, the customer must test them in a sandbox environment. After the customer tests the updates and provides consent, the updates will be rolled out to production environments. For information about how the sandbox environment will be provided, see the [Microsoft Dynamics 365 Licensing Guide](https://www.microsoft.com/en-us/dynamics365/pricing) .
+Before updates are applied to the customer’s production environment, the customer must test them in a sandbox environment. After the customer tests the updates and provides consent, the updates will be rolled out to production environments. For information about how the sandbox environment will be provided, see the [Microsoft Dynamics 365 Licensing Guide](https://www.microsoft.com/en-us/dynamics365/pricing).
 
 > [!IMPORTANT]
 > To help protect our customers, and the Finance and Operations online service, Microsoft might apply critical fixes directly to a customer's Finance and Operations environments. If a critical fix must be applied, Microsoft will notify the customer about the required downtime window (if there will be any downtime) and apply the fix to the applicable environment. After fixes are applied, Microsoft will communicate completion to the customer.
