@@ -74,8 +74,8 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 | Release                                                                | Version          | Build number | Availability  | Expiration date | 
 |------------------------------------------------------------------------|------------------|--------------|---------------|-----------------|
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition  | July 2017 update | 7.2.XXXX     | July 2017     | November 2019   | 
-| Microsoft Dynamics 365 for Operations                                  | 1611             | 7.1.1541     | November 2016 | November 2019   | 
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition  | July 2017 update | 7.2.11792.56024| July 2017     | November 2019   | 
+| Microsoft Dynamics 365 for Operations                                  | 1611             | 7.1.1541.3036| November 2016 | November 2019   | 
 
 ### Table 2: Retail application release
 
@@ -87,7 +87,7 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 | Release           | Build number   | Availability  | Expiration date   |
 |-------------------|----------------|---------------|-------------------|
-| Platform update 8 | 7.0.xxxx.xxxxx | June 2017     | June 30, 2018     |
+| Platform update 8 | 7.0.4565.16212 | June 2017     | June 30, 2018     |
 | Platform update 7 | 7.0.4542.16189 | May 2017      | May 31, 2018      |
 | Platform update 6 | 7.0.4509.16180 | April 2017    | April 30, 2018    |
 | Platform update 5 | 7.0.4475.16165 | March 2017    | March 31, 2018    |
