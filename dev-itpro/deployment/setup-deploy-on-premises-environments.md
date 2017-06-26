@@ -46,11 +46,13 @@ The Finance and Operations application consists of three main components:
 These components depend on the following system software:
 
 - Microsoft Windows Server 2016
-- Microsoft SQL Server 2016, which has following features:
+- Microsoft SQL Server 2016 SP1, which has following features:
 
     - Full-text index search is enabled.
     - SQL Server Reporting Services (SSRS).
     - SQL Server Integration Services (SSIS).
+    > [!NOTE]
+    > The application will not run if Full Text Search is not enabled.
 
 - SQL Server Management Studio
 - Standalone Microsoft Azure Service Fabric
@@ -137,10 +139,9 @@ The following steps must be completed to set up the infrastructure for Finance a
 12. Setup File Storage
 13. Setup SQL Server
 14. Configure the Databases
-15. Setup SSRS
-16. Configure AD FS
-17. Install the on-premises local agent
-18. Encrypt credentials
+15. Encrypt credentials
+16. Setup SSRS
+17. Configure AD FS
 
 ### Plan your domain name and DNS zones
 
@@ -318,7 +319,7 @@ New-ADUser -Name 'AXServiceUser' `
     .\Export-AddGMSAsOnVMScript.ps1 -InputXml .\ConfigTemplate.xml
     ```
 
-#### Stop IIS (if it's configured)
+#### Stop IIS
 
 Use Remote Desktop Protocol (RDP) to connect to each Service Fabric VM, and complete the manual steps in [Start or Stop the Web Server (IIS 7)](https://technet.microsoft.com/en-us/library/cc732317(v=ws.10).aspx). Alternatively, use the following Windows PowerShell script by using RDP to connect to each Service Fabric VM.
 
@@ -341,6 +342,7 @@ if($w3svc)
     Set-Service $ServiceName -StartupType Disabled
 }
 ```
+_IIS feature should be installed but disabled as there are some dependencies to the IIS dlls in the product._
 
 ### Install Certificates
 
@@ -483,7 +485,7 @@ Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.
     ```
     Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
     ```
-#### Set up the \\DAX7SQLAOFILE1\\aos-storage file share
+#### Set up the \\\\DAX7SQLAOFILE1\\aos-storage file share
 
 2. In Server Manager, select **File and Storage Services** \> **Shares**.
 3. Click **Tasks** \> **New Share** to create a new share with name **aos-storage**.
@@ -498,8 +500,9 @@ Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.
 
 ### Set up SQL Server
 
-1. Install SQL Server 2016 with high availability, either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration.  Verify that the **Database Engine, Reporting Services, Full Text Search**, and **Management Tools** are already installed.
-**Note:** Because of a known issue, we recommend that you do not select the Always-On configuration until you have completed the full deployment. 
+1. Install SQL Server 2016 SP1 with high availability, either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration.  Verify that the **Database Engine, Reporting Services, Full Text Search**, and **Management Tools** are already installed.
+> [!NOTE]
+> Please ensure that the SQL Always On is setup according to [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards) and follow [To Prepare Secondary Databases Manually](https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs)
 2. Run the SQL Service as a domain user.
 3. Get an SSL certificate from a CA to configure Finance and Operations. For testing purposes, you can create and use a self-signed certificate.
 
@@ -610,6 +613,39 @@ $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$li
     | svc-FRPS\$       | gMSA | db\_owner     |
     | svc-FRAS\$       | gMSA | db\_owner     |
 
+### Encrypt credentials
+
+1. On any client machine, install the encipherment certificate in the LocalMachine\\My certificate store.
+2. Grant the current user read access to the private key of this certificate.
+3. Create the Credentials.json file as shown here.
+
+    ```
+    {
+        "AosPrincipal": {
+            "AccountPassword": "<encryptedDomainUserPassword>"
+        },
+        "AosSqlAuth": {
+            "SqlUser": "<encryptedSqlUser>",
+            "SqlPwd": "<encryptedSqlPassword>"
+        }
+    }
+    ```
+
+    - **AccountPassword** is the encrypted domain user password for the AOS domain user (contoso\\axserviceuser).
+    - **SqlUser** is the encrypted SQL user (axdbadmin) that has access to the Finance and Operations database (AXDBRAIN), and **SqlPassword** is the encrypted SQL password.
+
+4. Copy the .json file to the SMB file share, \\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json.
+5. Update the Credentials.json file with encrypted values.
+
+    ```
+    # Service fabric API to encrypt text and copy it to the clipboard.
+    Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | clip
+    ```
+
+    1. In Credentials.json, replace **\<encryptedDomainUserPassword\>** with the encrypted domain password.
+    2. Replace **\<encryptedSqlUser\>** with the encrypted Finance and Operations SQL user.
+    3. Replace **\<encryptedSqlPassword\>** with the Finance and Operations SQL password.
+    
 ### Set up SSRS
 
 1.  Before you begin, make sure that the prerequisites that are listed at the beginning of this topic are installed.
@@ -656,7 +692,9 @@ The AD FS management console should resemble the following illustration. To ope
 
 Finally, for a sanity check, make sure that you can access the AD FS OpenID Configuration URL on a Service Fabric node of the **AOSNodeType** type by going to `https://<adfs-dns-name>/adfs/.well-known/openid-configuration` in a web browser. If you receive a message that states that the site isn't secure, you haven't added your AD FS SSL certificate to the Trusted Root Certification Authorities store. This step is described in the AD FS deployment guide. If you successfully access the URL, a JavaScript Object Notation (JSON) file is returned that contains your AD FS configuration, and you will see that your AD FS URL is trusted.
 
-### Install an on-premises local agent
+With this the setup of infrastructure is complete. The following sections describe how to navigate to [LCS](https://lcs.dynamics.com) to set up your connector and deploy your Dynamics 365 for Finance and Operations environment.
+
+## Configure connector and install on-premises local agent
 
 1. Sign in to [LCS](https://lcs.dynamics.com/) and open the on-premises implementation project.
 2. On the hamburger menu, click **Project settings**.
@@ -685,36 +723,14 @@ Finally, for a sanity check, make sure that you can access the AD FS OpenID Con
 
     > [!NOTE]
     > The user who runs this command must have **db\_owner** permissions on the OrchestratorData database.
+    
+12. Once the local agent is installed successfully navigate back to your on-premises connector in LCS.
+13. On the **Validate setup** tab click on **Message agent** button. This will test for LCS connectivity to your local agent. When connection is established successfully the page will look like the graphic below.
 
-### Encrypt credentials
+     ![Validate agent](./media/ValidateAgent.PNG)
 
-1. On any client machine, install the encipherment certificate in the LocalMachine\\My certificate store.
-2. Grant the current user read access to the private key of this certificate.
-3. Create the Credentials.json file as shown here.
+## Deploy your Dynamics 365 for Finance and Operations (on-premises) environment
 
-    ```
-    {
-        "AosPrincipal": {
-            "AccountPassword": "<encryptedDomainUserPassword>"
-        },
-        "AosSqlAuth": {
-            "SqlUser": "<encryptedSqlUser>",
-            "SqlPwd": "<encryptedSqlPassword>"
-        }
-    }
-    ```
-
-    - **AccountPassword** is the encrypted domain user password for the AOS domain user (contoso\\axserviceuser).
-    - **SqlUser** is the encrypted SQL user (axdbadmin) that has access to the Finance and Operations database (AXDBRAINSNAP), and **SqlPassword** is the encrypted SQL password.
-
-4. Copy the .json file to the SMB file share, \\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json.
-5. Update the Credentials.json file with encrypted values.
-
-    ```
-    # Service fabric API to encrypt text and copy it to the clipboard.
-    Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | clip
-    ```
-
-    1. In Credentials.json, replace **\<encryptedDomainUserPassword\>** with the encrypted domain password.
-    2. Replace **\<encryptedSqlUser\>** with the encrypted Finance and Operations SQL user.
-    3. Replace **\<encryptedSqlPassword\>** with the Finance and Operations SQL password.
+1. Navigate to your on-premises project in LCS, go to **Environment**, **Sandbox** and click on **Configure**
+2. Select your **Environment topology** and go through the wizard to intitiate your deployment.
+3. The local agent will pick up the deployment request, kick off the deployment and communicate back to LCS when ready.
