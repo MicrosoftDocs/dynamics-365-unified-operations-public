@@ -5,7 +5,7 @@ title: Database synchronization
 description: This topic provides information about the importance of not synchronizing tables and views until they are fully compiled. 
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

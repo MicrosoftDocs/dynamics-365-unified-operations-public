@@ -5,11 +5,11 @@ title: Table properties
 description: This topic describes the properties that are in the<strong> Properties</strong> window for table elements in the Application Object Tree (AOT). Table elements are located under <strong>Data Dictionary</strong> &gt; <strong>Tables</strong>.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: Dynamics365Operations
-ms.technology: 
+ms.service:
+ms.technology: ax-2012
 
 # optional metadata
 

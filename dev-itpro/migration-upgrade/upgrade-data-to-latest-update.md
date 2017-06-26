@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade data in development, demo, or sandbox environments
-description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Operations database to the latest update.
+description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations database to the latest update.
 author: tariqbell
 manager: AnnBe
 ms.date: 04/22/2017
@@ -35,13 +35,13 @@ ms.dyn365.ops.version: Platform update 1
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides instructions for upgrading your Microsoft Dynamics 365 for Operations database to the latest update. 
+This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations database to the latest update. 
 Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the Production and Sandbox environments. You can contact them using the "other" type service request in Lifecycle Services.
 
-This topic describes how to upgrade an older source database to the latest Dynamics 365 for Operations update. The source database can be from CTP 7 or later. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md). This process does not apply to the upgrade of data in Management Reporter or the Retail channel database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
+This topic describes how to upgrade an older source database to the latest Finance and Operations update. The source database can be from CTP 7 or later. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md). This process does not apply to the upgrade of data in Management Reporter or the Retail channel database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 
 ## Before you begin
-1.  You must have a functional one-box demo or development environment that is already successfully running with the latest Dynamics 365 for Operations update.
+1.  You must have a functional one-box demo or development environment that is already successfully running with the latest Finance and Operations update.
 2.  If upgrading from the Dynamics AX February 2016 release (also known as RTW) or earlier (earlier would be a CTP build) and are upgrading to the May 2016 release, then the following hotfixes must be installed. These fixes must be installed in the destination environment. If you are upgrading to a newer version than the May 2016 release, you **do not** need these fixes, they are already included.
     -   Hotfix KB number 3170386, "Upgrade script error: ReleaseUpdateDB70\_DMF. updateIntegrationActivityExecutionMessageIdPreSync".
     -   Hotfix KB number 3180871, "Data upgrade from RTW to Update 1 causes errors when synchronizing views involving disabled configuration keys". This is a binary hotfix which will cause the database synchronize process to fail.
@@ -92,11 +92,11 @@ This topic describes how to upgrade an older source database to the latest Dyna
         delete from classidtable where id >= 0xf000 and id <= 0xffff
 
 ## Download the MinorVersionDataUpgrade.zip script
-To obtain the latest MinorVersionDataUpgrade.zip package from your target environment that is running the latest Dynamics 365 for Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS).
+To obtain the latest MinorVersionDataUpgrade.zip package from your target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS).
 > [!NOTE]
 > In earlier versions (prior to Platform update 4) the package was named DataUpgrade.zip. 
 
-1.  In LCS, in the **Environments** section, click your target Dynamics 365 for Operations environment, scroll to the bottom of the page, and then click the **All binary updates** tile. 
+1.  In LCS, in the **Environments** section, click your target Finance and Operations environment, scroll to the bottom of the page, and then click the **All binary updates** tile. 
 
 > [!NOTE]
 > If the All binary updates tile shows zero updates available then use the MinorVersionDataUpgrade.zip from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 with platform update 3 and the All binary updates tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library. When using this package from the shared asset library, the path required in step 3 below changes to ..\\AOSService\\Packages\\files\\dynamicsax-framework-bin.7.0.4307.16141.zip\\CustomDeployablePackage
@@ -144,7 +144,7 @@ This step is required if you're upgrading a database from the February 2016 rele
 
 ## Upgrade the database
 1.  Install the deployable package from the C:\\Temp\\DataUpgrade folder (the location you extracted to earlier). Use the instructions in [Install a deployable package](../deployment/install-deployable-package.md).
-2.  Restore a backup of the source database to your one-box demo or development environment that is already running the latest Dynamics 365 for Operations update that you want to upgrade to. **Note:** For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For details about how to download and use AzCopy to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
+2.  Restore a backup of the source database to your one-box demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. **Note:** For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For details about how to download and use AzCopy to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
 3.  Run the runbook file until Step 4: GlobalBackup.
 4.  Rename the existing Update 1 database, and replace it with the source database that you want to upgrade.
 
@@ -190,7 +190,7 @@ When upgrading a database, you may experience the following error during the dat
 
 > Cannot create index on InventDistinctProduct a duplicate key exists on column Product.
 
-This is a known issue that will be resolved in a future release. The workaround is to delete all records in the **InventDistinctProduct** table and then resume the runbook from the current step. The records contained in this table are disposable and will be regenerated either the first time Microsoft Dynamics 365 for Operations is launched, when an item is created, or when MRP is run. To drop all records in **InventDistinctProduct**, execute the following query against the current database from SQL Management Studio.
+This is a known issue that will be resolved in a future release. The workaround is to delete all records in the **InventDistinctProduct** table and then resume the runbook from the current step. The records contained in this table are disposable and will be regenerated either the first time Microsoft Dynamics 365 for Finance and Operations is launched, when an item is created, or when MRP is run. To drop all records in **InventDistinctProduct**, execute the following query against the current database from SQL Management Studio.
 
     truncate table InventDistinctProduct
 
@@ -305,7 +305,7 @@ After upgrade, values in encrypted fields in the database will be unreadable. Ho
 See also
 --------
 
-[Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](upgrade-latest-update.md)
+[Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md)
 
 
 

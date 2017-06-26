@@ -5,7 +5,7 @@ title: Mandats de paiement in the public sector in France
 description: The mandat de paiement is used by the director to notify the accountant that the organization is obligated to pay a specific amount to another entity, and to authorize the accountant to pay that amount. The mandat maintains the strict separation that is required between the operational role of the director and the accounting role of the accountant.
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -21,7 +21,6 @@ ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 27231
-ms.assetid: e63d4d9d-27d4-42c9-ad87-66040b8680db
 ms.search.region: France
 ms.search.industry: Public sector
 ms.author: brpotter

@@ -5,7 +5,7 @@ title: Dimension Entry control dialog support
 description: Describes the code pattern for putting a Dimension Entry control on a dialog.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Describes the code pattern for putting a Dimension Entry control on a dialog.
 
-The code pattern to add Dimension Entry controls to dialogs has changed for Microsoft Dynamics 365 for Operations. This is an example of the old model:
+The code pattern to add Dimension Entry controls to dialogs has changed from Dynamics AX 2012. This is an example of the old model:
 
     DimensionDefaultingControllerNoDS dimDefaultingController;
     dimDefaultingController = DimensionDefaultingControllerNoDS::constructInGroupWithValues(true, true, true, 0, _formRun, financialDimensionGroup, "@SYS123456");
@@ -45,7 +45,7 @@ The code pattern to add Dimension Entry controls to dialogs has changed for Micr
     dimDefaultingController.pageActivated();
     dimDefaultingController.loadValues(dimensionAttributeValueSetId);
 
-In Dynamics 365 for Operations, this code would be converted to:
+In the current release, this code would be converted to:
 
     DialogField dimensionEntryField;
     DimensionEntryControl dimensionEntryValues;

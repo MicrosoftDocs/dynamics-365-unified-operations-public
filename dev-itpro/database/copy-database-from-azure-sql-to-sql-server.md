@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Copy Dynamics 365 for Operations database - Azure SQL to SQL Server
-description: This topic provides information about how to export a Microsoft Dynamics 365 for Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
+title: Copy Finance and Operations database - Azure SQL to SQL Server
+description: This topic provides information about how to export a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Copy a Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment
+# Copy a Finance and Operations database from Azure SQL Database to a SQL Server environment
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides information about how to export a Microsoft Dynamics 365 for Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
+This topic provides information about how to export a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
 
 Overview
 --------
@@ -243,13 +243,13 @@ If using Financial Reporting (formerly Management Reporter) then follow the step
 To switch the environment and use the new database, stop the services in the following list, rename the AxDB database to AxDB\_orig, and then rename your newly imported database AxDB. Restart the services in the following list:
 
 -   World wide web publishing service
--   Dynamics 365 for Operations Batch Management service
+-   Finance and Operations Batch Management service
 -   Management Reporter 2012 Process service
 
 To switch back to the original database, reverse the step above. Stop the services, rename the databases, and then start the services.
 
 ## Reenter data from encrypted and environment specific fields in the target database
-In the Dynamics 365 for Operations client, enter the values that you documented for the encrypted and environment-specific fields. The following fields are affected. (The field names are given in *Table*.*Field* format.)
+In the Finance and Operations client, enter the values that you documented for the encrypted and environment-specific fields. The following fields are affected. (The field names are given in *Table*.*Field* format.)
 
 |                                                          |                                                                                                                                                                                |
 |----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -299,7 +299,7 @@ Refer to the following guidelines for optimal performance:
 
 -   Always export a database from a virtual machine that is located in the same Azure data center as the Azure SQL database. If you are exporting a copy of your sandbox database, export it from the Sandbox AOS machine.
 -   Always import the .bacpac locally on the machine that is running the SQL Server instance. Do not import from SQL Server Management Studio on a remote machine.
--   On a Dynamics 365 for Operations one-box environment, also known as a tier 1 environment, which is hosted in Azure, place the bacpac file on the D: drive when importing for increased performance. Read more about the temporary drive in Azure machines in the blog post [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+-   On a Dynamics 365 for Finance and Operations one-box environment, also known as a tier 1 environment, which is hosted in Azure, place the bacpac file on the D: drive when importing for increased performance. Read more about the temporary drive in Azure machines in the blog post [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 -   Grant the account running the SQL Server Windows service the [Instance File Initialization](https://msdn.microsoft.com/en-us/library/ms175935.aspx) rights. This can speed up the import process and improve the speed of restore from a \*.bak file. A simple way to do this in a Developer environment is to set SQL Server to run as the axlocaladmin account.
 -   From SQL Azure, do not select Export data tier application in SQL Server Management Studio because there can be a memory limitation for larger databases.
 

@@ -5,7 +5,7 @@ title: Accruals overview
 description: This article describes accruals, and provides information about how to set them up and create transactions.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

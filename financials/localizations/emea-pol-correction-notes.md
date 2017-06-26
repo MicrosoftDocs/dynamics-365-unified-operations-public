@@ -5,7 +5,7 @@ title: Correction notes
 description: This topic provides information about correction notes. A correction note is a document that is required by local regulations in Poland. It's used to correct errors on a vendor invoice. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,11 +17,10 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 263404
-ms.assetid: c66b3a3d-f199-4da5-965a-b69377c5dd22
 ms.search.region: Poland
 # ms.search.industry: 
 ms.author: v-elgolu

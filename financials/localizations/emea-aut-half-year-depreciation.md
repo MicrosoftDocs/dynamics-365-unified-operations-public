@@ -17,15 +17,14 @@ ms.search.form: AssetBook, AssetDepreciationProfile, AssetParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 272663
-ms.assetid: ae5e6f22-aa67-41a1-9e65-549b14f6ee4d
 ms.search.region: Austria
 # ms.search.industry: 
 ms.author: sndray
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---

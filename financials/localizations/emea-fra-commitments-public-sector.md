@@ -5,7 +5,7 @@ title: Commitments in the public sector in France
 description: Commitments are budget control source documents used by public sector entities in France. They are used to reserve budgeted amounts so that an organization can explicitly track budget reservations for management and reporting throughout the expenditure cycle. 
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -21,7 +21,6 @@ ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 19531
-ms.assetid: dbdb051c-9240-4f00-9a60-122c5f2e62ea
 ms.search.region: France
 ms.search.industry: Public sector
 ms.author: brpotter

@@ -1,5 +1,5 @@
-# Contributing to Dynamics 365 for Operations documentation
-Welcome! Thank you for your interest in contributing to Microsoft Dynamics 365 for Operations documentation.
+# Contributing to Finance and Operations documentation
+Welcome! Thank you for your interest in contributing to Microsoft Dynamics 365 for Finance and Operations documentation.
 
 In this topic you'll find the basic process for adding or updating content that is published on the [Dynamics 365 documentation site](https://docs.microsoft.com/en-us/dynamics365/). 
 
@@ -59,7 +59,7 @@ If you submit a pull request with new or significant changes to documentation an
 Use the /template.md file as a standard Markdown template, with the basic Markdown formatting that you need for a new topic. We suggest that you copy this template to a new file, fill out the metadata as specified in the Metadata section, set the H1 heading above to the title of the topic, and delete the content in the template as you add your own content.
 
 ## Permissions
-Anybody with a GitHub account and membership in the Microsoft Docs organization can contribute to Dynamics 365 for Operations content through our repository at [https://docs.microsoft.com/en-us/dynamics365/](https://docs.microsoft.com/en-us/dynamics365/). 
+Anybody with a GitHub account and membership in the Microsoft Docs organization can contribute to Finance and Operations content through our repository at [https://docs.microsoft.com/en-us/dynamics365/](https://docs.microsoft.com/en-us/dynamics365/). 
 
 1. Visit [https://repos.opensource.microsoft.com ](https://repos.opensource.microsoft.com) to join the Microsoft Docs GitHub organization. Once you are a member of the Microsoft organization, you can access the private repository.
 
@@ -67,7 +67,7 @@ Anybody with a GitHub account and membership in the Microsoft Docs organization 
 
 ## DOs and DON'Ts
 
-Here are some guiding rules that you should keep in mind when you're contributing to Dynamics 365 for Operations documentation.
+Here are some guiding rules that you should keep in mind when you're contributing to Finance and Operations documentation.
 
 - **DO** use the [template](./template.md) file as the starting point of your work
 - **DO** create a separate branch on your fork before working on topics.

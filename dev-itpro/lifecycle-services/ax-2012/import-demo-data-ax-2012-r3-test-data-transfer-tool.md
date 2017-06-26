@@ -5,11 +5,11 @@ title: Import demo data for AX 2012 R3 by using the Test Data Transfer Tool
 description: In this walkthrough, you will use the Test Data Transfer Tool (beta) to import the demo data for Microsoft Dynamics AX 2012 R3.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
-ms.technology: 
+ms.technology: ax-2012
 
 # optional metadata
 

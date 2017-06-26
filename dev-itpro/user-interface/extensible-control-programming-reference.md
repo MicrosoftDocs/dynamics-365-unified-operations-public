@@ -5,7 +5,7 @@ title: Extensible control programming reference
 description: This topic provides reference content for extensible control programming.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -592,7 +592,7 @@ self.colors = [
 <div data-dyn-bind="foreach...">
 <div data-dyn-bind="vars...foreach...">
 <div data-dyn-bind="text...">1.1 (0.2552) X++ Language</div>
-<div data-dyn-bind="text...">1.2 (0.7) Dynamics 365 for Operations Applications</div>
+<div data-dyn-bind="text...">1.2 (0.7) Applications</div>
 </div>
 </div>
 <div data-dyn-bind="vars...">

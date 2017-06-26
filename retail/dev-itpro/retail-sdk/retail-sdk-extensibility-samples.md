@@ -5,10 +5,10 @@ title: Retail SDK extensibility samples
 description: The Retail SDK includes extensibility samples. These samples are a good way to learn about different ways to customize Retail.  
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -26,7 +26,7 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
@@ -60,7 +60,7 @@ The Retail software development kit (SDK) includes extensibility samples. You ca
 </tr>
 <tr class="odd">
 <td>EmailPreference</td>
-<td>This sample shows how to use extension properties to extend an entity. An entity is extended in Microsoft Dynamics 365 for Operations, the entity is persisted in both the Dynamics 365 for Operations and channel databases, and the POS client enables access to the value. The new value is written synchronously to Dynamics 365 for Operations via the RetailRealtimeTransaction service. No customization is required in the CRT or Retail Server, because extension properties flow automatically. There are changes to Dynamics 365 for Operations pages, Dynamics 365 for Operations tables, the Dynamics 365 for Operations Real-time Service (RTS) client, Commerce Data Exchange (CDX), the channel database, and the POS (both Modern POS and Cloud POS). This sample doesn't support offline mode.</td>
+<td>This sample shows how to use extension properties to extend an entity. The extended entity is persisted in both the Microsoft Dynamics 365 for Retail and channel databases, and the POS client enables access to the value. The new value is written synchronously to Retail via the RetailRealtimeTransaction service. No customization is required in the CRT or Retail Server, because extension properties flow automatically. There are changes to pages, tables, the Real-time Service (RTS) client, Commerce Data Exchange (CDX), the channel database, and the POS (both Modern POS and Cloud POS). This sample doesn't support offline mode.</td>
 <td><ul>
 <li>Modify an existing Modern POS/Cloud POS view or page.</li>
 <li>Extend the Real-time Service.</li>
@@ -69,7 +69,7 @@ The Retail software development kit (SDK) includes extensibility samples. You ca
 </tr>
 <tr class="even">
 <td>StoreHours</td>
-<td>This sample shows how to create a new business entity (StoreHours) across both Dynamics 365 for Operations and the channel. There are changes to Dynamics 365 for Operations  tables, CDX, the channel database, the CRT, Retail Server, and the POS (both Modern POS and Cloud POS). This sample supports offline mode for Modern POS.</td>
+<td>This sample shows how to create a new business entity (StoreHours) across both Retail and the channel. There are changes to tables, CDX, the channel database, the CRT, Retail Server, and the POS (both Modern POS and Cloud POS). This sample supports offline mode for Modern POS.</td>
 <td><ul>
 <li>Create a new CRT and Retail Server extension, or a new service.</li>
 <li>Modify an existing MPOS/Cloud POS view or page.</li>

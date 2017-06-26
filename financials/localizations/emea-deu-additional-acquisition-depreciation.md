@@ -5,7 +5,7 @@ title: Additional acquisition depreciation
 description: This article explains how depreciation is calculated for additional acquisitions in Germany and provides an example. Acquisition adjustments for fixed assets must always be calculated as if the adjustments were made on the first day of the business year.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,11 +17,10 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 12791
-ms.assetid: b8e17c7a-917c-4016-87a5-27c34ccde941
 ms.search.region: Germany
 # ms.search.industry: 
 ms.author: mrolecki

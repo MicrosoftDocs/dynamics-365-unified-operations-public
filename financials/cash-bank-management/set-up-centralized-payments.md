@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up centralized payments
-description: 
+description: Follow these steps to prepare to process payments in one legal entity on behalf of other legal entities in your organization.
 author: twheeloc
 manager: AnnBe
 ms.date: 05/09/2017
@@ -33,8 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Set up centralized payments
 
 [!include[banner](../includes/banner.md)]
-
-
 
 
 Follow these steps to prepare to process payments in one legal entity on behalf of other legal entities in your organization. Before you begin, the following setup must be completed:
