@@ -1519,6 +1519,7 @@
 #### [Microsoft tested POS hardware peripherals](/dynamics365/unified-operations/retail/microsoft-tested-pos-hardware-peripherals?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Retail peripheral simulator](/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Define and maintain channel clients, registers, and hardware stations](/dynamics365/unified-operations/retail/define-maintain-channel-clients-registers-hw-stations?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Cash registers for Sweden](/Dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers.md)
 ### Screen layout
 #### [Configure screen layouts for POS](/dynamics365/unified-operations/retail/pos-screen-layouts?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Install the Retail POS Layout designer](/dynamics365/unified-operations/retail/install-pos-layout-designer?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1569,10 +1570,6 @@
 
 ## Inventory
 ### [Manage store inventory](/dynamics365/unified-operations/retail/work-with-store-inventory?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-## Commerce essentials
-### [Commerce essentials overview](/dynamics365/unified-operations/retail/commerce-essentials?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-### [Organizations and organizational hierarchies in Commerce essentials](/dynamics365/unified-operations/retail/organizational-hierarchies-commerce-essentials?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-
 ## [Retail development & administration](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### Architecture
