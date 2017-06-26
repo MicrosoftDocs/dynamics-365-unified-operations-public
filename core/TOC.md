@@ -1519,6 +1519,7 @@
 #### [Microsoft tested POS hardware peripherals](/dynamics365/unified-operations/retail/microsoft-tested-pos-hardware-peripherals?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Retail peripheral simulator](/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Define and maintain channel clients, registers, and hardware stations](/dynamics365/unified-operations/retail/define-maintain-channel-clients-registers-hw-stations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Cash registers for Sweden](/Dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers.md)
 ### Screen layout
 #### [Configure screen layouts for POS](/dynamics365/unified-operations/retail/pos-screen-layouts?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Install the Retail POS Layout designer](/dynamics365/unified-operations/retail/install-pos-layout-designer?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
