@@ -5,7 +5,7 @@ title: Wizard form pattern
 description: This article provides information about the Wizard form pattern. A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -116,8 +116,8 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [MSDN Wizards in Microsoft Dynamics AX \[AX2012\]](http://msdn.microsoft.com/en-us/library/aa622644.aspx)
--   [MSDN Guidelines for Wizard Development \[AX2012\]](http://msdn.microsoft.com/EN-US/library/aa853845.aspx)
+-   [MSDN Wizards in Microsoft Dynamics AX \[AX 2012\]](http://msdn.microsoft.com/en-us/library/aa622644.aspx)
+-   [MSDN Guidelines for Wizard Development \[AX 2012\]](http://msdn.microsoft.com/EN-US/library/aa853845.aspx)
 
 #### AX 2012 example
 

@@ -31,12 +31,14 @@
     "externalReference": [],
     "globalMetadata": {
       "layout": "Conceptual",
-      "searchScope": ["Operations"],
-      "breadcrumb_path": "/dynamics365/operations/breadcrumb/toc.json",
-      "brand": "dyn-ops"
+      "searchScope": ["Unified Operations"],
+      "breadcrumb_path": "/dynamics365/unified-operations/fin-and-ops/breadcrumb/toc.json",
+      "brand": "dyn-ops",
+      "titleSuffix": "Retail", 
+      "ms.service": "dynamics-365-retail"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "d365OpsRetail"
+    "dest": "d365Ops-Retail"
   }
 }

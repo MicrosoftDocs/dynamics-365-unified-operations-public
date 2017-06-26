@@ -31,12 +31,14 @@
     "externalReference": [],
     "globalMetadata": {
       "layout": "Conceptual",
-      "searchScope": ["Operations"],
-      "breadcrumb_path": "/dynamics365/operations/breadcrumb/toc.json",
-      "brand": "dyn-ops"
+      "searchScope": ["Unified Operations"],
+      "breadcrumb_path": "/dynamics365/unified-operations/fin-and-ops/breadcrumb/toc.json",
+      "brand": "dyn-ops",
+      "titleSuffix": "Talent", 
+      "ms.service": "dynamics-365-talent"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "d365OpsHR"
+    "dest": "d365Ops-HR"
   }
 }

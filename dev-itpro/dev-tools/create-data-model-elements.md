@@ -5,7 +5,7 @@ title: Create a model and data model elements
 description: In this tutorial, you'll use Visual Studio's Dynamics AX menu to create a new model named Fleet Management tutorial. You'll also create and edit new model elements.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

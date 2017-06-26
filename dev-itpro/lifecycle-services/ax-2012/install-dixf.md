@@ -5,11 +5,11 @@ title: Install the Data import/export framework (AX 2012)
 description: This topic provides information about how to install the data import/export framework.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
-ms.technology: 
+ms.technology: ax-2012
 
 # optional metadata
 

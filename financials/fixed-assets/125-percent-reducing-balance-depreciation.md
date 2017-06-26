@@ -5,7 +5,7 @@ title: 125 percent reducing balance depreciation
 description: This article gives an overview of the 125 percent reducing balance method of depreciation.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

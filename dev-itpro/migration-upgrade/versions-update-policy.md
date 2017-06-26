@@ -4,6 +4,7 @@
 title: Online service and on-premises software lifecycle policy
 description: This topic outlines the lifecycle and support policies for both the Dynamics 365 for Finance and Operations, Enterprise edition online service and for Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) software deployments.
 author: ryanCcarlson 
+
 manager: AnnBe
 ems.date: 06/16/2017
 ms.topic: article
@@ -29,7 +30,9 @@ Tms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 
 ---
+
 # Online service and on-premises software lifecycle policy
+
 
 [!include[banner](../includes/banner.md)]
 
@@ -76,6 +79,7 @@ The initial release of the Finance and Operations (on-premises) software will be
 |------------------------------------------------------------------------|------------------|--------------|---------------|-----------------|
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition  | July 2017 update | 7.2.11792.56024| June 2017     | November 2019  | 
 | Microsoft Dynamics 365 for Operations                                  | 1611             | 7.1.1541.3036| November 2016 | November 2019   | 
+
 
 ### Table 2: Retail application release
 

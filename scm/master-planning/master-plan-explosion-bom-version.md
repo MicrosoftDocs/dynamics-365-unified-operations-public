@@ -5,7 +5,7 @@ title: Explosion of a BOM version
 description: This article explains a master planning scenario that involves explosion of a bill of materials (BOM) version.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

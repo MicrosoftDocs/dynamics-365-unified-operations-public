@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Operations cloud platform monthly updates FAQ
-description: This topic provides some key information about the monthly updates of the Microsoft Dynamics 365 for Operations cloud platform.
+title: Finance and Operations cloud platform monthly updates FAQ
+description: This topic provides some key information about the monthly updates of the Microsoft Dynamics 365 for Finance and Operations cloud platform.
 author: sericks
 manager: AnnBe
 ms.date: 04/21/2017
@@ -30,11 +30,11 @@ ms.search.validFrom: 2017-03-31
 
 ---
 
-# Dynamics 365 for Operations cloud platform monthly updates FAQ
+# Finance and Operations cloud platform monthly updates FAQ
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides some key information about the monthly updates of the Microsoft Dynamics 365 for Operations cloud platform.
+This topic provides some key information about the monthly updates of the Microsoft Dynamics 365 for Finance and Operations cloud platform.
 
 What's the rationale behind the cloud platform monthly updates?
 ---------------------------------------------------------------
@@ -44,7 +44,7 @@ The cloud platform is [locked](../get-started/whats-new-platform-update-3.md) as
 Monthly updates are backward compatible and non-breaking. An explicit opt-in option will be added for features that alter the behavior of existing features.
 
 ## How can I update my environment to the latest monthly update?
-To install the latest monthly platform update on an existing environment, go to [Lifecycle Services (LCS)](https://lcs.dynamics.com/). In the Shared asset library, select the **Software deployable package** tab. You will find the latest platform update package that you can deploy. For example, the deployable package for platform update 5 is shown below. This package can be imported to the project's asset library and then can be applied to a specific environment through the update flows. For more details, see [Upgrade Dynamics 365 for Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md).
+To install the latest monthly platform update on an existing environment, go to [Lifecycle Services (LCS)](https://lcs.dynamics.com/). In the Shared asset library, select the **Software deployable package** tab. You will find the latest platform update package that you can deploy. For example, the deployable package for platform update 5 is shown below. This package can be imported to the project's asset library and then can be applied to a specific environment through the update flows. For more details, see [Upgrade Finance and Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md).
 
 ![Deployable package in LCS](./media/deployable-package-in-lcs.png)
 
@@ -59,7 +59,7 @@ Monthly platform updates are backward compatible and non-breaking. We recommend 
 We recommend that you automate functional validations to reduce the validation effort.
 
 ## How long can I stay on a specific monthly update?
-You can stay up to 12 months on a monthly platform update. However, any hotfix that you need will require you to take the latest monthly update available. Typically updates fix problems with or enable new features in Dynamics 365 for Operations, so you are highly encouraged to keep up to date. For more information, see [Microsoft Dynamics 365 for Operations versions and update policy](../migration-upgrade/versions-update-policy.md).
+You can stay up to 12 months on a monthly platform update. However, any hotfix that you need will require you to take the latest monthly update available. Typically updates fix problems with or enable new features in Finance and Operations, so you are highly encouraged to keep up to date. For more information, see [Microsoft Dynamics 365 for Finance and Operations versions and update policy](../migration-upgrade/versions-update-policy.md).
 
 ## Can I get a hotfix instead of the full monthly update?
 No. All hotfixes are rolled into the cumulative monthly updates. Platform updates have been cumulative in the past too. You will need to apply the latest monthly platform update to get a fix available in any of the interim updates. For instance, if you are on update 3 and the hotfix that you need is in update 4 but the latest update available is update 7, you need to apply update 7 which will include all fixes in update 4.
@@ -68,9 +68,9 @@ No. All hotfixes are rolled into the cumulative monthly updates. Platform update
 No. Monthly platform updates do not require you to upgrade your code customizations (Partner or ISV).
 
 ## How do I get application updates?
-Application updates (X++ and binary) are available in the update tiles based on those applicable to a specific environment. Application updates can be searched for and applied as needed. All available application updates are applicable to the latest platform update. See the details for the release in the [Microsoft Dynamics 365 for Operations versions and update policy](../migration-upgrade/versions-update-policy.md). 
+Application updates (X++ and binary) are available in the update tiles based on those applicable to a specific environment. Application updates can be searched for and applied as needed. All available application updates are applicable to the latest platform update. See the details for the release in the [Microsoft Dynamics 365 for Finance and Operations versions and update policy](../migration-upgrade/versions-update-policy.md). 
 
-If you are already on platform update 4 or later, applying an application **binary** update will also update your Dynamics 365 for Operations platform to the latest release. 
+If you are already on platform update 4 or later, applying an application **binary** update will also update your Finance and Operations platform to the latest release. 
 
 ![Application and binary update tiles](./media/application-and-binary-update-tiles-146x300.png)
 

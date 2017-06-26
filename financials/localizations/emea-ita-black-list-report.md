@@ -5,7 +5,7 @@ title: Italian black list report
 description: Learn how to set up and maintain the Italian black list report.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -5,7 +5,7 @@ title: Custom Filter Group subpattern
 description: This topic provides information about the Custom Filter Group subpattern.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -157,8 +157,8 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [MSDN AX2012 How to Add Controls to the Filter Pane](http://msdn.microsoft.com/EN-US/library/cc577231.aspx)
--   [MSDN AX2012 List Page Overview – section Filter Pane](http://msdn.microsoft.com/EN-US/library/cc616937.aspx)
+-   [MSDN AX 2012 How to Add Controls to the Filter Pane](http://msdn.microsoft.com/EN-US/library/cc577231.aspx)
+-   [MSDN AX 2012 List Page Overview – section Filter Pane](http://msdn.microsoft.com/EN-US/library/cc616937.aspx)
 
 #### AX 2012 example
 

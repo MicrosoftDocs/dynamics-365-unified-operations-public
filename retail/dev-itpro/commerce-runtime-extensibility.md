@@ -5,10 +5,10 @@ title: Commerce runtime and Retail Server extensibility
 description: This article describes various ways that you can extend the commerce runtime (CRT) and Retail Server. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence. It also shows how to add an action to a Retail Server controller and add a controller for an entity.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
@@ -49,7 +49,7 @@ To enable the property to be read later, you can use this syntax.
     bool? property = (bool?)entity.GetProperty("EXTENSION_PROPERTY_ADDED");
 
 ## Using extension properties on CRT entities with persistence
-Any extension property that you add to an entity stays in memory for the lifetime of the object. Additionally, the extension property travels across application boundaries. For example, if you add an extension property in Retail Modern POS and then call Retail Server/the CRT, the key-value pair is also available in that process. Additionally, if that entity is sent to Microsoft Dynamics 365 for Operations during a Commerce Data Exchange: Real-time Service (RTS) call, the key-value pair is also available in the Dynamics 365 for Operations process. However, as we mentioned earlier, it isn't persisted by default. 
+Any extension property that you add to an entity stays in memory for the lifetime of the object. Additionally, the extension property travels across application boundaries. For example, if you add an extension property in Retail Modern POS and then call Retail Server/the CRT, the key-value pair is also available in that process. Additionally, if that entity is sent to during a Commerce Data Exchange: Real-time Service (RTS) call, the key-value pair is also available in the process. However, as we mentioned earlier, it isn't persisted by default. 
 
 If you must persist an extension property, you must do data modeling to help guarantee that you make the right design choices about where the data should reside. You can use a new column in the same table, you can use a new table and a join, or you can use another approach. The recommended approach is to use a new table and a join. This approach fits most requirements well. For this approach, the customizer must learn where all “writes” occur and update the SQL code (stored procedures), and must also learn where all the “reads” occur and update that SQL code (SQL view). The EmailPreference sample provides a good end-to-end example. In that sample, a single SQL view and a single SQL stored procedure are changed via customization. 
 

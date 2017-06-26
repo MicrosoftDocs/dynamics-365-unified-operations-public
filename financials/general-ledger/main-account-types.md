@@ -5,7 +5,7 @@ title: Main account types
 description: The main account types determine how a main account is used in the chart of accounts.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -5,10 +5,10 @@ title: Modern POS and Cloud POS trigger extensibility
 description: This article explains the client-side trigger functionality in Modern POS and Cloud POS.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
@@ -40,7 +40,7 @@ This article explains the client-side trigger functionality in Modern POS and Cl
 Trigger overview
 ----------------
 
-Triggers are events that are raised by Microsoft Dynamics 365 for Operations for Retail POS. Triggers let you insert custom code before or after operations. There are two kinds of triggers: pre-triggers and post-triggers.
+Triggers are events that are raised by Microsoft Dynamics 365 for Retail for Retail POS. Triggers let you insert custom code before or after operations. There are two kinds of triggers: pre-triggers and post-triggers.
 
 | Pre-triggers                                                                                                                                                                                                                                                    | Post-triggers                                                                                                                                                                                                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
