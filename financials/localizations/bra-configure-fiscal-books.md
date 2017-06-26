@@ -27,33 +27,33 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 ---
 [!include[banner](../includes/banner.md)]
 
-Fiscal books can help you making the fiscal establishment's tax assessment, tax payment and tax reporting through the SPED, Public Digital Bookkeeping System (Sistema Publico de Escrituração Digital). The SPED files provides detailed information about the tax assessments and tax payments upon transactions with goods, fixed assets, services as well transaction in the general ledger. 
+Fiscal books can help create the fiscal establishment's tax assessment, tax payment and tax reporting through the SPED, Public Digital Bookkeeping System (Sistema Publico de Escrituração Digital). The SPED files provides detailed information about the tax assessments and tax payments upon transactions with goods, fixed assets, services as well transaction in the general ledger. 
 
 Set up requirements for SPED fiscal text files:
 > [!NOTE]
-Before you configure your SPED fiscal text file, you must import the data model **SPED model** and the file configuration **EFD ICMS IPI - nnn (BR)** from the Electronic reporting module. In the Electronic reporting module, you can download both model and file configuration from the repository published by Microsoft, or get an updated version from LCS.
-1.	On the **Tax statements parameters** page, click **New from eletronic reporting**.
+> Before you configure your SPED fiscal text file, you must import the data model **SPED model** and the file configuration **EFD ICMS IPI - nnn (BR)** from the Electronic reporting module. In the Electronic reporting module, you can download both the model and file configuration from the repository published by Microsoft, or get an updated version from LCS.
+1.	On the **Tax statements parameters** page, click **New** from eletronic reporting.
 2.	Give a name for the tax statement.
 3. Select **SPED model** as Model mapping name and **EFD ICMS IPI - nnn (BR)** as Format mapping.
 
 Set up requirements for GIA text files:
 > [!NOTE]
-Before you configure your GIA text file, you must import the data model **SPED model** and the file configuration **GIA** from the Electronic reporting module. In the Electronic reporting module, you can download both model and file configuration from the repository published by Microsoft, or get an updated version from LCS.
-1.	On the **Tax statements parameters** page, click **New from eletronic reporting**.
+> Before you configure your GIA text file, you must import the data model **SPED model** and the file configuration **GIA** from the Electronic reporting module. In the Electronic reporting module, you can download both the model and file configuration from the repository published by Microsoft, or get an updated version from LCS.
+1.	On the **Tax statements parameters** page, click **New** from eletronic reporting.
 2.	Give a name for the tax statement.
 3. Select **SPED model** as Model mapping name and **GIA** as Format mapping.
 
 Set up requirements for GIA-ST text files:
 > [!NOTE]
-Before you configure your GIA-ST text file, you must import the data model **SPED model** and the file configuration **GIA-ST** from the Electronic reporting module. In the Electronic reporting module, you can download both model and file configuration from the repository published by Microsoft, or get an updated version from LCS.
-1.	On the **Tax statements parameters** page, click **New from eletronic reporting**.
+> Before you configure your GIA-ST text file, you must import the data model **SPED model** and the file configuration **GIA-ST** from the Electronic reporting module. In the Electronic reporting module, you can download both the model and file configuration from the repository published by Microsoft, or get an updated version from LCS.
+1.	On the **Tax statements parameters** page, click **New** from eletronic reporting.
 2.	Give a name for the tax statement.
 3. Select **SPED model** as Model mapping name and **GIA-ST** as Format mapping.
 
 Set up requirements for SPED contributions text files:
 > [!NOTE]
-Before you configure your SPED contributions text file, you must import the data model **SPED model** and the file configuration **EFD Contributions - nnn (BR)** from the Electronic reporting module. In the Electronic reporting module, you can download both model and file configuration from the repository published by Microsoft, or get an updated version from LCS.
-1.	On the **Tax statements parameters** page, click **New from eletronic reporting**.
+> Before you configure your SPED contributions text file, you must import the data model **SPED model** and the file configuration **EFD Contributions - nnn (BR)** from the Electronic reporting module. In the Electronic reporting module, you can download both the model and file configuration from the repository published by Microsoft, or get an updated version from LCS.
+1.	On the **Tax statements parameters** page, click **New** from eletronic reporting.
 2.	Give a name for the tax statement.
 3. Select **SPED model** as Model mapping name and **EFD Contributions - nnn (BR)** as Format mapping.
 
