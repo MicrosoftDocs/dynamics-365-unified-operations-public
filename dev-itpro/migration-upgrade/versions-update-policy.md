@@ -81,7 +81,7 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 | Release                           | Version          | Build number | Availability | Expiration date | 
 |-----------------------------------|------------------|--------------|--------------|-----------------|
-| Microsoft Dynamics 365 for Retail | July 2017 update | 7.2.11792.56024 | June 2017    |    |
+| Microsoft Dynamics 365 for Retail | July 2017 update | 7.2.11792.56024 | June 2017    | November 2019   |
 
 ### Table 3: Platform releases
 
