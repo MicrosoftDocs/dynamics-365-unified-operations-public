@@ -4,11 +4,11 @@
 title: Configuration data packages
 description: This topic provides an overview of the configuration data packages available on LCS.
 author: saraschi
-manager: 
+manager: AnnBe
 ms.date: 06/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -32,77 +32,36 @@ ms.dyn365.ops.version: Platform update 8
 
 ## Overview
 
-Configuration data packages are available as process data packages from LCS to
-help you improve implementation repeatability and accelerate configuration of
-Dynamics 365 for Finance and Operations. The data packages are comprised of
-configuration entity spreadsheets populated with best practice data to create an
-initial golden build. The data entities are also sequenced appropriately within
-the data packages for a successful single-click import of the data. There are
-three different types of data included in the entity spreadsheets.
+Configuration data packages are available as process data packages from Microsoft Dynamics Lifecycle Services to help you improve implementation repeatability and accelerate configuration of Microsoft Dynamics 365 for Finance and Operations. The data packages contain configuration entity spreadsheets populated with best practice data to create an initial golden build. The data entities are also sequenced appropriately within the data packages for a successful single-click import of the data. There are three different types of data included in the entity spreadsheets.
+-   Business data: The spreadsheet contains standard business data for a mid-sized trade or retail company. This data combines best practices and business standards to be used as a starting point for your configuration.
+-   Sample data: The spreadsheet contains data to be used as an example for business-specific data. This data can be imported and used as an example but will need to be changed for individual business practices.
+-   No data: The spreadsheet does not contain any data. There are several areas of the product that are unique to each business and their business practices, and must be configured specifically for the organization. These spreadsheets should be reviewed and updated for the organization as appropriate.
 
--   Business data: The spreadsheet contains standard business data for a
-    mid-sized trade or retail company. This data combines best practices and
-    business standards to be used as a starting point for your configuration.
+The type of data included in each entity spreadsheet in the data packages is described in the [Data packages](#data-packages) section. You can either modify individual spreadsheets before importing the data packages, or import the data packages as they have been supplied and then update your data in the system.
 
--   Sample data: The spreadsheet contains data to be used as an example for
-    business-specific data. This data can be imported and used as an example but
-    will need to be changed for individual business practices.
+## Using of configuration data packages
+Configuration data packages can be accessed from LCS, and either applied to an LCS environment or downloaded to be manually imported into Finance and Operations.
 
--   No data: The spreadsheet does not contain any data. There are several areas
-    of the product that are unique to each business and their business
-    practices, and must be configured specifically for the organization. These
-    spreadsheets should be reviewed and updated for the organization as
-    appropriate.
+1.  Open your LCS project, and navigate to the Asset library.
+2.  In the **Asset type** list, select **Process data packages**.
+3.  Click **Import**.
+4.  Select the **Configuration data package**.
+5.  Click **Pick**.
 
-See the Data packages sections for the type of data included in each entity
-spreadsheet in the data packages. You can either modify individual spreadsheets
-before importing the data packages, or import the data packages as they have
-been supplied and update data in the system.
+At this point you have the option to use the **Consume** function to apply the process data package to an LCS environment.
 
-## Usage of configuration data packages
-
-Configuration data packages can be accessed from LCS, and either applied to an
-LCS environment or downloaded to be manually imported into Dynamics 365 for
-Finance and Operations.
-
-1.  Navigate to the Asset library within your LCS project
-
-2.  In the Asset type list, select Process data packages
-
-3.  Click Import
-
-4.  Select the Configuration data package
-
-5.  Click Pick
-
-At this point you have the option to use the Consume function to apply the
-process data package to an LCS environment.
-
-You can also download the individual data package files from the Data packages
-area. Use the Data management workspace within Dynamics 365 for Finance and
-Operations to import the data packages from LCS. Reference the Copy
-configuration data from one company to another wiki for additional information
-on importing and exporting configurations.
+You can also download the individual data package files from the Data packages area. Use the Data management workspace within Finance and Operations to import the data packages from LCS. See [Copy configuration data between companies](copy-configuration.md) for additional information on importing and exporting configurations.
 
 ## Special considerations
+**System setup** The System data package must be imported before any other data packages. By default, the system data package will create a new legal entity, ST01, and the module area data packages are dependent upon this legal entity.
 
-System setup: The System data package is required to be imported before any
-other data packages. By default, the system data package will create a new legal
-entity, ST01, and the module area data packages are dependent upon this legal
-entity.
-
-General ledger: A generic chart of accounts is included in the configuration
-data package. When this data is used as defined in the Main account entity
-spreadsheet, posting profiles across the system will also populate with default
-posting data. If you change the main accounts used for the chart of accounts,
-then you will also need to update the individual posting profiles and posting
-accounts for each area.
+**General ledger** A generic chart of accounts is included in the configuration data package. When this data is used as defined in the Main account entity spreadsheet, posting profiles across the system will also populate with default posting data. If you change the main accounts used for the chart of accounts, then you will also need to update the individual posting profiles and posting accounts for each area.
 
 ## Data packages: System
 
 ### 010 – System Setup
 
-|                                         | **Spreadsheet content:** |                 |             |
+|                                         | **Spreadsheet content** |                 |             |
 |-----------------------------------------|--------------------------|-----------------|-------------|
 | **Entity spreadsheet**                  | **Business data**        | **Sample data** | **No data** |
 | Address and contact information purpose | X                        |                 |             |
@@ -145,7 +104,7 @@ accounts for each area.
 
 ### 020 – GL Shared
 
-|                                        | **Spreadsheet content:** |                 |             |
+|                                        | **Spreadsheet content** |                 |             |
 |----------------------------------------|--------------------------|-----------------|-------------|
 | **Entity spreadsheet**                 | **Business data**        | **Sample data** | **No data** |
 | Account structure activation           |                          | X               |             |
@@ -175,7 +134,7 @@ accounts for each area.
 
 ### 025 – GL
 
-|                                                  | **Spreadsheet content:** |                 |             |
+|                                                  | **Spreadsheet content** |                 |             |
 |--------------------------------------------------|--------------------------|-----------------|-------------|
 | **Entity spreadsheet**                           | **Business data**        | **Sample data** | **No data** |
 | Accounts for automatic transactions              | X                        |                 |             |
@@ -207,7 +166,7 @@ accounts for each area.
 
 ### 100 – Bank
 
-|                                                   | **Spreadsheet content:** |                 |             |
+|                                                   | **Spreadsheet content** |                 |             |
 |---------------------------------------------------|--------------------------|-----------------|-------------|
 | **Entity spreadsheet**                            | **Business data**        | **Sample data** | **No data** |
 | Bank accounts                                     |                          | X               |             |
@@ -228,7 +187,7 @@ accounts for each area.
 
 ### 120 – AP
 
-|                                             | **Spreadsheet content:** |                 |             |
+|                                             | **Spreadsheet content** |                 |             |
 |---------------------------------------------|--------------------------|-----------------|-------------|
 | **Entity spreadsheet**                      | **Business data**        | **Sample data** | **No data** |
 | Aging period definitions                    |                          |                 | X           |
@@ -280,7 +239,7 @@ accounts for each area.
 
 ### 130 – Tax
 
-|                                    | **Spreadsheet content:** |                 |             |
+|                                    | **Spreadsheet content** |                 |             |
 |------------------------------------|--------------------------|-----------------|-------------|
 | **Entity spreadsheet**             | **Business data**        | **Sample data** | **No data** |
 | Sales tax authorities              |                          | X               |             |
@@ -306,7 +265,7 @@ accounts for each area.
 
 ### 140 – AR
 
-|                                                         | **Spreadsheet content:** |                 |             |
+|                                                         | **Spreadsheet content** |                 |             |
 |---------------------------------------------------------|--------------------------|-----------------|-------------|
 | **Entity spreadsheet**                                  | **Business data**        | **Sample data** | **No data** |
 | Aging period definitions                                | X                        |                 |             |
