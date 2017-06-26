@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  
-audience: Appliation User, IT Pro
+audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: sericks007
 # ms.search.scope: Operations, Core
