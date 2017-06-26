@@ -5,7 +5,7 @@ title: Workflow system architecture
 description: This article describes the architecture of the workflow system in Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -5,7 +5,7 @@ title: Transportation management engines
 description: Transportation management engines define the logic that is used to generate and process transportation rates in Transportation management. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -74,7 +74,7 @@ In most cases, you can click the **Parameters** button in the transportation man
 How is metadata used in transportation management engines?
 ----------------------------------------------------------
 
-Transportation management engines that rely on data that is defined in Dynamics 365 for Operations may use different data schemas. The transportation management system enables different transportation management engines to use the same generic physical database tables. To make sure that run-time interpretation of engine data is correct, you can define metadata for the database tables. This reduces the cost of building new transportation management engines because additional table and form structures are not required in Operations.
+Transportation management engines that rely on data that is defined in Dynamics 365 for Finance and Operations may use different data schemas. The transportation management system enables different transportation management engines to use the same generic physical database tables. To make sure that run-time interpretation of engine data is correct, you can define metadata for the database tables. This reduces the cost of building new transportation management engines because additional table and form structures are not required in Operations.
 
 ## What can be used as search data in rate calculations?
 The data that you use when you calculate rates in Microsoft Dynamics 365 for Finance and Operations is controlled by the metadata configuration. For example, if you want to search for rates based on postal codes you must set up metadata based on the lookup type of a postal code.

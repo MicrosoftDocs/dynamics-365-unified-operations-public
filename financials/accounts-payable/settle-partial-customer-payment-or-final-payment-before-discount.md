@@ -5,7 +5,7 @@ title: Settle a partial customer payment and the final payment in full before th
 description: This article provides scenarios that show how to record partial payments for a customer and take cash discounts within the cash discount period.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

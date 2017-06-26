@@ -5,10 +5,10 @@ title: Back up database for an LCS solution
 description: A Finance and Operations database backup is required for your LCS solution package. When you back up your database, you must include the master, reference, and transactional data that is specific to your solution and industry. This will be used for your pre-sales demo deployments. 
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -5,7 +5,7 @@ title: Information access and reporting in Finance and Operations
 description: This topic explains the various reporting options available as part of the Finance and Operations platform.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -73,7 +73,7 @@ The best reporting solutions are designed with the expertise, daily functions, a
 
 It’s understandable that customers *want* a solution that aligns with the existing processes they are comfortable using. However, there’s a lot you can learn through these leading questions used to discover what the customer actually *needs* to be successful in their task. Delight your customers by providing them with solutions that empower them to be more productive.
 
-## Reporting experiences in Dynamics 365 for Operations
+## Reporting experiences in Dynamics 365 for Finance and Operations
 Information access scenarios supported in Finance and Operations applications can be broken down into five distinct reporting experiences. Specialized tools are provided to meet the complex and diverse reporting needs of various functions throughout the organization.
 
 -   **Operational views** – Designed to address the specific needs of a given business persona.
@@ -185,7 +185,7 @@ Standard financial reports are provided using the default main account categorie
 **What are the characteristics and capabilities?**
 
 -   Built-in flexible financial reporting solution designed to handle complex organizational structures.
--   Fully-integrated with General ledger in Dynamics 365 for Operations.
+-   Fully-integrated with General ledger in Dynamics 365 for Finance and Operations.
 -   Create custom financial reports using the default solutions as a starting point.
 -   Interactive reports with drill-down capabilities to navigate down to transaction details.
 

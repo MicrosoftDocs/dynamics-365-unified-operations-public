@@ -5,10 +5,10 @@ title: Add customer preference data to a channel database
 description: This tutorial shows how to add the RetailCustPreferences table to the commerce runtime (CRT) for the retail channel, and how to create a subjob to move the data in the new table to the channel database.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -26,7 +26,7 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
@@ -78,7 +78,7 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
     6.  Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Initialize retail scheduler**. The required scheduler subjob definition is generated, and the subjob is added to the scheduler job.
 
 7.  Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Retail channel schema**.
-8.  On the **Retail channel schema** page, in the left navigation pane, click **Dynamics 365 for Operations.**
+8.  On the **Retail channel schema** page, in the left navigation pane, click **Dynamics 365 for Retail.**
 9.  On the **Retail data distribution** tab, click **Export**.
 10. Follow one of these steps, depending on the browser that you're using:
     -   If you're using Google Chrome, you should be prompted to download an XML file. Save the file to a path.
@@ -94,7 +94,7 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
                 </LinkGroup>
             </Table>
 
-12. After you've finished editing the file, go back to client and the **Retail channel schema** page. In the left navigation pane, click **Dynamics 365 for Operations.**
+12. After you've finished editing the file, go back to client and the **Retail channel schema** page. In the left navigation pane, click **Dynamics 365 for Retail.**
 13. On the **Retail data distribution** tab, click **Import**.
 14. In the dialog box that opens, click **Browse**, select the XML file that you just edited, and then click **OK** to import the file.
 15. Close the **Retail channel schema** page.

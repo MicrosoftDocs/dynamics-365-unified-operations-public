@@ -2,10 +2,10 @@
 # required metadata
 
 title: Generate payroll reports
-description: This topic describes the standard payroll reports that Dynamics 365 for Operations provides to help you with payroll processing and government reporting. Use these standard reports to create pay statements and W-2 forms that you can issue to your workers, validate payroll taxes and benefit amounts, and complete federal and state regulatory reports.
+description: This topic describes the standard payroll reports that Dynamics 365 for Finance and Operations provides to help you with payroll processing and government reporting. Use these standard reports to create pay statements and W-2 forms that you can issue to your workers, validate payroll taxes and benefit amounts, and complete federal and state regulatory reports.
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,10 +32,10 @@ ms.dyn365.ops.version: Version 1611
 
 # Generate payroll reports
 
-[!include[banner](../../includes/banner.md)]]
+[!include[banner](../../includes/banner.md)]
 
 
-This topic describes the standard payroll reports that Dynamics 365 for Operations provides to help you with payroll processing and government reporting. Use these standard reports to create pay statements and W-2 forms that you can issue to your workers, validate payroll taxes and benefit amounts, and complete federal and state regulatory reports.
+This topic describes the standard payroll reports that Dynamics 365 for Finance and Operations provides to help you with payroll processing and government reporting. Use these standard reports to create pay statements and W-2 forms that you can issue to your workers, validate payroll taxes and benefit amounts, and complete federal and state regulatory reports.
 
 This topic describes functionality that is available only if the **Payroll - USA** configuration key is selected.
 

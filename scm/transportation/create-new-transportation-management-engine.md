@@ -5,7 +5,7 @@ title: Create a new transportation management engine
 description: This article describes how to create a new transportation management engine in Microsoft Dynamics 365 for Finance and Operations. 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -61,7 +61,7 @@ This section explains how to create a class library that has a TMS engine implem
 5.  In a new solution, create a new Finance and Operations project, and name it **TMSThirdParty**. In the project properties, set the project's model to **TMSEngines**.
 6.  Add a new C\# class library to your solution, and name it **ThirdPartyTMSEngines**.
 7.  In the ThirdPartyTMSEngines project, add references to Finance and Operations–specific assemblies:
-    -   Application assemblies that enable X++ types to be referenced. These assemblies can be found in the following locations. \[Packages root\] is the path of the location where all the deployed Dynamics 365 for Operations assemblies are placed, such as C:\\Packages.
+    -   Application assemblies that enable X++ types to be referenced. These assemblies can be found in the following locations. \[Packages root\] is the path of the location where all the deployed Dynamics 365 for Finance and Operations assemblies are placed, such as C:\\Packages.
 
             [Packages root]\ApplicationPlatform\bin\Dynamics.AX.ApplicationPlatform.dll
             [Packages root]\ApplicationFoundation\bin\Dynamics.AX.ApplicationFoundation.dll

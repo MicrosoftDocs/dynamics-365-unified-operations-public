@@ -5,10 +5,10 @@ title: Task recorder and Help for POS
 description: This topic describes how to use Task recorder in Retail Modern POS and Cloud POS.
 author: mugunthanm
 manager: AnnBe
-ms.date: 2017-05-15
+ms.date: 06/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -26,7 +26,8 @@ ms.search.region: Global
 ms.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+
 ---
 
 # Task recorder and Help for POS

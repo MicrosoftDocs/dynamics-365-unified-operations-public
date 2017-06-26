@@ -5,10 +5,10 @@ title: Deploy a payment connector
 description: This topic describes how to deploy a payment connector package to the appropriate components. 
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

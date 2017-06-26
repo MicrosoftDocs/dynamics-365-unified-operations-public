@@ -5,10 +5,10 @@ title: Retail Modern POS installation and updates
 description: This topic describes how to configure, download, and install Retail Modern POS on various platforms. It then describes how to activate Retail Modern POS through device activation.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -26,7 +26,8 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+
 
 ---
 
@@ -52,12 +53,12 @@ Before you start the steps that are outlined in this topic, follow these steps.
 - Verify that you have Azure AD credentials that you can use to sign in to Retail headquarters.
 - Verify that you have administrative or root access to install Retail Modern POS on a device.
 - Verify that you can access the Retail Server from the device.
-- Verify that the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, environment contains the Retail permission groups and jobs in the **Human resources** module. These permission groups and jobs should have been installed as part of the demo data.
+- Verify that the Microsoft Dynamics 365 for Retail, Enterprise edition, environment contains the Retail permission groups and jobs in the **Human resources** module. These permission groups and jobs should have been installed as part of the demo data.
 
 ## <a id="Install"> </a>Download and install Retail Modern POS
 ### Verify that the device is correctly configured
 
-1. Use your Azure AD credentials to sign in to the Finance and Operations trial.
+1. Use your Azure AD credentials to sign in to the Retail trial.
 2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Channels** &gt; **Channel deployment**.
 3. On the **Channel deployment** page, select the **Registers** tile.
 4. On the **Registers** page, select a store register.
@@ -96,7 +97,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
     > [!NOTE]
     > - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
-    > - The installation package that you must use varies, depending on whether you require offline support, and whether the device that Retail Modern POS will be installed on is a Windows tablet or a phone device (such as a Windows Phone, an Android device, or an iOS device). The correct package is automatically selected for download, based on the register settings and the application type that is set for the device in Finance and Operations. If the offline package is selected for a Windows tablet, but Microsoft SQL Server isn't already installed (or if it doesn't meet the requirements for the offline package), SQL Server is downloaded and installed silently.
+    > - The installation package that you must use varies, depending on whether you require offline support, and whether the device that Retail Modern POS will be installed on is a Windows tablet or a phone device (such as a Windows Phone, an Android device, or an iOS device). The correct package is automatically selected for download, based on the register settings and the application type that is set for the device in Retail. If the offline package is selected for a Windows tablet, but Microsoft SQL Server isn't already installed (or if it doesn't meet the requirements for the offline package), SQL Server is downloaded and installed silently.
 
 7. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 8. After the setup installer has been saved, on the Notification bar, select **Run**. (This step might differ, depending on your browser.)
@@ -180,7 +181,7 @@ For this topic, we have already created workers and assigned them to the Houston
 
 You must complete this procedure before you activate Retail Modern POS for a new worker.
 
-1. In Finance and Operations, from the **Worker** page, open the **Worker details** page for the worker that you created in the previous procedure.
+1. In Retail, from the **Worker** page, open the **Worker details** page for the worker that you created in the previous procedure.
 2. On the Action Pane, select **Edit**.
 3. On the **Retail** tab, select the **POS permissions** link. Under **POS permission group**, verify that the value is **Manager**.
 4. When you've finished, return to the **Worker details** page for the new worker.
@@ -222,7 +223,7 @@ The device should now be activated and ready to use.
 
 1. After a Retail Modern POS application is uploaded into the environment, the version of the package can be selected on the device. The package listings should include the new uploaded application.
 2. To update the Retail Modern POS application, follow the steps in the [Download and install Retail Modern POS](#Install) section. To do an in-place update, just run the newer version of the self-service installer. Uninstallation isn't required or recommended. Device activation status will be maintained after the update.
-3. The installer will use the currently installed configuration settings. If the configuration file has changed, because of various configuration changes in Finance and Operations, an update won't change the Retail Modern POS application settings.
+3. The installer will use the currently installed configuration settings. If the configuration file has changed, because of various configuration changes in Retail, an update won't change the Retail Modern POS application settings.
 
 ## Troubleshooting
 ### Troubleshoot installation
@@ -294,7 +295,7 @@ The device should now be activated and ready to use.
     - The worker must be mapped to an Azure AD account (under **External identity**).
     - The Azure AD account that is mapped must belong to the same tenant.
     - To map the worker to the Azure AD account, sign in to Retail headquarters by using the Admin account for Microsoft Dynamics Lifecycle Services (LCS).
-    - Make sure that the worker is set up as a Finance and Operations user in the Manager role. (This item is checked by validation.)
+    - Make sure that the worker is set up as a Retail user in the Manager role. (This item is checked by validation.)
     - Make sure that the channel is published. (This item is checked by validation.)
     - Make sure that the channel database has the synced data from Retail headquarters, and that download jobs are running.
     - Set up the hardware profile under **Registers**. (This item is checked by validation.)

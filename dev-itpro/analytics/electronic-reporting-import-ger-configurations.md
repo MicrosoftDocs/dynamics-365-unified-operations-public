@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 06/02/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -71,7 +71,7 @@ This topic explains how to download Electronic reporting (ER) configurations fro
     > All the ER configurations will be put into a zip file for download.
     
 9. Open the file, select all the ER configurations, and then copy them to the working directory for the repository of the **File system** type.
-10.	On the **ER repositories** page, on the **Dynamics 365 for Operations** tab, click **Open** to view the list of ER configurations for the selected repository.
+10.	On the **ER repositories** page, on the **Dynamics 365 for Finance and Operations** tab, click **Open** to view the list of ER configurations for the selected repository.
 11.	In the **Configurations** tree in the left pane, select an ER configuration.
 12.	On the **Versions** FastTab, select the required version of the ER configuration.
 13.	Click **Import** to download the selected version from this repository to the current instance. 

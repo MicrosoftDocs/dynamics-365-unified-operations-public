@@ -5,7 +5,7 @@ title: Issue worker payments
 description: This topic explains how to submit pay statements, generate checks or electronic payments, generate a positive pay file for payroll, and post the payment journal.
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Issue worker payments
 
-[!include[banner](../../includes/banner.md)]]
+[!include[banner](../../includes/banner.md)]
 
 
 This topic explains how to submit pay statements, generate checks or electronic payments, generate a positive pay file for payroll, and post the payment journal.

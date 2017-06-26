@@ -5,7 +5,7 @@ title: Cost accounting home page
 description: This topic provides a list of the help topics and other resources that are available for Cost accounting.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

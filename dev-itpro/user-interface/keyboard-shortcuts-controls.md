@@ -5,7 +5,7 @@ title: Keyboard shortcuts for extensible controls
 description: This topic outlines the recommended method for implementing keyboard shortcuts for extensible controls.
 author: robinarh
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Platform update 1
 Keyboard shortcuts are an important consideration when you create any extensible control. This topic provides information that will help you choose keyboard shortcuts for your extensible controls. It also outlines the recommended method for implementing keyboard shortcuts for extensible controls.
 
 <h2>Overview</h2>
-For accessibility, it's essential that keyboard-only users be able to use controls. Therefore, keyboard shortcuts are an important consideration when you create any extensible control. This topic provides information that will help you choose key combinations to use as keyboard shortcuts. It highlights the shortcuts that are currently used by Microsoft Dynamics 365 for Operations and supported browsers, shortcuts that are planned for implementation in Dynamics 365 for Operations, and shortcuts that one or more browsers don't allow to be overridden. This topic also outlines the recommended way to implement keyboard shortcuts for extensible controls.
+For accessibility, it's essential that keyboard-only users be able to use controls. Therefore, keyboard shortcuts are an important consideration when you create any extensible control. This topic provides information that will help you choose key combinations to use as keyboard shortcuts. It highlights the shortcuts that are currently used by Microsoft Dynamics 365 for Finance and Operations and supported browsers, shortcuts that are planned for implementation in Dynamics 365 for Finance and Operations, and shortcuts that one or more browsers don't allow to be overridden. This topic also outlines the recommended way to implement keyboard shortcuts for extensible controls.
 <h2>Choosing a key combination</h2>
 When you're trying to choose a key combination to use as a keyboard shortcut, it's important that you be aware of other existing shortcuts. In this way, you help guarantee that your shortcut won't overlap an existing shortcut. If you try to collide with an existing shortcut, one of the following outcomes might occur:
 <ul>
@@ -47,23 +47,23 @@ When you're trying to choose a key combination to use as a keyboard shortcut, it
 </ul>
 Because of these potential issues, we recommend that you adhere to this guidance when you choose a key combination:
 <ul>
- 	<li><strong>Don't</strong> choose any key combination that is currently used by Dynamics 365 for Operations, or that is planned for future implementation in Dynamics 365 for Operations.</li>
+ 	<li><strong>Don't</strong> choose any key combination that is currently used by Dynamics 365 for Finance and Operations, or that is planned for future implementation in Dynamics 365 for Finance and Operations.</li>
  	<li><strong>Do</strong> pick key combinations that will work in all supported browsers.</li>
  	<li><strong>Do</strong> be careful when you override shortcuts that are used by a supported browser. You should not suppress shortcuts for important or frequently used browser functionality.</li>
  	<li><strong>Do</strong> use longer key combinations (three keys) for control-specific behavior. Shorter combinations should be reserved for user-defined keyboard shortcuts.</li>
  	<li><strong>Don't</strong> choose any key combination that involves Ctrl+Alt, because this combination maps to Alt+Gr for some Eastern European languages and will conflict with other shortcuts.</li>
 </ul>
 <h3>Keyboard shortcut links</h3>
-Here are links to the keyboard shortcuts that are documented for Dynamics 365 for Operations and supported browsers:
+Here are links to the keyboard shortcuts that are documented for Dynamics 365 for Finance and Operations and supported browsers:
 <ul>
- 	<li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/get-started/shortcut-keys">Keyboard shortcuts</a></li>
+ 	<li><a href="/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys">Keyboard shortcuts</a></li>
  	<li><a href="https://support.microsoft.com/en-us/help/13805">Microsoft Edge</a></li>
  	<li><a href="https://support.google.com/chrome/answer/157179">Google Chrome</a></li>
  	<li><a href="https://support.microsoft.com/en-us/help/15357/windows-internet-explorer-11-keyboard-shortcuts">Internet Explorer 11</a></li>
  	<li><a href="https://support.apple.com/kb/PH21483">Apple Safari</a></li>
 </ul>
-<h3>Planned keyboard shortcuts for Dynamics 365 for Operations</h3>
-In addition to the keyboard shortcuts that are currently used by Dynamics 365 for Operations, there are several shortcuts that are planned for future implementation. To avoid conflicts with framework-provided shortcuts, you should not choose the following key combinations for extensible controls.
+<h3>Planned keyboard shortcuts for Dynamics 365 for Finance and Operations</h3>
+In addition to the keyboard shortcuts that are currently used by Dynamics 365 for Finance and Operations, there are several shortcuts that are planned for future implementation. To avoid conflicts with framework-provided shortcuts, you should not choose the following key combinations for extensible controls.
 <table>
 <tbody>
 <tr>

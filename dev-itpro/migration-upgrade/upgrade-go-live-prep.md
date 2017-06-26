@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Upgrade: Prepare for go-live
+title: Upgrade - Prepare for go-live
 description: This topic describes how you can help guarantee that the source AX 2012 system and the upgrade process remain stable and consistent for go-live.
 author: tariqbell
 manager: AnnBe
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-audience: Developer,IT Pro
+audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
 ms.search.scope: Operations Platform
@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Upgrade: Prepare for go-live
+# Upgrade - Prepare for go-live
 
 [!include[banner](../includes/banner.md)]
 

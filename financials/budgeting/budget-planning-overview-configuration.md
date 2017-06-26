@@ -5,7 +5,7 @@ title: Budget planning overview
 description: This article introduces budget planning, and contains information to help you configure budget planning and set up budget planning processes.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -63,7 +63,7 @@ You can use budget planning to perform the following tasks:
 -   Automatically route the budget plans, together with worksheets, justification documents, and other attachments, for review and approval.
 -   Consolidate multiple budget plans from a lower level of the organization into a single parent budget plan at a higher level of the organization. You can also develop a single budget plan at a higher level of the organization and allocate the budget to lower levels of the organization.
 
-Budget planning is integrated with other Microsoft Dynamics 365 for Operations modules. Therefore, you can bring in information from previous budgets, actual expenditures, fixed assets, and human resources. Because budget planning is also integrated with Microsoft Excel and Microsoft Word, you can use these programs to work with budget planning data. For example, a budget manager can export a department’s budget request from a budget plan scenario into an Excel worksheet. The data can be analyzed, updated, and charted in the worksheet, and then published back to the budget plan lines.
+Budget planning is integrated with other Microsoft Dynamics 365 for Finance and Operations modules. Therefore, you can bring in information from previous budgets, actual expenditures, fixed assets, and human resources. Because budget planning is also integrated with Microsoft Excel and Microsoft Word, you can use these programs to work with budget planning data. For example, a budget manager can export a department’s budget request from a budget plan scenario into an Excel worksheet. The data can be analyzed, updated, and charted in the worksheet, and then published back to the budget plan lines.
 
 ## Configuring budget planning
 The **Budget planning configuration** page contains most of the settings that you require in order to set up budget planning. The following sections describe some key factors that you should consider as you configure budget planning. After you've completed the configuration, you set up budget planning processes.
@@ -82,7 +82,7 @@ In the following example, the corporate headquarters estimates the initial budge
 
 On the **Organization hierarchy** page, you can designate an organization hierarchy as a budget planning hierarchy for each budget planning process. The budget planning hierarchy doesn't have to match the standard organization hierarchy that is used for other purposes. Because this hierarchy is used to aggregate and distribute data, you might want it to have a different structure. In the example schema, the sales departments are under a headquarters level that includes budget and finance departments. This structure likely differs from the structure that is used to manage operations for the sales departments. Only one organization hierarchy can be assigned to each budget planning process. 
 
-For more information, see [Organizations and organizational hierarchies](/dynamics365/unified-operations/organization-administration/organizations-organizational-hierarchies).
+For more information, see [Organizations and organizational hierarchies](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies).
 
 ### User security
 

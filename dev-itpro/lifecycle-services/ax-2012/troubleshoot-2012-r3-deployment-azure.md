@@ -5,11 +5,11 @@ title: Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
 description: This article explains how to resolve common issues and how to get assistance with your Microsoft Dynamics AX 2012 R3 environment on Azure.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service:
-ms.technology: 
+ms.technology: ax-2012
 
 # optional metadata
 

@@ -5,7 +5,7 @@ title: Power BI Embedded integration
 description: With Microsoft Dynamics 365 for Finance and Operations, Power BI content developed by partners and ISVs can be embedded directly into the application. Read this topic to learn more about some of the amazing things possible using Power BI Embedded.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -49,7 +49,7 @@ Finance and Operations integrates with [Microsoft Power BI](http://www.powerbi.
 For more information about customizations using extensions, see [Customization: Overlayering and extensions](..\extensibility\customization-overlayering-extensions.md).
 
 ## Why would I want to use Microsoft Power BI Embedded?
-While both Power BI services are available, it's important to know which is best suited to support target application scenarios. The following illustration offers a feature comparison across services.[![power-bi-embedded-overview](https://msdynamics.blob.core.windows.net/media/2017/02/Power-BI-Embedded-Overview-1024x487.png)](https://msdynamics.blob.core.windows.net/media/2017/02/Power-BI-Embedded-Overview.png) Read the [Power BI Embedded FAQ](https://docs.microsoft.com/en-us/azure/power-bi-embedded/power-bi-embedded-faq) to learn more about the Power BI Embedded Service.
+While both Power BI services are available, it's important to know which is best suited to support target application scenarios. The following illustration offers a feature comparison across services.[![power-bi-embedded-overview](https://msdynamics.blob.core.windows.net/media/2017/02/Power-BI-Embedded-Overview-1024x487.png)](https://msdynamics.blob.core.windows.net/media/2017/02/Power-BI-Embedded-Overview.png) Read the [Power BI Embedded FAQ](/azure/power-bi-embedded/power-bi-embedded-faq) to learn more about the Power BI Embedded Service.
 
 ## Advantages of Power BI Embedded
 -   **Deliver Power BI workspaces and reports with the application** - If you are a power user or a business analyst, you can tweak ready-made reports or create new ones using Power BI tools. As a developer, you can use the reports developed by your users and create rich navigation experiences within the product as workspaces. If you are in the partner and ISV community, you can build rich workspaces with Power BI experiences and ship as part of your solution.

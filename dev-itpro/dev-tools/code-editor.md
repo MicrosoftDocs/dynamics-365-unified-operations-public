@@ -5,7 +5,7 @@ title: Code editor
 description: This article reviews the code editor features for Microsoft Dynamics 'AX 7.'
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

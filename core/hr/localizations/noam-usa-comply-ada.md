@@ -5,7 +5,7 @@ title: Comply with the Americans with Disabilities Act
 description: This article describes features that can assist your organization in complying with the Americans with Disabilities Act (ADA). This information applies only to legal entities doing business in the United States.
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,7 +22,7 @@ ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 2741
 ms.assetid: 42504e87-7cb1-42e0-8a8b-9bc91fb54095
-ms.search.region: United States
+ms.search.region: USA
 # ms.search.industry: 
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Comply with the Americans with Disabilities Act
 
-[!include[banner](../../includes/banner.md)]]
+[!include[banner](../../includes/banner.md)]
 
 
 This article describes features that can assist your organization in complying with the Americans with Disabilities Act (ADA). This information applies only to legal entities doing business in the United States.
@@ -59,8 +59,4 @@ Accommodations represent changes to work environments or business operations tha
 See also
 --------
 
-[Human resources](../index.md)
-
-
-
-
+[Dynamics 365 for Talent](/dynamics365/unified-operations/talent/index)

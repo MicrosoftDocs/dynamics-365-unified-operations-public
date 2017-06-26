@@ -154,7 +154,7 @@ The Connector for Microsoft Dynamics AX installers first extract the associated 
 8. After an application ID (client ID) and secret are created, the application ID must be accepted in Retail. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 9. Add the client ID to the **Retail shared parameters** page in Retail.
 
-    1. In Finance and Operations, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+    1. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
     3. On the **Identity providers** FastTab, select the provider that begins with **HTTPS://sts.windows.net/**. The values on the **Relying parties** FastTab are set, based on your selection.
     4. On the **Relying parties** FastTab, select **+Add**. Enter the client ID that was created for this installation. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
@@ -199,7 +199,7 @@ The Connector for Microsoft Dynamics AX installers first extract the associated 
 8. If the application ID and secret aren't the same as the application ID and secret that you used for the Async Server Connector service, the application ID must be accepted in Retail. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 9. If the application ID and secret aren't the same as the application ID and secret that you used for the Async Server Connector service, you must add the application ID (client ID) that was created for this installation to the **Retail shared parameters** page in Retail.
 
-    1. In Finance and Operations, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+    1. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
     3. On the **Identity providers** FastTab, select the provider that begins with **HTTPS://sts.windows.net/**. The values on the **Relying parties** FastTab are set, based on your selection.
     4. On the **Relying parties** FastTab, select **+Add**. Enter the client ID that was created for this installation. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.

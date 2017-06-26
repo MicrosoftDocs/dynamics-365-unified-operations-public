@@ -5,7 +5,7 @@ title: Warehouse Mobile Devices Portal (WMDP) for Finance and Operations
 description: This article describes how to enable the Warehouse Mobile Devices Portal for Microsoft Dynamics 365 for Finance and Operations. It also explains how to service and upgrade your environment.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,7 +42,7 @@ Warehouse Mobile Devices Portal (WMDP) is a web application hosted in IIS. It us
 ## Download the installer for Warehouse Mobile Devices Portal
 The WMDP is installed through a standalone Microsoft installation package. The installer file, WarehouseMobileDevicesPortal.msi, can be downloaded directly from Finance and Operations. In order to obtain the installer, you need to have Warehouse Management module enabled. Follow these steps to download the WMDP installer:
 
-1.  Log-in to Dynamics 365 for Operations as a user with an Information technology manager role.
+1.  Log-in to Dynamics 365 for Finance and Operations as a user with an Information technology manager role.
 2.  Go to **Warehouse management** &gt; **Setup** &gt; **Mobile device** &gt; **Download Warehouse Mobile Devices Portal**.[![op-wmdp-01](./media/op-wmdp-01.png)](./media/op-wmdp-01.png)
 3.  Familiarize yourself with the Security Best Practices checklist. Select the **Complete** check box for each item that you’ve reviewed.
 4.  In the Legal Information section, read the software license terms.
@@ -86,7 +86,7 @@ To retrieve and install a certificate on your Warehouse Mobile Device Portal hos
 To enable the Warehouse Mobile Devices Portal application to interact with a particular Finance and Operations server, you need to complete the following configuration steps after installation:
 
 1.  Register a native application in Azure Active Directory for the Operations tenant. This application should have access to Microsoft Dynamics ERP.
-    1.  Read the following guide to learn about Finance and Operations custom service authentication: the Custom services section in the [Dynamics 365 for Operations Services Technical Concepts Guide](/dynamics365/unified-operations/dev-itpro/data-entities/services-home-page).
+    1.  Read the following guide to learn about Finance and Operations custom service authentication: the Custom services section in the [Dynamics 365 for Finance and Operations Services Technical Concepts Guide](/dynamics365/unified-operations/dev-itpro/data-entities/services-home-page).
     2.  Follow the steps for “Register a Native Application with AAD”.
     3.  You have now obtained **Client ID** of the application.
 

@@ -5,7 +5,7 @@ title: Security and data entities
 description: This topic provides information about security for data entities. Because data entities support entry point security, they are governed by the role-based security framework. The model for mapping data entity entry points to privileges and duties depends on the target scenarios. Therefore, data entities enable separate security configuration for each integration mode.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -165,7 +165,7 @@ Because the approach that is described in the preceding table complies with the 
 </table>
 
 ## Duty naming guidelines
-When you create data entities for specific integration scenarios, you should also create separate duties. These duties grant the external application or service the required access to the data entities. The duties that you create should follow the same naming guidelines as the corresponding duties that provide access through the Dynamics 365 for Operations client UI. However, you should add a “using services” suffix.
+When you create data entities for specific integration scenarios, you should also create separate duties. These duties grant the external application or service the required access to the data entities. The duties that you create should follow the same naming guidelines as the corresponding duties that provide access through the Dynamics 365 for Finance and Operations client UI. However, you should add a “using services” suffix.
 
 <table>
 <tbody>

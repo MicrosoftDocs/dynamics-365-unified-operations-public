@@ -5,7 +5,7 @@ title: Add dimensions to a Excel template
 description: This topic provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
 author: robinarh
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -58,7 +58,7 @@ Modifying the **DimensionCombinationEntity** has been greatly simplified with th
 
     select * from DIMENSIONCOMBINATIONENTITY
 
-## Add dimensions  before Dynamics 365 for Operations
+## Add dimensions  before Dynamics 365 for Finance and Operations
 To support interactions with dimensions as columns, for example, in the Microsoft Excel integration, you must first create the dimension columns through a customization. 1. Open the Application Explorer in Visual Studio (**View** &gt; **Application Explorer**). 2. Navigate to DimensionCombinationEntity **(AOT** &gt; **Data Model** &gt; **Data Entities**). 3. Right-click on the entity and choose **Customize**. [![5](./media/5-300x187.png)](./media/5.png)4. Open the designer for the entity that you want to modify, in this example **DimensionCombinationEntity**. 5. Create a new private static method that returns a str named **departmentValue**. 6. In this method, you must get the dimension's value from **DimensionAttributeValueCombination**. The final method will look something like this.
 
      /// <summary>

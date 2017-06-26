@@ -5,10 +5,10 @@ title: Retail SDK samples
 description: This topic describes three new samples that were released together with the Retail SDK in December 2016.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -40,7 +40,7 @@ This topic describes three new samples that were released together with the Reta
 Override message handler sample
 -------------------------------
 
-**Scenario:** Sometimes, one of Fabrikam's customers is in the customer relationship management (CRM) system but isn't imported into Microsoft Dynamics 365 for Operations. Therefore, Fabrikam wants to look up the customer from the CRM system and the point of sale (POS). Here are the business requirements:
+**Scenario:** Sometimes, one of Fabrikam's customers is in the customer relationship management (CRM) system but isn't imported into Microsoft Dynamics 365 for Retail. Therefore, Fabrikam wants to look up the customer from the CRM system and the point of sale (POS). Here are the business requirements:
 
 -   Search for customers from the CRM system and the POS.
 -   Merge the results, and show a unified result set in Retail Modern POS (MPOS).

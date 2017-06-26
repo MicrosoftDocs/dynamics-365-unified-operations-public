@@ -5,7 +5,7 @@ title: Process electronic payment remittances
 description: You can create the instructions for electronic payment of vendor invoices that must be sent to the bank.
 author: v-gonode
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.search.region: Brazil
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: v-gonode
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: Enterprise edition, July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ---
 
 # Process electronic payment remittances for Brazil

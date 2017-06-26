@@ -5,7 +5,7 @@ title: Customize field Help
 description: This article describes how you can customize existing field descriptions and add your own descriptions.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -64,7 +64,7 @@ See also
 
 [Create and use localizable labels in the client](create-localizable-labels-client.md)
 
-[View and export field descriptions](/dynamics365/unified-operations/get-started/view-export-field-descriptions)
+[View and export field descriptions](/dynamics365/unified-operations/fin-and-ops/get-started/view-export-field-descriptions)
 
 
 

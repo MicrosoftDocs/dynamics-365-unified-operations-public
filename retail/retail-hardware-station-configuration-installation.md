@@ -5,10 +5,10 @@ title: Configure and install Retail hardware station
 description: This topic explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -26,7 +26,8 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+
 
 ---
 
@@ -43,7 +44,7 @@ This topic explains how to configure, download, and install Retail hardware stat
 > [!NOTE]
 > This procedure is required only if you're running the February 2016 (RTW) version of Microsoft Dynamics 365 for Retail. If you're running version 1611, start with the next procedure.
 
-1. Use your Microsoft Azure Active Directory (Azure AD) credentials to sign in to the Retail headquarters or Microsoft Dynamics 365 for Operations trial.
+1. Use your Microsoft Azure Active Directory (Azure AD) credentials to sign in to the Retail headquarters or Microsoft Dynamics 365 for Retail trial.
 2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware station profiles**.
 3. On the **Hardware station profile** page, on the Action Pane, select **New**.
 4. In the **Hardware station ID** field, enter a unique hardware station ID.

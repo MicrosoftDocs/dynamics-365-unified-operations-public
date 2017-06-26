@@ -5,7 +5,7 @@ title: Budget control overview
 description: This article introduces budget control and provides information to help you configure budget control in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition so that you can manage financial resources.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,7 +40,7 @@ This article introduces budget control and provides information to help you conf
 Overview
 --------
 
-Budget control in Microsoft Dynamics 365 for Operations supports management of an organization’s financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. 
+Budget control in Microsoft Dynamics 365 for Finance and Operations supports management of an organization’s financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. 
 
 After budgets have been approved in Finance and Operations, you can use budget plans to generate budget register entries to record the expenditure budget for an organization. Alternatively, you can create or import budget register entries from a third-party program instead of using budget planning functionality. 
 
@@ -133,6 +133,3 @@ After budget control is turned on, users will receive budget control warning an
 From this page, users can drill into the **Budget control statistics by period** page to view budget availability details and reservations for a selected budget control dimension combination. Users can also drill into the **Budget control statistic** page to view the budget availability for all financial dimension combinations that are used in budget control. 
 
 If budget control is turned on for purchase orders, the budget manager can use the **Ledger budgets and forecasts** workspace to review the queue of all unconfirmed purchase orders that have budget check warnings and errors. If the budget manager has over-budget permissions configured, he or she can confirm purchase orders directly in the workspace.    
-
-
-

@@ -5,7 +5,7 @@ title: Earnings and generating earnings FAQ
 description: This topic answers some frequently asked questions about earnings and generating earnings. It includes questions about distributions and earning lines, recurring earnings, calculating salaries for workers who are on leave, and earnings generation. 
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 31
+ms.reviewer: rschloma
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 220904
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Earnings and generating earnings FAQ
 
-[!include[banner](../../includes/banner.md)]]
+[!include[banner](../../includes/banner.md)]
 
 
 This topic answers some frequently asked questions about earnings and generating earnings. It includes questions about distributions and earning lines, recurring earnings, calculating salaries for workers who are on leave, and earnings generation. 

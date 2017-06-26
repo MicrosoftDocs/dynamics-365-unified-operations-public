@@ -5,7 +5,7 @@ title: Task Recorder quick reference
 description: This article provides a quick reference sheet that explains what each button in the Task recorder menus does.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

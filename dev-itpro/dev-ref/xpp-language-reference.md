@@ -5,7 +5,7 @@ title: X++ language reference
 description: This topic provides programming guidance for X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,16 +35,16 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-X++ is an object-oriented, application-aware, and data-aware programming language that Microsoft Dynamics 365 for Operations uses in enterprise resource planning (ERP) programming and in database applications. It provides system classes for a broad range of system programming areas, highlighted in the following table.
+X++ is an object-oriented, application-aware, and data-aware programming language that Microsoft Dynamics 365 for Finance and Operations uses in enterprise resource planning (ERP) programming and in database applications. It provides system classes for a broad range of system programming areas, highlighted in the following table.
 
 | **X++ language attributes** | **Description** |
 |-----|-----|
-| **Classes**                 | In addition to system classes, Dynamics 365 for Operations also provides application classes for managing many types of business processes. Reflection on classes is supported.            |
-| **Tables**                  | X++ programmers can access the relational tables in Dynamics 365 for Operations. X++ includes keywords that match most of the keywords in standard SQL. Reflection on tables is supported. |
+| **Classes**                 | In addition to system classes, Dynamics 365 for Finance and Operations also provides application classes for managing many types of business processes. Reflection on classes is supported.            |
+| **Tables**                  | X++ programmers can access the relational tables in Dynamics 365 for Finance and Operations. X++ includes keywords that match most of the keywords in standard SQL. Reflection on tables is supported. |
 | **User interface**          | Manipulation of user interface items, such as forms and reports.|
 | **Best practice checks**    | X++ code is checked for syntax errors during compile time. The compile process also performs best practice checks. Violations of best practices can generate compiler messages.|
 | **Garbage collection**      | The X++ runtime execution engines have automatic mechanisms to discard objects that are no longer referenced, so that memory space can be reused. |
-| **Interoperability**        | Dynamics 365 for Operations supports interoperability between classes written in X++ and in C\# (or other .NET Framework languages).                                                       |
+| **Interoperability**        | Dynamics 365 for Finance and Operations supports interoperability between classes written in X++ and in C\# (or other .NET Framework languages).                                                       |
 | **File manipulation**       | File input and output is supported, including XML building and parsing. |
 | **Collections**             | Dynamic arrays are supported and the X++ includes several collection objects.|
 

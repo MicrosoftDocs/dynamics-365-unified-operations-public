@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: Enterprise edition, July 2017 update 
+ms.dyn365.ops.version: July 2017 update 
 ---
 
 # Credit and collections management Power BI content

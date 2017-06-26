@@ -5,7 +5,7 @@ title: Set up earning codes and earning code groups
 description: This topic explains how to set up earning codes and earning code groups. Earning codes uniquely identify every type of earning that workers receive. They include parameters that are related to earnings, such as accounting rules, tax laws, reporting requirements, and gross-up capability.
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up earning codes and earning code groups
 
-[!include[banner](../../includes/banner.md)]]
+[!include[banner](../../includes/banner.md)]
 
 
 This topic explains how to set up earning codes and earning code groups. Earning codes uniquely identify every type of earning that workers receive. They include parameters that are related to earnings, such as accounting rules, tax laws, reporting requirements, and gross-up capability.

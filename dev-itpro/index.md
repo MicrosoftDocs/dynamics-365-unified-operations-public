@@ -5,7 +5,7 @@ title: Overview of Microsoft Dynamics 365 for Finance and Operations for Develop
 description: This page helps IT Pros and developers get started wtih Microsoft Dynamics 365 for Finance and Operations.  
 author: margoc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -59,10 +59,10 @@ Finance and Operations provides five distinct reporting experiences. Specialized
 - Financial reporting – Designed to provide in-depth accounting management tools based on standard views of financial activities across legal entities.
 
 # Mobile apps
-The Microsoft Dynamics 365 for Operations mobile app empowers your organization to mobilize its business processes. After your IT admin enables the mobile workspaces feature for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices. The Dynamics 365 for Operations mobile app includes the following features that can help increase productivity:
-+ Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are offline. When a device reestablishes a network connection, offline data operations are automatically synchronized with Dynamics 365 for Operations. 
+The Microsoft Dynamics 365 for Finance and Operations mobile app empowers your organization to mobilize its business processes. After your IT admin enables the mobile workspaces feature for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices. The Dynamics 365 for Finance and Operations mobile app includes the following features that can help increase productivity:
++ Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are offline. When a device reestablishes a network connection, offline data operations are automatically synchronized with Dynamics 365 for Finance and Operations. 
 + IT admins or developers can build and publish mobile workspaces that have been tailored to their organization. The app uses your existing code assets, so you don’t have to re-implement your validation procedures, business logic, or security configuration. 
-+ IT admins or developers can easily design mobile workspaces by using the point-and-click workspace designer that is included with the Dynamics 365 for Operations web client. 
++ IT admins or developers can easily design mobile workspaces by using the point-and-click workspace designer that is included with the Dynamics 365 for Finance and Operations web client. 
 + IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework. Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don’t have constant network connectivity. 
 
 # Integration and data entities

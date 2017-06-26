@@ -5,7 +5,7 @@ title: Workflow subsystem updates in Finance and Operations
 description: This article reviews the workflow system in Microsoft Dynamics 365 for Finance and Operations. It describes the changes that have been implemented since Microsoft Dynamics AX 2012 and also includes links to more information about the workflow system. 
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

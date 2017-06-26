@@ -5,10 +5,10 @@ title: Lifecycle Services for Finance and Operations customers
 description: This article is intended for customers who have signed up for the current version of Microsoft Dynamics 365 for Finance and Operations. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -45,8 +45,8 @@ This command line process requires remote access (RDP) to the environments. In m
 -   **Runbook**– The deployment runbook is a series of steps that is generated for applying the deployable package to the target environment. Some of the steps are automated, and some are manual. AXUpdateInstaller provides the capability to run these steps one by one and in the correct sequence.
 
 ## Collect topology configuration data
-1.  In Microsoft Dynamics Lifecycle Services (LCS), open the **Environment **page.
-2.  Click the name of a virtual machine (VM), and establish a Remote Desktop connection to the VM by using the user name and password that are provided on the**Environment**page.
+1.  In Microsoft Dynamics Lifecycle Services (LCS), open the **Environment** page.
+2.  Click the name of a virtual machine (VM), and establish a Remote Desktop connection to the VM by using the user name and password that are provided on the **Environment** page.
 3.  On the VM, download the zip file for the deployable package from LCS. **Note:** After you download the zip file, right-click it, and then select **Properties**. Then, in the **Properties** dialog box, on the **General** tab, click **Unblock** to unlock the files. Finally, extract the files, and continue with the next step. Also, make sure that the **zip** file is stored in a non-user folder
 4.  In the folder where the deployable package was extracted, find and open the file that is named DefaultTopologyData.xml. You must populate this file with the VM name and installed components.
     -   To populate the VM name, follow these steps:
@@ -62,7 +62,7 @@ This command line process requires remote access (RDP) to the environments. In m
         3.  Update the DefaultTopologyData.xml with the list of components.
 
     When you've finished populating the VM name and installed components, the DefaultTopologyData.xml file should resemble the following illustration. ![defaulttopology](./media/defaulttopology.png)
-5.  Repeat steps 2 through 4 for each VM that is listed on the**Environment**page.
+5.  Repeat steps 2 through 4 for each VM that is listed on the **Environment** page.
 
 ## Generate a runbook from the topology
 Based on the topology information in the DefaultTopologyData.xml file, you must generate the runbook file that will provide step-by-step instructions for updating each VM.
@@ -78,7 +78,7 @@ Based on the topology information in the DefaultTopologyData.xml file, you must 
     -   **\[serviceModelFile\]**– The path of the DefaultServiceModelData.xml file
     -   **\[runbookFile\]**– The name of the runbook file to generate (for example, AOSRunbook.xml)
 
-    **Example**
+### Example
 
         AXUpdateInstaller.exe generate -runbookid="VAL200AA2BMEDIU-runbook" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="VAL200AA2BMEDIU-runbook.xml"
 

@@ -2,14 +2,14 @@
 # required metadata
 
 title: Retail Store Scale Unit configuration and installation
-description: This topic explains how you can use self-service to configure Retail Store Scale Unit in Microsoft Dynamics 365 for Operations headquarters, download it, and install it on one or more computers in a brick-and-mortar store. 
+description: This topic explains how you can use self-service to configure Retail Store Scale Unit in Microsoft Dynamics 365 for Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store. 
 
 author: jashanno
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-365-retail
 ms.technology: 
 # optional metadata
 
@@ -41,7 +41,7 @@ This topic explains how you can use self-service to configure Retail Store Scale
 > To help maintain a high level of security across the company, we strongly recommend that you create a new application ID (client ID) and secret for each retail store that is created. This step requires a new Web App.
 
 1. Generate a Microsoft Azure Active Directory (Azure AD) app registration to create an application ID (client ID) and secret. For instructions, see [Create an Azure Active Directory Application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). This article reviews Azure user permissions and requirements, and explains how to generate an app registration.
-2. After an application ID (client ID) and secret are created for Retail Store Scale Unit, the client ID must be accepted in Finance and Operations. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+2. After an application ID (client ID) and secret are created for Retail Store Scale Unit, the client ID must be accepted in Retail. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
 ## Configure a new Retail Store Scale Unit
 To create a functioning Retail Store Scale Unit, complete the procedures in all sections of this topic through the "Running the Retail Store Scale Unit installer" section.
@@ -102,7 +102,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
 ### Download the Retail Store Scale Unit installer
 
-1. Use your Azure AD credentials to sign in to the Retail headquarters or Finance and Operations trial.
+1. Use your Azure AD credentials to sign in to the Retail headquarters or Retail trial.
 2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**.
 3. In the list of channel databases on the left, select the channel database that you created earlier.
 4. On the Action Pane, select **Download**.
@@ -184,18 +184,18 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
     > For information about the creation of web applications in Azure, see [Create an Azure Active Directory Application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). 
     > When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
 
-9. After the application ID (client ID) and secret are created for Retail Store Scale Unit, the application ID (client ID) must be accepted in Finance and Operations. In Finance and Operations, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+9. After the application ID (client ID) and secret are created for Retail Store Scale Unit, the application ID (client ID) must be accepted in Retail. In Retail, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 10. After the installation is completed, the final health page appears. This page shows whether the installation was successful. It also shows the health of each component, based on basic connection tests, and the location of this topic. If the installation wasn't successful, the page shows the location of the log files.
-11. If Retail Cloud POS is configured for use, a client ID is shown at the end of the installation. You must add this client ID to the **Retail shared parameters** page in Finance and Operations.
+11. If Retail Cloud POS is configured for use, a client ID is shown at the end of the installation. You must add this client ID to the **Retail shared parameters** page in Retail.
 
-    1. In Finance and Operations, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+    1. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
     3. On the **Identity providers** FastTab, select the provider that begins with **HTTPS://sts.windows.net/**. The values on the **Relying parties** FastTab are set, based on your selection.
     4. On the **Relying parties** FastTab, select **+Add**. Enter the client ID that is listed in the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
     5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter **https://retailstorescaleunit.retailserver.com**.
     6. On the Action Pane, select **Save**.
 
-12. In Finance and Operations, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+12. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
 13. Select **Identity providers**.
 14. On the **Identity providers** FastTab, select **+Add**.
 15. In the new **Issuer** row, enter the Retail Server URL of the newly installed Retail Store Scale Unit.  At the end of the URL, add **/auth**.  The URL will resemble **https://MyComputerName/RetailServer/auth**.
@@ -232,7 +232,7 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 >         - Retail Store Scale Unit Cloud POS
 >         - Retail Store Scale Unit Retail Server for Cloud POS
 >     - In Azure, a web application (that is, an App registration in the new Azure portal) has been manually created for each Retail Store Scale Unit installation (for example, RetailStoreScaleUnitHouston). A key (secret) has been created that can be used in the installer, as described earlier.
->     - The manually created web application's application ID (client ID) has been added to the **Azure Active Directory applications** page in Finance and Operations, as explained in step 9 of the preceding procedure.
+>     - The manually created web application's application ID (client ID) has been added to the **Azure Active Directory applications** page in Retail, as explained in step 9 of the preceding procedure.
 >     - The Retail Cloud POS application ID (client ID) that was shown at the end of the Retail Store Scale Unit installer has been added on the **Identity providers** tab, as explained in step 11 of the preceding procedure.
 
 ### Multiple-computer installation
@@ -250,7 +250,7 @@ On the first computer, run the Retail Store Scale Unit self-service installer as
     > You can use a generated service account for Async Client, because Async Client won't be accessed outside the computer that it's installed on.
 
 2. Enter the client ID and secret. Keep these details available, so that you can use them again on the second computer.
-3. After a client ID and secret are created for Retail Store Scale Unit, the client ID must be accepted in Finance and Operations. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+3. After a client ID and secret are created for Retail Store Scale Unit, the client ID must be accepted in Retail. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 4. When setup is successful, start SQL Server Configuration Manager.
 5. Go to **SQL Server Network Configuration** &gt; **Protocols** for the SQL Server instance.
 6. Right-click, and then select **Properties**.
@@ -286,7 +286,7 @@ On the second computer, run the Retail Store Scale Unit Self-service installer a
 3. Enter the same client ID and secret that are used on the first computer.
 
     > [!IMPORTANT]
-    > It's critical that you add this client ID to Finance and Operations as described earlier.
+    > It's critical that you add this client ID to Retail as described earlier.
 
 4. Select **Configure Cloud POS**, and then enter Azure AD credentials that have the correct permissions to create Azure Web Apps. 
 
@@ -306,16 +306,16 @@ On the second computer, run the Retail Store Scale Unit Self-service installer a
     1. Import the SQL Server SSL certificate that you created earlier, and add it to Trusted Root.
     2. Open a **Command Prompt** window as an administrator, type **IISRESET**, and then press Enter.
 
-10. If Retail Cloud POS is configured for use, a client ID is shown. You must add this client ID to the **Retail shared parameters** page in Finance and Operations.
+10. If Retail Cloud POS is configured for use, a client ID is shown. You must add this client ID to the **Retail shared parameters** page in Retail.
 
-    1. In Finance and Operations, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+    1. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
     3. On the **Identity providers** FastTab, select the provider that begins with **HTTPS://sts.windows.net/**. The values on the **Relying parties** FastTab are set, based on your selection.
     4. On the **Relying parties** FastTab, select **+Add**. Enter the client ID that is listed in the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
     5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter **https://retailstorescaleunit.retailserver.com**.
     6. On the Action Pane, select **Save**.
 
-11. In Finance and Operations, go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**, and follow these steps:
+11. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**, and follow these steps:
 
     1. Select the channel database that you created at the beginning of this topic.
     2. On the Action Pane, select **Full Sync** &gt; **Job 9999**. Full synchronization might require several minutes.
@@ -363,10 +363,10 @@ According to current security standards, the following options should be set in 
 
 This section will be more thorough in the future. For now, here is a checklist of things to verify.
 
-1. In Finance and Operations, on the **Retail shared parameters** page, verify that the correct client ID has been added to the **Relying parties** FastTab. Additionally, verify that the correct **https://retailstorescaleunit.retailserver.com** entry has been added to the **Server resource IDs** FastTab.
-2. In Finance and Operations, verify that every client ID that was generated for each retail store exists on the **Azure Active Directory applications** page.
-3. In Finance and Operations, on the **Channel profile** page, verify that the URLs are correct. (In other words, verify that the computer name in each URL is correct, the URL is correctly formatted, and so on.)
-4. In Finance and Operations, on the **Channel database** page, verify that full synchronization correctly occurred for the new channel database.
+1. In Retail, on the **Retail shared parameters** page, verify that the correct client ID has been added to the **Relying parties** FastTab. Additionally, verify that the correct **https://retailstorescaleunit.retailserver.com** entry has been added to the **Server resource IDs** FastTab.
+2. In Retail, verify that every client ID that was generated for each retail store exists on the **Azure Active Directory applications** page.
+3. In Retail, on the **Channel profile** page, verify that the URLs are correct. (In other words, verify that the computer name in each URL is correct, the URL is correctly formatted, and so on.)
+4. In Retail, on the **Channel database** page, verify that full synchronization correctly occurred for the new channel database.
 5. Verify that the retail store is correctly configured to use the new channel database.
 
 ### Uninstall Retail Store system

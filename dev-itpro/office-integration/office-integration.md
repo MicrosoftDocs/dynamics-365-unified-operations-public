@@ -5,7 +5,7 @@ title: Office integration
 description: This topic reviews Microsoft Office integration concepts and features.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -56,7 +56,7 @@ There are several differences between versions. For both, we built lightweight a
 
 Excel &gt; VSTO (.NET) Add-in &gt; Windows Communication foundation (WCF) &gt; Authentication through Active Directory (AD) &gt; AIF SOAP services on the AOS &gt; AX Services and Tables &gt; AX query engine &gt; Database
 
-#### Dynamics 365 for Operations
+#### Dynamics 365 for Finance and Operations
 
 Excel &gt; Office Web Add-in (JS + HTML) &gt; JavaScript OData API (Olingo) &gt; Authentication through Azure Active Directory (AAD) &gt; AX OData services on the AOS &gt; AX Entities &gt; AX LINQ provider &gt; AX Database
 

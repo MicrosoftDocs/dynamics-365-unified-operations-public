@@ -15,7 +15,7 @@ ms.technology:
 
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 # ROBOTS: 
-audience: Developer, ITPro
+audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
 ms.search.scope: AX 7.2, Operations

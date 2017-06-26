@@ -5,7 +5,7 @@ title: Use the Excel add-in
 description: This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Office add-in for Excel. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,12 +39,12 @@ This topic explains how to open entity data in Microsoft Excel, and then view, u
 
 By opening entity data in Microsoft Excel, you can quickly and easily view and edit the data by using the Microsoft Dynamics Office add-in for Excel. This add-in requires Microsoft Excel 2016. **Note:** If your Microsoft Azure Active Directory (Azure AD) tenant is configured to use Active Directory Federation Services (AD FS), you must make sure that the May 2016 update has been applied, so that the Excel add-in can correctly sign you in.
 
-## Open entity data in Excel when you start from Dynamics 365 for Operations
-1.  On a page in Microsoft Dynamics 365 for Operations, click **Open in Microsoft Office**. If the root data source (table) for the page is the same as the root data source for any entities, default **Open in Excel** options are generated for the page. **Open in Excel** options can be found on frequently used pages, such as **All vendors** and **All customers**.
+## Open entity data in Excel when you start from Dynamics 365 for Finance and Operations
+1.  On a page in Microsoft Dynamics 365 for Finance and Operations, click **Open in Microsoft Office**. If the root data source (table) for the page is the same as the root data source for any entities, default **Open in Excel** options are generated for the page. **Open in Excel** options can be found on frequently used pages, such as **All vendors** and **All customers**.
 2.  Click an **Open in Excel** option, and open the workbook that is generated. This workbook has binding information for the entity, a pointer to your environment, and a pointer to the Excel add-in.
 3.  In Excel, click **Enable editing** to enable the Excel add-in to run. The Excel add-in runs in a pane on the right side of the Excel window.
 4.  If you're running the Excel add-in for the first time, click **Trust this Add-in**.
-5.  If you're prompted to sign in, click **Sign in**, and then sign in by using the same credentials that you used to sign in to Dynamics 365 for Operations. The Excel add-in will use a previous sign-in context from Internet Explorer and automatically sign you in, if it can. Therefore, verify the user name in the upper-right corner of the Excel add-in.
+5.  If you're prompted to sign in, click **Sign in**, and then sign in by using the same credentials that you used to sign in to Dynamics 365 for Finance and Operations. The Excel add-in will use a previous sign-in context from Internet Explorer and automatically sign you in, if it can. Therefore, verify the user name in the upper-right corner of the Excel add-in.
 
 The Excel add-in automatically reads the data for the entity that you selected. Note that there will be no data in the workbook until the Excel add-in reads it in.
 
@@ -53,7 +53,7 @@ The Excel add-in automatically reads the data for the entity that you selected. 
 2.  In the Office Store, search on the keyword "Dynamics," and click **Add** next to the **Microsoft Dynamics Office Add-in** (the Excel add-in).
 3.  If you're running the Excel add-in for the first time, click **Trust this Add-in** to enable the Excel add-in to run. The Excel add-in runs in a pane on the right side of the Excel window.
 4.  Click **Add server information** to open the **Options** pane.
-5.  Copy the browser URL from your target Dynamics 365 for Operations instance, paste it into the **Server URL** field, and then delete everything after the host name. The resulting URL should have just the host name.
+5.  Copy the browser URL from your target Dynamics 365 for Finance and Operations instance, paste it into the **Server URL** field, and then delete everything after the host name. The resulting URL should have just the host name.
 For example, if the URL is https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage, delete everything except **https://xxx.dynamics.com**.
 6.  Click **OK**, and then click **Yes** to confirm the change. The Excel add-restarts and loads metadata. The **Design** button is now available. If the Excel add-in has a **Load applets** button, you probably aren't signed in as the correct user. For more information, see "The Load applets button is shown" in the "Troubleshooting" section of this topic.
 7.  Click **Design**. The Excel add-in retrieves entity metadata.
@@ -95,7 +95,7 @@ You can use the designer to adjust the columns that are automatically added to t
 5. To apply your changes to the data source, click **Update**. Then click **Done** to exit the designer. 
 6. If you added a field (column), click **Refresh** to pull in an updated set of data.
 
-## [](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Troubleshooting
+## Troubleshooting
 There are a few issues that can be resolved through some easy steps.
 
 -   **The Load applets button is shown.** If the Excel add-in has a **Load applets** button after sign-in, you probably aren't signed in as the correct user. To resolve this issue, verify that the correct user name appears in the upper-right corner of the Excel add-in. If an incorrect user name appears, click it, sign out, and then sign back in.

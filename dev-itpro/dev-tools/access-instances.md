@@ -129,7 +129,7 @@ For developer access, you must be an administrator on the instance. To provision
 
 Follow the steps in this section if you are also configuring for Retail.
 
-#### For Finance and Operations, Version 1611
+#### For Dynamics 365 for Operations, Version 1611
 
 1.  Run the RetailTenantUpdateTool.
     -   The icon for this tool is available on the desktop.
@@ -137,7 +137,7 @@ Follow the steps in this section if you are also configuring for Retail.
 
 2.  Double-click the icon to start this tool. You will be prompted for your Azure AD credentials. You must use the same credentials that you used in the admin user provisioning tool earlier.
 
-#### For Microsoft Dynamics 365 for Operations 7.0
+#### For Dynamics 365 for Operations 7.0
 
 1.  Install [Microsoft Online Services Sign-In Assistant for IT Professionals RTW](http://go.microsoft.com/fwlink/?LinkID=286152).
 2.  Install [Azure Active Directory Module for Windows PowerShell (64-bit version)](http://go.microsoft.com/fwlink/p/?linkid=236297).

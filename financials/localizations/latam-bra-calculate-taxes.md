@@ -5,7 +5,7 @@ title: Brazilian taxes
 description: Microsoft Dynamics 365 for Finance and Operations, Enterprise edition calculates Brazilian taxes based on the tax type that you specify for the sales tax code. You can set up and calculate sales taxes on sales, purchases, transfers between fiscal establishments, delivery of items to a third party, or receipt of items from a third party.
 author: sndray
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -66,7 +66,7 @@ The following  of tax types are available in the sales tax code configuration.
     -   Fiscal document is receipted from a different state. Applicable for fixed assets and use and consumption items.
 
 ## Examples
-For a base transaction amount of BRL 1,000.00 and a tax rate of 18 percent, Microsoft Dynamics 365 for Operations calculates the taxes as follows for the different fiscal values.
+For a base transaction amount of BRL 1,000.00 and a tax rate of 18 percent, Microsoft Dynamics 365 for Finance and Operations calculates the taxes as follows for the different fiscal values.
 | Fiscal value                                    | Amount origin | Actual sales tax amount | Exempt base amount | Other base amount | Other tax amount |
 |-------------------------------------------------|---------------|-------------------------|--------------------|-------------------|------------------|
 | 1. with credit/debit                            | BRL 1,000.00  | BRL 180.00              |                    |                   |                  |

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Data upgrade from AX 2012 to Dynamics 365 for Operations in a development environment
-description: This topic explains the end-to-end process for upgrading from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Operations in a development environment
+title: Data upgrade from AX 2012 to Dynamics 365 for Finance and Operations in a development environment
+description: This topic explains the end-to-end process for upgrading from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations in a development environment
 author: tariqbell
 manager: AnnBe
 ms.date: 05/30/2017
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Platform update 8
 
 ---
 
-# Data upgrade from AX 2012 to Dynamics 365 for Operations in a development environment
+# Data upgrade from AX 2012 to Dynamics 365 for Finance and Operations in a development environment
 
 [!include[banner](../includes/banner.md)]
 
-This is an exciting moment in the upgrade project. The output of this task  provides the first upgraded dataset from Microsoft Dynamics AX 2012 in Microsoft Dynamics 365 for Operations.
+This is an exciting moment in the upgrade project. The output of this task  provides the first upgraded dataset from Microsoft Dynamics AX 2012 in Microsoft Dynamics 365 for Finance and Operations.
 
 Before you run this process in a shared sandbox environment, we recommend that you run it in a development environment. There are two main reasons for this approach:
 
@@ -55,14 +55,14 @@ Upload your backup to Azure Storage. For more information, see UsingStorageExplo
 
 ### Download and restore the backup to the development environment
 
-When you restore the backup to your Dynamics 365 for Operations development environment, don’t overwrite the existing AXDB database. Instead, restore the AX 2012 database next to the original databases. You might also consider using drive D for the data and log files, to help improve performance. However, there is a potential downside to using drive D. If the underlying virtual machine (VM) is deallocated in Azure and then reallocated, drive D will be wiped. In practice, this scenario rarely occurs. Therefore, you might find that the risk is acceptable. To learn more about how to use drive D, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+When you restore the backup to your Dynamics 365 for Finance and Operations development environment, don’t overwrite the existing AXDB database. Instead, restore the AX 2012 database next to the original databases. You might also consider using drive D for the data and log files, to help improve performance. However, there is a potential downside to using drive D. If the underlying virtual machine (VM) is deallocated in Azure and then reallocated, drive D will be wiped. In practice, this scenario rarely occurs. Therefore, you might find that the risk is acceptable. To learn more about how to use drive D, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
 To speed up the database restore process, you can change the SQL Server service account to **axlocaladmin**. The restore process can then use instant file initialization. For more information, see [Database Instant File Initialization](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-instant-file-initialization).
 
 After the database is restored, stop the following services:
 
 - World wide web publishing service
-- Dynamics 365 for Operations Batch Management service
+- Dynamics 365 for Finance and Operations Batch Management service
 - Management Reporter 2012 Process service
 
 Next, rename the original AXDB database **AXDB_orig**. This database might be useful as reference later, when you develop code.

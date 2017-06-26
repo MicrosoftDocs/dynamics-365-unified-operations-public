@@ -5,7 +5,7 @@ title: Copy Finance and Operations database - Azure SQL to SQL Server
 description: This topic provides information about how to export a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -299,7 +299,7 @@ Refer to the following guidelines for optimal performance:
 
 -   Always export a database from a virtual machine that is located in the same Azure data center as the Azure SQL database. If you are exporting a copy of your sandbox database, export it from the Sandbox AOS machine.
 -   Always import the .bacpac locally on the machine that is running the SQL Server instance. Do not import from SQL Server Management Studio on a remote machine.
--   On a Dynamics 365 for Operations one-box environment, also known as a tier 1 environment, which is hosted in Azure, place the bacpac file on the D: drive when importing for increased performance. Read more about the temporary drive in Azure machines in the blog post [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+-   On a Dynamics 365 for Finance and Operations one-box environment, also known as a tier 1 environment, which is hosted in Azure, place the bacpac file on the D: drive when importing for increased performance. Read more about the temporary drive in Azure machines in the blog post [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 -   Grant the account running the SQL Server Windows service the [Instance File Initialization](https://msdn.microsoft.com/en-us/library/ms175935.aspx) rights. This can speed up the import process and improve the speed of restore from a \*.bak file. A simple way to do this in a Developer environment is to set SQL Server to run as the axlocaladmin account.
 -   From SQL Azure, do not select Export data tier application in SQL Server Management Studio because there can be a memory limitation for larger databases.
 

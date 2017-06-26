@@ -5,10 +5,10 @@ title: Hybrid customer orders
 description: A hybrid customer order is a single order, which contains products that can be carried out of the store by the customer, as well as products that will be picked up or shipped later.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 41
-ms.search.scope: Operations, Core
+ms.reviewer: josaw
+ms.search.scope: Retail, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 261164
 ms.assetid: 9d99a5b9-4662-499a-bece-3ea1d6092934
@@ -26,7 +26,7 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.dyn365.ops.version: Version 1611, Retail Version
 
 ---
 

@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: Developer,IT Pro
+audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
 ms.search.scope: Operations Platform
@@ -61,7 +61,7 @@ For information about how to get a public preview for partners, go to https://mb
 Be aware that this public preview differs from a [30-day trial](https://aka.ms/D365OperationTrials). Thirty-day trials provide a deployed instance of Finance and Operations that you can use to explore and evaluate the application. However, the Analyze activities require the full LCS experience and tools.
 
 ### Select the upgrade methodology
-In your new LCS project, set the project methodology to **Upgrade AX 2012 to Dynamics 365 for Operations**. This methodology is made specially for AX 2012 customers who are upgrading. It describes the three phases in detail and provides links to all the supporting documentation about the process.
+In your new LCS project, set the project methodology to **Upgrade AX 2012 to Dynamics 365 for Finance and Operations**. This methodology is made specially for AX 2012 customers who are upgrading. It describes the three phases in detail and provides links to all the supporting documentation about the process.
 
 ![Upgrade methodology(./media/methodology.png)
  
@@ -114,7 +114,7 @@ When you purchase a Finance and Operations subscription, you will receive detail
 ### Perform the AX 2012 preparation tasks
 Complete the tasks that the upgrade analyzer tool discovered, and that are documented in your upgrade project plan. Your Microsoft Dynamics AX system administrator and database administrator (DBA) must complete these tasks.
 
-[Data upgrade from AX 2012 to Dynamics 365 for Operations – Pre-upgrade checklist in AX 2012](prepare-data-upgrade.md)
+[Data upgrade from AX 2012 to Dynamics 365 for Finance and Operations – Pre-upgrade checklist in AX 2012](prepare-data-upgrade.md)
 
 ### Perform code upgrade
 Complete the tasks that were planned during the code upgrade estimation step of the Analyze phase. Your developers must run these tasks.
@@ -135,7 +135,7 @@ Data upgrade is done through a special type of deployable package. The same mech
 
 The underlying framework that is used to convert the data in the database during this process is largely the same as the upgrade framework in AX 2012 that is based on X++ batch jobs that run **ReleaseUpdatexxx** classes.
 
-For details, see [Data upgrade from AX 2012 to Dynamics 365 for Operations in a development environment](data-upgrade-2012.md).
+For details, see [Data upgrade from AX 2012 to Dynamics 365 for Finance and Operations in a development environment](data-upgrade-2012.md).
 
 ### Data upgrade (sandbox environments)
 When data upgrade in a development environment is completed, the same process can be run in a sandbox environment. The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
@@ -144,7 +144,7 @@ The following illustration shows the process for running data upgrade in a sandb
 
 ![Data upgrade in a sandbox environment](./media/data-upgrade-sandbox.png)
 
-For details, see [Data upgrade from AX 2012 to Dynamics 365 for Operations in a sandbox environment](upgrade-data-sandbox.md).
+For details, see [Data upgrade from AX 2012 to Dynamics 365 for Finance and Operations in a sandbox environment](upgrade-data-sandbox.md).
  
 ## Validate
 When you enter the Validate phase, you will have available environments that include your upgraded custom code and your upgraded data. This phase describes the process of validating and testing that the upgraded environment works as desired. It also describes the process of preparing for go-live.
@@ -160,8 +160,8 @@ There are two main workstreams:
 - **Functional workstream** – After data upgrade, several configuration tasks will be required in the Finance and Operations environment. All these tasks must be documented and quantified, and a resource must be assigned to them, because they must fit together with the technical tasks within the business's downtime limit.
 
 For details, see 
+- [Validate: Tasks to complete after upgrade](app-validation-process.md)
 - [Validate: Cutover testing](upgrade-cutover-testing.md)
-- [Validate: App validation process](app-validation-process.md)
 
 ### Functional test pass
 Complete a full functional test pass of all business processes. This test pass will be an extensive retest of all business processes that involve Finance and Operations. These business processes include both old processes that were brought forward from AX 2012 and new processes that involve new features that were taken up for the first time in Finance and Operations. 

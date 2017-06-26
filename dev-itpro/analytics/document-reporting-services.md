@@ -5,7 +5,7 @@ title: Document Reporting Services overview
 description: This article describes the integrated reporting solution that is available in Microsoft Dynamics 365 for Finance and Operations. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,7 +48,7 @@ In a one-box environment, developers can create, modify, and preview reports, fr
 
 [![document-reporting-services-topology](./media/document-reporting-services-topology.png)](./media/document-reporting-services-topology.png)
 
-### Viewing reports in Dynamics 365 for Operations
+### Viewing reports in Dynamics 365 for Finance and Operations
 
 The enhanced report viewing experience that Finance and Operations provides for end users is the same as the report preview experience in Microsoft Visual Studio. You no longer use a separate design preview in Visual Studio. Instead, just press Ctrl+F5 to build and preview the report in an Internet Explorer window. The report appears exactly as it would appear in the client. Even the user's parameter experience is the same. The following screen shot shows an example of a report preview that is opened from Visual Studio. 
 
@@ -65,7 +65,7 @@ The following table compares the service administration prerequisites for Micros
 <thead>
 <tr class="header">
 <th>AX 2012</th>
-<th>The current version of Dynamics 365 for Operations</th>
+<th>The current version of Dynamics 365 for Finance and Operations</th>
 </tr>
 </thead>
 <tbody>
@@ -92,7 +92,7 @@ The process for developing a report in the current version of Finance and Operat
 <thead>
 <tr class="header">
 <th>AX 2012</th>
-<th>The current version of Dynamics 365 for Operations</th>
+<th>The current version of Dynamics 365 for Finance and Operations</th>
 </tr>
 </thead>
 <tbody>

@@ -5,7 +5,7 @@ title: Form I-9 employment verification
 description: This topic provides information about Form I-9 verification. Employers must complete Form I-9 for all new employees who will be working in the United States. The form documents that the employer has verified the identity of the new employee, and that the employee is authorized to work in the United States.
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,7 +22,7 @@ ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 15611
 ms.assetid: d740ddb6-b8d7-4c12-b920-1f8afa25d026
-ms.search.region: United States
+ms.search.region: USA
 # ms.search.industry: 
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Form I-9 employment verification
 
-[!include[banner](../../includes/banner.md)]]
+[!include[banner](../../includes/banner.md)]
 
 
 This topic provides information about Form I-9 verification. Employers must complete Form I-9 for all new employees who will be working in the United States. The form documents that the employer has verified the identity of the new employee, and that the employee is authorized to work in the United States.
@@ -57,7 +57,7 @@ You can use the **Renew Form I-9 alarm list** report to identify employees whose
 See also
 --------
 
-[Organizing your workforce using departments, jobs, and positions](../departments-jobs-positions.md)
+[Organizing your workforce using departments, jobs, and positions](/dynamics365/unified-operations/talent/departments-jobs-positions)
 
 
 

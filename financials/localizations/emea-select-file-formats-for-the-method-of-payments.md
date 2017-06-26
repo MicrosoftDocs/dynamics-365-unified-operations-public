@@ -5,7 +5,7 @@ title: File formats for methods of payment
 description: This topic describes the two methods for getting file formats that you can use for methods of payment.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

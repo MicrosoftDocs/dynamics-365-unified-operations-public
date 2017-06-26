@@ -5,10 +5,10 @@ title: Lifecycle Services for Finance and Operations partners
 description: This article explains how partners can get started with Microsoft Dynamics Lifecycle Services (LCS). 
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -44,7 +44,7 @@ As a Microsoft Dynamics 365 for Finance and Operations partner, you can access 
 After you sign up for the current version of Finance and Operations as a partner, you can create two types of projects:
 
 -   Prospective presales
--   Migrate, create solutions, and learn Dynamics 365 for Operations
+-   Migrate, create solutions, and learn Dynamics 365 for Finance and Operations
 
 #### Prospective presales project
 

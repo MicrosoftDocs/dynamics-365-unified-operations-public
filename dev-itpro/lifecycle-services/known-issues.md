@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 6
 
 This topic explains how to view the known issues that you might experience when you use Finance and Operations.
 
-Known issues in Dynamics 365 for Operations can be found by using the Issue search tool in Microsoft Dynamics Lifecycle Services (LCS). You can sign in to [Lifecycle Services](https://lcs.dynamics.com/) by using your CustomerSource or PartnerSource account. Then, in the **Issue search** box, enter the text listed in the table below. **Note:** Be sure to enter the text exactly as it appears in the table below. Otherwise, you may get different search results.
+Known issues in Dynamics 365 for Finance and Operations can be found by using the Issue search tool in Microsoft Dynamics Lifecycle Services (LCS). You can sign in to [Lifecycle Services](https://lcs.dynamics.com/) by using your CustomerSource or PartnerSource account. Then, in the **Issue search** box, enter the text listed in the table below. **Note:** Be sure to enter the text exactly as it appears in the table below. Otherwise, you may get different search results.
 
 | **Release**                                    | **Version**       | **Build number** | **Availability** | **Search for this text**                                                       |
 |------------------------------------------------|-------------------|------------------|------------------|--------------------------------------------------------------------------------|

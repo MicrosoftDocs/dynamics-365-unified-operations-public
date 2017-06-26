@@ -5,7 +5,7 @@ title: Form 1099 in the public sector
 description: This article provides tips and information about how to set up Form 1099 functionality for Accounts payable in the public sector.
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,7 +22,7 @@ ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 26181
 ms.assetid: 10f56dea-ea2d-48ea-9622-4ef715eb1179
-ms.search.region: United States
+ms.search.region: USA
 ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28

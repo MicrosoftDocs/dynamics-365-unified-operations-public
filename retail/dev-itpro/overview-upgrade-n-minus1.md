@@ -6,7 +6,7 @@ title: Overview of upgrade and N-1 support for Dynamics 365 for Retail
 description: Upgrade support and N-1 support have been enabled in the release of Dynamics 365 for Retail. N-1 support lets customers who have stores that run AX 2012 R3 CU10 work with Dynamics 365 for Retail headquarters after an upgrade. 
 author: athinesh99
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics-365-retail
@@ -40,7 +40,7 @@ Upgrade support and support for previous versions are now enabled in Microsoft D
 - The upgrade process has enhanced error handling and messaging, so that customers can quickly debug issues.
 - Users can use tools to bring forward custom X++ code in their existing Retail headquarters to the upgraded version of the headquarters.
 
-The upgrade procedure is largely the same as the procedure for upgrading Retail to the latest version. For details about upgrade in general, see [Upgrade overview: AX 2012 to Dynamics 365 for Finance and Operations](dynamics635/operations/dev-itpro/migration-upgrade/upgrade-overview-2012).
+The upgrade procedure is largely the same as the procedure for upgrading Retail to the latest version. For details about upgrade in general, see [Upgrade overview: AX 2012 to Dynamics 365 for Retail](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012).
 
 As part of the upgrade process, a planned downtime is required. While beginning an upgrade, the upgrade analysis is done first. The upgrade analysis runs against the Microsoft Dynamics AX 2012 database and is based on the Microsoft Dynamics Lifecycle Services (LCS) Diagnostic service. This step identifies tasks that can help make upgrade faster and less expensive. It also identifies the required SQL configuration, data cleanup, and deprecated features.The actual data upgrade process then occurs. The AX 2012 database is moved to Microsoft Azure SQL Database, and then the data upgrade package is run as usual, through the runbook process. Upgrade validation is then done. A validation tool is run against the upgraded environment before it's used. This tool does an automated smoke test to verify that the service is running and accessible, row counts match, financials and inventory reconcile, and so on. Most of the post-upgrade configuration for retail channels requires few manual steps. Customers can then use the pre-upgrade and post-upgrade checklists to learn about the tasks that must be completed. The post-upgrade tasks include intiating a full sync to the stores from the upgraded database, validating channels, registers, and devices against the upgraded database, validating transaction synchronization, and validating that N-1 support is in place.
  
