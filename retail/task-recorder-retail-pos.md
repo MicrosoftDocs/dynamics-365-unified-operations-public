@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form:  
 # ROBOTS: 
-# audience: Application User
+audience: Application User
 # ms.devlang: 
 ms.reviewer: 41
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
