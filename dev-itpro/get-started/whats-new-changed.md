@@ -38,6 +38,9 @@ This page points you to topics that can help you learn about the new features in
 
 For information about how to upgrade to the latest version, see [Process for upgrading to the latest update](../migration-upgrade/upgrade-latest-update.md).
 
+> [!NOTE]
+> Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
+
 ## Application releases
 
 To learn more about the mobile workspaces and Power BI content recently released, see [Mobile workspaces recently released for the Dynamics 365 for Finance and Operations mobile app](../mobile-apps/mobile-workspaces-released.md) and [Power BI content recently released for Dynamics 365 for Finance and Operations](../analytics/power-bi-home-page.md)
@@ -63,7 +66,7 @@ To learn more about the mobile workspaces and Power BI content recently released
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>July 2017 update</td>
-<td>X</td>
+<td>7.2.11792.56024</td>
 <td>June 2017</td>
 <td><a href="whats-new-application-July-2017-update.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</a></td>
 </tr>
@@ -114,7 +117,7 @@ To learn more about the mobile workspaces and Power BI content recently released
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>Platform update 8</td>
-<td>X</td>
+<td>7.0.4565.16212</td>
 <td>June 2017</td>
 <td><a href="whats-new-platform-update-8.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 8 (June 2017)</a></td>
 </tr>
