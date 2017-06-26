@@ -3,7 +3,7 @@
 
 title: Define retail channel communications (Commerce Data Exchange)
 description: This article provides an overview of Commerce Data Exchange and its components. It explains the part that each component plays in the transfer of data between Microsoft Dynamics 365 for Retail and retail channels.
-author: josaw1
+author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,16 +15,16 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Application User
+audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: robinr
+# ms.reviewer: margoc
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 27021
 ms.assetid: 179b1629-ac90-4cfb-b46a-5bda56c4f451
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: josaw
+ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
@@ -56,7 +56,7 @@ Scheduler jobs are the mechanism for distributing data to and from locations. Jo
 -   **Download jobs** – Download jobs send data that has changed from Retail headquarters to channel databases. Modifications to records are tracked through SQL Server change tracking.
 -   **Upload jobs (P jobs)** – Upload jobs pull sales transactions from a channel into the Retail database. P jobs upload data incrementally. When a P job runs, the Async Client library checks the replication counter for records that have already been received from a location. A record is uploaded only if its replication counter is more than the largest value that is found. P jobs don't update data that was previously uploaded.
 
-The distribution schedule is used to run the data transfer, either manually or by scheduling a batch job in Retail headquarters. A distribution schedule can contain one or more channel data groups, and one or more scheduler jobs.
+The distribution schedule is used to run the data transfer, either manually or by scheduling a batch job in Retail headquarters. A distribution schedule can contain one or more channel data groups, and one or more scheduler jobs. To ensure that the scheduler jobs are running smmothly, do not rename the "Default" database configured for the instance, and do not create a second database. All non-Retail Store Scale Unit databases are managed by Microsoft, and only one default database is expected. 
 
 ## Realtime Service
 Commerce Data Exchange: Real-time Service is an integrated service that provides real-time communication between Retail headquarters and retail channels. Real-time Service enables individual POS computers and online stores to retrieve specific data from Retail headquarters in real time. Although most key operations can be performed in the local channel database, the following scenarios require direct access to the data that is stored in Retail headquarters:
