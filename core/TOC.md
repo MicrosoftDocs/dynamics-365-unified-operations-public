@@ -31,7 +31,7 @@
 #### Task guides and task recorder
 ##### [Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create documentation or training](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Country/region-specific Help content](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Localization and regulatory features](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Glossary](/dynamics365/unified-operations/fin-and-ops/get-started/glossary?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Compliance
@@ -318,7 +318,7 @@
 ### [Modify row definition cells](/dynamics365/unified-operations/dev-itpro/analytics/modify-row-definition-cells-financial-reporting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Reset the financial reporting data mart after restoring a database](/dynamics365/unified-operations/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## [Localization overview](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+## [Localization and regulatory features](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Asia-Pacific
 #### Australia
 ##### [Bank file formats](/dynamics365/unified-operations/financials/localizations/apac-aus-method-of-payment-pay-vendors-banks?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -329,7 +329,7 @@
 ##### [Bill of materials comparison](/dynamics365/unified-operations/financials/localizations/apac-chn-bom-comparison?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Chinese vouchers](/dynamics365/unified-operations/financials/localizations/apac-chn-vouchers?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Configure tax integration](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [VAT customer invoices FAQ](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration-vat-customer-invoices?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [VAT customer invoices FAQ](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration-vat-customer-invoices?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Depreciation methods fixed assets ](/dynamics365/unified-operations/financials/localizations/apac-chn-depreciation-methods-fixed-assets?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Import the Chinese Golden Tax data entity](/dynamics365/unified-operations/financials/localizations/apac-chn-import-golden-tax-data-entity?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Monthly average cost model](/dynamics365/unified-operations/financials/localizations/apac-chn-monthly-average-cost-model?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -498,7 +498,7 @@
 ###### [Referenced fiscal documents](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Sales complementary fiscal documents](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Service electronic fiscal document](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Journals generated during the electronic payment return process](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Journals generated during the electronic payment return process](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [NF-e process](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Parameters for legal entities](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Acquire a CIAP fixed asset](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -517,8 +517,6 @@
 ### North America
 #### [Year-end 1099 reporting for the United States](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Form 1099 for the public sector](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-
-
 
 ## Human resources
 ### Recruiting
