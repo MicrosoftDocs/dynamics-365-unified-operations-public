@@ -63,7 +63,7 @@ Be aware that this public preview differs from a [30-day trial](https://aka.ms/D
 ### Select the upgrade methodology
 In your new LCS project, set the project methodology to **Upgrade AX 2012 to Dynamics 365 for Finance and Operations**. This methodology is made specially for AX 2012 customers who are upgrading. It describes the three phases in detail and provides links to all the supporting documentation about the process.
 
-![Upgrade methodology(./media/methodology.png)
+![Upgrade methodology](./media/methodology.png)
  
 ### Run the upgrade analyzer
 The upgrade analyzer tool runs against your AX 2012 environment and identifies tasks that you should do to prepare the AX 2012 environment, to help make the upgrade experience smoother and less expensive:

@@ -1246,7 +1246,7 @@
 
 #### Migrating entities
 ##### [Configuration data projects](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Configure data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Configuration data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Copy configuration data between companies](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Best practices for importing vouchers using the General journal entity](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
@@ -1318,6 +1318,8 @@
 #### [Deploy a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Azure Resource Manager onboarding](/dynamics365/unified-operations/dev-itpro/deployment/arm-onboarding?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+
+#### [Deploy Microsoft Dynamics 365 for Finance and Operations on-premises](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
 
 #### Deploy custom code
 ##### [Create a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)

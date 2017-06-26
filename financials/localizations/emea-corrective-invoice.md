@@ -6,7 +6,7 @@ description: A Credit note or Credit memorandum (memo) is a document that reduce
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/15/2017
-ms.topic: 
+ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 

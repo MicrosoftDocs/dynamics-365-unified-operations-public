@@ -174,7 +174,7 @@ The following sections list resources by country/region.
 - [Reverse charges](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 - [SEPA Credit transfer overview](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 - [SEPA Direct debit overview](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Set up customer and vendor compensation](/dynamics365/unified-operations/financials/accounts-receivable/emea-compensation-customer-vendor-transactions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+- [Set up customer and vendor compensation](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 - [Set up signers for print forms](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 - [Tax directives]
 - [Update how amounts are displayed on reports and documents](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
@@ -219,7 +219,7 @@ The following sections list resources by country/region.
 -   [Packing slip date verification on invoices for Italy](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice)
 -   [Italian sales tax books](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books)
 -   [Split payment for invoices issued to the Public Administration](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration)
--   [Withholding tax](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding tax)
+-   [Withholding tax](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding-tax)
 
 ### Japan
 
