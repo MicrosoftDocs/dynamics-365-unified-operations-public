@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # Set up and deploy on-premises environments
 
-This document describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
-(on-premises).
+This document describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises).
 
 ## Finance and Operations components
 
@@ -60,7 +59,7 @@ These components depend on the following system software:
 ## Lifecycle Services
 
 Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through
-the [Enterprise Agreements](https://www.microsoft.com/en-us/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](../lifecycle services/lbd-create-lcs-on-prem-project.md).
+the [Enterprise Agreements](https://www.microsoft.com/en-us/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
 
 ## Authentication
 
@@ -80,7 +79,7 @@ Finance and Operations is designed to work on a hyper-converged architecture. Th
 - Server Message Block (SMB) version 3 file share for storage
 - Optional: Microsoft Office Server 2017
 
-For more information, see [System requirements](../get-started/system-requirements.md) and Sizing guidelines[Hyperlink].
+For more information, see [System requirements](../get-started/system-requirements.md) and Sizing guidelines.
 
 ### Hardware layout
 
