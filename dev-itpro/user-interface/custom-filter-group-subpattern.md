@@ -34,9 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-
-
-
 Usage
 -----
 
@@ -64,27 +61,25 @@ Two patterns are described in this document. The only difference between these p
 ## Model
 ### Custom Filters – High-level structure
 
-CustomFilter (Group)
+- CustomFilter (Group)
 
-*QuickFilter (QuickFilter) \[Optional\]*
+    - *QuickFilter (QuickFilter) \[Optional\]*
+    - *FieldGroups (Group) \[0..N\]*
 
-*FieldGroups (Group) \[0..N\]*
+        - Fields ($Field) \[1..N\]
 
-Fields ($Field) \[1..N\]
-
-*Fields ($Fields) \[0..N\]*
+    - *Fields ($Fields) \[0..N\]*
 
 ### Custom and Quick Filters – High-level structure
 
-CustomFilter (Group)
+- CustomFilter (Group)
 
-QuickFilter (QuickFilter)
+    - QuickFilter (QuickFilter)
+    - *FieldGroups (Group) \[0..N\]*
 
-*FieldGroups (Group) \[0..N\]*
+        - Fields ($Field) \[1..N\]
 
-Fields ($Field) \[1..N\]
-
-*Fields ($Fields) \[0..N\]*
+    - *Fields ($Fields) \[0..N\]*
 
 ### Core components
 
@@ -163,6 +158,3 @@ This section will have answers to frequently asked questions that are related to
 #### AX 2012 example
 
 [![CustomFilterGroup(5)](./media/customfiltergroup5.png)](./media/customfiltergroup5.png)
-
-
-
