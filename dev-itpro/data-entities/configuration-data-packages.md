@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration data packages
-description: This topic provides an overview of the configuration data packages available on LCS.
+description: This topic provides an overview of the configuration data packages available on Lifecycle Services.
 author: saraschi
 manager: AnnBe
 ms.date: 06/26/2017
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: Margoc
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -37,7 +37,7 @@ Configuration data packages are available as process data packages from Microsof
 -   Sample data: The spreadsheet contains data to be used as an example for business-specific data. This data can be imported and used as an example but will need to be changed for individual business practices.
 -   No data: The spreadsheet does not contain any data. There are several areas of the product that are unique to each business and their business practices, and must be configured specifically for the organization. These spreadsheets should be reviewed and updated for the organization as appropriate.
 
-The type of data included in each entity spreadsheet in the data packages is described in the [Data packages](#data-packages) section. You can either modify individual spreadsheets before importing the data packages, or import the data packages as they have been supplied and then update your data in the system.
+The type of data included in each entity spreadsheet in the data packages is described in the [Data packages](#data-packages-system) section. You can either modify individual spreadsheets before importing the data packages, or import the data packages as they have been supplied and then update your data in the system.
 
 ## Using of configuration data packages
 Configuration data packages can be accessed from LCS, and either applied to an LCS environment or downloaded to be manually imported into Finance and Operations.
