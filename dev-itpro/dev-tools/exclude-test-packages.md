@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In Platform update 4, the automated build process lets you prevent specific packages from being included in the deployable package in the build output. This capability can be important for customers that use automated testing. These customers might want to build and run their tests, but prevent them from being added to the deployable package that the build generates as output.
 
-When customers that have an existing build definition from Platform update 3 or earlier upgrade, they won't see the build definition automatically updated. To use the new feature, these customers must make a few manual edits to the build definition. For information about how to add the new feature to an existing build definition, see the [Update an existing build definition after upgrade to Platform update 4 or later](#update-an-existing-build-definition-after-upgrading-to-platform-update-4-or-newer) section, later in this topic.
+When customers that have an existing build definition from Platform update 3 or earlier upgrade, they won't see the build definition automatically updated. To use the new feature, these customers must make a few manual edits to the build definition (see below for details). 
 
 The new feature exposes a new optional parameter for the package creation step in the build process. Because this parameter is managed by a build variable, you can easily adjust it.
 
@@ -57,7 +57,7 @@ The new feature exposes a new optional parameter for the package creation step i
 
     After you complete this setup, the build process will still build the code and run any tests that the packages contain. However, the deployable package that the build creates won't include those packages.
 
-# Update an existing build definition after upgrade to Platform update 4 or later
+## Update an existing build definition after upgrade to Platform update 4 or later
 
 To use the new feature, you must manually update any existing build definitions that you deployed before Platform update 4.
 

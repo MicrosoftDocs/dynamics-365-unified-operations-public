@@ -1246,7 +1246,7 @@
 
 #### Migrating entities
 ##### [Configuration data projects](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Configure data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Configuration data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Copy configuration data between companies](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Best practices for importing vouchers using the General journal entity](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 

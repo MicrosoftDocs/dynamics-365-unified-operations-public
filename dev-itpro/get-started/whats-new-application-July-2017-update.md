@@ -85,7 +85,7 @@ variances:
 
 -   Fiscal period
 
-For more information, see [Ledger Budget Power BI](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/ledger-budgets-power-bi).
+For more information, see [Ledger Budget Power BI](/dynamics365/unified-operations/dev-itpro/analytics/ledger-budgets-power-bi).
 
 CFO Overview workspace
 ----------------------
@@ -94,7 +94,7 @@ The CFO or accounting manager can view the full state of the business on the CFO
 Overview workspace. The workspace contains common KPIs and uses embedded
 analytics to see financials, purchasing, sales, and cash flow data.
 
-For more information, see [CFO overview Power BI content](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/CFO-power-bi).
+For more information, see [CFO overview Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/CFO-power-bi).
 
 Data validation
 ---------------
@@ -105,7 +105,7 @@ a new implementation, after an upgrade, or after a migration. Depending on your
 view of the **Data validation checklist** workspace, you'll see either all tasks
 and statuses for a data validation project.
 
-For more information, see [Data validation workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/user-interface/data-validation-workspace).
+For more information, see [Data validation workspace](/dynamics365/unified-operations/dev-itpro/user-interface/data-validation-workspace).
 
 Delete a main account and dimension value
 -----------------------------------------
@@ -115,7 +115,7 @@ have determined they no longer need. This feature lets you remove the main
 account and dimension values if there are no posted transaction, keeping the
 pristine golden template intact.
 
-For more information, see [Financial dimensions](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/financial-dimensions).
+For more information, see [Financial dimensions](/dynamics365/unified-operations/financials/general-ledger/financial-dimensions).
 
 Display payment information for an expense
 ------------------------------------------
@@ -174,7 +174,7 @@ Specifically, the **Expense management** mobile workspace enables a user to:
 
 -   Approve or reject expense reports assigned to the employee as an approver.
 
-For more information, see [Expense management mobile workspace](https://docs.microsoft.com/en-us/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace).
+For more information, see [Expense management mobile workspace](/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace).
 
 Expense management: Configuration related to employee's card ID
 ---------------------------------------------------------------
@@ -400,7 +400,7 @@ Financial dimensions in Power BI
 
 The financial dimensions in the Financial performance content pack are now
 available for analyzing financial data. For more information, see [Financial
-performance power BI](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/financial-performance-power-bi-content-pack).
+performance power BI](/dynamics365/unified-operations/dev-itpro/analytics/financial-performance-power-bi-content-pack).
 
 Financial report generation
 ---------------------------
@@ -431,7 +431,7 @@ Mobile invoice approvals
 New mobile capabilities allow you to review and approve vendor invoices that
 have been submitted through workflow using a mobile device.
 
-For more information, see [Mobile invoice approvals](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals).
+For more information, see [Mobile invoice approvals](/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals).
 
 Save Financial reports to SharePoint
 ------------------------------------
@@ -500,7 +500,7 @@ automation. 
 -   A side-by-side attachment viewer in invoices in exception handling forms,
     pending invoices, and invoice journal inquiries.
 
-For more information, see [Vendor invoice automation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/vendor-invoice-automation).
+For more information, see [Vendor invoice automation](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoice-automation).
 
 View detailed workflow history for an expense report 
 -----------------------------------------------------
@@ -613,7 +613,7 @@ electronic reporting configurations:
 -   DTD file attachment embedded in the format configuration.
 
 For more information, see [German audit file
-(GDPdU/GoBD)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-deu-gdpdu-audit-data-export).
+(GDPdU/GoBD)](/dynamics365/unified-operations/financials/localizations/emea-deu-gdpdu-audit-data-export).
 
 Global coverage - Configurable Electronic Reporting
 ---------------------------------------------------
@@ -729,7 +729,7 @@ use of cash registers, as well as an example of integration of Dynamics 365 for
 Retail POS with a fiscal device (control unit).
 
 For more information, see [Cash registers for
-Sweden](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers).
+Sweden](/dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers).
 
 Reverse charge functionality for European countries/regions
 -----------------------------------------------------------
@@ -743,7 +743,7 @@ invoice report is adjusted to represent details of the applied reverse charge.
 The functionality has been made available to all European countries/regions.
 
 For more information, see [Reverse
-charges](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-reverse-charge).
+charges](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge).
 
 Substitution/adjustment invoices for Thailand
 ---------------------------------------------
@@ -915,7 +915,7 @@ Company directory mobile workspace provides the following:
 
 -   Call, text, or email individuals from the director.
 
-For more information, see [Company directory mobile workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/mobile-apps/company-directory-mobile-workspace).
+For more information, see [Company directory mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/company-directory-mobile-workspace).
 
 My team mobile workspace provides the following:
 
@@ -927,7 +927,7 @@ My team mobile workspace provides the following:
 
 -   Send praise.
 
-For more information see [My team mobile workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/mobile-apps/manager-self-service-mobile-workspace).
+For more information see [My team mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/manager-self-service-mobile-workspace).
 
 **Employee and Manager self-service**
 
@@ -1023,7 +1023,7 @@ Analytics and insights provide the following data and visualizations:
 
 -   Applicant status
 
-For more information, see [Power BI content](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page).
+For more information, see [Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page).
 
 Cash flow forecasting Power BI
 ------------------------------
@@ -1039,7 +1039,7 @@ bank account, and currency to get a better understanding of surpluses and short
 falls. Overall, you can get a temporal view of gaps and address them
 proactively.
 
-For more information, see [Cash flow forecasting](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forcasting).
+For more information, see [Cash flow forecasting](/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forcasting).
 
 Cost accounting Power BI reports
 --------------------------------
@@ -1055,7 +1055,7 @@ center allocations with cost roll-up details.
 
 You can also combine statistical elements and cost elements by cost objects.
 
-For more information, see [Cost accounting analysis Power BI content](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack).
+For more information, see [Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack).
 
 Credit and collections management Power BI
 ------------------------------------------
@@ -1085,7 +1085,7 @@ Comprehensive reporting and dashboard capabilities built into Power BI mean that
 your collections and account management teams can proactively manage their
 customers. 
 
-For more information, see [Credit and collections management Power BI content](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi).
+For more information, see [Credit and collections management Power BI content](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi).
 
 Embedded Power BI reports licensed for all users
 ------------------------------------------------
@@ -1128,7 +1128,7 @@ Operations, Enterprise edition.
 The Practice manager Power BI content contains five report pages: one overview
 page and four pages that provide details about project costs, revenues, earned
 value management, and hour metrics that are split out across various dimensions.
-For more information, see [Practice manager Power BI content](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/practice-manager-power-bi).
+For more information, see [Practice manager Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/practice-manager-power-bi).
 
 Fixed asset management workspace and embedded Power BI content 
 ---------------------------------------------------------------
@@ -1150,7 +1150,7 @@ can dive into patterns and understand trends that lie hidden beneath the data,
 and make strategic decisions, such as major upgrades and plant re-tooling
 proactively, backed with data.
 
-For more information, see [Fixed asset management workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-management-workspace).
+For more information, see [Fixed asset management workspace](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-management-workspace).
 
 Power BI reporting with financial dimensions 
 ---------------------------------------------
@@ -1178,7 +1178,7 @@ You can empower your users to create Power BI reports that leverage this
 capability. When you define a report with modeled financial dimensions, they can
 be refreshed to include expanded fields.
 
-For more information, see [Add financial dimensions to aggregate measurements](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements).
+For more information, see [Add financial dimensions to aggregate measurements](dynamics365/unified-operations/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements).
 
 Purchase spend analysis Power BI reports 
 -----------------------------------------
@@ -1205,7 +1205,7 @@ following ways: 
 The Purchase spend analysis Power BI content pack is available via the Lifecycle
 Services (LCS) Asset library and as an embedded report in Dynamics 365 for
 Finance and Operations, Enterprise edition.  
-For more information, see [Purchase content pack for Power BI](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/purchase-content-pack-for-power-bi).
+For more information, see [Purchase content pack for Power BI](/dynamics365/unified-operations/dev-itpro/analytics/purchase-content-pack-for-power-bi).
 
 Purchasing analysis Power BI content
 ------------------------------------
@@ -1277,7 +1277,7 @@ The Sales and profitability performance Power BI content pack is available via
 the Lifecycle Services (LCS) Asset library and as an embedded report in Dynamics
 365 for Finance and Operations, Enterprise edition.
 
-For more information, see [Sales and profitability performance Power BI content pack](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/sales-profitability-performance-content-pack).
+For more information, see [Sales and profitability performance Power BI content pack](/dynamics365/unified-operations/dev-itpro/analytics/sales-profitability-performance-content-pack).
 
 Vendor payment analysis Power BI
 --------------------------------
@@ -1287,7 +1287,7 @@ invoices and posted vendor payments, enabling better decisions in your account
 payable processes. You can analyze overdue invoices, upcoming invoices that are
 due in the future, as well as your discount history.
 
-For more information, see [Vendor payment workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace).
+For more information, see [Vendor payment workspace](/dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace).
 
 Warehousing Power BI reports
 ----------------------------
@@ -1301,7 +1301,7 @@ inventory metrics. This feature uses product and other transactional data from
 Dynamics 365 for Finance and Operations, Enterprise edition to provide both an
 aggregate view of the warehouse performance and a breakdown for customers,
 vendors, product groups, and product sites and warehouses. For more information,
-see [Warehouse performance Power BI content](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content).
+see [Warehouse performance Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content).
 
 **Manufacturing**
 =================
@@ -1428,7 +1428,7 @@ entities for each module area. The templates are sequenced to handle entities
 that are dependent on other entities. You can add one or more templates to a
 configuration data project and the sequences will align correctly.
 
-For more information, see [Configuration data templates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates).
+For more information, see [Configuration data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates).
 
 Upgrade 
 --------
@@ -1459,17 +1459,17 @@ an upgrade sandbox, validation, and then release to production.
 
 For more information, see the following topics:
 
-- [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012)
-- [Analysis: Use the upgrade analyzer to plan migration work](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool)
-- [Analysis: Estimate the effort to upgrade code](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-code-upgrade)
-- [Analysis: Deploy a sandbox environment](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox)
-- [Upgrade: Data upgrade in a development environment](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade)
-- [Upgrade: AX 2012 data upgrade tasks](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012)
-- [Upgrade: Data upgrade in a sandbox environment](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox)
-- [Validate: Tasks to complete after upgrade process](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process)
-- [Validate: Cutover testing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing)
-- [Validate: Functional testing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation)
-- [Validate: Prepare for go live](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep)
+- [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012)
+- [Analysis: Use the upgrade analyzer to plan migration work](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool)
+- [Analysis: Estimate the effort to upgrade code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-code-upgrade)
+- [Analysis: Deploy a sandbox environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox)
+- [Upgrade: Data upgrade in a development environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade)
+- [Upgrade: AX 2012 data upgrade tasks](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012)
+- [Upgrade: Data upgrade in a sandbox environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox)
+- [Validate: Tasks to complete after upgrade process](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process)
+- [Validate: Cutover testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing)
+- [Validate: Functional testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation)
+- [Validate: Prepare for go live](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep)
 
 **Project management \| Accounting**
 ====================================
@@ -1556,7 +1556,7 @@ features:
 
 To implement the **Project time entry** mobile workspace, see the related
 documentation for Microsoft Dynamics 365 for Operations on docs.microsoft.com.
-For more information, see [Project time entry mobile workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace).
+For more information, see [Project time entry mobile workspace](/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace).
 
 Rename project stages 
 ----------------------
@@ -1793,7 +1793,7 @@ testing. Results from compatibility testing can be sent to Microsoft to be
 listed as approved for new deployments of Microsoft Dynamics 365 for Retail.
 
 For a description of the Peripheral simulator, see [Retail Peripheral
-simulator](https://docs.microsoft.com/en-us/unified-operations/%20retail/dev-itpro/retail-peripheral-simulator).
+simulator](/unified-operations/%20retail/dev-itpro/retail-peripheral-simulator).
 
 For more information about the compatibility program and how to participate,
 contact <drpc@microsoft.com>.
@@ -1864,7 +1864,7 @@ experience for managing and accepting coupons in all retail channels. The
 combined experience uses the codes and bar codes from coupons to apply the
 discount value from retail discounts.
 
-For more information about coupons, see [Create coupons for retail sales](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/retail-coupons).
+For more information about coupons, see [Create coupons for retail sales](/dynamics365/unified-operations/retail/retail-coupons).
 
 Discounts - Quantity limit and exclude discount lines
 -----------------------------------------------------
@@ -1884,7 +1884,7 @@ products in the **Fashion** category tree except for product **81327**. All
 previously existing discount lines are set to **Include**. This makes it easier
 for merchandizers to define discounts for some scenarios.
 
-For more information about discounts, see [Price adjustments and discounts](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/price-adjustments-discounts).
+For more information about discounts, see [Price adjustments and discounts](/dynamics365/unified-operations/retail/price-adjustments-discounts).
 
 POS Inventory visibility improvements
 -------------------------------------
@@ -1943,7 +1943,7 @@ enable the Dynamics AX 2012 R3 CU 11 or CU12 stores to connect with the new HQ.
 If the customer is using a pre-CU 11 version, then they must upgrade to at least
 Dynamics AX 2012 R3 CU 11 to leverage the N-1 support.
 
-For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](https://docs.microsoft.com/en-us/unified-operations/%20retail/dev-itpro/overview-upgrade-n-minus1) and [N-1 installation and configuration](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1).
+For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](/unified-operations/%20retail/dev-itpro/overview-upgrade-n-minus1) and [N-1 installation and configuration](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1).
 
 **Social**
 ==========
@@ -1977,7 +1977,7 @@ of Finance and Operations. With this enhancement, using a mobile device, you can
 confirm that the correct batch or license plate is being picked.
 
 In previous versions, batch and license plate confirmation for items was not
-supported. For more information, see [Batch and license plate confirmation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/batch-and-license-plate-confirmation).
+supported. For more information, see [Batch and license plate confirmation](/dynamics365/unified-operations/supply-chain/warehousing/batch-and-license-plate-confirmation).
 
 Consignment inventory
 ---------------------
@@ -2021,7 +2021,7 @@ inventory. Also, previously, the work reservations that you could move where
 limited to Sales order, Transfer order issue, Transfer order receipt, and
 Purchase order.
 
-For more information, see [Movement of inventory with associated work in Warehouse management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/move-inventory-associated-work).
+For more information, see [Movement of inventory with associated work in Warehouse management](/dynamics365/unified-operations/supply-chain/warehousing/move-inventory-associated-work).
 
 Piece picking confirmation 
 ---------------------------
@@ -2036,7 +2036,7 @@ In previous versions, it was not possible to, for example, verify item
 quantities to be picked by scanning item bar codes or to scan bar codes for
 larger quantities.
 
-For more information, see [Piece picking confirmation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/piece-picking-confirmation).
+For more information, see [Piece picking confirmation](/dynamics365/unified-operations/supply-chain/warehousing/piece-picking-confirmation).
 
 Product work confirmation for cluster picking 
 ----------------------------------------------
@@ -2048,7 +2048,7 @@ When cluster picking is applied, item confirmation is crucial to verify the
 items that are added to clusters. Now you can verify Items in cluster picking
 during the cluster picking process. In previous versions, it was not possible to
 confirm item bar codes and verify items using a bar code scanner. For more
-information, see [Product confirmation for cluster picking](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/cluster-picking-item-confirmation).
+information, see [Product confirmation for cluster picking](/dynamics365/unified-operations/supply-chain/warehousing/cluster-picking-item-confirmation).
 
 Prospect to cash integration capabilities 
 ------------------------------------------
@@ -2132,7 +2132,7 @@ the catalog and purchasing policies. 
 The cXML protocol is used to communicate between Finance and Operations and the
 external catalog residing at the vendor's system.
 
-For more information, see [Use external catalogs for PunchOut eProcurement](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/use-external-catalogs-for-punchout).
+For more information, see [Use external catalogs for PunchOut eProcurement](/dynamics365/unified-operations/supply-chain/procurement/use-external-catalogs-for-punchout).
 
 System grouping on an open work list 
 -------------------------------------
@@ -2165,7 +2165,7 @@ the changed purchase order to the purchasing professionals.
 Both improvements will reduce time spent in the purchasing department and allow
 the procurement personnel to handle their tasks more efficiently.
 
-For more information, see [Vendor collaboration with external vendors](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+For more information, see [Vendor collaboration with external vendors](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Warehousing
 -----------
@@ -2370,7 +2370,7 @@ Company directory mobile workspace provides the following:
 
 -   Call, text, or email individuals from the director.
 
-For more information, see [Company directory mobile workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/mobile-apps/company-directory-mobile-workspace).
+For more information, see [Company directory mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/company-directory-mobile-workspace).
 
 My team mobile workspace provides the following:
 
@@ -2382,7 +2382,7 @@ My team mobile workspace provides the following:
 
 -   Send praise.
 
-For more information see [My team mobile workspace](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/mobile-apps/manager-self-service-mobile-workspace).
+For more information see [My team mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/manager-self-service-mobile-workspace).
 
 Onboarding
 ----------
