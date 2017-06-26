@@ -1,12 +1,36 @@
 ---
+# required metadata
+
 title: Configuration data packages
+description: This topic provides an overview of the configuration data packages available on LCS.
+author: saraschi
+manager: 
+ms.date: 06/26/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: 
+ms.search.scope: Operations, Platform
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: saraschi
+ms.search.validFrom: 2017-06-26
+ms.dyn365.ops.version: Platform update 8
 ---
 
-This topic provides an overview of the configuration data packages available on
-LCS.
+# Configuration data packages
 
-Overview
-========
+## Overview
 
 Configuration data packages are available as process data packages from LCS to
 help you improve implementation repeatability and accelerate configuration of
@@ -35,8 +59,7 @@ spreadsheet in the data packages. You can either modify individual spreadsheets
 before importing the data packages, or import the data packages as they have
 been supplied and update data in the system.
 
-Usage of configuration data packages
-====================================
+## Usage of configuration data packages
 
 Configuration data packages can be accessed from LCS, and either applied to an
 LCS environment or downloaded to be manually imported into Dynamics 365 for
@@ -61,8 +84,7 @@ Operations to import the data packages from LCS. Reference the Copy
 configuration data from one company to another wiki for additional information
 on importing and exporting configurations.
 
-Special considerations
-======================
+## Special considerations
 
 System setup: The System data package is required to be imported before any
 other data packages. By default, the system data package will create a new legal
@@ -76,11 +98,9 @@ posting data. If you change the main accounts used for the chart of accounts,
 then you will also need to update the individual posting profiles and posting
 accounts for each area.
 
-Data packages: System
-=====================
+## Data packages: System
 
-010 – System Setup
-------------------
+### 010 – System Setup
 
 |                                         | **Spreadsheet content:** |                 |             |
 |-----------------------------------------|--------------------------|-----------------|-------------|
@@ -121,11 +141,9 @@ Data packages: System
 | User groups                             |                          |                 | X           |
 | User information                        |                          |                 | X           |
 
-Data packages: Financials 
-==========================
+## Data packages: Financials 
 
-020 – GL Shared
----------------
+### 020 – GL Shared
 
 |                                        | **Spreadsheet content:** |                 |             |
 |----------------------------------------|--------------------------|-----------------|-------------|
@@ -155,8 +173,7 @@ Data packages: Financials
 | Number sequence group                  |                          |                 | X           |
 | Number sequence references             |                          | X               |             |
 
-025 – GL
---------
+### 025 – GL
 
 |                                                  | **Spreadsheet content:** |                 |             |
 |--------------------------------------------------|--------------------------|-----------------|-------------|
@@ -188,8 +205,7 @@ Data packages: Financials
 | Workflow organization parameters                 |                          |                 | X           |
 | Working times                                    |                          |                 | X           |
 
-100 – Bank
-----------
+### 100 – Bank
 
 |                                                   | **Spreadsheet content:** |                 |             |
 |---------------------------------------------------|--------------------------|-----------------|-------------|
@@ -210,8 +226,7 @@ Data packages: Financials
 | Reconciliation matching rules                     |                          |                 | X           |
 | Transaction code mapping                          |                          |                 | X           |
 
-120 – AP
---------
+### 120 – AP
 
 |                                             | **Spreadsheet content:** |                 |             |
 |---------------------------------------------|--------------------------|-----------------|-------------|
@@ -263,8 +278,7 @@ Data packages: Financials
 | Vendor, form parameters                     |                          |                 | X           |
 | Vendors                                     |                          |                 | X           |
 
-130 – Tax
----------
+### 130 – Tax
 
 |                                    | **Spreadsheet content:** |                 |             |
 |------------------------------------|--------------------------|-----------------|-------------|
@@ -290,8 +304,7 @@ Data packages: Financials
 | Withholding tax groups             |                          | X               |             |
 | Withholding tax limits             |                          |                 | X           |
 
-140 – AR
---------
+### 140 – AR
 
 |                                                         | **Spreadsheet content:** |                 |             |
 |---------------------------------------------------------|--------------------------|-----------------|-------------|
