@@ -112,15 +112,15 @@ Line 3: **Earning statement line** tab
 |--------------------|-----------|
 | Payment date       | 6/30/2017 |
 | Payment run type   | Manual    |
-| Disable accounting | (marked)  |
+| Disable accounting |   Yes     |
 
 > [!NOTE] 
 > This is only available when the payment run type is manual and wherein the user want to disable accounting on the pay run.
 
 Click **OK** and close the **Infolog**.
 
-#### Why the Disable Accounting checkbox needs to be turned on when generating pay statements?
-Selecting the checkbox prevents lines in the pay statement from being districuted to General ledger. General ledger amounts were updating earlier when account balances from the legacy system were entered. Entering beginning balances for Payroll lets you generate reports that include information from prior years, as well as for identifying limits for benefits and tax purposes.   
+#### Why the Disable Accounting slider needs to set to Yes when generating pay statements?
+Setting the slider to **Yes** prevents lines in the pay statement from being districuted to General ledger. General ledger amounts were updating earlier when account balances from the legacy system were entered. Entering beginning balances for Payroll lets you generate reports that include information from prior years, as well as for identifying limits for benefit and tax purposes.   
 
 ### C. Create pay statements for employees
 After you generate pay statements that have beginning balances, you must verify that the pay statements accurately reflect payroll data. You must also manually update the benefit and taxes information to match the values in the previous payroll system. After you verify that the amounts from the previous payroll system match the amounts on the current pay statements, you must finalize the pay statements.
