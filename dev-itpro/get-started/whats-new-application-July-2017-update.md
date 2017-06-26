@@ -2,10 +2,10 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of XXX.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of 7.2.11792.56024.
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/19/2017
+ms.date: 06/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of XXX.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of 7.2.11792.56024.
 
 **Note:** Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
 
-Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to find supplemental information about new features and learn more about what new features are in development. 
+Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. 
 
 Introducing Dynamics 365 for Finance and Operations, Enterprise edition
 =======================================================================
@@ -57,7 +57,7 @@ Two default check format templates are provided in Accounts payable. These check
 templates have been created using the Excel capabilities of the Electronic
 reporting tool. These checks templates are compatible with US check formats.
 
-For more information, see [Electronic reporting sample check format](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/electronic-reporting-sample-vendor-checks).
+For more information, see [Electronic reporting sample check format](/dynamics365/unified-operations/financials/accounts-payable/electronic-reporting-sample-vendor-checks).
 
 Budget control data maintenance
 -------------------------------
@@ -130,6 +130,51 @@ You can now edit the account entries in the allocation journal before posting.
 This means that you can make changes due to exceptions that occur periodically
 in the allocation process. This saves time having to regularly modify the
 allocation rule setup.
+
+Expense management mobile workspace
+-----------------------------------
+
+Many organizations require that a copy of a receipt be attached to a
+travel-related or business-related report that an employee submits for
+reimbursement. The **Expense management** mobile workspace lets users quickly
+create new expense lines on the mobile device of their choice by using an
+attached photo of a receipt. Alternatively, users can capture a photo of a
+receipt and then attach it to an expense report later. Employees also can create
+and manage their expense reports and submit for approval and reimbursement using
+their mobile device.
+
+Specifically, the **Expense management** mobile workspace enables a user to:
+
+-   Take a photo of a receipt, and upload it to Microsoft Dynamics for Finance
+    and Operations, Enterprise edition. A user can then attach that photo to an
+    expense report later.
+
+-   Upload a file as a captured receipt. A user can then attach that file to an
+    expense report later.
+
+-   Create a new expense line by using an attached receipt. A user can then add
+    the line item to an expense report later, and submit it for approval and
+    reimbursement.
+
+-   Create a new expense report.
+
+-   Attach credit card transactions and other previously created expenses to an
+    expense report.
+
+-   Create new expenses for an expense report.
+
+-   Attach a receipt to any expense for an expense report by either taking a
+    photo of the receipt or uploading a file as a captured receipt.
+
+-   Add the list of guests to an expense based on expense policy.
+
+-   Itemize expenses based on expense policy.
+
+-   Submit an expense report for approval and reimbursement.
+
+-   Approve or reject expense reports assigned to the employee as an approver.
+
+For more information, see [Expense management mobile workspace](https://docs.microsoft.com/en-us/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace).
 
 Expense management: Configuration related to employee's card ID
 ---------------------------------------------------------------
@@ -247,51 +292,6 @@ credit card transaction from the list of expenses for the employee. The employee
 can remove the match when viewing their matched expenses from the **Matched
 expenses** form (**Expense management** \> **My expenses** \> **Matched
 expenses**).
-
-Expense management mobile workspace
------------------------------------
-
-Many organizations require that a copy of a receipt be attached to a
-travel-related or business-related report that an employee submits for
-reimbursement. The **Expense management** mobile workspace lets users quickly
-create new expense lines on the mobile device of their choice by using an
-attached photo of a receipt. Alternatively, users can capture a photo of a
-receipt and then attach it to an expense report later. Employees also can create
-and manage their expense reports and submit for approval and reimbursement using
-their mobile device.
-
-Specifically, the **Expense management** mobile workspace enables a user to:
-
--   Take a photo of a receipt, and upload it to Microsoft Dynamics for Finance
-    and Operations, Enterprise edition. A user can then attach that photo to an
-    expense report later.
-
--   Upload a file as a captured receipt. A user can then attach that file to an
-    expense report later.
-
--   Create a new expense line by using an attached receipt. A user can then add
-    the line item to an expense report later, and submit it for approval and
-    reimbursement.
-
--   Create a new expense report.
-
--   Attach credit card transactions and other previously created expenses to an
-    expense report.
-
--   Create new expenses for an expense report.
-
--   Attach a receipt to any expense for an expense report by either taking a
-    photo of the receipt or uploading a file as a captured receipt.
-
--   Add the list of guests to an expense based on expense policy.
-
--   Itemize expenses based on expense policy.
-
--   Submit an expense report for approval and reimbursement.
-
--   Approve or reject expense reports assigned to the employee as an approver.
-
-For more information, see [Expense management mobile workspace](https://docs.microsoft.com/en-us/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace).
 
 Expense management: Split credit card expenses
 ----------------------------------------------
@@ -620,35 +620,98 @@ Global coverage - Configurable Electronic Reporting
 
 The following features have been added to the Electronic Reporting (ER) engine.
 
-**Configurable import from incoming documents** – You can use ER to configure
-the import of data from incoming documents in CSV format. Initially designed to
-support import from incoming files in only XML and TXT format, ER formats can be
-used for parsing incoming documents in another format – as plain text storing
-tabular data separated by a special character. This allows customers to easily
-adopt specific requirements that can be introduced for payment, settlement, and
-other processes.
+**Improved ER configurations management** – You can now designate, other than
+application’s hotfixes, software components as prerequisites for an ER
+configuration. Each version of ER configuration can be marked as dependent on a
+specific version (or range of versions) for the following software:
 
-**Check prerequisites for the importing ER solution** - This functionality
-allows you to check the compliance of the entire importing ER solution that may
-consist of several ER configurations (ER format, ER data model, ER model
-mappings) to the current application.
+-   Application
 
-**Filter the ER configurations tree by metadata** – You can filter ER
-configurations in the configurations tree. For example, to access configurations
-in a repository for importing or to find a configuration for editing or sharing,
-by using ER configurations metadata: configuration type, prerequisites
-(including KB articles, hotfix codes, application version), dependent or base
-configurations, functional and feature area tags, and industry tags.
+-   Application model
 
-**Support recursive data sources** – Using this feature, ER output can be
-generated as a recursive tree of XML elements from ER format containing a single
-XML element definition for that. With this functionality, you can create a view
-of grouped hierarchical data such as a company's organizational structure.
+-   Application hotfix package
 
-**Improved ER user dialog** – This new functionality allows you to design user
-dialog in ER models and formats keeping it configurable but accessible for
-already developed logic, instead of developing it as hard-coded solution in
-application code.
+-   ER configuration
+
+Information about prerequisites is used to automatically recognize and import to
+your instance of the application the only compatible ER configuration to ensure
+smooth functioning. You can also check the compatibility of a selected ER
+configuration with your current environment. Doing this, you will be informed
+about all prerequisites required to successfully run that ER configuration and
+missing in the current application. That will allow you to install prerequisites
+in advance.
+
+**Management of ER model mappings independently from ER models** – You can now
+manage your data models in ER model configurations that do not contain model
+mappings. This means that you can maintain your single data model as an abstract
+definition of a certain business domain independent from any application that
+provides this model with actual data at run-time. In addition, you can manage
+application-specific model mappings in ER model mapping configurations. The same
+ER model can be used in different applications with different
+application-specific ER model mapping configurations. With this approach, when
+you have an ER model with multiple subordinated ER formats and need to migrate
+them to another version of the application or even to a new application, you
+only need to update the appropriate ER model mapping, if needed. This allows
+customers to significantly reduce the effort needed to complete such migration.
+
+**Improved Office-based reports** –  You are now able to configure ER reports
+for generation of outputs in Office formats (Excel and Word) that contain images
+and shapes. This allows customers to easily satisfy specific requirements to
+present images and shapes in generated documents (for example, in payment
+checks) company logo, signatures, QR codes, etc.
+
+**Configurable update of application data** – You can now configure a single ER
+format for generation of outgoing electronic documents and update of application
+data based on information of outgoing documents within a single execution. This
+allows customers to configure (without coding) the following scenarios using ER
+framework:
+
+-   When a customer wants to mark application data right after its usage for
+    generation of electronic documents, to prevent repeated usage in subsequent
+    processes.
+
+-   When a customer wants to store the details of document processing that have
+    been generated by using ER logic, to consume these details later in
+    post-reporting processes.
+
+**ER configurations design improvement** – We improved the ER Operation designer
+so that a business person can design abstract data models and formats of
+business documents using these models as data sources, without dependency on
+data model mappings. An application specialist can design model mappings for
+this data model in parallel and independently from a business person. The
+completed model mapping will be needed only at run-time. This empowers customers
+to quickly complete all necessary components of the entire ER solution.
+
+**Improved design of Excel-based reports** – We improved ER Operations designer
+to better support Excel-based reports. With just a few clicks, you can now
+synchronize the structure of earlier designed and already available ER format
+with the content of the updated Excel document that is used as a template for
+generating electronic documents. This allows customers to quickly adopt new
+requirements for recipients waiting for generated by ER reports in Office
+formats.
+
+**Extended ER parameters** – We introduced a new parameter to configure the
+number of parallel threads for importing ER configurations from the Lifecycle
+Services (LCS) asset library. This allows customers to improve communications
+with the LCS service and improve performance.
+
+**JSON format support** – You are now able to configure a single ER report for
+generation of output in JSON format. This allows customers to easily satisfy
+requirements for specific recipients like web-based services.
+
+**New built-in functions** – We introduced several new functions that can be
+used in ER expressions. This enables customers to configure required business
+logic: support necessary data types transformation to align incoming information
+with structure of application data, generate QR codes to present them in
+generated documents as images, etc.
+
+**Electronic reporting features as configurations** - We continued moving
+electronic reporting features of the application to ER framework, to simplify
+further customization of these features by our partners and customers and allow
+for easy upgrade in case of regulatory changes. More than 170 features for 34
+released countries have been ported to ER configurations, including all payment
+formats to handle outgoing and incoming messages and all formats for electronic
+invoices.
 
 Global coverage – Languages
 ---------------------------
@@ -1367,6 +1430,47 @@ configuration data project and the sequences will align correctly.
 
 For more information, see [Configuration data templates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates).
 
+Upgrade 
+--------
+
+You can upgrade from Dynamics AX 2012 to Dynamics 365 for Finance and
+Operations, Enterprise edition. The complete Dynamics AX 2012 database can be
+brought forward, and your AX 2012 codebase can be upgraded to Finance and
+Operations. You can migrate from Dynamics AX 2009 to Finance and Operations via
+a migration toolset to bring forward master data and opening balances.
+
+Upgrade is now more predictable, which reduces the overall cost of the upgrade
+process. Upgrade kicks off with an automated analysis phase, which defines the
+preparation tasks required to reduce the time and cost to upgrade, as well as
+the ongoing future cost of Finance and Operations. Post upgrade, an automated
+validation phase provides statistics and metrics on the success of the upgrade
+process. The validation details can be used to quickly assess the state of the
+upgrade, so you can continue with functional testing and sign off.
+
+In Finance and Operations there are no expensive upgrades needed to stay current
+and take advantage of continuous innovation. You can update to the latest
+versions of the product with a click of a button. The product supports rich
+customizations but the need for costly code upgrade is gone. Extensions-based
+customizations easily migrate with every upgrade. New features introduced in the
+product are opt-in, which means that business processes will not be affected by
+the upgrade process. The Administrator can enable new features using the product
+post-upgrade, as they see fit. To minimize risks, upgrade enforces a workflow of
+an upgrade sandbox, validation, and then release to production.
+
+For more information, see the following topics:
+
+- [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012)
+- [Analysis: Use the upgrade analyzer to plan migration work](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool)
+- [Analysis: Estimate the effort to upgrade code](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-code-upgrade)
+- [Analysis: Deploy a sandbox environment](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox)
+- [Upgrade: Data upgrade in a development environment](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade)
+- [Upgrade: AX 2012 data upgrade tasks](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012)
+- [Upgrade: Data upgrade in a sandbox environment](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox)
+- [Validate: Tasks to complete after upgrade process](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process)
+- [Validate: Cutover testing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing)
+- [Validate: Functional testing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation)
+- [Validate: Prepare for go live](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep)
+
 **Project management \| Accounting**
 ====================================
 
@@ -1400,12 +1504,32 @@ After the project team is defined, open the **Work breakdown** structure on the
 be assigned to the task while the work breakdown structure is still in draft
 status.
 
-Microsoft Project Client Application integration
+Manage or view a project work breakdown structure using Microsoft Project Client
 ------------------------------------------------
 
-You can now open and manage the project work breakdown structure using Microsoft
-Project Client Application. The project manager can publish any changes back to
-Finance and Operations project work breakdown structure.
+Planning and maintaining a project schedule can be complex and project managers
+need to use tools that help them manage this. This feature provides support to
+open and manage the project work breakdown structure using the Microsoft Project
+Client Application. The project manager will be able to publish any changes back
+to Finance and Operations project work breakdown structure.
+
+To enable the integration, a Dynamics 365 add-in is required to be installed in
+the user’s client Microsoft Project application. This is done by opening the
+**Project management workspace**. Click the **Configure project client add-in**
+link in the **Setup** section under **Links**.
+
+A work breakdown structure that is in a draft status can be opened in the
+Microsoft Project Client Application by clicking **Open in Microsoft Project**
+from the project form (**Project management and accounting \> Projects \> All
+projects**) or can be opened from within Microsoft Project Client by clicking
+**Open** in the **Dynamics 365 for Operations** tab. Users can make necessary
+changes to the draft work breakdown structure, including assigning resources. If
+a project team has already been added to the project in Finance and Operations,
+the resource list will be populated with the team members. If a project team has
+not yet been added to the project, you can select the resources and build the
+team within Microsoft Project Client by clicking the **Resources** button on the
+**Dynamics 365 for Operations** tab. Edits to the work breakdown structure is
+published back to Finance and Operations.
 
 Project time entry mobile workspace 
 ------------------------------------
@@ -1565,11 +1689,9 @@ core business logic only, not for basic CRUD operations.)
 CRT handlers and extensible enums
 ---------------------------------
 
-To simplify the customization experience, many of the CRT handlers have been
-enhanced to have more granular message handlers so you can easily override or
-add triggers at specific extension points instead of owning the entire service
-or operation. Additionally, a few enums have been changed to be extensible
-enums.
+**Granular CRT handlers** - We are continuously improving our code base to simplify the customization experience. We have enhanced many of the CRT handlers with more granular message handlers, so you can easily override or add triggers at specific extension points instead of owning the entire service or operation. For example, loyalty service is enhanced with more granular handlers to support customization at earn (sale and return), redeem, calculation, or validation. Previously, to skip some standard checks you needed to override the entire calculate service but now this can be done just by overriding or adding pre/post triggers for the validation check request handlers. Refer to the commerce runtime messages.chm file in the Retail SDK folder for the available requests and responses for customization.
+
+**Extensible enums** – We have enhanced the CRT to support extensible enums. Extensible enums can be now accessed using the new API exposed in CRT. Using this new API you can easily set/get or validate values based on the enum type. In previous versions you needed to manually define the enums in the CRT layer and type match it without direct mapping between Finance and Operations enums and CRT enums. With the new extensible API exposed in CRT, you can directly map between Finance and Operations enums and CRT enums without manually creating the enums in CRT. Multiple partners and ISVs can create extensible enums and use them in their code independently, without any code merge. For example, if you create a new discount type extension enum, the same enum will be available for you in CRT. In your code you can check if discount type is equal to my discount enum type, instead of manually validating with some hardcoded values.
 
 Support for multiple Retail server extensions
 ---------------------------------------------
@@ -1617,16 +1739,13 @@ documentation for the full list.
 Enhanced channel database extension model
 -----------------------------------------
 
-Any extension to channel DB can be done using the new extension schema without
-modifying the existing schema. Also, the CRT data service now exposes the
-primary key, so you can perform custom extension scenarios as post operation.
+Extension to channel database can now be done using the extension schema without modifying the existing schema. All CRT database extension can be done in the extension schema, which supports CRUD operations for all extensions and for calling standard procedures and views from the extension. If you want to add new tables, procedures, functions, or views you can now do that all in the new extension schema. CRT data service is given access to extension schema to perform custom operations. Previously, you needed to modify the Microsoft schema to do this kind of change and it impacted the upgrade and hotfix uptake. You also needed to merge the custom script with the Microsoft script to avoid any overriding if there was any customization, so a partner or IT pro need to be involved in the upgrade process. With the new extension model, you can easily uptake a hotfix or upgrade without any script merge because the extensions are done in separate schema and maintained separately from the core scripts. Both are completely isolated, so the hotfix uptake will be as easy as a few button clicks.
+CRT data service now exposes the primary key for performing your custom extension scenario as post operation. For example, if you want to extend the shared retail parameters data service and fetch custom information, you can use the post triggers and do the extension. The post triggers expose the primary key and properties of the entities to perform any extension. From the extension, you can query the custom tables using the primary key and other information exposed through the entities. You can update the response with custom information as extension properties, which will be available in the client.
 
-CDX Extensibility Enhancements 
+CDX extensibility enhancements 
 -------------------------------
 
-You can extend the CDX seed data initialization class for custom tables and
-fields, using extension points. This helps you initialize the custom table and
-field in different environments without overlayering.
+We extended the Retail initialize feature to support custom table and field initialization for data sync between HQ and channel, and vice versa, without overlayering. The CDX seed data initialization class can be extended for custom tables and fields using the new extension points. These extension points will help you to initialize the custom tables and fields in different environments for data push and pull without overlayering. Previously, to achieve this you needed to modify the CDXDatagenerator class inline. Now all of this can be done using the extension. We have also enhanced the class to include a custom resource file to support custom tables and columns as extensions. Because the custom fields and tables information is added as an extension to the core class, you can now easily uptake any hotfix or upgrade without any code merge. You can also separate your code from different ISV and partner extensions. All extensions can be maintained and serviced separately, even if there are multiple ISV and partner extensions you can still perform servicing for your code or Microsoft code without disturbing or merging with the other extensions or core product code.
 
 Retail peripheral compatibility
 -------------------------------
@@ -1770,42 +1889,17 @@ For more information about discounts, see [Price adjustments and discounts](http
 POS Inventory visibility improvements
 -------------------------------------
 
-POS users can get a clear picture of the inventory status of any product in
-their store. They can also check the inventory status in other stores and
-warehouses of the company, to help the customer quickly buy the product they
-want. The **Inventory lookup** form displays the physical reserved inventory and
-incoming order quantity, along with the total physical inventory to help the
-cashier with the following scenarios:
+With the improved inventory visibility feature, cashiers can use POS to get a clear picture of the inventory status of any product in their store. They can also check the inventory status in other stores and warehouses of the company, thus helping customers to find the products that they want. The Inventory lookup form now displays the reserved inventory and incoming order quantity along with the total inventory to help the cashier with the following scenarios:
 
--   Determine if the current store has the product before the cashier goes to
-    the storage room to look for it.
+- Customer is looking for a product that is not on the shelf and the cashier wants to verify if the current store or any nearby store has it in stock.
+- Store manager realizes that the stock of a product is running low and wants to know if this product has been ordered for replenishment.
 
--   If the stock of a product is running low, then enable the cashier/store
-    manager to check if the product has been ordered.
-
--   If the current store is out of stock, then help the customer find another
-    store or warehouse that has the product in stock now or on order.
-
--   Determine when and how much new stock is expected to be delivered to any
-    store or warehouse in the current store’s group. This future product stock
-    information is the available to promise information as configured in the
-    headquarters.
+An additional capability named "Available to promise" (also known as ATP) is now available in POS. This allows cashiers to see when and how much new stock is expected to be delivered to current and other stores and warehouses. This future product stock information can help the cashier answer questions regarding the stock quantities on any future date.
 
 POS search improvements
 -----------------------
 
-This search improvement feature improves both product and customer search
-scenarios with the goal of enabling cashiers and sales associates to quickly
-find what they are searching. The search bar allows cashiers to choose whether
-they want to search for products or customers prior to performing the search.
-The search bar can be configured to display the product suggestions while
-typing, which empowers cashiers to search for products more quickly. The
-retailers also have the flexibility to configure whether the product search
-results should match 'all search terms' or match 'any search term'.
-Additionally, the product search searches the **Searchable** property of the
-products, thus ensuring higher product discoverability. Customer search has the
-logic to search for customers with or without the phone number masks, and return
-reliable results every time.
+With the search improvement feature we have improved both product and customer search scenarios with the goal of enabling the cashiers and sales associates to quickly find what they are searching. The search bar now enables the cashiers to choose whether they want to search for products or customers prior to performing the search. The search bar can be configured to display the product suggestions while typing, thus empowering the cashiers to search the products quickly. The retailers also have the flexibility to configure whether the product search results should match 'all search terms' or match 'any search term'. Additionally, the product search now searches in the 'Searchable' property of the products as well, thus ensuring higher product discoverability. Customer search is smarter now and can search for customers with or without the phone number masks, which means that reliable results are returned every time.
 
 Upgrade and support for previous versions
 -----------------------------------------
@@ -1955,6 +2049,68 @@ items that are added to clusters. Now you can verify Items in cluster picking
 during the cluster picking process. In previous versions, it was not possible to
 confirm item bar codes and verify items using a bar code scanner. For more
 information, see [Product confirmation for cluster picking](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/cluster-picking-item-confirmation).
+
+Prospect to cash integration capabilities 
+------------------------------------------
+
+Prospect to cash integration capabilities deliver first party integration
+between Dynamics 365 for Sales and Dynamics 365 for Finance and Operations,
+Enterprise edition.
+
+This solution leverages the strengths of the individual Dynamics 365 components
+and connects them via Common Data Service (CDS). While the data is flowing
+seamlessly between Finance and Operations and Dynamics 365 for Sales, customers
+can carry out sales and marketing activities in Dynamics 365 for Sales and
+handle the order fulfillment with inventory management in Finance and
+Operations. This solution provides powerful integration with a flexible solution
+and simplification of the integration process, without dependency on third-party
+solutions. These advancements offer the best of both worlds, each with
+significant productivity enhancements that help businesses and workers achieve
+more.
+
+-   Maintain accounts in Dynamics 365 for Sales and sync them to Finance and
+    Operations as customers.
+
+-   Maintain contacts in Dynamics 365 for Sales and sync them to Finance and
+    Operations.
+
+-   Maintain products in Finance and Operations and sync them to Dynamics 365
+    for Sales.
+
+-   Create quotes in Dynamics 365 for Sales and sync them to Finance and
+    Operations.
+
+-   Generate sales orders in Dynamics 365 for Sales for existing products and
+    sync them to Finance and Operations.
+
+-   Generate invoices in Finance and Operations and sync them to Dynamics 365
+    for Sales.
+
+**Easy access to data through the power of Common Data Service**  
+The solution leverages the power of Azure Public Cloud and the combined data
+will be available via Common Data Service. This enables business users to
+access, visualize, share, and modify the unified Sales and Operations data
+through Power Apps, Power BI, or create workflow automations using Flow with
+pre-defined templates for various business processes. This also means that Power
+BI dashboard lets users gain better insight into the business process
+information across the two systems.
+
+**Fast implementation**  
+Integration between different ERP systems have traditionally been known for
+their rigidity, complexity, and slow deployments and implementations. This
+release is changing the game in this area by providing prepackaged integration
+templates. The templates provide the out-of-the-box experience for
+prospect-to-cash scenarios including synchronization needed for sales processes
+with accounts, customers, contacts, products, of sales orders. In addition to
+this an intelligent and easy-to-use setup experience, it is optimized to quickly
+adjust integration settings for your data structure and business needs.
+
+**Enhanced systems and flexible setup**  
+The integration comes with a rich solution to optimize the experience and allow
+for complex process flows between Dynamics 365 for Sales and Dynamics 365 for
+Finance and Operations, Enterprise edition. Finance and Operations, optimized to
+support integration with enhanced entities and Dynamics 365 for Sales is
+optimized with a solution.
 
 Punch-out to external catalog from purchase requisition 
 --------------------------------------------------------
