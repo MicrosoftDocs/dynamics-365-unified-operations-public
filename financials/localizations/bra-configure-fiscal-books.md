@@ -27,23 +27,35 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 ---
 [!include[banner](../includes/banner.md)]
 
-Fiscal books can help you consolidate fiscal and statutory books into electronic files to fulfill requirements under SPED, Public Digital Bookkeeping System (Sistema Publico de Escrituração Digital). SPED provides detailed information about the fiscal documents that are related to services and goods, calculations of profits, logistical operations, and financial transactions. 
+Fiscal books can help you making the fiscal establishment's tax assessment, tax payment and tax reporting through the SPED, Public Digital Bookkeeping System (Sistema Publico de Escrituração Digital). The SPED files provides detailed information about the tax assessments and tax payments upon transactions with goods, fixed assets, services as well transaction in the general ledger. 
 
 Set up requirements for SPED fiscal text files:
-1.	On the **Tax statements parameters** page, select **SPED Fiscal**, click **Open**.
-2.	For each fiscal establishment, select a profile presentation. 
 > [!NOTE]
-> For the Microsoft Dynamics for Finance and Operations, Enterprise edition, only the A profile presentation is supported.
-3.	Select 1.06 or 1.07 or 1.08 or 1.09 as the version of the SPED fiscal text file format to generate. 
+Before you configure your SPED fiscal text file, you must import the data model **SPED model** and the file configuration **EFD ICMS IPI - nnn (BR)** from the Electronic reporting module. In the Electronic reporting module, you can download both model and file configuration from the repository published by Microsoft, or get an updated version from LCS.
+1.	On the **Tax statements parameters** page, click **New from eletronic reporting**.
+2.	Give a name for the tax statement.
+3. Select **SPED model** as Model mapping name and **EFD ICMS IPI - nnn (BR)** as Format mapping.
+
+Set up requirements for GIA text files:
 > [!NOTE]
-> To generate the SPED fiscal text files for the following years:
- - For 2013, select 1.06
- - For 2014, select 1.07
- - For 2015, select 1.08
- - For 2016, select 1.09
-4.	Select from the following activities to include in the SPED fiscal text file: 
- - **Industrial or equivalent** – Select this option to include information for activities related to industries, for example manufacturing of goods.
-  - **Others** – Select this option for all other types of activities.
+Before you configure your GIA text file, you must import the data model **SPED model** and the file configuration **GIA** from the Electronic reporting module. In the Electronic reporting module, you can download both model and file configuration from the repository published by Microsoft, or get an updated version from LCS.
+1.	On the **Tax statements parameters** page, click **New from eletronic reporting**.
+2.	Give a name for the tax statement.
+3. Select **SPED model** as Model mapping name and **GIA** as Format mapping.
+
+Set up requirements for GIA-ST text files:
+> [!NOTE]
+Before you configure your GIA-ST text file, you must import the data model **SPED model** and the file configuration **GIA-ST** from the Electronic reporting module. In the Electronic reporting module, you can download both model and file configuration from the repository published by Microsoft, or get an updated version from LCS.
+1.	On the **Tax statements parameters** page, click **New from eletronic reporting**.
+2.	Give a name for the tax statement.
+3. Select **SPED model** as Model mapping name and **GIA-ST** as Format mapping.
+
+Set up requirements for SPED contributions text files:
+> [!NOTE]
+Before you configure your SPED contributions text file, you must import the data model **SPED model** and the file configuration **EFD Contributions - nnn (BR)** from the Electronic reporting module. In the Electronic reporting module, you can download both model and file configuration from the repository published by Microsoft, or get an updated version from LCS.
+1.	On the **Tax statements parameters** page, click **New from eletronic reporting**.
+2.	Give a name for the tax statement.
+3. Select **SPED model** as Model mapping name and **EFD Contributions - nnn (BR)** as Format mapping.
 
 Set up adjustment codes for ICMS taxes on fiscal documents
 1.	On the **Adjustment and information for fiscal documents** page, enter an adjustment code in the **Identification** field and a description of the adjustment code.
@@ -80,7 +92,6 @@ Set up adjustment codes for IPI taxes
 
 You can set up observation codes to adjust ICMS or ICMS-ST amounts on the **Oberservation codes** page.
 
-
 Set up fiscal books parameters per state
 1.	On the **Fiscal books parameters per state** page, select a state.
 2.	If the ICMS tax amounts can be adjusted on fiscal documents, select the **By fiscal document** option, and then select the default adjustment code and observation code.
@@ -107,29 +118,6 @@ Set up a fiscal organization
 
 You can set up a fixed asset group on the Fixed asset groups page.
 
-Set up requirements for SPED EFD - Contributions
-1. On the **Tax statements parameters** page, select **EFD - Contributions**, click **Open**.
-2. Enter the required SPED EFD - Contributions information.
-3.	In the **Type of activity** field, select the activity type. 
-4.	In the **Version** field, select the version of the SPED EFD - Contributions layout.
-5.	Select the type of legal entity.
-6.	In the **Assessment regimen** field, select the assessment schema that is used for SPED EFD - Contributions from the following assessments: 
- - **Non cumulative – Calculate** - based on billing or debits and purchases and deductions or credits
- - **Cumulative – Calculate** - based on billings that don’t have any deductions or credits
- - **Both** – Calculate assessments based on both the Non cumulative and Cumulative regimens
-7.	In the **Booking and assessment criteria** field, select the criteria to use to book the tax credit. 
-> [!NOTE]
-> For Dynamics 365 for Operations, only the Detailed option is supported.
-8.	Select the type of assessment contribution. 
-> [!NOTE]
-> For Dynamics 365 for Operations, only the Detailed option is supported.
-9.	In the **Credit allocation method** field, select the method of credit allocation: Direct or Proportional distribution.
-This field is available if **Non cumulative** or **Both** are selected in the **Assessment regimen** field.
-10.	In the **NFe and ECF options** field, select the NFe transaction reporting option from the following options: 
-- **Consolidated** – Consolidate all NFe transactions into one record on the C18X fiscal report
- - **Detailed** – List all individual transactions on the fiscal report
-11.	On the **Fiscal establishment** FastTab, enter the required SPED ECD information.
-
 Set up requirements for SPED ECD tax statement
 1.	On the **Tax statements parameters** page, click **SPED ECD**. On the **Setup parameters** FastTab, click **Open**.
 2.	Select the company to generate the SPED ECD text file for.
@@ -138,11 +126,11 @@ Set up requirements for SPED ECD tax statement
 5.	The Booking type is assigned automatically depending on the type of fiscal organization: G – This booking is used to detail all of the ledger journal transactions; S – This booking is used for the SCP company.
 6.	Select the type of company situation from the following options, or leave the field blank to represent the regular situation.
 7.	In the **Opening fiscal period** field, select from the following options: Regular; Opening; Split, Merge or Acquisition; Mandatory.
-8.	Select the version of the SPED ECD text file format to generate: 
- - For Dynamics 365 for Operations, Version 2.00 is supported until fiscal year 2013
-  - For Dynamics 365 for Operations, Version 3.00 is supported from fiscal year 2014
-  - For Dynamics 365 for Operations, Version 4.00 is supported from fiscal year 2015
-  - For Dynamics 365 for Operations, Version 5.00 is supported from fiscal year 2016.
+8.	Select the file layout version of the SPED ECD text file format to generate. The following file layout versions of ECD are supported by Dynamics 365 for Operations:
+ - Version 2.00 for SPED ECD until fiscal year 2013
+ - Version 3.00 for SPED ECD until fiscal year 2014
+ - Version 4.00 for SPED ECD until fiscal year 2015
+ - Version 5.00 for SPED ECD until fiscal year 2016.
 9.	In the **Auditor registration number** field, enter the number of the company’s auditor.
 10.	Enter the auditor’s name.
 11.	Select the **Large company** option if the company is a large company. 
