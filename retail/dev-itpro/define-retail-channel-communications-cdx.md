@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Application User
+audience: IT Pro
 # ms.devlang: 
 # ms.reviewer: margoc
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
