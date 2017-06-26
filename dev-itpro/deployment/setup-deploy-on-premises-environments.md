@@ -498,7 +498,8 @@ Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.
 
 ### Set up SQL Server
 
-1. Install SQL Server 2016 with high availability, either as clustered SQL that is backed by SAN or in an Always-On configuration. Verify that the **Database Engine, Reporting Services, Full Text Search, and Management Tools** are already installed.
+1. Install SQL Server 2016 with high availability, either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration.  Verify that the **Database Engine, Reporting Services, Full Text Search**, and **Management Tools** are already installed.
+**Note:** Because of a known issue, we recommend that you do not select the Always-On configuration until you have completed the full deployment. 
 2. Run the SQL Service as a domain user.
 3. Get an SSL certificate from a CA to configure Finance and Operations. For testing purposes, you can create and use a self-signed certificate.
 
