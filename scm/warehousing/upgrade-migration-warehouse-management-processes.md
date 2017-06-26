@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form:  InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 # ROBOTS: 
-# audience: Application User
+audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
 # ms.search.scope: AX 7.0.0, Operations
