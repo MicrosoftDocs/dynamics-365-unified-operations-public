@@ -1178,7 +1178,7 @@ You can empower your users to create Power BI reports that leverage this
 capability. When you define a report with modeled financial dimensions, they can
 be refreshed to include expanded fields.
 
-For more information, see [Add financial dimensions to aggregate measurements](dynamics365/unified-operations/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements).
+For more information, see [Add financial dimensions to aggregate measurements](/dynamics365/unified-operations/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements).
 
 Purchase spend analysis Power BI reports 
 -----------------------------------------
