@@ -312,6 +312,10 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 <td>Bankgirot AP return format for Sweden</td>
 <td>The Bankgirot return format is used to import bank return messages. This feature will be available in a future update.</td>
 </tr>
+<tr class="odd">
+<td>Secure global address book</td>
+<td>Ability to secure global address book by legal entity and address book. This feature will be available in a future update.</td>
+</tr>
 </tbody>
 </table>
 
