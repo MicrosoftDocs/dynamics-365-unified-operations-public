@@ -42,7 +42,7 @@ This topic provides a walk-through for application developers who want to help s
 
 ## Prerequisites
 + Access to a developer environment that runs Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with Platform update 8 or later
-+ An analytical report (.pbix file) that was created by using Microsoft Power BI Desktop, and that has a data model that is sourced from the Dynamics Entity store database
++ An analytical report (.pbix file) that was created by using Microsoft Power BI Desktop, and that has a data model that is sourced from the Entity store database
 
 ## Overview
 Whether you're extending an existing application workspace or adding your own workspace, you can use embedded analytical views to deliver insightful and interactive views of your business data. Before you add new analytical workspaces and reports, it’s important that you establish a strategy to help secure the content. 
@@ -69,7 +69,7 @@ Row-level security that is defined in Finance and Operations isn't inherited by 
 Analytical workspaces are embedded Power BI reports that are shown in a form control. Unless you complete the following procedure, anyone who has access to the workspace can see the **Analytics** tab and access the Power BI reports.
 
 1. Add a menu item for the analytical workspace.
-2. Form initialization uses the **hasMenuItemAccess** application programming interface (API) to verify that the user has access to the menu item.
+2. Verify that the form initialization uses the **hasMenuItemAccess** application programming interface (API) to verify that the user has access to the menu item.
 
     ```
     // Note: secure entry point into the Workspace's Analytics report
