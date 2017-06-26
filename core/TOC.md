@@ -10,6 +10,7 @@
 #### [Deprecated features](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [AX 2012 features not yet implemented](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Features not implemented in on-premises deployments](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Lifecycle policy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Explore the user interface
 #### [Client UI FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/client-faq?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1354,7 +1355,7 @@
 
 #### Upgrade to a recent update
 ##### [Prepare to move to the latest update](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Versions and update policy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Lifecycle policy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Upgrade to the latest platform update](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Upgrade the Dynamics platform to the August 2016 release](/dynamics365/unified-operations/dev-itpro/migration-upgrade/update-platform-each-release?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Upgrade a sandbox environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-sandbox-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
