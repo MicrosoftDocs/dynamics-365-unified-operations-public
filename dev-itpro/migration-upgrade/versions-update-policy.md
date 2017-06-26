@@ -47,7 +47,7 @@ The Finance and Operations online service and the Finance and Operations (on-pre
 - Application versions are supported for three years from the initial date of a major release, as specified in Table 1 later in this topic.
 - Platform versions are supported for one year as specified in Table 3 later in this topic. Platform versions maintain backward compatibility. See the support matrix table below for more detail. Critical fixes and non-critical updates are handled in the following way:
 
-    - **Critical fixes** – Microsoft may provide the critical fix as a hotfix to the current customer Finance and Operations platform version or may provide the hotfix in the latest Finance and Operations platform version at its discretion.
+    - **Critical fixes** – Microsoft may provide a customer with a hotfix for their current platform version of Finance and Operations, or a fix may be provided in the latest platform version of Finance and Operations, at its discretion.
     - **Non-critical updates** – Customers must update to the most current Finance and Operations platform version to deploy non-critical updates.
 
 ## Online service update policies
@@ -74,14 +74,14 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 | Release                                                                | Version          | Build number | Availability  | Expiration date | 
 |------------------------------------------------------------------------|------------------|--------------|---------------|-----------------|
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition  | July 2017 update | 7.2.11792.56024| July 2017     | November 2019   | 
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition  | July 2017 update | 7.2.11792.56024| July 2017     | July 2020   | 
 | Microsoft Dynamics 365 for Operations                                  | 1611             | 7.1.1541.3036| November 2016 | November 2019   | 
 
 ### Table 2: Retail application release
 
 | Release                           | Version          | Build number | Availability | Expiration date | 
 |-----------------------------------|------------------|--------------|--------------|-----------------|
-| Microsoft Dynamics 365 for Retail | July 2017 update | 7.2.XXXX     | July 2017    | November 2019   |
+| Microsoft Dynamics 365 for Retail | July 2017 update | 7.2.11792.56024 | June 2017    | July 2020   |
 
 ### Table 3: Platform releases
 
@@ -104,7 +104,7 @@ Microsoft is committed to supporting the deployments of the Finance and Operatio
 
 | Release                                                                             | Version          | Build number | Availability | Expiration date | Product life  |
 |-------------------------------------------------------------------------------------|------------------|--------------|--------------|-----------------|---------------|
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 update | 7.2.x        | June 2017    |  November 2016   | December 2027 |
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 update | 7.2        | June 2017    |  November 2016   | December 2027 |
 
 ## Support matrix
 The following table provides information about the recent releases of the application and platform for Finance and Operations, and shows which versions are compatible.
