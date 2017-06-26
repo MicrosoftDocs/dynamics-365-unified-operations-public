@@ -126,6 +126,9 @@
 ##### [Sales tax payments and rounding rules](/dynamics365/unified-operations/financials/general-ledger/round-sales-tax-payments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Sales tax calculation methods in the Origin field](/dynamics365/unified-operations/financials/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Whole amount and interval calculation options for sales tax codes](/dynamics365/unified-operations/financials/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### Expense management
+##### [Plan expense management](/dynamics365/unified-operations/financials/expense-management/plan-expense-management?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Expense management mobile workspace](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [Accounts payable](/dynamics365/unified-operations/financials/accounts-payable/accounts-payable?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Vendor invoices overview](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -168,6 +171,7 @@
 #### [Accounting distributions and subledger journal entries for free text invoices](/dynamics365/unified-operations/financials/accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Customer posting profiles](/dynamics365/unified-operations/financials/accounts-receivable/customer-posting-profiles?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [SEPA direct debit overview](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [SEPA direct debit mandate](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-mandate?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Credit card setup, authorization, and capture](/dynamics365/unified-operations/financials/accounts-receivable/credit-card-authorizations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Correct a free text invoice](/dynamics365/unified-operations/financials/accounts-receivable/correct-free-text-invoice?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up interest rates for an interest code](/dynamics365/unified-operations/financials/accounts-receivable/set-up-interest-rates-interest-code?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -179,7 +183,7 @@
 #### Payments and settlements
 ##### [Use a customer payment to settle multiple invoices that span multiple discount periods](/dynamics365/unified-operations/financials/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Centralized payments for Accounts receivable](/dynamics365/unified-operations/financials/accounts-receivable/centralized-payments-accounts-receivable?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Settle partial customer payment or final payment before_discount](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
+##### [Settle partial customer payment or final payment before_discount](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
 ##### [Settle a partial customer payment before the discount date with a final payment after the discount date](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Settle a partial customer payment that has discounts on credit notes](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-discounts-credit-notes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Settle a partial customer payment that has multiple discount periods](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-multiple-discount-periods?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -188,8 +192,9 @@
 
 ### [Cash and bank management](/dynamics365/unified-operations/financials/cash-bank-management/cash-bank-management?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Cash flow forecasting](/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Bank management workspace](/dynamics365/unified-operations/financials/cash-bank-management/bank-management-workspace?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Cash discounts](/dynamics365/unified-operations/financials/cash-bank-management/cash-discount-handling-overpayments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Bank management workspace](/dynamics365/unified-operations/financials/cash-bank-management/Bank-management-workspace?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Cash discounts](/dynamics365/unified-operations/financials/cash-bank-management/cash-discounts?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Cash discounts for overpayments](/dynamics365/unified-operations/financials/cash-bank-management/cash-discount-handling-overpayments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Settlement overview](/dynamics365/unified-operations/financials/cash-bank-management/settlement-overview-centralized-payments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Settlement overview for centralized payments](/dynamics365/unified-operations/financials/cash-bank-management/settlement-overview-centralized-payments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Letters of credit](/dynamics365/unified-operations/financials/cash-bank-management/letters-of-credit?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1519,7 +1524,6 @@
 #### [Microsoft tested POS hardware peripherals](/dynamics365/unified-operations/retail/microsoft-tested-pos-hardware-peripherals?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Retail peripheral simulator](/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Define and maintain channel clients, registers, and hardware stations](/dynamics365/unified-operations/retail/define-maintain-channel-clients-registers-hw-stations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Cash registers for Sweden](/Dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers.md)
 ### Screen layout
 #### [Configure screen layouts for POS](/dynamics365/unified-operations/retail/pos-screen-layouts?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Install the Retail POS Layout designer](/dynamics365/unified-operations/retail/install-pos-layout-designer?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
