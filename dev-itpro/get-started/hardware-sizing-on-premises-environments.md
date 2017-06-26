@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 8
 ---
 
 # Hardware sizing for on-premises environments
-Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the [System requirements](lbd-system-requirements.md) and [Setup and deployment instructions](../deployment/setup-deploy-on-premises-environments.md) to gain a solid understanding off the underlying infrastructure. 
+Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the [System requirements](../get-started/system-requirements.md) and [Setup and deployment instructions](../deployment/setup-deploy-on-premises-environments.md) to gain a solid understanding off the underlying infrastructure. 
 
   **Note:** Pay close attention to the system setup best practices for optimum performance. 
 
