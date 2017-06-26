@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 8
 ---
 
 # Hardware sizing for on-premises environments
-Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the [System requirements](./lbd-system-requirements.md) and [Setup and deployment instructions](./deployment/setup-deploy-on-premises-environments.md) to gain a solid understanding off the underlying infrastructure. 
+Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the [System requirements](lbd-system-requirements.md) and [Setup and deployment instructions](../deployment/setup-deploy-on-premises-environments.md) to gain a solid understanding off the underlying infrastructure. 
 
   **Note:** Pay close attention to the system setup best practices for optimum performance. 
 
@@ -133,7 +133,7 @@ you need more than two nodes. Please scale as needed.
 For the general availability release, only one SSRS node can be deployed. Monitor your SSRS node while testing and increase the number of cores available for SSRS on a need basis. Make sure that you have a preconfigured secondary node available on a virtual host that is different than the SSRS VM. This is important if there is an issue with the virtual machine that hosts SSRS or the virtual host. If this the case, they would need to be replaced. 
 
 ## Environment Orchestrator
-The Orchestrator service is the service that manages your deployment and the related communication with LCS. This service is deployed as the primary Service Fabric service and requires at least three VMs. This service is co-located with the Service Fabric orchestration services. This and should be sized to the peak load of the cluster. For more information, see [Service Fabric cluster capacity planning considerations](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-capacity).  
+The Orchestrator service is the service that manages your deployment and the related communication with LCS. This service is deployed as the primary Service Fabric service and requires at least three VMs. This service is co-located with the Service Fabric orchestration services. This and should be sized to the peak load of the cluster. For more information, see [Service Fabric cluster capacity planning considerations](/azure/service-fabric/service-fabric-cluster-capacity).  
 
 
 ## Virtualization and oversubscription
