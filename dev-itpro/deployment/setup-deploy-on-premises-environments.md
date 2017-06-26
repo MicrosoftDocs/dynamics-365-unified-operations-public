@@ -60,7 +60,7 @@ These components depend on the following system software:
 ## Lifecycle Services
 
 Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through
-the [Enterprise Agreements](https://www.microsoft.com/en-us/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](./lifecycle services/lbd-create-lcs-on-prem-project.md).
+the [Enterprise Agreements](https://www.microsoft.com/en-us/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](../lifecycle services/lbd-create-lcs-on-prem-project.md).
 
 ## Authentication
 
@@ -68,7 +68,7 @@ The on-premises application works with AD FS. To interact with LCS, you must al
 
 ## Standalone Service Fabric
 
-Finance and Operations uses Standalone Service Fabric. For more information, see the [Service Fabric documentation](https://docs.microsoft.com/en-us/azure/service-fabric/).
+Finance and Operations uses Standalone Service Fabric. For more information, see the [Service Fabric documentation](/azure/service-fabric/).
 
 ## Infrastructure
 
@@ -80,11 +80,11 @@ Finance and Operations is designed to work on a hyper-converged architecture. Th
 - Server Message Block (SMB) version 3 file share for storage
 - Optional: Microsoft Office Server 2017
 
-For more information, see [System requirements](./get-started/system-requirements.md) and Sizing guidelines[Hyperlink].
+For more information, see [System requirements](../get-started/system-requirements.md) and Sizing guidelines[Hyperlink].
 
 ### Hardware layout
 
-Plan your infrastructure and Service Fabric cluster, based on the recommended sizing in Hardware sizing for on-premises environments (./get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Plan your infrastructure and Service Fabric cluster, based on the recommended sizing in Hardware sizing for on-premises environments (../get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 The following table shows an example of the hardware layout. This example is used throughout this topic to illustrate the setup.
 
