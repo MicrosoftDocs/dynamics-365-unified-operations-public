@@ -1570,9 +1570,6 @@
 
 ## Inventory
 ### [Manage store inventory](/dynamics365/unified-operations/retail/work-with-store-inventory?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-## Commerce essentials
-### [Commerce essentials overview](/dynamics365/unified-operations/retail/commerce-essentials?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Organizations and organizational hierarchies in Commerce essentials](/dynamics365/unified-operations/retail/organizational-hierarchies-commerce-essentials?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## [Retail development & administration](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
