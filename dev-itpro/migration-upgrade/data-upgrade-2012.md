@@ -34,6 +34,8 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[banner](../includes/banner.md)]
 
+[!include[upgrade banner](../includes/upgrade-banner.md)]
+
 This is an exciting moment in the upgrade project. The output of this task  provides the first upgraded dataset from Microsoft Dynamics AX 2012 in Microsoft Dynamics 365 for Finance and Operations.
 
 Before you run this process in a shared sandbox environment, we recommend that you run it in a development environment. There are two main reasons for this approach:

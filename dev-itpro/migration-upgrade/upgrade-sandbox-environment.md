@@ -34,6 +34,7 @@ ms.dyn365.ops.version: Platform update 3
 
 [!include[banner](../includes/banner.md)]
 
+[!include[upgrade banner](../includes/upgrade-banner.md)]
 
 This topic describes the steps for deploying an upgrade to a non-production sandbox or stand-alone sandbox environment. 
 
