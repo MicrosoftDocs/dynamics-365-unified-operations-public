@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[banner](../includes/banner.md)]
 
+[!include[upgrade banner](../includes/upgrade-banner.md)]
+
 As the go-live date approaches, it's important that you implement this series of steps to help guarantee that the source Microsoft Dynamics AX 2012 system and the upgrade process both remain stable and consistent for go-live.
 
 As part of this process, you must lock down any further code changes or application setup changes before you run the final cutover test.
