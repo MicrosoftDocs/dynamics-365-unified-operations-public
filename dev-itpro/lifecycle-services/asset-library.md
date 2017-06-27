@@ -63,8 +63,8 @@ Every asset that the Asset library supports has multiple scopes. Here are some o
 ### Asset status
 Every asset has one of two statuses: **Draft** or **Published**.
 
-- **Draft** – The asset can still be edit.
-- **Published** – The asset is published at an **Organization** or **Global** level, and edits are completed.
+- **Draft** – The asset can still be edited.
+- **Published** – The asset is published at an **Organization** or **Global** scope, and edits are completed.
 
 ## Actions in the Asset library
 You can perform various actions in the Asset library as you require.
