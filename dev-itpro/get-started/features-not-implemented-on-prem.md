@@ -50,6 +50,6 @@ The following features have not been implemented in on-premises deployments of D
 |Retail| No Retail features are available for use in on-premises deployments at this time.|
 |Purchase requisitions: Punch-out from external catalogs |It is not possible to check out a shopping cart from an external catalog to a purchase requisition. |
 |Trace Parser and PerfTimer |These tools are not working or have limited functionality for this release. These features will be implemented in a future release. |
-|SSRS Scaleout  |Currently SQL Server Reporting Services (SSRS) does not support scaling out. This feature will be added shortly after the initial release. |
+|SSRS scale out  |Currently SQL Server Reporting Services (SSRS) does not support scaling out. This feature will be added in an upcoming release. |
 |Telemetry  |Currently no telemetry is transferred into the cloud. In a future update we will start transferring telemetry data into the cloud. |
 |Mobile apps     |At this time, mobile apps are not supported. Mobile app support will be added in an upcoming release. |
