@@ -14,6 +14,8 @@
 # [Business process modeler flowcharts](flowcharts-business-process-modeler.md)
 # [Upload custom business processes](upload-business-processes-bpm-task-recorder.md)
 
+# [Asset library](asset-library.md)
+
 # [Monitoring and diagnostics ](monitoring-diagnostics.md)
 
 # Dynamics AX 2012
