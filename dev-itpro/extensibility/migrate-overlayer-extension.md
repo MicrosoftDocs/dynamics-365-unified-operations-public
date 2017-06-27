@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: 
+title: Migrate from overlayering to extensions
 description: 
-author: 
+author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
