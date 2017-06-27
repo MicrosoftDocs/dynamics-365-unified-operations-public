@@ -35,7 +35,12 @@
       "breadcrumb_path": "/dynamics365/unified-operations/fin-and-ops/breadcrumb/toc.json",
       "brand": "dyn-ops",
       "titleSuffix": "Retail", 
-      "ms.service": "dynamics-365-retail"
+      "ms.service": "dynamics-365-retail",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.d365OpsRetail"
+        }
+      }
     },
     "fileMetadata": {},
     "template": [],
