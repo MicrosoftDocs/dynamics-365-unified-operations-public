@@ -35,7 +35,12 @@
       "breadcrumb_path": "/dynamics365/unified-operations/fin-and-ops/breadcrumb/toc.json",
       "brand": "dyn-ops",
       "titleSuffix": "Talent", 
-      "ms.service": "dynamics-365-talent"
+      "ms.service": "dynamics-365-talent",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.d365OpsHR"
+        }
+      }
     },
     "fileMetadata": {},
     "template": [],

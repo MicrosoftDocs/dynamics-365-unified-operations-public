@@ -39,7 +39,12 @@
       "breadcrumb_path": "/dynamics365/unified-operations/fin-and-ops/breadcrumb/toc.json",
       "brand": "dyn-ops",
       "titleSuffix": "Finance and Operations, Enterprise", 
-      "ms.service": "dynamics-ax-applications"
+      "ms.service": "dynamics-ax-applications",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.d365OpsSCM"
+        }
+      }
     },
     "fileMetadata": {},
     "template": [],
