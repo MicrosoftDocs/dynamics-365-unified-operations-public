@@ -5,7 +5,7 @@ title: Set up vendor accounts
 description: This topic describes the types of information that you must specify when you create a new vendor account.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -66,13 +66,13 @@ You can store contacts for a vendor. These contacts can then be used on document
 
 To add contacts for a vendor, on the **All vendors** page, on the **Vendor** tab, in the **Set up** group, click **Contacts** &gt; **Add contacts**.  
 
-You can create vendor contacts from scratch. Alternatively, you can copy details from another person who is already registered in Microsoft Dynamics 365 for Operations, and edit the information as you require.  
+You can create vendor contacts from scratch. Alternatively, you can copy details from another person who is already registered in Microsoft Dynamics 365 for Finance and Operations, and edit the information as you require.  
 
 **Note:** Adding a contact for a vendor isn't the same as adding contact information for that vendor. Although you might add general contact information for a vendor, you might also have several specific people who are contacts at that company, and who all have their own contact information.  
 
 You can't delete a contact person record if the contact is referenced on a document. Instead, you can inactivate the contact.  
 
-You can add vendor contacts to your personal contacts in Microsoft Office 365. However, you must first set up synchronization between Dynamics 365 for Operations and Office 365 in both Microsoft Exchange Server synchronization and the Microsoft Outlook setup wizard.
+You can add vendor contacts to your personal contacts in Microsoft Office 365. However, you must first set up synchronization between Finance and Operations and Office 365 in both Microsoft Exchange Server synchronization and the Microsoft Outlook setup wizard.
 
 ## Vendors in different legal entities
 If a vendor is registered for only one legal entity in your organization, and other legal entities must register the same vendor, you can use the **Add vendor to another legal entity** page to configure the vendor to do business with another legal entity. You must select a vendor group, currency, and hold status for the vendor in the selected legal entity.  
@@ -98,6 +98,18 @@ You can put a vendor on hold for various transaction types. The following option
 -   **Never** – The vendor is never put on hold for inactivity.
 
 When you put a vendor on hold, you can also specify a reason and a date when the on-hold status will end. If you don't enter an end date, the vendor's on-hold status lasts indefinitely.
+
+You can bulk update the on-hold status to **All** for vendors based on the selected criteria on the **Vendor inactivation** page, and assign a reason for why the vendor is on-hold.
+
+The following criteria are used to include vendors that have been inactive in a period, include or exclude vendors that are employees, and exclude vendors that are under a grace time before the next hold.
+
+- Based on the number of days that you enter in the **In activity period** field on the **Vendor inactivation** page, the application calculates the latest date where the vendor can have any activity to be considered inactive. That is, the current date minus the number of days that you enter. If one or more invoices exist for the vendor where the date is later than the calculated latest date, the vendor will be excluded from the inactivation. This is also validated if the vendor has payments after that date, open purchase requisitions, open purchase orders, requests for quotations, or replies.
+- The number of days in the **Grace time before next hold** field is used to calculate the latest grace date. That is, the current date minus the days that you enter. This only applies to vendors who have previously been inactivated. In the case of a previous inactivation, the application verifies the history of other occurrences of inactivation for the vendor and checks if the latest inactivation occurred before the latest grace date. If this is the case, the vendor will be included in the inactivation process.
+- The parameter **Include employees** refers to vendors that are linked to an employee. You can set if you want to include those employees.
+
+This process will always exclude vendors where the value in the **Vendor hold** field is **Never**.
+
+Vendors that pass the validations are put on-hold, which sets the **Vendor hold** field value to **All** and the **Reason** to what has been selected. A record in the on-hold history is created for the vendor.
 
 ## Vendor invoice account
 If more than one vendor has the same billing address, or if a vendor is invoiced through a third party, you can specify an invoice account on the vendor record. The invoice account is the account that the invoice amount is credited to when you create a vendor invoice from a purchase order. If you don't enter an invoice account on the vendor record, the vendor account is used as the invoice account.

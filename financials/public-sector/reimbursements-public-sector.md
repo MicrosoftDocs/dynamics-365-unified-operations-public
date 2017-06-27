@@ -5,7 +5,7 @@ title: Reimbursements in the public sector
 description: This topic answers common questions related to reimbursements in the public sector. 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

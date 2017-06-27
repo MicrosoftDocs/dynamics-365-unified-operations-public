@@ -5,7 +5,7 @@ title: Advanced filtering and query syntax
 description: This article describes the filtering and query options that are available when you use the "matches" operator in the Advanced filter/sort dialog.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: SysQueryForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 71
+ms.reviewer: sericks
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 3811

@@ -44,7 +44,7 @@ Microsoft FastTrack for Dynamics 365 is our customer success service designed to
 | **Minimum seats**                                                                  | **Eligible SKUs, Apps, or Plans** |
 |--------------------------------------------------------------------------------|-------------------------------|
 | 250 combined eligible App or Plan user subscription licenses                   | Sales <br> Field service <br>Customer service <br> Project service automation<br>Plan 1<br>Plan 2 with a commitment to implement Sales, Field Service, Customer Service, or Project Service Automation apps                         |
-| 20 combined eligible App or Plan user subscription licenses, or the equivalent | Operations<br>Plan 2, with a commitment to implement the Operations app<br><br>**Note:** 2.5 device subscription licenses are considered the equivalent of one Dynamics 365 for Operations user subscription license   
+| 20 combined eligible App or Plan user subscription licenses, or the equivalent | Operations<br>Plan 2, with a commitment to implement the Operations app<br><br>**Note:** 2.5 device subscription licenses are considered the equivalent of one Finance and Operations user subscription license   
 
 **Product offering: Dynamics CRM Online**
 
@@ -52,7 +52,7 @@ Microsoft FastTrack for Dynamics 365 is our customer success service designed to
 |----------------------------|-------------------------------|
 | 250 combined eligible SKUs | Enterprise<br>Professional<br>Basic                    |
 
-**Tiered services for Dynamics 365 for Operations**
+**Tiered services for Finance and Operations**
 
 | **Number of seats**                                                                         | **Tech talks** | **Workshops**                      | **Touchpoints**   | **FastTrack engineering resources** |
 |-----------------------------------------------------------------------------------------|------------|--------------------------------|---------------|---------------------------------|
@@ -77,12 +77,12 @@ Workshops are interactive outcome-based activities, and may involve automation a
 The Kickoff workshop is designed to initiate FastTrack engagements and provide introduction to services available through FastTrack and onboarding guidance. Topics are likely to include:
 
 -   Team introductions
--   FastTrack for Dynamics 365 for Operations overview
+-   FastTrack for Finance and Operations overview
 -   Project goals and objectives
 -   Engagement scope, schedule, and adoption targets
 -   Responsibilities among customers, partners, and the Microsoft FastTrack engineering team
 -   Explanation on how services are delivered, where and when to seek help from the Microsoft FastTrack engineering team
--   Introduction to Dynamics Lifecycle Service (LCS) and Dynamics 365 for Operations Microsoft docs site
+-   Introduction to Dynamics Lifecycle Service (LCS) and Finance and Operations Microsoft docs site
 -   Pre-activation checklist
 -   Environment planning
 -   Regular touchpoint schedule
@@ -99,7 +99,7 @@ The Governance workshop is designed to provide planning and governance recommend
 -   Risk register – known risk and mitigation plans
 -   Guidance on user training, adoption, and change management
 -   How to manage product issues and reach out to Microsoft
-    -   Microsoft Support for Dynamics 365 for Operations
+    -   Microsoft Support for Finance and Operations
     -   LCS cloud-powered support
 
 The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Project managers are mandatory.
@@ -170,6 +170,8 @@ The typical format is a 1.5-hour Skype call. The recommended attendees include k
 ## Tech talks
 Tech talks focus on providing technical depth and best practices that empower both customers and partners with knowledge that is specific to the subject areas. These talks often provide an overview of available tooling and content.
 
+Some of the tech talks are recorded, and the recordings are available on the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+
 ### Lifecycle Services (LCS) usage tech talk
 
 The Lifecycle Services usage tech talk is designed to introduce customers to LCS. Key topics might include:
@@ -234,7 +236,7 @@ The typical format is a one-hour Skype call. The recommended attendees include t
 
 ### Reporting and Business Intelligence (BI) guidance tech talk
 
-The Reporting and BI guidance tech talk is designed to provide guidance on leveraging key analytics capabilities of Dynamics 365 for Operations. Key topics might include:
+The Reporting and BI guidance tech talk is designed to provide guidance on leveraging key analytics capabilities of Finance and Operations. Key topics might include:
 
 -   Entity store
 -   Power BI

@@ -5,10 +5,10 @@ title: Shift and cash drawer management
 description: This article explains how to set up and use the two types of retail point of sale (POS) shifts -  shared and stand-alone. Shared shifts can be used by multiple users in multiple places, whereas stand-alone shifts can be used by only one worker at a time.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2041
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 105011
@@ -26,7 +26,9 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+
 
 ---
 
@@ -46,15 +48,15 @@ Stand-alone shifts are used in a traditional, fixed POS scenario, where cash is 
 
 A stand-alone shift is designated at the cash drawer level. This procedure explains how to set up a stand-alone shift on a POS register.
 
-1.  Click **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
+1.  Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
 2.  Select the hardware profile to use for the stand-alone shift.
 3.  On the **Drawer** FastTab, confirm that the **Shared shift drawer** option is set to **No**.
 4.  Click **Save**.
-5.  Click **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
+5.  Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
 6.  Select the register that requires a stand-alone shift, and then click **Edit**.
 7.  In the **Hardware profile** field, select the hardware profile that you selected in step 2.
 8.  Click **Save**.
-9.  Click **Retail and commerce** &gt; **Retail IT** &gt; **Distribution schedule**.
+9.  Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 10. Select the **1090** distribution schedule, and then click **Run now** to synchronize changes to the POS.
 
 ### Use a stand-alone shift
@@ -74,15 +76,15 @@ A shared shift is used in an environment where multiple cashiers share a cash dr
 
 ### Set up a shared shift
 
-1.  Click **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
+1.  Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
 2.  Select the hardware profile to use for the shared shift.
 3.  On the **Drawer** FastTab, set the **Shared shift drawer** option to **Yes**.
 4.  Click **Save**.
-5.  Click **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
+5.  Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
 6.  Select the register that requires a shared shift, and then click **Edit**.
 7.  In the **Hardware profile** field, select the hardware profile that you selected in step 2.
 8.  Click **Save**.
-9.  Click **Retail and commerce** &gt; **Retail IT** &gt; **Distribution schedule**.
+9.  Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 10. Select the **1090** distribution schedule, and then click **Run now** to synchronize changes to the POS.
 
 ### Use a shared shift

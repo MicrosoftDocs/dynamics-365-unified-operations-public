@@ -5,7 +5,7 @@ title: Purchase agreements
 description: This article provides information about purchase agreements. A purchase agreement is a contract that commits an organization to buy a specified quantity or amount by using multiple purchase orders over time. In exchange for this commitment, the buyer receives special prices and discounts. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -84,7 +84,7 @@ When you confirm a purchase agreement, the current version of the purchase agree
 When you create a PO, you can apply a purchase agreement to it. Information from the terms for the agreement, such as the payment terms, delivery terms, and delivery address, is then copied to the header of the PO. If the PO contains one or more lines for products or categories that are covered by the agreement, the prices and discounts from the purchase agreement are used for those lines. The amount or quantity on the order line contributes to the fulfillment of the commitment in the purchase agreement. The same PO can include both lines that aren't related to a purchase agreement and lines that have a commitment for a purchase agreement.  
 
 You can select a purchase agreement only when you're creating a PO. You can't select a purchase agreement after the PO has been created.  
-In some situations where POs are created indirectly, you can control whether Microsoft Dynamics 365 for Operations automatically searches for applicable purchase agreements. For example, you might do this when you're automatically firming planned POs or creating POs that are based on sales orders.
+In some situations where POs are created indirectly, you can control whether Finance and Operations automatically searches for applicable purchase agreements. For example, you might do this when you're automatically firming planned POs or creating POs that are based on sales orders.
 
 ## Purchase agreements and intercompany trade
 Intercompany trading relationships can be created between vendor accounts and customer accounts that are in different legal entities. When a sales order or PO is created for one of the parties, an intercompany order chain is created. In the order chain, the sales order and PO are created in the appropriate legal entities.  

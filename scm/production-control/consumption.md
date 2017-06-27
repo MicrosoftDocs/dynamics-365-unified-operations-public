@@ -5,7 +5,7 @@ title: Calculate material consumption
 description: This article provides information about various options that are related to the calculation of material consumption. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Details Master form pattern
-description: This article provides information about the Details Master form pattern. A details form is the primary method for entering data into Microsoft Dynamics 365 for Operations.
+description: This article provides information about the Details Master form pattern. A details form is the primary method for entering data.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,12 +35,12 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides information about the Details Master form pattern. A details form is the primary method for entering data into Microsoft Dynamics 365 for Operations.
+This article provides information about the Details Master form pattern. A details form is the primary method for entering data.
 
 Usage
 -----
 
-A details form is the primary method for entering data into Microsoft Dynamics 365 for Operations. These forms lets the user view, edit, and act upon data. All content on these form types is structured into FastTabs that can be expanded and collapsed, so that multiple FastTabs can be open at the same time. The FastTabs can contain fields or a grid, and each FastTab can have a local toolbar. Two patterns are described in this document:
+A details form is the primary method for entering data. These forms lets the user view, edit, and act upon data. All content on these form types is structured into FastTabs that can be expanded and collapsed, so that multiple FastTabs can be open at the same time. The FastTabs can contain fields or a grid, and each FastTab can have a local toolbar. Two patterns are described in this document:
 
 -   **Detail Master** – This is the basic Detail Master pattern. This is the pattern that you should use by default.
 -   **Detail Master w/ Tabs** – You should use this pattern when an entity requires many FastTabs (more than 15) that can be grouped into categories.
@@ -82,93 +82,80 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### Details Master (basic) – High-level structure
 
-Design
+- Design
 
-ActionPane (ActionPane)
+    - ActionPane (ActionPane)
+    - SidePanel (Group)
 
-SidePanel (Group)
+        - QuickFilter
+        - *CustomFilters (Group) \[Optional\]*
+        - NavigationList (Grid, Style=List)
 
-QuickFilter
+    - MainTab (Tab ShowTabs=No)
 
-*CustomFilters (Group) \[Optional\]*
+        - DetailsTabPage (TabPage)
 
-NavigationList (Grid, Style=List)
+            - TitleGroup (Group)
 
-MainTab (Tab ShowTabs=No)
+                - HeaderTitle (String)
+                - *EntityStatus (Group) \[Optional\]*
 
-DetailsTabPage (TabPage)
+                    StatusFields (1..N)
 
-TitleGroup (Group)
+            - DetailsTab (Tab Style=FastTabs)
 
-HeaderTitle (String)
+                - DetailsTabPage (TabPages *repeats 1..N*)
 
-*EntityStatus (Group) \[Optional\]*
+        - GridTabPage (TabPage)
 
-StatusFields (1..N)
+            - CustomFilterGroup (Group)
 
-DetailsTab (Tab Style=FastTabs)
+                - QuickFilter
+                - *OtherFilters ($Field) \[0..N\]*
 
-DetailsTabPage (TabPages *repeats 1..N*)
-
-GridTabPage (TabPage)
-
-CustomFilterGroup (Group)
-
-QuickFilter
-
-*OtherFilters ($Field) \[0..N\]*
-
-MainGrid (Grid)
-
-MainGridDefaultAction (CommandButton)
+            - MainGrid (Grid)
+            - MainGridDefaultAction (CommandButton)
 
 ### Details Master w/Standard Tabs – High-level structure
 
-Design
+- Design
 
-ActionPane (ActionPane)
+    - ActionPane (ActionPane)
+    - SidePanel (Group)
 
-SidePanel (Group)
+        - QuickFilter
+        - *CustomFilters (Group) \[Optional\]*
+        - NavigationList (Grid, Style=List)
 
-QuickFilter
+    - MainTab (Tab ShowTabs=No)
 
-*CustomFilters (Group) \[Optional\]*
+        - DetailsTabPage (TabPage)
 
-NavigationList (Grid, Style=List)
+            - TitleGroup (Group)
 
-MainTab (Tab ShowTabs=No)
+                - HeaderTitle (String)
+                - *EntityStatus (Group) \[Optional\]*
 
-DetailsTabPage (TabPage)
+                    - StatusFields (1…N)
 
-TitleGroup (Group)
+            - CategoryTab (Tab Style=Tabs)
 
-HeaderTitle (String)
+                - CategoryTabPage (TabPages *repeats 3..N*)
 
-*EntityStatus (Group) \[Optional\]*
+                    - TabHeader (Group)
+                    - DetailsTab (Tab Style=FastTabs)
 
-StatusFields (1…N)
+                        - DetailsTabPage (TabPages *repeats 1..N*)
 
-CategoryTab (Tab Style=Tabs)
+        - GridTabPage (TabPage)
 
-CategoryTabPage (TabPages *repeats 3..N*)
+            - CustomFilterGroup (Group)
 
-TabHeader (Group)
+                - QuickFilter
+                - *OtherFilters ($Field) \[0..N\]*
 
-DetailsTab (Tab Style=FastTabs)
-
-DetailsTabPage (TabPages *repeats 1..N*)
-
-GridTabPage (TabPage)
-
-CustomFilterGroup (Group)
-
-QuickFilter
-
-*OtherFilters ($Field) \[0..N\]*
-
-MainGrid (Grid)
-
-MainGridDefaultAction (CommandButton)
+            - MainGrid (Grid)
+            - MainGridDefaultAction (CommandButton)
 
 ### Core components
 
@@ -218,7 +205,7 @@ The verification checklist shows the steps for manually verifying that the form 
     -   The Quick filter should default to the most likely field for a filter scenario.
     -   **Grid:**
         -   The **Name** field should be the first column, followed by the **ID** field.
-        -   Additional grid guidelines have been consolidated into the Dynamics 365 for Operations [General Form Guidelines ](general-form-guidelines.md)document, in the Grid guidelines section.
+        -   Additional grid guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md) document, in the Grid guidelines section.
 
 ## Examples
 ### Details Master (basic)
@@ -265,7 +252,7 @@ None.
 ### AX 2012 content
 
 #### AX 2012 links
--   [AX2012 MSDN Details Forms](http://msdn.microsoft.com/EN-US/library/hh397318.aspx)
+-   [AX 2012 MSDN Details Forms](http://msdn.microsoft.com/EN-US/library/hh397318.aspx)
 
 #### AX 2012 example
 

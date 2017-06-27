@@ -5,10 +5,10 @@ title: Questionnaires
 description: This topic provides general information about questionnaires, and links to more detailed information. A questionnaire is a set of questions that is used to collect information for various purposes. You can design, create, distribute, and complete questionnaires, and then analyze the results. 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata
@@ -26,18 +26,15 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 ---
 
 # Questionnaires
 
-[!include[banner](includes/banner.md)]
-
-
 This topic provides general information about questionnaires, and links to more detailed information. A questionnaire is a set of questions that is used to collect information for various purposes. You can design, create, distribute, and complete questionnaires, and then analyze the results. 
 
-You can customize a questionnaire to fit your specific requirements by using various features that are available in Microsoft Dynamics 365 for Operations. Here are some examples of how questionnaires can be used:
+You can customize a questionnaire to fit your specific requirements by using various features that are available in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Here are some examples of how questionnaires can be used:
 
 -   Test the professional skills of employees and applicants.
 -   Evaluate whether course participants learned the course material.
@@ -63,6 +60,4 @@ See also
 [Distributing and completing questionnaires](distribute-questionnaires.md)
 
 [Viewing and evaluating the results of questionnaires](evaluate-questionnaire-results.md)
-
-
 
