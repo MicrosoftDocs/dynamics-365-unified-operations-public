@@ -112,12 +112,13 @@ private static str departmentValue()
 8. Repeat steps 5-7 for each dimension that you want to add, changing the dimension name to the appropriate dimension. 
 9. Compile the project, and then synchronize it with the database. 
 
-    [![8](./media/8-300x260.png)](./media/8.png)10. 
+    [![8](./media/8-300x260.png)](./media/8.png)
+    
+10. Your customization is now complete. You can test it in SQL using the following statement.
 
-Your customization is now complete. You can test it in SQL using the following statement.
-
-    select * from DIMENSIONCOMBINATIONENTITY
-
+```
+select * from DIMENSIONCOMBINATIONENTITY
+```
  
 
 # See also
