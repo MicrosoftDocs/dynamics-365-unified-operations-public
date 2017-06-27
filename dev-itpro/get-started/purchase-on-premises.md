@@ -47,9 +47,9 @@ To run Finance and Operations (on-premises) you must obtain the proper number of
 Purchasing server licenses
 --------------------------
 
-A server license is required for every server running Finance and Operations (on-premises). After purchasing your server licenses, you will be able to download a license file from the [PartnerSource Business Center](https://businesscenter.mbs.microsoft.com/). Keep this license file handy, as you’ll need the details it contains when setting up your Lifecycle Services (LCS) project.
+A server license is required for every server running Finance and Operations (on-premises). After purchasing your server licenses, work with your partner to download a license file from the [PartnerSource Business Center](https://businesscenter.mbs.microsoft.com/). Keep this license file handy, as the details it contains will be used when setting up your Lifecycle Services (LCS) project.
 
-To download a customer's Finance and Operations (on-premises) license file from the PartnerSource Business Center, follow these steps:
+Partners can download a customer's Finance and Operations (on-premises) license file from the PartnerSource Business Center using these steps:
 
 1.  Log on to the [PartnerSource Business Center](https://businesscenter.mbs.microsoft.com/).
 
