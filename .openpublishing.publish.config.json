@@ -3,22 +3,6 @@
   "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
-      "docset_name": "d365OpsDevITPro",
-      "build_source_folder": "dev-itpro",
-      "build_output_subfolder": "d365OpsDevITPro",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
       "docset_name": "d365OpsFinancials",
       "build_source_folder": "financials",
       "build_output_subfolder": "d365OpsFinancials",
