@@ -31,7 +31,10 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) offers a variety of license types to best suit the needs of your organization. To better understand how Finance and Operations (on-premises) is licensed, please refer to the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=852079). When you are ready to purchase licenses for your organization, follow the steps outlined in this topic.
+> [!IMPORTANT]
+> The Licensing guide and Provisioning guide for the on-premises version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition have not yet been released. We will update this topic when they are available. 
+
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) offers a variety of license types to best suit the needs of your organization. To better understand how Finance and Operations (on-premises) is licensed, please work with your partner, who can access the [Licensing guide](https://go.microsoft.com/fwlink/?linkid=852079) on PartnerSource. When you are ready to purchase licenses for your organization, work with your partner to follow the steps outlined in this topic.
 
 > [!NOTE]
 > Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
@@ -44,30 +47,25 @@ To run Finance and Operations (on-premises) you must obtain the proper number of
 Purchasing server licenses
 --------------------------
 
-A server license is required for every server running Finance and Operations (on-premises). After purchasing your server licenses, you will be able to download a license file from the [PartnerSource Business Center](https://businesscenter.mbs.microsoft.com/). Keep this license file handy, as you’ll need the details it contains when setting up your Lifecycle Services (LCS) project.
+A server license is required for every server running Finance and Operations (on-premises). After purchasing your server licenses, work with your partner to download a license file from the [PartnerSource Business Center](https://businesscenter.mbs.microsoft.com/). Keep this license file handy, as the details it contains will be used when setting up your Lifecycle Services (LCS) project.
 
-To download a customer's Finance and Operations (on-premises) license file from the PartnerSource Business Center, follow these steps:
+Partners can download a customer's Finance and Operations (on-premises) license file from the PartnerSource Business Center using these steps:
 
 1.  Log on to the [PartnerSource Business Center](https://businesscenter.mbs.microsoft.com/).
 
 3.  Enter the customer name or account number in the **Find A Customer** field, and then click **Search**.
 
-4.  Click the company name of the customer for whom you searched in step 3. This
-    opens the **Customer Summary** page.
+4.  Click the company name of the customer. This opens the **Customer Summary** page.
 
-5.  Under **Registered Products**, click **Registration
-    Keys**.
+5.  Under **Registered Products**, click **Registration Keys**.
 
 6.  Select **version 07** in the **Request and Display License Keys For Version** field.
 
 7.  Click **Display License Keys**.
 
-8.  On the **Request License Keys** page, select **Download Current
-    License/Registration Key**.
+8.  On the **Request License Keys** page, select **Download Current License/Registration Key**.
 
-9.  Click **Save As** in the **File Download** dialog box, select the folder where you
-    want to download the license file to in the **Save As** dialog box, and then
-    click **Save**.
+9.  Click **Save As** in the **File Download** dialog box, select the folder where you want to download the license file to in the **Save As** dialog box, and then click **Save**.
 
 **Note**: If you cannot see registration keys in PartnerSource Business Center, you will need to ensure that your PartnerSource Business Center Profile has **Can See Registration Keys** set to **Yes**.
 
