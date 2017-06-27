@@ -55,22 +55,17 @@ Partners can download a customer's Finance and Operations (on-premises) license 
 
 3.  Enter the customer name or account number in the **Find A Customer** field, and then click **Search**.
 
-4.  Click the company name of the customer for whom you searched in step 3. This
-    opens the **Customer Summary** page.
+4.  Click the company name of the customer. This opens the **Customer Summary** page.
 
-5.  Under **Registered Products**, click **Registration
-    Keys**.
+5.  Under **Registered Products**, click **Registration Keys**.
 
 6.  Select **version 07** in the **Request and Display License Keys For Version** field.
 
 7.  Click **Display License Keys**.
 
-8.  On the **Request License Keys** page, select **Download Current
-    License/Registration Key**.
+8.  On the **Request License Keys** page, select **Download Current License/Registration Key**.
 
-9.  Click **Save As** in the **File Download** dialog box, select the folder where you
-    want to download the license file to in the **Save As** dialog box, and then
-    click **Save**.
+9.  Click **Save As** in the **File Download** dialog box, select the folder where you want to download the license file to in the **Save As** dialog box, and then click **Save**.
 
 **Note**: If you cannot see registration keys in PartnerSource Business Center, you will need to ensure that your PartnerSource Business Center Profile has **Can See Registration Keys** set to **Yes**.
 
