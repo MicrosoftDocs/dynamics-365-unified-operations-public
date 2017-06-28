@@ -47,10 +47,6 @@ Moving a database involves using the sqlpackage.exe command line tool to export
 -   Import the database to SQL Server 2016.
 -   Run a SQL script to update the database.
 
-**Important notes for customers running Retail environments:**
-
--   Developer environments are not supported as a target for Retail.
--   If you want to perform this activity for Retail, contact [Microsoft support for details](../lifecycle-services/lcs-support.md).
 
 ## Prerequisites
 The following prerequisites are required before you can move a database.
@@ -246,6 +242,23 @@ Execute the following SQL script against the imported database. This will add ba
 ### Reset the Financial Reporting database
 
 If using Financial Reporting (formerly Management Reporter) then follow the steps to reset the financial reporting database in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
+
+### If you're using Retail components
+If you’re using Retail components, you must perform additional steps to re-provision the target environment.
+
+1. Navigate to the Shared asset library.
+2. Select Software deployable package.
+3. Download the Environment reprovisioning tool.
+4. Navigate to the asset library for your project 
+5. Select Software deployable package and select New to create a new package.
+6. Specify a name and description. You can use "Environment reprovisioning tool" for the package name.
+7. Upload the previously downloaded package.
+8. Navigate to the Environment details page for your target environment
+9. Select Maintain > Apply updates.
+10. Select the Environment reprovisioning tool that you previously uploaded and click Apply to apply the package.
+11. Monitor the progress of the package deployment. 
+
+Learn more about how to apply a deployable package in the topic [Apply a deployable package](../deployment/create-apply-deployable-package.md). Learn how to apply a deployable package manually in the topic [Install a deployable package](..deployment/install-deployable-package.md).
 
 ## Start using the new database
 To switch the environment and use the new database, stop the services in the following list, rename the AxDB database to AxDB\_orig, and then rename your newly imported database AxDB. Restart the services in the following list:
