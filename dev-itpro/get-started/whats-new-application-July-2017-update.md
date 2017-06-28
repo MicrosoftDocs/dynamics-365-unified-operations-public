@@ -1406,6 +1406,28 @@ material on the production floor for lean, discrete, and process manufacturing.
 This makes it possible to release work for kanban picking for the withdrawal
 kanban, so that items can be picked from non-fixed locations in the warehouse.
 
+Lean scheduling board
+---------------------
+
+A new scheduling board for kanbans has been introduced. The kanban board offers these main capabilities.
+-   A graphical overview of scheduled kanbans in a work cell for a selected period.
+-   Tools to schedule unplanned kanban jobs.
+-   Reschedule already scheduled jobs as a drag-and-drop activity.
+-   Reassign kanban jobs across time periods.
+-   An overview of the work cell capacity and capacity load that is updated when new kanban jobs are loaded to the board.
+-   Use of colors to distinguish between kanban jobs.
+-   Detailed information about the kanban and status icon showing when a kanban is overdue.
+In the kanban schedule board, these call outs are added to key elements as shown in the illustration.
+1.	Menu bar
+2.	Filter fields
+3.	Button for unplanned jobs
+4.	Period node
+5.	Kanban job
+6.	Capacity bar
+7.	Time scale
+
+
+
 **Mobile**
 ==========
 
