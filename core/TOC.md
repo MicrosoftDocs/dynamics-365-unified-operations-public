@@ -1388,6 +1388,7 @@
 #### Security
 ##### [Role-based security](/dynamics365/unified-operations/dev-itpro/sysadmin/role-based-security?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Security architecture](/dynamics365/unified-operations/dev-itpro/sysadmin/security-architecture?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Security reports](/dynamics365/unified-operations/dev-itpro/sysadmin/security-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Batch processing
 ##### [Batch processing overview](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-processing-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Batch server overview](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-server-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
