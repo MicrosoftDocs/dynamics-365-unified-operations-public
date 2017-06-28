@@ -91,7 +91,7 @@ This scenario describes the process for upgrading code from an earlier release t
 Regardless of whether you're a live customer or you're still in the implementation phase of your project, follow these steps to upgrade your code to the latest platform and application updates.
 
 1.  Use the Code upgrade service on Lifecycle Services to upgrade your code, see [Configure the code upgrade service in Lifecycle services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-execute-code-upgrade)
-    -   This step is not required if you have no custom code, but you will still need to remove any existing standard Microsoft X++ hotfixes which you have checked into your VSTS, those hotfixes will be included in the new version and you'll have conflicts if you don't remove the old ones.
+    -   We recommend running the code upgrade service even if you have no custom code, because the service will still help you by removing any old Microsoft X++ hotfixes you have installed, which is a required step.
 
 2.  You will need to deploy a brand new development environment which is running the new version which you are upgrading to. You will use this environment to complete code merging and refactoring of your custom code. Submit a request for a new Dev/Test environment that is running the latest update.
     -   You might have to delete your existing Dev/Test environment if your subscription doesn't allow for a new one.
@@ -123,6 +123,8 @@ First, upgrade your code as described in Scenario 2. This is a developer task a
 Execute the data upgrade process on a copy of your target database – if already live in production then this would mean a copy of production, prior to go-live it would be your most current database. This is a validation process performed by a developer to ensure the data upgrade completes successfully with the specific set of customizations within this environment – and will drive success in the sandbox and production environments later. To copy your database back to a developer environment follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](..\database\copy-database-from-azure-sql-to-sql-server.md) To execute the data upgrade process follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
 
 ### Upgrade your sandbox environment
+
+Note: the term "sandbox" here refers to the default included "Sandbox: Standard acceptance test" Tier 2 environment provided in your subscription. 
 
 1.  Use LCS to submit an Upgrade request to DSE. Go to the environment details page for the environment you wish to upgrade, click on the "Maintain" button and select the "Upgrade" option. A fly out will appear for you to enter the Upgrade request.
 ![Upgrade request](./media/UpgradeMaintainButton.PNG)
