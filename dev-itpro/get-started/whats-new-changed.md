@@ -43,8 +43,6 @@ For information about how to upgrade to the latest version, see [Process for upg
 
 ## Application releases
 
-To learn more about the mobile workspaces and Power BI content recently released, see [Mobile workspaces recently released for the Dynamics 365 for Finance and Operations mobile app](../mobile-apps/mobile-workspaces-released.md) and [Power BI content recently released for Dynamics 365 for Finance and Operations](../analytics/power-bi-home-page.md)
-
 <table>
 <colgroup>
 <col width="20%" />
