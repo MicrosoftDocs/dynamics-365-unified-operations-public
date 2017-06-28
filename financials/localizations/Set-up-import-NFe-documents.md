@@ -59,6 +59,12 @@ The imported XML and DANFE files can be viewed through the page:
 7. For a selected Nota Fiscal Eletrônica (NF-e), click in **Inquire status** to inquire the status of the NF-e at the SEFAZ using the access key
 **Note 3:** The status, date, and time of the inquiry are updated in the Status from SEFAZ and Date and time from the last inquiry
 
+Inquire SEFAZ about the status of NF-e access keys:
+1. Click Accounts payable > Periodic tasks > Electronic fiscal documents > Inquire about NF-e access key status
+2. In the Limit of cancellation field, enter the number of hours that the vendor has to cancel the NF-e
+3. In the Minimum inquiry interval field, enter the minimum interval between the inquiries in minutes for the received NF-e access key at the SEFAZ
+4. If necessary, enter the batch processing parameters, recurrences and schedule
+
 
 
 
