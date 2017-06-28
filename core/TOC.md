@@ -621,6 +621,7 @@
 ### Analytical tools and visualizations
 #### [Analytics, aggregate measurements, and KPI modeling](/dynamics365/unified-operations/dev-itpro/analytics/analytics?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Modeling and aggregate data](/dynamics365/unified-operations/dev-itpro/analytics/model-aggregate-data?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Add financial dimensions to aggregate measurements](/dynamics365/unified-operations/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Add contextual BI to forms](/dynamics365/unified-operations/dev-itpro/analytics/add-contextual-bi-forms?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Aggregate measurements report](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-measurements-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Aggregate data entities report](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-data-entities-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
