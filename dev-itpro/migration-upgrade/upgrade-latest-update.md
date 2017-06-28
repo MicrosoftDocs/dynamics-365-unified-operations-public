@@ -128,6 +128,7 @@ Note: the term "sandbox" here refers to the default included "Sandbox: Standard 
 
 1.  Use LCS to submit an Upgrade request to DSE. Go to the environment details page for the environment you wish to upgrade, click on the "Maintain" button and select the "Upgrade" option. A fly out will appear for you to enter the Upgrade request.
 ![Upgrade request](./media/UpgradeMaintainButton.PNG)
+- We recommend you submit your upgrade upgrade request 1 week before you expect to upgrade to help ensure that the upgrade can be performed as your desired time.
 - You must submit the request 48 hours before the downtime is due to start. The time is required for a new environment to be deployed in the background. When downtime starts this new environment will be swapped with the existing environment. You will not be able to see the new environment, it's a background mechanism.
 - You must allow at least 4 hours between the downtime start and downtime end times. This time is required to perform the swap in of the new environment and the data upgrade process.
 - In the case of an error which causes the upgrade process to stop, DSE will rollback the environment to its original state.
