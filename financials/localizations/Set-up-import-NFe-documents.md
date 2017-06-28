@@ -30,3 +30,35 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Set up, import and verify NF-e XML documents and DANFE
 
 [!include[banner](../includes/banner.md)]
+
+You can automatically extract and import the XML from the Nota Fiscal Eletrônica (NF-e) and its DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) from e-mails sent by the vendor for your company. The vendor must send them as file attachements while the acquired goods are in transit.
+
+As prerequisite for this this setup, you must have previously configured in your Legal Entity the fiscal establishments, the NF-e federal parameters, specially the IBGE code filled in the parameters of the tax authority, and the NF-e parameters for Fiscal establishments.
+
+Set up email accounts to import XML files and DANFE for NF-e:
+1. Click Organization administration > Electronic fiscal documents > Configure email accounts
+2. In the Configure email accounts page, click New and enter the account details:
+. Server address: The POP3 server address for the email account
+. Port: The port number to use for the email server
+. Required SSL: Check this box to indicate that the server requires a Secure Socket Layer (SSL) encrypted connection
+. Username: The user name for the email account
+. Password: The password for the email account
+
+Import and verify the NF-e XML files and DANFE from emails:
+1. Click Accounts payable > Periodic tasks > Electronic fiscal documents > Import XML files from email
+2. If necessary, enter the batch processing parameters, recurrences and schedule
+3. Click OK to import the XML and the DANFE files from the emails received in the email account
+
+The imported XML and DANFE files can be viewed through the page:
+4. Accounts payable > Periodic tasks > Electronic fiscal documents > Received NF-e XML documents:
+**Note 1**: Only the XML from Notas Fiscais Eletrônicas (NF-e) issued for the CNPJ of the fiscal establishments are imported from the emails
+**Note 2**: The Name of the issuer of the Nota Fiscal Eletrônica (NF-e) is left blank when its tax registration ID (CNPJ) cannot be found as attribute of a vendor in All vendors form
+
+5. For a selected Nota Fiscal Eletrônica (NF-e), click in **XML document** to view the XML document
+6. For a selected Nota Fiscal Eletrônica (NF-e), click in **DANFE** to view the Documento Auxiliar da Nota Fiscal Eletrônica (DANFE)
+7. For a selected Nota Fiscal Eletrônica (NF-e), click in **Inquire status** to inquire the status of the NF-e at the SEFAZ using the access key
+**Note 3:** The status, date, and time of the inquiry are updated in the Status from SEFAZ and Date and time from the last inquiry
+
+
+
+
