@@ -36,32 +36,17 @@ ms.dyn365.ops.version: Platform update 1
 
 
 This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations database to the latest update. 
-Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the Production and Sandbox environments. You can contact them using the "other" type service request in Lifecycle Services.
+Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the Production and Sandbox environments. You can contact them using an "Upgrade" request in Lifecycle services which you submit via the "Maintain" button on the environment details page for the environment you wish to update.
 
-This topic describes how to upgrade an older source database to the latest Finance and Operations update. The source database can be from CTP 7 or later. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md). This process does not apply to the upgrade of data in Management Reporter or the Retail channel database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
+This topic describes how to upgrade an older source database to the latest Finance and Operations update. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md). This process does not apply to the upgrade of data in Management Reporter or the Retail channel database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 
 ## Before you begin
 1.  You must have a functional one-box demo or development environment that is already successfully running with the latest Finance and Operations update.
-2.  If upgrading from the Dynamics AX February 2016 release (also known as RTW) or earlier (earlier would be a CTP build) and are upgrading to the May 2016 release, then the following hotfixes must be installed. These fixes must be installed in the destination environment. If you are upgrading to a newer version than the May 2016 release, you **do not** need these fixes, they are already included.
+2.  If upgrading from the Dynamics AX February 2016 release (also known as RTW) and are upgrading to the May 2016 release, then the following hotfixes must be installed. These fixes must be installed in the destination environment. If you are upgrading to a newer version than the May 2016 release, you **do not** need these fixes, they are already included.
     -   Hotfix KB number 3170386, "Upgrade script error: ReleaseUpdateDB70\_DMF. updateIntegrationActivityExecutionMessageIdPreSync".
     -   Hotfix KB number 3180871, "Data upgrade from RTW to Update 1 causes errors when synchronizing views involving disabled configuration keys". This is a binary hotfix which will cause the database synchronize process to fail.
 
 3.  In your source database, verify that the SysSetupLog version number in the **Description** column is correct. Find the appropriate statement for your environment in the following scenarios.
-    -   If you're upgrading from CTP7, run the following Transact-SQL statement from SQL Server Management Studio.
-
-            IF NOT EXISTS (SELECT 'x' FROM SYSSETUPLOG WHERE DESCRIPTION = '170' and NAME = 'ReleaseUpdateDBgetFromVersion')
-            BEGIN
-            INSERT INTO SYSSETUPLOG (DESCRIPTION, NAME, VERSION, CREATEDDATETIME, CREATEDBY)
-            VALUES ('170', 'ReleaseUpdateDBgetFromVersion', '7.0', '2016-01-01 00:00:00.000', 'Admin')
-            END
-
-    -   If you're upgrading from CTP8, run the following statement from Management Studio.
-
-            IF NOT EXISTS (SELECT 'x' FROM SYSSETUPLOG WHERE DESCRIPTION IN ('180', '183') and NAME = 'ReleaseUpdateDBgetFromVersion')
-            BEGIN
-            INSERT INTO SYSSETUPLOG (DESCRIPTION, NAME, VERSION, CREATEDDATETIME, CREATEDBY)
-            VALUES ('180', 'ReleaseUpdateDBgetFromVersion', '7.0', '2016-01-01 00:00:00.000', 'Admin')
-            END
 
     -   If you're upgrading from the February 2016 release, run the following statement from Management Studio.
 
@@ -85,6 +70,13 @@ This topic describes how to upgrade an older source database to the latest Fina
             BEGIN
             INSERT INTO SYSSETUPLOG (DESCRIPTION, NAME, VERSION, CREATEDDATETIME, CREATEDBY)
             VALUES ('194', 'ReleaseUpdateDBgetFromVersion', '7.0', '2016-01-01 00:00:00.000', 'Admin')
+            END
+    -   If you're upgrading from the November 2016 release (also known as 1611 or 7.1), run the following statement from Management Studio.
+
+            IF NOT EXISTS (SELECT 'x' FROM SYSSETUPLOG WHERE DESCRIPTION = '194' and NAME = 'ReleaseUpdateDBgetFromVersion')
+            BEGIN
+            INSERT INTO SYSSETUPLOG (DESCRIPTION, NAME, VERSION, CREATEDDATETIME, CREATEDBY)
+            VALUES ('196', 'ReleaseUpdateDBgetFromVersion', '7.0', '2016-01-01 00:00:00.000', 'Admin')
             END
 
 4.  If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required because the demo data contains bad records for some kernel X++ classes.
