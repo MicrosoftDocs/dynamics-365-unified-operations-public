@@ -856,6 +856,7 @@
 #### Manage raw materials
 ##### [Cross-docking from production orders to outbound docks](/dynamics365/unified-operations/supply-chain/production-control/cross-docking-opportunities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Register material consumption using a mobile device](/dynamics365/unified-operations/supply-chain/production-control/register-material-consumption-hand-held-device?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Controlling raw material consumption by using flushing principles](/dynamics365/unified-operations/supply-chain/production-control/flushing-principles?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
 #### Manage finished goods
 ##### [Set the production output location for finished goods](/dynamics365/unified-operations/supply-chain/production-control/production-output-location?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Lean manufacturing 
