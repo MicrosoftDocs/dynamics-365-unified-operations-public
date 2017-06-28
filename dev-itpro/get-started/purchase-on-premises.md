@@ -31,13 +31,10 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[banner](../includes/banner.md)]
 
-> [!IMPORTANT]
-> The Licensing guide and Provisioning guide for the on-premises version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition have not yet been released. We will update this topic when they are available. 
-
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) offers a variety of license types to best suit the needs of your organization. To better understand how Finance and Operations (on-premises) is licensed, please work with your partner, who can access the [Licensing guide](https://go.microsoft.com/fwlink/?linkid=852079) on PartnerSource. When you are ready to purchase licenses for your organization, work with your partner to follow the steps outlined in this topic.
-
 > [!NOTE]
 > Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
+
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) offers a variety of license types to best suit the needs of your organization. To better understand how Finance and Operations (on-premises) is licensed, please work with your partner, who can access the [Licensing guide](https://go.microsoft.com/fwlink/?linkid=852079) on PartnerSource. When you are ready to purchase licenses for your organization, work with your partner to follow the steps outlined in this topic.
 
 Purchasing client access licenses
 -------------------
@@ -83,5 +80,8 @@ Access to the Provisioning guide can be found here:
 - [Provisioning guide on CustomerSource](https://go.microsoft.com/fwlink/?linkid=852080)
 
 - [Provisioning guide on PartnerSource](https://go.microsoft.com/fwlink/?linkid=852081)
+
+> [!IMPORTANT]
+> The Provisioning guide for the on-premises version of Finance and Operations has not yet been released. We will update this topic when it is available. 
 
 After you have logged into LCS, a project will be automatically provisioned for you. The LCS project will allow you to deploy Finance and Operations (on-premises). For more details on getting started with your LCS project, see [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
