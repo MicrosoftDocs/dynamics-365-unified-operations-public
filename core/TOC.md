@@ -7,10 +7,22 @@
 ### [Information for customers who purchased Finance and Operations through a Cloud Service Provider](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Deploy a demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Deprecated features](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [AX 2012 features not yet implemented](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Features not implemented in on-premises deployments](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Lifecycle policy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Finance and Operations, Enterprise edition July 2017 update](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 8 (June 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-8?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 7 (May 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 6 (April 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 5 (March 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 4 (February 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Operations version 1611 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 3 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 2 (August 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
+#### [Dynamics AX application version 7.0.1 (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 1 (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Dynamics AX 7.0 (February 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Deprecated features](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [AX 2012 features not yet implemented](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Features not implemented in on-premises deployments](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Lifecycle policy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Explore the user interface
 #### [Client UI FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/client-faq?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -32,6 +44,10 @@
 #### Task guides and task recorder
 ##### [Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create documentation or training](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [November 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [August 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [May 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [February 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Localization and regulatory features](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Glossary](/dynamics365/unified-operations/fin-and-ops/get-started/glossary?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
@@ -954,24 +970,7 @@
 
 ### [System requirements](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Demo data](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Finance and Operations, Enterprise edition July 2017 update](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Operations platform update 8 (June 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-8?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Operations platform update 7 (May 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Operations platform update 6 (April 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Operations platform update 5 (March 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Operations platform update 4 (February 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Operations version 1611 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Operations platform update 3 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Dynamics AX platform update 2 (August 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
-#### [Dynamics AX application version 7.0.1 (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Dynamics AX platform update 1 (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Dynamics AX 7.0 (February 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Updated task guides
-##### [November 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [August 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [May 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [February 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+
 
 
 ### [Develop and customize using Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
