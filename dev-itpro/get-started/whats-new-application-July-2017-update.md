@@ -1417,7 +1417,7 @@ A new scheduling board for kanbans has been introduced. The kanban board offers 
 -   An overview of the work cell capacity and capacity load that is updated when new kanban jobs are loaded to the board.
 -   Use of colors to distinguish between kanban jobs.
 -   Detailed information about the kanban and status icon showing when a kanban is overdue.
-In the kanban schedule board, these call outs are added to key elements as shown in the illustration.
+In the kanban schedule board, these call outs are added to key elements.
 1.	Menu bar
 2.	Filter fields
 3.	Button for unplanned jobs
@@ -1425,8 +1425,6 @@ In the kanban schedule board, these call outs are added to key elements as shown
 5.	Kanban job
 6.	Capacity bar
 7.	Time scale
-
-
 
 **Mobile**
 ==========
