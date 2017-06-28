@@ -565,6 +565,7 @@
 ### [Access Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [Power BI content released](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Actual vs budget](/dynamics365/unified-operations/dev-itpro/analytics/ledger-budgets-power-bi?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Benefits](/dynamics365/unified-operations/dev-itpro/analytics/benefits-power-bi?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Cash overview](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 #### [CFO overview](/dynamics365/unified-operations/dev-itpro/analytics/CFO-power-bi?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
