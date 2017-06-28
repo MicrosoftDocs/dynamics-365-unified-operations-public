@@ -111,7 +111,7 @@ Regardless of whether you're a live customer or you're still in the implementati
 
 For more details on code migration steps, see [Code Migration](..\dev-tools\developer-home-page.md#code-migration). After code migration is complete, continue to Scenario 3.
 
-## Scenario 3: Upgrade to the most current platform and application update
+## Scenario 3: Upgrade to the most current application update
 These steps apply to customers who are live on an earlier release and want to perform a full upgrade to the most recent platform and application versions. Customers who have already deployed and configured a production environment might also fall into this category, even if they haven't gone live yet. If you are not upgrading your application, but want to upgrade your platform to the latest bits, use Scenario 4 below, especially if you have no customizations of the platform models.
 
 ### Upgrade your code
