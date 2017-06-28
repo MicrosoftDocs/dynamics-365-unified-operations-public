@@ -61,7 +61,7 @@ If the substitution/adjustment tax invoice functionality is enabled, the origina
 The substitution tax invoice includes the same information as the original tax invoice, but it has a "Substitution" mark. Additionally, a comment is added to the bottom of the substitution tax invoice. This comment includes the reason for the substitution, the sequence number, and the date of the substitution.
 
 > [!NOTE]
-> You must create a new substitution every time that you must reprint a tax invoice.
+> You must create a new substitution every time that you reprint a tax invoice.
 
 ## Adjust customer information on a tax invoice
 
@@ -85,4 +85,4 @@ Follow these steps to adjust the customer information and reprint the tax invoic
 
 The adjusted tax invoice includes a new tax invoice number and adjusted customer information. All other information is the same as the information on the original tax invoice. A comment is added to the bottom of the adjusted tax invoice. This comment includes the reference to the original tax invoice, the reason for the adjustment, and the date of the adjustment.
 
-You can adjust a tax invoice multiple times. For each adjustment, a new tax invoice number is allocated, and the adjusted invoice references the previous adjustment or the original tax invoice, respectively.
+You can adjust a tax invoice multiple times. For each adjustment, a new tax invoice number is allocated, and the adjusted invoice references the previous adjustment or the original tax invoice.
