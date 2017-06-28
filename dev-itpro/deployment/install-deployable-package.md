@@ -5,7 +5,7 @@ title: Install a deployable package
 description: This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development/build environment.
 author: manalidongre
 manager: AnnBe
-ms.date: 04/22/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

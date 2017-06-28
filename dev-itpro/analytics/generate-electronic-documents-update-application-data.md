@@ -29,6 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
+# Generate electronic documents and update application data using the Electronic reporting tool
 
 You can design Electronic reporting (ER) formats that can be used in the Finance and Operations application to generate outgoing electronic documents. You can also design ER formats that parse incoming electronic documents and use the content in those documents to update application data. 
 

@@ -176,13 +176,13 @@ You must create several user or service accounts for Finance and Operations (on-
 
 | User account                                            | Type           | Purpose | User name |
 |---------------------------------------------------------|----------------|---------|-----------|
-| Financial Reporting Application Service Account         | gMSA           |         | Contoso\\svc-FRAS\$ |
-| Financial Reporting Process Service Account             | gMSA           |         | Contoso\\svc-FRPS\$ |
-| Financial Reporting Click Once Designer Service Account | gMSA           |         | Contoso\\svc-FRCO\$ |
-| AOS Service Account                                     | gMSA           | This user should be created for future-proofing. We plan to enable AOS to work with the gMSA in upcoming releases. By creating this user at the time of setup, you will help guarantee a seamless transition to the gMSA. | Contoso\\svc-AXSF\$ |
+| Financial Reporting Application Service Account         | gMSA           |         | Contoso\\svc-FRAS$ |
+| Financial Reporting Process Service Account             | gMSA           |         | Contoso\\svc-FRPS$ |
+| Financial Reporting Click Once Designer Service Account | gMSA           |         | Contoso\\svc-FRCO$ |
+| AOS Service Account                                     | gMSA           | This user should be created for future-proofing. We plan to enable AOS to work with the gMSA in upcoming releases. By creating this user at the time of setup, you will help guarantee a seamless transition to the gMSA. | Contoso\\svc-AXSF$ |
 | AOS Service Account                                     | Domain account | AOS uses this user in the GA release. | Contoso\\AXServiceUser |
 | AOS SQL DB Admin user                                   | SQL user       | Finance and Operations uses this user to authenticate with SQL\*. This user will also be replaced by the gMSA user in upcoming releases. | AXDBAdmin |
-| Local Deployment Agent Service Account                  | gMSA           | This account is used by the local agent to orchestrate the deployment on various nodes. | Contoso\\Svc-LocalAgent\$ |
+| Local Deployment Agent Service Account                  | gMSA           | This account is used by the local agent to orchestrate the deployment on various nodes. | Contoso\\Svc-LocalAgent$ |
 
 \* The SQL user name and password for SQL authentication are secured, because they are encrypted and stored in the file share.
 
@@ -278,7 +278,7 @@ We have provided several scripts to help improve the setup experience. Follow th
 
 ### Describe your configuration
 
-This section provides information about the scripts that you must run. The scripts are discussed in the order that you must run them in. To run the scripts, fill in the template file at \$(downloadPath)\\ConfigTemplate.xml. The ConfigTemplate.xml file describes the Service Fabric clusters, the certificates that are used to configure them, and the accounts that must be granted access to the relevant certificates. In the example that is provided, the values are filled in for the example infrastructure that is described in this topic. The template file will be used in the next section.
+This section provides information about the scripts that you must run. The scripts are discussed in the order that you must run them in. To run the scripts, fill in the template file at $(downloadPath)\\ConfigTemplate.xml. The ConfigTemplate.xml file describes the Service Fabric clusters, the certificates that are used to configure them, and the accounts that must be granted access to the relevant certificates. In the example that is provided, the values are filled in for the example infrastructure that is described in this topic. The template file will be used in the next section.
 
 #### Create the domain account for a service user
 
@@ -293,7 +293,7 @@ New-ADUser -Name 'AXServiceUser' `
 
 #### Create gMSAs
 
-1. Change the directory to **\$(DownloadPath)**, and run the following Windows PowerShell command.
+1. Change the directory to **$(DownloadPath)**, and run the following Windows PowerShell command.
 
     > [!NOTE]
     > This script doesn't create the users. Instead, it prints the commands that must be manually run on the domain controller machine.
@@ -346,7 +346,7 @@ _IIS feature should be installed but disabled as there are some dependencies to 
 
 ### Install Certificates
 
-1. If you acquired the certificates that were listed earlier in this topic from a valid CA, fill in the .pfx file name and thumbprint for the certificates in the ConfigTemplate.xml file. Set the **generateSelfSignedCert** attribute to **False** and the **exportable** attribute to **False**. Copy the .pfx files to the \$(DownloadPath)\\InfrastructureScripts\\Certs folder.
+1. If you acquired the certificates that were listed earlier in this topic from a valid CA, fill in the .pfx file name and thumbprint for the certificates in the ConfigTemplate.xml file. Set the **generateSelfSignedCert** attribute to **False** and the **exportable** attribute to **False**. Copy the .pfx files to the $(DownloadPath)\\InfrastructureScripts\\Certs folder.
 2. If you're using self-signed certificates (for testing purposes only), run the following script. To create self-signed certificates, in the ConfigTemplate.xml file, make sure that **generateSelfSignedCert** is set to **True** and **exportable** is set to **True**. The script will update the XML with the thumbprint for the certificates.
 
     ```
@@ -368,7 +368,7 @@ _IIS feature should be installed but disabled as there are some dependencies to 
 
     If you're using self-signed certificates, skip to the next section. You don't have to complete this procedure.
 
-4. After you export or copy the .pfx files into the \$(DownloadPath)\\InfrastructureScripts\\Certs folder, run the following commands to generate scripts that will be put in the folders that correspond to the VMs.
+4. After you export or copy the .pfx files into the $(DownloadPath)\\InfrastructureScripts\\Certs folder, run the following commands to generate scripts that will be put in the folders that correspond to the VMs.
 
     ```
     # Exports script for adding ACLs to certs into a directory VMs\<VMName>
@@ -460,7 +460,7 @@ Only user accounts that have the Global Administrator directory role can add cer
 
 1. Download and install the latest version of Azure PowerShell on a client machine. For more information, see [Install and configure Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-4.1.0&viewFallbackFrom=azurermps-4.0.0).
 2. Sign in to the [customer's Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
-3. Run the following script from \$(DownloadPath)\\InfrastructureScripts.
+3. Run the following script from $(DownloadPath)\\InfrastructureScripts.
 
    ```
    .\AddCertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
@@ -496,7 +496,7 @@ Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.
 
 6. Go back to Server Manager, select **File and Storage Services** \> **Shares**.
 7. Click **Tasks** \> **New Share** to create a new share with name **agent**.
-8. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (contoso\\svc-LocalAgent\$).
+8. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (contoso\\svc-LocalAgent$).
 
 ### Set up SQL Server
 
@@ -535,14 +535,14 @@ $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$li
 ### Configure the OrchestratorData database
 
 1.  Create an empty database, and name it **OrchestratorData**. This database is used by the on-premises local agent to orchestrate deployments.
-2.  Grant the local agent gMSA (svc-LocalAgent\$) **db\_owner** permissions on the database:
+2.  Grant the local agent gMSA (svc-LocalAgent$) **db\_owner** permissions on the database:
 
     1. In the tree, expand the server name, expand **Security** \> **Logins**, and then right-click, and click **New Login**.
 
         ![New Login command](./media/OPSetup_01_NewLogin.png)
 
 
-    2. Look up the **svc-LocalAgent\$** service account. Click **Locations**, and select **Entire Directory**, and then click **Object Types**, and select **Service Account**.
+    2. Look up the **svc-LocalAgent$** service account. Click **Locations**, and select **Entire Directory**, and then click **Object Types**, and select **Service Account**.
 
         ![Select User, Service Account, or Group dialog box](./media/OPSetup_02_SelectUserServiceAccountOrGroupDialogBox.png)
 
@@ -583,13 +583,13 @@ $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$li
 
     | User             | Type    | Database role |
     |------------------|---------|---------------|
-    | svc-AXSF\$       | gMSA    | db\_owner     |
-    | svc-LocalAgent\$ | gMSA    | db\_owner     |
-    | svc-FRPS\$       | gMSA    | db\_owner     |
-    | svc-FRAS\$       | gMSA    | db\_owner     |
+    | svc-AXSF$        | gMSA    | db\_owner     |
+    | svc-LocalAgent$  | gMSA    | db\_owner     |
+    | svc-FRPS$        | gMSA    | db\_owner     |
+    | svc-FRAS$        | gMSA    | db\_owner     |
     | axdbadmin        | SqlUser | db\_owner     |
 
-7. Give the svc-AXSF\$ user and the axdbadmin SQL user access to the following roles in the tempdb database:
+7. Give the svc-AXSF$ user and the axdbadmin SQL user access to the following roles in the tempdb database:
 
     - db\_datareader
     - db\_datawriter
@@ -609,9 +609,9 @@ $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$li
 
     | User             | Type | Database role |
     |------------------|------|---------------|
-    | svc-LocalAgent\$ | gMSA | db\_owner     |
-    | svc-FRPS\$       | gMSA | db\_owner     |
-    | svc-FRAS\$       | gMSA | db\_owner     |
+    | svc-LocalAgent$  | gMSA | db\_owner     |
+    | svc-FRPS$        | gMSA | db\_owner     |
+    | svc-FRAS$        | gMSA | db\_owner     |
 
 ### Encrypt credentials
 
