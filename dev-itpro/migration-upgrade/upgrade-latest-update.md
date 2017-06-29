@@ -3,9 +3,9 @@
 
 title: Overview of moving to the latest update of Finance and Operations
 description: This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations. This topic is intended to describe the overall process and supported scenarios, not to provide detailed instructions for every step of the process.
-author: MargoC
+author: tariqbell
 manager: AnnBe
-ms.date: 05/23/2017
+ms.date: 06/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,9 +15,9 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer
+audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 11
+ms.reviewer: margoc
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 102343
