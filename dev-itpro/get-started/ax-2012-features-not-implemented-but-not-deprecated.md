@@ -314,7 +314,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="odd">
 <td>Secure global address book</td>
-<td>Ability to secure global address book by legal entity and address book. This feature will be available in a future update.</td>
+<td>The ability to secure the global address book by legal entity and address book has not yet been implemented. This feature will be available in a future update.</td>
 </tr>
 </tbody>
 </table>
