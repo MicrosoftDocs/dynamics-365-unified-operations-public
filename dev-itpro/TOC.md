@@ -1324,6 +1324,16 @@
 #### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 #### [Deploy Microsoft Dynamics 365 for Finance and Operations on-premises](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+##### [Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) overview](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [System requirements](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Hardware sizing for on-premises environments](/dynamics365/unified-operations/dev-itpro/get-started/hardware-sizing-on-premises-environments?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Online service and on-premises software lifecycle policy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](/dynamics365/unified-operations/dev-itpro/https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Create an on-premises project in Lifecycle Services](/dynamics365/unified-operations/dev-itpro/deployment/lifecycle-services/lbd-create-lcs-on-prem-project?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Set up and deploy on-premises environments](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Configure SQL Server Reporting Services for an on-premises deployment](/dynamics365/unified-operations/dev-itpro/analytics/configure-ssrs-on-premises?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Develop and deploy custom models to on-premises environments](/dynamics365/unified-operations/dev-itpro/deployment/develop-deploy-custom-models-on-premises?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+
 
 #### Deploy custom code
 ##### [Create a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
