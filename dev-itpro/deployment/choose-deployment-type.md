@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Chose your deployment type 
-description: Dynamics 365 for Finance and Operations, Enterprise edition now supports running business processes in the cloud or on-premises. This topic provides information about the different deployment types. 
+title: Choose your deployment type 
+description: Dynamics 365 for Finance and Operations, Enterprise edition now supports running business processes in the cloud or on-premises. This topic provides information about the different deployment options. 
 author: kfend
 manager: AnnBe
 ms.date: 06/29/2017
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
 ---
-# Chose your deployment type
+# Choose your deployment type
 
 ## Cloud
 
