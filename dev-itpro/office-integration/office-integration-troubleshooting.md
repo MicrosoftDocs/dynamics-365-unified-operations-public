@@ -44,6 +44,10 @@ Frequently asked questions
 
 The Excel Add-in and Word Add-in are built using the Office Web/JavaScript Add-in framework that was initially released for Office 2013, but received significant updates in Office 2016. For more information, see [Office Add-in host and platform availability](http://dev.office.com/add-in-availability). The Excel Add-in requires the ExcelAPI 1.2, so use the [Office Add-in host and platform availability](http://dev.office.com/add-in-availability) matrix to determine which platforms it is supported on. For many users, the phrase "Excel 2016 with the latest updates" is sufficient.
 
+### Are the Office Add-ins safe?
+
+In the age of ransomware, full connectivity, and compliance risks nothing is fully safe, but the web add-ins are about as safe as any other website since they are effectively just a web application that interacts with the Office Client products via a limited API. For more details, read [What can an Office Add-in do?](https://dev.office.com/docs/add-ins/overview/office-add-ins#what-can-an-office-add-in-do)
+
 ### Is Office for Mac supported for the Excel Add-in?
 
 No. Mac and iOS support is currently under development. There are authentication differences in how the Office JS APIs function in Safari versus Internet Explorer, particularly in the authentication space. See [Office Add-in host and platform availability](http://dev.office.com/add-in-availability) for details about Office JS API platform support.
@@ -63,6 +67,20 @@ Office has many different releases, which receive updates at different times and
 ### Why am I having trouble signing into the Excel Add-in?
 
 The Excel Add-in runs inside an Internet Explorer (IE) window. The Excel Add-in will pick up stored credentials from IE by default, and IE will provide the current Windows credentials if there are no stored credentials. Ensure that you are trying to sign in with the correct credentials. In the Excel Add-in, explicitly sign out and then sign in to ensure that the desired credentials are in use.
+
+### The Excel Add-in seems to be slow when publishing records, how can I understand more about what is happening?
+
+There is a certain amount of work that the Excel Add-in is doing. The majority of the work happening should be on the server.
+For more details about where the time is being spent then [Fiddler (a free download)](http://www.telerik.com/fiddler) can be used to make sure that the Excel Add-in is working as expected. The Excel Add-in sends out the published records as a request and once those records are processed then the response is sent back from the server. The Excel Add-in should then create another message containing the next set of records to publish and send that request. The time gap between the previous response from the server and the next request to the server should be 5-10 seconds of Excel Add-in processing time.
+
+To check processing time in the Excel Add-in vs the server/service:
+- Open [Fiddler](http://www.telerik.com/fiddler) 
+- Do a test publish of a few records
+- Ensure that you can see that request and response in Fiddler ([ensure that HTTPS traffic is being decrypted](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/DecryptHTTPS))
+- Do the larger publish 
+- In Fiddler, watch for timing from a request to its response and from a response to the next request.
+- If the request to response time is large, then the bottleneck is the server/service.
+- If the response to next request time is large, then the bottleneck is the Excel Add-in (the client).
 
 ## Troubleshooting issues
 ### \[Fixed\] Issue: During Excel Add-in sign-in, an error appears "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ"
