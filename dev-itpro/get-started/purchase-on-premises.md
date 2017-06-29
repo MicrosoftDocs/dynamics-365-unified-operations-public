@@ -81,7 +81,4 @@ Access to the Provisioning guide can be found here:
 
 - [Provisioning guide on PartnerSource](https://go.microsoft.com/fwlink/?linkid=852081)
 
-> [!IMPORTANT]
-> The Provisioning guide for the on-premises version of Finance and Operations has not yet been released. We will update this topic when it is available. 
-
 After you have logged into LCS, a project will be automatically provisioned for you. The LCS project will allow you to deploy Finance and Operations (on-premises). For more details on getting started with your LCS project, see [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
