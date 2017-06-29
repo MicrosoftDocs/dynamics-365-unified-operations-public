@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: OIOUBL standards for electronic invoicing
+title: Supported standards for electronic invoicing in Europe
 description: This topic explains what level of coverage we have for electronic invoicing in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in the European region. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -21,7 +21,7 @@ ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 10274
-ms.search.region: Austria, Denmark, Italy, Norway, Spain
+ms.search.region: Austria, Denmark, Italy, Norway, Spain, France, Belgium, Netherlands
 ms.search.industry: Public sector
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# OIOUBL standards for electronic invoicing
+# Supported standards for electronic invoicing in Europe
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,12 +41,37 @@ The [European Commission](http://ec.europa.eu/finance/payments/einvoicing/index_
 What electronic invoice formats are currently supported in Finance and Operations?
 ---------------------------------------------------------------------------------------
 
+The following country-specific formats of electronic invoices are currently supported in Dynamics 365 for Operations (1611):
 
-Dynamics 365 for Operations (1611) offers implementation of electronic invoicing based on [electronic reporting](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting). There is a **Customer invoice model** data model and a number of country-specific electronic reporting format configurations created for Austria, Denmark, Italy, Norway and Spain:
--   OIOUBL Sales & Project invoice (AT, DK, NO)
--   OIOUBL Sales & Project credit note (AT, DK, NO)
--   Sales & Project invoice (ES)
--   Sales & Project invoice (IT)
+-   OIOUBL v.2.02 for Denmark
+-   EHF v.2.0.8 for Norway
+-   PEPPOL BIS v.2 for Austria, France and Belgium
+-   UBL-OHNL 1.9 for the Netherlands
+-   FacturaE v.3.2.1 for Spain
+-   FatturaPA v.1.2 for Italy
+
+Dynamics 365 for Operations (1611) offers implementation of electronic invoicing based on [electronic reporting](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting). There is a **Customer invoice model** data model and a number of country-specific electronic reporting format configurations created for Austria (AT), Denmark (DK), Italy (IT), Norway (NO), Spain (ES), France (FR), Belgium (BE) and the Netherlands (NL):
+
+-   "OIOUBL Sales invoice" - for AT, DK and NO
+-   "OIOUBL Sales credit note" - for AT, DK and NO
+-   "OIOUBL Project invoice" - for AT, DK and NO
+-   "OIOUBL Project credit note" - for AT, DK and NO
+-   "UBL Sales Invoice FR"
+-   "UBL Sales Credit Note FR"
+-   "UBL Project Invoice FR"
+-   "UBL Project Credit Note FR"
+-   "UBL Sales Invoice BE"
+-   "UBL Sales Credit Note BE"
+-   "UBL Project Invoice BE"
+-   "UBL Project Credit Note BE" 
+-   "UBL Sales Invoice NL"
+-   "UBL Sales Credit Note NL"
+-   "UBL Project Invoice NL"
+-   "UBL Project Credit Note NL" 
+-   "Sales invoice (ES)"
+-   "Sales invoice (IT)"
+-   "Project invoice (ES)"
+-   "Project invoice (IT)"
 
 The electronic invoices and credit notes that you generate include required information, such as a European Article Numbering (EAN) number, contact person, dimension account number, and address information for the customer. In Finance and Operations, validation rules are applied when invoices are generated so you can verify that the correct information has been entered. The set of required information may differ from country to country. As the requirements as well as supported countries and formats is subject to change, you should always go to the Shared asset library on Microsoft Dynamics Lifecycle services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**.
 
