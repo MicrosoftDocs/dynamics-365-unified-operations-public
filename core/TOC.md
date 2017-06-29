@@ -1,7 +1,7 @@
 # [Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/fin-and-ops/index?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## [Get started](/dynamics365/unified-operations/fin-and-ops/get-started/onboarding-home?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### Before you buy
+## Get started
+### [Before you buy](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Sign up for preview subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Deploy a demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Choose a deployment option
