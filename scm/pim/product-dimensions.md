@@ -18,7 +18,7 @@ ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProdu
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985

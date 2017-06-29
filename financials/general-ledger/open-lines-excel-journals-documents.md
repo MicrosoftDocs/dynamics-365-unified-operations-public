@@ -18,7 +18,7 @@ ms.search.form: LedgerJournalTable
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 101
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 62213
 ms.assetid: 211874a7-4bf0-4a0c-96c2-fa05042777d3

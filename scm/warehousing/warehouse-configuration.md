@@ -18,7 +18,7 @@ ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfil
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 11554
 ms.assetid: 262b7b88-2cce-44f7-9a5b-77c12af1be20

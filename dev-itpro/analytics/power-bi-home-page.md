@@ -20,7 +20,7 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
-ms.search.scope: Operations
+ms.search.scope: Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 265694
 ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
@@ -63,7 +63,9 @@ If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise ed
 ### Accessing the content
 
 #### Embedded content
-Except for the content that is marked with an asterisk (\*), all the content in the preceding list is embedded in the application. To learn more about where you can view the Power BI content, click the links.
+Except for the content that is marked with an asterisk (\*), all the content in the preceding list is embedded in the application. To learn more about where you can view the Power BI content, click the links above.
+
+To view data in the Power BI reports, be sure to refresh the Entity store. For more information, see the *Update Entity store* section of [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
 #### Files available in Lifecycle Services
 This Power BI content is available in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and connect it to your data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.

@@ -18,7 +18,7 @@ ms.search.form: ProjCategory
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2094
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 78253
 ms.assetid: cfdd58a0-8afa-4a6f-a208-a76e2c162429
