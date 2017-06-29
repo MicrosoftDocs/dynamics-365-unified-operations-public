@@ -50,6 +50,9 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </thead>
 <tbody>
 <tr class="odd">
+<td>Intelligent Data Management Framework (IDMF)</td>
+<td>IDMF allowed system administrators to optimize the performance of Microsoft Dynamics AX installations. IDMF assessed the health of the application, analyzed current usage patterns, and helped reduce database size.</td>
+</tr><tr class="odd">
 <td>Alerts</td>
 <td>Implementation of the alerts functionality is planned for a future update. Alerts help users keep track of data changes in the system.</td>
 </tr>
