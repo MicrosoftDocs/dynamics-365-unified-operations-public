@@ -18,7 +18,7 @@ ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesT
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 121
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 55021
 ms.assetid: 49c492b0-b018-44e0-928f-9671e54eee20

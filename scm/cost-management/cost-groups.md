@@ -18,7 +18,7 @@ ms.search.form: BOMCostGroup
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: a:2:{s:4:"name";s:23:"Yuyu Charlotte Scheller";s:2:"id";s:0:"";}
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 50871
 ms.assetid: 1855f744-f73f-4fa8-8290-a7ee126d368b

@@ -18,7 +18,7 @@ ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 21761
 ms.search.region: Global

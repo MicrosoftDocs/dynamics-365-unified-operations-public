@@ -18,7 +18,7 @@ ms.search.form: OfficeAppParameters
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 72263
 ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6

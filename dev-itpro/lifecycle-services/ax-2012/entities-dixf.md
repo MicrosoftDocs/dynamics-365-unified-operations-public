@@ -18,7 +18,7 @@ ms.technology: ax-2012
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012
+ms.search.scope: AX 2012, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 18011
 ms.assetid: 46b9d56e-8692-45af-8e86-22ec0192444f

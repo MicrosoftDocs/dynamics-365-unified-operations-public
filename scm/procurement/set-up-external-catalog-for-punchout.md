@@ -18,7 +18,7 @@ ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360

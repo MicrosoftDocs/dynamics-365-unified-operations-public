@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer 
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 14721
 ms.assetid: b3d527bf-6b56-42fb-a135-493a62eb1435
