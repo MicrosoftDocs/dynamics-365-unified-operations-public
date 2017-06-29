@@ -46,7 +46,7 @@ The Excel Add-in and Word Add-in are built using the Office Web/JavaScript Add-i
 
 ### Are the Office Add-ins safe?
 
-In the age of ransomware, full connectivity, and compliance risks nothing is fully safe, but the web add-ins are about as safe as any other website since they are effectively just a web application that interacts with the Office Client products via a limited API. For more details, read [What can an Office Add-in do?](https://dev.office.com/docs/add-ins/overview/office-add-ins#what-can-an-office-add-in-do)
+In the age of malware, full connectivity, and compliance risks, nothing is completely secure. However, the web add-ins, like other websites, are essentially a web application that interacts with the Office Client products via a limited API. For more details, read [What can an Office Add-in do?](https://dev.office.com/docs/add-ins/overview/office-add-ins#what-can-an-office-add-in-do)
 
 ### Is Office for Mac supported for the Excel Add-in?
 
@@ -70,15 +70,15 @@ The Excel Add-in runs inside an Internet Explorer (IE) window. The Excel Add-inÂ
 
 ### The Excel Add-in seems to be slow when publishing records, how can I understand more about what is happening?
 
-There is a certain amount of work that the Excel Add-in is doing. The majority of the work happening should be on the server.
-For more details about where the time is being spent then [Fiddler (a free download)](http://www.telerik.com/fiddler) can be used to make sure that the Excel Add-in is working as expected. The Excel Add-in sends out the published records as a request and once those records are processed then the response is sent back from the server. The Excel Add-in should then create another message containing the next set of records to publish and send that request. The time gap between the previous response from the server and the next request to the server should be 5-10 seconds of Excel Add-in processing time.
+There is a certain amount of work that the Excel Add-in is doing. The majority of the work should be on the server.
+For more details about where the time is being spent, you can use [Fiddler (a free download)](http://www.telerik.com/fiddler) to help ensure that the Excel Add-in is working as expected. The Excel Add-in sends out the published records as a request. When those records are processed, the response is sent back from the server. The Excel Add-in should then create another message containing the next set of records to publish and send that request. The time lapse between the previous response from the server and the next request to the server should be 5-10 seconds of Excel Add-in processing time.
 
-To check processing time in the Excel Add-in vs the server/service:
-- Open [Fiddler](http://www.telerik.com/fiddler) 
-- Do a test publish of a few records
-- Ensure that you can see that request and response in Fiddler ([ensure that HTTPS traffic is being decrypted](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/DecryptHTTPS))
-- Do the larger publish 
-- In Fiddler, watch for timing from a request to its response and from a response to the next request.
+To check processing time in the Excel Add-in versus the server/service:
+- Open [Fiddler](http://www.telerik.com/fiddler). 
+- Test the process of publishing a few records.
+- Ensure that you can view that request and response in Fiddler ([ensure that HTTPS traffic is being decrypted](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/DecryptHTTPS)).
+- Publish a larger number of records. 
+- In Fiddler, watch the timing from a request to its response and the timing from a response to the next request.
 - If the request to response time is large, then the bottleneck is the server/service.
 - If the response to next request time is large, then the bottleneck is the Excel Add-in (the client).
 
