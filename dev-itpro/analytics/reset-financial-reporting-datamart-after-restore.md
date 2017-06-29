@@ -110,8 +110,10 @@ Import your report designs from the Report Designer, using the file created duri
 
 1.  In the Report Designer, go to **Company** &gt; **Building Block Groups**.
 2.  Select the building block group to export, and click **Export**. 
+
     > [!NOTE]
     > For Finance and Operations, only one building block group is supported, **Default**.
+    
 3.  Select the **Default** building block and click **Import**.
 4.  Select the file containing the exported report definitions and click **Open**.
 5.  In the Import dialog box, select the report definitions to import:
