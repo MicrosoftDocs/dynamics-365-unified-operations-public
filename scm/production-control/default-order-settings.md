@@ -18,7 +18,7 @@ ms.search.form: InventItemOrderSetup
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2094
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4

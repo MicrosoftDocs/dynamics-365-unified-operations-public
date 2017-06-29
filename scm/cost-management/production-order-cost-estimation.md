@@ -18,7 +18,7 @@ ms.search.form: BOMCalcTrans, InventCostTrans, ProdCalcTrans, ProdTableJour, Pro
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2094
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 80633
 ms.assetid: b4625d10-c852-4fda-b718-79df458de0d4

@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: twheeloc
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
