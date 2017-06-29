@@ -2,7 +2,7 @@
 # required metadata
 
 title: Introduction to Dynamics 365 for Finance and Operations
-description: Microsoft Dynamics 365 for Finance and Operations is Microsoft’s business application for enterprises. This page helps you learn and get start using the product. 
+description: Microsoft Dynamics 365 for Finance and Operations is Microsoft’s business application for enterprises. This page helps you learn and get started using the product. 
 author: margoc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,11 +17,10 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 71
+ms.reviewer: margoc
 
 # ms.tgt_pltfrm: 
 ms.custom: 62303
-ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
 ms.search.region: Global
 # ms.industry: 
 ms.author: margoc
@@ -29,6 +28,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
+
 # Introduction to Dynamics 365 Finance and Operations
 
 [!include[banner](includes/banner.md)]
@@ -45,7 +45,13 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><h3>Financials</h3>
+<td>
+<h3>Before you buy</h3>
+<p>Try Finance and Operations</p>
+<p>Choose a deployment option</p>
+<p>Buy Finance and Operations</p>
+
+<h3>Financials</h3>
 <p><a href="../financials/general-ledger/audit-policy-rules">Compliance</a></p>
 <p>Financial management</p>
 <ul style="list-style-type:none">
@@ -99,9 +105,10 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 
 <p>Administrator functionality<p>
 <ul style="list-style-type:none">
-<li><a href="../fin-and-ops/get-started/onboarding-home">Onboarding your organization</a></li>
-<li><a href="../dev-itpro/deployment/deploy-demo-environment">Deployment and servicing</a></li>
+
+<li><a href="../dev-itpro/deployment/deploy-demo-environment">Deployment</a></li>
 <li><a href="../dev-itpro/migration-upgrade/upgrade-home-page">Upgrade</a></li>
+<li><a href="../dev-itpro/migration-upgrade/upgrade-home-page">Servicing and hotfixes</a></li>
 <li><a href="../dev-itpro/data-entities/data-management-integration-data-entity">Data management</a></li>
 <li><a href="../dev-itpro/lifecycle-services/lcs">Lifecycle Services</a></li>
 <li><a href="../fin-and-ops/organization-administration/organization-administration-home-page">Organization administration</a></li>
@@ -110,6 +117,7 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 </td>
 <td>
 <h3>Related products</h3>
+
 <h4>Dynamics 365 for Talent</h4>
 <p><a href="../talent/manage-benefit-program">Benefits</a></p>
 <p><a href="../talent/performance-management-overview">Employee development and training</a></p>
