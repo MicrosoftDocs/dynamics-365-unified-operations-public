@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Prepare to migrate to Finance and Operations
+title: Prepare to migrate code to Finance and Operations
 description: In this topic, we will describe the LCS code upgrade service and Visual Studio tools that help you migrate your code and metadata from Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Finance and Operations. Most of these steps also apply to code migration between two major versions of Finance and Operations. 
 author: RobinARH
 manager: AnnBe
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Prepare to migrate to Finance and Operations
+# Prepare to migrate code from Dynamics AX 2012 R3 to Dynamics 365 for Finance and Operations, Enterprise edition
 
 [!include[banner](../includes/banner.md)]
 
 
-In this topic, we will describe the LCS code upgrade service and Visual Studio tools that help you migrate your code and metadata from Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Finance and Operations. Most of these steps also apply to code migration between two major versions of Finance and Operations. 
+In this topic, we will describe the Lifecycle Services (LCS) Code upgrade service and Visual Studio tools that help you migrate your code and metadata from Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Finance and Operations. Most of these steps also apply to code migration between two major versions of Finance and Operations. 
 
 Prerequisites
 -------------
