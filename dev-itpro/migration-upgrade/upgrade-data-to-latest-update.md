@@ -176,6 +176,100 @@ This process is only designed to be used in a development scenario. It is an ai
 Each successfully executed script records the amount of time that it took to process in minutes in the **ReleaseUpdateScriptsLog.DurationMins** column. This is intended as a simple way to identify the longest running scripts when working on performance tuning the data upgrade process. It is important to understand that the timings are the duration for each script to run, however multiple scripts will run in parallel, so the sum of the **DurationMins** column is greater than the overall duration of the upgrade process.
 
 ## Known issues
+### Duplicate key was found for the object name 'dbo.RESOURCESETUP' 
+When upgrading a database, you may experience the following error during the database synchronize phase of the runbook process.
+
+> Database execution failed: The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.RESOURCESETUP' and the index name 'I_6716AK'
+
+This is a known issue that will be resolved in a future hotfix. The workaround is to delete the duplicate rows from this table by executing the following SQL script against the database from SQL Server Management Studio:
+
+    delete RS from ResourceSetup as RS
+    join ResResourceIdentifier as RRI on RRI.RecId = RS.Resource_
+    join WrkCtrTable as WCT on WCT.RecId = RRI.RefRecId
+    join DirPartyTable as DPT on DPT.DataArea = WCT.DataAreaId
+    where DPT.DataArea != '' and RS.LegalEntity != DPT.RecId
+
+
+### Cannot select a record in Dimension hierarchy nodes (CAMDataDimensionHierarchyNode). 
+When upgrading a database, you may experience the following error during the database synchronize phase of the runbook process.
+
+>  Cannot select a record in Dimension hierarchy nodes (CAMDataDimensionHierarchyNode). Dimension hierarchy: 0. The SQL database has issued an error. Object Server DynamicsAXBatchManagement:  [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Invalid column name 'RELATIONTYPE'. 
+
+This is a known issue that will be resolved in a future release. The workaround is to create a missing field in several tables by executing the following SQL script against the database from SQL Server Management Studio:
+
+    SET ANSI_NULLS ON
+    GO
+    SET QUOTED_IDENTIFIER ON
+    GO
+    DROP PROCEDURE IF EXISTS [DBO].PATCHRELATIONTYPE
+    GO 
+
+    CREATE PROCEDURE [DBO].PATCHRELATIONTYPE
+            @TABLENAME SYSNAME
+        AS
+        BEGIN
+            DECLARE @TABLEID		INT	;
+            DECLARE @FIELDID		INT	;
+            DECLARE @FIELDNAME		SYSNAME;
+            DECLARE @SQLTATEMENT NVARCHAR(1024);
+            DECLARE @TOTALRECORDS	INT;
+            DECLARE @ParmDefinition			NVARCHAR(150);
+
+            SET NOCOUNT ON;
+
+            SELECT @FIELDNAME = 'RELATIONTYPE';
+            SELECT @FIELDID = 61453; --Hardcoded in code DBFIELD_DISCRIMINATOR
+            IF OBJECT_ID(@TABLENAME, 'U') IS NULL 
+            BEGIN
+                PRINT @TABLENAME + ' table does not exists. Please provide a base table';
+                RETURN;
+            END
+
+            IF EXISTS(SELECT 1 FROM SYS.COLUMNS
+              WHERE NAME = @FIELDNAME
+              AND OBJECT_ID = OBJECT_ID(@TABLENAME))
+            BEGIN
+                PRINT @TABLENAME + ' table contains RelationType. No patching needed.';
+                RETURN;
+            END
+            PRINT @TABLENAME + ' table does not contain RelationType.';
+            SELECT @TABLEID = ID FROM TABLEIDTABLE WHERE NAME = @TABLENAME;
+            IF @@ROWCOUNT <> 1
+            BEGIN
+                PRINT @TABLENAME + ' was not present in TABLEIDTABLE. Cannot proceed!!';
+                RETURN;
+            END 
+
+            -- Ensure that instancerelationtype is added. We don't want to randomly add relationtype to any table.
+            IF NOT EXISTS (SELECT * FROM SQLDICTIONARY WHERE TABLEID = @TABLEID AND NAME = 'InstanceRelationType')		
+            BEGIN
+                PRINT @TABLENAME + ' table does not exists. Please provide a base table';
+                RETURN;
+            END
+
+            -- Ensure SQLDictionary is populated
+            IF NOT EXISTS (SELECT * FROM SQLDICTIONARY WHERE TABLEID = @TABLEID AND FIELDID = @FIELDID)
+            BEGIN
+                INSERT INTO SQLDICTIONARY (TABLEID, FIELDID, ARRAY, NAME, SQLNAME, FIELDTYPE, STRSIZE, SHADOW, RIGHTJUSTIFY, NULLABLE, FLAGS, RECVERSION)
+                VALUES (@TABLEID,@FIELDID,1, @FIELDNAME, @FIELDNAME, 49, 0, 0, 0, 0, 0, 1);
+                PRINT 'Inserted into SqlDictionary';
+            END
+
+            -- Actual alter statement
+            SELECT @SQLTATEMENT = 'ALTER TABLE ' + @TABLENAME +  ' ADD ' + @FIELDNAME + ' BIGINT NOT NULL DEFAULT 0';
+            PRINT 'Issuing ' + @SQLTATEMENT;
+            EXEC (@SQLTATEMENT);
+
+            SELECT @SQLTATEMENT = 'UPDATE ' + @TABLENAME +  ' SET RELATIONTYPE = 0';
+            PRINT 'Issuing ' + @SQLTATEMENT;
+            EXEC (@SQLTATEMENT);
+        END;
+    GO
+    exec PatchRelationType  'CAMDATADIMENSIONHIERARCHYNODE'
+    exec PatchRelationType  'CAMDataJournal'
+    exec PatchRelationType  'CAMDataCostAccountingLedgerSourceEntryProvider'
+    exec PatchRelationType  'CAMDataImportedDimensionMember'
+
 ### Cannot create index on InventDistinctProduct
 
 When upgrading a database, you may experience the following error during the database synchronize phase of the runbook process.
