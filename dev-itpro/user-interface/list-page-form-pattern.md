@@ -92,7 +92,7 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
+-   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 
 **List Page guidelines:**
 
@@ -109,8 +109,8 @@ The verification checklist shows the steps for manually verifying that the form
 -   **Grid**:
     -   For transactional entities, the **ID** field should be the first column, followed by the master entity **ID** and **Name** fields.
     -   For master entities, the **Name** field should be the first column, followed by the **ID** field.
--   **ActionPane** guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md)document in the ActionPane guidelines section.
--   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md)document.
+-   **ActionPane** guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md) document in the ActionPane guidelines section.
+-   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md) document.
 
 ## Examples
 Form: **SalesTableListPage** [![List Page example](./media/listpage2-1024x510.png)](./media/listpage2.png)
