@@ -51,9 +51,9 @@ This pattern didn't exist for Microsoft Dynamics AX 2012.
 ## Model
 ### High-level structure
 
-TabPage
+- TabPage
 
-*ChartPart (FormPart) \[0..N\]*
+    - *ChartPart (FormPart) \[0..N\]*
 
 Each Form Part points to a form that contains a single chart. Each of these forms should use the [Section Chart](section-chart-form-pattern.md) form pattern.
 
@@ -85,6 +85,3 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
-
-
-

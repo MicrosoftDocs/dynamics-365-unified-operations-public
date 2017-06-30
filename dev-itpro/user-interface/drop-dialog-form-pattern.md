@@ -62,23 +62,20 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### Drop dialog (basic) – High-level structure
 
-Design
+- Design
 
-*SecondaryInstruction (StaticText) \[optional\]*
+    - *SecondaryInstruction (StaticText) \[optional\]*
+    - DialogContent (Group)
+    - DialogCommitContainer (ButtonGroup)
 
-DialogContent (Group)
-
-DialogCommitContainer (ButtonGroup)
-
-OKButton ($Button)
+        - OKButton ($Button)
 
 ### Drop dialog (read only) – High-level structure
 
-Design
+- Design
 
-*SecondaryInstruction (StaticText) \[optional\]*
-
-DialogContent (Group)
+    - *SecondaryInstruction (StaticText) \[optional\]*
+    - DialogContent (Group)
 
 ### Core components
 
@@ -161,6 +158,3 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![DropDialog(4)](./media/dropdialog4.png)](./media/dropdialog4.png)
-
-
-

@@ -21,12 +21,11 @@ audience: IT Pro
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 267934
-ms.assetid: 26681541-bee2-4f54-92bd-f549e3b414c1
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: margoc
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.dyn365.ops.version: Version 1611, July 2017 update
 
 ---
 
@@ -43,7 +42,7 @@ Microsoft FastTrack for Dynamics 365 is our customer success service designed to
 
 | **Minimum seats**                                                                  | **Eligible SKUs, Apps, or Plans** |
 |--------------------------------------------------------------------------------|-------------------------------|
-| 250 combined eligible App or Plan user subscription licenses                   | Sales <br> Field service <br>Customer service <br> Project service automation<br>Dynamics 365 Customer Engagement Plan<br>Dynamics 365 Plan with a commitment to implement Sales, Field Service, Customer Service, or Project Service Automation apps                         |
+| 250 combined eligible App or Plan user subscription licenses                   | Dynamics 365 for Sales <br> Dynamics 365 for Field service <br> Dynamics 365 for Customer service <br> Dynamics 365 for Project service automation<br>Dynamics 365 Customer Engagement Plan<br>Dynamics 365 Plan with a commitment to implement Sales, Field Service, Customer Service, or Project Service Automation apps                         |
 | 20 combined eligible App or Plan user subscription licenses, or the equivalent | Dynamics 365 Unified Operations Plan <br>Dynamics 365 Plan, with a commitment to implement the Finance and Operations app<br><br>**Note:** 2.5 device subscription licenses are considered the equivalent of one Finance and Operations user subscription license   
 
 **Product offering: Dynamics CRM Online**

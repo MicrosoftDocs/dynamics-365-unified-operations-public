@@ -52,12 +52,12 @@ Finance and Operations includes a Help system that is based on two main componen
 
 You can access both help topics and task guides from the Help pane in whichever product you are using. The following screenshot shows Dynamics 365 for Finance and Operations
 
-![Help pane](./media/help-pane-ops-task-guides-1024x741.png)
+![Help pane](./media/help-pane-ops-task-guides.png)
 
 This topic describes the Help system, and explains how you can create custom documentation and training resources for your organization.
 
 > [!IMPORTANT]
-> The **Task guides** tab is currently not available in Microsoft Dynamics 365 for Talent and Microsoft Dynamics 365 for Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)) for both Retail and Talent.
+> The **Task guides** tab is currently not available in Microsoft Dynamics 365 for Talent and Microsoft Dynamics 365 for Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index) for both Retail and Talent.
 
 ## Help on docs.microsoft.com
 
@@ -71,13 +71,14 @@ The docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynami
 ### Searching on docs.microsoft.com
 We get a lot of questions about how to search for our content. On our site, if you start from a page about Finance and Operations, we scope your search to just be for Finance and Operations content. You can remove the scoping by clicking the X next to Operations in the search box. 
 
-![Search](./media/search-scope.png)
+![Search](./media/search-scope-2.png)
 
 You can also find our content with any search engine. We recommend that for best results, you use a site search, such as 
 site:docs.microsoft.com dynamics 365 "search term".  
-![Site search](./media/site-search.png)
 
-![Site search results](./media/site-search-results.png)
+![Site search](./media/site-search-1.png)
+
+![Site search results](./media/site-search-results-2.png)
 
 ### The docs.microsoft.com table of contents for Unified Operations
 All products share a single table of contents on the docs site, which enables customers to see the context of the topic they are in. It also enables you to use the Filter control to find topics that you are looking for.
@@ -109,7 +110,7 @@ A Task guide is a controlled, guided, interactive experience that leads you thro
 
 We will provide different sets of task guides for each Unified Operations product. The section Accessing Task guides from the Help pane describes how to find the correct task guides for your product. 
 
-![Task guide reading view](./media/task-guide-ops-1024x742.png)
+![Task guide reading view](./media/task-guide-ops.png)
 
 To begin the guided, interactive experience, click **Start task guide** at the bottom of the Help pane. A black pointer opens and indicates the action that you must perform. Follow the directions that appear in the UI, and enter data as directed. 
 ![Task guide step instruction](./media/task-guide-step-1-ops.png)
@@ -133,7 +134,7 @@ You can create your own task recordings, or you can download and customize task 
 ## In-product Help
 To access Help content within Finance and Operations, either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. 
 
-![Help pane](./media/help-pane-wiki-1024x684.png)
+![Help pane](./media/help-pane-wiki.png)
 
 ### Accessing help topics from the Help pane
 
@@ -166,7 +167,7 @@ On the **System parameters** page, follow these steps:
 
 After a System administrator has completed these steps, you can open the Help pane and click the **Task guides** tab. You'll now see the Task guides that apply to the page that you’re currently on in Finance and Operations. If no Task guides are found, you can enter keywords to refine your search. After you click a Task guide in the Help pane, the Help pane shows the step-by-step instructions, and you can play the task guide. 
 
-![Task guide reading view](./media/task-guide-ops-1024x742.png)
+![Task guide reading view](./media/task-guide-ops.png)
 
 ### Where are the translated Task guides?
 

@@ -62,25 +62,21 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### Image only – High-level structure
 
-\[Container\] (Columns = Fixed – 1)
+- \[Container\] (Columns = Fixed – 1)
 
-*Toolbar (ActionPane) \[Optional\]*
-
-Image
+    - *Toolbar (ActionPane) \[Optional\]*
+    - Image
 
 ### Image and fields – High-level structure
 
-\[Container\] (Columns = Fixed – 1)
+- \[Container\] (Columns = Fixed – 1)
 
-*Toolbar (ActionPane) \[Optional\]*
+    - *Toolbar (ActionPane) \[Optional\]*
+    - Image
+    - Group
 
-Image
-
-Group
-
-            Image
-
-            Group - Note: uses a fields subpattern
+        - Image
+        - Group - Note: uses a fields subpattern
 
 ### Core components
 
@@ -125,6 +121,3 @@ None.
 ### AX 2012 content
 
 [![ImagePreview(3)](./media/imagepreview3.png)](./media/imagepreview3.png)
-
-
-
