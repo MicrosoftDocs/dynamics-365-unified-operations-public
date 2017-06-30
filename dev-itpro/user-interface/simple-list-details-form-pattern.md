@@ -73,23 +73,18 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### High-level structure
 
-Design
+- Design
 
-ActionPane
+    - ActionPane
+    - NavigationList (Group)
 
-NavigationList (Group)
+        - Quick Filter
+        - *CustomFilterGroup (Group) \[Optional\]*
+        - ListStyleGrid (Grid) | Tree | TabularGrid (Grid)
 
-Quick Filter
-
-*CustomFilterGroup (Group) \[Optional\]*
-
-ListStyleGrid (Grid) | Tree | TabularGrid (Grid)
-
-VerticalSplitter (Group) *\[only allowed for Tree or TabularGrid variants\]*
-
-DetailsHeader (Group)
-
-DetailsTab (Tab)
+    - VerticalSplitter (Group) *\[only allowed for Tree or TabularGrid variants\]*
+    - DetailsHeader (Group)
+    - DetailsTab (Tab)
 
 ### Core components
 
@@ -109,9 +104,11 @@ DetailsTab (Tab)
 -   [Nested Simple List and Details](nested-simple-list-details-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
+**Standard form guidelines:**
+
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 **Simple list & detail guidelines:**
 
@@ -157,7 +154,7 @@ Form: **FiscalCalendars**
 This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
 -   **When do I use icons on actions in the toolbars?**
-    -   See the Button Image Guidelines in the [General Form Guidelines](general-form-guidelines.md)document.
+    -   See the Button Image Guidelines in the [General Form Guidelines](general-form-guidelines.md) document.
 
 ### Open issues
 
@@ -173,6 +170,3 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![AX 2012 example](./media/simplelistanddetails5.png)](./media/simplelistanddetails5.png)
-
-
-
