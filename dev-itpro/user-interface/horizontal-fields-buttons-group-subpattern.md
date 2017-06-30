@@ -58,13 +58,11 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### High-level structure
 
-Group (ArrangeMethod=HorizontalLeft)
+- Group (ArrangeMethod=HorizontalLeft)
 
-Field
-
-*Field (optional)*
-
-Buttons (1–3 buttons)
+    - Field
+    - *Field (optional)*
+    - Buttons (1–3 buttons)
 
 ### Core components
 
@@ -82,7 +80,7 @@ Buttons (1–3 buttons)
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
 
 -   **Standard form guidelines:**
-    -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
+    -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 -   **Horizontal Fields and Buttons Group guidelines:**
     -   The width of the fields + buttons should not exceed the standard size of a column.
     -   Buttons should have a symbol image assigned.
@@ -112,6 +110,3 @@ This section will have answers to frequently asked questions that are related to
 ### Dynamics AX 2012 content
 
 **SalesTable** [![HorizontalFieldsButtons(3)](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
-
-
-
