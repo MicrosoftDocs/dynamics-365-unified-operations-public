@@ -516,6 +516,7 @@
 ###### [Import fiscal documents](/dynamics365/unified-operations/financials/localizations/latam-bra-import-fiscal-documents?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Export and import legal entity transactions from General ledger consolidation](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Import and verify NF-e XML documents and DANFE files](/dynamics365/unified-operations/financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Set up NF-e and DANFE files](/dynamics365/unified-operations/financials/localizations/Set-up-import-nf-e-documents?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
 ###### [Process electronic payment remittances](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Fiscal documents](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Fiscal document text placeholders](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
