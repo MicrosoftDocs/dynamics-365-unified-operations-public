@@ -51,11 +51,10 @@ This pattern didn't exist for Microsoft Dynamics AX 2012.
 ## Model
 ### High-level structure
 
-Form Design
+- Form Design
 
-*HeaderGroup (Group) \[Optional\]* – This uses one of the [Filters and Toolbar](filters-toolbar-subpattern.md) subpatterns.
-
-Chart
+    - *HeaderGroup (Group) \[Optional\]* – This uses one of the [Filters and Toolbar](filters-toolbar-subpattern.md) subpatterns.
+    - Chart
 
 ### Core components
 
@@ -82,6 +81,3 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
-
-
-
