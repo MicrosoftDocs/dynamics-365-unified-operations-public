@@ -21,6 +21,13 @@ ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 10274
+For more details on electronic invoices setup you can additionally play the following [Task guides](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/get-started/help-overview#task-guides):
+
+ - Set up OIOUBL electronic invoicing
+ - Import OIOUBL electronic invoicing configurations
+ - Set up customer accounts for OIOUBL electronic invoicing
+
+***Note:*** although these task-guides were created for Danish specific e-invoice format *OIOUBL*, they are applicable for other supported countries with minor deviations.
 ms.search.region: Austria, Denmark, Italy, Norway, Spain, France, Belgium, Netherlands
 ms.search.industry: Public sector
 ms.author: mrolecki
@@ -75,4 +82,11 @@ Dynamics 365 for Operations (1611) offers implementation of electronic invoicing
 
 The electronic invoices and credit notes that you generate include required information, such as a European Article Numbering (EAN) number, contact person, dimension account number, and address information for the customer. In Finance and Operations, validation rules are applied when invoices are generated so you can verify that the correct information has been entered. The set of required information may differ from country to country. As the requirements as well as supported countries and formats is subject to change, you should always go to the Shared asset library on Microsoft Dynamics Lifecycle services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**.
 
+For more details on electronic invoices setup you can additionally play the following [Task guides](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/get-started/help-overview#task-guides):
+
+ - Set up OIOUBL electronic invoicing
+ - Import OIOUBL electronic invoicing configurations
+ - Set up customer accounts for OIOUBL electronic invoicing
+
+***Note:*** although these task-guides were created for Danish specific e-invoice format *OIOUBL*, they are applicable for other supported countries with minor deviations.
 
