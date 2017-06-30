@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 24841
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
@@ -101,7 +101,7 @@ In this example, the **SysODataCollectionAttribute** class enables OData to expo
 -   The X++ type for the members of this list
 -   The public name of the OData resource that is contained in the collection
 
-After these actions are exposed, they can be invoked from the service root URL. To learn more about OData actions, see [Action in OData](http://odata.org/blog/actions-in-odata/).
+After these actions are exposed, they can be invoked from the service root URL. 
 
 You can find actions that are defined on data entities by searching for the **SysODataActionAttribute** attribute in the source code.
 

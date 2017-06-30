@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: shylaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 104173
-ms.assetid: 2e299a38-16e5-474e-b993-d88cebfadca0
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shylaw
@@ -58,6 +57,9 @@ The following resources provide information about planned and new localization f
 -   [Regulatory watch and regulatory update communication](regulatory-watch-communication.md)
 -   [Inform Microsoft about country/region regulation alerts and track the status of regulatory features](submit-localization-alerts.md)
 
+### Dynamics 365 roadmap
+The [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) provides a snapshot of what we’re working on. Use this roadmap to find out what is being made generally available and what is in development. All dates and features that are in development are preliminary, are based on current expectations, and are subject to change without notice.
+
 ## Electronic reporting
 The Electronic reporting (ER) tool allows you to configure formats for electronic documents in accordance with the legal requirements of various countries/regions. ER lets you manage these formats during their lifecycle. For more information, refer to one of the following topics:
 -   [Electronic reporting overview](../analytics/general-electronic-reporting.md)
@@ -66,7 +68,9 @@ The Electronic reporting (ER) tool allows you to configure formats for electroni
 -   [Extend the list of Electronic reporting functions](../analytics/general-electronic-reporting-formulas-list-extension.md)
 -   [Electronic reporting destinations](../analytics/electronic-reporting-destinations.md)
 -   [Download Electronic reporting configurations from Lifecycle Services](../analytics/download-electronic-reporting-configuration-lcs.md)
+-   [Import Electronic reporting configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 -   [Configure Electronic reporting to pull data into Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Generate electronic documents and and update application data using the Electronic reporting tool](../analytics/generate-electronic-documents-update-application-data.md)
 
 ## Task guides
 Task guides are available from the product help pane and they provide a guided walk-through of key business processes. You can open a task guide to read the steps of a business process or you can play a task guide to walk through a business process and enter data.
@@ -87,10 +91,10 @@ The following sections list resources by country/region.
 
 ### Austria
 
-- [Half-year depreciation](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Packing material fees](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Purchase duties](/dynamics365/unified-operations/financials/localizations/emea-aut-purchase-duties?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [VAT statement](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+- [Half-year depreciation](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation)
+- [Packing material fees](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation)
+- [Purchase duties](/dynamics365/unified-operations/financials/localizations/emea-aut-purchase-duties)
+- [VAT statement](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details)
 
 ### Belgium
 
@@ -135,7 +139,6 @@ The following sections list resources by country/region.
 -   [Half year depreciation on fixed asset disposal for the Czech Republic](/dynamics365/unified-operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
 -   [Depreciation suspension (holidays)](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
 -   [Fixed assets depreciation methods for the Czech Republic](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation)
-
 -   [Post the pre-acquisition of a fixed asset](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
 -   [VAT statement for the Czech Republic](/dynamics365/unified-operations/financials/localizations/emea-cze-vat-statement-details)
 -   [Sales tax reporting ](/dynamics365/unified-operations/financials/localizations/emea-cze-intra-community-vat-transactions)
@@ -149,39 +152,40 @@ The following sections list resources by country/region.
 -   [Fixed assets disposal](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
 
 ### Europe
-- [Advance holders](/dynamics365/unified-operations/financials/localizations/emea-advance-holders?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Advance holder transactions](/dynamics365/unified-operations/financials/localizations/emea-advance-holders-transactions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Advanced invoicing](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Bank reconciliation](/dynamics365/unified-operations/financials/localizations/emea-bank-reconciliation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Corrective invoicing](/dynamics365/unified-operations/financials/localizations/emea-corrective-invoice?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Create and post periodic journals](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Edit invoice IDs on sales orders](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [EU entry certificates](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [EU sales list reporting](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Exchange rate adjustments](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [File formats for methods of payment](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Fixed assets disposal for Estonia and Lithuania](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Inventory journal reports](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Invoice and packing slip numbering for Latvia and Lithuania](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Invoice issue deadlines](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [OIOUBL standards](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Payment slip report](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Petty cash](/dynamics365/unified-operations/financials/localizations/emea-petty-cash?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Post the pre-acquisition of a fixed asset](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Postal codes](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Registration IDs](/dynamics365/unified-operations/financials/localizations/emea-registration-ids?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Reverse charges](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [SEPA Credit transfer overview](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [SEPA Direct debit overview](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Set up customer and vendor compensation](/dynamics365/unified-operations/financials/accounts-receivable/emea-compensation-customer-vendor-transactions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Set up signers for print forms](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [Tax directives]
-- [Update how amounts are displayed on reports and documents](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
-- [VAT exchange rates](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [VAT register transactions for Eastern Europe](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [VAT reporting](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-- [View transactions on settlement](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+- [Advance holders](/dynamics365/unified-operations/financials/localizations/emea-advance-holders)
+- [Advance holder transactions](/dynamics365/unified-operations/financials/localizations/emea-advance-holders-transactions)
+- [Advanced invoicing](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice)
+- [Bank reconciliation](/dynamics365/unified-operations/financials/localizations/emea-bank-reconciliation)
+- [Corrective invoicing](/dynamics365/unified-operations/financials/localizations/emea-corrective-invoice)
+- [Create and post periodic journals](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals)
+- [Edit invoice IDs on sales orders](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders)
+- [EU entry certificates](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates)
+- [EU sales list reporting](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list)
+- [Exchange rate adjustments](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
+- [File formats for methods of payment](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
+- [Fixed assets disposal for Estonia and Lithuania](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
+- [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
+- [Inventory journal reports](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names)
+- [Invoice and packing slip numbering for Latvia and Lithuania](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
+- [Invoice issue deadlines](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline)
+- [OIOUBL standards](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing)
+- [Payment slip report](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro)
+- [Petty cash](/dynamics365/unified-operations/financials/localizations/emea-petty-cash)
+- [Post the pre-acquisition of a fixed asset](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
+- [Postal codes](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually)
+- [Registration IDs](/dynamics365/unified-operations/financials/localizations/emea-registration-ids)
+- [Reverse charges](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge)
+- [SEPA Credit transfer overview](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer)
+- [SEPA Direct debit overview](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
+- [Set up customer and vendor compensation](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
+- [Set up signers for print forms](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
+- [Tax directives](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
+- [Update how amounts are displayed on reports and documents](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms) 
+- [VAT exchange rates](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
+- [VAT register transactions for Eastern Europe](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions)
+- [VAT reporting](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting)
+- [View transactions on settlement](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form)
+
 ### France
 -   [Chronological invoice and voucher numbers](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
 -   [Derogatory depreciation for France](/dynamics365/unified-operations/financials/localizations/emea-fra-derogatory-depreciation)
@@ -219,7 +223,7 @@ The following sections list resources by country/region.
 -   [Packing slip date verification on invoices for Italy](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice)
 -   [Italian sales tax books](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books)
 -   [Split payment for invoices issued to the Public Administration](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration)
--   [Withholding tax](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding tax)
+-   [Withholding tax](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding-tax)
 
 ### Japan
 
@@ -267,6 +271,7 @@ The following sections list resources by country/region.
 ### Norway
 
 -   [Nets import format](/dynamics365/unified-operations/financials/localizations/emea-nor-nets-import-format)
+-   [VAT statement](/dynamics365/unified-operations/financials/localizations/emea-nor-sales-tax-payment-report)
 
 ### Poland
 
@@ -304,6 +309,7 @@ The following sections list resources by country/region.
 ### Sweden
 
 -   [Import payment formats for Sweden](/dynamics365/unified-operations/financials/localizations/emea-swe-payment-formats-import)
+-   [Cash registers for Sweden](/dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers)
 
 ### Switzerland
 

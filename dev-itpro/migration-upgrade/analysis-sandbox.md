@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations, Platform, AX Platform
+ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 106163
 ms.assetid: 
@@ -33,6 +33,8 @@ ms.dyn365.ops.version: Platform update 8
 # Analyze - Deploy a sandbox environment
 
 [!include[banner](../includes/banner.md)]
+
+[!include[upgrade banner](../includes/upgrade-banner.md)]
 
 This topic explains why and how you should deploy a demo environment during the Analyze phase of your project for upgrading from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations.
 

@@ -18,7 +18,7 @@ ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
@@ -131,6 +131,6 @@ See also
 
 [Task Recorder](task-recorder.md)
 
-[Recently added task recorder features](\core\get-started\recently-added-editing-features-in-task-recorder)
+[Recently added task recorder features](/dynamics365/fin-and-ops/get-started/recently-added-editing-features-in-task-recorder)
 
 [Create Rich Help Topics with Task Recorder (external link)](https://mbspartner.microsoft.com/AX/Videos/970)

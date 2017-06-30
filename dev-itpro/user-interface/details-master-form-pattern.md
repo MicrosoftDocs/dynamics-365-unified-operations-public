@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 12373
 ms.assetid: e4518f56-57b5-4cf1-b197-3fbaea7be861
@@ -82,93 +82,80 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### Details Master (basic) – High-level structure
 
-Design
+- Design
 
-ActionPane (ActionPane)
+    - ActionPane (ActionPane)
+    - SidePanel (Group)
 
-SidePanel (Group)
+        - QuickFilter
+        - *CustomFilters (Group) \[Optional\]*
+        - NavigationList (Grid, Style=List)
 
-QuickFilter
+    - MainTab (Tab ShowTabs=No)
 
-*CustomFilters (Group) \[Optional\]*
+        - DetailsTabPage (TabPage)
 
-NavigationList (Grid, Style=List)
+            - TitleGroup (Group)
 
-MainTab (Tab ShowTabs=No)
+                - HeaderTitle (String)
+                - *EntityStatus (Group) \[Optional\]*
 
-DetailsTabPage (TabPage)
+                    StatusFields (1..N)
 
-TitleGroup (Group)
+            - DetailsTab (Tab Style=FastTabs)
 
-HeaderTitle (String)
+                - DetailsTabPage (TabPages *repeats 1..N*)
 
-*EntityStatus (Group) \[Optional\]*
+        - GridTabPage (TabPage)
 
-StatusFields (1..N)
+            - CustomFilterGroup (Group)
 
-DetailsTab (Tab Style=FastTabs)
+                - QuickFilter
+                - *OtherFilters ($Field) \[0..N\]*
 
-DetailsTabPage (TabPages *repeats 1..N*)
-
-GridTabPage (TabPage)
-
-CustomFilterGroup (Group)
-
-QuickFilter
-
-*OtherFilters ($Field) \[0..N\]*
-
-MainGrid (Grid)
-
-MainGridDefaultAction (CommandButton)
+            - MainGrid (Grid)
+            - MainGridDefaultAction (CommandButton)
 
 ### Details Master w/Standard Tabs – High-level structure
 
-Design
+- Design
 
-ActionPane (ActionPane)
+    - ActionPane (ActionPane)
+    - SidePanel (Group)
 
-SidePanel (Group)
+        - QuickFilter
+        - *CustomFilters (Group) \[Optional\]*
+        - NavigationList (Grid, Style=List)
 
-QuickFilter
+    - MainTab (Tab ShowTabs=No)
 
-*CustomFilters (Group) \[Optional\]*
+        - DetailsTabPage (TabPage)
 
-NavigationList (Grid, Style=List)
+            - TitleGroup (Group)
 
-MainTab (Tab ShowTabs=No)
+                - HeaderTitle (String)
+                - *EntityStatus (Group) \[Optional\]*
 
-DetailsTabPage (TabPage)
+                    - StatusFields (1…N)
 
-TitleGroup (Group)
+            - CategoryTab (Tab Style=Tabs)
 
-HeaderTitle (String)
+                - CategoryTabPage (TabPages *repeats 3..N*)
 
-*EntityStatus (Group) \[Optional\]*
+                    - TabHeader (Group)
+                    - DetailsTab (Tab Style=FastTabs)
 
-StatusFields (1…N)
+                        - DetailsTabPage (TabPages *repeats 1..N*)
 
-CategoryTab (Tab Style=Tabs)
+        - GridTabPage (TabPage)
 
-CategoryTabPage (TabPages *repeats 3..N*)
+            - CustomFilterGroup (Group)
 
-TabHeader (Group)
+                - QuickFilter
+                - *OtherFilters ($Field) \[0..N\]*
 
-DetailsTab (Tab Style=FastTabs)
-
-DetailsTabPage (TabPages *repeats 1..N*)
-
-GridTabPage (TabPage)
-
-CustomFilterGroup (Group)
-
-QuickFilter
-
-*OtherFilters ($Field) \[0..N\]*
-
-MainGrid (Grid)
-
-MainGridDefaultAction (CommandButton)
+            - MainGrid (Grid)
+            - MainGridDefaultAction (CommandButton)
 
 ### Core components
 

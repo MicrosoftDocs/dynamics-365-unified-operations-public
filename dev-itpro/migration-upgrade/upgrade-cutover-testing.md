@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations Platform
+ms.search.scope:  Operations, UnifiedOperations, Platform
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Platform update 8
 # Upgrade cutover testing
 
 [!include[banner](../includes/banner.md)]
+
+[!include[upgrade banner](../includes/upgrade-banner.md)]
 
 *Cutover* is the term that we use for the final process of getting a new system live. This cutover process consists of the tasks that occur after Microsoft Dynamics AX 2012 is turned off but before Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, is turned on. The purpose of upgrade cutover testing is to practice the cutover process, to help guarantee a smooth experience for everyone who is involved during the actual cutover to go-live.
 

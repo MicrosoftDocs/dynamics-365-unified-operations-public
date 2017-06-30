@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations Platform
+ms.search.scope:  Operations, UnifiedOperations, Platform
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Platform update 8
 # Upgrade Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 
 [!include[banner](../includes/banner.md)]
+
+[!include[upgrade banner](../includes/upgrade-banner.md)]
 
 In Platform update 8, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, provides an upgrade path that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations. The upgrade process is built on the following elements:
 
@@ -63,7 +65,7 @@ Be aware that this public preview differs from a [30-day trial](https://aka.ms/D
 ### Select the upgrade methodology
 In your new LCS project, set the project methodology to **Upgrade AX 2012 to Dynamics 365 for Finance and Operations**. This methodology is made specially for AX 2012 customers who are upgrading. It describes the three phases in detail and provides links to all the supporting documentation about the process.
 
-![Upgrade methodology(./media/methodology.png)
+![Upgrade methodology](./media/methodology.png)
  
 ### Run the upgrade analyzer
 The upgrade analyzer tool runs against your AX 2012 environment and identifies tasks that you should do to prepare the AX 2012 environment, to help make the upgrade experience smoother and less expensive:
@@ -72,7 +74,7 @@ The upgrade analyzer tool runs against your AX 2012 environment and identifies t
 - **SQL configuration** – This process reviews the SQL configuration and recommends optimizations. By making sure that SQL performs optimally, this process helps reduce the time that is required for the upgrade go-live process.
 - **Deprecated features** – This process identifies features that you're currently using, but that aren't available in Finance and Operations. Therefore, the process helps you discover gaps in functionality early. It also provides suggestions for alternatives.
 
-Additionally, as part of this step, you must install KBXXXXXXX in the AX 2012 environment. This hotfix provides a pre-upgrade checklist. In the AX 2012 environment, you can use this checklist to enter data that will be required for the upgrade procedure. For example, in one pre-upgrade checklist task, you provide the Microsoft Azure Active Directory (Azure AD) sign-in information for each current AX 2012 user, so that each user will be able to sign in to Finance and Operations.
+Additionally, as part of this step, you must install [this hotfix](https://go.microsoft.com/fwlink/?linkid=852255) in the AX 2012 environment. This hotfix will provide a pre-upgrade checklist. In the AX 2012 environment, you can use this checklist to enter data that will be required for the upgrade procedure. For example, in one pre-upgrade checklist task, you provide the Microsoft Azure Active Directory (Azure AD) sign-in information for each current AX 2012 user, so that each user will be able to sign in to Finance and Operations.
 
 The output of this step becomes the workstream in the upgrade project plan for your AX 2012 system administrators.
 

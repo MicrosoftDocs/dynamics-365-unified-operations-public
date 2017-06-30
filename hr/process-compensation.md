@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -45,9 +45,9 @@ The process event **Point-in-time** date is only used for processing certain var
 
 Once the parameters of the process event have been saved, you can click the **Setup** button to indicate the plans to include in this process run and which Fixed compensation actions to take for each plan.
 
-Click the **Add** button in the top tab to add a compensation plan to the process event. The **Use other leverage**, **Leverage factor**, and **Leverage description** columns are only used for variable compensation plans and are not be covered in this topic.
+Click the **Add** button in the **Plans** tab to add a compensation plan to the process event. The **Use other leverage**, **Leverage factor**, and **Leverage description** columns are only used for variable compensation plans and are not be covered in this topic.
 
-Save the record, then click the **Add** button in the bottom tab to add Fixed compensation actions for the selected plan. Use the Enable recommendation option if you want to be able to enter a different amount other than the calculated guideline increase for the action. If you want an action to be calculated based on the result of the previous action to link multiple compensation actions, mark the Use previous result option Fixed compensation actions are types of compensation logic that you can give descriptive names to. For Grade and Band plans, you can only add Fixed compensation actions that are of the following Types:
+Save the record, then click the **Add** button in the **Actions** tab to add Fixed compensation actions for the selected plan. Use the Enable recommendation option if you want to be able to enter a different amount other than the calculated guideline increase for the action. If you want an action to be calculated based on the result of the previous action to link multiple compensation actions, mark the Use previous result option Fixed compensation actions are types of compensation logic that you can give descriptive names to. For Grade and Band plans, you can only add Fixed compensation actions that are of the following Types:
 
 | Fixed compensationaction type | Functionality                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

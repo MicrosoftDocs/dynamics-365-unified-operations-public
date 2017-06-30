@@ -18,7 +18,7 @@ ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, P
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 2154
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d

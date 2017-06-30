@@ -36,26 +36,26 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 **Note:** Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
 
 ## Get started
-- [Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) overview](./deployment/setup-deploy-on-premises-environments.md)
-- [System requirements](./get-started/system-requirements.md)
-- [Hardware sizing for on-premises environments](./get-started/hardware-sizing-on-premises-environments.md)
-- [Online service and on-premises software lifecycle policy](./migration-upgrade/versions-update-policy.md)
-- [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](./get-started/purchase-on-premises.md)
+- [Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) overview](on-premises-overview.md)
+- [System requirements](../get-started/system-requirements.md)
+- [Hardware sizing for on-premises environments](../get-started/hardware-sizing-on-premises-environments.md)
+- [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
+- [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](../get-started/purchase-on-premises.md)
 
 ## Onboard
-- [Create an on-premises project in Lifecycle Services](./lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Set up and deploy on-premises environments](./setup-deploy-on-premises-environments.md)
-- [Configure SQL Server Reporting Services for an on-premises deployment](./analytics/configure-ssrs-on-premises.md)
-- [Develop and deploy custom models to on-premises environments](./develop-deploy-custom-models-on-premises.md)
+- [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
+- [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md)
+- [Configure SQL Server Reporting Services for an on-premises deployment](../analytics/configure-ssrs-on-premises.md)
+- [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md)
 
 ## Work in your on-premises deployment
-- [Configure document management](./core/organization-administration/configure-document-management.md)
-- [Import Electronic reporting configurations](./analytics/electronic-reporting-import-ger-configurations.md)
-- [Document generation, publishing, and printing capabilities in on-premises deployments](./analytics/printing-capabilities-on-premises.md)
-- [Set up technical support](./lifecycle-services/support-experience.md)
-- [Client Internet connection troubleshooting](./user-interface/client-disconnected.md)
+- [Configure document management](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management.md)
+- [Import Electronic reporting configurations](../analytics/electronic-reporting-import-ger-configurations.md)
+- [Document generation, publishing, and printing capabilities in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
+- [Set up technical support](../lifecycle-services/support-experience.md)
+- [Client Internet connection troubleshooting](../user-interface/client-disconnected.md)
 
 ## Other resources
-- [Features not implemented in on-premises deployments](./get-started/features-not-implemented-on-prem.md)
-- [Deprecated features](./migration-upgrade/deprecated-features.md)
+- [Features not implemented in on-premises deployments](../get-started/features-not-implemented-on-prem.md)
+- [Deprecated features](../migration-upgrade/deprecated-features.md)
  

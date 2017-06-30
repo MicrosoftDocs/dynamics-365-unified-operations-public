@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations, Platform, AX Platform
+ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 106163
 ms.assetid: 
@@ -33,6 +33,8 @@ ms.dyn365.ops.version: Platform update 8
 # Data upgrade from AX 2012 to Dynamics 365 for Finance and Operations in a development environment
 
 [!include[banner](../includes/banner.md)]
+
+[!include[upgrade banner](../includes/upgrade-banner.md)]
 
 This is an exciting moment in the upgrade project. The output of this task  provides the first upgraded dataset from Microsoft Dynamics AX 2012 in Microsoft Dynamics 365 for Finance and Operations.
 

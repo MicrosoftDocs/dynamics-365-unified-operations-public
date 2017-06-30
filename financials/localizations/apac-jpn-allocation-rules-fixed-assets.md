@@ -18,7 +18,7 @@ ms.search.form: AssetAllocationRuleSetup_CN
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 10194
 ms.assetid: ba1302f1-5b7d-44c4-af00-ec629f388e19

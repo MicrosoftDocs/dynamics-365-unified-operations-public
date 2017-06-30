@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 51
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
 ms.assetid: 0fa10573-8146-446e-8124-8a7af9546add
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-To use the Support tool, you must have previously created a project in Lifecycle Services and installed and ran the System diagnostics in your environment. For more information, see [System diagnostics (Lifecycle Services, LCS)](/ax-2012/system-diagnostics-lcs.md).
+To use the Support tool, you must have previously created a project in Lifecycle Services and installed and ran the System diagnostics in your environment. For more information, see [System diagnostics (Lifecycle Services, LCS)](ax-2012/system-diagnostics-lcs.md).
 
 The Support tile on LCS lets you create a virtual machine (VM) in Microsoft Azure that has the same hotfixes installed as your local environment. You can reproduce and record the incident on the virtual machine, and then submit the VM to our support team. Support follows up by investigating the incident, testing a fix on the virtual machine, if a fix is found, and sending the VM and the fix back to you for verification.
 **Note:** Virtual machines are only available for Microsoft Dynamics AX 2012 R2 and AX 2012 R3 environments.
@@ -55,7 +55,7 @@ The Support tile on LCS lets you create a virtual machine (VM) in Microsoft Azur
 7.  On the **Describe the issue** pages, enter details about the issue.
     After you click **Submit**, the following steps occur:
     -   An incident is created and added to the **Incidents** list.
-    -   You receive an email message from the Microsoft Support Engineer who is working on your case. This message asks you to grant the engineer access to your project in the Project contributor role. If you do not grant access, the engineer can't work on your case. For more information about how to grant access, see [Projects (Lifecycle Services, LCS)](/ax-2012/projects-lcs.md).
+    -   You receive an email message from the Microsoft Support Engineer who is working on your case. This message asks you to grant the engineer access to your project in the Project contributor role. If you do not grant access, the engineer can't work on your case. For more information about how to grant access, see [Projects](ax-2012/projects-lcs.md).
     | **Note**                                                                                                                                                                                             |
     |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | If you have previously created a virtual machine snapshot for another support incident, you can reuse that snapshot for this issue. Only a single virtual machine snapshot is available at any time. |

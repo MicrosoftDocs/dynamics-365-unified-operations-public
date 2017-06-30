@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations Platform
+ms.search.scope:  Operations, UnifiedOperations, Platform
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Platform update 8
 # Upgrade validation - Functional test pass
 
 [!include[banner](../includes/banner.md)]
+
+[!include[upgrade banner](../includes/upgrade-banner.md)]
 
 After data upgrade is completed, we recommend that you complete a full functional test pass of all business processes. In a full functional test pass, you do an extensive retest of all business processes that are performed by using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Tests should include both processes that have been brought forward from Microsoft Dynamics AX 2012 and new processes that use features from Finance and Operations.
 

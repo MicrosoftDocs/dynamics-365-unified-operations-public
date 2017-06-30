@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 1219713
 ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, Russia
@@ -171,6 +171,6 @@ You can customize the display of Storno in forms, grids, columns, and fields. Fo
 ![Journal Entry Storno amounts](./media/journal-storno.png)
 
 ## How documents create Storno
-Certain documents create cancellation transactions. For example, the foreign currency revaluation for general ledger, accounts payable, and accounts receivable documents cancel unrealized gain and loss. For more details, see [Foreign currency revaluation for General Ledger](../general-ledger/foreign-currency-revaluation-general-ledger.md) or [Accounts payable and Accounts receivable](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). After a cancellation transaction is created, new transactions will be created with unrealized gain and loss. Cancellation transactions are also created for inventory. For more information, see [Inventory close](/dynamics-365/unified-operations/scm/cost-management/inventory-close). 
+Certain documents create cancellation transactions. For example, the foreign currency revaluation for general ledger, accounts payable, and accounts receivable documents cancel unrealized gain and loss. For more details, see [Foreign currency revaluation for General Ledger](../general-ledger/foreign-currency-revaluation-general-ledger.md) or [Accounts payable and Accounts receivable](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). After a cancellation transaction is created, new transactions will be created with unrealized gain and loss. Cancellation transactions are also created for inventory. For more information, see [Inventory close](/dynamics-365/unified-operations/supply-chain/cost-management/inventory-close). 
 There are documents that allow you to cancel the previously posted document. For example, the User can create a Credit Note to cancel a previously created Invoice. Documents use specific parameters to create reverse or Storno transactions. For example, the foreign currency revaluation creates reverse or Storno transactions based on the general ledger correction parameter. The customer credit note creates reverse or Storno transactions based on the accounts receivable credit note correction parameter.
 

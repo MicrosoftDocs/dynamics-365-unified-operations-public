@@ -18,7 +18,7 @@ ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, Ro
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 121
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 268124
 ms.assetid: f78d5836-3e71-42b7-a5d1-41f19228d9d2

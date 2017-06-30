@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations Platform
+ms.search.scope:  Operations, UnifiedOperations, Platform
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Platform update 8
 # Data upgrade in a sandbox environment
 
 [!include[banner](../includes/banner.md)]
+
+[!include[upgrade banner](../includes/upgrade-banner.md)]
 
 The output of this task is an upgraded database that you can use in a sandbox environment. A sandbox environment is an environment where business users and functional team members can validate application functionality. This functionality includes customizations and the data that was brought forward from Microsoft Dynamics AX 2012.
 

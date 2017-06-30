@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations, Platform, AX Platform
+ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 106163
 ms.assetid: 
@@ -33,6 +33,8 @@ ms.dyn365.ops.version: Platform update 8
 # Analyze - Use the Upgrade analyzer tool to plan upgrade
 
 [!include[banner](../includes/banner.md)]
+
+[!include[upgrade banner](../includes/upgrade-banner.md)]
 
 This topic explains how to use the Upgrade analyzer tool to plan your upgradew from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations. This tool is run against an AX 2012 environment and identifies data that you should clean up in AX 2012 to help reduce the subscription cost for Finance and Operations. The tool also suggests SQL configuration optimizations that can help speed up the upgrade processes. Additionally, the tool warns you if any features that you use in AX 2012 are obsolete in Finance and Operations. Therefore, you can plan ways to replace or work around those features.
 

@@ -18,7 +18,7 @@ ms.search.form: LedgerJournalTransPayrollDisbursement, PayrollPayStatement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 220934
 ms.assetid: b95ac219-fbea-48e6-b2c8-6f27853a7f6a
