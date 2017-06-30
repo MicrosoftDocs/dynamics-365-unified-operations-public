@@ -65,29 +65,26 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### Form Part FactBox Grid – High-level structure
 
-Design
+- Design
 
-Grid
+    - Grid
+    - *GridDefaultAction (Button) \[Optional\]*
+    - *ButtonGroup (ButtonGroup) \[Optional\]*
 
-*GridDefaultAction (Button) \[Optional\]*
-
-*ButtonGroup (ButtonGroup) \[Optional\]*
-
-Button
+        - Button
 
 ###  Form Part FactBox Card – High-level structure
 
-Design
+- Design
 
-*FieldGroups (Group) \[0..N\]*
+    - *FieldGroups (Group) \[0..N\]*
 
-Fields ($Fields, 1..N)
+        - Fields ($Fields, 1..N)
 
-*Fields ($Field) \[0..N\]*
+    - *Fields ($Field) \[0..N\]*
+    - *ButtonGroup (ButtonGroup) \[Optional\]*
 
-*ButtonGroup (ButtonGroup) \[Optional\]*
-
-Button
+        - Button
 
 ### Core components
 
@@ -167,6 +164,3 @@ This section will have answers to frequently asked questions that are related to
 **CustTable** &gt; **ContactsInfoPart** 
 
 [![FactBox(5)](./media/factbox5.png)](./media/factbox5.png)
-
-
-
