@@ -145,6 +145,7 @@
 ##### [Whole amount and interval calculation options for sales tax codes](/dynamics365/unified-operations/financials/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Expense management
 ##### [Plan expense management](/dynamics365/unified-operations/financials/expense-management/plan-expense-management?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Expense management parameters](/dynamics365/unified-operations/financials/expense-management/Expense-Management-Parameters?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Expense management mobile workspace](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [Accounts payable](/dynamics365/unified-operations/financials/accounts-payable/accounts-payable?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -971,6 +972,7 @@
 
 ### [System requirements](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Demo data](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Data validation](/dynamics365/unified-operations/dev-itpro/user-interface/data-validation-workspace?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 
 
