@@ -57,33 +57,24 @@ This subpattern is used to show child collections for the parent entity as eithe
 ## Model
 ### Toolbar and list – High-level structure
 
-\[Container\]
+- \[Container\]
 
-*Toolbar (ActionPane, Style=Strip) \[Optional\]*
-
-*CustomFilterGroup (Group) \[Optional\]*
-
-Grid | Tree | ListView | Table
-
-*Footer (Group) \[Optional\]*
+    - *Toolbar (ActionPane, Style=Strip) \[Optional\]*
+    - *CustomFilterGroup (Group) \[Optional\]*
+    - Grid | Tree | ListView | Table
+    - *Footer (Group) \[Optional\]*
 
 ### Toolbar and list (double) – High-level structure
 
-\[Container\]
+- \[Container\]
 
-*Toolbar1 (ActionPane, Style=Strip) \[Optional\]*
-
-*CustomFilterGroup1 (Group) \[Optional\]*
-
-Grid | Tree | ListView | Table
-
-*Toolbar2 (ActionPane, Style=Strip) \[Optional\]*
-
-*CustomFilterGroup2 (Group) \[Optional\]*
-
-Grid | Tree | ListView | Table
-
-*Footer (Group) \[Optional\]*
+    - *Toolbar1 (ActionPane, Style=Strip) \[Optional\]*
+    - *CustomFilterGroup1 (Group) \[Optional\]*
+    - Grid | Tree | ListView | Table
+    - *Toolbar2 (ActionPane, Style=Strip) \[Optional\]*
+    - *CustomFilterGroup2 (Group) \[Optional\]*
+    - Grid | Tree | ListView | Table
+    - *Footer (Group) \[Optional\]*
 
 ### Core components
 
@@ -97,13 +88,15 @@ Grid | Tree | ListView | Table
 -   [Toolbar and Fields](toolbar-fields-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
+**Standard form guidelines:**
+
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 **Toolbar** **guidelines:**
 
--   Toolbar guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md)document.
+-   Toolbar guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md) document.
 
 ## Examples
 ### Toolbar and list
@@ -143,6 +136,3 @@ This section will have answers to frequently asked questions that are related to
 **VendTable** 
 
 [![ToolbarList(5)](./media/toolbarlist5.png)](./media/toolbarlist5.png)
-
-
-
