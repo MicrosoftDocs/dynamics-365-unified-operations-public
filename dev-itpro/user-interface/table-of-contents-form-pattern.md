@@ -55,19 +55,18 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### High-level structure
 
-Design
+- Design
 
-Tab (Style=VerticalTabs)
+    - Tab (Style=VerticalTabs)
 
-TabPage *\[repeats 1..N times\]*
+        - TabPage *\[repeats 1..N times\]*
 
-Title (Group)
+            - Title (Group)
 
-MainInstruction (StaticText)
+                - MainInstruction (StaticText)
+                - *SecondaryInstruction (StaticText) \[Optional\]*
 
-*SecondaryInstruction (StaticText) \[Optional\]*
-
-Body (Group) | FastTabContent (Tab)
+            - Body (Group) | FastTabContent (Tab)
 
 ### Core components
 
@@ -91,9 +90,11 @@ Each BodyGroup will use one of the following container patterns for the content 
 -   [List Panel](list-panel-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
+**Standard form guidelines:**
+
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 **Table of contents guidelines:**
 
@@ -104,7 +105,7 @@ The verification checklist shows the steps for manually verifying that the form 
     -   Simple List content should follow the subpattern guidelines.
     -   Simple List and Details content should follow the [Nested Simple List and Details](nested-simple-list-details-subpattern.md) subpattern guidelines.
     -   Simple Details content should follow the [Toolbar and Fields](toolbar-fields-subpattern.md) subpattern guidelines.
-    -   FastTabs should follow the FastTab guidelines in the Dynamics AX [General Form Guidelines ](general-form-guidelines.md)document.
+    -   FastTabs should follow the FastTab guidelines in the Dynamics AX [General Form Guidelines ](general-form-guidelines.md) document.
     -   Actions appearing on a Toolbar on a tab page.
 -   A TOC form should **not** have the following:
     -   Application actions on a standard ActionPane. (It should have only framework actions.)
@@ -135,6 +136,3 @@ This section will have answers to frequently asked questions that are related t
 [![TOC(3)](./media/toc3.png)](./media/toc3.png)
 
 [![TOC(4)](./media/toc4.png)](./media/toc4.png)
-
-
-
