@@ -85,91 +85,70 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### Dialog (basic) – High-level structure
 
-Design
+- Design
 
-*SecondaryInstruction (StaticText) \[Optional\]*
+    - *SecondaryInstruction (StaticText) \[Optional\]*
 
-*ActionPane (ActionPane) \[Optional\]*
+        - *ActionPane (ActionPane) \[Optional\]*
+        - *DialogHeader (Group, can repeat) \[Optional\]*
+        - DialogContent (Group, repeats 1..N)
+        - DialogCommitContainer (ButtonGroup)
 
-*DialogHeader (Group, can repeat) \[Optional\]*
-
-DialogContent (Group, repeats 1..N)
-
-DialogCommitContainer (ButtonGroup)
-
-OKButton ($Button)
-
-*OtherButton ($Button, can repeat) \[Optional\]*
-
-CancelButton ($Button)
+            - OKButton ($Button)
+            - *OtherButton ($Button, can repeat) \[Optional\]*
+            - CancelButton ($Button)
 
 ###  Dialog w/Tabs and Dialog w/FastTabs – High-level structure
 
-Design
+- Design
 
-*SecondaryInstruction (StaticText) \[Optional\]*
+    - *SecondaryInstruction (StaticText) \[Optional\]*
+    - *ActionPane (ActionPane) \[Optional\]*
+    - *DialogHeader (Group, can repeat) \[Optional\]*
+    - TabContent (Tab)
 
-*ActionPane (ActionPane) \[Optional\]*
+        - TabPage (TabPage, repeats 1..N)
 
-*DialogHeader (Group, can repeat) \[Optional\]*
+    - *DialogFooter (Group) \[Optional\]*
+    - DialogCommitContainer (ButtonGroup)
 
-TabContent (Tab)
-
-TabPage (TabPage, repeats 1..N)
-
-*DialogFooter (Group) \[Optional\]*
-
-DialogCommitContainer (ButtonGroup)
-
-OKButton ($Button)
-
-*OtherButton ($Button, can repeat) \[Optional\]*
-
-CancelButton ($Button)
+        - OKButton ($Button)
+        - *OtherButton ($Button, can repeat) \[Optional\]*
+        - CancelButton ($Button)
 
 ### Dialog w/double tabs – High-level structure
 
-Design
+- Design
 
-*SecondaryInstruction (StaticText) \[Optional\]*
+    - *SecondaryInstruction (StaticText) \[Optional\]*
+    - *ActionPane (ActionPane) \[Optional\]*
+    - *DialogHeader (Group, can repeat) \[Optional\]*
+    - TabContent (Tab)
 
-*ActionPane (ActionPane) \[Optional\]*
+        - TabPage (TabPage) \[1..\*\]
 
-*DialogHeader (Group, can repeat) \[Optional\]*
+    - TabContent (Tab)
 
-TabContent (Tab)
+        - TabPage (TabPage) \[1..\*\]
 
-TabPage (TabPage) \[1..\*\]
+    - *DialogFooter (Group) \[Optional\]*
+    - DialogCommitContainer (ButtonGroup)
 
-TabContent (Tab)
-
-TabPage (TabPage) \[1..\*\]
-
-*DialogFooter (Group) \[Optional\]*
-
-DialogCommitContainer (ButtonGroup)
-
-OKButton ($Button)
-
-*OtherButton ($Button, can repeat) \[Optional\]*
-
-CancelButton ($Button)
+        - OKButton ($Button)
+        - *OtherButton ($Button, can repeat) \[Optional\]*
+        - CancelButton ($Button)
 
 ### Dialog (read only) – High-level structure
 
-Design
+- Design
 
-*SecondaryInstruction (StaticText) \[Optional\]*
+    - *SecondaryInstruction (StaticText) \[Optional\]*
+    - *ActionPane (ActionPane) \[Optional\]*
+    - *DialogHeader (Group, can repeat) \[Optional\]*
+    - DialogContent (Group, repeats 1..N)
+    - DialogCommitContainer (ButtonGroup)
 
-*ActionPane (ActionPane) \[Optional\]*
-
-*DialogHeader (Group, can repeat) \[Optional\]*
-
-DialogContent (Group, repeats 1..N)
-
-DialogCommitContainer (ButtonGroup)
-
-CloseButton ($Button)
+        CloseButton ($Button)
 
 ### Core components
 
@@ -289,6 +268,3 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![DialogForm(10)](./media/dialogform10.png)](./media/dialogform10.png)
-
-
-
