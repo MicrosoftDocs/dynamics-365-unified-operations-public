@@ -57,7 +57,7 @@
 
 ## Cost management
 ### Power BI content pack
-#### [Cost management content pack](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Cost management content pack](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/talent/toc.json)
 ### Predetermined cost
 #### [Costing sheet](/dynamics365/unified-operations/supply-chain/cost-management/costing-sheets?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Costing version](/dynamics365/unified-operations/supply-chain/cost-management/costing-versions?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -145,6 +145,7 @@
 ##### [Whole amount and interval calculation options for sales tax codes](/dynamics365/unified-operations/financials/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Expense management
 ##### [Plan expense management](/dynamics365/unified-operations/financials/expense-management/plan-expense-management?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Expense management parameters](/dynamics365/unified-operations/financials/expense-management/Expense-Management-Parameters?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Expense management mobile workspace](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### [Accounts payable](/dynamics365/unified-operations/financials/accounts-payable/accounts-payable?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -280,11 +281,11 @@
 #### [Budget planning integration with other modules](/dynamics365/unified-operations/financials/budgeting/budget-planning-integration-other-modules?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Reporting](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Balance sheet financial reports](/dynamics365/unified-operations/financials/general-ledger/balance-sheet-financial-reports?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Generate a financial report](/dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Generate a financial report](/dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Income statement financial report](/dynamics365/unified-operations/financials/general-ledger/income-statement-financial-report?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Trial balance financial reports](/dynamics365/unified-operations/financials/general-ledger/trial-balance-financial-reports?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [View financial reports](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Report designer](/dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Report designer](/dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### [Cost accounting](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Terms](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -300,8 +301,8 @@
 #### [Access rights of a cost object controller](/dynamics365/unified-operations/financials/cost-accounting/access-rights-cost-object-controller?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Cost control workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Cost control mobile workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Set up security for the Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Set up security for the Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ### [Public sector](/dynamics365/unified-operations/financials/public-sector/public-sector-functionality?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Plan for public sector functionality](/dynamics365/unified-operations/financials/public-sector/plan-public-sector-functionality?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -515,6 +516,7 @@
 ###### [Import fiscal documents](/dynamics365/unified-operations/financials/localizations/latam-bra-import-fiscal-documents?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Export and import legal entity transactions from General ledger consolidation](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Import and verify NF-e XML documents and DANFE files](/dynamics365/unified-operations/financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails?toc=/dynamics365/unified-operations/talent/toc.json)
+###### [Set up NF-e and DANFE files](/dynamics365/unified-operations/financials/localizations/Set-up-import-nf-e-documents?toc=/dynamics365/unified-operations/talent/toc.json) 
 ###### [Process electronic payment remittances](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Fiscal documents](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Fiscal document text placeholders](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -706,6 +708,7 @@
 ##### [System grouping on an open work list](/dynamics365/unified-operations/supply-chain/warehousing/system-group-on-open-work-list?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Picking and packing
 ##### [Pick oldest batch on a mobile device](/dynamics365/unified-operations/supply-chain/warehousing/pick-oldest-batch?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Configure Display older batches within warehouse on a mobile device](/dynamics365/unified-operations/supply-chain/warehousing/display-older-batches-within-warehouses?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Piece picking confirmation](/dynamics365/unified-operations/supply-chain/warehousing/piece-picking-confirmation?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Packing materials and fees](/dynamics365/unified-operations/supply-chain/warehousing/pack-materials-packing-material-fees?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Inventory counting
@@ -775,8 +778,8 @@
 ##### [Purchase agreements](/dynamics365/unified-operations/supply-chain/procurement/purchase-agreements?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Product receipts and invoicing
 ##### [Product receipt against purchase orders](/dynamics365/unified-operations/supply-chain/procurement/product-receipt-against-purchase-orders?toc=/dynamics365/unified-operations/talent/toc.json)
-##### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-##### [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/talent/toc.json)
 #### Vendor management and collaboration
 ##### [Set up and maintain vendor collaboration](/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Manage vendor collaboration users](/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-users?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -970,6 +973,7 @@
 
 ### [System requirements](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Demo data](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/talent/toc.json)
+### [Data validation](/dynamics365/unified-operations/dev-itpro/user-interface/data-validation-workspace?toc=/dynamics365/unified-operations/talent/toc.json)
 
 
 
@@ -1250,7 +1254,9 @@
 
 #### Migrating entities
 ##### [Configuration data projects](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/talent/toc.json)
+##### [Configuration data packages](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-packages?toc=/dynamics365/unified-operations/talent/toc.json)
 ###### [Configuration data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/talent/toc.json)
+
 ###### [Copy configuration data between companies](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/talent/toc.json)
 ##### [Best practices for importing vouchers using the General journal entity](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/talent/toc.json)
 
@@ -1566,7 +1572,7 @@
 ### Receipts
 #### [Set up receipt templates](/dynamics365/unified-operations/retail/receipt-templates-printing?toc=/dynamics365/unified-operations/talent/toc.json) 
 #### [Send email receipts from MPOS](/dynamics365/unified-operations/retail/email-receipts?toc=/dynamics365/unified-operations/talent/toc.json)
-### [Task recorder and Help for POS](/dynamics365/unified-operations/retail/task-recorder-retail-pos?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Task recorder and Help for POS](/dynamics365/unified-operations/retail/task-recorder-retail-pos?toc=/dynamics365/unified-operations/talent/toc.json)
 ## Monitoring and analysis
 ### [Monitor sales and margin performance](/dynamics365/unified-operations/retail/monitor-sales-margin-performance?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Analyze sales trends and patterns](/dynamics365/unified-operations/retail/analyze-sales-trends-patterns?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1579,7 +1585,7 @@
 ### [Price adjustments and discounts](/dynamics365/unified-operations/retail/price-adjustments-discounts?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Determine the optimal combination of overlapping discounts](/dynamics365/unified-operations/retail/optimal-combination-overlapping-discounts?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Define channel-specific discounts](/dynamics365/unified-operations/retail/define-channel-specific-discounts?toc=/dynamics365/unified-operations/talent/toc.json)
-### [Create coupons for retail sales](/dynamics365/unified-operations/retail/retail-coupons?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Create coupons for retail sales](/dynamics365/unified-operations/retail/retail-coupons?toc=/dynamics365/unified-operations/talent/toc.json)
 ## Products and merchandising
 ### [Retail hierarchies](/dynamics365/unified-operations/retail/retail-hierarchies?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Create and manage attributes](/dynamics365/unified-operations/retail/create-manage-attributes?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1587,7 +1593,7 @@
 ### [Set up bar codes](/dynamics365/unified-operations/retail/set-up-bar-codes?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Set up bar code masks](/dynamics365/unified-operations/retail/set-up-bar-code-masks?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Set up assortments](/dynamics365/unified-operations/retail/set-up-assortments?toc=/dynamics365/unified-operations/talent/toc.json)
-### [Sell and return products outside of an assortment](/dynamics365/unified-operations/retail/sell-return-outside-assortments?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Sell and return products outside of an assortment](/dynamics365/unified-operations/retail/sell-return-outside-assortments?toc=/dynamics365/unified-operations/talent/toc.json)
 ## Loyalty
 ### [Set up a customer loyalty program](/dynamics365/unified-operations/retail/set-up-customer-loyalty-program?toc=/dynamics365/unified-operations/talent/toc.json)
 

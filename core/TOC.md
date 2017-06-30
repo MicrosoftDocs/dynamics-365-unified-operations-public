@@ -57,7 +57,7 @@
 
 ## Cost management
 ### Power BI content pack
-#### [Cost management content pack](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Cost management content pack](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Predetermined cost
 #### [Costing sheet](/dynamics365/unified-operations/supply-chain/cost-management/costing-sheets?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Costing version](/dynamics365/unified-operations/supply-chain/cost-management/costing-versions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -778,8 +778,8 @@
 ##### [Purchase agreements](/dynamics365/unified-operations/supply-chain/procurement/purchase-agreements?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Product receipts and invoicing
 ##### [Product receipt against purchase orders](/dynamics365/unified-operations/supply-chain/procurement/product-receipt-against-purchase-orders?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-##### [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Vendor management and collaboration
 ##### [Set up and maintain vendor collaboration](/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Manage vendor collaboration users](/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-users?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1572,7 +1572,7 @@
 ### Receipts
 #### [Set up receipt templates](/dynamics365/unified-operations/retail/receipt-templates-printing?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
 #### [Send email receipts from MPOS](/dynamics365/unified-operations/retail/email-receipts?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Task recorder and Help for POS](/dynamics365/unified-operations/retail/task-recorder-retail-pos?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Task recorder and Help for POS](/dynamics365/unified-operations/retail/task-recorder-retail-pos?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ## Monitoring and analysis
 ### [Monitor sales and margin performance](/dynamics365/unified-operations/retail/monitor-sales-margin-performance?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Analyze sales trends and patterns](/dynamics365/unified-operations/retail/analyze-sales-trends-patterns?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1585,7 +1585,7 @@
 ### [Price adjustments and discounts](/dynamics365/unified-operations/retail/price-adjustments-discounts?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Determine the optimal combination of overlapping discounts](/dynamics365/unified-operations/retail/optimal-combination-overlapping-discounts?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Define channel-specific discounts](/dynamics365/unified-operations/retail/define-channel-specific-discounts?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Create coupons for retail sales](/dynamics365/unified-operations/retail/retail-coupons?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Create coupons for retail sales](/dynamics365/unified-operations/retail/retail-coupons?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ## Products and merchandising
 ### [Retail hierarchies](/dynamics365/unified-operations/retail/retail-hierarchies?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Create and manage attributes](/dynamics365/unified-operations/retail/create-manage-attributes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1593,7 +1593,7 @@
 ### [Set up bar codes](/dynamics365/unified-operations/retail/set-up-bar-codes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Set up bar code masks](/dynamics365/unified-operations/retail/set-up-bar-code-masks?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Set up assortments](/dynamics365/unified-operations/retail/set-up-assortments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Sell and return products outside of an assortment](/dynamics365/unified-operations/retail/sell-return-outside-assortments?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Sell and return products outside of an assortment](/dynamics365/unified-operations/retail/sell-return-outside-assortments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ## Loyalty
 ### [Set up a customer loyalty program](/dynamics365/unified-operations/retail/set-up-customer-loyalty-program?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
