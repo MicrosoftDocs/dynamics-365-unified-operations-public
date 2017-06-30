@@ -57,17 +57,15 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### High-level structure
 
-Design
+- Design
 
-ActionPane (ActionPane)
+    - ActionPane (ActionPane)
+    - Custom Filter (Group)
 
-Custom Filter (Group)
+        - Quick Filter (Quick Filter)
+        - *OtherFilters ($Field) \[0..N\]*
 
-Quick Filter (Quick Filter)
-
-*OtherFilters ($Field) \[0..N\]*
-
-Grid (Grid)
+    - Grid (Grid)
 
 ### Core components
 
@@ -122,7 +120,10 @@ Form: **SalesTableListPage** [![List Page example](./media/listpage2-1024x510.pn
 
 This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
--   **What do I do with the Preview pane when I migrate the form?** You can do one of the following:
+-   **What do I do with the Preview pane when I migrate the form?**
+
+    You can do one of the following:
+
     -   Remove the **Preview** pane altogether if it no longer makes sense.
     -   Remove the large header, and leave the **Preview** pane as is.
     -   Split the **Preview** pane into multiple logical FactBoxes if the current one is too tall.
@@ -145,6 +146,3 @@ This section will have answers to frequently asked questions that are related to
 #### AX 2012 example
 
 [![AX 2012 example](./media/listpage3-1024x671.png)](./media/listpage3.png)
-
-
-
