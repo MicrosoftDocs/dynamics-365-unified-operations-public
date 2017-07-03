@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Sales quotation headers and lines
+# Sales order headers and lines
 
 [!include[banner](../includes/banner.md)]
 
