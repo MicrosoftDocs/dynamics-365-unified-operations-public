@@ -110,5 +110,6 @@ The **Is Externally Maintained** information is used to ensure that only **Quote
 ## Template mapping in Data integrator
 
 ![this is the alt text](..media/products-template-mapping-data-integrator-1.png.)
+
 ![this is the alt text](..media/products-template-mapping-data-integrator-2.png.)
 
