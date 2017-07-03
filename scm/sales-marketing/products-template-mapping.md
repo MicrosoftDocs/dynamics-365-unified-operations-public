@@ -111,7 +111,6 @@ The following screenshots show how the template mapping can look like in data in
 
 ![template mapping in data integrator](./media/products-template-mapping-data-integrator-1.png)
 
-
 ![template mapping for products in data integrator](./media/products-template-mapping-data-integrator-2.png)
 
 
