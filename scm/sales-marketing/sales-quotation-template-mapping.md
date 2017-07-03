@@ -155,15 +155,15 @@ The following screenshots show how the template mapping can look like in data in
 
 ### QuoteHeader:
 
-![template mapping in data integrator](./media/quotation-template-mapping-data-integrator-1.png)
+![template mapping in data integrator](./media/sales-quotation-template-mapping-data-integrator-1.png)
 
-![template mapping in data integrator](./media/quotation-template-mapping-data-integrator-2.png)
+![template mapping in data integrator](./media/sales-quotation-template-mapping-data-integrator-2.png)
 
 ### Quote lines:
 
-![template mapping in data integrator](./media/quotation-template-mapping-data-integrator-3.png)
+![template mapping in data integrator](./media/sales-quotation-template-mapping-data-integrator-3.png)
 
-![template mapping in data integrator](./media/quotation-template-mapping-data-integrator-4.png)
+![template mapping in data integrator](./media/sales-quotation-template-mapping-data-integrator-4.png)
 
  
 
