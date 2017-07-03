@@ -37,7 +37,6 @@ ms.search.validFrom: 2017-07-8
 The topic discusses the templates and underlying tasks that are used to synchronize sales order headers and lines from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 ## Template and Task
------------------
 
 The following templates and underlying tasks are used to synchronize sales order headers and lines from Microsoft Dynamics 365 for Sales (Sales) to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations).
 
@@ -98,7 +97,7 @@ In Sales, the solution makes the following fields read-only because these values
 -   Before synchronizing sales orders, it is important to update Sales with the
     following setting:
 
->   Under **Settings \> Administration \> System settings \> Sales** ensure that **Discount calculation method** is set to Per unit. This is done to ensure that the line item discount from Sales match the setting in Finance and Operations. Without this setting the discount would not be correct in Finance and Operations, as Finance and Operations would read the discount as a discount per unit, even if it was per line in Sales.
+     -   Under **Settings \> Administration \> System settings \> Sales** ensure that **Discount calculation method** is set to Per unit. This is done to ensure that the line item discount from Sales match the setting in Finance and Operations. Without this setting the discount would not be correct in Finance and Operations, as Finance and Operations would read the discount as a discount per unit, even if it was per line in Sales.
 
 -   In Finance and Operations, **Number sequence** for **Sales orders** must be set to **Manual**.
 
