@@ -105,9 +105,9 @@ The **Is Externally Maintained** information is used to ensure that only **Quote
 
     -   Products created with draft status need to be activated before they can be added to **Quote** or **Sales order**.
 
->    
-
 ## Template mapping in Data integrator
+
+The following screenshots show how the template mapping can look like in data integrator
 
 ![this is the alt text](..media/products-template-mapping-data-integrator-1.png.)
 
