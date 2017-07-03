@@ -34,123 +34,92 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-This topic discusses the templates and underlying tasks that are used to synchronize Contact (Contacts) and Contact (Customers) from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic discusses the templates and underlying tasks that are used to synchronize Contact (Contacts) entities and Contact (Customers) from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-Contact (Contacts) and Contact (Customers)
+## Templates and tasks
 
-The following templates and underlying tasks are used to synchronize products from Microsoft Dynamics 365 for Sales (Sales) to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+The following templates and underlying tasks are used to synchronize Contact (Contacts) in Sales to Contact (Customers) in Finance and Operations:
 
-Name of template:
+- **Names of the templates:**
 
--   Contacts to Contact (Sales to Fin and Ops)
+    - Contacts to Contact (Sales to Fin and Ops)
+    - Contacts to Customer (Sales to Fin and Ops)
 
--   Contacts to Customer (Sales to Fin and Ops)
+- **Names of the tasks in the project:**
 
-Name of task in project:
+    - Contacts
+    - ContactToCustomer
 
--   Contacts
-
--   ContactToCustomer
-
-Sync tasks required prior to Contact sync: Accounts (Sales to Fin and Ops)
+The following synchronization task is required before Contact synchronization: Accounts (Sales to Fin and Ops)
 
 ## Entity sets
 
-| **Sales** | **CDS** | **Finance and Operations** |
-|-----------|---------|----------------------------|
-| Contacts  | Contact | CDS Contacts               |
-| Contacts  | Account | Customers V2               |
+| Sales    | CDS     | Finance and Operations |
+|----------|---------|------------------------|
+| Contacts | Contact | CDS Contacts           |
+| Contacts | Account | Customers V2           |
 
 ## Entity flow
 
-**Contacts** are managed in Sales and synchronized to CDS and Finance and Operations.
+Contacts are managed in Sales, and are synchronized to Common Data Service (CDS) and Finance and Operations.
 
-A **Contact** in Sales can become either a **Contact** in CDS and Finance and Operations, or it can become an **Account** in CDS and **Customer** in Finance and Operations. When determining whether a given contact should be picked up in Sales for synchronization to CDS and Finance and Operations, for example, **Contacts** (Sales) -\> **Contact** (CDS) -\> **Contacts** (Finance and Operations) synchronization, the system looks at the following properties on **Contact** in Sales:
+A Contact in Sales can become a Contact in CDS and Finance and Operations. Alternatively, it can become an Account in CDS and a Customer in Finance and Operations. To determine whether a contact should be picked up in Sales for synchronization to CDS and Finance and Operations (for example, Contacts in Sales &gt; Contact in CDS &gt; Contacts in Finance and Operations), the system looks at the following properties on Contact in Sales:
 
-Sync to **Account** in CDS and **Customer** in Finance and Operations:
-
-**Contacts** with **Is Active Customer = Yes**
-
-Sync to **Contact** in CDS and **Contact** in Finance and Operations:
-
-**Contacts** with **Is Active Customer = No** and **Company** (Parent Account/Contact) pointing to an **Account** (not a Contact)
+- **Sync to Account in CDS and Customer in Finance and Operations:** Contacts where **Is Active Customer** is set to **Yes**
+- **Sync to Contact in CDS and Contact in Finance and Operations:** Contacts where **Is Active Customer** is set to **No** and **Company** (Parent Account/Contact) points to an Account (not a Contact)
 
 ## Prospect to cash solution for Sales 
 
-A new field **Is Active Customer** is added to the **Contact**. The purpose of this field is to differentiate between contacts with and without sales activity. Only contacts with related quotes, orders, or invoices have **Is Active Customer = Yes** and synced to Finance and Operations as **Customers**.
+A new **Is Active Customer** field has been added to the Contact. This field is used to differentiate Contacts that have sales activity and Contacts that don't have sales activity. **Is Active Customer** is set to **Yes** only for Contacts that have related quotations, orders, or invoices. Only those Contacts are synchronized to Finance and Operations as Customers.
 
-A new field **IsCompanyAnAccount** is added to the **Contact**. The purpose of this field is to identify contacts linked to a **Company (Parent Account/Contact)** of type **Account**. This information is used to identify **Contacts** who should be synced to Finance and Operations as **Contacts**.
+A new **IsCompanyAnAccount** field has been added to the Contact. This field is used to indicate whether a Contact is linked to a Company (Parent Account/Contact) of the **Account** type. This information is used to identify Contacts that should be synchronized to Finance and Operations as Contacts.
 
- A new field **Contact Number** field is added to the **Contact** entity to ensure a natural and unique key for the integration. When creating a new contact, the **Contact Number** is automatically generated using a number sequence starting with CON followed by an increasing number sequence and ending with a suffix of 6 characters. For example, CON-01000-BVRCPS.
+A new **Contact Number** field has been added to the Contact to help guarantee a natural and unique key for the integration. When a new Contact is created, a **Contact Number** value is automatically generated by using a number sequence. The value consists of **CON**, followed by an increasing number sequence and then a suffix of six characters. Here is an example: **CON-01000-BVRCPS**
 
-When the integration solution for Sales is added to Sales, an upgrade script populates **Contact numbers** to existing **Contacts** using the number sequence discussed in the previous section. The upgrade script also populates the **Is Active Customer** field for contacts with any sales activity set to **Yes**. 
+When the integration solution for Sales is added to Sales, an upgrade script sets the **Contact Number** field for existing Contacts by using the number sequence that was discussed earlier. The upgrade script also sets the **Is Active Customer** field to **Yes** for any Contacts that have sales activity.
 
 ## In Finance and Operations 
 
-Contacts are tagged with the property I**sContactPersonExternallyMaintained** to indicate that the given contact is maintained externally, in this case from Sales.
+Contacts are tagged by using the **IsContactPersonExternallyMaintained** property. This property indicates that a given Contact is maintained externally. In this case, externally maintained Contacts are maintained in Sales.
 
 ## Preconditions and mapping setup
 
-###  Contact to Contact
+### Contact to Contact
 
--   Update the **CDS Organization ID in Source -\> CDS**
+- Update **CDS Organization ID** in the **Source &gt; CDS** mapping.
 
-    -   Template value for **Organization_OrganizationId [Organization ID]** is defaulted to ORG001.
+    - The default template value for **Organization_OrganizationId [Organization ID]** is **ORG001**.
+    - The default template value for **PrimaryAccount_Organization_OrganizationId [Organization ID]** is **ORG001**.
 
-    -   Template value for **PrimaryAccount_Organization_OrganizationId [Organization ID]** is defaulted to ORG001.
+- **Address Country region code** is required in Finance and Operations. To avoid synchronization errors, you can specify a default value in the **CDS &gt; Operations** mapping. That default value is then used if the field is left blank in Sales. The default template value for **PrimaryAddressCountryRegionISOCode** is **USA**.
+- Make sure that a value for the following field exists in Finance and Operations. If the information isn't required in Finance and Operations, you can remove the mapping from the **CDS &gt; Destination** mapping.
 
--   **Address Country region code** is required in Finance and Operations. To avoid sync errors, you can default a value in the **CDS -\> Operations mapping** that is used if the field is left blank in Sales.
-
-    -   Template value for **PrimaryAddressCountryRegionISOCode** is defaulted to USA.
-
--   Ensure that the following value exist in Finance and Operations. If the information is not desired in Finance and Operations, the mapping can be remove from **CDS -\> Destination** mapping.
-
-    -   Field name in Finance and Operations: **Decision**
-
-        -   Mapping: PrimaryAccountRole = DecisionMakingRole
+    - **Field name in Finance and Operations:** Decision
+    - **Mapping:** PrimaryAccountRole = DecisionMakingRole
 
 ### Contact to Customer
 
--   Update the **CDS Organization ID in Source -\> CDS**
+- Update **CDS Organization ID** in the **Source &gt; CDS** mapping. The default template value for **Organization_OrganizationId [Organization ID]** is **ORG001**.
+- **Address Country region code** is required in Finance and Operations. To avoid synchronization errors, you can specify a default value in the **CDS &gt; Destination** mapping. That default value is then used if the field is left blank in Sales. The default template value for **PrimaryAddressCountryRegionISOCode** is **USA**.
+- **CustomerGroup** is required in Finance and Operations. To avoid synchronization errors, you can specify a default value in the **CDS &gt; Destination** mapping. That default value is then used if the field is left blank in Sales. The default template value for **CustomerGroupId** is **10**.
+- By adding the following mappings from **CDS &gt; Destination**, you can help reduce the number of manual updates that are in Finance and Operations. You can use a default value or a value map from, for example, **Country/Region** or **City**.
 
-    -   Template value for **Organization_OrganizationId [Organization ID]** is defaulted to ORG001.
-
--   **Address Country region code** is required in Finance and Operations. To avoid sync errors, you can default a value in the **CDS -\> Operations
-    mapping** that is used if the field is left blank in Sales.
-
-    -   Template value for **PrimaryAddressCountryRegionISOCode** is defaulted to USA.
-
--   **CustomerGroup** is required in Finance and Operations. To avoid sync errors, you can default a value in the **CDS -\> Operations mapping** that is used if the field is left blank in Sales.
-
-    -   Template value for **CustomerGroupId** is defaulted to 10.
-
--   It is possible to add the following mappings from **CDS -\> Destination** to reduce the manual updates needed in Finance and Operations. This can be done with a default or a **ValueMap** from for example, **Country/Region** or **City**.
-
-    -   **SiteId** - Site can also be defaulted on Products in Finance and Operations. Site is required to generate Quote and Sales order in Finance and Operations.
-
-        -   Template value for **SiteId** is not defined.
-
-    -   **WarehouseId** - Warehouse can also be defaulted on the Products in Finance and Operations. Warehouse is required to generate Quote and Sales order in Finance and Operations.
-
-        -   Template value for **WarehouseId** is not defined.
-
-    -   **LanguageId** - Language is required to generate Quote and Sales order in Finance and Operations.
-
-        -   Template value for **LanguageId** is defaulted to en-us. 
+    - **SiteId** - A default site can also be defined on products in Finance and Operations. A site is required in order to generate quotations and sales orders in Finance and Operations. A template value for **SiteId** isn't defined.
+    - **WarehouseId** - A default warehouse can also be defined on products in Finance and Operations. A warehouse is required in order to generate quotations and sales orders in Finance and Operations. A template value for **WarehouseId** isn't defined.
+    - **LanguageId** - A language is required in order to generate quotations and sales orders in Finance and Operations. The default template value for **LanguageId** is **en-us**.
 
 ## Template mapping in data integrator
 
+The following illustrations show an example of a template mapping in data integrator.
+
 ### Contact to Contact
 
-The following screenshots show how the template mapping can look like in data integrator.
+![Template mapping in data integrator](./media/contacts-template-mapping-data-integrator-1.png)
 
-![template mapping in data integrator](./media/contacts-template-mapping-data-integrator-1.png)
-
-![template mapping for products in data integrator](./media/contacts-template-mapping-data-integrator-2.png)
+![Template mapping for Contacts in data integrator](./media/contacts-template-mapping-data-integrator-2.png)
 
 ### Contact to Customer
 
-![template mapping in data integrator](./media/contacts-template-mapping-data-integrator-3.png)
+![Template mapping in data integrator](./media/contacts-template-mapping-data-integrator-3.png)
 
-![template mapping for products in data integrator](./media/contacts-template-mapping-data-integrator-4.png)
-
+![Template mapping for Contacts in data integrator](./media/contacts-template-mapping-data-integrator-4.png)
