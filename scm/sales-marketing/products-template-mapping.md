@@ -54,7 +54,7 @@ Sync tasks required prior to Product sync: None
 
 ## Entity flow
 
-Products are managed in Finance and Operations and synchronized to Sales. The data entity **Sellable released products** in Operations only exports products that are sellable, which means that products have the information required to be used on a sales order. The same rules apply when a product is validated with the **Validate** function on the **Released product** page.
+Products are managed in Finance and Operations and synchronized to Sales. The data entity **Sellable released products** in Finance and Operations only exports products that are sellable, which means that products have the information required to be used on a sales order. The same rules apply when a product is validated with the **Validate** function on the **Released product** page.
 
 The **Product number** is used as key, meaning that product variants are synchronized to CDS and Sales with individual **Product IDs** per **Product variant**.
 
@@ -68,8 +68,8 @@ In Sales, a new field on the products **Is Externally Maintained** is added to i
 
 -   **Is Externally Maintained = Blank**: Product exists in Sales prior to enabling the Prospect to cash solution.
 
-The **Is Externally Maintained** information is used to ensure that only **Quotes** and **Sales orders** with **Externally maintained products** will sync to Finance and Operations.  
- 
+The **Is Externally Maintained** information is used to ensure that only **Quotes** and **Sales orders** with **Externally maintained products** will sync to Finance and Operations.
+
 **Externally maintained products** are automatically added to the first valid **Price list** with the same currency. Note that the list is organized alphabetically by **Name**. The product sales price from Finance and Operations is used as price on the **Price list**. This means that it is required to have a **Price list** in Sales for each **Product sales currency** in Finance and Operations. Currency on the released sellable products is set to the accounting currency in the legal entity, from which the product is exported.
 
 > [!NOTE]
@@ -83,7 +83,7 @@ The **Is Externally Maintained** information is used to ensure that only **Quote
 
     -   Click the **Populate distinct product table** to run the job. This job only needs to be run once.
 
--   Ensure that the needed **ValueMap** for selling **Unit of measure (**UOM) in Finance and Operations exists in the **Source -\> CDS mapping SalesUnitSymbol / DefaultSellingUnitOfMeasure**.
+-   Ensure that the needed **ValueMap** for selling **Unit of measure** (UOM) in Finance and Operations exists in the **Source -\> CDS mapping SalesUnitSymbol / DefaultSellingUnitOfMeasure**.
 
 -   Ensure that **Decimals supported** for UOM match your requirements in **CDS -\> Destination**. If you require different values per UOM, this can be done with **ValueMap** from Unit, for example, [Each : 0] & [Pound : 2].
 
