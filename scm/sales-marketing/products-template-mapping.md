@@ -109,9 +109,6 @@ The **Is Externally Maintained** information is used to ensure that only **Quote
 
 ## Template mapping in Data integrator
 
+![this is the alt text](..media/products-template-mapping-data-integrator-1.png.)
+![this is the alt text](..media/products-template-mapping-data-integrator-2.png.)
 
-
-
-![Machine generated alternative text: SOURCE ENTITY Sellable released products CDS ENTITY Product Destination ource \> CD Search SOURCE FIELD CDS \> MAP TYPE [Z ProductNumber [ProductNumber] [Z ProductName [ProductName] [Z ProductDescription [ProductDescription] [Z ProductType [ProductType] [Z SalesUnitSymbol [SalesUnitSymbol] SalesPrice [SalesPrice] [Z CurrencyCode [CurrencyCode] UnitCost [UnitCost] [Z CurrencyCode [CurrencyCode] [Z IsStockedProduct [IsStockedProduct] None DESTINATION ENTITY products DESTINATION FIELD [Z Productld [Product ID] Name [Name] [Z Description [Description] ProductType [Product type] DefaultSellingQuantity_lJOM [Unit of Measure of SellingUnitPrice [Selling unit price] SellingUnitPrice_CurrencyCode [Currency of StandardCostAmount [Standard cost amount] StandardCostAmount_CurrencyCode [Currency of IsStocked [Is stocked] [Z Organization_Organizationld [Organization ID] ](media/22c1d8a6496d190fa72b081a511dce79.png)
-
-![Machine generated alternative text: SOURCE ENTITY Sellable released products Source \> CDS Search SOURCE FIELD CDS ENTITY Product Destinatio MAP TYPE SellingUnitPrice_CurrencyCode [Currency of [Z Description [Description] Name [Name] [Z Productld [Product ID] ProductType [Product type] DefaultSellingQuantity_lJOM [Unit of Measure of None SellingUnitPrice [Selling unit price] StandardCostAmount [Standard cost amount] IsStocked [Is stocked] None None DESTINATION ENTITY products DESTINATION FIELD [Z transactioncurrencyid.isocurrencycode [Currency (Currency Code)] [Z description [Description] [Z name [Name] [Z productnumber [Product ID] producttypecode [Product Type] [Z defaultuomid.name [Default IJnit (Name)] [Z defaultuomscheduleid.name [Unit Group (Name)] price [List Price] currentcost [Current Cost] isstockitem [Stock Item] quantitydecimal [Decimals Supported] msdynce_ismaintainedexternally [Is Maintained Externally] ](media/72292e8c28b64880d28810097e3a1f14.png)
