@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Accounts (Customers)
-description: The topic discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines accounts from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+title: Sales quotation headers and lines
+description: The topic discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: ChristianRytt
 manager: AnnBe
 ms.date: 07/3/2017
@@ -34,143 +34,101 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-The topic discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines accounts from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+The topic discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
-## Template and Task
+## Template and tasks
 
-The following templates and underlying tasks are used to synchronize sales quotation headers and lines from Microsoft Dynamics 365 for Sales (Sales) to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations).
+The following templates and underlying tasks are used to synchronize sales quotation headers and lines from Sales to Finance and Operations:
 
-Name of template: Sales Quotes (Sales to Fin and Ops)
+- **Name of the template:** Sales Quotes (Sales to Fin and Ops)
+- **Names of the tasks in the project:**
 
-Name of task in project:
+    - QuoteHeader
+    - QuoteLine
 
--   QuoteHeader
+The following synchronization tasks are required before synchronization of sales quotation headers and lines can occur:
 
--   QuoteLine
-
-Sync tasks required prior to Sales quotation header and lines sync:
-
--   Products
-
--   Accounts (if used)
-
--   Contacts (if used)
+- Products
+- Accounts (if used)
+- Contacts (if used)
 
 ## Entity set
 
-| **Sales**    | **CDS**       | **Finance and Operations** |
-|--------------|---------------|----------------------------|
-| Quotes       | Quotation     | Sales quotation headers    |
-| QuoteDetails | QuotationLine | CDS sales quotation lines  |
+| Sales        | CDS           | Finance and Operations    |
+|--------------|---------------|---------------------------|
+| Quotes       | Quotation     | Sales quotation headers   |
+| QuoteDetails | QuotationLine | CDS sales quotation lines |
 
 ## Entity flow
 
-Sales quotations are created in Sales and synchronized to Finance and Operations.  
- 
-Sales quotations from Sales will only be synchronized under the following conditions:
+Sales quotations are created in Sales and synchronized to Finance and Operations.
 
-1.  All products on the quotation lines are externally maintained.
+Sales quotations from Sales are synchronized only if the following conditions are met:
 
-2.  The quotation is active or activated.
+- All products on the sales quotation lines are externally maintained.
+- The sales quotation is active or activated.
 
 ## Prospect to cash solution for Sales
 
-The field **Has Externally Maintained Products Only** is added to the **Quote** entity to consistently keep track of whether the sales order is made up entirely of **Externally Maintained Products**, in which case **Products** maintained in Finance and Operations. This is done to ensure that you don't try to sync **Sales order lines** with **Products** that are unknown to Finance and Operations.
+The **Has Externally Maintained Products Only** field has been added to the Quote entity to consistently track whether the sales quotation consists entirely of externally maintained products. If a sales quotation has only externally maintained products, the products are maintained in Finance and Operations. This behavior helps guarantee that you don't try to synchronize sales quotation lines with products that are unknown to Finance and Operations.
 
-All **Quote products/lines** are updated with the **Externally Maintained** information from the **Quote header** and this information can be found in the field **Quote Has Externally Maintained Products Only** on the **Quote line** entity.
+All products and lines on the quotation are updated with the **Has Externally Maintained Products Only** information from the quotation header. This information can be found in the **Quote Has Externally Maintained Products Only** field on the Quote line entity.
 
-**Discount**, **Charges** and **Tax** are controlled by a complex setup in Finance and Operations, which does not allow for integration mapping at this point. The current design is that **Price**, **Discount**, **Charge** and **Tax** are mastered and handled by Finance and Operations.
+The **Discount**, **Charges**, and **Tax** fields are controlled by a complex setup in Finance and Operations. This setup doesn't currently support integration mapping. In the current design, the **Price**, **Discount**, **Charge**, and **Tax** fields are mastered and handled by Finance and Operations.
 
-In Sales, the solution makes the following fields read-only because these values do not sync to Finance and Operations.
+In Sales, the solution makes the following fields read-only, because the values aren't synchronized to Finance and Operations:
 
--   Read-only on SO Header: Discount %, Discount, Freight Amount
-
--   Read-only on SO Line: Tax
+- **Read-only fields on the sales quotation header:** Discount %, Discount, Freight Amount
+- **Read-only fields on sales quotation lines:** Tax
 
 ## Preconditions and mapping setup
 
--   Before synchronizing quotes, it is important to update Sales with the following setting:
-
-      Under **Settings \> Administration \> System settings \> Sales**, ensure that **Discount calculation method** is set to Per unit. This is done to ensure that the line item discount from Sales match the setting in Finance and Operations. Without this setting the discount would not be correct in Finance and Operations, as Finance and Operations would read the discount as a discount per unit, even if it was per line in Sales.
-
--   In Finance and Operations, **Number sequence** for **Quotations** must be set to **Manual**.
-
-    -   **Account receivable \> Setup \> Account receivable parameters \> Number sequence - Number sequence for quotations. View details**. Under **General Setup,** set **Manual = Yes**.
-
--   To avoid sync failing for sales quotations, **Delivery date control** should be set to **None** as default in Finance and Operations. This is done under **Accounts receivable \> Setup \> Accounts receivable parameters \> Shipments**.
+- Before you synchronize sales quotations, in Sales, go to **Settings** &gt; **Administration** &gt; **System settings** &gt; **Sales**, and make sure that the **Discount calculation method** field is set to **Per unit**. This setting helps guarantee that the line item discount from Sales matches the setting in Finance and Operations. Otherwise, the discount won't be correct in Finance and Operations, because Finance and Operations will read the discount as a per-unit discount even if it was a per-line discount in Sales.
+- In Finance and Operations, go to **Accounts receivable** &gt; **Setup** &gt; **Account receivable parameters**. On the **Number sequence** tab, select the number sequence for sales quotations, and then click **View details**. Then, under **General Setup**, set the **Manual** field to **Yes**.
+- In Finance and Operations, go to **Accounts receivable** &gt; **Setup** &gt; **Accounts receivable parameters**. Then, on the **Shipments** tab, set the **Delivery date control** field to **None**. This setting helps prevent synchronization from failing for sales quotations.
 
 ### QuoteHeader
 
--   **Requested delivery date** is required in Finance and Operations and sync will fail if this date is blank. To avoid this issue, the date is defaulted from **Source -\> CDS** in case of blank value. The date should be updated to a preferred value. Currently it is not possible to enter something like Today for today's date, so it must be a given date.
+- The **Requested delivery date** field is required in Finance and Operations, and synchronization will fail if the field is left blank. To prevent this issue, if the field is blank, a default date is taken from **Source &gt; CDS**. The date should be updated to a preferred value. Currently, you can't enter a value such as **Today** to represent today's date. You must enter a specific date. The default template value for **Requested delivery date** is **1/1/2020**.
+- The **Address Country region code** field is required in Finance and Operations. To help prevent synchronization errors, you can specify a default value that is used if the field is left blank in Sales. This default value is also useful, because you don't have to type **Country region** for local addresses. There is no default template value for **DeliveryAddressCountryRegionISOCode**.
+- Update the mapping for **CDS Organization ID** in **Source &gt; CDS** so that it matches **CDS organization** in the Organization entity:
 
-    -   Template value for Requested delivery date is defaulted to 1/1/2020.
-
--   **Address Country region code** is required in Finance and Operations. To avoid sync errors, you can default a value that is used if the field is left blank in Sales, which can also be useful to avoid having to type **Country region** for local addresses.
-
-    -   Template value for **DeliveryAddressCountryRegionISOCode** is not defaulted.
-
--   Update the mapping for **CDS Organization ID in Source -\> CDS** to match the **CDS organization** in the **Organization** entity.
-
-    -   Template value for **Organization_OrganizationId** is defaulted to ORG001.
-
-    -   Template value for **Account_Organization_OrganizationId** is defaulted to ORG001.
-
-    -   Template value for **InvoiceAccount_OrganizationId** is defaulted to ORG001.
+    - The default template value for **Organization_OrganizationId** is **ORG001**.
+    - The default template value for **Account_Organization_OrganizationId** is **ORG001**.
+    - The default template value for **InvoiceAccount_OrganizationId** is **ORG001**.
 
 ### QuoteLine
 
--   Update the mapping for **CDS Organization ID in Source -\> CDS** to match the **CDS organization** in the **Organization** entity
+- Update the mapping for **CDS Organization ID** in **Source &gt; CDS** so that it matches **CDS organization** in the Organization entity:
 
-    -   Template value for Organization_OrganizationId is defaulted to ORG001.
+    - The default template value for **Organization_OrganizationId** is **ORG001**.
+    - The default template value for **Product_Organization_Organization_OrganizationId** is **ORG001**.
+    - The default template value for **Quotation_Organization_Organization_OrganizationId** is **ORG001**.
 
-    -   Template value for **Product_Organization_Organization_OrganizationId** is defaulted to ORG001.
+- The **Requested delivery date** field is required in Finance and Operations, and synchronization will fail if the field is left blank. To prevent this issue, if the field is blank, a default date is taken from **Source &gt; CDS**. The date should be updated to a preferred value. Currently, you can't enter a value such as **Today** to represent today's date. You must enter a specific date. The default template value for **Requested delivery date** is **1/1/2020**.
+- You can add the following mappings from **CDS &gt; Destination** to help guarantee that quotation lines are imported into Finance and Operations if there is no default information from either the customer or the product:
 
-    -   Template value for **Quotation_Organization_Organization_OrganizationId** is defaulted to ORG001.
+    - **SiteId** – A site is required in order to generate quotations and sales order lines in Finance and Operations. There is no default template value for **SiteId**.
+    - **WarehouseId** – A warehouse is required in order to process quotations and sales order lines in Finance and Operations. There is no default template value for **WarehouseId**.
 
--   **Requested delivery date** is required in Finance and Operations and sync will fail if the date is blank. To avoid this issue, the date is defaulted from **Source -\> CDS** in case of blank value. The date should be updated to a preferred value. Currently, it is not possible to enter something like Today for today's date, so it must be a given date.
-
-    -   Template value for **Requested delivery date** is defaulted to 1/1/2020.
-
--   It possible to add the following mappings from **CDS -\> Destination** to avoid that quotation line fails to import to Finance and Operations if the information is neither defaulted from customer, nor from product.
-
-    -   **SiteId** - Site is required to generate **Quotes** and **Sales order lines** in Operations.
-
-        -   Template value for SiteId is not defaulted.
-
-    -   **WarehouseId** - Warehouse is required to process **Quote** and **Sales order lines** in Finance and Operations.
-
-        -   Template value for WarehouseId is not defaulted.
-
--   Ensure that the needed **ValueMap** for selling UOM in Finance and Operations exists in the **CDS -\> Destination mapping** for **Quantity_UOM / SALESUNITSYMBOL.**
+- Make sure that the required value map for the selling unit of measure (UOM) in Finance and Operations exists in the **CDS &gt; Destination** mapping for **Quantity_UOM** to **SALESUNITSYMBOL**.
 
 ## Template mapping in data integrator
 
 > [!NOTE]
+> - The **Discount**, **Charges**, and **Tax** fields are controlled by a complex setup in Finance and Operations. This setup doesn't currently support integration mapping. In the current design, the **Price**, **Discount**, **Charge**, and **Tax** fields are handled by Finance and Operations.
+> - The **Payment terms**, **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** fields aren't part of the default mappings. To map these fields, you must set up a value mapping that is specific to the data in the organizations that the entity is synchronized between.
 
-> **Discount**, **Charges** and **Tax** are controlled by a complex setup in Finance and Operations, which does not allow for integration mapping at this point. The current design is that **Price**, **Discount**, **Charge** and **Tax** are handled by Finance and Operations.
+The following illustrations show an example of a template mapping in data integrator.
 
-> **Payment terms**, **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** are not part of the default mappings. Mapping of these fields requires value mapping to be set up, which is specific to the data in the organizations between which the entity is synchronized.
+### QuoteHeader
 
-The following screenshots show how the template mapping can look like in data integrator.
+![Template mapping in data integrator](./media/sales-quotation-template-mapping-data-integrator-1.png)
 
-### QuoteHeader:
+![Template mapping in data integrator](./media/sales-quotation-template-mapping-data-integrator-2.png)
 
-![template mapping in data integrator](./media/sales-quotation-template-mapping-data-integrator-1.png)
+### QuoteLine
 
-![template mapping in data integrator](./media/sales-quotation-template-mapping-data-integrator-2.png)
+![Template mapping in data integrator](./media/sales-quotation-template-mapping-data-integrator-3.png)
 
-### Quote lines:
-
-![template mapping in data integrator](./media/sales-quotation-template-mapping-data-integrator-3.png)
-
-![template mapping in data integrator](./media/sales-quotation-template-mapping-data-integrator-4.png)
-
- 
-
-
-
-
-
-
-
-
+![Template mapping in data integrator](./media/sales-quotation-template-mapping-data-integrator-4.png)
