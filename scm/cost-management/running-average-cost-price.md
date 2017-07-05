@@ -18,7 +18,11 @@ ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2094
+<<<<<<< HEAD
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
+=======
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+>>>>>>> refs/remotes/origin/master
 # ms.tgt_pltfrm: 
 ms.custom: 79003
 ms.assetid: adc3f245-dc9d-4327-88fb-6a579194a5fe
@@ -33,6 +37,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Running average cost price
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 The inventory close process settles issue transactions to receipt transactions, based on the inventory valuation method that is selected in the item’s item model group. However, before inventory close is run, the system calculates a running average cost price that is typically used when issue transactions are posted.

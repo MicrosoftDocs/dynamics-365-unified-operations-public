@@ -18,12 +18,16 @@ ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, Inv
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2084
+<<<<<<< HEAD
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
+=======
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+>>>>>>> refs/remotes/origin/master
 # ms.tgt_pltfrm: 
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -33,6 +37,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Inventory journals
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 This article describes how you can use inventory journals to post various types of physical inventory transactions. 
