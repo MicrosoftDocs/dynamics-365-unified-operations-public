@@ -802,20 +802,6 @@ Analytics and insights provide the following data and visualizations:
 
     -   Position pay analysis
 
--   Employee development
-
-    -   Employee skill analysis
-
-    -   Skill profiles
-
-    -   Skill analysis
-
--   Learning
-
-    -   Course and registration analysis
-
-    -   Instructor availability analysis
-
 -   Personnel management
 
     -   People metrics
@@ -937,41 +923,6 @@ For more information see [My team mobile workspace](/dynamics365/unified-operati
 
 -   See appropriate information in a combined workspace for employees and
     managers, based on their assigned security role.
-
-Onboarding
-----------
-
-The onboarding process lets HR professionals create tasks to track the
-onboarding progress of pending employees, as well as recently hired employees.
-Because the onboarding process can vary between positions in a single
-organization, multiple onboarding checklists can be created to fit the
-organization’s hiring process.
-
-Onboarding lets you complete the following tasks:
-
--   Define templates for onboarding.
-
--   Define calendars to apply to tasks based on location or business function.
-
--   Assign checklists at the time of hiring, or after an employee has
-    started. Checklists can be assigned to future-dated hires.
-
--   Analyze past due tasks and identify bottlenecks in the process.
-
--   Assign tasks to employees, positions, managers, and the onboarding employee.
-
--   Provide instructions to all tasks.
-
--   Define “deep links” to drive consumers of tasks directly to the right areas
-    to immediately enter data regarding the new employee without needing to
-    search or filter.
-
--   Ability to re-assign tasks and update due dates. Update checklists
-    throughout the process by marking items as complete, adding new tasks, or
-    removing tasks.
-
--   Update checklists throughout the process by marking items as complete,
-    adding new tasks, or removing tasks.
 
 **Intelligence**
 ================
