@@ -94,8 +94,11 @@ The following illustrations show an example of a template mapping in data integr
 ![Template mapping for Accounts in data integrator](./media/accounts-template-mapping-data-integrator-2.png)
 
 ## Related topics
+
 [Products](products-template-mapping.md)
+
 [Contact (Contacts) and Contact (Customers)](contacts-template-mapping.md)
+
 [Sales quotation headers and lines](sales-quotation-template-mapping.md)
 
 
