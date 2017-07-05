@@ -107,7 +107,7 @@ The **Is Externally Maintained** information is used to ensure that only **Quote
 
 ## Template mapping in data integrator
 
-The following screenshots show how the template mapping can look like in data integrator.
+The following illustrations show an example of a template mapping in data integrator.
 
 ![template mapping in data integrator](./media/products-template-mapping-data-integrator-1.png)
 
