@@ -59,31 +59,24 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### High-level structure
 
-Design
+- Design
 
-ActionPane (Action Pane)
+    - ActionPane (Action Pane)
+    - *CustomFilter (Group) \[Optional\]*
+    - ParentTab (Tab)
 
-*CustomFilter (Group) \[Optional\]*
+        - ParentList (TabPage) – **Note:** The Toolbar and List subpattern is used.
+        - General (TabPage repeats 0..N)
 
-ParentTab (Tab)
+    - *ParentFooterGroup (Group) \[Optional\]*
+    - HSplitter (Group)
+    - *ChildToolbar (ActionPane) \[Optional\]*
+    - ChildTab (Tab)
 
-ParentList (TabPage) – **Note:** The Toolbar and List subpattern is used.
+        - ChildList (TabPage) – **Note:** The Toolbar and List subpattern is used.
+        - General (TabPage, repeats 0..N)
 
-General (TabPage repeats 0..N)
-
-*ParentFooterGroup (Group) \[Optional\]*
-
-HSplitter (Group)
-
-*ChildToolbar (ActionPane) \[Optional\]*
-
-ChildTab (Tab)
-
-ChildList (TabPage) – **Note:** The Toolbar and List subpattern is used.
-
-General (TabPage, repeats 0..N)
-
-*ChildFooterGroup (Group) \[Optional\]*
+    - *ChildFooterGroup (Group) \[Optional\]*
 
 ### Core components
 
@@ -111,7 +104,7 @@ The verification checklist shows the steps for manually verifying that the form 
 
 **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 **Task Double guidelines:**
 
@@ -136,6 +129,3 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![AX 2012 visual example](./media/taskdouble3.png)](./media/taskdouble3.png)
-
-
-

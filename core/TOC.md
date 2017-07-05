@@ -807,6 +807,13 @@
 ##### [Price simulation](/dynamics365/unified-operations/supply-chain/sales-marketing/price-simulation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Returns
 ##### [Sales returns](/dynamics365/unified-operations/supply-chain/warehousing/sales-returns?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+
+### Prospect to cash
+#### [Products](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Accounts (Customers)](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Contact (Contacts) and Contact (Customers)](/dynamics365/unified-operations/supply-chain/sales-marketing/contacts-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Sales quotation headers and lines](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-quotation-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ## [Organization administration](/dynamics365/unified-operations/fin-and-ops/organization-administration/organization-administration-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Organizations and organizational hierarchies](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Configure organizational hierarchy](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-organizational-hierarchy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1255,9 +1262,8 @@
 #### Migrating entities
 ##### [Configuration data projects](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Configuration data packages](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-packages?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Configuration data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-
-###### [Copy configuration data between companies](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Configuration data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Copy configuration data between companies](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Best practices for importing vouchers using the General journal entity](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Creating data entities
