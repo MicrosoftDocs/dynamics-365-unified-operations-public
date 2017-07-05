@@ -433,6 +433,14 @@ have been submitted through workflow using a mobile device.
 
 For more information, see [Mobile invoice approvals](/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals).
 
+Configuration data packages
+----------------------------
+
+Configuration data packages are available as process data packages from Lifecycle Services (LCS) for core Financial modules. These data packages can help improve the repeatability of implementations and accelerate the configuration of Dynamics 365 for Finance and Operations, Enterprise edition.
+
+The data packages contain configuration entity spreadsheets. These entity spreadsheets have best practice data, which you can use to create an initial ‘golden’ build. The data entities in the data packages are also sequenced appropriately, to help ensure a successful single-click import of the data. For more information, see [Configuration data packages](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-packages). 
+
+
 Save Financial reports to SharePoint
 ------------------------------------
 
