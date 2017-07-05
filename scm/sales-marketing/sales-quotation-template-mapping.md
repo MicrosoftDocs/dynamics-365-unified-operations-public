@@ -90,7 +90,7 @@ In Sales, the solution makes the following fields read-only, because the values 
 ### QuoteHeader
 
 - The **Requested delivery date** field is required in Finance and Operations, and synchronization will fail if the field is left blank. To prevent this issue, if the field is blank, a default date is taken from **Source &gt; CDS**. The date should be updated to a preferred value. Currently, you can't enter a value such as **Today** to represent today's date. You must enter a specific date. The default template value for **Requested delivery date** is **1/1/2020**.
-- The **Address Country region code** field is required in Finance and Operations. To help prevent synchronization errors, you can specify a default value that is used if the field is left blank in Sales. This default value is also useful, because you don't have to type **Country region** for local addresses. There is no default template value for **DeliveryAddressCountryRegionISOCode**.
+- The **Address Country region code** field is required in Finance and Operations. To help prevent synchronization errors, you can specify a default value that is used if the field is left blank in Sales. This default value is also useful, because you don't have to manually enter a value in the **Country region** field for local addresses. There is no default template value for **DeliveryAddressCountryRegionISOCode**.
 - Update the mapping for **CDS Organization ID** in **Source &gt; CDS** so that it matches **CDS organization** in the Organization entity:
 
     - The default template value for **Organization_OrganizationId** is **ORG001**.
