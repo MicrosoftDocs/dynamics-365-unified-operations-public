@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer 
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 15911
 ms.assetid: c5d6aa38-1f5f-41e5-9d90-11766d34a947
@@ -49,11 +49,10 @@ This container pattern is used to show actions above a subpattern of data fields
 ## Model
 ### High-level structure
 
-\[Container\]
+- \[Container\]
 
-Toolbar (ActionPane, Style=Strip)
-
-ContentGroup (Group) – **Note:** A fields subpattern is used.
+    - Toolbar (ActionPane, Style=Strip)
+    - ContentGroup (Group) – **Note:** A fields subpattern is used.
 
 ### Core components
 
@@ -72,9 +71,11 @@ ContentGroup (Group) – **Note:** A fields subpattern is used.
 -   [Dimension Expression Builder](..\financial\dimension-expression-builder-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
 
--   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
+**Standard form guidelines:**
+
+-   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 
 **Toolbar** **guidelines:**
 
@@ -110,6 +111,3 @@ This section will have answers to frequently asked questions that are related to
 **HcmPosition** 
 
 ![ToolbarFields(3)](./media/toolbarfields3.png)
-
-
-

@@ -4,8 +4,8 @@
 title: Control unit sample for Sweden
 description: This topic is the building and installation guide for the sample for control unit integration for Sweden 
 author: epopov
-manager: vastrup
-ms.date: 05/26/2017
+manager: AnnBE
+ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -14,15 +14,14 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: Application User
+audience: Developer
 # ms.devlang: 
-# ms.reviewer: shylaw
-# ms.search.scope: [Which Operations client to show this topic as help for]
+ms.reviewer: shylaw
+ms.search.scope: UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.assetid: [Go get from guidgenerator.com]
 ms.search.region: Sweden
-# ms.search.industry: retail
+ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Enterprise edition, July 2017 update

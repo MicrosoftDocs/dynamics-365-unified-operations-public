@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: twheeloc
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
@@ -77,3 +77,5 @@ The following table shows the visualizations that are available on each report p
 | Valuations maps        | Total net book value |
 | Valuations maps        | Fixed asset locations |
 | Valuations maps        | Fixed asset details |
+
+To view the analytics with data, you must first refresh the AssetTransactionMeasure aggregate measurement on the **Entity Store** page.

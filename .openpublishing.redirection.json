@@ -1,0 +1,154 @@
+{ 
+  "redirections": [ 
+    {   
+        "source_path": "hr/manage-recruiting-process.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/manage-recruiting-process", 
+        "redirect_document_id": true 
+    }, 
+    { 
+        "source_path": "hr/mass-hire-projects.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/mass-hire-projects", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-benefit-accrual-plan-tasks.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-benefit-accrual-plan-tasks", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-benefit-set-up-tasks.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-benefit-set-up-tasks", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-comply-ada.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada", 
+        "redirect_document_id": true 
+    },   
+    {   
+        "source_path": "hr/localizations/noam-usa-earning-code-group-tasks.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-earning-code-group-tasks", 
+        "redirect_document_id": true 
+    }, 
+    { 
+        "source_path": "hr/localizations/noam-usa-earnings-generation-process.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-earnings-generation-process", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-enter-beginning-balances.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-enter-beginning-balances", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-existing-earnings.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-existing-earnings", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-existing-payroll-payments.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-existing-payroll-payments", 
+        "redirect_document_id": true 
+    },    
+    {   
+        "source_path": "hr/localizations/noam-usa-form-i-9-verification.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification", 
+        "redirect_document_id": true 
+    }, 
+    { 
+        "source_path": "hr/localizations/noam-usa-garnishment-tax-levy-administrative-fees.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-administrative-fees", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-garnishment-tax-levy-enrollment-tasks.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-enrollment-tasks", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-garnishment-tax-levy-set-up-tasks.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-set-up-tasks", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "hr/localizations/noam-usa-generate-earnings.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-generate-earnings", 
+        "redirect_document_id": true 
+    }, 
+    { 
+        "source_path": "hr/localizations/noam-usa-generate-payroll-reports.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-enter-beginning-balances", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-issue-worker-payments.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-issue-worker-payments", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-pay-statements-payment-generation-process.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-statements-payment-generation-process", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-pay-statements.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-statements", 
+        "redirect_document_id": true 
+    },
+        { 
+        "source_path": "hr/localizations/noam-usa-payroll-calculation-frequencies-tasks.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll-calculation-frequencies-tasks", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-payroll-data-updates.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll-data-updates", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-payroll.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-post-payroll-generate-vendor-invoices.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-post-payroll-generate-vendor-invoices", 
+        "redirect_document_id": true 
+    },  
+        { 
+        "source_path": "hr/localizations/noam-usa-premium-earning-setup-tasks.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-premium-earning-setup-tasks", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-tax-codes-tax-groups-definitions.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-tax-codes-tax-groups-definitions", 
+        "redirect_document_id": true 
+    },
+        { 
+        "source_path": "hr/localizations/noam-usa-tax-information-tasks.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-tax-information-tasks", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-work-cycle-work-period-tasks.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-work-cycle-work-period-tasks", 
+        "redirect_document_id": true 
+    },
+        { 
+        "source_path": "hr/localizations/noam-usa-work-schedule-leave-tasks.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-work-schedule-leave-tasks", 
+        "redirect_document_id": true 
+    },
+    { 
+        "source_path": "hr/localizations/noam-usa-worker-position-payroll-tasks.md", 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-worker-position-payroll-tasks", 
+        "redirect_document_id": true 
+    }  
+]
+} 

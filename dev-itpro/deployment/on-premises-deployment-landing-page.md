@@ -36,7 +36,7 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 **Note:** Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
 
 ## Get started
-- [Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) overview](setup-deploy-on-premises-environments.md)
+- [Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) overview](on-premises-overview.md)
 - [System requirements](../get-started/system-requirements.md)
 - [Hardware sizing for on-premises environments](../get-started/hardware-sizing-on-premises-environments.md)
 - [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
@@ -49,7 +49,7 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 - [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md)
 
 ## Work in your on-premises deployment
-- [Configure document management](/dynamics365/fin-and-ops/organization-administration/configure-document-management.md)
+- [Configure document management](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management.md)
 - [Import Electronic reporting configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Document generation, publishing, and printing capabilities in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
 - [Set up technical support](../lifecycle-services/support-experience.md)

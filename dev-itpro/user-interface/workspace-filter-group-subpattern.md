@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 29231
 ms.assetid: 90d5a70b-a99b-4e79-a52d-b4ef5a942607
@@ -52,9 +52,9 @@ This pattern didn't exist in Microsoft Dynamics AX 2012.
 ## Model
 ### High-level structure
 
-Group
+- Group
 
-Field ($Field)
+    - Field ($Field)
 
 ### Core components
 
@@ -85,6 +85,3 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
-
-
-

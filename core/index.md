@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
-# Introduction to Dynamics 365 Finance and Operations
+# Introduction to Dynamics 365 for Finance and Operations
 
 [!include[banner](includes/banner.md)]
 
@@ -109,12 +109,13 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 </ul>
 </td>
 <td>
-<h3>Dynamics 365 for Talent</h3>
+<h3>Related products</h3>
+<h4>Dynamics 365 for Talent</h4>
 <p><a href="../talent/manage-benefit-program">Benefits</a></p>
 <p><a href="../talent/performance-management-overview">Employee development and training</a></p>
 <p><a href="../talent/questionnaires">Questionnaire</a></p>
 
-<h3>Dynamics 365 for Retail</h3>
+<h4>Dynamics 365 for Retail</h4>
 <p><a href="../retail/call-center-functionality">Call center</p>
 <p><a href="../retail/define-maintain-retail-channels">Channel setup and management</p>
 <p><a href="../retail/retail-peripherals-overview">MPOS and Cloud POS</p>

@@ -18,7 +18,7 @@ ms.search.form: SalesLineDeliveryDetails
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 271623
 ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a

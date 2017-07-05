@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 29311
 ms.assetid: 196e714a-ecfc-42b3-a7f5-84e29fb271bb
@@ -51,11 +51,10 @@ This pattern didn't exist for Microsoft Dynamics AX 2012.
 ## Model
 ### High-level structure
 
-TabPage
+- TabPage
 
-*TileButton (TileButton) \[0..N\]*
-
-*TargetForm (FormPart) \[0..N\]*
+    - *TileButton (TileButton) \[0..N\]*
+    - *TargetForm (FormPart) \[0..N\]*
 
 The Form Parts are used to embed Charts or singleton Cards into the **Summary** section of the workspace. Each form that represents a Chart should use the [Section Chart](section-chart-form-pattern.md) form pattern.
 
@@ -90,6 +89,3 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
-
-
-

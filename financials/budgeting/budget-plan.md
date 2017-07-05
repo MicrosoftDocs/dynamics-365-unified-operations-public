@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
@@ -92,9 +92,8 @@ As all the budgeting process happens in the Finance department, therefore Julia 
 ## Task 2: Configure user security
 Budget planning uses special security policies to configure access to budget plans data. Julia needs to give access to Finance budget plans for herself. 
 
-2.1. Switch to DEMF legal entity context: 
+2.1. Switch to DEMF legal entity context. 
 
-[![DEMF](./media/screenshot10.png)](./media/screenshot10.png) 
 
 2.2. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration. In Parameters tab, set the Security model value to Based on security organizations 
 

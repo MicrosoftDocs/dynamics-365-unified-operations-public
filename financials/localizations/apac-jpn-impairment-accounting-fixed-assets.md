@@ -18,7 +18,7 @@ ms.search.form: AssetImpairmentAssetTransInquire_JP, AssetImpairmentIndicator_JP
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 28811
 ms.assetid: db96c6bb-c2b1-4e26-b711-33caa49eb29f
