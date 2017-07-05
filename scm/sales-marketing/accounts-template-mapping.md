@@ -34,6 +34,9 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
+> [!NOTE]
+> Before you can use the Prospect to cash solution, be familiar with [Dynamics 365 Data Integration](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration). 
+
 The topic discusses the templates and underlying tasks that are used to synchronize accounts from Microsoft Dynamics 365 for Sales (Sales) to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations).
 
 ## Template and task
@@ -89,3 +92,11 @@ The following illustrations show an example of a template mapping in data integr
 ![Template mapping in data integrator](./media/accounts-template-mapping-data-integrator-1.png)
 
 ![Template mapping for Accounts in data integrator](./media/accounts-template-mapping-data-integrator-2.png)
+
+## Related topics
+[Products](products-template-mapping.md)
+[Contact (Contacts) and Contact (Customers)](contacts-template-mapping.md)
+[Sales quotation headers and lines](sales-quotation-template-mapping.md)
+
+
+
