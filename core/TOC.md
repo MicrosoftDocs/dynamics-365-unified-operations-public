@@ -810,7 +810,7 @@
 
 ### Prospect to cash
 #### [Products](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Accounts (Customers](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Accounts (Customers)](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Contact (Contacts) and Contact (Customers)](/dynamics365/unified-operations/supply-chain/sales-marketing/contacts-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Sales quotation headers and lines](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-quotation-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
