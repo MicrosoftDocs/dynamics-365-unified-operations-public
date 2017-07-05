@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-The topic discusses the templates and underlying tasks that are used to synchronize accounts from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+The topic discusses the templates and underlying tasks that are used to synchronize accounts from Microsoft Dynamics 365 for Sales (Sales) to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations).
 
 ## Template and task
 
@@ -43,7 +43,7 @@ The following templates and underlying tasks are used to synchronize accounts fr
 - **Name of the template:** Accounts (Sales to Fin and Ops)
 - **Name of the task in the project:** Accounts - Account - Customers
 
-The following synchronization tasks are required before Account/Customer synchronization: None
+Sync tasks required prior to Account / Customer sync: None
 
 ## Entity set
 
