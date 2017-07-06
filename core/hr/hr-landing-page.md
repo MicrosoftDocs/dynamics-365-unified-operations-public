@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Welcome to human resources
 
-[!include[banner](includes/banner.md)]
+[!include[banner](../includes/banner.md)]
 
 Human resources streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. It also provides a framework for human resources staff to manage areas of oversight. These areas include employee recruitment and retention, benefits administration, training, performance reviews, and change management.
 
@@ -53,38 +53,38 @@ Develop a human resources strategy
 
 As you work with Human resources, you'll decide how to structure your organization, using elements, such as departments, jobs, and positions. These are among the foundational elements that you'll configure in Human resources. Individual employees are assigned to positions which are associated with jobs.
 
--   [Organize your workforce using departments, jobs, and positions](departments-jobs-positions.md)
--   [Set up company-specific HR parameters](set-up-company-specific-hr-parameters.md)
--   [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md) 
+-   [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/talent/departments-jobs-positions)
+-   [Set up company-specific HR parameters](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters)
+-   [Set up HR parameters across legal entities](/dynamics365/unified-operations/talent/set-up-hr-parameters-across-legal-entities) 
 
 ## Recruit, hire, and motivate employees
 
 Recruitment projects manage the content used in advertisements for open positions, and can help you manage applications for job openings. You can use them to track responses to job postings for a specific recruitment project, or specific applicants, and update the status of open positions. You can also hire single applicants or manage "mass hire projects," that facilitate hiring multiple workers, for example, to meet seasonal business needs.
 
--   [Manage a recruiting process](manage-recruiting-process.md)
--   [Mass hire projects](mass-hire-projects.md) 
+-   [Manage a recruiting process](/dynamics365/unified-operations/talent/manage-recruiting-process)
+-   [Mass hire projects](/dynamics365/unified-operations/talent/mass-hire-projects) 
 
 After you've hired staff, you can set up plans to effectively and equitably manage compensation, as well as manage items, such as computers or phones, that your organization lends to its employees. You can create fixed and variable compensation plans, as well as define rules that apply the compensation plan to meet the criteria for that plan.
 
--   [Compensation plans](compensation-plans.md)
--   [Create fixed compensation plans](create-fixed-compensation-plans.md)
--   [Create variable compensation plans](create-variable-compensation-plans.md)
+-   [Compensation plans](/dynamics365/unified-operations/talent/compensation-plans)
+-   [Create fixed compensation plans](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+-   [Create variable compensation plans](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
 
 ## Develop and train employees
 
 To help your employees reach their career objectives while delivering critical business needs you can set up goals, create performance reviews and track feedback To help employees develop needed skills, you can also set up instructors, course types, courses, course descriptions, agendas, tracks, and sessions before you assign an instructor to a course, or register someone for a course. Instructors must already exist as workers, applicants, or contacts.
 
--   [Performance management](performance-management-overview.md)
--   [Align workforce skills and business needs](skills.md)
--   [Administer training through courses](courses.md)
+-   [Performance management](/dynamics365/unified-operations/talent/performance-management-overview)
+-   [Align workforce skills and business needs](/dynamics365/unified-operations/talent/skills)
+-   [Administer training through courses](/dynamics365/unified-operations/talent/courses)
 
 ## Create and maintain benefits
 
 In addition to compensating your staff with wages, salaries, and bonuses, you can develop benefit programs such as health insurance and retirement plans. You can also manage benefits such as loan programs, in which your company lends items, such as computers or phones, to its employees.
 
--   [Manage a benefit program](manage-benefit-program.md)
--   [Benefit eligibility policies](benefit-eligibility-policies.md)
--   [Manage items lent to workers](loan-items.md)
+-   [Manage a benefit program](/dynamics365/unified-operations/talent/manage-benefit-program)
+-   [Benefit eligibility policies](/dynamics365/unified-operations/talent/benefit-eligibility-policies)
+-   [Manage items lent to workers](/dynamics365/unified-operations/talent/loan-items)
 
 ## Maintain workplace safety and compliance
 
@@ -97,9 +97,9 @@ Microsoft Dynamics AX can help you maintain a safe work environment that’s in 
 
 You can design and administer questionnaires to gather information that’s used for a variety of purposes. The Questionnaire feature lets you design and create questionnaires. When a questionnaire is ready, you distribute it broadly or to a specific set of respondents to complete. After the respondents provide their answers, you can review and analyze the results.
 
--   [Questionnaires](questionnaires.md)
--   [Design a questionnaire](design-questionnaires.md)
--   [Distribute and complete a questionnaire](distribute-questionnaires.md)
--   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
+-   [Questionnaires](/dynamics365/unified-operations/talent/questionnaires)
+-   [Design a questionnaire](/dynamics365/unified-operations/talent/design-questionnaires)
+-   [Distribute and complete a questionnaire](/dynamics365/unified-operations/talent/distribute-questionnaires)
+-   [View and evaluate the results of a questionnaire](/dynamics365/unified-operations/talent/evaluate-questionnaire-results)
 
 
