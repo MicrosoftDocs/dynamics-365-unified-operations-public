@@ -42,6 +42,10 @@ The following table provides a comparison of the capabilities provided by the tw
 
 
 ## Why cloud
+Cloud deployments provide a scalable cloud service and data centers that are fully managed by Microsoft. The time spent implementing Finance and Operations can be significantly shortened and fewer customizations may be required. 
+
+
+
 
 
 ## Why on-premises
