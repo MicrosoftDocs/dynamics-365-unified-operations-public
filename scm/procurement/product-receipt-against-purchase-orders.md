@@ -18,11 +18,9 @@ ms.search.form: PurchTable
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2084
-<<<<<<< HEAD
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
-=======
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
->>>>>>> refs/remotes/origin/master
+
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887

@@ -18,7 +18,7 @@ ms.search.form: HcmJob, HcmPosition, OMOperatingUnit
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 87933

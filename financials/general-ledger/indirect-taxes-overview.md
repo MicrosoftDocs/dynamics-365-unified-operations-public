@@ -18,11 +18,9 @@ ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-<<<<<<< HEAD
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
-=======
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
->>>>>>> refs/remotes/origin/master
+
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d

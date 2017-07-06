@@ -18,11 +18,9 @@ ms.search.form: InventItemOrderSetup
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2094
-<<<<<<< HEAD
-ms.search.scope: Operations, Core, Retail
-=======
-ms.search.scope: Core, Operations, UnifiedOperations
->>>>>>> refs/remotes/origin/master
+
+ms.search.scope: Core, Operations, UnifiedOperations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4

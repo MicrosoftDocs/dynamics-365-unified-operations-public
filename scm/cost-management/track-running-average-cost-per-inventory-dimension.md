@@ -18,11 +18,9 @@ ms.search.form: InventOnhandItem
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2094
-<<<<<<< HEAD
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
-=======
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
->>>>>>> refs/remotes/origin/master
+
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 75053
 ms.assetid: 68cc00f4-0f7a-4a7d-be90-8f2e0d0563d3
