@@ -77,8 +77,8 @@ The initial release of the Finance and Operations (on-premises) software will be
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | July 2017 update | 7.2.11792.56024| June 2017     | November 2019  | 
 | Microsoft Dynamics 365 for Operations     | Major release | 1611             | 7.1.1541.3036| November 2016 | November 2019   | 
-| Microsoft Dynamics AX |Minor release  | 7.0.1 | 7.0.1265.23014 | May 2016 | June 30, 2017 |
-| Microsoft Dynamics AX | Major release | 7.0 | 7.0.1265.3015 | February 2016 | June 30, 2017 |
+| Microsoft Dynamics AX |Minor release  | 7.0.1 | 7.0.1265.23014 | May 2016 | June 2017 |
+| Microsoft Dynamics AX | Major release | 7.0 | 7.0.1265.3015 | February 2016 | June 2017 |
 
 
 ### Table 2: Retail application release
@@ -91,15 +91,15 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 | Release           | Build number   | Availability  | Expiration date   |
 |-------------------|----------------|---------------|-------------------|
-| Platform update 8 | 7.0.4565.16212 | June 2017     | June 30, 2018     |
-| Platform update 7 | 7.0.4542.16189 | May 2017      | May 31, 2018      |
-| Platform update 6 | 7.0.4509.16180 | April 2017    | April 30, 2018    |
-| Platform update 5 | 7.0.4475.16165 | March 2017    | March 31, 2018    |
-| Platform update 4 | 7.0.4425.16161 | February 2017 | February 28, 2018 |
-| Platform update 3 | 7.0.4307.16141 | November 2016 | November 30, 2017 |
-| Platform update 2 | 7.0.4230.16130 | August 2016   | August 31, 2017   | 
-| Platform update 1 | 7.0.4127.16103 | May 2016      | May 31, 2017      | 
-| Platform 7.0      | 7.0.4030.16079 | February 2016 | January 31, 2017  |
+| Platform update 8 | 7.0.4565.16212 | June 2017     | June 2018     |
+| Platform update 7 | 7.0.4542.16189 | May 2017      | May 2018      |
+| Platform update 6 | 7.0.4509.16180 | April 2017    | April 2018    |
+| Platform update 5 | 7.0.4475.16165 | March 2017    | March 2018    |
+| Platform update 4 | 7.0.4425.16161 | February 2017 | February 2018 |
+| Platform update 3 | 7.0.4307.16141 | November 2016 | November 2017 |
+| Platform update 2 | 7.0.4230.16130 | August 2016   | August 2017   | 
+| Platform update 1 | 7.0.4127.16103 | May 2016      | May 2017      | 
+| Platform 7.0      | 7.0.4030.16079 | February 2016 | January 2017  |
 
 ## Dates for Finance and Operations (on-premises) releases
 
