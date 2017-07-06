@@ -18,7 +18,11 @@ ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
+<<<<<<< HEAD
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
+=======
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+>>>>>>> refs/remotes/origin/master
 # ms.tgt_pltfrm: 
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
@@ -33,6 +37,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Sales tax overview
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 This article provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
