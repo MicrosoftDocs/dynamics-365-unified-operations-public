@@ -18,11 +18,8 @@ ms.search.form: HcmJob, HcmPosition, OMOperatingUnit
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-<<<<<<< HEAD
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
-=======
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
->>>>>>> refs/remotes/origin/master
+
 # ms.tgt_pltfrm: 
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
