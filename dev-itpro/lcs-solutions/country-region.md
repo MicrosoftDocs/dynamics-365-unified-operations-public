@@ -39,7 +39,7 @@ Microsoft Dynamics 365 for Finance and Operations includes functionality for the
 This topic includes lists of resources that can help you learn more about country/region-specific functionality. 
 
 ## Developing localized solutions
-The following resources provides guidance and information that can help developers and ISVs who are creating country/region-specific customizations or are created a solution for a country that Microsoft does not support.
+The following resources provides guidance and information that can help developers and ISVs who are creating country/region-specific customizations or are creating a solution for a country that Microsoft does not support.
 -   [Separate localization models](separate-localization-models.md)
 -   [Apply country/region context](apply-country-context.md)
 -   [Regulatory certifications](regulatory-certifications.md)

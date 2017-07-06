@@ -377,6 +377,7 @@
 ##### [Generate the GST-05 report](/dynamics365/unified-operations/financials/localizations/apac-sgp-generate-gst-05-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Thailand
 ##### [Stock card reports](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Substitution/adjustment tax invoice](/dynamics365/unified-operations/financials/localizations/apac-tha-substitution-and-adjustment-invoices?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Unrealized VAT](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Withholding tax](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
