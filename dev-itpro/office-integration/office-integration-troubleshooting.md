@@ -163,24 +163,22 @@ This workaround requires user knowledge and extra steps. After users have been e
 
 **Solution:** This is a customer-specific network issue, so it requires a customer-specific resolution. If ADFS is being used, then ensure the ADFS URL is using HTTPS. Also, ensure all the following URLs are accessible from the user's machine:
 URLs accessed for Excel Add-in loading and authentication
-- Load Excel Add-in 
-  - Excel Add-in CDN
-    - http://az689774.vo.msecnd.net:443
-    - https://az689774.vo.msecnd.net
-  - Excel Web JS Add-in platform
-    - http://appsforoffice.microsoft.com:443
-    - https://appsforoffice.microsoft.com
-    - http://secure.aadcdn.microsoftonline-p.com:443
-    - https://secure.aadcdn.microsoftonline-p.com
-    - http://az416426.vo.msecnd.net:443
-    - https://az416426.vo.msecnd.net
-    - http://telemetryservice.firstpartyapps.oaspapps.com:443
-    - https://telemetryservice.firstpartyapps.oaspapps.com
-    - http://nexus.officeapps.live.com:443
-    - https://nexus.officeapps.live.com
-    - http://browser.pipe.aria.microsoft.com:443
-    - https://browser.pipe.aria.microsoft.com
-    - http://schemas.microsoft.com
+- Load Excel Add-in
+  - http://az689774.vo.msecnd.net:443
+  - https://az689774.vo.msecnd.net
+  - http://appsforoffice.microsoft.com:443
+  - https://appsforoffice.microsoft.com
+  - http://secure.aadcdn.microsoftonline-p.com:443
+  - https://secure.aadcdn.microsoftonline-p.com
+  - http://az416426.vo.msecnd.net:443
+  - https://az416426.vo.msecnd.net
+  - http://telemetryservice.firstpartyapps.oaspapps.com:443
+  - https://telemetryservice.firstpartyapps.oaspapps.com
+  - http://nexus.officeapps.live.com:443
+  - https://nexus.officeapps.live.com
+  - http://browser.pipe.aria.microsoft.com:443
+  - https://browser.pipe.aria.microsoft.com
+  - http://schemas.microsoft.com
 - Authentication in Excel Add-in
   - http://login.windows.net:443
   - https://login.windows.net
