@@ -77,7 +77,7 @@ Retail includes a sample for integration of POS with Sweden-specific fiscal devi
 > [!NOTE]
 > Currently, the control unit integration sample doesn't support customer orders. However, a sample that supports customer orders will be available later.
 
-For more information about the control unit integration sample, see the [sample deployment guide](/dynamics365/unified-operations/dev-itpro/retail-sdk/retail-sdk-control-unit-sample).
+For more information about the control unit integration sample, see the [sample deployment guide](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample).
 
 ## Setting up Retail for Sweden
 
@@ -147,7 +147,7 @@ You must specify the following general settings for Sweden.
 
 ### Control unit–specific settings
 
-You must specify the following settings to enable the [integration sample](/dynamics365/unified-operations/dev-itpro/retail-sdk/retail-sdk-control-unit-sample), so that Retail POS is integrated with control units for Sweden.
+You must specify the following settings to enable the [integration sample](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample), so that Retail POS is integrated with control units for Sweden.
 
 1. Create fiscal register configurations, and assign them to hardware profiles:
 
