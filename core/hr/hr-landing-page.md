@@ -5,8 +5,8 @@ title: Human resources
 description: Human resources streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. It also provides a framework for human resources staff to manage areas of oversight. These areas include employee recruitment and retention, benefits administration, training, performance reviews, and change management.
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
-ms.topic: index-page
+ms.date: 07/06/2017
+ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
@@ -21,7 +21,6 @@ ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 20931
-ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: rschloma
