@@ -31,13 +31,13 @@ ms.dyn365.ops.version: Platform Update 8
 ---
 # Dynamics 365 for Finance and Operations, Enterprise edition cloud deployment overview 
 Working with Microsoft to deploy Microsoft Dynamics 365 for Operations in the cloud requires that you understand the environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage. 
-We recommend that you sign of up for Microsoft FastTrack for Dynamics 365 to help speed your deployment and implementation - it's a program that provides training and consulting to help you realize business value faster. For more information, see [Microsoft FastTrack for Dynamics 365 overview](../get-started/fasttrack-dynamics-365-overview.md). If you choose not to use the FastTrack program, we assume that you will be using the XXX Methodology in Lifecycle Services (LCS) to help you manage your implementaiton project. 
+We recommend that you sign of up for the Full Microsoft FastTrack for Dynamics 365 to help speed your deployment and implementation - it's a program that provides training and consulting to help you realize business value faster. For more information, see [Microsoft FastTrack for Dynamics 365 overview](../get-started/fasttrack-dynamics-365-overview.md). If you choose to use the Essentials FastTrack program instead, you will be using the Implementation project Methodology in Lifecycle Services (LCS) to help you manage your implementaiton project. 
 
 ## Customer lifecycle, subscriptions, and deployment topologies
 Microsoft assumes that all customers will follow a lifecycle similar to the following for all cloud deployments, and therefore need different environment topologies at each phase. 
 
 - Evaluate
-- Develop customizations, if neeed
+- Develop customizations, if needed
 - Deploy and test customizations and partner solutions in a small sandbox
 - Test customizations and partner solutions in a production sandbox
 - Live environment with high availability
