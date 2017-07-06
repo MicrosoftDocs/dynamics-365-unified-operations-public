@@ -45,7 +45,7 @@ The Modern Lifecycle Policy covers products and services that are serviced and s
 
 The Finance and Operations online service and the Finance and Operations (on-premises) software are covered by the Modern Lifecycle Policy. Licensed customers must stay current with updates to the Finance and Operations online service or the Finance and Operations (on-premises) software in accordance with the following servicing and system requirements:
 
-- Application versions are supported for three years from the initial date of a major release, as specified in Table 1 later in this topic.
+- Starting with the Microsoft Dynamics 365 for Operations version 1611 release, application versions are supported for three years from the initial date of a major release, as specified in Table 1 later in this topic.
 - Platform versions are supported for one year as specified in Table 3 later in this topic. Platform versions maintain backward compatibility. See the support matrix table below for more detail. Critical fixes and non-critical updates are handled in the following way:
 
     - **Critical fixes** – Microsoft may provide a customer with a hotfix for their current platform version of Finance and Operations, or a fix may be provided in the latest platform version of Finance and Operations, at its discretion.
