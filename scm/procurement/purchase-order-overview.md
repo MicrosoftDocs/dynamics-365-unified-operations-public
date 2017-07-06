@@ -18,7 +18,9 @@ ms.search.form: PurchTable
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2084
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 93083
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
@@ -33,6 +35,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Purchase order overview
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 This article provides general information about purchase orders (POs) and links to additional articles that are related to the various stages that a PO goes through.
