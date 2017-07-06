@@ -65,7 +65,7 @@ Before updates are applied to the customer’s production environment, the custo
 
 The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the Finance and Operations (on-premises) software through December 31, 2027, at a minimum, but only if the customer keeps the deployed software current according to this policy.
 
-The Finance and Operations (on-premises) software is licensed and supported under the [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881/modern-lifecycle-policy). This policy requires that the customer maintain Software Assurance (SA) or the Enhancement Plan, and that it deploy updates as noted in Table 2 later in this topic. Customers who want to use the Fixed Support Lifecycle Policy (5+5) must downgrade to Microsoft Dynamics AX 2012 R3. If a customer lapses on SA or the Enhancement Plan, it will be eligible only for the perpetual license rights to AX 2012 R3 and must uninstall the Finance and Operations (on-premises) software.
+The Finance and Operations (on-premises) software is licensed and supported under the [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881/modern-lifecycle-policy). This policy requires that the customer maintain Software Assurance (SA) or the Enhancement Plan, and that it deploy updates as noted later in this topic. Customers who want to use the Fixed Support Lifecycle Policy (5+5) must downgrade to Microsoft Dynamics AX 2012 R3. If a customer lapses on SA or the Enhancement Plan, it will be eligible only for the perpetual license rights to AX 2012 R3 and must uninstall the Finance and Operations (on-premises) software.
 
 The initial release of the Finance and Operations (on-premises) software will be based on Platform update 8 and the July 2017 update of the application.
 
@@ -85,7 +85,7 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 | Release                           | Version          | Build number | Availability | Expiration date | 
 |-----------------------------------|------------------|--------------|--------------|-----------------|
-| Microsoft Dynamics 365 for Retail | July 2017 update | 7.2.11792.56024 | June 2017    | November 2019   |
+| Microsoft Dynamics 365 for Retail | July 2017 update | 7.2.11792.56024 | June 2017    | September 2017   |
 
 ### Table 3: Platform releases
 
