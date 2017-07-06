@@ -94,14 +94,17 @@ A demo environment includes only Microsoft demo data. You can use a demo environ
 
 ### Test on a sandbox
 The following topics provide information about setting up a sandbox for testing. 
-#### Move your customizations to a sandbox
-    - [Create a deployable package of your models in order to apply it to a runtime environment](create-apply-deployable-package.md)
-    - [Apply a deployable package to a Finance and Operations environment](apply-deployable-package-system.md)
-    - [Install a deployable package](../install-deployable-package.md)
 
-To migrate your code to Dynamics 365 for Operations, use the “Migrate and Create Dynamics 365 for Operations Solutions” methodology in Lifecycle Services. 
+#### Move your customizations to a sandbox
+- [Create a deployable package of your models in order to apply it to a runtime environment](create-apply-deployable-package.md)
+- [Apply a deployable package to a Finance and Operations environment](apply-deployable-package-system.md)
+- [Install a deployable package](../install-deployable-package.md)
+
+To migrate your code to Dynamics 365 for Operations, use the “Migrate and Create Dynamics 365 for Operations Solutions” methodology in Lifecycle Services.
+
 #### Load data in a sandbox
     - [Develop an entity for data migration](data-entities/develop-entity-for-data-migration.md)
+    
 #### Import data from Production into a sandbox
     - [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md)
 
