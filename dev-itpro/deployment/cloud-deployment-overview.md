@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform Update 8
 ---
 # Dynamics 365 for Finance and Operations, Enterprise edition cloud deployment overview 
 Working with Microsoft to deploy Microsoft Dynamics 365 for Operations in the cloud requires that you understand the environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage. 
-We recommend that you sign of up for the Full Microsoft FastTrack for Dynamics 365 to help speed your deployment and implementation - it's a program that provides training and consulting to help you realize business value faster. For more information, see [Microsoft FastTrack for Dynamics 365 overview](../get-started/fasttrack-dynamics-365-overview.md). If you choose to use the Essentials FastTrack program instead, you will be using the Implementation project Methodology in Lifecycle Services (LCS) to help you manage your implementaiton project. 
+We recommend that you sign up for the Full Microsoft FastTrack for Dynamics 365 to help speed your deployment and implementation - it's a program that provides training and consulting to help you realize business value faster. For more information, see [Microsoft FastTrack for Dynamics 365 overview](../get-started/fasttrack-dynamics-365-overview.md). If you choose to use the Essentials FastTrack program instead, you will be using the Implementation Project Methodology in Lifecycle Services (LCS) to help you manage your implementaiton project. 
 
 ## Customer lifecycle, subscriptions, and deployment topologies
 Microsoft assumes that all customers will follow a lifecycle similar to the following for all cloud deployments, and therefore need different environment topologies at each phase. 
@@ -40,16 +40,15 @@ Microsoft assumes that all customers will follow a lifecycle similar to the foll
 - Develop customizations, if needed
 - Deploy and test customizations and partner solutions in a small sandbox
 - Test customizations and partner solutions in a production sandbox
-- Live environment with high availability
+- Deploy to a live environment with high availability
 
 At some phases of a project, you may have all of the environments live at once. For more information, about the default licenses and tiers that are available, see the [Dynamics 365 Licensing Guide](http://download.microsoft.com/documents/en-us/dynamics/pricing/Dynamics_365_Enterprise_edition_Licensing_Guide.pdf).
 
-You may hear the terms, Customer, Partner, and Microsoft subscriptions. 
-A customer or partner subscription means that the customer or partner brings their own Azure subscription and deploys Dynamics 365 for Finance and Operations environments to it, for evaluation and development purposes only. The customer or partner pays for the resources deployed to their Azure subscription based on the Azure price list. 
-A Microsoft subscription means that the customer purchases Dynamics 365 for Finance and Operations licenses which will then allow them to deploy environments to an Azure subscription which is managed by Microsoft, therefore, the customer has no separate Azure billing. Three environments are included by default and more can be purchased as add-ons:
+You may hear the terms, Customer, Partner, and Microsoft subscriptions. A *customer or partner subscription* means that the customer or partner brings their own Azure subscription and deploys Dynamics 365 for Finance and Operations environments to it, for evaluation and development purposes only. The customer or partner pays for the resources deployed to their Azure subscription based on the Azure price list. 
+A *Microsoft subscription* means that the customer purchases Dynamics 365 for Finance and Operations licenses which will then allow them to deploy environments to an Azure subscription which is managed by Microsoft, therefore, the customer has no separate Azure billing. Three environments are included by default and more can be purchased as add-ons:
 
-- One tier-1 sandbox which is a one-box - customers can choose to use it for either demo or dev build. This environment is managed by the customer.
-- One Tier-2 highly-available (HA) sandbox. This environment is managed by the customer or partner, until the customer is live in production. At that point, Microsoft may perform some tasks . 
+- One Tier-1 sandbox which is a one-box - customers can choose to deploy it as either a demonstration or a dev/build environment. This environment is managed by the customer.
+- One Tier-2 highly-available (HA) sandbox. This environment is managed by the customer or partner, until the customer is live in production. After going live in production, Microsoft DSE may be required to perform some tasks, such as helping move production data into the sandbox environment. 
 - One HA production deployment. This environment is managed and operated by Microsoft.
 
 For information about licensing and what is included in Microsoft Dynamics 365, see the [Microsoft Dynamics 365 Enterprise edition licensing guide](http://download.microsoft.com/documents/en-us/dynamics/pricing/Dynamics_365_Enterprise_edition_Licensing_Guide.pdf).
