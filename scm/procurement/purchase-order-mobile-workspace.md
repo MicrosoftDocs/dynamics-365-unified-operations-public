@@ -18,11 +18,9 @@ ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: bis
-<<<<<<< HEAD
-ms.search.scope: Operations, Core Retail
-=======
-ms.search.scope: Core, Operations, UnifiedOperations
->>>>>>> refs/remotes/origin/master
+
+ms.search.scope: Core, Operations, UnifiedOperations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 30211
 ms.search.region: Global

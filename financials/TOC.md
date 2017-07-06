@@ -87,7 +87,7 @@
 #### [Update standard cost in a non-manufacturing environment](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-non-manufacturing-environment?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ## Data management and data entities
-## [Data entities overview](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities?toc=/dynamics365/unified-operations/financials/toc.json)
+### [Data entities overview](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities?toc=/dynamics365/unified-operations/financials/toc.json)
 ### Default data entities
 #### [Data entities report](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-report?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Data entities: Accounts payable and taxes](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-payable-taxes?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -587,15 +587,52 @@
 #### [Form 1099 for the public sector](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ## Human resources
+### Develop a human resources strategy
+#### [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Set up job components](/dynamics365/unified-operations/talent/create-job?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Create a department and associate it with the department hierarchy](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Set up HR parameters across legal entities](/dynamics365/unified-operations/talent/set-up-hr-parameters-across-legal-entities?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Set up company-specific HR parameters](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Personnel actions FAQ](/dynamics365/unified-operations/talent/personnel-actions-faq?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Use workflow to manage employee information](/dynamics365/unified-operations/talent/workflow-manage-employee-information?toc=/dynamics365/unified-operations/financials/toc.json)
+
 ### Recruiting
 #### [Manage a recruiting process](/dynamics365/unified-operations/fin-and-ops/hr/manage-recruiting-process?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Mass hire projects](/dynamics365/unified-operations/fin-and-ops/hr/mass-hire-projects?toc=/dynamics365/unified-operations/financials/toc.json)
-### [Payroll, United States](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll?toc=/dynamics365/unified-operations/financials/toc.json)
+
+### Motivate employees
+#### [Compensation plans](/dynamics365/unified-operations/talent/compensation-plans?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Create fixed compensation plans](/dynamics365/unified-operations/talent/create-fixed-compensation-plans?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Create variable compensation plans](/dynamics365/unified-operations/talent/create-variable-compensation-plans?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Process compensation](/dynamics365/unified-operations/talent/process-compensation?toc=/dynamics365/unified-operations/financials/toc.json)
+
+### Develop and train employees
+#### [Performance management overview](/dynamics365/unified-operations/talent/performance-management-overview?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Align workforce skills with business needs](/dynamics365/unified-operations/talent/skills?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Set up training courses](/dynamics365/unified-operations/talent/courses?toc=/dynamics365/unified-operations/financials/toc.json)
+
+### Create and maintain benefits
+#### [Manage a benefits program](/dynamics365/unified-operations/talent/manage-benefit-program?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Benefit eligibility policies](/dynamics365/unified-operations/talent/benefit-eligibility-policies?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Manage items lent to workers](/dynamics365/unified-operations/talent/loan-items?toc=/dynamics365/unified-operations/financials/toc.json)
+
+### Gather information using questionnaires
+#### [Questionnaires](/dynamics365/unified-operations/talent/questionnaires?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Design a questionnaire](/dynamics365/unified-operations/talent/design-questionnaires?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Distribute and complete a questionnaire](/dynamics365/unified-operations/talent/distribute-questionnaires?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Evaluate the results of a questionnaire](/dynamics365/unified-operations/talent/evaluate-questionnaire-results?toc=/dynamics365/unified-operations/financials/toc.json)
+
+### Workplace safety and compliance (United States)
+#### [Form I-9 employment verification](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Comply with the ADA](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada?toc=/dynamics365/unified-operations/financials/toc.json)
+
+### [US Payroll](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Payroll setup
 ##### [Set up payroll for workers](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-worker-position-payroll-tasks?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Set up work cycles and work periods](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-work-cycle-work-period-tasks?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Set up benefit accrual plans ](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-benefit-accrual-plan-tasks?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Set up benefits](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-benefit-set-up-tasks?toc=/dynamics365/unified-operations/financials/toc.json)
+
 #### Frequencies and cycles
 #### [Pay cycle and pay period tasks](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Payroll calculation and frequency tasks](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll-calculation-frequencies-tasks?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1728,3 +1765,4 @@
 ### [Planned maintenance window FAQ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/planned-maintenance-window-faq) 
 ### [Cloud operations and servicing](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-operations-servicing?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Manage Finance and Operations Support experiences](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+

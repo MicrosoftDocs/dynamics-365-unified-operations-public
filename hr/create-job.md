@@ -18,11 +18,8 @@ ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-<<<<<<< HEAD
-ms.search.scope: Operations, Core, Retail
-=======
-ms.search.scope: Core, Operations, UnifiedOperations
->>>>>>> refs/remotes/origin/master
+
+ms.search.scope: Core, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
