@@ -41,7 +41,7 @@ The **Vendor collaboration** module is targeted at vendors who don’t have ele
 
 For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
 
-For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace). 
+For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). 
 
 For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
 

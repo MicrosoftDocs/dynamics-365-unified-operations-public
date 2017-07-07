@@ -102,11 +102,11 @@ The settings for the Access list hierarchy are used to control the data that is 
     - Data Power BI visualizations that are embedded in the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, client
 
 > [!IMPORTANT]
-> - Before the Access list hierarchy can affect data in Power BI, the Access list hierarchy and row-level security in Power BI must be paired. For more information, see [Set up security for Cost accounting content pack](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
+> - Before the Access list hierarchy can affect data in Power BI, the Access list hierarchy and row-level security in Power BI must be paired. For more information, see [Set up security for Cost accounting content pack](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
 > - This topic shows the prerequisites that must be in place before you can use the **Cost control** workspace.
 
 See also
 
 - [Cost control workspace](cost-control-workspace.md)
 - [Dimension hierarchy](dimension-hierarchy.md)
-- [Set up security for Cost accounting content pack](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
+- [Set up security for Cost accounting content pack](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)

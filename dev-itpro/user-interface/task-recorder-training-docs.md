@@ -131,6 +131,4 @@ See also
 
 [Task Recorder](task-recorder.md)
 
-[Recently added task recorder features](/dynamics365/fin-and-ops/get-started/recently-added-editing-features-in-task-recorder)
-
 [Create Rich Help Topics with Task Recorder (external link)](https://mbspartner.microsoft.com/AX/Videos/970)
