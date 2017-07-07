@@ -86,70 +86,48 @@ This value is mandatory, but it isn't required for the workspace integration. Ma
 
 1.  Navigate to the **Power BI configuration** page in the Finance and Operations client.
 
-   [./media/image4.png](./media/image4.png)
+[./media/image4.png](./media/image4.png)
 
-1.  Select **Edit**
+2.  Select **Edit**.
 
-2.  Check **Enabled** flag to Yes
+3.  Set the **Enabled** field to **Yes**.
 
-3.  **Azure AD tenant** field should show your tenant (or domain name).
+4.  The **Azure AD Tenant** field should show your tenant (or domain name).
 
->   Example, if you provisioned Dynamics 365 for Operations with the tenant
->   ContosoAX7.onmicrosoft.com, you should see the field populated as shown
->   above. You can enter the correct tenant if the field is not initialized.
+For example, if you provisioned Finance and Operations with the tenant, ContosoAX7.onmicrosoft.com, you should see the field populated as shown above. You can enter the correct tenant if the field is not initialized.
 
->   Also note that PowerBI integration feature doesn’t work on pre-produciton
->   and test AAD domains such as PPE, you would need to change to a prod AAD
->   domain by running the Admin user tool)
+Also note that the Power BI integration feature doesn’t work on pre-produciton and test AAD domains such as PPE. You would need to change to a PROD AAD domain by running the Admin user tool.
 
-1.  Copy the **Client ID** that you got from PowerBI tool in previous step and
-    paste to **Client ID** field in the form
+5.  Copy the **Client ID** that you got from the Power BI tool in the previous procedure, and paste that in the **Client ID** field.
 
-2.  Copy the **Client Secret** you got from PowerBI tool in previous step and
-    paste to **Application Key** field
+6.  Copy the **Client Secret** that you got from the Power BI tool in the previous procedure, and paste that in the **Application Key** field.
 
-3.  Make sure that **Redirect URL** is set to the correct URL. This should be
-    the same Redirect URL you provided to PowerBI tool.
+7.  Make sure that the **Redirect URL** is set to the correct URL. This should be the same Redirect URL you provided to the Power BI tool.
 
->   Example: find the base URL of your Dynamics 365 for Operations client and
->   copy paste. Add OAuth suffix to your own URL. Ex.
->   <http://contosoax7.cloud.dynamics.com/oauth>
+For example, find the base URL of your Finance and Operations client, and the copy and paste. Then, add the OAuth suffix to your own URL, such as `<http://contosoax7.cloud.dynamics.com/oauth>`.
 
-1.  Enter “Company” as the value for the **Tile filter table** field. Enter “ID”
-    as the value for the **Tile filter column** field
+8.  Enter **Company** as the value for the **Tile filter table** field. Enter **ID**
+    as the value for the **Tile filter column** field.
 
->   These two values will enable filtering PowerBI tiles when they are pinned to
->   a Dynamics 365 for Operations workspace. For an example, if the company
->   context of the workspace is USMF, PowerBI tile will show data filtered for
->   Company USMF such that you would see data corresponding to the current
->   company.
+These two values will enable filtering of Power BI tiles when they are pinned to a workspace. For an example, if the company context of the workspace is USMF, the Power BI tile will show data filtered for company USMF.
 
->   To apply the company filter, your PowerBI content must have a Table and a
->   column that’s called “Company” and “ID” respectively. Ready-made PowerBI
->   content shipped with Dynamics 365 for Operations has adopted this
->   convention.
+To apply the company filter, your PowerBI content must have a table and a column that’s called **Company** and **ID** respectively. Ready-made Power BI content shipped with Finance and Operations has adopted this convention.
 
->   If the PowerBI content does not have a table and a field called “Company” or
->   a field called “ID”, the filter will be ignored and you will be shown
->   unfiltered data within the tile.
+If the Power BI content does not have a table and a field called **Company** or a field called **ID**, the filter will be ignored and you will be shown unfiltered data within the tile.
 
 ![](media/1820cc9320b91814dbb7d7c90c04d49f.png)
 
-1.  Select **Save** and close the form
+9.  Select **Save** and close the page.
 
-2.  Launch a workspace (ex. Ledger budgets or reservation management) to
-    validate the configuration. In this case we will launch the Ledger Budgets
-    workspace.
+## Pin tiles to a workspace
 
-    1.  You should see the PowerBI banner in the workspace – you need to scroll
-        to the right.
+1.  Open a workspace such as **Ledger budgets** or **Reservation management** to validate the configuration. In this example, we will open the **Ledger budgets** workspace.
 
->   [./media/image6.png](./media/image6.png)
+2.  You should see the Power BI banner in the workspace – you may need to scroll to the right.
 
-1.  In the Power BI banner, click **Get started**. If this is the first time
-    that you've started Power BI from Finance and Operations, you're prompted to
-    authorize sign-in to Power BI from the Finance and Operations client. Click
-    **Click here to provide authorization to Power BI**.
+[./media/image6.png](./media/image6.png)
+
+3. In the Power BI banner, click **Get started**. If this is the first time that you've started Power BI from Finance and Operations, you're prompted to authorize sign-in to Power BI from the Finance and Operations client. Click **Click here to provide authorization to Power BI**.
 
 >   Your users will need to do this the first time they pin PowerBI content.
 
