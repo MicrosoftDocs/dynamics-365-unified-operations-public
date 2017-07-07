@@ -37,52 +37,26 @@ ms.dyn365.ops.version: AX 7.0.0
 Why must you do this?
 =====================
 
-Microsoft Dynamics 365 for Finance and Operations enables a user to pin tiles
-and reports from their own PowerBI.com account directly to workspaces.
+Microsoft Dynamics 365 for Finance and Operations enables a user to pin tiles and reports from their own PowerBI.com account directly to workspaces.
 
-This functionality requires a one-time configuration for your Dynamics 365 for
-Operations environment. An administrator must do this step enable Dynamics 365
-for Finance and Operations and Power BI can communicate and authenticate
-correctly.
+This functionality requires a one-time configuration for your environment. An administrator must do this step enable Dynamics 365 for Finance and Operations and Power BI can communicate and authenticate correctly.
 
-Both Dynamics 365 for Finance and Operations and PowerBI.com are cloud-based
-services. For a Finance and Operations workspace to display a Power BI tile, the
-Finance and Operations server must contact the Power BI service on behalf of a
-user and access the visualization. Then it must re-draw the visual in the
-Finance and Operations workspace. “On behalf of a user” is important, when a
-user, say, <Tim@ContosoAX7.onmicrosoft.com> contacts PowerBI.com service,
-PowerBI should only display Tiles and Reports from Arnie’s own PowerBI.com
-account.
+Both Dynamics 365 for Finance and Operations and PowerBI.com are cloud-based services. For a Finance and Operations workspace to display a Power BI tile, the Finance and Operations server must contact the Power BI service on behalf of a user and access the visualization. Then it must re-draw the visual in the Finance and Operations workspace. “On behalf of a user” is important, when a user, say, <Tim@ContosoAX7.onmicrosoft.com> contacts PowerBI.com service, PowerBI should only display Tiles and Reports from Arnie’s own PowerBI.com account.
 
-By doing this step you are enabling Dynamics 365 for Operations to contact
-PowerBI.com service “on behalf of a user”. This flow between Finance and
-Operations and the Power BI service is based on the OAuth 2.0 Authorization Code
-Grant Flow. We discuss more about this later in this article.
+By doing this step you are enabling Dynamics 365 for Operations to contact PowerBI.com service “on behalf of a user”. This flow between Finance and Operations and the Power BI service is based on the OAuth 2.0 Authorization Code Grant Flow. We discuss more about this later in this article.
 
 Things you need to know before you start 
 =========================================
 
-You must be an active user of Dynamics 365 for operations. You need to be an
-administrator of Dynamics 365 for Operations. This option is available in System
-administration menu.
+You must be an active user of Dynamics 365 for operations. You need to be an administrator of Dynamics 365 for Operations. This option is available in System administration menu.
 
-You need to have a PowerBI.com account. You could create a trial account if you
-do not have an account. (you do not need a pro license for this step).
+You need to have a PowerBI.com account. You could create a trial account if you do not have an account. (you do not need a pro license for this step).
 
-You must have at least one dashboard and a Report in your PowerBI account. While
-this is not a requirement for the configuration step, you may not be able to
-validate the successful configuration if you do not have any content in your
-PowerBI.com account
+You must have at least one dashboard and a Report in your PowerBI account. While this is not a requirement for the configuration step, you may not be able to validate the successful configuration if you do not have any content in your PowerBI.com account
 
-You must be an administrator to your Azure Active directory account. If you are
-not the administrator, you need an administrative user to perform this operation
-for you.
+You must be an administrator to your Azure Active directory account. If you are not the administrator, you need an administrative user to perform this operation for you.
 
-Azure Active Directory domain that is configured for Dynamics 365 for Operations
-must be the same one that you used for your PowerBI.com account. For an example,
-if you provisioned Dynamics 365 for Operations in Contoso.com domain, you must
-have PowerBI accounts as a user in that domain, ex.
-<Tim@ContosoAX7.onmicrosoft.com>.
+Azure Active Directory domain that is configured for Dynamics 365 for Operations must be the same one that you used for your PowerBI.com account. For an example, if you provisioned Dynamics 365 for Operations in Contoso.com domain, you must have PowerBI accounts as a user in that domain, ex. <Tim@ContosoAX7.onmicrosoft.com>.
 
 Registration process, step by step 
 ===================================
@@ -214,12 +188,7 @@ Registration process, step by step
 Trouble-shooting common errors
 ==============================
 
-It is possible that you may see an error after you select the **Accept** button
-in the process above. The next screen shows an error message if this process is
-unsuccessful. The error message is as follows. Notice that details of the error
-are shown on the bottom right as shown below. Additional technical information
-(values shown grayed out) provides you with clues so as to what may have gone
-wrong.
+It is possible that you may see an error after you select the **Accept** button in the process above. The next screen shows an error message if this process is unsuccessful. The error message is as follows. Notice that details of the error are shown on the bottom right as shown below. Additional technical information (values shown grayed out) provides you with clues so as to what may have gone wrong.
 
 ![](media/ce094da8b9e0674c5cbd75616e40d829.png)
 
@@ -236,11 +205,7 @@ Some common issues and the resolution steps
 Technical details - OAuth 2.0 Authorization Code Grant Flow
 ===========================================================
 
-This section describes the authorization flow between Finance and Operations and
-the PowerBI.com service during authentication phase – just before the list of
-tiles are presented to a user. This is a flow that is executed by Azure Active
-Directory service to enable two services to securely communicate “on behalf of a
-user”.
+This section describes the authorization flow between Finance and Operations and the PowerBI.com service during authentication phase – just before the list of tiles are presented to a user. This is a flow that is executed by Azure Active Directory service to enable two services to securely communicate “on behalf of a user”.
 
 Following diagram shows the authorization flow
 
@@ -285,9 +250,7 @@ Following diagram shows the authorization flow
 
 8.  The user sees Power BI tiles in the Finance and Operations workspace.
 
-For subsequent visits, this entire flow doesn't have to occur. Because Finance
-and Operations has the access token on behalf of the user, steps 1 through 4
-don't have to be repeated.
+For subsequent visits, this entire flow doesn't have to occur. Because Finance and Operations has the access token on behalf of the user, steps 1 through 4 don't have to be repeated.
 
 What’s next
 ===========
