@@ -38,10 +38,11 @@ The following table provides a comparison of the capabilities provided by the tw
 
 
 ## Why cloud
-Cloud deployments provide a scalable cloud service and data centers that are fully managed by Microsoft. 
-The time spent implementing Finance and Operations can be significantly shortened and fewer customizations may be required. 
+Cloud deployments provide a cloud service that is easy to scale up or down as needed, as well as data centers that are fully managed by Microsoft. The time spent implementing Finance and Operations can be significantly shortened, fewer customizations may be required, and the costs of IT hardware and infrastructure are lower. 
 
 Cloud deployments include high availability, disaster recovery, sandbox environments, and application lifecycle management combined with cloud-based systems of intelligence, infrastructure, compute, and database services in a single offering. When needed, data failover in the cloud, automated deployment and continuous updates, and elastic compute capacity are available. A cloud deployment also provides data aggregation, financial reporting, and intelligence.
+
+The cloud service provides customers with the greatest value, the broadest range of functionality, the best application lifecycle experience, the easiest and broadest integration with Azure services, the best option for business insights and intelligence, and the most value for customers’ technology investments. 
 
 ## Why on-premises
 With an on-premises deployment, existing data center investments can be leveraged. Customers can also configure their enterprise preferences to meet the regulatory and compliance needs of their business, comply with data sovereignty rules in regions where there are no Azure Data Centers, or ensure business continuity in areas with limited public infrastructure. 
