@@ -84,11 +84,9 @@ This value is mandatory, but it isn't required for the workspace integration. Ma
 
 ## Specify Power BI settings in Finance and Operations
 
-1.  Launch PowerBI form in Dynamics 365 for Operations client by navigating to
-    System administration \> Setup \> PowerBI. You will be shown the PowerBI
-    form like one shown below
+1.  Navigate to the **Power BI configuration** page in the Finance and Operations client.
 
->   [./media/image4.png](./media/image4.png)
+   [./media/image4.png](./media/image4.png)
 
 1.  Select **Edit**
 
