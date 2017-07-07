@@ -129,40 +129,32 @@ If the Power BI content does not have a table and a field called **Company** or 
 
 3. In the Power BI banner, click **Get started**. If this is the first time that you've started Power BI from Finance and Operations, you're prompted to authorize sign-in to Power BI from the Finance and Operations client. Click **Click here to provide authorization to Power BI**.
 
->   Your users will need to do this the first time they pin PowerBI content.
+Your users will need to do this the first time they pin Power BI content.
 
->   [./media/image7.png](./media/image7.png)
+[./media/image7.png](./media/image7.png)
 
-1.  Next you will be shown the Azure Active Directory consent form. This form
-    asks for user’s consent. Ie. user consent is necessary for Dynamics 365 for
-    Operations to access PowerBI.com “on behalf of the user”. Click the
-    **accept** button.
+4.  You will be shown the Azure Active Directory consent page. This page asks for user’s consent. User consent is necessary for Finance and Operations to access PowerBI.com “on behalf of the user”. Click the **Accept** button.
 
-    ![](media/65da7a9b5ac0a328568f76c4e7a0770c.png)
+![](media/65da7a9b5ac0a328568f76c4e7a0770c.png)
 
-2.  Because you're already signed in to AAD in Finance and Operations, you don't
-    have to enter your credentials again. A new tab appears, where you're
-    prompted to authorize the connection between Finance and Operations and
-    Power BI. You can now return to the original tab.
+5.  Because you're already signed in to AAD in Finance and Operations, you don't have to enter your credentials again. A new tab appears, where you're prompted to authorize the connection between Finance and Operations and Power BI. You can now return to the original tab.
 
-3.  Next you will be shown a list of tiles from your PowerBI.com account and you
-    can select one or more tiles to be pinned to the workspace you have chosen.
+6.  You will be shown a list of tiles from your PowerBI.com account and you can select one or more tiles to be pinned to the workspace you have chosen.
 
-Trouble-shooting common errors
-==============================
+## Troubleshooting common errors
 
-It is possible that you may see an error after you select the **Accept** button in the process above. The next screen shows an error message if this process is unsuccessful. The error message is as follows. Notice that details of the error are shown on the bottom right as shown below. Additional technical information (values shown grayed out) provides you with clues so as to what may have gone wrong.
+It is possible that you may see an error after you select the **Accept** button in the previous procedrue. The following image shows an error message if this process is unsuccessful. Notice that details of the error are shown on the bottom-right corner, as shown below. Additional technical information (values shown grayed out) provides you with clues as to what may have gone wrong.
 
 ![](media/ce094da8b9e0674c5cbd75616e40d829.png)
 
-Some common issues and the resolution steps
+### Some common issues and the resolution steps
 
-| Error message                                            | Resolution                                                                                                                                                                                        |
+| Error                                             | Resolution                                                                                                                                                                                        |
 |----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reply address did not match because of case sensitivity. | It is possible that the URL you entered in the PowerBI tool does not match with the application ID. Launch the PowerBI tool and re-run the registration process                                   |
-| PowerBI service is unavailable                           | This error is unlikely to occur most of the times, but It is possible that the PowerBI service is un-reachable. You do not need to re-register. Try to pin a tile into a workspace a little later |
-| You can’t access this application…                       | It is likely that you may not have selected all the checkboxes in the PowerBI registration tool Launch the PowerBI tool and re-run the registration process                                       |
-| PowerBI tiles page is empty – no content is shown        | It is possible that your PowerBI.com account does not have a dashboard or any tiles. Add a dashboard (ex. sample dashboard) and try pinning a tile again                                          |
+| Reply address did not match because of case sensitivity. | It is possible that the URL you entered in the Power BI tool does not match with the application ID. Launch the Power BI tool and re-run the registration process.                                   |
+| Power BI service is unavailable.                           | This error is unlikely to occur most of the times, but it is possible that the Power BI service is unreachable. You do not need to re-register. Try to pin a tile into a workspace a little later. |
+| You can’t access this application.                      | It is likely that you may not have selected all the check boxes in the Power BI registration tool. Launch the Power BI tool and re-run the registration process.                                       |
+| Power BI tiles page is empty (no content is shown).        | It is possible that your PowerBI.com account does not have a dashboard or any tiles. Add a dashboard, such as a sample dashboard, and try pinning a tile again.                                         |
 |                                                          |                                                                                                                                                                                                   |
 
 Technical details - OAuth 2.0 Authorization Code Grant Flow
