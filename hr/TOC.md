@@ -586,7 +586,7 @@
 #### [Year-end 1099 reporting for the United States](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Form 1099 for the public sector](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector?toc=/dynamics365/unified-operations/talent/toc.json)
 
-## Human resources
+## [Human resources](/dynamics365/unified-operations/fin-and-ops/hr/hr-landing-page?toc=/dynamics365/unified-operations/talent/toc.json)
 ### Develop a human resources strategy
 #### [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Set up job components](/dynamics365/unified-operations/talent/create-job?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -903,7 +903,6 @@
 #### Returns
 ##### [Sales returns](/dynamics365/unified-operations/supply-chain/warehousing/sales-returns?toc=/dynamics365/unified-operations/talent/toc.json)
 
-
 ### Prospect to cash
 #### [Products](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Accounts (Customers)](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -1077,7 +1076,7 @@
 
 ## Payments
 ### [Payment methods](/dynamics365/unified-operations/retail/payment-methods?toc=/dynamics365/unified-operations/retail/toc.json)
-### [Credit card setup, authorization, and capture](/dynamics365/operations/financials/accounts-receivable/credit-card-authorizations?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Credit card setup, authorization, and capture](/dynamics365/unified-operations/financials/accounts-receivable/credit-card-authorizations?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ## Purchase orders
@@ -1155,38 +1154,38 @@
 ### [Create coupons for retail sales](/dynamics365/unified-operations/retail/retail-coupons?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ## Products and merchandising
-### [Product information overview](/dynamics365/operations/supply-chain/pim/product-information?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Product information overview](/dynamics365/unified-operations/supply-chain/pim/product-information?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Retail hierarchies](/dynamics365/unified-operations/retail/retail-hierarchies?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Create and manage attributes](/dynamics365/unified-operations/retail/create-manage-attributes?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Set up retail products](/dynamics365/unified-operations/retail/set-up-retail-products?toc=/dynamics365/unified-operations/retail/toc.json)
-### [Product dimensions](/dynamics365/operations/supply-chain/pim/product-dimensions?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Product dimensions](/dynamics365/unified-operations/supply-chain/pim/product-dimensions?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Set up bar codes](/dynamics365/unified-operations/retail/set-up-bar-codes?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Set up bar code masks](/dynamics365/unified-operations/retail/set-up-bar-code-masks?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Set up assortments](/dynamics365/unified-operations/retail/set-up-assortments?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Sell and return products outside of an assortment](/dynamics365/unified-operations/retail/sell-return-outside-assortments?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Default order settings for dimensions and product variants](/dynamics365/unified-operations/supply-chain/production-control/default-order-settings?toc=/dynamics365/unified-operations/retail/toc.json)
-### [Search for products and product variants during order entry](/dynamics365/operations/supply-chain/pim/search-products-product-variants?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Search for products and product variants during order entry](/dynamics365/unified-operations/supply-chain/pim/search-products-product-variants?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ## Loyalty
 ### [Set up a customer loyalty program](/dynamics365/unified-operations/retail/set-up-customer-loyalty-program?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ## Inventory
 ### [Manage store inventory](/dynamics365/unified-operations/retail/work-with-store-inventory?toc=/dynamics365/unified-operations/retail/toc.json)
-### [Register serial numbers in the sales process](/dynamics365/operations/supply-chain/sales-marketing/register-serial-numbers-sales-process?toc=/dynamics365/unified-operations/retail/toc.json)
-### [Inventory journals](/dynamics365/operations/supply-chain/inventory/inventory-journals?toc=/dynamics365/unified-operations/retail/toc.json)
-### [Inventory tag counting](/dynamics365/operations/supply-chain/inventory/inventory-tag-counting?toc=/dynamics365/unified-operations/retail/toc.json)
-### [FIFO with physical value and marking](/dynamics365/operations/supply-chain/cost-management/fifo-physical-value-marking?toc=/dynamics365/unified-operations/retail/toc.json)
-### [LIFO Date with physical value and marking](/dynamics365/operations/supply-chain/cost-management/lifo-date-physical-value-marking?toc=/dynamics365/unified-operations/retail/toc.json)
-### [LIFO with physical value and marking](/dynamics365/operations/supply-chain/cost-management/lifo-physical-value-marking?toc=/dynamics365/unified-operations/retail/toc.json)
-### [Weighted average date](/dynamics365/operations/supply-chain/cost-management/weighted-average-date?toc=/dynamics365/unified-operations/retail/toc.json)
-### [Weighted average with physical value and marking](/dynamics365/operations/supply-chain/cost-management/weighted-average-physical-value-marking?toc=/dynamics365/unified-operations/retail/toc.json)
-### [Quarantine orders](/dynamics365/operations/supply-chain/inventory/quarantine-orders.md?toc=/dynamics365/unified-operations/retail/toc.json)
-### [Running average cost price](/dynamics365/operations/supply-chain/cost-management/running-average-cost-price?toc=/dynamics365/unified-operations/retail/toc.json)
-### [Tracking running average cost per inventory dimension](/dynamics365/operations/supply-chain/cost-management/track-running-average-cost-per-inventory-dimension?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Register serial numbers in the sales process](/dynamics365/unified-operations/supply-chain/sales-marketing/register-serial-numbers-sales-process?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Inventory journals](/dynamics365/unified-operations/supply-chain/inventory/inventory-journals?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Inventory tag counting](/dynamics365/unified-operations/supply-chain/inventory/inventory-tag-counting?toc=/dynamics365/unified-operations/retail/toc.json)
+### [FIFO with physical value and marking](/dynamics365/unified-operations/supply-chain/cost-management/fifo-physical-value-marking?toc=/dynamics365/unified-operations/retail/toc.json)
+### [LIFO Date with physical value and marking](/dynamics365/unified-operations/supply-chain/cost-management/lifo-date-physical-value-marking?toc=/dynamics365/unified-operations/retail/toc.json)
+### [LIFO with physical value and marking](/dynamics365/unified-operations/supply-chain/cost-management/lifo-physical-value-marking?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Weighted average date](/dynamics365/unified-operations/supply-chain/cost-management/weighted-average-date?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Weighted average with physical value and marking](/dynamics365/unified-operations/supply-chain/cost-management/weighted-average-physical-value-marking?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Quarantine orders](/dynamics365/unified-operations/supply-chain/inventory/quarantine-orders.md?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Running average cost price](/dynamics365/unified-operations/supply-chain/cost-management/running-average-cost-price?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Tracking running average cost per inventory dimension](/dynamics365/unified-operations/supply-chain/cost-management/track-running-average-cost-per-inventory-dimension?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ## Human resources
-### [Organize your workforce using departments, jobs, and positions](/dynamics365/operations/hr/departments-jobs-positions?toc=/dynamics365/unified-operations/retail/toc.json)
-### [Setting up the components of a job](/dynamics365/operations/hr/create-job?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/hr/departments-jobs-positions?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Setting up the components of a job](/dynamics365/unified-operations/hr/create-job?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ## [Retail development & administration](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
 
@@ -1773,5 +1772,3 @@
 ### [Planned maintenance window FAQ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/planned-maintenance-window-faq) 
 ### [Cloud operations and servicing](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-operations-servicing?toc=/dynamics365/unified-operations/talent/toc.json)
 ### [Manage Finance and Operations Support experiences](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs?toc=/dynamics365/unified-operations/talent/toc.json)
-
-
