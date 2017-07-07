@@ -1,4 +1,4 @@
-# [Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/fin-and-ops/index?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+﻿# [Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/fin-and-ops/index?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
 ## [Get started](/dynamics365/unified-operations/fin-and-ops/get-started/onboarding-home?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 ### [Microsoft FastTrack for Dynamics 365](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
@@ -902,6 +902,14 @@
 ##### [Price simulation](/dynamics365/unified-operations/supply-chain/sales-marketing/price-simulation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 #### Returns
 ##### [Sales returns](/dynamics365/unified-operations/supply-chain/warehousing/sales-returns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Prospect to cash
+#### [Products](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Accounts (Customers)](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Contact (Contacts) and Contact (Customers)](/dynamics365/unified-operations/supply-chain/sales-marketing/contacts-template-mapping?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Sales quotation headers and lines](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-quotation-template-mapping?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
 ## [Organization administration](/dynamics365/unified-operations/fin-and-ops/organization-administration/organization-administration-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 ### [Organizations and organizational hierarchies](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 ### [Configure organizational hierarchy](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-organizational-hierarchy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
