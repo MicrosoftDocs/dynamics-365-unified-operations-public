@@ -34,8 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Overview
-=====================
+## Overview
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition enables a user to pin tiles and reports from their own PowerBI.com account directly to workspaces.
 
@@ -45,8 +44,7 @@ Both Finance and Operations and PowerBI.com are cloud-based services. For a Fina
 
 By doing this step you are enabling Finance and Operations to contact the PowerBI.com service “on behalf of a user”. This flow between Finance and Operations and the Power BI service is based on the OAuth 2.0 Authorization Code Grant Flow, which is discussed later in this topic.
 
-Things you need to know before you start 
-=========================================
+## Things you need to know before you start 
 
 - You must be a system administrator in Finance and Operations. This option is available from the **System administration** menu.
 
@@ -58,8 +56,7 @@ Things you need to know before you start
 
 - The Azure Active Directory domain that is configured for Finance and Operations must be the same one that you used for your PowerBI.com account. For an example, if you provisioned Finance and Operations in the Contoso.com domain, you must have Power BI accounts in that domain, such as. <Tim@ContosoAX7.onmicrosoft.com>.
 
-Registration process 
-===================================
+## Registration process 
 
 1.  Open a new browser session and launch the Power BI app registration at [https://dev.powerbi.com/apps ](https://dev.powerbi.com/apps). You will be shown a page like the following:
 
