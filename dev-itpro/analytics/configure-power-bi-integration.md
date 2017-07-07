@@ -61,40 +61,31 @@ Things you need to know before you start
 Registration process 
 ===================================
 
-1.  Open a new browser session and launch the Power BI app registration at [https://dev.powerbi.com/apps ](https://dev.powerbi.com/apps).
+1.  Open a new browser session and launch the Power BI app registration at [https://dev.powerbi.com/apps ](https://dev.powerbi.com/apps). You will be shown a page like the following:
 
->   You will be shown a page like the following:
+[./media/image1.png](./media/image1.png)
 
->   [./media/image1.png](./media/image1.png)
+2.  Click the sign-in button. Make sure that your browser is signed in with same Azure Active Directory account that you use for Finance and Operations. After you sign-in, you should see the user’s name displayed in the tool.
 
-1.  Click the sign-in button. Make sure that your browser is signed in with same
-    Azure Active Directory account that you use for Finance and
-    Operations. After you sign-in, you should see the user’s name displayed in
-    the tool.
+[./media/image2.png](./media/image2.png)
 
->   [./media/image2.png](./media/image2.png)
+3.  Enter the **App name**, such as **Contoso Dyn365**.
 
-1.  Enter the **App name** (for example: Contoso Dyn365 for Operations)
+4.  Enter the **Redirect URL**. Find the base URL of your Finance and Operations client, and copy and paste. Then add the OAuth suffix to your own URL. For example, the URL should look like: `<http://contosoax7.cloud.dynamics.com/oauth>`.
 
-2.  Enter the **Redirect URL** ex.: - ie. find the base URL of your Dynamics 365 for
-    Operations client and copy paste. Add OAuth suffix to your own URL. Ex.
-    <http://contosoax7.cloud.dynamics.com/oauth>
+5.  Enter the **Home page URL**, which is your URL with a mock extension, such as `https://<your own base URL>`.
 
-3.  Enter the **Home page URL** ex. – ie. your URL with a mock extension
+This value is mandatory, but it isn't required for the workspace integration. Make sure that this App ID URI is a mock URL, since using the URL of your deployment may cause sign-in issues in other AAD applications, such as the Excel Add-in. **Example:** `http://contosoax7.cloud.dynamics.com/testenv/`
 
->   This value is mandatory, but isn't required for the workspace integration.
->   Make sure that this App ID URI is a mock URL, since using the URL of your
->   deployment may cause sign-in issues in other AAD applications such as the
->   Excel Add-in. **Example:** <http://contosoax7.cloud.dynamics.com/testenv/>
+6.  Select **all check boxes** for **Choose APIs for Access**.
 
-1.  Select **all check boxes** for **Choose APIs for Access**
+7.  Select the **Register App** button.
 
-2.  Select the **Register App** button
+8.  You will see **Client ID** and **Client Secret** as displayed below. You will need these values in the next procedure.
 
-3.  You will see **Client ID** and **Client Secret** displayed below. You will
-    need these values in the next step
+[./media/image3.png](./media/image3.png)
 
->   [./media/image3.png](./media/image3.png)
+## Specify Power BI settings in Finance and Operations
 
 1.  Launch PowerBI form in Dynamics 365 for Operations client by navigating to
     System administration \> Setup \> PowerBI. You will be shown the PowerBI
