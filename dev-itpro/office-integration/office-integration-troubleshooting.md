@@ -155,6 +155,37 @@ This workaround requires user knowledge and extra steps. After users have been e
 2.  Open Internet Explorer and sign in to the client.
 3.  Test the Excel add-in using an Open in Excel experience. (For example, click **Fleet Management** &gt; **Customers** &gt; **Customer** &gt; **Open in Microsoft Office** &gt; **Open in Excel** &gt; **Fleet Management Customers**.)
 
+### \[Fixed\] Issue: The Excel Add-in doesn't run or facilitate sign-in correctly
+
+**Issue:** When users try to sign into the Excel Add-in, a blank authentication dialog is shown or an error is shown in place of the authentication page. The user is not able to sign in. 
+
+**Explanation:** The Excel Add-in relies on the Office Web JS Add-in platform and uses Azure Active Directory for authentication. If a proxy is being used, then there are a number of URLs that need to be accessible to facilitate running and signing into the Excel Add-in. In addition, if ADFS is being used, that ADFS URL must be HTTPS. 
+
+**Solution:** This is a customer-specific network issue, so it requires a customer-specific resolution. If ADFS is being used, then ensure the ADFS URL is using HTTPS. Also, ensure that all of the following URLs are accessible from the user's machine.
+
+URLs accessed for loading:
+- `http://az689774.vo.msecnd.net:443`
+- `https://az689774.vo.msecnd.net`
+- `http://appsforoffice.microsoft.com:443`
+- `https://appsforoffice.microsoft.com`
+- `http://secure.aadcdn.microsoftonline-p.com:443`
+- `https://secure.aadcdn.microsoftonline-p.com`
+- `http://az416426.vo.msecnd.net:443`
+- `https://az416426.vo.msecnd.net`
+- `http://telemetryservice.firstpartyapps.oaspapps.com:443`
+- `https://telemetryservice.firstpartyapps.oaspapps.com`
+- `http://nexus.officeapps.live.com:443`
+- `https://nexus.officeapps.live.com`
+- `http://browser.pipe.aria.microsoft.com:443`
+- `https://browser.pipe.aria.microsoft.com`
+- `http://schemas.microsoft.com`
+
+URLs accessed for authentication:
+- `http://login.windows.net:443`
+- `https://login.windows.net`
+- `http://login.microsoftonline.com:443`
+- `https://login.microsoftonline.com`
+
 
 See also
 --------
