@@ -586,7 +586,7 @@
 #### [Year-end 1099 reporting for the United States](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Form 1099 for the public sector](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## Human resources
+## [Human resources](/dynamics365/unified-operations/fin-and-ops/hr/hr-landing-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Develop a human resources strategy
 #### [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up job components](/dynamics365/unified-operations/talent/create-job?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
