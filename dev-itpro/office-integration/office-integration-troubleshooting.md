@@ -164,7 +164,7 @@ This workaround requires user knowledge and extra steps. After users have been e
 **Solution:** This is a customer-specific network issue, so it requires a customer-specific resolution. If ADFS is being used, then ensure the ADFS URL is using HTTPS. Also, ensure that all of the following URLs are accessible from the user's machine.
 
 URLs accessed for loading:
-- 'http://az689774.vo.msecnd.net:443'
+- `http://az689774.vo.msecnd.net:443`
 - https://az689774.vo.msecnd.net
 - http://appsforoffice.microsoft.com:443
 - https://appsforoffice.microsoft.com
