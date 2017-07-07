@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 ---
 # Microsoft Dynamics 365 for Finance and Operations, Enterprise edition deployment options
-You can now deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in the cloud or on-premises. Cloud deployments offer an ERP service that is fully managed by Microsoft, while on-premises deployments are deployed locallay within a customer's data center. 
+You can now deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in the cloud or on-premises. Cloud deployments offer an ERP service that is fully managed by Microsoft, while on-premises deployments are deployed locally within a customer's data center. 
 
 The following table provides a comparison of the capabilities provided by the two deployment options.
 
@@ -41,9 +41,7 @@ The following table provides a comparison of the capabilities provided by the tw
 Cloud deployments provide a scalable cloud service and data centers that are fully managed by Microsoft. 
 The time spent implementing Finance and Operations can be significantly shortened and fewer customizations may be required. 
 
-Cloud deployments include high availability, disaster recovery, sandbox environments, and application lifecycle management combined with cloud-based systems of intelligence, infrastructure, compute, and database services in a single offering. When needed, data failover in the cloud, automated deployment and continuous updates, and elastic compute capacity are available. 
-
-A cloud deployment also provides data aggregation, financial reporting, and intelligence.
+Cloud deployments include high availability, disaster recovery, sandbox environments, and application lifecycle management combined with cloud-based systems of intelligence, infrastructure, compute, and database services in a single offering. When needed, data failover in the cloud, automated deployment and continuous updates, and elastic compute capacity are available. A cloud deployment also provides data aggregation, financial reporting, and intelligence.
 
 ## Why on-premises
 With an on-premises deployment, existing data center investments can be leveraged. Customers can also configure their enterprise preferences to meet the regulatory and compliance needs of their business, comply with data sovereignty rules in regions where there are no Azure Data Centers, or ensure business continuity in areas with limited public infrastructure. 
