@@ -38,12 +38,14 @@ The following table provides a comparison of the capabilities provided by the tw
 
 
 ## Why cloud
-Cloud deployments provide a scalable cloud service and data centers that are fully managed by Microsoft. The time spent implementing Finance and Operations can be significantly shortened and fewer customizations may be required. 
-Cloud deployments include high availability, disaster recovery, sandbox environments, and application lifecycle management combined with cloud-based systems of intelligence, infrastructure, compute, and database services in a single offering. 
+Cloud deployments provide a scalable cloud service and data centers that are fully managed by Microsoft. 
+The time spent implementing Finance and Operations can be significantly shortened and fewer customizations may be required. 
+
+Cloud deployments include high availability, disaster recovery, sandbox environments, and application lifecycle management combined with cloud-based systems of intelligence, infrastructure, compute, and database services in a single offering. When needed, data failover in the cloud, automated deployment and continuous updates, and elastic compute capacity are available. 
+
+A cloud deployment also provides data aggregation, financial reporting, and intelligence.
 
 ## Why on-premises
-On-premises deployments serve as a system of record and support by running an organization’s business processes locally, supporting local transactions, and storing local business data. There is no replication of business data to the cloud, unless otherwise configured by, or on behalf of, the customer. Application lifecycle management in this scenario requires connectivity to Microsoft Dynamics Lifecycle Services (LCS) in the cloud. 
-
 With an on-premises deployment, existing data center investments can be leveraged. Customers can also configure their enterprise preferences to meet the regulatory and compliance needs of their business, comply with data sovereignty rules in regions where there are no Azure Data Centers, or ensure business continuity in areas with limited public infrastructure. 
 
 A customer’s business data and processes are disconnected from the cloud and are stored and run locally in the customer’s or their partner’s data center. Some connectivity is required for system management and updates which are enabled through Microsoft Dynamics Lifecycle Services (LCS), a cloud-based application lifecycle management service. Customer data that is related to the configuration and application customization may be stored in the cloud. 
