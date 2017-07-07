@@ -165,26 +165,26 @@ This workaround requires user knowledge and extra steps. After users have been e
 
 URLs accessed for loading:
 - `http://az689774.vo.msecnd.net:443`
-- https://az689774.vo.msecnd.net
-- http://appsforoffice.microsoft.com:443
-- https://appsforoffice.microsoft.com
-- http://secure.aadcdn.microsoftonline-p.com:443
-- https://secure.aadcdn.microsoftonline-p.com
-- http://az416426.vo.msecnd.net:443
-- https://az416426.vo.msecnd.net
-- http://telemetryservice.firstpartyapps.oaspapps.com:443
-- https://telemetryservice.firstpartyapps.oaspapps.com
-- http://nexus.officeapps.live.com:443
-- https://nexus.officeapps.live.com
-- http://browser.pipe.aria.microsoft.com:443
-- https://browser.pipe.aria.microsoft.com
-- http://schemas.microsoft.com
+- `https://az689774.vo.msecnd.net`
+- `http://appsforoffice.microsoft.com:443`
+- `https://appsforoffice.microsoft.com`
+- `http://secure.aadcdn.microsoftonline-p.com:443`
+- `https://secure.aadcdn.microsoftonline-p.com`
+- `http://az416426.vo.msecnd.net:443`
+- `https://az416426.vo.msecnd.net`
+- `http://telemetryservice.firstpartyapps.oaspapps.com:443`
+- `https://telemetryservice.firstpartyapps.oaspapps.com`
+- `http://nexus.officeapps.live.com:443`
+- `https://nexus.officeapps.live.com`
+- `http://browser.pipe.aria.microsoft.com:443`
+- `https://browser.pipe.aria.microsoft.com`
+- `http://schemas.microsoft.com`
 
 URLs accessed for authentication:
-- http://login.windows.net:443
-- https://login.windows.net
-- http://login.microsoftonline.com:443
-- https://login.microsoftonline.com
+- `http://login.windows.net:443`
+- `https://login.windows.net`
+- `http://login.microsoftonline.com:443`
+- `https://login.microsoftonline.com`
 
 
 See also
