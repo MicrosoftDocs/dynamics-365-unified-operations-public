@@ -161,10 +161,10 @@ This workaround requires user knowledge and extra steps. After users have been e
 
 **Explanation:** The Excel Add-in relies on the Office Web JS Add-in platform and uses Azure Active Directory for authentication. If a proxy is being used, then there are a number of URLs that need to be accessible to facilitate running and signing into the Excel Add-in. In addition, if ADFS is being used, that ADFS URL must be HTTPS. 
 
-**Solution:** This is a customer-specific network issue, so it requires a customer-specific resolution. If ADFS is being used, then ensure the ADFS URL is using HTTPS. Also, ensure all the following URLs are accessible from the user's machine:
+**Solution:** This is a customer-specific network issue, so it requires a customer-specific resolution. If ADFS is being used, then ensure the ADFS URL is using HTTPS. Also, ensure that all of the following URLs are accessible from the user's machine.
 
-URLs accessed for loading
-- http://az689774.vo.msecnd.net:443
+URLs accessed for loading:
+- 'http://az689774.vo.msecnd.net:443'
 - https://az689774.vo.msecnd.net
 - http://appsforoffice.microsoft.com:443
 - https://appsforoffice.microsoft.com
@@ -180,7 +180,7 @@ URLs accessed for loading
 - https://browser.pipe.aria.microsoft.com
 - http://schemas.microsoft.com
 
-URLs accessed for authentication
+URLs accessed for authentication:
 - http://login.windows.net:443
 - https://login.windows.net
 - http://login.microsoftonline.com:443
