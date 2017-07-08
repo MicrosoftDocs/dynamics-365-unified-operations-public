@@ -121,21 +121,21 @@ If the Power BI content does not have a table and a field called **Company** or 
 
 ## Pin tiles to a workspace
 
-1.  Open a workspace such as **Ledger budgets** or **Reservation management** to validate the configuration. In this example, we will open the **Ledger budgets** workspace.
+1.  Open a workspace such as **Ledger budgets and forecasts** or **Reservation management** to validate the configuration. In this example, we will open the **Ledger budgets and forecasts** workspace.
 
 2.  You should see the Power BI banner in the workspace – you may need to scroll to the right.
 
-[./media/image6.png](./media/image6.png)
+![Ledger budgets and forecasts workspace](./media/Workspace.JPG)
 
 3. In the Power BI banner, click **Get started**. If this is the first time that you've started Power BI from Finance and Operations, you're prompted to authorize sign-in to Power BI from the Finance and Operations client. Click **Click here to provide authorization to Power BI**.
 
 Your users will need to do this the first time they pin Power BI content.
 
-[./media/image7.png](./media/image7.png)
+![Authorize Power BI](./media/Authorize.JPG)
 
 4.  You will be shown the Azure Active Directory consent page. This page asks for user’s consent. User consent is necessary for Finance and Operations to access PowerBI.com “on behalf of the user”. Click the **Accept** button.
 
-![](media/65da7a9b5ac0a328568f76c4e7a0770c.png)
+![Consent form](media/65da7a9b5ac0a328568f76c4e7a0770c.png)
 
 5.  Because you're already signed in to AAD in Finance and Operations, you don't have to enter your credentials again. A new tab appears, where you're prompted to authorize the connection between Finance and Operations and Power BI. You can now return to the original tab.
 
