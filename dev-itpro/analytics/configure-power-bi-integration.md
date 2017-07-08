@@ -64,7 +64,7 @@ By doing this step you are enabling Finance and Operations to contact the PowerB
 
 2.  Click the sign-in button. Make sure that your browser is signed in with same Azure Active Directory account that you use for Finance and Operations. After you sign-in, you should see the user’s name displayed in the tool.
 
-[./media/image2.png](./media/image2.png)
+![After you sign in](./media/PowerBI-registration2.JPG)
 
 3.  Enter the **App name**, for example **Contoso Dyn365 for Operations**.
 
@@ -80,7 +80,7 @@ This value is mandatory, but it isn't required for the workspace integration. Ma
 
 8.  You will see **Client ID** and **Client Secret** as displayed below. You will need these values in the next procedure.
 
-[./media/image3.png](./media/image3.png)
+![See the Client ID and Client Secret displayed](./media/PowerBI-registration3.JPG)
 
 ## Specify Power BI settings in Finance and Operations
 
