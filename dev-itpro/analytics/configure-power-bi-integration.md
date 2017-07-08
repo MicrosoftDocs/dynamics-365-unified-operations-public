@@ -66,7 +66,7 @@ By doing this step you are enabling Finance and Operations to contact the PowerB
 
 [./media/image2.png](./media/image2.png)
 
-3.  Enter the **App name**, such as **Contoso Dyn365**.
+3.  Enter the **App name**, for example **Contoso Dyn365 for Operations**.
 
 4.  Enter the **Redirect URL**. Find the base URL of your Finance and Operations client, and copy and paste. Then add the OAuth suffix to your own URL. For example, the URL should look like: `<http://contosoax7.cloud.dynamics.com/oauth>`.
 
