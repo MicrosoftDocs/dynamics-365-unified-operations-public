@@ -60,7 +60,7 @@ By doing this step you are enabling Finance and Operations to contact the PowerB
 
 1.  Open a new browser session and launch the Power BI app registration at [https://dev.powerbi.com/apps ](https://dev.powerbi.com/apps). You will be shown a page like the following:
 
-[./media/PowerBI-registration1.JPG](./media/PowerBI-registration1.JPG)
+![Register an application for Power BI](./media/PowerBI-registration1.JPG)
 
 2.  Click the sign-in button. Make sure that your browser is signed in with same Azure Active Directory account that you use for Finance and Operations. After you sign-in, you should see the user’s name displayed in the tool.
 
