@@ -125,7 +125,7 @@ Before you can pin Power BI content, you must configure Power BI in your Dynamic
 Before you can pin tiles or reports, an administrator must configure integration with PowerBI.com in your Finance and Operations environment. This configuration must be done only one time per environment. For instructions, see [Configure Power BI integration for workspaces](configure-power-bi-integration.md).
 
 ### Pinning PowerBI.com tiles
-Power BI tiles that are pinned to the Dynamics 365 client provide insightful visuals at a glance. They also let users open PowerBI.com for interactive analysis. For more information, see [Connect to Power BI for the first time](configure-power-bi-integration.md#connect-to-power-bi-from-finance-and-operations-for-the-first-time).
+Power BI tiles that are pinned to the Dynamics 365 client provide insightful visuals at a glance. They also let users open PowerBI.com for interactive analysis. For more information, see [Configure Power BI integration for workspaces](configure-power-bi-integration.md).
 
 ### Pinning PowerBI.com reports to workspaces
 As a power user, a business analyst, or a developer, you can use Power BI desktop to create reports that use Entity store. Not only are these reports rich and interactive, but your users can make changes without having to rely on another person.
