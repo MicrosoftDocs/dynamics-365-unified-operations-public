@@ -145,88 +145,52 @@ Your users will need to do this the first time they pin Power BI content.
 
 It is possible that you may see an error after you select the **Accept** button in the previous procedrue. The following image shows an error message if this process is unsuccessful. Notice that details of the error are shown on the bottom-right corner, as shown below. Additional technical information (values shown grayed out) provides you with clues as to what may have gone wrong.
 
-![](media/ce094da8b9e0674c5cbd75616e40d829.png)
+![Error](media/ce094da8b9e0674c5cbd75616e40d829.png)
 
 ### Some common issues and the resolution steps
 
 | Error                                             | Resolution                                                                                                                                                                                        |
 |----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reply address did not match because of case sensitivity. | It is possible that the URL you entered in the Power BI tool does not match with the application ID. Launch the Power BI tool and re-run the registration process.                                   |
-| Power BI service is unavailable.                           | This error is unlikely to occur most of the times, but it is possible that the Power BI service is unreachable. You do not need to re-register. Try to pin a tile into a workspace a little later. |
-| You can’t access this application.                      | It is likely that you may not have selected all the check boxes in the Power BI registration tool. Launch the Power BI tool and re-run the registration process.                                       |
+| Reply address did not match because of case sensitivity. | It is possible that the URL you entered in the Power BI tool does not match with the application ID. Launch the Power BI tool and rerun the registration process.                                   |
+| Power BI service is unavailable.                           | This error is unlikely to occur most of the time, but it is possible that the Power BI service is unreachable. You do not need to reregister. Try to pin a tile into a workspace a little later. |
+| You can’t access this application.                      | It is likely that you may not have selected all the check boxes in the Power BI registration tool. Launch the Power BI tool and rerun the registration process.                                       |
 | Power BI tiles page is empty (no content is shown).        | It is possible that your PowerBI.com account does not have a dashboard or any tiles. Add a dashboard, such as a sample dashboard, and try pinning a tile again.                                         |
 |                                                          |                                                                                                                                                                                                   |
 
-Technical details - OAuth 2.0 Authorization Code Grant Flow
-===========================================================
+## Technical details about OAuth 2.0 Authorization Code Grant Flow
 
-This section describes the authorization flow between Finance and Operations and the PowerBI.com service during authentication phase – just before the list of tiles are presented to a user. This is a flow that is executed by Azure Active Directory service to enable two services to securely communicate “on behalf of a user”.
+This section describes the authorization flow between Finance and Operations and the PowerBI.com service during authentication phase – just before the list of tiles are presented to a user. This is a flow that is executed by the Azure Active Directory service to enable two services to securely communicate “on behalf of a user”.
 
-Following diagram shows the authorization flow
+The following diagram shows the authorization flow.
 
-![OAuthFlow](media/caaddad46d4ea9e3c7e12e896733594a.png)
+![Authorization flow](media/caaddad46d4ea9e3c7e12e896733594a.png)
 
-1.  When a user visits a workspace in Finance and Operations for the first time,
-    the Power BI banner prompts the user to start the first-time connection. If
-    the user agrees to start the first-time connection, an OAuth 2.0
-    Authorization Code Grant Flow is started.
+1.  When a user visits a workspace in Finance and Operations for the first time, the Power BI banner prompts the user to start the first-time connection. If the user agrees to start the first-time connection, an OAuth 2.0 Authorization Code Grant Flow is started.
 
-2.  Finance and Operations redirects the user agent to the Microsoft Azure
-    Active Directory (AAD) authorization endpoint. The user is authenticated and
-    consents if consent is required. Because the user is running Finance and
-    Operations, he or she is already signed in to AAD. Therefore, the user
-    doesn't have to enter her or his credentials again.
+2.  Finance and Operations redirects the user agent to the Microsoft Azure Active Directory (AAD) authorization endpoint. The user is authenticated and consents if consent is required. Because the user is running Finance and Operations, he or she is already signed in to AAD. Therefore, the user doesn't have to enter her or his credentials again.
 
-3.  The AAD authorization endpoint redirects the AAD agent back to the client
-    application together with an authorization code. The user agent returns the
-    authorization code to the client application’s redirect URL. The application
-    redirect URL is a parameter that is maintained in your Power BI
-    configuration, as described later in this article.
+3.  The AAD authorization endpoint redirects the AAD agent back to the client application together with an authorization code. The user agent returns the authorization code to the client application’s redirect URL. The application redirect URL is a parameter that is maintained in your Power BI configuration, as described in this topic.
 
-4.  Now that Finance and Operations has an authorization code on behalf of the
-    user, it requests an access token from the AAD token issuance endpoint.
-    Finance and Operations presents the authorization code to prove that the
-    user has consented.
+4.  Now that Finance and Operations has an authorization code on behalf of the user, it requests an access token from the AAD token issuance endpoint. Finance and Operations presents the authorization code to prove that the user has consented.
 
-5.  The AAD token issuance endpoint returns an access token and a refresh token.
-    Finance and Operations must have the access tokento request a visualization
-    from Power BI. Access tokens expire after a short time. The refresh token
-    can be used to request a new token.
+5.  The AAD token issuance endpoint returns an access token and a refresh token. Finance and Operations must have the access token to request a visualization from Power BI. Access tokens expire after a short time. The refresh token can be used to request a new token.
 
-6.  Finance and Operations uses the access token to authenticate to the Web API
-    that is provided by Power BI. Finance and Operations uses the Web API to
-    request that Power BI visualizations be displayed on behalf of the user.
+6.  Finance and Operations uses the access token to authenticate to the Web API that is provided by Power BI. Finance and Operations uses the Web API to request that Power BI visualizations be displayed on behalf of the user.
 
-7.  After the client application is authenticated, the Power BI Web API returns
-    the requested visualization to the user. Note that Power BI returns only the
-    data that the user is allowed to see. Because the Power BI Web API detects
-    that the user is connecting via Finance and Operations, it can correctly
-    resolve the user.
+7.  After the client application is authenticated, the Power BI Web API returns the requested visualization to the user. Note that Power BI returns only the data that the user is allowed to see. Because the Power BI Web API detects that the user is connecting via Finance and Operations, it can correctly resolve the user.
 
 8.  The user sees Power BI tiles in the Finance and Operations workspace.
 
-For subsequent visits, this entire flow doesn't have to occur. Because Finance and Operations has the access token on behalf of the user, steps 1 through 4 don't have to be repeated.
+For subsequent visits, this entire flow doesn't occur. Because Finance and Operations has the access token on behalf of the user, steps 1 through 4 don't have to be repeated.
 
-What’s next
-===========
+## What’s next
 
-Now that you have enabled PowerBI.com integration feature, you may consider
-performing following steps
+Now that you have enabled PowerBI.com integration feature, you may consider performing the following steps:
 
-1.  If your organization is using PowerBI.com, you may invite users to pin Tiles
-    and reports from their own PowerBI.com account into workspaces for ease of
-    access. For more information see the link here: \<…\>
+1.  If your organization is using PowerBI.com, you may invite users to pin tiles and reports from their own PowerBI.com account into workspaces for ease of access.
 
-2.  If you are using Dynamics 365 for Operations spring update or later, you may
-    see ready-made Analytical workspaces built into your workspaces (this
-    feature is only available in multi-box environments at present). However, if
-    you are using a previous version of Dynamics 365 for Operations, you can
-    deploy the ready-made reports distributed in LCS into your PowerBI.com
-    account. For more information see the link here \<…\>
+2.  If you are using Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update or later, you may see ready-made Analytical workspaces built into your workspaces. This feature is only available in multi-box environments at present. However, if you are using a previous version of the application, you can deploy the ready-made reports distributed in LCS into your PowerBI.com account. For more information see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 
-3.  You may wish to create your own PowerBI content using data available in
-    Entity store, the Operational data warehouse included with Dynamics 365 for
-    Operations. For more information see the link here \<…\>
+3.  You may wish to create your own Power BI content using data available in Entity store, the operational data warehouse included with Finance and Operations. For more information see, [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
-4.  You may wish to mash-up external data with ready-made PowerBI content
-    provided with Dynamics 365 for Operations using PowerBI solution templates
+4.  You may wish to mash-up external data with ready-made Power BI content provided with Finance and Operations using Power BI solution templates.
