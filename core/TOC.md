@@ -725,6 +725,7 @@
 #### [Aggregate data entities report](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-data-entities-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Key performance indicator (KPI) report](/dynamics365/unified-operations/dev-itpro/analytics/key-performance-indicators-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Power BI integration](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Configure Power BI integration for workspaces](/dynamics365/unified-operations/dev-itpro/analytics/configure-power-bi-integration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Power BI Embedded integration](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-embedded-integration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Embedded Power BI in workspaces](/dynamics365/unified-operations/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Add analytics to workspaces by using Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
