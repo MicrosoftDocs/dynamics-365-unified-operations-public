@@ -40,7 +40,7 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition enables a 
 
 This functionality requires a one-time configuration to your environment. An administrator must do this step to enable Finance and Operations and Power BI to communicate and authenticate correctly.
 
-Both Finance and Operations and PowerBI.com are cloud-based services. For a Finance and Operations workspace to display a Power BI tile, the Finance and Operations server must contact the Power BI service on behalf of a user and access the visualization. Then it must redraw the visual in the Finance and Operations workspace. “On behalf of a user” is important, when a user, say, <Tim@ContosoAX7.onmicrosoft.com> contacts the PowerBI.com service. Power BI should only display tiles and reports from Tim’s own PowerBI.com account.
+Both Finance and Operations and PowerBI.com are cloud-based services. For a Finance and Operations workspace to display a Power BI tile, the Finance and Operations server must contact the Power BI service on behalf of a user and access the visualization. Then it must redraw the visual in the Finance and Operations workspace. “On behalf of a user” is important, when a user, say, `<Tim@ContosoAX7.onmicrosoft.com>` contacts the PowerBI.com service. Power BI should only display tiles and reports from Tim’s own PowerBI.com account.
 
 By doing this step you are enabling Finance and Operations to contact the PowerBI.com service “on behalf of a user”. This flow between Finance and Operations and the Power BI service is based on the OAuth 2.0 Authorization Code Grant Flow, which is discussed later in this topic.
 
@@ -54,7 +54,7 @@ By doing this step you are enabling Finance and Operations to contact the PowerB
 
 - You must be an administrator to your Azure Active directory account. If you are not the administrator, you need an administrative user to perform this operation for you.
 
-- The Azure Active Directory domain that is configured for Finance and Operations must be the same one that you used for your PowerBI.com account. For an example, if you provisioned Finance and Operations in the Contoso.com domain, you must have Power BI accounts in that domain, such as. <Tim@ContosoAX7.onmicrosoft.com>.
+- The Azure Active Directory domain that is configured for Finance and Operations must be the same one that you used for your PowerBI.com account. For an example, if you provisioned Finance and Operations in the Contoso.com domain, you must have Power BI accounts in that domain, such as, `<Tim@ContosoAX7.onmicrosoft.com>`.
 
 ## Registration process 
 
