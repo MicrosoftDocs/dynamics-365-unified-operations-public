@@ -86,7 +86,7 @@ This value is mandatory, but it isn't required for the workspace integration. Ma
 
 1.  Navigate to the **Power BI configuration** page in the Finance and Operations client.
 
-[./media/image4.png](./media/image4.png)
+![Power BI configuration page before edit](./media/PowerBIpage-before-edit.JPG)
 
 2.  Select **Edit**.
 
