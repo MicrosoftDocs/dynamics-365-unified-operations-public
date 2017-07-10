@@ -2,7 +2,7 @@
 # required metadata
 
 title: Overview of moving to the latest update of Finance and Operations
-description: This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations. This topic is intended to describe the overall process and supported scenarios, not to provide detailed instructions for every step of the process.
+description: This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations. 
 author: tariqbell
 manager: AnnBe
 ms.date: 07/10/2017
@@ -74,25 +74,25 @@ Use this scenario to update to the latest release of the platform, when no appl
 Use this scenario when one or more small hotfixes are required to address a specific issue, and when business factors such as time or cost prohibit taking an entire major application update at that moment. It is not necessary to perform a complete upgrade of your application to uptake new features of the application. All features in the current update of the  **application** are available individually on Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download hotfixes from LCS, see [Download hotfixes from Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md).
 
 ## Scenario 2: Upgrade your custom code
-This scenario describes the process for upgrading code from an earlier release to the current release. This process is required before you can perform Scenario 3 and is to be completed by a developer before other activities can begin. Code upgrade is needed when you deploy new environments as part of the process of upgrading your application to a new major or cumulative release.
+This scenario describes the process for upgrading code from an earlier release to the current release. This process is required before you can perform Scenario 3 and is to be completed by a developer before other activities can begin. Code upgrade is needed when you deploy new environments as part of the process of upgrading your application to a new major or cumulative release. Code upgrade is not required for platform updates.
 
-| Source environment                                   | Target environment                                           | Do I need the code upgrade service? |
-|-----------------------------------------------------|--------------------------------------------------------------|-------------------------------------|
-| Microsoft Dynamics AX 2012                          | Finance and Operations                                  | Yes                                 |
-| February 2016                                              | May 2016 (Platform update 1, Application 7.0.1)              | Yes                                 |
-| February 2016                                              | August 2016 (Platform update 2, Application 7.0.1)           | Yes                                 |
-| May 2016 (Platform update 1, Application 7.0.1)     | August 2016 (Platform update 2, Application 7.0.1)           | No                                  |
-| February 2016                                              | Release 1611 (Platform update 3 or newer, Application 7.1.0) | Yes                                 |
-| May 2016 (Platform update 1, Application 7.0.1)     | Release 1611 (Platform update 3 or newer, Application 7.1.0) | Yes                                 |
-| August 2016 (Platform update 2, Application 7.0.1)  | Release 1611 (Platform update 3 or newer, Application 7.1.0) | Yes                                 |
-| Release 1611 (Platform update 3, Application 7.1.0) | Newer version of the platform, like platform update 4        | No                                  |
-| February 2016, May 2016, or Release 1611 (Application 7.0.0, 7.0.1, or 7.1.0)  | July 2017 Release (Application 7.2.0) | Yes                                 |
+| Source environment                                     | Expected content of AX7.version file for source | Target environment                                           | Do I need the code upgrade service? |
+|--------------------------------------------------------|-------------------------------------------------|--------------------------------------------------------------|-------------------------------------|
+| Release 1611 (Application 7.1.0)                       | 7.1.1541.3036                                   | July 2017 Release (Application 7.2.0)                        | Yes                                 |
+| August 2016 (Application 7.0.1 with Platform update 2) | 7.0.1265.27075                                  | July 2017 Release (Application 7.2.0)                        | Yes                                 |
+| August 2016 (Application 7.0.1 with Platform update 2) | 7.0.1265.27075                                  | Release 1611 (Platform update 3 or newer, Application 7.1.0) | Yes                                 |
+| May 2016 (Application 7.0.1)                           | 7.0.1265.23014                                  | July 2017 Release (Application 7.2.0)                        | Yes                                 |
+| May 2016 (Application 7.0.1)                           | 7.0.1265.23014                                  | Release 1611 (Platform update 3 or newer, Application 7.1.0) | Yes                                 |
+| February 2016 (Application 7.0.0)                      | 7.0.1265.3015                                   | July 2017 Release (Application 7.2.0)                        | Yes                                 |
+| February 2016 (Application 7.0.0)                      | 7.0.1265.3015                                   | Release 1611 (Platform update 3 or newer, Application 7.1.0) | Yes                                 |
+| Microsoft Dynamics AX 2012                             | Not applicable                                  | July 2017 Release (Application 7.2.0)                        | Yes                                 |
+| July 2017 (Platform update 8, application 7.2)         |                                                 | Newer version of the platform                                | No                                  |
+| Release 1611 (Platform update 3, Application 7.1.0)    |                                                 | Newer version of the platform                                | No                                  |
+| May 2016 (Platform update 1, Application 7.0.1)        |                                                 | August 2016 (Platform update 2, Application 7.0.1)           | No                                  |                           |
 
 Regardless of whether you're a live customer or you're still in the implementation phase of your project, follow these steps to upgrade your code to the latest platform and application updates.
 
-1.  Use the Code upgrade service on Lifecycle Services to upgrade your code, see [Configure the code upgrade service in Lifecycle services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-execute-code-upgrade)
-
-We recommend running the code upgrade service even if you have no custom code, because the service will still help you by removing any old Microsoft X++ hotfixes you have installed, which is a required step.
+1.  Use the Code upgrade service on Lifecycle Services to upgrade your code, see [Configure the code upgrade service in Lifecycle services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-execute-code-upgrade). We recommend running the code upgrade service even if you have no custom code, because the service will still help you by removing any old Microsoft X++ hotfixes you have installed, which is a required step.
 
 2.  You will need to deploy a brand new development environment which is running the new version which you are upgrading to. You will use this environment to complete code merging and refactoring of your custom code. Submit a request for a new Dev/Test environment that is running the latest update.
     -   You might have to delete your existing Dev/Test environment if your subscription doesn't allow for a new one.
