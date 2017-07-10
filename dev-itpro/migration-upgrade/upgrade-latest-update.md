@@ -86,7 +86,7 @@ This scenario describes the process for upgrading code from an earlier release t
 | May 2016 (Platform update 1, Application 7.0.1)     | Release 1611 (Platform update 3 or newer, Application 7.1.0) | Yes                                 |
 | August 2016 (Platform update 2, Application 7.0.1)  | Release 1611 (Platform update 3 or newer, Application 7.1.0) | Yes                                 |
 | Release 1611 (Platform update 3, Application 7.1.0) | Newer version of the platform, like platform update 4        | No                                  |
-| Application 7.0.1 or Application 7.1.0  | July 2017 Release (Application 7.2.0) | Yes                                 |
+| February 2016, May 2016, or Release 1611 (Application 7.0.0, 7.0.1, or 7.1.0)  | July 2017 Release (Application 7.2.0) | Yes                                 |
 
 Regardless of whether you're a live customer or you're still in the implementation phase of your project, follow these steps to upgrade your code to the latest platform and application updates.
 
