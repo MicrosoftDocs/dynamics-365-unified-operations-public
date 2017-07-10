@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Overview of moving to the latest update of Finance and Operations
+title: Process for moving to the latest update of Finance and Operations
 description: This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations. 
 author: tariqbell
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Overview of moving to the latest update of Finance and Operations
+# Process for moving to the latest update of Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
