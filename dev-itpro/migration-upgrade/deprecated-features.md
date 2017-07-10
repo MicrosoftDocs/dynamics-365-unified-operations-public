@@ -34,9 +34,9 @@ ms.dyn365.ops.version: Platform update 6
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that have been removed, or that are planned for removal.
+This topic describes features that have been removed, or that are planned for removal from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-## Features that have been deprecated in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update with Platform update 8--all deployments
+## Features that have been deprecated for all deployment types of the July 2017 update with Platform update 8
 This list includes features that have been deprecated for both cloud and on-premises deployments.
 
 ### Warehouse mobile devices portal
@@ -69,7 +69,7 @@ The Windows 8 tablet app provided functionality for expense entry and approval.
 | **Replaced by another feature?** | No.                                                                                      |
 | **Modules affected**             | Expense management                                                                       |
 
-## Features that have been deprecated in the on-premises release of Finance and Operations, Enterprise edition July 2017 update with Platform update 8 
+## Features that have been deprecated for on-premises deployments of the July 2017 update with Platform update 8
 
 ### SSRS Report Viewer control
 
