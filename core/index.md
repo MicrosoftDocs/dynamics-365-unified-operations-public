@@ -5,7 +5,7 @@ title: Introduction to Dynamics 365 for Finance and Operations
 description: Microsoft Dynamics 365 for Finance and Operations is Microsoft’s business application for enterprises. This page helps you learn and get start using the product. 
 author: margoc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/10/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,67 +46,62 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 <tbody>
 <tr class="odd">
 <td><h3>Financials</h3>
+<p><a href="../financials/accounts-payable/accounts-payable">Accounts payable</a></p>
+<p><a href="../financials/accounts-receivable/accounts-receivable">Accounts receivable</a></p>
+<p><a href="../financials/budgeting/budgeting-overview">Budgeting</a></p>
+<p><a href="../financials/cash-bank-management/cash-bank-management">Cash and bank management</a></p>
 <p><a href="../financials/general-ledger/audit-policy-rules">Compliance</a></p>
-<p>Financial management</p>
-<ul style="list-style-type:none">
-<li><a href="../financials/accounts-payable/accounts-payable">Accounts payable</a></li>
-<li><a href="../financials/accounts-receivable/accounts-receivable">Accounts receivable</a></li>
-<li><a href="../financials/budgeting/budgeting-overview">Budgeting</a></li>
-<li><a href="../financials/cash-bank-management/cash-bank-management">Cash and bank management</a></li>
-<li><a href="../financials/cost-accounting/cost-accounting-home-page">Cost accounting</a></li>
-<li><a href="../financials/fixed-assets/fixed-assets">Fixed assets</a></li>
-<li><a href="../financials/general-ledger/general-ledger">General ledger</a></li>
-<li><a href="../financials/public-sector/public-sector-functionality">Public sector</a></li>
-<li><a href="../dev-itpro/lcs-solutions/country-region">Regional regulatory features</a></li></ul>
+<p><a href="../financials/cost-accounting/cost-accounting-home-page">Cost accounting</a></p>
+<p><a href="../financials/fixed-assets/fixed-assets">Fixed assets</a></p>
+<p><a href="../financials/general-ledger/general-ledger">General ledger</a></p>
 <p><a href="../financials/project-management/overview-project-management-accounting">Project management</a></p>
+<p><a href="../financials/public-sector/public-sector-functionality">Public sector</a></p>
+<p><a href="../dev-itpro/lcs-solutions/country-region">Regional regulatory features</a></p>
+
 <H3>Human resources</h3>
-  <ul style="list-style-type:none">
-<li><a href="hr/manage-recruiting-process">Recruiting</a></li>
-<li><a href="hr/localizations/noam-usa-payroll">US payroll</a></li>
-</ul>
+<p><a href="hr/manage-recruiting-process">Recruiting</a></p>
+<p><a href="hr/localizations/noam-usa-payroll">US payroll</a></p>
+
 <h3>Supply chain management</h3>
 <p><a href="../supply-chain/cost-management/costing-sheets">Cost management</a></p>
 <p><a href="../supply-chain/inventory/inventory-locations">Inventory management</a></p>
 <p>Logistics</p>
-<ul style="list-style-type:none"><li><a href="../supply-chain/transportation/transportation-management-overview">Transportation management</a></li>
+<ul>
+<li><a href="../supply-chain/transportation/transportation-management-overview">Transportation management</a></li>
 <li><a href="../supply-chain/warehousing/warehouse-configuration">Warehouse management</a></li></ul>
 <p><a href="../supply-chain/master-planning/master-plans">Planning</a></p>
-  <p><a href="../supply-chain/pim/set-up-maintain-product-configuration-model">Product information management</a></p>
-  <p><a href="../supply-chain/production-control/create-production-orders">Production control</a></p>
+<p><a href="../supply-chain/pim/set-up-maintain-product-configuration-model">Product information management</a></p>
+<p><a href="../supply-chain/production-control/create-production-orders">Production control</a></p>
 <p>Order management</p>
   <ul style="list-style-type:none"><li><a href="../supply-chain/procurement/procurement-sourcing-overview">Procurement and sourcing</a></li>
   <li><a href="../supply-chain/sales-marketing/overview-sales-marketing">Sales and marketing</a></li></ul>
 </td>
 <td>
-<h3>Unified Operations platform</h3>
-<p>Intelligence</p>
-<ul style="list-style-type:none"><li><a href="../dev-itpro/analytics/analytics">Analytics</a></li>
- <li><a href="../dev-itpro/analytics/document-reporting-services">Business documents</a></li>
-<li><a href="../dev-itpro/analytics/financial-reporting-intro">Financial reporting</a></li>
-<li><a href="../dev-itpro/analytics/general-electronic-reporting">Regulatory reporting</a></li></ul>
+<h3>Intelligence</h3>
+<p><a href="../dev-itpro/analytics/analytics">Analytics</a></p>
+ <p><a href="../dev-itpro/analytics/document-reporting-services">Business documents</a></p>
+<p><a href="../dev-itpro/analytics/financial-reporting-intro">Financial reporting</a></p>
+<p><a href="../dev-itpro/analytics/general-electronic-reporting">Regulatory reporting</a></p>
 
-<p><a href="../dev-itpro/mobile-apps/mobile-platform">Mobile platform</a></p>
+<h3><a href="../dev-itpro/mobile-apps/mobile-platform">Mobile platform</a></h3>
 
- <p>Developer functionality</p>
-<ul style="list-style-type:none">
-<li><a href="../dev-itpro/dev-tools/continuous-delivery-home-page">Continuous delivery</a></li>
-<li><a href="../dev-itpro/get-started/demo-data">Demo data</a></li>
-<li><a href="../dev-itpro/dev-tools/developer-home-page">Developer tools</a></li>
-<li><a href="../dev-itpro/extensibility/customize-model-elements-extensions">Extensibility</a></li>
-<li><p>Integration</p>
-<ul style="list-style-type:none"><li><a href="../dev-itpro/data-entities/data-entities">Data entities</a></li>
-<li><a href="../dev-itpro/office-integration/office-integration">Office integration</a></li></ul></li></ul>
+ <h3>Developer functionality</h3>
+<p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page">Continuous delivery</a></p>
+<p><a href="../dev-itpro/get-started/demo-data">Demo data</a></p>
+<p><a href="../dev-itpro/dev-tools/developer-home-page">Developer tools</a></p>
+<p><a href="../dev-itpro/extensibility/customize-model-elements-extensions">Extensibility</a></p>
+<p><p>Integration</p>
+<ul style="list-style-type:none"><p><a href="../dev-itpro/data-entities/data-entities">Data entities</a></p>
+<p><a href="../dev-itpro/office-integration/office-integration">Office integration</a></p></ul></p>
 
-<p>Administrator functionality<p>
-<ul style="list-style-type:none">
-<li><a href="../fin-and-ops/get-started/onboarding-home">Onboarding your organization</a></li>
-<li><a href="../dev-itpro/deployment/deploy-demo-environment">Deployment and servicing</a></li>
-<li><a href="../dev-itpro/migration-upgrade/upgrade-home-page">Upgrade</a></li>
-<li><a href="../dev-itpro/data-entities/data-management-integration-data-entity">Data management</a></li>
-<li><a href="../dev-itpro/lifecycle-services/lcs">Lifecycle Services</a></li>
-<li><a href="../fin-and-ops/organization-administration/organization-administration-home-page">Organization administration</a></li>
-<li><a href="../dev-itpro/sysadmin/system-administration-home-page">System administration</a></li>
-</ul>
+<h3>Administrator functionality<h3>
+<p><a href="../fin-and-ops/get-started/onboarding-home">Onboarding your organization</a></p>
+<p><a href="../dev-itpro/deployment/deploy-demo-environment">Deployment and servicing</a></p>
+<p><a href="../dev-itpro/migration-upgrade/upgrade-home-page">Upgrade</a></p>
+<p><a href="../dev-itpro/data-entities/data-management-integration-data-entity">Data management</a></p>
+<p><a href="../dev-itpro/lifecycle-services/lcs">Lifecycle Services</a></p>
+<p><a href="../fin-and-ops/organization-administration/organization-administration-home-page">Organization administration</a></p>
+<p><a href="../dev-itpro/sysadmin/system-administration-home-page">System administration</a></p>
 </td>
 <td>
 <h3>Related products</h3>
