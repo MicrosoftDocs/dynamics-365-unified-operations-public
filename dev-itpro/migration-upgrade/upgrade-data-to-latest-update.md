@@ -36,9 +36,12 @@ ms.dyn365.ops.version: Platform update 1
 
 
 This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations database to the latest update. 
-Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the Production and Sandbox environments. You can contact them using an "Upgrade" request in Lifecycle services which you submit via the "Maintain" button on the environment details page for the environment you wish to update.
+Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the Production and Sandbox environments. You can contact them using an **Upgrade** request in Lifecycle services which you submit using the **Maintain** button on the Environment details page for the environment you wish to update.
 
-This topic describes how to upgrade an older source database to the latest Finance and Operations update. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md). This process does not apply to the upgrade of data in Management Reporter or the Retail channel database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
+This topic describes how to upgrade an older source database to the latest Finance and Operations update. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md). 
+
+> [!IMPORTANT]
+> This process does not apply to the upgrade of data in Management Reporter or the Retail channel database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 
 ## Before you begin
 1.  You must have a functional one-box demo or development environment that is already successfully running with the latest Finance and Operations update.
@@ -71,7 +74,7 @@ This topic describes how to upgrade an older source database to the latest Fina
             INSERT INTO SYSSETUPLOG (DESCRIPTION, NAME, VERSION, CREATEDDATETIME, CREATEDBY)
             VALUES ('194', 'ReleaseUpdateDBgetFromVersion', '7.0', '2016-01-01 00:00:00.000', 'Admin')
             END
-    -   If you're upgrading from the November 2016 release (also known as 1611 or 7.1), run the following statement from Management Studio.
+    -   If you're upgrading from the November 2016 release (also known as 1611), run the following statement from Management Studio.
 
             IF NOT EXISTS (SELECT 'x' FROM SYSSETUPLOG WHERE DESCRIPTION = '194' and NAME = 'ReleaseUpdateDBgetFromVersion')
             BEGIN
@@ -92,7 +95,6 @@ To obtain the latest MinorVersionDataUpgrade.zip package from your target enviro
 
 > [!NOTE]
 > If the All binary updates tile shows zero updates available then use the MinorVersionDataUpgrade.zip from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 with platform update 3 and the All binary updates tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library. When using this package from the shared asset library, the path required in step 3 below changes to ..\\AOSService\\Packages\\files\\dynamicsax-framework-bin.7.0.4307.16141.zip\\CustomDeployablePackage
->
 
 2.  On the **Add hotfixes** page, click **Select all**, click **Add**, and then click **Download package**.
 3.  On the next page, click **Download**.
@@ -100,7 +102,6 @@ To obtain the latest MinorVersionDataUpgrade.zip package from your target enviro
 
 > [!NOTE]
 > Computers that are deployed from LCS will already have a MinorVersionDataUpgrade.zip file. However, that file is out of date and includes issues that have been resolved in later fixes. Always download the latest version of the file from LCS.
-> 
 
 ## Remove encryption certification rotation
 1.  Extract the MinorVersionDataUpgrade.zip deployable package to C:\\Temp or a location of your choice.
@@ -155,7 +156,7 @@ This step is required if you're upgrading a database from the February 2016 rele
 ## Troubleshoot upgrade script errors
 ### How to re-run the runbook after a data upgrade script failure
 
-A data upgrade deployable package allows more granular re-running than a typical deployable package. The step at which the data upgrade scripts begin executing is step 5. If you experience a failure during step 5, check the output in the command window to identify which sub-step you reached – for example it may be 5.3, the issue the command follows to re-run from that sub-step. This is to allow you to keep re-running a particular failing script during debugging, without having to re-run the entire data upgrade piece (including database synchronization).
+A data upgrade deployable package allows more granular re-running than a typical deployable package. The step at which the data upgrade scripts begin executing is Step 5. If you experience a failure during Step 5, check the output in the command window to identify which sub-step you reached – for example it may be 5.3, the issue the command follows to re-run from that sub-step. This is to allow you to keep re-running a particular failing script during debugging, without having to re-run the entire data upgrade piece (including database synchronization).
 
     AXUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=5.3
 
@@ -163,17 +164,24 @@ A data upgrade deployable package allows more granular re-running than a typica
 
 Upgrade scripts are running in X++ using a batch process that the runbook installer is starting. There are classes you can view in the Application Explorer in Visual Studio, they are prefixed with *ReleaseUpdate*. If an upgrade script fails during the runbook process you can discover more detail about the reason for the error by opening SQL Management Studio and querying the ReleaseUpdateScriptsErrorLog as follows.
 
-    select * from RELEASEUPDATESCRIPTSERRORLOG
+    select \* from RELEASEUPDATESCRIPTSERRORLOG
 
 It is possible to take that code, add it to a new runnable class in Visual Studio, and directly observe, debug, and rework it’s behavior.
 
 ### How to skip failed scripts
 
-This process is only designed to be used in a development scenario. It is an aid to the troubleshooting process and lets you skip all scripts that have failed a certain number of times and move to the next viable scripts. The process is intentionally very manual, to reduce the likelihood that you skip scripts without realizing they were skipped. In the table **ReleaseUpdateConfiguration** there is a new field called **ScriptRetryCount**. The value in this field controls how many times the runbook process will re-run a script before it ignores it. When the runbook executes, the system updates the field ReleaseUpdateScriptsErrorLog.ErrorCount each time a specific script fails (creating a new row for each distinct script). In the DataUpgrade package folder, under ..\\AosServices\\Scripts\\ is a script named IgnoreBlockingScripts.ps1. Execute this from an Administrator PowerShell window to skip all scripts where the ScriptRetryCount=ErrorCount. Then re-run the failed runbook step so that scripts will be ignored. The field **ReleaseUpdateScriptsErrorLog.Ignored** will also be set for each skipped script so that they can be identified later.
+> [!IMPORTANT]
+> This process is only designed to be used in a development scenario. 
+
+Skipping failed scripts is an aid to the troubleshooting process and lets you skip all scripts that have failed a certain number of times and move to the next viable scripts. The process is intentionally very manual, to reduce the likelihood that you skip scripts without realizing that they were skipped. 
+
+In the table **ReleaseUpdateConfiguration** there is a new field called **ScriptRetryCount**. The value in this field controls how many times the runbook process will re-run a script before it ignores it. When the runbook executes, the system updates the field ReleaseUpdateScriptsErrorLog.ErrorCount each time a specific script fails (creating a new row for each distinct script). 
+In the DataUpgrade package folder, under ..\\AosServices\\Scripts\\ is a script named IgnoreBlockingScripts.ps1. Execute this from an Administrator PowerShell window to skip all scripts where the ScriptRetryCount=ErrorCount. 
+Then re-run the failed runbook step so that scripts will be ignored. The field **ReleaseUpdateScriptsErrorLog.Ignored** will also be set for each skipped script so that they can be identified later.
 
 ### How to monitor duration of executed scripts
 
-Each successfully executed script records the amount of time that it took to process in minutes in the **ReleaseUpdateScriptsLog.DurationMins** column. This is intended as a simple way to identify the longest running scripts when working on performance tuning the data upgrade process. It is important to understand that the timings are the duration for each script to run, however multiple scripts will run in parallel, so the sum of the **DurationMins** column is greater than the overall duration of the upgrade process.
+Each successfully executed script records the amount of time that it took to process in minutes in the **ReleaseUpdateScriptsLog.DurationMins** column. This is intended as a simple way to identify the longest running scripts when working on performance tuning the data upgrade process. It is important to understand that the timing is the duration each script takes to run, however multiple scripts will run in parallel, so the sum of the **DurationMins** column is greater than the overall duration of the upgrade process.
 
 ## Known issues
 ### Duplicate key was found for the object name 'dbo.RESOURCESETUP' 
@@ -241,14 +249,14 @@ This is a known issue that will be resolved in a future release. The workaround
             END 
 
             -- Ensure that instancerelationtype is added. We don't want to randomly add relationtype to any table.
-            IF NOT EXISTS (SELECT * FROM SQLDICTIONARY WHERE TABLEID = @TABLEID AND NAME = 'InstanceRelationType')		
+            IF NOT EXISTS (SELECT \* FROM SQLDICTIONARY WHERE TABLEID = @TABLEID AND NAME = 'InstanceRelationType')		
             BEGIN
                 PRINT @TABLENAME + ' table does not exists. Please provide a base table';
                 RETURN;
             END
 
             -- Ensure SQLDictionary is populated
-            IF NOT EXISTS (SELECT * FROM SQLDICTIONARY WHERE TABLEID = @TABLEID AND FIELDID = @FIELDID)
+            IF NOT EXISTS (SELECT \* FROM SQLDICTIONARY WHERE TABLEID = @TABLEID AND FIELDID = @FIELDID)
             BEGIN
                 INSERT INTO SQLDICTIONARY (TABLEID, FIELDID, ARRAY, NAME, SQLNAME, FIELDTYPE, STRSIZE, SHADOW, RIGHTJUSTIFY, NULLABLE, FLAGS, RECVERSION)
                 VALUES (@TABLEID,@FIELDID,1, @FIELDNAME, @FIELDNAME, 49, 0, 0, 0, 0, 0, 1);
@@ -328,11 +336,11 @@ In this case, rerun the runbook step that failed. You will then be able to conti
 
 You might receive one of the following error messages on either preSyncLedgerPeriodCloseTemplateTask, updateMenuItemTypeForCurrencyReval, updateLedgerPeriodCloseTemplateTask methods in the ReleaseUpdateDB71\_LedgerPeriodClose class.
 
-> *Cannot execute the required database operation. The SQL database has issued an error. Object Server DynamicsAXBatchManagement: \[Microsoft\]\[SQL Server Native Client 11.0\]\[SQL Server\]Invalid column name 'TEMPLATE'. INSERT INTO LedgerPeriodCloseTemplateTaskTmp ( TEMPLATE, AREA, NAME, MENUITEM, MENUITEMTYPE, TARGETDAYSFROMPROJECTCOMPLETE, DUETIME, LEGALENTITYSELECTION, RECVERSION, PARTITION, RECID, CLOSINGROLE, LINENUM) SELECT T1.TEMPLATE, T1.AREA, T1.NAME, T1.MENUITEM, T1.MENUITEMTYPE, T1.TARGETDAYSFROMPROJECTCOMPLETE, T1.DUETIME, T1.LEGALENTITYSELECTION, T1.RECVERSION, T1.PARTITION, T1.RECID, T1.CLOSINGROLE, 0 FROM LedgerPeriodCloseTemplateTask T1 session 1013 (Admin) Microsoft.Dynamics.Ax.Xpp.ErrorException: Cannot execute the required database operation. The SQL database has issued an error.*
+> Cannot execute the required database operation. The SQL database has issued an error. Object Server DynamicsAXBatchManagement: \[Microsoft\]\[SQL Server Native Client 11.0\]\[SQL Server\]Invalid column name 'TEMPLATE'. INSERT INTO LedgerPeriodCloseTemplateTaskTmp ( TEMPLATE, AREA, NAME, MENUITEM, MENUITEMTYPE, TARGETDAYSFROMPROJECTCOMPLETE, DUETIME, LEGALENTITYSELECTION, RECVERSION, PARTITION, RECID, CLOSINGROLE, LINENUM) SELECT T1.TEMPLATE, T1.AREA, T1.NAME, T1.MENUITEM, T1.MENUITEMTYPE, T1.TARGETDAYSFROMPROJECTCOMPLETE, T1.DUETIME, T1.LEGALENTITYSELECTION, T1.RECVERSION, T1.PARTITION, T1.RECID, T1.CLOSINGROLE, 0 FROM LedgerPeriodCloseTemplateTask T1 session 1013 (Admin) Microsoft.Dynamics.Ax.Xpp.ErrorException: Cannot execute the required database operation. The SQL database has issued an error.
 
-> *Cannot execute the required database operation. The SQL database has issued an error. Object Server DynamicsAXBatchManagement: \[Microsoft\]\[SQL Server Native Client 11.0\]\[SQL Server\]Invalid column name 'MENUITEMTYPE'. UPDATE LedgerPeriodCloseTemplateTaskTmp SET MENUITEMTYPE = 0 WHERE MENUITEMTYPE = 2 AND MENUITEM = 'LedgerExchAdj' AND PARTITION = 5637144576 session 1013 (Admin) Microsoft.Dynamics.Ax.Xpp.ErrorException: Cannot execute the required database operation. The SQL database has issued an error.*
+> Cannot execute the required database operation. The SQL database has issued an error. Object Server DynamicsAXBatchManagement: \[Microsoft\]\[SQL Server Native Client 11.0\]\[SQL Server\]Invalid column name 'MENUITEMTYPE'. UPDATE LedgerPeriodCloseTemplateTaskTmp SET MENUITEMTYPE = 0 WHERE MENUITEMTYPE = 2 AND MENUITEM = 'LedgerExchAdj' AND PARTITION = 5637144576 session 1013 (Admin) Microsoft.Dynamics.Ax.Xpp.ErrorException: Cannot execute the required database operation. The SQL database has issued an error.
 
-> *Cannot execute the required database operation. The SQL database has issued an error. Object Server DynamicsAXBatchManagement: \[Microsoft\]\[SQL Server Native Client 11.0\]\[SQL Server\]Invalid column name 'TEMPLATE'. INSERT INTO LedgerPeriodCloseTemplateTask ( TEMPLATE, AREA, NAME, MENUITEM, MENUITEMTYPE, TARGETDAYSFROMPROJECTCOMPLETE, DUETIME, LEGALENTITYSELECTION, RECVERSION, PARTITION, RECID, CLOSINGROLE, LINENUM) SELECT T1.TEMPLATE, T1.AREA, T1.NAME, T1.MENUITEM, T1.MENUITEMTYPE, T1.TARGETDAYSFROMPROJECTCOMPLETE, T1.DUETIME, T1.LEGALENTITYSELECTION, T1.RECVERSION, T1.PARTITION, T1.RECID, T1.CLOSINGROLE, T1.LINENUM FROM LedgerPeriodCloseTemplateTaskTmp T1 session 1013 (Admin)*
+> Cannot execute the required database operation. The SQL database has issued an error. Object Server DynamicsAXBatchManagement: \[Microsoft\]\[SQL Server Native Client 11.0\]\[SQL Server\]Invalid column name 'TEMPLATE'. INSERT INTO LedgerPeriodCloseTemplateTask ( TEMPLATE, AREA, NAME, MENUITEM, MENUITEMTYPE, TARGETDAYSFROMPROJECTCOMPLETE, DUETIME, LEGALENTITYSELECTION, RECVERSION, PARTITION, RECID, CLOSINGROLE, LINENUM) SELECT T1.TEMPLATE, T1.AREA, T1.NAME, T1.MENUITEM, T1.MENUITEMTYPE, T1.TARGETDAYSFROMPROJECTCOMPLETE, T1.DUETIME, T1.LEGALENTITYSELECTION, T1.RECVERSION, T1.PARTITION, T1.RECID, T1.CLOSINGROLE, T1.LINENUM FROM LedgerPeriodCloseTemplateTaskTmp T1 session 1013 (Admin)
 
 In this case, manually drop the table **LedgerPeriodCloseTemplateTaskTmp** from the database via SQL Management Studio, and then re-run the runbook step. This issue will be fixed in a future hotfix.
 
@@ -360,11 +368,11 @@ If you receive either of the following Data Migration Framework (DMF) errors, do
 
 #### DMF pre-sync
 
-> *Batch error: initial.DAT.ReleaseUpdateDB70\_DMF.updateIntegrationActivityExecutionMessageIdPreSync (Batch:AOS-F01B9F0CCC8, 9, Info, Error, ):\[\[1\]\[3,Cannot execute the required database operation. The SQL database has issued an error.\]\[3,Object Server DynamicsAXBatchManagement: \]\[3,\[Microsoft\]\[SQL Server Native Client 11.0\]\[SQL Server\]Incorrect syntax near 'GO'.\]\[3,*
+> Batch error: initial.DAT.ReleaseUpdateDB70\_DMF.updateIntegrationActivityExecutionMessageIdPreSync (Batch:AOS-F01B9F0CCC8, 9, Info, Error, ):\[\[1\]\[3,Cannot execute the required database operation. The SQL database has issued an error.\]\[3,Object Server DynamicsAXBatchManagement: \]\[3,\[Microsoft\]\[SQL Server Native Client 11.0\]\[SQL Server\]Incorrect syntax near 'GO'.\]\[3,
 
 #### DMF post-sync
 
-> *Batch error: initial.DAT.ReleaseUpdateDB70\_DMF.updateIntegrationActivityExecutionMessageIdPostSync (Batch:AOS-F01B9F0CCC8, 9, Info, Error, ):\[\[1\]\[3,Cannot execute the required database operation.The SQL database has issued an error.\]\[3,Object Server DynamicsAXBatchManagement: \]\[3,\[Microsoft\]\[SQL Server Native Client 11.0\]\[SQL Server\]Incorrect syntax near 'GO'.\]\[3,*
+> Batch error: initial.DAT.ReleaseUpdateDB70\_DMF.updateIntegrationActivityExecutionMessageIdPostSync (Batch:AOS-F01B9F0CCC8, 9, Info, Error, ):\[\[1\]\[3,Cannot execute the required database operation.The SQL database has issued an error.\]\[3,Object Server DynamicsAXBatchManagement: \]\[3,\[Microsoft\]\[SQL Server Native Client 11.0\]\[SQL Server\]Incorrect syntax near 'GO'.\]\[3,
 
 ## Encrypted fields in demo data
 After upgrade, values in encrypted fields in the database will be unreadable. However, new values that are entered in these fields after upgrade will be readable. This behavior occurs because of a technical limitation that is related to the certificate that is used for data encryption. The following table shows the fields that are affected.
