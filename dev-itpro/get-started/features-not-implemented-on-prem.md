@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Features not implemented in on-premises deployments
+title: Features not yet implemented in on-premises deployments
 description: This topic lists features that have not been implemented in on-premises deployments.
 author: sericks007
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Features not implemented in on-premises deployments
+# Features not yet implemented in on-premises deployments
 
 [!include[banner](../includes/banner.md)]
 
@@ -52,4 +52,4 @@ The following features have not been implemented in on-premises deployments of D
 |Trace Parser and PerfTimer |These tools are not working or have limited functionality for this release. These features will be implemented in a future release. |
 |SSRS scale out  |Currently SQL Server Reporting Services (SSRS) does not support scaling out. This feature will be added in an upcoming release. |
 |Telemetry  |Currently no telemetry is transferred into the cloud. In a future update we will start transferring telemetry data into the cloud. |
-|Mobile apps     |At this time, mobile apps are not supported. Mobile app support will be added in an upcoming release. |
+
