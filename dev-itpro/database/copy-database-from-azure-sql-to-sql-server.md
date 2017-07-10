@@ -258,7 +258,7 @@ If you’re using Retail components, you must perform additional steps to re-pro
 10. Select the Environment reprovisioning tool that you previously uploaded and click Apply to apply the package.
 11. Monitor the progress of the package deployment. 
 
-Learn more about how to apply a deployable package in the topic [Apply a deployable package](../deployment/create-apply-deployable-package.md). Learn how to apply a deployable package manually in the topic [Install a deployable package](..deployment/install-deployable-package.md).
+Learn more about how to apply a deployable package in the topic [Apply a deployable package](../deployment/create-apply-deployable-package.md). Learn how to apply a deployable package manually in the topic [Install a deployable package](../deployment/install-deployable-package.md).
 
 ## Start using the new database
 To switch the environment and use the new database, stop the services in the following list, rename the AxDB database to AxDB\_orig, and then rename your newly imported database AxDB. Restart the services in the following list:
@@ -294,7 +294,11 @@ When dropping users in the source database, the user **axdbadmin** or **axdeploy
 
 ### Can't download SQL Server Management Studio installation files
 
-When you attempt to download the SQL Management Studio install, you might receive the following error. [![SecuritySettingsCannotDownload](./media/securitysettingscannotdownload.png)](./media/securitysettingscannotdownload.png)         To work around this issue, enable file download for the **Internet Zone**, on the **Security** tab in **Internet Options** as shown below. [![SecuritySettingsFix](./media/securitysettingsfix.png)](./media/securitysettingsfix.png)
+When you attempt to download the SQL Management Studio install, you might receive the following error. 
+[![SecuritySettingsCannotDownload](./media/securitysettingscannotdownload.png)](./media/securitysettingscannotdownload.png)         
+
+To work around this issue, enable file download for the **Internet Zone**, on the **Security** tab in **Internet Options** as shown below. 
+[![SecuritySettingsFix](./media/securitysettingsfix.png)](./media/securitysettingsfix.png)
 
 ### Database synchronization fails
 
@@ -323,7 +327,3 @@ Refer to the following guidelines for optimal performance:
 -   On a Dynamics 365 for Finance and Operations one-box environment, also known as a tier 1 environment, which is hosted in Azure, place the bacpac file on the D: drive when importing for increased performance. Read more about the temporary drive in Azure machines in the blog post [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 -   Grant the account running the SQL Server Windows service the [Instance File Initialization](https://msdn.microsoft.com/en-us/library/ms175935.aspx) rights. This can speed up the import process and improve the speed of restore from a \*.bak file. A simple way to do this in a Developer environment is to set SQL Server to run as the axlocaladmin account.
 -   From SQL Azure, do not select Export data tier application in SQL Server Management Studio because there can be a memory limitation for larger databases.
-
-
-
-
