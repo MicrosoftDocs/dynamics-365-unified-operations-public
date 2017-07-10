@@ -1919,16 +1919,6 @@ for items process to enable those items to be used in warehouse management
 processes. This feature is useful if you want to use the warehouse management
 functionality for existing items.
 
-Movement of inventory with associated work in Warehouse management 
--------------------------------------------------------------------
-
-You can now control which warehouse workers should be allowed to move reserved
-inventory. Also, previously, the work reservations that you could move where
-limited to Sales order, Transfer order issue, Transfer order receipt, and
-Purchase order.
-
-For more information, see [Movement of inventory with associated work in Warehouse management](/dynamics365/unified-operations/supply-chain/warehousing/move-inventory-associated-work).
-
 Piece picking confirmation 
 ---------------------------
 

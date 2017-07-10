@@ -43,10 +43,11 @@ Overlayering
 You can customize source code and metadata of model elements that are shipped by Microsoft or third-party Microsoft partners. In order to customize metadata and source code of a model, the developer must create a new model that overlays the model they want to customize. For example, solution developers can provide code in the SLN layer, independent software vendors can use the ISV layer, and value-added resellers can use the VAR layer. Functionality defined in higher layers (VAR layer in this example) can override the functionality of lower layers. The overlaying model must belong to the same **Package** as the source model and belong to a layer that is higher than the source model. Overlayering is a powerful tool to perform advanced customizations of metadata and source code, but may increase the cost of upgrading a solution to a new version. Click on this [link](https://mix.office.com/watch/1ol6ov90jrd4w) to open an Office Mix that provides a good introduction on how to customize model elements.
 
 ## Extensions
-You can customize an application by using *extensions*. An extension enables you to add functionality to existing code. Extensions provide the following capabilities:
+You can customize an application by using *extensions*. An extension enables you to add functionality to existing model elements and source code. Extensions provide the following capabilities:
 
 -   Creating new model elements.
 -   Extending existing model elements.
+-   Extending source code using class extensions.
 -   Customizing business logic. Ways to customize business logic include:
     -   Creating event handlers to respond to framework events, such as data events.
     -   Creating event handlers to respond to event delegates that are defined by the application.
@@ -71,11 +72,11 @@ The following diagram illustrates how extensions get isolated in their assemblie
 ![media/ax7customization1.png](media/ax7customization1.png)
 
 ## Code extensions
-You can extend code in two ways:
+You can extend source code in 3 ways:
 
 -   By subscribing to events (framework events and delegates)
 -   By writing plug-ins.
--   By creating class extensions.
+-   By creating class extensions (aka class Augmentation), see section below.
 
 You should understand the following characteristics of framework events:
 
@@ -155,7 +156,9 @@ Other ways to customize a form, such as reordering controls in the form or subsc
 You can use class extensions to author X++Â logic associated with form extensions. This allows the definition of state variables accessible to form and control event handlers. It also allows overriding form methods without overlayering code. Refer to [this](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/10/11/code-behind-extension-forms-how-to-add-state-variable-and-override-methods-without-overlayering) blog article for an example.
 
 ## Table extensions
-You can create a table extension to extend a table's design and logic. You can add new fields, field groups, indexes, mappings and relations. You can also add new fields to existing field groups, change the label of a table field, change the Created By, Created Date Time, Modified By, Modified Date Time properties. In Microsoft Dynamics AX 2012, you could override the virtual methods of a table's base class to control the behavior that occurred during table operations, such as when creating, reading, updating, or deleting. In the current version, you instead use extensions to implement event handlers that are called from the base implementations of the table methods. The following table lists each table method and its events.
+You can create a table extension to extend a table's design and logic. You can add new fields, field groups, indexes, mappings and relations. You can also add new fields to existing field groups, change the label of a table field, change the Created By, Created Date Time, Modified By, Modified Date Time properties. Using table extensions, you can also change the Extended Data Type property on fields and set it to an EDT that is derived from the current EDT (*This is available as of platform update 8*).
+
+In Microsoft Dynamics AX 2012, you could override the virtual methods of a table's base class to control the behavior that occurred during table operations, such as when creating, reading, updating, or deleting. In the current version, you instead use extensions to implement event handlers that are called from the base implementations of the table methods. The following table lists each table method and its events.
 
 |**Published Table method**|**Preceding event**|**Succeeding event**|
 |---|---|---|
