@@ -61,8 +61,7 @@ From working with a number of ISVs we have found the following categories a good
 
 | Category       | Description          |
 |---------------- |:-------------|
-| Extensible enums     | When you add values to an enumerable, where this is only possible by overlayering, and also with overlayer of methods throughout the application to account for the new value - Microsoft plan to make requested enums extensible and refactor (adding
-extension points) to the impacted methods.|
+| Extensible enums     | When you add values to an enumerable, where this is only possible by overlayering, and also with overlayer of methods throughout the application to account for the new value - Microsoft plan to make requested enums extensible and refactor (adding extension points) to the impacted methods.|
 | Construct with throw| Most construct methods are simple, and can be extended using post event handlers. However, some construct methods are more complicated and throws an exception when no class is created. |
 | Exposing members | Member variables defined with access modifiers private are not accessible through extensions, unless they become exposed through public methods. Requests access to members through extensions that current have not been exposed for this. Notice access to protected members will generally be enabled through extension classes |
 | Data manipulation methods that does not raise DataEvents| Some places in the application where data methods like insert() / update() does not call super() and as such does not raise DataEvent to add extensions to. Microsoft to refactor the standard application to include additional methods that enable extensions in these places. When creating requests for this, please add any of these impacted methods that you need to overlayer today, if not already accounted for. |
