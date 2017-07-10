@@ -5,7 +5,7 @@ title: Copy Finance and Operations database - Azure SQL to SQL Server
 description: This topic provides information about how to export a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
 author: MargoC
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -47,17 +47,13 @@ Moving a database involves using the sqlpackage.exe command line tool to export
 -   Import the database to SQL Server 2016.
 -   Run a SQL script to update the database.
 
-**Important notes for customers running Retail environments:**
-
--   Developer environments are not supported as a target for Retail.
--   If you want to perform this activity for Retail, contact [Microsoft support for details](../lifecycle-services/lcs-support.md).
 
 ## Prerequisites
 The following prerequisites are required before you can move a database.
 
--   Only a database to which the customer has SQL access to can be copied. If you must copy the production environment then first copy the production environment to the sandbox environment, and work from the sandbox environment.
+-   Only a database to which the customer has SQL access to can be copied. If you must copy the production environment, then first copy the production environment to the sandbox environment, and work from the sandbox environment.
 -   The destination SQL Server environment must be running SQL Server 2016 RTM (13.00.1601.5) or higher. The CTP versions of SQL Server 2016 may cause errors during the import process.
--   To export a database from a sandbox environment you must install the [latest SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) to the AOS machine in that environment and perform the bacpac export on that AOS machine. This is for two reasons. First, there is an IP access restriction on the sandbox SQL Server instance, which only allows a connection from a machine within that environment. Second, the version of SQL Server Management Studio installed by default is for a previous version of SQL Server and can't complete the tasks required.
+-   To export a database from a sandbox environment, you must install the [latest SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) to the AOS machine in that environment and perform the bacpac export on that AOS machine. This is for two reasons. First, there is an IP access restriction on the sandbox SQL Server instance, which only allows a connection from a machine within that environment. Second, the version of SQL Server Management Studio installed by default is for a previous version of SQL Server and can't complete the tasks required.
 
 ## Before you begin
 Encrypted and environment-specific values can't be imported into a new environment. After you've completed the import, you must re-enter some data from your source environment in your target environment.
@@ -72,12 +68,12 @@ Because of a technical limitation that is related to the certificate that is use
 | CreditCardAccountSetup.SecureMerchantProperties          | Click **Accounts receivable** &gt; **Payments setup** &gt; **Payment services**.                                                                                               |
 | ExchangeRateProviderConfigurationDetails.Value           | Click **General ledger** &gt; **Currencies** &gt; **Configure exchange rate providers**.                                                                                       |
 | FiscalEstablishment\_BR.ConsumerEFDocCsc                 | Click **Organization administration** &gt; **Fiscal establishments** &gt; **Fiscal establishments**.                                                                           |
-| FiscalEstablishmentStaging.CSC                           | This field is used by the Data Import/Export Framework                                                                                                                         |
+| FiscalEstablishmentStaging.CSC                           | This field is used by the Data Import/Export Framework.                                                                                                                         |
 | HcmPersonIdentificationNumber.PersonIdentificationNumber | Click **Human resources** &gt; **Workers** &gt; **Workers**. On the **Worker** tab, in the **Personal information** group, click **Identification numbers**.                   |
 | HcmWorkerActionHire.PersonIdentificationNumber           | This field has been obsolete since the February 2016 release. It was previously in the **Human resources** &gt; **Workers** &gt; **Actions** &gt; **All worker actions** form. |
 | SysEmailSMPTPassword.Password                            | Click **System administration** &gt; **Email** &gt; **Email parameters**.                                                                                                      |
 | SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by the AOS. It can be ignored.                                                                                                                   |
-| SysOAuthUserTokens.EncryptedRefr eshToken                | This field is used internally by the AOS. It can be ignored.                                                                                                                   |
+| SysOAuthUserTokens.EncryptedRefreshToken                | This field is used internally by the AOS. It can be ignored.                                                                                                                   |
 
  
 
@@ -85,8 +81,8 @@ Because of a technical limitation that is related to the certificate that is use
 
 The values in the following forms are either environment-specific or encrypted in the database. Therefore, all the imported values will be incorrect.
 
--   Accounts receivable &gt; Payments setup &gt; Payments services
--   Retail and commerce &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Hardware profiles
+-   **Accounts receivable** &gt; **Payments setup** &gt; **Payments services**
+-   **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**
 
 ## Copy the source database
 Because you will need to disable change tracking and delete the users from the database before you can export, you should create a copy of the source Azure SQL database that you will export. Then, you can work with a copy instead of deleting information from the original database. The following SQL statement will create a copy of the database **axdb\_mySourceDatabaseToCopy** called **MyNewCopy**. Edit this script with your own database names.
@@ -98,7 +94,9 @@ Note that this command will execute asynchronously, meaning that it will appear 
     SELECT * FROM sys.dm_database_copies
 
 ## Prepare the copied database
-Run the following script against the copied database to remove change tracking, SQL Database users, and a system view. The script will also correct system flags, remove references to the previous environment, withhold batches, and remove email configuration. These changes are all required to successfully export and import the database and to ensure that when the AOS is started in the target environment, nothing will automatically start running. **Note:** You must update the following ALTER DATABASE command with your database copy name.
+Run the following script against the copied database to remove change tracking, SQL Database users, and a system view. The script will also correct system flags, remove references to the previous environment, withhold batches, and remove email configuration. These changes are all required to successfully export and import the database and to ensure that when the AOS is started in the target environment, nothing will automatically start running. 
+
+**Note:** You must update the following ALTER DATABASE command with your database copy name.
 
     --Prepare a database in SQL Azure for export to SQL Server.
     --Disable change tracking on tables where it is enabled.
@@ -198,7 +196,7 @@ When you import the database, we recommend that you:
 -   Retain a copy of the existing AxDB database, to allow you to revert to it later if needed.
 -   Import the new database with a new name, for example AxDB\_fromProd.
 
-Copy the \*.bacpac file to the local machine from which you will import to ensure the best performane. Open a command prompt as Administrator and run the following commands.
+Copy the \*.bacpac file to the local machine from which you will import to ensure the best performance. Open a command prompt as Administrator and run the following commands.
 
     cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin
 
@@ -208,7 +206,7 @@ The following list provides an explanation of the parameters:
 
 -   tsn (target server name): The name of the SQL Server that you will import to.
 -   tdn (target database name): The name of the database that you will import to. The database should **not** already exist.
--   sf (source file) The path and file name to import from.
+-   sf (source file): The path and file name to import from.
 
 **Note:** During import, the user name and password are not required because SQL Server will default to Windows authentication for the currently logged on user.
 
@@ -245,7 +243,24 @@ Execute the following SQL script against the imported database. This will add ba
 
 ### Reset the Financial Reporting database
 
-If using Financial Reporting (formerly Management Reporter) then follow the steps to reset the financial reporting database in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
+If you're using Financial Reporting (formerly Management Reporter), then follow the steps to reset the financial reporting database in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
+
+### If you're using Retail components
+If you’re using Retail components, you must perform additional steps to re-provision the target environment.
+
+1. Navigate to the Shared asset library.
+2. Select **Software deployable package**.
+3. Download the Environment reprovisioning tool.
+4. Navigate to the asset library for your project 
+5. Select **Software deployable package** and select **New** to create a new package.
+6. Specify a name and description. You can use "Environment reprovisioning tool" for the package name.
+7. Upload the previously downloaded package.
+8. Navigate to the **Environment details** page for your target environment
+9. Select **Maintain** > **Apply updates**.
+10. Select the Environment reprovisioning tool that you previously uploaded and click **Apply** to apply the package.
+11. Monitor the progress of the package deployment. 
+
+Learn more about how to apply a deployable package in the [Apply a deployable package](../deployment/create-apply-deployable-package.md) topic. Learn how to apply a deployable package manually in the [Install a deployable package](../deployment/install-deployable-package.md) topic.
 
 ## Start using the new database
 To switch the environment and use the new database, stop the services in the following list, rename the AxDB database to AxDB\_orig, and then rename your newly imported database AxDB. Restart the services in the following list:
@@ -265,12 +280,12 @@ In the Finance and Operations client, enter the values that you documented for t
 | CreditCardAccountSetup.SecureMerchantProperties          | Click **Accounts receivable** &gt; **Payments setup** &gt; **Payment services**.                                                                                               |
 | ExchangeRateProviderConfigurationDetails.Value           | Click **General ledger** &gt; **Currencies** &gt; **Configure exchange rate providers**.                                                                                       |
 | FiscalEstablishment\_BR.ConsumerEFDocCsc                 | Click **Organization administration** &gt; **Fiscal establishments** &gt; **Fiscal establishments**.                                                                           |
-| FiscalEstablishmentStaging.CSC                           | This field is used by the Data Import/Export Framework                                                                                                                         |
+| FiscalEstablishmentStaging.CSC                           | This field is used by the Data Import/Export Framework.                                                                                                                         |
 | HcmPersonIdentificationNumber.PersonIdentificationNumber | Click **Human resources** &gt; **Workers** &gt; **Workers**. On the **Worker** tab, in the **Personal information** group, click **Identification numbers**.                   |
 | HcmWorkerActionHire.PersonIdentificationNumber           | This field has been obsolete since the February 2016 release. It was previously in the **Human resources** &gt; **Workers** &gt; **Actions** &gt; **All worker actions** form. |
 | SysEmailSMPTPassword.Password                            | Click **System administration** &gt; **Email** &gt; **Email parameters**.                                                                                                      |
 | SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by the AOS. It can be ignored.                                                                                                                   |
-| SysOAuthUserTokens.EncryptedRefr eshToken                | This field is used internally by the AOS. It can be ignored.                                                                                                                   |
+| SysOAuthUserTokens.EncryptedRefreshToken                | This field is used internally by the AOS. It can be ignored.                                                                                                                   |
 
 ## Known issues
 ### Cannot drop users in source database
@@ -281,7 +296,11 @@ When dropping users in the source database, the user **axdbadmin** or **axdeploy
 
 ### Can't download SQL Server Management Studio installation files
 
-When you attempt to download the SQL Management Studio install, you might receive the following error. [![SecuritySettingsCannotDownload](./media/securitysettingscannotdownload.png)](./media/securitysettingscannotdownload.png)         To work around this issue, enable file download for the **Internet Zone**, on the **Security** tab in **Internet Options** as shown below. [![SecuritySettingsFix](./media/securitysettingsfix.png)](./media/securitysettingsfix.png)
+When you attempt to download the SQL Management Studio install, you might receive the following error: 
+> *"Your current security settings do not allow this file to be downloaded."*      
+
+To work around this issue, enable file download for the **Internet Zone**, on the **Security** tab in **Internet Options**, as shown below. 
+[![SecuritySettingsFix](./media/securitysettingsfix.png)](./media/securitysettingsfix.png)
 
 ### Database synchronization fails
 
@@ -310,7 +329,3 @@ Refer to the following guidelines for optimal performance:
 -   On a Dynamics 365 for Finance and Operations one-box environment, also known as a tier 1 environment, which is hosted in Azure, place the bacpac file on the D: drive when importing for increased performance. Read more about the temporary drive in Azure machines in the blog post [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 -   Grant the account running the SQL Server Windows service the [Instance File Initialization](https://msdn.microsoft.com/en-us/library/ms175935.aspx) rights. This can speed up the import process and improve the speed of restore from a \*.bak file. A simple way to do this in a Developer environment is to set SQL Server to run as the axlocaladmin account.
 -   From SQL Azure, do not select Export data tier application in SQL Server Management Studio because there can be a memory limitation for larger databases.
-
-
-
-
