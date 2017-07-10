@@ -20,13 +20,15 @@ ms.technology:
 
 Reducing implementation and upgrade effort is a major initiative for the Microsoft Dynamics 365 for Operations development team. The benefits of this initiative are to enable customers to quickly take advantage of new innovations from Microsoft and their partners, reduce the total cost of ownership, and improve quality.
 
-One of the major costs of upgrades is moving customizations forward to the next release. Customizations that were done using the overlayering capabilities in Dynamics 365 for Operations require code upgrade, re-compile time, and extensive testing. Oftentimes customers end up stranded on old release because of the high cost of moving their overlayered code forward.
+A major part of this initiative is to change the customization approach for the product.  In AX 2012, several extension capabilities were added to the product.  For example, the ability to do event based customization using method pre and post events was introduced.  Extension capabilities have continued to grow in the product in the evolution to Dynamics 365 for Operations.  
 
-There are also costs required for manually applying hot fixes. The ability to seamlessly apply hot fixes in a binary format is something we’re striving for in the future.
+Extension based customizations have several advantages over the legacy approach of overlayer based customizations, especially when it comes to reducing implementation and upgrade effort.  Overlayer based customizations require code upgrade, re-compile time, and extensive testing.  This limits our ability to seamlessly apply hot fixes.  These costs can be an inhibitor for customers to upgrade to newer versions containing innovations from Microsoft and partners.  
 
-There’s also the ‘version hell’ that partners constantly battle.  Reducing the size of the support matrix driven by combinations of Microsoft product versions and partner solution versions would be a significant benefit.  Supporting many code branches is a large tax on any engineering team.
+Extension based customizations also improve the development experience.  Models containing overlayered customizations must be in the same package as the base objects.  This results in longer compile cycles and much larger package distributions.  Extensions are also much easier to unit test in isolation from the base object.  
 
-One solution that addresses many of these challenges is to move away from the intrusive customization approach of overlayering, and use the extension capabilities in Dynamics 365 for Operations. The product platform models, AppPlatform and AppFoundation, already require the use of extensions for customizations as they were sealed for overlayering in Fall 2016 in platform update 3. 
+Finally, reducing upgrade costs through extension based customizations reduces the support matrix for partners as fewer release combinations will need to be supported.
+
+All of these reasons were behind our decision to require the product platform models, AppPlatform and AppFoundation, to use extension based customizations. These models were sealed for overlayering in platform update 3 delivered in Fall 2016.  This has enabled us to provide binary updates to these models on a monthly basis, achieving our goals of reducing upgrade cost and delivering innovation to our customers at a faster cadence. 
 
 At the Dynamics 365 Technical Conference held on March 13-15, 2017, we announced the next steps in this journey, which is to move from overlayering to extensions. The current roadmap for the journey is shown below.
 
