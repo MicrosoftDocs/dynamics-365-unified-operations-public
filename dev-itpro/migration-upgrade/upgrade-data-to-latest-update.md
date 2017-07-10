@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 1
 
 
 This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations database to the latest update. 
-Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the Production and Sandbox environments. You can contact them using an **Upgrade** request in Lifecycle services which you submit using the **Maintain** button on the Environment details page for the environment you wish to update.
+Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the production and sandbox environments. You can contact them using an **Upgrade** request in Microsoft Dynamics Lifecycle Services (LCS), which you submit using the **Maintain** button on the **Environment details** page for the environment that you want to update.
 
 This topic describes how to upgrade an older source database to the latest Finance and Operations update. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md). 
 
@@ -45,7 +45,7 @@ This topic describes how to upgrade an older source database to the latest Fina
 
 ## Before you begin
 1.  You must have a functional one-box demo or development environment that is already successfully running with the latest Finance and Operations update.
-2.  If upgrading from the Dynamics AX February 2016 release (also known as RTW) and are upgrading to the May 2016 release, then the following hotfixes must be installed. These fixes must be installed in the destination environment. If you are upgrading to a newer version than the May 2016 release, you **do not** need these fixes, they are already included.
+2.  If you are upgrading from the Dynamics AX February 2016 release (also known as RTW) and upgrading to the May 2016 release, then the following hotfixes must be installed. These fixes must be installed in the destination environment. If you are upgrading to a newer version than the May 2016 release, you **do not** need these fixes, they are already included.
     -   Hotfix KB number 3170386, "Upgrade script error: ReleaseUpdateDB70\_DMF. updateIntegrationActivityExecutionMessageIdPreSync".
     -   Hotfix KB number 3180871, "Data upgrade from RTW to Update 1 causes errors when synchronizing views involving disabled configuration keys". This is a binary hotfix which will cause the database synchronize process to fail.
 
@@ -84,17 +84,17 @@ This topic describes how to upgrade an older source database to the latest Fina
 
 4.  If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required because the demo data contains bad records for some kernel X++ classes.
 
-        delete from classidtable where id >= 0xf000 and id <= 0xffff
+> *delete from classidtable where id >= 0xf000 and id <= 0xffff*
 
 ## Download the MinorVersionDataUpgrade.zip script
-To obtain the latest MinorVersionDataUpgrade.zip package from your target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS).
+To obtain the latest MinorVersionDataUpgrade.zip package from your target environment that is running the latest Finance and Operations update, download the latest binary updates from Lifecycle Services (LCS).
 > [!NOTE]
-> In earlier versions (prior to Platform update 4) the package was named DataUpgrade.zip. 
+> In earlier versions (prior to Platform update 4), the package was named DataUpgrade.zip. 
 
 1.  In LCS, in the **Environments** section, click your target Finance and Operations environment, scroll to the bottom of the page, and then click the **All binary updates** tile. 
 
 > [!NOTE]
-> If the All binary updates tile shows zero updates available then use the MinorVersionDataUpgrade.zip from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 with platform update 3 and the All binary updates tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library. When using this package from the shared asset library, the path required in step 3 below changes to ..\\AOSService\\Packages\\files\\dynamicsax-framework-bin.7.0.4307.16141.zip\\CustomDeployablePackage
+> If the All binary updates tile shows zero updates available then use the MinorVersionDataUpgrade.zip from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 with platform update 3 and the **All binary updates** tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library. When using this package from the shared asset library, the path required in step 3 below changes to ..\\AOSService\\Packages\\files\\dynamicsax-framework-bin.7.0.4307.16141.zip\\CustomDeployablePackage
 
 2.  On the **Add hotfixes** page, click **Select all**, click **Add**, and then click **Download package**.
 3.  On the next page, click **Download**.
@@ -107,18 +107,18 @@ To obtain the latest MinorVersionDataUpgrade.zip package from your target enviro
 1.  Extract the MinorVersionDataUpgrade.zip deployable package to C:\\Temp or a location of your choice.
 2.  Open the following file in a text editor: C:\\Temp\\DataUpgrade\\RotateConfigData\\ServicingRotations.json file. Modify the file as shown here, and save it. This step is required only for one-box environments. Because you're removing the need for encryption certificate rotations, old data in encrypted fields in your database will no longer be readable. This is a technical limitation for a one-box data upgrade. New data that goes into those fields after the upgrade is completed is unaffected. For details about the affected fields, see the ["Encrypted fields in demo data"](#encrypted-fields-in-demo-data) section later in this topic.
 
-        {
-             "AosService": {
-                               "EncryptionThumbprint": null,
-                               "SigningThumbprint": null,
-                               "Certificates": [
-                                               ],
-                               "CertificateThumbprints": [
-                                              ],
-                               "KeyValues": [
-                                              ]
-                           }
-        }
+>       {
+>             "AosService": {
+>                              "EncryptionThumbprint": null,
+>                              "SigningThumbprint": null,
+>                              "Certificates": [
+>                                               ],
+>                               "CertificateThumbprints": [
+>                                              ],
+>                               "KeyValues": [
+>                                              ]
+>                           }
+>        }
 
 3.  Run the Windows PowerShell Integrated Scripting Environment (ISE) as an administrator.
 4.  Open C:\\Temp\\DataUpgrade\\RotateConfigData\\Scripts\\EncryptRotationConfigData.ps1.
@@ -131,12 +131,12 @@ This step is required if you're upgrading a database from the February 2016 rele
 1.  Open the following file in a text editor: C:\\Temp\\DataUpgrade\\AOSService\\Scripts\\AutoDataUpgradePreReqs.ps1.
 2.  Comment out or remove the following line.
 
-        Invoke-SQL -sqlCommand:$adjustsqlseq
+>        Invoke-SQL -sqlCommand:$adjustsqlseq
 
 3.  Save the file.
 
 ## Upgrade the database
-1.  Install the deployable package from the C:\\Temp\\DataUpgrade folder (the location you extracted to earlier). Use the instructions in [Install a deployable package](../deployment/install-deployable-package.md).
+1.  Install the deployable package from the C:\\Temp\\DataUpgrade folder (the location that you extracted to earlier). Use the instructions in [Install a deployable package](../deployment/install-deployable-package.md).
 2.  Restore a backup of the source database to your one-box demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. **Note:** For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For details about how to download and use AzCopy to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
 3.  Run the runbook file until Step 4: GlobalBackup.
 4.  Rename the existing Update 1 database, and replace it with the source database that you want to upgrade.
@@ -145,18 +145,20 @@ This step is required if you're upgrading a database from the February 2016 rele
         ALTER DATABASE <Source_AX_DATABASENAME> MODIFY NAME = <Update1_AX_DATABASENAME>
 
 5.  Create a backup of the source database, in case you need to revert to it, because the following steps will modify the source database.
-6.  Mark step 4 of the runbook as completed, and continue to run the runbook until it's completed. **Notes:**
+6.  Mark step 4 of the runbook as completed, and continue to run the runbook until it's completed. 
+
+**Notes:**
     -   The steps after step 4 of the runbook run the upgrade scripts.
     -   If there is data in any staging tables that is used by data management, this step fails, and you receive the following error message.
 
         > Staging tables should be empty in order to proceed with the data upgrade. Please run the DeleteScriptForStagingTables.sql by carefully reviewing the script in order to remove the data from the staging tables.
 
-        In this case, run DeleteScriptForStagingTables.sql to clean up the staging tables. You can find this script under AOSServiceScripts in your data upgrade folder. After the script has finished running, rerun this step.
+        In this case, run DeleteScriptForStagingTables.sql to clean up the staging tables. You can find this script under AOSServiceScripts in your data upgrade folder. After the script has finished running, re-run this step.
 
 ## Troubleshoot upgrade script errors
 ### How to re-run the runbook after a data upgrade script failure
 
-A data upgrade deployable package allows more granular re-running than a typical deployable package. The step at which the data upgrade scripts begin executing is Step 5. If you experience a failure during Step 5, check the output in the command window to identify which sub-step you reached – for example it may be 5.3, the issue the command follows to re-run from that sub-step. This is to allow you to keep re-running a particular failing script during debugging, without having to re-run the entire data upgrade piece (including database synchronization).
+A data upgrade deployable package allows more granular re-running than a typical deployable package. The step at which the data upgrade scripts begin executing is Step 5. If you experience a failure during Step 5, check the output in the command window to identify which sub-step you reached. For example it may be 5.3, the issue the command follows to re-run from that sub-step. This is to allow you to keep re-running a particular failing script during debugging, without having to re-run the entire data upgrade piece (including database synchronization).
 
     AXUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=5.3
 
@@ -181,7 +183,7 @@ Then re-run the failed runbook step so that scripts will be ignored. The field *
 
 ### How to monitor duration of executed scripts
 
-Each successfully executed script records the amount of time that it took to process in minutes in the **ReleaseUpdateScriptsLog.DurationMins** column. This is intended as a simple way to identify the longest running scripts when working on performance tuning the data upgrade process. It is important to understand that the timing is the duration each script takes to run, however multiple scripts will run in parallel, so the sum of the **DurationMins** column is greater than the overall duration of the upgrade process.
+Each successfully executed script records the amount of time that it took to process (in minutes) in the **ReleaseUpdateScriptsLog.DurationMins** column. This is intended as a simple way to identify the longest running scripts when working on performance tuning the data upgrade process. It is important to understand that the timing is the duration each script takes to run, however multiple scripts will run in parallel, so the sum of the **DurationMins** column is greater than the overall duration of the upgrade process.
 
 ## Known issues
 ### Duplicate key was found for the object name 'dbo.RESOURCESETUP' 
@@ -189,7 +191,8 @@ When upgrading a database, you may experience the following error during the dat
 
 > Database execution failed: The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.RESOURCESETUP' and the index name 'I_6716AK'
 
-This is a known issue that will be resolved in a future hotfix. The workaround is to delete the duplicate rows from this table by executing the following SQL script against the database from SQL Server Management Studio:
+
+This is a known issue that will be resolved in a future hotfix. The workaround is to delete the duplicate rows from this table by executing the following SQL script against the database from SQL Server Management Studio.
 
     delete RS from ResourceSetup as RS
     join ResResourceIdentifier as RRI on RRI.RecId = RS.Resource_
@@ -203,7 +206,8 @@ When upgrading a database, you may experience the following error during the dat
 
 >  Cannot select a record in Dimension hierarchy nodes (CAMDataDimensionHierarchyNode). Dimension hierarchy: 0. The SQL database has issued an error. Object Server DynamicsAXBatchManagement:  [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Invalid column name 'RELATIONTYPE'. 
 
-This is a known issue that will be resolved in a future release. The workaround is to create a missing field in several tables by executing the following SQL script against the database from SQL Server Management Studio:
+
+This is a known issue that will be resolved in a future release. The workaround is to create a missing field in several tables by executing the following SQL script against the database from SQL Server Management Studio.
 
     SET ANSI_NULLS ON
     GO
@@ -284,6 +288,7 @@ When upgrading a database, you may experience the following error during the dat
 
 > Cannot create index on InventDistinctProduct a duplicate key exists on column Product.
 
+
 This is a known issue that will be resolved in a future release. The workaround is to delete all records in the **InventDistinctProduct** table and then resume the runbook from the current step. The records contained in this table are disposable and will be regenerated either the first time Microsoft Dynamics 365 for Finance and Operations is launched, when an item is created, or when MRP is run. To drop all records in **InventDistinctProduct**, execute the following query against the current database from SQL Management Studio.
 
     truncate table InventDistinctProduct
@@ -312,7 +317,7 @@ Alternatively, you can go to the original environment the data came from (such a
 
 ### Error: The interpreter evaluation stack has grown during a call to the kernel
 
-This error can occur if you have enabled database logging on a kernel table such as UserInfo. The solution is to review the database log setup in **System administration** &gt; **Setup** &gt; ?**Database log setup** and remove records for kernel tables as necessary. The full error is as follows.
+This error can occur if you have enabled database logging on a kernel table such as UserInfo. The solution is to review the database log setup in **System administration** &gt; **Setup** &gt; **Database log setup** and remove records for kernel tables as necessary. The full error is as follows.
 
     Executing step: 5.1
     prereq for data upgrade
