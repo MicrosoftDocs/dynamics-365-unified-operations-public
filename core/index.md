@@ -94,7 +94,7 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 <ul style="list-style-type:none"><p><a href="../dev-itpro/data-entities/data-entities">Data entities</a></p>
 <p><a href="../dev-itpro/office-integration/office-integration">Office integration</a></p></ul></p>
 
-<h3>Administrator functionality<h3>
+<h3>Administrator functionality</h3>
 <p><a href="../fin-and-ops/get-started/onboarding-home">Onboarding your organization</a></p>
 <p><a href="../dev-itpro/deployment/deploy-demo-environment">Deployment and servicing</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page">Upgrade</a></p>
