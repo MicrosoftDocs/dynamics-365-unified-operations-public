@@ -551,7 +551,10 @@ This is the result of the adjusted format execution. <a href="./media/ger-splitl
 <tr class="even">
 <td>FORMAT (string 1, string 2[, string 3, ...])</td>
 <td>Return the specified string, which is formatted by substituting any occurrences of <strong>%N</strong> with the <em>n</em>th argument. The arguments are strings. If an argument isn't provided for a parameter, the parameter is returned as <strong>&quot;%N&quot;</strong> in the string. For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</td>
-<td>In this example, the <strong>PaymentModel</strong> data source returns the list of customer records via the <strong>Customer</strong> component and the processing date value via the <strong>ProcessingDate</strong> field. <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> In the ER format that is designed to generate an electronic file for selected customers, <strong>PaymentModel</strong> is selected as a data source and controls the process flow. An exception is thrown for end users when a selected customer is stopped for the date when the report is processed. The formula that is designed for this type of processing control can use the following resources:
+<td>In this example, the <strong>PaymentModel</strong> data source returns the list of customer records via the <strong>Customer</strong> component and the processing date value via the <strong>ProcessingDate</strong> field. 
+<a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> 
+
+In the ER format that is designed to generate an electronic file for selected customers, <strong>PaymentModel</strong> is selected as a data source and controls the process flow. An exception is thrown for end users when a selected customer is stopped for the date when the report is processed. The formula that is designed for this type of processing control can use the following resources:
 <ul>
 <li>Finance and Operations label SYS70894, which has the following text:
 <ul>
