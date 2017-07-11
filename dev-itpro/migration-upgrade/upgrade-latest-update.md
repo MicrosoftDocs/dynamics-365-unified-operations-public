@@ -136,7 +136,7 @@ Execute the data upgrade process on a copy of your target database – if your e
  > A longer downtime of minimum 16 hours is required if using Retail features, as additional upgrade steps are needed.
 - If an error causes the upgrade process to stop, DSE will roll the environment back to its original state. The issue that caused the failure can then be resolved, and the upgrade can be rescheduled at a new time.
 
-![Upgrade request](./media/Upgrade-Request.PNG)
+![Upgrade request](./media/Upgrade-Request-2.png)
 
 2.  Validate. The updated environment will have the same URL, same environment name, and same machine names as the former environment.
 3.  When validation is completed successfully, notify the DSE via the LCS ticket and the DSE will retire your old environment.
