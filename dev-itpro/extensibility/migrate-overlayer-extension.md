@@ -31,21 +31,32 @@ ms.dyn365.ops.version: Platform update 9
 
 # Migrate from overlayering to extensions
 
-When Dynamics 365 for Operations was first released we from Microsoft encouraged strongly that development was made by extensions rather than through overlaying code.
+# Introduction
 
-Customization done through overlaying code have been migrated from release to release through code migrations, and still today there is a lot of customization of application code that is based on overlaying of code.
+When Dynamics 365 for Finance and Operations, Enterprise Edition was first released we strongly encouraged strongly extensions over overlayering for customization. Overlayering-based customizations have been migrated from release to release through code migrations, and still today there is a lot of customization of application code that is based on overlaying of code. Most partners will have at least some of their solution that is still based on overlaying, and some will have a lot of overlaying across their solutions.
 
-Most partners will have at least some of their solution that is still based on overlaying, and some will have a lot of overlaying across their solutions.
+The work involved in changing an implementation from overlayered code to extensions depends on the specific code. Some overlayered code can be changed quite seamlessly while some changes require rethinking the customization to find a suitable way of accomplishing this through extension. This can amount to quite an undertaking to change complete solutions that consist of multiple places of overlayered code. This means an investment in the solution. The upside of making this investment is a more seamless upgrade process as customization now has become API based through extensions - and there is no longer a need for going through long and tiresome code upgrade as it used to with overlayered code. More importantly though are daily servicing of running environment that offer immense benefits. The core application and extensions no longer require to be compiled together, and patching can be done through deploying precompiled assemblies. This help customers quite seamlessly in applying patches to their system, and minimize the downtime otherwise experienced. Still there is work that initially must be done before this can be achieved.
 
-The work involved in changing an implementation from overlayered code to code based on extensions depend much on the specific code. Some overlayered code can be changed quite seamlessly while some of this require rethinking the customization to find a suitable way of accomplishing this through extension.
+While there are multiple ways to approach this effort, we from Microsoft have been collecting some experience through working closely with some ISVs and VARs that have started on this journey. This topic seeks to share some of the experience collected across these partners.
 
-This can amount to quite an undertaking to change complete solutions that consist of multiple places of overlayered code. This means an investment in the solution. The upside of making this investment is a more seamless upgrade process as customization now has become API based through extensions - and there is no longer a need for going through long and tiresome code upgrade as it used to
-with overlayered code. More importantly though are daily servicing of running environment that offer immense benefits. The core application and extensions no longer require to be compiled together, and patching can be done through deploying precompiled assemblies. This help customers quite seamlessly in applying patches to their system, and minimize the downtime otherwise
-experienced. Still there is work that initially must be done before this can be achieved.
+## First things first! 
 
-This lead to think "How do I approach this?"
+The task ahead is substantial and we want to be sure our shared investment pays dividends. Keep the goal in mind as you work through your customizations. When done correctly, your solution has these qualities:
++ Has no intrusive customizations
++ Supports side-by-side deployment with other ISV solutions.
++ Is resilient to changes in Microsoft code.
++ Is resilient to changes in other ISV solutions.
++ Can be upgraded automatically to future versions.
 
-While there are multiple ways this can be approach, we from Microsoft have been collecting some experience through working closely with some ISVs and VARs that have started on this journey. This topic seeks to share some of the experience collected across these partners.
+This is a fundamental shift of approach! Previously the primary objective was to get the functional requirements implemented on the current version. This was ok, as we knew manual work was required to upgrade the solution. Previously; great engineers *minimized*  the manual upgrade cost. **Now; every engineer must implement solutions requiring zero effort to upgrade.**
+
+## Staying on the right path
+
+Cars are designed to be safe; however they cannot (yet) prevent accidents - that remains the driver's responsibility. Similarly; the development tool set is designed for extensibility. However; the tool set cannot (yet) prevent every type of intrusive customizations.  As an engineer it is your responsibility to avoid intrusive customizations. 
+
+There will be cases where you can only reach your functional goal by implementing intrusive customizations. If you find yourself in that unfortunate situation, the right action would be to reach out to Microsoft to find a proper solution. You should not force your way ahead. The consequences could be customers realizing your solution is not future proof after all - for example due to an outage of their service after an automated upgrade. 
+
+"Being future-proof" as a competitive advantage, it is worth the extra effort to get right.
 
 # Obtaining an overview
 
