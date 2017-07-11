@@ -17,7 +17,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 # ms.reviewer: sericks
-# ms.search.scope: Operations Platform 
+ms.search.scope:  Operations, UnifiedOperations, Platform 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -30,9 +30,6 @@ ms.dyn365.ops.version: Platform update 8
 # Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)
 
 [!include[banner](../includes/banner.md)]
-
-> [!IMPORTANT]
-> The Licensing guide and Provisioning guide for the on-premises version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition have not yet been released. We will update this topic when they are available. 
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) offers a variety of license types to best suit the needs of your organization. To better understand how Finance and Operations (on-premises) is licensed, please work with your partner, who can access the [Licensing guide](https://go.microsoft.com/fwlink/?linkid=852079) on PartnerSource. When you are ready to purchase licenses for your organization, work with your partner to follow the steps outlined in this topic.
 

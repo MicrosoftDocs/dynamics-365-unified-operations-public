@@ -18,7 +18,7 @@ ms.search.form: ERSolutionTable, ERWorkspace, ERSolutionRepositoryTable, ERSolut
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: Operations
+ms.search.scope: Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 27621
 ms.assetid: 

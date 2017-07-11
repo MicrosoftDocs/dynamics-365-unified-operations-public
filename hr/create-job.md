@@ -18,7 +18,8 @@ ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Operations, Core
+
+ms.search.scope: Core, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
@@ -33,6 +34,8 @@ ms.dyn365.ops.version: Version 1611
 # Setting up the components of a job
 
 [!include[banner](includes/banner.md)]
+
+[!include[retail name](includes/retail-name.md)]
 
 
 This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 

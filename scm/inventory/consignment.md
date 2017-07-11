@@ -18,7 +18,7 @@ ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductRec
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2084
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 220834
 ms.assetid: 3c9d6de4-45d4-459a-aef7-0d9ad2c22b3a

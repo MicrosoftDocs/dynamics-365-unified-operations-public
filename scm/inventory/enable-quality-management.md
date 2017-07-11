@@ -18,7 +18,7 @@ ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQuali
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
@@ -48,7 +48,8 @@ Quality management is flexible and can be implemented in various ways to meet t
 
 -   Automatically start a quality control process, based on predefined criteria (upon warehouse registration of a purchase order from a specific vendor).
 -   Block inventory during inspection to prevent non-approved inventory from being used (full blocking of purchase order quantities).
--   Use item sampling as part of a quality association to define the amount of current physical inventory that must be inspected. Sampling can based on fixed quantities or a percentage.
+-   Use item sampling as part of a quality association to define the amount of current physical inventory that must be inspected. Sampling can be based on fixed quantities or a percentage. 
+-   Create quality orders for partial receipts. To create a quality order that is based on the quantity that is physically received with an order, you must select the **Per updated quantity** check box on the **Item sampling** form. 
 -   Create test types that include minimum, maximum, and target test values, and perform qualitative-versus-quantitative testing that has predefined validation results.
 -   Specify an acceptable quality level (AQL) to control quality measure tolerances.
 -   Specify the resources that an inspection operation requires, such as a test area and test instruments.

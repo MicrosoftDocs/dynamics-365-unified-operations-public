@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: sericks007
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 21881
 ms.assetid: 26793616-9b3f-41f5-8500-6983769c51d8
@@ -50,6 +50,9 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </thead>
 <tbody>
 <tr class="odd">
+<td>Intelligent Data Management Framework (IDMF)</td>
+<td>IDMF is an add-on tool that lets system administrators optimize the performance of Microsoft Dynamics AX installations. IDMF assesses the health of the application, analyzes current usage patterns, and helps reduce database size.</td>
+</tr><tr class="odd">
 <td>Alerts</td>
 <td>Implementation of the alerts functionality is planned for a future update. Alerts help users keep track of data changes in the system.</td>
 </tr>
@@ -314,7 +317,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="odd">
 <td>Secure global address book</td>
-<td>Ability to secure global address book by legal entity and address book. This feature will be available in a future update.</td>
+<td>The ability to secure the global address book by legal entity and address book has not yet been implemented. This feature will be available in a future update.</td>
 </tr>
 </tbody>
 </table>

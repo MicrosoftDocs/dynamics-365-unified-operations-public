@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 61
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 189643
 ms.assetid: 11271903-30bc-4d0f-a1da-2a595d973289
@@ -45,7 +45,7 @@ FAQ and guidelines
 - [Developer topology deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
 - [Testing and validations](../perf-test/testing-validation.md)
 - [PERF103: Introduction to the PerfSDK and multiuser testing with Visual Studio Online](../perf-test/perfsdk-tutorial.md)
-- [Integrate the Retail SDK with the continuous build system (VSTS)](/dynamics365/operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build)
+- [Integrate the Retail SDK with the continuous build system (VSTS)](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build)
 ### Advanced topics in build automation
 - [Exclude test packages from the build output](exclude-test-packages.md)
 - [Manage third-party models and runtime packages by using source control](manage-runtime-packages.md)

@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 29251
 ms.assetid: 58fea559-4d50-46f3-9a88-4cca1d882d04
@@ -51,9 +51,9 @@ This pattern didn't exist for Microsoft Dynamics AX 2012.
 ## Model
 ### High-level structure
 
-TabPage
+- TabPage
 
-*ChartPart (FormPart) \[0..N\]*
+    - *ChartPart (FormPart) \[0..N\]*
 
 Each Form Part points to a form that contains a single chart. Each of these forms should use the [Section Chart](section-chart-form-pattern.md) form pattern.
 
@@ -85,6 +85,3 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
-
-
-

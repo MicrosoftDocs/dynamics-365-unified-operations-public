@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 
-ms.search.scope: Operations Platform
+ms.search.scope:  Operations, UnifiedOperations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -43,7 +43,7 @@ Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find suppleme
 Users and developers will see an updated product name ("Microsoft Dynamics 365 for Finance and Operations, Enterprise edition") and product icon in the web client. Some platform components (for example, the developer tools and the mobile application) that are shared by Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 for Talent will now appear as "Dynamics 365 Unified Operations." 
 
 ## Development and customization - Changing the extended data type (EDT) on a table field using table extensions
-Using table extensions, a developer can change the **Extended Data Type** (EDT) property of a table field. Developers can only select EDTs that are derived from the current one. For more information, see [Customize with extensions and overlayering](/dynamics365/operations/dev-itpro/extensibility/customization-overlayering-extensions).
+Using table extensions, a developer can change the **Extended Data Type** (EDT) property of a table field. Developers can only select EDTs that are derived from the current one. For more information, see [Customize with extensions and overlayering](/dynamics365/unified-operations/dev-itpro/extensibility/customization-overlayering-extensions).
 
 ## Development and customization - Compliance properties on table fields
 A new property named General Data Protection Regulation (GDPR) is now available on table fields for the developer to set. It is used to classify the data field for compliance with GDPR.

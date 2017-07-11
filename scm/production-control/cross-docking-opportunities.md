@@ -18,7 +18,7 @@ ms.technology:
 # audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-# ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
@@ -128,6 +128,5 @@ After a product is reported as finished at the production line it is transferred
 ### Additional information
 
 -   The cross docking scenario is supported for batch and serial controlled items, both with the batch and serial number dimensions defined above and below location in the reservation hierarchy.
--   The quantity that is being reported as finished cannot be split to a transfer order demand that is lower. For example, if 20 pieces is being reported as finished and a transfer order exist for 5 pieces, then the transfer order will not be found applicable for cross docking.
 
 

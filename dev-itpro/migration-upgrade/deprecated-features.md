@@ -5,7 +5,7 @@ title: Deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: sericks007
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
@@ -34,13 +34,12 @@ ms.dyn365.ops.version: Platform update 6
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that have been removed, or that are planned for removal.
+This topic describes features that have been removed, or that are planned for removal from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-## Features that have been deprecated in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update with Platform update 8
+## Features that have been deprecated for all deployment types of the July 2017 update with Platform update 8
+This list includes features that have been deprecated for both cloud and on-premises deployments.
 
-### Features that have been deprecated for all deployments
-
-#### Warehouse mobile devices portal
+### Warehouse mobile devices portal
 
 Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment. This component is no longer supported in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. A native app that improves the user experience has replaced the functionality of WMDP. 
 
@@ -50,7 +49,7 @@ Warehouse mobile devices portal (WMDP) was a standalone component that was inten
 | **Replaced by another feature?** | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Modules affected**             | Warehouse management, Transportation management |
 
-#### Advanced bank reconciliation matching rule for manual matching
+### Advanced bank reconciliation matching rule for manual matching
 
 A matching rule was used to select and mark a bank document when documents were manually matched in the reconciliation worksheet.
 
@@ -60,7 +59,7 @@ A matching rule was used to select and mark a bank document when documents were 
 | **Replaced by another feature?** | No. Column filtering capabilities should be used to find documents for reconciliation. |
 | **Modules affected**             | Cash and bank management                                                               |
 
-#### Windows 8 tablet app
+### Windows 8 tablet app
 
 The Windows 8 tablet app provided functionality for expense entry and approval.
 
@@ -70,9 +69,9 @@ The Windows 8 tablet app provided functionality for expense entry and approval.
 | **Replaced by another feature?** | No.                                                                                      |
 | **Modules affected**             | Expense management                                                                       |
 
-### Features that have been deprecated for on-premises deployments 
+## Features that have been deprecated for on-premises deployments of the July 2017 update with Platform update 8
 
-#### SSRS Report Viewer control
+### SSRS Report Viewer control
 
 This feature was used to interact with HTML formatted reports in the Finance and Operations
 web client.
@@ -83,7 +82,7 @@ web client.
 | **Replaced by another feature?** | Reports are rendered as PDF documents by the on-premises service. Use extensions to enable embedded drill-thru links in application reports. |
 | **Modules affected**             | All    |
 
-#### Document Routing Agent
+### Document Routing Agent
 
 The Document Routing Agent client is used as a service gateway to connect from the cloud to domain-authenticated network printers.
 

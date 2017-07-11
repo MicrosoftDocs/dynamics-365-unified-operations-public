@@ -49,7 +49,7 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 - [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md)
 
 ## Work in your on-premises deployment
-- [Configure document management](/dynamics365/fin-and-ops/organization-administration/configure-document-management.md)
+- [Configure document management](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management)
 - [Import Electronic reporting configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Document generation, publishing, and printing capabilities in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
 - [Set up technical support](../lifecycle-services/support-experience.md)

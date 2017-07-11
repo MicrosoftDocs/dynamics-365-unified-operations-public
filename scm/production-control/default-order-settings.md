@@ -18,7 +18,9 @@ ms.search.form: InventItemOrderSetup
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2094
-ms.search.scope: Operations, Core
+
+ms.search.scope: Core, Operations, UnifiedOperations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
@@ -33,6 +35,8 @@ ms.dyn365.ops.version: Version 1611
 # Default order settings for dimensions and product variants
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Default order settings in Microsoft Dynamics 365 for Finance and Operations, Enterpise edition define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. Default order settings are used when creating purchase orders, sales orders, transfer orders, inventory journals, and by master planning for generating planned orders. Default order settings can be item specific, site specific, product variant specific, or product dimension specific.

@@ -18,7 +18,9 @@ ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: bis
-ms.search.scope: Operations, Core
+
+ms.search.scope: Core, Operations, UnifiedOperations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 30211
 ms.search.region: Global
@@ -32,6 +34,8 @@ ms.dyn365.ops.version: Version 1611
 # Purchase order approval mobile workspace
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 This topic provides information about the **Purchase order approval** mobile workspace. This workspace lets you view purchase orders and respond to them through actions. For example, you can approve or reject a purchase order.
  

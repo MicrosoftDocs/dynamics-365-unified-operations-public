@@ -18,7 +18,7 @@ ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2094
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
@@ -124,9 +124,13 @@ Overhead costs refer to the ongoing expenses of operating a business. They are t
 -   Taxes
 -   Utilities costs
 
+**Cost distribution**
+
+Cost distribution is used to redistribute cost from one cost object to one or more other cost objects by applying a relevant allocation base. Cost distribution and cost allocation differ in that cost distribution always occurs at the level of the primary cost element of the original cost.
+
 **Cost allocation**
 
-Cost allocation is the process of assigning and allocating costs, based on the root causes of the common costs. You allocate the cost amounts and quantities from one cost object to one or more other cost objects. For example, all facility services costs are allocated to the various departments that use the common office building.
+Allocation is used to allocate the balance of a cost object to other cost objects by applying an allocation base. Finance and Operations supports the reciprocal allocation method. In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized. The system automatically determines the correct order to perform the allocations in. The balance of a cost object is allocated by a single allocation base. Allocations across cost objects dimensions and their respective members are supported. The allocation order is controlled by the cost control unit.
 
 **Cost allocation policy**
 

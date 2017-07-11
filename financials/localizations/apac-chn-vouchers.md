@@ -18,7 +18,7 @@ ms.search.form: LedgerVoucherType_CN, VoucherTypeWizard_CN
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 261454
 ms.assetid: b5a50142-b48c-4b1b-8828-6c436ea91238

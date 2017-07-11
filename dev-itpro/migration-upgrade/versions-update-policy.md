@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 69914
 
@@ -45,7 +45,7 @@ The Modern Lifecycle Policy covers products and services that are serviced and s
 
 The Finance and Operations online service and the Finance and Operations (on-premises) software are covered by the Modern Lifecycle Policy. Licensed customers must stay current with updates to the Finance and Operations online service or the Finance and Operations (on-premises) software in accordance with the following servicing and system requirements:
 
-- Application versions are supported for three years from the initial date of a major release, as specified in Table 1 later in this topic.
+- Starting with the release of Microsoft Dynamics 365 for Operations version 1611, application versions are supported for three years from the initial date of a major release, as specified in Table 1 later in this topic.
 - Platform versions are supported for one year as specified in Table 3 later in this topic. Platform versions maintain backward compatibility. See the support matrix table below for more detail. Critical fixes and non-critical updates are handled in the following way:
 
     - **Critical fixes** – Microsoft may provide a customer with a hotfix for their current platform version of Finance and Operations, or a fix may be provided in the latest platform version of Finance and Operations, at its discretion.
@@ -65,7 +65,7 @@ Before updates are applied to the customer’s production environment, the custo
 
 The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the Finance and Operations (on-premises) software through December 31, 2027, at a minimum, but only if the customer keeps the deployed software current according to this policy.
 
-The Finance and Operations (on-premises) software is licensed and supported under the [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881/modern-lifecycle-policy). This policy requires that the customer maintain Software Assurance (SA) or the Enhancement Plan, and that it deploy updates as noted in Table 2 later in this topic. Customers who want to use the Fixed Support Lifecycle Policy (5+5) must downgrade to Microsoft Dynamics AX 2012 R3. If a customer lapses on SA or the Enhancement Plan, it will be eligible only for the perpetual license rights to AX 2012 R3 and must uninstall the Finance and Operations (on-premises) software.
+The Finance and Operations (on-premises) software is licensed and supported under the [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881/modern-lifecycle-policy). This policy requires that the customer maintain Software Assurance (SA) or the Enhancement Plan, and that it deploy updates as noted later in this topic. Customers who want to use the Fixed Support Lifecycle Policy (5+5) must downgrade to Microsoft Dynamics AX 2012 R3. If a customer lapses on SA or the Enhancement Plan, it will be eligible only for the perpetual license rights to AX 2012 R3 and must uninstall the Finance and Operations (on-premises) software.
 
 The initial release of the Finance and Operations (on-premises) software will be based on Platform update 8 and the July 2017 update of the application.
 
@@ -73,30 +73,33 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 ### Table 1: Application releases
 
-| Release                                                                | Version          | Build number | Availability  | Expiration date | 
-|------------------------------------------------------------------------|------------------|--------------|---------------|-----------------|
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition  | July 2017 update | 7.2.11792.56024| June 2017     | November 2019  | 
-| Microsoft Dynamics 365 for Operations                                  | 1611             | 7.1.1541.3036| November 2016 | November 2019   | 
+| Release          |Major or minor release         | Version          | Build number | Availability  | Expiration date | 
+|------------------|----------------------|------------------|--------------|---------------|-----------------|
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | July 2017 update | 7.2.11792.56024| June 2017     | November 2019  | 
+| Microsoft Dynamics 365 for Operations     | Major release | 1611             | 7.1.1541.3036| November 2016 | November 2019   | 
+| Microsoft Dynamics AX |Minor release  | 7.0.1 | 7.0.1265.23014 | May 2016 | June 2017 |
+| Microsoft Dynamics AX | Major release | 7.0 | 7.0.1265.3015 | February 2016 | June 2017 |
 
 
 ### Table 2: Retail application release
 
 | Release                           | Version          | Build number | Availability | Expiration date | 
 |-----------------------------------|------------------|--------------|--------------|-----------------|
-| Microsoft Dynamics 365 for Retail | July 2017 update | 7.2.11792.56024 | June 2017    | November 2019   |
+| Microsoft Dynamics 365 for Retail | July 2017 update | 7.2.11792.56024 | June 2017    | September 2017   |
 
 ### Table 3: Platform releases
 
 | Release           | Build number   | Availability  | Expiration date   |
 |-------------------|----------------|---------------|-------------------|
-| Platform update 8 | 7.0.4565.16212 | June 2017     | June 30, 2018     |
-| Platform update 7 | 7.0.4542.16189 | May 2017      | May 31, 2018      |
-| Platform update 6 | 7.0.4509.16180 | April 2017    | April 30, 2018    |
-| Platform update 5 | 7.0.4475.16165 | March 2017    | March 31, 2018    |
-| Platform update 4 | 7.0.4425.16161 | February 2017 | February 28, 2018 |
-| Platform update 3 | 7.0.4307.16141 | November 2016 | November 30, 2017 |
-| Platform update 2 | 7.0.4230.16130 | August 2016   | August 31, 2017   | 
-| Platform update 1 | 7.0.4127.16103 | May 2016      | May 31, 2017      | 
+| Platform update 8 | 7.0.4565.16212 | June 2017     | June 2018     |
+| Platform update 7 | 7.0.4542.16189 | May 2017      | May 2018      |
+| Platform update 6 | 7.0.4509.16180 | April 2017    | April 2018    |
+| Platform update 5 | 7.0.4475.16165 | March 2017    | March 2018    |
+| Platform update 4 | 7.0.4425.16161 | February 2017 | February 2018 |
+| Platform update 3 | 7.0.4307.16141 | November 2016 | November 2017 |
+| Platform update 2 | 7.0.4230.16130 | August 2016   | August 2017   | 
+| Platform update 1 | 7.0.4127.16103 | May 2016      | May 2017      | 
+| Platform 7.0      | 7.0.4030.16079 | February 2016 | January 2017  |
 
 ## Dates for Finance and Operations (on-premises) releases
 

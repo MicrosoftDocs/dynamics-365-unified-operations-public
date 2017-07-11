@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations, Platform, AX Platform
+ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 106163
 ms.assetid: 
@@ -73,14 +73,14 @@ Finally, rename the newly restored AX 2012 database **AXDB**.
 
 ### Run the data upgrade
 
-Run the data upgrade deployable package as described in [Upgrade data in development, demo, or sandbox environments](https://docs.microsoft.com/en-gb/dynamics365/operations/dev-itpro/migration-upgrade/upgrade-data-to-latest-update).
+Run the data upgrade deployable package as described in [Upgrade data in development, demo, or sandbox environments](https://docs.microsoft.com/en-gb/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-to-latest-update).
 
 ## Troubleshooting data upgrade script errors
 
 There are options that you let you resume the data upgrade where it last stopped. You can also record any data upgrade script errors with call stacks to a table in the database. For development scenarios, you can skip failed scripts and continue to run the upgrade.
 
-For more details, see the [main data upgrade topic](https://docs.microsoft.com/en-gb/dynamics365/operations/dev-itpro/migration-upgrade/upgrade-data-to-latest-update#troubleshoot-upgrade-script-errors).
+For more details, see the [main data upgrade topic](https://docs.microsoft.com/en-gb/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-to-latest-update#troubleshoot-upgrade-script-errors).
 
 ### Recommendation for the first data upgrade run
 
-When you run the data upgrade against your dataset for the first time, and especially when there many customizations or many custom data upgrade scripts, you might find the [feature to skip failed scripts](https://docs.microsoft.com/en-gb/dynamics365/operations/dev-itpro/migration-upgrade/upgrade-data-to-latest-update) useful. By using this feature, you gain visibility into as many errors as possible in one run. Otherwise, only one critical issue is discovered per run. Be aware that, because dependencies exist between scripts, you might receive errors in related child scripts if you skip the parent script. These errors occur only because the parent wasn’t run correctly. They will be resolved when the issue in the parent script is resolved.
+When you run the data upgrade against your dataset for the first time, and especially when there many customizations or many custom data upgrade scripts, you might find the [feature to skip failed scripts](https://docs.microsoft.com/en-gb/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-to-latest-update) useful. By using this feature, you gain visibility into as many errors as possible in one run. Otherwise, only one critical issue is discovered per run. Be aware that, because dependencies exist between scripts, you might receive errors in related child scripts if you skip the parent script. These errors occur only because the parent wasn’t run correctly. They will be resolved when the issue in the parent script is resolved.

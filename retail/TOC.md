@@ -41,7 +41,7 @@
 
 ## Cost management
 ### Power BI content pack
-#### [Cost management content pack](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Cost management content pack](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/retail/toc.json)
 ### Predetermined cost
 #### [Costing sheet](/dynamics365/unified-operations/supply-chain/cost-management/costing-sheets?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Costing version](/dynamics365/unified-operations/supply-chain/cost-management/costing-versions?toc=/dynamics365/unified-operations/retail/toc.json)
@@ -85,6 +85,65 @@
 #### [Update standard cost in a manufacturing environment](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-manufacturing-environment?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Update standard cost for a new manufactured item](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-new-manufactured-item?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Update standard cost in a non-manufacturing environment](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-non-manufacturing-environment?toc=/dynamics365/unified-operations/retail/toc.json)
+
+## Data management and data entities
+### [Data entities overview](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities?toc=/dynamics365/unified-operations/retail/toc.json)
+### Default data entities
+#### [Data entities report](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-report?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Accounts payable and taxes](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-payable-taxes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Accounts receivable](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-receivable?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Bank](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-bank?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Beginning balances](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-beginning-balances?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Budget planning](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-budget-plan?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Budgeting](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-budgeting?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Costing](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-costing?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Expense management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-expense-management?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Fixed assets](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-fixed-assets?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: General ledger](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-general-ledger?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Global address book](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-global-address-book?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Human resources](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-human-resources?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Inventory management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-inventory-management?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Master planning](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-master-plan?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Procurement and sourcing](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-procurement-sourcing?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Product information management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-product-information-management?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Production control](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-production-control?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Project accounting](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-project-accounting?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Public sector](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-public-sector?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Retail](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-retail?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Sales and marketing execution](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-sales-marketing?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Sales and marketing pre-sales](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-sales-marketing-pre-sales?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: System administration](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-system-administration?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data entities: Workflow](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-workflow?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### Migrating entities
+#### [Configuration data projects](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Configuration data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Copy configuration data between companies](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Best practices for importing vouchers using the General journal entity](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### Creating data entities
+#### [Data entities and packages framework](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Build and consume](/dynamics365/unified-operations/dev-itpro/data-entities/build-consuming-data-entities?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Behavioral properties](/dynamics365/unified-operations/dev-itpro/data-entities/behavioral-properties-data-entities?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Compute columns and virtual fields](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Cross-company behavior](/dynamics365/unified-operations/dev-itpro/data-entities/cross-company-behavior?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Country/region codes and configuration keys](/dynamics365/unified-operations/dev-itpro/data-entities/countryregion-codes-configuration-keys?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Inheritance patterns](/dynamics365/unified-operations/dev-itpro/data-entities/support-super-type-sub-type?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Wizard rules](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-wizard-rules?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Metadata properties](/dynamics365/unified-operations/dev-itpro/data-entities/metadata-properties?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Validations, defaults, and unmapped fields](/dynamics365/unified-operations/dev-itpro/data-entities/validations-defaults-unmapped-fields?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### [Data management and integration using data entities](/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Develop an entity for data migration](/dynamics365/unified-operations/dev-itpro/data-entities/develop-entity-for-data-migration?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Develop composite data entities](/dynamics365/unified-operations/dev-itpro/data-entities/develop-composite-data-entities?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### [OData](/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Recurring integrations](/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### [Security and data entities](/dynamics365/unified-operations/dev-itpro/data-entities/security-data-entities?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Service authentication troubleshooting](/dynamics365/unified-operations/dev-itpro/data-entities/troubleshoot-service-authentication?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Service endpoints](/dynamics365/unified-operations/dev-itpro/data-entities/services-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
+
 
 ## Financial management
 
@@ -264,11 +323,11 @@
 #### [Budget planning integration with other modules](/dynamics365/unified-operations/financials/budgeting/budget-planning-integration-other-modules?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Reporting](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Balance sheet financial reports](/dynamics365/unified-operations/financials/general-ledger/balance-sheet-financial-reports?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Generate a financial report](/dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Generate a financial report](/dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Income statement financial report](/dynamics365/unified-operations/financials/general-ledger/income-statement-financial-report?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Trial balance financial reports](/dynamics365/unified-operations/financials/general-ledger/trial-balance-financial-reports?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [View financial reports](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Report designer](/dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Report designer](/dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ### [Cost accounting](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Terms](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=/dynamics365/unified-operations/retail/toc.json)
@@ -284,8 +343,8 @@
 #### [Access rights of a cost object controller](/dynamics365/unified-operations/financials/cost-accounting/access-rights-cost-object-controller?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Cost control workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Cost control mobile workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Set up security for the Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Set up security for the Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ### [Public sector](/dynamics365/unified-operations/financials/public-sector/public-sector-functionality?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Plan for public sector functionality](/dynamics365/unified-operations/financials/public-sector/plan-public-sector-functionality?toc=/dynamics365/unified-operations/retail/toc.json)
@@ -360,6 +419,7 @@
 ##### [Generate the GST-05 report](/dynamics365/unified-operations/financials/localizations/apac-sgp-generate-gst-05-report?toc=/dynamics365/unified-operations/retail/toc.json)
 #### Thailand
 ##### [Stock card reports](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Substitution/adjustment tax invoice](/dynamics365/unified-operations/financials/localizations/apac-tha-substitution-and-adjustment-invoices?toc=/dynamics365/unified-operations/retail/toc.json)
 ##### [Unrealized VAT](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat?toc=/dynamics365/unified-operations/retail/toc.json)
 ##### [Withholding tax](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax?toc=/dynamics365/unified-operations/retail/toc.json)
 
@@ -526,16 +586,53 @@
 #### [Year-end 1099 reporting for the United States](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Form 1099 for the public sector](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector?toc=/dynamics365/unified-operations/retail/toc.json)
 
-## Human resources
+## [Human resources](/dynamics365/unified-operations/fin-and-ops/hr/hr-landing-page?toc=/dynamics365/unified-operations/retail/toc.json)
+### Develop a human resources strategy
+#### [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Set up job components](/dynamics365/unified-operations/talent/create-job?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Create a department and associate it with the department hierarchy](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Set up HR parameters across legal entities](/dynamics365/unified-operations/talent/set-up-hr-parameters-across-legal-entities?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Set up company-specific HR parameters](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Personnel actions FAQ](/dynamics365/unified-operations/talent/personnel-actions-faq?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Use workflow to manage employee information](/dynamics365/unified-operations/talent/workflow-manage-employee-information?toc=/dynamics365/unified-operations/retail/toc.json)
+
 ### Recruiting
 #### [Manage a recruiting process](/dynamics365/unified-operations/fin-and-ops/hr/manage-recruiting-process?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Mass hire projects](/dynamics365/unified-operations/fin-and-ops/hr/mass-hire-projects?toc=/dynamics365/unified-operations/retail/toc.json)
-### [Payroll, United States](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### Motivate employees
+#### [Compensation plans](/dynamics365/unified-operations/talent/compensation-plans?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Create fixed compensation plans](/dynamics365/unified-operations/talent/create-fixed-compensation-plans?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Create variable compensation plans](/dynamics365/unified-operations/talent/create-variable-compensation-plans?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Process compensation](/dynamics365/unified-operations/talent/process-compensation?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### Develop and train employees
+#### [Performance management overview](/dynamics365/unified-operations/talent/performance-management-overview?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Align workforce skills with business needs](/dynamics365/unified-operations/talent/skills?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Set up training courses](/dynamics365/unified-operations/talent/courses?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### Create and maintain benefits
+#### [Manage a benefits program](/dynamics365/unified-operations/talent/manage-benefit-program?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Benefit eligibility policies](/dynamics365/unified-operations/talent/benefit-eligibility-policies?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Manage items lent to workers](/dynamics365/unified-operations/talent/loan-items?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### Gather information using questionnaires
+#### [Questionnaires](/dynamics365/unified-operations/talent/questionnaires?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Design a questionnaire](/dynamics365/unified-operations/talent/design-questionnaires?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Distribute and complete a questionnaire](/dynamics365/unified-operations/talent/distribute-questionnaires?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Evaluate the results of a questionnaire](/dynamics365/unified-operations/talent/evaluate-questionnaire-results?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### Workplace safety and compliance (United States)
+#### [Form I-9 employment verification](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Comply with the ADA](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### [US Payroll](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll?toc=/dynamics365/unified-operations/retail/toc.json)
 #### Payroll setup
 ##### [Set up payroll for workers](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-worker-position-payroll-tasks?toc=/dynamics365/unified-operations/retail/toc.json)
 ##### [Set up work cycles and work periods](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-work-cycle-work-period-tasks?toc=/dynamics365/unified-operations/retail/toc.json)
 ##### [Set up benefit accrual plans ](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-benefit-accrual-plan-tasks?toc=/dynamics365/unified-operations/retail/toc.json)
 ##### [Set up benefits](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-benefit-set-up-tasks?toc=/dynamics365/unified-operations/retail/toc.json)
+
 #### Frequencies and cycles
 #### [Pay cycle and pay period tasks](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Payroll calculation and frequency tasks](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll-calculation-frequencies-tasks?toc=/dynamics365/unified-operations/retail/toc.json)
@@ -565,6 +662,7 @@
 ### [Access Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ### [Power BI content released](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Actual vs budget](/dynamics365/unified-operations/dev-itpro/analytics/ledger-budgets-power-bi?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Benefits](/dynamics365/unified-operations/dev-itpro/analytics/benefits-power-bi?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Cash overview](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 #### [CFO overview](/dynamics365/unified-operations/dev-itpro/analytics/CFO-power-bi?toc=/dynamics365/unified-operations/retail/toc.json)
@@ -621,6 +719,7 @@
 ### Analytical tools and visualizations
 #### [Analytics, aggregate measurements, and KPI modeling](/dynamics365/unified-operations/dev-itpro/analytics/analytics?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Modeling and aggregate data](/dynamics365/unified-operations/dev-itpro/analytics/model-aggregate-data?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Add financial dimensions to aggregate measurements](/dynamics365/unified-operations/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Add contextual BI to forms](/dynamics365/unified-operations/dev-itpro/analytics/add-contextual-bi-forms?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Aggregate measurements report](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-measurements-report?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Aggregate data entities report](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-data-entities-report?toc=/dynamics365/unified-operations/retail/toc.json)
@@ -629,10 +728,12 @@
 #### [Power BI Embedded integration](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-embedded-integration?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Embedded Power BI in workspaces](/dynamics365/unified-operations/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Add analytics to workspaces by using Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Help secure analytical workspaces and reports by using Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/secure-analytical-workspaces?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Add Power BI to workspaces](/dynamics365/unified-operations/dev-itpro/analytics/add-bi-workspaces?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Pin Power BI reports to workspaces](/dynamics365/unified-operations/dev-itpro/analytics/pin-power-bi-reports?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Power BI integration with Entity store](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Author and distribute Power BI reports with Entity store](/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Export entities to your own Azure SQL database](/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/unified-operations/retail/toc.json)
 
 
 ## Inventory management
@@ -737,6 +838,23 @@
 #### [Maintain planned orders](/dynamics365/unified-operations/supply-chain/master-planning/maintain-planned-orders?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Trace an explosion](/dynamics365/unified-operations/supply-chain/master-planning/trace-explosion?toc=/dynamics365/unified-operations/retail/toc.json)
 
+## Mobile apps
+### [Mobile app home page](/dynamics365/unified-operations/dev-itpro/mobile-apps/Mobile-app-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Mobile workspaces recently released](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspaces-released?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Publish a mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Mobile workspace X++ APIs](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspace-xpp-apis?toc=/dynamics365/unified-operations/retail/toc.json)
+
+## Office integration
+### [Office integration](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Office integration tutorial](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Use the Excel add-in](/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Create Open in Excel experiences](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Add templates to the Open lines in Excel menu](/dynamics365/unified-operations/dev-itpro/user-interface/add-templates-open-lines-excel-menu?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Customize the Open in Microsoft Office menu](/dynamics365/unified-operations/dev-itpro/office-integration/customize-open-office-menu?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Configure and send email](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Troubleshooting](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting?toc=/dynamics365/unified-operations/retail/toc.json)
+
 ## Order management
 ### Procurement and sourcing
 #### [Procurement and sourcing overview](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-overview?toc=/dynamics365/unified-operations/retail/toc.json)
@@ -755,8 +873,8 @@
 ##### [Purchase agreements](/dynamics365/unified-operations/supply-chain/procurement/purchase-agreements?toc=/dynamics365/unified-operations/retail/toc.json)
 #### Product receipts and invoicing
 ##### [Product receipt against purchase orders](/dynamics365/unified-operations/supply-chain/procurement/product-receipt-against-purchase-orders?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-##### [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/retail/toc.json)
 #### Vendor management and collaboration
 ##### [Set up and maintain vendor collaboration](/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration?toc=/dynamics365/unified-operations/retail/toc.json)
 ##### [Manage vendor collaboration users](/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-users?toc=/dynamics365/unified-operations/retail/toc.json)
@@ -784,6 +902,13 @@
 ##### [Price simulation](/dynamics365/unified-operations/supply-chain/sales-marketing/price-simulation?toc=/dynamics365/unified-operations/retail/toc.json)
 #### Returns
 ##### [Sales returns](/dynamics365/unified-operations/supply-chain/warehousing/sales-returns?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### Prospect to cash
+#### [Products](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Accounts (Customers)](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Contact (Contacts) and Contact (Customers)](/dynamics365/unified-operations/supply-chain/sales-marketing/contacts-template-mapping?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Sales quotation headers and lines](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-quotation-template-mapping?toc=/dynamics365/unified-operations/retail/toc.json)
+
 ## [Organization administration](/dynamics365/unified-operations/fin-and-ops/organization-administration/organization-administration-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Organizations and organizational hierarchies](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Configure organizational hierarchy](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-organizational-hierarchy?toc=/dynamics365/unified-operations/retail/toc.json)
@@ -855,6 +980,7 @@
 #### Manage raw materials
 ##### [Cross-docking from production orders to outbound docks](/dynamics365/unified-operations/supply-chain/production-control/cross-docking-opportunities?toc=/dynamics365/unified-operations/retail/toc.json)
 ##### [Register material consumption using a mobile device](/dynamics365/unified-operations/supply-chain/production-control/register-material-consumption-hand-held-device?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Controlling raw material consumption by using flushing principles](/dynamics365/unified-operations/supply-chain/production-control/flushing-principles?toc=/dynamics365/unified-operations/retail/toc.json) 
 #### Manage finished goods
 ##### [Set the production output location for finished goods](/dynamics365/unified-operations/supply-chain/production-control/production-output-location?toc=/dynamics365/unified-operations/retail/toc.json)
 ### Lean manufacturing 
@@ -945,565 +1071,25 @@
 ### [Work breakdown structures](/dynamics365/unified-operations/financials/project-management/work-breakdown-structures?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Project time entry mobile workspace](/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace?toc=/dynamics365/unified-operations/retail/toc.json)
 
-## [Development & administration using the Unified Operations Platform](/dynamics365/unified-operations/dev-itpro/index)
-
-### [System requirements](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/retail/toc.json)
-### [Demo data](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/retail/toc.json)
-### [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Finance and Operations, Enterprise edition July 2017 update](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Operations platform update 8 (June 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-8?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Operations platform update 7 (May 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Operations platform update 6 (April 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Operations platform update 5 (March 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Operations platform update 4 (February 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Operations version 1611 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Operations platform update 3 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Dynamics AX platform update 2 (August 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=/dynamics365/unified-operations/retail/toc.json) 
-#### [Dynamics AX application version 7.0.1 (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Dynamics AX platform update 1 (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Dynamics AX 7.0 (February 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Updated task guides
-##### [November 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [August 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [May 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [February 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016?toc=/dynamics365/unified-operations/retail/toc.json)
-
-
-### [Develop and customize using Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Application stack and server architecture](/dynamics365/unified-operations/dev-itpro/dev-tools/application-stack-server-architecture?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Get an evaluation copy](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Sign up for a subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Access instances](/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Development system requirements](/dynamics365/unified-operations/dev-itpro/dev-tools/development-system-requirements?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Fleet Management sample application
-##### [Fleet Management sample application](/dynamics365/unified-operations/dev-itpro/dev-tools/fleet-management-sample?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Fleet Management sample application overview](/dynamics365/unified-operations/dev-itpro/dev-tools/introduction-fleet-management-sample?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Visual Studio tools
-##### [Development tools overview](/dynamics365/unified-operations/dev-itpro/dev-tools/development-tools-overview?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Development tools tutorial](/dynamics365/unified-operations/dev-itpro/dev-tools/introduction-visual-studio?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Application Explorer](/dynamics365/unified-operations/dev-itpro/dev-tools/application-explorer?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Build and debug a project](/dynamics365/unified-operations/dev-itpro/dev-tools/build-debug-project?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Build operations](/dynamics365/unified-operations/dev-itpro/dev-tools/build-operations?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Code editor](/dynamics365/unified-operations/dev-itpro/dev-tools/code-editor?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Create a model and data model elements](/dynamics365/unified-operations/dev-itpro/dev-tools/create-data-model-elements?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Create a new user on a development machine](/dynamics365/unified-operations/dev-itpro/dev-tools/enable-development-machine?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Customization Analysis Report](/dynamics365/unified-operations/dev-itpro/dev-tools/customization-analysis-report?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Element designers](/dynamics365/unified-operations/dev-itpro/dev-tools/element-designers?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Element usage](/dynamics365/unified-operations/dev-itpro/dev-tools/element-usage?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Export and import a model](/dynamics365/unified-operations/dev-itpro/dev-tools/models-export-import?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Metadata search in Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/metadata-search-visual-studio?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Models](/dynamics365/unified-operations/dev-itpro/dev-tools/models?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Projects in Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/dev-tools/projects?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Tools add-ins for Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-tools-add-ins?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Turn off model customization and deprecate functionality](/dynamics365/unified-operations/dev-itpro/dev-tools/lock-models?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Update Visual Studio development tools](/dynamics365/unified-operations/dev-itpro/dev-tools/update-development-tools?toc=/dynamics365/unified-operations/retail/toc.json)
-#### X++ programming language
-##### [X++ and debugger features ](/dynamics365/unified-operations/dev-itpro/dev-tools/new-x-debugger-features?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Debug X++ against a copy of a production database](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-x-issue-against-copy-of-production?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Debug X++ code](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-xpp?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [EventHandlerResult classes in request or response scenarios](/dynamics365/unified-operations/dev-itpro/dev-tools/event-handler-result-class?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Write business logic using C\# and X++ source code](/dynamics365/unified-operations/dev-itpro/dev-tools/write-business-logic?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Programming language support](/dynamics365/unified-operations/dev-itpro/dev-tools/programming-language-support?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [LINQ provider for C\#](/dynamics365/unified-operations/dev-itpro/dev-tools/linq-provider-c?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Authoring best practices](/dynamics365/unified-operations/dev-itpro/dev-tools/author-best-practice-rules?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Application Explorer properties](/dynamics365/unified-operations/dev-itpro/dev-ref/application-explorer-aot-properties?toc=/dynamics365/unified-operations/retail/toc.json)
-##### X++ language reference
-###### [X++ language reference](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-language-reference?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [X++ variables and data types](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-variables-data-types?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [X++ statements, loops, and exception handling](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-statements-loops?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [X++ operators](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-operators?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [X++ operator precedence](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-operator-precedence?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [X++ classes and methods](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-classes-methods?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [X++ data selection and manipulation](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-data-query?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [X++ macros](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-macros?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [X++ attribute classes](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-attribute-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [X++ and C\# comparison](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-cs-comparison?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [X++ syntax](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-syntax?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Compile-time functions
-##### [X++ compile-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-compile-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Run-time functions
-##### [X++ business run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-business-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [X++ container run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-container-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [X++ conversion run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-conversion-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [X++ date run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-date-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [X++ math run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-math-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [X++ reflection run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-reflection-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [X++ run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [X++ session run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-session-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [X++ string run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-string-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
-#### System tables
-##### [System tables](/dynamics365/unified-operations/dev-itpro/dev-ref/system-tables?toc=/dynamics365/unified-operations/retail/toc.json)
-#### System classes
-##### [API, class, and table reference](/dynamics365/unified-operations/dev-itpro/dev-ref/api-reference?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [A Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/a-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [B Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/b-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [C Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/c-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [D Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/d-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [E Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/e-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [F Classes: FieldBinding to FormBuildAnimateControl](/dynamics365/unified-operations/dev-itpro/dev-ref/fieldbinding-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [F Classes: FormBuildButtonControl to FormBuildFastTabSummarySeparator](/dynamics365/unified-operations/dev-itpro/dev-ref/formbuildbuttoncontrol-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [F Classes: FormBuildFilterPaneControl to FormBuildRealControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formbuildfilterpanecontrol-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [F Classes: FormBuildReferenceControl to FormButtonSeparatorControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formbuildreferencecontrol-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [F Classes: FormChangeTracker to FormControlEventArgs](/dynamics365/unified-operations/dev-itpro/dev-ref/formchangetracker-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [F Classes: FormDataObject to FormFastTabHeaderControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formdataobject-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [F Classes: FormFastTabSummarySeparator to FormGridControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formfasttabsummaryseparator-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [F Classes: FormGroupControl to FormIntControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formgroupcontrol-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [F Classes: FormListBoxControl to FormNotifyEventArgs](/dynamics365/unified-operations/dev-itpro/dev-ref/formlistboxcontrol-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [F Classes: FormObject to FormRealControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formobject-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [F Classes: FormReferenceControl to FormStringControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formreferencecontrol-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [F Classes: FormTabControl to FormWindowControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formtabcontrol-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [G Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/g-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [H Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/h-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [I Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/i-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [J Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/j-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [K Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/k-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [L Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/l-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [M Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/m-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [N Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/n-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [O Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/o-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [P Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/p-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Q Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/q-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [R Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/r-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [S Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/s-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [T Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/t-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [U Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/u-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [V Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/v-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [W Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/w-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [X Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/x-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Customize with extensions and overlayering
-##### [Extensibility](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Customize model elements using extensions](/dynamics365/unified-operations/dev-itpro/extensibility/customize-model-elements-extensions?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Customize with extensions and overlayering](/dynamics365/unified-operations/dev-itpro/extensibility/customization-overlayering-extensions?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Class extensions](/dynamics365/unified-operations/dev-itpro/extensibility/class-extensions?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Extend the RunBase class](/dynamics365/unified-operations/dev-itpro/extensibility/extend-runbase-class?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Extend the number sequence scope](/dynamics365/unified-operations/dev-itpro/extensibility/extend-number-sequence-scope?toc=/dynamics365/unified-operations/retail/toc.json)
-##### Database synchronization
-#### Move packages between environments
-##### Create and apply a deployable package
-#### [Continuous delivery home page](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Development and continuous delivery FAQ](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-faq?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Exclude test packages from the build output](/dynamics365/unified-operations/dev-itpro/dev-tools/exclude-test-packages?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Manage third-party models and runtime packages by using source control](/dynamics365/unified-operations/dev-itpro/dev-tools/manage-runtime-packages?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Version models in the automated build](/dynamics365/unified-operations/dev-itpro/dev-tools/version-models-build?toc=/dynamics365/unified-operations/retail/toc.json)
-
-#### Performance home page
-##### [Take a trace using Trace parser](/dynamics365/unified-operations/dev-itpro/perf-test/trace-trace-tutorial?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [PerfSDK and multiuser testing with Visual Studio Team Services](/dynamics365/unified-operations/dev-itpro/perf-test/perfsdk-tutorial?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Diagnose problems and analyze performance issues using Trace parser](/dynamics365/unified-operations/dev-itpro/perf-test/trace-parser?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Performance timer](/dynamics365/unified-operations/dev-itpro/perf-test/performance-timer?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Testing support in Visual Studio
-##### [Testing and validations](/dynamics365/unified-operations/dev-itpro/perf-test/testing-validation?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Test projects in Visual Studio](/dynamics365/unified-operations/dev-itpro/perf-test/testing-support?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Deployment with continuous build and test automation](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Dates
-##### [Date effectivity](/dynamics365/unified-operations/dev-itpro/dev-tools/date-effectivity?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Licensing
-##### [ISV licensing](/dynamics365/unified-operations/dev-itpro/dev-tools/isv-licensing?toc=/dynamics365/unified-operations/retail/toc.json)
-
-### [User interface development](/dynamics365/unified-operations/dev-itpro/user-interface/user-interface-development-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Tutorials
-##### [Build the Rental Charge Type form](/dynamics365/unified-operations/dev-itpro/user-interface/build-rental-charge-type-form?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Build the Customer form](/dynamics365/unified-operations/dev-itpro/user-interface/build-customer-form?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Build navigation](/dynamics365/unified-operations/dev-itpro/user-interface/build-navigation?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Build a workspace](/dynamics365/unified-operations/dev-itpro/user-interface/build-workspace?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Forms
-##### [Navigation in Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/user-interface/page-navigation?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Layout in Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/user-interface/page-layout?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Symbol font](/dynamics365/unified-operations/dev-itpro/user-interface/symbol-font?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Test forms with custom patterns](/dynamics365/unified-operations/dev-itpro/user-interface/testing-forms-custom-patterns?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Create and use deep links](/dynamics365/unified-operations/dev-itpro/user-interface/create-deep-links?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Accessibility in forms, products, and controls](/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Customize field Help](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Controls
-##### [Action controls](/dynamics365/unified-operations/dev-itpro/user-interface/action-controls?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Input controls and grid column sizes](/dynamics365/unified-operations/dev-itpro/user-interface/sizing-input-controls-grid-columns?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Check box support in tree controls](/dynamics365/unified-operations/dev-itpro/user-interface/check-box-tree-controls?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Filters](/dynamics365/unified-operations/dev-itpro/user-interface/filtering?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [PowerApps Host control](/dynamics365/unified-operations/dev-itpro/user-interface/powerapps-host-control?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Window management
-##### [Migrate context menu code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/code-migration-context-menus?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Migration mouse double-click code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/code-migration-double-click?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Contextual data entry for lookups](/dynamics365/unified-operations/dev-itpro/user-interface/contextual-data-entry-lookups?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [HierarchyViewer control](/dynamics365/unified-operations/dev-itpro/user-interface/hierarchy-viewer-control?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Lookup controls](/dynamics365/unified-operations/dev-itpro/user-interface/lookups-controls?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [File upload controls](/dynamics365/unified-operations/dev-itpro/user-interface/file-upload-control?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [System-defined buttons](/dynamics365/unified-operations/dev-itpro/user-interface/system-defined-buttons?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Images](/dynamics365/unified-operations/dev-itpro/user-interface/images-form-grid?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Font and background colors for input, table, and grid controls](/dynamics365/unified-operations/dev-itpro/user-interface/specify-color-font-background-controls?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Right-to-left language support and bidirectional text](/dynamics365/unified-operations/dev-itpro/user-interface/bidirectional-support?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Create icons for workspace tiles](/dynamics365/unified-operations/dev-itpro/user-interface/create-icons-workspace-tiles?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Extensible controls - Public JavaScript APIs](/dynamics365/unified-operations/dev-itpro/user-interface/public-javascript-apis?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Control checklist](/dynamics365/unified-operations/dev-itpro/user-interface/control-checklist?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Messages
-##### [Slider and MessageBox](/dynamics365/unified-operations/dev-itpro/user-interface/slider-messagebox?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Message center, message bar, and message details API](/dynamics365/unified-operations/dev-itpro/user-interface/messaging-api-center-bar-details?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Message center, message bar, and message details FAQ](/dynamics365/unified-operations/dev-itpro/user-interface/messaging-user?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Primary form pattern guidelines
-##### [Select a form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/select-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Form styles and patterns](/dynamics365/unified-operations/dev-itpro/user-interface/form-styles-patterns?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Form patterns
-##### [General form guidelines](/dynamics365/unified-operations/dev-itpro/user-interface/general-form-guidelines?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Details Master form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/details-master-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Details Transaction form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/details-transaction-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Form Part Section List form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-list-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [List Page form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/list-page-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Simple Details form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/simple-details-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Simple List and Details form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/simple-list-details-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Simple List form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/simple-list-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Table of Contents form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/table-of-contents-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Task Double form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/task-double-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Task Single form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/task-single-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Wizard form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/wizard-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Workspace form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/workspace-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Secondary form patterns
-##### [Advanced selection form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/advanced-selection-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Dialog form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/dialog-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Drop Dialog form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/drop-dialog-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Lookup form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/lookup-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [FactBox form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/factbox-form-patterns?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Sub patterns
-##### [Custom Filter Group subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/custom-filter-group-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Dimension entry control subpattern](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Dimension Expression Builder subpattern](/dynamics365/unified-operations/dev-itpro/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Fields and Field Groups subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/fields-field-groups-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Filters and Toolbar subpatterns](/dynamics365/unified-operations/dev-itpro/user-interface/filters-toolbar-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Fill Text subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/fill-text-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Horizontal Fields and Buttons Group subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/horizontal-fields-buttons-group-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Image Preview subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/image-preview-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [List Panel subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/list-panel-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Nested Simple List and Details subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/nested-simple-list-details-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Section Chart form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-chart-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Section Power BI subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-powerbi-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Section Related Links subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-related-links-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Section Stacked Chart subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-stacked-chart-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Section Tabbed List subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-tabbed-list-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Section Tiles subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-tiles-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Tabular Fields subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/tabular-fields-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Toolbar and Fields subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/toolbar-fields-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Toolbar and List subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/toolbar-list-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Workspace Page Filter Group subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/workspace-filter-group-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Control extensibility
-##### [Build an extensible control](/dynamics365/unified-operations/dev-itpro/user-interface/build-extensible-control?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Keyboard shortcuts for extensible controls](/dynamics365/unified-operations/dev-itpro/user-interface/keyboard-shortcuts-controls?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Extensible control programming reference](/dynamics365/unified-operations/dev-itpro/user-interface/extensible-control-programming-reference?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Control extensibility](/dynamics365/unified-operations/dev-itpro/user-interface/control-extensibility?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Create localizable labels](/dynamics365/unified-operations/dev-itpro/user-interface/create-localizable-labels-client?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Extensible control layout guidelines](/dynamics365/unified-operations/dev-itpro/user-interface/extensible-controls-layout?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Control the text that Task Recorder generates for a control](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-control-text?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Build workspaces
-##### [Build operational workspaces](/dynamics365/unified-operations/dev-itpro/user-interface/build-workspaces?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Tile and list caching for workspaces](/dynamics365/unified-operations/dev-itpro/user-interface/tile-list-caching-workspaces?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Task Recorder quick reference](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-quick-reference?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Create documentation or training using Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=/dynamics365/unified-operations/retail/toc.json)
-
-### Release solutions using Lifecycle Services
-#### [Develop and release](/dynamics365/unified-operations/dev-itpro/lcs-solutions/lcs-solutions-app-source)
-#### [Stage and publish](/dynamics365/unified-operations/dev-itpro/lcs-solutions/marketing-content-lcs-solutions)
-#### [Add a methodology](/dynamics365/unified-operations/dev-itpro/lcs-solutions/methodologies-lcs-solutions)
-#### [Set up Business process modeler libraries](/dynamics365/unified-operations/dev-itpro/lcs-solutions/business-process-modeler-libraries-lcs-solutions)
-#### [Migrate code](/dynamics365/unified-operations/dev-itpro/lcs-solutions/code-migration-lcs-solutions)
-#### [Validate an application](/dynamics365/unified-operations/dev-itpro/lcs-solutions/app-validation-lcs-solutions)
-#### [Process and consume data packages](/dynamics365/unified-operations/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions)
-#### [Back up a solution database](/dynamics365/unified-operations/dev-itpro/lcs-solutions/database-backup-lcs-solutions)
-
-#### [Localizations](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region)
-##### [Classify localization features](/dynamics365/unified-operations/dev-itpro/lcs-solutions/classify-localization-features)
-##### [Country/region context](/dynamics365/unified-operations/dev-itpro/lcs-solutions/apply-country-context)
-##### [Regulatory certifications](/dynamics365/unified-operations/dev-itpro/lcs-solutions/regulatory-certifications)
-##### [Regulatory updates](/dynamics365/unified-operations/dev-itpro/lcs-solutions/regulatory-watch-communication)
-##### [Separate localization models](/dynamics365/unified-operations/dev-itpro/lcs-solutions/separate-localization-models)
-##### [Submit a regulatory alert](/dynamics365/unified-operations/dev-itpro/lcs-solutions/submit-localization-alerts)
-
-
-### [Data entities](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Default data entities
-##### [Data entities report](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-report?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Accounts payable and taxes](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-payable-taxes?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Accounts receivable](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-receivable?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Bank](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-bank?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Beginning balances](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-beginning-balances?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Budget planning](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-budget-plan?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Budgeting](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-budgeting?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Costing](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-costing?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Expense management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-expense-management?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Fixed assets](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-fixed-assets?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: General ledger](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-general-ledger?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Global address book](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-global-address-book?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Human resources](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-human-resources?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Inventory management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-inventory-management?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Master planning](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-master-plan?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Procurement and sourcing](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-procurement-sourcing?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Product information management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-product-information-management?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Production control](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-production-control?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Project accounting](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-project-accounting?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Public sector](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-public-sector?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Retail](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-retail?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Sales and marketing execution](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-sales-marketing?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Sales and marketing pre-sales](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-sales-marketing-pre-sales?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: System administration](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-system-administration?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data entities: Workflow](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-workflow?toc=/dynamics365/unified-operations/retail/toc.json)
-
-#### Migrating entities
-##### [Configuration data projects](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Configuration data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Copy configuration data between companies](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Best practices for importing vouchers using the General journal entity](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/retail/toc.json)
-
-#### Creating data entities
-##### [Data entities and packages framework](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Build and consume](/dynamics365/unified-operations/dev-itpro/data-entities/build-consuming-data-entities?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Behavioral properties](/dynamics365/unified-operations/dev-itpro/data-entities/behavioral-properties-data-entities?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Compute columns and virtual fields](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Cross-company behavior](/dynamics365/unified-operations/dev-itpro/data-entities/cross-company-behavior?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Country/region codes and configuration keys](/dynamics365/unified-operations/dev-itpro/data-entities/countryregion-codes-configuration-keys?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Inheritance patterns](/dynamics365/unified-operations/dev-itpro/data-entities/support-super-type-sub-type?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Wizard rules](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-wizard-rules?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Metadata properties](/dynamics365/unified-operations/dev-itpro/data-entities/metadata-properties?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Validations, defaults, and unmapped fields](/dynamics365/unified-operations/dev-itpro/data-entities/validations-defaults-unmapped-fields?toc=/dynamics365/unified-operations/retail/toc.json)
-
-#### [Data management and integration using data entities](/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Develop an entity for data migration](/dynamics365/unified-operations/dev-itpro/data-entities/develop-entity-for-data-migration?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Develop composite data entities](/dynamics365/unified-operations/dev-itpro/data-entities/develop-composite-data-entities?toc=/dynamics365/unified-operations/retail/toc.json)
-
-#### [OData](/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Recurring integrations](/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/dynamics365/unified-operations/retail/toc.json)
-
-#### [Security and data entities](/dynamics365/unified-operations/dev-itpro/data-entities/security-data-entities?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Service authentication troubleshooting](/dynamics365/unified-operations/dev-itpro/data-entities/troubleshoot-service-authentication?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Service endpoints](/dynamics365/unified-operations/dev-itpro/data-entities/services-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
-
-### Mobile apps
-#### [Mobile app home page](/dynamics365/unified-operations/dev-itpro/mobile-apps/Mobile-app-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Mobile workspaces recently released](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspaces-released?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Publish a mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Mobile workspace X++ APIs](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspace-xpp-apis?toc=/dynamics365/unified-operations/retail/toc.json)
-
-### Office integration
-#### [Office integration](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Office integration tutorial](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Use the Excel add-in](/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Create Open in Excel experiences](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Add templates to the Open lines in Excel menu](/dynamics365/unified-operations/dev-itpro/user-interface/add-templates-open-lines-excel-menu?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Customize the Open in Microsoft Office menu](/dynamics365/unified-operations/dev-itpro/office-integration/customize-open-office-menu?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Configure and send email](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Troubleshooting](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting?toc=/dynamics365/unified-operations/retail/toc.json)
-
-### Financials development
-#### [Dimensions](/dynamics365/unified-operations/dev-itpro/financial/dimensions?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Add dimensions to an Excel template](/dynamics365/unified-operations/dev-itpro/financial/dimensions-overview?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Dimension Entry control dialog support](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-dialog-support?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Dimension entry control migration ](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-migration?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Dimension entry control uptake](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-uptake?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Dimension Expression Builder subpattern](/dynamics365/unified-operations/dev-itpro/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Financial dimension configuration for integrating applications](/dynamics365/unified-operations/dev-itpro/financial/financial-dimension-configuration-integration?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Activate financial dimensions](/dynamics365/unified-operations/dev-itpro/financial/activate-financial-dimensions?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Financial dimensions and main accounts in a right-to-left language](/dynamics365/unified-operations/dev-itpro/financial/financial-dimensions-main-accounts-right-left-language?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Make a backing table be consumable as a Financial dimension](/dynamics365/unified-operations/dev-itpro/financial/dimensionable-entities?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Segmented entry control migration ](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-conversion?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Segmented entry control dialog support](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-dialog-support?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Segmented entry control metadata](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-metadata-specification?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Segmented entry control migration guidance](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-migration-guidance?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Segmented entry control parm methods](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-parm-method-specification?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Add the ability to look up values for financial dimensions in Microsoft Excel templates](/dynamics365/unified-operations/dev-itpro/financial/add-dimensions-excel-templates?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Create exchange rate providers](/dynamics365/unified-operations/dev-itpro/financial/create-exchange-rate-providers?toc=/dynamics365/unified-operations/retail/toc.json)
-
-### Supply chain development
-#### [Gantt development guide](/dynamics365/unified-operations/dev-itpro/user-interface/gantt-development-guide?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Create a new transportation management engine](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/unified-operations/retail/toc.json)
-
-
-### Deployment
-#### [Deploy a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Azure Resource Manager onboarding](/dynamics365/unified-operations/dev-itpro/deployment/arm-onboarding?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=/dynamics365/unified-operations/retail/toc.json)
-
-#### [Deploy Microsoft Dynamics 365 for Finance and Operations on-premises](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
-
-#### Deploy custom code
-##### [Create a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Apply a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Install a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/install-deployable-package?toc=/dynamics365/unified-operations/retail/toc.json)
-
-#### [Cloud Service Provider downloads and Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/retail/toc.json)
-
-### [Upgrade and migration](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Analyze - Use the Upgrade analyzer tool to plan upgrade](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Analyze – Use the Code upgrade service to estimate the effort to upgrade code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analyze-code-upgrade?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Analyze - Deploy a sandbox enviroment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Upgrade - Data upgrade in a development environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Upgrade - AX 2012 data upgrade tasks](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Upgrade - Data upgrade in a sandbox environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Validate - Cutover testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Validate - Tasks to perform after upgrade](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Validate - Functional testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Validate - Prepare for go live](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep?toc=/dynamics365/unified-operations/retail/toc.json)
-
-
-##### Changes that affect upgrade from AX 2012
-###### [Single voucher and currency revaluation upgrade ](/dynamics365/unified-operations/dev-itpro/migration-upgrade/single-voucher-and-currency-revaluation-upgrade?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Project resource scheduling data model](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-model-changes-resource-management?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Workflow subsystem changes](/dynamics365/unified-operations/dev-itpro/migration-upgrade/workflow-subsystem?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Why we moved from cubes to aggregate models](/dynamics365/unified-operations/dev-itpro/migration-upgrade/in-memory-real-time-aggregate-models?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Migrate an upgraded sales cube to the entity store](/dynamics365/unified-operations/dev-itpro/migration-upgrade/migrate-upgraded-cube-entity-store?toc=/dynamics365/unified-operations/retail/toc.json)
-
-#### Code migration and upgrade
-##### [Prepare to migrate code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-migration?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Configure Visual Studio Team Services mapping during code migration](/dynamics365/unified-operations/dev-itpro/migration-upgrade/configure-vso-solution?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Split models](/dynamics365/unified-operations/dev-itpro/dev-tools/model-split?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Use delegates to solve dependencies between models](/dynamics365/unified-operations/dev-itpro/migration-upgrade/delegates-migration?toc=/dynamics365/unified-operations/retail/toc.json)
-
-#### Upgrade to a recent update
-##### [Prepare to move to the latest update](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Lifecycle policy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Upgrade to the latest platform update](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Upgrade the Dynamics platform to the August 2016 release](/dynamics365/unified-operations/dev-itpro/migration-upgrade/update-platform-each-release?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Upgrade a sandbox environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-sandbox-environment?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Upgrade data in development or demo environments](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-to-latest-update?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Update development tools](/dynamics365/unified-operations/dev-itpro/dev-tools/update-development-tools?toc=/dynamics365/unified-operations/retail/toc.json)
-
-#### Hotfixes and servicing
-##### [Download hotfixes from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Install a metadata hotfix](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Install a financial reporting binary hotfix](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-financial-reporting-binary-hotfix?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Patch Reporting Services in a one-box environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/patch-reporting-service-environment?toc=/dynamics365/unified-operations/retail/toc.json)
-
-#### Deprecations
-##### [Deprecated APIs](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-apis?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Deprecated features](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/retail/toc.json)
-
-
-
-### System administration
-#### [Platform monthly updates FAQ](/dynamics365/unified-operations/dev-itpro/sysadmin/faq-platform-monthly-updates?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Add links to your organization's legal terms and privacy statement](/dynamics365/unified-operations/dev-itpro/sysadmin/legal-terms-privacy-statement?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [License codes and configuration keys report](/dynamics365/unified-operations/dev-itpro/sysadmin/license-codes-configuration-keys-report?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Cross-company data sharing](/dynamics365/unified-operations/dev-itpro/sysadmin/cross-company-data-sharing?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Maintenance mode](/dynamics365/unified-operations/dev-itpro/sysadmin/maintenance-mode?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Security
-##### [Role-based security](/dynamics365/unified-operations/dev-itpro/sysadmin/role-based-security?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Security architecture](/dynamics365/unified-operations/dev-itpro/sysadmin/security-architecture?toc=/dynamics365/unified-operations/retail/toc.json)
-#### Batch processing
-##### [Batch processing overview](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-processing-overview?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Batch server overview](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-server-overview?toc=/dynamics365/unified-operations/retail/toc.json)
-
-### Lifecycle Services
-#### [Overview of Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [LCS for customers](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [LCS for partners](/dynamics365/unified-operations/dev-itpro/lifecycle-services/getting-started-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [What's new](/dynamics365/unified-operations/dev-itpro/lifecycle-services/whats-new-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Known issues](/dynamics365/unified-operations/dev-itpro/lifecycle-services/known-issues?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Dynamics Lifecycle Services user guide](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Configure security](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-lcs-security?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Issue search](/dynamics365/unified-operations/dev-itpro/lifecycle-services/issue-search-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Configuration manager](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configuration-manager-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Set up Configuration manager ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/set-up-configuration-manager-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Configure the code upgrade service](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-execute-code-upgrade?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Create a methodology ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/create-methodology?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Business process modeler](/dynamics365/unified-operations/dev-itpro/lifecycle-services/business-process-modeler-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Business process libraries in business process modeler](/dynamics365/unified-operations/dev-itpro/lifecycle-services/business-process-libraries-business-process-modeler?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Business process modeler flowcharts](/dynamics365/unified-operations/dev-itpro/lifecycle-services/flowcharts-business-process-modeler?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Upload custom business processes](/dynamics365/unified-operations/dev-itpro/lifecycle-services/upload-business-processes-bpm-task-recorder?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Monitoring and diagnostics ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/monitoring-diagnostics?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Asset library](/dynamics365/unified-operations/dev-itpro/lifecycle-services/monitoring-diagnostics?toc=/dynamics365/unified-operations/retail/toc.json)
-
-#### Dynamics AX 2012 Lifecycle Services features
-##### Deployment
-###### [Cloud-hosted environments](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/cloud-hosted-environments-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Copy a configuration](/dynamics365/unified-operations/dev-itpro/lifecycle-services/copy-configuration-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Plan a Dynamics AX 2012 R3 deployment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/plan-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Deploy Dynamics AX 2012 R3 on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-2012-r3-azure-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Deploy a Dynamics AX 2012 R3 demo environment](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Deploy a development environment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-development-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Deploy a high-availability environment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-high-availability-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Deploy a test environment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-test-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Manage your Dynamics AX 2012 R3 deployment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/manage-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Join Enterprise Portal servers into a single server farm](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/join-enterprise-portal-servers-single-server-farm?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Record entry points in Dynamics AX Enterprise Portal](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/record-entry-points-enterprise-portal?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Deploy a Retail e-commerce dev/test environment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-ecommerce-devtest-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Deploy a Retail essentials demo environment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-essentials-demo-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Deploy a Retail essentials dev/test environment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-essentials-devtest-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Deploy a Retail mobility dev/test environment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-mobility-devtest-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Troubleshoot your Dynamics AX 2012 R3 deployment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/troubleshoot-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Updates for Dynamics AX 2012 R3](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/update-2012-r3-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Data import/export framework user guide](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/user-guide-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Install](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Install for AX 2012 R3](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-ax-2012-r3?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Install the Dynamics AX 2012 R2 CU7 version for SQL Server 2014](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-dixf-ax-2012-r2-cu7-ss-2014?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Migrate data](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/migrate-data-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Configure the version of SSIS](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/configure-sql-server-integration-services-multiple-versions-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Copy and compare entity data between companies](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/copy-compare-entity-data-between-companies-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Copy data between Dynamics AX companies](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/copy-data-between-companies-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Copy data between Dynamics AX instances](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/copy-data-between-instances-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Create a custom target entity](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-custom-target-entity-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Data import/export framework entities](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/entities-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Import data from a CSV data source](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-data-csv-data-source-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Import data from an ODBC data source](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-data-odbc-data-source-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Demo files](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/demo-files-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Quick Import-export](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/quick-import-export?toc=/dynamics365/unified-operations/retail/toc.json)
-##### Tables 
-###### [Create tables](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-tables?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Table properties](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/table-properties?toc=/dynamics365/unified-operations/retail/toc.json)
-##### Dynamics AX 2012 LCS tools
-###### [Projects](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/projects-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Methodologies](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/methodologies-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Customization analysis ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/customization-analysis-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Infrastructure estimator](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/infrastructure-estimator-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [License sizing estimator](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/license-sizing-estimator-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Requests for proposal (/dynamics365/unified-operations/dev-itpro/lifecycle-services/RFP) responses](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/rfp-responses-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [System diagnostics](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/system-diagnostics-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Install and run System diagnostics](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-run-system-diagnostics-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Upgrade analysis](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/upgrade-analysis-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Usage profiler](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/usage-profiler-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-##### Dynamics AX 2012 downloadable tools
-###### [Code Upgrade Tool User Guide (deprecated)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/code-upgrade-tool-user-guide?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Lifecycle Services downloadable tools](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/lcs-downloadable-tools-formerly-informationsource?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Test Data Transfer Tool (beta)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/test-data-transfer-tool-beta-2012?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Install](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Run](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/run-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Import demo data for AX 2012 R3](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Security Development Tool](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/overview-security-development-tool-user-interface?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Install](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-security-development-tool?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [User Guide](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/security-development-tool-user-guide?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Define or edit entry point permissions](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/define-edit-entry-point-permissions?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Performance Benchmark Software Development Toolkit](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Security Upgrade Advisor Tool](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/security-upgrade-advisor-tool-user-guide?toc=/dynamics365/unified-operations/retail/toc.json)
-###### [Intelligent Data Management Framework (IDMF)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/microsoft-idmf?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Overview](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/overview-idmf?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Installation Guide](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/installation-guide-idmf?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Configuration](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/configuration-functionality-idmf-workspace?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Analysis](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/analysis-functionality-idmf-workspace?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Purge and archive objects](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/work-with-purge-objects-archive-objects?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Create archive objects](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-archive-objects?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Create purge objects](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-purge-objects?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Schedule purge and analysis tasks](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/schedule-purge-analysis-tasks?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [View purge or archive jobs](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/view-status-purge-archive-jobs?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Maintain](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/maintain-idmf?toc=/dynamics365/unified-operations/retail/toc.json)
-####### [Troubleshoot](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/troubleshoot-idmf?toc=/dynamics365/unified-operations/retail/toc.json)
-
-### Database management
-#### [Copy a database from Azure SQL Database to a SQL Server environment](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-azure-sql-to-sql-server?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Copy a database from SQL Server to a production Azure SQL Database environment](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-sql-server-to-azure-sql?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Restore a database on a non-production environment](/dynamics365/unified-operations/dev-itpro/database/request-point-in-time-restore?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Export a copy of a database to restore later](/dynamics365/unified-operations/dev-itpro/database/copy-operations-database?toc=/dynamics365/unified-operations/retail/toc.json)
-
-### Support
-#### [Get support for Dynamics 365 for Finance and Operations, Enterprise edition and Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support)
-#### [Log a premier support ticket](/dynamics365/unified-operations/dev-itpro/lifecycle-services/premier-support)
-#### [Submit a request to the Dynamics Service Engineering team](/dynamics365/unified-operations/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team)
-#### [Set up technical support for Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/lifecycle-services/support-experience) 
-#### [Planned maintenance window FAQ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/planned-maintenance-window-faq) 
-#### [Cloud operations and servicing](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-operations-servicing?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Manage Finance and Operations Support experiences](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
-
 <!-- Retail section -->
 # [Dynamics 365 for Retail](/dynamics365/unified-operations/retail/index?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ## Payments
 ### [Payment methods](/dynamics365/unified-operations/retail/payment-methods?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Credit card setup, authorization, and capture](/dynamics365/unified-operations/financials/accounts-receivable/credit-card-authorizations?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail?toc=/dynamics365/unified-operations/retail/toc.json)
+
+## Purchase orders
+### [Purchase order overview](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-overview?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Create purchase orders](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-creation?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Product receipt against purchase orders](/dynamics365/unified-operations/supply-chain/procurement/product-receipt-against-purchase-orders?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Approve and confirm purchase orders](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-approval-confirmation?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Purchase order approval mobile workspace](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-mobile-workspace?toc=/dynamics365/unified-operations/retail/toc.json)
+
+## Sales tax
+### [Sales tax overview](/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Sales tax calculation methods in the Origin field](/dynamics365/unified-operations/financials/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Whole amount and Interval calculation options for sales tax codes](/dynamics365/unified-operations/financials/general-ledgerwhole-amount-interval-options-sales-tax-codes?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ## Call center
 ### [Call center overview](/dynamics365/unified-operations/retail/call-center-functionality?toc=/dynamics365/unified-operations/retail/toc.json)
@@ -1552,6 +1138,7 @@
 #### [Set up receipt templates](/dynamics365/unified-operations/retail/receipt-templates-printing?toc=/dynamics365/unified-operations/retail/toc.json) 
 #### [Send email receipts from MPOS](/dynamics365/unified-operations/retail/email-receipts?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Task recorder and Help for POS](/dynamics365/unified-operations/retail/task-recorder-retail-pos?toc=/dynamics365/unified-operations/retail/toc.json)
+
 ## Monitoring and analysis
 ### [Monitor sales and margin performance](/dynamics365/unified-operations/retail/monitor-sales-margin-performance?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Analyze sales trends and patterns](/dynamics365/unified-operations/retail/analyze-sales-trends-patterns?toc=/dynamics365/unified-operations/retail/toc.json)
@@ -1565,19 +1152,40 @@
 ### [Determine the optimal combination of overlapping discounts](/dynamics365/unified-operations/retail/optimal-combination-overlapping-discounts?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Define channel-specific discounts](/dynamics365/unified-operations/retail/define-channel-specific-discounts?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Create coupons for retail sales](/dynamics365/unified-operations/retail/retail-coupons?toc=/dynamics365/unified-operations/retail/toc.json)
+
 ## Products and merchandising
+### [Product information overview](/dynamics365/unified-operations/supply-chain/pim/product-information?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Retail hierarchies](/dynamics365/unified-operations/retail/retail-hierarchies?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Create and manage attributes](/dynamics365/unified-operations/retail/create-manage-attributes?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Set up retail products](/dynamics365/unified-operations/retail/set-up-retail-products?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Product dimensions](/dynamics365/unified-operations/supply-chain/pim/product-dimensions?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Set up bar codes](/dynamics365/unified-operations/retail/set-up-bar-codes?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Set up bar code masks](/dynamics365/unified-operations/retail/set-up-bar-code-masks?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Set up assortments](/dynamics365/unified-operations/retail/set-up-assortments?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Sell and return products outside of an assortment](/dynamics365/unified-operations/retail/sell-return-outside-assortments?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Default order settings for dimensions and product variants](/dynamics365/unified-operations/supply-chain/production-control/default-order-settings?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Search for products and product variants during order entry](/dynamics365/unified-operations/supply-chain/pim/search-products-product-variants?toc=/dynamics365/unified-operations/retail/toc.json)
+
 ## Loyalty
 ### [Set up a customer loyalty program](/dynamics365/unified-operations/retail/set-up-customer-loyalty-program?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ## Inventory
 ### [Manage store inventory](/dynamics365/unified-operations/retail/work-with-store-inventory?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Register serial numbers in the sales process](/dynamics365/unified-operations/supply-chain/sales-marketing/register-serial-numbers-sales-process?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Inventory journals](/dynamics365/unified-operations/supply-chain/inventory/inventory-journals?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Inventory tag counting](/dynamics365/unified-operations/supply-chain/inventory/inventory-tag-counting?toc=/dynamics365/unified-operations/retail/toc.json)
+### [FIFO with physical value and marking](/dynamics365/unified-operations/supply-chain/cost-management/fifo-physical-value-marking?toc=/dynamics365/unified-operations/retail/toc.json)
+### [LIFO Date with physical value and marking](/dynamics365/unified-operations/supply-chain/cost-management/lifo-date-physical-value-marking?toc=/dynamics365/unified-operations/retail/toc.json)
+### [LIFO with physical value and marking](/dynamics365/unified-operations/supply-chain/cost-management/lifo-physical-value-marking?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Weighted average date](/dynamics365/unified-operations/supply-chain/cost-management/weighted-average-date?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Weighted average with physical value and marking](/dynamics365/unified-operations/supply-chain/cost-management/weighted-average-physical-value-marking?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Quarantine orders](/dynamics365/unified-operations/supply-chain/inventory/quarantine-orders.md?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Running average cost price](/dynamics365/unified-operations/supply-chain/cost-management/running-average-cost-price?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Tracking running average cost per inventory dimension](/dynamics365/unified-operations/supply-chain/cost-management/track-running-average-cost-per-inventory-dimension?toc=/dynamics365/unified-operations/retail/toc.json)
+
+## Human resources
+### [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/hr/departments-jobs-positions?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Setting up the components of a job](/dynamics365/unified-operations/hr/create-job?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ## [Retail development & administration](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
 
@@ -1683,3 +1291,484 @@
 ## Workplace safety and compliance (United States)
 ### [Form I-9 employment verification](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification?toc=/dynamics365/unified-operations/retail/toc.json)
 ### [Comply with the ADA](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada?toc=/dynamics365/unified-operations/retail/toc.json)
+
+# [Development & administration using the Unified Operations Platform](/dynamics365/unified-operations/dev-itpro/index)
+
+## [System requirements](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/retail/toc.json)
+## [Demo data](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/retail/toc.json)
+## [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Finance and Operations, Enterprise edition July 2017 update](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Operations platform update 8 (June 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-8?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Operations platform update 7 (May 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Operations platform update 6 (April 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Operations platform update 5 (March 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Operations platform update 4 (February 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Operations version 1611 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Operations platform update 3 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Dynamics AX platform update 2 (August 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=/dynamics365/unified-operations/retail/toc.json) 
+### [Dynamics AX application version 7.0.1 (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Dynamics AX platform update 1 (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Dynamics AX 7.0 (February 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=/dynamics365/unified-operations/retail/toc.json)
+### Updated task guides
+#### [November 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [August 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [May 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [February 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016?toc=/dynamics365/unified-operations/retail/toc.json)
+
+
+## [Develop and customize using Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Application stack and server architecture](/dynamics365/unified-operations/dev-itpro/dev-tools/application-stack-server-architecture?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Get an evaluation copy](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Sign up for a subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Access instances](/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Development system requirements](/dynamics365/unified-operations/dev-itpro/dev-tools/development-system-requirements?toc=/dynamics365/unified-operations/retail/toc.json)
+### Fleet Management sample application
+#### [Fleet Management sample application](/dynamics365/unified-operations/dev-itpro/dev-tools/fleet-management-sample?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Fleet Management sample application overview](/dynamics365/unified-operations/dev-itpro/dev-tools/introduction-fleet-management-sample?toc=/dynamics365/unified-operations/retail/toc.json)
+### Visual Studio tools
+#### [Development tools overview](/dynamics365/unified-operations/dev-itpro/dev-tools/development-tools-overview?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Development tools tutorial](/dynamics365/unified-operations/dev-itpro/dev-tools/introduction-visual-studio?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Application Explorer](/dynamics365/unified-operations/dev-itpro/dev-tools/application-explorer?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Build and debug a project](/dynamics365/unified-operations/dev-itpro/dev-tools/build-debug-project?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Build operations](/dynamics365/unified-operations/dev-itpro/dev-tools/build-operations?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Code editor](/dynamics365/unified-operations/dev-itpro/dev-tools/code-editor?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Create a model and data model elements](/dynamics365/unified-operations/dev-itpro/dev-tools/create-data-model-elements?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Create a new user on a development machine](/dynamics365/unified-operations/dev-itpro/dev-tools/enable-development-machine?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Customization Analysis Report](/dynamics365/unified-operations/dev-itpro/dev-tools/customization-analysis-report?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Element designers](/dynamics365/unified-operations/dev-itpro/dev-tools/element-designers?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Element usage](/dynamics365/unified-operations/dev-itpro/dev-tools/element-usage?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Export and import a model](/dynamics365/unified-operations/dev-itpro/dev-tools/models-export-import?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Metadata search in Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/metadata-search-visual-studio?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Models](/dynamics365/unified-operations/dev-itpro/dev-tools/models?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Projects in Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/dev-tools/projects?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Tools add-ins for Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-tools-add-ins?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Turn off model customization and deprecate functionality](/dynamics365/unified-operations/dev-itpro/dev-tools/lock-models?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Update Visual Studio development tools](/dynamics365/unified-operations/dev-itpro/dev-tools/update-development-tools?toc=/dynamics365/unified-operations/retail/toc.json)
+### X++ programming language
+#### [X++ and debugger features ](/dynamics365/unified-operations/dev-itpro/dev-tools/new-x-debugger-features?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Debug X++ against a copy of a production database](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-x-issue-against-copy-of-production?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Debug X++ code](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-xpp?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [EventHandlerResult classes in request or response scenarios](/dynamics365/unified-operations/dev-itpro/dev-tools/event-handler-result-class?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Write business logic using C\# and X++ source code](/dynamics365/unified-operations/dev-itpro/dev-tools/write-business-logic?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Programming language support](/dynamics365/unified-operations/dev-itpro/dev-tools/programming-language-support?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [LINQ provider for C\#](/dynamics365/unified-operations/dev-itpro/dev-tools/linq-provider-c?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Authoring best practices](/dynamics365/unified-operations/dev-itpro/dev-tools/author-best-practice-rules?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Application Explorer properties](/dynamics365/unified-operations/dev-itpro/dev-ref/application-explorer-aot-properties?toc=/dynamics365/unified-operations/retail/toc.json)
+#### X++ language reference
+##### [X++ language reference](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-language-reference?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [X++ variables and data types](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-variables-data-types?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [X++ statements, loops, and exception handling](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-statements-loops?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [X++ operators](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-operators?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [X++ operator precedence](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-operator-precedence?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [X++ classes and methods](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-classes-methods?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [X++ data selection and manipulation](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-data-query?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [X++ macros](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-macros?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [X++ attribute classes](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-attribute-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [X++ and C\# comparison](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-cs-comparison?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [X++ syntax](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-syntax?toc=/dynamics365/unified-operations/retail/toc.json)
+### Compile-time functions
+#### [X++ compile-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-compile-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
+### Run-time functions
+#### [X++ business run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-business-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [X++ container run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-container-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [X++ conversion run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-conversion-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [X++ date run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-date-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [X++ math run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-math-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [X++ reflection run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-reflection-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [X++ run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [X++ session run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-session-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [X++ string run-time functions](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-string-run-time-functions?toc=/dynamics365/unified-operations/retail/toc.json)
+### System tables
+#### [System tables](/dynamics365/unified-operations/dev-itpro/dev-ref/system-tables?toc=/dynamics365/unified-operations/retail/toc.json)
+### System classes
+#### [API, class, and table reference](/dynamics365/unified-operations/dev-itpro/dev-ref/api-reference?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [A Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/a-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [B Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/b-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [C Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/c-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [D Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/d-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [E Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/e-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [F Classes: FieldBinding to FormBuildAnimateControl](/dynamics365/unified-operations/dev-itpro/dev-ref/fieldbinding-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [F Classes: FormBuildButtonControl to FormBuildFastTabSummarySeparator](/dynamics365/unified-operations/dev-itpro/dev-ref/formbuildbuttoncontrol-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [F Classes: FormBuildFilterPaneControl to FormBuildRealControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formbuildfilterpanecontrol-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [F Classes: FormBuildReferenceControl to FormButtonSeparatorControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formbuildreferencecontrol-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [F Classes: FormChangeTracker to FormControlEventArgs](/dynamics365/unified-operations/dev-itpro/dev-ref/formchangetracker-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [F Classes: FormDataObject to FormFastTabHeaderControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formdataobject-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [F Classes: FormFastTabSummarySeparator to FormGridControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formfasttabsummaryseparator-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [F Classes: FormGroupControl to FormIntControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formgroupcontrol-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [F Classes: FormListBoxControl to FormNotifyEventArgs](/dynamics365/unified-operations/dev-itpro/dev-ref/formlistboxcontrol-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [F Classes: FormObject to FormRealControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formobject-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [F Classes: FormReferenceControl to FormStringControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formreferencecontrol-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [F Classes: FormTabControl to FormWindowControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formtabcontrol-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [G Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/g-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [H Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/h-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [I Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/i-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [J Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/j-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [K Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/k-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [L Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/l-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [M Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/m-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [N Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/n-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [O Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/o-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [P Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/p-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Q Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/q-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [R Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/r-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [S Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/s-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [T Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/t-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [U Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/u-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [V Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/v-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [W Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/w-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [X Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/x-classes?toc=/dynamics365/unified-operations/retail/toc.json)
+### Customize with extensions and overlayering
+#### [Extensibility](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Customize model elements using extensions](/dynamics365/unified-operations/dev-itpro/extensibility/customize-model-elements-extensions?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Customize with extensions and overlayering](/dynamics365/unified-operations/dev-itpro/extensibility/customization-overlayering-extensions?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Class extensions](/dynamics365/unified-operations/dev-itpro/extensibility/class-extensions?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Extend the RunBase class](/dynamics365/unified-operations/dev-itpro/extensibility/extend-runbase-class?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Extend the number sequence scope](/dynamics365/unified-operations/dev-itpro/extensibility/extend-number-sequence-scope?toc=/dynamics365/unified-operations/retail/toc.json)
+#### Database synchronization
+### Move packages between environments
+#### Create and apply a deployable package
+### [Continuous delivery home page](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Development and continuous delivery FAQ](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-faq?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Exclude test packages from the build output](/dynamics365/unified-operations/dev-itpro/dev-tools/exclude-test-packages?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Manage third-party models and runtime packages by using source control](/dynamics365/unified-operations/dev-itpro/dev-tools/manage-runtime-packages?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Version models in the automated build](/dynamics365/unified-operations/dev-itpro/dev-tools/version-models-build?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### Performance home page
+#### [Take a trace using Trace parser](/dynamics365/unified-operations/dev-itpro/perf-test/trace-trace-tutorial?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [PerfSDK and multiuser testing with Visual Studio Team Services](/dynamics365/unified-operations/dev-itpro/perf-test/perfsdk-tutorial?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Diagnose problems and analyze performance issues using Trace parser](/dynamics365/unified-operations/dev-itpro/perf-test/trace-parser?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Performance timer](/dynamics365/unified-operations/dev-itpro/perf-test/performance-timer?toc=/dynamics365/unified-operations/retail/toc.json)
+### Testing support in Visual Studio
+#### [Testing and validations](/dynamics365/unified-operations/dev-itpro/perf-test/testing-validation?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Test projects in Visual Studio](/dynamics365/unified-operations/dev-itpro/perf-test/testing-support?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Deployment with continuous build and test automation](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation?toc=/dynamics365/unified-operations/retail/toc.json)
+### Dates
+#### [Date effectivity](/dynamics365/unified-operations/dev-itpro/dev-tools/date-effectivity?toc=/dynamics365/unified-operations/retail/toc.json)
+### Licensing
+#### [ISV licensing](/dynamics365/unified-operations/dev-itpro/dev-tools/isv-licensing?toc=/dynamics365/unified-operations/retail/toc.json)
+
+## [User interface development](/dynamics365/unified-operations/dev-itpro/user-interface/user-interface-development-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
+### Tutorials
+#### [Build the Rental Charge Type form](/dynamics365/unified-operations/dev-itpro/user-interface/build-rental-charge-type-form?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Build the Customer form](/dynamics365/unified-operations/dev-itpro/user-interface/build-customer-form?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Build navigation](/dynamics365/unified-operations/dev-itpro/user-interface/build-navigation?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Build a workspace](/dynamics365/unified-operations/dev-itpro/user-interface/build-workspace?toc=/dynamics365/unified-operations/retail/toc.json)
+### Forms
+#### [Navigation in Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/user-interface/page-navigation?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Layout in Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/user-interface/page-layout?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Symbol font](/dynamics365/unified-operations/dev-itpro/user-interface/symbol-font?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Test forms with custom patterns](/dynamics365/unified-operations/dev-itpro/user-interface/testing-forms-custom-patterns?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Create and use deep links](/dynamics365/unified-operations/dev-itpro/user-interface/create-deep-links?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Accessibility in forms, products, and controls](/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Customize field Help](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help?toc=/dynamics365/unified-operations/retail/toc.json)
+### Controls
+#### [Action controls](/dynamics365/unified-operations/dev-itpro/user-interface/action-controls?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Input controls and grid column sizes](/dynamics365/unified-operations/dev-itpro/user-interface/sizing-input-controls-grid-columns?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Check box support in tree controls](/dynamics365/unified-operations/dev-itpro/user-interface/check-box-tree-controls?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Filters](/dynamics365/unified-operations/dev-itpro/user-interface/filtering?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [PowerApps Host control](/dynamics365/unified-operations/dev-itpro/user-interface/powerapps-host-control?toc=/dynamics365/unified-operations/retail/toc.json)
+### Window management
+#### [Migrate context menu code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/code-migration-context-menus?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Migration mouse double-click code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/code-migration-double-click?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Contextual data entry for lookups](/dynamics365/unified-operations/dev-itpro/user-interface/contextual-data-entry-lookups?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [HierarchyViewer control](/dynamics365/unified-operations/dev-itpro/user-interface/hierarchy-viewer-control?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Lookup controls](/dynamics365/unified-operations/dev-itpro/user-interface/lookups-controls?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [File upload controls](/dynamics365/unified-operations/dev-itpro/user-interface/file-upload-control?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [System-defined buttons](/dynamics365/unified-operations/dev-itpro/user-interface/system-defined-buttons?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Images](/dynamics365/unified-operations/dev-itpro/user-interface/images-form-grid?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Font and background colors for input, table, and grid controls](/dynamics365/unified-operations/dev-itpro/user-interface/specify-color-font-background-controls?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Right-to-left language support and bidirectional text](/dynamics365/unified-operations/dev-itpro/user-interface/bidirectional-support?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Create icons for workspace tiles](/dynamics365/unified-operations/dev-itpro/user-interface/create-icons-workspace-tiles?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Extensible controls - Public JavaScript APIs](/dynamics365/unified-operations/dev-itpro/user-interface/public-javascript-apis?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Control checklist](/dynamics365/unified-operations/dev-itpro/user-interface/control-checklist?toc=/dynamics365/unified-operations/retail/toc.json)
+### Messages
+#### [Slider and MessageBox](/dynamics365/unified-operations/dev-itpro/user-interface/slider-messagebox?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Message center, message bar, and message details API](/dynamics365/unified-operations/dev-itpro/user-interface/messaging-api-center-bar-details?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Message center, message bar, and message details FAQ](/dynamics365/unified-operations/dev-itpro/user-interface/messaging-user?toc=/dynamics365/unified-operations/retail/toc.json)
+### Primary form pattern guidelines
+#### [Select a form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/select-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Form styles and patterns](/dynamics365/unified-operations/dev-itpro/user-interface/form-styles-patterns?toc=/dynamics365/unified-operations/retail/toc.json)
+### Form patterns
+#### [General form guidelines](/dynamics365/unified-operations/dev-itpro/user-interface/general-form-guidelines?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Details Master form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/details-master-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Details Transaction form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/details-transaction-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Form Part Section List form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-list-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [List Page form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/list-page-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Simple Details form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/simple-details-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Simple List and Details form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/simple-list-details-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Simple List form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/simple-list-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Table of Contents form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/table-of-contents-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Task Double form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/task-double-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Task Single form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/task-single-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Wizard form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/wizard-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Workspace form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/workspace-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+### Secondary form patterns
+#### [Advanced selection form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/advanced-selection-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Dialog form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/dialog-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Drop Dialog form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/drop-dialog-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Lookup form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/lookup-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [FactBox form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/factbox-form-patterns?toc=/dynamics365/unified-operations/retail/toc.json)
+### Sub patterns
+#### [Custom Filter Group subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/custom-filter-group-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Dimension entry control subpattern](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Dimension Expression Builder subpattern](/dynamics365/unified-operations/dev-itpro/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Fields and Field Groups subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/fields-field-groups-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Filters and Toolbar subpatterns](/dynamics365/unified-operations/dev-itpro/user-interface/filters-toolbar-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Fill Text subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/fill-text-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Horizontal Fields and Buttons Group subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/horizontal-fields-buttons-group-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Image Preview subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/image-preview-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [List Panel subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/list-panel-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Nested Simple List and Details subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/nested-simple-list-details-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Section Chart form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-chart-form-pattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Section Power BI subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-powerbi-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Section Related Links subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-related-links-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Section Stacked Chart subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-stacked-chart-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Section Tabbed List subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-tabbed-list-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Section Tiles subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-tiles-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Tabular Fields subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/tabular-fields-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Toolbar and Fields subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/toolbar-fields-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Toolbar and List subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/toolbar-list-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Workspace Page Filter Group subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/workspace-filter-group-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+### Control extensibility
+#### [Build an extensible control](/dynamics365/unified-operations/dev-itpro/user-interface/build-extensible-control?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Keyboard shortcuts for extensible controls](/dynamics365/unified-operations/dev-itpro/user-interface/keyboard-shortcuts-controls?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Extensible control programming reference](/dynamics365/unified-operations/dev-itpro/user-interface/extensible-control-programming-reference?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Control extensibility](/dynamics365/unified-operations/dev-itpro/user-interface/control-extensibility?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Create localizable labels](/dynamics365/unified-operations/dev-itpro/user-interface/create-localizable-labels-client?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Extensible control layout guidelines](/dynamics365/unified-operations/dev-itpro/user-interface/extensible-controls-layout?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Control the text that Task Recorder generates for a control](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-control-text?toc=/dynamics365/unified-operations/retail/toc.json)
+### Build workspaces
+#### [Build operational workspaces](/dynamics365/unified-operations/dev-itpro/user-interface/build-workspaces?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Tile and list caching for workspaces](/dynamics365/unified-operations/dev-itpro/user-interface/tile-list-caching-workspaces?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Task Recorder quick reference](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-quick-reference?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Create documentation or training using Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=/dynamics365/unified-operations/retail/toc.json)
+
+## Release solutions using Lifecycle Services
+### [Develop and release](/dynamics365/unified-operations/dev-itpro/lcs-solutions/lcs-solutions-app-source)
+### [Stage and publish](/dynamics365/unified-operations/dev-itpro/lcs-solutions/marketing-content-lcs-solutions)
+### [Add a methodology](/dynamics365/unified-operations/dev-itpro/lcs-solutions/methodologies-lcs-solutions)
+### [Set up Business process modeler libraries](/dynamics365/unified-operations/dev-itpro/lcs-solutions/business-process-modeler-libraries-lcs-solutions)
+### [Migrate code](/dynamics365/unified-operations/dev-itpro/lcs-solutions/code-migration-lcs-solutions)
+### [Validate an application](/dynamics365/unified-operations/dev-itpro/lcs-solutions/app-validation-lcs-solutions)
+### [Process and consume data packages](/dynamics365/unified-operations/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions)
+### [Back up a solution database](/dynamics365/unified-operations/dev-itpro/lcs-solutions/database-backup-lcs-solutions)
+
+### [Localizations](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region)
+#### [Classify localization features](/dynamics365/unified-operations/dev-itpro/lcs-solutions/classify-localization-features)
+#### [Country/region context](/dynamics365/unified-operations/dev-itpro/lcs-solutions/apply-country-context)
+#### [Regulatory certifications](/dynamics365/unified-operations/dev-itpro/lcs-solutions/regulatory-certifications)
+#### [Regulatory updates](/dynamics365/unified-operations/dev-itpro/lcs-solutions/regulatory-watch-communication)
+#### [Separate localization models](/dynamics365/unified-operations/dev-itpro/lcs-solutions/separate-localization-models)
+#### [Submit a regulatory alert](/dynamics365/unified-operations/dev-itpro/lcs-solutions/submit-localization-alerts)
+
+
+
+## Financials development
+### [Dimensions](/dynamics365/unified-operations/dev-itpro/financial/dimensions?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Add dimensions to an Excel template](/dynamics365/unified-operations/dev-itpro/financial/dimensions-overview?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Dimension Entry control dialog support](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-dialog-support?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Dimension entry control migration ](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-migration?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Dimension entry control uptake](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-uptake?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Dimension Expression Builder subpattern](/dynamics365/unified-operations/dev-itpro/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Financial dimension configuration for integrating applications](/dynamics365/unified-operations/dev-itpro/financial/financial-dimension-configuration-integration?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Activate financial dimensions](/dynamics365/unified-operations/dev-itpro/financial/activate-financial-dimensions?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Financial dimensions and main accounts in a right-to-left language](/dynamics365/unified-operations/dev-itpro/financial/financial-dimensions-main-accounts-right-left-language?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Make a backing table be consumable as a Financial dimension](/dynamics365/unified-operations/dev-itpro/financial/dimensionable-entities?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Segmented entry control migration ](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-conversion?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Segmented entry control dialog support](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-dialog-support?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Segmented entry control metadata](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-metadata-specification?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Segmented entry control migration guidance](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-migration-guidance?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Segmented entry control parm methods](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-parm-method-specification?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Add the ability to look up values for financial dimensions in Microsoft Excel templates](/dynamics365/unified-operations/dev-itpro/financial/add-dimensions-excel-templates?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Create exchange rate providers](/dynamics365/unified-operations/dev-itpro/financial/create-exchange-rate-providers?toc=/dynamics365/unified-operations/retail/toc.json)
+
+## Supply chain development
+### [Gantt development guide](/dynamics365/unified-operations/dev-itpro/user-interface/gantt-development-guide?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Create a new transportation management engine](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/unified-operations/retail/toc.json)
+
+
+## Deployment
+### [Deploy a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Azure Resource Manager onboarding](/dynamics365/unified-operations/dev-itpro/deployment/arm-onboarding?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### [Deploy Microsoft Dynamics 365 for Finance and Operations on-premises](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+
+### Deploy custom code
+#### [Create a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Apply a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Install a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/install-deployable-package?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### [Cloud Service Provider downloads and Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/retail/toc.json)
+
+## [Upgrade and migration](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Analyze - Use the Upgrade analyzer tool to plan upgrade](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Analyze – Use the Code upgrade service to estimate the effort to upgrade code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analyze-code-upgrade?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Analyze - Deploy a sandbox enviroment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Upgrade - Data upgrade in a development environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Upgrade - AX 2012 data upgrade tasks](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Upgrade - Data upgrade in a sandbox environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Validate - Cutover testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Validate - Tasks to perform after upgrade](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Validate - Functional testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Validate - Prepare for go live](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep?toc=/dynamics365/unified-operations/retail/toc.json)
+
+
+#### Changes that affect upgrade from AX 2012
+##### [Single voucher and currency revaluation upgrade ](/dynamics365/unified-operations/dev-itpro/migration-upgrade/single-voucher-and-currency-revaluation-upgrade?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Project resource scheduling data model](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-model-changes-resource-management?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Workflow subsystem changes](/dynamics365/unified-operations/dev-itpro/migration-upgrade/workflow-subsystem?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Why we moved from cubes to aggregate models](/dynamics365/unified-operations/dev-itpro/migration-upgrade/in-memory-real-time-aggregate-models?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Migrate an upgraded sales cube to the entity store](/dynamics365/unified-operations/dev-itpro/migration-upgrade/migrate-upgraded-cube-entity-store?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### Code migration and upgrade
+#### [Prepare to migrate code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-migration?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Configure Visual Studio Team Services mapping during code migration](/dynamics365/unified-operations/dev-itpro/migration-upgrade/configure-vso-solution?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Split models](/dynamics365/unified-operations/dev-itpro/dev-tools/model-split?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Use delegates to solve dependencies between models](/dynamics365/unified-operations/dev-itpro/migration-upgrade/delegates-migration?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### Upgrade to a recent update
+#### [Prepare to move to the latest update](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Lifecycle policy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Upgrade to the latest platform update](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Upgrade the Dynamics platform to the August 2016 release](/dynamics365/unified-operations/dev-itpro/migration-upgrade/update-platform-each-release?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Upgrade a sandbox environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-sandbox-environment?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Upgrade data in development or demo environments](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-to-latest-update?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Update development tools](/dynamics365/unified-operations/dev-itpro/dev-tools/update-development-tools?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### Hotfixes and servicing
+#### [Download hotfixes from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Install a metadata hotfix](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Install a financial reporting binary hotfix](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-financial-reporting-binary-hotfix?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Patch Reporting Services in a one-box environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/patch-reporting-service-environment?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### Deprecations
+#### [Deprecated APIs](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-apis?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Deprecated features](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/retail/toc.json)
+
+
+
+## System administration
+### [Platform monthly updates FAQ](/dynamics365/unified-operations/dev-itpro/sysadmin/faq-platform-monthly-updates?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Add links to your organization's legal terms and privacy statement](/dynamics365/unified-operations/dev-itpro/sysadmin/legal-terms-privacy-statement?toc=/dynamics365/unified-operations/retail/toc.json)
+### [License codes and configuration keys report](/dynamics365/unified-operations/dev-itpro/sysadmin/license-codes-configuration-keys-report?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Cross-company data sharing](/dynamics365/unified-operations/dev-itpro/sysadmin/cross-company-data-sharing?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Maintenance mode](/dynamics365/unified-operations/dev-itpro/sysadmin/maintenance-mode?toc=/dynamics365/unified-operations/retail/toc.json)
+### Security
+#### [Role-based security](/dynamics365/unified-operations/dev-itpro/sysadmin/role-based-security?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Security architecture](/dynamics365/unified-operations/dev-itpro/sysadmin/security-architecture?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Security reports](/dynamics365/unified-operations/dev-itpro/sysadmin/security-reports?toc=/dynamics365/unified-operations/retail/toc.json)
+### Batch processing
+#### [Batch processing overview](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-processing-overview?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Batch server overview](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-server-overview?toc=/dynamics365/unified-operations/retail/toc.json)
+
+## Lifecycle Services
+### [Overview of Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [LCS for customers](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [LCS for partners](/dynamics365/unified-operations/dev-itpro/lifecycle-services/getting-started-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [What's new](/dynamics365/unified-operations/dev-itpro/lifecycle-services/whats-new-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Known issues](/dynamics365/unified-operations/dev-itpro/lifecycle-services/known-issues?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Dynamics Lifecycle Services user guide](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Configure security](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-lcs-security?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Issue search](/dynamics365/unified-operations/dev-itpro/lifecycle-services/issue-search-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Configuration manager](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configuration-manager-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Set up Configuration manager ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/set-up-configuration-manager-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Configure the code upgrade service](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-execute-code-upgrade?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Create a methodology ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/create-methodology?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Business process modeler](/dynamics365/unified-operations/dev-itpro/lifecycle-services/business-process-modeler-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Business process libraries in business process modeler](/dynamics365/unified-operations/dev-itpro/lifecycle-services/business-process-libraries-business-process-modeler?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Business process modeler flowcharts](/dynamics365/unified-operations/dev-itpro/lifecycle-services/flowcharts-business-process-modeler?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Upload custom business processes](/dynamics365/unified-operations/dev-itpro/lifecycle-services/upload-business-processes-bpm-task-recorder?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Monitoring and diagnostics ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/monitoring-diagnostics?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Asset library](/dynamics365/unified-operations/dev-itpro/lifecycle-services/asset-library?toc=/dynamics365/unified-operations/retail/toc.json)
+
+### Dynamics AX 2012 Lifecycle Services features
+#### Deployment
+##### [Cloud-hosted environments](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/cloud-hosted-environments-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Copy a configuration](/dynamics365/unified-operations/dev-itpro/lifecycle-services/copy-configuration-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Plan a Dynamics AX 2012 R3 deployment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/plan-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Deploy Dynamics AX 2012 R3 on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-2012-r3-azure-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Deploy a Dynamics AX 2012 R3 demo environment](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Deploy a development environment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-development-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Deploy a high-availability environment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-high-availability-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Deploy a test environment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-test-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Manage your Dynamics AX 2012 R3 deployment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/manage-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Join Enterprise Portal servers into a single server farm](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/join-enterprise-portal-servers-single-server-farm?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Record entry points in Dynamics AX Enterprise Portal](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/record-entry-points-enterprise-portal?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Deploy a Retail e-commerce dev/test environment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-ecommerce-devtest-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Deploy a Retail essentials demo environment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-essentials-demo-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Deploy a Retail essentials dev/test environment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-essentials-devtest-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Deploy a Retail mobility dev/test environment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-mobility-devtest-environment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Troubleshoot your Dynamics AX 2012 R3 deployment on Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/troubleshoot-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Updates for Dynamics AX 2012 R3](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/update-2012-r3-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Data import/export framework user guide](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/user-guide-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Install](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Install for AX 2012 R3](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-ax-2012-r3?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Install the Dynamics AX 2012 R2 CU7 version for SQL Server 2014](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-dixf-ax-2012-r2-cu7-ss-2014?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Migrate data](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/migrate-data-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Configure the version of SSIS](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/configure-sql-server-integration-services-multiple-versions-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Copy and compare entity data between companies](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/copy-compare-entity-data-between-companies-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Copy data between Dynamics AX companies](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/copy-data-between-companies-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Copy data between Dynamics AX instances](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/copy-data-between-instances-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Create a custom target entity](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-custom-target-entity-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Data import/export framework entities](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/entities-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Import data from a CSV data source](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-data-csv-data-source-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Import data from an ODBC data source](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-data-odbc-data-source-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Demo files](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/demo-files-dixf?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Quick Import-export](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/quick-import-export?toc=/dynamics365/unified-operations/retail/toc.json)
+#### Tables 
+##### [Create tables](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-tables?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Table properties](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/table-properties?toc=/dynamics365/unified-operations/retail/toc.json)
+#### Dynamics AX 2012 LCS tools
+##### [Projects](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/projects-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Methodologies](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/methodologies-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Customization analysis ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/customization-analysis-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Infrastructure estimator](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/infrastructure-estimator-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [License sizing estimator](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/license-sizing-estimator-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Requests for proposal (/dynamics365/unified-operations/dev-itpro/lifecycle-services/RFP) responses](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/rfp-responses-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [System diagnostics](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/system-diagnostics-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Install and run System diagnostics](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-run-system-diagnostics-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Upgrade analysis](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/upgrade-analysis-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Usage profiler](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/usage-profiler-lcs?toc=/dynamics365/unified-operations/retail/toc.json)
+#### Dynamics AX 2012 downloadable tools
+##### [Code Upgrade Tool User Guide (deprecated)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/code-upgrade-tool-user-guide?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Lifecycle Services downloadable tools](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/lcs-downloadable-tools-formerly-informationsource?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Test Data Transfer Tool (beta)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/test-data-transfer-tool-beta-2012?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Install](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Run](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/run-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Import demo data for AX 2012 R3](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Security Development Tool](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/overview-security-development-tool-user-interface?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Install](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-security-development-tool?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [User Guide](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/security-development-tool-user-guide?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Define or edit entry point permissions](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/define-edit-entry-point-permissions?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Performance Benchmark Software Development Toolkit](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Security Upgrade Advisor Tool](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/security-upgrade-advisor-tool-user-guide?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Intelligent Data Management Framework (IDMF)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/microsoft-idmf?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Overview](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/overview-idmf?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Installation Guide](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/installation-guide-idmf?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Configuration](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/configuration-functionality-idmf-workspace?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Analysis](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/analysis-functionality-idmf-workspace?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Purge and archive objects](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/work-with-purge-objects-archive-objects?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Create archive objects](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-archive-objects?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Create purge objects](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-purge-objects?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Schedule purge and analysis tasks](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/schedule-purge-analysis-tasks?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [View purge or archive jobs](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/view-status-purge-archive-jobs?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Maintain](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/maintain-idmf?toc=/dynamics365/unified-operations/retail/toc.json)
+###### [Troubleshoot](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/troubleshoot-idmf?toc=/dynamics365/unified-operations/retail/toc.json)
+
+## Database management
+### [Copy a database from Azure SQL Database to a SQL Server environment](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-azure-sql-to-sql-server?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Copy a database from SQL Server to a production Azure SQL Database environment](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-sql-server-to-azure-sql?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Restore a database on a non-production environment](/dynamics365/unified-operations/dev-itpro/database/request-point-in-time-restore?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Export a copy of a database to restore later](/dynamics365/unified-operations/dev-itpro/database/copy-operations-database?toc=/dynamics365/unified-operations/retail/toc.json)
+
+## Support
+### [Get support for Dynamics 365 for Finance and Operations, Enterprise edition and Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support)
+### [Log a premier support ticket](/dynamics365/unified-operations/dev-itpro/lifecycle-services/premier-support)
+### [Submit a request to the Dynamics Service Engineering team](/dynamics365/unified-operations/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team)
+### [Set up technical support for Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/lifecycle-services/support-experience) 
+### [Planned maintenance window FAQ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/planned-maintenance-window-faq) 
+### [Cloud operations and servicing](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-operations-servicing?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Manage Finance and Operations Support experiences](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs?toc=/dynamics365/unified-operations/retail/toc.json)

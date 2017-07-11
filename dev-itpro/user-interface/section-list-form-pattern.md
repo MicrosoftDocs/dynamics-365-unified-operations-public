@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 29211
 ms.assetid: 05e02e22-6b71-45f2-bacd-5e3f8ea898fb
@@ -60,39 +60,30 @@ These patterns did not exist for Microsoft Dynamics AX 2012.
 ## Model
 ### Form Part Section List: High-level structure
 
-Design | Container
+- Design | Container
 
-*Header (Group) \[Optional\] * – This must use one of the [Filters and Toolbar](filters-toolbar-subpattern.md) subpatterns.
-
-Grid
-
-*GridDefaultAction (Button) \[Optional\]*
-
-*SeeMoreButton (Button) \[Optional\]*
+    - *Header (Group) \[Optional\]* – This must use one of the [Filters and Toolbar](filters-toolbar-subpattern.md) subpatterns.
+    - Grid
+    - *GridDefaultAction (Button) \[Optional\]*
+    - *SeeMoreButton (Button) \[Optional\]*
 
 ### Form Part Section List - Double: High-level structure
 
-Design | Container
+- Design | Container
 
-PrimaryGroup (Group)
+    - PrimaryGroup (Group)
 
-*Header (Group) \[Optional\] * – This must use one of the [Filters and Toolbar](filters-toolbar-subpattern.md) subpatterns.
+        - *Header (Group) \[Optional\]* – This must use one of the [Filters and Toolbar](filters-toolbar-subpattern.md) subpatterns.
+        - Grid
+        - *GridDefaultAction (Button) \[Optional\]*
+        - *SeeMoreButton (Button) \[Optional\]*
 
-Grid
+    - SecondaryGroup (Group)
 
-*GridDefaultAction (Button) \[Optional\]*
-
-*SeeMoreButton (Button) \[Optional\]*
-
-SecondaryGroup (Group)
-
-*Header (Group) \[Optional\] * – This must use one of the [Filters and Toolbar](filters-toolbar-subpattern.md) subpatterns.
-
-Grid
-
-*GridDefaultAction (Button) \[Optional\]*
-
-*SeeMoreButton (Button) \[Optional\]*
+        - *Header (Group) \[Optional\]* – This must use one of the [Filters and Toolbar](filters-toolbar-subpattern.md) subpatterns.
+        - Grid
+        - *GridDefaultAction (Button) \[Optional\]*
+        - *SeeMoreButton (Button) \[Optional\]*
 
 ### Core components
 
@@ -108,7 +99,7 @@ Grid
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
 -   **General form guidelines**
-    -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
+    -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 -   **Pattern-specific guidelines**
     -   If a backing form exists, and especially if not all the records are shown in the list, a **See more** button should appear at the bottom of the list, so that the user can see the full list.
     -   Up to two important filters exist above the list.
@@ -119,7 +110,7 @@ The verification checklist shows the steps for manually verifying that the form 
     -   Card grids show no more than four fields (not including an image).
     -   Tabular grids show no more than eight fields.
 -   **Form Part Section List - Double guidelines**
-    -   If both lists have actions and/or filters, both list must use the same [Filters and Toolbar](filters-toolbar-subpattern.md)subpattern (either the Stacked variant or the Inline variant).
+    -   If both lists have actions and/or filters, both list must use the same [Filters and Toolbar](filters-toolbar-subpattern.md) subpattern (either the Stacked variant or the Inline variant).
 
 ## Examples
 ### Form Part Section List
@@ -142,6 +133,3 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
-
-
-

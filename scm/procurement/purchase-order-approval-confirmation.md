@@ -19,7 +19,9 @@ audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2084
 
-ms.search.scope: AX 7.0.0, Operations, Core
+
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
@@ -35,6 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+[!include[retail name](../includes/retail-name.md)]
 
 This article describes the statuses that a purchase order (PO) goes through after it has been created, and the effect of enabling change management on POs.
 
