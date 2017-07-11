@@ -1974,26 +1974,6 @@ Dynamics AX 2012 R3 CU 11 to leverage the N-1 support.
 
 For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](/unified-operations/%20retail/dev-itpro/overview-upgrade-n-minus1) and [N-1 installation and configuration](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1).
 
-**Social**
-==========
-
-Conversation view for private messages and Twitter replies 
------------------------------------------------------------
-
-Starting with this update, Social Engagement shows you any conversation that
-involves private messages (Facebook or Twitter) and Twitter replies of one of
-your social profiles. It displays the back and forth between two authors sorted
-by showing the latest post first. At the top, you will see the two authors,
-including the one that belongs to your team. It also shows the team members who
-answered as that social profile.
-
-For more information, see [View posts and conversations in Social Engagement](https://www.microsoft.com/en-us/dynamics/social-engagement-help-and-training/view-posts-and-conversations-in-social-engagement.aspx).
-
-LinkedIn engagement and acquisition
------------------------------------
-
-You can monitor LinkedIn Company Pages owned by your company, and engagement on
-posts and comments from Company Pages.
 
 **Supply chain management**
 ===========================
