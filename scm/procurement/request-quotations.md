@@ -91,7 +91,9 @@ The %Reason for bid return% and %Reason for amendment% tokens are replaced by te
 
 If you want to use reason codes on a RFQ reply to indicate why a bid was rejected or accepted, you must set up reason codes on the **Vendor reasons** page.  
 
-You can configure the appearance of your printed or stored RFQ documents on the **Form setup** page in Procurement and sourcing.  
+You can configure the appearance of your printed or stored RFQ documents on the **Form setup** page in Procurement and sourcing. 
+
+Note: For public sector configuration, the field locking parameter **Lock RFQ when they are sent** in **Procurement and sourcing parameters** is always set to **Yes** and this cannot be changed.
 
 When you create an RFQ for a purchase order and add an inventory item to the RFQ, an inventory transaction is generated that has a receipt status of **Quotation receipt**. Only RFQ lines that have this status are considered when you use a master plan to calculate supplies. If you want the master plan to include RFQ lines as an expected receipt, you must configure this behavior in the setup of master planning.  
 
