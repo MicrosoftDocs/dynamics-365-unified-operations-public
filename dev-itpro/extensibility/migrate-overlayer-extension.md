@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinarh
+ms.reviewer: robinr
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 89563
@@ -25,7 +25,7 @@ ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: pvillads
-ms.search.validFrom: 2017-07/01
+ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ---
 
@@ -58,15 +58,15 @@ There will be cases where you can only reach your functional goal by implementin
 
 "Being future-proof" as a competitive advantage, it is worth the extra effort to get right.
 
-# Obtaining an overview
+# Obtain an overview of your code
 
-When you try to obtain an overview, they first consider analyzing each of your solutions independently rather than altogether. This may be practical even if you have different teams each working on the separate solutions, as you may consider one team to engage earlier than others to obtain some experience there first. Experience is valuable both in the sense of how to analyze, and plan the work, while also for the team to ramp up and become familiar with the extensibility model. Jointly this may prove to become valuable lessons learned from this can be applied on later solutions.
+When you create an overview of your code, first consider analyzing each of your solutions independently rather than altogether. This may be practical even if you have different teams each working on the separate solutions, as you may consider one team to engage earlier than others to obtain some experience there first. Experience is valuable both in the sense of how to analyze, and plan the work, while also for the team to ramp up and become familiar with the extensibility model. Jointly this may prove to become valuable lessons learned from this can be applied on later solutions.
 
 Practically we have experience from ISVs that take each of their ISV solutions in turn, and some ISVs that also operate as VARs take customer solutions later.
 
-Irrespective on how the work is pieced up in solutions, one convenient means of getting information on what has been overlayered is with the CAR report. The CAR report is the report that is generated when you submit your solutions to the Code Migration tool on LCS. The CAR report in Excel format includes a list of all placed with overlayered code. This file can be used to both analyze and categorize all overlayered instances in your solution.
+No matter how the work is pieced up in solutions, one convenient means of getting information on what has been overlayered is with the [Customization Analysis Report (CAR)](..\dev-tools\customization-analysis-report.md). This report is generated when you submit your solutions to the Code Migration tool on LCS. The report, in Excel format, includes a list of all placed with overlayered code. This file can be used to both analyze and categorize all overlayered instances in your solution.
 
-Then to obtain an overview it is commonly helpful to categorize each overlayered instance. It is suitable to apply categories to the overlayered instances that roughly represent the effort associated with changing to extensions. There are overlayer code that will seamless render itself to transform into extensions, but then there are also those that require more.
+To obtain an overview it is commonly helpful to categorize each overlayered instance. It is suitable to apply categories to the overlayered instances that roughly represent the effort associated with changing to extensions. Some customizations will easily transform into extensions, but there will be other customizations that will not.
 
 From working with a number of ISVs we have found the following categories a good basis for the initial categorization.
 
@@ -89,41 +89,37 @@ From working with a number of ISVs we have found the following categories a good
 
 Having all overlaying code categorized helps obtain an overview of what needs to be changed.
 
-# Analyzing for impact and estimate work
+# Analyzing for impact and estimating work
 
-The common approach of breaking down tasks into something tangible to help assessing the work impact also applies with this work. The categories discussed in the prior paragraph helps frame similar customizations, and a first pass on estimates may be built from coming up with an overall estimate for each of these and similar categories that make up your solution. The group of customizations in a given category often has a few extremes that stand out, and it may suitable to establish estimates for these individually.
+The common approach of breaking down tasks into something tangible to help assessing the work impact also applies with this work. The categories discussed in the prior paragraph help frame similar customizations, and a first pass on estimates may be built from coming up with an overall estimate for each of these and similar categories that make up your solution. The group of customizations in a given category often has a few extremes that stand out, and it may suitable to establish estimates for these individually.
 
-Do consider that some customization will either require a request to Microsoft for enabling extensibility, or alternative refactoring of the customization in ways it can be done through extensibility. This will add to estimates for migrating the solution.
+Do consider that some customizations will either require a request to Microsoft for enabling extensibility, or perhaps significant refactoring of the customization so that it can be done through extensibility. This will add to estimates for migrating the solution.
 
-Customization that drives what we refer to as intrusive changes are often more complex to migrate into becoming extension based. These changes require consideration on what is the right way to approach the customization. This list contains examples to where this may be the case.
+Customization that drives what we refer to as intrusive changes are often more complex to convert to extensions. These changes require consideration on what is the right way to approach the customization. This list contains examples where this may be the case.
 
-| Customization       |
-|:----------------|
-|Customization that request inline delegates |
-|Customization of complex classes / methods like SalesLinetype |
-| Changes to method signature |
-| Adding inventory dimensions |
-| Report changes to report definition and data provider classes |
-| Intrusive change to forms |
++ Customizations that request inline delegates 
++ Customizations of complex classes or methods like SalesLinetype
++ Changes to method signature
++ Adding inventory dimensions
++ Changes to report definitions and report data provider classes
++ Intrusive change to forms
 
-Changes that require different approaches for customization to become extension based, may result in logging requests for enabling extensibility to Microsoft. Make sure to account for both the time that go into this as schedule impact into your plans.
+Changes that require different approaches for customization to become extension-based might result in logging requests for enabling extensibility to Microsoft. Make sure to account for both the time that go into this as schedule impact into your plans.
 
-# What is supported, and what require logging an extensibility request?
+# What is supported, and what requires logging an extensibility request?
 
-When you review a customization make so to consider different options for building this through extensions. Make sure to review options like if a method is hookable, or possible as class extension, form event or what else is offered that can be used. Review most current available application code you have available, which includes planned monthly CTP drops as downloadable VHD's. A source of information that offer guidance is the what's new for customizations changelog that are planned to be published regularly.
+When you review a customization make sure to consider different options for converting it to an extension. Make sure to review options such as whether a method is hookable or whether it could be a class extension or form event. Review most current available application code you have available, which includes planned monthly CTP drops as downloadable VHDs.
 
-Some customizations end up with the conclusion that a change to the standard application is required to enable the customization by extensions. This is where an extensibility request must be logged through the connect feedback program, to put this into the backlog at Microsoft for to address. Do **not** log extensibility request by opening requests for hotfix, as Microsoft will not release extensibility requests as hotfixes.
+You might conclude that a change to the standard application is required to enable the required extension. This is where an extensibility request must be logged through the Connect feedback program, to put this into the backlog at Microsoft for to address. Do not log extensibility request by opening requests for hotfix, as Microsoft will not release extensibility requests as hotfixes.
 
-Make sure to supply sufficient context information with extensibility requests. For instance, a request for an inline delegate may come from the current customization approach, while the requirement that led to this customizaition might be better served with a structure change to the standard application to better accommodate extension. We from Microsoft appreciate suggestions like this as it helps bring the application toward a better platform for building different customizations.
+Make sure to supply sufficient context information with extensibility requests. For instance, a request for an inline delegate may come from the current customization approach, while the requirement that led to this customization might be better served with a structure change to the standard application to better accommodate extension. We appreciate suggestions like this as it helps bring the application toward a better platform for building different customizations.
 
 # Planning the migration
 
-Make sure to start early with planning migration of your solutions. This is particularly advisable to ensure room in your schedules for identifying extensibility requests, logging these, and time inferred before these can become available for you to deploy. Also acknowledge your developers may require building new skills and make sure to cater for any required learning is part of the migration plan.
+Make sure to start early with planning migration of your solutions. This is particularly advisable to ensure room in your schedules for identifying extensibility requests, logging the requests, and time delay before these can become available in product releases. Also acknowledge that your developers may require building new skills and make sure to cater for any required learning is part of the migration plan.
 
-Microsoft plan to release CTP drops regularly as VHD downloads, that will include up to date application code. The general idea is to offer that partners can work concurrently with Microsoft toward the next release. This is to minimize the time lag after the new release is made public available to when your solution is ready to be deployed.
+We plan to release CTP drops regularly as VHD downloads. Those will include up-to-date application code. The general idea is that you will be able to work concurrently with Microsoft toward the next release. This is to minimize the time lag after the new release is made public available to when your solution is ready to be deployed.
 
-You solution may contain intrusive customizations that are not easy to accommodate through extensions. Here optionally consider if the business value of these customization outweighs the effort of building these through extensions. Some partners have decided to discontinue some part of their solution that they found impractical to rebuild by extensions, while at the same time they were not critical to their solution.
+You solution may contain intrusive customizations that are not easy to accommodate through extensions. You should consider whether the business value of these customization outweighs the effort of building these through extensions. Some partners have decided to discontinue some parts of their solutions that they found impractical to rebuild by extensions, as those parts were not critical to their solutions.
 
-You may be customizing smaller fixes across the application that you do not see core for your solution, yet find important for customers you engage with. In such cases consider if you would rather prefer to ask Microsoft for implementing similar capabilities in the standard application. In such cases we welcome that you share this by filing an extensibility requests for this, that we then may address not through your customization but directly in the standard application. For instance, customers may want to simplify standard business processes in the system, that may suggest we add options for disabling steps in the process in the standard application.
-
-The documentation around extensibility includes many small how to type of pages, that will further help assist your migration. Please use these resources and provide feedback if information is missing.
+You may be customizing smaller fixes across the application that you do not see core for your solution, yet find important for customers you engage with. In such cases you need to decide if you would prefer to ask Microsoft to implement similar capabilities in the standard application. You can enter an extensibility requests for this. For instance, customers may want to simplify standard business processes in the system, and you might suggest that we add options for disabling steps in the process in the standard application.
