@@ -1047,7 +1047,7 @@ bank account, and currency to get a better understanding of surpluses and short
 falls. Overall, you can get a temporal view of gaps and address them
 proactively.
 
-For more information, see [Cash flow forecasting](/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forcasting).
+For more information, see [Cash flow forecasting](/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting).
 
 Cost accounting Power BI reports
 --------------------------------
