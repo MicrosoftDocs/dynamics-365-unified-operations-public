@@ -121,17 +121,21 @@ First, upgrade your code as described in Scenario 2. This is a developer task a
 
 ### Upgrade your data
 
-Execute the data upgrade process on a copy of your target database – if your environment is already live in production then the target database is a copy of production; if your environment is not yet live, it will be your most current database. This is a validation process performed by a developer to ensure that the data upgrade completes successfully with the specific set of customizations within this environment – completion of this step helps ensure success in the sandbox and production environments later. To copy your database back to a developer environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](..\database\copy-database-from-azure-sql-to-sql-server.md). To execute the data upgrade process, follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
+Execute the data upgrade process on a copy of your target database – if your environment is already live in production then the target database is a copy of production; if your environment is not yet live, it will be your most current database. This is a validation process performed by a developer (on a development or test environment) to ensure that the data upgrade completes successfully with the specific set of customizations within this environment – completion of this step helps ensure success in the sandbox and production environments later. To copy your database back to a developer environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](..\database\copy-database-from-azure-sql-to-sql-server.md). To execute the data upgrade process, follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
 
 ### Upgrade your sandbox environment
 
 > [!NOTE]
 > The term *sandbox* refers to the default included "Sandbox: Standard acceptance test" Tier 2 environment provided in your subscription. 
 
-1.  Use LCS to submit an upgrade request to DSE. Go to the **Environment details** page for the environment that you want to upgrade, click **Maintain**, and then select **Upgrade**. A window will display where you can enter the upgrade request.
+1.  Use LCS to submit an upgrade request to DSE. 
+- Go to the **Environment details** page for the environment that you want to upgrade, click **Maintain**, and then select **Upgrade**. A window will display where you can enter the upgrade request.
+> [!NOTE]
+> The **Upgrade** button is currently in preview and will be made public as part of the LCS July release (currently scheduled for the 3rd week of July). Until then you can submit upgrade requests from the LCS support page > Service requests > Add > Other requests.
 ![Upgrade request](./media/UpgradeMaintainButton.PNG)
 - You must submit your upgrade request 5 working days before you expect to upgrade, to help ensure that the upgrade can be performed within your expected timeframe. The advanced notice is required to prepare a new environment in the background. When downtime starts, this new environment will be swapped with the existing environment. You will not be able to see the new environment, it's a background mechanism.
-- You must allow at least 8 hours between the downtime start and downtime end times. This time is required to perform the swap in of the new environment and the data upgrade process. 
+- You must allow at least 8 hours between the downtime start and downtime end times. This time is required to perform the swap in of the new environment and the data upgrade process.
+- The upgrade request flow allows you to select Application deployable packages (from the LCS asset library release candidates) that must be part of your  upgraded environment. These are the deployable packages that contain your upgraded custom code and X++ hotfixes that were created on a development or build environment during the code upgrade process. These deployable packages must be specified during the service request; otherwise, the service request may have to be aborted. 
  > [!NOTE]
  > A longer downtime of minimum 16 hours is required if using Retail features, as additional upgrade steps are needed.
 - If an error causes the upgrade process to stop, DSE will roll the environment back to its original state. The issue that caused the failure can then be resolved, and the upgrade can be rescheduled at a new time.
