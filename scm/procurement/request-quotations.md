@@ -2,7 +2,7 @@
 # required metadata
 
 title: Request for quotations (RFQs)
-description: This article provides an overview of requests for quotation (RFQs), which organizations issue when they must purchase items or services, and want to receive competitive offers from several vendors. In an RFQ, you ask vendors to provide the prices and delivery times for the item quantities that you specify. You can also ask vendors to specify whether there are any incidental charges, such as shipping costs, or any discounts for large orders or early payment of the vendor invoice.
+description: This topic provides an overview of requests for quotation (RFQs), which organizations issue when they must purchase items or services, and want to receive competitive offers from several vendors.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 06/20/2017
@@ -35,13 +35,13 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides an overview of requests for quotation (RFQs), which organizations issue when they must purchase items or services, and want to receive competitive offers from several vendors. In an RFQ, you ask vendors to provide the prices and delivery times for the item quantities that you specify. You can also ask vendors to specify whether there are any incidental charges, such as shipping costs, or any discounts for large orders or early payment of the vendor invoice.
+This topic provides an overview of requests for quotation (RFQs), which organizations issue when they must purchase items or services, and want to receive competitive offers from several vendors. In an RFQ, you ask vendors to provide the prices and delivery times for the item quantities that you specify. You can also ask vendors to specify whether there are any incidental charges, such as shipping costs, or any discounts for large orders or early payment of the vendor invoice.
 
 The request for quotation (RFQ) process covers the following tasks:
 
--   Creating and sending an RFQ to one or more vendors
--   Receiving and registering RFQ replies (bids)
--   Transferring accepted bids to a purchase order, purchase agreement, or purchase requisition
+-   Creating and sending an RFQ to one or more vendors.
+-   Receiving and registering RFQ replies (bids).
+-   Transferring accepted bids to a purchase order, purchase agreement, or purchase requisition.
 
 The following illustration provides an overview of the RFQ process.  
 
@@ -70,15 +70,15 @@ Here's the sequence of statuses for processing RFQs:
 3.  **Received**
 4.  **Accepted**/**Canceled**/**Rejected**
 
-The statuses will be described in more detail in later sections of this article.
+The statuses will be described in more detail in later sections of this topic.
 
 ## Setting up RFQ functionality
 Before you can create an RFQ case, you must set up RFQ information on the **Procurement and sourcing parameters** page. When you create an RFQ case, you can specify default values that are copied to the RFQ. You can specify the following default values:
 
--   The purchase type of new RFQs: **Purchase order** or **Purchase agreement**
--   Settings for expiration date and time
+-   The purchase type of new RFQs: **Purchase order** or **Purchase agreement**.
+-   Settings for expiration date and time.
 -   Delivery information and payment terms.
--   Fields that should be included in the RFQ reply
+-   Fields that should be included in the RFQ reply.
 
 You can override these values for a specific RFQ case. You should also configure the amendment process. As part of this configuration, you can turn on field locking. When field locking is turned on, a procurement professional who wants to amend an RFQ must first click **Create** in the **Amendment** section of the **Quotation** tab. After the RFQ has been updated with the amendment, the procurement professional must complete the process by clicking **Finalize**. The **Finalize** action generates an email message that notifies the vendors about the amended RFQ. You select the template for the email notification that is sent to vendors on the **Procurement and sourcing parameters** page. When a template is created, it can contain the following replacement tokens:
 
@@ -139,13 +139,13 @@ The following table shows how the RFQ status changes when you create an RFQ and 
 | **Action**                         | **Lowest RFQ header status** | **Highest RFQ header status**                   | **Lowest RFQ line status** | **Highest RFQ line status** |
 | Create the RFQ header and line.    | Created                      | Created                                         | Created                    | Created                     |
 | Send the RFQ to a specific vendor. | Sent                         | Sent                                            | Sent                       | Sent                        |
-| Add another vendor.                | Created                      | Sent(The RFQ has been sent to only one vendor.) | Created                    | Sent                        |
+| Add another vendor.                | Created                      | Sent (The RFQ has been sent to only one vendor.) | Created                    | Sent                        |
 | Send the RFQ to the second vendor. | Sent                         | Sent                                            | Sent                       | Sent                        |
 
 **Note:** You can add more vendors to an RFQ at any time, and the lowest and highest statuses change to reflect the new vendors. For example, if you received bids from all vendors and accepted at least one line on a bid, the lowest status in the RFQ header is **Rejected**, and the highest status is **Accepted**. If you add a new vendor, the lowest status on any line is now **Created**. Therefore, the lowest status in the RFQ header changes to **Created**, and the highest status remains **Accepted**.
 
 ## Amending an RFQ
-Occasionally, you must change an RFQ after you send it. This can occur because, for example, the delivery dates have changed, or you want additional products or different quantities of products. You can configure the amendment process so that it is either more restrictive or less restrictive.  
+Occasionally, you must change an RFQ after you send it. For example, this can occur if the delivery dates have changed, or you want additional products or different quantities of products. You can configure the amendment process so that it is either more restrictive or less restrictive.  
 
 If you use the more restrictive amendment process, you must click **Create** on the RFQ case to start an amendment before you can modify the fields on the RFQ case. After you've finished making your changes, you must click **Finalize**. You will then be guided through the process of adding information for the email message that is sent to notify vendors about the amendment. The updated RFQ report, which includes an amendment note, is automatically attached to the message.  
 
@@ -189,7 +189,7 @@ When you accept an RFQ reply of the **Purchase requisition** type, the RFQ reply
 
 On the reply, you can add a reason code to explain why you accepted or rejected a bid.  
 
-You can accept some lines in a bid and reject others. You can also accept lines from different vendors. Just be aware that if you accept some lines, you will be prompted to reject all the other lines. Therefore, if you want to accept other lines, you must click **Cancel** when you receive the prompt.  
+You can accept some lines in a bid and reject others. You can also accept lines from different vendors. Be aware that if you accept some lines, you will be prompted to reject all the other lines. Therefore, if you want to accept other lines, you must click **Cancel** when you receive the prompt.  
 
 The following table shows how the RFQ status changes as you accept and reject bids from vendors.
 
