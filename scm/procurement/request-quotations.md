@@ -80,7 +80,7 @@ Before you can create an RFQ case, you must set up RFQ information on the **Pro
 -   Delivery information and payment terms.
 -   Fields that should be included in the RFQ reply
 
-You can override these values for a specific RFQ case. You should also configure the amendment process. As part of this configuration, you can turn on field locking. When field locking is turned on, a procurement professional who wants to amend an RFQ must first click **Create** in the **Amendment** section of the **Quotation** tab. After the RFQ has been updated with the amendment, the procurement professional must complete the process by clicking **Finalize**.** **The Finalize action generates an email message that notifies the vendors about the amended RFQ. You select the template for the email notification that is sent to vendors on the **Procurement and sourcing parameters** page. When a template is created, it can contain the following replacement tokens:
+You can override these values for a specific RFQ case. You should also configure the amendment process. As part of this configuration, you can turn on field locking. When field locking is turned on, a procurement professional who wants to amend an RFQ must first click **Create** in the **Amendment** section of the **Quotation** tab. After the RFQ has been updated with the amendment, the procurement professional must complete the process by clicking **Finalize**. The **Finalize** action generates an email message that notifies the vendors about the amended RFQ. You select the template for the email notification that is sent to vendors on the **Procurement and sourcing parameters** page. When a template is created, it can contain the following replacement tokens:
 
 -   %Reason for bid return%
 -   %Reason for amendment%
@@ -93,7 +93,9 @@ If you want to use reason codes on a RFQ reply to indicate why a bid was rejecte
 
 You can configure the appearance of your printed or stored RFQ documents on the **Form setup** page in Procurement and sourcing. 
 
-Note: For public sector configuration, the field locking parameter **Lock RFQ when they are sent** in **Procurement and sourcing parameters** is always set to **Yes** and this cannot be changed.
+**Note:** For a public sector configuration, any changes to an RFQ that has already been sent will require the use of the amendment process. 
+When the RFQ is sent, fields are locked, so clicking **Create** to use the amendment process as described above is a mandatory step to make changes to the RFQ.
+This is controlled by the field locking parameter **Lock RFQ when they are sent** in **Procurement and sourcing parameters**. This parameter is set to **Yes** and this is a default that cannot be changed.
 
 When you create an RFQ for a purchase order and add an inventory item to the RFQ, an inventory transaction is generated that has a receipt status of **Quotation receipt**. Only RFQ lines that have this status are considered when you use a master plan to calculate supplies. If you want the master plan to include RFQ lines as an expected receipt, you must configure this behavior in the setup of master planning.  
 
