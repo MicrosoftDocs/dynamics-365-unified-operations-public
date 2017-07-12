@@ -2,8 +2,8 @@
 
 # required metadata
 
-title: Introduction
-description: 
+title: Application extensibility plans
+description: This topic discusses the requirements and schedule for converting code from overlayering-based to extension-based.
 author: FrankDahl
 manager: AnnBe
 ms.date: 07/10/2017
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-07-10
 ms.dyn365.ops.version: Platform update 1
 ---
 
-# Announcing application extensibility plans
+# Application extensibility plans
 
 [!include[banner](../includes/banner.md)]
 
