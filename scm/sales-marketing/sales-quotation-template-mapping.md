@@ -138,10 +138,10 @@ The following illustrations show an example of a template mapping in data integr
 
 ## Related topics
 
-[Products](products-template-mapping.md)
+[Synchronize products from Finance and Operations to products in Sales](products-template-mapping.md)
 
-[Accounts (Customers)](accounts-template-mapping.md)
+[Synchronize accounts from Sales to customers in Finance and Operations](accounts-template-mapping.md)
 
-[Contact (Contacts) and Contact (Customers)](contacts-template-mapping.md)
+[Synchronize contacts from Sales to contacts or customers in Finance and Operations](contacts-template-mapping.md)
 
 
