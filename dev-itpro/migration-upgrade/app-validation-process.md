@@ -70,4 +70,4 @@ After you complete the upgrade from AX 2012, you must set up Budget planning col
 
 Additionally, you must update Budget planning processes so that they use the appropriate layout for each budget stage. To update Budget planning processes, click **Budgeting** > **Setup** > **Budget planning** > **Budget planning process**.
 
-For more information about Budget planning upgrade, see [Upgrading to Budget planning from Microsoft Dynamics AX 2012](https://ax.help.dynamics.com/en/wiki/upgrading-to-budget-planning-from-microsoft-dynamics-ax-2012/).
+For more information about Budget planning upgrade, see [Upgrading to Budget planning from Microsoft Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-budget-planning).
