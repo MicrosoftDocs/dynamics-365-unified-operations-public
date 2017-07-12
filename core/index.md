@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Introduction to Dynamics 365 for Finance and Operations
