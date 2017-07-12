@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Prospect to cash solution  
+# Prospect to cash  
 
 [!include[banner](../includes/banner.md)]
 
