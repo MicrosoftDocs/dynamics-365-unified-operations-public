@@ -36,7 +36,7 @@ ms.search.validFrom: 2017-07-8
 
 The Prospect to cash solution uses Data Integrator to synchronize data across Dynamics 365 Finance and Operations or Dynamics 365 for Sales instances via the Common Data Service. The Prospect to cash templates available with the Data Integrator enable the flow of product, account, contact, and sales quote data between Dynamics 365 for Finance and Operations and Dynamics 365 for Sales. While the data is flowing between Finance and Operations and Dynamics 365 for Sales, customers can carry out sales and marketing activities in Dynamics 365 for Sales and handle the order fulfillment with inventory management in Finance and Operations. This solution provides integration in the following areas: 
 
--	  Maintain accounts in Dynamics 365 for Sales and sync them to Finance and Operations.
+-   Maintain accounts in Dynamics 365 for Sales and sync them to Finance and Operations.
 -   Maintain contacts in Dynamics 365 for Sales and sync them to Finance and Operations.
 -   Maintain products in Finance and Operations and sync them to Dynamics 365 for Sales.
 - 	Create sales quotes in Dynamics 365 for Sales and sync them to Finance and Operations.
