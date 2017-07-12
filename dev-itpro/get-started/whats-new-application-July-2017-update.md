@@ -1735,7 +1735,7 @@ contact <drpc@microsoft.com>.
 
 For information about peripherals that have been previously tested by Microsoft,
 visit [Microsoft-tested peripheral
-devices](https://ax.help.dynamics.com/en/wiki/retail-peripherals-overview/).
+devices](/dynamics365/unified-operations/retail/retail-peripherals-overview).
 This page will also be updated with a link to the POS simulator-tested devices
 as soon as that page becomes available.
 

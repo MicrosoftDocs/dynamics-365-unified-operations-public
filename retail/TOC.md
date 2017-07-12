@@ -1623,6 +1623,7 @@
 ##### [Workflow subsystem changes](/dynamics365/unified-operations/dev-itpro/migration-upgrade/workflow-subsystem?toc=/dynamics365/unified-operations/retail/toc.json)
 ##### [Why we moved from cubes to aggregate models](/dynamics365/unified-operations/dev-itpro/migration-upgrade/in-memory-real-time-aggregate-models?toc=/dynamics365/unified-operations/retail/toc.json)
 ##### [Migrate an upgraded sales cube to the entity store](/dynamics365/unified-operations/dev-itpro/migration-upgrade/migrate-upgraded-cube-entity-store?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Upgrade budget planning](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-budget-planning?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ### Code migration and upgrade
 #### [Prepare to migrate code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-migration?toc=/dynamics365/unified-operations/retail/toc.json)
