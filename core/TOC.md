@@ -903,7 +903,7 @@
 #### Returns
 ##### [Sales returns](/dynamics365/unified-operations/supply-chain/warehousing/sales-returns?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Prospect to cash](/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash.md?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Prospect to cash](/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Synchronize products from Finance and Operations to products in Sales](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Synchronize accounts from Sales to customers in Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Synchronize contacts from Sales to contacts or customers in Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/contacts-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
