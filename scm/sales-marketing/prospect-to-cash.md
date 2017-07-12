@@ -40,7 +40,6 @@ This solution provides integration in the following areas:
 
 -   Maintain accounts in Dynamics 365 for Sales and sync them to Finance and Operations.
 -   Maintain contacts in Dynamics 365 for Sales and sync them to Finance and Operations.
--   Maintain products in Finance and Operations and sync them to Dynamics 365 for Sales.
 - 	Create sales quotes in Dynamics 365 for Sales and sync them to Finance and Operations.
-
+-   Maintain products in Finance and Operations and sync them to Dynamics 365 for Sales.
 
