@@ -130,8 +130,8 @@ You can make a request via LCS for the Microsoft Servicing Engineering (DSE) Tea
 - DSE will perform the data upgrade in one Tier 2 or higher sandbox environment
 - DSE will perform the data upgrade in the production environment
 
-For upgrading any additional Tier 2 or higher sandbox environments: You do not need to upgrade these - simply delete them, redeploy, and then make a database refresh request to copy a database from a Tier 2 or higher environment which was already upgraded. Alternatively you can upgrade them manually by following [Process for Upgrading a Sandbox Environment](../upgrade-sandbox-environment.md)
-For upgrading any Tier 1 environments (also known as dev boxes or oneboxes). You can deploy these with the new version and just synch to your upgraded VSTS branch. To get data for the Tier 1 environments one developer can upgrade the database following [Upgrade data in develop, demo or sandbox environments](../upgrade-data-to-latest-update.md)
+To upgrade any additional Tier 2 or higher sandbox environments: you do not need to upgrade these. Instead, delete them, redeploy, and then make a database refresh request to copy a database from a Tier 2 or higher environment that hase already been upgraded. Alternatively you can upgrade them manually by following [Process for Upgrading a Sandbox Environment](../upgrade-sandbox-environment.md)
+For upgrading any Tier 1 environments (also known as dev boxes or one-boxes). You can deploy these with the new version and just sync to your upgraded VSTS branch. To get data for the Tier 1 environments, a developer can upgrade the database following [Upgrade data in develop, demo or sandbox environments](../upgrade-data-to-latest-update.md)
 
 
 #### Use LCS to submit an upgrade request to DSE
