@@ -69,6 +69,7 @@ This topic describes how to upgrade an older source database to the latest Fina
 ## Download the MinorVersionDataUpgrade.zip script
 To obtain the latest MinorVersionDataUpgrade.zip package from your target environment that is running the latest Finance and Operations update, download the latest binary updates from Lifecycle Services (LCS).
 > [!NOTE]
+> If you are upgrading from AX 2012 the data upgrade package is called MajorVersionDataUpgradeWithRetail.zip.
 > In earlier versions (prior to Platform update 4), the package was named DataUpgrade.zip. 
 
 1.  In LCS, in the **Environments** section, click your target Finance and Operations environment, scroll to the bottom of the page, and then click the **All binary updates** tile. 
