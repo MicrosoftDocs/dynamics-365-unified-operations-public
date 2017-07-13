@@ -134,7 +134,7 @@ Execute the data upgrade process on a copy of your target database – if your e
  > [!NOTE]
  > The **Upgrade** button is currently in preview and will be made public as part of the LCS July release (currently scheduled for the third week of July). Until then you can submit upgrade requests from the **LCS Support page** > **Service requests** > **Add** > **Other requests**.
 
-![Upgrade request](./media/UpgradeMaintainButton.PNG)
+ ![Upgrade request](./media/UpgradeMaintainButton.PNG)
 2. You must submit your upgrade request 5 working days before you expect to upgrade, to help ensure that the upgrade can be performed within your expected timeframe. The advanced notice is required to prepare a new environment in the background. When downtime starts, this new environment will be swapped with the existing environment. You will not be able to see the new environment, it's a background mechanism.
 3. You must allow at least 8 hours between the downtime start and downtime end times. This time is required to perform the swap in of the new environment and the data upgrade process.
 4. If you have custom code or X++ hotfixes that must be part of your upgraded environment, you must select Application deployable packages during your upgrade request. Select the deployable packages that contain your upgraded custom code and the X++ hotfixes that were created on your development or build environment during the code upgrade process. 
