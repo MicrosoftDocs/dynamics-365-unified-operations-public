@@ -128,10 +128,12 @@ Execute the data upgrade process on a copy of your target database – if your e
 > [!NOTE]
 > The term *sandbox* refers to the default included "Sandbox: Standard acceptance test" Tier 2 environment provided in your subscription. 
 
-#### Use LCS to submit an upgrade request to DSE. 
+#### Use LCS to submit an upgrade request to DSE
 1. Go to the **Environment details** page for the environment that you want to upgrade, click **Maintain**, and then select **Upgrade**. A window will display where you can enter the upgrade request.
+
  > [!NOTE]
  > The **Upgrade** button is currently in preview and will be made public as part of the LCS July release (currently scheduled for the third week of July). Until then you can submit upgrade requests from the **LCS Support page** > **Service requests** > **Add** > **Other requests**.
+
 ![Upgrade request](./media/UpgradeMaintainButton.PNG)
 2. You must submit your upgrade request 5 working days before you expect to upgrade, to help ensure that the upgrade can be performed within your expected timeframe. The advanced notice is required to prepare a new environment in the background. When downtime starts, this new environment will be swapped with the existing environment. You will not be able to see the new environment, it's a background mechanism.
 3. You must allow at least 8 hours between the downtime start and downtime end times. This time is required to perform the swap in of the new environment and the data upgrade process.
@@ -145,9 +147,8 @@ Execute the data upgrade process on a copy of your target database – if your e
  ![Upgrade request](./media/Upgrade-Request-2.png)
 
 #### Validate your sandbox environment
-The updated environment will have the same URL, same environment name, and same machine names as the former environment.
-
-When validation is completed successfully, notify the DSE team using an LCS ticket and the DSE team will retire your old environment.
+- The updated environment will have the same URL, same environment name, and same machine names as the former environment.
+- When validation is completed successfully, notify the DSE team using an LCS ticket and the DSE team will retire your old environment.
 
 ### Upgrade your production environment
 
