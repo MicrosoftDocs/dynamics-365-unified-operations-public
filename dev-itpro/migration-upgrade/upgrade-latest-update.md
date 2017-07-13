@@ -109,7 +109,6 @@ Regardless of whether you're a live customer or you're still in the implementati
 
 4.  Install any hotfixes that apply to the environment.
 5.  Upload deployable packages to the LCS Asset library of your project.
-
 For more details on code migration steps, see [Code Migration](..\dev-tools\developer-home-page.md#code-migration). After code migration is complete, continue to Scenario 3.
 
 ## Scenario 3: Upgrade to the most current application update
@@ -133,7 +132,6 @@ Execute the data upgrade process on a copy of your target database – if your e
 
  > [!NOTE]
  > The **Upgrade** button is currently in preview and will be made public as part of the LCS July release (currently scheduled for the third week of July). Until then you can submit upgrade requests from the **LCS Support page** > **Service requests** > **Add** > **Other requests**.
-
  ![Upgrade request](./media/UpgradeMaintainButton.PNG)
 2. You must submit your upgrade request 5 working days before you expect to upgrade, to help ensure that the upgrade can be performed within your expected timeframe. The advanced notice is required to prepare a new environment in the background. When downtime starts, this new environment will be swapped with the existing environment. You will not be able to see the new environment, it's a background mechanism.
 3. You must allow at least 8 hours between the downtime start and downtime end times. This time is required to perform the swap in of the new environment and the data upgrade process.
