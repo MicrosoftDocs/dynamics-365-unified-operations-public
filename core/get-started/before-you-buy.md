@@ -39,18 +39,16 @@ New to Dynamics 365 for Finance and Operations, Enterprise edition? We've put to
 You can try Dynamics 365 for Finance and Operations for 30 days through a simple email signup. The trial version of Finance and Operations includes Getting started task guides that provide step-by-step instructions that allow you to view specific scenarios in action. The product is available to explore and exercise scenarios, but cannot be customized. Demo data is included to ease the use of the product and to make the experience more meaningful. A reminder email will be sent 3 days prior to the trial expiration. Get details at [www.microsoft.com/en-us/dynamics365/operations](www.microsoft.com/en-us/dynamics365/operations).
 
 ## Step two: Choose a deployment option
-
-More information: 
-- Cloud-hosted deployment
-- [On-premises deployment](/dev-itpro/deployment/on-premises-deployment-landing-page)
+You can now deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in the cloud or on-premises. Cloud deployments offer an ERP service that is fully managed by Microsoft, while on-premises deployments are deployed locally within a customer's data center.
+For more information, see: [Deployment options](../dev-itpro/deployment/choose-deployment-type.md) 
 
 ## Step three: Buy and manage a subscription
 With Dynamics 365, you can evolve your business on your terms. Start with just what you need to run your business. For example, you might want to start with the Talent app, and then move to Finance and Operations as your needs change. To explore options, go to the [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing) pricing page. This page includes several different plans to fit your organization’s needs.
 
 There are many ways to buy a subscription of Dynamics 365 for Finance and Operations:
-- Buy through volume licensing (cloud or on-premises)
+- Buy through a partner, and use volume licensing (cloud or on-premises)
 - Buy through a Cloud solution provider (cloud only)
-- Buy through the Dynamics price list (on-premises only)
+- Buy through a partner from the Dynamics price list (on-premises only)
 
 There are two ways to buy a subscription for an on-premises deployment
 
@@ -66,20 +64,8 @@ In Volume Licensing, Finance and Operations is available through:
 ### Buy through a Cloud Solution Provider (cloud-only)
 A Microsoft Cloud Solution Provider can work closely with you to understand the needs of your business or organization. [Use the Microsoft Partner Center portal to find a partner to fit your needs](https://partnercenter.microsoft.com/en-us/partner/home). 
 
-If you purchase Finance and Operations through a Cloud Solution Provider, you may also be entitled to on-premises software. 
-
-- If you agree to the licensing conditions, you can get Finance and Operations (on-premises). For more information, see the topic [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](/dev-itpro/get-started/purchase-on-premises).
-
-- You can get also choose to get Dynamics AX 2012 R3 as follows:
-
-  -   Go to [CustomerSource](https://mbs.microsoft.com/customersource/), log in, and download [Dynamics AX 2012 R3](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/product-releases/MSDYAX2012R3Release).
-
-If you haven’t previously accessed CustomerSource, here are some resources to help you get started:
-
--   [Need Access to Customer Source?](https://mbs.microsoft.com/customersource/northamerica/news-events/news-events/NeedAccesstoCustomerSource)
-
-### Buy through the Dynamics price list
-
+### Buy through a Dynamics partner (on-premises)
+You must work with a partner to purchase Finance and Operations on-premises. For more information, see [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](../dev-itpro/get-started/purchase-on-premises)
 
 ### Choose your support option
 Microsoft provides flexible, industry-leading support, services, and resources that enable users to quickly address technical issues and maximize return on your Dynamics 365 investment. Choose a plan that best meets your business requirements. 
