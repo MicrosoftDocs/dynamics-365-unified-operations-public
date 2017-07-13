@@ -30,3 +30,43 @@ ms.dyn365.ops.version: Platform update 9
 ---
 
 
+
+| Area | Feature | Cloud | On-premises|
+|---|---|---|---|
+| Feature or capability| | | |
+| Analytics| | | |
+| Cost accounting| | | |
+| Cost management| | | |
+| Customization| | | |
+| Data management and integration| | | |
+| Document management| | | |
+| Electronic reporting| | | |
+| Expense management| | | |
+| Extensibility| | | |
+| Financial management| | | |
+| Help| | | |
+| Human capital management| | | |
+| Inventory management| | | |
+| Lifecycle services| | | |
+| LinkedIn engagement| | | |
+| Localizations| | | |
+| Manufacturing| | | |
+| Master planning and forecasting| | | |
+| Mobile applications| | | |
+| Office integration| | | |
+| Payroll| | | |
+| Personalization| | | |
+| Planning and scheduling| | | |
+| Procurement and sourcing| | | |
+| Product master data| | | |
+| Project management and accounting| | | |
+| Retail| | | |
+| Sales| | | |
+| Service management| | | |
+| Supply chain management| | | |
+| Task guides| | | |
+| Transportation management| | | |
+| Travel and expense| | | |
+| Vendor collaboration| | | |
+| Visual scheduling| | | |
+| Warehouse management| | | |
