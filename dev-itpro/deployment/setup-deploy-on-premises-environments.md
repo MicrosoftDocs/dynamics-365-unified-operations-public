@@ -85,7 +85,7 @@ For more information, see [System requirements](../get-started/system-requiremen
 
 ### Hardware layout
 
-Plan your infrastructure and Service Fabric cluster, based on the recommended sizing in Hardware sizing for on-premises environments (../get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Plan your infrastructure and Service Fabric cluster, based on the recommended sizing in [Hardware sizing for on-premises environments](../get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 The following table shows an example of the hardware layout. This example is used throughout this topic to illustrate the setup.
 
@@ -649,7 +649,7 @@ $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$li
 ### Set up SSRS
 
 1.  Before you begin, make sure that the prerequisites that are listed at the beginning of this topic are installed.
-2.  Follow the steps to [Configure SQL Server Reporting Services for an on-premises deployment](./analytics/configure-ssrs-on-premises.md).
+2.  Follow the steps to [Configure SQL Server Reporting Services for an on-premises deployment](../analytics/configure-ssrs-on-premises.md).
 
 ### Configure AD FS
 
