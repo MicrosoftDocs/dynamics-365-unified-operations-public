@@ -1632,7 +1632,7 @@
 #### [Use delegates to solve dependencies between models](/dynamics365/unified-operations/dev-itpro/migration-upgrade/delegates-migration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Upgrade to a recent update
-#### [Prepare to move to the latest update](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Process for moving to the latest update](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Lifecycle policy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Upgrade to the latest platform update](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Upgrade the Dynamics platform to the August 2016 release](/dynamics365/unified-operations/dev-itpro/migration-upgrade/update-platform-each-release?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
