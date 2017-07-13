@@ -124,13 +124,14 @@ Execute the data upgrade process on a copy of your target database – if your e
 
 ### Upgrade your sandbox environment
 
-The Microsoft Servicing Engineering (DSE) Team will execute this process for you if:
+You can make a request via LCS for the Microsoft Servicing Engineering (DSE) Team to run this process for you, when the following conditions are met:
 
-- You must be live in production or have already deployed your production environment
+- You need to be live in production or have already deployed your production environment
 - DSE will perform the data upgrade in one Tier 2 or higher sandbox environment
 - DSE will perform the data upgrade in the production environment
-- DSE will not perform the data upgrade in any additional Tier 2 or higher sandbox environments. You do not need to upgrade these - simply delete them, redeploy, and then make a database refresh request to copy a database from a Tier 2 or higher environment which was already upgraded. Alternatively you can upgrade them manually by following [Process for Upgrading a Sandbox Environment](../upgrade-sandbox-environment.md)
-- DSE will not perform the data upgrade in any Tier 1 environments. You can upgrade these yourself by following [Upgrade data in develop, demo or sandbox environments](../upgrade-data-to-latest-update.md)
+
+For upgrading any additional Tier 2 or higher sandbox environments: You do not need to upgrade these - simply delete them, redeploy, and then make a database refresh request to copy a database from a Tier 2 or higher environment which was already upgraded. Alternatively you can upgrade them manually by following [Process for Upgrading a Sandbox Environment](../upgrade-sandbox-environment.md)
+For upgrading any Tier 1 environments (also known as dev boxes or oneboxes). You can deploy these with the new version and just synch to your upgraded VSTS branch. To get data for the Tier 1 environments one developer can upgrade the database following [Upgrade data in develop, demo or sandbox environments](../upgrade-data-to-latest-update.md)
 
 
 #### Use LCS to submit an upgrade request to DSE
