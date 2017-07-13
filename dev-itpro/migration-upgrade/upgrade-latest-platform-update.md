@@ -62,7 +62,7 @@ After upgrading to Platform update 6 or later, an administrator needs to click t
 There are 3 ways to get the latest platform update package.
 - In Lifecycle Services (LCS), import the platform update package from the Shared Asset Library.
 - Search for "platform update" in LCS **Issue Search**.
-- Click the **Binary Updates** tile of your environment's page in LCS (As of platform update 4, binary updates from LCS include an upgrade to the latest platform).
+- Click the **Binary Updates** tile of your environment's page in LCS (As of Platform update 4, binary updates from LCS include an upgrade to the latest platform).
 
 ### Import the platform update package
 Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Dynamics 365 packages are currently prefixed with *Finance and Operations Platform Update* (for example, Finance and Operations Platform Update 3)*.* Use these steps to import the platform update package:
