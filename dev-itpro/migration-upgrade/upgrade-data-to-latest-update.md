@@ -35,9 +35,9 @@ ms.dyn365.ops.version: Platform update 1
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations database in a Tier 1 environment (also know as a development box, onebox or demo box) to the latest update. 
+This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations database in a Tier 1 environment (also know as a development box, one-box, or demo environment) to the latest update. 
 
-In some Tier 2 or higher environments the Microsoft Service Engineering Team (DSE) will execute the data upgrade for you, for more information see the end to end upgrade process here: [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md#scenario-3-upgrade-to-the-most-current-application-update).
+In some Tier 2 or higher environments the Microsoft Service Engineering Team (DSE) will execute the data upgrade for you. For more information, see the end to end upgrade process here: [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md#scenario-3-upgrade-to-the-most-current-application-update).
 
 This topic describes how to upgrade an older source database to the latest Finance and Operations update. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md). 
 
@@ -57,7 +57,7 @@ This topic describes how to upgrade an older source database to the latest Fina
 
 4.  If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required because the demo data contains bad records for some kernel X++ classes.
 
-> *delete from classidtable where id >= 0xf000 and id <= 0xffff*
+    delete from classidtable where id >= 0xf000 and id <= 0xffff
 
 ## Download the MinorVersionDataUpgrade.zip script
 To obtain the latest MinorVersionDataUpgrade.zip package from your target environment that is running the latest Finance and Operations update, download the latest binary updates from Lifecycle Services (LCS).
