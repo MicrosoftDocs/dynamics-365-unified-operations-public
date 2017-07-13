@@ -135,6 +135,15 @@ This step is required if you're upgrading a database from the February 2016 rele
 
         In this case, run DeleteScriptForStagingTables.sql to clean up the staging tables. You can find this script under AOSServiceScripts in your data upgrade folder. After the script has finished running, re-run this step.
 
+## Re-enable SQL change tracking
+Execute the following SQL against the upgraded database to ensure that change tracking is enabled at the database level. You must insert the name of your database within the alter database command.
+
+        ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
+
+## Additional steps for Management Reporter
+
+Reset the management reporter database by following the steps in this topic [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md) and then reimport the building block groups you exported in an earlier step.
+
 ## Troubleshoot upgrade script errors
 ### How to re-run the runbook after a data upgrade script failure
 
