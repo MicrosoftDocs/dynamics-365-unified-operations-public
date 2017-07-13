@@ -130,15 +130,17 @@ Execute the data upgrade process on a copy of your target database – if your e
 
 1.  Use LCS to submit an upgrade request to DSE. 
 - Go to the **Environment details** page for the environment that you want to upgrade, click **Maintain**, and then select **Upgrade**. A window will display where you can enter the upgrade request.
-> [!NOTE]
-> The **Upgrade** button is currently in preview and will be made public as part of the LCS July release (currently scheduled for the 3rd week of July). Until then you can submit upgrade requests from the LCS support page > Service requests > Add > Other requests.
+ > [!NOTE]
+ > The **Upgrade** button is currently in preview and will be made public as part of the LCS July release (currently scheduled for the third week of July). Until then you can submit upgrade requests from the **LCS Support page** > **Service requests** > **Add** > **Other requests**.
 ![Upgrade request](./media/UpgradeMaintainButton.PNG)
 - You must submit your upgrade request 5 working days before you expect to upgrade, to help ensure that the upgrade can be performed within your expected timeframe. The advanced notice is required to prepare a new environment in the background. When downtime starts, this new environment will be swapped with the existing environment. You will not be able to see the new environment, it's a background mechanism.
 - You must allow at least 8 hours between the downtime start and downtime end times. This time is required to perform the swap in of the new environment and the data upgrade process.
-- The upgrade request flow allows you to select Application deployable packages (from the LCS asset library release candidates) that must be part of your  upgraded environment. These are the deployable packages that contain your upgraded custom code and X++ hotfixes that were created on a development or build environment during the code upgrade process. These deployable packages must be specified during the service request; otherwise, the service request may have to be aborted. 
- > [!NOTE]
- > A longer downtime of minimum 16 hours is required if using Retail features, as additional upgrade steps are needed.
-- If an error causes the upgrade process to stop, DSE will roll the environment back to its original state. The issue that caused the failure can then be resolved, and the upgrade can be rescheduled at a new time.
+- If you have custom code or X++ hotfixes that must be part of your upgraded environment, you must select Application deployable packages during your upgrade request. Select the deployable packages that contain your upgraded custom code and the X++ hotfixes that were created on your development or build environment during the code upgrade process. 
+
+> [!IMPORTANT]
+> - If you do not select your application deployable packages in the service request, your service request may be rejected by DSE.
+> - If an error causes the upgrade process to stop, DSE will roll the environment back to its original state. The issue that caused the failure can then be resolved, and the upgrade can be rescheduled at a new time.
+> - A minimum 16 hour downtime is required if you are using Retail features, because additional upgrade steps are needed.
 
 ![Upgrade request](./media/Upgrade-Request-2.png)
 
