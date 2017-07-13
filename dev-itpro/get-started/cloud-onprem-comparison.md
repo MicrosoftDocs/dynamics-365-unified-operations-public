@@ -29,6 +29,12 @@ ms.search.validFrom: 2017-07-13
 ms.dyn365.ops.version: Platform update 9
 ---
 
+# Cloud and on-premises feature comparison
+
+The following table shows whether each feature is available in:
+
++ Dynamics 365 for Finance and Operations, Enterprise Edition (cloud)
++ Dynamics 365 for Finance and Operations, Enterprise Edition (on-premises)
 
 
 | Area | Feature | Cloud | On-premises|
