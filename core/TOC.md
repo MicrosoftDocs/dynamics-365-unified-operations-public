@@ -744,10 +744,8 @@
 
 
 ## Inventory management
-### Create warehouse layout
 ### Inbound process
 #### [Arrival overview](/dynamics365/unified-operations/supply-chain/inventory/arrival-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### Outbound process
 ### Set up inventory tracking
 #### [Inventory journals](/dynamics365/unified-operations/supply-chain/inventory/inventory-journals?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Inventory locations](/dynamics365/unified-operations/supply-chain/inventory/inventory-locations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1020,34 +1018,20 @@
 ##### [Calculate material consumption](/dynamics365/unified-operations/supply-chain/production-control/consumption?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Production posting](/dynamics365/unified-operations/supply-chain/cost-management/production-posting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## Product information management
-### [Product information overview](/dynamics365/unified-operations/supply-chain/pim/product-information?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### Maintain product categories
+## [Product information management](/dynamics365/unified-operations/supply-chain/pim/product-information?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Maintain product information
-#### Maintain product definition
-##### [Product number nomenclature](/dynamics365/unified-operations/supply-chain/pim/product-variant-identification-nomenclature?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### Product templates
-##### [Product dimension](/dynamics365/unified-operations/supply-chain/pim/product-dimensions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### Product attributes
-##### Product pictures and attachments
-##### Product identifiers
-##### [Translation of product information FAQ](/dynamics365/unified-operations/supply-chain/pim/translations-product-related-information?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Release products to legal entities
-#### Search for products
-##### [Search for product during order entry](/dynamics365/unified-operations/supply-chain/pim/search-products-product-variants?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Prepare product for planning
-##### [Default order settings for dimensions and product variants](/dynamics365/unified-operations/supply-chain/production-control/default-order-settings?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### Forecast models and item allocation keys
-#### Prepare product for production
-##### BOM and formula
-###### [Bills of materials and formulas](/dynamics365/unified-operations/supply-chain/production-control/bill-of-material-bom?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Use the BOM designer](/dynamics365/unified-operations/supply-chain/production-control/bom-designer-functionality?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Use the formula designer](/dynamics365/unified-operations/supply-chain/production-control/formula-designer?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### Routes
-##### Lean manufacturing
-#### Prepare products for warehouse and logistics
-#### Estimate cost for products
-##### [BOM calculations](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Product number nomenclature](/dynamics365/unified-operations/supply-chain/pim/product-variant-identification-nomenclature?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Product dimension](/dynamics365/unified-operations/supply-chain/pim/product-dimensions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Translation of product information FAQ](/dynamics365/unified-operations/supply-chain/pim/translations-product-related-information?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Search for product during order entry](/dynamics365/unified-operations/supply-chain/pim/search-products-product-variants?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### Prepare product for planning
+#### [Default order settings for dimensions and product variants](/dynamics365/unified-operations/supply-chain/production-control/default-order-settings?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### Prepare product for production
+#### [Bills of materials and formulas](/dynamics365/unified-operations/supply-chain/production-control/bill-of-material-bom?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Use the BOM designer](/dynamics365/unified-operations/supply-chain/production-control/bom-designer-functionality?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Use the formula designer](/dynamics365/unified-operations/supply-chain/production-control/formula-designer?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### Estimate cost for products
+#### [BOM calculations](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Maintain product configuration models
 #### [Build a product configuration model](/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Calculation for product configuration model FAQ](/dynamics365/unified-operations/supply-chain/pim/calculate-product-configuration-models?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1057,8 +1041,6 @@
 #### [Reuse product configuration](/dynamics365/unified-operations/supply-chain/pim/reuse-product-configurations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up a configuration model](/dynamics365/unified-operations/supply-chain/pim/set-up-maintain-product-configuration-model?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [System-defined and user-defined table constraint](/dynamics365/unified-operations/supply-chain/pim/system-defined-user-defined-table-constraints?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### Import product information data
-### Export product information data
 
 ## [Project management and accounting](/dynamics365/unified-operations/financials/project-management/overview-project-management-accounting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Intercompany invoicing](/dynamics365/unified-operations/financials/project-management/intercompany-invoicing?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
