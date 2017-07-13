@@ -47,9 +47,10 @@ More information:
 ## Step three: Buy and manage a subscription
 With Dynamics 365, you can evolve your business on your terms. Start with just what you need to run your business. For example, you might want to start with the Talent app, and then move to Finance and Operations as your needs change. To explore options, go to the [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing) pricing page. This page includes several different plans to fit your organization’s needs.
 
-There are two ways to buy a subscription of Dynamics 365 for Finance and Operations for a cloud deployment:
-- Buy through volume licensing
-- Buy through a cloud solution provider
+There are many ways to buy a subscription of Dynamics 365 for Finance and Operations:
+- Buy through volume licensing (cloud or on-premises)
+- Buy through a Cloud solution provider (cloud only)
+- Buy through the Dynamics price list (on-premises only)
 
 There are two ways to buy a subscription for an on-premises deployment
 
