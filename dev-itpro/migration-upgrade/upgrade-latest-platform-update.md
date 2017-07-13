@@ -79,7 +79,10 @@ From a process perspective, deploying a platform upgrade package resembles a b
 ## Apply the platform update package on your development environment
 ### Delete platform metadata hotfixes from your VSTS project
 
-Before you install the new platform update, you must clean up your Microsoft Visual Studio Team Services (VSTS) source control project. If you are already on platform update 3 or newer, you can skip this section.  
+> [!NOTE]
+> Skip this section if you are already on platform update 3 and updating to a newer platform.
+
+Before you install the new platform update, you must clean up your Microsoft Visual Studio Team Services (VSTS) source control project.
 Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your VSTS project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
 
 -   Application Platform
@@ -113,6 +116,9 @@ You can find these hotfixes by browsing the check-in history of these Microsoft 
 
 ### Install the Visual Studio development tools
 
+> [!NOTE]
+> Skip this section if you are updating to platform update 4 or newer, development tools are automatically installed as part of installing the deployable package.
+
 Update the Visual Studio development tools as described in [Updating the Visual Studio development tools](../dev-tools/update-development-tools.md).
 
 ### Regenerate form adaptor models
@@ -132,6 +138,9 @@ The following examples show how to generate the form adaptor models.
     xppfagen.exe -metadata=j:\AosService\PackagesLocalDirectory -model="DirectoryFormAdaptor" -xmllog="c:\temp\log3.xml"
 
 ### Install the new Data Management service
+
+> [!NOTE]
+> Skip this section if you are updating to platform update 4 or newer, the data management service is automatically installed as part of installing the deployable package.
 
 After the deployable package is installed, follow these instructions to install the new Data Management service. Open a **Command Prompt** window as an administrator, and run the following commands from the .\\DIXFService\\Scripts folder.
 
