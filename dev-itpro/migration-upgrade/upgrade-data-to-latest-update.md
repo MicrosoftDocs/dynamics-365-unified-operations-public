@@ -36,7 +36,15 @@ ms.dyn365.ops.version: Platform update 1
 
 
 This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations database to the latest update. 
-Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the production and sandbox environments. You can contact them using an **Upgrade** request in Microsoft Dynamics Lifecycle Services (LCS), which you submit using the **Maintain** button on the **Environment details** page for the environment that you want to update.
+Note that the Microsoft Service Engineering (DSE) Team will execute this process for you if:
+
+- You must be live in production or have already deployed your production environment
+- DSE will perform the data upgrade in one Tier 2 or higher sandbox environment
+- DSE will perform the data upgrade in the production environment
+- DSE will not perform the data upgrade in any additional Tier 2 or higher sandbox environments
+- DSE will not perform the data upgrade in any Tier 1 environments
+
+. You can contact them using an **Upgrade** request in Microsoft Dynamics Lifecycle Services (LCS), which you submit using the **Maintain** button on the **Environment details** page for the environment that you want to update.
 
 This topic describes how to upgrade an older source database to the latest Finance and Operations update. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md). 
 
