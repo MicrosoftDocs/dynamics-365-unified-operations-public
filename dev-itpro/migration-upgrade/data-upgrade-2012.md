@@ -43,7 +43,7 @@ Before you run this process in a shared sandbox environment, we recommend that y
 - It provides local data that developers can write and test their custom data upgrade scripts against.
 - It helps reduce the overall time that is spent on iterations of the data upgrade process. In a development environment, an issue can be debugged immediately, code can be adjusted, and the upgrade can be rerun within minutes. However, larger sandbox environments don’t allow for this level of agility. In those environments, a minimum of several hours will be required to debug and remediate issues, update code, deploy the updated code, and rerun the upgrade.
 
-We strongly recommend you to run the [Upgrade analyzer](../upgrade-analyzer-tool.md) and react to the items it raises before running the data upgrade - this will help ensure the data upgrade is quicker and easier.
+We strongly recommend that you run the [Upgrade analyzer](../upgrade-analyzer-tool.md) and respond to the issues it identifies before running data upgrade - this will help ensure that your data upgrade is quicker and easier.
 
 ## End-to-end data upgrade process
 
@@ -51,7 +51,7 @@ We strongly recommend you to run the [Upgrade analyzer](../upgrade-analyzer-tool
 
 ### Back up your AX 2012 database
 
-To back up your AX 2012 database, use the standard Microsoft SQL Server process to produce a *.bak file. If you use the compression option when you create the backup, the file size will be smaller, and less time is required in order upload it to and download it from Microsoft Azure Storage.
+To back up your AX 2012 database, use the standard Microsoft SQL Server process to produce a BAK file. If you use the compression option when you create the backup, the file size will be smaller, and less time is required in order upload it to and download it from Microsoft Azure Storage.
 
 ### Upload the backup to Azure Storage
 
