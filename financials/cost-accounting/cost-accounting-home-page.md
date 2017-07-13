@@ -55,7 +55,9 @@ The Cost accounting module allows you to do the following:
 
 ## Get started
 
-> [!Video https://www.youtube.com/embed/https://www.youtube.com/embed/1pUDtJQZ8FU]
+> [!Video https://www.youtube.com/embed/1pUDtJQZ8FU]
+
+> [!Video <iframe width="560" height="315" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>]
 
 The Hands-on labs for Cost accounting provide the basic steps to configure Microsoft Dynamics 365 for Finance and Operations, Enterprise edition – Cost Accounting in order to make the actual cost analysis. It also provides a series of procedures that you can complete in the order which they appear.
 
