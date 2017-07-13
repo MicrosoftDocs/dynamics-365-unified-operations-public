@@ -5,7 +5,7 @@ title: View transactions on settlement for Eastern Europe
 description: This topic provides information about the Transactions on settlement page for customers and vendors.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: CustVendTransPostingLog_RU
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 270544
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland

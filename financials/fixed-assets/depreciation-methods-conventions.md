@@ -2,7 +2,7 @@
 # required metadata
 
 title: Depreciation methods and conventions
-description: This article provides an overview of the depreciation conventions and depreciation methods that are supported by Microsoft Dynamics 365 for Operations.
+description: This article provides an overview of the depreciation conventions and depreciation methods that are supported by Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: twheeloc
 manager: AnnBe
 ms.date: 04/25/2017
@@ -18,7 +18,7 @@ ms.search.form: AssetDepreciationProfile, AssetGroupBookSetup, AssetGroupDepBook
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 3441
 ms.assetid: 1d8267b1-86a8-44bf-8814-f56b5d45a0ae
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides an overview of the depreciation conventions and depreciation methods that are supported by Microsoft Dynamics 365 for Operations.
+This article provides an overview of the depreciation conventions and depreciation methods that are supported by Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 You can select various depreciation methods and conventions. The purpose of the methods is to allocate the depreciable value of the fixed asset into fiscal periods. The depreciable value of the fixed asset is the acquisition price, reduced by a scrap value, if any. 
 

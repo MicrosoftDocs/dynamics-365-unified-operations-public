@@ -5,7 +5,7 @@ title: Data entities
 description: This topic defines and provides an overview of data entities. It includes information about the capabilities of data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: 2051
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 22051
 ms.assetid: 89ee656f-3a91-42cd-a189-11744cd2415b
@@ -98,7 +98,7 @@ A system implementer will use both a guided data collection wizard and bulk data
 
 ##### Data migration from legacy or external systems
 
-After the initial deployment is up and running, the system implementer will **migrate existing data assets of the customer** into Microsoft Dynamics 365 for Operations, especially the following assets:
+After the initial deployment is up and running, the system implementer will **migrate existing data assets of the customer** into Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, especially the following assets:
 
 -   Master data (for example, customers and vendors)
 -   Subsets of documents (for example, sales orders)

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Extensibility home page
-description: This topic provides links to topics about extensibility with Microsoft Dynamics 365 for Operations.
+description: This topic provides links to topics about extensibility.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: 2051
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 74489760-376f-4793-b22c-8189339733ed
@@ -34,10 +34,7 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include[banner](../includes/banner.md)]
 
-
-This topic provides links to topics about extensibility with Microsoft Dynamics 365 for Operations.
-
-The development approach for Dynamics 365 for Operations focuses more on extending the application than on overlayering elements to customize application flows.
+The development approach focuses more on extending the application than on overlayering elements to customize application flows.
 
 -   [Customize model elements using extensions (tutorial)](customize-model-elements-extensions.md)
 -   [Customization: overlayering and extensions](customization-overlayering-extensions.md)

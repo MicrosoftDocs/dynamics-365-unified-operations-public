@@ -5,7 +5,7 @@ title: Add BI to workspaces
 description: In this tutorial, you’ll add BI controls such as KPI tiles to an existing workspace. 
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: 61
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations, Unified Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24551
 ms.assetid: 78a85e0a-e002-41b5-85b7-e2772317d56e

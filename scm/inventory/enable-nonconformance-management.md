@@ -5,7 +5,7 @@ title: Nonconformance management
 description: This article describes the basic setup that is required in order to use nonconformances. Additional setup is required if you want to use quality orders. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: InventParameters, InventProblemType, InventProblemTypeSetup, Inv
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 28951
 ms.assetid: a62d4ba8-eebc-4b14-b587-630be7298522
@@ -55,11 +55,11 @@ To enable nonconformance management, follow these steps:
 See also
 --------
 
-[Create and process a non conformance (task guide)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
+[Create and process a non conformance (Task guide)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
 
 [Quality management processes](quality-management-processes.md)
 
-[Set up prerequisites for non-conformance management (task guide)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+[Set up prerequisites for non-conformance management (Task guide)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
 
 
 

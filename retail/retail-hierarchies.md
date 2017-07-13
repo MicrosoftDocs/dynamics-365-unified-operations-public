@@ -2,13 +2,13 @@
 # required metadata
 
 title: Retail hierarchies
-description: This article describes retail hierarchies in Microsoft Dynamics AX.
+description: This article describes retail hierarchies in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 15851
 ms.assetid: dfa11d41-2a0c-4cde-99b6-058c49176c94
@@ -26,7 +26,9 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+
 
 ---
 
@@ -35,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](includes/banner.md)]
 
 
-This article describes retail hierarchies in Microsoft Dynamics AX.
+This article describes retail hierarchies in Microsoft Dynamics 365 for Retail.
 
 You can create a retail category hierarchy to organize the products that you sell through your retail channels. You can use retail product hierarchies to categorize or group products. You can then use these products to create product assortments and customer loyalty programs. You can also assign product attributes and properties, assign a pricing structure, include the products in product promotions, and use the products for reporting. You can create one retail category hierarchy to represent all the products and categories in your organization, and then use that category hierarchy for multiple purposes. Alternatively, you can create multiple retail category hierarchies for special purposes, such as product promotions. When you create a retail product hierarchy, you must assign a category hierarchy type to identify the purpose of the category hierarchy. For example, only product hierarchies that are assigned the **Retail navigation hierarchy** type are referenced when you browse products by category online or in point of sale (POS).
 

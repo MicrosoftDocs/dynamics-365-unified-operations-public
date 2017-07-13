@@ -5,7 +5,7 @@ title: Section Related Links subpattern
 description: This article provides information about the Section Related Links subpattern. This subpattern is used as part of the Operational Workspace pattern, specifically for the last panorama section that contains a set of links to other forms.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 29331
 ms.assetid: 984d7c6b-cf0a-4056-88f3-c32c92ca3401
@@ -51,13 +51,12 @@ This pattern didn't exist for Microsoft Dynamics AX 2012.
 ## Model
 ### High-level structure
 
-TabPage
+- TabPage
 
-*LinkButton ($Button) \[0..N\]*
+    - *LinkButton ($Button) \[0..N\]*
+    - *ButtonGroup (Group) \[0..N\]*
 
-*ButtonGroup (Group) \[0..N\]*
-
-LinkButton ($Button) \[1..N\]
+- LinkButton ($Button) \[1..N\]
 
 ### Core components
 
@@ -83,6 +82,3 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
-
-
-

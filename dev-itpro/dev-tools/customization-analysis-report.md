@@ -5,7 +5,7 @@ title: Customization Analysis Report (CAR)
 description: This article describes how to generate a Customization Analysis Report for your model. It also describes some best practice rules that are included in the report, and provides suggestions for fixing errors and warnings that are associated with these rules. 
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: 51
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 49681
 ms.assetid: 540b08dd-9af7-42fc-aa0c-ba04af1f8002
@@ -40,10 +40,10 @@ This article describes how to generate a Customization Analysis Report for your 
 What is the Customization Analysis Report?
 ------------------------------------------
 
-The Customization Analysis Report is a tool that analyzes your customization and extension models, and runs a predefined set of best practice rules. The report is one of the requirements of the solution certification process for Microsoft Dynamics 365 for Operations. The report is in the form of a Microsoft Excel workbook.
+The Customization Analysis Report is a tool that analyzes your customization and extension models, and runs a predefined set of best practice rules. The report is one of the requirements of the solution certification process. The report is in the form of a Microsoft Excel workbook.
 
 ## How to generate the report
-To generate the Customization Analysis Report, run the following command in a Dynamics 365 for Operations development environment.
+To generate the Customization Analysis Report, run the following command in a development environment.
 
     xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
 
@@ -78,7 +78,7 @@ This section describes all best practice rules (errors, warnings, or informatio
 |---------------------|-----------------------------------------------------------------------------------|
 | Error message       | SQL code found in method %1                                                       |
 | Issue type/severity | Code/Warning                                                                      |
-| How to fix it       | Refactor your code to use X++ to access the Dynamics 365 for Operations database. |
+| How to fix it       | Refactor your code to use X++ to access the database. |
 
 ### BPCheckNestedLoopInCode
 

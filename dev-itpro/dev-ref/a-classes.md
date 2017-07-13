@@ -5,7 +5,7 @@ title: A Classes
 description: System API classes that start with the letter A.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: a:2:{s:4:"name";s:22:"Robin Reynolds-Haertle";s:2:"id";s:0:"";}
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 47561
 ms.assetid: 03d9d906-d683-47b4-8488-795173db2125
@@ -245,7 +245,7 @@ Control of the input to the new method could be a security risk. Therefore, this
 ## Class AOSSessionInfo
     class AOSSessionInfo extends Object
 
-The AOSSessionInfo class is used to provide information about a session for Microsoft Dynamics 365 for Operations Application Object Server (AOS).
+The AOSSessionInfo class is used to provide information about a session for Finance and Operations Application Object Server (AOS).
 
 ### Remarks
 
@@ -1041,7 +1041,7 @@ The AsciiIo class provides functionality for reading and writing ASCII files.
 
 ### Remarks
 
-The TextIo class provides functionality for reading and writing files that use various code pages. The AsciiIO class supports only ANSI code page (ACP) characters. Existing code that uses the AsciiIO class must be converted to use the TextIO class if the file contains non-ACP characters, or if it is a file that is used only in Microsoft Dynamics 365 for Operations, such as an .xpo file.
+The TextIo class provides functionality for reading and writing files that use various code pages. The AsciiIO class supports only ANSI code page (ACP) characters. Existing code that uses the AsciiIO class must be converted to use the TextIO class if the file contains non-ACP characters, or if it is a file that is used only in Finance and Operations, such as an .xpo file.
 
 ### Examples
 

@@ -2,13 +2,13 @@
 # required metadata
 
 title: Retail time and attendance
-description: This topic describes the scenarios that are supported for time and attendance management in Microsoft Dynamics 365 for Operations - Retail. 
+description: This topic describes the scenarios that are supported for time and attendance management in Microsoft Dynamics 365 for Retail. 
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 41
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
@@ -26,7 +26,8 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+
 
 ---
 
@@ -35,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](includes/banner.md)]
 
 
-This topic describes the scenarios that are supported for time and attendance management in Microsoft Dynamics 365 for Operations - Retail. 
+This topic describes the scenarios that are supported for time and attendance management in Microsoft Dynamics 365 for Retail. 
 
 Manage worker setup and scheduling
 ----------------------------------
@@ -126,7 +127,7 @@ On POS:
 -   You can use the activity type and store filters to filter on time registrations.
 
 ## Process and manage time registrations
-A Dynamics 365 for Operations - Retail user follows the workflow to calculate, approve, and transfer time registrations to payroll.
+A Dynamics 365 for Retail user follows the workflow to calculate, approve, and transfer time registrations to payroll.
 
 ### Primary operations
 

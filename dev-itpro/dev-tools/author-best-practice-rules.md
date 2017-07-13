@@ -5,7 +5,7 @@ title: Authoring best practices
 description: This topic describes how you can author best practice rules in C#, for both metadata and X++ code. Best practice checks are run by the compiler and in daily builds to catch objectionable practices that are unacceptable in shipping code. The features can also be used to author simple one-of tools to gather information about the application.
 author: pvillads
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: 61
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 48071
 ms.assetid: 4fe671c4-c556-4942-8570-307cf68ae0a7
@@ -344,7 +344,7 @@ When your code compiles cleanly, a DLL will be created. In order for the tooling
 -   By using the button on the Best Practice configuration dialog. Click the **Install extension...** button. You will be asked to point to the assembly file that contains your rule (i.e. the DLL generated when you build the rule). Press OK, and the system will copy the DLL where it needs to be (see below).
 -   By manually installing the DLL into the C:\\Packages\\bin\\BPExtensions folder.
 
-If you want to debug your rule, you will find it useful to copy the .pdb file to the same directory as the assembly After the DLL has been deployed to the target directory, Visual Studio needs to be restarted. After that, the rule is available for use. You may have to debug your rule to iron out any remaining kinks. In fact stepping through your rule and inspecting the ASTs is valuable when you are learning the ropes. To debug a rule you need to know that the best practice rule is actually executed by the xppAgent process; it is therefore not run within the context of VS itself. Make sure you have selected **Run best practice checks** in the Visual Studio Options dialog, in the Dynamics 365 for Operations page. Otherwise, your check will not run.   Set a breakpoint in the **VisitMethod** method, and then do a build of a model that has the new rule switched on as shown above for the Fleet management model. Attach your VS instance to the xppcAgent process. When you do a build your breakpoint will be hit, and you can start drilling into your code. You can see all the properties, the list of declarations and statements, and find out all the details about them.
+If you want to debug your rule, you will find it useful to copy the .pdb file to the same directory as the assembly After the DLL has been deployed to the target directory, Visual Studio needs to be restarted. After that, the rule is available for use. You may have to debug your rule to iron out any remaining kinks. In fact stepping through your rule and inspecting the ASTs is valuable when you are learning the ropes. To debug a rule you need to know that the best practice rule is actually executed by the xppAgent process; it is therefore not run within the context of VS itself. Make sure you have selected **Run best practice checks** in the Visual Studio Options dialog, in the **Finance and Operations** page. Otherwise, your check will not run.   Set a breakpoint in the **VisitMethod** method, and then do a build of a model that has the new rule switched on as shown above for the Fleet management model. Attach your VS instance to the xppcAgent process. When you do a build your breakpoint will be hit, and you can start drilling into your code. You can see all the properties, the list of declarations and statements, and find out all the details about them.
 
 ### Running rules in XppBp.exe
 

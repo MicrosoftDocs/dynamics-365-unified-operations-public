@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data entities - Product information management
-description: This article provides a list of the data entities that are available for the Product information management functionality in Microsoft Dynamics 365 for Operations.
+description: This article provides a list of the data entities that are available for Product information management.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: 51
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 95953
 ms.assetid: 2d8ca9fc-e231-41f0-9fbc-d17a7f7c6892
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for the Product information management functionality in Microsoft Dynamics 365 for Operations.
+This article provides a list of the data entities that are available for Product information management.
 
 Available data entities
 -----------------------

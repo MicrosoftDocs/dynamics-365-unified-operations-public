@@ -5,7 +5,7 @@ title: Extensible control layout guidelines
 description: This article provides guidelines that you should follow when you specify the layout and sizing of extensible controls.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 11354
 ms.assetid: 53d1f66a-1e69-4548-9fd2-a87a3b370882

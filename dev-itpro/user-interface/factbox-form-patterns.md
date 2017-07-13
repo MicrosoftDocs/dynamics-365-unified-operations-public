@@ -5,7 +5,7 @@ title: FactBox form patterns
 description: This article provides information about the FactBox form patterns. FactBoxes are used to provide related information for a record.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer 
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 14721
 ms.assetid: b3d527bf-6b56-42fb-a135-493a62eb1435
@@ -65,29 +65,26 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### Form Part FactBox Grid – High-level structure
 
-Design
+- Design
 
-Grid
+    - Grid
+    - *GridDefaultAction (Button) \[Optional\]*
+    - *ButtonGroup (ButtonGroup) \[Optional\]*
 
-*GridDefaultAction (Button) \[Optional\]*
-
-*ButtonGroup (ButtonGroup) \[Optional\]*
-
-Button
+        - Button
 
 ###  Form Part FactBox Card – High-level structure
 
-Design
+- Design
 
-*FieldGroups (Group) \[0..N\]*
+    - *FieldGroups (Group) \[0..N\]*
 
-Fields ($Fields, 1..N)
+        - Fields ($Fields, 1..N)
 
-*Fields ($Field) \[0..N\]*
+    - *Fields ($Field) \[0..N\]*
+    - *ButtonGroup (ButtonGroup) \[Optional\]*
 
-*ButtonGroup (ButtonGroup) \[Optional\]*
-
-Button
+        - Button
 
 ### Core components
 
@@ -99,7 +96,7 @@ Button
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md)document.
+-   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
 
 **FactBox** **general guidelines:**
 
@@ -160,13 +157,10 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [AX2012 MSDN List Page Guidelines (including FactBoxes)](http://msdn.microsoft.com/EN-US/library/gg853328.aspx)
+-   [AX 2012 MSDN List Page Guidelines (including FactBoxes)](http://msdn.microsoft.com/EN-US/library/gg853328.aspx)
 
 #### AX 2012 example
 
 **CustTable** &gt; **ContactsInfoPart** 
 
 [![FactBox(5)](./media/factbox5.png)](./media/factbox5.png)
-
-
-

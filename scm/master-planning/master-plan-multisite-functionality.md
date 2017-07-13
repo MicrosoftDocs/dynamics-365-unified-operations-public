@@ -5,7 +5,7 @@ title: Master planning and multisite functionality
 description: Master planning takes the settings of the site and warehouse inventory dimensions into account. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: InventLocation, InventSite
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 2434
 ms.assetid: 7f05c031-a446-4168-8cce-03a6305f5c4d

@@ -5,7 +5,7 @@ title: Custom designs for business documents
 description: This topic shows how to create a custom report design for an existing application business document by using a pure extension model. 
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: 2051
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 266574
 ms.assetid: fba7faa3-716b-4adf-ab3e-8573f3614894
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 3
 
 This topic shows how to create a custom report design for an existing application business document by using a pure extension model. 
 
-Microsoft Dynamics 365 for Operations includes an expanded set of tools to support custom solutions. This topic focuses on the steps for creating a custom report design for an existing application business document by using a pure extension model. Follow the steps later in this topic to associate a custom report design with an instance of an application document. When you've finished, users can configure Print management settings to select the custom design whenever it's appropriate, based on transaction details. The following illustration shows a typical application customization.[![extendingprintmgt](./media/extendingprintmgt1.png)](./media/extendingprintmgt1.png)  
+Microsoft Dynamics 365 for Finance and Operations includes an expanded set of tools to support custom solutions. This topic focuses on the steps for creating a custom report design for an existing application business document by using a pure extension model. Follow the steps later in this topic to associate a custom report design with an instance of an application document. When you've finished, users can configure Print management settings to select the custom design whenever it's appropriate, based on transaction details. The following illustration shows a typical application customization.[![extendingprintmgt](./media/extendingprintmgt1.png)](./media/extendingprintmgt1.png)  
 
 ## What's important to know?
 Here are some important points that you should be aware of before you apply this solution:

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data entities - Master planning
-description: This article provides a list of the data entities that are available for the Master planning functionality in Microsoft Dynamics 365 for Operations.
+description: This article provides a list of the data entities that are available for Master planning.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: 51
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 95923
 ms.assetid: fb6b9280-047a-4db9-9cc3-f516cf9be0d2
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for the Master planning functionality in Microsoft Dynamics 365 for Operations.
+This article provides a list of the data entities that are available for Master planning.
 
 Available data entities
 -----------------------

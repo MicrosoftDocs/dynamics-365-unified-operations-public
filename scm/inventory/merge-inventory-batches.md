@@ -5,7 +5,7 @@ title: Merge inventory batches
 description: This article provides information about how to consolidate two or more inventory batches into a merged batch. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
@@ -95,7 +95,7 @@ No, you can merge only batches that have the same site and warehouse storage di
 No, you can merge only the full quantity of batches. The batch merge functionality is intended as an inventory feature, not a production feature.
 
 ## What if the batches have different batch attribute values?
-When you select the source batches to combine in the merged batch, Microsoft Dynamics 365 for Operations verifies whether all the batches have the characteristics or attribute values. When an attribute value is the same, a value is suggested for the merged batch. You can change that value. Attribute values that aren't the same are left blank for the merged batch, and you can enter those values manually. If the batch attribute type for the attribute value is an integer or a fraction, and the values aren't the same for all the source batches, the value is calculated by using a weighted average calculation. The calculated value is rounded up or down to the nearest increment. If the value is blank for a source batch, the batch and its quantity aren't included in the calculation. **Example** The following example shows a weighted average calculation for a merged batch. Two of the source batches have a blank value for a batch attribute type that is an integer. The following attribute is assigned to the source batches.
+When you select the source batches to combine in the merged batch, Finance and Operations verifies whether all the batches have the characteristics or attribute values. When an attribute value is the same, a value is suggested for the merged batch. You can change that value. Attribute values that aren't the same are left blank for the merged batch, and you can enter those values manually. If the batch attribute type for the attribute value is an integer or a fraction, and the values aren't the same for all the source batches, the value is calculated by using a weighted average calculation. The calculated value is rounded up or down to the nearest increment. If the value is blank for a source batch, the batch and its quantity aren't included in the calculation. **Example** The following example shows a weighted average calculation for a merged batch. Two of the source batches have a blank value for a batch attribute type that is an integer. The following attribute is assigned to the source batches.
 
 | Attribute | Minimum | Increment | Maximum |
 |-----------|---------|-----------|---------|

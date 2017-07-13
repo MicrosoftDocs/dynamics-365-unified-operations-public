@@ -2,10 +2,10 @@
 # required metadata
 
 title: Credit card setup, authorization, and capture
-description: This article provides an overview of credit card authorization in Microsoft Dynamics AX. It includes information about how to set up a payment service, add a credit card to a sales order, and void an authorization.
+description: This article provides an overview of credit card authorization in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It includes information about how to set up a payment service, add a credit card to a sales order, and void an authorization.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: CreditCardProcessors, CustTable, SalesTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 3041
 ms.assetid: 678f6899-bfa5-439b-aaca-b4affcc338ba
@@ -34,8 +34,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+[!include[retail name](../includes/retail-name.md)]
 
-This article provides an overview of credit card authorization in Microsoft Dynamics AX. It includes information about how to set up a payment service, add a credit card to a sales order, and void an authorization.
+
+This article provides an overview of credit card authorization in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It includes information about how to set up a payment service, add a credit card to a sales order, and void an authorization.
 
 Setting up the credit card payment service
 ------------------------------------------

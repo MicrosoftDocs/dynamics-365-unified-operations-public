@@ -5,7 +5,7 @@ title: VAT reporting for Europe
 description: This topic provides general information about setting up and generating the value-added tax (VAT) statement for some European countries.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 266844
 ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, Latvia, Lithuania, Netherlands, Sweden
@@ -66,7 +66,7 @@ Before you can set up sales tax reporting codes, you must select the correct r
 
 ### Sales tax reporting codes
 
-Sales tax reporting codes are box codes in the VAT statement or tag names in XML format. These codes are used to aggregate and prepare amounts for the report. When you configure the electronic reporting format of the VAT statement, the names of the result amounts will be used. You can create and maintain sales tax reporting codes on the **Sales tax reporting codes** page. You must assign each code a report layout. After you create the sales tax reporting codes, you can choose the codes in the **Report setup** section on the **Sales tax codes** page. <!---For more information, see [Set up sales tax reporting codes](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-reporting-codes/) and [Sales tax reporting codes page (Field descriptions)](http://ax.help.dynamics.com/en/wiki/sales-tax-reporting-codes-page-field-descriptions/).-->
+Sales tax reporting codes are box codes in the VAT statement or tag names in XML format. These codes are used to aggregate and prepare amounts for the report. When you configure the electronic reporting format of the VAT statement, the names of the result amounts will be used. You can create and maintain sales tax reporting codes on the **Sales tax reporting codes** page. You must assign each code a report layout. After you create the sales tax reporting codes, you can choose the codes in the **Report setup** section on the **Sales tax codes** page. <!---For more information, see [Set up sales tax reporting codes](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-reporting-codes/).-->
 
 ### Sales tax codes for VAT reporting
 
@@ -256,9 +256,9 @@ d<li>The transaction <strong>Tax base amount</strong> or <strong>Tax amount</str
 
 You can use Electronic Reporting (ER) to configure statements and report, and to export data different electronic formats without changing X++ code. For additional information:
 
--   [Electronic reporting overview](/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting)
--   [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
--   [Localization requirements – Create a GER configuration](/dynamics365/operations/dev-itpro/analytics/electronic-reporting-configuration)
+-   [Electronic reporting overview](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting)
+-   [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
+-   [Localization requirements – Create a GER configuration](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration)
 
 ## Countryspecific resources for VAT statements
 The VAT statement for each country must meet the requirements of the country’s legislation. There are predefined general models and formats of VAT statements for the countries listed in the following table.

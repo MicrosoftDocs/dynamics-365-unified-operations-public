@@ -5,7 +5,7 @@ title: Fixed assets in the public sector
 description: This article describes the fixed assets functionality that is available for public sector. 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: AssetTransfer
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 20891
 ms.assetid: 552c7969-f044-4774-82ec-080aeae8cf3f

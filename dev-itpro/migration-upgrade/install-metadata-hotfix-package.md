@@ -5,7 +5,7 @@ title: Install a metadata hotfix
 description: This topic will guide you through installing an Application Metadata hotfix on your development environment.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: 61
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 79822
 ms.assetid: 9b132253-1748-4b71-b128-c4b9d3a311ae

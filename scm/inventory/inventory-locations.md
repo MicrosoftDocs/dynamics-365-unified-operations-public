@@ -5,7 +5,7 @@ title: Inventory locations
 description: Inventory locations are used with basic warehousing (WMS I) to determine where items are stored and where items are picked from in a WMS I warehouse.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: WMSLocation
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 2134
 ms.assetid: 69bf6922-4151-447f-b678-4ba95637f54c
@@ -71,7 +71,7 @@ It is possible to copy locations from one warehouse to another and to create lo
 See also
 --------
 
-[Create a new warehouse layout (task guide)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+[Create a new warehouse layout (Task guide)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
 
 
 

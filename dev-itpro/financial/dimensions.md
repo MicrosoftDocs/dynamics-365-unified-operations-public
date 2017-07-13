@@ -5,7 +5,7 @@ title: Dimensions
 description: To support different dimension patterns, a set of framework data entities has been created that can be used as data sources in other entities that involve dimensions.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: 61
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 13461
 ms.assetid: c2431895-0751-4a2a-96cb-f7df76c88f66
@@ -67,7 +67,7 @@ The entity exposes a default dimension field, **DimensionDefaultDisplayValue**. 
 ## Create an entity by using a wizard
 This section describes how to create a data entity by using a wizard. We recommend that you use the wizard. It requires only that you select the SFK field of the dimension. The wizard creates the required data source, fields, and relations that have all the correct settings.
 
-1.  Click **File** &gt; **New** &gt; **Project** to create a new Microsoft Dynamics 365 for Operations project.
+1.  Click **File** &gt; **New** &gt; **Project** to create a new Microsoft Dynamics 365 for Finance and Operations project.
 2.  In Solution Explorer, right-click your project, and then click **Properties**. The **Property Pages** dialog box for your project opens.
 3.   In the **Property Pages** dialog box, follow these steps:
     1.  Change the value of the **Model** property to **Application Suite Unit tests**, and then click **OK**. You must set this property only one time per project.

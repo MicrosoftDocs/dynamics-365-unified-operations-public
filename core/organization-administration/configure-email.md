@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure and send email
-description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users. This topic is divided into sections for administrators and users to make it easy to find relevant information.
+description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 268274
 ms.assetid: 194ca8fd-5e20-4464-9c85-08d2b5ff63ca
@@ -37,14 +37,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users. This topic is divided into sections for administrators and users to make it easy to find relevant information.
 
-In Dynamics 365 for Operations, both administrators and users set the behavior of the email subsystem.
+In Dynamics 365 for Finance and Operations, Enterprise edition, both administrators and users set the behavior of the email subsystem.
 
 ## Administrator: Email parameters page
 On the **Email parameters** page, note the following settings on the **Email providers** tab.
 
 | Field                     | Description                                                                                                                 |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| **Batch email provider**  | Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. |
+| **Batch email provider**  | Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. The Exchange provider will use the account associated with the batch process. |
 | **Attachment size limit** | Specifies the maximum size of a single email that can be sent via the email subsystem.                                      |
 
 On the **Email parameters** page, note the following settings on the **SMTP settings** tab.
@@ -86,6 +86,7 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 
 ## Administrator: Email Distributor batch process
 Email that is sent directly from the server, without user interaction, via SMTP is sent by the **Email distributor batch** process. That batch process must be started to process the email queue. To start the process, open the **Email distributor batch** pane (**System administration** &gt; **Periodic tasks** &gt; **Email processing** &gt; **Batch**) and turn on **Batch processing**.
+If the Exchange provider is used, then the user account associated with the batch process (usually admin) will be sender.
 
 ## Administrator: User email
 The default email address for each user is pulled from the **Email** field on the **Users** page (**System administration** &gt; **Users** &gt; **Users**). An email address should be specified for each user for sign in, so this field should be populated. Users can override this default if needed.
@@ -104,8 +105,8 @@ When an email is going to be sent, the user will see the **How would you like to
 | Field                                                          | Description                                                                                                                                    |
 |----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Use an email app, such as Outlook**                          | Provides the user with a generated email (.eml) file.                                                                                          |
-| **Use Exchange email server**                                  | Uses the Exchange Server associated with the tenant. The email will be sent using Exchange Web Services (EWS).                                 |
-| **Use the Microsoft Dynamics 365 for Operations email client** | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP.                                                   |
+| **Use Exchange email server**                                  | Uses the Exchange Online server associated with the tenant. The email will be sent using Exchange Web Services (EWS). On-premises Exchange servers are not supported at this time.                                 |
+| **Use the Microsoft Dynamics 365 for Finance and Operations email client** | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP.                                                   |
 | **Do not ask again**                                           | If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open. |
 
 ## User (optional): Send email dialog box
@@ -138,7 +139,7 @@ Email workflows that are enabled via the SysEmail framework can generate email m
 
 Email workflows that are enabled via the SysEmail framework can also be created in a simple email dialog box and then sent via Simple Mail Transfer Protocol (SMTP).
 
-1.  In Dynamics 365 for Operations, go to the **Email parameters** page.
+1.  In Finance and Operations, go to the **Email parameters** page.
 2.  Click **SMTP settings**.
 3.  Set the **Outgoing mail server** to the desired SMTP server:
     -   For [Office 365 production](https://support.office.com/en-us/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (including \*.onmicrosoft.com accounts) use smtp.office365.com. (Find this setting via outlook.office.com, at **Settings** &gt; **Mail** &gt; **POP and IMAP**.)
@@ -152,7 +153,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 9.  Click **Collect** &gt; **Customer balances** &gt; **Collections** to open the **Collections** page.
 10. Click **Communicate** &gt; **Email** &gt; **Statements to contact**.
 11. Click **OK** to accept the default values in the dialog box.
-12. If you’re prompted for the mail option to use, select **Use the Microsoft Dynamics 365 for Operations email client**, and then click **OK**.
+12. If you’re prompted for the mail option to use, select **Use the Microsoft Dynamics 365 for Finance and Operations email client**, and then click **OK**.
 13. To receive the test message, change the **To address** to your email address.
     -   Ensure that the account specified in the SMTP settings is able to **Send As** or **Send On Behalf Of** your email account. The easiest way to ensure this to use your email account in the SMTP settings.
 
@@ -163,9 +164,9 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 See also
 --------
 
-[Office integration troubleshooting](/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting)
+[Office integration troubleshooting](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting)
 
-[Office integration tutorial](/dynamics365/operations/dev-itpro/office-integration/office-integration-tutorial)
+[Office integration tutorial](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial)
 
 [Configure email functionality in Microsoft Dynamics AX [AX 2012]](https://technet.microsoft.com/en-us/library/aa834374.aspx)
 

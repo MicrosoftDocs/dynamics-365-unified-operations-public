@@ -5,7 +5,7 @@ title: Report production orders as finished
 description: Report as finished is a production stage. At this stage, a finished product is reported and moved from the production order to the inventory.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: ProdJournalTransJob, ProdJournalTransProd, ProdJournalTransRoute
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 27061
 ms.assetid: 1c2dfc54-a293-49f2-9b96-5a912ac5762c

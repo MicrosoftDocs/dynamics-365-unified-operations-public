@@ -5,7 +5,7 @@ title: SEPA credit transfer overview
 description: This article provides general information about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. A SEPA credit transfer is a specific type of payment in euros from one company or individual to another company or individual. The topic also explains how to set up and transmit a credit transfer payment file.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendP
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
@@ -57,15 +57,15 @@ The EPC, which consists of European banks, develops the commercial and technical
 A SEPA credit transfer is a payment from one company or individual to another company or individual. Payments must be in euros, and must include the International Bank Account Number (IBAN) and the Bank Identifier Code (BIC) for both parties. (The BIC is also known as the Society for Worldwide Interbank Financial Telecommunication \[SWIFT\] code.) Additionally, transaction costs must be shared between both parties. Credit transfers that occur between parties should use XML files that comply with ISO 20022 payment processing standards and the XML format, as specified by the EPC.
 
 ## How is a credit transfer implemented?
-The credit transfer payment format for European countries is implemented by using the Electronic reporting (ER) and Methods of payment functionality in Dynamics 365 for Operations. A few credit transfer formats that are used in other regions still use the legacy payment framework. Among many other formats, there are twelve ISO 20022 credit transfer file formats that are available. These export formats conform to the SEPA ISO 20022 XML standard. They are used to generate non-euro payment transfers for countries/regions where they are used and euro payments as specified in version 8.2 of the SEPA Credit Transfer Scheme Rulebook that the EPC releases. Before you can implement credit transfers, you must contact your bank to obtain the software that is required in order to upload electronic banking files. You will use that software to transfer the XML files that contain payment orders to your bank.
+The credit transfer payment format for European countries is implemented by using the Electronic reporting (ER) and Methods of payment functionality in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. A few credit transfer formats that are used in other regions still use the legacy payment framework. Among many other formats, there are twelve ISO 20022 credit transfer file formats that are available. These export formats conform to the SEPA ISO 20022 XML standard. They are used to generate non-euro payment transfers for countries/regions where they are used and euro payments as specified in version 8.2 of the SEPA Credit Transfer Scheme Rulebook that the EPC releases. Before you can implement credit transfers, you must contact your bank to obtain the software that is required in order to upload electronic banking files. You will use that software to transfer the XML files that contain payment orders to your bank.
 
-## What credit transfer formats are currently supported in Dynamics 365 for Operations?
+## What credit transfer formats are currently supported in Finance and Operations?
 You should always go to the Shared asset library on Microsoft Dynamics Lifecycle services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**. The next section, "What do I have to set up?", provides a link to the topic that explains how to create an LCS repository to review available configurations and import selected configurations.
 
 ## What do I have to set up?
--   Before you can create credit transfer files, at least one active credit transfer configuration must be imported into your ER configurations. For instructions, see [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Before you can create credit transfer files, at least one active credit transfer configuration must be imported into your ER configurations. For instructions, see [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 -   When you configure Accounts payable methods of payment, select the **Generic electronic reporting** check box, and select the appropriate credit transfer format (for example, **ISO 20022 Credit transfer (AT)**) as an export format configuration.
--   You must also set up the legal entity and bank account information in Dynamics 365 for Operations.
+-   You must also set up the legal entity and bank account information in Finance and Operations.
 -   Bank account numbers, IBANs, and sometimes SWIFT codes (BICs) or other IDs are required in order to create valid credit transfer payments. Therefore, you must set up them for the vendor bank account and the bank account for the organization that is requesting the transfer.
 -   Additional information might be required, such as value-added tax (VAT) numbers for the parties that are referred to in the credit transfer message. This information must be set up for vendors and for the legal entity when it's requested.
 -   Some Accounts payable methods of payment, mostly ISO 20022–based methods of payment, might require additional setup for **Payment format code sets**, such as **Service type** = **SLEV**. Those codes are used as additional tagging for payment transactions during payment processing. Default values of Payment codes, like **Category purpose**, **Charge bearer**, **Local instrument** and **Service level** can be set in two places. The first place is **Accounts payable payment journal header** and the second is **Accounts payable methods for payments**. Upon payment journal lines creation, Payment code values set on payment journal header are transferred to a journal line, if not set, the values from Methods of payment are used.

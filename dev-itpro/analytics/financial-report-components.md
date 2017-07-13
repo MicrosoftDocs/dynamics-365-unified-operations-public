@@ -5,7 +5,7 @@ title: Financial report components
 description: This article describes how the components, or building blocks, of report definitions are used in financial reporting. These building blocks include row definitions, column definitions, and reporting tree definitions. The article explains how to organize and lock building blocks, and how to work with building block groups. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
@@ -108,7 +108,7 @@ You can save an existing building block group under a new name. You can then mod
 
 ### Export a building block group
 
-You can export a building block group or specific report building blocks in a building block group. You can use the exported building block group as a backup. You can also copy the exported data between building block groups or Dynamics 365 for Operations installations. Report designer includes the referenced font styles and dimension sets together with the building block group.
+You can export a building block group or specific report building blocks in a building block group. You can use the exported building block group as a backup. You can also copy the exported data between building block groups or Finance and Operations installations. Report designer includes the referenced font styles and dimension sets together with the building block group.
 1.  In Report Designer, on the **Company** menu, click **Building Block Groups**.
 2.  In the **Building Block Groups** dialog box, select the building block group to export, and then click **Export**.
 3.  In the **Export** dialog box, select the report definitions to export:

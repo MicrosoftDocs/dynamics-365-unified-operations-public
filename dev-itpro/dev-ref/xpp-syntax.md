@@ -5,7 +5,7 @@ title: X++ syntax
 description: This topic contains contains the syntax reference for X++. 
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: 61
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 72211
 ms.assetid: bb238a46-3a43-4f3c-a9b6-86b26e988881
@@ -1446,7 +1446,7 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 <td>Modifiers</td>
 <td>The <strong>static</strong> modifier should not be applied to an interface</td>
 <td>It was possible to write <span class="code">static interface IMyInterface {}</span>, but the <strong>static</strong> modifier had no effect because it makes no sense in this context.</td>
-<td>Sometime after Microsoft Dynamics 365 for Operations 2009 the X++ compiler might stop allowing the <strong>static</strong> modifier on interface declarations. For more information, see Interfaces Overview.</td>
+<td>Sometime after Dynamics AX 2009 the X++ compiler might stop allowing the <strong>static</strong> modifier on interface declarations. For more information, see Interfaces Overview.</td>
 </tr>
 <tr class="even">
 <td>Modifiers</td>

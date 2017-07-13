@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Access Dynamics 365 for Operations instances
-description: This topic describes how to access development instances of Microsoft Dynamics 365 for Operations, configure on-premises development VMs, and find important configuration settings for developers and administrators.
+title: Access instances
+description: This topic describes how to access development instances, configure on-premises development VMs, and find important configuration settings for developers and administrators.
 author: robadawy
 manager: AnnBe
 ms.date: 04/13/2017
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 10031
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
@@ -30,24 +30,24 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Access Dynamics 365 for Operations instances
+# Access instances
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes how to access development instances of Microsoft Dynamics 365 for Operations, configure on-premises development VMs, and find important configurations settings for developers and administrators.
+This topic describes how to access development instances, configure on-premises development VMs, and find important configurations settings for developers and administrators.
 
 Definitions
 -----------
 
 | Term      | Definition                                                                                                                                                                                                                                       |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| End user  | A user who accesses Microsoft Dynamics 365 for Operations through the web client. The end user must have Microsoft Azure Active Directory (Azure AD) credentials to access an instance and must be provisioned/added as a user of that instance. |
+| End user  | A user who accesses an instance through the web client. The end user must have Microsoft Azure Active Directory (Azure AD) credentials to access an instance and must be provisioned/added as a user of that instance. |
 | Developer | A user who will develop code through the Microsoft Visual Studio environment. A developer requires Remote Desktop access to development environment (VM). The developer account must be an administrator on the VM.                              |
 
 ### Environments
 
-Dynamics 365 for Operations is deployed in two modes:
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition is deployed in two modes:
 
 -   A cloud environment that is provisioned through Microsoft Dynamics Lifecycle Services (LCS), and that supports various topologies (developer, demo, and high availability)
 -   A local (on-premises) development virtual machine (VM) that is downloaded from LCS
@@ -64,9 +64,9 @@ The system can be accessed by end users. The administrator can add users to this
 
 1.  Go to your LCS project page.
 2.  In the **Environments** section, click the deployed environment.
-3.  When the environment page opens, you can access the application by clicking **Login** &gt; **Log on to Dynamics 365 for Operations** in the upper-right corner.
+3.  When the environment page opens, you can access the application by clicking **Login** &gt; **Log on to Finance and Operations** in the upper-right corner.
 4.  Use valid end user credentials to sign in to the application. If the current LCS user is the user who originally deployed the environment, that user is probably a valid end user and the administrator of the application.
-5.  In your browser, make a note of the Dynamics 365 for Operations base URL after you sign in. For example, the base URL might be **https://dynamicsAx7aosContoso.cloud.dynamics.com**.
+5.  In your browser, make a note of the base URL after you sign in. For example, the base URL might be **https://dynamicsAx7aosContoso.cloud.dynamics.com**.
 
 ### Accessing the cloud instance through Remote Desktop
 
@@ -86,7 +86,7 @@ An environment virtual hard disk (VHD) is made available for download from LCS, 
 
 ### Retail configuration
 
-Follow the steps in this section if you are also configuring Dynamics 365 for Operations for Retail.
+Follow the steps in this section if you are also configuring for Retail.
 
 To use the downloadable VHD for POS customizations, you must also follow this step.
 
@@ -127,7 +127,7 @@ For developer access, you must be an administrator on the instance. To provision
 
 ### Retail configuration
 
-Follow the steps in this section if you are also configuring Dynamics 365 for Operations for Retail.
+Follow the steps in this section if you are also configuring for Retail.
 
 #### For Dynamics 365 for Operations, Version 1611
 
@@ -137,7 +137,7 @@ Follow the steps in this section if you are also configuring Dynamics 365 for Op
 
 2.  Double-click the icon to start this tool. You will be prompted for your Azure AD credentials. You must use the same credentials that you used in the admin user provisioning tool earlier.
 
-#### For Microsoft Dynamics 365 for Operations 7.0
+#### For Dynamics 365 for Operations 7.0
 
 1.  Install [Microsoft Online Services Sign-In Assistant for IT Professionals RTW](http://go.microsoft.com/fwlink/?LinkID=286152).
 2.  Install [Azure Active Directory Module for Windows PowerShell (64-bit version)](http://go.microsoft.com/fwlink/p/?linkid=236297).
@@ -214,8 +214,8 @@ On a VM, you can find most of the application configuration by opening the web.c
 ### Retail configuration
 
 The Retail software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize retail applications, see the following topics:
--   [Retail SDK overview](/dynamics365/operations/retail/dev-itpro/retail-sdk/retail-sdk-overview)
--   [Retail POS device activation](/dynamics365/operations/retail/dev-itpro/retail-device-activation)
+-   [Retail SDK overview](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-overview)
+-   [Retail POS device activation](/dynamics365/unified-operations/retail/dev-itpro/retail-device-activation)
 
 ## Redeploying or restarting the runtime on the VM
 To restart the local runtime and redeploy all the packages, follow these steps.

@@ -6,11 +6,11 @@ title: Install the AX 2012 R2 CU7 Data import/export framework for SQL Server 20
 description: To use the Data import/export framework for Microsoft Dynamics AX 2012 R2 cumulative update 7 (CU7) with SQL Server 2014 Integration Services or later, you must install AX 2012 R2 CU7, and then apply update KB 3018235KB 3018235.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service:
-ms.technology: 
+ms.technology: ax-2012
 
 # optional metadata
 
@@ -19,7 +19,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 51
-ms.search.scope: AX 2012
+ms.search.scope: AX 2012, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 71103
 ms.assetid: ee28572c-e38d-4c2a-a191-f2631f291e5f

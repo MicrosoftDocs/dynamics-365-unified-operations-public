@@ -5,7 +5,7 @@ title: CODA bank statement
 description: This topic includes information about CODA, which is a report format used in the Belgian electronic banking system. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: BankAccountTable, BankCodaAccountStatement, BankCodaAccountState
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 262534
 ms.search.region: Belgium
@@ -41,7 +41,7 @@ For Belgian bank statement imports, you'll use the CODA file format. This featu
 ## Import transactions from a bank statement
 To import a bank statement file for a bank account, complete the following steps. **Note**: Before you import a bank statement file, you must have already completed the following:
 
--   Import the CODA configurations from Lifecycle Services (LCS). For more information, see [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Import the CODA configurations from Lifecycle Services (LCS). For more information, see [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 -   Select the imported CODA configuration on the **CODA parameters** page.
 
 1.  Go to the **Bank accounts** page.

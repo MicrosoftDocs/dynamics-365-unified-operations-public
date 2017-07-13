@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Deprecated APIs in Dynamics 365 for Operations
+title: Deprecated APIs in Finance and Operations
 description: This document provides the list of deprecated APIs and migration guidance for some of the deprecated APIs.
 author: aneesmsft
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 26011
 ms.assetid: 15d78841-7ea9-4553-905b-ff850d176d4d
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Deprecated APIs in Dynamics 365 for Operations
+# Deprecated APIs in Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
@@ -47,7 +47,7 @@ A number of APIs from Dynamics AX 2012 have been identified. The reason for the 
 -   Chatty (cause lot of traffic back and forth between server and client).
 -   Redundant (framework automatically handles these now).
 
-Throughout this table, under the **Reason for Deprecation** heading, "the client" refers to the Microsoft Dynamics 365 for Operations Web client.
+Throughout this table, under the **Reason for Deprecation** heading, "the client" refers to the Microsoft Dynamics 365 for Finance and Operations Web client.
 
 ## List of deprecated APIs
 <table>

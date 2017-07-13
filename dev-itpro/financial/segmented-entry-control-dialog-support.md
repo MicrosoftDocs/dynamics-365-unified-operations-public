@@ -5,7 +5,7 @@ title: Segmented entry control dialog support
 description: Describes the code pattern to add Segmented Entry controls to dialogs.
 author: robinarh
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: 2051
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 25571
 ms.assetid: cd09af5e-2e6e-41fd-8e74-6612afb016f5
@@ -37,14 +37,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Describes the code pattern to add Segmented Entry controls to dialogs.
 
-The process to add Segmented Entry controls to dialogs has changed for Microsoft Dynamics 365 for Operations. This is an example from Dynamics AX 2012:
+The process to add Segmented Entry controls to dialogs has changed. This is an example from Dynamics AX 2012:
 
     DialogField dialogFeeLedgerDimension;
     LedgerDimensionAccountController ledgerDimensionAccountController;
     dialogFeeLedgerDimension = dialog.addFieldValue(extendedtypestr(LedgerDimensionAccount),feeLedgerDimension,"@SYS119703");
     ledgerDimensionAccountController = LedgerDimensionAccountController::constructForDialog(dialogFeeLedgerDimension);
 
-In Dynamics 365 for Operations, this code would be converted to:
+In the current release, this code would be converted to:
 
     DialogField dialogFeeLedgerDimension;
     dialogFeeLedgerDimension = SegmentedEntryControlBuild::addToDialog(

@@ -5,11 +5,11 @@ title: Install Data import/export framework for AX 2012 R3
 description: This topic describes how to install the Data Import/Export Framework for Microsoft Dynamics AX 2012 R3. 
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
-ms.technology: 
+ms.technology: ax-2012
 
 # optional metadata
 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 51
-ms.search.scope: AX 2012 R3 CU8
+ms.search.scope: AX 2012 R3 CU8, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 96693
 ms.assetid: d8ba7c2e-2a57-4e34-84fb-ba5f6289e781

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Ledger journal types
-description: This article describes the journal types that you can set up for financial journals. Use the Journal names page to set up journals that you can use throughout Microsoft Dynamics 365 for Operations.
+description: This article describes the journal types that you can set up for financial journals. Use the Journal names page to set up journals that you can use throughout Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 15631
 ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes the journal types that you can set up for financial journals. Use the Journal names page to set up journals that you can use throughout Microsoft Dynamics 365 for Operations.
+This article describes the journal types that you can set up for financial journals. Use the Journal names page to set up journals that you can use throughout Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 | Journal type                      | Purpose                                                                                                                                                                                                                                                                                                                                                     | Enter transactions on this page                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|

@@ -5,7 +5,7 @@ title: Posting inventory main accounts by site
 description: This topic provides information about the posting of inventory main accounts by site for China.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: InventPostingParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 262754
 ms.assetid: f8e0b34d-006a-4baf-86ae-60625ba4b442

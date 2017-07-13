@@ -5,7 +5,7 @@ title: Data management and integration using data entities
 description: This topic provides a brief overview of the mechanics of synchronous and asynchronous integration.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 26441
 ms.assetid: 8aa25787-5920-4277-acff-7011200133f4
@@ -51,9 +51,17 @@ Integration through the data management platform provides more capabilities and
 -   **Staging** – These are automatically generated tables that map closely to the data entity. When **Data management enabled** is **true**, staging tables are generated to provide intermediary storage. This enables the framework to do high-volume file parsing, transformation, and some validations.
 -   **Target** – This is the data entity where data will be imported.
 
-The following diagram shows an inbound flow. [![Inbound flow](./media/over6-1024x464.png)](./media/over6.png)
+The following diagram shows an inbound flow. ![Inbound flow](./media/over6.png)
 
 ## Known limitations in data import/export
 When you import text files, string sizes are limited to 32,768 characters. If there is a string larger than this, the imported string will be truncated. This is a limitation in the underlying implemenation and is due to SQL Server Integration Services (SSIS).  
  
 If you need to import strings that are larger than 32,768 characters, we suggest that you use container entity fields.
+
+
+For more information, watch the FastTrack Tech Talk video:
+
+> [!Video https://www.youtube.com/embed/fooBvQhIo6I?list=PLcakwueIHoT_BQxAZ6VFbWgX9sAWBW3Xi?ecver=1]
+
+
+

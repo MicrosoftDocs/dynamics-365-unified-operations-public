@@ -5,7 +5,7 @@ title: Configure a parallel activity in a workflow
 description: To configure a parallel activity, complete the following procedures in the workflow editor.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 195753
 ms.assetid: 6d0656df-b5af-4001-96e6-6f0fcc44d022

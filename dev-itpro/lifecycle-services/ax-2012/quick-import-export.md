@@ -5,11 +5,11 @@ title: Use quick import/export
 description: The purpose of Quick import export is to let you import and export with fewer steps.
 author: margoc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: Dynamics365Operations
-ms.technology: 
+ms.service:
+ms.technology: ax-2012
 
 # optional metadata
 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 11
-ms.search.scope: AX 2012 R3 CU8
+ms.search.scope: AX 2012 R3 CU8, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 89041
 ms.assetid: 990d64e6-d436-4c79-9bb5-bf8c5c5a048f

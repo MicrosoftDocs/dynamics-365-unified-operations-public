@@ -5,7 +5,7 @@ title: Sales tax overview
 description: This article provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,9 @@ ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
@@ -33,6 +35,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Sales tax overview
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 This article provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
@@ -76,7 +80,7 @@ On every transaction (sales/purchase document lines, journals, and so on), you 
 On every transaction, you can look up the calculated sales tax by opening the **Sales tax transaction** page. You can look up the sales tax for a document line or for the whole document. For certain documents (for example, vendor invoice and general journals), you can adjust the calculated sales tax if the original document shows deviant amounts.
 
 ## Sales tax settlement and reporting
-Sales tax must be reported and paid to tax authorities at regulated intervals (monthly, quarterly, and so on). Microsoft Dynamics 365 for Operations provides functionality that lets you settle tax accounts for the interval and offset the balances to the tax settlement account, as specified in the ledger posting groups. You can access this functionality on the **Settle and post sales tax** page. You must specify the sales tax settlement period that sales tax should be settled for. 
+Sales tax must be reported and paid to tax authorities at regulated intervals (monthly, quarterly, and so on). Microsoft Dynamics 365 for Finance and Operations, Enterprise edition provides functionality that lets you settle tax accounts for the interval and offset the balances to the tax settlement account, as specified in the ledger posting groups. You can access this functionality on the **Settle and post sales tax** page. You must specify the sales tax settlement period that sales tax should be settled for. 
 
 After the sales tax has been paid, the balance on the sales tax settlement account should be balanced against the bank account. If the sales tax authority that is specified on the sales tax settlement period is related to a vendor account, the sales tax balance is posted as an open vendor invoice and can be included in the regular payment proposal.
 

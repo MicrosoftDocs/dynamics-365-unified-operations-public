@@ -5,7 +5,7 @@ title: Tabular Fields subpattern
 description: This article provides information about the Tabular Fields subpattern. This subpattern is used to show information efficiently in a tabular format. 
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer 
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 14761
 ms.assetid: a2c38c58-b312-44b1-bf48-c40dc8518011
@@ -56,29 +56,26 @@ In previous releases of Microsoft Dynamics AX, there was no formally accepted wa
 ## Model
 ### High-level structure
 
-TabularFields (Group\*)
+- TabularFields (Group\*)
 
-CaptionGroup (Group)
+    - CaptionGroup (Group)
 
-*TableCaption (StaticText) \[Optional\]*
+        - *TableCaption (StaticText) \[Optional\]*
 
-TableHeaderRow (Group)
+    - TableHeaderRow (Group)
 
-*Column0Label (StaticText) \[Optional\]* – **Note:** This static text fills col0, row0 with a blank.
+        - *Column0Label (StaticText) \[Optional\]* – **Note:** This static text fills col0, row0 with a blank.
+        - ColumnLabels (StaticText) \[1..N\] – **Note:** These are the normal column headers.
 
-ColumnLabels (StaticText) \[1..N\] – **Note:** These are the normal column headers.
+    - TableRows (Group) \[1..N\]
 
-TableRows (Group) \[1..N\]
+        - *RowLabel (StaticText) \[Optional\]*
+        - RowValues ($Field) \[1..N\] OR SecondaryColumnLabel (StaticText) \[1..N\]
 
-*RowLabel (StaticText) \[Optional\]*
+    - TableFooterGroup (Group)
 
-RowValues ($Field) \[1..N\] OR SecondaryColumnLabel (StaticText) \[1..N\]
-
-TableFooterGroup (Group)
-
-*Column0Label (StaticText) \[Optional\]* – **Note:** This static text fills col0, footer with a blank.
-
-*RowValues ($Field) \[0..N\]* – **Note:** All the footer fields are in view mode.
+        - *Column0Label (StaticText) \[Optional\]* – **Note:** This static text fills col0, footer with a blank.
+        - *RowValues ($Field) \[0..N\]* – **Note:** All the footer fields are in view mode.
 
 Note that the four groups in the top-level tabular fields are mandatory structural elements. However, the contents of all those groups exception the Rows (Group) are optional. Additionally, note that Tabular Fields can also be used on a TabPage control. The structure is the same as the structure that is shown here.
 
@@ -113,7 +110,3 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 -   None
-
-
-
-

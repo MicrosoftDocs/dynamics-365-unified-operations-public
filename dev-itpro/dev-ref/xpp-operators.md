@@ -5,7 +5,7 @@ title: X++ operators
 description: This topic describes the operators supported in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: 61
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 150373
 ms.assetid: f06da12e-911c-442c-97fd-280cbc970061
@@ -324,6 +324,3 @@ The order that a compound expression is evaluated in can be important. For examp
 | Conditional                                                      | ? :                                    |
 
 Operators on the same line have equal precedence. If an expression includes more than one of these operators, it's evaluated from left to right, unless assignment operators are used. (Assignment operators are evaluated from right to left.) For example, **&&** (logical **AND**) and **||** (logical **OR**) have the same precedence, and are evaluated from left to right. Therefore, **0&&0||1 == 1**, and **1||0&&0 == 0**.
-
-
-

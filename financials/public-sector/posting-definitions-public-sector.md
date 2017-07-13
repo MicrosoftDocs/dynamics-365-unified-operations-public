@@ -5,7 +5,7 @@ title: Posting definitions in the public sector
 description: This article provides examples of public sector posting definitions that you can use to create subledger journal lines for originating transactions that meet selected criteria. Examples include budget appropriations, pooled cash settlements, write-offs, COD settlements, advanced ledger entries, general ledger year-end close, and proprietary funds.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,9 @@ ms.search.form: BudgetDetailsInquiry, CustGroup, JournalizingDefinition, Journal
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 27271
-ms.assetid: f6e0a75c-fb84-4b86-9ea1-8fd4fcf01c13
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: brpotter

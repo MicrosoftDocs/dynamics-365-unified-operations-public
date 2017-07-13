@@ -5,7 +5,7 @@ title: Install a financial reporting binary hotfix
 description: Use this tutorial to install a financial reporting binary hotfix from Microsoft Dynamics Lifecycle Services (LCS). 
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 2051
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 6734
 ms.assetid: 23e47c55-7bac-4a2b-91bd-66562016a16a

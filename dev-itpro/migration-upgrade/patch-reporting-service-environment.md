@@ -5,7 +5,7 @@ title: Patch SQL Server Reporting Services in a one-box environment
 description: Apply SSRS hotfixes to a one-box development environment. 
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: 61
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 23661
 ms.assetid: 744bd1dc-d109-40df-a5dd-9db8982523a6

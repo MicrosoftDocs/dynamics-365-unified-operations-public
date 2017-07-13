@@ -5,7 +5,7 @@ title: Sales agreements
 description: This article provides information about sales agreements. A sales agreement is a contract that commits the customer to buy products in a specific quantity or for a specific amount over time, in exchange for special prices and discounts.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreeme
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 9554
 ms.assetid: c5d55c8d-99f2-44f9-a897-5b0dee85fc81
@@ -105,14 +105,14 @@ If you've created (released) a sales order against a sales agreement, some f
 | Quantity                                                          | If you specify a quantity that exceeds the quantity that is specified on a sales agreement line where the **Max is enforced** check box is selected, a message box prompts you to save the changed quantity. Click **Yes** to remove the link to the sales agreement line and recalculate the price. Click **No** to remove the link to the sales agreement line without recalculating the price.                                                            |
 
 ## Returning an item that was ordered from a sales agreement
-When a customer returns a product that was ordered from a sales agreement, Microsoft Dynamics 365 for Operations can find and automatically update the related sales agreement commitment to reflect the change in quantity or amount. By creating a return order that is based on the original sales order that is linked to a sales agreement, you establish a relation between the sales agreement commitment, the sales order line, and the return order invoice.  
+When a customer returns a product that was ordered from a sales agreement, Microsoft Dynamics 365 for Finance and Operations can find and automatically update the related sales agreement commitment to reflect the change in quantity or amount. By creating a return order that is based on the original sales order that is linked to a sales agreement, you establish a relation between the sales agreement commitment, the sales order line, and the return order invoice.  
 
 If you don't want to deduct the returned item quantity from the sales agreement commitment, you can use the **Remove link** control on the **Return order** page to remove the link between the return order and the sales agreement commitment. If you must reestablish the link later, click **Create link**.  
 
 **Note:** A return order can be linked to only one sales agreement. If a customer returns multiple products that were ordered from multiple sales agreements, you must create a new return order for each product and create a link to the corresponding sales agreement.
 
 ## Automatic search for sales agreements
-In some situations where sales orders are created indirectly, such as when you create a credit note or intercompany sales orders, you can control whether Microsoft Dynamics 365 for Operations automatically searches for applicable sales agreements.
+In some situations where sales orders are created indirectly, such as when you create a credit note or intercompany sales orders, you can control whether Microsoft Dynamics 365 for Finance and Operations automatically searches for applicable sales agreements.
 
 ## Financial dimensions on sales agreements
 You can copy financial dimensions to either document headers or individual lines of a sales agreement. You can change the dimensions on an agreement header or agreement line at any time. In this case, the dimensions are automatically copied to the release header or release line of release orders.

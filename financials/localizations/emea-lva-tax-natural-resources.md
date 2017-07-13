@@ -5,7 +5,7 @@ title: Tax on natural resources report
 description: This topic explains how to set up and generate the Tax on natural resources (NR Tax) report.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: LvNRTaxItemGroupLookup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 270454
 ms.search.region: Latvia

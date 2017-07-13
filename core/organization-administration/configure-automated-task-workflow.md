@@ -5,7 +5,7 @@ title: Configure an automated task in a workflow
 description: This topic explains how to configure the properties for an automated task.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 192061
 ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
@@ -101,10 +101,10 @@ You can send notifications to people when an automated task has been run or canc
     </tr>
     <tr class="odd">
     <td>User</td>
-    <td>Specific Microsoft Dynamics 365 for Operations users</td>
+    <td>Specific Microsoft Dynamics 365 for Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Dynamics 365 for Operations users. Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>

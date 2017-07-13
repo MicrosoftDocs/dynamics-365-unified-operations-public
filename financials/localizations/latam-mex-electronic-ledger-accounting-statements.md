@@ -5,7 +5,7 @@ title: Electronic ledger accounting statements
 description: This article explains how to set up and generate the general ledger XML files version 1.1 that all companies in Mexico are required to report to the Mexican tax authorities (SAT) on a monthly basis.
 author: sndray
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: ERSolutionTable, LedgerConsolidateAccountGroup, LedgerJournalTab
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 265314
 ms.assetid: b4a95c26-a49d-4a1d-bf70-90f457df2ddf

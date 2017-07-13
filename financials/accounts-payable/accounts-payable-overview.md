@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure Accounts payable
-description: This article describes the pages that you use to set up basic and optional functionality for Accounts payable in Microsoft Dynamics 365 for Operations. It also describes setup steps that you must complete before you start to set up Accounts payable.
+description: This article describes the pages that you use to set up basic and optional functionality for Accounts payable in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It also describes setup steps that you must complete before you start to set up Accounts payable.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: BankAccountTable, DeliveryMode, PaymTerm, VendGroup, VendParamet
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 24671
 ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes the pages that you use to set up basic and optional functionality for Accounts payable in Microsoft Dynamics 365 for Operations. It also describes setup steps that you must complete before you start to set up Accounts payable.
+This article describes the pages that you use to set up basic and optional functionality for Accounts payable in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It also describes setup steps that you must complete before you start to set up Accounts payable.
 
 Prerequisites for Accounts payable setup
 ----------------------------------------

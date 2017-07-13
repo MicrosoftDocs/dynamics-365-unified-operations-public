@@ -5,7 +5,7 @@ title: X++ statements, loops, and exception handling
 description: This topic describes statements, loops, and exception handling in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 # ms.reviewer: 61
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 150213
 ms.assetid: 16b30ff1-bb31-4f9d-8105-c73abd2455f6

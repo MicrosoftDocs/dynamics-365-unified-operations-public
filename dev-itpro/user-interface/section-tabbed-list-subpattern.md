@@ -5,7 +5,7 @@ title: Section Tabbed List subpattern
 description: This article provides information about the Section Tabbed List subpattern. This subpattern is used as part of the Operational Workspace pattern, specifically for a panorama section that contains a set of vertical tabs, each of which contains a filtered list of data.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 29291
 ms.assetid: 3f8b00ff-54f0-4e32-bd7f-b94a74785537
@@ -51,11 +51,12 @@ This pattern didn't exist for Microsoft Dynamics AX 2012.
 ## Model
 ### High-level structure
 
-TabPage TabbedList (Tab) (Style=VerticalTabs)
+- TabPage
+- TabbedList (Tab) (Style=VerticalTabs)
 
-*TabbedListPage (TabPage) \[0..N\]*
+    - *TabbedListPage (TabPage) \[0..N\]*
 
-TargetForm (FormPart)
+        - TargetForm (FormPart)
 
 Each Form Part points to a form that contains the content for the section. Each of these forms should use one of the Form Part Section List form patterns.
 
@@ -87,6 +88,3 @@ This section will have answers to frequently asked questions that are related t
 ### Open issues
 
 None
-
-
-
