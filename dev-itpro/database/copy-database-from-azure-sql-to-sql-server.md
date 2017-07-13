@@ -211,7 +211,7 @@ The following list provides an explanation of the parameters:
 **Note:** During import, the user name and password are not required because SQL Server will default to Windows authentication for the currently logged on user.
 
 ## Update the database
-Execute the following SQL script against the imported database. This will add back the users that were deleted from the source database earlier, correctly linking them to the SQL logins for this SQL instance.
+Execute the following SQL script against the imported database. This will add back the users that were deleted from the source database earlier, correctly linking them to the SQL logins for this SQL instance and also re-enable change tracking. Remember to edit the final alter database statement with your database name.
 
     CREATE USER axdeployuser FROM LOGIN axdeployuser
     EXEC sp_addrolemember 'db_owner', 'axdeployuser'
@@ -240,6 +240,8 @@ Execute the following SQL script against the imported database. This will add ba
            , T1.modifieddatetime = getdate()
     FROM docuvalue T1
     WHERE T1.storageproviderid = 1 --Azure storage
+    
+    ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
 
 ### Reset the Financial Reporting database
 
