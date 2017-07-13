@@ -95,7 +95,7 @@ You can configure the appearance of your printed or stored RFQ documents on theÂ
 
 **Note:** For a public sector configuration, any changes to an RFQ that has already been sent will require the use of the amendment process. 
 When the RFQ is sent, fields are locked, so clicking **Create** to use the amendment process as described above is a mandatory step to make changes to the RFQ.
-This is controlled by the field locking parameter **Lock RFQ when they are sent** in **Procurement and sourcing parameters**. This parameter is set to **Yes** and for a public sector configuration this is a default that cannot be changed. This means that whereas the amendment process can be handled manually in other scenarios, the process of handling amendments by locking the fields after the RFQ is sent is mandatory in a public sector scenario.
+This is controlled by the field locking parameter **Lock RFQ when they are sent** in **Procurement and sourcing parameters**. This parameter is set to **Yes** and for a public sector configuration this is a default that cannot be changed. This means that whereas the amendment process can be handled manually in a non-public sector configuration, the process of handling amendments by locking the fields after the RFQ is sent is mandatory for public sector.
 
 When you create an RFQ for a purchase order and add an inventory item to the RFQ, an inventory transaction is generated that has a receipt status of **Quotation receipt**. Only RFQ lines that have this status are considered when you use a master plan to calculate supplies. If you want the master plan to include RFQ lines as an expected receipt, you must configure this behavior in the setup of master planning.  
 
