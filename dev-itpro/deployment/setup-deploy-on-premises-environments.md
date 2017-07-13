@@ -133,13 +133,13 @@ The following steps must be completed to set up the infrastructure for Finance a
 7. Download setup scripts from LCS
 8. Describe your configuration
 9. Install Certificates
-10. Setup a standaalone Service Fabric CLuster
+10. Set up a standaalone Service Fabric CLuster
 11. Configure LCS connectivity for the tenant
-12. Setup File Storage
-13. Setup SQL Server
+12. Set up File Storage
+13. Set up SQL Server
 14. Configure the Databases
 15. Encrypt credentials
-16. Setup SSRS
+16. Set up SSRS
 17. Configure AD FS
 
 ### Plan your domain name and DNS zones
@@ -649,7 +649,7 @@ $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$li
 ### Set up SSRS
 
 1.  Before you begin, make sure that the prerequisites that are listed at the beginning of this topic are installed.
-2.  Follow the steps in [this document](https://dcsrdacr201.redmond.corp.microsoft.com/VmmConsole.aspx?platform=HyperV&server=dcsrdvmhq0501.redmond.corp.microsoft.com&port=2179&vmid=378205E6-7236-4354-A002-B480F891E6C0&name=SQLAOSF1AOS1.ContosoSQLAO.com) to configure SSRS for Finance and Operations.
+2.  Follow the steps to [Configure SQL Server Reporting Services for an on-premises deployment](./analytics/configure-ssrs-on-premises.md).
 
 ### Configure AD FS
 
