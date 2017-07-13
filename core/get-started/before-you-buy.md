@@ -1,11 +1,11 @@
---
+---
 # required metadata
 
 title: Before you buy
 description: Step-by-step guidance to use when you're considering purchasing Dynamics 365 for Finance and Operations, Enterprise edition.  
 author: margoc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 21761
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 
 ---
