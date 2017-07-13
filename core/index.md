@@ -45,7 +45,7 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><h3>Financials</h3>
+<td><h3><a href="../financials/index">Financials</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable">Accounts payable</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable">Accounts receivable</a></p>
 <p><a href="../financials/budgeting/budgeting-overview">Budgeting</a></p>
@@ -58,11 +58,11 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 <p><a href="../financials/public-sector/public-sector-functionality">Public sector</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region">Regional regulatory features</a></p>
 
-<H3>Human resources</h3>
+<H3><a href="hr/hr-landing-page">Human resources</a></h3>
 <p><a href="hr/manage-recruiting-process">Recruiting</a></p>
 <p><a href="hr/localizations/noam-usa-payroll">US payroll</a></p>
 
-<h3>Supply chain management</h3>
+<h3><a href="../supply-chain/index">Supply chain management</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets">Cost management</a></p>
 <p><a href="../supply-chain/inventory/inventory-locations">Inventory management</a></p>
 <p>Logistics</p>
@@ -78,7 +78,7 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
   <p><a href="../supply-chain/sales-marketing/overview-sales-marketing">Sales and marketing</a></p></ul>
 </td>
 <td>
-<h3>Intelligence</h3>
+<h3><a href="../dev-itpro/analytics/information-access-reporting">Intelligence</a></h3>
 <p><a href="../dev-itpro/analytics/analytics">Analytics</a></p>
  <p><a href="../dev-itpro/analytics/document-reporting-services">Business documents</a></p>
 <p><a href="../dev-itpro/analytics/financial-reporting-intro">Financial reporting</a></p>
@@ -106,12 +106,12 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 </td>
 <td>
 <h3>Related products</h3>
-<h4>Dynamics 365 for Talent</h4>
+<h4><a href="../talent/index">Dynamics 365 for Talent</a></h4>
 <p><a href="../talent/manage-benefit-program">Benefits</a></p>
 <p><a href="../talent/performance-management-overview">Employee development and training</a></p>
 <p><a href="../talent/questionnaires">Questionnaire</a></p>
 
-<h4>Dynamics 365 for Retail</h4>
+<h4><a href="../retail/index">Dynamics 365 for Retail</a></h4>
 <p><a href="../retail/call-center-functionality">Call center</p>
 <p><a href="../retail/define-maintain-retail-channels">Channel setup and management</p>
 <p><a href="../retail/retail-peripherals-overview">MPOS and Cloud POS</p>
