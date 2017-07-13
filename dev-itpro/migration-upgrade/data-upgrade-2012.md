@@ -43,6 +43,8 @@ Before you run this process in a shared sandbox environment, we recommend that y
 - It provides local data that developers can write and test their custom data upgrade scripts against.
 - It helps reduce the overall time that is spent on iterations of the data upgrade process. In a development environment, an issue can be debugged immediately, code can be adjusted, and the upgrade can be rerun within minutes. However, larger sandbox environments don’t allow for this level of agility. In those environments, a minimum of several hours will be required to debug and remediate issues, update code, deploy the updated code, and rerun the upgrade.
 
+We strongly recommend you to run the [Upgrade analyzer](../upgrade-analyzer-tool.md) and react to the items it raises before running the data upgrade - this will help ensure the data upgrade is quicker and easier.
+
 ## End-to-end data upgrade process
 
 ![Data upgrade process](media/endToEndDataUpgradeProcess.png)
@@ -53,7 +55,7 @@ To back up your AX 2012 database, use the standard Microsoft SQL Server process 
 
 ### Upload the backup to Azure Storage
 
-Upload your backup to Azure Storage. For more information, see UsingStorageExplorer.docx TODO
+If your developer environment is hosted as a VM locally or in Azure you will need to transfer the 2012 database backup to it. With a local VM you may be able to transfer the file directly across the network (if you have configured the virtual network to allow that) but for an Azure hosted VM we recommend you to upload your backup to Azure Storage (using your own secure file transfer service or SFTP is also a valid option). You would need to provide your own Azure storage account for this. There are free tools to help you to move files between Azure storage, from a command line you can use [Azcopy](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](http://storageexplorer.com/). Use one of these tools to first upload the backup from your on-prem environment to Azure storage and then on your download it on your development environment.
 
 ### Download and restore the backup to the development environment
 
