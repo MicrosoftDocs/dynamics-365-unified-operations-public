@@ -50,8 +50,9 @@ These components depend on the following system software:
     - Full-text index search is enabled.
     - SQL Server Reporting Services (SSRS).
     - SQL Server Integration Services (SSIS).
-    > [!NOTE]
-    > The application will not run if Full Text Search is not enabled.
+    
+     > [!NOTE]
+     > The application will not run if Full Text Search is not enabled.
 
 - SQL Server Management Studio
 - Standalone Microsoft Azure Service Fabric
@@ -60,8 +61,7 @@ These components depend on the following system software:
 
 ## Lifecycle Services
 
-Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through
-the [Enterprise Agreements](https://www.microsoft.com/en-us/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
+Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through the [Enterprise Agreements](https://www.microsoft.com/en-us/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
 
 ## Authentication
 
