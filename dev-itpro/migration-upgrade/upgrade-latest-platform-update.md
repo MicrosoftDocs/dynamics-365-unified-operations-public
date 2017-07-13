@@ -48,7 +48,8 @@ The Microsoft Dynamics 365 for Finance and Operations platform consists of the f
     -   Application Foundation
     -   Test Essentials
 
-**Important:** To move to the latest Finance and Operations platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in platform update 3, so that seamless continuous updates can be made to the platform. If you are running on an platform that is older than platform update 3, see the **Upgrading to platform update 3 from an earlier build** section at the end of this topic.
+> [!IMPORTANT]
+> To move to the latest Finance and Operations platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform. If you are running on an platform that is older than Platform update 3, see the section [Upgrading to Platform update 3 from an earlier build](#Upgrading-to-platform-update-3-from-an-earlier-build) section at the end of this topic.
 
 ## Overall flow
 The following illustration shows the overall process for upgrading the Finance and Operations platform to the latest update.
@@ -80,7 +81,7 @@ From a process perspective, deploying a platform upgrade package resembles a b
 ### Delete platform metadata hotfixes from your VSTS project
 
 > [!NOTE]
-> Skip this section if you are already on platform update 3 and updating to a newer platform.
+> Skip this section if you are already on Platform update 3 and updating to a newer platform.
 
 Before you install the new platform update, you must clean up your Microsoft Visual Studio Team Services (VSTS) source control project.
 Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your VSTS project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
