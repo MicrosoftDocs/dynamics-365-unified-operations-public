@@ -124,8 +124,14 @@ Execute the data upgrade process on a copy of your target database – if your e
 
 ### Upgrade your sandbox environment
 
-> [!NOTE]
-> The term *sandbox* refers to the default included "Sandbox: Standard acceptance test" Tier 2 environment provided in your subscription. 
+The Microsoft Servicing Engineering (DSE) Team will execute this process for you if:
+
+- You must be live in production or have already deployed your production environment
+- DSE will perform the data upgrade in one Tier 2 or higher sandbox environment
+- DSE will perform the data upgrade in the production environment
+- DSE will not perform the data upgrade in any additional Tier 2 or higher sandbox environments. You do not need to upgrade these - simply delete them, redeploy, and then make a database refresh request to copy a database from a Tier 2 or higher environment which was already upgraded. Alternatively you can upgrade them manually by following [Process for Upgrading a Sandbox Environment](../upgrade-sandbox-environment.md)
+- DSE will not perform the data upgrade in any Tier 1 environments. You can upgrade these yourself by following [Upgrade data in develop, demo or sandbox environments](../upgrade-data-to-latest-update.md)
+
 
 #### Use LCS to submit an upgrade request to DSE
 1. Go to the **Environment details** page for the environment that you want to upgrade, click **Maintain**, and then select **Upgrade**. A window will display where you can enter the upgrade request.
