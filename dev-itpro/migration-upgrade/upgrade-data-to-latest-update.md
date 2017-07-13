@@ -57,38 +57,10 @@ This topic describes how to upgrade an older source database to the latest Fina
     -   Hotfix KB number 3170386, "Upgrade script error: ReleaseUpdateDB70\_DMF. updateIntegrationActivityExecutionMessageIdPreSync".
     -   Hotfix KB number 3180871, "Data upgrade from RTW to Update 1 causes errors when synchronizing views involving disabled configuration keys". This is a binary hotfix which will cause the database synchronize process to fail.
 
-3.  In your source database, verify that the SysSetupLog version number in the **Description** column is correct. Find the appropriate statement for your environment in the following scenarios.
-
-    -   If you're upgrading from the February 2016 release, run the following statement from Management Studio.
-
-            IF NOT EXISTS (SELECT 'x' FROM SYSSETUPLOG WHERE DESCRIPTION = '190' and NAME = 'ReleaseUpdateDBgetFromVersion')
-            BEGIN
-            INSERT INTO SYSSETUPLOG (DESCRIPTION, NAME, VERSION, CREATEDDATETIME, CREATEDBY)
-            VALUES ('190', 'ReleaseUpdateDBgetFromVersion', '7.0', '2016-01-01 00:00:00.000', 'Admin')
-            END
-
-    -   If you're upgrading from the May 2016 release, run the following statement from Management Studio.
-
-            IF NOT EXISTS (SELECT 'x' FROM SYSSETUPLOG WHERE DESCRIPTION = '192' and NAME = 'ReleaseUpdateDBgetFromVersion')
-            BEGIN
-            INSERT INTO SYSSETUPLOG (DESCRIPTION, NAME, VERSION, CREATEDDATETIME, CREATEDBY)
-            VALUES ('192', 'ReleaseUpdateDBgetFromVersion', '7.0', '2016-01-01 00:00:00.000', 'Admin')
-            END
-
-    -   If you're upgrading from the August 2016 release, run the following statement from Management Studio.
-
-            IF NOT EXISTS (SELECT 'x' FROM SYSSETUPLOG WHERE DESCRIPTION = '194' and NAME = 'ReleaseUpdateDBgetFromVersion')
-            BEGIN
-            INSERT INTO SYSSETUPLOG (DESCRIPTION, NAME, VERSION, CREATEDDATETIME, CREATEDBY)
-            VALUES ('194', 'ReleaseUpdateDBgetFromVersion', '7.0', '2016-01-01 00:00:00.000', 'Admin')
-            END
-    -   If you're upgrading from the November 2016 release (also known as 1611), run the following statement from Management Studio.
-
-            IF NOT EXISTS (SELECT 'x' FROM SYSSETUPLOG WHERE DESCRIPTION = '194' and NAME = 'ReleaseUpdateDBgetFromVersion')
-            BEGIN
-            INSERT INTO SYSSETUPLOG (DESCRIPTION, NAME, VERSION, CREATEDDATETIME, CREATEDBY)
-            VALUES ('196', 'ReleaseUpdateDBgetFromVersion', '7.0', '2016-01-01 00:00:00.000', 'Admin')
-            END
+3.  In your source environment you must be install the appropriate fix below for your version. These fixes will correct a bug in the SysSetupLog logic so that the upgrade understands correctly which version you are upgrading from:
+    - If upgrading from the February 2016 release (also known as RTW or 7.0) 7.0.1265.3015: Hotfix KB number 4023685 "Could not find source system version information" error when you upgrade to the latest Application Release 
+    - If upgrading from the November 2016 release (also known as 1611 or 7.1) 7.1.1541.3036: Hotfix KB number 4023686 "Could not find source system version information" error when you upgrade to the latest Application Release 
+    - If upgrading from the July 2017 release (also known as 7.2) 7.2.11792.56024: No additional fix is needed for this issue.
 
 4.  If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required because the demo data contains bad records for some kernel X++ classes.
 
