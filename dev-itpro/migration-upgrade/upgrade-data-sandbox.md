@@ -131,9 +131,9 @@ After you run the commands, you will receive the following warning. You can safe
 
 ![Sandbox error](./media/sandbox-2.png)
  
-### Run the MajorVersionDataUpgrade.zip package
+### Run the MajorVersionDataUpgradeWithRetail.zip package
 
-Run the data upgrade deployable package as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md).
+Run the data upgrade deployable package, which is called MajorVersionDataUpgradeWithRetail.zip as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). You will find the MajorVersionDataUpgradeWithRetail.zip in the same location described in the article for MinorVersionDataUpgrade.zip.
 
 ### Upgrade a copy of the database in a development environment
 
