@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Products
+title: Synchronize products from Finance and Operations to products in Sales
 description: This topic discusses the templates and underlying tasks that are used to synchronize products from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Products
+# Synchronize products from Finance and Operations to products in Sales
 
 [!include[banner](../includes/banner.md)]
 
@@ -118,9 +118,9 @@ The following illustrations show an example of a template mapping in data integr
 
 ## Related topics
 
-[Accounts (Customers)](accounts-template-mapping.md)
+[Synchronize accounts from Sales to customers in Finance and Operations](accounts-template-mapping.md)
 
-[Contact (Contacts) and Contact (Customers)](contacts-template-mapping.md)
+[Synchronize contacts from Sales to contacts or customers in Finance and Operations](contacts-template-mapping.md)
 
-[Sales quotation headers and lines](sales-quotation-template-mapping.md)
+[Synchronize sales quotation headers and lines from Sales to Finance and Operations](sales-quotation-template-mapping.md)
 

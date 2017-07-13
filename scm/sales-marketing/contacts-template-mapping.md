@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Contact (Contacts) and Contact (Customers)
+title: Synchronize contacts from Sales to contacts or customers in Finance and Operations
 description: This topic discusses the templates and underlying tasks that are used to synchronize Contact (Contacts) and Contact (Customers) from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: ChristianRytt
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Contact (Contacts) and Contact (Customers)
+# Synchronize contacts from Sales to contacts or customers in Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
@@ -130,8 +130,8 @@ The following illustrations show an example of a template mapping in data integr
 
 ## Related topics
 
-[Products](products-template-mapping.md)
+[Synchronize products from Finance and Operations to products in Sales](products-template-mapping.md)
 
-[Accounts (Customers)](accounts-template-mapping.md)
+[Synchronize accounts from Sales to customers in Finance and Operations](accounts-template-mapping.md)
 
-[Sales quotation headers and lines](sales-quotation-template-mapping.md)
+[Synchronize sales quotation headers and lines from Sales to Finance and Operations](sales-quotation-template-mapping.md)

@@ -41,7 +41,7 @@
 
 ## Cost management
 ### Power BI content pack
-#### [Cost management content pack](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Cost management content pack](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack??toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Predetermined cost
 #### [Costing sheet](/dynamics365/unified-operations/supply-chain/cost-management/costing-sheets?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Costing version](/dynamics365/unified-operations/supply-chain/cost-management/costing-versions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -86,64 +86,71 @@
 #### [Update standard cost for a new manufactured item](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-new-manufactured-item?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Update standard cost in a non-manufacturing environment](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-non-manufacturing-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## Data management and data entities
-### [Data entities overview](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### Default data entities
-#### [Data entities report](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Accounts payable and taxes](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-payable-taxes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Accounts receivable](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-receivable?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Bank](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-bank?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Beginning balances](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-beginning-balances?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Budget planning](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-budget-plan?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Budgeting](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-budgeting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Costing](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-costing?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Expense management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-expense-management?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Fixed assets](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-fixed-assets?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: General ledger](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-general-ledger?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Global address book](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-global-address-book?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Human resources](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-human-resources?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Inventory management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-inventory-management?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Master planning](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-master-plan?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Procurement and sourcing](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-procurement-sourcing?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Product information management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-product-information-management?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Production control](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-production-control?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Project accounting](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-project-accounting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Public sector](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Retail](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-retail?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Sales and marketing execution](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-sales-marketing?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Sales and marketing pre-sales](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-sales-marketing-pre-sales?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: System administration](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-system-administration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Data entities: Workflow](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-workflow?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+## Data integration and management
 
-### Migrating entities
-#### [Configuration data projects](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Configuration data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Copy configuration data between companies](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Best practices for importing vouchers using the General journal entity](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Data entities](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### Default data entities
+##### [Data entities report](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Accounts payable and taxes](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-payable-taxes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Accounts receivable](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-receivable?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Bank](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-bank?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Beginning balances](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-beginning-balances?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Budget planning](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-budget-plan?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Budgeting](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-budgeting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Costing](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-costing?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Expense management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-expense-management?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Fixed assets](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-fixed-assets?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: General ledger](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-general-ledger?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Global address book](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-global-address-book?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Human resources](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-human-resources?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Inventory management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-inventory-management?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Master planning](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-master-plan?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Procurement and sourcing](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-procurement-sourcing?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Product information management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-product-information-management?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Production control](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-production-control?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Project accounting](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-project-accounting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Public sector](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Retail](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-retail?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Sales and marketing execution](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-sales-marketing?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Sales and marketing pre-sales](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-sales-marketing-pre-sales?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: System administration](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-system-administration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entities: Workflow](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-workflow?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### Creating data entities
-#### [Data entities and packages framework](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Build and consume](/dynamics365/unified-operations/dev-itpro/data-entities/build-consuming-data-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Behavioral properties](/dynamics365/unified-operations/dev-itpro/data-entities/behavioral-properties-data-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Compute columns and virtual fields](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Cross-company behavior](/dynamics365/unified-operations/dev-itpro/data-entities/cross-company-behavior?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Country/region codes and configuration keys](/dynamics365/unified-operations/dev-itpro/data-entities/countryregion-codes-configuration-keys?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Inheritance patterns](/dynamics365/unified-operations/dev-itpro/data-entities/support-super-type-sub-type?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Wizard rules](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-wizard-rules?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Metadata properties](/dynamics365/unified-operations/dev-itpro/data-entities/metadata-properties?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Validations, defaults, and unmapped fields](/dynamics365/unified-operations/dev-itpro/data-entities/validations-defaults-unmapped-fields?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### Migrating entities
+##### [Configuration data projects](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Configuration data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Copy configuration data between companies](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Best practices for importing vouchers using the General journal entity](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Data management and integration using data entities](/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Develop an entity for data migration](/dynamics365/unified-operations/dev-itpro/data-entities/develop-entity-for-data-migration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Develop composite data entities](/dynamics365/unified-operations/dev-itpro/data-entities/develop-composite-data-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### Creating data entities
+##### [Data entities and packages framework](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Build and consume](/dynamics365/unified-operations/dev-itpro/data-entities/build-consuming-data-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Behavioral properties](/dynamics365/unified-operations/dev-itpro/data-entities/behavioral-properties-data-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Compute columns and virtual fields](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Cross-company behavior](/dynamics365/unified-operations/dev-itpro/data-entities/cross-company-behavior?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Country/region codes and configuration keys](/dynamics365/unified-operations/dev-itpro/data-entities/countryregion-codes-configuration-keys?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Inheritance patterns](/dynamics365/unified-operations/dev-itpro/data-entities/support-super-type-sub-type?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Wizard rules](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-wizard-rules?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Metadata properties](/dynamics365/unified-operations/dev-itpro/data-entities/metadata-properties?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Validations, defaults, and unmapped fields](/dynamics365/unified-operations/dev-itpro/data-entities/validations-defaults-unmapped-fields?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+
+#### [Data integration using data entities](/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Develop an entity for data migration](/dynamics365/unified-operations/dev-itpro/data-entities/develop-entity-for-data-migration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Develop composite data entities](/dynamics365/unified-operations/dev-itpro/data-entities/develop-composite-data-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Security and data entities](/dynamics365/unified-operations/dev-itpro/data-entities/security-data-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+
+### [Service endpoints](/dynamics365/unified-operations/dev-itpro/data-entities/services-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Service authentication troubleshooting](/dynamics365/unified-operations/dev-itpro/data-entities/troubleshoot-service-authentication?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [OData](/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Recurring integrations](/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Security and data entities](/dynamics365/unified-operations/dev-itpro/data-entities/security-data-entities?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Service authentication troubleshooting](/dynamics365/unified-operations/dev-itpro/data-entities/troubleshoot-service-authentication?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Service endpoints](/dynamics365/unified-operations/dev-itpro/data-entities/services-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-
+### [Data integration using the Common Data Service](/common-data-service/entity-reference/dynamics-365-integration) 
+#### [Configure a prospect to cash scenario](/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Synchronize products from Finance and Operations to products in Sales](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Synchronize accounts from Sales to customers in Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Synchronize contacts from Sales to contacts or customers in Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/contacts-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Synchronize sales quotation headers and lines from Sales to Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-quotation-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Financial management
 
@@ -327,7 +334,7 @@
 #### [Income statement financial report](/dynamics365/unified-operations/financials/general-ledger/income-statement-financial-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Trial balance financial reports](/dynamics365/unified-operations/financials/general-ledger/trial-balance-financial-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [View financial reports](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Report designer](/dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Report designer](/dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [Cost accounting](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Terms](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -343,8 +350,8 @@
 #### [Access rights of a cost object controller](/dynamics365/unified-operations/financials/cost-accounting/access-rights-cost-object-controller?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Cost control workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Cost control mobile workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Set up security for the Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Set up security for the Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [Public sector](/dynamics365/unified-operations/financials/public-sector/public-sector-functionality?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Plan for public sector functionality](/dynamics365/unified-operations/financials/public-sector/plan-public-sector-functionality?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -760,7 +767,7 @@
 ### Trace item and batch
 #### [Merge inventory batch](/dynamics365/unified-operations/supply-chain/inventory/merge-inventory-batches?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Trace item and raw material](/dynamics365/unified-operations/supply-chain/inventory/trace-items-raw-materials-inventory-production-sales?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Register serial number in the sales process](/dynamics365/unified-operations/supply-chain/sales-marketing/register-serial-numbers-sales-process)
+### [Register serial number in the sales process](/dynamics365/unified-operations/supply-chain/sales-marketing/register-serial-numbers-sales-process?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Logistics
 ### Transportation management
@@ -873,7 +880,7 @@
 ##### [Purchase agreements](/dynamics365/unified-operations/supply-chain/procurement/purchase-agreements?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Product receipts and invoicing
 ##### [Product receipt against purchase orders](/dynamics365/unified-operations/supply-chain/procurement/product-receipt-against-purchase-orders?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 #### Vendor management and collaboration
 ##### [Set up and maintain vendor collaboration](/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -902,12 +909,6 @@
 ##### [Price simulation](/dynamics365/unified-operations/supply-chain/sales-marketing/price-simulation?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Returns
 ##### [Sales returns](/dynamics365/unified-operations/supply-chain/warehousing/sales-returns?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-
-### Prospect to cash
-#### [Products](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Accounts (Customers)](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Contact (Contacts) and Contact (Customers)](/dynamics365/unified-operations/supply-chain/sales-marketing/contacts-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Sales quotation headers and lines](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-quotation-template-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## [Organization administration](/dynamics365/unified-operations/fin-and-ops/organization-administration/organization-administration-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Organizations and organizational hierarchies](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1292,7 +1293,7 @@
 ### [Form I-9 employment verification](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Comply with the ADA](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-# [Development & administration using the Unified Operations Platform](/dynamics365/unified-operations/dev-itpro/index)
+# [Development & administration using the Unified Operations Platform](/dynamics365/unified-operations/dev-itpro/index?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## [System requirements](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ## [Demo data](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1545,22 +1546,22 @@
 #### [Create documentation or training using Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Release solutions using Lifecycle Services
-### [Develop and release](/dynamics365/unified-operations/dev-itpro/lcs-solutions/lcs-solutions-app-source)
-### [Stage and publish](/dynamics365/unified-operations/dev-itpro/lcs-solutions/marketing-content-lcs-solutions)
-### [Add a methodology](/dynamics365/unified-operations/dev-itpro/lcs-solutions/methodologies-lcs-solutions)
-### [Set up Business process modeler libraries](/dynamics365/unified-operations/dev-itpro/lcs-solutions/business-process-modeler-libraries-lcs-solutions)
-### [Migrate code](/dynamics365/unified-operations/dev-itpro/lcs-solutions/code-migration-lcs-solutions)
-### [Validate an application](/dynamics365/unified-operations/dev-itpro/lcs-solutions/app-validation-lcs-solutions)
-### [Process and consume data packages](/dynamics365/unified-operations/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions)
-### [Back up a solution database](/dynamics365/unified-operations/dev-itpro/lcs-solutions/database-backup-lcs-solutions)
+### [Develop and release](/dynamics365/unified-operations/dev-itpro/lcs-solutions/lcs-solutions-app-source?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Stage and publish](/dynamics365/unified-operations/dev-itpro/lcs-solutions/marketing-content-lcs-solutions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Add a methodology](/dynamics365/unified-operations/dev-itpro/lcs-solutions/methodologies-lcs-solutions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Set up Business process modeler libraries](/dynamics365/unified-operations/dev-itpro/lcs-solutions/business-process-modeler-libraries-lcs-solutions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Migrate code](/dynamics365/unified-operations/dev-itpro/lcs-solutions/code-migration-lcs-solutions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Validate an application](/dynamics365/unified-operations/dev-itpro/lcs-solutions/app-validation-lcs-solutions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Process and consume data packages](/dynamics365/unified-operations/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Back up a solution database](/dynamics365/unified-operations/dev-itpro/lcs-solutions/database-backup-lcs-solutions?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Localizations](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region)
-#### [Classify localization features](/dynamics365/unified-operations/dev-itpro/lcs-solutions/classify-localization-features)
-#### [Country/region context](/dynamics365/unified-operations/dev-itpro/lcs-solutions/apply-country-context)
-#### [Regulatory certifications](/dynamics365/unified-operations/dev-itpro/lcs-solutions/regulatory-certifications)
-#### [Regulatory updates](/dynamics365/unified-operations/dev-itpro/lcs-solutions/regulatory-watch-communication)
-#### [Separate localization models](/dynamics365/unified-operations/dev-itpro/lcs-solutions/separate-localization-models)
-#### [Submit a regulatory alert](/dynamics365/unified-operations/dev-itpro/lcs-solutions/submit-localization-alerts)
+### [Localizations](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Classify localization features](/dynamics365/unified-operations/dev-itpro/lcs-solutions/classify-localization-features?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Country/region context](/dynamics365/unified-operations/dev-itpro/lcs-solutions/apply-country-context?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Regulatory certifications](/dynamics365/unified-operations/dev-itpro/lcs-solutions/regulatory-certifications?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Regulatory updates](/dynamics365/unified-operations/dev-itpro/lcs-solutions/regulatory-watch-communication?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Separate localization models](/dynamics365/unified-operations/dev-itpro/lcs-solutions/separate-localization-models?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Submit a regulatory alert](/dynamics365/unified-operations/dev-itpro/lcs-solutions/submit-localization-alerts?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 
 
@@ -1593,7 +1594,7 @@
 ### [Azure Resource Manager onboarding](/dynamics365/unified-operations/dev-itpro/deployment/arm-onboarding?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Deploy Microsoft Dynamics 365 for Finance and Operations on-premises](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+### [Deploy Microsoft Dynamics 365 for Finance and Operations on-premises](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Deploy custom code
 #### [Create a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1622,6 +1623,7 @@
 ##### [Workflow subsystem changes](/dynamics365/unified-operations/dev-itpro/migration-upgrade/workflow-subsystem?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Why we moved from cubes to aggregate models](/dynamics365/unified-operations/dev-itpro/migration-upgrade/in-memory-real-time-aggregate-models?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Migrate an upgraded sales cube to the entity store](/dynamics365/unified-operations/dev-itpro/migration-upgrade/migrate-upgraded-cube-entity-store?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Upgrade budget planning](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-budget-planning?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Code migration and upgrade
 #### [Prepare to migrate code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-migration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1630,7 +1632,7 @@
 #### [Use delegates to solve dependencies between models](/dynamics365/unified-operations/dev-itpro/migration-upgrade/delegates-migration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Upgrade to a recent update
-#### [Prepare to move to the latest update](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Process for moving to the latest update](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Lifecycle policy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Upgrade to the latest platform update](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Upgrade the Dynamics platform to the August 2016 release](/dynamics365/unified-operations/dev-itpro/migration-upgrade/update-platform-each-release?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1765,10 +1767,10 @@
 ### [Export a copy of a database to restore later](/dynamics365/unified-operations/dev-itpro/database/copy-operations-database?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Support
-### [Get support for Dynamics 365 for Finance and Operations, Enterprise edition and Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support)
-### [Log a premier support ticket](/dynamics365/unified-operations/dev-itpro/lifecycle-services/premier-support)
-### [Submit a request to the Dynamics Service Engineering team](/dynamics365/unified-operations/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team)
-### [Set up technical support for Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/lifecycle-services/support-experience) 
-### [Planned maintenance window FAQ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/planned-maintenance-window-faq) 
+### [Get support for Dynamics 365 for Finance and Operations, Enterprise edition and Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Log a premier support ticket](/dynamics365/unified-operations/dev-itpro/lifecycle-services/premier-support?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Submit a request to the Dynamics Service Engineering team](/dynamics365/unified-operations/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Set up technical support for Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/lifecycle-services/support-experience?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
+### [Planned maintenance window FAQ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/planned-maintenance-window-faq?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
 ### [Cloud operations and servicing](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-operations-servicing?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Manage Finance and Operations Support experiences](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)

@@ -66,15 +66,16 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 <p><a href="../supply-chain/cost-management/costing-sheets">Cost management</a></p>
 <p><a href="../supply-chain/inventory/inventory-locations">Inventory management</a></p>
 <p>Logistics</p>
-<ul>
-<li><a href="../supply-chain/transportation/transportation-management-overview">Transportation management</a></li>
-<li><a href="../supply-chain/warehousing/warehouse-configuration">Warehouse management</a></li></ul>
+<ul style="list-style-type:none">
+<p><a href="../supply-chain/transportation/transportation-management-overview">Transportation management</a></p>
+<p><a href="../supply-chain/warehousing/warehouse-configuration">Warehouse management</a></p></ul>
 <p><a href="../supply-chain/master-planning/master-plans">Planning</a></p>
 <p><a href="../supply-chain/pim/set-up-maintain-product-configuration-model">Product information management</a></p>
 <p><a href="../supply-chain/production-control/create-production-orders">Production control</a></p>
 <p>Order management</p>
-  <ul style="list-style-type:none"><li><a href="../supply-chain/procurement/procurement-sourcing-overview">Procurement and sourcing</a></li>
-  <li><a href="../supply-chain/sales-marketing/overview-sales-marketing">Sales and marketing</a></li></ul>
+  <ul style="list-style-type:none">
+  <p><a href="../supply-chain/procurement/procurement-sourcing-overview">Procurement and sourcing</a></p>
+  <p><a href="../supply-chain/sales-marketing/overview-sales-marketing">Sales and marketing</a></p></ul>
 </td>
 <td>
 <h3>Intelligence</h3>
@@ -90,7 +91,7 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 <p><a href="../dev-itpro/get-started/demo-data">Demo data</a></p>
 <p><a href="../dev-itpro/dev-tools/developer-home-page">Developer tools</a></p>
 <p><a href="../dev-itpro/extensibility/customize-model-elements-extensions">Extensibility</a></p>
-<p><p>Integration</p>
+<p>Integration</p>
 <ul style="list-style-type:none"><p><a href="../dev-itpro/data-entities/data-entities">Data entities</a></p>
 <p><a href="../dev-itpro/office-integration/office-integration">Office integration</a></p></ul></p>
 
