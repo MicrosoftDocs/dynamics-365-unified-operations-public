@@ -767,6 +767,7 @@
 #### [Trace item and raw material](/dynamics365/unified-operations/supply-chain/inventory/trace-items-raw-materials-inventory-production-sales?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Register serial number in the sales process](/dynamics365/unified-operations/supply-chain/sales-marketing/register-serial-numbers-sales-process?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
+
 ## Logistics
 ### Transportation management
 #### [A new transportation engine](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -802,7 +803,6 @@
 ##### [Inventory location](/dynamics365/unified-operations/supply-chain/inventory/inventory-locations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Inventory status](/dynamics365/unified-operations/supply-chain/inventory/inventory-statuses?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Inventory tag counting](/dynamics365/unified-operations/supply-chain/inventory/inventory-tag-counting?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Containerization 
 #### Replenishment
 ##### [Replenishment](/dynamics365/unified-operations/supply-chain/warehousing/replenishment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Replenishment with withdrawal kanbans](/dynamics365/unified-operations/supply-chain/warehousing/material-replenishment-withdrawal-kanban?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
