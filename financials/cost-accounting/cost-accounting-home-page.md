@@ -35,8 +35,6 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides a list of the help topics and other resources that are available for Cost accounting.
-
 The Cost accounting module allows you to do the following:
 
 -   Define cost element dimensions, import cost element dimension members, and map cost element dimensions.
