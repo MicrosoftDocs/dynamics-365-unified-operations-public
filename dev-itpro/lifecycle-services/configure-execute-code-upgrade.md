@@ -86,7 +86,7 @@ For more information about how to identify which application version you have, s
 
 ### Merge Releases back into Trunk\\Main
 
-Once you're happy your upgraded code in Releases\\\<version number\> compiles successfully and tested successfully then you are ready to merge this branch back into Trunk\\Main. To do this, on your development environment in Visual Studio open the Source control explorer pane then right click on the Releases\\\<version number\> branch and in the context menu go to **Branching and Merging** and then on the sub menu select **Merge...**
+Once the upgraded code in Releases\\\<version number\> compiles and has passed your tests, then you are ready to merge this branch back into Trunk\\Main. To do this, on your development environment in Visual Studio open the Source control explorer pane then right-click on the **Releases\\\<version number\>** branch and in the context menu go to **Branching and Merging** and then on the sub-menu select **Merge**.
 
 [![mergereleasesbranch](./media/MergeReleasesBranch.PNG)](./media/MergeReleasesBranch.PNG)
 
