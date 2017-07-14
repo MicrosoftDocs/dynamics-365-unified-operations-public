@@ -250,7 +250,8 @@ The following table lists the number of processors and the amount of random-acce
 | *Summary Production and Sandbox topologies* |                               | 16                  |
 
 \*These numbers are being validated by our preview customers and may be adjusted as needed based on that feedback.
-\**Orchestrator is designated as the primary node type and will be used to run the Service Fabric services as well.
+
+\*\*Orchestrator is designated as the primary node type and will be used to run the Service Fabric services as well.
 
 **Backend SQL Server and AD initial estimates**
 
