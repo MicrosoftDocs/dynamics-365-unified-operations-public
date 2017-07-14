@@ -53,8 +53,11 @@ The Cost accounting module allows you to do the following:
 
 The following learning map shows the major concepts and tasks with connecting lines between related tasks that describe the nature of the cost accounting module.
 
-![Learning map for cost accounting](./media/learning-map-cost-accounting.png)
-
-
+<map id="ImgMap0" name="ImgMap0">
+	<area alt="" coords="407, 629, 625, 716" href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=/dynamics365/unified-operations/financials/toc.json" shape="rect" />
+	<area alt="" coords="409, 731, 624, 808" href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/cost-objects?toc=/dynamics365/unified-operations/financials/toc.json" shape="rect" />
+	<area alt="" coords="414, 832, 623, 908" href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/statistical-measure-provider-template?toc=/dynamics365/unified-operations/financials/toc.json" shape="rect" />
+</map>
+<img src="./media/learning-map-cost-accounting.png" usemap="#ImgMap0"/>
 
 
