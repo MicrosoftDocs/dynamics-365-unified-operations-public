@@ -35,29 +35,8 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-The Cost accounting module allows you to do the following:
-
--   Define cost element dimensions, import cost element dimension members, and map cost element dimensions.
--   Define cost object dimensions and import cost object dimension members.
--   Define or import statistical dimensions.
--   Create statistical measure provider templates.
--   Create cost accounting ledgers.
--   Create cost control units.
--   Process general ledger entries.
--   Process budget entries.
--   Create and apply cost behavior policies.
--   Trace costs.
--   Define dimension hierarchies.
--   Create statements that can be viewed in the workspace.
--   Create reports by using Excel.
-
 The following learning map shows the major concepts and tasks with connecting lines between related tasks that describe the nature of the cost accounting module.
 
-<map id="ImgMap0" name="ImgMap0">
-	<area alt="" coords="407, 629, 625, 716" href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=/dynamics365/unified-operations/financials/toc.json" shape="rect" />
-	<area alt="" coords="409, 731, 624, 808" href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/cost-objects?toc=/dynamics365/unified-operations/financials/toc.json" shape="rect" />
-	<area alt="" coords="414, 832, 623, 908" href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/statistical-measure-provider-template?toc=/dynamics365/unified-operations/financials/toc.json" shape="rect" />
-</map>
-<img src="./media/learning-map-cost-accounting.png" usemap="#ImgMap0"/>
+<img src="media/cost-accounting-map.png" usemap="#ImgMap0"/>
 
 
