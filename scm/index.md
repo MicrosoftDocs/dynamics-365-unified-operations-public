@@ -40,17 +40,39 @@ This page points to resources that will help you use the Microsoft Dynamics 365 
 Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development. 
 
 ## Core concepts and tasks
-*  In the left pane, select a feature area to learn more about it. 
+Select a feature area to learn more about it.
+-     Cost accounting
+-     Cost management
+-     Inventory management
+-     Master planning
+-     Procurement and sourcing
+-     Product information management
+-     Production control
+-     Sales and marketing
+-     Transportation management
+-     Vendor collaboration
+-     Warehouse management
+
+## Videos
+
+### Get started  
+
+These short videos help you get started with the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update.
+
+-     [Get started with Cost accounting (Video)](https://youtu.be/1pUDtJQZ8FU)
+-     [Cost control mobile workspace (Video)](https://youtu.be/imsuTg8rUVk)
+-     [Use Excel for cost analysis (Video)](https://youtu.be/-HKHYdClvx8)
+
+### Tech talk 
+
+- <a href="https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s">Advanced R3 Warehouse Management - Inbound Processing and Min/Max Replenishment</a> (video)   
+
+
 *  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Process inbound ASNs in Warehouse management</a> (video) 
 
 
 ## Blogs
 There are many topics about manufacturing and supply chain management on the <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog</a> and <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog </a>. Most of these were written for the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
-
-For example, you can read the recent posts about: 
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/">Announcing Finance and Operations – Warehousing</a>
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611/">Improved packing functionality (Dynamics 365 for Operations 1611)</a>
-* <a href="https://blogs.msdn.microsoft.com/axmfg/2017/02/13/cross-docking-from-production-orders-to-transfer-orders/">Cross docking from production orders to transfer orders</a>
 
 ## White papers
 * The <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Microsoft Dynamics 365 for Finance and Operations - Getting Started with Cost Accounting</a> white paper provides the basic steps to configure Microsoft Dynamics 365 for Finance and Operations – Cost Accounting in order to make the actual cost analysis. It also provides a series of procedures that you can complete in the order which they appear.
