@@ -40,18 +40,20 @@ This page points to resources that will help you use the Microsoft Dynamics 365 
 Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development. 
 
 ## Core concepts and tasks
+
 Select a feature area to learn more about it.
--     Cost accounting
--     Cost management
--     Inventory management
--     Master planning
--     Procurement and sourcing
--     Product information management
--     Production control
--     Sales and marketing
--     Transportation management
--     Vendor collaboration
--     Warehouse management
+
+-  Cost accounting
+-  Cost management
+-  Inventory management
+-  Master planning
+-  Procurement and sourcing
+-  Product information management
+-  Production control
+-  Sales and marketing
+-  Transportation management
+-  Vendor collaboration
+-  Warehouse management
 
 ## Videos
 
@@ -59,9 +61,9 @@ Select a feature area to learn more about it.
 
 These short videos help you get started with the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update.
 
--     [Get started with Cost accounting (Video)](https://youtu.be/1pUDtJQZ8FU)
--     [Cost control mobile workspace (Video)](https://youtu.be/imsuTg8rUVk)
--     [Use Excel for cost analysis (Video)](https://youtu.be/-HKHYdClvx8)
+-  [Get started with Cost accounting (Video)](https://youtu.be/1pUDtJQZ8FU)
+-  [Cost control mobile workspace (Video)](https://youtu.be/imsuTg8rUVk)
+-  [Use Excel for cost analysis (Video)](https://youtu.be/-HKHYdClvx8)
 
 ### Tech talk 
 
