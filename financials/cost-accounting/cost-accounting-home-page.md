@@ -57,7 +57,7 @@ These short videos help you get started.
 
 - [Get started with Cost accounting](<iframe width="560" height="315" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>)
 
-> [!Video https://www.youtube.com/embed/1pUDtJQZ8FU]
+> [!Video https://www.youtube.com/embed/1pUDtJQZ8FU =100]
 
 > [!Video https://www.youtube.com/embed/imsuTg8rUVk]
 
