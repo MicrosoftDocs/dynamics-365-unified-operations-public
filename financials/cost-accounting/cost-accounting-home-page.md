@@ -51,7 +51,9 @@ The Cost accounting module allows you to do the following:
 -   Create statements that can be viewed in the workspace.
 -   Create reports by using Excel.
 
+The following learning map shows the major concepts and tasks with connecting lines between related tasks that describe the nature of the cost accounting module.
 
+![Learning map for cost accounting](./media/learning-map-cost-accounting.png)
 
 
 
