@@ -81,9 +81,9 @@ These short videos help you get started with the new features that are in Micros
 There are many topics about manufacturing and supply chain management on the <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog</a> and <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog </a>. Most of these were written for the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
 
 ## White papers
--  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Microsoft Dynamics 365 for Finance and Operations - Cost Accounting hands-on labs</a> 
--  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Finance and Operations - Lean Manufacturing: Capable to Promise and Kanban Job Scheduling</a> 
--  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Microsoft Dynamics 365 for Finance and Operations - BOM Calculation by Using a Costing Sheet</a>
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Cost Accounting hands-on labs</a> 
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: Capable to Promise and Kanban Job Scheduling</a> 
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">BOM Calculation by Using a Costing Sheet</a>
 
 ## eLearning courses
 For information about Microsoft Dynamics 365 for Finance and Operations training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal</a>. (requires CustomerSource account) 
