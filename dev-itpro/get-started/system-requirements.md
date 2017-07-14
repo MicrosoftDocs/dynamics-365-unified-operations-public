@@ -213,7 +213,7 @@ The following figure shows the minimum recommended number of nodes in your Servi
 [![recommended number of nodes for service fabric cluster](./media/system-reqs-on-premises-01.png)](./media/system-reqs-on-premises-01.png) 
 
 ## Processor and RAM requirements
-The following table lists the number of processors and the amount of random-access memory (RAM) that are required for each of the roles required to run this deployment option. For more information, read the minimum requirements recommendation for Service Fabric standalone cluster, [Plan and prepare your Service Fabric cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+The following table lists the number of processors and the amount of random-access memory (RAM) that are required for each of the roles required to run this deployment option. For more information, read the minimum requirements recommendation for Service Fabric standalone cluster, [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 **Note:** If other Microsoft software is installed on the same computer, the system must also comply with the hardware requirements for that software. We recommend that you limit other server applications on the same computer as AOS to 1 gigabyte (GB) of RAM.
 
 **Sizing by role and topology type**
@@ -254,7 +254,7 @@ The following table lists the number of processors and the amount of random-acce
 
 ## Storage
 
-- **AOS** - Finance and Operations (on-premises) will use a Server Message Block (SMB) 3.0 share to store unstructured data. For more information, see [Storage Spaces Direct in Windows Server 2016](https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/storage-spaces-direct-overview).
+- **AOS** - Finance and Operations (on-premises) will use a Server Message Block (SMB) 3.0 share to store unstructured data. For more information, see [Storage Spaces Direct in Windows Server 2016](/windows-server/storage/storage-spaces/storage-spaces-direct-overview).
 - **SQL** – Viable options:
     - A highly available solid-state drive (SSD) setup.
     - A storage area network (SAN) optimized for OLTP throughputs.
@@ -263,14 +263,14 @@ The following table lists the number of processors and the amount of random-acce
 - **Virtual machine IOPS** – Each virtual machine should have at least 100 write IOPS.
 
 ## Virtual host requirements
-When you set up the virtual hosts for a Finance and Operations (on-premises) environment, refer to the following guidelines: [Plan and prepare your Service Fabric cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) and [Describing a service fabric cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-resource-manager-cluster-description). Each virtual host should have enough cores for the infrastructure that is being sized. Multiple advanced configurations are possible, where SQL Server resides on physical hardware but everything else is virtualized. If SQL Server is virtualized, the disk subsystem should be a fast SAN or the equivalent. In all cases, make sure that the basic setup of the virtual host is highly available and redundant. In all cases, when virtualization is used, no VM snapshots should be taken.
+When you set up the virtual hosts for a Finance and Operations (on-premises) environment, refer to the following guidelines: [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) and [Describing a service fabric cluster](/azure/service-fabric/service-fabric-cluster-resource-manager-cluster-description). Each virtual host should have enough cores for the infrastructure that is being sized. Multiple advanced configurations are possible, where SQL Server resides on physical hardware but everything else is virtualized. If SQL Server is virtualized, the disk subsystem should be a fast SAN or the equivalent. In all cases, make sure that the basic setup of the virtual host is highly available and redundant. In all cases, when virtualization is used, no VM snapshots should be taken.
 
 ## Software requirements for all server computers
 The following software must be present on a computer before any Finance and Operations (on-premises) components can be installed:
 
 - Microsoft .NET Framework 4.5.1 or higher
 - Service Fabric
-For more information, see [Plan and prepare your Service Fabric cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+For more information, see [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## Supported server operating systems
 The following table lists the server operating systems that are supported for Finance and Operations components.
@@ -283,12 +283,12 @@ The following table lists the server operating systems that are supported for Fi
 
 - Only 64-bit versions of SQL Server 2016 are supported.
 - In a production environment, we recommend that you install the latest cumulative update (CU) for the version of SQL Server that you’re using.
-- Finance and Operations (on-premises) supports Unicode collations that are case-insensitive, accent-sensitive, kana-sensitive, and width-insensitive. The collation must match the Windows locale of the computers that are running AOS instances. If you’re setting up a new installation, we recommend that you select a Windows collation instead of a SQL Server collation. For more information about how to select a collation for a SQL Server database, see the [SQL Server documentation](https://docs.microsoft.com/en-us/sql/sql-server/sql-server-technical-documentation).
+- Finance and Operations (on-premises) supports Unicode collations that are case-insensitive, accent-sensitive, kana-sensitive, and width-insensitive. The collation must match the Windows locale of the computers that are running AOS instances. If you’re setting up a new installation, we recommend that you select a Windows collation instead of a SQL Server collation. For more information about how to select a collation for a SQL Server database, see the [SQL Server documentation](/sql/sql-server/sql-server-technical-documentation).
 The following table lists the SQL Server versions that are supported for the Finance and Operations databases. For more information, see the minimum hardware requirements for [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2016).
 
 | Requirement                                                      | Notes                                                                                                                     |
 |------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Microsoft SQL Server 2016 Standard Edition or Enterprise Edition | For the hardware requirements for SQL Server 2016, see [Hardware and Software Requirements for Installing SQL Server 2016](https://docs.microsoft.com/en-us/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). |
+| Microsoft SQL Server 2016 Standard Edition or Enterprise Edition | For the hardware requirements for SQL Server 2016, see [Hardware and Software Requirements for Installing SQL Server 2016](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). |
 
 ## Software requirements for client computers
 The Microsoft Dynamic 365 for Operations web application can run on any device with an HTML5.0 compliant web browser. Specific device/browser combinations that Microsoft has confirmed include:
