@@ -104,7 +104,7 @@ Regardless of whether you're a live customer or you're still in the implementati
 3.  Complete the code migration steps.
     1.  Connect your development virtual machine (VM) to Microsoft Visual Studio Team Services (VSTS), and map your local metadata folder to the VSTS branch that contains your upgraded code.
     2.  Synchronize, resolve conflicts (when applicable), build, and test.
-    3.  Merge the VSTS branch that contains your upgraded code with your main development branch. For more information, see [Merge folders and files](/tfvc/merge-folders-files).
+    3.  Merge the VSTS branch that contains your upgraded code with your main development branch. For more information, see [Merge folders and files](https://www.visualstudio.com/en-us/docs/tfvc/merge-folders-files).
     4.  Build and test.
     5.  Create deployable packages of your code.
 
