@@ -40,9 +40,8 @@ The following learning map shows the major concepts and tasks with connecting li
 
 ![Learning map for cost accounting](./media/cost-accounting-map.png)
 
-## Get started
+## Get started videos
 
-**Get started with cost accoounting by just a few clicks**
 
 <table>
 <tr>
@@ -50,7 +49,6 @@ The following learning map shows the major concepts and tasks with connecting li
 </tr>
 <table>
 
-**Use Excel for cost accounting analysis**
 
 <table>
 <tr>
@@ -58,30 +56,11 @@ The following learning map shows the major concepts and tasks with connecting li
 </tr>
 <table>
 
-**Cost control mobile workspace**
 
 <table>
 <tr>
 <iframe width="280" height="158" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>
 </tr>
 </table>
-
-
-
--  [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
--  [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
--  [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
-
-
-
-- [Get started with Cost accounting]
-
-<iframe width="280" height="158" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>
-
-> [!Video https://www.youtube.com/embed/1pUDtJQZ8FU]
-
-> [!Video https://www.youtube.com/embed/imsuTg8rUVk]
-
-> [!Video https://www.youtube.com/embed/-HKHYdClvx8]
 
 
