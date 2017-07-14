@@ -43,7 +43,6 @@ Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to se
 
 Select a feature area to learn more about it.
 
-- [Cost accounting](/cost-accounting/cost-accounting-home-page) 
 - [Cost accounting](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
 - [Cost management](cost-management\costing-sheets.md)  
 - [Inventory management](inventory\consignment.md)
