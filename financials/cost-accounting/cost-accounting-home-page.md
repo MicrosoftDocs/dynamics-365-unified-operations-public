@@ -37,6 +37,14 @@ ms.dyn365.ops.version: Version 1611
 
 The following learning map shows the major concepts and tasks with connecting lines between related tasks that describe the nature of the cost accounting module.
 
+<map id="ImgMap0" name="ImgMap0">
+	<area alt="" coords="413, 323, 621, 393" href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=/dynamics365/unified-operations/financials/toc.json" shape="rect" />
+	<area alt="" coords="416, 421, 622, 484" href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/cost-objects?toc=/dynamics365/unified-operations/financials/toc.json" shape="rect" />
+	<area alt="" coords="418, 516, 624, 584" href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/statistical-measure-provider-template?toc=/dynamics365/unified-operations/financials/toc.json" shape="rect" />
+</map>
 <img src="media/cost-accounting-map.png" usemap="#ImgMap0"/>
+
+
+<img src=".media/cost-accounting-map.png" usemap="#ImgMap0"/>
 
 
