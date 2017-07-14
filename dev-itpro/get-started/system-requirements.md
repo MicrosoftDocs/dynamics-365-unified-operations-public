@@ -2,7 +2,7 @@
 # required metadata
 
 title: System requirements
-description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 Finance and Operations, Enter prise edition for cloud and on-premises deployments.
+description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 Finance and Operations, Enterprise edition for cloud and on-premises deployments.
 author: sericks007
 manager: AnnBe
 ms.date: 06/24/2017
@@ -36,8 +36,6 @@ ms.dyn365.ops.version: Platform update 2
 
 
 This topic lists the system requirements for the current version of Microsoft Dynamics 365 Finance and Operations, Enterprise edition, for cloud and on-premises deployments. Before you install Finance and Operations, when appropriate, verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
-
-
 
 
 ## Supported Microsoft Office applications
@@ -301,8 +299,13 @@ The Microsoft Dynamic 365 for Operations web application can run on any device w
 - Apple Safari (latest publicly available version) on Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) or 10.12 (Sierra), or Apple iPad
 
 ## Software requirements for Active Directory Federation Services 
-Use Active Directory Federation Services (AD FS) 3.0.
+Active Directory Federation Services (AD FS) on Windows Server 2016
+The domain controller must be Windows Server 2012 R2 or later with a domain functional level of 2012 R2, or greater
 
+For more information about domain functional levels, see: 
+- [What Are Active Directory Functional Levels](https://technet.microsoft.com/en-us/library/cc787290(v=ws.10).aspx)
+- [Understanding Active Directory Domain Services Functional Levels](https://technet.microsoft.com/en-us/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
+ 
 ## Hardware and software requirements for Retail components
 Finance and Operations (on-premises) does not include the Retail components at this time.
 

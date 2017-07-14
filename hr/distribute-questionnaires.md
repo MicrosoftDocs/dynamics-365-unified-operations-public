@@ -1,4 +1,3 @@
-talent-navigation-updates
 ---
 # required metadata
 

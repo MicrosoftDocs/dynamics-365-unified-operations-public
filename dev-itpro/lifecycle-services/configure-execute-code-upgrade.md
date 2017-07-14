@@ -40,7 +40,7 @@ This topic explains how to configure the <strong>Code upgrade </strong>tile in L
 Overview
 --------
 
-The code upgrade tool operates by connecting to Visual Studio Team Services (VSTS), locating your Trunk\\Main branch, branching to a new branch, and then performing the code upgrade there. After this process is complete you can synchronize your Dynamics 365 for Operation developer environment to this new branch and resolve conflicts. When you compile and test your upgraded code you can merge the new branch back into Trunk\\Main, and the process is complete.
+The code upgrade tool operates by connecting to Visual Studio Team Services (VSTS), locating your Trunk\\Main branch, branching to a new branch which will be named as Releases\\\<version number\>, and then performing the code upgrade there. After this process is complete you can synchronize your Dynamics 365 for Operation developer environment to this new branch under Releases\\\<version number\> and resolve conflicts. When you have compiled and tested your upgraded code you can merge the new branch back into Trunk\\Main, using source control explorer in Visual Studio and the process is complete.
 
 ## Process
 ### To create a personal access token
@@ -61,7 +61,7 @@ To connect to a VSTS project, LCS is authenticated using a personal access token
 
 ### Create an ax7.version file
 
-The code upgrade tile in LCS automatically finds the version of Finance and Operations that you are migrating from, by reading the ax7.version file under the Main folder in your source control. You must create this file manually, either in Visual Studio or through the VSTS portal, as shown below. This file is not needed if you migrated your code from Dynamics AX 2012 R3 or an earlier version. The version number entered here must be the application version (not the platform version). 
+The code upgrade tile in LCS automatically finds the version of Finance and Operations that you are migrating from, by reading the ax7.version file under the Main folder in your source control. You must create this file manually, either in Visual Studio or through the VSTS portal, as shown below. This file is not needed if you migrated your code from Dynamics AX 2012 R3 or an earlier version. The version number entered here must be the application version (not the platform version). Take care to enter the correct version number here as entering an incorrect version number in this file may cause your code upgrade run to fail.
 
 [![ax7\_versionfile](./media/ax7_versionfile.png)](./media/ax7_versionfile.png) 
 
@@ -84,5 +84,11 @@ For more information about how to identify which application version you have, s
 [![codeupgradebranch](./media/codeupgradebranch-300x192.png)](./media/codeupgradebranch.png)
 
 
+### Merge Releases back into Trunk\\Main
 
+Once the upgraded code in Releases\\\<version number\> compiles and has passed your tests, then you are ready to merge this branch back into Trunk\\Main. To do this, on your development environment in Visual Studio open the Source control explorer pane then right-click on the **Releases\\\<version number\>** branch and in the context menu go to **Branching and Merging** and then on the sub-menu select **Merge**.
+
+[![mergereleasesbranch](./media/MergeReleasesBranch.PNG)](./media/MergeReleasesBranch.PNG)
+
+This will open the [Source Control Merge Wizard](https://www.visualstudio.com/en-us/docs/tfvc/merge-folders-files#sourcecontrolwizard) which will guide you through merging the Releases\\\<version number\> branch back into Trunk\\Main. 
 

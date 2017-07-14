@@ -5,7 +5,7 @@ title: Process for moving to the latest update of Finance and Operations
 description: This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations. 
 author: tariqbell
 manager: AnnBe
-ms.date: 07/10/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -71,7 +71,7 @@ Use this scenario to update to the latest release of the platform, when no appl
 > Platform update 1 and Platform update 2 allowed overlayering of platform X++ code. Later platform updates had the platform-level X++ locked for overlayering. If you are upgrading from Platform update 1 or Platform update 2, your developers will need to refactor the overlayering as extensions before you can upgrade. If you are upgrading from Platform update 3 or higher to a later platform update, you can do so without refactoring your X++ code.
 
 ## Scenario 1: Update to a specific application hotfix
-Use this scenario when one or more small hotfixes are required to address a specific issue, and when business factors such as time or cost prohibit taking an entire major application update at that moment. It is not necessary to perform a complete upgrade of your application to uptake new features of the application. All features in the current update of the application are available individually on Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download hotfixes from LCS, see [Download hotfixes from Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md).
+Use this scenario when one or more small hotfixes are required to address a specific issue, and when business factors such as time or cost prohibit taking an entire major application update at that moment. It is not necessary to perform a complete upgrade of your application to uptake new features of the application. All features in the current update of the application are available individually on Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download hotfixes from LCS, see [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md).
 
 ## Scenario 2: Upgrade your custom code
 This scenario describes the process for upgrading code from an earlier release to the current release. This process is required before you can perform Scenario 3 and is to be completed by a developer before other activities can begin. Code upgrade is needed when you deploy new environments as part of the process of upgrading your application to a new major or cumulative release. Code upgrade is not required for platform updates.
@@ -92,13 +92,14 @@ This scenario describes the process for upgrading code from an earlier release t
 
 Regardless of whether you're a live customer or you're still in the implementation phase of your project, follow these steps to upgrade your code to the latest platform and application updates.
 
-1.  Use the Code upgrade service on Lifecycle Services to upgrade your code, see [Configure the code upgrade service in Lifecycle services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-execute-code-upgrade). We recommend running the code upgrade service even if you do not have custom code, because the service will still help you by removing any old Microsoft X++ hotfixes you have installed, which is a required step.
+1.  Use the Code upgrade service on Lifecycle Services to upgrade your code, see [Configure the code upgrade service in Lifecycle services](../lifecycle-services/configure-execute-code-upgrade.md). We recommend running the code upgrade service even if you do not have custom code, because the service will still help you by removing any old Microsoft X++ hotfixes you have installed, which is a required step.
 
 2.  You will need to deploy a new development environment, which is running the new version that you are upgrading to. You will use this environment to complete code merging and refactoring of your custom code. Submit a request for a new Dev/Test environment that is running the latest update.
     -   You might have to delete your existing Dev/Test environment if your subscription doesn't allow for a new one.
     -   Depending on your project type, these are the other options to deploy a developer VM:
         -   Download a Dev VHD.
         -   If you're running in your own Microsoft Azure subscription, deploy a new developer topology.
+    -   If you want to keep your development data from your old development environment then create a database backup and retain the BAK file. When you have completed code upgrade, you can then restore the retained database backup to your new development environment and perform a data upgrade by following the steps in [Upgrade data in develop, demo or sandbox environments](upgrade-data-to-latest-update.md)
 
 3.  Complete the code migration steps.
     1.  Connect your development virtual machine (VM) to Microsoft Visual Studio Team Services (VSTS), and map your local metadata folder to the VSTS branch that contains your upgraded code.
@@ -108,8 +109,9 @@ Regardless of whether you're a live customer or you're still in the implementati
     5.  Create deployable packages of your code.
 
 4.  Install any hotfixes that apply to the environment.
+
 5.  Upload deployable packages to the LCS Asset library of your project.
-For more details on code migration steps, see [Code Migration](..\dev-tools\developer-home-page.md#code-migration). After code migration is complete, continue to Scenario 3.
+For more details on code migration steps, see [Code Migration](../dev-tools/developer-home-page.md#code-migration). After code migration is complete, continue to Scenario 3.
 
 ## Scenario 3: Upgrade to the most current application update
 These steps apply to customers who are live on an earlier release and want to perform a full upgrade to the most recent platform and application versions. Customers who have already deployed and configured a production environment might also fall into this category, even if they haven't gone live yet. If you are not upgrading your application, but want to upgrade your platform to the latest bits, use Scenario 4 below, especially if you have no customizations of the platform models.
@@ -120,12 +122,19 @@ First, upgrade your code as described in Scenario 2. This is a developer task a
 
 ### Upgrade your data
 
-Execute the data upgrade process on a copy of your target database – if your environment is already live in production then the target database is a copy of production; if your environment is not yet live, it will be your most current database. This is a validation process performed by a developer (on a development or test environment) to ensure that the data upgrade completes successfully with the specific set of customizations within this environment – completion of this step helps ensure success in the sandbox and production environments later. To copy your database back to a developer environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](..\database\copy-database-from-azure-sql-to-sql-server.md). To execute the data upgrade process, follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
+Execute the data upgrade process on a copy of your target database – if your environment is already live in production then the target database is a copy of production; if your environment is not yet live, it will be your most current database. This is a validation process performed by a developer (on a development or test environment) to ensure that the data upgrade completes successfully with the specific set of customizations within this environment – completion of this step helps ensure success in the sandbox and production environments later. To copy your database back to a developer environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md). To execute the data upgrade process, follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
 
 ### Upgrade your sandbox environment
 
-> [!NOTE]
-> The term *sandbox* refers to the default included "Sandbox: Standard acceptance test" Tier 2 environment provided in your subscription. 
+You can make a request via LCS for the Microsoft Servicing Engineering (DSE) Team to run this process for you, when the following conditions are met:
+
+- You need to be live in production or have already deployed your production environment
+- DSE will perform the data upgrade in one Tier 2 or higher sandbox environment
+- DSE will perform the data upgrade in the production environment
+
+To upgrade any additional Tier 2 or higher sandbox environments: you do not need to upgrade these. Instead, delete them, redeploy, and then make a database refresh request to copy a database from a Tier 2 or higher environment that hase already been upgraded. Alternatively you can upgrade them manually by following [Process for Upgrading a Sandbox Environment](upgrade-sandbox-environment.md)
+For upgrading any Tier 1 environments (also known as dev boxes or one-boxes). You can deploy these with the new version and just sync to your upgraded VSTS branch. To get data for the Tier 1 environments, a developer can upgrade the database following [Upgrade data in develop, demo or sandbox environments](upgrade-data-to-latest-update.md)
+
 
 #### Use LCS to submit an upgrade request to DSE
 1. Go to the **Environment details** page for the environment that you want to upgrade, click **Maintain**, and then select **Upgrade**. A window will display where you can enter the upgrade request.

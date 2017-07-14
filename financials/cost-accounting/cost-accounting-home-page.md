@@ -34,25 +34,33 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
+## Learning map 
 
-The Cost accounting module allows you to do the following:
+The following learning map shows the major concepts and tasks with connecting lines between related tasks that describe the nature of the cost accounting module.
 
--   Define cost element dimensions, import cost element dimension members, and map cost element dimensions.
--   Define cost object dimensions and import cost object dimension members.
--   Define or import statistical dimensions.
--   Create statistical measure provider templates.
--   Create cost accounting ledgers.
--   Create cost control units.
--   Process general ledger entries.
--   Process budget entries.
--   Create and apply cost behavior policies.
--   Trace costs.
--   Define dimension hierarchies.
--   Create statements that can be viewed in the workspace.
--   Create reports by using Excel.
+![Learning map for cost accounting](./media/cost-accounting-map.png)
+
+## Get started videos
 
 
+<table>
+<tr>
+<iframe width="280" height="158" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>
+</tr>
+<table>
 
 
+<table>
+<tr>
+<iframe width="280" height="158" src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe>
+</tr>
+<table>
+
+
+<table>
+<tr>
+<iframe width="280" height="158" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>
+</tr>
+</table>
 
 
