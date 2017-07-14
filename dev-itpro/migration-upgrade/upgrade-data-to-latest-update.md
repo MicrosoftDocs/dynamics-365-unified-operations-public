@@ -35,8 +35,9 @@ ms.dyn365.ops.version: Platform update 1
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations database to the latest update. 
-Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the production and sandbox environments. You can contact them using an **Upgrade** request in Microsoft Dynamics Lifecycle Services (LCS), which you submit using the **Maintain** button on the **Environment details** page for the environment that you want to update.
+This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations database in a Tier 1 environment (also know as a development box, one-box, or demo environment) to the latest update. 
+
+In some Tier 2 or higher environments the Microsoft Service Engineering Team (DSE) will execute the data upgrade for you. For more information, see the end to end upgrade process here: [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md#scenario-3-upgrade-to-the-most-current-application-update).
 
 This topic describes how to upgrade an older source database to the latest Finance and Operations update. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md). 
 
@@ -49,46 +50,19 @@ This topic describes how to upgrade an older source database to the latest Fina
     -   Hotfix KB number 3170386, "Upgrade script error: ReleaseUpdateDB70\_DMF. updateIntegrationActivityExecutionMessageIdPreSync".
     -   Hotfix KB number 3180871, "Data upgrade from RTW to Update 1 causes errors when synchronizing views involving disabled configuration keys". This is a binary hotfix which will cause the database synchronize process to fail.
 
-3.  In your source database, verify that the SysSetupLog version number in the **Description** column is correct. Find the appropriate statement for your environment in the following scenarios.
-
-    -   If you're upgrading from the February 2016 release, run the following statement from Management Studio.
-
-            IF NOT EXISTS (SELECT 'x' FROM SYSSETUPLOG WHERE DESCRIPTION = '190' and NAME = 'ReleaseUpdateDBgetFromVersion')
-            BEGIN
-            INSERT INTO SYSSETUPLOG (DESCRIPTION, NAME, VERSION, CREATEDDATETIME, CREATEDBY)
-            VALUES ('190', 'ReleaseUpdateDBgetFromVersion', '7.0', '2016-01-01 00:00:00.000', 'Admin')
-            END
-
-    -   If you're upgrading from the May 2016 release, run the following statement from Management Studio.
-
-            IF NOT EXISTS (SELECT 'x' FROM SYSSETUPLOG WHERE DESCRIPTION = '192' and NAME = 'ReleaseUpdateDBgetFromVersion')
-            BEGIN
-            INSERT INTO SYSSETUPLOG (DESCRIPTION, NAME, VERSION, CREATEDDATETIME, CREATEDBY)
-            VALUES ('192', 'ReleaseUpdateDBgetFromVersion', '7.0', '2016-01-01 00:00:00.000', 'Admin')
-            END
-
-    -   If you're upgrading from the August 2016 release, run the following statement from Management Studio.
-
-            IF NOT EXISTS (SELECT 'x' FROM SYSSETUPLOG WHERE DESCRIPTION = '194' and NAME = 'ReleaseUpdateDBgetFromVersion')
-            BEGIN
-            INSERT INTO SYSSETUPLOG (DESCRIPTION, NAME, VERSION, CREATEDDATETIME, CREATEDBY)
-            VALUES ('194', 'ReleaseUpdateDBgetFromVersion', '7.0', '2016-01-01 00:00:00.000', 'Admin')
-            END
-    -   If you're upgrading from the November 2016 release (also known as 1611), run the following statement from Management Studio.
-
-            IF NOT EXISTS (SELECT 'x' FROM SYSSETUPLOG WHERE DESCRIPTION = '194' and NAME = 'ReleaseUpdateDBgetFromVersion')
-            BEGIN
-            INSERT INTO SYSSETUPLOG (DESCRIPTION, NAME, VERSION, CREATEDDATETIME, CREATEDBY)
-            VALUES ('196', 'ReleaseUpdateDBgetFromVersion', '7.0', '2016-01-01 00:00:00.000', 'Admin')
-            END
+3.  In your source environment you must be install the appropriate fix below for your version. These fixes will correct a bug in the SysSetupLog logic so that the upgrade understands correctly which version you are upgrading from:
+    - If upgrading from the February 2016 release (also known as RTW or 7.0) 7.0.1265.3015: Hotfix KB number 4023685 "Could not find source system version information" error when you upgrade to the latest Application Release 
+    - If upgrading from the November 2016 release (also known as 1611 or 7.1) 7.1.1541.3036: Hotfix KB number 4023686 "Could not find source system version information" error when you upgrade to the latest Application Release 
+    - If upgrading from the July 2017 release (also known as 7.2) 7.2.11792.56024: No additional fix is needed for this issue.
 
 4.  If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required because the demo data contains bad records for some kernel X++ classes.
 
-> *delete from classidtable where id >= 0xf000 and id <= 0xffff*
+    delete from classidtable where id >= 0xf000 and id <= 0xffff
 
 ## Download the MinorVersionDataUpgrade.zip script
 To obtain the latest MinorVersionDataUpgrade.zip package from your target environment that is running the latest Finance and Operations update, download the latest binary updates from Lifecycle Services (LCS).
 > [!NOTE]
+> If you are upgrading from AX 2012 the data upgrade package is called MajorVersionDataUpgradeWithRetail.zip.
 > In earlier versions (prior to Platform update 4), the package was named DataUpgrade.zip. 
 
 1.  In LCS, in the **Environments** section, click your target Finance and Operations environment, scroll to the bottom of the page, and then click the **All binary updates** tile. 
@@ -154,6 +128,15 @@ This step is required if you're upgrading a database from the February 2016 rele
         > Staging tables should be empty in order to proceed with the data upgrade. Please run the DeleteScriptForStagingTables.sql by carefully reviewing the script in order to remove the data from the staging tables.
 
         In this case, run DeleteScriptForStagingTables.sql to clean up the staging tables. You can find this script under AOSServiceScripts in your data upgrade folder. After the script has finished running, re-run this step.
+
+## Re-enable SQL change tracking
+Execute the following SQL against the upgraded database to ensure that change tracking is enabled at the database level. You must insert the name of your database within the alter database command.
+
+        ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
+
+## Additional steps for Management Reporter
+
+Reset the management reporter database by following the steps in this topic [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md) and then reimport the building block groups you exported in an earlier step.
 
 ## Troubleshoot upgrade script errors
 ### How to re-run the runbook after a data upgrade script failure
