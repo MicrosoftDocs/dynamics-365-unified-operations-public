@@ -45,6 +45,4 @@ The following learning map shows the major concepts and tasks with connecting li
 <img src="media/cost-accounting-map.png" usemap="#ImgMap0"/>
 
 
-<img src=".media/cost-accounting-map.png" usemap="#ImgMap0"/>
-
 
