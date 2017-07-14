@@ -330,7 +330,7 @@
 #### [Budget planning integration with other modules](/dynamics365/unified-operations/financials/budgeting/budget-planning-integration-other-modules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 ### [Reporting](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 #### [Balance sheet financial reports](/dynamics365/unified-operations/financials/general-ledger/balance-sheet-financial-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-#### [Generate a financial report](/dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Generate a financial report](/dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Income statement financial report](/dynamics365/unified-operations/financials/general-ledger/income-statement-financial-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 #### [Trial balance financial reports](/dynamics365/unified-operations/financials/general-ledger/trial-balance-financial-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 #### [View financial reports](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
@@ -814,7 +814,7 @@
 ##### [Warehouse Mobile Devices Portal (WMDP)](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-mobile-devices-portal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 ##### [Warehouse mobile device display settings](/dynamics365/unified-operations/supply-chain/warehousing/change-warehouse-mobile-device-displays?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 #### Upgrade and migration
-##### [Migrate from AX 2012 to Finance and Operations](/dynamics365/unified-operations/supply-chain/warehousing/upgrade-migration-warehouse-management-processes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Upgrade Warehouse management processes from AX 2012 to Finance and Operations](/dynamics365/unified-operations/supply-chain/warehousing/upgrade-migration-warehouse-management-processes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
 
 ## Master planning
@@ -1587,11 +1587,11 @@
 ### [Cloud Service Provider downloads and Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
 ## [Upgrade and migration](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-### [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 #### [Analyze - Use the Upgrade analyzer tool to plan upgrade](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 #### [Analyze – Use the Code upgrade service to estimate the effort to upgrade code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analyze-code-upgrade?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 #### [Analyze - Deploy a sandbox enviroment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-#### [Upgrade - Data upgrade in a development environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Upgrade - Data upgrade in a development environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 #### [Upgrade - AX 2012 data upgrade tasks](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 #### [Upgrade - Data upgrade in a sandbox environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 #### [Validate - Cutover testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
