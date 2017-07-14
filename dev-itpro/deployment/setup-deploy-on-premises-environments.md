@@ -56,8 +56,15 @@ These components depend on the following system software:
 
 - SQL Server Management Studio
 - Standalone Microsoft Azure Service Fabric
-- Active Directory Federation Services (AD FS) on Windows Server 2016
 - Windows PowerShell 5.0 or later
+- Active Directory Federation Services (AD FS) on Windows Server 2016
+
+  The domain controller must be Windows Server 2012 R2 or later with a domain functional level of 2012 R2, or greater
+
+  For more information about domain functional levels, see: 
+  - [What Are Active Directory Functional Levels](https://technet.microsoft.com/en-us/library/cc787290(v=ws.10).aspx)
+  - [Understanding Active Directory Domain Services Functional Levels](https://technet.microsoft.com/en-us/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
+
 
 ## Lifecycle Services
 
