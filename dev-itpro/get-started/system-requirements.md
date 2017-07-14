@@ -105,7 +105,7 @@ Retail Cloud POS can run in any of the following web browsers that run on the sp
 -   Retail hardware station is a 32-bit application, but it will run on both x86 and x64 architectures.
 -   Retail hardware station is supported on the following operating systems:
     -   Windows 7 Professional, Enterprise, and Ultimate editions 
-    - 
+    
     > [!NOTE]
     > Windows 7 is supported only if Internet Explorer 11 is manually installed on the system.
 
@@ -180,8 +180,10 @@ In general, Finance and Operations is optimized to reduce browser-to-server roun
 
 > [!WARNING]
 > Do not calculate bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent usage of a given location is very difficult to calculate. We suggest using a real-life simulation against a non-production environment of Finance and Operations as the best gauge of performance for your specific case. 
+
 ### LAN environments
 In local area network (LAN) environments, Microsoft Remote Desktop in Microsoft Windows Server is not required to connect to Finance and Operations. However, it might be required for servicing operations on the VMs that make up the server deployments.
+
 ### WAN environments
 In wide area network (WAN) environments, Remote Desktop in Windows Server is not required to connect to Finance and Operations.
 
@@ -236,28 +238,28 @@ The following table lists the number of processors and the amount of random-acce
 |            | SQL Server Reporting Services | 4                           | 16                      |
 |            | Orchestrator                  | 4                           | 16                      |
 
-**Minimum sizing estimates for production and sandbox deployments***
+**Minimum sizing estimates for production and sandbox deployments**\*
 
 | Topology                                  | Role                          | Number of instances |
 |-------------------------------------------|-------------------------------|---------------------|
 | Production                                | AOS (Data management, Batch)  | 3                   |
 |                                           | Management Reporter           | 2                   |
 |                                           | SQL Server Reporting Services | 1                   |
-|                                           | Orchestrator**                | 3                   |
+|                                           | Orchestrator\*\*                | 3                   |
 | Sandbox                                   | AOS, Data management, Batch   | 2                   |
 |                                           | Management Reporter           | 1                   |
 |                                           | SQL Server Reporting Services | 1                   |
 |                                           | Orchestrator                  | 3                   |
 | *Summary Production and Sandbox topologies* |                               | 16                  |
 
-*These numbers are being validated by our preview customers and may be adjusted as needed based on that feedback.
-**Orchestrator is designated as the primary node type and will be used to run the Service Fabric services as well.
+\*These numbers are being validated by our preview customers and may be adjusted as needed based on that feedback.
+\**Orchestrator is designated as the primary node type and will be used to run the Service Fabric services as well.
 
 **Backend SQL Server and AD initial estimates**
 
 [![Back end SQL server and AD initial estimates](./media/system-reqs-on-premises-02.PNG)](./media/system-reqs-on-premises-02.PNG) 
 
-*SQL Server sizes are highly dependent on workloads. For more information, see the “Hardware sizing for on-premises environments” section.
+\*SQL Server sizes are highly dependent on workloads. For more information, see the [Hardware sizing for on-premises environments](#Hardware-sizing-for-on-premises-environments) section.
 
 ## Storage
 
