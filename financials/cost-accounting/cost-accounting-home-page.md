@@ -41,13 +41,17 @@ The following learning map shows the major concepts and tasks with connecting li
 <img src="media/cost-accounting-map.png" usemap="#ImgMap0"/>
 
 ## Get started
-
+<table>
+<tr>
 <iframe width="280" height="158" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>
-
+</tr>
+<tr>
 <iframe width="280" height="158" src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe>
-
+</tr>
+<tr>
 <iframe width="280" height="158" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>
-
+</tr>
+</table>
 
 -  [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 -  [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
