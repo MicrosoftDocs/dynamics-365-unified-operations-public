@@ -53,3 +53,7 @@ These short videos help you get started.
 -  [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
 -  [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
 
+
+
+- [Get started with Cost accounting](<iframe width="560" height="315" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>)
+
