@@ -48,15 +48,19 @@ The following learning map shows the major concepts and tasks with connecting li
 <tr>
 <iframe width="280" height="158" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>
 </tr>
+<table>
 
 **Use Excel for cost accounting analysis**
 
+<table>
 <tr>
 <iframe width="280" height="158" src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe>
 </tr>
+<table>
 
 **Cost control mobile workspace**
 
+<table>
 <tr>
 <iframe width="280" height="158" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>
 </tr>
