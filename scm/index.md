@@ -43,7 +43,7 @@ Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to se
 
 Select a feature area to learn more about it.
 
--  Cost accounting
+- [Cost accounting](cost-accounting\cost-accounting-home-page.md)
 -  Cost management
 -  Inventory management
 -  Master planning
