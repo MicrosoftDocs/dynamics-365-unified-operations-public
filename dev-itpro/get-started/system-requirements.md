@@ -57,9 +57,6 @@ In general, Finance and Operations is optimized for the Internet. The number of 
 Finance and Operations requires .NET Framework version 4.6.2 for all click-once applications, such as the document routing agent. For installation instructions, see [Installing the .NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
 
 ## Supported web browsers
-
-The Finance and Operations web application can run in any of the following web browsers that run on the specified operating systems:
-
 The web application can run in any of the following web browsers that run on the specified operating systems:
 
 
