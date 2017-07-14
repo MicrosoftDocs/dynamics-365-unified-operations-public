@@ -99,6 +99,7 @@ Regardless of whether you're a live customer or you're still in the implementati
     -   Depending on your project type, these are the other options to deploy a developer VM:
         -   Download a Dev VHD.
         -   If you're running in your own Microsoft Azure subscription, deploy a new developer topology.
+    -   If you want to keep your development data from your old development environment then create a database backup and retain the *.bak file. When you have completed code upgrade, you can then restore the retained database backup to your new development environment and perform a data upgrade by following the steps in [Upgrade data in develop, demo or sandbox environments](../upgrade-data-to-latest-update.md)
 
 3.  Complete the code migration steps.
     1.  Connect your development virtual machine (VM) to Microsoft Visual Studio Team Services (VSTS), and map your local metadata folder to the VSTS branch that contains your upgraded code.
@@ -108,6 +109,7 @@ Regardless of whether you're a live customer or you're still in the implementati
     5.  Create deployable packages of your code.
 
 4.  Install any hotfixes that apply to the environment.
+
 5.  Upload deployable packages to the LCS Asset library of your project.
 For more details on code migration steps, see [Code Migration](..\dev-tools\developer-home-page.md#code-migration). After code migration is complete, continue to Scenario 3.
 
