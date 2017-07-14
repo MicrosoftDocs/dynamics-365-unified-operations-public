@@ -3,9 +3,9 @@
 
 title: Supply chain management home page
 description: This page points to resources that will help you use the Microsoft Dynamics 365 for Finance and Operations - Supply Chain management more effectively. 
-author: yuyus
+author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: yuyus
+# ms.reviewer: YuyuScheller
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -43,7 +43,7 @@ Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to se
 
 Select a feature area to learn more about it.
 
-- [Cost accounting](cost-accounting\cost-accounting-home-page.md) 
+- [Cost accounting](/cost-accounting/cost-accounting-home-page) 
 - [Cost accounting](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
 - [Cost management](cost-management\costing-sheets.md)  
 - [Inventory management](inventory\consignment.md)
