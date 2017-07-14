@@ -38,16 +38,16 @@ ms.dyn365.ops.version: Version 1611
 
 The following learning map shows the major concepts and tasks with connecting lines between related tasks that describe the nature of the cost accounting module.
 
-<map id="ImgMap0" name="ImgMap0">
-	<area alt="" coords="413, 323, 621, 393" href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=/dynamics365/unified-operations/financials/toc.json" shape="rect" />
-	<area alt="" coords="416, 421, 622, 484" href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/cost-objects?toc=/dynamics365/unified-operations/financials/toc.json" shape="rect" />
-	<area alt="" coords="418, 516, 624, 584" href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/statistical-measure-provider-template?toc=/dynamics365/unified-operations/financials/toc.json" shape="rect" />
-</map>
 <img src="media/cost-accounting-map.png" usemap="#ImgMap0"/>
 
 ## Get started
 
-These short videos help you get started.
+<iframe width="280" height="158" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="280" height="158" src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="280" height="158" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>
+
 
 -  [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 -  [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
@@ -57,7 +57,7 @@ These short videos help you get started.
 
 - [Get started with Cost accounting]
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>
+<iframe width="280" height="158" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>
 
 > [!Video https://www.youtube.com/embed/1pUDtJQZ8FU]
 
