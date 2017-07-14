@@ -5,7 +5,7 @@ title: Data upgrade from AX 2012 to Dynamics 365 for Finance and Operations in a
 description: This topic explains the end-to-end process for upgrading from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations in a development environment
 author: tariqbell
 manager: AnnBe
-ms.date: 05/30/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -43,7 +43,7 @@ Before you run this process in a shared sandbox environment, we recommend that y
 - It provides local data that developers can write and test their custom data upgrade scripts against.
 - It helps reduce the overall time that is spent on iterations of the data upgrade process. In a development environment, an issue can be debugged immediately, code can be adjusted, and the upgrade can be rerun within minutes. However, larger sandbox environments don’t allow for this level of agility. In those environments, a minimum of several hours will be required to debug and remediate issues, update code, deploy the updated code, and rerun the upgrade.
 
-We strongly recommend that you run the [Upgrade analyzer](../upgrade-analyzer-tool.md) and respond to the issues it identifies before running data upgrade - this will help ensure that your data upgrade is quicker and easier.
+We strongly recommend that you run the [Upgrade analyzer](upgrade-analyzer-tool.md) and respond to the issues it identifies before running data upgrade - this will help ensure that your data upgrade is quicker and easier.
 
 ## End-to-end data upgrade process
 
