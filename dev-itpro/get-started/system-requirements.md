@@ -300,7 +300,8 @@ The Microsoft Dynamic 365 for Operations web application can run on any device w
 
 ## Software requirements for Active Directory Federation Services 
 Active Directory Federation Services (AD FS) on Windows Server 2016
-The domain controller must be Windows Server 2012 R2 or later with a domain functional level of 2012 R2, or greater
+
+The domain controller must be Windows Server 2012 R2 or later with a domain functional level of 2012 R2 or greater
 
 For more information about domain functional levels, see: 
 - [What Are Active Directory Functional Levels](https://technet.microsoft.com/en-us/library/cc787290(v=ws.10).aspx)
