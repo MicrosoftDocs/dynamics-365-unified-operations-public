@@ -34,6 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
+## Learning map
 
 The following learning map shows the major concepts and tasks with connecting lines between related tasks that describe the nature of the cost accounting module.
 
@@ -44,5 +45,11 @@ The following learning map shows the major concepts and tasks with connecting li
 </map>
 <img src="media/cost-accounting-map.png" usemap="#ImgMap0"/>
 
+## Get started
 
+These short videos help you get started.
+
+-  [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
+-  [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
+-  [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
 
