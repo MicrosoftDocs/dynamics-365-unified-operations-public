@@ -36,8 +36,6 @@ ms.dyn365.ops.version: Platform update 4
 
 Dynamics 365 for Finance and Operations, Enterprise Edition is is customized extensively by ISV’s, VAR’s, and even some customers. This is a strength of the product which historically has been supported through overlayering of the application code. The move to the cloud with more agile servicing and frequent updates requires a less intrusive customization model that makes updates less likely to impact custom solutions. This new model is called extensibility and will ultimately replace customization by overlayering.
 
-The extensibility documentation is organized into sections what can be navigated using the node structure, or by using the links provided below. 
-
 # Introduction
 
 Introduction contains general information about how Dynamics 365 for Operations supports customization, including information on when customization transitions from overlayering to purely extension based. Here is also described how you can log extensibility requests to Microsoft; along with a general frequent questions and answers.
