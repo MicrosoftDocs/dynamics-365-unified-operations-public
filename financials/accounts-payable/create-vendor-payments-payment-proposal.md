@@ -5,7 +5,7 @@ title: Create vendor payments by using a payment proposal
 description: This topic provides an overview of the payment proposal options and includes some examples that show how payment proposals work. Payment proposals are often used to create vendor payments, because the query can be used to quickly select vendor invoices for payment, based on criteria such as the due date and cash discount. 
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,7 +44,7 @@ The payment proposal query contains various tabs, each of which has different op
 ## Parameters
 -   **Select invoices by** – Invoices within the date range that is specified by the **From date** and **To date** fields can be selected by due date, cash discount date, or both. If you use the cash discount date, the system first looks for invoices that have a cash discount date between the from date and to date. The system then determines whether the invoice is eligible for the cash discount by using the session date to make sure that the cash discount date hasn’t already passed.
 -   **From date** and **To date** – Invoices that have a due date or cash discount date within this date range are selected for payment.
--   **Payment date** – If a date is defined, all payments are created on this date. The **Minimum payment date** field is ignored.
+-   **Payment date** – This is only used when the **Period** field on the method of payment is set to **Total**. If a date is defined, all payments are created on this date. The **Minimum payment date** field is ignored.
 -   **Minimum payment date** – Enter the minimum payment date. For example, the **From date** and **To date** fields specify a range from September 1 to September 10, and the minimum payment date is September 5. In this case, all invoices that have a due date from September 1 to September 5 have a payment date of September 5. However, all invoices that have a due date from September 5 to September 10 have a payment date that is equal to the due date of each invoice.
 -   **Amount limit** – Enter the maximum total amount for all payments.
 -   **Create payments without invoice preview** – If this option is set to **Yes**, payments will be created immediately on the **Vendor payments** page. The **Payment proposal** page will be skipped. Therefore, payments will be created more quickly. Payments can still be modified from the **Vendor payments** page. Alternatively, you can return to the **Payment proposal** page by using the **Edit invoices for select payment** button.
