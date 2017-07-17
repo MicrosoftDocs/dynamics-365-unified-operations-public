@@ -2,7 +2,7 @@
 # required metadata
 
 title: Demo data overview
-description: This article provides an overview of the demo data that is available with Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides an overview of the demo data that is available for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
@@ -34,18 +34,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+This topic provides an overview of the demo data that is available for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-This article provides an overview of the demo data that is available with Microsoft Dynamics 365 for Finance and Operations.
+Demo data is the base data set that is released together with Finance and Operations for implementation support and demonstration purposes. The current demo data set supports the following verticals:
 
-Demo data is the base data set that is released with Microsoft Dynamics 365 for Finance and Operations for implementation support and demonstration purposes. The current demo data set supports the following verticals:
+- Retail
+- Distribution
+- Service Industries
+- Public Sector
+- Discrete & Process Manufacturing
 
--   Retail
--   Distribution
--   Service Industries
--   Public Sector
--   Discrete & Process Manufacturing
-
-The demo data set supports 40 languages across 16 countries/regions, and also supports various implementation scenarios. The following table lists the legal entities that are included in the demo data set.
+The demo data set supports 40 languages across 16 countries or regions. It also supports various implementation scenarios. The following table lists the legal entities that are included in the demo data set.
 
 | Legal entity | Description                          |
 |--------------|--------------------------------------|
@@ -72,8 +71,3 @@ The demo data set supports 40 languages across 16 countries/regions, and also su
 | USPI         | Contoso Process Industry             |
 | USRT         | Contoso Retail USA                   |
 | USSI         | Contoso Consulting USA               |
-
-
-
-
-
