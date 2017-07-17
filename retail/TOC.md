@@ -1401,13 +1401,36 @@
 #### [V Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/v-classes?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [W Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/w-classes?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [X Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/x-classes?toc=/dynamics365/unified-operations/retail/toc.json)
-### Customize with extensions and overlayering
-#### [Extensibility](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Customize model elements using extensions](/dynamics365/unified-operations/dev-itpro/extensibility/customize-model-elements-extensions?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Customize with extensions and overlayering](/dynamics365/unified-operations/dev-itpro/extensibility/customization-overlayering-extensions?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Class extensions](/dynamics365/unified-operations/dev-itpro/extensibility/class-extensions?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Extend the RunBase class](/dynamics365/unified-operations/dev-itpro/extensibility/extend-runbase-class?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Extend the number sequence scope](/dynamics365/unified-operations/dev-itpro/extensibility/extend-number-sequence-scope?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Extensibility home page](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page?toc=/dynamics365/unified-operations/retail/toc.json)
+#### Introduction and getting started
+##### [Application extensibility plans](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-roadmap?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Next steps - extensibility requests](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-requests?toc=/dynamics365/unified-operations/retail/toc.json) 
+##### [FAQ](/dynamics365/unified-operations/dev-itpro/extensibility/app-sealing-faq?toc=/dynamics365/unified-operations/retail/toc.json) 
+##### [Migrate from overlayering to extensions](/dynamics365/unified-operations/dev-itpro/extensibility/migrate-overlayer-extension?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Customize model elements using extensions (tutorial)](/dynamics365/unified-operations/dev-itpro/extensibility/customize-model-elements-extensions?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Customization: overlayering and extensions](/dynamics365/unified-operations/dev-itpro/extensibility/customization-overlayering-extensions?toc=/dynamics365/unified-operations/retail/toc.json)
+#### Fundamentals
+##### [Intrusive customizations](/dynamics365/unified-operations/dev-itpro/extensibility/intrusive-customizations?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Class extensions](/dynamics365/unified-operations/dev-itpro/extensibility/class-extensions?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Naming guidelines](/dynamics365/unified-operations/dev-itpro/extensibility/naming-guidelines-extensions?toc=/dynamics365/unified-operations/retail/toc.json)
+#### How do I?
+##### [Add an enum value](/dynamics365/unified-operations/dev-itpro/extensibility/add-enum-value?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Modify an extended data type](/dynamics365/unified-operations/dev-itpro/extensibility/modify-edt?toc=/dynamics365/unified-operations/retail/toc.json) 
+##### [Register a subclass for factory methods](/dynamics365/unified-operations/dev-itpro/extensibility/register-subclass-factory-methods?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Respond with EventHandlerResult](/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Extend the RunBase class](/dynamics365/unified-operations/dev-itpro/extensibility/extend-runbase-class?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Modify an existing field in a table](/dynamics365/unified-operations/dev-itpro/extensibility/modify-existing-field?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Add a new field to an existing table](/dynamics365/unified-operations/dev-itpro/extensibility/add-field-extension?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Add an index to an existing table](/dynamics365/unified-operations/dev-itpro/extensibility/add-index?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Add a relation to an existing table](/dynamics365/unified-operations/dev-itpro/extensibility/add-relation?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Modify properties on an existing table](/dynamics365/unified-operations/dev-itpro/extensibility/modify-properties?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Add a method to a table](/dynamics365/unified-operations/dev-itpro/extensibility/add-method-table?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Perform business actions throughout the lifecycle of a table record](/dynamics365/unified-operations/dev-itpro/extensibility/subscribe-table-events?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Add a new data source to a form](/dynamics365/unified-operations/dev-itpro/extensibility/add-datasource?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Change the caption on a form](/dynamics365/unified-operations/dev-itpro/extensibility/change-caption-form?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Modify form control properties](/dynamics365/unified-operations/dev-itpro/extensibility/modify-control-properties?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Change a label](/dynamics365/unified-operations/dev-itpro/extensibility/change-label?toc=/dynamics365/unified-operations/retail/toc.json)
+##### [Extend the number sequence scope](/dynamics365/unified-operations/dev-itpro/extensibility/extend-number-sequence-scope?toc=/dynamics365/unified-operations/retail/toc.json)
 #### Database synchronization
 ### Move packages between environments
 #### Create and apply a deployable package
