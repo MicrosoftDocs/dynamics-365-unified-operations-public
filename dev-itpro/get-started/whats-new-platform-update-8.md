@@ -45,21 +45,6 @@ Users and developers will see an updated product name ("Microsoft Dynamics 365 f
 ## Development and customization - Changing the extended data type (EDT) on a table field using table extensions
 Using table extensions, a developer can change the **Extended Data Type** (EDT) property of a table field. Developers can only select EDTs that are derived from the current one. For more information, see [Customize with extensions and overlayering](/dynamics365/unified-operations/dev-itpro/extensibility/customization-overlayering-extensions).
 
-## Development and customization - Compliance properties on table fields
-A new property named General Data Protection Regulation (GDPR) is now available on table fields for the developer to set. It is used to classify the data field for compliance with GDPR.
-
-Available options are:
-- Access control data - Data used to manage and access to administrative roles or sensitive functions.
-- Customer content - Content directly provided/created by admins and users. This is the default value.
-- End User Identifiable Information (EUII) - Data that identifies or could be used to identify the user of a Microsoft service. EUII does not contain Customer content.
-- End User Pseudonymous Information (EUPI) - An identifier created by Microsoft tied to the user of a Microsoft service. When EUPI is combined with other information, such as a mapping table, it identifies the end user. EUPI does not contain information uploaded or created by the customer (Customer content or EUII).
-- Support data - Data provided to Microsoft as part of Support activities.
-- Account data - Customer billing information and payment instrument information. Administrator contact information, such as tenant administrator’s name, address, or phone number. 
-- Public personal data - Publicly available information that Microsoft obtains from external sources. Public personal data is not Customer content, EUII, or EUPI since the data was not input by the customer.
-- Organization Identifiable Information (OII) - Data that can be used to identify a tenant, generally config or usage data. This data is not linkable to a user and does not contain Customer content.
-- System metadata - Data generated while running the service, not linkable to a user or tenant. 
-- Public non-personal data - Publicly available information that Microsoft obtains from external sources.  Does not contain Public personal data.
-
 ## Improved viewing experience for Application reports
 There is a new and improved viewing experience for customers when interacting with Analytical and Operational reports in Dynamics 365 for Finance and Operations, Enterprise edition. This change offers a streamlined toolbar and clear preview of the document that is produced when rendered as a PDF file or sent directly to the printer. To date, customers have rendered over 1.1 million document reports powered by SQL Server Reporting Services (SSRS). In addition, the Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update includes 20+ analytical reports authored using Power BI Desktop. This feature offers a significantly enhanced viewing experience while interacting with both document and analytical style application reports. 
 Customer benefits:
