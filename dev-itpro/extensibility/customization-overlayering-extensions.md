@@ -3,7 +3,7 @@
 
 title: Customize with extensions and overlayering
 description: This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
-author: RobinARH
+author: robadawy
 manager: AnnBe
 ms.date: 05/18/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 26961
