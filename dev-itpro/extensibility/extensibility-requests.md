@@ -68,6 +68,6 @@ Between the July 2017 update and the next major product update, the plan is to m
 
 Details on how to obtain access to the CTP builds will be shared with the extensibility feedback Connect group.
 
-# Still having questions?
+# Still have questions?
 
 Read the [Extensibility FAQ](app-sealing-faq.md) and the other resources listed on the [Extensibility home page](extensibility-home-page.md).
