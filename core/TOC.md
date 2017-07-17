@@ -1401,7 +1401,7 @@
 #### [V Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/v-classes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [W Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/w-classes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [X Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/x-classes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### Extensibility home page (/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Extensibility home page](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Introduction and getting started
 ##### [Application extensibility plans](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-roadmap?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Next steps - extensibility requests](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-requests?toc=/dynamics365/unified-operations/fin-and-ops/toc.json) 
