@@ -1401,6 +1401,7 @@
 #### [V Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/v-classes?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [W Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/w-classes?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [X Classes](/dynamics365/unified-operations/dev-itpro/dev-ref/x-classes?toc=/dynamics365/unified-operations/financials/toc.json)
+
 ### [Extensibility home page](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Introduction and getting started
 ##### [Application extensibility plans](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-roadmap?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1431,9 +1432,7 @@
 ##### [Modify form control properties](/dynamics365/unified-operations/dev-itpro/extensibility/modify-control-properties?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Change a label](/dynamics365/unified-operations/dev-itpro/extensibility/change-label?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Extend the number sequence scope](/dynamics365/unified-operations/dev-itpro/extensibility/extend-number-sequence-scope?toc=/dynamics365/unified-operations/financials/toc.json)
-#### Database synchronization
-### Move packages between environments
-#### Create and apply a deployable package
+
 ### [Continuous delivery home page](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Development and continuous delivery FAQ](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-faq?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Exclude test packages from the build output](/dynamics365/unified-operations/dev-itpro/dev-tools/exclude-test-packages?toc=/dynamics365/unified-operations/financials/toc.json)
