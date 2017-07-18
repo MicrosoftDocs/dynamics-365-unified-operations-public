@@ -95,7 +95,7 @@ If you have your workspace as part of AOT resource, you are not able to edit it 
 
 For this scenario we are considering a workspace called "MyWorkspace" that exist in AOT and also have a backing class called "WorkspaceInAOT"
 
-| ![alt text](media/workspace-api/UpdateWorkspaceInAOT.png "Workspace in AOT")  | ![alt text](../../media/workspace-api/UpdateWorkspaceInAOTAndPublished.png "Workspace in AOT and published")|
+| ![alt text](media/workspace-api/UpdateWorkspaceInAOT.png "Workspace in AOT")  | ![alt text](media/workspace-api/UpdateWorkspaceInAOTAndPublished.png "Workspace in AOT and published")|
 |--|--|
 
 
@@ -137,7 +137,7 @@ Follow the following steps to delete a workspace that exist as an AOT resource.
 3. Do a full model build that contained the AOT resource and the class. For my demo I will do a full build of "Application Foundation" model as my AOT resource and workspace class resided in "Application Foundation"
 Un-check everything from Options tab to speed up the full build.
 
-    |![alt text](media/workspace-api/FullBuildMenuItem.png "Full build menu item")|![alt text](../../media/workspace-api/FullBuild.png "Full build")|
+    |![alt text](media/workspace-api/FullBuildMenuItem.png "Full build menu item")|![alt text](media/workspace-api/FullBuild.png "Full build")|
     |--|--|
 
 
