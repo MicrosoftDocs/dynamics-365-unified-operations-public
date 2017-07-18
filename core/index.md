@@ -88,7 +88,7 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 
  <h3>Developer functionality</h3>
 <p><a href="../dev-itpro/dev-tools/developer-home-page">Developer home page</a></p>
-<p><a href="../dev-itpro/extensibility/customize-model-elements-extensions">Extensibility</a></p>
+<p><a href="../dev-itpro/extensibility/extensibility-home-page">Extensibility</a></p>
 <p>Integration</p>
 <ul style="list-style-type:none"><p><a href="../dev-itpro/data-entities/data-entities">Data entities</a></p>
 <p><a href="../dev-itpro/office-integration/office-integration">Office integration</a></p></ul></p>
