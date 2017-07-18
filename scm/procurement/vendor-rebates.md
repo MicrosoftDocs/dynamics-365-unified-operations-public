@@ -160,11 +160,9 @@ Message bars inform the user that a Rebate accrual journal has been posted for t
 
 5. In the rebate list, select the line, and then, on the Action Pane, click **Rebate transactions** to see and navigate to the journal batch number for this rebate accrual posting. 
 
-The A/P clerk must now complete the rebate claim handling by running the Process
-function.
+The A/P clerk must now complete the rebate claim handling by running the Process function.
 
-6. On the Action Pane, click **Process**.
-7. On the **Process rebates** page, click **Filter**. In the **Criteria** field for the **Vendor account** field, select **US-101**, and then click **OK**.
+6. On the Action Pane, click **Process**, click **Filter**,  in the **Criteria** field for the **Vendor account** field, select **US-101**, and then click **OK**.
 
 The message bars and the status has changed to **Completed** indicate that the following events have occurred:
 
@@ -180,18 +178,12 @@ The message bars and the status has changed to **Completed** indicate that the f
 > [!NOTE] 
 > The Discounts and Allowances Received account number is specified for the procurement category that is used on the purchase invoice line for the rebate. The procurement category, in turn, is set on the **Rebate program** tab of the **Procurement and sourcing parameters** page.
 
-8. In the rebate list, select the line, and then, on the Action Pane, click **Rebate transactions** to see and navigate to the journal batch number for this rebate accrual posting and also the vendor invoice number.
-9. Select the line for the vendor invoice transaction, and then, on the Action Pane, click **Vendor invoice**.
+7. In the rebate list, select the line, and then, on the Action Pane, click **Rebate transactions** to see and navigate to the journal batch number for this rebate accrual posting and also the vendor invoice number.
+8. Select the line for the vendor invoice transaction, and then, on the Action Pane, click **Vendor invoice**.
 
-The Invoice journal shows details for the invoice.
+The Invoice journal shows details for the invoice. The line specifies the details of the vendor invoice for the **Commissions and Rebates** procurement category, a quantity **–1**, and an amount of **–900**. 
 
-The line specifies the details of the vendor invoice for the **Commissions and Rebates** procurement category, a quantity **–1**, and an amount of **–900**. This line represents Contoso’s rebate claim to vendor US-101.
-
-10. Click **Accounts payable** \> **All vendors**.
-11. Select vendor **US-101**, and then, on the Action Pane, click **Transactions**.
-12. Find the line for invoice.
-
-The positive amount of USD 900 has now been added to the vendor balance.
+9. On the **All vendors** page, select vendor **US-101**, and then, on the Action Pane, click **Transactions** and find the line for the invoice. The positive amount of USD 900 has now been added to the vendor balance.
 
 The process for handling vendor rebates involves multiple manual tracking tasks that are often tedious. By automating these tasks, vendor rebate management helps with the following processes:
 
