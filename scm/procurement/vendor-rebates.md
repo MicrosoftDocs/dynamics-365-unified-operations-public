@@ -187,8 +187,7 @@ The Invoice journal shows details for the invoice. The line specifies the detail
 
 The process for handling vendor rebates involves multiple manual tracking tasks that are often tedious. By automating these tasks, vendor rebate management helps with the following processes:
 
-1. Generating accurate rebate claims
-2. Accruing the expected receivable and interim gain in the general ledger
-3. Updating the vendor balance and the income statement with the allowance that is due
+ - Generating accurate rebate claims
+ - Accruing the expected receivable and interim gain in the general ledger
+ - Updating the vendor balance and the income statement with the allowance that is due
 
-In this way, the vendor rebate management feature helped Contoso employees avoid potential errors and associated rework, and contributed to a timely positive cash flow for the company.
