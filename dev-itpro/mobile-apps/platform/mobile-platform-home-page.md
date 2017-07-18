@@ -34,9 +34,11 @@ ms.dyn365.ops.version: Platform update 9
 Add some text here to introduct the mobile platform. It might come from the mobile-platform.md doc.
 
 ## Getting started
-[Getting started with the mobile platform](mobile-platform-getting-started.md) Add the getting started section of the mobile-platform.md doc to this file.
+[Mobile platform overview](mobile-platform.md) - This link is temporary. The mobile-platform.md topic will be split out into at least two other topics (getting started and architecture) and then we won't have this file any more.
 
-[Mobile platform architecture](mobile-platform-architecture.md) Add what's left of the mobile-platform.md doc to this file.
+[Getting started with the mobile platform](mobile-platform-getting-started.md) 
+
+[Mobile platform architecture](mobile-platform-architecture.md) 
 
 ## Configure a workspace
 [Localize workspaces on the server](scenarios/localizing-workspaces-on-server.md)
