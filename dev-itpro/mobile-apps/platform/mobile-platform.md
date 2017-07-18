@@ -86,7 +86,7 @@ The mobile app is being made available for the most popular mobile operating sys
 ## Understanding navigation in the mobile app
 Navigation in the mobile app consists of four simple concepts: the dashboard, workspaces, pages, and actions. 
 
-[![Navigation concepts in the mobile app](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+![Navigation concepts in the mobile app](media/mobilephoneapp1.png)
 
 -   When you start the app, you land on the **dashboard**. On the **dashboard**, you can see a list of **workspaces** that are published in your Finance and Operations environment.
 -   In each **workspace**, you can see a list of **pages** that are available for that workspace.
@@ -102,7 +102,7 @@ At any time, you can pull-to-refresh in the mobile app to make the mobile app up
 ## Using the mobile app designer
 The mobile app designer lets you select the specific data fields from forms that should appear in the mobile app. 
 
-[![Mobile app designer](./media/mobileappdesigner-1024x468.png)](./media/mobileappdesigner.png)
+![Mobile app designer](media/mobileappdesigner.png)
 
 1.  Open the Finance and Operations client. Include the **&mode=mobile** parameter in the URL to enable the designer.
 2.  Go to **Settings** &gt; **Mobile app**.
@@ -120,10 +120,10 @@ The mobile app designer lets you select the specific data fields from forms that
 
 ### Refreshing the app after you make changes
 
-| Type of change                                                                            | Description                                                                                                                                                                                                                                                                                                          |
-|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| New workspaces, deleted workspaces, or changes to the name, color, or icon of a workspace | Pull-to-refresh from the main landing page (dashboard) of the app, where you see the list of workspaces.<br>[![Pull-to-refresh from the dashboard](./media/refreshworkspaces-186x300.png)](./media/refreshworkspaces.png) |
-| All other changes (new or changed pages or actions, or changes to business logic)         | Pull-to-refresh from the workspace that has the edited pages or actions.<br>[![Pull-to-refresh from a workspace](./media/refreshpages-187x300.png)](./media/refreshpages.png)                                             |
+| Type of change     | Description                      |
+|-------|----------------------------------------------|
+| New workspaces, deleted workspaces, or changes to the name, color, or icon of a workspace | Pull-to-refresh from the main landing page (dashboard) of the app, where you see the list of workspaces.<br>![Pull-to-refresh from the dashboard](media/refreshworkspaces.png) |
+| All other changes (new or changed pages or actions, or changes to business logic)         | Pull-to-refresh from the workspace that has the edited pages or actions.<br>![Pull-to-refresh from a workspace)(media/refreshpages.png)                                             |
 
 ## Design considerations for the mobile app platform
 The mobile app platform doesn't assume connectivity to Finance and Operations. Activities such as navigation, data view, and data entry don't require server connectivity after data has been cached.
@@ -131,7 +131,7 @@ The mobile app platform doesn't assume connectivity to Finance and Operations. A
 ## Architecture
 The mobile app communicates with Application Object Server (AOS) to get the metadata for the mobile workspaces (and the pages and the fields that appear on the page), and to get the data for the fields on the pages. Each time that the mobile app requests data for a page, AOS creates a new session that uses the context of the user who is using the mobile app. AOS then uses the user's context to open the corresponding forms (by using the corresponding menu items). AOS can open multiple forms in quick succession and perform actions on those forms (for example, filtering, opening FactBoxes, changing tab pages, and clicking buttons). Any business logic on the forms is also run as usual. Through that process, AOS collects the data values from the requested fields and then sends that data back to the mobile app. 
 
-[![Mobile architecture](./media/mobilearchitecture-1024x514.png)](./media/mobilearchitecture.png)
+![Mobile architecture](media/mobilearchitecture.png)
 
 ## Page design guidelines
 Before you begin to use the designer to build pages and actions, it’s important that you plan the overall design of the mobile workspace that you want to build. We recommend that you orient your design around the entities that you plan to use in the mobile workspace. Don't begin by thinking about the forms that you want to use. From the perspective of the mobile app, the forms are just a mechanism for retrieving data, and the run-time UI behavior of a form isn't applicable to the mobile app. Therefore, you should first identify your entities and the relationships between them. For each entity, the following questions will help you decide how you should design your forms and pages.
@@ -167,7 +167,7 @@ If you want just a details view for an entity, it's likely that the entity is a 
 3.  Make sure that the form that is used for the details view can be filtered on a unique key field by using the filter pane.
 4.  In the designer, make sure that the list view page is linked to the details view page. Click the list, open the properties, and then set the details view page by using the lookup. 
 
-[![Linking the list view page to the details view page](./media/listtodetailsdesigner.png)](./media/listtodetailsdesigner.png)
+![Linking the list view page to the details view page](media/listtodetailsdesigner.png)
 
 ### How do I add a reference field that enables navigation to a related entity?
 
@@ -175,13 +175,13 @@ If you want just a details view for an entity, it's likely that the entity is a 
 2.  Make sure that the page contains the reference field from the entity that is being referenced.
 3.  Make sure that the referenced field is bound to the referenced entity’s data source, and that the referenced entity is *outer joined* (1-0..1) or *inner joined* (1-1) to the data source for the entity that contains the reference. For example, in the following illustration, FMRental is the entity that contains the reference, and FMVehicle is the referenced entity.
 
-[![Binding the referenced field to the referenced entity’s data source](./media/relatedentityform-1024x344.png)](./media/relatedentityform.png)
+![Binding the referenced field to the referenced entity’s data source](media/relatedentityform.png)
 
 4.  Make sure that you've created a separate details view page for the entity that is being referenced.
 5.  Make sure that the reference field has been added to the page.
 6.  In the designer, make sure that the reference field has been linked to the details view for the referenced entity. For example, in the following illustration, Vehicle-details is the details view page for the referenced entity.
 
-[![Linking the reference field to the details view for the referenced entity](./media/referencepagedesigner.png)](./media/referencepagedesigner.png)
+![Linking the reference field to the details view for the referenced entity](media/referencepagedesigner.png)
 
 ### How do I add a list that contains items from a related entity to a details view page?
 
@@ -273,7 +273,7 @@ Lookups for fields in the mobile app don't have a correlation to the advanced lo
 2.  After you've finished designing the action, select the field to add rich lookup functionality to, and then click **Properties**.
 3.  In the **Control properties** dialog box, select the list view page that you identified or created in step 1, and set the other related properties. 
 
-[![Setting the control properties](./media/lookupdesigner-438x1024.png)](./media/lookupdesigner.png)
+![Setting the control properties](media/lookupdesigner.png)
 
 4.  Save and publish your changes to the action.
 
@@ -330,7 +330,7 @@ This section provides valuable guidelines for building Finance and Operations fo
 -   Each form must work with the data source filters.
     -   After you open the form in the web client, open the filter pane by using the **Show filters** button. 
     
-        [![Show filters button](./media/filterpane.png)](./media/filterpane.png) 
+        ![Show filters button](media/filterpane.png) 
         
         Then click **Add a filter field**, and verify that the Master Root Data Source appears as the table for fields in the list of available fields. Other tables can also appear, but the Master Root Data Source **must** appear in this list. Otherwise, the mobile app won't enable searches and navigation that uses context.
     -   Searching: The mobile app does online searches against Finance and Operations data by using the Filters framework behind the scenes.
