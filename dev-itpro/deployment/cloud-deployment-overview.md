@@ -38,18 +38,18 @@ Microsoft assumes that all customers will follow a lifecycle similar to the foll
 
 - Evaluate
 - Develop customizations, if needed
-- Deploy and test customizations and partner solutions in a small sandbox
-- Test customizations and partner solutions in a production sandbox
-- Deploy to a live environment with high availability
+- Install and test customizations and partner solutions on a tier-1 sandbox (Development or test environment) 
+- Test customizations and partner solutions on a tier-2 sandbox environment
+- Deploy customizations to a production environment with high availability
 
 At some phases of a project, you may have all of the environments live at once. For more information, about the default licenses and tiers that are available, see the [Dynamics 365 Licensing Guide](http://download.microsoft.com/documents/en-us/dynamics/pricing/Dynamics_365_Enterprise_edition_Licensing_Guide.pdf).
 
 You may hear the terms, Customer, Partner, and Microsoft subscriptions. A *customer or partner subscription* means that the customer or partner brings their own Azure subscription and deploys Dynamics 365 for Finance and Operations environments to it, for evaluation and development purposes only. The customer or partner pays for the resources deployed to their Azure subscription based on the Azure price list. 
 A *Microsoft subscription* means that the customer purchases Dynamics 365 for Finance and Operations licenses which will then allow them to deploy environments to an Azure subscription which is managed by Microsoft, therefore, the customer has no separate Azure billing. Three environments are included by default and more can be purchased as add-ons:
 
-- One Tier-1 sandbox which is a one-box - customers can choose to deploy it as either a demonstration or a dev/build environment. This environment is managed by the customer.
-- One Tier-2 highly-available (HA) sandbox. This environment is managed by the customer or partner, until the customer is live in production. After going live in production, Microsoft DSE may be required to perform some tasks, such as helping move production data into the sandbox environment. 
-- One HA production deployment. This environment is managed and operated by Microsoft.
+- One Tier-1 sandbox which is a development or build environment.
+- One Tier-2 sandbox (multi-box environment) for user acceptance testing (UAT).
+- One production environment with High Availability (HA). This environment is managed and operated by Microsoft.
 
 For information about licensing and what is included in Microsoft Dynamics 365, see the [Microsoft Dynamics 365 Enterprise edition licensing guide](http://download.microsoft.com/documents/en-us/dynamics/pricing/Dynamics_365_Enterprise_edition_Licensing_Guide.pdf).
 
@@ -58,9 +58,9 @@ Here's how the lifecycle maps to the available environments.
 | Lifecycle phase               | Environment                               | Subscription                                        |
 |-------------------------------|-------------------------------------------|-----------------------------------------------------|
 | Evaluation and analysis       | Demo, one-box                             | Customer or partner subscription                               |
-| Customize                     | Dev/build, one-box                        | Microsoft subscription |
-| User acceptance testing (UAT) | High availability (HA) sandbox, multi-box | Microsoft subscription                              |
-| Go live                       | Production, multi-box                     | Microsoft subscription                              |
+| Customize                     | Dev/build, one-box                        | Microsoft subscription, partner/customer subscription, or local VM
+| User acceptance testing (UAT) | Tier-2 sandbox, multi-box environment | Microsoft subscription                              |
+| Go live                       | Production, High Availability multi-box environment                    | Microsoft subscription                              |
 
 ## Features of the Finance and Operations production instance
 The Finance and Operations application production instance has the following capabilities.
@@ -108,15 +108,14 @@ To migrate your code to Dynamics 365 for Operations, use the “Migrate and Crea
 #### Load data in a sandbox
 - [Develop an entity for data migration](data-entities/develop-entity-for-data-migration.md)
     
-#### Import data from Production into a sandbox
-- [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md)
-
 ## Move to production
-
 
 ## Frequently asked questions
 ### How do I move my customizations between environments?
-A customer can request a backup of their Finance and Operations database. For more information, see [Copy a Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md).
+To move customizations from a development to a sandbox or production environment, see [Create a deployable package of your models in order to apply it to a runtime environment](../deployment/create-apply-deployable-package.md)
+
+### Can I request a copy of my production database?
+A customer can request a copy of their Finance and Operations production database to be installed on their tier-2 sandbox environment. This request is completed by DSE.
 
 ### Can I bring my own domain name?
 You can bring your own domain name if it is running Azure Active Directory (AAD), and the administrator of your AAD instance has enabled the Finance and Operations application within their AAD. This is usually done through the office email, after you buy a license. When you click the link to acccept the offer, AAD is set up for you.
