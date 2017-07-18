@@ -38,21 +38,20 @@ Add some text here to introduct the mobile platform. It might come from the mobi
 [Mobile platform architecture](mobile-platform-architecture.md) Add what's left of the mobile-platform.md doc to this file.
 
 ## Configure a workspace
-[Localize workspaces on the server]
-[Make fields mandatory]
-[Secure workspaces in mobile apps]
-[Display a field as a URL]
-[Use the workspace classe to configure workspaces on the server]
-
+[Localize workspaces on the server](localizing-workspaces-on-server.md)
+[Make fields mandatory](marking-fields-mandatory.md)
+[Secure workspaces in mobile apps](securing-workspaces.md)
+[Display a field as a URL](show-field-as-url.md)
+[Use the workspace classe to configure workspaces on the server](workspace-classes.md)
 
 ## Optimize a workspace
-[Use regular fields to provide counts on the workspace]
+[Use regular fields to provide counts on the workspace](using-regular-fields-for-count.md)
 
 ## Client APIs
-[Client-side design APIs overview]
-[Client APIs reference]
+[Client-side design APIs overview](client-apis/design-overview.md)
+[Client APIs reference](client-apis-reference.md)
 
 ## Server APIs
-[Server APIs reference (workspace X++ APIs)]
+[Server APIs reference (workspace X++ APIs)](mobile-workspace-server-apis.md)
 
 
