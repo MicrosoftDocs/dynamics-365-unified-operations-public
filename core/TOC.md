@@ -1434,6 +1434,20 @@
 ##### [Change a label](/dynamics365/unified-operations/dev-itpro/extensibility/change-label?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Extend the number sequence scope](/dynamics365/unified-operations/dev-itpro/extensibility/extend-number-sequence-scope?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
+### [Mobile platform home page]
+#### [Getting started](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-getting-started?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Architecture](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-architecture?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Scenarios]
+##### [Localize workspaces on the server](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/localizing-workspaces-on-server?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Make fields mandatory](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/marking-fields-mandatory?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Secure workspaces in mobile apps](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/securing-workspaces?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Display a field as a URL](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/show-field-as-url?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Use the workspace classe to configure workspaces on the server](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/workspace-classes?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Use regular fields to provide counts on the workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/using-regular-fields-for-count?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Client-side APIs](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/design-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Client APIs reference](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis-reference?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Server APIs (workspace X++ APIs)](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-workspace-server-apis?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ### [Continuous delivery home page](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Development and continuous delivery FAQ](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-faq?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Exclude test packages from the build output](/dynamics365/unified-operations/dev-itpro/dev-tools/exclude-test-packages?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
