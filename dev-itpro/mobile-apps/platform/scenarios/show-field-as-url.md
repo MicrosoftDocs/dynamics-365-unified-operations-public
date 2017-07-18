@@ -17,14 +17,14 @@ Note that in iOS you need to provide the complete URL (starting from a protocol 
 ## Example
 We would like to mark customer email and phone number field so that they can be clicked and opened in mobile OS default applications. Below is how the screen looks like before any changes are done. Note that the fields are not clickable.
 
- ![alt text](../../media/workspace-api/FieldAsURLOriginal.png "Customer details page without any changes")
+ ![alt text](media/workspace-api/FieldAsURLOriginal.png "Customer details page without any changes")
 
 Follow the following steps to mark a field as link.
 
 1. In the business logic for the workspace add the following lines in appInit method. You can call configureControl passing in the page name and control name and then supplying in the LinkType for the control.
 Currently we are supporting 'Telephone', 'Email' and 'Url' types.
 
-    ![alt text](../../media/workspace-api/FieldAsURLBusinessLogic.png "Changes done in workspace business logic")
+    ![alt text](media/workspace-api/FieldAsURLBusinessLogic.png "Changes done in workspace business logic")
 
 2. Upload the updated business logic file using Operations mobile app designer.
 
@@ -32,6 +32,6 @@ Currently we are supporting 'Telephone', 'Email' and 'Url' types.
 
 4. You will now have the fields shown as links.
 
-    ![alt text](../../media/workspace-api/FieldAsURLFinal.png "Customer details page after the changes")
+    ![alt text](media/workspace-api/FieldAsURLFinal.png "Customer details page after the changes")
 
 
