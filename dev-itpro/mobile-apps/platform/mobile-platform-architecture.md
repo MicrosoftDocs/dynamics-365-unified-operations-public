@@ -31,3 +31,6 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 # Mobile platform architecture
+
+Add what's left of the mobile-platform.md doc to this file.
+
