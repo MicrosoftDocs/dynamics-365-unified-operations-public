@@ -31,3 +31,6 @@ ms.dyn365.ops.version: Platform update 9
 ---
 
 # Getting started with the mobile platform
+
+
+Add the getting started section of the mobile-platform.md doc to this file.
