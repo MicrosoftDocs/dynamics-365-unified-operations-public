@@ -8,18 +8,18 @@ Follow the steps below to create  a new workspace class for your workspace.
 
 1. Create a new class for your workspace and extend it from SysAppWorkspace class.
 
-    ![alt text](../../media/workspace-api/WorkspaceClass.png "Workspace class")
+    ![alt text](media/workspace-api/WorkspaceClass.png "Workspace class")
 
 2. Add SysAppWorkspaceAttribute on your class and provide the AppID of your workspace.
 You can find the AppId for your app from the Summary page in SysAppDesigner.
 
-    |![alt text](../../media/workspace-api/workspaceSummary.png "Workspace summary")|
+    |![alt text](media/workspace-api/workspaceSummary.png "Workspace summary")|
     |--|
-    |![alt text](../../media/workspace-api/WorkspaceClassWithAppId.png "Workspace class with appId")|
+    |![alt text](media/workspace-api/WorkspaceClassWithAppId.png "Workspace class with appId")|
 
 3. (Optional) If your workspace exist as an AOT resource, then provide the AOT resource name as the 2nd parameter to SysAppWorkspaceAttribute.
 
-    ![alt text](../../media/workspace-api/WorkspaceClassWithAOTResource.png "Workspace class with AOT Resource")
+    ![alt text](media/workspace-api/WorkspaceClassWithAOTResource.png "Workspace class with AOT Resource")
 
 ## Workspace life cycle methods
 The workspace class provides the following methods that can be overridden
@@ -63,23 +63,23 @@ Follow the following steps to publish a workspace that resides in an AOT resourc
 
 1. When you are developing a workspace the workspace is stored in database. It needs to be exported from SysAppDesigner so that it can be stored as an AOT resource. The workspace will be exported as an xml file.
 
-    ![alt text](../../media/workspace-api/ExportWorkspace.png "Export a workspace")
+    ![alt text](media/workspace-api/ExportWorkspace.png "Export a workspace")
 
 
 2. Delete the workspace from SysAppDesigner as later it will be loaded from an AOT resource
 
-    ![alt text](../../media/workspace-api/DeleteWorkspace.png "Delete a workspace")
+    ![alt text](media/workspace-api/DeleteWorkspace.png "Delete a workspace")
 
 
 3. Create a new AOT resource and select the exported workspace for the resource.
 
-    ![alt text](../../media/workspace-api/WorkspaceAsResource.png "Workspace as resource")
+    ![alt text](media/workspace-api/WorkspaceAsResource.png "Workspace as resource")
 
 
 4. Create a new class for your workspace that extends from SysAppWorkspace. Apply the SysAppWorkspaceAttribute to the class providing the AppId and the AOT resource name which contains the resource
 
 
-    ![alt text](../../media/workspace-api/NewWorkspaceClass.png "New workspace class")
+    ![alt text](media/workspace-api/NewWorkspaceClass.png "New workspace class")
 
 
 
@@ -88,14 +88,14 @@ Follow the following steps to publish a workspace that resides in an AOT resourc
 6. Your workspace is now published. The workspace shows up in designer but cannot be edited or deleted.
 Note that the workspace is now getting loaded from metadata.
 
-    ![alt text](../../media/workspace-api/WorkspaceInMetadata.png "Workspace in metadata")
+    ![alt text](media/workspace-api/WorkspaceInMetadata.png "Workspace in metadata")
 
 ## Updating workspaces that have already been published
 If you have your workspace as part of AOT resource, you are not able to edit it from designer. If you would like to keep on working with this workspace follow the following steps.
 
 For this scenario we are considering a workspace called "MyWorkspace" that exist in AOT and also have a backing class called "WorkspaceInAOT"
 
-| ![alt text](../../media/workspace-api/UpdateWorkspaceInAOT.png "Workspace in AOT")  | ![alt text](../../media/workspace-api/UpdateWorkspaceInAOTAndPublished.png "Workspace in AOT and published")|
+| ![alt text](media/workspace-api/UpdateWorkspaceInAOT.png "Workspace in AOT")  | ![alt text](../../media/workspace-api/UpdateWorkspaceInAOTAndPublished.png "Workspace in AOT and published")|
 |--|--|
 
 
@@ -105,7 +105,7 @@ For this scenario we are considering a workspace called "MyWorkspace" that exist
     a. (Optional) Change the name so that the newly added workspace can be differentiated.
     b. Copy the appID of the newly created workspace.
 
-| ![alt text](../../media/workspace-api/UpdateWorkspaceNewWorkspace.png "New workspace in database")  | ![alt text](../../media/workspace-api/UpdateWorkspaceNewWorkspaceDetails.png "New workspace details")|
+| ![alt text](media/workspace-api/UpdateWorkspaceNewWorkspace.png "New workspace in database")  | ![alt text](media/workspace-api/UpdateWorkspaceNewWorkspaceDetails.png "New workspace details")|
 |--|--|
 
 
@@ -113,7 +113,7 @@ For this scenario we are considering a workspace called "MyWorkspace" that exist
 3. Create a new class that extends from your backing class and apply the SysAppWorkspaceAttribute with the new appID.
 
 
-    ![alt text](../../media/workspace-api/UpdateWorkspaceNewWorkspaceClass.png "Workspace in metadata")
+    ![alt text](media/workspace-api/UpdateWorkspaceNewWorkspaceClass.png "Workspace in metadata")
 
 Now you can keep on working with your new workspace and the backing class. Once you are done with the changes you can merge them with the AOT based workspace.
 
@@ -123,21 +123,21 @@ Follow the following steps to delete a workspace that exist as an AOT resource.
 
 1. Delete the AOT resource that contains the workspace.
 
-    ![alt text](../../media/workspace-api/WorkspaceAsResourceToBeDeleted.png "Workspace to be deleted")
+    ![alt text](media/workspace-api/WorkspaceAsResourceToBeDeleted.png "Workspace to be deleted")
 
 
 
 
 2. Delete the workspace class that was created for the workspace.
 
-    ![alt text](../../media/workspace-api/WorkspaceClassToBeDeleted.png "Workspace class to be deleted")
+    ![alt text](media/workspace-api/WorkspaceClassToBeDeleted.png "Workspace class to be deleted")
 
 
 
 3. Do a full model build that contained the AOT resource and the class. For my demo I will do a full build of "Application Foundation" model as my AOT resource and workspace class resided in "Application Foundation"
 Un-check everything from Options tab to speed up the full build.
 
-    |![alt text](../../media/workspace-api/FullBuildMenuItem.png "Full build menu item")|![alt text](../../media/workspace-api/FullBuild.png "Full build")|
+    |![alt text](media/workspace-api/FullBuildMenuItem.png "Full build menu item")|![alt text](../../media/workspace-api/FullBuild.png "Full build")|
     |--|--|
 
 
