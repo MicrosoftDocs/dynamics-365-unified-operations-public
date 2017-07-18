@@ -1,0 +1,46 @@
+--- 
+# required metadata 
+ 
+title: Create a billing code for the public sector
+description: Billing code custom fields allow you to collect values for billing code fields when free text invoices are created. 
+author: TonyaFehr 
+manager: AnnBe 
+ms.date: 11/14/2016
+ms.topic: business-process 
+ms.prod:  
+ms.service: dynamics-ax-applications 
+ms.technology:  
+ 
+# optional metadata 
+ 
+# ms.search.form:   
+audience: Application User 
+# ms.devlang:  
+# ms.reviewer: tfehr 
+ms.search.scope: Operations 
+# ms.tgt_pltfrm:  
+# ms.custom:  
+ms.search.region: Global
+ms.search.industry: PUBSEC
+ms.author: tfehr 
+ms.search.validFrom: 2016-06-30 
+ms.dyn365.ops.version: Version 7.0.0 
+---
+
+[!include[task guide banner](.../includes/task-guide-banner.md)]
+
+# Create a billing code for the public sector
+
+Billing code custom fields allow you to collect values for billing code fields when free text invoices are created. After you assign the custom field to billing codes, users can access the field when the billing code is selected on a free text invoice line. This procedure was created using the PSUS demo company data in the public sector partition.
+
+1. Go to Accounts receivable > Setup > Billing code custom fields.
+2. Click New.
+3. In the Name field, type a value.
+4. In the Type field, select an option.
+    * When you select an option, the fields in the Description section will change to the settings available for that option.  
+    * In the Details section, enter the default value for this custom field and any other values that are needed.  
+5. Open the Description section.
+6. Optional: In the Usage description field, describe how the custom field should be used. This information is for internal purposes only. It is not visible to the user.
+7. Open the Billing code references section. When you assign this custom field to a billing code, the billing code will be listed here.
+8. Click Save.
+
