@@ -1437,7 +1437,7 @@
 ### [Mobile platform home page](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Getting started](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-getting-started?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Architecture](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-architecture?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Scenarios]
+#### Scenarios
 ##### [Localize workspaces on the server](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/localizing-workspaces-on-server?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Make fields mandatory](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/marking-fields-mandatory?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Secure workspaces in mobile apps](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/securing-workspaces?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
