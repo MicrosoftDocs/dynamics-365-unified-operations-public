@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mobile workspace X++ APIs
+title: Server-side development - workspace X++ APIs
 description: These APIs are available to X++ classes that extend SysAppWorkspace.
 author: makhabaz
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Mobile workspace X++ APIs
+# Server-side development (workspace X++ APIs)
 
 These APIs are available to X++ classes that extend **SysAppWorkspace**.
 
