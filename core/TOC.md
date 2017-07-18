@@ -1434,7 +1434,7 @@
 ##### [Change a label](/dynamics365/unified-operations/dev-itpro/extensibility/change-label?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Extend the number sequence scope](/dynamics365/unified-operations/dev-itpro/extensibility/extend-number-sequence-scope?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Mobile platform home page]
+### [Mobile platform home page](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Getting started](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-getting-started?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Architecture](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-architecture?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Scenarios]
