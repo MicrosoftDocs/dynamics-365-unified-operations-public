@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: 11
+ms.reviewer: margoc
 ms.search.scope: AX 2012, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 260214

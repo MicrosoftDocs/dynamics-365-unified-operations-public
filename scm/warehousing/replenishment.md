@@ -18,7 +18,7 @@ ms.search.form: WHSReplenishmentTemplates
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 90043

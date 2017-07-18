@@ -17,7 +17,7 @@ ms.search.form: EcoResStorageDimensionGroup, ReqItemTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 2514

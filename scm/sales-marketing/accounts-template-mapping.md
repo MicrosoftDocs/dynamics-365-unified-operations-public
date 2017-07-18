@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 

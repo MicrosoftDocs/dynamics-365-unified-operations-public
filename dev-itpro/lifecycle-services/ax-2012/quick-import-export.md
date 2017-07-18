@@ -17,7 +17,7 @@ ms.technology: ax-2012
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 11
+ms.reviewer: margoc
 ms.search.scope: AX 2012 R3 CU8, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 89041

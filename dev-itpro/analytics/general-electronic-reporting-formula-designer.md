@@ -17,7 +17,7 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
+ms.reviewer: kfend
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 58771

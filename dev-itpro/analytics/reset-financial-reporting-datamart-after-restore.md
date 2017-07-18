@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 261824

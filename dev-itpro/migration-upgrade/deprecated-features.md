@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: sericks007
+ms.reviewer: sericks
 ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 21821

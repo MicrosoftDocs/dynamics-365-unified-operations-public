@@ -17,7 +17,7 @@ keywords: SysTaskRecorderPane
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw1
+ms.reviewer: josaw
 
 # ms.tgt_pltfrm: 
 ms.custom: 24271
