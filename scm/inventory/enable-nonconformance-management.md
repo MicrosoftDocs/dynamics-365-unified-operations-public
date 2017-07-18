@@ -17,7 +17,7 @@ ms.search.form: InventParameters, InventProblemType, InventProblemTypeSetup, Inv
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 28951
@@ -55,11 +55,11 @@ To enable nonconformance management, follow these steps:
 See also
 --------
 
-[Create and process a non conformance (task guide)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
+[Create and process a non conformance (Task guide)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
 
 [Quality management processes](quality-management-processes.md)
 
-[Set up prerequisites for non-conformance management (task guide)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+[Set up prerequisites for non-conformance management (Task guide)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
 
 
 

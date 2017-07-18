@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: sericks
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -174,7 +174,7 @@ Specifically, the **Expense management** mobile workspace enables a user to:
 
 -   Approve or reject expense reports assigned to the employee as an approver.
 
-For more information, see [Expense management mobile workspace](/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace).
+For more information, see [Expense management mobile workspace](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace).
 
 Expense management: Configuration related to employee's card ID
 ---------------------------------------------------------------
@@ -432,6 +432,14 @@ New mobile capabilities allow you to review and approve vendor invoices that
 have been submitted through workflow using a mobile device.
 
 For more information, see [Mobile invoice approvals](/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals).
+
+Configuration data packages
+----------------------------
+
+Configuration data packages are available as process data packages from Lifecycle Services (LCS) for core Financial modules. These data packages can help improve the repeatability of implementations and accelerate the configuration of Dynamics 365 for Finance and Operations, Enterprise edition.
+
+The data packages contain configuration entity spreadsheets. These entity spreadsheets have best practice data, which you can use to create an initial ‘golden’ build. The data entities in the data packages are also sequenced appropriately, to help ensure a successful single-click import of the data. For more information, see [Configuration data packages](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-packages). 
+
 
 Save Financial reports to SharePoint
 ------------------------------------
@@ -778,56 +786,6 @@ invoice reference and amount are copied to a sales credit/debit note.
 **Human resources**
 ===================
 
-Analytics and Insights
-----------------------
-
-Gain deeper insight about your most valuable resource, your people, using the
-flexible and comprehensive analysis provided by Power BI. These reports contain
-data visualizations for each area of Talent that help you gain a deeper
-understanding of the human capability within your organization.
-
-Analytics and insights provide the following data and visualizations:
-
--   Benefits management
-
-    -   Benefit plan analysis
-
-    -   Employee group enrollment metrics
-
--   Compensation management
-
-    -   Compensation plan analysis
-
-    -   Compensation analysis
-
-    -   Position pay analysis
-
--   Employee development
-
-    -   Employee skill analysis
-
-    -   Skill profiles
-
-    -   Skill analysis
-
--   Learning
-
-    -   Course and registration analysis
-
-    -   Instructor availability analysis
-
--   Personnel management
-
-    -   People metrics
-
-    -   Headcount and FTE analysis
-
-    -   Workforce demographics
-
-    -   Attrition analysis
-
-    -   Employee milestones
-
 Benefits workspace 
 -------------------
 
@@ -929,50 +887,6 @@ My team mobile workspace provides the following:
 
 For more information see [My team mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/manager-self-service-mobile-workspace).
 
-**Employee and Manager self-service**
-
--   Update direct deposit information.
-
--   View of all employees in a manager’s organization.
-
--   See appropriate information in a combined workspace for employees and
-    managers, based on their assigned security role.
-
-Onboarding
-----------
-
-The onboarding process lets HR professionals create tasks to track the
-onboarding progress of pending employees, as well as recently hired employees.
-Because the onboarding process can vary between positions in a single
-organization, multiple onboarding checklists can be created to fit the
-organization’s hiring process.
-
-Onboarding lets you complete the following tasks:
-
--   Define templates for onboarding.
-
--   Define calendars to apply to tasks based on location or business function.
-
--   Assign checklists at the time of hiring, or after an employee has
-    started. Checklists can be assigned to future-dated hires.
-
--   Analyze past due tasks and identify bottlenecks in the process.
-
--   Assign tasks to employees, positions, managers, and the onboarding employee.
-
--   Provide instructions to all tasks.
-
--   Define “deep links” to drive consumers of tasks directly to the right areas
-    to immediately enter data regarding the new employee without needing to
-    search or filter.
-
--   Ability to re-assign tasks and update due dates. Update checklists
-    throughout the process by marking items as complete, adding new tasks, or
-    removing tasks.
-
--   Update checklists throughout the process by marking items as complete,
-    adding new tasks, or removing tasks.
-
 **Intelligence**
 ================
 
@@ -1039,7 +953,7 @@ bank account, and currency to get a better understanding of surpluses and short
 falls. Overall, you can get a temporal view of gaps and address them
 proactively.
 
-For more information, see [Cash flow forecasting](/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forcasting).
+For more information, see [Cash flow forecasting](/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting).
 
 Cost accounting Power BI reports
 --------------------------------
@@ -1406,6 +1320,27 @@ material on the production floor for lean, discrete, and process manufacturing.
 This makes it possible to release work for kanban picking for the withdrawal
 kanban, so that items can be picked from non-fixed locations in the warehouse.
 
+Lean scheduling board
+---------------------
+
+A new scheduling board for kanbans has been introduced. The kanban board offers these main capabilities.
+-   A graphical overview of scheduled kanbans in a work cell for a selected period.
+-   Tools to schedule unplanned kanban jobs.
+-   Reschedule already scheduled jobs as a drag-and-drop activity.
+-   Reassign kanban jobs across time periods.
+-   An overview of the work cell capacity and capacity load that is updated when new kanban jobs are loaded to the board.
+-   Use of colors to distinguish between kanban jobs.
+-   Detailed information about the kanban and status icon showing when a kanban is overdue.
+
+In the kanban schedule board, these call outs are added to key elements.
+- Menu bar
+- Filter fields
+- Button for unplanned jobs
+- Period node
+- Kanban job
+- Capacity bar
+- Time scale
+
 **Mobile**
 ==========
 
@@ -1461,7 +1396,7 @@ For more information, see the following topics:
 
 - [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012)
 - [Analysis: Use the upgrade analyzer to plan migration work](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool)
-- [Analysis: Estimate the effort to upgrade code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-code-upgrade)
+- [Analysis: Estimate the effort to upgrade code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analyze-code-upgrade)
 - [Analysis: Deploy a sandbox environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox)
 - [Upgrade: Data upgrade in a development environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade)
 - [Upgrade: AX 2012 data upgrade tasks](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012)
@@ -1793,14 +1728,14 @@ testing. Results from compatibility testing can be sent to Microsoft to be
 listed as approved for new deployments of Microsoft Dynamics 365 for Retail.
 
 For a description of the Peripheral simulator, see [Retail Peripheral
-simulator](/unified-operations/%20retail/dev-itpro/retail-peripheral-simulator).
+simulator](/unified-operations/retail/dev-itpro/retail-peripheral-simulator).
 
 For more information about the compatibility program and how to participate,
 contact <drpc@microsoft.com>.
 
 For information about peripherals that have been previously tested by Microsoft,
 visit [Microsoft-tested peripheral
-devices](https://ax.help.dynamics.com/en/wiki/retail-peripherals-overview/).
+devices](/dynamics365/unified-operations/retail/retail-peripherals-overview).
 This page will also be updated with a link to the POS simulator-tested devices
 as soon as that page becomes available.
 
@@ -1943,28 +1878,8 @@ enable the Dynamics AX 2012 R3 CU 11 or CU12 stores to connect with the new HQ.
 If the customer is using a pre-CU 11 version, then they must upgrade to at least
 Dynamics AX 2012 R3 CU 11 to leverage the N-1 support.
 
-For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](/unified-operations/%20retail/dev-itpro/overview-upgrade-n-minus1) and [N-1 installation and configuration](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1).
+For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1) and [N-1 installation and configuration](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1).
 
-**Social**
-==========
-
-Conversation view for private messages and Twitter replies 
------------------------------------------------------------
-
-Starting with this update, Social Engagement shows you any conversation that
-involves private messages (Facebook or Twitter) and Twitter replies of one of
-your social profiles. It displays the back and forth between two authors sorted
-by showing the latest post first. At the top, you will see the two authors,
-including the one that belongs to your team. It also shows the team members who
-answered as that social profile.
-
-For more information, see [View posts and conversations in Social Engagement](https://www.microsoft.com/en-us/dynamics/social-engagement-help-and-training/view-posts-and-conversations-in-social-engagement.aspx).
-
-LinkedIn engagement and acquisition
------------------------------------
-
-You can monitor LinkedIn Company Pages owned by your company, and engagement on
-posts and comments from Company Pages.
 
 **Supply chain management**
 ===========================
@@ -2012,16 +1927,6 @@ physically tracked. In this case, you can use the Change storage dimension group
 for items process to enable those items to be used in warehouse management
 processes. This feature is useful if you want to use the warehouse management
 functionality for existing items.
-
-Movement of inventory with associated work in Warehouse management 
--------------------------------------------------------------------
-
-You can now control which warehouse workers should be allowed to move reserved
-inventory. Also, previously, the work reservations that you could move where
-limited to Sales order, Transfer order issue, Transfer order receipt, and
-Purchase order.
-
-For more information, see [Movement of inventory with associated work in Warehouse management](/dynamics365/unified-operations/supply-chain/warehousing/move-inventory-associated-work).
 
 Piece picking confirmation 
 ---------------------------
@@ -2212,278 +2117,3 @@ more will be added to this list:
 -   Allow for partial quantity of the opportunistic X-dock to transfer when
     reporting as finished.
 
-**Talent**
-==========
-
-Talent is an Azure native solution which is fully managed Software-as-a-Service
-(SaaS). The new Talent solution provides a complete human resources solution
-providing unique capabilities and combines intelligent analytics along with the
-most modern collaboration and productivity tools. In addition to including most
-of the functionality that’s available in Human resources for Dynamics 365 for
-Finance and Operations, Enterprise edition, Talent also includes the following
-enhancements.
-
-Benefits workspace 
--------------------
-
-Benefits workspace allows you to easily view and manage benefits offered to
-workers in a central location. This workspace lets you:
-
--   Gain insight into benefits not being used by employees.
-
--   View which benefits are being phased out at the end of the year.
-
--   Keep track of benefit costs and how costs may have changed in the past year.
-
-Configurable business processes 
---------------------------------
-
-The Configurable business process feature allows you to create a business
-process template for processes that need to be completed within your
-organization. For example, your company may have a HR audit that is performed
-each year. A template can be created to track all the tasks that need to be
-completed as part of the audit process. Templates can be re-used or copied for
-recurring processes.
-
-After a template is created, you can start a process, and track it in the
-Business process workspace. When a business process is started, the tasks will
-be assigned to the appropriate individuals with the appropriate due date.
-
-Configurable business processes let you:
-
--   Define templates for processes within your organization.
-
--   Define calendars to apply to tasks for all processes.
-
--   Define a process owner for each business process template.
-
--   Analyze past due tasks and identify bottlenecks in the process.
-
--   Provide instructions to all tasks.
-
--   Assign checklists at any point in the process.
-
--   Re-assign tasks and update due dates.
-
-Direct deposit
---------------
-
-Within Employee self-service (ESS), individuals can set up their direct deposit
-information, which lets employees easily distribute their paycheck to multiple
-accounts. 
-
-Direct deposit lets employees:
-
--   Add multiple bank accounts.
-
--   Set priority of bank disbursements.
-
--   Direct any remaining funds to a specific account.
-
-Integration to Talent Attract 
-------------------------------
-
-The Attract experience facilitates the hiring of individuals by creating
-candidate profiles, conducting collaborative interviews and improving the return
-on investment of your hiring process. As positions are opened in Talent, hiring
-managers can use Attract to collaborate with their hiring and interview team to
-determine the best fit for their position.
-
-Candidates who have accepted offers will be available within core Talent to
-complete the hiring process. This provides a seamless hiring process between the
-hiring manager and HR.
-
-The integration to Talent Attract includes:
-
--   Open positions created in core Talent, displaying in Attract.
-
--   As candidates are interviewed, HR professionals can view metrics regarding
-    candidates.
-
--   Candidates to hire display will in core Talent.
-
-Integration to Talent onboarding 
----------------------------------
-
-The onboarding experience provides an immediate opportunity for a manager to
-engage with their newly hired employee and brings disparate onboarding tasks
-together in a single view. Often, a new employee will receive multiple tasks to
-complete that are ambiguous or are in multiple systems. Furthermore, the
-onboarding process is rarely personalized.
-
-Using onboarding, managers can create a personalized experience with welcome
-messages, videos, introductions to a new mentor, and job-specific information.
-The onboarding application also integrates with core Talent so that an employee
-can view their HR administrative tasks and team-specific tasks in a single
-view. A manager can customize the onboarding experience to fit their needs while
-HR professionals can ensure that the administrative tasks are being completed,
-and the employee has one, personalized onboarding experience.
-
-The integration includes:
-
--   Human resource and manager-created onboarding tasks that display in
-    Onboarding to create a single experience for new employees.
-
--   The employee can complete tasks from within Onboarding or within Employee
-    self-service (ESS).
-
-Manage attachments 
--------------------
-
-Employees can now upload documents from within Employee self-service (ESS) by
-selecting the **Manage Attachments** option on the new **Attachments**
-card. Uploaded documents will be associated with an employee record and
-accessible from that employee’s **ESS** page and the **Worker** page by
-selecting the attachment icon. Furthermore, HR professionals can add documents
-to the employee record and make them visible to employees within their **ESS**
-page. On the employee’s **ESS** page, select the attachment icon in the upper
-right corner. When the restriction is set to **Internal**, the document will not
-be visible to the employee. When the restriction is set to **External**, the
-employee will be able to view the document from their **ESS** page.
-
-Manage attachments has the following enhancements:
-
--   Allow sharing of documents between employees and HR.
-
--   Documents uploaded on the employee form can be marked internal, so the
-    document is not visible to employees.
-
--   Most recent documents are shown in ESS, so an employee can easily view
-    documents shared with them.
-
-Mobile - Company directory and My team mobile workspaces
---------------------------------------------------------
-
-The mobile solution includes two new workspaces to provide a phone experience
-for employees and managers. All employees will have access to the company
-directory as a direct line of contact with others in the organization. Managers
-can view information about their team or any individual within their
-organization.
-
-Company directory mobile workspace provides the following:
-
--   Contact list for all employees in the organization.
-
--   Search for any employee or contractor.
-
--   View public information.
-
--   Call, text, or email individuals from the director.
-
-For more information, see [Company directory mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/company-directory-mobile-workspace).
-
-My team mobile workspace provides the following:
-
--   View your direct reports and all employees in your organization.
-
--   View team members and open position.
-
--   View key information for employees and contractors.
-
--   Send praise.
-
-For more information see [My team mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/manager-self-service-mobile-workspace).
-
-Onboarding
-----------
-
-The onboarding process lets HR professionals create tasks to track the
-onboarding progress of pending employees, as well as recently hired employees.
-Because the onboarding process can vary between positions in a single
-organization, multiple onboarding checklists can be created to fit the
-organization’s hiring process.
-
-Onboarding lets you complete the following tasks:
-
--   Define templates for onboarding.
-
--   Define calendars to apply to tasks based on location or business function.
-
--   Assign checklists at the time of hiring, or after an employee has
-    started. Checklists can be assigned to future-dated hires.
-
--   Analyze past due tasks and identify bottlenecks in the process.
-
--   Assign tasks to employees, positions, managers, and the onboarding employee.
-
--   Provide instructions to all tasks.
-
--   Define “deep links” to drive consumers of tasks directly to the right areas
-    to immediately enter data regarding the new employee without needing to
-    search or filter.
-
--   Ability to re-assign tasks and update due dates. Update checklists
-    throughout the process by marking items as complete, adding new tasks, or
-    removing tasks.
-
--   Update checklists throughout the process by marking items as complete,
-    adding new tasks, or removing tasks.
-
-Pre-employment access 
-----------------------
-
-Sometimes businesses need newly hired workers to have access to their Employee
-self-service (ESS) page before their start date. The pending worker role gives
-users a limited view of ESS prior to their start date so that they can complete
-key tasks. New employees can add personal information, view their benefits, read
-their job details, view the company directory, and complete any questionnaires
-that are assigned to them.
-
-Pre-employment access gives you:
-
--   A limited view of the Employee self-service page.
-
--   Ability to add personal information and view key data.
-
-**Workforce management**
-========================
-
-Analytics and insights through Power BI
----------------------------------------
-
-Gain deeper insight about your most valuable resource, your people, using the
-flexible and comprehensive analysis provided by Power BI. These reports contain
-data visualizations for each area of Talent that help you gain a deeper
-understanding of the human capability within your organization.
-
-Analytics and insights provide the following data and visualizations:
-
--   Benefits management
-
-    -   Benefit plan analysis
-
-    -   Employee group enrollment metrics
-
--   Compensation management
-
-    -   Compensation plan analysis
-
-    -   Compensation analysis
-
-    -   Position pay analysis
-
--   Employee development
-
-    -   Employee skill analysis
-
-    -   Skill profiles
-
-    -   Skill analysis
-
--   Learning
-
-    -   Course and registration analysis
-
-    -   Instructor availability analysis
-
--   Personnel management
-
-    -   People metrics
-
-    -   Headcount and FTE analysis
-
-    -   Workforce demographics
-
-    -   Attrition analysis
-
-    -   Employee milestones

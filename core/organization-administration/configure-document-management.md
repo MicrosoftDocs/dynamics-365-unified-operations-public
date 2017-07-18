@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: sericks
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -112,7 +112,7 @@ There is no difference between document handling and document management. Both t
 
 Document management lets you add notes, documents, and other files to records.
 
-Print management lets you control print settings for selected reports. Print settings include the number of copies, the printer destination, and the multilanguage text that can be included on the report. For more information, see [Document Reporting Services overview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/document-reporting-services).
+Print management lets you control print settings for selected reports. Print settings include the number of copies, the printer destination, and the multilanguage text that can be included on the report. For more information, see [Document Reporting Services overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/document-reporting-services).
 
 ### What is the difference between document types and file types?
 

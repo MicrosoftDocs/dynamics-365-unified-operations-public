@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 202614

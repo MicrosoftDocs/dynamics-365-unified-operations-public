@@ -17,7 +17,7 @@ ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, SalesT
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 121
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 248534
@@ -34,6 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
+[!include[Retail name](../includes/retail-name.md)]
 
 Use the <strong>Item number </strong>field to search for products and product variants when you manually create a sales order line or a purchase order line.  This lets you quickly find product variants when you only have the configuration string or one of the product dimensions available.
 

@@ -17,7 +17,7 @@ ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, Pur
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 11634
@@ -99,9 +99,9 @@ You can copy financial dimensions to document headers or to individual lines of 
 See also
 --------
 
-[Create a purchase agreement (task guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
+[Create a purchase agreement (Task guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
 
-[Create a purchase release order from a purchase agreement (task guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+[Create a purchase release order from a purchase agreement (Task guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
 
 
 

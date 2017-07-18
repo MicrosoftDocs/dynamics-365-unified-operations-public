@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: kfend
+ms.reviewer: kfend
 ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 107013

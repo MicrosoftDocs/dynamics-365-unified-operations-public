@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  WHSRFMenuItem
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: bis
+ms.reviewer: bis
 # ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 269384

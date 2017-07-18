@@ -17,7 +17,7 @@ ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 2234
@@ -114,7 +114,7 @@ To use one of the expenditure reviewers that you set up in a workflow, you must
 See also
 --------
 
-[Create a requisition for consumption (task guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Create a requisition for consumption (Task guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
 [Defining business process workflows for purchase requisitions](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 

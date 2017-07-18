@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 11
+ms.reviewer: margoc
 ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 269234
@@ -36,9 +36,9 @@ ms.dyn365.ops.version: Platform update 3
 
 [!include[upgrade banner](../includes/upgrade-banner.md)]
 
-This topic describes the steps for deploying an upgrade to a non-production sandbox or stand-alone sandbox environment. 
+This topic describes the steps for performing a data upgrade to a Tier 2 or higher sandbox environment.
 
-This topic describes the steps for deploying an upgrade to a non-production sandbox or stand-alone sandbox environment. You do not need to follow this procedure for default sandbox environments that are tied to live production environments. Microsoft will upgrade the default sandbox environments for production sandboxes. For more information see the end to end upgrade process here: [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md).
+In some environments the Microsoft Service Engineering Team (DSE) will execute the data upgrade for you, for more information see the end to end upgrade process here: [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md#scenario-3-upgrade-to-the-most-current-application-update).
 
 ## Prerequisites
 If you have any customizations or ISV solutions you must have already completed [code upgrade](upgrade-latest-update.md#scenario-2-upgrade-your-custom-code) and have your upgraded deployable packages ready in your asset library in Lifecycle Services. We strongly recommend that you perform the data upgrade on a development environment before upgrading in a sandbox environment. It is much faster to make corrections and re-run the process in a development environment, so you can reduce the overall time to upgrade by working in a development environment first.

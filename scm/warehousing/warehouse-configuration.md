@@ -17,7 +17,7 @@ ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfil
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 11554
@@ -120,7 +120,7 @@ To make it easier and quicker to define the actions that are associated with eac
 See also
 --------
 
-[Configure locations in a WMS-enabled warehouse (task guide)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)
+[Configure locations in a WMS-enabled warehouse (Task guide)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)
 
 
 

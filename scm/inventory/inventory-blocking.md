@@ -17,7 +17,7 @@ ms.search.form: InventBlocking, InventQualityOrderTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 2094
@@ -67,11 +67,11 @@ You can specify which inventory statuses are blocking statuses by using the **I
 See also
 --------
 
-[Create and maintain an inventory blocking (task guide)](https://ax.help.dynamics.com/en/wiki/create-and-maintain-an-inventory-blocking/)
+[Create and maintain an inventory blocking (Task guide)](https://ax.help.dynamics.com/en/wiki/create-and-maintain-an-inventory-blocking/)
 
 [Quality management processes](quality-management-processes.md)
 
-[Inspect the quality of goods (task guide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+[Inspect the quality of goods (Task guide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
 
 
 

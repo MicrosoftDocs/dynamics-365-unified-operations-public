@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 51
+ms.reviewer: kfend
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 # Create an on-premises project in Lifecycle Services
-You must use Microsoft Dynamics Lifecycle Services (LCS) to deploy and update an instance of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises). After you purchase a server and user license through the Volume Licensing flow or the Dynamics Purchase List flow, you will receive an email that includes instructions for signing in to LCS. A Microsoft Azure Active Directory (Azure AD) account is a prerequisite for signing in to LCS. See the topic, [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/purchase-on-premises), to create an Azure AD account or use an existing Azure AD account, and then complete all the sign-up steps. You will be redirected to LCS, where an on-premises implementation project will be provisioned for you.
+You must use Microsoft Dynamics Lifecycle Services (LCS) to deploy and update an instance of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises). After you purchase a server and user license through the Volume Licensing flow or the Dynamics Purchase List flow, you will receive an email that includes instructions for signing in to LCS. A Microsoft Azure Active Directory (Azure AD) account is a prerequisite for signing in to LCS. See the topic, [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises), to create an Azure AD account or use an existing Azure AD account, and then complete all the sign-up steps. You will be redirected to LCS, where an on-premises implementation project will be provisioned for you.
 
  [![On-premises implementation project](./media/lbd-proejcts-01.png)](./media/lbd-proejcts-01.png)
 

@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: Application user, IT Pro
 # ms.devlang: 
-# ms.reviewer: sericks
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: 

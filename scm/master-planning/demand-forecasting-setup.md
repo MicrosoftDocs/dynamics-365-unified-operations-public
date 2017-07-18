@@ -17,7 +17,7 @@ ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParamete
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2094
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 72653

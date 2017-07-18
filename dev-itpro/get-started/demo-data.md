@@ -2,7 +2,7 @@
 # required metadata
 
 title: Demo data overview
-description: This article provides an overview of the demo data that is available with Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides an overview of the demo data that is available for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: sericks007
 manager: AnnBe
 ms.date: 07/05/2017
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
+ms.reviewer: sericks
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 56551
@@ -34,18 +34,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+This topic provides an overview of the demo data that is available for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-This article provides an overview of the demo data that is available with Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
 
-Demo data is the base data set that is released with Microsoft Dynamics 365 for Finance and Operations for implementation support and demonstration purposes. The current demo data set supports the following verticals:
+Demo data is the base data set that is released together with Finance and Operations for implementation support and demonstration purposes. The current demo data set supports the following verticals:
 
--   Retail
--   Distribution
--   Service Industries
--   Public Sector
--   Discrete & Process Manufacturing
 
-The demo data set supports 40 languages across 16 countries/regions, and also supports various implementation scenarios. The following table lists the legal entities that are included in the demo data set.
+- Retail
+- Distribution
+- Service Industries
+- Public Sector
+- Discrete & Process Manufacturing
+
+The demo data set supports 40 languages across 16 countries or regions. It also supports various implementation scenarios. The following table lists the legal entities that are included in the demo data set.
 
 | Legal entity | Description                          |
 |--------------|--------------------------------------|
@@ -73,6 +74,7 @@ The demo data set supports 40 languages across 16 countries/regions, and also su
 | USPI         | Contoso Process Industry             |
 | USRT         | Contoso Retail USA                   |
 | USSI         | Contoso Consulting USA               |
+
 
 # Embedded analytics
 Demo data has been updated in five companies to provide better reports on the new embedded analytics within workspace.  Filter the embedded analytics to the following legal entities for the improved report data:
@@ -126,5 +128,6 @@ Access level security is configured but not enabled. This is enabled in the **Co
 
 
 After Access level security has been enabled, you have assign Alica to the role Cost object controller. You can log in as Alica and access the **Cost control** workspace. Alicia can now see her Cost center performance and drill into details of how these was calculated.
+
 
 

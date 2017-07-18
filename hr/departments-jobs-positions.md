@@ -18,7 +18,8 @@ ms.search.form: HcmJob, HcmPosition, OMOperatingUnit
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
@@ -33,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 # Organize your workforce using departments, jobs, and positions
 
 [!include[banner](includes/banner.md)]
+
+[!include[retail name](includes/retail-name.md)]
 
 
 Departments, jobs, and positions are organizational elements that are maintained within Human resources. This topic describes conceptual information about these elements. 

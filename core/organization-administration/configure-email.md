@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure and send email
-description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users. This topic is divided into sections for administrators and users to make it easy to find relevant information.
+description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 268274
@@ -37,14 +37,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users. This topic is divided into sections for administrators and users to make it easy to find relevant information.
 
-In Finance and Operations, both administrators and users set the behavior of the email subsystem.
+In Dynamics 365 for Finance and Operations, Enterprise edition, both administrators and users set the behavior of the email subsystem.
 
 ## Administrator: Email parameters page
 On the **Email parameters** page, note the following settings on the **Email providers** tab.
 
 | Field                     | Description                                                                                                                 |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| **Batch email provider**  | Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. |
+| **Batch email provider**  | Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. The Exchange provider will use the account associated with the batch process. |
 | **Attachment size limit** | Specifies the maximum size of a single email that can be sent via the email subsystem.                                      |
 
 On the **Email parameters** page, note the following settings on the **SMTP settings** tab.
@@ -86,6 +86,7 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 
 ## Administrator: Email Distributor batch process
 Email that is sent directly from the server, without user interaction, via SMTP is sent by the **Email distributor batch** process. That batch process must be started to process the email queue. To start the process, open the **Email distributor batch** pane (**System administration** &gt; **Periodic tasks** &gt; **Email processing** &gt; **Batch**) and turn on **Batch processing**.
+If the Exchange provider is used, then the user account associated with the batch process (usually admin) will be sender.
 
 ## Administrator: User email
 The default email address for each user is pulled from the **Email** field on the **Users** page (**System administration** &gt; **Users** &gt; **Users**). An email address should be specified for each user for sign in, so this field should be populated. Users can override this default if needed.
@@ -104,7 +105,7 @@ When an email is going to be sent, the user will see the **How would you like to
 | Field                                                          | Description                                                                                                                                    |
 |----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Use an email app, such as Outlook**                          | Provides the user with a generated email (.eml) file.                                                                                          |
-| **Use Exchange email server**                                  | Uses the Exchange Server associated with the tenant. The email will be sent using Exchange Web Services (EWS).                                 |
+| **Use Exchange email server**                                  | Uses the Exchange Online server associated with the tenant. The email will be sent using Exchange Web Services (EWS). On-premises Exchange servers are not supported at this time.                                 |
 | **Use the Microsoft Dynamics 365 for Finance and Operations email client** | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP.                                                   |
 | **Do not ask again**                                           | If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open. |
 

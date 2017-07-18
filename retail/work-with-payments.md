@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Payment methods in a call center
