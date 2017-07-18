@@ -31,3 +31,28 @@ ms.dyn365.ops.version: Platform update 9
 ---
 
 # Mobile platform home page
+Add some text here to introduct the mobile platform. It might come from the mobile-platform.md doc.
+
+## Getting started
+[Getting started with the mobile platform](mobile-platform-getting-started.md) Add the getting started section of the mobile-platform.md doc to this file.
+[Mobile platform architecture](mobile-platform-architecture.md) Add what's left of the mobile-platform.md doc to this file.
+
+## Configure a workspace
+[Localize workspaces on the server]
+[Make fields mandatory]
+[Secure workspaces in mobile apps]
+[Display a field as a URL]
+[Use the workspace classe to configure workspaces on the server]
+
+
+## Optimize a workspace
+[Use regular fields to provide counts on the workspace]
+
+## Client APIs
+[Client-side design APIs overview]
+[Client APIs reference]
+
+## Server APIs
+[Server APIs reference (workspace X++ APIs)]
+
+
