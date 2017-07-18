@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Sell and return products outside of an assortment

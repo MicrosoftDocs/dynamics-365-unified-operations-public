@@ -17,7 +17,7 @@ ms.search.form: BOMCostGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: a:2:{s:4:"name";s:23:"Yuyu Charlotte Scheller";s:2:"id";s:0:"";}
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 50871

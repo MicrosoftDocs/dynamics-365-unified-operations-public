@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: Margoc
+ms.reviewer: margoc
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 

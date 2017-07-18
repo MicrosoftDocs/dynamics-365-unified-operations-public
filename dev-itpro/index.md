@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro, Developer
 # ms.devlang: 
-ms.reviewer: 71
+ms.reviewer: yuyus
 
 # ms.tgt_pltfrm: 
 ms.custom: 62303
