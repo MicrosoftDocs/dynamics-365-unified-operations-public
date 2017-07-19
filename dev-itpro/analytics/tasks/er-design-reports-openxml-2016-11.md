@@ -27,14 +27,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Design a configuration for generating reports in OpenXML format for electronic reporting (ER)
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating electronic documents in OPENXML format. This configuration will be used for processing vendor payments.
-
-In this example, you will create a configuration for sample company, Litware, Inc. These steps can be performed in GBSI company.
-
+The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating electronic documents in OPENXML format. This configuration will be used for processing vendor payments.
+
+
+
+In this example, you will create a configuration for sample company, Litware, Inc. These steps can be performed in GBSI company.
+
+
+
 To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure. You must also have an Excel file which will be imported when creating the template. This file can be accessed from:  https://msdynamics.blob.core.windows.net/media/2016/04/SampleVendPaymWsReport.xlsx
 
 

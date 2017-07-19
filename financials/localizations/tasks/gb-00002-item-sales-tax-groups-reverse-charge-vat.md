@@ -27,14 +27,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Set up item sales tax groups for reverse charge VAT (UK)
 
-This task walks you through setting up item sales tax groups, assigning the default values to products and procurements categories subject to reverse charge VAT for the United Kingdom.
-This walkthrough was created using the demo company GBSI.
-This task requires that the following sales tax codes are created for Reverse charge purposes.  
-REV17.5 – positive value
+This task walks you through setting up item sales tax groups, assigning the default values to products and procurements categories subject to reverse charge VAT for the United Kingdom.
+
+This walkthrough was created using the demo company GBSI.
+
+This task requires that the following sales tax codes are created for Reverse charge purposes.  
+
+REV17.5 – positive value
+
 REV-17.5 – negative value
 
 1. Go to Tax > Indirect taxes > Sales tax > Item sales tax groups.

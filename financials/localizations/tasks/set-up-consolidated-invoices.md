@@ -27,14 +27,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Set up consolidated invoices (Japan)
 
-In Japan, consolidated invoices can be enabled to fit the Japanese business practices.
-
-This procedure walks you through setting up consolidated invoice functionality.
-
+In Japan, consolidated invoices can be enabled to fit the Japanese business practices.
+
+
+
+This procedure walks you through setting up consolidated invoice functionality.
+
+
+
 This procedure was created using the demo data company JPMF.
 
 

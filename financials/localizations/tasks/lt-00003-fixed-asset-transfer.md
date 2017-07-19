@@ -27,13 +27,16 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Generate a fixed asset transfer between warehouses document (Lithuania)
 
-If your organization needs to move a fixed asset from one department to another and the two departments are not in the same location, the transfer must be verified by a packing slip. You also need to generate a transfer packing slip if the employee responsible for the fixed asset is changed. Depending on the parameters that are enabled, the packing slip can be numbered automatically or manually.
-This procedure applies only for Lithuanian functionality. 
-The procedure was created using the demo data company USMF and requires changing USMF legal entity primary address to LTU manually before starting. 
+If your organization needs to move a fixed asset from one department to another and the two departments are not in the same location, the transfer must be verified by a packing slip. You also need to generate a transfer packing slip if the employee responsible for the fixed asset is changed. Depending on the parameters that are enabled, the packing slip can be numbered automatically or manually.
+
+This procedure applies only for Lithuanian functionality. 
+
+The procedure was created using the demo data company USMF and requires changing USMF legal entity primary address to LTU manually before starting. 
+
 This procedure is intended for accountants who are responsible for fixed assets.
 
 

@@ -27,16 +27,22 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Create and confirm a recognition test (Japan)
 
-For Japan, impairment is conducted in two main steps. The first step is to test whether an impairment is needed. The second step is to calculate the impairment amount if needed. 
-
-Use this task to learn how to run the two step process in a recognition test and get it ready for posting. 
-
-In order to complete this procedure, the Fixed Asset configuration key must be selected.
-
+For Japan, impairment is conducted in two main steps. The first step is to test whether an impairment is needed. The second step is to calculate the impairment amount if needed. 
+
+
+
+Use this task to learn how to run the two step process in a recognition test and get it ready for posting. 
+
+
+
+In order to complete this procedure, the Fixed Asset configuration key must be selected.
+
+
+
 This procedure was created using the demo data company JPMF.
 
 1. Go to Fixed assets > Periodic tasks > Impairment recognition (Method I: on a bigger group than CGU).

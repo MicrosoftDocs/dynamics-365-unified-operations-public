@@ -27,13 +27,16 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Research or resolve exceptions
 
-Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page. You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow. 
-Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal. 
-Invoice matching validation does not use vendor invoice policies, but is instead set up in the Accounts payable parameters page.
+Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page. You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow. 
+
+Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal. 
+
+Invoice matching validation does not use vendor invoice policies, but is instead set up in the Accounts payable parameters page.
+
 This recording uses the USMF demo company. The accounts payable manager or accounting manager role would perform these steps. Before you begin, make sure that the Invoice matching configuration key is selected.
 
 

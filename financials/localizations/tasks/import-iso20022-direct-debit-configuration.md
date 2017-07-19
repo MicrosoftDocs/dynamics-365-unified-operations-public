@@ -27,14 +27,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Import ISO20022 direct debit configuration
 
-This procedure demonstrates how to import a customer payment electronic reporting configuration. This procedure uses the ISO 20022 direct debit format as an example. 
-
-This procedure was created using the demo data company DEMF but you can use any demo data company for this purpose.
-
+This procedure demonstrates how to import a customer payment electronic reporting configuration. This procedure uses the ISO 20022 direct debit format as an example. 
+
+
+
+This procedure was created using the demo data company DEMF but you can use any demo data company for this purpose.
+
+
+
 This is the first of five procedures that demonstrate the customer payment process using electronic reporting configurations.
 
 1. Go to Organization administration > Workspaces > Electronic reporting.

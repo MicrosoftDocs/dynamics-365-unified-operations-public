@@ -27,14 +27,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Customer and vendor payment formats (Norway)
 
-This task walks you through setting up and maintaining Norwegian payment IDs. 
-
-A payment identification (ID) is a unique identifier for customer payments that are settled electronically. It can be divided into different parts, such as the customer account number, invoice number, prefix, suffix, and external reference. When you receive a payment from a customer, the payment ID identifies the payment transaction for a sales invoice that is received from a bank.
-
+This task walks you through setting up and maintaining Norwegian payment IDs. 
+
+
+
+A payment identification (ID) is a unique identifier for customer payments that are settled electronically. It can be divided into different parts, such as the customer account number, invoice number, prefix, suffix, and external reference. When you receive a payment from a customer, the payment ID identifies the payment transaction for a sales invoice that is received from a bank.
+
+
+
 This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.
 
 

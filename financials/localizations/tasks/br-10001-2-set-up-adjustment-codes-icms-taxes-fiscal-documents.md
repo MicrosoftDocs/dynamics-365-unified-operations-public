@@ -27,11 +27,12 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Set up adjustment codes for ICMS taxes on fiscal documents (Brazil)
 
-You can create tax adjustment codes to manually adjust ICMS tax amounts on fiscal documents.
+You can create tax adjustment codes to manually adjust ICMS tax amounts on fiscal documents.
+
 When the SPED Fiscal file is generated, record C197 includes the information about manual tax adjustments over the fiscal document's ICMS tax amount. These adjustments on fiscal documents might be required because of deferral, suspension, differences in tax rates, anticipation, and other situations of exception in ICMS tax. This task uses the BRMF demo company.
 
 1. Go to Fiscal books > Setup > Tax adjustment codes > Adjustment and information for fiscal documents.

@@ -27,14 +27,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Set up impairment accounting common parameters and posting profile (Japan)
 
-Use this task to learn how to define impairment accounting common parameters and posting profiles.
-
-To complete this task, the Fixed Assets configuration key must be selected.
-
+Use this task to learn how to define impairment accounting common parameters and posting profiles.
+
+
+
+To complete this task, the Fixed Assets configuration key must be selected.
+
+
+
 This procedure uses the JPMF demo company data.
 
 

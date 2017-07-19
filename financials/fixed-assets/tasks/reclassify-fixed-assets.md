@@ -27,14 +27,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Reclassify fixed assets
 
-To reclassify a fixed asset, you must transfer it to a new fixed asset group or assign a new fixed asset number to it in the same group. 
-When a fixed asset is reclassified:
-• All value models for the existing fixed asset are created for the new fixed asset. Any information that was set up for the original fixed asset is copied to the new fixed asset. The status of the value models for the original fixed asset is Closed. 
-• The new value models of the new fixed asset contain the date of the reclassification in the Acquisition date field. The date in the Depreciation run date field is copied from the original asset information. If the depreciation has already started, the Date when depreciation was last run field displays the date of the reclassification. 
+To reclassify a fixed asset, you must transfer it to a new fixed asset group or assign a new fixed asset number to it in the same group. 
+
+When a fixed asset is reclassified:
+
+• All value models for the existing fixed asset are created for the new fixed asset. Any information that was set up for the original fixed asset is copied to the new fixed asset. The status of the value models for the original fixed asset is Closed. 
+
+• The new value models of the new fixed asset contain the date of the reclassification in the Acquisition date field. The date in the Depreciation run date field is copied from the original asset information. If the depreciation has already started, the Date when depreciation was last run field displays the date of the reclassification. 
+
 • The existing fixed asset transactions for the original fixed asset are canceled and regenerated for the new fixed asset.
 
 1. Go to Fixed assets > Periodic tasks > Reclassification.

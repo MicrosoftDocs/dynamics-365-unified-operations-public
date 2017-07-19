@@ -27,13 +27,16 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Add a predecessor to a production flow activity
 
-In a production flow version, all activities must be sequenced. An activity can have one or multiple predecessors or successors. 
-This procedure shows how to associate a predecessor to an activity. 
-To perform this task, you need a production flow that has the Draft version with at least two activities that can be connected. 
+In a production flow version, all activities must be sequenced. An activity can have one or multiple predecessors or successors. 
+
+This procedure shows how to associate a predecessor to an activity. 
+
+To perform this task, you need a production flow that has the Draft version with at least two activities that can be connected. 
+
 To learn more, read the white paper "Production flows and activities in lean manufacturing."
 
 

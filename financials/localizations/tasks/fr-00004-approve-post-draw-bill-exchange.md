@@ -27,13 +27,16 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Approve and post draw bill of exchange (France)
 
-This procedure walks you through approval and posting Bill of Exchange.
-This procedure was created using the demo data company FRSI. 
-This functionality is available for legal entities whose primary address is in France.
+This procedure walks you through approval and posting Bill of Exchange.
+
+This procedure was created using the demo data company FRSI. 
+
+This functionality is available for legal entities whose primary address is in France.
+
 
 
 1. Go to Accounts receivable > Payments > Bill of exchange > Draw bill of exchange journal.

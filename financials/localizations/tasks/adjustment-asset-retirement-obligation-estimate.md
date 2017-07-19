@@ -27,16 +27,22 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Adjust an asset retirement obligation estimate (Japan)
 
-For Japan, the initial estimate of the asset retirement obligations (ARO) can be adjusted. 
-
-Use this procedure to learn how to adjust the ARO amount.
-
-To complete this procedure, the Fixed Assets configuration key must be selected.
-
+For Japan, the initial estimate of the asset retirement obligations (ARO) can be adjusted. 
+
+
+
+Use this procedure to learn how to adjust the ARO amount.
+
+
+
+To complete this procedure, the Fixed Assets configuration key must be selected.
+
+
+
 This task was created using the demo data company JPMF.
 
 

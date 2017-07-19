@@ -27,16 +27,22 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Inquire on asset retirement obligation-related transactions (Japan)
 
-For Japan, transactions and amounts of asset retirement obligations (ARO) need to be reported separately from the underlying fixed assets. 
-
-Use this task to learn how to view the ARO-specific amounts and transactions. 
-
-In order to complete this task, the Fixed Assets configuration key must be selected.
-
+For Japan, transactions and amounts of asset retirement obligations (ARO) need to be reported separately from the underlying fixed assets. 
+
+
+
+Use this task to learn how to view the ARO-specific amounts and transactions. 
+
+
+
+In order to complete this task, the Fixed Assets configuration key must be selected.
+
+
+
 This task uses the JPMF demo company data.
 
 

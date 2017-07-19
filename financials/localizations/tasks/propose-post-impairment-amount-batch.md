@@ -27,14 +27,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Propose and post the impairment amount by batch (Japan)
 
-This task walks you through proposing and posting the impairment amount by batch.
-
-Before you can complete this task, you must have an impairment test confirmed and saved.
-
+This task walks you through proposing and posting the impairment amount by batch.
+
+
+
+Before you can complete this task, you must have an impairment test confirmed and saved.
+
+
+
 This task uses the JPMF demo company data.
 
 1. Go to Fixed assets > Periodic tasks > Impairment proposal.

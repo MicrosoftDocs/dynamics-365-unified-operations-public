@@ -27,14 +27,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Run the recognition test and calculate the impairment amount on individual assets (Japan)
 
-This task walks you through running the recognition test and calculating the impairment amount on individual assets.
-
-Before you can complete this task, you must maintain impairment indicators on individual assets.
-
+This task walks you through running the recognition test and calculating the impairment amount on individual assets.
+
+
+
+Before you can complete this task, you must maintain impairment indicators on individual assets.
+
+
+
 This task was created using the demo data company JPMF.
 
 

@@ -27,16 +27,22 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Create and post a project invoice for a public sector customer (Denmark)
 
-This task walks you through creating and posting a project invoice for a customer using OIOUBL electronic invoicing. 
-
-This task was created using the demo data company USMF with the country/region of legal entity primary address updated to Denmark.
-
-This is the sixth procedure out of six illustrating end to end process of generating e-invoices using electronic reporting configurations. It is based on OIOUBL e-invoice example which is common for Denmark, Austria and Norway. In order to find minor differences for other country specific e-Invoice implementations, like Spanish or Italian, please refer to available WIKI articles.
-
+This task walks you through creating and posting a project invoice for a customer using OIOUBL electronic invoicing. 
+
+
+
+This task was created using the demo data company USMF with the country/region of legal entity primary address updated to Denmark.
+
+
+
+This is the sixth procedure out of six illustrating end to end process of generating e-invoices using electronic reporting configurations. It is based on OIOUBL e-invoice example which is common for Denmark, Austria and Norway. In order to find minor differences for other country specific e-Invoice implementations, like Spanish or Italian, please refer to available WIKI articles.
+
+
+
 Before you can complete this procedure, you must complete the following procedures: ‘Import OIOUBL electronic invoicing electronic reporting configurations’, ‘Set up OIOUBL electronic invoicing’ and ‘Set up a customer account for OIOUBL electronic invoicing’.
 
 

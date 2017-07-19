@@ -27,11 +27,12 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Create and validate journals
 
-This task guide creates and validates journals and journal lines. This tasks uses the USMF demo company.  
+This task guide creates and validates journals and journal lines. This tasks uses the USMF demo company.  
+
 
 
 1. Go to General ledger > Journal entries > General journals.

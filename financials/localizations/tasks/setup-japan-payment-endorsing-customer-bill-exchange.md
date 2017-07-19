@@ -27,12 +27,14 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Set up Japan payment by endorsing a customer bill of exchange (Japan)
 
-This task walks you through setting up payments by endorsing a customer bills of exchange for Japan.
-
+This task walks you through setting up payments by endorsing a customer bills of exchange for Japan.
+
+
+
 This task was recorded using the demo data company JPMF.
 
 

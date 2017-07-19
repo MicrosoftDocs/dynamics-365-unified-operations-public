@@ -27,16 +27,22 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Use disassemble list for fixed assets (Japan)
 
-In Japan, you can transfer a component of a fixed asset to inventory. 
-
-This task walks you through using the disassembly list to write down the fixed asset, and create the inventory at the same time.
-
-Before you can complete this task, you must complete the tasks in "Use assemble list of a fixed asset" first. 
-
+In Japan, you can transfer a component of a fixed asset to inventory. 
+
+
+
+This task walks you through using the disassembly list to write down the fixed asset, and create the inventory at the same time.
+
+
+
+Before you can complete this task, you must complete the tasks in "Use assemble list of a fixed asset" first. 
+
+
+
 This task was created using the demo data company JPMF.
 
 

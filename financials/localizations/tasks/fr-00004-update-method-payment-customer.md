@@ -27,14 +27,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Update method of payment on customer (France)
 
-This procedure walks you through adding a bank account to a customer record in France and updating a method of payment for the same customer.
-
-Before you can complete this procedure, you must import the following electronic reporting configurations: payments.initial.version.xml and BillsOfExchangeRemittance_FR.xml.
-
+This procedure walks you through adding a bank account to a customer record in France and updating a method of payment for the same customer.
+
+
+
+Before you can complete this procedure, you must import the following electronic reporting configurations: payments.initial.version.xml and BillsOfExchangeRemittance_FR.xml.
+
+
+
 This procedure was created using the demo data company FRSI.
 
 1. Go to Accounts receivable > Customers > All customers.

@@ -27,12 +27,14 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Assign a payment slip format to a customer account (Denmark)
 
-This procedure walks you through setting up the payment slip attachment format for a selected customer.
-This procedure was created using the demo data company DEMF. 
+This procedure walks you through setting up the payment slip attachment format for a selected customer.
+
+This procedure was created using the demo data company DEMF. 
+
 This functionality is available for legal entities whose primary address is in Denmark.
 
 1. Go to Accounts receivable > Customers > All customers.

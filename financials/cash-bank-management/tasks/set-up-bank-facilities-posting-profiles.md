@@ -27,13 +27,16 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Set up bank facilities and posting profiles for letters of guarantee
 
-This task creates a Bank facility and posting profile that is needed to process a letter of guarantee.
-
-This task uses the USMF demo company. 
+This task creates a Bank facility and posting profile that is needed to process a letter of guarantee.
+
+
+
+This task uses the USMF demo company. 
+
 
 
 

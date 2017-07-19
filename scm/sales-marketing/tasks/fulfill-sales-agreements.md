@@ -27,11 +27,12 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Fulfill sales agreements
 
-This procedure shows you how to fulfill a sales agreement by associating sales orders with it. You can run this procedure in demo data company USMF or on your own data. Before starting this guide, make sure you have an effective sales agreement of type "Product value commitment". Alternatively, you can run the task guide called "Create sales agreements".  
+This procedure shows you how to fulfill a sales agreement by associating sales orders with it. You can run this procedure in demo data company USMF or on your own data. Before starting this guide, make sure you have an effective sales agreement of type "Product value commitment". Alternatively, you can run the task guide called "Create sales agreements".  
+
 
 
 

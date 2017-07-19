@@ -27,13 +27,16 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Periodic settlement of over and under depreciation (Japan)
 
-Use this task to learn how to calculate and record depreciation expense for deductible expense.
-
-This task uses the JPMF demo company data.
+Use this task to learn how to calculate and record depreciation expense for deductible expense.
+
+
+
+This task uses the JPMF demo company data.
+
 
 
 

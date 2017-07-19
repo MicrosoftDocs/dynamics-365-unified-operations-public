@@ -27,11 +27,12 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Complete basic setup of a released product master
 
-This procedure shows how to complete the minimum setup that is required before the product master can be used in BOM versions.
+This procedure shows how to complete the minimum setup that is required before the product master can be used in BOM versions.
+
 This is the third procedure out of eight which explains how to build combinations for dimension-based configuration. The demo data company used to create this procedure is USMF.
 
 1. Go to Product information management > Products > Released products.

@@ -27,14 +27,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Generate consumption tax report (Japan)
 
-This procedure walks you through generating the Japan consumption tax report.
-
-This procedure was created using the demo data company JPMF.
-
+This procedure walks you through generating the Japan consumption tax report.
+
+
+
+This procedure was created using the demo data company JPMF.
+
+
+
 
 
 1. Go to Tax > Declarations > Sales tax > Japanese sales tax report.

@@ -27,12 +27,14 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Select data model definition while creating format for electronic reporting (ER)
 
-To complete the steps in this procedure, you must first complete the procedure, ER Create a configuration provider and mark it as active. 
-This procedure shows how a model’s root item can be selected as a data model definition for inserting an Electronic reporting (ER) format configuration that is designed to generate electronic documents. In this procedure, you will add a new ER format configuration for the sample company Litware, Inc. 
+To complete the steps in this procedure, you must first complete the procedure, ER Create a configuration provider and mark it as active. 
+
+This procedure shows how a model’s root item can be selected as a data model definition for inserting an Electronic reporting (ER) format configuration that is designed to generate electronic documents. In this procedure, you will add a new ER format configuration for the sample company Litware, Inc. 
+
 This procedure is intended for users who have the System administrator or Electronic reporting developer role assigned to them. The steps can be completed by using any dataset.
 
 1. Go to Organization administration > Workspaces > Electronic reporting.

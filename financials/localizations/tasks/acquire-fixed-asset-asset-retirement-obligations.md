@@ -27,16 +27,22 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Acquire a fixed asset with asset retirement obligations (Japan)
 
-For Japan, the asset retirement obligation (ARO) is discounted to present value, and added to the acquisition cost of the fixed asset. 
-
-Use this task to learn how to acquire a fixed asset with ARO. 
-
-In order to complete this task, the Fixed Assets configuration key must be selected.
-
+For Japan, the asset retirement obligation (ARO) is discounted to present value, and added to the acquisition cost of the fixed asset. 
+
+
+
+Use this task to learn how to acquire a fixed asset with ARO. 
+
+
+
+In order to complete this task, the Fixed Assets configuration key must be selected.
+
+
+
 This task uses the JPMF demo company data.
 
 1. Go to Fixed assets > Asset retirement obligations > Fixed assets journal.

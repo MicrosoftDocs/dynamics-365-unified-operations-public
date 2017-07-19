@@ -27,13 +27,16 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Create process activities for lean manufacturing
 
-Create a process activity for lean manufacturing. 
-Prerequisites: 
-1. A production flow and version that is not active must be created.
+Create a process activity for lean manufacturing. 
+
+Prerequisites: 
+
+1. A production flow and version that is not active must be created.
+
 2. A work cell must be created.
 
 

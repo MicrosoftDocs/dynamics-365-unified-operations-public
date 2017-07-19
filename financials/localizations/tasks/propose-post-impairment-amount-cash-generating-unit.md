@@ -27,17 +27,24 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Propose and post the impairment amount on a cash generating unit (Japan)
 
-For Japan, after the calculation of the impairment amount, you can propose and post it in a fixed asset journal.
-
-This procedure walks you through proposing and posting impairment amounts that are recognized and calculated on cash generating unit. 
-
-In order to complete this task, the  Fixed Asset configuration key must be selected.
-Also, you will need to create and confirm a recognition test before running this task. 
-
+For Japan, after the calculation of the impairment amount, you can propose and post it in a fixed asset journal.
+
+
+
+This procedure walks you through proposing and posting impairment amounts that are recognized and calculated on cash generating unit. 
+
+
+
+In order to complete this task, the  Fixed Asset configuration key must be selected.
+
+Also, you will need to create and confirm a recognition test before running this task. 
+
+
+
 This procedure was created using the demo data company JPMF.
 
 1. Go to Fixed assets > Journal entries > Fixed assets journal.

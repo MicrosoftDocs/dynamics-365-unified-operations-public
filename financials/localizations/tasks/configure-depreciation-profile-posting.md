@@ -27,14 +27,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Configure depreciation profile and posting profile for additional depreciation (Japan)
 
-Use this procedure to learn how to configure a depreciation profile and a posting profile for special depreciation.
-In Japan, special depreciation is permitted under certain conditions. It is treated as extraordinary depreciation. 
-In order to complete this procedure, the Fixed Assets configuration key must be selected.
-This procedure was created using the demo data company JPMF.
+Use this procedure to learn how to configure a depreciation profile and a posting profile for special depreciation.
+
+In Japan, special depreciation is permitted under certain conditions. It is treated as extraordinary depreciation. 
+
+In order to complete this procedure, the Fixed Assets configuration key must be selected.
+
+This procedure was created using the demo data company JPMF.
+
 
 
 

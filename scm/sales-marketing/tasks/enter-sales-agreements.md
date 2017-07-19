@@ -27,11 +27,12 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Enter sales agreements
 
-This procedure shows you how to create a sales agreement that commits one of your customers to buy a product for an
+This procedure shows you how to create a sales agreement that commits one of your customers to buy a product for an
+
 agreed amount over time in exchange for special discounts. You can run this procedure in demo data company USMF or on your own data.
 
 

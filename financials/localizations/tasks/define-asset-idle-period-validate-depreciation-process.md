@@ -27,15 +27,20 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Define asset idle period and validate depreciation process (Japan)
 
-Use this task to learn how to define fixed asset idle period. 
-Validate profile and proposal.
-
-In order to complete this task, the Fixed Assets configuration key must be selected.
-
+Use this task to learn how to define fixed asset idle period. 
+
+Validate profile and proposal.
+
+
+
+In order to complete this task, the Fixed Assets configuration key must be selected.
+
+
+
 This task uses the JPMF demo company data.
 
 

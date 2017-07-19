@@ -27,14 +27,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Reopen and edit a customer consolidated invoice (Japan)
 
-In Japan, when you miss an invoice during the consolidation process, you will need to reopen the consolidated invoice to add the missed invoice. 
-
-This procedure walks you through reopening a confirmed consolidated invoice and modifying it. You must have a confirmed consolidated invoice before you can complete procedure.
-
+In Japan, when you miss an invoice during the consolidation process, you will need to reopen the consolidated invoice to add the missed invoice. 
+
+
+
+This procedure walks you through reopening a confirmed consolidated invoice and modifying it. You must have a confirmed consolidated invoice before you can complete procedure.
+
+
+
 This procedure was created using the demo data company JPMF.
 
 

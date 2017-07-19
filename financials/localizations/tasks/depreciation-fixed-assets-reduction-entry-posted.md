@@ -27,14 +27,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Depreciate fixed assets with reduction entry posted (Japan)
 
-Use this task to learn how to run fixed asset depreciation with reduction entries
-
-In order to complete this task, the Fixed Asset configuration key must be selected.
-
+Use this task to learn how to run fixed asset depreciation with reduction entries
+
+
+
+In order to complete this task, the Fixed Asset configuration key must be selected.
+
+
+
 This task was created using the JPMF demo data company.
 
 1. Go to Fixed assets > Journal entries > Fixed assets journal.

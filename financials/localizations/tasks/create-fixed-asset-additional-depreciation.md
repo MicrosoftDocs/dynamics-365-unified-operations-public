@@ -27,16 +27,22 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Create a fixed asset with additional depreciation (Japan)
 
-In Japan, a fixed asset is permitted to post an additional depreciation amount, under certain conditions. 
-
-Use this procedure to learn how to create a fixed asset with additional depreciation profile.
-
-In order to complete this procedure, the Fixed Assets configuration key must be selected.
-
+In Japan, a fixed asset is permitted to post an additional depreciation amount, under certain conditions. 
+
+
+
+Use this procedure to learn how to create a fixed asset with additional depreciation profile.
+
+
+
+In order to complete this procedure, the Fixed Assets configuration key must be selected.
+
+
+
 This was created using the demo data company JPMF.
 
 

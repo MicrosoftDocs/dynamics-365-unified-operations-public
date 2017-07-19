@@ -27,14 +27,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Import OIOUBL electronic invoicing configurations (Denmark)
 
-This procedure shows how to import OIOUBL electronic invoice configurations. 
-
-This task was created using the demo data company USMF with the country/region of legal entity primary address updated to Denmark.
-
+This procedure shows how to import OIOUBL electronic invoice configurations. 
+
+
+
+This task was created using the demo data company USMF with the country/region of legal entity primary address updated to Denmark.
+
+
+
 This is the first of six tasks that demonstrate the process of generating e-invoices using electronic reporting configurations. This task uses the OIOUBL e-invoice example, which is common for Denmark, Austria, and Norway.
 
 1. Go to Organization administration > Workspaces > Electronic reporting.

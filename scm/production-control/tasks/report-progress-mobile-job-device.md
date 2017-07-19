@@ -27,12 +27,14 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Report progress on a mobile job device
 
-This procedure shows you how to start and report progress on a production job in the job device registration form.
-
+This procedure shows you how to start and report progress on a production job in the job device registration form.
+
+
+
 To be able to run this procedure you must have the System administator or Machine Operator role associated with the user account.
 
 1. Go to Production control > Manufacturing execution > Job card device.

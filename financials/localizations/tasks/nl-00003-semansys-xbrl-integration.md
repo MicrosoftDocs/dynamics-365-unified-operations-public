@@ -27,11 +27,12 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Semansys XBRL integration (Netherlands)
 
-This procedure walks you through using Dutch functionality to export financial data in the XML format. This procedure was created using the demo data company DEMF with a legal entity primary address updated to be in the Netherlands.
+This procedure walks you through using Dutch functionality to export financial data in the XML format. This procedure was created using the demo data company DEMF with a legal entity primary address updated to be in the Netherlands.
+
 Note: Importing Dutch XBRL integration model and Semansys XBRL (NL) electronic reporting configurations is a prerequisite.
 
 1. Go to General ledger > Periodic tasks > Export financial data to XBRL.

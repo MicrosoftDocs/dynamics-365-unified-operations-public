@@ -27,12 +27,14 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Generate an EU sales list report
 
-This procedure walks you through generating the EU sales list report. This includes transferring intra-community trade transactions to the EU sales list and running the report. This  procedure also includes creating an intra-community trade transaction for demo purposes. For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.
-This procedure applies to all European countries/regions. The procedure was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region. The procedure also uses Portugal as an exemplar EU country/region. Before you can complete this procedure, you must configure EU sales list reporting.
+This procedure walks you through generating the EU sales list report. This includes transferring intra-community trade transactions to the EU sales list and running the report. This  procedure also includes creating an intra-community trade transaction for demo purposes. For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.
+
+This procedure applies to all European countries/regions. The procedure was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region. The procedure also uses Portugal as an exemplar EU country/region. Before you can complete this procedure, you must configure EU sales list reporting.
+
 This procedure is intended for accountants.
 
 

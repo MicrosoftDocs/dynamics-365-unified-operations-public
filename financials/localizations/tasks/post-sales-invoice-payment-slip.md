@@ -27,12 +27,14 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Post a sales invoice with a payment slip (Denmark)
 
-This procedure walks you through posting a free text invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment.
-Before you can complete this procedure, you must first set up a payment slip formats and set up payment slips for customer invoices. 
+This procedure walks you through posting a free text invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment.
+
+Before you can complete this procedure, you must first set up a payment slip formats and set up payment slips for customer invoices. 
+
 This procedure was created using the demo data company DEMF. This functionality is available for legal entities whose primary address is in Denmark.
 
 1. Go to Accounts receivable > Orders > All sales orders.

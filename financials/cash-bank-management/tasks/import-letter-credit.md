@@ -27,11 +27,12 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[task guide banner](.../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Import a letter of credit
 
-This procedure walks through the process of importing a letter of credit. The following must be set up before completing this procedure: bank facilities, posting profiles, a bank facility agreement and vendor bank details.
+This procedure walks through the process of importing a letter of credit. The following must be set up before completing this procedure: bank facilities, posting profiles, a bank facility agreement and vendor bank details.
+
 This procedure uses the USMF demo company.
 
 
