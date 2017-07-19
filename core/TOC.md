@@ -1446,7 +1446,7 @@
 ##### [Use regular fields to provide counts on the workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/using-regular-fields-for-count?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Client-side APIs](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/design-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Client APIs reference](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis-reference?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Server APIs (workspace X++ APIs)](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-workspace-server-apis?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Server APIs (workspace X++ APIs)](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-workspace-server-apis?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [Continuous delivery home page](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-home-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Development and continuous delivery FAQ](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-faq?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
