@@ -6,7 +6,6 @@ description: This article explains how an IT Pro can set up Retail activation ac
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
-
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -16,7 +15,6 @@ ms.technology:
 
 ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPermission
 # ROBOTS: 
-
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
@@ -38,12 +36,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 [!include[banner](includes/banner.md)]
 
 
-
 This article explains how an IT Pro can set up Retail activation accounts for retail workers to activate Modern POS or Cloud POS devices.
 
-Setting up a device activation account for a single worker
-----------------------------------------------------------
-
+## Setting up a device activation account for a single worker
 This procedure should be completed before you activate Cloud POS.
 
 1.  In Microsoft Dynamics 365 for Retail, from the **Workers** page, open the **Worker details** page for the worker to assign AAD deviceactivation privileges to. Click **Edit**.
@@ -53,7 +48,7 @@ This procedure should be completed before you activate Cloud POS.
     -   UPN
     -   External identifier
 
-4.  You can update the **External identity** fields by using an existing AAD account or creating a new AAD account. To update the fields, access the **External identity** options from the **Retail** main menu (**Retail** &gt; ****Associate existing **identity** or **Retail** &gt; **Create new identity**).
+4.  You can update the **External identity** fields by using an existing AAD account or creating a new AAD account. To update the fields,  access the **External identity** options from the **Retail** main menu (**Retail** &gt; **Associate existing identity** or **Retail** &gt; **Create new identity**).
 5.  To use an existing AAD account, select **Retail** &gt;** Associate existing identity**. In the slider, click the AAD account that has the correct name, and then click **OK**. The AAD account that is associated with that name and alias is the user's Activation account for Modern POS.
 6.  Complete and save the changes on the **Workers** page, and then refresh the page. The section that contains external identity information should be updated with the new information. The mapped AAD account is now your Activation account for Cloud POS and Modern POS. This account is mapped to a worker for the required POS permissions. You can use this AAD account for Modern POS or Cloud POS activation.
 7.  The Create external identity feature creates a new AAD account for you by using the alias that you enter. To update the fields,access the **External identity** options from the **Retail** main menu (**Retail** &gt; **Create new identity**).
@@ -83,12 +78,8 @@ Before handing an activation account to a worker, an IT Pro must run the Validat
 4.  The AAD account to map must belong to the same tenant.
 5.  To map the worker to the AAD account, sign in to HQ by using the Admin account for Microsoft Dynamics Lifecycle Services (LCS).
 6.  Make sure that the worker is set up as a Dynamics 365 for Retail user in the Manager role (checked by validation).
-7.  Make sure that the channel data is present in channel DB
-8.  Set up the hardware profile under **Registers &gt; Register** (checked by validation).
-9. Make sure that the register and store have a screen layout (checked by validation).
+7.  Make sure that the channel data is present in the channel database.
+8.  Set up the hardware profile under **Registers**  &gt; **Register** (checked by validation).
+9.  Make sure that the register and store have a screen layout (checked by validation).
 10. Make sure that a primary address is set up for the legal entity.
-11. 14. Make sure that the electronic funds transfer (EFT) configuration value is present.
-
-
-
-
+11. Make sure that the electronic funds transfer (EFT) configuration value is present.
