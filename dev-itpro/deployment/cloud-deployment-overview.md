@@ -39,8 +39,8 @@ Microsoft assumes that all customers will follow a lifecycle similar to the foll
 - Evaluate
 - Develop customizations, if needed
 - Install and test customizations and partner solutions on a tier-1 sandbox (Development or test environment) 
-- Test customizations and partner solutions on a tier-2 sandbox environment
-- Deploy customizations to a production environment with high availability
+- Test customizations, partner solutions and data configuration on a tier-2 sandbox environment
+- Deploy customizations and data configurations to a production environment with high availability
 
 At some phases of a project, you may have all of the environments live at once. For more information, about the default licenses and tiers that are available, see the [Dynamics 365 Licensing Guide](http://download.microsoft.com/documents/en-us/dynamics/pricing/Dynamics_365_Enterprise_edition_Licensing_Guide.pdf).
 
@@ -57,7 +57,7 @@ Here's how the lifecycle maps to the available environments.
 
 | Lifecycle phase               | Environment                               | Subscription                                        |
 |-------------------------------|-------------------------------------------|-----------------------------------------------------|
-| Evaluation and analysis       | Demo, one-box                             | Customer or partner subscription                               |
+| Evaluation and analysis       | Demo, one-box                             | Customer or partner subscription.                                |
 | Customize                     | Dev/build, one-box                        | Microsoft subscription, partner/customer subscription, or local VM
 | User acceptance testing (UAT) | Tier-2 sandbox, multi-box environment | Microsoft subscription                              |
 | Go live                       | Production, High Availability multi-box environment                    | Microsoft subscription                              |
@@ -89,28 +89,13 @@ Only primary data stores are supported by replication. This means that some Fina
 Finance and Operations can be deployed into different Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With Finance and Operations, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location.
 
 **Important:** Regardless of where customer data is stored, Microsoft does not control or limit the locations from which customers or their end-users may access it.
-For more information, see [Where your Finance and Operations data is stored](https://www.microsoft.com/en-us/trustcenter/privacy/dynamics365-operations-location). 
-
-## Supported deployment scenarios
-### Deploy a demo environment
-A demo environment includes only Microsoft demo data. You can use a demo environment to explore default features and functionality. For more information, see [Deploy a demo environment](deploy-demo-environment.md).
-
-### Test on a sandbox
-The following topics provide information about setting up a sandbox for testing. 
-
-#### Move your customizations to a sandbox
-- [Create a deployable package of your models in order to apply it to a runtime environment](create-apply-deployable-package.md)
-- [Apply a deployable package to a Finance and Operations environment](apply-deployable-package-system.md)
-- [Install a deployable package](../install-deployable-package.md)
-
-To migrate your code to Dynamics 365 for Operations, use the “Migrate and Create Dynamics 365 for Operations Solutions” methodology in Lifecycle Services.
-
-#### Load data in a sandbox
-- [Develop an entity for data migration](data-entities/develop-entity-for-data-migration.md)
-    
-## Move to production
+For more information, see [Where your Finance and Operations data is stored](https://www.microsoft.com/en-us/trustcenter/privacy/dynamics365-operations-location).
 
 ## Frequently asked questions
+
+### How do I deploy a demo environment
+A demo environment includes only Microsoft demo data. You can use a demo environment to explore default features and functionality. For more information, see [Deploy a demo environment](deploy-demo-environment.md).
+
 ### How do I move my customizations between environments?
 To move customizations from a development to a sandbox or production environment, see [Create a deployable package of your models in order to apply it to a runtime environment](../deployment/create-apply-deployable-package.md)
 
