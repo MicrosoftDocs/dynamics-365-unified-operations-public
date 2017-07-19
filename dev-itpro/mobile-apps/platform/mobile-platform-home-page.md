@@ -49,7 +49,7 @@ Add some text here to introduct the mobile platform. It might come from the mobi
 
 [Display a field as a URL](scenarios/show-field-as-url.md)
 
-[Use the workspace classe to configure workspaces on the server](scenarios/workspace-classes.md)
+[Use the workspace classes to configure workspaces on the server](scenarios/workspace-classes.md)
 
 ## Optimize a workspace
 [Use regular fields to provide counts on the workspace](scenarios/using-regular-fields-for-count.md)

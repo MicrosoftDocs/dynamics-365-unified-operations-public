@@ -1,3 +1,35 @@
+---
+# required metadata
+
+title: Use regular fields to provide counts on the workspace
+description: 
+author: makhabaz
+manager: AnnBe
+ms.date: 07/01/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: robinr
+ms.search.scope: Operations, Platform
+# ms.tgt_pltfrm: 
+ms.custom: 255544
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: makhabaz
+ms.search.validFrom: 2017-07-20
+ms.dyn365.ops.version: Platform update 3
+
+---
+
 # Using regular fields to provide counts on the workspace
 
 Using pageLink control for displaying counts on workspaces can be slow as it tries to load the target page and then count the number of rows. Also as we have a limit on total number of rows retrieved this can make the count wrong if the expected number is higher than the threshold.
