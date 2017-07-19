@@ -1,3 +1,36 @@
+---
+# required metadata
+
+title: Client-side design APIs overview
+description: 
+author: makhabaz
+manager: AnnBe
+ms.date: 07/01/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: robinr
+ms.search.scope: Operations, Platform
+# ms.tgt_pltfrm: 
+ms.custom: 255544
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: makhabaz
+ms.search.validFrom: 2017-07-20
+ms.dyn365.ops.version: Platform update 3
+
+---
+
+
 # Terminology
 To follow along with the design concepts we use in these APIs, start off by getting a good understanding of the terminology we use.
 ## design
