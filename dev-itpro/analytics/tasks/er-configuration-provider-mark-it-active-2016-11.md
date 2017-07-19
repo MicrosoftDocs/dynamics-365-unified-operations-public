@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create a configuration providand mark it as active for electronic reporting (ER)
+title: Create a configuration provider and mark it as active for electronic reporting (ER)
 description: The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER). 
 author: TonyaFehr 
 manager: AnnBe 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](.../includes/task-guide-banner.md)]
 
-# Create a configuration providand mark it as active for electronic reporting (ER)
+# Create a configuration provider and mark it as active for electronic reporting (ER)
 
 The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER). Each ER configuration will refer to the provider as the author of the configuration. In this example, you will create a configuration provider for sample company, Litware, Inc. These steps can be performed in any company as ER configuration providers are shared among all companies.
 
