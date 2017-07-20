@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: File Uploader
-description: A control for uploading files such as images.
+description: A control for uploading images.
 author: shadykdc
 manager: AnnBe
 ms.date: 
@@ -25,7 +25,7 @@ ms.dyn365.ops.version:
 ---
 
 # File Uploader 
-A control for uploading files such as images.
+A control for uploading images.
 
 ## Index
 

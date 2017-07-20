@@ -59,7 +59,6 @@ Metadata for list control.
 
 ### Methods
 
-* [metadata](view-model-control-list-ilist-ilistmetadata.md#metadata)
 * [navigationHandler](view-model-control-list-ilist-ilistmetadata.md#navigationhandler)
 
 ### Events
@@ -248,17 +247,6 @@ String indicating the control type.
 
 
 ## Methods
-
-### metadata
-
-
-metadata(): [ListMetadata](view-model-control-list-ilist-ilistmetadata.md)
-
-Returns the metadata object of this control.
-
-#### Returns [ListMetadata](view-model-control-list-ilist-ilistmetadata.md)
-
-
 
 ### navigationHandler
 Optional 

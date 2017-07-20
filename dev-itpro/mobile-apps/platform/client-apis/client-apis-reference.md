@@ -25,7 +25,7 @@ ms.dyn365.ops.version:
 ---
 
 # dynamics-ax 
-# Table of Contents
+# Client APIs Contents
 
 ## [Application](modules/services-application.md)
 

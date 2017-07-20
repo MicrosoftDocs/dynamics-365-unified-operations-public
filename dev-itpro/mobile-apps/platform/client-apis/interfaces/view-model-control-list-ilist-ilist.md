@@ -448,15 +448,13 @@ loadMore(): void
 ### metadata
 
 
-metadata(): [ContainerControlMetadata](view-model-control-container-icontainercontrol-icontainercontrolmetadata.md)
+metadata(): [ListMetadata](view-model-control-list-ilist-ilistmetadata.md)
 
 Returns the metadata object of this control.
 
-> Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[metadata](view-model-control-container-icontainercontrol-icontainercontrol.md#metadata)
+> Overrides [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[metadata](view-model-control-container-icontainercontrol-icontainercontrol.md#metadata)
 
-> Overrides [Control](view-model-control-basecontrol-icontrol-icontrol.md).[metadata](view-model-control-basecontrol-icontrol-icontrol.md#metadata)
-
-#### Returns [ContainerControlMetadata](view-model-control-container-icontainercontrol-icontainercontrolmetadata.md)
+#### Returns [ListMetadata](view-model-control-list-ilist-ilistmetadata.md)
 
 
 
