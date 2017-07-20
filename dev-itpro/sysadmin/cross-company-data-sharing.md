@@ -17,7 +17,7 @@ ms.search.form: SysDataSharingConfiguration
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: 11
+ms.reviewer: margoc
 ms.search.scope: Core
 # ms.tgt_pltfrm: 
 ms.custom: 89071

@@ -3,7 +3,7 @@
 
 title: Manage Retail accounts and devices from headquarters
 description: This article explains how an IT Pro can set up Retail activation accounts for retail workers to activate Modern POS or Cloud POS devices.
-author: MargoC
+author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,14 @@ ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPe
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: 11
+ms.reviewer: margoc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 20471
 ms.assetid: 5394e10c-539c-4e26-a097-504c6950cd56
 ms.search.region: Global
 ms.search.industry: Retail
+
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
@@ -37,22 +38,20 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This article explains how an IT Pro can set up Retail activation accounts for retail workers to activate Modern POS or Cloud POS devices.
 
-Setting up a device activation account for a single worker
-----------------------------------------------------------
-
+## Setting up a device activation account for a single worker
 This procedure should be completed before you activate Cloud POS.
 
-1.  In Microsoft Dynamics 365 for Retail, from the **Workers** page, open the **Worker details** page for the worker to assign AAD device activation privileges to. Click **Edit**.
+1.  In Microsoft Dynamics 365 for Retail, from the **Workers** page, open the **Worker details** page for the worker to assign AAD deviceactivation privileges to. Click **Edit**.
 2.  On the **Retail** tab, click the **POS permissions** link. Make sure that the worker is in the Manager Permission group, or that **Manage Devices** is set to **Yes** for the worker.
 3.  On the **Retail** tab, under **External identity**, update the values for the following fields:
     -   Alias
     -   UPN
     -   External identifier
 
-4.  You can update the **External identity** fields by using an existing AAD account or creating a new AAD account. To update the fields, access the **External identity** options from the **Retail** main menu (**Retail** &gt; ****Associate existing **identity** or **Retail** &gt; **Create new identity**).
-5.  To use an existing AAD account, select **Retail** &gt;** Associate existing identity**. In the slider, click the AAD account that has the correct name, and then click **OK**. The AAD account that is associated with that name and alias is the user's Activation account for Modern POS.
+4.  You can update the **External identity** fields by using an existing AAD account or creating a new AAD account. To update the fields,  access the **External identity** options from the **Retail** main menu (**Retail** &gt; **Associate existing identity** or **Retail** &gt; **Create new identity**).
+5.  To use an existing AAD account, select **Retail** &gt; **Associate existing identity**. In the slider, click the AAD account that has the correct name, and then click **OK**. The AAD account that is associated with that name and alias is the user's Activation account for Modern POS.
 6.  Complete and save the changes on the **Workers** page, and then refresh the page. The section that contains external identity information should be updated with the new information. The mapped AAD account is now your Activation account for Cloud POS and Modern POS. This account is mapped to a worker for the required POS permissions. You can use this AAD account for Modern POS or Cloud POS activation.
-7.  The Create external identity feature creates a new AAD account for you by using the alias that you enter. To update the fields, access the **External identity** options from the **Retail** main menu (**Retail** &gt; **Create new identity**).
+7.  The Create external identity feature creates a new AAD account for you by using the alias that you enter. To update the fields,access the **External identity** options from the **Retail** main menu (**Retail** &gt; **Create new identity**).
 8.  You can either manually enter the alias to generate or use the **Reset to default** button. Then manually enter a strong password, and click **OK**.
 9.  If the worker is created successfully, you receive a message on the **Workers** page. The mapped AAD account is now the user's Activation account for Cloud POS and Modern POS. This account is mapped to a worker for the required POS permissions. You can use this AAD account for Modern POS or Cloud POS activation.
 
@@ -79,20 +78,8 @@ Before handing an activation account to a worker, an IT Pro must run the Validat
 4.  The AAD account to map must belong to the same tenant.
 5.  To map the worker to the AAD account, sign in to HQ by using the Admin account for Microsoft Dynamics Lifecycle Services (LCS).
 6.  Make sure that the worker is set up as a Dynamics 365 for Retail user in the Manager role (checked by validation).
-7.  Make sure that the channel is published (checked by validation).
-8.  Make sure that the channel database has the synced data from HQ, and that download jobs are running. To check this, run the following command in the channel database for the store.
-
-        select * from crt.STORAGELOOKUPVIEW
-
-    Make sure that data is returned, and that the result isn't empty.
-
-9.  Set up the hardware profile under **Registers &gt; Register** (checked by validation).
-10. Make sure that the register and store have a screen layout (checked by validation).
-11. Make sure that a primary address is set up for the legal entity.
-12. Make sure that the language is set up for the Commerce Data Exchange: Real-time Service user profile (JBB in the demo data).
-13. Make sure that the Real-time Service profile has the correct access.
-14. Make sure that the electronic funds transfer (EFT) configuration value is present.
-
-
-
-
+7.  Make sure that the channel data is present in the channel database.
+8.  Set up the hardware profile under **Registers**  &gt; **Register** (checked by validation).
+9.  Make sure that the register and store have a screen layout (checked by validation).
+10. Make sure that a primary address is set up for the legal entity.
+11. Make sure that the electronic funds transfer (EFT) configuration value is present.

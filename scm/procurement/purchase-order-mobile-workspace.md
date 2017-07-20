@@ -17,7 +17,7 @@ ms.search.form: PurchTable, PurchVendorPortalRequests
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: bis
+ms.reviewer: bis
 
 ms.search.scope: Core, Operations, UnifiedOperations, Retail
 

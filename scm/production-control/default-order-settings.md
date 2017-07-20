@@ -17,7 +17,7 @@ ms.search.form: InventItemOrderSetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2094
+ms.reviewer: yuyus
 
 ms.search.scope: Core, Operations, UnifiedOperations, Retail
 
