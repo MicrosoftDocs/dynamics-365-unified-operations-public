@@ -106,7 +106,7 @@ See also
 
 [Set up quality orders (Task guide)](http://ax.help.dynamics.com/en/wiki/set-up-quality-orders/)
 
-[Inspect the quality of goods (Task guide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+[Inspect the quality of goods (Task guide)](http://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
 
 
 

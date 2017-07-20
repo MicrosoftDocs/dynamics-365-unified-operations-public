@@ -200,7 +200,7 @@ To consolidate approved purchase requisition lines, follow these steps:
 See also
 --------
 
-[Create a requisition for consumption (Task guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Create a requisition for consumption (Task guide)](http://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
 [Purchase requisition workflow](purchase-requisitions-workflow.md)
 
