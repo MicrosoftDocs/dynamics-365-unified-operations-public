@@ -49,11 +49,13 @@ With an on-premises deployment, existing data center investments can be leverage
 
 A customer’s business data and processes are disconnected from the cloud and are stored and run locally in the customer’s or their partner’s data center. Some connectivity is required for system management and updates which are enabled through Microsoft Dynamics Lifecycle Services (LCS), a cloud-based application lifecycle management service. Customer data that is related to the configuration and application customization may be stored in the cloud. 
 
-For customers that choose to run Finance and Operations in their own data center, the on-premises deployment option will have a similar user-interface and application functionality as other deployment options. However, customers must taks some additional steps to configure the following capabilities in their own environments:
+For customers that choose to run Finance and Operations in their own data center, the on-premises deployment option will have a similar user-interface and application functionality as other deployment options. However, customers must take on the below responsibilitie
 
-- High-availability and disaster recovery solutions 
-- Sand-box environments
+- Stand up their own infrastructure 
+- Configure their own high-availability and disaster recovery solutions 
+- Stand up Sand-box environments
+- Manage their infrastructure including scheduling OS updates
 
-The additional costs to deploy and manage these capabilities might lead to higher deployment costs and a greater Total Cost of Ownership (TCO). The customer or their partner must also manage the infrastructure and software packages for the on-premises deployments. This includes standing up their own Windows 2016 and SQL Server 2016 environments and servicing them. Tools for deploying the Finance and Operations software and updates will be available to partners and customers via Lifecycle Services. Unlike the cloud deployment option, Azure Machine Learning services and embedded Power BI are not included in the on-premises deployment option. 
+The additional costs to deploy and manage these capabilities might lead to higher deployment costs and a greater Total Cost of Ownership (TCO). Tools for deploying the Finance and Operations software and updates will be available to partners and customers via Lifecycle Services. Unlike the cloud deployment option, Azure Machine Learning services and embedded Power BI are not included in the on-premises deployment option. 
 For more information, see [Features not implemented in on-premises deployments](../get-started/features-not-implemented-on-prem.md).
 
