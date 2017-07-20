@@ -31,10 +31,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create a purchase order that includes items subject to reverse charge VAT (UK)
 
-This task walks you through creating a purchase order that includes items subject to reverse charge VAT for the United Kingdom. 
-
-This walkthrough was created using the demo company GBSI.
-
+This task walks you through creating a purchase order that includes items subject to reverse charge VAT for the United Kingdom. 
+This walkthrough was created using the demo company GBSI.
 Prior to this task, the “Set up reverse charge VAT” tasks should be completed.
 
 

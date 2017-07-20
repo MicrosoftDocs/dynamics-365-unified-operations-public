@@ -31,10 +31,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Generate an EU Intrastat declaration
 
-This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format. 
-
-Before you can complete this procedure, you must transfer transactions to the Intrastat. 
-
+This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format. 
+Before you can complete this procedure, you must transfer transactions to the Intrastat. 
 This procedure was created using the demo data company DEMF.
 
 

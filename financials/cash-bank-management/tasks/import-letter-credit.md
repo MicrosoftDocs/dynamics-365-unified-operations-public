@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Import a letter of credit
 
-This procedure walks through the process of importing a letter of credit. The following must be set up before completing this procedure: bank facilities, posting profiles, a bank facility agreement and vendor bank details.
-
+This procedure walks through the process of importing a letter of credit. The following must be set up before completing this procedure: bank facilities, posting profiles, a bank facility agreement and vendor bank details.
 This procedure uses the USMF demo company.
 
 

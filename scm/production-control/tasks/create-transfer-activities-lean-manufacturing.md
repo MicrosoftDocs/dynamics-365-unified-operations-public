@@ -31,12 +31,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create transfer activities for lean manufacturing
 
-Create a transfer activity for lean manufacturing. 
-
-Prerequisites: 
-
-1. A production flow and version that is not active must be created.
-
+Create a transfer activity for lean manufacturing. 
+Prerequisites: 
+1. A production flow and version that is not active must be created.
 2. The from and to warehouse and locations must be created. Optionally, the replenishing or the replenished work cell should be created.
 
 

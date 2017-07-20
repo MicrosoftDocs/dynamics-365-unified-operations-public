@@ -31,10 +31,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create formate for counting and summing for electronic reporting (ER)
 
-The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output. These steps can be performed in any company.
-
-To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure.
-
+The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output. These steps can be performed in any company.
+To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure.
 This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 
 

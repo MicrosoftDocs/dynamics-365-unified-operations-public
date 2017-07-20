@@ -31,14 +31,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Configure consolidated invoice parameters and setup for accounts payable (Japan)
 
-In Japan, consolidated invoices can be enabled to fit the Japanese business practices.
-
-
-
-This procedure walks you through setting up consolidated invoice functionality.
-
-
-
+In Japan, consolidated invoices can be enabled to fit the Japanese business practices.
+
+This procedure walks you through setting up consolidated invoice functionality.
+
 This procedure was created using the demo data company JPMF.
 
 

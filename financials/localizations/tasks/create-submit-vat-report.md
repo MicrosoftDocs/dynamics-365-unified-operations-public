@@ -31,12 +31,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create and submit VAT report
 
-This procedure walks you through creating and submitting the VAT report to German authority.
-
-This procedure was created using the demo data company DEMF. 
-
-This functionality is available for legal entities whose primary address is in Germany.
-
+This procedure walks you through creating and submitting the VAT report to German authority.
+This procedure was created using the demo data company DEMF. 
+This functionality is available for legal entities whose primary address is in Germany.
 
 
 1. Go to Tax > Declarations > Sales tax > Report sales tax for settlement period.

@@ -31,22 +31,14 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create an accelerated depreciation document and enter usage data (Japan)
 
-For Japan, Accelerated depreciation is declared on a per document basis. Each document can contain multiple fixed assets. You must calculate an overuse rate on the accelerated depreciation document and multiply it by the ordinary depreciation amount to get the amount for the accelerated depreciation. 
-
-
-
-The details of the accelerated depreciation declaration are listed on the document. Only a confirmed accelerated depreciation document can be used at accelerated depreciation proposal for posting. 
-
-
-
-This procedure walks you through creating a fixed asset with an accelerated depreciation profile and then creating an accelerated depreciation document and assigning the fixed asset to it. Finally, you can enter the overuse hours for the fixed asset and calculate overuse rate on the document.
-
-
-
-In order to complete this procedure, the Fixed asset configuration key must be selected.
-
-
-
+For Japan, Accelerated depreciation is declared on a per document basis. Each document can contain multiple fixed assets. You must calculate an overuse rate on the accelerated depreciation document and multiply it by the ordinary depreciation amount to get the amount for the accelerated depreciation. 
+
+The details of the accelerated depreciation declaration are listed on the document. Only a confirmed accelerated depreciation document can be used at accelerated depreciation proposal for posting. 
+
+This procedure walks you through creating a fixed asset with an accelerated depreciation profile and then creating an accelerated depreciation document and assigning the fixed asset to it. Finally, you can enter the overuse hours for the fixed asset and calculate overuse rate on the document.
+
+In order to complete this procedure, the Fixed asset configuration key must be selected.
+
 This procedure was created using the demo data company JPMF.
 
 

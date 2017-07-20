@@ -31,12 +31,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create process activities for lean manufacturing
 
-Create a process activity for lean manufacturing. 
-
-Prerequisites: 
-
-1. A production flow and version that is not active must be created.
-
+Create a process activity for lean manufacturing. 
+Prerequisites: 
+1. A production flow and version that is not active must be created.
 2. A work cell must be created.
 
 

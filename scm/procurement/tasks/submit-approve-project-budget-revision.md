@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Submit and approve project budget revisions
 
-This procedure provides information about revising a project budget. You can revise a project budget as many times as necessary, however you can't see the amount of an individual revision if the budget has been revised more than one time. 
-
+This procedure provides information about revising a project budget. You can revise a project budget as many times as necessary, however you can't see the amount of an individual revision if the budget has been revised more than one time. 
 This task uses the SSI data set.
 
 1. Go to Project management and accounting > Projects > All projects.

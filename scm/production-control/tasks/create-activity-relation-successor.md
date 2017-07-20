@@ -31,12 +31,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create activity relation: Successor
 
-The flow of activities in a lean production flow is documented through activity relations. This recording shows how to create an activity relation.
-
-Prerequisites:
-
-- A production flow and version in draft mode. 
-
+The flow of activities in a lean production flow is documented through activity relations. This recording shows how to create an activity relation.
+Prerequisites:
+- A production flow and version in draft mode. 
 - Two activities that follow each other in the production flow are created but not related.
 
 

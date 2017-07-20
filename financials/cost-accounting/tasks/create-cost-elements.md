@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create cost elements �
+title: Create cost elements 
 description: There are several ways to create cost elements in Cost accounting. 
 author: TonyaFehr 
 manager: AnnBe 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-# Create cost elements �
+# Create cost elements 
 
 There are several ways to create cost elements in Cost accounting. This procedure shows how to create cost elements by importing main accounts via a data connector. The USMF demo company was used to create this procedure. This procedure is for a Cost accounting feature that was added in Dynamics 365 for Operations, version 1611.
 

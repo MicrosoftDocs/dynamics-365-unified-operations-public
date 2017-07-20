@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Post periodic journals
 
-Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated each time that the periodic journal is retrieved. When you create the periodic journal, you specify the period interval for the recurrence, such as days or months. This task guide will create a periodic journal with a monthly recurrence.
-
+Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated each time that the periodic journal is retrieved. When you create the periodic journal, you specify the period interval for the recurrence, such as days or months. This task guide will create a periodic journal with a monthly recurrence.
 
 
 1. Go to General ledger > Periodic tasks > Periodic journals.

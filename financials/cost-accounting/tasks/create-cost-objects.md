@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create cost objects �
+title: Create cost objects 
 description: This procedure shows how to create cost objects by importing the Dynamics 365 for Finance and Operations, Enterprise edition cost center financial dimension into Cost accounting via a data connector. 
 author: TonyaFehr 
 manager: AnnBe 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-# Create cost objects �
+# Create cost objects 
 
 This procedure shows how to create cost objects by importing the Dynamics 365 for Finance and Operations, Enterprise edition cost center financial dimension into Cost accounting via a data connector. The USMF demo company was used to create this procedure. This procedure is for a Cost accounting feature that was added in Dynamics 365 for Operations, version 1611.
 

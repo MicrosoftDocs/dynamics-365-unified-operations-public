@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create sales orders
 
-This procedure shows you how to create a sales order. You can use the procedure in demo data company USMF. Sales orders are typically created by a sales order processor. 
-
+This procedure shows you how to create a sales order. You can use the procedure in demo data company USMF. Sales orders are typically created by a sales order processor. 
 
 
 

@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Design data model to use financial dimensions as a data source for electronic reporting (ER)
 
-The following steps explain how either a system administrator or electronic reporting developer can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. These steps can be performed in any company.
-
+The following steps explain how either a system administrator or electronic reporting developer can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. These steps can be performed in any company.
 To complete these steps, you must first complete the steps in the procedure, “Create a configuration provider and mark it as active”.
 
 

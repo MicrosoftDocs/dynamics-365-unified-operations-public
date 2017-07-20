@@ -31,12 +31,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Print GST tax invoices (Malaysia)
 
-This procedure walks you through how to print a GST tax invoice. Before you can complete this procedure, you must select the Invoice type 'GST invoice' in general ledger parameters.
-
-This procedure was completed along with the required print setup using the MYMF demo data company.
-
-
-
+This procedure walks you through how to print a GST tax invoice. Before you can complete this procedure, you must select the Invoice type 'GST invoice' in general ledger parameters.
+This procedure was completed along with the required print setup using the MYMF demo data company.
+
 Legal entity 'MYMF' must be selected to execute this scenario successfully. The Accounts receivable clerk role is required for this procedure.
 
 

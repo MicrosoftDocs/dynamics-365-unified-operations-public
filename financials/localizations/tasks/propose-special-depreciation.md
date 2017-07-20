@@ -31,16 +31,11 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Propose special depreciation (Japan)
 
-In Japan, a special depreciation is permitted under certain conditions. For Reserve method, this is a two step task: post reserve, and then post reserve allocation. For Direct-off method, only one step is needed, which is the same procedure as post reserve. 
-
-
-
-Use this procedure to learn how to propose special depreciation under Reserve method.
-
-Make sure that the fixed asset has been acquired before following this procedure. Also, be sure that the Fixed Assets configuration key is selected.
-
-
-
+In Japan, a special depreciation is permitted under certain conditions. For Reserve method, this is a two step task: post reserve, and then post reserve allocation. For Direct-off method, only one step is needed, which is the same procedure as post reserve. 
+
+Use this procedure to learn how to propose special depreciation under Reserve method.
+Make sure that the fixed asset has been acquired before following this procedure. Also, be sure that the Fixed Assets configuration key is selected.
+
 This procedure uses the JPMF demo company data.
 
 

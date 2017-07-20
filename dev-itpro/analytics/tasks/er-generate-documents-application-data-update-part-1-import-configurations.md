@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Import configurations to generate documents with application data update for electronic reporting (ER)
 
-To complete the steps in this procedure, you must first complete the procedure, “ER Create a configuration provider and mark it as active”.
-
+To complete the steps in this procedure, you must first complete the procedure, “ER Create a configuration provider and mark it as active”.
 The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document. In this procedure, you will import the required ER configurations that have been created for the sample company, Litware, Inc. and use them to generate electronic documents. This procedure is created for users with the assigned role of system administrator or electronic reporting developer. These steps can be completed using the DEMF dataset. Before you begin, download and save the files listed in the Help topic, “Generate electronic documents and update application data with ER tool” (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/generate-electronic-documents-update-application-data/). The files are Intrastat (model).xml, Intrastat (mapping).xml, and Intrastat (format).xml.
 
 1. Go to Organization administration > Workspaces > Electronic reporting.

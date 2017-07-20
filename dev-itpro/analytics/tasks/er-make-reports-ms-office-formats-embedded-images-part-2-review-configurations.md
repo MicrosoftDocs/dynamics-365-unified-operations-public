@@ -31,10 +31,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Review configurations to make reports in Microsoft Office formats with embedded images for electronic reporting (ER)
 
-To complete these steps, you must first complete the steps in the “ER Make reports in MS Office formats with embedded images (Part 1: Set up parameters)” task guide.
-
-This procedure shows how to design Electronic reporting (ER) configurations to generate electronic documents that contain embedded images in Microsoft Excel and Microsoft Word. In this example, you will review ER configurations for the sample company Litware, Inc. 
-
+To complete these steps, you must first complete the steps in the “ER Make reports in MS Office formats with embedded images (Part 1: Set up parameters)” task guide.
+This procedure shows how to design Electronic reporting (ER) configurations to generate electronic documents that contain embedded images in Microsoft Excel and Microsoft Word. In this example, you will review ER configurations for the sample company Litware, Inc. 
 This procedure is intended for users who have the System administrator or Electronic reporting developer role assigned to them. The steps can be completed by using the USMF data set.
 
 

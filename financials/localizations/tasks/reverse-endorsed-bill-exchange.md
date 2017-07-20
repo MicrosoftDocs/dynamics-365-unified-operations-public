@@ -31,12 +31,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Reverse an endorsed bill of exchange (Japan)
 
-This task walks you through reversing an endorsed bill of exchange.
-
-
-
-Before you can complete this task, you must have at least one endorsed bill of exchange. 
-
+This task walks you through reversing an endorsed bill of exchange.
+
+Before you can complete this task, you must have at least one endorsed bill of exchange. 
 This task was created using the demo data company JPMF.
 
 1. Go to Accounts payable > Payments > Endorse bills of exchange.

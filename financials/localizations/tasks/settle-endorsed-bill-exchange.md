@@ -31,14 +31,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Settle an endorsed bill of exchange (Japan)
 
-This task walks you through settling an endorsed bill of exchange.
-
-
-
-Before you can complete this task, you must have an endorsed bill of exchange and an open vendor transaction. 
-
-
-
+This task walks you through settling an endorsed bill of exchange.
+
+Before you can complete this task, you must have an endorsed bill of exchange and an open vendor transaction. 
+
 This task was created using the demo data company JPMF.
 
 

@@ -27,7 +27,7 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-[!include[banner](../includes/banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 # Employment verification using form I-9
 

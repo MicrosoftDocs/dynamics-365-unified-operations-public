@@ -31,10 +31,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Use a record template to create a new record
 
-This procedure shows how to use a previously defined record template to create a new record. To complete this procedure, you must first complete the "Create a record template to facilitate data entry" procedure.
-
-
-
+This procedure shows how to use a previously defined record template to create a new record. To complete this procedure, you must first complete the "Create a record template to facilitate data entry" procedure.
+
 This procedure uses the USMF company.
 
 1. Go to Fixed assets > Fixed assets > Fixed assets.

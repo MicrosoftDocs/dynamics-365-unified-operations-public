@@ -31,10 +31,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up payment fee for Japan (Japan)
 
-This task walks you through setting up a payment fee for Japan.
-
-
-
+This task walks you through setting up a payment fee for Japan.
+
 This task was created using the demo data company JPMF.
 
 

@@ -31,14 +31,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Dispose of a fixed asset with reduction entry (Japan)
 
-Use this task to learn how to dispose of a fixed asset with reduction entry for Japan.
-
-
-
-In order to complete this task, the Fixed Asset configuration key must be selected.
-
-
-
+Use this task to learn how to dispose of a fixed asset with reduction entry for Japan.
+
+In order to complete this task, the Fixed Asset configuration key must be selected.
+
 This task was completed using the JPMF demo data company.
 
 1. Go to Fixed assets > Journal entries > Fixed assets journal.

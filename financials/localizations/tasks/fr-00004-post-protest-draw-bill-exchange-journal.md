@@ -31,14 +31,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Post protest draw bill of exchange journal (France)
 
-This procedure walks you through the steps of protesting bill of exchange.
-
-This procedure was created using the demo data company FRSI. 
-
-This functionality is available for legal entities whose primary address is in France.
-
-You should have a role of Accounts receivables clerk to complete this procedure.
-
+This procedure walks you through the steps of protesting bill of exchange.
+This procedure was created using the demo data company FRSI. 
+This functionality is available for legal entities whose primary address is in France.
+You should have a role of Accounts receivables clerk to complete this procedure.
 
 
 1. Go to Accounts receivable > Payments > Bill of exchange > Protest bill of exchange journal.

@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Customize audit file configuration (Germany)
 
-This procedure shows how to customize the German audit file configuration by adding a new table group and selecting a table with fields for data export definition. 
-
+This procedure shows how to customize the German audit file configuration by adding a new table group and selecting a table with fields for data export definition. 
 This procedure was created using the demo data company DEMF with Germany as the country of legal entity primary address.
 
 1. Go to Organization administration > Workspaces > Electronic reporting.

@@ -31,10 +31,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up payment slip format for project invoices
 
-Businesses commonly attach printed payment slips to invoices to assist customers and provide a payment reference for posting and settlement. The payment slip can be used for project or service invoices, collection letters, interest notes, and account statements, in addition to sales invoices and free text invoices. To process payment slips, first set up your creditor identification number and payment slip attachment formats.
-
-This procedure uses the DEMF demo company. 
-
+Businesses commonly attach printed payment slips to invoices to assist customers and provide a payment reference for posting and settlement. The payment slip can be used for project or service invoices, collection letters, interest notes, and account statements, in addition to sales invoices and free text invoices. To process payment slips, first set up your creditor identification number and payment slip attachment formats.
+This procedure uses the DEMF demo company. 
 This functionality is available for legal entities whose primary address is in Denmark.
 
 

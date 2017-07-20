@@ -31,18 +31,12 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Generate documents with application data update for electronic reporting (ER)
 
-To complete the steps in this procedure, you must first complete the procedure, ER Generate documents with application data update (Part 1: Import configurations).
-
-
-
-The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document. In this procedure, you run the ER imported format configuration that has been created for the sample company, Litware, Inc. to generate electronic documents.
-
-
-
-This procedure is created for users with the assigned role of system administrator or electronic reporting developer. These steps can be completed using the DEMF dataset. 
-
-
-
+To complete the steps in this procedure, you must first complete the procedure, ER Generate documents with application data update (Part 1: Import configurations).
+
+The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document. In this procedure, you run the ER imported format configuration that has been created for the sample company, Litware, Inc. to generate electronic documents.
+
+This procedure is created for users with the assigned role of system administrator or electronic reporting developer. These steps can be completed using the DEMF dataset. 
+
 Before you begin, change the country context for the DEMF company from DEU (Germany) to BEL (Belgium). Click Organization administration > Organizations > Legal entities to update the country code in the primary address of the legal entity DEMF. Restart your application.
 
 

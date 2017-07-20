@@ -31,14 +31,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Enable the JBA payment file format (Japan)
 
-In Japan, the Japanese Bankers Association (JBA) has specified a file format for electronic fund transfers (EFT). 
-
-
-
-This procedure walks you through importing the JBA payment model and enabling the JBA payment file for vendor methods of payment. 
-
-
-
+In Japan, the Japanese Bankers Association (JBA) has specified a file format for electronic fund transfers (EFT). 
+
+This procedure walks you through importing the JBA payment model and enabling the JBA payment file for vendor methods of payment. 
+
 This procedure was created using the demo data company JPMF.
 
 

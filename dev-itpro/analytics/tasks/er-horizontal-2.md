@@ -31,10 +31,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Run a format that uses horizontally-expandable ranges to dynamically add columns in Excel reports for electronic reporting (ER)
 
-The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges. These steps can be performed in the DEMF company.
-
-To complete these steps, you must first complete the steps in the “ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 1: Design format)” procedure.
-
+The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges. These steps can be performed in the DEMF company.
+To complete these steps, you must first complete the steps in the “ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 1: Design format)” procedure.
 This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 
 

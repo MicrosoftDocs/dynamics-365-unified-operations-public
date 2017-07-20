@@ -31,10 +31,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Extend data model to use Document Management files in format outputs for electronic reporting (ER)
 
-The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. These steps can be performed in any company.
-
-To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 1: Prepare data model)” task guide.
-
+The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. These steps can be performed in any company.
+To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 1: Prepare data model)” task guide.
 This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 
 

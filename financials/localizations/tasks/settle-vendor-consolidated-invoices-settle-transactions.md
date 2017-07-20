@@ -31,18 +31,12 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Settle vendor consolidated invoices by using settle transactions (Japan)
 
-In Japan, payments are made and settled against consolidated invoice.
-
-
-
-This procedure walks you through settling a consolidated invoice using settle transactions.
-
-
-
-You need to make sure that a consolidated invoice is created and confirmed, and a payment is posted before running this procedure. 
-
-
-
+In Japan, payments are made and settled against consolidated invoice.
+
+This procedure walks you through settling a consolidated invoice using settle transactions.
+
+You need to make sure that a consolidated invoice is created and confirmed, and a payment is posted before running this procedure. 
+
 This procedure was created using the demo data company JPMF.
 
 

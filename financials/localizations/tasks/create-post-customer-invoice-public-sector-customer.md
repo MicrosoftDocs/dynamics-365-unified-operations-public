@@ -31,18 +31,12 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create and post a customer invoice for a public sector customer (Denmark)
 
-This procedure walks you through creating and posting a sales order invoice for a customer using OIOUBL electronic invoicing. 
-
-
-
-It was created using the demo data company USMF with a legal entity primary address in Denmark.
-
-
-
-This is the fifth procedure out of six illustrating end to end process of generating e-invoices using electronic reporting configurations. It is based on OIOUBL e-invoice example which is common for Denmark, Austria and Norway. In order to find minor differences for other country specific e-Invoice implementations, like Spanish or Italian, please refer to available WIKI articles.
-
-
-
+This procedure walks you through creating and posting a sales order invoice for a customer using OIOUBL electronic invoicing. 
+
+It was created using the demo data company USMF with a legal entity primary address in Denmark.
+
+This is the fifth procedure out of six illustrating end to end process of generating e-invoices using electronic reporting configurations. It is based on OIOUBL e-invoice example which is common for Denmark, Austria and Norway. In order to find minor differences for other country specific e-Invoice implementations, like Spanish or Italian, please refer to available WIKI articles.
+
 Before you can complete this procedure, you must complete the following procedures: ‘Import OIOUBL electronic invoicing electronic reporting configurations’, ‘Set up OIOUBL electronic invoicing’ and ‘Set up a customer account for OIOUBL electronic invoicing’.
 
 

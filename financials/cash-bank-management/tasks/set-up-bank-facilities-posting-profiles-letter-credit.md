@@ -31,12 +31,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up bank facilities and posting profiles for letter of credit
 
-This procedure walks through creating a Bank facility and posting profile required to process Letters of credit. 
-
-This tasks uses the demo company 'USMF'.
-
-
-
+This procedure walks through creating a Bank facility and posting profile required to process Letters of credit. 
+This tasks uses the demo company 'USMF'.
+
 
 
 

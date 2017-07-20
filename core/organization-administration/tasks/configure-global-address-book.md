@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Configure the global address book
 
-Use this procedure to set the default values and security policies for the global address book. 
-
+Use this procedure to set the default values and security policies for the global address book. 
 The demo data company used to create this task is USMF. This task is intended for the Planning and configuration team.
 
 1. Go to Organization administration > Global address book > Global address book parameters.

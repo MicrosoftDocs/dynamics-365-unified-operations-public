@@ -31,10 +31,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Submit and approve project budgets
 
-This procedure shows you how to create and submit the budget for a project. 
-
-When you create a project budget, you can enter estimated revenues and costs for a project, and then use those to control actual project transactions. In project budgeting, all original budgets and revisions must be sent to project workflow for approval. Workflow gives you increased control over the process and creates a change history record.
-
+This procedure shows you how to create and submit the budget for a project. 
+When you create a project budget, you can enter estimated revenues and costs for a project, and then use those to control actual project transactions. In project budgeting, all original budgets and revisions must be sent to project workflow for approval. Workflow gives you increased control over the process and creates a change history record.
 This task was created using the USSI data set.
 
 1. Go to Project management and accounting > Projects > All projects.

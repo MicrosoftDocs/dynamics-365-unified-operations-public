@@ -31,14 +31,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Generate an EFT payment file with JBA format (Japan)
 
-In Japan, the Japanese Bankers Association (JBA) file format is commonly used for Electronic Fund Transfer (EFT) among banks. 
-
-
-
-Use this task to learn how to generate an EFT file with the JBA format.
-
-
-
+In Japan, the Japanese Bankers Association (JBA) file format is commonly used for Electronic Fund Transfer (EFT) among banks. 
+
+Use this task to learn how to generate an EFT file with the JBA format.
+
 This task uses the JPMF demo company data.
 
 1. Go to Accounts payable > Payments > Payment journal.

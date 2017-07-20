@@ -31,14 +31,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Propose and post the impairment amount by using fixed asset journal (Japan)
 
-Use this procedure to learn how to propose and post the impairment amount by using a fixed asset journal.
-
-
-
-Be sure an impairment test result is already created prior to running this task.
-
-
-
+Use this procedure to learn how to propose and post the impairment amount by using a fixed asset journal.
+
+Be sure an impairment test result is already created prior to running this task.
+
 This procedure was created using the demo data company JPMF.
 
 1. Go to Fixed assets > Journal entries > Fixed assets journal.

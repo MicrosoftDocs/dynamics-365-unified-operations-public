@@ -31,22 +31,14 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create and assign a reduction entry document for a government grant subsidy (Japan)
 
-For Japan, a reduction entry document is a document that you can attach to a fixed asset that is sponsored using a government subsidy. The reduction entry certificate contains the details about the government subsidy, such as the reduction entry method, depreciation convention, reason, validity, and subsidy threshold.
-
-
-
-The details of the reduction entry document are used to calculate and post reduction entry amounts.
-
-
-
-Use this task to learn how to create reduction entry documents and assign it to a fixed asset.
-
-
-
-In order to complete this task, the Fixed Asset configuration key must be selected.
-
-
-
+For Japan, a reduction entry document is a document that you can attach to a fixed asset that is sponsored using a government subsidy. The reduction entry certificate contains the details about the government subsidy, such as the reduction entry method, depreciation convention, reason, validity, and subsidy threshold.
+
+The details of the reduction entry document are used to calculate and post reduction entry amounts.
+
+Use this task to learn how to create reduction entry documents and assign it to a fixed asset.
+
+In order to complete this task, the Fixed Asset configuration key must be selected.
+
 This task uses the JPMF demo company data.
 
 

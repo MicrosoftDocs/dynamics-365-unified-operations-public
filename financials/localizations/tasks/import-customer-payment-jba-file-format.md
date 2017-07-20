@@ -31,14 +31,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Import a customer payment with JBA file format (Japan)
 
-In Japan, the Japanese Bankers Association (JBA) file format is commonly used for Electronic Fund Transfer (EFT) among banks. 
-
-
-
-This task walks you through importing an EFT file with a JBA format.
-
-
-
+In Japan, the Japanese Bankers Association (JBA) file format is commonly used for Electronic Fund Transfer (EFT) among banks. 
+
+This task walks you through importing an EFT file with a JBA format.
+
 This procedure was created using the demo company data JPMF.
 
 1. Go to Accounts receivable > Payments > Payment journal.

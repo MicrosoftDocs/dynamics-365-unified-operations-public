@@ -31,22 +31,14 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create CGU group and cash generating units (Japan)
 
-In Japan, an impairment on fixed assets can be based on either individual fixed assets or cash generating units. When measuring impairment based on cash generating units, the first step is to group the fixed assets into cash generating units. 
-
-
-
-Multiple sets of cash generating units are allowed so that you can choose the most appropriate CGU. This is achieved through the creation of CGU groups. 
-
-
-
-This procedure walks you through creating CGU groups and cash generating units. You will also learn how to assign fixed assets to cash generating units and how to assign shared assets and goodwill to CGU groups. 
-
-
-
-In order to complete this task, the Fixed Asset configuration key must be selected.
-
-
-
+In Japan, an impairment on fixed assets can be based on either individual fixed assets or cash generating units. When measuring impairment based on cash generating units, the first step is to group the fixed assets into cash generating units. 
+
+Multiple sets of cash generating units are allowed so that you can choose the most appropriate CGU. This is achieved through the creation of CGU groups. 
+
+This procedure walks you through creating CGU groups and cash generating units. You will also learn how to assign fixed assets to cash generating units and how to assign shared assets and goodwill to CGU groups. 
+
+In order to complete this task, the Fixed Asset configuration key must be selected.
+
 This procedure was created using the demo data company JPMF.
 
 

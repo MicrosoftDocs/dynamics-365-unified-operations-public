@@ -31,10 +31,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Generate and post payment fee (Japan)
 
-This task walks you through generating and posting a payment fee for Japan.
-
-
-
+This task walks you through generating and posting a payment fee for Japan.
+
 This task was created using the demo data company JPMF.
 
 1. Go to Accounts payable > Payments > Payment journal.

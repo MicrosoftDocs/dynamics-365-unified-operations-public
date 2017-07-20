@@ -31,16 +31,11 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up method of payment (France)
 
-The procedure walks you through setting up methods of payment so that you can create and post the bill of exchange after approving it from the draw bill of exchange journal.
-
-This procedure was created using the demo data company FRSI. 
-
-This functionality is available for legal entities whose primary address is in France.
-
-You should have a role of Accounts receivables manager to perform this procedure.
-
-
-
+The procedure walks you through setting up methods of payment so that you can create and post the bill of exchange after approving it from the draw bill of exchange journal.
+This procedure was created using the demo data company FRSI. 
+This functionality is available for legal entities whose primary address is in France.
+You should have a role of Accounts receivables manager to perform this procedure.
+
 
 
 1. Go to Accounts receivable > Payments setup > Methods of payment.

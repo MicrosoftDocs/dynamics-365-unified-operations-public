@@ -31,14 +31,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up a customer and sales order to be target of consolidated invoice (Japan)
 
-In Japan, the customers usually use consolidated invoice for all transactions. 
-
-
-
-Use this task to learn how to set up a customer and a sales order to use consolidated invoices. 
-
-
-
+In Japan, the customers usually use consolidated invoice for all transactions. 
+
+Use this task to learn how to set up a customer and a sales order to use consolidated invoices. 
+
 This task uses the JPMF demo company data.
 
 

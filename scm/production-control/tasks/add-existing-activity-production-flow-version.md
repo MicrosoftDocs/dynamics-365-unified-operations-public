@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Add an existing activity to a production flow version
 
-When creating new versions of production flows, you can choose to add activities created for the older versions, to the new version. This procedure shows how a new version is created for an existing production flow, without copying the activities. In the next step, an existing activity is added to the new version. 
-
+When creating new versions of production flows, you can choose to add activities created for the older versions, to the new version. This procedure shows how a new version is created for an existing production flow, without copying the activities. In the next step, an existing activity is added to the new version. 
 This task requires production flow with version and activities already created.
 
 

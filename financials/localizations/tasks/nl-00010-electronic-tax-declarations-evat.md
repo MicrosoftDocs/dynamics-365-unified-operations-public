@@ -31,12 +31,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Electronic tax declarations (EVAT) (Netherlands)
 
-This procedure walks you through setting up electronic tax declaration for the Netherlands.
-
-This procedure was created using the demo data company DEMF. 
-
-This functionality is available for legal entities whose primary address is in the Netherlands.
-
+This procedure walks you through setting up electronic tax declaration for the Netherlands.
+This procedure was created using the demo data company DEMF. 
+This functionality is available for legal entities whose primary address is in the Netherlands.
 
 
 1. Go to Tax > Setup > Sales tax > Electronic tax declaration parameters.

@@ -31,16 +31,11 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up sales tax groups for reverse charge VAT (UK)
 
-This task walks you through setting up reverse charge sales tax groups for purchasing and sales purposes. This walkthrough was created using the demo company GBSI.
-
-This task requires that the following sales tax codes are created for Reverse charge purposes.  
-
-REV17.5 – positive value
-
-REV-17.5 – negative value
-
-The sales tax group 'RC-VAT' should already contain both +ve and -ve sales tax codes.
-
+This task walks you through setting up reverse charge sales tax groups for purchasing and sales purposes. This walkthrough was created using the demo company GBSI.
+This task requires that the following sales tax codes are created for Reverse charge purposes.  
+REV17.5 – positive value
+REV-17.5 – negative value
+The sales tax group 'RC-VAT' should already contain both +ve and -ve sales tax codes.
 In this task you'll create a new sales tax group that will contain a +ve sales tax code.
 
 1. Go to Tax > Indirect taxes > Sales tax > Sales tax groups.

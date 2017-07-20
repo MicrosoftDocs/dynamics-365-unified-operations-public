@@ -31,14 +31,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Use assemble list for fixed assets (Japan)
 
-In Japan, you can transfer an inventory item to a fixed asset. 
-
-
-
-This task walks you through using the assembly list to consume inventory items and create the fixed asset at the same time.
-
-
-
+In Japan, you can transfer an inventory item to a fixed asset. 
+
+This task walks you through using the assembly list to consume inventory items and create the fixed asset at the same time.
+
 This task was created using the demo data company JPMF.
 
 

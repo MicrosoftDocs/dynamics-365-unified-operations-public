@@ -31,14 +31,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Input journal in T account form (Japan)
 
-In Japan, the T-account format is commonly used to input journal entries. 
-
-
-
-This procedure walks you through creating a journal entry using the T-account format. 
-
-
-
+In Japan, the T-account format is commonly used to input journal entries. 
+
+This procedure walks you through creating a journal entry using the T-account format. 
+
 This task uses the JPMF demo company data.
 
 1. Go to General ledger > Journal entries > General journals.

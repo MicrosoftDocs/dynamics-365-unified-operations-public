@@ -31,20 +31,13 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Post a free text invoice with a payment slip (Denmark)
 
-You can post a free text invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment.
-
-
-
-This procedure walks you through posting a free text invoice with a payment slip.
-
-
-
-Before you can complete this procedure, you must set up a payment slip formats and setup payment slip for customer invoices. 
-
-This procedure was created using the demo data company DEMF. 
-
-This functionality is available for legal entities whose primary address is in Denmark. 
-
+You can post a free text invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment.
+
+This procedure walks you through posting a free text invoice with a payment slip.
+
+Before you can complete this procedure, you must set up a payment slip formats and setup payment slip for customer invoices. 
+This procedure was created using the demo data company DEMF. 
+This functionality is available for legal entities whose primary address is in Denmark. 
 
 
 1. Go to Accounts receivable > Invoices > All free text invoices.

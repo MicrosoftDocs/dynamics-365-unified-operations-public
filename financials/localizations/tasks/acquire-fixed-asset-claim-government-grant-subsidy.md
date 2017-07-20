@@ -31,14 +31,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Acquire a fixed asset and claim for the government grant subsidy (Japan)
 
-Use this task to walk through acquiring a fixed asset and then claiming it for a government grant.
-
-
-
-In order to complete this task, the Fixed Asset configuration key must be selected.
-
-
-
+Use this task to walk through acquiring a fixed asset and then claiming it for a government grant.
+
+In order to complete this task, the Fixed Asset configuration key must be selected.
+
 This task uses the JPMF demo data.
 
 

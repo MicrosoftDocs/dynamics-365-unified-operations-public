@@ -31,12 +31,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Customer and vendor account statements (France)
 
-You can print accounts statements for customers and vendors that display information for a time period that you select.
-
-This procedure was created using the demo data company FRSI. 
-
-This functionality is available for legal entities whose primary address is in France.
-
+You can print accounts statements for customers and vendors that display information for a time period that you select.
+This procedure was created using the demo data company FRSI. 
+This functionality is available for legal entities whose primary address is in France.
 
 
 

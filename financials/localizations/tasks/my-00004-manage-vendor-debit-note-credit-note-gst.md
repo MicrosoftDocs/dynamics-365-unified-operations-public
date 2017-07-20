@@ -31,16 +31,11 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Manage vendor debit and credit for GST (Malaysia)
 
-
-
-This procedure walks you through the Creation and printing of Vendor debit note and credit note tax invoice.
-
-
-
-You must be in the 'Accounts payable clerk' role to complete this procedure. 
-
-
-
+
+This procedure walks you through the Creation and printing of Vendor debit note and credit note tax invoice.
+
+You must be in the 'Accounts payable clerk' role to complete this procedure. 
+
 This procedure was created using the demo data company MYMF.
 
 

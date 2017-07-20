@@ -31,14 +31,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Generate customer credit for project sales (Malaysia)
 
-This task walks you through creating and printing a project credit note for GST.
-
-
-
-To complete this task, you must be in the 'Project accountant' role and you must select the Invoice type of 'GST invoice' in general ledger parameters.
-
-This task was created using the demo data company MYMF.
-
+This task walks you through creating and printing a project credit note for GST.
+
+To complete this task, you must be in the 'Project accountant' role and you must select the Invoice type of 'GST invoice' in general ledger parameters.
+This task was created using the demo data company MYMF.
 
 
 

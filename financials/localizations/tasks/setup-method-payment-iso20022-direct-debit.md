@@ -31,18 +31,12 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up method of payment for ISO20022 direct debit
 
-This procedure shows how to set up the customer method of payment for ISO20022 direct debit or any other payment type using electronic reporting. 
-
-
-
-Before you complete this task, you must set up export format configurations and payment accounts.
-
-
-
-This procedure was created using the demo data company DEMF.
-
-
-
+This procedure shows how to set up the customer method of payment for ISO20022 direct debit or any other payment type using electronic reporting. 
+
+Before you complete this task, you must set up export format configurations and payment accounts.
+
+This procedure was created using the demo data company DEMF.
+
 This is the third of five procedures that demonstrate the customer payment process using electronic reporting configurations.
 
 1. Go to Accounts receivable > Payments setup > Methods of payment.

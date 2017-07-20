@@ -31,18 +31,12 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Propose and post accelerated depreciation (Japan)
 
-For Japan, you can propose an accelerated depreciation based on the data on confirmed accelerated depreciation documents. Note: The accelerated depreciation proposal will not propose ordinary depreciation. This procedure must be completed after you post ordinary depreciation.
-
-
-
-This procedure walks you through proposing and posting an accelerated depreciation document based on confirmed accelerated depreciation documents. 
-
-
-
-In order to complete this procedure, the Fixed asset configuration key must be selected.
-
-
-
+For Japan, you can propose an accelerated depreciation based on the data on confirmed accelerated depreciation documents. Note: The accelerated depreciation proposal will not propose ordinary depreciation. This procedure must be completed after you post ordinary depreciation.
+
+This procedure walks you through proposing and posting an accelerated depreciation document based on confirmed accelerated depreciation documents. 
+
+In order to complete this procedure, the Fixed asset configuration key must be selected.
+
 This procedure was created using the demo data company JPMF.
 
 1. Go to Fixed assets > Journal entries > Fixed assets journal.
