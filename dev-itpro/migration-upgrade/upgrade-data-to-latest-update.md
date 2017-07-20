@@ -42,12 +42,8 @@ In some Tier 2 or higher environments the Microsoft Service Engineering Team (DS
 This topic describes how to upgrade an older source database to the latest Finance and Operations update. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md). 
 
 > [!IMPORTANT]
-
-> You do NOT need to upgrade your database if you are updating to the latest platform of Microsoft Dynamics 365 for Finance and Operations. Platform updates are backward compatible. This article only applies to the process of upgrading between 2 releases of the Finance and Operations applications. For example, upgrading from Release 1611 (November 2016) to the July 2017 release.
-
+> You do NOT need to upgrade your database if you are updating to the latest platform of Microsoft Dynamics 365 for Finance and Operations. Platform updates are backward compatible. This article only applies to the process of upgrading between releases of Finance and Operations applications. For example, upgrading from Release 1611 (November 2016) to the July 2017 release.
 > This process does not apply to the upgrade of data in Management Reporter or the Retail channel database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
-
-
 
 ## Before you begin
 1.  You must have a functional one-box demo or development environment that is already successfully running with the latest Finance and Operations update.
