@@ -102,7 +102,7 @@ Microsoft is committed to supporting the deployments of the Finance and Operatio
 
 | Release                                                                             | Version          | Build number | Availability | Expiration date | Product life  |
 |-------------------------------------------------------------------------------------|------------------|--------------|--------------|-----------------|---------------|
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 update | 7.2.11792 | June 2017    |  November 2019   | December 2027 |
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 update | 7.2.11792 | June 2017    |  June 2020   | December 2027 |
 
 ## Support matrix
 The following table provides information about the recent releases of the application and platform for Finance and Operations, and shows which versions are compatible.
