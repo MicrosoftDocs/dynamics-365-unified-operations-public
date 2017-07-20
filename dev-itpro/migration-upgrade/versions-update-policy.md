@@ -80,7 +80,7 @@ The initial release of the Finance and Operations (on-premises) software will be
 | Microsoft Dynamics AX |Minor release  | 7.0.1 | 7.0.1265.23014 | May 2016 | June 2017 |
 | Microsoft Dynamics AX | Major release | 7.0 | 7.0.1265.3015 | February 2016 | June 2017 |
 
-### Table 2 Platform releases
+### Table 2: Platform releases
 
 | Release           | Build number   | Availability  | Expiration date   |
 |-------------------|----------------|---------------|-------------------|
