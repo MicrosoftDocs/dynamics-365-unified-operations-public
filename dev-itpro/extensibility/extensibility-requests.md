@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extensibility requests
-description: How to file a request for additional extension points in Dynamics 365 for Finance and Operations. 
+description: This topic explains how to file a request for additional extension points in Dynamics 365 for Finance and Operations. 
 author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
@@ -33,12 +33,12 @@ ms.dyn365.ops.version: Platform update 9
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition is moving to a model of exclusively using extensions to customize the product. We're aware that this change impacts our entire partner ecosystem. We recommend that you read the resources listed on the [Extensibility home page](extensibility-home-page.md). These resources answer many questions and prepare you for building solutions using extensions.
 
-You will discover that some customizations which were possible with overlayering cannot be done through extensions. We expect to add more extension capabilities, so that you will be able to do most of these things. For some customizations that were done with overlayering, you will need to file requests so that we are aware that we need to enable the appropriate extension points.
+You will discover that some customizations, which were possible with overlayering, cannot be done through extensions. We expect to add more extension capabilities, so that you will be able to do most of these things. For some customizations that were done with overlayering, you will need to file requests so that we are aware that we need to enable the appropriate extension points.
 
 ## What we are doing
-We've been working toward an extension-based customization model for some time now. This started with enabling extensibility and sealing the platform and foundation models. Our focus then shifted to the application. We have worked with a number of ISV partners to collect extensibility requirements. The July 2017 update supports many new extensibility scenarios.
+We've been working toward an extension-based customization model for some time now. This started with enabling extensibility and sealing the platform and foundation models. Our focus then shifted to the application. We have worked with many ISV partners to collect extensibility requirements. The July 2017 update supports many new extensibility scenarios.
 
-For future releases, we will be focusing on completing ISV requests and solving as many VAR-initiated requests as possible. Because we do not expect to be able to handle all requests right away, we will not enforce hard sealing of the Application Suite model in the next major product update. The next update will still support overlayering of this model; however, a warning will be shown when compiling overlayered code indicating that this is the last release in which the Application Suite model can be overlayered.
+In future releases, we will be focusing on completing ISV requests and solving as many VAR-initiated requests as possible. Because we do not expect to be able to handle all requests right away, we will not enforce hard sealing of the Application Suite model in the next major product update. The next update will still support overlayering of this model; however, a warning will be shown when compiling overlayered code indicating that this is the last release in which the Application Suite model can be overlayered.
 
 ## How do I log extensibility requests?
 If you discover a customization that you cannot implement as an extension, you can unblock yourself by using overlayering. Longer term this must be converted to an extension. You must log a request to Microsoft to ensure appropriate extension support is added to the product for your scenario.
@@ -50,20 +50,20 @@ Before logging the request, there are a few things to consider:
 
 Extensibility requests are logged using the extensibility feedback program on the Connect site. Because we are essentially sharing deep roadmap information, we require that organizations be under NDA to be enrolled in this feedback community.
 
-Partners only need to join the feedback community once and not for each of their employees. To enroll into the feedback community:
+Partners only need to join the feedback community once and not for each of their employees. To enroll in the feedback community:
 
-1. [Provide organization profile information](http://aka.ms/feedbackcommunitynomination)
-2. [Sign the NDA, Input agreement, code and data sharing policies](http://aka.ms/feedbackcommunityagreement)
+1. [Provide organization profile information.](http://aka.ms/feedbackcommunitynomination)
+2. [Sign the NDA, Input agreement, code and data sharing policies.](http://aka.ms/feedbackcommunityagreement)
 
-Once you as partner have signed the agreements, people from your organization will then be able to access the feedback Yammer groups. We recommend that you join the Yammer group 'Operations extensibility' where a broad range of extensibility topics are discussed.
+As a partner, after you have signed the agreements, people from your organization will be able to access the feedback Yammer groups. We recommend that you join the Yammer group 'Operations extensibility' where a broad range of extensibility topics are discussed.
 
 For the extensibility feedback program to appear on the Connect site, use the Invitation link below. This link adds **DYNAMICS 365 FOR OPERATIONS EXTENSIBILITY FEEDBACK** under Programs on the Connect site. Use this feedback program when logging your extensibility requests.
 
 [Invitation link for OPERATIONS EXTENSIBILITY FEEDBACK](https://connect.microsoft.com/site1321/InvitationUse.aspx?ProgramID=9338&InvitationID=EXT-W2TQ-3Y9Y) 
 
-When you log extensibility requests, please enter detailed information about what you need to become enabled for extensibility, and include some information on what it is you need to extend. This will help Microsoft to be efficient in addressing your requests. You are very welcome to propose how Microsoft could enable the functionality that you need in the standard application in a way that effectively addresses your needs.
+When you log extensibility requests, please enter detailed information about what you need to become enabled for extensibility, and include information on what it is you need to extend. This will help Microsoft to be efficient in addressing your requests. You are  welcome to propose how Microsoft could enable the functionality that you need in the standard application in a way that effectively addresses your needs.
 
-Do not open a request for a hotfixes. We will not release extensibility requests as hotfixes.  
+Do not open a request for a hotfix. We will not release extensibility requests as hotfixes.  
 
 Extensibility requests are exclusive for Dynamics 365 for Finance and Operations only. We are not planning to accommodate extensibility requests for Dynamics AX 2012 or earlier releases.
 
