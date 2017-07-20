@@ -5,7 +5,7 @@ title: Workforce management overview
 description: 
 author: shalabhjainmsft
 manager: AnnBe
-ms.date: -7/20/2017
+ms.date: 7/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
