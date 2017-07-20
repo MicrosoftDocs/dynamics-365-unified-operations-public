@@ -3,7 +3,7 @@
 
 title: Next steps
 description: 
-author: dfroslieMSFT
+author: fdahlMSFT
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dfroslie
+ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ---
@@ -50,7 +50,20 @@ Before logging the request, there are a few things to consider:
 + How important is the requirement to the customer and/or business analyst?  
 + Will the implementation be upgrade friendly for the long term?
 
-Extensibility requests are logged using the extensibility feedback program on the Connect site. A non-disclosure form must be signed to gain access. Becoming a member of the Connect program will also enable access to the extensibility Yammer discussion group where you can ask questions about a specific topic.
+Extensibility requests are logged using the extensibility feedback program on the Connect site. Because we are essentially sharing deep roadmap information we need organizations under NDA to become enrolled with this feedback community.
+
+Partners only need to join the feedback community once and not for each of their employee. To enroll into the feedback community follow the two steps below:
+
++ [Provide organization profile information](http://aka.ms/feedbackcommunitynomination)
++ [Sign NDA, Input agreement, code and data sharing policies](http://aka.ms/feedbackcommunityagreement)
+
+Once you as partner have signed the agreements people from your organization will then be able to access feedback yammer groups. Consider in particular joining the yammmer group 'Operations extensibility' where a broad range of extensibility topics are discussed.
+
+For the extensibility feedback program to appear on the Connect please use the Invitation link below. This will add 'DYNAMICS 365 FOR OPERATIONS EXTENSIBILITY FEEDBACK' under the programs on the Connect site. Please take care to use this feedback programm when logging your extensibility requests.
+
+[Invitation](https://connect.microsoft.com/site1321/InvitationUse.aspx?ProgramID=9338&InvitationID=EXT-W2TQ-3Y9Y) 
+
+When you do log extensibility requests, please supply detail on both what you needs to become enabled for extensibility, and include some information on what it is you need to extend. This will help us from Microsoft to be efficient in addressing your requests. You are very welcome to propose how we from Microsoft could enable this in the standard application in a way that effectively address your need.
 
 Request are not logged through opening requests for hotfixes. We will not release extensibility requests as hotfixes.  
 
