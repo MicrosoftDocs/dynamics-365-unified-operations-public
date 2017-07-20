@@ -57,13 +57,13 @@ Partners only need to join the feedback community once and not for each of their
 + [Provide organization profile information](http://aka.ms/feedbackcommunitynomination)
 + [Sign NDA, Input agreement, code and data sharing policies](http://aka.ms/feedbackcommunityagreement)
 
-Once you as partner have signed the agreements people from your organization will then be able to access feedback yammer groups. Consider in particular joining the yammmer group 'Operations extensibility' where a broad range of extensibility topics are discussed.
+Once you as partner have signed the agreements people from your organization will then be able to access feedback yammer groups. Consider in particular joining the yammer group 'Operations extensibility' where a broad range of extensibility topics are discussed.
 
-For the extensibility feedback program to appear on the Connect please use the Invitation link below. This will add 'DYNAMICS 365 FOR OPERATIONS EXTENSIBILITY FEEDBACK' under the programs on the Connect site. Please take care to use this feedback programm when logging your extensibility requests.
+For the extensibility feedback program to appear on the Connect site, please use the Invitation link below. This will add 'DYNAMICS 365 FOR OPERATIONS EXTENSIBILITY FEEDBACK' under Programs on the Connect site. Please take care to use this feedback program when logging your extensibility requests.
 
-[Invitation](https://connect.microsoft.com/site1321/InvitationUse.aspx?ProgramID=9338&InvitationID=EXT-W2TQ-3Y9Y) 
+[Invitation link for OPERATIONS EXTENSIBILITY FEEDBACK](https://connect.microsoft.com/site1321/InvitationUse.aspx?ProgramID=9338&InvitationID=EXT-W2TQ-3Y9Y) 
 
-When you do log extensibility requests, please supply detail on both what you needs to become enabled for extensibility, and include some information on what it is you need to extend. This will help us from Microsoft to be efficient in addressing your requests. You are very welcome to propose how we from Microsoft could enable this in the standard application in a way that effectively address your need.
+When you log extensibility requests, please supply detail on both what you needs to become enabled for extensibility, and include some information on what it is you need to extend. This will help us from Microsoft to be efficient in addressing your requests. You are very welcome to propose how we from Microsoft could enable this in the standard application in a way that effectively address your need.
 
 Request are not logged through opening requests for hotfixes. We will not release extensibility requests as hotfixes.  
 
