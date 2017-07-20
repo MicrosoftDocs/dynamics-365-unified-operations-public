@@ -1,4 +1,4 @@
-﻿# [Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/fin-and-ops/index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+# [Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/fin-and-ops/index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## [Get started](/dynamics365/unified-operations/fin-and-ops/get-started/onboarding-home?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Microsoft FastTrack for Dynamics 365](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -37,12 +37,12 @@
 #### [Display pages side-by-side using the Open in New Window icon](/dynamics365/unified-operations/fin-and-ops/get-started/display-pages-side-by-side?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Keyboard shortcuts](/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Manage how pages display](/dynamics365/unified-operations/fin-and-ops/get-started/window-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Change the banner or logo](/dynamics365/unified-operations/core/get-started/tasks/change-banner-or-logo?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Change the banner or logo](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Navigation search](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Personalize the user experience](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Use lookups to find information](/dynamics365/unified-operations/fin-and-ops//get-started/use-lookups-to-find-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Change the date for the session](/dynamics365/unified-operations/core/organization-administration/tasks/change-date-session?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Set a user's preferred time zone](/dynamics365/unified-operations/core/organization-administration/tasks/set-users-preferred-time-zone?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Change the date for the session](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/change-date-session?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Set a user's preferred time zone](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Understand Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Get help and support
@@ -1498,7 +1498,7 @@
 #### [Configure global address books](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Number sequence overview](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Electronic signature overview](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Set up electronic signatures](/dynamics365/unified-operations/core/organization-administration/tasks/set-up-electronic-signatures?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Set up electronic signatures](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Case management overview](/dynamics365/unified-operations/fin-and-ops/organization-administration/cases?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Configure case security, processes, and categories](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-case-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Configure document management](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
