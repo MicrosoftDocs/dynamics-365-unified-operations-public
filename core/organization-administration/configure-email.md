@@ -120,9 +120,9 @@ The **Send email **dialog box is opened to allow the user to edit the contents
 
 When the email is ready to be sent, the **Send** button will cause the email to be sent via SMTP.
 
-### Usage scenarios to verify if email is configured correctly
+## Usage scenarios to verify if email is configured correctly
 
-##### Send mail via a local mail client
+### Send mail via a local mail client
 
 Email workflows that are enabled via the SysEmail framework can generate email messages (.eml files) that contain attachments. You can then send these messages via Microsoft Outlook or another email client.
 
@@ -135,7 +135,7 @@ Email workflows that are enabled via the SysEmail framework can generate email m
 7.  If you’re using Internet Explorer on your computer, open the email (.eml) file that is generated. If you’re using Internet Explorer on the VM, copy the file to your computer, and open it there.
 8.  Note the email address in the **To** field and the generated workbook attachment.
 
-##### Send mail via SMTP
+### Send mail via SMTP
 
 Email workflows that are enabled via the SysEmail framework can also be created in a simple email dialog box and then sent via Simple Mail Transfer Protocol (SMTP).
 
