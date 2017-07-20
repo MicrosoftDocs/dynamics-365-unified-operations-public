@@ -52,7 +52,6 @@
 #### Task guides and task recorder
 ##### [Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create documentation or training](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Localization and regulatory features](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Glossary](/dynamics365/unified-operations/fin-and-ops/get-started/glossary?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Compliance
