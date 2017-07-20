@@ -3,7 +3,7 @@
 
 title: Next steps
 description: 
-author: fdahlMSFT
+author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
