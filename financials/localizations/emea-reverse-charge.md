@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Reverse charge VAT | Microsoft Docs
+title: Reverse charge VAT
 description: This topic explains how to set up the reverse charge value-added tax (VAT) for European countries.
 author: epodkolz 
 manager: AnnBe

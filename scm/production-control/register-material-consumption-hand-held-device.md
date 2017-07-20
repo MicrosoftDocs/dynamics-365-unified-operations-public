@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Register material consumption using a mobile device | Microsoft Docs
+title: Register material consumption using a mobile device
 description: This topic describes a workflow that enables registration of raw material consumption in production by using a handheld device.
 author: johanhoffmann
 manager: AnnBe

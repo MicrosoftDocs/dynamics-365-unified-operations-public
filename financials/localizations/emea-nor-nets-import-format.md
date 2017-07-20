@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Nets import format | Microsoft Docs
+title: Nets import format
 description: This topic provides information about importing payment information in the Nets format.
 author: ShylaThompson
 manager: AnnBe
