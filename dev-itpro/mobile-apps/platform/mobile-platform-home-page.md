@@ -55,7 +55,7 @@ Add some text here to introduct the mobile platform. It might come from the mobi
 [Use regular fields to provide counts on the workspace](scenarios/using-regular-fields-for-count.md)
 
 ## Client APIs
-[Client-side design APIs overview](client-apis/design-overview.md)
+[Client-side design APIs overview](scenarios/design-overview.md)
 
 [Client APIs reference](client-apis/client-apis-reference.md)
 
