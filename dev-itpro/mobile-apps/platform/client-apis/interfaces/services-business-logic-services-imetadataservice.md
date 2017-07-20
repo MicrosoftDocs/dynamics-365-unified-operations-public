@@ -108,15 +108,20 @@ Compares the current platform version with a reference version.
 
 configureAction(actionName: string, options: [PageMetadata](view-model-ipage-ipagemetadata.md)): any
 
+Configuring an action allows specifying or overriding certain behaviors specific to actions.
+Example:
 
+```javascript
+metadataService.configureAction('Edit-Reservation', { properties-to-set });
+```
 
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| actionName|string||
-| options|[PageMetadata](view-model-ipage-ipagemetadata.md)||
+| actionName|string|The action whose behavior is to be changed|
+| options|[PageMetadata](view-model-ipage-ipagemetadata.md)|The property bag containing the properties to set on the action|
 
 #### Returns any
 
@@ -125,16 +130,21 @@ configureAction(actionName: string, options: [PageMetadata](view-model-ipage-ipa
 
 configureControl(componentName: string, controlName: string, options: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md)): any
 
+Configuring a control allows specifying or overriding certain behaviors specific to the control. Note that the available behaviors vary by control type.
+Example:
 
+```javascript
+metadataService.configureControl('All-Customers', 'FMCustomer_RecId', { properties-to-set });
+```
 
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| componentName|string||
-| controlName|string||
-| options|[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md)||
+| componentName|string|A page or action that contains the control|
+| controlName|string|The control whose behavior is to be changed|
+| options|[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md)|The property bag containing the properties to set on the control|
 
 #### Returns any
 
@@ -143,15 +153,20 @@ configureControl(componentName: string, controlName: string, options: [ControlMe
 
 configureEntity(entityName: string, options: any): any
 
+Configuring an entity allows specifying or overriding certain behaviors specific to the entity.
+Example:
 
+```javascript
+metadataService.configureEntity("FMCustomer", { properties-to-set });
+```
 
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| entityName|string||
-| options|any||
+| entityName|string|An entity name|
+| options|any|The property bag containing the properties to set on the entity|
 
 #### Returns any
 
@@ -160,16 +175,21 @@ configureEntity(entityName: string, options: any): any
 
 configureLookup(taskName: string, lookupControlName: string, options: [LookupMetadata](view-model-control-lookup-ilookup-ilookupmetadata.md)): any
 
+Configures a field on an action to behave as a lookup. Requires using an existing page which contains a list control.
+Example:
 
+```javascript
+metadataService.configureLookup('Add-Reservation', 'FMRental_Customer', { lookupPage: 'All-Customers', valueField: 'FMCustomer_RecId', displayField: 'FMCustomer_FullName'});
+```
 
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| taskName|string||
-| lookupControlName|string||
-| options|[LookupMetadata](view-model-control-lookup-ilookup-ilookupmetadata.md)||
+| taskName|string|Action name|
+| lookupControlName|string|The control name of the field to be given lookup behavior|
+| options|[LookupMetadata](view-model-control-lookup-ilookup-ilookupmetadata.md)|Lookup configuration object|
 
 #### Returns any
 
@@ -178,15 +198,20 @@ configureLookup(taskName: string, lookupControlName: string, options: [LookupMet
 
 configurePage(pageName: string, options: [PageMetadata](view-model-ipage-ipagemetadata.md)): any
 
+Configuring a Page allows specifying or overriding certain behaviors specific to the Page.
+Example:
 
+```javascript
+metadataService.configurePage('Reservation-details', { properties-to-set });
+```
 
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| pageName|string||
-| options|[PageMetadata](view-model-ipage-ipagemetadata.md)||
+| pageName|string|The page that contains the control|
+| options|[PageMetadata](view-model-ipage-ipagemetadata.md)|The property bag containing the properties to set on the page|
 
 #### Returns any
 
@@ -195,14 +220,19 @@ configurePage(pageName: string, options: [PageMetadata](view-model-ipage-ipageme
 
 configureWorkspace(options: [PageMetadata](view-model-ipage-ipagemetadata.md)): any
 
+Configuring a workspace allows specifying or overriding certain behaviors specific to the workspace.
+Example:
 
+```javascript
+metadataService.configureWorkspace({ properties-to-set });
+```
 
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| options|[PageMetadata](view-model-ipage-ipagemetadata.md)||
+| options|[PageMetadata](view-model-ipage-ipagemetadata.md)|The property bag containing the properties to set on the workspace|
 
 #### Returns any
 
@@ -211,49 +241,82 @@ configureWorkspace(options: [PageMetadata](view-model-ipage-ipagemetadata.md)): 
 
 findAction(taskName: string): [PageMetadata](view-model-ipage-ipagemetadata.md)
 
+Gets a copy of the current metadata instance of a specified Action, for the purpose of inspecting the metadata
+(not to be used for changing the metadata).
+Note: Since metadata can be changed at any time by business logic, you must be mindful of when you use this API to get a copy as
+it will reflect the state of the metadata at the time the call is made.
 
+Example:
+
+```javascript
+var newCustomerTaskMetadata = metadataService.findTask("New-customer");
+```
 
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| taskName|string||
+| taskName|string|An action name|
 
 #### Returns [PageMetadata](view-model-ipage-ipagemetadata.md)
+
+
 
 ### findControl
 
 
 findControl(componentMetadata: any, controlName: string): [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md)
 
+Gets a copy of the current metadata instance of a specified control, for the purpose of inspecting the metadata
+(not to be used for changing the metadata).
+Note: Since metadata can be changed at any time by business logic, you must be mindful of when you use this API to get a copy
+as it will reflect the state of the metadata at the time the call is made.
 
+Example:
+
+```javascript
+var firstNameControl = metadataService.findControl(newCustomerTaskMetadata, 'FMCustomer_FirstName');
+```
 
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| componentMetadata|any||
-| controlName|string||
+| componentMetadata|any|A metadata instance|
+| controlName|string|A control name|
 
 #### Returns [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md)
+
+
 
 ### findPage
 
 
 findPage(pageName: string): [PageMetadata](view-model-ipage-ipagemetadata.md)
 
+Gets a copy of the current metadata instance of a specified page, for the purpose of inspecting the metadata
+(not to be used for changing the metadata).
+Note: Since metadata can be changed at any time by business logic, you must be mindful of when you use this API to get a copy
+as it will reflect the state of the metadata at the time the call is made.
 
+Example:
+
+```javascript
+var reservationDetailsMetadata = metadataService.findPage("Reservation-details");
+```
 
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| pageName|string||
+| pageName|string|A page name|
 
 #### Returns [PageMetadata](view-model-ipage-ipagemetadata.md)
+
+
 
 ### getFilterExpression
 
@@ -299,14 +362,19 @@ getFormReference(componentName: string, filterContext: any, excludeContext: bool
 
 hideNavigation(pageNamesToHide: string [ ]): any
 
+Hides the specified page(s) from the default landing page.
+Example:
 
+```javascript
+metadataService.hideNavigation('Select-a-customer', 'Select-a-vehicle');
+```
 
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| pageNamesToHide|string [ ]||
+| pageNamesToHide|string [ ]|Page name(s)|
 
 #### Returns any
 

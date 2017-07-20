@@ -99,7 +99,7 @@ Description of the control.
 
 DisplayField: string (optional) 
 
-
+The name of a control on the page, whose value should be displayed to the user. Usually, this value is user-friendly/user-readable text.
 
 
 ### DisplayKey
@@ -281,7 +281,7 @@ String indicating the control type.
 
 ValueField: string (optional) 
 
-
+The name of a control on the page, whose value should be used when committing the data. Usually, this value is a unique key.
 
 
 ### ValueKey
