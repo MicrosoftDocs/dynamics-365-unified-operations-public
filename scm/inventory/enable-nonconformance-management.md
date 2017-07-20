@@ -59,7 +59,7 @@ See also
 
 [Quality management processes](quality-management-processes.md)
 
-[Set up prerequisites for non-conformance management (Task guide)](http://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+[Set up prerequisites for non-conformance management (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management)
 
 
 

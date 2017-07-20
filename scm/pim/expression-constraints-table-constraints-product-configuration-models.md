@@ -254,7 +254,7 @@ See also
 
 [Create an expression constraint (Task guide)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
 
-[Add a calculation to a product configuration model (Task guide)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+[Add a calculation to a product configuration model (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/add-calculation-product-configuration-model)
 
 
 

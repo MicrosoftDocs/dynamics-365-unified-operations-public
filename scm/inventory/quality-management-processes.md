@@ -104,9 +104,9 @@ See also
 
 [Quarantine orders](quarantine-orders.md)
 
-[Set up quality orders (Task guide)](http://ax.help.dynamics.com/en/wiki/set-up-quality-orders/)
+[Set up quality orders (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-quality-orders)
 
-[Inspect the quality of goods (Task guide)](http://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+[Inspect the quality of goods (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
 
 
 
