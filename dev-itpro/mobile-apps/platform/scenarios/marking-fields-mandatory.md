@@ -46,7 +46,25 @@ The workspace class can be used to mark "Delivery terms" field as mandatory usin
 1. Get the control name using app designer. For this demo the control name is "DynamicDetail_DlvTerm"
 2. Add the following code to set the mandatory property for the control. Note that we are using the reflection based setProperty method to set mandatory property.
 
-![alt text](media/workspace-api/MarkFieldAsMandatoryCode.png "Changes needed in workspace class")
+```javascript
+public SysAppWorkspaceMetadata getWorkspaceMetadata()
+{
+    SysAppWorkspaceMetadata appMetadata;
+
+    appMetadata = super();
+
+    var createCustAction = appMetadata.getAction("createCust");
+    this.setCustAccountMandatory(createCustAction);
+
+    return appMetadata;
+}
+
+private void setCustAccountMandatory(SysAPpActionMetadata _createCustAction)
+{
+    var custAccount = +createCustAction.getControl("DynamicDetail_DlvTerm");
+    custAccount.setProperty("Mandatory", true);
+}
+```
 
 3. Build the solution and then refresh app metadata on the mobile app.
 
