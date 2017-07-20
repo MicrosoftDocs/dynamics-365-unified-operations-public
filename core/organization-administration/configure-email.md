@@ -5,7 +5,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 07/12/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -161,8 +161,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 15. Click **Send**. The message should be delivered in one to five minutes.
 
 ## Other notes
-
-- The system talks to Exchange or the SMTP server like a normal email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#RecipientLimits) apply.
+The system talks to Exchange or an SMTP server like a normal email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#RecipientLimits) apply.
 
 See also
 --------
