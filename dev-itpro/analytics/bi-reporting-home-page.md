@@ -85,7 +85,7 @@ Working with aggregate data
 -   [ER Design domain specific format](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-format-2016-02-05) (Task guide)
 -   [ER Upload a configuration into Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services) (Task guide)
 -   [ER Import a configuration from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services) (Task guide)
--   [ER Design a configuration for generating reports in OPENXML format](http://ax.help.dynamics.com/en/wiki/design-a-configuration-for-generating-reports-in-openxml-format/) (Task guide)
+-   [ER Design a configuration for generating reports in OPENXML format](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11) (Task guide)
 -   [ER Configure destinations](/dynamics365/unified-operations/do-not-publish/er-destinations-2016-05) (Task guide)
 -   [ER Use financial dimensions as a data source (Part 1: Design data model)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1) (Task guide)
 -   [ER Use financial dimensions as a data source (Part 2: Model mapping)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2) (Task guide)
