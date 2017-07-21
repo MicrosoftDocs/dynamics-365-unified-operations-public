@@ -50,6 +50,7 @@ The following table shows whether each feature is available in:
 | Expense management| | | |
 | Extensibility| | | |
 | Financial management| | | |
+| | Ability to delete a main account and dimension value | Yes | Yes |
 | Help| | | |
 | Human capital management| | | |
 | Inventory management| | | |
@@ -67,6 +68,7 @@ The following table shows whether each feature is available in:
 | Product master data| | | |
 | Project management and accounting| | | |
 | Retail| | | |
+| |Ability to sell and return outside assortments | Yes | No |
 | Sales| | | |
 | Service management| | | |
 | Supply chain management| | | |
