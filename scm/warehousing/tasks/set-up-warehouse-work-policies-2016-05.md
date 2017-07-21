@@ -25,7 +25,8 @@ ms.search.industry: DIST
 ms.author: johanho
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Set up warehouse work policies 
+---
+# Set up warehouse work policies 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

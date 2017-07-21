@@ -25,7 +25,8 @@ ms.search.industry: DIST
 ms.author: pjacobse
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Trace an item or raw material
+---
+# Trace an item or raw material
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

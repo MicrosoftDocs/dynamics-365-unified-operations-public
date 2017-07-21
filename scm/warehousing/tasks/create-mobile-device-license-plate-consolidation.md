@@ -25,7 +25,8 @@ ms.search.industry: DIST
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Create a mobile device menu item for license plate consolidation
+---
+# Create a mobile device menu item for license plate consolidation
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

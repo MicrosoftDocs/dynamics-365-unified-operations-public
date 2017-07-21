@@ -25,7 +25,8 @@ ms.search.industry: RET
 ms.author: jeffbl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Configure the functionality profile for a sales representative
+---
+# Configure the functionality profile for a sales representative
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 

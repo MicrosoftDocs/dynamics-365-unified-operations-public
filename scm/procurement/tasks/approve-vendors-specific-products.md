@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Approve vendors for specific products
+---
+# Approve vendors for specific products
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

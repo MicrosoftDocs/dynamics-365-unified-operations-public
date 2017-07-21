@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Dispose of a fixed asset using a free text invoice
+---
+# Dispose of a fixed asset using a free text invoice
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

@@ -25,7 +25,8 @@ ms.search.region: France
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Daily interest calculation for late payment and lump sum in the invoice and collection letter (France)
+---
+# Daily interest calculation for late payment and lump sum in the invoice and collection letter (France)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

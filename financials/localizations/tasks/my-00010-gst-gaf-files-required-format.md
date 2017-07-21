@@ -25,7 +25,8 @@ ms.search.region: Malaysia
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# GST - Generate GAF files in the required format (Malaysia)
+---
+# GST - Generate GAF files in the required format (Malaysia)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

@@ -25,7 +25,8 @@ ms.search.industry: MFG
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Create an operations resource
+---
+# Create an operations resource
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

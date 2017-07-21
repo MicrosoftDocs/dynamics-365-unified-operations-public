@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Key invoice data into accounts payable using an approval journal
+---
+# Key invoice data into accounts payable using an approval journal
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

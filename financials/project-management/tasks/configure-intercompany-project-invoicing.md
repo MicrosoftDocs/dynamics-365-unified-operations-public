@@ -25,7 +25,8 @@ ms.search.industry: SVCIND
 ms.author: knelson
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Configure intercompany project invoicing
+---
+# Configure intercompany project invoicing
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

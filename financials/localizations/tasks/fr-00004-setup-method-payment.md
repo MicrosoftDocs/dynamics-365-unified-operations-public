@@ -25,7 +25,8 @@ ms.search.region: France
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Set up method of payment (France)
+---
+# Set up method of payment (France)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

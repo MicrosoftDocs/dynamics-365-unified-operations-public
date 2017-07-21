@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Create a purchase order for a one-time supplier
+---
+# Create a purchase order for a one-time supplier
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

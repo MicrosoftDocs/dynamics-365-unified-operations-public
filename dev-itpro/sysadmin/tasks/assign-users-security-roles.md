@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Assign users to security roles
+---
+# Assign users to security roles
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

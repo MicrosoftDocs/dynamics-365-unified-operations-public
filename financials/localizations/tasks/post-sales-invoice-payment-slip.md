@@ -25,7 +25,8 @@ ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Post a sales invoice with a payment slip (Denmark)
+---
+# Post a sales invoice with a payment slip (Denmark)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

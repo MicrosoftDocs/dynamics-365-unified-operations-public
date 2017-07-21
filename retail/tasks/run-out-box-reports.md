@@ -25,7 +25,8 @@ ms.search.industry: RET
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Generate and run out-of-box reports
+---
+# Generate and run out-of-box reports
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 

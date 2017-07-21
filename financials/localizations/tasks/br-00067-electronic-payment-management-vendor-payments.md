@@ -25,7 +25,8 @@ ms.search.industry: MFG;DIST;SVCIND
 ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Electronic payment management for vendor payments (Brazil)
+---
+# Electronic payment management for vendor payments (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

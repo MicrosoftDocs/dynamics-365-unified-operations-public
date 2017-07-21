@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Import ISO20022 credit transfer configuration
+---
+# Import ISO20022 credit transfer configuration
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

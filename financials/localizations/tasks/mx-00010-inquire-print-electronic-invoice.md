@@ -25,7 +25,8 @@ ms.search.region: Mexico
 ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Inquire and print an electronic invoice (Mexico)
+---
+# Inquire and print an electronic invoice (Mexico)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

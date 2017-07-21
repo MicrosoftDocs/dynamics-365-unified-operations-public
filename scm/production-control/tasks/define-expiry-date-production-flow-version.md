@@ -25,7 +25,8 @@ ms.search.industry: MFG
 ms.author: conradv
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Define an expiry date for a production flow version
+---
+# Define an expiry date for a production flow version
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Enable users to receive workflow-related email messages
+---
+# Enable users to receive workflow-related email messages
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

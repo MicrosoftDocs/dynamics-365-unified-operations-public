@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Change a fixed asset group
+---
+# Change a fixed asset group
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

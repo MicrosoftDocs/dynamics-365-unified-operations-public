@@ -25,7 +25,8 @@ ms.search.industry: MFG
 ms.author: crytt
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Report as finished to a plate-controlled location 
+---
+# Report as finished to a plate-controlled location 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

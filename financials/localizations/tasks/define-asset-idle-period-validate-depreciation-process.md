@@ -25,7 +25,8 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Define asset idle period and validate depreciation process (Japan)
+---
+# Define asset idle period and validate depreciation process (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

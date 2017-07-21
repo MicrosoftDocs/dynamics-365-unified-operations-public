@@ -25,7 +25,8 @@ ms.search.industry: MFG
 ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Classify a product using category hierarchies
+---
+# Classify a product using category hierarchies
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

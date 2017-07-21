@@ -25,7 +25,8 @@ ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Electronic transmission of VAT declaration (ELSTER) (Germany)
+---
+# Electronic transmission of VAT declaration (ELSTER) (Germany)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

@@ -25,7 +25,8 @@ ms.search.industry: PUBSEC
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Set up purchase agreement classifications in the public sector
+---
+# Set up purchase agreement classifications in the public sector
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

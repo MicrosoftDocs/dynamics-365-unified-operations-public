@@ -25,7 +25,8 @@ ms.search.industry: DIST
 ms.author: bibis
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Register items for an advanced warehousing enabled item using an item arrival journal
+---
+# Register items for an advanced warehousing enabled item using an item arrival journal
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

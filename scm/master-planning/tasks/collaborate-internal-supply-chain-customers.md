@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Collaborate with internal supply chain customers
+---
+# Collaborate with internal supply chain customers
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

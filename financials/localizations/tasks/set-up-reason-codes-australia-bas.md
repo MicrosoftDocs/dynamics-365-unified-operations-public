@@ -25,7 +25,8 @@ ms.search.region: Australia
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Set up reason codes for Australia BAS
+---
+# Set up reason codes for Australia BAS
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

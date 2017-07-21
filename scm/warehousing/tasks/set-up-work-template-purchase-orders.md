@@ -25,7 +25,8 @@ ms.search.industry: DIST
 ms.author: bibis
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Set up a work template for purchase orders
+---
+# Set up a work template for purchase orders
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

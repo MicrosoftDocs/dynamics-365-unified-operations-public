@@ -25,7 +25,8 @@ ms.search.region: Norway
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Customer payment based on payment ID (Norway)
+---
+# Customer payment based on payment ID (Norway)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

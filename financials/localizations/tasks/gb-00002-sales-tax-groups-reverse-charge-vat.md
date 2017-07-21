@@ -25,7 +25,8 @@ ms.search.region: United Kingdom
 ms.author: epodkolz
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Set up sales tax groups for reverse charge VAT (UK)
+---
+# Set up sales tax groups for reverse charge VAT (UK)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

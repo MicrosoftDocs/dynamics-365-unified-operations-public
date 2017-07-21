@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Create an operating unit
+---
+# Create an operating unit
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

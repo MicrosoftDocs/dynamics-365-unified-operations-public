@@ -25,7 +25,8 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Adjust an asset retirement obligation estimate (Japan)
+---
+# Adjust an asset retirement obligation estimate (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

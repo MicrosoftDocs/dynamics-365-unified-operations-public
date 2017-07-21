@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Set up and generate accounts receivable aging information
+---
+# Set up and generate accounts receivable aging information
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

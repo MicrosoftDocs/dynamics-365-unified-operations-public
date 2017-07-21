@@ -25,7 +25,8 @@ ms.search.region: France
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Update method of payment on customer (France)
+---
+# Update method of payment on customer (France)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

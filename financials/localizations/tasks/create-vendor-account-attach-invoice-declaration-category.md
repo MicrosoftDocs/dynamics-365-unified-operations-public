@@ -25,7 +25,8 @@ ms.search.region: Iceland
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Create a vendor account and attach the invoice declaration category (Iceland)
+---
+# Create a vendor account and attach the invoice declaration category (Iceland)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

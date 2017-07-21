@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Configure the global address book
+---
+# Configure the global address book
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Create a bank facility agreement for a letter of credit
+---
+# Create a bank facility agreement for a letter of credit
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

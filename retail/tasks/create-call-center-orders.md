@@ -25,7 +25,8 @@ ms.search.industry: RET
 ms.author: josaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Create call center orders
+---
+# Create call center orders
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 

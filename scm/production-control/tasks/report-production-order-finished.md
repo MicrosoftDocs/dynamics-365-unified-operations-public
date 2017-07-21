@@ -25,7 +25,8 @@ ms.search.industry: MFG
 ms.author: johanho
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Report a production order as finished
+---
+# Report a production order as finished
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

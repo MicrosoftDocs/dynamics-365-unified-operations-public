@@ -25,7 +25,8 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Create an accelerated depreciation document and enter usage data (Japan)
+---
+# Create an accelerated depreciation document and enter usage data (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

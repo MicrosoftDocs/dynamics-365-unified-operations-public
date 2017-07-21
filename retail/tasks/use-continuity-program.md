@@ -25,7 +25,8 @@ ms.search.industry: RET
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Use a continuity program
+---
+# Use a continuity program
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 

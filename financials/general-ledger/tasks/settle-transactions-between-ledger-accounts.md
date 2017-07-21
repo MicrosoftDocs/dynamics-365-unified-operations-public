@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Settle transactions between ledger accounts
+---
+# Settle transactions between ledger accounts
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

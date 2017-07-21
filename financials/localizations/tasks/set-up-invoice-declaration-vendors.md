@@ -25,7 +25,8 @@ ms.search.region: Iceland
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Set up an invoice declaration for vendors (Iceland)
+---
+# Set up an invoice declaration for vendors (Iceland)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

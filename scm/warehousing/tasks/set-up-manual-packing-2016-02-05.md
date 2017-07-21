@@ -25,7 +25,8 @@ ms.search.industry: DIST
 ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Set up manual packing (February & May 2016 only)
+---
+# Set up manual packing (February & May 2016 only)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

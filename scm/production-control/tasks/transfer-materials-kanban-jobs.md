@@ -25,7 +25,8 @@ ms.search.industry: MFG
 ms.author: crytt
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Transfer materials with kanban jobs (February 2016 only)
+---
+# Transfer materials with kanban jobs (February 2016 only)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

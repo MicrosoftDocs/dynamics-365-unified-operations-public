@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Design a configuration for generating reports in OpenXML format for electronic reporting (ER)
+---
+# Design a configuration for generating reports in OpenXML format for electronic reporting (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

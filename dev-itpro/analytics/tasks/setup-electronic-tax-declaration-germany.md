@@ -25,7 +25,8 @@ ms.search.region: Germany
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Set up electronic tax declaration (Germany)
+---
+# Set up electronic tax declaration (Germany)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

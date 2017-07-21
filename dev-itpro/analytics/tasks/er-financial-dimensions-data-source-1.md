@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Design data model to use financial dimensions as a data source for electronic reporting (ER)
+---
+# Design data model to use financial dimensions as a data source for electronic reporting (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

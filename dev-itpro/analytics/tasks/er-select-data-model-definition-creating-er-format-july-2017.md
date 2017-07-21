@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Select data model definition while creating format for electronic reporting (ER)
+---
+# Select data model definition while creating format for electronic reporting (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

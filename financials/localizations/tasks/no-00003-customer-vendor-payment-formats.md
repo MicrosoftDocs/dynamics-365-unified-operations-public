@@ -25,7 +25,8 @@ ms.search.region: Norway
 ms.author: epodkolz
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Customer and vendor payment formats (Norway)
+---
+# Customer and vendor payment formats (Norway)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

@@ -25,7 +25,8 @@ ms.search.region: Brazil
 ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Generate emails for approved NF-e and attach DANFE PDF files and NF-e XML files to the emails (Brazil)
+---
+# Generate emails for approved NF-e and attach DANFE PDF files and NF-e XML files to the emails (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

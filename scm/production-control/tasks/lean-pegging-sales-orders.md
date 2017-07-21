@@ -25,7 +25,8 @@ ms.search.industry: MFG
 ms.author: crytt
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Lean pegging from sales orders
+---
+# Lean pegging from sales orders
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

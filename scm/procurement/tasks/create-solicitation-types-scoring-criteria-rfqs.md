@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Create solicitation types and scoring criteria for RFQs
+---
+# Create solicitation types and scoring criteria for RFQs
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

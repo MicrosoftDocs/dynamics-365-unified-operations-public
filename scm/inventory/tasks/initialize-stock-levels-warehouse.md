@@ -25,7 +25,8 @@ ms.search.industry: DIST
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Initialize stock levels in the warehouse
+---
+# Initialize stock levels in the warehouse
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

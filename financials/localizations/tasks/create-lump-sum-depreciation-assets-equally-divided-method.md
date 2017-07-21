@@ -25,7 +25,8 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Create lump-sum depreciation assets using equally-divided method (Japan)
+---
+# Create lump-sum depreciation assets using equally-divided method (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

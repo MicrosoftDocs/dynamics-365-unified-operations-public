@@ -25,7 +25,8 @@ ms.search.industry: MFG
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# View cost entries for a cost object
+---
+# View cost entries for a cost object
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

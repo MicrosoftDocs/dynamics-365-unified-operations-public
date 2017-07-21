@@ -25,7 +25,8 @@ ms.search.industry: RET
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Create and associate registers
+---
+# Create and associate registers
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 

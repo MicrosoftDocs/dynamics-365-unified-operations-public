@@ -25,7 +25,8 @@ ms.search.industry: RET
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Configure machine learning-powered product recommendations
+---
+# Configure machine learning-powered product recommendations
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 

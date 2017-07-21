@@ -25,7 +25,8 @@ ms.search.region: Brazil
 ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Set up PIS and COFINS tables (Brazil)
+---
+# Set up PIS and COFINS tables (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

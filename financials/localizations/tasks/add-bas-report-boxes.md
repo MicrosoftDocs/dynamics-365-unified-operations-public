@@ -25,7 +25,8 @@ ms.search.region: Australia
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Add report boxes and generate the Australia Business Activity Statement (BAS)
+---
+# Add report boxes and generate the Australia Business Activity Statement (BAS)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

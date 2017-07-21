@@ -25,7 +25,8 @@ ms.search.industry: DIST
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Correct inventory tracking information
+---
+# Correct inventory tracking information
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

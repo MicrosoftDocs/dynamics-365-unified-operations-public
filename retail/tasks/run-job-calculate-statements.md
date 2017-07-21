@@ -25,7 +25,8 @@ ms.search.industry: RET
 ms.author: josaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Configure and run a job to calculate statements
+---
+# Configure and run a job to calculate statements
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 

@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Key invoice data into the AP system using invoice pool
+---
+# Key invoice data into the AP system using invoice pool
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

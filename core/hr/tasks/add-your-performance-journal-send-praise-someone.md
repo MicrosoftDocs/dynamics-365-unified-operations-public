@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Add to your performance journal and send praise to someone
+---
+# Add to your performance journal and send praise to someone
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

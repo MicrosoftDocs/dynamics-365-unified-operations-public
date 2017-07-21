@@ -25,7 +25,8 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Generate consumption tax report (Japan)
+---
+# Generate consumption tax report (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

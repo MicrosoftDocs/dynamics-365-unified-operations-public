@@ -25,7 +25,8 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Receive an EU entry certificate
+---
+# Receive an EU entry certificate
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

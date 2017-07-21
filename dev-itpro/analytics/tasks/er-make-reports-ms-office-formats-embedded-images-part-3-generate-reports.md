@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Generate reports in Microsoft Office formats with embedded images for electronic reporting (ER)
+---
+# Generate reports in Microsoft Office formats with embedded images for electronic reporting (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

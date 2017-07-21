@@ -25,7 +25,8 @@ ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Depreciation adjustments for additional acquisitions in the second year (Germany)
+---
+# Depreciation adjustments for additional acquisitions in the second year (Germany)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

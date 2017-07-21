@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----# Manage unit of measure
+---
+# Manage unit of measure
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
