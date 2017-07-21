@@ -1,3 +1,4 @@
+# [Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/fin-and-ops/index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Get started
 ### [Before you buy](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -2323,7 +2324,6 @@
 
 
 ## Deployment
-
 ### [Deploy a demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### Cloud deployment
