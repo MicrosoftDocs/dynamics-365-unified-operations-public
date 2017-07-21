@@ -36,11 +36,11 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 New to Dynamics 365 for Finance and Operations, Enterprise edition? We've put together step-by-step guidance whether you’re still evaluating Finance and Operations or ready to make a purchase.
 
 ## Step one:  Try out Finance and Operations free for 30 days
-You can try Dynamics 365 for Finance and Operations for 30 days through a simple email signup. The trial version of Finance and Operations includes Getting started task guides that provide step-by-step instructions that allow you to view specific scenarios in action. The product is available to explore and exercise scenarios, but cannot be customized. Demo data is included to ease the use of the product and to make the experience more meaningful. A reminder email will be sent 3 days prior to the trial expiration. Get details at [www.microsoft.com/en-us/dynamics365/operations](www.microsoft.com/en-us/dynamics365/operations).
+You can try Dynamics 365 for Finance and Operations for 30 days through a simple email signup. The trial version of Finance and Operations includes Getting started task guides that provide step-by-step instructions that allow you to view specific scenarios in action. The product is available to explore and exercise scenarios, but cannot be customized. Demo data is included to ease the use of the product and to make the experience more meaningful. A reminder email will be sent 3 days prior to the trial expiration. Get details at [www.microsoft.com/en-us/dynamics365/operations](https://www.microsoft.com/en-us/dynamics365/operations).
 
 ## Step two: Choose a deployment option
 You can now deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in the cloud or on-premises. Cloud deployments offer an ERP service that is fully managed by Microsoft, while on-premises deployments are deployed locally within a customer's data center.
-For more information, see: [Deployment options](../dev-itpro/deployment/choose-deployment-type.md) 
+For more information, see: [Deployment options](dynamics365/unified-operations/dev-itpro/deployment/choose-deployment-type) 
 
 ## Step three: Buy and manage a subscription
 To explore subscription options, go to the [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing) pricing page. This page includes several different plans to fit your organization’s needs.
@@ -65,7 +65,7 @@ In Volume Licensing, Finance and Operations is available through:
 A Microsoft Cloud Solution Provider can work closely with you to understand the needs of your business or organization. [Use the Microsoft Partner Center portal to find a partner to fit your needs](https://partnercenter.microsoft.com/en-us/partner/home). 
 
 ### Buy through a Dynamics partner (on-premises)
-You must work with a partner to purchase Finance and Operations on-premises. For more information, see [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](../dev-itpro/get-started/purchase-on-premises)
+You must work with a partner to purchase Finance and Operations on-premises. For more information, see [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises)
 
 ### Choose your support option
 Microsoft provides flexible, industry-leading support, services, and resources that enable users to quickly address technical issues and maximize return on your Dynamics 365 investment. Choose a plan that best meets your business requirements. 
