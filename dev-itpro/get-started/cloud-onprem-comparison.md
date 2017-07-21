@@ -44,9 +44,34 @@ The following table shows whether each feature is available in:
 | | Analytics and insights through Power BI | Yes | No |
 | | Analytics and intelligence  | No | No |
 | Cost accounting| | | |
+| | Cost accounting| Yes | ? |
+| | Cost accounting – Cross legal entities | Yes | Yes |
+| | Cost accounting allocation bases| Yes | Yes |
+| | Cost accounting content pack for Power BI| Yes | No |
+| | Cost accounting dimension hierarchies | Yes | Yes |
+| | Cost accounting Get started wizard| Yes | Yes |
+| | Cost accounting ledger administration workspace| Yes | Hybrid |
+| | Cost accounting Power BI reports| Yes | No |
 | Cost management| | | |
 | Customization| | | |
 | Data management and integration| | | |
+| Development and deployment | | | |
+| | Build automation: Automatic update of model version during build | Yes | Yes |
+| | Build automation: Option to include runtime packages in the deployable package of the automated build output| Yes | Yes |
+| | Deployment| Yes | ? |
+| | Developer tooling - Extensible controls are guided away from non-public APIs| Yes | Yes |
+| | Development and customization - Changing the extended data type (EDT) of a table field using table extensions| Yes | Yes |
+| | Development and customization - Compliance properties on table fields| Yes | Yes |
+| | Development and customization - Extending a group control| Yes | Yes |
+| | Development and customization - Extending the Country Region Codes property| Yes | Yes |
+| | Development and customization - Validating events on form data sources and form data source fields| Yes | Yes |
+| | Development and customization (AX 7.0)| Yes | No |
+| | Development and customization (Platform update 1)| Yes | No |
+| | Development and customization (Platform update 2 )| Yes | No |
+| | Development and customization (Platform update 3)| Yes | Yes |
+| | Development and customization (Platform update 5)| Yes | Yes |
+| | Development tooling - Customize and add your own field descriptions| Yes | Yes |
+| | Development tooling - New tabbed workspace pattern| Yes | Yes |
 | Document management| | | |
 | Electronic reporting| | | |
 | Expense management| | | |
@@ -58,6 +83,9 @@ The following table shows whether each feature is available in:
 | | Accounts payable check templates using Electronic Reporting | Yes | No |
 | | Accounts receivable | Yes | No |
 | | Belgian Enterprise number Registration ID is used for customer and vendor accounts | Yes | Yes |
+| | Budget control data maintenance| Yes | Yes |
+| | Budgeting (February 2016)| Yes | No |
+| | Budgeting (November 2016)| Yes | No |
 | Help| | | |
 | Human capital management| | | |
 | | Allow a project resource to delegate timesheet entry and submission to any user | Yes | Yes |
@@ -90,11 +118,14 @@ The following table shows whether each feature is available in:
 | Vendor collaboration| | | |
 | Visual scheduling| | | |
 | Warehouse management| | | |
+| | Warehouse - Partial cycle counting at a location| Yes | Hybrid |
+| | Warehouse enhancements for high volume distribution centers| Yes | ? |
+| | Warehouse operation enhancements| Yes | ? |
+| | Warehouse work policies| Yes | ? |
+| | Warehousing Power BI reports| Yes | No |
 | | Batch and license plate confirmation | Yes | Yes |
-
-
-
-| | Benefits processing history| Yes | ? |
+| | Build your own data warehouse and incrementally export entities| Yes | ? |
+| Web/browser client | | | |
 | | Browser client - Ability to model toolbar actions in the overflow menu| Yes | Yes |
 | | Browser client - Access to Support via the Help & Support menu| Yes | Yes |
 | | Browser client - Create a workspace through personalization| Yes | Yes |
@@ -104,14 +135,12 @@ The following table shows whether each feature is available in:
 | | Browser client - Personalize your workspace by adding a link to a details page| Yes | Yes |
 | | Browser client - Support for Right to Left languages| Yes | Yes |
 | | Browser framework - PowerApps Host control| Yes | Yes |
-| | Budget control data maintenance| Yes | Yes |
-| | Budgeting (February 2016)| Yes | No |
-| | Budgeting (November 2016)| Yes | No |
+
+
+
+| | Benefits processing history| Yes | ? |
 | | Budgeting Power BI: actual vs. budget| Yes | No |
 | | Build and ship rich workspaces with embedded Power BI reports | Yes | No |
-| | Build automation: Automatic update of model version during build | Yes | Yes |
-| | Build automation: Option to include runtime packages in the deployable package of the automated build output| Yes | Yes |
-| | Build your own data warehouse and incrementally export entities| Yes | ? |
 | | Case management| Yes | ? |
 | | Case management for production and quality orders| Yes | ? |
 | | Cash and bank management| Yes | ? |
@@ -130,14 +159,6 @@ The following table shows whether each feature is available in:
 | | Configuration driven extension| Yes | No |
 | | Consignment inventory| Yes | ? |
 | | Consignment inventory| Yes | ? |
-| | Cost accounting| Yes | ? |
-| | Cost accounting – Cross legal entities | Yes | Yes |
-| | Cost accounting allocation bases| Yes | Yes |
-| | Cost accounting content pack for Power BI| Yes | No |
-| | Cost accounting dimension hierarchies | Yes | Yes |
-| | Cost accounting Get started wizard| Yes | Yes |
-| | Cost accounting ledger administration workspace| Yes | Hybrid |
-| | Cost accounting Power BI reports| Yes | No |
 | | Cost control workspace for Mobile app| Yes | No |
 | | Country/region localizations & languages| Yes | ? |
 | | Create Power BI reports with enumerated fields| Yes | ? |
@@ -150,20 +171,6 @@ The following table shows whether each feature is available in:
 | | Customize application reports using extensions| Yes | ? |
 | | Data management and integration| Yes | ? |
 | | Demand replenishment for raw material picking | Yes | Yes |
-| | Deployment| Yes | ? |
-| | Developer tooling - Extensible controls are guided away from non-public APIs| Yes | Yes |
-| | Development and customization - Changing the extended data type (EDT) of a table field using table extensions| Yes | Yes |
-| | Development and customization - Compliance properties on table fields| Yes | Yes |
-| | Development and customization - Extending a group control| Yes | Yes |
-| | Development and customization - Extending the Country Region Codes property| Yes | Yes |
-| | Development and customization - Validating events on form data sources and form data source fields| Yes | Yes |
-| | Development and customization (AX 7.0)| Yes | No |
-| | Development and customization (Platform update 1)| Yes | No |
-| | Development and customization (Platform update 2 )| Yes | No |
-| | Development and customization (Platform update 3)| Yes | Yes |
-| | Development and customization (Platform update 5)| Yes | Yes |
-| | Development tooling - Customize and add your own field descriptions| Yes | Yes |
-| | Development tooling - New tabbed workspace pattern| Yes | Yes |
 | | Direct deposit| Yes | No |
 | | Discounts - Quantity limit and exclude discount lines| Yes | No |
 | | Distribute tasks where it makes sense and increase efficiency| Yes | ? |
@@ -338,11 +345,4 @@ The following table shows whether each feature is available in:
 | | Vendor prepayments in fixed-price project estimates| Yes | ? |
 | | View a comprehensive list of changes across employees, positons, and jobs | Yes | ? |
 | | Visual scheduling| Yes | No |
-| | Warehouse - Partial cycle counting at a location| Yes | Hybrid |
-| | Warehouse enhancements for high volume distribution centers| Yes | ? |
-| | Warehouse operation enhancements| Yes | ? |
-| | Warehouse work policies| Yes | ? |
-| | Warehousing Power BI reports| Yes | No |
-| | Web client| Yes | No |
-| | Web client| Yes | ? |
-| | Web client| Yes | ? |
+| | Web client x 3| Yes | No |
