@@ -55,7 +55,7 @@ The following resources provide information about the Finance and Operations use
 -   [Display pages side-by-side using the Open in New Window icon](/dynamics365/unified-operations/fin-and-ops/get-started/display-pages-side-by-side)
 -   [Advanced filtering and query options](/dynamics365/unified-operations/fin-and-ops/get-started/advanced-filtering-query-options)
 -   [Finance and Operations client FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/client-faq)
--   [Change the banner or logo (Task guide)](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/)
+-   [Change the banner or logo (Task guide)](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo)
 
 ## Help system
 The following resources provide an overview of the Help system and explain how to view field descriptions.

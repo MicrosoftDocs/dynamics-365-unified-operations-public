@@ -67,11 +67,11 @@ You can specify which inventory statuses are blocking statuses by using the **I
 See also
 --------
 
-[Create and maintain an inventory blocking (Task guide)](https://ax.help.dynamics.com/en/wiki/create-and-maintain-an-inventory-blocking/)
+[Create and maintain an inventory blocking (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-maintain-inventory-blocking)
 
 [Quality management processes](quality-management-processes.md)
 
-[Inspect the quality of goods (Task guide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+[Inspect the quality of goods (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
 
 
 

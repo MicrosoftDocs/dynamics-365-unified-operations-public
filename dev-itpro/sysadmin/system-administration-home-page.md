@@ -72,10 +72,10 @@ Lifecycle Services
 ## Security
 -   [Role-based security](role-based-security.md)
 -   [Security architecture](security-architecture.md)
--   [Create new users (Task guide)](http://ax.help.dynamics.com/en/wiki/create-new-users/) (Task guide)
--   [Assign users to security roles (Task guide)](http://ax.help.dynamics.com/en/wiki/assign-users-to-security-roles/)
--   [Set up segregation of duties (Task guide)](http://ax.help.dynamics.com/en/wiki/set-up-segregation-of-duties/)
--   [Identify and resolve conflicts in segregation of duties (Task guide)](http://ax.help.dynamics.com/en/wiki/identify-and-resolve-conflicts-in-segregation-of-duties/)
+-   [Create new users (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) (Task guide)
+-   [Assign users to security roles (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles)
+-   [Set up segregation of duties (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/set-up-segregation-duties)
+-   [Identify and resolve conflicts in segregation of duties (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties)
 
 ## Licensing
 -   [ISV licensing](../dev-tools/isv-licensing.md)
@@ -90,7 +90,7 @@ Lifecycle Services
 -   [Finance and Operations cloud platform monthly updates](faq-platform-monthly-updates.md)
 -   [Batch processing overview](batch-processing-overview.md)
 -   [Batch server overview](batch-server-overview.md)
--   [Create a batch job](http://ax.help.dynamics.com/en/wiki/create-a-batch-job/) (Task guide)
+-   [Create a batch job](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-batch-job) (Task guide)
 -   [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
 -   [Maintenance mode](maintenance-mode.md)
 -   [Demo data overview](../get-started/demo-data.md)

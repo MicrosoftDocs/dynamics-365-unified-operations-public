@@ -41,8 +41,8 @@ Number sequences
 ----------------
 
 -   [Number sequence overview](number-sequence-overview.md)
--   [Set up number sequences by using a wizard](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (Task guide)
--   [Set up number sequences on an individual basis](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (Task guide)
+-   [Set up number sequences by using a wizard](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard) (Task guide)
+-   [Set up number sequences on an individual basis](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis) (Task guide)
 
 ## Address books
 -   [Address books](qa-address-books.md)
@@ -72,17 +72,17 @@ Number sequences
 
 ## Electronic signatures
 -   [Electronic signature overview](electronic-signature-overview.md)
--   [Set up electronic signatures](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (Task guide)
+-   [Set up electronic signatures](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures) (Task guide)
 
 ## Organizations
 -   [Organizations and organizational hierarchies](organizations-organizational-hierarchies.md)
 -   [Plan the organizational hierarchy](plan-organizational-hierarchy.md)
--   [Create an operating unit](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (Task guide)
--   [Create an organization hierarchy](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (Task guide)
--   [Create a legal entity](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (Task guide)
+-   [Create an operating unit](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit) (Task guide)
+-   [Create an organization hierarchy](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (Task guide)
+-   [Create a legal entity](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (Task guide)
 
 ## General administration
--   [Change the banner or logo](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (Task guide)
+-   [Change the banner or logo](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (Task guide)
 -   [About date/time data and time zones](date-time-zones.md)
 -   [Record templates](record-templates.md)
 

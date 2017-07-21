@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Replenishment with withdrawal kanbans | Microsoft Docs
+title: Replenishment with withdrawal kanbans
 description: This topic describes how the withdrawal kanban is used for material replenishment for manufacturing activities.
 author: johanhoffmann
 manager: AnnBe

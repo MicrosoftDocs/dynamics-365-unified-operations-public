@@ -96,7 +96,7 @@ Cross-company data sharing isn't supported for the following scenarios:
 3.  In the **Asset type** list, click **Data package**.
 4.  Click any of the available data package files to download them.
 
-For details about how to configure Finance and Operations to use a template, see [Configure financial cross-company data sharing (Task guide)](http://ax.help.dynamics.com/en/wiki/configure-financial-cross-company-data-sharing/).
+For details about how to configure Finance and Operations to use a template, see [Configure financial cross-company data sharing (Task guide)](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing).
 
 ## Currently supported crosscompany data sharing templates
 <table>
@@ -147,7 +147,7 @@ For details about how to configure Finance and Operations to use a template, see
 See also
 --------
 
-[Configure financial cross-company data sharing (Task guide)](http://ax.help.dynamics.com/en/wiki/configure-financial-cross-company-data-sharing/)
+[Configure financial cross-company data sharing (Task guide)](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing)
 
 
 
