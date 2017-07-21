@@ -43,7 +43,7 @@ You can now deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise
 For more information, see: [Deployment options](../dev-itpro/deployment/choose-deployment-type.md) 
 
 ## Step three: Buy and manage a subscription
-With Dynamics 365, you can evolve your business on your terms. Start with just what you need to run your business. For example, you might want to start with the Talent app, and then move to Finance and Operations as your needs change. To explore options, go to the [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing) pricing page. This page includes several different plans to fit your organization’s needs.
+To explore subscription options, go to the [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing) pricing page. This page includes several different plans to fit your organization’s needs.
 
 There are many ways to buy a subscription of Dynamics 365 for Finance and Operations:
 - Buy through a partner, and use volume licensing (cloud or on-premises)
