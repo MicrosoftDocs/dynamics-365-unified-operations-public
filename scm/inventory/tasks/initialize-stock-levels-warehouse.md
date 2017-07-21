@@ -3,7 +3,7 @@
  
 title: Initialize stock levels in the warehouse
 description: This procedure shows you how to get the on-hand inventory updated manually using an Inventory movement journal. 
-author: TonyaFehr 
+author: perlynne
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: perlynne
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Initialize stock levels in the warehouse
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Initialize stock levels in the warehouse
 
 This procedure shows you how to get the on-hand inventory updated manually using an Inventory movement journal. (It’s also possible to update on-hand inventory by importing transactions in data entities.) You can run this guide in demo data company USMF where all the prerequisites like journal name, item setup, posting profiles, and accounts are available. The guide suggests specific values for the item and dimensions that are used. If you choose a different item, you may need to enter values for different dimensions.
 

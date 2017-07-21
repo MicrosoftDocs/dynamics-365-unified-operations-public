@@ -3,7 +3,7 @@
  
 title: Count inventory in a warehouse
 description: This procedure walks you through the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse. 
-author: TonyaFehr 
+author: MarkusFogelberg
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: mafoge
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Count inventory in a warehouse
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Count inventory in a warehouse
 
 This procedure walks you through the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse. The procedure applies to “basic warehousing” functionality, available in the Inventory management module, not to the warehousing functionality that’s available in the Warehouse management module. You can walk through this procedure in demo data company USMF, or using your own data. If you’re using your own data, make sure that you have products and locations set up, and that you’ve created an inventory journal name for counting journals. Inventory counting is normally carried out by a warehouse employee.
 

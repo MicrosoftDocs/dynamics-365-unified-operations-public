@@ -3,7 +3,7 @@
  
 title: Create a product
 description: This procedure walks through creating a new product in the retail product hierarchy. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a product
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a product
 
 This procedure walks through creating a new product in the retail product hierarchy. The demo data company used to create this task is USRT, and this task is intended for the Merchandising Manager and Product Designer.
 

@@ -3,7 +3,7 @@
  
 title: Manage assortments 
 description: This procedure demonstrates how to create and publish a new product assortment and uses the demo data company USRT. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 10/31/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Manage assortments 
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Manage assortments 
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to create and publish a new product assortment and uses the demo data company USRT. This procedure requires Dynamics AX application 7.0.1 or later, and Dynamics AX platform 7.1.  
 

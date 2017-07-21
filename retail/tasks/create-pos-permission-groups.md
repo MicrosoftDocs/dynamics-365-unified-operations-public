@@ -3,7 +3,7 @@
  
 title: Create POS permission groups
 description: This procedure will show how to create a POS permission group. 
-author: TonyaFehr 
+author: scott-tucker
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: scotttuc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create POS permission groups
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Create POS permission groups
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure will show how to create a POS permission group. The demo data company used to create this task is USRT. This task is intended for the Retail operations manager role.
 

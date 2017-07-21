@@ -3,7 +3,7 @@
  
 title: Print GST tax invoices (Malaysia)
 description: This procedure walks you through how to print a GST tax invoice. 
-author: TonyaFehr 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Print GST tax invoices (Malaysia)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Print GST tax invoices (Malaysia)
 
 This procedure walks you through how to print a GST tax invoice. Before you can complete this procedure, you must select the Invoice type 'GST invoice' in general ledger parameters.
 This procedure was completed along with the required print setup using the MYMF demo data company.

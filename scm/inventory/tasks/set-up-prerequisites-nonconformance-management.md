@@ -3,7 +3,7 @@
  
 title: Set up prerequisites for management
 description: Use this procedure to enable nonconformance management processes. 
-author: TonyaFehr 
+author: perlynne
 manager: AnnBe 
 ms.date: 06/07/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: perlynne
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up prerequisites for management
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up prerequisites for management
 
 Use this procedure to enable nonconformance management processes. A nonconformance describes a procedure or item that has a quality problem, where the descriptive information includes the source and type of problem. This procedure uses the USMF demo data company. This procedure is typically performed by a quality manager.
 

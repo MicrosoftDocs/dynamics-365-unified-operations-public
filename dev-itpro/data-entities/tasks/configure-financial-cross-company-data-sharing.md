@@ -3,7 +3,7 @@
  
 title: Configure financial cross-company data sharing
 description: This procedure shows how to configure, enable, validate, and resolve conflicts when sharing data between companies. 
-author: TonyaFehr 
+author: aprilolson
 manager: AnnBe 
 ms.date: 06/22/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: margoc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: aolson
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Configure financial cross-company data sharing
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Configure financial cross-company data sharing
 
 This procedure shows how to configure, enable, validate, and resolve conflicts when sharing data between companies. It uses the USMF company and the Financial data sharing template.
 

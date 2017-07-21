@@ -3,7 +3,7 @@
  
 title: Define lean manufacturing work cells
 description: A work cell is a specific form of resource groups that can be used in lean manufacturing process activities. 
-author: TonyaFehr 
+author: cvocph
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: conradv
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Define lean manufacturing work cells
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Define lean manufacturing work cells
 
 A work cell is a specific form of resource groups that can be used in lean manufacturing process activities. Work cells have input and output locations and a capacity definition based on a production flow model. To learn more about the basic concepts of lean manufacturing work cells and capacity calculations, see the white papers on Lean manufacturing. The demo data company used to create this procedure is USMF
 

@@ -3,7 +3,7 @@
  
 title: Estimate a production order
 description: You can run this procedure by using the USMF demo data company or your own data set. 
-author: TonyaFehr 
+author: johanhoffmann
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Estimate a production order
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Estimate a production order
 
 You can run this procedure by using the USMF demo data company or your own data set. In both cases, you need to have an open production order that has the Created status. This is the second procedure out of seven which explains the production order lifecycle.
 

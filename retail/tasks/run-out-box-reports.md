@@ -3,7 +3,7 @@
  
 title: Generate and run out-of-box reports
 description: Use this task guide to run out of box reports in headquarters from different workspaces and Inquiries & Sales reports located under Retail & Commerce. 
-author: TonyaFehr 
+author: ashishmsft
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: asharchw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Generate and run out-of-box reports
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Generate and run out-of-box reports
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 Use this task guide to run out of box reports in headquarters from different workspaces and Inquiries & Sales reports located under Retail & Commerce.
 

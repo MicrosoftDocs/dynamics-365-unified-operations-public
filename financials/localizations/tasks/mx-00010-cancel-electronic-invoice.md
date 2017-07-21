@@ -3,7 +3,7 @@
  
 title: Cancel an electronic invoice (Mexico)
 description: You can cancel a CFDI electronic invoice that was previously validated and certified by the PAC. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 05/09/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Cancel an electronic invoice (Mexico)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Cancel an electronic invoice (Mexico)
 
 You can cancel a CFDI electronic invoice that was previously validated and certified by the PAC. You can also cancel a CFDI electronic invoice by using the manual process.
 

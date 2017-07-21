@@ -3,7 +3,7 @@
  
 title: Import and create multiple one-time vendors and invoices in the public sector
 description: When approval or a contract in the form of a purchase order is not required, you can create an invoice for a new vendor with whom you have no regular relationship, at the same time as creating a record for the vendor. 
-author: TonyaFehr 
+author: twheeloc
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: PUBSEC
-ms.author: tfehr 
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Import and create multiple one-time vendors and invoices in the public sector
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Import and create multiple one-time vendors and invoices in the public sector
 
 When approval or a contract in the form of a purchase order is not required, you can create an invoice for a new vendor with whom you have no regular relationship, at the same time as creating a record for the vendor. This procedure was created using the PSUS demo company data in the public sector partition.
 

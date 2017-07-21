@@ -3,7 +3,7 @@
  
 title: Identify and deploy candidate selection tools
 description: Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 02/16/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Identify and deploy candidate selection tools
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Identify and deploy candidate selection tools
 
 Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills.  However, candidates with the skills you need might already be employed in your organization. You can search for a specific skill set among existing employees, or new applicants. This allows a recruiter to quickly gather and screen applicants who have applied for open position now or in the past, or to find potential candidates from their existing pool of employees. Use this task recording to learn how the skill mapping functionality can help you find the right person for an open position. The demo data company used to create this procedure is USMF.
 

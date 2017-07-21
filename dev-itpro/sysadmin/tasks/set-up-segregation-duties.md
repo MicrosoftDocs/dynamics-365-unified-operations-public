@@ -3,7 +3,7 @@
  
 title: Set up segregation of duties
 description: You can set up rules to separate tasks that must be performed by different users. 
-author: TonyaFehr 
+author: maertenm
 manager: AnnBe 
 ms.date: 11/15/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: sericks
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: maertenm
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up segregation of duties
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up segregation of duties
 
 You can set up rules to separate tasks that must be performed by different users. This concept is named segregation of duties. For example, you might not want the same person both to acknowledge the receipt of goods and to process payment to the vendor. Segregation of duties helps you reduce the risk of fraud, and it also helps you detect errors or irregularities. You can also use segregation of duties to enforce internal control policies. Complete the following procedure to create a rule. You must be a system administrator to complete the procedure. The demo data company used to create this procedure is DAT. 
 

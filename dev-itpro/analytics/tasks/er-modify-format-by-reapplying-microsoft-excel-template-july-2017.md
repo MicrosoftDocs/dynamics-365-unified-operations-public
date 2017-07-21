@@ -3,7 +3,7 @@
  
 title: Modify a format by reapplying a Microsoft Excel template for electronic reporting (ER)
 description: To complete the steps in this procedure, you must first complete the procedure, ER - Design a configuration for generating reports in OPENXML format. 
-author: TonyaFehr 
+author: NickSelin
 manager: AnnBe 
 ms.date: 06/19/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Modify a format by reapplying a Microsoft Excel template for electronic reporting (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Modify a format by reapplying a Microsoft Excel template for electronic reporting (ER)
 
 To complete the steps in this procedure, you must first complete the procedure, ER - Design a configuration for generating reports in OPENXML format.
 This procedure explains how to modify an Electronic reporting (ER) format configuration by reapplying a Microsoft Excel template that has been modified. In this procedure, you will import a modified Excel template into ER format configurations that have been created for the sample company, Litware, Inc., and then generate electronic documents. This procedure is intended for users who have the system administrator or electronic reporting developer role. These steps can be completed by using the GBSI dataset. Before you begin, download and save the file, SampleVendPaymWsReport2.xlsx, which is listed in the Help topic, Modify Electronic reporting format by reapplying an Excel template (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template/).

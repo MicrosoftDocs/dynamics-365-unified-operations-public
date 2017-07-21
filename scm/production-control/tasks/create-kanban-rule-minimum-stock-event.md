@@ -3,7 +3,7 @@
  
 title: Create a kanban rule using a minimum stock event
 description: This procedure focuses on the setup needed to create a kanban rule using a minimum stock event to ensure that a specific product is always available at a specific location. 
-author: TonyaFehr 
+author: ChristianRytt
 manager: AnnBe 
 ms.date: 08/24/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: crytt
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a kanban rule using a minimum stock event
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a kanban rule using a minimum stock event
 
 This procedure focuses on the setup needed to create a kanban rule using a minimum stock event to ensure that a specific product is always available at a specific location. A kanban rule is created to transfer material to the location when the inventory level drops below 200 pieces. By running the Pegging event processing, the needed kanbans are created. The demo data company used to create this task is USMF. This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product in a lean environment.
 

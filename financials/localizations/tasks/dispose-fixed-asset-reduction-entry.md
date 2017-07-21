@@ -3,7 +3,7 @@
  
 title: Dispose of a fixed asset with reduction entry (Japan)
 description: Use this task to learn how to dispose of a fixed asset with reduction entry for Japan. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 09/22/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Dispose of a fixed asset with reduction entry (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Dispose of a fixed asset with reduction entry (Japan)
 
 Use this task to learn how to dispose of a fixed asset with reduction entry for Japan.
 

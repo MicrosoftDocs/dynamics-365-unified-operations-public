@@ -3,7 +3,7 @@
  
 title: Change the banner or logo
 description: The following procedure lists the steps that system administrators can use to update the banner or logo image that is displayed for a legal entity. 
-author: TonyaFehr 
+author: aneesmsft
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: sericks
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: aneesa
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Change the banner or logo
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Change the banner or logo
 
 The following procedure lists the steps that system administrators can use to update the banner or logo image that is displayed for a legal entity. The demo data company used to create this procedure is USMF.
 

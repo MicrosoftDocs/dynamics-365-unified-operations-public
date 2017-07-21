@@ -3,7 +3,7 @@
  
 title: Set up the chart of accounts for a legal entity in Mexico
 description: Set up specific parameters in the chart of accounts to allow the generation of electronic ledger accounting reports for a Mexican legal entity. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up the chart of accounts for a legal entity in Mexico
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up the chart of accounts for a legal entity in Mexico
 
 Set up specific parameters in the chart of accounts to allow the generation of electronic ledger accounting reports for a Mexican legal entity. This task was created using the MXMF demo data company.
 

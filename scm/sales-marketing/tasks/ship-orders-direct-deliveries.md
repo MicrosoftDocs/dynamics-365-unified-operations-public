@@ -3,7 +3,7 @@
  
 title: Ship orders as direct deliveries
 description: This procedure demonstrates how to create a direct delivery for a sales order. 
-author: TonyaFehr 
+author: omulvad
 manager: AnnBe 
 ms.date: 02/12/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Ship orders as direct deliveries
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Ship orders as direct deliveries
 
 This procedure demonstrates how to create a direct delivery for a sales order. You use direct delivery when you want to ship goods to the customer directly from your vendor, instead of shipping them to your own warehouse first. You can run this procedure in demo data company USMF or on your own data. To successfully complete the second sub-task "Create direct deliveries from the workbench", make sure that the item that you choose on the sales order has a default Vendor specified on the Purchase FastTab of the Released product master.
 

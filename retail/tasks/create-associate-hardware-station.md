@@ -3,7 +3,7 @@
  
 title: Create and associate a hardware station
 description: This procedure walks through how to create a new hardware station. 
-author: TonyaFehr 
+author: jashanno
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: jashanno
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create and associate a hardware station
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Create and associate a hardware station
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through how to create a new hardware station. A new hardware profile will be created and used to add new hardware stations to a pre-defined store (channel). This procedure uses the USRT company in demo data.
 

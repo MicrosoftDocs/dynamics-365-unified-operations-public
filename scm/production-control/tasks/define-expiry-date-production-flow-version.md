@@ -3,7 +3,7 @@
  
 title: Define an expiry date for a production flow version
 description: To end the validity and the processing of a production flow version on a given date, or to plan replacement of an active version with a new version, you have to set an expiry date on the version. 
-author: TonyaFehr 
+author: cvocph
 manager: AnnBe 
 ms.date: 10/07/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: conradv
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Define an expiry date for a production flow version
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Define an expiry date for a production flow version
 
 To end the validity and the processing of a production flow version on a given date, or to plan replacement of an active version with a new version, you have to set an expiry date on the version. It is not necessary to deactivate the version.
 

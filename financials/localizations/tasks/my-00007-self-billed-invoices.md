@@ -3,7 +3,7 @@
  
 title: Self-billed invoices (Malaysia)
 description: This procedure walks you through the Creation and printing of Vendor self-billed invoice. 
-author: TonyaFehr 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Self-billed invoices (Malaysia)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Self-billed invoices (Malaysia)
 
 This procedure walks you through the Creation and printing of Vendor self-billed invoice.
 Before you can complete this procedure, you must have selected the Use self-billed invoice option in General ledger parameters and you must be in the 'Accounts payable clerk' role.

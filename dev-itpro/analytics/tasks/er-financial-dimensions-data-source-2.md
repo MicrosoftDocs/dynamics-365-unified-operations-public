@@ -3,7 +3,7 @@
  
 title: Map models  to use financial dimensions as a data source for electronic reporting (ER)
 description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. 
-author: TonyaFehr 
+author: NickSelin
 manager: AnnBe 
 ms.date: 10/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Map models  to use financial dimensions as a data source for electronic reporting (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Map models  to use financial dimensions as a data source for electronic reporting (ER)
 
 The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. These steps can be performed in any company.
 To complete these steps, you must first complete the steps in the “ER Use financial dimensions as a data source (Part 1: Design data model” procedure.

@@ -3,7 +3,7 @@
  
 title: Golden tax integration export setup (China)
 description: This procedure shows how to configure the export format for golden tax integration. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 10/27/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC)
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Golden tax integration export setup (China)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Golden tax integration export setup (China)
 
 This procedure shows how to configure the export format for golden tax integration. 
 Before you complete this procedure, you should have already completed the setup of the golden tax integration.

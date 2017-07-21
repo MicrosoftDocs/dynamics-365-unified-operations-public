@@ -3,7 +3,7 @@
  
 title: Set parameters for an electronic invoice (Mexico)
 description: This procedure walks you through setting up an electronic invoice and the PAC account to get the approval and the digital stamp. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set parameters for an electronic invoice (Mexico)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set parameters for an electronic invoice (Mexico)
 
 This procedure walks you through setting up an electronic invoice and the PAC account to get the approval and the digital stamp. This procedure can only be completed for a legal entity with a primary address in Mexico. This procedure was created using the demo data company MXMF. The certificates used to encrypt the XML message must be previously installed and the schema XSD file must be copied in the application as well before to start this procedure.
 

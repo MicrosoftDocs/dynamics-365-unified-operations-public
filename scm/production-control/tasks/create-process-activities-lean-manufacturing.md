@@ -3,7 +3,7 @@
  
 title: Create process activities for lean manufacturing
 description: Create a process activity for lean manufacturing. 
-author: TonyaFehr 
+author: cvocph
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: conradv
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create process activities for lean manufacturing
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create process activities for lean manufacturing
 
 Create a process activity for lean manufacturing. 
 Prerequisites: 

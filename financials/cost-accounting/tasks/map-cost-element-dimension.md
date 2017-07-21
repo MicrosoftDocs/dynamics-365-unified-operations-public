@@ -3,7 +3,7 @@
  
 title: Map a cost element dimension
 description: A cost controller can use this procedure to map a cost element dimension to a cost element dimension in the MXMF legal entity. 
-author: TonyaFehr 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 06/28/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Map a cost element dimension
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Map a cost element dimension
 
 A cost controller can use this procedure to map a cost element dimension to a cost element dimension in the MXMF legal entity. This recording uses the USP2 demo data company.
 

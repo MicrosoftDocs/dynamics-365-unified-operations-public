@@ -3,7 +3,7 @@
  
 title: Set up withholding tax
 description: Withholding tax is a tax on vendors that does not create sales tax transactions. 
-author: TonyaFehr 
+author: twheeloc
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: vstehman
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up withholding tax
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up withholding tax
 
 Withholding tax is a tax on vendors that does not create sales tax transactions. Withholding tax that is calculated on vendor payments is a liability. Therefore, only balance sheet accounts or liability accounts are valid accounts for posting withholding tax. This task guide demonstrates how to set up withholding tax.
 

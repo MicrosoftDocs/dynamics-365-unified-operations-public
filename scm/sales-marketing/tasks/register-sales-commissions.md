@@ -3,7 +3,7 @@
  
 title: Register sales commissions
 description: This procedure shows you how sales commissions are calculated and registered. 
-author: TonyaFehr 
+author: omulvad
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Register sales commissions
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Register sales commissions
 
 This procedure shows you how sales commissions are calculated and registered. You can run this procedure in demo data company USMF or on your own data. Before starting this guide, run the guide called "Set up sales commission rules" to make sure that you have all the necessary commission calculation setup.
 Take note of the customer and item numbers that you have chosen for the commission process and use them when asked to create a sales order in this guide.

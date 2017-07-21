@@ -3,7 +3,7 @@
  
 title: Create a collection letter sequence
 description: Use this task guide to create a collection letter sequence. 
-author: TonyaFehr 
+author: mikefalkner
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mfalkner
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a collection letter sequence
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a collection letter sequence
 
 Use this task guide to create a collection letter sequence. This task uses the USMF demo company.
 

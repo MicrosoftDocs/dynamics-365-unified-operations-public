@@ -3,7 +3,7 @@
  
 title: Establish customer method of payment
 description: Create a method of payment for customer payments. 
-author: TonyaFehr 
+author: ShivamPandey-msft
 manager: AnnBe 
 ms.date: 11/15/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shpandey
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Establish customer method of payment
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Establish customer method of payment
 
 Create a method of payment for customer payments. This task uses the USMF demo company.
 

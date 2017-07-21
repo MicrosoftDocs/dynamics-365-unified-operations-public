@@ -3,7 +3,7 @@
  
 title: Issue an EU entry certificate
 description: This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate. 
-author: TonyaFehr 
+author: mrolecki
 manager: AnnBe 
 ms.date: 02/26/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Issue an EU entry certificate
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Issue an EU entry certificate
 
 This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate. This procedure was created using the demo data company DEMF.
 

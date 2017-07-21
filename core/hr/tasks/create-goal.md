@@ -3,7 +3,7 @@
  
 title: Create a goal
 description: You can create goals, add activities to goals, track measurements, and link the goals to a review. 
-author: TonyaFehr 
+author: mikefalkner
 manager: AnnBe 
 ms.date: 10/13/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: rschloma
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mfalkner
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a goal
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a goal
 
 You can create goals, add activities to goals, track measurements, and link the goals to a review. This procedure was created using the USMF demo data company. This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.
 

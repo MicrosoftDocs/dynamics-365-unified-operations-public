@@ -3,7 +3,7 @@
  
 title: Base price and trade agreements
 description: This procedure walks through creating channel-specific sales price trade agreements. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Base price and trade agreements
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Base price and trade agreements
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through creating channel-specific sales price trade agreements. This procedure uses the USRT demo data company.
 

@@ -3,7 +3,7 @@
  
 title: Generate reports in Microsoft Office formats with embedded images for electronic reporting (ER)
 description: The following steps explain how a user playing either ‘System administrator’ or ‘Electronic reporting developer’ role can design Electronic reporting (ER) configurations to generate electronic documents in MS office formats (Excel and Word) containing embedded images. 
-author: TonyaFehr 
+author: NickSelin
 manager: AnnBe 
 ms.date: 06/13/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Generate reports in Microsoft Office formats with embedded images for electronic reporting (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Generate reports in Microsoft Office formats with embedded images for electronic reporting (ER)
 
 The following steps explain how a user playing either ‘System administrator’ or ‘Electronic reporting developer’ role can design Electronic reporting (ER) configurations to generate electronic documents in MS office formats (Excel and Word) containing embedded images.
 In this example, you will use created ER configurations for sample company, ‘Litware, Inc.’.  To complete these steps, you must first complete the steps in the “ER Make reports in MS Office formats with embedded images (Part 2: Review configurations)” task guide. These steps can be performed in ‘USMF’ company.

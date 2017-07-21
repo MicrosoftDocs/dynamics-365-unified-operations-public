@@ -3,7 +3,7 @@
  
 title: Create a new warehouse layout
 description: This procedure shows you how to set up information about the locations in a warehouse. 
-author: TonyaFehr 
+author: perlynne
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: perlynne
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a new warehouse layout
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a new warehouse layout
 
 This procedure shows you how to set up information about the locations in a warehouse. This applies only to warehouses created using "basic warehousing" in the Inventory management module, not to warehouses created in the Warehouse management module. You can use this procedure in demo data company USMF, or on your own data.
 

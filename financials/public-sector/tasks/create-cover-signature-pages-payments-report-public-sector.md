@@ -3,7 +3,7 @@
  
 title: Create cover and signature pages for a payments report for the public sector
 description: When you create cover and signature pages for a payment report, you can specify what information should appear. 
-author: TonyaFehr 
+author: twheeloc
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: PUBSEC
-ms.author: tfehr 
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create cover and signature pages for a payments report for the public sector
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create cover and signature pages for a payments report for the public sector
 
 When you create cover and signature pages for a payment report, you can specify what information should appear. This includes, for example, the names and titles of the people who should approve the proposed payments. This procedure was created using the PSUS demo company data in the public sector partition.
 

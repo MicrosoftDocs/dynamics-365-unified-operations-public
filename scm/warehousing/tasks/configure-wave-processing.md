@@ -3,7 +3,7 @@
  
 title: Configure wave processing
 description: This guide describes how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically. 
-author: TonyaFehr 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 06/07/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Configure wave processing
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Configure wave processing
 
 This guide describes how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically. You specify the criteria by setting up wave templates and queries that match a wave with released lines in sales orders, production orders, or kanban orders. Wave processing is used in warehouses that use the functionality in the Warehouse management module, and not those that use the functionality in the Inventory management module. You can run this procedure in demo data company USMF.
 

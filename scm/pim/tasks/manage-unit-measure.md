@@ -3,7 +3,7 @@
  
 title: Manage unit of measure
 description: This procedure shows how to define a unit of measure, provide translations for the unit and it's description, and define conversion rules for related units. 
-author: TonyaFehr 
+author: sorenva
 manager: AnnBe 
 ms.date: 02/12/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sorenand
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Manage unit of measure
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Manage unit of measure
 
 This procedure shows how to define a unit of measure, provide translations for the unit and it's description, and define conversion rules for related units. You can walk through this procedure using demo data, or using your own data.
 

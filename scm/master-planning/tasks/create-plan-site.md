@@ -3,7 +3,7 @@
  
 title: Create a plan for a site
 description: The production planner calculates the material and capacity requirements for the production of a specific item. 
-author: TonyaFehr 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 06/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a plan for a site
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a plan for a site
 
 The production planner calculates the material and capacity requirements for the production of a specific item. After the sourcing suggestions are created, he finds the orders at the site for which he is planning and firms the orders, starting from the urgent ones. The most urgent orders are the ones that need to be firmed on the current date. Use the demo data company USMF to perform these tasks.
 

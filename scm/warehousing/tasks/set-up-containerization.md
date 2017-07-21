@@ -3,7 +3,7 @@
  
 title: Set up containerization
 description: This procedure describes how to automate the containerization of loads in Warehouse management. 
-author: TonyaFehr 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 06/07/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up containerization
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up containerization
 
 This procedure describes how to automate the containerization of loads in Warehouse management. Automated containerization creates containers and the picking work for shipments when a wave is processed and work lines can be split into quantities that fit the containers. This helps warehouse workers to pick the items directly into the chosen container. Compared to the manual packing process, tasks such as creating containers, assigning items, and closing containers are automated by the system. This procedure uses the USMF demo company and is performed by a Warehouse manager.
 

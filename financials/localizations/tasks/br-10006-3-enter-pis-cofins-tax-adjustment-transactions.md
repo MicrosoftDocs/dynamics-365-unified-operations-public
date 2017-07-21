@@ -3,7 +3,7 @@
  
 title: Enter PIS and COFINS tax adjustment transactions (Brazil)
 description: In Fiscal books, you can create and post a journal for manual PIS and COFINS tax adjustments by using the adjustment codes that are defined by the tax authority. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Enter PIS and COFINS tax adjustment transactions (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Enter PIS and COFINS tax adjustment transactions (Brazil)
 
 In Fiscal books, you can create and post a journal for manual PIS and COFINS tax adjustments by using the adjustment codes that are defined by the tax authority. After the adjustment is posted, it can be viewed in the tax assessment. This task uses the BRMF demo company.
 

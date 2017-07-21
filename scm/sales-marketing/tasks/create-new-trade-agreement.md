@@ -3,7 +3,7 @@
  
 title: Create a new trade agreement
 description: This procedure shows you how to create a trade agreement where you register a new product sales price that you've agreed with a specific customer. 
-author: TonyaFehr 
+author: omulvad
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a new trade agreement
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a new trade agreement
 
 This procedure shows you how to create a trade agreement where you register a new product sales price that you've agreed with a specific customer. You can run this procedure in demo data company USMF or on your own data. If you’re using your own data, before you start this guide you need to make sure that a Trade agreement journal name exists where the Default relation is set to “Price (sales)”.
 

@@ -3,7 +3,7 @@
  
 title: Create a purchase order with a delivery schedule
 description: This procedure demonstrates how to create a delivery schedule for a purchase order. 
-author: TonyaFehr 
+author: FrankDahl
 manager: AnnBe 
 ms.date: 08/23/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: fdahl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a purchase order with a delivery schedule
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a purchase order with a delivery schedule
 
 This procedure demonstrates how to create a delivery schedule for a purchase order. A delivery schedule is used when a quantity on an order or a journal is requested to be delivered in multiple shipments. The example shown in this guide can be used in the USMF demo data company. This procedure would typically be done by a purchasing agent.
 

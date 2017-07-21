@@ -3,7 +3,7 @@
  
 title: Define continuity schedules
 description: This topic walks through setting up a continuity program (otherwise known as reoccurring orders). 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Define continuity schedules
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Define continuity schedules
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This topic walks through setting up a continuity program (otherwise known as reoccurring orders). This topic uses company USRT in the demo data.
 

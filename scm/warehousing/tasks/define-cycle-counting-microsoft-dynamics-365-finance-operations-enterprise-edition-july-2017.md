@@ -3,7 +3,7 @@
  
 title: Define cycle counting 
 description: Cycle counting is a warehouse process that you can use to audit on-hand inventory items. 
-author: TonyaFehr 
+author: MarkusFogelberg
 manager: AnnBe 
 ms.date: 06/23/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mafoge
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Define cycle counting 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Define cycle counting 
 
 Cycle counting is a warehouse process that you can use to audit on-hand inventory items. This task recording shows how to set up the default counting work priority, enable a mobile device menu item to process both picking and counting operations, enable a counting threshold trigger when a location becomes empty, and enable a cycle counting plan for a specific item in a specific warehouse. Typically, these tasks are performed by a warehouse manager. You can go through this procedure in the USMF demo data company or in your own data.
 

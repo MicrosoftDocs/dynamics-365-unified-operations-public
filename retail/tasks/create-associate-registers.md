@@ -3,7 +3,7 @@
  
 title: Create and associate registers
 description: This procedure demonstrates how to create a point of sale (POS) register. 
-author: TonyaFehr 
+author: rubencdelgado
 manager: AnnBe 
 ms.date: 10/05/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: rubendel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create and associate registers
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Create and associate registers
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to create a point of sale (POS) register. This procedure uses the demo data company USRT.
 

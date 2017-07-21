@@ -3,7 +3,7 @@
  
 title: Define discrete manufacturing resource group
 description: A resource group is a set of operations resources that typically correspond to the physical organization of work cells, defined by yellow lines on the production shop floor. 
-author: TonyaFehr 
+author: sorenva
 manager: AnnBe 
 ms.date: 02/12/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: sorenand
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Define discrete manufacturing resource group
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Define discrete manufacturing resource group
 
 A resource group is a set of operations resources that typically correspond to the physical organization of work cells, defined by yellow lines on the production shop floor. This procedure shows you how to define a ressource group for use in discrete production. You can walk through this procedure in demo data company USMF, or use your own data.
 

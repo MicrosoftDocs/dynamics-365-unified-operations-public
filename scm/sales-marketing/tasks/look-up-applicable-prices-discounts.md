@@ -3,7 +3,7 @@
  
 title: Look up applicable prices and discounts
 description: This procedure shows how to find the price and/or discount for a product which is currently valid for a specific customer, without creating a sales order. 
-author: TonyaFehr 
+author: omulvad
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Look up applicable prices and discounts
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Look up applicable prices and discounts
 
 This procedure shows how to find the price and/or discount for a product which is currently valid for a specific customer, without creating a sales order. The procedure walks through a specific example, and you need follow the example using the USMF demo company in order to select the necessary values.
 

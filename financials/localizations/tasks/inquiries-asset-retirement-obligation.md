@@ -3,7 +3,7 @@
  
 title: Inquire on asset retirement obligation-related transactions (Japan)
 description: For Japan, transactions and amounts of asset retirement obligations (ARO) need to be reported separately from the underlying fixed assets. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 09/16/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Inquire on asset retirement obligation-related transactions (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Inquire on asset retirement obligation-related transactions (Japan)
 
 For Japan, transactions and amounts of asset retirement obligations (ARO) need to be reported separately from the underlying fixed assets. 
 

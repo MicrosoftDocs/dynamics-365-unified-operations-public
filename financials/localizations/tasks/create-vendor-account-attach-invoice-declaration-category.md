@@ -3,7 +3,7 @@
  
 title: Create a vendor account and attach the invoice declaration category (Iceland)
 description: This procedure walks you through creating a vendor with configuration for an invoice declaration. 
-author: TonyaFehr 
+author: mrolecki
 manager: AnnBe 
 ms.date: 05/09/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Iceland
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a vendor account and attach the invoice declaration category (Iceland)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a vendor account and attach the invoice declaration category (Iceland)
 
 This procedure walks you through creating a vendor with configuration for an invoice declaration. The demo data company used to create this procedure is DEMF with the country of legal entity primary address updated to Iceland.
 

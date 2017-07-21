@@ -3,7 +3,7 @@
  
 title: Correct inventory tracking information
 description: This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information. 
-author: TonyaFehr 
+author: MarkusFogelberg
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: mafoge
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Correct inventory tracking information
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Correct inventory tracking information
 
 This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information. In this example, we’ll update the information of a batch controlled item by changing an incorrectly registered batch to another batch. You can walk through this procedure in demo data company USPI, or using your own data. If you use your own data, you need to have an item that’s batch-enabled, and it must not be location-controlled. You also need to have an inventory journal name set up for inventory transfers. These tasks would normally be carried out by a warehouse employee.
 

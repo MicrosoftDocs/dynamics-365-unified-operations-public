@@ -3,7 +3,7 @@
  
 title: Daily interest calculation for late payment and lump sum in the invoice and collection letter (France)
 description: Indicate the interest calculation on an invoice. 
-author: TonyaFehr 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: France
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Daily interest calculation for late payment and lump sum in the invoice and collection letter (France)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Daily interest calculation for late payment and lump sum in the invoice and collection letter (France)
 
 Indicate the interest calculation on an invoice.
 This procedure was created using the demo data company FRRT. 

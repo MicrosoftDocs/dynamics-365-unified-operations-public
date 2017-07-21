@@ -3,7 +3,7 @@
  
 title: Configure access rights for a cost object controller
 description: Use this procedure to configure access rights for a cost object controller. 
-author: TonyaFehr 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 06/27/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Configure access rights for a cost object controller
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Configure access rights for a cost object controller
 
 Use this procedure to configure access rights for a cost object controller. This recording uses the USP2 demo data company.
 

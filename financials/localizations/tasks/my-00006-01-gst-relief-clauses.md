@@ -3,7 +3,7 @@
  
 title: Set up GST relief clauses (Malaysia)
 description: After you complete these procedures, when you generate a tax invoice for a customer who has bought a GST relieved item or service, the relief clause is automatically included in the final printed invoice. 
-author: TonyaFehr 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 11/09/2015
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up GST relief clauses (Malaysia)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up GST relief clauses (Malaysia)
 
 After you complete these procedures, when you generate a tax invoice for a customer who has bought a GST relieved item or service, the relief clause is automatically included in the final printed invoice. You must be in the Accounting supervisor role to complete these procedures. This procedure was created using the demo data company MYMF.
 

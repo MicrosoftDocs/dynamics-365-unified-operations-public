@@ -3,7 +3,7 @@
  
 title: Create a POS visual profile 
 description: This procedure walks through creating a new point of sale (POS) visual profile. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 12/05/2015
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a POS visual profile 
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Create a POS visual profile 
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through creating a new point of sale (POS) visual profile. A visual profile contains basic information that determines the appearance of POS registers. You can create several visual profiles and assign specific profiles to run on specific registers. This procedure uses the USRT demo data company.
 

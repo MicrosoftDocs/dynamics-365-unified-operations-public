@@ -3,7 +3,7 @@
  
 title: Create a bill of materials for a dimension-based product master
 description: For this procedure you should have completed the previous 4 guides in this sequence of eight recordings. 
-author: TonyaFehr 
+author: yuyus
 manager: AnnBe 
 ms.date: 06/21/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a bill of materials for a dimension-based product master
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a bill of materials for a dimension-based product master
 
 For this procedure you should have completed the previous 4 guides in this sequence of eight recordings. The first 4 recordings set up data that is required to complete this procedure. The demo data company used to create this procedure is USMF. This task is typically handled by the product designer.
 

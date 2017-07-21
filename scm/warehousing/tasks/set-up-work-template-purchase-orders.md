@@ -3,7 +3,7 @@
  
 title: Set up a work template for purchase orders
 description: This procedure focuses on the set up of a simple work template to be used when putting away received items. 
-author: TonyaFehr 
+author: BibiSp
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: bibis
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up a work template for purchase orders
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up a work template for purchase orders
 
 This procedure focuses on the set up of a simple work template to be used when putting away received items. Work templates determine the set of instructions presented to the warehouse worker on a mobile device when moving items from the receiving area. You can use this procedure with the data mentioned in demo data company USMF. Before you start this guide, create a work pool ID. In this example, a work pool ID called in Inbound is used. This procedure is intended for the warehouse manager.
 

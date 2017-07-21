@@ -3,7 +3,7 @@
  
 title: Set up purchase agreement classifications in the public sector
 description: The purchase agreement classification allows you to control the administrative information that is available on purchase agreements. 
-author: TonyaFehr 
+author: twheeloc
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: PUBSEC
-ms.author: tfehr 
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up purchase agreement classifications in the public sector
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up purchase agreement classifications in the public sector
 
 The purchase agreement classification allows you to control the administrative information that is available on purchase agreements. 
 This procedure was created for the French public sector using the PSUS demo company data in the public sector partition.

@@ -3,7 +3,7 @@
  
 title: Retail price adjustments
 description: This procedure will walk through creating a retail price adjustment. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 06/07/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Retail price adjustments
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Retail price adjustments
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure will walk through creating a retail price adjustment. A retail price adjustment can set an item's sale price directly, or modify its base sale price or trade agreement sale price. This procedure uses the USRT demo data company.
 

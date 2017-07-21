@@ -3,7 +3,7 @@
  
 title: Allocate carrying amount of shared asset and goodwill to cash generating units (Japan)
 description: This procedure walks you through allocating the carrying amount of shared asset and goodwill to each of the cash generating units. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Allocate carrying amount of shared asset and goodwill to cash generating units (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Allocate carrying amount of shared asset and goodwill to cash generating units (Japan)
 
 This procedure walks you through allocating the carrying amount of shared asset and goodwill to each of the cash generating units. The allocation must be done before activating the CGU group.
 

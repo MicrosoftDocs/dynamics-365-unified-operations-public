@@ -3,7 +3,7 @@
  
 title: User operation log by China working rule
 description: This procedure demonstrates how to generate a user operation log. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 10/27/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC)
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# User operation log by China working rule
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# User operation log by China working rule
 
 This procedure demonstrates how to generate a user operation log. The database log must be set up before you can generate the user operation log.  
 

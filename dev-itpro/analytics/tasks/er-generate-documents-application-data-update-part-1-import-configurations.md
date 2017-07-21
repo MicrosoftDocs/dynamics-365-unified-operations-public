@@ -3,7 +3,7 @@
  
 title: Import configurations to generate documents with application data update for electronic reporting (ER)
 description: To complete the steps in this procedure, you must first complete the procedure, “ER Create a configuration provider and mark it as active”. 
-author: TonyaFehr 
+author: NickSelin
 manager: AnnBe 
 ms.date: 06/19/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Import configurations to generate documents with application data update for electronic reporting (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Import configurations to generate documents with application data update for electronic reporting (ER)
 
 To complete the steps in this procedure, you must first complete the procedure, “ER Create a configuration provider and mark it as active”.
 The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document. In this procedure, you will import the required ER configurations that have been created for the sample company, Litware, Inc. and use them to generate electronic documents. This procedure is created for users with the assigned role of system administrator or electronic reporting developer. These steps can be completed using the DEMF dataset. Before you begin, download and save the files listed in the Help topic, “Generate electronic documents and update application data with ER tool” (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/generate-electronic-documents-update-application-data/). The files are Intrastat (model).xml, Intrastat (mapping).xml, and Intrastat (format).xml.

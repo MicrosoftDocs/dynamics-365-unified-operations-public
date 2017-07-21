@@ -3,7 +3,7 @@
  
 title: French bills of exchange and promissory notes (France)
 description: The French bill of exchange remittance report displays details about remitted bills of exchange. 
-author: TonyaFehr 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: France
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# French bills of exchange and promissory notes (France)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# French bills of exchange and promissory notes (France)
 
 The French bill of exchange remittance report displays details about remitted bills of exchange. The report includes information about your bank account, legal entity, and remittance type. It also provides a list of customer transactions that are affected by the bill of exchange. This report is used by accounts receivable clerks and accounts payable clerks to maintain customer payments. 
 

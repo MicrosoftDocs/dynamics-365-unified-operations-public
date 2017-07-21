@@ -3,7 +3,7 @@
  
 title: Define channel attributes
 description: Enrich the channel by adding channel and product attributes. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 02/17/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Define channel attributes
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Define channel attributes
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 Enrich the channel by adding channel and product attributes. You must add the channel to the organization default hierarchy before you can define the attributes.
 

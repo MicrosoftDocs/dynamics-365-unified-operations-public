@@ -3,7 +3,7 @@
  
 title: Customer payment based on payment ID (Norway)
 description: This task walks you through setting up and maintaining Norwegian payment IDs. 
-author: TonyaFehr 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 10/25/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Norway
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Customer payment based on payment ID (Norway)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Customer payment based on payment ID (Norway)
 
 This task walks you through setting up and maintaining Norwegian payment IDs. 
 

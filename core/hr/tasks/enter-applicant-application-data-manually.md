@@ -3,7 +3,7 @@
  
 title: Enter applicant and application data manually
 description: This procedure shows how to manually maintain information about applicants and their application. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Enter applicant and application data manually
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Enter applicant and application data manually
 
 This procedure shows how to manually maintain information about applicants and their application.   You can enter and maintain personal information, interview dates and times, references, competencies, and accommodation requests for applicants. You can also update the status of applicants’ applications for employment and create letters or email messages to communicate with applicants. When you create an applicant record, a person record for that applicant is created in the global address book.  	 The demo data company used to create this procedure is USMF.
 

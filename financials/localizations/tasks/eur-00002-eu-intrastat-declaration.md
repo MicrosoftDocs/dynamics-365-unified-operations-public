@@ -3,7 +3,7 @@
  
 title: Generate an EU Intrastat declaration
 description: This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format. 
-author: TonyaFehr 
+author: Anasyash
 manager: AnnBe 
 ms.date: 06/09/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: anasyash
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Generate an EU Intrastat declaration
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Generate an EU Intrastat declaration
 
 This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format. 
 Before you can complete this procedure, you must transfer transactions to the Intrastat. 

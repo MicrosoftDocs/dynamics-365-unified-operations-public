@@ -3,7 +3,7 @@
  
 title: Enable the payroll process for time and attendance
 description: This procedure shows how to enable the payroll process for time and attendance. 
-author: TonyaFehr 
+author: johanhoffmann
 manager: AnnBe 
 ms.date: 02/12/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Enable the payroll process for time and attendance
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Enable the payroll process for time and attendance
 
 This procedure shows how to enable the payroll process for time and attendance. The demo data company used to create this procedure is USMF.
 

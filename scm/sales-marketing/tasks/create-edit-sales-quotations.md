@@ -3,7 +3,7 @@
  
 title: Create and edit sales quotations
 description: This procedure demonstrates how to create and update a sales quotation. 
-author: TonyaFehr 
+author: omulvad
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create and edit sales quotations
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create and edit sales quotations
 
 This procedure demonstrates how to create and update a sales quotation. You can run this procedure on your own data or in demo data company USMF.
 

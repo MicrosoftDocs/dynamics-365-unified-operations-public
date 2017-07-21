@@ -3,7 +3,7 @@
  
 title: Cancel a customer fiscal document (project) (Brazil)
 description: You can cancel a customer invoice for a project. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Cancel a customer fiscal document (project) (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Cancel a customer fiscal document (project) (Brazil)
 
 You can cancel a customer invoice for a project. When you cancel a project invoice, a negative project invoice is created. When you post the negative project invoice, the original and negative project invoices are marked as canceled, and all the ledger and financial transactions are reversed. The original transaction is reported as canceled in the fiscal books, but the negative transaction isn't reported in the fiscal books. You can't cancel a project invoice that is partially or fully settled. Additionally, you can't cancel a project invoice if the posting date of the invoice is in a fiscal period that is closed. This task uses the BRMF demo company.
 

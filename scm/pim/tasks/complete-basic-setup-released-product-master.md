@@ -3,7 +3,7 @@
  
 title: Complete basic setup of a released product master
 description: This procedure shows how to complete the minimum setup that is required before the product master can be used in BOM versions. 
-author: TonyaFehr 
+author: yuyus
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Complete basic setup of a released product master
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Complete basic setup of a released product master
 
 This procedure shows how to complete the minimum setup that is required before the product master can be used in BOM versions.
 This is the third procedure out of eight which explains how to build combinations for dimension-based configuration. The demo data company used to create this procedure is USMF.

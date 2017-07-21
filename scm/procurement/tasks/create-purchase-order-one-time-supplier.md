@@ -3,7 +3,7 @@
  
 title: Create a purchase order for a one-time supplier
 description: This procedure shows you how to create a purchase order for a one-time supplier. 
-author: TonyaFehr 
+author: FrankDahl
 manager: AnnBe 
 ms.date: 08/23/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: fdahl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a purchase order for a one-time supplier
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a purchase order for a one-time supplier
 
 This procedure shows you how to create a purchase order for a one-time supplier. The supplier is created automatically with the purchase order, rather than having to create the vendor account manually. Purchase orders are typically created by a purchasing agent. The example shown in this guide can be used in the USMF demo data company. It is a prerequisite that a one-time vendor account has been set up in the Account payable parameters page.
 

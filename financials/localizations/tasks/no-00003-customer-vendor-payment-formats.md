@@ -3,7 +3,7 @@
  
 title: Customer and vendor payment formats (Norway)
 description: This task walks you through setting up and maintaining Norwegian payment IDs. 
-author: TonyaFehr 
+author: epodkolz
 manager: AnnBe 
 ms.date: 10/13/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Norway
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epodkolz
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Customer and vendor payment formats (Norway)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Customer and vendor payment formats (Norway)
 
 This task walks you through setting up and maintaining Norwegian payment IDs. 
 

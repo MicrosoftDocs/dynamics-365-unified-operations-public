@@ -3,7 +3,7 @@
  
 title: Assign a payment slip format to a customer account (Denmark)
 description: This procedure walks you through setting up the payment slip attachment format for a selected customer. 
-author: TonyaFehr 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 02/16/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Denmark
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Assign a payment slip format to a customer account (Denmark)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Assign a payment slip format to a customer account (Denmark)
 
 This procedure walks you through setting up the payment slip attachment format for a selected customer.
 This procedure was created using the demo data company DEMF. 

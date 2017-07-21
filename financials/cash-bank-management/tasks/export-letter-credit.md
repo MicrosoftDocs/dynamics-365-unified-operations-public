@@ -3,7 +3,7 @@
  
 title: Export a letter of credit
 description: This procedure walks through the process of the Export letter of credit. 
-author: TonyaFehr 
+author: kweekley
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: kweekley
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Export a letter of credit
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Export a letter of credit
 
 This procedure walks through the process of the Export letter of credit.
 A letter of credit is an agreement that is issued by a bank, in which the bank agrees to ensure payment on behalf of the buyer, if the terms of the agreement between the buyer and seller are met.

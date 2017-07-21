@@ -3,7 +3,7 @@
  
 title: Configure depreciation profile and posting profile for additional depreciation (Japan)
 description: Use this procedure to learn how to configure a depreciation profile and a posting profile for special depreciation. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Configure depreciation profile and posting profile for additional depreciation (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Configure depreciation profile and posting profile for additional depreciation (Japan)
 
 Use this procedure to learn how to configure a depreciation profile and a posting profile for special depreciation.
 In Japan, special depreciation is permitted under certain conditions. It is treated as extraordinary depreciation. 

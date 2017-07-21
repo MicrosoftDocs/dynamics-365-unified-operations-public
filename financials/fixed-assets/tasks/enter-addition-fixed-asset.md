@@ -3,7 +3,7 @@
  
 title: Enter an addition to a fixed asset
 description: This procedure shows how to add an addition to an existing fixed asset. 
-author: TonyaFehr 
+author: saraschi2
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Enter an addition to a fixed asset
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Enter an addition to a fixed asset
 
 This procedure shows how to add an addition to an existing fixed asset. The purpose of Fixed asset additions is to track item additions, maintenance, or improvements for an asset, and is informational only. Any changes to the fixed asset value or service life must be made separately.   
 

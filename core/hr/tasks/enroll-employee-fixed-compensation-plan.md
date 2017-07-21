@@ -3,7 +3,7 @@
  
 title: Enroll an employee in a fixed compensation plan
 description: The compensation and benefits manager can assign employees to fixed compensation plans to manage their base pay. 
-author: TonyaFehr 
+author: twheeloc
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: rschloma
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Enroll an employee in a fixed compensation plan
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Enroll an employee in a fixed compensation plan
 
 The compensation and benefits manager can assign employees to fixed compensation plans to manage their base pay. This procedure assumes that a fixed plan has been created and is active, and that eligibility rules have been set for the plan. The demo data company used to create this procedure is USMF. To begin the procedure, go to Human resources > Workers > Employees > Compensation > Fixed plan
 

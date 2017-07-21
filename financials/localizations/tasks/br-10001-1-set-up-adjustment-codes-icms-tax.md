@@ -3,7 +3,7 @@
  
 title: Set up adjustment codes for ICMS tax (Brazil)
 description: In the Sistema Publico de Escrituração Digital (SPED) fiscal text file, record C197 includes information about adjustments of Imposto sobre Circulação de Mercadorias e Serviços (ICMS) information on fiscal documents. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up adjustment codes for ICMS tax (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up adjustment codes for ICMS tax (Brazil)
 
 In the Sistema Publico de Escrituração Digital (SPED) fiscal text file, record C197 includes information about adjustments of Imposto sobre Circulação de Mercadorias e Serviços (ICMS) information on fiscal documents. These adjustments can occur due to deferral, suspension, differential of tax rates, anticipation, and other situations of exception in the ICMS tax, and thus they require an adjustment code. Use this procedure to set up an adjustment codes. This recording uses the BRMF demo company.
 

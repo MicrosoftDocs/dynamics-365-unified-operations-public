@@ -3,7 +3,7 @@
  
 title: Set up Japan consumption tax report (Japan)
 description: This task walks you through setting up the system to support the Japan consumption tax report. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 02/15/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up Japan consumption tax report (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up Japan consumption tax report (Japan)
 
 This task walks you through setting up the system to support the Japan consumption tax report. In this task, you will modify General ledger parameters, a legal entity, sales tax reporting accounts and a sales tax code. 
 This task was created using the demo data company JPMF.

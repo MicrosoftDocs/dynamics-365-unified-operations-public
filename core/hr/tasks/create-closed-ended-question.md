@@ -3,7 +3,7 @@
  
 title: Create a closed ended question
 description: Closed-ended questions allow you to provide options for the respondent to choose from. 
-author: TonyaFehr 
+author: twheeloc
 manager: AnnBe 
 ms.date: 06/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: rschloma
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a closed ended question
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a closed ended question
 
 Closed-ended questions allow you to provide options for the respondent to choose from. First, you need to create the Answer group with the answers, then create the question that will use the answer group. The demo data company used to create this procedure is USMF.
 

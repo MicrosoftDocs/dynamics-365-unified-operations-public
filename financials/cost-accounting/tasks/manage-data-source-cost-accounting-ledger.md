@@ -3,7 +3,7 @@
  
 title: Manage a data source for the cost accounting ledger
 description: Use this procedure to manage the general ledger data source for a cost accounting ledger. 
-author: TonyaFehr 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 06/27/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Manage a data source for the cost accounting ledger
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Manage a data source for the cost accounting ledger
 
 Use this procedure to manage the general ledger data source for a cost accounting ledger. Before you complete this task, make sure that you play the "Create a cost accounting ledger" and "Define cost control units" task guides. This recording uses the USP2 demo data company.
 

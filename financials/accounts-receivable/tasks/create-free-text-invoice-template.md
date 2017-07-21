@@ -3,7 +3,7 @@
  
 title: Create a free text invoice template
 description: This recording uses the USMF demo company. 
-author: TonyaFehr 
+author: ShivamPandey-msft
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shpandey
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a free text invoice template
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a free text invoice template
 
 This recording uses the USMF demo company. The recording is intended for the user who is responsible for managing and processing A/R invoices.
 

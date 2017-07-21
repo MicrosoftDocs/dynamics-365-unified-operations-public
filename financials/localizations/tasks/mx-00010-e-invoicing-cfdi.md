@@ -3,7 +3,7 @@
  
 title: E-invoicing CFDI (Mexico)
 description: This task walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# E-invoicing CFDI (Mexico)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# E-invoicing CFDI (Mexico)
 
 This task walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method. You can create and post multiple sales orders as electronic invoices and send the .pdf and .xml files as email attachments to customers. This task can only be completed if you are logged into a legal entity with a primary address in Mexico. This task uses the MXMF demo company data.
 

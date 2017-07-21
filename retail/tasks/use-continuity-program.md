@@ -3,7 +3,7 @@
  
 title: Use a continuity program
 description: This procedure walks through selling a continuity program and processing related sales orders. 
-author: TonyaFehr 
+author: scott-tucker
 manager: AnnBe 
 ms.date: 10/26/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: scotttuc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Use a continuity program
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Use a continuity program
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through selling a continuity program and processing related sales orders. To complete this procedure, the user has to be set up as a call center user. This procedure uses the USRT demo data company.
 

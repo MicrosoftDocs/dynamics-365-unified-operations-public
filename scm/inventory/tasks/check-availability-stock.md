@@ -3,7 +3,7 @@
  
 title: Check the availability of stock
 description: This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number. 
-author: TonyaFehr 
+author: perlynne
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: perlynne
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Check the availability of stock
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Check the availability of stock
 
 This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number. It also shows you how to get supply information related to an item. Physical on-hand inventory is the on-hand inventory that’s available – that is, it’s purchased, received and registered. On-hand inventory includes the available on-hand inventory, but also the inventory that’s been ordered and is expected, but not yet received or registered. You can walk through this procedure in demo data company USMF, or using your own data. If you are using USMF you can use the example values that are shown. These tasks would typically be carried out by a warehouse worker.
 

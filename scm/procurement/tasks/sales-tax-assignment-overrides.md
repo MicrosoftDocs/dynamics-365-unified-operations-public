@@ -3,7 +3,7 @@
  
 title: Sales tax assignment and overrides
 description: This procedure demonstrates how to assign sales tax groups to retail channels. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Sales tax assignment and overrides
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Sales tax assignment and overrides
 
 This procedure demonstrates how to assign sales tax groups to retail channels. It also walks through the process of creating a new sales tax override and assigning it to an existing sales tax override group. This procedure
 uses the USRT company in demo data.

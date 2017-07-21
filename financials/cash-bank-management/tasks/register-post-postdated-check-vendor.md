@@ -3,7 +3,7 @@
  
 title: Register and post a postdated check for a vendor
 description: You can register the details of a postdated check before you issue the check to a vendor by using the journal voucher. 
-author: TonyaFehr 
+author: kweekley
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: kweekley
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Register and post a postdated check for a vendor
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Register and post a postdated check for a vendor
 
 You can register the details of a postdated check before you issue the check to a vendor by using the journal voucher. You can also post the postdated check and generate financial transactions. Before you register and post a postdated check from a vendor, complete the following task: 
 Set up postdated checks in the Cash and bank management page. 

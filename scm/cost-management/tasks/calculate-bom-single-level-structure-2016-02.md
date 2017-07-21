@@ -3,7 +3,7 @@
  
 title: Calculate a BOM by using a single level structure (February 2016 only)
 description: This procedure shows how to calculate the cost of a finished product by using single level explosion that is based in the Costing sheet. 
-author: TonyaFehr 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 02/07/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Calculate a BOM by using a single level structure (February 2016 only)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Calculate a BOM by using a single level structure (February 2016 only)
 
 This procedure shows how to calculate the cost of a finished product by using single level explosion that is based in the Costing sheet. This is the sixth task in the BOM calculation series. The demo data company used to create this task is USMF.
 

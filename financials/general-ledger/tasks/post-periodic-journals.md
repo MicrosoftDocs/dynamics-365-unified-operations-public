@@ -3,7 +3,7 @@
  
 title: Post periodic journals
 description: Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated each time that the periodic journal is retrieved. 
-author: TonyaFehr 
+author: aprilolson
 manager: AnnBe 
 ms.date: 02/24/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: aolson
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Post periodic journals
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Post periodic journals
 
 Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated each time that the periodic journal is retrieved. When you create the periodic journal, you specify the period interval for the recurrence, such as days or months. This task guide will create a periodic journal with a monthly recurrence.
 

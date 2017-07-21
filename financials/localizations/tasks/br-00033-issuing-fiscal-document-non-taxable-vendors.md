@@ -3,7 +3,7 @@
  
 title: Issue fiscal documents for vendors (Brazil)
 description: You can create and post vendor invoices on behalf of nontaxpayer vendors. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 ms.search.industry: MFG;DIST;SVCIND
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Issue fiscal documents for vendors (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Issue fiscal documents for vendors (Brazil)
 
 You can create and post vendor invoices on behalf of nontaxpayer vendors. You must assign a fiscal establishment to a site. You must also set up a fiscal document type for purchase orders that you create and post on behalf of nontaxpayer vendors. Before you can create and post vendor invoices on behalf of a nontaxpayer vendor, you must specify the vendor as a nontaxpayer vendor. This task uses the BRMF demo company.
 

@@ -3,7 +3,7 @@
  
 title: Trace an item or raw material
 description: This procedure demonstrates how to use item tracing to identify where items or raw materials have been used or are being used. 
-author: TonyaFehr 
+author: pjacobse
 manager: AnnBe 
 ms.date: 06/21/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: pjacobse
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Trace an item or raw material
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Trace an item or raw material
 
 This procedure demonstrates how to use item tracing to identify where items or raw materials have been used or are being used. With this procedure, you can identify an item, trace it back to the source, and then trace forward through the production and sale of the finished product. The process can be used to investigate the customers impacted, the sales orders affected, and more. This procedure uses demo data company USP2.
 

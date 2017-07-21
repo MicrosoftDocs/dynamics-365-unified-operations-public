@@ -3,7 +3,7 @@
  
 title: Set up mandatory payment references (Iceland)
 description: Use this procedure to set up mandatory payment reference for a specific ledger account and post a payment. 
-author: TonyaFehr 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 02/15/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Iceland
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up mandatory payment references (Iceland)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up mandatory payment references (Iceland)
 
 Use this procedure to set up mandatory payment reference for a specific ledger account and post a payment. When you select the ledger account in the journal you must specify a payment reference for the journal line.
 This recording uses the DEMF demo company. This functionality is available for legal entities whose primary address is in Iceland.

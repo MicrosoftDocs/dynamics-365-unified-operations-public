@@ -3,7 +3,7 @@
  
 title: Depreciation adjustments for additional acquisitions in the second year (Germany)
 description: This guide demonstrates how to set up the calculation of depreciation for additional acquisitions. 
-author: TonyaFehr 
+author: mrolecki
 manager: AnnBe 
 ms.date: 05/09/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Germany
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Depreciation adjustments for additional acquisitions in the second year (Germany)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Depreciation adjustments for additional acquisitions in the second year (Germany)
 
 This guide demonstrates how to set up the calculation of depreciation for additional acquisitions. The demo data company used to create this procedure is DEMF.
 

@@ -3,7 +3,7 @@
  
 title: Customer payment overview
 description: This task guide walks through various methods used to enter customer payments. 
-author: TonyaFehr 
+author: kweekley
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: kweekley
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Customer payment overview
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Customer payment overview
 
 This task guide walks through various methods used to enter customer payments. This task uses the USMF demo company.
 

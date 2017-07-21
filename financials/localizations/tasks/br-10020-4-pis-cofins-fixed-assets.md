@@ -3,7 +3,7 @@
  
 title: PIS and COFINS fixed assets (Brazil)
 description: When a legal entity purchases a fixed asset, the PIS and COFINS tax credit that is calculated on that transaction can be appropriated in a specific number of installments. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# PIS and COFINS fixed assets (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# PIS and COFINS fixed assets (Brazil)
 
 When a legal entity purchases a fixed asset, the PIS and COFINS tax credit that is calculated on that transaction can be appropriated in a specific number of installments. For the correct calculation for this tax refund, the legal entity must present a specific fiscal book or report for the information in the SPED EFD Contributions file to demonstrate correct appropriation of the PIS and COFINS tax credit amount. The control of credit that is appropriated in the tax assessment period is detailed in records F120 and F130 of SPED EFD Contributions. This task uses the BRMF demo company.
 

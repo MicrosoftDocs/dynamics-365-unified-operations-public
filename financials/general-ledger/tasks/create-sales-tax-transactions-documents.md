@@ -3,7 +3,7 @@
  
 title: Create sales tax transactions on documents
 description: Sales tax on documents is calculated by providing a Sales tax group and an Item sales tax group on document lines. 
-author: TonyaFehr 
+author: twheeloc
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: vstehman
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create sales tax transactions on documents
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create sales tax transactions on documents
 
 Sales tax on documents is calculated by providing a Sales tax group and an Item sales tax group on document lines. These default from master data but can be changed manually if necessary. The calculated sales tax can be checked on a line and document level. This task uses the USMF demo company.
 

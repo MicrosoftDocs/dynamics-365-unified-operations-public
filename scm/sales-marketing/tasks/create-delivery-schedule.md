@@ -3,7 +3,7 @@
  
 title: Create a delivery schedule
 description: This procedure demonstrates how to create a delivery schedule for a sales order. 
-author: TonyaFehr 
+author: omulvad
 manager: AnnBe 
 ms.date: 02/09/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a delivery schedule
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a delivery schedule
 
 This procedure demonstrates how to create a delivery schedule for a sales order. A delivery schedule is used when a quantity on an order or a quotation is requested to be delivered in multiple shipments. You can run this procedure in demo data company USMF or on your own data.
 

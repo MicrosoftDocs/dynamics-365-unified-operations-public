@@ -3,7 +3,7 @@
  
 title: Batch order lifecycle from create to start
 description: This procedure takes you through the first part of the life cycle of a batch order. 
-author: TonyaFehr 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Batch order lifecycle from create to start
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Batch order lifecycle from create to start
 
 This procedure takes you through the first part of the life cycle of a batch order.
 From creation, cost estimation, and over production job scheduling to the actual start of a batch order.

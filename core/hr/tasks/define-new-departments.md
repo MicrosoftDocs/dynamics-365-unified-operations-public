@@ -3,7 +3,7 @@
  
 title: Define new departments
 description: Departments are operating units that represent a functional area of a business, such as sales or accounting. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Define new departments
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Define new departments
 
 Departments are operating units that represent a functional area of a business, such as sales or accounting. Many companies have organizational hierarchies that display the various departments within a business. This procedure walks through the process of creating departments, and adding those departments to an organizations departmental hierarchy. The demo data company used to create this procedure is USMF.
 

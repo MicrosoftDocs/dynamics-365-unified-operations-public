@@ -3,7 +3,7 @@
  
 title: Set up positions
 description: Positions are an important element of the lower level of an organization hierarchy. 
-author: TonyaFehr 
+author: DarinKramer
 manager: AnnBe 
 ms.date: 06/22/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: rschloma
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: dkrame
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up positions
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up positions
 
 Positions are an important element of the lower level of an organization hierarchy. A position is an individual instance of a job. For example, the position, “Sales manager (East),” is one of the positions that is associated with the job, “Sales manager.” A position exists in a department and may have only one worker associated with it. In this task we will walk through the steps required to create a position. This procedure is intended for Human Resources Specialists.
 

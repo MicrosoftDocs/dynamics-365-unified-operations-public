@@ -3,7 +3,7 @@
  
 title: Configure credit card processing
 description: This procedure walks through how to view the list of payment providers and how to configure a payment account for accounts receivable. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Configure credit card processing
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Configure credit card processing
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through how to view the list of payment providers and how to configure a payment account for accounts receivable. This procedure uses the USRT company in demo data and is intended for Administrators and IT Professionals.
 

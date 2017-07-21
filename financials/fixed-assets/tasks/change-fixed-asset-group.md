@@ -3,7 +3,7 @@
  
 title: Change a fixed asset group
 description: Fixed assets should be assigned to the correct fixed assets group. 
-author: TonyaFehr 
+author: saraschi3
 manager: AnnBe 
 ms.date: 11/15/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Change a fixed asset group
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Change a fixed asset group
 
 Fixed assets should be assigned to the correct fixed assets group. The fixed assets group is used when you:
  - Create inquiries and reports

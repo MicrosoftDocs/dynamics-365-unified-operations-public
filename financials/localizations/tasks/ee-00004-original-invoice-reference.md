@@ -3,7 +3,7 @@
  
 title: Original invoice reference (Eastern Europe)
 description: This task walks you through creating corrective lines in a credit note for a sales order. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 02/09/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Estonia
 ms.search.industry: CRIND
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Original invoice reference (Eastern Europe)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Original invoice reference (Eastern Europe)
 
 This task walks you through creating corrective lines in a credit note for a sales order. This task was created using the demo data company DEMF with a primary address in Poland.
 

@@ -3,7 +3,7 @@
  
 title: Mass create sales quotations
 description: This procedure demonstrates how to efficiently create quotations offering a set of products or services that are to be sent to multiple customers. 
-author: TonyaFehr 
+author: omulvad
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Mass create sales quotations
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Mass create sales quotations
 
 This procedure demonstrates how to efficiently create quotations offering a set of products or services that are to be sent to multiple customers. This mass quotation creation is based on quotation templates. You can run this procedure on your own data or in demo data company USMF.
 

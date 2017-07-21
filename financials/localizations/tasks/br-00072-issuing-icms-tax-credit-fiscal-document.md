@@ -3,7 +3,7 @@
  
 title: Issue ICMS tax credit fiscal documents (Brazil)
 description: You can create a new tax fiscal document and generate a Nota Fiscal eletrônica (NF-e). 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 ms.search.industry: MFG;DIST;SVCIND
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Issue ICMS tax credit fiscal documents (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Issue ICMS tax credit fiscal documents (Brazil)
 
 You can create a new tax fiscal document and generate a Nota Fiscal eletrônica (NF-e). When you post the document, an NF-e XML message is generated and submitted to the Secretaria da Fazenda (SEFAZ). This task uses the BRMF demo company.
 

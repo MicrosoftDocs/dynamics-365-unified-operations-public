@@ -3,7 +3,7 @@
  
 title: Include CIAP credit from a previous period (Brazil)
 description: Use the CIAP fixed asset transactions page to create CIAP credit installments. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Include CIAP credit from a previous period (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Include CIAP credit from a previous period (Brazil)
 
 Use the CIAP fixed asset transactions page to create CIAP credit installments. If a CIAP installment wasn't included in a previous booking period, an installment must be created, so that the installment is processed as an ICMS tax assessment in the current booking period. This task uses the BRMF demo company.
 

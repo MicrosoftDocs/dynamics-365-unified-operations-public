@@ -3,7 +3,7 @@
  
 title: Create a procurement catalog
 description: This guide shows you how to create a procurement catalog. 
-author: TonyaFehr 
+author: mkirknel
 manager: AnnBe 
 ms.date: 08/23/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a procurement catalog
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a procurement catalog
 
 This guide shows you how to create a procurement catalog. This task would typically be carried out by a procurement professional. You will also learn how employees can use the catalog when they create a requisition. Before you can create a catalog, there must be a procurement category hierarchy in your system. The hierarchy is inherited by the new catalog, along with all the products that are in the hierarchy. You can use this guide in demo data company USMF where the procurement category hierarchy is available, as well as the examples used in the procedure steps.
 

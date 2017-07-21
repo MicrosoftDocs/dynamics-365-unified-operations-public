@@ -3,7 +3,7 @@
  
 title: Create consolidation groups and additional consolidation accounts
 description: This procedure shows how to create a consolidation account group and then add accounts to the group. 
-author: TonyaFehr 
+author: aprilolson
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: aolson
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create consolidation groups and additional consolidation accounts
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create consolidation groups and additional consolidation accounts
 
 This procedure shows how to create a consolidation account group and then add accounts to the group. This procedure uses the demo data company USMF.
 

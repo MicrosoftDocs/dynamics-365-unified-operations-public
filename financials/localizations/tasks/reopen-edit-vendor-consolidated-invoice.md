@@ -3,7 +3,7 @@
  
 title: Reopen and edit a vendor consolidated invoice (Japan)
 description: In Japan, when you miss an invoice during the consolidation process, you will need to reopen the consolidated invoice to add the missed invoice. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Reopen and edit a vendor consolidated invoice (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Reopen and edit a vendor consolidated invoice (Japan)
 
 In Japan, when you miss an invoice during the consolidation process, you will need to reopen the consolidated invoice to add the missed invoice. 
 

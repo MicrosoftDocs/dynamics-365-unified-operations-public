@@ -3,7 +3,7 @@
  
 title: Maintain employee injury and illness information
 description: It is recommended to complete the 'Setup injury and illness' task guide first, as some of the setup information is used here. 
-author: TonyaFehr 
+author: ShielaSogge
 manager: AnnBe 
 ms.date: 02/16/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: rschloma
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shielas
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Maintain employee injury and illness information
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Maintain employee injury and illness information
 
 It is recommended to complete the 'Setup injury and illness' task guide first, as some of the setup information is used here. 
 

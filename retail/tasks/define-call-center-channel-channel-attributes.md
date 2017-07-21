@@ -3,7 +3,7 @@
  
 title: Define call center channel and channel attributes
 description: This procedure walks through creating a new retail channel and defining channel attributes. 
-author: TonyaFehr 
+author: mugunthanm
 manager: AnnBe 
 ms.date: 05/22/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mumani
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Define call center channel and channel attributes
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Define call center channel and channel attributes
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through creating a new retail channel and defining channel attributes. The demo data company used to create this task is USRT. This procedure is intended for the Retail IT role.
 

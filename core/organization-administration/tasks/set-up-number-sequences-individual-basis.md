@@ -3,7 +3,7 @@
  
 title: Set up number sequences on an individual basis
 description: Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require them. 
-author: TonyaFehr 
+author: sericks007
 manager: AnnBe 
 ms.date: 06/07/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: sericks
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sericks
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up number sequences on an individual basis
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up number sequences on an individual basis
 
 Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require them. A master data or transaction record that requires an identifier is referred to as a reference. Before you can create new records for a reference, you must set up a number sequence and associate it with the reference. You can set up all required number sequences at the same time by using the Set up number sequences wizard, or you can create or modify individual number sequences by using the Number sequences page.
 

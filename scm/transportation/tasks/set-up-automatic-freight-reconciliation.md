@@ -3,7 +3,7 @@
  
 title: Set up automatic freight reconciliation
 description: This procedure shows how to set up data for automatic freight reconciliation. 
-author: TonyaFehr 
+author: BibiSp
 manager: AnnBe 
 ms.date: 10/13/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: bibis
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up automatic freight reconciliation
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up automatic freight reconciliation
 
 This procedure shows how to set up data for automatic freight reconciliation. This is typically done by a warehouse manager. You can use this procedure in demo data company USMF.
 

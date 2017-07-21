@@ -3,7 +3,7 @@
  
 title: Create a fixed asset
 description: This task guide uses the USMF demo company. 
-author: TonyaFehr 
+author: saraschi2
 manager: AnnBe 
 ms.date: 02/23/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a fixed asset
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a fixed asset
 
 This task guide uses the USMF demo company.  It will create a new fixed asset using the Fixed asset list page.
 

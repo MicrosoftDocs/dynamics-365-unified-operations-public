@@ -3,7 +3,7 @@
  
 title: Define cost control units
 description: This procedure shows how to define cost control units in the cost accounting ledger. 
-author: TonyaFehr 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 06/27/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Define cost control units
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Define cost control units
 
 This procedure shows how to define cost control units in the cost accounting ledger. You select the cost object dimension for which you want to control costs in the ledger. The cost object dimension members are transformed into cost objects of the cost control units. The demo data company used to create this procedure is USP2.
 

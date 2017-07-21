@@ -3,7 +3,7 @@
  
 title: Parameter configurations for Retail statements
 description: This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted. 
-author: TonyaFehr 
+author: josaw1
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: josaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Parameter configurations for Retail statements
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Parameter configurations for Retail statements
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted. This procedure uses the USRT demo company.
 

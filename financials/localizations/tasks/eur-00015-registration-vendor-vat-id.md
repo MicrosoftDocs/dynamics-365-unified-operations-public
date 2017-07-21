@@ -3,7 +3,7 @@
  
 title: Register a vendor VAT ID
 description: This procedure shows how to add VAT registration IDs and a tax except number to a vendor account. 
-author: TonyaFehr 
+author: v-oloski
 manager: AnnBe 
 ms.date: 10/25/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: v-oloski
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Register a vendor VAT ID
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Register a vendor VAT ID
 
 This procedure shows how to add VAT registration IDs and a tax except number to a vendor account. This process is similar for legal entities and customers. 
 

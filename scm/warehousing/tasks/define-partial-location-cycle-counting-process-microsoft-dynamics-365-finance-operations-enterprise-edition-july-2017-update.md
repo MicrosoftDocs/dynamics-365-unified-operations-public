@@ -3,7 +3,7 @@
  
 title: Define partial location cycle counting process 
 description: When you use cycle count plans to create counting work, you can guide the actual counting operations by requesting that only specific products and product variants be counted instead of all on-hand inventory at the location. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 06/23/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Define partial location cycle counting process 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Define partial location cycle counting process 
 
 When you use cycle count plans to create counting work, you can guide the actual counting operations by requesting that only specific products and product variants be counted instead of all on-hand inventory at the location. By filtering on specific products, the warehouse manager can reduce review overhead, help prevent consolidation mistakes, and save time. Typically, a warehouse manager performs the setup tasks. You can go through this procedure in the USMF demo data company or in your own data.
 

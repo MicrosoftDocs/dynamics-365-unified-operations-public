@@ -3,7 +3,7 @@
  
 title: Advance payment to an employee (Eastern Europe)
 description: This procedure demonstrates how to set up and register transactions for an advance holder. 
-author: TonyaFehr 
+author: v-oloski
 manager: AnnBe 
 ms.date: 10/25/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: v-oloski
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Advance payment to an employee (Eastern Europe)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Advance payment to an employee (Eastern Europe)
 
 This procedure demonstrates how to set up and register transactions for an advance holder. This procedure was created using the demo data company DEMF with a primary address in Lithuania. This task only works for legal entities with a primary address in Poland, Lithuania, Latvia, Estonia, Czech Republic, or Hungary. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 

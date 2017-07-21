@@ -3,7 +3,7 @@
  
 title: Set up asset retirement obligation documents and enter ARO amount on a fixed asset (Japan)
 description: For Japan, an asset retirement obligation (ARO) document identifies one type of asset retirement obligation. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 09/22/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up asset retirement obligation documents and enter ARO amount on a fixed asset (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up asset retirement obligation documents and enter ARO amount on a fixed asset (Japan)
 
 For Japan, an asset retirement obligation (ARO) document identifies one type of asset retirement obligation. When you assign an ARO document to a fixed asset book, you can specify the cash flow that is expected to perform the obligation at asset retirement. 
 

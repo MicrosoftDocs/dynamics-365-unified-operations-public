@@ -3,7 +3,7 @@
  
 title: Set up VAT ID
 description: This procedure walks you through VAT ID registration prerequisites, such as setting up a registration type and assigning it to a registration category. 
-author: TonyaFehr 
+author: v-oloski
 manager: AnnBe 
 ms.date: 10/25/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: v-oloski
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up VAT ID
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up VAT ID
 
 This procedure walks you through VAT ID registration prerequisites, such as setting up a registration type and assigning it to a registration category. You can find additional information about registration IDs and registration ID processing, including required prerequisites, in the Registration IDs help topic. 
 The information here applies to all European countries/regions. The task was created using the demo data company DEMF with Germany as the legal entity primary address. This task is intended for system administrators. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.

@@ -3,7 +3,7 @@
  
 title: Change kanban rules for a process job
 description: This procedure focuses on changing the used kanban rule for a given kanban. 
-author: TonyaFehr 
+author: ChristianRytt
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: crytt
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Change kanban rules for a process job
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Change kanban rules for a process job
 
 This procedure focuses on changing the used kanban rule for a given kanban. This is useful to level load resources or in case of breakdown. The demo data company used to create this procedure is USMF. This procedure is intended for the planner, working at a lean manufacturing company, responsible for the value stream.
 

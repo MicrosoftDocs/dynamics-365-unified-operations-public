@@ -3,7 +3,7 @@
  
 title: Create and process a conformance
 description: Use this procedure to perform nonconformance management, based on an existing quality order. 
-author: TonyaFehr 
+author: perlynne
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: perlynne
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create and process a conformance
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create and process a conformance
 
 Use this procedure to perform nonconformance management, based on an existing quality order. You can run this recording in the USMF demo company and can use the suggested values. Typically, this procedure is performed by a quality clerk.  As a prerequisite, run the “Inspect the quality of goods” task recording. To process the approval of a nonconformance, the user who runs the task recording must have a “Name” value assigned on the Users page. To use the document notes, the user must also have Document handling activated in the user options. 
 

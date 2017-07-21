@@ -3,7 +3,7 @@
  
 title: Define production flow models
 description: Production flow models describe how the capacity of lean manufacturing work cells is calculated and maintained. 
-author: TonyaFehr 
+author: cvocph
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: conradv
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Define production flow models
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Define production flow models
 
 Production flow models describe how the capacity of lean manufacturing work cells is calculated and maintained. Therefore the definition of a production flow model is a prerequisite of the definition of work cells. The demo data company used to create this procedure is USMF.
 

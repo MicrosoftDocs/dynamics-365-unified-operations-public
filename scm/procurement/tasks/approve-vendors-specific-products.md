@@ -3,7 +3,7 @@
  
 title: Approve vendors for specific products
 description: This procedure shows you how to approve vendors for specific products. 
-author: TonyaFehr 
+author: mkirknel
 manager: AnnBe 
 ms.date: 11/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Approve vendors for specific products
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Approve vendors for specific products
 
 This procedure shows you how to approve vendors for specific products. This allows you to control which vendors can be used when the product is added to a purchase order. You can use this procedure in demo data company USMF, or on your own data. This task would typically be carried out by a Purchasing manager.
 

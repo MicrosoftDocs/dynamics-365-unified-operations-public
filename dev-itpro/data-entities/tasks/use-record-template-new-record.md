@@ -3,7 +3,7 @@
  
 title: Use a record template to create a new record
 description: This procedure shows how to use a previously defined record template to create a new record. 
-author: TonyaFehr 
+author: sericks007
 manager: AnnBe 
 ms.date: 02/21/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: sericks
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sericks
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Use a record template to create a new record
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Use a record template to create a new record
 
 This procedure shows how to use a previously defined record template to create a new record. To complete this procedure, you must first complete the "Create a record template to facilitate data entry" procedure.
 

@@ -3,7 +3,7 @@
  
 title: Record a vendor invoice in the invoice journal
 description: This task guide will show how to record vendor invoices that are not associated with purchase orders. 
-author: TonyaFehr 
+author: abruer
 manager: AnnBe 
 ms.date: 11/15/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: abruer
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Record a vendor invoice in the invoice journal
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Record a vendor invoice in the invoice journal
 
 This task guide will show how to record vendor invoices that are not associated with purchase orders. Examples of this type of invoice include expenses for supplies or services.  This recording uses the USMF demo company.
 

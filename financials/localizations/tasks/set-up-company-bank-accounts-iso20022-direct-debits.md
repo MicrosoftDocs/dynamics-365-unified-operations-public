@@ -3,7 +3,7 @@
  
 title: Set up company bank accounts for ISO20022 direct debits
 description: This task walks you through setting up the company specific bank account information that is required for generating customer payment files. 
-author: TonyaFehr 
+author: mrolecki
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up company bank accounts for ISO20022 direct debits
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up company bank accounts for ISO20022 direct debits
 
 This task walks you through setting up the company specific bank account information that is required for generating customer payment files. This procedure uses the ISO 20022 direct debit format as an example. Other formats might require additional setup information like the Company ID or the Sort code.
 

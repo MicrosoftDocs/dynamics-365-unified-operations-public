@@ -3,7 +3,7 @@
  
 title: Create and post a project invoice for a public sector customer (Denmark)
 description: This task walks you through creating and posting a project invoice for a customer using OIOUBL electronic invoicing. 
-author: TonyaFehr 
+author: mrolecki
 manager: AnnBe 
 ms.date: 10/13/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Denmark
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create and post a project invoice for a public sector customer (Denmark)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create and post a project invoice for a public sector customer (Denmark)
 
 This task walks you through creating and posting a project invoice for a customer using OIOUBL electronic invoicing. 
 

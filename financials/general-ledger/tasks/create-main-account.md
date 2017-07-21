@@ -3,7 +3,7 @@
  
 title: Create a main account
 description: This task guide steps through adding a main account to an existing chart of accounts. 
-author: TonyaFehr 
+author: aprilolson
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: aolson
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a main account
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a main account
 
 This task guide steps through adding a main account to an existing chart of accounts. This recording uses the USMF demo company.  
 

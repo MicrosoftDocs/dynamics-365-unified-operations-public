@@ -3,7 +3,7 @@
  
 title: Fiscal establishment tax attributes (Brazil)
 description: Use this procedure to create one or more fiscal establishments for a legal entity. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 ms.search.industry: MFG;DIST;SVCIND
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Fiscal establishment tax attributes (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Fiscal establishment tax attributes (Brazil)
 
 Use this procedure to create one or more fiscal establishments for a legal entity. A fiscal establishment requires a Cadastro Nacional da Pessoa Jurídica (CNPJ) or Inscrição Estadual (IE) tax registration number. You can group fiscal establishments and set up tax groups for each fiscal establishment group in the Taxes matrix page. This task uses the BRMF demo company.
 

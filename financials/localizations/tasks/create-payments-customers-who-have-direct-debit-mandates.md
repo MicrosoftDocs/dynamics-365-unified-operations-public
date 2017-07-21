@@ -3,7 +3,7 @@
  
 title: Create payments for a customer who have direct debit mandates
 description: This procedure shows how to generate an ISO20022 direct debit payment file for a customer who has direct debit configured and an invoice to be paid. 
-author: TonyaFehr 
+author: mrolecki
 manager: AnnBe 
 ms.date: 10/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create payments for a customer who have direct debit mandates
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create payments for a customer who have direct debit mandates
 
 This procedure shows how to generate an ISO20022 direct debit payment file for a customer who has direct debit configured and an invoice to be paid. Creating and posting an invoice is optional. Instead of having an invoice to be paid you can select a mandate in a journal prior to generating a payment file, to support a customer prepayment scenario.
 

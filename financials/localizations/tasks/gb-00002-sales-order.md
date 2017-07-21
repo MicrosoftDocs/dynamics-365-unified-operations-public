@@ -3,7 +3,7 @@
  
 title: Create a sales order that includes items subject to reverse charge VAT (UK)
 description: This task walks you through creating a sales order that includes items subject to reverse charge VAT for the United Kingdom. 
-author: TonyaFehr 
+author: epodkolz
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: United Kingdom
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epodkolz
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a sales order that includes items subject to reverse charge VAT (UK)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a sales order that includes items subject to reverse charge VAT (UK)
 
 This task walks you through creating a sales order that includes items subject to reverse charge VAT for the United Kingdom. 
 This walkthrough was created using the demo company GBSI.

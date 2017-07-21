@@ -3,7 +3,7 @@
  
 title: Set up sales tax codes for Mexico
 description: Legal financial documents such as tax declarations or electronic invoices submitted to the tax authorities in Mexico must contain different types of tax registration IDs and other related information. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 12/01/2015
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up sales tax codes for Mexico
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up sales tax codes for Mexico
 
 Legal financial documents such as tax declarations or electronic invoices submitted to the tax authorities in Mexico must contain different types of tax registration IDs and other related information. This guide details all necessary steps to complete the information about registration IDs in Mexican legal entities.
 

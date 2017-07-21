@@ -3,7 +3,7 @@
  
 title: Set up number sequences by using a wizard
 description: Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require them. 
-author: TonyaFehr 
+author: sericks007
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: sericks
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sericks
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up number sequences by using a wizard
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up number sequences by using a wizard
 
 Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require them. A master data or transaction record that requires an identifier is referred to as a reference. Before you can create new records for a reference, you must set up a number sequence and associate it with the reference. This procedure explains how to set up all required number sequences at the same time by using a wizard. The demo data company used to create this procedure is USMF.
 

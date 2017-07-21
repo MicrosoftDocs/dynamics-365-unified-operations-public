@@ -3,7 +3,7 @@
  
 title: Set up policies for procurement category hierarchies
 description: Use this procedure to set up rules for ordering products in a category. 
-author: TonyaFehr 
+author: mkirknel
 manager: AnnBe 
 ms.date: 08/25/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up policies for procurement category hierarchies
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up policies for procurement category hierarchies
 
 Use this procedure to set up rules for ordering products in a category. The rules are defined for a specific purchasing policy. The category access rule controls which procurement categories employees have access to when they create a requisition. When a requisition is being created, the purchasing policy and category access rule that should be applied are determined by the legal entity and the operational unit that the employee belongs to. You can use this procedure in demo data company USMF. This task would typically be carried out by a purchasing manager.
 

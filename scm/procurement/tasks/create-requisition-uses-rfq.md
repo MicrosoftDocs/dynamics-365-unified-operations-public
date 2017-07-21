@@ -3,7 +3,7 @@
  
 title: Create a requisition that uses an RFQ
 description: This guide shows how to add price and vendor information to a purchase requisition from an RFQ process. 
-author: TonyaFehr 
+author: mkirknel
 manager: AnnBe 
 ms.date: 08/25/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a requisition that uses an RFQ
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a requisition that uses an RFQ
 
 This guide shows how to add price and vendor information to a purchase requisition from an RFQ process. The example shown in this guide can be used in the USMF demo data company, and you must be logged in as an Admin to complete all the steps. The tasks in this guide would typically be done by procurement professionals.
 

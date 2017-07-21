@@ -3,7 +3,7 @@
  
 title: Create and maintain inventory blocking
 description: This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking. 
-author: TonyaFehr 
+author: perlynne
 manager: AnnBe 
 ms.date: 12/02/2015
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: perlynne
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create and maintain inventory blocking
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create and maintain inventory blocking
 
 This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking. You can run the procedure in demo data company USMF using the example values that are shown. You need to have an item with physical on-hand inventory available before you start this procedure.
 

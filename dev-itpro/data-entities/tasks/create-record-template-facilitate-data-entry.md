@@ -3,7 +3,7 @@
  
 title: Create a record template to facilitate data entry
 description: This procedure demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record. 
-author: TonyaFehr 
+author: sericks007
 manager: AnnBe 
 ms.date: 02/21/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: sericks
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sericks
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a record template to facilitate data entry
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a record template to facilitate data entry
 
 This procedure demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record. In this procedure, you’ll create a new record for new laptops that should be added to your fixed assets. This procedure uses the USMF sample company.
 

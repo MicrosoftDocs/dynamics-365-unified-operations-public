@@ -3,7 +3,7 @@
  
 title: Create loan items
 description: Loan items are records that help you track physical items, such as phones or computers, that your company lends to workers. 
-author: TonyaFehr 
+author: kherr75
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: rschloma
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create loan items
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create loan items
 
 Loan items are records that help you track physical items, such as phones or computers, that your company lends to workers. Each physical item must have a corresponding loan item. Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can be on loan. You can create multiple loan items, such as keys, access cards, or uniforms, at the same time. The demo data company used to create this procedure is USMF.
 

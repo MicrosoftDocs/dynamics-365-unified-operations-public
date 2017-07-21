@@ -3,7 +3,7 @@
  
 title: Create a cost accounting ledger
 description: A cost accounting ledger represents the overall reporting unit. 
-author: TonyaFehr 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 06/27/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a cost accounting ledger
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a cost accounting ledger
 
 A cost accounting ledger represents the overall reporting unit. It is defined by a cost element dimension, statistical dimension, fiscal calendar, and currency. It is agnostic to the concept of legal entities. A legal entity and its data can be associated with many cost accounting ledgers. This recording uses the USP2 demo data company.
 

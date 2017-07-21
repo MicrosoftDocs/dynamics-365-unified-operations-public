@@ -3,7 +3,7 @@
  
 title: Create financial dimensions for Retail channels and configure dimension values on stores
 description: This procedure walks through creating a retail channel financial dimension with dimension values and steps to configure financial dimension values on retail stores. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create financial dimensions for Retail channels and configure dimension values on stores
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Create financial dimensions for Retail channels and configure dimension values on stores
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through creating a retail channel financial dimension with dimension values and steps to configure financial dimension values on retail stores. The topic does not include other related steps, such as creating dimension sets and account structures. This procedure uses the USRT company in demo data.
 

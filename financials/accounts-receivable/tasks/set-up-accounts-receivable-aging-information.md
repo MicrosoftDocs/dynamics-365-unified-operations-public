@@ -3,7 +3,7 @@
  
 title: Set up and generate accounts receivable aging information
 description: This guide will help you set up an aging period definition, age customer balances, and view balances in the Aged balance list and the Collections page. 
-author: TonyaFehr 
+author: mikefalkner
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mfalkner
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up and generate accounts receivable aging information
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up and generate accounts receivable aging information
 
 This guide will help you set up an aging period definition, age customer balances, and view balances in the Aged balance list and the Collections page. This recording uses the USMF demo company.
 

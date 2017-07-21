@@ -3,7 +3,7 @@
  
 title: Set up interest and fines for vendor payments (Brazil)
 description: You must set up accounts for financial interest and fines, default codes for interest and fines, and interest codes and fine codes for vendors and purchase orders. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up interest and fines for vendor payments (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up interest and fines for vendor payments (Brazil)
 
 You must set up accounts for financial interest and fines, default codes for interest and fines, and interest codes and fine codes for vendors and purchase orders. You must also define the holidays or non-business days during a financial year that aren't considered when interest and fines are calculated.  This task uses the BRMF demo company.
 

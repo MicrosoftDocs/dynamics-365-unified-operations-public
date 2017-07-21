@@ -3,7 +3,7 @@
  
 title: Set up a location directive for purchase order put-away
 description: This procedure shows you how to set up a simple location directive. 
-author: TonyaFehr 
+author: BibiSp
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: bibis
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up a location directive for purchase order put-away
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up a location directive for purchase order put-away
 
 This procedure shows you how to set up a simple location directive. The example that’s shown creates a location directive to be used to determine where to put items that have been received for a purchase order. You can play this task guide with the data mentioned using demo data company USMF. Pre-conditions: You need to create a disposition code. In this procedure we use a disposition code called Relabel. If you’re creating a location directive in your own data, you need to have set up advanced warehouse management for your warehouse and items.  This procedure is intended for the warehouse manager.
 

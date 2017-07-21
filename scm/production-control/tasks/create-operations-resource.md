@@ -3,7 +3,7 @@
  
 title: Create an operations resource
 description: An operations resource performs the activities of a project or a production process. 
-author: TonyaFehr 
+author: sorenva
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: sorenand
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create an operations resource
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create an operations resource
 
 An operations resource performs the activities of a project or a production process. This procedures shows you how to define an operations resource. You can walk through this procedure in demo data company USMF, or using your own data.
 

@@ -3,7 +3,7 @@
  
 title: Propose special depreciation (Japan)
 description: In Japan, a special depreciation is permitted under certain conditions. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 02/26/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Propose special depreciation (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Propose special depreciation (Japan)
 
 In Japan, a special depreciation is permitted under certain conditions. For Reserve method, this is a two step task: post reserve, and then post reserve allocation. For Direct-off method, only one step is needed, which is the same procedure as post reserve. 
 

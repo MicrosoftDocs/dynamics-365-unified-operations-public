@@ -3,7 +3,7 @@
  
 title: Create project purchase order
 description: This procedure shows you how to create a project purchase order. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 02/13/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: SVCIND
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create project purchase order
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create project purchase order
 
 This procedure shows you how to create a project purchase order. This task uses the USSI data set.
 

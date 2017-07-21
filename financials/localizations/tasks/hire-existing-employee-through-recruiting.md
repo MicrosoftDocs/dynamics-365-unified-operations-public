@@ -3,7 +3,7 @@
  
 title: Hire an existing employee through recruiting (UK)
 description: Sometimes open positions can be filled by candidates who are already employees in your organization. 
-author: TonyaFehr 
+author: epodkolz
 manager: AnnBe 
 ms.date: 02/10/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: United Kingdom
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epodkolz
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Hire an existing employee through recruiting (UK)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Hire an existing employee through recruiting (UK)
 
 Sometimes open positions can be filled by candidates who are already employees in your organization. This procedure walks through the steps of hiring an existing employee through the recruiting process. In this procedure, a recruitment project has already been set up, and an existing employee has already submitted an application for the recruitment project. The demo data company used to create this procedure is USMF.
 

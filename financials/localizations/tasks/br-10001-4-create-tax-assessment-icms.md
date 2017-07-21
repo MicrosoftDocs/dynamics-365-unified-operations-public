@@ -3,7 +3,7 @@
  
 title: Create a tax assessment - ICMS (Brazil)
 description: You can create a tax assessment for the ICMS tax for a selected booking period. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a tax assessment - ICMS (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a tax assessment - ICMS (Brazil)
 
 You can create a tax assessment for the ICMS tax for a selected booking period. This tax amount considers the amount of ICMS tax to recover and the amount of ICMS tax to pay from the fiscal documents. For the amount that is due after the tax assessment, you can make the tax payment to the tax authority. This recording uses the BRMF demo company.
 

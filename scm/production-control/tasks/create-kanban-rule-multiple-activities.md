@@ -3,7 +3,7 @@
  
 title: Create a kanban rule for multiple activities
 description: This procedure shows how to create a kanban rule that includes multiple activities from a production flow. 
-author: TonyaFehr 
+author: ChristianRytt
 manager: AnnBe 
 ms.date: 08/24/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: crytt
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a kanban rule for multiple activities
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a kanban rule for multiple activities
 
 This procedure shows how to create a kanban rule that includes multiple activities from a production flow. The demo data company used to create this task is USMF. This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product in a lean environment.
 

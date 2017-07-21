@@ -3,7 +3,7 @@
  
 title: Register items for an advanced warehousing enabled item using an item arrival journal
 description: This procedure shows you how to register items using the item arrival journal when you are using advanced warehouse management processes. 
-author: TonyaFehr 
+author: BibiSp
 manager: AnnBe 
 ms.date: 02/12/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: bibis
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Register items for an advanced warehousing enabled item using an item arrival journal
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Register items for an advanced warehousing enabled item using an item arrival journal
 
 This procedure shows you how to register items using the item arrival journal when you are using advanced warehouse management processes. This would usually be done by a receiving clerk. 
 You can run this procedure in demo data company USMF, or on your own data. You need to have a confirmed purchase order with an open purchase order line before you start this guide. The item on the line must be stocked, and it must not use product variants, and must not have tracking dimensions. And the item needs to be associated with a warehouse management process enabled storage dimension group. The warehouse that’s used must be enabled for warehouse management processes and the location that you use for receiving must be license plate controlled. If you’re using USMF, you can use company account 1001, Warehouse 51, and item M9200 to create your PO. 

@@ -3,7 +3,7 @@
  
 title: Set up Chinese vouchers
 description: This procedure walks you through setting up Chinese vouchers with specific demo data. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 10/27/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC)
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up Chinese vouchers
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up Chinese vouchers
 
 This procedure walks you through setting up Chinese vouchers with specific demo data.
 Chinese voucher numbers are the foundation for Chinese financial reporting. You must set them up before you do any financial transaction posting. You can set up the vouchers one at a time as this procedure demonstrates or you can use the Voucher type setup wizard to set them up.

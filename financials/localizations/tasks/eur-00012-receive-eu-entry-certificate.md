@@ -3,7 +3,7 @@
  
 title: Receive an EU entry certificate
 description: This procedure walks you through registering an EU entry certificate issued by a third-party and received from your customer. 
-author: TonyaFehr 
+author: mrolecki
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Receive an EU entry certificate
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Receive an EU entry certificate
 
 This procedure walks you through registering an EU entry certificate issued by a third-party and received from your customer.
 

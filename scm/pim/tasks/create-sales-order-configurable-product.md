@@ -3,7 +3,7 @@
  
 title: Create a sales order for a configurable product
 description: This procedure shows how to apply a configuration template to a product on a sales order. 
-author: TonyaFehr 
+author: BibiSp
 manager: AnnBe 
 ms.date: 10/12/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: bibis
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a sales order for a configurable product
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a sales order for a configurable product
 
 This procedure shows how to apply a configuration template to a product on a sales order. This example uses the D0006 speaker model in the USMF demo data company. Typically, a sales order processor uses this procedure.
 

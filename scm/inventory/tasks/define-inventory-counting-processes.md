@@ -3,7 +3,7 @@
  
 title: Define inventory counting processes
 description: This procedure walks you through the configuration of basic inventory counting processes by creating a counting group and a counting journal. 
-author: TonyaFehr 
+author: MarkusFogelberg
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: mafoge
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Define inventory counting processes
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Define inventory counting processes
 
 This procedure walks you through the configuration of basic inventory counting processes by creating a counting group and a counting journal. It also shows you how to enable counting policies on a warehouse and item level. These tasks would typically be carried out by a warehouse supervisor. It is a prerequisite to have some existing released products and warehouses. If you're using a demo data company, you can run this procedure in the USMF company with any stocked item.
 

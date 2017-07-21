@@ -3,7 +3,7 @@
  
 title: Set up postdated checks
 description: This topic explains how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments. 
-author: TonyaFehr 
+author: kweekley
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: kweekley
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up postdated checks
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up postdated checks
 
 This topic explains how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments. You can also specify clearing accounts for issued checks, received checks, and withholding tax. Postdated checks that are issued to make and receive payments on a future date. You can specify whether the check must be reflected in the accounting books before its maturity date.
 

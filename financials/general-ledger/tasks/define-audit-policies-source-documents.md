@@ -3,7 +3,7 @@
  
 title: Define audit policies for source documents
 description: This procedure shows how to set up and run audit policy rules. 
-author: TonyaFehr 
+author: ryansandness
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: ryansand
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Define audit policies for source documents
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Define audit policies for source documents
 
 This procedure shows how to set up and run audit policy rules. The example uses expense reports with the hotel expense type. This procedure uses the USMF demo company. The auditor role contains the correct permissions in order to perform these tasks.
 

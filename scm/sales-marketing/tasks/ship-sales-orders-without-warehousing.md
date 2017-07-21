@@ -3,7 +3,7 @@
  
 title: Ship sales orders without warehousing
 description: This guide demonstrates how to update a sales order when products are shipped to the customer. 
-author: TonyaFehr 
+author: omulvad
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Ship sales orders without warehousing
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Ship sales orders without warehousing
 
 This guide demonstrates how to update a sales order when products are shipped to the customer. The guide is applicable to the fulfillment flow that is not set up for warehouse management (neither basic or advanced warehousing), and therefore does not require product picking to be registered before shipment. You can run this procedure on your own data or in demo data company USMF. In both cases, before you start this task, create a sales order for an inventoried product with a quantity of greater than 1. To avoid a posting error, you need to check that the product's on-hand quantity in the site and warehouse that you’ve selected on the order covers the order quantity.
 

@@ -3,7 +3,7 @@
  
 title: Prepare a process kanban job when materials are not available for the work cell
 description: This procedure focuses on preparing a process kanban job when some materials are not available for the work cell, therefore it's necessary to pick materials from the warehouse. 
-author: TonyaFehr 
+author: ChristianRytt
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: crytt
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Prepare a process kanban job when materials are not available for the work cell
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Prepare a process kanban job when materials are not available for the work cell
 
 This procedure focuses on preparing a process kanban job when some materials are not available for the work cell, therefore it's necessary to pick materials from the warehouse. The procedure "Prepare a process kanban job when materials are available" is a prerequisite for creating this procedure. This procedure is intended for the machine operator. The demo data company used to create this procedure is USMF.
 

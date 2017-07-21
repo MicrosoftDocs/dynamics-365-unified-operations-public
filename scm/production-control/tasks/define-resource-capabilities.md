@@ -3,7 +3,7 @@
  
 title: Define resource capabilities
 description: Resource capabilities describe what operations resources can do. 
-author: TonyaFehr 
+author: sorenva
 manager: AnnBe 
 ms.date: 10/27/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: sorenand
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Define resource capabilities
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Define resource capabilities
 
 Resource capabilities describe what operations resources can do. During scheduling, the requirements of each job and operation are matched against the capabilities of the available resources. This task guide will help you create a resource capability and assign it to a resource. The demo data company used to create this task is USMF.
 

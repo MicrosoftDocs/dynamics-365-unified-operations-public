@@ -3,7 +3,7 @@
  
 title: Hire a candidate through recruiting
 description: This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Hire a candidate through recruiting
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Hire a candidate through recruiting
 
 This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project. When you hire an applicant through a recruiting project, a new worker record will be created and the applicant’s record will have a status of Employed. The demo data company used to create this procedure is USMF. To complete this procedure, navigate to Human resources > Recruitment > Applications >Applications 
 

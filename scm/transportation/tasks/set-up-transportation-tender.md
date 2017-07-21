@@ -3,7 +3,7 @@
  
 title: Set up a transportation tender
 description: This procedure shows how to set up a transportation tender. 
-author: TonyaFehr 
+author: BibiSp
 manager: AnnBe 
 ms.date: 10/13/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: bibis
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up a transportation tender
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up a transportation tender
 
 This procedure shows how to set up a transportation tender. This is typically done by a transportation coordinator. You can use this procedure in the USMF demo data company.
 

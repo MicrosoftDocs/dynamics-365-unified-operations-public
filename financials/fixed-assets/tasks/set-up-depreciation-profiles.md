@@ -3,7 +3,7 @@
  
 title: Set up and create depreciation profiles
 description: Depreciation profiles determine the type and the frequency of depreciation for an asset. 
-author: TonyaFehr 
+author: saraschi2
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up and create depreciation profiles
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up and create depreciation profiles
 
 Depreciation profiles determine the type and the frequency of depreciation for an asset.   This recording uses the USMF demo company and the accountant role.
 

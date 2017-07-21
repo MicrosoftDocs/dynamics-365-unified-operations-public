@@ -3,7 +3,7 @@
  
 title: Import a customer payment with JBA file format (Japan)
 description: In Japan, the Japanese Bankers Association (JBA) file format is commonly used for Electronic Fund Transfer (EFT) among banks. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 09/16/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Import a customer payment with JBA file format (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Import a customer payment with JBA file format (Japan)
 
 In Japan, the Japanese Bankers Association (JBA) file format is commonly used for Electronic Fund Transfer (EFT) among banks. 
 

@@ -3,7 +3,7 @@
  
 title: Key invoice data into accounts payable using an approval journal
 description: This task guide will show you how to use the invoice register to create invoices and then use the approval journal to update the expense accounts. 
-author: TonyaFehr 
+author: abruer
 manager: AnnBe 
 ms.date: 11/15/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: abruer
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Key invoice data into accounts payable using an approval journal
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Key invoice data into accounts payable using an approval journal
 
 This task guide will show you how to use the invoice register to create invoices and then use the approval journal to update the expense accounts.
 

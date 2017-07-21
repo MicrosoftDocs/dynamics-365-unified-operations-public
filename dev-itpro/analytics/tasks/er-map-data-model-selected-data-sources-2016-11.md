@@ -3,7 +3,7 @@
  
 title: Map a data model to selected data sources for electronic reporting (ER)
 description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can map an Electronic reporting (ER) data model to selected Dynamics 365 for Finance and Operations, Enterprise edition data sources. 
-author: TonyaFehr 
+author: NickSelin
 manager: AnnBe 
 ms.date: 01/16/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Map a data model to selected data sources for electronic reporting (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Map a data model to selected data sources for electronic reporting (ER)
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can map an Electronic reporting (ER) data model to selected Dynamics 365 for Finance and Operations, Enterprise edition data sources. This model mapping will later be used as a data source in a format configuration that will be used to manage electronic payment documents. In this example, you map a data model for sample company, Litware, Inc. to data sources. To complete these steps, you must first complete the steps in the “Select data sources for model mapping” procedure.
 

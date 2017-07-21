@@ -3,7 +3,7 @@
  
 title: Electronic transmission of VAT declaration (ELSTER) (Germany)
 description: This procedure walks you through setting electronic tax declaration. 
-author: TonyaFehr 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 02/17/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Germany
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Electronic transmission of VAT declaration (ELSTER) (Germany)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Electronic transmission of VAT declaration (ELSTER) (Germany)
 
 This procedure walks you through setting electronic tax declaration.
 This procedure was created using the demo data company DEMF. 

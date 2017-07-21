@@ -3,7 +3,7 @@
  
 title: Manage customer debit and credit for GST (Malaysia)
 description: This procedure walks you through how to print a Malaysian goods and services tax (GST) invoice for a credit note or debit note. 
-author: TonyaFehr 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 06/12/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Manage customer debit and credit for GST (Malaysia)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Manage customer debit and credit for GST (Malaysia)
 
 This procedure walks you through how to print a Malaysian goods and services tax (GST) invoice for a credit note or debit note. You can print a GST invoice for a credit note or debit note from a sales order, free text invoice, purchase order, or project proposal but this procedure only shows how to do this from a sales order and a free text invoice.
 Before you can complete this procedure, you must select the Invoice type 'GST invoice' in general ledger parameters.

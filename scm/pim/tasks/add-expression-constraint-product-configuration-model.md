@@ -3,7 +3,7 @@
  
 title: Add an expression constraint to a product configuration model
 description: This procedure shows how you can add a new constraint expression to a product configuration model. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 10/27/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Add an expression constraint to a product configuration model
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Add an expression constraint to a product configuration model
 
 This procedure shows how you can add a new constraint expression to a product configuration model. It shows how you can mandate that corner protection must be applied to a speaker if the user has selected a front grill in metal. The procedure uses the High end speaker component in the demo company USMF.
 

@@ -3,7 +3,7 @@
  
 title: Set up vendors and vendor bank accounts for ISO20022 credit transfers
 description: This procedure demonstrates how to set up the vendor and vendor specific bank account information required for ISO20022 Credit transfer or any other vendor payment file generation. 
-author: TonyaFehr 
+author: mrolecki
 manager: AnnBe 
 ms.date: 10/24/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up vendors and vendor bank accounts for ISO20022 credit transfers
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up vendors and vendor bank accounts for ISO20022 credit transfers
 
 This procedure demonstrates how to set up the vendor and vendor specific bank account information required for ISO20022 Credit transfer or any other vendor payment file generation. 
 

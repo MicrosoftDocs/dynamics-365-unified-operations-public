@@ -3,7 +3,7 @@
  
 title: Miscellaneous charges on free text invoices (Brazil)
 description: Brazilian legislation taxes  miscellaneous charges such as freight. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/23/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 ms.search.industry: MFG;DIST;SVCIND
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Miscellaneous charges on free text invoices (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Miscellaneous charges on free text invoices (Brazil)
 
 Brazilian legislation taxes  miscellaneous charges such as freight. Miscellaneous charges can be used only on a free text invoice. This task uses the BRMF demo company.
 

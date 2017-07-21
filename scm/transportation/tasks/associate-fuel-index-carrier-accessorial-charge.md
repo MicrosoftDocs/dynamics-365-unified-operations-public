@@ -3,7 +3,7 @@
  
 title: Associate a fuel index with a carrier as an accessorial charge
 description: This guide shows how to create an accessorial assignment, carrier accessorial charge, accessorial master for fuel surcharge, and associate a carrier fuel index with a carrier. 
-author: TonyaFehr 
+author: BibiSp
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: bibis
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Associate a fuel index with a carrier as an accessorial charge
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Associate a fuel index with a carrier as an accessorial charge
 
 This guide shows how to create an accessorial assignment, carrier accessorial charge, accessorial master for fuel surcharge, and associate a carrier fuel index with a carrier. You need to have set up a carrier fuel index before you run this guide. You can use the “Set up a carrier fuel index” guide to do this. These setup tasks are typically done by a Logistics manager. The demo data used to create this procedure is USMF.
 

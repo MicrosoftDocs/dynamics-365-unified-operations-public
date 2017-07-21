@@ -3,7 +3,7 @@
  
 title: Define loyalty programs
 description: This procedure shows how to set up a loyalty program with two loyalty tiers. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Define loyalty programs
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Define loyalty programs
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure shows how to set up a loyalty program with two loyalty tiers. This procedure uses the USRT demo data company.
 

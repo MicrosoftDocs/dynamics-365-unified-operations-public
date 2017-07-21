@@ -3,7 +3,7 @@
  
 title: Set up vendor invoice policies
 description: Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page. 
-author: TonyaFehr 
+author: ShivamPandey-msft
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shpandey
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up vendor invoice policies
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up vendor invoice policies
 
 Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page. You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow. 
 Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal. 

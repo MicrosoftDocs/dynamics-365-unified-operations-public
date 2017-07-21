@@ -3,7 +3,7 @@
  
 title: Set up injury and illness information
 description: Employers need to know when their employees suffer injuries or illness resulting from hazards in the workplace. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up injury and illness information
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up injury and illness information
 
 Employers need to know when their employees suffer injuries or illness resulting from hazards in the workplace. You can use the injury and illness page to set up information that facilitates reporting work-place injuries or illnesses. You can set up types of injuries and illnesses, including types of treatments, costs, and outcomes. The demo data company used to create this procedure is USMF.
 

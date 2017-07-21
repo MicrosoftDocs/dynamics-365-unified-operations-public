@@ -3,7 +3,7 @@
  
 title: Letter of guarantee transaction
 description: This procedure walks through the Letter of guarantee process. 
-author: TonyaFehr 
+author: kweekley
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: kweekley
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Letter of guarantee transaction
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Letter of guarantee transaction
 
 This procedure walks through the Letter of guarantee process.
 

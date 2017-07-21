@@ -3,7 +3,7 @@
  
 title: Settle transactions between ledger accounts
 description: This procedure shows how to settle transactions between ledger accounts and cancel a ledger settlement. 
-author: TonyaFehr 
+author: aprilolson
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: aolson
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Settle transactions between ledger accounts
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Settle transactions between ledger accounts
 
 This procedure shows how to settle transactions between ledger accounts and cancel a ledger settlement. This procedure uses the USMF demo data company.
 

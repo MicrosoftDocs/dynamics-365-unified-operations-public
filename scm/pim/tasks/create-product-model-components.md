@@ -3,7 +3,7 @@
  
 title: Create product model components
 description: Constraint-based product configuration models use components as building blocks to establish the product model structure. 
-author: TonyaFehr 
+author: yuyus
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create product model components
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create product model components
 
 Constraint-based product configuration models use components as building blocks to establish the product model structure. The components must be created before a product model can be built. The demo data company used to create this procedure is USMF.
 

@@ -3,7 +3,7 @@
  
 title: Manage worker accommodations
 description: This procedure walks through the steps for setting up work environment accommodation types, such as ergonomic chairs or periodic breaks. 
-author: TonyaFehr 
+author: ShielaSogge
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: rschloma
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shielas
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Manage worker accommodations
 
-[!include[task guide banner](../../../includes/task-guide-banner.md)]
-
-# Manage worker accommodations
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks through the steps for setting up work environment accommodation types, such as ergonomic chairs or periodic breaks. It also shows how to assign these accommodation types to a worker, and either approve or deny the accommodation type. The demo data company used to create this procedure is USMF.
 

@@ -3,7 +3,7 @@
  
 title: Set up value models
 description: This procedure shows you to how create a new fixed asset book and associate it with a fixed asset group. 
-author: TonyaFehr 
+author: saraschi3
 manager: AnnBe 
 ms.date: 10/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up value models
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up value models
 
 This procedure shows you to how create a new fixed asset book and associate it with a fixed asset group. It uses the accountant role and demo data for the USMF legal entity.
 

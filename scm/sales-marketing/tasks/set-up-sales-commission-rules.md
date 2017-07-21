@@ -3,7 +3,7 @@
  
 title: Set up sales commission rules
 description: This procedure shows you how to set up and enable sales commission calculation and tracking. 
-author: TonyaFehr 
+author: omulvad
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up sales commission rules
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up sales commission rules
 
 This procedure shows you how to set up and enable sales commission calculation and tracking. The procedure shows how to create both customer and item commission groups, and then how to link a selected customer and product to the respective groups. Those groups are then used in the commission calculation setup to create a customer, item, and sales representatives combination that must be matched by the sales order to entitle the sales people to a commission. Creating customer and item commission groups are optional, as the calculation of commission can also be done for an individual customer and/or item. You can run this procedure in demo data company USMF or on your own data.
 

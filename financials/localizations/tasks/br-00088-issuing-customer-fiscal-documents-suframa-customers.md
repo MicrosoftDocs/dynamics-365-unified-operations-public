@@ -3,7 +3,7 @@
  
 title: Issue customer fiscal documents (for SUFRAMA customers) (Brazil)
 description: Use this procedure to set up tax exemptions for the Superintendência da Zona Franca de Manaus (SUFRAMA) region. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 ms.search.industry: MFG;DIST;SVCIND
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Issue customer fiscal documents (for SUFRAMA customers) (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Issue customer fiscal documents (for SUFRAMA customers) (Brazil)
 
 Use this procedure to set up tax exemptions for the Superintendência da Zona Franca de Manaus (SUFRAMA) region. This task uses the BRMF demo company.
 

@@ -3,7 +3,7 @@
  
 title: Configure the functionality profile for a sales representative
 description: This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives. 
-author: TonyaFehr 
+author: jblucher
 manager: AnnBe 
 ms.date: 10/27/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: jeffbl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Configure the functionality profile for a sales representative
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Configure the functionality profile for a sales representative
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives. This procedures uses the USRT demo data company.
 

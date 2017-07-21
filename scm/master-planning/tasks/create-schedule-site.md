@@ -3,7 +3,7 @@
  
 title: Create a schedule for a site
 description: This procedure shows how to schedule production orders that are not yet started for a site. 
-author: TonyaFehr 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 06/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a schedule for a site
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a schedule for a site
 
 This procedure shows how to schedule production orders that are not yet started for a site.  The demo data company USMF is used to complete this procedure.
 

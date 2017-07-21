@@ -3,7 +3,7 @@
  
 title: Create a new benefit
 description: This task will show you how to create benefit elements which will be used when creating a new benefit. 
-author: TonyaFehr 
+author: kherr75
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: rschloma
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a new benefit
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a new benefit
 
 This task will show you how to create benefit elements which will be used when creating a new benefit. The demo data company used to create this task is USMF. This task is intended for a Compensation and Benefits manager.
 

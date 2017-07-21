@@ -3,7 +3,7 @@
  
 title: Create a purchase order from a sales order
 description: This procedure shows you how to create a purchase order that is based on a sales order. 
-author: TonyaFehr 
+author: omulvad
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a purchase order from a sales order
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a purchase order from a sales order
 
 This procedure shows you how to create a purchase order that is based on a sales order. The product's quantities on the purchase order are then designated to fulfill the demand of the originating sales order. Fulfilling sales demand this way is an alternative to a more comprehensive and optimized method of Distribution Requirements Planning. You can run this procedure in demo data company USMF or on your own data.
 

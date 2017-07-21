@@ -3,7 +3,7 @@
  
 title: Perform self-service to download hardware station
 description: This procedure walks through how to download a pre-defined hardware station. 
-author: TonyaFehr 
+author: jashanno
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: margoc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: jashanno
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Perform self-service to download hardware station
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Perform self-service to download hardware station
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through how to download a pre-defined hardware station. The demo data company used for this procedure is USRT. You must have created a new hardware station profile and hardware station before starting this task.
 

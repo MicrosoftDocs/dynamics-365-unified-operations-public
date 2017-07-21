@@ -3,7 +3,7 @@
  
 title: Set up NF-e parameters for a fiscal establishment (Brazil)
 description: Use the following procedure to set up the parameters for a Nota Fiscal eletrônica (NF-e) for a fiscal establishment. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up NF-e parameters for a fiscal establishment (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up NF-e parameters for a fiscal establishment (Brazil)
 
 Use the following procedure to set up the parameters for a Nota Fiscal eletrônica (NF-e) for a fiscal establishment. This task uses the BRMF demo company.
 

@@ -3,7 +3,7 @@
  
 title: Create a hierarchy of product classification
 description: This procedure shows how to create a new category hierarchy and assign a commodity code hierarchy type. 
-author: TonyaFehr 
+author: yuyus
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a hierarchy of product classification
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a hierarchy of product classification
 
 This procedure shows how to create a new category hierarchy and assign a commodity code hierarchy type. The demo data company used to create this procedure is USMF. This procedure is intended for the category manager.
 

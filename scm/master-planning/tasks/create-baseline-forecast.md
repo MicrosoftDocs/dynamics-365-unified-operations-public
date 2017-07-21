@@ -3,7 +3,7 @@
  
 title: Create a baseline forecast
 description: A production planner can create a baseline forecast either by using time series forecast models or by copying the historical demand. 
-author: TonyaFehr 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 10/27/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a baseline forecast
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a baseline forecast
 
 A production planner can create a baseline forecast either by using time series forecast models or by copying the historical demand. This procedure shows how to copy the historical demand to create a baseline forecast for all products using one item allocation key. 
 

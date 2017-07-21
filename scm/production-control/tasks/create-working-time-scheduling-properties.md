@@ -3,7 +3,7 @@
  
 title: Create working time scheduling properties
 description: Working time scheduling properties are used to categorize working time intervals and define the settings that operators must take into account. 
-author: TonyaFehr 
+author: sorenva
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: sorenand
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create working time scheduling properties
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create working time scheduling properties
 
 Working time scheduling properties are used to categorize working time intervals and define the settings that operators must take into account. This procedure shows how to define a working time scheduling property and associated property values. You can walk through this procedure in demo data company USMF, or using your own data.
 

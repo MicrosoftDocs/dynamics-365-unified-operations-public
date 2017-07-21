@@ -3,7 +3,7 @@
  
 title: Generate a transfer document for an internal inventory transfer
 description: This procedure shows how to create transfer documents for goods movement inside a company. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 10/27/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Generate a transfer document for an internal inventory transfer
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Generate a transfer document for an internal inventory transfer
 
 This procedure shows how to create transfer documents for goods movement inside a company. This procedure is only available for legal entities with a primary address in Lithuania. 
 The procedure was created using the demo data company DEMF with a primary address in Lithuania. Before you can complete this procedure, you must complete the “Set up transfer documents for goods movement inside a company” procedure. 

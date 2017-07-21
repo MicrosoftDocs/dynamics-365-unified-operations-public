@@ -3,7 +3,7 @@
  
 title: Develop and open a job requisition
 description: Recruitment projects help manage the recruiting process. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 02/10/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Develop and open a job requisition
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Develop and open a job requisition
 
 Recruitment projects help manage the recruiting process. For each recruitment project, you can set up information, such as the job that recruiting is for, the name of the recruiter, the status of the project and the department that the job will be located in. After creating a recruitment project, you can write a job advertisement for the project, publish the ad on Employee self-service pages, associate applications for employment with the project, and track activities for that project. The demo data company used to create this procedure is USMF. To begin the procedure, go to Human resources > Recruitment > Recruitment projects > Recruitment projects
 

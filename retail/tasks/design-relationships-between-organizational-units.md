@@ -3,7 +3,7 @@
  
 title: Design the relationships between organizational units
 description: This procedure walks through how to design the relationship between organizational units. 
-author: TonyaFehr 
+author: mugunthanm
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: mumani
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Design the relationships between organizational units
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Design the relationships between organizational units
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through how to design the relationship between organizational units. You must create a new organization purpose before defining the relationship, or you can use the existing organization purpose. The demo data company used to complete this procedure is USRT. This task is intended for the administrator role.
 

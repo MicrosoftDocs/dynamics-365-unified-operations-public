@@ -3,7 +3,7 @@
  
 title: Deliver an employee benefits program
 description: This task will show you how to create benefit elements which will be used when creating a new benefit. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 12/01/2015
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Deliver an employee benefits program
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Deliver an employee benefits program
 
 This task will show you how to create benefit elements which will be used when creating a new benefit. The demo data company used to create this task is USMF. This task is intended for a Compensation and Benefits manager.
 

@@ -3,7 +3,7 @@
  
 title: Process rebates for payment
 description: This procedure demonstrates how to convert approved and processed customer rebates to credit notes. 
-author: TonyaFehr 
+author: omulvad
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Process rebates for payment
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Process rebates for payment
 
 This procedure demonstrates how to convert approved and processed customer rebates to credit notes. You can use this guide in the USMF demo company. The precondition for this guide is to have one or more rebate claims which have a status of Mark. If you’re using USMF you should run the "Generate and process customer rebates" guide before you start this guide.
 

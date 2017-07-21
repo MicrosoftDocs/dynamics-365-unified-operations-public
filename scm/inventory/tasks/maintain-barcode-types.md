@@ -3,7 +3,7 @@
  
 title: Maintain bar code types
 description: This procedure shows you how to set up a new barcode definition which can then be used as part of the picking list report. 
-author: TonyaFehr 
+author: perlynne
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: perlynne
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Maintain bar code types
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Maintain bar code types
 
 This procedure shows you how to set up a new barcode definition which can then be used as part of the picking list report. You can walk through this procedure in demo data company USMF, or using your own data. If you are using USMF you can use the example values that are shown. These tasks would typically be carried out by a warehouse manager.
 

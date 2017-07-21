@@ -3,7 +3,7 @@
  
 title: Generate and post recurring free text invoices
 description: Recurring invoices are used to invoice customers regularly for the same amount. 
-author: TonyaFehr 
+author: ShivamPandey-msft
 manager: AnnBe 
 ms.date: 10/23/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shpandey
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Generate and post recurring free text invoices
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Generate and post recurring free text invoices
 
 Recurring invoices are used to invoice customers regularly for the same amount. This recording uses the USMF demo company. The recording is intended for the person responsible for managing and processing A/R invoices.
 

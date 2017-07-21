@@ -3,7 +3,7 @@
  
 title: Create purchasing policies
 description: This procedure shows you how to create purchasing policies to align with your business processes for purchasing. 
-author: TonyaFehr 
+author: mkirknel
 manager: AnnBe 
 ms.date: 08/23/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create purchasing policies
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create purchasing policies
 
 This procedure shows you how to create purchasing policies to align with your business processes for purchasing. Before you can create purchasing policies, you must set up the purchasing policy parameters. It’s possible to create, modify, and retire a purchasing policy, but you can’t delete a purchasing policy. This procedure would typically be carried out by a purchasing manager. You can use this procedure in demo data company USMF or on your own data.
 

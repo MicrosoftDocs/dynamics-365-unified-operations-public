@@ -3,7 +3,7 @@
  
 title: Transfer materials with kanban jobs (February 2016 only)
 description: This procedure focuses on executing a withdrawal kanban job to transfer materials. 
-author: TonyaFehr 
+author: ChristianRytt
 manager: AnnBe 
 ms.date: 02/07/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: crytt
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Transfer materials with kanban jobs (February 2016 only)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Transfer materials with kanban jobs (February 2016 only)
 
 This procedure focuses on executing a withdrawal kanban job to transfer materials. The demo data company used to create this procedure is USMF. This procedure is intended for the warehouse worker.
 

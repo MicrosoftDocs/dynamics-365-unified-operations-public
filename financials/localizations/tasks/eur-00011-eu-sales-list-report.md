@@ -3,7 +3,7 @@
  
 title: Generate an EU sales list report
 description: This procedure walks you through generating the EU sales list report. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Generate an EU sales list report
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Generate an EU sales list report
 
 This procedure walks you through generating the EU sales list report. This includes transferring intra-community trade transactions to the EU sales list and running the report. This  procedure also includes creating an intra-community trade transaction for demo purposes. For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.
 This procedure applies to all European countries/regions. The procedure was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region. The procedure also uses Portugal as an exemplar EU country/region. Before you can complete this procedure, you must configure EU sales list reporting.

@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Category pricing rules to create trade agreements
-description: This procedure demonstrates how to create sales price trade agreements using a category pricing rule. 
-author: TonyaFehr 
+description: This procedure will show how to create trade agreements using a category pricing rules to generate sales price trade agreements. 
+author: scott-tucker
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 12/05/2015
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -16,49 +16,56 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: scotttuc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Category pricing rules to create trade agreements
 
-[!include[banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
-# Category pricing rules to create trade agreements
-
-This procedure demonstrates how to create sales price trade agreements using a category pricing rule. The demo data company used to create this task is USRT. This task is intended for the Retail merchandising manager role.
+This procedure will show how to create trade agreements using a category pricing rules to generate sales price trade agreements. This procedure uses USRT demo data.
 
 1. Click Pricing and discount management.
-2. Click New.
-3. Click Category price rule.
-4. In the list, mark the selected row.
+2. Click the Category price rules tab.
+3. Click New.
+4. Click Category price rule.
 5. In the Account code field, select an option.
-    * A "Group" type account code is used to set up sales price trade agreements that are specific for Channels, Loyalty programs, Catalogs, and Affiliations.  
-6. In the Account selection field, enter or select a value.
-7. In the Category field, enter or select a value.
-8. In the Amount/Percent field, enter a number.
-9. In the Rounding version field, enter or select a value.
-10. Click Generate trade agreements.
-11. Click Next.
-12. In the From date field, enter a date.
-13. In the To date field, enter a date.
-14. Select Yes in the Find next field.
-15. Click Next.
-16. Click Finish.
-    * This creates a Trade agreement journal and opens it for your review.  
-17. In the list, find and select the desired record.
-    * The trade agreement journals created from the Category pricing rules aren't posted. You can  review and edit the prices generated before posting them.  
-18. Click Edit.
-19. In the Amount in currency field, enter a number.
-20. Click Post.
-21. Click OK.
-22. Close the page.
-23. Close the page.
-24. Click the Category price rules tab.
-    * Channel specific Category pricing rules will show in this list.  
+6. In the Account selection field, click the drop-down button to open the lookup.
+7. In the list, mark the selected row.
+8. In the Account selection field, click the drop-down button to open the lookup.
+9. In the list, click the link in the selected row.
+10. In the Name field, click the drop-down button to open the lookup.
+11. In the tree, expand 'ALL (ALL)\Fashion (Fashion)'.
+12. In the tree, expand 'ALL (ALL)\Fashion (Fashion)\Menswear (Menswear)'.
+13. In the tree, select 'ALL (ALL)\Fashion (Fashion)\Menswear (Menswear)\Mens Jeans (Mens Jeans)'.
+14. Click OK.
+15. In the Price basis field, select 'Base cost'.
+16. In the Amount/Percent field, enter a number.
+17. In the Rounding version field, click the drop-down button to open the lookup.
+18. In the list, find and select the desired record.
+19. In the list, click the link in the selected row.
+20. In the Unit field, type 'ea'.
+21. Click Save.
+22. Click Generate trade agreements.
+23. Click Play next pending step.
+24. Click Next.
+25. Click the Find next checkbox.
+26. Click Next.
+27. Click Finish.
+
+## Review trade agreement lines
+1. Click Post.
+2. Click Play next pending step.
+3. Click OK.
+4. Click View journals.
+5. Close the page.
+6. Close the page.
+7. Refresh the page.
+8. In the list, mark the selected row.
 

@@ -3,7 +3,7 @@
  
 title: Set up a procurement category hierarchy
 description: This procedure shows you how to create new nodes in a procurement category hierarchy and how to configure a procurement category to be used in a procurement process. 
-author: TonyaFehr 
+author: mkirknel
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up a procurement category hierarchy
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up a procurement category hierarchy
 
 This procedure shows you how to create new nodes in a procurement category hierarchy and how to configure a procurement category to be used in a procurement process. These tasks would typically be carried out by a Purchasing manager. Before you can start this procedure, there must be a category hierarchy of type Procurement. If you're using a demo data company, you can run this procedure in the USMF company.
 

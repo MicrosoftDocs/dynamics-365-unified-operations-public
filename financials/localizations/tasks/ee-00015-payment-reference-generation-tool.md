@@ -3,7 +3,7 @@
  
 title: Payment reference generation tool (Eastern Europe)
 description: This procedure walks you through generating the payment references. 
-author: TonyaFehr 
+author: v-oloski
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Estonia
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: v-oloski
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Payment reference generation tool (Eastern Europe)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Payment reference generation tool (Eastern Europe)
 
 This procedure walks you through generating the payment references. This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Estonia. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 

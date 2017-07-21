@@ -3,7 +3,7 @@
  
 title: Create an interest code with a range
 description: Interest codes can be set up to calculate different interest amounts based on a range of values. 
-author: TonyaFehr 
+author: ShivamPandey-msft
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shpandey
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create an interest code with a range
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create an interest code with a range
 
 Interest codes can be set up to calculate different interest amounts based on a range of values. This procedure will show you how to add an interest code and add a range to it.
 

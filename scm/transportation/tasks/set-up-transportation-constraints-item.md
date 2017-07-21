@@ -3,7 +3,7 @@
  
 title: Set up transportation constraints for an item
 description: This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub. 
-author: TonyaFehr 
+author: BibiSp
 manager: AnnBe 
 ms.date: 06/07/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: bibis
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up transportation constraints for an item
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up transportation constraints for an item
 
 This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub. This task would typically be carried out by a Transportation coordinator. You can use this procedure in the USMF demo data company or on your own data.
 

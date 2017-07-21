@@ -3,7 +3,7 @@
  
 title: Configure machine learning-powered product recommendations
 description: This procedure refreshes the data in the Entity store that is used by the machine learning system that powers product recommendations, and then enables product recommendations on POS clients. 
-author: TonyaFehr 
+author: ashishmsft
 manager: AnnBe 
 ms.date: 10/27/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: RET
-ms.author: tfehr 
+ms.author: asharchw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Configure machine learning-powered product recommendations
 
-[!include[banner](../includes/task-guide-banner.md)]
-
-# Configure machine learning-powered product recommendations
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure refreshes the data in the Entity store that is used by the machine learning system that powers product recommendations, and then enables product recommendations on POS clients. This procedure uses the USRT company in demo data.
 

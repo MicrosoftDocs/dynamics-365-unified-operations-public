@@ -3,7 +3,7 @@
  
 title: Review collections information
 description: This procedure walks you through how to review collections information as well as various setup options and collections transactions. 
-author: TonyaFehr 
+author: ShivamPandey-msft
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shpandey
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Review collections information
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Review collections information
 
 This procedure walks you through how to review collections information as well as various setup options and collections transactions. This procedure uses the USMF demo company.
 

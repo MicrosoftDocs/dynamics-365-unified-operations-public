@@ -3,7 +3,7 @@
  
 title: Dispose of a fixed asset using a free text invoice
 description: This procedure shows how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal. 
-author: TonyaFehr 
+author: saraschi2
 manager: AnnBe 
 ms.date: 10/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Dispose of a fixed asset using a free text invoice
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Dispose of a fixed asset using a free text invoice
 
 This procedure shows how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal. It uses the accountant role and demo data for the USMF legal entity.
 

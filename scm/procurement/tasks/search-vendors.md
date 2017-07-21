@@ -3,7 +3,7 @@
  
 title: Search for vendors
 description: Learn how to search for vendors based on specific criteria. 
-author: TonyaFehr 
+author: mkirknel
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Search for vendors
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Search for vendors
 
 Learn how to search for vendors based on specific criteria. This example shows you how to search for vendors that are approved for a particular procurement category and have their primary address in a specific country. You can run this procedure in demo data company USMF, or on your own data. This task would usually be carried out by a procurement professional.
 

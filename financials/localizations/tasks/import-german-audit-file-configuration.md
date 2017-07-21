@@ -3,7 +3,7 @@
  
 title: Import audit file configuration (Germany)
 description: This procedure shows how to import the German audit file electronic reporting data model and format configurations. 
-author: TonyaFehr 
+author: mrolecki
 manager: AnnBe 
 ms.date: 02/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Germany
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Import audit file configuration (Germany)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Import audit file configuration (Germany)
 
 This procedure shows how to import the German audit file electronic reporting data model and format configurations. This procedure was created using the demo data company DEMF with Germany as the country/region of legal entity primary address.
 

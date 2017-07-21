@@ -3,7 +3,7 @@
  
 title: Set up payment slip format (Denmark)
 description: Businesses commonly attach printed payment slips to invoices to assist customers and provide a payment reference for posting and settlement. 
-author: TonyaFehr 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Denmark
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up payment slip format (Denmark)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up payment slip format (Denmark)
 
 Businesses commonly attach printed payment slips to invoices to assist customers and provide a payment reference for posting and settlement. The payment slip can be used for project or service invoices, collection letters, interest notes, and account statements, in addition to sales invoices and free text invoices. To process payment slips, first set up your creditor identification number and payment slip attachment formats.
 This recording uses the DEMF demo company. 

@@ -3,7 +3,7 @@
  
 title: NAF codes and Siret numbers (France)
 description: This procedure shows how to create NAF codes and then enter the codes for legal entities, customers, vendors, and prospects. 
-author: TonyaFehr 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 06/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: France
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# NAF codes and Siret numbers (France)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# NAF codes and Siret numbers (France)
 
 This procedure shows how to create NAF codes and then enter the codes for legal entities, customers, vendors, and prospects. NAF codes are used to identify the business of an enterprise. For instance, if your legal entity manufactures computers, the NAF code for your legal entity may be 300C, which is the NAF code for manufacturing computers and other computer hardware. If your legal entity is involved in building houses, your NAF code may be 452A.
 

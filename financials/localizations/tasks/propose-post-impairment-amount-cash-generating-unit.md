@@ -3,7 +3,7 @@
  
 title: Propose and post the impairment amount on a cash generating unit (Japan)
 description: For Japan, after the calculation of the impairment amount, you can propose and post it in a fixed asset journal. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 02/26/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Propose and post the impairment amount on a cash generating unit (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Propose and post the impairment amount on a cash generating unit (Japan)
 
 For Japan, after the calculation of the impairment amount, you can propose and post it in a fixed asset journal.
 

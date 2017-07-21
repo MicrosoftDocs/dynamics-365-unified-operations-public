@@ -3,7 +3,7 @@
  
 title: Post a free text invoice (Mexico)
 description: Use the Free text invoice form to create and post a customer invoice as an electronic invoice by using CFDI method. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 05/09/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Post a free text invoice (Mexico)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Post a free text invoice (Mexico)
 
 Use the Free text invoice form to create and post a customer invoice as an electronic invoice by using CFDI method. You must to be logged in a Mexican legal entity. This task guide was created using the MXMF demo data company.
 

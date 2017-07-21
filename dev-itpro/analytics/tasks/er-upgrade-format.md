@@ -3,7 +3,7 @@
  
 title: Upgrade your format by adopting of new base version of that format for electronic reporting (ER)
 description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration. 
-author: TonyaFehr 
+author: NickSelin
 manager: AnnBe 
 ms.date: 02/06/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Upgrade your format by adopting of new base version of that format for electronic reporting (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Upgrade your format by adopting of new base version of that format for electronic reporting (ER)
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration. This procedure explains how a custom version of a format can be created based on the format received from a configuration provider (CP). It also explains how to adopt a new, base version of that format.
 

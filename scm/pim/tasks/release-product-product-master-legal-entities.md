@@ -3,7 +3,7 @@
  
 title: Release a product/product master to legal entities
 description: This procedure walks through how to release a product or product master into one or more legal entities. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Release a product/product master to legal entities
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Release a product/product master to legal entities
 
 This procedure walks through how to release a product or product master into one or more legal entities. The demo data company used to create this task is USRT, and the task is intended for the Merchandising Manager and Product Designer.
 

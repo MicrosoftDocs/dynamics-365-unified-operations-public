@@ -3,7 +3,7 @@
  
 title: Create a withdrawal kanban rule
 description: This procedure shows the setup that is needed to create a withdrawal kanban rule for transferring material in a lean environment. 
-author: TonyaFehr 
+author: ChristianRytt
 manager: AnnBe 
 ms.date: 06/20/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: crytt
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a withdrawal kanban rule
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a withdrawal kanban rule
 
 This procedure shows the setup that is needed to create a withdrawal kanban rule for transferring material in a lean environment. The demo data company used to create this procedure is USMF. This procedure is intended for the Process Engineer or the Value Stream Manager, as they prepare replenishment of new or modified material.
 

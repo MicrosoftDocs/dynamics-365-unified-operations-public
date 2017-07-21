@@ -3,7 +3,7 @@
  
 title: Import ISO20022 direct debit configuration
 description: This procedure demonstrates how to import a customer payment electronic reporting configuration. 
-author: TonyaFehr 
+author: mrolecki
 manager: AnnBe 
 ms.date: 10/13/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Import ISO20022 direct debit configuration
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Import ISO20022 direct debit configuration
 
 This procedure demonstrates how to import a customer payment electronic reporting configuration. This procedure uses the ISO 20022 direct debit format as an example. 
 

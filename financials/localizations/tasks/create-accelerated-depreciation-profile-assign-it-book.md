@@ -3,7 +3,7 @@
  
 title: Create an accelerated depreciation profile and assign it to book (Japan)
 description: For Japan, accelerated depreciation requires configuration of a depreciation profile, just like other depreciation methods. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 09/22/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create an accelerated depreciation profile and assign it to book (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create an accelerated depreciation profile and assign it to book (Japan)
 
 For Japan, accelerated depreciation requires configuration of a depreciation profile, just like other depreciation methods. 
 

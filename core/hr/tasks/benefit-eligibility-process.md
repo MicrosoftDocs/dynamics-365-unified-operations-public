@@ -3,7 +3,7 @@
  
 title: Benefit eligibility process
 description: This procedure hows the benefit eligibility process works. 
-author: TonyaFehr 
+author: kherr75
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: rschloma
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Benefit eligibility process
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Benefit eligibility process
 
 This procedure hows the benefit eligibility process works. When the process is complete you can view the results. The demo data company used to create this procedure is USMF.
 

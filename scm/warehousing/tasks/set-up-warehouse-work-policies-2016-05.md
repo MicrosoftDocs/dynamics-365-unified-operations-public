@@ -3,7 +3,7 @@
  
 title: Set up warehouse work policies 
 description: Warehouse processes don’t always include warehouse work. 
-author: TonyaFehr 
+author: johanhoffmann
 manager: AnnBe 
 ms.date: 06/23/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: DIST
-ms.author: tfehr 
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up warehouse work policies 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up warehouse work policies 
 
 Warehouse processes don’t always include warehouse work. By defining a work policy, you can prevent the creation of work for raw material picking and put-away of finished goods for a set of products at specific locations. The USMF demo data company was used to create this recording. This task guide requires Dynamics AX application 7.0.1 or later.
 

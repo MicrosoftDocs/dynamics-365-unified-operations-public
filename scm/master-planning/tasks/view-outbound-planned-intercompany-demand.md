@@ -3,7 +3,7 @@
  
 title: View outbound planned intercompany demand
 description: This procedure shows how to view all the planned orders that will be fulfilled by an intercompany vendor. 
-author: TonyaFehr 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 11/03/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# View outbound planned intercompany demand
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# View outbound planned intercompany demand
 
 This procedure shows how to view all the planned orders that will be fulfilled by an intercompany vendor. The demo data company used to create this procedure is DEMF.
 

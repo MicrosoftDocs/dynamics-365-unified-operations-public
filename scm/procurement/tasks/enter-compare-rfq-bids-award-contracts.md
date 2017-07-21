@@ -3,7 +3,7 @@
  
 title: Enter and compare RFQ bids and award contracts
 description: This procedure shows you how to enter replies to an RFQ, score and compare bids, and then award the bid to one of the vendors. 
-author: TonyaFehr 
+author: mkirknel
 manager: AnnBe 
 ms.date: 06/07/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Enter and compare RFQ bids and award contracts
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Enter and compare RFQ bids and award contracts
 
 This procedure shows you how to enter replies to an RFQ, score and compare bids, and then award the bid to one of the vendors. You can use this procedure in demo data company USMF. Before you start, you must have an RFQ with two lines that has been sent to at least two vendors. You can run the "Create a request for quotation" procedure as a prerequisite to create this. You need to have set up scoring criteria before you can run this procedure.
 

@@ -3,7 +3,7 @@
  
 title: Configure consolidated invoice parameters and setup for accounts payable (Japan)
 description: In Japan, consolidated invoices can be enabled to fit the Japanese business practices. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 02/18/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Configure consolidated invoice parameters and setup for accounts payable (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Configure consolidated invoice parameters and setup for accounts payable (Japan)
 
 In Japan, consolidated invoices can be enabled to fit the Japanese business practices.
 

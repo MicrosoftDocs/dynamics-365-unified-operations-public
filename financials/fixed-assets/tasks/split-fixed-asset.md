@@ -3,7 +3,7 @@
  
 title: Split a fixed asset
 description: This task guide will split a percentage of one asset book to a new asset book. 
-author: TonyaFehr 
+author: saraschi4
 manager: AnnBe 
 ms.date: 10/19/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Split a fixed asset
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Split a fixed asset
 
 This task guide will split a percentage of one asset book to a new asset book.  It uses the Accountant role and USMF demo data.
 

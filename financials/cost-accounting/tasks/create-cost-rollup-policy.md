@@ -3,7 +3,7 @@
  
 title: Create a cost rollup policy
 description: This procedure shows how to create a cost rollup policy and create rules for the policy. 
-author: TonyaFehr 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 06/27/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a cost rollup policy
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a cost rollup policy
 
 This procedure shows how to create a cost rollup policy and create rules for the policy. The demo data used to create this procedure is USP2.
 

@@ -3,7 +3,7 @@
  
 title: Enter project timesheets
 description: This procedure lets you create a timesheet by using an empty timesheet form. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: SVCIND
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Enter project timesheets
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Enter project timesheets
 
 This procedure lets you create a timesheet by using an empty timesheet form. The new timesheet can be based on information from a previous timesheet, or from project and activity assignments in the My favourites page. By default, the All timesheets list page displays all your timesheets for the current period. You can use the drop-down list for the Show field in the My timesheets page to filter the timesheet list by time period or project, or to view timesheets that were created on behalf of other workers. The demo data company used to create this procedure is USSI. To begin this procedure, go to Project management and accounting > Timesheets >My timesheets
 

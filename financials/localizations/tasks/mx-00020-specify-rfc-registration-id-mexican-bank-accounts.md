@@ -3,7 +3,7 @@
  
 title: Specify the RFC registration ID for Mexican bank accounts
 description: This task walks you through creating the Bank account for Mexico and assigning the RFC tax registration ID. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Specify the RFC registration ID for Mexican bank accounts
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Specify the RFC registration ID for Mexican bank accounts
 
 This task walks you through creating the Bank account for Mexico and assigning the RFC tax registration ID. This task uses the MXMF demo company data.
 

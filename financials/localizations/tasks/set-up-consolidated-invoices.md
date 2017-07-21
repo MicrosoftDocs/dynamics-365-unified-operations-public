@@ -3,7 +3,7 @@
  
 title: Set up consolidated invoices (Japan)
 description: In Japan, consolidated invoices can be enabled to fit the Japanese business practices. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 02/16/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Set up consolidated invoices (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Set up consolidated invoices (Japan)
 
 In Japan, consolidated invoices can be enabled to fit the Japanese business practices.
 

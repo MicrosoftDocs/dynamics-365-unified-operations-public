@@ -3,7 +3,7 @@
  
 title: Generate customer debit for project sales (Malaysia)
 description: This task walks you through creating and printing project debit note for GST. 
-author: TonyaFehr 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 10/26/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Generate customer debit for project sales (Malaysia)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Generate customer debit for project sales (Malaysia)
 
 This task walks you through creating and printing project debit note for GST.
 

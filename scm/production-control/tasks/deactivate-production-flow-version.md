@@ -3,7 +3,7 @@
  
 title: Deactivate a production flow version
 description: When an active production flow version is no longer needed, it can be deactivated. 
-author: TonyaFehr 
+author: cvocph
 manager: AnnBe 
 ms.date: 10/07/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: conradv
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Deactivate a production flow version
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Deactivate a production flow version
 
 When an active production flow version is no longer needed, it can be deactivated. You should only use this option if all kanban rules and activities have ended and will not be activated again. Note that the expiry date of all kanban rules related to this production flow version will be updated with the current date and time. 
 To modify an active production flow version, consider setting an expiry date for the active version and create a new version. This will allow you to continue your production operations while preparing the new version and related kanban rules. 

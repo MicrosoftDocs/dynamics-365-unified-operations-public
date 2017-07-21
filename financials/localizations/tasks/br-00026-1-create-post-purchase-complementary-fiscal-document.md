@@ -3,7 +3,7 @@
  
 title: Create and post a purchase complementary fiscal document (Brazil)
 description: Use this procedure to create a purchase complementary fiscal document to adjust a purchase fiscal document that was generated for an incorrect price, Imposto Sobre Produtos Industrializados (IPI) amount, or Imposto Sobre Circulação de Mercadorias e Serviços (ICMS) amount. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create and post a purchase complementary fiscal document (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create and post a purchase complementary fiscal document (Brazil)
 
 Use this procedure to create a purchase complementary fiscal document to adjust a purchase fiscal document that was generated for an incorrect price, Imposto Sobre Produtos Industrializados (IPI) amount, or Imposto Sobre Circulação de Mercadorias e Serviços (ICMS) amount. This recording uses the BRMF demo company.
 

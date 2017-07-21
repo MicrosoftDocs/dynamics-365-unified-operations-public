@@ -3,7 +3,7 @@
  
 title: View inventory statement and KPI by cost object
 description: The demo data company used to create this procedure is USMF. 
-author: TonyaFehr 
+author: AndersGirke
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: MFG
-ms.author: tfehr 
+ms.author: aevengir
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# View inventory statement and KPI by cost object
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# View inventory statement and KPI by cost object
 
 The demo data company used to create this procedure is USMF. This procedure is intended for the cost controller.
 

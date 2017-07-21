@@ -3,7 +3,7 @@
  
 title: Create and assign a cost allocation policy to a cost control unit
 description: Use this procedure to create and assign a cost allocation policy and the corresponding rules to a cost control unit. 
-author: TonyaFehr 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 06/28/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create and assign a cost allocation policy to a cost control unit
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create and assign a cost allocation policy to a cost control unit
 
 Use this procedure to create and assign a cost allocation policy and the corresponding rules to a cost control unit. This recording uses the USP2 demo data company.
 

@@ -3,7 +3,7 @@
  
 title: Enter a CIAP transaction (Brazil)
 description: You can enter a CIAP transaction in two ways - post a fiscal document, or enter a transaction. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Enter a CIAP transaction (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Enter a CIAP transaction (Brazil)
 
 You can enter a CIAP transaction in two ways: post a fiscal document, or enter a transaction. You can  manually link to a fiscal document as you require. This recording uses the BRMF demo company.
 

@@ -3,7 +3,7 @@
  
 title: Establish customer payment terms
 description: This procedure defines a cash discount and due date setup. 
-author: TonyaFehr 
+author: aprilolson
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: aolson
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Establish customer payment terms
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Establish customer payment terms
 
 This procedure defines a cash discount and due date setup. This task guide uses the USMF demo company.
 

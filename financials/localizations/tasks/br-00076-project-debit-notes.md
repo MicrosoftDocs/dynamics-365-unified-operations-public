@@ -3,7 +3,7 @@
  
 title: Project debit notes (Brazil)
 description: You can generate debit notes for projects to get reimbursement of expenses occurred in the project. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 ms.search.industry: MFG;DIST;SVCIND
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Project debit notes (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Project debit notes (Brazil)
 
 You can generate debit notes for projects to get reimbursement of expenses occurred in the project. The demo data company used to create this procedure is BRMF.
 

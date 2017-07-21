@@ -3,7 +3,7 @@
  
 title: Produce Mexican electronic ledger accounting report version 1.1
 description: This task walks through all necessary steps to configure the generation of electronic ledger accounting XML files by using the Electronic Reporting tool. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Produce Mexican electronic ledger accounting report version 1.1
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Produce Mexican electronic ledger accounting report version 1.1
 
 This task walks through all necessary steps to configure the generation of electronic ledger accounting XML files by using the Electronic Reporting tool. You can import from the AX resource center the model and formats of XML files to generate the statements. 
 

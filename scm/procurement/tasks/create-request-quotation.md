@@ -3,7 +3,7 @@
  
 title: Create a request for quotation
 description: This procedure shows you how to create a request for quotation. 
-author: TonyaFehr 
+author: mkirknel
 manager: AnnBe 
 ms.date: 11/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a request for quotation
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a request for quotation
 
 This procedure shows you how to create a request for quotation. This would typically be done by a purchasing agent. You can use this procedure in demo data company USMF or on your own data. You need to have set up solicitation types before you start. Once you’ve completed this task and you’ve created and sent an RFQ you can then enter the replies per vendor, compare them, and award the contract.
 

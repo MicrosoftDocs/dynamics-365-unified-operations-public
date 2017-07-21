@@ -3,7 +3,7 @@
  
 title: Create a scoring method for RFQs
 description: This procedure shows you how to create a scoring method. 
-author: TonyaFehr 
+author: mkirknel
 manager: AnnBe 
 ms.date: 08/23/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: bibis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a scoring method for RFQs
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a scoring method for RFQs
 
 This procedure shows you how to create a scoring method. A scoring method is a set of criteria that can be used to compare bids that are sent in reply to a request for quotation (RFQ). For example, you might want to rate a vendor on past performance, or rate whether the company is environmentally friendly or a good collaborator, or you might want to compare bids based on price. The scoring method can be associated with a solicitation type as the default scoring method for RFQs of that type. These tasks would typically be carried out by a purchasing manager. You can use this procedure in demo data company USMF or on your own data.
 

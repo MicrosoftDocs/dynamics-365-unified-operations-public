@@ -3,7 +3,7 @@
  
 title: Confirm sales orders
 description: This procedure demonstrates how to confirm sales orders. 
-author: TonyaFehr 
+author: omulvad
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: kfend
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Confirm sales orders
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Confirm sales orders
 
 This procedure demonstrates how to confirm sales orders. You’ll be shown how to confirm a single order, and how to confirm multiple orders at once. These tasks would typically be carried out by a sales order processor. You can use this procedure in demo data company USMF or on your own data. Before you start, make sure there are several open sales orders for the same customer. If you’re using USMF, you can use customer US-027.
 

@@ -3,7 +3,7 @@
  
 title: Manage order holds
 description: This procedure demonstrates how to place customer sales orders on hold, how to work with order hold checkouts, and how to remove order holds. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 01/09/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Manage order holds
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Manage order holds
 
 This procedure demonstrates how to place customer sales orders on hold, how to work with order hold checkouts, and how to remove order holds. An order might be placed on hold for a variety of reasons. For example, you might hold an order until a customer address or payment method can be verified or until a manager can review the customer’s credit limit. While the order on hold, it cannot be processed by the warehouse for shipping. 
 You can run this procedure in demo data company USMF or on your own data.

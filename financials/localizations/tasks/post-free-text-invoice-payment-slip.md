@@ -3,7 +3,7 @@
  
 title: Post a free text invoice with a payment slip (Denmark)
 description: You can post a free text invoice with a payment slip attachment in a specified format. 
-author: TonyaFehr 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 05/09/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Denmark
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Post a free text invoice with a payment slip (Denmark)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Post a free text invoice with a payment slip (Denmark)
 
 You can post a free text invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment.
 

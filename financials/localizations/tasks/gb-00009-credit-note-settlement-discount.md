@@ -3,7 +3,7 @@
  
 title: Create a credit on the settlement discount (UK)
 description: This walkthrough was created using the demo company DEMF with country context switched for the United Kingdom (Country/region GBR). 
-author: TonyaFehr 
+author: epodkolz
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: United Kingdom
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epodkolz
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a credit on the settlement discount (UK)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a credit on the settlement discount (UK)
 
 This walkthrough was created using the demo company DEMF with country context switched for the United Kingdom (Country/region GBR). 
 This task walks you through creating a customer invoice that includes cash discount, with further prompt payment and generating credit note on cash discount to adjust the VAT entries posted on the original invoice. 

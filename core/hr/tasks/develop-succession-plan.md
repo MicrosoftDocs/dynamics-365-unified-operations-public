@@ -3,7 +3,7 @@
  
 title: Develop a succession plan
 description: As your organization grows, and you consider succession planning, you may want to find someone who has similar skills to another person. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Develop a succession plan
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Develop a succession plan
 
 As your organization grows, and you consider succession planning, you may want to find someone who has similar skills to another person.  Skill mapping allows you to analyse your existing employees and applicants to see if they match the skill set of a valued employee. The demo data company used to create this procedure is USMF.
 

@@ -3,7 +3,7 @@
  
 title: Post vouchers from the general journal (China)
 description: This procedure walks you through posting Chinese vouchers using the general journal. 
-author: TonyaFehr 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 10/27/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC)
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Post vouchers from the general journal (China)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Post vouchers from the general journal (China)
 
 This procedure walks you through posting Chinese vouchers using the general journal.  Before you can complete this procedure, be sure that you’ve created all of the necessary fiscal calendars. 
 

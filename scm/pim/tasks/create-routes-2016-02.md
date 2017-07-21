@@ -3,7 +3,7 @@
  
 title: Create routes (February 2016 only)
 description: This task focuses on creating the production routes for a finished product and and a semi-finished product. 
-author: TonyaFehr 
+author: 
 manager: AnnBe 
 ms.date: 02/07/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: 
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create routes (February 2016 only)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create routes (February 2016 only)
 
 This task focuses on creating the production routes for a finished product and and a semi-finished product. It is the fifth task in the BOM calculation series. The demo data company used to create this task is USMF.
 

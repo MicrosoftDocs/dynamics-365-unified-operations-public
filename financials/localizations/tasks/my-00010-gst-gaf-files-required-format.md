@@ -3,7 +3,7 @@
  
 title: GST - Generate GAF files in the required format (Malaysia)
 description: This procedure walks you through generating the Malaysia GAF file. 
-author: TonyaFehr 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# GST - Generate GAF files in the required format (Malaysia)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# GST - Generate GAF files in the required format (Malaysia)
 
 This procedure walks you through generating the Malaysia GAF file. You must be in the Accounting manager role to complete this procedure.  Before you can complete this procedure, you must have already uploaded your GAF format files into your active electronic reporting configuration. This procedure was created using the demo data company MYMF.
 

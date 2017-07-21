@@ -3,7 +3,7 @@
  
 title: Tax assessment for ISS tax (Brazil)
 description: You can make the tax assessment for ISS tax for a given booking period, considering the amount of ISS tax to recover and the amount of ISS tax to pay from the fiscal documents. 
-author: TonyaFehr 
+author: sndray
 manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
 ms.search.industry: MFG;DIST;SVCIND
-ms.author: tfehr 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Tax assessment for ISS tax (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Tax assessment for ISS tax (Brazil)
 
 You can make the tax assessment for ISS tax for a given booking period, considering the amount of ISS tax to recover and the amount of ISS tax to pay from the fiscal documents. For the due amount after the tax assessment, you can make the payment of the amount for the tax authority. This task uses the BRMF demo company.
 

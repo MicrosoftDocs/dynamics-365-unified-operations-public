@@ -3,7 +3,7 @@
  
 title: Create an organization hierarchy
 description: Use the following procedure to create an organizational hierarchy. 
-author: TonyaFehr 
+author: sericks007
 manager: AnnBe 
 ms.date: 06/09/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: sericks
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: sericks
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create an organization hierarchy
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create an organization hierarchy
 
 Use the following procedure to create an organizational hierarchy. You can use organizational hierarchies to view and report on your business from various perspectives. For example, you can set up one hierarchy for tax, legal, or statutory reporting. You can then set up another hierarchy to report financial information that is not legally required, but that is used for internal reporting. 
 

@@ -3,7 +3,7 @@
  
 title: Release a dimension-based product master
 description: This procedure shows how to release a product master, which will be used for the dimension-based configurations. 
-author: TonyaFehr 
+author: yuyus
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Release a dimension-based product master
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Release a dimension-based product master
 
 This procedure shows how to release a product master, which will be used for the dimension-based configurations. The demo data company used to create this procedure is USMF. It is a prerequisite that you have created a product master with the dimension-based configuration technology. This is the second procedure out of eight which explains how to build combinations for dimension-based configuration.
 

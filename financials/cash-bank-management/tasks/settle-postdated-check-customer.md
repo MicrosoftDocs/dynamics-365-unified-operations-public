@@ -3,7 +3,7 @@
  
 title: Settle a postdated check from a customer
 description: You can settle a postdated check after the check has been cleared by the bank. 
-author: TonyaFehr 
+author: kweekley
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: twheeloc
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: kweekley
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Settle a postdated check from a customer
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Settle a postdated check from a customer
 
 You can settle a postdated check after the check has been cleared by the bank. This financial transaction also clears the bridge account transaction for the postdated check. 
 The following tasks must be complete before you start this one.

@@ -3,7 +3,7 @@
  
 title: Maintain a route for a product model
 description: Running this procedure requires that a product configuration model exists. 
-author: TonyaFehr 
+author: yuyus
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Maintain a route for a product model
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Maintain a route for a product model
 
 Running this procedure requires that a product configuration model exists. This procedure uses the High end speaker model in the demo company USMF to walk you through the process.
 

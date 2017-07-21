@@ -3,7 +3,7 @@
  
 title: Create a mass hire project
 description: This procedure walks through the process of setting up a mass hire project. 
-author: TonyaFehr 
+author: twheeloc
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,18 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-# ms.reviewer: tfehr 
+ms.reviewer: rschloma
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr 
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
----
+---# Create a mass hire project
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
-
-# Create a mass hire project
 
 This procedure walks through the process of setting up a mass hire project. A recruiter can use mass hire projects to easily create multiple positions and hire a number of workers into those positions. To begin this procedure, go to Human resources > Recruitment > Mass hire projects. The demo data company used to create this procedure is USMF.
 
