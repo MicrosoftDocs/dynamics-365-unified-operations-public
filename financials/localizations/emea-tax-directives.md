@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Tax directives for Europe | Microsoft Docs
+title: Tax directives for Europe
 description: You can specify to include an explanation of sales tax codes on sales invoices and project invoices. You can print reference numbers on sales invoices, free text invoices, and project invoices.
 author: epodkolz 
 manager: AnnBe

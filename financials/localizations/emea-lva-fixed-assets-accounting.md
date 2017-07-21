@@ -48,7 +48,7 @@ When you set up a depreciation profile, consider the following.
 | **Period frequency**  | Select the frequency of ledger accruals during the calendar year or fiscal year. The options that appear in this field vary, depending on the depreciation year that you selected. If you selected **Calendar** as the depreciation year, the options are **Yearly**, **Monthly**, **Quarterly**, **Half-yearly**. |
 | **Full depreciation** | Select this option to fully depreciate the fixed asset when the service life that remains is 0 (zero).                                                                                                                                                                                                             |
 
-<!---To set up a depreciation profile, complete the following procedure, [Set up and create depreciation profiles](http://ax.help.dynamics.com/en/wiki/set-up-and-create-depreciation-profiles/).-->
+<!---To set up a depreciation profile, complete the following procedure, [Set up and create depreciation profiles](/dynamics365/unified-operations/financials/fixed-assets/tasks/set-up-depreciation-profiles).-->
 
 ## Set up books
 Use the **Books** page to define a tax category. Books are also referred to as tax categories. To create a book, select the depreciation profile that has **Reducing balance** selected in the **Method** field in the **Depreciation profiles** page. The **Books** page for legal entities in Latvia contain the following fields:
@@ -57,7 +57,7 @@ Use the **Books** page to define a tax category. Books are also referred to as 
 -   **Summarize for category** - Select this option if tax depreciation should be summarized and calculated for all fixed assets that have the same book selected in the **Category** field.
 -   **Tax coefficients** - You can set up tax coefficients for each coefficient to adjust the acquisition price for the fiscal year.
 
-<!---For more information about setting up books, see [Set up depreciation books](http://ax.help.dynamics.com/en/wiki/set-up-depreciation-books/).-->
+For more information about setting up books, see [Set up depreciation books](/dynamics365/unified-operations/financials/fixed-assets/tasks/set-up-depreciation-books-2016-05)
 
 ### Set up tax depreciation calculation
 
