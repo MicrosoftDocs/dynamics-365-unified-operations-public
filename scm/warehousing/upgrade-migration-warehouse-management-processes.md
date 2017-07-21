@@ -39,7 +39,7 @@ Introduction
 During an upgrade to Finance and Operations, products are blocked if they are associated with a storage dimension group that has settings that don't match the requirements for storage dimension group settings in Finance and Operations. However, after the upgrade, you can use a set of migration options in the **Change storage dimension group for items** process to unblock products that were blocked during upgrade. You can then process transactions for those products. Some of your items might already be associated with storage dimension groups where the Site, Warehouse, and Location inventory dimensions are active and physically tracked. In this case, you can use the **Change storage dimension group for items** process to enable those items to be used in warehouse management processes. This feature is useful if you want to use the warehouse management functionality for existing items.
 
 ## Upgrading to Finance and Operations, when AX 2012 R3 WMSII is used
-Finance and Operations, no longer supports the legacy **WMSII** module from Microsoft Dynamics AX 2012. Instead, you can use the new **Warehouse management** module. For more information, see [Warehouse management home page](http://ax.help.dynamics.com/en/wiki/warehouse-management/). In previous versions, the Location and Pallet ID inventory dimensions could be selected for financial inventory. However, as part of the upgrade process, the Pallet ID inventory dimension can no longer be enabled for financial inventory. All products that are associated with a storage dimension group that uses the Pallet ID inventory dimension will be blocked and won't be processed.
+Finance and Operations, no longer supports the legacy **WMSII** module from Microsoft Dynamics AX 2012. Instead, you can use the new **Warehouse management** module. In previous versions, the Location and Pallet ID inventory dimensions could be selected for financial inventory. However, as part of the upgrade process, the Pallet ID inventory dimension can no longer be enabled for financial inventory. All products that are associated with a storage dimension group that uses the Pallet ID inventory dimension will be blocked and won't be processed.
 
 ### Enabling items in Finance and Operations
 
@@ -74,7 +74,7 @@ Before you can use released products in the **Warehouse management** module, the
 1.  Create at least one new location profile.
 2.  Click **Warehouse management** &gt; **Setup** &gt; **Enable warehouse management processes** &gt; **Enable warehouse setup**.
 3.  On the **Enable warehouse setup** page, add the warehouses that should be enabled. You can complete this step either directly on the page or by using the Microsoft Office integration.
-4.  Assign a location profile to all the locations. You can easily complete this step by using the Microsoft Office integration directly from the page. You can either export and import the data, or use the data entity processing in [Data management](http://ax.help.dynamics.com/en/wiki/data-management-and-integration-through-data-entity/).
+4.  Assign a location profile to all the locations. You can easily complete this step by using the Microsoft Office integration directly from the page. You can either export and import the data, or use the data entity processing in [Data management](dynamics365/unified-operations/dev-itpro/data-entities/data-entities).
 5.  Validate the changes. As part of the validation process, various validations of data integrity occur. As part of a larger upgrade process, issues that occur might have to be adjusted on the source implementation. In this case, an additional data upgrade will be required.
 6.  Process the changes.
 
@@ -85,7 +85,7 @@ Before you can use released products in the **Warehouse management** module, the
 3.  On the **Reservation hierarchy** page, define a new reservation hierarchy according to the item’s storage and tracking dimension groups.
 4.  Create one or more unit sequence groups that include at least the same units that are used for the items' inventory units.
 5.  Click **Warehouse management** &gt; **Setup** &gt; **Enable warehouse management processes** &gt; **Change storage dimension group for items**.
-6.  On the **Change storage dimension group for items** page, add the item numbers, storage dimension groups, and unit sequence groups. You can complete this step directly on the page, by using the Microsoft Office integration, or by using the data entity process in [Data management](http://ax.help.dynamics.com/en/wiki/data-management-and-integration-through-data-entity/).
+6.  On the **Change storage dimension group for items** page, add the item numbers, storage dimension groups, and unit sequence groups. You can complete this step directly on the page, by using the Microsoft Office integration, or by using the data entity process in [Data management](dynamics365/unified-operations/dev-itpro/data-entities/data-entities).
 7.  Validate the changes. As part of the validation process, various validations of data integrity occur. As part of a larger upgrade process, issues that occur might have to be adjusted on the source implementation. In this case, additional data upgrade will be required.
 8.  Process the changes. An update of all the inventory dimensions can take a while. You can monitor the progress by using the batch jobs tasks.
 

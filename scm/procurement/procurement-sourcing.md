@@ -48,7 +48,7 @@ Procurement and sourcing covers all steps from identifying a need for product an
 ## Requests for quotation
 -   [Request for quotations](request-quotations.md)
 -   [Create a request for quotation](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-request-quotation)
--   [Enter and compare RFQ bids and award contracts](http://ax.help.dynamics.com/en/wiki/enter-and-compare-rfq-bids-and-award-contracts/)
+-   [Enter and compare RFQ bids and award contracts](/dynamics365/unified-operations/supply-chain/procurement/tasks/enter-compare-rfq-bids-award-contracts)
 -   [Create a scoring method for RFQs](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-scoring-method-rfqs)
 -   [Create solicitation types and scoring criteria for RFQs](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-solicitation-types-scoring-criteria-rfqs)
 
@@ -103,7 +103,7 @@ Procurement and sourcing covers all steps from identifying a need for product an
 ## Procurement and sourcing workflows
 -   [Procurement and sourcing overview](procurement-sourcing-overview.md)
 -   [Procurement and sourcing workflows](procurement-sourcing-workflows.md)
--   [Record the receipt of goods on the purchase order](http://ax.help.dynamics.com/en/wiki/record-receipt-of-goods-on-a-purchase-order/)
+-   [Record the receipt of goods on the purchase order](/dynamics365/unified-operations/supply-chain/procurement/tasks/record-receipt-goods-purchase-order)
 -   [Purchase requisition workflow](purchase-requisitions-workflow.md)
 -   [Defining business process workflows for purchase requisitions](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (white paper)
 -   [Purchasing policies](purchase-policies.md)
