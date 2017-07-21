@@ -181,8 +181,13 @@ The following table shows whether each feature is available in:
 | Planning and scheduling| | | |
 | Procurement and sourcing| | | |
 | Product master data| | | |
+| Production | | | |
+| | Cross docking from production to transfer orders| Yes | Yes |
 | Project management and accounting| | | |
 | | Assign resources to draft work breakdown structure | Yes | Yes|
+| | Project management and accounting improvements | Yes | ? |
+| | Project management and accounting usability and productivity improvements | Yes | ? |
+| | Project Management PowerBI reports| Yes | ? |
 | Retail| | | |
 | |Ability to sell and return outside assortments | Yes | No |
 | | Advanced warehousing in Retail store  | Yes | No |
@@ -192,6 +197,16 @@ The following table shows whether each feature is available in:
 | | CDX extensibility enhancements| Yes | No |
 | | Cloud POS | Yes | ? |
 | | e-Commerce & consumer shopping app | Yes | ? |
+| | CRT handlers and extensible enums| Yes | No |
+| | Hybrid cloud - Retail Store | Yes | ? |
+| | Integrated Retail workforce management| Yes | No |
+| | Next generation Retail extensibility framework| Yes | No |
+| | Omni-channel | Yes | ? |
+| | Omni-channel coupons| Yes | No |
+| | POS Extensibility Enhancements| Yes | No |
+| | POS Inventory visibility improvements| Yes | No |
+| | POS search improvements| Yes | No |
+| | Support for multiple Retail server extensions| Yes | No |
 | Sales| | | |
 | Service management| | | |
 | Supply chain management| | | |
