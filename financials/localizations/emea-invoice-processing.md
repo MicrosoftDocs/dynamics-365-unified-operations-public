@@ -1,10 +1,10 @@
 ---
 # required metadata
-title: Invoice processing for
+title: Invoice processing
 description: This topic provides information about invoice processing for Eastern Europe.
 author: v-kikozl
 manager: AnnBe
-ms.date: 05/11/2017
+ms.date: 07/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -76,7 +76,7 @@ Also, it provides a short description for some country-specific scenarios, for e
   <p>You can modify the <strong>Document date</strong> field on a project invoice. This date is displayed on the printed invoice. </p>
   <p>There is also a <strong>Document date</strong> field on the <strong>Posting invoice</strong> and <strong>Free text invoice</strong> pages. After you post an invoice, the document date is displayed on the invoice header.</p>
   </td>
-< </tr>
+ </tr>
  <tr>
   <td>
   <p><strong>Document date for exchange rate</strong></p>
