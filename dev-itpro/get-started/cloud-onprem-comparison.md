@@ -43,6 +43,7 @@ The following table shows whether each feature is available in:
 | Analytics| | | |
 | | Analytics and insights through Power BI | Yes | No |
 | | Analytics and intelligence  | No | No |
+| | Build and ship rich workspaces with embedded Power BI reports | Yes | No |
 | Cost accounting| | | |
 | | Cost accounting| Yes | ? |
 | | Cost accounting – Cross legal entities | Yes | Yes |
@@ -99,6 +100,10 @@ The following table shows whether each feature is available in:
 | | Budget control data maintenance| Yes | Yes |
 | | Budgeting (February 2016)| Yes | No |
 | | Budgeting (November 2016)| Yes | No |
+| | Budgeting Power BI: actual vs. budget| Yes | No |
+| | Cash and bank management| Yes | ? |
+| | Cash flow forecasting Power BI| Yes | Hybrid |
+| | CFO Overview workspace| Yes | No |
 | | Financial dimensions in Financial reporting report definition| Yes | Yes |
 | | Financial dimensions in Power BI| Yes | Hybrid |
 | | Financial Performance PowerBI content designed for CFOs | Yes | ? |
@@ -113,9 +118,14 @@ The following table shows whether each feature is available in:
 | Human capital management| | | |
 | | Allow a project resource to delegate timesheet entry and submission to any user | Yes | Yes |
 | | Apply for any internal job posting through employee self-service | Yes | No |
+| | Benefits processing history| Yes | ? |
+| | Compensation and benefits Power BI reports | Yes | ? |
+| | Competency and development reports | Yes | ? |
+| | Complete access to historical compensation data| Yes | ? |
 | Inventory management| | | |
 | | Additional warehouse support in manufacturing | Yes | ? |
 | Lifecycle services| | | |
+| | Configurable business processes x 2| Yes | No |
 | LinkedIn engagement| | | |
 | Localizations| | | |
 | Manufacturing| | | |
@@ -130,6 +140,9 @@ The following table shows whether each feature is available in:
 | | Mobile framework - Languages added| Yes | Yes |
 | | Mobile framework - Web client settings| Yes | No |
 | Office integration| | | |
+| Organization administration | | | |
+| | Case management| Yes | ? |
+| | Case management for production and quality orders| Yes | ? |
 | Payroll| | | |
 | Personalization| | | |
 | Planning and scheduling| | | |
@@ -140,6 +153,11 @@ The following table shows whether each feature is available in:
 | Retail| | | |
 | |Ability to sell and return outside assortments | Yes | No |
 | | Advanced warehousing in Retail store  | Yes | No |
+| | Retail Channel performance| Yes | ? |
+| | Retail peripheral compatibility| Yes | No |
+| | Retail store | Yes | ? |
+| | CDX extensibility enhancements| Yes | No |
+| | Cloud POS | Yes | ? |
 | Sales| | | |
 | Service management| | | |
 | Supply chain management| | | |
@@ -169,21 +187,7 @@ The following table shows whether each feature is available in:
 
 
 
-| | Benefits processing history| Yes | ? |
-| | Budgeting Power BI: actual vs. budget| Yes | No |
-| | Build and ship rich workspaces with embedded Power BI reports | Yes | No |
-| | Case management| Yes | ? |
-| | Case management for production and quality orders| Yes | ? |
-| | Cash and bank management| Yes | ? |
-| | Cash flow forecasting Power BI| Yes | Hybrid |
-| | CDX extensibility enhancements| Yes | No |
-| | CFO Overview workspace| Yes | No |
-| | Cloud POS | Yes | ? |
-| | Compensation and benefits Power BI reports | Yes | ? |
-| | Competency and development reports | Yes | ? |
-| | Complete access to historical compensation data| Yes | ? |
-| | Configurable business processes| Yes | No |
-| | Configurable business processes| Yes | No |
+
 | | Configuration data packages| Yes | Yes |
 | | Configuration data project templates| Yes | Yes |
 | | Configuration data projects| Yes | Yes |
@@ -307,9 +311,6 @@ The following table shows whether each feature is available in:
 | | Redesigned employee self-service | Yes | ? |
 | | Regulatory updates| Yes | ? |
 | | Rename project stages| Yes | Yes |
-| | Retail Channel performance| Yes | ? |
-| | Retail peripheral compatibility| Yes | No |
-| | Retail store | Yes | ? |
 | | Reverse charge functionality for European countries/regions| Yes | Yes |
 | | Safety stock de-prioritization in master planning and capable to promise (CTP) calculation| Yes | Yes |
 | | Sales and profitability performance Power BI reports| Yes | No |
