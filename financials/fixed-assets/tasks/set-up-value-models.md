@@ -3,7 +3,7 @@
  
 title: Set up value models
 description: This procedure shows you to how create a new fixed asset book and associate it with a fixed asset group. 
-author: saraschi3
+author: saraschi2
 manager: AnnBe 
 ms.date: 10/11/2016
 ms.topic: business-process 
