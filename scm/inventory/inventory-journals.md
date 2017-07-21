@@ -17,13 +17,15 @@ ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, Inv
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -33,6 +35,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Inventory journals
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 This article describes how you can use inventory journals to post various types of physical inventory transactions. 
@@ -80,7 +84,7 @@ Production input journals work like the item arrival journals but are used for p
 
 ### Counting
 
-Counting journals let you correct the current on-hand inventory that is registered for items or groups of items, and then post the actual physical count, so that you can make the adjustments that are required in order to reconcile the differences. You can associate counting policies with counting groups to help group items that have various characteristics, so that those items can be included in a counting journal. For example, you can set up counting groups to count items that have a specific frequency, or to count items when stock falls to a particular level. For information about how to define counting groups, see [Define inventory counting processes (Task guide)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
+Counting journals let you correct the current on-hand inventory that is registered for items or groups of items, and then post the actual physical count, so that you can make the adjustments that are required in order to reconcile the differences. You can associate counting policies with counting groups to help group items that have various characteristics, so that those items can be included in a counting journal. For example, you can set up counting groups to count items that have a specific frequency, or to count items when stock falls to a particular level. For information about how to define counting groups, see [Define inventory counting processes (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/define-inventory-counting-processes).
 
 ### Tag counting
 

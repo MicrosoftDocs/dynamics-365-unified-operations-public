@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure and send email
-description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users. This topic is divided into sections for administrators and users to make it easy to find relevant information.
+description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 268274
 ms.assetid: 194ca8fd-5e20-4464-9c85-08d2b5ff63ca
@@ -37,14 +37,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users. This topic is divided into sections for administrators and users to make it easy to find relevant information.
 
-In Finance and Operations, both administrators and users set the behavior of the email subsystem.
+In Dynamics 365 for Finance and Operations, Enterprise edition, both administrators and users set the behavior of the email subsystem.
 
 ## Administrator: Email parameters page
 On the **Email parameters** page, note the following settings on the **Email providers** tab.
 
 | Field                     | Description                                                                                                                 |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| **Batch email provider**  | Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. |
+| **Batch email provider**  | Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. The Exchange provider will use the account associated with the batch process. |
 | **Attachment size limit** | Specifies the maximum size of a single email that can be sent via the email subsystem.                                      |
 
 On the **Email parameters** page, note the following settings on the **SMTP settings** tab.
@@ -86,6 +86,7 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 
 ## Administrator: Email Distributor batch process
 Email that is sent directly from the server, without user interaction, via SMTP is sent by the **Email distributor batch** process. That batch process must be started to process the email queue. To start the process, open the **Email distributor batch** pane (**System administration** &gt; **Periodic tasks** &gt; **Email processing** &gt; **Batch**) and turn on **Batch processing**.
+If the Exchange provider is used, then the user account associated with the batch process (usually admin) will be sender.
 
 ## Administrator: User email
 The default email address for each user is pulled from the **Email** field on the **Users** page (**System administration** &gt; **Users** &gt; **Users**). An email address should be specified for each user for sign in, so this field should be populated. Users can override this default if needed.
@@ -104,7 +105,7 @@ When an email is going to be sent, the user will see the **How would you like to
 | Field                                                          | Description                                                                                                                                    |
 |----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Use an email app, such as Outlook**                          | Provides the user with a generated email (.eml) file.                                                                                          |
-| **Use Exchange email server**                                  | Uses the Exchange Server associated with the tenant. The email will be sent using Exchange Web Services (EWS).                                 |
+| **Use Exchange email server**                                  | Uses the Exchange Online server associated with the tenant. The email will be sent using Exchange Web Services (EWS). On-premises Exchange servers are not supported at this time.                                 |
 | **Use the Microsoft Dynamics 365 for Finance and Operations email client** | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP.                                                   |
 | **Do not ask again**                                           | If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open. |
 
@@ -119,9 +120,9 @@ The **Send email **dialog box is opened to allow the user to edit the contents
 
 When the email is ready to be sent, the **Send** button will cause the email to be sent via SMTP.
 
-### Usage scenarios to verify if email is configured correctly
+## Usage scenarios to verify if email is configured correctly
 
-##### Send mail via a local mail client
+### Send mail via a local mail client
 
 Email workflows that are enabled via the SysEmail framework can generate email messages (.eml files) that contain attachments. You can then send these messages via Microsoft Outlook or another email client.
 
@@ -134,7 +135,7 @@ Email workflows that are enabled via the SysEmail framework can generate email m
 7.  If you’re using Internet Explorer on your computer, open the email (.eml) file that is generated. If you’re using Internet Explorer on the VM, copy the file to your computer, and open it there.
 8.  Note the email address in the **To** field and the generated workbook attachment.
 
-##### Send mail via SMTP
+### Send mail via SMTP
 
 Email workflows that are enabled via the SysEmail framework can also be created in a simple email dialog box and then sent via Simple Mail Transfer Protocol (SMTP).
 
@@ -159,6 +160,8 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 14. Enter a subject and body for the message.
 15. Click **Send**. The message should be delivered in one to five minutes.
 
+## Other notes
+The system talks to Exchange or an SMTP server like a normal email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#RecipientLimits) apply.
 
 See also
 --------

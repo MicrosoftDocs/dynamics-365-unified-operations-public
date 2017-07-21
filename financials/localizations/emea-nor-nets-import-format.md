@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Nets import format | Microsoft Docs
+title: Nets import format
 description: This topic provides information about importing payment information in the Nets format.
 author: ShylaThompson
 manager: AnnBe
@@ -18,7 +18,7 @@ ms.search.form: BankCustPaymIdTable, CustEInvoiceIntegrationeInvoice, CustEInvoi
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 262704
 ms.search.region: Norway

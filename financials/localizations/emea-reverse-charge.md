@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Reverse charge VAT | Microsoft Docs
+title: Reverse charge VAT
 description: This topic explains how to set up the reverse charge value-added tax (VAT) for European countries.
 author: epodkolz 
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom

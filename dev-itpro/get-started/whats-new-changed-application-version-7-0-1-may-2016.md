@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: sericks007
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: sericks
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 91213
 ms.assetid: f0bbc78f-87fc-40e9-b46a-6655893f69be

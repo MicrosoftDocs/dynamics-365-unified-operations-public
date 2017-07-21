@@ -18,7 +18,7 @@ ms.search.form: EcoResNomenclature, EcoResProductDimensionGroup, EcoResProductVa
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 220104
 ms.assetid: 3fe69fb7-5c32-423c-98a8-2f53186cda68
@@ -196,7 +196,7 @@ During one step of the configuration process, the system suggests a configuratio
 See also
 --------
 
-[Create a product number nomenclature for predefined product variants](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
+[Create a product number nomenclature for predefined product variants](/dynamics365/unified-operations/supply-chain/pim/tasks/create-product-number-nomenclature-predefined-variants-2016-11)
 
-[Create a product number nomenclature for configured product variants](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
+[Create a product number nomenclature for configured product variants](/dynamics365/unified-operations/supply-chain/pim/tasks/create-product-number-nomenclature-product-variants_2016_11)
 

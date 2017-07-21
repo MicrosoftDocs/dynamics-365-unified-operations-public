@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: robinr
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 10234
 ms.assetid: b91f6ad9-31dc-4717-82bf-5fd2a466c100
@@ -40,7 +40,7 @@ This tutorial will walk you through the process of modeling aggregate data .
 Prerequisites
 -------------
 
-This tutorial requires you to access the environment using Remote Desktop, and be provisioned as an administrator. For more information, see the topic named [Access Microsoft Dynamics 265 for Operations instances](..\dev-tools\access-instances.md).
+This tutorial requires you to access the environment using Remote Desktop, and be provisioned as an administrator. For more information, see the topic named [Access Microsoft Dynamics 365 for Finance and Operations instances](..\dev-tools\access-instances.md).
 
 ## Key concepts
 -   **Aggregate measurements**, similar to **perspectives** and **Cubes** from earlier versions, enable you to model and consume aggregate data.

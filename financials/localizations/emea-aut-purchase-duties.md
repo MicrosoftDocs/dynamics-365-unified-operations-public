@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Purchase duties | Microsoft Docs
+title: Purchase duties
 description: A purchase duty is a tax on incoming sales tax and is calculated as a percentage of the paid sales tax. This topic is related to a specific functionality extension that applies to legal entities in Austria.
 author: neserovleo
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Austria

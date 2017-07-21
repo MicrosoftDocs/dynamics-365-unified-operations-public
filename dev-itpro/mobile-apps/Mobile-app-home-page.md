@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations Platform
+ms.search.scope:  Operations, UnifiedOperations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 272853
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
@@ -121,7 +121,7 @@ The following table includes links to resources that can help you implement both
 <td>Use the mobile framework to create custom mobile workspaces.</td>
 <td><ul>
 <li><a href="mobile-platform.md">Mobile framework</a></li>
-<li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">Workspace X++ APIs</a></li>
+<li><a href="mobile-workspace-xpp-apis.md">Workspace X++ APIs</a></li>
 </ul></td>
 </tr>
 <tr class="odd">

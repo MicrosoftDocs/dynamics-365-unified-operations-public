@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Replenishment with withdrawal kanbans | Microsoft Docs
+title: Replenishment with withdrawal kanbans
 description: This topic describes how the withdrawal kanban is used for material replenishment for manufacturing activities.
 author: johanhoffmann
 manager: AnnBe
@@ -17,8 +17,8 @@ keywords: KanbanBoardTransferJob, KanbanFlow, KanbanRules
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 121
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

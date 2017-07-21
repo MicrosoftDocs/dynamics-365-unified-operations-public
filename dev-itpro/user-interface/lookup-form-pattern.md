@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 12911
 ms.assetid: 0bc7bde2-6150-4a80-8738-9a5201b51df2
@@ -68,43 +68,39 @@ Here are the changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### Lookup basic – High-level structure
 
-Design
+- Design
 
-*CustomFilter (Group) \[Optional\]*
-
-Grid | Tree | ListView
-
-*LookupActions (Group) \[Optional\]*
+    - *CustomFilter (Group) \[Optional\]*
+    - Grid | Tree | ListView
+    - *LookupActions (Group) \[Optional\]*
 
 ### Lookup w/tabs – High-level structure
 
-Design
+- Design
 
-*CustomFilter (Group) \[Optional\]*
+    - *CustomFilter (Group) \[Optional\]*
+    - LookupTab (Tab)
+    
+        - LookupTabPage (TabPage, repeats 1..N)
 
-LookupTab (Tab)
+            - Grid | Tree | ListView
 
-LookupTabPage (TabPage, repeats 1..N)
-
-Grid | Tree | ListView
-
-*  LookupActions (Group) \[Optional\]*
+    - *LookupActions (Group) \[Optional\]*
 
 ### Lookup w/preview – High-level structure
 
-Design
+- Design
 
-*CustomFilter (Group) \[Optional\]*
+    - *CustomFilter (Group) \[Optional\]*
+    - LookupContent (Group)
 
-LookupContent (Group)
+        - Grid | Tree | ListView
 
-Grid | Tree | ListView
+    - VerticalSplitter (Group)
 
-VerticalSplitter (Group)
+        - Preview (Group)
 
-Preview (Group)
-
-LookupActions (ActionPane)
+    - LookupActions (ActionPane)
 
 ### Core components
 
@@ -123,7 +119,7 @@ The verification checklist shows the steps for manually verifying that the form 
 
 **Lookup guidelines**
 
--   **Grid** guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md)document, in the Grid guidelines section.
+-   **Grid** guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md) document, in the Grid guidelines section.
 -   If you must show different “views” (tabs) within the lookup, use a combo box to let the user to switch between tabs.
 -   You can optionally use a tree view in the lookup. Also consider providing a standard grid because of the complexity that is involved in showing additional fields of data in a tree.
 -   Don't have more than five columns in the grid. The lookup resizes to show all columns, so five columns is very wide.
@@ -170,7 +166,7 @@ This section will have answers to frequently asked questions that are related to
 
 ### Open issues
 
--   **Can we incorporate the most recently used values into lookups? **
+-   **Can we incorporate the most recently used values into lookups?**
     -   App modeling can make this work right now (for example, the Currency lookup). We are considering general framework support for this feature in the future.
 
 ### AX 2012 content
@@ -186,6 +182,3 @@ This section will have answers to frequently asked questions that are related to
 **HcmWorkerLookup (Lookup w/preview)** 
 
 ![LookupForm(9)](./media/lookupform9.png)
-
-
-

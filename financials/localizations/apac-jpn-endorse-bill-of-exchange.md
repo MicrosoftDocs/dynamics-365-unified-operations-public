@@ -18,7 +18,7 @@ ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVe
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 28791
 ms.assetid: f0ed3209-2d1a-4208-ba45-192e88baed53

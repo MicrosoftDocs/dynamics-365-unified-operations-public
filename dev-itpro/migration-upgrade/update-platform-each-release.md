@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 11
-ms.search.scope: Operations, Platform
+ms.reviewer: margoc
+ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 125753
 ms.assetid: 99af5334-d30e-4160-9504-881777e9d4ea

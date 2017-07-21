@@ -17,8 +17,8 @@ ms.search.form: AssetBookTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 101
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 3401
 ms.assetid: 862d6450-187b-497f-9822-cce45f2c65a9

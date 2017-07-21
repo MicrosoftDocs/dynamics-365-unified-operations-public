@@ -12,7 +12,7 @@
     tocHref: /dynamics365/unified-operations/fin-and-ops/
     topicHref: /dynamics365/unified-operations/fin-and-ops/index
     items:
-    - name: Developer and Administrator
+    - name:  
       tocHref: /dynamics365/unified-operations/dev-itpro/
       topicHref: /dynamics365/unified-operations/dev-itpro/index
     - name: Financials

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Add a methodology to an LCS solution
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 51
+ms.reviewer: kfend
 ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 197063

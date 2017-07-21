@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: a:2:{s:4:"name";s:22:"Robin Reynolds-Haertle";s:2:"id";s:0:"";}
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: robinr
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 47561
 ms.assetid: 03d9d906-d683-47b4-8488-795173db2125

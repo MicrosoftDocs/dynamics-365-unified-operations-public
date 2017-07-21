@@ -18,7 +18,7 @@ ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 21761
 ms.search.region: Global
@@ -39,19 +39,7 @@ New to Dynamics 365 for Finance and Operations, Enterprise edition? We've put to
 You can start a 7-day trial of Dynamics 365 for Finance and Operations through a simple email signup. The trial version of Finance and Operations includes a Getting started guide that provides a step-by-step task guide, which allows you to view specific scenarios in action. The product is available to explore and exercise scenarios. Demo data is included to ease the use of the product and to make the experience more meaningful. A reminder email will be sent 3 days prior to the trial expiration. A buy experience can be initiated at that time to complete the purchase. Get details at [www.microsoft.com/en-us/dynamics365/operations](www.microsoft.com/en-us/dynamics365/operations).
 
 ## Step two: Buy and manage a subscription
-With Dynamics 365, you can evolve your business on your terms. Start with just what you need to run your business. For example, you might want to start with the Finance and Operations app or the Dynamics 365 for Customer Service app, and then add more apps as your needs change.
-There are four ways to buy a subscription of Dynamics 365:
-- Convert from a trial
-- Buy direct
-- Buy through volume licensing
-- Buy through a cloud solution provider
-
-### Convert from a trial
-After your trial, you will receive an emailed offer that includes a **Buy Today** button
-
-### Buy direct
-To buy direct, go to the [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing) pricing page. This page includes several different plans to fit your organization’s needs.
-
+You can buy a subscription for Dynamics 365 for Finance and Operations through volume licensing or through a cloud solution provider.
 
 ### Buy through volume licensing
 If your organization has 250 or more Dynamics 365 users, you may be interested in a [Volume licensing agreement](https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy.aspx). 
@@ -64,20 +52,6 @@ In Volume Licensing, Finance and Operations is available through:
 
 ### Buy through a Cloud Solution Provider
 A Microsoft Cloud Solution Provider can work closely with you to understand the needs of your business or organization. [Learn how to find a Dynamics 365 partner](https://partnercenter.microsoft.com/en-us/partner/home). 
-
-If you purchase Finance and Operations through a Cloud Solution Provider, you may also be entitled to on-premises software. 
-
-- If you agree to the licensing conditions, you can get Finance and Operations (on-premises). For more information, see the topic [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](/dev-itpro/get-started/purchase-on-premises).
-
-- You can get also choose to get Dynamics AX 2012 R3 as follows:
-
-  -   Go to [CustomerSource](https://mbs.microsoft.com/customersource/), log in, and download [Dynamics AX 2012 R3](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/product-releases/MSDYAX2012R3Release).
-
-If you haven’t previously accessed CustomerSource, here are some resources to help you get started:
-
--   [Need Access to Customer Source?](https://mbs.microsoft.com/customersource/northamerica/news-events/news-events/NeedAccesstoCustomerSource)
--   [Quick Start Guide for Microsoft Dynamics Cloud Service Support Benefits](http://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
-
 
 ### Choose your support
 Microsoft provides flexible, industry-leading support, services, and resources that enable users to quickly address technical issues and maximize return on your Dynamics 365 investment. Choose a plan that best meets your business requirements. More information: [Dynamics 365 Support](https://www.microsoft.com/en-us/dynamics365/support)

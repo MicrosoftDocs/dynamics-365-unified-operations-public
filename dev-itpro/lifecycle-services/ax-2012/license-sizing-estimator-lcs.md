@@ -17,8 +17,8 @@ ms.technology: ax-2012
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 51
-ms.search.scope: AX 2012
+ms.reviewer: kfend
+ms.search.scope: AX 2012, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 13381
 ms.assetid: 6f5723b9-a2f5-40e1-9a95-2fd5f6b9fd84

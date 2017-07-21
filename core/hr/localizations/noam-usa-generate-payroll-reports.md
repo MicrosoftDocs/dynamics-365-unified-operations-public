@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 31
-ms.search.scope: Operations, Core
+ms.reviewer: rschloma
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 220994
 ms.assetid: 92b0da78-1c42-46f7-b1a2-334d75e625f3

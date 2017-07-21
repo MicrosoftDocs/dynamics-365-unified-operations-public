@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, Retail
+ms.reviewer: robinr
+ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 85493
 ms.assetid: a22c9493-c000-4514-bb0d-b3cc674439d9

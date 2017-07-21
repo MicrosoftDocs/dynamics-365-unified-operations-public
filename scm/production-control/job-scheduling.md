@@ -17,8 +17,8 @@ ms.search.form: ProdSchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 19431
 ms.assetid: aef37341-91d8-4263-80eb-35d9584be156

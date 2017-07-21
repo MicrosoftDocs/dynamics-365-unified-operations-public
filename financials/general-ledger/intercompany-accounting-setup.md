@@ -17,8 +17,8 @@ ms.search.form: LedgerInterCompany
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2231
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 15761
 ms.assetid: 1362297b-7a51-4930-b822-2b204a2e3c37

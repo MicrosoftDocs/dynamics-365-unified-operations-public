@@ -17,8 +17,8 @@ ms.search.form: HcmBudgetPurposeType, HcmPositionForecast
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 101
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 88253
 ms.assetid: c44df01b-8700-4022-b4c6-c4b1cb84d31d

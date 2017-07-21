@@ -17,7 +17,7 @@ ms.search.form: CAMDimensionHierarchy,
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope:  AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 

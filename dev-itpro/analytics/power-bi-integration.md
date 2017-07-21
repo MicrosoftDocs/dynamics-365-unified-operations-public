@@ -17,8 +17,8 @@ ms.search.form: PowerBIConfiguration
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 31001
 ms.assetid: bf6eff60-4a30-4338-a55f-1f2a97d3debe

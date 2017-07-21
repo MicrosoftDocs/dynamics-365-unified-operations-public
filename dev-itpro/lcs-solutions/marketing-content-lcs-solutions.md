@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 51
-# ms.search.scope: 
+ms.reviewer: kfend
+ms.search.scope: 
 # ms.tgt_pltfrm: 
 ms.custom: 196873
 ms.assetid: 80b0cc44-ffbe-400e-b902-60518a930b0d

@@ -18,7 +18,7 @@ ms.search.form: SalesLineDeliveryDetails
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 271623
 ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a
@@ -153,7 +153,7 @@ This tab highlights the impact of the selected delivery alternative. If you clic
 See also
 --------
 
-[Order promising](http://ax.help.dynamics.com/en/wiki/delivery-dates-and-available-to-promise-calculations/)
+[Order promising](/dynamics365/unified-operations/supplychain/sales-marketing/delivery-dates-available-promise-calculations)
 
 
 

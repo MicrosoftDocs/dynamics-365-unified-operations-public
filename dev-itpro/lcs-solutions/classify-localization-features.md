@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: shylaw
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 27601
 ms.assetid: 7e2031b4-a092-482e-a76d-1e582edecd86

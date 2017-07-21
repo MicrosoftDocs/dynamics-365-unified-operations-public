@@ -16,8 +16,8 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: sericks
-# ms.search.scope: Operations. Core 
+ms.reviewer: sericks
+ms.search.scope: Operations, UnifiedOperations. Core 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

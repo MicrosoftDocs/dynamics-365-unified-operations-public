@@ -17,8 +17,8 @@ ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendP
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: shylaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d

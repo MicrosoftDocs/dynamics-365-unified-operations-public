@@ -17,8 +17,8 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
-ms.search.scope: Management Reporter, Core
+ms.reviewer: shylaw
+ms.search.scope: Management Reporter, UnifiedOperations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf

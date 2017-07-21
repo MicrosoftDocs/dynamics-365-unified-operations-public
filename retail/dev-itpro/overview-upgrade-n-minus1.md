@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: margoc
-ms.search.scope: Operations, Retail
+ms.reviewer: margoc
+ms.search.scope: Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 44351
 ms.search.region: Global

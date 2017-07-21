@@ -14,7 +14,6 @@
 ##### [Information for customers who purchased Finance and Operations through a Cloud Service Provider](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
 
-
 ### [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Deprecated features](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [AX 2012 features not yet implemented](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2324,6 +2323,7 @@
 
 
 ## Deployment
+
 ### [Deploy a demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
 ### Cloud deployment
@@ -2331,6 +2331,7 @@
 #### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
 ### [On-premises deployment](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+
 
 ### Deploy custom code
 #### [Create a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=dynamics365/unified-operations/fin-and-ops/toc.json)

@@ -17,8 +17,8 @@ ms.search.form: WHSRFMenuItem
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 29941
 ms.assetid: 6dff6313-dc6e-4f06-9c0c-dab24eefe4da
@@ -417,9 +417,9 @@ See also
 
 [Warehouse mobile device display settings](change-warehouse-mobile-device-displays.md)
 
-[Set up a mobile device menu item for completing work of type Purchase order (task guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
+[Set up a mobile device menu item for completing work of type Purchase order (Task guide)](/dynamics365/unified-operations/supply-chain/warehousing/tasks/set-up-mobile-device-menu)
 
-[Set up a mobile device menu item to register received items (task guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[Set up a mobile device menu item to register received items (Task guide)](/dynamics365/unified-operations/supply-chain/warehousing/tasks/set-up-mobile-device-menu-item-register-received-items)
 [Advantages of using Inventory statuses](../inventory/inventory-statuses.md)
 
 

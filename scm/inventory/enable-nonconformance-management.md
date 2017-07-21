@@ -17,8 +17,8 @@ ms.search.form: InventParameters, InventProblemType, InventProblemTypeSetup, Inv
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 28951
 ms.assetid: a62d4ba8-eebc-4b14-b587-630be7298522
@@ -55,11 +55,11 @@ To enable nonconformance management, follow these steps:
 See also
 --------
 
-[Create and process a non conformance (task guide)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
+[Create and process a non conformance (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-process-non-conformance)
 
 [Quality management processes](quality-management-processes.md)
 
-[Set up prerequisites for non-conformance management (task guide)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+[Set up prerequisites for non-conformance management (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management)
 
 
 

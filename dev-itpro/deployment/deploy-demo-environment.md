@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: 51
-ms.search.scope: Operations, Platform
+ms.reviewer: kfend
+ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 141093
 ms.assetid: dcd23629-246d-4fbc-adf5-7245bb2121e4

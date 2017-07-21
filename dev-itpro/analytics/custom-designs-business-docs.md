@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 2051
-ms.search.scope: Operations, Platform
+ms.reviewer: robinr
+ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 266574
 ms.assetid: fba7faa3-716b-4adf-ab3e-8573f3614894

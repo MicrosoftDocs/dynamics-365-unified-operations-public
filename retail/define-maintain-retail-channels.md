@@ -17,8 +17,8 @@ ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: josaw1
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 16481
 ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46

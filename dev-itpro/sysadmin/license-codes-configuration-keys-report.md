@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
-ms.search.scope: Operations, Platform, AX Platform
+ms.reviewer: sericks
+ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 203464
 ms.assetid: 0c225408-d300-4be6-a509-7315a1f7548c

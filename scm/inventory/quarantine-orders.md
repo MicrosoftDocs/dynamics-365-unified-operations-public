@@ -17,8 +17,8 @@ ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQ
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e

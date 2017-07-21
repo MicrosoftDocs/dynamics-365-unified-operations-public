@@ -17,8 +17,8 @@ ms.search.form: CAMDimension
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 121
-ms.search.scope: Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 223204
 ms.assetid: 1eda0e62-760b-4737-9dfd-3c3c38d80c1a

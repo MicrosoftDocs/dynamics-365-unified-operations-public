@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 14741
 ms.assetid: f71aa535-8480-4ed8-b0c9-404f3e6285dd
@@ -52,26 +52,24 @@ This article describes a variant of the Simple List and Details (SL+D) pattern t
 ## Pattern changes for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 
--   This pattern is new. Any pattern changes to the SL+D pattern can be found in the [Simple List and Details](simple-list-details-form-pattern.md)pattern document.
+-   This pattern is new. Any pattern changes to the SL+D pattern can be found in the [Simple List and Details](simple-list-details-form-pattern.md) pattern document.
 
 ## Model
 ### High-level structure
 
-&lt;Container&gt;
+- &lt;Container&gt;
 
-ActionPane (ActionPane Style=Strip)
+    - ActionPane (ActionPane Style=Strip)
+    - ContainerBody (Group Columns=2)
 
-ContainerBody (Group Columns=2)
+        - ListContainer (Group)
 
-ListContainer (Group)
+            - Grid | Tree | ListView
 
-Grid | Tree | ListView
+        - DetailsContainer (Group)
 
-DetailsContainer (Group)
-
-DetailsHeader (Group)
-
-*DetailsGroup (Group) \[Optional\]*
+            - DetailsHeader (Group)
+            - *DetailsGroup (Group) \[Optional\]*
 
 ### Core components
 
@@ -89,7 +87,7 @@ The verification checklist shows the steps for manually verifying that the form 
 
 **Standard form guidelines**
 
--   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
+-   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 
 **Nested simple list & detail guidelines**
 
@@ -126,6 +124,3 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![AX 2012 example](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)
-
-
-

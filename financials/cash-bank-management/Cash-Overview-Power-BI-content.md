@@ -16,8 +16,8 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: sericks
-# ms.search.scope: Operations
+ms.reviewer: sericks
+ms.search.scope: Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

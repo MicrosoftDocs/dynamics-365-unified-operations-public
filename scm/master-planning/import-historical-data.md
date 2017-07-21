@@ -16,8 +16,8 @@ ms.technology:
 # ms.search.form:  ReqDemPlanCreateForecastDialog
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: YuyuScheller
-# ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca

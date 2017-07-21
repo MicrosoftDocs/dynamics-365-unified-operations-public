@@ -17,8 +17,8 @@ ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetail
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
@@ -200,7 +200,7 @@ To consolidate approved purchase requisition lines, follow these steps:
 See also
 --------
 
-[Create a requisition for consumption (task guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Create a requisition for consumption (Task guide)](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-requisition-consumption)
 
 [Purchase requisition workflow](purchase-requisitions-workflow.md)
 

@@ -16,8 +16,8 @@ ms.technology:
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: twheeloc
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 

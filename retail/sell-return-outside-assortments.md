@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Sell and return products outside of an assortment
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-# ms.search.scope: 
+ms.search.scope: 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global

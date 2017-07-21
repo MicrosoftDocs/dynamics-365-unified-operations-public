@@ -17,8 +17,8 @@ ms.search.form:  JmgProdParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: yuyus
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:

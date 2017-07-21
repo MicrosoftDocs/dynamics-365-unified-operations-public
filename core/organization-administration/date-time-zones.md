@@ -17,8 +17,8 @@ ms.search.form: SysUserSetup
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 13571
 ms.assetid: 3ce95bf2-02d7-44b5-95bc-cae6ae27e78e

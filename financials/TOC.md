@@ -1,5 +1,6 @@
 # [Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/fin-and-ops/index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
+
 ## Get started
 ### [Before you buy](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Sign up for preview subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -2324,6 +2325,7 @@
 
 
 ## Deployment
+
 ### [Deploy a demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### Cloud deployment
@@ -2331,6 +2333,7 @@
 #### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### [On-premises deployment](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+
 
 ### Deploy custom code
 #### [Create a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
