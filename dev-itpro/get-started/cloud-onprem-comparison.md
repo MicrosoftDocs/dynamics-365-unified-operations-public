@@ -41,6 +41,8 @@ The following table shows whether each feature is available in:
 |---|---|---|---|
 | Feature or capability| | | |
 | Analytics| | | |
+| | Analytics and insights through Power BI | Yes | No |
+| | Analytics and intelligence  | No | No |
 | Cost accounting| | | |
 | Cost management| | | |
 | Customization| | | |
@@ -51,9 +53,16 @@ The following table shows whether each feature is available in:
 | Extensibility| | | |
 | Financial management| | | |
 | | Ability to delete a main account and dimension value | Yes | Yes |
+| | Access estimated costs, revenue, and item requirements | Yes | ? |
+| | Accounts payable | Yes | No |
+| | Accounts payable check templates using Electronic Reporting | Yes | No |
+| | Accounts receivable | Yes | No |
 | Help| | | |
 | Human capital management| | | |
+| | Allow a project resource to delegate timesheet entry and submission to any user | Yes | Yes |
+| | Apply for any internal job posting through employee self-service | Yes | No |
 | Inventory management| | | |
+| | Additional warehouse support in manufacturing | Yes | ? |
 | Lifecycle services| | | |
 | LinkedIn engagement| | | |
 | Localizations| | | |
@@ -69,6 +78,7 @@ The following table shows whether each feature is available in:
 | Project management and accounting| | | |
 | Retail| | | |
 | |Ability to sell and return outside assortments | Yes | No |
+| | Advanced warehousing in Retail store  | Yes | No |
 | Sales| | | |
 | Service management| | | |
 | Supply chain management| | | |
