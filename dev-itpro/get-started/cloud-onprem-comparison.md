@@ -75,6 +75,19 @@ The following table shows whether each feature is available in:
 | Document management| | | |
 | Electronic reporting| | | |
 | Expense management| | | |
+| | Expense management| Yes | ? |
+| | Expense management mobile workspace| Yes | Yes |
+| | Expense management: Configuration related to employee's card ID| Yes | Yes |
+| | Expense management: Configure per diem locations per country/region, state/province, and location| Yes | Yes |
+| | Expense management: Display related payment information for an expense report| Yes | Yes |
+| | Expense management: Enable Travel requisition functionality (Dynamics AX 2012 parity)| Yes | Yes |
+| | Expense management: Export and import expense policies using data management| Yes | Yes |
+| | Expense management: Final approver defaulted for multi-level workflow approval| Yes | Yes |
+| | Expense management: Match credit card expenses with manually entered expenses| Yes | Yes |
+| | Expense management: Split credit card expenses| Yes | Yes |
+| | Expense management: Support for importing credit card itemization data| Yes | Yes |
+| | Expense management: Usability enhancements| Yes | Yes |
+| | Expense management: View detailed workflow history for an expense report| Yes | Yes |
 | Extensibility| | | |
 | Financial management| | | |
 | | Ability to delete a main account and dimension value | Yes | Yes |
@@ -86,6 +99,16 @@ The following table shows whether each feature is available in:
 | | Budget control data maintenance| Yes | Yes |
 | | Budgeting (February 2016)| Yes | No |
 | | Budgeting (November 2016)| Yes | No |
+| | Financial dimensions in Financial reporting report definition| Yes | Yes |
+| | Financial dimensions in Power BI| Yes | Hybrid |
+| | Financial Performance PowerBI content designed for CFOs | Yes | ? |
+| | Financial report generation| Yes | Yes |
+| | Financial reporting| Yes | Hybrid |
+| | Financial reporting| Yes | ? |
+| | Vendor collaboration| Yes | Hybrid |
+| | Vendor invoice attachment enhancements| Yes | Yes |
+| | Vendor payment analysis Power BI| Yes | Hybrid |
+| | Vendor prepayments in fixed-price project estimates| Yes | ? |
 | Help| | | |
 | Human capital management| | | |
 | | Allow a project resource to delegate timesheet entry and submission to any user | Yes | Yes |
@@ -97,7 +120,15 @@ The following table shows whether each feature is available in:
 | Localizations| | | |
 | Manufacturing| | | |
 | Master planning and forecasting| | | |
-| Mobile applications| | | |
+| Mobile applications, platform, and framework | | | |
+| | Mobile – On-hand view app| Yes | Yes |
+| | Mobile framework| Yes | Yes |
+| | Mobile framework - Available for Android| Yes | Yes |
+| | Mobile framework - Available for iOS phone| Yes | Yes |
+| | Mobile framework - Barcode scanner support| Yes | Yes |
+| | Mobile framework - Custom user experience through mobile business logic API| Yes | Yes |
+| | Mobile framework - Languages added| Yes | Yes |
+| | Mobile framework - Web client settings| Yes | No |
 | Office integration| | | |
 | Payroll| | | |
 | Personalization| | | |
@@ -191,27 +222,8 @@ The following table shows whether each feature is available in:
 | | Entity store for high volume near real-time Power BI integration| Yes | ? |
 | | Excel add-in support for creating header records, including journal headers, in Excel| Yes | Yes |
 | | Excel add-in support for publishing data sources in a predictable sequence| Yes | Yes |
-| | Expense management| Yes | ? |
-| | Expense management mobile workspace| Yes | Yes |
-| | Expense management: Configuration related to employee's card ID| Yes | Yes |
-| | Expense management: Configure per diem locations per country/region, state/province, and location| Yes | Yes |
-| | Expense management: Display related payment information for an expense report| Yes | Yes |
-| | Expense management: Enable Travel requisition functionality (Dynamics AX 2012 parity)| Yes | Yes |
-| | Expense management: Export and import expense policies using data management| Yes | Yes |
-| | Expense management: Final approver defaulted for multi-level workflow approval| Yes | Yes |
-| | Expense management: Match credit card expenses with manually entered expenses| Yes | Yes |
-| | Expense management: Split credit card expenses| Yes | Yes |
-| | Expense management: Support for importing credit card itemization data| Yes | Yes |
-| | Expense management: Usability enhancements| Yes | Yes |
-| | Expense management: View detailed workflow history for an expense report| Yes | Yes |
 | | Export data to your own data warehouse| Yes | ? |
 | | Filter employee lists automatically| Yes | ? |
-| | Financial dimensions in Financial reporting report definition| Yes | Yes |
-| | Financial dimensions in Power BI| Yes | Hybrid |
-| | Financial Performance PowerBI content designed for CFOs | Yes | ? |
-| | Financial report generation| Yes | Yes |
-| | Financial reporting| Yes | Hybrid |
-| | Financial reporting| Yes | ? |
 | | Fixed asset management workspace and embedded Power BI content| Yes | No |
 | | Fixed assets| Yes | ? |
 | | Flushing principle Available at location| Yes | Yes |
@@ -251,14 +263,6 @@ The following table shows whether each feature is available in:
 | | Manufacturing – Gantt control| Yes | ? |
 | | Microsoft Office integration| Yes | ? |
 | | Microsoft Office integrations| Yes | ? |
-| | Mobile – On-hand view app| Yes | Yes |
-| | Mobile framework| Yes | Yes |
-| | Mobile framework - Available for Android| Yes | Yes |
-| | Mobile framework - Available for iOS phone| Yes | Yes |
-| | Mobile framework - Barcode scanner support| Yes | Yes |
-| | Mobile framework - Custom user experience through mobile business logic API| Yes | Yes |
-| | Mobile framework - Languages added| Yes | Yes |
-| | Mobile framework - Web client settings| Yes | No |
 | | Mobile Invoice Approvals| Yes | Hybrid |
 | | Mobile purchase order approvals| Yes | Yes |
 | | Mobile vendor collaboration| Yes | Yes |
@@ -339,10 +343,6 @@ The following table shows whether each feature is available in:
 | | Upgrade and Support for Previous Versions| Yes | No |
 | | US Payroll| Yes | ? |
 | | User interface| Yes | ? |
-| | Vendor collaboration| Yes | Hybrid |
-| | Vendor invoice attachment enhancements| Yes | Yes |
-| | Vendor payment analysis Power BI| Yes | Hybrid |
-| | Vendor prepayments in fixed-price project estimates| Yes | ? |
 | | View a comprehensive list of changes across employees, positons, and jobs | Yes | ? |
 | | Visual scheduling| Yes | No |
 | | Web client x 3| Yes | No |
