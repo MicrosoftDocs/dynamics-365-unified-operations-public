@@ -3,7 +3,7 @@
  
 title: Set up depreciation books 
 description: This task guide will create a new depreciation book and associate it with a fixed asset group. 
-author: saraschi3
+author: saraschi2
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
