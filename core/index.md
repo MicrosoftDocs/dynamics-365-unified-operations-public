@@ -46,10 +46,13 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 <tbody>
 <tr class="odd">
 <td>
-<h3>Before you buy</h3>
-<p>Try Finance and Operations</p>
-<p>Choose a deployment option</p>
+<h3>a href="../fin-and-ops/get-started/before-you-buy">Before you buy</a></h3>
+<p>a href="../dev-itpro/dev-tools/sign-up-preview-subscription">Sign up for a preview subscription</p>
+<p>a href="../dev-itpro/deployment/choose-deployment-type">Choose a deployment option</p>
 <p>Buy Finance and Operations</p>
+ <ul style="list-style-type:none">
+  <p><a href="../fin-and-ops/get-started/fasttrack-dynamics-365-overview">FastTrack for Dynamics 365</a></p>
+  <p><a href="../dev-itpro/get-started/purchase-on-premises">Get the on-premises version of Finance and Operations</a></p></ul>
 
 <h3>Financials</h3>
 
