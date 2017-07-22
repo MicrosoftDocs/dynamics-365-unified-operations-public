@@ -1,11 +1,17 @@
 # [Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/fin-and-ops/index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## [Get started](/dynamics365/unified-operations/fin-and-ops/get-started/onboarding-home?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Microsoft FastTrack for Dynamics 365](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Sign up for a subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [How to get the on-premises version of Finance and Operations](/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Information for customers who purchased Finance and Operations through a Cloud Service Provider](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Deploy a demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+## Get started
+### [Before you buy](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Sign up for preview subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Deploy a demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Choose a deployment option](/dynamics365/unified-operations/dev-itpro/deployment/choose-deployment-type?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Cloud deployment](/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview)
+##### [On-premises deployment](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+
+#### Buy Finance and Operations
+##### [Microsoft FastTrack for Dynamics 365](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Get the on-premises version of Finance and Operations](/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
 ### [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Deprecated features](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [AX 2012 features not yet implemented](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2315,18 +2321,18 @@
 
 
 ## Deployment
-### [Deploy a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Azure Resource Manager onboarding](/dynamics365/unified-operations/dev-itpro/deployment/arm-onboarding?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Deploy a demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-### [Deploy Microsoft Dynamics 365 for Finance and Operations on-premises](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### Cloud deployment
+#### [Azure Resource Manager onboarding](/dynamics365/unified-operations/dev-itpro/deployment/arm-onboarding?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [On-premises deployment](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
 
 ### Deploy custom code
 #### [Create a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Apply a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Install a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/install-deployable-package?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
-### [Cloud Service Provider downloads and Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## [Upgrade and migration](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
