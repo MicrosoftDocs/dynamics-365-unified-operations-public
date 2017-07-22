@@ -5,7 +5,7 @@
 #### [Sign up for preview subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Deploy a demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Choose a deployment option](/dynamics365/unified-operations/dev-itpro/deployment/choose-deployment-type?toc=/dynamics365/unified-operations/retail/toc.json)
-##### [Cloud deployment](/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-landing-page)
+##### [Cloud deployment](/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview)
 ##### [On-premises deployment](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
 
 #### Buy Finance and Operations
