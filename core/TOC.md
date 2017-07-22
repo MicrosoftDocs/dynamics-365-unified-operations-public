@@ -4,7 +4,7 @@
 ### [Before you buy](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Sign up for preview subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Deploy a demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Choose a deployment option
+#### [Choose a deployment option](/dynamics365/unified-operations/dev-itprodev-itpro/deployment/choose-deployment-typetoc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cloud deployment](/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-landing-page)
 ##### [On-premises deployment](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
 
