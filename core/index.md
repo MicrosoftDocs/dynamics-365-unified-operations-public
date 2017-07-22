@@ -2,7 +2,7 @@
 # required metadata
 
 title: Introduction to Dynamics 365 for Finance and Operations
-description: Microsoft Dynamics 365 for Finance and Operations is Microsoft’s business application for enterprises. This page helps you learn and get start using the product. 
+description: Microsoft Dynamics 365 for Finance and Operations is Microsoft’s business application for enterprises. This page helps you learn and get started using the product. 
 author: margoc
 manager: AnnBe
 ms.date: 07/10/2017
@@ -17,11 +17,11 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: margoc
+
 
 # ms.tgt_pltfrm: 
 ms.custom: 62303
-ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
 ms.search.region: Global
 # ms.industry: 
 ms.author: margoc
@@ -29,8 +29,8 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
-# Introduction to Dynamics 365 for Finance and Operations
 
+# Introduction to Dynamics 365 for Finance and Operations
 [!include[banner](includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations is Microsoft’s business application for enterprises. It enables people to quickly make smarter decisions through an intelligent user interface that provides access to real-time insights and data. It enables businesses to transform and innnovate by delivering proven business logic that allows them to redesign their business processes faster. It gives businesses the flexibility to grow at their own pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
@@ -45,6 +45,17 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 </colgroup>
 <tbody>
 <tr class="odd">
+<td>
+<h3>a href="../fin-and-ops/get-started/before-you-buy">Before you buy</a></h3>
+<p>a href="../dev-itpro/dev-tools/sign-up-preview-subscription">Sign up for a preview subscription</p>
+<p>a href="../dev-itpro/deployment/choose-deployment-type">Choose a deployment option</p>
+<p>Buy Finance and Operations</p>
+ <ul style="list-style-type:none">
+  <p><a href="../fin-and-ops/get-started/fasttrack-dynamics-365-overview">FastTrack for Dynamics 365</a></p>
+  <p><a href="../dev-itpro/get-started/purchase-on-premises">Get the on-premises version of Finance and Operations</a></p></ul>
+
+<h3>Financials</h3>
+
 <td><h3><a href="../financials/index">Financials</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable">Accounts payable</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable">Accounts receivable</a></p>
@@ -86,7 +97,7 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 
 <h3><a href="../dev-itpro/mobile-apps/mobile-platform">Mobile platform</a></h3>
 
- <h3>Developer functionality</h3>
+<h3>Developer functionality</h3>
 <p><a href="../dev-itpro/dev-tools/developer-home-page">Developer home page</a></p>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page">Extensibility</a></p>
 <p>Integration</p>
