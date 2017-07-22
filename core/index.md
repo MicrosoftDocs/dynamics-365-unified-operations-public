@@ -53,9 +53,8 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
  <ul style="list-style-type:none">
   <p><a href="../fin-and-ops/get-started/fasttrack-dynamics-365-overview">FastTrack for Dynamics 365</a></p>
   <p><a href="../dev-itpro/get-started/purchase-on-premises">Get the on-premises version of Finance and Operations</a></p></ul>
-<h3>Financials</h3>
 
-<td><h3><a href="../financials/index">Financials</a></h3>
+<h3><a href="../financials/index">Financials</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable">Accounts payable</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable">Accounts receivable</a></p>
 <p><a href="../financials/budgeting/budgeting-overview">Budgeting</a></p>
