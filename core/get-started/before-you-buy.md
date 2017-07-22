@@ -40,7 +40,7 @@ You can try Dynamics 365 for Finance and Operations for 30 days through a simple
 
 ## Step two: Choose a deployment option
 You can now deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in the cloud or on-premises. Cloud deployments offer an ERP service that is fully managed by Microsoft, while on-premises deployments are deployed locally within a customer's data center.
-For more information, see: [Deployment options](dynamics365/unified-operations/dev-itpro/deployment/choose-deployment-type) 
+For more information, see: [Deployment options](../dev-itpro/deployment/choose-deployment-type) 
 
 ## Step three: Buy and manage a subscription
 To explore subscription options, go to the [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing) pricing page. This page includes several different plans to fit your organization’s needs.
@@ -65,7 +65,7 @@ In Volume Licensing, Finance and Operations is available through:
 A Microsoft Cloud Solution Provider can work closely with you to understand the needs of your business or organization. [Use the Microsoft Partner Center portal to find a partner to fit your needs](https://partnercenter.microsoft.com/en-us/partner/home). 
 
 ### Buy through a Dynamics partner (on-premises)
-You must work with a partner to purchase Finance and Operations on-premises. For more information, see [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises)
+You must work with a partner to purchase Finance and Operations on-premises. For more information, see [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](../dev-itpro/get-started/purchase-on-premises)
 
 ### Choose your support option
 Microsoft provides flexible, industry-leading support, services, and resources that enable users to quickly address technical issues and maximize return on your Dynamics 365 investment. Choose a plan that best meets your business requirements. 
@@ -75,7 +75,7 @@ More information:
 - [Quick Start Guide for Microsoft Dynamics Cloud Service Support Benefits](http://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
 
 ## Step four: Learn about FastTrack and plan your deployment
-Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success. More information: [Microsoft FastTrack for Dynamics 365 overview](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview) 
+Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success. More information: [Microsoft FastTrack for Dynamics 365 overview](fasttrack-dynamics-365-overview.md) 
 
 ## If you are upgrading from Dynamics AX 2012 or migrating from AX 2009
 If you are a customer who is upgrading from Microsoft Dynamics AX 2012 or migrating from Microsoft Dynamics AX 2009, you may be eligible for a longer trial. Contact <daxcf@microsoft.com> for more information. 
