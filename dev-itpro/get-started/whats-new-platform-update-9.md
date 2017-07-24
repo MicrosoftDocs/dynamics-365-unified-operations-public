@@ -1,1 +1,55 @@
+---
+# required metadata
+
+title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9 (July 2017)
+description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9. This version was released in July 2017.
+author: tonyafehr
+manager: AnnBe
+ms.date: 07/24/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: sericks
+ms.search.scope:  Operations, UnifiedOperations, Platform
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: tfehr
+ms.search.validFrom: 2017-06-30 
+ms.dyn365.ops.version: Platform update 8
+
+---
+
+# What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9 (July 2017)
+
+[!include[banner](../includes/banner.md)]
+
+This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9. This version was released in July 2017 and has a build number of XXXXX.
+
+Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 9, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=853624).
+
+## Batch job history clean-up
+Functionality to clean up the history of batch jobs has been added (this functionality was available in Dynamics AX 2012). This feature allows you to delete all or any subset of batch job history by clicking a button. Using a specific form, you can filter the batch job history by different criteria – batch job name, company, status, finished time, etc. – and then delete the filtered subset. In addition to keeping the history notes clean and relevant, this feature also provides performance enhancements by eliminating the negative performance impact of having a large volume of entries in history tables, if left unmonitored for long periods of time. Before Platform update 9, you needed to delete the history on a job-by-job basis, which required extra time to cover all the wanted jobs.
+
+Two new forms have been added under the System Administration workspace – Batch job history clean-up (regular and custom version).
+
+The regular version of batch job history clean-up allows you to quickly clean all history entries older than a specified timeframe (in days). Any entry that was created prior to <Today> - <History limit> will be deleted from the BatchJobHistory table, as well as from linked tables with related records (BatchHistory and BatchConstraintsHistory). This form has improved performance optimization because it doesn’t have to execute any filtering.
+
+The custom batch job clean-up form should be used when only specific entries need to be deleted. This form allows you to clean up only selected types of batch job history records, based on criteria such as status, job description, company, or user. Other criteria can be added using the **Filter** button.
+
+## Change of usage data serialization format
+The usage data that is typically stored in the SysLastValue table will no longer be serialized in binary format, and instead will be serialized in string format. This format change increases the scale, ability to debug the code, and overall reliability of the system, which allows for changes from the application layer to not have an effect on caches. However, due to technical reasons it is not possible to ensure the integrity of the data during the upgrade process and ensure system integrity and reliability.
+
+Usage data is automatically reset upon moving to Platform update 9. The users will lose their usage data as part of this platform update process. This mostly includes data used for custom queries and saved dialog posting selections. Personalization is not affected.
+The new data format is versioned, backward compatible, and always preserved from Platform update 9 onward for future application and platform releases.
+
 
