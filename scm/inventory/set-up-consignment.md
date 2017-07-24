@@ -17,7 +17,7 @@ ms.search.form: DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 220804

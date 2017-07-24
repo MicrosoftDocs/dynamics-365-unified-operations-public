@@ -17,7 +17,7 @@ ms.search.form: FieldDescriptions
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 2084
+ms.reviewer: rschloma
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 11534

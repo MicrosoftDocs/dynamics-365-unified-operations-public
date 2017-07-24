@@ -3,7 +3,7 @@
 
 title: Extend the RunBase class
 description: This topic contains an example that shows how a RunBase class can be augmented end to end.
-author: robinarh
+author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinarh
+ms.reviewer: robinr
 ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: pvillads
+ms.author: mfp
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
@@ -49,7 +49,7 @@ To avoid collisions with other eventual extensions, we followed these best pract
 
 The following example shows how to implement this scenario.
 
-<pre>
+```
 [ExtensionOf(classStr(SysUserLogCleanup))]
 final class MySysUserLogCleanup_Extension
 {
@@ -165,6 +165,6 @@ final class MySysUserLogCleanup_Extension
         }
     }
 }
-</pre>
+```
 
 

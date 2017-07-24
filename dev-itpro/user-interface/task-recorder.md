@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Task Recorder | Microsoft Docs
+title: Task Recorder
 description: This article describes the how to use Task Recorder to record client functions.
 author: jasongre
 manager: AnnBe
@@ -17,7 +17,7 @@ keywords: SysTaskRecorderPane
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw1
+ms.reviewer: josaw
 
 # ms.tgt_pltfrm: 
 ms.custom: 24271

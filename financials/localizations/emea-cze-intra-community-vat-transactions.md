@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sales tax reporting for the Czech Republic | Microsoft Docs
+title: Sales tax reporting for the Czech Republic
 description: This topic provides information about how intra-community value-added tax (VAT) is calculated and posted for the Czech Republic. 
 author: LizaGolub
 manager: AnnBe

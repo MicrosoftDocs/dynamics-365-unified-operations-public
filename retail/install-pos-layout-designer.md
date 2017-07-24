@@ -17,7 +17,7 @@ ms.search.form: RetailTillLayout
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 11
+ms.reviewer: margoc
 ms.search.scope: Retail, Operations, Core, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 219684

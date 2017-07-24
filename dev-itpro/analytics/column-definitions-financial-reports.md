@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: Management Reporter, UnifiedOperations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 106601

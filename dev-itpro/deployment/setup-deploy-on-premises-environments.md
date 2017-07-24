@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
+ms.reviewer: kfend
 ms.search.scope: Core
 # ms.tgt_pltfrm: 
 ms.custom: 55651
@@ -50,18 +50,25 @@ These components depend on the following system software:
     - Full-text index search is enabled.
     - SQL Server Reporting Services (SSRS).
     - SQL Server Integration Services (SSIS).
-    > [!NOTE]
-    > The application will not run if Full Text Search is not enabled.
+    
+     > [!NOTE]
+     > The application will not run if Full Text Search is not enabled.
 
 - SQL Server Management Studio
 - Standalone Microsoft Azure Service Fabric
-- Active Directory Federation Services (AD FS) on Windows Server 2016
 - Windows PowerShell 5.0 or later
+- Active Directory Federation Services (AD FS) on Windows Server 2016
+
+  The domain controller must be Windows Server 2012 R2 or later with a domain functional level of 2012 R2, or greater
+
+  For more information about domain functional levels, see: 
+  - [What Are Active Directory Functional Levels](https://technet.microsoft.com/en-us/library/cc787290(v=ws.10).aspx)
+  - [Understanding Active Directory Domain Services Functional Levels](https://technet.microsoft.com/en-us/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
+
 
 ## Lifecycle Services
 
-Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through
-the [Enterprise Agreements](https://www.microsoft.com/en-us/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
+Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through the [Enterprise Agreements](https://www.microsoft.com/en-us/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
 
 ## Authentication
 
@@ -85,7 +92,7 @@ For more information, see [System requirements](../get-started/system-requiremen
 
 ### Hardware layout
 
-Plan your infrastructure and Service Fabric cluster, based on the recommended sizing in Hardware sizing for on-premises environments (../get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Plan your infrastructure and Service Fabric cluster, based on the recommended sizing in [Hardware sizing for on-premises environments](../get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 The following table shows an example of the hardware layout. This example is used throughout this topic to illustrate the setup.
 
@@ -133,13 +140,13 @@ The following steps must be completed to set up the infrastructure for Finance a
 7. Download setup scripts from LCS
 8. Describe your configuration
 9. Install Certificates
-10. Setup a standaalone Service Fabric CLuster
+10. Set up a standaalone Service Fabric CLuster
 11. Configure LCS connectivity for the tenant
-12. Setup File Storage
-13. Setup SQL Server
+12. Set up File Storage
+13. Set up SQL Server
 14. Configure the Databases
 15. Encrypt credentials
-16. Setup SSRS
+16. Set up SSRS
 17. Configure AD FS
 
 ### Plan your domain name and DNS zones
@@ -649,7 +656,7 @@ $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$li
 ### Set up SSRS
 
 1.  Before you begin, make sure that the prerequisites that are listed at the beginning of this topic are installed.
-2.  Follow the steps in [this document](https://dcsrdacr201.redmond.corp.microsoft.com/VmmConsole.aspx?platform=HyperV&server=dcsrdvmhq0501.redmond.corp.microsoft.com&port=2179&vmid=378205E6-7236-4354-A002-B480F891E6C0&name=SQLAOSF1AOS1.ContosoSQLAO.com) to configure SSRS for Finance and Operations.
+2.  Follow the steps to [Configure SQL Server Reporting Services for an on-premises deployment](../analytics/configure-ssrs-on-premises.md).
 
 ### Configure AD FS
 

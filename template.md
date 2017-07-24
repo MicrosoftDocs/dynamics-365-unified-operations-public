@@ -44,7 +44,7 @@ The full metadata block is above (in the [raw Markdown](https://raw.githubuserco
 Here are some key things to note about metadata.
 
 - **Required metadata**
-    - **title** - The title will appear in search engine results. You can also add a pipe (|) followed by the product name (for example, `title: Action search | Microsoft Docs`). The title doesn't need be identical to the title in your H1 heading and it should contain 65 characters or less (including | PRODUCT NAME).
+    - **title** - The title will appear in search engine results. You can also add a pipe (|) followed by the product name (for example, `title: Action search`). The title doesn't need be identical to the title in your H1 heading and it should contain 65 characters or less (including | PRODUCT NAME).
     - **description** - This is the full description that appears in the search results. Usually this is the first paragraph of your topic.
     - **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
     - **manager** - Use "annbe" in this field.

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cross-docking from production orders to outbound docks | Microsoft Docs
+title: Cross-docking from production orders to outbound docks
 description: This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
 author: johanhoffmann
 manager: AnnBe
@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form:  
 # ROBOTS: 
-# audience: Application User
+audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
@@ -128,6 +128,5 @@ After a product is reported as finished at the production line it is transferred
 ### Additional information
 
 -   The cross docking scenario is supported for batch and serial controlled items, both with the batch and serial number dimensions defined above and below location in the reservation hierarchy.
--   The quantity that is being reported as finished cannot be split to a transfer order demand that is lower. For example, if 20 pieces is being reported as finished and a transfer order exist for 5 pieces, then the transfer order will not be found applicable for cross docking.
 
 

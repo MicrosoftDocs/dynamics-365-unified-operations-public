@@ -17,7 +17,7 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
+ms.reviewer: kfend
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
@@ -200,8 +200,8 @@ The following tables describe the data manipulation functions that you can use t
 | SESSIONNOW ()                              | Returns the current Dynamics 365 for Finance and Operations session date and time as datetime value.                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
 | DATEFORMAT (date, format)                  | Returns string representation of date using specified format.                                                                                                                                                                                                                                                                                                    | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** returns the current Dynamics 365 for Finance and Operations session date 12/24/2015 as “**24-12-2015**” according to specified custom format.                                                                                                                      |
 | DATEFORMAT (date, format, culture)         | Convert the specified date value to a string in the specified format and [culture](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)).     | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returns the current Finance and Operations session date 12/24/2015 as **“24.12.2015”** according to selected German culture.                                                                                                                       |
-| DAYOFYEAR (date)              | Returns integer representation of the number of days between January 1st and the specified date.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** returns **61**.
-**DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** returns **1**.                                                                                                                       |
+| DAYOFYEAR (date)              | Returns integer representation of the number of days between January 1st and the specified date.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** returns **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** returns **1**. 
+                                                                                                                      |
 
 **Data conversion functions**
 
@@ -240,7 +240,14 @@ The following tables describe the data manipulation functions that you can use t
 <li>Batches as regular lists (<strong>Value</strong> component)</li>
 <li>The current batch number (<strong>BatchNumber</strong> component)</li>
 </ul></td>
-<td>In the following example, the <strong>Lines</strong> data source is created as a record list of three records, which is divided into batches, each of which contains up to two records. <a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> This shows the designed format layout, where bindings to the <strong>Lines</strong> data source are created to generate output in XML format that presents individual nodes for each batch and the records in it. <a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> The following is the result of running the designed format. <a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
+<td>In the following example, the <strong>Lines</strong> data source is created as a record list of three records, which is divided into batches, each of which contains up to two records. 
+<a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> 
+
+This shows the designed format layout, where bindings to the <strong>Lines</strong> data source are created to generate output in XML format that presents individual nodes for each batch and the records in it. 
+<a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> 
+
+The following is the result of running the designed format. 
+<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
 </tr>
 <tr class="odd">
 <td>LIST (record 1 [, record 2, ...])</td>
@@ -304,7 +311,14 @@ The following tables describe the data manipulation functions that you can use t
 <li>Specified list records as regular lists (<strong>Value</strong> component)</li>
 <li>The current record index (<strong>Number</strong> component)</li>
 </ul></td>
-<td>In the following example, the <strong>Enumerated</strong> data source is created as an enumerated list of vendor records from the <strong>Vendors</strong> data source that refers to the <strong>VendTable</strong> table. <a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a> Here is the format, where data bindings are created to generate output in XML format that presents individual vendors as enumerated nodes. <a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> This is the result of running the designed format. <a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
+<td>In the following example, the <strong>Enumerated</strong> data source is created as an enumerated list of vendor records from the <strong>Vendors</strong> data source that refers to the <strong>VendTable</strong> table. 
+<a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a> 
+
+Here is the format, where data bindings are created to generate output in XML format that presents individual vendors as enumerated nodes. 
+<a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> 
+
+This is the result of running the designed format. 
+<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
 </tr>
 <tr class="odd">
 <td>COUNT (list)</td>
@@ -326,13 +340,24 @@ The created list will consist of records with the following fields:
 <li>Description</li>
 </ul>
 The Label and Description fields will return at run-time values based on format’s language settings.</td>
-<td>The following example shows the enumeration introduced in a data model. <a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>The following example shows:
+<td>The following example shows the enumeration introduced in a data model. 
+<a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>
+
+The following example shows:
 <ul>
 <li>Model enumeration inserted into a report as a data source.</li>
 <li>ER expression designed to use model enumeration as parameter of this function.</li>
 <li>Data source of the record list type inserted into a report using the created ER expression.</li>
 </ul>
-<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> The following example shows the ER format elements that are bound to the data source of record list type that was created using the LISTOFFIELDS function.<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>This is the result of the designed format execution.<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>Note:</strong> Translated text for labels and descriptions is populated to ER format output in accordance with the language settings configured for parent FILE and FOLDER format elements.</td>
+<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> 
+
+The following example shows the ER format elements that are bound to the data source of record list type that was created using the LISTOFFIELDS function.
+<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>
+
+This is the result of the designed format execution.
+<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>
+
+Note:</strong> Translated text for labels and descriptions is populated to ER format output in accordance with the language settings configured for parent FILE and FOLDER format elements.</td>
 </tr>
 <tr class="odd">
 <td>STRINGJOIN (list, field name, delimiter)</td>
@@ -342,7 +367,18 @@ The Label and Description fields will return at run-time values based on format�
 <tr class="even">
 <td>SPLITLISTBYLIMIT (list, limit value, limit source)</td>
 <td>Splits the given list into a new list of sub-lists and returns the result in record list content. The limit value parameter specifies the value of the limit to split the origin list. The limit source parameter specifies the step which the total sum is increased on. The limit is not applied to a single item of the given list when the limit source exceeds the defined limit.</td>
-<td>The following example shows the sample format using data sources. <a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>This is the result format execution that presents the flat list of commodity items.<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>The following example shows the same format that was adjusted to present the list of commodity items in batches when a single batch must include commodities with the total weight that should not exceed the limit of 9.<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>This is the result of the adjusted format execution. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a><strong>Note:</strong> The limit is not applied to the last item of the origin list as the value (11) of its limit’s source (weight) exceeds the defined limit (9). Use either the function <strong>WHERE</strong> or the <strong>Enabled</strong> expression of the corresponding format element to ignore (skip) sub-lists during the report generation (if needed).</td>
+<td>The following example shows the sample format using data sources. 
+<a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>
+
+This is the result format execution that presents the flat list of commodity items.
+<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>
+
+The following example shows the same format that was adjusted to present the list of commodity items in batches when a single batch must include commodities with the total weight that should not exceed the limit of 9.
+<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>
+
+This is the result of the adjusted format execution. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a>
+
+<strong>Note:</strong> The limit is not applied to the last item of the origin list as the value (11) of its limit’s source (weight) exceeds the defined limit (9). Use either the function <strong>WHERE</strong> or the <strong>Enabled</strong> expression of the corresponding format element to ignore (skip) sub-lists during the report generation (if needed).</td>
 </tr>
 <tr class="odd">
 <td>FILTER (list, condition)</td>
@@ -515,7 +551,10 @@ The Label and Description fields will return at run-time values based on format�
 <tr class="even">
 <td>FORMAT (string 1, string 2[, string 3, ...])</td>
 <td>Return the specified string, which is formatted by substituting any occurrences of <strong>%N</strong> with the <em>n</em>th argument. The arguments are strings. If an argument isn't provided for a parameter, the parameter is returned as <strong>&quot;%N&quot;</strong> in the string. For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</td>
-<td>In this example, the <strong>PaymentModel</strong> data source returns the list of customer records via the <strong>Customer</strong> component and the processing date value via the <strong>ProcessingDate</strong> field. <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> In the ER format that is designed to generate an electronic file for selected customers, <strong>PaymentModel</strong> is selected as a data source and controls the process flow. An exception is thrown for end users when a selected customer is stopped for the date when the report is processed. The formula that is designed for this type of processing control can use the following resources:
+<td>In this example, the <strong>PaymentModel</strong> data source returns the list of customer records via the <strong>Customer</strong> component and the processing date value via the <strong>ProcessingDate</strong> field. 
+<a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> 
+
+In the ER format that is designed to generate an electronic file for selected customers, <strong>PaymentModel</strong> is selected as a data source and controls the process flow. An exception is thrown for end users when a selected customer is stopped for the date when the report is processed. The formula that is designed for this type of processing control can use the following resources:
 <ul>
 <li>Finance and Operations label SYS70894, which has the following text:
 <ul>
@@ -553,7 +592,8 @@ Here is the formula that can be designed: FORMAT (CONCATENATE (@&quot;SYS70894&q
 <td>TRIM (string)</td>
 <td>Returns given text after truncating leading and trailing spaces, and removes multiple spaces between words. </td>
 <td><strong>TRIM ("     Sample     text     ")</strong> returns <strong>"Sample text".</strong></td>
-=======
+</tr>
+<tr class="odd">
 <td>GETENUMVALUEBYNAME (enumeration data source path, enumeration value label text)</td>
 <td>Returns a value of a specified enumeration data source by specified text of this enumeration label.</td>
 <td>The following example shows the enumeration ReportDirection introduced in a data model. Note that labels are defined for enumeration values.

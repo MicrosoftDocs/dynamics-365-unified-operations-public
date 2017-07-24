@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: sericks
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -174,7 +174,7 @@ Specifically, the **Expense management** mobile workspace enables a user to:
 
 -   Approve or reject expense reports assigned to the employee as an approver.
 
-For more information, see [Expense management mobile workspace](/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace).
+For more information, see [Expense management mobile workspace](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace).
 
 Expense management: Configuration related to employee's card ID
 ---------------------------------------------------------------
@@ -432,6 +432,14 @@ New mobile capabilities allow you to review and approve vendor invoices that
 have been submitted through workflow using a mobile device.
 
 For more information, see [Mobile invoice approvals](/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals).
+
+Configuration data packages
+----------------------------
+
+Configuration data packages are available as process data packages from Lifecycle Services (LCS) for core Financial modules. These data packages can help improve the repeatability of implementations and accelerate the configuration of Dynamics 365 for Finance and Operations, Enterprise edition.
+
+The data packages contain configuration entity spreadsheets. These entity spreadsheets have best practice data, which you can use to create an initial ‘golden’ build. The data entities in the data packages are also sequenced appropriately, to help ensure a successful single-click import of the data. For more information, see [Configuration data packages](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-packages). 
+
 
 Save Financial reports to SharePoint
 ------------------------------------
@@ -945,7 +953,7 @@ bank account, and currency to get a better understanding of surpluses and short
 falls. Overall, you can get a temporal view of gaps and address them
 proactively.
 
-For more information, see [Cash flow forecasting](/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forcasting).
+For more information, see [Cash flow forecasting](/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting).
 
 Cost accounting Power BI reports
 --------------------------------
@@ -1312,6 +1320,27 @@ material on the production floor for lean, discrete, and process manufacturing.
 This makes it possible to release work for kanban picking for the withdrawal
 kanban, so that items can be picked from non-fixed locations in the warehouse.
 
+Lean scheduling board
+---------------------
+
+A new scheduling board for kanbans has been introduced. The kanban board offers these main capabilities.
+-   A graphical overview of scheduled kanbans in a work cell for a selected period.
+-   Tools to schedule unplanned kanban jobs.
+-   Reschedule already scheduled jobs as a drag-and-drop activity.
+-   Reassign kanban jobs across time periods.
+-   An overview of the work cell capacity and capacity load that is updated when new kanban jobs are loaded to the board.
+-   Use of colors to distinguish between kanban jobs.
+-   Detailed information about the kanban and status icon showing when a kanban is overdue.
+
+In the kanban schedule board, these call outs are added to key elements.
+- Menu bar
+- Filter fields
+- Button for unplanned jobs
+- Period node
+- Kanban job
+- Capacity bar
+- Time scale
+
 **Mobile**
 ==========
 
@@ -1367,7 +1396,7 @@ For more information, see the following topics:
 
 - [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012)
 - [Analysis: Use the upgrade analyzer to plan migration work](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool)
-- [Analysis: Estimate the effort to upgrade code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-code-upgrade)
+- [Analysis: Estimate the effort to upgrade code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analyze-code-upgrade)
 - [Analysis: Deploy a sandbox environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox)
 - [Upgrade: Data upgrade in a development environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade)
 - [Upgrade: AX 2012 data upgrade tasks](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012)
@@ -1699,14 +1728,14 @@ testing. Results from compatibility testing can be sent to Microsoft to be
 listed as approved for new deployments of Microsoft Dynamics 365 for Retail.
 
 For a description of the Peripheral simulator, see [Retail Peripheral
-simulator](/unified-operations/%20retail/dev-itpro/retail-peripheral-simulator).
+simulator](/unified-operations/retail/dev-itpro/retail-peripheral-simulator).
 
 For more information about the compatibility program and how to participate,
 contact <drpc@microsoft.com>.
 
 For information about peripherals that have been previously tested by Microsoft,
 visit [Microsoft-tested peripheral
-devices](https://ax.help.dynamics.com/en/wiki/retail-peripherals-overview/).
+devices](/dynamics365/unified-operations/retail/retail-peripherals-overview).
 This page will also be updated with a link to the POS simulator-tested devices
 as soon as that page becomes available.
 
@@ -1849,28 +1878,8 @@ enable the Dynamics AX 2012 R3 CU 11 or CU12 stores to connect with the new HQ.
 If the customer is using a pre-CU 11 version, then they must upgrade to at least
 Dynamics AX 2012 R3 CU 11 to leverage the N-1 support.
 
-For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](/unified-operations/%20retail/dev-itpro/overview-upgrade-n-minus1) and [N-1 installation and configuration](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1).
+For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1) and [N-1 installation and configuration](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1).
 
-**Social**
-==========
-
-Conversation view for private messages and Twitter replies 
------------------------------------------------------------
-
-Starting with this update, Social Engagement shows you any conversation that
-involves private messages (Facebook or Twitter) and Twitter replies of one of
-your social profiles. It displays the back and forth between two authors sorted
-by showing the latest post first. At the top, you will see the two authors,
-including the one that belongs to your team. It also shows the team members who
-answered as that social profile.
-
-For more information, see [View posts and conversations in Social Engagement](https://www.microsoft.com/en-us/dynamics/social-engagement-help-and-training/view-posts-and-conversations-in-social-engagement.aspx).
-
-LinkedIn engagement and acquisition
------------------------------------
-
-You can monitor LinkedIn Company Pages owned by your company, and engagement on
-posts and comments from Company Pages.
 
 **Supply chain management**
 ===========================
@@ -1918,16 +1927,6 @@ physically tracked. In this case, you can use the Change storage dimension group
 for items process to enable those items to be used in warehouse management
 processes. This feature is useful if you want to use the warehouse management
 functionality for existing items.
-
-Movement of inventory with associated work in Warehouse management 
--------------------------------------------------------------------
-
-You can now control which warehouse workers should be allowed to move reserved
-inventory. Also, previously, the work reservations that you could move where
-limited to Sales order, Transfer order issue, Transfer order receipt, and
-Purchase order.
-
-For more information, see [Movement of inventory with associated work in Warehouse management](/dynamics365/unified-operations/supply-chain/warehousing/move-inventory-associated-work).
 
 Piece picking confirmation 
 ---------------------------

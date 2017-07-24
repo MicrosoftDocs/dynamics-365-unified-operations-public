@@ -33,11 +33,12 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[upgrade banner](../includes/upgrade-banner.md)]
 
-The output of this task is an upgraded database that you can use in a sandbox environment. A sandbox environment is an environment where business users and functional team members can validate application functionality. This functionality includes customizations and the data that was brought forward from Microsoft Dynamics AX 2012.
+The output of this task is an upgraded database that you can use in a sandbox environment. A sandbox environment is a Tier 2 or higher environment where business users and functional team members can validate application functionality. This functionality includes customizations and the data that was brought forward from Microsoft Dynamics AX 2012.
 
 We strongly recommend that you run the data upgrade process in a development environment before you run it in a shared sandbox environment, because this approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Data upgrade in a development environment](prepare-data-upgrade.md).
 
 ## Overview of the sandbox data upgrade process
+A sandbox environment for the purposes of this article is a Tier 2 or higher non-production environment. 
 
 Before you start to upgrade data in a sandbox environment, you will have already upgraded data in a development environment, as explained in [Data upgrade in a development environment](prepare-data-upgrade.md). The two processes are very similar. The main difference is that a sandbox environment uses Microsoft Azure SQL Database for data storage, whereas a development environment uses Microsoft SQL Server. This technical difference in the database layer requires that you  modify the data upgrade procedure slightly in a sandbox environment, because a backup from the AX 2012 database instance can't just be restored to SQL Database.
 
@@ -71,7 +72,63 @@ Here is an example of the code that creates a database copy. You must modify thi
 	NOUNLOAD,  STATS = 5
 
 After the copy is created, run the following Transact-SQL (T-SQL) script against it.
-	TODO 
+
+	--remove NT users as these are not supported in Azure SQL Database
+	declare 
+	@SQL varchar(255),
+	@UserName varchar(255)
+
+	set quoted_identifier off
+
+	declare     userCursor CURSOR for
+	select name from sys.sysusers where (isntuser = 1 or isntgroup =1) and name <> 'dbo'
+
+	OPEN userCursor
+		FETCH userCursor into @UserName
+		WHILE @@Fetch_Status = 0
+			  BEGIN
+					set @SQL = 'DROP USER [' + @UserName + ']'
+					exec(@SQL)
+					FETCH userCursor into @UserName
+			  END
+	CLOSE userCursor
+	DEALLOCATE userCursor
+	RETURN
+
+	--If you receive message that you cannot delete users as they own a schema, then check which schema the users own - either change the ownership to another user (for exmaple to dbo) or drop the schema if it does not contain 
+	-- any objects - the examples below are for a AX2012 Demo environment you will need to edit this for your specific environment
+	drop schema [contoso\admin]
+	drop schema [CONTOSO\Domain Users]
+
+	--drop all views in the current database as some refresh tempDB which is not supported in Azure SQL Database
+
+	declare 
+	@SQL varchar(255),
+	@ViewName varchar(255)
+
+	set quoted_identifier off
+
+	declare     viewCursor CURSOR for
+
+	select viewname = v.name
+	from sys.views v
+	order by v.name
+
+	OPEN viewCursor
+
+	FETCH viewCursor into @ViewName
+		WHILE @@Fetch_Status = 0
+			  BEGIN
+					set @SQL = 'DROP VIEW ' + @ViewName
+					exec(@SQL)
+					FETCH viewCursor into @ViewName
+			  END
+	CLOSE viewCursor
+	DEALLOCATE viewCursor
+	RETURN
+
+	-- Drop the following procedure as it contains a tempDB reference which is not supported in Azure SQL Database
+	drop procedure MaintainShipCarrierRole
 
 ### Export the copied database to a bacpac file
 
@@ -99,7 +156,11 @@ Here is an explanation of the parameters:
 
 ### Upload the bacpac file to Azure storage
 
-Upload your bacpac file to Azure storage. See UsingStorageExplorer.docx TODO
+The bacpac file you have created will need to be copied to the AOS machine in your Azure hosted sandbox environment. There are several reasons for this:
+1. The Azure SQL Database instance used by your Tier 2 (or higher) sandbox environment has firewall rules preventing access from outside of the environment itself.
+2. Performance of bacpac import is multiple times faster when importing from a machine within the same Azure datacenter as the Azure SQL database instance.
+
+You can choose how you would like to move the bacpac file to the AOS machine - you may have your own SFTP or other secure file transfer service. We recommend to use our Azure storage, which would require that you acquire your own Azure storage account on your own Azure subscription (this is not provided within the Dynamics subscription itself). There are free tools to help you to move files between Azure storage, from a command line you can use [Azcopy](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](http://storageexplorer.com/). Use one of these tools to first upload the backup from your on-prem environment to Azure storage and then on your download it on your development environment.
 
 ### Import the bacpac file into SQL Database
 
@@ -130,10 +191,47 @@ Here is an explanation of the parameters:
 After you run the commands, you will receive the following warning. You can safely ignore it.
 
 ![Sandbox error](./media/sandbox-2.png)
- 
-### Run the MajorVersionDataUpgrade.zip package
 
-Run the data upgrade deployable package as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md).
+
+### Run a script to update the database
+Run the following script against the imported database. The script performs the following actions:
+
+-   Recreate database users.
+-   Set the correct performance parameters.
+-   Enable the SQL Query Store feature.
+
+    CREATE USER axdeployuser FROM LOGIN axdeployuser
+    EXEC sp_addrolemember 'db_owner', 'axdeployuser'
+
+    CREATE USER axdbadmin WITH PASSWORD = '<password from lcs>'
+    EXEC sp_addrolemember 'db_owner', 'axdbadmin'
+
+    CREATE USER axruntimeuser WITH PASSWORD = '<password from lcs>'
+    EXEC sp_addrolemember 'db_datareader', 'axruntimeuser'
+    EXEC sp_addrolemember 'db_datawriter', 'axruntimeuser'
+
+    CREATE USER axmrruntimeuser WITH PASSWORD = '<password from lcs>'
+    EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser'
+    EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
+    EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
+
+    CREATE USER axretailruntimeuser WITH PASSWORD = '<password from lcs>'
+    EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
+    EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
+
+    CREATE USER axretaildatasyncuser WITH PASSWORD = '<password from lcs>'
+    EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
+
+    ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
+    ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
+    ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
+    ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
+    ALTER DATABASE <imported database name> SET COMPATIBILITY_LEVEL = 130;
+    ALTER DATABASE <imported database name> SET QUERY_STORE = ON;
+ 
+### Run the MajorVersionDataUpgradeWithRetail.zip package
+
+Run the data upgrade deployable package, which is called MajorVersionDataUpgradeWithRetail.zip as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). You will find the MajorVersionDataUpgradeWithRetail.zip in the same location described in the article for MinorVersionDataUpgrade.zip.
 
 ### Upgrade a copy of the database in a development environment
 

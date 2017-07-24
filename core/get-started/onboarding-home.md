@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Onboard and get started
-description: Start here to onboard quickly and learn the Microsoft Dynamics 365 for Finance and Operations UI.
+title: Before you buy
+description: Step-by-step guidance to use when you're considering purchasing Dynamics 365 for Finance and Operations.  
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
@@ -29,56 +29,42 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Onboard and get started
+# Before you buy 
 
 [!include[banner](../includes/banner.md)]
 
+New to Dynamics 365 for Finance and Operations, Enterprise edition? We've put together step-by-step guidance whether you’re still evaluating Finance and Operations or ready to make a purchase.
 
-Start here to onboard quickly and learn the Microsoft Dynamics 365 for Finance and Operations UI.
+## Step one:  Try out Finance and Operations in a free 7-day trial
+You can start a 7-day trial of Dynamics 365 for Finance and Operations through a simple email signup. The trial version of Finance and Operations includes a Getting started guide that provides a step-by-step task guide, which allows you to view specific scenarios in action. The product is available to explore and exercise scenarios. Demo data is included to ease the use of the product and to make the experience more meaningful. A reminder email will be sent 3 days prior to the trial expiration. A buy experience can be initiated at that time to complete the purchase. Get details at [www.microsoft.com/en-us/dynamics365/operations](https://www.microsoft.com/en-us/dynamics365/operations).
 
-## Onboarding
-The following resources provide an overview of how to work with your partner to get onboarded to Finance and Operations and how to use Finance and Operations Lifecycle Services. 
+## Step two: Buy and manage a subscription
+You can buy a subscription for Dynamics 365 for Finance and Operations through volume licensing or through a cloud solution provider.
 
-- [Microsoft FastTrack for Dynamics 365 overview](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview) 
-- [Sign up for a subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription) 
-- [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Finance and Operations customers](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs) 
-- [How customers who purchased Microsoft Dynamics 365 for Finance and Operations through a Cloud Service Provider can get the on-premises version of Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource)
+### Buy through volume licensing
+If your organization has 250 or more Dynamics 365 users, you may be interested in a [Volume licensing agreement](https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy.aspx). 
 
-## User interface
-The following resources provide information about the Finance and Operations user experience. 
--   [What's new in the Finance and Operations user experience (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
--   [Personalizing the user experience](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience)
--   [Configuring and filtering workspaces](/dynamics365/unified-operations/fin-and-ops/get-started/configure-filter-workspaces)
--   [Navigation search](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search)
--   [Action search](/dynamics365/unified-operations/fin-and-ops/get-started/action-search)
--   [Keyboard shortcuts](/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys)
--   [Display pages side-by-side using the Open in New Window icon](/dynamics365/unified-operations/fin-and-ops/get-started/display-pages-side-by-side)
--   [Advanced filtering and query options](/dynamics365/unified-operations/fin-and-ops/get-started/advanced-filtering-query-options)
--   [Finance and Operations client FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/client-faq)
--   [Change the banner or logo (Task guide)](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/)
+In Volume Licensing, Finance and Operations is available through:
+- Enterprise Agreement
+- Enterprise Agreement Subscription
+- Enrollment for Education Solutions (under the Campus and School Agreement)
+- Microsoft Products and Services Agreement (MPSA)
 
-## Help system
-The following resources provide an overview of the Help system and explain how to view field descriptions.
+### Buy through a Cloud Solution Provider
+A Microsoft Cloud Solution Provider can work closely with you to understand the needs of your business or organization. [Learn how to find a Dynamics 365 partner](https://partnercenter.microsoft.com/en-us/partner/home). 
 
--   [Getting started with Help](/dynamics365/unified-operations/dev-itpro/get-started/help-overview)
--   [Connect the Help system](/dynamics365/unified-operations/dev-itpro/get-started/help-connect)
--   [How to view and export field descriptions](/dynamics365/unified-operations/fin-and-ops/get-started/view-export-field-descriptions)
--   [Finance and Operations help system (fact sheet)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
+### Choose your support
+Microsoft provides flexible, industry-leading support, services, and resources that enable users to quickly address technical issues and maximize return on your Dynamics 365 investment. Choose a plan that best meets your business requirements. More information: [Dynamics 365 Support](https://www.microsoft.com/en-us/dynamics365/support)
 
-### Task recordings and Task guides
+## Step three: Learn about FastTrack and plan your deployment
+Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success. More information: [Microsoft FastTrack for Dynamics 365 overview](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview) 
 
-Task Recorder is a Dynamics 365 for Finance and Operations tool that you can use to record the actions that you take in the user interface (UI). When you create a *task recording*, all events that are executed against the server are recorded as you perform them in the UI. These events include adding values, changing settings, and removing data. A *task guide* is a controlled, guided, interactive experience that leads you through the steps of a task recording. You can open (or *play*) a task guide from the Help system.
--   [Connecting the help system](/dynamics365/unified-operations/dev-itpro/get-started/help-connect)
--   [Task Recorder in Finance and Operations](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder)
--   [Create documentation or training using Task recordings](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs)
--   [New task guides available (February 2016)](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016)
+### Plan your deployment
+Many decisions you make at the beginning and throughout the deployment process can have downstream effects and impact other phases of the plan. Developing a plan to deploy Finance and Operations is important in determining the actions to take from inception to go live. The amount of resources involved in planning depends on the size and scope of the project. We recommend that you use an appropriate Lifecycle Services methdology to help with your planning. 
 
+More information: 
+- Cloud-hosted deployment
+- [On-premises deployment](/dev-itpro/deployment/on-premises-deployment-landing-page)
 
-See also
---------
+Often times an organization will employ an independent software vendor (ISV), value-added reseller, or partner to help implement and maintain a Dynamics 365 deployment. Partners bring experience, best practices, and industry expertise that will be valuable in the planning and deployment process. [Find a partner if you don't have one](https://partnercenter.microsoft.com/en-us/pcv/search).
 
-[New Task guides (February 2016)](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016)
-
-[New or updated Task guides (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016)
-
-[New or updated Task guides (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016)
