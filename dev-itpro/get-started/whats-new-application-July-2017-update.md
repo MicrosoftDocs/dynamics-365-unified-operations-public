@@ -1344,13 +1344,31 @@ In the kanban schedule board, these call outs are added to key elements.
 **Mobile**
 ==========
 
-Sales orders mobile app 
+Cost controlling mobile workspace
 ------------------------
 
-You can now view sales order details, sales order lines, status, customer
-contact information, order taker contact information, and historical shipping
-transactions. This app empowers salespeople to gain valuable insights into
-customer information and sales orders at any time and in any place.
+The **Cost controlling** mobile workspace provides an instant view of the current performance of cost centers by comparing actual costs against the budgeted costs. You can drill down to statuses of individual cost elements.
+
+The data in the **Cost controlling** mobile workspace is secured by user credentials. A cost center manager is only allowed to see data for his own cost center. The access level security is managed in the Cost accounting module.
+
+Inventory on-hand mobile workspace
+------------------------
+We know that every company has multiple shipments and multiple receipts of inventory each day, and that these movements constantly affect the inventory on-hand status. We have introduced a cross-organizational, on-hand view that can be accessed in any place, at any time, by people working in the warehouse, purchasing, sales, manufacturing, management, and other roles. We have enabled instant viewing of the on-hand status across facilities and enabled actions to be carried out from the mobile device such as: view on-hand across facilities, view current material reservations, view unreserved on-hand, view pending material movements (inbound/outbound), scan item numbers or license plates to query on-hand inventory, and create advanced view filters.
+
+This mobile workspace empowers people to get mobile insights in current reserved/available stock levels at any time, in any facility.
+
+Purchase order approvals mobile workspace
+------------------------
+This functionality allows users to review and approve purchase orders that have been submitted through workflow using their mobile device.
+
+Sales orders mobile workspace
+------------------------
+View sales order details, sales order lines, status, customer contact information, order taker contact information, and historical shipping transactions. This mobile workspace will empower salespeople to gain valuable insights into customer information and sales orders at any time and in any place.
+
+Vendor collaboration mobile workspace
+------------------------
+With the **Vendor collaboration** mobile workspace, vendors can stay up-to-date on the purchase orders that have been sent to them for approval. This also allows vendors to view information about new and updated purchase orders and view contacts.
+
 
 **Other**
 =========
