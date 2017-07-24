@@ -63,8 +63,8 @@ By completing this configuration step, you enable Finance and Operations to cont
     ![User's name on the page after sign-in](./media/PowerBI-registration2.JPG)
 
 3. In the **App name** field, enter a name, such as **Contoso Dyn365 for Operations**.
-4. In the **Redirect URL** field, copy and paste the base URL of your Finance and Operations client, and then add the OAuth suffix. Here is an example: `<http://contosoax7.cloud.dynamics.com/oauth>`
-5. In the **Home page URL** field, enter your URL, and add a mock extension. Here is an example: `https://<your base URL>`
+4. In the **Redirect URL** field, copy and paste the base URL of your Finance and Operations client, and then add the OAuth suffix. Here is an example: `http://contosoax7.cloud.dynamics.com/oauth`
+5. In the **Home page URL** field, enter your home page URL, and add a mock extension. Here is an example: `http://contosoax7.cloud.dynamics.com/testenv/`
 
     This value is mandatory, but it isn't required for the workspace integration. Make sure that the App ID URI is a mock URL. If you use the real URL of your deployment, you might cause sign-in issues in other Azure AD applications, such as the Microsoft Excel Add-in. Here is an example: `http://contosoax7.cloud.dynamics.com/testenv/`
 
@@ -85,13 +85,13 @@ By completing this configuration step, you enable Finance and Operations to cont
 
     The **Azure AD Tenant** field should show your tenant (or domain name). For example, if you provisioned Finance and Operations with the ContosoAX7.onmicrosoft.com tenant, the field should have the value that is shown in the previous illustration. If the field is blank, you can enter the correct tenant.
 
-    Note that the Power BI integration feature doesn’t work on pre-production and test Azure AD domains, such as PPE. You must change to a production Azure AD domain by running the Admin user tool.
+    Note that the Power BI integration feature doesn’t work on pre-production and test Azure AD domains. You must change to a production Azure AD domain by running the Admin user tool.
 
 4. In the **Client ID** field, enter the **Client ID** value that you got from Power BI in the previous procedure.
 5. In the **Application Key** field, enter the **Client Secret** value that you got from Power BI in the previous procedure.
 6. Make sure that the **Redirect URL** field is set to the same redirect URL that you entered in Power BI in the previous procedure.
 
-    For example, copy and paste the base URL of your Finance and Operations client, and then add the OAuth suffix. Here is an example: `<http://contosoax7.cloud.dynamics.com/oauth>`
+    For example, copy and paste the base URL of your Finance and Operations client, and then add the OAuth suffix. Here is an example: `http://contosoax7.cloud.dynamics.com/oauth`
 
 7. In the **Tile filter table** field, enter **Company**. In the **Tile filter column** field, enter **ID**.
 
@@ -99,7 +99,7 @@ By completing this configuration step, you enable Finance and Operations to cont
 
     You can apply the company filter only if your Power BI content has a table that is named **Company** and a column that is named **ID**. Ready-made Power BI content that is released with Finance and Operations uses this convention.
 
-    If the Power BI content doesn't have a table and a field that are named **Company**, or a field that is named **ID**, the filter is ignored, and the tile will show unfiltered data.
+    If the Power BI content (that you wish to pin) doesn't have a table and a field that are named **Company** and **ID** respectively, the filter is ignored, and the tile will show unfiltered data.
 
     ![Tile filter table and Tile filter column fields](media/1820cc9320b91814dbb7d7c90c04d49f.png)
 
