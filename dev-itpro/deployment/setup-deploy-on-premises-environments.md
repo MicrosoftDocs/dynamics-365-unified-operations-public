@@ -279,7 +279,7 @@ We have provided several scripts to help improve the setup experience. Follow th
 
 1. Sign in to LCS (<https://lcs.dynamics.com/v2>).
 2. On the dashboard, click the **Shared asset library** tile.
-3. Click the **Deployment** tab (or the **Model** tab).
+3. Click the **Model** tab.
 4. In the grid, select the **Dynamics 365 for Operations - On-premises Deployment scripts** row.
 5. Click **Versions**, and download the latest version of the scripts.
 
@@ -558,9 +558,14 @@ $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$li
 
 ### Configure the Finance and Operations database
 
-1. In LCS, download and then restore the AxBootstrapDB\_DemoData.bak database.
-2. Rename the database **AXDBRAIN**.
-3. Run the following queries on the restored database.
+1. Sign in to LCS (<https://lcs.dynamics.com/v2>).
+2. On the dashboard, click the **Shared asset library** tile.
+3. Click the **Model** tab 
+4. In the grid, click the **Dynamics 365 for Operations on-premises, Enterprise edition - Demo data** row to download the zip.
+5. Zip contains empty and demo data .bak files. Based on your needs pick the appropriate .bak file. For example, if you need demo data, restore the AxBootstrapDB_Demodata.bak file. 
+6. Restore the AxBootstrapDB_DemoData.bak database.
+7. Rename the database **AXDBRAIN**.
+8. Run the following queries on the restored database.
 
     ```
     ALTER DATABASE AXDBRAIN
@@ -608,6 +613,7 @@ $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$li
     GRANT VIEW SERVER STATE TO axdbadmin
     GRANT VIEW SERVER STATE TO [contososqlao\svc-AXSF$]
     ```
+9. Run the following command: .\Reset-DatabaseUsers.ps1 -DatabaseServer ‘<FQDN of the SQL server>’ -DatabaseName '<AX database name>'
 
 ### Configure the Financial Reporting database
 
