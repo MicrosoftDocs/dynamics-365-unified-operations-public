@@ -34,7 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-
 This glossary defines key terms and concepts in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 ### **A**
@@ -608,7 +607,7 @@ A tool that is pre-installed in Finance and Operations. When recording, it recor
 
 ###### **Task recording**
 
-A file that contains the actions and annotations that are captured when Task recorder is run in Microsoft Dynamics 365 for Finance and Operations.
+A file that contains the actions and annotations that are captured when Task recorder is run in Finance and Operations.
 
 ###### **three-way matching policy**
 
@@ -657,7 +656,3 @@ A person who assumes the role of an employee or a contractor and is paid in exch
 ###### **workspace**
 
 A page that provides an overview of one of the activities that the user performs. The page uses tiles, lists, and charts to display pending work and related data from multiple sources, and the page surfaces frequent tasks related to this data. Tiles shown in the summary section of the workspace are also displayed in the related section in the dashboard.
-
-
-
-
