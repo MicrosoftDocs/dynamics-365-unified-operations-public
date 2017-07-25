@@ -117,7 +117,7 @@ For information about how to upgrade to the latest version, see [Process for upg
 <td>Platform update 9</td>
 <td>7.0.4612.16224</td>
 <td>July 2017</td>
-<td><a href="whats-new-platform-update-8.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 8 (June 2017)</a></td>
+<td><a href="whats-new-platform-update-9.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9 (July 2017)</a></td>
 </tr><tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>Platform update 8</td>
