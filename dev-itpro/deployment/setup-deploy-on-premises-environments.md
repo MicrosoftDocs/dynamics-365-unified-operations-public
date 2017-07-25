@@ -236,7 +236,7 @@ $domainName = Read-Host -Prompt 'Specify domain name (ex: contoso.com)'
 Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter domain credential')
 Restart-Computer
 ```
-Once the VMs are joined to the domain, add the Aos Service Accounts (Contoso\svc-AXSF$ , Contoso\svc-AXSF$ ) to the local administrators group.You can check [Add a member to local group] (https://technet.microsoft.com/en-us/library/cc772524(v=ws.11).aspx) article for how to do this.
+Once the VMs are joined to the domain, add the Aos Service Accounts (Contoso\svc-AXSF$ , Contoso\svc-AXSF$ ) to the local administrators group.You can check [Add a member to local group](https://technet.microsoft.com/en-us/library/cc772524(v=ws.11).aspx) article for how to do this.
 
 #### Disable User Access Control 
 
