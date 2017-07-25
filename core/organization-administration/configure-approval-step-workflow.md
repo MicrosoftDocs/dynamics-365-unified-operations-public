@@ -5,7 +5,7 @@ title: Configure an approval step in a workflow
 description: This topic explains how to configure the properties of an approval step.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 192161
 ms.assetid: 8b478e3d-d6b4-403b-aae0-f639a71ca36c
@@ -133,10 +133,10 @@ Follow these steps to specify who the approval step should be assigned to.
     </tr>
     <tr class="even">
     <td>User</td>
-    <td>Specific Microsoft Dynamics 365 for Operations users</td>
+    <td>Specific Microsoft Dynamics 365 for Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Dynamics 365 for Operations users. Select the users to assign the step to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to assign the step to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -238,10 +238,10 @@ If a user doesn't take action on a document in the allotted time, the document i
     </tr>
     <tr class="odd">
     <td>User</td>
-    <td>Specific Dynamics 365 for Operations users</td>
+    <td>Specific Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Dynamics 365 for Operations users. Select the users to escalate the document to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to escalate the document to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>

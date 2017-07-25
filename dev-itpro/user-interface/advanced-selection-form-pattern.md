@@ -5,7 +5,7 @@ title: Advanced selection form pattern
 description: This article provides information about the Advanced Selection form pattern. This Dialog form pattern lets users filter and select items from a large, wide list. Like the List Panel pattern, this pattern should be used when the primary user task is to select a set of items.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 29171
 ms.assetid: c3c5eea7-f771-41ea-9976-8d0e1f3d3f25
@@ -51,14 +51,14 @@ The Advanced Selection form pattern should be used when the primary user task is
 -   [List Panel](list-panel-subpattern.md)
 -   [Dialog](dialog-form-pattern.md)
 
-## Pattern changes for Dynamics 365 for Operations
-This is a new pattern in the current version of Microsoft Dynamics 365 for Operations.
+## Pattern changes
+This is a new pattern in Finance and Operations.
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn’t include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
 -   **Standard form guidelines:**
-    -   Standard form guidelines have been consolidated into the Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md)document.
+    -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
 -   **Advanced selection guidelines:**
     -   By default, the Quick filter should use the name or description column.
     -   The list can display up to 15 columns. **Note:** This guidelines has been relaxed since Microsoft Dynamics AX 2012.

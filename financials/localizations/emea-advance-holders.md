@@ -2,10 +2,10 @@
 # required metadata
 
 title: Advance holders
-description: Learn about advance holder functionality in Microsoft Dynamics 365 for Operations.
+description: Learn about advance holder functionality in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 262574
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-Learn about advance holder functionality in Microsoft Dynamics 365 for Operations.
+Learn about advance holder functionality in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 An *advance holder* is an employee of a company who is accountable for an expense amount that is provided by the organization. Only a company's worker can be an advance holder. When a procurement happens, an advance holder reports to the company about the expenditures that were made. The company reimburses the employee for the expense amount. A company controls a balance for each advance holder. Users in legal entities in Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia can reflect specific transactions accompanying operations with company’s employees who are accountable for the expense amount that is provided by the organization.
 
@@ -85,7 +85,7 @@ To reflect advance holder’s transactions you must set up the following on the 
 To correctly register and post a purchase order through an advance holder, you must use a Terms of payment that was set up with the **From advance holder** option set to **True**.
 ### Create an advance holder creation
 
-Before you can create an advance holder, you must have already set up workers. For more information, see [Enter worker information (Task guide).](http://ax.help.dynamics.com/en/wiki/enter-worker-information/) Use the **Advance holders** page to set up a worker as an advance holder. Select the worker to use as an advance holder, click **Edit**, and then set the **Advance holder** option to **True**. You must also complete the following fields.
+Before you can create an advance holder, you must have already set up workers. For more information, see [Enter worker information (Task guide).](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enter-worker-information) Use the **Advance holders** page to set up a worker as an advance holder. Select the worker to use as an advance holder, click **Edit**, and then set the **Advance holder** option to **True**. You must also complete the following fields.
 |                |                                                                                             |
 |----------------|---------------------------------------------------------------------------------------------|
 | **Field**      | **Description**                                                                             |

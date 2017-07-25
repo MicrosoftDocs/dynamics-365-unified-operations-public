@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data entities - Costing
-description: This article provides a list of the data entities that are available for the Costing functionality in Microsoft Dynamics 365 for Operations.
+description: This article provides a list of the data entities that are available for Costing.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: reference
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 51
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: kfend
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 96013
 ms.assetid: 31361f62-a387-43dc-a8d2-6792882f6d33
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for the Costing functionality in Microsoft Dynamics 365 for Operations.
+This article provides a list of the data entities that are available for Costing.
 
 Available data entities
 -----------------------
@@ -55,9 +55,9 @@ Available data entities
 See also
 --------
 
-[Data entities and packages framework](/dynamics365/operations/dev-itpro/data-entities/data-entities-data-packages)
+[Data entities and packages framework](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages)
 
-[Data entities ](/dynamics365/operations/dev-itpro/data-entities/data-entities)
+[Data entities ](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities)
 
 
 

@@ -2,10 +2,10 @@
 # required metadata
 
 title: File upload control
-description: This topic provides information about the file upload control. This control lets users upload files to Microsoft Dynamics 365 for Operations.
+description: This topic provides information about the file upload control. This control lets users upload files.
 author: aneesmsft
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 2051
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: robinr
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 54311
 ms.assetid: 82f47d4d-912c-4f85-81f9-b09c723f72fc
@@ -35,12 +35,12 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides information about the file upload control. This control lets users upload files to Microsoft Dynamics 365 for Operations.
+This topic provides information about the file upload control. This control lets users upload files.
 
 Overview
 --------
 
-The file upload control lets users upload a file to Microsoft Dynamics 365 for Operations. It also lets developers control the upload process and manage the file that is uploaded, based on their requirements. 
+The file upload control lets users upload a file. It also lets developers control the upload process and manage the file that is uploaded, based on their requirements. 
 
 [![FileUpload001](./media/fileupload001.png)](./media/fileupload001.png) 
 

@@ -5,7 +5,7 @@ title: Class extensions
 description: This article describes the new class extension model in X++.
 author: pvillads
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: Operations, Platform, AX Platform
+ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 271dabb1-ecb8-497f-b866-397733a954b8

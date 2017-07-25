@@ -5,7 +5,7 @@ title: OData
 description: This article provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: robinr
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 24841
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
@@ -101,7 +101,9 @@ In this example, the **SysODataCollectionAttribute** class enables OData to expo
 -   The X++ type for the members of this list
 -   The public name of the OData resource that is contained in the collection
 
-After these actions are exposed, they can be invoked from the service root URL. To learn more about OData actions, see [Action in OData](http://odata.org/blog/actions-in-odata/).
+After these actions are exposed, they can be invoked from the service root URL. 
+
+You can find actions that are defined on data entities by searching for the **SysODataActionAttribute** attribute in the source code.
 
 ## Querying or browsing an OData endpoint
 OData enables an SQL-like language for creating rich queries against the database to include only those data items that you want in the results. To create a query, append criteria to the resource path. For example, you can query the **Customers** entity collection by appending the following query options in your browser.

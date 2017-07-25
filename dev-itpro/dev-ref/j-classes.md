@@ -5,7 +5,7 @@ title: J Classes
 description: System API classes that start with the letter J.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: robinr
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 58702
 ms.assetid: e932e25e-b72a-428a-830a-20160e81e334
@@ -61,10 +61,10 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str createdBy(\[str value\])                        | Gets or sets the name of the user who created the application object.                                                                         |
 | public Date creationDate(\[Date value\])                   | Gets or sets the date that an application object was created.                                                                                 |
 | public str creationTime(\[str value\])                     |                                                                                                                                               |
-| public str name(\[str value\])                             | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object. |
+| public str name(\[str value\])                             | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public Guid origin(\[Guid value\])                         |                                                                                                                                               |
 | public void AOTsetSource(str source, \[boolean isStatic\]) | Sets the source code of this node.                                                                                                            |
-| public void AOTrun()                                       | Compiles this node and its subtree in the Microsoft Dynamics 365 for Operations Application Object Tree (AOT).                                                |
+| public void AOTrun()                                       | Compiles this node and its subtree in the Finance and Operations Application Object Tree (AOT).                                                |
 | public void AOTedit(\[int Line\], \[int Column\])          | Opens the appropriate editor for this node.                                                                                                   |
 
 ### Method AOTgetSource
@@ -163,7 +163,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Microsoft Dynamics 365 for Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -217,7 +217,7 @@ This method is overridden by nodes that have source code.
 
 ### Method AOTrun
 
-Compiles this node and its subtree in the Microsoft Dynamics 365 for Operations Application Object Tree (AOT).
+Compiles this node and its subtree in the Finance and Operations Application Object Tree (AOT).
 
     public void AOTrun()
 

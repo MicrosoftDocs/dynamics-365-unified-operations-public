@@ -5,7 +5,7 @@ title: Dialog form pattern
 description: This article provides information about the Dialog form pattern. A dialog box represents an action or activity that users can explicitly commit or cancel. It's used when a user initiates a specific task or process, and the system requires user input about how or whether to proceed.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 16061
 ms.assetid: 80c93e91-1952-44ce-af93-a17965ee476a
@@ -85,91 +85,70 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### Dialog (basic) – High-level structure
 
-Design
+- Design
 
-*SecondaryInstruction (StaticText) \[Optional\]*
+    - *SecondaryInstruction (StaticText) \[Optional\]*
 
-*ActionPane (ActionPane) \[Optional\]*
+        - *ActionPane (ActionPane) \[Optional\]*
+        - *DialogHeader (Group, can repeat) \[Optional\]*
+        - DialogContent (Group, repeats 1..N)
+        - DialogCommitContainer (ButtonGroup)
 
-*DialogHeader (Group, can repeat) \[Optional\]*
-
-DialogContent (Group, repeats 1..N)
-
-DialogCommitContainer (ButtonGroup)
-
-OKButton ($Button)
-
-*OtherButton ($Button, can repeat) \[Optional\]*
-
-CancelButton ($Button)
+            - OKButton ($Button)
+            - *OtherButton ($Button, can repeat) \[Optional\]*
+            - CancelButton ($Button)
 
 ###  Dialog w/Tabs and Dialog w/FastTabs – High-level structure
 
-Design
+- Design
 
-*SecondaryInstruction (StaticText) \[Optional\]*
+    - *SecondaryInstruction (StaticText) \[Optional\]*
+    - *ActionPane (ActionPane) \[Optional\]*
+    - *DialogHeader (Group, can repeat) \[Optional\]*
+    - TabContent (Tab)
 
-*ActionPane (ActionPane) \[Optional\]*
+        - TabPage (TabPage, repeats 1..N)
 
-*DialogHeader (Group, can repeat) \[Optional\]*
+    - *DialogFooter (Group) \[Optional\]*
+    - DialogCommitContainer (ButtonGroup)
 
-TabContent (Tab)
-
-TabPage (TabPage, repeats 1..N)
-
-*DialogFooter (Group) \[Optional\]*
-
-DialogCommitContainer (ButtonGroup)
-
-OKButton ($Button)
-
-*OtherButton ($Button, can repeat) \[Optional\]*
-
-CancelButton ($Button)
+        - OKButton ($Button)
+        - *OtherButton ($Button, can repeat) \[Optional\]*
+        - CancelButton ($Button)
 
 ### Dialog w/double tabs – High-level structure
 
-Design
+- Design
 
-*SecondaryInstruction (StaticText) \[Optional\]*
+    - *SecondaryInstruction (StaticText) \[Optional\]*
+    - *ActionPane (ActionPane) \[Optional\]*
+    - *DialogHeader (Group, can repeat) \[Optional\]*
+    - TabContent (Tab)
 
-*ActionPane (ActionPane) \[Optional\]*
+        - TabPage (TabPage) \[1..\*\]
 
-*DialogHeader (Group, can repeat) \[Optional\]*
+    - TabContent (Tab)
 
-TabContent (Tab)
+        - TabPage (TabPage) \[1..\*\]
 
-TabPage (TabPage) \[1..\*\]
+    - *DialogFooter (Group) \[Optional\]*
+    - DialogCommitContainer (ButtonGroup)
 
-TabContent (Tab)
-
-TabPage (TabPage) \[1..\*\]
-
-*DialogFooter (Group) \[Optional\]*
-
-DialogCommitContainer (ButtonGroup)
-
-OKButton ($Button)
-
-*OtherButton ($Button, can repeat) \[Optional\]*
-
-CancelButton ($Button)
+        - OKButton ($Button)
+        - *OtherButton ($Button, can repeat) \[Optional\]*
+        - CancelButton ($Button)
 
 ### Dialog (read only) – High-level structure
 
-Design
+- Design
 
-*SecondaryInstruction (StaticText) \[Optional\]*
+    - *SecondaryInstruction (StaticText) \[Optional\]*
+    - *ActionPane (ActionPane) \[Optional\]*
+    - *DialogHeader (Group, can repeat) \[Optional\]*
+    - DialogContent (Group, repeats 1..N)
+    - DialogCommitContainer (ButtonGroup)
 
-*ActionPane (ActionPane) \[Optional\]*
-
-*DialogHeader (Group, can repeat) \[Optional\]*
-
-DialogContent (Group, repeats 1..N)
-
-DialogCommitContainer (ButtonGroup)
-
-CloseButton ($Button)
+        CloseButton ($Button)
 
 ### Core components
 
@@ -193,7 +172,7 @@ CloseButton ($Button)
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form** **guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md)document.
+-   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
 
 **Dialog guidelines:**
 
@@ -289,6 +268,3 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![DialogForm(10)](./media/dialogform10.png)](./media/dialogform10.png)
-
-
-

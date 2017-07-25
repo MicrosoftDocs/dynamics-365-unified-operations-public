@@ -5,7 +5,7 @@ title: Procurement and sourcing in the public sector
 description: This overview introduces you to the public sector Procurement and sourcing functionality. This includes purchase order codes, vendor certification types, purchase agreement classification functionality, and purchase order line amounts.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: AgreementClassification, BudgetParameters, ProcCategoryHierarchy
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 19681
 ms.assetid: c99b2aeb-4ac2-4abe-b8b9-786b664c103d
@@ -142,7 +142,7 @@ Let’s say you view a purchase order line with purchases posted to two ledger a
 
  
 
-For more information, see [Procurement and sourcing](/dynamics365/operations/supply-chain/procurement/procurement-sourcing-overview) and 
+For more information, see [Procurement and sourcing](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-overview) and 
 [Accounts payable in the public sector](accounts-payable-public-sector.md).
 
 

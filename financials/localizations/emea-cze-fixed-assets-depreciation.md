@@ -5,7 +5,7 @@ title: Fixed assets depreciation methods for the Czech Republic
 description: This topic provides information about fixed assets depreciation for legal entities in the Czech Republic. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: AssetDepreciationGroup_W
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 264314
 ms.search.region: Czech Republic

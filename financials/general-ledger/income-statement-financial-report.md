@@ -5,7 +5,7 @@ title: Income statement financial report
 description: This article describes the default report for income statements. It also describes the building blocks that are associated with this report. 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 12294
 ms.assetid: 30820be0-d943-4f8b-8c25-6414ec393b3d
@@ -73,7 +73,7 @@ See also
 
 [View financial reports](view-financial-reports.md)
 
-[Dynamics Financial Reportign Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Financial Reporting Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

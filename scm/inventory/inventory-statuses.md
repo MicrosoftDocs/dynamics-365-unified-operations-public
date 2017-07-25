@@ -5,7 +5,7 @@ title: Inventory statuses
 description: This article describes how you can use inventory statuses to categorize and keep track of inventory.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 21331
 ms.assetid: b35f495f-de4f-48a0-9d09-4d06781d7650
@@ -48,7 +48,7 @@ Here are some examples of ways that you can use inventory statuses:
 
 An inventory status is one of the dimensions in the storage dimension group. Inventory statuses can be categorized as available or unavailable, and you can use the **Inventory blocking** parameter to block items that have an unavailable inventory status. Items that have a blocked status are considered physical inventory, and they can't be used on a production order, sales order, transfer order, or outbound transaction. 
 
-You can use warehouse items that have either available or unavailable inventory statuses for inbound work. For example, you create an available status that is named **Ready**, an unavailable status that is named **Damaged**, and a blocked status that is named **Blocked**. When you create a purchase order for received or returned items, if any items are damaged or broken, you can change the inventory status of those items to **Damaged** on the purchase order line. After these items are received, the status is automatically set to **Blocked**. If you scan the damaged items by using a mobile device, Microsoft Dynamics 365 for Operations can use location directives and work templates to show information about an appropriate location or range of locations where you can put away those items. For returned items, an issue type of **Reservation** is created on the **Inventory transactions** page. 
+You can use warehouse items that have either available or unavailable inventory statuses for inbound work. For example, you create an available status that is named **Ready**, an unavailable status that is named **Damaged**, and a blocked status that is named **Blocked**. When you create a purchase order for received or returned items, if any items are damaged or broken, you can change the inventory status of those items to **Damaged** on the purchase order line. After these items are received, the status is automatically set to **Blocked**. If you scan the damaged items by using a mobile device, Microsoft Dynamics 365 for Finance and Operations can use location directives and work templates to show information about an appropriate location or range of locations where you can put away those items. For returned items, an issue type of **Reservation** is created on the **Inventory transactions** page. 
 
 For outbound work, use items that have an available inventory status. If you have items that have a status of **Broken**, and master planning is run on these items, the items are considered missing, and inventory is automatically replenished. 
 

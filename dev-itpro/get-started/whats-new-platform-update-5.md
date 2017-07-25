@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 273193
 ms.assetid: 025acbbf-7c05-407c-bed2-cde1935e11c9
@@ -50,7 +50,7 @@ Development and customization
 ## Personalization
 | Feature                                              | **Why this is important**                                                                                                                                                                                                                                                                                                  |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enhanced administration features for personalization | The personalization administrator can now apply or remove form personalizations for groups of users. Previously personalization administration was only possible one user at a time. For more information, see [Personalize the user experience](https://docs.microsoft.com/en-us/dynamics365/operations/get-started/personalize-user-experience). |
+| Enhanced administration features for personalization | The personalization administrator can now apply or remove form personalizations for groups of users. Previously personalization administration was only possible one user at a time. For more information, see [Personalize the user experience](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience). |
 
 
 

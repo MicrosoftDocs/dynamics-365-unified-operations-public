@@ -2,13 +2,13 @@
 # required metadata
 
 title: Retail SDK packaging
-description: This topic explains how to create a Retail deployable package for Microsoft Dynamics 365 for Operations.
-author: RobinARH
+description: This topic explains how to create a Retail deployable package for Microsoft Dynamics 365 for Finance and Operations.
+author: mugunthanm
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 07/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
-ms.search.scope: AX 7.0.0, Operations, Retail
+ms.reviewer: josaw
+ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 0fa3c8e7-49e4-417d-afe9-fa2055f6546f
@@ -26,17 +26,17 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
 # Retail SDK packaging
 
-This topic explains how to create a retail deployable package for Microsoft Dynamics 365 for Operations manually.
+[!include[banner](../../includes/banner.md)]
 
-# Prerequisites
+This topic explains how to create a retail deployable package for Microsoft Dynamics 365 for Finance and Operations manually.
 
-For detailed information on Retail SDK, see [Retail SDK overview](retail-sdk-overview.md). The Retail deployable package is a bundle package which includes all the below retail componetst:
+The Retail deployable package is a bundle package which includes all the below retail componetst:
 
 -   Commerce runtime (CRT)
 -   Retail Server
@@ -44,6 +44,8 @@ For detailed information on Retail SDK, see [Retail SDK overview](retail-sdk-o
 -   Cloud POS
 -   Hardware station
 -   Channel database scripts
+
+For detailed information about the Retail software development kit (SDK), see [Retail SDK overview](retail-sdk-overview.md). 
 
 ## Retail Deployable Package
 Retail deployable package is an asset that can be consumed by the LCS deployment service or it can be deployed manually to service or install a customization. The Retail SDK generates the same package that is developed for Microsoft hotfixes or updates, so that there is one way to install or deploy updates and customizations to the existing solution.
@@ -104,7 +106,6 @@ By default, there is no separate package for invidual retail componetst, because
 As a part of a customization, you might have to upgrade a channel database in addition to a Modern POS offline database. Currently, you use upgrade SQL scripts to upgrade the channel and Modern POS offline databases. You can write an upgrade SQL script and put it at Retail SDK\Database\Upgrade\Custom, so that packaging tools can pick it up and include it in the deployable package for the correct components (Retail Server and Modern POS Offline). 
 
 [![custom db script](./media/custom-db-script.png)](./media/custom-db-script.png) 
-
 You must also update Retail SDK\\BuildTools\\Customization.settings to instruct the build tools which files to package for the database. 
 
 [![database upgrade customization setting](./media/database-upgrade-customization-setting-1024x311.png)](./media/database-upgrade-customization-setting.png)

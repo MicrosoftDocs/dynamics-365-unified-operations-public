@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data entities - Human resources
-description: This article provides a list of the data entities that are available for the Human resources functionality in Microsoft Dynamics 365 for Operations.
+description: This article provides a list of the data entities that are available for Human resources.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 96373
 ms.assetid: be9e5713-994e-43a8-8dcc-16c6f25ee927
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for the Human resources functionality in Microsoft Dynamics 365 for Operations.
+This article provides a list of the data entities that are available for Human resources.
 
 Available data entities
 -----------------------

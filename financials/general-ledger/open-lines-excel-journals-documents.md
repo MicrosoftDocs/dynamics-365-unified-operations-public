@@ -5,7 +5,7 @@ title: Publish journal lines and documents from Excel
 description: This topic explains how to enter and publish lines for general journals from Microsoft Excel. It includes information about the various templates that you can use, depending on the type of transactions that you're entering.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.search.form: LedgerJournalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 101
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 62213
 ms.assetid: 211874a7-4bf0-4a0c-96c2-fa05042777d3
@@ -52,9 +52,9 @@ Users can enter and publish lines for financial journals from Microsoft Excel. A
 | Customer payment journal | Account: Customer Offset account: Ledger, Bank Intercompany is supported.                                               | Customer payment journal                                                                |
 | Project expense journal  | Account: Project, Ledger, Customer, Vendor Offset account: Project, Ledger, Customer, Vendor Intercompany is supported. | General journal Expense (under Project management and accounting)                       |
 
-When the lines are published, they are validated to make sure that they comply with the rules that are set up in the financial journals. After the lines are published, users can edit or post the vouchers from Microsoft Dynamics 365 for Operations. 
+When the lines are published, they are validated to make sure that they comply with the rules that are set up in the financial journals. After the lines are published, users can edit or post the vouchers from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
-To add financial dimensions to a template, additional changes are required. For additional information, see [Add dimensions to the Microsoft Excel template](/dynamics365/operations/dev-itpro/financial/add-dimensions-excel-templates). After dimensions are added to the entity, they are available in the Excel designer and can be added to the template.
+To add financial dimensions to a template, additional changes are required. For additional information, see [Add dimensions to the Microsoft Excel template](/dynamics365/unified-operations/dev-itpro/financial/add-dimensions-excel-templates). After dimensions are added to the entity, they are available in the Excel designer and can be added to the template.
 
 
 

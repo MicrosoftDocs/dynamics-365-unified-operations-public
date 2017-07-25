@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data entities - Procurement and sourcing
-description: This article provides a list of the data entities that are available for the Procurement and sourcing functionality in Microsoft Dynamics 365 for Operations.
+description: This article provides a list of the data entities that are available for Procurement and sourcing.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 51
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: kfend
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 95983
 ms.assetid: 6fe7dbf2-c851-47e0-8c95-9d5baeda66cf
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for the Procurement and sourcing functionality in Microsoft Dynamics 365 for Operations.
+This article provides a list of the data entities that are available for Procurement and sourcing.
 
 Available data entities
 -----------------------

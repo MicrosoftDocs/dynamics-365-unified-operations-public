@@ -5,10 +5,10 @@ title: Add a methodology to an LCS solution
 description: This topic explains how to create and modify methodologies. It also provides information about the requirements for methodologies.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 51
+ms.reviewer: kfend
 ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 197063
@@ -25,8 +25,7 @@ ms.assetid: 368f2356-62a6-4d9f-9f80-0acf7a986085
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omarc
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+
 
 ---
 

@@ -5,7 +5,7 @@ title: Bank file formats for Australian banks
 description: You can pay vendors electronically through banks. The names of the banks and the file formats that they accept for the electronic payments are listed in this topic. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 12354
 ms.assetid: f835ced1-28a8-4db8-a4fb-06efd71122dd

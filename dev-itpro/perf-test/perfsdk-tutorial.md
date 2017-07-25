@@ -5,7 +5,7 @@ title: PerfSDK and multiuser testing with Visual Studio Online
 description: Take a tour of Performance SDK and multiuser testing with Visual Studio Online and learn how convert a scenario recorded with Task Recorder into a single user test and then a multiuser test.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 2051
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: robinr
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Take a tour of Performance SDK and multiuser testing with Visual Studio Online and learn how convert a scenario recorded with Task Recorder into a single user test and then a multiuser test.
 
-*Time:* 30 minutes In this lab, you will take a tour of Performance SDK and multi user testing with Visual Studio Online. You will see how to convert a scenario recorded with Task Recorder and convert it to a single user test and then a multi user test. **Note:** This lab requires that you access the environment as an administrator. For more information, refer to the document named [Access Microsoft Dynamics 365 for Operations Instances](..\dev-tools\access-instances.md). **Prerequisites**
+*Time:* 30 minutes In this lab, you will take a tour of Performance SDK and multi user testing with Visual Studio Online. You will see how to convert a scenario recorded with Task Recorder and convert it to a single user test and then a multi user test. **Note:** This lab requires that you access the environment as an administrator. For more information, refer to the document named [Access Instances](..\dev-tools\access-instances.md). **Prerequisites**
 
 -   Visual Studio 2015 Enterprise
 -   Deployment with Volume Data
@@ -86,7 +86,7 @@ Put this thumbprint value in **CloudEnvironment.Config** file:
 
 [![config-thumbprint](./media/config-thumbprint.jpg)](./media/config-thumbprint.jpg) 
 
-The next step is to update **wif.config** to make AOS trust this certificate. To do that, open IIS and find Dynamics 365 for Operations in the list of sites. Click **Explore** to open and find a file **wif.config**. 
+The next step is to update **wif.config** to make AOS trust this certificate. To do that, open IIS and find Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in the list of sites. Click **Explore** to open and find a file **wif.config**. 
 
 [![wifconfig](./media/wifconfig.jpg)](./media/wifconfig.jpg) 
 

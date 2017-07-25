@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure case security, processes, and categories
-description: This article describes the considerations and decisions that you must make during the planning process, before you configure cases in Microsoft Dynamics 365 for Operations.
+description: This article describes the considerations and decisions that you must make during the planning process, before you configure cases in Microsoft Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: CaseCategorySetup, CaseCategoryTypeSecurity
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 23581
 ms.assetid: 0a1ffae4-5750-46a2-becb-604f7a989d32
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes the considerations and decisions that you must make during the planning process, before you configure cases in Microsoft Dynamics 365 for Operations.
+This article describes the considerations and decisions that you must make during the planning process, before you configure cases in Microsoft Dynamics 365 for Finance and Operations.
 
 You can use the case functionality to resolve both issues that are external to your organization and internal issues.
 

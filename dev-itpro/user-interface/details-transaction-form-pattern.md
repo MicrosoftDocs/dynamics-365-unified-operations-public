@@ -5,7 +5,7 @@ title: Details Transaction form pattern
 description: This article provides information about the Details Transaction form pattern. Forms that use this pattern can have two details views that the user can switch between -  a Header view and a Line view.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 16281
 ms.assetid: 016c8e36-0abe-4b55-a575-5696761959a5
@@ -68,63 +68,55 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### High-level structure
 
-Design
+- Design
 
-ActionPane (ActionPane)
+    - ActionPane (ActionPane)
+    - SidePanel (Group)
 
-SidePanel (Group)
+        - QuickFilter
+        - *CustomFilters (Group\] \[Optional\]*
+        - NavigationList (Grid, Style=List)
 
-QuickFilter
+    - PanelTab (Tab ShowTabs=No)
 
-*CustomFilters (Group\] \[Optional\]*
+        - DetailsPanel (TabPage)
 
-NavigationList (Grid, Style=List)
+            - TitleGroup (Group)
 
-PanelTab (Tab ShowTabs=No)
+                - HeaderTitle (String)
+                - *EntityStatus (Group) \[Optional\]*
 
-DetailsPanel (TabPage)
+                    - StatusFields (1..N)
 
-TitleGroup (Group)
+            - HeaderLinePanels (Tab ShowTabs=No)
 
-HeaderTitle (String)
+                - LinePanel (TabPage PanelStyle=Line)
 
-*EntityStatus (Group) \[Optional\]*
+                    - LineViewTab (Tab Style=FastTabs)
 
-StatusFields (1..N)
+                        - LineViewHeader (TabPage)
+                        - LineViewLines (TabPage)
+                        - LineViewLineDetails (TabPage)
 
-HeaderLinePanels (Tab ShowTabs=No)
+                            - LineDetailsTab (Tab Style=Standard)
 
-LinePanel (TabPage PanelStyle=Line)
+                                - LineDetailsTabPages (TabPages 1..N)
 
-LineViewTab (Tab Style=FastTabs)
+                - HeaderPanel (TabPage PanelStyle=Header)
 
-LineViewHeader (TabPage)
+                    - HeaderViewTab (Tab Style=FastTabs)
 
-LineViewLines (TabPage)
+                        - HeaderViewTabPages (TabPages 1..N)
 
-LineViewLineDetails (TabPage)
+        - GridPanel (TabPage PanelStyle=Grid)
 
-LineDetailsTab (Tab Style=Standard)
+            - CustomFilterGroup (Group)
 
-LineDetailsTabPages (TabPages 1..N)
+                - QuickFilter
+                - *OtherFilters ($Field) \[0..N\]*
 
-HeaderPanel (TabPage PanelStyle=Header)
-
-HeaderViewTab (Tab Style=FastTabs)
-
-HeaderViewTabPages (TabPages 1..N)
-
-GridPanel (TabPage PanelStyle=Grid)
-
-CustomFilterGroup (Group)
-
-QuickFilter
-
-*OtherFilters ($Field) \[0..N\]*
-
-MainGrid (Grid)
-
-MainGridDefaultAction (CommandButton)
+            - MainGrid (Grid)
+            - MainGridDefaultAction (CommandButton)
 
 ### Core components
 
@@ -156,9 +148,9 @@ The verification checklist shows the steps for manually verifying that the form 
 **Detail Transaction guidelines:**
 
 -   There should not be any duplicate **New** and **Delete** buttons.
--   **ActionPane** guidelines have been consolidated into the Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md) document, in the ActionPane guidelines section.
+-   **ActionPane** guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document, in the ActionPane guidelines section.
 -   In its **default** state, the content of the first FastTab should be fully visible without scrolling.
--   **FastTabs** guidelines have been consolidated into the Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md) document.
+-   **FastTabs** guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 -   **Page title area**:
     -   The following format should be used: **&lt;ID&gt; : &lt;Description&gt;**
     -   A link to the Details page should be provided on the Main Menu after the List page has been merged into the Details page.
@@ -175,7 +167,7 @@ The verification checklist shows the steps for manually verifying that the form 
     -   Focus should be in the Quick Filter when the list page is opened.
     -   **Grid**:
         -   The **ID** field should be the first column, followed by the master entity **ID** and **Name** fields.
-        -   Additional grid guidelines have been consolidated into the Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md) document, in the Grid guidelines section.
+        -   Additional grid guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document, in the Grid guidelines section.
     -   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md) document.
 
 ## Example

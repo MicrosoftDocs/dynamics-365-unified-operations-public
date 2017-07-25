@@ -5,7 +5,7 @@ title: Sales and marketing
 description: You can use Sales and marketing to obtain, store, and use various types of data in the sales flow. This data includes the original sales initiative, future follow-up action, and additional sales.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 51
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: kfend
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 92303
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
@@ -48,7 +48,7 @@ In sales and marketing, the initial interactions that you have with potential cu
 
 ### Campaigns
 
-A campaign targets the contacts for prospects, leads, opportunities, and customers that have been selected to participate in the campaign. In Microsoft Dynamics 365 for Operations, you can create several types of campaigns, such as telemarketing, mailing, and email campaigns, to maximize your customer potential. As your campaign progresses and you receive positive responses, you can begin the sales process with those recipients who have responded positively to the campaign.
+A campaign targets the contacts for prospects, leads, opportunities, and customers that have been selected to participate in the campaign. In Microsoft Dynamics 365 for Finance and Operations, you can create several types of campaigns, such as telemarketing, mailing, and email campaigns, to maximize your customer potential. As your campaign progresses and you receive positive responses, you can begin the sales process with those recipients who have responded positively to the campaign.
 
 ## Sales
 You use the sales functionality to create quotations, up-sell and cross-sell to new and existing customers, create sales orders, and create sales invoices for customers. The following process flow shows the business process for sales. [![Business process for sales](./media/sales01.jpg)](./media/sales01.jpg)

@@ -5,7 +5,7 @@ title: Update Visual Studio development tools
 description: This topic explains how to update the development tools.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: robinr
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 33571
 ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
@@ -44,13 +44,13 @@ In order to install a new version of the development tools, you'll need to unins
 
 ### Verify your current version of the Visual Studio extension
 
-1.  Open the Visual Studio **Help &gt; About Microsoft Visual Studio** dialog and find **Dynamics 365 for Operations Developer Tools**.
+1.  Open the Visual Studio **Help &gt; About Microsoft Visual Studio** dialog and find **Finance and Operations Developer Tools**.
 2.  Select it and click **OK**.
 
 ### Uninstall the extension
 
 1.  Open the Visual Studio **Tools &gt; Extensions and Updates** dialog.
-2.  Select **Dynamics 365 for Operations Visual Studio Tools** and click **Uninstall**.
+2.  Select **Finance and Operations Visual Studio Tools** and click **Uninstall**.
 3.  When the extension is uninstalled, exit Visual Studio.
 
 ## Install a new version of the extension

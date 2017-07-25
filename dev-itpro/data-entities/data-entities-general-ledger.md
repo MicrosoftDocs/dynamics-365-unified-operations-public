@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data entities - General ledger
-description: This article provides a list of the data entities that are available for the General ledger functionality in Microsoft Dynamics 365 for Operations.
+description: This article provides a list of the data entities that are available for General ledger.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 51
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: kfend
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 95893
 ms.assetid: 882b1a83-4773-49a0-8dbb-3ac3380d344c
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for the General ledger functionality in Microsoft Dynamics 365 for Operations.
+This article provides a list of the data entities that are available for General ledger.
 
 Available data entities
 -----------------------
@@ -93,7 +93,7 @@ Available data entities
 
 | Suggested sequence | Entity name          | Area           | Entity type | Dependency | Comments                                                                  |
 |--------------------|----------------------|----------------|-------------|------------|---------------------------------------------------------------------------|
-| 28                 | Journal names        | General ledger | Setup       | None       | Define journals to be used across Microsoft Dynamics 365 for Operations.  |
+| 28                 | Journal names        | General ledger | Setup       | None       | Define journals to be used.  |
 | 29                 | Default descriptions | General ledger | Setup       | None       | Define default descriptions for automatic postings to the general ledger. |
 | 30                 | Financial reasons    | General ledger | Setup       | None       | Define reason codes.                                                      |
 | 31                 | Journal descriptions | General ledger | Setup       | None       | Define descriptions that you can select on journal lines.                 |

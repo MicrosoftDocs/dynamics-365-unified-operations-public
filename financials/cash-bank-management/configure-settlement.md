@@ -5,7 +5,7 @@ title: Configure settlement
 description: How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This article describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This article describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
 
-The following parameters affect how settlements are processed in Microsoft Dynamics 365 for Operations. Settlement is the process of settling an invoice against a payment or credit note. These parameters are located in the **Settlement** area of the **Accounts receivable parameters** and **Accounts payable parameters** pages.
+The following parameters affect how settlements are processed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Settlement is the process of settling an invoice against a payment or credit note. These parameters are located in the **Settlement** area of the **Accounts receivable parameters** and **Accounts payable parameters** pages.
 
 -   **Automatic settlement** – Set this option to **Yes** if a transaction should be settled automatically against other open transactions when it is posted. If this option is set to **No**, users can manually settle transactions when they enter payments, or later, by using the **Settle transactions** page.
 -   **Cash discount administration** – Specify how a [cash discount is handled when an invoice is overpaid](cash-discount-handling-overpayments.md). For an overpayment, the cash discount can be reduced, it can be treated as a difference, or it can remain on account for the vendor or customer.

@@ -5,7 +5,7 @@ title: Filters and Toolbar subpatterns
 description: This article provides information about the Filters and Toolbar subpatterns. These workspace-specific subpatterns have been developed to show filters and/or actions inside panorama sections that host lists and charts.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 29191
 ms.assetid: 8e32ba2f-6cc1-4bfd-9c79-42a8392fa812
@@ -63,35 +63,32 @@ Two subpatterns are described in this article:
 
 [![filterToolbarStackedWireframe](./media/filtertoolbarstackedwireframe.png)](./media/filtertoolbarstackedwireframe.png)
 
-## Pattern changes for Dynamics 365 for Operations
+## Pattern changes for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 These patterns didn't exist for Microsoft Dynamics AX 2012.
 
 ## Model
 ### Filters and Toolbar - Inline: High-level structure
 
-Group (ArrangeMethod=HorizontalLeft)
+- Group (ArrangeMethod=HorizontalLeft)
 
-*FilterGroup (Group) \[Optional\]*
+    - *FilterGroup (Group) \[Optional\]*
 
-*            QuickFilter (QuickFilter) \[Optional\]*
+        - *QuickFilter (QuickFilter) \[Optional\]*
+        - *FilterFIelds ($Field) \[0..N\]*
 
-*            FilterFIelds ($Field) \[0..N\]*
-
-*Toolbar (ActionPane) \[Optional\]*
+    - *Toolbar (ActionPane) \[Optional\]*
 
 ### Filters and Toolbar - Stacked: High-level structure
 
-Group (ArrangeMethod=Vertical)
+- Group (ArrangeMethod=Vertical)
 
-*FilterGroup (Group) \[Optional\]*
+    - *FilterGroup (Group) \[Optional\]*
 
-*            QuickFilter (QuickFilter) \[Optional\]*
+        - *QuickFilter (QuickFilter) \[Optional\]*
+        - *FilterField1 ($Field) \[Optional\]*
+        - *FilterField2 ($Field) \[Optional\]*
 
-*            FilterField1 ($Field) \[Optional\]*
-
-*            FilterField2 ($Field) \[Optional\]*
-
-*Toolbar (ActionPane) \[Optional\]*
+    - *Toolbar (ActionPane) \[Optional\]*
 
 ### Core components
 
@@ -136,11 +133,9 @@ This section will have answers to frequently asked questions that are related to
 
 ### Open issues
 
-**Why does the Inline variant allow for an arbitrary number of filter fields, but the Stacked variant allows a maximum of three (a QuickFilter and two custom filters)? ** Two factors contribute to this discrepancy:
+**Why does the Inline variant allow for an arbitrary number of filter fields, but the Stacked variant allows a maximum of three (a QuickFilter and two custom filters)?**
+
+Two factors contribute to this discrepancy:
 
 -   A UX guideline specifies a maximum of two filters in these sections (and one of those filters could be a QuickFilter). Therefore, the Stacked variant more closely complies with the guideline.
 -   The number of fields in the Stacked variant is limited for aesthetic reasons. The filter fields in this variant are intended to take up the full width of the list/chart that appears below them, and their width is therefore **SizeToAvailable**. When this variant is used above narrow lists, as it's intended to be used, that setting can cause very narrow filter fields when more than two filter fields are used. The Inline variant is intended to be used above wider charts/lists. Therefore, the original pattern definition allowed for an arbitrary number of fields. Nevertheless, we do plan to address this discrepancy in the number of allowed filter fields between the two variations in the future.
-
-
-
-

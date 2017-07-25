@@ -5,7 +5,7 @@ title: Configure an approval process in a workflow
 description: Use the following procedure to configure the properties of the approval process.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 195643
 ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
@@ -122,10 +122,10 @@ You can send notifications to people when a document has been approved, rejected
     </tr>
     <tr class="odd">
     <td><strong>User</strong></td>
-    <td>Specific Microsoft Dynamics 365 for Operations users</td>
+    <td>Specific Microsoft Dynamics 365 for Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong>: list includes all Microsoft Dynamics 365 for Operations users. Select the users to send notifications to, and then move these users to the <strong>Selected users</strong>: list.</li>
+    <li>The <strong>Available users</strong>: list includes all Microsoft Dynamics 365 for Finance and Operations users. Select the users to send notifications to, and then move these users to the <strong>Selected users</strong>: list.</li>
     </ol></td>
     </tr>
     </tbody>

@@ -5,7 +5,7 @@ title: Debug X++ against a copy of a production database
 description: This topic explains how to configure X++ debugging so that you can investigate issues in the production environment. For this procedure, you make a copy of the production database and then configure a developer environment to connect to the copied database.
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 199063
 ms.assetid: 3c0551f3-6c96-4518-8acd-82d4638f9323
@@ -66,7 +66,7 @@ When an issue occurs in the production environment, the system administrator can
 3.  In the dialog box, click **Find**. All the builds from the build server are listed.
 4.  Select the build that is currently deployed to the production environment, and then select to run a full build. When the database is copied, only the system administrator will be able to access the sandbox database. The system administrator must complete the following tasks:
     -   Remove any data that you don't want in the sandbox database, such as employee salaries.
-    -   Enable or add the developer as a user in Microsoft Dynamics 365 for Operations.
+    -   Enable or add the developer as a user.
     -   Create a new SQL sign-in for the developer to use. This step lets the system administrator maintain the security of the sandbox environment. The developer will only have access to one database for a time. The following code can be used to create the new SQL sign-in.
 
             CREATE USER devtempuser WITH PASSWORD = ''

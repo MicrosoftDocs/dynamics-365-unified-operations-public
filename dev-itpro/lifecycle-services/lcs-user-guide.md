@@ -5,10 +5,10 @@ title: Dynamics Lifecycle Services user guide
 description: This topic provides information about the tools that are available in Lifecycle Services (LCS) and when to use them as you move through the phases of your work in LCS.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 51
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: kfend
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 6034
 ms.assetid: 3bebecd6-a72e-48b2-9eec-8c19eafe5dad
@@ -35,9 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-
-
-Lifecycle Services (LCS) provides regularly updated services. The goal of LCS is to deliver the right information, at the right time, to the right people, and to help ensure repeatable, predictable success with each roll-out of an implementation, update, or upgrade. LCS is available to customers and partners as part of their support plans. If you're a Microsoft Dynamics AX 2012 customer, you can sign in by using your CustomerSource or PartnerSource credentials. If you're a customer of the newest version of Dynamics 365 for Operations, you can sign in by using your Microsoft Azure Active Directory (Azure AD) credentials. [Go to LCS](https://lcs.dynamics.com/Logon/Index).
+Lifecycle Services (LCS) provides regularly updated services. The goal of LCS is to deliver the right information, at the right time, to the right people, and to help ensure repeatable, predictable success with each roll-out of an implementation, update, or upgrade. LCS is available to customers and partners as part of their support plans. If you're a Microsoft Dynamics AX 2012 customer, you can sign in by using your CustomerSource or PartnerSource credentials. If you're a customer of the newest version of Finance and Operations, you can sign in by using your Microsoft Azure Active Directory (Azure AD) credentials. [Go to LCS](https://lcs.dynamics.com/Logon/Index).
 
 ## Tools that are provided in LCS
 The following table lists the tools that are provided in LCS and describes the phases that each tool applies to.
@@ -56,7 +54,7 @@ The following table lists the tools that are provided in LCS and describes the p
 | [RFP responses](ax-2012/rfp-responses-lcs.md)                            | The RFP responses page helps partners respond to requests for proposals (RFPs).                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | [System diagnostics](ax-2012/system-diagnostics-lcs.md)                       | System diagnostics helps administrators monitor Microsoft Dynamics environments.                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | [Updates](ax-2012/update-2012-r3-lcs.md)                                  | The Updates page hosts the details about updates that are available for an environment. It also provides access to groups of updates that can be used for slipstream installations.                                                                                                                                                                                                                                                                                                                               |
-| [Upgrade analysis](ax-2012/upgrade-analysis-lcs.md)                         | Upgrade analysis helps you plan your upgrade to the latest version of Microsoft Dynamics 365 for Operations by analyzing code artifacts from Microsoft Dynamics AX 4.0, Dynamics AX 2009, or Dynamics AX 2012.                                                                                                                                                                                                                                                                                                    |
+| [Upgrade analysis](ax-2012/upgrade-analysis-lcs.md)                         | Upgrade analysis helps you plan your upgrade to the latest version of Microsoft Dynamics 365 for Finance and Operations by analyzing code artifacts from Microsoft Dynamics AX 4.0, Dynamics AX 2009, or Dynamics AX 2012.                                                                                                                                                                                                                                                                                                    |
 | [Usage profiler](ax-2012/usage-profiler-lcs.md)                           | Usage profiler is a data-gathering tool that helps you describe your projected or current usage of an. The usage profile that is generated can be used for various purposes, such as hardware sizing and support.                                                                                                                                                                                                                                                                                                 |
 | [Downloadable tools](ax-2012/lcs-downloadable-tools-formerly-informationsource.md)                       | The Downloadable tools page provides a set of tools that were previously hosted on Microsoft Dynamics InformationSource.                                                                                                                                                                                                                                                                                                                                                                                          |
 

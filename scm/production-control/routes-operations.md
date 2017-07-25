@@ -5,7 +5,7 @@ title: Routes and operations
 description: This topic provides information about routes and operations. A route defines the process for producing a product or product variant. It describes each step (operation) in the production process and the order that these steps must be performed in. For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, Ro
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 121
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 268124
 ms.assetid: f78d5836-3e71-42b7-a5d1-41f19228d9d2
@@ -40,7 +40,7 @@ This topic provides information about routes and operations. A route defines the
 Overview
 --------
 
-A route describes the order of operations that is required in order to produce a product or product variant. For each operation, the route also defines the operations resources that are required, the time that is required in order to set up and perform the operation, and how the cost should be calculated. You can use the same route to produce multiple products, or you can define a unique route for each product or product variant. You can even have multiple routes for the same product. In this case, the route that is used varies, depending on factors such as the quantity that must be produced. The definition of a route in Microsoft Dynamics 365 for Operations consists of four separate elements that, together, describe the production process:
+A route describes the order of operations that is required in order to produce a product or product variant. For each operation, the route also defines the operations resources that are required, the time that is required in order to set up and perform the operation, and how the cost should be calculated. You can use the same route to produce multiple products, or you can define a unique route for each product or product variant. You can even have multiple routes for the same product. In this case, the route that is used varies, depending on factors such as the quantity that must be produced. The definition of a route in Microsoft Dynamics 365 for Finance and Operations consists of four separate elements that, together, describe the production process:
 
 -   **Route** – A route defines the structure of the production process. In other words, it defines the order of operations.
 -   **Operation** – An operation identifies a named step in a route, such as **Assembly**. The same operation can occur in multiple routes and can have different operation numbers.
@@ -48,7 +48,7 @@ A route describes the order of operations that is required in order to produce a
 -   **Route version** – A route version defines the route that is used to produce a product or product variant. Route versions enable routes to be reused across products or changed over time. They also enable different routes to be used to produce the same product. In this case, the route that is used depends on factors such as the location or the quantity that must be produced.
 
 ## Routes
-A route describes the order of operations that is used to produce a product or product variant. Each operation is assigned an operation number and a successor operation. The order of operations forms a route network that can be represented by a directed chart that has one or more starting points and a single end point. In Dynamics 365 for Operations, routes are distinguished based on the type of structure. The two types of routes are simple routes and route networks. In the Production control parameters, you can specify whether only simple routes can be used, or whether the more complex route networks can be used.
+A route describes the order of operations that is used to produce a product or product variant. Each operation is assigned an operation number and a successor operation. The order of operations forms a route network that can be represented by a directed chart that has one or more starting points and a single end point. In Finance and Operations, routes are distinguished based on the type of structure. The two types of routes are simple routes and route networks. In the Production control parameters, you can specify whether only simple routes can be used, or whether the more complex route networks can be used.
 
 ### Simple routes
 
@@ -56,7 +56,7 @@ A simple route is sequential, and there is only one starting point for the route
 
 [![Simple route](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-If you enable only simple routes in the Production control parameters, Dynamics 365 for Operations automatically generates the operation numbers (10, 20, 30, and so on) when you define the route.
+If you enable only simple routes in the Production control parameters, Finance and Operations automatically generates the operation numbers (10, 20, 30, and so on) when you define the route.
 
 ### Route networks
 
@@ -88,10 +88,10 @@ A route must be approved before it can be used in the planning or manufacturing 
 
 Each route can be approved or unapproved separately. However, note that, when a route is unapproved, all related route versions are also unapproved. In the Production control parameters, you can specify whether routes can be unapproved, and whether approved routes can be changed.  
 
-If you must keep a log that records who approves each route, you can require electronic signatures for route approval. Users will then have to confirm their identity by using an [electronic signature](/dynamics365/operations/organization-administration/electronic-signature-overview).
+If you must keep a log that records who approves each route, you can require electronic signatures for route approval. Users will then have to confirm their identity by using an [electronic signature](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview).
 
 ## Operations
-An operation is a step in the production process. In Dynamics 365 for Operations, each operation has an ID and a simple description. The following tables shows typical examples of operations from a machine shop.
+An operation is a step in the production process. In Finance and Operations, each operation has an ID and a simple description. The following tables shows typical examples of operations from a machine shop.
 
 | Operation  | Description        |
 |------------|--------------------|
@@ -131,7 +131,7 @@ Operation relations give you lots of flexibility when you define your routes. Ad
 
 ### Modifying product-specific routes
 
-When you open the **Route** page from the **Released product details** page, the route versions that are associated with the selected released product are shown. In this context, for each operation, Dynamics 365 for Operations shows the operational properties from the operation relation that best matches the route version. You will notice that the list of operations includes the **Item code** and **Route code** properties from the operation relation. Therefore, you can determine which operation relation is shown.  
+When you open the **Route** page from the **Released product details** page, the route versions that are associated with the selected released product are shown. In this context, for each operation, Finance and Operations shows the operational properties from the operation relation that best matches the route version. You will notice that the list of operations includes the **Item code** and **Route code** properties from the operation relation. Therefore, you can determine which operation relation is shown.  
 
 On the **Route** page, you can modify the operational properties of the operation, such as the run time or the cost categories. Your changes are stored on the operation relation that is specific to the route and released product that are referenced in the current route version. If the operation relation that is shown isn't specific to the route and the released product, before your changes are stored, the system creates a copy of the operation relation. This copy *is* specific to the route and released product. Therefore, your changes won't affect other routes or released products. To verify which operation relation is being modified on the **Route** page, look at the **Item code** and **Route code** fields.  
 
@@ -153,9 +153,9 @@ If your business uses standard operations, and if the operational parameters are
 
 ### Applying operation relations
 
-In some cases, Dynamics 365 for Operations must find the operational properties for an operation. For example, when a purchase order is created, the operational properties of each operation must be copied from the operation relations to the production route. In these situations, Dynamics 365 for Operations searches the relevant operation relations from the most specific combination to the least specific combination.  
+In some cases, Finance and Operations must find the operational properties for an operation. For example, when a purchase order is created, the operational properties of each operation must be copied from the operation relations to the production route. In these situations, Finance and Operations searches the relevant operation relations from the most specific combination to the least specific combination.  
 
-When Dynamics 365 for Operations searches for the most relevant operation relation for a released product, an operation relation that matches the item ID of the released product is preferred over an operation relation that matches the item group ID. In turn, an operation relation that matches the item group ID is preferred over the default operation relation. The search is done in the following order:
+When Finance and Operations searches for the most relevant operation relation for a released product, an operation relation that matches the item ID of the released product is preferred over an operation relation that matches the item group ID. In turn, an operation relation that matches the item group ID is preferred over the default operation relation. The search is done in the following order:
 
 1.  **Item code**=**Table** and **Item relation**=&lt;item ID&gt;
 2.  **Item code**=**Group** and **Item relation**=&lt;item group ID&gt;
@@ -191,7 +191,7 @@ When you activate a route version, you designate it as the default route version
 
 ### Electronic signatures
 
-If you must keep a log that records who approves and activates each route version, you can require electronic signatures for these tasks. Users who approve and activate route versions will then have to confirm their identity by using an [electronic signature](/dynamics365/operations/organization-administration/electronic-signature-overview).
+If you must keep a log that records who approves and activates each route version, you can require electronic signatures for these tasks. Users who approve and activate route versions will then have to confirm their identity by using an [electronic signature](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview).
 
 ### Product change that uses case management
 
@@ -202,7 +202,7 @@ Depending on your business requirements, you might be able to reduce the effort 
 
 ### Making routes independent of resources
 
-In many systems, the operations resource or resource group that should perform an operation must be specified in the route. However, in Dynamics 365 for Operations, you can define a set of requirements that an operations resource must meet to be applicable for the operation. Therefore, the specific operations resource or resource group that should be used doesn't have to be determined until the operation is actually scheduled. This functionality is especially useful when you have many workers or machines that can perform the same operation.  
+In many systems, the operations resource or resource group that should perform an operation must be specified in the route. However, in Finance and Operations, you can define a set of requirements that an operations resource must meet to be applicable for the operation. Therefore, the specific operations resource or resource group that should be used doesn't have to be determined until the operation is actually scheduled. This functionality is especially useful when you have many workers or machines that can perform the same operation.  
 
 For example, you specify that an operation requires an operations resource of the **Machine** type that has a **Stamping** capability of 20 tons. The scheduling engine will then resolve these requirements to a specific operations resource or resource group when the operation is scheduled. Because you can just specify these requirements instead of binding the operation to a specific machine, you have much more flexibility. Additionally, maintenance is easier when resources are moved or new resources are added.  
 
@@ -243,7 +243,7 @@ See also
 
 [Resource capabilities](resource-capabilities.md)
 
-[Electronic signature overview](/dynamics365/operations/organization-administration/electronic-signature-overview)
+[Electronic signature overview](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview)
 
 
 

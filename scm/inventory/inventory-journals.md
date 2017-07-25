@@ -5,7 +5,7 @@ title: Inventory journals
 description: This article describes how you can use inventory journals to post various types of physical inventory transactions. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,13 +17,15 @@ ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, Inv
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -34,10 +36,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+[!include[retail name](../includes/retail-name.md)]
+
 
 This article describes how you can use inventory journals to post various types of physical inventory transactions. 
 
-The inventory journals in Microsoft Dynamics 365 for Operations are used to post physical inventory transactions of various types, such as the posting of issues and receipts, inventory movements, the creation of bills of materials (BOMs), and the reconciliation of physical inventory. All these inventory journals are used in a similar way, but they are divided into different types.
+The inventory journals in Microsoft Dynamics 365 for Finance and Operations are used to post physical inventory transactions of various types, such as the posting of issues and receipts, inventory movements, the creation of bills of materials (BOMs), and the reconciliation of physical inventory. All these inventory journals are used in a similar way, but they are divided into different types.
 
 ## Types of inventory journals
 The following types of inventory journals are available:
@@ -72,7 +76,7 @@ When you report a BOM as finished, you can create a BOM journal. By using a BOM 
 
 ### Item arrival
 
-You can use the item arrival journal to register the receipt of items (for example, from purchase orders). An item arrival journal can be created as part of arrival management from the **Arrival overview** page, or you can manually create a journal entry from the **Item arrival** page. If you enable the item arrival journal name to check for picking locations, Dynamics 365 for Operations looks for a location for received items and, if there is room, generates location destinations for the incoming items.
+You can use the item arrival journal to register the receipt of items (for example, from purchase orders). An item arrival journal can be created as part of arrival management from the **Arrival overview** page, or you can manually create a journal entry from the **Item arrival** page. If you enable the item arrival journal name to check for picking locations, Finance and Operations looks for a location for received items and, if there is room, generates location destinations for the incoming items.
 
 ### Production input
 
@@ -80,7 +84,7 @@ Production input journals work like the item arrival journals but are used for p
 
 ### Counting
 
-Counting journals let you correct the current on-hand inventory that is registered for items or groups of items, and then post the actual physical count, so that you can make the adjustments that are required in order to reconcile the differences. You can associate counting policies with counting groups to help group items that have various characteristics, so that those items can be included in a counting journal. For example, you can set up counting groups to count items that have a specific frequency, or to count items when stock falls to a particular level. For information about how to define counting groups, see [Define inventory counting processes (Task guide)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
+Counting journals let you correct the current on-hand inventory that is registered for items or groups of items, and then post the actual physical count, so that you can make the adjustments that are required in order to reconcile the differences. You can associate counting policies with counting groups to help group items that have various characteristics, so that those items can be included in a counting journal. For example, you can set up counting groups to count items that have a specific frequency, or to count items when stock falls to a particular level. For information about how to define counting groups, see [Define inventory counting processes (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/define-inventory-counting-processes).
 
 ### Tag counting
 

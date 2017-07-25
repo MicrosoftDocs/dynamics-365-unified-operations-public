@@ -5,7 +5,7 @@ title: List Page form pattern
 description: This article provides information about the List Page form pattern. A list page presents a set of data on a UI that is optimized for browsing records, so that you can find and work with a specific record. 
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer 
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 14241
 ms.assetid: c70933b1-3d6a-4e26-b9ef-d9fb1e1b29a3
@@ -40,7 +40,7 @@ This article provides information about the List Page form pattern. A list page 
 Usage
 -----
 
-A list page presents a set of data on a user interface that is optimized so that you can browse records, find the right record, and then take an action upon that record. The list page lets the user search, filter, and sort the data. FactBoxes on the right side of the grid show related data for the active record. Actions that are relevant to the record are located on the ActionPane at the top of the page. In the current version of Microsoft Dynamics 365 for Operations, use of this pattern is discouraged when there is a 1:1 correspondence between the List Page and Details page. Current guidance is to use this pattern only in other situations, such as when list pages have no backing details pages or have multiple backing details page (for example, when project quotations and sales quotations are shown together in the same List Page).
+A list page presents a set of data on a user interface that is optimized so that you can browse records, find the right record, and then take an action upon that record. The list page lets the user search, filter, and sort the data. FactBoxes on the right side of the grid show related data for the active record. Actions that are relevant to the record are located on the ActionPane at the top of the page. The use of this pattern is now discouraged when there is a 1:1 correspondence between the List Page and Details page. Current guidance is to use this pattern only in other situations, such as when list pages have no backing details pages or have multiple backing details page (for example, when project quotations and sales quotations are shown together in the same List Page).
 
 ## Wireframe
 [![Wireframe](./media/listpage1-1024x576.png)](./media/listpage1.png)
@@ -57,17 +57,15 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### High-level structure
 
-Design
+- Design
 
-ActionPane (ActionPane)
+    - ActionPane (ActionPane)
+    - Custom Filter (Group)
 
-Custom Filter (Group)
+        - Quick Filter (Quick Filter)
+        - *OtherFilters ($Field) \[0..N\]*
 
-Quick Filter (Quick Filter)
-
-*OtherFilters ($Field) \[0..N\]*
-
-Grid (Grid)
+    - Grid (Grid)
 
 ### Core components
 
@@ -94,7 +92,7 @@ Grid (Grid)
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md)document.
+-   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 
 **List Page guidelines:**
 
@@ -111,8 +109,8 @@ The verification checklist shows the steps for manually verifying that the form
 -   **Grid**:
     -   For transactional entities, the **ID** field should be the first column, followed by the master entity **ID** and **Name** fields.
     -   For master entities, the **Name** field should be the first column, followed by the **ID** field.
--   **ActionPane** guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md)document in the ActionPane guidelines section.
--   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md)document.
+-   **ActionPane** guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md) document in the ActionPane guidelines section.
+-   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md) document.
 
 ## Examples
 Form: **SalesTableListPage** [![List Page example](./media/listpage2-1024x510.png)](./media/listpage2.png)
@@ -122,7 +120,10 @@ Form: **SalesTableListPage** [![List Page example](./media/listpage2-1024x510.pn
 
 This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
--   **What do I do with the Preview pane when I migrate the form?** You can do one of the following:
+-   **What do I do with the Preview pane when I migrate the form?**
+
+    You can do one of the following:
+
     -   Remove the **Preview** pane altogether if it no longer makes sense.
     -   Remove the large header, and leave the **Preview** pane as is.
     -   Split the **Preview** pane into multiple logical FactBoxes if the current one is too tall.
@@ -139,12 +140,9 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [MSDN AX2012 List Page User Experience Guidelines](http://msdn.microsoft.com/EN-US/library/gg853328.aspx)
--   [MSDN AX2012 List Page Forms](http://msdn.microsoft.com/en-us/library/cc635077.aspx)
+-   [MSDN AX 2012 List Page User Experience Guidelines](http://msdn.microsoft.com/EN-US/library/gg853328.aspx)
+-   [MSDN AX 2012 List Page Forms](http://msdn.microsoft.com/en-us/library/cc635077.aspx)
 
 #### AX 2012 example
 
 [![AX 2012 example](./media/listpage3-1024x671.png)](./media/listpage3.png)
-
-
-

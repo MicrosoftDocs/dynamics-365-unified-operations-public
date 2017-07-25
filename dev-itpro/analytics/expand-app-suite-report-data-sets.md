@@ -5,7 +5,7 @@ title: Expand Application Suite report data sets
 description: This topic shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. 
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 2051
-ms.search.scope: Operations, Platform
+ms.reviewer: robinr
+ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 266594
 ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 3
 
 This topic shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. 
 
-Microsoft Dynamics 365 for Operations offers an expanded set of tools to support custom solutions. This topic focuses on the expansion of an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. You use custom delegate handlers and table extensions to include additional field data and/or calculations. You don't have to over-layer the Application Suite. You then create custom designs that replace the standard application solutions and present the data to users. The following illustration shows a typical application customization, as described in this topic.
+Microsoft Dynamics 365 for Finance and Operations offers an expanded set of tools to support custom solutions. This topic focuses on the expansion of an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. You use custom delegate handlers and table extensions to include additional field data and/or calculations. You don't have to over-layer the Application Suite. You then create custom designs that replace the standard application solutions and present the data to users. The following illustration shows a typical application customization, as described in this topic.
 
 [![extendingdatasets](./media/extendingdatasets.png)](./media/extendingdatasets.png)  
 

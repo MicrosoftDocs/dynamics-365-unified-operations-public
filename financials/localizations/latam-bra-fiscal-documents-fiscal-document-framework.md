@@ -5,7 +5,7 @@ title: Fiscal documents and fiscal document framework for Brazil
 description: This topic describes fiscal documents for Brazil.
 author: sndray
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: FiscalDocument_BR, FiscalDocumentAmounts_BR, FiscalDocumentCharg
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 269094
 ms.search.region: Brazil

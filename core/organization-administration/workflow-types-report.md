@@ -2,10 +2,10 @@
 # required metadata
 
 title: Workflow types report
-description: This topic points you to a report that lists the workflow types that are available in Dynamics 365 for Operations.
+description: This topic points you to a report that lists the workflow types that are available in Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
-ms.search.scope: Operations, Core, Platform, AX Platform
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 1
 [!include[banner](../includes/banner.md)]
 
 
-This topic points you to a report that lists the workflow types that are available in Dynamics 365 for Operations.
+This topic points you to a report that lists the workflow types that are available in Finance and Operations.
 
 To create a workflow, you must first select the *type* of workflow that you want to create. For example, you may want to create a **Purchase requisition line review** workflow to define who must approve line items on purchase requisitions. For more information about creating a workflow, see [Create a workflow](create-workflow.md).
 

@@ -5,7 +5,7 @@ title: Wizard form pattern
 description: This article provides information about the Wizard form pattern. A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer 
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 14671
 ms.assetid: 564b88d7-85f5-488a-bbbe-19eff7194321
@@ -54,15 +54,14 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### High-level structure
 
-Design (Style=Wizard; Caption=&lt;wizard title&gt;)
+- Design (Style=Wizard; Caption=&lt;wizard title&gt;)
 
-WizardContent (Tab)
+    - WizardContent (Tab)
 
-WizardContentPage (TabPage) *\[repeats 1..N times, can be named anything; Caption set to page title\]*
+        - WizardContentPage (TabPage) *\[repeats 1..N times, can be named anything; Caption set to page title\]*
 
-MainInstruction (StaticText)
-
-Body (Group)
+            - MainInstruction (StaticText)
+            - Body (Group)
 
 ### Core components
 
@@ -81,9 +80,11 @@ Body (Group)
 -   [List Panel](list-panel-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
+**Standard form guidelines:**
+
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 **Wizard** **guidelines:**
 
@@ -116,12 +117,9 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [MSDN Wizards in Microsoft Dynamics AX \[AX2012\]](http://msdn.microsoft.com/en-us/library/aa622644.aspx)
--   [MSDN Guidelines for Wizard Development \[AX2012\]](http://msdn.microsoft.com/EN-US/library/aa853845.aspx)
+-   [MSDN Wizards in Microsoft Dynamics AX \[AX 2012\]](http://msdn.microsoft.com/en-us/library/aa622644.aspx)
+-   [MSDN Guidelines for Wizard Development \[AX 2012\]](http://msdn.microsoft.com/EN-US/library/aa853845.aspx)
 
 #### AX 2012 example
 
 [![AX 2012 example](./media/wizard3.png)](./media/wizard3.png)
-
-
-

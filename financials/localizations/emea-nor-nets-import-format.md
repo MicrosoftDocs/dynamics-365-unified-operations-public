@@ -5,7 +5,7 @@ title: Nets import format
 description: This topic provides information about importing payment information in the Nets format.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: BankCustPaymIdTable, CustEInvoiceIntegrationeInvoice, CustEInvoi
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 262704
 ms.search.region: Norway
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic provides information about importing payment information in the Nets format.
 
-In Microsoft Dynamics 365 for Operations, you can import enrollment messages, AvtaleGiro and eInvoice, together with payment messages, optical character recognition (OCR), AvtaleGiro, and eInvoice, in the Nets file format.
+In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you can import enrollment messages, AvtaleGiro and eInvoice, together with payment messages, optical character recognition (OCR), AvtaleGiro, and eInvoice, in the Nets file format.
 
 ## Import a Nets bank file
 To import the file provided by Nets bank, complete the following steps.

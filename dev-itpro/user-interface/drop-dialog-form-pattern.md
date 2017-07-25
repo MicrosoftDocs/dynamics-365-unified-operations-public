@@ -5,7 +5,7 @@ title: Drop Dialog form pattern
 description: This article provides information about the Drop Dialog form pattern. This pattern is used to initiate actions when the number of fields is seven or fewer. 
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 16041
 ms.assetid: 94ffa218-de7d-4d13-9a8a-461cad0970b3
@@ -62,23 +62,20 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### Drop dialog (basic) – High-level structure
 
-Design
+- Design
 
-*SecondaryInstruction (StaticText) \[optional\]*
+    - *SecondaryInstruction (StaticText) \[optional\]*
+    - DialogContent (Group)
+    - DialogCommitContainer (ButtonGroup)
 
-DialogContent (Group)
-
-DialogCommitContainer (ButtonGroup)
-
-OKButton ($Button)
+        - OKButton ($Button)
 
 ### Drop dialog (read only) – High-level structure
 
-Design
+- Design
 
-*SecondaryInstruction (StaticText) \[optional\]*
-
-DialogContent (Group)
+    - *SecondaryInstruction (StaticText) \[optional\]*
+    - DialogContent (Group)
 
 ### Core components
 
@@ -161,6 +158,3 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![DropDialog(4)](./media/dropdialog4.png)](./media/dropdialog4.png)
-
-
-

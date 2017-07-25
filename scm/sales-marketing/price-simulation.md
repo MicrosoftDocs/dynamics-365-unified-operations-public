@@ -5,7 +5,7 @@ title: Price simulation
 description: This article provides information about price simulation for quotations. Price simulation helps you to evaluate the effect of deductions on the future sales price during the quotation process, before you commit to a specific price.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.search.form: SalesQuotationPriceSimulation
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
@@ -57,7 +57,7 @@ To guarantee that discounts and prices are calculated correctly, be careful when
 
 ### Types of discounts in trade agreements
 
-Trade agreements in Microsoft Dynamics 365 for Operations can have four types of price discounts. These discounts can be set up for different items, customers, or price groups, and they can be limited by date. To avoid miscalculations, you must consider trade agreements when you run price simulations. Here are the four types of discounts in trade agreements:
+Trade agreements in Microsoft Dynamics 365 for Finance and Operations can have four types of price discounts. These discounts can be set up for different items, customers, or price groups, and they can be limited by date. To avoid miscalculations, you must consider trade agreements when you run price simulations. Here are the four types of discounts in trade agreements:
 
 -   **Sales price** – Separate sales prices can be specified for items. When quotation lines are created, the program searches for the correct sales price for an item and transfers it to the quotation lines. Therefore, a trade agreement that has this kind of discount doesn't affect the price simulation. The sales price that is used in the quotation line reflects the trade agreement.
 -   **Line discount** – Special discounts are specified for items, depending on the quantity that is ordered. Line amounts are typically reduced by the line discount before a price simulation is run. Therefore, a trade agreement that has this kind of discount affects the price simulation.

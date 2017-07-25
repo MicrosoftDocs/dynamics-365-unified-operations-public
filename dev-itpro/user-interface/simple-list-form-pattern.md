@@ -5,7 +5,7 @@ title: Simple List form pattern
 description: This article provides information about the Simple List form pattern. This pattern is used to maintain data for simple entities.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 16261
 ms.assetid: 47f02822-51d5-4db2-8d99-2706548301e5
@@ -60,19 +60,16 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### High-level structure
 
-Design
+- Design
 
-ActionPane (ActionPane)
+    - ActionPane (ActionPane)
+    - Custom Filter (Group)
 
-Custom Filter (Group)
+        - Quick Filter (Quick Filter)
+        - *OtherFilters ($Field) \[0..N\]*
 
-Quick Filter (Quick Filter)
-
-*OtherFilters ($Field) \[0..N\]*
-
-TabularGrid (Grid)
-
-*Footer (Group) \[Optional\]*
+    - TabularGrid (Grid)
+    - *Footer (Group) \[Optional\]*
 
 ### Core components
 
@@ -91,14 +88,19 @@ TabularGrid (Grid)
 -   [Custom Filter Group](custom-filter-group-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
+
+**Standard form guidelines:**
 
 -   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 **Simple list guidelines:**
 
 -   By default, the Quick Filter should use the name or description column.
--   The list can display up to 15 columns. **Note:** This guideline has been relaxed from AX 2012.
+-   The list can display up to 15 columns.
+
+    **Note:** This guideline has been relaxed from AX 2012.
+
 -   There should not be any duplicate **New** or **Delete** buttons.
 -   The page title should be in a plural form.
 -   When there is no data, the grid should not automatically add a new record.
@@ -122,6 +124,3 @@ None at this time.
 ### AX 2012 content
 
 [![AX 2012 example](./media/simplelist3.png)](./media/simplelist3.png)
-
-
-

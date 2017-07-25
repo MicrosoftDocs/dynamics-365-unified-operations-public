@@ -2,10 +2,10 @@
 # required metadata
 
 title: Manage subcontracting work in production
-description: This topic explains how subcontracted operations are managed in Microsoft Dynamics 365 for Operations. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
+description: This topic explains how subcontracted operations are managed in Microsoft Dynamics 365 for Finance and Operations. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2094
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic explains how subcontracted operations are managed in Microsoft Dynamics 365 for Operations. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
+This topic explains how subcontracted operations are managed in Microsoft Dynamics 365 for Finance and Operations. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
 
 In [production processes](production-process-overview.md), work can be done by resources that are owned or administered by vendors. Typically, vendor resources are used to level periodic excess demand that surpasses the available capacity of a company's own resources. The vendor might also be able to offer specific [resource capabilities](resource-capabilities.md)or resources at a lower price.  
 
@@ -45,7 +45,7 @@ When subcontracting operations or activities are used, they affect all stages of
 
 For internal resources, a fixed cost rate is typically allocated for a period. By contrast, the cost of subcontracted resources is based on the purchase price of the related service. The service is defined as another product, and is used to drive the procurement and purchase processes for a given subcontracted operation.  
 
-Currently, there is no explicit concept of semi-finished products in Microsoft Dynamics 365 for Operations. For a production order that requires more than one operation in order to transform raw materials into a finished good, the finished good is posted back into inventory only in the last operation. The semi-finished products that the earlier operations produce are accounted in work in progress (WIP), but they aren't posted or tracked in inventory. Although you can split the routes and bills of materials (BOMs) into multiple smaller units, this approach increases the number of products, BOMs, and routes that must be managed.  
+Currently, there is no explicit concept of semi-finished products in Microsoft Dynamics 365 for Finance and Operations. For a production order that requires more than one operation in order to transform raw materials into a finished good, the finished good is posted back into inventory only in the last operation. The semi-finished products that the earlier operations produce are accounted in work in progress (WIP), but they aren't posted or tracked in inventory. Although you can split the routes and bills of materials (BOMs) into multiple smaller units, this approach increases the number of products, BOMs, and routes that must be managed.  
 
 There are two methods for modeling subcontracting work for production operations. These methods differ in the way that the subcontracting process can be modeled, the way that semi-finished products are represented in the process, and the way that cost control is managed.
 
@@ -71,7 +71,7 @@ When this configuration is used, a purchase order is created for the related ser
 A production order can have many operations, and each operation can be allocated to a different vendor. Therefore, an end-to-end production order might trigger multiple purchase orders.
 
 ## Subcontracting of production flow activities
-The [lean manufacturing](lean-manufacturing-overview.md)solution models the subcontracting work as a service that is related to an activity of a [production flow](http://ax.help.dynamics.com/en/wiki/create-a-production-flow-version/) (Task guide topic). Therefore, this type of subcontracting is also referred to as [activity-based subcontracting.](activity-based-subcontracting.md) A special cost group type, **Direct outsourcing**, has been introduced, and the subcontracting services aren't part of the BOM of the finished goods. When you use lean manufacturing, all activities are defined by kanbans that can be related to one or multiple production flow activities. So far, that explanation sounds just like an explanation of production orders. However, whereas production orders must always end with a finished product, you can create kanbans to supply a semi-finished product. You don't have to introduce a new product and BOM level.  
+The [lean manufacturing](lean-manufacturing-overview.md)solution models the subcontracting work as a service that is related to an activity of a [production flow](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-production-flow-version) (Task guide topic). Therefore, this type of subcontracting is also referred to as [activity-based subcontracting.](activity-based-subcontracting.md) A special cost group type, **Direct outsourcing**, has been introduced, and the subcontracting services aren't part of the BOM of the finished goods. When you use lean manufacturing, all activities are defined by kanbans that can be related to one or multiple production flow activities. So far, that explanation sounds just like an explanation of production orders. However, whereas production orders must always end with a finished product, you can create kanbans to supply a semi-finished product. You don't have to introduce a new product and BOM level.  
 
 Because kanban rules can be very dynamic, you can model different variants of supply for the same product on a production flow. When you use lean subcontracting, the material flow and the financial flow are strictly separated. All material flow is represented by kanban activities. The purchase orders for the service products and the receipt postings of those services can be automated, based on the status of kanban jobs in the production flow. Kanban jobs can be started and completed even before the purchase orders are created. The subcontracting documents (purchase order and purchase receipt of the service) can be aggregated by period and service. Therefore, the number of purchase documents and lines can be kept small, even in highly repetitive operations where vendors provide subcontracted services in a single-piece flow.
 

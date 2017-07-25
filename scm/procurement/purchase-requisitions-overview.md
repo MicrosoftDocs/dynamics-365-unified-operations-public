@@ -5,7 +5,7 @@ title: Purchase requisition overview
 description: This article describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetail
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
@@ -44,7 +44,7 @@ After a purchase requisition is approved, it can be used to generate a purchase 
 ## Creating purchase requisitions
 You can create a purchase requisition on the **My purchase requisitions** page, and select the items and services that you require. You can select items from a procurement catalog that your organization has created, or you can request items that aren't found in a catalog by selecting a procurement category and entering the product details.  
 
-Before you can submit a purchase requisition for review, workflows must be configured in Microsoft Dynamics 365 for Operations. You use a workflow to move a purchase requisition through the review process, from an initial status of **Draft** to a final status of **Approved**.
+Before you can submit a purchase requisition for review, workflows must be configured in Microsoft Dynamics 365 for Finance and Operations. You use a workflow to move a purchase requisition through the review process, from an initial status of **Draft** to a final status of **Approved**.
 
 ### Purchase requisition statuses
 
@@ -147,7 +147,7 @@ In the procurement policies, you can control the requisition purposes that are a
 
 ### Requisitions that have a purpose of consumption
 
-A requisition that has a purpose of consumption represents demand for items or services that will be used internally by your organization. The demand that is created by this kind of requisition is always fulfilled by a purchase order. If Microsoft Dynamics 365 for Operations is set up to automatically generate purchase orders, purchase orders are created after the purchase requisition is approved.
+A requisition that has a purpose of consumption represents demand for items or services that will be used internally by your organization. The demand that is created by this kind of requisition is always fulfilled by a purchase order. If Microsoft Dynamics 365 for Finance and Operations is set up to automatically generate purchase orders, purchase orders are created after the purchase requisition is approved.
 
 ### Requisitions that have a purpose of replenishment
 
@@ -200,7 +200,7 @@ To consolidate approved purchase requisition lines, follow these steps:
 See also
 --------
 
-[Create a requisition for consumption (task guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Create a requisition for consumption (Task guide)](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-requisition-consumption)
 
 [Purchase requisition workflow](purchase-requisitions-workflow.md)
 

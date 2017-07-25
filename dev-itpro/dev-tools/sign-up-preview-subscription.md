@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Sign up for a subscription
-description: In this tutorial, you will learn how to subscribe to the preview/partner offer and deploy an environment.
+title: Sign up for a preview subscription
+description: This topics describes how to subscribe to the preview/partner offer and deploy an environment.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 13211
 ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
@@ -30,17 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Sign up for a subscription
+# Sign up for a preview subscription
 
 [!include[banner](../includes/banner.md)]
 
 
-In this tutorial, you will learn how to subscribe to the preview/partner offer and deploy an environment.
-
-Introduction
-------------
-
-In this tutorial, you will learn how create a subscription. This subscription will give you a Microsoft Online test tenant and a Microsoft Dynamics Lifecycle Services project where you can deploy an environment. You will also set up additional users in your Microsoft Online tenant and gain experience with the following service administration capabilities. Here are the skills that you will learn:
+This topic describes how to subscribe to the preview/partner offer and deploy an environment. The subscription you create will give you a Microsoft Online test tenant and a Microsoft Dynamics Lifecycle Services project where you can deploy an environment. You will also set up additional users in your Microsoft Online tenant and gain experience with the following service administration capabilities. Here are the skills that you will learn:
 
 -   Subscribing and creating a new Microsoft Online test tenant
 -   Navigating to Lifecycle Services projects
@@ -50,14 +45,14 @@ In this tutorial, you will learn how create a subscription. This subscription wi
 
 ## Key terms
 -   **Microsoft Online Services tenant** – A tenant is the group of all subscriptions and users for your organization. The tenant is created at the same time as your first subscription in Microsoft Online Services.
--   **Subscription** – A subscription provides you with an online environment. This environment lets you experience Dynamics 365 for Operations in the cloud and also lets you see how customizations that you develop can be deployed to the cloud.
+-   **Subscription** – A subscription provides you with an online, cloud environment and experience. It also lets you see how customizations that you develop can be deployed to the cloud.
 -   **Microsoft Azure Active Directory** – The cloud environment includes Azure Active Directory (AD), which helps you manage users, groups, security roles, and licenses for online applications, similarly to the way that you manage them for on-premise environments.
 -   **Users** – Users of the services that your organization has subscribed to are managed in Azure AD. Any users in your tenant can be added and assigned to security roles.
 -   **Developers and administrators** – Developers and administrators are users who also have access to Lifecycle Services that lets them manage projects and environments. These users are also end users.
 -   **Organizational account** – Users receive Azure AD credentials, which are separate from other desktop or corporate credentials. The Azure AD credentials are used to sign in to Microsoft Office 365 and other Microsoft cloud services. Users sign in by using their organizational account. **Important:** For this release, we ask that you not use any existing credentials that are associated with other online services, such as Office 365 or Microsoft Dynamics CRM Online.
--   **Microsoft account** – Microsoft accounts, which were formerly known as Passport accounts or Windows Live ID accounts, can't currently be used with Dynamics 365 for Operations or other Microsoft Online Services. However, Microsoft accounts are still required for Microsoft Connect and other Microsoft Business Solutions sites, such as CustomerSource, PartnerSource, Lifecycle Services, Information Source, and Microsoft Dynamics Community. You will continue to use your Microsoft account to access these services.
--   **Office 365 admin center** – The subscription management portal that Office 365 provides for administrators. Dynamics 365 for Operations uses Office 365 admin center to provide user and subscription management functions.
--   **Environments** – Dynamics 365 for Operations can deploy as many single virtual machine (VM) instances of itself as you require. We call these instances *environments*.
+-   **Microsoft account** – Microsoft accounts, which were formerly known as Passport accounts or Windows Live ID accounts, can't currently be used with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition or other Microsoft Online Services. However, Microsoft accounts are still required for Microsoft Connect and other Microsoft Business Solutions sites, such as CustomerSource, PartnerSource, Lifecycle Services, Information Source, and Microsoft Dynamics Community. You will continue to use your Microsoft account to access these services.
+-   **Office 365 admin center** – The subscription management portal that Office 365 provides for administrators. The Office 365 admin center is used to provide user and subscription management functions.
+-   **Environments** – You can deploy as many single virtual machine (VM) instances as you require. We call these instances *environments*.
 
 ## Prerequisites
 1.  You've received an email that invites you to participate in the preview.
@@ -67,7 +62,7 @@ In this tutorial, you will learn how create a subscription. This subscription wi
 ## Subscribe
 **Important:** Only one person (tenant administrator) in an organization needs to perform this activity. If you're not the person who is subscribing to this release, wait until your organization has been signed up and you've received your user credentials. Then continue with the procedure.
 
-1.  Microsoft Dynamics 365 for Operations is available only to existing Microsoft Dynamics 365 channel partners and customers who are currently enrolled in the Business Ready Enhancement Plan (BREP) service plan. Existing customers can find details on how to get access to trials [here](https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview), and partners can find the details [here](https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview).
+1.  Finance and Operations is available only to existing Microsoft Dynamics 365 channel partners and customers who are currently enrolled in the Business Ready Enhancement Plan (BREP) service plan. Existing customers can find details on how to get access to trials [here](https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview), and partners can find the details [here](https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview).
 2.  On the **Account setup** page, in the **Country or region** field, select the country. 
 
     [![Country or region field](./media/countryregionfield.png)](./media/countryregionfield.png)

@@ -5,7 +5,7 @@ title: ISV licensing
 description: This article describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
 author: maertenm
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: sericks
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
@@ -188,7 +188,7 @@ After the configuration key is enabled, the button become visible, as shown in t
 ![Button is visible after the configuration key is enabled](./media/isv19.png)
 
 ## Protection best practices
-In Microsoft Dynamics 365 for Operations, solutions can be delivered in two forms:
+Solutions can be delivered in two forms:
 
 -   Model files (source code)
 -   Deployable packages (binary)
@@ -198,7 +198,7 @@ To protect your configuration keys and license codes, we recommend that you rele
 ![Protected vs. unprotected ISV solutions](./media/isv20.png)
 
 ## Production environments
-To install ISV licenses in production systems, you must use a deployable package through LCS. You can find a template package for configuration mode at the following location in all Dynamics 365 for Operations installations: &lt;PackagesFolder&gt;\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (Packages folder is typically under j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\) 
+To install ISV licenses in production systems, you must use a deployable package through LCS. You can find a template package for configuration mode at the following location in all installations: &lt;PackagesFolder&gt;\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (Packages folder is typically under j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\) 
 
 ![Location of the template package for configuration mode](./media/isv21.png)
 

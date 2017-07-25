@@ -18,7 +18,7 @@ ms.search.form: BankChequeLayout, LedgerJournalTransVendPaym
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 274753
 ms.search.region: Spain
@@ -39,5 +39,5 @@ To use the checks functionality together with the Spanish layout, you should con
 -   For the method of payment, use the **Check** export file format.
 -   For the bank account, use **Spanish check layout** in the **Check layout** section of the **Bank account** page (**Setup** &gt; **Layout** &gt; **Check**). Additionally, set the **Other currencies** field to **Yes**.
 
-To generate the checks by using the Spanish layout, basic Payment journal (vendors) functionality is used. For more information, see [Vendor payment overview (task guide)](https://ax.help.dynamics.com/en/wiki/vendor-payment-overview/). After you run the Generate payments function and select all required parameters as described in this topic, the checks are generated. If the currency on the payment journal line differs from the currency of the bank account, you can still generate a check if the check layout is set up to use other currencies.
+To generate the checks by using the Spanish layout, basic Payment journal (vendors) functionality is used. For more information, see [Vendor payment overview (Task guide)](/dynamics365/unified-operations/financials/cash-bank-management/tasks/vendor-payment-overview). After you run the Generate payments function and select all required parameters as described in this topic, the checks are generated. If the currency on the payment journal line differs from the currency of the bank account, you can still generate a check if the check layout is set up to use other currencies.
 

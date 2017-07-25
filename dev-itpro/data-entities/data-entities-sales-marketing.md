@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data entities - Sales and marketing (Execution)
-description: This article provides a list of the data entities that are available for the Sales and marketing execution functionality in Microsoft Dynamics 365 for Operations.
+description: This article provides a list of the data entities that are available for Sales and marketing execution.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 51
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: kfend
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 95683
 ms.assetid: 1ea2bd7c-5a44-4b92-b954-f5b35b8b4bb1
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for the Sales and marketing execution functionality in Microsoft Dynamics 365 for Operations.
+This article provides a list of the data entities that are available for Sales and marketing execution.
 
 Available data entities
 -----------------------

@@ -5,7 +5,7 @@ title: Inventory tag counting
 description: This article provides information about tag counting, which you use to compare the actual contents of a warehouse with the on-hand inventory. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.search.form: InventJournalCount, InventJournalCountTag
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 11594
 ms.assetid: 03772d0e-5c37-454c-ab85-82bc8b60a76d
@@ -33,6 +33,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Inventory tag counting
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 This article provides information about tag counting, which you use to compare the actual contents of a warehouse with the on-hand inventory. 

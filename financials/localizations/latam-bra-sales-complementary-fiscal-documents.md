@@ -5,7 +5,7 @@ title: Sales complementary fiscal documents for Brazil
 description: This topic describes sales complementary invoice for the Brazilian localization.
 author: sndray
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: BrazilParameters, FBFiscalDocument_BR, SalesComplementaryInvoice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 269194
 ms.assetid: 0c52b508-1044-48c1-9dfc-a590bbda5696

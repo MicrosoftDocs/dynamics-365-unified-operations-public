@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 05/15/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -16,15 +16,16 @@ ms.technology:
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: twheeloc
-# ms.search.scope: 
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sarasch 
-ms.search.validFrom: 2017/06/01
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
+
 ---
 
 # Cash flow forecasting
@@ -141,3 +142,4 @@ Additionally, you can view cash flow forecasting data for specific accounts, ord
 - **All purchase orders**: On the **Invoice** tab, select **Cash flow forecasts** to view the forecasted cash impact of the selected purchase order.
 - **Supply forecast**: Select **Cash flow forecasts** to view the future cash flows that are associated with the selected item supply forecast.
 - **Demand forecast**: Select **Cash flow forecasts** to view the future cash flows that are associated with the selected item demand forecast.
+

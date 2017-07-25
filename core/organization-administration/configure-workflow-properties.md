@@ -5,7 +5,7 @@ title: Configure the properties of a workflow
 description: This topic explains how to configure the various properties of a workflow.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 196083
 ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
@@ -156,10 +156,10 @@ When a document is submitted for processing, a workflow instance is created. You
     </tr>
     <tr class="odd">
     <td>User</td>
-    <td>Specific Dynamics 365 for Operations users</td>
+    <td>Specific Finance and Operations users</td>
     <td><ol>
     <li>On the <strong>Recipient</strong> tab, click <strong>User</strong>.</li>
-    <li>On the <strong>User</strong> tab, the <strong>Available users</strong> list includes all Dynamics 365 for Operations users. Select the users to send notifications to, and move those users into the <strong>Selected users</strong> list.</li>
+    <li>On the <strong>User</strong> tab, the <strong>Available users</strong> list includes all Finance and Operations users. Select the users to send notifications to, and move those users into the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>

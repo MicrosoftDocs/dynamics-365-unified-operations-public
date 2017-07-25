@@ -2,10 +2,10 @@
 # required metadata
 
 title: Organization administration home page
-description: This topic points to resources that will help you use Microsoft Dynamics 365 for Operations in your organization.
+description: This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations in your organization.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: sericks007
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 20421
 ms.assetid: 7aa24a03-d172-47e9-81f8-ebd39e80bc60
@@ -35,14 +35,14 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic points to resources that will help you use Microsoft Dynamics 365 for Operations in your organization.
+This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations in your organization.
 
 Number sequences
 ----------------
 
 -   [Number sequence overview](number-sequence-overview.md)
--   [Set up number sequences by using a wizard](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (Task guide)
--   [Set up number sequences on an individual basis](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (Task guide)
+-   [Set up number sequences by using a wizard](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard) (Task guide)
+-   [Set up number sequences on an individual basis](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis) (Task guide)
 
 ## Address books
 -   [Address books](qa-address-books.md)
@@ -72,17 +72,17 @@ Number sequences
 
 ## Electronic signatures
 -   [Electronic signature overview](electronic-signature-overview.md)
--   [Set up electronic signatures](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (Task guide)
+-   [Set up electronic signatures](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures) (Task guide)
 
 ## Organizations
 -   [Organizations and organizational hierarchies](organizations-organizational-hierarchies.md)
 -   [Plan the organizational hierarchy](plan-organizational-hierarchy.md)
--   [Create an operating unit](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (Task guide)
--   [Create an organization hierarchy](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (Task guide)
--   [Create a legal entity](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (Task guide)
+-   [Create an operating unit](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit) (Task guide)
+-   [Create an organization hierarchy](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (Task guide)
+-   [Create a legal entity](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (Task guide)
 
 ## General administration
--   [Change the banner or logo](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (Task guide)
+-   [Change the banner or logo](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (Task guide)
 -   [About date/time data and time zones](date-time-zones.md)
 -   [Record templates](record-templates.md)
 

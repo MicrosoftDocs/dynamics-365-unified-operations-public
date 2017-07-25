@@ -2,10 +2,10 @@
 # required metadata
 
 title: Quality management overview
-description: This article describes how you can use quality management in Microsoft Dynamics 365 for Operations to help improve product quality within your supply chain.
+description: This article describes how you can use quality management in Microsoft Dynamics 365 for Finance and Operations to help improve product quality within your supply chain.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQuali
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
@@ -35,20 +35,21 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes how you can use quality management in Microsoft Dynamics 365 for Operations to help improve product quality within your supply chain.
+This article describes how you can use quality management in Microsoft Dynamics 365 for Finance and Operations to help improve product quality within your supply chain.
 
-Quality management can help you manage turnaround times when you handle nonconforming products, regardless of their point of origin. Because diagnostic types are linked to correction reporting, Microsoft Dynamics 365 for Operations can schedule tasks to correct problems and prevent them from recurring.
+Quality management can help you manage turnaround times when you handle nonconforming products, regardless of their point of origin. Because diagnostic types are linked to correction reporting, Microsoft Dynamics 365 for Finance and Operations can schedule tasks to correct problems and prevent them from recurring.
 
 In addition to functionality for managing nonconformance, quality management includes functionality for tracking issues by problem type (even internal problems), and for identifying solutions as short-term or long-term. Statistics about key performance indicators (KPIs) provide insight into the history of previous nonconformance issues and the solutions that were used to correct them. You can use historical data to review the effectiveness of previous quality measures and determine appropriate measures to use in the future.
 
-When you set up a quality association, Microsoft Dynamics 365 for Operations can generate quality orders for various business processes, events, and conditions. The quality association can cover a specific item, a specific group of items, or all items.
+When you set up a quality association, Finance and Operations can generate quality orders for various business processes, events, and conditions. The quality association can cover a specific item, a specific group of items, or all items.
 
 ## Examples of the use of quality management
 Quality management is flexible and can be implemented in various ways to meet the requirements of specific levels of supply chain operations. The following examples illustrate possible uses of these features:
 
 -   Automatically start a quality control process, based on predefined criteria (upon warehouse registration of a purchase order from a specific vendor).
 -   Block inventory during inspection to prevent non-approved inventory from being used (full blocking of purchase order quantities).
--   Use item sampling as part of a quality association to define the amount of current physical inventory that must be inspected. Sampling can based on fixed quantities or a percentage.
+-   Use item sampling as part of a quality association to define the amount of current physical inventory that must be inspected. Sampling can be based on fixed quantities or a percentage. 
+-   Create quality orders for partial receipts. To create a quality order that is based on the quantity that is physically received with an order, you must select the **Per updated quantity** check box on the **Item sampling** form. 
 -   Create test types that include minimum, maximum, and target test values, and perform qualitative-versus-quantitative testing that has predefined validation results.
 -   Specify an acceptable quality level (AQL) to control quality measure tolerances.
 -   Specify the resources that an inspection operation requires, such as a test area and test instruments.

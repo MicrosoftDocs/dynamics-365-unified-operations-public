@@ -5,7 +5,7 @@ title: Image Preview subpattern
 description: This article provides information about the Image Preview form subpattern. This subpattern can be used for most images that appear within a form container, especially within a FastTab or Group. 
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 12444
 ms.assetid: ac176ec7-7f14-47b8-908c-d2175a29fc5c
@@ -62,25 +62,21 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### Image only – High-level structure
 
-\[Container\] (Columns = Fixed – 1)
+- \[Container\] (Columns = Fixed – 1)
 
-*Toolbar (ActionPane) \[Optional\]*
-
-Image
+    - *Toolbar (ActionPane) \[Optional\]*
+    - Image
 
 ### Image and fields – High-level structure
 
-\[Container\] (Columns = Fixed – 1)
+- \[Container\] (Columns = Fixed – 1)
 
-*Toolbar (ActionPane) \[Optional\]*
+    - *Toolbar (ActionPane) \[Optional\]*
+    - Image
+    - Group
 
-Image
-
-Group
-
-            Image
-
-            Group - Note: uses a fields subpattern
+        - Image
+        - Group - Note: uses a fields subpattern
 
 ### Core components
 
@@ -125,6 +121,3 @@ None.
 ### AX 2012 content
 
 [![ImagePreview(3)](./media/imagepreview3.png)](./media/imagepreview3.png)
-
-
-

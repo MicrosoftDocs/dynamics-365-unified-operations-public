@@ -5,7 +5,7 @@ title: Upgrade the Dynamics AX platform to the August 2016 release
 description: This topic explains how to upgrade your Microsoft Dynamics AX platform to the August 2016 release of Dynamics AX.
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 11
-ms.search.scope: Operations, Platform
+ms.reviewer: margoc
+ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 125753
 ms.assetid: 99af5334-d30e-4160-9504-881777e9d4ea
@@ -40,7 +40,7 @@ This topic explains how to upgrade your Microsoft Dynamics AX platform to the Au
 Overview
 --------
 
-**Important:** This topic applies only to Microsoft Dynamics AX releases prior to August 2016. For Microsoft Dynamics 365 for Operations updates, see the topic: [Upgrade Dynamics 365 for Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md). The Microsoft Dynamics AX platform consists of the following components:
+**Important:** This topic applies only to Microsoft Dynamics AX releases prior to August 2016. For Microsoft Dynamics 365 for Finance and Operations updates, see the topic: [Upgrade Finance and Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md). The Microsoft Dynamics AX platform consists of the following components:
 
 -   Dynamics AX platform binaries such as Application Object Server (AOS), the data management framework, the reporting and business intelligence (BI) framework, development tools, and analytics services
 -   The following Application Object Tree (AOT) packages:

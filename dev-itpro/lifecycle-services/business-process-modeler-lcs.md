@@ -5,7 +5,7 @@ title: Business process modeler
 description: This article provides information about Business process modeler in Microsoft Dynamics Lifecycle Services (LCS). You can use this tool to create, view, and modify business process libraries and flowcharts for Microsoft Dynamics AX. The article also lists the prerequisites and explains how to start using Business process modeler.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 51
-ms.search.scope: AX 2012
+ms.reviewer: kfend
+ms.search.scope: AX 2012, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 15031
 ms.assetid: 01c38560-f588-4558-a7ec-3af1bb518069

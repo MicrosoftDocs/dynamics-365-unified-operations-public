@@ -5,7 +5,7 @@ title: Configure a manual task in a workflow
 description: This topic explains how to configure the properties for a manual task.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
@@ -133,10 +133,10 @@ Follow these steps to specify who the manual task should be assigned to.
     </tr>
     <tr class="even">
     <td>User</td>
-    <td>Specific Microsoft Dynamics 365 for Operations users</td>
+    <td>Specific Microsoft Dynamics 365 for Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Dynamics 365 for Operations users. Select the users to assign the task to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to assign the task to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -223,10 +223,10 @@ If a user doesn't complete the manual task in the allotted time, the task is ove
     </tr>
     <tr class="odd">
     <td>User</td>
-    <td>Specific Dynamics 365 for Operations users</td>
+    <td>Specific Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Dynamics 365 for Operations users. Select the users to escalate the task to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to escalate the task to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -317,10 +317,10 @@ You can send notifications to people when a manual task has been delegated, esca
     </tr>
     <tr class="odd">
     <td>User</td>
-    <td>Specific Dynamics 365 for Operations users</td>
+    <td>Specific Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Dynamics 365 for Operations users. Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>

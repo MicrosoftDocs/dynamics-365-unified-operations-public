@@ -5,7 +5,7 @@ title: Chronological invoice and voucher numbers for France
 description: This topic explains how to set up and use chronological numbers for invoices and vouchers in Accounts receivable for legal entities in France.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: CustParameters, NumberSequenceGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 264514
 ms.search.region: France

@@ -2,13 +2,13 @@
 # required metadata
 
 title: Payment methods in a call center
-description: This topic covers the different payment methods you can use in a call center in Retail and commerce.
+description: This topic covers the different payment methods you can use in a call center in Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 41
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
@@ -26,7 +26,7 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](includes/banner.md)]
 
 
-This topic covers the different payment methods you can use in a call center in Retail and commerce.
+This topic covers the different payment methods you can use in a call center in Dynamics 365 for Retail.
 
-The payment methods that are used in other channels in Retail and commerce in Microsoft Dynamics AX, such as cash, checks, credit cards, and gift cards, can also be used in call centers. After you set up a payment method for a call center, it appears as one of the options in the **Payments** section of the **Sales order** page for call center users. Additionally, you can set up coupons to offer discounts to customers who place an order with your organization’s call center. Coupons can be for a fixed amount discount, or for a percentage of an item price or the order total. For example, an amount-based coupon might offer customers a 75.00 discount when the customer spends 750.00 or more. You can create different types of coupons, set up parent/child coupons, and copy or void a coupon. Use the options  in the following table to create coupons.
+The payment methods that are used in other channels, such as cash, checks, credit cards, and gift cards, can also be used in call centers. After you set up a payment method for a call center, it appears as one of the options in the **Payments** section of the **Sales order** page for call center users. Additionally, you can set up coupons to offer discounts to customers who place an order with your organization’s call center. Coupons can be for a fixed amount discount, or for a percentage of an item price or the order total. For example, an amount-based coupon might offer customers a 75.00 discount when the customer spends 750.00 or more. You can create different types of coupons, set up parent/child coupons, and copy or void a coupon. Use the options  in the following table to create coupons.
 
 |                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

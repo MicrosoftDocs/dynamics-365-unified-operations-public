@@ -5,7 +5,7 @@ title: Customize the Open in Microsoft Office menu
 description: Most pages include an Open in Microsoft Office menu. This topics provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
-ms.search.scope: Operations, Platform
+ms.reviewer: sericks
+ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 270774
 ms.assetid: 3ff1184b-1a8a-4102-9600-f1776634d95f
@@ -44,9 +44,9 @@ The **Open in Microsoft Office** menu button (**Open in Office** menu) is a sy
 
 | Menu item       | Description                                                                                                                                                                                                                                                  |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Export to Excel | The data is exported to an Excel workbook. The workbook contains no references back to Microsoft Dynamics 365 for Operations, and the data can't be refreshed.                                                                                               |
-| Export to Word  | The data is exported to a Word document. The document contains no references back to Dynamics 365 for Operations, and the data can't be refreshed.                                                                                                           |
-| Open in Excel   | A workbook is created that contains the Microsoft Dynamics Office add-in. The workbook contains a reference back to Dynamics 365 for Operations, and the data can be refreshed, updated, and published from the Data Connector that is hosted in the add-in. |
+| Export to Excel | The data is exported to an Excel workbook. The workbook contains no references back to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and the data can't be refreshed.                                                                                               |
+| Export to Word  | The data is exported to a Word document. The document contains no references back to Finance and Operations, and the data can't be refreshed.                                                                                                           |
+| Open in Excel   | A workbook is created that contains the Microsoft Dynamics Office add-in. The workbook contains a reference back to Finance and Operations, and the data can be refreshed, updated, and published from the Data Connector that is hosted in the add-in. |
 
 ## How menu items are added to the Open in Office menu
 The export options are added to the **Open in Office** menu in the following manner:

@@ -5,7 +5,7 @@ title: Fields and Field Groups subpattern
 description: This article provides information about the Field and Field Groups form subpattern. This is the most common data entry subpattern. It uses a dynamic number of columns to present multiple fields or groups of fields.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 12384
 ms.assetid: f3bf8d00-8e6d-4af7-ab7e-3ff47fce9e21
@@ -61,17 +61,15 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### High-level structure
 
-\[Container\] (Columns=Fill)
+- \[Container\] (Columns=Fill)
 
-*FieldGroups (Group) \[0..N\]*
+    - *FieldGroups (Group) \[0..N\]*
 
-Fields ($Field) \[1..N\]
+        - Fields ($Field) \[1..N\]
+        - *ActionableFields (Group) \[0..N\]* mimics the Horizontal Fields and Button Group subpattern
 
-*ActionableFields (Group) \[0..N\] * mimics the Horizontal Fields and Button Group subpattern
-
-*Fields ($Field) \[0..N\]*
-
-*ActionableFields (Group) \[0..N\] *
+    - *Fields ($Field) \[0..N\]*
+    - *ActionableFields (Group) \[0..N\]*
 
 ### Core components
 
@@ -87,7 +85,7 @@ Fields ($Field) \[1..N\]
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
 
 -   **Standard form guidelines:**
-    -   Standard form guidelines have been consolidated into the Microsoft Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md)document.
+    -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
 -   **Fields and Field Groups guidelines:**
     -   The fields in groups should flow across the entire page. [![FieldsFieldGroups(2)](./media/fieldsfieldgroups2.png)](./media/fieldsfieldgroups2.png)
     -   When possible, remove unnecessary field group labels.
@@ -117,6 +115,3 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 **InventLocation** [![FieldsFieldGroups(4)](./media/fieldsfieldgroups4.png)](./media/fieldsfieldgroups4.png)
-
-
-

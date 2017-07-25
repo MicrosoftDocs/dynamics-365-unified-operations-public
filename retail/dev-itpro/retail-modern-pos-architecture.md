@@ -5,10 +5,10 @@ title: Retail Modern POS architecture
 description: This topic describes the POS topology.
 author: robinr
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, Retail
+ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.assetid: 210953fb-4d5a-49e6-b4db-6f31b3472789
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
@@ -40,7 +40,7 @@ This topic describes the POS topology.
 Retail Modern POS topology
 --------------------------
 
-Users of Retail Modern Point of Sale (POS) can perform various retail tasks on supported laptops, tablets, and phones. These tasks include processing sales transactions, viewing customer orders, managing daily operations and inventory, and viewing role-based reports. Both Retail POS and Cloud POS are available in Dynamics AX.  The Cloud POS is a hosted version of the POS app. Both the POS clients don't perform business functions or data processing. All business functions are provided by Microsoft Dynamics AX Retail Server. Retail Modern POS and Cloud POS clients can communicate with Retail Servers that are deployed in the cloud. Retail Modern POS client can also communicate with peripheral devices, such as cash drawers, credit card readers, and printers, by using Microsoft Dynamics AX Hardware Station. Hardware Station must be deployed in your store, and all Retail Modern POS clients can connect to the same Hardware Station. The following diagram shows the high-level topology. 
+Users of Retail Modern Point of Sale (POS) can perform various retail tasks on supported laptops, tablets, and phones. These tasks include processing sales transactions, viewing customer orders, managing daily operations and inventory, and viewing role-based reports. Both Retail POS and Cloud POS are available in Microsoft Dynamics 365 for Retail.  The Cloud POS is a hosted version of the POS app. Both the POS clients don't perform business functions or data processing. All business functions are provided by Retail Server. Retail Modern POS and Cloud POS clients can communicate with Retail Servers that are deployed in the cloud. Retail Modern POS client can also communicate with peripheral devices, such as cash drawers, credit card readers, and printers, by using Hardware Station. Hardware Station must be deployed in your store, and all Retail Modern POS clients can connect to the same Hardware Station. The following diagram shows the high-level topology. 
 
 [![Retail Topology](./media/retail-topology-1024x606.png)](./media/retail-topology.png)
 

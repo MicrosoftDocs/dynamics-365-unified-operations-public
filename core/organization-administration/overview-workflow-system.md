@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workflow system overview
-description: This topic describes the workflow system in Microsoft Dynamics 365 for Operations.
+description: This topic describes the workflow system in Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 04/25/2017
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 56381
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the workflow system in Microsoft Dynamics 365 for Operations.
+This topic describes the workflow system in Microsoft Dynamics 365 for Finance and Operations.
 
 What is workflow?
 -----------------
@@ -43,7 +43,7 @@ What is workflow?
 The term *workflow* can be defined in two ways: as a system and as a business process.
 ### Workflow is a system
 
-Workflow is a system that is installed with Dynamics 365 for Operations and runs on the Application Object Server (AOS). The workflow system provides functionality that you can use to create individual workflows, or business processes.
+Workflow is a system that is installed with Finance and Operations and runs on the Application Object Server (AOS). The workflow system provides functionality that you can use to create individual workflows, or business processes.
 
 ### Workflow is a business process
 

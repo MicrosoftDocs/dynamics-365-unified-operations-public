@@ -5,7 +5,7 @@ title: Simple Details form pattern
 description: This article describes the Simple Details form pattern. This pattern is used when only a simple set of fields must be presented to the user.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer 
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 14791
 ms.assetid: ee67618d-edc8-4bc5-bccc-6872c4af6273
@@ -57,51 +57,45 @@ There are no planned changes for the use of this pattern in the current version 
 ## Model
 ### Simple Details w/Toolbar and Fields – High-level structure
 
-Design
+- Design
 
-ActionPane (ActionPane)
-
-Body (Group) – **Note:** A field subpattern is used.
+    - ActionPane (ActionPane)
+    - Body (Group) – **Note:** A field subpattern is used.
 
 ### Simple Details w/FastTabs – High-level structure
 
-Design
+- Design
 
-ActionPane (ActionPane)
+    - ActionPane (ActionPane)
+    - *HeaderGroup (Group) \[Optional\]*
+    - Body (Tab, Style=FastTabs)
 
-*HeaderGroup (Group) \[Optional\]*
+        - BodyTabPages (TabPage repeats 1..N)
 
-Body (Tab, Style=FastTabs)
-
-BodyTabPages (TabPage repeats 1..N)
-
-*FooterGroup (Group) \[Optional\]*
+    - *FooterGroup (Group) \[Optional\]*
 
 ### Simple Details w/Standard Tabs – High-level structure
 
-Design
+- Design
 
-ActionPane (ActionPane)
+    - ActionPane (ActionPane)
+    - *HeaderGroup (Group) \[Optional\]*
+    - Body (Tab, Style=Tabs)
 
-*HeaderGroup (Group) \[Optional\]*
+        - BodyTabPages (TabPage repeats 1..N)
 
-Body (Tab, Style=Tabs)
-
-BodyTabPages (TabPage repeats 1..N)
-
-*FooterGroup (Group) \[Optional\]*
+    - *FooterGroup (Group) \[Optional\]*
 
 ### Simple Details w/Panorama – High-level structure
 
-Design
+- Design
 
-ActionPane (ActionPane)
+    - ActionPane (ActionPane)
+    - Body (Tab, Style=Panorama)
 
-Body (Tab, Style=Panorama)
+        - BodyTabPages (TabPage repeats 1..N)
 
-BodyTabPages (TabPage repeats 1..N)
-
-*FooterGroup (Group) \[Optional\]*
+    - *FooterGroup (Group) \[Optional\]*
 
 ### Core components
 
@@ -122,7 +116,7 @@ BodyTabPages (TabPage repeats 1..N)
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
+-   Standard form guidelines have been consolidated into the Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 **Simple Details** **guidelines:**
 
@@ -162,7 +156,3 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 -   Investigate whether Simple Details forms that show a small amount of related content should have a different presentation than a full-page form.
-
-
-
-

@@ -5,7 +5,7 @@ title: RB/SL depreciation
 description: RB/SL is a depreciation method that is used in France. Depreciation amounts are calculated by using both the reducing balance depreciation method and the straight-line remaining depreciation method. The larger of the two calculated depreciation amounts is then used as the RB/SL reducing balance depreciation amount.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 30271
 ms.search.region: France
@@ -54,7 +54,7 @@ When you create a **Fixed asset group/value model** setup, you specify the numbe
 | 2020      | 143.47                            | 50.21                               | 143.47                                | 0.00               |
 | **Total** | **Not applicable**                | **Not applicable**                  | **1,000.00**                          | **Not applicable** |
 
-**Note:** If you depreciated an asset by using fixed asset software other than Microsoft Dynamics 365 for Operations, you must post the acquisition and the accumulated depreciation in Dynamics 365 for Operations for the period before you started using Dynamics 365 for Operations. For example, if you started using Dynamics 365 for Operations on January 1, 2016, you must post the acquisition and accumulated depreciation in Dynamics 365 for Operations for the period that ended December 31, 2015. After you post the acquisition, you must change the acquisition date to the correct date from your previous software and enter the remaining life of the asset. You can then depreciate the asset as usual, starting on January 1, 2016.
+**Note:** If you depreciated an asset by using fixed asset software other than Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you must post the acquisition and the accumulated depreciation in Finance and Operations for the period before you started using Finance and Operations. For example, if you started using Finance and Operations on January 1, 2016, you must post the acquisition and accumulated depreciation in Finance and Operations for the period that ended December 31, 2015. After you post the acquisition, you must change the acquisition date to the correct date from your previous software and enter the remaining life of the asset. You can then depreciate the asset as usual, starting on January 1, 2016.
 
 
 

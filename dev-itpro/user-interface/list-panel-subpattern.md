@@ -5,7 +5,7 @@ title: List Panel subpattern
 description: This article provides information about the List Panel form subpattern. Application teams use this subpattern to manage two lists that move data between each other.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 12433
 ms.assetid: 81df4016-d7b9-4376-8a78-bdd435d686f6
@@ -65,35 +65,30 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## Model
 ### High-level structure
 
-\[Container\]
+- \[Container\]
 
-*CustomFilterGroup (Group) \[Optional\]*
+    - *CustomFilterGroup (Group) \[Optional\]*
+    - ListPanelGroup (Group)
 
-ListPanelGroup (Group)
+        - AvailablePanel (Group)
 
-AvailablePanel (Group)
+            - Grid | Tree | ListView | ListBox
 
-Grid | Tree | ListView | ListBox
+        - ActionPanel (Group)
 
-ActionPanel (Group)
+            - AddButton (Button)
+            - RemoveButton (Button)
+            - *AllAllButton (Button) \[Optional\]*
+            - *RemoveAllButton (Button) \[Optional\]*
 
-AddButton (Button)
+        - SelectedPanel (Group)
 
-RemoveButton (Button)
+            - Grid | Tree | ListView | ListBox\*
 
-*AllAllButton (Button) \[Optional\]*
+        - *MoveUpDownPanel \[Optional\]*
 
-*RemoveAllButton (Button) \[Optional\]*
-
-SelectedPanel (Group)
-
-Grid | Tree | ListView | ListBox\*
-
-*MoveUpDownPanel \[Optional\]*
-
-MoveUpButton (Button)
-
-MoveDownButton (Button)
+            - MoveUpButton (Button)
+            - MoveDownButton (Button)
 
 ### Core components
 
@@ -105,7 +100,7 @@ MoveDownButton (Button)
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
 
 -   **Standard form guidelines:**
-    -   Standard form guidelines have been consolidated into the Microsoft Dynamics 365 for Operations [General Form Guidelines](general-form-guidelines.md)document.
+    -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 
 ## Examples
 Form: **CLIPatterns\_ListPanel** **(FormTabPageControl1)** 
@@ -137,6 +132,3 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![ListPanel(4)](./media/listpanel4.png)](./media/listpanel4.png)
-
-
-

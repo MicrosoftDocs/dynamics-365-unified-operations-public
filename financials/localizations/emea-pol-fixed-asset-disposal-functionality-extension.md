@@ -5,7 +5,7 @@ title: Fixed assets disposal for Poland
 description: This topic provides information about fixed asset disposal functionality for users in legal entities in Poland. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTab
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 266964
 ms.search.region: Poland
