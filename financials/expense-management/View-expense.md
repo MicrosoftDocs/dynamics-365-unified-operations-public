@@ -2,8 +2,7 @@
 # required metadata
 
 title: View an expense report from the General ledger
-description: When you perform a query to view transactions in General ledger or Procurement and sourcing, the amount of information 
-that is returned by the query may be too much and you might want to narrow your search. 
+description: When you perform a query to view transactions in General ledger or Procurement and sourcing, the amount of information that is returned by the query may be too much and you might want to narrow your search. 
 author: saraschi2
 manager: AnnBe
 ms.date: 07/25/2017
