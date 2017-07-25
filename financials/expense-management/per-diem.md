@@ -2,8 +2,8 @@
 # required metadata
 
 title: Per diem rules 
-description: A per diem is an allowance that is paid to a worker who is traveling for work. In expense, you can create per diem rules 
-for different traveling situations. 
+description: A per diem is an allowance that is paid to a worker who is traveling for work. In expense, you can
+create per diem rules for different traveling situations. 
 author: saraschi2
 manager: AnnBe
 ms.date: 06/20/2017
