@@ -2,8 +2,7 @@
 # required metadata
 
 title: Distributions on an expense report
-description: When you enter expenses on an expense report, you can distribute the expense across multiple projects, 
-legal entities, or accounts in your organization.
+description: When you enter expenses on an expense report, you can distribute the expense across multiple projects, legal entities, or accounts in your organization.
 author: saraschi2
 manager: AnnBe
 ms.date: 07/25/2017
