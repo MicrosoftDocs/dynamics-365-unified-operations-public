@@ -236,11 +236,11 @@ $domainName = Read-Host -Prompt 'Specify domain name (ex: contoso.com)'
 Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter domain credential')
 Restart-Computer
 ```
-Once the VMs are joined to the domain, add the Aos Service Accounts (Contoso\svc-AXSF$ , Contoso\svc-AXSF$ ) to the local administrators group.You can check [Add a member to local group](https://technet.microsoft.com/en-us/library/cc772524(v=ws.11).aspx) article for how to do this.
+Once the VMs are joined to the domain, add the AOS Service Accounts (Contoso\svc-AXSF$ , Contoso\svc-AXSF$ ) to the local administrators group. You can check [Add a member to local group](https://technet.microsoft.com/en-us/library/cc772524(v=ws.11).aspx) article for how to do this.
 
 #### Disable User Access Control 
 
-Execute the below script to disable the User Access Control on **every** Service Fabric node.
+Execute the following script to disable the User Access Control on **every** Service Fabric node.
 ```
 $RegPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"
 New-ItemProperty -Path $RegPath -Name "EnableLUA" -Value 0 -PropertyType "DWORD" -Force
@@ -248,7 +248,8 @@ New-ItemProperty -Path $RegPath -Name "ConsentPromptBehaviorAdmin" -Value 0 -Pro
 New-ItemProperty -Path $RegPath -Name "EnableUIADesktopToggle" -Value 0 -PropertyType "DWORD" -Force
 New-ItemProperty -Path $RegPath -Name "LocalAccountTokenFilterPolicy" -Value 1 -PropertyType "DWORD" -Force
 ```
-**Reboot the node after the script completes successfully.**
+> [!IMPORTANT]
+> You must reboot the node after the script completes successfully.
 
 #### Add prerequisite software to VMs
 
