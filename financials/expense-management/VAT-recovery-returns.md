@@ -2,9 +2,7 @@
 # required metadata
 
 title: Export and send VAT recovery returns
-description: The recovery of Value Added Tax (VAT) is a two-part process. The first part of the recovery process is to identify and verify
-all expenses that are eligible for recovery and to calculate the total recoverable amount. The second part of the process is to file 
-the VAT returns with all required documentation. 
+description: The recovery of Value Added Tax (VAT) is a two-part process. The first part of the recovery process is to identify and verify all expenses that are eligible for recovery and to calculate the total recoverable amount. The second part of the process is to file the VAT returns with all required documentation. 
 author: saraschi2
 manager: AnnBe
 ms.date: 06/20/2017
