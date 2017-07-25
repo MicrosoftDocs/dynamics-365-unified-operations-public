@@ -2,8 +2,8 @@
 # required metadata
 
 title: Post an expense report to the General ledger
-description: After an expense report has been approved and transferred to the general journal, the report can be posted to 
-the general ledger.
+description: After an expense report has been approved and transferred to the general journal, the report can be 
+posted to the general ledger.
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
