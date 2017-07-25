@@ -3,7 +3,7 @@
 
 title: Value Added Tax (VAT) recovery in Expense
 description: To receive refunds on eligible VAT transactions, a company or organization must identify, collect, verify, and submit 
-accurate information
+accurate information.
 author: saraschi2
 manager: AnnBe
 ms.date: 07/25/2017
