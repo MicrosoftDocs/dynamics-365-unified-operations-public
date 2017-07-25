@@ -2,7 +2,7 @@
 # required metadata
 
 title: Expense reports and mutiple approvers
-description: Depending on the expense approval policies of your organization, more than one person may be required to approve an expense 
+description: Depending on the expense approval policies of your organization, more than one person may be required to approve an expense
 report that is submitted by an employee.
 author: saraschi2
 manager: AnnBe
