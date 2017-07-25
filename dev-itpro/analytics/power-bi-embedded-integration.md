@@ -59,7 +59,36 @@ While both Power BI services are available, it's important to know which is best
 -   **Filter reports based on application context** - You can build navigation experiences by passing one or more filters to Power BI reports. For example, depending on user’s actions or context, you can filter the Power BI report to reflect data from one business unit or a given product - without the user having to filter the data. You can define drill thru links to Finance and Operations forms that take users directly into the transactional details forms.
 
 ## Service availability
-Power BI Embedded is available in most data centers now. You can check the latest availability on [Azure status](https://azure.microsoft.com/status/).
+**The Power BI Embedded service is automatically deployed and configured for all Cloud Hosted multi-box deployments.**  Because the service relies on Azure services, Application Analytical Workspaces & Reports are unavailable in 1Box environments.  The Power BI Embedded service is already available in most Azure data centers.  You can always check the latest availability [here](https://azure.microsoft.com/status/).  
+ 
+**Note:** The Dynamics Team is pursuing a solution that will enable Analytical Workspaces on a 1Box w/o requiring customers to host their own instance of the Power BI Embedded service.  Keep an eye out for announcements on the [Dynamics Roadmap](http://roadmap.dynamics.com) site.
+ 
+## Frequently Asked Questions (FAQ)
+-   **Q:    Can I customize the Power BI embedded reports?** -->
+**Yes**, simply install Power BI Desktop onto a 1Box to get started using steps described [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json).
+ 
+-   **Q:    Do customers need to purchase a separate Power BI license to use the new embedded analytics?** -->
+**No** – However, a Power BI Pro license is required to connect to Entity Store using Direct Query from PowerBI.com
+ 
+-   **Q:    Can I perform data mashups using external data in the Embedded Reports?** -->
+**No**, not at this time.
+ 
+-  **Q:    Can I secure data to only those companies I have access to?** -->
+**Yes**, the single company view prevents users from accessing data from companies they don’t have access to.  For more information on securing custom solutions, follow guidance provided [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/secure-analytical-workspaces?toc=dynamics365/unified-operations/fin-and-ops/toc.json).
+ 
+-  **Q:    How is currency displayed across multiple companies?** --> 
+As a **system currency**. (System administration > Setup > System parameters)
+ 
+-  **Q:    Can I drill on summary balances back into Dynamics 365?** --> 
+**Yes**, you are able to drill into the details within a Power BI report. There is limited support for drill down into Dynamics 365.
+ 
+-  **Q:    What languages are currently supported?** --> 
+**English** only however the PBI team has additional planned.
+ 
+-  **Q:    Can I access Analytical Workspaces & Reports in Local Business Data?** -->
+**No**, not at this time.  Systems of Intelligence functions rely on Cloud hosted solutions.
+
+
 
 
 
