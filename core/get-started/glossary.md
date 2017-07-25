@@ -2,10 +2,10 @@
 # required metadata
 
 title: Finance and Operations glossary
-description: The Microsoft Dynamics 365 for Finance and Operations glossary defines key terms and concepts in the Finance and Operations product. 
+description: This glossary defines key terms and concepts in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-The Microsoft Dynamics 365 for Finance and Operations glossary defines key terms and concepts in the Finance and Operations product. 
+This glossary defines key terms and concepts in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 ### **A**
 
@@ -591,9 +591,6 @@ The product quantity documented on a source document line that creates a pegging
 
 An estimate of future demand that is created by applying a forecasting algorithm to historical transaction data.
 
-###### **supermarket**
-
-A just-in-time inventory location that has finite capacity and is used to batch material near a point of consumption.
 
 ### **T**
 
