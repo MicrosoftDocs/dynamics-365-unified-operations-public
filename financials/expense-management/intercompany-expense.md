@@ -2,9 +2,9 @@
 # required metadata
 
 title: Intercompany expenses
-description: A worker who is employed by one legal entity in an organization might perform work for another legal entity in the same 
-organization. In this situation, you can use the intercompany expense feature to assign the worker’s expenses to the legal entity for 
-which the work was performed.
+description: A worker who is employed by one legal entity in an organization might perform work for another legal entity in the 
+same organization. In this situation, you can use the intercompany expense feature to assign the worker’s expenses to the legal 
+entity for which the work was performed.
 author: saraschi2
 manager: AnnBe
 ms.date: 06/20/2017
@@ -29,7 +29,7 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Metadata and Markdown template
+# Intercompany expenses
 
 [!include[banner](../includes/banner.md)]
 A worker who is employed by one legal entity in an organization might perform work for another legal entity in the same organization. 
