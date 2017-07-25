@@ -2,8 +2,8 @@
 # required metadata
 
 title: Travel requisitions
-description: A travel requisition is a source document that documents expenses that will be incurred for the purpose of travel. 
-A travel requisition is submitted for review and can then be used to authorize expenses. 
+description: A travel requisition is a source document that documents expenses that will be incurred for the purpose 
+of travel. A travel requisition is submitted for review and can then be used to authorize expenses. 
 author: saraschi2
 manager: AnnBe
 ms.date: 07/25/2017
