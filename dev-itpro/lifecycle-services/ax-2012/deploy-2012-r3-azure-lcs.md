@@ -34,14 +34,14 @@ ms.dyn365.ops.version: 2012
 
 [!include[banner](../../includes/banner.md)]
 
-
-
-
 Azure is an open and flexible cloud platform that enables you to quickly build, deploy, and manage applications across a global network of datacenters that are managed by Microsoft. Azure enables *cloud computing*. Cloud computing is the delivery of computing capabilities as a service. Cloud computing makes it easy to access IT resources such as computers, networking, and storage. As with any utility, you generally only pay for what you use with cloud computing. By using cloud services, you can harness the power of massive datacenters without having to build, manage, or maintain costly, complex IT building blocks. With the cloud, much of the complexity of IT is abstracted away, letting you focus on the infrastructure, data, and application development that really matter to your business. You can deploy AX 2012 R3 on Azure. When you do, you may realize the following benefits:
 
 -   **Reduce costs** Since you don’t have to build out or manage infrastructure with Azure, IT costs may be greatly reduced.
 -   **Save time** An on-premises AX 2012 R3 environment may take weeks to plan, acquire necessary hardware, and deploy. By using the Cloud-hosted environments tool in Lifecycle Services, you can deploy an AX 2012 R3 environment on Azure in hours.
 -   **Gain flexibility** The cloud enables you to easily scale up (or scale down) to meet the changing needs of your business.
+
+> [!NOTE]
+> Dynamics AX 2012 R3 can also be deployed on-premises. For details, see the topic [Install Microsoft Dynamics AX 2012](https://technet.microsoft.com/en-us/library/dd362138.aspx)
 
 ## The Azure services model
 Azure offers three types of services: Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS), and Infrastructure-as-a-Service (IaaS).
