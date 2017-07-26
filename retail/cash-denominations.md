@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 Cash denominations for notes and coins can be defined in the back office to be used by cashiers, sales associates, and managers at the store from within the POS. These denominations can be used to aid in counting cash for end of day tender declarations or for quickly tendering a sale.
 
 ## Define denominations
-The denominations are setup per store under the **Set up** > **Cash declaration option from the store property page**. 
+The denominations are setup per store under the **Set up** > **Cash declaration option from the store property** page. 
 
 ![cash denominations](./media/image1-denomination.png)
 
