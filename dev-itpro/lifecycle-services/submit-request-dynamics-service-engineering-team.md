@@ -49,6 +49,7 @@ The following request types are supported by this functionality:
 -   **Environment deployment** – To set the deployment options and submit a request to the Dynamics Service Engineering team to deploy a new environment, click **Configure** on the **Environments** pane.
 -   **Database point-in-time restore** – This includes, for example, restoring a non-production database to a specific point in time.
 -   **Database refresh** – This includes, for example, the ability to refresh a database from Production to Sandbox.
+
   > [!NOTE]
   > If you’re using Retail components, you must perform additional steps to do a database refresh.
   > 1. Navigate to the Shared asset library.
