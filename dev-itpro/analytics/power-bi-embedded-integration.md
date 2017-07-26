@@ -69,28 +69,28 @@ Read the [Power BI Embedded FAQ](https://powerbi.microsoft.com/en-us/documentati
 ## Frequently Asked Questions (FAQ)
 
 #### Can I customize the Power BI embedded reports?
-Yes, simply install Power BI Desktop onto a 1Box to get started using steps described [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json).
+Yes, simply install Power BI Desktop onto a one-box environment to get started using the steps described [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json).
  
--   **Q:    Do customers need to purchase a separate Power BI license to use the new embedded analytics?** -->
-**No** – However, a Power BI Pro license is required to connect to Entity Store using Direct Query from PowerBI.com
+#### Do customers need to purchase a separate Power BI license to use the new embedded analytics?**
+No. However, a Power BI Pro license is required to connect to Entity Store using Direct Query from PowerBI.com.
  
--   **Q:    Can I perform data mashups using external data in the Embedded Reports?** -->
-**No**, not at this time.
+#### Can I perform data mashups using external data in the Embedded Reports?
+No, not at this time.
  
--  **Q:    Can I secure data to only those companies I have access to?** -->
-**Yes**, the single company view prevents users from accessing data from companies they don’t have access to.  For more information on securing custom solutions, follow guidance provided [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/secure-analytical-workspaces?toc=dynamics365/unified-operations/fin-and-ops/toc.json).
+#### Can I secure data to only those companies I have access to?
+Yes, the single company view prevents users from accessing data from companies they don’t have access to.  For more information on securing custom solutions, follow guidance provided [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/secure-analytical-workspaces?toc=dynamics365/unified-operations/fin-and-ops/toc.json).
  
--  **Q:    How is currency displayed across multiple companies?** --> 
-As a **system currency**. (System administration > Setup > System parameters)
+#### How is currency displayed across multiple companies?
+As a system currency, as defined on the **System parameters** page in Finance and Operations.
  
--  **Q:    Can I drill on summary balances back into Dynamics 365?** --> 
-**Yes**, you are able to drill into the details within a Power BI report. There is limited support for drill down into Dynamics 365.
+#### Can I drill on summary balances back into Finance and Operations?
+Yes, you are able to drill into the details within a Power BI report. There is limited support for drill down into Finance and Operations.
  
--  **Q:    What languages are currently supported?** --> 
-**English** only however the PBI team has additional planned.
+#### What languages are currently supported?
+English only, however, the Power BI team has additional planned.
  
--  **Q:    Can I access Analytical Workspaces & Reports in Local Business Data?** -->
-**No**, not at this time.  Systems of Intelligence functions rely on Cloud hosted solutions.
+#### Can I access analytical workspaces and reports in the on-premises version of Finance and Operations?
+No, not at this time.  Systems of Intelligence functions rely on cloud-hosted solutions.
 
 
 
