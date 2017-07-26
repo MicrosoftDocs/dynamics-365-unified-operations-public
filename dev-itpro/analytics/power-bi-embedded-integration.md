@@ -50,7 +50,7 @@ For more information about customizations using extensions, see [Customization
 ## Why would I want to use Microsoft Power BI Embedded?
 While both Power BI services are available, it's important to know which is best suited to support target application scenarios. The following illustration offers a feature comparison across services.
 
-[![power-bi-embedded-overview](media/Power-BI-Embedded-integration.png) 
+![power-bi-embedded-overview](media/Power-BI-Embedded-integration.png) 
 
 Read the [Power BI Embedded FAQ](https://powerbi.microsoft.com/en-us/documentation/powerbi-frequently-asked-questions/) to learn more about the Power BI Embedded Service.
 
