@@ -71,7 +71,7 @@ Read the [Power BI Embedded FAQ](https://powerbi.microsoft.com/en-us/documentati
 #### Can I customize the Power BI embedded reports?
 Yes, simply install Power BI Desktop onto a one-box environment to get started using the steps described [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json).
  
-#### Do customers need to purchase a separate Power BI license to use the new embedded analytics?**
+#### Do customers need to purchase a separate Power BI license to use the new embedded analytics?
 No. However, a Power BI Pro license is required to connect to Entity Store using Direct Query from PowerBI.com.
  
 #### Can I perform data mashups using external data in the Embedded Reports?
