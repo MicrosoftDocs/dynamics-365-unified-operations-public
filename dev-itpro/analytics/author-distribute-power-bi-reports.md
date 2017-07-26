@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Authoring Power BI reports using Power BI Desktop
+# Authoring Analytical reports using Power BI Desktop
 
 [!include[banner](../includes/banner.md)]
 
