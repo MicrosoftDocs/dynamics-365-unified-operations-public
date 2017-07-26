@@ -85,7 +85,7 @@ Retail Cloud POS can run in any of the following web browsers that run on the sp
 ## Retail Modern POS requirements
 
 > [!NOTE]
-> If Retail Modern POS will utilize an offline database, then the computer must meet all system requirements for Microsoft SQL Server. Retail Modern POS offline database will function on SQL 2012 with Service Pack 3 or newer, SQL 2014 with Service Pack 2 or newer, and SQL 2016.  It is always recommended to use the newest version available with the latest Service Pack installed.
+> If Retail Modern POS will utilize an offline database, then the computer must meet all system requirements for Microsoft SQL Server. Retail Modern POS offline database will function on SQL Server 2012 with Service Pack 3 or later, SQL 2014 with Service Pack 2 or later, and SQL 2016.  It is always recommended to use the newest version available with the latest service pack installed.
 
 ### Supported operating systems
 
