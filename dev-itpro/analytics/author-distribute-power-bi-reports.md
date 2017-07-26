@@ -46,14 +46,14 @@ Using Power BI Desktop, you can create a report in your development or test envi
 ### Step 1  Populate the local Entity Store DB
 For this example, we'll stage the aggregate models consumed by the Retail analytical solution into the local Entity store.  The models used by the Retail application are defined in the RetailCube aggregate measurement. 
 
-1) Launch Microsoft Finance and Operations client and navigate to the Entity store page **System Administration > Setup > Entity Store**. 
+1) Launch Microsoft Finance and Operations client and go to the Entity store page. **System Administration > Setup > Entity Store**. 
 2) Select RetailCube Aggregate measurement, and then select **Refresh**. 
 3) Provide a name for the job that will be run in the background, and then select the **OK** button
 
 Here's the Administrator dialog used configure the frequency of the aggregate model refreshes
 ![Configure Aggregagate Measurement refresh](media/Configure-refresh.png)
 
-You can monitor the progress of the job used to stage the data using the batch job monitoring form **System administration > Database > batch jobs**.  After the data is populated into the Entity store (it should take a minute or so with demo data), you are ready to write
+You can monitor the progress of the job used to stage the data using the batch job monitoring page. **System administration > Database > batch jobs**.  After the data is populated into the Entity store (it should take a minute or so with demo data), you are ready to write
 reports. 
  
 
@@ -81,7 +81,7 @@ You are now ready to author a report. You can drag and drop measures and fields 
 Here's a basic report sourced from the local Entity Store DB
 ![Power BI Desktop Report](media/Power-BI-Desktop-Report.png)
 
-Power BI Desktop also supports creating calculations and lets you combine data from multiple aggregate measurements.  Within minutes, you'll be creating analytical reports using data in the local development environment. Once satisfied with the , you can migrate it to the production environment so that your users can use this report to interact with production data.
+Power BI Desktop also supports creating calculations and lets you combine data from multiple aggregate measurements.  Within minutes, you can create analytical reports using data in the local development environment. Once satisfied with the report, it can be migrated to the production environment so that your users can use the report to interact with production data.
 
 ## Validate reports in a demo environment
 
