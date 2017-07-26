@@ -41,6 +41,7 @@ This topic lists the Microsoft Power BI content that is available and points you
 ## Power BI content for Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
 If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, the following Power BI content is available:
 
+- [Actual vs budget Power BI content](ledger-budgets-power-bi.md)
 - [Benefits Power BI content](benefits-power-bi.md)
 - [Cash overview Power BI content](/dynamics365/operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 - [CFO overview Power BI content](CFO-power-bi.md)
