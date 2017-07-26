@@ -21,7 +21,7 @@ ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
-ms.search.industry: RET
+ms.search.industry: retail
 ms.author: 
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
@@ -30,7 +30,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-This procedure demonstrates configurations for Retail store payment methods, which affect how Retail statements get created and posted.
+This procedure demonstrates configurations for Retail store payment methods, which affect how Retail statements get created and posted.
+
 This recording uses the USRT demo company.
 
 1. Go to Retail and commerce > Channels > Retail stores > All retail stores.
