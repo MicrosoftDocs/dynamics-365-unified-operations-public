@@ -67,8 +67,9 @@ Read the [Power BI Embedded FAQ](https://powerbi.microsoft.com/en-us/documentati
 **Note:** The Dynamics 365 team is pursuing a solution that will enable analytical workspaces in a one-box environment without requiring customers to host their own instance of the Power BI Embedded service.  Keep an eye out for announcements on the [Dynamics 365 Roadmap](http://roadmap.dynamics.com) site.
  
 ## Frequently Asked Questions (FAQ)
--   Can I customize the Power BI embedded reports?** -->
-**Yes**, simply install Power BI Desktop onto a 1Box to get started using steps described [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json).
+
+**Can I customize the Power BI embedded reports?**
+Yes, simply install Power BI Desktop onto a 1Box to get started using steps described [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json).
  
 -   **Q:    Do customers need to purchase a separate Power BI license to use the new embedded analytics?** -->
 **No** – However, a Power BI Pro license is required to connect to Entity Store using Direct Query from PowerBI.com
