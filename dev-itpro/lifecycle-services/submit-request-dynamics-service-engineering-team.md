@@ -2,10 +2,10 @@
 # required metadata
 
 title: Submit a request to the Dynamics Service Engineering team
-description: You can submit requests directly to the Dynamics Service Engineering (DSE) team by using Lifecycle Services (LCS). You no longer have to submit on multiple sites based on the request.
-author: kfend
+description: You can submit requests directly to the Dynamics Service Engineering team by using LCS. 
+author: manalidongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -44,12 +44,24 @@ You can now submit requests directly to the Dynamics Service Engineering (DSE) 
 
 The following request types are supported by this functionality:
 
--   **Database refresh** – This includes, for example, the ability to refresh a database from Production to Sandbox.
--   **Database point-in-time restore** – This includes, for example, restoring a non-production database to a specific point in time.
 -   **Other requests** – This includes requests other than those listed above or automated flow requests. For example, you might use this request type for upgrade or to request the system be put into maintenance mode. Note, this should not be used to submit support requests.
 -   **Package application** – To apply a package to the Production environment, on the **Environment details** page, click **Maintain** to select the package to apply. Then, select **Schedule**.
 -   **Environment deployment** – To set the deployment options and submit a request to the Dynamics Service Engineering team to deploy a new environment, click **Configure** on the **Environments** pane.
+-   **Database point-in-time restore** – This includes, for example, restoring a non-production database to a specific point in time.
+-   **Database refresh** – This includes, for example, the ability to refresh a database from Production to Sandbox.
 
-
-
+  > [!NOTE]
+  > If you’re using Retail components, you must perform additional steps to do a database refresh.
+  > 1. Navigate to the Shared asset library.
+  > 2. Select **Software deployable package**.
+  > 3. Download the **Environment reprovisioning tool**.
+  > 4. Navigate to the asset library for your project 
+  > 5. Select **Software deployable package** and select **New** to create a new package.
+  > 6. Specify a name and description. You can use **Environment reprovisioning tool** for the package name.
+  > 7. Upload the previously downloaded package.
+  > 8. Navigate to the **Environment details** page for your target environment
+  > 9. Select **Maintain** > **Apply updates**.
+  > 10. Select the Environment reprovisioning tool that you previously uploaded and click **Apply** to apply the package.
+  > 11. Monitor the progress of the package deployment. 
+ 
 
