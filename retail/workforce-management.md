@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workforce management overview
-description: 
+description: This topic describes how you can use Workforce management (WFM) service to leverage the familiar Point of Sale clients - Modern POS and Cloud POS - to empower store managers to easily manage their workforce. 
 author: shalabhjainmsft
 manager: AnnBe
 ms.date: 7/20/2017
@@ -34,7 +34,6 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 [!include[banner](includes/banner.md)]
 	
-## Introduction
 Workforce management (WFM) service leverages the familiar Point of Sale clients - Modern POS and Cloud POS - to empower store managers to easily manage their workforce. The WFM service uses the extension framework to download the relevant packages in POS. These packages are downloaded when the POS is closed and reopened. When Microsoft releases new features for WFM, the POS app needs to be closed and reopened. Using this service, the store managers can easily create and publish weekly work schedule for their stores. The store workers can quickly view their schedules, along with the schedule of their colleagues, to know who will be working with them during the assigned shifts. They can also create requests for absence, shift swap, and shift offer, all of which trigger a defined workflow. During the shift, the store workers can leverage the clock in and clock out capability, built in the POS clients, which sends the data to the HQ for payroll processing. The clock in and clock out feature is an existing capability of POS. The following link provides more details about the setup and supported scenarios
 [Clock in and clock out]( https://docs.microsoft.com/en-us/dynamics365/operations/retail/retail-time-attendance).
 
