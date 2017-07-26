@@ -42,25 +42,22 @@ eligibility and hours worked to meet federal requirements.
 
 The following prerequisites must be in place before you start.
 
-| Category                                  | Prerequisite                                                                                                   |
+| Category                                  | Prerequisite      |
 |-------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-                     |
-| Task                                      | Verify that the settings are accurate on the Human resources parameters and Case category type security pages. |
-| Knowledge and experience   | Be familiar with cases and how they work. |                                                               | Planning       | Determine whether you will integrate FMLA with Payroll.         |
-
-| Country/region  | (USA) The primary address for the legal entity must be in the following countries/regions: United States.      |
+| Task               | Verify that the settings are accurate on the Human resources parameters and Case category type security pages. |
+| Knowledge and experience   | Be familiar with cases and how they work.                |
+| Planning                   | Determine whether you will integrate FMLA with Payroll. (This applies only to Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.)  |
+| Country/region  | (USA) The primary address for the legal entity must be in the following countries/regions: United States.  |
 
 ## 1. Determine work eligibility
 
-When a worker submits a leave request or inquiries about their FMLA
-eligibility, you can easily determine how many hours they have a available.
-To determine worker eligibility, complete the following steps.
+When a worker submits a leave request or inquiries about their FMLA eligibility, you can easily determine how many hours they have a available. To determine worker eligibility, complete the following steps.
 
 1. Open the **Workers** page.
 
-2. Select the worker to determine eligibility for, and then select **Employment** \> **FMLA**> **eligibility**.
+2. Select the worker to determine eligibility for, and then select **Employment** \> **FMLA** \> **FMLA eligibility**.
 
-3. In the **Eligibility date** field, enter the date you expect eligibility to begin.
+3. In the **Effective date** field, enter the date you expect eligibility to begin.
 
 4. Click **Calculate**. The number of estimated available hours for both standard FMLA and military FMLA is displayed. This number is determined by the number of hours the employee has worked, their length of employment, and whether the worker has taken any leave that reduces their remaining hours.
 
@@ -75,16 +72,15 @@ This is required for all leaves of absence, regardless of whether the leave qual
 
 To create an FMLA case, follow these steps:
 
-> 1. Open the **FMLA cases** page.
+1. Open the **FMLA cases** page.
 
-> 2. On the **Action Pane**, in the **New** group, click **Case**.
+2. On the **Action Pane**, in the **New** group, click **Case**.
 
-> 3. Optional: If the case has already been approved, select the **Approved**
-> check box on the **General** tab. You can also select the approver, if applicable.
+3. Optional: If the case has already been approved, select the **Approved** check box on the **General** tab. You can also select the approver, if applicable.
 
->  4. Enter the following information.
+4. Enter the following information.
 
-| Field                    | Description                                                                                                                       |
+| Field                    | Description                                |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | Reason                   | Select the reason for the leave.                                                                                                  |
 | Leave request date       | Select the deate when the leave was requested. This is often today’s date.                                                        |
