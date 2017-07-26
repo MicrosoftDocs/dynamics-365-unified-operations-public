@@ -52,7 +52,7 @@ For this example, we'll stage the aggregate models consumed by the Retail analyt
 
 Here's a screen shot of the Administrator dialog used configure the frequency of aggregate model refreshes
 
-![Configure Aggregagate Measurement refresh](media/configure-refresh.jpg)
+![Configure Aggregagate Measurement refresh](media/configure refresh.jpg)
 
 You can monitor the progress of the job used to stage the data using the batch job monitoring form **System administration > Database > batch jobs**.  After the data is populated into the Entity store (it should take a minute or so with demo data), you are ready to write
 reports. 
@@ -62,13 +62,13 @@ reports.
 1) Launch **Power BI Desktop**.  If available, you may need to download and apply updates to Power BI Desktop. 
 2) On the Power BI Welcome page, select the **Get data** icon. 
    Alternatively, when Power BI Desktop launches, you can select **Get Data > SQL Server** from the menu. 
-   ![Power BI Desktop Get Data](media/Power-BI-Desktop-Get-Data.png)
+   ![Power BI Desktop Get Data](media/Power BI Desktop Get Data.png)
 
 3) In the **SQL Server Database** dialog box, enter **.** as server name, **AxDW** as the database name, and then select DirectQuery option. 
 
 Here are the settings that allows Power BI Desktop to access the local Entity Store DB
 
-![Connect to SQL Database](media/Connect-to-SQL-Database.png)
+![Connect to SQL Database](media/Connect to SQL Database.png)
 
 **Note:** Import option is NOT supported at this time.
 
@@ -81,7 +81,7 @@ You are now ready to author a report. You can drag and drop measures and fields 
 
 Here's a basic report sourced from the local Entity Store DB
 
-![Power BI Desktop Report](media/Power-BI-Desktop-Report.png)
+![Power BI Desktop Report](media/Power BI Desktop Report.png)
 
 Power BI Desktop also supports creating calculations and lets you combine data from multiple aggregate measurements.  Within minutes, you'll be creating analytical reports using data in the local development environment. Once satisfied with the , you can migrate it to the production environment so that your users can use this report to interact with production data.
 
