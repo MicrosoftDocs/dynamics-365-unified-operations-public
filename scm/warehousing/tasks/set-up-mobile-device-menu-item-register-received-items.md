@@ -21,7 +21,7 @@ ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
-ms.search.industry: DIST
+ms.search.industry: Distribution
 ms.author: bibis
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
@@ -30,7 +30,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This task focuses on the setup of a mobile device menu item. This menu item is used for registration of the receipt of items ordered via purchase orders. 
+This task focuses on the setup of a mobile device menu item. This menu item is used for registration of the receipt of items ordered via purchase orders. 
+
 You can use this guide in demo data company USMF. This procedure is intended for the warehouse manager.
 
 

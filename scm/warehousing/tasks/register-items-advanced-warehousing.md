@@ -21,7 +21,7 @@ ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
-ms.search.industry: DIST
+ms.search.industry: Distribution
 ms.author: bibis
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
@@ -30,8 +30,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure shows you how to register items using the item arrival journal when you are using advanced warehouse management processes. This would usually be done by a receiving clerk. 
-You can run this procedure in demo data company USMF, or on your own data. You need to have a confirmed purchase order with an open purchase order line before you start this guide. The item on the line must be stocked, and it must not use product variants, and must not have tracking dimensions. And the item needs to be associated with a warehouse management process enabled storage dimension group. The warehouse that’s used must be enabled for warehouse management processes and the location that you use for receiving must be license plate controlled. If you’re using USMF, you can use company account 1001, Warehouse 51, and item M9200 to create your PO. 
+This procedure shows you how to register items using the item arrival journal when you are using advanced warehouse management processes. This would usually be done by a receiving clerk. 
+
+You can run this procedure in demo data company USMF, or on your own data. You need to have a confirmed purchase order with an open purchase order line before you start this guide. The item on the line must be stocked, and it must not use product variants, and must not have tracking dimensions. And the item needs to be associated with a warehouse management process enabled storage dimension group. The warehouse that’s used must be enabled for warehouse management processes and the location that you use for receiving must be license plate controlled. If you’re using USMF, you can use company account 1001, Warehouse 51, and item M9200 to create your PO. 
+
 Make a note of the number of the purchase order that you create, and also note the item number and the site that you used for your purchase order line.
 
 

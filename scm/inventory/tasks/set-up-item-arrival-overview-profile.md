@@ -21,7 +21,7 @@ ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
-ms.search.industry: DIST
+ms.search.industry: Distribution
 ms.author: bibis
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
@@ -30,8 +30,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This task focuses on the setup of an arrival overview profile. The arrival overview profile is a collection of rules that will be applied when the Arrival overview page is opened by a user. You can use this procedure in demo data company USMF. This procedure would typically be carried out by a receiving clerk.
-
+This task focuses on the setup of an arrival overview profile. The arrival overview profile is a collection of rules that will be applied when the Arrival overview page is opened by a user. You can use this procedure in demo data company USMF. This procedure would typically be carried out by a receiving clerk.
+
+
+
 
 
 1. Go to Inventory management > Setup > Distribution > Arrival overview profiles.
