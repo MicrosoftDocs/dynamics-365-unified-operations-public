@@ -444,7 +444,7 @@ The data packages contain configuration entity spreadsheets. These entity spread
 Save Financial reports to SharePoint
 ------------------------------------
 
-The standard functionality for sending reports to SharePoint is now available for reports generated through Financial reporting. When choosing to Export or Print a generated financial statement, you can now select to publish the financial report to SharePoint.  Using the standard functionality, you can define a notification when a report is available.
+The standard functionality for sending reports to SharePoint is now available for reports generated through Financial reporting. When choosing to export or print a generated financial statement, you can now select to publish the financial report to SharePoint.  Using the standard functionality, you can define a notification when a report is available.
 
 Suspended and inactive dimension values hidden from dimension value lookups
 ---------------------------------------------------------------------------
