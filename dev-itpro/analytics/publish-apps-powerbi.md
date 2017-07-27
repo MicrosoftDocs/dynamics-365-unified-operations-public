@@ -62,7 +62,7 @@ supports migrating PBIX files between environments.
 
 Notice that the Asset library lets you add **Power BI report models** (PBIX > files) as implementation artifacts to a project.
 
-[LCS asset library.png](media/asset-library.png)
+[LCS asset library.png](media/asset-library.PNG)
 
 2.  Select the **+** icon to add a new asset
 
@@ -101,7 +101,7 @@ that the administrator has access to.
 1.  On the client, select **System Administration** \> **Setup** \> **Deploy     Power BI**. You will see the file that you uploaded 
 into LCS.
 
-[Deploy Power BI](media/deploy.jpeg)
+[Deploy Power BI](media/deploy.PNG)
 
 2.  Select the **Sales Report** file, and then select the **Deploy Power BI files** option on the menu.
 
