@@ -39,7 +39,7 @@ Microsoft Dynamics 365 for Finance and Operations includes support for a mobile 
 
 [Mobile platform architecture and design considerations](mobile-platform-architecture.md) 
 
-In addition to this topic, there is a video series on create a mobile app:
+We also have a video series on create a mobile app:
 
 [Tutorial 1: Building the sales order page](https://youtu.be/PdegfBxifl8)
 
