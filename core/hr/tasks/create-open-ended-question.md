@@ -3,7 +3,7 @@
  
 title: Create an open-ended question
 description: Open-ended questions enable respondents to provide their own response. 
-author: kherr82
+author: kherr75
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
