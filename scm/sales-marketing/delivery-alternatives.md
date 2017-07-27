@@ -153,7 +153,7 @@ This tab highlights the impact of the selected delivery alternative. If you clic
 See also
 --------
 
-[Order promising](/dynamics365/unified-operations/supplychain/sales-marketing/delivery-dates-available-promise-calculations)
+[Order promising](delivery-dates-available-promise-calculations.md)
 
 
 
