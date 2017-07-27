@@ -47,6 +47,7 @@ The following table shows whether each feature is available in:
 | | Create Power BI reports with enumerated fields| Yes | ? |
 | | Embed Power BI reports and tiles in Microsoft Dynamics 365 for Operations workspaces| Yes | ? |
 | | Embedded Power BI reports licensed for all users| Yes | No |
+| | Embedded Practice manager Power BI content| Yes | Yes |
 | Cost accounting| | | |
 | | Cost accounting| Yes | ? |
 | | Cost accounting – Cross legal entities | Yes | Yes |
@@ -64,9 +65,11 @@ The following table shows whether each feature is available in:
 | | Configuration data project templates| Yes | Yes |
 | | Configuration data projects| Yes | Yes |
 | | Configuration driven extension| Yes | No |
+| | Data management and integration| Yes | ? |
 | Development and deployment | | | |
 | | Build automation: Automatic update of model version during build | Yes | Yes |
 | | Build automation: Option to include runtime packages in the deployable package of the automated build output| Yes | Yes |
+| | Customize application reports using extensions| Yes | ? |
 | | Deployment| Yes | ? |
 | | Developer tooling - Extensible controls are guided away from non-public APIs| Yes | Yes |
 | | Development and customization - Changing the extended data type (EDT) of a table field using table extensions| Yes | Yes |
@@ -112,6 +115,7 @@ The following table shows whether each feature is available in:
 | | Cash and bank management| Yes | ? |
 | | Cash flow forecasting Power BI| Yes | Hybrid |
 | | CFO Overview workspace| Yes | No |
+| | Edit account entries in the allocation journal| Yes | ? |
 | | Financial dimensions in Financial reporting report definition| Yes | Yes |
 | | Financial dimensions in Power BI| Yes | Hybrid |
 | | Financial Performance PowerBI content designed for CFOs | Yes | ? |
@@ -119,12 +123,16 @@ The following table shows whether each feature is available in:
 | | Financial reporting| Yes | Hybrid |
 | | Financial reporting| Yes | ? |
 | | General ledger| Yes | ? |
+
+| | Late selection option for invoice proposals in a batch| Yes | ? |
+| | Late selection option when posting invoice proposals in a batch| Yes | ? |
 | | Vendor collaboration| Yes | Hybrid |
 | | Vendor invoice attachment enhancements| Yes | Yes |
 | | Vendor payment analysis Power BI| Yes | Hybrid |
 | | Vendor prepayments in fixed-price project estimates| Yes | ? |
 | | Credit and collections| Yes | ? |
 | | Credit and collections management Power BI| Yes | Hybrid |
+| | Direct deposit| Yes | No |
 | Help| | | |
 | Human capital management| | | |
 | | Allow a project resource to delegate timesheet entry and submission to any user | Yes | Yes |
@@ -149,6 +157,7 @@ The following table shows whether each feature is available in:
 | | Additional warehouse support in manufacturing | Yes | ? |
 | | Consignment inventory| Yes | ? |
 | | Consignment inventory| Yes | ? |
+| | Demand replenishment for raw material picking | Yes | Yes |
 | Lifecycle services| | | |
 | | Configurable business processes x 2| Yes | No |
 | LinkedIn engagement| | | |
@@ -183,6 +192,7 @@ The following table shows whether each feature is available in:
 | Product master data| | | |
 | Production | | | |
 | | Cross docking from production to transfer orders| Yes | Yes |
+| | Lean scheduling board| Yes | Yes |
 | Project management and accounting| | | |
 | | Assign resources to draft work breakdown structure | Yes | Yes|
 | | Project management and accounting improvements | Yes | ? |
@@ -191,11 +201,10 @@ The following table shows whether each feature is available in:
 | Retail| | | |
 | |Ability to sell and return outside assortments | Yes | No |
 | | Advanced warehousing in Retail store  | Yes | No |
-| | Retail Channel performance| Yes | ? |
-| | Retail peripheral compatibility| Yes | No |
-| | Retail store | Yes | ? |
+| | Customer orders | Yes | ? |
 | | CDX extensibility enhancements| Yes | No |
 | | Cloud POS | Yes | ? |
+| | Discounts - Quantity limit and exclude discount lines| Yes | No |
 | | e-Commerce & consumer shopping app | Yes | ? |
 | | CRT handlers and extensible enums| Yes | No |
 | | Hybrid cloud - Retail Store | Yes | ? |
@@ -206,6 +215,9 @@ The following table shows whether each feature is available in:
 | | POS Extensibility Enhancements| Yes | No |
 | | POS Inventory visibility improvements| Yes | No |
 | | POS search improvements| Yes | No |
+| | Retail Channel performance| Yes | ? |
+| | Retail peripheral compatibility| Yes | No |
+| | Retail store | Yes | ? |
 | | Support for multiple Retail server extensions| Yes | No |
 | Sales| | | |
 | Service management| | | |
@@ -216,6 +228,8 @@ The following table shows whether each feature is available in:
 | Vendor collaboration| | | |
 | Visual scheduling| | | |
 | Warehouse management| | | |
+| | Enable withdrawal kanban for warehouse processes| Yes | Yes |
+| | Mobile warehouse app| Yes | No |
 | | Warehouse - Partial cycle counting at a location| Yes | Hybrid |
 | | Warehouse enhancements for high volume distribution centers| Yes | ? |
 | | Warehouse operation enhancements| Yes | ? |
@@ -235,114 +249,7 @@ The following table shows whether each feature is available in:
 | | Browser framework - PowerApps Host control| Yes | Yes |
 
 
-| | Customer management | Yes | ? |
-| | Customer orders | Yes | ? |
-| | Customize application reports using extensions| Yes | ? |
-| | Data management and integration| Yes | ? |
-| | Demand replenishment for raw material picking | Yes | Yes |
-| | Direct deposit| Yes | No |
-| | Discounts - Quantity limit and exclude discount lines| Yes | No |
-| | Distribute tasks where it makes sense and increase efficiency| Yes | ? |
-| | Dynamics Translation Service| Yes | Yes |
-| | Edit account entries in the allocation journal| Yes | ? |
-| | Embedded Practice manager Power BI content| Yes | Yes |
-| | Enable withdrawal kanban for warehouse processes| Yes | Yes |
-| | Enhanced administration features for personalization| Yes | Yes |
-| | Enhanced channel database extension model| Yes | No |
-| | Enhancements to the bill of materials functionality| Yes | ? |
-| | Enhancements to the German audit file (GDPdU)| Yes | Yes |
-| | Entity store for high volume near real-time Power BI integration| Yes | ? |
-| | Excel add-in support for creating header records, including journal headers, in Excel| Yes | Yes |
-| | Excel add-in support for publishing data sources in a predictable sequence| Yes | Yes |
-| | Export data to your own data warehouse| Yes | ? |
-| | Fixed asset management workspace and embedded Power BI content| Yes | No |
-| | Fixed assets| Yes | ? |
-| | Flushing principle Available at location| Yes | Yes |
-| | Funding source can be selected for a fee journal line| Yes | ? |
-| | Funding sources can be selected for fee journal lines| Yes | ? |
-| | Help: Content moving to docs.microsoft.com from the Dynamics 365 for Operations Help Wiki| Yes | No |
-| | Ideas portal| Yes | Yes |
-| | Improved viewing experience for Application reports| Yes | Yes |
-| | Integrations| Yes | ? |
-| | Intercompany order processing: ATP and direct shipment| Yes | ? |
-| | Intercompany revenue and cost transactions| Yes | ? |
-| | Item and warehouse migration process to use advanced warehouse management| Yes | Yes |
-| | Late selection option for invoice proposals in a batch| Yes | ? |
-| | Late selection option when posting invoice proposals in a batch| Yes | ? |
-| | Lean scheduling board| Yes | Yes |
-| | Localization configurations| Yes | ? |
-| | Maintain carry-forward status| Yes | Yes |
-| | Manage attachments| Yes | No |
-| | Manage or view a project work breakdown structure using Microsoft Project Client| Yes | Yes |
-| | Managing estimated costs, revenue, and item requirements | Yes | ? |
-| | Manufacturing – Gantt control| Yes | ? |
-| | Microsoft Office integration| Yes | ? |
-| | Microsoft Office integrations| Yes | ? |
-| | Mobile Invoice Approvals| Yes | Hybrid |
-| | Mobile purchase order approvals| Yes | Yes |
-| | Mobile vendor collaboration| Yes | Yes |
-| | Mobile warehouse app| Yes | No |
-| | Mobility and modern user experience | Yes | ? |
-| | Monitoring and telemetry| Yes | ? |
-| | Movement of inventory with associated work in Warehouse management| Yes | Yes |
-| | New termination rules| Yes | ? |
-| | Number sequence scope extensibility| Yes | No |
-| | Onboarding| Yes | No |
-| | Operational performance Power BI content designed for COOs and CFOs| Yes | ? |
-| | Optimize scheduling for planned production orders with overlap jobs| Yes | Yes |
-| | Payments | Yes | ? |
-| | Personalization now supports Task Recorder| Yes | Yes |
-| | Personalized product recommendations powered by cognitive services and Microsoft Azure machine learning| Yes | ? |
-| | Piece picking confirmation| Yes | Yes |
-| | Platform compatibility| Yes | ? |
-| | Power BI content pack for Project management and accounting| Yes | ? |
-| | Product variant enhancements| Yes | ? |
-| | Product work confirmation for cluster picking| Yes | Yes |
-| | Production output location added to the resource group member| Yes | Yes |
-| | Production performance Power BI reports| Yes | Yes |
-| | Project resourcing improvements| Yes | ? |
-| | Project time entry mobile workspace| Yes | Yes |
-| | Prospect to cash integration of Dynamics 365 for Sales and Dynamics 365 for Operations| Yes | Yes |
-| | Punch-out to external catalog from purchase requisition| Yes | No |
-| | Purchase spend analysis Power BI reports| Yes | No |
-| | Purchasing analysis Power BI content| Yes | ? |
-| | Recruiting Power BI reports | Yes | ? |
-| | Redesigned employee self-service | Yes | ? |
-| | Regulatory updates| Yes | ? |
-| | Rename project stages| Yes | Yes |
-| | Reverse charge functionality for European countries/regions| Yes | Yes |
-| | Safety stock de-prioritization in master planning and capable to promise (CTP) calculation| Yes | Yes |
-| | Sales and profitability performance Power BI reports| Yes | No |
-| | Sales orders mobile app  | Yes | No |
-| | Save Financial reports to SharePoint| Yes | Yes |
-| | Security| Yes | ? |
-| | Servicing environments| Yes | No |
-| | Servicing environments| Yes | ? |
-| | Setup for account determination in intercompany revenue and cost transactions can be made more granular | Yes | ? |
-| | Single-click employment verification for all employees| Yes | ? |
-| | SOC 1 Type 1 certification| Yes | No |
-| | Static export to Excel limit increase from 2k to 10k| Yes | Yes |
-| | Substitution/adjustment invoices for Thailand| Yes | Yes |
-| | Support for a worker to be a project resource in multiple legal entities at the same time| Yes | Yes |
-| | Suspended and inactive dimension values hidden from dimension value lookups| Yes | Yes |
-| | System grouping on an open work list| Yes | Yes |
-| | Table browser is now in read-only mode| Yes | Yes |
-| | Talent management| Yes | ? |
-| | Task guides| Yes | ? |
-| | Task recording - Ability to insert and re-order steps| Yes | No |
-| | Tax| Yes | ? |
-| | Tax invoice and tax reports for Thailand| Yes | Yes |
-| | Templates for configuration data projects| Yes | Yes |
-| | Track additional information about employees, jobs, positions, and benefits| Yes | No |
-| | Training courses| Yes | ? |
-| | Training Power BI reports | Yes | ? |
-| | Turn off planning processes per company| Yes | No |
-| | Upgrade| Yes | No |
-| | Upgrade and Support for Previous Versions| Yes | No |
-| | User interface| Yes | ? |
-| | View a comprehensive list of changes across employees, positons, and jobs | Yes | ? |
-| | Visual scheduling| Yes | No |
-| | Web client x 3| Yes | No |
+
 
 
 
