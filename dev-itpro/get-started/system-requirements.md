@@ -261,7 +261,7 @@ The following table lists the number of processors and the amount of random-acce
 
 [![Back end SQL server and AD initial estimates](./media/system-reqs-on-premises-02.PNG)](./media/system-reqs-on-premises-02.PNG) 
 
-\*SQL Server sizes are highly dependent on workloads. For more information, see the [Hardware sizing for on-premises environments](#Hardware-sizing-for-on-premises-environments) section.
+\*SQL Server sizes are highly dependent on workloads. For more information, see the topic [Hardware sizing for on-premises environments](hardware-sizing-on-premises-environments.md).
 
 ## Storage
 
@@ -270,7 +270,7 @@ The following table lists the number of processors and the amount of random-acce
     - A highly available solid-state drive (SSD) setup.
     - A storage area network (SAN) optimized for OLTP throughputs.
     - High performance Direct-attached storage (DAS) 
-- **SQL and data management IOPS** – The storage for both data management and SQL Server should have at least 2,000 input/output operations per second (IOPS). Production IOPS depends on many factors. For more information, see the “Hardware sizing for on-premises environments” section. 
+- **SQL and data management IOPS** – The storage for both data management and SQL Server should have at least 2,000 input/output operations per second (IOPS). Production IOPS depends on many factors. For more information, see the topic [Hardware sizing for on-premises environments](hardware-sizing-on-premises-environments.md).
 - **Virtual machine IOPS** – Each virtual machine should have at least 100 write IOPS.
 
 ## Virtual host requirements
