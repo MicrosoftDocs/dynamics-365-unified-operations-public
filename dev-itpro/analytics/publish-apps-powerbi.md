@@ -70,7 +70,7 @@ Notice that the Asset library lets you add **Power BI report models** (PBIX > fi
 
 4.  Select the **Upload** button and locate the file that you saved in the earlier step.
 
-[Upload new file](media/upload.png)
+![Upload new file](media/upload.PNG)
 
 5.  After successful upload, select **Confirm**.
 
