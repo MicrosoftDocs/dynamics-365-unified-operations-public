@@ -204,7 +204,7 @@ Consider the following domain requirements when you install Finance and Operatio
 
 - Virtual machines that host Finance and Operations (on-premises) components must belong to an Active Directory Domain. Active Directory Domain Services (AD DS) must be configured in native mode.
 - Virtual Machines that run Finance and Operations (on-premises) components must have access to each other configured in Active Directory Domain Services. 
-- The domain controller must run on Microsoft Windows Server 2016.
+- The domain controller must be Windows Server 2012 R2 or later with a domain functional level of 2012 R2 or greater.
 
 ## Hardware requirements
 This section describes the hardware that is required to run Finance and Operations (on-premises).
