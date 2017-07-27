@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Platform update 9
 
 # Getting started with the mobile platform
 
-# Getting started with the mobile app
-
 After you acquire a development environment, complete the following procedures to get started with development.
 
 ### Get the Fleet Management mobile forms
