@@ -31,14 +31,27 @@ ms.dyn365.ops.version: Platform update 9
 ---
 
 # Mobile platform home page
-Add some text here to introduct the mobile platform. It might come from the mobile-platform.md doc.
+
+Microsoft Dynamics 365 for Finance and Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product. 
 
 ## Getting started
 [Mobile platform overview](mobile-platform.md) - This link is temporary. The mobile-platform.md topic will be split out into at least two other topics (getting started and architecture) and then we won't have this file any more.
 
 [Getting started with the mobile platform](mobile-platform-getting-started.md) 
 
-[Mobile platform architecture](mobile-platform-architecture.md) 
+[Mobile platform architecture and design considerations](mobile-platform-architecture.md) 
+
+In addition to this topic, there is a video series on create a mobile app:
+
+[Tutorial 1: Building the sales order page](https://youtu.be/PdegfBxifl8)
+
+[Tutorial 2: Building the sales order details page](https://youtu.be/mF-vlbnRte0)
+
+[Tutorial 3: Building the create new sales order action](https://youtu.be/VYw9oTv9t3o)
+
+[Tutorial 4: Adding a lookup to the create new sales order action](https://youtu.be/eNJKd0IYmZk)
+
+[Tutorial 5: Adding a lookup and hiding pages using mobile business logic](https://youtu.be/kIJKk9J8FvI)
 
 ## Configure a workspace
 [Localize workspaces on the server](scenarios/localizing-workspaces-on-server.md)
