@@ -48,6 +48,8 @@ The following table shows whether each feature is available in:
 | | Embed Power BI reports and tiles in Microsoft Dynamics 365 for Operations workspaces| Yes | ? |
 | | Embedded Power BI reports licensed for all users| Yes | No |
 | | Embedded Practice manager Power BI content| Yes | Yes |
+| | Entity store for high volume near real-time Power BI integration| Yes | ? |
+| | Fixed asset management workspace and embedded Power BI content| Yes | No |
 | Cost accounting| | | |
 | | Cost accounting| Yes | ? |
 | | Cost accounting – Cross legal entities | Yes | Yes |
@@ -66,6 +68,7 @@ The following table shows whether each feature is available in:
 | | Configuration data projects| Yes | Yes |
 | | Configuration driven extension| Yes | No |
 | | Data management and integration| Yes | ? |
+| | Integrations| Yes | ? |
 | Development and deployment | | | |
 | | Build automation: Automatic update of model version during build | Yes | Yes |
 | | Build automation: Option to include runtime packages in the deployable package of the automated build output| Yes | Yes |
@@ -122,8 +125,10 @@ The following table shows whether each feature is available in:
 | | Financial report generation| Yes | Yes |
 | | Financial reporting| Yes | Hybrid |
 | | Financial reporting| Yes | ? |
+| | Fixed assets| Yes | ? |
+| | Funding source can be selected for a fee journal line| Yes | ? |
+| | Funding sources can be selected for fee journal lines| Yes | ? |
 | | General ledger| Yes | ? |
-
 | | Late selection option for invoice proposals in a batch| Yes | ? |
 | | Late selection option when posting invoice proposals in a batch| Yes | ? |
 | | Vendor collaboration| Yes | Hybrid |
@@ -134,6 +139,7 @@ The following table shows whether each feature is available in:
 | | Credit and collections management Power BI| Yes | Hybrid |
 | | Direct deposit| Yes | No |
 | Help| | | |
+| | Help: Content moving to docs.microsoft.com from the Dynamics 365 for Operations Help Wiki| Yes | No |
 | Human capital management| | | |
 | | Allow a project resource to delegate timesheet entry and submission to any user | Yes | Yes |
 | | Apply for any internal job posting through employee self-service | Yes | No |
@@ -162,6 +168,7 @@ The following table shows whether each feature is available in:
 | | Configurable business processes x 2| Yes | No |
 | LinkedIn engagement| | | |
 | Localizations| | | |
+| | Enhancements to the German audit file (GDPdU)| Yes | Yes |
 | | Global coverage - Configurable Electronic Reporting (February 2016 release)| Yes | No |
 | | Global coverage - Configurable Electronic Reporting (July 2017)| Yes | Yes |
 | | Global coverage - Configurable Electronic Reporting (May 2016 Release)| Yes | No |
@@ -182,6 +189,8 @@ The following table shows whether each feature is available in:
 | | Mobile framework - Languages added| Yes | Yes |
 | | Mobile framework - Web client settings| Yes | No |
 | Office integration| | | |
+| | Excel add-in support for creating header records, including journal headers, in Excel| Yes | Yes |
+| | Excel add-in support for publishing data sources in a predictable sequence| Yes | Yes |
 | Organization administration | | | |
 | | Case management| Yes | ? |
 | | Case management for production and quality orders| Yes | ? |
@@ -189,9 +198,12 @@ The following table shows whether each feature is available in:
 | Personalization| | | |
 | Planning and scheduling| | | |
 | Procurement and sourcing| | | |
+| Product information management | | | |
+| | Enhancements to the bill of materials functionality| Yes | ? |
 | Product master data| | | |
 | Production | | | |
 | | Cross docking from production to transfer orders| Yes | Yes |
+| | Flushing principle Available at location| Yes | Yes |
 | | Lean scheduling board| Yes | Yes |
 | Project management and accounting| | | |
 | | Assign resources to draft work breakdown structure | Yes | Yes|
@@ -207,6 +219,7 @@ The following table shows whether each feature is available in:
 | | Discounts - Quantity limit and exclude discount lines| Yes | No |
 | | e-Commerce & consumer shopping app | Yes | ? |
 | | CRT handlers and extensible enums| Yes | No |
+| | Enhanced channel database extension model| Yes | No |
 | | Hybrid cloud - Retail Store | Yes | ? |
 | | Integrated Retail workforce management| Yes | No |
 | | Next generation Retail extensibility framework| Yes | No |
