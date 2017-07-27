@@ -3,7 +3,7 @@
  
 title: Create a new benefit
 description: This task will show you how to create benefit elements which will be used when creating a new benefit. 
-author: kherr81
+author: kherr75
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
