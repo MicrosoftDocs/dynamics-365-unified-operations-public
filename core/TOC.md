@@ -1766,6 +1766,7 @@
 ## Payments
 ### [Payment methods](/dynamics365/unified-operations/retail/payment-methods?toc=dynamics365/unified-operations/retail/toc.json)
 ### [Credit card setup, authorization, and capture](/dynamics365/unified-operations/financials/accounts-receivable/credit-card-authorizations?toc=dynamics365/unified-operations/retail/toc.json)
+### [Configure payment methods for POS](/dynamics365/unified-operations/retail/cash-denominations?toc=dynamics365/unified-operations/retail/toc.json)
 ### [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail?toc=dynamics365/unified-operations/retail/toc.json)
 
 ## Purchase orders
