@@ -3,7 +3,7 @@
  
 title: Define new jobs
 description: This task focuses on the creation of a new job. 
-author: kherr87
+author: kherr75
 manager: AnnBe 
 ms.date: 11/08/2016
 ms.topic: business-process 
