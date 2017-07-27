@@ -3,7 +3,7 @@
  
 title: Set up rate masters
 description: This procedure shows you how to set up a rate master. 
-author: 
+author: BibiSp
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: 
+ms.reviewer: bis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: 
+ms.author: bis
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

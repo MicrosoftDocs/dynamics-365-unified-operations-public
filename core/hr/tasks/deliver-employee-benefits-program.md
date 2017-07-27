@@ -3,7 +3,7 @@
  
 title: Deliver an employee benefits program
 description: This task will show you how to create benefit elements which will be used when creating a new benefit. 
-author: 
+author: kherr75
 manager: AnnBe 
 ms.date: 12/01/2015
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: 
+ms.reviewer: rschloma
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: 
+ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

@@ -3,7 +3,7 @@
  
 title: Approve application inbox records
 description: This procedure shows how to review applications received through the Employee self-service pages. 
-author: twheeloc
+author: ShielaSogge
 manager: AnnBe 
 ms.date: 06/10/2016
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: shielas
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
