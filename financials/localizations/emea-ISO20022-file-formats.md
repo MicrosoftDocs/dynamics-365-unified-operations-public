@@ -110,17 +110,17 @@ If you're importing the camt.054 file, you should specify the following addition
 
 You can view the imported information on the **Payment transfers** page. 
 
-## More details on GER solution design
-When you import a format configuration from the LCS, this will result importing the whole configuration tree including the Model and Model mapping configurations. 
+## Additional details on GER solution design
+When you import a format configuration from LCS, you import the whole configuration tree which means that the Model and Model mapping configurations are included. 
 In the Payment model starting from version 8, the mappings are located in separate GER configurations in the solution tree (Payment model mapping 1611, Payment model mapping to destination ISO20022, etc). There are many different payment formats under one model (Payment model), thus separate mapping handling is a key for easy solution maintenance. 
-For example, in case when ISO20022 payments will be used to generate credit transfer file and then import the return messages from the bank, following configurations should be used:
+For example, consider this scenario: you use ISO20022 payments to generate credit transfer files and then you import the return messages from the bank. In this scenario, you should use the following configurations:
 
  - **Payment model**
  - **Payment model mapping 1611** – this mapping will be used to generate the export file
  - **Payment model mapping to destination ISO20022** – this configuration includes all mappings which will be used to import the data (“to destination” mapping direction)
- - **ISO20022 Credit transfer** – this configuration has format component which is responsible for export file generation (pain.001) based on the Payment model mapping 1611, as well as format to model mapping component which will be used together with Payment model mapping to destination ISO20022 to register exported payments in the system for further import purposes (import in CustVendProcessedPayments technical table)
+ - **ISO20022 Credit transfer** – this configuration includes a format component that is responsible for export file generation (pain.001) based on the Payment model mapping 1611, as well as a format to model mapping component which will be used together with Payment model mapping to destination ISO20022 to register exported payments in the system for further import purposes (import in CustVendProcessedPayments technical table)
  - **ISO20022 Credit transfer (CE)**, where CE correspond to country extension – derived format to the ISO20022 Credit transfer with the same structure and with certain country-specific differences
- - **Pain.002** – this format will be used together with Payment model mapping to destination ISO20022 to import the pain.002 file into vendor payments transfers journal
- - **Camt.054** – this format will be used together with Payment model mapping to destination ISO20022 to import the camt.054 file into vendor payments transfers journal. The same format configuration will be used in customer payments import functionality, but the different mapping will be used in the Payment model mapping to destination ISO20022 configuration.
+ - **Pain.002** – this format will be used together with the Payment model mapping to destination ISO20022 in order to import the pain.002 file into vendor payments transfers journal
+ - **Camt.054** – this format will be used together with the Payment model mapping to destination ISO20022 to import the camt.054 file into vendor payments transfers journal. The same format configuration will be used in customer payments import functionality, but the different mapping will be used in the Payment model mapping to destination ISO20022 configuration.
 
-For more details on Electronic reporting capabilities, see also [Electronic reporting overview](general-electronic-reporting).
+For more information about Electronic reporting, refer to [Electronic reporting overview](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
