@@ -63,7 +63,7 @@ To use a config object to provide localized labels:
 
 5. The config object can now be used and passed to the addLink method instead of the hard-coded label.
 
-    ![metadataService.addLink with call to config object](media/workspace-api/ConfigObjectsBusinessLogicFinal.png=)
+    ![metadataService.addLink with call to config object](media/workspace-api/ConfigObjectsBusinessLogicFinal.png)
 
 ## Using a workspace class to update workspace title and description
 A workspace class can be used to provide localized strings for the workspace title and description. If you do not localize the title and description, the fields will be in the language you implemented them in. In this example, we will localize a workspace where "MyWorkspace" and "A sample workspace" are the title and description, respectively.
