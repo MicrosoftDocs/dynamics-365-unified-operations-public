@@ -204,7 +204,7 @@ Consider the following domain requirements when you install Finance and Operatio
 
 - Virtual machines that host Finance and Operations (on-premises) components must belong to an Active Directory Domain. Active Directory Domain Services (AD DS) must be configured in native mode.
 - Virtual Machines that run Finance and Operations (on-premises) components must have access to each other configured in Active Directory Domain Services. 
-- The domain controller must run on Microsoft Windows Server 2016.
+- The domain controller must be Windows Server 2012 R2 or later with a domain functional level of 2012 R2 or greater.
 
 ## Hardware requirements
 This section describes the hardware that is required to run Finance and Operations (on-premises).
@@ -261,7 +261,7 @@ The following table lists the number of processors and the amount of random-acce
 
 [![Back end SQL server and AD initial estimates](./media/system-reqs-on-premises-02.PNG)](./media/system-reqs-on-premises-02.PNG) 
 
-\*SQL Server sizes are highly dependent on workloads. For more information, see the [Hardware sizing for on-premises environments](#Hardware-sizing-for-on-premises-environments) section.
+\*SQL Server sizes are highly dependent on workloads. For more information, see the topic [Hardware sizing for on-premises environments](hardware-sizing-on-premises-environments.md).
 
 ## Storage
 
@@ -270,7 +270,7 @@ The following table lists the number of processors and the amount of random-acce
     - A highly available solid-state drive (SSD) setup.
     - A storage area network (SAN) optimized for OLTP throughputs.
     - High performance Direct-attached storage (DAS) 
-- **SQL and data management IOPS** – The storage for both data management and SQL Server should have at least 2,000 input/output operations per second (IOPS). Production IOPS depends on many factors. For more information, see the “Hardware sizing for on-premises environments” section. 
+- **SQL and data management IOPS** – The storage for both data management and SQL Server should have at least 2,000 input/output operations per second (IOPS). Production IOPS depends on many factors. For more information, see the topic [Hardware sizing for on-premises environments](hardware-sizing-on-premises-environments.md).
 - **Virtual machine IOPS** – Each virtual machine should have at least 100 write IOPS.
 
 ## Virtual host requirements

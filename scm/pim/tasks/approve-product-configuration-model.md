@@ -3,7 +3,7 @@
  
 title: Approve a product configuration model
 description: Running this procedure requires that at least one product configuration model is available. 
-author: yuyus
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 

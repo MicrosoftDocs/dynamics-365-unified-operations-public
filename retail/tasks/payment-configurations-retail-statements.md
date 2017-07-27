@@ -3,7 +3,7 @@
  
 title: Payment configurations for Retail statements
 description: This procedure demonstrates configurations for Retail store payment methods, which affect how Retail statements get created and posted. 
-author: 
+author: jashanno
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: 
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: 
+ms.search.industry: Retail
+ms.author: jashanno
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -30,8 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-This procedure demonstrates configurations for Retail store payment methods, which affect how Retail statements get created and posted.
-
+This procedure demonstrates configurations for Retail store payment methods, which affect how Retail statements get created and posted.
 This recording uses the USRT demo company.
 
 1. Go to Retail and commerce > Channels > Retail stores > All retail stores.

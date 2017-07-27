@@ -444,10 +444,7 @@ The data packages contain configuration entity spreadsheets. These entity spread
 Save Financial reports to SharePoint
 ------------------------------------
 
-You can utilize all the capabilities for SharePoint for managing your documents.
-You can now publish financial reports to SharePoint, and set up alerts so that
-you are notified when a report is available. Using the Office icon, click
-**Export users** and save the file to a SharePoint location.
+The standard functionality for sending reports to SharePoint is now available for reports generated through Financial reporting. When choosing to export or print a generated financial statement, you can now select to publish the financial report to SharePoint.  Using the standard functionality, you can define a notification when a report is available.
 
 Suspended and inactive dimension values hidden from dimension value lookups
 ---------------------------------------------------------------------------
@@ -1745,8 +1742,7 @@ specific self-test routine that is used for official device compatibility
 testing. Results from compatibility testing can be sent to Microsoft to be
 listed as approved for new deployments of Microsoft Dynamics 365 for Retail.
 
-For a description of the Peripheral simulator, see [Retail Peripheral
-simulator](/unified-operations/retail/dev-itpro/retail-peripheral-simulator).
+For a description of the Peripheral simulator, see [Retail Peripheral simulator](/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator).
 
 For more information about the compatibility program and how to participate,
 contact <drpc@microsoft.com>.
@@ -1896,7 +1892,7 @@ enable the Dynamics AX 2012 R3 CU 11 or CU12 stores to connect with the new HQ.
 If the customer is using a pre-CU 11 version, then they must upgrade to at least
 Dynamics AX 2012 R3 CU 11 to leverage the N-1 support.
 
-For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1) and [N-1 installation and configuration](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1).
+For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1) and [N-1 installation and configuration](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1).
 
 
 **Supply chain management**

@@ -3,7 +3,7 @@
  
 title: Classify a product using category hierarchies
 description: Use category hierarchies to classify products for export, procurement, sales, or other purposes. 
-author: 
+author: ChristianRytt
 manager: AnnBe 
 ms.date: 09/26/2016
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: 
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: 
+ms.author: crytt
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

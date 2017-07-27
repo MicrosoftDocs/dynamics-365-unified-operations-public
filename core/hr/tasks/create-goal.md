@@ -3,7 +3,7 @@
  
 title: Create a goal
 description: You can create goals, add activities to goals, track measurements, and link the goals to a review. 
-author: mikefalkner
+author: kherr75
 manager: AnnBe 
 ms.date: 10/13/2016
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

@@ -3,7 +3,7 @@
  
 title: Original invoice reference (Eastern Europe)
 description: This task walks you through creating corrective lines in a credit note for a sales order. 
-author: 
+author: sndray
 manager: AnnBe 
 ms.date: 02/09/2016
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: 
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Estonia
-ms.search.industry: CRIND
-ms.author: 
+# ms.search.industry: 
+ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
