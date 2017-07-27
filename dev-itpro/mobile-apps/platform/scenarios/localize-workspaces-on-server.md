@@ -65,34 +65,22 @@ To use a config object to provide localized labels:
 
     ![metadataService.addLink with call to config object](media/workspace-api/ConfigObjectsBusinessLogicFinal.png=)
 
-## Using workspace class to update workspace title and description
-Workspace api can be used to localize workspace title and description so that they are shown in the same language as the user mobile phone is using. Without doing the localization the workspace title and description fields will always be shown in the language which you have used to create them.
+## Using a workspace class to update workspace title and description
+A workspace class can be used to provide localized strings for the workspace title and description. If you do not localize the title and description, the fields will be in the language you implemented them in. In this example, we will localize a workspace where "MyWorkspace" and "A sample workspace" are the title and description, respectively.
 
-1. Consider the following workspace which you would like to localize
-In the designer you have entered "MyWorkspace" and "A sample workspace" as title and description.
+![List of workspaces](media/workspace-api/LocalizeWorkspaceTitle.png) 
 
-|![alt text](media/workspace-api/LocalizeWorkspaceTitle.png)| ![alt text](media/workspace-api/LocalizeWorkspaceOriginal.png) |
-|--|--|
+![Selected workspace](media/workspace-api/LocalizeWorkspaceOriginal.png)
 
+1. If you don't have a workspace class for your workspace, create one.
+1. Override the **getWorkspaceMetadata** method to get the workspace metadata. You will need the workspace metadata in order to provide labels for workspace title and description fields.
+1. Use the **workspaceTitle** and **workspaceDescription**  properties to set the workspace title and description from a label. In the following image, placeholders are assigned to the **workspaceTitle** and **workspaceDescription**  properties.
 
-2. For localizing workspace title and description you need to create a workspace class if a workspace class do not exist for your workspace.
+    ![Providing title and description in workspace class](media/workspace-api/LocalizeWorkspaceClass.png)
 
+1. Build the workspace class.
+1. Refresh the app list on the mobile client.
+1. The followign image shows the title and description on a phone using English and Danish.
 
-3. Override method getWorkspaceMetadata to get the workspace metadata. You will need workspace metadata in order to provide labels for workspace title and description fields.
-
-4. Use properties workspaceTitle and workspaceDescription to set the workspace title and description from a label.
-For the demo I have assigned dummy labels to workspaceTitle and workspaceDescription properties.
-
-    ![alt text](media/workspace-api/LocalizeWorkspaceClass.png "Providing title and description in workspace class")
-
-
-
-5. Build the workspace class.
-
-6. Refresh the app list on the mobile client.
-
-7. Below is how the workspace title and description are shown when opened from a mobile running english and danish language.
-
-    ![alt text](media/workspace-api/LocalizeWorkspaceFinal.png "Final workspace")
-
+    ![Final workspace](media/workspace-api/LocalizeWorkspaceFinal.png)
 
