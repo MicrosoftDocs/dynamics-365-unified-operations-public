@@ -2,7 +2,7 @@
 # required metadata
 
 title: Getting started with the mobile platform
-description: 
+description: This topic describes how to develop on the mobile platform.
 author: makhabaz
 manager: AnnBe
 ms.date: 07/01/2017
