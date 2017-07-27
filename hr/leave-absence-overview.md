@@ -2,7 +2,7 @@
 # required metadata
 
 title: Leave and absence management overview
-description: The leave and absence management module offers a flexible framework for defining the absence management process. Leave and absence plans can be created to determine how employees accrue or are granted time off. 
+description: This topic provides an overview of the Leave and absence management module. This module offers a flexible framework for defining the absence management process. Leave and absence plans can be created to determine how employees accrue or are granted time off. 
 author: ryansand
 manager: AnnBe
 ms.date: 07/01/2017
@@ -31,36 +31,42 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Leave and absence management overview
 
-The leave and absence management module offers a flexible framework for defining the absence management process. Leave and absence plans can be created to determine how employees accrue or are granted time off. Once an employee is enrolled in a plan, he or she can submit time off requests to be approved by managers. Leave tracking allows both first level managers and human resource managers to see who is taking time off and how much time off they have remaining.  
+The **Leave and absence management** module offers a flexible framework for defining the absence management process. Leave and absence plans can be created to determine how employees accrue or are granted time off. After employees are enrolled in a plan, they can submit time-off requests for approval by managers. Leave tracking lets both first-level managers and Human Resources (HR) managers see who is taking time off and how much time off each employee still has.  
 
 Leave and absence management provides the following features: 
 
-1. Define leave and absence types 
-> Leave types are the definitions of the different types of absences an employee may report. These types are user-defined to be tailored to your organization. 
+- **Define leave and absence types.**
 
-> Common leave types include PTO, leave, short term disability, jury duty (which is specific to the United States), and bereavement. 
+    Leave types define the various types of absences that employees can report. Because these types are user-defined, they can be tailored to your organization. Some typical leave types include paid time off (PTO), leave, short-term disability, jury duty (this leave type is specific to the United States), and bereavement. 
 
-2.Define leave and absence plans that are tiered to fit your business 
-> Leave and absence plans can be defined to accrue on specific frequencies such as annually, monthly, semimonthly, or other frequency. Plans can also be defined as a grant with a single accrual on a specific date. 
+- **Define leave and absence plans that are tiered to fit your business.**
 
-> Leave plans often contain tiers where some groups of employees receive additional benefits based on time with your organization. These user-defined tiers enable automatic enrollment in additional benefit hours based on the date criteria defined. Leave plans can also be configured to enforce a maximum carry-over amount or enforce a minimum balance to prevent an employee from using more benefit hours than what they have accrued. 
+    Leave and absence plans can be defined so that accrual occurs at specific frequencies, such as annually, monthly, or semimonthly. Plans can also be defined as a grant, where a single accrual occurs on a specific date. 
 
-> Common leave plans may include tiered plans for granting 80 hours of PTO for new employees, but a benefit of 120 hours after 60 months of service. Additional plans may exist for granting floating holidays or position-based benefits such as executive-only benefit hours.
+    Leave plans often contain tiers, where some groups of employees receive additional benefits, based on the amount of time that they have been with the organization. These user-defined tiers enable automatic enrollment in additional benefit hours, based on the date criteria that are defined. Leave plans can also be configured to enforce a maximum carry-over amount or a minimum balance, to prevent employees from using more benefit hours than they have accrued. 
 
-3.	Enroll employees in leave and absence plans individually or through a mass-assignment based on job criteria
-> A group of employees can be assigned to a leave plan based on several job-related filters. Human Resource managers can view employees to see what leave and absence plans they are enrolled in or view all plans and the related employee enrollments.
+    Typical leave plans include tiered plans that grant a benefit of 80 hours of PTO to new employees but a benefit of 120 hours after 60 months of service. Additional plans might grant floating holidays or position-based benefits, such as executive-only benefit hours.
 
-4.	Suspend leave and absence plans
-> Leave and absence plans can be suspended to make them inactive and prevent additional accruals. Employees will have their accruals suspended if their employment ends.  
+- **Enroll employees in leave and absence plans individually or through mass assignment that is based on job criteria.**
 
-5.	Adjust entitlements and grants
-> Employees can be enrolled to a higher plan tier using a worker-specific date to override their default plan offering. Employees can receive a manual adjustment to their leave and absence balance at the time of plan enrollment or as a manual adjustment at any time by human resources. 
+    Several job-related filters can be used to assign a group of employees to a leave plan. HR managers can view an employee to see what leave and absence plans the employee is enrolled in. Alternatively, HR managers can view all plans and the related employee enrollments.
 
-6.	Apply workflow to time off requests 
-> Workflow can be customized and applied to time off requests to meet the organization’s needs.  
+- **Suspend leave and absence plans.**
 
-7.	Track employee’s absence balances
-> Leave and absence balances can be viewed by an employee, their manager, and by human resources. Human resources can use interactive reports to track plan enrollments and time off balances by type. 
+    Leave and absence plans can be suspended to make them inactive and prevent additional accruals. Accruals are suspended for employees if their employment ends.  
 
-8.	Submit time off requests 
-> Employees can submit time off requests against their available hours. Requests can be simple single day requests or multiple days including multiple leave and absence types. If workflow is not enabled, the requests will automatically be approved. If workflow is enabled, then the approval can be automatic or require sign-off based on the workflow configured. 
+- **Adjust entitlements and grants.**
+
+    An employee can be enrolled in a higher plan tier by using a worker-specific date to override the employee's default plan offering. Employees can receive a manual adjustment to their leave and absence balance at the time of plan enrollment, or HR can make a manual adjustment at any time. 
+
+- **Apply a workflow to time-off requests.**
+
+     A workflow can be customized and applied to time-off requests to meet the organization’s requirements.  
+
+- **Track employee absence balances.**
+
+    Employees, their manager, and HR can view leave and absence balances. HR can use interactive reports to track plan enrollments and time-off balances by type. 
+
+- **Submit time-off requests.**
+
+    Employees can submit time-off requests against their available hours. Requests can be simple single-day requests or multiple-day requests that include multiple leave and absence types. If a workflow isn't enabled, the requests are automatically approved. If a workflow is enabled, the approval can be automatic, or it can require sign-off, depending on the workflow configuration.
