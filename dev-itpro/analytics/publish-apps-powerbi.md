@@ -86,15 +86,16 @@ consume assets within the project. It’s very likely that this step has already
 Launch the client from the environment that you want to deploy the Power BI reports. Typically, this is the test or a production 
 instance where you want to see your report with a different set of data than the ones you worked with as a business analyst. 
 
-Go to the\*\* System parameters\*\* page. Select the **Help** tab. Using the **Lifecycle Services help configuration** list box, 
-select the LCS project that you uploaded the PBIX file. Select the **Save** button. 
+Go to the **System parameters** page > **Help**. 
+Using the **Lifecycle Services help configuration** list box to select the LCS project that you upload the PBIX file.
+Select the **Save** button. 
 
 > [!NOTE] 
 > This page will only show the LCS projects where the current user has access to. If this step is being performed by an 
 administrator, either the administrator needs to have access to the project, or the PBIX artifacts need to be imported into a project 
 that the administrator has access to.
 
-1.  On the client, select **System Administration** \> **Setup** \> **Deploy     Power BI**. You will see the file that you uploaded 
+1.  On the client, select **System Administration** \> **Setup** \> **Deploy Power BI**. You will see the file that you uploaded 
 into LCS.
 
 ![Deploy Power BI](media/deploy.PNG)
@@ -115,12 +116,12 @@ This process describes how to use LCS to migrate Analytical Applications from a 
 Because Power BI reports captured as PBIX files are recognized as implementation assets within LCS, you can bundle the reports with 
 other solution assets. For those interested in making custom solutions available to others this offers the following opportunities:
 
--   Amaze customers with rich, interactive reports that are shipped as part of a custom solution
+-   Amaze customers with rich, interactive reports that are shipped as part of a custom solution.
 
--   Create Analytical Applications using Power BI that includes semantic models, sample data, and custom visualizations
+-   Create Analytical Applications using Power BI that includes semantic models, sample data, and custom visualizations.
+
+-   Build and share customized Power BI reports for specific customers.
 
 -   With Power BI reports available as a stand-alone implementation asset, reports can be delivered “out of band” to customers without 
 disrupting services. This allows for an iterative creation process enabling individuals within an organization to author and enhance 
 reports without requiring a Developer.
-
--   You can also build and share customized Power BI reports for specific customers
