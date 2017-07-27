@@ -35,18 +35,20 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../../includes/banner.md)]
 
 
-This topic describes how to track Family and Medical Leave Act (FMLA)
-eligibility and hours worked to meet federal requirements.
+This topic describes how to track Family and Medical Leave Act (FMLA) eligibility and hours worked to meet federal requirements.
 
 ## Prerequisites
 
 The following prerequisites must be in place before you start.
 
+> [!NOTE]
+> The cases and payroll features are available only in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
+
 | Category                                  | Prerequisite      |
 |-------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Task               | Verify that the settings are accurate on the Human resources parameters and Case category type security pages. |
 | Knowledge and experience   | Be familiar with cases and how they work.                |
-| Planning                   | Determine whether you will integrate FMLA with Payroll. (This applies only to Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.)  |
+| Planning                   | Determine whether you will integrate FMLA with Payroll.   |
 | Country/region  | (USA) The primary address for the legal entity must be in the following countries/regions: United States.  |
 
 ## 1. Determine work eligibility
@@ -104,13 +106,15 @@ After you create an FMLA case for a worker, you can recalculate the worker’s e
 
 2. Open the case to log hours for.
 
-3. On the **Action Pane**, in the Maintain group, click FMLA hours.
+3. On the **Action Pane**, in the **Maintain** group, click **Recalculate FMLA eligibility**.
 
-4. Click **Add line** and enter the earning date, hours taken, and any applicable notes.
+4. Select the fields to update based on the worker's current information. 
+
+5. Click **Recalculate.**
 
 ## 4. If required: Enter FMLA hours taken
 
->   After an FMLA clase is approved, you can change and track the number of hours workers apply toward their FMLA leave. To enter FMLA hours that have been taken, follow these steps:
+>   After an FMLA case is approved, you can change and track the number of hours workers apply toward their FMLA leave. To enter FMLA hours that have been taken, follow these steps:
 
 1. Open the FMLA cases page.
 
@@ -121,11 +125,11 @@ After you create an FMLA case for a worker, you can recalculate the worker’s e
 4. Click **Add line** and enter the earning date, hours taken, and any applicable notes.
 
 > [!NOTE]
->   The source column is always set to **Manual** unless FMLA is integrated with Microsoft Dynamics AX and the line was created by the system.
+>   The source column is always set to **Manual**. If you’re using Dynamics 365 for Finance and Operations and Payroll, the source column can be updated automatically based on the earning code used on the employee’s pay statement.
 
 ## 5. If required: Set up Payroll to integrate with FMLA
 
-If you use Payroll, you can use earning codes to automatically track the hours worked that count toward FMLA. When earning lines that contain these codes are released during the approved leav period for a worker, the time counts toward **FMLA** and is added to the FMLA hours form for the FMLA case.
+If you use Dynanmics 365 for Finance and Operations and Payroll, you can use earning codes to automatically track the hours worked that count toward FMLA. When earning lines that contain these codes are released during the approved leav period for a worker, the time counts toward **FMLA** and is added to the FMLA hours form for the FMLA case.
 
 > [!TIP]
 > If you use this method of tracking FMLA hours, you can still change the hours manually after they are created.
@@ -136,14 +140,14 @@ To integrate Payroll with FMLA, complete the following steps.
 
 2. Open an earning code that, when hours are logged for a worker, reduces the number of FMLA hours available for the worker.
 
-3. On the **General** tab, select a value in the **Reduce remaining FMLA** time field.
+3. Select the **Reduce remaining FMLA time** check box.
 
 > [!NOTE]
 > You can select this check box only if the **Productive** check box isn’t selected and the **Unit of measure** is set to **Hours**.
 
 ## Optional: Generate the FMLA hours taken report
 
-You can create a report of all workers who have FMLA cases and the hours that have been applied toward each case. To generate the FMLA leave taken report, follow these steps:
+You can create a report of all workers who have FMLA cases and the hours that have been applied toward each case. This report is available only in Dynamics 365 for Finance and Operations. To generate the FMLA leave taken report, follow these steps:
 
 1. Open the **FMLA leave taken** page.
 
