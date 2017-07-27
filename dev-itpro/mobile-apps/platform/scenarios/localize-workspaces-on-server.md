@@ -2,7 +2,7 @@
 # required metadata
 
 title: Localize workspaces on the server
-description: 
+description: Workspace classes can be used in multiple ways to provide localization support to workspaces.
 author: makhabaz
 manager: AnnBe
 ms.date: 07/01/2017
@@ -30,49 +30,40 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-
-
-# Localizing workspaces on server
+# Localize workspaces on server
 Workspace classes can be used in multiple ways to provide localization support to workspaces.
 
 ## Using config objects to pass localized labels
-Config objects can be added to the workspace metadata when it is requested by the mobile app. These config object can later be used to provide localization support.
+A config object can be added to the workspace metadata when it is requested by the mobile app. The config object can later be used to provide localization support. Suppose you have the following scenario where a workspace requires localized labels for the **pageLink** control that you added via the business logic.
 
-Consider the following scenario where a workspace requires localized labels for the pageLink control that was added via the business logic.
+ ![Customer details with Rentals that is not localized](media/workspace-api/ConfigObjectsPage.png)
 
- ![alt text](media/workspace-api/ConfigObjectsPage.png "Workspace that needs to be localized")
+The business logic for the app contains a call to the **addLink** method to add a link to Rentals page for the current customer. In this case, the label is "Rentals". The problem is that there isn't a localized label for the link and it will always show up as "Rentals".
 
-In the business logic for the app we have called the addLink api to add a link to Rentals page for the current customer. Note that we are providing "Rentals" as the label.
-
-![alt text](media/workspace-api/ConfigObjectsBusinessLogicOriginal.png "Original business logic")
-
-As you can see above the problem is we don’t have a localized label for the link and it will always show up as "Rentals"
+![Call to metadataService.addLink](media/workspace-api/ConfigObjectsBusinessLogicOriginal.png)
 
 
-Below are the steps to show how config objects can be utilized to provide localized labels.
+To use a config object to provide localized labels:
 
-1. Create a config class that contains the fields for the labels. For our requirement I am adding 1 field on the class that will contain the label for the pageLink control. The config class needs to be a data contract class
+1. Create a config class that contains the fields for the labels. One field, **rentalLinkLabel**, is added to the class that will contain the label for the **pageLink** control. The config class needs to be a data contract class.
 
-    ![alt text](media/workspace-api/ConfigClass.png "Config class")
+    ![Config class code](media/workspace-api/ConfigClass.png)
 
-2. This config class will be utilized by a workspace class for the workspace. Workspace class requires appId of the workspace. You can easily get appId from the App designer form as shown below.
+2. The config class is used by a workspace class for the workspace. The workspace class requires the appId of the workspace. The appId is listed on the App designer, as shown in the following image.
 
-    ![alt text](media/workspace-api/ConfigWorkspaceSummary.png "Workspace summary")
+    ![Workspace summary](media/workspace-api/ConfigWorkspaceSummary.png)
 
+3. The following image shows the workspace class looks like with the appId set on the attribute. The class also contains a method, **addConfig**, to set a config object that contains value for the label.
 
-3. Below is how the workspace class looks like with the appId set on the attribute. It also contains method to set a config object that contains value for the label
+    ![Workspace class](media/workspace-api/ConfigWorkspace.png)
 
-    ![alt text](media/workspace-api/ConfigWorkspace.png "Workspace class")
+4. The following image shows the config object in appInit call in the mobile app.
 
+    ![Config object in mobile app](media/workspace-api/ConfigClientSide.png)
 
-4. In the mobile app, you will get the config object in appInit call as shown below
+5. The config object can now be used and passed to the addLink method instead of the hard-coded label.
 
-    ![alt text](media/workspace-api/ConfigClientSide.png "Config object in mobile app")
-
-5. The config object can now be utilized and passed further to addLink api instead of the hard coded label in the business logic file
-
-  ![alt text](media/workspace-api/ConfigObjectsBusinessLogicFinal.png "Update business logic")
-
+    ![metadataService.addLink with call to config object](media/workspace-api/ConfigObjectsBusinessLogicFinal.png=)
 
 ## Using workspace class to update workspace title and description
 Workspace api can be used to localize workspace title and description so that they are shown in the same language as the user mobile phone is using. Without doing the localization the workspace title and description fields will always be shown in the language which you have used to create them.
