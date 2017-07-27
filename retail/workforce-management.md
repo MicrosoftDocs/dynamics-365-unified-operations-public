@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workforce management overview
-description: This topic describes how you can use Workforce management (WFM) service to leverage the familiar Point of Sale clients - Modern POS and Cloud POS - to empower store managers to easily manage their workforce. 
+description: This topic describes how you can use the Workforce management (WFM) service to take advantage of the familiar point of sale (POS) clients, Modern POS and Cloud POS, so that store managers can easily manage their workforce.
 author: shalabhjainmsft
 manager: AnnBe
 ms.date: 7/20/2017
@@ -34,19 +34,31 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 [!include[banner](includes/banner.md)]
 	
-Workforce management (WFM) service leverages the familiar Point of Sale clients - Modern POS and Cloud POS - to empower store managers to easily manage their workforce. The WFM service uses the extension framework to download the relevant packages in POS. These packages are downloaded when the POS is closed and reopened. When Microsoft releases new features for WFM, the POS app needs to be closed and reopened. Using this service, the store managers can easily create and publish weekly work schedule for their stores. The store workers can quickly view their schedules, along with the schedule of their colleagues, to know who will be working with them during the assigned shifts. They can also create requests for absence, shift swap, and shift offer, all of which trigger a defined workflow. During the shift, the store workers can leverage the clock in and clock out capability, built in the POS clients, which sends the data to the HQ for payroll processing. The clock in and clock out feature is an existing capability of POS. The following link provides more details about the setup and supported scenarios
-[Clock in and clock out]( https://docs.microsoft.com/en-us/dynamics365/operations/retail/retail-time-attendance).
+The Workforce management (WFM) service takes advantage of the familiar point of sale (POS) clients, Modern POS and Cloud POS, to let store managers easily manage their workforce. The WFM service uses the extension framework to download the relevant packages in the POS. These packages are downloaded when the POS is closed and reopened. Therefore, when Microsoft releases new features for WFM, the POS app must be closed and reopened.
+
+By using this service, store managers can easily create and publish weekly work schedule for their stores. Store workers can then quickly view their own schedules and the schedules of their colleagues. In that way, they can learn who will be working with them during the assigned shifts. Store workers can also create requests for absence, shift swap, and shift offer. All these requests trigger a defined workflow.
+
+During a shift, store workers can take advantage of the clock-in and clock-out feature that is built into the POS clients. The data is then sent to the headquarters (HQ) for payroll processing. The clock-in and clock-out feature is an existing capability of the POS. For more information about the setup and supported scenarios, see [Clock in and clock out](https://docs.microsoft.com/en-us/dynamics365/operations/retail/retail-time-attendance).
 
 ## Supported scenarios
-The following section provides additional details on the supported scenarios:
+This section provides more information about the supported scenarios.
 
-* __Schedule creation and publish__ - The WFM service leverages the POS permissions configured in the HQ to determine if a worker has store manager privileges. Only a store manager can create and publish schedules using the Schedule management operation. They can copy and paste an existing work shift from one worker to another to quickly create the schedule. Additionally, they can import the schedule from any of the previous weeks to the current week to create the schedule. If the schedule is not published, then the schedule is in a draft state, which is visually different than the schedule in the published schedule. Store managers can publish the schedule by clicking the **Publish** button for any week. After the schedule is published for a week, then any further changes, such as adding, editing, or deleting work shifts or absences are automatically published. The store workers can only view the schedule for the published weeks.
+- **Create and publish schedules** – The WFM service uses the POS permissions that are configured in the HQ to determine whether a worker has store manager privileges. Only store managers can create and publish schedules by using the Schedule management operation. They can quickly create a schedule by copying and pasting an existing work shift from one worker to another worker. They can also create a schedule by importing the schedule from any previous week to the current week.
 
-* __Create and approve requests__ - The store workers can create three types of requests:
-  - Request absence 
-  - Request shift swap
-  - Request shift offer 
+    If a schedule isn't published, it's in a draft state and looks different than a published schedule. Store managers can publish a schedule by clicking the **Publish** button for any week. After the schedule is published for a week, any changes are automatically published. Examples of changes include the addition or deletion of work shifts or absences, or edits to work shifts or absences. Store workers can view only schedules that have been published for various weeks.
+    
+- **Create and approve requests** – Store workers can create three types of request:
 
-  These requests can be created using the Schedule requests operation. Each request follows a defined workflow and the workers can easily see the current status of their requests. Absence requests are automatically sent to the store manager for approval. If there are multiple store managers, all managers will be able to view the request, but only one of manager will be able to approve or reject the request. The absence types are configured in the retail HQ using the **Leave and absence types** form in the Retail module. After the store manager approves or rejects the request, it moves to the **History** tab of the Schedule requests operation. For shift swap and offer requests, the request first goes to the worker to whom the request is sent. Only after this worker has approved the request can the store manager view the request. For example, if the worker rejects the shift swap or offer request then the manager will not be able to view it. The worker who created the request also has an option to cancel the request before the manager approves or denies it.  
-	
-* __Display the active store workers in the schedule view__ - When a worker is added to a store, such as by associating to the store's employee address book, then this worker will be available for scheduling in the WFM service. This is achieved by running a recurring batch job named **Process worker data for workforce management** in HQ. This job prepares the store-worker associations that will be sent to the Common Data Service (CDS). The same is true for removing a worker from a store scenario. However, the removed worker will still be displayed for the past, current, and future weeks if there is an active work shift or absence assigned to the removed worker. Thus, unless these work shifts and absences are deleted, the removed worker will be displayed for these weeks.
+    - Request absence
+    - Request shift swap
+    - Request shift offer
+
+    These requests can be created by using the Schedule requests operation. Each request follows a defined workflow, and workers can easily see the current status of their requests.
+    
+    Absence requests are automatically sent to the store manager for approval. If there are multiple store managers, all managers can view a given request, but only one manager can approve or reject it. The absence types are configured in the retail HQ by using the **Leave and absence types** page in the **Retail** module. After the store manager approves or rejects a request, it's moved to the **History** tab for the Schedule requests operation.
+    
+    A shift swap or shift offer request first goes to the worker that the request was sent to. The store manager can view the request only after this worker has approved it. Therefore, if the worker rejects the shift swap or shift offer request, the manager can't view it. The worker who created the request can also cancel it before the manager approves or denies it.
+
+- **Show the active store workers in the schedule view** – When a worker is added to a store by, for example, associating him or her with the store's employee address book, the worker becomes available for scheduling in the WFM service. A recurring batch job that is named **Process worker data for workforce management** is run in the HQ. This job prepares the store-worker associations that will be sent to the Common Data Service (CDS).
+
+    The same process is used when a worker is removed from a store. However, the worker who is removed is still shown for past, current, and future weeks if an active work shift or absence is assigned to that worker. Therefore, unless these work shifts and absences are deleted, the removed worker will continue to be shown for these weeks.
