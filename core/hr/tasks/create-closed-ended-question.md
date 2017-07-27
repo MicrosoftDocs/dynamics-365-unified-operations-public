@@ -1,9 +1,9 @@
---- 
+-- 
 # required metadata 
  
 title: Create a closed ended question
 description: Closed-ended questions allow you to provide options for the respondent to choose from. 
-author: kherr77
+author: kherr75
 manager: AnnBe 
 ms.date: 06/10/2016
 ms.topic: business-process 
