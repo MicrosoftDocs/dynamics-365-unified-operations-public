@@ -45,9 +45,7 @@ Application Lifecycle Management process for transitioning Analytical applicatio
 
 ## Publishing Analytical Applications on PowerBI.com
 
-Before continuing, make sure that have you've verified and packaged your Analytical Applications into a PBIX file using Power BI Desktop. See details
-here for details on creating Analytical Applications using the local Entity Store database. Once you're ready to promote your solution, 
-use the following steps as a guide for publishing Analytical Applications to PowerBI.com.
+Before continuing, make sure that have you've verified and packaged your Analytical Applications into a PBIX file using Power BI Desktop. See details here for details on creating Analytical Applications using the local Entity Store database. Once you're ready to promote your solution, use the following steps as a guide for publishing Analytical Applications to PowerBI.com.
 
 **Step 1** Upload reports to Dynamics Lifecycle Services
 
@@ -62,7 +60,7 @@ supports migrating PBIX files between environments.
 
 Notice that the Asset library lets you add **Power BI report models** (PBIX > files) as implementation artifacts to a project.
 
-[LCS asset library.png](media/asset-library.PNG)
+![LCS asset library.png](media/asset-library.PNG)
 
 2.  Select the **+** icon to add a new asset
 
@@ -101,7 +99,7 @@ that the administrator has access to.
 1.  On the client, select **System Administration** \> **Setup** \> **Deploy     Power BI**. You will see the file that you uploaded 
 into LCS.
 
-[Deploy Power BI](media/deploy.PNG)
+![Deploy Power BI](media/deploy.PNG)
 
 2.  Select the **Sales Report** file, and then select the **Deploy Power BI files** option on the menu.
 
