@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mobile platform architecture
-description: 
+description: This topic provides in-depth information on designing mobile apps.
 author: makhabaz
 manager: AnnBe
 ms.date: 07/01/2017
@@ -31,12 +31,12 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 # Architecture and design considerations for the mobile app platform
-The mobile app platform doesn't assume connectivity to Finance and Operations. Activities such as navigation, data view, and data entry don't require server connectivity after data has been cached.
 
-## Architecture
 The mobile app communicates with Application Object Server (AOS) to get the metadata for the mobile workspaces (and the pages and the fields that appear on the page), and to get the data for the fields on the pages. Each time that the mobile app requests data for a page, AOS creates a new session that uses the context of the user who is using the mobile app. AOS then uses the user's context to open the corresponding forms (by using the corresponding menu items). AOS can open multiple forms in quick succession and perform actions on those forms (for example, filtering, opening FactBoxes, changing tab pages, and clicking buttons). Any business logic on the forms is also run as usual. Through that process, AOS collects the data values from the requested fields and then sends that data back to the mobile app. 
 
 ![Mobile architecture](media/mobilearchitecture.png)
+
+The mobile app platform doesn't assume connectivity to Finance and Operations. Activities such as navigation, data view, and data entry don't require server connectivity after data has been cached.
 
 ## Page design guidelines
 Before you begin to use the designer to build pages and actions, it’s important that you plan the overall design of the mobile workspace that you want to build. We recommend that you orient your design around the entities that you plan to use in the mobile workspace. Don't begin by thinking about the forms that you want to use. From the perspective of the mobile app, the forms are just a mechanism for retrieving data, and the run-time UI behavior of a form isn't applicable to the mobile app. Therefore, you should first identify your entities and the relationships between them. For each entity, the following questions will help you decide how you should design your forms and pages.
