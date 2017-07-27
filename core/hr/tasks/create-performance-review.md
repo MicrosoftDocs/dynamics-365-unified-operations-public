@@ -3,7 +3,7 @@
  
 title: Create a performance review
 description: This procedure shows how to create a performance review and describes the purpose for each section of the review. 
-author: kherr83
+author: kherr75
 manager: AnnBe 
 ms.date: 10/13/2016
 ms.topic: business-process 
