@@ -3,7 +3,7 @@
  
 title: Set up payment slip format for project invoices
 description: Businesses commonly attach printed payment slips to invoices to assist customers and provide a payment reference for posting and settlement. 
-author: 
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 02/16/2017
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: 
+ms.author: epopov
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

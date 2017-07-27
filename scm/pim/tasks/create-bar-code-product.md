@@ -3,7 +3,7 @@
  
 title: Create a bar code for a product
 description: This procedure shows how to manually create a bar code using the item number M0001 as an example. 
-author: yuyus
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 09/26/2016
 ms.topic: business-process 

@@ -3,7 +3,7 @@
  
 title: Create financial dimensions for POS registers and configure dimension values on registers
 description: This procedure walks through creating financial dimensions for point of sale (POS) registers, and demonstrates how to configure financial dimension values on registers. 
-author: 
+author: jashanno
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: 
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: 
+ms.search.industry: Retail
+ms.author: jashanno
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

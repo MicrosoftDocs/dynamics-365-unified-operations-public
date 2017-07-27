@@ -3,7 +3,7 @@
  
 title: Submit and approve project budget revisions
 description: This procedure provides information about revising a project budget. 
-author: 
+author: mkirknel
 manager: AnnBe 
 ms.date: 02/13/2017
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: 
+ms.reviewer: bis
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
-ms.search.industry: SVCIND
-ms.author: 
+ms.search.industry: Service industries
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

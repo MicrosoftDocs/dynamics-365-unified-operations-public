@@ -3,7 +3,7 @@
  
 title: Create a closed ended question
 description: Closed-ended questions allow you to provide options for the respondent to choose from. 
-author: twheeloc
+author: kherr77
 manager: AnnBe 
 ms.date: 06/10/2016
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

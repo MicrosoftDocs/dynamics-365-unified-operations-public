@@ -3,7 +3,7 @@
  
 title: Employment verification using form I-9
 description: The Immigration Reform and Control Act requires US employers to verify the employment eligibility status of newly hired employees. 
-author: 
+author: ShielaSogge
 manager: AnnBe 
 ms.date: 06/23/2016
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: 
+ms.reviewer: rschloma
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: 
+ms.author: shielas
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Employment verification using form I-9
 
-[!include[task guide banner](../../../includes/task-guide-banner.md)]
+[!include[task guide banner](../../includes/task-guide-banner.md)]
 
 The Immigration Reform and Control Act requires US employers to verify the employment eligibility status of newly hired employees. This procedure will walk you through the steps of recording the necessary documents for I-9 verification. Use the USMF company for this procedure.
 

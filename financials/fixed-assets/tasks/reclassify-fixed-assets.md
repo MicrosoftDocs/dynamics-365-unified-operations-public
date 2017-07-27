@@ -3,7 +3,7 @@
  
 title: Reclassify fixed assets
 description: To reclassify a fixed asset, you must transfer it to a new fixed asset group or assign a new fixed asset number to it in the same group. 
-author: twheeloc
+author: saraschi2
 manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 

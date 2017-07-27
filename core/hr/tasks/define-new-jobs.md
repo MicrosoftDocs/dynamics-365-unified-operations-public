@@ -3,7 +3,7 @@
  
 title: Define new jobs
 description: This task focuses on the creation of a new job. 
-author: DarinKramer
+author: kherr87
 manager: AnnBe 
 ms.date: 11/08/2016
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

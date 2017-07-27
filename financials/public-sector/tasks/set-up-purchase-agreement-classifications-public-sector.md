@@ -30,8 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-The purchase agreement classification allows you to control the administrative information that is available on purchase agreements. 
-
+The purchase agreement classification allows you to control the administrative information that is available on purchase agreements. 
 This procedure was created for the French public sector using the PSUS demo company data in the public sector partition.
 
 1. Go to Procurement and sourcing > Setup > .. > Purchase agreement classification.

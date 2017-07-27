@@ -3,7 +3,7 @@
  
 title: Create a performance review
 description: This procedure shows how to create a performance review and describes the purpose for each section of the review. 
-author: mikefalkner
+author: kherr83
 manager: AnnBe 
 ms.date: 10/13/2016
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

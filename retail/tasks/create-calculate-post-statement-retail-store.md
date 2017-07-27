@@ -3,7 +3,7 @@
  
 title: Create, calculate, and post a statement for a retail store
 description: This procedure walks through the manual steps for creating, calculating, and posting a statement for a store. 
-author: 
+author: jashanno
 manager: AnnBe 
 ms.date: 11/15/2016
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: 
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: 
+ms.search.industry: Retail
+ms.author: jashanno
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

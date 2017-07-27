@@ -3,7 +3,7 @@
  
 title: Enroll an employee in a fixed compensation plan
 description: The compensation and benefits manager can assign employees to fixed compensation plans to manage their base pay. 
-author: twheeloc
+author: kherr93
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
