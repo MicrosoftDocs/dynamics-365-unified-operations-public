@@ -38,7 +38,7 @@ ms.dyn365.ops.version: 2012
 Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make. This article guides you through the planning process. 
 
 > [!NOTE]
-> Dynamics AX 2012 R3 can also be deployed on-premises. For details, see the topic [Install Microsoft Dynamics AX 2012](https://technet.microsoft.com/en-us/library/dd362138.aspx)
+> Dynamics AX 2012 R3 can also be deployed on-premises. For details, see the topic [Install Microsoft Dynamics AX 2012](https://technet.microsoft.com/en-us/library/dd362138.aspx).
 
 Verify that you can log on to Lifecycle Services
 ------------------------------------------------
