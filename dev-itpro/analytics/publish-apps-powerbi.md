@@ -40,7 +40,7 @@ After the reports are uploaded to an LCS project, they can be published to produ
 
 ## Publishing analytical applications to PowerBI.com
 
-Before you continue, make sure that you've verified and packaged your analytical applications into a PBIX file by using Microsoft Power BI Desktop. For information about how to create analytical applications by using the local Entity Store database, see [title of relevant topic]. When you're ready to promote your solution, follow these steps to publish the analytical applications to PowerBI.com.
+Before you continue, make sure that you've verified and packaged your analytical applications into a PBIX file by using Microsoft Power BI Desktop. For information about how to create analytical applications by using the local Entity Store database, see [Author analytical reports by using Power BI Desktop](author-distribute-power-bi-reports.md.md). When you're ready to promote your solution, follow these steps to publish the analytical applications to PowerBI.com.
 
 ### Step 1: Upload the report to LCS
 
@@ -50,7 +50,7 @@ LCS is the tool that is used to migrate development artifacts from developer env
 2. If you haven’t already created a project in the LCS environment, create a project.
 3. Scroll to the right, and select the **Asset library** tile.
 
-    Notice that, in the Asset library, you can add assets of the **Power BI report model** type (PBIX \> files) to a project as implementation artifacts.
+    Notice that, in the Asset library, you can add assets of the **Power BI report model** type (.pbix files) to a project as implementation artifacts.
 
     ![Asset library](media/asset-library.PNG)
 
