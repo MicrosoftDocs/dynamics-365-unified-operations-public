@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Platform update 9
 
 ---
 
-# Mobile platform home page
+# Welcome to Dynamics 365 Unified Operations Mobile Platform
 
-Microsoft Dynamics 365 for Finance and Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product. 
+Microsoft Dynamics 365 Unified Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product. 
 
 ## [Getting started](mobile-platform-getting-started.md) 
 
@@ -50,22 +50,22 @@ We also have a video series about creating a mobile app:
 
 [Tutorial 5: Adding a lookup and hiding pages using mobile business logic](https://youtu.be/kIJKk9J8FvI)
 
-## Configure a workspace
-[Localize workspaces on the server](scenarios/localizing-workspaces-on-server.md)
+## Configure a mobile workspace
+[Localize workspaces](scenarios/localizing-workspaces-on-server.md)
 
 [Make fields mandatory](scenarios/marking-fields-mandatory.md)
 
-[Secure workspaces in mobile apps](scenarios/securing-workspaces.md)
+[Secure workspaces](scenarios/securing-workspaces.md)
 
 [Display a field as a URL](scenarios/show-field-as-url.md)
 
 [Use the workspace classes to configure workspaces on the server](scenarios/workspace-classes.md)
 
-## Optimize a workspace
-[Use regular fields to provide counts on the workspace](scenarios/using-regular-fields-for-count.md)
+## Optimize a mobile workspace
+[Use regular fields to provide counts](scenarios/using-regular-fields-for-count.md)
 
 ## Client-side development reference
-[Introduction to mobile workspace design](scenarios/design-overview.md)
+[Introduction to workspace design](scenarios/design-overview.md)
 
 [Client APIs](client-apis/client-apis-reference.md)
 
