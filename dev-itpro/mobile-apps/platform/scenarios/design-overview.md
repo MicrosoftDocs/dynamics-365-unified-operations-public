@@ -67,7 +67,8 @@ A modified segment of business logic code from a Reservation Management example 
 > [!NOTE]
 > Any color, font size, or font weight applied to a given control will also apply to all of the children. Padding will be applied to the non-container children. No other properties will be inherited. Containers include lists, pages, groups, and parts.
 
-Once a control is created without any further children or items, the control name only needs to be written in quotes (see `FMCustomer_FullName` below). However, if any customization will be applied to that control then the code must be blocked and written as `FMCustomer_Image` is written below with the "name" label.
+Once a control is created without any further children or items, the control name only needs to be written in quotes (see **FMCustomer_FullName** in the code example). However, if any customization will be applied to that control then the code must be blocked and written as **FMCustomer_Image** is written below with the **name** label.
+
 ```
 // Page root container
 "flexFlow":"column nowrap",
@@ -110,7 +111,7 @@ Once a control is created without any further children or items, the control nam
 	}
 ```
 
-The above code produces the customer image, customer name, font, background color, etc. as shown in the image below.
+The above code produces the customer image, customer name, font, background color, etc. as shown in the following image.
 
 ![sample image](../media/detail%20page.PNG)
 
