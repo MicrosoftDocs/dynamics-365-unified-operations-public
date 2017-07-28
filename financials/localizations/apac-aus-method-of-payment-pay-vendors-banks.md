@@ -24,7 +24,7 @@ ms.custom: 12354
 ms.assetid: f835ced1-28a8-4db8-a4fb-06efd71122dd
 ms.search.region: Australia
 # ms.search.industry: 
-ms.author: leguo
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
