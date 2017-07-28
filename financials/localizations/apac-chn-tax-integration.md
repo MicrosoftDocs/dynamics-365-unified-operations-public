@@ -53,12 +53,12 @@ To configure tax integration for China, complete the following tasks.
 The tax integration process is illustrated in the following diagram.
 [![IC666469](./media/ic666469.gif)](./media/ic666469.gif)
 
-See also
---------
+## See also
 
-[Import the Chinese Golden Tax data entity](apac-chn-import-golden-tax-data-entity.md)
+- [Import the Chinese Golden Tax data entity](apac-chn-import-golden-tax-data-entity.md)
 
-[Chinese tax integration modification for VAT customer invoices FAQ](apac-chn-tax-integration-vat-customer-invoices.md)
+- [Chinese tax integration modification for VAT customer invoices FAQ](apac-chn-tax-integration-vat-customer-invoices.md)
 
+- [Set up basic tax integration for China](./tasks/set-up-basic-tax-integration-profile-china.md)
 
 
