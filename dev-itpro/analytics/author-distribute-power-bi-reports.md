@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Author and distribute Power BI reports with Entity store
-description: This topic walks you through the process of authoring and publishing Power BI reports with Entity store. 
+title: Author analytical reports by using Power BI Desktop
+description: This topic walks you through the process of authoring Power BI reports by using the local Entity Store database. 
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
@@ -30,75 +30,62 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Author and distribute Power BI reports with Entity store
+# Author analytical reports by using Power BI Desktop
 
 [!include[banner](../includes/banner.md)]
 
+If you're a power user or a business analyst, you probably create many reports for your organization. You might create these reports in Microsoft Excel by formatting and relating data before you share it with other people. People in your organization might even come to you when they require modifications to the report. This solution offers an easy way to create rich, interactive reports. As a report writer, you can use Microsoft Power BI Desktop as the reporting tool. The reports that you create can then be published to PowerBI.com. For more information about Power BI Desktop, see [Create stunning reports and visualizations with Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop).
 
-This topic walks you through the process of authoring and publishing Power BI reports with Entity store. 
+## Accessing the local Entity Store by using DirectQuery
+In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you can create Microsoft Power BI reports by using Open Data Protocol (OData) endpoints that are exposed via data entities. Despite the limitations of this approach, the Entity Store still supports it for legacy solutions. However, DirectQuery is now the preferred method for sourcing data for analytical solutions. For more information about the benefits and limitations of DirectQuery, see [Use DirectQuery in Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-use-directquery/).
 
-Create reports on the Power BI desktop
---------------------------------------
+When you use Power BI Desktop, you can create a report in your development or test environment by connecting directly to the local Entity Store database. When you're satisfied with the report, your administrator can help you migrate it to your production environment. The rest of this section walks you through this process.
 
-If you are a power user or a business analyst, you probably create many reports for your users. Perhaps you create them in Microsoft Excel: exporting data to an Excel file, formatting and relating data, and then creating a report or a chart before you email it to users. Your users probably come back to you if they need to make a modification to the report (and yes, you may be very busy with a queue of requests waiting in your inbox; so let’s get to the point quickly). We want to help you by providing an easy way to author rich, interactive reports. As a report writer, you could use Power BI desktop as the reporting tool and the reports you create can be published to PowerBI.com. You can read more about Power BI desktop in [Create stunning reports and visualizations with Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop). In the Dynamics AX 7.0 (February 2016) release, you could author Power BI reports by using OData end points that are exposed via data entities (both aggregate data entities as well as “detailed” or “regular” data entities). Although this approach is still supported, with Entity store, power users or business analysts can create reports using the DirectQuery option enabled for SQL server databases. This approach yields several benefits:
+### Step 1: Populate the local Entity Store database
+For this example, we will stage the aggregate models that the Retail analytical solution consumes in the local Entity Store. The models that the Retail application uses are defined in the RetailCube aggregate measurement. 
 
--   You can leverage Power BI DirectQuery capabilities and author reports that execute directly on the Entity store database. DirectQuery-based Power BI reports reflect live data in the Entity store.
--   You have the ability to author Power BI reports over larger data volumes than what was possible with OData.
+1. In the Finance and Operations client, open the **Entity Store** page. (Select **System administration** > **Setup** > **Entity Store**.) 
+2. Select the **RetailCube** aggregate measurement, and then select **Refresh**. 
+3. Enter a name for the job that will be run in the background, and then select **OK**.
 
-Using Power BI desktop, you could create a report in your development or test environment by connecting directly to Entity store. When you are satisfied with the report you can migrate this report to your production environment with the help of your administrator. Let’s see how this is done. First, let’s stage the **RetailCube** aggregate measurement into the Entity store. Launch Microsoft Finance and Operations client (Platform update 1 or later) and navigate to the **Entity store** form. Select **RetailCube** aggregate measurement, and then select the **Refresh** button on the menu. Provide a name for the job that will be run in the background. 
+The following illustration shows the administrator dialog box that is used to configure the frequency of updates for the aggregate model.
 
-[![retail-cube-refresh](./media/retail-cube-refresh-1024x548.jpg)](./media/retail-cube-refresh.jpg) 
+![Configure refresh dialog box](media/Configure-refresh.png)
 
-You can monitor the progress of the job used to stage the data using the batch job monitoring form (**System administration** &gt; **Database** &gt; **batch jobs**). After the data is populated into the Entity store (it should take a minute or so with demo data), you are ready to write reports. Launch Power BI desktop, if needed, you may need to download Power BI desktop and apply updates. You will notice a welcome page, as shown below. Select the **Get data** icon. [![POwerBI Desktop launch](https://msdnshared.blob.core.windows.net/media/2016/06/POwerBI-Desktop-launch-300x159.png)](https://msdnshared.blob.core.windows.net/media/2016/06/POwerBI-Desktop-launch.png) Alternatively, when Power BI desktop launches, you can select **Get Data** &gt; **SQL Server** from the menu. 
+To monitor the progress of the job that stages the data, you can use the batch job monitoring page. (Select **System administration** > **Database** > **Batch jobs**.) If you're using demo data, the job should take about a minute. After the data is in the Entity Store, you can write reports. 
 
-[![POwerBI desktop SQL connection](https://msdnshared.blob.core.windows.net/media/2016/06/POwerBI-desktop-SQL-connection-e1466658910508.png)]
-(https://msdnshared.blob.core.windows.net/media/2016/06/POwerBI-desktop-SQL-connection-e1466658910508.png) 
+### Step 2: Connect to the local Entity Store database
+1. Start Power BI Desktop. If any updates are available for Power BI Desktop, you might have to download and apply them. 
+2. On the Power BI **Welcome** page, select **Get data**. 
 
-In the **SQL Server Database** dialog box, enter the server name and the name of the Entity store database. If you deployed a developer environment and you're working on the same machine, you can enter “**.**” as server name and **AxDW** as the database name. If you are working on a test environment, you need to obtain these parameters from your system administrator. ![SQL database direct connection](https://msdnshared.blob.core.windows.net/media/2016/06/SQL-database-direct-connection1.png) Select the **DirectQuery** option. In this example, you will create Power BI reports that are executed directly on the Entity store. If you had used the **Import** option, Power BI would cache data from the Entity store and you would need to periodically refresh the Power BI model. We don’t support Import mode with Entity store at this point in time. Select the **OK** button. Next you will see the **Navigator** dialog box. Navigator enables you to select tables and views from the Entity store that you want to report on. Enter **Retail** in the Search box, as shown below. The system will filter entities that are related to the **RetailCube** aggregate measurement that you staged previously. Select the **RetailCube\_RetailTransDetailsView** table shown in the navigator, and then select the **Load** button. You are now ready to author a report. You can drag and drop measures and fields into the canvas and explore data and trends interactively. Power BI desktop also supports creating calculations and lets you combine data from multiple aggregate measurements. In a few minutes you should be able to create a report with the data available in development environment, as shown below. First, you need to save the report as a PBIX file. 
+    Alternatively, when Power BI Desktop starts, you can select **Get Data** > **SQL Server**. 
 
-[![PBI Desktop report](https://msdnshared.blob.core.windows.net/media/2016/06/PBI-Desktop-report-1024x623.png)](https://msdnshared.blob.core.windows.net/media/2016/06/PBI-Desktop-report.png) 
+    ![Get Data menu in Power BI Desktop](media/Power-BI-Desktop-Get-Data.png)
 
-After you review the report, you can migrate it to the production environment so that your users can use this report to interact with production data.
+3. In the **SQL Server Database** dialog box, enter **.** as the server name and **AxDW** as the database name. Then select the **DirectQuery** option. 
 
-## Validate reports in a demo environment
-You can validate the report using Power BI desktop as a first step. The report is shown with the demo or test data in your developer environment. You can continue to publish this report to your PowerBI.com account and pin it to the Finance and Operations client if you want to integrate the report into a demo environment. If you want to preview this report with demo data, see the "Publish a report from your demo environment to your PowerBI.com account" section in [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
+    The following illustration shows the settings that enable Power BI Desktop to access the local Entity Store database.
 
-Publish reports into production
-===============================
+    ![Settings for accessing the local Entity Store database](media/Connect-to-SQL-Database.png)
 
-As you may have guessed, this step requires an administrator. You must send your PBIX file to the administrator, so the administrator can upload the report to Lifecycle Services (LCS) as an implementation asset. You can also upload the report to an LCS project and share it with an administrator for publishing to production. This is the same process adopted for migrating Finance and Operations artifacts from developer environments into production – so you can follow the process that is used by your organization.
+    > [!NOTE]
+    > The **Import** option isn't currently supported.
 
-## Upload reports to Lifecycle Services
-Dynamics Lifecycle Services (LCS) is the tool used to migrate development artifacts from developer to production environments. LCS supports migrating PBIX files (DirectQuery reports authored using Entity store) between environments. Launch LCS ([http://lcs.dynamics.com](http://lcs.dynamics.com/)) from the developer environment. If you haven’t created a project in the LCS environment, create a project. Scroll to the right and select the **Asset library** icon. 
+4. Select **OK**. 
 
-[![LCS Asset Library screen](https://msdnshared.blob.core.windows.net/media/2016/06/LCS-Asset-Library-screen-1024x560.png)](https://msdnshared.blob.core.windows.net/media/2016/06/LCS-Asset-Library-screen.png) 
+    The **Navigator** dialog box appears. You use this dialog box to select which tables and views from the Entity Store you want to report on. 
 
-Notice that the Asset library lets you add **Power BI report models** (PBIX files) as implementation artifacts to a project. 
+5. In the search box, enter **Retail** to filter for entities that are related to the RetailCube aggregate measurement.
+6. Select the **RetailCube_RetailTransDetailsView** table that is shown in the navigator, and then select **Load**. 
 
-[![LCS Asset Library - assets page](https://msdnshared.blob.core.windows.net/media/2016/06/LCS-Asset-Library-assets-page-1024x528.png)](https://msdnshared.blob.core.windows.net/media/2016/06/LCS-Asset-Library-assets-page.png) 
+You can now create a report. You can drag measures and fields to the canvas, and can explore data and trends interactively.
 
-Select the **+** icon to add a new asset. Provide a file name and description. Select the **Upload** button and locate the file that you saved in the earlier step. 
+The following illustration shows a basic report that uses the local Entity Store database as its source.
 
-[![LCS Asset Library - upload new PBIX file](https://msdnshared.blob.core.windows.net/media/2016/06/LCS-Asset-Library-upload-new-PBIX-file1-1024x571.png)](https://msdnshared.blob.core.windows.net/media/2016/06/LCS-Asset-Library-upload-new-PBIX-file1.png) 
+![Power BI Desktop report](media/Power-BI-Desktop-Report.png)
 
-After successful upload, select **Confirm**. Notice that the selected file is uploaded into LCS as an implementation asset. LCS supports managing versions and releases for Power BI reports. You can maintain several versions and publish reports to other environments as you would in case of any other implementation artifact. Because you added the PBIX files as an asset within an LCS project, Finance and Operations environments deployed using that project have access to this report. Optionally, you can publish this report so that all your projects can access the shared assets. If you are a Microsoft partner or an ISV, and want to share this report with your customers, you can share this asset to your global library and enable your customers to import the asset into their respective LCS projects. To do this, select the **Save to my library** option. 
+Power BI Desktop also supports the creation of calculations and lets you combine data from multiple aggregate measurements. Within minutes, you can create analytical reports by using data in the local development environment. When you're satisfied with the report, you can migrate it to the production environment, so that users can use the report to interact with production data.
 
-[![LCS Asset Library - share the asset](https://msdnshared.blob.core.windows.net/media/2016/06/LCS-Asset-Library-share-the-asset-1024x568.png)](https://msdnshared.blob.core.windows.net/media/2016/06/LCS-Asset-Library-share-the-asset.png)
+## Validating reports in a demo environment
 
-## Deploy the report into production
-Your administrator should associate your environment with an LCS project so that Finance and Operations is able to consume assets within the project. It’s very likely that this step has already been performed in your production environment. Launch the client from the environment that you want to deploy the Power BI reports. Typically this is the test or a production instance where you want to see your report with a different set of data than the ones you worked with as a business analyst. Go to the** System parameters** form. Select the **Help** tab. Using the **Lifecycle Services help configuration** list box, select the LCS project that you uploaded the PBIX file. Select the **Save** button. **Note:** This form will only show the LCS projects where the current user has access to. If this step is being performed by an administrator, either the administrator needs to have access to the project, or the PBIX artifacts need to be imported into a project that the administrator has access to. On the client, select **System Administration** &gt; **Setup** &gt; **Deploy Power BI**. You will see the file that you uploaded into LCS. 
-
-[![deploy-powerbi-files-form-with-all-reports](./media/deploy-powerbi-files-form-with-all-reports-1024x573.jpg)](./media/deploy-powerbi-files-form-with-all-reports.jpg) 
-
-Select the **Sales Report** file, and then select the **Deploy Power BI files** option on the menu. **Note:** You may be asked to consent publishing to PowerBI.com service. Click the link to provide consent. When consent is complete, you need to go back to the original browser window and select the **Close** button. After successful publishing, the Power BI report will appear in your own PowerBI.com subscription. You will notice that the report now points to the Entity store in the production environment.
-
-## Partners and ISVs can distribute Power BI reports as LCS solution assets
-In the previous section, you uploaded the PBIX file into LCS to migrate from the developer environment to the production environment. Because Power BI reports (PBIX files) are recognized as implementation assets within LCS, you can bundle Power BI reports with other solution assets. If you are working for a partner or an ISV, this provides you with the following opportunities:
-
--   You can ship Power BI reports with your ISV solution that includes models, demo data, etc. You can “wow” your users with rich, interactive reports that are shipped as part of your solution.
--   You can ship reports “out of band” with your solution. Because PBIX files are stand-alone implementation assets, you can continue to ship reports as regular updates to your customers – get feedback and continue to improve them. Developing reports is easy (as you have seen above), so you can iterate quickly
--   You can also build and share customized Power BI reports with specific customers – as you always have.
-
-
-
-
+The report shows the demo or test data in your developer environment. If you want to integrate the report into a demo environment, you can continue to publish this report to your PowerBI.com account and pin it to the Finance and Operations client. If you want a preview of the report that contains demo data, see the "Publish a report from your demo environment to your PowerBI.com account" section in [Power BI content in LCS from Microsoft and your partners](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners).
