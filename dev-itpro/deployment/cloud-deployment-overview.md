@@ -5,7 +5,7 @@ title: Dynamics 365 for Finance and Operations, Enterprise edition cloud deploym
 description: Dynamics 365 for Finance and Operations, Enterprise edition now supports running business processes in the cloud.
 author: kfend
 manager: AnnBe
-ms.date: 06/29/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
