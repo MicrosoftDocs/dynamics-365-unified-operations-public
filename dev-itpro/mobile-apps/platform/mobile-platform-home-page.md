@@ -52,21 +52,21 @@ We also have a video series about creating a mobile app:
 
 ## Configure a mobile workspace
 
-[Use the mobile workspace classes on the server](scenarios/workspace-classes.md)
+[Configure a workspace by using the SysAppWorkspace class](scenarios/mobile-workspace-configuration.md)
 
-[Localize mobile workspaces](scenarios/localize-workspaces-on-server.md)
+[Localize mobile workspaces on the server](scenarios/localize-workspaces-on-server.md)
 
-[Secure mobile workspaces](scenarios/securing-workspaces.md)
+[Secure a mobile app workspace](scenarios/secure-mobile-workspace.md)
 
-[Display a field as a URL](scenarios/show-field-as-url.md)
+[Customize the display of a field so that it is clickable](scenarios/make-workspace-field-clickable.md)
 
-[Make fields mandatory](scenarios/marking-fields-mandatory.md)
+[Make a field mandatory using workspace classes](scenarios/make-field-mandatory.md)
 
 ## Optimize a mobile workspace
-[Use regular fields to provide counts](scenarios/using-regular-fields-for-count.md)
+[Display a count in a field](scenarios/display-count-workspace.md)
 
 ## Client-side development reference
-[App design overview](scenarios/design-overview.md)
+[Client-side design APIs overview](scenarios/client-api-design-overview.md)
 
 [Client APIs](client-apis/client-apis-reference.md)
 
