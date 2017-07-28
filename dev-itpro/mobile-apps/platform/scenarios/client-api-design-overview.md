@@ -36,25 +36,25 @@ This topic provides an overview of the client-side design APIs and includes reco
 ## Terminology
 The following list includes some common terms that apply to using the client-side design APIs.
 
-+ **design**: A property which can be optionally specified on a Page, Action or other Component to override it's default design.
-+ **component**: A component is one of the following:
-    - block container component (default): A container with CSS block behaviors (equivalent to CSS style "display: block"")
-    - flex container component: A container with CSS flex behaviors (equivalent to CSS style "display: flex")
-    - control reference component: A component which refers to a control that exists within the static metadata (xml) of the Page/Action.
-    - new control component: A component which instantiates a new control (meaning the control does not already exist in the static metadata (xml) of the Page/Action)
++ **design**: A property which can be optionally specified on a Page, Action or other Component object to override its default design.
++ **component**: A component is one of these four types:
+    - **block container** (default): A container with CSS block behaviors (equivalent to CSS style "display: block"").
+    - **flex container**: A container with CSS flex behaviors (equivalent to CSS style "display: flex").
+    - **control reference**: A component that refers to a control that exists within the static metadata (xml) of the Page/Action.
+    - **new control**: A component that instantiates a new control (meaning the control does not already exist in the static metadata (xml) of the Page/Action).
 
     A component is represented in the design by a JSON object, whose properties represent the properties of the component. Virtually every JSON object in the design property hierachy is a component.
-* **item**: Refers to a component which is nested within a container
-* **Properties**: There are four types of properties which can be set on a component. Those types are:
+* **item**: A component which is nested within a container.
+* **property**: There are several types of properties which can be set on a component. 
     - container-specific
     - item-specific
     - control-specific
     - list-specific
     - generic (non-specific)
 
-    Properties are specified on a component in the same way (they are just key-value pairs specified on a component's JSON object). But which of the properties is applicable depends on the type of component the property is applied to.
+    Properties are specified on a component as key-value pairs specified on a component's JSON object. Which of the properties is applicable depends on the type of component the property is applied to.
 
-    For properties which have a pre-defined list of possible values, the first value displayed in the documentation is the default value for the property. In most cases, if you do not specify a property at all, by omitting it from the JSON object, then the property will behavir as if you set its default value.
+    For properties which have a pre-defined list of possible values, the first value displayed in the documentation is the default value for the property. In most cases, if you do not specify a property at all, by omitting it from the JSON object, then the property will behave as if you set its default value.
 
     - Generic properties can be applied to all component types.
     - All property names should not be enclosed in quotes.
