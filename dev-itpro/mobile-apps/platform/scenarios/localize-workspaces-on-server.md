@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Localize workspaces on the server
+title: Localize mobile workspaces on the server
 description: Workspace classes can be used in multiple ways to provide localization support to workspaces.
 author: makhabaz
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Localize workspaces on server
+# Localize mobile workspaces on the server
 Workspace classes can be used in multiple ways to provide localization support to workspaces.
 
 ## Use config objects to pass localized labels
