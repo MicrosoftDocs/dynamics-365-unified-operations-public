@@ -110,9 +110,9 @@ If you're importing the camt.054 file, you should specify the following addition
 
 You can view the imported information on the **Payment transfers** page. 
 
-## Additional details on GER solution design
+## Additional details about electronic reporting configurations
 When you import a format configuration from LCS, you import the whole configuration tree which means that the Model and Model mapping configurations are included. 
-In the Payment model starting from version 8, the mappings are located in separate GER configurations in the solution tree (Payment model mapping 1611, Payment model mapping to destination ISO20022, etc). There are many different payment formats under one model (Payment model), thus separate mapping handling is a key for easy solution maintenance. 
+In the Payment model starting from version 8, the mappings are located in separate ER configurations in the solution tree (Payment model mapping 1611, Payment model mapping to destination ISO20022, etc). There are many different payment formats under one model (Payment model), thus separate mapping handling is a key for easy solution maintenance. 
 For example, consider this scenario: you use ISO20022 payments to generate credit transfer files and then you import the return messages from the bank. In this scenario, you should use the following configurations:
 
  - **Payment model**
