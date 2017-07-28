@@ -108,9 +108,9 @@ To publish a workspace that resides in an AOT resource:
 ## Update a workspace that has already been published
 If you have your workspace as part of AOT resource, you cannot edit it from the mobile app designer. In the following example, a workspace called **MyWorkspace** exists in AOT, and it has a backing class called **WorkspaceInAOT**.
 
-    ![Workspace in AOT](media/workspace-api/UpdateWorkspaceInAOT.png)
+![Workspace in AOT](media/workspace-api/UpdateWorkspaceInAOT.png)
     
-    ![Workspace in AOT and published](media/workspace-api/UpdateWorkspaceInAOTAndPublished.png)
+![Workspace in AOT and published](media/workspace-api/UpdateWorkspaceInAOTAndPublished.png)
 
 To edit the workspace, follow these steps:
 
@@ -120,6 +120,7 @@ To edit the workspace, follow these steps:
     b. Copy the appID of the newly created workspace.
 
     ![New workspace in database](media/workspace-api/UpdateWorkspaceNewWorkspace.png)
+    
     ![New workspace details](media/workspace-api/UpdateWorkspaceNewWorkspaceDetails.png)
 
 3. Create a new class that extends from your backing class and apply the **SysAppWorkspaceAttribute** attribute with the new appID.
