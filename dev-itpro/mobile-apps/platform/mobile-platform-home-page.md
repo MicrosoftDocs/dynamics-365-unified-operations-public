@@ -36,19 +36,19 @@ Microsoft Dynamics 365 Unified Operations includes support for a mobile phone ap
 
 ## [Getting started](mobile-platform-getting-started.md) 
 
-## [Architecture and design guidelines](mobile-platform-architecture.md) 
+## [Architecture and design considerations](mobile-platform-architecture.md) 
 
 We also have a video series about creating a mobile app:
 
-[Tutorial 1: Building the sales order page](https://youtu.be/PdegfBxifl8)
+- [Tutorial 1: Building the sales order page](https://youtu.be/PdegfBxifl8)
 
-[Tutorial 2: Building the sales order details page](https://youtu.be/mF-vlbnRte0)
+- [Tutorial 2: Building the sales order details page](https://youtu.be/mF-vlbnRte0)
 
-[Tutorial 3: Building the create new sales order action](https://youtu.be/VYw9oTv9t3o)
+- [Tutorial 3: Building the create new sales order action](https://youtu.be/VYw9oTv9t3o)
 
-[Tutorial 4: Adding a lookup to the create new sales order action](https://youtu.be/eNJKd0IYmZk)
+- [Tutorial 4: Adding a lookup to the create new sales order action](https://youtu.be/eNJKd0IYmZk)
 
-[Tutorial 5: Adding a lookup and hiding pages using mobile business logic](https://youtu.be/kIJKk9J8FvI)
+- [Tutorial 5: Adding a lookup and hiding pages using mobile business logic](https://youtu.be/kIJKk9J8FvI)
 
 ## Configure a mobile workspace
 [Localize workspaces](scenarios/localizing-workspaces-on-server.md)
