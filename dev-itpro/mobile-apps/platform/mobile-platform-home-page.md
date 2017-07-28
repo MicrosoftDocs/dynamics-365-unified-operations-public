@@ -42,37 +42,31 @@ Microsoft Dynamics 365 Unified Operations includes support for a mobile phone ap
 
 We also have a video series about creating a mobile app:
 
-- [Tutorial 1: Building the sales order page](https://youtu.be/PdegfBxifl8)
-
-- [Tutorial 2: Building the sales order details page](https://youtu.be/mF-vlbnRte0)
-
-- [Tutorial 3: Building the create new sales order action](https://youtu.be/VYw9oTv9t3o)
-
-- [Tutorial 4: Adding a lookup to the create new sales order action](https://youtu.be/eNJKd0IYmZk)
-
-- [Tutorial 5: Adding a lookup and hiding pages using mobile business logic](https://youtu.be/kIJKk9J8FvI)
++ [Tutorial 1: Building the sales order page](https://youtu.be/PdegfBxifl8)
++ [Tutorial 2: Building the sales order details page](https://youtu.be/mF-vlbnRte0)
++ [Tutorial 3: Building the create new sales order action](https://youtu.be/VYw9oTv9t3o)
++ [Tutorial 4: Adding a lookup to the create new sales order action](https://youtu.be/eNJKd0IYmZk)
++ [Tutorial 5: Adding a lookup and hiding pages using mobile business logic](https://youtu.be/kIJKk9J8FvI)
 
 ## Configure a mobile workspace
 
-[Configure a workspace by using the SysAppWorkspace class](scenarios/mobile-workspace-configuration.md)
-
-[Localize mobile workspaces on the server](scenarios/localize-workspaces-on-server.md)
-
-[Secure a mobile app workspace](scenarios/secure-mobile-workspace.md)
-
-[Customize the display of a field so that it is clickable](scenarios/make-workspace-field-clickable.md)
-
-[Make a field mandatory using workspace classes](scenarios/make-field-mandatory.md)
++ [Configure a workspace by using the SysAppWorkspace class](scenarios/mobile-workspace-configuration.md)
++ [Localize mobile workspaces on the server](scenarios/localize-workspaces-on-server.md)
++ [Secure a mobile app workspace](scenarios/secure-mobile-workspace.md)
++ [Customize the display of a field so that it is clickable](scenarios/make-workspace-field-clickable.md)
++ [Make a field mandatory using workspace classes](scenarios/make-field-mandatory.md)
 
 ## Optimize a mobile workspace
-[Display a count in a field](scenarios/display-count-workspace.md)
+
++ [Display a count in a field](scenarios/display-count-workspace.md)
 
 ## Client-side development reference
-[Client-side design APIs overview](scenarios/client-api-design-overview.md)
 
-[Client APIs](client-apis/client-apis-reference.md)
++ [Client-side design APIs overview](scenarios/client-api-design-overview.md)
++ [Client APIs](client-apis/client-apis-reference.md)
 
 ## Server-side development reference
-[Server APIs (workspace X++ APIs)](mobile-workspace-server-apis.md)
+
++ [Server APIs (workspace X++ APIs)](mobile-workspace-server-apis.md)
 
 
