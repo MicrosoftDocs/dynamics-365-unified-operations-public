@@ -70,6 +70,6 @@ You're done! Launch the app from your mobile device to see the sample workspace.
 
 [Mobile platform architecture and design considerations](mobile-platform-architecture.md) 
 
-[APIs reference](client-apis/client-apis-reference.md)
+[Client APIs reference](client-apis/client-apis-reference.md)
 
-[APIs reference (workspace X++ APIs)](mobile-workspace-server-apis.md)
+[Server APIs reference](mobile-workspace-server-apis.md)
