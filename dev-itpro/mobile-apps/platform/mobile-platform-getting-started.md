@@ -64,3 +64,12 @@ The mobile app is being made available for the most popular mobile operating sys
 -   Android (available now) - [Finance and Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
 -   iPhone (available now) - [Finance and Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
 
+You're done! Launch the app from your mobile device to see the sample workspace.
+
+### See Also
+
+[Mobile platform architecture and design considerations](mobile-platform-architecture.md) 
+
+[APIs reference](client-apis/client-apis-reference.md)
+
+[APIs reference (workspace X++ APIs)](mobile-workspace-server-apis.md)
