@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure a workspace by using the SysAppWorkspace class
-description: You can use the **SysAppWorkspace** class to configure and publish workspaces on the server. 
+description: You can use the SysAppWorkspace class to configure and publish workspaces on the server. 
 author: makhabaz
 manager: AnnBe
 ms.date: 07/01/2017
@@ -128,31 +128,24 @@ To edit the workspace, follow these steps:
 
 Now you can keep on working with your new workspace and the backing class. Once you are done with the changes you can merge them with the AOT-based workspace.
 
-## Delete workspaces that are in AOT resource
-When mobile workspaces are stored as AOT resource, they cannot be deleted via SysAppDesigner.
-Follow the following steps to delete a workspace that exist as an AOT resource.
+## Delete a workspace that is an AOT resource
+When a mobile workspace is stored as an AOT resource, it cannot be deleted in the mobile app designer. Follow the following steps to delete a workspace that exist as an AOT resource.
 
 1. Delete the AOT resource that contains the workspace.
 
-    ![alt text](media/workspace-api/WorkspaceAsResourceToBeDeleted.png "Workspace to be deleted")
-
-
-
+    ![Workspace to be deleted](media/workspace-api/WorkspaceAsResourceToBeDeleted.png)
 
 2. Delete the workspace class that was created for the workspace.
 
-    ![alt text](media/workspace-api/WorkspaceClassToBeDeleted.png "Workspace class to be deleted")
+    ![Workspace class to be deleted](media/workspace-api/WorkspaceClassToBeDeleted.png)
 
+3. Do a full model build that contains the AOT resource and the class. The following images shows a full build of the "Application Foundation" model. The AOT resource and workspace class are contained in "Application Foundation". You can uncheck everything from Options tab to speed up the full build.
 
+    ![Full build menu item](media/workspace-api/FullBuildMenuItem.png)
+    
+    ![Full build](media/workspace-api/FullBuild.png)
 
-3. Do a full model build that contained the AOT resource and the class. For my demo I will do a full build of "Application Foundation" model as my AOT resource and workspace class resided in "Application Foundation"
-Un-check everything from Options tab to speed up the full build.
-
-    |![alt text](media/workspace-api/FullBuildMenuItem.png "Full build menu item")|![alt text](media/workspace-api/FullBuild.png "Full build")|
-    |--|--|
-
-
-4. Once the build completed, reopen SysAppDesigner, the deleted workspace will no longer exist there.
+4. When the build is finished, reopen the mobile app designer, and verify the workspace is no longer there.
 
 ## Workspace metadata classes
 These classes can be used to inspect and update metadata related to D365 for Operations mobile workspace.
