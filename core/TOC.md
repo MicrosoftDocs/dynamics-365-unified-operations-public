@@ -1206,7 +1206,6 @@
 #### [Add Power BI to workspaces](/dynamics365/unified-operations/dev-itpro/analytics/add-bi-workspaces?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Pin Power BI reports to workspaces](/dynamics365/unified-operations/dev-itpro/analytics/pin-power-bi-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Power BI integration with Entity store](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Author and distribute Power BI reports with Entity store](/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Export entities to your own Azure SQL database](/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Author analytical reports by using Power BI Desktop](/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Publish analytical applications on Power BI](/dynamics365/unified-operations/dev-itpro/analytics/publish-apps-powerbi?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
