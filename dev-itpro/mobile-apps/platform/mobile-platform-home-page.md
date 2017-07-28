@@ -52,18 +52,18 @@ We also have a video series about creating a mobile app:
 
 ## Configure a mobile workspace
 
-- [Use the workspace classes to configure workspaces on the server](scenarios/workspace-classes.md)
+[Use the mobile workspace classes on the server](scenarios/workspace-classes.md)
 
-- [Localize mobile workspaces](scenarios/localizing-workspaces-on-server.md)
+[Localize mobile workspaces](scenarios/localizing-workspaces-on-server.md)
 
-- [Secure mobile workspaces](scenarios/securing-workspaces.md)
+[Secure mobile workspaces](scenarios/securing-workspaces.md)
 
-- [Display a field as a URL](scenarios/show-field-as-url.md)
+[Display a field as a URL](scenarios/show-field-as-url.md)
 
-- [Make fields mandatory](scenarios/marking-fields-mandatory.md)
+[Make fields mandatory](scenarios/marking-fields-mandatory.md)
 
 ## Optimize a mobile workspace
-- [Use regular fields to provide counts](scenarios/using-regular-fields-for-count.md)
+[Use regular fields to provide counts](scenarios/using-regular-fields-for-count.md)
 
 ## Client-side development reference
 [Mobile workspace design overview](scenarios/design-overview.md)
