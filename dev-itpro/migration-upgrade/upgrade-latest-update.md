@@ -5,7 +5,7 @@ title: Process for moving to the latest update of Finance and Operations
 description: This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations. 
 author: tariqbell
 manager: AnnBe
-ms.date: 07/14/2017
+ms.date: 07/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -138,10 +138,7 @@ For upgrading any Tier 1 environments (also known as dev boxes or one-boxes). Yo
 
 #### Use LCS to submit an upgrade request to DSE
 1. Go to the **Environment details** page for the environment that you want to upgrade, click **Maintain**, and then select **Upgrade**. A window will display where you can enter the upgrade request.
-
- > [!NOTE]
- > The **Upgrade** button is currently in preview and will be made public as part of the LCS July release (currently scheduled for the third week of July). Until then you can submit upgrade requests from the **LCS Support page** > **Service requests** > **Add** > **Other requests**.
- ![Upgrade request](./media/UpgradeMaintainButton.PNG)
+![Upgrade request](./media/UpgradeMaintainButton.PNG)
 2. You must submit your upgrade request 5 working days before you expect to upgrade, to help ensure that the upgrade can be performed within your expected timeframe. The advanced notice is required to prepare a new environment in the background. When downtime starts, this new environment will be swapped with the existing environment. You will not be able to see the new environment, it's a background mechanism.
 3. You must allow at least 8 hours between the downtime start and downtime end times. This time is required to perform the swap in of the new environment and the data upgrade process.
 4. If you have custom code or X++ hotfixes that must be part of your upgraded environment, you must select Application deployable packages during your upgrade request. Select the deployable packages that contain your upgraded custom code and the X++ hotfixes that were created on your development or build environment during the code upgrade process. 
