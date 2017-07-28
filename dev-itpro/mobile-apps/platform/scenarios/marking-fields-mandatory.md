@@ -31,20 +31,17 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 
-# Marking a field as mandatory using workspace classes
-Support has been added for inferring properties such as mandatory, field length, and type when using Operations mobile app designer to select fields for actions.
+# Make a field mandatory using workspace classes
+There is support for inferring properties such as mandatory, field length, and type when using the mobile app designer to select fields for actions. The workspace classes can be used to update these properties. For example, you might want to specify that the **Name** field is mandatory when a customer record is created, as shown in the following images.
 
-The workspace classes can be used to update these properties and, for example, mark/un-mark a field as mandatory.
+![Action showing fields](media/workspace-api/MarkFieldAsMandatoryDesigner.png)
 
-Consider an action for creating customer. The designer has automatically inferred that "Name" is a mandatory field.
+![Action with mandatory field marked](media/workspace-api/MarkFieldAsMandatoryAction.png)
 
-| ![alt text](media/workspace-api/MarkFieldAsMandatoryDesigner.png "Action showing fields")  | ![alt text](media/workspace-api/MarkFieldAsMandatoryAction.png "Action with mandatory field marked")|
-|--|--|
+The workspace class can be used to make the **Delivery terms** field as mandatory using the following steps.
 
-The workspace class can be used to mark "Delivery terms" field as mandatory using the following steps.
-
-1. Get the control name using app designer. For this demo the control name is "DynamicDetail_DlvTerm"
-2. Add the following code to set the mandatory property for the control. Note that we are using the reflection based setProperty method to set mandatory property.
+1. Get the control name using app designer. In this example, the control name is **DynamicDetail_DlvTerm**.
+2. Add the following code to set the **Mandatory** property for the control. This code uses the reflection-based **setProperty** method to set **Mandatory** property.
 
 ```javascript
 public SysAppWorkspaceMetadata getWorkspaceMetadata()
@@ -68,6 +65,7 @@ private void setCustAccountMandatory(SysAPpActionMetadata _createCustAction)
 
 3. Build the solution and then refresh app metadata on the mobile app.
 
-As shown below, the Delivery terms field is now marked as Mandatory.
+The **Delivery terms** field is marked as **Mandatory**, as shown in the following image.
 
-![alt text](media/workspace-api/MarkFieldAsMandatoryFinal.png "Delivery terms field marked as mandatory")
+![Delivery terms field marked as mandatory](media/workspace-api/MarkFieldAsMandatoryFinal.png)
+
