@@ -51,21 +51,22 @@ We also have a video series about creating a mobile app:
 - [Tutorial 5: Adding a lookup and hiding pages using mobile business logic](https://youtu.be/kIJKk9J8FvI)
 
 ## Configure a mobile workspace
-[Localize workspaces](scenarios/localizing-workspaces-on-server.md)
 
-[Make fields mandatory](scenarios/marking-fields-mandatory.md)
+- [Use the workspace classes to configure workspaces on the server](scenarios/workspace-classes.md)
 
-[Secure workspaces](scenarios/securing-workspaces.md)
+- [Localize mobile workspaces](scenarios/localizing-workspaces-on-server.md)
 
-[Display a field as a URL](scenarios/show-field-as-url.md)
+- [Secure mobile workspaces](scenarios/securing-workspaces.md)
 
-[Use the workspace classes to configure workspaces on the server](scenarios/workspace-classes.md)
+- [Display a field as a URL](scenarios/show-field-as-url.md)
+
+- [Make fields mandatory](scenarios/marking-fields-mandatory.md)
 
 ## Optimize a mobile workspace
-[Use regular fields to provide counts](scenarios/using-regular-fields-for-count.md)
+- [Use regular fields to provide counts](scenarios/using-regular-fields-for-count.md)
 
 ## Client-side development reference
-[Introduction to workspace design](scenarios/design-overview.md)
+[Mobile workspace design overview](scenarios/design-overview.md)
 
 [Client APIs](client-apis/client-apis-reference.md)
 
