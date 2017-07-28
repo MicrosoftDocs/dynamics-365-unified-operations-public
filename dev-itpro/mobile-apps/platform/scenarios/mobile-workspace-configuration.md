@@ -105,32 +105,28 @@ To publish a workspace that resides in an AOT resource:
 
     ![Workspace in metadata](media/workspace-api/WorkspaceInMetadata.png)
 
-## Updating workspaces that have already been published
-If you have your workspace as part of AOT resource, you are not able to edit it from designer. If you would like to keep on working with this workspace follow the following steps.
+## Update a workspace that has already been published
+If you have your workspace as part of AOT resource, you cannot edit it from the mobile app designer. In the following example, a workspace called **MyWorkspace** exists in AOT, and it has a backing class called **WorkspaceInAOT**.
 
-For this scenario we are considering a workspace called "MyWorkspace" that exist in AOT and also have a backing class called "WorkspaceInAOT"
+    ![Workspace in AOT](media/workspace-api/UpdateWorkspaceInAOT.png)
+    
+    ![Workspace in AOT and published](media/workspace-api/UpdateWorkspaceInAOTAndPublished.png)
 
-| ![alt text](media/workspace-api/UpdateWorkspaceInAOT.png "Workspace in AOT")  | ![alt text](media/workspace-api/UpdateWorkspaceInAOTAndPublished.png "Workspace in AOT and published")|
-|--|--|
+To edit the workspace, follow these steps:
 
-
-1. Export the workspace using the app designer. (This will automatically create a new appID for workspaces that are stored in AOT)
-
-2. Import the newly exported workspace using the app designer.
-    a. (Optional) Change the name so that the newly added workspace can be differentiated.
+1. Export the workspace using the mobile app designer. The designer automatically creates new appIDs for workspaces that are stored in the AOT.
+2. Import the newly exported workspace using the mobile app designer.
+    a. (Optional) Change the name so that the newly added workspace can be distinquished from other workspaces.
     b. Copy the appID of the newly created workspace.
 
-| ![alt text](media/workspace-api/UpdateWorkspaceNewWorkspace.png "New workspace in database")  | ![alt text](media/workspace-api/UpdateWorkspaceNewWorkspaceDetails.png "New workspace details")|
-|--|--|
+    ![New workspace in database](media/workspace-api/UpdateWorkspaceNewWorkspace.png)
+    ![New workspace details](media/workspace-api/UpdateWorkspaceNewWorkspaceDetails.png)
 
+3. Create a new class that extends from your backing class and apply the **SysAppWorkspaceAttribute** attribute with the new appID.
 
+    ![Workspace in metadata](media/workspace-api/UpdateWorkspaceNewWorkspaceClass.png)
 
-3. Create a new class that extends from your backing class and apply the SysAppWorkspaceAttribute with the new appID.
-
-
-    ![alt text](media/workspace-api/UpdateWorkspaceNewWorkspaceClass.png "Workspace in metadata")
-
-Now you can keep on working with your new workspace and the backing class. Once you are done with the changes you can merge them with the AOT based workspace.
+Now you can keep on working with your new workspace and the backing class. Once you are done with the changes you can merge them with the AOT-based workspace.
 
 ## Delete workspaces that are in AOT resource
 When mobile workspaces are stored as AOT resource, they cannot be deleted via SysAppDesigner.
