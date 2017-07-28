@@ -65,12 +65,12 @@ We also have a video series about creating a mobile app:
 ## Optimize a workspace
 [Use regular fields to provide counts on the workspace](scenarios/using-regular-fields-for-count.md)
 
-## Client APIs
+## Client-side development
 [Introduction to design APIs](scenarios/design-overview.md)
 
-[APIs reference](client-apis/client-apis-reference.md)
+[Client APIs reference](client-apis/client-apis-reference.md)
 
-## Server APIs
-[APIs reference (workspace X++ APIs)](mobile-workspace-server-apis.md)
+## Server-side development
+[Server APIs reference (workspace X++ APIs)](mobile-workspace-server-apis.md)
 
 
