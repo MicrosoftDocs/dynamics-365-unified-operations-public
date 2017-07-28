@@ -74,5 +74,6 @@ To calculate the consumption tax on the bank payment fees, set up the following 
 ## How can I differentiate bank accounts from the same bank?
 To differentiate two different bank accounts within the same bank, you can use the bank group as a filter for the bank rule. On the **Bank rules for payment fee** page, in the **Third party bank group** and **Company bank group** fields, select **Bank groups**. Then, in the **Relationship** field, select **&lt;&gt;**.
 
-
+## Additional resources
+- [Generate and post payment fee](./tasks/post-payment-fee.md)
 
