@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Use regular fields to display totals
-description: This topic explains how to display total that is correct and displays quickly. 
+title: Use regular fields to display counts or totals
+description: This topic explains how to calculate a count that is correct and that displays quickly. 
 author: makhabaz
 manager: AnnBe
 ms.date: 07/01/2017
@@ -30,13 +30,13 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Use regular fields to display totals
+# Use regular fields to display counts
 
-Using the **pageLink** control for displaying totals can be slow, because it loads the target page and then counts the number of rows. Also, the total calculated can be incorrect, because there is a limit on the number of rows that are retreived.
+Using the **pageLink** control for displaying counts (totals) can be slow, because it loads the target page and then counts the number of rows. Also, the count calculated can be incorrect, because there is a limit on the number of rows that are retreived.
 
 ![Workspace with tiles](media/optimizing-workspace/Tiles_Original.png)
 
-To make mobile workspaces work more quickly, the recommended approach is to use a regular field to display the total value and then model the field as a **pageLink control** in the mobile client. 
+To make mobile workspaces work more quickly, the recommended approach is to use a regular field to display the count and then model the field as a **pageLink control** in the mobile client. 
 
 The following example uses the Fleet Management app. In the Fleet Management app, the workspace shows the total number of customers, reservations, and vehicles. Previously these counts were coming from a **pageLink** control that had "AllCustomers", "AllReservations" and "AllVehicles" as their targets respectively and the pageLink control was loading the rows and doing the count. (This is not the recommended approach.) 
 
@@ -50,9 +50,9 @@ Below are the steps to configure the workspace page to use the recommended appro
 
     ![New page in designer](media/optimizing-workspace/NewPageInDesigner.png)
 	
-3. Update the business logic to transform the fields into a **pageLink** control. Use the **configureControl** method to add a navigation target to the fields. Doing that will configure the fields as **pageLink** controls. The arguments for **configureControl** are page name, control name and ab object of properties to be updated.
+3. Update the business logic to transform the fields into a **pageLink** control. Use the **configureControl** method to add a navigation target to the fields. Doing that will configure the fields as **pageLink** controls. The arguments for **configureControl** are page name, control name and an object of properties to be updated.
 	
-4. Update the workspace design. Embed the summary page as a **part** in the workspace page. Reference the fields that are are now configured as **pageLink** controls. Provide a style and set the property **showCount:true** so that the total is shown on the **pageLink** control
+4. Update the workspace design. Embed the summary page as a **part** in the workspace page. Reference the fields that are are now configured as **pageLink** controls. Provide a style and set the property **showCount:true** so that the count is shown on the **pageLink** control.
 
     ![Changes to business logic](media/optimizing-workspace/ChangesToBL.png)
 
