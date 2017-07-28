@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Secure workspaces using a workspace class
-description: Workspace class can be used to secure workspaces.
+title: Secure a mobile app workspace
+description: This topic describes how to limit a users access to a workspace.
 author: makhabaz
 manager: AnnBe
 ms.date: 07/01/2017
@@ -31,8 +31,8 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 
-# Secure workspaces using a workspace class
-Workspace class can be used to secure workspaces.
+# Secure a mobile app workspace
+This topic describes how to limit a users access to a workspace.
 
 ## Assign a menu item to workspace
 Workspaces can be tied to a menu item. Users who do not have access to the menu item will not be able to use the workspace, because the workspace is only shown to users who have rights to the menu item. 
