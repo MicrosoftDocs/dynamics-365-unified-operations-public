@@ -740,7 +740,7 @@
 #### [SEPA direct debit overview](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up company bank accounts for ISO20022 credit transfers](/dynamics365/unified-operations/financials/localizations/tasks/set-up-company-bank-accounts-iso20022-credit-transfers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up company bank accounts for ISO20022 direct debits](/dynamics365/unified-operations/financials/localizations/tasks/set-up-company-bank-accounts-iso20022-direct-debits?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Set up customer and vendor compensation](/dynamics365/unified-operations/financials/accounts-receivable/emea-compensation-customer-vendor-transactions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Set up customer and vendor compensation](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up customers and customer bank accounts for ISO20022 direct debits](/dynamics365/unified-operations/financials/localizations/tasks/set-up-bank-accounts-iso20022-direct-debits?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up EU sales list reporting](/dynamics365/unified-operations/financials/localizations/tasks/eur-00011-eu-sales-list-reporting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up method of payment for ISO20022 credit transfer](/dynamics365/unified-operations/financials/localizations/tasks/set-up-method-payment-iso20022-credit-transfer?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
