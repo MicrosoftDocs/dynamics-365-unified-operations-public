@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Customize the display of a field
+title: Customize the display of a field so that it is clickable
 description: Fields shown on mobile app pages can be customized to be shown as an email, a phone number, or a URL.
 author: makhabaz
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Customize the display of a field
+# Customize the display of a field so that it is clickable
 
 Fields shown on mobile app pages can be customized to be shown as an email, a phone number, or a URL.
 
