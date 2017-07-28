@@ -148,39 +148,38 @@ When a mobile workspace is stored as an AOT resource, it cannot be deleted in th
 4. When the build is finished, reopen the mobile app designer, and verify the workspace is no longer there.
 
 ## Workspace metadata classes
-These classes can be used to inspect and update metadata related to D365 for Operations mobile workspace.
+You can use the workspace metadata classes to inspect and update metadata related to the mobile workspace.
 
-### <a id="workspaceMetadata"></a> SysAppWorkspaceMetadata
-This class represents the entire mobile workspace metadata. This class can be used for
+### SysAppWorkspaceMetadata
+This class represents the entire mobile workspace metadata. This class can be used to:
 
-1. Update workspace title
-2. Update workspace description.
-3. Get pages an actions that belong to the workspace
-4. Adding custom config objects that will be passed to the mobile workspace.
-
++ Update the workspace title.
++ Update the workspace description.
++ Get the pages and actions that belong to the workspace.
++ Add custom config objects that will be passed to the mobile workspace.
 
 ### SysAppPageMetadata
-This class represents a page metadata for a  mobile workspace. This class can be used for
+This class represents page metadata in a mobile workspace. This class can be used to:
 
-1. Update page title
-2. Update page description.
-3. Order a page. Set the position of the page w.r.t. other pages that are shown on the workspace.
-4. Hide the page from the workspace
-5. Get control metadata for controls in the page.
++ Update the page title.
++ Update the page description.
++ Order a page. You can specify the order of the page relative to other pages that are shown on the workspace.
++ Hide the page from the workspace.
++ Get control metadata for controls in the page.
 
 ### SysAppActionMetadata
-This class represents an action metadata for a  mobile workspace. This class can be used for
+This class represents an action metadata for a mobile workspace. This class can be used to:
 
-1. Update action title
-2. Update action description.
-3. Order an action. Set the position of the action wrt. other actions that are shown on the workspace and on pages.
-4. Hide the action
-5. Get control metadata for controls in the action.
++ Update the action title.
++ Update the action description.
++ Order an action. You can specify the order of the action relative to other actions that are shown on the workspace and on the pages.
++ Hide the action.
++ Get control metadata for controls in the action.
 
 ### SysAppControlMetadata
-This class represents control metadata for controls on a page or action. This class can be used for
+This class represents control metadata for controls on a page or action. This class can be used to:
 
-1. Update control label
-2. Order a control. Set the position of the control relative to other controls in a page or action
-3. Hide a control
-4. Mark a control as mandatory.
++ Update the control label.
++ Order a control. You can specify the order of the control relative to other controls in a page or action.
++ Hide a control.
++ Mark a control as mandatory.
