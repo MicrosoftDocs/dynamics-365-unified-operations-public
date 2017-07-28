@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use regular fields to display counts or totals
+title: Display a count in a field
 description: This topic explains how to calculate a count that is correct and that displays quickly. 
 author: makhabaz
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Use regular fields to display counts
+# Display a count in a field
 
 Using the **pageLink** control for displaying counts (totals) can be slow, because it loads the target page and then counts the number of rows. Also, the count calculated can be incorrect, because there is a limit on the number of rows that are retreived.
 
