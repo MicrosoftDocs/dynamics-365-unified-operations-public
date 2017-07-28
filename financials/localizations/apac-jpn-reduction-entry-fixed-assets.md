@@ -91,11 +91,24 @@ Use the **Mass update for reduction entry document** page to assign a reduction 
 
 Use the **Fixed asset posting profiles** page to set up a posting profile for reduction entries. You can also set up a posting profile to depreciate the asset that is applied with a reduction entry.
 
+## Depreciate fixed assets with reduction entry posted
+
+See [Depreciate fixed assets with reduction entry posted](./tasks/depreciation-fixed-assets-reduction-entry-posted.md).
+
+## Create and assign a reduction entry document for a government grant subsidy
+
+See [Create and assign a reduction entry document for a government grant subsidy](./tasks/create-assign-reduction-document.md).
+
+## Dispose of a fixed asset with reduction entry
+
+See [Dispose of a fixed asset with reduction entry](./tasks/dispose-fixed-asset-reduction-entry.md)
+
+
 ## Technical information for system administrators
 If you don't have access to the pages that are used to complete this task, contact your system administrator, and provide the information that is shown in the following table.
 
 | Category           | Prerequisite                                                                                                                                               |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Configuration keys | Make sure that the **Asset configuration** key is available under the **Data Dictionary** &gt; **Configuration Keys** node in the Application Object Tree. |
+| Configuration keys | Make sure that the **Asset configuration** key is available under the **Data Dictionary** &gt; **Configuration Keys** node. |
 
 

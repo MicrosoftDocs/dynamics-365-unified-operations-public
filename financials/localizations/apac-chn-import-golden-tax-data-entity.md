@@ -21,10 +21,9 @@ ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 261394
-ms.assetid: fb92ff01-458c-4433-870e-5291e3aaebda
 ms.search.region: China (PRC)
 # ms.search.industry: 
-ms.author: leguo
+ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -56,5 +55,5 @@ For specific steps that show how to import a data entity, refer to [Importing da
 
 The following screenshot shows an example mapping visualization for the Chinese Golden Tax data entity. [![This image shows a sample mapping visualization for the Chinese Golden Tax data entity.](./media/goldentaximportmappingvisualization.png)](./media/goldentaximportmappingvisualization.png)      
 
-
+For more information, see [Golden tax integration export setup](./tasks/golden-tax-integration-export-setup.md).
 
