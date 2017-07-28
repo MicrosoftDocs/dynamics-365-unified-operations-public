@@ -40,7 +40,7 @@ After the reports are uploaded to an LCS project, they can be published to produ
 
 ## Publishing analytical applications to PowerBI.com
 
-Before you continue, make sure that you've verified and packaged your analytical applications into a PBIX file by using Microsoft Power BI Desktop. For information about how to create analytical applications by using the local Entity Store database, see [Author analytical reports by using Power BI Desktop](author-distribute-power-bi-reports.md.md). When you're ready to promote your solution, follow these steps to publish the analytical applications to PowerBI.com.
+Before you continue, make sure that you've verified and packaged your analytical applications into a PBIX file by using Microsoft Power BI Desktop. For information about how to create analytical applications by using the local Entity Store database, see [Author analytical reports by using Power BI Desktop](author-distribute-power-bi-reports.md). When you're ready to promote your solution, follow these steps to publish the analytical applications to PowerBI.com.
 
 ### Step 1: Upload the report to LCS
 
