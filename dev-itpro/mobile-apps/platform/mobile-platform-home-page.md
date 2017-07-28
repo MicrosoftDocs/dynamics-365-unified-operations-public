@@ -66,7 +66,7 @@ We also have a video series about creating a mobile app:
 [Use regular fields to provide counts](scenarios/using-regular-fields-for-count.md)
 
 ## Client-side development reference
-[Mobile workspace design overview](scenarios/design-overview.md)
+[App design overview](scenarios/design-overview.md)
 
 [Client APIs](client-apis/client-apis-reference.md)
 
