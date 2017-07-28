@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 9
 
 ---
 
-# Welcome to Mobile Platform
+# The Mobile Platform
 
 Microsoft Dynamics 365 Unified Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product. 
 
