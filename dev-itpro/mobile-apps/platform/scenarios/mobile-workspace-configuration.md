@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure a workspace by using the SysAppWorkspace class
-description: 
+description: You can use the **SysAppWorkspace** class to configure and publish workspaces on the server. 
 author: makhabaz
 manager: AnnBe
 ms.date: 07/01/2017
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 # Configure a workspace by using the SysAppWorkspace class
-You can use the **SysAppWorkspace** class to configure workspaces on the server. This class is also used to publish workspaces.
+You can use the **SysAppWorkspace** class to configure and publish workspaces on the server.
 
 ## Create a new workspace class
 To use the **SysAppWorkspace** class for your worksapce, you need to create a new class for your workspace by extending the **SysAppWorkspace** class. The new class can then be used to modify workspace metadata along with providing hooks for mobile app life cycle management.
@@ -42,7 +42,7 @@ Follow the steps below to create  a new workspace class for your workspace.
 
     ![Workspace class](media/workspace-api/WorkspaceClass.png)
 
-2. Add the **SysAppWorkspaceAttribute** attribute to your class and provide the AppID of your workspace. You can find the AppId for your app from the Summary page in SysAppDesigner.
+2. Add the **SysAppWorkspaceAttribute** attribute to your class and provide the AppID of your workspace. You can find the AppId for your app from the Summary page in the mobile app designer.
 
     ![Workspace summary](media/workspace-api/workspaceSummary.png)
     
@@ -78,39 +78,32 @@ This method is called after a job has been executed on the server. You can overr
 + Change the job result. For example, you can change the values or add new set of values.
 + You can ignore the values that are being returned from server and instead send some other values back.
 
-## Use workspace class for publishing workspaces from AOT resources
-Workspaces can live in the database as well as in AOT as resources. In order to provide visibility to workspaces stored in AOT resources you need to create a workspace class and point it to the AOT resource name that contains the workspace. Workspaces that are stored as AOT resource cannot be edited or deleted using the SysAppDesigner, they can only be exported.
+## Use the workspace class for publishing workspaces from AOT resources
+Workspaces can live in the database as well as in AOT as resources. In order to provide visibility to workspaces stored in AOT resources you need to create a workspace class and point it to the AOT resource name that contains the workspace. Workspaces that are stored as AOT resource cannot be edited or deleted using the mobile app designer, they can only be exported.
 
-Follow the following steps to publish a workspace that resides in an AOT resource.
+To publish a workspace that resides in an AOT resource:
 
-1. When you are developing a workspace the workspace is stored in database. It needs to be exported from SysAppDesigner so that it can be stored as an AOT resource. The workspace will be exported as an xml file.
+1. When you are developing a workspace that is stored in database, you must export it from the mobile app designer so that it can be stored as an AOT resource. The workspace will be exported as an xml file.
 
-    ![alt text](media/workspace-api/ExportWorkspace.png "Export a workspace")
+    ![Export a workspace](media/workspace-api/ExportWorkspace.png)
 
+2. Delete the workspace from the mobile app designer.It will be loaded from an AOT resource later.
 
-2. Delete the workspace from SysAppDesigner as later it will be loaded from an AOT resource
-
-    ![alt text](media/workspace-api/DeleteWorkspace.png "Delete a workspace")
-
+    ![Delete a workspace](media/workspace-api/DeleteWorkspace.png)
 
 3. Create a new AOT resource and select the exported workspace for the resource.
 
-    ![alt text](media/workspace-api/WorkspaceAsResource.png "Workspace as resource")
+    ![Workspace as resource](media/workspace-api/WorkspaceAsResource.png)
 
+4. Create a new class for your workspace that extends **SysAppWorkspace**. Apply the **SysAppWorkspaceAttribute** attribute to the class and provide the AppId and the AOT resource name which contains the resource.
 
-4. Create a new class for your workspace that extends from SysAppWorkspace. Apply the SysAppWorkspaceAttribute to the class providing the AppId and the AOT resource name which contains the resource
+    ![New workspace class](media/workspace-api/NewWorkspaceClass.png)
 
+5. Build the class and reopen the mobile app designer.
 
-    ![alt text](media/workspace-api/NewWorkspaceClass.png "New workspace class")
+6. The workspace is now published. The workspace shows up in designer but cannot be edited or deleted. Note that the workspace is loaded from metadata.
 
-
-
-5. Build the class and reopen SysAppDesigner.
-
-6. Your workspace is now published. The workspace shows up in designer but cannot be edited or deleted.
-Note that the workspace is now getting loaded from metadata.
-
-    ![alt text](media/workspace-api/WorkspaceInMetadata.png "Workspace in metadata")
+    ![Workspace in metadata](media/workspace-api/WorkspaceInMetadata.png)
 
 ## Updating workspaces that have already been published
 If you have your workspace as part of AOT resource, you are not able to edit it from designer. If you would like to keep on working with this workspace follow the following steps.
