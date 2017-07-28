@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 3
 # Localize workspaces on server
 Workspace classes can be used in multiple ways to provide localization support to workspaces.
 
-## Using config objects to pass localized labels
+## Use config objects to pass localized labels
 A config object can be added to the workspace metadata when it is requested by the mobile app. The config object can later be used to provide localization support. Suppose you have the following scenario where a workspace requires localized labels for the **pageLink** control that you added via the business logic.
 
  ![Customer details with Rentals that is not localized](media/workspace-api/ConfigObjectsPage.png)
@@ -65,7 +65,7 @@ To use a config object to provide localized labels:
 
     ![metadataService.addLink with call to config object](media/workspace-api/ConfigObjectsBusinessLogicFinal.png)
 
-## Using a workspace class to update workspace title and description
+## Use a workspace class to update workspace title and description
 A workspace class can be used to provide localized strings for the workspace title and description. If you do not localize the title and description, the fields will be in the language you implemented them in. In this example, we will localize a workspace where "MyWorkspace" and "A sample workspace" are the title and description, respectively.
 
 ![List of workspaces](media/workspace-api/LocalizeWorkspaceTitle.png) 
