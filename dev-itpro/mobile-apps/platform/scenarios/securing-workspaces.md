@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Secure workspaces using workspace class
-description: 
+title: Secure workspaces using a workspace class
+description: Workspace class can be used to secure workspaces.
 author: makhabaz
 manager: AnnBe
 ms.date: 07/01/2017
@@ -31,28 +31,26 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 
-# Securing workspaces using workspace class
-Workspace class can be used to secure workspaces. Below are the ways workspaces can be secured.
+# Secure workspaces using a workspace class
+Workspace class can be used to secure workspaces.
 
-## Assigning a menu item to workspace
-Workspaces can be tied to an operations menu item. Users who do not have access to the menu item will not be able to use the workspace. In this way the workspace is only shown to users who have rights to the menu item. 
+## Assign a menu item to workspace
+Workspaces can be tied to a menu item. Users who do not have access to the menu item will not be able to use the workspace, because the workspace is only shown to users who have rights to the menu item. 
 
 If a menu item is not assigned to a workspace than the workspace is always shown to the user.
 
 Follow the steps below to secure your workspaces by assigning a menu item.
 
-1. Add "SysAppWorkspaceSecurityAttribute" to the workspace class providing a menu item name that you would like to assign to the workspace.
-2. Build and then test by logging in to mobile app with a user that don’t have access to the menu item 
+1. Add a **SysAppWorkspaceSecurityAttribute** attribute to the workspace class providing a menu item to assign to the workspace.
 
- ![alt text](media/workspace-api/SecureWorkspaceOption1.png "Assign menu item to workspace")
+![Assign menu item to workspace](media/workspace-api/SecureWorkspaceOption1.png)
 
-## Overriding the workspaceHidden method
-We have also added a hook point where the maker can decide if the workspace needs to be hidden/shown based on any parameters and so can override the decision made by the base workspace api.
+2. Build and test the menu item and workspace by logging in to mobile app with a user account that does’t have access to the menu item. 
 
-By overriding the workspaceHidden method, you are in control of hiding or showing the workspace.
+## Override the workspaceHidden method
+You can also specify that the workspace is hidden or shown based on parameters. By overriding the **workspaceHidden** method, your code controls hiding and showing the workspace, as shown in the following code example.
 
+![Override the workspaceHidden method](media/workspace-api/SecureWorkspaceOption2.png)
 
- ![alt text](media/workspace-api/SecureWorkspaceOption2.png "Override the workspaceHidden method")
-
-## Combining the above 2 methods
-You can mix both options i.e. assign a menu item to do the additional security check and then can use the workspaceHidden to do any additional checks and return true or false
+## Add an menu item and override the workspaceHidden method
+You can use both methods in your app. The menu item provides a security check and the **wordspaceHidden** method contains additional logic relative to hiding and showing the workspace.
