@@ -113,5 +113,5 @@ Once a control is created without any further children or items, the control nam
 
 The above code produces the customer image, customer name, font, background color, etc. as shown in the following image.
 
-![sample image](../media/detail%20page.PNG)
+![sample image](../media/detail-page.PNG)
 
