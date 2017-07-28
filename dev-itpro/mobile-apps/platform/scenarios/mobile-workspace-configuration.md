@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use the workspace class
+title: Configure a workspace by using the SysAppWorkspace class
 description: 
 author: makhabaz
 manager: AnnBe
@@ -30,66 +30,56 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Workspace class
-SysAppWorkspace class can be used to configure workspaces on the server. This class is also used to publish workspaces.
+# Configure a workspace by using the SysAppWorkspace class
+You can use the **SysAppWorkspace** class to configure workspaces on the server. This class is also used to publish workspaces.
 
-## Creating a new workspace class
-In order to use SysAppWorkspace for your worksapce, you need to create a new class for your workspace and extend it from SysAppWorkspace class. Your newly created workspace class can then be used to modify workspace metadata along with providing hooks for mobile app life cycle management.
+## Create a new workspace class
+To use the **SysAppWorkspace** class for your worksapce, you need to create a new class for your workspace by extending the **SysAppWorkspace** class. The new class can then be used to modify workspace metadata along with providing hooks for mobile app life cycle management.
 
 Follow the steps below to create  a new workspace class for your workspace.
 
-1. Create a new class for your workspace and extend it from SysAppWorkspace class.
+1. Create a new class for your workspace and extend it from the **SysAppWorkspace** class.
 
-    ![alt text](media/workspace-api/WorkspaceClass.png "Workspace class")
+    ![Workspace class](media/workspace-api/WorkspaceClass.png)
 
-2. Add SysAppWorkspaceAttribute on your class and provide the AppID of your workspace.
-You can find the AppId for your app from the Summary page in SysAppDesigner.
+2. Add the **SysAppWorkspaceAttribute** attribute to your class and provide the AppID of your workspace. You can find the AppId for your app from the Summary page in SysAppDesigner.
 
-    |![alt text](media/workspace-api/workspaceSummary.png "Workspace summary")|
-    |--|
-    |![alt text](media/workspace-api/WorkspaceClassWithAppId.png "Workspace class with appId")|
+    ![Workspace summary](media/workspace-api/workspaceSummary.png)
+    
+    ![Workspace class with appId](media/workspace-api/WorkspaceClassWithAppId.png)
 
-3. (Optional) If your workspace exist as an AOT resource, then provide the AOT resource name as the 2nd parameter to SysAppWorkspaceAttribute.
+3. (Optional) If your workspace is an AOT resource, then provide the AOT resource name as the second parameter to the **SysAppWorkspaceAttribute** constructor.
 
-    ![alt text](media/workspace-api/WorkspaceClassWithAOTResource.png "Workspace class with AOT Resource")
+    ![Workspace class with AOT Resource](media/workspace-api/WorkspaceClassWithAOTResource.png)
 
 ## Workspace life cycle methods
-The workspace class provides the following methods that can be overridden
+The workspace class provides the following methods that can be overridden.
 
 ### getWorkspaceMetadata
-This method is called to retrieve workspace metadata. Maker can override this method to update the workspace metadata. Follow the [link](#workspaceMetadata) to get more details about workspace metadata classes.
+This method is called to retrieve workspace metadata. You can override this method to update the workspace metadata. For more information, see the "Workspace metadata classes" section below. Some ways you can use the metadata are:
 
-Below are some of the ways this method can be used.
-
-1. Update the workspace, page, action and control metadata
-
-2. Provide custom configs.
-
-3. Hide pages, actions and controls in a workspace
-
-4. Mark fields as mandatory.
++ Update the workspace, page, action and control metadata.
++ Provide custom configs.
++ Hide pages, actions and controls in a workspace.
++ Mark fields as mandatory.
 
 ### isWorkspaceHidden
-This method can be overridden to hide or show the workspace on the mobile client. Maker can use any custom parameters to decide if the workspace needs to be hidden for a particular user.
+This method can be overridden to hide or show the workspace on the mobile client. You can use custom parameters to determine if the workspace needs to be hidden for a particular user. For more information, see [Secure a mobile app workspace](secure-mobile-workspace.md).
 
 ### onBeginJob
-This method is called before a job request is executed on the server. Maker can override this method to alter request parameters. Maker have access to the page or action name that the job request is for. Following are some of the ways this method can be used
+This method is called before a job request is executed on the server. You can override this method to change the request parameters. You have access to the page or action name that the job request is for. Using **onBeginJob**, you can:
 
-1. Maker can alter the filter context for the job. For e.g. if there is a scenario that requires to always send 1 record, maker can change the filter context to it.
-
-2. Maker can alter the job values. Job values are sent for a job that is initiated by "Actions" on the mobile client. Maker can now alter or inspect values that are being sent to start a job on the server.
++ Change the filter context for the job. For example, if there is a scenario that requires that one record be sent, you can change the filter context to it.
++ You can change the job values. Job values are sent for a job that is initiated by actions on the mobile client. You can change or inspect values that are being sent to start a job on the server.
 
 ### onEndJob
-This method is called after a job has been executed on the server. Maker can override this method to alter the result that is sent back to mobile client. Maker have access to the page or action name that the job result is for. Following are some of the ways this method can be used.
+This method is called after a job has been executed on the server. You can override this method to change the result that is sent back to mobile client. You have access to the page or action name that the job result is for. Using **onEndJob**, you can:
 
-1. Maker can alter the job result. For eg. Maker can change the values or add new set of values.
++ Change the job result. For example, you can change the values or add new set of values.
++ You can ignore the values that are being returned from server and instead send some other values back.
 
-2. Maker can ignore the values that are being returned from server and instead send some other values back.
-
-## Using workspace class for publishing workspaces from AOT resources
-Workspaces can live in database as well as in AOT as resources. In order to provide visibility to workspaces stored in AOT resource you need to create a workspace class and point it to the AOT resource name that contains the workspace.
-
-Note that workspace that are stored as AOT resource cannot be edited or deleted using the SysAppDesigner, they can only be exported.
+## Use workspace class for publishing workspaces from AOT resources
+Workspaces can live in the database as well as in AOT as resources. In order to provide visibility to workspaces stored in AOT resources you need to create a workspace class and point it to the AOT resource name that contains the workspace. Workspaces that are stored as AOT resource cannot be edited or deleted using the SysAppDesigner, they can only be exported.
 
 Follow the following steps to publish a workspace that resides in an AOT resource.
 
