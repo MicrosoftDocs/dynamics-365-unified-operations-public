@@ -59,49 +59,48 @@ On the **Rebate agreements** page, you can view details about the negotiated con
 
 -   On the agreement’s **Lines** FastTab, you can see how different quantity tiers can be set up to grant different rebates. For example, in the illustration, the **From value** and the **To value** fields indicate that a product quantity between 10 and 19 units will qualify for a rebate of USD 15 per unit.
 
-In the **Workflow approval status** field, the value **Approved** indicates that the agreement can be applied to purchase orders that meet the agreement’s conditions.
+-   In the **Workflow approval status** field, the value **Approved** indicates that the agreement can be applied to purchase orders that meet the agreement’s conditions.
 
+## Identify orders that qualify for rebates and generate rebate claims
+When purchase orders are placed with a vendor that the company has a rebate agreement with, if those orders qualify for the rebate, the program identifies the future vendor credit payments and generates claims for every order line that is invoiced. This is an automatic process. Subsequently, you can review the expected rebates and see the impact of those rebates on the product’s cost and profit margin.
 
-### Example – Purchase products that qualify for a rebate and generate a rebate claim
-
-The vendor rebate agreement that authorizes Contoso to receive a rebate From vendor US-101, Fabrikam Electronics, when it buys item T0020, TelevisionD30042", in any quantity above 10 units, is in place. A purchasing agent now places an order with the vendor.
-
+### Enter an order line that generates a rebate:
 1.  Click **Procurement and sourcing** \> **Purchase orders** \> **All purchase orders**.
-2.  On the **All purchase orders** list page, on the Action Pane, click     **+New**.
-3.  In the **Vendor account** field, select **US-101**, and then click **OK**.
-4.  On the **Purchase order** page, enter an order line for item **T0020** and a quantity of **30**.
-5.  In the **Warehouse** field, enter **13**.
+2.  On the **All purchase orders** list page, on the Action Pane, click **+New**.
+3.  In the **Vendor account** field, select a vendor by whom you are authorized to receive a rebate when you buy an item in a specific quantity, and then click **OK**.
+4.  On the **Purchase order** page, enter an order line for the item and the quantity that generates a rebate.
+5.  In the **Warehouse** field, enter the warehouse of the item.
 6.  Select the order line, and then click **Purchase order line** \> **View** \> **Price details**.
 7.  On the **Price details** page, click the **Rebates** FastTab.
 
-On the **Price details** page, the purchasing agent can see that a rebate from the valid vendor rebate agreement for the total amount of USD 900 is applied to the line. The USD 900 is calculated as the line quantity of 30 units multiplied by USD 30, which is the rebate amount per product unit that applies when the line quantity is more than 30 units (the second quantity break on the agreement). This amount is also shown in the **Vendor rebate** field in the **Margin estimation** section of the **Price details** page.
+On the **Price details** page, you can now see the rebate that is applied to the line by the vendor rebate agreement. For example, say that you have a line quantity of 30 units and a rebate amount per product unit of USD 30 that is applied when the line quantity is more than 30 units. In this case, the rebate shown in the **Starting rebate** field is USD 900, that is, the line quantity of 30 units multiplied by USD 30. This amount is also shown in the **Vendor rebate** field in the **Margin estimation** section of the **Price details** page.
 
+### Invoice the order and generate a rebate claim:
 1.  Close the **Price details** page.
 2.  On the **Purchase order** page, on the Action Pane, on the **Purchase** tab, in the **Actions** group, click **Confirm**. You can now invoice the order.
 3.  On the Action Pane, on the **Invoice** tab, in the **Generate** group, click **Invoice**.
 4.  On the **Vendor invoice** page, in the **Default from** field, select **Ordered quantity**, and then click **OK**.
-5.  In the **Number** field, enter **fab-12345** as the invoice identifier. 
+5.  In the **Number** field, enter the invoice identifier. 
 6.  On the Action Pane, click **Post**.
 7.  The purchase invoice has now been posted, and the rebate claim has been generated for the invoice line.
-8.  Click **Procurement and sourcing** \> **Vendor Rebates**\> **Rebate claims**.
 
-The next steps are to review, approve, and process the claim into the
-receivable.
 
-### Example – Process the claim and pass it as receivable to A/P
+### View the rebate claims
+-   Click **Procurement and sourcing** \> **Vendor Rebates**\> **Rebate claims**.
 
-The vendor agreement owner is responsible for periodically reviewing and, as required by the company’s policy, approving the rebate claims that are generated. After claims are approved, the A/P administrator passes them as credit notes to the regular receivables processing.
+## Review and approve claims 
+Generated rebate claims represent the future payments that can be expected from the vendor. Before a credit note is issued to the vendor, the agreement owner typically wants to review the claims and approve them. 
 
-1. Open the rebate claim.
+When the claims have been approved, they can be processed by the Accounts payable and a credit memo (vendor invoice) for the rebate claim amount is automatically created and posted. The credit can then be added to the vendor balance, and the Accounts payable team can include it in the regular settlement process.
 
-The rebate balance amount for this claim is USD 900 (30 units multiplied by the rebate amount of USD 30).
+1. Click **Procurement and sourcing** > **Vendor Rebates** > **Rebate claims** to open a rebate claim. For a purchase order with a line quantity of 30 units and a rebate amount per product unit, applied when the line quantity is more than 30 units, the rebate balance amount is USD 900 (30 units multiplied by the rebate amount of USD 30).
 
 > [!NOTE] 
 > When a claim is generated, its status is **Calculated**. This status is used because the rebate is granted per invoice, not on a cumulative basis.
 
 2. Close the rebate claim.
 3. Mark the claim, and then, on the Action Pane, click **Approve**.
-4. On the request page, in the **Vendor** field, select **US-101**, and then click **OK**.
+4. On the request page, in the **Vendor** field, select the vendor from whom you are authorized to receive a rebate, and then click **OK**.
 
 Message bars inform the user that a Rebate accrual journal has been posted for the claim amount. This posting has debited the Accrued Vendor Rebates Receivable account for the expected vendor credit and credited the interim Accrued Vendor Rebates Received account for the expected gain.
 
@@ -111,13 +110,13 @@ Message bars inform the user that a Rebate accrual journal has been posted for t
 
 The A/P clerk must now complete the rebate claim handling by running the Process function.
 
-6. On the Action Pane, click **Process**, click **Filter**,  in the **Criteria** field for the **Vendor account** field, select **US-101**, and then click **OK**.
+6. On the Action Pane, click **Process**, click **Filter**,  in the **Criteria** field for the **Vendor account** field, select the vendor that allows you a rebate, and then click **OK**.
 
 The message bars and the status has changed to **Completed** indicate that the following events have occurred:
 
-● A Rebate accrual journal posting has reversed the previous interim amounts on the accrual receivable and expense accounts.
+-   A Rebate accrual journal posting has reversed the previous interim amounts on the accrual receivable and expense accounts.
 
-● A vendor invoice (credit note) for the rebate amount has been created and posted.
+-   A vendor invoice (credit note) for the rebate amount has been created and posted.
 
 > [!NOTE] 
 > The setting of the **Manual invoice posting** option on the **Rebate program** tab of the **Procurement and sourcing parameters** page determines whether a vendor invoice is posted automatically as part of claim processing or manually.
