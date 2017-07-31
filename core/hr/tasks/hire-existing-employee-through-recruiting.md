@@ -1,9 +1,9 @@
 --- 
 # required metadata 
  
-title: Hire an existing employee through recruiting (UK)
+title: Hire an existing employee through recruiting
 description: Sometimes open positions can be filled by candidates who are already employees in your organization. 
-author: epodkolz
+author: rschloma
 manager: AnnBe 
 ms.date: 02/10/2017
 ms.topic: business-process 
@@ -16,17 +16,17 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
+ms.reviewer: rschloma
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
-ms.search.region: United Kingdom
+ms.search.region: 
 # ms.search.industry: 
-ms.author: epodkolz
+ms.author: rschloma
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Hire an existing employee through recruiting (UK)
+# Hire an existing employee through recruiting
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
