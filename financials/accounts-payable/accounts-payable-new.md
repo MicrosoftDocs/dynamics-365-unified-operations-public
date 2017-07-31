@@ -128,6 +128,8 @@ The following topics provide information about settlements. Settlement is the pr
 
 
 
+
+
 Still looking for additional information about Microsoft Dynamics 365 for Finance and Operations, Enterprise edition? 
 
 Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
