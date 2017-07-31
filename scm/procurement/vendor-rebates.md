@@ -34,7 +34,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 Vendor rebates help companies better manage their supplier rebate programs by automating tasks that are involved in administering, 
 tracking, and claiming rebates that are earned.
 
-This article provides a broad overview of  the most common tasks that you’d want to accomplish when working with vendor rebates. The overview includes the following tasks:
+This article provides a broad overview of the most common tasks that you’d want to accomplish when working with vendor rebates. The overview includes the following tasks:
 
 ● Review details of a rebate agreement
 
@@ -44,7 +44,7 @@ This article provides a broad overview of  the most common tasks that you’d wa
 
 ### Prerequisites
 
-Before you proceed with the following guidelines, set these parameters on the **Procurement and sourcing parameters** page:
+Before you proceed with the following guidelines, verify these parameters on the **Procurement and sourcing parameters** page:
 
 -   On the **Prices** tab, the **Enable price details** option is set to **Yes**.
 
@@ -53,19 +53,19 @@ Before you proceed with the following guidelines, set these parameters on the **
 ## Review details of a vendor rebate agreement
 A vendor rebate agreement is a record of a contract with a vendor that specifies the negotiated terms and conditions under which the company qualifies for a monetary reward in return for achieving preset purchase targets. Vendor rebate agreements are recorded on the Rebate agreements page.
 
-To open the **Rebate agreements** page, click **Procurement and sourcing** \> **Vendor rebates** \> **Rebate agreements**.
+To open the **Vendor rebate agreements** page, click **Procurement and sourcing** \> **Vendor rebates** \> **Rebate agreements**.
 
 ![Purchase agreement](media/purchase-agreement.PNG)
 
-On the **Rebate agreements** page, you can view details about the negotiated conditions of a vendor agreement:
+On the **Vendor rebate agreements** page, you can view details about the negotiated conditions of a vendor agreement:
 
--   The **Cumulate purchase by** field, **Invoice** indicates that a rebate claim will be determined every time that a purchase order line is invoiced. The calculation of the rebate claim amount can also be set to depend on a period (of week, month, year, lifetime or a customized period).
+-   In the **Cumulate purchase by** field, you can set the calculation of the rebate claim. The amount can be set to depend on a period (of week, month, year, lifetime or a customized period). **Invoice** indicates that a rebate claim will be determined every time that a purchase order line is invoiced.
 
 -   The **Rebate program accrual account** and **Rebate program expense account** fields specify account numbers that will receive accrued rebate amounts during the intermediate stage between approval and processing.
 
 -   In the **Rebate line break type** field, the options **Quantity** and **Amount** indicate that the rebates are either volume-based or amount-based.
 
--   On the agreement’s **Lines** FastTab, you can see how different quantity tiers can be set up to grant different rebates. For example, in the illustration, the **From value** and the **To value** fields indicate that a product quantity between 10 and 19 units will qualify for a rebate of USD 15 per unit.
+-   On the **Lines** FastTab, you can see how different quantity tiers can be set up to grant different rebates. For example, in the illustration, the **From value** and the **To value** fields indicate that a product quantity between 10 and 19 units will qualify for a rebate of USD 15 per unit.
 
 -   In the **Workflow approval status** field, the value **Approved** indicates that the agreement can be applied to purchase orders that meet the agreement’s conditions.
 
@@ -110,17 +110,17 @@ When the claims have been approved, they can be processed by the Accounts payabl
 3. Mark the claim, and then, on the Action Pane, click **Approve**.
 4. On the request page, in the **Vendor** field, select the vendor from whom you are authorized to receive a rebate, and then click **OK**.
 
-Message bars inform the user that a Rebate accrual journal has been posted for the claim amount. This posting has debited the Accrued Vendor Rebates Receivable account for the expected vendor credit and credited the interim Accrued Vendor Rebates Received account for the expected gain.
+Message bars inform you when a Rebate accrual journal has been posted for a claim amount. This posting debits the Accrued Vendor Rebates Receivable account for the expected vendor credit and credits the interim Accrued Vendor Rebates Received account for the expected gain.
 
 ![Message](media/message.png)
 
 5. In the rebate list, select the line, and then, on the Action Pane, click **Rebate transactions** to see and navigate to the journal batch number for this rebate accrual posting. 
 
-The A/P clerk must now complete the rebate claim handling by running the Process function.
+To move the claims to the regular A/P process, the A/P clerk must now complete the rebate claim handling by running the Process function.
 
-6. On the Action Pane, click **Process**, click **Filter**,  in the **Criteria** field for the **Vendor account** field, select the vendor that allows you a rebate, and then click **OK**.
+6. On the Action Pane, click **Process**, click **Filter**.  In the **Criteria** field for the **Vendor account** field, select the vendor that allows you a rebate, and then click **OK**.
 
-The message bars and the status has changed to **Completed** indicate that the following events have occurred:
+The message bars and the fact that the status has changed to **Completed** indicate that the following events have occurred:
 
 -   A Rebate accrual journal posting has reversed the previous interim amounts on the accrual receivable and expense accounts.
 
