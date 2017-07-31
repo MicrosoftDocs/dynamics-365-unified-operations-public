@@ -263,54 +263,54 @@ The following table shows whether each feature is available in:
 
 | Others | | | |
 |---|---|---|---|
-| | Intercompany order processing: ATP and direct shipment| Yes | ? |
-| | Intercompany revenue and cost transactions| Yes | ? |
-| | Item and warehouse migration process to use advanced warehouse management| Yes | Yes |
-| | Localization configurations| Yes | ? |
-| | Maintain carry-forward status| Yes | Yes |
-| | Manage attachments| Yes | No |
-| | Manage or view a project work breakdown structure using Microsoft Project Client| Yes | Yes |
-| | Managing estimated costs, revenue, and item requirements | Yes | ? |
-| | Manufacturing – Gantt control| Yes | ? |
-| | Microsoft Office integration| Yes | ? |
-| | Microsoft Office integrations| Yes | ? |
-| | Mobile Invoice Approvals| Yes | Hybrid |
-| | Mobile purchase order approvals| Yes | Yes |
-| | Mobile vendor collaboration| Yes | Yes |
-| | Mobility and modern user experience | Yes | ? |
-| | Monitoring and telemetry| Yes | ? |
-| | Movement of inventory with associated work in Warehouse management| Yes | Yes |
-| | New termination rules| Yes | ? |
-| | Number sequence scope extensibility| Yes | No |
-| | Onboarding| Yes | No |
-| | Operational performance Power BI content designed for COOs and CFOs| Yes | ? |
-| | Optimize scheduling for planned production orders with overlap jobs| Yes | Yes |
-| | Payments | Yes | ? |
-| | Personalization now supports Task Recorder| Yes | Yes |
-| | Personalized product recommendations powered by cognitive services and Microsoft Azure machine learning| Yes | ? |
-| | Piece picking confirmation| Yes | Yes |
-| | Platform compatibility| Yes | ? |
-| | Power BI content pack for Project management and accounting| Yes | ? |
-| | Product variant enhancements| Yes | ? |
-| | Product work confirmation for cluster picking| Yes | Yes |
-| | Production output location added to the resource group member| Yes | Yes |
-| | Production performance Power BI reports| Yes | Yes |
-| | Project resourcing improvements| Yes | ? |
-| | Project time entry mobile workspace| Yes | Yes |
-| | Prospect to cash integration of Dynamics 365 for Sales and Dynamics 365 for Operations| Yes | Yes |
-| | Punch-out to external catalog from purchase requisition| Yes | No |
-| | Purchase spend analysis Power BI reports| Yes | No |
-| | Purchasing analysis Power BI content| Yes | ? |
-| | Recruiting Power BI reports | Yes | ? |
-| | Redesigned employee self-service | Yes | ? |
-| | Regulatory updates| Yes | ? |
-| | Rename project stages| Yes | Yes |
-| | Reverse charge functionality for European countries/regions| Yes | Yes |
-| | Safety stock de-prioritization in master planning and capable to promise (CTP) calculation| Yes | Yes |
-| | Sales and profitability performance Power BI reports| Yes | No |
-| | Sales orders mobile app  | Yes | No |
-| | Save Financial reports to SharePoint| Yes | Yes |
-| | Security| Yes | ? |
+| Procurement | Intercompany order processing: ATP and direct shipment| Yes | ? |
+| General ledger | Intercompany revenue and cost transactions| Yes | ? |
+| warehouse | Item and warehouse migration process to use advanced warehouse management| Yes | Yes |
+| Localization | Localization configurations| Yes | ? |
+| Budgeting | Maintain carry-forward status| Yes | Yes |
+| Document management| Manage attachments| Yes | No |
+| projet management| Manage or view a project work breakdown structure using Microsoft Project Client| Yes | Yes |
+| project mn | Managing estimated costs, revenue, and item requirements | Yes | ? |
+| manufactureing | Manufacturing – Gantt control| Yes | ? |
+| Office | Microsoft Office integration| Yes | ? |
+| Office | Microsoft Office integrations| Yes | ? |
+| mobile and accounts payable | Mobile Invoice Approvals| Yes | Hybrid |
+| mobile and procurement | Mobile purchase order approvals| Yes | Yes |
+| mobile and procurement | Mobile vendor collaboration| Yes | Yes |
+| mobile | Mobility and modern user experience | Yes | ? |
+| performance/platform | Monitoring and telemetry| Yes | ? |
+| warehouse | Movement of inventory with associated work in Warehouse management| Yes | Yes |
+| HR | New termination rules| Yes | ? |
+| platform | Number sequence scope extensibility| Yes | No |
+| onboarding, coudl be HR (read roadmap) | Onboarding| Yes | No |
+| analytics, GFM | Operational performance Power BI content designed for COOs and CFOs| Yes | ? |
+| production | Optimize scheduling for planned production orders with overlap jobs| Yes | Yes |
+| Retail  | Payments | Yes | ? |
+| Client | Personalization now supports Task Recorder| Yes | Yes |
+| retail | Personalized product recommendations powered by cognitive services and Microsoft Azure machine learning| Yes | ? |
+| Warehouse | Piece picking confirmation| Yes | Yes |
+| platform | Platform compatibility| Yes | ? |
+| Analytics, project man | Power BI content pack for Project management and accounting| Yes | ? |
+| PIM (product info managment) | Product variant enhancements| Yes | ? |
+| warehouse | Product work confirmation for cluster picking| Yes | Yes |
+| warehouse | Production output location added to the resource group member| Yes | Yes |
+| analytics and production | Production performance Power BI reports| Yes | Yes |
+| project man | Project resourcing improvements| Yes | ? |
+| mobie and project man | Project time entry mobile workspace| Yes | Yes |
+| ?? | Prospect to cash integration of Dynamics 365 for Sales and Dynamics 365 for Operations| Yes | Yes |
+| procurement | Punch-out to external catalog from purchase requisition| Yes | No |
+| analytics and procurement | Purchase spend analysis Power BI reports| Yes | No |
+| duplicate of above | Purchasing analysis Power BI content| Yes | ? |
+| analytis and talent | Recruiting Power BI reports | Yes | ? |
+| talent | Redesigned employee self-service | Yes | ? |
+| localization | Regulatory updates| Yes | ? |
+| project man | Rename project stages| Yes | Yes |
+| Tax | Reverse charge functionality for European countries/regions| Yes | Yes |
+| master planning | Safety stock de-prioritization in master planning and capable to promise (CTP) calculation| Yes | Yes |
+| analytics, SCM sales | Sales and profitability performance Power BI reports| Yes | No |
+| mobile, sales | Sales orders mobile app  | Yes | No |
+| financial | Save Financial reports to SharePoint| Yes | Yes |
+|  | Security| Yes | ? |
 | | Servicing environments| Yes | No |
 | | Servicing environments| Yes | ? |
 | | Setup for account determination in intercompany revenue and cost transactions can be made more granular | Yes | ? |
@@ -342,13 +342,13 @@ The following table shows whether each feature is available in:
 
 
 no idea
-| | Customer management | Yes | ? |
-| | Distribute tasks where it makes sense and increase efficiency| Yes | ? |
-| | Dynamics Translation Service| Yes | Yes |
-| | Enhanced administration features for personalization| Yes | Yes |
-| | Export data to your own data warehouse| Yes | ? |
-| | Ideas portal| Yes | Yes |
-| | Improved viewing experience for Application reports| Yes | Yes |
+| retail? | Customer management | Yes | ? |
+| talent - check the roadmap? could be across the product | Distribute tasks where it makes sense and increase efficiency| Yes | ? |
+| localization | Dynamics Translation Service| Yes | Yes |
+| client | Enhanced administration features for personalization| Yes | Yes |
+| data managemebt | Export data to your own data warehouse| Yes | ? |
+| talent? is it part of the product? | Ideas portal| Yes | Yes |
+| client | Improved viewing experience for Application reports| Yes | Yes |
 
 
 
