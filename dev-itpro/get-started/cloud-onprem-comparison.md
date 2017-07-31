@@ -166,6 +166,9 @@ The following table shows whether each feature is available in:
 | | Pre-employment access| Yes | No |
 | | Transitioning employees and contractors| Yes | ? |
 | | US Payroll| Yes | ? |
+| | New termination rules| Yes | ? |
+| | Recruiting Power BI reports | Yes | ? |
+
 | Inventory management| | | |
 | | Additional warehouse support in manufacturing | Yes | ? |
 | | Consignment inventory| Yes | ? |
@@ -188,6 +191,8 @@ The following table shows whether each feature is available in:
 | | Regulatory updates| Yes | ? |
 | | Dynamics Translation Service| Yes | Yes |
 | Manufacturing| | | |
+| | Manufacturing – Gantt control| Yes | ? |
+
 | Master planning and forecasting| | | |
 | Mobile applications, platform, and framework | | | |
 | | Mobile – On-hand view app| Yes | Yes |
@@ -198,9 +203,13 @@ The following table shows whether each feature is available in:
 | | Mobile framework - Custom user experience through mobile business logic API| Yes | Yes |
 | | Mobile framework - Languages added| Yes | Yes |
 | | Mobile framework - Web client settings| Yes | No |
+| | Mobility and modern user experience | Yes | ? |
+
 | Office integration| | | |
 | | Excel add-in support for creating header records, including journal headers, in Excel| Yes | Yes |
 | | Excel add-in support for publishing data sources in a predictable sequence| Yes | Yes |
+| | Microsoft Office integration| Yes | ? |
+| | Microsoft Office integrations| Yes | ? |
 | Organization administration | | | |
 | | Case management| Yes | ? |
 | | Case management for production and quality orders| Yes | ? |
@@ -209,6 +218,11 @@ The following table shows whether each feature is available in:
 | Planning and scheduling| | | |
 | Procurement and sourcing| | | |
 | | Intercompany order processing: ATP and direct shipment| Yes | ? |
+| | Mobile purchase order approvals| Yes | Yes |
+| | Mobile vendor collaboration| Yes | Yes |
+| | Punch-out to external catalog from purchase requisition| Yes | No |
+| | Purchase spend analysis Power BI reports| Yes | No |
+
 | Product information management | | | |
 | | Enhancements to the bill of materials functionality| Yes | ? |
 | Product master data| | | |
@@ -221,6 +235,9 @@ The following table shows whether each feature is available in:
 | | Project management and accounting improvements | Yes | ? |
 | | Project management and accounting usability and productivity improvements | Yes | ? |
 | | Project Management PowerBI reports| Yes | ? |
+| | Project resourcing improvements| Yes | ? |
+| | Manage or view a project work breakdown structure using Microsoft Project Client| Yes | Yes |
+| | Managing estimated costs, revenue, and item requirements | Yes | ? |
 | Retail| | | |
 | |Ability to sell and return outside assortments | Yes | No |
 | | Advanced warehousing in Retail store  | Yes | No |
@@ -243,6 +260,9 @@ The following table shows whether each feature is available in:
 | | Retail peripheral compatibility| Yes | No |
 | | Retail store | Yes | ? |
 | | Support for multiple Retail server extensions| Yes | No |
+| | Payments | Yes | ? |
+| | Customer management | Yes | ? |
+
 | Sales| | | |
 | Service management| | | |
 | Supply chain management| | | |
