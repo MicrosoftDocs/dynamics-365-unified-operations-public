@@ -61,7 +61,7 @@ The following features are not intended for use in on-premises deployments. Ther
 
 | **Feature**                                                      | **Description**                                                                                                                                                                          |
 |----------------------------------|-------------------------------------------------|
-| SSRS Report Viewer control       |SQL Reporting Services (SSRS) does not support a report viewer control that is compatible with the on-premises web client.  Reports are rendered as PDF documents by the on-premises service. Use extensions to enable embedded drill-thru links in application reports.|
+| SSRS Report Viewer control       |SQL Reporting Services (SSRS) does not support a report viewer control that is compatible with the on-premises web client.<br>Reports are rendered as PDF documents by the on-premises service. Use extensions to enable embedded drill-thru links in application reports.|
 | Document Routing Agent           |This component is not necessary for on-premises deployments.  On-premises deployments are hosted on domain-authenticated servers. This offers secure, direct access to network printer devices.
 
 
