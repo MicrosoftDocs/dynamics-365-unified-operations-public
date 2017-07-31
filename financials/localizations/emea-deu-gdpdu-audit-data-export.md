@@ -225,10 +225,10 @@ The following tables show the Accounts payable data structure definitions.
 
 
 
-See also
---------
+## See also
 
-[Electronic Reporting overview](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting)
-
-
+- [Electronic Reporting overview](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting)
+- [Import the audit file configuration](./tasks/import-german-audit-file-configuration.md)
+- [Customize the audit file configuration](./tasks/customize-german-audit-file-configuration.md)
+- [Generate the audit file](./tasks/german-audit-file.md)
 

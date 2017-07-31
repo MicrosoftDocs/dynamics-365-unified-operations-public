@@ -40,8 +40,9 @@ ms.dyn365.ops.version: Platform update 1
 
 The following topologies support package deployment that uses automated flows in Microsoft Dynamics Lifecycle Services (LCS):
 
-- **LCS Implementation Project** – Most environments (development, demo, Tier-2 sandbox, and production) are supported except for build environments. Automated package application is self-serve in all environments except production environments. For production environments, customers must use LCS to submit a request to the Service Engineering team to apply packages.
-- **LCS Partner or trial Projects** – Demo environments are supported.
+- **LCS Implementation Project** – All environments are supported, but there are some limitations for build environments. The build environments that actually have a build server installed will only show Platform updates; application deployable packages would still need to be installed manually if you are using a build server as a development machine. Automated package application is self-serve in all environments except production environments. For production environments, customers must use LCS to submit a request to the Service Engineering team to apply packages.
+- **LCS Partner Projects** – Developer only environments (where build servers = 0) and demo environments are supported.
+- **Trial Projects** – Demo environments are supported.
 
 For other topologies (below), you must use Remote Desktop Protocol (RDP) to connect to the environment and install from the command line. For information about manual package deployment, see [Install  a deployable package](install-deployable-package.md).
 

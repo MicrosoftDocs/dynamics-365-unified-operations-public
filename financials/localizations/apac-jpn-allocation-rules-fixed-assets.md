@@ -21,7 +21,6 @@ ms.reviewer: shylaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 10194
-ms.assetid: ba1302f1-5b7d-44c4-af00-ec629f388e19
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: RichardLuan
@@ -66,6 +65,8 @@ For this example, the depreciation cost amount of a fixed asset is 120 currency 
 
 If the total rounded-down depreciation cost that must be allocated across each dimension is less than the rounding amount, the allocation rule isn't applied to the depreciation. Instead, the depreciation amount is either posted to the main account or offset by using the posting profile rules that you set up on the **Fixed asset posting profiles** page. To avoid these and similar scenarios, you can manually adjust the rounding rule for fixed asset depreciation on the **Currencies** page.
 
+## Additional resources
+- [Allocate carrying amount of shared asset and goodwill to cash generating units](./tasks/allocate-carrying-amount.md)
 
 
 

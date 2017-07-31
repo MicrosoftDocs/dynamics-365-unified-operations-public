@@ -21,7 +21,6 @@ ms.reviewer: shylaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 28791
-ms.assetid: f0ed3209-2d1a-4208-ba45-192e88baed53
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: RichardLuan
@@ -51,5 +50,9 @@ The lifecycle of a BOE ends when the BOE is paid or expires. For endorsed BOEs, 
 ## Reserve endorsement
 If the status of a BOE is **Endorsed**, a user can reserve its endorsement.
 
-
+## Additional resources
+- [Pay a vendor transaction by endorsing a customer bill of exchange](./tasks/pay-vendor-transaction.md)
+- [Reverse an endorsed bill of exchange](./tasks/reverse-endorsed-bill-exchange.md)
+- [Set up Japan payment by endorsing a customer bill of exchange](./tasks/setup-japan-payment-endorsing-customer-bill-exchange.md)
+- [Settle an endorsed bill of exchange](./tasks/settle-endorsed-bill-exchange.md)
 
