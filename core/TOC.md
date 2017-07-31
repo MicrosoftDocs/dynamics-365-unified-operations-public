@@ -1027,7 +1027,6 @@
 ### Recruiting
 #### [Manage a recruiting process](/dynamics365/unified-operations/fin-and-ops/hr/manage-recruiting-process?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Mass hire projects](/dynamics365/unified-operations/fin-and-ops/hr/mass-hire-projects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Hire an existing employee through recruiting](/dynamics365/unified-operations/financials/localizations/tasks/hire-existing-employee-through-recruiting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Motivate employees
 #### [Compensation plans](/dynamics365/unified-operations/talent/compensation-plans?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1119,6 +1118,7 @@
 #### [Enter project timesheets](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enter-project-timesheets?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Enter worker information](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enter-worker-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Hire a candidate through recruiting](/dynamics365/unified-operations/fin-and-ops/hr/tasks/hire-candidate-through-recruiting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Hire an existing employee through recruiting](/dynamics365/unified-operations/fin-and-ops/hr/tasks/hire-existing-employee-through-recruiting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Identify and deploy candidate selection tools](/dynamics365/unified-operations/fin-and-ops/hr/tasks/identify-deploy-candidate-selection-tools?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Loan items to a worker](/dynamics365/unified-operations/fin-and-ops/hr/tasks/loan-item-worker?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Maintain employee injury and illness information](/dynamics365/unified-operations/fin-and-ops/hr/tasks/maintain-employee-injury-illness-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
