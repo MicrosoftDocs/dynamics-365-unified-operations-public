@@ -1990,6 +1990,9 @@
 
 # [Dynamics 365 for Talent](/dynamics365/unified-operations/talent/index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
+## Getting started
+### [System requirements and update policy](/dynamics365/unified-operations/talent/talent-versions-update-policy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ## Develop a human resources strategy
 ### [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Set up job components](/dynamics365/unified-operations/talent/create-job?toc=dynamics365/unified-operations/fin-and-ops/toc.json)

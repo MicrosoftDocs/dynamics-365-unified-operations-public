@@ -72,8 +72,10 @@ This topic describes how to upgrade an older source database to the latest Fina
 To obtain the latest MinorVersionDataUpgradeWithRetail.zip package from your target environment that is running the latest Finance and Operations update, download the latest binary updates from Lifecycle Services (LCS).
 
 > [!NOTE]
-> If you are upgrading from AX 2012 the data upgrade package is called MajorVersionDataUpgradeWithRetail.zip.
-> In earlier versions (prior to Platform update 4), the package was named DataUpgrade.zip. 
+> The name of the data upgrade deployable package varies depending on what version you are upgrading from and to:
+> - If you are upgrading from AX 2012 the data upgrade package is called MajorVersionDataUpgradeWithRetail.zip. Download the latest binary updates for your Platform update 8 (or higher) environment to find this package.
+> - In earlier versions (prior to Platform update 4), the package was named DataUpgrade.zip. 
+> - In later versions (from Platform update 8 onwards) the package is named MinorVersionDataUpgradeWithRetail.zip. Download the latest binary updates for your Platform update 8 (or higher) environment to find this package.
 
 1.  In LCS, in the **Environments** section, click your target Finance and Operations environment, scroll to the bottom of the page, and then click the **All binary updates** tile. 
 
@@ -82,7 +84,9 @@ To obtain the latest MinorVersionDataUpgradeWithRetail.zip package from your tar
 
 2.  On the **Add hotfixes** page, click **Select all**, click **Add**, and then click **Download package**.
 3.  On the next page, click **Download**.
+
 4.  After the package is downloaded, extract the contents, and go to the following directory to find the MinorVersionDataUpgradeWithRetail.zip file: ..\\CustomDeployablePackage
+
 
 > [!NOTE]
 > Computers that are deployed from LCS will already have a MinorVersionDataUpgradeWithRetail.zip file. However, that file is out of date and includes issues that have been resolved in later fixes. Always download the latest version of the file from LCS.
