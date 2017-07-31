@@ -538,9 +538,9 @@ In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel 
 
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Generic functionality is now used instead of localized functionality.                                                                                                                                                                 |
-| Replaced by another feature? | Yes, this functionality has been replaced by Advanced bank reconciliation functionality. |
-| Modules affected             | All                                                                                                                                                                                                                                   |
+| **Reason for deprecation**       | Generic functionality is now used instead of localized functionality.                                                                                                                                                                 |
+| **Replaced by another feature?** | Yes, this functionality has been replaced by Advanced bank reconciliation functionality. |
+| **Modules affected**             | All                                                                                                                                                                                                                                   |
 
 ### eBilanz (XBRL for Germany)
 
@@ -548,33 +548,33 @@ This functionality provided eXtensible Business Reporting Language (XBRL) output
 
 |                              |                                                                                                                                                                        |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Lack of customer usage                                                                                                                                                 |
-| Replaced by another feature? | This feature hasn't been replaced by another feature, but multiple specialized XBRL packages that provide rich XBRL functionality are available for the German market. |
-| Modules affected             | Management Reporter                                                                                                                                                    |
+| **Reason for deprecation**       | Lack of customer usage                                                                                                                                                 |
+| **Replaced by another feature?** | This feature hasn't been replaced by another feature, but multiple specialized XBRL packages that provide rich XBRL functionality are available for the German market. |
+| **Modules affected**             | Management Reporter                                                                                                                                                    |
 
 ### Enterprise Portal client
 
 |                              |                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | A single client platform has been provided.                                                                                            |
-| Replaced by another feature? | The new web client is based on the desktop form metadata and programming model that have been modified to provide a rich web platform. |
-| Modules affected             | All                                                                                                                                    |
+| **Reason for deprecation**       | A single client platform has been provided.                                                                                            |
+| **Replaced by another feature?** | The new web client is based on the desktop form metadata and programming model that have been modified to provide a rich web platform. |
+| **Modules affected**             | All                                                                                                                                    |
 
 ### Environmental sustainability
 
 |                              |                                                    |
 |------------------------------|----------------------------------------------------|
-| Reason for deprecation       | Low customer usage and a limited feature set       |
-| Replaced by another feature? | No                                                 |
-| Modules affected             | Compliance and internal controls, Accounts payable |
+| **Reason for deprecation**       | Low customer usage and a limited feature set       |
+| **Replaced by another feature?** | No                                                 |
+| **Modules affected**             | Compliance and internal controls, Accounts payable |
 
 ### Form ActiveX and Managed Host controls
 
 |                              |                                                                                                                                                                                               |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The ActiveX and Managed Host controls are based on the deprecated desktop client.                                                                                                             |
-| Replaced by another feature? | The extensible control framework supports building new controls that are based on HTML, CSS, and JavaScript, and is a first-class control in the Microsoft Visual Studio Tooling environment. |
-| Modules affected             | All                                                                                                                                                                                           |
+| **Reason for deprecation**       | The ActiveX and Managed Host controls are based on the deprecated desktop client.                                                                                                             |
+| **Replaced by another feature?** | The extensible control framework supports building new controls that are based on HTML, CSS, and JavaScript, and is a first-class control in the Microsoft Visual Studio Tooling environment. |
+| **Modules affected**             | All                                                                                                                                                                                           |
 
 ### Generate prenotes by using a batch
 
@@ -582,41 +582,41 @@ Prenote generation can't be done by using a batch, but it can still be done by
 
 |                              |                                                                                                        |
 |------------------------------|--------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | No form exists to persist and display the resulting prenote file when it's generated by using a batch. |
-| Replaced by another feature? | Prenotes can still be generated, and the user has control over the location where the file is saved.   |
-| Modules affected             | Accounts payable, Accounts receivable, Cash and bank management                                        |
+| **Reason for deprecation**       | No form exists to persist and display the resulting prenote file when it's generated by using a batch. |
+| **Replaced by another feature?** | Prenotes can still be generated, and the user has control over the location where the file is saved.   |
+| **Modules affected**             | Accounts payable, Accounts receivable, Cash and bank management                                        |
 
 ### German DTAUS payment export and account statement import (totals and transactions)
 
 |                              |                                                                                                                                                                                                                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The format is no longer applicable in Germany, because it has been replaced by Single Euro Payments Area (SEPA) functionality.                                                                                                                                                                 |
-| Replaced by another feature? | Yes, this functionality has been replaced by SEPA payment export and advanced bank reconciliation functionality for importing account statements. |
-| Modules affected             | All                                                                                                                                                                                                                                                                                            |
+| **Reason for deprecation**       | The format is no longer applicable in Germany, because it has been replaced by Single Euro Payments Area (SEPA) functionality.                                                                                                                                                                 |
+| **Replaced by another feature?** | Yes, this functionality has been replaced by SEPA payment export and advanced bank reconciliation functionality for importing account statements. |
+| **Modules affected**             | All                                                                                                                                                                                                                                                                                            |
 
 ### German DTAZV payment format
 
 |                              |                                                                                                    |
 |------------------------------|----------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The format is no longer applicable in Germany, because it has been replaced by SEPA functionality. |
-| Replaced by another feature? | SEPA payments export                                                                               |
-| Modules affected             | All                                                                                                |
+| **Reason for deprecation**       | The format is no longer applicable in Germany, because it has been replaced by SEPA functionality. |
+| **Replaced by another feature?** | SEPA payments export                                                                               |
+| **Modules affected**             | All                                                                                                |
 
 ### German MT940 import
 
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Generic functionality is now used instead of localized functionality.                                                                                                                                                                 |
-| Replaced by another feature? | Yes, this functionality has been replaced by Advanced bank reconciliation functionality. |
-| Modules affected             | All                                                                                                                                                                                                                                   |
+| **Reason for deprecation**       | Generic functionality is now used instead of localized functionality.                                                                                                                                                                 |
+| **Replaced by another feature?** | Yes, this functionality has been replaced by Advanced bank reconciliation functionality. |
+| **Modules affected**             | All                                                                                                                                                                                                                                   |
 
 ### German XML EU Sales list
 
 |                              |                                                                                                                                                                                    |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The XML format for German EU Sales List reporting is no longer supported. Only the ELMA5 text file format can be used to submit the EU Sales List report to the German Tax Office. |
-| Replaced by another feature? | No                                                                                                                                                                                 |
-| Modules affected             | Tax                                                                                                                                                                                |
+| **Reason for deprecation**       | The XML format for German EU Sales List reporting is no longer supported. Only the ELMA5 text file format can be used to submit the EU Sales List report to the German Tax Office. |
+| **Replaced by another feature?** | No                                                                                                                                                                                 |
+| **Modules affected**             | Tax                                                                                                                                                                                |
 
 ### GL SSRS reports
 
@@ -624,17 +624,17 @@ Reports that include the following menu items have been removed: **Summary trial
 
 |                              |                                                                                                                                              |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Financial Microsoft SQL Server Reporting Services (SSRS) reports have been replaced by Management Reporter capabilities and default reports. |
-| Replaced by another feature? | Management Reporter (labeled **Financial reporting** in the current version of Dynamics AX)                                                  |
-| Modules affected             | General ledger                                                                                                                               |
+| **Reason for deprecation**       | Financial Microsoft SQL Server Reporting Services (SSRS) reports have been replaced by Management Reporter capabilities and default reports. |
+| **Replaced by another feature?** | Management Reporter (labeled **Financial reporting** in the current version of Dynamics AX)                                                  |
+| **Modules affected**            | General ledger                                                                                                                               |
 
 ### InfoPart and FormPart metadata
 
 |                              |                                                                                                                                                                                                                                |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | InfoPart and FormPart metadata enabled the creation of FactBoxes for two different clients.                                                                                                                                    |
-| Replaced by another feature? | InfoPart metadata, which was a simplified form definition, is converted into a Form by upgrade tooling. FormPart metadata, which referenced a Form, is replaced by a more direct reference that is created by upgrade tooling. |
-| Modules affected             | All                                                                                                                                                                                                                            |
+| **Reason for deprecation**       | InfoPart and FormPart metadata enabled the creation of FactBoxes for two different clients.                                                                                                                                    |
+| **Replaced by another feature?** | InfoPart metadata, which was a simplified form definition, is converted into a Form by upgrade tooling. FormPart metadata, which referenced a Form, is replaced by a more direct reference that is created by upgrade tooling. |
+| **Modules affected**             | All                                                                                                                                                                                                                            |
 
 ### Main account list page
 
@@ -642,9 +642,9 @@ A list of accounts for the legal entity and related balance information
 
 |                              |                                                                                                                                                                                    |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Balance information is available on the **Trial balance** list page by account and dimension.                                                                                      |
-| Replaced by another feature? | **Main accounts** contains the same list of accounts that the **Main account** list page contained. The grid view in **Main accounts** also shows an even smaller, grid-like view. |
-| Modules affected             | General ledger                                                                                                                                                                     |
+| **Reason for deprecation**       | Balance information is available on the **Trial balance** list page by account and dimension.                                                                                      |
+| **Replaced by another feature?** | **Main accounts** contains the same list of accounts that the **Main account** list page contained. The grid view in **Main accounts** also shows an even smaller, grid-like view. |
+| **Modules affected**             | General ledger                                                                                                                                                                     |
 
 ### Malaysia and Singapore bank cash flow report
 
@@ -652,9 +652,9 @@ This feature let the user print a cash flow report that shows transactions and d
 
 |                              |                                                                         |
 |------------------------------|-------------------------------------------------------------------------|
-| Reason for deprecation       | The same information can be obtained from the Inquiry bank transaction. |
-| Replaced by another feature? | The Inquiry bank transaction                                            |
-| Modules affected             | Cash and bank management                                                |
+| **Reason for deprecation**       | The same information can be obtained from the Inquiry bank transaction. |
+| **Replaced by another feature?** | The Inquiry bank transaction                                            |
+| **Modules affected**             | Cash and bank management                                                |
 
 ### Mexican CFD electronic invoice
 
@@ -662,9 +662,9 @@ This feature enabled the generation of Mexican electronic invoices by using the 
 
 |                              |                                                                                                                                                                                                                                                                                                                                                                                                           |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The method is no longer applicable. The generation of electronic invoices by using the CFD method was deprecated by the tax authorities and replaced by the Comprobante Fiscal Digital a través de Internet (CFDI) method, where the signing is delegated to the third-party provider (PAC). The monthly report has been removed, and an inquiry option lets users inquire about historical transactions. |
-| Replaced by another feature? | No                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Modules affected             | Account receivables, Project                                                                                                                                                                                                                                                                                                                                                                              |
+| **Reason for deprecation**       | The method is no longer applicable. The generation of electronic invoices by using the CFD method was deprecated by the tax authorities and replaced by the Comprobante Fiscal Digital a través de Internet (CFDI) method, where the signing is delegated to the third-party provider (PAC). The monthly report has been removed, and an inquiry option lets users inquire about historical transactions. |
+| **Replaced by another feature?** | No                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Modules affected**             | Account receivables, Project                                                                                                                                                                                                                                                                                                                                                                              |
 
 ### Mexico realized and unrealized VAT
 
@@ -672,17 +672,17 @@ Microsoft Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mex
 
 |                              |                                                                                                                     |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Duplicate functionality                                                                                             |
-| Replaced by another feature? | Yes, this functionality has been replaced by standard conditional sales tax functionality that is provided by Core. |
-| Modules affected             | Tax                                                                                                                 |
+| **Reason for deprecation**       | Duplicate functionality                                                                                             |
+| **Replaced by another feature?** | Yes, this functionality has been replaced by standard conditional sales tax functionality that is provided by Core. |
+| **Modules affected**             | Tax                                                                                                                 |
 
 ### Microsoft Outlook integration
 
 |                              |                                                                                |
 |------------------------------|--------------------------------------------------------------------------------|
-| Reason for deprecation       | This functionality has been replaced by Microsoft Exchange Server integration. |
-| Replaced by another feature? | Yes                                                                            |
-| Modules affected             | Sales and marketing                                                            |
+| **Reason for deprecation**       | This functionality has been replaced by Microsoft Exchange Server integration. |
+| **Replaced by another feature?** | Yes                                                                            |
+| **Modules affected**             | Sales and marketing                                                            |
 
 ### Payroll information in Human Resources
 
@@ -690,9 +690,9 @@ Human Resources Payroll information
 
 |                              |                                                                                                                                                                                                                                                                                                                              |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | This functionality has been replaced by core Payroll and Human Resources pages.                                                                                                                                                                                                                                              |
-| Replaced by another feature? | **Benefits**, **Earnings**, and other related pages that were previously in US Payroll have been reconfigured, and are now part of the core Human Resources configuration to help support external payroll processing. This functionality is accessed by using the **Human Resources 1** &gt; **Payroll** configuration key. |
-| Modules affected             | Human Resources, Payroll                                                                                                                                                                                                                                                                                                     |
+| **Reason for deprecation**       | This functionality has been replaced by core Payroll and Human Resources pages.                                                                                                                                                                                                                                              |
+| **Replaced by another feature?** | **Benefits**, **Earnings**, and other related pages that were previously in US Payroll have been reconfigured, and are now part of the core Human Resources configuration to help support external payroll processing. This functionality is accessed by using the **Human Resources 1** &gt; **Payroll** configuration key. |
+| **Modules affected**             | Human Resources, Payroll                                                                                                                                                                                                                                                                                                     |
 
 ### Private blocking of inventory and warehouse management journals
 
@@ -700,9 +700,9 @@ The inventory and warehouse journals no longer support the ability to mark a jou
 
 |                              |                                        |
 |------------------------------|----------------------------------------|
-| Reason for deprecation       | No use of the functionality was found. |
-| Replaced by another feature? | No                                     |
-| Modules affected             | Inventory management                   |
+| **Reason for deprecation**       | No use of the functionality was found. |
+| **Replaced by another feature?** | No                                     |
+| **Modules affected**             | Inventory management                   |
 
 ### Product builder
 
@@ -710,9 +710,9 @@ Product builder was used to dynamically configure items from a sales order, purc
 
 |                              |                                                                                                                                                                                                         |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Product builder exposed X++ code to end users and isn't supported in the current version of Dynamics AX. It has been removed to avoid duplicate maintenance efforts on overlapping, sizeable codebases. |
-| Replaced by another feature? | Product configuration                                                                                                                                                                                   |
-| Modules affected             | Product information management, Sales and marketing                                                                                                                                                     |
+| **Reason for deprecation**       | Product builder exposed X++ code to end users and isn't supported in the current version of Dynamics AX. It has been removed to avoid duplicate maintenance efforts on overlapping, sizeable codebases. |
+| **Replaced by another feature?** | Product configuration                                                                                                                                                                                   |
+| **Modules affected**             | Product information management, Sales and marketing                                                                                                                                                     |
 
 ### Rename product dimension
 
@@ -720,9 +720,9 @@ This feature let you change the name of one of the three standard product dimen
 
 |                              |                                                                               |
 |------------------------------|-------------------------------------------------------------------------------|
-| Reason for deprecation       | The current version of Dynamics AX doesn't support label changes at run time. |
-| Replaced by another feature? | No                                                                            |
-| Modules affected             | Product information management                                                |
+| **Reason for deprecation**       | The current version of Dynamics AX doesn't support label changes at run time. |
+| **Replaced by another feature?** | No                                                                            |
+| **Modules affected**             | Product information management                                                |
 
 ### Retail Server connectivity using HTTP
 
@@ -730,33 +730,33 @@ In Dynamics AX 2012 R3, the Retail Server could function using HTTP communicatio
 
 |                              |                                                                               |
 |------------------------------|-------------------------------------------------------------------------------|
-| Reason for deprecation       | Due to new security requirements, only secured communication using TLS 1.2 (or above, as available) is now supported. The self-service installer will automatically configure the computer for this communication. |
-| Replaced by another feature? | No. Only standard HTTPS communication is now supported.                                                                           |
-| Modules affected             | Retail Server                                                |
+| **Reason for deprecation**       | Due to new security requirements, only secured communication using TLS 1.2 (or above, as available) is now supported. The self-service installer will automatically configure the computer for this communication. |
+| **Replaced by another feature?** | No. Only standard HTTPS communication is now supported.                                                                           |
+| **Modules affected**             | Retail Server                                                |
 
 ### Role Center pages
 
 |                              |                                                                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Role Center pages were built on the deprecated Enterprise Portal platform, which has been replaced by the new web client platform in the current version of Dynamics AX. |
-| Replaced by another feature? | The new Workspace form pattern provides users with a process-centered design that provides easy access to commonly used tasks within that process.                       |
-| Modules affected             | All                                                                                                                                                                      |
+| **Reason for deprecation**       | Role Center pages were built on the deprecated Enterprise Portal platform, which has been replaced by the new web client platform in the current version of Dynamics AX. |
+| **Replaced by another feature?** | The new Workspace form pattern provides users with a process-centered design that provides easy access to commonly used tasks within that process.                       |
+| **Modules affected**             | All                                                                                                                                                                      |
 
 ### Sales tax jurisdictions
 
 |                              |                                              |
 |------------------------------|----------------------------------------------|
-| Reason for deprecation       | Low customer usage and a limited feature set |
-| Replaced by another feature? | No                                           |
-| Modules affected             | US sales tax                                 |
+| **Reason for deprecation**       | Low customer usage and a limited feature set |
+| **Replaced by another feature?** | No                                           |
+| **Modules affected**             | US sales tax                                 |
 
 ### Shipping carrier interface
 
 |                              |                                                                                                                                                 |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Duplicate functionality                                                                                                                         |
-| Replaced by another feature? | Yes, this feature has been partially replaced by Transportation management, but hasn't yet been replaced by basic Warehouse management (WMS I). |
-| Modules affected             | Sales and marketing, Inventory management                                                                                                       |
+| **Reason for deprecation**       | Duplicate functionality                                                                                                                         |
+| **Replaced by another feature?** | Yes, this feature has been partially replaced by Transportation management, but hasn't yet been replaced by basic Warehouse management (WMS I). |
+| **Modules affected**             | Sales and marketing, Inventory management                                                                                                       |
 
 ### Sites Services
 
@@ -764,33 +764,33 @@ Sites Services let you build websites that extend your business processes to the
 
 |                              |                                                                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The Microsoft Azure infrastructure that is used by Dynamics AX has new capabilities that can be used instead (for example, Azure sites). |
-| Replaced by another feature? | No                                                                                                                                       |
-| Modules affected             | HR recruiting, Case management, Request for quotes, Vendor registration                                                                  |
+| **Reason for deprecation**       | The Microsoft Azure infrastructure that is used by Dynamics AX has new capabilities that can be used instead (for example, Azure sites). |
+| **Replaced by another feature?** | No                                                                                                                                       |
+| **Modules affected**             | HR recruiting, Case management, Request for quotes, Vendor registration                                                                  |
 
 ### SSAS demand forecasting strategy
 
 |                              |                                                                              |
 |------------------------------|------------------------------------------------------------------------------|
-| Reason for deprecation       | The design of the feature cannot be supported in the new cloud architecture. |
-| Replaced by another feature? | Azure Machine Learning demand forecasting strategy                           |
-| Modules affected             | Planning                                                                     |
+| **Reason for deprecation**       | The design of the feature cannot be supported in the new cloud architecture. |
+| **Replaced by another feature?** | Azure Machine Learning demand forecasting strategy                           |
+| **Modules affected**             | Planning                                                                     |
 
 ### Travel requisitions
 
 |                              |                                                                 |
 |------------------------------|-----------------------------------------------------------------|
-| Reason for deprecation       | Low usage, and most functionality existed in Enterprise Portal. |
-| Replaced by another feature? | No                                                              |
-| Modules affected             | Expense management                                              |
+| **Reason for deprecation**       | Low usage, and most functionality existed in Enterprise Portal. |
+| **Replaced by another feature?** | No                                                              |
+| **Modules affected**             | Expense management                                              |
 
 ### Vendor invoice pool excluding posting details
 
 |                              |                                                                                                         |
 |------------------------------|---------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Low usage. This functionality has been replaced by the Invoice journal that has workflow functionality. |
-| Replaced by another feature? | Workflow capabilities of the Invoice journal.                                                           |
-| Modules affected             | Accounts payable                                                                                        |
+| **Reason for deprecation**       | Low usage. This functionality has been replaced by the Invoice journal that has workflow functionality. |
+| **Replaced by another feature?** | Workflow capabilities of the Invoice journal.                                                           |
+| **Modules affected**             | Accounts payable                                                                                        |
 
 ### Virtual company accounts
 
@@ -803,7 +803,7 @@ The virtual companies feature is no longer supported in Dynamics AX. The virtual
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>Reason for deprecation</td>
+<td><b>Reason for deprecation</b></td>
 <td><ul>
 <li>Virtual companies must be set up before data is stored in the tables. Retrofitting virtual companies onto an existing implementation is very difficult.</li>
 <li>Because there has been so much data normalization in the current version of Dynamics AX, it has become difficult to know what to add to the table collections. For example, it's difficult to know which tables to share. All the tables referenced from tables that are in a virtual company must also added. Because of table normalization, even simple master data that is spread across multiple tables must be part of the virtual company. Any mistake that is made here will cause functional issues.</li>
