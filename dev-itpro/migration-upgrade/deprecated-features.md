@@ -36,8 +36,7 @@ ms.dyn365.ops.version: Platform update 6
 
 This topic describes features that have been removed, or that are planned for removal from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-## Features that have been deprecated in the July 2017 update with Platform update 8
-This list includes features that have been deprecated for both cloud and on-premises deployments.
+## Features that have been deprecated in Dynamics 365 for Finance and Operatins, Enterprise edition July 2017 update with Platform update 8
 
 ### Warehouse mobile devices portal
 
@@ -70,8 +69,7 @@ The Windows 8 tablet app provided functionality for expense entry and approval.
 | **Modules affected**             | Expense management                                                                       |
 
 
-Features that have been deprecated in Dynamics 365 for Operations 1611 with platform update 3
----------------------------------------------------------------------------------------------
+## Features that have been deprecated in Dynamics 365 for Operations 1611 with platform update 3
 
 ### AEB payment formats for Spain
 
@@ -343,7 +341,8 @@ A workflow for managing the creation of employee goals is one of several workflo
 | Replaced by another feature? | The redesigned Performance management feature gives more control over the content of the goals, the measurements that are used to track progress, and the attachment of supporting documentation. Goals can be stored as templates and then reused. This feature can help you set up additional goals for your employees more quickly. |
 | Modules affected             | Human capital management                                                                                                                                                                                                                                                                                                               |
 
-## Features deprecated in Dynamics AX 7.0 releases
+## Features that have been deprecated in Dynamics AX 7.0 releases
+
 ### Ability to cancel changes to a vendor invoice
 
 |                              |                         |
