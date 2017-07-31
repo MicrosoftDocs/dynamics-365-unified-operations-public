@@ -77,9 +77,9 @@ The Consejo Superior Bancario payment formats are used to send remittance files 
 
 |                              |                                                                          |
 |------------------------------|--------------------------------------------------------------------------|
-| Reason for deprecation       | The payment formats are no longer used.                                  |
-| Replaced by another feature? | Yes, ISO20022 Credit transfer and Direct debit payment formats for Spain |
-| Modules affected             | Accounts payable, Accounts receivable                                    |
+| **Reason for deprecation**       | The payment formats are no longer used.                                  |
+| **Replaced by another feature?** | Yes, ISO20022 Credit transfer and Direct debit payment formats for Spain |
+| **Modules affected**             | Accounts payable, Accounts receivable                                    |
 
 ### Bank payments transfer for Lithuania
 
@@ -87,9 +87,9 @@ Bank payment transfers are generated and printed by using the Payment transfer (
 
 |                              |                                                            |
 |------------------------------|------------------------------------------------------------|
-| Reason for deprecation       | The payment formats are no longer used.                    |
-| Replaced by another feature? | Yes, ISO20022 Credit transfer payment format for Lithuania |
-| Modules affected             | Accounts payable                                           |
+| **Reason for deprecation**       | The payment formats are no longer used.                    |
+| **Replaced by another feature?** | Yes, ISO20022 Credit transfer payment format for Lithuania |
+| **Modules affected**             | Accounts payable                                           |
 
 ### BBS Direkte Remittering payment formats for Norway
 
@@ -97,9 +97,9 @@ BBS Direkte Remittering payment formats include customer payment collection expo
 
 |                              |                                                                                                                                                                |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The payment formats are no longer used.                                                                                                                        |
-| Replaced by another feature? | The AvtaleGiro customer payment format for Norway can be used to generate direct debit messages. Return message import will be implemented in future releases. |
-| Modules affected             | Accounts payable, Accounts receivable                                                                                                                          |
+| **Reason for deprecation**       | The payment formats are no longer used.                                                                                                                        |
+| **Replaced by another feature?** | The AvtaleGiro customer payment format for Norway can be used to generate direct debit messages. Return message import will be implemented in future releases. |
+| **Modules affected**             | Accounts payable, Accounts receivable                                                                                                                          |
 
 ### Chart of Accounts tool for Spain
 
@@ -107,9 +107,9 @@ This tool is used when a chart of accounts in Spain requires major changes. User
 
 |                              |                |
 |------------------------------|----------------|
-| Reason for deprecation       | Limited usage  |
-| Replaced by another feature? | No             |
-| Modules affected             | General ledger |
+| **Reason for deprecation**       | Limited usage  |
+| **Replaced by another feature?** | No             |
+| **Modules affected**             | General ledger |
 
 ### Dom80 payment format for Belgium
 
@@ -117,9 +117,9 @@ Legacy Belgian payment format for payment collection (direct debit).
 
 |                              |                                                        |
 |------------------------------|--------------------------------------------------------|
-| Reason for deprecation       | The payment format is no longer used.                  |
-| Replaced by another feature? | Yes, ISO 20022 Direct debit payment format for Belgium |
-| Modules affected             | Accounts receivable                                    |
+| **Reason for deprecation**      | The payment format is no longer used.                  |
+| **Replaced by another feature?** | Yes, ISO 20022 Direct debit payment format for Belgium |
+| **Modules affected**            | Accounts receivable                                    |
 
 ### DTA/EZAG payment formats for Switzerland
 
@@ -127,9 +127,9 @@ DTA/EZAG formats are integrated into the ESR system, because they can carry on t
 
 |                              |                                                              |
 |------------------------------|--------------------------------------------------------------|
-| Reason for deprecation       | The payment formats are no longer used.                      |
-| Replaced by another feature? | Yes, ISO20022 Credit transfer payment format for Switzerland |
-| Modules affected             | Accounts payable                                             |
+| **Reason for deprecation**       | The payment formats are no longer used.                      |
+| **Replaced by another feature?** | Yes, ISO20022 Credit transfer payment format for Switzerland |
+| **Modules affected**             | Accounts payable                                             |
 
 ### EDIFACT-DIRDEB payment format for Austria
 
@@ -137,9 +137,9 @@ EDIFACT-DIRDEB payment format for payment collection (direct debit).
 
 |                              |                                                        |
 |------------------------------|--------------------------------------------------------|
-| Reason for deprecation       | The payment format is no longer used.                  |
-| Replaced by another feature? | Yes, ISO 20022 Direct debit payment format for Austria |
-| Modules affected             | Accounts receivable                                    |
+| **Reason for deprecation**       | The payment format is no longer used.                  |
+| **Replaced by another feature?** | Yes, ISO 20022 Direct debit payment format for Austria |
+| **Modules affected**             | Accounts receivable                                    |
 
 ### EDIVAT for Belgium
 
@@ -147,9 +147,9 @@ EDIVAT is an obsolete Belgian standard for electronic declaration via secure mai
 
 |                              |                                      |
 |------------------------------|--------------------------------------|
-| Reason for deprecation       | The functionality is no longer used. |
-| Replaced by another feature? | No                                   |
-| Modules affected             | General ledger                       |
+| **Reason for deprecation**       | The functionality is no longer used. |
+| **Replaced by another feature?** | No                                   |
+| **Modules affected**             | General ledger                       |
 
 ### eGiro EDIFACT CREMUL payment import format for Norway
 
@@ -157,9 +157,9 @@ eGiro is based on the international UN EDIFACT CREMUL (Multiple Credit Advice Me
 
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The payment format is no longer used.                                                     |
-| Replaced by another feature? | No. The format will be replaced by ISO 20022 statement import formats in future releases. |
-| Modules affected             | Accounts receivable                                                                       |
+| **Reason for deprecation**       | The payment format is no longer used.                                                     |
+| **Replaced by another feature?** | No. The format will be replaced by ISO 20022 statement import formats in future releases. |
+| **Modules affected**             | Accounts receivable                                                                       |
 
 ### External inventory for Poland
 
@@ -167,9 +167,9 @@ Evidence of goods that are taken from a vendor for sales without purchase. Goods
 
 |                              |                                                 |
 |------------------------------|-------------------------------------------------|
-| Reason for deprecation       | Replaced by another feature                     |
-| Replaced by another feature? | Yes, the core Inbound consignment functionality |
-| Modules affected             | Accounts payable, Inventory management          |
+| **Reason for deprecation**       | Replaced by another feature                     |
+| **Replaced by another feature?** | Yes, the core Inbound consignment functionality |
+| **Modules affected**             | Accounts payable, Inventory management          |
 
 ### Financial reports generator for Eastern Europe
 
@@ -177,9 +177,9 @@ A tool is used to set up data collection for accounting and tax reports, and to 
 
 |                              |                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Limited usage                                                                            |
-| Replaced by another feature? | No. The tool will be replaced by Electronic reporting configurations in future releases. |
-| Modules affected             | General Ledger                                                                           |
+| **Reason for deprecation**       | Limited usage                                                                            |
+| **Replaced by another feature?** | No. The tool will be replaced by Electronic reporting configurations in future releases. |
+| **Modules affected**             | General Ledger                                                                           |
 
 ### Import of customer payment transactions for Finland
 
@@ -187,9 +187,9 @@ You can select an import format for Finnish payments to import customer payment 
 
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The payment format is no longer used.                                                     |
-| Replaced by another feature? | No. The format will be replaced by ISO 20022 statement import formats in future releases. |
-| Modules affected             | Accounts receivable                                                                       |
+| **Reason for deprecation**       | The payment format is no longer used.                                                     |
+| **Replaced by another feature?** | No. The format will be replaced by ISO 20022 statement import formats in future releases. |
+| **Modules affected**             | Accounts receivable                                                                       |
 
 ### Import of payment transactions into a general ledger journal for Finland
 
@@ -197,9 +197,9 @@ A format that is specific to Finland is used to import accounting transactions i
 
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The payment format is no longer used.                                                     |
-| Replaced by another feature? | No. The format will be replaced by ISO 20022 statement import formats in future releases. |
-| Modules affected             | Accounts receivable                                                                       |
+| **Reason for deprecation**       | The payment format is no longer used.                                                     |
+| **Replaced by another feature?** | No. The format will be replaced by ISO 20022 statement import formats in future releases. |
+| **Modules affected**             | Accounts receivable                                                                       |
 
 ### Integration with Isabel synchronized (CIS) for Belgium
 
@@ -207,9 +207,9 @@ Isabel is the framework for electronic banking in Europe and is a de-facto stand
 
 |                              |                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Integration with Isabel client has been discontinued.                                                                |
-| Replaced by another feature? | No. The payment formats that are no longer used are replaced by ISO20022 Credit transfer payment format for Belgium. |
-| Modules affected             | Accounts payable                                                                                                     |
+| **Reason for deprecation**       | Integration with Isabel client has been discontinued.                                                                |
+| **Replaced by another feature?** | No. The payment formats that are no longer used are replaced by ISO20022 Credit transfer payment format for Belgium. |
+| **Modules affected**             | Accounts payable                                                                                                     |
 
 ### Modifications in the chart of accounts and accounting rules for Spain
 
@@ -217,9 +217,9 @@ This feature is used for changes in the chart of accounts and accounting rules i
 
 |                              |                |
 |------------------------------|----------------|
-| Reason for deprecation       | Limited usage  |
-| Replaced by another feature? | No             |
-| Modules affected             | General ledger |
+| **Reason for deprecation**       | Limited usage  |
+| **Replaced by another feature?** | No             |
+| **Modules affected**             | General ledger |
 
 ### Pagamento Fornittori vendor payment format
 
@@ -227,9 +227,9 @@ Legacy Italian payment format for credit transfers.
 
 |                              |                                                        |
 |------------------------------|--------------------------------------------------------|
-| Reason for deprecation       | The payment format is no longer used.                  |
-| Replaced by another feature? | Yes, ISO20022 Credit transfer payment format for Italy |
-| Modules affected             | Accounts payable                                       |
+| **Reason for deprecation**       | The payment format is no longer used.                  |
+| **Replaced by another feature?** | Yes, ISO20022 Credit transfer payment format for Italy |
+| **Modules affected**             | Accounts payable                                       |
 
 ### Payment export formats for Estonia
 
@@ -237,9 +237,9 @@ The Telehansa and Teleservice formats are used for bank payment export.
 
 |                              |                                                          |
 |------------------------------|----------------------------------------------------------|
-| Reason for deprecation       | The payment formats are no longer used.                  |
-| Replaced by another feature? | Yes, ISO20022 Credit transfer payment format for Estonia |
-| Modules affected             | Accounts payable                                         |
+| **Reason for deprecation**      | The payment formats are no longer used.                  |
+| **Replaced by another feature?** | Yes, ISO20022 Credit transfer payment format for Estonia |
+| **Modules affected**             | Accounts payable                                         |
 
 ### Payment file archive for Norway
 
@@ -247,9 +247,9 @@ When payment files are generated, the file archive automatically archives all fi
 
 |                              |                                                                    |
 |------------------------------|--------------------------------------------------------------------|
-| Reason for deprecation       | Replaced by another feature                                        |
-| Replaced by another feature? | Yes, Electronic reporting archived jobs                            |
-| Modules affected             | Accounts payable, Accounts receivable, Organization administration |
+| **Reason for deprecation**       | Replaced by another feature                                        |
+| **Replaced by another feature?** | Yes, Electronic reporting archived jobs                            |
+| **Modules affected**             | Accounts payable, Accounts receivable, Organization administration |
 
 ### Payment import formats for Estonia
 
@@ -257,9 +257,9 @@ The Telehansa and TeleTeenus formats are used for bank payment import.
 
 |                              |                                                                                            |
 |------------------------------|--------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The payment formats are no longer used.                                                    |
-| Replaced by another feature? | No. The formats will be replaced by ISO 20022 statement import formats in future releases. |
-| Modules affected             | Accounts receivable                                                                        |
+| **Reason for deprecation**       | The payment formats are no longer used.                                                    |
+| **Replaced by another feature?** | No. The formats will be replaced by ISO 20022 statement import formats in future releases. |
+| **Modules affected**             | Accounts receivable                                                                        |
 
 ### Performance management goal workflow
 
@@ -267,9 +267,9 @@ Performance management includes goal management and integration with performance
 
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Performance management was redesigned, and the number of goal pages was reduced to simplify the process.                 |
-| Replaced by another feature? | No. Goals are visible to managers through the Manager Self Service portal, and can be changed and viewed by the manager. |
-| Modules affected             | Human capital management                                                                                                 |
+| **Reason for deprecation**       | Performance management was redesigned, and the number of goal pages was reduced to simplify the process.                 |
+| **Replaced by another feature?** | No. Goals are visible to managers through the Manager Self Service portal, and can be changed and viewed by the manager. |
+| **Modules affected**             | Human capital management                                                                                                 |
 
 ### Postgirot and Postgirot Utland payment formats for Sweden
 
@@ -277,9 +277,9 @@ Postgirot and Postgirot Utland payment formats for Sweden.
 
 |                              |                                                         |
 |------------------------------|---------------------------------------------------------|
-| Reason for deprecation       | The payment formats are no longer used.                 |
-| Replaced by another feature? | Yes, ISO20022 Credit transfer payment format for Sweden |
-| Modules affected             | Accounts payable                                        |
+| **Reason for deprecation**       | The payment formats are no longer used.                 |
+| **Replaced by another feature?** | Yes, ISO20022 Credit transfer payment format for Sweden |
+| **Modules affected**             | Accounts payable                                        |
 
 ### Radio frequency identifier
 
@@ -287,9 +287,9 @@ Radio Frequency Identification (RFID) is a data-collection technology that uses 
 
 |                              |                                               |
 |------------------------------|-----------------------------------------------|
-| Reason for deprecation       | Low customer usage and a limited feature set. |
-| Replaced by another feature? | No                                            |
-| Modules affected             | Inventory management                          |
+| **Reason for deprecation**       | Low customer usage and a limited feature set. |
+| **Replaced by another feature?** | No                                            |
+| **Modules affected**             | Inventory management                          |
 
 ### Report about state invoices numbering for Latvia
 
@@ -297,9 +297,9 @@ Latvian legislation provides specific rules about the numbering of sales invoice
 
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The state invoice numbering no longer has to be maintained. The report about used invoice numbers is no longer required. |
-| Replaced by another feature? | No                                                                                                                       |
-| Modules affected             | Accounts receivable                                                                                                      |
+| **Reason for deprecation**       | The state invoice numbering no longer has to be maintained. The report about used invoice numbers is no longer required. |
+| **Replaced by another feature?** | No                                                                                                                       |
+| **Modules affected**             | Accounts receivable                                                                                                      |
 
 ### Set up the names of the manager and general accountant of a company for Lithuania
 
@@ -307,9 +307,9 @@ The names of the manager and the general accountant of a company can be specifie
 
 |                              |                                                                 |
 |------------------------------|-----------------------------------------------------------------|
-| Reason for deprecation       | Replaced by another feature                                     |
-| Replaced by another feature? | Yes, the setup of officials can be used for the same purpose.   |
-| Modules affected             | Accounts payable, Accounts receivable, Cash and bank management |
+| **Reason for deprecation**       | Replaced by another feature                                     |
+| **Replaced by another feature?** | Yes, the setup of officials can be used for the same purpose.   |
+| **Modules affected**             | Accounts payable, Accounts receivable, Cash and bank management |
 
 ### Telepay payment formats for Norway
 
@@ -317,9 +317,9 @@ Telepay payment formats include vendor payment export (credit transfer) and cust
 
 |                              |                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The payment formats are no longer used.                                                        |
-| Replaced by another feature? | Yes, ISO20022 Credit transfer payment format and AvtaleGiro customer payment format for Norway |
-| Modules affected             | Accounts payable, Accounts receivable                                                          |
+| **Reason for deprecation**       | The payment formats are no longer used.                                                        |
+| **Replaced by another feature?** | Yes, ISO20022 Credit transfer payment format and AvtaleGiro customer payment format for Norway |
+| **Modules affected **            | Accounts payable, Accounts receivable                                                          |
 
 ### Vendor payment export formats for Finland
 
@@ -327,9 +327,9 @@ Two formats for exporting payments are available for Finland. LM02 (FI) is used 
 
 |                              |                                                          |
 |------------------------------|----------------------------------------------------------|
-| Reason for deprecation       | The payment formats are no longer used.                  |
-| Replaced by another feature? | Yes, ISO20022 Credit transfer payment format for Finland |
-| Modules affected             | Accounts payable                                         |
+| **Reason for deprecation**       | The payment formats are no longer used.                  |
+| **Replaced by another feature?** | Yes, ISO20022 Credit transfer payment format for Finland |
+| **Modules affected **            | Accounts payable                                         |
 
 ### Workflow for creating goals
 
@@ -337,9 +337,9 @@ A workflow for managing the creation of employee goals is one of several workflo
 
 |                              |                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Performance management has been completely redesigned in Microsoft Dynamics 365 for Finance and Operations.                                                                                                                                                                                                                                        |
-| Replaced by another feature? | The redesigned Performance management feature gives more control over the content of the goals, the measurements that are used to track progress, and the attachment of supporting documentation. Goals can be stored as templates and then reused. This feature can help you set up additional goals for your employees more quickly. |
-| Modules affected             | Human capital management                                                                                                                                                                                                                                                                                                               |
+| **Reason for deprecation**       | Performance management has been completely redesigned in Microsoft Dynamics 365 for Finance and Operations.                                                                                                                                                                                                                                        |
+| **Replaced by another feature?** | The redesigned Performance management feature gives more control over the content of the goals, the measurements that are used to track progress, and the attachment of supporting documentation. Goals can be stored as templates and then reused. This feature can help you set up additional goals for your employees more quickly. |
+| **Modules affected **            | Human capital management                                                                                                                                                                                                                                                                                                               |
 
 ## Features that have been deprecated in Dynamics AX 7.0 releases
 
@@ -347,9 +347,9 @@ A workflow for managing the creation of employee goals is one of several workflo
 
 |                              |                         |
 |------------------------------|-------------------------|
-| Reason for deprecation       | Performance enhancement |
-| Replaced by another feature? | No                      |
-| Modules affected             | Accounts payable        |
+| **Reason for deprecation**       | Performance enhancement |
+| **Replaced by another feature?** | No                      |
+| **Modules affected**            | Accounts payable        |
 
 ### AIF, AxD, and AxBC integrations
 
@@ -357,9 +357,9 @@ In Application Integration Framework (AIF), data can be exchanged with external 
 
 |                              |                                                                                                                                                                                                          |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The architecture of AIF and AxDs could not be scaled to a cloud service. There were performance issues around bulk import.                                                                               |
-| Replaced by another feature? | In the current version of Dynamics AX, this feature is replaced by the Data Import/Export framework, which supports recurring bulk import/export. For AxBC, we recommend that you use the actual tables. |
-| Modules affected             | AxDs, AxBCs, and AIF                                                                                                                                                                                     |
+| **Reason for deprecation**       | The architecture of AIF and AxDs could not be scaled to a cloud service. There were performance issues around bulk import.                                                                               |
+| **Replaced by another feature?** | In the current version of Dynamics AX, this feature is replaced by the Data Import/Export framework, which supports recurring bulk import/export. For AxBC, we recommend that you use the actual tables. |
+| **Modules affected**             | AxDs, AxBCs, and AIF                                                                                                                                                                                     |
 
 ### BOMs without BOM versions
 
@@ -367,9 +367,9 @@ When the **BOM versions** configuration key was disabled, bill of materials (BO
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| Reason for deprecation       | Using a configuration key to control BOM versions doesn't scale in a cloud environment. |
-| Replaced by another feature? | No                                                                                      |
-| Modules affected             | Product information management, Inventory management                                    |
+| **Reason for deprecation**      | Using a configuration key to control BOM versions doesn't scale in a cloud environment. |
+| **Replaced by another feature?** | No                                                                                      |
+| **Modules affected **            | Product information management, Inventory management                                    |
 
 ### Brazilian Bordero
 
@@ -377,9 +377,9 @@ Specific method of payment for Brazilian companies
 
 |                              |                                                                                                       |
 |------------------------------|-------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Support for the Brazilian Bordero method of payment has been discontinued from Brazilian localization |
-| Replaced by another feature? | No                                                                                                    |
-| Modules affected             | Accounts payable                                                                                      |
+| **Reason for deprecation**       | Support for the Brazilian Bordero method of payment has been discontinued from Brazilian localization |
+| **Replaced by another feature?** | No                                                                                                    |
+| **Modules affected**             | Accounts payable                                                                                      |
 
 ### Brazilian Sintegra statement
 
