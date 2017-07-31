@@ -5,7 +5,7 @@ title: Vendor invoices overview
 description: This article provides general information about vendor invoices. Vendor invoices are requests for payment for products and services that were received. Vendor invoices can represent a bill for ongoing services, or they can be based on purchase orders for specific items and services. 
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -79,12 +79,16 @@ When you post the invoice, the **Invoice remainder** quantity for each item is u
 
 This option assumes that at least one product receipt has been posted for the purchase order. The vendor invoice is based on these product receipts and reflects the quantities from them. The financial information for the invoice is based on the information that is entered when you post the invoice.
 
+For more information, see [Recorder vendor invoice and match against received quantity](record-vendor-invoice-match-against-received-quantity.md).
+
 ## Working with multiple invoices
 
 You can work with multiple invoices at the same time and post them all at the same time. If you must create multiple invoices, use the **Pending vendor invoices** page. If you must post and print multiple vendor invoices, use the invoice approval journal page. If you're using the invoice approval journal, at least one product receipt must be posted for the purchase order, and an invoice for the purchase order must be posted in an invoice register. The financial information for the invoice comes from the invoice that was posted in the register.
 
 
 For more information see:
+
+ - [Set up vendor invoice policies](set-up-vendor-invoice-policies.md) 
 
  - [Key invoice data into accounts payable using a vendor invoice](key-invoice-data-ap-system-vendor-invoice.md)
  
