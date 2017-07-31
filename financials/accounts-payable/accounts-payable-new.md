@@ -128,8 +128,12 @@ The following topics provide information about settlements. Settlement is the pr
 
 
 Looking for additional information about Microsoft Dynamics 365 for Finance and Operations, Enterprise edition? 
+
 Check out the new, short how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+
 The videos are arranged in a logical order, to guide you from simple to complex topics. You can find the videos by searching on YouTube for the following playlists: 
-•	Dynamics 365 for Operations: Quick Video Guides – Development - This playlist contains 3 videos.
-•	Dynamics 365 for Operations: Quick Video Guides – Lifecycle Services - This playlist contains 11 videos.
+
+•	Dynamics 365 for Operations: Quick Video Guides – Development 
+
+•	Dynamics 365 for Operations: Quick Video Guides – Lifecycle Services 
 
