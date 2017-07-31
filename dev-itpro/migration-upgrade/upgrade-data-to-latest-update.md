@@ -62,6 +62,11 @@ This topic describes how to upgrade an older source database to the latest Fina
 4.  If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required because the demo data contains bad records for some kernel X++ classes.
 
     delete from classidtable where id >= 0xf000 and id <= 0xffff
+5.  You must also apply the following KBs before proceeding.
+    - KB 4036156
+    - KB 4035399
+    - KB 4036157
+
 
 ## Download the MinorVersionDataUpgradeWithRetail.zip script
 To obtain the latest MinorVersionDataUpgradeWithRetail.zip package from your target environment that is running the latest Finance and Operations update, download the latest binary updates from Lifecycle Services (LCS).
@@ -79,13 +84,15 @@ To obtain the latest MinorVersionDataUpgradeWithRetail.zip package from your tar
 
 2.  On the **Add hotfixes** page, click **Select all**, click **Add**, and then click **Download package**.
 3.  On the next page, click **Download**.
-4.  After the package is downloaded, extract the contents, and go to the following directory to find the MinorVersionDataUpgradeWithRetail.zip file (note that the version number in the path will vary): ..\\CustomDeployablePackage
+
+4.  After the package is downloaded, extract the contents, and go to the following directory to find the MinorVersionDataUpgradeWithRetail.zip file: ..\\CustomDeployablePackage
+
 
 > [!NOTE]
 > Computers that are deployed from LCS will already have a MinorVersionDataUpgradeWithRetail.zip file. However, that file is out of date and includes issues that have been resolved in later fixes. Always download the latest version of the file from LCS.
 
 ## Remove encryption certification rotation
-1.  Extract the MinorVersionDataUpgrade.zip deployable package to C:\\Temp or a location of your choice.
+1.  Extract the MinorVersionDataUpgradeWithRetail.zip deployable package to C:\\Temp or a location of your choice.
 2.  Open the following file in a text editor: C:\\Temp\\DataUpgrade\\RotateConfigData\\ServicingRotations.json file. Modify the file as shown here, and save it. This step is required only for one-box environments. Because you're removing the need for encryption certificate rotations, old data in encrypted fields in your database will no longer be readable. This is a technical limitation for a one-box data upgrade. New data that goes into those fields after the upgrade is completed is unaffected. For details about the affected fields, see the ["Encrypted fields in demo data"](#encrypted-fields-in-demo-data) section later in this topic.
 
 >       {
@@ -395,6 +402,4 @@ See also
 --------
 
 [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md)
-
-
 
