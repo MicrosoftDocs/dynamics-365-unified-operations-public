@@ -835,23 +835,23 @@ Human Resources Payroll information
 
 |                              |                 |
 |------------------------------|-----------------|
-| Reason for deprecation       | Low usage       |
-| Replaced by another feature? | No              |
-| Modules affected             | Human resources |
+| **Reason for deprecation**       | Low usage       |
+| **Replaced by another feature?** | No              |
+| **Modules affected**             | Human resources |
 
 ### Workplanner
 
 |                              |                                                                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Low usage                                                                                                                                                            |
-| Replaced by another feature? | No, but the **Profile relation** page, which is opened from the **Profile groups** page, supports the same business scenario as the deprecated **Workplanner** page. |
-| Modules affected             | Time and attendance                                                                                                                                                  |
+| **Reason for deprecation**       | Low usage                                                                                                                                                            |
+| **Replaced by another feature?** | No, but the **Profile relation** page, which is opened from the **Profile groups** page, supports the same business scenario as the deprecated **Workplanner** page. |
+| **Modules affected**             | Time and attendance                                                                                                                                                  |
 
 ### X++ financial statements
 
 |                              |                                                                                             |
 |------------------------------|---------------------------------------------------------------------------------------------|
-| Reason for deprecation       | This functionality has been replaced by another feature.                                    |
-| Replaced by another feature? | Management Reporter (labeled **Financial reporting** in the current version of Dynamics AX) |
-| Modules affected             | General ledger                                                                              |
+| **Reason for deprecation**       | This functionality has been replaced by another feature.                                    |
+| **Replaced by another feature?** | Management Reporter (labeled **Financial reporting** in the current version of Dynamics AX) |
+| **Modules affected**             | General ledger                                                                              |
 
