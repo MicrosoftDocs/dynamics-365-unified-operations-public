@@ -319,7 +319,7 @@ Telepay payment formats include vendor payment export (credit transfer) and cust
 |------------------------------|------------------------------------------------------------------------------------------------|
 | **Reason for deprecation**       | The payment formats are no longer used.                                                        |
 | **Replaced by another feature?** | Yes, ISO20022 Credit transfer payment format and AvtaleGiro customer payment format for Norway |
-| **Modules affected **            | Accounts payable, Accounts receivable                                                          |
+| **Modules affected**            | Accounts payable, Accounts receivable                                                          |
 
 ### Vendor payment export formats for Finland
 
@@ -329,7 +329,7 @@ Two formats for exporting payments are available for Finland. LM02 (FI) is used 
 |------------------------------|----------------------------------------------------------|
 | **Reason for deprecation**       | The payment formats are no longer used.                  |
 | **Replaced by another feature?** | Yes, ISO20022 Credit transfer payment format for Finland |
-| **Modules affected **            | Accounts payable                                         |
+| **Modules affected**            | Accounts payable                                         |
 
 ### Workflow for creating goals
 
@@ -339,7 +339,7 @@ A workflow for managing the creation of employee goals is one of several workflo
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Reason for deprecation**       | Performance management has been completely redesigned in Microsoft Dynamics 365 for Finance and Operations.                                                                                                                                                                                                                                        |
 | **Replaced by another feature?** | The redesigned Performance management feature gives more control over the content of the goals, the measurements that are used to track progress, and the attachment of supporting documentation. Goals can be stored as templates and then reused. This feature can help you set up additional goals for your employees more quickly. |
-| **Modules affected **            | Human capital management                                                                                                                                                                                                                                                                                                               |
+| **Modules affected**            | Human capital management                                                                                                                                                                                                                                                                                                               |
 
 ## Features that have been deprecated in Dynamics AX 7.0 releases
 
@@ -369,7 +369,7 @@ When the **BOM versions** configuration key was disabled, bill of materials (BO
 |------------------------------|-----------------------------------------------------------------------------------------|
 | **Reason for deprecation**      | Using a configuration key to control BOM versions doesn't scale in a cloud environment. |
 | **Replaced by another feature?** | No                                                                                      |
-| **Modules affected **            | Product information management, Inventory management                                    |
+| **Modules affected**            | Product information management, Inventory management                                    |
 
 ### Brazilian Bordero
 
@@ -387,9 +387,9 @@ Federal tax statement for ICMS tax
 
 |                              |                                                                                                                       |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | This statement is not longer applicable in some Brazilian states.                                                     |
-| Replaced by another feature? | No. Users can use Generic Electronic reporting tool to configure the statement if required under specific situations. |
-| Modules affected             | Fiscal books                                                                                                          |
+| **Reason for deprecation**       | This statement is not longer applicable in some Brazilian states.                                                     |
+| **Replaced by another feature?** | No. Users can use Generic Electronic reporting tool to configure the statement if required under specific situations. |
+| **Modules affected**             | Fiscal books                                                                                                          |
 
 ### Brazilian SCAN contingency mode for NF-e
 
@@ -397,9 +397,9 @@ Federal tax statement for ICMS tax
 
 |                              |                                                                             |
 |------------------------------|-----------------------------------------------------------------------------|
-| Reason for deprecation       | This method of contingency is not longer applicable in all Brazilian states |
-| Replaced by another feature? | No                                                                          |
-| Modules affected             | Accounts receivable                                                         |
+| **Reason for deprecation**       | This method of contingency is not longer applicable in all Brazilian states |
+| **Replaced by another feature?** | No                                                                          |
+| **Modules affected**             | Accounts receivable                                                         |
 
 ### Business Analyzer
 
@@ -407,9 +407,9 @@ This mobile application let users review key business metrics.
 
 |                              |                                                                                                                                                               |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | This functionality has been replaced by another feature.                                                                                                      |
-| Replaced by another feature? | The Monitor financial performance content pack for Microsoft Power BI will include key financial metrics that were previously available in Business Analyzer. |
-| Modules affected             | General ledger                                                                                                                                                |
+| **Reason for deprecation**       | This functionality has been replaced by another feature.                                                                                                      |
+| **Replaced by another feature?** | The Monitor financial performance content pack for Microsoft Power BI will include key financial metrics that were previously available in Business Analyzer. |
+| **Modules affected**             | General ledger                                                                                                                                                |
 
 ### Business statistics
 
@@ -417,25 +417,25 @@ The setup of business statistics inquiries that can help you analyze the perform
 
 |                              |                                                                                              |
 |------------------------------|----------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Legacy approach to business intelligence (BI), low customer usage, and a limited feature set |
-| Replaced by another feature? | New BI solutions for the current version of Dynamics AX                                      |
-| Modules affected             | Procurement and sourcing, Accounts payable, Sales and marketing, Accounts receivable         |
+| **Reason for deprecation**       | Legacy approach to business intelligence (BI), low customer usage, and a limited feature set |
+| **Replaced by another feature?** | New BI solutions for the current version of Dynamics AX                                      |
+| **Modules affected**             | Procurement and sourcing, Accounts payable, Sales and marketing, Accounts receivable         |
 
 ### Change document date function in Invoice approval journal
 
 |                              |                                                                         |
 |------------------------------|-------------------------------------------------------------------------|
-| Reason for deprecation       | Low usage                                                               |
-| Replaced by another feature? | Yes. The document date on the posted vendor transaction can be changed. |
-| Modules affected             | Accounts payable                                                        |
+| **Reason for deprecation**       | Low usage                                                               |
+| **Replaced by another feature?** | Yes. The document date on the posted vendor transaction can be changed. |
+| **Modules affected**             | Accounts payable                                                        |
 
 ### ClieOp03 payment format for the Netherlands
 
 |                              |                                                                                                            |
 |------------------------------|------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The format is no longer applicable in the Netherlands, because it has been replaced by SEPA functionality. |
-| Replaced by another feature? | SEPA payments export                                                                                       |
-| Modules affected             | All                                                                                                        |
+| **Reason for deprecation**       | The format is no longer applicable in the Netherlands, because it has been replaced by SEPA functionality. |
+| **Replaced by another feature?** | SEPA payments export                                                                                       |
+| **Modules affected**             | All                                                                                                        |
 
 ### Compliance Center
 
@@ -443,9 +443,9 @@ The Compliance Center was an Enterprise Portal site for managing the documentati
 
 |                              |                                                                                                                        |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Lack of customer usage. Microsoft SharePoint includes the same capability that was available in the Compliance Center. |
-| Replaced by another feature? | No                                                                                                                     |
-| Modules affected             | Compliance and internal controls                                                                                       |
+| **Reason for deprecation**       | Lack of customer usage. Microsoft SharePoint includes the same capability that was available in the Compliance Center. |
+| **Replaced by another feature?** | No                                                                                                                     |
+| **Modules affected**             | Compliance and internal controls                                                                                       |
 
 ### Connector for Microsoft Dynamics
 
@@ -453,41 +453,41 @@ This tool was used to integrate key data from Microsoft Dynamics CRM to Microsof
 
 |                              |                                                          |
 |------------------------------|----------------------------------------------------------|
-| Reason for deprecation       | This functionality has been replaced by another feature. |
-| Replaced by another feature? | Dynamics Integrator                                      |
-| Modules affected             | Connector for Microsoft Dynamics                         |
+| **Reason for deprecation**       | This functionality has been replaced by another feature. |
+| **Replaced by another feature?** | Dynamics Integrator                                      |
+| **Modules affected**             | Connector for Microsoft Dynamics                         |
 
 ### Container unit and multi dimension on-hand
 
 |                              |                                                                                                                                                                 |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Duplicate functionality                                                                                                                                         |
-| Replaced by another feature? | Yes. Since AX 2012, this functionality has been replaced by the consolidated batch orders feature set. This feature set includes the consolidated on-hand view. |
-| Modules affected             | Product information management, Production control, Inventory management, Sales and marketing                                                                   |
+| **Reason for deprecation**       | Duplicate functionality                                                                                                                                         |
+| **Replaced by another feature?** | Yes. Since AX 2012, this functionality has been replaced by the consolidated batch orders feature set. This feature set includes the consolidated on-hand view. |
+| **Modules affected**             | Product information management, Production control, Inventory management, Sales and marketing                                                                   |
 
 ### Cue group metadata
 
 |                              |                                                                                                                                                                                                                               |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Cue groups were used to display one or more Cues in the FactBox area. There was limited uptake, and there were also performance concerns, because a record change in a parent form caused one query per Cue in the Cue group. |
-| Replaced by another feature? | No                                                                                                                                                                                                                            |
-| Modules affected             | All                                                                                                                                                                                                                           |
+| **Reason for deprecation**       | Cue groups were used to display one or more Cues in the FactBox area. There was limited uptake, and there were also performance concerns, because a record change in a parent form caused one query per Cue in the Cue group. |
+| **Replaced by another feature?** | No                                                                                                                                                                                                                            |
+| **Modules affected**             | All                                                                                                                                                                                                                           |
 
 ### Cue metadata
 
 |                              |                                                                                                                                                                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Cue metadata was limited to count or sum information.                                                                                                                                                                                   |
-| Replaced by another feature? | Tile metadata was introduced to provide more flexibility for modeling. For example, you can model current counts, navigation, and key performance indicators (KPIs). Count tile metadata is the direct replacement of the Cue metadata. |
-| Modules affected             | All                                                                                                                                                                                                                                     |
+| **Reason for deprecation**       | Cue metadata was limited to count or sum information.                                                                                                                                                                                   |
+| **Replaced by another feature?** | Tile metadata was introduced to provide more flexibility for modeling. For example, you can model current counts, navigation, and key performance indicators (KPIs). Count tile metadata is the direct replacement of the Cue metadata. |
+| **Modules affected**             | All                                                                                                                                                                                                                                     |
 
 ### Danish check format
 
 |                              |                                                                                                                         |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | Support for the Danish check format layout has been discontinued, and the report has been removed from DK localization. |
-| Replaced by another feature? | No                                                                                                                      |
-| Modules affected             | All                                                                                                                     |
+| **Reason for deprecation**       | Support for the Danish check format layout has been discontinued, and the report has been removed from DK localization. |
+| **Replaced by another feature?** | No                                                                                                                      |
+| **Modules affected**             | All                                                                                                                     |
 
 ### Data partitions
 
@@ -495,34 +495,34 @@ Data partitions provide a logical separation of data in the Microsoft Dynamics A
 
 |   |   |
 |---|---|
-| Reason for deprecation       | Data partitions were introduced in Microsoft Dynamics AX 2012 R2 to enable data isolation. In a common scenario, a company has subsidiaries, and the data from one subsidiary should not be visible to another subsidiary, even though both subsidiaries are managed by the same IT department. However, extra scripts and management overhead throughout the program were required in order to create new partitions and populate them with data, and to back up partition data. In the cloud, where we have access to platform as a service (PaaS) database services (Microsoft Azure SQL Database), it's much more efficient to use a database as the isolation container than to do isolation in the program. Regardless of whether data partitioning is required for subsidiaries, for multiple tenants, or just for scale, we believe that the scenarios can be handled better through multiple databases or multiple Dynamics AX instances. |
-| Replaced by another feature? | Data partitions will be replaced through support for multiple databases or Dynamics AX instances in a future release.    |
-| Modules affected             | All  |
+| **Reason for deprecation**       | Data partitions were introduced in Microsoft Dynamics AX 2012 R2 to enable data isolation. In a common scenario, a company has subsidiaries, and the data from one subsidiary should not be visible to another subsidiary, even though both subsidiaries are managed by the same IT department. However, extra scripts and management overhead throughout the program were required in order to create new partitions and populate them with data, and to back up partition data. In the cloud, where we have access to platform as a service (PaaS) database services (Microsoft Azure SQL Database), it's much more efficient to use a database as the isolation container than to do isolation in the program. Regardless of whether data partitioning is required for subsidiaries, for multiple tenants, or just for scale, we believe that the scenarios can be handled better through multiple databases or multiple Dynamics AX instances. |
+| **Replaced by another feature?** | Data partitions will be replaced through support for multiple databases or Dynamics AX instances in a future release.    |
+| **Modules affected**             | All  |
 
 ### Database and file share storage for attachments
 Microsoft Dynamics AX 2012 allowed storage of attachments in the database and in file shares. Both of those options are no longer supported.
 
 |                              |                                        |
 |------------------------------|----------------------------------------|
-| Reason for deprecation       | Files share storage is no longer supported because cloud-hosted environments cannot communicate with local file shares. Database storage has been deprecated in favor of Azure Blob storage. Azure Blob storage is equivalent to storage in the database, as documents can only be accessed through Dynamics 365 for Finance and Operations client forms. This provides the added benefit of providing storage that doesn't negatively affect the performance of the database. Blob storage is the default storage mechanism for Document Management and works immediately. |
-| Replaced by another feature? | Database storage has been deprecated in favor of Azure Blob storage.       |
-| Modules affected             | All                   |
+| **Reason for deprecation**       | Files share storage is no longer supported because cloud-hosted environments cannot communicate with local file shares. Database storage has been deprecated in favor of Azure Blob storage. Azure Blob storage is equivalent to storage in the database, as documents can only be accessed through Dynamics 365 for Finance and Operations client forms. This provides the added benefit of providing storage that doesn't negatively affect the performance of the database. Blob storage is the default storage mechanism for Document Management and works immediately. |
+| **Replaced by another feature?** | Database storage has been deprecated in favor of Azure Blob storage.       |
+| **Modules affected**             | All                   |
 
 ### Delimitation
 
 |                              |                                        |
 |------------------------------|----------------------------------------|
-| Reason for deprecation       | No use of the functionality was found. |
-| Replaced by another feature? | No                                     |
-| Modules affected             | Time and attendance                    |
+| **Reason for deprecation**       | No use of the functionality was found. |
+| **Replaced by another feature?** | No                                     |
+| **Modules affected**             | Time and attendance                    |
 
 ### Desktop client
 
 |                              |                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The Dynamics AX client experience has been redesigned to improve usability across multiple platforms and devices.                      |
-| Replaced by another feature? | The new web client is based on the desktop Form metadata and programming model that have been modified to provide a rich web platform. |
-| Modules affected             | All                                                                                                                                    |
+| **Reason for deprecation**       | The Dynamics AX client experience has been redesigned to improve usability across multiple platforms and devices.                      |
+| **Replaced by another feature?** | The new web client is based on the desktop Form metadata and programming model that have been modified to provide a rich web platform. |
+| **Modules affected**             | All                                                                                                                                    |
 
 ### Direct database connection
 
@@ -530,9 +530,9 @@ In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel 
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| Reason for deprecation       | Direct database connectivity required lower security protocols and was primarily used to achieve the highest levels of performance. Due to the performance and security enhancements that have occurred in Finance and Operations, this functionality now causes more issues than it solves. |
-| Replaced by another feature? | No. Only standard Retail Server communication is now supported.    |
-| Modules affected             | Channel DB/Retail Modern POS                                    |
+| **Reason for deprecation**       | Direct database connectivity required lower security protocols and was primarily used to achieve the highest levels of performance. Due to the performance and security enhancements that have occurred in Finance and Operations, this functionality now causes more issues than it solves. |
+| **Replaced by another feature?** | No. Only standard Retail Server communication is now supported.    |
+| **Modules affected**             | Channel DB/Retail Modern POS                                    |
 
 ### Dutch SWIFT MT940
 
