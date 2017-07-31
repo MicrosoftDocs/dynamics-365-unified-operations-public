@@ -63,24 +63,26 @@ This topic describes how to upgrade an older source database to the latest Fina
 
     delete from classidtable where id >= 0xf000 and id <= 0xffff
 
-## Download the MinorVersionDataUpgrade.zip script
-To obtain the latest MinorVersionDataUpgrade.zip package from your target environment that is running the latest Finance and Operations update, download the latest binary updates from Lifecycle Services (LCS).
+## Download the MinorVersionDataUpgradeWithRetail.zip script
+To obtain the latest MinorVersionDataUpgradeWithRetail.zip package from your target environment that is running the latest Finance and Operations update, download the latest binary updates from Lifecycle Services (LCS).
 
 > [!NOTE]
-> If you are upgrading from AX 2012 the data upgrade package is called MajorVersionDataUpgradeWithRetail.zip.
-> In earlier versions (prior to Platform update 4), the package was named DataUpgrade.zip. 
+> The name of the data upgrade deployable package varies depending on what version you are upgrading from and to:
+> - If you are upgrading from AX 2012 the data upgrade package is called MajorVersionDataUpgradeWithRetail.zip. Download the latest binary updates for your Platform update 8 (or higher) environment to find this package.
+> - In earlier versions (prior to Platform update 4), the package was named DataUpgrade.zip. 
+> - In later versions (from Platform update 8 onwards) the package is named MinorVersionDataUpgradeWithRetail.zip. Download the latest binary updates for your Platform update 8 (or higher) environment to find this package.
 
 1.  In LCS, in the **Environments** section, click your target Finance and Operations environment, scroll to the bottom of the page, and then click the **All binary updates** tile. 
 
 > [!NOTE]
-> If the All binary updates tile shows zero updates available then use the MinorVersionDataUpgrade.zip from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 with platform update 3 and the **All binary updates** tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library. When using this package from the shared asset library, the path required in step 3 below changes to ..\\AOSService\\Packages\\files\\dynamicsax-framework-bin.7.0.4307.16141.zip\\CustomDeployablePackage
+> If the All binary updates tile shows zero updates available then use the MinorVersionDataUpgradeWithRetail.zip from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 with platform update 3 and the **All binary updates** tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library. When using this package from the shared asset library, the path required in step 3 below changes to ..\\CustomDeployablePackage
 
 2.  On the **Add hotfixes** page, click **Select all**, click **Add**, and then click **Download package**.
 3.  On the next page, click **Download**.
-4.  After the package is downloaded, extract the contents, and go to the following directory to find the MinorVersionDataUpgrade.zip file (note that the version number in the path will vary): ..\\AOSServiceDSC\\Packages\\files\\dynamicsax-framework-bin.7.0.4127.24083.zip\\CustomDeployablePackage
+4.  After the package is downloaded, extract the contents, and go to the following directory to find the MinorVersionDataUpgradeWithRetail.zip file (note that the version number in the path will vary): ..\\CustomDeployablePackage
 
 > [!NOTE]
-> Computers that are deployed from LCS will already have a MinorVersionDataUpgrade.zip file. However, that file is out of date and includes issues that have been resolved in later fixes. Always download the latest version of the file from LCS.
+> Computers that are deployed from LCS will already have a MinorVersionDataUpgradeWithRetail.zip file. However, that file is out of date and includes issues that have been resolved in later fixes. Always download the latest version of the file from LCS.
 
 ## Remove encryption certification rotation
 1.  Extract the MinorVersionDataUpgrade.zip deployable package to C:\\Temp or a location of your choice.
