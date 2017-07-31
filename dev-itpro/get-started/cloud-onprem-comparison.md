@@ -72,6 +72,8 @@ The following table shows whether each feature is available in:
 | | Configuration driven extension| Yes | No |
 | | Data management and integration| Yes | ? |
 | | Integrations| Yes | ? |
+| | Export data to your own data warehouse| Yes | ? |
+
 | Development and deployment | | | |
 | | Build automation: Automatic update of model version during build | Yes | Yes |
 | | Build automation: Option to include runtime packages in the deployable package of the automated build output| Yes | Yes |
@@ -142,6 +144,8 @@ The following table shows whether each feature is available in:
 | | Credit and collections| Yes | ? |
 | | Credit and collections management Power BI| Yes | Hybrid |
 | | Direct deposit| Yes | No |
+| | Save Financial reports to SharePoint| Yes | Yes |
+
 | General ledger | | | |
 | | Intercompany revenue and cost transactions| Yes | ? |
 | | General ledger| Yes | ? |
@@ -168,6 +172,7 @@ The following table shows whether each feature is available in:
 | | US Payroll| Yes | ? |
 | | New termination rules| Yes | ? |
 | | Recruiting Power BI reports | Yes | ? |
+| | Redesigned employee self-service | Yes | ? |
 
 | Inventory management| | | |
 | | Additional warehouse support in manufacturing | Yes | ? |
@@ -194,6 +199,8 @@ The following table shows whether each feature is available in:
 | | Manufacturing – Gantt control| Yes | ? |
 
 | Master planning and forecasting| | | |
+| | Safety stock de-prioritization in master planning and capable to promise (CTP) calculation| Yes | Yes |
+
 | Mobile applications, platform, and framework | | | |
 | | Mobile – On-hand view app| Yes | Yes |
 | | Mobile framework| Yes | Yes |
@@ -216,6 +223,11 @@ The following table shows whether each feature is available in:
 | Payroll| | | |
 | Personalization| | | |
 | Planning and scheduling| | | |
+| Platform | | | |
+| | Monitoring and telemetry| Yes | ? |
+| | Number sequence scope extensibility| Yes | No |
+| | Platform compatibility| Yes | ? |
+
 | Procurement and sourcing| | | |
 | | Intercompany order processing: ATP and direct shipment| Yes | ? |
 | | Mobile purchase order approvals| Yes | Yes |
@@ -238,6 +250,8 @@ The following table shows whether each feature is available in:
 | | Project resourcing improvements| Yes | ? |
 | | Manage or view a project work breakdown structure using Microsoft Project Client| Yes | Yes |
 | | Managing estimated costs, revenue, and item requirements | Yes | ? |
+| | Rename project stages| Yes | Yes |
+
 | Retail| | | |
 | |Ability to sell and return outside assortments | Yes | No |
 | | Advanced warehousing in Retail store  | Yes | No |
@@ -297,6 +311,9 @@ The following table shows whether each feature is available in:
 | | Browser client - Personalize your workspace by adding a link to a details page| Yes | Yes |
 | | Browser client - Support for Right to Left languages| Yes | Yes |
 | | Browser framework - PowerApps Host control| Yes | Yes |
+| | Enhanced administration features for personalization| Yes | Yes |
+| | Improved viewing experience for Application reports| Yes | Yes |
+
 
 | Others | | | |
 |---|---|---|---|
