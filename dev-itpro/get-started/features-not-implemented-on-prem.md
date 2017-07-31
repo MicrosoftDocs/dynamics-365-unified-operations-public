@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 8
 
 This topic lists features that have not been implemented in on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition. 
 - The first section in this topic lists features that haven't been implemented yet. These features are not deprecated.
-- The sectond section in this article lists features that are not intended for use with on-premises deployments. There are no plans to implement these featuers.
+- The sectond section in this topic lists features that are not intended for use with on-premises deployments. There are no plans to implement these featuers.
 
 # Features not implemented yet
 The following features have not been implemented yet in on-premises deployments. These features have not been deprecated.
