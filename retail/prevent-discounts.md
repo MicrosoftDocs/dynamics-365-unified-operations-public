@@ -1,4 +1,4 @@
---
+---
 # required metadata
 
 title: Prevent discounts for retail products
