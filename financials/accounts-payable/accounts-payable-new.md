@@ -127,13 +127,8 @@ The following topics provide information about settlements. Settlement is the pr
 [Single voucher with multiple customer or vendor records](single-voucher-multiple-customer-vendor-records.md)
 
 
-Looking for additional information about Microsoft Dynamics 365 for Finance and Operations, Enterprise edition? 
 
-Check out the new, short how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+Still looking for additional information about Microsoft Dynamics 365 for Finance and Operations, Enterprise edition? 
 
-The videos are arranged in a logical order, to guide you from simple to complex topics. You can find the videos by searching on YouTube for the following playlists: 
-
-•	Dynamics 365 for Operations: Quick Video Guides – Development 
-
-•	Dynamics 365 for Operations: Quick Video Guides – Lifecycle Services 
+Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
