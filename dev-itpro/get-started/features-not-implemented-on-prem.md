@@ -59,25 +59,9 @@ The following features have not been implemented yet in on-premises deployments.
 # Features not intended for use in on-premises deployments
 The following features are not intended for use in on-premises deployments. There are no plans to implement these features in on-premises deployments.
 
-### SSRS Report Viewer control
-
-This feature was used to interact with HTML formatted reports in the Finance and Operations
-web client.
-
-|                                  |  |
-|----------------------------------|--|
-| **Reason for deprecation**       | SQL Reporting Services (SSRS) does not support a report viewer control that is compatible with the on-premises web client.      |
-| **Replaced by another feature?** | Reports are rendered as PDF documents by the on-premises service. Use extensions to enable embedded drill-thru links in application reports. |
-| **Modules affected**             | All    |
-
-### Document Routing Agent
-
-The Document Routing Agent client is used as a service gateway to connect from the cloud to domain-authenticated network printers.
-
-|                                  |  |
-|----------------------------------|--|
-| **Reason for deprecation**       | On-premises deployments are hosted on domain authenticated servers. This offers secure, direct access to network printer devices. |
-| **Replaced by another feature?** | This component is not necessary for on-premises deployments.|
-| **Modules affected**             | None               |
+| **Feature**                                                      | **Description**                                                                                                                                                                          |
+|----------------------------------|-------------------------------------------------|
+| SSRS Report Viewer control       |SQL Reporting Services (SSRS) does not support a report viewer control that is compatible with the on-premises web client.  Reports are rendered as PDF documents by the on-premises service. Use extensions to enable embedded drill-thru links in application reports.|
+| Document Routing Agent           |This component is not necessary for on-premises deployments.  On-premises deployments are hosted on domain authenticated servers. This offers secure, direct access to network printer devices.
 
 
