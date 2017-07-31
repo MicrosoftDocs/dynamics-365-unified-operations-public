@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 6
 
 This topic describes features that have been removed, or that are planned for removal from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-## Features that have been deprecated for all deployment types of the July 2017 update with Platform update 8
+## Features that have been deprecated in the July 2017 update with Platform update 8
 This list includes features that have been deprecated for both cloud and on-premises deployments.
 
 ### Warehouse mobile devices portal
@@ -68,29 +68,6 @@ The Windows 8 tablet app provided functionality for expense entry and approval.
 | **Reason for deprecation**       | Finance and Operations is compatible with tablets. The tablet app is no longer required. |
 | **Replaced by another feature?** | No.                                                                                      |
 | **Modules affected**             | Expense management                                                                       |
-
-## Features that have been deprecated for on-premises deployments of the July 2017 update with Platform update 8
-
-### SSRS Report Viewer control
-
-This feature was used to interact with HTML formatted reports in the Finance and Operations
-web client.
-
-|                                  |  |
-|----------------------------------|--|
-| **Reason for deprecation**       | SQL Reporting Services (SSRS) does not support a report viewer control that is compatible with the on-premises web client.      |
-| **Replaced by another feature?** | Reports are rendered as PDF documents by the on-premises service. Use extensions to enable embedded drill-thru links in application reports. |
-| **Modules affected**             | All    |
-
-### Document Routing Agent
-
-The Document Routing Agent client is used as a service gateway to connect from the cloud to domain-authenticated network printers.
-
-|                                  |  |
-|----------------------------------|--|
-| **Reason for deprecation**       | On-premises deployments are hosted on domain authenticated servers. This offers secure, direct access to network printer devices. |
-| **Replaced by another feature?** | This component is not necessary for on-premises deployments.|
-| **Modules affected**             | None               |
 
 
 Features that have been deprecated in Dynamics 365 for Operations 1611 with platform update 3
