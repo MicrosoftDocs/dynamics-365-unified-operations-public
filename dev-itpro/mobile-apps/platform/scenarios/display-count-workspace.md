@@ -2,7 +2,7 @@
 # required metadata
 
 title: Display a count in a field
-description: This topic explains how to calculate a count that is correct and that displays quickly. 
+description: This topic explains how to calculate a count that is correct and that appears quickly. 
 author: makhabaz
 manager: AnnBe
 ms.date: 07/01/2017
@@ -32,30 +32,29 @@ ms.dyn365.ops.version: Platform update 3
 
 # Display a count in a field
 
-Using the **pageLink** control for displaying counts (totals) can be slow, because it loads the target page and then counts the number of rows. Also, the count calculated can be incorrect, because there is a limit on the number of rows that are retreived.
+Although a **pageLink** control can be used to show counts (totals), it can be slow, because it must load the target page before it counts the number of rows. Additionally, the count that is calculated can be incorrect, because there is a limit on the number of rows that are retrieved.
 
-![Workspace with tiles](media/optimizing-workspace/Tiles_Original.png)
+![Workspace with tiles that show counts](media/optimizing-workspace/Tiles_Original.png)
 
-To make mobile workspaces work more quickly, the recommended approach is to use a regular field to display the count and then model the field as a **pageLink control** in the mobile client. 
+If you want to make mobile workspaces work more quickly, we recommended that you use a regular field to show the count and then model the field as a **pageLink** control in the mobile client.
 
-The following example uses the Fleet Management app. In the Fleet Management app, the workspace shows the total number of customers, reservations, and vehicles. Previously these counts were coming from a **pageLink** control that had "AllCustomers", "AllReservations" and "AllVehicles" as their targets respectively and the pageLink control was loading the rows and doing the count. (This is not the recommended approach.) 
+The following example uses the Fleet Management app. In the Fleet Management app, the workspace shows the total number of customers, reservations, and vehicles. Previously, these counts came from a **pageLink** control that had AllCustomers, AllReservations, and AllVehicles as targets. The **pageLink** control loaded the rows and did the count. (This approach isn't the recommended approach.)
 
-Below are the steps to configure the workspace page to use the recommended approach.
+Follow these steps to configure the workspace page to use the recommended approach.
 
-1. Create a new form on the server to contain fields that are also on the server. (You can also use an existing form and add these new fields). In the following image, a new form **FMMobSummary** with three fields is created.
+1. On the server, create a new form to contain fields that are also on the server. (You can also add the new fields to an existing form). In the following illustration, a new **FMMobSummary** form is created that has three fields.
 
-    ![Workspace with tiles](media/optimizing-workspace/FMMobSummary.png)
-	
-2. Create a page using the mobile app designer for the form **FMMobSummary**.
+    ![Form that has three fields](media/optimizing-workspace/FMMobSummary.png)
 
-    ![New page in designer](media/optimizing-workspace/NewPageInDesigner.png)
-	
-3. Update the business logic to transform the fields into a **pageLink** control. Use the **configureControl** method to add a navigation target to the fields. Doing that will configure the fields as **pageLink** controls. The arguments for **configureControl** are page name, control name and an object of properties to be updated.
-	
-4. Update the workspace design. Embed the summary page as a **part** in the workspace page. Reference the fields that are are now configured as **pageLink** controls. Provide a style and set the property **showCount:true** so that the count is shown on the **pageLink** control.
+2. Create a page by using the mobile app designer for the **FMMobSummary** form.
 
-    ![Changes to business logic](media/optimizing-workspace/ChangesToBL.png)
+    ![New page in the designer](media/optimizing-workspace/NewPageInDesigner.png)
 
-By using this approach you will also get the localized labels for **pageLink** controls. The result is a much faster experience when loading workspaces.
+3. Update the business logic to transform the fields into a **pageLink** control. Use the **configureControl** method to add a navigation target to the fields. The fields are then configured as **pageLink** controls. The arguments for the **configureControl** method are the page name, the control name, and an object of properties that must be updated.
+4. Update the workspace design. Embed the summary page as a part in the workspace page. Reference the fields that are now configured as **pageLink** controls. Provide a style, and set the **showCount:true** property, so that the count is shown on the **pageLink** control.
 
-![Final workspace with optimized tiles](media/optimizing-workspace/FinalWorkspaceWithTile.png)
+    ![Changes to the business logic](media/optimizing-workspace/ChangesToBL.png)
+
+By using this approach, you also get the localized labels for **pageLink** controls. The result is a much faster experience when workspaces are loaded.
+
+![Final workspace that has optimized tiles](media/optimizing-workspace/FinalWorkspaceWithTile.png)
