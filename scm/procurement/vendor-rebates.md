@@ -42,6 +42,14 @@ This article provides a broad overview of  the most common tasks that you’d wa
 
 ●	Review and approve claims
 
+### Prerequisites
+
+Before you proceed with the following guidelines, set these parameters on the **Procurement and sourcing parameters** page:
+
+-   On the **Prices** tab, the **Enable price details** option is set to **Yes**.
+
+-   On the **Margin alerts** tab, the **Enable margin alert** option is set to **Yes**.
+
 ## Review details of a vendor rebate agreement
 A vendor rebate agreement is a record of a contract with a vendor that specifies the negotiated terms and conditions under which the company qualifies for a monetary reward in return for achieving preset purchase targets. Vendor rebate agreements are recorded on the Rebate agreements page.
 
@@ -121,7 +129,7 @@ The message bars and the status has changed to **Completed** indicate that the f
 > [!NOTE] 
 > The setting of the **Manual invoice posting** option on the **Rebate program** tab of the **Procurement and sourcing parameters** page determines whether a vendor invoice is posted automatically as part of claim processing or manually.
 
-● As a result, the vendor’s Payable account has been debited, and the Discounts and Allowances Received account has been credited.
+-   As a result, the vendor’s Payable account has been debited, and the Discounts and Allowances Received account has been credited.
 
 > [!NOTE] 
 > The Discounts and Allowances Received account number is specified for the procurement category that is used on the purchase invoice line for the rebate. The procurement category, in turn, is set on the **Rebate program** tab of the **Procurement and sourcing parameters** page.
@@ -129,20 +137,7 @@ The message bars and the status has changed to **Completed** indicate that the f
 7. In the rebate list, select the line, and then, on the Action Pane, click **Rebate transactions** to see and navigate to the journal batch number for this rebate accrual posting and also the vendor invoice number.
 8. Select the line for the vendor invoice transaction, and then, on the Action Pane, click **Vendor invoice**.
 
-The Invoice journal shows details for the invoice. The line specifies the details of the vendor invoice for the **Commissions and Rebates** procurement category, a quantity **–1**, and an amount of **–900**. 
+The Invoice journal shows details for the invoice. The line specifies the details of the vendor invoice for the **Commissions and Rebates** procurement category, a quantity of –1, and an amount of –900.. 
 
-9. On the **All vendors** page, select vendor **US-101**, and then, on the Action Pane, click **Transactions** and find the line for the invoice. The positive amount of USD 900 has now been added to the vendor balance.
+9. On the **All vendors** page, select the vendor from whom you receive a rebate, and then, on the Action Pane, click **Transactions** and find the line for the invoice. The positive amount of USD 900 has now been added to the vendor balance.
 
-The process for handling vendor rebates involves multiple manual tracking tasks that are often tedious. By automating these tasks, vendor rebate management helps with the following processes:
-
- - Generating accurate rebate claims
- - Accruing the expected receivable and interim gain in the general ledger
- - Updating the vendor balance and the income statement with the allowance that is due
-
-### Prerequisites
-
-The following examples use the USMF demo company. The following parameters are set on the **Procurement and sourcing parameters** page:
-
-● On the **Prices** tab, the **Enable price details** option is set to **Yes**.
-
-● On the **Margin alerts** tab, the **Enable margin alert** option is set to **Yes**.
