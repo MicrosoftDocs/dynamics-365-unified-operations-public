@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Customize the display of a field so that it is clickable
-description: Fields shown on mobile app pages can be customized to be shown as an email, a phone number, or a URL.
+title: Customize the display of a field so that it's clickable
+description: This topic explains how to customize the fields on a mobile app page so that they are shown as email addresses, phone numbers, or URLs.
 author: makhabaz
 manager: AnnBe
 ms.date: 07/01/2017
@@ -30,44 +30,45 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Customize the display of a field so that it is clickable
+# Customize the display of a field so that it's clickable
 
-Fields shown on mobile app pages can be customized to be shown as an email, a phone number, or a URL.
+The fields on a mobile app page can be customized so that they are shown as email addresses, phone numbers, or URLs.
 
 ## Email field
-If you mark a field as email using business logic, clicking on the field will open the mobile default email app with the field value shown as email address in the app.
+You can mark a field as an email address field by using business logic. Then, when a user clicks the field, the default mobile email app starts, and the field value appears as the email address in the app.
 
 ## Phone field
-If you mark a field as phone number using business logic, clicking on the field will open the mobile dialer app with the field value shown as phone number in the app. 
+You can mark a field as a phone number field by using business logic. Then, when a user clicks the field, the mobile dialer app starts, and the field value appears as the phone number in the app.
 
 > [!NOTE]
-> On iOS, if the phone number is not valid it might not trigger the mobile dialer app.
+> On iOS, if the phone number isn't valid, it might not trigger the mobile dialer app.
 
 ## URL field
-If you mark a field as URL using business logic, clicking on the field will open the url in the mobile default browser with the field value shown in the address bar.
+You can mark a field as a URL field by using business logic. Then, when a user clicks the field, the URL opens in the default mobile browser, and the field value appears in the address bar.
 
 > [!NOTE]
-> On iOS, you need to provide the complete URL (starting from a protocol like http) in order for it to open the browser. A URL like www.microsoft.com will not work. The URL needs to be http:\/\/www.microsoft.com.
+> On iOS, you must provide a complete URL (that is, a URL that starts with a protocol, such as **http**). Otherwise, the URL isn't opened in the browser. A URL such as www.microsoft.com doesn't work. Instead, the URL must be specified as `http://www.microsoft.com`.
 
 ## Example
-This example shows how to configure the customer email and phone fields so that they can clicked and opened in the appropriate iOS apps.
+This example shows how to configure the customer email address and phone number fields so that they can clicked and opened in the appropriate iOS apps.
 
-Before the field is customized, the fields are not clickable, as shown in the following image.
+Before the fields are customized, they can't be clicked, as shown in the following image.
 
- ![Customer details page without any changes](media/workspace-api/FieldAsURLOriginal.png)
+![Customer details page before the changes are made](media/workspace-api/FieldAsURLOriginal.png)
 
-To specify that the field is a link:
+Follow these steps to specify that a field is a link.
 
-1. Add the following lines to the **appInit** method. You can call **configureControl** and pass in the page name and control name and then supplying in the LinkType for the control. **Telephone**, **Email**, and **Url** are supported.
+1. Add the following lines to the **appInit** method. You call the **configureControl** method, and pass in the page name and control name. You then supply the **LinkType** value for the control. The following values are supported: **Telephone**, **Email**, and **Url**.
 
-    ![Changes done in workspace business logic](media/workspace-api/FieldAsURLBusinessLogic.png)
+    ```
+    metadataService.configureControl('PageName', 'ControlName', { LinkType: 'Telephone' });
+    metadataService.configureControl('PageName', ' ControlName ', { LinkType: 'Email' });
+    metadataService.configureControl('PageName', ' ControlName ', { LinkType: 'Url' });
+    ```
 
-2. Upload the updated business logic file using the mobile app designer.
+2. Upload the updated business logic file by using the mobile app designer.
+3. Update the workspace metadata in the mobile client.
 
-3. Refresh the workspace metadata in the mobile client.
+The fields now appear as links.
 
-4. The fields are shown as links.
-
-    ![Customer details page after the changes](media/workspace-api/FieldAsURLFinal.png)
-
-
+![Customer details page after the changes](media/workspace-api/FieldAsURLFinal.png)
