@@ -331,6 +331,7 @@ The following table shows whether each feature is available in:
 
 
 | Still checking | | | |
+| ---|---|---|---|
 | onboarding, coudl be HR (read roadmap) | Onboarding| Yes | No |
 | talent - check the roadmap? could be across the product | Distribute tasks where it makes sense and increase efficiency| Yes | ? |
 | talent? is it part of the product? | Ideas portal| Yes | Yes |
