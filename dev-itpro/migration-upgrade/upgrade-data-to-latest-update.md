@@ -56,6 +56,9 @@ This topic describes how to upgrade an older source database to the latest Fina
     - If upgrading from the November 2016 release (also known as 1611 or 7.1) 7.1.1541.3036: Hotfix KB number 4023686 "Could not find source system version information" error when you upgrade to the latest Application Release 
     - If upgrading from the July 2017 release (also known as 7.2) 7.2.11792.56024: No additional fix is needed for this issue.
 
+> [!IMPORTANT]
+> If you have a golden database environment, and you have installed application fixes from step 3 above and checked them into VSTS - ensure that the latest code is synched to your golden database environment and that a full database synchronize has been run - the latter is required as it populate a new table to be used later when upgrading the golden database.
+
 4.  If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required because the demo data contains bad records for some kernel X++ classes.
 
     delete from classidtable where id >= 0xf000 and id <= 0xffff
