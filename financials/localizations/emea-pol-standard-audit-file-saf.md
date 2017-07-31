@@ -135,537 +135,400 @@ A reporting code is an integer value. Reporting codes should be numbered accordi
 
 The following table shows the sales tax codes and sales tax reporting codes for this example.
 
-**Sales tax code**
-
-**Sales tax reporting code**
-
-**Description**
-
-**Tag name in SAF-T VAT**
-
-**Sign in SAF-T VAT**
-
-**ExportCust**
-
-10101
-
-Taxable sales
-
-K\_11
-
--
-
-10102
-
-Tax-free sale
-
-K\_11
-
--
-
-10104
-
-Taxable sales credit note
-
-K\_11
-
--
-
-10105
-
-Tax exempt sales credit note
-
-K\_11
-
--
-
-**Art100**
-
-10201
-
-Taxable sales
-
-K\_12
-
--
-
-10204
-
-Taxable sales credit note
-
-K\_12
-
--
-
-**VAT22\_23**
-
-10301
-
-Taxable sales
-
-K\_19
-
--
-
-10302
-
-Tax-free sale
-
-K\_10
-
--
-
-10303
-
-Sales tax payable
-
-K\_20
-
--
-
-10304
-
-Taxable sales credit note
-
-K\_19
-
--
-
-10306
-
-Sales tax on sales credit note
-
-K\_20
-
--
-
-**VAT7\_8**
-
-10401
-
-Taxable sales
-
-K\_17
-
--
-
-10402
-
-Tax-free sale
-
-K\_10
-
--
-
-10403
-
-Sales tax payable
-
-K\_18
-
--
-
-10404
-
-Taxable sales credit note
-
-K\_17
-
--
-
-10406
-
-Sales tax on sales credit note
-
-K\_18
-
--
-
-**VAT5**
-
-10501
-
-Taxable sales
-
-K\_15
-
--
-
-10502
-
-Tax-free sale
-
-K\_10
-
--
-
-10503
-
-Sales tax payable
-
-K\_16
-
--
-
-10504
-
-Taxable sales credit note
-
-K\_15
-
--
-
-10506
-
-Sales tax on sales credit note
-
-K\_16
-
--
-
-**VAT0**
-
-10601
-
-Taxable sales
-
-K\_13
-
--
-
-10602
-
-Tax-free sale
-
-K\_10
-
--
-
-10604
-
-Taxable sales credit note
-
-K\_13
-
--
-
-**ART129**
-
-10701
-
-Taxable sales
-
-K\_14
-
--
-
-10702
-
-Tax-free sale
-
-K\_14
-
--
-
-10704
-
-Taxable sales credit note
-
-K\_14
-
--
-
-10705
-
-Tax exempt sales credit note
-
-K\_14
-
--
-
-**IntraEUGoods**
-
-10801
-
-Tax-free sale
-
-K\_21
-
--
-
-10810
-
-Taxable import
-
-K\_23
-
-+
-
-10812
-
-Use tax
-
-K\_24
-
-+
-
-**ExportOfGoods**
-
-10901
-
-Tax-free sale
-
-K\_22
-
--
-
-10905
-
-Tax exempt sales credit note
-
-K\_22
-
--
-
-**ImportOfGoodsART33**
-
-20207
-
-Taxable import
-
-K\_45
-
-+
-
-11010
-
-Offset Taxable import
-
-K\_25
-
--
-
-20209
-
-Use tax
-
-K\_46
-
-+
-
-11012
-
-Offset use tax
-
-K\_26
-
--
-
-**ImportOfServices**
-
-20207
-
-Taxable import
-
-K\_45
-
-+
-
-11110
-
-Offset Taxable import
-
-K\_27
-
--
-
-20209
-
-Use tax
-
-K\_46
-
-+
-
-11112
-
-Offset use tax
-
-K\_28
-
--
-
-**ImportART28**
-
-20207
-
-Taxable import
-
-K\_45
-
-+
-
-11210
-
-Offset Taxable import
-
-K\_29
-
--
-
-20209
-
-Use tax
-
-K\_46
-
-+
-
-11212
-
-Offset use tax
-
-K\_30
-
--
-
-**ReverseCharge**
-
-11301
-
-Taxable sales
-
-K\_31
-
--
-
-11302
-
-Sales tax payable
-
-K\_35
-
--
-
-11304
-
-Taxable sales credit note
-
-K\_31
-
--
-
-11306
-
-Sales tax on sales credit note
-
-K\_35
-
--
-
-**FixedAssetPurch**
-
-20107
-
-Taxable purchases
-
-K\_43
-
-+
-
-20109
-
-Sales tax receivable
-
-K\_44
-
-+
-
-20115
-
-Taxable purchase credit note
-
-K\_43
-
-+
-
-20116
-
-Sales tax on purchase credit note
-
-K\_47
-
-+
-
-**GoodServPurch**
-
-20207
-
-Taxable purchases
-
-K\_45
-
-+
-
-20209
-
-Sales tax receivable
-
-K\_46
-
-+
-
-20215
-
-Taxable purchase credit note
-
-K\_45
-
-+
-
-20216
-
-Sales tax on purchase credit note
-
-K\_48
-
-+
-
-**CorrATR89b1**
-
-30101
-
-Sales tax payable
-
-K\_49
-
-+
-
-30109
-
-Sales tax receivable
-
-K\_49
-
-+
-
-**CorrATR89b4**
-
-30201
-
-Sales tax payable
-
-K\_50
-
-+
-
-30209
-
-Sales tax receivable
-
-K\_50
-
-+
+<table width="100%">
+<tbody>
+<tr>
+<td><strong>Sales tax code</strong></td>
+<td><strong>Sales tax reporting code</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Tag name in SAF-T VAT</strong></td>
+<td><strong>Sign in SAF-T VAT</strong></td>
+</tr>
+<tr>
+<td rowspan="4"><strong>ExportCust</strong></td>
+<td>10101</td>
+<td>Taxable sales</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10102</td>
+<td>Tax-free sale</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10104</td>
+<td>Taxable sales credit note</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10105</td>
+<td>Tax exempt sales credit note</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="2"><strong>Art100</strong></td>
+<td>10201</td>
+<td>Taxable sales</td>
+<td>K_12</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10204</td>
+<td>Taxable sales credit note</td>
+<td>K_12</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5"><strong>VAT22_23</strong></td>
+<td>10301</td>
+<td>Taxable sales</td>
+<td>K_19</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10302</td>
+<td>Tax-free sale</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10303</td>
+<td>Sales tax payable</td>
+<td>K_20</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10304</td>
+<td>Taxable sales credit note</td>
+<td>K_19</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10306</td>
+<td>Sales tax on sales credit note</td>
+<td>K_20</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5"><strong>VAT7_8</strong></td>
+<td>10401</td>
+<td>Taxable sales</td>
+<td>K_17</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10402</td>
+<td>Tax-free sale</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10403</td>
+<td>Sales tax payable</td>
+<td>K_18</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10404</td>
+<td>Taxable sales credit note</td>
+<td>K_17</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10406</td>
+<td>Sales tax on sales credit note</td>
+<td>K_18</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5"><strong>VAT5</strong></td>
+<td>10501</td>
+<td>Taxable sales</td>
+<td>K_15</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10502</td>
+<td>Tax-free sale</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10503</td>
+<td>Sales tax payable</td>
+<td>K_16</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10504</td>
+<td>Taxable sales credit note</td>
+<td>K_15</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10506</td>
+<td>Sales tax on sales credit note</td>
+<td>K_16</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="3"><strong>VAT0</strong></td>
+<td>10601</td>
+<td>Taxable sales</td>
+<td>K_13</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10602</td>
+<td>Tax-free sale</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10604</td>
+<td>Taxable sales credit note</td>
+<td>K_13</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4"><strong>ART129</strong></td>
+<td>10701</td>
+<td>Taxable sales</td>
+<td>K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10702</td>
+<td>Tax-free sale</td>
+<td>K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10704</td>
+<td>Taxable sales credit note</td>
+<td>K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10705</td>
+<td>Tax exempt sales credit note</td>
+<td>K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="3"><strong>IntraEUGoods</strong></td>
+<td>10801</td>
+<td>Tax-free sale</td>
+<td>K_21</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10810</td>
+<td>Taxable import</td>
+<td>K_23</td>
+<td>+</td>
+</tr>
+<tr>
+<td>10812</td>
+<td>Use tax</td>
+<td>K_24</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="2"><strong>ExportOfGoods</strong></td>
+<td>10901</td>
+<td>Tax-free sale</td>
+<td>K_22</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10905</td>
+<td>Tax exempt sales credit note</td>
+<td>K_22</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4"><strong>ImportOfGoodsART33</strong></td>
+<td>20207</td>
+<td>Taxable import</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11010</td>
+<td>Offset Taxable import</td>
+<td>K_25</td>
+<td>-</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Use tax</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11012</td>
+<td>Offset use tax</td>
+<td>K_26</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4"><strong>ImportOfServices</strong></td>
+<td>20207</td>
+<td>Taxable import</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11110</td>
+<td>Offset Taxable import</td>
+<td>K_27</td>
+<td>-</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Use tax</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11112</td>
+<td>Offset use tax</td>
+<td>K_28</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4"><strong>ImportART28</strong></td>
+<td>20207</td>
+<td>Taxable import</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11210</td>
+<td>Offset Taxable import</td>
+<td>K_29</td>
+<td>-</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Use tax</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11212</td>
+<td>Offset use tax</td>
+<td>K_30</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4"><strong>ReverseCharge</strong></td>
+<td>11301</td>
+<td>Taxable sales</td>
+<td>K_31</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11302</td>
+<td>Sales tax payable</td>
+<td>K_35</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11304</td>
+<td>Taxable sales credit note</td>
+<td>K_31</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11306</td>
+<td>Sales tax on sales credit note</td>
+<td>K_35</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4"><strong>FixedAssetPurch</strong></td>
+<td>20107</td>
+<td>Taxable purchases</td>
+<td>K_43</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20109</td>
+<td>Sales tax receivable</td>
+<td>K_44</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20115</td>
+<td>Taxable purchase credit note</td>
+<td>K_43</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20116</td>
+<td>Sales tax on purchase credit note</td>
+<td>K_47</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="4"><strong>GoodServPurch</strong></td>
+<td>20207</td>
+<td>Taxable purchases</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Sales tax receivable</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20215</td>
+<td>Taxable purchase credit note</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20216</td>
+<td>Sales tax on purchase credit note</td>
+<td>K_48</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="2"><strong>CorrATR89b1</strong></td>
+<td>30101</td>
+<td>Sales tax payable</td>
+<td>K_49</td>
+<td>+</td>
+</tr>
+<tr>
+<td>30109</td>
+<td>Sales tax receivable</td>
+<td>K_49</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="2"><strong>CorrATR89b4</strong></td>
+<td>30201</td>
+<td>Sales tax payable</td>
+<td>K_50</td>
+<td>+</td>
+</tr>
+<tr>
+<td>30209</td>
+<td>Sales tax receivable</td>
+<td>K_50</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
 
 ### Configure the ER model, and format for the report
 
