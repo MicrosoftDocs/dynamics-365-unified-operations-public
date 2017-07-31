@@ -182,9 +182,9 @@
 #### [Service authentication troubleshooting](/dynamics365/unified-operations/dev-itpro/data-entities/troubleshoot-service-authentication?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [OData](/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Recurring integrations](/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Recurring integrations](/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Data integration using the Common Data Service](/common-data-service/entity-referencedynamics-365-integration) 
+### [Data integration using the Common Data Service](/common-data-service/entity-reference/dynamics-365-integration) 
 #### [Configure a prospect to cash scenario](/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Synchronize products from Finance and Operations to products in Sales](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Synchronize accounts from Sales to customers in Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2347,8 +2347,8 @@
 #### [Analyze - Use the Upgrade analyzer tool to plan upgrade](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Analyze – Use the Code upgrade service to estimate the effort to upgrade code](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analyze-code-upgrade?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Analyze - Deploy a sandbox enviroment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Upgrade - Data upgrade in a development environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Upgrade - AX 2012 data upgrade tasks](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Upgrade - Data upgrade in a development environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Upgrade - AX 2012 data upgrade tasks](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Upgrade - Data upgrade in a sandbox environment](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Validate - Cutover testing](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Validate - Tasks to perform after upgrade](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
