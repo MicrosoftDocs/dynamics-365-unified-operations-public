@@ -107,10 +107,10 @@ If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or 
 <td>The vendor user must have access to the vendor collaboration web interface in the web client and must set up a vendor collaboration user.</td><td>Purchasing professionals and the system administrator</td>
 <td>Follow the steps in the following topics to set up and work with the vendor collaboration web interface.
 <ul>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors">Use vendor collaboration to work with external vendors</a></li>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-user">Manage vendor collaboration users</a></li>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration">Set up and maintain vendor collaboration</a></li>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations">Use vendor collaboration to work with customers in Finance and Operations</a></li>
+<li><a href="vendor-collaboration-work-external-vendors.md">Use vendor collaboration to work with external vendors</a></li>
+<li><a href="manage-vendor-collaboration-users.md">Manage vendor collaboration users</a></li>
+<li><a href="set-up-maintain-vendor-collaboration.md">Set up and maintain vendor collaboration</a></li>
+<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Use vendor collaboration to work with customers in Finance and Operations</a></li>
 </ul></td>
 </tr>
 </tbody>

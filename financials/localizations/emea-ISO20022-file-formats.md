@@ -111,6 +111,7 @@ If you're importing the camt.054 file, you should specify the following addition
 You can view the imported information on the **Payment transfers** page. 
 
 ## Additional details
+
 When you import a format configuration from LCS, you import the whole configuration tree which means that the Model and Model mapping configurations are included. 
 In the Payment model starting from version 8, the mappings are located in separate ER configurations in the solution tree (Payment model mapping 1611, Payment model mapping to destination ISO20022, etc). There are many different payment formats under one model (Payment model), thus separate mapping handling is a key for easy solution maintenance. 
 For example, consider this scenario: you use ISO20022 payments to generate credit transfer files and then you import the return messages from the bank. In this scenario, you should use the following configurations:
@@ -124,3 +125,14 @@ For example, consider this scenario: you use ISO20022 payments to generate credi
  - **Camt.054** – this format will be used together with the Payment model mapping to destination ISO20022 to import the camt.054 file into vendor payments transfers journal. The same format configuration will be used in customer payments import functionality, but the different mapping will be used in the Payment model mapping to destination ISO20022 configuration.
 
 For more information about Electronic reporting, refer to [Electronic reporting overview](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+
+## Additional resources
+- [Create and export vendor payments using ISO20022 payment format](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
+- [Import ISO20022 credit transfer configuration](./tasks/import-iso20022-credit-transfer-configuration.md)
+- [Import ISO20022 direct debit configuration](./tasks/import-iso20022-direct-debit-configuration.md)
+- [Set up company bank accounts for ISO20022 credit transfers](./tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)
+- [Set up company bank accounts for ISO20022 direct debits](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
+- [Set up customers and customer bank accounts for ISO20022 direct debits](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)
+- [Set up method of payment for ISO20022 credit transfer](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
+- [Set up method of payment for ISO20022 direct debit](./tasks/setup-method-payment-iso20022-direct-debit.md)
+- [Set up vendors and vendor bank accounts for ISO20022 credit transfers](./tasks/set-up-vendor-iso20022-credit-transfers.md)

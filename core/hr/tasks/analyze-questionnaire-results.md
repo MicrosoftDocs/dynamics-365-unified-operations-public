@@ -3,7 +3,7 @@
  
 title: Analyze questionnaire results
 description: Questionnaire statistics can be used to calculate averages, totals, and percentages based on a set of demographic data. 
-author: twheeloc
+author: ShielaSogge
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: shielas
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

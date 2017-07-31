@@ -111,10 +111,10 @@ To preview and print a report based on advance holders’ transactions, click **
 
 
 
-See also
---------
+## See also
 
-[Advance holder transactions](emea-advance-holders-transactions.md)
+- [Advance holder transactions](emea-advance-holders-transactions.md)
+- [Advance payment to an employee (Eastern Europe)](./tasks/advance-payment-employee.md)
 
 
 

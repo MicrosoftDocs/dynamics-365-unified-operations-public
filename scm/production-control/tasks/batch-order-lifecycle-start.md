@@ -30,16 +30,11 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure takes you through the first part of the life cycle of a batch order.
-
-From creation, cost estimation, and over production job scheduling to the actual start of a batch order.
-
-
-
-The demo data company used to create this procedure is USMF. 
-
-
-
+This procedure takes you through the first part of the life cycle of a batch order.
+From creation, cost estimation, and over production job scheduling to the actual start of a batch order.
+
+The demo data company used to create this procedure is USMF. 
+
 The prerequisites for running the procedure with another dataset are a released product with an active formula and route version.
 
 

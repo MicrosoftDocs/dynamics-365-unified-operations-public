@@ -84,6 +84,7 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 | Release           | Build number   | Availability  | Expiration date   |
 |-------------------|----------------|---------------|-------------------|
+| Platform update 9 | 7.0.4612.16224 | July 2017     | July 2018     |
 | Platform update 8 | 7.0.4565.16212 | June 2017     | June 2018     |
 | Platform update 7 | 7.0.4542.16189 | May 2017      | May 2018      |
 | Platform update 6 | 7.0.4509.16180 | April 2017    | April 2018    |
@@ -109,6 +110,7 @@ The following table provides information about the recent releases of the applic
 
 |                       | **Dynamics AX 7.0** | **Dynamics AX application 7.0.1** | **Dynamics 365 for Operations (1611)** | **Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update** |
 |-----------------------|---------------------|-----------------------------------|----------------------------------------|----------------------------------------------------------------------------------|
+| **Platform update 9** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
 | **Platform update 8** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
 | **Platform update 7** | Compatible          | Compatible                        | Compatible                             |                                                                                  |
 | **Platform update 6** | Compatible          | Compatible                        | Compatible                             |                                                                                  |

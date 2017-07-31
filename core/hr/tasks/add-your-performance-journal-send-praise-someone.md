@@ -3,7 +3,7 @@
  
 title: Add to your performance journal and send praise to someone
 description: The performance journal holds information that relates to how you met your goals or how you performed during a period. 
-author: mikefalkner
+author: ShielaSogge
 manager: AnnBe 
 ms.date: 10/13/2016
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: shielas
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

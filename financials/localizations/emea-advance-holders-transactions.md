@@ -66,5 +66,7 @@ When you settle advance holder balances via cash, journal entries for closing th
 
 After the slip journal is processed, if the amount in the **Amount to be transferred** field was negative, a disbursement slip is generated for the advance holder when the balances are closed. If the amount in the **Amount to be transferred** field was positive, a reimbursement slip is generated.
 
+## Additional resources
 
+- [Advance payment to an employee (Eastern Europe)](./tasks/advance-payment-employee.md)
 
