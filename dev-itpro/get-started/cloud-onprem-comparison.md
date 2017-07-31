@@ -261,7 +261,8 @@ The following table shows whether each feature is available in:
 | | Browser client - Support for Right to Left languages| Yes | Yes |
 | | Browser framework - PowerApps Host control| Yes | Yes |
 
-
+| Others | | | |
+|---|---|---|---|
 | | Intercompany order processing: ATP and direct shipment| Yes | ? |
 | | Intercompany revenue and cost transactions| Yes | ? |
 | | Item and warehouse migration process to use advanced warehouse management| Yes | Yes |
