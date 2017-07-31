@@ -811,11 +811,11 @@ The virtual companies feature is no longer supported in Dynamics AX. The virtual
 </ul></td>
 </tr>
 <tr class="even">
-<td>Replaced by another feature?</td>
+<td><b>Replaced by another feature?</b></td>
 <td>Global tables can be used to make tables accessible from all companies. Currently, there is no replacement.</td>
 </tr>
 <tr class="odd">
-<td>Modules affected</td>
+<td><b>Modules affected</b></td>
 <td>Not applicable</td>
 </tr>
 </tbody>
@@ -825,9 +825,9 @@ The virtual companies feature is no longer supported in Dynamics AX. The virtual
 
 |                              |                                                                                                                                                                                                                                                                                                             |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reason for deprecation       | The Warehouse management II solution (WMS II) that was available in the **Inventory management** module duplicates functionality that is in the **Warehouse management** module that was released in Microsoft Dynamics AX 2012 R3.                                                                         |
-| Replaced by another feature? | The **Warehouse management** module that was released in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8, and Dynamics AX 2012 R3 CU9 replaces the Warehouse management II features. The new module has more advanced features and more flexible warehouse management processes than Warehouse management II. |
-| Modules affected             | Inventory management, Sales and marketing, Procurement and sourcing                                                                                                                                                                                                                                         |
+| **Reason for deprecation**       | The Warehouse management II solution (WMS II) that was available in the **Inventory management** module duplicates functionality that is in the **Warehouse management** module that was released in Microsoft Dynamics AX 2012 R3.                                                                         |
+| **Replaced by another feature?** | The **Warehouse management** module that was released in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8, and Dynamics AX 2012 R3 CU9 replaces the Warehouse management II features. The new module has more advanced features and more flexible warehouse management processes than Warehouse management II. |
+| **Modules affected**             | Inventory management, Sales and marketing, Procurement and sourcing                                                                                                                                                                                                                                         |
 
 ### Worker reminders in Human Resources
 
