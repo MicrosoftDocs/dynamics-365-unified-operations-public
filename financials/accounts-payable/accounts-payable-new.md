@@ -51,9 +51,9 @@ deliveries and destinations, promissory notes, and other types of Accounts payab
 
 [Configure Accounts payable](accounts-payable-overview.md)
 
-[Accounting distributions and subledger journal entries for vendor invoices](accounting-distributions-subledger-journal-entries-vendor-invoices.md 
+[Accounting distributions and subledger journal entries for vendor invoices](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
 
-[Foreign currency revaluation for Accounts payable and Accounts receivable](\financials\unified-operations\cash-bank-managment\foreign-currency-revaluation-accounts-payable-accounts-receivable.md
+[Foreign currency revaluation for Accounts payable and Accounts receivable](\financials\unified-operations\cash-bank-managment\foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
 
 ## Configure vendor invoices
 
