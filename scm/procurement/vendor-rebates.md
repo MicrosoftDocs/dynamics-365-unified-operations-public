@@ -34,84 +34,33 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 Vendor rebates help companies better manage their supplier rebate programs by automating tasks that are involved in administering, 
 tracking, and claiming rebates that are earned.
 
-This topic provides examples and a broad overview of the vendor rebates. In these examples, several types of users will perform 
-their respective tasks:
+This article provides a broad overview of  the most common tasks that you’d want to accomplish when working with vendor rebates. The overview includes the following tasks:
 
-● Registering details of the negotiated rebate agreements with individual vendors or a group of vendors
+● Review details of a rebate agreement
 
-● Running the negotiated contracts through ongoing purchases and generating rebate claims
+●	Identify orders that qualify for rebates and generate rebate claims
 
-● Approving and processing the generated claims, so that they can be passed on to Accounts payable (A/P) for collection
+●	Review and approve claims
 
-# Examples overview
+## Review details of a vendor rebate agreement
+A vendor rebate agreement is a record of a contract with a vendor that specifies the negotiated terms and conditions under which the company qualifies for a monetary reward in return for achieving preset purchase targets. Vendor rebate agreements are recorded on the Rebate agreements page.
 
-## Example - Review a vendor rebate agreement
-
-This example walks you through a vendor rebate agreement. A vendor rebate agreement is a record of a contract with a vendor 
-that specifies the negotiated terms and conditions under which the company qualifies for a monetary reward in return for achieving 
-preset purchase targets.
-
-## Example – Purchase products that qualify for a rebate and generate a rebate claim
-
-When purchase orders are placed with a vendor that the company has a rebate agreement with, if those orders qualify for the rebate, 
-the program identifies the future vendor credit payments and generates claims for every order line that is invoiced. This example 
-illustrates this automatic process, and it also explains how to review the expected rebates and see the impact of those rebates
-on the product’s cost and profit margin.
-
-## Example – Process the claim and pass it as receivable to A/P
-
-Generated rebate claims represent the future payments that can be expected from the vendor. Before a credit note is issued to the
-vendor, the agreement owner typically wants to review the claims and approve them. In this example, after the claims have been approved,
-the A/P administrator processes them. As a result, a credit memo (vendor invoice) for the rebate claim amount is automatically created 
-and posted. The credit is then added to the vendor balance, and the A/P team can include it in the regular settlement process.
-
-### Prerequisites
-
-The following examples use the USMF demo company. The following parameters are set on the **Procurement and sourcing parameters** page:
-
-● On the **Prices** tab, the **Enable price details** option is set to **Yes**.
-
-● On the **Margin alerts** tab, the **Enable margin alert** option is set to **Yes**.
-
-### Example – Review a vendor rebate agreement
-
-Let’s start by becoming familiar with how the purchase manager has captured the company’s new rebate agreement with vendor US-101, Fabrikam Electronics, which is a supplier of a product range within TV sets.
-
-**●** Click **Procurement and sourcing** \> **Vendor rebates** \> **Rebate agreements**.
-
-Currently, there is one agreement, which qualifies for a rebate when it makes purchases that meet these conditions:
-
-● Item T0020, TelevisionD30042", is purchased.
-● The item is purchased from vendor US-101.
-● A minimum quantity of 10 units is purchased.
+To open the **Rebate agreements** page, click **Procurement and sourcing** \> **Vendor rebates** \> **Rebate agreements**.
 
 ![Purchase agreement](media/purchase-agreement.PNG)
 
-Several fields provide more detail about the agreement’s conditions as they were negotiated with the vendor:
+On the **Rebate agreements** page, you can view details about the negotiated conditions of a vendor agreement:
 
-● In the **Cumulate purchase by** field, **Invoice** indicates that a rebate claim will be determined every time that a purchase order line is invoiced.Purchases don’t have to be accumulated over a period.
+-   The **Cumulate purchase by** field, **Invoice** indicates that a rebate claim will be determined every time that a purchase order line is invoiced. The calculation of the rebate claim amount can also be set to depend on a period (of week, month, year, lifetime or a customized period).
 
-To make the calculation of the rebate claim amount depend on the period, the user can select one of the other available options:
+-   The **Rebate program accrual account** and **Rebate program expense account** fields specify account numbers that will receive accrued rebate amounts during the intermediate stage between approval and processing.
 
--   **Week**
--   **Month**
--   **Year**
--   **Lifetime**
--   **Customized period**
+-   In the **Rebate line break type** field, the options **Quantity** and **Amount** indicate that the rebates are either volume-based or amount-based.
 
-● The **Rebate program accrual account** and **Rebate program expense account** fields must specify account numbers that will receive accrued rebate amounts during the intermediate stage between approval and processing.
+-   On the agreement’s **Lines** FastTab, you can see how different quantity tiers can be set up to grant different rebates. For example, in the illustration, the **From value** and the **To value** fields indicate that a product quantity between 10 and 19 units will qualify for a rebate of USD 15 per unit.
 
-● In the **Rebate line break type** field, **Quantity** indicates that the rebates are volume-based. **Amount** would indicate that the rebates are amount-based.
+In the **Workflow approval status** field, the value **Approved** indicates that the agreement can be applied to purchase orders that meet the agreement’s conditions.
 
-On the agreement’s **Lines** FastTab, the two lines specify the quantity tiers that grant different rebates, as follows:
-
-**●** Purchases for product quantities between 10 and 19 units qualify for a rebate of USD 15 per unit.
-
-**●** Purchases for quantities of 20 units and more qualify for a rebate of USD 30 per unit.
-
-![Agreement status](media/Agreement-status.jpg)
-
-Notice that the agreement status is **Approved**. This status indicates that the agreement can be applied to purchase orders that meet the agreement’s conditions.
 
 ### Example – Purchase products that qualify for a rebate and generate a rebate claim
 
@@ -191,3 +140,10 @@ The process for handling vendor rebates involves multiple manual tracking tasks 
  - Accruing the expected receivable and interim gain in the general ledger
  - Updating the vendor balance and the income statement with the allowance that is due
 
+### Prerequisites
+
+The following examples use the USMF demo company. The following parameters are set on the **Procurement and sourcing parameters** page:
+
+● On the **Prices** tab, the **Enable price details** option is set to **Yes**.
+
+● On the **Margin alerts** tab, the **Enable margin alert** option is set to **Yes**.
