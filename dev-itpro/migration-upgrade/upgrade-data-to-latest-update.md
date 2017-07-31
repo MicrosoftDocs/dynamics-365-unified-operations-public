@@ -43,7 +43,7 @@ This topic describes how to upgrade an older source database to the latest Fina
 
 > [!IMPORTANT]
 > You do NOT need to upgrade your database if you are updating to the latest platform of Microsoft Dynamics 365 for Finance and Operations. Platform updates are backward compatible. This article only applies to the process of upgrading between releases of Finance and Operations applications, for example, upgrading from Release 1611 (November 2016) to the July 2017 release.
-> This process does not apply to the upgrade of data in Management Reporter or the Retail channel database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
+> This process does not apply to the upgrade of data in Management Reporter database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 
 ## Before you begin
 1.  You must have a functional one-box demo or development environment that is already successfully running with the latest Finance and Operations update.
