@@ -50,6 +50,9 @@ The following table shows whether each feature is available in:
 | | Embedded Practice manager Power BI content| Yes | Yes |
 | | Entity store for high volume near real-time Power BI integration| Yes | ? |
 | | Fixed asset management workspace and embedded Power BI content| Yes | No |
+| | Budgeting
+| | Maintain carry-forward status| Yes | Yes |
+
 | Cost accounting| | | |
 | | Cost accounting| Yes | ? |
 | | Cost accounting – Cross legal entities | Yes | Yes |
@@ -88,6 +91,8 @@ The following table shows whether each feature is available in:
 | | Development tooling - Customize and add your own field descriptions| Yes | Yes |
 | | Development tooling - New tabbed workspace pattern| Yes | Yes |
 | Document management| | | |
+| | Manage attachments| Yes | No |
+
 | Electronic reporting| | | |
 | Expense management| | | |
 | | Expense management| Yes | ? |
@@ -128,7 +133,6 @@ The following table shows whether each feature is available in:
 | | Fixed assets| Yes | ? |
 | | Funding source can be selected for a fee journal line| Yes | ? |
 | | Funding sources can be selected for fee journal lines| Yes | ? |
-| | General ledger| Yes | ? |
 | | Late selection option for invoice proposals in a batch| Yes | ? |
 | | Late selection option when posting invoice proposals in a batch| Yes | ? |
 | | Vendor collaboration| Yes | Hybrid |
@@ -138,6 +142,9 @@ The following table shows whether each feature is available in:
 | | Credit and collections| Yes | ? |
 | | Credit and collections management Power BI| Yes | Hybrid |
 | | Direct deposit| Yes | No |
+| General ledger | | | |
+| | Intercompany revenue and cost transactions| Yes | ? |
+| | General ledger| Yes | ? |
 | Help| | | |
 | | Help: Content moving to docs.microsoft.com from the Dynamics 365 for Operations Help Wiki| Yes | No |
 | Human capital management| | | |
@@ -177,6 +184,9 @@ The following table shows whether each feature is available in:
 | | Global coverage - Languages| Yes | No |
 | | Global coverage - Retail| Yes | No |
 | | Country/region localizations & languages| Yes | ? |
+| | Localization configurations| Yes | ? |
+| | Regulatory updates| Yes | ? |
+| | Dynamics Translation Service| Yes | Yes |
 | Manufacturing| | | |
 | Master planning and forecasting| | | |
 | Mobile applications, platform, and framework | | | |
@@ -198,6 +208,7 @@ The following table shows whether each feature is available in:
 | Personalization| | | |
 | Planning and scheduling| | | |
 | Procurement and sourcing| | | |
+| | Intercompany order processing: ATP and direct shipment| Yes | ? |
 | Product information management | | | |
 | | Enhancements to the bill of materials functionality| Yes | ? |
 | Product master data| | | |
@@ -250,6 +261,12 @@ The following table shows whether each feature is available in:
 | | Warehousing Power BI reports| Yes | No |
 | | Batch and license plate confirmation | Yes | Yes |
 | | Build your own data warehouse and incrementally export entities| Yes | ? |
+| | Item and warehouse migration process to use advanced warehouse management| Yes | Yes |
+| | Movement of inventory with associated work in Warehouse management| Yes | Yes |
+| | Piece picking confirmation| Yes | Yes |
+| | Product work confirmation for cluster picking| Yes | Yes |
+| | Production output location added to the resource group member| Yes | Yes |
+
 | Web/browser client | | | |
 | | Browser client - Ability to model toolbar actions in the overflow menu| Yes | Yes |
 | | Browser client - Access to Support via the Help & Support menu| Yes | Yes |
