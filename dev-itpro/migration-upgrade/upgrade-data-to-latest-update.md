@@ -42,8 +42,8 @@ In some Tier 2 or higher environments the Microsoft Service Engineering Team (DS
 This topic describes how to upgrade an older source database to the latest Finance and Operations update. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md). 
 
 > [!IMPORTANT]
-> You do NOT need to upgrade your database if you are updating to the latest platform of Microsoft Dynamics 365 for Finance and Operations. Platform updates are backward compatible. This article only applies to the process of upgrading between releases of Finance and Operations applications. For example, upgrading from Release 1611 (November 2016) to the July 2017 release.
-> This process does not apply to the upgrade of data in Management Reporter or the Retail channel database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
+> You do NOT need to upgrade your database if you are updating to the latest platform of Microsoft Dynamics 365 for Finance and Operations. Platform updates are backward compatible. This article only applies to the process of upgrading between releases of Finance and Operations applications, for example, upgrading from Release 1611 (November 2016) to the July 2017 release.
+> This process does not apply to the upgrade of data in Management Reporter database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 
 ## Before you begin
 1.  You must have a functional one-box demo or development environment that is already successfully running with the latest Finance and Operations update.
@@ -56,12 +56,16 @@ This topic describes how to upgrade an older source database to the latest Fina
     - If upgrading from the November 2016 release (also known as 1611 or 7.1) 7.1.1541.3036: Hotfix KB number 4023686 "Could not find source system version information" error when you upgrade to the latest Application Release 
     - If upgrading from the July 2017 release (also known as 7.2) 7.2.11792.56024: No additional fix is needed for this issue.
 
+ > [!IMPORTANT]
+ > If you have a golden database environment, and you have installed the application fixes from Step 3 and checked them into Visual Studio Team Services, ensure that the latest code is synchronized to your golden database environment and that a full database synchronization has been run. A full database synchronization is required because this step populates a new table that is used when upgrading the golden database.
+
 4.  If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required because the demo data contains bad records for some kernel X++ classes.
 
     delete from classidtable where id >= 0xf000 and id <= 0xffff
 
 ## Download the MinorVersionDataUpgrade.zip script
 To obtain the latest MinorVersionDataUpgrade.zip package from your target environment that is running the latest Finance and Operations update, download the latest binary updates from Lifecycle Services (LCS).
+
 > [!NOTE]
 > If you are upgrading from AX 2012 the data upgrade package is called MajorVersionDataUpgradeWithRetail.zip.
 > In earlier versions (prior to Platform update 4), the package was named DataUpgrade.zip. 
