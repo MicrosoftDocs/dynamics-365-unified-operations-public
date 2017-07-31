@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Features not yet implemented in on-premises deployments
+title: Features not implemented in on-premises deployments
 description: This topic lists features that have not been implemented in on-premises deployments.
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,11 +28,14 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Features not yet implemented in on-premises deployments
+# Features not implemented in on-premises deployments
 
 [!include[banner](../includes/banner.md)]
 
-The following features have not been implemented in on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition. These features have not been implemented, but aren't deprecated.
+This topic lists features that have not been implemented in on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition. Some of the features simply haven't been implemented yet, other are not intended for use with on-premises deployments and will not be implemented.
+
+# Features not implemented yet
+The following features have not been implemented yet in on-premises deployments. These features have not been deprecated.
 
 | **Feature**                                                      | **Description**                                                                                                                                                                          |
 |------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -50,4 +53,29 @@ The following features have not been implemented in on-premises deployments of D
 |Trace Parser and PerfTimer |These tools are not working or have limited functionality for this release. These features will be implemented in a future release. |
 |SSRS scale out  |Currently SQL Server Reporting Services (SSRS) does not support scaling out. This feature will be added in an upcoming release. |
 |Telemetry  |Currently no telemetry is transferred into the cloud. In a future update we will start transferring telemetry data into the cloud. |
+
+# Features not intended for use with on-premises deployments
+The following features are not intended for use in on-premises deployments. There are no plans to implement these features in on-premises deployments.
+
+### SSRS Report Viewer control
+
+This feature was used to interact with HTML formatted reports in the Finance and Operations
+web client.
+
+|                                  |  |
+|----------------------------------|--|
+| **Reason for deprecation**       | SQL Reporting Services (SSRS) does not support a report viewer control that is compatible with the on-premises web client.      |
+| **Replaced by another feature?** | Reports are rendered as PDF documents by the on-premises service. Use extensions to enable embedded drill-thru links in application reports. |
+| **Modules affected**             | All    |
+
+### Document Routing Agent
+
+The Document Routing Agent client is used as a service gateway to connect from the cloud to domain-authenticated network printers.
+
+|                                  |  |
+|----------------------------------|--|
+| **Reason for deprecation**       | On-premises deployments are hosted on domain authenticated servers. This offers secure, direct access to network printer devices. |
+| **Replaced by another feature?** | This component is not necessary for on-premises deployments.|
+| **Modules affected**             | None               |
+
 
