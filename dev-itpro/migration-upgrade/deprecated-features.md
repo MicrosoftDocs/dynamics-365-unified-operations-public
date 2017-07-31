@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 6
 
 This topic describes features that have been removed, or that are planned for removal from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-## Features that have been deprecated in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update with Platform update 8
+## Features that have been deprecated in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update with platform update 8
 
 ### Warehouse mobile devices portal
 
