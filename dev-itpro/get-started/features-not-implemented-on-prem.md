@@ -56,7 +56,7 @@ The following features have not been implemented yet in on-premises deployments.
 |SSRS scale out  |Currently SQL Server Reporting Services (SSRS) does not support scaling out. This feature will be added in an upcoming release. |
 |Telemetry  |Currently no telemetry is transferred into the cloud. In a future update we will start transferring telemetry data into the cloud. |
 
-# Features not intended for use with on-premises deployments
+# Features not intended for use in on-premises deployments
 The following features are not intended for use in on-premises deployments. There are no plans to implement these features in on-premises deployments.
 
 ### SSRS Report Viewer control
