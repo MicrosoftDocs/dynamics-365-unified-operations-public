@@ -111,6 +111,10 @@ type a payment uses.
 
 [Centralized payments for Accounts payable](centralized-payments-accounts-payable.md)
 
+## Settlements
+
+The following topics provide information about settlements. Settlement is the process of settling payments with invoices. 
+
 [Configure settlement](configure-settlement.md)
 
 [Settle a partial vendor payment before the discount date](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
