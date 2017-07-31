@@ -34,7 +34,6 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include[banner](../includes/banner.md)]
 
-
 This topic provides an overview of Accounts payable. 
 
 You can enter vendor invoices manually or receive them electronically through a data entity. After the invoices are entered or received,
@@ -128,4 +127,9 @@ The following topics provide information about settlements. Settlement is the pr
 [Single voucher with multiple customer or vendor records](single-voucher-multiple-customer-vendor-records.md)
 
 
+Looking for additional information about Microsoft Dynamics 365 for Finance and Operations, Enterprise edition? 
+Check out the new, short how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+The videos are arranged in a logical order, to guide you from simple to complex topics. You can find the videos by searching on YouTube for the following playlists: 
+•	Dynamics 365 for Operations: Quick Video Guides – Development - This playlist contains 3 videos.
+•	Dynamics 365 for Operations: Quick Video Guides – Lifecycle Services - This playlist contains 11 videos.
 
