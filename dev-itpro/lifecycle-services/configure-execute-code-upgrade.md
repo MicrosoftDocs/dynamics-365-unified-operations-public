@@ -43,6 +43,14 @@ Overview
 The code upgrade tool operates by connecting to Visual Studio Team Services (VSTS), locating your Trunk\\Main branch, branching to a new branch which will be named as Releases\\\<version number\>, and then performing the code upgrade there. After this process is complete you can synchronize your Dynamics 365 for Operation developer environment to this new branch under Releases\\\<version number\> and resolve conflicts. When you have compiled and tested your upgraded code you can merge the new branch back into Trunk\\Main, using source control explorer in Visual Studio and the process is complete.
 
 ## Process
+### Create the Trunk\\Main folder structure
+
+For the code upgrade service to recognise your source code, the folder structure must conform to a strict pattern, the correct structure is: 
+ - For code itself: ..\\<VSTS project name>\\Trunk\\Main\\Metadata
+ - For Visual Studio projects: ..\\<VSTS project name>\\Trunk\\Main\\Metadata
+ The folder names here are case sensitive - i.e. you must use Main and not MAIN or the code upgrade service will not recognise it.
+ To create new folders in VSTS you can create those folders locally and then check them into VSTS.
+
 ### To create a personal access token
 
 To connect to a VSTS project, LCS is authenticated using a personal access token. Use the following steps to create a personal access token in VSTS. If you have already configured your LCS project to connect to your VSTS project, you can skip this section.
