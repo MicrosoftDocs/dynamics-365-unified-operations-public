@@ -56,8 +56,11 @@ This topic describes how to upgrade an older source database to the latest Fina
     - If upgrading from the November 2016 release (also known as 1611 or 7.1) 7.1.1541.3036: Hotfix KB number 4023686 "Could not find source system version information" error when you upgrade to the latest Application Release 
     - If upgrading from the July 2017 release (also known as 7.2) 7.2.11792.56024: No additional fix is needed for this issue.
 
- > [!IMPORTANT]
- > If you have a golden database environment, and you have installed the application fixes from Step 3 and checked them into Visual Studio Team Services, ensure that the latest code is synchronized to your golden database environment and that a full database synchronization has been run. A full database synchronization is required because this step populates a new table that is used when upgrading the golden database.
+In any onebox environments (especially important for your golden database environment) after installing the application fixes from Step 3 above, ensure that a full database synchronization is run. A full database synchronization is required because this step populates a table (SysSetupLog) that is used when upgrading the database. Running the database synchronize from Visual Studio is not suitable for this as it does not trigger the SysSetup interface. To do this run the following command from an Administrator command prompt:
+
+> cd J:\\AosService\\WebRoot\\bin>
+>
+> Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\\AosService\\PackagesLocalDirectory" -metadatadir J:\\AosService\\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
 
 4.  If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required because the demo data contains bad records for some kernel X++ classes.
 
