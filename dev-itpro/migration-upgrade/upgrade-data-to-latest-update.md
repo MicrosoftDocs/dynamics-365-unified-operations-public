@@ -136,7 +136,7 @@ This step is required if you're upgrading a database from the February 2016 rele
 1.  Install the deployable package from the C:\\Temp\\DataUpgrade folder (the location that you extracted to earlier). Use the instructions in [Install a deployable package](../deployment/install-deployable-package.md).
 2.  Restore a backup of the source database to your one-box demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. 
 
-    > [!NOTE]]
+    > [!NOTE]
     > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For details about how to download and use AzCopy to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
 
 3.  Run the runbook file from the deployable package until you reach Step 4: GlobalBackup.
@@ -379,16 +379,19 @@ If KB number 3170386 isn't installed, you will receive the following error messa
 
 > GlobalUpdate script for service model: AOSService on machine …. Etc …. UpgradeServiceHelper::WaitForDataUpgradeToComplete(Object\[\]… The step failed
 
-This error is caused by a failure in the pre-sync or the post-sync substep of the data upgrade. You can use the following steps to determine which substep failed and the details of the failure. **Note:** You can't rerun the failed runbook step until the pre-sync or post-sync substep has been manually completed and the AutoDataUpgrade.config file has been updated to skip the substeps that have already been run.
+This error is caused by a failure in the pre-sync or the post-sync substep of the data upgrade. You can use the following steps to determine which substep failed and the details of the failure. 
+
+> [!NOTE]
+> You can't rerun the failed runbook step until the pre-sync or post-sync substep has been manually completed and the AutoDataUpgrade.config file has been updated to skip the substeps that have already been run.
 
 1.  In File Explorer, in the **DataUpgradeAosServiceScripts** folder, sort by descending order of date modified, and then look at the file at the top of the list to determine which substep failed.
     -   If the top file is named dbUpgrade*PreSync*Monitor.error.log, the pre-sync substep failed.
     -   If the top file is named dbUpgrade*PostSync*Monitor.error.log, the post-sync substep failed.
 
 2.  In Management Studio, run the following **SELECT** statement.
-```
+    ```
         SELECT * FROM RELEASEUPDATELOG
-```
+    ```
     The second-to-last record in the result set will have the errors and call stacks for all the failures.
 
 ### DMF errors
