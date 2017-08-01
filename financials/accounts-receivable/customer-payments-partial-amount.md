@@ -5,7 +5,7 @@ title: Customer payments for a partial amount
 description: Sometimes, customers make a payment that is less than the amount of an invoice. This article describes the various options for handling this situation. The options that are available to you depend on your business requirements and configuration.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -65,4 +65,4 @@ When customers make a payment, there might be a very small amount that must sti
 Customers might make a partial payment where the remaining amount won't be paid but is greater than the underpayment amount that is specified on the **Account payable parameters** page. If you want to mark the invoice as fully settled, you can use the **Full settlement** option on the **Settle transaction** page. (You can enable the full settlement functionality by using a configuration key.) For example, an invoice is posted for 1,000.00, and the customer makes a payment of 990.00. You've agreed that the customer doesn't have to pay the remaining 10.00. After you mark the invoice for settlement, you can also mark select **Full settlement**. The invoice will then be considered fully settled. The 10.00 difference is posted to a cash discount account as an additional cash discount amount.
 
 
-For more information, see [Deposit customer payments](deposit-customer-payments.md).
+For more information, see [Deposit customer payments](tasks/deposit-customer-payments.md).
