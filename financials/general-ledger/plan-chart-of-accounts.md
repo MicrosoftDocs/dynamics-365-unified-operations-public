@@ -49,12 +49,12 @@ Here are some of the factors that you must consider when you plan the structure 
 -   The reporting requirements of your legal entity
 -   The degree of specification that is required, both for both external organizations and for your organization
 
-Create the chart of accounts on the **Chart of accounts** page. Main accounts can be created from the **Chart of accounts** page or the **Main accounts** page. Your main accounts shouldn't use any special characters that are used as chart of accounts delimiters. If you do have a special character that is the same as your chart of accounts delimiter, you may experience instability, or the need to always use lookups or the flyout when entering account and dimension combinations. For more information, see [Create a main account](create-account-structures.md).
+Create the chart of accounts on the **Chart of accounts** page. Main accounts can be created from the **Chart of accounts** page or the **Main accounts** page. Your main accounts shouldn't use any special characters that are used as chart of accounts delimiters. If you do have a special character that is the same as your chart of accounts delimiter, you may experience instability, or the need to always use lookups or the flyout when entering account and dimension combinations. For more information, see [Create a main account](tasks/create-account-structures.md).
 
 
 It's a good idea to link the main accounts to main account categories, so that you can take advantage of the default financial reports without having to make any modifications. Therefore, you can more quickly and easily design and maintain reports. 
 
-Use the **Configure account structures** page to create account structures. Account structures define valid combinations. The combinations, together with main accounts, form a chart of accounts.  For more information, see [Create account structures](create-main-account.md).
+Use the **Configure account structures** page to create account structures. Account structures define valid combinations. The combinations, together with main accounts, form a chart of accounts.  For more information, see [Create account structures](tasks/create-main-account.md).
 
 **Legal entity overrides** 
 
@@ -62,7 +62,7 @@ Not all main accounts are valid for all legal entities and some may only be rele
 
 For more information, see the following topics:
 [Financial dimensions](financial-dimensions.md)
-[Create and assign advanced rule structures](create-assign-advanced-rule-structures.md)
+[Create and assign advanced rule structures](tasks/create-assign-advanced-rule-structures.md)
 
 
 
