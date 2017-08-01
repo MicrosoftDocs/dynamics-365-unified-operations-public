@@ -45,7 +45,7 @@ The code upgrade tool operates by connecting to Visual Studio Team Services (VST
 ## Process
 ### Create the Trunk\\Main folder structure
 
-For the code upgrade service to recognise your source code, the folder structure must conform to the following strict pattern.  the correct structure is: 
+For the code upgrade service to recognise your source code, the folder structure must conform to the following strict pattern. The correct structure is: 
  - For code itself: ..\\\<VSTS project name>\\Trunk\\Main\\Metadata
  - For Visual Studio projects: ..\\\<VSTS project name>\\Trunk\\Main\\Metadata
  
