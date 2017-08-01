@@ -5,7 +5,7 @@ title: Close the general ledger at period end
 description: This topic describes the tasks that are typically completed when performing a period closing for General ledger. 
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,8 +50,13 @@ In General ledger, you can complete closing procedures for a period or a year. C
 -   Generate period-end financial statements by using Financial reporting.
 -   Set ledger periods to **On hold**, so that no further posting occurs. You can also restrict a period to a specific user group while period-end activities are occurring, for better control. It's not a good idea to set periods to **Permanently closed**, because you can't reopen a period that has been closed.
 
-The Financial period close workspace can be used to organize and track the tasks required for various period end processes. Refer to the [Financial period close workspace](financial-period-close-workspace.md) and [Year end close](Year-end-close.md) topics for more information. 
+The Financial period close workspace can be used to organize and track the tasks required for various period end processes. 
 
+
+For more information see:
+- [Financial period close workspace](financial-period-close-workspace.md) 
+- [Year end close](Year-end-close.md) topics for more information. 
+- [Mass financial period close](mass-financial-period-close.md)
 
 
 
