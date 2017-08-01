@@ -67,7 +67,7 @@ This topic describes how to upgrade an older source database to the latest Fina
     - KB 4035399
 
 
-## Download the data upgrade deployable package script
+## Download the latest data upgrade deployable package
 To obtain the latest data upgrade deployable package for your target environment that is running the latest Finance and Operations update, download the latest binary updates from Lifecycle Services (LCS).
 
 1.  In LCS, in the **Environments** section, click your target Finance and Operations environment, scroll to the bottom of the page, and then click the **All binary updates** tile. 
