@@ -258,8 +258,12 @@ Learn more about how to apply a deployable package in the topic [Apply a deploya
 ## Raise a service request to copy database
 To copy the golden database to a production environment, you must submit a service request of the **Other request** type through LCS to ask that Microsoft run the copy action. **Note:** You can't use a request of the **Database refresh request** type, because the request involves copying to a production environment.
 
-1.  In LCS, click the hamburger icon, and then click **Work items**. [![Work items](./media/lcsworkitemsmenu.png)](./media/lcsworkitemsmenu.png)
-2.  On the **Work items** page, click **Add**, and then click **Other request**. [![Other request](./media/lcsotherrequest.png)](./media/lcsotherrequest.png)
+1.  In LCS, click the hamburger icon, and then click **Work items**. 
+    [![Work items](./media/lcsworkitemsmenu.png)](./media/lcsworkitemsmenu.png)
+
+2.  On the **Work items** page, click **Add**, and then click **Other request**. 
+    [![Other request](./media/lcsotherrequest.png)](./media/lcsotherrequest.png)
+    
 3.  In the **Other requests** dialog box, follow these steps:
     1.  In the **Environment name** field, select the production environment.
     2.  Set the **Preferred downtime start date** and **Preferred downtime end date** fields. The end date must be at least one hour after the start date. Submit your request at least 24 hours before your preferred downtime window to help guarantee that resources are available to run the request.
@@ -298,7 +302,13 @@ In the Finance and Operations client, enter the values that you documented for t
 ## Known issues and limitations
 ### I can't download the Management Studio installer
 
-When you try to download the Management Studio installer, you might receive the following message: "Your current security settings do not allow this file to be downloaded." [![Error message](./media/securitysettingscannotdownload.png)](./media/securitysettingscannotdownload.png) To work around this issue, in **Internet Options**, on the **Security** tab, enable file downloads for the **Internet** zone, as shown in the following illustration. [![Enable file downloads](./media/securitysettingsfix.png)](./media/securitysettingsfix.png)
+When you try to download the Management Studio installer, you might receive the following message: "Your current security settings do not allow this file to be downloaded." 
+
+[![Error message](./media/securitysettingscannotdownload.png)](./media/securitysettingscannotdownload.png) 
+
+To work around this issue, in **Internet Options**, on the **Security** tab, enable file downloads for the **Internet** zone, as shown in the following illustration. 
+
+[![Enable file downloads](./media/securitysettingsfix.png)](./media/securitysettingsfix.png)
 
 ### Performance
 
