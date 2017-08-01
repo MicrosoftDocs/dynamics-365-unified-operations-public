@@ -3,9 +3,9 @@
 
 title: Consolidation account groups and additional consolidation accounts
 description: This topic provides information about consolidation account groups and additional consolidation accounts, and explains how they are used in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
-author: RobinARH
+author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,6 +55,8 @@ You can find additional consolidation accounts in the **Setup** area of the **Co
 
 When you've finished creating your consolidation account groups and additional consolidation accounts, you can select the group in the Consolidate online process.
 
+
+For more information, see [Create consolidation groups and additional consolidation accounts](../general-ledger/tasks/create-consolidation-groups.md). 
 
 
 

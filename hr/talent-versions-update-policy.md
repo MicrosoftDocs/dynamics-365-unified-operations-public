@@ -48,7 +48,7 @@ The Microsoft Dynamics 365 for Talent web application can run in any of the foll
 
 To find the latest release for each web browser, go to the software manufacturer’s website. 
 
-> [!NOTES]
+> [!NOTE]
 > *	To capture images that are generated from Task Recorder and include them in Microsoft Word documents, you must have a Chrome extension installed. 
 > *	The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications. The Workflow Editor ClickOnce application requires a 64-bit compatible operating system.
 > *	To preview PDF files, we recommend that you use modern browsers like Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
