@@ -5,7 +5,7 @@ title: General journal processing
 description: This articles describes capabilities in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition that can help make general journal processing easier, and that can also help guarantee that correct data is captured and internal control isn't compromised.  
 author: twheeloc
 manager: AnnBe
-ms.date: 04/25/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -85,7 +85,12 @@ The main account setup provides many options for general journal processing:
 
 Accounting structures and advanced rules structures are extremely important for guaranteeing that the data that is required for financial reporting and performance tracking is captured during general journal processing and any documentation. Accounting structures and advanced rules structures let you tailor the data entry experience. You can allow data entry only for financial dimensions that are relevant in each situation, and can also enforce the requirement that mandatory and correct data always be captured.
 
-For more information, see [Planning: Chart of accounts](plan-chart-of-accounts.md). 
-
+For more information, see the following topics:
+- [Planning: Chart of accounts](plan-chart-of-accounts.md). 
+- [Create advanced rules for journals](create-advanced-rules-journals.md)
+- [Create a journal entry using a template](create-journal-entry-template.md)
+- [Create and validate journals](create-validate-journals.md)
+- [Post periodic journals](post-periodic-journals.md)
+- [Process ledger allocation journal](process-ledger-allocation-journal.md)
 
 

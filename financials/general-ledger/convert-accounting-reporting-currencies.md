@@ -3,9 +3,9 @@
 
 title: Convert accounting or reporting currencies
 description: 
-author: RobinARH
+author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,8 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Convert accounting or reporting currencies
 
 [!include[banner](../includes/banner.md)]
-
-
 
 
 A company that must change its accounting currency or reporting currency has two options. The first option is to create a new company and start fresh. The second option is to run the accounting and reporting currency conversion process. This is a very long-running process that changes every transaction in the system. Some setup is also required before the process can be run.
@@ -82,5 +80,5 @@ After the currency conversion, you must generate all reconciliation reports agai
 
 When all ledger transaction journals have been deleted, you can journalize the ledger transactions. Click **General ledger** &gt; **Periodic** &gt; **Journals** &gt; **Journalizing**. You can revalue foreign currency amounts after the currency conversion, if revaluation is required. You revalue foreign currency amounts by selecting **Standard** in the **Method** field for the revaluation.
 
-
+For more information, see [Journalize posted journal entries](journalize-posted-journal-entries.md).
 
