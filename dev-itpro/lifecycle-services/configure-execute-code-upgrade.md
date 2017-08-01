@@ -45,11 +45,14 @@ The code upgrade tool operates by connecting to Visual Studio Team Services (VST
 ## Process
 ### Create the Trunk\\Main folder structure
 
-For the code upgrade service to recognise your source code, the folder structure must conform to a strict pattern, the correct structure is: 
+For the code upgrade service to recognise your source code, the folder structure must conform to the following strict pattern.  the correct structure is: 
  - For code itself: ..\\<VSTS project name>\\Trunk\\Main\\Metadata
  - For Visual Studio projects: ..\\<VSTS project name>\\Trunk\\Main\\Metadata
- The folder names here are case sensitive - i.e. you must use Main and not MAIN or the code upgrade service will not recognise it.
- To create new folders in VSTS you can create those folders locally and then check them into VSTS.
+ 
+ To create new folders in VSTS, create the folders locally and then check them into VSTS.
+ 
+ > [!NOTE]
+ > Folder names are case sensitive, that is, you must use Main and not MAIN, or the code upgrade service will not recognise the folder. 
 
 ### To create a personal access token
 
@@ -57,14 +60,18 @@ To connect to a VSTS project, LCS is authenticated using a personal access token
 
 1.  Sign in to visualstudio.com and locate your VSTS project.
 2.  In the top right corner, hover over your name, a menu appears, select **Security**.
-3.  Click **Add** to create a new personal access token, give it a name, and then enter the amount of time that you want the token to last for. Click **Create Token**. [![codeupgrademaketoken](./media/codeupgrademaketoken.png)](./media/codeupgrademaketoken.png)
+3.  Click **Add** to create a new personal access token, give it a name, and then enter the amount of time that you want the token to last for. Click **Create Token**. 
+[![codeupgrademaketoken](./media/codeupgrademaketoken.png)](./media/codeupgrademaketoken.png)
 4.  Copy the token to your clipboard. You will not be able to find the token details after this step is completed, so be sure that you have copied the token before navigating away from this page.
 
 ### Configure your Lifecycle Services project to connect to VSTS
 
-1.  In your LCS project, go to the **Project settings** tile, select **Visual Studio Team Services**, and then select the **Setup Visual Studio Team Services** button. This configuration is needed by many LCS tools, if you have already configured LCS to connect to your VSTS project, you can skip this section. [![lcs\_vsts\_setup](./media/lcs_vsts_setup.png)](./media/lcs_vsts_setup.png)
-2.  Enter the root URL for your VSTS account and the access token created earlier, and then click **Continue**.[![lcstoken](./media/lcstoken.png)](./media/lcstoken.png)
-3.  Select the project within your VSTS account that you want to connect to, and select **Continue**. [![lcs\_selectproject](./media/lcs_selectproject.png)](./media/lcs_selectproject.png)
+1.  In your LCS project, go to the **Project settings** tile, select **Visual Studio Team Services**, and then select the **Setup Visual Studio Team Services** button. This configuration is needed by many LCS tools, if you have already configured LCS to connect to your VSTS project, you can skip this section. 
+[![lcs\_vsts\_setup](./media/lcs_vsts_setup.png)](./media/lcs_vsts_setup.png)
+2.  Enter the root URL for your VSTS account and the access token created earlier, and then click **Continue**.
+[![lcstoken](./media/lcstoken.png)](./media/lcstoken.png)
+3.  Select the project within your VSTS account that you want to connect to, and select **Continue**. 
+[![lcs\_selectproject](./media/lcs_selectproject.png)](./media/lcs_selectproject.png)
 4.  On the **Review and save** page, click **Save**.
 
 ### Create an ax7.version file
