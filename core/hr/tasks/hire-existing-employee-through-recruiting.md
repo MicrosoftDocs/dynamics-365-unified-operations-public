@@ -20,7 +20,7 @@ ms.reviewer: rschloma
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
-ms.search.region: 
+ms.search.region: Global
 # ms.search.industry: 
 ms.author: rschloma
 ms.search.validFrom: 2016-06-30 
