@@ -3,9 +3,9 @@
 
 title: Configure the code upgrade service in Lifecycle Services
 description: This topic explains how to configure the <strong>Code upgrade </strong>tile in Lifecycle Services (LCS) to migrate your solution to the latest version of Finance and Operations.
-author: MargoC
+author: tariqbell
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
