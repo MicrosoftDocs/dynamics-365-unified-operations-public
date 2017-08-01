@@ -104,6 +104,6 @@ See also
 --------
 
 [Audit policy violations and cases](audit-policy-violations-cases.md)
-[Define audit policies for source documents](define-audit-policies-source-documents.md)
+[Define audit policies for source documents](tasks/define-audit-policies-source-documents.md)
 
 
