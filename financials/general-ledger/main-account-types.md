@@ -43,7 +43,7 @@ You must select a main account type when you create a main account in the Main a
 -   Total – These main accounts are used to add account intervals. Configure the Total main account type by using the Account interval page, which displays the total of the group balances for all account intervals. Access the Account interval page by click Totals on the General tab once you have selected a Total account type.
 -   Reporting – These main accounts are used for financial statement reporting for Brazil only.
 
-For more information, see [Set up main account categories](set-up-main-account-categories.md).
+For more information, see [Set up main account categories](tasks/set-up-main-account-categories.md).
 
 
 
