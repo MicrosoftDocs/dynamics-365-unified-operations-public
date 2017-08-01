@@ -5,7 +5,7 @@ title: Leave and absence management overview
 description: This topic provides an overview of the Leave and absence management module. This module offers a flexible framework for defining the absence management process. Leave and absence plans can be created to determine how employees accrue or are granted time off. 
 author: ryansand
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
