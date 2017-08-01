@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 78223
@@ -80,5 +80,5 @@ After the currency conversion, you must generate all reconciliation reports agai
 
 When all ledger transaction journals have been deleted, you can journalize the ledger transactions. Click **General ledger** &gt; **Periodic** &gt; **Journals** &gt; **Journalizing**. You can revalue foreign currency amounts after the currency conversion, if revaluation is required. You revalue foreign currency amounts by selecting **Standard** in the **Method** field for the revaluation.
 
-For more information, see [Journalize posted journal entries](journalize-posted-journal-entries.md).
+For more information, see [Journalize posted journal entries](tasks/journalize-posted-journal-entries.md).
 

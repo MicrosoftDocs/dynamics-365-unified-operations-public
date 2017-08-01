@@ -90,5 +90,5 @@ If any of the criteria are met, you can't delete the financial dimension.
 
 
 For more information, see the following topics:
-- [Define financial dimensions](define-financial-dimensions.md)
-- [Maintain financial dimension default templates](maintain-financial-dimension-default-templates.md)
+- [Define financial dimensions](tasks/define-financial-dimensions.md)
+- [Maintain financial dimension default templates](tasks/maintain-financial-dimension-default-templates.md)

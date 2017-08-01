@@ -87,10 +87,10 @@ Accounting structures and advanced rules structures are extremely important for 
 
 For more information, see the following topics:
 - [Planning: Chart of accounts](plan-chart-of-accounts.md). 
-- [Create advanced rules for journals](create-advanced-rules-journals.md)
-- [Create a journal entry using a template](create-journal-entry-template.md)
-- [Create and validate journals](create-validate-journals.md)
-- [Post periodic journals](post-periodic-journals.md)
-- [Process ledger allocation journal](process-ledger-allocation-journal.md)
+- [Create advanced rules for journals](tasks/create-advanced-rules-journals.md)
+- [Create a journal entry using a template](tasks/create-journal-entry-template.md)
+- [Create and validate journals](tasks/create-validate-journals.md)
+- [Post periodic journals](tasks/post-periodic-journals.md)
+- [Process ledger allocation journal](tasks/process-ledger-allocation-journal.md)
 
 
