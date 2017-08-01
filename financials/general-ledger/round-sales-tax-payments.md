@@ -70,8 +70,8 @@ The following table shows how an amount of 98,765.43 is rounded by using each ro
 
 For more information, see the following topics:
 - [Sales tax overview](indirect-taxes-overview.md)
-- [Create a sales tax payment](create-sales-tax-payment.md)
-- [Create sales transactions on documents](create-sales-tax-transactions-documents.md)
-- [View posted sales tax transactions](view-posted-sales-tax-transactions.md)
+- [Create a sales tax payment](tasks/create-sales-tax-payment.md)
+- [Create sales transactions on documents](tasks/create-sales-tax-transactions-documents.md)
+- [View posted sales tax transactions](tasks/view-posted-sales-tax-transactions.md)
 
 
