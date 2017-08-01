@@ -98,11 +98,11 @@ Set up email addresses for salespeople if you want to send email messages to sal
 If a sales representative isn't specified, the primary salesperson for the customer organization is used. If a primary salesperson isn't specified, email messages are sent to the first salesperson who is listed on the page.
 
 
-For more information see:
+For more information, see the following topics:
 
- - [Create a collection letter sequence](create-collection-letter-sequence.md)
+ - [Create a collection letter sequence](tasks/create-collection-letter-sequence.md)
  
- - [Process collection letters](process-collection-letters.md)
+ - [Process collection letters](tasks/process-collection-letters.md)
  
- - [Review collections information](review-collections-information.md)
+ - [Review collections information](tasks/review-collections-information.md)
 
