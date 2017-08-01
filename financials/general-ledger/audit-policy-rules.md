@@ -5,7 +5,7 @@ title: Audit policy rules
 description: You can use audit policies to evaluate expense reports, vendor invoices, and purchase orders to make sure that they comply with policy rules that you create. All of the rules that are associated with an audit policy are run in batch mode, according to a schedule that you specify.  Each policy rule is an instance of a policy rule type. For each policy rule type, only one policy rule can be active at a time. 
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -104,6 +104,6 @@ See also
 --------
 
 [Audit policy violations and cases](audit-policy-violations-cases.md)
-
+[Define audit policies for source documents](define-audit-policies-source-documents.md)
 
 
