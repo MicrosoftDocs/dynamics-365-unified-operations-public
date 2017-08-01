@@ -65,31 +65,29 @@ This topic describes how to upgrade an older source database to the latest Fina
 5.  You must also apply the following KBs before proceeding.
     - KB 4036156
     - KB 4035399
-    - KB 4036157
 
 
-## Download the MinorVersionDataUpgradeWithRetail.zip script
-To obtain the latest MinorVersionDataUpgradeWithRetail.zip package from your target environment that is running the latest Finance and Operations update, download the latest binary updates from Lifecycle Services (LCS).
-
-> [!NOTE]
-> The name of the data upgrade deployable package varies depending on what version you are upgrading from and to:
-> - If you are upgrading from AX 2012 the data upgrade package is called MajorVersionDataUpgradeWithRetail.zip. Download the latest binary updates for your Platform update 8 (or higher) environment to find this package.
-> - In earlier versions (prior to Platform update 4), the package was named DataUpgrade.zip. 
-> - In later versions (from Platform update 8 onwards) the package is named MinorVersionDataUpgradeWithRetail.zip. Download the latest binary updates for your Platform update 8 (or higher) environment to find this package.
+## Download the data upgrade deployable package script
+To obtain the latest data upgrade deployable package for your target environment that is running the latest Finance and Operations update, download the latest binary updates from Lifecycle Services (LCS).
 
 1.  In LCS, in the **Environments** section, click your target Finance and Operations environment, scroll to the bottom of the page, and then click the **All binary updates** tile. 
 
 > [!NOTE]
-> If the All binary updates tile shows zero updates available then use the MinorVersionDataUpgradeWithRetail.zip from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 with platform update 3 and the **All binary updates** tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library. When using this package from the shared asset library, the path required in step 3 below changes to ..\\CustomDeployablePackage
+> If the All binary updates tile shows zero updates available then use the data upgrade deployable package from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 with platform update 3 and the **All binary updates** tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library.
 
 2.  On the **Add hotfixes** page, click **Select all**, click **Add**, and then click **Download package**.
 3.  On the next page, click **Download**.
 
-4.  After the package is downloaded, extract the contents, and go to the following directory to find the MinorVersionDataUpgradeWithRetail.zip file: ..\\CustomDeployablePackage
+4.  After the package is downloaded, extract the contents, and go to the following directory to find the appropriate data upgrade deployable package file: ..\\CustomDeployablePackage
 
+The name of the data upgrade deployable package varies depending on what version you are upgrading from and to:
+ - If you are upgrading from AX 2012 the package is called MajorVersionDataUpgradeWithRetail.zip. Download the latest binary updates for your Platform update 8 (or higher) environment to find this package.
+ - In earlier versions (prior to Platform update 4), the package was named DataUpgrade.zip. 
+ - Between Platform update 4 and Platform update 7, the package was named MinorVersionDataUpgrade.zip.
+ - In later versions (from Platform update 8 onwards) the package is named MinorVersionDataUpgradeWithRetail.zip. Download the latest binary updates for your Platform update 8 (or higher) environment to find this package.
 
 > [!NOTE]
-> Computers that are deployed from LCS will already have a MinorVersionDataUpgradeWithRetail.zip file. However, that file is out of date and includes issues that have been resolved in later fixes. Always download the latest version of the file from LCS.
+> Computers that are deployed from LCS will already have a data upgrade package locally. However, that file is out of date and includes issues that have been resolved in later fixes. Always download the latest version of the file from LCS.
 
 ## Remove encryption certification rotation
 1.  Extract the MinorVersionDataUpgradeWithRetail.zip deployable package to C:\\Temp or a location of your choice.
