@@ -89,4 +89,6 @@ To help maintain referential integrity of the data, financial dimensions can rar
 If any of the criteria are met, you can't delete the financial dimension.
 
 
-For more information, see [Define financial dimensions](define-financial-dimensions.md).
+For more information, see the following topics:
+- [Define financial dimensions](define-financial-dimensions.md)
+- [Maintain financial dimension default templates](maintain-financial-dimension-default-templates.md)
