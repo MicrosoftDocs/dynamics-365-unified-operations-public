@@ -56,7 +56,7 @@ You can find additional consolidation accounts in the **Setup** area of the **Co
 When you've finished creating your consolidation account groups and additional consolidation accounts, you can select the group in the Consolidate online process.
 
 
-For more information, see [Create consolidation groups and additional consolidation accounts](create-consolidation-groups.md). 
+For more information, see [Create consolidation groups and additional consolidation accounts](../general-ledger/tasks/create-consolidation-groups.md). 
 
 
 
