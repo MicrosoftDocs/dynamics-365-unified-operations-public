@@ -79,19 +79,19 @@ To obtain the latest data upgrade deployable package for your target environment
 
 1.  In LCS, in the **Environments** section, click your target Finance and Operations environment, scroll to the bottom of the page, and then click the **All binary updates** tile. 
 
-> [!NOTE]
-> If the All binary updates tile shows zero updates available then use the data upgrade deployable package from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 with platform update 3 and the **All binary updates** tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library.
+    > [!NOTE]
+    > If the All binary updates tile shows zero updates available then use the data upgrade deployable package from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 with platform update 3 and the **All binary updates** tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library.
 
 2.  On the **Add hotfixes** page, click **Select all**, click **Add**, and then click **Download package**.
 3.  On the next page, click **Download**.
 
 4.  After the package is downloaded, extract the contents, and go to the following directory to find the appropriate data upgrade deployable package file: ..\\CustomDeployablePackage
 
-The name of the data upgrade deployable package varies depending on what version you are upgrading from and to:
- - If you are upgrading from AX 2012 the package is called MajorVersionDataUpgradeWithRetail.zip. Download the latest binary updates for your Platform update 8 (or higher) environment to find this package.
- - In earlier versions (prior to Platform update 4), the package was named DataUpgrade.zip. 
- - Between Platform update 4 and Platform update 7, the package was named MinorVersionDataUpgrade.zip.
- - In later versions (from Platform update 8 onwards) the package is named MinorVersionDataUpgradeWithRetail.zip. Download the latest binary updates for your Platform update 8 (or higher) environment to find this package.
+    The name of the data upgrade deployable package varies depending on what version you are upgrading from and to:
+     - If you are upgrading from AX 2012 the package is called MajorVersionDataUpgradeWithRetail.zip. Download the latest binary updates for your Platform update 8 (or higher) environment to find this package.
+     - In earlier versions (prior to Platform update 4), the package was named DataUpgrade.zip. 
+     - Between Platform update 4 and Platform update 7, the package was named MinorVersionDataUpgrade.zip.
+     - In later versions (from Platform update 8 onwards) the package is named MinorVersionDataUpgradeWithRetail.zip. Download the latest binary updates for your Platform update 8 (or higher) environment to find this package.
 
 > [!NOTE]
 > Computers that are deployed from LCS will already have a data upgrade package locally. However, that file is out of date and includes issues that have been resolved in later fixes. Always download the latest version of the file from LCS.
@@ -100,7 +100,7 @@ The name of the data upgrade deployable package varies depending on what version
 1.  Extract the MinorVersionDataUpgradeWithRetail.zip deployable package to C:\\Temp or a location of your choice.
 2.  Open the following file in a text editor: C:\\Temp\\DataUpgrade\\RotateConfigData\\ServicingRotations.json file. Modify the file as shown here, and save it. This step is required only for one-box environments. Because you're removing the need for encryption certificate rotations, old data in encrypted fields in your database will no longer be readable. This is a technical limitation for a one-box data upgrade. New data that goes into those fields after the upgrade is completed is unaffected. For details about the affected fields, see the ["Encrypted fields in demo data"](#encrypted-fields-in-demo-data) section later in this topic.
 
-```
+    ```
       {
             "AosService": {
                              "EncryptionThumbprint": null,
@@ -113,7 +113,7 @@ The name of the data upgrade deployable package varies depending on what version
                                              ]
                           }
        }
-```
+    ```
 
 3.  Run the Windows PowerShell Integrated Scripting Environment (ISE) as an administrator.
 4.  Open C:\\Temp\\DataUpgrade\\RotateConfigData\\Scripts\\EncryptRotationConfigData.ps1.
@@ -126,9 +126,9 @@ This step is required if you're upgrading a database from the February 2016 rele
 1.  Open the following file in a text editor: C:\\Temp\\DataUpgrade\\AOSService\\Scripts\\AutoDataUpgradePreReqs.ps1.
 2.  Comment out or remove the following line.
 
-```
+    ```
     Invoke-SQL -sqlCommand:$adjustsqlseq
-```
+    ```
 
 3.  Save the file.
 
@@ -136,16 +136,16 @@ This step is required if you're upgrading a database from the February 2016 rele
 1.  Install the deployable package from the C:\\Temp\\DataUpgrade folder (the location that you extracted to earlier). Use the instructions in [Install a deployable package](../deployment/install-deployable-package.md).
 2.  Restore a backup of the source database to your one-box demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. 
 
-> [!NOTE]]
-> For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For details about how to download and use AzCopy to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
+    > [!NOTE]]
+    > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For details about how to download and use AzCopy to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
 
 3.  Run the runbook file from the deployable package until you reach Step 4: GlobalBackup.
 4.  Rename the existing Update 1 database, and replace it with the source database that you want to upgrade.
 
-```
+    ```
         ALTER DATABASE <Update1_AX_DATABASENAME> MODIFY NAME = <Update1_AX_DATABASENAME>_ORIG
         ALTER DATABASE <Source_AX_DATABASENAME> MODIFY NAME = <Update1_AX_DATABASENAME>
-```
+    ```
 
 5.  Create a backup of the source database, in case you need to revert to it, because the following steps will modify the source database.
 6.  Mark Step 4 of the runbook as completed, and continue to run the runbook until it's completed. 
