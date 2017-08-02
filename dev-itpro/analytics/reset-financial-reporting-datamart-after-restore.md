@@ -37,7 +37,8 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes how to reset the financial reporting data mart after restoring a Microsoft Dynamics 365 for Finance and Operations database.
 
-There are several scenarios where you may need to restore your Finance and Operations database from a backup or copy the database from another environment. When this occurs, you also need to follow the appropriate steps to ensure that the financial reporting data mart is correctly using the restored Finance and Operations database. If you have questions about resetting the financial reporting data mart for a reason outside of restoring a Finance and Operations database, refer to the [Resetting the Management Reporter data mart](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) for more information. 
+If you ever restore your Finance and Operations database from a backup or copy the database from another environment, you must follow the steps in this topic to ensure that the financial reporting data mart is correctly using the restored Finance and Operations database. 
+<!--If you have questions about resetting the financial reporting data mart for a reason outside of restoring a Finance and Operations database, refer to the [Resetting the Management Reporter data mart](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) for more information. -->
 > [!Note] The steps in this process are supported for Dynamics 365 for Operation May 2016 release (App build 7.0.1265.23014 and financial reporting build 7.0.10000.4) and newer releases. If you have an earlier release of Finance and Operations, contact our Support team for assistance.
 
 ## Export report definitions
@@ -70,10 +71,9 @@ Use Remote Desktop to connect to all the computers in the environment and stop t
 These services will have open connections to the Finance and Operations database.
 
 ## Reset
-#### Locate the latest MinorVersionDataUpgrade.zip package
+#### Locate and download the latest MinorVersionDataUpgrade.zip package
 
-Locate the latest MinorVersionDataUpgrade.zip package using the directions found in [Download the latest data upgrade deployable package](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). The directions explain how to locate and download the correct version of the data upgrade package.
-
+Locate the latest MinorVersionDataUpgrade.zip package using the directions found in [Download the latest data upgrade deployable package](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). The directions explain how to locate and download the correct version of the data upgrade package. An upgrade is not required to download the MinorVersionDataUpgrade.zip package. You only need to complete the steps in the “Download the latest data upgrade deployable package” section without performing any of the other steps in the article to retrieve a copy of the MinorVersionDataUpgrade.zip package.
 
 #### Execute scripts against Finance and Operations database
 
