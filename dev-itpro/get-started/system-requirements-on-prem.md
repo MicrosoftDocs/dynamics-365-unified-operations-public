@@ -67,8 +67,9 @@ In wide area network (WAN) environments, Remote Desktop in Windows Server is not
 ### Internet connectivity requirements
 Finance and Operations (on-premises) does not require Internet connectivity from end user work stations. However, some features will not be available without Internet connectivity.
 
+|      |    |
+|----------------|-----------------------------------------------------------|
 | Browser client | An intranet scenario without Internet connectivity is a design point for the on-premises deployment option. Some features that require cloud services will not be available, such as Help and Task guide libraries in LCS. |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Server         | The AOS or Service Fabric tier must be able to communicate with LCS. The on-premises browser-based client does not require Internet access.                                                                                |
 | Telemetry      | Telemetry data might be lost if there are long interruptions in connectivity. Interruptions in connectivity to LCS do not affect the on-premises application functionality.                                                |
 | LCS            | Connectivity to LCS is required for deployment, code deployment, and servicing operations.                                                                                                                                 |
