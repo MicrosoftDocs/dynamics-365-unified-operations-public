@@ -51,3 +51,42 @@ The usage data that is typically stored in the **SysLastValue** table will no lo
 
 Usage data is automatically reset upon moving to Platform update 9. Users will lose their usage data as part of this platform update process. This mostly includes data used for custom queries and saved dialog posting selections. Personalization is not affected.
 The new data format is versioned, backward compatible, and always preserved from Platform update 9 onward for future application and platform releases.
+
+## Method wrapping and chain of command
+
+### Overview
+The functionality of extension classes (also known as class augmentation) is being improved to allow developers to wrap logic around methods defined in a base class. This allows extending the logic of public and protected methods without the need to use event handlers. When you wrap a method, you can also access other public and protected methods and variables of the class. This way, you can start transactions and easily manage state variables associated with your class.
+
+Consider the following situation. A model contains the following code.
+
+class BaseClass1
+ {
+     str method1(int arg) {
+     …
+    }
+ }
+
+It is now possible to extend the functionality of method1 using an extension class by reusing the same name to add pre-and post-logic to it.
+
+[ExtensionOf(ClassStr(BaseClass1))]
+ class BaseClass1_Extension
+ {
+     str method1(int arg) {
+         // Part 1
+         var s = next method1(arg + 4);
+         // Part 2
+         return s;
+     }
+ }
+
+Wrapping method1 and the required use of the next keyword creates a Chain of Command (CoC) for the method. Here is what happens when the following code executes.
+
+BaseClass1 c = new BaseClass1();
+ Print c.method1(33);
+
+The system will find any method that wraps method1. It will randomly execute one of these methods (say, method1 of the BaseClass1_Extension class). When the call to next method1() occurs the system will randomly pick another method in the CoC or call the original implementation if none exist.
+
+### Supported versions 
+The functionality described in this topic is available as of platform update 9 (CoC and access to protected methods and variables).
+
+However, this functionality requires the class being augmented to be compiled on platform update 9 as well. Since the current releases of the Dynamics 365 for Finance and Operations applications have been compiled on platform update 8 or earlier, you will have to re-compile a base package (like Application Suite) on platform update 9 or newer in order to wrap a method that is defined in that package.  
