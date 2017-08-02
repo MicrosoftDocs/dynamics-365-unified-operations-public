@@ -2054,6 +2054,7 @@
 ### [Set up company-specific HR parameters](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Personnel actions FAQ](/dynamics365/unified-operations/talent/personnel-actions-faq?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Use workflow to manage employee information](/dynamics365/unified-operations/talent/workflow-manage-employee-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Leave and absence overivew](/dynamics365/unified-operations/talent/leave-and-absence-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Motivate employees
 ### [Compensation plans](/dynamics365/unified-operations/talent/compensation-plans?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
