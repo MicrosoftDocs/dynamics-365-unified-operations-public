@@ -59,14 +59,15 @@ For example, if the folder name is ExecuteRunbook-b0c5c413-dae3-4a7a-a0c4-d55861
 
 | **Issue** | **Troubleshooting details** |   **Action** |
 | --- | --- | --- |
-| **Servicing status failed without listing any steps in the &quot;Environment updates&quot; section** | This indicates that package being applied is invalid Steps:
+| **Servicing status failed without listing any steps in the &quot;Environment updates&quot; section** | This indicates that package being applied is invalid. 
+Steps:
 1. Download logs
-2. Unzip and navigate to the AOS machine logs
-  **Verify** that &quot;DownloadFilesAndSlipstreamTools-xxx&quot; folder exist **Verify** that &quot;GenerateRunbook-xxx&quot; folder exists
+2. Unzip and navigate to the AOS machine logs.
+**Verify** that &quot;DownloadFilesAndSlipstreamTools-xxx&quot; folder exist **Verify** that &quot;GenerateRunbook-xxx&quot; folder exists
 1. Click inside GenerateRunbook-xxx folder and open the output type file
  If error is found or an exception is found that a file is missing or failed to generate any steps for runbook etc, it&#39;s mainly due to invalid package being uploaded. | **Action** :   Click **Abort** to abort the current package, upload a new package and start the servicing flow again.       |
-| **Package deployment has failed without any step failures** | Timed-out when downloading the package into the machine.  **Details** : During servicing there would be few steps that would be done in pre-servicing before running the actual steps in the runbook. As part of the pre-servicing the important step is downloading the package in all the machines. The time to download might vary a bit based on the data center where the environment is residing. If the download doesn&#39;t happen within 30 minutes, it would give up and result as failure in the servicing status. If It&#39;s been about 30 minutes since the package deployment is initiated, then you are mostly running into the issue.  | Resume should fix mostly fix the issue.                 **Quick troubleshooting steps**
--
+| **Package deployment has failed without any step failures** | Timed-out when downloading the package into the machine.  **Details** : During servicing there would be few steps that would be done in pre-servicing before running the actual steps in the runbook. As part of the pre-servicing the important step is downloading the package in all the machines. The time to download might vary a bit based on the data center where the environment is residing. If the download doesn&#39;t happen within 30 minutes, it would give up and result as failure in the servicing status. If It&#39;s been about 30 minutes since the package deployment is initiated, then you are mostly running into the issue.  | Resume should fix mostly fix the issue. 
+**Quick troubleshooting steps**
   1. Download the logs from the environment page
   2. Ensure that the package download step has the logs in all the machines with the following folder DownloadFilesAndSlipstreamTools
   3. Inspect the log files and if you do not see the following is shown at the end of the log file, then package download is not completed and hence the issue.
