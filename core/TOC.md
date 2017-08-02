@@ -2338,7 +2338,7 @@
 #### [Task Recorder quick reference](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-quick-reference?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create documentation or training using Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## Mobile platform
+## [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Getting started
 #### [Getting started](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-getting-started?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Architecture and design considerations](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-architecture?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
