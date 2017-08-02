@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Mobile platform for Finance and Operations
-description: Microsoft Dynamics 365 for Finance and Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product. 
-author: RobinARH
+title: Mobile platform architecture
+description: This topic provides in-depth information on designing mobile apps.
+author: makhabaz
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata
@@ -17,76 +17,31 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.reviewer: robinr
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 255544
-ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shshabazz
+ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Mobile platform for Finance and Operations
+# Architecture and design considerations for the mobile platform
 
-[!include[banner](../includes/banner.md)]
+The mobile app communicates with Application Object Server (AOS) to get the metadata for the mobile workspaces (and the pages and the fields that appear on the page), and to get the data for the fields on the pages. Each time that the mobile app requests data for a page, AOS creates a new session that uses the context of the user who is using the mobile app. AOS then uses the user's context to open the corresponding forms (by using the corresponding menu items). AOS can open multiple forms in quick succession and perform actions on those forms (for example, filtering, opening FactBoxes, changing tab pages, and clicking buttons). Any business logic on the forms is also run as usual. Through that process, AOS collects the data values from the requested fields and then sends that data back to the mobile app. 
 
+![Mobile architecture](media/mobilearchitecture.png)
 
-Microsoft Dynamics 365 for Finance and Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product. 
-
-In addition to this topic, there is a video series on create a mobile app:
-
-[Tutorial 1: Building the sales order page](https://youtu.be/PdegfBxifl8)
-
-[Tutorial 2: Building the sales order details page](https://youtu.be/mF-vlbnRte0)
-
-[Tutorial 3: Building the create new sales order action](https://youtu.be/VYw9oTv9t3o)
-
-[Tutorial 4: Adding a lookup to the create new sales order action](https://youtu.be/eNJKd0IYmZk)
-
-[Tutorial 5: Adding a lookup and hiding pages using mobile business logic](https://youtu.be/kIJKk9J8FvI)
-
-# Getting started with the mobile app
-
-After you acquire a development environment, complete the following procedures to get started with development.
-
-### Get the Fleet Management mobile forms
-
-We have created new, purpose-built forms in the **Fleet Management** module. These forms are used specifically for the mobile app and aren't meant to be used through the web client.
-
-1.  [Download the file that contains the Fleet Management project](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp file).
-2.  Extract the contents of the zip file to a temporary location on the development computer.
-3.  Import the project (.axpp) file by using Microsoft Visual Studio (click **Finance and Operations** &gt; **Import Project**).
-4.  After you've imported the project file, build the project or module.
-
-### Get the sample workspace
-
-We provide a sample workspace for Reservation management. This workspace is based on the **Fleet Management** module.
-
-1.  [Download the file that contains the sample workspace](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.xml file).
-2.  Sign in to your non-production client. (You must sign in as a Microsoft Dynamics 365 for Finance and Operations administrator.)
-3.  In the address bar, add **&mode=mobile** to the end of the URL, and then press Enter.
-4.  In the client, go to **Settings** &gt; **Mobile app**. The mobile app designer will appear docked next to the Finance and Operations client.
-5.  Click the **Overflow** button (**…**), and then click **Import**.
-6.  Click the **Browse** button that appears at the bottom of the page.
-7.  In the file selection dialog box that appears, select one of the XML files that you previously extracted from the zip file.
-8.  After the app has been loaded into the mobile app designer, click **Done** at the bottom of the page.
-9.  Click **Publish workspace**.
-
-### Get the mobile app
-
-The mobile app is being made available for the most popular mobile operating systems. You must have a Finance and Operations instance and valid user credentials in order to log in to the app.
-
--   Android (available now) - [Finance and Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   iPhone (available now) - [Finance and Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+The mobile app platform doesn't assume connectivity to Finance and Operations. Activities such as navigation, data view, and data entry don't require server connectivity after data has been cached.
 
 ## Understanding navigation in the mobile app
 Navigation in the mobile app consists of four simple concepts: the dashboard, workspaces, pages, and actions. 
 
-[![Navigation concepts in the mobile app](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+![Navigation concepts in the mobile app](media/mobilephoneapp1.png)
 
 -   When you start the app, you land on the **dashboard**. On the **dashboard**, you can see a list of **workspaces** that are published in your Finance and Operations environment.
 -   In each **workspace**, you can see a list of **pages** that are available for that workspace.
@@ -102,7 +57,7 @@ At any time, you can pull-to-refresh in the mobile app to make the mobile app up
 ## Using the mobile app designer
 The mobile app designer lets you select the specific data fields from forms that should appear in the mobile app. 
 
-[![Mobile app designer](./media/mobileappdesigner-1024x468.png)](./media/mobileappdesigner.png)
+![Mobile app designer](media/mobileappdesigner.png)
 
 1.  Open the Finance and Operations client. Include the **&mode=mobile** parameter in the URL to enable the designer.
 2.  Go to **Settings** &gt; **Mobile app**.
@@ -120,18 +75,11 @@ The mobile app designer lets you select the specific data fields from forms that
 
 ### Refreshing the app after you make changes
 
-| Type of change                                                                            | Description                                                                                                                                                                                                                                                                                                          |
-|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| New workspaces, deleted workspaces, or changes to the name, color, or icon of a workspace | Pull-to-refresh from the main landing page (dashboard) of the app, where you see the list of workspaces.<br>[![Pull-to-refresh from the dashboard](./media/refreshworkspaces-186x300.png)](./media/refreshworkspaces.png) |
-| All other changes (new or changed pages or actions, or changes to business logic)         | Pull-to-refresh from the workspace that has the edited pages or actions.<br>[![Pull-to-refresh from a workspace](./media/refreshpages-187x300.png)](./media/refreshpages.png)                                             |
+| Type of change     | Description                      |
+|-------|----------------------------------------------|
+| New workspaces, deleted workspaces, or changes to the name, color, or icon of a workspace | Pull-to-refresh from the main landing page (dashboard) of the app, where you see the list of workspaces.<br>![Pull-to-refresh from the dashboard](media/refreshworkspaces.png) |
+| All other changes (new or changed pages or actions, or changes to business logic)         | Pull-to-refresh from the workspace that has the edited pages or actions.<br>![Pull-to-refresh from a workspace](media/refreshpages.png)                                             |
 
-## Design considerations for the mobile app platform
-The mobile app platform doesn't assume connectivity to Finance and Operations. Activities such as navigation, data view, and data entry don't require server connectivity after data has been cached.
-
-## Architecture
-The mobile app communicates with Application Object Server (AOS) to get the metadata for the mobile workspaces (and the pages and the fields that appear on the page), and to get the data for the fields on the pages. Each time that the mobile app requests data for a page, AOS creates a new session that uses the context of the user who is using the mobile app. AOS then uses the user's context to open the corresponding forms (by using the corresponding menu items). AOS can open multiple forms in quick succession and perform actions on those forms (for example, filtering, opening FactBoxes, changing tab pages, and clicking buttons). Any business logic on the forms is also run as usual. Through that process, AOS collects the data values from the requested fields and then sends that data back to the mobile app. 
-
-[![Mobile architecture](./media/mobilearchitecture-1024x514.png)](./media/mobilearchitecture.png)
 
 ## Page design guidelines
 Before you begin to use the designer to build pages and actions, it’s important that you plan the overall design of the mobile workspace that you want to build. We recommend that you orient your design around the entities that you plan to use in the mobile workspace. Don't begin by thinking about the forms that you want to use. From the perspective of the mobile app, the forms are just a mechanism for retrieving data, and the run-time UI behavior of a form isn't applicable to the mobile app. Therefore, you should first identify your entities and the relationships between them. For each entity, the following questions will help you decide how you should design your forms and pages.
@@ -167,7 +115,7 @@ If you want just a details view for an entity, it's likely that the entity is a 
 3.  Make sure that the form that is used for the details view can be filtered on a unique key field by using the filter pane.
 4.  In the designer, make sure that the list view page is linked to the details view page. Click the list, open the properties, and then set the details view page by using the lookup. 
 
-[![Linking the list view page to the details view page](./media/listtodetailsdesigner.png)](./media/listtodetailsdesigner.png)
+![Linking the list view page to the details view page](media/listtodetailsdesigner.png)
 
 ### How do I add a reference field that enables navigation to a related entity?
 
@@ -175,13 +123,13 @@ If you want just a details view for an entity, it's likely that the entity is a 
 2.  Make sure that the page contains the reference field from the entity that is being referenced.
 3.  Make sure that the referenced field is bound to the referenced entity’s data source, and that the referenced entity is *outer joined* (1-0..1) or *inner joined* (1-1) to the data source for the entity that contains the reference. For example, in the following illustration, FMRental is the entity that contains the reference, and FMVehicle is the referenced entity.
 
-[![Binding the referenced field to the referenced entity’s data source](./media/relatedentityform-1024x344.png)](./media/relatedentityform.png)
+![Binding the referenced field to the referenced entity’s data source](media/relatedentityform.png)
 
 4.  Make sure that you've created a separate details view page for the entity that is being referenced.
 5.  Make sure that the reference field has been added to the page.
 6.  In the designer, make sure that the reference field has been linked to the details view for the referenced entity. For example, in the following illustration, Vehicle-details is the details view page for the referenced entity.
 
-[![Linking the reference field to the details view for the referenced entity](./media/referencepagedesigner.png)](./media/referencepagedesigner.png)
+![Linking the reference field to the details view for the referenced entity](media/referencepagedesigner.png)
 
 ### How do I add a list that contains items from a related entity to a details view page?
 
@@ -273,7 +221,7 @@ Lookups for fields in the mobile app don't have a correlation to the advanced lo
 2.  After you've finished designing the action, select the field to add rich lookup functionality to, and then click **Properties**.
 3.  In the **Control properties** dialog box, select the list view page that you identified or created in step 1, and set the other related properties. 
 
-[![Setting the control properties](./media/lookupdesigner-438x1024.png)](./media/lookupdesigner.png)
+![Setting the control properties](media/lookupdesigner.png)
 
 4.  Save and publish your changes to the action.
 
@@ -330,7 +278,7 @@ This section provides valuable guidelines for building Finance and Operations fo
 -   Each form must work with the data source filters.
     -   After you open the form in the web client, open the filter pane by using the **Show filters** button. 
     
-        [![Show filters button](./media/filterpane.png)](./media/filterpane.png) 
+        ![Show filters button](media/filterpane.png) 
         
         Then click **Add a filter field**, and verify that the Master Root Data Source appears as the table for fields in the list of available fields. Other tables can also appear, but the Master Root Data Source **must** appear in this list. Otherwise, the mobile app won't enable searches and navigation that uses context.
     -   Searching: The mobile app does online searches against Finance and Operations data by using the Filters framework behind the scenes.
@@ -375,5 +323,4 @@ If you decide to modify existing forms so that they work with the mobile framewo
 #### Finance and Operations form control support
 
 The Finance and Operations form controls for the various base data types (strings, dates, and numbers) and grids are supported. However, a few common controls have limited support. **Reference groups** Fields from within Reference groups controls are compatible when you design pages. However, they aren't compatible when you design Actions. Although you might be able to select these fields without experience any issue, Reference groups have a fundamental incompatibility with the mobile framework. We recommend that you not use Reference groups. Instead, add a control directly to the form, and then bind the control directly to the surrogate foreign key (SFK) by using the property sheet.
-
 
