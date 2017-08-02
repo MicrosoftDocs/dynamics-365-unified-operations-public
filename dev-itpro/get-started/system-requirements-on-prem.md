@@ -85,6 +85,7 @@ Consider the following domain requirements when you install Finance and Operatio
 
 ## Hardware requirements
 This section describes the hardware that is required to run Finance and Operations (on-premises).
+
 Based on the system configuration, data composition, and the applications and features that you decide to use, the actual hardware requirements will vary. Here are some of the factors that could affect the choice of appropriate hardware for Finance and Operations (on-premises):
 
 - The number of transactions per hour.
