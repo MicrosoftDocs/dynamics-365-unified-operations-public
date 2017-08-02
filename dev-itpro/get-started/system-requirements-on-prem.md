@@ -50,7 +50,9 @@ The following table lists the minimum network requirements for the connection be
 
 - Finance and Operations (on-premises) is designed for networks that have a latency of 250–300 milliseconds (ms) or less. This latency is the latency from a browser client to the data center that hosts Finance and Operations.
 - Bandwidth requirements for Finance and Operations (on-premises) depend on your scenario. Typical scenarios require a bandwidth of more than 50 kilobytes per second (KBps) between the browser and the Finance and Operations server. However, for scenarios that have high payload requirements, such as workspaces or scenarios that involve extensive customization, higher bandwidth is recommended and depends on use.
+
 Deployments where the AOS and the SQL Server Database are in different data centers are not supported. The AOS and the SQL Server database need to be co-located. 
+
 In general, Finance and Operations is optimized to reduce browser-to-server round trips. The number of round trips from a browser client to the data center is either zero or one for each user interaction, and the payload is compressed.
 
 > [!WARNING]
