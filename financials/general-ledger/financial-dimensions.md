@@ -5,7 +5,7 @@ title: Financial dimensions
 description: This topic describes the various types of financial dimensions and how they are set up.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -87,3 +87,8 @@ To help maintain referential integrity of the data, financial dimensions can rar
 - Has the financial dimension been set up as a default dimension?
 
 If any of the criteria are met, you can't delete the financial dimension.
+
+
+For more information, see the following topics:
+- [Define financial dimensions](tasks/define-financial-dimensions.md)
+- [Maintain financial dimension default templates](tasks/maintain-financial-dimension-default-templates.md)

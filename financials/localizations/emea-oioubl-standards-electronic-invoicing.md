@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Supported standards for electronic invoicing in Europe | Microsoft Docs
+title: Supported standards for electronic invoicing in Europe
 description: This topic explains the level of coverage that exists for electronic invoicing in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in the European region. 
 author: mrolecki
 manager: AnnBe

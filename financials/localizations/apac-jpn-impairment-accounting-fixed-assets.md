@@ -21,7 +21,6 @@ ms.reviewer: shylaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 28811
-ms.assetid: db96c6bb-c2b1-4e26-b711-33caa49eb29f
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: RichardLuan
@@ -70,6 +69,12 @@ Yes, you can generate the following reports that contain information about impai
 -   Fixed asset impairment transactions report
 -   Review fixed assets for impairment report
 
-
+## Additional resources
+- [Fixed asset impairment accounting on cash generating units](apac-jpn-impairment-accounting-cash-generating-unit.md)
+- [Maintain impairment indicators on individual assets](./tasks/maintain-impairment-indicators-individual-assets.md)
+- [Propose and post the impairment amount by batch](./tasks/propose-post-impairment-amount-batch.md)
+- [Propose and post the impairment amount by using fixed asset journal](./tasks/propose-post-impairment-amount-fixed-asset-journal.md)
+- [Run the recognition test and calculate the impairment amount on individual assets](./tasks/run-recognition-test-calculate.md)
+- [Set up impairment accounting common parameters and posting profile](./tasks/impairment-accounting.md)
 
 

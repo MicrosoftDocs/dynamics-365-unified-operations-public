@@ -5,7 +5,7 @@ title: Process for moving to the latest update of Finance and Operations
 description: This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations. 
 author: tariqbell
 manager: AnnBe
-ms.date: 07/14/2017
+ms.date: 07/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -94,6 +94,9 @@ Regardless of whether you're a live customer or you're still in the implementati
 
 1.  Use the Code upgrade service on Lifecycle Services to upgrade your code, see [Configure the code upgrade service in Lifecycle services](../lifecycle-services/configure-execute-code-upgrade.md). We recommend running the code upgrade service even if you do not have custom code, because the service will still help you by removing any old Microsoft X++ hotfixes you have installed, which is a required step.
 
+ > [!IMPORTANT]
+ > There are several application hotfixes which may be required before you can upgrade data. Before you redeploy your existing  development environment, check whether these hotfixes are needed, and install and check them into VSTS. This step can only be performed on the old version of your development environment. Hotfixes required in different situations are listed here: [Upgrade data in develop, demo, or sandbox environments](upgrade-data-to-latest-update.md#before-you-begin).
+
 2.  You will need to deploy a new development environment, which is running the new version that you are upgrading to. You will use this environment to complete code merging and refactoring of your custom code. Submit a request for a new Dev/Test environment that is running the latest update.
     -   You might have to delete your existing Dev/Test environment if your subscription doesn't allow for a new one.
     -   Depending on your project type, these are the other options to deploy a developer VM:
@@ -138,10 +141,7 @@ For upgrading any Tier 1 environments (also known as dev boxes or one-boxes). Yo
 
 #### Use LCS to submit an upgrade request to DSE
 1. Go to the **Environment details** page for the environment that you want to upgrade, click **Maintain**, and then select **Upgrade**. A window will display where you can enter the upgrade request.
-
- > [!NOTE]
- > The **Upgrade** button is currently in preview and will be made public as part of the LCS July release (currently scheduled for the third week of July). Until then you can submit upgrade requests from the **LCS Support page** > **Service requests** > **Add** > **Other requests**.
- ![Upgrade request](./media/UpgradeMaintainButton.PNG)
+![Upgrade request](./media/UpgradeMaintainButton.PNG)
 2. You must submit your upgrade request 5 working days before you expect to upgrade, to help ensure that the upgrade can be performed within your expected timeframe. The advanced notice is required to prepare a new environment in the background. When downtime starts, this new environment will be swapped with the existing environment. You will not be able to see the new environment, it's a background mechanism.
 3. You must allow at least 8 hours between the downtime start and downtime end times. This time is required to perform the swap in of the new environment and the data upgrade process.
 4. If you have custom code or X++ hotfixes that must be part of your upgraded environment, you must select Application deployable packages during your upgrade request. Select the deployable packages that contain your upgraded custom code and the X++ hotfixes that were created on your development or build environment during the code upgrade process. 

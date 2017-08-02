@@ -3,9 +3,9 @@
 
 title: Copy Finance and Operations database - SQL Server to production Azure SQL
 description: This topic describes how to move a Finance and Operations database from an environment that runs on SQL Server (Tier 1 or one-box) to an environment that runs on an Azure SQL database (Tier 2 or higher). 
-author: MargoC
+author: tariqbell
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,15 +36,12 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes how to move a Finance and Operations database from an environment that runs on SQL Server (Tier 1 or one-box) to an environment that runs on an Azure SQL database (Tier 2 or higher). 
 
-Overview
---------
-
 This procedure can be used to move a Microsoft Dynamics 365 for Finance and Operations database from an environment that runs on Microsoft SQL Server (Tier 1 or one-box) to an environment that runs on a Microsoft Azure SQL database (Tier 2 or higher). This process is typically performed before go-live to bring a golden (or seed) database that contains only system configuration data into a production environment. This process isn't suitable for all situations. For example, you should not use this process to import data for a new legal entity for an existing live deployment. In those situations, we recommend that you use [process data packages](../lcs-solutions/process-data-packages-lcs-solutions.md) or [data entity data packages](../data-entities/data-entities-data-packages.md). Here is the supported procedure for bringing a golden database into the production environment:
 
 1.  A customer or partner exports the database from SQL Server.
-2.  The customer or partner imports the database to a sandbox environment that runs on an Azure SQL database. **Note:** If you're using Retail components raise a service request of the **Other request** type in Microsoft Dynamics Lifecycle Services (LCS) to ask that the Service Engineering Team update the imported database to be reconfigured for the new environment.
-3.  The customer or partner uses a service request of the **Other request** type in Microsoft Dynamics Lifecycle Services (LCS) to ask that Microsoft Support update the sandbox database to the production environment.
-4.  Support copies the database from the sandbox environment to the production environment. 
+2.  The customer or partner imports the database to a sandbox environment that runs on an Azure SQL database. 
+3.  The customer or partner raises a service request of the **Other request** type in Microsoft Dynamics Lifecycle Services (LCS) to ask the Microsoft Dynamics Support Engineering (DSE) team to move the sandbox database to the production environment.
+4.  The DSE team copies the database from the sandbox environment to the production environment. 
 
 > [!NOTE]
 > Microsoft accepts requests to copy a database into a production environment only before go-live. 
@@ -261,8 +258,12 @@ Learn more about how to apply a deployable package in the topic [Apply a deploya
 ## Raise a service request to copy database
 To copy the golden database to a production environment, you must submit a service request of the **Other request** type through LCS to ask that Microsoft run the copy action. **Note:** You can't use a request of the **Database refresh request** type, because the request involves copying to a production environment.
 
-1.  In LCS, click the hamburger icon, and then click **Work items**. [![Work items](./media/lcsworkitemsmenu.png)](./media/lcsworkitemsmenu.png)
-2.  On the **Work items** page, click **Add**, and then click **Other request**. [![Other request](./media/lcsotherrequest.png)](./media/lcsotherrequest.png)
+1.  In LCS, click the hamburger icon, and then click **Work items**. 
+    [![Work items](./media/lcsworkitemsmenu.png)](./media/lcsworkitemsmenu.png)
+
+2.  On the **Work items** page, click **Add**, and then click **Other request**. 
+    [![Other request](./media/lcsotherrequest.png)](./media/lcsotherrequest.png)
+    
 3.  In the **Other requests** dialog box, follow these steps:
     1.  In the **Environment name** field, select the production environment.
     2.  Set the **Preferred downtime start date** and **Preferred downtime end date** fields. The end date must be at least one hour after the start date. Submit your request at least 24 hours before your preferred downtime window to help guarantee that resources are available to run the request.
@@ -301,7 +302,13 @@ In the Finance and Operations client, enter the values that you documented for t
 ## Known issues and limitations
 ### I can't download the Management Studio installer
 
-When you try to download the Management Studio installer, you might receive the following message: "Your current security settings do not allow this file to be downloaded." [![Error message](./media/securitysettingscannotdownload.png)](./media/securitysettingscannotdownload.png) To work around this issue, in **Internet Options**, on the **Security** tab, enable file downloads for the **Internet** zone, as shown in the following illustration. [![Enable file downloads](./media/securitysettingsfix.png)](./media/securitysettingsfix.png)
+When you try to download the Management Studio installer, you might receive the following message: "Your current security settings do not allow this file to be downloaded." 
+
+[![Error message](./media/securitysettingscannotdownload.png)](./media/securitysettingscannotdownload.png) 
+
+To work around this issue, in **Internet Options**, on the **Security** tab, enable file downloads for the **Internet** zone, as shown in the following illustration. 
+
+[![Enable file downloads](./media/securitysettingsfix.png)](./media/securitysettingsfix.png)
 
 ### Performance
 
@@ -311,8 +318,4 @@ The following guidelines can help you achieve optimal performance:
 -   Always import the .bacpac file locally on the computer that is running the SQL Server instance. Don't import it from Management Studio on a remote computer.
 -   To help improve performance, in a one-box environment (which is also known as a Tier 1 environment) that is hosted in Azure, put the .bacpac file on drive D when you export it. For more information about the temporary drive on Azure computers, see the [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) post on the Azure Support Team blog.
 -   To help make the import process faster, and to help improve the speed of restore from a .bak file, grant the account that is running the SQL Server Windows service the [Instance File Initialization](https://msdn.microsoft.com/en-us/library/ms175935.aspx) right. To easily implement this guideline for a developer environment, set SQL Server to run as the axlocaladmin account.
--   We recommend that you not use the option to export and import from SQL Azure in Management Studio. (This option is also known as “Export data tier application”). We recommend that you not use this approach, because there can be memory limitations for larger databases.
-
-
-
-
+-   We recommend that you not use the option to export and import from SQL Azure in Management Studio. (This option is also known as **Export data tier application**). We recommend that you not use this approach, because there can be memory limitations for larger databases.

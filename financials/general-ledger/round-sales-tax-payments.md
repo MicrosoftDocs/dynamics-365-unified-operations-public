@@ -5,7 +5,7 @@ title: Sales tax payments and rounding rules
 description: This article explains how the rounding rule setup on the Sales tax authorities works and rounding the sales tax balance during the Settle and post sales tax job.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -68,7 +68,10 @@ The following table shows how an amount of 98,765.43 is rounded by using each ro
 > [!NOTE]                                                                                  
 > If you select Own advantage, the rounding is always to the advantage of the legal entity. 
 
-For more information, see [Sales tax overview](indirect-taxes-overview.md). 
-
+For more information, see the following topics:
+- [Sales tax overview](indirect-taxes-overview.md)
+- [Create a sales tax payment](tasks/create-sales-tax-payment.md)
+- [Create sales transactions on documents](tasks/create-sales-tax-transactions-documents.md)
+- [View posted sales tax transactions](tasks/view-posted-sales-tax-transactions.md)
 
 

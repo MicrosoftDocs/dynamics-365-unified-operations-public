@@ -91,5 +91,10 @@ An electronic invoice includes the following details:
 ## Customizing the integration PAC web services
 As is explained in detail in the Mexican localization scope document, integration with PAC web services requires customization. This customization varies, depending on the PAC web services that are contracted.
 
+## Additional resources
+
+- [Create and post a customer invoice as an electronic invoice by using the CFDI method](./tasks/mx-00010-e-invoicing-cfdi.md)
+- [View, email, export, or print an already-generated CFDI electronic invoice based on a customer’s request](./tasks/mx-00010-inquire-print-electronic-invoice.md)
+- [Cancel a CFDI electronic invoice](./tasks/mx-00010-cancel-electronic-invoice.md)
 
 

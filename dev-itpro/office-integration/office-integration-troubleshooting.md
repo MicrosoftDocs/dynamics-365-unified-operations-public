@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Office integration troubleshooting
+title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities. The questions and issues that are discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Office integration troubleshooting
+# Troubleshoot the Office integration 
 
 [!include[banner](../includes/banner.md)]
 

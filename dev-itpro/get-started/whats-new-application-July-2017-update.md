@@ -444,10 +444,7 @@ The data packages contain configuration entity spreadsheets. These entity spread
 Save Financial reports to SharePoint
 ------------------------------------
 
-You can utilize all the capabilities for SharePoint for managing your documents.
-You can now publish financial reports to SharePoint, and set up alerts so that
-you are notified when a report is available. Using the Office icon, click
-**Export users** and save the file to a SharePoint location.
+The standard functionality for sending reports to SharePoint is now available for reports generated through Financial reporting. When choosing to export or print a generated financial statement, you can now select to publish the financial report to SharePoint.  Using the standard functionality, you can define a notification when a report is available.
 
 Suspended and inactive dimension values hidden from dimension value lookups
 ---------------------------------------------------------------------------
@@ -1344,13 +1341,31 @@ In the kanban schedule board, these call outs are added to key elements.
 **Mobile**
 ==========
 
-Sales orders mobile app 
+Cost controlling mobile workspace
 ------------------------
 
-You can now view sales order details, sales order lines, status, customer
-contact information, order taker contact information, and historical shipping
-transactions. This app empowers salespeople to gain valuable insights into
-customer information and sales orders at any time and in any place.
+The **Cost controlling** mobile workspace provides an instant view of the current performance of cost centers by comparing actual costs against the budgeted costs. You can drill down to view statuses of individual cost elements.
+
+The data in the **Cost controlling** mobile workspace is secured by user credentials. The cost center manager is only allowed to view data for the cost center that he owns. The access-level security is managed in the Cost accounting module.
+
+Inventory on-hand mobile workspace
+------------------------
+We know that every company has multiple shipments and multiple receipts of inventory each day, and that these movements constantly affect the inventory on-hand status. We have introduced a cross-organizational, on-hand view that can be accessed in any place, at any time, by people working in the warehouse, purchasing, sales, manufacturing, management, and other roles. We have enabled instant viewing of the on-hand status across facilities and enabled actions to be carried out from the mobile device such as: view on-hand across facilities, view current material reservations, view unreserved on-hand, view pending material movements (inbound/outbound), scan item numbers or license plates to query on-hand inventory, and create advanced view filters.
+
+This mobile workspace empowers people to get mobile insights in current reserved/available stock levels at any time, in any facility.
+
+Purchase order approvals mobile workspace
+------------------------
+This functionality allows users to review and approve purchase orders that have been submitted through workflow using their mobile device.
+
+Sales orders mobile workspace
+------------------------
+View sales order details, sales order lines, status, customer contact information, order taker contact information, and historical shipping transactions. This mobile workspace will empower salespeople to gain valuable insights into customer information and sales orders at any time and in any place.
+
+Vendor collaboration mobile workspace
+------------------------
+With the **Vendor collaboration** mobile workspace, vendors can stay up-to-date on the purchase orders that have been sent to them for approval. This also allows vendors to view information about new and updated purchase orders and view contacts.
+
 
 **Other**
 =========
@@ -1727,8 +1742,7 @@ specific self-test routine that is used for official device compatibility
 testing. Results from compatibility testing can be sent to Microsoft to be
 listed as approved for new deployments of Microsoft Dynamics 365 for Retail.
 
-For a description of the Peripheral simulator, see [Retail Peripheral
-simulator](/unified-operations/retail/dev-itpro/retail-peripheral-simulator).
+For a description of the Peripheral simulator, see [Retail Peripheral simulator](/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator).
 
 For more information about the compatibility program and how to participate,
 contact <drpc@microsoft.com>.
@@ -1878,7 +1892,7 @@ enable the Dynamics AX 2012 R3 CU 11 or CU12 stores to connect with the new HQ.
 If the customer is using a pre-CU 11 version, then they must upgrade to at least
 Dynamics AX 2012 R3 CU 11 to leverage the N-1 support.
 
-For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1) and [N-1 installation and configuration](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1).
+For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1) and [N-1 installation and configuration](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1).
 
 
 **Supply chain management**

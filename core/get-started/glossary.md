@@ -2,10 +2,10 @@
 # required metadata
 
 title: Finance and Operations glossary
-description: The Microsoft Dynamics 365 for Finance and Operations glossary defines key terms and concepts in the Finance and Operations product. 
+description: This glossary defines key terms and concepts in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,8 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-
-The Microsoft Dynamics 365 for Finance and Operations glossary defines key terms and concepts in the Finance and Operations product. 
+This glossary defines key terms and concepts in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 ### **A**
 
@@ -55,17 +54,9 @@ An electronic funds transfer system available in the United States that facilita
 
 The measured quantity that is input into or output from an activity.
 
-###### **address verification service**
+###### **address verification**
 
 The service that is provided by a credit card processor that validates that the billing address provided by a card holder matches the information on file with the issuing bank.
-
-###### **adjusted unit price**
-
-The calculated unit price based on the attribute-based pricing and the actual potency received.
-
-###### **advanced pricing**
-
-Logic used to calculate the purchase price of a potency item.
 
 ###### **aging**
 
@@ -93,11 +84,11 @@ A practice of reconciling a ledger account that represents a bank account by mat
 
 A product attribute of a process batch or a transfer batch.
 
-###### **best before date**
+###### **best-before date**
 
 A recommended date for obtaining the optimum quality or characteristic of a product.
 
-###### **best before period**
+###### **best-before period**
 
 The time period in which to obtain the optimum quality or characteristic of a product.
 
@@ -105,14 +96,13 @@ The time period in which to obtain the optimum quality or characteristic of a pr
 
 A source document that documents an unconditional request for a third-party to pay a second party on demand.
 
-###### **bill of materials**
-
-A list of products and their quantities that are required to produce one product.
-
 ###### **blocking**
 
 The action of placing a document or product on hold.
 
+###### **BOM (bill of materials)**
+
+A list of products and their quantities that are required to produce one product.
 ###### **budget control**
 
 A practice of authorizing expenditure only when budget funds can be reserved to meet future payment commitments.
@@ -179,14 +169,6 @@ A list of main accounts.
 
 An accounting category used to sum the financial consequences of manufacturing products and carrying inventory.
 
-###### **commodity pricing**
-
-A pricing strategy for updating the price of sales items produced from commodities subject to frequent price changes.
-
-###### **consolidated order**
-
-A source document that documents more than one referenced order.
-
 ###### **contractor**
 
 A role assumed by a person who participates in a contractor-employer relationship with a legal entity.
@@ -198,10 +180,6 @@ An item produced jointly with another item.
 ###### **cost center**
 
 An operating unit whose managers are accountable for budgeted and actual expenditures.
-
-###### **cost of goods sold**
-
-An accounting category used to sum the financial consequences of manufacturing products and carrying inventory.
 
 ###### **cost variance**
 
@@ -265,10 +243,6 @@ A configuration technology used to create product variants by selecting values f
 
 A uniquely identifiable product.
 
-###### **document blocking**
-
-A method of placing an operations process on hold while ordered items are in a quality assurance process.
-
 ###### **document management system**
 
 An application service for storing and handling an organization's documents.
@@ -289,7 +263,7 @@ An event lets a class or object to notify other classes or objects when somethin
 
 ###### **EPE (Every Product Every)**
 
-A lean concept that is used to establish a regular repeating production cycle.
+A lean concept that is used to establish a regular repeating production cycle.
 
 ###### **extension**
 
@@ -320,10 +294,6 @@ A currency that has a fixed exchange rate in relation to another currency.
 ###### **fixed quantity kanban**
 
 A type of kanban that is used when the number of kanbans that are assigned to a kanban rule is constant.
-
-###### **flexible authentication**
-
-An authentication process where users in a variety of identity management systems can be authenticated.
 
 ###### **formula**
 
@@ -383,10 +353,6 @@ A process or transfer activity in a production flow that is triggered by a Kanba
 
 The withdrawal of product components from inventory in order to complete the kanban production jobs.
 
-###### **kanban product quantity**
-
-The number of item requirements that are carried on a kanban based on a kanban rule.
-
 ###### **kanban rule**
 
 A rule in a lean manufacturing system that realizes material planning and replenishment policies by controlling how process and transfer activities are coordinated in production flows.
@@ -414,10 +380,6 @@ An alphanumeric key that grants a party the right to use software or software co
 The ability of a party to use current assets to settle current liabilities.
 
 ### **M**
-
-###### **manufacturing overhead based on material**
-
-Manufacturing overhead is expressed as indirect cost-calculation formulas for a surcharge percentage. A cost group that is assigned to material components acts as the basis for a calculation formula. Calculation formulas can be defined for individual products or for item groups that are assigned to products, to provide more flexibility in calculating manufacturing overhead that is based on material.
 
 ###### **master scheduling**
 
@@ -463,10 +425,6 @@ A package is a compilable and deployable unit of one or more models.
 
 ###### **party**
 
-An entity that assumes a legally binding role when participating in contractual relationships.
-
-###### **party**
-
 A person or organization that participates in economic activities.
 
 ###### **pegging**
@@ -476,10 +434,6 @@ The process of tracing the quantity of a required item to its source.
 ###### **pegging event**
 
 A resource flow event that signals the demand for a product.
-
-###### **phantom item**
-
-An item that is produced but not stocked.
 
 ###### **planned intercompany demand**
 
@@ -493,17 +447,9 @@ To record the monetary value of an economic event in a specific account, or to s
 
 The person who creates a source document to initiate a request for economic resources.
 
-###### **privilege**
-
-One or more permissions a user requires to perform a task.
-
 ###### **procurement catalog**
 
 A listing of product offerings that are grouped by procurement category. A procurement catalog is used to request products for internal use by an organization.
-
-###### **product component**
-
-A part of a product.
 
 ###### **product dimension**
 
@@ -585,11 +531,7 @@ A method that is used to increase or decrease forecast requirements in master pl
 
 A record that is used to record the operational, legal, and financial consequences of resource flow events in an accounting system.
 
-###### **regulated product**
-
-A product that is regulated by a government authority that requires compliance and audit reporting.
-
-###### **RFQ (request for quotation**
+###### **RFQ (request for quotation)**
 
 A source document that documents an invitation to bid on supplying a quantity of product for a specified price and by a specified date.
 
@@ -597,9 +539,6 @@ A source document that documents an invitation to bid on supplying a quantity of
 
 The person who requests the economic resources.
 
-###### **restricted product**
-
-A product whose distribution is limited or constrained by a government authority.
 
 ### **S**
 
@@ -651,13 +590,6 @@ The product quantity documented on a source document line that creates a pegging
 
 An estimate of future demand that is created by applying a forecasting algorithm to historical transaction data.
 
-###### **supermarket**
-
-A just-in-time inventory location that has finite capacity and is used to batch material near a point of consumption.
-
-###### **system-defined financial dimension type**
-
-A financial dimension mapped to a table or view in the database that represents an entity type and whose values are in the domain of one attribute of that entity type.
 
 ### **T**
 
@@ -675,7 +607,7 @@ A tool that is pre-installed in Finance and Operations. When recording, it recor
 
 ###### **Task recording**
 
-A file that contains the actions and annotations that are captured when Task recorder is run in Microsoft Dynamics 365 for Finance and Operations.
+A file that contains the actions and annotations that are captured when Task recorder is run in Finance and Operations.
 
 ###### **three-way matching policy**
 
@@ -688,12 +620,6 @@ The quantity of one or more items that is transferred or that can be transferred
 ###### **two-way matching policy**
 
 A matching policy that requires one or more vendor invoice prices to match with one or more purchase order prices.
-
-### **U**
-
-###### **user-defined financial dimension type**
-
-A financial dimension mapped to a user-defined list of values.
 
 ### **V**
 
@@ -730,6 +656,3 @@ A person who assumes the role of an employee or a contractor and is paid in exch
 ###### **workspace**
 
 A page that provides an overview of one of the activities that the user performs. The page uses tiles, lists, and charts to display pending work and related data from multiple sources, and the page surfaces frequent tasks related to this data. Tiles shown in the summary section of the workspace are also displayed in the related section in the dashboard.
-
-
-

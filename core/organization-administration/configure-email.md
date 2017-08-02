@@ -5,7 +5,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 07/12/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -120,9 +120,9 @@ The **Send email **dialog box is opened to allow the user to edit the contents
 
 When the email is ready to be sent, the **Send** button will cause the email to be sent via SMTP.
 
-### Usage scenarios to verify if email is configured correctly
+## Usage scenarios to verify if email is configured correctly
 
-##### Send mail via a local mail client
+### Send mail via a local mail client
 
 Email workflows that are enabled via the SysEmail framework can generate email messages (.eml files) that contain attachments. You can then send these messages via Microsoft Outlook or another email client.
 
@@ -135,7 +135,7 @@ Email workflows that are enabled via the SysEmail framework can generate email m
 7.  If you’re using Internet Explorer on your computer, open the email (.eml) file that is generated. If you’re using Internet Explorer on the VM, copy the file to your computer, and open it there.
 8.  Note the email address in the **To** field and the generated workbook attachment.
 
-##### Send mail via SMTP
+### Send mail via SMTP
 
 Email workflows that are enabled via the SysEmail framework can also be created in a simple email dialog box and then sent via Simple Mail Transfer Protocol (SMTP).
 
@@ -160,6 +160,8 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 14. Enter a subject and body for the message.
 15. Click **Send**. The message should be delivered in one to five minutes.
 
+## Other notes
+The system talks to Exchange or an SMTP server like a normal email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#RecipientLimits) apply.
 
 See also
 --------

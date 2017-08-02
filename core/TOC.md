@@ -497,8 +497,8 @@
 #### [Cost control mobile workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up security for the Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create cost elements  ](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-elements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create cost objects  ](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-objects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Create cost elements  ](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-elements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Create cost objects  ](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-objects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Cost accounting tasks
 ##### [Configure access rights for a cost object controller](/dynamics365/unified-operations/financials/cost-accounting/tasks/configure-access-rights-cost-object-controller?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Configure cost control workspace parameters](/dynamics365/unified-operations/financials/cost-accounting/tasks/configure-cost-control-workspace-parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)

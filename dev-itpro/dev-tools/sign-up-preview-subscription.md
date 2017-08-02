@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Sign up for a subscription
-description: In this tutorial, you will learn how to subscribe to the preview/partner offer and deploy an environment.
+title: Sign up for a preview subscription
+description: This topics describes how to subscribe to the preview/partner offer and deploy an environment.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
@@ -30,17 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Sign up for a subscription
+# Sign up for a preview subscription
 
 [!include[banner](../includes/banner.md)]
 
 
-In this tutorial, you will learn how to subscribe to the preview/partner offer and deploy an environment.
-
-Introduction
-------------
-
-In this tutorial, you will learn how create a subscription. This subscription will give you a Microsoft Online test tenant and a Microsoft Dynamics Lifecycle Services project where you can deploy an environment. You will also set up additional users in your Microsoft Online tenant and gain experience with the following service administration capabilities. Here are the skills that you will learn:
+This topic describes how to subscribe to the preview/partner offer and deploy an environment. The subscription you create will give you a Microsoft Online test tenant and a Microsoft Dynamics Lifecycle Services project where you can deploy an environment. You will also set up additional users in your Microsoft Online tenant and gain experience with the following service administration capabilities. Here are the skills that you will learn:
 
 -   Subscribing and creating a new Microsoft Online test tenant
 -   Navigating to Lifecycle Services projects
