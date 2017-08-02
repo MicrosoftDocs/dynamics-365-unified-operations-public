@@ -121,7 +121,6 @@ The following table includes links to resources that can help you implement both
 <td>Use the mobile framework to create custom mobile workspaces.</td>
 <td><ul>
 <li><a href="/platform/mobile-platform-home-page.md">Mobile framework</a></li>
-<li><a href="mobile-workspace-xpp-apis.md">Workspace X++ APIs</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
