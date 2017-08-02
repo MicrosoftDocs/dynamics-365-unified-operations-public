@@ -52,11 +52,11 @@ The usage data that is typically stored in the **SysLastValue** table will no lo
 Usage data is automatically reset upon moving to Platform update 9. Users will lose their usage data as part of this platform update process. This mostly includes data used for custom queries and saved dialog posting selections. Personalization is not affected.
 The new data format is versioned, backward compatible, and always preserved from Platform update 9 onward for future application and platform releases.
 
-##Odata Batch Size configuration
+## Odata Batch Size configuration
 Odata Batch Size is now configurable. Customer may now log a support request to DSE to increase the Batch Size upto MaxValue. The default is set 1000 records.
 
-##System startup performance for non-build VM
+## System startup performance for non-build VM
 You should no longer experience the system hang on startup of a non-build VM. The performance issues with load metadata has been addressed.
 
-##B2B user import
+## B2B user import
 Adminstrators are now able to import users from Dynamics 365 for Financials and Operations into the Azure Active Directory directly from the Client. They no longer have to import manually using .csv files.
