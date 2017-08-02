@@ -11,7 +11,27 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 
-# Apply a deployable package to a Finance and Operations environment
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
+# ms.tgt_pltfrm: 
+ms.custom: 107013
+ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: manado
+ms.search.validFrom: 2016-05-31
+ms.dyn365.ops.version: Platform update 1
+
+---
+
+
+# Troubleshooting guide for package deployment failures
 The topic below explains in detail how to troubleshoot issues seen when applying packages on your Tier 1 or Tier 2/3/4/5 environments. For details on how to apply a package refer to the [Apply a deployable package](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system) wiki.
 
 ## General troubleshooting/diagnostics
