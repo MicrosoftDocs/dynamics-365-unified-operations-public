@@ -37,18 +37,6 @@ ms.dyn365.ops.version: Platform update 2
 
 This topic lists the system requirements for the current version of Microsoft Dynamics 365 Finance and Operations, Enterprise edition, for cloud deployments. Before you install Finance and Operations, when appropriate, verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 
-## Network requirements
--   Finance and Operations is designed for networks with latency of 250-300 milliseconds (ms) or less. This is the latency from a browser client to the Microsoft Azure data center that hosts Finance and Operations. We recommend that you test network latency at <http://www.azurespeed.com>.
--   Bandwidth requirements for Finance and Operations depend on your scenario. Most typical scenarios require a bandwidth of more than 50 kilobytes per second (KBps). However, for scenarios that have high payload requirements, such as workspaces or scenarios that involve extensive customization, more bandwidth is recommended.
-
-In general, Finance and Operations is optimized for the Internet. The number of round trips from a browser client to the Azure data center is very small, and the whole payload is compressed. 
-
-> [!WARNING]
-> Don't compute bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent usage of a given location is very difficult to calculate. For customers who are concerned about bandwidth requirements, use a preview version of Finance and Operations.
-
-## .NET Framework requirements
-Finance and Operations requires .NET Framework version 4.6.2 for all click-once applications, such as the document routing agent. For installation instructions, see [Installing the .NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
-
 ## Supported web browsers
 The web application can run in any of the following web browsers that run on the specified operating systems:
 
@@ -73,6 +61,18 @@ Retail Cloud POS can run in any of the following web browsers that run on the sp
 -   Microsoft Edge (latest publicly available version) on Windows 10
 -   Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
 -   Chrome (latest publicly available version) on Windows 10, Windows 8.1, or Windows 7
+
+## Network requirements
+-   Finance and Operations is designed for networks with latency of 250-300 milliseconds (ms) or less. This is the latency from a browser client to the Microsoft Azure data center that hosts Finance and Operations. We recommend that you test network latency at <http://www.azurespeed.com>.
+-   Bandwidth requirements for Finance and Operations depend on your scenario. Most typical scenarios require a bandwidth of more than 50 kilobytes per second (KBps). However, for scenarios that have high payload requirements, such as workspaces or scenarios that involve extensive customization, more bandwidth is recommended.
+
+In general, Finance and Operations is optimized for the Internet. The number of round trips from a browser client to the Azure data center is very small, and the whole payload is compressed. 
+
+> [!WARNING]
+> Don't compute bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent usage of a given location is very difficult to calculate. For customers who are concerned about bandwidth requirements, use a preview version of Finance and Operations.
+
+## .NET Framework requirements
+Finance and Operations requires .NET Framework version 4.6.2 for all click-once applications, such as the document routing agent. For installation instructions, see [Installing the .NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
 
 ## Supported Microsoft Office applications
 The following Office applications are supported in the cloud and on-premises deployments of Finance and Operations.
