@@ -119,9 +119,7 @@ The following table includes links to resources that can help you implement both
 <td>4</td>
 <td>Developer or independent software vendor (ISV)</td>
 <td>Use the mobile platform to create custom mobile workspaces.</td>
-<td><ul>
-<li><a href="platform/mobile-platform-home-page.md">Mobile platform</a></li>
-</ul></td>
+<td><a href="platform/mobile-platform-home-page.md">Mobile platform</a></td>
 </tr>
 <tr class="odd">
 <td>5</td>
