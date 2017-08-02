@@ -2338,6 +2338,25 @@
 #### [Task Recorder quick reference](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-quick-reference?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create documentation or training using Task Recorder](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
+## Mobile platform
+### Getting started
+#### [Getting started](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-getting-started?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Architecture and design considerations](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-architecture?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### Configure a mobile workspace
+#### [Configure a workspace by using the SysAppWorkspace class](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/mobile-workspace-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Localize workspaces on the server](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/localize-workspaces-on-server?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Help secure a mobile app workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/secure-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Customize the display of a field so that it's clickable](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/make-workspace-field-clickable?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Make a field mandatory by using workspace classes](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/make-field-mandatory?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### Optimize a mobile workspace
+#### [Display a count in a field](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/display-count-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### Client-side development reference
+#### [Client-side design APIs overview](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/client-api-design-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Client APIs](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/client-apis-reference?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### Server-side development reference
+#### [Server-side development (workspace X++ APIs)](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-workspace-server-apis?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+
 ## Release solutions using Lifecycle Services
 ### [Develop and release](/dynamics365/unified-operations/dev-itpro/lcs-solutions/lcs-solutions-app-source?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Stage and publish](/dynamics365/unified-operations/dev-itpro/lcs-solutions/marketing-content-lcs-solutions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
