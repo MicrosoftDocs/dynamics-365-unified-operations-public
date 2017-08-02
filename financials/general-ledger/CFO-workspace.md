@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add financial dimensions to the CFO workspace
-description: This article describes how to add financial dimensions to the CFO workspace for the ledger and budget reports. 
+description: This topic explains how to add financial dimensions to the CFO workspace, so that they can be used for the ledger and budget reports. 
 author: aolson
 manager: AnnBe
 ms.date: 08/01/2017
@@ -34,42 +34,30 @@ ms.dyn365.ops.version: AX 7.2.0
 
 [!include[banner](../includes/banner.md)]
 
-This article describes how to add financial dimensions to the CFO workspace for the ledger and budget reports. The CFO workspace has an **Overview** and **Financial** tab. The reports on these two pages are backed by the LedgerActivityMeasure and the  BudgetActivityMeasure. With the Dynamics 365 for Finance and Operations,Enterprise edition July release, there is a relation between the two measures with the DimensionCombinationEntity to enable you to select dimensions.
+This topic explains how to add financial dimensions to the Chief Financial Officer (CFO) workspace, so that they can be used for the ledger and budget reports. The CFO workspace has an **Overview** tab and a **Financial** tab. The reports on these two tabs are backed by two measures: LedgerActivityMeasure and BudgetActivityMeasure. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, there is a relation between those two measures and the DimensionCombinationEntity entity. Therefore, you can select dimensions.
 
-1.  In Dynamics 365 for Finance and Operations, Enterprise edition, refresh the **LedgerActivityMeasure** and the **BudgetActivityMeasure** on the **Entity Store** page.
+1. In Finance and Operations, on the **Entity Store** page, update the **LedgerActivityMeasure** and the **BudgetActivityMeasure** measures.
+2. In Microsoft Visual Studio, open Application Explorer, and search for **LedgerCFO**.
+3. Under **Resources**, open **LedgerCFOWorkspacePBIX**.
+4. When the resource opens in Microsoft Power BI desktop, select **Get Data**, select **SQL Server database**, and then select **Connect**.
+5. Enter the server name, and enter **AxDW** as the database. Select **DirectQuery**, and then select **OK**.
+6. Search for and select **LedgerActivityMeasure\_DimensionCombination**, and then select **Load**.
 
-2.  In Visual Studio, go to **Application Explorer** and search for ‘**LedgerCFO’**.
+    > [!TIP]
+    > In the **Fields** list, rename the table **Financial dimensions**, so that it's easy to identify.
 
-3.  Find the **LedgerCFOWorkspacePBIX** under **Resources** and open it.
-
-4.  When it opens in PowerBI desktop, click **Get Data**, choose **SQL Server database**, click **Connect**.
-
-5.  Enter the Server name and type **AxDW** as the Database. Select **DirectQuery** > **OK**.
-
-6.  Search for and select **LedgerActivityMeasure\_DimensionCombination**, click **Load**.
-
-**Tip**: Rename the table in the Fields list to Financial dimensions so it’s easy to identify.
-
-7.  Click **Manage Relationships** and then click **New**.
-
-8.  Select **General Ledger Activities** from the first drop down, click **LedgerDimension**.
-
-9.  In the second drop-down, select **LedgerActivityMeasure\_DimensionCombination**, or Financial Dimensions if you renamed it. Click the header **DimensionCombinationRECID**.
-
+7. Select **Manage Relationships**, and then select **New**.
+8. In the first field, select **General Ledger Activities**, and then select **LedgerDimension**.
+9. In the second field, select **LedgerActivityMeasure\_DimensionCombination** (or **Financial dimensions** if you renamed the table). Select the  **DimensionCombinationRECID** header.
 10. In the **Cardinality** field, select **Many to One**.
+11. Change the **Cross filter direction** value to **Single**.
+12. Select both **Make this relationship active** and **Assume referential integrity**, select **OK**, and then select **Close**.
 
-11.  Change the **Cross filter direction** to be **Single**.
+    [![Create a relationship](./media/Create-relationship.png)](./media/Create-relationship.png)
 
-12.  Select both **Make this relationship active** and **Assume referential integrity**, click **OK** and then click **Close**.
+13. In the **Fields** list, you should see the table and the available financial dimensions. Drag the financial dimensions that you want to the report-level filters.
+14. Save your changes.
+15. In the Application Object Tree (AOT), right-click your project, and then select **Synchronize**.
+16. Build your project, and then open the application to view the results.
 
-[![Create relationship](./media/Create-relationship.png)](./media/Create-relationship.png)
-
-13.  In the **Fields** list, you see the table and available financial dimensions. Drag the financial dimensions you want to the Report level filters.
-
-14.  **Save** your changes.
-
-15.  Back in the AOT, right click your project and select to **Synchronize**.
-
-16.  **Build** your project and then open the application to view the results.
-
-[![Workspace.png](./media/workspace.png)](./media/workspace.png)
+    [![Completed workspace](./media/workspace.png)](./media/workspace.png)
