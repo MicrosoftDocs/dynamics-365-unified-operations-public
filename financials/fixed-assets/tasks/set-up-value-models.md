@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Set up value models
+title: Set up books
 description: This procedure shows you to how create a new fixed asset book and associate it with a fixed asset group. 
 author: saraschi2
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Set up value models
+# Set up books
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
