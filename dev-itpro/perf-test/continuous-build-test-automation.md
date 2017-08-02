@@ -123,7 +123,7 @@ As part of code Migration process or development activities, we expect you to ch
 7.  Click **Advanced settings**, select **Visual Studio Team Services**
     1.  Build Agent Name: Friendly name for build agent on VSTS
     2.  Build Agent Pool: specify build agent pool name which should be used for build machine deployment. Make sure VSTS contains at least one agent pool. By default, there will be the default pool. If you have deleted the default pool then build deployment will fail.
-    3.  Branch Name: Specify your VSTS source code branch which will be default source code sync location for the build VM. Default branch is "Trunk\\Main".
+    3.  Branch Name: Specify your VSTS source code branch which will be default source code sync location for the build VM. Default branch is "Main".
     
     ![Settings](media/settings.jpg)
 
