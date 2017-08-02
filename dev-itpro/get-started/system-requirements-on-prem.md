@@ -93,7 +93,9 @@ Based on the system configuration, data composition, and the applications and fe
 
 ## Minimum infrastructure requirements
 Finance and Operations (on-premises) uses Microsoft Azure Service Fabric to host the AOS, Batch, Data management, Management reporter, and Environment orchestrator services. Microsoft SQL Server Reporting Services (SSRS) are not hosted in the Service Fabric cluster.
+
 SQL Server must be set up in a high-availability HADRON setup that has at least two nodes for production use.
+
 The following figure shows the minimum recommended number of nodes in your Service Fabric cluster.
 
 [![recommended number of nodes for service fabric cluster](./media/system-reqs-on-premises-01.png)](./media/system-reqs-on-premises-01.png) 
@@ -159,6 +161,7 @@ The following software must be present on a computer before any Finance and Oper
 
 - Microsoft .NET Framework 4.5.1 or higher
 - Service Fabric
+
 For more information, see [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## Supported server operating systems
@@ -173,6 +176,7 @@ The following table lists the server operating systems that are supported for Fi
 - Only 64-bit versions of SQL Server 2016 are supported.
 - In a production environment, we recommend that you install the latest cumulative update (CU) for the version of SQL Server that you’re using.
 - Finance and Operations (on-premises) supports Unicode collations that are case-insensitive, accent-sensitive, kana-sensitive, and width-insensitive. The collation must match the Windows locale of the computers that are running AOS instances. If you’re setting up a new installation, we recommend that you select a Windows collation instead of a SQL Server collation. For more information about how to select a collation for a SQL Server database, see the [SQL Server documentation](/sql/sql-server/sql-server-technical-documentation).
+
 The following table lists the SQL Server versions that are supported for the Finance and Operations databases. For more information, see the minimum hardware requirements for [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2016).
 
 | Requirement                                                      | Notes                                                                                                                     |
