@@ -5,7 +5,7 @@ title: System requirements
 description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 Finance and Operations, Enterprise edition for cloud and on-premises deployments.
 author: sericks007
 manager: AnnBe
-ms.date: 07/14/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
