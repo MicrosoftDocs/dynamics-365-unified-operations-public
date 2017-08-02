@@ -58,12 +58,15 @@ As you work with Talent, you'll decide how to structure your organization, using
 -   [Organize your workforce using departments, jobs, and positions](departments-jobs-positions.md)
 -   [Set up company-specific HR parameters](set-up-company-specific-hr-parameters.md)
 -   [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md) 
+-   [Personnel actions FAQ](personnel-actions-faq.md)
+-   [Leave and absence overview](leave-absence-overview.md)
 
 ## Retain and motivate employees
 
 You can set up plans to effectively and equitably manage compensation, as well as manage items, such as computers or phones, that your organization lends to its employees. You can create fixed and variable compensation plans, as well as define rules that apply the compensation plan to meet the criteria for that plan.
 
 -   [Compensation plans](compensation-plans.md)
+-   [Process compensation](process-compensation.md)
 -   [Create fixed compensation plans](create-fixed-compensation-plans.md)
 -   [Create variable compensation plans](create-variable-compensation-plans.md)
 
