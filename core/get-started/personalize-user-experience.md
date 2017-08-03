@@ -5,7 +5,7 @@ title: Personalize the user experience
 description: This article explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -120,5 +120,12 @@ Users who have administrator privileges can also manage personalizations for oth
 - **Import** – You can import a personalization for one or more users. You use this tab after you've created a personalization on a page or workspace, and then exported that personalization as a personalization file. To import your personalization file and apply it to one or more users, select individual users in the list of all users, or filter by a specific role and then select users in that role. After you've selected the users who will use your personalization, click **Import**, and select your personalization file. The personalization will be validated and applied to all the selected users the next time that they open the selected page.
 - **Clear** – You can clear page or workspace personalizations for one or more users. First, select the page or workspace to clear personalizations for. Next, select individual users in the list of all users, or filter by a specific role and then select users in that role. After you've selected both a page or workspace and users, click **Clear**. All personalizations that the selected users have applied to the selected page or workspace are cleared. This action can't be undone. However, if the page or workspace has a saved personalization, that personalization can be re-imported.
 
+## Disregarded personalization of inventory dimensions
+
+When you personalize the setup of inventory dimensions on a page, you might have to consider settings that have been created by using the **Display dimension** option. If, for example, you use personalization to hide a column for the Batch number inventory dimension and the column appears the next time the page is opened, it could be because the Dimension display setup controls what inventory dimension columns should be displayed. 
+
+The Dimension display settings apply across all pages and these settings will disregard any personalized setup of inventory dimension fields on individual pages. 
+
+For the example with the Batch number inventory dimension, this dimension would have to be cleared as part of the **Display dimensions** option for the table to not display this column and eventually this change would apply not only on one specific page but across all pages.
 
 
