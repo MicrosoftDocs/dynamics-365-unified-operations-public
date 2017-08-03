@@ -57,7 +57,7 @@ PageMetadata <br>
 
 ### Controls
 
-Controls: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) [ ] (optional) 
+Controls: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) \[ \] (optional) 
 
 
 
