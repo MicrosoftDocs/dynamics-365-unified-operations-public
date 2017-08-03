@@ -39,7 +39,6 @@ The following table shows whether each feature is available in:
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
-| Feature or capability| | | |
 | Analytics| | | |
 | | Analytics and insights through Power BI | Yes | No |
 | | Analytics and intelligence  | No | No |
@@ -49,19 +48,18 @@ The following table shows whether each feature is available in:
 | | Embedded Power BI reports licensed for all users| Yes | No |
 | | Embedded Practice manager Power BI content| Yes | Yes |
 | | Entity store for high volume near real-time Power BI integration| Yes | ? |
-| | Fixed asset management workspace and embedded Power BI content| Yes | No |
 | Budgeting | | |
 | | Maintain carry-forward status| Yes | Yes |
 | Cost accounting| | | |
+| | Allocation bases| Yes | Yes |
 | | Cost accounting| Yes | ? |
-| | Cost accounting – Cross legal entities | Yes | Yes |
-| | Cost accounting allocation bases| Yes | Yes |
-| | Cost accounting content pack for Power BI| Yes | No |
-| | Cost accounting dimension hierarchies | Yes | Yes |
-| | Cost accounting Get started wizard| Yes | Yes |
-| | Cost accounting ledger administration workspace| Yes | Yes |
 | | Cost accounting Power BI reports| Yes | No |
 | | Cost control workspace for Mobile app| Yes | No |
+| | Cross legal entities | Yes | Yes |
+| | Content pack for Power BI| Yes | No |
+| | Dimension hierarchies | Yes | Yes |
+| | Get started wizard| Yes | Yes |
+| | Ledger administration workspace| Yes | Yes |
 | Cost management| | | |
 | | Templates for configuration data projects| Yes | Yes |
 | Customization| | | |
@@ -71,24 +69,19 @@ The following table shows whether each feature is available in:
 | | Configuration data projects| Yes | Yes |
 | | Configuration driven extension| Yes | No |
 | | Data management and integration| Yes | ? |
-| | Integrations| Yes | ? |
 | | Export data to your own data warehouse| Yes | ? |
+| | Integrations| Yes | ? |
 | Development and deployment | | | |
 | | Build automation: Automatic update of model version during build | Yes | Yes |
 | | Build automation: Option to include runtime packages in the deployable package of the automated build output| Yes | Yes |
 | | Customize application reports using extensions| Yes | ? |
 | | Deployment| Yes | ? |
-| | Developer tooling - Extensible controls are guided away from non-public APIs| Yes | Yes |
-| | Development and customization - Changing the extended data type (EDT) of a table field using table extensions| Yes | Yes |
-| | Development and customization - Compliance properties on table fields| Yes | Yes |
-| | Development and customization - Extending a group control| Yes | Yes |
-| | Development and customization - Extending the Country Region Codes property| Yes | Yes |
-| | Development and customization - Validating events on form data sources and form data source fields| Yes | Yes |
-| | Development and customization (AX 7.0)| Yes | No |
-| | Development and customization (Platform update 1)| Yes | No |
-| | Development and customization (Platform update 2 )| Yes | No |
-| | Development and customization (Platform update 3)| Yes | Yes |
-| | Development and customization (Platform update 5)| Yes | Yes |
+| | Extensible controls are guided away from non-public APIs| Yes | Yes |
+| | Changing the extended data type (EDT) of a table field using table extensions| Yes | Yes |
+| | Compliance properties on table fields| Yes | Yes |
+| | Extending a group control| Yes | Yes |
+| | Extending the Country Region Codes property| Yes | Yes |
+| | Validating events on form data sources and form data source fields| Yes | Yes |
 | | Development tooling - Customize and add your own field descriptions| Yes | Yes |
 | | Development tooling - New tabbed workspace pattern| Yes | Yes |
 | Document management| | | |
@@ -149,6 +142,7 @@ The following table shows whether each feature is available in:
 | | Tax| Yes | ? |
 | | Tax invoice and tax reports for Thailand| Yes | Yes |
 | | Setup for account determination in intercompany revenue and cost transactions can be made more granular | Yes | ? |
+| | Fixed asset management workspace and embedded Power BI content| Yes | No |
 | General ledger | | | |
 | | Intercompany revenue and cost transactions| Yes | ? |
 | | General ledger| Yes | ? |
@@ -353,6 +347,13 @@ The following table shows whether each feature is available in:
 
 
 
+I don't think we need to or should list these:
+| Item | | | |
+| | Development and customization (AX 7.0)| Yes | No |
+| | Development and customization (Platform update 1)| Yes | No |
+| | Development and customization (Platform update 2 )| Yes | No |
+| | Development and customization (Platform update 3)| Yes | Yes |
+| | Development and customization (Platform update 5)| Yes | Yes |
 
 
 
