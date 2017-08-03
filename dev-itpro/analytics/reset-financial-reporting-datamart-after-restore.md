@@ -39,14 +39,16 @@ This topic describes how to reset the financial reporting data mart after restor
 
 If you ever restore your Finance and Operations database from a backup or copy the database from another environment, you must follow the steps in this topic to ensure that the financial reporting data mart is correctly using the restored Finance and Operations database. 
 <!--If you have questions about resetting the financial reporting data mart for a reason outside of restoring a Finance and Operations database, refer to the [Resetting the Management Reporter data mart](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) for more information. -->
-> [!Note] The steps in this process are supported for Dynamics 365 for Operation May 2016 release (App build 7.0.1265.23014 and financial reporting build 7.0.10000.4) and newer releases. If you have an earlier release of Finance and Operations, contact our Support team for assistance.
+> [!Note] 
+> The steps in this process are supported for Dynamics 365 for Operation May 2016 release (App build 7.0.1265.23014 and financial reporting build 7.0.10000.4) and newer releases. If you have an earlier release of Finance and Operations, contact our Support team for assistance.
 
 ## Export report definitions
 First, export the report designs located in the Report Designer, using the following steps:
 
 1.  In the Report Designer, go to **Company** &gt; **Building Block Groups**.
 2.  Select the building block group to export, and click **Export**. 
-    > [!Note] For Finance and Operations, only one building block group is supported, **Default**.
+    > [!Note] 
+    > For Finance and Operations, only one building block group is supported, **Default**.
 3.  Select the report definitions to export:
     -   To export all your report definitions and the associated building blocks, click **Select All**.
     -   To export specific reports, rows, columns, trees, or dimension sets, click the appropriate tab, and then select the items to export. Press and hold the Ctrl key to select multiple items in a tab. When you select reports to export, the associated rows, columns, trees, and dimension sets are selected.
