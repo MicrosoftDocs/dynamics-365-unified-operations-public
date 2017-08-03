@@ -79,7 +79,7 @@ Lists come in two styles: simple and card.
 | [getRenderedRows](../interfaces/view-model-control-list-ilist-ilist.md#getrenderedrows) |getRenderedRows(): [Row](../interfaces/view-model-control-list-ilist-irow.md) \[ \]|  |
 | [getRowNavigation](../interfaces/view-model-control-list-ilist-ilist.md#getrownavigation) |getRowNavigation(row: [Row](../interfaces/view-model-control-list-ilist-irow.md)): Promise &lt;any&gt; &#124; any|  |
 | [getRowSelectionCount](../interfaces/view-model-control-list-ilist-ilist.md#getrowselectioncount) |getRowSelectionCount(): number|  |
-| [getRowSelections](../interfaces/view-model-control-list-ilist-ilist.md#getrowselections) |getRowSelections(): string [ ]|  |
+| [getRowSelections](../interfaces/view-model-control-list-ilist-ilist.md#getrowselections) |getRowSelections(): string \[ \]|  |
 | [getRowTracking](../interfaces/view-model-control-list-ilist-ilist.md#getrowtracking) |getRowTracking(row: any, index: string): string|  |
 | [getSearchColumn](../interfaces/view-model-control-list-ilist-ilist.md#getsearchcolumn) |getSearchColumn(): string|  |
 | [getSearchColumnLabel](../interfaces/view-model-control-list-ilist-ilist.md#getsearchcolumnlabel) |getSearchColumnLabel(): string|  |
