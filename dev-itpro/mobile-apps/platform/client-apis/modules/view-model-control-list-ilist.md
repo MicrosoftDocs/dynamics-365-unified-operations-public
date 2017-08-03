@@ -76,7 +76,7 @@ Lists come in two styles: simple and card.
 | [getData](../interfaces/view-model-control-list-ilist-ilist.md#getdata) |getData(): any \[ \]|  |
 | [getDesign](../interfaces/view-model-control-list-ilist-ilist.md#getdesign) |getDesign(): [Design](../interfaces/view-model-ipage-idesign.md)|Returns the design object of this control.<br>  Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[getDesign](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#getdesign) <br> |
 | [getListData](../interfaces/view-model-control-list-ilist-ilist.md#getlistdata) |getListData(): any|  |
-| [getRenderedRows](../interfaces/view-model-control-list-ilist-ilist.md#getrenderedrows) |getRenderedRows(): [Row](../interfaces/view-model-control-list-ilist-irow.md) [ ]|  |
+| [getRenderedRows](../interfaces/view-model-control-list-ilist-ilist.md#getrenderedrows) |getRenderedRows(): [Row](../interfaces/view-model-control-list-ilist-irow.md) \[ \]|  |
 | [getRowNavigation](../interfaces/view-model-control-list-ilist-ilist.md#getrownavigation) |getRowNavigation(row: [Row](../interfaces/view-model-control-list-ilist-irow.md)): Promise &lt;any&gt; &#124; any|  |
 | [getRowSelectionCount](../interfaces/view-model-control-list-ilist-ilist.md#getrowselectioncount) |getRowSelectionCount(): number|  |
 | [getRowSelections](../interfaces/view-model-control-list-ilist-ilist.md#getrowselections) |getRowSelections(): string [ ]|  |
