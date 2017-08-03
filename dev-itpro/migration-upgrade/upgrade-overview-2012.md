@@ -5,7 +5,7 @@ title: Upgrade Dynamics AX 2012 to Dynamics 365 for Finance and Operations, Ente
 description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: tariqbell
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -74,7 +74,7 @@ The upgrade analyzer tool runs against your AX 2012 environment and identifies t
 - **SQL configuration** – This process reviews the SQL configuration and recommends optimizations. By making sure that SQL performs optimally, this process helps reduce the time that is required for the upgrade go-live process.
 - **Deprecated features** – This process identifies features that you're currently using, but that aren't available in Finance and Operations. Therefore, the process helps you discover gaps in functionality early. It also provides suggestions for alternatives.
 
-Additionally, as part of this step, you must install [this hotfix](https://go.microsoft.com/fwlink/?linkid=852255) in the AX 2012 environment. This hotfix will provide a pre-upgrade checklist. In the AX 2012 environment, you can use this checklist to enter data that will be required for the upgrade procedure. For example, in one pre-upgrade checklist task, you provide the Microsoft Azure Active Directory (Azure AD) sign-in information for each current AX 2012 user, so that each user will be able to sign in to Finance and Operations.
+Additionally, as part of this step, you must install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255) in the AX 2012 environment. This hotfix provides a pre-upgrade checklist. In the AX 2012 environment, you can use this checklist to enter data that will be required for the upgrade procedure. For example, in one pre-upgrade checklist task, you provide the Microsoft Azure Active Directory (Azure AD) sign-in information for each current AX 2012 user, so that each user will be able to sign in to Finance and Operations.
 
 The output of this step becomes the workstream in the upgrade project plan for your AX 2012 system administrators.
 
