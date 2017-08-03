@@ -179,6 +179,7 @@ The following table shows whether each feature is available in:
 | | Track additional information about employees, jobs, positions, and benefits| Yes | No |
 | | Training courses| Yes | ? |
 | | Training Power BI reports | Yes | ? |
+| | Distribute tasks where it makes sense and increase efficiency| Yes | ? |
 | Inventory management| | | |
 | | Additional warehouse support in manufacturing | Yes | ? |
 | | Consignment inventory| Yes | ? |
@@ -339,12 +340,6 @@ The following table shows whether each feature is available in:
 | | Web client x 3| Yes | No |
 | Finances and Operations support | | | |
 | | Ideas portal| Yes | Yes |
-
-
-| Still checking | | | |
-| ---|---|---|---|
-|  | Distribute tasks where it makes sense and increase efficiency| Yes | ? |
-
 
 
 I don't think we need to or should list these:
