@@ -183,6 +183,9 @@ The following table shows whether each feature is available in:
 | | Single-click employment verification for all employees| Yes | ? |
 | | Support for a worker to be a project resource in multiple legal entities at the same time| Yes | Yes |
 | | Onboarding | Yes | No |
+| | Track additional information about employees, jobs, positions, and benefits| Yes | No |
+| | Training courses| Yes | ? |
+| | Training Power BI reports | Yes | ? |
 | Inventory management| | | |
 | | Additional warehouse support in manufacturing | Yes | ? |
 | | Consignment inventory| Yes | ? |
@@ -209,6 +212,7 @@ The following table shows whether each feature is available in:
 | | Manufacturing – Gantt control| Yes | ? |
 | Master planning and forecasting| | | |
 | | Safety stock de-prioritization in master planning and capable to promise (CTP) calculation| Yes | Yes |
+| | Turn off planning processes per company| Yes | No |
 | Mobile applications, platform, and framework | | | |
 | | Mobile – On-hand view app| Yes | Yes |
 | | Mobile framework| Yes | Yes |
@@ -256,6 +260,7 @@ The following table shows whether each feature is available in:
 | | Lean scheduling board| Yes | Yes |
 | | Optimize scheduling for planned production orders with overlap jobs| Yes | Yes |
 | | Production performance Power BI reports| Yes | Yes |
+| | Visual scheduling| Yes | No |
 | Project management and accounting| | | |
 | | Assign resources to draft work breakdown structure | Yes | Yes|
 | | Project management and accounting improvements | Yes | ? |
@@ -339,20 +344,13 @@ The following table shows whether each feature is available in:
 | | Task recording - Ability to insert and re-order steps| Yes | No |
 | | User interface| Yes | ? |
 | | Web client x 3| Yes | No |
-
+| Finances and Operations support | | | |
+| | Ideas portal| Yes | Yes |
 
 
 | Still checking | | | |
 | ---|---|---|---|
 |  | Distribute tasks where it makes sense and increase efficiency| Yes | ? |
-
-| Not a product feature | | | |
-| this is for our customers to send us ideas | Ideas portal| Yes | Yes |
-| | Track additional information about employees, jobs, positions, and benefits| Yes | No |
-| | Training courses| Yes | ? |
-| | Training Power BI reports | Yes | ? |
-| | Turn off planning processes per company| Yes | No |
-| | Visual scheduling| Yes | No |
 
 
 
