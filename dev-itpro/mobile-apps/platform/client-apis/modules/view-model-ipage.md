@@ -144,7 +144,7 @@ Page <br>
 
 | Name | Signature | Description |
 | ---- | --------- | ----------- |
-| [children](../interfaces/view-model-ipage-ipage.md#children) |children: [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md) [ ] <br>|  |
+| [children](../interfaces/view-model-ipage-ipage.md#children) |children: [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md) \[ \] <br>|  |
 | [dataLoadedInitially](../interfaces/view-model-ipage-ipage.md#dataloadedinitially) |dataLoadedInitially: Promise &lt;void&gt; <br>|  |
 | [metadata](../interfaces/view-model-ipage-ipage.md#metadata) |metadata: [PageMetadata](../interfaces/view-model-ipage-ipagemetadata.md) <br>|  |
 | [metadataLoaded](../interfaces/view-model-ipage-ipage.md#metadataloaded) |metadataLoaded: Promise &lt;void&gt; <br>|  |
