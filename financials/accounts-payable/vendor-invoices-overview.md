@@ -79,7 +79,7 @@ When you post the invoice, the **Invoice remainder** quantity for each item is u
 
 This option assumes that at least one product receipt has been posted for the purchase order. The vendor invoice is based on these product receipts and reflects the quantities from them. The financial information for the invoice is based on the information that is entered when you post the invoice.
 
-For more information, see [Recorder vendor invoice and match against received quantity](tasks/record-vendor-invoice-match-against-received-quantity.md).
+For more information, see [Record vendor invoice and match against received quantity](.accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md).
 
 ## Working with multiple invoices
 
@@ -88,7 +88,7 @@ You can work with multiple invoices at the same time and post them all at the sa
 
 For more information see:
 
- - [Set up vendor invoice policies](tasks/set-up-vendor-invoice-policies.md) 
+ - [Set up vendor invoice policies](.accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 
  - [Key invoice data into accounts payable using a vendor invoice](tasks/key-invoice-data-ap-system-vendor-invoice.md)
  
