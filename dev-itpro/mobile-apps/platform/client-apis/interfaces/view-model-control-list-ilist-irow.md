@@ -82,7 +82,7 @@ If true then the row will be hidden.
 
 ### imageFields
 
-imageFields: [Control](view-model-control-basecontrol-icontrol-icontrol.md) [ ]
+imageFields: [Control](view-model-control-basecontrol-icontrol-icontrol.md) \[ \]
 
 
 
