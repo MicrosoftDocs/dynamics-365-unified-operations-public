@@ -88,7 +88,7 @@ You can work with multiple invoices at the same time and post them all at the sa
 
 For more information see:
 
- - [Set up vendor invoice policies](.accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
+ - [Set up vendor invoice policies](..accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 
  - [Key invoice data into accounts payable using a vendor invoice](tasks/key-invoice-data-ap-system-vendor-invoice.md)
  
