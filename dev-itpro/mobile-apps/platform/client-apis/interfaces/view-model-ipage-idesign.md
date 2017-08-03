@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Design Type
 Design object type.
-For more information on design, please reference the [Design Introduction](../../scenarios/design-overview.md).
+
 
 ### Hierarchy
 
