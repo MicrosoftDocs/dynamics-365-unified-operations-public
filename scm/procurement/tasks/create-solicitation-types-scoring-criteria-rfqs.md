@@ -46,7 +46,6 @@ This guide shows you how to create a solicitation type and associate this with a
 1. Go to Procurement and sourcing > Requests for quotations > All requests for quotations.
 2. Click New.
 3. In the Solicitation type field, select the solicitation type that you have just created. 
-    *   
 4. Click OK.
 5. Click Scoring criteria.
     * The scoring criteria that are shown are the ones from the scoring method that you associated with the solicitation type. You can choose to add or delete criteria on this page. It's also possible to add new criteria by copying them from other scoring methods.  

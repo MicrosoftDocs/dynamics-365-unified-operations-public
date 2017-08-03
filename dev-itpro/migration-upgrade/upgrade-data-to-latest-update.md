@@ -5,7 +5,7 @@ title: Upgrade data in development, demo, or sandbox environments
 description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations database to the latest update.
 author: tariqbell
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -157,9 +157,9 @@ Execute the following SQL against the upgraded database to ensure that change tr
         ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
 ```
 
-## Additional steps for Management Reporter
+## Additional steps for financial reporting
 
-Reset the management reporter database by following the steps in this topic [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md) and then reimport the building block groups you exported in an earlier step.
+Reset the financial reporting data mart by following the steps in this topic [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md) and then reimport the building block groups you exported in an earlier step.
 
 ## Troubleshoot upgrade script errors
 The following sections provide steps you may perform when troubleshooting.

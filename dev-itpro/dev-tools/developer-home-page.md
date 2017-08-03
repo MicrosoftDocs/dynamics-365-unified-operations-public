@@ -222,7 +222,7 @@ The client is an HTML web client that runs in all major browsers. For informati
 -   [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)
 
 ## Mobile platform
--   [Mobile platform](..\mobile-apps\mobile-platform.md)
+-   [Mobile platform home page](../mobile-apps/platform/mobile-platform-home-page.md)
 
 ## Global finance management
 -   [Dimension entry control dialog support](..\financial\dimension-entry-control-dialog-support.md)
