@@ -63,6 +63,8 @@ The following table shows whether each feature is available in:
 | | Cost accounting Power BI reports| Yes | No |
 | | Cost control workspace for Mobile app| Yes | No |
 | Cost management| | | |
+| | Templates for configuration data projects| Yes | Yes |
+
 | Customization| | | |
 | Data management and integration| | | |
 | | Configuration data packages| Yes | Yes |
@@ -147,9 +149,11 @@ The following table shows whether each feature is available in:
 | | Reverse charge functionality for European countries/regions| Yes | Yes |
 | | Tax| Yes | ? |
 | | Tax invoice and tax reports for Thailand| Yes | Yes |
+| | Setup for account determination in intercompany revenue and cost transactions can be made more granular | Yes | ? |
 | General ledger | | | |
 | | Intercompany revenue and cost transactions| Yes | ? |
 | | General ledger| Yes | ? |
+| | Suspended and inactive dimension values hidden from dimension value lookups| Yes | Yes |
 | Help| | | |
 | | Help: Content moving to docs.microsoft.com from the Dynamics 365 for Operations Help Wiki| Yes | No |
 | Human capital management| | | |
@@ -178,6 +182,7 @@ The following table shows whether each feature is available in:
 | | View a comprehensive list of changes across employees, positons, and jobs | Yes | ? |
 | | Single-click employment verification for all employees| Yes | ? |
 | | Support for a worker to be a project resource in multiple legal entities at the same time| Yes | Yes |
+| | Onboarding | Yes | No |
 | Inventory management| | | |
 | | Additional warehouse support in manufacturing | Yes | ? |
 | | Consignment inventory| Yes | ? |
@@ -199,6 +204,7 @@ The following table shows whether each feature is available in:
 | | Localization configurations| Yes | ? |
 | | Regulatory updates| Yes | ? |
 | | Dynamics Translation Service| Yes | Yes |
+| | Substitution/adjustment invoices for Thailand| Yes | Yes |
 | Manufacturing| | | |
 | | Manufacturing – Gantt control| Yes | ? |
 | Master planning and forecasting| | | |
@@ -233,6 +239,7 @@ The following table shows whether each feature is available in:
 | | Upgrade and Support for Previous Versions| Yes | No |
 | | Servicing environments| Yes | No |
 | | Servicing environments| Yes | ? |
+| | Table browser is now in read-only mode| Yes | Yes |
 | Procurement and sourcing| | | |
 | | Intercompany order processing: ATP and direct shipment| Yes | ? |
 | | Mobile purchase order approvals| Yes | Yes |
@@ -288,6 +295,10 @@ The following table shows whether each feature is available in:
 | Sales| | | |
 | | Sales and profitability performance Power BI reports| Yes | No |
 | | Sales orders mobile app  | Yes | No |
+| | Prospect to cash integration of Dynamics 365 for Sales and Dynamics 365 for Operations| Yes | Yes |
+| Security | | | |
+| | Security| Yes | ? |
+| | SOC 1 Type 1 certification| Yes | No |
 | Service management| | | |
 | Supply chain management| | | |
 | Task guides| | | |
@@ -310,6 +321,7 @@ The following table shows whether each feature is available in:
 | | Piece picking confirmation| Yes | Yes |
 | | Product work confirmation for cluster picking| Yes | Yes |
 | | Production output location added to the resource group member| Yes | Yes |
+| | System grouping on an open work list| Yes | Yes |
 | Web/browser client | | | |
 | | Browser client - Ability to model toolbar actions in the overflow menu| Yes | Yes |
 | | Browser client - Access to Support via the Help & Support menu| Yes | Yes |
@@ -332,18 +344,10 @@ The following table shows whether each feature is available in:
 
 | Still checking | | | |
 | ---|---|---|---|
-| onboarding, coudl be HR (read roadmap) | Onboarding| Yes | No |
-| talent - check the roadmap? could be across the product | Distribute tasks where it makes sense and increase efficiency| Yes | ? |
-| talent? is it part of the product? | Ideas portal| Yes | Yes |
-| ?? | Prospect to cash integration of Dynamics 365 for Sales and Dynamics 365 for Operations| Yes | Yes |
-| | Security| Yes | ? |
-| | Setup for account determination in intercompany revenue and cost transactions can be made more granular | Yes | ? |
-| | SOC 1 Type 1 certification| Yes | No |
-| | Substitution/adjustment invoices for Thailand| Yes | Yes |
-| | Suspended and inactive dimension values hidden from dimension value lookups| Yes | Yes |
-| | System grouping on an open work list| Yes | Yes |
-| | Table browser is now in read-only mode| Yes | Yes |
-| | Templates for configuration data projects| Yes | Yes |
+|  | Distribute tasks where it makes sense and increase efficiency| Yes | ? |
+
+| Not a product feature | | | |
+| this is for our customers to send us ideas | Ideas portal| Yes | Yes |
 | | Track additional information about employees, jobs, positions, and benefits| Yes | No |
 | | Training courses| Yes | ? |
 | | Training Power BI reports | Yes | ? |
