@@ -61,7 +61,7 @@ Row <br>
 
 ### fieldList
 
-fieldList: [Control](view-model-control-basecontrol-icontrol-icontrol.md) [ ]
+fieldList: [Control](view-model-control-basecontrol-icontrol-icontrol.md) \[ \]
 
 
 
