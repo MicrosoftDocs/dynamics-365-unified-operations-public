@@ -55,7 +55,7 @@ Lists come in two styles: simple and card.
 | [DefaultSearchColumn](../interfaces/view-model-control-list-ilist-ilist.md#defaultsearchcolumn) |DefaultSearchColumn: string <br>|  |
 | [container](../interfaces/view-model-control-list-ilist-ilist.md#container) |container: boolean <br>|True if the control is a container.<br>  Inherited from [ContainerControl](../interfaces/view-model-control-container-icontainercontrol-icontainercontrol.md).[container](../interfaces/view-model-control-container-icontainercontrol-icontainercontrol.md#container) <br> |
 | [enableMultiSelect](../interfaces/view-model-control-list-ilist-ilist.md#enablemultiselect) |enableMultiSelect: boolean <br>|  |
-| [imageFields](../interfaces/view-model-control-list-ilist-ilist.md#imagefields) |imageFields: any [ ] <br>|  |
+| [imageFields](../interfaces/view-model-control-list-ilist-ilist.md#imagefields) |imageFields: any \[ \] <br>|  |
 | [performingRemoteSearch](../interfaces/view-model-control-list-ilist-ilist.md#performingremotesearch) |performingRemoteSearch: boolean <br>|  |
 | [searchQuery](../interfaces/view-model-control-list-ilist-ilist.md#searchquery) |searchQuery: [value: string]: any <br>|  |
 
