@@ -159,7 +159,7 @@ Page <br>
 | [canSubmit](../interfaces/view-model-ipage-ipage.md#cansubmit) |canSubmit(): boolean|  |
 | [close](../interfaces/view-model-ipage-ipage.md#close) |close(): void|  |
 | [getAction](../interfaces/view-model-ipage-ipage.md#getaction) |getAction(actionName: string): [PageLink](../interfaces/view-model-control-pagelink-ipagelink-ipagelink.md)|  |
-| [getActions](../interfaces/view-model-ipage-ipage.md#getactions) |getActions(): [PageLink](../interfaces/view-model-control-pagelink-ipagelink-ipagelink.md) [ ]|  |
+| [getActions](../interfaces/view-model-ipage-ipage.md#getactions) |getActions(): [PageLink](../interfaces/view-model-control-pagelink-ipagelink-ipagelink.md) \[ \]|  |
 | [getControl](../interfaces/view-model-ipage-ipage.md#getcontrol) |getControl(controlName: string): [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)|  |
 | [getDesign](../interfaces/view-model-ipage-ipage.md#getdesign) |getDesign(): [Design](../interfaces/view-model-ipage-idesign.md)|  |
 | [getEntityContext](../interfaces/view-model-ipage-ipage.md#getentitycontext) |getEntityContext(): EntityRef|  |
