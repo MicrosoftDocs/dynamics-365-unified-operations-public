@@ -53,10 +53,7 @@ Usage data is automatically reset upon moving to Platform update 9. Users will l
 The new data format is versioned, backward compatible, and always preserved from Platform update 9 onward for future application and platform releases.
 
 ## Odata Batch Size configuration
-Odata Batch Size is now configurable. Customer may now log a support request to DSE to increase the Batch Size upto MaxValue. The default is set 1000 records.
+Odata Batch Size is now configurable. Customer may now log a support request to DSE to increase the Batch Size upto a max value of 5,000. The default is set to 1,000 records.
 
 ## System startup performance for non-build VM
 You should no longer experience the system hang on startup of a non-build VM. The performance issues with load metadata has been addressed.
-
-## B2B user import
-Adminstrators are now able to import users from Dynamics 365 for Financials and Operations into the Azure Active Directory directly from the Client. They no longer have to import manually using .csv files.
