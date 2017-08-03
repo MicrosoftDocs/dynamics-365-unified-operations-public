@@ -93,7 +93,7 @@ You can waive, reinstate, or reverse complete interest notes, or fees and transa
 
 These adjustments affect only interest notes, and the interest and fees that they include. Use the steps in the “Create write-off transactions in one step” section to write off all of the charges that a customer owes.
 
-For more information see, [Create an interest code with a range](tasks/create-interest-code-range.md) and [tasks/Process interest](process-interest.md). 
+For more information see, [Create an interest code with a range](tasks/create-interest-code-range.md) and [Process interest](tasks/process-interest.md). 
 
 ## Create writeoff transactions
 You can write off bad debts by clicking Write off in the Collections form, and on the Aged balances, Customers, and Open customer invoices list pages. 
