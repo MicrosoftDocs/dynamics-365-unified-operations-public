@@ -88,7 +88,7 @@ BoundField: string (optional)
 
 ### Children
 
-Children: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) [ ] (optional) 
+Children: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) \[ \] (optional) 
 
 List of metadata for controls that will appear in each row of the list.
 
