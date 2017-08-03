@@ -83,7 +83,7 @@ Lists come in two styles: simple and card.
 | [getRowTracking](../interfaces/view-model-control-list-ilist-ilist.md#getrowtracking) |getRowTracking(row: any, index: string): string|  |
 | [getSearchColumn](../interfaces/view-model-control-list-ilist-ilist.md#getsearchcolumn) |getSearchColumn(): string|  |
 | [getSearchColumnLabel](../interfaces/view-model-control-list-ilist-ilist.md#getsearchcolumnlabel) |getSearchColumnLabel(): string|  |
-| [getSearchableColumns](../interfaces/view-model-control-list-ilist-ilist.md#getsearchablecolumns) |getSearchableColumns(): any [ ]|  |
+| [getSearchableColumns](../interfaces/view-model-control-list-ilist-ilist.md#getsearchablecolumns) |getSearchableColumns(): any \[ \]|  |
 | [hideSearchBar](../interfaces/view-model-control-list-ilist-ilist.md#hidesearchbar) |hideSearchBar(): boolean|  |
 | [isEditable](../interfaces/view-model-control-list-ilist-ilist.md#iseditable) |isEditable(): boolean|Boolean indicating if the control is editable.<br>  Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[isEditable](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#iseditable) <br> |
 | [loadMetaData](../interfaces/view-model-control-list-ilist-ilist.md#loadmetadata) |loadMetaData(): void|  |
@@ -93,7 +93,7 @@ Lists come in two styles: simple and card.
 | [performRemoteSearch](../interfaces/view-model-control-list-ilist-ilist.md#performremotesearch) |performRemoteSearch(): void|  |
 | [root](../interfaces/view-model-control-list-ilist-ilist.md#root) |root(): [Page](../interfaces/view-model-ipage-ipage.md)|Returns the root form instance (page) of this control.<br>  Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[root](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#root) <br> |
 | [selectSearchColumn](../interfaces/view-model-control-list-ilist-ilist.md#selectsearchcolumn) |selectSearchColumn(column: string): void|  |
-| [setRowSections](../interfaces/view-model-control-list-ilist-ilist.md#setrowsections) |setRowSections(selections: string [ ]): void|  |
+| [setRowSections](../interfaces/view-model-control-list-ilist-ilist.md#setrowsections) |setRowSections(selections: string \[ \]): void|  |
 
 #### Events
 
@@ -128,7 +128,7 @@ Lists come in two styles: simple and card.
 | [hideArrow](../interfaces/view-model-control-list-ilist-ilistdesign.md#hidearrow) |hideArrow: boolean (optional)  <br>|Allows an arrow ( > ) on a default styled navigation control to be hidden.<br>  |
 | [hideSearchBar](../interfaces/view-model-control-list-ilist-ilistdesign.md#hidesearchbar) |hideSearchBar: boolean (optional)  <br>|If true, the search bar will be hidden.<br>  |
 | [itemBorder](../interfaces/view-model-control-list-ilist-ilistdesign.md#itemborder) |itemBorder: "solid" &#124; "none" (optional)  <br>|If true, a border will appear around each row in the list.<br>  Inherited from [ContainerControlDesign](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md).[itemBorder](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md#itemborder) <br> |
-| [items](../interfaces/view-model-control-list-ilist-ilistdesign.md#items) |items: string &#124; [Design](../interfaces/view-model-ipage-idesign.md) [ ] (optional)  <br>|An array containing the components to place inside of the container.<br>  Inherited from [ContainerControlDesign](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md).[items](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md#items) <br> |
+| [items](../interfaces/view-model-control-list-ilist-ilistdesign.md#items) |items: string &#124; [Design](../interfaces/view-model-ipage-idesign.md) \[ \] (optional)  <br>|An array containing the components to place inside of the container.<br>  Inherited from [ContainerControlDesign](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md).[items](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md#items) <br> |
 | [justifyItems](../interfaces/view-model-control-list-ilist-ilistdesign.md#justifyitems) |justifyItems: "flex-start" &#124; "flex-end" &#124; "center" &#124; "space-between" (optional)  <br>|This property is an alias for the CSS property "justify-content".<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[justifyItems](../interfaces/view-model-ipage-idesign.md#justifyitems) <br> |
 | [label](../interfaces/view-model-control-list-ilist-ilistdesign.md#label) |label: string (optional)  <br>|  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[label](../interfaces/view-model-ipage-idesign.md#label) <br> |
 | [labelPosition](../interfaces/view-model-control-list-ilist-ilistdesign.md#labelposition) |labelPosition: "stacked" &#124; "hidden" &#124; "inline" (optional)  <br>|Determines how a label is positioned, if at all. By default, labelPosition is set to stacked.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[labelPosition](../interfaces/view-model-ipage-idesign.md#labelposition) <br> |
@@ -149,7 +149,7 @@ Lists come in two styles: simple and card.
 | ---- | --------- | ----------- |
 | [BoundEntity](../interfaces/view-model-control-list-ilist-ilistmetadata.md#boundentity) |BoundEntity: string (optional)  <br>|The entity to which the control is bound.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[BoundEntity](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundentity) <br> |
 | [BoundField](../interfaces/view-model-control-list-ilist-ilistmetadata.md#boundfield) |BoundField: string (optional)  <br>|  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[BoundField](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundfield) <br> |
-| [Children](../interfaces/view-model-control-list-ilist-ilistmetadata.md#children) |Children: [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md) [ ] (optional)  <br>|List of metadata for controls that will appear in each row of the list.<br>  |
+| [Children](../interfaces/view-model-control-list-ilist-ilistmetadata.md#children) |Children: [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md) \[ \] (optional)  <br>|List of metadata for controls that will appear in each row of the list.<br>  |
 | [Description](../interfaces/view-model-control-list-ilist-ilistmetadata.md#description) |Description: string (optional)  <br>|Description of the control.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Description](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#description) <br> |
 | [DetailsPageAppId](../interfaces/view-model-control-list-ilist-ilistmetadata.md#detailspageappid) |DetailsPageAppId: string (optional)  <br>|App ID of the page that each row in the list will navigate to.<br>  |
 | [DetailsPageId](../interfaces/view-model-control-list-ilist-ilistmetadata.md#detailspageid) |DetailsPageId: string (optional)  <br>|The ID of the page to which each row will navigate.<br>  |
@@ -193,10 +193,10 @@ Row <br>
 
 | Name | Signature | Description |
 | ---- | --------- | ----------- |
-| [fieldList](../interfaces/view-model-control-list-ilist-irow.md#fieldlist) |fieldList: [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md) [ ] <br>|  |
+| [fieldList](../interfaces/view-model-control-list-ilist-irow.md#fieldlist) |fieldList: [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md) \[ \] <br>|  |
 | [headerField](../interfaces/view-model-control-list-ilist-irow.md#headerfield) |headerField: [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md) <br>|  |
 | [hidden](../interfaces/view-model-control-list-ilist-irow.md#hidden) |hidden: boolean <br>|If true then the row will be hidden.<br>  |
-| [imageFields](../interfaces/view-model-control-list-ilist-irow.md#imagefields) |imageFields: [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md) [ ] <br>|  |
+| [imageFields](../interfaces/view-model-control-list-ilist-irow.md#imagefields) |imageFields: [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md) \[ \] <br>|  |
 | [isSelected](../interfaces/view-model-control-list-ilist-irow.md#isselected) |isSelected: boolean <br>|  |
 | [item](../interfaces/view-model-control-list-ilist-irow.md#item) |item: any <br>|A container of rendered data.<br>  |
 | [template](../interfaces/view-model-control-list-ilist-irow.md#template) |template: [Group](../interfaces/view-model-control-group-igroup-igroup.md) <br>|Group control that represents the template for a row.<br>  |
