@@ -2,7 +2,7 @@
 # required metadata
 
 title: Personalize the user experience
-description: This article explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 author: RobinARH
 manager: AnnBe
 ms.date: 08/03/2017
@@ -35,28 +35,28 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
+This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 
-There are many types of personalizations in Microsoft Dynamics 365 for Finance and Operations. Some personalizations are selections that you make in a list of options on a setup page. Some personalizations are implicit, for  example, Finance and Operations keeps track of the widths of grid columns if you adjust them, and the expanded/collapsed state of FastTabs. Other personalizations are explicit. For explicit personalizations, you enter an interactive personalization mode and modify the appearance of a page by directly managing the way that elements appear or act on the page. 
+There are many types of personalizations in Microsoft Dynamics 365 for Finance and Operations. Some personalizations are selections that you make in a list of options on a setup page. Some personalizations are implicit, for example, Finance and Operations keeps track of the widths of grid columns if you adjust them, and the expanded/collapsed state of FastTabs. Other personalizations are explicit. For explicit personalizations, you enter an interactive personalization mode and modify the appearance of a page by directly managing the way that elements appear or act on the page. 
 
 All personalizations, of any type, that a user makes in Finance and Operations are for that user only, regardless of the company that the user interacts with. Changes that a user makes to a page don't affect other users in the system.
 
 ## Systemwide options for the current user
-In the Navigation bar you'll find a gear image that is called the **Settings** menu button. Opening the **Settings** menu will show a number of choices. Selecting **Options** will open the user **Options** page. There you'll find four option tabs: **Visual**, **Preferences**, **Account**, and **Workflow**.
+In the Navigation bar you'll find a gear image that is called the **Settings** menu button. Opening the **Settings** menu will show a number of choices. Selecting **Options** will open the user **Options** page. There you'll find four option tabs: 
 
--   **Visual:** Use to choose a color theme and the default size of the elements on your pages.
--   **Preferences:** Here you can choose defaults for each time you open Finance and Operations, including the company, initial page, and default view/edit mode (which determines if a page is locked for viewing or opened for editing each time you open it). You'll also find language, time zone, and date, time, and number format options. Lastly this page contains a number of miscellaneous preferences that will vary from release to release.
--   **Account:** Use to provide your user ID and other account-related options.
--   **Workflow:** This where you can choose workflow-related options.
+-   **Visual** - Use to choose a color theme and the default size of the elements on your pages.
+-   **Preferences** - Here you can choose defaults for each time you open Finance and Operations, including the company, initial page, and default view/edit mode (which determines if a page is locked for viewing or opened for editing each time you open it). You'll also find language, time zone, and date, time, and number format options. Lastly this page contains a number of miscellaneous preferences that will vary from release to release.
+-   **Account** - Use to provide your user ID and other account-related options.
+-   **Workflow** - This where you can choose workflow-related options.
 
 ## Implicit personalizations
 Implicit personalizations are those personalizations that you perform simply by interacting with certain controls that remember their current visible state. 
 
-**Grid columns:** You can adjust the width of a column in a list by selecting the sizing bar to the left or right of the column header and sliding it left or right to the desired width. Finance and Operations will store the width that you'd like and show that column with that width every time you open the page with that list. 
+**Grid columns** - You can adjust the width of a column in a list by selecting the sizing bar to the left or right of the column header and sliding it left or right to the desired width. Finance and Operations will store the width that you'd like and show that column with that width every time you open the page with that list. 
 
-**FastTabs:** Some pages have expandable sections called FastTabs. Finance and Operations will store which FastTabs you have expanded, and which FastTabs you have collapsed. Each time you return to the page, those same FastTabs will be expanded or collapsed based on the last time you used them. In this article, we'll explain how to change the order of your FastTab sections. In some cases, collapsing a FastTab may improve performance because Finance and Operations will not need to retrieve the information for that FastTab until the FastTab is expanded. 
+**FastTabs** - Some pages have expandable sections called FastTabs. Finance and Operations will store which FastTabs you have expanded, and which FastTabs you have collapsed. Each time you return to the page, those same FastTabs will be expanded or collapsed based on the last time you used them. In this article, we'll explain how to change the order of your FastTab sections. In some cases, collapsing a FastTab may improve performance because Finance and Operations will not need to retrieve the information for that FastTab until the FastTab is expanded. 
 
-**Fact Boxes:** Some pages have a section called a Fact Box pane. This pane contains read-only information related to the current subject of the page. Each section in the Fact Box Pane is called a Fact Box. You can expand or collapse a Fact Box and Finance and Operations will store your preference. In some cases, collapsing a Fact Box may improve performance because Finance and Operations will not need to retrieve the information for that Fact Box until the Fact Box is expanded.
+**Fact Boxes** - Some pages have a section called a Fact Box pane. This pane contains read-only information related to the current subject of the page. Each section in the Fact Box Pane is called a Fact Box. You can expand or collapse a Fact Box and Finance and Operations will store your preference. In some cases, collapsing a Fact Box may improve performance because Finance and Operations will not need to retrieve the information for that Fact Box until the Fact Box is expanded.
 
 ## Explicit personalizations using the Personalization toolbar
 Every person and company has a different perspective on which data is most important to them, or which data isn’t needed for the way they run their business. The ability to tailor the way your information is ordered, interacted with, or even hidden is key to making Finance and Operations a personal and productive experience. 
@@ -111,9 +111,9 @@ Some workspaces contain count tiles (tiles with numbers on them) that you'd als
 The dashboard is often the first page you'll see when you open Finance and Operations. You can personalize the dashboard to rename your workspace navigation tiles, to show only the tiles that you'd like to see, rename the tiles, or to arrange the tiles in the order you'd prefer to see them. To personalize the dashboard, select any tile and right-click to open a context menu. On the context menu, select **Personalize**. If the selected tile is one that  you'd like to hide or rename or skip, you can make that change directly on the Property window that has appeared. If you'd like to arrange tiles, then select **Personalize this form** in the Property window to open the Personalization toolbar. You can then use the Move Tool to arrange the tiles.
 
 ## Administration of personalization
-After you personalize a page, you can share your personalizations with other user users. Just export the personalized page. You can then ask the other users to navigate to the personalized page and import the personalization file that you created.
+After you personalize a page, you can share your personalizations with other user users by exporting the personalized page. You can then ask the other users to navigate to the personalized page and import the personalization file that you created.
 
-Users who have administrator privileges can also manage personalizations for other users on the **Personalization** page. This page has four tabs: **System**, **Users**, **Import**, and **Clear**.
+Users who have administrator privileges can also manage personalizations for other users on the **Personalization** page. This page has four tabs: 
 
 - **System** – You can temporarily disable or turn off all personalizations in the system. In this case, you don't delete personalizations. Instead, you just reset all pages to their default state. If you re-enable personalization later, all personalizations are reapplied to each user's pages. You can also delete all personalizations for all users. Note that when you delete personalizations, there is no way to automatically re-enable personalizations from the system. Therefore, before you perform this step, make sure that you have exported all personalizations that you might want to import later.
 - **Users** – You can specify whether each user can do either implicit personalization or explicit personalization. You can also specify whether each user can do implicit or explicit personalization on a specific page. Finally, you can import, export, or delete a personalization for each user.
@@ -122,10 +122,8 @@ Users who have administrator privileges can also manage personalizations for oth
 
 ## Disregarded personalization of inventory dimensions
 
-When you personalize the setup of inventory dimensions on a page, you might have to consider settings that have been created by using the **Display dimension** option. If, for example, you use personalization to hide a column for the Batch number inventory dimension and the column appears the next time the page is opened, it could be because the Dimension display setup controls what inventory dimension columns should be displayed. 
+When you personalize the setup of inventory dimensions on a page, consider the settings that have been created by using the **Display dimension** option. For example, if you use personalization to hide a column for the Batch number inventory dimension and the column appears the next time the page is opened, it could be because the Dimension display setup controls what inventory dimension columns should be displayed. 
 
 The Dimension display settings apply across all pages and these settings will disregard any personalized setup of inventory dimension fields on individual pages. 
 
-For the example with the Batch number inventory dimension, this dimension would have to be cleared as part of the **Display dimensions** option for the table to not display this column and eventually this change would apply not only on one specific page but across all pages.
-
-
+For the example with the Batch number inventory dimension, this dimension would have to be cleared as part of the **Display dimensions** option for the table to not display this column. Eventually this change would apply not only on one specific page but across all pages.
