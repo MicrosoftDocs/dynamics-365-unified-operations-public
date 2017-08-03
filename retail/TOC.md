@@ -1440,8 +1440,7 @@
 ### [Troubleshooting](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Order management
-### Procurement and sourcing
-#### [Procurement and sourcing overview](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Procurement and sourcing](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Procurement and sourcing workflow](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-workflows?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Purchasing policies](/dynamics365/unified-operations/supply-chain/procurement/purchase-policies?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Procurement catalogs](/dynamics365/unified-operations/supply-chain/procurement/procurement-catalogs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1504,8 +1503,7 @@
 ##### [Submit and approve project budget revisions](/dynamics365/unified-operations/supply-chain/procurement/tasks/submit-approve-project-budget-revision?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 
-### Sales and marketing
-#### [Marketing](/dynamics365/unified-operations/supply-chain/sales-marketing/overview-sales-marketing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Sales and marketing](/dynamics365/unified-operations/supply-chain/sales-marketing/overview-sales-marketing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Sales orders
 ##### [Order promising](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Delivery alternatives](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-alternatives?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
