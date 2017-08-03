@@ -176,7 +176,7 @@ This property is equivalent to applying the border property individually to all 
 
 ### items
 
-items: string &#124; [Design](view-model-ipage-idesign.md) [ ] (optional) 
+items: string &#124; [Design](view-model-ipage-idesign.md) \[ \] (optional) 
 
 An array containing the components to place inside of the container.
 
