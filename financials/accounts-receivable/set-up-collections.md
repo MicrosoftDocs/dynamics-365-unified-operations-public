@@ -5,7 +5,7 @@ title: Set up Credit and collections
 description: This article explains how to set up the collections functionality.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -98,4 +98,11 @@ Set up email addresses for salespeople if you want to send email messages to sal
 If a sales representative isn't specified, the primary salesperson for the customer organization is used. If a primary salesperson isn't specified, email messages are sent to the first salesperson who is listed on the page.
 
 
+For more information, see the following topics:
+
+ - [Create a collection letter sequence](tasks/create-collection-letter-sequence.md)
+ 
+ - [Process collection letters](tasks/process-collection-letters.md)
+ 
+ - [Review collections information](tasks/review-collections-information.md)
 
