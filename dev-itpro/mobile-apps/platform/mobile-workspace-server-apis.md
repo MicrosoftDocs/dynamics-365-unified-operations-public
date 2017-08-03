@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mobile workspace X++ APIs
+title: Server-side development - workspace X++ APIs
 description: These APIs are available to X++ classes that extend SysAppWorkspace.
 author: makhabaz
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: robinr
 ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 255544
@@ -30,45 +30,41 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Mobile workspace X++ APIs
+# Server-side development (workspace X++ APIs)
 
 These APIs are available to X++ classes that extend **SysAppWorkspace**.
 
-Workspace attribute (SysAppWorkspaceAttribute)
-----------------------------------------------
+## Workspace attribute (SysAppWorkspaceAttribute)
 
 | Attribute parameter | Parameter arguments       | Description                                                                                                                        |
-|---------------------|---------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+|---------------------|---------------------------|-------|
 | AppId               | str \_appId               | Specifies the ID of the mobile workspace that the class is associated with.                                                        |
 | AppResourceName     | str \_appResourceName     | Specifies the AOT Resource containing the mobile workspace metadata that the class is associated with.                             |
 | WorkspaceHidden     | boolean \_workspaceHidden | Determines whether the associated mobile workspace is visible in the workspace designer and thus able to be published/unpublished. |
 
-Workspace lifecycle hooks
--------------------------
+## Workspace lifecycle hooks
 
-| Method               | Arguments         | Returns                 | Description                                                                                                                                    |
-|----------------------|-------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| Method               | Arguments         | Returns                 | Description          |
+|----------------------|-------------------|-------------------------|------------------|
 | getEnumValues        | EnumName          | List                    | A method you can override to modify the enum values available to the mobile workspace.                                                         |
 | getWorkspaceMetadata |                   | SysAppWorkspaceMetadata | A method you can override to modify mobile workspace metadata. Use super() to retrieve the metadata.                                           |
 | onBeginAppJob        | SysAppJobRequest  | void                    | A method you can override to modify input data from an action, or data load parameters from a page, before the job is processed by the system. |
 | onEndAppJob          | SysAppJobResponse | void                    | A method you can override to modify output data from the processing of an action or page, before the output is returned to the mobile app.     |
 
-Workspace metadata classes
---------------------------
+## Workspace metadata classes
 
-| Method              | Arguments                              | Returns              | Description                                                                                         |
-|---------------------|----------------------------------------|----------------------|-----------------------------------------------------------------------------------------------------|
+| Method              | Arguments                              | Returns              | Description           |
+|---------------------|----------------------------------------|----------------------|--------------|
 | addConfig           | str \_configName, object \_configValue | void                 | Allows passing custom serializable data contracts to your mobile workspace business logic.          |
 | getPage             | str \_pageName                         | SysAppPageMetadata   | Allows getting the metadata for a mobile workspace page. Use super() to retrieve the page metadata. |
 | getPageEnumerator   |                                        | MapEnumerator        | Allows enumerating over all page metadata instances.                                                |
 | getAction           | str \_actionName                       | SysAppActionMetadata | Allows getting the metadata for a mobile workspace action.                                          |
 | getActionEnumerator |                                        | MapEnumerator        | Allows enumerating over all action metadata instances.                                              |
 
-Page metadata class
--------------------
+## Page metadata class
 
-| Method               | Arguments             | Returns               | Description                                                                                                        |
-|----------------------|-----------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------|
+| Method               | Arguments             | Returns               | Description 
+|----------------------|-----------------------|-----------------------|--------------------|
 | getPageName          |                       | str                   | Allows getting a page’s name.                                                                                      |
 | pageTitle            | str \_pageTitle       | str                   | The property for the page’s title.                                                                                 |
 | pageDescription      | str \_pageDescription | str                   | The property for the page’s description.                                                                           |
@@ -77,11 +73,10 @@ Page metadata class
 | getControl           | str \_controlName     | SysAppControlMetadata | Allows getting metadata for a control on the page.                                                                 |
 | getControlEnumerator |                       | MapEnumerator         | Allows enumerating over all control metadata instances on the page.                                                |
 
-Action metadata class
----------------------
+## Action metadata class
 
-| Method               | Arguments              | Returns               | Description                                                                                                                        |
-|----------------------|------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| Method               | Arguments              | Returns               | Description  |
+|----------------------|------------------------|-----------------------|------|
 | getActionName        |                        | str                   | Allows getting the action’s name.                                                                                                  |
 | actionTitle          | str \_actionTitle      | str                   | The property for the action’s title.                                                                                               |
 | actionDescription    | str actionDescription  | str                   | The property for the action’s description.                                                                                         |
@@ -90,16 +85,15 @@ Action metadata class
 | getControl           | str \_controlName      | SysAppControlMetadata | Allows getting metadata for a control on the page.                                                                                 |
 | getControlEnumerator |                        | MapEnumerator         | Allows enumerating over all control metadata instances on the page.                                                                |
 
-Control metadata class
-----------------------
+## Control metadata class
 
-| Method         | Arguments                  | Returns | Description                                                                                                                        |
-|----------------|----------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------|
-| getControlName |                            | str     | Allows getting the control’s name                                                                                                  |
-| controlLabel   | str \_controlLabel         | str     | The property for the control’s label.                                                                                              |
-| controlHidden  | boolean \_controlHidden    | boolean | The property for determining whether the control is hidden from the page’s default design.                                         |
+| Method         | Arguments                  | Returns | Description                |
+|----------------|----------------------------|---------|------|
+| getControlName |                            | str     | Allows getting the control’s name |
+| controlLabel   | str \_controlLabel         | str     | The property for the control’s label.|
+| controlHidden  | boolean \_controlHidden    | boolean | The property for determining whether the control is hidden from the page’s default design. |
 | controlOrder   | int \_controlOrder         | int     | The property for determining the relative top-to-bottom positioning order of the control on it’s associated page’s default design. |
-| getProperty    | str \_key                  | anytype | Allows getting a property value from the control.                                                                                  |
-| setProperty    | str \_key, anytype \_value | void    | Allows setting a property value on the control.                                                                                    |
+| getProperty    | str \_key                  | anytype | Allows getting a property value from the control.|
+| setProperty    | str \_key, anytype \_value | void    | Allows setting a property value on the control. |
 
 

@@ -83,7 +83,7 @@ Lifecycle Services
 -   [Microsoft Dynamics 365 for Finance and Operations – Retail for IT Pros and developers](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)
 
 ## Mobile
--   [Finance and Operations mobile platform](../mobile-apps/mobile-platform.md)
+-   [Mobile platform](../mobile-apps/platform/mobile-platform-home-page.md)
 
 ## General administration
 -   [Finance and Operations cloud platform monthly updates](faq-platform-monthly-updates.md)
