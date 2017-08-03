@@ -59,7 +59,7 @@ The following table shows whether each feature is available in:
 | | Cost accounting content pack for Power BI| Yes | No |
 | | Cost accounting dimension hierarchies | Yes | Yes |
 | | Cost accounting Get started wizard| Yes | Yes |
-| | Cost accounting ledger administration workspace| Yes | Hybrid |
+| | Cost accounting ledger administration workspace| Yes | Yes |
 | | Cost accounting Power BI reports| Yes | No |
 | | Cost control workspace for Mobile app| Yes | No |
 | Cost management| | | |
@@ -122,29 +122,29 @@ The following table shows whether each feature is available in:
 | | Budgeting (November 2016)| Yes | No |
 | | Budgeting Power BI: actual vs. budget| Yes | No |
 | | Cash and bank management| Yes | ? |
-| | Cash flow forecasting Power BI| Yes | Hybrid |
+| | Cash flow forecasting Power BI| Yes | Yes |
 | | CFO Overview workspace| Yes | No |
 | | Edit account entries in the allocation journal| Yes | ? |
 | | Financial dimensions in Financial reporting report definition| Yes | Yes |
-| | Financial dimensions in Power BI| Yes | Hybrid |
+| | Financial dimensions in Power BI| Yes | Yes |
 | | Financial Performance PowerBI content designed for CFOs | Yes | ? |
 | | Financial report generation| Yes | Yes |
-| | Financial reporting| Yes | Hybrid |
+| | Financial reporting| Yes | Yes|
 | | Financial reporting| Yes | ? |
 | | Fixed assets| Yes | ? |
 | | Funding source can be selected for a fee journal line| Yes | ? |
 | | Funding sources can be selected for fee journal lines| Yes | ? |
 | | Late selection option for invoice proposals in a batch| Yes | ? |
 | | Late selection option when posting invoice proposals in a batch| Yes | ? |
-| | Vendor collaboration| Yes | Hybrid |
+| | Vendor collaboration| Yes | Yes |
 | | Vendor invoice attachment enhancements| Yes | Yes |
-| | Vendor payment analysis Power BI| Yes | Hybrid |
+| | Vendor payment analysis Power BI| Yes | Yes |
 | | Vendor prepayments in fixed-price project estimates| Yes | ? |
 | | Credit and collections| Yes | ? |
-| | Credit and collections management Power BI| Yes | Hybrid |
+| | Credit and collections management Power BI| Yes | Yes |
 | | Direct deposit| Yes | No |
 | | Save Financial reports to SharePoint| Yes | Yes |
-| | Mobile Invoice Approvals| Yes | Hybrid |
+| | Mobile Invoice Approvals| Yes | Yes |
 | | Operational performance Power BI content designed for COOs and CFOs| Yes | ? |
 | | Reverse charge functionality for European countries/regions| Yes | Yes |
 | | Tax| Yes | ? |
@@ -200,7 +200,7 @@ The following table shows whether each feature is available in:
 | | Global coverage - Configurable Electronic Reporting (July 2017)| Yes | Yes |
 | | Global coverage - Configurable Electronic Reporting (May 2016 Release)| Yes | No |
 | | Global coverage - Configurable Electronic Reporting (November 2016 release)| Yes | No |
-| | Global coverage - Countries/regions| Yes | Hybrid |
+| | Global coverage - Countries/regions| Yes | Yes |
 | | Global coverage - Languages| Yes | No |
 | | Global coverage - Retail| Yes | No |
 | | Country/region localizations & languages| Yes | ? |
@@ -314,7 +314,7 @@ The following table shows whether each feature is available in:
 | Warehouse management| | | |
 | | Enable withdrawal kanban for warehouse processes| Yes | Yes |
 | | Mobile warehouse app| Yes | No |
-| | Warehouse - Partial cycle counting at a location| Yes | Hybrid |
+| | Warehouse - Partial cycle counting at a location| Yes | Yes |
 | | Warehouse enhancements for high volume distribution centers| Yes | ? |
 | | Warehouse operation enhancements| Yes | ? |
 | | Warehouse work policies| Yes | ? |
