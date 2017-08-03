@@ -50,7 +50,7 @@ The following table shows whether each feature is available in:
 | | Embedded Practice manager Power BI content| Yes | Yes |
 | | Entity store for high volume near real-time Power BI integration| Yes | ? |
 | | Fixed asset management workspace and embedded Power BI content| Yes | No |
-| | Budgeting
+| Budgeting | | |
 | | Maintain carry-forward status| Yes | Yes |
 | Cost accounting| | | |
 | | Cost accounting| Yes | ? |
@@ -64,7 +64,6 @@ The following table shows whether each feature is available in:
 | | Cost control workspace for Mobile app| Yes | No |
 | Cost management| | | |
 | | Templates for configuration data projects| Yes | Yes |
-
 | Customization| | | |
 | Data management and integration| | | |
 | | Configuration data packages| Yes | Yes |
