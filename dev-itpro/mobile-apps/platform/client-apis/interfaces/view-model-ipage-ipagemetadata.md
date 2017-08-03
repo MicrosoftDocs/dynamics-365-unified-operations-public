@@ -99,7 +99,7 @@ SubmitButtonDesign: [Design](view-model-ipage-idesign.md) (optional)
 
 ### Tasks
 
-Tasks: [PageMetadata](view-model-ipage-ipagemetadata.md) [ ] (optional) 
+Tasks: [PageMetadata](view-model-ipage-ipagemetadata.md) \[ \] (optional) 
 
 
 
