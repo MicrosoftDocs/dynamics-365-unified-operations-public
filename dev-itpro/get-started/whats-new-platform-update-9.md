@@ -97,7 +97,7 @@ The functionality described in this topic is available as of Platform update 9 (
 
 However, this functionality requires the class being augmented to be compiled on Platform update 9. Because the current releases of the Dynamics 365 for Finance and Operations, Enterprise editon applications have been compiled on Platform update 8 or earlier, you will need to recompile a base package (like Application Suite) on Platform update 9 or newer in order to wrap a method that is defined in that package.  
 
-## OData batch size configuration
+## OData batch request size configuration
 The default OData batch request size is 1,000 records. Microsoft can now change the size of OData batch requests for customers. Customers must log a support request through LCS to the Dynamics Service Engineering team (DSE) to increase the batch size up to a maximum value of 5,000 records. For more information, see [Submit a request to the DSE team](../lifecycle-services/submit-request-dynamics-service-engineering-team)
 
 ## System startup performance for non-build VM
