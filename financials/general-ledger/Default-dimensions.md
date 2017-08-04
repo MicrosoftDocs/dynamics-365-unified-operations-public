@@ -34,22 +34,22 @@ ms.dyn365.ops.version: AX 7.2.0
 # How dimensions default when posting a document or journal
 
 [!include[banner](../includes/banner.md)]
+
 When planning and setting up your chart of accounts, there are a lot of considerations in how all the different components such as account structures, advanced rules, balancing and fixed dimensions work together when you are posting a document or journal. This article covers what each component is and how they work together.
 
 Chart of accounts and financial dimension components
 ----------------------------------------------------
 
-Dynamics 365 for Finance and Operations has a rich, rules-based system for defining valid main account and financial dimension value combinations. The following lists each component, a brief overview of the functionality, and where to find it.
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition has a rich, rules-based system for defining valid main account and financial dimension value combinations. The following lists each component, a brief overview of the functionality, and where to find it.
 
 ### Account structures
 
-An account structure is a required when setting up your ledger. You must have at least one account structure defined and activated in the system and assigned to the ledger. The account structure must have the main account in it. You can define the order of the segments that best works for the business. The system knows what account structure is being used once the main account is defined. So
-often it can be beneficial to have the main account first or near the front of a structure to help limit the values and for defaulting the last known valid value. You can have up to 10 additional financial dimensions in the account structure. The account structure defines which dimension values are valid in combination with other values, and whether dimension values are required to be entered.
+An account structure is a required when setting up your ledger. You must have at least one account structure defined, activated, and assigned to the ledger. The account structure must have the main account in it. You can define the order of the segments that best works for the business. The system knows what account structure is being used once the main account is defined. It can be beneficial to have the main account first or near the front of a structure to help limit the values and for defaulting the last known valid value. You can have up to 10 additional financial dimensions in the account structure. The account structure defines which dimension values are valid in combination with other values, and whether dimension values are required to be entered.
 
 ### Advanced rules
 
 Advanced rules are an optional component when setting up the chart of accounts. You can add as many advanced rules as you would like to an account structure. They are often used to handle scenarios where additional financial dimensions are needed to be tracked when specific criteria are met. For example, if you use a Travel expense account, you may want to track additional information such as
-the Event the employee is traveling for. When there are multiple advanced rules, they are applied based on the alphabetic order name of the rule. The segments that are added by the rule can also only be applied after the segments of the account structure.
+an event the employee is traveling for. When there are multiple advanced rules, they are applied based on the alphabetic order name of the rule. The segments that are added by the rule can also only be applied after the segments of the account structure.
 
 ### Balancing dimension
 
