@@ -1167,6 +1167,7 @@
 
 ### Document reporting and printing
 #### [Document Reporting Services overview](/dynamics365/unified-operations/dev-itpro/analytics/document-reporting-services?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Configure SSRS for an on-premises deployment](/dynamics365/unified-operations/dev-itpro/analytics/configure-ssrs-on-premises?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Printing](/dynamics365/unified-operations/dev-itpro/analytics/print-documents?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Enable network printer devices](/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Document generation, publishing, and printing capabilities in on-premises deployments](/dynamics365/unified-operations/dev-itpro/analytics/printing-capabilities-on-premises?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2082,7 +2083,8 @@
 
 # [Development & administration using the Unified Operations Platform](/dynamics365/unified-operations/dev-itpro/index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## [System requirements](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+## [System requirements for cloud deployments](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+## [System requirements for on-premises deployments](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements-on-prem?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ## [Demo data](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 
@@ -2498,6 +2500,10 @@
 #### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [On-premises deployment](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+#### [On-premises overivew](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Hardware sizing](/dynamics365/unified-operations/dev-itpro/get-started/hardware-sizing-on-premises-environments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Create an on-premises project](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Set up and deploy on-premises environments](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Deploy custom code
 #### [Create a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
