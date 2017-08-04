@@ -122,7 +122,7 @@ Users who have administrator privileges can also manage personalizations for oth
 
 ## Personalization of inventory dimensions
 
-When you personalize the setup of inventory dimensions on a page, consider the settings that have been created by using the **Display dimension** option. For example, if you use personalization to hide a column for the Batch number inventory dimension and the column appears the next time the page is opened, it could be because the Dimension display setup controls what inventory dimension columns should be displayed. 
+When you personalize the setup of inventory dimensions on a page, consider the settings that have been created by using the **Display dimension** option. For example, if you use personalization to hide a column for the Batch number inventory dimension and the column appears the next time the page is opened, it could be because the Dimension display settings control what inventory dimension columns are displayed. 
 
 The Dimension display settings apply across all pages and these settings will override any personalized setup of inventory dimension fields on individual pages. 
 
