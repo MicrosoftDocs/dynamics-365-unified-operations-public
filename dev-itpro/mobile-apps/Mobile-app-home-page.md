@@ -144,7 +144,7 @@ The following table includes links to resources that can help you implement both
 <td>User</td>
 <td>Download and install the mobile app.</td>
 <td><ul>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">For Andriod phones</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">For Android phones</a></li>
 <li><a href="https://go.microsoft.com/fwlink/?linkid=850663">For iPhones</a></li></ul>
 </td>
 </tr>
