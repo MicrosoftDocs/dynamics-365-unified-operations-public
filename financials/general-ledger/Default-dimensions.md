@@ -141,11 +141,11 @@ customer structure it could be beneficial to have a separate account structure o
 Additional resources 
 ---------------------
 
-Some of the additional resources reference Dynamics AX 2012. Although it is an earlier version, much of the defaulting and concepts are similar and the references are still valid.
+Some of the additional resources reference an earlier version of Dynamics 365 for Finance and Operations, Enterprise edition. Although it is an earlier version, much of the defaulting and concepts are similar and the references are still valid.
 
-<https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/example-balanced-journals-interunit-accounting>
+[Balanced journals for interunit accounting](example-balanced-journals-interunit-accounting.md)
 
-[Plan your chart of accounts](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/plan-chart-of-accounts?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+[Plan your chart of accounts](plan-chart-of-accounts.md) 
 
 [Planning your chart of accounts in AX 2012 blog](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – 7-part series, link is 1 of 7
 
