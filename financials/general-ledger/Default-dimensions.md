@@ -6,7 +6,7 @@ description: When planning and setting up your chart of accounts, there are a lo
 such as account structures, advanced rules, balancing and fixed dimensions work together when you are posting a document or journal. 
 author: aolson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 08/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
