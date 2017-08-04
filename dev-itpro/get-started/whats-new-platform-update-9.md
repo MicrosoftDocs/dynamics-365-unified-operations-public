@@ -100,5 +100,10 @@ However, this functionality requires the class being augmented to be compiled on
 ## OData batch request size configuration
 The default OData batch request size is 1,000 records. Microsoft can now change the size of OData batch requests for customers. Customers must log a support request through LCS to the Dynamics Service Engineering team (DSE) to increase the batch size up to a maximum value of 5,000 records. For more information, see [Submit a request to the DSE team](../lifecycle-services/submit-request-dynamics-service-engineering-team)
 
-## System startup performance for non-build VM
-You should no longer experience the system hang on startup of a non-build VM. The performance issues with load metadata has been addressed.
+## System startup performance for virtual machines
+You should no longer experience a system freeze when a virtual machine starts. Performance issues with loading metadata have been addressed.
+
+> [!NOTE]
+> This issue does not apply to virtual machines that are used as build machines (VMs that have enlistments and compile code). 
+
+
