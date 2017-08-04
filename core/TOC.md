@@ -5,8 +5,10 @@
 #### [Sign up for preview subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Deploy a demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Choose a deployment option](/dynamics365/unified-operations/dev-itpro/deployment/choose-deployment-type?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Cloud deployment](/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview)
-##### [On-premises deployment](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+##### [Cloud deployment](/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [System requirements for cloud deployments](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [On-premises deployment](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [System requirements for on-premises deployments](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements-on-prem?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Buy Finance and Operations
 ##### [Microsoft FastTrack for Dynamics 365](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
