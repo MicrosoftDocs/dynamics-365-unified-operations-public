@@ -51,3 +51,7 @@ The processes for each type of upgrade are similar, but different enough that we
 [Upgrade Finance and Operations to the latest platform update](upgrade-latest-platform-update.md)
 
 [Download Finance and Operations hotfixes from Lifecycle Services](download-hotfix-lcs.md)
+
+This Tech Talk video provides an introduction to servicing a Finance and Operations environment.
+
+> [!Video "https://www.youtube.com/embed/QkcdBI_ipTM?list=PLcakwueIHoT_BQxAZ6VFbWgX9sAWBW3Xi?ecver=1"]
