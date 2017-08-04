@@ -81,25 +81,25 @@ Main account
 |--------------|---------------|--------------|--------------------------------------------|
 | 401100       | Product Sales | USMF         | Fixed – 022 Sales and Marketing department |
 
-![](media/f54497393696d0026c0d3abcd338b46d.png)
+[![Default financial dimensions](.media/default-dimensions.png)](.media/default-dimensions.png)
 
 Figure 1: Fixed default dimension set on Main account 401100
 
 Using a very basic example of entering a general journal that has the Department set to default to 023, which is Operations, we will enter a ledger account and post it.
 
-![](media/31429b7e40fe536d6f465d1dc4f0b435.png)
+[![General journals](.media/general-journal.png)](.media/general-journal.png)
 
 Figure 2: Default financial dimension on the General journal header
 
 The default on the header of the journal will default Department 023 on my sales account line.
 
-![](media/34d15fb9a517fbc3068939f62d7a77f2.png)
+[![Journal voucher](.media/journal-voucher.png)](.media/journal-voucher.png)
 
 Figure 3: General journal line showing the 023 default from the header
 
 However, when I post it, the fixed dimension will be applied and it will post to 022.
 
-![](media/87a803c104cc7087dbedf5d35d753df2.png)
+[![Voucher transactions](.media/voucher-transactions.png)](.media/voucher-transactions.png)
 
 Figure 4: The posted voucher showing the fixed dimension applied for the sales account
 
@@ -107,13 +107,13 @@ Figure 4: The posted voucher showing the fixed dimension applied for the sales a
 
 Using the same setup defined in the first example, we will add a second component to our example. This time we will use a Balancing dimension of Department.
 
-![](media/693119663225b01be95fc48679798a06.png)
+[![Ledger](.media/ledger.png)](.media/ledger.png)
 
 Figure 5: Department set as the balancing financial dimension for ledger USMF
 
 When using the same journal header setup and posting the same transaction, the fixed dimension is applied, *then* the balancing logic to make sure every Department has a balanced entry.
 
-![](media/3be7019fd00807789f184fce1031323b.png)
+[![Voucher transactions](.media/voucher-transactions2.png)](.media/voucher-transactions2.png)
 
 Figure 6: Voucher transactions showing the balancing entry after the fixed dimension was applied
 
@@ -123,13 +123,13 @@ In the third example, we will add an advanced rule. The advanced rule defines th
 
 This example is important because of the order. The account structure is determined once the main account is entered. If you refer the account structure setup, the system knows that main account, business unit, department and cost center are relevant. At this point, the advanced rule has not been triggered because fixed dimensions will not be applied until the end of the journal voucher defaulting process during posting. You can see in the diagram that the Customer segment isn’t present as the criteria has not been met for the advanced rule.
 
-![](media/88075fe9dc4350b912f47ddca6c7adac.png)
+[![Ledger account](.media/drop-down.png)](.media/drop-down.png)
 
 Figure 7: The ledger account drop down showing that the Customer is not yet needed
 
 The posting will fail, because at the end of the process, the fixed dimension was applied. Dimension validation knows that Customer is needed if Main account is 401100 and Department is 022. It cannot post because of the validation error.
 
-![](media/b51ffbf2ce5c454591d044073d0fda56.png)
+[![Message details](.media/message.png)](.media/message.png)
 
 Figure 8: Message after dimension validation determines Customer is a required segment
 
@@ -141,23 +141,17 @@ customer structure it could be beneficial to have a separate account structure o
 Additional resources 
 ---------------------
 
-Some of the additional resources reference Dynamics AX 2012. Although it is an
-earlier version, much of the defaulting and concepts are similar and the
-references are still valid.
+Some of the additional resources reference Dynamics AX 2012. Although it is an earlier version, much of the defaulting and concepts are similar and the references are still valid.
 
 <https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/example-balanced-journals-interunit-accounting>
 
 [Plan your chart of accounts](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/plan-chart-of-accounts?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-[Planning your chart of accounts in AX 2012
-blog](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/)
-– 7-part series, link is 1 of 7
+[Planning your chart of accounts in AX 2012 blog](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – 7-part series, link is 1 of 7
 
-[Dimension defaulting in accounting
-distributions](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
+[Dimension defaulting in accounting distributions](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
-[Dimension defaulting in Dimensions
-framework](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2014/09/)
+[Dimension defaulting in Dimensions framework](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2014/09/)
 
 
 
