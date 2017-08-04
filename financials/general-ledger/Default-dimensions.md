@@ -81,25 +81,25 @@ Main account
 |--------------|---------------|--------------|--------------------------------------------|
 | 401100       | Product Sales | USMF         | Fixed – 022 Sales and Marketing department |
 
-[![Default financial dimensions](.media/default-dimensions.png)](.media/default-dimensions.png)
+[![Default financial dimensions](./media/default-dimensions.png)](./media/default-dimensions.png)
 
 Figure 1: Fixed default dimension set on Main account 401100
 
 Using a very basic example of entering a general journal that has the Department set to default to 023, which is Operations, we will enter a ledger account and post it.
 
-[![General journals](.media/general-journal.png)](.media/general-journal.png)
+[![General journals](./media/general-journal.png)](./media/general-journal.png)
 
 Figure 2: Default financial dimension on the General journal header
 
 The default on the header of the journal will default Department 023 on my sales account line.
 
-[![Journal voucher](.media/journal-voucher.png)](.media/journal-voucher.png)
+[![Journal voucher](./media/journal-voucher.png)](./media/journal-voucher.png)
 
 Figure 3: General journal line showing the 023 default from the header
 
 However, when I post it, the fixed dimension will be applied and it will post to 022.
 
-[![Voucher transactions](.media/voucher-transactions.png)](.media/voucher-transactions.png)
+[![Voucher transactions](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 Figure 4: The posted voucher showing the fixed dimension applied for the sales account
 
@@ -107,13 +107,13 @@ Figure 4: The posted voucher showing the fixed dimension applied for the sales a
 
 Using the same setup defined in the first example, we will add a second component to our example. This time we will use a Balancing dimension of Department.
 
-[![Ledger](.media/ledger.png)](.media/ledger.png)
+[![Ledger](./media/ledger.png)](./media/ledger.png)
 
 Figure 5: Department set as the balancing financial dimension for ledger USMF
 
 When using the same journal header setup and posting the same transaction, the fixed dimension is applied, *then* the balancing logic to make sure every Department has a balanced entry.
 
-[![Voucher transactions](.media/voucher-transactions2.png)](.media/voucher-transactions2.png)
+[![Voucher transactions](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 Figure 6: Voucher transactions showing the balancing entry after the fixed dimension was applied
 
@@ -123,13 +123,13 @@ In the third example, we will add an advanced rule. The advanced rule defines th
 
 This example is important because of the order. The account structure is determined once the main account is entered. If you refer the account structure setup, the system knows that main account, business unit, department and cost center are relevant. At this point, the advanced rule has not been triggered because fixed dimensions will not be applied until the end of the journal voucher defaulting process during posting. You can see in the diagram that the Customer segment isn’t present as the criteria has not been met for the advanced rule.
 
-[![Ledger account](.media/drop-down.png)](.media/drop-down.png)
+[![Ledger account](./media/drop-down.png)](./media/drop-down.png)
 
 Figure 7: The ledger account drop down showing that the Customer is not yet needed
 
 The posting will fail, because at the end of the process, the fixed dimension was applied. Dimension validation knows that Customer is needed if Main account is 401100 and Department is 022. It cannot post because of the validation error.
 
-[![Message details](.media/message.png)](.media/message.png)
+[![Message details](./media/message.png)](./media/message.png)
 
 Figure 8: Message after dimension validation determines Customer is a required segment
 
