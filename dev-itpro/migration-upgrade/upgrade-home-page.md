@@ -44,6 +44,11 @@ The processes for each type of upgrade are similar, but different enough that we
 
 [Prepare to migrate code from AX 2012 to Finance and Operations](prepare-migration.md)
 
+## Upgrade from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations
+This Tech Talk video provides an introduction to migration from AX 2009 to Dynamics 365 for Finance and Operations
+
+> [!Video "https://www.youtube.com/embed/kdQ58arACP4?list=PLcakwueIHoT_BQxAZ6VFbWgX9sAWBW3Xi?ecver=1"]
+
 ## Upgrade from a previous version of Finance and Operations
 
 [Overview of moving to the latest Finance and Operations update](upgrade-latest-update.md)
