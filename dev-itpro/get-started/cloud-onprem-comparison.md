@@ -76,7 +76,7 @@ The following table shows whether each feature is available in:
 | | Configuration data project templates| Yes | Yes |
 | | Configuration data projects| Yes | Yes |
 | | Configuration-driven extension| Yes | No |
-| | Configure cross-company data sharing by replicating reference and group data between multiple companies in the same Dynamics AX deployment. | ? | ? |
+| | Configure cross-company data sharing by replicating reference and group data between multiple companies in the same Dynamics AX deployment. | ? | ? |
 | | Export data to your own data warehouse| Yes | ? |
 | | Enable the export of incremental updates to a data entity. | Yes | ? |
 | Document management| | | |
@@ -305,6 +305,7 @@ The following table shows whether each feature is available in:
 | | Compensation and benefits Power BI reports | Yes | ? |
 | | Competency and development reports | Yes | ? |
 | | Complete access to historical compensation data| Yes | ? |
+| | Distribute tasks where it makes sense and increase efficiency| Yes | ? |
 | | Employee and manager self-service| Yes | No |
 | | Enable managers to work on behalf of employees | Yes | ? |
 | | Enhanced analytics for Human Capital Management| Yes | ? |
@@ -312,45 +313,45 @@ The following table shows whether each feature is available in:
 | | Human Resources Manager Power BI reports| Yes | ? |
 | | Integration to Talent Attract| Yes | No |
 | | Integration to Talent onboarding| Yes | No |
+| | New termination rules| Yes | ? |
 | | New workflows across employee self-service and manager self-service| Yes | ? |
 | | New workflows enabled in Human Resources| Yes | ? |
+| | Onboarding | Yes | No |
 | | Pre-employment access| Yes | No |
-| | Transitioning employees and contractors| Yes | ? |
-| | US Payroll| Yes | ? |
-| | New termination rules| Yes | ? |
 | | Recruiting Power BI reports | Yes | ? |
 | | Redesigned employee self-service | Yes | ? |
-| | Talent management| Yes | ? |
-| | View a comprehensive list of changes across employees, positons, and jobs | Yes | ? |
 | | Single-click employment verification for all employees| Yes | ? |
 | | Support for a worker to be a project resource in multiple legal entities at the same time| Yes | Yes |
-| | Onboarding | Yes | No |
+| | Talent management| Yes | ? |
+| | Transitioning employees and contractors| Yes | ? |
+| | US Payroll| Yes | ? |
+| | View a comprehensive list of changes across employees, positons, and jobs | Yes | ? |
 | | Track additional information about employees, jobs, positions, and benefits| Yes | No |
 | | Training courses| Yes | ? |
 | | Training Power BI reports | Yes | ? |
-| | Distribute tasks where it makes sense and increase efficiency| Yes | ? |
 
 
 ## Development and administration
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
+| Development and administration | | | |
 | | Build automation: Automatic update of model version during build | Yes | Yes |
 | | Build automation: Option to include runtime packages in the deployable package of the automated build output| Yes | Yes |
-| | Customize application reports using extensions| Yes | ? |
-| | Deployment| Yes | ? |
-| | Extensible controls are guided away from non-public APIs| Yes | Yes |
-| | Changing the extended data type (EDT) of a table field using table extensions| Yes | Yes |
 | | Compliance properties on table fields| Yes | Yes |
-| | Extending a group control| Yes | Yes |
-| | Extending the Country Region Codes property| Yes | Yes |
-| | Validating events on form data sources and form data source fields| Yes | Yes |
+| | Deployment| Yes | ? |
 | | Development tooling - Customize and add your own field descriptions| Yes | Yes |
 | | Development tooling - New tabbed workspace pattern| Yes | Yes |
+| | Validating events on form data sources and form data source fields| Yes | Yes |
 | Extensibility| | | |
+| | Changing the extended data type (EDT) of a table field using table extensions| Yes | Yes |
+| | Customize application reports using extensions| Yes | ? |
+| | Extending a group control| Yes | Yes |
+| | Extending the Country Region Codes property| Yes | Yes |
+| | Extensible controls are guided away from non-public APIs| Yes | Yes |
+| | Number sequence scope extensibility| Yes | No |
 | Platform | | | |
 | | Monitoring and telemetry| Yes | ? |
-| | Number sequence scope extensibility| Yes | No |
 | | Platform compatibility| Yes | ? |
 | | Upgrade| Yes | No |
 | | Upgrade and Support for Previous Versions| Yes | No |
