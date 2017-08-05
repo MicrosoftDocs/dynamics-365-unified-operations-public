@@ -247,7 +247,17 @@ If you're using Financial Reporting (formerly Management Reporter), then follow 
 
 ### If you're using Retail components
 If you’re using Retail components, you must perform additional steps to re-provision the target environment.
+You must ensure the following before proceeding:
+1. If your target enviornment is running Spring 2017 release or later, you must first apply the following KBs in your target environment
 
+-   KB: 4025631
+-   KB: 4035355
+-   KB: 4035492
+
+2. If your target environment is running Fall 2016 release, you must apply KB 4010947 in your target enviornment.
+3. If you have renamed "Default" Channel database or "Default" Channel Datagroup records you must first rename these back to "Default".
+
+Perform the following steps to run the Enviornment re-provisioning tool
 1. Navigate to the Shared asset library.
 2. Select **Software deployable package**.
 3. Download the Environment reprovisioning tool.
