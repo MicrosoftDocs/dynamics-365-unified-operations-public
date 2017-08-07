@@ -37,7 +37,7 @@ This topic lists the mobile workspaces that are available for use with the Dynam
 > [!NOTE]
 > The mobile app was previously named *Microsoft Dynamics 365 for Finance and Operations*.
 
-| Mobile workspace     | Description   | Learn more   |
+| Mobile workspace     | Description   | Initial release   |
 |----------------------|---------------|--------------|
 |[Company directory](company-directory-mobile-workspace.md)| Lets users view and contact other employees in their organization.| June 2017 |    
 |[My team](manager-self-service-mobile-workspace.md)| Lets users view their direct reports and extended staff, as well as send praise for individuals in their reporting chain.|June 2017 |     
