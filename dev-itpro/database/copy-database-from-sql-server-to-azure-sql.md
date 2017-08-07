@@ -62,7 +62,8 @@ If you encounter issues, see the Known issues and limitations section at the end
     -   Because of an Internet Protocol (IP) access restriction on all instances of Finance and Operations that run on Azure SQL Database, connections are allowed only from a computer in that environment.
     -   The version of Management Studio that is installed by default is for a previous version of SQL Server and can't perform the required tasks.
 
-**Important:** If your environment includes Retail components, you must manually store some environment-specific values before you begin. See the Additional steps for Retail environments section.
+> [!IMPORTANT]
+> If your environment includes Retail components, you must manually store some environment-specific values before you begin. See the Additional steps for Retail environments section.
 
 ## Before you begin
 Encrypted and environment-specific values can't be imported into a new environment. After you've completed the import, you must re-enter some data from your source environment in your target environment.
@@ -240,14 +241,13 @@ If using Financial Reporting (formerly Management Reporter) then follow the step
 ### If you're using Retail components
 If you’re using Retail components, you must perform additional steps to re-provision the target environment.
 You must ensure the following before proceeding:
-1. If your target enviornment is running Spring 2017 release or later, you must first apply the following KBs in your target environment
+1. If your target enviornment is running the July 2017 release or later, you must first apply the following hotfixes in your target environment: 
+ -   KB 4025631
+ -   KB 4035355
+ -   KB 4035492
 
--   KB: 4025631
--   KB: 4035355
--   KB: 4035492
-
-2. If your target environment is running Fall 2016 release, you must apply KB 4010947 in your target enviornment.
-3. If you have renamed "Default" Channel database or "Default" Channel Datagroup records you must first rename these back to "Default".
+2. If your target environment is running the November release (version 1611), you must apply KB 4010947 in your target environment.
+3. The default channel database and the default channel data group must be named "Default". If you have renamed them, you must change the names back.
 
 Perform the following steps to run the Enviornment re-provisioning tool
 1. Navigate to the Shared asset library.
