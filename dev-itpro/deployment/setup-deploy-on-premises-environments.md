@@ -234,22 +234,10 @@ Join each of the VMs to the domain by completing the steps in [How to join Windo
 ```
 $domainName = Read-Host -Prompt 'Specify domain name (ex: contoso.com)'
 Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter domain credential')
-Restart-Computer
 ```
-Once the VMs are joined to the domain, add the AOS Service Accounts (Contoso\svc-AXSF$ , Contoso\svc-AXSF$ ) to the local administrators group. You can check [Add a member to local group](https://technet.microsoft.com/en-us/library/cc772524(v=ws.11).aspx) article for how to do this.
 
-#### Disable User Access Control 
-
-Execute the following script to disable the User Access Control on **every** Service Fabric node.
-```
-$RegPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"
-New-ItemProperty -Path $RegPath -Name "EnableLUA" -Value 0 -PropertyType "DWORD" -Force
-New-ItemProperty -Path $RegPath -Name "ConsentPromptBehaviorAdmin" -Value 0 -PropertyType "DWORD" -Force
-New-ItemProperty -Path $RegPath -Name "EnableUIADesktopToggle" -Value 0 -PropertyType "DWORD" -Force
-New-ItemProperty -Path $RegPath -Name "LocalAccountTokenFilterPolicy" -Value 1 -PropertyType "DWORD" -Force
-```
-> [!IMPORTANT]
-> You must reboot the node after the script completes successfully.
+> [!Important]
+> You must restart the VMs after domain joining.
 
 #### Add prerequisite software to VMs
 
@@ -258,7 +246,7 @@ The following table lists the prerequisite software that must be applied to the 
 > [!NOTE]
 > You will have to restart your computer after you install the components.
 
-| Node type | Component | Command |
+ | Node type | Component | Command |
 |-----------|-----------|---------|
 | AOS       | SNAC – ODBC driver | See [Microsoft ODBC Driver 13.1 for SQL Server - Windows + Linux](https://www.microsoft.com/en-us/download/details.aspx?id=53339). |
 | AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | `Add-WindowsFeature -Name NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ` |
@@ -279,130 +267,107 @@ The following table lists the prerequisite software that must be applied to the 
 #### Download setup scripts from LCS
 
 We have provided several scripts to help improve the setup experience. Follow these steps to download the setup scripts from LCS.
+> [!Important]
+> The scripts need to be downloaded and executed from a machine in the domain Dynamics 365 for Finance and Operations, EE is installed on.
 
 1. Sign in to LCS (<https://lcs.dynamics.com/v2>).
 2. On the dashboard, click the **Shared asset library** tile.
 3. Click the **Model** tab.
 4. In the grid, select the **Dynamics 365 for Operations - On-premises Deployment scripts** row.
-5. Click **Versions**, and download the latest version of the scripts.
+5. Click **Versions**, and download the latest version of the scripts zip file.
+6. Right click on the zip file and check **Unblock** in the properties dialog.
+7. Unzip the files into a folder named **infra**
 
 ### Describe your configuration
 
-This section provides information about the scripts that you must run. The scripts are discussed in the order that you must run them in. To run the scripts, fill in the template file at $(downloadPath)\\ConfigTemplate.xml. The ConfigTemplate.xml file describes the Service Fabric clusters, the certificates that are used to configure them, and the accounts that must be granted access to the relevant certificates. In the example that is provided, the values are filled in for the example infrastructure that is described in this topic. The template file will be used in the next section.
+This section provides information about the scripts that you must run. The scripts are discussed in the order that you must run them in. To run the scripts, fill in the template file at $(downloadPath)\\ConfigTemplate.xml. The ConfigTemplate.xml file describes the Service Fabric clusters, the certificates that are used to configure them, and the accounts that must be granted access to the relevant certificates. The domain account(s) specified in **ProtectTo** tag will be the only account(s) that are able to import the pfx certificates. This is a security enhancement replacing the certificate passwords in plain text. In the example that is provided, the values are filled in for the example infrastructure that is described in this topic. The template file will be used in the next section.
 
-#### Create the domain account for a service user
+#### Create gMSA and domain user accounts
 
-Run the following command to create the domain user account, contoso\\AXServiceUser.
-
-```
-New-ADUser -Name 'AXServiceUser' `
-    -AccountPassword (Read-Host -Prompt 'Specify User Password' -AsSecureString) `
-    -PasswordNeverExpires $true -ChangePasswordAtLogon $false `
-    -Enabled $true -UserPrincipalName 'AXServiceUser@contoso.com'
-```
-
-#### Create gMSAs
-
-1. Change the directory to **$(DownloadPath)**, and run the following Windows PowerShell command.
-
-    > [!NOTE]
-    > This script doesn't create the users. Instead, it prints the commands that must be manually run on the domain controller machine.
+1. Navigate to the machine that has the downloaded and unzipped infrastructure scripts in folder **infra**.
+2. Copy the folder **infra** into the Domain Controller machine.
+3. Launch Windows Powershell in elevated mode, change directory to this folder and execute the following commands.
 
     ```
-    # Generate gMSA account creation script (shows in console):
-    .\Get-NewGMSAInDomainScript.ps1 -InputXml .\ConfigTemplate.xml
+    Import-Module Infrastructure\ D365FO-OP\D365FO-OP.psd1
+    New-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-2. Copy the output of the command into a Windows PowerShell window. Make sure that the line breaks are removed, and run the lines on the Active Directory domain controller machine by using elevated privileges (right-click, and then click **Run as Administrator**).
-3. Run the following script on the Active Directory domain controller machine to validate that the accounts have been successfully created. Make sure that you run the script after you replace the pattern that matches the naming convention of the service accounts.
+3. Execute the following script to validate the accounts have been created by replacing the wildcard in the filter command with the appropriate ones.
 
     ```
     #Use this command to validate the gMSA accounts are added to AD.
     #Ensure to replace the Filter parameter with the pattern used to create your accounts.
-    Get-ADServiceAccount -Filter { samAccountName -like "svc-*" }
+    Get-ADServiceAccount -Filter { samAccountName -like "*" }
     ```
 
-4. Run the Export-AddGMSAsONVMScript.ps1 script on the client machine. This script generates scripts that are run on each Service Fabric VM and adds them to a folder that corresponds to each VM name.
+4. If you need to make changes to accounts or machines, edit the ConfigTemplate.xml with the necessary changes and execute the below script to update. Make sure you copy any changes back to the original **infra**
 
     ```
-    # Exports a script for installing gMSA on VM nodes into a directory VMs\<VMName>, again feed from XML
-    .\Export-AddGMSAsOnVMScript.ps1 -InputXml .\ConfigTemplate.xml
+    Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
-
-#### Stop IIS
-
-Use Remote Desktop Protocol (RDP) to connect to each Service Fabric VM, and complete the manual steps in [Start or Stop the Web Server (IIS 7)](https://technet.microsoft.com/en-us/library/cc732317(v=ws.10).aspx). Alternatively, use the following Windows PowerShell script by using RDP to connect to each Service Fabric VM.
-
-```
-$ServiceName = "WAS"
-$wasService = Get-Service $ServiceName -ErrorAction SilentlyContinue
-if($wasService)
-{
-    $wasService.DependentServices | Stop-Service -Force -ErrorAction Continue
-    $wasService | Stop-Service -ErrorAction Continue
-    Set-Service $ServiceName -StartupType Disabled
-}
-
-$ServiceName = 'W3SVC'
-$w3svc = Get-Service $ServiceName -ErrorAction SilentlyContinue
-if($w3svc)
-{
-    $w3svc.DependentServices | Stop-Service -Force -ErrorAction Continue
-    $w3svc | Stop-Service -ErrorAction Continue
-    Set-Service $ServiceName -StartupType Disabled
-}
-```
-_IIS feature should be installed but disabled as there are some dependencies to the IIS dlls in the product._
 
 ### Install Certificates
 
-1. If you acquired the certificates that were listed earlier in this topic from a valid CA, fill in the .pfx file name and thumbprint for the certificates in the ConfigTemplate.xml file. Set the **generateSelfSignedCert** attribute to **False** and the **exportable** attribute to **False**. Copy the .pfx files to the $(DownloadPath)\\InfrastructureScripts\\Certs folder.
-2. If you're using self-signed certificates (for testing purposes only), run the following script. To create self-signed certificates, in the ConfigTemplate.xml file, make sure that **generateSelfSignedCert** is set to **True** and **exportable** is set to **True**. The script will update the XML with the thumbprint for the certificates.
+1. Navigate to the machine with the **infra** folder.
+
+2. If you need to generate self-signed certificates, execute the below command. The script will create the certificates, place in the CurrentUser\My certificate store on the machine and update the thumbprints in the xml file. 
 
     ```
-    # Create self-signed certs (optionally, use -Display if you only want to see commands):
-    # Note: this script is completely driven off ConfigTemplate.xml
-    .\New-SelfSignedCertificates.ps1 -InputXml .\ConfigTemplate.xml
+    # Create self-signed certs 
+    New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
+    
+For any certificates you need to reuse and skip creation, set the **generateSelfSignedCert** tag to **false**.
 
-3. Export the new certificates with the private key (the .pfx file). Use the following script to generate and run the export commands in Windows PowerShell. The .pfx files will be put into the Certs folder.
+3. If you are using SSL certificates, skip the certificate generation from above and update the ConfigTemplate.xml with the respective thumbprints.
+
+4. Ensure you enter the value against the **protectTo** tab. Only the AD user or group specified in the **protectTo** tab will have permissions to import the certificates into the individual VMs.
+
+5. Export the certificates into .pfx files.
 
     ```
-    # Exports Pfx files into a directory VMs\<VMName>, all the certs will reside in a folder named Certs\
-    # Feeds from XML, if certs don't have passwords then you are prompted to enter one
-    .\Export-PfxFiles.ps1 -InputXml .\ConfigTemplate.xml
+    # Exports Pfx files into a directory VMs\<VMName>, all the certs will be writtent to infra\Certs folder.
+    .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
-
-    > [!NOTE]
+    
+    > [!Important]
     > The certificates must have been installed and must be present in cert:\\CurrentUser\\My. The certificates must also be exportable.
-
-    If you're using self-signed certificates, skip to the next section. You don't have to complete this procedure.
-
-4. After you export or copy the .pfx files into the $(DownloadPath)\\InfrastructureScripts\\Certs folder, run the following commands to generate scripts that will be put in the folders that correspond to the VMs.
-
-    ```
-    # Exports script for adding ACLs to certs into a directory VMs\<VMName>
-    .\Export-CertificateAclsForVMs.ps1 -InputXml .\ConfigTemplate.xml
     
-    # Exports Import-PfxFiles.ps1 script for importing PFXs on VM nodes into a directory VMS\<VMname>:
-    .\Export-ImportPfxFilesScript.ps1 -InputXml .\ConfigTemplate.xml
+6. Export the scripts to be exceuted on each VM.
+
+   ```
+   # Exports the script files to be execute on each VM into a directory VMs\<VMName>.
+   .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+   ```
+  
+7. Download any msi installers from the list of VM pre-requiste software above into a file share that is accessible by all VMs.
+
+    > [!Note] 
+    > Add the SQL Server Management Studio msi to this folder if it is not already installed on the VMs.
+
+8. Copy the contents of each infra\VMs\<VMName> folder into the corresponding VM and execute the following scripts.
+
+    ```
+    # Install pre-req software on the VMs.
+    .\Configure-PreReqs.ps1 -MSIFilePath <path to the MSIS>
+    ```
     
-    .\Export-UnblockStrongNameScript.ps1 -InputXml .\ConfigTemplate.xml
-    ```
+    > [!Important] 
+    > Restart the machine if you recieve the prompt. Ensure that you re-run the .\Configure-PreReqs.ps1 after restarting, until the script succeeds.
 
-5. Copy the scripts in each folder to the VMs that correspond to the folder name.
-6. On each VM, run the following scripts in the order that they appear in.
+9. Execute the following scripts to complete the VM setup.  
 
     ```
-    #Run this script only if it exists
     .\Add-GMSAOnVM.ps1
-    
     .\Import-PfxFiles.ps1
-    
     .\Set-CertificateAcls.ps1
+    ```
     
-    #Run this script only if it exists
-    .\Unblock-StrongName.ps1
+10. Execute the below script to validate the VM setup.
+
+    ```
+    .\Test-D365FOConfiguration.ps1
     ```
 
 ### Set up a standalone Service Fabric cluster
@@ -410,48 +375,30 @@ _IIS feature should be installed but disabled as there are some dependencies to 
 1. Run the following command to generate the ClusterConfig.json file.
 
     ```
-    .\New-SFClusterConfig.ps1 -InputXml .\ConfigTemplate.xml
+   .\New-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
-
-    For more information, see, [Step 1B: Create a multi-machine cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster), [Secure a standalone cluster on Windows using X.509 certificates](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-windows-cluster-x509-security), and [Create a standalone cluster running on Windows Server](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster).
+    
+For more information, see, [Step 1B: Create a multi-machine cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster), [Secure a standalone cluster on Windows using X.509 certificates](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-windows-cluster-x509-security), and [Create a standalone cluster running on Windows Server](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster).
 
 2. Download the [Service Fabric standalone installation package](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#download-the-service-fabric-standalone-package) onto one of your Service Fabric nodes. After the zip file is downloaded, unblock it by right-clicking the zip file and then clicking **Properties**. In the dialog box, select the **Unblock** check box in the lower right.
+
 3. Copy the zip file to one of the nodes in the Service Fabric cluster, and unzip it.
-4. Run the following commands to create an inbound firewall rule on ports 443 and 445 in all nodes.
 
-    ```
-    #Create inbound Rule
-    New-NetFirewallRule -DisplayName "SFInbound443445" -LocalPort 135, 137, 138, 139, 445, 443 -Direction Inbound -Enabled True -Protocol TCP
-    
-    #Test inbound Rule
-    Get-NetFirewallRule -DisplayName "SFInbound443445"
-    ```
+4. Copy your ClusterConfig.json file to your unzipped install location of standalone Service Fabric.
 
-5. Run the following commands to create an inbound firewall rule on port 80 for the SSRS node only.
-
-    ```
-    #Create inbound Rule
-    New-NetFirewallRule -DisplayName "Reporting80" -LocalPort 80 -Direction Inbound -Enabled True -Protocol TCP
-    
-    #Test inbound Rule
-    Get-NetFirewallRule -DisplayName "Reporting80"
-    ```
-
-6. Copy your ClusterConfig.json file to your unzipped install location of standalone Service Fabric.
-7. Navigate to the unzipped install location in Windows PowerShell by using elevated privileges, and run the following command to test ClusterConfig.
+5. Navigate to the unzipped install location in Windows PowerShell by using elevated privileges, and run the following command to test ClusterConfig.
 
     ```
     .\TestConfiguration.ps1 -ClusterConfigFilePath .\clusterConfig.json
     ```
-
-8. If the test is successful, run the following command to deploy the cluster.
+    
+6. If the test is successful, run the following command to deploy the cluster.
 
     ```
     .\CreateServiceFabricCluster.ps1 -ClusterConfigFilePath .\ClusterConfig.json
     ```
-
-9. After the cluster is created, open the Service Fabric explorer on any client machine to validate the installation:
-
+    
+7. After the cluster is created, open the Service Fabric explorer on any client machine to validate the installation:
     1. Install the Service Fabric client certificate in CurrentUser\\My if it isn't already installed.
     2. Go to **IE settings** \> **Compatibility Mode**, and clear the **Display Intranet sites in compatibility mode** check box.
     3. Go to `https://sf.d365ffo.onprem.contoso.com:19080`, where sf.d365ffo.onprem.contoso.com is the host name of the Service Fabric cluster that is specified in the zone. If DNS name resolution isn't configured, use the IP address of the machine.
@@ -495,6 +442,7 @@ Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.
     ```
     Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
     ```
+    
 #### Set up the \\\\DAX7SQLAOFILE1\\aos-storage file share
 
 2. In Server Manager, select **File and Storage Services** \> **Shares**.
@@ -517,10 +465,13 @@ Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.
 3. Get an SSL certificate from a CA to configure Finance and Operations. For testing purposes, you can create and use a self-signed certificate.
 
 **Self-signed certificate for Clustered SQL instance**
+
    ```
    New-SelfSignedCertificate -CertStoreLocation "cert:\CurrentUser\My" -DnsName "DAX7SQLAOSQLA.contososqlao.com" -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -Subject "DAX7SQLAOSQLA.contososqlao.com"
    ```
+   
 **Self-signed certificate for Always-On SQL instance**
+
 ```
 #https://www.derekseaman.com/2014/11/sql-2014-alwayson-ag-pt-13-ssl.html
 
@@ -532,6 +483,7 @@ $listenerName = 'dax7sqlaosqla'
 $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$listenerName.$domain", $listenerName, $computerName -Provider 'Microsoft Enhanced RSA and AES Cryptographic Provider'
 
 ```
+
 4. Using the certificate, complete the steps in [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/en-us/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console) to configure SSL on SQL Server.
 5. For each node of the cluster, follow these steps. Make sure that you make the changes on the non-active node and fail over to it after changes are made.
 
@@ -616,7 +568,9 @@ $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$li
     GRANT VIEW SERVER STATE TO axdbadmin
     GRANT VIEW SERVER STATE TO [contososqlao\svc-AXSF$]
     ```
+    
 9. Run the following command:
+
 ```
 .\Reset-DatabaseUsers.ps1 -DatabaseServer ‘<FQDN of the SQL server>’ -DatabaseName '<AX database name>'
 ```
@@ -661,10 +615,6 @@ $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$li
     Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | clip
     ```
 
-    1. In Credentials.json, replace **\<encryptedDomainUserPassword\>** with the encrypted domain password.
-    2. Replace **\<encryptedSqlUser\>** with the encrypted Finance and Operations SQL user.
-    3. Replace **\<encryptedSqlPassword\>** with the Finance and Operations SQL password.
-    
 ### Set up SSRS
 
 1.  Before you begin, make sure that the prerequisites that are listed at the beginning of this topic are installed.
@@ -702,7 +652,7 @@ In order for AD FS to trust Finance and Operations for the exchange of authenti
 
 ```
 # Host URL is your DNS record\host name for accessing the AOS
-.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'ax.d365ffo.onprem.contoso.com'
+.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
 ```
 
 The AD FS management console should resemble the following illustration. To open Server Manager, click **Tools** \> **AD FS Management**, and then, at the bottom of the tree view on the left, click **Application Groups**. Double-click the application group to view more details.
@@ -716,34 +666,42 @@ With this the setup of infrastructure is complete. The following sections descri
 ## Configure connector and install on-premises local agent
 
 1. Sign in to [LCS](https://lcs.dynamics.com/) and open the on-premises implementation project.
+
 2. On the hamburger menu, click **Project settings**.
 
     ![Project settings command](./media/OPSetup_06_ProjectSettings.png)
 
 3. Click **On-premises connectors**.
+
 4. Click **Add** to create a new connector.
+
 5. On the **Setup host infrastructure** tab, download the agent installer.
 
     ![Download agent installer button on the Setup host infrastructure tab](./media/OPSetup_07_DownloadAgentInstaller.png)
 
 6. Verify that the zip file is unblocked. Right-click the file, click **Properties**, and then select **Unblock**.
+
 7. Unzip the agent installer on one of the Service fabric nodes of the **OrchestratorType** type.
+
 8. On the **Configure agent** tab, enter the configuration settings.
+
 9. Save the configuration, and then click **Download configurations** to download the localagent-config.json configuration file.
 
     ![Download configurations button on the Configure agent tab](./media/OPSetup_08_DownloadConfigurations.png)
 
 10. Copy the localagent-config.json file to the machine where the agent installer package is located.
+
 11. In a Command Prompt window, run the following command by navigating to the folder that contains the agent installer.
 
     ```
     LocalAgentCLI.exe Install <path to config.json>
     ```
-
+    
     > [!NOTE]
     > The user who runs this command must have **db\_owner** permissions on the OrchestratorData database.
     
 12. Once the local agent is installed successfully navigate back to your on-premises connector in LCS.
+
 13. On the **Validate setup** tab click on **Message agent** button. This will test for LCS connectivity to your local agent. When connection is established successfully the page will look like the graphic below.
 
      ![Validate agent](./media/ValidateAgent.PNG)
