@@ -256,7 +256,7 @@ You must ensure the following before proceeding:
  -   KB 4035492
 
 2. If your target environment is running the November release (version 1611), you must apply KB 4010947 in your target enviornment.
-3. If you have renamed the default channel database or the default channel data group, you must rename them **Default**.
+3. The default channel database and the default channel data group must be named "Default". If you have renamed them, you must change the names back.
 
 Perform the following steps to run the Enviornment re-provisioning tool
 1. Navigate to the Shared asset library.
