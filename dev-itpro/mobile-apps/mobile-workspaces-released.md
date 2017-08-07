@@ -48,7 +48,7 @@ This topic lists the mobile workspaces that are available for use with the Dynam
 | [Cost controlling](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace)     | Lets cost center managers see the performance of the cost center anytime and anywhere.                                                                                               |          |
 | [Inventory on-hand](/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace)    | Lets users gain insights into reserved and available inventory anytime and anywhere.                                                                                                    |        |
 | [Sales orders](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace)         | Lets users stay up to date on your sales orders anytime and anywhere.                                                                                                                          |                  |
-| [Vendor collaboration](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace | Lets your vendors stay up to date on the purchase orders that have been sent to them for approval. They can also view information about new and updated purchase orders and contacts. | ) |
+| [Vendor collaboration](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) | Lets your vendors stay up to date on the purchase orders that have been sent to them for approval. They can also view information about new and updated purchase orders and contacts. |  |
 
 
 
