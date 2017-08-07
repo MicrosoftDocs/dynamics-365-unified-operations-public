@@ -92,6 +92,17 @@ If your original check to a vendor or from a customer is lost or damaged, you ca
 
 
 
+For more information, see the following topics:
+
+[Set up postdated checks](tasks/set-up-postdated-checks.md)
+
+[Register and post a postdated check for a customer](tasks/register-post-postdated-check-customer.md)
+
+[Settle a postdated check from a customer](tasks/settle-postdated-check-customer.md)
+
+[Register and post a postdated check for a vendor](tasks/register-post-postdated-check-vendor.md)
+
+[Settle a postdated check for a vendor](tasks/settle-postdated-check-vendor.md)
 
 
 
