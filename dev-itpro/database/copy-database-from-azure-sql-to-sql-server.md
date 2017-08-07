@@ -3,9 +3,9 @@
 
 title: Copy Finance and Operations database - Azure SQL to SQL Server
 description: This topic provides information about how to export a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
-author: MargoC
+author: tariqbell
 manager: AnnBe
-ms.date: 07/10/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -94,7 +94,8 @@ Note that this command will execute asynchronously, meaning that it will appear 
 ## Prepare the copied database
 Run the following script against the copied database to remove change tracking, SQL Database users, and a system view. The script will also correct system flags, remove references to the previous environment, withhold batches, and remove email configuration. These changes are all required to successfully export and import the database and to ensure that when the AOS is started in the target environment, nothing will automatically start running. 
 
-**Note:** You must update the following ALTER DATABASE command with your database copy name.
+> [!NOTE]
+> You must update the following ALTER DATABASE command with your database copy name.
 
     --Prepare a database in SQL Azure for export to SQL Server.
     --Disable change tracking on tables where it is enabled.
@@ -206,7 +207,8 @@ The following list provides an explanation of the parameters:
 -   tdn (target database name): The name of the database that you will import to. The database should **not** already exist.
 -   sf (source file): The path and file name to import from.
 
-**Note:** During import, the user name and password are not required because SQL Server will default to Windows authentication for the currently logged on user.
+> [!NOTE]
+> During import, the user name and password are not required because SQL Server will default to Windows authentication for the currently logged on user.
 
 ## Update the database
 Execute the following SQL script against the imported database. This will add back the users that were deleted from the source database earlier, correctly linking them to the SQL logins for this SQL instance and also re-enable change tracking. Remember to edit the final ALTER DATABASE statement with your database name.
@@ -248,14 +250,13 @@ If you're using Financial Reporting (formerly Management Reporter), then follow 
 ### If you're using Retail components
 If you’re using Retail components, you must perform additional steps to re-provision the target environment.
 You must ensure the following before proceeding:
-1. If your target enviornment is running Spring 2017 release or later, you must first apply the following KBs in your target environment
+1. If your target enviornment is running the July 2017 release or later, you must first apply the following hotfixes in your target environment: 
+ -   KB 4025631
+ -   KB 4035355
+ -   KB 4035492
 
--   KB: 4025631
--   KB: 4035355
--   KB: 4035492
-
-2. If your target environment is running Fall 2016 release, you must apply KB 4010947 in your target enviornment.
-3. If you have renamed "Default" Channel database or "Default" Channel Datagroup records you must first rename these back to "Default".
+2. If your target environment is running the November release (version 1611), you must apply KB 4010947 in your target enviornment.
+3. If you have renamed the default channel database or the default channel data group, you must rename them **Default**.
 
 Perform the following steps to run the Enviornment re-provisioning tool
 1. Navigate to the Shared asset library.
