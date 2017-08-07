@@ -459,6 +459,7 @@
 ##### [Set up and create depreciation profiles](/dynamics365/unified-operations/financials/fixed-assets/tasks/set-up-depreciation-profiles?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up fixed asset groups](/dynamics365/unified-operations/financials/fixed-assets/tasks/set-up-fixed-asset-groups?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up fixed asset posting profiles](/dynamics365/unified-operations/financials/fixed-assets/tasks/set-up-fixed-asset-posting-profiles?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Set up value models](/dynamics365/unified-operations/financials/fixed-assets/tasks/set-up-value-models?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Split a fixed asset](/dynamics365/unified-operations/financials/fixed-assets/tasks/split-fixed-asset?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Transfer a fixed asset](/dynamics365/unified-operations/financials/fixed-assets/tasks/transfer-fixed-asset?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
