@@ -51,7 +51,9 @@ The letter of credit includes a description of the goods, any required documents
 A letter of credit can be revocable or irrevocable. The nature of a letter of credit can be transferable, non transferable, or revolving. Typically, a letter of credit is an irrevocable and confirmed agreement that payment will be made to a specific beneficiary upon submission of complete and accurate shipping documentation.
 
 For more information, see the following topics:
+
 [Import a letter of credit](tasks/import-letter-credit.md)
+
 [Export a letter of credit](tasks/export-letter-credit.md)
 
 
