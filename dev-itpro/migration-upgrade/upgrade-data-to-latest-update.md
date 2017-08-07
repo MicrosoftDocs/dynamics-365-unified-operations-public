@@ -46,12 +46,13 @@ This topic describes how to upgrade an older source database to the latest Fina
 > This process does not apply to the upgrade of data in Management Reporter database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 
 ## Before you begin
-1.  You must have a functional one-box demo or development environment that is already successfully running with the latest Finance and Operations update.
-2.  If you are upgrading from the Dynamics AX February 2016 release (also known as RTW) and upgrading to the May 2016 release, then the following hotfixes must be installed. These fixes must be installed in the destination environment. If you are upgrading to a newer version than the May 2016 release, you **do not** need these fixes, they are already included.
+1. Back up your current database. 
+2.  You must have a functional one-box demo or development environment that is already successfully running with the latest Finance and Operations update.
+3.  If you are upgrading from the Dynamics AX February 2016 release (also known as RTW) and upgrading to the May 2016 release, then the following hotfixes must be installed. These fixes must be installed in the destination environment. If you are upgrading to a newer version than the May 2016 release, you **do not** need these fixes, they are already included.
     -   Hotfix KB number 3170386, "Upgrade script error: ReleaseUpdateDB70\_DMF. updateIntegrationActivityExecutionMessageIdPreSync".
     -   Hotfix KB number 3180871, "Data upgrade from RTW to Update 1 causes errors when synchronizing views involving disabled configuration keys". This is a binary hotfix which will cause the database synchronize process to fail.
 
-3.  In your source environment you must be install the appropriate fix below for your version. These fixes will correct a bug in the SysSetupLog logic so that the upgrade understands correctly which version you are upgrading from:
+4.  In your source environment you must be install the appropriate fix below for your version. These fixes will correct a bug in the SysSetupLog logic so that the upgrade understands correctly which version you are upgrading from:
     - If upgrading from the February 2016 release (also known as RTW or 7.0) 7.0.1265.3015: Hotfix KB number 4023685 "Could not find source system version information" error when you upgrade to the latest Application Release 
     - If upgrading from the November 2016 release (also known as 1611 or 7.1) 7.1.1541.3036: Hotfix KB number 4023686 "Could not find source system version information" error when you upgrade to the latest Application Release 
     - If upgrading from the July 2017 release (also known as 7.2) 7.2.11792.56024: No additional fix is needed for this issue.
@@ -63,25 +64,26 @@ This topic describes how to upgrade an older source database to the latest Fina
     
         Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\\AosService\\PackagesLocalDirectory" -metadatadir        J:\\AosService\\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
     ```
-4.  If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required because the demo data contains bad records for some kernel X++ classes.
+5.  If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required because the demo data contains bad records for some kernel X++ classes.
 
     ```
        delete from classidtable where id >= 0xf000 and id <= 0xffff
     ```
     
-5.  You must apply the following KBs.
+6.  You must apply the following hotfixes.
     - KB 4036156
     - KB 4035399
 
-6.  Before running the data upgrade package, you must first perform the following to prepare the database
-    - If you are using Retail functionality, ensure that CDX jobs have been successfully run and that you have no unsynchronized    transactional data in the cloud channel database.
-    - Be sure to back-up your database before proceeding.
-    - Run the below script to delete the retail channel database. Do not delete the retail channel database in your source enviornment. The below steps will delete the older version of the retail channel database, which will then be re-created in the subsequent steps.
-    - If you have customizations that rely on retail channel database schema, you may encounter errors in the below steps, which will require you to first delete those channel database customizations before re-trying.
-    - In SQL Server Management studio, run the following script on the AX database.
+### Additional steps if you are using Retail functionality
+If you are using Retail functionality, before running the data upgrade package, you must first perform the following steps to prepare the database. 
+- Ensure that all commerce data exchange (CDX) jobs have been successfully run and that you have no unsynchronized transactional data in the cloud channel database.
+- Back up the channel database.    
+- The below steps will delete the older version of the retail channel database, which will then be re-created in the subsequent steps. Delete the channel database by run the following script to delete the retail channel database. Do not delete the retail channel database in your source environnment. 
+> [!NOTE]
+> If you have customizations that rely on retail channel database schema, you may encounter errors in the below steps. If you encounter errors, you must delete your channel database customizations, and then re-run the script.
     
-    ```
-            /* Drop all non-system stored procs under schema crt and ax */
+```
+        /* Drop all non-system stored procs under schema crt and ax */
         DECLARE @schemaCrt INT
         DECLARE @schemaAx INT
         DECLARE @schemaExt INT
@@ -329,7 +331,7 @@ This topic describes how to upgrade an older source database to the latest Fina
         END
         GO
 
-    ```
+```
 
 ## Download the latest data upgrade deployable package
 To obtain the latest data upgrade deployable package for your target environment that is running the latest Finance and Operations update, download the latest binary updates from Lifecycle Services (LCS).
