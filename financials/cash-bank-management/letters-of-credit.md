@@ -56,4 +56,6 @@ For more information, see the following topics:
 
 [Export a letter of credit](tasks/export-letter-credit.md)
 
+[Create a bank facility for a letter of credit](tasks/create-bank-facility-agreement-letter-credit.md)
+
 
