@@ -148,5 +148,5 @@ Specify the following values to set up your posting profile:
 
 
 
-For more information, see [Customer payment overview](../cash-bank-management/tasks/customer-payment-overview.md)
+For more information, see [Customer payment overview](../cash-bank-management/tasks/customer-payment-overview.md).
 
