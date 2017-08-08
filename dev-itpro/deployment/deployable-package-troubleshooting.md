@@ -2,10 +2,10 @@
 # required metadata
 
 title: Troubleshoot package application failures
-description: This topic explains 
+description: The topic provides information about how to troubleshoot issues that might occur when you apply packages on your Tier 1 or Tier 2/3/4/5 environments.  
 author: manalidongre
 manager: AnnBe
-ms.date: 07/31/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,57 +30,42 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-
 # Troubleshooting guide for package deployment failures
-The topic below explains in detail how to troubleshoot issues seen when applying packages on your Tier 1 or Tier 2/3/4/5 environments. For details on how to apply a package refer to the [Apply a deployable package](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system) wiki.
+This topic provides detailed information about how to troubleshoot issues that might occur when you apply packages on your Tier 1 or Tier 2/3/4/5 environments. For details on how to apply a package, see [Apply a deployable package](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system).
 
-## General troubleshooting/diagnostics
+## General troubleshooting and diagnostics
+If a package application isn't successful, you have two options:
+- Retry the failed operation Click  **Resume**  to retry the operation that failed.
+- Use the logs
 
-If package application isn't successful, you have two options:
+### Retry the failed operation
+If the package application fails and you want to retry the operation, click **Resume**.
 
-- Click  **Resume**  to retry the operation that failed.
+### Use the logs
+If the package application fails and you want to use the logs, complete the following steps. 
+1. Download and then unzip the log files.
+2. Select the role that a step failed for, such as  **AOS**  or  **BI**.
+3. Select the virtual machine where the step failed. You can find this information in the  **Machine name**  column in the  **Environment updates**  section.
+4. In the virtual machine logs, select the folder that corresponds to the step where the issue occurred. The folder name identifies the step that each folder corresponds to. 
+For example, if the issue occurred in the executing a step, select the  **ExecuteRunbook\* ** folder. The step number is highlighted and is the number after the globally unique identifier (GUID).
 
- 
-Using the logs
+## Address common failures during package application
 
-1. Download the logs.
-2. Unzip the log files.
-3. Select the role that a step failed for, such as  **AOS**  or  **BI**.
-4. Select the VM where the step failed. This information appears in the  **Machine name**  column in the  **Environment updates**  section.
-5. In the logs for the VM, select the folder that corresponds to the step where the issue occurred. The folder name identifies the step that each folder corresponds to. For example, if the issue occurred in the executing a step, select the  **ExecuteRunbook\** \* folder.
-
-For example, if the folder name is ExecuteRunbook-b0c5c413-dae3-4a7a-a0c4-d558614f7e98-1\_I0\_R0, the step number is highlighted and is the number after the globally unique identifier (GUID).
-
-
-
-## How To guide for addressing commonly seen failures during package application
-
-### General failures
-
-**Issue 1: Servicing status failed without listing any steps in the &quot;Environment updates&quot; section**
-
+**Issue:** Servicing status failed without listing any steps in the &quot;Environment updates&quot; section
 **Description:** This indicates that package being applied is invalid.
-
 - Download logs
 - Unzip and navigate to the AOS machine logs
 - Verify that &quot;DownloadFilesAndSlipstreamTools-xxx&quot; folder exist
 - Verify that &quot;GenerateRunbook-xxx&quot; folder exists
 - Click inside GenerateRunbook-xxx folder and open the output type file
-
 If error is found or an exception is found that a file is missing or failed to generate any steps for runbook etc, it&#39;s mainly due to invalid package being uploaded.
-
-**Action** :
-
+**Action:**
  Click **Abort** to abort the current package, upload a new package and start the servicing flow again.
 
-**Issue 2 : Package deployment has failed without any step failures.**
-
+**Issue:** Package deployment has failed without any step failures.
 **Description:** Timed-out when downloading the package into the machine. During servicing, there would be few steps that would be done in pre-servicing before running the actual steps in the runbook. As part of the pre-servicing the important step is downloading the package in all the machines. The time to download might vary a bit based on the data center where the environment is residing. If the download doesn&#39;t happen within 30 minutes, it would give up and result as failure in the servicing status.
-
 If It&#39;s been about 30 minutes since the package deployment is initiated, then you are mostly running into the issue. Resume should fix mostly fix the issue.
-
 **Action:**
-
 - Download the logs from the environment page
 - Ensure that the package download step has the logs in all the machines with the following folder DownloadFilesAndSlipstreamTools
 - Inspect the log files and if you do not see the following is shown at the end of the log file, then package download is not completed and hence the issue.
