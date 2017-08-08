@@ -1138,7 +1138,7 @@
 ## [Intelligence](/dynamics365/unified-operations/dev-itpro/analytics/information-access-reporting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Access Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Power BI content released](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Actual vs budget](/dynamics365/unified-operations/dev-itpro/analytics/ledger-budgets-power-bi?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Benefits](/dynamics365/unified-operations/dev-itpro/analytics/benefits-power-bi?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Cash overview](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
@@ -1245,6 +1245,8 @@
 #### [Aggregate data entities report](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-data-entities-report?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Key performance indicator (KPI) report](/dynamics365/unified-operations/dev-itpro/analytics/key-performance-indicators-report?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Power BI integration](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Create a Power BI report and dashboard](/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Create a Power BI report by using Finance and Operations data](/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-data?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Configure Power BI integration for workspaces](/dynamics365/unified-operations/dev-itpro/analytics/configure-power-bi-integration?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Power BI Embedded integration](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-embedded-integration?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Embedded Power BI in workspaces](/dynamics365/unified-operations/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1429,7 +1431,17 @@
 
 ## Mobile apps
 ### [Mobile app home page](/dynamics365/unified-operations/dev-itpro/mobile-apps/Mobile-app-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Mobile workspaces recently released](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspaces-released?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Mobile workspaces](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspaces-released?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Company directory](/dynamics365/unified-operations/dev-itpro/mobile-apps/company-directory-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Cost controlling](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Expense management](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Inventory on-hand](/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Invoice approvals](/dynamics365/unified-operations/dev-itpro/mobile-apps/invoice-approval-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [My team](/dynamics365/unified-operations/dev-itpro/mobile-apps/manager-self-service-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Project time entry](/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Purchase order approval](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Sales orders](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Vendor collaboration](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Publish a mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Office integration
