@@ -77,8 +77,8 @@ This topic describes how to upgrade an older source database to the latest Fina
 ### Additional steps if you are using Retail functionality
 If you are using Retail functionality, before running the data upgrade package, you must first perform the following steps to prepare the database. 
 - Ensure that all commerce data exchange (CDX) jobs have been successfully run and that you have no unsynchronized transactional data in the cloud channel database.
-- Back up the channel database.    
-- The below steps will delete the older version of the retail channel database, which will then be re-created in the subsequent steps. Delete the channel database by run the following script to delete the retail channel database. Do not delete the retail channel database in your source environnment. 
+- Back up the primary cloud channel database.    
+- The below steps will delete the older version of the retail channel database, which will then be re-created in the subsequent steps. Delete the primary cloud hosted channel database by running the following script to delete this. Do not delete the primary cloud hosted retail channel database in your source environnment. 
 > [!NOTE]
 > If you have customizations that rely on retail channel database schema, you may encounter errors in the below steps. If you encounter errors, you must delete your channel database customizations, and then re-run the script.
     
