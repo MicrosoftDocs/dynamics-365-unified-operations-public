@@ -57,7 +57,7 @@ For example, if the folder name is ExecuteRunbook-b0c5c413-dae3-4a7a-a0c4-d55861
 
 ### General failures
 
-**Issue 1: S**** ervicing status failed without listing any steps in the &quot;Environment updates&quot; section**
+**Issue 1: Servicing status failed without listing any steps in the &quot;Environment updates&quot; section**
 
 **Description:** This indicates that package being applied is invalid.
 
@@ -73,7 +73,7 @@ If error is found or an exception is found that a file is missing or failed to g
 
  Click **Abort** to abort the current package, upload a new package and start the servicing flow again.
 
-**Issue 2**** : **** Package deployment has failed without any step failures.**
+**Issue 2 : Package deployment has failed without any step failures.**
 
 **Description:** Timed-out when downloading the package into the machine. During servicing, there would be few steps that would be done in pre-servicing before running the actual steps in the runbook. As part of the pre-servicing the important step is downloading the package in all the machines. The time to download might vary a bit based on the data center where the environment is residing. If the download doesn&#39;t happen within 30 minutes, it would give up and result as failure in the servicing status.
 
@@ -86,7 +86,7 @@ If It&#39;s been about 30 minutes since the package deployment is initiated, the
 - Inspect the log files and if you do not see the following is shown at the end of the log file, then package download is not completed and hence the issue.
   - _Completed file download and slipstream successfully_
 
-**Issue 3**** : **** Package deployment has failed without any step failures.**
+**Issue 3 : Package deployment has failed without any step failures.**
 
 **Description:** Disk space is not enough to download the package. During servicing, there would be few steps that would be done in pre-servicing before running the actual steps in the runbook. As part of the pre-servicing the important step is downloading the package in all the machines. If there is not enough disk space to download the package, then the servicing would result as a failure. Inspect all the machines and any of the machines servicing drive is full then you are running into this issue.
 
@@ -127,8 +127,6 @@ Steps:
 - Open the output file for the step and see if there any errors.
 - If there any additional log files available, please inspect the logs for any errors.
 
-
-
 **Action 1** :
 
 Download the logs
@@ -144,8 +142,6 @@ If it fails again with the same issue
 - Check if there a fix available for the issue in the issue search.
 - If you see the following step failure, GlobalUpdate script for service model: AOSService, this indicates that either DBSync or Report deployment might have failed.
 - Look for DBSync.err file to see what the errors are and inspect DBSync.log file. For specific failures during DB Sync step, look at the **Common DB Sync Failures** section.
-
-
 
 **Issue 5: Deployment status is showing &quot;Servicing&quot; whereas the servicing status is in &quot;Failed state&quot;**
 
