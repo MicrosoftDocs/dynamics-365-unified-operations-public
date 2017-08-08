@@ -300,8 +300,8 @@ The following table shows whether each feature is available in:
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
-| All Talent features | Yes | No |
-| Allow a project resource to delegate timesheet entry and submission to any user | Yes | No |
+| All Talent areas | All Talent features | Yes | No |
+| Allow a project resource to delegate timesheet entry and submission to any user |   | Yes | No |
 | | Apply for any internal job posting through employee self-service | Yes | No |
 | | Benefits processing history| Yes | No |
 | | Compensation and benefits Power BI reports | Yes |  No  |
