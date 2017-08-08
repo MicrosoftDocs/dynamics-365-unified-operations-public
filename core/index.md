@@ -93,7 +93,7 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 <p><a href="../dev-itpro/analytics/financial-reporting-intro">Financial reporting</a></p>
 <p><a href="../dev-itpro/analytics/general-electronic-reporting">Regulatory reporting</a></p>
 
-<h3><a href="../dev-itpro/mobile-apps/mobile-platform">Mobile platform</a></h3>
+<h3><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page">Mobile platform</a></h3>
 
 <h3>Developer functionality</h3>
 <p><a href="../dev-itpro/dev-tools/developer-home-page">Developer home page</a></p>
