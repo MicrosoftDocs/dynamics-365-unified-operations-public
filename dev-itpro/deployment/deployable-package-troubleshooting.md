@@ -51,7 +51,7 @@ For example, if the issue occurred in the executing a step, select the  **Execut
 
 ## Package application issues
 
-**Issue:** Servicing status failed without listing any steps in the **Environment updates** section
+**Issue: Servicing status failed without listing any steps in the Environment updates section**
 
 **Description:** This indicates that package being applied is invalid.
 - Download logs
@@ -64,21 +64,22 @@ If error is found or an exception is found that a file is missing or failed to g
 **Action:** Click **Abort** to abort the current package, upload a new package and start the servicing flow again.
 
 
-**Issue:** Package deployment fails without any step failures
+**Issue: Package deployment fails without any step failures**
 
-**Description:** A time out occurs when downloading the package onto the machine. During pre-servicing, there are a few steps to be completed before the actual steps are completed in the runbook. As part of the pre-servicing, the important step is downloading the package in all the machines. The time to download might vary a bit based on the data center where the environment is residing. If the download doesn&#39;t happen within 30 minutes, it would give up and result as failure in the servicing status.
-If It&#39;s been about 30 minutes since the package deployment is initiated, then you are mostly running into the issue. Resume should fix mostly fix the issue.
+**Description:** A time out occurs when downloading the package onto the machine. During pre-servicing, a few steps must be completed before steps are completed in the runbook. As part of the pre-servicing, the package must be downloaded to all of the machines. The time to download might vary a bit based on the data center where the environment is residing. If the download doesn't happen within 30 minutes, it is considered a failure in the servicing status and will be stopped.
+If it has been about 30 minutes since the package deployment is initiated, then you are mostly running into the issue. Resume should fix mostly fix the issue.
 
 **Action:**
-- Download the logs from the environment page
-- Ensure that the package download step has the logs in all the machines with the following folder DownloadFilesAndSlipstreamTools
-- Inspect the log files and if you do not see the following is shown at the end of the log file, then package download is not completed and hence the issue.
+1. Download the logs from the **Environment** page.
+2. Verify that the package download has logs in all of the machines with the following folder DownloadFilesAndSlipstreamTools.
+3. Review the log files. If you do not see the following at the end of the log file, the package download is not completed which is why the issue occurred.
   - _Completed file download and slipstream successfully_
 
 
-**Issue:** Package deployment has failed without any step failures.
+**Issue:** Package deployment fails without any step failures
 
-**Description:** Disk space is not enough to download the package. During servicing, there would be few steps that would be done in pre-servicing before running the actual steps in the runbook. As part of the pre-servicing the important step is downloading the package in all the machines. If there is not enough disk space to download the package, then the servicing would result as a failure. Inspect all the machines and any of the machines servicing drive is full then you are running into this issue.
+**Description:** There is not enough disk space to download the package and therefore the servicing fails.
+Inspect all the machines and any of the machines servicing drive is full then you are running into this issue.
 
          Manually clean up old package deployment folder and free up disk space.
 
@@ -132,7 +133,7 @@ If it fails again with the same issue
 - Look for DBSync.err file to see what the errors are and inspect DBSync.log file. For specific failures during DB Sync step, look at the **Common DB Sync Failures** section.
 
 
-**Issue:** Deployment status is showing &quot;Servicing&quot; whereas the servicing status is in **Failed state**
+**Issue:** Deployment status is showing **Servicing** when the servicing status is in a **Failed state**
 
 **Description:**
 There is a re-try mechanism in-built to retry multiple times before it gives up especially the preparation step failures such as
@@ -143,13 +144,15 @@ There is a re-try mechanism in-built to retry multiple times before it gives up 
 **Action** : You can download the logs and see what the error is and start looking into it, before it finishes all the re-tries. If the in-built retry mechanism failed to go beyond the preparation stage after all re-tries. Please open a ticket for Microsoft team to investigate further, once you see the status as &quot;Failed&quot; and it&#39;s not due to invalid package issue.
 
 
-**Issue:** After the package deployment is done, failed to launch the dashboard
+**Issue: Dashboard doesn't launch after package deployment is complete**
 
 **Description:**
-This indicates that there might be a run-time error when starting the AOS.
-1. Launch event viewer
-2. Navigate to &quot;Applications and Services Logs &gt; Microsoft &gt; Dynamics &gt; Ax-SystemRuntime &gt; Operational
-Filter by errors and see if there are any errors and investigate.
+If the dashboard does not launch after the package deployment is complete, there might be a run-time error occurring when the AOS is started.
+
+**Action**
+1. Launch event viewer.
+2. Navigate to **Applications and Services Logs** > **Microsoft** > **Dynamics** > **Ax-SystemRuntime** > **Operational
+Filter by errors**, see if there are any errors, and investigate as necessary.
 
 
 ## Common DB Sync Failures
