@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: IT Pro
+audience: IT Pro, Developer, Application user
 # ms.devlang: 
 ms.reviewer: kfend
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
