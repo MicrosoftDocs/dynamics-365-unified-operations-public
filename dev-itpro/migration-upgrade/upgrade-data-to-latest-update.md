@@ -5,7 +5,7 @@ title: Upgrade data in development, demo, or sandbox environments
 description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations database to the latest update.
 author: tariqbell
 manager: AnnBe
-ms.date: 08/02/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -49,15 +49,15 @@ This topic describes how to upgrade an older source database to the latest Fina
 1. Back up your current database. 
 2.  You must have a functional one-box demo or development environment that is already successfully running with the latest Finance and Operations update.
 3.  If you are upgrading from the Dynamics AX February 2016 release (also known as RTW) and upgrading to the May 2016 release, then the following hotfixes must be installed. These fixes must be installed in the destination environment. If you are upgrading to a newer version than the May 2016 release, you **do not** need these fixes, they are already included.
-    -   Hotfix KB number 3170386, "Upgrade script error: ReleaseUpdateDB70\_DMF. updateIntegrationActivityExecutionMessageIdPreSync".
-    -   Hotfix KB number 3180871, "Data upgrade from RTW to Update 1 causes errors when synchronizing views involving disabled configuration keys". This is a binary hotfix which will cause the database synchronize process to fail.
+    -   KB 3170386, "Upgrade script error: ReleaseUpdateDB70\_DMF. updateIntegrationActivityExecutionMessageIdPreSync".
+    -   KB 3180871, "Data upgrade from RTW to Update 1 causes errors when synchronizing views involving disabled configuration keys". This is a binary hotfix which will cause the database synchronize process to fail.
 
-4.  In your source environment you must be install the appropriate fix below for your version. These fixes will correct a bug in the SysSetupLog logic so that the upgrade understands correctly which version you are upgrading from:
-    - If upgrading from the February 2016 release (also known as RTW or 7.0) 7.0.1265.3015: Hotfix KB number 4023685 "Could not find source system version information" error when you upgrade to the latest Application Release 
-    - If upgrading from the November 2016 release (also known as 1611 or 7.1) 7.1.1541.3036: Hotfix KB number 4023686 "Could not find source system version information" error when you upgrade to the latest Application Release 
-    - If upgrading from the July 2017 release (also known as 7.2) 7.2.11792.56024: No additional fix is needed for this issue.
+4.  In your source environment you must install the appropriate hotfix for your version. These fixes correct a bug in the SysSetupLog logic so that the upgrade process is aware of the version that you are upgrading from:
+    - If upgrading from the February 2016 release (also known as RTW or 7.0) 7.0.1265.3015: KB 4023685 "Could not find source system version information" error when you upgrade to the latest Application Release 
+    - If upgrading from the November 2016 release (also known as 1611 or 7.1) 7.1.1541.3036: KB 4023686 "Could not find source system version information" error when you upgrade to the latest Application Release 
+    - If upgrading from the July 2017 release (also known as 7.2) 7.2.11792.56024: No fix is needed for this version
 
-    In any one-box environment, after installing the application fixes from Step 3 above, ensure that a full database synchronization is run. This step is especially important for golden database environments. A full database synchronization is required because this step populates a table (SysSetupLog) that is used when upgrading the database. Running the database synchronize from Visual Studio is not suitable for step, because it does not trigger the SysSetup interface. To trigger the SysSetup interface run the following command from an Administrator command prompt:
+    In any one-box environment, after installing the application fixes from Step 3 above, ensure that a full database synchronization is run. This step is especially important for golden database environments. A full database synchronization is required because this step populates a table (SysSetupLog) that is used when upgrading the database. Running the database synchronize from Visual Studio is not suitable for this step, because it does not trigger the SysSetup interface. To trigger the SysSetup interface run the following command from an Administrator command prompt:
 
     ```
        cd J:\\AosService\\WebRoot\\bin>
@@ -77,10 +77,10 @@ This topic describes how to upgrade an older source database to the latest Fina
 ### Additional steps if you are using Retail functionality
 If you are using Retail functionality, before running the data upgrade package, you must first perform the following steps to prepare the database. 
 - Ensure that all commerce data exchange (CDX) jobs have been successfully run and that you have no unsynchronized transactional data in the cloud channel database.
-- Back up the primary cloud channel database.    
-- The below steps will delete the older version of the retail channel database, which will then be re-created in the subsequent steps. Delete the primary cloud hosted channel database by running the following script to delete this. Do not delete the primary cloud hosted retail channel database in your source environnment. 
+- Delete the cloud version of the retail channel database in the source environment. This database will be re-created as part of the upgrade. Delete the primary cloud hosted channel database by running the following script. 
+
 > [!NOTE]
-> If you have customizations that rely on retail channel database schema, you may encounter errors in the below steps. If you encounter errors, you must delete your channel database customizations, and then re-run the script.
+> If you have customizations that rely on retail channel database schema, you may encounter errors in the following steps. If you encounter errors, you must delete your channel database customizations, and then re-run the script.
     
 ```
         /* Drop all non-system stored procs under schema crt and ax */
