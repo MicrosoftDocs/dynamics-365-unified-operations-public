@@ -138,6 +138,7 @@ The following table shows whether each feature is available in:
 | | Intercompany revenue and cost transactions| Yes | ? |
 | | Suspended and inactive dimension values hidden from dimension value lookups| Yes | Yes |
 | Help| | | |
+| Human resources | Yes |   |
 | | Help: Content moving to docs.microsoft.com from the Dynamics 365 for Operations Help Wiki| Yes | No |
 | Inventory management| | | |
 | | Additional warehouse support in manufacturing | Yes | ? |
@@ -184,7 +185,7 @@ The following table shows whether each feature is available in:
 | Organization administration | | | |
 | | Case management| Yes | ? |
 | | Case management for production and quality orders| Yes | ? |
-| Payroll| | | |
+| Payroll| Yes | | |
 | Personalization| | | |
 | Planning and scheduling| | | |
 | Procurement and sourcing| | | |
@@ -299,7 +300,7 @@ The following table shows whether each feature is available in:
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
-| | Allow a project resource to delegate timesheet entry and submission to any user | Yes | Yes |
+| | Allow a project resource to delegate timesheet entry and submission to any user | Yes | No |
 | | Apply for any internal job posting through employee self-service | Yes | No |
 | | Benefits processing history| Yes | ? |
 | | Compensation and benefits Power BI reports | Yes | ? |
