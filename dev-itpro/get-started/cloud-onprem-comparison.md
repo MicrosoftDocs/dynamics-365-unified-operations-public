@@ -138,8 +138,8 @@ The following table shows whether each feature is available in:
 | | Intercompany revenue and cost transactions| Yes | ? |
 | | Suspended and inactive dimension values hidden from dimension value lookups| Yes | Yes |
 | Help| | | |
-| Human resources | Yes |   |
 | | Help: Content moving to docs.microsoft.com from the Dynamics 365 for Operations Help Wiki| Yes | No |
+| Human resources | All Human resources features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
 | Inventory management| | | |
 | | Additional warehouse support in manufacturing | Yes | ? |
 | | Consignment inventory| Yes | ? |
@@ -302,34 +302,33 @@ The following table shows whether each feature is available in:
 |---|---|---|---|
 | | Allow a project resource to delegate timesheet entry and submission to any user | Yes | No |
 | | Apply for any internal job posting through employee self-service | Yes | No |
-| | Benefits processing history| Yes | ? |
-| | Compensation and benefits Power BI reports | Yes | ? |
-| | Competency and development reports | Yes | ? |
-| | Complete access to historical compensation data| Yes | ? |
-| | Distribute tasks where it makes sense and increase efficiency| Yes | ? |
+| | Benefits processing history| Yes | No |
+| | Compensation and benefits Power BI reports | Yes |  No  |
+| | Competency and development reports | Yes | No |
+| | Complete access to historical compensation data| Yes | No |
+| | Distribute tasks where it makes sense and increase efficiency| Yes | No |
 | | Employee and manager self-service| Yes | No |
-| | Enable managers to work on behalf of employees | Yes | ? |
-| | Enhanced analytics for Human Capital Management| Yes | ? |
-| | Filter employee lists automatically| Yes | ? |
-| | Human Resources Manager Power BI reports| Yes | ? |
+| | Enable managers to work on behalf of employees | Yes | No |
+| | Enhanced analytics for Human Capital Management| Yes | No |
+| | Filter employee lists automatically| Yes | No |
+| | Human Resources Manager Power BI reports| Yes | No |
 | | Integration to Talent Attract| Yes | No |
 | | Integration to Talent onboarding| Yes | No |
-| | New termination rules| Yes | ? |
-| | New workflows across employee self-service and manager self-service| Yes | ? |
+| | New termination rules| Yes | No |
+| | New workflows across employee self-service and manager self-service| Yes | No |
 | | New workflows enabled in Human Resources| Yes | ? |
 | | Onboarding | Yes | No |
 | | Pre-employment access| Yes | No |
-| | Recruiting Power BI reports | Yes | ? |
-| | Redesigned employee self-service | Yes | ? |
-| | Single-click employment verification for all employees| Yes | ? |
-| | Support for a worker to be a project resource in multiple legal entities at the same time| Yes | Yes |
-| | Talent management| Yes | ? |
-| | Transitioning employees and contractors| Yes | ? |
-| | US Payroll| Yes | ? |
-| | View a comprehensive list of changes across employees, positons, and jobs | Yes | ? |
+| | Recruiting Power BI reports | Yes | No |
+| | Redesigned employee self-service | Yes | No |
+| | Single-click employment verification for all employees| Yes | No |
+| | Support for a worker to be a project resource in multiple legal entities at the same time| Yes | No |
+| | Talent management| Yes | No |
+| | Transitioning employees and contractors| Yes | No |
+| | View a comprehensive list of changes across employees, positons, and jobs | Yes | No |
 | | Track additional information about employees, jobs, positions, and benefits| Yes | No |
-| | Training courses| Yes | ? |
-| | Training Power BI reports | Yes | ? |
+| | Training courses| Yes | No |
+| | Training Power BI reports | Yes | No |
 
 
 ## Development and administration
