@@ -285,6 +285,7 @@ The following table shows whether each feature is available in:
 | | Payments | Yes | ? |
 | | Customer management | Yes | ? |
 | | Personalized product recommendations powered by cognitive services and Microsoft Azure machine learning| Yes | ? |
+| | Retrieve help topics in the client | Yes | No |
 | | Task guides for help| Yes | No |
 
 ## Dynamics 365 for Talent
@@ -316,13 +317,13 @@ The following table shows whether each feature is available in:
 | | Single-click employment verification for all employees| Yes | No |
 | | Support for a worker to be a project resource in multiple legal entities at the same time| Yes | No |
 | | Talent management| Yes | No |
-| | Task guides for help| Yes | No |
 | | Transitioning employees and contractors| Yes | No |
 | | View a comprehensive list of changes across employees, positons, and jobs | Yes | No |
 | | Track additional information about employees, jobs, positions, and benefits| Yes | No |
 | | Training courses| Yes | No |
 | | Training Power BI reports | Yes | No |
-
+| | Retrieve help topics in the client | Yes | No |
+| | Task guides for help| Yes | No |
 
 ## Development and administration
 
