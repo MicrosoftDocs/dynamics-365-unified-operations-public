@@ -5,7 +5,7 @@ title: Set up SEPA direct debit mandate
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -61,5 +61,5 @@ You must set up a method of payment for direct debit mandates. You use this meth
 
 See Also
 [Direct debit overview](sepa-direct-debit-overview.md) 
-
+[Create a direct debit mandate for a customer](create-direct-debit-mandate-customer.md) 
 

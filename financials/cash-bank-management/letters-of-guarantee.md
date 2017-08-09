@@ -64,6 +64,10 @@ The following table describes the actions that you can perform on a letter of gu
 | Liquidate           | When the beneficiary presents the letter of guarantee to the bank, cash out the letter of guarantee.                      |
 
 
+For more information, see the following topics:
 
+[Letter of guarantee transaction](tasks/letter-guarantee-transaction.md)
+
+[Set up bank facilities and posting profiles for letters of guarantee](tasks/set-up-bank-facilities-posting-profiles.md)
 
 

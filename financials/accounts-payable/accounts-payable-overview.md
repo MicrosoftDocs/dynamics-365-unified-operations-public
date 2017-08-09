@@ -5,7 +5,7 @@ title: Configure Accounts payable
 description: This article describes the pages that you use to set up basic and optional functionality for Accounts payable in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It also describes setup steps that you must complete before you start to set up Accounts payable.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,7 +50,7 @@ Before you can set up Accounts payable, you must complete the following setup:
 ## Setup pages for Accounts payable
 
 Use the following pages to set up the basic functionality of Accounts payable for each legal entity. The pages are listed in the recommended order of setup. To make the setup process easier, you can create templates from the first records that you create. In a template, values are typically entered in many fields to reflect the features that the organization wants to implement for a particular type of vendor.
-1.  On the Terms of payment page, define the terms of payment that you assign to sales orders, purchase orders, customers, and vendors, and that determine invoice due dates.
+1.  On the Terms of payment page, define the terms of payment that you assign to sales orders, purchase orders, customers, and vendors, and that determine invoice due dates. For more information, see [Define vendor payment fees](tasks/define-vendor-payment-fees.md).
 2.  On the Methods of payment - vendors page, create and maintain information about how the organization pays its vendors.
 3.  On the Vendor groups page, create and maintain groups of vendors that share important parameters for posting, settlement and payment, reporting, and forecasting.
 4.  On the Vendor posting profiles page, define how vendor transactions are posted to the general ledger.
