@@ -51,97 +51,85 @@ For example, if the issue occurred in the executing a step, select the  **Execut
 
 ## Package application issues
 
-**Issue: Servicing status failed without listing any steps in the Environment updates section**
+**Issue: Applied package is not valid**
 
-**Description:** This indicates that package being applied is invalid.
-- Download logs
-- Unzip and navigate to the AOS machine logs
-- Verify that &quot;DownloadFilesAndSlipstreamTools-xxx&quot; folder exist
-- Verify that &quot;GenerateRunbook-xxx&quot; folder exists
-- Click inside GenerateRunbook-xxx folder and open the output type file
-If error is found or an exception is found that a file is missing or failed to generate any steps for runbook etc, it&#39;s mainly due to invalid package being uploaded.
+**Description:** Because the applied package was not valid, the Servicing status failed and did not list any updates in the **Environment updates** section. To verify, 
+1. Download the logs.
+2. Unzip and navigate to the AOS machine logs.
+3. Verify that the DownloadFilesAndSlipstreamTools-xxx and GenerateRunbook-xxx folders exist.
+4. Open the GenerateRunbook-xxx folder and then open the output type file.
+If you find an error or an exception that a file is missing or failed to generate any steps for runbook, it is because there was an attempt to upload a package that was not valid.
 
-**Action:** Click **Abort** to abort the current package, upload a new package and start the servicing flow again.
+**Action:** Click **Abort** to abort the current package, upload a new package, and then restart the servicing flow.
 
 
 **Issue: Package deployment fails without any step failures**
 
-**Description:** A time out occurs when downloading the package onto the machine. During pre-servicing, a few steps must be completed before steps are completed in the runbook. As part of the pre-servicing, the package must be downloaded to all of the machines. The time to download might vary a bit based on the data center where the environment is residing. If the download doesn't happen within 30 minutes, it is considered a failure in the servicing status and will be stopped.
-If it has been about 30 minutes since the package deployment is initiated, then you are mostly running into the issue. Resume should fix mostly fix the issue.
+**Description:** A time out occurs when you download the package onto the machine. During pre-servicing, a few steps must be completed before steps are completed in the runbook. As part of the pre-servicing, the package must be downloaded to all of the machines. The time to download might vary a bit based on the data center where the environment is residing. If the download doesn't happen within 30 minutes, it is considered a failure in the servicing status and will be stopped.
 
 **Action:**
-1. Download the logs from the **Environment** page.
-2. Verify that the package download has logs in all of the machines with the following folder DownloadFilesAndSlipstreamTools.
-3. Review the log files. If you do not see the following at the end of the log file, the package download is not completed which is why the issue occurred.
+1. Click **Resume** to see if you can resolve the issue. If that doesn't work, move to step 2.
+2. Download the logs from the **Environment** page.
+3. Verify that the package download has logs in all of the machines with the following folder DownloadFilesAndSlipstreamTools.
+4. Review the log files. If you do not see the following at the end of the log file, the package download is not completed which is why the issue occurred.
   - _Completed file download and slipstream successfully_
 
 
-**Issue:** Package deployment fails without any step failures
+**Issue: Package deployment fails without any step failures**
 
-**Description:** There is not enough disk space to download the package and therefore the servicing fails.
-Inspect all the machines and any of the machines servicing drive is full then you are running into this issue.
+**Description:** There is not enough disk space to download the package. Inspect all of the machines. If any of the machines' servicing drive is full, that would be the reason that you are running into this issue.
+Note that to click **Resume** would not help in this situation. To verify that the deployment failed due to space issues, 
 
-         Manually clean up old package deployment folder and free up disk space.
-
-Please note that &quot;resume&quot; would not help here and need manual intervention before you can resume.
-
-- Download the logs from the environment page
-- Ensure that the package download step has the logs in all the machines with the following folder DownloadFilesAndSlipstreamTools
-- Inspect the log files and if you see the download has failed due to disk space issue, proceed with the how to fix section.
+1. Navigate to the DownloadFilesAndSlipstreamTools-xxx folder.
+3. Open the output file and check the error message to verify if the step failed due to space issues.
 
 **Action:**
 
-- On all types of topologies, as part of automated cleanup we delete deployablepackages older than 30 days located at %ServiceVolume%\DeployablePackages as well as servicing related logs older than 30 days located usually at C:\Dynamics.
-- On Dev/Onebox machines, however, there is a flexibility of customizing number of retention days and minimum disk space of ServiceVolume drive and Logs drive.
-- Under registry key **HKLM:\SOFTWARE\Microsoft\Dynamics\Deployment** , we can create following keys to customize when should the cleanup happen and the automated cleanup task will consider these numbers
+- As part of automated cleanup on topologies, we delete deployable packages located at %ServiceVolume%\DeployablePackages that are older than 30 days. We also use the same timeline to delete servicing related logs, usually located at C:\Dynamics.
+- On Dev/Onebox machines however, there is a flexibility of customizing number of retention days and the minimum disk space of the ServiceVolume and Logs drives.
+- Under the registry key, **HKLM:\SOFTWARE\Microsoft\Dynamics\Deployment**, we can create the following keys to customize when the cleanup should happen. The automated cleanup task will consider these numbers.
 
-**CutoffDaysForCleanup** -&gt; number of days old packages/logs that should be retained. - Default value is 30
+**CutoffDaysForCleanup**: The number of days that old packages and logs should be retained. The default value is 30.
 
-**CutoffDiskSpaceLimitForPackages** -&gt; (in GB) minimum free disk space of the service volume drive where packages folder is located. In the following case if disk space is &lt;200 GB cleanup task will remove the packages based on number of days.
+**CutoffDiskSpaceLimitForPackages**: The minimum free disk space (in GB) of the service volume drive where the packages folder is located. For example, if disk space is 200 GB, the cleanup task will remove the packages based on number of days.
 
-**CutoffDiskSpaceLimitForLogs** -&gt; (in GB) minimum free disk space of the system drive where logs folder is located. In the following case if disk space is &lt;100 GB cleanup task will remove the servicing related based on number of days.
+**CutoffDiskSpaceLimitForLogs**: The minimum free disk space (in GB) of the system drive where the logs folder is located. For example, if disk space is 100 GB, the cleanup task will remove the servicing related based on number of days.
 
 
-**Issue:** Step has failed with errors.
+**Issue: Step has failed with errors**
 
 **Description:**
-This indicates that one of the following might be the reasons
-- Package has issues due to customizations or missing dependencies
-- Servicing scripts has an issue
-- Random failure during the step execution
+One of the following items might be the reason that the step failed with errors:
+- The package has customization issues or is missing dependencies.
+- There is an issue with the servicing scripts.
+- There was a random failure when executing the step.
 
-Steps:
-- Download logs
-- Navigate to the step logs
-- Open the output file for the step and see if there any errors.
-- If there any additional log files available, please inspect the logs for any errors.
+To verify what the issue is, 
+1. Download and navigate to the step logs.
+2. Open the output file for the step and see if there are any errors.
+3. If there any additional log files available, inspect those for any errors.
 
 **Action:** 
+1. Download the logs
+2. Click **Rerun step** to re-try the failed step.
 
-Download the logs
+If it fails again with the same issue, go back to the logs to look for more information. 
 
-Click &quot; **Rerun step**&quot; to re-try the failed step
-
-If it fails again with the same issue
-
-**Action 2** :
-
-- Look into the logs to dig in more
 - If you notice that there is an issue with the customizations, abort this package and re-try with the new package.
 - Check if there a fix available for the issue in the issue search.
 - If you see the following step failure, GlobalUpdate script for service model: AOSService, this indicates that either DBSync or Report deployment might have failed.
 - Look for DBSync.err file to see what the errors are and inspect DBSync.log file. For specific failures during DB Sync step, look at the **Common DB Sync Failures** section.
 
 
-**Issue:** Deployment status is showing **Servicing** when the servicing status is in a **Failed state**
+**Issue: Deployment status shows as Servicing when the servicing status is in a Failed state**
 
 **Description:**
-There is a re-try mechanism in-built to retry multiple times before it gives up especially the preparation step failures such as
-1. Download the package into the machines
-2. Slipstream the servicing package
-3. Generate runbook
+There is a built in mechanism to retry multiple times before the system gives up. This includes retrying the following preparation steps several times: 
+- Package download to the machines
+- Slipstreaming the servicing package
+- Generating the runbook
 
-**Action** : You can download the logs and see what the error is and start looking into it, before it finishes all the re-tries. If the in-built retry mechanism failed to go beyond the preparation stage after all re-tries. Please open a ticket for Microsoft team to investigate further, once you see the status as &quot;Failed&quot; and it&#39;s not due to invalid package issue.
+**Action** : You can download the logs to view and take action on the error before all retries are exhausted. If the retry mechanism fails to go beyond the preparation stage and you see a status of **Failed**, open a ticket for the Microsoft team to investigate further. 
 
 
 **Issue: Dashboard doesn't launch after package deployment is complete**
