@@ -205,13 +205,13 @@ PageMetadata <br>
 
 | Name | Signature | Description |
 | ---- | --------- | ----------- |
-| [Controls](../interfaces/view-model-ipage-ipagemetadata.md#controls) |Controls: [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md) [ ] (optional)  <br>|  |
+| [Controls](../interfaces/view-model-ipage-ipagemetadata.md#controls) |Controls: [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md) \[ \] (optional)  <br>|  |
 | [Design](../interfaces/view-model-ipage-ipagemetadata.md#design) |Design: [Design](../interfaces/view-model-ipage-idesign.md) (optional)  <br>|  |
 | [Id](../interfaces/view-model-ipage-ipagemetadata.md#id) |Id: string (optional)  <br>|  |
 | [QuickSubmit](../interfaces/view-model-ipage-ipagemetadata.md#quicksubmit) |QuickSubmit: boolean (optional)  <br>|  |
 | [SourcePageId](../interfaces/view-model-ipage-ipagemetadata.md#sourcepageid) |SourcePageId: string (optional)  <br>|  |
 | [SubmitButtonDesign](../interfaces/view-model-ipage-ipagemetadata.md#submitbuttondesign) |SubmitButtonDesign: [Design](../interfaces/view-model-ipage-idesign.md) (optional)  <br>|  |
-| [Tasks](../interfaces/view-model-ipage-ipagemetadata.md#tasks) |Tasks: [PageMetadata](../interfaces/view-model-ipage-ipagemetadata.md) [ ] (optional)  <br>|  |
+| [Tasks](../interfaces/view-model-ipage-ipagemetadata.md#tasks) |Tasks: [PageMetadata](../interfaces/view-model-ipage-ipagemetadata.md) \[ \] (optional)  <br>|  |
 | [Title](../interfaces/view-model-ipage-ipagemetadata.md#title) |Title: string (optional)  <br>|  |
 
 #### Events

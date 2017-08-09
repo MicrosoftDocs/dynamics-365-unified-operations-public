@@ -71,7 +71,7 @@ BoundField: string (optional)
 
 ### Children
 
-Children: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) [ ] (optional) 
+Children: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) \[ \] (optional) 
 
 List of control metadata for each child control.
 
