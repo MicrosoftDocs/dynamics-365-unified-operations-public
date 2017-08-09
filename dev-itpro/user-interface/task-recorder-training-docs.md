@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides for the Unified Operations products and include them in your Help.
+This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
 
 > [!IMPORTANT]
 > You cannot create custom task guides for Dynamics 365 for Talent. The Help system for Talent is automatically connected to task guides for the product. 
