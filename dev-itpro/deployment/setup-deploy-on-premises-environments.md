@@ -46,23 +46,20 @@ These components depend on the following system software:
 
 - Microsoft Windows Server 2016
 - Microsoft SQL Server 2016 SP1, which has following features:
-
     - Full-text index search is enabled.
     - SQL Server Reporting Services (SSRS).
     - SQL Server Integration Services (SSIS).
-
-    > [!NOTE]
+    
+    > [!WARNING]
     > The application won't run if Full Text Search isn't enabled.
-
 - SQL Server Management Studio
 - Standalone Microsoft Azure Service Fabric
 - Microsoft Windows PowerShell 5.0 or later
 - Active Directory Federation Services (AD FS) on Windows Server 2016
+- Domain controller 
 
-    The domain controller must be Microsoft Windows Server 2012 R2 or later and must have a domain functional level of 2012 R2 or more.
-
-    For more information about domain functional levels, see the following pages:
-
+    > [!WARNING]
+    > The domain controller must be Microsoft Windows Server 2012 R2 or later and must have a domain functional level of 2012 R2 or more.    For more information about domain functional levels, see the following pages:
     - [What Are Active Directory Functional Levels](https://technet.microsoft.com/en-us/library/cc787290(v=ws.10).aspx)
     - [Understanding Active Directory Domain Services Functional Levels](https://technet.microsoft.com/en-us/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
 
@@ -148,6 +145,7 @@ The following steps must be completed to set up the infrastructure for Finance a
 15. Encrypt credentials.
 16. Set up SSRS.
 17. Configure AD FS.
+18. Configure a connector and install an on-premises local agent.
 
 ### Plan your domain name and DNS zones
 
@@ -167,7 +165,7 @@ Self-signed certificates can be used only for testing purposes. For convenience,
 | Purpose                                      | Explanation | Additional requirements |
 |----------------------------------------------|-------------|-------------------------|
 | SQL Server SSL certificate                   | This certificate is used to encrypt data that is transmitted across a network between an instance of SQL Server and a client application. | The domain name of the certificate should match the fully qualified domain name (FQDN) of the SQL Server instance or listener. For example, if the SQL listener is hosted on the machine DAX7SQLAOSQLA, the certificate's DNS name is DAX7SQLAOSQLA.onprem.contoso.com. |
-| Service Fabric Server certificate            | This certificate is used to help secure the node-to-node communication between the Service Fabric nodes. This certificate is also used as the Server certificate that is presented to the client that connects to the cluster. | <p>The domain name of the certificate must match the DNS zone where AOS and Service Fabric are hosted. For example, the domain name of the certificate might be \*.onprem.contoso.com or \*.contoso.com.</p><p>If you use a wildcard certificate, the wildcard character applies to only one level. A subdomain, or subject alternative name (SAN), must be applied to the certificate if it has more than one level, such as \*.contoso.com in the previous example.</p> |
+| Service Fabric Server certificate            | This certificate is used to help secure the node-to-node communication between the Service Fabric nodes. This certificate is also used as the Server certificate that is presented to the client that connects to the cluster. | The domain name of the certificate must match the DNS zone where AOS and Service Fabric are hosted. For example, the domain name of the certificate might be \*.onprem.contoso.com or \*.contoso.com.<p>If you use a wildcard certificate, the wildcard character applies to only one level. A subdomain, or subject alternative name (SAN), must be applied to the certificate if it has more than one level, such as \*.contoso.com in the previous example.</p> |
 | Service Fabric Client certificate            | This certificate is used by clients to view and manage the Service Fabric cluster. | |
 | Encipherment Certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords. | <p>The certificate key usage must include Data Encipherment (10) and should not include Server Authentication or Client Authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-secret-management).</p> |
 | AOS SSL Certificate                          | <p>This certificate is used as the Server certificate that is presented to the client for the AOS website. It's also used to enable Windows Communication Foundation (WCF)/Simple Object Access Protocol (SOAP) certificates.</p><p>The Service Fabric Server certificate can be used here if it's a wildcard certificate.</p> | <p>The domain name of the certificate must match the DNS zone where AOS and Service Fabric are hosted. For example, the domain name of the certificate might be \*.d365ffo.onprem.contoso.com, \*.onprem.contoso.com, or \*.contoso.com.</p><p>If you use a wildcard certificate, the wildcard applies to only one level. A subdomain, or SAN, must be applied to the certificate if it has more than one level, such as \*.contoso.com in the previous example.</p> |
