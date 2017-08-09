@@ -138,7 +138,8 @@ The following table shows whether each feature is available in:
 | | Intercompany revenue and cost transactions| Yes | ? |
 | | Suspended and inactive dimension values hidden from dimension value lookups| Yes | Yes |
 | Help| | | |
-| | Help: Content moving to docs.microsoft.com from the Dynamics 365 for Operations Help Wiki| Yes | No |
+| | Retrieve help topics in the client | Yes | No |
+| | Task guides for help| Yes | No |
 | Human resources | All Human resources features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
 | Inventory management| | | |
 | | Additional warehouse support in manufacturing | Yes | ? |
@@ -216,7 +217,6 @@ The following table shows whether each feature is available in:
 | | SOC 1 Type 1 certification| Yes | No |
 | Service management| | | |
 | Supply chain management| | | |
-| Task guides| | | |
 | Transportation management| | | |
 | Travel and expense| | | |
 | Vendor collaboration| | | |
@@ -238,7 +238,6 @@ The following table shows whether each feature is available in:
 | | Warehousing Power BI reports| Yes | No |
 | Web/browser client | | | |
 | | Ability to model toolbar actions in the overflow menu| Yes | Yes |
-| | Access to Support via the Help & Support menu| Yes | Yes |
 | | Browser framework - PowerApps Host control| Yes | Yes |
 | | Create a workspace through personalization| Yes | Yes |
 | | Dynamics 365 rebranding and alignment | Yes | Yes |
@@ -249,13 +248,13 @@ The following table shows whether each feature is available in:
 | | Personalize your workspace by adding a link to a details page| Yes | Yes |
 | | Personalization now supports Task Recorder| Yes | Yes |
 | | Support for Right to Left languages| Yes | Yes |
-| | Task guides| Yes | ? |
+| | Task guides for help| Yes | No |
 | | Task recording - Ability to insert and re-order steps| Yes | No |
 | | User interface| Yes | ? |
 | | Web client x 3| Yes | No |
 | Finances and Operations support | | | |
-| | Ideas portal| Yes | Yes |
-
+| | Ideas portal| Yes | ? |
+| | Access to Support via the Help & Support menu| Yes | Yes |
 
 
 ## Dynamics 365 for Retail 
@@ -286,6 +285,7 @@ The following table shows whether each feature is available in:
 | | Payments | Yes | ? |
 | | Customer management | Yes | ? |
 | | Personalized product recommendations powered by cognitive services and Microsoft Azure machine learning| Yes | ? |
+| | Task guides for help| Yes | No |
 
 ## Dynamics 365 for Talent
 
@@ -316,6 +316,7 @@ The following table shows whether each feature is available in:
 | | Single-click employment verification for all employees| Yes | No |
 | | Support for a worker to be a project resource in multiple legal entities at the same time| Yes | No |
 | | Talent management| Yes | No |
+| | Task guides for help| Yes | No |
 | | Transitioning employees and contractors| Yes | No |
 | | View a comprehensive list of changes across employees, positons, and jobs | Yes | No |
 | | Track additional information about employees, jobs, positions, and benefits| Yes | No |
@@ -350,3 +351,4 @@ The following table shows whether each feature is available in:
 | | Servicing environments| Yes | No |
 | | Servicing environments| Yes | ? |
 | | Table browser is now in read-only mode| Yes | Yes |
+| | Task guides for testing| Yes | Yes |
