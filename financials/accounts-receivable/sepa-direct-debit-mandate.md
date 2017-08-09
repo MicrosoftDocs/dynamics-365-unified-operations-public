@@ -60,6 +60,8 @@ You must set up a method of payment for direct debit mandates. You use this meth
 -   Select the **Require mandate** option to create payments by using direct debit mandates. The **Require mandate** option is available only if you select **Electronic payment** in the **Payment type** field.
 
 See Also
+
 [Direct debit overview](sepa-direct-debit-overview.md) 
+
 [Create a direct debit mandate for a customer](tasks/create-direct-debit-mandate-customer.md) 
 
