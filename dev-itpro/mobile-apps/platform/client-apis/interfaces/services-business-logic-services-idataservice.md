@@ -80,7 +80,7 @@ getEntityData(entityType: any, entityId: string): any
 ### getPageData
 
 
-getPageData(pageId: string, context: any, filter: any, allowedStaleness: number): any
+getPageData(pageId: string, context: any, filter: any, allowedStaleness: number): Promise &lt;[PageData](services-business-logic-services-ipagedata.md)&gt;
 
 
 
@@ -94,5 +94,5 @@ getPageData(pageId: string, context: any, filter: any, allowedStaleness: number)
 | filter|any||
 | allowedStaleness|number||
 
-#### Returns any
+#### Returns Promise &lt;[PageData](services-business-logic-services-ipagedata.md)&gt;
 

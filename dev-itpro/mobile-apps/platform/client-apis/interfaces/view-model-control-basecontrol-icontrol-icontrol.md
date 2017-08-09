@@ -34,14 +34,52 @@ Control <br>&nbsp;&nbsp;&nbsp;└─ [PageLink](view-model-control-pagelink-ipag
 
 ## Index
 
+### Properties
+
+* [container](view-model-control-basecontrol-icontrol-icontrol.md#container)
+* [generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)
+* [getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)
+* [hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)
+
 ### Methods
 
 * [applyDesign](view-model-control-basecontrol-icontrol-icontrol.md#applydesign)
+* [dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)
 * [getDesign](view-model-control-basecontrol-icontrol-icontrol.md#getdesign)
 * [isEditable](view-model-control-basecontrol-icontrol-icontrol.md#iseditable)
 * [metadata](view-model-control-basecontrol-icontrol-icontrol.md#metadata)
 * [parent](view-model-control-basecontrol-icontrol-icontrol.md#parent)
 * [root](view-model-control-basecontrol-icontrol-icontrol.md#root)
+
+## Properties
+
+### container
+
+container: boolean (optional) 
+
+True if the control is a container.
+
+
+### generic
+
+generic: boolean (optional) 
+
+
+
+
+### getDataSource
+
+getDataSource: function(): any
+
+
+
+
+### hidden
+
+hidden: boolean
+
+True if the control is hidden.
+
 
 ## Methods
 
@@ -61,6 +99,15 @@ If a design already exists, the prototype chain of the design will be preserved.
 | design|[Design](view-model-ipage-idesign.md)|object containing design properties as keys|
 
 #### Returns void
+
+### dataContext
+
+
+dataContext(): any
+
+
+
+#### Returns any
 
 ### getDesign
 

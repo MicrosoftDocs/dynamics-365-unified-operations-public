@@ -35,11 +35,15 @@ Generic value control type.
 
 ### Properties
 
+* [container](view-model-control-value-ivalue-igenericvalue.md#container)
 * [generic](view-model-control-value-ivalue-igenericvalue.md#generic)
+* [getDataSource](view-model-control-value-ivalue-igenericvalue.md#getdatasource)
+* [hidden](view-model-control-value-ivalue-igenericvalue.md#hidden)
 
 ### Methods
 
 * [applyDesign](view-model-control-value-ivalue-igenericvalue.md#applydesign)
+* [dataContext](view-model-control-value-ivalue-igenericvalue.md#datacontext)
 * [getDesign](view-model-control-value-ivalue-igenericvalue.md#getdesign)
 * [getValue](view-model-control-value-ivalue-igenericvalue.md#getvalue)
 * [isEditable](view-model-control-value-ivalue-igenericvalue.md#iseditable)
@@ -54,11 +58,40 @@ Generic value control type.
 
 ## Properties
 
+### container
+
+container: boolean (optional) 
+
+True if the control is a container.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)
+
+
 ### generic
 
 generic: boolean
 
 True if the control is a generic.
+
+> Overrides [Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)
+
+
+### getDataSource
+
+getDataSource: function(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)
+
+
+### hidden
+
+hidden: boolean
+
+True if the control is hidden.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)
 
 
 ## Methods
@@ -81,6 +114,17 @@ If a design already exists, the prototype chain of the design will be preserved.
 | design|[Design](view-model-ipage-idesign.md)|object containing design properties as keys|
 
 #### Returns void
+
+### dataContext
+
+
+dataContext(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)
+
+#### Returns any
 
 ### getDesign
 

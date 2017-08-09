@@ -61,7 +61,7 @@ Row <br>
 
 ### fieldList
 
-fieldList: [Control](view-model-control-basecontrol-icontrol-icontrol.md) \[ \]
+fieldList: [Control](view-model-control-basecontrol-icontrol-icontrol.md) [ ]
 
 
 
@@ -82,7 +82,7 @@ If true then the row will be hidden.
 
 ### imageFields
 
-imageFields: [Control](view-model-control-basecontrol-icontrol-icontrol.md) \[ \]
+imageFields: [Control](view-model-control-basecontrol-icontrol-icontrol.md) [ ]
 
 
 

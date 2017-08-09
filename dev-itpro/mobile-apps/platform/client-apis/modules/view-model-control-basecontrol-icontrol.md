@@ -47,11 +47,21 @@ Controls are what makeup the content of a page.
 
 Control <br>&nbsp;&nbsp;&nbsp;└─ [PageLink](../interfaces/view-model-control-pagelink-ipagelink-ipagelink.md) <br>&nbsp;&nbsp;&nbsp;└─ [ContainerControl](../interfaces/view-model-control-container-icontainercontrol-icontainercontrol.md) <br>&nbsp;&nbsp;&nbsp;└─ [InputControl](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md) <br>&nbsp;&nbsp;&nbsp;└─ [Image](../interfaces/view-model-control-image-iimage-iimage.md) <br>
 
+#### Properties
+
+| Name | Signature | Description |
+| ---- | --------- | ----------- |
+| [container](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#container) |container: boolean (optional)  <br>|True if the control is a container.<br>  |
+| [generic](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#generic) |generic: boolean (optional)  <br>|  |
+| [getDataSource](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#getdatasource) |getDataSource: function(): any <br>|  |
+| [hidden](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#hidden) |hidden: boolean <br>|True if the control is hidden.<br>  |
+
 #### Methods
 
 | Name | Signature | Description |
 | ---- | --------- | ----------- |
 | [applyDesign](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#applydesign) |applyDesign(design: [Design](../interfaces/view-model-ipage-idesign.md)): void|Applies given design to the design on the control.<br>  |
+| [dataContext](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#datacontext) |dataContext(): any|  |
 | [getDesign](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#getdesign) |getDesign(): [Design](../interfaces/view-model-ipage-idesign.md)|Returns the design object of this control.<br>  |
 | [isEditable](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#iseditable) |isEditable(): boolean|Boolean indicating if the control is editable.<br>  |
 | [metadata](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#metadata) |metadata(): [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)|Returns the metadata object of this control.<br>  |

@@ -41,7 +41,12 @@ Lists come in two styles: simple and card.
 * [$accessibility](view-model-control-list-ilist-ilist.md#accessibility)
 * [DefaultSearchColumn](view-model-control-list-ilist-ilist.md#defaultsearchcolumn)
 * [container](view-model-control-list-ilist-ilist.md#container)
+* [emptyListMessage](view-model-control-list-ilist-ilist.md#emptylistmessage)
 * [enableMultiSelect](view-model-control-list-ilist-ilist.md#enablemultiselect)
+* [generic](view-model-control-list-ilist-ilist.md#generic)
+* [getDataSource](view-model-control-list-ilist-ilist.md#getdatasource)
+* [hidden](view-model-control-list-ilist-ilist.md#hidden)
+* [hideEmptyListMessage](view-model-control-list-ilist-ilist.md#hideemptylistmessage)
 * [imageFields](view-model-control-list-ilist-ilist.md#imagefields)
 * [performingRemoteSearch](view-model-control-list-ilist-ilist.md#performingremotesearch)
 * [searchQuery](view-model-control-list-ilist-ilist.md#searchquery)
@@ -53,6 +58,7 @@ Lists come in two styles: simple and card.
 * [applySearch](view-model-control-list-ilist-ilist.md#applysearch)
 * [canPerformRemoteSearch](view-model-control-list-ilist-ilist.md#canperformremotesearch)
 * [clearSearch](view-model-control-list-ilist-ilist.md#clearsearch)
+* [dataContext](view-model-control-list-ilist-ilist.md#datacontext)
 * [getColumnLabel](view-model-control-list-ilist-ilist.md#getcolumnlabel)
 * [getControl](view-model-control-list-ilist-ilist.md#getcontrol)
 * [getControlById](view-model-control-list-ilist-ilist.md#getcontrolbyid)
@@ -109,12 +115,56 @@ True if the control is a container.
 
 > Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[container](view-model-control-container-icontainercontrol-icontainercontrol.md#container)
 
+> Overrides [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)
+
+
+### emptyListMessage
+
+emptyListMessage: string
+
+Settable property to override default empty list message.
+
 
 ### enableMultiSelect
 
 enableMultiSelect: boolean
 
 
+
+
+### generic
+
+generic: boolean (optional) 
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)
+
+
+### getDataSource
+
+getDataSource: function(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)
+
+
+### hidden
+
+hidden: boolean
+
+True if the control is hidden.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)
+
+
+### hideEmptyListMessage
+
+hideEmptyListMessage: boolean
+
+If true, no message is shown if the list is empty.
+To set this property, update the corresponding metadata property via configureControl.
 
 
 ### imageFields
@@ -194,6 +244,17 @@ clearSearch(): void
 
 
 #### Returns void
+
+### dataContext
+
+
+dataContext(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)
+
+#### Returns any
 
 ### getColumnLabel
 

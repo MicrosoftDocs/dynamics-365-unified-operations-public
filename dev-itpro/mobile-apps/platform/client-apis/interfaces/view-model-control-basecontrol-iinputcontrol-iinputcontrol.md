@@ -34,9 +34,17 @@ Input controls are typically used on task pages for collecting user input, for e
 
 ## Index
 
+### Properties
+
+* [container](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#container)
+* [generic](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#generic)
+* [getDataSource](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#getdatasource)
+* [hidden](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#hidden)
+
 ### Methods
 
 * [applyDesign](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#applydesign)
+* [dataContext](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#datacontext)
 * [getDesign](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#getdesign)
 * [isEditable](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#iseditable)
 * [metadata](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#metadata)
@@ -46,6 +54,44 @@ Input controls are typically used on task pages for collecting user input, for e
 ### Events
 
 * [onDataChanged](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged)
+
+## Properties
+
+### container
+
+container: boolean (optional) 
+
+True if the control is a container.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)
+
+
+### generic
+
+generic: boolean (optional) 
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)
+
+
+### getDataSource
+
+getDataSource: function(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)
+
+
+### hidden
+
+hidden: boolean
+
+True if the control is hidden.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)
+
 
 ## Methods
 
@@ -67,6 +113,17 @@ If a design already exists, the prototype chain of the design will be preserved.
 | design|[Design](view-model-ipage-idesign.md)|object containing design properties as keys|
 
 #### Returns void
+
+### dataContext
+
+
+dataContext(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)
+
+#### Returns any
 
 ### getDesign
 

@@ -42,9 +42,11 @@ Metadata for list control.
 * [DetailsPageAppId](view-model-control-list-ilist-ilistmetadata.md#detailspageappid)
 * [DetailsPageId](view-model-control-list-ilist-ilistmetadata.md#detailspageid)
 * [Editable](view-model-control-list-ilist-ilistmetadata.md#editable)
+* [EmptyListMessage](view-model-control-list-ilist-ilistmetadata.md#emptylistmessage)
 * [ExtType](view-model-control-list-ilist-ilistmetadata.md#exttype)
 * [HelpText](view-model-control-list-ilist-ilistmetadata.md#helptext)
 * [Hidden](view-model-control-list-ilist-ilistmetadata.md#hidden)
+* [HideEmptyListMessage](view-model-control-list-ilist-ilistmetadata.md#hideemptylistmessage)
 * [HideSearchBar](view-model-control-list-ilist-ilistmetadata.md#hidesearchbar)
 * [Id](view-model-control-list-ilist-ilistmetadata.md#id)
 * [InfiniteScroll](view-model-control-list-ilist-ilistmetadata.md#infinitescroll)
@@ -129,6 +131,13 @@ Undefined if both the control's edit-ability and it's parent's edit-ability is u
 > Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Editable](view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable)
 
 
+### EmptyListMessage
+
+EmptyListMessage: string (optional) 
+
+If set, overrides the default message for empty lists.
+
+
 ### ExtType
 
 ExtType: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (optional) 
@@ -154,6 +163,13 @@ Hidden: boolean (optional)
 Boolean indicating if the control is hidden or not.
 
 > Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Hidden](view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden)
+
+
+### HideEmptyListMessage
+
+HideEmptyListMessage: boolean (optional) 
+
+If true, the empty list message will be hidden.
 
 
 ### HideSearchBar

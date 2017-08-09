@@ -37,10 +37,14 @@ A container control can contain any number of controls.
 ### Properties
 
 * [container](view-model-control-container-icontainercontrol-icontainercontrol.md#container)
+* [generic](view-model-control-container-icontainercontrol-icontainercontrol.md#generic)
+* [getDataSource](view-model-control-container-icontainercontrol-icontainercontrol.md#getdatasource)
+* [hidden](view-model-control-container-icontainercontrol-icontainercontrol.md#hidden)
 
 ### Methods
 
 * [applyDesign](view-model-control-container-icontainercontrol-icontainercontrol.md#applydesign)
+* [dataContext](view-model-control-container-icontainercontrol-icontainercontrol.md#datacontext)
 * [getControl](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrol)
 * [getControlById](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrolbyid)
 * [getDesign](view-model-control-container-icontainercontrol-icontainercontrol.md#getdesign)
@@ -56,6 +60,35 @@ A container control can contain any number of controls.
 container: boolean
 
 True if the control is a container.
+
+> Overrides [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)
+
+
+### generic
+
+generic: boolean (optional) 
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)
+
+
+### getDataSource
+
+getDataSource: function(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)
+
+
+### hidden
+
+hidden: boolean
+
+True if the control is hidden.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)
 
 
 ## Methods
@@ -78,6 +111,17 @@ If a design already exists, the prototype chain of the design will be preserved.
 | design|[Design](view-model-ipage-idesign.md)|object containing design properties as keys|
 
 #### Returns void
+
+### dataContext
+
+
+dataContext(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)
+
+#### Returns any
 
 ### getControl
 
