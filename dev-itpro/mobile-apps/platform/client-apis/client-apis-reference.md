@@ -1,10 +1,10 @@
 ---
 # required metadata
-title: dynamics-ax
+title: Mobile platform client APIs
 description: 
 author: shadykdc
 manager: AnnBe
-ms.date: 
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,19 +13,19 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kashea
-ms.search.validFrom:
+ms.search.validFrom: 08/09/2017
 ms.dyn365.ops.version:
 ---
 
  
-# Client APIs Contents
+# Mobile platform client APIs
 
 * [Application](modules/services-application.md)
 
