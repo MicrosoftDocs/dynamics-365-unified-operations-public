@@ -157,7 +157,7 @@
 
 #### Migrating entities
 ##### [Configuration data projects](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Configuration data packages](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-packages?toc=dynamics365/unified-operations/fin-and-ops/toc.json)]
+###### [Configuration data packages](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-packages?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Configuration data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Copy configuration data between companies](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Best practices for importing vouchers using the General journal entity](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1556,16 +1556,16 @@
 ## [Organization administration](/dynamics365/unified-operations/fin-and-ops/organization-administration/organization-administration-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Organizations and organizational hierarchies](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Configure organizational hierarchy](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-organizational-hierarchy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create an organization hierarchy](/dynamics365/unified-operations/core/organization-administration/tasks/create-organization-hierarchy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-#### [Create a legal entity](/dynamics365/unified-operations/core/organization-administration/tasks/create-legal-entity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-#### [Create an operating unit](/dynamics365/unified-operations/core/organization-administration/tasks/create-operating-unit?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Create an organization hierarchy](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Create a legal entity](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Create an operating unit](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 ### [Address books](/dynamics365/unified-operations/fin-and-ops/organization-administration/qa-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Global address book](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Plan global address books](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Configure the global address book](/dynamics365/unified-operations/core/organization-administration/tasks/configure-global-address-book?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Configure the global address book](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/configure-global-address-book?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 ### [Number sequence overview](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Set up number sequences on an individual basis](/dynamics365/unified-operations/core/organization-administration/tasks/set-up-number-sequences-individual-basis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-#### [Set up number sequences by using a wizard](/dynamics365/unified-operations/core/organization-administration/tasks/set-up-number-sequences-wizard?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Set up number sequences on an individual basis](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Set up number sequences by using a wizard](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 ### [Electronic signature overview](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up electronic signatures](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Case management overview](/dynamics365/unified-operations/fin-and-ops/organization-administration/cases?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1592,9 +1592,9 @@
 ##### [Configure a parallel branch](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-parallel-branch-workflow?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Configure workflow properties](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-workflow-properties?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Configure the message processing batch job](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-batch-job-critical?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Delegate work items in a workflow](/dynamics365/unified-operations/core/organization-administration/tasks/delegate-work-items-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-#### [View workflow history](/dynamics365/unified-operations/core/organization-administration/tasks/view-workflow-history?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-#### [Enable users to receive workflow-related email messages](/dynamics365/unified-operations/core/organization-administration/tasks/users-receive-workflow-related-email-messages?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Delegate work items in a workflow](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/delegate-work-items-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [View workflow history](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/view-workflow-history?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Enable users to receive workflow-related email messages](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 #### [Workflow types report](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-types-report?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Production
@@ -2093,7 +2093,7 @@
 ### [Form I-9 employment verification](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Comply with the ADA](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-# [Development & administration](/dynamics365/unified-operations/dev-itpro/index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+# [Development & administration for Dynamics 365 for Financials and Operations](/dynamics365/unified-operations/dev-itpro/index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## [System requirements for cloud deployments](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ## [System requirements for on-premises deployments](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements-on-prem?toc=/dynamics365/unified-operations/supply-chain/toc.json)
@@ -2568,7 +2568,7 @@
 #### [Deprecated APIs](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-apis?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Deprecated features](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## System administration
+## [System administration](/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Platform monthly updates FAQ](/dynamics365/unified-operations/dev-itpro/sysadmin/faq-platform-monthly-updates?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Add links to your organization's legal terms and privacy statement](/dynamics365/unified-operations/dev-itpro/sysadmin/legal-terms-privacy-statement?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [License codes and configuration keys report](/dynamics365/unified-operations/dev-itpro/sysadmin/license-codes-configuration-keys-report?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
