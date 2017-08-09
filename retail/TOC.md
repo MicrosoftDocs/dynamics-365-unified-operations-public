@@ -1845,7 +1845,7 @@
 ## Sales tax
 ### [Sales tax overview](/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview?toc=dynamics365/unified-operations/retail/toc.json)
 ### [Sales tax calculation methods in the Origin field](/dynamics365/unified-operations/financials/general-ledger/sales-tax-calculation-methods-origin-field?toc=dynamics365/unified-operations/retail/toc.json)
-### [Whole amount and Interval calculation options for sales tax codes](/dynamics365/unified-operations/financials/general-ledgerwhole-amount-interval-options-sales-tax-codes?toc=dynamics365/unified-operations/retail/toc.json)
+### [Whole amount and Interval calculation options for sales tax codes](/dynamics365/unified-operations/financials/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=dynamics365/unified-operations/retail/toc.json)
 
 ## Call center
 ### [Call center overview](/dynamics365/unified-operations/retail/call-center-functionality?toc=dynamics365/unified-operations/retail/toc.json)
@@ -1940,8 +1940,8 @@
 ### [Tracking running average cost per inventory dimension](/dynamics365/unified-operations/supply-chain/cost-management/track-running-average-cost-per-inventory-dimension?toc=dynamics365/unified-operations/retail/toc.json)
 
 ## Human resources
-### [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/hr/departments-jobs-positions?toc=dynamics365/unified-operations/retail/toc.json)
-### [Setting up the components of a job](/dynamics365/unified-operations/hr/create-job?toc=dynamics365/unified-operations/retail/toc.json)
+### [Organize your workforce using departments, jobs, and positions](/dynamics365/fin-and-ops/hr/departments-jobs-positions?toc=dynamics365/unified-operations/retail/toc.json)
+### [Setting up the components of a job](/dynamics365/fin-and-ops/hr/create-job?toc=dynamics365/unified-operations/retail/toc.json)
 
 ## Retail tasks
 ### [ Base price and trade agreements](/dynamics365/unified-operations/retail/tasks/base-price-trade-agreements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1973,12 +1973,12 @@
 ### [ Perform self-service to download hardware station](/dynamics365/unified-operations/retail/tasks/perform-self-service-download-hardware-station?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [ Post online sales and payments](/dynamics365/unified-operations/retail/tasks/posting-online-sales-payments?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [ Process loyalty reward point adjustments](/dynamics365/unified-operations/retail/tasks/process-loyalty-reward-point-adjustments?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Push products from distribution center to store using buyer's push](/dynamics365/unified-operations/retail/tasks/push-products-distribution-center-store-buyers-push.md)
+### [ Push products from distribution center to store using buyer's push](/dynamics365/unified-operations/retail/tasks/push-products-distribution-center-store-buyers-push?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [ Retail price adjustments](/dynamics365/unified-operations/retail/tasks/retail-price-adjustments?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [ Configure and run a job to calculate statements](/dynamics365/unified-operations/retail/tasks/run-job-calculate-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [ Configure and run a job to post statements](/dynamics365/unified-operations/retail/tasks/run-job-post-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [ Generate and run out-of-box reports](/dynamics365/unified-operations/retail/tasks/run-out-box-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Set up rules and parameters for cross docking and buyer's push](/dynamics365/unified-operations/retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md)
+### [ Set up rules and parameters for cross docking and buyer's push](/dynamics365/unified-operations/retail/tasks/set-up-rules-parameters-cross-docking-buyers-push?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [ Store configurations for Retail statements](/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [ Use a continuity program](/dynamics365/unified-operations/retail/tasks/use-continuity-program?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [ Configure a worker](/dynamics365/unified-operations/retail/tasks/worker?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
