@@ -42,7 +42,7 @@ This topic describes how to upgrade an older source database to the latest Finan
 
 > [!IMPORTANT]
 > - You do **not** have to upgrade your database if you're updating to the latest platform of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from release 1611 (November 2016) to the July 2017 release.
-> - This process doesn't apply to the upgrade of data in the Management Reporter database. It also doesn't apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
+> - This process doesn't apply to the upgrade of data in the Financial reporting database. It also doesn't apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 
 ## Before you begin
 1. Back up your current database. 
