@@ -51,7 +51,7 @@ For example, if the issue occurred in the executing a step, select the  **Execut
 
 ## Package application issues
 
-**Issue: Applied package is not valid**
+### **Issue: Applied package is not valid**
 
 **Description:** Because the applied package was not valid, the Servicing status failed and did not list any updates in the **Environment updates** section. To verify, 
 1. Download the logs.
@@ -63,7 +63,7 @@ If you find an error or an exception that a file is missing or failed to generat
 **Action:** Click **Abort** to abort the current package, upload a new package, and then restart the servicing flow.
 
 
-**Issue: Package deployment fails without any step failures**
+### **Issue: Package deployment fails without any step failures**
 
 **Description:** A time out occurs when you download the package onto the machine. During pre-servicing, a few steps must be completed before steps are completed in the runbook. As part of the pre-servicing, the package must be downloaded to all of the machines. The time to download might vary a bit based on the data center where the environment is residing. If the download doesn't happen within 30 minutes, it is considered a failure in the servicing status and will be stopped.
 
@@ -75,7 +75,7 @@ If you find an error or an exception that a file is missing or failed to generat
   - _Completed file download and slipstream successfully_
 
 
-**Issue: Package deployment fails without any step failures**
+### **Issue: Package deployment fails without any step failures**
 
 **Description:** There is not enough disk space to download the package. Inspect all of the machines. If any of the machines' servicing drive is full, that would be the reason that you are running into this issue.
 Note that to click **Resume** would not help in this situation. To verify that the deployment failed due to space issues, 
@@ -96,7 +96,7 @@ Note that to click **Resume** would not help in this situation. To verify that t
 **CutoffDiskSpaceLimitForLogs**: The minimum free disk space (in GB) of the system drive where the logs folder is located. For example, if disk space is 100 GB, the cleanup task will remove the servicing related based on number of days.
 
 
-**Issue: Step has failed with errors**
+### **Issue: Step has failed with errors**
 
 **Description:**
 One of the following items might be the reason that the step failed with errors:
@@ -121,7 +121,7 @@ If it fails again with the same issue, go back to the logs to look for more info
 - Look for DBSync.err file to see what the errors are and inspect DBSync.log file. For specific failures during DB Sync step, look at the **Common DB Sync Failures** section.
 
 
-**Issue: Deployment status shows as Servicing when the servicing status is in a Failed state**
+### **Issue: Deployment status shows as Servicing when the servicing status is in a Failed state**
 
 **Description:**
 There is a built in mechanism to retry multiple times before the system gives up. This includes retrying the following preparation steps several times: 
@@ -132,7 +132,7 @@ There is a built in mechanism to retry multiple times before the system gives up
 **Action** : You can download the logs to view and take action on the error before all retries are exhausted. If the retry mechanism fails to go beyond the preparation stage and you see a status of **Failed**, open a ticket for the Microsoft team to investigate further. 
 
 
-**Issue: Dashboard doesn't launch after package deployment is complete**
+### **Issue: Dashboard doesn't launch after package deployment is complete**
 
 **Description:**
 If the dashboard does not launch after the package deployment is complete, there might be a run-time error occurring when the AOS is started.
