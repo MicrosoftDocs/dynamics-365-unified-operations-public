@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](includes/banner.md)]
 
-Development and administration for Microsoft Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Retail is performed using the same platform. The platform includes:
+Development and administration for Microsoft Dynamics 365 for Finance and Operations platform includes:
 
 - Administrator experience and Lifecycle Services
 - Developer experience
