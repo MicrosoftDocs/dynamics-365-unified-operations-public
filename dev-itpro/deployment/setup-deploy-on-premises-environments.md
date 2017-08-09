@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Set up and deploy on-premises environments
@@ -307,9 +307,9 @@ The infrastructure setup scripts use the below 2 configuration files to drive th
 
 #### Create gMSA and domain user accounts
 
-1. Navigate to the machine that has the unzipped infrastructure scripts in the **infra** folder.
-2. Copy the **infra** folder to the domain controller machine.
-3. Start Windows PowerShell in elevated mode, change the directory to the **infra** folder, and run the following commands.
+1. Navigate to the machine that has the unzipped infrastructure scripts in the **infrastructure** folder.
+2. Copy the **infrastructure** folder to the domain controller machine.
+3. Start Windows PowerShell in elevated mode, change the directory to the **infrastructure** folder, and run the following commands.
 
     ```
     Import-Module D365FO-OP\D365FO-OP.psd1
