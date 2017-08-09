@@ -47,9 +47,8 @@ These components depend on the following system software:
 - Microsoft Windows Server 2016
 - Microsoft SQL Server 2016 SP1, which has following features:
     - Full-text index search is enabled.
-    - SQL Server Reporting Services (SSRS).
-    - SQL Server Integration Services (SSIS).
-    
+    - SQL Server Reporting Services (SSRS)
+    - SQL Server Integration Services (SSIS)
     > [!WARNING]
     > The application won't run if Full Text Search isn't enabled.
 - SQL Server Management Studio
@@ -57,7 +56,6 @@ These components depend on the following system software:
 - Microsoft Windows PowerShell 5.0 or later
 - Active Directory Federation Services (AD FS) on Windows Server 2016
 - Domain controller 
-
     > [!WARNING]
     > The domain controller must be Microsoft Windows Server 2012 R2 or later and must have a domain functional level of 2012 R2 or more.    For more information about domain functional levels, see the following pages:
     - [What Are Active Directory Functional Levels](https://technet.microsoft.com/en-us/library/cc787290(v=ws.10).aspx)
@@ -128,26 +126,26 @@ Before you start the setup, the following prerequisites must be in place. The se
 
 The following steps must be completed to set up the infrastructure for Finance and Operations.
 
-1. Plan your domain name and DNS zones.
-2. Plan and acquire your certificates.
-3. Plan your users and service accounts.
-4. Create DNS zones, and add A records.
-5. Join VMs to the domain.
-6. Add prerequisite software to VMs.
-7. Download setup scripts from LCS.
-8. Describe your configuration.
-9. Install certificates.
-10. Set up a standalone Service Fabric cluster.
-11. Configure LCS connectivity for the tenant.
-12. Set up file storage.
-13. Set up SQL Server.
-14. Configure the databases.
-15. Encrypt credentials.
-16. Set up SSRS.
-17. Configure AD FS.
-18. Configure a connector and install an on-premises local agent.
+1. [Plan your domain name and DNS zones](#plandomain)
+2. [Plan and acquire your certificates](#plancert)
+3. [Plan your users and service accounts](#plansvcacct)
+4. [Create DNS zones, and add A records](#createdns)
+5. [Join VMs to the domain](#joindomain)
+6. [Add prerequisite software to VMs](#addprereq)
+7. [Download setup scripts from LCS](#downloadscripts)
+8. [Describe your configuration](#describeconfig)
+9. [Install certificates](#installcert)
+10. [Set up a standalone Service Fabric cluster](#setupsfcluster)
+11. [Configure LCS connectivity for the tenant](#configurelcs)
+12. [Set up file storage](#setupfile)
+13. [Set up SQL Server](#setupsql)
+14. [Configure the databases](#configuredb)
+15. [Encrypt credentials](#encryptcred)
+16. [Set up SSRS](#setupssrs)
+17. [Configure AD FS](#configureadfs)
+18. [Configure a connector and install an on-premises local agent](#configureconnector)
 
-### Plan your domain name and DNS zones
+### <a name="plandomain"></a> Plan your domain name and DNS zones
 
 We recommend that you use a publicly registered domain name for your production installation of AOS. In that way, the installation can be accessed outside the network, if outside access is required.
 
@@ -156,7 +154,7 @@ For example, if your company's domain is contoso.com, your zone for Finance and 
 - ax.d365ffo.onprem.contoso.com for AOS machines
 - sf.d365ffo.onprem.contoso.com for the Service Fabric cluster
 
-### Plan and acquire your certificates
+### <a name="plancert"></a> Plan and acquire your certificates
 
 Secure Sockets Layer (SSL) certificates are required in order to secure a Service Fabric cluster and all the applications that are deployed. For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as [DigiCert](https://www.digicert.com/ssl-certificate/), [Comodo](https://ssl.comodo.com/), [Symantec](https://www.websecurity.symantec.com/ssl-certificate), [GoDaddy](https://www.godaddy.com/web-security/ssl-certificate), or [GlobalSign](https://www.globalsign.com/en/ssl/). If your domain is set up with [Active Directory Certificate Services](https://technet.microsoft.com/en-us/library/cc772393(v=ws.10).aspx) (AD CS), you can create the certificates through AD CS. Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.
 
@@ -175,7 +173,7 @@ Self-signed certificates can be used only for testing purposes. For convenience,
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and AOS. | |
 | On-Premise local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p> | |
 
-### Plan your users and service accounts
+### <a name="plansvcacct"></a> Plan your users and service accounts
 
 You must create several user or service accounts for Finance and Operations (on-premises) to work. You must create a combination of group managed service accounts (gMSAs), domain accounts, and SQL accounts. The following table shows the user accounts, their purpose, and example names that will be used in this topic.
 
@@ -191,7 +189,7 @@ You must create several user or service accounts for Finance and Operations (on-
 
 \* The SQL user name and password for SQL authentication are secured, because they are encrypted and stored in the file share.
 
-### Create DNS zones and add A records
+### <a name="createdns"></a> Create DNS zones and add A records
 
 DNS is integrated with AD DS, and lets you organize, manage, and find resources in a network. Create a DNS forward lookup zone and A records for the AOS host name and the Service Fabric cluster. In this example setup, the DNS zone name is d365ffo.onprem.contoso.com, and the A records/host names are as follows:
 
@@ -225,7 +223,7 @@ In the new DNS zone, create an A record that is named **sf.d365ffo.onprem.conto
 1. Right-click the new zone, and then select **New Host**.
 2. Enter the name and IP address of the Service Fabric node. (For example, enter **10.179.108.15** as the IP address.) Then select **Add Host**.
 
-### Join VMs to the domain
+### <a name="joindomain"></a> Join VMs to the domain
 
 Join each VM to the domain by completing the steps in [How to join Windows Server 2016 to an Active Directory domain](http://www.tomsitpro.com/articles/join-windows-server-2016-to-ad-domain,2-1063.html). Alternatively, use the following Windows PowerShell script.
 
@@ -237,7 +235,7 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 > [!IMPORTANT]
 > You must restart the VMs after you join them to the domain.
 
-### Add prerequisite software to VMs
+### <a name="addprereq"></a> Add prerequisite software to VMs
 
 The following table lists the prerequisite software that must be applied to the machines of each node type.
 
@@ -262,21 +260,25 @@ The following table lists the prerequisite software that must be applied to the 
 | MR        | The .NET Framework version 4.0–4.6 (CLR 4.0) | `Add-WindowsFeature -Name NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45` |
 | MR        | Visual C++ Redistributable Packages for Visual Studio 2013 | See [Microsoft Visual C++ Redistributable Packages for Visual Studio 2013](https://support.microsoft.com/en-us/help/3179560). |
 
-### Download setup scripts from LCS
+### <a name="downloadscripts"></a> Download setup scripts from LCS
 
 We have provided several scripts to help improve the setup experience. Follow these steps to download the setup scripts from LCS.
 
 > [!IMPORTANT]
-> The scripts must be downloaded and executed from a computer in the domain that Finance and Operations is installed on.
+> The scripts must be executed from a computer in the same domain the on-premises infrastructure is in.
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
 2. On the dashboard, select the **Shared asset library** tile.
 3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations - On-premises Deployment scripts** row.
 4. Select **Versions**, and download the latest version of the zip file for the scripts.
 5. Right-click the zip file, and select **Properties**. Then, in the dialog box, select the **Unblock** check box.
-6. Unzip the files into a folder that is named **infra**.
+6. Copy the zip file to the machine that will be used to execute the scripts.
+7. Unzip the files into a folder that is named **infra**.
 
-### Describe your configuration
+> [!IMPORTANT}
+> Ensure all edits are made to the ConfigTemplate.xml in this folder.
+
+### <a name="describeconfig"></a> Describe your configuration
 
 This section provides information about the scripts that you must run. The scripts are discussed in the order that you must run them in. To run the scripts, fill in the template file at $(downloadPath)\\ConfigTemplate.xml. The ConfigTemplate.xml file describes the Service Fabric clusters, the certificates that are used to configure them, and the accounts that must be granted access to the relevant certificates.
 
@@ -284,43 +286,37 @@ Only the domain accounts that are specified in the **ProtectTo** tag will be abl
 
 #### Create gMSA and domain user accounts
 
-1. Navigate to the machine that has the downloaded and unzipped infrastructure scripts in the **infra** folder.
+1. Navigate to the machine that has the unzipped infrastructure scripts in the **infra** folder.
 2. Copy the **infra** folder to the domain controller machine.
 3. Start Windows PowerShell in elevated mode, change the directory to the **infra** folder, and run the following commands.
 
     ```
-    Import-Module Infrastructure\ D365FO-OP\D365FO-OP.psd1
-    New-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
+    Import-Module D365FO-OP\D365FO-OP.psd1
+    .\New-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
-
-3. Run the following script to verify that the accounts have been created. Replace the wildcard character in the **filter** command with the appropriate account names.
-
-    ```
-    #Use this command to validate the gMSA accounts are added to AD.
-    #Ensure to replace the Filter parameter with the pattern used to create your accounts.
-    Get-ADServiceAccount -Filter { samAccountName -like "*" }
-    ```
-
-4. If you must make changes to accounts or machines, update the ConfigTemplate.xml file, and then run the following script. Make sure that you copy any changes back to the original **infra** folder.
+    
+4. If you must make changes to accounts or machines, update the ConfigTemplate.xml file in the original **infra** folder, copy it to this machine and then run the following script.
 
     ```
-    Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### Install certificates
+### <a name="installcert"></a> Install certificates
 
 1. Navigate to the machine that has the **infra** folder.
 2. If you must generate self-signed certificates, run the following command. The script will create the certificates, put them in the CurrentUser\My certificate store on the machine, and update the thumbprints in the XML file. 
 
     ```
     # Create self-signed certs 
-    New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
     If you must reuse any certificates and therefore don't have to generate certificates for them, set the **generateSelfSignedCert** tag to **false**.
 
 3. If you're using SSL certificates, skip certificate generation, and update the ConfigTemplate.xml with the respective thumbprints.
+
 4. Make sure that you enter the value against the **protectTo** tag. Only the Active Directory user or group that is specified in the **protectTo** tag will have permissions to import the certificates into the individual VMs.
+
 5. Export the certificates into .pfx files.
 
     ```
@@ -331,19 +327,26 @@ Only the domain accounts that are specified in the **ProtectTo** tag will be abl
     > [!IMPORTANT]
     > The certificates must have been installed and must be present in cert:\\CurrentUser\\My. The certificates must also be exportable.
 
-6. Export the scripts that must be run on each VM.
+### <a name="setupvms"></a> Setup VMs
+1. Export the scripts that must be run on each VM.
 
     ```
     # Exports the script files to be execute on each VM into a directory VMs\<VMName>.
     .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-7. Download any Microsoft Windows Installers (MSIs) from the list of VM prerequisite software earlier in this topic into a file share that is accessible by all VMs.
+2. Download the following Microsoft Windows Installers (MSIs) into a file share that is accessible by all VMs.
 
-    > [!NOTE] 
-    > Add the Management Studio MSI to this folder if Management Studio isn't already installed on the VMs.
+| Component | Download link |
+|-----------|---------------|
+| SNAC – ODBC driver | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
+| Microsoft SQL Server Management Studio 2016 | <https://go.microsoft.com/fwlink/?linkid=854085> |
+| Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/en-us/help/3179560> |
+| Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/en-us/download/details.aspx?id=13255> |
 
-8. Copy the contents of each infra\VMs\<VMName> folder into the corresponding VM, and then run the following scripts.
+Follow the below steps for each VM.
+
+1. Copy the contents of each infra\VMs\<VMName> folder into the corresponding VM, and then run the following scripts.
 
     ```
     # Install pre-req software on the VMs.
@@ -351,9 +354,9 @@ Only the domain accounts that are specified in the **ProtectTo** tag will be abl
     ```
 
     > [!IMPORTANT] 
-    > Restart the machine if you're prompt to restart it. Make sure that you rerun the .\Configure-PreReqs.ps1 script after restart. Continue to restart the machine and rerun the script until the script succeeds.
+    > Restart the machine each time you're prompted to restart it. Make sure that you rerun the .\Configure-PreReqs.ps1 script after each restart. 
 
-9. Run the following scripts to complete the VM setup.  
+2. Run the following scripts, if they exist, in order to complete the VM setup.  
 
     ```
     .\Add-GMSAOnVM.ps1
@@ -361,7 +364,7 @@ Only the domain accounts that are specified in the **ProtectTo** tag will be abl
     .\Set-CertificateAcls.ps1
     ```
 
-10. Run the following script to validate the VM setup.
+3. Run the following script to validate the VM setup.
 
     ```
     .\Test-D365FOConfiguration.ps1
@@ -369,17 +372,21 @@ Only the domain accounts that are specified in the **ProtectTo** tag will be abl
 
 ### Set up a standalone Service Fabric cluster
 
-1. Run the following command to generate the ClusterConfig.json file.
+1. Download the [Service Fabric standalone installation package](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#download-the-service-fabric-standalone-package) onto one of your Service Fabric nodes. After the zip file is downloaded, unblock it by right-clicking the zip file and then selecting **Properties**. In the dialog box, select the **Unblock** check box in the lower right.
+
+2. Copy the zip file to one of the nodes in the Service Fabric cluster, and unzip it. Ensure the **infra** folder has access to this folder.
+
+3. Navigate to the **infra** folder and execute the following command to generate the Service Fabric ClusterConfig.json file.
 
     ```
-   .\New-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+   .\New-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -TemplateConfig <ServiceFabricStandaloneInstallerPath>\ClusterConfig.X509.MultiMachine.json
     ```
 
     For more information, see, [Step 1B: Create a multi-machine cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster), [Secure a standalone cluster on Windows using X.509 certificates](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-windows-cluster-x509-security), and [Create a standalone cluster running on Windows Server](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster).
 
-2. Download the [Service Fabric standalone installation package](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#download-the-service-fabric-standalone-package) onto one of your Service Fabric nodes. After the zip file is downloaded, unblock it by right-clicking the zip file and then selecting **Properties**. In the dialog box, select the **Unblock** check box in the lower right.
-3. Copy the zip file to one of the nodes in the Service Fabric cluster, and unzip it.
-4. Copy your ClusterConfig.json file to your unzipped install location of standalone Service Fabric.
+
+4. Copy the generated ClusterConfig.json file to the <ServiceFabricStandaloneInstallerPath>.
+
 5. Navigate to the unzipped install location in Windows PowerShell by using elevated privileges. Then run the following command to test ClusterConfig.
 
     ```
