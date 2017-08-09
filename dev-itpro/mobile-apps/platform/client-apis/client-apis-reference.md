@@ -24,8 +24,7 @@ ms.search.validFrom: 08/09/2017
 ms.dyn365.ops.version:
 ---
 
- 
-# Mobile platform client APIs
+# Client APIs Contents
 
 * [Application](modules/services-application.md)
 
@@ -183,13 +182,11 @@ ms.dyn365.ops.version:
 
   * [Page](interfaces/view-model-ipage-ipage.md)
 
-  * [PageDataState](enums/view-model-ipage-pagedatastate.md)
-
-  * [PageLoadState](enums/view-model-ipage-pageloadstate.md)
-
   * [PageMetadata](interfaces/view-model-ipage-ipagemetadata.md)
 
   * [PageOptions](interfaces/view-model-ipage-ipageoptions.md)
+
+  * [PageState](enums/view-model-ipage-pagestate.md)
 
   * [PageSubmitArgs](interfaces/view-model-ipage-ipagesubmitargs.md)
 

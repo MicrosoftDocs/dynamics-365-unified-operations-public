@@ -44,12 +44,22 @@ A pagelink is a control that navigates to another page.
 
 [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md) <br>&nbsp;&nbsp;&nbsp;└─ PageLink <br>
 
+#### Properties
+
+| Name | Signature | Description |
+| ---- | --------- | ----------- |
+| [container](../interfaces/view-model-control-pagelink-ipagelink-ipagelink.md#container) |container: boolean (optional)  <br>|True if the control is a container.<br>  Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[container](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#container) <br> |
+| [generic](../interfaces/view-model-control-pagelink-ipagelink-ipagelink.md#generic) |generic: boolean (optional)  <br>|  Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[generic](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#generic) <br> |
+| [getDataSource](../interfaces/view-model-control-pagelink-ipagelink-ipagelink.md#getdatasource) |getDataSource: function(): any <br>|  Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#getdatasource) <br> |
+| [hidden](../interfaces/view-model-control-pagelink-ipagelink-ipagelink.md#hidden) |hidden: boolean <br>|True if the control is hidden.<br>  Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[hidden](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#hidden) <br> |
+
 #### Methods
 
 | Name | Signature | Description |
 | ---- | --------- | ----------- |
 | [allowsNavigation](../interfaces/view-model-control-pagelink-ipagelink-ipagelink.md#allowsnavigation) |allowsNavigation(): boolean|  |
 | [applyDesign](../interfaces/view-model-control-pagelink-ipagelink-ipagelink.md#applydesign) |applyDesign(design: [PageLinkDesign](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md)): void|Applies given design to the design on the control.<br>  Overrides [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[applyDesign](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#applydesign) <br> |
+| [dataContext](../interfaces/view-model-control-pagelink-ipagelink-ipagelink.md#datacontext) |dataContext(): any|  Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#datacontext) <br> |
 | [getCount](../interfaces/view-model-control-pagelink-ipagelink-ipagelink.md#getcount) |getCount(): number &#124; string|  |
 | [getDesign](../interfaces/view-model-control-pagelink-ipagelink-ipagelink.md#getdesign) |getDesign(): [Design](../interfaces/view-model-ipage-idesign.md)|Returns the design object of this control.<br>  Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[getDesign](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#getdesign) <br> |
 | [getNavigationHandler](../interfaces/view-model-control-pagelink-ipagelink-ipagelink.md#getnavigationhandler) |getNavigationHandler(): [NavigationArgs](../interfaces/view-model-ipage-inavigationargs.md)|  |
@@ -78,8 +88,8 @@ A pagelink is a control that navigates to another page.
 | [color](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#color) |color: string (optional)  <br>|The foreground color of the container.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[color](../interfaces/view-model-ipage-idesign.md#color) <br> |
 | [excludeContext](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#excludecontext) |excludeContext: boolean (optional)  <br>|  |
 | [flexFlow](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#flexflow) |flexFlow: string (optional)  <br>|Specifying this property makes the component a flex container component.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) <br> |
-| [flexSize](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#flexsize) |flexSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (optional)  <br>|This property is an alias for the CSS property "flex".<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) <br> |
-| [fontSize](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#fontsize) |fontSize: string (optional)  <br>|A number written as a string. E.g. "3".<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[fontSize](../interfaces/view-model-ipage-idesign.md#fontsize) <br> |
+| [flexSize](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#flexsize) |flexSize: string (optional)  <br>|One number or two numbers written as a string. E.g. "(size to grow) [(size-to-shrink)]" to accomodate available space in the immediate flex container.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) <br> |
+| [fontSize](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#fontsize) |fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (optional)  <br>|The proportional text size<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[fontSize](../interfaces/view-model-ipage-idesign.md#fontsize) <br> |
 | [fontWeight](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#fontweight) |fontWeight: "normal" &#124; "bold" (optional)  <br>|Normal or bold text.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[fontWeight](../interfaces/view-model-ipage-idesign.md#fontweight) <br> |
 | [hideArrow](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#hidearrow) |hideArrow: boolean (optional)  <br>|Allows an arrow ( > ) on a default styled navigation control to be hidden.<br>  |
 | [icon](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#icon) |icon: string (optional)  <br>|Name of the icon that is displayed in the pagelink control.<br>  |

@@ -33,9 +33,17 @@ Value control type. This is the base class for single value controls.
 
 ## Index
 
+### Properties
+
+* [container](view-model-control-value-ivalue-ivalue.md#container)
+* [generic](view-model-control-value-ivalue-ivalue.md#generic)
+* [getDataSource](view-model-control-value-ivalue-ivalue.md#getdatasource)
+* [hidden](view-model-control-value-ivalue-ivalue.md#hidden)
+
 ### Methods
 
 * [applyDesign](view-model-control-value-ivalue-ivalue.md#applydesign)
+* [dataContext](view-model-control-value-ivalue-ivalue.md#datacontext)
 * [getDesign](view-model-control-value-ivalue-ivalue.md#getdesign)
 * [getValue](view-model-control-value-ivalue-ivalue.md#getvalue)
 * [isEditable](view-model-control-value-ivalue-ivalue.md#iseditable)
@@ -47,6 +55,44 @@ Value control type. This is the base class for single value controls.
 ### Events
 
 * [onDataChanged](view-model-control-value-ivalue-ivalue.md#ondatachanged)
+
+## Properties
+
+### container
+
+container: boolean (optional) 
+
+True if the control is a container.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)
+
+
+### generic
+
+generic: boolean (optional) 
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)
+
+
+### getDataSource
+
+getDataSource: function(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)
+
+
+### hidden
+
+hidden: boolean
+
+True if the control is hidden.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)
+
 
 ## Methods
 
@@ -68,6 +114,17 @@ If a design already exists, the prototype chain of the design will be preserved.
 | design|[Design](view-model-ipage-idesign.md)|object containing design properties as keys|
 
 #### Returns void
+
+### dataContext
+
+
+dataContext(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)
+
+#### Returns any
 
 ### getDesign
 

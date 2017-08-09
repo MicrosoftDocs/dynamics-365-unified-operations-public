@@ -35,12 +35,17 @@ Multi-Lookup control type. Multi-Lookup controls are similar to regular lookups 
 
 ### Properties
 
+* [container](view-model-control-lookup-imultilookup-imultilookup.md#container)
+* [generic](view-model-control-lookup-imultilookup-imultilookup.md#generic)
+* [getDataSource](view-model-control-lookup-imultilookup-imultilookup.md#getdatasource)
 * [getEntityRefs](view-model-control-lookup-imultilookup-imultilookup.md#getentityrefs)
+* [hidden](view-model-control-lookup-imultilookup-imultilookup.md#hidden)
 * [setEntityRefs](view-model-control-lookup-imultilookup-imultilookup.md#setentityrefs)
 
 ### Methods
 
 * [applyDesign](view-model-control-lookup-imultilookup-imultilookup.md#applydesign)
+* [dataContext](view-model-control-lookup-imultilookup-imultilookup.md#datacontext)
 * [getDesign](view-model-control-lookup-imultilookup-imultilookup.md#getdesign)
 * [getLookupPage](view-model-control-lookup-imultilookup-imultilookup.md#getlookuppage)
 * [isEditable](view-model-control-lookup-imultilookup-imultilookup.md#iseditable)
@@ -54,11 +59,47 @@ Multi-Lookup control type. Multi-Lookup controls are similar to regular lookups 
 
 ## Properties
 
+### container
+
+container: boolean (optional) 
+
+True if the control is a container.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)
+
+
+### generic
+
+generic: boolean (optional) 
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)
+
+
+### getDataSource
+
+getDataSource: function(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)
+
+
 ### getEntityRefs
 
 getEntityRefs: function(): string [ ] &#124; number [ ]
 
 
+
+
+### hidden
+
+hidden: boolean
+
+True if the control is hidden.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)
 
 
 ### setEntityRefs
@@ -88,6 +129,17 @@ If a design already exists, the prototype chain of the design will be preserved.
 | IDesign|[MultiLookupDesign](view-model-control-lookup-imultilookup-imultilookupdesign.md)|object containing design properties as keys|
 
 #### Returns void
+
+### dataContext
+
+
+dataContext(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)
+
+#### Returns any
 
 ### getDesign
 

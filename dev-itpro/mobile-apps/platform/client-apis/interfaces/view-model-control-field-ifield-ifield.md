@@ -33,9 +33,17 @@ Field control type.
 
 ## Index
 
+### Properties
+
+* [container](view-model-control-field-ifield-ifield.md#container)
+* [generic](view-model-control-field-ifield-ifield.md#generic)
+* [getDataSource](view-model-control-field-ifield-ifield.md#getdatasource)
+* [hidden](view-model-control-field-ifield-ifield.md#hidden)
+
 ### Methods
 
 * [applyDesign](view-model-control-field-ifield-ifield.md#applydesign)
+* [dataContext](view-model-control-field-ifield-ifield.md#datacontext)
 * [getDesign](view-model-control-field-ifield-ifield.md#getdesign)
 * [getEditableFormattedValue](view-model-control-field-ifield-ifield.md#geteditableformattedvalue)
 * [getEditableValue](view-model-control-field-ifield-ifield.md#geteditablevalue)
@@ -54,6 +62,44 @@ Field control type.
 ### Events
 
 * [onDataChanged](view-model-control-field-ifield-ifield.md#ondatachanged)
+
+## Properties
+
+### container
+
+container: boolean (optional) 
+
+True if the control is a container.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)
+
+
+### generic
+
+generic: boolean (optional) 
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)
+
+
+### getDataSource
+
+getDataSource: function(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)
+
+
+### hidden
+
+hidden: boolean
+
+True if the control is hidden.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)
+
 
 ## Methods
 
@@ -75,6 +121,17 @@ If a design already exists, the prototype chain of the design will be preserved.
 | IDesign|[FieldDesign](view-model-control-field-ifield-ifielddesign.md)|object containing design properties as keys|
 
 #### Returns void
+
+### dataContext
+
+
+dataContext(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)
+
+#### Returns any
 
 ### getDesign
 

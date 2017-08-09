@@ -37,10 +37,14 @@ A group control is a container control that has any number of controls as childr
 ### Properties
 
 * [container](view-model-control-group-igroup-igroup.md#container)
+* [generic](view-model-control-group-igroup-igroup.md#generic)
+* [getDataSource](view-model-control-group-igroup-igroup.md#getdatasource)
+* [hidden](view-model-control-group-igroup-igroup.md#hidden)
 
 ### Methods
 
 * [applyDesign](view-model-control-group-igroup-igroup.md#applydesign)
+* [dataContext](view-model-control-group-igroup-igroup.md#datacontext)
 * [getChildren](view-model-control-group-igroup-igroup.md#getchildren)
 * [getControl](view-model-control-group-igroup-igroup.md#getcontrol)
 * [getControlById](view-model-control-group-igroup-igroup.md#getcontrolbyid)
@@ -59,6 +63,35 @@ container: boolean
 True if the control is a container.
 
 > Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[container](view-model-control-container-icontainercontrol-icontainercontrol.md#container)
+
+> Overrides [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)
+
+
+### generic
+
+generic: boolean (optional) 
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)
+
+
+### getDataSource
+
+getDataSource: function(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)
+
+
+### hidden
+
+hidden: boolean
+
+True if the control is hidden.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)
 
 
 ## Methods
@@ -81,6 +114,17 @@ If a design already exists, the prototype chain of the design will be preserved.
 | IDesign|[GroupDesign](view-model-control-group-igroup-igroupdesign.md)|object containing design properties as keys|
 
 #### Returns void
+
+### dataContext
+
+
+dataContext(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)
+
+#### Returns any
 
 ### getChildren
 

@@ -36,10 +36,14 @@ Part control type. A part is a container control that contains only a page, allo
 ### Properties
 
 * [container](view-model-control-part-ipart-ipart.md#container)
+* [generic](view-model-control-part-ipart-ipart.md#generic)
+* [getDataSource](view-model-control-part-ipart-ipart.md#getdatasource)
+* [hidden](view-model-control-part-ipart-ipart.md#hidden)
 
 ### Methods
 
 * [applyDesign](view-model-control-part-ipart-ipart.md#applydesign)
+* [dataContext](view-model-control-part-ipart-ipart.md#datacontext)
 * [getControl](view-model-control-part-ipart-ipart.md#getcontrol)
 * [getControlById](view-model-control-part-ipart-ipart.md#getcontrolbyid)
 * [getDesign](view-model-control-part-ipart-ipart.md#getdesign)
@@ -60,6 +64,35 @@ container: boolean
 True if the control is a container.
 
 > Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[container](view-model-control-container-icontainercontrol-icontainercontrol.md#container)
+
+> Overrides [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)
+
+
+### generic
+
+generic: boolean (optional) 
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)
+
+
+### getDataSource
+
+getDataSource: function(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)
+
+
+### hidden
+
+hidden: boolean
+
+True if the control is hidden.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)
 
 
 ## Methods
@@ -82,6 +115,17 @@ If a design already exists, the prototype chain of the design will be preserved.
 | IDesign|[PartDesign](view-model-control-part-ipart-ipartdesign.md)|object containing design properties as keys|
 
 #### Returns void
+
+### dataContext
+
+
+dataContext(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)
+
+#### Returns any
 
 ### getControl
 
