@@ -149,19 +149,9 @@ The following table shows whether each feature is available in:
 | | Configurable business processes | Yes | No |
 | LinkedIn engagement| | | |
 | Localizations| | | |
-| | Country/region localizations & languages| Yes | ? |
+| | Country/region localizations & languages| Yes | Yes |
 | | Dynamics Translation Service| Yes | Yes |
-| | Enhancements to the German audit file (GDPdU)| Yes | Yes |
-| | Global coverage - Configurable Electronic Reporting (February 2016 release)| Yes | No |
-| | Global coverage - Configurable Electronic Reporting (July 2017)| Yes | Yes |
-| | Global coverage - Configurable Electronic Reporting (May 2016 Release)| Yes | No |
-| | Global coverage - Configurable Electronic Reporting (November 2016 release)| Yes | No |
-| | Global coverage - Countries/regions| Yes | Yes |
-| | Global coverage - Languages| Yes | No |
 | | Global coverage - Retail| Yes | No |
-| | Localization configurations| Yes | ? |
-| | Regulatory updates| Yes | ? |
-| | Substitution/adjustment invoices for Thailand| Yes | Yes |
 | Manufacturing| | | |
 | | Manufacturing – Gantt control| Yes | ? |
 | Master planning and forecasting| | | |
