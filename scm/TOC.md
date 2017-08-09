@@ -2093,7 +2093,7 @@
 ### [Form I-9 employment verification](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Comply with the ADA](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-# [Development & administration using the Unified Operations Platform](/dynamics365/unified-operations/dev-itpro/index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+# [Development & administration](/dynamics365/unified-operations/dev-itpro/index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## [System requirements for cloud deployments](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ## [System requirements for on-premises deployments](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements-on-prem?toc=/dynamics365/unified-operations/supply-chain/toc.json)
