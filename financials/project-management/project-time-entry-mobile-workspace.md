@@ -108,11 +108,11 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 2.  Select **Time entry**. The calendar dates for the current week are shown.
 3.  For a selected date, select **Actions** &gt; **New entry**.
 4.  Enter the number of hours to record.
-5.  Select the project for the time entry. A list shows the projects that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+5.  Select the project for the time entry. A list shows the projects that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 6.  If your project isn't in the list, select **Search**. Search by name, or switch to search by project name or customer.
-7.  Select a category. A list shows the categories that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+7.  Select a category. A list shows the categories that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 8.  If your category isn't in the list, select **Search**. Search by category, or switch to search by category name.
-9.  Select an activity. A list shows the activities that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+9.  Select an activity. A list shows the activities that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 10. If your activity isn't in the list, select **Search**. Search by activity number, or switch to search by purpose.
 
 11. Select the line property.
