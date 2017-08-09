@@ -5,7 +5,7 @@ title: NF-e process overview for Brazil
 description: This topic provides an overview of the process for setting up and submitting a Nota fiscal eletrônica (NF-e) to register the movement of items and services between two parties.
 author: sndray
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -66,5 +66,11 @@ After the status of the NF-e is received from SEFAZ, you can perform the followi
 -   If the NF-e is rejected and can't be fixed, you must cancel the discarded NF-e that has discarded number. The NF-e export or import process detects the fiscal document that is posted and marked for discard, and then generates an XML message in the specified format for the discarded NF-e number. This XML message is then transmitted to SEFAZ, and the fiscal document status is set to **Discarded**.
 
 
+For more information, see the following topics:
 
+[Set up NF-e federal parameters (Brazil)](tasks/br-00053-1-set-up-nf-e-federal-parameters.md)
+[Set up NF-e parameters for a fiscal establishment (Brazil)](tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md)
+[Generate emails for approved NF-e and attach DANFE PDF files and NF-e XML files to the emails (Brazil)](tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md)
+[NF-e 3.10 (Brazil)](tasks/br-00053-nf-e-3-10.md)
+[Automatic transmission of NF-e fiscal documents (Brazil)](tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md)
 

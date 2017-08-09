@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Development and administration using the Unified Operations platform
-description: This page helps developers and IT Pros get started with the Dynamics 365 Unified Operations platform, which underlies Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail.  
+title: Development and administration for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+description: This page helps developers and IT Pros get started with Finance and Operations, Enterprise edition.
 author: margoc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Development and administration using the Microsoft Dynamics 365 Unified Operations platform 
+# Development and administration for Dynamics 365 for Finance and Operations, Enterprise edition 
 
 [!include[banner](includes/banner.md)]
 
-Development and administration for Microsoft Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Retail is performed using the Microsoft Dynamics 365 Unified Operations platform. The platform includes:
+Development and administration for Microsoft Dynamics 365 for Finance and Operations platform includes:
 
 - Administrator experience and Lifecycle Services
 - Developer experience

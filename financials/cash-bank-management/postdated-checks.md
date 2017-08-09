@@ -56,7 +56,7 @@ Microsoft Dynamics 365 for Finance and Operations supports the full management
 </tr>
 <tr class="even">
 <td>Register and post a postdated check for a vendor</td>
-<td>Register the details of a postdated check that you issue to a vendor. When the payment is posted, the vendor liability is recognized, but the bank account isn’t yet credit. Instead, a clearing account is used for this purpose.</td>
+<td>Register the details of a postdated check that you issue to a vendor. When the payment is posted, the vendor liability is recognized, but the bank account isn’t yet credit. Instead, a clearing account is used for this purpose. </td>
 </tr>
 <tr class="odd">
 <td>Register and post a postdated check for a customer</td>
@@ -92,6 +92,17 @@ If your original check to a vendor or from a customer is lost or damaged, you ca
 
 
 
+For more information, see the following topics:
+
+[Set up postdated checks](tasks/set-up-postdated-checks.md)
+
+[Register and post a postdated check for a customer](tasks/register-post-postdated-check-customer.md)
+
+[Settle a postdated check from a customer](tasks/settle-postdated-check-customer.md)
+
+[Register and post a postdated check for a vendor](tasks/register-post-postdated-check-vendor.md) 
+
+[Settle a postdated check for a vendor](tasks/settle-postdated-check-vendor.md)
 
 
 

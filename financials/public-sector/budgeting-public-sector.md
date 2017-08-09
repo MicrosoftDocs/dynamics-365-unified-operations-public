@@ -5,7 +5,7 @@ title: Budgeting in the public sector
 description: This overview introduces you to the budgeting functionality that is available for public sector. This includes budget analysis, preliminary budgets and apportionments, and posting definitions.
 author: rschloma
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -67,6 +67,10 @@ See also
 [Accounts receivable in the public sector](accounts-receivable-public-sector.md)
 
 [General ledger in the public sector](general-ledger-public-sector.md)
+
+[Create a preliminary budget](tasks/create-preliminary-budget-public-sector.md)
+
+[Create an original budget and reverse preliminary budget entries](tasks/create-original-budget.md)
 
 
 

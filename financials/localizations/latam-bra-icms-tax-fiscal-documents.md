@@ -5,7 +5,7 @@ title: ICMS tax fiscal documents for Brazil
 description: This topic explains the concept of tax fiscal documents and describes the requirements for generating them.
 author: sndray
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -135,6 +135,16 @@ The following prerequisites must be set up before you can create and post tax
 -   Incoming fiscal documents to transfer the ICMS tax credit from other legal entities, subsidiaries/branches of same company/organization destined for compensation of the debt balance of the ICMS (CFOP:1.601 and 1.602)
 -   Incoming fiscal documents to appropriate 1/48 of the ICMS credit (CFOP:1.604) (CIAP)
 
+
+For more information, see the following topics:
+
+[Set up adjustment codes for ICMS tax (Brazil)](tasks/br-10001-1-set-up-adjustment-codes-icms-tax.md)
+
+[Set up adjustment codes for ICMS taxes on fiscal documents (Brazil)](tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md)
+
+[Enter and post tax adjustment transactions (Brazil)](tasks/br-10001-3-enter-post-tax-adjustment-transactions.md)
+
+[Create a tax assessment - ICMS (Brazil)](tasks/br-10001-4-create-tax-assessment-icms.md)
 
 
 
