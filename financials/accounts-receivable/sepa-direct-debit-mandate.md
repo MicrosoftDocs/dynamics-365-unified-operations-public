@@ -61,5 +61,5 @@ You must set up a method of payment for direct debit mandates. You use this meth
 
 See Also
 [Direct debit overview](sepa-direct-debit-overview.md) 
-[Create a direct debit mandate for a customer](create-direct-debit-mandate-customer.md) 
+[Create a direct debit mandate for a customer](tasks/create-direct-debit-mandate-customer.md) 
 
