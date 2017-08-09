@@ -144,7 +144,7 @@ In this section, you’ll model an aggregate data entity. Next, you will add the
     -   Select **Month** as the **Attribute** property
     -   Modify the **Name** property to **RentalMonth**
 
-11. Note that the aggregate data entity **FMBIRevenueByVehicleModelbyMonth **contains 4 fields. All measures that are added to aggregate data entities will be grouped by the dimension attributes added as fields.
+11. Note that the aggregate data entity **FMBIRevenueByVehicleModelbyMonth** contains 4 fields. All measures that are added to aggregate data entities will be grouped by the dimension attributes added as fields.
 12. Save the aggregate data entity. Re-build the project.
     -   Make sure that **Synchronize database** is enabled with the build under **Project** properties.
     -   You can also synchronize the database after the build if you have not enabled the above setting.
@@ -175,17 +175,18 @@ In the previous step, we have added the Aggregate Data Entity to the form as a d
 
 1.  Expand the **Data sources &gt; FMBIRevenueByVehicleModelbyMonth &gt; methods** node in the form part. Right-click and select **Override &gt; init**.
 2.  An Init method will be added to the table. The Code editor will launch with the init() method definition.
-3.  Copy and paste the  following code into the body of the init() method **after **super( )****
-    1.  this.queryBuildDataSource().addDynalink(fieldNum(FMBIRevenueByVehicleModelbyMonth, VehicleModel), FMVehicleModel, fieldNum(FMVehicleModel, Model));
-
-4.  The completed method definition should be as follows ********
-
+3.  Copy and paste the  following code into the body of the init() method **after** super( )
+```
+this.queryBuildDataSource().addDynalink(fieldNum(FMBIRevenueByVehicleModelbyMonth, VehicleModel), FMVehicleModel, fieldNum(FMVehicleModel, Model));
+``` 
+4.  The completed method definition should be as follows 
+```
          public void init()
          {
                super(); 
                this.queryBuildDataSource().addDynalink(fieldNum(FMBIRevenueByVehicleModelbyMonth, VehicleModel), FMVehicleModel, fieldNum(FMVehicleModel, Model));
          }
-
+```
 5.  Save the class, and then build the project.
 
 ## Model a chart in the form part
