@@ -2568,7 +2568,7 @@
 #### [Deprecated APIs](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-apis?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Deprecated features](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## System administration
+## [System administration](/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Platform monthly updates FAQ](/dynamics365/unified-operations/dev-itpro/sysadmin/faq-platform-monthly-updates?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Add links to your organization's legal terms and privacy statement](/dynamics365/unified-operations/dev-itpro/sysadmin/legal-terms-privacy-statement?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [License codes and configuration keys report](/dynamics365/unified-operations/dev-itpro/sysadmin/license-codes-configuration-keys-report?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
