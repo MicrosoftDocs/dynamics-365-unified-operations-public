@@ -85,7 +85,7 @@ background: string (optional)
 
 Sets the background color.
 If "theme" is used, then the color will match the app's theme color. <br>
-![sample image](../../../media/colors_pagelink.PNG)
+![sample image](../../../platform/media/colors_pagelink.PNG)
 
 
 ### bindings
