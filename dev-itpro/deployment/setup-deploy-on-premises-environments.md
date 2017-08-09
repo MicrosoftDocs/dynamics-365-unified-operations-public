@@ -49,13 +49,16 @@ These components depend on the following system software:
     - Full-text index search is enabled.
     - SQL Server Reporting Services (SSRS)
     - SQL Server Integration Services (SSIS)
+    
     > [!WARNING]
     > The application won't run if Full Text Search isn't enabled.
+    
 - SQL Server Management Studio
 - Standalone Microsoft Azure Service Fabric
 - Microsoft Windows PowerShell 5.0 or later
 - Active Directory Federation Services (AD FS) on Windows Server 2016
 - Domain controller 
+
     > [!WARNING]
     > The domain controller must be Microsoft Windows Server 2012 R2 or later and must have a domain functional level of 2012 R2 or more.    For more information about domain functional levels, see the following pages:
     - [What Are Active Directory Functional Levels](https://technet.microsoft.com/en-us/library/cc787290(v=ws.10).aspx)
@@ -118,9 +121,28 @@ The following table shows an example of a hardware layout. This example is used 
 
 Before you start the setup, the following prerequisites must be in place. The setup of these prerequisites is out of scope for this document.
 
-- Active Directory Domain Services (AD DS) is installed and configured in your network.
-- AD FS is deployed.
-- SQL Server, SSRS, and Management Studio are installed.
+- Active Directory Domain Services (AD DS) must be installed and configured in your network.
+- AD FS must be deployed.
+- SQL Server 2016 SP1 must be installed on the BI machines.
+- SQL Server Reporting Services 2016 must be installed in **Native** mode on the BI machines.
+
+The following prerequisite software is installed on the VMs by the infrastructure setup scripts downloaded from LCS.
+
+| Node type | Component | Details |
+|-----------|-----------|---------|
+| AOS       | SNAC – ODBC driver | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
+| AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows Features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
+| AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows Features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
+| AOS       | Internet Information Services (IIS) | **Windows Features:** WAS, WAS-Process-Model, WAS-NET-Environment, WAS-Config-APIs, Web-Server, Web-WebServer, Web-Security, Web-Filtering, Web-App-Dev, Web-Net-Ext, Web-Mgmt-Tools, Web-Mgmt-Console |
+| AOS       | SQL Server Management Studio 17.2 | <https://go.microsoft.com/fwlink/?linkid=854085> |
+| AOS       | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/en-us/help/3179560> |
+| AOS       | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/en-us/download/details.aspx?id=13255> |
+| BI        | The .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows Features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
+| BI        | The .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows Features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
+| BI        | SQL Server Management Studio 17.2 | <https://go.microsoft.com/fwlink/?linkid=854085> |
+| MR        | The .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows Features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
+| MR        | The .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows Features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
+| MR        | Visual C++ Redistributable Packages for Visual Studio 2013 | <https://support.microsoft.com/en-us/help/3179560> |
 
 ### Overview
 
@@ -131,10 +153,10 @@ The following steps must be completed to set up the infrastructure for Finance a
 3. [Plan your users and service accounts](#plansvcacct)
 4. [Create DNS zones, and add A records](#createdns)
 5. [Join VMs to the domain](#joindomain)
-6. [Add prerequisite software to VMs](#addprereq)
-7. [Download setup scripts from LCS](#downloadscripts)
-8. [Describe your configuration](#describeconfig)
-9. [Install certificates](#installcert)
+6. [Download setup scripts from LCS](#downloadscripts)
+7. [Describe your configuration](#describeconfig)
+8. [Configure certificates](#configurecert)
+9. [Setup VMs](#setupvms)
 10. [Set up a standalone Service Fabric cluster](#setupsfcluster)
 11. [Configure LCS connectivity for the tenant](#configurelcs)
 12. [Set up file storage](#setupfile)
@@ -145,7 +167,7 @@ The following steps must be completed to set up the infrastructure for Finance a
 17. [Configure AD FS](#configureadfs)
 18. [Configure a connector and install an on-premises local agent](#configureconnector)
 
-### <a name="plandomain"></a> Plan your domain name and DNS zones
+### <a name="plandomain"></a> 1. Plan your domain name and DNS zones
 
 We recommend that you use a publicly registered domain name for your production installation of AOS. In that way, the installation can be accessed outside the network, if outside access is required.
 
@@ -154,7 +176,7 @@ For example, if your company's domain is contoso.com, your zone for Finance and 
 - ax.d365ffo.onprem.contoso.com for AOS machines
 - sf.d365ffo.onprem.contoso.com for the Service Fabric cluster
 
-### <a name="plancert"></a> Plan and acquire your certificates
+### <a name="plancert"></a> 2. Plan and acquire your certificates
 
 Secure Sockets Layer (SSL) certificates are required in order to secure a Service Fabric cluster and all the applications that are deployed. For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as [DigiCert](https://www.digicert.com/ssl-certificate/), [Comodo](https://ssl.comodo.com/), [Symantec](https://www.websecurity.symantec.com/ssl-certificate), [GoDaddy](https://www.godaddy.com/web-security/ssl-certificate), or [GlobalSign](https://www.globalsign.com/en/ssl/). If your domain is set up with [Active Directory Certificate Services](https://technet.microsoft.com/en-us/library/cc772393(v=ws.10).aspx) (AD CS), you can create the certificates through AD CS. Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.
 
@@ -173,7 +195,7 @@ Self-signed certificates can be used only for testing purposes. For convenience,
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and AOS. | |
 | On-Premise local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p> | |
 
-### <a name="plansvcacct"></a> Plan your users and service accounts
+### <a name="plansvcacct"></a> 3. Plan your users and service accounts
 
 You must create several user or service accounts for Finance and Operations (on-premises) to work. You must create a combination of group managed service accounts (gMSAs), domain accounts, and SQL accounts. The following table shows the user accounts, their purpose, and example names that will be used in this topic.
 
@@ -189,7 +211,7 @@ You must create several user or service accounts for Finance and Operations (on-
 
 \* The SQL user name and password for SQL authentication are secured, because they are encrypted and stored in the file share.
 
-### <a name="createdns"></a> Create DNS zones and add A records
+### <a name="createdns"></a> 4. Create DNS zones and add A records
 
 DNS is integrated with AD DS, and lets you organize, manage, and find resources in a network. Create a DNS forward lookup zone and A records for the AOS host name and the Service Fabric cluster. In this example setup, the DNS zone name is d365ffo.onprem.contoso.com, and the A records/host names are as follows:
 
@@ -223,7 +245,7 @@ In the new DNS zone, create an A record that is named **sf.d365ffo.onprem.conto
 1. Right-click the new zone, and then select **New Host**.
 2. Enter the name and IP address of the Service Fabric node. (For example, enter **10.179.108.15** as the IP address.) Then select **Add Host**.
 
-### <a name="joindomain"></a> Join VMs to the domain
+### <a name="joindomain"></a> 5. Join VMs to the domain
 
 Join each VM to the domain by completing the steps in [How to join Windows Server 2016 to an Active Directory domain](http://www.tomsitpro.com/articles/join-windows-server-2016-to-ad-domain,2-1063.html). Alternatively, use the following Windows PowerShell script.
 
@@ -235,32 +257,11 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 > [!IMPORTANT]
 > You must restart the VMs after you join them to the domain.
 
-### <a name="addprereq"></a> Add prerequisite software to VMs
+Once the VMs are joined to the domain, add the AOS Service Accounts 
+1. Contoso\svc-AXSF$
+2. Contoso\svc-AXSF$ to the local administrators group. You can check [Add a member to local group](https://technet.microsoft.com/en-us/library/cc772524(v=ws.11).aspx) article for how to do this. 
 
-The following table lists the prerequisite software that must be applied to the machines of each node type.
-
-> [!NOTE]
-> You must restart your computer after you install the components.
-
-| Node type | Component | Command |
-|-----------|-----------|---------|
-| AOS       | SNAC – ODBC driver | See [Microsoft ODBC Driver 13.1 for SQL Server - Windows + Linux](https://www.microsoft.com/en-us/download/details.aspx?id=53339). |
-| AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | `Add-WindowsFeature -Name NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ` |
-| AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | `Add-WindowsFeature -Name NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45` |
-| AOS       | Internet Information Services (IIS) | `Add-WindowsFeature WAS, WAS-Process-Model, WAS-NET-Environment, WAS-Config-APIs`<br>`# Windows Process Activation Service`<br>`Add-WindowsFeature Web-Server, Web-WebServer, Web-Security, Web-Filtering, Web-App-Dev, Web-Net-Ext, Web-Mgmt-Tools, Web-Mgmt-Console` |
-| AOS       | Microsoft SQL Server Management Studio 2016 | |
-| AOS       | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | See [Microsoft Visual C++ Redistributable Packages for Visual Studio 2013](https://support.microsoft.com/en-us/help/3179560). |
-| AOS       | Microsoft Access Database Engine 2010 Redistributable | See [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=13255). |
-| BI        | The .NET Framework version 2.0–3.5 (CLR 2.0) | `Add-WindowsFeature -Name NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ` |
-| BI        | The .NET Framework version 4.0–4.6 (CLR 4.0) | `Add-WindowsFeature -Name NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45` |
-| BI        | SQL Server 2016 SP1 | |
-| BI        | Management Studio 2016 | |
-| BI        | SQL Server Reporting Services 2016 in **Native** mode | |
-| MR        | The .NET Framework version 2.0–3.5 (CLR 2.0) | `Add-WindowsFeature -Name NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ` |
-| MR        | The .NET Framework version 4.0–4.6 (CLR 4.0) | `Add-WindowsFeature -Name NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45` |
-| MR        | Visual C++ Redistributable Packages for Visual Studio 2013 | See [Microsoft Visual C++ Redistributable Packages for Visual Studio 2013](https://support.microsoft.com/en-us/help/3179560). |
-
-### <a name="downloadscripts"></a> Download setup scripts from LCS
+### <a name="downloadscripts"></a> 6. Download setup scripts from LCS
 
 We have provided several scripts to help improve the setup experience. Follow these steps to download the setup scripts from LCS.
 
@@ -275,14 +276,34 @@ We have provided several scripts to help improve the setup experience. Follow th
 6. Copy the zip file to the machine that will be used to execute the scripts.
 7. Unzip the files into a folder that is named **infra**.
 
-> [!IMPORTANT}
+> [!IMPORTANT]
 > Ensure all edits are made to the ConfigTemplate.xml in this folder.
 
-### <a name="describeconfig"></a> Describe your configuration
+### <a name="describeconfig"></a> 7. Describe your configuration
 
-This section provides information about the scripts that you must run. The scripts are discussed in the order that you must run them in. To run the scripts, fill in the template file at $(downloadPath)\\ConfigTemplate.xml. The ConfigTemplate.xml file describes the Service Fabric clusters, the certificates that are used to configure them, and the accounts that must be granted access to the relevant certificates.
+The infrastructure setup scripts use the below 2 configuration files to drive the setup.
+1. infra\ConfigTemplate.xml and
+2. infra\D365FO-OP\NodeTopologyDefintion.xml 
 
-Only the domain accounts that are specified in the **ProtectTo** tag will be able to import the .pfx files for certificates. This limitation is a security enhancement that replaces the certificate passwords in plain text. In the example that is provided, the values are filled in for the example infrastructure that is described in this topic. The template file will be used in the next section.
+**ConfigTemplate.xml** describes 
+
+1. **Service Accounts** that are needed for the application to operate
+2. **Certificates** necessary for securing communications
+3. **Database** configuration
+4. **Service Fabric cluster** configuration
+
+**NodeTopologyDefinition.xml** describes for each Service Fabric Node type
+
+1. the mapping between each node type and
+    1. Application
+    2. Domain / Service accounts
+    3. Certificates
+2. If UAC must be disabled
+3. Prerequisite 
+    1. Windows Features
+    2. System Software
+4. If strong name validation must be disabled
+5. List of firewall ports to be opened
 
 #### Create gMSA and domain user accounts
 
@@ -301,7 +322,7 @@ Only the domain accounts that are specified in the **ProtectTo** tag will be abl
     .\Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="installcert"></a> Install certificates
+### <a name="configurecert"></a> 8. Configure certificates
 
 1. Navigate to the machine that has the **infra** folder.
 2. If you must generate self-signed certificates, run the following command. The script will create the certificates, put them in the CurrentUser\My certificate store on the machine, and update the thumbprints in the XML file. 
@@ -327,7 +348,7 @@ Only the domain accounts that are specified in the **ProtectTo** tag will be abl
     > [!IMPORTANT]
     > The certificates must have been installed and must be present in cert:\\CurrentUser\\My. The certificates must also be exportable.
 
-### <a name="setupvms"></a> Setup VMs
+### <a name="setupvms"></a> 9. Setup VMs
 1. Export the scripts that must be run on each VM.
 
     ```
@@ -340,11 +361,11 @@ Only the domain accounts that are specified in the **ProtectTo** tag will be abl
 | Component | Download link |
 |-----------|---------------|
 | SNAC – ODBC driver | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
-| Microsoft SQL Server Management Studio 2016 | <https://go.microsoft.com/fwlink/?linkid=854085> |
+| Microsoft SQL Server Management Studio 17.2 | <https://go.microsoft.com/fwlink/?linkid=854085> |
 | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/en-us/help/3179560> |
 | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/en-us/download/details.aspx?id=13255> |
 
-Follow the below steps for each VM.
+**Follow the below steps for each VM.**
 
 1. Copy the contents of each infra\VMs\<VMName> folder into the corresponding VM, and then run the following scripts.
 
@@ -370,7 +391,7 @@ Follow the below steps for each VM.
     .\Test-D365FOConfiguration.ps1
     ```
 
-### Set up a standalone Service Fabric cluster
+### <a name="setupsfcluster"></a> 10. Set up a standalone Service Fabric cluster
 
 1. Download the [Service Fabric standalone installation package](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#download-the-service-fabric-standalone-package) onto one of your Service Fabric nodes. After the zip file is downloaded, unblock it by right-clicking the zip file and then selecting **Properties**. In the dialog box, select the **Unblock** check box in the lower right.
 
@@ -384,15 +405,14 @@ Follow the below steps for each VM.
 
     For more information, see, [Step 1B: Create a multi-machine cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster), [Secure a standalone cluster on Windows using X.509 certificates](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-windows-cluster-x509-security), and [Create a standalone cluster running on Windows Server](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster).
 
-
 4. Copy the generated ClusterConfig.json file to the <ServiceFabricStandaloneInstallerPath>.
 
-5. Navigate to the unzipped install location in Windows PowerShell by using elevated privileges. Then run the following command to test ClusterConfig.
+5. Navigate to the <ServiceFabricStandaloneInstallerPath> in Windows PowerShell by using elevated privileges. Then run the following command to test ClusterConfig.
 
     ```
     .\TestConfiguration.ps1 -ClusterConfigFilePath .\clusterConfig.json
     ```
-
+    
 6. If the test is successful, run the following command to deploy the cluster.
 
     ```
@@ -406,7 +426,7 @@ Follow the below steps for each VM.
     3. Go to `https://sf.d365ffo.onprem.contoso.com:19080`, where sf.d365ffo.onprem.contoso.com is the host name of the Service Fabric cluster that is specified in the zone. If DNS name resolution isn't configured, use the IP address of the machine.
     4. Select the client certificate. The **Service Fabric explorer** page appears.
 
-### Configure LCS connectivity for the tenant
+### <a name="configurelcs"></a> 11. Configure LCS connectivity for the tenant
 
 Deployment and servicing of Finance and Operations are orchestrated through LCS by using an on-premises local agent. To establish connectivity from LCS to the Finance and Operations tenant, you must configure a certificate that enables the local agent to act on behalf on your Azure AD tenant (for example, Contoso.Onmicrosoft.com).
 
@@ -414,7 +434,7 @@ Use the on-premises agent certificate that you acquired from a CA or the self-si
 
 Only user accounts that have the Global Administrator directory role can add certificates to authorize LCS. By default, the person who signs up for Microsoft Office 365 for your organization is the global administrator for the directory.
 
-> [!NOTE]
+> [!WARNING]
 > You must configure the certificate exactly one time per tenant. All on-premises environments can use the same certificate to connect with LCS.
 
 1. Download and install the latest version of Azure PowerShell on a client machine. For more information, see [Install and configure Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-4.1.0&viewFallbackFrom=azurermps-4.0.0).
@@ -425,19 +445,19 @@ Only user accounts that have the Global Administrator directory role can add cer
     .\AddCertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
     ```
 
-### Set up file storage
+### <a name="setupfile"></a> 12. Set up file storage
 
 You must set up the following two highly available SMB 3.0 file shares:
 
 - A file share that stores user documents that are uploaded to AOS (for example, \\\\DAX7SQLAOFILE1\\aos-storage)
 - A file share that stores the latest build and configuration files to orchestrate the deployment (for example, \\\\DAX7SQLAOFILE1\\agent))
 
-    > [!NOTE]
+    > [!WARNING]
     > Keep this file share path as short as possible to avoid exceeding the maximum path length on the files that will be put in the share.
 
 For information about how to enable SMB 3.0, see [SMB Security Enhancements](https://technet.microsoft.com/en-us/library/dn551363(v=ws.11).aspx#BKMK_disablesmb1).
 
-> [!NOTE]
+> [!IMPORTANT]
 > - Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.0 to SMB 1.0. Therefore, we strongly recommend that you disable the SMB 1.0 server. By disabling the SMB 1.0 server, you can take advantage of the full capabilities of SMB encryption.
 > - To help guarantee that your data is protected while it's at rest in your environment, BitLocker Drive Encryption must be enabled on every machine. For information about how to enable BitLocker, see [BitLocker: How to deploy on Windows Server 2012 and later](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-how-to-deploy-on-windows-server).
 
@@ -460,7 +480,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     2. Select **Tasks** \> **New Share** to create a new share. Name the share **agent**.
     3. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (contoso\\svc-LocalAgent$).
 
-### Set up SQL Server
+### <a name="setupsql"></a> 13. Set up SQL Server
 
 1. Install SQL Server 2016 SP1 with high availability, either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration.  Verify that the Database Engine, SSRS, Full-Text Search, and Management Tools are already installed.
 
@@ -499,59 +519,50 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 6. Export the public key of the certificate (the .cer file), and install it in the trusted root of each Service Fabric node.
 
-### Configure the databases
+### <a name="configuredb"></a> 14. Configure the databases
+
+1. Sign in to [LCS](https://lcs.dynamics.com/v2).
+
+2. On the dashboard, select the **Shared asset library** tile.
+
+3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises, Enterprise edition - Demo data** row to download the zip file.
+
+4. The zip file contains empty and demo data .bak files. Select .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file. 
+
+5. Ensure the database section in the infra\ConfigTempate.xml is configured correctly with 
+    1. The db file and log settings 
+    2. The path to the backup file downloaded from LCS Shared Asset library.
+
+   > [!IMPORTANT]
+   > The backup file must be accesible by the user running the scripts and the user running the SQL process
+   
+6. Copy the **infra** folder to the SQL Server machine and navigate to it in a powershell window with elevate privileges.
 
 #### Configure the OrchestratorData database
 
-1. Create an empty database, and name it **OrchestratorData**. This database is used by the on-premises local agent to orchestrate deployments.
-2. Grant the local agent gMSA (svc-LocalAgent$) **db\_owner** permissions on the database:
+1. Execute the following script to
+    1. Create an empty database named **OrchestratorData**. This database is used by the on-premises local agent to orchestrate deployments.
+    2. Grant the local agent gMSA (svc-LocalAgent$) **db\_owner** permissions on the database.
 
-    1. In the tree, expand the server name, expand **Security** \> **Logins**, right-click, and then select **New Login**.
-
-        ![New Login command](./media/OPSetup_01_NewLogin.png)
-
-    2. Look up the **svc-LocalAgent$** service account. Select **Locations**, select **Entire Directory**, select **Object Types**, and then select **Service Account**.
-
-        ![Select User, Service Account, or Group dialog box](./media/OPSetup_02_SelectUserServiceAccountOrGroupDialogBox.png)
-
-    3. Set **Assign ServerRole** to **Public**.
-    4. Assign the **db\_owner** database role permission to the OrchestratorData database.
+```
+ .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator
+```
 
 #### Configure the Finance and Operations database
 
-1. Sign in to [LCS](https://lcs.dynamics.com/v2).
-2. On the dashboard, select the **Shared asset library** tile.
-3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises, Enterprise edition - Demo data** row to download the zip file.
-4. The zip file contains empty and demo data .bak files. Select .bak file, based on your requirements. For example, if you require demo data, restore the AxBootstrapDB_Demodata.bak file. 
-5. Restore the AxBootstrapDB_DemoData.bak database.
-6. Rename the database **AXDBRAIN**.
-7. Run the following queries on the restored database.
+1. Execute the following script.
 
-    ```
-    ALTER DATABASE AXDBRAIN
-    SET READ_COMMITTED_SNAPSHOT ON
-    GO
-    
-    ALTER DATABASE AXDBRAIN
-    SET ALLOW_SNAPSHOT_ISOLATION ON
-    GO
-    ```
-
-8. Update the database files:
-
-    1. Right-click the database, and then select **Properties**.
-    2. Select **Files** to change the database file properties.
-    3. In the **Initial Size (MB)** field, enter a value that is more than 5,120.
-
-        ![Database Properties dialog box](./media/OPSetup_03_DatabasePropertiesDialogBox.png)
-
-    4. For **AXDBBuild\_Data**, set the **Autogrowth/Maximize** field to **200** megabytes (MB).
-    5. For **AXDBBuild\_Log**, set the **Autogrowth/Maximize** field to **500** MB.
-
-        ![Change Autogrowth dialog box](./media/OPSetup_04_ChangeAutogrowthDialogBox.png)
-
-9. Create a new user that has SQL authentication enabled (axdbadmin).
-10. Use the information in the following table to map the users and database roles.
+   ```
+   .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName AOS 
+   ```
+   The above script will 
+    1. Restore the specified database backup.
+    2. Rename the database **AXDBRAIN**.
+    3. Set READ_COMMITTED_SNAPSHOT ON
+    4. Set ALLOW_SNAPSHOT_ISOLATION ON
+    5. Set the specified database file and log settings
+    6. Create a new user that has SQL authentication enabled (axdbadmin).
+    7. Map users to database roles per the below table.
 
     | User            | Type    | Database role |
     |-----------------|---------|---------------|
@@ -560,21 +571,16 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     | svc-FRPS$       | gMSA    | db\_owner     |
     | svc-FRAS$       | gMSA    | db\_owner     |
     | axdbadmin       | SqlUser | db\_owner     |
-
-11. Give the svc-AXSF$ user and the axdbadmin SQL user access to the following roles in the tempdb database:
-
+    
+    8. Give the svc-AXSF$ user and the axdbadmin SQL user access to the following roles in the tempdb database:
     - db\_datareader
     - db\_datawriter
     - db\_ddladmin
+    9. GRANT VIEW SERVER STATE TO axdbadmin
+    10. GRANT VIEW SERVER STATE TO [contososqlao\svc-AXSF$]
+    
 
-12. In Management Studio, run the following Transact SQL (T-SQL) commands.
-
-    ```
-    GRANT VIEW SERVER STATE TO axdbadmin
-    GRANT VIEW SERVER STATE TO [contososqlao\svc-AXSF$]
-    ```
-
-13. Run the following command.
+2. Run the following command to reset the database users.
 
     ```
     .\Reset-DatabaseUsers.ps1 -DatabaseServer ‘<FQDN of the SQL server>’ -DatabaseName '<AX database name>'
@@ -582,16 +588,21 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 #### Configure the Financial Reporting database
 
-1. Create an empty database, and name it **FinancialReporting**.
-2. Use the information in the following table to map the users and database roles.
+1. Execute the following script to 
+    1. Create an empty database named **FinancialReporting**.
+    2. Map the users to database roles per the below table
 
     | User            | Type | Database role |
     |-----------------|------|---------------|
     | svc-LocalAgent$ | gMSA | db\_owner     |
     | svc-FRPS$       | gMSA | db\_owner     |
     | svc-FRAS$       | gMSA | db\_owner     |
+    
+  ```
+   .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName MR
+  ```
 
-### Encrypt credentials
+### <a name="encryptcred"></a> 15. Encrypt credentials
 
 1. On any client machine, install the encipherment certificate in the LocalMachine\\My certificate store.
 2. Grant the current user read access to the private key of this certificate.
@@ -620,12 +631,12 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | clip
     ```
 
-### Set up SSRS
+### <a name="setupssrs"></a> 16. Set up SSRS
 
 1. Before you begin, make sure that the prerequisites that are listed at the beginning of this topic are installed.
 2. Follow the steps in [Configure SQL Server Reporting Services for an on-premises deployment](../analytics/configure-ssrs-on-premises.md).
 
-### Configure AD FS
+### <a name="configureadfs"></a> 17. Configure AD FS
 
 Before you can complete this procedure, AD FS must be deployed on Windows Server 2016. For information about how to deploy AD FS, see [Deployment Guide Windows Server 2016 and 2012 R2 AD FS Deployment Guide](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
 
@@ -670,7 +681,7 @@ Finally, make sure that you can access the AD FS OpenID Configuration URL on a 
 
 You've now complete the setup of the infrastructure. The following sections describe how to navigate to [LCS](https://lcs.dynamics.com) to set up your connector and deploy your Finance and Operations environment.
 
-## Configure a connector and install an on-premises local agent
+### <a name="configureconnector"></a> 18. Configure a connector and install an on-premises local agent
 
 1. Sign in to [LCS](https://lcs.dynamics.com/), and open the on-premises implementation project.
 2. On the hamburger menu, select **Project settings**.
