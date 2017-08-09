@@ -47,16 +47,13 @@ We also have a video series about creating a mobile app:
 + [Tutorial 4: Adding a lookup to the create new sales order action](https://youtu.be/eNJKd0IYmZk)
 + [Tutorial 5: Adding a lookup and hiding pages using mobile business logic](https://youtu.be/kIJKk9J8FvI)
 
-## Configure a mobile workspace
+## Common tasks 
 
 + [Configure a workspace by using the SysAppWorkspace class](scenarios/mobile-workspace-configuration.md)
 + [Localize mobile workspaces on the server](scenarios/localize-workspaces-on-server.md)
 + [Secure a mobile app workspace](scenarios/secure-mobile-workspace.md)
 + [Customize the display of a field so that it is clickable](scenarios/make-workspace-field-clickable.md)
 + [Make a field mandatory using workspace classes](scenarios/make-field-mandatory.md)
-
-## Optimize a mobile workspace
-
 + [Display a count in a field](scenarios/display-count-workspace.md)
 
 ## Client-side development reference
