@@ -168,10 +168,11 @@ The following table shows whether each feature is available in:
 | | Mobile framework - Web client settings| Yes | No |
 | | Mobility and modern user experience | Yes | ? |
 | Office integration| | | |
-| | Excel add-in support for creating header records, including journal headers, in Excel| Yes | Yes |
-| | Excel add-in support for publishing data sources in a predictable sequence| Yes | Yes |
-| | Microsoft Office integration| Yes | ? |
-| | Static export to Excel limit increase from 2k to 10k| Yes | Yes |
+| | Open in Excel| Yes | Yes |
+| | Static export to Excel| Yes | Yes |
+| | Skype support| Yes | Yes |
+| | Word document generation| Yes | Yes |
+| | Email sending | Yes | Yes |
 | Organization administration | | | |
 | | Case management| Yes | ? |
 | | Case management for production and quality orders| Yes | ? |
