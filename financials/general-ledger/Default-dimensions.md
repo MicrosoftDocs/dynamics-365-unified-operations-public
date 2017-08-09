@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How default dimensions are applied when you post a document or journal
+title: Financial dimensions and posting 
 description: When you plan and set up your chart of accounts, you must consider how the various components will work together when you post a document or journal. These components include account structures, advanced rules, and balancing and fixed dimensions. This topic explains what each component is and how the components work together.
 author: aolson
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.2.0
 
 ---
 
-# How default dimensions are applied when you post a document or journal
+# Financial dimensions and posting 
 
 [!include[banner](../includes/banner.md)]
 
