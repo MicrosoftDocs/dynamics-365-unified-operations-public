@@ -3,9 +3,9 @@
 
 title: Copy Finance and Operations database - Azure SQL to SQL Server
 description: This topic provides information about how to export a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
-author: MargoC
+author: tariqbell
 manager: AnnBe
-ms.date: 07/10/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -94,7 +94,8 @@ Note that this command will execute asynchronously, meaning that it will appear 
 ## Prepare the copied database
 Run the following script against the copied database to remove change tracking, SQL Database users, and a system view. The script will also correct system flags, remove references to the previous environment, withhold batches, and remove email configuration. These changes are all required to successfully export and import the database and to ensure that when the AOS is started in the target environment, nothing will automatically start running. 
 
-**Note:** You must update the following ALTER DATABASE command with your database copy name.
+> [!NOTE]
+> You must update the following ALTER DATABASE command with your database copy name.
 
     --Prepare a database in SQL Azure for export to SQL Server.
     --Disable change tracking on tables where it is enabled.
@@ -206,7 +207,8 @@ The following list provides an explanation of the parameters:
 -   tdn (target database name): The name of the database that you will import to. The database should **not** already exist.
 -   sf (source file): The path and file name to import from.
 
-**Note:** During import, the user name and password are not required because SQL Server will default to Windows authentication for the currently logged on user.
+> [!NOTE]
+> During import, the user name and password are not required because SQL Server will default to Windows authentication for the currently logged on user.
 
 ## Update the database
 Execute the following SQL script against the imported database. This will add back the users that were deleted from the source database earlier, correctly linking them to the SQL logins for this SQL instance and also re-enable change tracking. Remember to edit the final ALTER DATABASE statement with your database name.
@@ -246,21 +248,31 @@ Execute the following SQL script against the imported database. This will add ba
 If you're using Financial Reporting (formerly Management Reporter), then follow the steps to reset the financial reporting database in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
 
 ### If you're using Retail components
-If you’re using Retail components, you must perform additional steps to re-provision the target environment.
+If you’re using Retail components, you must perform additional steps to re-provision the target environment. 
 
-1. Navigate to the Shared asset library.
-2. Select **Software deployable package**.
-3. Download the Environment reprovisioning tool.
-4. Navigate to the asset library for your project 
-5. Select **Software deployable package** and select **New** to create a new package.
-6. Specify a name and description. You can use "Environment reprovisioning tool" for the package name.
-7. Upload the previously downloaded package.
-8. Navigate to the **Environment details** page for your target environment
-9. Select **Maintain** > **Apply updates**.
-10. Select the Environment reprovisioning tool that you previously uploaded and click **Apply** to apply the package.
-11. Monitor the progress of the package deployment. 
+Before you continue, you must make sure that the following prerequisites are met:
 
-Learn more about how to apply a deployable package in the [Apply a deployable package](../deployment/create-apply-deployable-package.md) topic. Learn how to apply a deployable package manually in the [Install a deployable package](../deployment/install-deployable-package.md) topic.
+1. If your target enviornment is running the July 2017 release or later, you must first apply the following hotfixes in your target environment: 
+ -   KB 4025631
+ -   KB 4035355
+ -   KB 4035492
+
+2. If your target environment is running the November release (version 1611), you must apply KB 4010947 in your target enviornment.
+3. The default channel database and the default channel data group must be named **Default**. If you've renamed them, you must change the names back.
+
+Follow these steps to run the Environment reprovisioning tool.
+
+1. In the Shared asset library, select **Software deployable package**.
+2. Download the Environment reprovisioning tool.
+3. In the asset library for your project, select **Software deployable package**.
+4. Select **New** to create a new package.
+5. Enter a name and description for the package. You can use **Environment reprovisioning tool** as the package name.
+6. Upload the package that you downloaded earlier.
+7. On the **Environment details** page for your target environment, select **Maintain** > **Apply updates**.
+8. Select the Environment reprovisioning tool that you uploaded earlier, and then select **Apply** to apply the package.
+9. Monitor the progress of the package deployment. 
+
+For more information about how to apply a deployable package, see [Apply a deployable package](../deployment/create-apply-deployable-package.md). For more information about how to manually apply a deployable package, see [Install a deployable package](../deployment/install-deployable-package.md).
 
 ## Start using the new database
 To switch the environment and use the new database, stop the services in the following list, rename the AxDB database to AxDB\_orig, and then rename your newly imported database AxDB. Restart the services in the following list:
