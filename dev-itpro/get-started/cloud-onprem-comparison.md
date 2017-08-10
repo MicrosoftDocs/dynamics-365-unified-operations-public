@@ -42,15 +42,6 @@ The following table shows whether each feature is available in:
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
-| Analytics| | | |
-| | Analytics and insights through Power BI | Yes | No |
-| | Analytics and intelligence  | No | No |
-| | Build and ship rich workspaces with embedded Power BI reports | Yes | No |
-| | Create Power BI reports with enumerated fields| Yes | ? |
-| | Embed Power BI reports and tiles in Microsoft Dynamics 365 for Operations workspaces| Yes | ? |
-| | Embedded Power BI reports licensed for all users| Yes | No |
-| | Embedded Practice manager Power BI content| Yes | Yes |
-| | Entity store for high volume near real-time Power BI integration| Yes | ? |
 | Budgeting | | |
 | | Maintain carry-forward status| Yes | Yes |
 | | Budget control data maintenance| Yes | Yes |
@@ -141,6 +132,16 @@ The following table shows whether each feature is available in:
 | | Retrieve help topics in the client | Yes | No |
 | | Task guides for help| Yes | No |
 | Human resources | All Human resources features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
+| Intelligence| | | |
+| | Financial statements | Yes | Yes |
+| | Electronic reporting  | Yes | Yes |
+| | Business documents with SSRS | Yes | Yes |
+| | Author reports in Power BI Desktop| Yes | Yes* |
+| | Integration with PowerBI.com | Yes | No |
+| | Build your own data warehouse (BYOD)| Yes | Yes |
+| | Analytical workspaces | Yes | No |
+| | Intelligence business process - Recommendations| Yes | No |
+| | Intelligence business process - Demand forecasting | Yes | Yes |
 | Inventory management| | | |
 | | Additional warehouse support in manufacturing | Yes | Yes |
 | | Consignment inventory| Yes | Yes |
