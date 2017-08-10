@@ -253,13 +253,13 @@ Run the following script against the imported database. The script performs the 
 
         DROP DATABASE [axdb_123456789_original]
 
+### Re-provision the target environment
+[!include[environment-reprovision](../includes/environment-reprovision.md)]
+
 ### Reset the Financial Reporting database
 
 If you're using Financial Reporting, which was previously named Management Reporter, you must reset the financial reporting database. Follow the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
 
-### If you're using Retail components
-
-If you’re using Retail components, you must perform additional steps to [re-provision the target environment](Environment-reprovisioning).
 
 ## Raise a service request to copy database
 
