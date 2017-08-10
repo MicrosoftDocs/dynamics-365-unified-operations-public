@@ -57,6 +57,14 @@ We also have a video series about creating a mobile app:
 
 ## Client-side development reference
 
+Client-side APIs are used in the business logic file which provides an extensibility layer to the mobile workspace to allow customizing:
+
+* Metadata
+* Runtime control/page instances
+* Business data
+* Offline-first business behaviors
+* Layout and style
+
 + [Client-side design APIs overview](scenarios/client-api-design-overview.md)
 + [Client APIs](client-apis/client-apis-reference.md)
 
