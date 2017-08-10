@@ -47,7 +47,7 @@ We also have a video series about creating a mobile app:
 + [Tutorial 4: Adding a lookup to the create new sales order action](https://youtu.be/eNJKd0IYmZk)
 + [Tutorial 5: Adding a lookup and hiding pages using mobile business logic](https://youtu.be/kIJKk9J8FvI)
 
-## Common configuration
+## Common configurations
 
 + [Localize mobile workspaces on the server](scenarios/localize-workspaces-on-server.md)
 + [Secure a mobile app workspace](scenarios/secure-mobile-workspace.md)
