@@ -46,14 +46,14 @@ The following table shows whether each feature is available in:
 | | Templates for configuration data projects| Yes | Yes |
 | Customization| | | |
 | Data management and integration| | | |
-| | Choose to truncate data in the entity before data is imported via files or data packages | ? | ? |
+| | Choose to truncate data in the entity before data is imported via files or data packages | Yes | Yes |
 | | Configuration data packages| Yes | Yes |
 | | Configuration data project templates| Yes | Yes |
 | | Configuration data projects| Yes | Yes |
 | | Configuration-driven extension| Yes | No |
-| | Configure cross-company data sharing by replicating reference and group data between multiple companies in the same Dynamics AX deployment. | ? | ? |
-| | Export data to your own data warehouse| Yes | ? |
-| | Enable the export of incremental updates to a data entity. | Yes | ? |
+| | Configure cross-company data sharing by replicating reference and group data between multiple companies in the same Dynamics AX deployment. | Yes | Yes |
+| | Export data to your own data warehouse| Yes | Not yet implemented |
+| | Enable the export of incremental updates to a data entity. | Yes | Not yet implemented |
 | Document management| | | |
 | | Manage attachments<br><br>**Note:** Microsoft SharePoint Online is one of the storage locations that is supported natively. Currently, only SharePoint Online is supported. Support for on-premises SharePoint (a local SharePoint server) may be added in the future.| Yes | Yes |
 | Financial management| Includes all Financial management features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
