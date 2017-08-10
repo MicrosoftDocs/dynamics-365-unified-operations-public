@@ -1935,7 +1935,7 @@
 ### [LIFO with physical value and marking](/dynamics365/unified-operations/supply-chain/cost-management/lifo-physical-value-marking?toc=dynamics365/unified-operations/retail/toc.json)
 ### [Weighted average date](/dynamics365/unified-operations/supply-chain/cost-management/weighted-average-date?toc=dynamics365/unified-operations/retail/toc.json)
 ### [Weighted average with physical value and marking](/dynamics365/unified-operations/supply-chain/cost-management/weighted-average-physical-value-marking?toc=dynamics365/unified-operations/retail/toc.json)
-### [Quarantine orders](/dynamics365/unified-operations/supply-chain/inventory/quarantine-orders.md?toc=dynamics365/unified-operations/retail/toc.json)
+### [Quarantine orders](/dynamics365/unified-operations/supply-chain/inventory/quarantine-orders?toc=dynamics365/unified-operations/retail/toc.json)
 ### [Running average cost price](/dynamics365/unified-operations/supply-chain/cost-management/running-average-cost-price?toc=dynamics365/unified-operations/retail/toc.json)
 ### [Tracking running average cost per inventory dimension](/dynamics365/unified-operations/supply-chain/cost-management/track-running-average-cost-per-inventory-dimension?toc=dynamics365/unified-operations/retail/toc.json)
 
