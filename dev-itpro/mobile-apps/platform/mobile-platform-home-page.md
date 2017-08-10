@@ -55,17 +55,21 @@ We also have a video series about creating a mobile app:
 + [Make a field mandatory using workspace classes](scenarios/make-field-mandatory.md)
 + [Display a count in a field](scenarios/display-count-workspace.md)
 
-## Client-side development reference
+## Client-side development
 
 Client-side APIs are used in the business logic file which provides an extensibility layer to the mobile workspace in order to allow customizing:
-Metadata, Runtime instances, Business data, Offline-first business behaviors, Layout and style
+1. Metadata
+1. Runtime control/page instances
+1. Business data
+1. Offline-first business behaviors
+1. Layout and style
 
 [Download the sample business logic file for Reservation management workspace](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.js file)
 
 + [Client-side design APIs overview](scenarios/client-api-design-overview.md)
 + [Client APIs](client-apis/client-apis-reference.md)
 
-## Server-side development reference
+## Server-side development
 
 + [Workspace class overview](scenarios/mobile-workspace-configuration.md)
 + [Server APIs (workspace X++ APIs)](mobile-workspace-server-apis.md)
