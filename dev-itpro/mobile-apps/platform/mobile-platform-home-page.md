@@ -47,7 +47,7 @@ We also have a video series about creating a mobile app:
 + [Tutorial 4: Adding a lookup to the create new sales order action](https://youtu.be/eNJKd0IYmZk)
 + [Tutorial 5: Adding a lookup and hiding pages using mobile business logic](https://youtu.be/kIJKk9J8FvI)
 
-## Common tasks 
+## Common configurations
 
 + [Localize mobile workspaces on the server](scenarios/localize-workspaces-on-server.md)
 + [Secure a mobile app workspace](scenarios/secure-mobile-workspace.md)
@@ -57,17 +57,10 @@ We also have a video series about creating a mobile app:
 
 ## Client-side development reference
 
-Client-side APIs are used in the business logic file which provides an extensibility layer to the mobile workspace to allow customizing:
+Client-side APIs are used in the business logic file which provides an extensibility layer to the mobile workspace in order to allow customizing:
+Metadata, Runtime instances, Business data, Offline-first business behaviors, Layout and style
 
-Metadata
-
-Runtime control/page instances
-
-Business data
-
-Offline-first business behaviors
-
-Layout and style
+[Download the sample business logic file for Reservation management workspace](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.js file)
 
 + [Client-side design APIs overview](scenarios/client-api-design-overview.md)
 + [Client APIs](client-apis/client-apis-reference.md)
