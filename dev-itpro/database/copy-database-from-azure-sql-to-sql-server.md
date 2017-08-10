@@ -247,9 +247,8 @@ Execute the following SQL script against the imported database. This will add ba
 
 If you're using Financial Reporting (formerly Management Reporter), then follow the steps to reset the financial reporting database in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
 
-### If you're using Retail components
-If you’re using Retail components, you must perform additional steps to [re-provision the target environment](Environment-reprovisioning). 
-
+### Re-provision the target environment
+[!include[environment-reprovision](../includes/environment-reprovision.md)]
 
 ## Start using the new database
 To switch the environment and use the new database, stop the services in the following list, rename the AxDB database to AxDB\_orig, and then rename your newly imported database AxDB. Restart the services in the following list:
@@ -307,7 +306,8 @@ This can occur when the platform build number of the current environment is lowe
 
     WHERE PARM = 'SYSTABVERSION'
 
-**Note:** The value 138 in the query above is taken from the event log message that was expecting 138 in this particular environment.
+> [!NOTE]
+> The value 138 in the query above is taken from the event log message that was expecting 138 in this particular environment.
 
 ### Performance
 
