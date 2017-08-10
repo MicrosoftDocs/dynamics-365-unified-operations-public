@@ -538,8 +538,8 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     3. The path to the backup file downloaded from LCS Shared Asset library. The default name for the Finance and Operations database is AXDB.
 
    > [!WARNING]
-   > The user running the SQL service and the user running the scripts should have READ access on the folder or share where the backup file is located.
-   > If a database with the same name exists, the database will be reused.
+   > 1. The user running the SQL service and the user running the scripts should have READ access on the folder or share where the backup file is located.
+   > 2. If a database with the same name exists, the database will be reused.
 
 6. Copy the **infrastructure** folder to the SQL Server machine and navigate to it in a powershell window with elevate privileges.
 
@@ -564,12 +564,12 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName AOS
    .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName AOS
    ```
+
    The **Initialize-Database.ps1** script will
 
     1. Restore the database from the specified backup file
     2. Create a new user that has SQL authentication enabled (axdbadmin).
     3. Map users to database roles per the below table for AXDB
-
 
     | User            | Type    | Database role |
     |-----------------|---------|---------------|
@@ -578,6 +578,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     | svc-FRPS$       | gMSA    | db\_owner     |
     | svc-FRAS$       | gMSA    | db\_owner     |
     | axdbadmin       | SqlUser | db\_owner     |
+
 
     4. Map users to database roles per the below table for TempDB.
 
@@ -617,7 +618,6 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     | svc-LocalAgent$ | gMSA | db\_owner     |
     | svc-FRPS$       | gMSA | db\_owner     |
     | svc-FRAS$       | gMSA | db\_owner     |
-
 
 ### <a name="encryptcred"></a> 15. Encrypt credentials
 
