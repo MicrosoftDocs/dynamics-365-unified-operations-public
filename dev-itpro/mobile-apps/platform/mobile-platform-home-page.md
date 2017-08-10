@@ -63,6 +63,6 @@ We also have a video series about creating a mobile app:
 ## Server-side development reference
 
 + [Workspace class overview](scenarios/mobile-workspace-configuration.md)
-+ [Server APIs (workspace X++ APIs)](mobile-workspace-server-apis.md)
++ [Server APIs (workspace X++ APIs)](server-api.md)
 
 
