@@ -133,9 +133,9 @@ The following table shows whether each feature is available in:
 | | Task guides for help| Yes | No |
 | Human resources | All Human resources features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
 | Intelligence| | | |
-| | Business documents with SSRS:<br><br><ul><li>Print management</li><li>Batch operations</li><li>Support for network printers</li></ul> | Yes | Yes |
+| | Business documents with SSRS:<br><br><ul><li>Print management</li><li>Batch operations</li><li>Support for network printing</li></ul> | Yes | Yes |
 | | Author reports in Power BI Desktop:<br><br><ul><li>Connect to local Enity store database</li><li>Consume the CDS Connector</li><li>Publish to the PowerBI.com service</li><li>*Optionally save to Power BI report server (new feature available with SQL Server 2017</li></ul>| Yes | Yes* |
-| | Integration with PowerBI.com | Yes | No |
+| | Integration with PowerBI.com<br><br><ul><li>Publish reports to PowerBI.com</li> | Yes | No |
 | | Build your own data warehouse (BYOD)| Yes | Yes |
 | | Analytical workspaces | Yes | No |
 | | Intelligence business process - Recommendations| Yes | No |
