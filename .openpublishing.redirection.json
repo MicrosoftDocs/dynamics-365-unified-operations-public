@@ -87,8 +87,7 @@
     },
     { 
         "source_path": "hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md", 
-        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample", 
-        "redirect_document_id": true 
+        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample",         "redirect_document_id": true 
     },
     { 
         "source_path": "hr/localizations/noam-usa-pay-statements-payment-generation-process.md", 
@@ -151,7 +150,7 @@
         "redirect_document_id": true 
     },  
     {
-        "source_path": "get-started/onboarding-home.md",
+        "source_path": "core/get-started/onboarding-home.md",
         "redirect_url": "/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy",
         "redirect_document_id": true 
     }
