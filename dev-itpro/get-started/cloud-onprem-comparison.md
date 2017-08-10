@@ -88,8 +88,8 @@ The following table shows whether each feature is available in:
 | | Integration with PowerBI.com| Yes | No |
 | | Build your own data warehouse (BYOD)| Yes | Yes |
 | | Analytical workspaces | Yes | No |
-| | Intelligence business process - Recommendations| Yes | No |
-| | Intelligence business process - Demand forecasting | Yes | Yes |
+| | Intelligent business process: Recommendations| Yes | No |
+| | Intelligent business process: Demand forecasting | Yes | Yes |
 | Inventory management| | | |
 | | Additional warehouse support in manufacturing | Yes | Yes |
 | | Consignment inventory| Yes | Yes |
