@@ -82,7 +82,7 @@ The following table shows whether each feature is available in:
 | | Direct deposit| Yes | No |
 | Intelligence| | | |
 | | Financial reporting | Yes | Yes|
-| | Electronic reporting | Yes | Yes|
+| | Electronic reporting (ER)<br><br>**Note:** The ER integration with LCS is not supported. ER configurations can't be downloaded directly from LCS to Finance and Operations. | Yes | Yes|
 | | Business documents with SSRS | Yes | Yes |
 | | Author reports in Power BI Desktop| Yes | Yes |
 | | Integration with PowerBI.com| Yes | No |
