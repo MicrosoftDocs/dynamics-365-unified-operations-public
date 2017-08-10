@@ -180,7 +180,7 @@ The following table shows whether each feature is available in:
 | | Enhanced description| Yes | Yes |
 | | Improved responsiveness across devices and viewports| Yes | Yes |
 | | Improved viewing experience for application reports| Yes | Yes |
-| | All personalization features | Yes | Yes |
+| | Personalization | Yes | Yes |
 | | Support for Right to Left languages| Yes | Yes |
 | | Task guides for help| Yes | No |
 | | Task recording - Ability to insert and re-order steps<br><br>**Note:** You can't save or load task recordings from the BPM library.| Yes | Yes |
