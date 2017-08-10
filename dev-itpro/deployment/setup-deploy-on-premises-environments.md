@@ -274,7 +274,7 @@ We have provided several scripts to help improve the setup experience. Follow th
 4. Select **Versions**, and download the latest version of the zip file for the scripts.
 5. Right-click the zip file, and select **Properties**. Then, in the dialog box, select the **Unblock** check box.
 6. Copy the zip file to the machine that will be used to execute the scripts.
-7. Unzip the files into a folder that is named **infra**.
+7. Unzip the files into a folder that is named **infrastructure**.
 
 > [!IMPORTANT]
 > Ensure all edits are made to the ConfigTemplate.xml in this folder.
@@ -282,18 +282,18 @@ We have provided several scripts to help improve the setup experience. Follow th
 ### <a name="describeconfig"></a> 7. Describe your configuration
 
 The infrastructure setup scripts use the below 2 configuration files to drive the setup.
-1. infra\ConfigTemplate.xml and
-2. infra\D365FO-OP\NodeTopologyDefintion.xml
-3. infra\D365FO-OP\DatabaseTopologyDefintion.xml
+1. infrastructure\ConfigTemplate.xml and
+2. infrastructure\D365FO-OP\NodeTopologyDefintion.xml
+3. infrastructure\D365FO-OP\DatabaseTopologyDefintion.xml
 
-**infra\ConfigTemplate.xml** describes
+**infrastructure\ConfigTemplate.xml** describes
 
-1. **Service Accounts** that are needed for the application to operate
-2. **Certificates** necessary for securing communications
-3. **Database** configuration
-4. **Service Fabric cluster** configuration
+1. Service Accounts that are needed for the application to operate
+2. Certificates necessary for securing communications
+3. Database configuration
+4. Service Fabric cluster configuration
 
-**infra\D365FO-OP\NodeTopologyDefinition.xml** describes for each Service Fabric Node type
+**infrastructure\D365FO-OP\NodeTopologyDefinition.xml** describes for each Service Fabric Node type
 
 1. The mapping between each node type and
     1. Application
@@ -306,7 +306,7 @@ The infrastructure setup scripts use the below 2 configuration files to drive th
 4. If strong name validation must be disabled
 5. List of firewall ports to be opened
 
-**infra\D365FO-OP\DatabaseTopologyDefinition.xml** describes for each database
+**infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** describes for each database
 
 1. The DB settings
 2. The mappings between users and roles
@@ -322,7 +322,7 @@ The infrastructure setup scripts use the below 2 configuration files to drive th
     .\New-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-4. If you must make changes to accounts or machines, update the ConfigTemplate.xml file in the original **infra** folder, copy it to this machine and then run the following script.
+4. If you must make changes to accounts or machines, update the ConfigTemplate.xml file in the original **infrastructure** folder, copy it to this machine and then run the following script.
 
     ```
     .\Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
@@ -330,7 +330,7 @@ The infrastructure setup scripts use the below 2 configuration files to drive th
 
 ### <a name="configurecert"></a> 8. Configure certificates
 
-1. Navigate to the machine that has the **infra** folder.
+1. Navigate to the machine that has the **infrastructure** folder.
 2. If you must generate self-signed certificates, run the following command. The script will create the certificates, put them in the CurrentUser\My certificate store on the machine, and update the thumbprints in the XML file.
 
     ```
@@ -347,7 +347,7 @@ The infrastructure setup scripts use the below 2 configuration files to drive th
 5. Export the certificates into .pfx files.
 
     ```
-    # Exports Pfx files into a directory VMs\<VMName>, all the certs will be written to infra\Certs folder.
+    # Exports Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder.
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
@@ -370,7 +370,7 @@ The infrastructure setup scripts use the below 2 configuration files to drive th
 
 **Follow the below steps for each VM.**
 
-1. Copy the contents of each infra\VMs\<VMName> folder into the corresponding VM, and then run the following scripts.
+1. Copy the contents of each infrastructure\VMs\<VMName> folder into the corresponding VM, and then run the following scripts.
 
     ```
     # Install pre-req software on the VMs.
@@ -398,9 +398,9 @@ The infrastructure setup scripts use the below 2 configuration files to drive th
 
 1. Download the [Service Fabric standalone installation package](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#download-the-service-fabric-standalone-package) onto one of your Service Fabric nodes. After the zip file is downloaded, unblock it by right-clicking the zip file and then selecting **Properties**. In the dialog box, select the **Unblock** check box in the lower right.
 
-2. Copy the zip file to one of the nodes in the Service Fabric cluster, and unzip it. Ensure the **infra** folder has access to this folder.
+2. Copy the zip file to one of the nodes in the Service Fabric cluster, and unzip it. Ensure the **infrastructure** folder has access to this folder.
 
-3. Navigate to the **infra** folder and execute the following command to generate the Service Fabric ClusterConfig.json file.
+3. Navigate to the **infrastructure** folder and execute the following command to generate the Service Fabric ClusterConfig.json file.
 
     ```
    .\New-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -TemplateConfig <ServiceFabricStandaloneInstallerPath>\ClusterConfig.X509.MultiMachine.json
@@ -532,7 +532,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 4. The zip file contains empty and demo data .bak files. Select .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file.
 
-5. Ensure the database section in the infra\ConfigTempate.xml is configured correctly with
+5. Ensure the database section in the infrastructure\ConfigTempate.xml is configured correctly with
     1. The database name.
     2. The db file and log settings. The db settings should not be lower than the defaults specified.
     3. The path to the backup file downloaded from LCS Shared Asset library. The default name for the Finance and Operations database is AXDB.
@@ -541,7 +541,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
    > The user running the SQL service and the user running the scripts should have READ access on the folder or share where the backup file is located.
    > If a database with the same name exists, the database will be reused.
 
-6. Copy the **infra** folder to the SQL Server machine and navigate to it in a powershell window with elevate privileges.
+6. Copy the **infrastructure** folder to the SQL Server machine and navigate to it in a powershell window with elevate privileges.
 
 #### Configure the OrchestratorData database
 
