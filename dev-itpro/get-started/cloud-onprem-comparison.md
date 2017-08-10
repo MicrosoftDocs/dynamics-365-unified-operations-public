@@ -135,7 +135,7 @@ The following table shows whether each feature is available in:
 | Intelligence| | | |
 | | Financial statements | Yes | Yes |
 | | Electronic reporting  | Yes | Yes |
-| | Business documents with SSRS | Yes | Yes |
+| | Business documents with SSRS<br><br><ul><li>Print management</li><li>Batch operations</li><li>Support for network printers</li></ul> | Yes | Yes |
 | | Author reports in Power BI Desktop| Yes | Yes* |
 | | Integration with PowerBI.com | Yes | No |
 | | Build your own data warehouse (BYOD)| Yes | Yes |
