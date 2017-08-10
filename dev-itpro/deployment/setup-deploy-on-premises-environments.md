@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up and deploy on-premises environments
@@ -66,7 +66,7 @@ These components depend on the following system software:
 
 ## Lifecycle Services
 
-Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through the [Enterprise Agreements](https://www.microsoft.com/en-us/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
+Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through the [Enterprise Agreements](https://www.microsoft.com/en-us/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](../lbd-create-lcs-on-prem-project.md).
 
 ## Authentication
 
@@ -257,9 +257,7 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 > [!IMPORTANT]
 > You must restart the VMs after you join them to the domain.
 
-Once the VMs are joined to the domain, add the AOS Service Accounts
-1. Contoso\svc-AXSF$
-2. Contoso\AXServiceUser to the local administrators group. You can check [Add a member to local group](https://technet.microsoft.com/en-us/library/cc772524(v=ws.11).aspx) article for how to do this.
+After the VMs are joined to the domain, add the AOS Service Accounts, **Contoso\svc-AXSF$** and **Contoso\AXServiceUser** to the local administrators group. For more information, see [Add a member to local group](https://technet.microsoft.com/en-us/library/cc772524(v=ws.11).aspx).
 
 ### <a name="downloadscripts"></a> 6. Download setup scripts from LCS
 
@@ -281,35 +279,29 @@ We have provided several scripts to help improve the setup experience. Follow th
 
 ### <a name="describeconfig"></a> 7. Describe your configuration
 
-The infrastructure setup scripts use the below 2 configuration files to drive the setup.
-1. infrastructure\ConfigTemplate.xml and
-2. infrastructure\D365FO-OP\NodeTopologyDefintion.xml
-3. infrastructure\D365FO-OP\DatabaseTopologyDefintion.xml
+The infrastructure setup scripts use the following configuration files to drive the setup.
+- infrastructure\ConfigTemplate.xml
+- infrastructure\D365FO-OP\NodeTopologyDefintion.xml
+- infrastructure\D365FO-OP\DatabaseTopologyDefintion.xml
 
-**infrastructure\ConfigTemplate.xml** describes
+**infrastructure\ConfigTemplate.xml** describes:
+- Service Accounts that are needed for the application to operate
+- Certificates necessary for securing communications
+- Database configuration
+- Service Fabric cluster configuration
 
-1. Service Accounts that are needed for the application to operate
-2. Certificates necessary for securing communications
-3. Database configuration
-4. Service Fabric cluster configuration
+For each Service Fabric Node type, **infrastructure\D365FO-OP\NodeTopologyDefinition.xml** describes:
 
-**infrastructure\D365FO-OP\NodeTopologyDefinition.xml** describes for each Service Fabric Node type
+- The mapping between each node type and the application, domain and service accounts, and certificates.
+- Whether or not to enable the UAC
+- Prerequisites for Windows features and system software
+- Whether strong name validation should be enabled
+- List of firewall ports to be opened
 
-1. The mapping between each node type and
-    1. Application
-    2. Domain / Service accounts
-    3. Certificates
-2. If UAC must be disabled
-3. Prerequisite
-    1. Windows Features
-    2. System Software
-4. If strong name validation must be disabled
-5. List of firewall ports to be opened
+For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** describes:
 
-**infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** describes for each database
-
-1. The DB settings
-2. The mappings between users and roles
+- The DB settings
+- The mappings between users and roles
 
 #### Create gMSA and domain user accounts
 
@@ -740,5 +732,4 @@ You've now complete the setup of the infrastructure. The following sections desc
 3. The local agent will pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready.
 
 ##Connect to your Finance and Operations (on-premises) environment
-
-Launch your favorite browser and navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
+In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
