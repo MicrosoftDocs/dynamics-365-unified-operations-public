@@ -1,7 +1,7 @@
 When copying a database between environments, you will need to run the environment re-provisioning tool before the copied database is fully functional after being copied, to ensure that all Retail components are up-to-date.
 
 > [!IMPORTANT]
-> We recommend that you run this procedure whether you are using Retail components are not, because the Retail functionality is supported in all environments. 
+> We recommend that you run this procedure whether you are using Retail components or not, because Retail functionality is included in all environments. 
 
 Before you continue, you must make sure that the following prerequisites are met:
 If your target enviornment is running the July 2017 release or later, you must first apply KB 4035399 in your target environment.
