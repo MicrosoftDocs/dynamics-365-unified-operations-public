@@ -49,15 +49,15 @@ These components depend on the following system software:
     - Full-text index search is enabled.
     - SQL Server Reporting Services (SSRS)
     - SQL Server Integration Services (SSIS)
-    
+
     > [!WARNING]
     > The application won't run if Full Text Search isn't enabled.
-    
+
 - SQL Server Management Studio
 - Standalone Microsoft Azure Service Fabric
 - Microsoft Windows PowerShell 5.0 or later
 - Active Directory Federation Services (AD FS) on Windows Server 2016
-- Domain controller 
+- Domain controller
 
     > [!WARNING]
     > The domain controller must be Microsoft Windows Server 2012 R2 or later and must have a domain functional level of 2012 R2 or more.    For more information about domain functional levels, see the following pages:
@@ -257,9 +257,9 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 > [!IMPORTANT]
 > You must restart the VMs after you join them to the domain.
 
-Once the VMs are joined to the domain, add the AOS Service Accounts 
+Once the VMs are joined to the domain, add the AOS Service Accounts
 1. Contoso\svc-AXSF$
-2. Contoso\svc-AXSF$ to the local administrators group. You can check [Add a member to local group](https://technet.microsoft.com/en-us/library/cc772524(v=ws.11).aspx) article for how to do this. 
+2. Contoso\AXServiceUser to the local administrators group. You can check [Add a member to local group](https://technet.microsoft.com/en-us/library/cc772524(v=ws.11).aspx) article for how to do this.
 
 ### <a name="downloadscripts"></a> 6. Download setup scripts from LCS
 
@@ -283,27 +283,33 @@ We have provided several scripts to help improve the setup experience. Follow th
 
 The infrastructure setup scripts use the below 2 configuration files to drive the setup.
 1. infra\ConfigTemplate.xml and
-2. infra\D365FO-OP\NodeTopologyDefintion.xml 
+2. infra\D365FO-OP\NodeTopologyDefintion.xml
+3. infra\D365FO-OP\DatabaseTopologyDefintion.xml
 
-**ConfigTemplate.xml** describes 
+**infra\ConfigTemplate.xml** describes
 
 1. **Service Accounts** that are needed for the application to operate
 2. **Certificates** necessary for securing communications
 3. **Database** configuration
 4. **Service Fabric cluster** configuration
 
-**NodeTopologyDefinition.xml** describes for each Service Fabric Node type
+**infra\D365FO-OP\NodeTopologyDefinition.xml** describes for each Service Fabric Node type
 
-1. the mapping between each node type and
+1. The mapping between each node type and
     1. Application
     2. Domain / Service accounts
     3. Certificates
 2. If UAC must be disabled
-3. Prerequisite 
+3. Prerequisite
     1. Windows Features
     2. System Software
 4. If strong name validation must be disabled
 5. List of firewall ports to be opened
+
+**infra\D365FO-OP\DatabaseTopologyDefinition.xml** describes for each database
+
+1. The DB settings
+2. The mappings between users and roles
 
 #### Create gMSA and domain user accounts
 
@@ -312,11 +318,11 @@ The infrastructure setup scripts use the below 2 configuration files to drive th
 3. Start Windows PowerShell in elevated mode, change the directory to the **infrastructure** folder, and run the following commands.
 
     ```
-    Import-Module D365FO-OP\D365FO-OP.psd1
+    .\Import-Module D365FO-OP\D365FO-OP.psd1
     .\New-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
-    
-4. If you must make changes to accounts or machines, update the ConfigTemplate.xml file in the original **infra** folder, copy it to this machine and then run the following script.
+
+5. 4. If you must make changes to accounts or machines, update the ConfigTemplate.xml file in the original **infra** folder, copy it to this machine and then run the following script.
 
     ```
     .\Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
@@ -325,18 +331,18 @@ The infrastructure setup scripts use the below 2 configuration files to drive th
 ### <a name="configurecert"></a> 8. Configure certificates
 
 1. Navigate to the machine that has the **infra** folder.
-2. If you must generate self-signed certificates, run the following command. The script will create the certificates, put them in the CurrentUser\My certificate store on the machine, and update the thumbprints in the XML file. 
+2. If you must generate self-signed certificates, run the following command. The script will create the certificates, put them in the CurrentUser\My certificate store on the machine, and update the thumbprints in the XML file.
 
     ```
-    # Create self-signed certs 
+    # Create self-signed certs
     .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
     If you must reuse any certificates and therefore don't have to generate certificates for them, set the **generateSelfSignedCert** tag to **false**.
 
-3. If you're using SSL certificates, skip certificate generation, and update the ConfigTemplate.xml with the respective thumbprints.
+3. If you're using SSL certificates that were already generated, skip the Certificate generation and update the thumbprints in the configTemplate.xml file. The certificates need to be installed in the CurrentUser\My store and their private keys must be exportable.
 
-4. Make sure that you enter the value against the **protectTo** tag. Only the Active Directory user or group that is specified in the **protectTo** tag will have permissions to import the certificates into the individual VMs.
+4. Specify a semi-colon separated list of users or groups in the **ProtectTo** tag for each certificate. Only Active directory users and groups specified in the **ProtectTo** tag will have permissions to import the certificates that are exported using the scripts. Passwords are not supported by the script to protect the exported certificates
 
 5. Export the certificates into .pfx files.
 
@@ -344,9 +350,6 @@ The infrastructure setup scripts use the below 2 configuration files to drive th
     # Exports Pfx files into a directory VMs\<VMName>, all the certs will be written to infra\Certs folder.
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
-
-    > [!IMPORTANT]
-    > The certificates must have been installed and must be present in cert:\\CurrentUser\\My. The certificates must also be exportable.
 
 ### <a name="setupvms"></a> 9. Setup VMs
 1. Export the scripts that must be run on each VM.
@@ -374,10 +377,10 @@ The infrastructure setup scripts use the below 2 configuration files to drive th
     .\Configure-PreReqs.ps1 -MSIFilePath <path of the MSIs>
     ```
 
-    > [!IMPORTANT] 
-    > Restart the machine each time you're prompted to restart it. Make sure that you rerun the .\Configure-PreReqs.ps1 script after each restart. 
+    > [!IMPORTANT]
+    > Restart the machine each time you're prompted to restart it. Make sure that you rerun the .\Configure-PreReqs.ps1 script after each restart until all the pre-requisites are installed.
 
-2. Run the following scripts, if they exist, in order to complete the VM setup.  
+2. Run the following scripts, if they exist, in order to complete the VM setup.
 
     ```
     .\Add-GMSAOnVM.ps1
@@ -405,14 +408,14 @@ The infrastructure setup scripts use the below 2 configuration files to drive th
 
     For more information, see, [Step 1B: Create a multi-machine cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster), [Secure a standalone cluster on Windows using X.509 certificates](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-windows-cluster-x509-security), and [Create a standalone cluster running on Windows Server](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster).
 
-4. Copy the generated ClusterConfig.json file to the <ServiceFabricStandaloneInstallerPath>.
+4. Copy the generated ClusterConfig.json file to the \<ServiceFabricStandaloneInstallerPath\>.
 
-5. Navigate to the <ServiceFabricStandaloneInstallerPath> in Windows PowerShell by using elevated privileges. Then run the following command to test ClusterConfig.
+5. Navigate to the \<ServiceFabricStandaloneInstallerPath\> in Windows PowerShell by using elevated privileges. Then run the following command to test ClusterConfig.
 
     ```
     .\TestConfiguration.ps1 -ClusterConfigFilePath .\clusterConfig.json
     ```
-    
+
 6. If the test is successful, run the following command to deploy the cluster.
 
     ```
@@ -527,15 +530,17 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises, Enterprise edition - Demo data** row to download the zip file.
 
-4. The zip file contains empty and demo data .bak files. Select .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file. 
+4. The zip file contains empty and demo data .bak files. Select .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file.
 
-5. Ensure the database section in the infra\ConfigTempate.xml is configured correctly with 
-    1. The db file and log settings 
-    2. The path to the backup file downloaded from LCS Shared Asset library.
+5. Ensure the database section in the infra\ConfigTempate.xml is configured correctly with
+    1. The database name.
+    2. The db file and log settings. The db settings should not be lower than the defaults specified.
+    3. The path to the backup file downloaded from LCS Shared Asset library. The default name for the Finance and Operations database is AXDB.
 
-   > [!IMPORTANT]
-   > The backup file must be accesible by the user running the scripts and the user running the SQL process
-   
+   > [!WARNING]
+   > The user running the SQL service and the user running the scripts should have READ access on the folder or share where the backup file is located.
+   > If a database with the same name exists, the database will be reused.
+
 6. Copy the **infra** folder to the SQL Server machine and navigate to it in a powershell window with elevate privileges.
 
 #### Configure the OrchestratorData database
@@ -553,16 +558,14 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 1. Execute the following script.
 
    ```
-   .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName AOS 
+   .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName AOS
+   .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName AOS
    ```
-   The above script will 
-    1. Restore the specified database backup.
-    2. Rename the database **AXDBRAIN**.
-    3. Set READ_COMMITTED_SNAPSHOT ON
-    4. Set ALLOW_SNAPSHOT_ISOLATION ON
-    5. Set the specified database file and log settings
-    6. Create a new user that has SQL authentication enabled (axdbadmin).
-    7. Map users to database roles per the below table.
+   The **Initialize-Database.ps1** script will
+
+    1. Restore the database from the specified backup file
+    2. Create a new user that has SQL authentication enabled (axdbadmin).
+    3. Map users to database roles per the below table for AXDB
 
     | User            | Type    | Database role |
     |-----------------|---------|---------------|
@@ -571,14 +574,21 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     | svc-FRPS$       | gMSA    | db\_owner     |
     | svc-FRAS$       | gMSA    | db\_owner     |
     | axdbadmin       | SqlUser | db\_owner     |
-    
-    8. Give the svc-AXSF$ user and the axdbadmin SQL user access to the following roles in the tempdb database:
-    - db\_datareader
-    - db\_datawriter
-    - db\_ddladmin
-    9. GRANT VIEW SERVER STATE TO axdbadmin
-    10. GRANT VIEW SERVER STATE TO [contososqlao\svc-AXSF$]
-    
+
+    4. Map users to database roles per the below table for TempDB.
+
+    | User            | Type    | Database role |
+    |-----------------|---------|---------------|
+    | svc-AXSF$       | gMSA    | db_datareader, db_datawriter, db_ddladmin     |
+    | axdbadmin       | SqlUser | db_datareader, db_datawriter, db_ddladmin     |
+
+   The **Configure-Database.ps1** script will
+
+    1. Set READ_COMMITTED_SNAPSHOT ON
+    2. Set ALLOW_SNAPSHOT_ISOLATION ON
+    3. Set the specified database file and log settings
+    4. GRANT VIEW SERVER STATE TO axdbadmin
+    5. GRANT VIEW SERVER STATE TO [contoso\svc-AXSF$]
 
 2. Run the following command to reset the database users.
 
@@ -588,7 +598,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 #### Configure the Financial Reporting database
 
-1. Execute the following script to 
+1. Execute the following script to
     1. Create an empty database named **FinancialReporting**.
     2. Map the users to database roles per the below table
 
@@ -597,7 +607,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     | svc-LocalAgent$ | gMSA | db\_owner     |
     | svc-FRPS$       | gMSA | db\_owner     |
     | svc-FRAS$       | gMSA | db\_owner     |
-    
+
   ```
    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName MR
   ```
