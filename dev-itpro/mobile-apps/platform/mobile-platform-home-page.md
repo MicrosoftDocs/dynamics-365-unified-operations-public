@@ -75,6 +75,6 @@ Layout and style
 ## Server-side development reference
 
 + [Workspace class overview](scenarios/mobile-workspace-configuration.md)
-+ [Server APIs (workspace X++ APIs)](server-api.md)
++ [Server APIs (workspace X++ APIs)](mobile-workspace-server-apis.md)
 
 

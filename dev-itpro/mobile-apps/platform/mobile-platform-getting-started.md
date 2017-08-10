@@ -72,4 +72,4 @@ You're done! Launch the app from your mobile device to see the sample workspace.
 
 [Client APIs reference](client-apis/client-apis-reference.md)
 
-[Server APIs reference](server-api.md)
+[Server APIs reference](mobile-workspace-server-apis.md)
