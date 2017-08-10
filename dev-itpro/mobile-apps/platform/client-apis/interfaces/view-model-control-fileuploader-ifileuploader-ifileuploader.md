@@ -36,12 +36,17 @@ A control for uploading files such as images.
 
 ### Properties
 
+* [container](view-model-control-fileuploader-ifileuploader-ifileuploader.md#container)
+* [generic](view-model-control-fileuploader-ifileuploader-ifileuploader.md#generic)
+* [getDataSource](view-model-control-fileuploader-ifileuploader-ifileuploader.md#getdatasource)
+* [hidden](view-model-control-fileuploader-ifileuploader-ifileuploader.md#hidden)
 * [image](view-model-control-fileuploader-ifileuploader-ifileuploader.md#image)
 
 ### Methods
 
 * [applyDesign](view-model-control-fileuploader-ifileuploader-ifileuploader.md#applydesign)
 * [canLoadFromDevice](view-model-control-fileuploader-ifileuploader-ifileuploader.md#canloadfromdevice)
+* [dataContext](view-model-control-fileuploader-ifileuploader-ifileuploader.md#datacontext)
 * [getDesign](view-model-control-fileuploader-ifileuploader-ifileuploader.md#getdesign)
 * [getImage](view-model-control-fileuploader-ifileuploader-ifileuploader.md#getimage)
 * [getValue](view-model-control-fileuploader-ifileuploader-ifileuploader.md#getvalue)
@@ -58,6 +63,42 @@ A control for uploading files such as images.
 * [onDataChanged](view-model-control-fileuploader-ifileuploader-ifileuploader.md#ondatachanged)
 
 ## Properties
+
+### container
+
+container: boolean (optional) 
+
+True if the control is a container.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)
+
+
+### generic
+
+generic: boolean (optional) 
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)
+
+
+### getDataSource
+
+getDataSource: function(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)
+
+
+### hidden
+
+hidden: boolean
+
+True if the control is hidden.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)
+
 
 ### image
 
@@ -97,6 +138,17 @@ Returns true if the mobile phone has camera plugin.
 #### Returns boolean
 
 
+
+### dataContext
+
+
+dataContext(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)
+
+#### Returns any
 
 ### getDesign
 

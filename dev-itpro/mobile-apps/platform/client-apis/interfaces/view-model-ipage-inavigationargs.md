@@ -71,7 +71,7 @@ params: [PageOptions](view-model-ipage-ipageoptions.md) (optional)
 
 replace: boolean (optional) 
 
-
+If set to true, removes current view firing navigation from navigation history stack.
 
 
 ### to
@@ -87,6 +87,6 @@ to: string (optional)
 
 url: string (optional) 
 
-
+If provided, this link is directly opened.
 
 

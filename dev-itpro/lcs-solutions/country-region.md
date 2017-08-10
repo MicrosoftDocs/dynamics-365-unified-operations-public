@@ -338,7 +338,7 @@ The following sections list resources by country/region.
 
 ### United States
 
--   [Form 1099 in the public sector](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-1099-public-sector)   
+-   [Form 1099 in the public sector](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector)   
 -   [Form I-9 verification](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
 -   [Year-end 1099 reporting](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [Payroll](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll)

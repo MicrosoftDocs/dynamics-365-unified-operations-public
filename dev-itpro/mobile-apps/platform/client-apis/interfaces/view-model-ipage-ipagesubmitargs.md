@@ -52,14 +52,14 @@ PageSubmitArgs <br>
 
 dataValues: any
 
-
+Get the payload of the submit action.
 
 
 ### sender
 
 sender: [Page](view-model-ipage-ipage.md)
 
-
+Get the sender page instance of the submit action.
 
 
 ## Methods
@@ -67,16 +67,16 @@ sender: [Page](view-model-ipage-ipage.md)
 ### addMessage
 
 
-addMessage(message: any, type: any): any
+addMessage(message: string, type: any): any
 
-
+Add a validation/error message to be displayed.
 
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| message|any||
+| message|string||
 | type|any||
 
 #### Returns any
@@ -86,7 +86,7 @@ addMessage(message: any, type: any): any
 
 cancel(): any
 
-
+Prevent the action from submitting.
 
 #### Returns any
 
@@ -95,18 +95,22 @@ cancel(): any
 
 getMessages(): string [ ]
 
-
+Get all previously added messages
 
 #### Returns string [ ]
+
+
 
 ### isCancelled
 
 
 isCancelled(): boolean
 
-
+Check if the submit action is cancelled.
 
 #### Returns boolean
+
+
 
 ### wait
 
@@ -114,6 +118,7 @@ isCancelled(): boolean
 wait(promise: Promise &lt;any&gt;): any
 
 Wait on a given promise before continuing with the submission.
+All promises attached via wait must resolve before the submit action is performed.
 
 
 #### Parameters
