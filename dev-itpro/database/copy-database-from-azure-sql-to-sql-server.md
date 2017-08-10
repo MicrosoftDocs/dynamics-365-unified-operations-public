@@ -243,12 +243,12 @@ Execute the following SQL script against the imported database. This will add ba
     
     ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
 
+### Re-provision the target environment
+[!include[environment-reprovision](../includes/environment-reprovision.md)]
+
 ### Reset the Financial Reporting database
 
 If you're using Financial Reporting (formerly Management Reporter), then follow the steps to reset the financial reporting database in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
-
-### Re-provision the target environment
-[!include[environment-reprovision](../includes/environment-reprovision.md)]
 
 ## Start using the new database
 To switch the environment and use the new database, stop the services in the following list, rename the AxDB database to AxDB\_orig, and then rename your newly imported database AxDB. Restart the services in the following list:
