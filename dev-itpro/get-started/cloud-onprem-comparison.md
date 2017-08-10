@@ -56,7 +56,6 @@ The following table shows whether each feature is available in:
 | | Enable the export of incremental updates to a data entity. | Yes | ? |
 | Document management| | | |
 | | Manage attachments<br><br>**Note:** Microsoft SharePoint Online is one of the storage locations that is supported natively. Currently, only SharePoint Online is supported. Support for on-premises SharePoint (a local SharePoint server) may be added in the future.| Yes | Yes |
-| Electronic reporting| | | |
 | Financial management| Includes all Financial management features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
 | | Accounts payable | Yes | Yes |
 | | Accounts receivable | Yes | Yes |
