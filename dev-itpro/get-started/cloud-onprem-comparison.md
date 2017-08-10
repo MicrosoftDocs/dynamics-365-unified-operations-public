@@ -142,9 +142,9 @@ The following table shows whether each feature is available in:
 | | Task guides for help| Yes | No |
 | Human resources | All Human resources features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
 | Inventory management| | | |
-| | Additional warehouse support in manufacturing | Yes | ? |
-| | Consignment inventory| Yes | ? |
-| | Consignment inventory| Yes | ? |
+| | Additional warehouse support in manufacturing | Yes | Yes |
+| | Consignment inventory| Yes | Yes |
+| | Consignment inventory| Yes | Yes |
 | | Demand replenishment for raw material picking | Yes | Yes |
 | Lifecycle services| | | |
 | | Configurable business processes | Yes | No |
@@ -154,10 +154,10 @@ The following table shows whether each feature is available in:
 | | Dynamics Translation Service| Yes | Yes |
 | | Global coverage - Retail| Yes | No |
 | Manufacturing| | | |
-| | Manufacturing – Gantt control| Yes | ? |
+| | Manufacturing – Gantt control| Yes | Yes |
 | Master planning and forecasting| | | |
 | | Safety stock de-prioritization in master planning and capable to promise (CTP) calculation| Yes | Yes |
-| | Turn off planning processes per company| Yes | No |
+| | Turn off planning processes per company| Yes | Yes |
 | Mobile applications, platform, and framework | | | |
 | | On-hand view app| Yes | Yes |
 | | Mobile framework| Yes | Yes |
@@ -181,14 +181,14 @@ The following table shows whether each feature is available in:
 | Personalization| | | |
 | Planning and scheduling| | | |
 | Procurement and sourcing| | | |
-| | Intercompany order processing: ATP and direct shipment| Yes | ? |
+| | Intercompany order processing: ATP and direct shipment| Yes | Yes |
 | | Mobile purchase order approvals| Yes | Yes |
 | | Mobile vendor collaboration| Yes | Yes |
 | | Punch-out to external catalog from purchase requisition| Yes | No |
 | | Purchase spend analysis Power BI reports| Yes | No |
 | Product information management | | | |
-| | Enhancements to the bill of materials functionality| Yes | ? |
-| | Product variant enhancements| Yes | ? |
+| | Enhancements to the bill of materials functionality| Yes | Yes |
+| | Product variant enhancements| Yes | Yes |
 | Product master data| | | |
 | Production | | | |
 | | Cross docking from production to transfer orders| Yes | Yes |
@@ -196,7 +196,7 @@ The following table shows whether each feature is available in:
 | | Lean scheduling board| Yes | Yes |
 | | Optimize scheduling for planned production orders with overlap jobs| Yes | Yes |
 | | Production performance Power BI reports| Yes | Yes |
-| | Visual scheduling| Yes | No |
+| | Visual scheduling| Yes | Yes |
 | Project management and accounting| | | |
 | | Assign resources to draft work breakdown structure | Yes | Yes|
 | | Manage or view a project work breakdown structure using Microsoft Project Client| Yes | Yes |
@@ -211,7 +211,7 @@ The following table shows whether each feature is available in:
 | Sales| | | |
 | | Prospect to cash integration of Dynamics 365 for Sales and Dynamics 365 for Operations| Yes | Yes |
 | | Sales and profitability performance Power BI reports| Yes | No |
-| | Sales orders mobile app  | Yes | No |
+| | Sales orders mobile app  | Yes | Yes |
 | Security | | | |
 | | Security| Yes | ? |
 | | SOC 1 Type 1 certification| Yes | No |
@@ -222,19 +222,19 @@ The following table shows whether each feature is available in:
 | Vendor collaboration| | | |
 | Warehouse management| | | |
 | | Batch and license plate confirmation | Yes | Yes |
-| | Build your own data warehouse and incrementally export entities| Yes | ? |
+| | Build your own data warehouse and incrementally export entities| Yes | Yes |
 | | Enable withdrawal kanban for warehouse processes| Yes | Yes |
 | | Item and warehouse migration process to use advanced warehouse management| Yes | Yes |
-| | Mobile warehouse app| Yes | No |
+| | Mobile warehouse app| Yes | Yes |
 | | Movement of inventory with associated work in Warehouse management| Yes | Yes |
 | | Piece picking confirmation| Yes | Yes |
 | | Product work confirmation for cluster picking| Yes | Yes |
 | | Production output location added to the resource group member| Yes | Yes |
 | | System grouping on an open work list| Yes | Yes |
 | | Warehouse - Partial cycle counting at a location| Yes | Yes |
-| | Warehouse enhancements for high volume distribution centers| Yes | ? |
-| | Warehouse operation enhancements| Yes | ? |
-| | Warehouse work policies| Yes | ? |
+| | Warehouse enhancements for high volume distribution centers| Yes | Yes |
+| | Warehouse operation enhancements| Yes | Yes |
+| | Warehouse work policies| Yes | Yes |
 | | Warehousing Power BI reports| Yes | No |
 | Web/browser client | | | |
 | | Ability to model toolbar actions in the overflow menu| Yes | Yes |
