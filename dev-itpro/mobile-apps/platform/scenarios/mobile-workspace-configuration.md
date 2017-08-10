@@ -52,32 +52,6 @@ Follow these steps to create a new workspace class for your workspace.
 
     ![AOT resource name in the workspace class](media/workspace-api/WorkspaceClassWithAOTResource.png)
 
-## Workspace life cycle methods
-The workspace class provides the following methods that can be overridden.
-
-### getWorkspaceMetadata
-The **getWorkspaceMetadata** method is called to retrieve workspace metadata. You can override this method to update the workspace metadata. For more information, see the "Workspace metadata classes" section later in this topic. Here are some of the ways that you can use the metadata:
-
-- Update the workspace, page, action, and control metadata.
-- Provide custom configurations.
-- Hide pages, actions, and controls in a workspace.
-- Mark fields as mandatory.
-
-### isWorkspaceHidden
-The **isWorkspaceHidden** method can be overridden to hide or show the workspace on the mobile client. You can use custom parameters to determine whether the workspace must be hidden for a specific user. For more information, see [Secure a mobile app workspace](secure-mobile-workspace.md).
-
-### onBeginJob
-The **onBeginJob** method is called before a job request is run on the server. You can override this method to change the request parameters. You have access to the page or action name that the job request is for. By using the **onBeginJob** method, you can perform these tasks:
-
-- Change the filter context for the job. For example, if a scenario requires that one record be sent, you can change the filter context to that record.
-- You can change the job values. Job values are sent for a job that is initiated by actions on the mobile client. You can change or inspect values that are sent to start a job on the server.
-
-### onEndJob
-The **onEndJob** method is called after a job has been run on the server. You can override this method to change the result that is sent back to mobile client. You have access to the page or action name that the job result is for. By using the **onEndJob** method, you can perform these tasks:
-
-- Change the job result. For example, you can change the values or add a new set of values.
-- You can ignore the values that are returned from the server and send some other values back instead.
-
 ## Use the workspace class to publish workspaces from AOT resources
 Workspaces can reside in the database. They can also reside in the AOT as resources. To provide visibility into workspaces that are stored in AOT resources, you must create a workspace class and point it to the name of the AOT resource that contains the workspace. Workspaces that are stored as AOT resources can't be edited or deleted by using the mobile app designer. Those workspace can only be exported.
 
