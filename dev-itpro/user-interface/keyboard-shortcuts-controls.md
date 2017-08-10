@@ -104,7 +104,7 @@ The following table provides a short, non-exhaustive list of keyboard shortcuts 
 </tbody>
 <tbody>
 <tr>
-<td>Alt+A</td>
+<td>Ctrl+A</td>
 <td>Select all the text in the current field, or select all content on the page.</td>
 </tr>
 <tr>
@@ -254,7 +254,7 @@ If more than one key code should apply to your keyboard shortcut, pass in an arr
 },
 </pre>
 </li>
- 	<li>Bind the keydown handler. The keyDown handler is automatically bound for form objects. Other controls must be manually bound to the keyDown handler, as for any regular binding.
+ 	<li>Bind the keyDown handler. (**Note "keyDown" is case sensitive!**) The keyDown handler is automatically bound for form objects. Other controls must be manually bound to the keyDown handler, as for any regular binding. 
 <pre>&lt;div data-dyn-bind="keyDown: $data.keydown"&gt;&lt;/div&gt;
 </pre>
 </li>
