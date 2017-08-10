@@ -322,7 +322,7 @@ The infrastructure setup scripts use the below 2 configuration files to drive th
     .\New-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-5. 4. If you must make changes to accounts or machines, update the ConfigTemplate.xml file in the original **infra** folder, copy it to this machine and then run the following script.
+4. If you must make changes to accounts or machines, update the ConfigTemplate.xml file in the original **infra** folder, copy it to this machine and then run the following script.
 
     ```
     .\Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
@@ -545,17 +545,20 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 #### Configure the OrchestratorData database
 
-1. Execute the following script to
+1. Execute the following script.
+
+   ```
+   .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator
+   ```
+
+  The script will
     1. Create an empty database named **OrchestratorData**. This database is used by the on-premises local agent to orchestrate deployments.
     2. Grant the local agent gMSA (svc-LocalAgent$) **db\_owner** permissions on the database.
 
-```
- .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator
-```
 
 #### Configure the Finance and Operations database
 
-1. Execute the following script.
+1. Execute the following scripts.
 
    ```
    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName AOS
@@ -566,6 +569,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     1. Restore the database from the specified backup file
     2. Create a new user that has SQL authentication enabled (axdbadmin).
     3. Map users to database roles per the below table for AXDB
+
 
     | User            | Type    | Database role |
     |-----------------|---------|---------------|
@@ -598,7 +602,13 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 #### Configure the Financial Reporting database
 
-1. Execute the following script to
+1. Execute the following script
+
+   ```
+   .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName MR
+   ```
+
+   The script will
     1. Create an empty database named **FinancialReporting**.
     2. Map the users to database roles per the below table
 
@@ -608,9 +618,6 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     | svc-FRPS$       | gMSA | db\_owner     |
     | svc-FRAS$       | gMSA | db\_owner     |
 
-  ```
-   .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName MR
-  ```
 
 ### <a name="encryptcred"></a> 15. Encrypt credentials
 
@@ -731,3 +738,7 @@ You've now complete the setup of the infrastructure. The following sections desc
 1. In LCS, navigate to your on-premises project, go to **Environment** \> **Sandbox**, and then select **Configure**.
 2. Select your environment topology, and then complete the wizard to initiate your deployment.
 3. The local agent will pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready.
+
+##Connect to your Finance and Operations (on-premises) environment
+
+Launch your favorite browser and navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
