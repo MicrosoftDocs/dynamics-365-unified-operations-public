@@ -42,7 +42,6 @@ The following table shows whether each feature is available in:
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
-
 | Cost management| | | |
 | | Templates for configuration data projects| Yes | Yes |
 | Customization| | | |
