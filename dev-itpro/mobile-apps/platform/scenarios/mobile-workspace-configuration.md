@@ -126,36 +126,6 @@ When a mobile workspace is stored as an AOT resource, you can't delete it by usi
 ## Workspace metadata classes
 You can use the workspace metadata classes to inspect and update metadata that is related to the mobile workspace.
 
-### SysAppWorkspaceMetadata
-The **SysAppWorkspaceMetadata** class represents the whole mobile workspace metadata. You can use this class to perform the following tasks:
+## Workspace attributes
+You can use the workspace attributes to create pages, tasks, entities, lookups, etc 
 
-- Update the workspace title.
-- Update the workspace description.
-- Get the pages and actions that belong to the workspace.
-- Add custom config objects that will be passed to the mobile workspace.
-
-### SysAppPageMetadata
-The **SysAppPageMetadata** class represents page metadata in a mobile workspace. You can use this class to perform the following tasks:
-
-- Update the page title.
-- Update the page description.
-- Order a page. You can specify the order of the page relative to other pages that are shown in the workspace.
-- Hide the page from the workspace.
-- Get control metadata for controls on the page.
-
-### SysAppActionMetadata
-The **SysAppActionMetadata** class represents action metadata for a mobile workspace. You can use this class to perform the following tasks:
-
-- Update the action title.
-- Update the action description.
-- Order an action. You can specify the order of the action relative to other actions that are shown on the workspace and on the pages.
-- Hide the action.
-- Get control metadata for controls in the action.
-
-### SysAppControlMetadata
-The **SysAppControlMetadata** class represents control metadata for controls on a page or action. You can use this class to perform the following tasks:
-
-- Update the control label.
-- Order a control. You can specify the order of the control relative to other controls on a page or action.
-- Hide a control.
-- Mark a control as mandatory.
