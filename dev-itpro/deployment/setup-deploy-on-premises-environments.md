@@ -731,5 +731,5 @@ You've now complete the setup of the infrastructure. The following sections desc
 2. Select your environment topology, and then complete the wizard to initiate your deployment.
 3. The local agent will pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready.
 
-##Connect to your Finance and Operations (on-premises) environment
+## Connect to your Finance and Operations (on-premises) environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
