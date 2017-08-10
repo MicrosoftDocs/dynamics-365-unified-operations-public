@@ -49,7 +49,6 @@ We also have a video series about creating a mobile app:
 
 ## Common tasks 
 
-+ [Configure a workspace by using the SysAppWorkspace class](scenarios/mobile-workspace-configuration.md)
 + [Localize mobile workspaces on the server](scenarios/localize-workspaces-on-server.md)
 + [Secure a mobile app workspace](scenarios/secure-mobile-workspace.md)
 + [Customize the display of a field so that it is clickable](scenarios/make-workspace-field-clickable.md)
@@ -63,6 +62,7 @@ We also have a video series about creating a mobile app:
 
 ## Server-side development reference
 
++ [Workspace class overview](scenarios/mobile-workspace-configuration.md)
 + [Server APIs (workspace X++ APIs)](mobile-workspace-server-apis.md)
 
 
