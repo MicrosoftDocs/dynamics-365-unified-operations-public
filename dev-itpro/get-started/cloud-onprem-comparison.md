@@ -263,28 +263,28 @@ The following table shows whether each feature is available in:
 |---|---|---|---|
 | |Ability to sell and return outside assortments | Yes | No |
 | | Advanced warehousing in Retail store  | Yes | No |
-| | Customer orders | Yes | ? |
+| | Customer orders | Yes | No |
 | | CDX extensibility enhancements| Yes | No |
-| | Cloud POS | Yes | ? |
+| | Cloud POS | Yes | No |
 | | Discounts - Quantity limit and exclude discount lines| Yes | No |
-| | e-Commerce & consumer shopping app | Yes | ? |
+| | e-Commerce & consumer shopping app | Yes | No |
 | | CRT handlers and extensible enums| Yes | No |
 | | Enhanced channel database extension model| Yes | No |
-| | Hybrid cloud - Retail Store | Yes | ? |
+| | Hybrid cloud - Retail Store | Yes | No |
 | | Integrated Retail workforce management| Yes | No |
 | | Next generation Retail extensibility framework| Yes | No |
-| | Omni-channel | Yes | ? |
+| | Omni-channel | Yes | No |
 | | Omni-channel coupons| Yes | No |
 | | POS Extensibility Enhancements| Yes | No |
 | | POS Inventory visibility improvements| Yes | No |
 | | POS search improvements| Yes | No |
-| | Retail Channel performance| Yes | ? |
+| | Retail Channel performance| Yes | No |
 | | Retail peripheral compatibility| Yes | No |
-| | Retail store | Yes | ? |
+| | Retail store | Yes | No |
 | | Support for multiple Retail server extensions| Yes | No |
-| | Payments | Yes | ? |
-| | Customer management | Yes | ? |
-| | Personalized product recommendations powered by cognitive services and Microsoft Azure machine learning| Yes | ? |
+| | Payments | Yes | No |
+| | Customer management | Yes | No |
+| | Personalized product recommendations powered by cognitive services and Microsoft Azure machine learning| Yes | No |
 | | Retrieve help topics in the client | Yes | No |
 | | Task guides for help| Yes | No |
 
