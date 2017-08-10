@@ -60,7 +60,7 @@ The following table shows whether each feature is available in:
 | Financial management| Includes all Financial management features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
 | | Accounts payable | Yes | Yes |
 | | Accounts receivable | Yes | Yes |
-| | Budgeting| | |
+| | Budgeting| Yes | Yes |
 | | Cash and bank management| Yes | Yes |
 | | Cost accounting | | |
 | |   Allocation bases| Yes | Yes |
@@ -71,10 +71,10 @@ The following table shows whether each feature is available in:
 | |   Content pack for Power BI| Yes | No |
 | |   Get started wizard| Yes | Yes |
 | |   Ledger administration workspace| Yes | Yes |
-| | Expense management| | |
+| | Expense management| Yes | Yes |
 | | Fixed assets| Yes | Yes |
 | | General ledger| Yes | Yes |
-| | Public sector| | |
+| | Public sector| Yes | Yes |
 | Help| | | |
 | | Retrieve help topics in the client | Yes | No |
 | | Task guides for help| Yes | No |
