@@ -126,7 +126,6 @@ The following table shows whether each feature is available in:
 | Organization administration | | | |
 | | Case management| Yes | ? |
 | | Case management for production and quality orders| Yes | ? |
-| Personalization| | | |
 | Planning and scheduling| | | |
 | Procurement and sourcing| | | |
 | | Intercompany order processing: ATP and direct shipment| Yes | Yes |
@@ -178,21 +177,18 @@ The following table shows whether each feature is available in:
 | | Ability to model toolbar actions in the overflow menu| Yes | Yes |
 | | Browser framework - PowerApps Host control| Yes | Yes |
 | | Create a workspace through personalization| Yes | Yes |
-| | Dynamics 365 rebranding and alignment | Yes | Yes |
 | | Enhanced description| Yes | Yes |
-| | Enhanced administration features for personalization| Yes | Yes |
 | | Improved responsiveness across devices and viewports| Yes | Yes |
-| | Improved viewing experience for Application reports| Yes | Yes |
-| | Personalize your workspace by adding a link to a details page| Yes | Yes |
-| | Personalization now supports Task Recorder| Yes | Yes |
+| | Improved viewing experience for application reports| Yes | Yes |
+| | All personalization features | Yes | Yes |
 | | Support for Right to Left languages| Yes | Yes |
 | | Task guides for help| Yes | No |
-| | Task recording - Ability to insert and re-order steps| Yes | No |
-| | User interface| Yes | ? |
-| | Web client x 3| Yes | No |
+| | Task recording - Ability to insert and re-order steps<br><br>**Note:** You can't save or load task recordings from the BPM library.| Yes | Yes |
+| | User interface| Yes | Yes |
+| | Web client x 3| Yes | Note: Jason said "What is this>" |
 | Finances and Operations support | | | |
 | | Ideas portal| Yes | ? |
-| | Access to Support via the Help & Support menu| Yes | Yes |
+| | Access to Support via the Help & Support menu| Yes | No |
 
 
 ## Dynamics 365 for Retail 
