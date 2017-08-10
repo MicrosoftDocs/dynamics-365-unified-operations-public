@@ -42,22 +42,7 @@ The following table shows whether each feature is available in:
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
-| Budgeting | | |
-| | Maintain carry-forward status| Yes | Yes |
-| | Budget control data maintenance| Yes | Yes |
-| | Budgeting (February 2016)| Yes | No |
-| | Budgeting (November 2016)| Yes | No |
-| | Budgeting Power BI: actual vs. budget| Yes | No |
-| Cost accounting| | | |
-| | Allocation bases| Yes | Yes |
-| | Cost accounting| Yes | ? |
-| | Cost accounting Power BI reports| Yes | No |
-| | Cost control workspace for Mobile app| Yes | No |
-| | Cross legal entities | Yes | Yes |
-| | Content pack for Power BI| Yes | No |
-| | Dimension hierarchies | Yes | Yes |
-| | Get started wizard| Yes | Yes |
-| | Ledger administration workspace| Yes | Yes |
+
 | Cost management| | | |
 | | Templates for configuration data projects| Yes | Yes |
 | Customization| | | |
@@ -73,65 +58,30 @@ The following table shows whether each feature is available in:
 | Document management| | | |
 | | Manage attachments<br><br>**Note:** Microsoft SharePoint Online is one of the storage locations that is supported natively. Currently, only SharePoint Online is supported. Support for on-premises SharePoint (a local SharePoint server) may be added in the future.| Yes | Yes |
 | Electronic reporting| | | |
-| Expense management| | | |
-| | Expense management| Yes | ? |
-| | Configuration related to employee's card ID| Yes | Yes |
-| | Configure per diem locations per country/region, state/province, and location| Yes | Yes |
-| | Display related payment information for an expense report| Yes | Yes |
-| | Enable Travel requisition functionality (Dynamics AX 2012 parity)| Yes | Yes |
-| | Export and import expense policies using data management| Yes | Yes |
-| | Final approver defaulted for multi-level workflow approval| Yes | Yes |
-| | Match credit card expenses with manually entered expenses| Yes | Yes |
-| | Mobile workspace| Yes | Yes |
-| | Split credit card expenses| Yes | Yes |
-| | Support for importing credit card itemization data| Yes | Yes |
-| | Usability enhancements| Yes | Yes |
-| | View detailed workflow history for an expense report| Yes | Yes |
-| Financial management| | | |
-| | Ability to delete a main account and dimension value | Yes | Yes |
-| | Access estimated costs, revenue, and item requirements | Yes | ? |
-| | Accounts payable | Yes | No |
-| | Accounts payable check templates using Electronic Reporting | Yes | No |
-| | Accounts receivable | Yes | No |
-| | Belgian Enterprise number Registration ID is used for customer and vendor accounts | Yes | Yes |
-| | Cash and bank management| Yes | ? |
-| | Cash flow forecasting Power BI| Yes | Yes |
-| | CFO Overview workspace| Yes | No |
-| | Credit and collections| Yes | ? |
-| | Credit and collections management Power BI| Yes | Yes |
-| | Direct deposit| Yes | No |
-| | Edit account entries in the allocation journal| Yes | ? |
-| | Financial dimensions in Financial reporting report definition| Yes | Yes |
-| | Financial dimensions in Power BI| Yes | Yes |
-| | Financial Performance PowerBI content designed for CFOs | Yes | ? |
-| | Financial report generation| Yes | Yes |
-| | Financial reporting| Yes | Yes|
-| | Financial reporting| Yes | ? |
-| | Fixed asset management workspace and embedded Power BI content| Yes | No |
-| | Fixed assets| Yes | ? |
-| | Funding source can be selected for a fee journal line| Yes | ? |
-| | Funding sources can be selected for fee journal lines| Yes | ? |
-| | Late selection option for invoice proposals in a batch| Yes | ? |
-| | Late selection option when posting invoice proposals in a batch| Yes | ? |
-| | Mobile Invoice Approvals| Yes | Yes |
-| | Operational performance Power BI content designed for COOs and CFOs| Yes | ? |
-| | Reverse charge functionality for European countries/regions| Yes | Yes |
-| | Save Financial reports to SharePoint| Yes | Yes |
-| | Setup for account determination in intercompany revenue and cost transactions can be made more granular | Yes | ? |
-| | Tax| Yes | ? |
-| | Tax invoice and tax reports for Thailand| Yes | Yes |
-| | Vendor collaboration| Yes | Yes |
-| | Vendor invoice attachment enhancements| Yes | Yes |
-| | Vendor payment analysis Power BI| Yes | Yes |
-| | Vendor prepayments in fixed-price project estimates| Yes | ? |
-| General ledger | | | |
-| | General ledger| Yes | ? |
-| | Intercompany revenue and cost transactions| Yes | ? |
-| | Suspended and inactive dimension values hidden from dimension value lookups| Yes | Yes |
+| Financial management| Includes all Financial management features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
+| | Accounts payable | Yes | Yes |
+| | Accounts receivable | Yes | Yes |
+| | Budgeting| | |
+| | Cash and bank management| Yes | Yes |
+| | Cost accounting | | |
+| |   Allocation bases| Yes | Yes |
+| |   Cost accounting| Yes | ? |
+| |   Cost accounting Power BI reports| Yes | No |
+| |   Cost control workspace for Mobile app| Yes | No |
+| |   Cross legal entities | Yes | Yes |
+| |   Content pack for Power BI| Yes | No |
+| |   Get started wizard| Yes | Yes |
+| |   Ledger administration workspace| Yes | Yes |
+| | Expense management| | |
+| | Fixed assets| Yes | Yes |
+| | General ledger| Yes | Yes |
+| | Public sector| | |
 | Help| | | |
 | | Retrieve help topics in the client | Yes | No |
 | | Task guides for help| Yes | No |
-| Human resources | All Human resources features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
+| Human resources | Includes all Human resources features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
+| Payroll|  All Payroll features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
+| | Direct deposit| Yes | No |
 | Intelligence| | | |
 | | Financial reporting | Yes | Yes|
 | | Electronic reporting | Yes | Yes|
@@ -178,7 +128,6 @@ The following table shows whether each feature is available in:
 | Organization administration | | | |
 | | Case management| Yes | ? |
 | | Case management for production and quality orders| Yes | ? |
-| Payroll|  All Payroll features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
 | Personalization| | | |
 | Planning and scheduling| | | |
 | Procurement and sourcing| | | |
@@ -198,17 +147,7 @@ The following table shows whether each feature is available in:
 | | Optimize scheduling for planned production orders with overlap jobs| Yes | Yes |
 | | Production performance Power BI reports| Yes | Yes |
 | | Visual scheduling| Yes | Yes |
-| Project management and accounting| | | |
-| | Assign resources to draft work breakdown structure | Yes | Yes|
-| | Manage or view a project work breakdown structure using Microsoft Project Client| Yes | Yes |
-| | Managing estimated costs, revenue, and item requirements | Yes | ? |
-| | Project management and accounting improvements | Yes | ? |
-| | Project management and accounting usability and productivity improvements | Yes | ? |
-| | Project Management PowerBI reports| Yes | ? |
-| | Project resourcing improvements| Yes | ? |
-| | Rename project stages| Yes | Yes |
-| | Power BI content pack for Project management and accounting| Yes | ? |
-| | Project time entry mobile workspace| Yes | Yes |
+| Project management and accounting| Includes all Financial management features that are part of Dynamics 365 for Finance and Operations | | |
 | Sales| | | |
 | | Prospect to cash integration of Dynamics 365 for Sales and Dynamics 365 for Operations| Yes | Yes |
 | | Sales and profitability performance Power BI reports| Yes | No |
