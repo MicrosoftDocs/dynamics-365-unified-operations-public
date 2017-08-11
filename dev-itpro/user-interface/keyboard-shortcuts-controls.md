@@ -242,8 +242,10 @@ We recommend that you use the registration mechanism that is described in this s
     ```
     Shortcuts: {
         Name: {
-            Keys: { modifier1: true, modifier2:true, keyCode: $dyn.ui.KeyCodes.* }, 
-            //Only specify the modifiers you need (between alt, ctrl/meta, shift)
+            Keys: { modifier1: true, modifier2:true, 
+                keyCode: $dyn.ui.KeyCodes.* }, 
+            // Only specify the modifiers you need 
+            // (between alt, ctrl/meta, shift)
             Handler: function (evt) {
                 // Code to handle shortcut.
             },
@@ -254,8 +256,10 @@ We recommend that you use the registration mechanism that is described in this s
     If more than one key code should apply to your keyboard shortcut, pass in an array of codes, as shown here.
     
     ```
-    Keys: {modifier1:true, keyCode:[$dyn.ui.KeyCodes.*, $dyn.ui.KeyCodes.*, ... ] } 
-    //Note: If any of these keyCodes match then the handler is called. I.E. The keyCodes in the array are OR'd not AND'd
+    Keys: {modifier1:true, 
+        keyCode:[$dyn.ui.KeyCodes.*, $dyn.ui.KeyCodes.*, ... ] } 
+    // Note: If any of these keyCodes match then the handler is called. I.E. 
+    // The keyCodes in the array are OR'd not AND'd
     ```
 2. Add the keydown handler by using the following code.
 
