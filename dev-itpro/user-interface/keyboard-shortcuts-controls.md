@@ -37,32 +37,33 @@ ms.dyn365.ops.version: Platform update 1
 
 Keyboard shortcuts are an important consideration when you create any extensible control. This topic provides information that will help you choose keyboard shortcuts for your extensible controls. It also outlines the recommended method for implementing keyboard shortcuts for extensible controls.
 
-<h2>Overview</h2>
+## Overview
 For accessibility, it's essential that keyboard-only users be able to use controls. Therefore, keyboard shortcuts are an important consideration when you create any extensible control. This topic provides information that will help you choose key combinations to use as keyboard shortcuts. It highlights the shortcuts that are currently used by Microsoft Dynamics 365 for Finance and Operations and supported browsers, shortcuts that are planned for implementation in Dynamics 365 for Finance and Operations, and shortcuts that one or more browsers don't allow to be overridden. This topic also outlines the recommended way to implement keyboard shortcuts for extensible controls.
-<h2>Choosing a key combination</h2>
+
+## Choosing a key combination
 When you're trying to choose a key combination to use as a keyboard shortcut, it's important that you be aware of other existing shortcuts. In this way, you help guarantee that your shortcut won't overlap an existing shortcut. If you try to collide with an existing shortcut, one of the following outcomes might occur:
-<ul>
- 	<li>The new keyboard shortcut might not work, because a browser doesn't allow that key combination to be overridden, or a framework-provided shortcut takes precedence over the new shortcut.</li>
- 	<li>The new keyboard shortcut might remove expected keyboard functionality, because users expect specific key combinations to perform specific functions in a browser. Alternatively, you might override framework-provided shortcuts or other control shortcuts, so that keyboard-only users can't use them.</li>
-</ul>
+
+- The new keyboard shortcut might not work, because a browser doesn't allow that key combination to be overridden, or a framework-provided shortcut takes precedence over the new shortcut.
+- The new keyboard shortcut might remove expected keyboard functionality, because users expect specific key combinations to perform specific functions in a browser. Alternatively, you might override framework-provided shortcuts or other control shortcuts, so that keyboard-only users can't use them.
+
 Because of these potential issues, we recommend that you adhere to this guidance when you choose a key combination:
-<ul>
- 	<li><strong>Don't</strong> choose any key combination that is currently used by Dynamics 365 for Finance and Operations, or that is planned for future implementation in Dynamics 365 for Finance and Operations.</li>
- 	<li><strong>Do</strong> pick key combinations that will work in all supported browsers.</li>
- 	<li><strong>Do</strong> be careful when you override shortcuts that are used by a supported browser. You should not suppress shortcuts for important or frequently used browser functionality.</li>
- 	<li><strong>Do</strong> use longer key combinations (three keys) for control-specific behavior. Shorter combinations should be reserved for user-defined keyboard shortcuts.</li>
- 	<li><strong>Don't</strong> choose any key combination that involves Ctrl+Alt, because this combination maps to Alt+Gr for some Eastern European languages and will conflict with other shortcuts.</li>
-</ul>
-<h3>Keyboard shortcut links</h3>
+
+- **Don't** choose any key combination that is currently used by Dynamics 365 for Finance and Operations, or that is planned for future implementation in Dynamics 365 for Finance and Operations.
+- **Do** pick key combinations that will work in all supported browsers.
+- **Do** be careful when you override shortcuts that are used by a supported browser. You should not suppress shortcuts for important or frequently used browser functionality.
+- **Do** use longer key combinations (three keys) for control-specific behavior. Shorter combinations should be reserved for user-defined keyboard shortcuts.
+- **Don't** choose any key combination that involves Ctrl+Alt, because this combination maps to Alt+Gr for some Eastern European languages and will conflict with other shortcuts.
+
+### Keyboard shortcut links
 Here are links to the keyboard shortcuts that are documented for Dynamics 365 for Finance and Operations and supported browsers:
-<ul>
- 	<li><a href="/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys">Keyboard shortcuts</a></li>
- 	<li><a href="https://support.microsoft.com/en-us/help/13805">Microsoft Edge</a></li>
- 	<li><a href="https://support.google.com/chrome/answer/157179">Google Chrome</a></li>
- 	<li><a href="https://support.microsoft.com/en-us/help/15357/windows-internet-explorer-11-keyboard-shortcuts">Internet Explorer 11</a></li>
- 	<li><a href="https://support.apple.com/kb/PH21483">Apple Safari</a></li>
-</ul>
-<h3>Planned keyboard shortcuts for Dynamics 365 for Finance and Operations</h3>
+
+- <a href="/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys">Keyboard shortcuts</a>
+- <a href="https://support.microsoft.com/en-us/help/13805">Microsoft Edge</a>
+- <a href="https://support.google.com/chrome/answer/157179">Google Chrome</a>
+- <a href="https://support.microsoft.com/en-us/help/15357/windows-internet-explorer-11-keyboard-shortcuts">Internet Explorer 11</a>
+- <a href="https://support.apple.com/kb/PH21483">Apple Safari</a>
+
+### Planned keyboard shortcuts for Dynamics 365 for Finance and Operations
 In addition to the keyboard shortcuts that are currently used by Dynamics 365 for Finance and Operations, there are several shortcuts that are planned for future implementation. To avoid conflicts with framework-provided shortcuts, you should not choose the following key combinations for extensible controls.
 <table>
 <tbody>
@@ -92,8 +93,10 @@ In addition to the keyboard shortcuts that are currently used by Dynamics 365 f
 </tr>
 </tbody>
 </table>
-<h3>Browser/operating system keyboard shortcuts to avoid</h3>
-<h4>Keyboard shortcuts that correspond to important functionality</h4>
+
+### Browser/operating system keyboard shortcuts to avoid
+
+#### Keyboard shortcuts that correspond to important functionality
 The following table provides a short, non-exhaustive list of keyboard shortcuts that correspond to important functionality in a browser or operating system. You should not choose the key combinations in this table.
 <table>
 <tbody>
@@ -149,7 +152,8 @@ The following table provides a short, non-exhaustive list of keyboard shortcuts 
 </tr>
 </tbody>
 </table>
-<h4>Keyboard shortcuts that can't be overridden by some browsers</h4>
+
+#### Keyboard shortcuts that can't be overridden by some browsers
 Some browsers don't allow the following keyboard shortcuts to be overridden. Therefore, you should not choose the following key combinations, because the shortcut won't work in all browsers.
 <table>
 <tbody>
@@ -221,19 +225,22 @@ Some browsers don't allow the following keyboard shortcuts to be overridden. The
 </tr>
 </tbody>
 </table>
-<h2>Implementing keyboard shortcuts</h2>
+
+## Implementing keyboard shortcuts
 We recommend that you use the registration mechanism that is described in this section to implement keyboard shortcuts. There are several benefits to registering a control's shortcuts in this manner:
-<ul>
- 	<li>You specify only the modifier keys that you want. If any other modifiers are pressed, the shortcut won't run. Therefore, a keyboard shortcut that is defined for Ctrl+Down arrow won't be triggered if Ctrl+Shift+Down arrow is pressed.</li>
- 	<li>You can reuse code.</li>
- 	<li>If you return <strong>false</strong> from the handler function, propagation won't stop on the event. If you return <strong>true</strong> (or if you don't specify a return value), propagation will stop.</li>
- 	<li>Ctrl and Meta modifiers are treated the same. Therefore, you can specify keyboard shortcuts that will work for both iOS and Microsoft Windows. For example, the shortcut Ctrl+G on Windows will be translated to Meta+G on iOS.</li>
- 	<li>Built-in telemetry for the keyboard shortcuts is used.</li>
-</ul>
-<h3>Define a keyboard shortcut</h3>
-<ol>
- 	<li>Define a Shortcuts object on the control's prototype. Then define the keyboard shortcuts inside the Shortcuts object. These shortcuts should have the following structure. Make sure that the key code that you're trying to use is defined in the $dyn.ui.KeyCodes object.
-<pre>Shortcuts: {
+
+- You specify only the modifier keys that you want. If any other modifiers are pressed, the shortcut won't run. Therefore, a keyboard shortcut that is defined for Ctrl+Down arrow won't be triggered if Ctrl+Shift+Down arrow is pressed.</li>
+- You can reuse code.
+- If you return <strong>false</strong> from the handler function, propagation won't stop on the event. If you return <strong>true</strong> (or if you don't specify a return value), propagation will stop.
+- Ctrl and Meta modifiers are treated the same. Therefore, you can specify keyboard shortcuts that will work for both iOS and Microsoft Windows. For example, the shortcut Ctrl+G on Windows will be translated to Meta+G on iOS.
+- Built-in telemetry for the keyboard shortcuts is used.
+
+### Define a keyboard shortcut
+
+1. Define a Shortcuts object on the control's prototype. Then define the keyboard shortcuts inside the Shortcuts object. These shortcuts should have the following structure. Make sure that the key code that you're trying to use is defined in the $dyn.ui.KeyCodes object.
+
+```
+Shortcuts: {
     Name: {
         Keys: { modifier1: true, modifier2:true, keyCode: $dyn.ui.KeyCodes.* }, 
         //Only specify the modifiers you need (between alt, ctrl/meta, shift)
@@ -242,29 +249,32 @@ We recommend that you use the registration mechanism that is described in this s
         },
         // Additional code.
 }
-</pre>
+```
 If more than one key code should apply to your keyboard shortcut, pass in an array of codes, as shown here.
-<pre>Keys: {modifier1:true, keyCode:[$dyn.ui.KeyCodes.*, $dyn.ui.KeyCodes.*, ... ] } 
+```
+Keys: {modifier1:true, keyCode:[$dyn.ui.KeyCodes.*, $dyn.ui.KeyCodes.*, ... ] } 
 //Note: If any of these keyCodes match then the handler is called. I.E. The keyCodes in the array are OR'd not AND'd
-</pre>
-</li>
- 	<li>Add the keydown handler by using the following code.
-<pre>keydown: function (event) {
+```
+2. Add the keydown handler by using the following code.
+```
+keydown: function (event) {
     $dyn.util.handleShortcuts(this, event);
 },
-</pre>
-</li>
- 	<li>Bind the keyDown handler. The keyDown handler is automatically bound for form objects. Other controls must be manually bound to the keyDown handler, as for any regular binding. 
+```
+3. Bind the keyDown handler. The keyDown handler is automatically bound for form objects. Other controls must be manually bound to the keyDown handler, as for any regular binding. 
+  
     > [!WARNING]
     > "keyDown" is case sensitive.
   
-<pre>&lt;div data-dyn-bind="keyDown: $data.keydown"&gt;&lt;/div&gt;
-</pre>
-</li>
-</ol>
-<h3>Examples</h3>
+```
+&lt;div data-dyn-bind="keyDown: $data.keydown"&gt;&lt;/div&gt;
+```
+
+### Examples
 Here is a Form example.
-<pre>Shortcuts: {
+
+```
+Shortcuts: {
     Save: {
         Keys: { ctrl: true, keyCode: $dyn.ui.KeyCodes.letterS },
         Handler: function (evt) {
@@ -287,9 +297,11 @@ Here is a Form example.
     },
     // Additional code
 }
-</pre>
+```
+
 Here is a Dialogs example that extends the Form control.
-<pre>Shortcuts: $dyn.extendPrototype($dyn.controls.Form.prototype.Shortcuts, {
+```
+Shortcuts: $dyn.extendPrototype($dyn.controls.Form.prototype.Shortcuts, {
     InvokeDefaultButton: {
         Keys: { keyCode: $dyn.ui.KeyCodes.enter },
         Handler: function (evt) {
@@ -297,6 +309,6 @@ Here is a Dialogs example that extends the Form control.
         }
     },
 })
-</pre>
+```
 
 
