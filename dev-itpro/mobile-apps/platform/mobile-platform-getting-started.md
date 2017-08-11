@@ -68,7 +68,7 @@ You're done! Launch the app from your mobile device to see the sample workspace.
 
 ### See Also
 
-[Architecture and design considerations](mobile-platform-architecture.md) 
+[Architecture](mobile-platform-architecture.md) 
 
 [Client APIs reference](client-apis/client-apis-reference.md)
 
