@@ -239,36 +239,40 @@ We recommend that you use the registration mechanism that is described in this s
 
 1. Define a Shortcuts object on the control's prototype. Then define the keyboard shortcuts inside the Shortcuts object. These shortcuts should have the following structure. Make sure that the key code that you're trying to use is defined in the $dyn.ui.KeyCodes object.
 
-```
-Shortcuts: {
-    Name: {
-        Keys: { modifier1: true, modifier2:true, keyCode: $dyn.ui.KeyCodes.* }, 
-        //Only specify the modifiers you need (between alt, ctrl/meta, shift)
-        Handler: function (evt) {
-            // Code to handle shortcut.
-        },
-        // Additional code.
-}
-```
-If more than one key code should apply to your keyboard shortcut, pass in an array of codes, as shown here.
-```
-Keys: {modifier1:true, keyCode:[$dyn.ui.KeyCodes.*, $dyn.ui.KeyCodes.*, ... ] } 
-//Note: If any of these keyCodes match then the handler is called. I.E. The keyCodes in the array are OR'd not AND'd
-```
+    ```
+    Shortcuts: {
+        Name: {
+            Keys: { modifier1: true, modifier2:true, keyCode: $dyn.ui.KeyCodes.* }, 
+            //Only specify the modifiers you need (between alt, ctrl/meta, shift)
+            Handler: function (evt) {
+                // Code to handle shortcut.
+            },
+            // Additional code.
+    }
+    ```
+
+    If more than one key code should apply to your keyboard shortcut, pass in an array of codes, as shown here.
+    
+    ```
+    Keys: {modifier1:true, keyCode:[$dyn.ui.KeyCodes.*, $dyn.ui.KeyCodes.*, ... ] } 
+    //Note: If any of these keyCodes match then the handler is called. I.E. The keyCodes in the array are OR'd not AND'd
+    ```
 2. Add the keydown handler by using the following code.
-```
-keydown: function (event) {
-    $dyn.util.handleShortcuts(this, event);
-},
-```
+
+    ```
+    keydown: function (event) {
+        $dyn.util.handleShortcuts(this, event);
+    },
+    ```
+    
 3. Bind the keyDown handler. The keyDown handler is automatically bound for form objects. Other controls must be manually bound to the keyDown handler, as for any regular binding. 
   
     > [!WARNING]
     > "keyDown" is case sensitive.
   
-```
-<div data-dyn-bind="keyDown: $data.keydown"></div>;
-```
+    ```
+    <div data-dyn-bind="keyDown: $data.keydown"></div>;
+    ```
 
 ### Examples
 Here is a Form example.
