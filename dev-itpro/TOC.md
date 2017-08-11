@@ -69,7 +69,10 @@
 
 ## Cost management
 ### Power BI content pack
-#### [Cost management content pack](analytics/cost-management-content-pack?.md)
+
+#### [Cost management content pack](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+
 ### Predetermined cost
 #### [Costing sheet](/dynamics365/unified-operations/supply-chain/cost-management/costing-sheets?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Costing version](/dynamics365/unified-operations/supply-chain/cost-management/costing-versions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
