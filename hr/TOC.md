@@ -1940,8 +1940,8 @@
 ### [Tracking running average cost per inventory dimension](/dynamics365/unified-operations/supply-chain/cost-management/track-running-average-cost-per-inventory-dimension?toc=dynamics365/unified-operations/retail/toc.json)
 
 ## Human resources
-### [Organize your workforce using departments, jobs, and positions](departments-jobs-positions.md)
-### [Setting up the components of a job](create-job.md)
+### [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/hr/departments-jobs-positions?toc=dynamics365/unified-operations/retail/toc.json)
+### [Setting up the components of a job](/dynamics365/unified-operations/hr/create-job?toc=dynamics365/unified-operations/retail/toc.json)
 
 ## Retail tasks
 ### [ Base price and trade agreements](/dynamics365/unified-operations/retail/tasks/base-price-trade-agreements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
