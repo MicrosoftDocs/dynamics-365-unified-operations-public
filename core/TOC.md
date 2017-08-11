@@ -2353,7 +2353,10 @@
 ## [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Getting started
 #### [Getting started](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-getting-started?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Architecture and design considerations](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-architecture?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Architecture](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-architecture?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Page design guidelines](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/page-design-guidelines?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Action design guidelines](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/action-design-guidelines?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Form design requirements](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/form-design-requirements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Common tasks
 #### [Configure a workspace by using the SysAppWorkspace class](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/mobile-workspace-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Customize the display of a field so that it's clickable](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/make-workspace-field-clickable?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
