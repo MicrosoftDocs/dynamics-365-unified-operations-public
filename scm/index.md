@@ -64,7 +64,9 @@ These short videos help you get started with the new features that are in Micros
 -  [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
 -  [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
 
-### Tech talk 
+### Tech talks
+Most of these discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
+
 -  <a href="https://youtu.be/zotrj3SbCl4">Product Configurator in Microsoft Dynamics AX</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Master Planning - tips and tricks for troubleshooting performance</a>
 -  <a href="https://youtu.be/RLXybx20B5o">Help! MRP is slow!</a>
@@ -75,14 +77,15 @@ These short videos help you get started with the new features that are in Micros
 -  <a href="https://youtu.be/5w1MngVchBA">Labels in the new Microsoft Dynamics AX 2012 R3 warehouse management</a>
 -  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing</a>
 -  <a href="https://youtu.be/y1jrd3A_k70">Subcontracting operations and activities in manufacturing</a>
+-  <a href="https://youtu.be/jgmTgJIgEFQ">Transportation management (TMS) in the new Microsoft Dynamics AX</a>
 
 ## Blogs
 There are many topics about manufacturing and supply chain management on the <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog</a> and <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog </a>. Most of these were written for the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
 
 ## White papers
--  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Cost Accounting hands-on labs</a> 
--  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: Capable to Promise and Kanban Job Scheduling</a> 
--  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">BOM Calculation by Using a Costing Sheet</a>
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Cost accounting hands-on labs</a> 
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean manufacturing: Capable to promise and kanban job scheduling</a> 
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">BOM calculation by using a costing sheet</a>
 
 ## eLearning courses
 For information about Microsoft Dynamics 365 for Finance and Operations training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal</a>. (requires CustomerSource account) 
