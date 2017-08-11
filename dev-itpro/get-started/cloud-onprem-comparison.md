@@ -107,16 +107,9 @@ The following table shows whether each feature is available in:
 | Master planning and forecasting| | | |
 | | Safety stock de-prioritization in master planning and capable to promise (CTP) calculation| Yes | Yes |
 | | Turn off planning processes per company| Yes | Yes |
-| Mobile applications, platform, and framework | | | |
-| | On-hand view app| Yes | Yes |
+| Mobile  | | | |
 | | Mobile framework| Yes | Yes |
-| | Mobile framework - Available for Android| Yes | Yes |
-| | Mobile framework - Available for iOS phone| Yes | Yes |
-| | Mobile framework - Barcode scanner support| Yes | Yes |
-| | Mobile framework - Custom user experience through mobile business logic API| Yes | Yes |
-| | Mobile framework - Languages added| Yes | Yes |
-| | Mobile framework - Web client settings| Yes | No |
-| | Mobility and modern user experience | Yes | ? |
+| | Mobile app (Dynamics 365 for Unified Operations) | Yes | Preview |
 | Office integration| | | |
 | | Open in Excel| Yes | Yes |
 | | Static export to Excel| Yes | Yes |
