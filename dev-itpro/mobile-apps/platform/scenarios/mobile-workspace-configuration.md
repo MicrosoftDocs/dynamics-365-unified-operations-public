@@ -44,7 +44,7 @@ Workspace class, **SysAppWorkspace**, is the starting point to create, configure
 
 + **Workspace metadata classes**; used to inspect and apply server-side business logic to metadata for mobile workspaces. 
 
-[See complete list of server-side APIs](mobile-workspace-server-apis.md)
+[See complete list of server-side APIs](../mobile-workspace-server-apis.md)
 
 
 
