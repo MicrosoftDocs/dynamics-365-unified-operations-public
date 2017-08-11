@@ -7,19 +7,19 @@ author: YuyuScheller
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
 ms.search.form: InventAdjInventOnHand
-# ROBOTS: 
+# ROBOTS:
 audience: Application User
-# ms.devlang: 
+# ms.devlang:
 # ms.reviewer: 2094
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 53231
 ms.assetid: bc1fde9f-5ad9-4339-8ae8-e2839b792eb2
 ms.search.region: Global
@@ -34,6 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+Test!
 
 Use the Adjustment of on-hand inventory page to adjust the cost value of the on-hand inventory quantities after an inventory close process is run.
 
@@ -49,6 +50,3 @@ This item was set up with the first in, first out (FIFO) inventory model, and in
 -   February 5: A quantity of 1 at a cost of USD 13.00
 
 To set the cost of these two items to USD 15.00, use the on-hand adjustment option to adjust the open on-hand quantities as of the last inventory close period. **Note:** The posting date of the on-hand adjustment transaction will be the date of the last inventory close. This date can't be modified.
-
-
-
