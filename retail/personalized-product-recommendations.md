@@ -1,3 +1,4 @@
+
 ---
 # required metadata
 
@@ -35,7 +36,11 @@ ms.dyn365.ops.version: Version 1611, Retail Version
 [!include[banner](includes/banner.md)]
 
 
+> [!NOTE]
+> This feature is currently available on Sandbox & Production (a.k.a High-availability) deployment topologies only. 
+
 In Dynamics 365 for Retail, product recommendations can be displayed on the point of sale (POS) device. The recommendations are items that the customer might be interested in based on their purchase history, items in their wish list, and items that other customers purchased online and in brick-and-mortar stores. For retailers with large catalogs, recommendations help the customer with product discovery. By showcasing products targeted to a customer’s interests and buying habits, product recommendations can help retailers with up-sell and cross-sell, and can enhance customer retention. In Dynamics 365 for Retail, product recommendations are powered by cognitive services and Microsoft Azure machine learning.
+
 
 Scenarios
 ---------
