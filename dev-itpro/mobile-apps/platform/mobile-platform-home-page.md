@@ -72,6 +72,6 @@ Client-side APIs are used in the business logic file which provides an extensibi
 ## Server-side development
 
 + [Workspace class overview](scenarios/mobile-workspace-configuration.md)
-+ [Server APIs (workspace X++ APIs)](mobile-workspace-server-apis.md)
++ [Server APIs (X++)](mobile-workspace-server-apis.md)
 
 
