@@ -109,7 +109,7 @@ The following table shows whether each feature is available in:
 | | Turn off planning processes per company| Yes | Yes |
 | Mobile  | | | |
 | | Mobile framework| Yes | Yes |
-| | Mobile app (Dynamics 365 for Unified Operations) | Yes | Preview |
+| | Dynamics 365 for Unified Operations mobile app and workspaces | Yes | Preview |
 | Office integration| | | |
 | | Open in Excel| Yes | Yes |
 | | Static export to Excel| Yes | Yes |
