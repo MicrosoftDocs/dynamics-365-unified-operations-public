@@ -271,7 +271,7 @@ We recommend that you use the registration mechanism that is described in this s
     
 3. Bind the keyDown handler. The keyDown handler is automatically bound for form objects. Other controls must be manually bound to the keyDown handler, as for any regular binding. 
   
-    > [!WARNING]
+    > [!IMPORTANT]
     > "keyDown" is case sensitive.
   
     ```
