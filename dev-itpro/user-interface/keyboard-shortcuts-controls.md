@@ -254,7 +254,10 @@ If more than one key code should apply to your keyboard shortcut, pass in an arr
 },
 </pre>
 </li>
- 	<li>Bind the keyDown handler. (**Note "keyDown" is case sensitive!**) The keyDown handler is automatically bound for form objects. Other controls must be manually bound to the keyDown handler, as for any regular binding. 
+ 	<li>Bind the keyDown handler. The keyDown handler is automatically bound for form objects. Other controls must be manually bound to the keyDown handler, as for any regular binding. 
+    > [!WARNING]
+    > "keyDown" is case sensitive.
+  
 <pre>&lt;div data-dyn-bind="keyDown: $data.keydown"&gt;&lt;/div&gt;
 </pre>
 </li>
