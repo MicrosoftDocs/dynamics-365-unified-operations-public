@@ -50,7 +50,7 @@ If package application fails, and you want to use the logs, follow these steps.
 3. Select the virtual machine (VM) where the step failed. You can find this information in the **Machine name** column in the **Environment updates** section.
 4. In the VM logs, select the folder that corresponds to the step where the issue occurred. The folder name identifies the step that each folder corresponds to. 
 
-    For example, if the issue occurred in the executing a step, select the  **ExecuteRunbook\*** folder. The step number is highlighted and is the number after the globally unique identifier (GUID).
+    For example, if the issue occurred during the execution of a step, select the  **ExecuteRunbook\*** folder. The step number is highlighted and is the number after the globally unique identifier (GUID).
 
 ## Package application issues
 
