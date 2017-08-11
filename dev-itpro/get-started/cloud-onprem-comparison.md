@@ -55,7 +55,7 @@ The following table shows whether each feature is available in:
 | | Export data to your own data warehouse| Yes | Not yet implemented |
 | | Enable the export of incremental updates to a data entity. | Yes | Not yet implemented |
 | Document management| | | |
-| | Manage attachments| Yes | Yes*<br><br>*See [Configure document management](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management) for details. |
+| | All features| Yes | Yes<br><br>See [Configure document management](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management) for details. |
 | Financial management| Includes all Financial management features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
 | | Accounts payable | Yes | Yes |
 | | Accounts receivable | Yes | Yes |
