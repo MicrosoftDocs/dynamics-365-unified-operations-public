@@ -36,9 +36,11 @@ Workspace class, **SysAppWorkspace**, is the starting point to create, configure
 
 + **Workspace attributes**; used to create pages, tasks, entities, lookups, relationships in order to build mobile workspaces. 
 
-    [Download the sample project for Fleet Managment Mobile App](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp file)
+    [Download the sample project for Fleet Management Mobile App](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp file).
+    *After downloading the file, open Visual Studio on your Operations development environment, then click Dynamics 365 > Import Project, and browse for the downloaded project file. On the same dialog, check "overwrite" and check "create a new solution". After the import is complete, build the solution (or build the Fleet Management model). 
+    To review the example, start by reviewing 'FMReservationManagementWorkspace' class to see all the pages and actions included in the workspace. Use Solution Explorer to find page and task classes, and all the assets included in each. Use the API reference for more details on each API.*
     
-    **Note that a mobile workspace can be created through designer pane stand alone or in combination to X++ attribute APIs.**
+    **Note that a mobile workspace can be created through designer pane stand alone or in combination with X++ attribute APIs.**
 
 + **Workspace metadata classes**; used to inspect and apply server-side business logic to metadata for mobile workspaces. 
 
