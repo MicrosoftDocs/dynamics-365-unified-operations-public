@@ -76,6 +76,8 @@ Client-side APIs are used in the business logic file which provides an extensibi
 
 Workspace attributes and classes are used to create, configure and publish workspaces on the server. 
 
+[Download the sample project for Fleet Managment Mobile App](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp file)
+
 + [Workspace class overview](scenarios/mobile-workspace-configuration.md)
 + [Server APIs (X++)](mobile-workspace-server-apis.md)
 
