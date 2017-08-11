@@ -40,6 +40,8 @@ Workspace class, **SysAppWorkspace**, is the starting point to create, configure
 
 [See complete list of server-side APIs](mobile-workspace-server-apis.md)
 
+[Download the sample project for Fleet Managment Mobile App](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp file)
+
 ## Create a new workspace class
 To use the **SysAppWorkspace** class for your workspace, you must create a new class for the workspace by extending the **SysAppWorkspace** class. You can then use the new class to modify workspace metadata. The new class also provides hooks for life cycle management of the mobile app.
 
