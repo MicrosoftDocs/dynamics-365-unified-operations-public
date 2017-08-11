@@ -176,7 +176,7 @@ The following table shows whether each feature is available in:
 | | Personalization | Yes | Yes |
 | | Support for Right to Left languages| Yes | Yes |
 | | Task guides for help| Yes | No |
-| | Task recording - Ability to insert and re-order steps<br><br>**Note:** You can't save or load task recordings from the BPM library.| Yes | Yes |
+| | Task recording - Ability to insert and re-order steps| Yes | Yes*<br><br>*You can't save or load task recordings from the BPM library. |
 | | User interface| Yes | Yes |
 | | Web client x 3| Yes | Note: Jason said "What is this>" |
 | Finances and Operations support | | | |
