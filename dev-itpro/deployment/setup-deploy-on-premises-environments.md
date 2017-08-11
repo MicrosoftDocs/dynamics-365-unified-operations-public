@@ -3,9 +3,9 @@
 
 title: Set up and deploy on-premises environments
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
-author: kfend
+author: sarvanisathish
 manager: AnnBe
-ms.date: 06/14/2017
+ms.date: 08/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,14 +18,12 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core
+ms.search.scope: Operations, Unified Operations
 # ms.tgt_pltfrm: 
-ms.custom: 55651
-ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sarvanisathish
-ms.search.validFrom: 2016-08-30
+ms.author: sarvanis
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 
 ---
@@ -66,7 +64,7 @@ These components depend on the following system software:
 
 ## Lifecycle Services
 
-Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through the [Enterprise Agreements](https://www.microsoft.com/en-us/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
+Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through the [Enterprise Agreements](https://www.microsoft.com/en-us/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](../lbd-create-lcs-on-prem-project.md).
 
 ## Authentication
 
