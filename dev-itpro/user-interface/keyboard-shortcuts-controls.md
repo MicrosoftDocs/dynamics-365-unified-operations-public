@@ -267,7 +267,7 @@ keydown: function (event) {
     > "keyDown" is case sensitive.
   
 ```
-&lt;div data-dyn-bind="keyDown: $data.keydown"&gt;&lt;/div&gt;
+<div data-dyn-bind="keyDown: $data.keydown"></div>;
 ```
 
 ### Examples
