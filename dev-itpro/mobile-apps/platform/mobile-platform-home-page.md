@@ -70,6 +70,7 @@ Client-side APIs are used in the business logic file which provides an extensibi
 [Download the sample business logic file for Reservation management workspace](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.js file)
 
 + [Client-side design APIs overview](scenarios/client-api-design-overview.md)
++ [Business logic events overview](business-logic-events-overview.md)
 + [Client APIs](client-apis/client-apis-reference.md)
 
 ## Server-side development
