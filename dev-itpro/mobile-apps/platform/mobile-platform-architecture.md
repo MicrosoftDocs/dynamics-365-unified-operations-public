@@ -82,3 +82,10 @@ The mobile app designer lets you select the specific data fields from forms that
 | New workspaces, deleted workspaces, or changes to the name, color, or icon of a workspace | Pull-to-refresh from the main landing page (dashboard) of the app, where you see the list of workspaces.<br>![Pull-to-refresh from the dashboard](media/refreshworkspaces.png) |
 | All other changes (new or changed pages or actions, or changes to business logic)         | Pull-to-refresh from the workspace that has the edited pages or actions.<br>![Pull-to-refresh from a workspace](media/refreshpages.png)                                             |
 
+### See Also
+
+[Page design guidelines](page-design-guidelines.md)
+
+[Action design guidelines](action-design-guidelines.md)
+
+[Form design requirements](form-design-requirements.md)
