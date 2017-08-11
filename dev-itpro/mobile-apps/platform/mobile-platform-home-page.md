@@ -69,16 +69,12 @@ Client-side APIs are used in the business logic file which provides an extensibi
 
 [Download the sample business logic file for Reservation management workspace](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.js file)
 
-+ [Client-side design APIs overview](scenarios/client-api-design-overview.md)
-+ [Client APIs](client-apis/client-apis-reference.md)
++ [**Client-side design APIs overview**](scenarios/client-api-design-overview.md)
++ [**Client APIs**](client-apis/client-apis-reference.md)
 
 ## Server-side development
 
-Workspace attributes and classes are used to create, configure and publish workspaces on the server. The following two categories of APIs are available for server-side development of mobile app;
-
-+ Workspace attributes; used to create pages, tasks, entities, lookups, relationships in order to build mobile workspaces. Note that a + mobile workspace can be created through designer pane and/or through X++ attribute APIs.
-
-+ Workspace metadata classes; used to inspect and apply server-side business logic to metadata for mobile workspaces.
+Workspace attributes and classes are used to create, configure and publish workspaces on the server. 
 
 + [**Workspace class overview**](scenarios/mobile-workspace-configuration.md)
 + [**Server APIs (X++)**](mobile-workspace-server-apis.md)
