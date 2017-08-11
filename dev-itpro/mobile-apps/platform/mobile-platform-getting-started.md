@@ -70,12 +70,6 @@ You're done! Launch the app from your mobile device to see the sample workspace.
 
 [Architecture](mobile-platform-architecture.md) 
 
-[Page design guidelines](page-design-guidelines.md)
-
-[Action design guidelines](action-design-guidelines.md)
-
-[Form design requirements](form-design-requirements.md)
-
 [Client APIs reference](client-apis/client-apis-reference.md)
 
 [Server APIs reference](mobile-workspace-server-apis.md)
