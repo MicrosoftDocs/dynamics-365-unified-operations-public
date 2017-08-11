@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 3
 
 Workspace class, **SysAppWorkspace**, is the starting point to create, configure and publish workspaces on the server. The following two categories of APIs are available for use in sysAppWorkspace;
 
-+ **Workspace attributes**; used to create pages, tasks, entities, lookups, relationships in order to build mobile workspaces. *Note that a mobile workspace can be created through designer pane and/or through X++ attribute APIs.*
++ **Workspace attributes**; used to create pages, tasks, entities, lookups, relationships in order to build mobile workspaces. *Note that a mobile workspace can be created through designer pane stand alone or in combination to X++ attribute APIs.*
 
 + **Workspace metadata classes**; used to inspect and apply server-side business logic to metadata for mobile workspaces. 
 
