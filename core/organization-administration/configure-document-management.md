@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -104,8 +104,8 @@ Here are some other configuration options to consider, although these options ar
 
 ## Accessing document management attachments 
 
-Document management appears to users as the Attach button (keyboard shortcut: Ctrl+Shift+A) at the top of most forms that contain data sources. Clicking the Attach button will open the Attachments form in the context of the data source of the currently selected control on the form. 
-The Attach button will also show a count of attachments for the currently selected record, so the user can see whether there are attachments on the current record without needing to open that form. The count will show 0-9 and then 9+ to limit the performance impact and visual noise of determining and showing larger counts.
+Document management appears to users as the **Attach** button (keyboard shortcut: Ctrl+Shift+A) at the top of most forms that contain data sources. Clicking the **Attach** button will open the **Attachments** form in the context of the data source of the currently selected control on the form. 
+The **Attach** button will also show a count of attachments for the currently selected record, so the user can see whether there are attachments on the current record without needing to open that form. The count will show 0-9 and then 9+ to limit the performance impact and visual noise of determining and showing larger counts.
 
 ## Frequently asked questions
 
