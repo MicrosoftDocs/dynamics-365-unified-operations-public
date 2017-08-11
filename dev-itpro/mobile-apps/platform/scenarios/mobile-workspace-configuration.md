@@ -31,7 +31,13 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 # Workspace class overview
-You can use the **SysAppWorkspace** class to configure and publish workspaces on the server.
+Workspace class, **SysAppWorkspace**, is used to create, configure and publish workspaces on the server. The following two categories of APIs are available for use in workspace class;
+
++ **Workspace attributes**; used to create pages, tasks, entities, lookups, relationships and etc, in order to build mobile workspaces. *Note that a mobile workspace can be created through designer pane and/or X++ APIs.*
+
++ **Workspace metadata classes**; used to inspect and apply server side business logic to metadata for mobile workspaces. 
+
+    [Visit complete list of workspace attributes and metadata classes available](mobile-workspace-server-apis.md)
 
 ## Create a new workspace class
 To use the **SysAppWorkspace** class for your workspace, you must create a new class for the workspace by extending the **SysAppWorkspace** class. You can then use the new class to modify workspace metadata. The new class also provides hooks for life cycle management of the mobile app.
@@ -122,10 +128,4 @@ When a mobile workspace is stored as an AOT resource, you can't delete it by usi
     ![Full build](media/workspace-api/FullBuild.png)
 
 4. When the build is completed, reopen the mobile app designer, and verify that the workspace is no longer there.
-
-## Workspace metadata classes
-You can use the workspace metadata classes to inspect and update metadata that is related to the mobile workspace.
-
-## Workspace attributes
-You can use the workspace attributes to create pages, tasks, entities, lookups, etc 
 
