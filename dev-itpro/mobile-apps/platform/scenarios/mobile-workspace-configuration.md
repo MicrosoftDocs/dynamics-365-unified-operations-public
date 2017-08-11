@@ -40,7 +40,7 @@ Workspace class, **SysAppWorkspace**, is the starting point to create, configure
     *After downloading the file, open Visual Studio on your Operations development environment, then click Dynamics 365 > Import Project, and browse for the downloaded project file. On the same dialog, check "overwrite" and check "create a new solution". After the import is complete, build the solution (or build the Fleet Management model). 
     To review the example, start by reviewing 'FMReservationManagementWorkspace' class to see all the pages and actions included in the workspace. Use Solution Explorer to find page and task classes, and all the assets included in each. Use the API reference for more details on each API.*
     
-    **Note that a mobile workspace can be created through designer pane stand alone or in combination with X++ attribute APIs.**
+    **Note that a mobile workspace can be created through designer pane, using X++ attribute APIs or combination of both. See topic 'Use the workspace class to publish workspaces from AOT resources' below for more details on importing mobile app metadata from designer to AOT. Sample above is a complete mobile app built using X++ attribute APIs.**
 
 + **Workspace metadata classes**; used to inspect and apply server-side business logic to metadata for mobile workspaces. 
 
