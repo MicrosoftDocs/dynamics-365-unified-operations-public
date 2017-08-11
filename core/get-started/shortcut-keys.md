@@ -39,17 +39,18 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 
 **Note:** The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
 
+
 ## Action shortcuts
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | **To do this**                                    | **Press**                        |
 | Open action search                                | Ctrl+’ or Alt+Q                  |
-| Move to the standard action pane                  | Ctrl+F6                          |
+| Move to the standard action pane                  | Alt+M,A or Ctrl+F6               |
 | Open a tab in the action pane or a menu           | Enter or Space or Alt+Down Arrow |
 | Move to next/previous option in a menu            | Down Arrow / Up Arrow            |
 | Close a tab in the action pane or a menu          | Esc                              |
 | Simulate a right-click                            | Shift+F10                        |
-| Open the Finance and Operations context menu | Ctrl+F10                         |
+| Open the Finance and Operations context menu      | Ctrl+F10                         |
 | Execute the default button on a form/dialog       | Alt+Enter                        |
 | Click a button or tile                            | Enter or Space                   |
 | View refresh information for a count tile         | Alt+Up Arrow                     |
@@ -64,13 +65,17 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | Move between dates in the date picker | Ctrl+Arrows                               |
 | Move to the next/previous month       | Page Down / Page Up                       |
 | Move to the next/previous year        | Ctrl+Shift+Page Down / Ctrl+Shift+Page Up |
+| Move to today                         | Ctrl+Home                                 |
+| Pick today's date                     | T                                         |
+| Clear the selected date               | C                                         |
+| Pick Never (or the max date)          | N                                         |
 
  
 
 ## FactBox shortcuts
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
-| Open the FactBox pane (or move focus to the FactBox pane if it is already open) | Ctrl+F2                                   |
+| Open the FactBox pane (or move focus to the FactBox pane if it is already open) | Alt+M,B or Ctrl+F2                        |
 | Close the FactBox pane (with focus in the FactBox pane)                         | Esc                                       |
 | Move to the next/previous FactBox (with focus in the FactBox pane)              | Alt+Shift+Down Arrow / Alt+Shift+Up Arrow |
 | Move to the &lt;n&gt;th FactBox (with focus in the FactBox pane)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
@@ -80,38 +85,39 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
  
 
 ## Filtering shortcuts
-|                                                                                                                     |               |
-|---------------------------------------------------------------------------------------------------------------------|---------------|
-| **To do this**                                                                                                      | **Press**     |
-| Open grid filtering for the current column                                                                          | Ctrl+G        |
-| Close grid filtering for the current column                                                                         | Esc           |
-| Open the Filter pane (or switch focus between the Filter pane and the main form if the Filter pane is already open) | Ctrl+F3       |
-| Close the Filter pane (with focus in the Filter pane)                                                               | Esc           |
-| Open advanced filtering/sort                                                                                        | Ctrl+Shift+F3 |
+|                                                                                                                     |                          |
+|---------------------------------------------------------------------------------------------------------------------|--------------------------|
+| **To do this**                                                                                                      | **Press**                |
+| Open grid filtering for the current column                                                                          | Ctrl+G                   |
+| Close grid filtering for the current column                                                                         | Esc                      |
+| Open the Filter pane (or switch focus between the Filter pane and the main form if the Filter pane is already open) | Alt+M,F or Ctrl+F3       |
+| Close the Filter pane (with focus in the Filter pane)                                                               | Esc                      |
+| Open advanced filtering/sort                                                                                        | Ctrl+Shift+F3            |
 
  
 
 ## Form shortcuts
-|                                                                                                                                 |                   |
-|---------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| **To do this**                                                                                                                  | **Press**         |
-| Create a new record                                                                                                             | Alt+N             |
-| Delete a record                                                                                                                 | Alt+Del or Alt+F9 |
-| Save record                                                                                                                     | Alt+S or Ctrl+S   |
-| Revert (restore)                                                                                                                | Ctrl+Shift+F5     |
-| Data refresh                                                                                                                    | Shift+F5          |
-| Move to the visible first field on the form                                                                                     | Alt+Shift+F       |
-| Toggle edit mode                                                                                                                | F2                |
-| Attach a document                                                                                                               | Ctrl+Shift+A      |
-| Export to Excel                                                                                                                 | Ctrl+Shift+E      |
-| Move to the previous record (outside a grid)                                                                                    | Ctrl+Up Arrow     |
-| Move to the next record (outside a grid)                                                                                        | Ctrl+Down Arrow   |
-| Move to the first record (outside a grid)                                                                                       | Ctrl+Home         |
-| Move to the last record (outside a grid)                                                                                        | Ctrl+End          |
-| Open the navigation list on Details forms (or switch focus between the navigation list and the main form if it is already open) | Ctrl+F8           |
-| Close the navigation list on Details form (with focus in the navigation list)                                                   | Esc               |
-
+|                                                     |                   |
+|-----------------------------------------------------|-------------------|
+| **To do this**                                      | **Press**         |
+| Create a new record                                 | Alt+N             |
+| Delete a record                                     | Alt+Del or Alt+F9 |
+| Save record                                         | Alt+S or Ctrl+S   |
+| Revert (restore)                                    | Ctrl+Shift+F5     |
+| Data refresh                                        | Shift+F5          |
+| Move to the visible first field on the form         | Alt+Shift+F       |
+| Toggle edit mode                                    | F2                |
+| Attach a document                                   | Ctrl+Shift+A      |
+| Export to Excel                                     | Ctrl+Shift+E      |
+| Move to the previous record (outside a grid)        | Ctrl+Up Arrow     |
+| Move to the next record (outside a grid)            | Ctrl+Down Arrow   |
+| Move to the first record (outside a grid)           | Ctrl+Home         |
+| Move to the last record (outside a grid)            | Ctrl+End          |
+| Close the form (click Back)                         | Esc               |
+| Close the form with explicit save                   | Shift+Esc         |
+| Close the form discarding any unsaved changes       | Alt+Shift+Q       |
  
+
 
 ## Form navigation shortcuts
 |                                                     |                                              |
@@ -119,20 +125,19 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | **To do this**                                      | **Press**                                    |
 | Move to the next/previous field                     | Tab / Shift+Tab                              |
 | Move to the next/previous tab                       | Alt+Shift+Right Arrow / Alt+Shift+Left Arrow |
+| Move to the &lt;n&gt;th tab                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Move to the next/previous FastTab                   | Alt+Shift+Down Arrow / Alt+Shift+Up Arrow    |
 | Move to the &lt;n&gt;th FastTab                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Move to the &lt;n&gt;th tab                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Move to the next/previous blade (vertical tab)      | Alt+Shift+Right Arrow / Alt+Shift+Left Arrow |
+| Move to the &lt;n&gt;th blade (vertical tab)        | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Expand a FastTab (with focus on the FastTab header) | Space or Enter                               |
 | Collapse the current FastTab                        | Alt+0                                        |
 | Switch to grid view                                 | Ctrl+Shift+G                                 |
 | Switch to details view                              | Ctrl+Shift+D                                 |
 | Switch to header view                               | Ctrl+Shift+H                                 |
 | Switch to lines view                                | Ctrl+Shift+L                                 |
-| Close the form (click Back)                         | Esc                                          |
-| Close the form with explicit save                   | Shift+Esc                                    |
-| Close the form discarding any unsaved changes       | Alt+Shift+Q                                  |
 
- 
+
 
 ## Grid shortcuts
 |                                                                                                               |                                 |
@@ -153,17 +158,18 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
  
 
 ## Input control shortcuts
-|                                                            |                               |
-|------------------------------------------------------------|-------------------------------|
-| **To do this**                                             | **Press**                     |
-| Enter the session date in a date field                     | D+Tab                         |
-| Enter the current date in a date field                     | T+Tab                         |
-| Open lookup, combo box, date picker, drop dialog           | Alt+Down Arrow                |
-| Close lookup, combo box, date picker, drop dialog          | Esc                           |
-| Move focus into a lookup (when the lookup is already open) | Alt+Down Arrow                |
-| Open the control's enhanced preview                        | Alt+Up Arrow                  |
-| Select text in the current field                           | Ctrl+A                        |
-| Enter/leave the text area in an HTML editor control        | Alt+Down Arrow / Alt+Up Arrow |
+|                                                                             |                               |
+|-----------------------------------------------------------------------------|-------------------------------|
+| **To do this**                                                              | **Press**                     |
+| Enter the session date in a date field                                      | D+Tab                         |
+| Enter the current date in a date field                                      | T+Tab                         |
+| Open lookup, combo box, date picker, drop dialog                            | Alt+Down Arrow                |
+| Close lookup, combo box, date picker, drop dialog                           | Esc                           |
+| Move focus into a lookup (when the lookup is already open)                  | Alt+Down Arrow                |
+| Open the control's enhanced preview                                         | Alt+Up Arrow                  |
+| Select text in the current field                                            | Ctrl+A                        |
+| Enter/leave the text area in an HTML editor control                         | Alt+Down Arrow / Alt+Up Arrow |
+| Switch focus beween the text area and the toolbar in an HTML editor control | F6                            |
 
  
 
@@ -177,19 +183,57 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
  
 
 ## Navigation shortcuts
-|                                                                           |                 |
-|---------------------------------------------------------------------------|-----------------|
-| **To do this**                                                            | **Press**       |
-| Go to the dashboard                                                       | Alt+Shift+Home  |
-| Go to the navigation bar                                                  | Alt+Shift+F1    |
-| Go to the navigation pane                                                 | Alt+F1          |
-| Favorite/un-favorite a form (with focus on a form in the navigation pane) | Shift+F         |
-| Go to the company picker                                                  | Ctrl+Shift+O    |
-| Go to navigation search                                                   | Ctrl+/ or Alt+G |
-| Open the help pane                                                        | Ctrl+?          |
-| Open the trace parser                                                     | Alt+Shift+T     |
+|                                                                               |                            |
+|-------------------------------------------------------------------------------|----------------------------|
+| **To do this**                                                                | **Press**                  |
+| Go to the dashboard                                                           | Alt+Shift+Home             |
+| Move to the navigation bar                                                    | Alt+M,N or Alt+Shift+F1    |
+| Move to the company picker                                                    | Ctrl+Shift+O               |
+| Search for a page                                                             | Ctrl+/ or Alt+G            |
+| Open the help pane                                                            | Ctrl+?                     |
+| Open the trace parser                                                         | Alt+Shift+T                |
+| Move to the navigation pane                                                   | Alt+F1                     |
+| Favorite/un-favorite a form (with focus on a form in the navigation pane)     | Shift+F                    |
+| Move to the standrd action pane                                               | Alt+M,A or Ctrl+F6         |
+| Move to the Filter pane (which may include opening it)                        | Alt+M,F or Ctrl+F3         |
+| Move focus to the page content (with focus in the navigation list)            | Alt+M,M or Ctrl+F3         |
+| Move to the navigation list on Details form (which may include opening it)    | Alt+M,S or Ctrl+F8         |
+| Move focus to the page content (with focus in the navigation list)            | Alt+M,M or Ctrl+F8         |
+| Close the navigation list on Details form (with focus in the navigation list) | Esc                        |
+| Move to the main page content (with focus in another pane)                    | Alt+M,M                    |
+| Move to the FactBox pane (which may include opening it)                       | Alt+M,B or Ctrl+F2         |
 
- 
+
+
+## Personalization shortcuts
+|                                                                                                                        |                                     |
+|------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| **To do this**                                                                                                         | **Press**                           |
+| Transition the page into personalization mode                                                                          | Ctrl+Shift+P                        |
+| Use the Select tool (when in personalization mode)                                                                     | S                                   |
+| Open the selected control's quick personalization dialog (when using the Select tool)                                  | Space or Enter                      |
+| Use the Move tool (when in personalization mode)                                                                       | M                                   |
+| Select the current control as the one to move (when using the Move tool and no control has been selected to move yet)  | Space or Enter                      |
+| Deselect the control to move (when using the Move tool)                                                                | Esc                                 |
+| Move to the next candidate position for moving the selected control (when using the Move tool)                         | Tab or Right Arrow or Down Arrow    |
+| Move to the previous candidate position for moving the selected control (when using the Move tool)                     | Shift+Tab or Left Arrow or Up Arrow |
+| Use the Hide tool (when in personalization mode)                                                                       | H                                   |
+| Switch whether the current control is visible or hidden (when using the Hide tool)                                     | Space or Enter                      |
+| Use the Skip tool (when in personalization mode)                                                                       | K                                   |
+| Switch whether the current control is in the tab sequence or not (when using the Skip tool)                            | Space or Enter                      |
+| Use the Edit tool (when in personalization mode)                                                                       | E                                   |
+| Switch whether the current control is editable or read-only (when using the Edit tool)                                 | Space or Enter                      |
+| Use the Summary tool (when in personalization mode)                                                                    | U                                   |
+| Switch whether the current control is a summary field in the current fast tab or not (when using the Summary tool)     | Space or Enter                      |
+| Use the Add tool (when in personalization mode)                                                                        | A                                   |
+| Select the control whose container will be used to insert the new fields (when using the Add tool)                     | Space or Enter                      |
+| Import a personalization (when in personalization mode)                                                                | I                                   |
+| Export a personalization (when in personalization mode)                                                                | X                                   |
+| Clear this page's personalizations (when in personalization mode)                                                      | Ctrl+C                              |
+| Move focus between the personalization toolbar and the page (when in personalization mode)                             | T                              |
+| Exit personalization mode (when in personalization mode)                                                               | Esc                                 |
+
+
 
 ## Segmented entry shortcuts
 |                                                                                                                         |                                  |
@@ -206,8 +250,4 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | Move up/down a row in the lookup                                                                                        | Up Arrow / Down Arrow            |
 | Move up/down a page in the lookup                                                                                       | Page Up / Page Down              |
 | Move to the top/bottom of the lookup                                                                                    | Home / End                       |
-
- 
-
-
 
