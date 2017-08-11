@@ -82,7 +82,7 @@ The following table shows whether each feature is available in:
 | | Direct deposit| Yes | No |
 | Intelligence| | | |
 | | Financial reporting | Yes | Yes|
-| | Electronic reporting (ER)| Yes | Yes*<br><br>*See the limitations documented in [Features not implemented in on-premises deployments](features-not-implemented-on-prem.md) |
+| | Electronic reporting (ER)| Yes | Yes*<br><br>*See the limitations documented in [Features not implemented in on-premises deployments](features-not-implemented-on-prem.md). |
 | | Business documents with SSRS | Yes | Yes |
 | | Author reports in Power BI Desktop| Yes | Yes |
 | | Integration with PowerBI.com| Yes | No |
