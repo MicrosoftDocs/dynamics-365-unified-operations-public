@@ -38,7 +38,7 @@ Workspace class, **SysAppWorkspace**, is the starting point to create, configure
 
 + **Workspace metadata classes**; used to inspect and apply server-side business logic to metadata for mobile workspaces. 
 
-[See complete list of workspace attributes and metadata classes available](mobile-workspace-server-apis.md)
+[See server-side APIs](mobile-workspace-server-apis.md)
 
 ## Create a new workspace class
 To use the **SysAppWorkspace** class for your workspace, you must create a new class for the workspace by extending the **SysAppWorkspace** class. You can then use the new class to modify workspace metadata. The new class also provides hooks for life cycle management of the mobile app.
