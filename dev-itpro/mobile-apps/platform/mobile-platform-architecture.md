@@ -57,6 +57,9 @@ At any time, you can pull-to-refresh in the mobile app to make the mobile app up
 ## Using the mobile app designer
 The mobile app designer lets you select the specific data fields from forms that should appear in the mobile app. 
 
+### Notes
+A mobile workspace can be created through designer, using X++ attribute APIs or combination of both. See 
+
 ![Mobile app designer](media/mobileappdesigner.png)
 
 1.  Open the Finance and Operations client. 
