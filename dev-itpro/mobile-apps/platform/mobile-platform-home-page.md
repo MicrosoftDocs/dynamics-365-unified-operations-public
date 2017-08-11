@@ -37,7 +37,10 @@ Microsoft Dynamics 365 Unified Operations includes support for mobile apps. You 
 ## Getting started
 
 + [Getting started](mobile-platform-getting-started.md) 
-+ [Architecture and design considerations](mobile-platform-architecture.md) 
++ [Architecture](mobile-platform-architecture.md) 
++ [Page design guidelines](page-design-guidelines.md)
++ [Action design guidelines](action-design-guidelines.md)
++ [Form design requirements](form-design-requirements.md)
 
 We also have a video series about creating a mobile app:
 
