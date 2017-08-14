@@ -175,8 +175,8 @@ The following table shows whether each feature is available in:
 | | Improved viewing experience for application reports| Yes | Yes |
 | | Personalization | Yes | Yes |
 | | Support for Right to Left languages| Yes | Yes |
-| | Task guides for help| Yes | No |
-| | Task recording - Ability to insert and re-order steps| Yes | Yes*<br><br>*You can't save or load task recordings from the BPM library. |
+| | Task recorder | Yes | Yes |
+| | Task recorder - Save or load task recordings from the BPM library| Yes | No |
 | | User interface| Yes | Yes |
 | Finances and Operations support | | | |
 | | Ideas portal| Yes | ? |
