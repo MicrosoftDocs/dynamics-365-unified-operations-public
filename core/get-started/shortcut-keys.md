@@ -132,10 +132,10 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | **To do this**                                                                                                | **Press**                       |
 | Move to the next/previous column                                                                              | Tab / Shift+Tab                 |
 | Move to the next/previous row                                                                                 | Down Arrow / Up Arrow           |
-| Move to the next/previous row without selecting (Note: This shortcut applies to multi-select scenarios only.) | Ctrl+Up Arrow / Ctrl+Down Arrow |
-| Select/clear the current row (Note: This shortcut applies to multi-select scenarios only.)                    | Ctrl+Space / Ctrl+Click         |
-| Add the next/previous row to the selected set (Note: This shortcut applies to multi-select scenarios only.)   | Shift+Space                     |
-| Add a range of rows to the selected set (Note: This shortcut applies to multi-select scenarios only.)         | Shift+Click                     |
+| Move to the next/previous row without selecting<br><br>**Note:** This shortcut applies to multi-select scenarios only. | Ctrl+Up Arrow / Ctrl+Down Arrow |
+| Select/clear the current row<br><br>**Note:** This shortcut applies to multi-select scenarios only.                    | Ctrl+Space / Ctrl+Click         |
+| Add the next/previous row to the selected set<br><br>**Note:** This shortcut applies to multi-select scenarios only.   | Shift+Space                     |
+| Add a range of rows to the selected set<br><br>**Note:** This shortcut applies to multi-select scenarios only.         | Shift+Click                     |
 | Go to the next/previous page of data                                                                          | Page Up / Page Down             |
 | Create a new row at the bottom of the grid                                                                    | Down Arrow (from the last row)  |
 | Select or clear all rows                                                                                      | Ctrl+Shift+M                    |
