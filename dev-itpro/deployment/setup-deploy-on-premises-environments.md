@@ -308,7 +308,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 3. Start Windows PowerShell in elevated mode, change the directory to the **infrastructure** folder, and run the following commands.
 
     ```
-    .\Import-Module D365FO-OP\D365FO-OP.psd1
+    Import-Module .\D365FO-OP\D365FO-OP.psd1
     .\New-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
