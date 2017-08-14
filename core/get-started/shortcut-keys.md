@@ -39,7 +39,6 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 
 **Note:** The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
 
-
 ## Action shortcuts
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
@@ -55,8 +54,6 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | Click a button or tile                            | Enter or Space                   |
 | View refresh information for a count tile         | Alt+Up Arrow                     |
 
- 
-
 ## Date picker shortcuts
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
@@ -70,8 +67,6 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | Clear the selected date               | C                                         |
 | Pick Never (or the max date)          | N                                         |
 
- 
-
 ## FactBox shortcuts
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
@@ -82,8 +77,6 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | Expand a FactBox (with focus on the FactBox header)                             | Space or Enter                            |
 | Collapse the current FactBox                                                    | Alt+0                                     |
 
- 
-
 ## Filtering shortcuts
 |                                                                                                                     |                          |
 |---------------------------------------------------------------------------------------------------------------------|--------------------------|
@@ -92,9 +85,7 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | Close grid filtering for the current column                                                                         | Esc                      |
 | Open the Filter pane (or switch focus between the Filter pane and the main form if the Filter pane is already open) | Alt+M,F or Ctrl+F3       |
 | Close the Filter pane (with focus in the Filter pane)                                                               | Esc                      |
-| Open advanced filtering/sort                                                                                        | Ctrl+Shift+F3            |
-
- 
+| Open advanced filtering/sort                                                                                        | Ctrl+Shift+F3            | 
 
 ## Form shortcuts
 |                                                     |                   |
@@ -135,8 +126,6 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | Switch to header view                               | Ctrl+Shift+H                                 |
 | Switch to lines view                                | Ctrl+Shift+L                                 |
 
-
-
 ## Grid shortcuts
 |                                                                                                               |                                 |
 |---------------------------------------------------------------------------------------------------------------|---------------------------------|
@@ -153,8 +142,6 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | Move to the first record                                                                                      | Ctrl+Home                       |
 | Move to the last record                                                                                       | Ctrl+End                        |
 
- 
-
 ## Input control shortcuts
 |                                                                             |                               |
 |-----------------------------------------------------------------------------|-------------------------------|
@@ -169,16 +156,12 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | Enter/leave the text area in an HTML editor control                         | Alt+Down Arrow / Alt+Up Arrow |
 | Switch focus beween the text area and the toolbar in an HTML editor control | F6                            |
 
- 
-
 ## Messaging shortcuts
 |                          |               |
 |--------------------------|---------------|
 | **To do this**           | **Press**     |
 | Go to the Message Center | Ctrl+Shift+F7 |
 | Go to the Message Bar    | Ctrl+F7       |
-
- 
 
 ## Navigation shortcuts
 |                                                                               |                            |
@@ -200,8 +183,6 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | Close the navigation list on Details form (with focus in the navigation list) | Esc                        |
 | Move to the main page content (with focus in another pane)                    | Alt+M,M                    |
 | Move to the FactBox pane (which may include opening it)                       | Alt+M,B or Ctrl+F2         |
-
-
 
 ## Personalization shortcuts
 |                                                                                                                        |                                     |
@@ -230,8 +211,6 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | Clear this page's personalizations (when in personalization mode)                                                      | Ctrl+C                              |
 | Move focus between the personalization toolbar and the page (when in personalization mode)                             | T                              |
 | Exit personalization mode (when in personalization mode)                                                               | Esc                                 |
-
-
 
 ## Segmented entry shortcuts
 |                                                                                                                         |                                  |
