@@ -81,8 +81,9 @@ The following table shows whether each feature is available in:
 | | Direct deposit| Yes | No |
 | Intelligence| | | |
 | | Financial reporting | Yes | Yes|
-| | Electronic reporting (ER)| Yes | Yes|
+| | Electronic reporting (ER) - core functionality| Yes | Yes|
 | | Electronic reporting (ER) - Integration with LCS | Yes | No|
+| | Electronic reporting (ER) - Integration with SharePoint | Yes | No|
 | | Business documents with SSRS | Yes | Yes |
 | | Author reports in Power BI Desktop| Yes | Yes |
 | | Integration with PowerBI.com| Yes | No |
