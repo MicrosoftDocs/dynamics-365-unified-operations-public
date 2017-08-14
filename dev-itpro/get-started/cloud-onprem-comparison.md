@@ -149,7 +149,6 @@ The following table shows whether each feature is available in:
 | Service management| | | |
 | Supply chain management| | | |
 | Transportation management| | | |
-| Travel and expense| | | |
 | Vendor collaboration| | | |
 | Warehouse management| | | |
 | | Batch and license plate confirmation | Yes | Yes |
