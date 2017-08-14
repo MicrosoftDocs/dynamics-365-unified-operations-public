@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Sales invoice headers and lines
+# Synchronize sales invoice headers and lines from Finance and Operations to Sales
 
 [!include[banner](../includes/banner.md)]
 
