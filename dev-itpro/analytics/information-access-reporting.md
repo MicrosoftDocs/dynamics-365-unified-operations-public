@@ -5,7 +5,7 @@ title: Information access and reporting in Finance and Operations
 description: This topic explains the various reporting options available as part of the Finance and Operations platform.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,12 +37,12 @@ ms.dyn365.ops.version: Platform update 1
 
 This topic explains the various reporting options available as part of the Finance and Operations platform.
 
-Why information access is important?
+Why information access is important
 ------------------------------------
 
 Information access is an essential part of an ERP solution and represents a significant portion of the user engagement with the system. Consider the numerous methods of capturing information related to daily activities and the level of investments required to manage the data. Employees depend on logical interpretations of massive amounts of data to stay on top of their daily tasks. Out of the box the Finance and Operations platform provides a collection of reporting solutions to address the various information access needs of an ERP solution. In an increasingly competitive environment, mergers and acquisitions seem to occur as often as the change in seasons. More than ever before, businesses today are finding ways to expand their global reach to attract more customers. To be successful, they must adapt legacy solutions used to communicate with customers and prepare for the enforcement of regional regulatory requirements associated with new markets. Beyond the primitive functions provided by Microsoft Azure – compute, networking, storage, and authentication – the Finance and Operations platform provides tools to manage resources for organizations that span in size from small businesses to global enterprise conglomerates. These tools are designed with flexibility in mind, to accommodate a dynamic world of business.
 
-## What is a 'report' in Finance and Operations?
+## What is a "report" in Finance and Operations?
 A *report* can be defined simply as a structured presentation of data. Under ideal circumstances, reports materialize data in such a way that it allows the user to make informed decisions. Finance and Operations supports a broad spectrum of information access scenarios: cross company all-up financial reporting; analytical dashboards and tiles; electronically transferable funds; customer sales invoices; checks and tax documents; and many more. Examples of integrated report scenarios that involve the consumption of business data include:
 
 -   **Native controls** including list pages, grid controls, and chart visualizations.

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure a workspace by using the SysAppWorkspace class
+title: Workspace class overview
 description: This topic explains how you can use the SysAppWorkspace class to configure and publish workspaces on the server. 
 author: makhabaz
 manager: AnnBe
@@ -30,8 +30,23 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Configure a workspace by using the SysAppWorkspace class
-You can use the **SysAppWorkspace** class to configure and publish workspaces on the server.
+# Workspace class overview
+
+Workspace class, **SysAppWorkspace**, is the starting point to create, configure and publish workspaces on the server. The following two categories of APIs are available for use in sysAppWorkspace;
+
++ **Workspace attributes**; used to create pages, tasks, entities, lookups, relationships in order to build mobile workspaces. 
+
+    [Download the sample project for Fleet Management Mobile App](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp file).
+    *After downloading the file, open Visual Studio on your Operations development environment, then click Dynamics 365 > Import Project, and browse for the downloaded project file. On the same dialog, check "overwrite" and check "create a new solution". After the import is complete, build the solution (or build the Fleet Management model). 
+    To review the example, start by reviewing 'FMReservationManagementWorkspace' class to see all the pages and actions included in the workspace. Use Solution Explorer to find page and task classes, and all the assets included in each. Use the API reference for more details on each API.*
+    
+    **A mobile workspace can be created through designer pane, using X++ attribute APIs or a combination of both. See topic 'Use the workspace class to publish workspaces from AOT resources' below for more details on importing mobile app metadata from designer to AOT. Sample above is a complete mobile app built using X++ attribute APIs.**
+
++ **Workspace metadata classes**; used to inspect and apply server-side business logic to metadata for mobile workspaces. 
+
+[See complete list of server-side APIs](../mobile-workspace-server-apis.md)
+
+
 
 ## Create a new workspace class
 To use the **SysAppWorkspace** class for your workspace, you must create a new class for the workspace by extending the **SysAppWorkspace** class. You can then use the new class to modify workspace metadata. The new class also provides hooks for life cycle management of the mobile app.
@@ -51,32 +66,6 @@ Follow these steps to create a new workspace class for your workspace.
 3. Optional: If your workspace is an Application Object Tree (AOT) resource, provide the AOT resource name as the second parameter for the **SysAppWorkspaceAttribute** constructor.
 
     ![AOT resource name in the workspace class](media/workspace-api/WorkspaceClassWithAOTResource.png)
-
-## Workspace life cycle methods
-The workspace class provides the following methods that can be overridden.
-
-### getWorkspaceMetadata
-The **getWorkspaceMetadata** method is called to retrieve workspace metadata. You can override this method to update the workspace metadata. For more information, see the "Workspace metadata classes" section later in this topic. Here are some of the ways that you can use the metadata:
-
-- Update the workspace, page, action, and control metadata.
-- Provide custom configurations.
-- Hide pages, actions, and controls in a workspace.
-- Mark fields as mandatory.
-
-### isWorkspaceHidden
-The **isWorkspaceHidden** method can be overridden to hide or show the workspace on the mobile client. You can use custom parameters to determine whether the workspace must be hidden for a specific user. For more information, see [Secure a mobile app workspace](secure-mobile-workspace.md).
-
-### onBeginJob
-The **onBeginJob** method is called before a job request is run on the server. You can override this method to change the request parameters. You have access to the page or action name that the job request is for. By using the **onBeginJob** method, you can perform these tasks:
-
-- Change the filter context for the job. For example, if a scenario requires that one record be sent, you can change the filter context to that record.
-- You can change the job values. Job values are sent for a job that is initiated by actions on the mobile client. You can change or inspect values that are sent to start a job on the server.
-
-### onEndJob
-The **onEndJob** method is called after a job has been run on the server. You can override this method to change the result that is sent back to mobile client. You have access to the page or action name that the job result is for. By using the **onEndJob** method, you can perform these tasks:
-
-- Change the job result. For example, you can change the values or add a new set of values.
-- You can ignore the values that are returned from the server and send some other values back instead.
 
 ## Use the workspace class to publish workspaces from AOT resources
 Workspaces can reside in the database. They can also reside in the AOT as resources. To provide visibility into workspaces that are stored in AOT resources, you must create a workspace class and point it to the name of the AOT resource that contains the workspace. Workspaces that are stored as AOT resources can't be edited or deleted by using the mobile app designer. Those workspace can only be exported.
@@ -149,39 +138,3 @@ When a mobile workspace is stored as an AOT resource, you can't delete it by usi
 
 4. When the build is completed, reopen the mobile app designer, and verify that the workspace is no longer there.
 
-## Workspace metadata classes
-You can use the workspace metadata classes to inspect and update metadata that is related to the mobile workspace.
-
-### SysAppWorkspaceMetadata
-The **SysAppWorkspaceMetadata** class represents the whole mobile workspace metadata. You can use this class to perform the following tasks:
-
-- Update the workspace title.
-- Update the workspace description.
-- Get the pages and actions that belong to the workspace.
-- Add custom config objects that will be passed to the mobile workspace.
-
-### SysAppPageMetadata
-The **SysAppPageMetadata** class represents page metadata in a mobile workspace. You can use this class to perform the following tasks:
-
-- Update the page title.
-- Update the page description.
-- Order a page. You can specify the order of the page relative to other pages that are shown in the workspace.
-- Hide the page from the workspace.
-- Get control metadata for controls on the page.
-
-### SysAppActionMetadata
-The **SysAppActionMetadata** class represents action metadata for a mobile workspace. You can use this class to perform the following tasks:
-
-- Update the action title.
-- Update the action description.
-- Order an action. You can specify the order of the action relative to other actions that are shown on the workspace and on the pages.
-- Hide the action.
-- Get control metadata for controls in the action.
-
-### SysAppControlMetadata
-The **SysAppControlMetadata** class represents control metadata for controls on a page or action. You can use this class to perform the following tasks:
-
-- Update the control label.
-- Order a control. You can specify the order of the control relative to other controls on a page or action.
-- Hide a control.
-- Mark a control as mandatory.

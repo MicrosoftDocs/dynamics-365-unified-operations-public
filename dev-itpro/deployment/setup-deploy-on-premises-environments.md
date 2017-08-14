@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 08/11/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -268,7 +268,7 @@ We have provided several scripts to help improve the setup experience. Follow th
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
 2. On the dashboard, select the **Shared asset library** tile.
-3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations - On-premises Deployment scripts** row.
+3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises, Enterprise edition - Deployment scripts - Latest** row.
 4. Select **Versions**, and download the latest version of the zip file for the scripts.
 5. Right-click the zip file, and select **Properties**. Then, in the dialog box, select the **Unblock** check box.
 6. Copy the zip file to the machine that will be used to execute the scripts.
@@ -310,7 +310,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 3. Start Windows PowerShell in elevated mode, change the directory to the **infrastructure** folder, and run the following commands.
 
     ```
-    .\Import-Module D365FO-OP\D365FO-OP.psd1
+    Import-Module .\D365FO-OP\D365FO-OP.psd1
     .\New-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 

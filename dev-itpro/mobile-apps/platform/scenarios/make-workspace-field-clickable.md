@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Customize the display of a field so that it's clickable
+title: Set up clickable fields
 description: This topic explains how to customize the fields on a mobile app page so that they are shown as email addresses, phone numbers, or URLs.
 author: makhabaz
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Customize the display of a field so that it's clickable
+# Set up clickable fields
 
 The fields on a mobile app page can be customized so that they are shown as email addresses, phone numbers, or URLs.
 

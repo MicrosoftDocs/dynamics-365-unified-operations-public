@@ -37,7 +37,10 @@ Microsoft Dynamics 365 Unified Operations includes support for mobile apps. You 
 ## Getting started
 
 + [Getting started](mobile-platform-getting-started.md) 
-+ [Architecture and design considerations](mobile-platform-architecture.md) 
++ [Architecture](mobile-platform-architecture.md) 
++ [Page design guidelines](page-design-guidelines.md)
++ [Action design guidelines](action-design-guidelines.md)
++ [Form design requirements](form-design-requirements.md)
 
 We also have a video series about creating a mobile app:
 
@@ -47,25 +50,36 @@ We also have a video series about creating a mobile app:
 + [Tutorial 4: Adding a lookup to the create new sales order action](https://youtu.be/eNJKd0IYmZk)
 + [Tutorial 5: Adding a lookup and hiding pages using mobile business logic](https://youtu.be/kIJKk9J8FvI)
 
-## Configure a mobile workspace
+## Common configurations
 
-+ [Configure a workspace by using the SysAppWorkspace class](scenarios/mobile-workspace-configuration.md)
-+ [Localize mobile workspaces on the server](scenarios/localize-workspaces-on-server.md)
-+ [Secure a mobile app workspace](scenarios/secure-mobile-workspace.md)
-+ [Customize the display of a field so that it is clickable](scenarios/make-workspace-field-clickable.md)
-+ [Make a field mandatory using workspace classes](scenarios/make-field-mandatory.md)
++ [Localize mobile workspaces](scenarios/localize-workspaces-on-server.md)
++ [Secure mobile workspaces](scenarios/secure-mobile-workspace.md)
++ [Set up clickable fields](scenarios/make-workspace-field-clickable.md)
++ [Set up mandatory fields through workspace classes](scenarios/make-field-mandatory.md)
++ [Display item counts in a field](scenarios/display-count-workspace.md)
 
-## Optimize a mobile workspace
+## Client-side development
 
-+ [Display a count in a field](scenarios/display-count-workspace.md)
+Client-side APIs are used in the business logic file which provides an extensibility layer to the mobile workspace in order to allow customizing:
+1. Metadata
+1. Runtime control/page instances
+1. Business data
+1. Offline-first business behaviors
+1. Layout and style
 
-## Client-side development reference
+[Download the sample business logic file for Reservation management workspace](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.js file)
 
 + [Client-side design APIs overview](scenarios/client-api-design-overview.md)
++ [Business logic events overview](business-logic-events-overview.md)
 + [Client APIs](client-apis/client-apis-reference.md)
 
-## Server-side development reference
+## Server-side development
 
-+ [Server APIs (workspace X++ APIs)](mobile-workspace-server-apis.md)
+Workspace attributes and classes are used to create, configure and publish workspaces on the server. 
+
+[Download the sample project for Fleet Management Mobile App](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp file)
+
++ [Workspace class overview](scenarios/mobile-workspace-configuration.md)
++ [Server APIs (X++)](mobile-workspace-server-apis.md)
 
 

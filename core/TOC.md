@@ -401,7 +401,7 @@
 ##### [Vendor payment overview](/dynamics365/unified-operations/financials/cash-bank-management/tasks/vendor-payment-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Advanced bank reconciliation
-##### [Advanced bank reconciliation overview](/dynamics365/unified-operations/financials/cash-bank-management/configure-advanced-bank-reconciliation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Advanced bank reconciliation setup tasks](/dynamics365/unified-operations/financials/cash-bank-management/configure-advanced-bank-reconciliation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up the advanced bank reconciliation import process](/dynamics365/unified-operations/financials/cash-bank-management/set-up-advanced-bank-reconciliation-import-process?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up bank reconciliation matching rules](/dynamics365/unified-operations/financials/cash-bank-management/set-up-bank-reconciliation-matching-rules?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Reconcile bank statements by using advanced bank reconciliation](/dynamics365/unified-operations/financials/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1306,7 +1306,7 @@
 #### [Transfer physical inventory within the warehouse](/dynamics365/unified-operations/supply-chain/inventory/tasks/transfer-physical-inventory-within-warehouse?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Logistics
-### Transportation management
+### [Transportation management](/dynamics365/unified-operations/supply-chain/transportation/transportation-management-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [A new transportation engine](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Associate a fuel index with a carrier as an accessorial charge](/dynamics365/unified-operations/supply-chain/transportation/tasks/associate-fuel-index-carrier-accessorial-charge?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create a bill of lading](/dynamics365/unified-operations/supply-chain/transportation/create-bill-of-lading?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1326,7 +1326,6 @@
 #### [Set up shipping carriers](/dynamics365/unified-operations/supply-chain/transportation/tasks/set-up-shipping-carriers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up transportation constraints for an item](/dynamics365/unified-operations/supply-chain/transportation/tasks/set-up-transportation-constraints-item?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Transportation engine](/dynamics365/unified-operations/supply-chain/transportation/transportation-management-engines?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Transportation management](/dynamics365/unified-operations/supply-chain/transportation/transportation-management-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Warehouse management
 #### Setup 
@@ -2353,7 +2352,10 @@
 ## [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Getting started
 #### [Getting started](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-getting-started?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Architecture and design considerations](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-architecture?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Architecture](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-architecture?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Page design guidelines](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/page-design-guidelines?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Action design guidelines](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/action-design-guidelines?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Form design requirements](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/form-design-requirements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Common tasks
 #### [Configure a workspace by using the SysAppWorkspace class](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/mobile-workspace-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Customize the display of a field so that it's clickable](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/make-workspace-field-clickable?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
