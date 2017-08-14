@@ -276,6 +276,4 @@ The following table shows whether each feature is available in:
 | | Upgrade| Yes | No |
 | | Upgrade and Support for Previous Versions| Yes | No |
 | | Servicing environments| Yes | No |
-| | Servicing environments| Yes | ? |
-| | Table browser is now in read-only mode| Yes | Yes |
 | | Task guides for testing| Yes | Yes |
