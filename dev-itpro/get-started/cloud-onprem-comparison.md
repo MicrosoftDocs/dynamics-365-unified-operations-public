@@ -170,14 +170,12 @@ The following table shows whether each feature is available in:
 | | Ability to model toolbar actions in the overflow menu| Yes | Yes |
 | | Browser framework - PowerApps Host control| Yes | Yes |
 | | Create a workspace through personalization| Yes | Yes |
-| | Enhanced description| Yes | Yes |
 | | Improved responsiveness across devices and viewports| Yes | Yes |
 | | Improved viewing experience for application reports| Yes | Yes |
 | | Personalization | Yes | Yes |
 | | Support for Right to Left languages| Yes | Yes |
 | | Task recorder | Yes | Yes |
 | | Task recorder - Save or load task recordings from the BPM library| Yes | No |
-| | User interface| Yes | Yes |
 | Finances and Operations support | | | |
 | | Ideas portal| Yes | ? |
 | | Access to Support via the Help & Support menu| Yes | No |
