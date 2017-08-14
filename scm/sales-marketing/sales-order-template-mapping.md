@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Sales order headers and lines
-description: The topic discusses the templates and underlying tasks that are used to synchronize sales order headers and lines from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+title: Synchronize sales order headers and lines from Finance and Operations to Sales
+description: The topic discusses the templates and underlying tasks that are used to synchronize sales order headers and lines from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to Microsoft Dynamics 365 for Sales. 
 author: ChristianRytt
 manager: AnnBe
 ms.date: 07/3/2017
@@ -30,43 +30,50 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Sales order headers and lines
+# Synchronize sales order headers and lines
 
 [!include[banner](../includes/banner.md)]
 
-The topic discusses the templates and underlying tasks that are used to synchronize sales order headers and lines from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+The topic discusses the templates and underlying tasks that are used to synchronize sales order headers and lines from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations) to Microsoft Dynamics 365 for Sales (Sales). 
 
 ## Template and tasks
 
 The following templates and underlying tasks are used to synchronize sales order headers and lines from Sales to Finance and Operations:
 
-- **Name of the template:** Sales Orders (Sales to Fin and Ops)
-- **Names of the tasks in the project:**
+- **Name of template in Data integration:** Sales Orders (Sales to Fin and Ops)
+- **Names of tasks in Data integration project:**
 
-    - OrderHeader
-    - OrderLine
+    - SalesOrderHeader
+    - SalesOrderLine
 
-The following synchronization tasks are required before synchronization of sales order headers and lines can occur:
+Sync tasks required prior to Sales invoice header and lines sync:
 
-- Products
-- Accounts (if used)
-- Contacts (if used)
+- Products (Fin and Ops to Sales)
+- Accounts (Sales to Fin and Ops) (if used)
+- Contacts (Sales to Fin and Ops) (if used)
 
 ## Entity set
 
-| Sales             | CDS            | Finance and Operations |
-|-------------------|----------------|------------------------|
-| SalesOrders       | SalesOrder     | Sales order headers V2 |
-| SalesOrderDetails | SalesOrderLine | CDS sales order lines  |
+| Finance and Operations |    CDS         |     Sales      |
+|------------------------|----------------|----------------|
+| CDS sales order headers| SalesOrder     | SalesOrders |
+| CDS sales order lines  | SalesOrderLine | SalesOrderDetails|
 
 ## Entity flow
 
-Sales orders are created in Sales and synchronized to Finance and Operations.
+Sales orders are created in Finance and Operations and synchronized to Sales.
 
-Sales orders from Sales are synchronized only if the following conditions are met:
+Filters in the template ensure that only relevant sales orders are included in the synchronization:
 
-- All products on the sales order lines are externally maintained.
-- The sales order has been submitted.
+- Both ordering and invoice customer on the sales order must originate from Sales to be included. In the Finance and Operations entities the fields OrderingCustomerIsExternallyMaintained and InvoiceCustomerIsExternallyMaintained are used to track this.
+
+- The Sales order in Finance and Operations must be confirmed, as only Confirmed sales orders (or sales orders with higher processing status) are synchronized to Sales.
+
+- After creating or modifying a sales order the batch job Calculate sales totals must be executed. Only sales order with sales totals calculated will sync to CDS and Sales.
+
+
+
+
 
 ## Prospect to cash solution for Sales
 
