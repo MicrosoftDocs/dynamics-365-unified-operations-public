@@ -1,3 +1,34 @@
+---
+# required metadata
+
+title: Server-side APIs
+description: Microsoft Dynamics 365 for Finance and Operations includes support for a mobile phone app that enables rich offline and mobile interactions, and an easy-to-use designer experience.
+author: RobinARH
+manager: AnnBe
+ms.date: 08/14/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: annbe
+ms.search.scope: Operations, Platform, UnifiedOperations
+# ms.tgt_pltfrm: 
+ms.custom: 255544
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: shshabazz
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Platform update 3
+
+---
+
 # Class SysAppActionAttribute 
 SysAppActionAttribute used for decorating methods defining actions of workspace
 
