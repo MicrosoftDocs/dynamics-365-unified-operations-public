@@ -5,7 +5,7 @@ title: Synchronize sales order headers and lines from Finance and Operations to 
 description: The topic discusses the templates and underlying tasks that are used to synchronize sales order headers and lines from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to Microsoft Dynamics 365 for Sales. 
 author: ChristianRytt
 manager: AnnBe
-ms.date: 07/3/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -65,9 +65,9 @@ Sales orders are created in Finance and Operations and synchronized to Sales.
 
 Filters in the template ensure that only relevant sales orders are included in the synchronization:
 
-- Both ordering and invoicing customer on the sales order that originate from Sales will be included in the synchronization. In Finance and Operations, the fields **OrderingCustomerIsExternallyMaintained** and **InvoiceCustomerIsExternallyMaintained** are used to track this in the data entities.
+- Both ordering and invoicing customer on the sales order that originate from Sales will be included in the synchronization. In Finance and Operations, the fields **OrderingCustomerIsExternallyMaintained** and **InvoiceCustomerIsExternallyMaintained** are used to track the synchronization in the data entities.
 
-- The **Sales order** in Finance and Operations must be confirmed. Only the confirmed sales orders or sales orders with higher processing status (e.g. Shipped, Invoiced) are synchronized to Sales.
+- The **Sales order** in Finance and Operations must be confirmed. Only the confirmed sales orders or sales orders with higher processing status, for example, Shipped or Invoiced status, are synchronized to Sales.
 
 - After creating or modifying a sales order, the batch job **Calculate sales totals** in Finance and Operations must be executed. Only the sales orders with sales totals calculated will be synced to CDS and Sales.
 
@@ -81,6 +81,7 @@ New fields are added to the **Order** entity and displayed on the page:
 - **Is Maintained Externally**: Set to Yes when the order is coming from Finance and Operations.
 
 - **Processing status**: Used to show the processing status of the order in Finance and Operations. Values are:
+
     - Active
     - Confirmed
     - Packing Slip
@@ -94,9 +95,9 @@ New fields are added to the **Order** entity and displayed on the page:
     - Cancelled
     - Draft (default)
 
-- **Has Externally Maintained Products Only**: Used in other sales order scenarios (from Sales to Finance and Operation sync) to consistently keep track of whether the sales order is made up entirely of Externally Maintained Products, in which case Products are maintained in Finance and Operations. This is done to ensure that you don't try to sync sales order lines with Products that are unknown to Finance and Operations.
+- **Has Externally Maintained Products Only**: Used in other sales order scenarios (from Sales to Finance and Operation sync) to consistently keep track of whether the sales order is made up entirely of **Externally Maintained Products**, in which case products are maintained in Finance and Operations. This is done to ensure that you don't try to sync sales order lines with products that are unknown to Finance and Operations.
  
-The **Create Invoice**, **Cancel Order**, **Recalculate**, **Get Products** and **Lookup Address** buttons on the **Sales order** page are hidden for externally maintained orders, since invoices will be created in Finance and Operations and synced to Sales. The order pageis non-editable since sales order information will be synced from Finance and Operations.
+The **Create Invoice**, **Cancel Order**, **Recalculate**, **Get Products** and **Lookup Address** buttons on the **Sales order** page are hidden for externally maintained orders, since invoices will be created in Finance and Operations and synced to Sales. The order page is non-editable, since sales order information will be synced from Finance and Operations.
  
 The **Sales order status** will remain active to ensure that changes from Finance and Operations can flow to the **Sales order** in Sales. This is controlled by defaulting **Statecode [Status]** to **Active** in the Data integration project.
 
@@ -113,6 +114,7 @@ Set **Sales and marketing** > **Periodic tasks** > **Calculate sales totals** to
 ### Setup in Data integration project
 
 #### SalesHeader task
+
 - Update the mapping for **CDS Organization ID in Source** -> **CDS**.
 
     - Template value for **Account_Organization_OrganizationId** is defaulted to ORG001.
