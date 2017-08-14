@@ -37,9 +37,8 @@ creating orders. Bing Maps is also used for distributed order management to
 calculate distances 
 
 **Enable Bing Maps**
-
->   1.       Go to Retail Shared Parameters \> Bing
->   2.       Select **Enable Bing Maps** to turn on Bing Maps functionality.
+1.       Go to Retail Shared Parameters \> Bing
+2.       Select **Enable Bing Maps** to turn on Bing Maps functionality.
 
 **Enter a Bing Maps license key**
 
