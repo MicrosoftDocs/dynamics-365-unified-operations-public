@@ -220,7 +220,7 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | Move focus into the input field for the current segment in the drop-down list (when the drop-down list is already open) | Alt+Down Arrow                   |
 | Close the drop-down list                                                                                                | Alt+Up Arrow                     |
 | Close/open the right portion of the drop-down list                                                                      | Alt+Left Arrow / Alt+Right Arrow |
-| Toggle between “Show valid” and “Show all” modes                                                                        | Alt+W                            |
+| Switch between “Show valid” and “Show all” modes                                                                        | Alt+W                            |
 | Select the value from drop-down list and move to the next segment                                                       | Enter                            |
 | Move to the next/previous control on the page (when focus is in input control)                                          | Tab / Shift+Tab                  |
 | Move to the next/previous input field in the flyout (when focus is in the drop-down list)                               | Tab / Shift+Tab                  |
