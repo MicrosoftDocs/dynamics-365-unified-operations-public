@@ -34,14 +34,17 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-The topic discusses the templates and underlying tasks that are used to synchronize sales order headers and lines from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations) to Microsoft Dynamics 365 for Sales (Sales). 
+The topic discusses the templates and underlying tasks that are used to synchronize sales order headers and lines from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to Microsoft Dynamics 365 for Sales. 
 
 ## Template and tasks
 
-The following templates and underlying tasks are used to synchronize sales order headers and lines from Sales to Finance and Operations:
+The following templates and underlying tasks are used to synchronize sales order headers and lines from Finance and Operations to Sales:
 
-- **Name of template in Data integration:** Sales Orders (Sales to Fin and Ops)
-- **Names of tasks in Data integration project:**
+- **Name of template in Data integration** 
+
+    - Sales Orders (Sales to Fin and Ops)
+    
+- **Names of tasks in Data integration project**
 
     - SalesOrderHeader
     - SalesOrderLine
@@ -54,7 +57,7 @@ Sync tasks required prior to Sales invoice header and lines sync:
 
 ## Entity set
 
-| Finance and Operations |    CDS         |     Sales      |
+| Finance and Operations |    Common Data Service (CDS)         |     Sales      |
 |------------------------|----------------|----------------|
 | CDS sales order headers| SalesOrder     | SalesOrders |
 | CDS sales order lines  | SalesOrderLine | SalesOrderDetails|
@@ -78,9 +81,9 @@ Filters in the template ensure that only relevant sales orders are included in t
 
 New fields are added to the **Order** entity and displayed on the page:
 
-- **Is Maintained Externally**: Set to Yes when the order is coming from Finance and Operations.
+- **Is Maintained Externally** - Set to **Yes** when the order is coming from Finance and Operations.
 
-- **Processing status**: Used to show the processing status of the order in Finance and Operations. Values are:
+- **Processing status** - Used to show the processing status of the order in Finance and Operations. Values are:
 
     - Active
     - Confirmed
@@ -95,11 +98,11 @@ New fields are added to the **Order** entity and displayed on the page:
     - Cancelled
     - Draft (default)
 
-- **Has Externally Maintained Products Only**: Used in other sales order scenarios (from Sales to Finance and Operation sync) to consistently keep track of whether the sales order is made up entirely of **Externally Maintained Products**, in which case products are maintained in Finance and Operations. This is done to ensure that you don't try to sync sales order lines with products that are unknown to Finance and Operations.
+The **Has Externally Maintained Products Only** setting is used in other sales order scenarios (from Sales to Finance and Operation sync) to consistently keep track of whether the sales order is made up entirely of **Externally Maintained Products**, in which case products are maintained in Finance and Operations. This ensures that you don't try to sync sales order lines with products that are unknown to Finance and Operations.
  
-The **Create Invoice**, **Cancel Order**, **Recalculate**, **Get Products** and **Lookup Address** buttons on the **Sales order** page are hidden for externally maintained orders, since invoices will be created in Finance and Operations and synced to Sales. The order page is non-editable, since sales order information will be synced from Finance and Operations.
+The **Create Invoice**, **Cancel Order**, **Recalculate**, **Get Products** and **Lookup Address** buttons on the **Sales order** page are hidden for externally maintained orders because invoices will be created in Finance and Operations and synced to Sales. The order page is non-editable because sales order information will be synced from Finance and Operations.
  
-The **Sales order status** will remain active to ensure that changes from Finance and Operations can flow to the **Sales order** in Sales. This is controlled by defaulting **Statecode [Status]** to **Active** in the Data integration project.
+The **Sales order status** will remain active to ensure that changes from Finance and Operations can flow to the **Sales order** in Sales. This is controlled by setting the default **Statecode [Status]** to **Active** in the Data integration project.
 
 ## Preconditions and mapping setup 
 
@@ -115,32 +118,32 @@ Set **Sales and marketing** > **Periodic tasks** > **Calculate sales totals** to
 
 #### SalesHeader task
 
-- Update the mapping for **CDS Organization ID in Source** -> **CDS**.
+- Update the mapping for **CDS Organization ID in Source** > **CDS**.
 
-    - Template value for **Account_Organization_OrganizationId** is defaulted to ORG001.
-    - Template value for **InvoiceAccount_Organization_OrganizationId** is defaulted to ORG001.
-    - Template value for **Organization_OrganizationId** is defaulted to ORG001.
+    - Default template value for **Account_Organization_OrganizationId** is ORG001.
+    - Default template value for **InvoiceAccount_Organization_OrganizationId** is ORG001.
+    - Default template value for **Organization_OrganizationId** is ORG001.
 
-- Ensure that the needed mapping exists in **Source** -> **CDS for InvoiceCountryRegionId to BillingAddress_Country** and for **DeliveryCountryRegionId to DeliveryAddress_Country**.
+- Ensure that the needed mapping exists in **Source** > **CDS for InvoiceCountryRegionId to BillingAddress_Country** and for **DeliveryCountryRegionId to DeliveryAddress_Country**.
 
     - Template value is **ValueMap** with a number of countries mapped.
 
-- **Price list** is required to create orders in Sales. Update the **ValueMap** in **CDS** -> **Destination** for **pricelevelid.name [Price List Name]** to the **Price list** used in Sales per currency. You can either default to a single **Price list** or use **ValueMap** if you have **Price lists** in multiple currencies.
+- **Price list** is required to create orders in Sales. Update the **ValueMap** in **CDS** > **Destination** for **pricelevelid.name [Price List Name]** to the **Price list** used in Sales per currency. You can either used the default **Price list** for single currency or use **ValueMap** if you have **Price lists** in multiple currencies.
     
-    - Template value for **pricelevelid.name [Price List Name]** is **Default** to CRM Service USA (sample). 
+    - Default template value for **pricelevelid.name [Price List Name]** is CRM Service USA (sample). 
 
 #### SalesLine task
 
-- Update the mapping for **CDS Organization ID in Source** -> **CDS**. 
+- Update the mapping for **CDS Organization ID in Source** > **CDS**. 
     
-    - Template value for **SalesOrder_Organization_OrganizationId** is defaulted to ORG001.
-    - Template value for **Product_Organization_OrganizationId** is defaulted to ORG001.
+    - Default template value for **SalesOrder_Organization_OrganizationId** is ORG001.
+    - Default template value for **Product_Organization_OrganizationId** is ORG001.
 
-- Ensure that the needed mapping exists in **Source** -> **CDS** for **DeliveryCountryRegionId** to **DeliveryAddress_Country**.
+- Ensure that the needed mapping exists in **Source** > **CDS** for **DeliveryCountryRegionId** to **DeliveryAddress_Country**.
 
     - Template value is **ValueMap** with a number of countries mapped.
     
-- Ensure that the needed **ValueMap** for **SalesUnitSymbol in Finance and Operations exists in the **Source** -> **CDS mapping**.
+- Ensure that the needed **ValueMap** for **SalesUnitSymbol** in Finance and Operations exists in the **Source** > **CDS mapping**.
 
     - Template value with **ValueMap** is defined for **SalesUnitSymbol to Quantity_UOM**.
 
