@@ -176,10 +176,10 @@ Follow these steps to look for the DBSync.err file, find the errors, and inspect
     |-------|--------|
     | %Table Sync Failed for Table%Create Unique Index% | This issue typically occurs when a unique index is created, but the data isn't unique. Fix the data before you run the step again. |
     | %Application configuration sync failed.%Custom action sync failed with error:% | View the information in the error message and the call stack to determine the application code that is causing the issue. |
-    | %cannot be found from underlying query&#39;&#39;s table% | This issue was fixed in Update 6. KB 4018815 for Update 3. |
+    | %cannot be found from underlying query&#39;&#39;s table% | This issue was fixed. For more information, refer to KB 4018815. |
     | %Table Sync Failed for Table%Converting Field% | Follow the error message, fix the issue, and run the step again. |
     | %failed because one or more objects access this column% | See whether the index is in the metadata. If the index is in the metadata, this issue is a SyncEngine product issue. If the index isn't in the metadata, remove the index from the SQL database before you run the step again. |
-    | %cannot be found from underlying data source&#39;&#39;s table% | This issue was fixed in Update 6. KB 4018815 for Update 3. |
+    | %cannot be found from underlying data source&#39;&#39;s table% | This issue was fixed. For more information, refer to KB 4018815. |
     | &#39;%Table Sync Failed for Table%&#39; and errorMessage like &#39;%There is already an object named%&#39; | The Internal SqlDictionary table and SQL schema are out of sync. There isn't enough information in the logs to understand how this state was reached. |
     | %Table Sync Failed for Table%Column names in each table must be unique% | SqlDictionary entries for the table are corrupted, and the field is missing. There isn't enough information in the logs to understand how this state was reached. |
     | %Column name &#39;LOAD\_&#39; does not exist in the target table or view. CREATE INDEX% | This issue appears to be a SyncEngine issue. Create a ticket on Microsoft Support. |
