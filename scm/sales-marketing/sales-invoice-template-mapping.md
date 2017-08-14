@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Sales invoice headers and lines
-description: The topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, to Microsoft Dynamics 365 for Sales. 
+title: Synchronize sales invoice headers and lines from Finance and Operations to Sales
+description: The topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to Microsoft Dynamics 365 for Sales. 
 author: ChristianRytt
 manager: AnnBe
-ms.date: 07/3/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,24 +34,23 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-The topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, to Microsoft Dynamics 365 for Sales. 
+The topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations) to Microsoft Dynamics 365 for Sales (Sales). 
 
 ## Template and Task
 
 The following templates and underlying tasks are used to synchronize sales invoice headers and lines from Finance and Operations to Sales:
 
-- **Name of the template:** Sales Invoices (Fin and Ops to Sales)
-- **Names of the tasks in the project:**
+- **Name of the template in Data integration:** Sales Invoices (Fin and Ops to Sales)
+- **Names of the tasks in the Data integration project:**
 
     - SalesInvoiceHeader
     - SalesInvoiceLine
 
-The following synchronization tasks are required before synchronization of sales invoice headers and lines can occur:
-
-- Products
-- Accounts (if used)
-- Contacts (if used)
-- Sales order header and lines
+Sync tasks required prior to Sales invoice header and lines sync:
+-	Products (Fin and Ops to Sales)
+-	Accounts (Sales to Fin and Ops) (if used)
+-	Contacts (Sales to Fin and Ops) (if used)
+-   Sales order header and lines (Fin and Ops to Sales)
 
 ## Entity set
 
@@ -65,6 +64,44 @@ The following synchronization tasks are required before synchronization of sales
 Sales invoices are created in Finance and Operations and synchronized to Sales.
 
 ## Prospect to cash solution for Sales
+
+-  An **Invoice number field** is added to the **Invoice** entity and displayed on the page.
+ 
+-  The **Create invoice button on the Sales order form is hidden since invoices will be created in Finance and Operations and synced to Sales. The invoice form is non-editable since invoices will be synced from Finance and Operations.
+ 
+The Sales order status changes automatically to Invoiced once the related invoice from Finance and Operations has synchronized to Sales. Also, the Owner of the sales order from which the invoice was created is assigned as the Owner of the invoice. This gives the Owner of the sales order the ability to view the invoice.
+ 
+Preconditions and mapping setup
+Before synchronizing invoices it is important to update Sales with the following setting:
+Under Settings > Administration > System settings > Sales ensure that Use system prizing calculation system is set to No. This is done to ensure that price and totals from Finance and Operations invoice is used when generating the invoice in Sales.
+ InvoiceHeader
+•	Update the mapping for CDS Organization ID in Source -> CDS. 
+o	Template value for SalesOrder_Organization_OrganizationId is defaulted to ORG001.
+o	Template value for Account_Organization_OrganizationId is defaulted to ORG001.
+o	Template value for Organization_OrganizationId is defaulted to ORG001.
+•	Ensure that the needed mapping exists in Source -> CDS for InvoiceCountryRegionId to BillingAddress_Country
+o	Template value is ValueMap with a number of Countries mapped.
+•	Price list is required to create invoices in Sales. Update the ValueMap in CDS -> Destination for pricelevelid.name [Price List Name] to the Price list used in Sales per currency. You can either default to a single Price list or use ValueMap if you have Price lists in multiple currencies.
+o	Template value for pricelevelid.name [Price List Name] is ValueMap based on Currency:
+o	usd : CRM Service USA (sample). 
+InvoiceLine
+•	Ensure that the needed mapping exists in Source -> CDS for Unit of measure.
+•	Ensure that the needed ValueMap for SalesUnitSymbol in Finance and Operations exists in the Source -> CDS mapping. 
+o	Template value with ValueMap is defined for  SalesUnitSymbol to Quantity_UOM.
+•	Update the mapping for CDS Organization ID in Source -> CDS. 
+o	Template value for SalesInvoicer_Organization_OrganizationId is defaulted to ORG001.
+o	Template value for Product_Organization_OrganizationId is defaulted to ORG001.
+ 
+ 
+ 
+Template mapping in Data integrator
+Note: 
+Payment terms, Freight terms, Delivery terms, Shipping method, and Delivery mode are not part of the default mappings. Mapping of these fields requires value mapping to be set up, which is specific to the data in the organizations between which the entity is synchronized.
+
+
+
+
+ææææææ
 
 An **Invoice Number** field has been added to the Invoice entity and appears on the page.
 
@@ -95,6 +132,8 @@ Before you synchronize invoices, in Sales, go to **Settings** &gt; **Administrat
 
     - The default template value for **SalesInvoicer_Organization_OrganizationId** is **ORG001**.
     - The default template value for **Product_Organization_OrganizationId** is **ORG001**.
+
+ææææææææ
 
 ## Template mapping in data integrator
 
