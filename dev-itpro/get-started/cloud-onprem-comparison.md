@@ -108,8 +108,8 @@ The following table shows whether each feature is available in:
 | | Safety stock de-prioritization in master planning and capable to promise (CTP) calculation| Yes | Yes |
 | | Turn off planning processes per company| Yes | Yes |
 | Mobile  | | | |
-| | Mobile framework| Yes | Preview |
-| | Dynamics 365 for Unified Operations mobile app and workspaces | Yes | Preview |
+| | Mobile framework| Yes | In preview |
+| | Dynamics 365 for Unified Operations mobile app and workspaces | Yes | In preview |
 | Office integration| | | |
 | | Open in Excel| Yes | Yes |
 | | Static export to Excel| Yes | Yes |
