@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Synchronize sales order headers and lines Finance and Operations to Sales
+# Synchronize sales order headers and lines from Finance and Operations to Sales
 
 [!include[banner](../includes/banner.md)]
 
