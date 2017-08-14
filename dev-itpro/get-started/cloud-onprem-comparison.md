@@ -54,8 +54,7 @@ The following table shows whether each feature is available in:
 | | Configure cross-company data sharing by replicating reference and group data between multiple companies in the same Dynamics AX deployment. | Yes | Yes |
 | | Export data to your own data warehouse| Yes | Not yet implemented |
 | | Enable the export of incremental updates to a data entity. | Yes | Not yet implemented |
-| Document management| | | |
-| | All document management features| Yes | Yes<br><br>See [Configure document management](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management) for details. |
+| Document management| | Yes| Yes |
 | Financial management| Includes all Financial management features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
 | | Accounts payable | Yes | Yes |
 | | Accounts receivable | Yes | Yes |
@@ -82,7 +81,8 @@ The following table shows whether each feature is available in:
 | | Direct deposit| Yes | No |
 | Intelligence| | | |
 | | Financial reporting | Yes | Yes|
-| | Electronic reporting (ER)| Yes | Yes*<br><br>*See the limitations documented in [Features not implemented in on-premises deployments](features-not-implemented-on-prem.md). |
+| | Electronic reporting (ER)| Yes | Yes|
+| | Electronic reporting (ER) - Integration with LCS | Yes | No|
 | | Business documents with SSRS | Yes | Yes |
 | | Author reports in Power BI Desktop| Yes | Yes |
 | | Integration with PowerBI.com| Yes | No |
@@ -108,8 +108,8 @@ The following table shows whether each feature is available in:
 | | Safety stock de-prioritization in master planning and capable to promise (CTP) calculation| Yes | Yes |
 | | Turn off planning processes per company| Yes | Yes |
 | Mobile  | | | |
-| | Mobile framework| Yes | In preview |
-| | Dynamics 365 for Unified Operations mobile app and workspaces | Yes | In preview |
+| | Mobile framework| Yes | Yes* |
+| | Dynamics 365 for Unified Operations mobile app and workspaces | Yes | Yes* |
 | Office integration| | | |
 | | Open in Excel| Yes | Yes |
 | | Static export to Excel| Yes | Yes |
