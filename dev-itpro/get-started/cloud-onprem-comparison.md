@@ -180,6 +180,7 @@ The following table shows whether each feature is available in:
 | | Ideas portal| Yes | ? |
 | | Access to Support via the Help & Support menu| Yes | No |
 
+* Indicates features that are in preview.
 
 ## Dynamics 365 for Retail 
 
