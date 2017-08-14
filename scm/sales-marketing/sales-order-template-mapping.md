@@ -65,57 +65,82 @@ Sales orders are created in Finance and Operations and synchronized to Sales.
 
 Filters in the template ensure that only relevant sales orders are included in the synchronization:
 
-- Both ordering and invoice customer on the sales order must originate from Sales to be included. In the Finance and Operations entities the fields OrderingCustomerIsExternallyMaintained and InvoiceCustomerIsExternallyMaintained are used to track this.
+- Both ordering and invoicing customer on the sales order that originate from Sales will be included in the synchronization. In Finance and Operations, the fields **OrderingCustomerIsExternallyMaintained** and **InvoiceCustomerIsExternallyMaintained** are used to track this in the data entities.
 
-- The Sales order in Finance and Operations must be confirmed, as only Confirmed sales orders (or sales orders with higher processing status) are synchronized to Sales.
+- The **Sales order** in Finance and Operations must be confirmed. Only the confirmed sales orders or sales orders with higher processing status (e.g. Shipped, Invoiced) are synchronized to Sales.
 
-- After creating or modifying a sales order the batch job Calculate sales totals must be executed. Only sales order with sales totals calculated will sync to CDS and Sales.
+- After creating or modifying a sales order, the batch job **Calculate sales totals** in Finance and Operations must be executed. Only the sales orders with sales totals calculated will be synced to CDS and Sales.
 
-
-
-
+> [!NOTE]
+> Tax related to charges on the **Sales order header** is currently not included in synchronization from Finance and Operations to Sales. This is because Sales doesn't support tax information at the header level. Tax related to charges at the line level is included.
 
 ## Prospect to cash solution for Sales
 
-The **Has Externally Maintained Products Only** field has been added to the order header to consistently track whether the sales order consists entirely of externally maintained products. If a sales order has only externally maintained products, the products are maintained in Finance and Operations. This behavior helps guarantee that you don't try to synchronize sales order lines with products that are unknown to Finance and Operations.
+New fields are added to the **Order** entity and displayed on the page:
 
-All products and lines on the order are updated with the **Has Externally Maintained Products Only** information from the sales order header. This information can be found in the **Order Has Externally Maintained Products Only** field on the Order line entity.
+- **Is Maintained Externally**: Set to Yes when the order is coming from Finance and Operations.
 
-To submit orders where **Has Externally Maintained Products Only** is set to **Yes**, click the **Submit Order** button. Only submitted orders and products/lines on the orders are synchronized to Common Data Service (CDS) and Finance and Operations.
+- **Processing status**: Used to show the processing status of the order in Finance and Operations. Values are:
+    - Active
+    - Confirmed
+    - Packing Slip
+    - Invoiced
+    - Picked
+    - Partially Picked
+    - Partially Packed
+    - Shipped
+    - Partially Shipped
+    - Partially Invoiced
+    - Cancelled
+    - Draft (default)
 
-The **Order status** field is automatically set to **Invoiced** when the related invoice from Finance and Operations has been synchronized to Sales. Additionally, the owner of the sales order that the invoice was created from is assigned as the owner of the invoice. Therefore, the owner of the sales order can view the invoice.
+- **Has Externally Maintained Products Only**: Used in other sales order scenarios (from Sales to Finance and Operation sync) to consistently keep track of whether the sales order is made up entirely of Externally Maintained Products, in which case Products are maintained in Finance and Operations. This is done to ensure that you don't try to sync sales order lines with Products that are unknown to Finance and Operations.
+ 
+The **Create Invoice**, **Cancel Order**, **Recalculate**, **Get Products** and **Lookup Address** buttons on the **Sales order** page are hidden for externally maintained orders, since invoices will be created in Finance and Operations and synced to Sales. The order pageis non-editable since sales order information will be synced from Finance and Operations.
+ 
+The **Sales order status** will remain active to ensure that changes from Finance and Operations can flow to the **Sales order** in Sales. This is controlled by defaulting **Statecode [Status]** to **Active** in the Data integration project.
 
-The **Discount**, **Charges**, and **Tax** fields are controlled by a complex setup in Finance and Operations. This setup doesn't currently support integration mapping. In the current design, the **Price**, **Discount**, **Charge**, and **Tax** fields are mastered and handled by Finance and Operations.
+## Preconditions and mapping setup 
 
-In Sales, the solution makes the following fields read-only, because the values aren't synchronized to Finance and Operations:
+Before synchronizing sales orders, it is important to update Sales with the following setting:
 
-- **Read-only fields on the sales order header:** Discount %, Discount, Freight Amount
-- **Read-only fields on sales order lines:** Tax
+Under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Use system prizing calculation system** is set to **Yes**. 
 
-## Preconditions and mapping setup
+### Setup in Finance and Operations
 
-- Before you synchronize sales orders, in Sales, go to **Settings** &gt; **Administration** &gt; **System settings** &gt; **Sales**, and make sure that the **Discount calculation method** field is set to **Per unit**. This setting helps guarantee that the line item discount from Sales matches the setting in Finance and Operations. Otherwise, the discount won't be correct in Finance and Operations, because Finance and Operations will read the discount as a per-unit discount even if it was a per-line discount in Sales.
-- In Finance and Operations, go to **Account receivable** &gt; **Setup** &gt; **Accounts receivable parameters**. On the **Number sequence** tab, select the number sequence for sales orders, and then click **View details**. Then, under **General Setup**, set the **Manual** field to **Yes**.
-- In Finance and Operations, go to **Accounts receivable** &gt; **Setup** &gt; **Accounts receivable parameters**. Then, on the **Shipments** tab, set the **Delivery date control** field to **None**. This setting helps prevent synchronization from failing for sales orders.
+Set **Sales and marketing** > **Periodic tasks** > **Calculate sales totals** to run as a batch job, with **Calculate totals for sales orders** set to **Yes**. This is important because only the sales orders with sales totals calculated will be synced to CDS and Sales.
 
-### SalesHeader
+### Setup in Data integration project
 
-- The **Requested delivery date** field is required in Finance and Operations, and synchronization will fail if the field is left blank. To prevent this issue, if the field is blank, a default date is taken from **Source &gt; CDS**. The date should be updated to a preferred value. Currently, you can't enter a value such as **[today]** to represent today's date. You must enter a specific date. The default template value for **Requested delivery date** is **1/1/2020**.
-- The **Order date** field is required in CDS, and synchronization will fail if the field is left blank. To prevent this issue, if the field is blank, a default date is taken from **Source &gt; CDS**. The date should be updated to a preferred value. Currently, you can't enter a value such as **[today]** to represent today's date. You must enter a specific date. The default template value for **Order date** is **1/1/2020**.
-- The **Address Country region code** field is required in Finance and Operations. To help prevent synchronization errors, you can specify a default value that is used if the field is left blank in Sales. The default template value for **DeliveryAddressCountryRegionISOCode** is **USA**.
-- Update the mapping for **CDS Organization ID Organization_OrganizationId** in **Source &gt; CDS**:
+#### SalesHeader task
+- Update the mapping for **CDS Organization ID in Source** -> **CDS**.
 
-    - The default template value for **SalesOrder_Organization_OrganizationId** is **ORG001**.
-    - The default template value for **Product_Organization_OrganizationId** is **ORG001**.
+    - Template value for **Account_Organization_OrganizationId** is defaulted to ORG001.
+    - Template value for **InvoiceAccount_Organization_OrganizationId** is defaulted to ORG001.
+    - Template value for **Organization_OrganizationId** is defaulted to ORG001.
 
-### SalesLine
+- Ensure that the needed mapping exists in **Source** -> **CDS for InvoiceCountryRegionId to BillingAddress_Country** and for **DeliveryCountryRegionId to DeliveryAddress_Country**.
 
-- You can add the following mappings from **CDS &gt; Destination** to help guarantee that sales lines are imported into Finance and Operations if there is no default information from either the customer or the product:
+    - Template value is **ValueMap** with a number of countries mapped.
 
-    - **SiteId** – A site is required in order to generate quotations and sales orders in Finance and Operations. The default template value for **SiteId** is **1**.
-    - **WarehouseId** – A warehouse is required in order to process quotations and sales orders in Finance and Operations. The default template value for **WarehouseId** is **13**.
+- **Price list** is required to create orders in Sales. Update the **ValueMap** in **CDS** -> **Destination** for **pricelevelid.name [Price List Name]** to the **Price list** used in Sales per currency. You can either default to a single **Price list** or use **ValueMap** if you have **Price lists** in multiple currencies.
+    
+    - Template value for **pricelevelid.name [Price List Name]** is **Default** to CRM Service USA (sample). 
 
-- Make sure that the required value map for the selling unit of measure (UOM) in Finance and Operations exists in the **CDS &gt; Destination** mapping for **Quantity_UOM** to **SALESUNITSYMBOL**.
+#### SalesLine task
+
+- Update the mapping for **CDS Organization ID in Source** -> **CDS**. 
+    
+    - Template value for **SalesOrder_Organization_OrganizationId** is defaulted to ORG001.
+    - Template value for **Product_Organization_OrganizationId** is defaulted to ORG001.
+
+- Ensure that the needed mapping exists in **Source** -> **CDS** for **DeliveryCountryRegionId** to **DeliveryAddress_Country**.
+
+    - Template value is **ValueMap** with a number of countries mapped.
+    
+- Ensure that the needed **ValueMap** for **SalesUnitSymbol in Finance and Operations exists in the **Source** -> **CDS mapping**.
+
+    - Template value with **ValueMap** is defined for **SalesUnitSymbol to Quantity_UOM**.
 
 ## Template mapping in data integrator
 
