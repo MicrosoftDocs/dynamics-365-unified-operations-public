@@ -116,8 +116,6 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | Close the form (click Back)                         | Esc               |
 | Close the form with explicit save                   | Shift+Esc         |
 | Close the form discarding any unsaved changes       | Alt+Shift+Q       |
- 
-
 
 ## Form navigation shortcuts
 |                                                     |                                              |
