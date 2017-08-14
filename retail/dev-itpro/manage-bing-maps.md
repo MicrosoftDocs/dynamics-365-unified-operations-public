@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 [!include[banner](../includes/banner.md)]
 
-Learn how you can manage Bing Maps for your application. When Bing Maps is turned on, people see a map of a store, warehouse, or other locations when creating orders. Bing Maps is also used for distributed order management to calculate distances. 
+Learn how you can manage Bing Maps for your application. When Bing Maps is turned on, people can view a map of a store, warehouse, or other location when creating orders. Bing Maps is also used for distributed order management to calculate distances. 
 
 ## Enable Bing Maps
 
@@ -40,7 +40,7 @@ Learn how you can manage Bing Maps for your application. When Bing Maps is turne
 
 ## Enter a Bing Maps license key
 
-Go to the [Bing Maps licensing page](http://go.microsoft.com/fwlink/p/?LinkID=390116) for details on how to
+Go to the [Bing Maps licensing page](http://go.microsoft.com/fwlink/p/?LinkID=390116) for details about how to
 obtain a key.
 
 1. Go to **Retail Shared Parameters** > **Bing**.
@@ -48,6 +48,6 @@ obtain a key.
 
 ## Privacy notice
 
-If you enable the Bing Maps feature, address information is automatically sent over the internet to the Bing Maps service to display an online map of the address within this application.  If you click on Bing Maps within this application, you will be redirected to [www.bing.com/maps](http://www.bing.com/maps). Your use of Bing Maps is also governed by the [Bing Maps End User Terms of Use](http://go.microsoft.com/?linkid=9710837).  
+If you enable the Bing Maps feature, address information is automatically sent over the internet to the Bing Maps service to display an online map of the address within this application. If you click on Bing Maps within this application, you will be redirected to [www.bing.com/maps](http://www.bing.com/maps). Your use of Bing Maps is also governed by the [Bing Maps End User Terms of Use](http://go.microsoft.com/?linkid=9710837).  
   
-Administrators can turn the Bing Maps feature on or off under **Retail Shared Parameters** > **Bing**. Turning the Bing Maps app off disables the feature in this application.
+Administrators can turn the Bing Maps feature on or off under **Retail Shared Parameters** > **Bing**. Turning the Bing Maps app off makes the feature unavailable in this application.
