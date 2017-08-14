@@ -44,13 +44,13 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 |---------------------------------------------------|----------------------------------|
 | **To do this**                                    | **Press**                        |
 | Open action search                                | Ctrl+’ or Alt+Q                  |
-| Move to the standard action pane                  | Alt+M,A or Ctrl+F6               |
-| Open a tab in the action pane or a menu           | Enter or Space or Alt+Down Arrow |
+| Move to the standard Action Pane                  | Alt+M,A or Ctrl+F6               |
+| Open a tab on the Action Pane or a menu           | Enter or Space or Alt+Down Arrow |
 | Move to next/previous option in a menu            | Down Arrow / Up Arrow            |
-| Close a tab in the action pane or a menu          | Esc                              |
+| Close a tab on the Action Pane or a menu          | Esc                              |
 | Simulate a right-click                            | Shift+F10                        |
 | Open the Finance and Operations context menu      | Ctrl+F10                         |
-| Execute the default button on a form/dialog       | Alt+Enter                        |
+| Execute the default button on a form/dialog box       | Alt+Enter                        |
 | Click a button or tile                            | Enter or Space                   |
 | View refresh information for a count tile         | Alt+Up Arrow                     |
 
@@ -148,13 +148,13 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | **To do this**                                                              | **Press**                     |
 | Enter the session date in a date field                                      | D+Tab                         |
 | Enter the current date in a date field                                      | T+Tab                         |
-| Open lookup, combo box, date picker, drop dialog                            | Alt+Down Arrow                |
-| Close lookup, combo box, date picker, drop dialog                           | Esc                           |
+| Open lookup, combo box, date picker, drop dialog box                            | Alt+Down Arrow                |
+| Close lookup, combo box, date picker, drop dialog box                          | Esc                           |
 | Move focus into a lookup (when the lookup is already open)                  | Alt+Down Arrow                |
 | Open the control's enhanced preview                                         | Alt+Up Arrow                  |
 | Select text in the current field                                            | Ctrl+A                        |
 | Enter/leave the text area in an HTML editor control                         | Alt+Down Arrow / Alt+Up Arrow |
-| Switch focus beween the text area and the toolbar in an HTML editor control | F6                            |
+| Switch focus between the text area and the toolbar in an HTML editor control | F6                            |
 
 ## Messaging shortcuts
 |                          |               |
@@ -174,8 +174,8 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | Open the help pane                                                            | Ctrl+?                     |
 | Open the trace parser                                                         | Alt+Shift+T                |
 | Move to the navigation pane                                                   | Alt+F1                     |
-| Favorite/un-favorite a form (with focus on a form in the navigation pane)     | Shift+F                    |
-| Move to the standrd action pane                                               | Alt+M,A or Ctrl+F6         |
+| Add/remove form as a favorite (with focus on a form in the navigation pane)     | Shift+F                    |
+| Move to the standard Action Pane                                               | Alt+M,A or Ctrl+F6         |
 | Move to the Filter pane (which may include opening it)                        | Alt+M,F or Ctrl+F3         |
 | Move focus to the page content (with focus in the navigation list)            | Alt+M,M or Ctrl+F3         |
 | Move to the navigation list on Details form (which may include opening it)    | Alt+M,S or Ctrl+F8         |
@@ -190,20 +190,20 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | **To do this**                                                                                                         | **Press**                           |
 | Transition the page into personalization mode                                                                          | Ctrl+Shift+P                        |
 | Use the Select tool (when in personalization mode)                                                                     | S                                   |
-| Open the selected control's quick personalization dialog (when using the Select tool)                                  | Space or Enter                      |
+| Open the selected control's quick personalization dialog box (when using the Select tool)                                  | Space or Enter                      |
 | Use the Move tool (when in personalization mode)                                                                       | M                                   |
 | Select the current control as the one to move (when using the Move tool and no control has been selected to move yet)  | Space or Enter                      |
-| Deselect the control to move (when using the Move tool)                                                                | Esc                                 |
-| Move to the next candidate position for moving the selected control (when using the Move tool)                         | Tab or Right Arrow or Down Arrow    |
-| Move to the previous candidate position for moving the selected control (when using the Move tool)                     | Shift+Tab or Left Arrow or Up Arrow |
+| Clear the control to move (when using the Move tool)                                                                | Esc                                 |
+| Move to the next position for the selected control (when using the Move tool)                         | Tab or Right Arrow or Down Arrow    |
+| Move to the previous position for the selected control (when using the Move tool)                     | Shift+Tab or Left Arrow or Up Arrow |
 | Use the Hide tool (when in personalization mode)                                                                       | H                                   |
 | Switch whether the current control is visible or hidden (when using the Hide tool)                                     | Space or Enter                      |
 | Use the Skip tool (when in personalization mode)                                                                       | K                                   |
-| Switch whether the current control is in the tab sequence or not (when using the Skip tool)                            | Space or Enter                      |
+| Switch whether the current control is in the tab sequence (when using the Skip tool)                            | Space or Enter                      |
 | Use the Edit tool (when in personalization mode)                                                                       | E                                   |
 | Switch whether the current control is editable or read-only (when using the Edit tool)                                 | Space or Enter                      |
 | Use the Summary tool (when in personalization mode)                                                                    | U                                   |
-| Switch whether the current control is a summary field in the current fast tab or not (when using the Summary tool)     | Space or Enter                      |
+| Switch whether the current control is a summary field in the current fast tab (when using the Summary tool)     | Space or Enter                      |
 | Use the Add tool (when in personalization mode)                                                                        | A                                   |
 | Select the control whose container will be used to insert the new fields (when using the Add tool)                     | Space or Enter                      |
 | Import a personalization (when in personalization mode)                                                                | I                                   |
