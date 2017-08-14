@@ -401,7 +401,7 @@
 ##### [Vendor payment overview](/dynamics365/unified-operations/financials/cash-bank-management/tasks/vendor-payment-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Advanced bank reconciliation
-##### [Advanced bank reconciliation overview](/dynamics365/unified-operations/financials/cash-bank-management/configure-advanced-bank-reconciliation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Advanced bank reconciliation setup tasks](/dynamics365/unified-operations/financials/cash-bank-management/configure-advanced-bank-reconciliation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up the advanced bank reconciliation import process](/dynamics365/unified-operations/financials/cash-bank-management/set-up-advanced-bank-reconciliation-import-process?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up bank reconciliation matching rules](/dynamics365/unified-operations/financials/cash-bank-management/set-up-bank-reconciliation-matching-rules?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Reconcile bank statements by using advanced bank reconciliation](/dynamics365/unified-operations/financials/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
