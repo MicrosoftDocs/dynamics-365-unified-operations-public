@@ -43,8 +43,8 @@ Learn how you can manage Bing Maps for your application. When Bing Maps is turne
 Go to the [Bing Maps licensing page](http://go.microsoft.com/fwlink/p/?LinkID=390116) for details on how to
 obtain a key.
 
-1. Go to **Retail Shared Parameters** > **Bing**.
-2. Enter the license key in the **API key** field.
+1. Go to **Retail Shared Parameters** > **Bing**.
+2. Enter the license key in the **API key** field.
 
 ## Privacy notice
 
