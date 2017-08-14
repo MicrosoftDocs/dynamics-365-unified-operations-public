@@ -266,7 +266,7 @@ We have provided several scripts to help improve the setup experience. Follow th
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
 2. On the dashboard, select the **Shared asset library** tile.
-3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations - On-premises Deployment scripts** row.
+3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises, Enterprise edition - Deployment scripts - Latest** row.
 4. Select **Versions**, and download the latest version of the zip file for the scripts.
 5. Right-click the zip file, and select **Properties**. Then, in the dialog box, select the **Unblock** check box.
 6. Copy the zip file to the machine that will be used to execute the scripts.
