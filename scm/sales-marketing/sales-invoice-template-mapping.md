@@ -63,6 +63,9 @@ Sync tasks required prior to Sales invoice header and lines sync:
 
 Sales invoices are created in Finance and Operations and synchronized to Sales.
 
+> [!NOTE]
+> Tax related to charges on the **Sales invoice header** is currently not included in synchronization from Finance and Operations to Sales. This is because Sales doesn't support tax information at the header level. Tax related to charges at the line level is included.
+
 ## Prospect to cash solution for Sales
 
 -  An **Invoice number field** is added to the **Invoice** entity and displayed on the page.
@@ -75,7 +78,7 @@ Sales invoices are created in Finance and Operations and synchronized to Sales.
 
 Before synchronizing invoices, it is important to update Sales with the following setting:
 
--  In Sales, under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Use system prizing calculation system** is set to **No**. This setup ensures that price and totals from invoice in Finance and Operations are used when generating the invoice in Sales.
+-  In Sales, under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Use system prizing calculation system** is set to **Yes**. 
 
 ### InvoiceHeader
 
