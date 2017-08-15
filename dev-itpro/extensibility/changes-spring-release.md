@@ -725,7 +725,7 @@ As a general rule, data methods on tables raise events that can be used for exte
 Type methods have been added to table objects like inserting and inserted which we call with the matching data method insert, similar to other data methods. Changes were made so that super() was called more consistently in data methods. These changes enable extensions to be added to these methods.
 
 | Table |
-| :-------------|
+| -------------|
 | InventBlocking|
 | InventTransferLine|
 | Kanban|
@@ -752,10 +752,10 @@ Type methods have been added to table objects like inserting and inserted which 
 
 ## Exposing class member
 
-Private members have been made available for customization in some cases through changing the access modifier and/or adding parm methods.  Note that the upcoming Chain of Command platform feature will enable extension class access to protected methods and members.
+Private members have been made available for customization by changing the access modifier or adding parm methods.  The Chain of Command platform feature will enable extension class access to protected methods and members.
 
-| Object & Member|
-| :-------------|
+| Member |
+| -------------|
 |AssetPost.ledgerJournalTrans|
 |Class DimensionDerivationRule.ledgerDimensionAllocationList|
 |Class PurchInvoiceJournalCreate.purchTable|
@@ -776,12 +776,12 @@ Private members have been made available for customization in some cases through
 |WHSControl.data|
 |WHSLocationDirective.targetLicensePlateId|
 
-## Construct with throw
+## Construct methods with throw statements
 
-Some construct methods were implemented with throw statements if there is a missing implementation for a given type. This does not work well with extensibility and to mitigate this we changed such construct methods to remove throwing behavior to open up for extensibility through class augmentation or by post event subscription.
+Some **construct** methods were implemented with **throw** statements if there was a missing implementation for a given type. This does not work well with extensibility and to mitigate this we changed such **construct** methods so that they don't throw exceptions. These methods are now to open for extensibility through class augmentation or by post-event subscription.
 
 | Object |
-| :-------------|
+| -------------|
 |BarcodeEAN128.string()|
 |CustCreditLimit.Construct|
 |FormLetterReport|
@@ -799,21 +799,21 @@ Some construct methods were implemented with throw statements if there is a miss
 |SalesTable2LineField|
 |VendInvoiceTableToLineUpdate|
 
-## Find with throw
+## Find methods with throw statements
 
-Very similar to construct with throw, these are just with find methods.
+Some **find** methods were implemented with **throw** statements if there was a missing implementation for a given type. This does not work well with extensibility and to mitigate this we changed such **find** methods so that they don't throw exceptions. These methods are now to open for extensibility through class augmentation or by post-event subscription.
 
-| Object & Method |
-| :-------------|
+| Method |
+| -------------|
 |JournalStatic.findJournalTableFromTrans|
 |JournalStatic.findJournalTableId|
 
 ## Methods made hookable
 
-Extensibility support has been extended for some methods that were not public and as such were not enabling hookable event. These were enabled by explicitly decorating the methods with hookable behavior.
+Extensibility support has been extended for some methods that were not public and were not hookable event. These were enabled by explicitly decorating the methods with hookable behavior.
 
-| Object & Method |
-| :-------------|
+| Method |
+| -------------|
 |Class CustVendReversePosting.updateCustVendTrans|
 |Class JournalTableData.construct|
 |Class PriceDisc.makeKey|
@@ -833,10 +833,10 @@ Extensibility support has been extended for some methods that were not public an
 
 ## Inline delegates
 
-Several requests for inline delegates have been met in this release. The most common approach was splitting the method into more granular methods and enabling extensibility events in the smaller methods.
+We added some inline delegates in this release. The most common was we did this was to split the method into more granular methods and enable extensibility events in the smaller methods.
 
-| Object & Method |
-| :-------------|
+|  Method |
+| -------------|
 |AxClass - ChequeDP - Method - insertChequeTmp|
 |AxClass - VendInvoiceTableToLineUpdate - Method - convertPurchTableFieldToVendInvoice|
 |class JournalStatic.findJournalTableFromTrans|
@@ -863,12 +863,12 @@ Several requests for inline delegates have been met in this release. The most co
 |WHSRFControLData.processControl|
 |WHSRFMenuItemTable.getWHSWorkExecuteMode|
 
-## Various other extensibility features
+## Other changes
 
-Completing the list of features that have been added are those that don't fit in the categories above. The titles of these features follow:
+Other changes are listed in the following table.
 
-| Title|
-| :-------------|
+| Change |
+| -------------|
 |Add indirection for existing product dimensions|
 |Class FormLetterParmDataOutputContract is not extensible|
 |Create an instantiation strategy for the SysExtensionFramework that supports one or more arguments|
