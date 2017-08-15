@@ -42,12 +42,12 @@ The following templates and underlying tasks are used to synchronize sales order
 
 - **Name of template in Data integration** 
 
-    - Sales Orders (Sales to Fin and Ops)
+    - Sales Orders (Fin and Ops to Sales)
     
 - **Names of tasks in Data integration project**
 
-    - SalesOrderHeader
-    - SalesOrderLine
+    - OrderHeader
+    - OrderLine
 
 Sync tasks required prior to Sales invoice header and lines sync:
 
@@ -106,9 +106,13 @@ The **Sales order status** will remain active to ensure that changes from Financ
 
 ## Preconditions and mapping setup 
 
-Before synchronizing sales orders, it is important to update Sales with the following setting:
+Before synchronizing sales orders, it is important to update the systems with the following setting:
 
-Under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Use system prizing calculation system** is set to **Yes**. 
+### Setup in Sales
+
+- Under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Use system prizing calculation system** is set to **Yes**. 
+
+- Under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Discount calculation method** is set to **Line item**. 
 
 ### Setup in Finance and Operations
 
