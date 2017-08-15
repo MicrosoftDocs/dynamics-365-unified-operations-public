@@ -77,10 +77,10 @@ Lifecycle Services
 ## Security
 -   [Role-based security](role-based-security.md)
 -   [Security architecture](security-architecture.md)
--   [Create new users (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) (Task guide)
--   [Assign users to security roles (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles)
--   [Set up segregation of duties (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/set-up-segregation-duties)
--   [Identify and resolve conflicts in segregation of duties (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties)
+-   [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) (Task guide)
+-   [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) (Task guide)
+-   [Set up segregation of duties](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/set-up-segregation-duties) (Task guide)
+-   [Identify and resolve conflicts in segregation of duties](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties) (Task guide)
 
 ## Licensing
 -   [ISV licensing](../dev-tools/isv-licensing.md)
