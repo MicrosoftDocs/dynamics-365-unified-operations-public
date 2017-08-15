@@ -69,7 +69,7 @@
 
 ## Cost management
 ### Power BI content pack
-#### [Cost management content pack](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack??toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Cost management content pack](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Predetermined cost
 #### [Costing sheet](/dynamics365/unified-operations/supply-chain/cost-management/costing-sheets?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Costing version](/dynamics365/unified-operations/supply-chain/cost-management/costing-versions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -194,6 +194,8 @@
 ##### [Synchronize accounts from Sales to customers in Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Synchronize contacts from Sales to contacts or customers in Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/contacts-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Synchronize sales quotation headers and lines from Sales to Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-quotation-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Synchronize sales order headers and lines from Finance and Operations to Sales](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-order-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Synchronize sales invoice headers and lines from Finance and Operations to Sales](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-invoice-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Financial management
 
@@ -238,7 +240,7 @@
 ##### [Whole amount and interval calculation options for sales tax codes](/dynamics365/unified-operations/financials/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Expense management
 ##### [Plan expense management](/dynamics365/unified-operations/financials/expense-management/plan-expense-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Expense management parameters](/dynamics365/unified-operations/financials/expense-management/Expense-Management-Parameters?toc=dynamics365/unified-operations/financials/toc.json)
+##### [Expense management parameters](/dynamics365/unified-operations/financials/expense-management/Expense-Management-Parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Expense management mobile workspace](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### General ledger tasks
@@ -401,7 +403,7 @@
 ##### [Vendor payment overview](/dynamics365/unified-operations/financials/cash-bank-management/tasks/vendor-payment-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Advanced bank reconciliation
-##### [Advanced bank reconciliation overview](/dynamics365/unified-operations/financials/cash-bank-management/configure-advanced-bank-reconciliation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Advanced bank reconciliation setup tasks](/dynamics365/unified-operations/financials/cash-bank-management/configure-advanced-bank-reconciliation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up the advanced bank reconciliation import process](/dynamics365/unified-operations/financials/cash-bank-management/set-up-advanced-bank-reconciliation-import-process?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up bank reconciliation matching rules](/dynamics365/unified-operations/financials/cash-bank-management/set-up-bank-reconciliation-matching-rules?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Reconcile bank statements by using advanced bank reconciliation](/dynamics365/unified-operations/financials/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -477,7 +479,7 @@
 #### [Budget planning integration with other modules](/dynamics365/unified-operations/financials/budgeting/budget-planning-integration-other-modules?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Reporting](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Balance sheet financial reports](/dynamics365/unified-operations/financials/general-ledger/balance-sheet-financial-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Generate a financial report](/dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=dynamics365/unified-operations/financials/toc.json)
+#### [Generate a financial report](/dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Income statement financial report](/dynamics365/unified-operations/financials/general-ledger/income-statement-financial-report?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Trial balance financial reports](/dynamics365/unified-operations/financials/general-ledger/trial-balance-financial-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [View financial reports](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1316,7 +1318,6 @@
 #### [Reconcile freight](/dynamics365/unified-operations/supply-chain/transportation/reconcile-freight-transportation-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Register driver check-in and check-out for an appointment](/dynamics365/unified-operations/supply-chain/transportation/tasks/register-driver-check-check-out-appointment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up a carrier fuel index](/dynamics365/unified-operations/supply-chain/transportation/tasks/set-up-carrier-fuel-index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Set up a location directive for purchase order put-away](/dynamics365/unified-operations/supply-chain/transportation/tasks/set-up-location-directive-purchase-order-put-away?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up a transportation tender](/dynamics365/unified-operations/supply-chain/transportation/tasks/set-up-transportation-tender?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up accessorial assignments](/dynamics365/unified-operations/supply-chain/transportation/tasks/set-up-accessorial-assignments?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up an appointment for a load](/dynamics365/unified-operations/supply-chain/transportation/tasks/set-up-appointment-load?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1334,7 +1335,7 @@
 ##### [Set up layout](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Warehouse work policies](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-work-policies?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Unit of measure and stocking policies](/dynamics365/unified-operations/supply-chain/warehousing/unit-measure-stocking-policies?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Warehouse Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=dynamics365/unified-operations/supply-chain/toc.json)
+##### [Warehouse Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Batch and license plate confirmation](/dynamics365/unified-operations/supply-chain/warehousing/batch-and-license-plate-confirmation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Product confirmation for cluster picking](/dynamics365/unified-operations/supply-chain/warehousing/cluster-picking-item-confirmation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Mixed license plate receiving](/dynamics365/unified-operations/supply-chain/warehousing/mixed-license-plate-receiving?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1379,10 +1380,11 @@
 ##### [Enable license plate label printing](/dynamics365/unified-operations/supply-chain/warehousing/tasks/license-plate-label-printing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Register items for an advanced warehousing enabled item using an item arrival journal](/dynamics365/unified-operations/supply-chain/warehousing/tasks/register-items-advanced-warehousing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Register items for a basic warehousing enabled item using an item arrival journal](/dynamics365/unified-operations/supply-chain/warehousing/tasks/register-items-basic-warehousing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Set up a location directive for purchase order put-away](/dynamics365/unified-operations/supply-chain/transportation/tasks/set-up-location-directive-purchase-order-put-away?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Set up a min-max replenishment process](/dynamics365/unified-operations/supply-chain/warehousing/tasks/set-up-min-max-replenishment-process?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up containerization](/dynamics365/unified-operations/supply-chain/warehousing/tasks/set-up-containerization?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up dispositions codes](/dynamics365/unified-operations/supply-chain/warehousing/tasks/set-up-dispositions-codes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up manual packing (February & May 2016 only)](/dynamics365/unified-operations/supply-chain/warehousing/tasks/set-up-manual-packing-2016-02-05?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Set up a min-max replenishment process](/dynamics365/unified-operations/supply-chain/warehousing/tasks/set-up-min-max-replenishment-process?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up short picking item reallocation](/dynamics365/unified-operations/supply-chain/warehousing/tasks/set-up-short-picking-item-reallocation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up warehouse work policies ](/dynamics365/unified-operations/supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up a work template for purchase orders](/dynamics365/unified-operations/supply-chain/warehousing/tasks/set-up-work-template-purchase-orders?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1471,7 +1473,7 @@
 #### Product receipts and invoicing
 ##### [Product receipt against purchase orders](/dynamics365/unified-operations/supply-chain/procurement/product-receipt-against-purchase-orders?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Vendor management and collaboration
 ##### [Set up and maintain vendor collaboration](/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Manage vendor collaboration users](/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-users?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1844,7 +1846,7 @@
 ## Sales tax
 ### [Sales tax overview](/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview?toc=dynamics365/unified-operations/retail/toc.json)
 ### [Sales tax calculation methods in the Origin field](/dynamics365/unified-operations/financials/general-ledger/sales-tax-calculation-methods-origin-field?toc=dynamics365/unified-operations/retail/toc.json)
-### [Whole amount and Interval calculation options for sales tax codes](/dynamics365/unified-operations/financials/general-ledgerwhole-amount-interval-options-sales-tax-codes?toc=dynamics365/unified-operations/retail/toc.json)
+### [Whole amount and Interval calculation options for sales tax codes](/dynamics365/unified-operations/financials/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=dynamics365/unified-operations/retail/toc.json)
 
 ## Call center
 ### [Call center overview](/dynamics365/unified-operations/retail/call-center-functionality?toc=dynamics365/unified-operations/retail/toc.json)
@@ -1934,7 +1936,7 @@
 ### [LIFO with physical value and marking](/dynamics365/unified-operations/supply-chain/cost-management/lifo-physical-value-marking?toc=dynamics365/unified-operations/retail/toc.json)
 ### [Weighted average date](/dynamics365/unified-operations/supply-chain/cost-management/weighted-average-date?toc=dynamics365/unified-operations/retail/toc.json)
 ### [Weighted average with physical value and marking](/dynamics365/unified-operations/supply-chain/cost-management/weighted-average-physical-value-marking?toc=dynamics365/unified-operations/retail/toc.json)
-### [Quarantine orders](/dynamics365/unified-operations/supply-chain/inventory/quarantine-orders.md?toc=dynamics365/unified-operations/retail/toc.json)
+### [Quarantine orders](/dynamics365/unified-operations/supply-chain/inventory/quarantine-orders?toc=dynamics365/unified-operations/retail/toc.json)
 ### [Running average cost price](/dynamics365/unified-operations/supply-chain/cost-management/running-average-cost-price?toc=dynamics365/unified-operations/retail/toc.json)
 ### [Tracking running average cost per inventory dimension](/dynamics365/unified-operations/supply-chain/cost-management/track-running-average-cost-per-inventory-dimension?toc=dynamics365/unified-operations/retail/toc.json)
 
@@ -1943,44 +1945,44 @@
 ### [Setting up the components of a job](/dynamics365/unified-operations/hr/create-job?toc=dynamics365/unified-operations/retail/toc.json)
 
 ## Retail tasks
-### [ Base price and trade agreements](/dynamics365/unified-operations/retail/tasks/base-price-trade-agreements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Category pricing rules to create trade agreements](/dynamics365/unified-operations/retail/tasks/category-pricing-rules-trade-agreements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Configure credit card processing](/dynamics365/unified-operations/retail/tasks/configure-credit-card-processing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Configure the functionality profile for a sales representative](/dynamics365/unified-operations/retail/tasks/configure-functionality-profile-sales-representative?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Configure machine learning-powered product recommendations](/dynamics365/unified-operations/retail/tasks/configure-machine-learning-product-recommendations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Create and associate a device](/dynamics365/unified-operations/retail/tasks/create-associate-device?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Create and associate a hardware station](/dynamics365/unified-operations/retail/tasks/create-associate-hardware-station?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Create and associate registers](/dynamics365/unified-operations/retail/tasks/create-associate-registers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Create, calculate, and post a statement for a retail store](/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Create call center orders](/dynamics365/unified-operations/retail/tasks/create-call-center-orders?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Create financial dimensions for POS registers and configure dimension values on registers](/dynamics365/unified-operations/retail/tasks/create-financial-dimensions-pos?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Create financial dimensions for Retail channels and configure dimension values on stores](/dynamics365/unified-operations/retail/tasks/create-financial-dimensions-retail-channels?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Create online channels and define channel attributes](/dynamics365/unified-operations/retail/tasks/create-online-channel-define-channel-attributes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Create POS permission groups](/dynamics365/unified-operations/retail/tasks/create-pos-permission-groups?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Create a POS visual profile ](/dynamics365/unified-operations/retail/tasks/create-pos-visual-profile-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Create product packages for purchase orders](/dynamics365/unified-operations/retail/tasks/create-product-packages-purchase-orders?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Define call center channel and channel attributes](/dynamics365/unified-operations/retail/tasks/define-call-center-channel-channel-attributes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Define channel attributes](/dynamics365/unified-operations/retail/tasks/define-channel-attributes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Define continuity schedules](/dynamics365/unified-operations/retail/tasks/define-continuity-schedules?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Define loyalty programs](/dynamics365/unified-operations/retail/tasks/define-loyalty-programs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Define loyalty reward points](/dynamics365/unified-operations/retail/tasks/define-loyalty-reward-points?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Define loyalty schemes](/dynamics365/unified-operations/retail/tasks/define-loyalty-schemes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Design the relationships between organizational units](/dynamics365/unified-operations/retail/tasks/design-relationships-between-organizational-units?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Manage assortments ](/dynamics365/unified-operations/retail/tasks/manage-assortments-2016-11?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Parameter configurations for Retail statements](/dynamics365/unified-operations/retail/tasks/parameter-configurations-retail-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Payment configurations for Retail statements](/dynamics365/unified-operations/retail/tasks/payment-configurations-retail-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Perform self-service to download hardware station](/dynamics365/unified-operations/retail/tasks/perform-self-service-download-hardware-station?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Post online sales and payments](/dynamics365/unified-operations/retail/tasks/posting-online-sales-payments?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Process loyalty reward point adjustments](/dynamics365/unified-operations/retail/tasks/process-loyalty-reward-point-adjustments?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Push products from distribution center to store using buyer's push](/dynamics365/unified-operations/retail/tasks/push-products-distribution-center-store-buyers-push.md)
-### [ Retail price adjustments](/dynamics365/unified-operations/retail/tasks/retail-price-adjustments?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Configure and run a job to calculate statements](/dynamics365/unified-operations/retail/tasks/run-job-calculate-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Configure and run a job to post statements](/dynamics365/unified-operations/retail/tasks/run-job-post-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Generate and run out-of-box reports](/dynamics365/unified-operations/retail/tasks/run-out-box-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Set up rules and parameters for cross docking and buyer's push](/dynamics365/unified-operations/retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md)
-### [ Store configurations for Retail statements](/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Use a continuity program](/dynamics365/unified-operations/retail/tasks/use-continuity-program?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [ Configure a worker](/dynamics365/unified-operations/retail/tasks/worker?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Base price and trade agreements](/dynamics365/unified-operations/retail/tasks/base-price-trade-agreements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Category pricing rules to create trade agreements](/dynamics365/unified-operations/retail/tasks/category-pricing-rules-trade-agreements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Configure credit card processing](/dynamics365/unified-operations/retail/tasks/configure-credit-card-processing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Configure the functionality profile for a sales representative](/dynamics365/unified-operations/retail/tasks/configure-functionality-profile-sales-representative?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Configure machine learning-powered product recommendations](/dynamics365/unified-operations/retail/tasks/configure-machine-learning-product-recommendations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Create and associate a device](/dynamics365/unified-operations/retail/tasks/create-associate-device?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Create and associate a hardware station](/dynamics365/unified-operations/retail/tasks/create-associate-hardware-station?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Create and associate registers](/dynamics365/unified-operations/retail/tasks/create-associate-registers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Create, calculate, and post a statement for a retail store](/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Create call center orders](/dynamics365/unified-operations/retail/tasks/create-call-center-orders?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Create financial dimensions for POS registers and configure dimension values on registers](/dynamics365/unified-operations/retail/tasks/create-financial-dimensions-pos?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Create financial dimensions for Retail channels and configure dimension values on stores](/dynamics365/unified-operations/retail/tasks/create-financial-dimensions-retail-channels?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Create online channels and define channel attributes](/dynamics365/unified-operations/retail/tasks/create-online-channel-define-channel-attributes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Create POS permission groups](/dynamics365/unified-operations/retail/tasks/create-pos-permission-groups?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Create a POS visual profile ](/dynamics365/unified-operations/retail/tasks/create-pos-visual-profile-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Create product packages for purchase orders](/dynamics365/unified-operations/retail/tasks/create-product-packages-purchase-orders?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Define call center channel and channel attributes](/dynamics365/unified-operations/retail/tasks/define-call-center-channel-channel-attributes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Define channel attributes](/dynamics365/unified-operations/retail/tasks/define-channel-attributes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Define continuity schedules](/dynamics365/unified-operations/retail/tasks/define-continuity-schedules?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Define loyalty programs](/dynamics365/unified-operations/retail/tasks/define-loyalty-programs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Define loyalty reward points](/dynamics365/unified-operations/retail/tasks/define-loyalty-reward-points?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Define loyalty schemes](/dynamics365/unified-operations/retail/tasks/define-loyalty-schemes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Design the relationships between organizational units](/dynamics365/unified-operations/retail/tasks/design-relationships-between-organizational-units?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Manage assortments ](/dynamics365/unified-operations/retail/tasks/manage-assortments-2016-11?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Parameter configurations for Retail statements](/dynamics365/unified-operations/retail/tasks/parameter-configurations-retail-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Payment configurations for Retail statements](/dynamics365/unified-operations/retail/tasks/payment-configurations-retail-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Perform self-service to download hardware station](/dynamics365/unified-operations/retail/tasks/perform-self-service-download-hardware-station?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Post online sales and payments](/dynamics365/unified-operations/retail/tasks/posting-online-sales-payments?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Process loyalty reward point adjustments](/dynamics365/unified-operations/retail/tasks/process-loyalty-reward-point-adjustments?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Push products from distribution center to store using buyer's push](/dynamics365/unified-operations/retail/tasks/push-products-distribution-center-store-buyers-push?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Retail price adjustments](/dynamics365/unified-operations/retail/tasks/retail-price-adjustments?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Configure and run a job to calculate statements](/dynamics365/unified-operations/retail/tasks/run-job-calculate-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Configure and run a job to post statements](/dynamics365/unified-operations/retail/tasks/run-job-post-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Generate and run out-of-box reports](/dynamics365/unified-operations/retail/tasks/run-out-box-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Set up rules and parameters for cross docking and buyer's push](/dynamics365/unified-operations/retail/tasks/set-up-rules-parameters-cross-docking-buyers-push?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Store configurations for Retail statements](/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Use a continuity program](/dynamics365/unified-operations/retail/tasks/use-continuity-program?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Configure a worker](/dynamics365/unified-operations/retail/tasks/worker?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## [Retail development & administration](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=dynamics365/unified-operations/retail/toc.json)
 
@@ -2006,6 +2008,9 @@
 ### Upgrade and N-1 support
 #### [Overview of upgrade and N-1 support](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Install N-1 components](/dynamics365/unified-operations/retail/dev-itpro/n-1-installation-configuration?toc=dynamics365/unified-operations/retail/toc.json)
+
+### Environment configuration
+#### [Manage Bing Maps](/dynamics365/unified-operations/retail/dev-itpro/manage-bing-maps?toc=dynamics365/unified-operations/retail/toc.json)
 
 ### Extensibility
 #### Point of sale
@@ -2506,11 +2511,13 @@
 #### [Hardware sizing](/dynamics365/unified-operations/dev-itpro/get-started/hardware-sizing-on-premises-environments?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Create an on-premises project](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Set up and deploy on-premises environments](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Develop and deploy custom models to on-premises environments](/dynamics365/unified-operations/dev-itpro/deployment/develop-deploy-custom-models-on-premises?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### Deploy custom code
 #### [Create a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Apply a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Install a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/install-deployable-package?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Troubleshoot package application issues](/dynamics365/unified-operations/dev-itpro/deployment/deployable-package-troubleshooting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## [Upgrade and migration](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=dynamics365/unified-operations/fin-and-ops/toc.json)

@@ -5,7 +5,7 @@ title: Organization administration home page
 description: This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations in your organization.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,10 +50,10 @@ Number sequences
 -   [Planning the configuration of the global address book and additional address book](plan-configuration-global-address-book-additional-address-books.md)
 
 ## Workflow
--   [Overview of the workflow system](overview-workflow-system.md)
+-   [Workflow system overview](overview-workflow-system.md)
 -   [Workflow system architecture](workflow-system-architecture.md)
--   [Workflow elements](workflow-elements.md)
 -   [Workflow actions](workflow-actions.md)
+-   [Workflow elements](workflow-elements.md)
 -   [Create a workflow](create-workflow.md)
 -   [Configure the properties of a workflow](configure-workflow-properties.md)
 -   [Configure a manual task](configure-manual-task-workflow.md)
@@ -65,6 +65,12 @@ Number sequences
 -   [Configure a parallel activity](configure-parallel-activity-workflow.md)
 -   [Configure a parallel branch](configure-parallel-branch-workflow.md)
 -   [Configure a line-item workflow element](configure-line-item-workflow.md)
+- [Configure the Workflow message processing batch job as critical](workflow-batch-job-critical.md)
+- [Delegate work items in a workflow](./tasks/delegate-work-items-workflow.md) (Task guide)
+- [Enable users to receive workflow-related email messages](./tasks/users-receive-workflow-related-email-messages.md) (Task guide)
+- [View workflow history](./tasks/view-workflow-history.md) (Task guide)
+- [Workflow types report](workflow-types-report.md)
+
 
 ## Case management
 -   [Planning: Case setup](plan-case-management.md)
@@ -81,10 +87,16 @@ Number sequences
 -   [Create an organization hierarchy](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (Task guide)
 -   [Create a legal entity](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (Task guide)
 
+## Record templates
+-   [Record templates](record-templates.md)
+- [Create a record template to facilitate data entry](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry) (Task guide)
+- [Use a record template to create a new record](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/use-record-template-new-record)
+
+
 ## General administration
 -   [Change the banner or logo](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (Task guide)
 -   [About date/time data and time zones](date-time-zones.md)
--   [Record templates](record-templates.md)
+
 
 
 
