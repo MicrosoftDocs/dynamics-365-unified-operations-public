@@ -118,8 +118,8 @@ The following table shows whether each feature is available in:
 | | Word document generation| Yes | Yes |
 | | Email sending | Yes | Yes |
 | Organization administration | | | |
-| | Case management| Yes | ? |
-| | Case management for production and quality orders| Yes | ? |
+| | Case management| Yes | Yes |
+| | Case management for production and quality orders| Yes | Yes |
 | Planning and scheduling| | | |
 | Procurement and sourcing| | | |
 | | Intercompany order processing: ATP and direct shipment| Yes | Yes |
