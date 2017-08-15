@@ -51,15 +51,17 @@ To use the Prospect to cash solution, you must install
 
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update with Platform update 8 (App 7.2.11792.56024 w/ Platform 7.0.4565.16212). 
 
-- Install the following two hotfixes for for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update.
+- Two hotfixes for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update.
 
     -  [KB4036461](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036461&bugId=3847029&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2): This hotfix enables sales order synchronization with Data integrator from Dynamics 365 for Finance and Operations to Sales.
     -  [KB4036524](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036524&bugId=3847504&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2): This hotfix enables sales order line synchronization with Data integrator from Dynamics 365 for Finance and Operations to Sales.
  
-## System requirements for Dynamics 365 for Sales, Enterprise Edition
+## System requirements for Dynamics 365 for Sales
 
-- Solution was developed for Microsoft Dynamics 365 for Sales Version 1612 (8.2.1.207) (DB 8.2.1.207) online
-- Use Prospect to Cash Solution for Sales, version 1.14.0.0 or later
+To use the Prospect to cash solution, you must install 
+
+- Dynamics 365 for Sales Version 1612 (8.2.1.207) (DB 8.2.1.207) online.
+- Prospect to cash solution for Dynamics 365 for Sales, version 1.14.0.0 or later.
 
 ### Install the Prospect to cash solution for Dynamics 365 for Sales
 
