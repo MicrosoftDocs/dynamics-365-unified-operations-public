@@ -118,7 +118,7 @@ Before synchronizing sales orders, it is important to update the systems with th
 
 Set **Sales and marketing** > **Periodic tasks** > **Calculate sales totals** to run as a batch job, with **Calculate totals for sales orders** set to **Yes**. This is important because only the sales orders with sales totals calculated will be synced to CDS and Sales.
 
-### Setup in Data integration project
+### Setup in the Data integration project
 
 #### SalesHeader task
 
