@@ -2506,13 +2506,13 @@
 #### [Hardware sizing](/dynamics365/unified-operations/dev-itpro/get-started/hardware-sizing-on-premises-environments?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Create an on-premises project](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project?toc=/dynamics365/unified-operations/retail/toc.json)
 #### [Set up and deploy on-premises environments](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments?toc=/dynamics365/unified-operations/retail/toc.json)
-#### [Develop and deploy custom models to on-premises environments](dynamics365/unified-operations/dev-itpro/deployment/develop-deploy-custom-models-on-premises?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Develop and deploy custom models to on-premises environments](/dynamics365/unified-operations/dev-itpro/deployment/develop-deploy-custom-models-on-premises?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ### Deploy custom code
 #### [Create a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Apply a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Install a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/install-deployable-package?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Troubleshoot package application issues](dynamics365/unified-operations/dev-itpro/deployment/deployable-package-troubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json)
+#### [Troubleshoot package application issues](/dynamics365/unified-operations/dev-itpro/deployment/deployable-package-troubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json)
 
 ## [Upgrade and migration](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
