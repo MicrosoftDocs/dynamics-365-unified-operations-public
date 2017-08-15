@@ -2,7 +2,7 @@
 
 # required metadata
 title: Extensibility changes for Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
-description: 
+description: This is a list of extensibility features that were implemented with the July 2017 update.
 author: RobinARH
 manager: AnnBe
 ms.date: 08/13/2017
@@ -33,14 +33,14 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include[banner](../includes/banner.md)]
 
-This is a list of extensibility features that were implemented with the July 2017 update which has build number 7.2.11792.56024. 
+This is a list of extensibility features that were implemented with the July 2017 update which has build number 7.2.11792.56024. For more information about the schedule of changes that support extensbility, see [Application extensibility plans](extensibility-roadmap.md).
 
-## Soft sealing application models
+## Soft-sealed application models
 
-With the spring release a number of application 'middle tier' models were soft sealed. This means any overlayered code in these models will  generate warnings on compilation.
+The following application middle-tier models were soft-sealed in this release. Overlayered code in these models will generate warnings on compilation.
 
 | Category       | Model         |
-| :--------------- |:-------------|
+| --------------- |-------------|
 | Application Frameworks | CaseManagement |
 | Application Frameworks | Dimensions |
 | Application Frameworks | Directory |
@@ -72,12 +72,12 @@ With the spring release a number of application 'middle tier' models were soft s
 | Finance| Fiscalbooks |
 | Management tools | DataUpgrade |
 
-## Hard sealed application models
+## Hard-sealed application models
 
-With the spring release a few application middle tier models were hard sealed. This means any overlayered code is no longer supported with these models and trying to do so will generate errors on compilation.  These models should have never been overlayered.
+A few application middle-tier models were hard-sealed in this release. Overlayered code in these models will generate errors on compilation.
 
 | Category       | Model         |
-| :--------------- |:-------------|
+| --------------- |-------------|
 | Accounts Payable | AccountsPayableMobile |
 | Finance | FinancialReportingEntityStore|
 | Tools | PerformanceTool |
@@ -86,18 +86,19 @@ With the spring release a few application middle tier models were hard sealed. T
 |GER | ElectronicReportingCore|
 |GER | Electronic Reporting Application Suite Integration|
 
-## Enums made extensible
+## Enumerations that are now extensible
 
-Many enums have been made extensible in the standard application. An enum is made extensible by setting two properties on the enum: the IsExtensible property is set to Yes, and the UseEnumValue property is set to No.
+Some changes were made to support extending enumerations:
+- Many enumerations in the standard application were made extensible in this release. An enumeration is made extensible by setting two properties on the enumeration. The **IsExtensible** property is set to **Yes**, and the **UseEnumValue** property is set to **No**. 
+- Some enums represents state. We added new façade methods in some places to help enable adding enumeration values by extension. For information about extending an enumeration, see [Add an enum value](add-enum-value.md).
+- Some application code that uses enumerations was changed to support extensibility. Common changes included:
+    + Removing **throw** exception statements in the default case of a switch to allow post-event subscription.
+    + Adding **SysExtension** support for extension.
+    + Adding explicit delegates.
 
-Standard application code using the enum was also adjusted in places which were considered obvious for adding extensibility. The most common changes include removing throw exception statement in the default case of a switch  to allow post event subscription, adding SysExtension support for extension,  or  adding explicit delegates.
-
-Some enums represents state, and here we added new façade methods on select places to help enable adding enum values by extensions.
-
-Additional information is found here: [Add an enum value](add-enum-value.md)
 
 | Enum|
-| :--------------- |
+| --------------- |
 |AgreementState|
 |AssetAccountType|
 |AssetTransTypeJournal|
