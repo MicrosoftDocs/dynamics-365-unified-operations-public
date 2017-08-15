@@ -79,11 +79,17 @@ Sales invoices are created in Finance and Operations and synchronized to Sales.
  
 ## Preconditions and mapping setup
 
-Before synchronizing invoices, it is important to update Sales with the following setting:
+Before synchronizing sales invoices, it is important to update the systems with the following setting:
 
--  In Sales, under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Use system prizing calculation system** is set to **Yes**. 
+### Setup in Sales
 
-### InvoiceHeader
+- Under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Use system prizing calculation system** is set to **Yes**. 
+
+- Under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Discount calculation method** is set to **Line item**. 
+
+### Setup in the Data integration project
+
+#### InvoiceHeader task
 
 - Update the mapping for **CDS Organization ID** in **Source** > **CDS**. 
 
@@ -100,7 +106,7 @@ Before synchronizing invoices, it is important to update Sales with the followin
     -  Template value for **pricelevelid.name [Price List Name]** is **ValueMap** based on **Currency**.
     -  usd: CRM Service USA (sample). 
 
-### InvoiceLine
+#### InvoiceLine task
 
 - Ensure that the needed mapping exists in **Source** > **CDS for Unit of measure**.
 
