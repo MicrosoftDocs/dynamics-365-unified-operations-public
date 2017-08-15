@@ -2512,7 +2512,7 @@
 #### [Create a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Apply a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Install a deployable package](/dynamics365/unified-operations/dev-itpro/deployment/install-deployable-package?toc=/dynamics365/unified-operations/talent/toc.json)
-#### [Troubleshoot package application issues](dynamics365/unified-operations/dev-itpro/deployment/deployable-package-troubleshooting?toc=/dynamics365/unified-operations/talent/toc.json)
+#### [Troubleshoot package application issues](/dynamics365/unified-operations/dev-itpro/deployment/deployable-package-troubleshooting?toc=/dynamics365/unified-operations/talent/toc.json)
 
 ## [Upgrade and migration](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
