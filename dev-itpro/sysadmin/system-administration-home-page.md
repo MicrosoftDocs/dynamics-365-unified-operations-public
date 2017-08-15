@@ -90,6 +90,10 @@ Lifecycle Services
 
 ## Mobile
 -   [Mobile platform](../mobile-apps/platform/mobile-platform-home-page.md)
+- [Mobile app home page](../mobile-apps/Mobile-app-home-page.md)
+- [Mobile workspaces](../mobile-apps/mobile-workspaces-released.md)
+- [Publish a mobile workspace](../mobile-apps/publish-mobile-workspace.md)
+
 
 ## General administration
 -   [Finance and Operations cloud platform monthly updates](faq-platform-monthly-updates.md)
