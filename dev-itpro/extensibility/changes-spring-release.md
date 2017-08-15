@@ -1,8 +1,8 @@
 ---
 
 # required metadata
-title: Extensibility home page
-description: This topic provides links to topics about extensibility.
+title: Extensibility changes for Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+description: 
 author: RobinARH
 manager: AnnBe
 ms.date: 08/13/2017
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Extensibility changes with Spring 2017 release
+# Extensibility changes for Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
 
 [!include[banner](../includes/banner.md)]
 
-This is a list of extensibility features that was implemented with the Spring 2017 release. Features have been grouped according to what was done with brief descriptions for each group.
+This is a list of extensibility features that were implemented with the July 2017 update which has build number 7.2.11792.56024. 
 
 ## Soft sealing application models
 
