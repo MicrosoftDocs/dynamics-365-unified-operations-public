@@ -706,19 +706,19 @@ Some changes were made to support extending enumerations:
 |WrkCtrType|
 |WrkCtrTypeFilter|
 
-The following enums were decided to be removed rather than make them extensible.
+We removed these enumerations rather than make them extensible:
 
-| Enum|
-| :--------------- |
+| Enumeration removed |
+| --------------- |
 |BackorderLinesListPageMode|
 |BackorderPurchLinesListPageMode |
 |EcoResProductPerCompanyListPageType |
 |ReturnTableListPageType |
 |SMAAgreementTableListPageType|
 
-Some foundation changes were required to improve support for extensible enums. The SysPlugin framework was enabled for enums set to IsExtensible. Views were enabled with new name based syntax for enums.
+We hade to make some foundation changes to improve support for extensible enumerations. The **SysPlugin** framework was enabled for enumerations where **IsExtensible** is set to **Yes**. Views were enabled with new name based syntax for enumerations.
 
-Data manipulation methods that do not raise DataEvents or Missing Insert, Update, Delete pre-/post-data events
+Data manipulation methods that do not raise DataEvents or Missing Insert, Update, Delete pre-/post-data events.
 
 As a general rule, data methods on tables raise events that can be used for extending the application.  There were exceptions to this practice in the code base, however.  Two examples are doDelete data methods and certain table implementations that did not make a super() in the data method.
 
