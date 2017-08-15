@@ -34,18 +34,18 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-The Prospect to cash solution uses [Data Integrator](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration) to synchronize data across Dynamics 365 Finance and Operations or Dynamics 365 for Sales instances via the Common Data Service. The Prospect to cash templates available with the Data Integrator enable the flow of product, account, contact, and sales quote data between Dynamics 365 for Finance and Operations and Dynamics 365 for Sales. While the data is flowing between Finance and Operations and Dynamics 365 for Sales, you can carry out sales and marketing activities in Dynamics 365 for Sales and handle the order fulfillment with inventory management in Finance and Operations. 
+The Prospect to cash solution uses [Data Integrator](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration) to synchronize data across Microsoft Dynamics 365 Finance and Operations, Enterprise edition (Finance and Operations) and Microsoft Dynamics 365 for Sales (Sales) instances via the Common Data Service. The Prospect to cash templates available with the Data Integrator enable the flow of product, account, contact, and sales quote data between Finance and Operations and Sales. While the data is flowing between Finance and Operations and Sales, you can carry out sales and marketing activities in Sales and handle the order fulfillment with inventory management in Finance and Operations. 
 
 This solution provides integration in the following areas: 
 
--   Maintain accounts in Dynamics 365 for Sales and sync them to Finance and Operations.
--   Maintain contacts in Dynamics 365 for Sales and sync them to Finance and Operations.
--   Maintain products in Finance and Operations and sync them to Dynamics 365 for Sales.
-- 	Create sales quotes in Dynamics 365 for Sales and sync them to Finance and Operations.
--   Create sales orders in Finance and Operations and sync them to Dynamics 365 for Sales.
--   Create sales invoices in Finance and Operations and sync them to Dynamics 365 for Sales.
+-   Maintain accounts in Sales and sync them to Finance and Operations.
+-   Maintain contacts in Sales and sync them to Finance and Operations.
+-   Maintain products in Finance and Operations and sync them to Sales.
+- 	Create sales quotes in Sales and sync them to Finance and Operations.
+-   Create sales orders in Finance and Operations and sync them to Sales.
+-   Create sales invoices in Finance and Operations and sync them to Sales.
 
-## System requirements for Dynamics 365 for Finance and Operations, Enterprise Edition
+## System requirements for Finance and Operations, Enterprise Edition
 
 To use the Prospect to cash solution, you must install 
 
@@ -56,7 +56,7 @@ To use the Prospect to cash solution, you must install
     -  [KB4036461](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036461&bugId=3847029&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2): This hotfix enables sales order synchronization with Data integrator from Dynamics 365 for Finance and Operations to Sales.
     -  [KB4036524](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036524&bugId=3847504&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2): This hotfix enables sales order line synchronization with Data integrator from Dynamics 365 for Finance and Operations to Sales.
  
-## System requirements for Dynamics 365 for Sales
+## System requirements for Sales
 
 To use the Prospect to cash solution, you must install 
 
