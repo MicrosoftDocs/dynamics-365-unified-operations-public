@@ -89,7 +89,7 @@ Before synchronizing sales invoices, it is important to update the systems with 
 
 ### Setup in the Data integration project
 
-#### InvoiceHeader task
+#### SalesInvoiceHeader task
 
 - Update the mapping for **CDS Organization ID** in **Source** > **CDS**. 
 
@@ -106,7 +106,7 @@ Before synchronizing sales invoices, it is important to update the systems with 
     -  Template value for **pricelevelid.name [Price List Name]** is **ValueMap** based on **Currency**.
     -  usd: CRM Service USA (sample). 
 
-#### InvoiceLine task
+#### SalesInvoiceLine task
 
 - Ensure that the needed mapping exists in **Source** > **CDS for Unit of measure**.
 
