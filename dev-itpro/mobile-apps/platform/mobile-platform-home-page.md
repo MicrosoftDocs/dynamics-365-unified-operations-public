@@ -53,7 +53,7 @@ We also have a video series about creating a mobile app:
 ## Common configurations
 
 + [Localize mobile workspaces](scenarios/localize-workspaces-on-server.md)
-+ [Secure mobile workspaces](scenarios/secure-mobile-workspace.md)
++ [Help secure mobile workspaces](scenarios/secure-mobile-workspace.md)
 + [Set up clickable fields](scenarios/make-workspace-field-clickable.md)
 + [Set up mandatory fields through workspace classes](scenarios/make-field-mandatory.md)
 + [Display item counts in a field](scenarios/display-count-workspace.md)
