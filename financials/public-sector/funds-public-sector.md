@@ -5,7 +5,7 @@ title: Funds in the public sector
 description: A fund is a self-balancing set of financial books that is used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements. Public-sector organizations use funds to demonstrate their fiscal accountability.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -103,6 +103,14 @@ Public sector organizations usually require balanced entries for financial dimen
 
 ## How do I set a fund balance to carry over to the new year?
 To learn about year-end processing for funds, see [Year-end processing in the public sector](year-end-processing-public-sector.md).
+
+
+For more information, see the following topics:
+
+[Create a fund type](tasks/create-fund-type-public-sector.md)
+
+[Set up a fund](tasks/set-up-fund-public-sector.md)
+
 
 
 

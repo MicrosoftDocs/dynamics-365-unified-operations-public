@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 11
+ms.reviewer: margoc
 ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 253274
@@ -48,7 +48,8 @@ The Microsoft Dynamics 365 for Finance and Operations platform consists of the f
     -   Application Foundation
     -   Test Essentials
 
-**Important:** To move to the latest Finance and Operations platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in platform update 3, so that seamless continuous updates can be made to the platform. If you are running on an platform that is older than platform update 3, see the **Upgrading to platform update 3 from an earlier build** section at the end of this topic.
+> [!IMPORTANT]
+> To move to the latest Finance and Operations platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform. If you are running on an platform that is older than Platform update 3, see the section [Upgrading to Platform update 3 from an earlier build](#Upgrading-to-platform-update-3-from-an-earlier-build) section at the end of this topic.
 
 ## Overall flow
 The following illustration shows the overall process for upgrading the Finance and Operations platform to the latest update.
@@ -61,7 +62,7 @@ After upgrading to Platform update 6 or later, an administrator needs to click t
 There are 3 ways to get the latest platform update package.
 - In Lifecycle Services (LCS), import the platform update package from the Shared Asset Library.
 - Search for "platform update" in LCS **Issue Search**.
-- Click the **Binary Updates** tile of your environment's page in LCS (As of platform update 4, binary updates from LCS include an upgrade to the latest platform).
+- Click the **Binary Updates** tile of your environment's page in LCS (As of Platform update 4, binary updates from LCS include an upgrade to the latest platform).
 
 ### Import the platform update package
 Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Dynamics 365 packages are currently prefixed with *Finance and Operations Platform Update* (for example, Finance and Operations Platform Update 3)*.* Use these steps to import the platform update package:
@@ -79,7 +80,10 @@ From a process perspective, deploying a platform upgrade package resembles a b
 ## Apply the platform update package on your development environment
 ### Delete platform metadata hotfixes from your VSTS project
 
-Before you install the new platform update, you must clean up your Microsoft Visual Studio Team Services (VSTS) source control project. If you are already on platform update 3 or newer, you can skip this section.  
+> [!NOTE]
+> Skip this section if you are already on Platform update 3 and updating to a newer platform.
+
+Before you install the new platform update, you must clean up your Microsoft Visual Studio Team Services (VSTS) source control project.
 Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your VSTS project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
 
 -   Application Platform
@@ -113,6 +117,9 @@ You can find these hotfixes by browsing the check-in history of these Microsoft 
 
 ### Install the Visual Studio development tools
 
+> [!NOTE]
+> Skip this section if you are updating to platform update 4 or newer, development tools are automatically installed as part of installing the deployable package.
+
 Update the Visual Studio development tools as described in [Updating the Visual Studio development tools](../dev-tools/update-development-tools.md).
 
 ### Regenerate form adaptor models
@@ -132,6 +139,9 @@ The following examples show how to generate the form adaptor models.
     xppfagen.exe -metadata=j:\AosService\PackagesLocalDirectory -model="DirectoryFormAdaptor" -xmllog="c:\temp\log3.xml"
 
 ### Install the new Data Management service
+
+> [!NOTE]
+> Skip this section if you are updating to platform update 4 or newer, the data management service is automatically installed as part of installing the deployable package.
 
 After the deployable package is installed, follow these instructions to install the new Data Management service. Open a **Command Prompt** window as an administrator, and run the following commands from the .\\DIXFService\\Scripts folder.
 

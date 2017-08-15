@@ -17,8 +17,9 @@ ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesT
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
@@ -33,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Weighted average date
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Weighted average date is an inventory model that is based on the weighted average principle. For the weighted average principle, issues from inventory are valued at the average value of the items that are received into inventory for each day in the inventory closing period. When you run an inventory closing by using weighted average date, all daily receipts are settled against a virtual issue. This virtual issue holds the total received quantity and value for that day. The virtual issue has a corresponding virtual receipt that the issues will be settled against. Therefore, all issues receive the same average cost. The virtual issue and virtual receipt can be considered a virtual transfer that is known as the *weighted average inventory closing transfer*. 

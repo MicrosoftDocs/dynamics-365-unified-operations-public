@@ -50,7 +50,7 @@ ms.dyn365.ops.version: Dynamics 365 for Retail
 
 
 ## What is a payment connector and in what cases do I need to deploy and implement a payment connector?
-Payment connectors are software components that can be set up for Dynamics 365 Unified Operations applications, which enable the applications to process payments for transactions where the card is not present and transactions where the card is present.
+Payment connectors are software components that can be set up which enable an application to process payments for transactions where the card is not present and transactions where the card is present.
 
 Microsoft-provided connectors such as Verifone and MasterCard can be used, or custom connectors can be built by ISV partners. A connector is typically built to meet the business needs of a customer. Custom connectors are often created when there is a scenario that requires a new type of payment type (for example, linked refunds). Customers doing business in certain geographies may need new connectors if the out-of-box connectors do not support those regions.
           

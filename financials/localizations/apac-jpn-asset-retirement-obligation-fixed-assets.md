@@ -21,7 +21,6 @@ ms.reviewer: shylaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 10174
-ms.assetid: f14ac15f-b99b-4853-9648-de31f3cb36cf
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: RichardLuan
@@ -63,6 +62,9 @@ To use ARO, you must complete the following setup tasks:
 -   Set up an estimated retirement cost plan for ARO, and simulate ARO amounts for each fiscal period of the asset’s service life
 -   Set up a posting profile for the **Capitalized asset retirement obligation** and **Asset retirement obligation - accretion** **expense** document types
 -   Set up accounts that the transaction amounts are retrieved from when you post a fixed asset that has a transaction type of **ARO for disposal**
+
+## Set up asset retirement obligation documents and enter ARO amount on a fixed asset
+See [Set up asset retirement obligation documents](./tasks/set-up-asset-retirement-obligation.md).
 
 ## Technical information for system administrators
 If you don't have access to the pages that are used to complete this task, contact your system administrator and provide the information that is shown in the following table.

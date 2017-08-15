@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
+ms.reviewer: kfend
 ms.search.scope: Core
 # ms.tgt_pltfrm: 
 ms.custom: 55651
@@ -37,7 +37,7 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 
 ## Get started
 - [Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) overview](on-premises-overview.md)
-- [System requirements](../get-started/system-requirements.md)
+- [System requirements for on-premises deployments](../get-started/system-requirements-on-prem.md)
 - [Hardware sizing for on-premises environments](../get-started/hardware-sizing-on-premises-environments.md)
 - [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
 - [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](../get-started/purchase-on-premises.md)
@@ -49,7 +49,7 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 - [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md)
 
 ## Work in your on-premises deployment
-- [Configure document management](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management.md)
+- [Configure document management](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management)
 - [Import Electronic reporting configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Document generation, publishing, and printing capabilities in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
 - [Set up technical support](../lifecycle-services/support-experience.md)

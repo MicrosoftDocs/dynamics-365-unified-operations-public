@@ -5,7 +5,7 @@ title: Resolve discrepancies during invoice totals matching
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 101
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 63413
@@ -49,6 +49,6 @@ After you identify a discrepancy, you might have to contact the vendor if you th
 -   Revise the invoice amount to the expected amount, and post the invoice.
 -   Request a full credit and a new, corrected invoice from the vendor.
 
-
+For more information, see [Research or resolve exceptions](tasks/research-resolve-exceptions.md).
 
 

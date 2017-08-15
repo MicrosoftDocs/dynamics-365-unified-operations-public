@@ -5,7 +5,7 @@ title: View journal entries and transactions
 description: This article explains the various ways that you can view journal entries and transactions. 
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: LedgerTransVoucher
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: RobinARH
+ms.reviewer: robinr
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 13031
@@ -63,6 +63,7 @@ In addition to the financial reports, you can use the following ledger reports t
 - [General ledger account balances](general-ledger-account-balances.md) 
 - [Accounting source explorer](..\accounts-payable\accounting-source-explorer.md)
 - [Financial reporting](financial-reporting-getting-started.md)
+- [View journal entries](tasks/view-journal-entries-or-transactions.md)
 
 
 

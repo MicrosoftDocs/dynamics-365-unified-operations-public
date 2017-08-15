@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: sericks007
+ms.reviewer: sericks
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 13531
@@ -52,7 +52,6 @@ Lifecycle Services
 -   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
 -   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
 -   [Install retail hotfixes](/dynamics365/unified-operations/retail/dev-itpro/install-retail-hotfix?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
--   [Installing a financial reporting binary hotfix](..\migration-upgrade\install-financial-reporting-binary-hotfix.md)
 -   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
 
 ## Upgrade
@@ -72,10 +71,10 @@ Lifecycle Services
 ## Security
 -   [Role-based security](role-based-security.md)
 -   [Security architecture](security-architecture.md)
--   [Create new users (Task guide)](http://ax.help.dynamics.com/en/wiki/create-new-users/) (Task guide)
--   [Assign users to security roles (Task guide)](http://ax.help.dynamics.com/en/wiki/assign-users-to-security-roles/)
--   [Set up segregation of duties (Task guide)](http://ax.help.dynamics.com/en/wiki/set-up-segregation-of-duties/)
--   [Identify and resolve conflicts in segregation of duties (Task guide)](http://ax.help.dynamics.com/en/wiki/identify-and-resolve-conflicts-in-segregation-of-duties/)
+-   [Create new users (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) (Task guide)
+-   [Assign users to security roles (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles)
+-   [Set up segregation of duties (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/set-up-segregation-duties)
+-   [Identify and resolve conflicts in segregation of duties (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties)
 
 ## Licensing
 -   [ISV licensing](../dev-tools/isv-licensing.md)
@@ -84,13 +83,13 @@ Lifecycle Services
 -   [Microsoft Dynamics 365 for Finance and Operations – Retail for IT Pros and developers](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)
 
 ## Mobile
--   [Finance and Operations mobile platform](../mobile-apps/mobile-platform.md)
+-   [Mobile platform](../mobile-apps/platform/mobile-platform-home-page.md)
 
 ## General administration
 -   [Finance and Operations cloud platform monthly updates](faq-platform-monthly-updates.md)
 -   [Batch processing overview](batch-processing-overview.md)
 -   [Batch server overview](batch-server-overview.md)
--   [Create a batch job](http://ax.help.dynamics.com/en/wiki/create-a-batch-job/) (Task guide)
+-   [Create a batch job](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-batch-job) (Task guide)
 -   [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
 -   [Maintenance mode](maintenance-mode.md)
 -   [Demo data overview](../get-started/demo-data.md)

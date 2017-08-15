@@ -3,7 +3,7 @@
 
 title: Deploy a payment connector
 description: This topic describes how to deploy a payment connector package to the appropriate components. 
-author: MargoC
+author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 141393

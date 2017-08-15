@@ -10,7 +10,9 @@
           "**/includes/**",
           "README.md",
           "LICENSE",
-          "LICENSE-CODE"
+          "LICENSE-CODE",
+          "**/_themes/**", 
+          "**/_themes.pdf/**"
         ]
       }
     ],

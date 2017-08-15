@@ -5,7 +5,7 @@ title: Purchase orders for a project
 description: This article describes the various methods that you can use to create purchase orders for a project. The method that you use depends on the purpose of the purchase order, and when the purchased items are consumed and charged to a project.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: twheeloc
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 83972
@@ -82,5 +82,5 @@ You can use one of the following methods to create a purchase order in Project m
 > [!NOTE] 
 > When you update the vendor invoice or packing slip, you're prompted to update the packing slip on the item requirement.
 
-
+For more information, see [Receive items on purchase order from item requirement](tasks/receive-items-purchase-order-item-requirement.md).
 

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Submit a request to the Dynamics Service Engineering team
-description: You can submit requests directly to the Dynamics Service Engineering (DSE) team by using Lifecycle Services (LCS). You no longer have to submit on multiple sites based on the request.
-author: kfend
+description: You can submit requests directly to the Dynamics Service Engineering team by using LCS. 
+author: manalidongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: 51
+ms.reviewer: kfend
 ms.search.scope: Operations, Platform, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 254564
@@ -44,12 +44,14 @@ You can now submit requests directly to the Dynamics Service Engineering (DSE) 
 
 The following request types are supported by this functionality:
 
--   **Database refresh** – This includes, for example, the ability to refresh a database from Production to Sandbox.
--   **Database point-in-time restore** – This includes, for example, restoring a non-production database to a specific point in time.
 -   **Other requests** – This includes requests other than those listed above or automated flow requests. For example, you might use this request type for upgrade or to request the system be put into maintenance mode. Note, this should not be used to submit support requests.
 -   **Package application** – To apply a package to the Production environment, on the **Environment details** page, click **Maintain** to select the package to apply. Then, select **Schedule**.
 -   **Environment deployment** – To set the deployment options and submit a request to the Dynamics Service Engineering team to deploy a new environment, click **Configure** on the **Environments** pane.
+-   **Database point-in-time restore** – This includes, for example, restoring a non-production database to a specific point in time.
+-   **Database refresh** – This includes, for example, the ability to refresh a database from Production to Sandbox.
 
-
-
+  > [!NOTE]
+  > Once the database refresh request has been completed by DSE, you must perform the following additional steps.
+ [!include[environment-reprovision](../includes/environment-reprovision.md)]
+ 
 

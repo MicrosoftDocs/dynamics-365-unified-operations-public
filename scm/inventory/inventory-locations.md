@@ -17,7 +17,7 @@ ms.search.form: WMSLocation
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 2134
@@ -71,7 +71,7 @@ It is possible to copy locations from one warehouse to another and to create lo
 See also
 --------
 
-[Create a new warehouse layout (task guide)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+[Create a new warehouse layout (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-new-warehouse-layout)
 
 
 

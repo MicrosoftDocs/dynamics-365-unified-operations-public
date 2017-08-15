@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 261824
@@ -35,15 +35,20 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes how to reset the financial reporting data mart after restoring a Microsoft Dynamics 365 for Finance and Operations database. 
+This topic describes how to reset the financial reporting data mart after restoring a Microsoft Dynamics 365 for Finance and Operations database.
 
-There are several scenarios where you may need to restore your Finance and Operations database from a backup or copy the database from another environment. When this occurs, you also need to follow the appropriate steps to ensure that the financial reporting data mart is correctly using the restored Finance and Operations database. If you have questions about resetting the financial reporting data mart for a reason outside of restoring a Finance and Operations database, refer to the [Resetting the Management Reporter data mart](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) for more information. Note that the steps in this process are supported for Dynamics 365 for Operation May 2016 release (App build 7.0.1265.23014 and financial reporting build 7.0.10000.4) and newer releases. If you have an earlier release of Finance and Operations, please contact our Support team for assistance.
+If you ever restore your Finance and Operations database from a backup or copy the database from another environment, you must follow the steps in this topic to ensure that the financial reporting data mart is correctly using the restored Finance and Operations database. 
+<!--If you have questions about resetting the financial reporting data mart for a reason outside of restoring a Finance and Operations database, refer to the [Resetting the Management Reporter data mart](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) for more information. -->
+> [!Note] 
+> The steps in this process are supported for Dynamics 365 for Operation May 2016 release (App build 7.0.1265.23014 and financial reporting build 7.0.10000.4) and newer releases. If you have an earlier release of Finance and Operations, contact our Support team for assistance.
 
 ## Export report definitions
 First, export the report designs located in the Report Designer, using the following steps:
 
 1.  In the Report Designer, go to **Company** &gt; **Building Block Groups**.
-2.  Select the building block group to export, and click **Export**. **Note:** For Finance and Operations, only one building block group is supported, **Default**.
+2.  Select the building block group to export, and click **Export**. 
+    > [!Note] 
+    > For Finance and Operations, only one building block group is supported, **Default**.
 3.  Select the report definitions to export:
     -   To export all your report definitions and the associated building blocks, click **Select All**.
     -   To export specific reports, rows, columns, trees, or dimension sets, click the appropriate tab, and then select the items to export. Press and hold the Ctrl key to select multiple items in a tab. When you select reports to export, the associated rows, columns, trees, and dimension sets are selected.
@@ -68,9 +73,9 @@ Use Remote Desktop to connect to all the computers in the environment and stop t
 These services will have open connections to the Finance and Operations database.
 
 ## Reset
-#### Locate the latest DataUpgrade.zip package
+#### Locate and download the latest MinorVersionDataUpgrade.zip package
 
-Locate the latest DataUpgrade.zip package using the directions found in [Download the DataUpgrade.zip script](..\migration-upgrade\upgrade-data-to-latest-update.md). The directions explain how to locate the correct version of the data upgrade package for your environment.
+Locate the latest MinorVersionDataUpgrade.zip package using the directions found in [Download the latest data upgrade deployable package](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). The directions explain how to locate and download the correct version of the data upgrade package. An upgrade is not required to download the MinorVersionDataUpgrade.zip package. You only need to complete the steps in the “Download the latest data upgrade deployable package” section without performing any of the other steps in the article to retrieve a copy of the MinorVersionDataUpgrade.zip package.
 
 #### Execute scripts against Finance and Operations database
 
@@ -110,8 +115,10 @@ Import your report designs from the Report Designer, using the file created duri
 
 1.  In the Report Designer, go to **Company** &gt; **Building Block Groups**.
 2.  Select the building block group to export, and click **Export**. 
+
     > [!NOTE]
     > For Finance and Operations, only one building block group is supported, **Default**.
+    
 3.  Select the **Default** building block and click **Import**.
 4.  Select the file containing the exported report definitions and click **Open**.
 5.  In the Import dialog box, select the report definitions to import:

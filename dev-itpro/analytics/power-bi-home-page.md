@@ -2,12 +2,12 @@
 # required metadata
 
 
-title: Power BI content available
+title: Power BI content 
 description: This topic lists the Power BI content that is available and points you to resources where you can learn more about it.
 
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,7 +19,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 265694
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Power BI content available
+# Power BI content
 [!include[banner](../includes/banner.md)]
 
 
@@ -41,22 +41,23 @@ This topic lists the Microsoft Power BI content that is available and points you
 ## Power BI content for Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
 If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, the following Power BI content is available:
 
+- [Actual vs budget Power BI content](ledger-budgets-power-bi.md)
 - [Benefits Power BI content](benefits-power-bi.md)
-- [Cash overview Power BI content](/dynamics365/operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
+- [Cash overview Power BI content](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 - [CFO overview Power BI content](CFO-power-bi.md)
 - [Compensation Power BI content](compensation-power-bi.md)
 - [Cost accounting analysis Power BI content*](cost-accounting-analysis-content-pack.md) 
-- [Credit and collections management Power BI content](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [Credit and collections management Power BI content](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi)
 - [Employee development Power BI content](employee-development-PBI.md) 
 - [Financial performance Power BI content*](financial-performance-power-bi-content-pack.md)
-- [Fixed asset management Power BI content](/dynamics365/operations/financials/fixed-assets/Fixed-asset-management-workspace)
+- [Fixed asset management Power BI content](/dynamics365/unified-operations/financials/fixed-assets/Fixed-asset-management-workspace)
 - [Learning Power BI content](learning-power-bi.md)
 - [Practice manager Power BI content](practice-manager-power-bi.md)
 - [Production performance Power BI content](production-performance-power-bi.md)
 - [Purchase spend analysis Power BI content](purchase-content-pack-for-power-bi.md) 
 - [Recruiting Power BI content](recruiting-analysis-power-bi-content-pack.md) 
 - [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)
-- [Vendor payments Power BI content](/dynamics365/operations/financials/accounts-payable/Vendor-payments-workspace)
+- [Vendor payments Power BI content](/dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace)
 - [Warehouse performance Power BI content](warehouse-power-bi-content.md)
 - [Workforce metrics Power BI content](workforce-analysis-power-bi-content-pack.md)  
 
@@ -75,7 +76,7 @@ If you're using Microsoft Dynamics 365 for Operations version 1611, the followin
 
 - [Compensation and benefits Power BI content](compensation-and-benefits-analysis-power-bi-content-pack.md)   
 - [Cost accounting analysis Power BI content](cost-accounting-analysis-content-pack.md) 
-- [Credit and collections management Power BI content](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [Credit and collections management Power BI content](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi)
 - [Employee competencies and development Power BI content](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
 - [Financial performance Power BI content](financial-performance-power-bi-content-pack.md)
 - [Organizational training Power BI content](organizational-training-analysis-power-bi-content-pack.md) 

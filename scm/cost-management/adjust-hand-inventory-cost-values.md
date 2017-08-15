@@ -16,8 +16,6 @@ ms.technology:
 ms.search.form: InventAdjInventOnHand
 # ROBOTS:
 audience: Application User
-# ms.devlang:
-# ms.reviewer: 2094
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm:
 ms.custom: 53231
@@ -33,8 +31,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Adjust on-hand inventory cost values
 
 [!include[banner](../includes/banner.md)]
-
-Test!
 
 Use the Adjustment of on-hand inventory page to adjust the cost value of the on-hand inventory quantities after an inventory close process is run.
 

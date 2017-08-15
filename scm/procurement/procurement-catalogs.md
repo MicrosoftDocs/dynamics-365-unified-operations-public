@@ -17,7 +17,7 @@ ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 2214
@@ -78,7 +78,7 @@ Updates are published either automatically or manually, depending on the option 
 See also
 --------
 
-[Set up a procurement category hierarchy (Task guide)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+[Set up a procurement category hierarchy (Task guide)](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-procurement-category-hierarchy)
 
 
 

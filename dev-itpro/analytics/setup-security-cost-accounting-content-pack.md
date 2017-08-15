@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 270294
@@ -50,11 +50,11 @@ To propagate access-level security to Power BI, the owner of the Power BI conten
 3.  Find the dataset for the **Cost accounting analysis** Power BI content.
 4.  Open the security page. 
 
-    [![Opening the security page](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)
+    ![Opening the security page](./media/CA-picture-1.png)
 
 5.  The **Cost object controller** role is already created. Add other members who are part of the Cost accounting access-level organizational hierarchy. 
 
-    [![Adding members](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)
+    ![Adding members](./media/CA-picture-2.png)
 
 Users who are added to the **Cost object controller** role will see only the data that they are allowed to see, according to the definition in the Cost accounting access-level organizational hierarchy. **Note:** Row-level security applies to tiles and reports in Microsoft Dynamics 365 for Finance and Operations that are embedded from Power BI.
 

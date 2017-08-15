@@ -5,7 +5,7 @@ title: Sales complementary fiscal documents for Brazil
 description: This topic describes sales complementary invoice for the Brazilian localization.
 author: sndray
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -65,5 +65,15 @@ Before you can create or post sales complementary fiscal documents, the followin
 ## Examples
 [![Examples of an original invoice and sales complementary fiscal documents of each of the three types](./media/salescomplementary-1024x409.png)](./media/salescomplementary.png)
 
+For more information, see the following topics:
+
+ - [Create and post a sales complementary fiscal document](tasks/br-00052-1-create-post-sales-complementary-fiscal-documents.md)
+ - [Cancel a sales complementary fiscal document](tasks/br-00052-2-cancel-sales-complementary-fiscal-document.md)
+ - [Issue customer fiscal documents (services)](tasks/br-00084-issuing-customer-fiscal-documents-services.md)
+ - [Issue customer fiscal documents (fixed assets)](tasks/br-00085-issuing-customer-fiscal-documents-fixed-assets.md)
+ - [Issue customer fiscal documents (project)](tasks/br-00086-issuing-customer-fiscal-documents-project.md)
+ - [Issue customer fiscal documents (for end users)](tasks/br-00087-issuing-customer-fiscal-documents-end-user.md)
+ - [Issue customer fiscal documents (for SUFRAMA customers)](tasks/br-00088-issuing-customer-fiscal-documents-suframa-customers.md)
+ - [Cancel a customer fiscal document (project)](tasks/br-00092-cancel-customer-fiscal-document-project.md)
 
 

@@ -39,9 +39,9 @@ Learn how to work with advance holder transactions in Microsoft Dynamics 365 for
 Transactions for these workers who are advance holders can be posted by using advance holder accounts. The worker ID that is specified for each advance holder can be used to track all advance holder transactions. This number is retrieved as an account number for advance holder transactions in the **General journals** and **Advance holder transactions** pages.
 
 ## Create and post a purchase order with advance holder details
-For more general information about purchase orders, see [Purchase order overview](/dynamics365/supply-chain/procurement/purchase-order-overview). If a vendor invoice is created and posted with advance holder details, the advance holder’s balances will be posted to the employee balance account instead of the vendor balance account. To add advance holder details to a purchase order, do the following:
+For more general information about purchase orders, see [Purchase order overview](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-overview). If a vendor invoice is created and posted with advance holder details, the advance holder’s balances will be posted to the employee balance account instead of the vendor balance account. To add advance holder details to a purchase order, do the following:
 
--   In the **Terms of payment** field in the **Price and discount** section, select the payment term. <!---For more information about **Terms of payment**, see [Define vendor payment terms](http://ax.help.dynamics.com/en/wiki/define-vendor-payment-terms/).--> Select a payment term that has the **From advance holder** option selected on the **Terms of payment** page. For more information about setting up terms of payment for advance holders, see [Advance holders](emea-advance-holders.md).
+-   In the **Terms of payment** field in the **Price and discount** section, select the payment term. <!---For more information about **Terms of payment**, see [Define vendor payment terms](/dynamics365/unified-operations/financials/accounts-payable/tasks/define-vendor-payment-terms).--> Select a payment term that has the **From advance holder** option selected on the **Terms of payment** page. For more information about setting up terms of payment for advance holders, see [Advance holders](emea-advance-holders.md).
 -   In the **Advance holder** field on the **Price and discount** FastTab, select the advance holder for the purchase order.
 
 The purchase order posting process creates two vendor transactions with opposite amounts and one advance holder transaction. Without advance holder details, only one vendor transaction is created.
@@ -66,5 +66,7 @@ When you settle advance holder balances via cash, journal entries for closing th
 
 After the slip journal is processed, if the amount in the **Amount to be transferred** field was negative, a disbursement slip is generated for the advance holder when the balances are closed. If the amount in the **Amount to be transferred** field was positive, a reimbursement slip is generated.
 
+## Additional resources
 
+- [Advance payment to an employee (Eastern Europe)](./tasks/advance-payment-employee.md)
 

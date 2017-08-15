@@ -17,7 +17,7 @@ ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails,
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2094
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 53111
@@ -252,9 +252,9 @@ You can't use reserved keywords as solver names for attributes, components, or s
 See also
 --------
 
-[Create an expression constraint (Task guide)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
+[Create an expression constraint (Task guide)(/dynamics365/unified-operations/supply-chain/pim/tasks/add-expression-constraint-product-configuration-model)
 
-[Add a calculation to a product configuration model (Task guide)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+[Add a calculation to a product configuration model (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/add-calculation-product-configuration-model)
 
 
 

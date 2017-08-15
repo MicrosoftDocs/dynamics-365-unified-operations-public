@@ -21,10 +21,9 @@ ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 265244
-ms.assetid: c7ee6b6a-cb92-4d1a-b4bb-37df3107dac8
 ms.search.region: China (PRC)
 # ms.search.industry: 
-ms.author: leguo
+ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -47,6 +46,6 @@ To create a depreciation profile:
 2. Create a new depreciation profile. Use the method of either **Sum year digits** or **Double reducing balance**.
 3. Create a book for the depreciation method, use either **Sum year digits** or **Double reducing balance**.
 
-
+For more information, see [Set up fixed asset depreciation allocation](./tasks/fixed-asset-depreciation-allocation.md).
 
 

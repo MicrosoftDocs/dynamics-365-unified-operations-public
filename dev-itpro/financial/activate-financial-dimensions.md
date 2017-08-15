@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 191363
@@ -51,7 +51,7 @@ The **Rebuild financial dimensions** option is set to **No** by default, as it i
 
 # See also
 
-[Set up financial dimensions (Task guide)](http://ax.help.dynamics.com/en/wiki/set-up-financial/)
+[Set up financial dimensions (Task guide)](/dynamics365/unified-operations/financials/general-ledger/tasks/define-financial-dimensions)
 
 [Maintenance mode](..\sysadmin\maintenance-mode.md)
 

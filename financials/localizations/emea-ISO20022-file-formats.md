@@ -5,7 +5,7 @@ title: ISO20022 files import
 description: This topic explains how to import payment files of the ISO 20022 camt.054 and pain.002 formats into Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: neserovleo
 manager: AnnBe
-ms.date: 05/25/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -109,3 +109,30 @@ If you're importing the camt.054 file, you should specify the following addition
 - **Settle transactions** – Set this option to **Yes** if imported vendor payments must be settled with invoices that are found in the system.
 
 You can view the imported information on the **Payment transfers** page. 
+
+## Additional details
+
+When you import a format configuration from LCS, you import the whole configuration tree which means that the Model and Model mapping configurations are included. 
+In the Payment model starting from version 8, the mappings are located in separate ER configurations in the solution tree (Payment model mapping 1611, Payment model mapping to destination ISO20022, etc). There are many different payment formats under one model (Payment model), thus separate mapping handling is a key for easy solution maintenance. 
+For example, consider this scenario: you use ISO20022 payments to generate credit transfer files and then you import the return messages from the bank. In this scenario, you should use the following configurations:
+
+ - **Payment model**
+ - **Payment model mapping 1611** – this mapping will be used to generate the export file
+ - **Payment model mapping to destination ISO20022** – this configuration includes all mappings which will be used to import the data (“to destination” mapping direction)
+ - **ISO20022 Credit transfer** – this configuration includes a format component that is responsible for export file generation (pain.001) based on the Payment model mapping 1611, as well as a format to model mapping component which will be used together with Payment model mapping to destination ISO20022 to register exported payments in the system for further import purposes (import in CustVendProcessedPayments technical table)
+ - **ISO20022 Credit transfer (CE)**, where CE correspond to country extension – derived format to the ISO20022 Credit transfer with the same structure and with certain country-specific differences
+ - **Pain.002** – this format will be used together with the Payment model mapping to destination ISO20022 in order to import the pain.002 file into vendor payments transfers journal
+ - **Camt.054** – this format will be used together with the Payment model mapping to destination ISO20022 to import the camt.054 file into vendor payments transfers journal. The same format configuration will be used in customer payments import functionality, but the different mapping will be used in the Payment model mapping to destination ISO20022 configuration.
+
+For more information about Electronic reporting, refer to [Electronic reporting overview](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+
+## Additional resources
+- [Create and export vendor payments using ISO20022 payment format](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
+- [Import ISO20022 credit transfer configuration](./tasks/import-iso20022-credit-transfer-configuration.md)
+- [Import ISO20022 direct debit configuration](./tasks/import-iso20022-direct-debit-configuration.md)
+- [Set up company bank accounts for ISO20022 credit transfers](./tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)
+- [Set up company bank accounts for ISO20022 direct debits](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
+- [Set up customers and customer bank accounts for ISO20022 direct debits](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)
+- [Set up method of payment for ISO20022 credit transfer](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
+- [Set up method of payment for ISO20022 direct debit](./tasks/setup-method-payment-iso20022-direct-debit.md)
+- [Set up vendors and vendor bank accounts for ISO20022 credit transfers](./tasks/set-up-vendor-iso20022-credit-transfers.md)

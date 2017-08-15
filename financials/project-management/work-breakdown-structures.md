@@ -17,7 +17,7 @@ ms.search.form: ProjWorkBreakdownStructure
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: twheeloc
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 23861

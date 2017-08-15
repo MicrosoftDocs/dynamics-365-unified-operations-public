@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  ProductionPerformancePowerBI
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: sericks
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -147,7 +147,7 @@ The following table shows the key dimensions that are used as filters to slice t
 
 Here are some helpful links that are related to entities and building Power BI content:
 
-- [Data entities](https://ax.help.dynamics.com/en/wiki/data-entities/)
+- [Data entities](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities)
 - [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 - [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
-- [Adding Power BI tiles to workspaces](http://ax.help.dynamics.com/en/wiki/configuring-powerbi-integration/)
+- [Adding Power BI tiles to workspaces](/dynamics365/unified-operations/dev-itpro/analytics/configure-power-bi-integration)

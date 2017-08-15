@@ -25,7 +25,7 @@ ms.custom: 274023
 ms.assetid: 3605eda1-a7ed-4675-8031-5279c5a8f5e4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
+ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 
@@ -67,7 +67,7 @@ If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise ed
 The prerequisites vary, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.
 
 ### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update 
-If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update has been deployed for your organization, the system administrator must publish the **Expense management** mobile workspace. For instructions, see [Publish a mobile workspace](/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update has been deployed for your organization, the system administrator must publish the **Expense management** mobile workspace. For instructions, see [Publish a mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
 ### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later
 If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
@@ -86,16 +86,16 @@ If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or 
 <td>System administrator</td>
 <td>KB 4019015 is an X++ update or metadata hotfix that contains the <strong>Expense management</strong> mobile workspace. To implement KB 4019015, your system administrator must follow these steps.
 <ol>
-<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
-<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>ApplicationSuite</strong> and <strong>ExpenseMobile</strong> models, and then upload the deployable package to LCS.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>ApplicationSuite</strong> and <strong>ExpenseMobile</strong> models, and then upload the deployable package to LCS.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a>.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Publish the <strong>Expense management</strong> mobile workspace.</td>
 <td>System administrator</td>
-<td>See <a href="/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</td>
+<td>See <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -137,11 +137,11 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 ## Quickly enter expenses by using the Expense management mobile workspace
 1. On your mobile device, open the **Expense management** workspace.
 2. Select **Quick expense entry**.
-3. Select the category for the expense. You see a list of expense categories that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform). If your category isn't in the list, select **Search** to do an online search. Search by expense category, or switch to search by expense type.
+3. Select the category for the expense. You see a list of expense categories that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). If your category isn't in the list, select **Search** to do an online search. Search by expense category, or switch to search by expense type.
 4. Enter the transaction date of the expense.
 5. Optional: Enter the merchant for the expense.
 6. Enter the amount of the expense.
-7. Select the currency of the expense. You see a list of the currency codes that are loaded into your app for offline use. By default, 400 currencies are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform). If your currency isn't in the list, select **Search** to do an online search. Search by currency, or switch to search by name.
+7. Select the currency of the expense. You see a list of the currency codes that are loaded into your app for offline use. By default, 400 currencies are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). If your currency isn't in the list, select **Search** to do an online search. Search by currency, or switch to search by name.
 8. Select **Take photo** or **Choose image**.
 9. Follow one of these steps:
 
@@ -172,11 +172,11 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 7. Select one or more expenses in the list.
 8. Select **Done**.
 9. To add a new expense to the expense report, select **New expense**.
-10. Select the category for the expense. You see a list of expense categories that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform). If your category isn't in the list, select **Search** to do an online search. Search by expense category, or switch to search by expense type.
+10. Select the category for the expense. You see a list of expense categories that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). If your category isn't in the list, select **Search** to do an online search. Search by expense category, or switch to search by expense type.
 11. Optional: Enter the merchant for the expense.
 12. Enter the transaction date of the expense.
 13. Enter the amount of the expense.
-14. Select the currency of the expense. You see a list of the currency codes that are loaded into your app for offline use. By default, 400 currencies are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform). If your currency isn't in the list, select **Search** to do an online search. Search by currency, or switch to search by name.
+14. Select the currency of the expense. You see a list of the currency codes that are loaded into your app for offline use. By default, 400 currencies are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). If your currency isn't in the list, select **Search** to do an online search. Search by currency, or switch to search by name.
 15. Select **Done**.
 16. To add more details to the expense, select **Add more details**. The fields that are available depend on the configuration of expense management for your company.
 17. If company policy requires a receipt for the expense, select **Receipts**, and then follow these steps:
@@ -222,12 +222,12 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
         - If you selected **Previous guests**, follow these steps:
 
-            1. Select one or more previous guests in the list. You see a list of previous guests that you've added to previous expense reports that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform). If your previous guest isn't in the list, select **Search** to do an online search. Search by name, or switch to search by organization, country, or title.
+            1. Select one or more previous guests in the list. You see a list of previous guests that you've added to previous expense reports that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). If your previous guest isn't in the list, select **Search** to do an online search. Search by name, or switch to search by organization, country, or title.
             2. Select **Done**.
 
         - If you selected **Coworkers**, follow these steps:
 
-            1. Select one or more coworkers in the list. You see a list of coworkers that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform). If your coworker isn't in the list, select **Search** to do an online search. Search by name, or switch to search by company or title.
+            1. Select one or more coworkers in the list. You see a list of coworkers that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). If your coworker isn't in the list, select **Search** to do an online search. Search by name, or switch to search by company or title.
             2. Select **Done**.
 
     3. Select the **Back** button to return to the expense details.
@@ -236,7 +236,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
     1. Select the first date to itemize.
     2. Select **Add itemization**.
-    3. Select the subcategory for the expense itemization. You see a list of expense subcategories that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform). If your subcategory isn't in the list, select **Search** to do an online search. Search by expense subcategory name.
+    3. Select the subcategory for the expense itemization. You see a list of expense subcategories that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). If your subcategory isn't in the list, select **Search** to do an online search. Search by expense subcategory name.
     4. Enter the transaction amount for the itemization.
     5. Edit the transaction date if it's required.
     6. Select **Done**.

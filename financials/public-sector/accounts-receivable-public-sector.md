@@ -5,7 +5,7 @@ title: Accounts receivable in the public sector
 description: This topic describes the Accounts receivable functionality that is available for the public sector.
 author: rschloma
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -69,5 +69,10 @@ See also
 
 [Accounts receivable](..\accounts-receivable\accounts-receivable.md)
 
+[Create a billing code](tasks/create-billing-code-public-sector.md)
+
+[Create a billing classification](tasks/create-billing-classification-public-sector.md)
+
+[Create and assign a trading partner code](tasks/create-assign-trading-partner-code-public-sector.md)
 
 

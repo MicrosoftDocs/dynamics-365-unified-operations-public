@@ -17,8 +17,10 @@ ms.search.form: PurchTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: yuyus
+
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887
@@ -33,6 +35,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Product receipt against purchase orders
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 This article describes the various options for registering products as received.

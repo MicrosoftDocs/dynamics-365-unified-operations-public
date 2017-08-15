@@ -5,7 +5,7 @@ title: Set up SEPA direct debit mandate
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 101
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 59491
@@ -60,6 +60,8 @@ You must set up a method of payment for direct debit mandates. You use this meth
 -   Select the **Require mandate** option to create payments by using direct debit mandates. The **Require mandate** option is available only if you select **Electronic payment** in the **Payment type** field.
 
 See Also
+
 [Direct debit overview](sepa-direct-debit-overview.md) 
 
+[Create a direct debit mandate for a customer](tasks/create-direct-debit-mandate-customer.md) 
 

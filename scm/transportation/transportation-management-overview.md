@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 2084
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 30251
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic gives an overview of the transportation management functionality in Microsoft Dynamics 365 for Finance and Operations.
 
-Transportation management lets you use manage your company’s transportation, and also lets you identify vendor and routing solutions for inbound and outbound orders. For example, you can identify the fastest route or the least expensive rate for a shipment. The following table describes the main scenarios for using Transportation management in Microsoft Dynamics 365 for Finance and Operations.
+Transportation management lets you use your company’s transportation, and also lets you identify vendor and routing solutions for inbound and outbound orders. For example, you can identify the fastest route or the least expensive rate for a shipment. The following table describes the main scenarios for using Transportation management in Microsoft Dynamics 365 for Finance and Operations.
 
 <table>
 <colgroup>

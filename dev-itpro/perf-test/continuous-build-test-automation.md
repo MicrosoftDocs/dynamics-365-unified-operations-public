@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 13171
@@ -123,9 +123,9 @@ As part of code Migration process or development activities, we expect you to ch
 7.  Click **Advanced settings**, select **Visual Studio Team Services**
     1.  Build Agent Name: Friendly name for build agent on VSTS
     2.  Build Agent Pool: specify build agent pool name which should be used for build machine deployment. Make sure VSTS contains at least one agent pool. By default, there will be the default pool. If you have deleted the default pool then build deployment will fail.
-    3.  Branch Name: Specify your VSTS source code branch which will be default source code sync location for the build VM. Default branch is "Trunk\\Main".
+    3.  Branch Name: Specify your VSTS source code branch which will be default source code sync location for the build VM. Default branch is "Main".
     
-    [![Settings](./media/settings-1024x389.jpg)](./media/settings.jpg)
+    ![Settings](media/settings.jpg)
 
 8.  After the settings are verified, click **Next** to start the deployment. You can see progress of deployment under **Environments**.
 9.  After the deployment is complete, you can use Remote Desktop to view Developer and Build VM.

@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 21631
@@ -150,7 +150,6 @@ The following links (also included in the methodology) describe key concepts and
 -   [Download hotfixes from Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md)
 -   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
 -   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
--   [Installing a financial reporting binary hotfix](..\migration-upgrade\install-financial-reporting-binary-hotfix.md)
 -   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
 -   [Updating the Visual Studio development tools](update-development-tools.md)
 
@@ -223,7 +222,7 @@ The client is an HTML web client that runs in all major browsers. For informati
 -   [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)
 
 ## Mobile platform
--   [Mobile platform](..\mobile-apps\mobile-platform.md)
+-   [Mobile platform home page](../mobile-apps/platform/mobile-platform-home-page.md)
 
 ## Global finance management
 -   [Dimension entry control dialog support](..\financial\dimension-entry-control-dialog-support.md)

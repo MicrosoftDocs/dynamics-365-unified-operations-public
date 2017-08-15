@@ -118,11 +118,8 @@ The following table includes links to resources that can help you implement both
 <tr class="even">
 <td>4</td>
 <td>Developer or independent software vendor (ISV)</td>
-<td>Use the mobile framework to create custom mobile workspaces.</td>
-<td><ul>
-<li><a href="mobile-platform.md">Mobile framework</a></li>
-<li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">Workspace X++ APIs</a></li>
-</ul></td>
+<td>Use the mobile platform to create custom mobile workspaces.</td>
+<td><a href="platform/mobile-platform-home-page.md">Mobile platform</a></td>
 </tr>
 <tr class="odd">
 <td>5</td>
@@ -147,7 +144,7 @@ The following table includes links to resources that can help you implement both
 <td>User</td>
 <td>Download and install the mobile app.</td>
 <td><ul>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">For Andriod phones</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">For Android phones</a></li>
 <li><a href="https://go.microsoft.com/fwlink/?linkid=850663">For iPhones</a></li></ul>
 </td>
 </tr>

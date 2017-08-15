@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: josaw1
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 65801
