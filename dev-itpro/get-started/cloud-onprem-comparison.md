@@ -96,7 +96,7 @@ The following table shows whether each feature is available in:
 | | Consignment inventory| Yes | Yes |
 | | Consignment inventory| Yes | Yes |
 | | Demand replenishment for raw material picking | Yes | Yes |
-| Lifecycle services| | | |
+| Lifecycle services| | Yes | Yes |
 | | Configurable business processes | Yes | No |
 | LinkedIn engagement| | | |
 | Localizations| | | |
