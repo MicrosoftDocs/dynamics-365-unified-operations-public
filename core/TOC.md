@@ -2009,6 +2009,9 @@
 #### [Overview of upgrade and N-1 support](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Install N-1 components](/dynamics365/unified-operations/retail/dev-itpro/n-1-installation-configuration?toc=dynamics365/unified-operations/retail/toc.json)
 
+### Environment configuration
+#### [Manage Bing Maps](/dynamics365/unified-operations/retail/dev-itpro/manage-bing-maps?toc=dynamics365/unified-operations/retail/toc.json)
+
 ### Extensibility
 #### Point of sale
 ##### [Retail POS screen layouts](/dynamics365/unified-operations/retail/pos-screen-layouts?toc=dynamics365/unified-operations/retail/toc.json)
