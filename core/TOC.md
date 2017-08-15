@@ -194,6 +194,8 @@
 ##### [Synchronize accounts from Sales to customers in Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Synchronize contacts from Sales to contacts or customers in Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/contacts-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Synchronize sales quotation headers and lines from Sales to Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-quotation-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Synchronize sales order headers and lines from Finance and Operations to Sales](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-order-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Synchronize sales invoice headers and lines from Finance and Operations to Sales](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-invoice-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Financial management
 
