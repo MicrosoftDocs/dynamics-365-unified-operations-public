@@ -42,8 +42,8 @@ This solution provides integration in the following areas:
 -   Maintain contacts in Dynamics 365 for Sales and sync them to Finance and Operations.
 -   Maintain products in Finance and Operations and sync them to Dynamics 365 for Sales.
 - 	Create sales quotes in Dynamics 365 for Sales and sync them to Finance and Operations.
--   Create sales order headers and lines in Finance and Operations and sync them to Dynamics 365 for Sales.
--   Create sales invoice headers and lines in Finance and Operations and sync them to Dynamics 365 for Sales.
+-   Create sales orders in Finance and Operations and sync them to Dynamics 365 for Sales.
+-   Create sales invoices in Finance and Operations and sync them to Dynamics 365 for Sales.
 
 ## System requirements for Dynamics 365 for Finance and Operations, Enterprise Edition
 
