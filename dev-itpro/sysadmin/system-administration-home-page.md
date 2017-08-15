@@ -43,11 +43,16 @@ Lifecycle Services
 -   [Microsoft Dynamics Lifecycle Services User Guide](../lifecycle-services/lcs-user-guide.md)
 
 ## Deployment
--   [System requirements](../get-started/system-requirements.md)
--   [Sign up for a subscription](../dev-tools/sign-up-preview-subscription.md)
+
+-   [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
+-   [Sign up for a preview subscription](../dev-tools/sign-up-preview-subscription.md)
+- [Deploy a Microsoft Dynamics 365 for Finance and Operations demo environment](../deployment/deploy-demo-environment.md)
+- [Dynamics 365 for Finance and Operations, Enterprise edition cloud deployment overview](../deployment/cloud-deployment-overview.md)
+-   [System requirements for cloud deployments](../get-started/system-requirements.md)
+- [On-premises deployment landing page](/deployment/on-premises-deployment-landing-page.md)
+- [System requirements for on-premises deployments](../get-started/system-requirements-on-prem.md)
 
 ## Hotfixes and updates
--   [Microsoft Dynamics 365 for Finance and Operations versions and update policy](../migration-upgrade/versions-update-policy.md)
 -   [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md)
 -   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
 -   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
@@ -55,6 +60,7 @@ Lifecycle Services
 -   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
 
 ## Upgrade
+- [Finance and Operations cloud platform monthly updates FAQ](faq-platform-monthly-updates.md)
 -   [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](../migration-upgrade/upgrade-latest-update.md) 
 -   [Upgrade Finance and Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md)
 -   [Upgrade the Dynamics 365 for Operations platform to the August 2016 release](../migration-upgrade/update-platform-each-release.md)
@@ -93,6 +99,7 @@ Lifecycle Services
 -   [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
 -   [Maintenance mode](maintenance-mode.md)
 -   [Demo data overview](../get-started/demo-data.md)
+- [Add links to your organization's legal terms and privacy statement](legal-terms-privacy-statement.md)
 
 
 
