@@ -5,7 +5,7 @@ title: Organization administration home page
 description: This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations in your organization.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,10 +50,10 @@ Number sequences
 -   [Planning the configuration of the global address book and additional address book](plan-configuration-global-address-book-additional-address-books.md)
 
 ## Workflow
--   [Overview of the workflow system](overview-workflow-system.md)
+-   [Workflow system overview](overview-workflow-system.md)
 -   [Workflow system architecture](workflow-system-architecture.md)
--   [Workflow elements](workflow-elements.md)
 -   [Workflow actions](workflow-actions.md)
+-   [Workflow elements](workflow-elements.md)
 -   [Create a workflow](create-workflow.md)
 -   [Configure the properties of a workflow](configure-workflow-properties.md)
 -   [Configure a manual task](configure-manual-task-workflow.md)
@@ -65,6 +65,12 @@ Number sequences
 -   [Configure a parallel activity](configure-parallel-activity-workflow.md)
 -   [Configure a parallel branch](configure-parallel-branch-workflow.md)
 -   [Configure a line-item workflow element](configure-line-item-workflow.md)
+- [Configure the Workflow message processing batch job as critical](workflow-batch-job-critical.md)
+- [Delegate work items in a workflow](delegate-work-items-workflow.md)
+- [Enable users to receive workflow-related email messages](users-receive-workflow-related-email-messages.md)
+- [View workflow history](view-workflow-history)
+- [Workflow types report](workflow-types-report)
+
 
 ## Case management
 -   [Planning: Case setup](plan-case-management.md)
