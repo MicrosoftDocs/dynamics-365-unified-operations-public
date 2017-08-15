@@ -37,8 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article is intended for customers who have signed up for the current version of Microsoft Dynamics 365 for Finance and Operations. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
 
-LCS workspace for the current version of Finance and Operations****
-------------------------------------------------------------------------
+## LCS workspace for the current version of Finance and Operations
 
 When you sign up for the current version of Microsoft Dynamics 365 for Finance and Operations, your subscription includes an Implementation project workspace. After you activate the service, the tenant administrator must sign in at <https://lcs.dynamics.com> by using the tenant account. The project workspace is automatically created for your organization. The workspace includes the following elements:
 
