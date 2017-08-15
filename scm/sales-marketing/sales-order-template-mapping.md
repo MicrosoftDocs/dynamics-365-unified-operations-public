@@ -169,3 +169,17 @@ The following illustrations show an example of a template mapping in data integr
 ![Template mapping in data integrator](./media/sales-order-template-mapping-data-integrator-3.png)
 
 ![Template mapping in data integrator](./media/sales-order-template-mapping-data-integrator-4.png)
+
+
+## Related topics
+
+[Synchronize products from Finance and Operations to products in Sales](products-template-mapping.md)
+
+[Synchronize accounts from Sales to customers in Finance and Operations](accounts-template-mapping.md)
+
+[Synchronize contacts from Sales to contacts or customers in Finance and Operations](contacts-template-mapping.md)
+
+[Synchronize sales quotation headers and lines from Sales to Finance and Operations](sales-quotation-template-mapping.md)
+
+[Synchronize sales invoice headers and lines from Finance and Operations to Sales](sales-invoice-template-mapping.md)
+
