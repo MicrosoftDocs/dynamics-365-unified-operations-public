@@ -45,7 +45,7 @@ The following templates and underlying tasks are used to synchronize Contact (Co
 
 - **Names of the templates:**
 
-    - Contacts to Contact (Sales to Fin and Ops)
+    - Contacts (Sales to Fin and Ops)
     - Contacts to Customer (Sales to Fin and Ops)
 
 - **Names of the tasks in the project:**
