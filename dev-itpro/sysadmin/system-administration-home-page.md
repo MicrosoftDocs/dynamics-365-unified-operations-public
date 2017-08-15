@@ -43,11 +43,16 @@ Lifecycle Services
 -   [Microsoft Dynamics Lifecycle Services User Guide](../lifecycle-services/lcs-user-guide.md)
 
 ## Deployment
--   [System requirements](../get-started/system-requirements.md)
--   [Sign up for a subscription](../dev-tools/sign-up-preview-subscription.md)
+
+-   [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
+-   [Sign up for a preview subscription](../dev-tools/sign-up-preview-subscription.md)
+- [Deploy a Microsoft Dynamics 365 for Finance and Operations demo environment](../deployment/deploy-demo-environment.md)
+- [Dynamics 365 for Finance and Operations, Enterprise edition cloud deployment overview](../deployment/cloud-deployment-overview.md)
+-   [System requirements for cloud deployments](../get-started/system-requirements.md)
+- [On-premises deployment landing page](/deployment/on-premises-deployment-landing-page.md)
+- [System requirements for on-premises deployments](../get-started/system-requirements-on-prem.md)
 
 ## Hotfixes and updates
--   [Microsoft Dynamics 365 for Finance and Operations versions and update policy](../migration-upgrade/versions-update-policy.md)
 -   [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md)
 -   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
 -   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
@@ -55,6 +60,7 @@ Lifecycle Services
 -   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
 
 ## Upgrade
+- [Finance and Operations cloud platform monthly updates FAQ](faq-platform-monthly-updates.md)
 -   [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](../migration-upgrade/upgrade-latest-update.md) 
 -   [Upgrade Finance and Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md)
 -   [Upgrade the Dynamics 365 for Operations platform to the August 2016 release](../migration-upgrade/update-platform-each-release.md)
@@ -71,10 +77,10 @@ Lifecycle Services
 ## Security
 -   [Role-based security](role-based-security.md)
 -   [Security architecture](security-architecture.md)
--   [Create new users (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) (Task guide)
--   [Assign users to security roles (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles)
--   [Set up segregation of duties (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/set-up-segregation-duties)
--   [Identify and resolve conflicts in segregation of duties (Task guide)](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties)
+-   [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) (Task guide)
+-   [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) (Task guide)
+-   [Set up segregation of duties](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/set-up-segregation-duties) (Task guide)
+-   [Identify and resolve conflicts in segregation of duties](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties) (Task guide)
 
 ## Licensing
 -   [ISV licensing](../dev-tools/isv-licensing.md)
@@ -84,6 +90,10 @@ Lifecycle Services
 
 ## Mobile
 -   [Mobile platform](../mobile-apps/platform/mobile-platform-home-page.md)
+- [Mobile app home page](../mobile-apps/Mobile-app-home-page.md)
+- [Mobile workspaces](../mobile-apps/mobile-workspaces-released.md)
+- [Publish a mobile workspace](../mobile-apps/publish-mobile-workspace.md)
+
 
 ## General administration
 -   [Finance and Operations cloud platform monthly updates](faq-platform-monthly-updates.md)
@@ -93,6 +103,7 @@ Lifecycle Services
 -   [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
 -   [Maintenance mode](maintenance-mode.md)
 -   [Demo data overview](../get-started/demo-data.md)
+- [Add links to your organization's legal terms and privacy statement](legal-terms-privacy-statement.md)
 
 
 
