@@ -66,9 +66,9 @@ Number sequences
 -   [Configure a parallel branch](configure-parallel-branch-workflow.md)
 -   [Configure a line-item workflow element](configure-line-item-workflow.md)
 - [Configure the Workflow message processing batch job as critical](workflow-batch-job-critical.md)
-- [Delegate work items in a workflow](./tasks/delegate-work-items-workflow.md)
-- [Enable users to receive workflow-related email messages](./tasks/users-receive-workflow-related-email-messages.md)
-- [View workflow history](./tasks/view-workflow-history.md)
+- [Delegate work items in a workflow](./tasks/delegate-work-items-workflow.md) (Task guide)
+- [Enable users to receive workflow-related email messages](./tasks/users-receive-workflow-related-email-messages.md) (Task guide)
+- [View workflow history](./tasks/view-workflow-history.md) (Task guide)
 - [Workflow types report](workflow-types-report.md)
 
 
