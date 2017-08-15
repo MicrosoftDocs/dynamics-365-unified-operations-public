@@ -87,10 +87,16 @@ Number sequences
 -   [Create an organization hierarchy](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (Task guide)
 -   [Create a legal entity](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (Task guide)
 
+## Record templates
+-   [Record templates](record-templates.md)
+- [Create a record template to facilitate data entry](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry) (Task guide)
+- [Use a record template to create a new record](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/use-record-template-new-record)
+
+
 ## General administration
 -   [Change the banner or logo](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (Task guide)
 -   [About date/time data and time zones](date-time-zones.md)
--   [Record templates](record-templates.md)
+
 
 
 
