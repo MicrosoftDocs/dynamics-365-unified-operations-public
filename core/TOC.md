@@ -45,7 +45,6 @@
 #### [Configure and filter workspaces](/dynamics365/unified-operations/fin-and-ops/get-started/configure-filter-workspaces?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Display pages side-by-side using the Open in New Window icon](/dynamics365/unified-operations/fin-and-ops/get-started/display-pages-side-by-side?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Keyboard shortcuts](/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Manage how pages display](/dynamics365/unified-operations/fin-and-ops/get-started/window-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Change the banner or logo](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Navigation search](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Personalize the user experience](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
