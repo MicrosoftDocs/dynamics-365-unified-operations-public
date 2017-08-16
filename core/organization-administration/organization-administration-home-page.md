@@ -5,7 +5,7 @@ title: Organization administration home page
 description: This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations in your organization.
 author: sericks007
 manager: AnnBe
-ms.date: 08/15/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -90,7 +90,7 @@ Number sequences
 ## Record templates
 -   [Record templates](record-templates.md)
 - [Create a record template to facilitate data entry](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry) (Task guide)
-- [Use a record template to create a new record](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/use-record-template-new-record)
+- [Use a record template to create a new record](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/use-record-template-new-record) (Task guide)
 
 
 ## General administration
