@@ -118,8 +118,8 @@ The following entities might have to be unmapped or filtered.
 | Procurement | Vendors | Unmap Purchase site (DefaultPurchaseSite) and Warehouse (DefaultProcurementWarehouseID) unless they are set up. Unmap the 1099 box ID (Tax1099BoxID) and 1099 type (Tax1099Type) unless you've opened the 1099 form. Unmap the vendor bank account ID. The Vendor bank account entity will set up the link to the bank account when it's imported. |
 | Sales and marketing | Leads | Unmap LeadOpeningPersonnelNumber, LeadClosingPersonnelNumber, and LeadResponsiblePersonnelNumber unless workers have been imported. |
 | Project management | Projects | Unmap WorkerArchitectPersonelNumber, WorkerRespFinancialPersonelNumber, WorkerResponsiblePersonnelNumber, and WorkerRespSalesPersonelNumber unless workers have been imported. |
-| Retail | POS visual profiles | Unmap Pallet because no entity is available at this time. |
-| Retail | Retail channel | Unmap Channel profile name (ChannelProfileName) and Live database connection profile name ( LiveDatabaseConnectionProfileName) because no entity is available at this time. |
+| Retail | POS visual profiles | Unmap Pallet because no entity is available at this time. The POS visual profiles entity was added to the Retail template  in monthly update 3 for Spring release 2017. |
+| | Retail channel | Unmap Channel profile name (ChannelProfileName) and Live database connection profile name ( LiveDatabaseConnectionProfileName) because no entity is available at this time. The Retail channel entity was added to the Retail template in monthly update 3 for Spring release 2017. |
 
 ### Golden builds that have multiple legal entities
 
@@ -173,11 +173,11 @@ The following entities require filters or special handling when you export the d
 | Inventory management | Warehouse current postal address | Apply a filter to Company. |
 | | Site current postal address | Apply a filter to Company. | 
 | | Tracking number groups | The entity automatically filters the Number sequence scope data area by the legal entity. Therefore, you don't require a filter. However, if you must change the legal entity, the legal entity is stored in the table. | 
-| Retail | POS registers | Apply a filter to Legal entity. | 
-| | Retail store address book | There is no legal entity filter for this entity. | 
-| | Retail locator group member | There is no legal entity filter for this entity. | 
-| | Retail locator group owner | There is no legal entity filter for this entity. | 
-| | Retail devices | There is no legal entity filter for this entity. | 
+| Retail | POS registers | Apply a filter to Legal entity. This entity was added to the Retail template in monthly update 3 for Spring release 2017. | 
+| | Retail store address book | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in monthly update 3 for Spring release 2017. | 
+| | Retail locator group member | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in monthly update 3 for Spring release 2017. | 
+| | Retail locator group owner | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in monthly update 3 for Spring release 2017. | 
+| | Retail devices | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in monthly update 3 for Spring release 2017. | 
                          
 ### Changing the legal entity value before import
 
