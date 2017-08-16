@@ -95,13 +95,14 @@ Lifecycle Services
 - [Office integration tutorial](../office-integration/office-integration-tutorial.md)
 - [Use the Excel add-in](../office-integration/use-excel-add-in.md)
 - [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
-- [Add templates to the Open lines in Excel menu](../office-integration/add-templates-open-lines-excel-menu.md)
+- [Add templates to the Open lines in Excel menu](../user-interface/add-templates-open-lines-excel-menu.md)
 - [Customize the Open in Microsoft Office menu](../office-integration/customize-open-office-menu.md)
-- [Configure and send email](dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email)
+- [Configure and send email](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email)
 - [Troubleshoot the Office integration](../office-integration/office-integration-troubleshooting.md)
 
 ## Licensing
 -   [ISV licensing](../dev-tools/isv-licensing.md)
+- [License codes and configuration keys report](license-codes-configuration-keys-report.md)
 
 ## Retail
 -   [Microsoft Dynamics 365 for Finance and Operations – Retail for IT Pros and developers](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)
@@ -118,7 +119,7 @@ Lifecycle Services
 -   [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
 -   [Maintenance mode](maintenance-mode.md)
 - [Add links to your organization's legal terms and privacy statement](legal-terms-privacy-statement.md)
-- [Set a user's preferred time zone](dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone)
+- [Set a user's preferred time zone](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone)
 
 
 
