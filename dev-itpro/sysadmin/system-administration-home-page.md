@@ -119,7 +119,7 @@ Lifecycle Services
 -   [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
 -   [Maintenance mode](maintenance-mode.md)
 - [Add links to your organization's legal terms and privacy statement](legal-terms-privacy-statement.md)
-- [Set a user's preferred time zone](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone)
+- [Set a user's preferred time zone](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) (Task guide)
 
 
 
