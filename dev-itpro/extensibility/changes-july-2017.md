@@ -1,8 +1,8 @@
 ---
 
 # required metadata
-title: Extensibility changes for Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
-description: This is a list of extensibility features that were implemented with the July 2017 update.
+title: Extensibility changes in the Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+description: This is a list of extensibility features that were implemented in the July 2017 update.
 author: RobinARH
 manager: AnnBe
 ms.date: 08/13/2017
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Extensibility changes for Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+# Extensibility changes in the Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
 
 [!include[banner](../includes/banner.md)]
 
-This is a list of extensibility features that were implemented with the July 2017 update which has build number 7.2.11792.56024. For more information about the schedule of changes that support extensbility, see [Application extensibility plans](extensibility-roadmap.md).
+This is a list of extensibility features that were implemented in the Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of 7.2.11792.56024. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
 
 ## Soft-sealed application models
 
@@ -74,7 +74,7 @@ The following application middle-tier models were soft-sealed in this release. O
 
 ## Hard-sealed application models
 
-A few application middle-tier models were hard-sealed in this release. Overlayered code in these models will generate errors on compilation.
+The following application middle-tier models were hard-sealed in this release. Overlayered code in these models will generate errors on compilation.
 
 | Category       | Model         |
 | --------------- |-------------|
@@ -88,16 +88,16 @@ A few application middle-tier models were hard-sealed in this release. Overlayer
 
 ## Enumerations that are now extensible
 
-Some changes were made to support extending enumerations:
-- Many enumerations in the standard application were made extensible in this release. An enumeration is made extensible by setting two properties on the enumeration. The **IsExtensible** property is set to **Yes**, and the **UseEnumValue** property is set to **No**. 
-- Some enums represents state. We added new façade methods in some places to help enable adding enumeration values by extension. For information about extending an enumeration, see [Add an enum value](add-enum-value.md).
-- Some application code that uses enumerations was changed to support extensibility. Common changes included:
+The following changes were made to support extending enumerations:
+- Many enumerations in the standard application have been made extensible. An enumeration is made extensible by setting two properties on the enumeration. The **IsExtensible** property is set to **Yes**, and the **UseEnumValue** property is set to **No**. 
+- Some enumerations represent state. New façade methods have been added to help enable adding enumeration values by extension. For information about how to extend an enumeration, see [Add an enum value](add-enum-value.md).
+- Some application code that uses enumerations was changed to support extensibility. Common changes include:
     + Removing **throw** exception statements in the default case of a switch to allow post-event subscription.
     + Adding **SysExtension** support for extension.
     + Adding explicit delegates.
 
 
-| Enum|
+| Enumeration|
 | --------------- |
 |AgreementState|
 |AssetAccountType|
@@ -706,7 +706,7 @@ Some changes were made to support extending enumerations:
 |WrkCtrType|
 |WrkCtrTypeFilter|
 
-We removed these enumerations rather than make them extensible:
+These enumerations were removed, and not made extensible.
 
 | Enumeration removed |
 | --------------- |
@@ -716,13 +716,13 @@ We removed these enumerations rather than make them extensible:
 |ReturnTableListPageType |
 |SMAAgreementTableListPageType|
 
-We hade to make some foundation changes to improve support for extensible enumerations. The **SysPlugin** framework was enabled for enumerations where **IsExtensible** is set to **Yes**. Views were enabled with new name based syntax for enumerations.
+Foundation changes were made to improve support for extensible enumerations. The **SysPlugin** framework was enabled for enumerations where **IsExtensible** is set to **Yes**. Views were enabled with new name-based syntax for enumerations.
 
-## Data manipulation methods that do not raise DataEvents or Missing Insert, Update, Delete pre-/post-data events.
+## Data manipulation methods that do not raise DataEvents or missing insert, update, delete pre- and post-data events
 
-As a general practice, you use data methods on tables to raise events that can be used for extending the application. Our code base did not always follow this practice. Some examples are the **doInsert**, **doUpdate**, and **doDelete** data methods and certain table implementations that did not make a call to **super()** in the data method.
+As a general practice, you use data methods on tables to raise events that can be used for extending the application. The code base has not alwaysed follow this practice. For example, the **doInsert**, **doUpdate**, and **doDelete** data methods and certain table implementations did not make a call to **super()** in the data method.
 
-The **insert**, **update** and **delete** methods on the type classes have been refactored. Changes were made so that **super()** was called more consistently in data methods. These changes enable extensions to be added to these methods, so that pre- and post-events are now available for extension. The tables where the **insert**, **update** and **delete** events were enabled for extension are listed in the following table:
+The **insert**, **update**, and **delete** methods on the type classes have been refactored. Changes were made so that **super()** is called more consistently in data methods. These changes enable extensions to be added to these methods, so that pre- and post-events are now available for extension. The tables where the **insert**, **update**, and **delete** events were enabled for extension are listed in the following table.
 
 | Table |
 | -------------|
@@ -752,7 +752,7 @@ The **insert**, **update** and **delete** methods on the type classes have been 
 
 ## Exposing class members
 
-Additional private members are now available for customization, because we changed the access modifier or adding parm methods.  The chain of command platform feature will enable extension class access to protected methods and members. For more information about chain of command, see [Extensible X++: Chain of Command](https://blogs.msdn.microsoft.com/mfp/2017/07/04/extensible-x-chain-of-command/).
+Additional private members are now available for customization as a result of the changes to the access modifier or new parm methods. The chain of command platform feature enables extension class access to protected methods and members. For more information about chain of command, see [Extensible X++: Chain of Command](https://blogs.msdn.microsoft.com/mfp/2017/07/04/extensible-x-chain-of-command/).
 
 | Member |
 | -------------|
@@ -778,7 +778,7 @@ Additional private members are now available for customization, because we chang
 
 ## Construct methods with throw statements
 
-Some **construct** methods were implemented with **throw** statements if there was a missing implementation for a given type. This doesn't work well with extensibility and to mitigate this we changed these **construct** methods so that they don't throw exceptions. These methods are now to open for extensibility through class augmentation or by post-event subscription.
+Some **construct** methods were implemented with **throw** statements if there was a missing implementation for a given type. This doesn't work well with extensibility, so to mitigate this, **construct** methods were changed so that they do not throw exceptions. These methods are now to open for extensibility through class augmentation or by post-event subscription.
 
 | Object |
 | -------------|
@@ -801,16 +801,16 @@ Some **construct** methods were implemented with **throw** statements if there w
 
 ## Find methods with throw statements
 
-Some **find** methods were implemented with **throw** statements if there was a missing implementation for a given type. This does not work well with extensibility and to mitigate this we changed such **find** methods so that they don't throw exceptions. These methods are now to open for extensibility through class augmentation or by post-event subscription.
+Some **find** methods were implemented with **throw** statements if there was a missing implementation for a given type. This does not work well with extensibility, so to mitigate this, **find** methods were changed so that they do not throw exceptions. These methods are now to open for extensibility through class augmentation or by post-event subscription.
 
-| Method |
+| Methods |
 | -------------|
 |JournalStatic.findJournalTableFromTrans|
 |JournalStatic.findJournalTableId|
 
 ## Methods made hookable
 
-Extensibility support has been extended for some methods that were not public and were not hookable. We explicitly decorated the methods with hookable behavior.
+Extensibility support has been extended for some methods that were not public and were not hookable. The following methods have been explicitly decorated with hookable behavior.
 
 | Method |
 | -------------|
@@ -833,7 +833,7 @@ Extensibility support has been extended for some methods that were not public an
 
 ## Inline delegates
 
-We added some inline delegates in this release. The most common way was we did this was to split the method into more granular methods and enable extensibility events in the smaller methods.
+Inline delegates are now available. The most common way to use inline delegates is to split the method into more granular methods and enable extensibility events in the smaller methods.
 
 |  Method |
 | -------------|
@@ -865,7 +865,7 @@ We added some inline delegates in this release. The most common way was we did t
 
 ## Other changes
 
-Other changes are listed in the following table.
+The following table lists additional changes that have been made for extensibility.
 
 | Change |
 | -------------|
