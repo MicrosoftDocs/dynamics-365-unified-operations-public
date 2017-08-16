@@ -49,14 +49,13 @@ Lifecycle Services
 - [Deploy a Microsoft Dynamics 365 for Finance and Operations demo environment](../deployment/deploy-demo-environment.md)
 - [Dynamics 365 for Finance and Operations, Enterprise edition cloud deployment overview](../deployment/cloud-deployment-overview.md)
 -   [System requirements for cloud deployments](../get-started/system-requirements.md)
-- [On-premises deployment landing page](/deployment/on-premises-deployment-landing-page.md)
+- [On-premises deployment landing page](../deployment/on-premises-deployment-landing-page.md)
 - [System requirements for on-premises deployments](../get-started/system-requirements-on-prem.md)
 
 ## Hotfixes and updates
 -   [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md)
 -   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
 -   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
--   [Install retail hotfixes](/dynamics365/unified-operations/retail/dev-itpro/install-retail-hotfix?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 -   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
 
 ## Upgrade

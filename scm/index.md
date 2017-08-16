@@ -63,6 +63,7 @@ These short videos help you get started with the new features that are in Micros
 -  [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 -  [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
 -  [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
+-  [Approve purchase orders on a mobile device](https://youtu.be/gZ-gOlJe7H8)
 
 ### Tech talks
 Most of these discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 

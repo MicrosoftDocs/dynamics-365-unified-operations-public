@@ -184,6 +184,12 @@ Run the following script against the imported database. The script performs the 
 
     CREATE USER axdeployuser FROM LOGIN axdeployuser
     EXEC sp_addrolemember 'db_owner', 'axdeployuser'
+    
+    CREATE USER axdeployextuser WITH PASSWORD = '<password from lcs>'
+    IF EXISTS (select * from sys.database_principals where type = 'R' and name = 'DeployExtensibilityRole')
+    BEGIN
+        EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
+    END
 
     CREATE USER axdbadmin WITH PASSWORD = '<password from lcs>'
     EXEC sp_addrolemember 'db_owner', 'axdbadmin'
