@@ -73,7 +73,7 @@ Customer search is used to find customers for various purposes e.g. viewing cust
 By default the customer search is performed on the customer address books associated with the store (aka local customer search). However, the employees can also search for customers globally i.e. across the stores of the company and across all the other legal entities (aka remote customer search). To search globally, the employees can press the 'Filter results' button and select "Search all stores" option (refer the below image) . This will  not only return the customers, but return all types of parties i.e. workers, vendors, contacts, competitors etc. which are a part of any address book in the HQ. 
 
 >[!NOTE]
->The remote customer search has a limitation that it needs minimum 4 characters to be entered for the search to return the results.
+>The 'remote' customer search has a limitation that it needs minimum 4 characters to be entered for the search to return the results.
 
 In the remote search, the customers from the other legal entities are displayed without the Customer ID, because there is no customer id created for this party in the current company. However, once the employee opens the customer details page, then the system automatically generates the customer id for the party and also associates the store's customer address books with this customer as well. So henceforth, this customer will be visible in the local store search.
 
