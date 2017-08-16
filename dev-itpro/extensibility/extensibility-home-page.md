@@ -41,6 +41,7 @@ Dynamics 365 for Finance and Operations, Enterprise Edition is customized extens
 Introduction contains general information about how Dynamics 365 for Operations supports customization, including information on when customization transitions from overlayering to purely extension based. Here is also described how you can log extensibility requests to Microsoft; along with a general frequent questions and answers.
 
 + [Application extensibility plans](extensibility-roadmap.md)
++ [Extensibility changes for Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update](changes-july-2017.md)
 + [Next steps - extensibility requests](extensibility-requests.md) 
 + [FAQ](app-sealing-faq.md) 
 
@@ -106,4 +107,5 @@ Information on Customization is also shared through various blogs where differen
 + [Static event subscription](https://blogs.msdn.microsoft.com/mfp/2015/12/10/x-in-ax7-static-event-subscription/)
 + [Responding through delegates](https://blogs.msdn.microsoft.com/mfp/2017/01/31/responding-through-delegates/)
 + [Subscribing to onValidatingWrite](https://blogs.msdn.microsoft.com/mfp/2017/01/31/subscribing-to-onvalidatingwrite/)
++ [Extending inventory dimensions](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
 
