@@ -1,4 +1,4 @@
----
+--
 # required metadata
 
 title: [POS product and customer search improvements]
@@ -42,8 +42,7 @@ From the "Change catalog" screen, the employees can also easily select any other
 ![Change catalog](./media/Changecatalog.png "Change catalog image").
  
  The local product search searches within the following product properties:
-
-	1. Product number
+ 	1. Product number
 	2. Product name
 	3. Description
 	4. Dimensions
@@ -65,3 +64,17 @@ As a part of 2017 April monthly cadence, we have further enhanced the product se
 4. The product search algorithm now also searches for the searched terms in the "Search name" property of the product.
 
 ![Product suggestions](./media/Productsuggestions.png "Product suggestions image").
+
+# Customer search
+
+Customer search is used to find customers for various purposes e.g. viewing customer's wish list, viewing the purchase history, adding them to transaction etc. In the case of multiple keyword search the customer search algorithm returns all the customers that match any of the searched keywords. However, the customers which match the most keywords are displayed at the top of the results. This behavior is analogous to how the other search engines display the results i.e. first show the results that match the most followed by the ones that partially meet the search keywords. Lastly, this helps the cashiers in scenarios where they are searching with multiple keywords and one of the keyword has a spelling mistake. Still the system will be able to show the desired customer in the result set because one or more keywords match the customer details.
+
+By default the customer search is performed on the customer address books associated with the store (aka local customer search). However, the employees can also search for customers globally i.e. across the stores of the company and across all the other legal entities (aka remote customer search). To search globally, the employees can press the 'Filter results' button and select "Search all stores" option (refer the below image) . This will include not only the customers but all types of parties i.e. workers, vendors, contacts, competitors etc. which are a part of any address book in the HQ. The remote customer search has a limitation that it needs minimum 4 characters to be entered for the search to return the results.
+
+In the remote search, the customers from the other legal entities are displayed without the Customer ID because there is no customer id created for this party in the current company. However, once the employee opens the customer details page then the system automatically generates the customer id for the party and also associates the store's customer address books with this customer as well. So henceforth, this customer will be visible in the local store search
+
+![Global customer search](./media/Globalcustomersearch.png "Global customer search image").
+
+## Enhancements in local customer search
+
+As a part of 2017 April monthly cadence, we have further enhanced the local customer search to help the employees quickly find the customers by their phone numbers, with or without typing the special characters such as 'space', 'hyphens', 'brackets' etc. which might be added to the customer's phone number. The cashiers can store the phone number in any format e.g. include brackets, hyphens, symbols etc. but while searching, the cashiers can search the customer by typing the partial phone number of the customer. If the cashier enters the phone number with some special characters, then the cashiers can find the customers by typing the numbers that appear after the special characters as well. For e.g. if the number is added as 123-456-7890, then the cashier can search for the customer by typing 123, or 456, or 7890, or 1234567890 or partially entering the first few numbers of the phone number. 
