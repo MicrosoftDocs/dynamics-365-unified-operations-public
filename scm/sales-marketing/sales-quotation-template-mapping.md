@@ -51,9 +51,9 @@ The following templates and underlying tasks are used to synchronize sales quota
 
 The following synchronization tasks are required before synchronization of sales quotation headers and lines can occur:
 
-- Products
-- Accounts (if used)
-- Contacts (if used)
+- Products (Fin and Ops to Sales)
+- Accounts (Sales to Fin and Ops) (if used)
+- Contacts to Customers (Sales to Fin and Ops) (if used)
 
 ## Entity set
 
@@ -86,11 +86,20 @@ In Sales, the solution makes the following fields read-only, because the values 
 
 ## Preconditions and mapping setup
 
-- Before you synchronize sales quotations, in Sales, go to **Settings** &gt; **Administration** &gt; **System settings** &gt; **Sales**, and make sure that the **Discount calculation method** field is set to **Per unit**. This setting helps guarantee that the line item discount from Sales matches the setting in Finance and Operations. Otherwise, the discount won't be correct in Finance and Operations, because Finance and Operations will read the discount as a per-unit discount even if it was a per-line discount in Sales.
-- In Finance and Operations, go to **Accounts receivable** &gt; **Setup** &gt; **Account receivable parameters**. On the **Number sequence** tab, select the number sequence for sales quotations, and then click **View details**. Then, under **General Setup**, set the **Manual** field to **Yes**.
-- In Finance and Operations, go to **Accounts receivable** &gt; **Setup** &gt; **Accounts receivable parameters**. Then, on the **Shipments** tab, set the **Delivery date control** field to **None**. This setting helps prevent synchronization from failing for sales quotations.
+Before synchronizing sales orders, it is important to update the systems with the following setting:
 
-### QuoteHeader
+### Setup in Sales
+
+- Go to **Settings** &gt; **Administration** &gt; **System settings** &gt; **Sales**, and make sure that the **Discount calculation method** field is set to **Per unit**. This setting helps guarantee that the line item discount from Sales matches the setting in Finance and Operations. Otherwise, the discount won't be correct in Finance and Operations, because Finance and Operations will read the discount as a per-unit discount even if it was a per-line discount in Sales.
+
+### Setup in Finance and Operations
+
+- Go to **Accounts receivable** &gt; **Setup** &gt; **Account receivable parameters**. On the **Number sequence** tab, select the number sequence for sales quotations, and then click **View details**. Then, under **General Setup**, set the **Manual** field to **Yes**.
+- Go to **Accounts receivable** &gt; **Setup** &gt; **Accounts receivable parameters**. Then, on the **Shipments** tab, set the **Delivery date control** field to **None**. This setting helps prevent synchronization from failing for sales quotations.
+
+### Setup in the Data integration project
+
+#### QuoteHeader
 
 - The **Requested delivery date** field is required in Finance and Operations, and synchronization will fail if the field is left blank. To prevent this issue, if the field is blank, a default date is taken from **Source &gt; CDS**. The date should be updated to a preferred value. Currently, you can't enter a value such as **Today** to represent today's date. You must enter a specific date. The default template value for **Requested delivery date** is **1/1/2020**.
 - The **Address Country region code** field is required in Finance and Operations. To help prevent synchronization errors, you can specify a default value that is used if the field is left blank in Sales. This default value is also useful, because you don't have to manually enter a value in the **Country region** field for local addresses. There is no default template value for **DeliveryAddressCountryRegionISOCode**.
@@ -100,7 +109,7 @@ In Sales, the solution makes the following fields read-only, because the values 
     - The default template value for **Account_Organization_OrganizationId** is **ORG001**.
     - The default template value for **InvoiceAccount_OrganizationId** is **ORG001**.
 
-### QuoteLine
+#### QuoteLine
 
 - Update the mapping for **CDS Organization ID** in **Source &gt; CDS** so that it matches **CDS organization** in the Organization entity:
 
