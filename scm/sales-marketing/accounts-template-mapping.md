@@ -68,8 +68,8 @@ When the integration solution for Sales is applied, an upgrade script sets the *
 
 ## Preconditions and mapping setup
 
-- **CustomerGroupId** must be updated to a valid value in Finance and Operations. You can specify a default value, or you can set the value by using a value map. The default template value is **10**.
-- **Address country region code** is required in Finance and Operations. To avoid synchronization errors, you can specify a default value. That default value is then used if the field is left blank in Sales.
+- **CustomerGroupId** mapping from **CDS &gt; Destination** must be updated to a valid value in Finance and Operations. You can specify a default value, or you can set the value by using a value map. The default template value is **10**.
+- **Address country region code** is required in Finance and Operations. To avoid synchronization errors, you can specify a default value in the mapping from **CDS &gt; Destination**. That default value is then used if the field is left blank in Sales.
 
     - The default template value for **AddressCountryRegionISOCode** is **USA**.
     - The default template value for **DeliveryAddressCountryRegionISOCode** is **USA**.
