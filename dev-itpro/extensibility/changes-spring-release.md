@@ -718,11 +718,11 @@ We removed these enumerations rather than make them extensible:
 
 We hade to make some foundation changes to improve support for extensible enumerations. The **SysPlugin** framework was enabled for enumerations where **IsExtensible** is set to **Yes**. Views were enabled with new name based syntax for enumerations.
 
-Data manipulation methods that do not raise DataEvents or Missing Insert, Update, Delete pre-/post-data events.
+## Data manipulation methods that do not raise DataEvents or Missing Insert, Update, Delete pre-/post-data events.
 
-As a general rule, data methods on tables raise events that can be used for extending the application.  There were exceptions to this practice in the code base, however.  Two examples are doDelete data methods and certain table implementations that did not make a super() in the data method.
+As a general rule, data methods on tables raise events that can be used for extending the application. There were exceptions to this practice in the code base.  Some examples are the doInsert, doUpdate, doDelete kind of data methods and certain table implementations that did not make a super() call in the data method.
 
-Type methods have been added to table objects like inserting and inserted which we call with the matching data method insert, similar to other data methods. Changes were made so that super() was called more consistently in data methods. These changes enable extensions to be added to these methods.
+The insert, update and delete methods on the type classes, have been refactored. So, pre and post events should now be available for extension. Changes were made so that super() was called more consistently in data methods. These changes enable extensions to be added to these methods. The specific tables for which the insert, update and delete events were enabled are listed below:
 
 | Table |
 | -------------|
@@ -896,7 +896,7 @@ Other changes are listed in the following table.
 |Method signature changed: RetailCreateLinesFromProductsToAdd.parmCallerCommon|
 |Method signature changed: WHSInvent.getCommonFromWorkTransType|
 |Method signature changed: WHSPoolProdBom.movementBuffer|
-|Missing construct method: class SMAServiceOrderTableButtonStateProvi|
+|Missing construct method: class SMAServiceOrderTableButtonStateProvider|
 |Number sequence scope extensibility needed|
 |Runbase needs a way for class extensions to pack/unpack their members|
 |String EDT size extension issues|
