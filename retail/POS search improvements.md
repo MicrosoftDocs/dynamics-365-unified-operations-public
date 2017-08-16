@@ -21,7 +21,7 @@ audience: Application user
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: shajain
@@ -42,37 +42,40 @@ From the "Change catalog" screen, the employees can also easily select any other
 
 ![Change catalog](./media/Changecatalog.png "Change catalog image").
  
- The local product search searches within the following product properties:
- 	1. Product number
-	2. Product name
-	3. Description
-	4. Dimensions
-	5. Barcode 
-	6. Search name (This has been added as a part of recent enhancement to be released in spring 2017 release)
+The local product search searches within the following product properties:
+1. Product number
+2. Product name
+3. Description
+4. Dimensions
+5. Barcode 
+6. Search name (This has been added as a part of recent enhancement to be released in spring 2017 release)
 
 ## Enhancements in the local product search
 
 As a part of 2017 April monthly cadence, we have further enhanced the product search experience to make it more user friendly. The enhancements are listed below:
 
-1. We have added product and customer dropdowns to the search bar which enables the employees to select either 'Product' or 'Customer' before performing the search. The default selection is 'Products' so the products will be searched by default. Refer image 3 for more details.
-2. For multi keyword searches (aka search terms) the retailers will have an option to configure in AX if the POS search results should include the results that 'Match any search term' or 'Match all search terms'. This setting is available in the POS functionality profile under a new group named "Product search" . The default value is set as 'Match any search term' and is also a recommended setting. This results in all the products which fully or partially match one or more search terms and the results are automatically sorted in ascending order of products with most keyword matches (full or partial).
+1. We have added product and customer dropdowns to the search bar, which enables the employees to select either 'Product' or 'Customer' before performing the search. The default selection is 'Products', so the products will be searched by default. Refer the below image for more details.
+2. For multi keyword searches (aka search terms), the retailers will have an option to configure in AX, if the POS search results should include the results that 'Match any search term' or 'Match all search terms'. This setting is available in the POS functionality profile, under a new group named "Product search". The default value is set as 'Match any search term' and is also a recommended setting. This results in all the products which fully or partially match one or more search terms and the results are automatically sorted in ascending order of products with most keyword matches (full or partial).
 
     The setting 'Match all search terms' only returns those products which match ALL the search terms (full or partial). This setting is helpful when the product names are lengthy and the employees want to only see the limited products in the search result, however, this search has two limitations
       1. The search is performed on individual product properties i.e. only those products will be returned which have all the searched keywords in at least one of the product properties
       2. Dimensions are not searched using this search setting
       
-3. The retailers can turn on the capability for the store employees to see search suggestions while typing product names. This configuration is added to the POS functionality profile under a group named "Product search" and the configuration is named "Show search suggestions while typing". This can assist the employees to quickly find the product they are looking for instead of typing the whole name manually.
+3. The retailers can now turn on the capability to display search suggestions while typing product names. This configuration is added to the POS functionality profile under a group named "Product search" and the configuration is named "Show search suggestions while typing". This can assist the employees to quickly find the product they are searching, instead of typing the whole name manually.
 4. The product search algorithm now also searches for the searched terms in the "Search name" property of the product.
 
 ![Product suggestions](./media/Productsuggestions.png "Product suggestions image").
 
 # Customer search
 
-Customer search is used to find customers for various purposes e.g. viewing customer's wish list, viewing the purchase history, adding them to transaction etc. In the case of multiple keyword search the customer search algorithm returns all the customers that match any of the searched keywords. However, the customers which match the most keywords are displayed at the top of the results. This behavior is analogous to how the other search engines display the results i.e. first show the results that match the most followed by the ones that partially meet the search keywords. Lastly, this helps the cashiers in scenarios where they are searching with multiple keywords and one of the keyword has a spelling mistake. Still the system will be able to show the desired customer in the result set because one or more keywords match the customer details.
+Customer search is used to find customers for various purposes e.g. viewing customer's wish list, viewing the purchase history, adding them to transaction etc. In the case of multiple keyword search, the customer search algorithm returns all the customers that match any of the searched keywords. However, the customers which match the most keywords are displayed at the top of the results. This behavior is analogous to how the other search engines display the results i.e. first show the results that match the most searched terms, followed by the ones that partially match the search keywords. Lastly, this helps the cashiers in scenarios where they are searching with multiple keywords and one of the keyword has a spelling mistake. 
 
-By default the customer search is performed on the customer address books associated with the store (aka local customer search). However, the employees can also search for customers globally i.e. across the stores of the company and across all the other legal entities (aka remote customer search). To search globally, the employees can press the 'Filter results' button and select "Search all stores" option (refer the below image) . This will include not only the customers but all types of parties i.e. workers, vendors, contacts, competitors etc. which are a part of any address book in the HQ. The remote customer search has a limitation that it needs minimum 4 characters to be entered for the search to return the results.
+By default the customer search is performed on the customer address books associated with the store (aka local customer search). However, the employees can also search for customers globally i.e. across the stores of the company and across all the other legal entities (aka remote customer search). To search globally, the employees can press the 'Filter results' button and select "Search all stores" option (refer the below image) . This will  not only return the customers, but return all types of parties i.e. workers, vendors, contacts, competitors etc. which are a part of any address book in the HQ. 
 
-In the remote search, the customers from the other legal entities are displayed without the Customer ID because there is no customer id created for this party in the current company. However, once the employee opens the customer details page then the system automatically generates the customer id for the party and also associates the store's customer address books with this customer as well. So henceforth, this customer will be visible in the local store search
+>[!NOTE]
+>The remote customer search has a limitation that it needs minimum 4 characters to be entered for the search to return the results.
+
+In the remote search, the customers from the other legal entities are displayed without the Customer ID, because there is no customer id created for this party in the current company. However, once the employee opens the customer details page, then the system automatically generates the customer id for the party and also associates the store's customer address books with this customer as well. So henceforth, this customer will be visible in the local store search.
 
 ![Global customer search](./media/Globalcustomersearch.png "Global customer search image").
 
