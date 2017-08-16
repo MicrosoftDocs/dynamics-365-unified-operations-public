@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-The Prospect to cash solution uses [Data Integration](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration) to synchronize data across Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Sales instances via the Common Data Service (CDS). The Prospect to cash templates available with the Data Integration feature enable the flow of product, account, contact, and sales quote data between Finance and Operations and Sales. While the data is flowing between Finance and Operations and Sales, you can carry out sales and marketing activities in Sales and handle the order fulfillment with inventory management in Finance and Operations. 
+The Prospect to cash solution uses [Data Integration](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration) to synchronize data across Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Sales instances via the Common Data Service (CDS). The Prospect to cash templates available with the Data Integration feature enable the flow of accounts, contacts, products, sales quotes, sales orders, and sales invoices data between Finance and Operations and Sales. While the data is flowing between Finance and Operations and Sales, you can carry out sales and marketing activities in Sales and handle the order fulfillment with inventory management in Finance and Operations. 
 
 This solution provides integration in the following areas: 
 
@@ -55,13 +55,14 @@ To use the Prospect to cash solution, you must install the following:
 
     -  [KB4036461](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036461&bugId=3847029&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2) - This hotfix enables sales order synchronization with the Data Integration feature from Finance and Operations to Sales.
     -  [KB4036524](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036524&bugId=3847504&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2) - This hotfix enables sales order line synchronization with the Data Integration feature from Finance and Operations to Sales.
+    Note: You only need to install KB4036524 as this will automatically pull the changes from KB4036461
  
 ## System requirements for Dynamics 365 for Sales
 
 To use the Prospect to cash solution, you must install the following:
 
-- Dynamics 365 for Sales version 1612 (8.2.1.207) (DB 8.2.1.207) online.
-- Prospect to cash solution for Dynamics 365 for Sales, version 1.14.0.0 or later.
+- Dynamics 365 for Sales version 1612 (8.2.1.207) (DB 8.2.1.207) online or later.
+- Prospect to cash solution for Dynamics 365 for Sales, version 1.14.0.0 (v14) or later.
 
 ### Install the Prospect to cash solution for Sales
 
