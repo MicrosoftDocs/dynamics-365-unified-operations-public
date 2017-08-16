@@ -5,7 +5,7 @@ title: System administration home page
 description: This topic lists resources that are available for system administrators.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -53,6 +53,8 @@ Lifecycle Services
 - [System requirements for on-premises deployments](../get-started/system-requirements-on-prem.md)
 
 ## Hotfixes and updates
+
+- [Finance and Operations cloud platform monthly updates FAQ](faq-platform-monthly-updates.md)
 -   [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md)
 -   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
 -   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
@@ -60,7 +62,7 @@ Lifecycle Services
 -   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
 
 ## Upgrade
-- [Finance and Operations cloud platform monthly updates FAQ](faq-platform-monthly-updates.md)
+
 -   [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](../migration-upgrade/upgrade-latest-update.md) 
 -   [Upgrade Finance and Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md)
 -   [Upgrade the Dynamics 365 for Operations platform to the August 2016 release](../migration-upgrade/update-platform-each-release.md)
@@ -81,6 +83,22 @@ Lifecycle Services
 -   [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) (Task guide)
 -   [Set up segregation of duties](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/set-up-segregation-duties) (Task guide)
 -   [Identify and resolve conflicts in segregation of duties](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties) (Task guide)
+- [Out-of-the-box security reports](security-reports.md)
+
+## Batch processing
+-   [Batch processing overview](batch-processing-overview.md)
+-   [Batch server overview](batch-server-overview.md)
+-   [Create a batch job](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-batch-job) (Task guide)
+
+## Office integration
+- [Office integration](../office-integration/office-integration.md)
+- [Office integration tutorial](../office-integration/office-integration-tutorial.md)
+- [Use the Excel add-in](../office-integration/use-excel-add-in.md)
+- [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
+- [Add templates to the Open lines in Excel menu](../office-integration/add-templates-open-lines-excel-menu.md)
+- [Customize the Open in Microsoft Office menu](../office-integration/customize-open-office-menu.md)
+- [Configure and send email](dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email)
+- [Troubleshoot the Office integration](../office-integration/office-integration-troubleshooting.md)
 
 ## Licensing
 -   [ISV licensing](../dev-tools/isv-licensing.md)
@@ -96,15 +114,11 @@ Lifecycle Services
 
 
 ## General administration
--   [Finance and Operations cloud platform monthly updates](faq-platform-monthly-updates.md)
--   [Batch processing overview](batch-processing-overview.md)
--   [Batch server overview](batch-server-overview.md)
--   [Create a batch job](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-batch-job) (Task guide)
+-   [Demo data overview](../get-started/demo-data.md)
 -   [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
 -   [Maintenance mode](maintenance-mode.md)
--   [Demo data overview](../get-started/demo-data.md)
 - [Add links to your organization's legal terms and privacy statement](legal-terms-privacy-statement.md)
-
+- [Set a user's preferred time zone](dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone)
 
 
 
