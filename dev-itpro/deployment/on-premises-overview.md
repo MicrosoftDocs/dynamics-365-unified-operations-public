@@ -5,7 +5,7 @@ title: Dynamics 365 for Finance and Operations, Enterprise edition on-premises o
 description: Dynamics 365 for Finance and Operations, Enterprise edition now supports running business processes in customer data centers with the on-premises or Local Business Data (LBD) deployment option. 
 author: kfend
 manager: AnnBe
-ms.date: 06/013/2017
+ms.date: 06/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
