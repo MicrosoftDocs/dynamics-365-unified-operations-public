@@ -45,7 +45,6 @@
 #### [Configure and filter workspaces](/dynamics365/unified-operations/fin-and-ops/get-started/configure-filter-workspaces?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Display pages side-by-side using the Open in New Window icon](/dynamics365/unified-operations/fin-and-ops/get-started/display-pages-side-by-side?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Keyboard shortcuts](/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Manage how pages display](/dynamics365/unified-operations/fin-and-ops/get-started/window-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Change the banner or logo](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Navigation search](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Personalize the user experience](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1941,8 +1940,8 @@
 ### [Tracking running average cost per inventory dimension](/dynamics365/unified-operations/supply-chain/cost-management/track-running-average-cost-per-inventory-dimension?toc=dynamics365/unified-operations/retail/toc.json)
 
 ## Human resources
-### [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/hr/departments-jobs-positions?toc=dynamics365/unified-operations/retail/toc.json)
-### [Setting up the components of a job](/dynamics365/unified-operations/hr/create-job?toc=dynamics365/unified-operations/retail/toc.json)
+### [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=dynamics365/unified-operations/retail/toc.json)
+### [Setting up the components of a job](/dynamics365/unified-operations/talent/create-job?toc=dynamics365/unified-operations/retail/toc.json)
 
 ## Retail tasks
 ### [Base price and trade agreements](/dynamics365/unified-operations/retail/tasks/base-price-trade-agreements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
