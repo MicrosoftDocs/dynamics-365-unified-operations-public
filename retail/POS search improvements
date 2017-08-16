@@ -1,0 +1,67 @@
+---
+# required metadata
+
+title: [POS product and customer search improvements]
+description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+author: [author's GitHub alias]
+manager: Jeffbl
+ms.date: 08/16/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: [Pick one: Application User]
+# ms.devlang: 
+# ms.reviewer: [Content Strategist microsoft alias]
+# ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: [Global for most topics. Set Country/Region name for localizations]
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: [shajain]
+ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
+ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+---
+
+# Overview of product and customer search in Point of Sale
+
+[!include[banner](../includes/banner.md)]
+
+The Modern Point of Sale (aka MPOS) and Cloud Point of Sale (aka CPOS) enable the store employees to quickly search for products and customers by providing an easy to use search functionality. The search bar is always present at the top of MPOS/CPOS for the employees to quickly find the products and customers. The employees can search for products in the assortments and catalogs associated to the current store and also within the assortments and catalogs of any other store within the company, thus enabling the cashiers to sell and return the products outside of the store assortment. Similarly, employees can search for customers associated to the current store or any other store within the company. Additionally, the employees can search for customers associated to a different company within the parent organization.
+
+# Product search 
+
+By default the product search is performed on the store assortment (aka 'local product search'), but the employees can easily switch to any other catalog associated to the current store or search within a different store. This is also referred as 'Remote product search'. To change the catalog, select the categories menu and then select the "Change catalog" button at the top of the slider (refer the below image). Select any of the available catalogs to browse and then the system will search the selected catalog for products. 
+
+From the "Change catalog" screen, the employees can also easily select any other store or search across all the stores for products.
+
+![Change catalog](./media/Changecatalog.png "Change catalog image").
+ 
+ The local product search searches within the following product properties:
+
+	1. Product number
+	2. Product name
+	3. Description
+	4. Dimensions
+	5. Barcode 
+	6. Search name (This has been added as a part of recent enhancement to be released in spring 2017 release)
+
+## Enhancements in the local product search
+
+As a part of 2017 April monthly cadence, we have further enhanced the product search experience to make it more user friendly. The enhancements are listed below:
+
+1. We have added product and customer dropdowns to the search bar which enables the employees to select either 'Product' or 'Customer' before performing the search. The default selection is 'Products' so the products will be searched by default. Refer image 3 for more details.
+2. For multi keyword searches (aka search terms) the retailers will have an option to configure in AX if the POS search results should include the results that 'Match any search term' or 'Match all search terms'. This setting is available in the POS functionality profile under a new group named "Product search" . The default value is set as 'Match any search term' and is also a recommended setting. This results in all the products which fully or partially match one or more search terms and the results are automatically sorted in ascending order of products with most keyword matches (full or partial).
+
+    The setting 'Match all search terms' only returns those products which match ALL the search terms (full or partial). This setting is helpful when the product names are lengthy and the employees want to only see the limited products in the search result, however, this search has two limitations
+      1. The search is performed on individual product properties i.e. only those products will be returned which have all the searched keywords in at least one of the product properties
+      2. Dimensions are not searched using this search setting
+      
+3. The retailers can turn on the capability for the store employees to see search suggestions while typing product names. This configuration is added to the POS functionality profile under a group named "Product search" and the configuration is named "Show search suggestions while typing". This can assist the employees to quickly find the product they are looking for instead of typing the whole name manually.
+4. The product search algorithm now also searches for the searched terms in the "Search name" property of the product.
+
+![Product suggestions](./media/Productsuggestions.png "Product suggestions image").
