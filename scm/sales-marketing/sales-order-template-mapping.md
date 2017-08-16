@@ -53,7 +53,7 @@ Sync tasks required prior to Sales invoice header and lines sync:
 
 - Products (Fin and Ops to Sales)
 - Accounts (Sales to Fin and Ops) (if used)
-- Contacts (Sales to Fin and Ops) (if used)
+- Contacts to Customers (Sales to Fin and Ops) (if used)
 
 ## Entity set
 
@@ -96,7 +96,6 @@ New fields are added to the **Order** entity and displayed on the page:
     - Partially Shipped
     - Partially Invoiced
     - Cancelled
-    - Draft (default)
 
 The **Has Externally Maintained Products Only** setting is used in other sales order scenarios (from Sales to Finance and Operation sync) to consistently keep track of whether the sales order is made up entirely of **Externally Maintained Products**, in which case products are maintained in Finance and Operations. This ensures that you don't try to sync sales order lines with products that are unknown to Finance and Operations.
  
