@@ -720,9 +720,9 @@ We hade to make some foundation changes to improve support for extensible enumer
 
 ## Data manipulation methods that do not raise DataEvents or Missing Insert, Update, Delete pre-/post-data events.
 
-As a general rule, data methods on tables raise events that can be used for extending the application. There were exceptions to this practice in the code base.  Some examples are the doInsert, doUpdate, doDelete kind of data methods and certain table implementations that did not make a super() call in the data method.
+As a general practice, you use data methods on tables to raise events that can be used for extending the application. Our code base did not always follow this practice. Some examples are the **doInsert**, **doUpdate**, and **doDelete** data methods and certain table implementations that did not make a call to **super()** in the data method.
 
-The insert, update and delete methods on the type classes, have been refactored. So, pre and post events should now be available for extension. Changes were made so that super() was called more consistently in data methods. These changes enable extensions to be added to these methods. The specific tables for which the insert, update and delete events were enabled are listed below:
+The **insert**, **update** and **delete** methods on the type classes have been refactored. Changes were made so that **super()** was called more consistently in data methods. These changes enable extensions to be added to these methods, so that pre- and post-events are now available for extension. The tables where the **insert**, **update** and **delete** events were enabled for extension are listed in the following table:
 
 | Table |
 | -------------|
@@ -750,9 +750,9 @@ The insert, update and delete methods on the type classes, have been refactored.
 | WMSOrder|
 | WMSOrderTrans|
 
-## Exposing class member
+## Exposing class members
 
-Private members have been made available for customization by changing the access modifier or adding parm methods.  The Chain of Command platform feature will enable extension class access to protected methods and members.
+Additional private members are now available for customization, because we changed the access modifier or adding parm methods.  The chain of command platform feature will enable extension class access to protected methods and members. For more information about chain of command, see [Extensible X++: Chain of Command](https://blogs.msdn.microsoft.com/mfp/2017/07/04/extensible-x-chain-of-command/).
 
 | Member |
 | -------------|
@@ -778,7 +778,7 @@ Private members have been made available for customization by changing the acces
 
 ## Construct methods with throw statements
 
-Some **construct** methods were implemented with **throw** statements if there was a missing implementation for a given type. This does not work well with extensibility and to mitigate this we changed such **construct** methods so that they don't throw exceptions. These methods are now to open for extensibility through class augmentation or by post-event subscription.
+Some **construct** methods were implemented with **throw** statements if there was a missing implementation for a given type. This doesn't work well with extensibility and to mitigate this we changed these **construct** methods so that they don't throw exceptions. These methods are now to open for extensibility through class augmentation or by post-event subscription.
 
 | Object |
 | -------------|
@@ -810,7 +810,7 @@ Some **find** methods were implemented with **throw** statements if there was a 
 
 ## Methods made hookable
 
-Extensibility support has been extended for some methods that were not public and were not hookable event. These were enabled by explicitly decorating the methods with hookable behavior.
+Extensibility support has been extended for some methods that were not public and were not hookable. We explicitly decorated the methods with hookable behavior.
 
 | Method |
 | -------------|
@@ -833,7 +833,7 @@ Extensibility support has been extended for some methods that were not public an
 
 ## Inline delegates
 
-We added some inline delegates in this release. The most common was we did this was to split the method into more granular methods and enable extensibility events in the smaller methods.
+We added some inline delegates in this release. The most common way was we did this was to split the method into more granular methods and enable extensibility events in the smaller methods.
 
 |  Method |
 | -------------|
