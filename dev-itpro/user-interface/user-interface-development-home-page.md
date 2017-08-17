@@ -64,7 +64,6 @@ The form metamodel continues to be used to define controls and application logic
 -   [Check box support in tree controls](check-box-tree-controls.md)
 -   [Filtering](filtering.md)
 -   [Window management](/dynamics365/unified-operations/fin-and-ops/get-started/window-management)
--   [Form statistics addin (Office Mix)](https://mix.office.com/watch/1kuwpf3ooohty)
 -   [Code migration - context menus](..\migration-upgrade\code-migration-context-menus.md)
 -   [Code migration - mouse double click](..\migration-upgrade\code-migration-double-click.md)
 -   [Contextual data entry for lookups](contextual-data-entry-lookups.md)
@@ -87,7 +86,7 @@ The form metamodel continues to be used to define controls and application logic
 ## Form pattern guidelines
 -   [Selecting a form pattern](select-form-pattern.md)
 -   [Form styles and patterns](form-styles-patterns.md)
--   [Generating the form patterns report (Office Mix)](https://mix.office.com/watch/jqzesi1uuosz)
+-   [Form pattern add-ins](form-pattern-add-ins.md)
 
 | Form patterns     | Support form patterns       | Sub patterns      |
 |---|---|---|
