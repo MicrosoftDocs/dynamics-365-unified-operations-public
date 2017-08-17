@@ -87,7 +87,6 @@ The form metamodel continues to be used to define controls and application logic
 ## Form pattern guidelines
 -   [Selecting a form pattern](select-form-pattern.md)
 -   [Form styles and patterns](form-styles-patterns.md)
--   [Apply subpatterns (Office Mix)](https://mix.office.com/watch/fq2k25dzomi3)
 -   [Generating the form patterns report (Office Mix)](https://mix.office.com/watch/jqzesi1uuosz)
 
 | Form patterns     | Support form patterns       | Sub patterns      |
