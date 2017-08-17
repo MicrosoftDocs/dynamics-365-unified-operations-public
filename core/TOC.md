@@ -1441,8 +1441,7 @@
 #### [Monitor a master planning run](/dynamics365/unified-operations/supply-chain/master-planning/tasks/monitor-master-planning-run?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [View outbound planned intercompany demand](/dynamics365/unified-operations/supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## Mobile apps
-### [Mobile app home page](/dynamics365/unified-operations/dev-itpro/mobile-apps/Mobile-app-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+## [Mobile app](/dynamics365/unified-operations/dev-itpro/mobile-apps/Mobile-app-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Mobile workspaces](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspaces-released?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Company directory](/dynamics365/unified-operations/dev-itpro/mobile-apps/company-directory-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Cost controlling](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
