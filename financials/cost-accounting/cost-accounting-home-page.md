@@ -63,4 +63,63 @@ The following learning map shows the major concepts and tasks with connecting li
 </tr>
 </table>
 
+Set up cost accounting<br/>
+<br/>
+
+<a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet" data-linktype="external">
+
+<table style="border:solid">
+
+<tr style="border:none">
+<td>
+<img alt="" src="https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg" width=36px height=36px data-linktype="external">
+</td>
+<td>
+<h3>Deploy your first .NET app to Azure</h3>
+
+</td>
+<td>
+<img alt="" src="https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg" width=36px height=36px data-linktype="external">
+</td>
+<td>
+<h3>Deploy your first .NET app to Azure</h3>
+
+</td>
+</tr>
+<tr style="border:none">
+<td>
+<img alt="" src="https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg" width=36px height=36px data-linktype="external">
+</td>
+<td>
+<h3>Deploy your first .NET app to Azure</h3>
+
+</td>
+<td>
+<img alt="" src="https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg" width=36px height=36px data-linktype="external">
+</td>
+<td>
+<h3>Deploy your first .NET app to Azure</h3>
+
+</td>
+</tr>
+<tr style="border:none">
+<td>
+<img alt="" src="https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg" width=36px height=36px data-linktype="external">
+</td>
+<td>
+<h3>Deploy your first .NET app to Azure</h3>
+
+</td>
+<td>
+<img alt="" src="https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg" width=36px height=36px data-linktype="external">
+</td>
+<td>
+<h3>Deploy your first .NET app to Azure</h3>
+
+</td>
+</tr>
+</table>
+</a>
+
+
 
