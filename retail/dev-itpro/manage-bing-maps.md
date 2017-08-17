@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage Bing Maps for your organizaiton
+title: Manage Bing Maps for your organization
 description: Learn how you can manage Bing Maps for your application. When Bing Maps is turned on, people can view a map of a store, warehouse, or other location when creating orders. Bing Maps is also used for distributed order management to calculate distances. 
 author: aamirallaqaband 
 manager: AnnBe
