@@ -5,7 +5,7 @@ title: Select a form pattern
 description: This article provides information that will help you select the best form pattern for the forms that you migrate. 
 author: jasongre
 manager: AnnBe
-ms.date: 05/23/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
