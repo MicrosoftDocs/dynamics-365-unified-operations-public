@@ -5,7 +5,7 @@ title: User interface development home page
 description: This topic contains links to topics about developing user interface elements.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/25/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
