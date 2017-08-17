@@ -486,26 +486,46 @@
 
 ### [Cost accounting](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Terms](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Hands-on labs (White paper)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
-#### [Cost element dimensions](/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Cost object dimensions](/dynamics365/unified-operations/financials/cost-accounting/cost-objects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Map cost element dimension members to a common set of dimension members](/dynamics365/unified-operations/financials/cost-accounting/map-cost-elements-dimension-members?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Statistical dimension members and statistical measure provider templates](/dynamics365/unified-operations/financials/cost-accounting/statistical-measure-provider-template?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Dimension hierarchy](/dynamics365/unified-operations/financials/cost-accounting/dimension-hierarchy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### Get started
+##### [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
+##### [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
+##### [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
+##### [Hands-on labs (White paper)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
+
+#### Configure source system
+##### [Create account structures](/dynamics365/unified-operations/financials/general-ledger/tasks/create-account-structures?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Financial dimensions](/dynamics365/unified-operations/financials/general-ledger/financial-dimensions.md?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+#### Create dimensions and import dimension members
+##### [Cost element dimensions](/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Cost object dimensions](/dynamics365/unified-operations/financials/cost-accounting/cost-objects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Create cost elements  ](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-elements?toc=dynamics365/unified-operations/fin-and-ops/toc.json) (Task guide)
+##### [Create cost objects  ](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-objects?toc=dynamics365/unified-operations/fin-and-ops/toc.json) (Task guide)
+##### [Map cost element dimension members to a common set of dimension members](/dynamics365/unified-operations/financials/cost-accounting/map-cost-elements-dimension-members?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Map a cost element dimension](/dynamics365/unified-operations/financials/cost-accounting/tasks/map-cost-element-dimension?toc=dynamics365/unified-operations/fin-and-ops/toc.json) (Task guide)
+##### [Statistical dimension members and statistical measure provider templates](/dynamics365/unified-operations/financials/cost-accounting/statistical-measure-provider-template?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+#### Create dimension hierarchy
+##### [Dimension hierarchy](/dynamics365/unified-operations/financials/cost-accounting/dimension-hierarchy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Access rights of a cost object controller](/dynamics365/unified-operations/financials/cost-accounting/access-rights-cost-object-controller?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Create an organization report hierarchy](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-an-organization-report-hierarchy?toc=dynamics365/unified-operations/fin-and-ops/toc.json) (Task guide)
+##### [Configure access rights for a cost object controller](/dynamics365/unified-operations/financials/cost-accounting/tasks/configure-access-rights-cost-object-controller?toc=dynamics365/unified-operations/fin-and-ops/toc.json) (Task guide)
+
+
+
 #### [Allocation base](/dynamics365/unified-operations/financials/cost-accounting/allocation-bases?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Overhead calculation](/dynamics365/unified-operations/financials/cost-accounting/overhead-calculation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Cost rollup policy and overhead calculation](/dynamics365/unified-operations/financials/cost-accounting/cost-rollup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Access rights of a cost object controller](/dynamics365/unified-operations/financials/cost-accounting/access-rights-cost-object-controller?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 #### [Cost control workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Cost control mobile workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up security for the Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create cost elements  ](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-elements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create cost objects  ](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-objects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 #### Cost accounting tasks
-##### [Configure access rights for a cost object controller](/dynamics365/unified-operations/financials/cost-accounting/tasks/configure-access-rights-cost-object-controller?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ##### [Configure cost control workspace parameters](/dynamics365/unified-operations/financials/cost-accounting/tasks/configure-cost-control-workspace-parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Create an organization report hierarchy](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-an-organization-report-hierarchy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ##### [Create and assign a cost allocation policy to a cost control unit](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create and assign a cost behavior policy to a cost control unit](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create and assign a cost distribution policy to a cost control unit](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -514,7 +534,7 @@
 ##### [Create a subcontracted work cell for lean manufacturing](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-subcontracted-work-cell-lean-manufacturing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Define cost control units](/dynamics365/unified-operations/financials/cost-accounting/tasks/define-cost-control-units?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Manage a data source for the cost accounting ledger](/dynamics365/unified-operations/financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Map a cost element dimension](/dynamics365/unified-operations/financials/cost-accounting/tasks/map-cost-element-dimension?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ##### [Process and trace source data](/dynamics365/unified-operations/financials/cost-accounting/tasks/process-trace-source-data?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [Public sector](/dynamics365/unified-operations/financials/public-sector/public-sector-functionality?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
