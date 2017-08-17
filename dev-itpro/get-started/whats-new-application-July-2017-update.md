@@ -1999,8 +1999,7 @@ more.
 -   Create quotes in Dynamics 365 for Sales and sync them to Finance and
     Operations.
 
--   Generate sales orders in Dynamics 365 for Sales for existing products and
-    sync them to Finance and Operations.
+-   Generate sales orders in Finance and Operations and sync them to Dynamics 365 for Sales.
 
 -   Generate invoices in Finance and Operations and sync them to Dynamics 365
     for Sales.
@@ -2030,6 +2029,8 @@ for complex process flows between Dynamics 365 for Sales and Dynamics 365 for
 Finance and Operations, Enterprise edition. Finance and Operations, optimized to
 support integration with enhanced entities and Dynamics 365 for Sales is
 optimized with a solution.
+
+For additional information, see [Prospect to cash](/dynamics365/unified-operations//supply-chain/sales-marketing/prospect-to-cash)
 
 Punch-out to external catalog from purchase requisition 
 --------------------------------------------------------
