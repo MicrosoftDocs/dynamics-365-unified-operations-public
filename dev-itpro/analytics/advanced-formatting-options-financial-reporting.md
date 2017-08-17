@@ -39,14 +39,14 @@ When you create a report in financial reporting, additional formatting functions
 
 The following table explains the advanced formatting functions that are available when you design reports.
 
-| Function                   | Description                                                                                                                                                                                                                                                                                                                     |
-|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Function                   | Description          |
+|----------------------------|-------------------------------|
 | Dimension filter           | To access specific sets of data, you can use dimensions in the row definition and column definition. Many reports use only the natural segment in the row format. However, rows can be modified so that they include dimension values. Dimension filters in the column definition are used to access specific dimension values. |
-| Reporting unit restriction | You can set up a report row so that it shows only information that is linked to a specific reporting unit.                                                                                                                                                                                                                      |
+| Reporting unit restriction | You can set up a report row so that it shows only information that is linked to a specific reporting unit.     |
 | Non-printing (NP) rows     | Non-printing rows are useful on many reports. If several calculations are required in order to obtain a value, these calculations can be hidden on the printed report. Non-printing rows are also useful for troubleshooting report designs and for advanced cell placement.                                                    |
 | Column restriction         | The column restriction in the row definition is useful for hiding values that are relevant only on some rows of the report. When percentage calculations are performed on a row, the column restriction prevents total columns or other columns from being printed when those numbers don't apply.                              |
 | Column break               | You can add column breaks in a row definition to show report information side by side. You can add multiple column breaks in a single row definition, and column headers are repeated at the top of each column after the column break. Comments for a report are shown between the column breaks.                              |
-| IF/THEN/ELSE statement     | You can modify calculations in a row definition or a column definition.                                                                                                                                                                                                                                                         |
+| IF/THEN/ELSE statement     | You can modify calculations in a row definition or a column definition.  |
 
 ## Advanced cell placement
 Advanced cell placement, or *forcing*, involves the placement of specific values into specific cells. For example, forcing is often used to move the correct balance in a cash flow statement. You can use forcing for the following purposes:
@@ -70,12 +70,15 @@ The following examples show how to format the row definition and column definiti
 
 The following table shows an example of a row definition that uses basic forcing.
 
-| Row Code | Description                      | Format Code | Related Formulas/Rows/Units | Format Override | Normal Balance | Print Control | Column Restriction | Row Modifier               | Link to Financial Dimensions |
-|----------|----------------------------------|-------------|-----------------------------|-----------------|----------------|---------------|--------------------|----------------------------|------------------------------|
-| 100      | Cash at Beginning of Period (NP) |             |                             |                 |                |               |                    | Account Modifier = \[/BB\] | +Segment2 = \[1100\]         |
-| 130      | Cash at Beginning of Period      | CAL         | C=C.100,F=D.100             |                 |                |               |                    |                            |                              |
-| 160      |                                  |             |                             |                 |                |               |                    |                            |                              |
-| 190      |                                  |             |                             |                 |                |               |                    |                            |                              |
+| Row Code | Description                      | Format Code | Related Formulas/Rows/Units | Column Restriction | Row Modifier               | Link to Financial Dimensions |
+|----------|----------------------------------|-------------|-----------------------------|-----------------|----------------|----|
+| 100      | Cash at Beginning of Period (NP) |             |                             |                    | Account Modifier = \[/BB\] | +Segment2 = \[1100\]         |
+| 130      | Cash at Beginning of Period      | CAL         | C=C.100,F=D.100             |                 |                |     |   |
+| 160      |                                  |             |                             |                 |                |     |   |
+| 190      |                                  |             |                             |                 |                |     |   |
+
+> [!NOTE] 
+> Empty columns were removed from the previous table for presentation purposes: Format Override, Normal Balance, Print Control, Column Restriction columns are not displayed.
 
 The following table shows an example of column definition that uses basic forcing in the row.
 
