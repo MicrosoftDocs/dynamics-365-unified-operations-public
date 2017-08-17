@@ -5,7 +5,7 @@ title: Developer home page
 description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/17/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -140,7 +140,6 @@ The following links (also included in the methodology) describe key concepts and
 -   [How to import a SQL Server Analysis Services Project into the AOT](https://technet.microsoft.com/en-us/library/dn754850.aspx)
 -   [Database synchronization](database-synchronization.md)
 -   [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)
--   [Generating the form patterns report (Office Mix)](https://mix.office.com/watch/jqzesi1uuosz)
 
 ## Move packages between environments
 -   [Create and apply a deployable package](..\deployment\create-apply-deployable-package.md)
