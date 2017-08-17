@@ -2,7 +2,7 @@
 # required metadata
 
 title: Form pattern add-ins
-description: The tools for Visual Studio include a number of add-ins that support pattern development. 
+description: The tools for Visual Studio include a number of add-ins that support pattern usage. 
 author: jasongre
 manager: AnnBe
 ms.date: 08/17/2017
@@ -31,11 +31,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Form pattern add-ins
 
-The tools for Visual Studio include a number of add-ins that support pattern development. 
+The tools for Visual Studio include a number of add-ins that support pattern usage. 
 
 ## Form statistics add-in
-The **Form statistics** add-in provides a summary of the pattern usage for forms. When you access the **Form statistics** add-in from the **Dynamics 365 **menu, it displays statistics for all forms. When you access the add-in from the shortcut menu for a form that is open in the form designer, it displays statistics for that form only. 
+The **Form statistics** add-in provides a summary of the pattern usage for forms. When you access the **Form statistics** add-in from the **Dynamics 365** menu, it displays statistics for all forms. When you access the add-in from the shortcut menu for a form that is open in the form designer, it displays statistics for that form only. 
 
 ![Form statistics report](media/form-statistics.png) 
+
+## Forms Pattern report
+The **Form Patterns** report lists the set of forms that use custom patterns (either top-level form patterns or subpatterns). To generate the **Form Patterns** report, start Microsoft Visual Studio, click the **DYNAMICS 365** menu, expand **Add-ins**, and then click **Run the form patterns report**. The process will take several seconds. After the report has been generated, a dialog will provide the location of the report. Browse to the specified location, and open the file in Microsoft Excel. You can then filter the report down to the models that interest you.
 
 For more information on Visual Studio add-ins, see [Tools add-ins for Visual Studio](../dev-tools/developer-tools-add-ins.md).
