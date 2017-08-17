@@ -135,3 +135,7 @@ The following illustrations show an example of a template mapping in data integr
 [Synchronize accounts from Sales to customers in Finance and Operations](accounts-template-mapping.md)
 
 [Synchronize sales quotation headers and lines from Sales to Finance and Operations](sales-quotation-template-mapping.md)
+
+[Synchronize sales order headers and lines from Finance and Operations to Sales](sales-order-template-mapping.md)
+
+[Synchronize sales invoice headers and lines from Finance and Operations to Sales](sales-invoice-template-mapping.md)
