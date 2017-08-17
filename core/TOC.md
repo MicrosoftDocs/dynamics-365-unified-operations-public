@@ -2309,6 +2309,7 @@
 ### Primary form pattern guidelines
 #### [Select a form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/select-form-pattern?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Form styles and patterns](/dynamics365/unified-operations/dev-itpro/user-interface/form-styles-patterns?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Form pattern add-ins](/dynamics365/unified-operations/dev-itpro/user-interface/form-pattern-add-ins?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Form patterns
 #### [General form guidelines](/dynamics365/unified-operations/dev-itpro/user-interface/general-form-guidelines?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Details Master form pattern](/dynamics365/unified-operations/dev-itpro/user-interface/details-master-form-pattern?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
