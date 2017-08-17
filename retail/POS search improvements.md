@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product search and customer search in POS
-description: This topic provides an overview of product and customer search improvements in Dynamics 365 for Retail. 
+description: This topic provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 for Retail. 
 author: shalabhjain
 manager: AnnBe
 ms.date: 08/16/2017
@@ -32,53 +32,59 @@ ms.dyn365.ops.version: Retail April 2017 update
 
 # Overview of product and customer search in Point of Sale
 
-Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS) enable store employees to quickly search for products and customers by providing an easy to use search functionality. The search bar is always present at the top of MPOS/CPOS for the employees to quickly find the products and customers. The employees can search for products in the assortments and catalogs associated to the current store and also within the assortments and catalogs of any other store within the company, thus enabling the cashiers to sell and return the products outside of the store assortment. Similarly, employees can search for customers associated to the current store or any other store within the company. Additionally, the employees can search for customers associated to a different company within the parent organization.
+Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS) provide easy-to-use search functionality that lets store employees quickly search for products and customers. The search bar is always present at the top of MPOS and CPOS, so that employees can quickly find products and customers.
 
-# Product search 
+Employees can search for products in the assortments and catalogs that are associated with the current store, and in the assortments and catalogs that are associated with any other store in the company. Therefore, cashiers can sell and return products outside the store assortment. Similarly, employees can search for customers that are associated with the current store or any other store in the company. Additionally, employees can search for customers that are associated with a different company in the parent organization.
 
-By default, the product search is performed on the store assortment (local product search), but the employees can easily switch to any catalog that is associated to the current store or search within a different store. This is also referred as *remote product search*. To change the catalog, select the categories menu and then select the **Change catalog** button at the top of the slider (refer to the image). Select any of the available catalogs to browse. The system will search the selected catalog for products. 
+## Product search 
 
-On the **Change catalog** page, the employees can also easily select any store or search across all the stores for products.
+By default, a product search is done on the store assortment. This type of search is known as a *local product search*. However, employees can easily switch to any catalog that is associated with the current store, or they can search in a different store. This type of search is known as a *remote product search*. To change the catalog, select the **Categories** button on the left side of the page. At the top of the pane that appears, select the **Change catalog** button, and then select one of the available catalogs to browse it. The system will search the selected catalog for products.
 
-![Change catalog](./media/Changecatalog.png "Change catalog image").
+On the **Change catalog** page, employees can easily select any store, or they can search for products across all stores.
+
+![Changing the catalog](./media/Changecatalog.png "Changing the catalog")
  
-The local product search searches within the following product properties:
+A local product search searches within the following product properties:
+
 - Product number
 - Product name
 - Description
 - Dimensions
-- Barcode 
+- Barcode
 - Search name
 
-## Enhancements in the local product search
+### Enhancements to local product searches
 
-The product search experience has been enhanced to make it more user friendly. The enhancements are listed below:
+The experience for local product searches has been made more user friendly. The following enhancements have been made:
 
-- Product and customer drop-down menus added on the search bar so employees can select either **Product** or **Customer** before performing the search. The default selection is **Product**. Refer to the image for more details.
-- For multi-keyword searches (search terms), retailers will have an option to configure if the POS search results should include the results that **Match any search term** or **Match all search terms**. This setting is available in the POS functionality profile, under a new group named **Product search**. The default value is set as **Match any search term** and is also a recommended setting. This results in all the products which fully or partially match one or more search terms and the results are automatically sorted in ascending order of products with most keyword matches (full or partial).
+- Product and customer drop-down menus have been added to the search bar, so that employees can select either **Product** or **Customer** before they do the search. By default, **Product** is selected, as shown in the illustration that follows.
+- For multiple-keyword searches (that is, for searches that use search terms), retailers can configure whether the search results include results that match any search term or only results that match all search terms. This setting is available in the POS functionality profile, under a new group that is named **Product search**. The default setting is **Match any search term**. This setting is also the recommended setting. When the **Match any search term** setting is used, all products that fully or partially match one or more search terms are returned as results, and the results are automatically sorted in ascending order of products that have the most keyword matches (full or partial).
 
-    The setting **Match all search terms** only returns those products which match all the search terms (full or partial). This setting is helpful when the product names are lengthy and the employees want to only see the limited products in the search result, however, this search has two limitations
-     - The search is performed on individual product properties, such as only those products will be returned which have all the searched keywords in at least one of the product properties
-     - Dimensions are not searched using this search setting
-   
-- The retailers can now turn on the capability to display search suggestions while typing product names. This configuration is added to the POS functionality profile under a group named **Product search** and the configuration is named **Show search suggestions while typing**. This can assist the employees to quickly find the product they are searching, instead of typing the whole name manually.
+    The **Match all search terms** setting returns only products that match all the search terms (full or partial). This setting is helpful when the product names are lengthy, and employees want to see only limited products in the search results. However, this type of search has two limitations:
+
+    - The search is done on individual product properties. For example, only products that have all the searched keywords in at least one product property are returned.
+    - Dimensions aren't searched.
+
+- Retailers can now configure product search to show search suggestions as users type product names. A new setting for this functionality is available in the POS functionality profile, under a group that is named **Product search**. The setting is named **Show search suggestions while typing**. This functionality can help employees quickly find the product that they are searching for, because they don't have to type the whole name manually.
 - The product search algorithm now also searches for the searched terms in the **Search name** property of the product.
 
-![Product suggestions](./media/Productsuggestions.png "Product suggestions image")
+![Product suggestions](./media/Productsuggestions.png "Product suggestions")
 
-# Customer search
+## Customer search
 
-Customer search is used to find customers for various purposes, such as viewing a customer's wish list, viewing the purchase history, or adding them to a transaction. In the case of multiple keyword search, the customer search algorithm returns all the customers that match any of the searched keywords. However, the customers that match the most keywords are displayed at the top of the results. This behavior is analogous to how the other search engines display the results i.e. first show the results that match the most searched terms, followed by the ones that partially match the search keywords. Lastly, this helps the cashiers in scenarios where they are searching with multiple keywords and one of the keyword has a spelling mistake. 
+Customer search is used to find customers for various purposes. For example, cashiers might want to view a customer's wish list or purchase history, or add the customer to a transaction. In the case of multiple-keyword searches, the customer search algorithm returns all customers that match any of the searched keywords. However, the customers that match the most keywords appear at the top of the results. This behavior is analogous to the way that other search engines show results. They first show the results that match the most searched terms, and then they show the results that partially match the search keywords. This behavior helps cashiers in situations where they are using multiple keywords for their search, but one of the keywords has a spelling mistake.
 
-By default, the customer search is performed on the customer address books associated with the store (local customer search). However, the employees can also search for customers globally i.e. across the stores of the company and across all the other legal entities (remote customer search). To search globally, the employees can click the **Filter results** button and select the **Search all stores** option (refer to the image). This will not only return the customers, but return all types of parties, such as workers, vendors, contacts, or competitors, which are a part of any address book in the HQ. 
+By default, a customer search is done on the customer address books that are associated with the store. This type of search is known as a *local customer search*. However, employees can also search for customers globally. In other words, they can search across the stores of the company and across all other legal entities. This type of search is known as a *remote customer search*.
 
->[!NOTE]
->The remot' customer search has a limitation that it needs minimum 4 characters to be entered for the search to return the results.
+To search globally, employees can select the **Filter results** button at the bottom of the page and then select the **Search all stores** option, as shown in the illustration that follows. In this case, not only customers are returned. All types of parties that are part of any address book in the headquarters are also returned. These parties include workers, vendors, contacts, and competitors.
 
-In the remote search, the customers from the other legal entities are displayed without the Customer ID, because there is no customer ID created for this party in the current company. However, when the employee opens the customer details page, then the system automatically generates the customer ID for the party and also associates the store's customer address books with this customer as well. So henceforth, this customer will be visible in the local store search.
+> [!NOTE]
+> A minimum of four characters must be entered for a remote customer search to return results.
 
-![Global customer search](./media/Globalcustomersearch.png "Global customer search image")
+In a remote customer search, the customer ID isn't shown for customers from the other legal entities, because no customer ID has been created for those parties in the current company. However, if an employee opens the customer details page, the system automatically generates a customer ID for the party and also associates the store's customer address books with the customer. Therefore, the customer will be visible in local store searches that are done later.
 
-## Enhancements in local customer search
+![Global customer search](./media/Globalcustomersearch.png "Global customer search")
 
-The local customer search helps employees quickly find the customers by their phone numbers, with or without typing the special characters such as space, hyphens, or brackets, which might be added to the customer's phone number. The cashiers can store the phone number in any format e.g. include brackets, hyphens, symbols etc. but while searching, the cashiers can search the customer by typing the partial phone number of the customer. If the cashier enters the phone number with some special characters, then the cashiers can find the customers by typing the numbers that appear after the special characters as well. For example, if the number is added as 123-456-7890, then the cashier can search for the customer by typing 123, or 456, or 7890, or 1234567890 or by partially entering the first few numbers of the phone number. 
+### Enhancements to local customer searches
+
+Local customer searches help employees quickly find customers by phone number. Employees don't have to type any special characters that have been added to a customer's phone number, such as spaces, hyphens, or brackets. Although cashiers can store phone numbers in any format (for example, they can include brackets, hyphens, symbols, and so on), they can search for customers by typing a partial phone number. If a cashier included special characters when he or she entered a phone number, other cashiers can find the customer by typing the numbers that appear after the special characters. For example, if a customer's phone number was entered as **123-456-7890**, a cashier can search for the customer by typing **123**, **456**, **7890**, or **1234567890**, or by partially entering the first few numbers of the phone number.
