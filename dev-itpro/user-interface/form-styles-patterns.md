@@ -5,7 +5,7 @@ title: Form styles and patterns
 description: This topic describes the concept of form patterns and discusses the process for applying and removing patterns. A list of frequent questions are also answered in this topic. 
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
