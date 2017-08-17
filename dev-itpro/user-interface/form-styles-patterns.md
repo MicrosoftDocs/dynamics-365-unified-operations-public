@@ -91,7 +91,7 @@ Patterns enforce properties after the pattern structure has been successfully me
 
 ### How do I identify the set of forms that I should be doing more pattern work on?
 
-To identify the set of forms that still have remaining patterns work, you should generate and consult the **Form Patterns** report. To generate the report, click **Dynamics 365 **&gt; **Addins** &gt; **Run form patterns report** in Visual Studio.   After the report has been generated, a dialog box shows the name and location of the report file. Browse to that location, and open the report in Excel. Filter the report as described to get the desired information.
+To identify the set of forms that still have remaining patterns work, you should generate and consult the **Form Patterns** report. For information on running the report, see [Form pattern add-ins](form-pattern-add-ins.md). 
 
 -   **Filter the "Pattern" column to only show "(Blanks)"** -  This will show all the forms with no form pattern applied (no pattern specified on Form.Design).
 -   **Filter the "Unspecific count" column to only those values "greater than 0"** - This will show all forms where a pattern is expected on either Form.Design or a container control somewhere on the form.  You can combine this filter with the previously mentioned filter on the "Pattern" column to show only forms with subpattern work remaining.
