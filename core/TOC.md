@@ -785,9 +785,11 @@
 ##### [VAT statement](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Belgium
 ##### [CODA bank statement](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Create and transfer transactions to the BLWI](/dynamics365/unified-operations/financials/localizations/tasks/be-00011-create-transfer-blwi?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Intervat tax declaration](/dynamics365/unified-operations/financials/localizations/emea-bel-intervat-tax-declaration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [PRODCOM report setup](/dynamics365/unified-operations/financials/localizations/emea-bel-prodcom-report?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Reconciliation reports](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Set up payment balance reporting](/dynamics365/unified-operations/financials/localizations/tasks/be-00011-set-up-payment-balance-reporting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### The Czech Republic
 ##### [Credit note on cash discount](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2587,6 +2589,7 @@
 #### [Security architecture](/dynamics365/unified-operations/dev-itpro/sysadmin/security-architecture?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Security reports](/dynamics365/unified-operations/dev-itpro/sysadmin/security-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Import users in bulk](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/import-bulk-users?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up segregation of duties](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/set-up-segregation-duties?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Identify and resolve conflicts in segregation of duties](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
