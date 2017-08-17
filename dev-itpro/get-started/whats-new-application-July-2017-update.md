@@ -2030,7 +2030,7 @@ Finance and Operations, Enterprise edition. Finance and Operations, optimized to
 support integration with enhanced entities and Dynamics 365 for Sales is
 optimized with a solution.
 
-For additional information, see [Prospect to cash](/dynamics365/unified-operations//supply-chain/sales-marketing/prospect-to-cash)
+For additional information, see [Prospect to cash](/dynamics365/unified-operations//supply-chain/sales-marketing/prospect-to-cash).
 
 Punch-out to external catalog from purchase requisition 
 --------------------------------------------------------
