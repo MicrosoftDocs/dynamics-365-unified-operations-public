@@ -36,6 +36,6 @@ The tools for Visual Studio include a number of add-ins that support pattern dev
 ## Form statistics add-in
 The **Form statistics** add-in provides a summary of the pattern usage for forms. When you access the **Form statistics** add-in from the **Dynamics 365 **menu, it displays statistics for all forms. When you access the add-in from the shortcut menu for a form that is open in the form designer, it displays statistics for that form only. 
 
-[![37\_DevoToolsConcept](./media/37_devotoolsconcept.png)](./media/37_devotoolsconcept.png) 
+![Form statistics report](media/form-statistics.png) 
 
 For more information on Visual Studio add-ins, see [Tools add-ins for Visual Studio](../dev-tools/developer-tools-add-ins.md).
