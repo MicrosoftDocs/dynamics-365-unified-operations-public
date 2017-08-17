@@ -43,7 +43,7 @@ Introduction
 By adhering to form patterns, you gain various benefits. For example, form patterns correctly set layout properties so that forms are laid out responsively. However, when form pattern coverage is lacking (for example, there currently isn't support for many extensible controls), or when a form or container has unique requirements/uses that don't fit any pattern, developers can set the pattern to Custom. The developer then becomes responsible for ensuring a correct and responsive form layout.
 
 ## Forms that use custom patterns
-You an find the forms that use custom patterns by using the **Form Patterns** report. For information on running the report, see [Form pattern add-ins](form-pattern-add-ins.md). After running the report, filter the **Percent covered controls** column to show forms that have less than 100-percent coverage. For forms that have a top-level Custom pattern, **Custom** will appear in the **Patterns** column. 
+You can find the forms that use custom patterns by using the **Form Patterns** report. For information on running the report, see [Form pattern add-ins](form-pattern-add-ins.md). After running the report, filter the **Percent covered controls** column to show forms that have less than 100-percent coverage. For forms that have a top-level Custom pattern, **Custom** will appear in the **Patterns** column. 
 
 ## Testing configurations
 ### Key resolution
