@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Manage Bing Maps for your organizaiton
+
+title: Manage Bing Maps for your organization
 description: Learn how you can manage Bing Maps for your application. When Bing Maps is turned on, people can view a map of a store, warehouse, or other location when creating orders. 
 author: aamirallaqaband 
 manager: AnnBe
@@ -27,7 +28,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update 
 ---
 
-# Manage Bing Maps for your organizaiton
+# Manage Bing Maps for your organization
 
 [!include[banner](../includes/banner.md)]
 
