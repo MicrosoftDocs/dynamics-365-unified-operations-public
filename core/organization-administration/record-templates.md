@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create record templates
+# Record templates
 
 [!include[banner](../includes/banner.md)]
 
