@@ -93,7 +93,7 @@ Accept different types of payments from customers, such as bills of exchange, ca
 
 [Centralized payments for Accounts receivable](centralized-payments-accounts-receivable.md)
 
-[Settle a partial customer payment and the final payment in full before the discount date](accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+[Settle a partial customer payment and the final payment in full before the discount date](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
 
 [Settle a partial customer payment before the discount date with a final payment after the discount date](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
 
