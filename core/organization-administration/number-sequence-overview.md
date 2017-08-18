@@ -53,10 +53,11 @@ The following examples show how to use segments to create number sequence format
 ### Expense report numbers
 
 In the following example, expense report numbers are set up for the legal entity that is titled **CS**. 
-**Area:** Travel and expense 
-**Reference:** Expense report number 
-**Scope:** Legal entity 
-**Legal entity:** CS
+
+- **Area:** Travel and expense 
+- **Reference:** Expense report number 
+- **Scope:** Legal entity 
+- **Legal entity:** CS
 
 | Segments  | Segment type | Value     |
 |-----------|--------------|-----------|
@@ -64,7 +65,9 @@ In the following example, expense report numbers are set up for the legal entity
 | Segment 2 | Constant     | -EXPENSE- |
 | Segment 3 | Alphanumeric | \#\#\#\#  |
 
-**Example of formatted number**: CS-EXPENSE-0039 You can set up a similar number sequence format for other legal entities. For example, for a legal entity that is named **RW**, if you change only the value of the legal entity segment, the formatted number is RW-EXPENSE-0039. You can also change the whole number sequence format for other legal entities. For example, you can omit the legal entity scope segment to create a formatted number such as Exp-0001.
+**Example of formatted number**: CS-EXPENSE-0039 
+
+You can set up a similar number sequence format for other legal entities. For example, for a legal entity that is named **RW**, if you change only the value of the legal entity segment, the formatted number is RW-EXPENSE-0039. You can also change the whole number sequence format for other legal entities. For example, you can omit the legal entity scope segment to create a formatted number such as Exp-0001.
 
 ### Sales order numbers
 
