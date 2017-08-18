@@ -111,12 +111,12 @@ Centralized payments are not required because all invoices are recorded in a sin
 #### If the organization is modeled as a legal entity 
 Intercompany sales orders, purchase orders, payments, or receipts can be applied to one another. You are not required to use journal vouchers. You can view intercompany transactions at the sub-ledger level (Accounts receivable, Accounts payable). The following examples illustrate how intercompany transactions are handled. 
 
-**Example 1: Headquarters provides services to regional offices and must charge the costs of those services to the regional offices**
+###### Example 1: Headquarters provides services to regional offices and must charge the costs of those services to the regional offices
 If you model the regional office as a legal entity, you have the following options: 
 - Headquarters creates a journal entry to cross-charge the regional office for the expense. The transactions cannot be aged.
 - Headquarters sends a purchase order for the services to the regional office. A sales order is automatically created in the legal entity for the regional office, with intercompany sub-ledger transactions. 
 
-**Example 2: Headquarters procures and pays for service that is delivered to a regional office**
+###### Example 2: Headquarters procures and pays for service that is delivered to a regional office
 If you model the regional office as a legal entity, you have the following options: 
 - The invoice and payment follow the regulatory requirements of headquarters. Headquarters can create a journal entry to cross-charge the regional office for the expense. The transactions cannot be aged. 
 - The invoice and payment follow the regulatory requirements of headquarters. Headquarters can create an intercompany sub-ledger transaction.
@@ -124,13 +124,11 @@ If you model the regional office as a legal entity, you have the following optio
 #### If the organization is modeled as an operating unit 
 Intercompany transactions among operating units are supported only through journal vouchers. An operating unit cannot issue or receive a purchase order, sales order, or invoice from another operating unit in the same legal entity. You cannot view intercompany transactions at the sub-ledger level (Accounts receivable, Accounts payable). The following examples illustrate how intercompany transactions are handled. 
 
-**Example 1: Headquarters provides services to regional offices and must charge the costs of those services to the regional offices** 
+###### Example 1: Headquarters provides services to regional offices and must charge the costs of those services to the regional offices
 If you model the regional office as an operating unit, headquarters enters an expense transaction and codes it to the regional office. 
 
-**Example 2: Headquarters procures and pays for service that is delivered to a regional office.**
+###### Example 2: Headquarters procures and pays for service that is delivered to a regional office.
 If you model the regional office as an operating unit, the invoice and payment follow the regulatory requirements of headquarters. The invoice can be coded to the regional office. On the income statement, use a balancing financial dimension to report costs for the regional office.
-
-
 
 ### Local tax requirements
 | Model as legal entity                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Model as operating unit                                                                                                                                                                                                                                                                                                                                                                |
