@@ -490,10 +490,16 @@
 ##### [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 ##### [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
 ##### [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
-##### [Hands-on labs (White paper)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
+##### [Hands-on labs (White paper)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Configure source system
+##### [Currency revaluation in a consolidation company](/dynamics365/unified-operations/financials/general-ledger/currency-revaluation-consolidation-company?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Import currency exchange rates](/dynamics365/unified-operations/financials/general-ledger/import-currency-exchange-rates?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Account structures](/dynamics365/unified-operations/financials/general-ledger/Default-dimensions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create account structures (Task guide)](/dynamics365/unified-operations/financials/general-ledger/tasks/create-account-structures?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Financial dimensions](/dynamics365/unified-operations/financials/general-ledger/financial-dimensions.md?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Financial dimensions](/dynamics365/unified-operations/financials/general-ledger/financial-dimensions.mdtoc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+
+
 #### Create dimensions and import dimension members
 ##### [Cost element dimensions](/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cost object dimensions](/dynamics365/unified-operations/financials/cost-accounting/cost-objects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
