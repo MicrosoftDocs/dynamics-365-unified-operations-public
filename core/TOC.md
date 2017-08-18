@@ -1614,9 +1614,11 @@
 #### [Set up electronic signatures](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Case management](/dynamics365/unified-operations/fin-and-ops/organization-administration/cases?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Configure case security, processes, and categories](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-case-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Record templates](/dynamics365/unified-operations/fin-and-ops/organization-administration/record-templates?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Create a record template](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry)
+#### [Use a record template to create a new record](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/use-record-template-new-record)
 ### [Configure document management](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Configure and send email](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Create record templates](/dynamics365/unified-operations/fin-and-ops/organization-administration/record-templates?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Date/time data and time zones](/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Production
