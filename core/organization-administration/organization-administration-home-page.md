@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations in your organization.
+This topic points to resources that will help power users and administrators configure Microsoft Dynamics 365 for Finance and Operations for your organization. These resources will help you configure the system to work smoothly and effectively for your business.
 
 Number sequences
 ----------------
