@@ -1584,10 +1584,11 @@
 #### [Create an organization hierarchy](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create a legal entity](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create an operating unit](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Address books](/dynamics365/unified-operations/fin-and-ops/organization-administration/qa-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Global address book](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Plan global address books](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Global address book](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Plan how to configure the global address book](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Configure the global address book](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/configure-global-address-book?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [FAQ about address books](/dynamics365/unified-operations/fin-and-ops/organization-administration/qa-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 
 ### [Workflow](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-workflow-system?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Workflow system architecture](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-system-architecture?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
