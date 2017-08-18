@@ -181,7 +181,7 @@ All operating units share the same set of products. If your internal organizatio
 
 ### Inquiry and reporting  
 #### If the organization is modeled as a legal entity
-You must manually change companies to enter transactions and perform inquiries in multiple legal entities. Because of data security boundaries, consolidated inquiry and reporting can be resource intensive and time-consuming. | 
+You must manually change companies to enter transactions and perform inquiries in multiple legal entities. Because of data security boundaries, consolidated inquiry and reporting can be resource intensive and time-consuming. 
 
 #### If the organization is modeled as an operating unit 
 You do not need to change companies to access data from multiple operating units. Consolidated inquiry and reporting and individual regional inquiry is easier and faster.
