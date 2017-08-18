@@ -62,7 +62,7 @@ Use Accounts payable to track invoices and outgoing expenditures to vendors.
 
 [Vendor posting profiles](vendor-posting-profiles.md)
 
-[Set up accounts payable invoice matching validation](set-up-accounts-payable-invoice-matching-validation.md)
+[Set up accounts payable invoice matching validation](tasks/set-up-accounts-payable-invoice-matching-validation.md)
 
 [Three-way matching policies](three-way-matching-policies.md)
 
@@ -85,9 +85,9 @@ Payment types are optional, but they are useful when you validate electronic pay
 
 [Vendor payments workspace](vendor-payments-workspace.md)
 
-[Define vendor payment fees](define-vendor-payment-fees.md)
+[Define vendor payment fees](tasks/define-vendor-payment-fees.md)
 
-[Define vendor payment terms](define-vendor-payment-terms.md)
+[Define vendor payment terms](tasks/define-vendor-payment-terms.md)
 
 [Positive pay overview](positive-pay-overview.md)
 
@@ -113,7 +113,7 @@ Payment types are optional, but they are useful when you validate electronic pay
 
 The following topics provide information about settlements. Settlement is the process of settling payments with invoices. 
 
-[Configure settlement](configure-settlement.md)
+[Configure settlement](cash-bank-management/configure-settlement.md)
 
 [Settle a partial vendor payment before the discount date](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 
