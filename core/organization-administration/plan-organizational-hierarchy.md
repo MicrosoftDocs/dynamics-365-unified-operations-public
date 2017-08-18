@@ -42,7 +42,8 @@ Organizational hierarchies represent the relationships between the organizations
 > [!Note]
 > Although you can use financial dimensions to represent legal entities without creating the legal entities in Finance and Operations, financial dimensions aren’t designed to address the operational or business needs of legal entities. The interunit accounting functionality in Finance and Operations is designed to address only the accounting entries that are created by each transaction. 
 
-**Caution:** You shouldn’t decide how to model organizations based only on the information in this article. This documentation is a guide. You can work with your Finance and Operations Partner for additional guidance. Your Finance and Operations Partner has gained experience in various industries and across the customer base.
+> [!Caution]
+> You shouldn’t decide how to model organizations based only on the information in this article. This documentation is a guide. You can work with your Finance and Operations Partner for additional guidance. Your Finance and Operations Partner has gained experience in various industries and across the customer base.
 
 ## Decide whether to model internal organizations as legal entities or operating units
 
