@@ -59,9 +59,11 @@ Some functionality in Finance and Operations works differently depending on whe
 
 
 ### Master data
-| Model as legal entity                                                                                                                                                                                                                                      | Model as operating unit                      |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| Some master data, such as customers, payment terms, tax authorities, and site-specific stock ordering, must be set up for each legal entity. Some master data, such as users, products, and most human resources data, is shared among all legal entities. | Master data is shared among operating units. |
+#### If the organization is modeled as a legal entity      
+Some master data, such as customers, payment terms, tax authorities, and site-specific stock ordering, must be set up for each legal entity. Some master data, such as users, products, and most human resources data, is shared among all legal entities. 
+
+#### If the organization is modeled as an operating unit 
+Master data is shared among operating units. |
 
 ### Module parameters
 | Model as legal entity                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Model as operating unit                             |
