@@ -88,10 +88,6 @@ The **Is Externally Maintained** information is used to ensure that only **Quote
 
 -   Ensure that the needed **ValueMap** for selling **Unit of measure** (UOM) in Finance and Operations exists in the **Source -\> CDS mapping SalesUnitSymbol / DefaultSellingUnitOfMeasure**.
 
--   Ensure that **Decimals supported** for UOM match your requirements in **CDS -\> Destination**. If you require different values per UOM, this can be done with **ValueMap** from Unit, for example, [Each : 0] & [Pound : 2].
-
-    -   Template value is defaulted to 0.
-
 -   Update the **CDS Organization ID Organization_OrganizationId** in **Source -\> CDS**.
 
     -   Template value is defaulted to ORG001.
