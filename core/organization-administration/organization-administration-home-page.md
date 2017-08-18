@@ -2,7 +2,7 @@
 # required metadata
 
 title: Organization administration home page
-description: This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations in your organization.
+description: This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in your organization.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic points to content that will help power users and administrators configure Microsoft Dynamics 365 for Finance and Operations. This content will help them configure the system to work smoothly and effectively for your organization and business.
+This topic points to content that will help power users and administrators configure Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This content will help them configure the system to work smoothly and effectively for your organization and business.
 
-Mush of the content listed here applies to features in the **Organizational administration** module. However, there are a couple of tasks, such as creating and using a record template, that can be performed in any module to help you organization run more efficiently. 
+Much of the content listed here applies to features in the **Organizational administration** module. However, there are a couple of tasks, such as creating and using a record template, that can be performed in any module to help your organization run more efficiently. 
 
 Number sequences
 ----------------
@@ -94,7 +94,7 @@ Number sequences
 - [Create a record template to facilitate data entry](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry) (Task guide)
 - [Use a record template to create a new record](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/use-record-template-new-record) (Task guide)
 
-## General administration
+## General organization administration
 -   [Change the banner or logo](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (Task guide)
 - [Configure document management](configure-document-management.md)
 - [Configure and send email](configure-email.md)
