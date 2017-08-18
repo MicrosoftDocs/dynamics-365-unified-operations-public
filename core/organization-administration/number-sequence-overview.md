@@ -71,34 +71,59 @@ You can set up a similar number sequence format for other legal entities. For ex
 
 ### Sales order numbers
 
-In the following example, sales order numbers are set up for the company ID **CEU**. **Area:** Sales **Reference:** Sales order **Scope:** Company **Company:** CEU
+In the following example, sales order numbers are set up for the company ID **CEU**. 
+
+- **Area:** Sales 
+- **Reference:** Sales order 
+- **Scope:** Company 
+- **Company:** CEU
+
 | Segments  | Segment type | Value    |
 |-----------|--------------|----------|
 | Segment 1 | Constant     | SO-      |
 | Segment 2 | Alphanumeric | \#\#\#\# |
 
-**Example of formatted number**: SO-0029 Even though a scope segment is not included in the format, numbering restarts for each company ID. If you use the same format for all company IDs, the same numbers are used in each company. For example, sales order number SO-0029 is used in each company. You can also change the whole number sequence format for other company IDs.
+**Example of formatted number**: SO-0029 
+
+Even though a scope segment is not included in the format, numbering restarts for each company ID. If you use the same format for all company IDs, the same numbers are used in each company. For example, sales order number SO-0029 is used in each company. You can also change the whole number sequence format for other company IDs.
 
 ### Purchase requisition numbers
 
-In the following example, purchase requisition numbers are organization-wide. **Area:** Purchase **Reference:** Purchase requisition **Scope:** Shared
+In the following example, purchase requisition numbers are organization-wide. 
+
+- **Area:** Purchase 
+- **Reference:** Purchase requisition 
+- **Scope:** Shared
+
 | Segments  | Segment type | Value    |
 |-----------|--------------|----------|
 | Segment 1 | Constant     | Req      |
 | Segment 2 | Alphanumeric | \#\#\#\# |
 
-**Example of formatted number**: Req0052 Because the scope is **Shared**, the number sequence format is used across the organization. You cannot set up different number sequence formats for different parts of the organization. 
+**Example of formatted number**: Req0052 
+
+Because the scope is **Shared**, the number sequence format is used across the organization. You cannot set up different number sequence formats for different parts of the organization. 
+
 Performance considerations for number sequences
 -----------------------------------------------
 
 Consider the following information about how the configuration of number sequences can affect system performance before you set up number sequences.
+
 ### Continuous and non-continuous number sequences
 
-Number sequences can be continuous or non-continuous. A continuous number sequence does not skip any numbers, but numbers may not be used sequentially. Numbers from a non-continuous number sequence are used sequentially, but the number sequence may skip numbers. For example, if a user cancels a transaction, a number is generated, but not used. In a continuous number sequence, that number is recycled later. In a non-continuous number sequence, the number is not used. Continuous number sequences are typically required for external documents, such as purchase orders, sales orders, and invoices. However, continuous number sequences can adversely affect system response times because the system must request a number from the database every time that a new document or record is created. If you use a non-continuous number sequence, you can enable **Preallocation** on the **Performance** FastTab of the **Number sequences** page. When you specify a quantity of numbers to preallocate, the system selects those numbers and stores them in memory. New numbers are requested from the database only after the preallocated quantity has been used. Unless there is a regulatory requirement that you use continuous number sequences, we recommend that you use non-continuous number sequences for better performance.
+Number sequences can be continuous or non-continuous. A continuous number sequence does not skip any numbers, but numbers may not be used sequentially. Numbers from a non-continuous number sequence are used sequentially, but the number sequence may skip numbers. For example, if a user cancels a transaction, a number is generated, but not used. In a continuous number sequence, that number is recycled later. In a non-continuous number sequence, the number is not used. 
+
+Continuous number sequences are typically required for external documents, such as purchase orders, sales orders, and invoices. However, continuous number sequences can adversely affect system response times because the system must request a number from the database every time that a new document or record is created. 
+
+If you use a non-continuous number sequence, you can enable **Preallocation** on the **Performance** FastTab of the **Number sequences** page. When you specify a quantity of numbers to preallocate, the system selects those numbers and stores them in memory. New numbers are requested from the database only after the preallocated quantity has been used. 
+
+Unless there is a regulatory requirement that you use continuous number sequences, we recommend that you use non-continuous number sequences for better performance.
 
 ### Automatic cleanup of number sequences
 
-In case of a power failure, an application error, or other unexpected failure, the system cannot recycle numbers automatically for continuous number sequences. You can run the cleanup process manually or automatically to recover the lost numbers. Carefully consider server usage when you plan the cleanup process. We recommend that you perform the cleanup as a batch job during non-peak hours.
+In case of a power failure, an application error, or other unexpected failure, the system cannot recycle numbers automatically for continuous number sequences. You can run the cleanup process manually or automatically to recover the lost numbers. 
+
+Carefully consider server usage when you plan the cleanup process. We recommend that you perform the cleanup as a batch job during non-peak hours.
 
 
 
