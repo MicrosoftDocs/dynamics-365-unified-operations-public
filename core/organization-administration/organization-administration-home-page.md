@@ -64,9 +64,9 @@ The global address book is a centralized repository for master data that must be
 After you create the global address book, you can create additional address books as you require, such as a separate address book for each company in your organization or for each line of business. 
 
 -   [Global address book](overview-global-address-book.md)
--   [Plan global address books](plan-configuration-global-address-book-additional-address-books.md)
+-   [Plan how to configure the global address book and additional address books](plan-configuration-global-address-book-additional-address-books.md)
 - [Configure the global address book](./tasks/configure-global-address-book.md)
--   [Address books FAQ](qa-address-books.md)
+-   [FAQ about address books](qa-address-books.md)
 
 
 ## Workflow
