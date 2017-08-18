@@ -488,9 +488,9 @@
 #### [Terms](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Get started
-##### [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
-##### [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
-##### [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
+##### [Get started with Cost accounting (Video)](https://youtu.be/1pUDtJQZ8FU)
+##### [Cost control mobile workspace (Video)](https://youtu.be/imsuTg8rUVk)
+##### [Use Excel for cost analysis (Video)](https://youtu.be/-HKHYdClvx8)
 ##### [Hands-on labs (White paper)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Configure source system
