@@ -63,56 +63,74 @@ Some functionality in Finance and Operations works differently depending on whe
 Some master data, such as customers, payment terms, tax authorities, and site-specific stock ordering, must be set up for each legal entity. Some master data, such as users, products, and most human resources data, is shared among all legal entities. 
 
 #### If the organization is modeled as an operating unit 
-Master data is shared among operating units. |
+Master data is shared among operating units. 
 
 ### Module parameters
-| Model as legal entity                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Model as operating unit                             |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| Parameters for modules, such as Accounts receivable parameters, Accounts payable parameters, and Cash and bank management parameters, must be set per legal entity. Because the module setup for legal entities is separate, each subsidiary can comply with local statutory requirements and business practices. For example, a professional services legal entity and a manufacturing legal entity can have different module parameters even though they report to the same parent company. | Module parameters are shared among operating units. |
+#### If the organization is modeled as a legal entity    
+Parameters for modules, such as Accounts receivable parameters, Accounts payable parameters, and Cash and bank management parameters, must be set per legal entity. Because the module setup for legal entities is separate, each subsidiary can comply with local statutory requirements and business practices. For example, a professional services legal entity and a manufacturing legal entity can have different module parameters even though they report to the same parent company. 
+
+#### If the organization is modeled as an operating unit 
+Module parameters are shared among operating units. 
 
 ### Data security
-| Model as legal entity                                                                                                                                                                                                                                                                                                                                                                                                   | Model as operating unit                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Most data is automatically secured by company ID. A company ID is a unique identifier for the data that is associated with a legal entity. A company can be associated with only one legal entity, and a legal entity can be associated with only one company. Users can access data only for the companies that they have access to. You do not need to customize Finance and Operations to secure data by company ID. | Data can be secured per operating unit by creating customized data security policies. Data security policies are used to limit access to data. For example, assume that a user is allowed to create purchase orders only in a particular operating unit. Data security policies can be created to prevent the user from accessing purchase order data from any other operating unit. The volume of transactions and the number of security policies can affect performance. When you design security policies, keep performance in mind. |
+#### If the organization is modeled as a legal entity    
+Most data is automatically secured by company ID. A company ID is a unique identifier for the data that is associated with a legal entity. A company can be associated with only one legal entity, and a legal entity can be associated with only one company. Users can access data only for the companies that they have access to. You do not need to customize Finance and Operations to secure data by company ID. 
+
+#### If the organization is modeled as an operating unit 
+Data can be secured per operating unit by creating customized data security policies. Data security policies are used to limit access to data. For example, assume that a user is allowed to create purchase orders only in a particular operating unit. Data security policies can be created to prevent the user from accessing purchase order data from any other operating unit. The volume of transactions and the number of security policies can affect performance. When you design security policies, keep performance in mind. 
 
 ### Ledgers
-| Model as legal entity                                                                                                                                                                                                                                                                                                        | Model as operating unit                                                                                                                                                                                                                                                                                                                                  |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Each legal entity requires a ledger that provides a chart of accounts, accounting currency, reporting currency, and fiscal calendar. A balance sheet can be created only for a legal entity. Main accounts, dimensions, account structures, charts of accounts, and account rules can be used by more than one legal entity. | An operating unit can’t have its own ledger information. If your internal organizations do not require unique ledgers, you can model them as operating units. Ledger information will be set up for the parent legal entity in the hierarchy. Income statements can be created for operating units within a legal entity or for the parent legal entity. |
+#### If the organization is modeled as a legal entity    
+Each legal entity requires a ledger that provides a chart of accounts, accounting currency, reporting currency, and fiscal calendar. A balance sheet can be created only for a legal entity. Main accounts, dimensions, account structures, charts of accounts, and account rules can be used by more than one legal entity.
+
+#### If the organization is modeled as an operating unit 
+An operating unit can’t have its own ledger information. If your internal organizations do not require unique ledgers, you can model them as operating units. Ledger information will be set up for the parent legal entity in the hierarchy. Income statements can be created for operating units within a legal entity or for the parent legal entity. 
+
 ### Fiscal calendars 
-| Model as legal entity                                                                                                                                                              | Model as operating unit                                                                                                                                                              |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Each legal entity has its own fiscal calendar. If your internal organizations use different fiscal years and fiscal calendars, you must model the organizations as legal entities. | Operating units must share a fiscal calendar. If your internal organizations can use the same fiscal years and fiscal calendars, you can model the organizations as operating units. |
+#### If the organization is modeled as a legal entity    
+Each legal entity has its own fiscal calendar. If your internal organizations use different fiscal years and fiscal calendars, you must model the organizations as legal entities. 
+
+#### If the organization is modeled as an operating unit 
+Operating units must share a fiscal calendar. If your internal organizations can use the same fiscal years and fiscal calendars, you can model the organizations as operating units. 
 
 ### Consolidation
-| Model as legal entity                                                                                                                         | Model as operating unit                                                              |
-|-----------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| You must consolidate the financial results for regional offices into a single, consolidated company in order to prepare financial statements. | Consolidation is not required, because data is already shared among operating units. |
+#### If the organization is modeled as a legal entity    
+You must consolidate the financial results for regional offices into a single, consolidated company in order to prepare financial statements. 
+
+#### If the organization is modeled as an operating unit 
+Consolidation is not required, because data is already shared among operating units. 
+
 ### Centralized payments
-| Model as legal entity                                                                                                                  | Model as operating unit                                                                           |
-|----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| Centralized payments must be set up so that invoices for all child legal entities can be paid to or from a single parent legal entity. | Centralized payments are not required because all invoices are recorded in a single legal entity. |
+#### If the organization is modeled as a legal entity 
+Centralized payments must be set up so that invoices for all child legal entities can be paid to or from a single parent legal entity. 
+
+#### If the organization is modeled as an operating unit 
+Centralized payments are not required because all invoices are recorded in a single legal entity.
+
 ### Intercompany transactions
-| Model as legal entity                                                                                                                                                                                                                                  | Model as operating unit                                                                                                                                                                                                                                                                                                                           |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intercompany sales orders, purchase orders, payments, or receipts can be applied to one another. You are not required to use journal vouchers. You can view intercompany transactions at the sub-ledger level (Accounts receivable, Accounts payable). | Intercompany transactions among operating units are supported only through journal vouchers. An operating unit cannot issue or receive a purchase order, sales order, or invoice from another operating unit in the same legal entity. You cannot view intercompany transactions at the sub-ledger level (Accounts receivable, Accounts payable). |
+#### If the organization is modeled as a legal entity 
+Intercompany sales orders, purchase orders, payments, or receipts can be applied to one another. You are not required to use journal vouchers. You can view intercompany transactions at the sub-ledger level (Accounts receivable, Accounts payable). The following examples illustrate how intercompany transactions are handled. 
 
-#### Example 1: Headquarters provides services to regional offices and must charge the costs of those services to the regional offices
-
+**Example 1: Headquarters provides services to regional offices and must charge the costs of those services to the regional offices**
 If you model the regional office as a legal entity, you have the following options: 
 - Headquarters creates a journal entry to cross-charge the regional office for the expense. The transactions cannot be aged.
 - Headquarters sends a purchase order for the services to the regional office. A sales order is automatically created in the legal entity for the regional office, with intercompany sub-ledger transactions. 
 
-If you model the regional office as an operating unit: 
-- Headquarters enters an expense transaction and codes it to the regional office. 
-
-#### Example 2: Headquarters procures and pays for service that is delivered to a regional office
+**Example 2: Headquarters procures and pays for service that is delivered to a regional office**
 If you model the regional office as a legal entity, you have the following options: 
 - The invoice and payment follow the regulatory requirements of headquarters. Headquarters can create a journal entry to cross-charge the regional office for the expense. The transactions cannot be aged. 
 - The invoice and payment follow the regulatory requirements of headquarters. Headquarters can create an intercompany sub-ledger transaction.
 
-If you model the regional office as an operating unit: 
-- The invoice and payment follow the regulatory requirements of headquarters. The invoice can be coded to the regional office. On the income statement, use a balancing financial dimension to report costs for the regional office.
+#### If the organization is modeled as an operating unit 
+Intercompany transactions among operating units are supported only through journal vouchers. An operating unit cannot issue or receive a purchase order, sales order, or invoice from another operating unit in the same legal entity. You cannot view intercompany transactions at the sub-ledger level (Accounts receivable, Accounts payable). The following examples illustrate how intercompany transactions are handled. 
+
+**Example 1: Headquarters provides services to regional offices and must charge the costs of those services to the regional offices** 
+If you model the regional office as an operating unit, headquarters enters an expense transaction and codes it to the regional office. 
+
+**Example 2: Headquarters procures and pays for service that is delivered to a regional office.**
+If you model the regional office as an operating unit, the invoice and payment follow the regulatory requirements of headquarters. The invoice can be coded to the regional office. On the income statement, use a balancing financial dimension to report costs for the regional office.
+
+
 
 ### Local tax requirements
 | Model as legal entity                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Model as operating unit                                                                                                                                                                                                                                                                                                                                                                |
