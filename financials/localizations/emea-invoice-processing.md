@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 # Invoice processing
 
-This topic provides information about how customer and vendor invoices are processed for some European countries. Legal requirements for these countries affect the invoicing process. This topic also briefly describes some country-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax. 
+This topic briefly describes some country-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax. Legal requirements for some European countries affect the invoicing process. This topic provides information about how customer and vendor invoices are processed for these countries. 
 <table>
 <thead>
 <tr>
@@ -50,12 +50,12 @@ This topic provides information about how customer and vendor invoices are proce
 <ul>
 <li>On the <strong>Accounts payable parameters</strong> page, enable the <strong>Intra-community VAT</strong> and <strong>Document date for intra-community VAT</strong> parameters.</li>
 <li>Set up two sales tax codes, one that has a positive sales tax percentage and one that has a negative sales tax percentage.</li>
-<li>Set up a sales tax group that includes both the positive and negative sales tax codes. For the negative sales tax code, set the <strong>Intracommunity VAT</strong> parameter to <strong>true</strong>.</li>
+<li>Set up a sales tax group that includes both the positive and negative sales tax codes. For the negative sales tax code, set the <strong>Intracommunity VAT</strong> parameter to <strong>Yes</strong>.</li>
 </ul>
 <p>After successful setup, purchases will have two posted sales tax transactions:</p>
 <ul>
-<li>A positive transaction that has a direction of <strong>sales tax receivable</strong> and a VAT register date that equals the date from the invoice posting window</li>
-<li>A negative transaction that has a direction of <strong>sales tax payable</strong> and a VAT register date that equals the document date</li>
+<li>A positive transaction that has a direction of <strong>sales tax receivable</strong> and a VAT register date that equals the date from the invoice posting page.</li>
+<li>A negative transaction that has a direction of <strong>sales tax payable</strong> and a VAT register date that equals the document date.</li>
 </ul>
 </td>
 </tr>
@@ -71,7 +71,7 @@ This topic provides information about how customer and vendor invoices are proce
 <td>Poland, Hungary, Czech Republic</td>
 <td>
 <p>Legislation provides different rules for selecting valid exchange rates for business transactions. In the <strong>Exchange rate date</strong> field on the <strong>Accounts receivable parameters</strong> and <strong>Accounts payable parameters</strong> pages, you can select the date that should be used for amounts in the accounting currency calculation on purchase and sales documents. During data entry, the system retrieves the exchange rate for the transaction, based on this parameter.</p>
-<blockquote>[!NOTE]<br>When you set the <strong>Exchange rate date</strong> field to <strong>Document date (for EU trade only)</strong>, the system uses the sales tax group. For the sales tax group, there is a <strong>EU trade</strong> parameter on the <strong>General</strong> tab. If the <strong>EU trade</strong> check box is selected for the sales tax group, and if this sales tax group exists on the header of the document, the system retrieves the exchange rate based on the document date. If the <strong>EU trade</strong> check box is cleared for this sales tax group, the system retrieves the exchange rate based on the posting date of the document.</blockquote>
+<blockquote>[!NOTE]<br>When you set the <strong>Exchange rate date</strong> field to <strong>Document date (for EU trade only)</strong>, the system uses the sales tax group. For the sales tax group, there is a <strong>EU trade</strong> parameter on the <strong>General</strong> tab. If the <strong>EU trade</strong> option is set to <strong>Yes</strong> for the sales tax group, and if this sales tax group exists on the header of the document, the system retrieves the exchange rate based on the document date. If the <strong>EU trade</strong> option is set to <strong>No</strong> for this sales tax group, the system retrieves the exchange rate based on the posting date of the document.</blockquote>
 </td>
 </tr>
 <tr>
