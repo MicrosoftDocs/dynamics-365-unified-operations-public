@@ -113,7 +113,7 @@ Payment types are optional, but they are useful when you validate electronic pay
 
 The following topics provide information about settlements. Settlement is the process of settling payments with invoices. 
 
-[Configure settlement](/dynamics365/unified-operations/cash-bank-management/configure-settlement.md)
+[Configure settlement](../cash-bank-management/configure-settlement.md)
 
 [Settle a partial vendor payment before the discount date](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 
