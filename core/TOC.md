@@ -498,7 +498,7 @@
 ##### [Import currency exchange rates](/dynamics365/unified-operations/financials/general-ledger/import-currency-exchange-rates?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Account structures](/dynamics365/unified-operations/financials/general-ledger/Default-dimensions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create account structures (Task guide)](/dynamics365/unified-operations/financials/general-ledger/tasks/create-account-structures?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Financial dimensions](/dynamics365/unified-operations/financials/general-ledger/financial-dimensions.mdtoc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Financial dimensions](/dynamics365/unified-operations/financials/general-ledger/financial-dimensions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Create dimensions and import dimension members
 ##### [Cost element dimensions](/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -528,8 +528,10 @@
 ##### [Create and assign a cost distribution policy to a cost control unit (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create a cost rollup policy (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-rollup-policy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-#### Data source processing
+#### Data source and data provider
 ##### [Manage a data source for the cost accounting ledger (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+#### Data source processing
 ##### [Process and trace source data (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/process-trace-source-data?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Overhead calculation
