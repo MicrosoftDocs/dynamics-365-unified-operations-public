@@ -55,7 +55,7 @@ Number sequences
 -   [Address books](qa-address-books.md)
 -   [Global address book](overview-global-address-book.md)
 -   [Plan global address books](plan-configuration-global-address-book-additional-address-books.md)
-- [Configure the global address book](../tasks/configure-global-address-book.md)
+- [Configure the global address book](./tasks/configure-global-address-book.md)
 
 ## Workflow
 -   [Workflow overview](overview-workflow-system.md)
