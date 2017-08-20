@@ -72,7 +72,7 @@ Set up cost accounting<br/>
 
 <tr style="border:none">
 <td>
-<img alt="" src="https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg" width=36px height=36px data-linktype="external">
+<img alt="" src="./media/f0b5.png" width=36px height=36px data-linktype="external">
 </td>
 <td>
 <h3>Deploy your first .NET app to Azure</h3>
