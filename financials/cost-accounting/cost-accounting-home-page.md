@@ -71,10 +71,10 @@ Set up cost accounting<br/>
 <table style="border:solid">
 
 <tr style="border:none">
-<td>
+<td valign="middle">
 <img alt="" src="./media/f0b5.png" width=36px height=36px data-linktype="external">
 </td>
-<td>
+<td valign="middle">
 <h3>Deploy your first .NET app to Azure</h3>
 
 </td>
