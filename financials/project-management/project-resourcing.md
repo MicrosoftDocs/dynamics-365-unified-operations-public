@@ -239,8 +239,9 @@ We recommend that you use a batch. The options are available in synchronizing ca
 
 | Option | Description                                                                                                                                                                                          |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Yes    | Synchronize all resource data with calendar and base calendar information, and replace all information in the project's resource capacity calendar.                                                  |
-| No     | Synchronize resource data, based on the date interval code, and the specified start and end dates. This option doesn't remove existing data, and updates information only for newly added resources. |
+| Period code    | Optionally select the General ledger date interval code to set the start and end date for the resource capacity roll-up synchronization process.                                                  |
+| Start date     | Enter the start date for the resource capacity roll-up synchronization process. |
+| End date     | Enter the end date for the resource capacity roll-up synchronization process. |
 
 [![Synchronization process](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)
 
