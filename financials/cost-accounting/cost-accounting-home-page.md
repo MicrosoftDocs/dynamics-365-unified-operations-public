@@ -38,6 +38,8 @@ ms.dyn365.ops.version: Version 1611
 
 The following learning map shows the major concepts and tasks with connecting lines between related tasks that describe the nature of the cost accounting module.
 
+<iframe width="100%"  src="map to ekstra.htm" frameborder="0" allowfullscreen></iframe>
+
 ![Learning map for cost accounting](./media/cost-accounting-map.png)
 
 ## Quick links<br/>
