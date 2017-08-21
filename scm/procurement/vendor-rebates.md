@@ -99,7 +99,7 @@ When a claim is generated, its status is set to either **To be calculated** or *
 > [!NOTE] 
 > If the **Approval required** check box on a vendor rebate agreement is not selected, the claims will be generated with the status **Approved**. The approval is mandatory for claims granted on a cumulative basis.
 
-### Review and approve claims
+### Approve claims and view postings and invoice details
 When claims have been approved, they can be processed by the Accounts payable and a credit memo (vendor invoice) for the rebate claim amount is automatically created. The credit can then be added to the vendor balance, and the Accounts payable team can include it in the regular settlement process.
 
 1. Click **Procurement and sourcing** > **Vendor Rebates** > **Rebate claims** to open a rebate claim. 
@@ -138,8 +138,3 @@ The Invoice journal shows details for the invoice. The line specifies the detail
 
 9. On the **All vendors** page, select the vendor from whom you receive a rebate, and then, on the Action Pane, click **Transactions** and find the line for the invoice. The positive amount of USD 900 has now been added to the vendor balance.
 
-### The status of claims and the effect on the approval process 
-When a claim is generated, its status is set to either **To be calculated** or **Calculated**. This status depends on whether the rebate is granted on a cumulative basis or per invoice, respectively. If the status of the claims is **To be calculated**, they need to go through a calculation process which is handled by the Cumulate function. Only claims with the status **Calculated** can be included in the approval process. 
-
-> [!NOTE] 
-> If the **Approval required** check box on a vendor rebate agreement is not selected, the claims will be generated with the status **Approved**. The approval is mandatory for claims granted on a cumulative basis.
