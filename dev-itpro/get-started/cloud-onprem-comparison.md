@@ -42,6 +42,7 @@ The following table shows whether each feature is available in:
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
+|Compliance and certifications | SOC 1 Type 1 certification| Yes | No |
 | Cost management| | | |
 | | Templates for configuration data projects| Yes | Yes |
 | Customization| | | |
@@ -143,9 +144,7 @@ The following table shows whether each feature is available in:
 | | Prospect to cash integration of Dynamics 365 for Sales and Dynamics 365 for Operations| Yes | Yes |
 | | Sales and profitability performance Power BI reports| Yes | No |
 | | Sales orders mobile app  | Yes | Yes |
-| Security | | | |
-| | Security| Yes | ? |
-| | SOC 1 Type 1 certification| Yes | No |
+| Security | | Yes | Yes |
 | Service management| | | |
 | Supply chain management| | | |
 | Transportation management| | | |
