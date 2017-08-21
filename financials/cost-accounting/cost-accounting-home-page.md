@@ -82,14 +82,16 @@ The following learning map shows the major concepts and tasks with connecting li
 <tr>
 <iframe width="280" height="158" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>
 </tr>
-<table><br/>
-
+<table>
+<br/>
+  
 ### Get started with Cost accounting <br/>
 <table>
 <tr>
 <iframe width="280" height="158" src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe>
 </tr>
-<table><br/>
+<table>
+<br/>
 
 ### Get started with Cost accounting <br/>
 <table>
@@ -97,7 +99,7 @@ The following learning map shows the major concepts and tasks with connecting li
 <iframe width="280" height="158" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>
 </tr>
 </table>
-
+<br/>
 
 ## Quick links<br/>
 <br/>
