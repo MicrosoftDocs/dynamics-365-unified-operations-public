@@ -486,7 +486,7 @@
 
 ### [Cost accounting](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Get started
-##### [Terms](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Key terms](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Get started with Cost accounting (Video)](https://youtu.be/1pUDtJQZ8FU)
 ##### [Cost control mobile workspace (Video)](https://youtu.be/imsuTg8rUVk)
 ##### [Use Excel for cost analysis (Video)](https://youtu.be/-HKHYdClvx8)
@@ -530,7 +530,7 @@
 #### Overhead calculation
 ##### [Overhead calculation](/dynamics365/unified-operations/financials/cost-accounting/overhead-calculation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cost rollup policy and overhead calculation](/dynamics365/unified-operations/financials/cost-accounting/cost-rollup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Insights and reporting
+#### Analysis and reporting
 ##### [Cost control workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Configure cost control workspace parameters (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/configure-cost-control-workspace-parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cost control mobile workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
