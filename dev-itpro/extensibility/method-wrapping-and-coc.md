@@ -55,6 +55,13 @@ final class BusinessLogic1_Extension
 }
 ```
 Wrapping DoSomething and the required use of the next keyword creates a Chain of Command (CoC) for the method. Here is what happens when the following code executes.
+```
 BusinessLogic1 c = new BusinessLogic1();
 info(c.DoSomething(33));
+```
 The system will find any method that wraps the method DoSomething. It will randomly execute one of these methods (say, DoSomething of the BusinessLogic1_Extension class). When the call to next DoSomething() occurs, the system randomly picks another method in the CoC or calls the original implementation if no further wrapped methods exist.
+
+# Supported versions
+> [!IMPORTANT]
+> The functionality described in this topic is available as of platform update 9 (CoC and access to protected methods and variables). However, this functionality requires the class being augmented to be compiled on platform update 9 or newer as well. At the time of authoring of this topic, all current releases of the Dynamics 365 for Finance and Operations applications have been compiled on platform update 8 or earlier, you will then need to re-compile a base package (like Application Suite) on platform update 9 or newer in order to wrap a method that is defined in that package.
+
