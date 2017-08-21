@@ -1,4 +1,4 @@
----
+E---
 # required metadata
 
 title: Intercompany expenses
@@ -40,4 +40,4 @@ incurs expenses is called the borrowing legal entity.
 Before a worker can create and submit expenses for work that is performed for a different legal entity, the following steps must be completed 
 in the loaning legal entity. 
 
-On the **Travel and expense parameters**, select the **Allow intercompany expense lines** option. 
+On the **Expense management parameters**, select the **Allow intercompany expense lines** option. 
