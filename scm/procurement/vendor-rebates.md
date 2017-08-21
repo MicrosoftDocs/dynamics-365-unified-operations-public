@@ -138,3 +138,8 @@ The invoice line specifies the details of the vendor invoice for the **Commissio
 
 9. On the **All vendors** page, select the vendor from whom you receive a rebate, and then, on the Action Pane, click **Transactions** and find the line for the invoice. The rebate amount has now been added to the vendor balance.
 
+## Summary
+The process for handling vendor rebates involves multiple manual tracking tasks that are often tedious. By automating these tasks, the vendor rebate management feature can help you move through the following processes: 
+-   Generating accurate rebate claims 
+-   Accruing the expected receivable and interim gain in the general ledger 
+-   Updating the vendor balance and the income statement with the allowance that is due 
