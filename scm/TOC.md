@@ -486,7 +486,7 @@
 
 ### [Cost accounting](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Get started
-##### [Terms](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Key terms](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Get started with Cost accounting (Video)](https://youtu.be/1pUDtJQZ8FU)
 ##### [Cost control mobile workspace (Video)](https://youtu.be/imsuTg8rUVk)
 ##### [Use Excel for cost analysis (Video)](https://youtu.be/-HKHYdClvx8)
@@ -530,7 +530,7 @@
 #### Overhead calculation
 ##### [Overhead calculation](/dynamics365/unified-operations/financials/cost-accounting/overhead-calculation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cost rollup policy and overhead calculation](/dynamics365/unified-operations/financials/cost-accounting/cost-rollup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Insights and reporting
+#### Analysis and reporting
 ##### [Cost control workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Configure cost control workspace parameters (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/configure-cost-control-workspace-parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cost control mobile workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1584,10 +1584,11 @@
 #### [Create an organization hierarchy](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 #### [Create a legal entity](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 #### [Create an operating unit](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-### [Address books](/dynamics365/unified-operations/fin-and-ops/organization-administration/qa-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Global address book](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Plan global address books](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Global address book](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Plan how to configure the global address book](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Configure the global address book](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/configure-global-address-book?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [FAQ about address books](/dynamics365/unified-operations/fin-and-ops/organization-administration/qa-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 
 ### [Workflow](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-workflow-system?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Workflow system architecture](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-system-architecture?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
