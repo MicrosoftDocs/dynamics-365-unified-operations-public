@@ -54,10 +54,10 @@ Your template can now be used in a project. However, you might want to use some 
 - To replace the contents of an open template, click **Replace from template** button, browse to the template file that has the entities that you want to import, and then click **Create template** to load the template file. The values in the open template will be overwritten.
 - To create a template from a project, click **New** to create a template. Enter an ID and name for the template, and then click **Replace template from project**. In the list of projects that appears, select a project, and then click **Create template** to bring the project entities from that project into the open template. The values in the open template will be overwritten.
 
-## (Coming in the July 2017 release) Default data templates
-In the spring release of Dynamics 365 for Finance and Operations, Enterprise edition, we plan to release predefined templates to help you create configuration data projects. The templates will be sequenced, so that the data that the entities generate will be processed in the correct sequence. Our predefined templates are also designed to maintain the correct sequence when more than one template is added to the same data project. For more information, see the "Sequencing in the default templates" section.
+## (Delivered in the Spring 2017 release) Default data templates
+In the spring release of Dynamics 365 for Finance and Operations, Enterprise edition, we releasde predefined templates to help you create configuration data projects. The templates are sequenced, so that the data that the entities generate will be processed in the correct sequence. Our predefined templates are also designed to maintain the correct sequence when more than one template is added to the same data project. For more information, see the "Sequencing in the default templates" section.
 
-Default templates will be delivered together with each new release of Dynamics 365 for Finance and Operations. Our long-term goal is to provide the templates in Microsoft Dynamics Lifecycle Services (LCS), so that you can push them to an instance of Dynamics 365 for Financial and Operations. However, for the current releases, click the **Templates** tile in the **Data management** workspace, and then click **Load default templates** to load the templates.
+Default templates are delivered together with each new release of Dynamics 365 for Finance and Operations. Our long-term goal is to provide the templates in Microsoft Dynamics Lifecycle Services (LCS), so that you can push them to an instance of Dynamics 365 for Financial and Operations. However, for the current releases, click the **Templates** tile in the **Data management** workspace, and then click **Load default templates** to load the templates. You must be using the Enhanced view to see the **Load default templates** menu.
 
 After the templates are loaded, you can change them to suit your business requirements. If you ever want to retrieve the original default templates, you can use the **Load default templates** button to add them back to your system. This step will replace the templates with the latest versions. If you have made changes to the templates, you can make a copy of the old templates by exporting them. Please note that loading default templates and importing templates required system administrator access to ensure that all entities are correctly loaded into the template.
 
@@ -111,11 +111,13 @@ The following table shows how the templates were set up to handle dependencies. 
 | Warehouse management    | 1    | 400 	 |
 | Production control      | 1    | 410 	 |
 | Costing                 | 1    | 420 	 |
-| Retail                  | 1    | 500 	 | 
+| Retail (see note)       | 1    | 500 	 | 
 | Expense management      | 1    | 600 	 |
 | Project accounting      | 1    | 650 	 |
 | Human resources         | 1    | 700 	 |
 | Payroll                 | 1    | 800 	 |
+
+Note: The Retail template will be released in monthly update 3 for the Spring 2017 release.
 
 We reserved levels 10 through 22 for shared system entities, so that those entities are processed first. Almost all systems also use the company-specific general ledger entities. Therefore, we reserved level 25 for those entities. These levels represent the minimum basic setup that is required for most shared data in a configuration.
 
