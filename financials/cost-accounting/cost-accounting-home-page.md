@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 ## Learning map 
 
-The following learning map shows the major concepts and tasks with connecting lines between related tasks that describe the nature of the cost accounting module.
+The following learning map shows the major concepts and tasks with connecting lines between related tasks that describe the nature of the Cost accounting module. Click the quick links below to learn how to use the module.
 
 ![Learning map for cost accounting](./media/cost-accounting-map.png)
 
@@ -55,7 +55,7 @@ The following learning map shows the major concepts and tasks with connecting li
 
 |  |  |                             |
 |------------------------|--------------------|-----------------------------|
-| <iframe width="280" height="158" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>  | <iframe width="280" height="158" src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe>  |   <iframe width="280" height="158" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>  |
+| <iframe width="100%"  src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>  | <iframe width="100%"  src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe>  |   <iframe width="100%" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>  |
 |  |  |                             |
 
 
