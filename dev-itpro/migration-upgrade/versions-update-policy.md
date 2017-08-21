@@ -84,6 +84,7 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 | Release           | Build number   | Availability  | Expiration date   |
 |-------------------|----------------|---------------|-------------------|
+| Platform update 10| 7.0.4641.16233 | August 2017   | August 2018   |
 | Platform update 9 | 7.0.4612.35162 | July 2017     | July 2018     |
 | Platform update 8 | 7.0.4565.16212 | June 2017     | June 2018     |
 | Platform update 7 | 7.0.4542.16189 | May 2017      | May 2018      |

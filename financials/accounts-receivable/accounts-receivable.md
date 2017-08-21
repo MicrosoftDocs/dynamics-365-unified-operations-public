@@ -115,7 +115,7 @@ Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see
 
 You can find opinions, news, and other information about Accounts receivable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
-There are many posts about Accounts receivable on the [Microsoft Dynamics AX product team blog](https://blogs.msdn.microsoft.com/dax/). Although some of these posts were written for the previous version of Accounts payable, the same concepts still apply. and the procedures are also similar in the current version.
+There are many posts about Accounts receivable on the [Microsoft Dynamics AX product team blog](https://blogs.msdn.microsoft.com/dax/). Although some of these posts were written for the previous version of Accounts receivable, the same concepts still apply. and the procedures are also similar in the current version.
 
 The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
 

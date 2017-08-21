@@ -5,7 +5,7 @@ title: Cash and bank management home page
 description: You can use Cash and bank management to maintain the legal entity’s bank accounts and the financial instruments that are associated with those bank accounts. 
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/21/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,10 +34,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+You can use Cash and bank management to maintain the legal entity’s bank accounts and the financial instruments that are associated 
+with those bank accounts. 
 
-You can use Cash and bank management to maintain the legal entity’s bank accounts and the financial instruments that are associated with those bank accounts. 
+These instruments include deposit slips, checks, bills of exchange, and promissory notes. You can also reconcile bank statements and 
+print bank data on standard reports.
 
-These instruments include deposit slips, checks, bills of exchange, and promissory notes. You can also reconcile bank statements and print bank data on standard reports.
+**Business processes**
+
+[![Business process](./media/Cash-process.PNG)](./media/Cash-process.PNG)
 
 -   [Cash discounts](cash-discounts.md)
 -   [Settlement overview](settlement-overview.md)
@@ -46,12 +51,16 @@ These instruments include deposit slips, checks, bills of exchange, and promisso
 -   [Letters of credit](letters-of-credit.md)
 -   [Letters of credit and import collections](letters-of-credit-import-collections.md)
 -   [Letter of guarantee](letters-of-guarantee.md)
+-   [Set up centralized payments](set-up-centralized-payments.md)
+
+### Bank reconciliation
+
 -   [Advanced bank reconciliation overview](advanced-bank-reconciliation-overview.md)
 -   [Configure advanced bank reconciliation](configure-advanced-bank-reconciliation.md)
 -   [Set up the advanced bank reconciliation import](set-up-advanced-bank-reconciliation-import-process.md)
 -   [Reconcile bank statements using advanced bank reconciliation](reconcile-bank-statements-advanced-bank-reconciliation.md)
 -   [Set up bank reconciliation matching rules](set-up-bank-reconciliation-matching-rules.md)
--   [Set up centralized payments](set-up-centralized-payments.md)
+
 
 ## Accounts payable payments and settlements
 -   [Centralized payments for Accounts payable](../accounts-payable/centralized-payments-accounts-payable.md)
@@ -79,3 +88,28 @@ These instruments include deposit slips, checks, bills of exchange, and promisso
 -   [Scenario: Use one customer payment to settle multiple invoice that span multiple discount periods](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
 
 
+
+### Additional resources
+
+#### What's new and in development
+
+Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new 
+features are in development. 
+
+#### Blogs
+
+You can find opinions, news, and other information about Cash and bank managment and other solutions on the [Microsoft Dynamics 365 blog]
+(https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
+
+There are many posts about Cash and bank managment on the [Microsoft Dynamics AX product team blog](https://blogs.msdn.microsoft.com/dax/). Although some of these posts were written for the previous version of Cash and bank managment, the same concepts still apply, and the procedures are also similar in the current version.
+
+The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) 
+gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
+
+#### Task guides
+Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.
+
+#### Videos
+
+Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel]
+(https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).

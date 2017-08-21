@@ -76,8 +76,10 @@ This topic describes how to upgrade an older source database to the latest Finan
 
 6. You must apply the following hotfixes:
 
-    - KB 4036156
+    - KB 4033183
     - KB 4035399
+    - KB 4035751
+    - KB 4036156
 
 ### Additional steps if you're using Retail functionality
 If you're using Retail functionality, you must follow these steps to prepare the database before you run the data upgrade package.
