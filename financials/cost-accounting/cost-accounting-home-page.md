@@ -40,6 +40,41 @@ The following learning map shows the major concepts and tasks with connecting li
 
 ![Learning map for cost accounting](./media/cost-accounting-map.png)
 
+## Quick links<br/>
+
+> [!div class="Get started"]
+> [Watch and learn how to get started with Cost accounting](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting)
+
+> [!div class="Configure source system"]
+> [Watch and learn how to configure the source system](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/financial-dimensions)
+
+> [!div class="Create dimensions and import dimension members"]
+> [Watch and learn how to create dimensions and import dimension members](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/cost-elements)
+
+> [!div class="Create dimension hierarchy"]
+> [Watch and learn how to create dimension hierarchy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/dimension-hierarchy)
+
+> [!div class="Create basic setup"]
+> [Watch and learn how to create basic setup](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/tasks/define-cost-control-units)
+
+> [!div class="Define allocation base"]
+> [Watch and learn how to define allocation base](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/allocation-bases)
+
+> [!div class="Define policies"]
+> [Define policies](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit)
+
+> [!div class="Data source and data provider"]
+> [Define data source and data provider](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger)
+
+> [!div class="Data source processing"]
+> [Define data source processing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/tasks/process-trace-source-data)
+
+> [!div class="Overhead calculation"]
+> [Overhead calculation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/overhead-calculation)
+
+> [!div class="Analysis and reporting"]
+> [Define policies](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace)
+
 ## Get started videos<br/>
 ### Get started with Cost accounting<br/>
 <table>
@@ -58,9 +93,10 @@ The following learning map shows the major concepts and tasks with connecting li
 ### Get started with Cost accounting <br/>
 <table>
 <tr>
-<iframe width="420" height="236" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>
+<iframe width="280" height="158" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>
 </tr>
 </table>
+
 
 ## Quick links<br/>
 <br/>
