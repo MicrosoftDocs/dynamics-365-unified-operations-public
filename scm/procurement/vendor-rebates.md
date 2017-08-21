@@ -77,8 +77,6 @@ The agreement's header specifies the general conditions that qualify a company f
 
 -   In the **Workflow approval status** field, the value **Approved** indicates that the agreement can be applied to purchase orders that meet the agreement’s conditions.
 
-Note that if items are bought in a different purchase unit than the inventory unit and rebate agreements have have been set up for both the inventory unit and the purchasing unit, you must select **Exact match** to ensure that the rebate clim is only generated once.   
-
 -   In the **Unit of measure rebate option** field, you can define if a unit of measure should be a condition for the purchase order line to qualify for a rebate claim. **Convert** indicates that you are entitled to a rebate regardless of the unit of measure on the purchase order line. **Exact match** indicates that a purchase line must have exactly the same unit of measure as is specified on the rebate agreement to qualify for a rebate.
 
 > [!NOTE]
