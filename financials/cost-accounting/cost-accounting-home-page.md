@@ -41,19 +41,19 @@ The following learning map shows the major concepts and tasks with connecting li
 ![Learning map for cost accounting](./media/cost-accounting-map.png)
 
 ## Get started videos<br/>
-### Get started with Cost accounting <br/>
+### Get started with Cost accounting<br/>
 <table>
 <tr>
 <iframe width="280" height="158" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>
 </tr>
-<table>
+<table><br/>
 
 ### Get started with Cost accounting <br/>
 <table>
 <tr>
 <iframe width="280" height="158" src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe>
 </tr>
-<table>
+<table><br/>
 
 ### Get started with Cost accounting <br/>
 <table>
@@ -62,9 +62,15 @@ The following learning map shows the major concepts and tasks with connecting li
 </tr>
 </table>
 
-## Set up cost accounting<br/>
+## Quick links<br/>
 <br/>
 
+> [!div class="Get started"]
+> [Watch and learn Get started content](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting)
+
+
+
+.....
 <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet" data-linktype="external">
 
 <table style="border:solid">
