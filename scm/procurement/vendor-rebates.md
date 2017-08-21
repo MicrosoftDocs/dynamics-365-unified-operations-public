@@ -77,6 +77,13 @@ The agreement's header specifies the general conditions that qualify a company f
 
 -   In the **Workflow approval status** field, the value **Approved** indicates that the agreement can be applied to purchase orders that meet the agreement’s conditions.
 
+Note that if items are bought in a different purchase unit than the inventory unit and rebate agreements have have been set up for both the inventory unit and the purchasing unit, you must select **Exact match** to ensure that the rebate clim is only generated once.   
+
+-   In the **Unit of measure rebate option** field, you can define if a unit of measure should be a condition for the purchase order line to qualify for a rebate claim. **Convert** indicates that you are entitled to a rebate regardless of the unit of measure on the purchase order line. **Exact match** indicates that a purchase line must have exactly the same unit of measure as is specified on the rebate agreement to qualify for a rebate.
+
+> [!NOTE]
+> If items are bought in a different purchase unit than the inventory unit and rebate agreements have have been set up for both the inventory unit and the purchasing unit, you must select **Exact match** in the **Unit of measure rebate option** field to ensure that the rebate claim is only generated once. 
+
 ## Identify orders that qualify for rebates and generate rebate claims
  
 When purchase orders are placed with a vendor that the company has a rebate agreement with, the program identifies any future vendor credit payments. If the purchase orders qualify for a rebate, a rebte claim will be generated for every order line as soon as a purchase invoice has been posted. This is an automatic process. Subsequently, you can review the expected rebates and see the impact of those rebates on the product’s cost and profit margin. 
@@ -132,6 +139,7 @@ The message bars and the fact that the status has changed to **Completed** indic
 > The Discounts and Allowances Received account number is specified for the procurement category that is used on the purchase invoice line for the rebate. The procurement category, in turn, is set on the **Rebate program** tab of the **Procurement and sourcing parameters** page.
 
 7. In the rebate list, select the line, and then, on the Action Pane, click **Rebate transactions** to see and navigate to the journal batch number for this rebate accrual posting and also the vendor invoice number.
+
 8. Select the line for the vendor invoice transaction, and then, on the Action Pane, click **Vendor invoice**. If the vendor invoice has been posted, you will see the Invoice journal. Otherwise, you will see the vendor invoice as a pending vendor invoice, that requires manual posting.
 
 The invoice line specifies the details of the vendor invoice for the **Commissions and Rebates** procurement category. 
