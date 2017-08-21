@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -101,6 +101,11 @@ Here are some other configuration options to consider, although these options ar
 - On the **Document management parameters** page, on the **General** tab, you can use the **Use Document Tables** option to enable the **Active document tables** allow list. If you set this option to **Yes**, you disable attachments on all other tables. Therefore, turn on this option only when it's required.
 - On the **Document management parameters** page, on the **General** tab, you can use the **Maximum file size in megabytes** field to set the maximum file size for attachments. Note that the ability of users to provide files is also constrained by the file size limit that is set for the environment in configuration files. These configuration files can't be changed via a client page.
 - On the **Options** page (**Settings** > **User options**), on the **Preferences** tab, you can use the **Enable document handling** option to disable document handling (document management).
+
+## Accessing document management attachments 
+
+Document management appears to users as the **Attach** button (keyboard shortcut: **Ctrl**+**Shift**+**A**) at the top of most forms that contain data sources. Clicking the **Attach** button will open the **Attachments** form in the context of the data source of the currently selected control on the form. 
+The **Attach** button will also show a count of attachments for the currently selected record, so the user can see whether there are attachments on the current record without opening that form. The count will show 0-9, and then 9+ to limit the performance impact and visual noise of determining and showing larger counts.
 
 ## Frequently asked questions
 
