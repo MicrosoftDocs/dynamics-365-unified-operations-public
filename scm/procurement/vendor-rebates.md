@@ -107,7 +107,7 @@ When claims have been approved, they can be processed by the Accounts payable an
 3. Mark the claim, and then, on the Action Pane, click **Approve**.
 4. On the request page, in the **Vendor** field, select the vendor from whom you are authorized to receive a rebate, and then click **OK**.
 
-Message bars inform you when a Rebate accrual journal has been posted for a claim amount. This posting debits the Accrued Vendor Rebates Receivable account for the expected vendor credit and credits the interim Accrued Vendor Rebates Received account for the expected gain.
+A Rebate accrual journal is posted for the claim amount. This posting debits the Accrued Vendor Rebates Receivable account for the expected vendor credit and credits the interim Accrued Vendor Rebates Received account for the expected gain.
 
 ![Message](media/message.png)
 
@@ -115,7 +115,7 @@ Message bars inform you when a Rebate accrual journal has been posted for a clai
 
 To move the claims to the regular A/P process, the A/P clerk must now complete the rebate claim handling by running the Process function.
 
-6. On the Action Pane, click **Process**, click **Filter**.  In the **Criteria** field for the **Vendor account** field, select the vendor that allows you a rebate, and then click **OK**.
+6. On the Action Pane, click **Process**, click **Filter**.  In the **Criteria** field for the **Vendor account** field, select the vendor whose rebate claims you want to process, click other relevant filters, and then click **OK**.
 
 The message bars and the fact that the status has changed to **Completed** indicate that the following events have occurred:
 
@@ -132,9 +132,9 @@ The message bars and the fact that the status has changed to **Completed** indic
 > The Discounts and Allowances Received account number is specified for the procurement category that is used on the purchase invoice line for the rebate. The procurement category, in turn, is set on the **Rebate program** tab of the **Procurement and sourcing parameters** page.
 
 7. In the rebate list, select the line, and then, on the Action Pane, click **Rebate transactions** to see and navigate to the journal batch number for this rebate accrual posting and also the vendor invoice number.
-8. Select the line for the vendor invoice transaction, and then, on the Action Pane, click **Vendor invoice**.
+8. Select the line for the vendor invoice transaction, and then, on the Action Pane, click **Vendor invoice**. If the vendor invoice has been posted, you will see the Invoice journal. Otherwise, you will see the vendor invoice as a pending vendor invoice, that requires manual posting.
 
-The Invoice journal shows details for the invoice. The line specifies the details of the vendor invoice for the **Commissions and Rebates** procurement category, a quantity of –1, and an amount of –900.. 
+The invoice line specifies the details of the vendor invoice for the **Commissions and Rebates** procurement category. 
 
-9. On the **All vendors** page, select the vendor from whom you receive a rebate, and then, on the Action Pane, click **Transactions** and find the line for the invoice. The positive amount of USD 900 has now been added to the vendor balance.
+9. On the **All vendors** page, select the vendor from whom you receive a rebate, and then, on the Action Pane, click **Transactions** and find the line for the invoice. The rebate amount has now been added to the vendor balance.
 
