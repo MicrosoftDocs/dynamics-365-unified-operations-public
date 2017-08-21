@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Distributions on an expense report
 
 [!include[banner](../includes/banner.md)]
-When you enter expenses on an expense report, you can distribute the expense across multiple projects, legal entities, 
+When you enter expenses on an expense report, you can distribute the expense across multiple projects, financial dimensions, 
 or accounts in your organization.
 
 For example, Nancy, a Fabrikam sales representative, traveled from Copenhagen to Frankfurt. In Frankfurt, she met with two organizations
