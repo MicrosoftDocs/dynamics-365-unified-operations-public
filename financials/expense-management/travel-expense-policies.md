@@ -29,12 +29,12 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Travel and expense policies
+# Expense policies
 
 [!include[banner](../includes/banner.md)]
 
 In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you can define policies that your workers must follow when 
-entering and submitting expense reports and travel requisitions. Implementing travel and expense policies can help you manage expenses 
+entering and submitting expense reports and travel requisitions. Implementing expense policies can help you manage expenses 
 effectively. 
 
 For example, you can set a policy that for New York City the hotel expense per night cannot exceed USD 250. If a worker submits an 
