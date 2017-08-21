@@ -5,7 +5,7 @@ title: Cost accounting home page
 description: This topic provides a list of the help topics and other resources that are available for Cost accounting.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 07/20/2017
+ms.date: 08/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,22 +43,22 @@ The following learning map shows the major concepts and tasks with connecting li
 ## Quick links<br/>
 
 > [!div class="Get started"]
-> [Watch and learn how to get started with Cost accounting](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting)
+> [Get started with Cost accounting](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting)
 
 > [!div class="Configure source system"]
-> [Watch and learn how to configure the source system](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/financial-dimensions)
+> [Configure source system](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/financial-dimensions)
 
 > [!div class="Create dimensions and import dimension members"]
-> [Watch and learn how to create dimensions and import dimension members](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/cost-elements)
+> [Create dimensions and import dimension members](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/cost-elements)
 
 > [!div class="Create dimension hierarchy"]
-> [Watch and learn how to create dimension hierarchy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/dimension-hierarchy)
+> [Create dimension hierarchy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/dimension-hierarchy)
 
 > [!div class="Create basic setup"]
-> [Watch and learn how to create basic setup](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/tasks/define-cost-control-units)
+> [Create basic setup](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/tasks/define-cost-control-units)
 
 > [!div class="Define allocation base"]
-> [Watch and learn how to define allocation base](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/allocation-bases)
+> [Define allocation base](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/allocation-bases)
 
 > [!div class="Define policies"]
 > [Define policies](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit)
@@ -73,9 +73,10 @@ The following learning map shows the major concepts and tasks with connecting li
 > [Overhead calculation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/overhead-calculation)
 
 > [!div class="Analysis and reporting"]
-> [Define policies](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace)
+> [Cost analysis and reporting](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace)
 
 ## Get started videos<br/>
+
 ### Get started with Cost accounting<br/>
 <table>
 <tr>
