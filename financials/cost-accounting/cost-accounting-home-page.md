@@ -47,6 +47,10 @@ The following learning map shows the major concepts and tasks with connecting li
 | [Create dimensions and import dimension members](cost-elements.md)        | [Create dimension hierarchy](dimension-hierarchy.md)  |
 | [Create basic setup](./tasks/define-cost-control-units.md)       | [Define allocation base](/allocation-bases.md)|
 | [Define policies](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md)      | [Define data source and data provider](./tasks/manage-data-source-cost-accounting-ledger.md)|
+|  [Define data source processing](./tasks/process-trace-source-data)   | [Overhead calculation](overhead-calculation.md) |
+|  [Cost analysis and reporting](cost-control-workspace.md)             |                                                 |
+
+
 
 > [!div class="Get started"]
 > [Get started with Cost accounting](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting)
