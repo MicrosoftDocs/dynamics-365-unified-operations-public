@@ -5,7 +5,7 @@ title: Cost accounting home page
 description: This topic provides a list of the help topics and other resources that are available for Cost accounting.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 07/20/2017
+ms.date: 08/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,27 +40,22 @@ The following learning map shows the major concepts and tasks with connecting li
 
 ![Learning map for cost accounting](./media/cost-accounting-map.png)
 
-## Get started videos
+## Quick links<br/>
+|                        |                    |
+|------------------------|--------------------|
+| [Get started with Cost accounting](terms-cost-accounting.md) | [Configure source system](../general-ledger/financial-dimensions.md)|
+| [Create dimensions and import dimension members](cost-elements.md)| [Create dimension hierarchy](dimension-hierarchy.md)  |
+| [Create basic setup](./tasks/define-cost-control-units.md)       | [Define allocation base](allocation-bases.md)|
+| [Define policies](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md)  | [Define data source and data provider](./tasks/manage-data-source-cost-accounting-ledger.md)|
+|  [Define data source processing](./tasks/process-trace-source-data.md)   | [Overhead calculation](overhead-calculation.md) |
+|  [Cost analysis and reporting](cost-control-workspace.md)             |                                                 |
 
 
-<table>
-<tr>
-<iframe width="280" height="158" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>
-</tr>
-<table>
+## Get started videos<br/>
 
-
-<table>
-<tr>
-<iframe width="280" height="158" src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe>
-</tr>
-<table>
-
-
-<table>
-<tr>
-<iframe width="280" height="158" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>
-</tr>
-</table>
+|  |  |                             |
+|------------------------|--------------------|-----------------------------|
+| <iframe width="280" height="158" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>  | <iframe width="280" height="158" src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe>  |   <iframe width="280" height="158" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>  |
+|  |  |                             |
 
 
