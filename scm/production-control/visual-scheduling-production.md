@@ -54,10 +54,10 @@ The Gantt chart can be opened in two different views, **Order view** and **Resou
 
 ## Order view
 
-[![orderview](./media/orderview.png)](./media/orderview.png)
+[![Order view](./media/orderview.png)](./media/orderview.png)
 
 ## Resource view
-[![resview](./media/resview.png)](./media/resview.png)
+[![Resource view](./media/resview.png)](./media/resview.png)
 
 ## Activities
 The activities appear as bars and are organized in a time scale grid with a scheduled start and end time, making the length of the bars proportional to the time that is necessary to complete the activity. The activities are shown according to a time scale. You can adjust the time scale on the menu where you select a start and end date and a time unit, for example, hours or days. By adjusting the time scale you can set focus on a time interval in which you want to manage activities. 
