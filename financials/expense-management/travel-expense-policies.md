@@ -2,7 +2,7 @@
 # required metadata
 
 title: Define expense policies
-description: In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you can define policies that your workers must follow when entering and submitting expense reports and travel requisitions. Implementing expense policies can help you manage expenses 
+description: In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you can define policies that your workers must follow when entering and submitting expense reports and travel requisitions. Implementing expense policies can help you manage expenses
 effectively. 
 author: saraschi2
 manager: AnnBe
