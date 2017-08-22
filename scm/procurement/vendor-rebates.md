@@ -65,7 +65,13 @@ To open the **Vendor rebate agreements** page, click **Procurement and sourcing*
 
 On the **Vendor rebate agreements** page, you can view details about the negotiated conditions of a vendor agreement.
 
-The agreement's header specifies the general conditions that qualify a company for rebates. For example, the header information might specify that vendor A grants a rebate when product X is bought in a quantity of Y.
+The agreement's header specifies the general conditions that qualify a company for rebates. In effect, the header information  specifies that a vendor grants a rebate when a specific product is bought in a specific quantity. On the header, you also provide information about the unit of measure rebate option and the calculation date type.  
+
+-   In the Unit of measure rebate option field on the General tab, 
+
+-   In the Calculation date type option on the General tab, you select **Created** to use the creation date of the purchase order to determine whether the purchase falls in the validity period of the rebate agreement or select **Requested delivery** to use the requested delivery date for this purpose. 
+
+On the agreement lines, you can see the information that distinguishes the individual variations of the vendor rebate agreement. 
 
 -   In the **Cumulate purchase by** field, you can set the calculation of the rebate claim. The amount can be set to depend on a period (of week, month, year, lifetime or a customized period). **Invoice** indicates that a rebate claim will be determined every time that a purchase order line is invoiced.
 
