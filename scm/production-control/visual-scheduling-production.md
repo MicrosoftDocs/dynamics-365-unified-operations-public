@@ -5,7 +5,7 @@ title: Gantt chart for job scheduling
 description: The Gantt chart is designed to empower production planners to control and optimize the production plan. The Gantt chart makes the flow of operations transparent and makes it easy to adjust the production schedule while taking into account material or resource shortages. This helps planners make the best use of available resources, minimize work in progress, and optimize throughput times for production orders.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -119,65 +119,17 @@ You can use the **Schedule next jobs** function to schedule the next jobs relati
 
 [![Schedule next job](./media/schnxtjob.png)](./media/schnxtjob.png)
 
-<table>
-<tr>
-<td>
-Before
-</td>
-<td rowspan=2>
-<img src='./media/schnxtjob.png'/>
-</td>
-</tr>
-<tr>
-<td>
-After
-</td>
-</tr>
-</table>
-
 ### Schedule around job
 
 You can use the **Schedule around job** function to schedule the next job and the previous job relative to a selected job in a network of activities. In the following example, the highlighted activity is the selected job. The diagram shows before a job is scheduled and after the job is scheduled. 
 
 [![Schedule around job](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
-<table>
-<tr>
-<td>
-Before
-</td>
-<td rowspan=2>
-<img src='./media/scharoundjob1.png'/>
-</td>
-</tr>
-<tr>
-<td>
-After
-</td>
-</tr>
-</table>
-
 ### Arrange jobs
 
 You can use the **Arrange** function to arrange selected activities on the same resource. These activities can be in the same network of activities, but can also belong to different networks. When you use the arrange function the time gaps between the selected activities will be eliminated. You can use this function to optimize the capacity utilization of the resources. The diagram shows before a job is scheduled and after the job is scheduled. 
 
 [![Arrange job](./media/arrangejobs1.png)](./media/arrangejobs1.png)
-
-<table>
-<tr>
-<td>
-Before
-</td>
-<td rowspan=2>
-<img src='./media/arrangejobs1.png'/>
-</td>
-</tr>
-<tr>
-<td>
-After
-</td>
-</tr>
-</table>
 
 ### Reassign activities from one resource to another
 
