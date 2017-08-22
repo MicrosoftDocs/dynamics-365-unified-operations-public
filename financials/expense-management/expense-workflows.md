@@ -5,7 +5,7 @@ title: Set up workflows for expense
 description: You can set up a workflow process that is used to review and approve travel and expense documents.
 author: saraschi2
 manager: AnnBe
-ms.date: 07/25/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -48,15 +48,15 @@ or approve a document. There are several benefits of using the workflow system i
 
 The following table lists the types of workflows that you can create in **Expense**.
 
-| **Type**                           | **Use this type to**                                                 |                                                                       |
+| **Type**                           | **Use this type to**                                                 |     
 |------------------------------------|----------------------------------------------------------------------|
-| **Expense report**                 | Create approval workflows for expense reports.                       |                                                                       |
-| **Expense report auto posting**    | Create automatic posting workflows for expense reports.              |                                                                       |
-| **Expense line item**              | Create approval workflows for line items on expense reports.         |                                                                       |
+| **Expense report**                 | Create approval workflows for expense reports.                       |      
+| **Expense report auto posting**    | Create automatic posting workflows for expense reports.              |     
+| **Expense line item**              | Create approval workflows for line items on expense reports.         |     
 | **Expense line item auto posting** | Create automatic posting workflows for line items on expense reports.|
-| **Travel requisition**             | Create approval workflows for travel requisitions.                   |                                                                       |
-| **Cash advance request**           | Create approval workflows for cash advance requests.                 |                                                                       |
-| **VAT tax recovery**               | Create approval workflows for the recovery of value-added tax (VAT). |                                                                       |
-| **Dispute management**             | Create workflows for the management of credit card disputes.         |                                                                       |
+| **Travel requisition**             | Create approval workflows for travel requisitions.                   |    
+| **Cash advance request**           | Create approval workflows for cash advance requests.                 |     
+| **VAT tax recovery**               | Create approval workflows for the recovery of value-added tax (VAT). |      
+| **Dispute management**             | Create workflows for the management of credit card disputes.         |  
 
 
