@@ -1,4 +1,3 @@
-E---
 # required metadata
 
 title: Intercompany expenses
@@ -7,7 +6,7 @@ entity in the same organization. In this situation, you can use the intercompany
 expenses to the legal entity for which the work was performed.
 author: saraschi2
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,7 +36,6 @@ In this situation, you can use the intercompany expense feature to assign the wo
 work was performed. The legal entity that employs the worker is called the loaning legal entity. The legal entity for which the worker 
 incurs expenses is called the borrowing legal entity. 
 
-Before a worker can create and submit expenses for work that is performed for a different legal entity, the following steps must be completed 
-in the loaning legal entity. 
+Before a worker can create and submit expenses for work that is performed for a different legal entity, the following steps must be completed in the loaning legal entity. 
 
 On the **Expense management parameters**, select the **Allow intercompany expense lines** option. 
