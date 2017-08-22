@@ -3,9 +3,9 @@
 
 title: Set up bills of exchange
 description: This topic describes the steps for setting up bills of exchange.
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 269964
 ms.assetid: f2077165-da90-4359-ab12-e05717728dc7
 ms.search.region: global
 # ms.search.industry: 
-ms.author: abruer
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
