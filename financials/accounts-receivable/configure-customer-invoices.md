@@ -3,9 +3,9 @@
 
 title: Create a customer invoice
 description: 
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -33,8 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Create a customer invoice
 
 [!include[banner](../includes/banner.md)]
-
-
 
 
 A **customer invoice for a sales order** is a bill that is related to a sale, and that an organization gives to a customer. This type of customer invoice is created based on a sales order, which includes order lines and item numbers. Item numbers are specified and posted in the ledger. Subledger journal entries aren't available for a customer invoice for a sales order. For more information, see [Create sales order invoices](tasks/create-sales-order-invoices.md).
