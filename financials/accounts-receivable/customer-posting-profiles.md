@@ -3,9 +3,9 @@
 
 title: Customer posting profiles
 description: Customer posting profiles control the posting of customer transactions to the general ledger.
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/07/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
