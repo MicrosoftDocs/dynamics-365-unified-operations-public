@@ -5,7 +5,7 @@ title: Configure expense management
 description: This article describes the considerations and the decisions that you must make during the planning process before you configure Expense management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. In the Expense management area, you can store information about payment methods, travel requisitions, expense reports, and policies, among other things. 
 author: KimANelson
 manager: AnnBe
-ms.date: 06/08/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -100,7 +100,7 @@ When employees create an expense report, each expense that they record must be a
     -   Are any of the subcategories excluded from tax recovery?
     -   What is the item sales tax group of the subcategories?
 
-    If this expense category is also used in Project management and accounting, answer the remaining questions. Otherwise, you are finished with this section.
+If this expense category is also used in Project management and accounting, answer the remaining questions. Otherwise, you are finished with this section.
 -   Which cost accounts will be used for the following?
     -   Cost
     -   Payroll allocation
