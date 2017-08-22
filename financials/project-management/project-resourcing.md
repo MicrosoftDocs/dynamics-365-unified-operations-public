@@ -5,7 +5,7 @@ title: Project resourcing
 description: This topic provides information about project resourcing.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 82022
 ms.assetid: bd2fb375-84c6-428a-8e54-f0f719045898
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: cmercado
+ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -70,17 +70,15 @@ When you set up a worker as an intercompany resource, you must complete the setu
 **In the lending company:**
 
 1.  In Finance and Operations, verify that the lending company is selected, and then complete the procedure above, "Set up a worker as a project resource."
-2.  Go to **General ledger **&gt; **Posting setup **&gt; **Intercompany accounting**. Click **New**.
+2.  On the **Intercompany accounting** page, click **New**.
 3.  In the **Legal entity ID **field, select the lending company. Fill in the remaining fields as appropriate, and then click **Save**.
-4.  Go the **Project management and accounting **&gt; **Setup **&gt; **Prices ** &gt; **Transfer price**.** **
-5.  On the **Transfer price **form, click **New**, and in the **Borrowing legal entity **field, select the appropriate company.
-6.  If you want to only loan the borrowing company the resource that you created at the beginning of this section, in the **Resource** field, select the name of the resource that you created. If you want to make all resources in the company available to the borrowing company, leave the **Resource **field blank.
-7.  Go to **Project management and accounting **&gt; **Setup **&gt; **Project management and accounting parameters**, and on the **Intercompany **tab, set the **Enable intercompany resource scheduling and timesheets **field to **Yes**.
+4.  On the **Transfer price** page, click **New**, and in the **Borrowing legal entity**, select the appropriate company.
+5.  If you want to only loan the borrowing company the resource that you created at the beginning of this section, in the **Resource** field, select the name of the resource that you created. If you want to make all resources in the company available to the borrowing company, leave the **Resource** field blank.
+6.  On the **Project management and accounting parameters**, and on the **Intercompany** tab, set the **Enable intercompany resource scheduling and timesheets** to **Yes**.
 
 **In the borrowing company:**
 
-1.  Go to **Project management and accounting** &gt; **Project resources** &gt; **Resources list**.
-2.  In the search filter, enter the name of the resource that you created in the previous procedure for the lending company to verify that the name is included in the resource list for the borrowing company.
+1.  Go to **Resources list** and in the search filter, enter the name of the resource that you created in the previous procedure for the lending company to verify that the name is included in the resource list for the borrowing company.
 
 ## Manage resource competencies
 Resource competencies are an essential part of resource management. Competencies can be used as a baseline to determine resources that have the correct balance of skills, education, certification, and project experience. You should set up this information for each resource and update it on a regular basis. In this way, you can maximize capabilities when specific resource competencies are matched during project resource assignment. [![Examples of skills, certifications, education, and project experience](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg) 
@@ -93,10 +91,8 @@ To set up competencies for a worker, you can use either the **Workers** list pa
 
 1.  On the **Workers** list page, select the line of the worker that you're adding certificate information for.
 2.  On the Action Pane, on the **Worker** tab, in the **Competencies** group, click **Certificates**.
-3.  Click **New**.
-4.  In the **Certificate type** field, select **PMP**.
-5.  In the **Start date** field, select **10/1/2015**.
-6.  Click **Save**, and then close the page.
+3.  Click **New**, in the **Certificate type** field, select **PMP**.
+4.  In the **Start date** field, select **10/1/2015** and click **Save**.
 
 ### Set up competencies: Skills
 
@@ -109,23 +105,21 @@ To set up competencies for a worker, you can use either the **Workers** list pa
 7.  Click **Save**, and then close the page.
 
 ## Create a new project
-1.  Click **Project management and accounting** &gt; **Workspaces** &gt; **Project management**.
-2.  Click **New project**, and enter the following values:
+1.  On the **Project management** page, click **New project**, and enter the following values:
     -   **Project type** - Time and material
     -   **Project name** - XYZ Upgrade Phase 2
     -   **Project group** - TM\_WIP
     -   **Project contract ID**  - 00000002
-3.  Click **Create project**.
+2.  Click **Create project**.
 
 ### Assign a resource to a project
 
-1.  Click **Human resources** &gt; **Workers** &gt; **Workers**.
-2.  In the **Workers** list, select the record for the worker that you previously set up competencies for, and open the worker record.
-3.  On the Action Pane, on the **Project** tab, in the **Setup** group, click **Assign projects**.
-4.  On the **Resource validation project assignments** page, click the **Projects** tab.
-5.  In the **Add the project to selected projects**, filter on the project, XYZ Upgrade Phase 2
-6.  In the **Remaining projects** pane, select a project, and then click the arrow to add it to the **Selected projects** pane.
-7.  Close the page.
+1. On the **Workers** page, in the **Workers** list, select the record for the worker that you previously set up competencies for, and open the worker record.
+2.  On the Action Pane, on the **Project** tab, in the **Setup** group > **Assign projects**.
+3.  On the **Resource validation project assignments** page > **Projects** tab.
+4.  In the **Add the project to selected projects**, filter on the project, XYZ Upgrade Phase 2
+5.  In the **Remaining projects** pane, select a project, and then click the arrow to add it to the **Selected projects** pane.
+
 
 If needed, you can also assign categories for a resource. The category type is either Cost or Revenue. This is determined by your organization. If there are no assigned categories for the resource, Finance and Operations will look up the default category on hour prices for cost and revenue.
 
@@ -139,8 +133,7 @@ A project manager can use the project resourcing functionality to create the ro
 
 The following steps show how the resource manager can set up the Senior project manager role and associate resource characteristics with it. Later, the role can be used to search for available resources that match the required resource competencies.
 
-1.  Click **Project management and accounting** &gt; **Setup** &gt; **Resources** &gt; **Setup roles**.
-2.  Click **New**, and enter the following values:
+1.  On the **Setup roles** page, click **New**, and enter the following values:
     -   **Role ID** - Senior Project Manager
     -   **Description** - Senior Project Manager
 3.  Click **Create**.
@@ -149,11 +142,10 @@ The following steps show how the resource manager can set up the Senior projec
 6.  In the **Available characteristics** field, enter the skill that you're searching for.
 7.  In the **Characteristic type** field, select **Certificate**.
 8.  In the **Available characteristics** field, enter the certificate type to search for.
-9.  Click **OK**, and close the page.
 
 ### Assign a project resource to a project
 
-1.  Click **Project management and accounting** &gt; **Common** &gt; **Projects** &gt; **All projects**, and open the **XYZ Upgrade Phase 2** project.
+1.  On the **All projects** page, select the **XYZ Upgrade Phase 2** project.
 2.  On the **Project team and scheduling** tab, click **Add**.
 3.  In the **Role** field, select **Team member**.
 4.  Click **Book from calendar**.
@@ -163,8 +155,8 @@ The following steps show how the resource manager can set up the Senior projec
     -   **Display availability descriptions** - Yes
     -   **Display remaining capacity** - Yes
 7.  In the list of resources, select a resource.
-8.  Click **Hard book** &gt; **Full capacity**.
-9.  Close the page.
+8.  Click **Hard book** and **Full capacity**.
+
 
 ### Assign a resource to a default role
 
@@ -174,24 +166,21 @@ During resource reservation, project managers can filter the role resources that
 
 **Scenario:** An approved project has started, and the Senior project manager role was reserved as a planned resource during the project planning stage. The resource manager has now acquired a resource to fulfill the Senior project manager role.
 
-1.  Click **Project management and accounting** &gt; **Project resources** &gt; **Resources list**.
-2.  In the **Resource** list, select **Daniel Goldschmidt**.
-3.  Click **Project resource** &gt; **Maintain** &gt; **Resource role**.
-4.  Click **New**, and enter the following values:
+1.  On the **Resources list** page, select **Daniel Goldschmidt**.
+2.  On the **Resource role** page, click **New**, and enter the following values:
     -   **Effective** - (The current date)
     -   **Expiration** - Never
     -   **Role** - Senior Project Manager
-5.  Click **Save**, and then close the page.
-6.  On the **Competencies** tab, add the **ProjectMgmt** skill and the **PMP** certificate.
+3.  Click **Save**, and then close the page.
+4.  On the **Competencies** tab, add the **ProjectMgmt** skill and the **PMP** certificate.
 
 ## Set up role-based pricing
 All cost, sales, and transfer prices can be set up for roles.
 
-1.  Click **Project management and accounting** &gt; **Setup** &gt; **Prices** &gt; **Sales price (hour)**.
-2.  Click **New**.
-3.  Enter an effective date.
-4.  In the **Role** column, select a role.
-5.  In the **Pricing** column, enter a price for the selected resource role.
+1.  On the **Sales price (hour)** page, click **New**.
+2.  Enter an effective date.
+3.  In the **Role** column, select a role.
+4.  In the **Pricing** column, enter a price for the selected resource role.
 
 ## Form a project team
 To use the roles that were previously set up in a project, a project manager must associate the roles with the project. Multiple roles can be assigned for a project, and Finance and Operations automatically labels these roles during reservation to prevent confusion. For example, if the project manager requires three software engineers, three Software engineer roles that have software engineer 1, software engineer 2, and software engineer 3 as their labels are automatically generated. If role characteristics were previously set for the role, they are applied as a filter during searches for a resource. Additional characteristics can be added as required to further refine the search. 
@@ -237,8 +226,8 @@ We recommend that you use a batch. The options are available in synchronizing ca
 
 -   Click **Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resources capacity roll-ups**.
 
-| Option | Description                                                                                                                                                                                          |
-|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Option | Description                                                 |
+|--------|-------------------------------------------------------------|
 | Period code    | Optionally select the General ledger date interval code to set the start and end date for the resource capacity roll-up synchronization process.                                                  |
 | Start date     | Enter the start date for the resource capacity roll-up synchronization process. |
 | End date     | Enter the end date for the resource capacity roll-up synchronization process. |
@@ -296,29 +285,26 @@ Additional options have been added in the WBS to better use the resourcing func
 </tbody>
 </table>
 
-1.  Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.
-2.  In the list, select the **XYZ Upgrade Phase 2** project.
-3.  Click **Plan** &gt; **Activities** &gt; **Work breakdown structure**.
-4.  Click **New** to add the following level-one activities to the WBS:
+1.  On the **All projects** page, select the **XYZ Upgrade Phase 2** project.
+2.  Click **Plan** &gt; **Activities** &gt; **Work breakdown structure**.
+3.  Click **New** to add the following level-one activities to the WBS:
     -   Initiating
     -   Planning
     -   Executing
     -   Monitoring and Control
     -   Close
 
-5.  Set the dates and effort (hours), as shown in the following screenshot.[![Setting the dates and effort](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)
-6.  Select the **Initiating** task line, and then, in the **Role** field, select **Senior Project Manager**.
-7.  Click **Publish**.
-8.  On the same line, in the **Resource** field, select **Daniel Goldschmidt**.
-9.  Click **Accept**.
-10. Select the **Planning** task line, and then, in the **Role** field, select **Business analyst**.
-11. Click **Publish**, and then click **Auto generate team**.
-12. In the dialog box that appears, click **Yes**.
-13. In the **Resource** field, verify that the value is **Business analyst 1**.
-14. For the **Business analyst 1** resource, open the lookup, and click **Launch resource assignments form**.
-15. Select a worker for the task.
-16. Click **Soft assign** &gt; **Full capacity**.
-17. Click **Save**, and close the page. 
+4.  Set the dates and effort (hours), as shown in the following screenshot.[![Setting the dates and effort](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)
+5.  Select the **Initiating** task line, and then, in the **Role** field, select **Senior Project Manager**.
+6.  Click **Publish**.
+7.  On the same line, in the **Resource** field, select **Daniel Goldschmidt**, click **Accept**.
+8. Select the **Planning** task line, and then, in the **Role** field, select **Business analyst**.
+9. Click **Publish**, and then click **Auto generate team**.
+10. In the dialog box that appears, click **Yes**.
+11. In the **Resource** field, verify that the value is **Business analyst 1**.
+12. For the **Business analyst 1** resource, open the lookup, and click **Launch resource assignments** and select a worker for the task.
+13. Click **Soft assign** &gt; **Full capacity**.
+
 
 > [!NOTE] 
 > You don't receive a warning that the specified resource is now 2, because the number of resources remains at 1.
@@ -327,19 +313,15 @@ Additional options have been added in the WBS to better use the resourcing func
 ## Resource fulfillment for planned resources
 A project manager can plan required resource roles for a project. The resource manager will see these planned resources as requests on the **Resource fulfillment** page and can assign actual resources.
 
-1.  Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.
-2.  In the list, select the **XYZ Upgrade Phase 2** project.
-3.  Click **Project**.
-4.  Click **Edit**.
-5.  On the **Project team and scheduling** tab,** **click **Add**.
-6.  In the **Add roles** dialog box, select the **Software developer** role.
-7.  Click **Create**.
-8.  Close the project page.
-9.  Click **Project management and accounting** &gt; **Project resources** &gt; **Resource fulfillment**.
-10. Select **Software developer 1** for the **XYZ Upgrade project Phase 2** project.
-11. Select a worker, and then click **Assign**.
-12. Verify that the line for **Software developer 1** has been removed for the **XYZ Upgrade project Phase 2** project.
-13. On the **Project team and scheduling** tab, for the **XYZ Upgrade Phase 2** project, verify that the worker that you selected in step 11 has been added as **Software developer**.
+1.  On the **All projects** page, select the **XYZ Upgrade Phase 2** project.
+2.  Click **Project**, click **Edit**.
+3.  On the **Project team and scheduling** tab, click **Add**.
+4.  In the **Add roles** dialog box, select the **Software developer** role.
+5.  Click **Create** and close the project page.
+6.  On the **Resource fulfillment** page, select **Software developer 1** for the **XYZ Upgrade project Phase 2** project.
+7. Select a worker, and then click **Assign**.
+8. Verify that the line for **Software developer 1** has been removed for the **XYZ Upgrade project Phase 2** project.
+9. On the **Project team and scheduling** tab, for the **XYZ Upgrade Phase 2** project, verify that the worker that you selected in the previous step has been added as **Software developer**.
 
 ## Requests for project resources
 The project resource scheduling functionality only supports resource managers to distribute staffed resources on engagements or projects. To enable this functionality, complete the following tasks, or verify that they have been completed.
@@ -357,9 +339,8 @@ After you have either verified or completed the tasks above, you can complete th
 -   Book resources to a project without a request for a staffed resource.
 
 ## Monitor project teams
-1.  Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.
-2.  In the list of projects, click the **Project ID** link for the **XYZ Upgrade Phase 2** project.
-3.  On the **Project team and scheduling** FastTab, verify that the project resources that are listed are correct.
+1.  On the **All projects** page, click the **Project ID** link for the **XYZ Upgrade Phase 2** project.
+2.  On the **Project team and scheduling** FastTab, verify that the project resources that are listed are correct.
 
 
 
