@@ -67,26 +67,29 @@ On the **Vendor rebate agreements** page, you can view details about the negotia
 
 The agreement's header specifies the general conditions that qualify a company for rebates. In effect, the header information  specifies that a vendor grants a rebate when a specific product is bought in a specific quantity. On the header, you also provide information about the unit of measure rebate option and the calculation date type.  
 
--   In the Unit of measure rebate option field on the General tab, 
+-   In the **Unit of measure rebate option** field on the **General** tab, you can define if a unit of measure should be a condition for the purchase order line to qualify for a rebate claim. **Convert** indicates that a purchase order line qualifies for a vendor rebate as per rebate agreement and you will receive a rebate regardless of the unit of measure that is applied on the line. **Exact match** indicates that a purchase line must have exactly the same unit of measure as is specified on the agreement to qualify for a rebate. 
 
--   In the Calculation date type option on the General tab, you select **Created** to use the creation date of the purchase order to determine whether the purchase falls in the validity period of the rebate agreement or select **Requested delivery** to use the requested delivery date for this purpose. 
+-   In the **Calculation date type** field on the **General** tab, you select **Created** to use the creation date of the purchase order to determine whether the purchase falls in the validity period of the rebate agreement or select **Requested delivery** to use the requested delivery date for this purpose. 
 
-On the agreement lines, you can see the information that distinguishes the individual variations of the vendor rebate agreement. 
+On the agreement lines, you can specify the vendor rebate agreement in more details. 
 
 -   In the **Cumulate purchase by** field, you can set the calculation of the rebate claim. The amount can be set to depend on a period (of week, month, year, lifetime or a customized period). **Invoice** indicates that a rebate claim will be determined every time that a purchase order line is invoiced.
 
+-   The **Taken from** field, you can specify the basis for the rebate calculation. Gross – The rebate is calculated based on the gross price of the item. 
+Net – The rebate is calculated based on the net price of the item (the price after other discounts have been applied). 
+
 -   The **Rebate program accrual account** and **Rebate program expense account** fields specify account numbers that will receive accrued rebate amounts during the intermediate stage between approval and processing.
+
+-   When the **Approval required** check box is selected, the rebate claim must be approved before it can be accrued or paid out.
 
 -   In the **Rebate line break type** field, the options **Quantity** and **Amount** indicate that the rebates are either volume-based or amount-based.
 
 -   On the **Lines** FastTab, you can see how different quantity tiers can be set up to grant different rebates. For example, in the illustration, the **From value** and the **To value** fields indicate that a product quantity between 10 and 19 units will qualify for a rebate of USD 15 per unit.
 
--   In the **Workflow approval status** field, the value **Approved** indicates that the agreement can be applied to purchase orders that meet the agreement’s conditions.
-
--   In the **Unit of measure rebate option** field, you can define if a unit of measure should be a condition for the purchase order line to qualify for a rebate claim. **Convert** indicates that you are entitled to a rebate regardless of the unit of measure on the purchase order line. **Exact match** indicates that a purchase line must have exactly the same unit of measure as is specified on the rebate agreement to qualify for a rebate.
-
 > [!NOTE]
-> If items are bought in a different purchase unit than the inventory unit and rebate agreements have have been set up for both the inventory unit and the purchasing unit, you must select **Exact match** in the **Unit of measure rebate option** field to ensure that the rebate claim is only generated once. 
+> The **From** value is inclusive, and the **To** value is exclusive. For example, if the **Rebate line break type** field is set to **Quantity**, and you enter 1 in the **From value** field and 3 in the **To value** field, the rebate amount applies when you purchase one or two items, but not when you purchase three items. 
+
+-   In the **Workflow approval status** field, the value **Approved** indicates that the agreement can be applied to purchase orders that meet the agreement’s conditions.
 
 ## Identify orders that qualify for rebates and generate rebate claims
  
