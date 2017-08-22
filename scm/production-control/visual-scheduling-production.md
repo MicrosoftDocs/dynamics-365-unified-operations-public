@@ -109,27 +109,15 @@ It is not possible to schedule a job outside the defined time interval of the Ga
 
 ### Schedule previous jobs
 
-In a network of activities, such as jobs belonging to the same production order, you can use the **Schedule previous jobs** function to schedule the previous jobs relative to a selected job in the network. In the following example, the highlighted activity is the selected job.
+In a network of activities, such as jobs belonging to the same production order, you can use the **Schedule previous jobs** function to schedule the previous jobs relative to a selected job in the network. In the following example, the highlighted activity is the selected job. The diagram shows before a previous job is scheduled and after the previous job is scheduled. 
 
-<table>
-<tr>
-<td>
-Before
-</td>
-<td rowspan=2>
-<img src='./media/schprevjob3.png'/>
-</td>
-</tr>
-<tr>
-<td>
-After
-</td>
-</tr>
-</table>
+[![Schedule previous job](./media/schprevjob3.png)](./media/schprevjob3.png)
 
 ### Schedule next jobs
 
-You can use the **Schedule next jobs** function to schedule the next jobs relative to a selected job in a network of activities. In the following example, the highlighted activity is the selected job.
+You can use the **Schedule next jobs** function to schedule the next jobs relative to a selected job in a network of activities. In the following example, the highlighted activity is the selected job. The diagram shows before the next job is scheduled and after the next job is scheduled. 
+
+[![Schedule next job](./media/schnxtjob.png)](./media/schnxtjob.png)
 
 <table>
 <tr>
@@ -149,7 +137,9 @@ After
 
 ### Schedule around job
 
-You can use the **Schedule around job** function to schedule the next job and the previous job relative to a selected job in a network of activities. In the following example, the highlighted activity is the selected job.
+You can use the **Schedule around job** function to schedule the next job and the previous job relative to a selected job in a network of activities. In the following example, the highlighted activity is the selected job. The diagram shows before a job is scheduled and after the job is scheduled. 
+
+[![Schedule around job](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
 <table>
 <tr>
@@ -169,7 +159,9 @@ After
 
 ### Arrange jobs
 
-You can use the **Arrange** function to arrange selected activities on the same resource. These activities can be in the same network of activities, but can also belong to different networks. When you use the arrange function the time gaps between the selected activities will be eliminated. You can use this function to optimize the capacity utilization of the resources.
+You can use the **Arrange** function to arrange selected activities on the same resource. These activities can be in the same network of activities, but can also belong to different networks. When you use the arrange function the time gaps between the selected activities will be eliminated. You can use this function to optimize the capacity utilization of the resources. The diagram shows before a job is scheduled and after the job is scheduled. 
+
+[![Arrange job](./media/arrangejobs1.png)](./media/arrangejobs1.png)
 
 <table>
 <tr>
