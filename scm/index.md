@@ -64,6 +64,7 @@ These short videos help you get started with the new features that are in Micros
 -  [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
 -  [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
 -  [Approve purchase orders on a mobile device](https://youtu.be/gZ-gOlJe7H8)
+-  [Visual scheduling with Gantt chart for production and batch orders](https://youtu.be/BtbuShkGj4I)
 
 ### Tech talks
 Most of these discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
