@@ -7,7 +7,7 @@ follow when entering and submitting expense reports and travel requisitions. Imp
 expenses effectively. 
 author: saraschi2
 manager: AnnBe
-ms.date: 07/25/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
