@@ -110,8 +110,8 @@ The following table shows whether each feature is available in:
 | | Safety stock de-prioritization in master planning and capable to promise (CTP) calculation| Yes | Yes |
 | | Turn off planning processes per company| Yes | Yes |
 | Mobile  | | | |
-| | Mobile framework| Yes | Yes* |
-| | Dynamics 365 for Unified Operations mobile app and workspaces | Yes | Yes* |
+| | Mobile framework| Yes | Yes |
+| | Dynamics 365 for Unified Operations mobile app and workspaces | Yes | Yes |
 | Office integration| | | |
 | | Open in Excel| Yes | Yes |
 | | Static export to Excel| Yes | Yes |
@@ -178,8 +178,6 @@ The following table shows whether each feature is available in:
 | Finances and Operations support | | | |
 | | Ideas portal| Yes | ? |
 | | Access to Support via the Help & Support menu| Yes | No |
-
-/* Indicates features that are in preview.
 
 ## Dynamics 365 for Retail 
 
