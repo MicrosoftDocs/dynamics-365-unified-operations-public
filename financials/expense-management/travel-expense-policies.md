@@ -1,10 +1,9 @@
 ---
 # required metadata
 
-title: Travel and expense policies
-description: In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you can define policies that your workers must 
-follow when entering and submitting expense reports and travel requisitions. Implementing travel and expense policies can help you manage
-expenses effectively. 
+title: Define expense policies
+description: In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you can define policies that your workers must follow when entering and submitting expense reports and travel requisitions. Implementing expense policies can help you manage expenses 
+effectively. 
 author: saraschi2
 manager: AnnBe
 ms.date: 08/22/2017
@@ -18,7 +17,7 @@ ms.technology:
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: twheeloc
+# ms.reviewer:  twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: 
