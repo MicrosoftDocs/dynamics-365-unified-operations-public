@@ -69,10 +69,10 @@ The system will find any method that wraps the method DoSomething. It will rando
 The following sections describe in more details the capabilities of method wrapping and CoC.
 
 ## Wrapping public and protected methods
-Protected or public method on classes, tables or forms can be wrapped using an extension class that augments that class, table or form. The wrapper method must have the same signature as the base method. For forms, only root level methods can be wrapped.
+Protected or public method on classes, tables or forms can be wrapped using an extension class that augments that class, table or form. The wrapper method must have the same signature as the base method.
 
-. When augmenting form classes, only root level method can be wrapped. You cannot wrap methods defined in nested classes.
-. Only methods defined in regular classes can be wrapped. Methods defined in extension classes cannot be wrapped by augmenting the extension class.
+* When augmenting form classes, only root level method can be wrapped. You cannot wrap methods defined in nested classes.
+* Only methods defined in regular classes can be wrapped. Methods defined in extension classes cannot be wrapped by augmenting the extension class.
 
 ### What about default parameters?
 Methods with default parameters can be wrapped by extension classes; however, the method signature in the wrapper method must not include the default value of the parameter. In other words, consider the following simple class with a method having a default parameter:
@@ -120,10 +120,10 @@ Wrapper Methods must always call next.
 Any wrapper method in an extension class must always call next, ensuring the next method in the chain and finally the original implementation are always called. This makes sure every method in the chain will contribute to the result.
 The current implementation of this restriction forces the call to next to be in the first level statements in the method body.
 Some rules important rules are:
-•Call to next cannot be done conditionally inside an if statement. 
-•Call to next cannot be done in a while, do-while, or for loop statements. 
-•A next statement cannot be preceded by a return statement. 
-•A call to next cannot be in logical expressions due to optimization of this type of expressions (At runtime, the execution of the complete expression is not guaranteed). 
+* Call to next cannot be done conditionally inside an if statement. 
+* Call to next cannot be done in a while, do-while, or for loop statements. 
+* A next statement cannot be preceded by a return statement. 
+* A call to next cannot be in logical expressions due to optimization of this type of expressions (At runtime, the execution of the complete expression is not guaranteed). 
 
 ## Wrap a base method in an extension of a derived class
 The following example illustrates this capability. Assume the following class hierarchy:
