@@ -2,8 +2,7 @@
 # required metadata
 
 title: Define expense policies
-description: In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you can define policies that your workers must follow when entering and submitting expense reports and travel requisitions. Implementing expense policies can help you manage expenses
-effectively. 
+description: You can define expense policies that your workers must follow when entering and submitting expense reports and travel requisitions. Implementing expense policies can help you manage expenses effectively. 
 author: saraschi2
 manager: AnnBe
 ms.date: 08/22/2017
@@ -32,13 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you can define policies that your workers must follow when 
-entering and submitting expense reports and travel requisitions. Implementing expense policies can help you manage expenses 
-effectively. 
+You can define policies that your workers must follow when entering and submitting expense reports and travel requisitions. Implementing expense policies can help you manage expenses effectively. 
 
-For example, you can set a policy that for New York City the hotel expense per night cannot exceed USD 250. If a worker submits an 
-expense report or a travel requisition in which the room rate exceeds this amount, the system will notify the worker that the policy 
-amount for the expense has been exceeded. You can configure the message that the worker will receive when you define the policy. 
+For example, you can set a policy for hotel expenses in New York City, which states that the per night expense cannot exceed USD 250. If a worker submits an expense report or a travel requisition in which the room rate exceeds this amount, the system will notify the worker that the policy amount for the expense has been exceeded. You can configure the message that the worker will receive when you define the policy. 
 
 You can define three types of policies: 
 
@@ -51,5 +46,5 @@ You can define three types of policies:
 
 You can also set up a date range for which expense policies are in effect. For example, airline fares for flights between Denmark 
 and New York City can be expensive during the peak holiday travel season. You can define a flight expense rule that restricts the 
-cost of flights to New York City to a limit of DKK 5000 and you can specify that this rule be in effect between March 15 and 
+cost of flights to New York City to a limit of DKK 5000, and you can specify that this rule be in effect between March 15 and 
 September 15. 
