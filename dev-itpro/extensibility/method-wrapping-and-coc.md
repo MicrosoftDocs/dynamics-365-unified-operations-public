@@ -87,7 +87,7 @@ The wrapper method must look like:
 [ExtensionOf(classtr(Person))]
 final class aPerson_Extension
 {
-       Public void salute( str message ){ }
+    Public void salute( str message ){ }
 }
 ```
 Notice how in the extension class aPerson_Extension class, the salute method does not include the default value of the “message” parameter. 
@@ -97,10 +97,10 @@ Instance and Static methods can be wrapped by extension classes. If a static met
 ```
 class A 
 {
-public static void aStaticMethod( int parameter1)
-{
-// …
-}
+   public static void aStaticMethod( int parameter1)
+   {
+   // …
+   }
 }
 ```
  
@@ -109,10 +109,10 @@ The wrapping method must look like:
 [ExtensionOf(classstr(A)]
 final class An_Extension
 {
-                public static void aStaticMethod( int parameter1)
-                {
-                                Next aStaticMethod( 10 );
-                }
+   public static void aStaticMethod( int parameter1)
+   {
+     Next aStaticMethod( 10 );
+   }
 }
 ```
 Note: Wrapping static methods does not apply to forms. In X++, a form class is not really a new class and cannot be instantiated or referenced as a normal class. Static methods in forms do not have any semantics.
@@ -130,10 +130,10 @@ The following example illustrates this capability. Assume the following class hi
 ```
 class A
 {
-public void salute(str message)
-{
-Info(message);
-}
+   public void salute(str message)
+   {
+     Info(message);
+   }
 }
 
 class B extends A { }
@@ -144,11 +144,11 @@ Under this definition we have one base class A and two classes that derive from 
 [Extensionof(classstr(B))]
 final class aB_Extension
 {
-public void salute(str message)
-{
-next salute( message );
-Info(“B extension”);
-}
+   public void salute(str message)
+   {
+     next salute( message );
+     Info(“B extension”);
+   }
 }
 ```
 While the class aB_Extension is an extension of B, and B does not have a method definition for the salute method, it is still possible to wrap the salute method defined in the base class A. This means only instances of the class B will include the wrapping of the salute method. Instances of class A and class C will never call the the wrapper method defined in the extension of B. 
@@ -156,16 +156,16 @@ This gets clearer if we implement a method to use these three classes:
 ```
 class ProgramTest 
 {
-Public static void Main( Args _args)
-{
-var a = new A( );
-var b = new B( );
-var c = new C( );
+   Public static void Main( Args _args)
+   {
+     var a = new A( );
+     var b = new B( );
+     var c = new C( );
 
-a.salute(“Hi”);
-b.salute(“Hi”);
-c.salute(“Hi”);
-}
+     a.salute(“Hi”);
+     b.salute(“Hi”);
+     c.salute(“Hi”);
+   }
 }
 ```
 In the case of a.salute(“Hi”), only the message “Hi”  is shown in the infolog. The same happens for the calls to c.salute(“Hi”). On the other hand, when b.salute(“Hi”) is called, the infolog will contain “Hi” followed by “B extension”. 
@@ -180,8 +180,8 @@ For example, anyMethod below cannot be wrapped in a class that augments anyClass
 ```
 class anyClass1 
 {
-[HookableAttribute(false)]
-public void anyMethod() {…}
+   [HookableAttribute(false)]
+   public void anyMethod() {…}
 }
 ```
 
@@ -192,10 +192,25 @@ In the example below, the method doSomething is explicitly marked to by non-wrap
 ```
 class anyClass2 
 {
-                [Wrappable(false)]
-                public void  doSomething(str message) { …}
+   [Wrappable(false)]
+   public void  doSomething(str message) { …}
 
-                [Wrappable(true)]
-                final public void  doSomethingElse(str message){ …}
+   [Wrappable(true)]
+   final public void  doSomethingElse(str message){ …}
 }
 ```
+
+# Restrictions on wrapper methods
+The following describes restrictions on the use of CoC and method wrapping.
+
+## No wrapping of kernel methods 
+Kernel classes are classes defined in the kernel of the Dynamics 365 unified operations platform, they are not X++ classes. Even though extension classes are supported for kernel classes, method wrapping is not supported on methods of kernel classes. In other words, to wrap a method, the base method must be an X++ method.
+
+## X++ classes compiled with platform update 8 or earlier 
+Wrapping methods is a feature that requires specific functionality emitted by an X++ compiler that is part of platform update 9 or newer. Methods compiled with earlier versions do not have the infrastructure to support this feature.
+
+## No wrapping of nested class methods (Forms)
+Nested classes in X++ is a concept that applies to forms for overriding data source and form control methods. Methods nested classes cannot be wrapped in class extensions.
+
+## Tooling
+Support for cross reference and Intellisense (in the Visual Studio X++ Editor) for the features described in this topic is not complete. It is planned to be available starting in platform update 10.
