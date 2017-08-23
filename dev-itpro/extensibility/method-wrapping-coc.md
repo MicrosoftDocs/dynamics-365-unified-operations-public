@@ -2,7 +2,7 @@
 # required metadata
 
 title: Class extension: Method wrapping and Chain of Commandf (CoC)
-description: This topic discusses the functionality of extending the business logic of public and protected methods using method "wrapping". 
+description: This topic discusses how to extend the business logic of public and protected methods using method wrapping. 
 author: robadawy
 manager: AnnBe
 ms.date: 08/21/2017
@@ -21,7 +21,6 @@ ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 26961
-ms.assetid: 8a2b3107-247d-4362-8d4d-6ee6257abfcc
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
@@ -30,8 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Overview
-The functionality of class extension (also known as class augmentation) has been improved to allow developers to wrap logic around methods defined in the base class being augmented. This allows extending the logic of public and protected methods without the need to use event handlers. When you wrap a method, you can also access public and protected methods and variables of the base class. This way, you can start transactions and easily manage state variables associated with your class.
+# Class extension: Method wrapping and Chain of Commandf (CoC)
+Class extension functionality (also known as class augmentation) has been improved to allow you to wrap logic around methods defined in the base class being augmented. You can extend the logic of public and protected methods without using event handlers. When you wrap a method, you can also access public and protected methods and variables of the base class. This way, you can start transactions and easily manage state variables associated with your class.
+
 Consider the following situation. A model contains the following code.
 ```
 class BusinessLogic1
@@ -41,7 +41,7 @@ class BusinessLogic1
     }
 }
 ```
-It is now possible to augment the functionality of the method DoSomething inside an extension class by reusing the same method name. An extension class must belong to a package that references the model where the augmented class is defined.
+It is now possible to augment the functionality of the method **DoSomething** inside an extension class by reusing the same method name. An extension class must belong to a package that references the model where the augmented class is defined.
 ```
 [ExtensionOf(ClassStr(BusinessLogic1))]
 final class BusinessLogic1_Extension
@@ -54,25 +54,25 @@ final class BusinessLogic1_Extension
     }
 }
 ```
-Wrapping DoSomething and the required use of the next keyword creates a Chain of Command (CoC) for the method. Here is what happens when the following code executes.
+Wrapping **DoSomething** and the required use of the **next** keyword creates a Chain of Command (CoC) for the method. Here is what happens when the following code executes.
 ```
 BusinessLogic1 c = new BusinessLogic1();
 info(c.DoSomething(33));
 ```
-The system will find any method that wraps the method DoSomething. It will randomly execute one of these methods (say, DoSomething of the BusinessLogic1_Extension class). When the call to next DoSomething() occurs, the system randomly picks another method in the CoC or calls the original implementation if no further wrapped methods exist.
+The system will find any method that wraps the method **DoSomething**. It will randomly execute one of these methods, for example, **DoSomething** of the **BusinessLogic1_Extension** class. When the call to next **DoSomething** occurs, the system randomly picks another method in the CoC or calls the original implementation if no further wrapped methods exist.
 
-# Supported versions
+## Supported versions
 > [!IMPORTANT]
-> The functionality described in this topic is available as of platform update 9 (CoC and access to protected methods and variables). However, this functionality requires the class being augmented to be compiled on platform update 9 or newer as well. At the time of authoring of this topic, all current releases of the Dynamics 365 for Finance and Operations applications have been compiled on platform update 8 or earlier, you will then need to re-compile a base package (like Application Suite) on platform update 9 or newer in order to wrap a method that is defined in that package.
+> The functionality described in this topic is available as of platform update 9 (CoC and access to protected methods and variables). However, this functionality requires the class being augmented to be compiled on platform update 9 or newer as well. As of August 2017, all current releases of the Dynamics 365 for Finance and Operations applications have been compiled on platform update 8 or earlier. You will then need to re-compile a base package (like Application Suite) on platform update 9 or newer in order to wrap a method that is defined in that package.
 
-# Capabilities
+## Capabilities
 The following sections describe in more details the capabilities of method wrapping and CoC.
 
-## Wrapping public and protected methods
-Protected or public method on classes, tables or forms can be wrapped using an extension class that augments that class, table or form. The wrapper method must have the same signature as the base method.
+### Wrapping public and protected methods
+Protected or public methods of classes, tables or forms can be wrapped using an extension class that augments that class, table or form. The wrapper method must have the same signature as the base method.
 
-* When augmenting form classes, only root level method can be wrapped. You cannot wrap methods defined in nested classes.
-* Only methods defined in regular classes can be wrapped. Methods defined in extension classes cannot be wrapped by augmenting the extension class.
+- When augmenting form classes, only root level method can be wrapped. You cannot wrap methods defined in nested classes.
+- Only methods defined in regular classes can be wrapped. Methods defined in extension classes cannot be wrapped by augmenting the extension class.
 
 ### What about default parameters?
 Methods with default parameters can be wrapped by extension classes; however, the method signature in the wrapper method must not include the default value of the parameter. In other words, consider the following simple class with a method having a default parameter:
