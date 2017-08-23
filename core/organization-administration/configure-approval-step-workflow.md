@@ -192,6 +192,7 @@ If a user doesn't take action on a document in the allotted time, the document i
 
 1.  In the left pane, click **Escalation**.
 2.  Select the **Use escalation path** check box to create an escalation path. The system automatically assigns the document to the users who are listed in the escalation path. For example, the following table represents an escalation path.
+
     | Sequence | Escalation path      |
     |----------|----------------------|
     | 1        | Assign to: Donna     |
