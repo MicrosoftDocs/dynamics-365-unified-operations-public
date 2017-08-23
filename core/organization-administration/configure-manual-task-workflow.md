@@ -174,6 +174,7 @@ If a user doesn't complete the manual task in the allotted time, the task is ove
 
 1.  In the left pane, click **Escalation**.
 2.  Select the **Use escalation path** check box to create an escalation path. The system automatically assigns the task to the users who are listed in the escalation path. For example, the following table represents an escalation path.
+
     | Sequence | Escalation path      |
     |----------|----------------------|
     | 1        | Assign to: Donna     |
