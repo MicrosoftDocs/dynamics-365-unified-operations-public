@@ -92,7 +92,7 @@ final class aPerson_Extension
 ```
 Notice how in the extension class aPerson_Extension class, the salute method does not include the default value of the “message” parameter. 
 
-## Wrapping instance and static methods
+### Wrapping instance and static methods
 Instance and Static methods can be wrapped by extension classes. If a static method is the target to be wrapped, the method in the extension needs to be qualified with the static keyword. For example, if we have the following class A
 ```
 class A 
@@ -115,18 +115,22 @@ final class An_Extension
    }
 }
 ```
-Note: Wrapping static methods does not apply to forms. In X++, a form class is not really a new class and cannot be instantiated or referenced as a normal class. Static methods in forms do not have any semantics.
-Wrapper Methods must always call next. 
-Any wrapper method in an extension class must always call next, ensuring the next method in the chain and finally the original implementation are always called. This makes sure every method in the chain will contribute to the result.
-The current implementation of this restriction forces the call to next to be in the first level statements in the method body.
-Some rules important rules are:
-* Call to next cannot be done conditionally inside an if statement. 
-* Call to next cannot be done in a while, do-while, or for loop statements. 
-* A next statement cannot be preceded by a return statement. 
-* A call to next cannot be in logical expressions due to optimization of this type of expressions (At runtime, the execution of the complete expression is not guaranteed). 
+> [!IMPORTANT]
+> Wrapping static methods does not apply to forms. In X++, a form class is not a new class and cannot be instantiated or referenced as a normal class. Static methods in forms do not have any semantics.
 
-## Wrap a base method in an extension of a derived class
-The following example illustrates this capability. Assume the following class hierarchy:
+### Wrapper methods must always call next 
+
+Any wrapper method in an extension class must always call **next**, ensuring the next method in the chain and finally the original implementation are always called. This makes sure every method in the chain will contribute to the result.
+
+The current implementation of this restriction forces the call to **next** to be in the first-level statements in the method body.
+Some rules important rules are:
+- Calls to **next** cannot be done conditionally inside an if statement. 
+- Call to **next** cannot be done in a **while**, **do-while**, or **for** loop statements. 
+- A **next** statement cannot be preceded by a **return** statement. 
+- A call to **next** cannot be in logical expressions due to optimization of this type of expressions. At runtime, the execution of the complete expression is not guaranteed. 
+
+### Wrap a base method in an extension of a derived class
+The following example shows how to wrap a base method in an extension of a derived class. Assume the following class hierarchy:
 ```
 class A
 {
@@ -171,12 +175,11 @@ class ProgramTest
 In the case of a.salute(“Hi”), only the message “Hi”  is shown in the infolog. The same happens for the calls to c.salute(“Hi”). On the other hand, when b.salute(“Hi”) is called, the infolog will contain “Hi” followed by “B extension”. 
 With this mechanism, it is possible to wrap the original method only for specific derived classes.
 
-## Access protected members from extension classes
+### Access protected members from extension classes
 Access to protected members including fields and methods is now possible from extension classes, as of platform update 9. It is important to mention that this support is not specific to wrapping methods, but to all the methods in the class extension, making class extensions more powerful than before.
 
-## The hookable attribute
-If a method is explicitly marked as [Hookable(false)], the method cannot be wrapped in an extension class.
-For example, anyMethod below cannot be wrapped in a class that augments anyClass1.
+### The hookable attribute
+If a method is explicitly marked as **[Hookable(false)]**, the method cannot be wrapped in an extension class. In the following example, **anyMethod** cannot be wrapped in a class that augments **anyClass1**.
 ```
 class anyClass1 
 {
@@ -185,10 +188,8 @@ class anyClass1
 }
 ```
 
-## Final methods and the wrappable attribute
-Public and protected methods that are marked as final cannot be wrapped in extension classes. However, this restriction can be overridden with the usage of wrappable attribute with the attribute parameter set to true, [Wrappable(true)].
-Similarly, if you want to override the default capability for (non final) public or protected methods, you can mark them as non wrappable, [Wrappable(false)].
-In the example below, the method doSomething is explicitly marked to by non-wrappable, even though it is a public method. The method doSomethingElse is explicitly marked to by wrappable, even though it is a final method.
+### Final methods and the wrappable attribute
+Public and protected methods that are marked as **final** cannot be wrapped in extension classes. This restriction can be overridden with the usage of **Wrappable** attribute with the attribute parameter set to true, that is, **[Wrappable(true)]**. Similarly, if you want to override the default capability for (non final) public or protected methods, you can mark them as non wrappable, that is **[Wrappable(false)]**. In the following example, the method **doSomething** is explicitly marked to be non-wrappable, even though it is a public method. The method **doSomethingElse** is explicitly marked to by wrappable, even though it is a final method.
 ```
 class anyClass2 
 {
@@ -200,17 +201,17 @@ class anyClass2
 }
 ```
 
-# Restrictions on wrapper methods
+## Restrictions on wrapper methods
 The following describes restrictions on the use of CoC and method wrapping.
 
-## No wrapping of kernel methods 
+### No wrapping of kernel methods 
 Kernel classes are classes defined in the kernel of the Dynamics 365 unified operations platform, they are not X++ classes. Even though extension classes are supported for kernel classes, method wrapping is not supported on methods of kernel classes. In other words, to wrap a method, the base method must be an X++ method.
 
-## X++ classes compiled with platform update 8 or earlier 
+### X++ classes compiled with platform update 8 or earlier 
 Wrapping methods is a feature that requires specific functionality emitted by an X++ compiler that is part of platform update 9 or newer. Methods compiled with earlier versions do not have the infrastructure to support this feature.
 
-## No wrapping of nested class methods (Forms)
+### No wrapping of nested class methods (Forms)
 Nested classes in X++ is a concept that applies to forms for overriding data source and form control methods. Methods nested classes cannot be wrapped in class extensions.
 
-## Tooling
-Support for cross reference and Intellisense (in the Visual Studio X++ Editor) for the features described in this topic is not complete. It is planned to be available starting in platform update 10.
+### Tooling
+Support for cross reference and IntelliSense in the Visual Studio X++ Editor for the features described in this topic is not complete. It is planned to be available starting in platform update 10.
