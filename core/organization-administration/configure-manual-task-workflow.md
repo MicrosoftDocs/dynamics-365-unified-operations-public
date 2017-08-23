@@ -5,7 +5,7 @@ title: Configure a manual task in a workflow
 description: This topic explains how to configure the properties for a manual task.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -174,6 +174,7 @@ If a user doesn't complete the manual task in the allotted time, the task is ove
 
 1.  In the left pane, click **Escalation**.
 2.  Select the **Use escalation path** check box to create an escalation path. The system automatically assigns the task to the users who are listed in the escalation path. For example, the following table represents an escalation path.
+
     | Sequence | Escalation path      |
     |----------|----------------------|
     | 1        | Assign to: Donna     |
@@ -329,7 +330,9 @@ You can send notifications to people when a manual task has been delegated, esca
 8.  Repeat steps 3 through 7 for each event that you selected in step 2.
 
 ## Set a time limit
-Follow these steps if the manual task must be completed in a specific time. **Note:** The options that you select in this procedure override the options that you selected in the **Assignment** and **Escalation** areas of the page.
+Follow these steps if the manual task must be completed in a specific time. 
+
+**Note:** The options that you select in this procedure override the options that you selected in the **Assignment** and **Escalation** areas of the page.
 
 1.  In the left pane, click **Advanced settings**.
 2.  Select the **Set a time limit for the workflow element** check box.
