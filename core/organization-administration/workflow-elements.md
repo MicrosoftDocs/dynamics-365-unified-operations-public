@@ -5,7 +5,7 @@ title: Workflow elements
 description: This article describes the various elements that make up a workflow.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -65,7 +65,11 @@ An *approval process* is a process that consists of separate steps. At each appr
 -   Assign the document to another user for approval.
 
 ## Lineitem workflow elements
-A workflow can be created to process either documents or the line items on a document. For example, you've created an approval workflow for timesheets. (We will refer to this workflow as the *document workflow*.) You can add a *line-item workflow* element to that document workflow. When the line-item element is run, each line item on the document is submitted for processing. You might want all the line items to be processed by the same line-item workflow, or you might want each line item to be processed by a different line-item workflow. Imagine that an employee has submitted a timesheet that resembles the following figure. ![Workflow with line items](./media/workflow_lineitemworkflow.gif) In this scenario, you might want to create the following line-item workflows:
+A workflow can be created to process either documents or the line items on a document. For example, you've created an approval workflow for timesheets. (We will refer to this workflow as the *document workflow*.) You can add a *line-item workflow* element to that document workflow. When the line-item element is run, each line item on the document is submitted for processing. You might want all the line items to be processed by the same line-item workflow, or you might want each line item to be processed by a different line-item workflow. Imagine that an employee has submitted a timesheet that resembles the following figure.
+
+![Workflow with line items](./media/workflow_lineitemworkflow.gif) 
+
+In this scenario, you might want to create the following line-item workflows:
 
 -   **Line-item workflow 1** – This workflow is used to process line items where the project ID is 1111.
 -   **Line-item workflow 2** – This workflow is used to process line items where the project ID is 2222.

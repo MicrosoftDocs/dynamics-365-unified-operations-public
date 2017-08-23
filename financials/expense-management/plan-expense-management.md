@@ -5,7 +5,7 @@ title: Configure expense management
 description: This article describes the considerations and the decisions that you must make during the planning process before you configure Expense management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. In the Expense management area, you can store information about payment methods, travel requisitions, expense reports, and policies, among other things. 
 author: KimANelson
 manager: AnnBe
-ms.date: 06/08/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,7 +40,7 @@ This article describes the considerations and the decisions that you must make d
 Because many of the decisions that you make when you plan your configuration for Expense management are based on your organization’s hierarchy and financial structure, you must refer to the planning documents for those areas.
 
 ## Intercompany expenses
-When you enable intercompany expenses, you allow legal entities and employees to incur expenses on behalf of, and collect payment from, another legal entity within your organization. For example, an employee in legal entity A completes a project for legal entity B. If intercompany expenses are enabled, the employee can then file a timesheet to, and be paid by, legal entity B. If your organization doesn’t have multiple legal entities, you won’t need to enable intercompany expenses. **Decision:** Do you want to enable intercompany expenses?
+When you enable intercompany expenses, you allow legal entities and employees to incur expenses on behalf of another legal entity, and collect payment from the legal entity of their employment within your organization. For example, an employee in legal entity A completes a project for legal entity B that incurs travel related expenses. If intercompany expenses are enabled, the employee can then file an expense report that will post the expense to legal entity B, and be paid by legal entity A. If your organization doesn’t have multiple legal entities, you won’t need to enable intercompany expenses. **Decision:** Do you want to enable intercompany expenses?
 
 ## Financial management
 Expense management is tightly integrated with the financial management of your organization. A lot of your configuration for Expense management will be based on the decisions that you’ve made about your organization’s finances. The following sections describe the different areas that require planning and decisions based on your organization’s financial decisions and guidance from your leadership team.
@@ -100,7 +100,7 @@ When employees create an expense report, each expense that they record must be a
     -   Are any of the subcategories excluded from tax recovery?
     -   What is the item sales tax group of the subcategories?
 
-    If this expense category is also used in Project management and accounting, answer the remaining questions. Otherwise, you are finished with this section.
+If this expense category is also used in Project management and accounting, answer the remaining questions. Otherwise, you are finished with this section.
 -   Which cost accounts will be used for the following?
     -   Cost
     -   Payroll allocation
