@@ -30,10 +30,14 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Use this task to learn how to define impairment accounting common parameters and posting profiles.
-
-To complete this task, the Fixed Assets configuration key must be selected.
-
+Use this task to learn how to define impairment accounting common parameters and posting profiles.
+
+
+
+To complete this task, the Fixed Assets configuration key must be selected.
+
+
+
 This procedure uses the JPMF demo company data.
 
 
@@ -43,8 +47,7 @@ This procedure uses the JPMF demo company data.
 3. In the Warning period (in months) field, enter a number.
     * Example: 6 months  
 4. Click the Number sequences tab.
-    * Confirm the following Number sequence codes are set up:  •Document ID for impairment  •Impairment test ID  •Cash generating unit number        
-    *   
+    * Confirm the following Number sequence codes are set up:  •Document ID for impairment  •Impairment test ID  •Cash generating unit number 
 
 ## Set up posting profile
 1. Go to Fixed assets > Setup > Fixed asset posting profiles.

@@ -42,7 +42,7 @@ These introductory topics contain general information about how Finance and Oper
 
 + [Application extensibility plans](extensibility-roadmap.md)
 + [Extensibility changes for Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update](changes-july-2017.md)
-+ [Next steps - extensibility requests](extensibility-requests.md) 
++ [Extensibility requests](extensibility-requests.md) 
 + [FAQ](app-sealing-faq.md) 
 
 ## Getting started

@@ -3,7 +3,7 @@
 
 title: Configure Accounts payable
 description: This article describes the pages that you use to set up basic and optional functionality for Accounts payable in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It also describes setup steps that you must complete before you start to set up Accounts payable.
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/08/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 24671
 ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

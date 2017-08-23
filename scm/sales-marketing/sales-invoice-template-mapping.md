@@ -79,11 +79,17 @@ Sales invoices are created in Finance and Operations and synchronized to Sales.
  
 ## Preconditions and mapping setup
 
-Before synchronizing invoices, it is important to update Sales with the following setting:
+Before synchronizing sales invoices, it is important to update the systems with the following setting:
 
--  In Sales, under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Use system prizing calculation system** is set to **Yes**. 
+### Setup in Sales
 
-### InvoiceHeader
+- Under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Use system prizing calculation system** is set to **Yes**. 
+
+- Under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Discount calculation method** is set to **Line item**. 
+
+### Setup in the Data integration project
+
+#### SalesInvoiceHeader task
 
 - Update the mapping for **CDS Organization ID** in **Source** > **CDS**. 
 
@@ -100,7 +106,7 @@ Before synchronizing invoices, it is important to update Sales with the followin
     -  Template value for **pricelevelid.name [Price List Name]** is **ValueMap** based on **Currency**.
     -  usd: CRM Service USA (sample). 
 
-### InvoiceLine
+#### SalesInvoiceLine task
 
 - Ensure that the needed mapping exists in **Source** > **CDS for Unit of measure**.
 
@@ -127,3 +133,17 @@ The following illustrations show an example of a template mapping in data integr
 ![Template mapping in data integrator](./media/sales-invoice-template-mapping-data-integrator-3.png)
 
 ![Template mapping in data integrator](./media/sales-invoice-template-mapping-data-integrator-4.png)
+
+
+## Related topics
+
+[Synchronize products from Finance and Operations to products in Sales](products-template-mapping.md)
+
+[Synchronize accounts from Sales to customers in Finance and Operations](accounts-template-mapping.md)
+
+[Synchronize contacts from Sales to contacts or customers in Finance and Operations](contacts-template-mapping.md)
+
+[Synchronize sales quotation headers and lines from Sales to Finance and Operations](sales-quotation-template-mapping.md)
+
+[Synchronize sales order headers and lines from Finance and Operations to Sales](sales-order-template-mapping.md)
+

@@ -41,7 +41,7 @@ ms.dyn365.ops.version: Version 1611
 
 Default order settings in Microsoft Dynamics 365 for Finance and Operations, Enterpise edition define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. Default order settings are used when creating purchase orders, sales orders, transfer orders, inventory journals, and by master planning for generating planned orders. Default order settings can be item specific, site specific, product variant specific, or product dimension specific.
 
-You can define the default order settings on the **Default order settings** page. To open this page, go to **Product information management** &gt; **Products** &gt; **Released products** &gt; select a released product &gt; on the **Plan** or ****Manage inventory**** Action Pane &gt; **Order settings** &gt; **Default order settings**.
+You can define the default order settings on the **Default order settings** page. To open this page, go to **Product information management** &gt; **Products** &gt; **Released products** &gt; **Select a released product** &gt; on the **Plan** or **Manage inventory** Action Pane &gt; **Order settings** &gt; **Default order settings**.
 
 ## Default order settings
 There are three types of default order settings for purchases, sales, and inventory. The default order settings for purchases are used when creating:

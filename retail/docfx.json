@@ -35,6 +35,7 @@
       "layout": "Conceptual",
       "searchScope": ["Unified Operations"],
       "breadcrumb_path": "/dynamics365/unified-operations/fin-and-ops/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "brand": "dyn-ops",
       "titleSuffix": "Retail", 
       "ms.service": "dynamics-365-retail",

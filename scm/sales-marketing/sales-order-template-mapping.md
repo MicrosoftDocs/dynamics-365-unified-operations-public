@@ -42,18 +42,18 @@ The following templates and underlying tasks are used to synchronize sales order
 
 - **Name of template in Data integration** 
 
-    - Sales Orders (Sales to Fin and Ops)
+    - Sales Orders (Fin and Ops to Sales)
     
 - **Names of tasks in Data integration project**
 
-    - SalesOrderHeader
-    - SalesOrderLine
+    - OrderHeader
+    - OrderLine
 
 Sync tasks required prior to Sales invoice header and lines sync:
 
 - Products (Fin and Ops to Sales)
 - Accounts (Sales to Fin and Ops) (if used)
-- Contacts (Sales to Fin and Ops) (if used)
+- Contacts to Customers (Sales to Fin and Ops) (if used)
 
 ## Entity set
 
@@ -96,7 +96,6 @@ New fields are added to the **Order** entity and displayed on the page:
     - Partially Shipped
     - Partially Invoiced
     - Cancelled
-    - Draft (default)
 
 The **Has Externally Maintained Products Only** setting is used in other sales order scenarios (from Sales to Finance and Operation sync) to consistently keep track of whether the sales order is made up entirely of **Externally Maintained Products**, in which case products are maintained in Finance and Operations. This ensures that you don't try to sync sales order lines with products that are unknown to Finance and Operations.
  
@@ -106,15 +105,23 @@ The **Sales order status** will remain active to ensure that changes from Financ
 
 ## Preconditions and mapping setup 
 
-Before synchronizing sales orders, it is important to update Sales with the following setting:
+Before synchronizing sales orders, it is important to update the systems with the following setting:
 
-Under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Use system prizing calculation system** is set to **Yes**. 
+### Setup in Sales
+
+- Ensure permissions for the team that the user (from your Sales **Connection set**) is assigned to. If you are using demo data, usually the user has admin access, but not the team. Without this you will get an error that Principal team is missing when running the project from Data integrator. 
+
+    - Under **Settings** > **Security** > **Teams**, select the relevant team, click **Manage Roles** and select a role with the desired permissions e.g. System Administrator.
+
+- Under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Use system prizing calculation system** is set to **Yes**. 
+
+- Under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Discount calculation method** is set to **Line item**. 
 
 ### Setup in Finance and Operations
 
-Set **Sales and marketing** > **Periodic tasks** > **Calculate sales totals** to run as a batch job, with **Calculate totals for sales orders** set to **Yes**. This is important because only the sales orders with sales totals calculated will be synced to CDS and Sales.
+Set **Sales and marketing** > **Periodic tasks** > **Calculate sales totals** to run as a batch job, with **Calculate totals for sales orders** set to **Yes**. This is important because only the sales orders with sales totals calculated will be synced to CDS and Sales. The frequence of the batch job should be alligned with the frequence of the sales order synchronization.
 
-### Setup in Data integration project
+### Setup in the Data integration project
 
 #### SalesHeader task
 
@@ -165,3 +172,17 @@ The following illustrations show an example of a template mapping in data integr
 ![Template mapping in data integrator](./media/sales-order-template-mapping-data-integrator-3.png)
 
 ![Template mapping in data integrator](./media/sales-order-template-mapping-data-integrator-4.png)
+
+
+## Related topics
+
+[Synchronize products from Finance and Operations to products in Sales](products-template-mapping.md)
+
+[Synchronize accounts from Sales to customers in Finance and Operations](accounts-template-mapping.md)
+
+[Synchronize contacts from Sales to contacts or customers in Finance and Operations](contacts-template-mapping.md)
+
+[Synchronize sales quotation headers and lines from Sales to Finance and Operations](sales-quotation-template-mapping.md)
+
+[Synchronize sales invoice headers and lines from Finance and Operations to Sales](sales-invoice-template-mapping.md)
+

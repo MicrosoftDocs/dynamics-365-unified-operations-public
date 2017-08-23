@@ -35,7 +35,11 @@ ms.dyn365.ops.version: Version 1611, Retail Version
 [!include[banner](includes/banner.md)]
 
 
+> [!NOTE]
+> This feature is currently available on sandbox and production (high-availability) deployment topologies only. 
+
 In Dynamics 365 for Retail, product recommendations can be displayed on the point of sale (POS) device. The recommendations are items that the customer might be interested in based on their purchase history, items in their wish list, and items that other customers purchased online and in brick-and-mortar stores. For retailers with large catalogs, recommendations help the customer with product discovery. By showcasing products targeted to a customer’s interests and buying habits, product recommendations can help retailers with up-sell and cross-sell, and can enhance customer retention. In Dynamics 365 for Retail, product recommendations are powered by cognitive services and Microsoft Azure machine learning.
+
 
 Scenarios
 ---------
@@ -54,7 +58,8 @@ Product recommendations are enabled for the following POS scenarios. They are a
 -   The recommendation engine suggests items based on the entire list of items in the basket.
 -   If the store associate adds a customer to the transaction, the recommendation engine provides personal recommendations using the customer’s transaction history and the list of items in the basket.
 
-**Note**  To display recommendations on the **Transaction** page, the retailer needs to update the screen layout in Dynamics 365 for Retail. The **Recommendations** control must be dropped on to the **Transaction** page. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+> [!NOTE]
+> To display recommendations on the **Transaction** page, the retailer needs to update the screen layout in Dynamics 365 for Retail. The **Recommendations** control must be dropped on to the **Transaction** page. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
 3.  On the **Customer details** page:
     -   The recommendation engine suggests items based on the user ID and items in the customer’s wish list.
@@ -65,9 +70,9 @@ Product recommendations are enabled for the following POS scenarios. They are a
 To set up product recommendations, you need to do the following.
 
 1.  Make sure that you have selected the correct **Legal entity**.
-2.  Navigate to **Entity store**, select **Retail sales**, and then click **Refresh**.** **This will use the demo data (or your data) from your operational database and move it to Entity store.
-3.  Optional: To display recommendations on the transaction screen, go to **Screen Layout, **choose your screen layout, launch the **Screen layout designer**,** **and then drop the **recommendations control **where needed.
-4.  Go to **Retail parameters**, select **Machine-learning**, select **Yes **under **Enable POS recommendations**.
+2.  Navigate to **Entity store**, select **Retail sales**, and then click **Refresh**.This will use the demo data (or your data) from your operational database and move it to Entity store.
+3.  Optional: To display recommendations on the transaction screen, go to **Screen Layout**, choose your screen layout, launch the **Screen layout designer**,and then drop the **recommendations** control where needed.
+4.  Go to **Retail parameters**, select **Machine-learning**, select **Yes** under **Enable POS recommendations**.
 5.  To see recommendations on POS, run global configuration job **1110**. To reflect changes made to POS screen layout designer, run channel configuration job **1070**.
 
 ## []()How does it work?

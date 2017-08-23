@@ -5,7 +5,7 @@ title: Copy a Finance and Operations database – SQL Server to production Azure
 description: This topic describes how to move a Finance and Operations database from an environment that runs on SQL Server (Tier 1 or one-box) to an environment that runs on an Azure SQL database (Tier 2 or higher). 
 author: tariqbell
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 08/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -184,6 +184,12 @@ Run the following script against the imported database. The script performs the 
 
     CREATE USER axdeployuser FROM LOGIN axdeployuser
     EXEC sp_addrolemember 'db_owner', 'axdeployuser'
+    
+    CREATE USER axdeployextuser WITH PASSWORD = '<password from lcs>'
+    IF EXISTS (select * from sys.database_principals where type = 'R' and name = 'DeployExtensibilityRole')
+    BEGIN
+        EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
+    END
 
     CREATE USER axdbadmin WITH PASSWORD = '<password from lcs>'
     EXEC sp_addrolemember 'db_owner', 'axdbadmin'

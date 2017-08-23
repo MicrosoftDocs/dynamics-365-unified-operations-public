@@ -72,7 +72,7 @@ All Dynamics 365 for Operations front-end virtual machines in Microsoft Azure ar
 
 > [!IMPORTANT]
 > Customers who have administrator access to Microsoft-managed sandboxes, including any add-on sandboxes purchased, must follow these guidelines:
-> - Automatic Windows Update enabled on Tier 1 sandboxes by default should NOT be disabled. This ensures that any time that Microsoft pushes security or critical infrastructure updates to your environment, your environment receives the latest set of updates and is updated each month with the operating system fixes that Microsoft releases.  
+> - By default, automatic Windows update is enabled for all Tier 1 - 5 sandboxes and should NOT be disabled. This ensures that any time that Microsoft pushes security or critical infrastructure updates to your environment, your environment receives the latest set of updates and is updated each month with the operating system fixes that Microsoft releases.  
 > -	Admin passwords on these environments should NOT be changed. Environments that have admin passwords changed will be flagged by Microsoft. Microsoft reserves the right to, and will reset the admin password.  
 > - Adding new user accounts to the VMs is NOT supported. Microsoft reserves the right to, and will remove the newly added user accounts.
 

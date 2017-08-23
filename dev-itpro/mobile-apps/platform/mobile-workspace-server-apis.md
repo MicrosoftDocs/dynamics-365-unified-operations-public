@@ -30,10 +30,10 @@ ms.dyn365.ops.version: Platform update 3
 ---
 # Server-side development (workspace X++ APIs)
 
-# Class SysAppActionAttribute 
+## Class SysAppActionAttribute 
 SysAppActionAttribute used for decorating methods defining actions of workspace
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -44,13 +44,13 @@ SysAppActionAttribute used for decorating methods defining actions of workspace
 | crudOperationType | SysAppCRUDOperation | Gets the Crud Operation Type like Create, Update, Delete |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppActionAttribute class
 
 	 public void new ([str _actionTitle], [str _actionDescription], [SysAppCRUDOperation _crudOperationType], [str _pageMethodName]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -60,46 +60,46 @@ Creates a new instance of SysAppActionAttribute class
 | _pageMethodName | str | True | Name of the method constructing parent page
 
 
-## Method pageMethodName 
+### Method pageMethodName 
 Gets the get method name which forms the page under which this task resides
 
 	 public str pageMethodName () 
 
 
-### Return Value 
+#### Return Value 
 The page method name which forms the page under which this task resides
 
-## Method actionTitle 
+### Method actionTitle 
 Gets the Action Title
 
 	 public str actionTitle () 
 
 
-### Return Value 
+#### Return Value 
 The action title
 
-## Method actionDescription 
+### Method actionDescription 
 Gets the Action Description
 
 	 public str actionDescription () 
 
 
-### Return Value 
+#### Return Value 
 The page description
 
-## Method crudOperationType 
+### Method crudOperationType 
 Gets the Crud Operation Type like Create, Update, Delete
 
 	 public SysAppCRUDOperation crudOperationType () 
 
 
-### Return Value 
+#### Return Value 
 The Crud Operation Type like Create, Update, Delete
 
-# Class SysAppActionMetadata 
+## Class SysAppActionMetadata 
 This class can be used to access and update AX mobile workspace action metadata
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -113,134 +113,134 @@ This class can be used to access and update AX mobile workspace action metadata
 | getControlEnumerator | MapEnumerator | Returns a map enumerator that can be used to enumerate action controls.  Where Key is control name and value is of type SysAppControlMetadata |
 
 
-## Method new 
+### Method new 
 
 
 	 public void new (Microsoft.Dynamics.Client.ServerForm.App.TaskMetadata _taskmetadata) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _taskmetadata | Microsoft.Dynamics.Client.ServerForm.App.TaskMetadata | False | 
 
 
-## Method getActionName 
+### Method getActionName 
 Returns the action name
 
 	 public str getActionName () 
 
 
-### Return Value 
+#### Return Value 
 The action name
 
-## Method actionTitle 
+### Method actionTitle 
 Gets or sets the action title
 
 	 public str actionTitle ([str _actionTitle]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _actionTitle | str | True | The action title
 
 
-### Return Value 
+#### Return Value 
 The action title
 
-## Method actionDescription 
+### Method actionDescription 
 Gets or sets the action description
 
 	 public str actionDescription ([str _actionDescription]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _actionDescription | str | True | The action description
 
 
-### Return Value 
+#### Return Value 
 The action description
 
-## Method actionHidden 
+### Method actionHidden 
 Gets or sets whether action is hidden
 
 	 public boolean actionHidden ([boolean _actionHidden]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _actionHidden | boolean | True | Action hidden value
 
 
-### Return Value 
+#### Return Value 
 True if the action is hidden; otherwise false
 
-## Method actionOrder 
+### Method actionOrder 
 Gets or sets the action order
 
 	 public int actionOrder ([int _actionOrder]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _actionOrder | int | True | The action order
 
 
-### Return Value 
+#### Return Value 
 The action order
 
-## Method getControl 
+### Method getControl 
 Returns the control on the current action having the provided control name
 
 	 public SysAppControlMetadata getControl (str _controlName) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlName | str | False | The control name that will be used to search for control
 
 
-### Return Value 
+#### Return Value 
 An object of SysAppControlMetadata is returned if a control with the provided control name exist on the action;otherwise null
 
-## Method getControlEnumerator 
+### Method getControlEnumerator 
 Returns a map enumerator that can be used to enumerate action controls.  Where Key is control name and value is of type SysAppControlMetadata
 
 	 public MapEnumerator getControlEnumerator () 
 
 
-### Return Value 
+#### Return Value 
 A map enumerator
 
-# Class SysAppAttributeHelper 
+## Class SysAppAttributeHelper 
 SysAppAttributeHelper class for fetching attributes from all the extended class
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
 | getAttributeFromClass | SysAttribute | gets attribute from class |
 
 
-## Method getAttributeFromClass 
+### Method getAttributeFromClass 
 gets attribute from class
 
 	 public SysAttribute getAttributeFromClass (SysDictClass _sysClass, SysAppAttributeType _attributeType) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -248,23 +248,23 @@ gets attribute from class
 | _attributeType | SysAppAttributeType | False | Type of attribute like SysAppEntityAttribute
 
 
-# Class SysAppCollectionAttribute 
+## Class SysAppCollectionAttribute 
 SysAppCollectionAttribute used for decorating methods forming list control
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
 | new | void | Constructor |
 
 
-## Method new 
+### Method new 
 Constructor
 
 	 public void new (str _itemContractName, [str _label], [str _relationshipName]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -273,10 +273,10 @@ Constructor
 | _relationshipName | str | True | Relationship name. By default the entity name of the list item is used as relationship name
 
 
-# Class SysAppControlMetadata 
+## Class SysAppControlMetadata 
 Represents an X++ wrapper over the managed ControlMetadata object to facilitate.  passing around the object as X++ object
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -293,13 +293,13 @@ Represents an X++ wrapper over the managed ControlMetadata object to facilitate.
 | setProperty | void | Sets the control property referenced by the key |
 
 
-## Method new 
+### Method new 
 Creates a new instance of the control metadata
 
 	 public void new (Microsoft.Dynamics.Client.ServerForm.App.ControlMetadata _controlMetadata, [str _baseLanguageId]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -307,143 +307,143 @@ Creates a new instance of the control metadata
 | _baseLanguageId | str | True | THe base language
 
 
-## Method getBaseLanguageId 
+### Method getBaseLanguageId 
 Returns the base language id for the app
 
 	 public str getBaseLanguageId () 
 
 
-### Return Value 
+#### Return Value 
 The base language id
 
-## Method getControlName 
+### Method getControlName 
 Returns the control name
 
 	 public str getControlName () 
 
 
-### Return Value 
+#### Return Value 
 The control name
 
-## Method controlLabel 
+### Method controlLabel 
 Gets and sets the control label
 
 	 public str controlLabel ([str _controlLabel]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlLabel | str | True | The control label
 
 
-### Return Value 
+#### Return Value 
 The control label
 
-## Method controlHidden 
+### Method controlHidden 
 Gets and sets whether the control is hidden
 
 	 public boolean controlHidden ([boolean _controlHidden]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlHidden | boolean | True | Control hidden value
 
 
-### Return Value 
+#### Return Value 
 True if the control is hidden;otherwise false
 
-## Method controlOrder 
+### Method controlOrder 
 Gets or sets the control order
 
 	 public int controlOrder ([int _controlOrder]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlOrder | int | True | The control order
 
 
-### Return Value 
+#### Return Value 
 The control order
 
-## Method controlMandatory 
+### Method controlMandatory 
 Gets or sets the control mandatory
 
 	 public boolean controlMandatory ([boolean _controlMandatory]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlMandatory | boolean | True | The control mandatory
 
 
-### Return Value 
+#### Return Value 
 The control mandatory
 
-## Method controlAllowNegative 
+### Method controlAllowNegative 
 Gets or sets the control allow negative
 
 	 public boolean controlAllowNegative ([boolean _controlAllowNegative]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlAllowNegative | boolean | True | The control allow negative
 
 
-### Return Value 
+#### Return Value 
 The control allow negative
 
-## Method controlMaxLength 
+### Method controlMaxLength 
 Gets or sets the control max length
 
 	 public int controlMaxLength ([int _controlMaxLength]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlMaxLength | int | True | The control max length
 
 
-### Return Value 
+#### Return Value 
 The control max length
 
-## Method getProperty 
+### Method getProperty 
 Gets the control property referenced by the key
 
 	 public anytype getProperty (str _key) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _key | str | False | The name of the control property
 
 
-### Return Value 
+#### Return Value 
 The property value
 
-## Method setProperty 
+### Method setProperty 
 Sets the control property referenced by the key
 
 	 public void setProperty (str _key, anytype _value) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -451,10 +451,10 @@ Sets the control property referenced by the key
 | _value | anytype | False | The value of the control property
 
 
-# Class SysAppEntityAttribute 
+## Class SysAppEntityAttribute 
 SysAppEntityAttribute used for decorating data contract entitites
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -463,13 +463,13 @@ SysAppEntityAttribute used for decorating data contract entitites
 | entityKey | str | Gets the entity key |
 
 
-## Method new 
+### Method new 
 Constructor
 
 	 public void new (str _name, str _entityKey) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -477,28 +477,28 @@ Constructor
 | _entityKey | str | False | Name of the entity's key
 
 
-## Method name 
+### Method name 
 Gets the name of the entity
 
 	 public str name () 
 
 
-### Return Value 
+#### Return Value 
 Name of the entity
 
-## Method entityKey 
+### Method entityKey 
 Gets the entity key
 
 	 public str entityKey () 
 
 
-### Return Value 
+#### Return Value 
 Entity key
 
-# Class SysAppEntityContext 
+## Class SysAppEntityContext 
 SysAppEntityContext used for defining entity context
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -508,13 +508,13 @@ SysAppEntityContext used for defining entity context
 | entityId | str | Field value on which filter applies |
 
 
-## Method constructFromParams 
+### Method constructFromParams 
 Constructs SysAppEntityContext from entityName and entityId
 
 	 public SysAppEntityContext constructFromParams (str _entityName, str _entityId) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -522,74 +522,74 @@ Constructs SysAppEntityContext from entityName and entityId
 | _entityId | str | False | Entity value
 
 
-### Return Value 
+#### Return Value 
 Instance of SysAppEntityContext
 
-## Method constructFromBuffer 
+### Method constructFromBuffer 
 Constructs SysAppEntityContext from table buffer
 
 	 public SysAppEntityContext constructFromBuffer (Common _tableBuffer) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _tableBuffer | Common | False | table buffer forming the entity
 
 
-### Return Value 
+#### Return Value 
 Instance of SysAppEntityContext
 
-## Method entityName 
+### Method entityName 
 Entity name on which filter applies
 
 	 public str entityName ([str _entityName]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _entityName | str | True | Entity name
 
 
-### Return Value 
+#### Return Value 
 Entity name
 
-## Method entityId 
+### Method entityId 
 Field value on which filter applies
 
 	 public str entityId ([str _entityId]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _entityId | str | True | Entity value
 
 
-### Return Value 
+#### Return Value 
 Entity value
 
-# Class SysAppFieldAttribute 
+## Class SysAppFieldAttribute 
 SysAppFieldAttribute used for decorating methods forming bound fields
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
 | new | void | Creates a new instance of SysAppFieldAttribute class |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppFieldAttribute class
 
 	 public void new (str _fieldName, str _label) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -597,10 +597,10 @@ Creates a new instance of SysAppFieldAttribute class
 | _label | str | False | Control label
 
 
-# Class SysAppFieldMultiSelectHelper 
+## Class SysAppFieldMultiSelectHelper 
 A helper class to provide helper methods for multi select scenarios used with D365 mobile app
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -611,13 +611,13 @@ A helper class to provide helper methods for multi select scenarios used with D3
 | setControlValue | void | A setter to set the multi select control value |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppFieldMultiSelectHelper class
 
 	 public void new (TableId _multiSelectTableId, FieldId _valueFieldId, FormStringControl _multiSelectControl) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -626,50 +626,50 @@ Creates a new instance of SysAppFieldMultiSelectHelper class
 | _multiSelectControl | FormStringControl | False | The string control that will be the multi select control
 
 
-## Method getSelectedRecIds 
+### Method getSelectedRecIds 
 Returns a container of recIds of the records that were selected
 
 	 public container getSelectedRecIds () 
 
 
-### Return Value 
+#### Return Value 
 A container of recOds for the records that were selected
 
-## Method getSelectedValues 
+### Method getSelectedValues 
 Returns a container of selected values
 
 	 public container getSelectedValues () 
 
 
-### Return Value 
+#### Return Value 
 A container of selected values
 
-## Method getSelectedRecords 
+### Method getSelectedRecords 
 Returns a buffer that contain all the selected records..  The buffer is marked as temp..  Later a while-Select can be used to iterate through all the records
 
 	 public Common getSelectedRecords () 
 
 
-### Return Value 
+#### Return Value 
 A buffer containing all the selected records
 
-## Method setControlValue 
+### Method setControlValue 
 A setter to set the multi select control value
 
 	 public void setControlValue (str _value) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _value | str | False | A colon seperated value that will be used by SysAppFieldMultiSelectHelper
 
 
-# Class SysAppFilterContext 
+## Class SysAppFilterContext 
 SysAppFilterContext class which holds context values
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -680,80 +680,80 @@ SysAppFilterContext class which holds context values
 | addFilterFieldValue | void | Adds filter field value |
 
 
-## Method entityName 
+### Method entityName 
 Entity name on which filter applies
 
 	 public str entityName ([str _entityName]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _entityName | str | True | Entity name on which filter applies
 
 
-### Return Value 
+#### Return Value 
 Entity name on which filter applies
 
-## Method filterFieldName 
+### Method filterFieldName 
 Field name on which filter applies
 
 	 public str filterFieldName ([str _filterFieldName]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _filterFieldName | str | True | Field name on which filter applies
 
 
-### Return Value 
+#### Return Value 
 Field name on which filter applies
 
-## Method filterFieldValueList 
+### Method filterFieldValueList 
 Gets the list of filter field values based on which filter happens
 
 	 public List filterFieldValueList () 
 
 
-### Return Value 
+#### Return Value 
 List of filter field values based on which filter happens
 
-## Method operator 
+### Method operator 
 Opertor like eq, contains, etc based on which result will be fetched
 
 	 public str operator ([str _operator]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _operator | str | True | Opertor like eq, contains, etc based on which result will be fetched
 
 
-### Return Value 
+#### Return Value 
 Opertor like eq, contains, etc based on which result will be fetched
 
-## Method addFilterFieldValue 
+### Method addFilterFieldValue 
 Adds filter field value
 
 	 public void addFilterFieldValue ( _filterFieldValueList) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _filterFieldValueList |  | False | Filter field values based on which filter happens
 
 
-# Class SysAppLookUpAttribute 
+## Class SysAppLookUpAttribute 
 SysAppPageAttribute used for decorating pages that is also lookup page
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -762,13 +762,13 @@ SysAppPageAttribute used for decorating pages that is also lookup page
 | valueFieldName | str | Gets the value field name of lookup control |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppLookUpAttribute class
 
 	 public void new (str _displayFieldName, str _valueFieldName) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -776,28 +776,28 @@ Creates a new instance of SysAppLookUpAttribute class
 | _valueFieldName | str | False | Lookup value field. Name of control formed by root data contract constructing lookup page
 
 
-## Method displayFieldName 
+### Method displayFieldName 
 Gets the display field name of lookup control
 
 	 public str displayFieldName () 
 
 
-### Return Value 
+#### Return Value 
 The display field name of lookup control
 
-## Method valueFieldName 
+### Method valueFieldName 
 Gets the value field name of lookup control
 
 	 public str valueFieldName () 
 
 
-### Return Value 
+#### Return Value 
 The value field name of lookup control
 
-# Class SysAppLookupFieldAttribute 
+## Class SysAppLookupFieldAttribute 
 SysAppLookupFieldAttribute used for decorating look up fields of action
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -805,32 +805,32 @@ SysAppLookupFieldAttribute used for decorating look up fields of action
 | entityName | str | Gets the name of the entity with which lookup page is related |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppLookupFieldAttribute class
 
 	 public void new ( _name) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _name |  | False | Name of the entity with which lookup page is related
 
 
-## Method entityName 
+### Method entityName 
 Gets the name of the entity with which lookup page is related
 
 	 public str entityName () 
 
 
-### Return Value 
+#### Return Value 
 Name of the entity
 
-# Class SysAppPageAttribute 
+## Class SysAppPageAttribute 
 SysAppPageAttribute used for decorating methods defining page of workspace
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -839,13 +839,13 @@ SysAppPageAttribute used for decorating methods defining page of workspace
 | pageDescription | str | Gets the Page Description |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppPageAttribute class
 
 	 public void new ([str _pageTitle], [str _pageDescription]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -853,28 +853,28 @@ Creates a new instance of SysAppPageAttribute class
 | _pageDescription | str | True | The page description
 
 
-## Method pageTitle 
+### Method pageTitle 
 Gets the Page Title of the page
 
 	 public str pageTitle () 
 
 
-### Return Value 
+#### Return Value 
 The page title
 
-## Method pageDescription 
+### Method pageDescription 
 Gets the Page Description
 
 	 public str pageDescription () 
 
 
-### Return Value 
+#### Return Value 
 The page description
 
-# Class SysAppPageMetadata 
+## Class SysAppPageMetadata 
 This class can be used to access and update AX mobile workspace page metadata
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -888,167 +888,167 @@ This class can be used to access and update AX mobile workspace page metadata
 | getControlEnumerator | MapEnumerator | Returns a map enumerator that can be used to enumerate page controls.  Where Key is control name and value is of type SysAppControlMetadata |
 
 
-## Method new 
+### Method new 
 
 
 	 public void new (Microsoft.Dynamics.Client.ServerForm.App.PageMetadata _pageMetadata) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _pageMetadata | Microsoft.Dynamics.Client.ServerForm.App.PageMetadata | False | 
 
 
-## Method getPageName 
+### Method getPageName 
 Returns the page name
 
 	 public str getPageName () 
 
 
-### Return Value 
+#### Return Value 
 The page name
 
-## Method pageTitle 
+### Method pageTitle 
 Gets and sets the page title
 
 	 public str pageTitle ([str _pageTitle]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _pageTitle | str | True | The page title
 
 
-### Return Value 
+#### Return Value 
 The page title
 
-## Method pageDescription 
+### Method pageDescription 
 Gets or sets the page description
 
 	 public str pageDescription ([str _pageDescription]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _pageDescription | str | True | The page description
 
 
-### Return Value 
+#### Return Value 
 The page description>
 
-## Method pageHidden 
+### Method pageHidden 
 Gets and sets whether the page is hidden in the workspace
 
 	 public boolean pageHidden ([boolean _pageHidden]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _pageHidden | boolean | True | page hidden value
 
 
-### Return Value 
+#### Return Value 
 True if the current page is hidden in workspace; otherwise false
 
-## Method pageOrder 
+### Method pageOrder 
 Gets or sets the page order
 
 	 public int pageOrder ([int _pageOrder]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _pageOrder | int | True | The page order
 
 
-### Return Value 
+#### Return Value 
 The page order
 
-## Method getControl 
+### Method getControl 
 Returns the control on the current page having the provided control name
 
 	 public SysAppControlMetadata getControl (str _controlName) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlName | str | False | The control name that will be used to search for control
 
 
-### Return Value 
+#### Return Value 
 An object of SysAppControlMetadata is returned if a control with the provided control name exist on the page;otherwise null
 
-## Method getControlEnumerator 
+### Method getControlEnumerator 
 Returns a map enumerator that can be used to enumerate page controls.  Where Key is control name and value is of type SysAppControlMetadata
 
 	 public MapEnumerator getControlEnumerator () 
 
 
-### Return Value 
+#### Return Value 
 A map enumerator
 
-# Class SysAppProjectionAttribute 
+## Class SysAppProjectionAttribute 
 SysAppProjectionAttribute used for decorating methods forming unbound fields
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
 | new | void | Creates a new instance of SysAppControlMetadataAttributes class |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppControlMetadataAttributes class
 
 	 public void new (str _label) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _label | str | False | Control label
 
 
-# Class SysAppRelationalAttribute 
+## Class SysAppRelationalAttribute 
 SysAppRelationalAttribute used for decorating reference controls
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
 | new | void | Constructor |
 
 
-## Method new 
+### Method new 
 Constructor
 
 	 public void new ([str _name]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _name | str | True | Property name of the referenced entity
 
 
-# Class SysAppRequestParams 
+## Class SysAppRequestParams 
 Request class for X++ methods generating details and action pages
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -1056,42 +1056,42 @@ Request class for X++ methods generating details and action pages
 | filterContext | List | List of SysAppFilterContext for filter contexts |
 
 
-## Method entityContext 
+### Method entityContext 
 Entity context of the request
 
 	 public SysAppEntityContext entityContext ([SysAppEntityContext _entityContext]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _entityContext | SysAppEntityContext | True | Entity context of the request
 
 
-### Return Value 
+#### Return Value 
 Entity context of the request
 
-## Method filterContext 
+### Method filterContext 
 List of SysAppFilterContext for filter contexts
 
 	 public List filterContext ([List _filterContext]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _filterContext | List | True | List of SysAppFilterContext for filter contexts of page
 
 
-### Return Value 
+#### Return Value 
 List of SysAppFilterContext for filter contexts of page
 
-# Class SysAppResponse 
+## Class SysAppResponse 
 SysAppResponse class.  This class holds the response object for generated pages and actions
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -1105,101 +1105,101 @@ SysAppResponse class.  This class holds the response object for generated pages 
 | addCommit | void | Adds commits |
 
 
-## Method new 
+### Method new 
 
 
 	 public void new () 
 
 
-## Method jobId 
+### Method jobId 
 Job Id of the request
 
 	 public str jobId () 
 
 
-### Return Value 
+#### Return Value 
 jobid of the request
 
-## Method data 
+### Method data 
 Data of the page
 
 	 public Microsoft.Dynamics.Client.ServerForm.App.CompositeData data ([Microsoft.Dynamics.Client.ServerForm.App.CompositeData _data]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _data | Microsoft.Dynamics.Client.ServerForm.App.CompositeData | True | Data of the page
 
 
-### Return Value 
+#### Return Value 
 Data of the page
 
-## Method failedInAppCall 
+### Method failedInAppCall 
 Data of the page
 
 	 public boolean failedInAppCall ([boolean _failedInAppCall]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _failedInAppCall | boolean | True | Sets to true if it fails in calling application code
 
 
-### Return Value 
+#### Return Value 
 True when fails in calling application code
 
-## Method commits 
+### Method commits 
 Commits after task is completed
 
 	 public List commits () 
 
 
-### Return Value 
+#### Return Value 
 Commits after task is completed
 
-## Method messages 
+### Method messages 
 Job Id of the request
 
 	 public List messages () 
 
 
-### Return Value 
+#### Return Value 
 Messages after task is completed
 
-## Method addMessage 
+### Method addMessage 
 Adds message
 
 	 public void addMessage (SysAppResponseMessage _message) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _message | SysAppResponseMessage | False | message as SysAppResponseMessage object
 
 
-## Method addCommit 
+### Method addCommit 
 Adds commits
 
 	 public void addCommit (SysAppEntityContext _entityContext) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _entityContext | SysAppEntityContext | False | Entity context containing entity name and entity id of the entity that is commited
 
 
-# Class SysAppResponseMessage 
+## Class SysAppResponseMessage 
 SysAppResponseMessage class for response messages
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -1208,13 +1208,13 @@ SysAppResponseMessage class for response messages
 | type | SysAppMessageType | Gets the message type: info, error , warning |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppResponseMessage class
 
 	 public void new (str _text, [SysAppMessageType _type]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -1222,28 +1222,28 @@ Creates a new instance of SysAppResponseMessage class
 | _type | SysAppMessageType | True | Message Type: info, error , warning
 
 
-## Method text 
+### Method text 
 Gets the message text
 
 	 public str text () 
 
 
-### Return Value 
+#### Return Value 
 The message text
 
-## Method type 
+### Method type 
 Gets the message type: info, error , warning
 
 	 public SysAppMessageType type () 
 
 
-### Return Value 
+#### Return Value 
 The message type: info, error , warning
 
-# Class SysAppSecurityAttribute 
+## Class SysAppSecurityAttribute 
 SysAppSecurityAttribute used for decorating methods forming pages and actions.  specifies security attribute of page or action
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -1252,13 +1252,13 @@ SysAppSecurityAttribute used for decorating methods forming pages and actions.  
 | menuItemName | MenuItemName | Gets the Menu Item Name of the page |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppSecurityAttribute class.  This will help in checking if the user logged in has access to the specified menu item and menu item type
 
 	 public void new ([MenuItemName _menuItemName], [MenuItemType _menuItemType]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -1266,28 +1266,28 @@ Creates a new instance of SysAppSecurityAttribute class.  This will help in chec
 | _menuItemType | MenuItemType | True | Menu Item Type of the page like action, display or output
 
 
-## Method menuItemType 
+### Method menuItemType 
 Gets the Menu Item Type of the page
 
 	 public MenuItemType menuItemType () 
 
 
-### Return Value 
+#### Return Value 
 Menu Item Type of the page
 
-## Method menuItemName 
+### Method menuItemName 
 Gets the Menu Item Name of the page
 
 	 public MenuItemName menuItemName () 
 
 
-### Return Value 
+#### Return Value 
 Menu Item Name of the page
 
-# Class SysAppWorkspace 
+## Class SysAppWorkspace 
 This is the base class of AX mobile workspace. AX mobile workspace classes needs to extend from this class
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -1298,70 +1298,70 @@ This is the base class of AX mobile workspace. AX mobile workspace classes needs
 | workspaceHidden | boolean | Can be used to control whether the workspace is hidden or not.  Checks that the current user have access menu item specified by SysAppWorkspaceSecurityAttribute on the workspace class .  If the attribute is not specified on the class than it always returns false |
 
 
-## Method getEnumValues 
+### Method getEnumValues 
 Called during workspace initilization. Can be used to modify the enum values that are returned to AX mobile
 
 	 public List getEnumValues (EnumName _enumName) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _enumName | EnumName | False | The enum name
 
 
-### Return Value 
+#### Return Value 
 A list of enum value
 
-## Method getWorkspaceMetadata 
+### Method getWorkspaceMetadata 
 Called during workspace initialization. Can be used to modify the workspace metadata
 
 	 public SysAppWorkspaceMetadata getWorkspaceMetadata () 
 
 
-### Return Value 
+#### Return Value 
 An object representing the workspace metadata
 
-## Method onBeginAppJob 
+### Method onBeginAppJob 
 Called before the start of execution of AX mobile job
 
 	 public void onBeginAppJob (SysAppJobRequest _sysAppJobRequest) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _sysAppJobRequest | SysAppJobRequest | False | A class containing job request parameters
 
 
-## Method onEndAppJob 
+### Method onEndAppJob 
 Called after the end of execution of AX mobile job
 
 	 public void onEndAppJob (SysAppJobResponse _sysAppJobResponse) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _sysAppJobResponse | SysAppJobResponse | False | A class containg job response parameters
 
 
-## Method workspaceHidden 
+### Method workspaceHidden 
 Can be used to control whether the workspace is hidden or not.  Checks that the current user have access menu item specified by SysAppWorkspaceSecurityAttribute on the workspace class .  If the attribute is not specified on the class than it always returns false
 
 	 public boolean workspaceHidden () 
 
 
-### Return Value 
+#### Return Value 
 Returns true if the workspace is hidden otherwise false
 
-# Class SysAppWorkspaceAttribute 
+## Class SysAppWorkspaceAttribute 
 Applied on classes that are extended from SysAppWorkspace
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -1371,13 +1371,13 @@ Applied on classes that are extended from SysAppWorkspace
 | WorkspaceHidden | boolean | Gets or sets if the workspace is hidden from designer |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppWorkspaceAttribute class
 
 	 public void new (str _appId, [str _appResourceName], [boolean _workspaceHidden]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -1386,58 +1386,58 @@ Creates a new instance of SysAppWorkspaceAttribute class
 | _workspaceHidden | boolean | True | The workspace is hidden from designer
 
 
-## Method AppId 
+### Method AppId 
 Gets or sets the AppId of the workspace
 
 	 public str AppId ([str _appId]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _appId | str | True | The AppId of the workspace
 
 
-### Return Value 
+#### Return Value 
 The AppId of the workspace
 
-## Method AppResourceName 
+### Method AppResourceName 
 Gets or sets the AOT Resource name which contains the workspace
 
 	 public str AppResourceName ([str _appResourceName]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _appResourceName | str | True | The AOT Resource name which contains the workspace
 
 
-### Return Value 
+#### Return Value 
 The AOT Resource name which contains the workspace
 
-## Method WorkspaceHidden 
+### Method WorkspaceHidden 
 Gets or sets if the workspace is hidden from designer
 
 	 public boolean WorkspaceHidden ([boolean _workspaceHidden]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _workspaceHidden | boolean | True | The workspace hidden
 
 
-### Return Value 
+#### Return Value 
 Whether the workspace is hidden from designer or not
 
-# Class SysAppWorkspaceMetadata 
+## Class SysAppWorkspaceMetadata 
 This class can be used to access and update metadata of an AX mobile workspace
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -1453,13 +1453,13 @@ This class can be used to access and update metadata of an AX mobile workspace
 | workspaceDescription | str | Gets and sets the workspace description |
 
 
-## Method new 
+### Method new 
 
 
 	 public void new (str _appId, [SysAppWorkspaceAttribute _attribute]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -1467,13 +1467,13 @@ This class can be used to access and update metadata of an AX mobile workspace
 | _attribute | SysAppWorkspaceAttribute | True | 
 
 
-## Method addConfig 
+### Method addConfig 
 Adds a custom config to the mobile workspace metadata
 
 	 public void addConfig (str _configName, object _configValue) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -1481,124 +1481,124 @@ Adds a custom config to the mobile workspace metadata
 | _configValue | object | False | An object of a X++ data contract class
 
 
-## Method getPage 
+### Method getPage 
 Returns the page with the pageName provided
 
 	 public SysAppPageMetadata getPage (str _pageName) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _pageName | str | False | A page name
 
 
-### Return Value 
+#### Return Value 
 Returns the pageMetadata if a page with the provided name exist;otherwise null
 
-## Method getPageEnumerator 
+### Method getPageEnumerator 
 Returns a map enumerator that can be used to enumerate workspace pages.  Where key is page name and value is of type SysAppPageMetadata
 
 	 public MapEnumerator getPageEnumerator () 
 
 
-### Return Value 
+#### Return Value 
 A map enumerator
 
-## Method getAction 
+### Method getAction 
 Returns the action with the actionName provided
 
 	 public SysAppActionMetadata getAction (str _actionName) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _actionName | str | False | An action name
 
 
-### Return Value 
+#### Return Value 
 Returns the ActionMetadata if an action with the provided name exist;otherwise null
 
-## Method getActionEnumerator 
+### Method getActionEnumerator 
 Returns a map enumerator that can be used to enumerate workspace actions.  Where key is action name and value is of type SysAppActionMetadata
 
 	 public MapEnumerator getActionEnumerator () 
 
 
-### Return Value 
+#### Return Value 
 A map enumerator
 
-## Method getPageNameForRecordingId 
+### Method getPageNameForRecordingId 
 Returns a pageName if the provided recordingId is used by a workspace page
 
 	 public str getPageNameForRecordingId (str _recordingId) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _recordingId | str | False | A recordingId
 
 
-### Return Value 
+#### Return Value 
 A page name if the supplied recordingId is used by a workspace page;otherwise empty string
 
-## Method getActionNameForRecordingId 
+### Method getActionNameForRecordingId 
 Returns a actionName if the provided recordingId is used by a workspace action
 
 	 public str getActionNameForRecordingId (str _recordingId) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _recordingId | str | False | A recordingId
 
 
-### Return Value 
+#### Return Value 
 An action name if the supplied recordingId is used by a workspace action;otherwise empty string
 
-## Method workspaceTitle 
+### Method workspaceTitle 
 Gets and sets the workspace title
 
 	 public str workspaceTitle ([str _workspaceTitle]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _workspaceTitle | str | True | The workspace title
 
 
-### Return Value 
+#### Return Value 
 The workspace title
 
-## Method workspaceDescription 
+### Method workspaceDescription 
 Gets and sets the workspace description
 
 	 public str workspaceDescription ([str _workspaceDescription]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _workspaceDescription | str | True | The workspace description
 
 
-### Return Value 
+#### Return Value 
 The workspace description
 
-# Class SysAppWorkspaceSecurityAttribute 
+## Class SysAppWorkspaceSecurityAttribute 
 Controls the visiblity based of workspace based on the menu item tied to this attribute
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -1607,13 +1607,13 @@ Controls the visiblity based of workspace based on the menu item tied to this at
 | WorkspaceMenuItemType | MenuItemType | Gets or sets the workspace menu item type for the workspace security attribute |
 
 
-## Method new 
+### Method new 
 Creates a new instance of attribute
 
 	 public void new (MenuItemName _workspaceMenuItemName, [MenuItemType _workspaceMenuItemType]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -1621,42 +1621,42 @@ Creates a new instance of attribute
 | _workspaceMenuItemType | MenuItemType | True | The menu item type
 
 
-## Method WorkspaceMenuItemName 
+### Method WorkspaceMenuItemName 
 Gets or sets the workspace menuItem for the workspace security attribute
 
 	 public MenuItemName WorkspaceMenuItemName ([MenuItemName _workspaceMenuItemName]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _workspaceMenuItemName | MenuItemName | True | The workspace menu item for the workspace security attribute
 
 
-### Return Value 
+#### Return Value 
 The workspace menu item for the workspace security attribute
 
-## Method WorkspaceMenuItemType 
+### Method WorkspaceMenuItemType 
 Gets or sets the workspace menu item type for the workspace security attribute
 
 	 public MenuItemType WorkspaceMenuItemType ([MenuItemType _workspaceMenuItemType]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _workspaceMenuItemType | MenuItemType | True | The workspace menu item type for the workspacesecurity attribute
 
 
-### Return Value 
+#### Return Value 
 The workspace menu item type for the workspace security attribute
 
-# Class SysAppActionAttribute 
+## Class SysAppActionAttribute 
 SysAppActionAttribute used for decorating methods defining actions of workspace
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -1667,13 +1667,13 @@ SysAppActionAttribute used for decorating methods defining actions of workspace
 | crudOperationType | SysAppCRUDOperation | Gets the Crud Operation Type like Create, Update, Delete |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppActionAttribute class
 
 	 public void new ([str _actionTitle], [str _actionDescription], [SysAppCRUDOperation _crudOperationType], [str _pageMethodName]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -1683,46 +1683,46 @@ Creates a new instance of SysAppActionAttribute class
 | _pageMethodName | str | True | Name of the method constructing parent page
 
 
-## Method pageMethodName 
+### Method pageMethodName 
 Gets the get method name which forms the page under which this task resides
 
 	 public str pageMethodName () 
 
 
-### Return Value 
+#### Return Value 
 The page method name which forms the page under which this task resides
 
-## Method actionTitle 
+### Method actionTitle 
 Gets the Action Title
 
 	 public str actionTitle () 
 
 
-### Return Value 
+#### Return Value 
 The action title
 
-## Method actionDescription 
+### Method actionDescription 
 Gets the Action Description
 
 	 public str actionDescription () 
 
 
-### Return Value 
+#### Return Value 
 The page description
 
-## Method crudOperationType 
+### Method crudOperationType 
 Gets the Crud Operation Type like Create, Update, Delete
 
 	 public SysAppCRUDOperation crudOperationType () 
 
 
-### Return Value 
+#### Return Value 
 The Crud Operation Type like Create, Update, Delete
 
-# Class SysAppActionMetadata 
+## Class SysAppActionMetadata 
 This class can be used to access and update AX mobile workspace action metadata
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -1736,134 +1736,134 @@ This class can be used to access and update AX mobile workspace action metadata
 | getControlEnumerator | MapEnumerator | Returns a map enumerator that can be used to enumerate action controls.  Where Key is control name and value is of type SysAppControlMetadata |
 
 
-## Method new 
+### Method new 
 
 
 	 public void new (Microsoft.Dynamics.Client.ServerForm.App.TaskMetadata _taskmetadata) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _taskmetadata | Microsoft.Dynamics.Client.ServerForm.App.TaskMetadata | False | 
 
 
-## Method getActionName 
+### Method getActionName 
 Returns the action name
 
 	 public str getActionName () 
 
 
-### Return Value 
+#### Return Value 
 The action name
 
-## Method actionTitle 
+### Method actionTitle 
 Gets or sets the action title
 
 	 public str actionTitle ([str _actionTitle]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _actionTitle | str | True | The action title
 
 
-### Return Value 
+#### Return Value 
 The action title
 
-## Method actionDescription 
+### Method actionDescription 
 Gets or sets the action description
 
 	 public str actionDescription ([str _actionDescription]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _actionDescription | str | True | The action description
 
 
-### Return Value 
+#### Return Value 
 The action description
 
-## Method actionHidden 
+### Method actionHidden 
 Gets or sets whether action is hidden
 
 	 public boolean actionHidden ([boolean _actionHidden]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _actionHidden | boolean | True | Action hidden value
 
 
-### Return Value 
+#### Return Value 
 True if the action is hidden; otherwise false
 
-## Method actionOrder 
+### Method actionOrder 
 Gets or sets the action order
 
 	 public int actionOrder ([int _actionOrder]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _actionOrder | int | True | The action order
 
 
-### Return Value 
+#### Return Value 
 The action order
 
-## Method getControl 
+### Method getControl 
 Returns the control on the current action having the provided control name
 
 	 public SysAppControlMetadata getControl (str _controlName) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlName | str | False | The control name that will be used to search for control
 
 
-### Return Value 
+#### Return Value 
 An object of SysAppControlMetadata is returned if a control with the provided control name exist on the action;otherwise null
 
-## Method getControlEnumerator 
+### Method getControlEnumerator 
 Returns a map enumerator that can be used to enumerate action controls.  Where Key is control name and value is of type SysAppControlMetadata
 
 	 public MapEnumerator getControlEnumerator () 
 
 
-### Return Value 
+#### Return Value 
 A map enumerator
 
-# Class SysAppAttributeHelper 
+## Class SysAppAttributeHelper 
 SysAppAttributeHelper class for fetching attributes from all the extended class
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
 | getAttributeFromClass | SysAttribute | gets attribute from class |
 
 
-## Method getAttributeFromClass 
+### Method getAttributeFromClass 
 gets attribute from class
 
 	 public SysAttribute getAttributeFromClass (SysDictClass _sysClass, SysAppAttributeType _attributeType) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -1871,23 +1871,23 @@ gets attribute from class
 | _attributeType | SysAppAttributeType | False | Type of attribute like SysAppEntityAttribute
 
 
-# Class SysAppCollectionAttribute 
+## Class SysAppCollectionAttribute 
 SysAppCollectionAttribute used for decorating methods forming list control
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
 | new | void | Constructor |
 
 
-## Method new 
+### Method new 
 Constructor
 
 	 public void new (str _itemContractName, [str _label], [str _relationshipName]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -1896,10 +1896,10 @@ Constructor
 | _relationshipName | str | True | Relationship name. By default the entity name of the list item is used as relationship name
 
 
-# Class SysAppControlMetadata 
+## Class SysAppControlMetadata 
 Represents an X++ wrapper over the managed ControlMetadata object to facilitate.  passing around the object as X++ object
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -1916,13 +1916,13 @@ Represents an X++ wrapper over the managed ControlMetadata object to facilitate.
 | setProperty | void | Sets the control property referenced by the key |
 
 
-## Method new 
+### Method new 
 Creates a new instance of the control metadata
 
 	 public void new (Microsoft.Dynamics.Client.ServerForm.App.ControlMetadata _controlMetadata, [str _baseLanguageId]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -1930,143 +1930,143 @@ Creates a new instance of the control metadata
 | _baseLanguageId | str | True | THe base language
 
 
-## Method getBaseLanguageId 
+### Method getBaseLanguageId 
 Returns the base language id for the app
 
 	 public str getBaseLanguageId () 
 
 
-### Return Value 
+#### Return Value 
 The base language id
 
-## Method getControlName 
+### Method getControlName 
 Returns the control name
 
 	 public str getControlName () 
 
 
-### Return Value 
+#### Return Value 
 The control name
 
-## Method controlLabel 
+### Method controlLabel 
 Gets and sets the control label
 
 	 public str controlLabel ([str _controlLabel]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlLabel | str | True | The control label
 
 
-### Return Value 
+#### Return Value 
 The control label
 
-## Method controlHidden 
+### Method controlHidden 
 Gets and sets whether the control is hidden
 
 	 public boolean controlHidden ([boolean _controlHidden]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlHidden | boolean | True | Control hidden value
 
 
-### Return Value 
+#### Return Value 
 True if the control is hidden;otherwise false
 
-## Method controlOrder 
+### Method controlOrder 
 Gets or sets the control order
 
 	 public int controlOrder ([int _controlOrder]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlOrder | int | True | The control order
 
 
-### Return Value 
+#### Return Value 
 The control order
 
-## Method controlMandatory 
+### Method controlMandatory 
 Gets or sets the control mandatory
 
 	 public boolean controlMandatory ([boolean _controlMandatory]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlMandatory | boolean | True | The control mandatory
 
 
-### Return Value 
+#### Return Value 
 The control mandatory
 
-## Method controlAllowNegative 
+### Method controlAllowNegative 
 Gets or sets the control allow negative
 
 	 public boolean controlAllowNegative ([boolean _controlAllowNegative]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlAllowNegative | boolean | True | The control allow negative
 
 
-### Return Value 
+#### Return Value 
 The control allow negative
 
-## Method controlMaxLength 
+### Method controlMaxLength 
 Gets or sets the control max length
 
 	 public int controlMaxLength ([int _controlMaxLength]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlMaxLength | int | True | The control max length
 
 
-### Return Value 
+#### Return Value 
 The control max length
 
-## Method getProperty 
+### Method getProperty 
 Gets the control property referenced by the key
 
 	 public anytype getProperty (str _key) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _key | str | False | The name of the control property
 
 
-### Return Value 
+#### Return Value 
 The property value
 
-## Method setProperty 
+### Method setProperty 
 Sets the control property referenced by the key
 
 	 public void setProperty (str _key, anytype _value) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -2074,10 +2074,10 @@ Sets the control property referenced by the key
 | _value | anytype | False | The value of the control property
 
 
-# Class SysAppEntityAttribute 
+## Class SysAppEntityAttribute 
 SysAppEntityAttribute used for decorating data contract entitites
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -2086,13 +2086,13 @@ SysAppEntityAttribute used for decorating data contract entitites
 | entityKey | str | Gets the entity key |
 
 
-## Method new 
+### Method new 
 Constructor
 
 	 public void new (str _name, str _entityKey) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -2100,28 +2100,28 @@ Constructor
 | _entityKey | str | False | Name of the entity's key
 
 
-## Method name 
+### Method name 
 Gets the name of the entity
 
 	 public str name () 
 
 
-### Return Value 
+#### Return Value 
 Name of the entity
 
-## Method entityKey 
+### Method entityKey 
 Gets the entity key
 
 	 public str entityKey () 
 
 
-### Return Value 
+#### Return Value 
 Entity key
 
-# Class SysAppEntityContext 
+## Class SysAppEntityContext 
 SysAppEntityContext used for defining entity context
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -2131,13 +2131,13 @@ SysAppEntityContext used for defining entity context
 | entityId | str | Field value on which filter applies |
 
 
-## Method constructFromParams 
+### Method constructFromParams 
 Constructs SysAppEntityContext from entityName and entityId
 
 	 public SysAppEntityContext constructFromParams (str _entityName, str _entityId) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -2145,74 +2145,74 @@ Constructs SysAppEntityContext from entityName and entityId
 | _entityId | str | False | Entity value
 
 
-### Return Value 
+#### Return Value 
 Instance of SysAppEntityContext
 
-## Method constructFromBuffer 
+### Method constructFromBuffer 
 Constructs SysAppEntityContext from table buffer
 
 	 public SysAppEntityContext constructFromBuffer (Common _tableBuffer) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _tableBuffer | Common | False | table buffer forming the entity
 
 
-### Return Value 
+#### Return Value 
 Instance of SysAppEntityContext
 
-## Method entityName 
+### Method entityName 
 Entity name on which filter applies
 
 	 public str entityName ([str _entityName]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _entityName | str | True | Entity name
 
 
-### Return Value 
+#### Return Value 
 Entity name
 
-## Method entityId 
+### Method entityId 
 Field value on which filter applies
 
 	 public str entityId ([str _entityId]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _entityId | str | True | Entity value
 
 
-### Return Value 
+#### Return Value 
 Entity value
 
-# Class SysAppFieldAttribute 
+## Class SysAppFieldAttribute 
 SysAppFieldAttribute used for decorating methods forming bound fields
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
 | new | void | Creates a new instance of SysAppFieldAttribute class |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppFieldAttribute class
 
 	 public void new (str _fieldName, str _label) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -2220,10 +2220,10 @@ Creates a new instance of SysAppFieldAttribute class
 | _label | str | False | Control label
 
 
-# Class SysAppFieldMultiSelectHelper 
+## Class SysAppFieldMultiSelectHelper 
 A helper class to provide helper methods for multi select scenarios used with D365 mobile app
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -2234,13 +2234,13 @@ A helper class to provide helper methods for multi select scenarios used with D3
 | setControlValue | void | A setter to set the multi select control value |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppFieldMultiSelectHelper class
 
 	 public void new (TableId _multiSelectTableId, FieldId _valueFieldId, FormStringControl _multiSelectControl) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -2249,50 +2249,50 @@ Creates a new instance of SysAppFieldMultiSelectHelper class
 | _multiSelectControl | FormStringControl | False | The string control that will be the multi select control
 
 
-## Method getSelectedRecIds 
+### Method getSelectedRecIds 
 Returns a container of recIds of the records that were selected
 
 	 public container getSelectedRecIds () 
 
 
-### Return Value 
+#### Return Value 
 A container of recOds for the records that were selected
 
-## Method getSelectedValues 
+### Method getSelectedValues 
 Returns a container of selected values
 
 	 public container getSelectedValues () 
 
 
-### Return Value 
+#### Return Value 
 A container of selected values
 
-## Method getSelectedRecords 
+### Method getSelectedRecords 
 Returns a buffer that contain all the selected records..  The buffer is marked as temp..  Later a while-Select can be used to iterate through all the records
 
 	 public Common getSelectedRecords () 
 
 
-### Return Value 
+#### Return Value 
 A buffer containing all the selected records
 
-## Method setControlValue 
+### Method setControlValue 
 A setter to set the multi select control value
 
 	 public void setControlValue (str _value) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _value | str | False | A colon seperated value that will be used by SysAppFieldMultiSelectHelper
 
 
-# Class SysAppFilterContext 
+## Class SysAppFilterContext 
 SysAppFilterContext class which holds context values
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -2303,80 +2303,80 @@ SysAppFilterContext class which holds context values
 | addFilterFieldValue | void | Adds filter field value |
 
 
-## Method entityName 
+### Method entityName 
 Entity name on which filter applies
 
 	 public str entityName ([str _entityName]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _entityName | str | True | Entity name on which filter applies
 
 
-### Return Value 
+#### Return Value 
 Entity name on which filter applies
 
-## Method filterFieldName 
+### Method filterFieldName 
 Field name on which filter applies
 
 	 public str filterFieldName ([str _filterFieldName]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _filterFieldName | str | True | Field name on which filter applies
 
 
-### Return Value 
+#### Return Value 
 Field name on which filter applies
 
-## Method filterFieldValueList 
+### Method filterFieldValueList 
 Gets the list of filter field values based on which filter happens
 
 	 public List filterFieldValueList () 
 
 
-### Return Value 
+#### Return Value 
 List of filter field values based on which filter happens
 
-## Method operator 
+### Method operator 
 Opertor like eq, contains, etc based on which result will be fetched
 
 	 public str operator ([str _operator]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _operator | str | True | Opertor like eq, contains, etc based on which result will be fetched
 
 
-### Return Value 
+#### Return Value 
 Opertor like eq, contains, etc based on which result will be fetched
 
-## Method addFilterFieldValue 
+### Method addFilterFieldValue 
 Adds filter field value
 
 	 public void addFilterFieldValue ( _filterFieldValueList) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _filterFieldValueList |  | False | Filter field values based on which filter happens
 
 
-# Class SysAppLookUpAttribute 
+## Class SysAppLookUpAttribute 
 SysAppPageAttribute used for decorating pages that is also lookup page
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -2385,13 +2385,13 @@ SysAppPageAttribute used for decorating pages that is also lookup page
 | valueFieldName | str | Gets the value field name of lookup control |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppLookUpAttribute class
 
 	 public void new (str _displayFieldName, str _valueFieldName) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -2399,28 +2399,28 @@ Creates a new instance of SysAppLookUpAttribute class
 | _valueFieldName | str | False | Lookup value field. Name of control formed by root data contract constructing lookup page
 
 
-## Method displayFieldName 
+### Method displayFieldName 
 Gets the display field name of lookup control
 
 	 public str displayFieldName () 
 
 
-### Return Value 
+#### Return Value 
 The display field name of lookup control
 
-## Method valueFieldName 
+### Method valueFieldName 
 Gets the value field name of lookup control
 
 	 public str valueFieldName () 
 
 
-### Return Value 
+#### Return Value 
 The value field name of lookup control
 
-# Class SysAppLookupFieldAttribute 
+## Class SysAppLookupFieldAttribute 
 SysAppLookupFieldAttribute used for decorating look up fields of action
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -2428,32 +2428,32 @@ SysAppLookupFieldAttribute used for decorating look up fields of action
 | entityName | str | Gets the name of the entity with which lookup page is related |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppLookupFieldAttribute class
 
 	 public void new ( _name) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _name |  | False | Name of the entity with which lookup page is related
 
 
-## Method entityName 
+### Method entityName 
 Gets the name of the entity with which lookup page is related
 
 	 public str entityName () 
 
 
-### Return Value 
+#### Return Value 
 Name of the entity
 
-# Class SysAppPageAttribute 
+## Class SysAppPageAttribute 
 SysAppPageAttribute used for decorating methods defining page of workspace
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -2462,13 +2462,13 @@ SysAppPageAttribute used for decorating methods defining page of workspace
 | pageDescription | str | Gets the Page Description |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppPageAttribute class
 
 	 public void new ([str _pageTitle], [str _pageDescription]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -2476,28 +2476,28 @@ Creates a new instance of SysAppPageAttribute class
 | _pageDescription | str | True | The page description
 
 
-## Method pageTitle 
+### Method pageTitle 
 Gets the Page Title of the page
 
 	 public str pageTitle () 
 
 
-### Return Value 
+#### Return Value 
 The page title
 
-## Method pageDescription 
+### Method pageDescription 
 Gets the Page Description
 
 	 public str pageDescription () 
 
 
-### Return Value 
+#### Return Value 
 The page description
 
-# Class SysAppPageMetadata 
+## Class SysAppPageMetadata 
 This class can be used to access and update AX mobile workspace page metadata
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -2511,167 +2511,167 @@ This class can be used to access and update AX mobile workspace page metadata
 | getControlEnumerator | MapEnumerator | Returns a map enumerator that can be used to enumerate page controls.  Where Key is control name and value is of type SysAppControlMetadata |
 
 
-## Method new 
+### Method new 
 
 
 	 public void new (Microsoft.Dynamics.Client.ServerForm.App.PageMetadata _pageMetadata) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _pageMetadata | Microsoft.Dynamics.Client.ServerForm.App.PageMetadata | False | 
 
 
-## Method getPageName 
+### Method getPageName 
 Returns the page name
 
 	 public str getPageName () 
 
 
-### Return Value 
+#### Return Value 
 The page name
 
-## Method pageTitle 
+### Method pageTitle 
 Gets and sets the page title
 
 	 public str pageTitle ([str _pageTitle]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _pageTitle | str | True | The page title
 
 
-### Return Value 
+#### Return Value 
 The page title
 
-## Method pageDescription 
+### Method pageDescription 
 Gets or sets the page description
 
 	 public str pageDescription ([str _pageDescription]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _pageDescription | str | True | The page description
 
 
-### Return Value 
+#### Return Value 
 The page description>
 
-## Method pageHidden 
+### Method pageHidden 
 Gets and sets whether the page is hidden in the workspace
 
 	 public boolean pageHidden ([boolean _pageHidden]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _pageHidden | boolean | True | page hidden value
 
 
-### Return Value 
+#### Return Value 
 True if the current page is hidden in workspace; otherwise false
 
-## Method pageOrder 
+### Method pageOrder 
 Gets or sets the page order
 
 	 public int pageOrder ([int _pageOrder]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _pageOrder | int | True | The page order
 
 
-### Return Value 
+#### Return Value 
 The page order
 
-## Method getControl 
+### Method getControl 
 Returns the control on the current page having the provided control name
 
 	 public SysAppControlMetadata getControl (str _controlName) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlName | str | False | The control name that will be used to search for control
 
 
-### Return Value 
+#### Return Value 
 An object of SysAppControlMetadata is returned if a control with the provided control name exist on the page;otherwise null
 
-## Method getControlEnumerator 
+### Method getControlEnumerator 
 Returns a map enumerator that can be used to enumerate page controls.  Where Key is control name and value is of type SysAppControlMetadata
 
 	 public MapEnumerator getControlEnumerator () 
 
 
-### Return Value 
+#### Return Value 
 A map enumerator
 
-# Class SysAppProjectionAttribute 
+## Class SysAppProjectionAttribute 
 SysAppProjectionAttribute used for decorating methods forming unbound fields
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
 | new | void | Creates a new instance of SysAppControlMetadataAttributes class |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppControlMetadataAttributes class
 
 	 public void new (str _label) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _label | str | False | Control label
 
 
-# Class SysAppRelationalAttribute 
+## Class SysAppRelationalAttribute 
 SysAppRelationalAttribute used for decorating reference controls
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
 | new | void | Constructor |
 
 
-## Method new 
+### Method new 
 Constructor
 
 	 public void new ([str _name]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _name | str | True | Property name of the referenced entity
 
 
-# Class SysAppRequestParams 
+## Class SysAppRequestParams 
 Request class for X++ methods generating details and action pages
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -2679,42 +2679,42 @@ Request class for X++ methods generating details and action pages
 | filterContext | List | List of SysAppFilterContext for filter contexts |
 
 
-## Method entityContext 
+### Method entityContext 
 Entity context of the request
 
 	 public SysAppEntityContext entityContext ([SysAppEntityContext _entityContext]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _entityContext | SysAppEntityContext | True | Entity context of the request
 
 
-### Return Value 
+#### Return Value 
 Entity context of the request
 
-## Method filterContext 
+### Method filterContext 
 List of SysAppFilterContext for filter contexts
 
 	 public List filterContext ([List _filterContext]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _filterContext | List | True | List of SysAppFilterContext for filter contexts of page
 
 
-### Return Value 
+#### Return Value 
 List of SysAppFilterContext for filter contexts of page
 
-# Class SysAppResponse 
+## Class SysAppResponse 
 SysAppResponse class.  This class holds the response object for generated pages and actions
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -2728,101 +2728,101 @@ SysAppResponse class.  This class holds the response object for generated pages 
 | addCommit | void | Adds commits |
 
 
-## Method new 
+### Method new 
 
 
 	 public void new () 
 
 
-## Method jobId 
+### Method jobId 
 Job Id of the request
 
 	 public str jobId () 
 
 
-### Return Value 
+#### Return Value 
 jobid of the request
 
-## Method data 
+### Method data 
 Data of the page
 
 	 public Microsoft.Dynamics.Client.ServerForm.App.CompositeData data ([Microsoft.Dynamics.Client.ServerForm.App.CompositeData _data]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _data | Microsoft.Dynamics.Client.ServerForm.App.CompositeData | True | Data of the page
 
 
-### Return Value 
+#### Return Value 
 Data of the page
 
-## Method failedInAppCall 
+### Method failedInAppCall 
 Data of the page
 
 	 public boolean failedInAppCall ([boolean _failedInAppCall]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _failedInAppCall | boolean | True | Sets to true if it fails in calling application code
 
 
-### Return Value 
+#### Return Value 
 True when fails in calling application code
 
-## Method commits 
+### Method commits 
 Commits after task is completed
 
 	 public List commits () 
 
 
-### Return Value 
+#### Return Value 
 Commits after task is completed
 
-## Method messages 
+### Method messages 
 Job Id of the request
 
 	 public List messages () 
 
 
-### Return Value 
+#### Return Value 
 Messages after task is completed
 
-## Method addMessage 
+### Method addMessage 
 Adds message
 
 	 public void addMessage (SysAppResponseMessage _message) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _message | SysAppResponseMessage | False | message as SysAppResponseMessage object
 
 
-## Method addCommit 
+### Method addCommit 
 Adds commits
 
 	 public void addCommit (SysAppEntityContext _entityContext) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _entityContext | SysAppEntityContext | False | Entity context containing entity name and entity id of the entity that is commited
 
 
-# Class SysAppResponseMessage 
+## Class SysAppResponseMessage 
 SysAppResponseMessage class for response messages
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -2831,13 +2831,13 @@ SysAppResponseMessage class for response messages
 | type | SysAppMessageType | Gets the message type: info, error , warning |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppResponseMessage class
 
 	 public void new (str _text, [SysAppMessageType _type]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -2845,28 +2845,28 @@ Creates a new instance of SysAppResponseMessage class
 | _type | SysAppMessageType | True | Message Type: info, error , warning
 
 
-## Method text 
+### Method text 
 Gets the message text
 
 	 public str text () 
 
 
-### Return Value 
+#### Return Value 
 The message text
 
-## Method type 
+### Method type 
 Gets the message type: info, error , warning
 
 	 public SysAppMessageType type () 
 
 
-### Return Value 
+#### Return Value 
 The message type: info, error , warning
 
-# Class SysAppSecurityAttribute 
+## Class SysAppSecurityAttribute 
 SysAppSecurityAttribute used for decorating methods forming pages and actions.  specifies security attribute of page or action
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -2875,13 +2875,13 @@ SysAppSecurityAttribute used for decorating methods forming pages and actions.  
 | menuItemName | MenuItemName | Gets the Menu Item Name of the page |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppSecurityAttribute class.  This will help in checking if the user logged in has access to the specified menu item and menu item type
 
 	 public void new ([MenuItemName _menuItemName], [MenuItemType _menuItemType]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -2889,28 +2889,28 @@ Creates a new instance of SysAppSecurityAttribute class.  This will help in chec
 | _menuItemType | MenuItemType | True | Menu Item Type of the page like action, display or output
 
 
-## Method menuItemType 
+### Method menuItemType 
 Gets the Menu Item Type of the page
 
 	 public MenuItemType menuItemType () 
 
 
-### Return Value 
+#### Return Value 
 Menu Item Type of the page
 
-## Method menuItemName 
+### Method menuItemName 
 Gets the Menu Item Name of the page
 
 	 public MenuItemName menuItemName () 
 
 
-### Return Value 
+#### Return Value 
 Menu Item Name of the page
 
-# Class SysAppWorkspace 
+## Class SysAppWorkspace 
 This is the base class of AX mobile workspace. AX mobile workspace classes needs to extend from this class
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -2921,70 +2921,70 @@ This is the base class of AX mobile workspace. AX mobile workspace classes needs
 | workspaceHidden | boolean | Can be used to control whether the workspace is hidden or not.  Checks that the current user have access menu item specified by SysAppWorkspaceSecurityAttribute on the workspace class .  If the attribute is not specified on the class than it always returns false |
 
 
-## Method getEnumValues 
+### Method getEnumValues 
 Called during workspace initilization. Can be used to modify the enum values that are returned to AX mobile
 
 	 public List getEnumValues (EnumName _enumName) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _enumName | EnumName | False | The enum name
 
 
-### Return Value 
+#### Return Value 
 A list of enum value
 
-## Method getWorkspaceMetadata 
+### Method getWorkspaceMetadata 
 Called during workspace initialization. Can be used to modify the workspace metadata
 
 	 public SysAppWorkspaceMetadata getWorkspaceMetadata () 
 
 
-### Return Value 
+#### Return Value 
 An object representing the workspace metadata
 
-## Method onBeginAppJob 
+### Method onBeginAppJob 
 Called before the start of execution of AX mobile job
 
 	 public void onBeginAppJob (SysAppJobRequest _sysAppJobRequest) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _sysAppJobRequest | SysAppJobRequest | False | A class containing job request parameters
 
 
-## Method onEndAppJob 
+### Method onEndAppJob 
 Called after the end of execution of AX mobile job
 
 	 public void onEndAppJob (SysAppJobResponse _sysAppJobResponse) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _sysAppJobResponse | SysAppJobResponse | False | A class containg job response parameters
 
 
-## Method workspaceHidden 
+### Method workspaceHidden 
 Can be used to control whether the workspace is hidden or not.  Checks that the current user have access menu item specified by SysAppWorkspaceSecurityAttribute on the workspace class .  If the attribute is not specified on the class than it always returns false
 
 	 public boolean workspaceHidden () 
 
 
-### Return Value 
+#### Return Value 
 Returns true if the workspace is hidden otherwise false
 
-# Class SysAppWorkspaceAttribute 
+## Class SysAppWorkspaceAttribute 
 Applied on classes that are extended from SysAppWorkspace
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -2994,13 +2994,13 @@ Applied on classes that are extended from SysAppWorkspace
 | WorkspaceHidden | boolean | Gets or sets if the workspace is hidden from designer |
 
 
-## Method new 
+### Method new 
 Creates a new instance of SysAppWorkspaceAttribute class
 
 	 public void new (str _appId, [str _appResourceName], [boolean _workspaceHidden]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -3009,58 +3009,58 @@ Creates a new instance of SysAppWorkspaceAttribute class
 | _workspaceHidden | boolean | True | The workspace is hidden from designer
 
 
-## Method AppId 
+### Method AppId 
 Gets or sets the AppId of the workspace
 
 	 public str AppId ([str _appId]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _appId | str | True | The AppId of the workspace
 
 
-### Return Value 
+#### Return Value 
 The AppId of the workspace
 
-## Method AppResourceName 
+### Method AppResourceName 
 Gets or sets the AOT Resource name which contains the workspace
 
 	 public str AppResourceName ([str _appResourceName]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _appResourceName | str | True | The AOT Resource name which contains the workspace
 
 
-### Return Value 
+#### Return Value 
 The AOT Resource name which contains the workspace
 
-## Method WorkspaceHidden 
+### Method WorkspaceHidden 
 Gets or sets if the workspace is hidden from designer
 
 	 public boolean WorkspaceHidden ([boolean _workspaceHidden]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _workspaceHidden | boolean | True | The workspace hidden
 
 
-### Return Value 
+#### Return Value 
 Whether the workspace is hidden from designer or not
 
-# Class SysAppWorkspaceMetadata 
+## Class SysAppWorkspaceMetadata 
 This class can be used to access and update metadata of an AX mobile workspace
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -3076,13 +3076,13 @@ This class can be used to access and update metadata of an AX mobile workspace
 | workspaceDescription | str | Gets and sets the workspace description |
 
 
-## Method new 
+### Method new 
 
 
 	 public void new (str _appId, [SysAppWorkspaceAttribute _attribute]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -3090,13 +3090,13 @@ This class can be used to access and update metadata of an AX mobile workspace
 | _attribute | SysAppWorkspaceAttribute | True | 
 
 
-## Method addConfig 
+### Method addConfig 
 Adds a custom config to the mobile workspace metadata
 
 	 public void addConfig (str _configName, object _configValue) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -3104,124 +3104,124 @@ Adds a custom config to the mobile workspace metadata
 | _configValue | object | False | An object of a X++ data contract class
 
 
-## Method getPage 
+### Method getPage 
 Returns the page with the pageName provided
 
 	 public SysAppPageMetadata getPage (str _pageName) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _pageName | str | False | A page name
 
 
-### Return Value 
+#### Return Value 
 Returns the pageMetadata if a page with the provided name exist;otherwise null
 
-## Method getPageEnumerator 
+### Method getPageEnumerator 
 Returns a map enumerator that can be used to enumerate workspace pages.  Where key is page name and value is of type SysAppPageMetadata
 
 	 public MapEnumerator getPageEnumerator () 
 
 
-### Return Value 
+#### Return Value 
 A map enumerator
 
-## Method getAction 
+### Method getAction 
 Returns the action with the actionName provided
 
 	 public SysAppActionMetadata getAction (str _actionName) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _actionName | str | False | An action name
 
 
-### Return Value 
+#### Return Value 
 Returns the ActionMetadata if an action with the provided name exist;otherwise null
 
-## Method getActionEnumerator 
+### Method getActionEnumerator 
 Returns a map enumerator that can be used to enumerate workspace actions.  Where key is action name and value is of type SysAppActionMetadata
 
 	 public MapEnumerator getActionEnumerator () 
 
 
-### Return Value 
+#### Return Value 
 A map enumerator
 
-## Method getPageNameForRecordingId 
+### Method getPageNameForRecordingId 
 Returns a pageName if the provided recordingId is used by a workspace page
 
 	 public str getPageNameForRecordingId (str _recordingId) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _recordingId | str | False | A recordingId
 
 
-### Return Value 
+#### Return Value 
 A page name if the supplied recordingId is used by a workspace page;otherwise empty string
 
-## Method getActionNameForRecordingId 
+### Method getActionNameForRecordingId 
 Returns a actionName if the provided recordingId is used by a workspace action
 
 	 public str getActionNameForRecordingId (str _recordingId) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _recordingId | str | False | A recordingId
 
 
-### Return Value 
+#### Return Value 
 An action name if the supplied recordingId is used by a workspace action;otherwise empty string
 
-## Method workspaceTitle 
+### Method workspaceTitle 
 Gets and sets the workspace title
 
 	 public str workspaceTitle ([str _workspaceTitle]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _workspaceTitle | str | True | The workspace title
 
 
-### Return Value 
+#### Return Value 
 The workspace title
 
-## Method workspaceDescription 
+### Method workspaceDescription 
 Gets and sets the workspace description
 
 	 public str workspaceDescription ([str _workspaceDescription]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _workspaceDescription | str | True | The workspace description
 
 
-### Return Value 
+#### Return Value 
 The workspace description
 
-# Class SysAppWorkspaceSecurityAttribute 
+## Class SysAppWorkspaceSecurityAttribute 
 Controls the visiblity based of workspace based on the menu item tied to this attribute
 
-## Methods
+### Methods
 
 | Method name | Returns | Description |
 | -- | -- | -- |
@@ -3230,13 +3230,13 @@ Controls the visiblity based of workspace based on the menu item tied to this at
 | WorkspaceMenuItemType | MenuItemType | Gets or sets the workspace menu item type for the workspace security attribute |
 
 
-## Method new 
+### Method new 
 Creates a new instance of attribute
 
 	 public void new (MenuItemName _workspaceMenuItemName, [MenuItemType _workspaceMenuItemType]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
@@ -3244,34 +3244,34 @@ Creates a new instance of attribute
 | _workspaceMenuItemType | MenuItemType | True | The menu item type
 
 
-## Method WorkspaceMenuItemName 
+### Method WorkspaceMenuItemName 
 Gets or sets the workspace menuItem for the workspace security attribute
 
 	 public MenuItemName WorkspaceMenuItemName ([MenuItemName _workspaceMenuItemName]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _workspaceMenuItemName | MenuItemName | True | The workspace menu item for the workspace security attribute
 
 
-### Return Value 
+#### Return Value 
 The workspace menu item for the workspace security attribute
 
-## Method WorkspaceMenuItemType 
+### Method WorkspaceMenuItemType 
 Gets or sets the workspace menu item type for the workspace security attribute
 
 	 public MenuItemType WorkspaceMenuItemType ([MenuItemType _workspaceMenuItemType]) 
 
 
-### Parameters
+#### Parameters
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _workspaceMenuItemType | MenuItemType | True | The workspace menu item type for the workspacesecurity attribute
 
 
-### Return Value 
+#### Return Value 
 The workspace menu item type for the workspace security attribute
