@@ -19,6 +19,7 @@
 #### [AX 2012 features not yet implemented](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Features not implemented in on-premises deployments](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Lifecycle policy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Operations platform update 10 (August 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-10?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Finance and Operations, Enterprise edition July 2017 update](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Operations platform update 9 (July 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-9?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Operations platform update 8 (June 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-8?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
