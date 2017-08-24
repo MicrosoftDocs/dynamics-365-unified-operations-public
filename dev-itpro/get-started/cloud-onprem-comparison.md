@@ -43,6 +43,10 @@ The following table shows whether each feature is available in:
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
 | Compliance and certifications | SOC 1 Type 1 certification| Yes | No |
+| Cost accounting | | Yes | ? |
+| | Cost accounting Power BI reports| Yes | No |
+| | Cost control workspace for Mobile app| Yes | No |
+| | Cost accounting Content pack for Power BI| Yes | No |
 | Cost management| | | |
 | Data management and integration| | | |
 | | Choose to truncate data in the entity before data is imported via files or data packages | Yes | Yes |
@@ -50,23 +54,11 @@ The following table shows whether each feature is available in:
 | | Configuration data project templates| Yes | Yes |
 | | Configuration data projects| Yes | Yes |
 | | Configuration-driven extension| Yes | No |
-| | Configure cross-company data sharing by replicating reference and group data between multiple companies in the same Dynamics AX deployment. | Yes | Yes |
-| | Export data to your own data warehouse| Yes | Not yet implemented |
-| | Enable the export of incremental updates to a data entity. | Yes | Not yet implemented |
+| | Configure cross-company data sharing by replicating reference and group data between multiple companies in the same deployment. | Yes | Yes |
+| | Export data to your own data warehouse| Yes | No |
+| | Enable the export of incremental updates to a data entity | Yes | No |
 | Document management| | Yes| Yes |
 | Financial management| Includes all Financial management features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
-| | Accounts payable | Yes | Yes |
-| | Accounts receivable | Yes | Yes |
-| | Budgeting| Yes | Yes |
-| | Cash and bank management| Yes | Yes |
-| | Cost accounting| Yes | ? |
-| | Cost accounting Power BI reports| Yes | No |
-| | Cost control workspace for Mobile app| Yes | No |
-| | Cost accounting Content pack for Power BI| Yes | No |
-| | Expense management| Yes | Yes |
-| | Fixed assets| Yes | Yes |
-| | General ledger| Yes | Yes |
-| | Public sector| Yes | Yes |
 | Help| | | |
 | | Retrieve help topics in the client | Yes | No |
 | | Task guides for help| Yes | No |
