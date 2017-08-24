@@ -154,7 +154,7 @@ The following table shows whether each feature is available in:
 | | Build your own data warehouse and incrementally export entities| Yes | Yes |
 | | Enable withdrawal kanban for warehouse processes| Yes | Yes |
 | | Item and warehouse migration process to use advanced warehouse management| Yes | Yes |
-| | Mobile warehouse app| Yes | Yes |
+| | Mobile warehouse app| Yes | No |
 | | Movement of inventory with associated work in Warehouse management| Yes | Yes |
 | | Piece picking confirmation| Yes | Yes |
 | | Product work confirmation for cluster picking| Yes | Yes |
