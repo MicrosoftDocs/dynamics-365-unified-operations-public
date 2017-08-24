@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Vendor rebates examples
+title: Vendor rebates
 description: This topic provides an overview of the most common tasks that you might want to perform when you work with vendor rebates. Vendor rebates help companies better manage their supplier rebate programs by automating tasks that are required in order to administer, track, and claim rebates that are earned.
-author: [author's GitHub alias]
+author: BibiSp
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: [Pick one: Application User/Developer/IT Pro]
+# ms.search.form:  TAMVendRebateAgreement
+audience: Application User
 # ms.devlang: 
-# ms.reviewer: [Content Strategist microsoft alias]
-ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+# ms.reviewer: bis
+ms.search.scope: Core, Operations, Unified operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global for most topics. Set Country/Region name for localizations]
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: [author's Microsoft alias]
-ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
-ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+ms.author: omulvad
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 2012 
 ---
 
 # Vendor rebates
@@ -83,7 +83,7 @@ On the agreement lines, you can specify the vendor rebate agreement in more deta
     - **Net** – The rebate is calculated based on the net price of the item (that is, the price after other discounts have been applied).
 
 - The **Rebate program accrual account** and **Rebate program expense account** fields specify account numbers that will receive accrued rebate amounts during the intermediate stage between approval and processing.
-- When the **Approval required** check box is selected, the rebate claim must be approved before it can be accrued or paid out.
+- When the **Approval required** option is set to **Yes**, the rebate claim must be approved before it can be accrued or paid out.
 - The **Rebate line break type** field specifies the basis for the rebates.
 
     - **Quantity** – The rebates are volume-based.
@@ -116,7 +116,7 @@ Rebate claims that are generated represent the future payments that can be expec
 When a claim is generated, its status is set to **To be calculated** if the rebate is granted on a cumulative basis or **Calculated** if the rebate is granted per invoice. If the status of a claim is **To be calculated**, the claim must go through a calculation process that is handled by the Cumulate function. Only claims that have a status of **Calculated** can be included in the approval process.
 
 > [!NOTE]
-> If the **Approval required** check box on a vendor rebate agreement is cleared, any claims that are generated will have a status of **Approved**. The approval is mandatory for claims that are granted on a cumulative basis.
+> If the **Approval required** option on a vendor rebate agreement is set to **No**, any claims that are generated will have a status of **Approved**. The approval is mandatory for claims that are granted on a cumulative basis.
 
 ### Approve claims, and view postings and invoice details
 When claims have been approved, they can be processed by Accounts payable (A/P). A credit memo (vendor invoice) for the rebate claim amount is automatically generated. The credit can then be added to the vendor balance, and the A/P team can include it in the regular settlement process.
