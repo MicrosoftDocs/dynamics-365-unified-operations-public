@@ -97,12 +97,7 @@ The following table shows whether each feature is available in:
 | Mobile  | | | |
 | | Mobile framework| Yes | Yes |
 | | Dynamics 365 for Unified Operations mobile app and workspaces | Yes | Yes |
-| Office integration| | | |
-| | Open in Excel| Yes | Yes |
-| | Static export to Excel| Yes | Yes |
-| | Skype support| Yes | Yes |
-| | Word document generation| Yes | Yes |
-| | Email sending | Yes | Yes |
+| Office integration| | Yes | Yes |
 | Organization administration | | | |
 | | Case management| Yes | Yes |
 | | Case management for production and quality orders| Yes | Yes |
@@ -160,7 +155,7 @@ The following table shows whether each feature is available in:
 | | Support for Right to Left languages| Yes | Yes |
 | | Task recorder | Yes | Yes |
 | | Task recorder - Save or load task recordings from the BPM library| Yes | No |
-| Finances and Operations support | | | |
+| Support | | | |
 | | Ideas portal| Yes | ? |
 | | Access to Support via the Help & Support menu| Yes | No |
 
