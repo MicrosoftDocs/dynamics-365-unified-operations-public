@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Number sequence overview
+title: Number sequences
 description: Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers.
 author: MargoC
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Number sequence overview
+# Number sequences
 
 [!include[banner](../includes/banner.md)]
 
