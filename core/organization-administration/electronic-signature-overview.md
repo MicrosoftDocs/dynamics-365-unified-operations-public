@@ -84,9 +84,7 @@ When you request a certificate, a public key and a private key are created for y
 
 To request a certificate, on the **Options** page, on the **Accounts** tab, click **Get certificate**. 
 
-You must enter and confirm the password that you will use for signing. The password is used to protect your private key and authorize the use of your certificate. 
-
-This password isn't stored in the database, and it isn't available to anyone else, not even to the Finance and Operations administrator. 
+You must enter and confirm the password that you will use for signing. The password is used to protect your private key and authorize the use of your certificate. This password isn't stored in the database, and it isn't available to anyone else, not even to the Finance and Operations administrator. 
 
 If you forget the password that is connected with your certificate, that certificate must be reset. If you reset the certificate, you don't affect documents that you signed by using the previous certificate. To reset the certificate, on the **Options** page, click **Reset certificate**.
 
