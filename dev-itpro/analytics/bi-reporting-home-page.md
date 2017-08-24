@@ -79,7 +79,7 @@ Electronic reporting (ER) is the tool to use to configure electronic document fo
 
 [![electronic-reporting-example](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png) 
 
-Characteristics and capabilities of ER:
+ER has the following characteristics and capabilities:
 - It's a perfect tool for producing TEXT, XML, and OPENXML worksheet formats.
 - The tooling is designed for business users familiar with Excel-based formulas.
 - It's highly-adaptable to adhere to changes in regulatory requirements.
