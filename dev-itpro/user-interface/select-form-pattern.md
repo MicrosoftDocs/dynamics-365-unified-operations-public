@@ -96,15 +96,6 @@ Although this approach is less useful than looking at the form metadata, you ca
 
 Right-click the **Design** node of the target form, select **Apply pattern**, and then click the pattern to apply.
 
-## Handling errors
-
-Information about the pattern appears on the **Pattern** tab. To learn about the pattern structure, click the control names on the **Pattern** tab to navigate the pattern structure. When you save or build the form, the pattern errors appear in the error list in Visual Studio.
-
--   Double-click an error to go to the control that the error was reported for, if the control exists.
--   If a control is missing, follow one of these steps:
-    -   If the control already exists on the form but is in a different place, move the control to the correct place, as indicated by the pattern.
-    -   If the control doesn't exist, create the control.
-
 ## Form pattern reference guide
 ### List of classes of top-level form patterns
 
