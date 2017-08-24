@@ -208,37 +208,7 @@ The following table shows whether each feature is available in:
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
 | All Talent areas | All Talent features | Yes | No |
-| Allow a project resource to delegate timesheet entry and submission to any user |   | Yes | No |
-| | Apply for any internal job posting through employee self-service | Yes | No |
-| | Benefits processing history| Yes | No |
-| | Compensation and benefits Power BI reports | Yes |  No  |
-| | Competency and development reports | Yes | No |
-| | Complete access to historical compensation data| Yes | No |
-| | Distribute tasks where it makes sense and increase efficiency| Yes | No |
-| | Employee and manager self-service| Yes | No |
-| | Enable managers to work on behalf of employees | Yes | No |
-| | Enhanced analytics for Human Capital Management| Yes | No |
-| | Filter employee lists automatically| Yes | No |
-| | Human Resources Manager Power BI reports| Yes | No |
-| | Integration to Talent Attract| Yes | No |
-| | Integration to Talent onboarding| Yes | No |
-| | New termination rules| Yes | No |
-| | New workflows across employee self-service and manager self-service| Yes | No |
-| | New workflows enabled in Human Resources| Yes | ? |
-| | Onboarding | Yes | No |
-| | Pre-employment access| Yes | No |
-| | Recruiting Power BI reports | Yes | No |
-| | Redesigned employee self-service | Yes | No |
-| | Single-click employment verification for all employees| Yes | No |
-| | Support for a worker to be a project resource in multiple legal entities at the same time| Yes | No |
-| | Talent management| Yes | No |
-| | Transitioning employees and contractors| Yes | No |
-| | View a comprehensive list of changes across employees, positons, and jobs | Yes | No |
-| | Track additional information about employees, jobs, positions, and benefits| Yes | No |
-| | Training courses| Yes | No |
-| | Training Power BI reports | Yes | No |
-| | Retrieve help topics in the client | Yes | No |
-| | Task guides for help| Yes | No |
+
 
 ## Development and administration
 
