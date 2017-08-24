@@ -257,7 +257,7 @@ The following table shows whether each feature is available in:
 | | Compliance properties on table fields| Yes | Yes |
 | | Validating events on form data sources and form data source fields| Yes | Yes |
 | | Deployment| Yes | ? |
-| | Development in Visual Studio | Yes | Yes |
+| Development | | Yes | Yes |
 | Extensibility| | Yes | Yes |
 | | All extensibility features are supported in Cloud and on-premises | | |
 | Platform | | | |
