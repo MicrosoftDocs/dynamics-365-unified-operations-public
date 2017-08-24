@@ -37,6 +37,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic points you to resources that you can use to learn more about the business intelligence and reporting tools available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
+## Get started
+- [Information access and reporting](information-access-reporting.md)
+- [Reporting options](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
+
 Working with aggregate data
 ---------------------------
 
@@ -82,5 +86,9 @@ ER has the following characteristics and capabilities:
 - Component versioning is available to manage draft definitions.
 
 For more information about the Electronic reporting tool, see [Electronic reporting overview](general-electronic-reporting.md). 
+
+
+## Technical reference reports
+[Technical refernce reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)
 
 
