@@ -534,7 +534,7 @@
 #### Analysis and reporting
 ##### [Configure cost control workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Configure cost control workspace parameters (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/configure-cost-control-workspace-parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Use cost control workspace for reporting (Video)](https://youtu.be/-HKHYdClvx8)
+##### [Cost control mobile workspace (Video)](https://youtu.be/imsuTg8rUVk)
 ##### [Export entries to Excel (Video)](https://youtu.be/-HKHYdClvx8)
 ##### [Use content pack for Microsoft Power BI reporting](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Understand access list security and RLS in Microsoft Power BI](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
