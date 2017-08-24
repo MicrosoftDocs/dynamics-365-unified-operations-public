@@ -61,15 +61,10 @@ The following table shows whether each feature is available in:
 | | Accounts receivable | Yes | Yes |
 | | Budgeting| Yes | Yes |
 | | Cash and bank management| Yes | Yes |
-| | Cost accounting | | |
-| |   Allocation bases| Yes | Yes |
-| |   Cost accounting| Yes | ? |
-| |   Cost accounting Power BI reports| Yes | No |
-| |   Cost control workspace for Mobile app| Yes | No |
-| |   Cross legal entities | Yes | Yes |
-| |   Content pack for Power BI| Yes | No |
-| |   Get started wizard| Yes | Yes |
-| |   Ledger administration workspace| Yes | Yes |
+| | Cost accounting| Yes | ? |
+| | Cost accounting Power BI reports| Yes | No |
+| | Cost control workspace for Mobile app| Yes | No |
+| | Cost accounting Content pack for Power BI| Yes | No |
 | | Expense management| Yes | Yes |
 | | Fixed assets| Yes | Yes |
 | | General ledger| Yes | Yes |
