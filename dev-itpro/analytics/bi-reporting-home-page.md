@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: BI &amp; reporting home page
-description: This topic lists BI &amp; reporting resources that are available in Microsoft Dynamics 365 for Finance and Operations.
+title: Intelligence
+description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/24/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,19 +30,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# BI &amp; reporting home page
+# Intelligence
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic lists BI &amp; reporting resources that are available in Microsoft Dynamics 365 for Finance and Operations. 
+This topic points you to resources that you can use to learn more about the business intelligence and reporting tools available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 Working with aggregate data
 ---------------------------
 
 -   [Analytics](analytics.md)
 -   [In-memory, real-time aggregate models replace SSAS cubes](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [Modeling and using Aggregate Data](model-aggregate-data.md)
+-   [Modeling and using aggregate data](model-aggregate-data.md)
 -   [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 
 ## Self service reporting
@@ -71,42 +71,16 @@ Working with aggregate data
 -   [Tips to help prevent long-running reports from timing out](prevent-long-running-reports-timing-out.md)
 
 ## Electronic reporting
--   [Electronic reporting overview](general-electronic-reporting.md)
--   [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
--   [Extending the list of Electronic reporting functions](general-electronic-reporting-formulas-list-extension.md)
--   [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
--   [Electronic reporting destinations](electronic-reporting-destinations.md)
--   [Download Electronic reporting configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
--   [Use an Electronic reporting configuration to provide Power BI with data from Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
--   [ER Create a configuration provider and mark it as active](/dynamics365/unified-operations/do-not-publish/er-configuration-provider-mark-it-active-2016-02) (Task guide)
--   [ER Design domain specific data model](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-data-model-2016-02-05) (Task guide)
--   [ER Define model mapping and select data sources](/dynamics365/unified-operations/do-not-publish/er-define-model-mapping-select-data-sources-2016-02-05) (Task guide)
--   [ER Map data model to selected data sources](/dynamics365/unified-operations/do-not-publish/er-map-data-model-selected-data-sources-2016-02-05) (Task guide)
--   [ER Design domain specific format](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-format-2016-02-05) (Task guide)
--   [ER Upload a configuration into Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services) (Task guide)
--   [ER Import a configuration from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services) (Task guide)
--   [ER Design a configuration for generating reports in OPENXML format](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11) (Task guide)
--   [ER Configure destinations](/dynamics365/unified-operations/do-not-publish/er-destinations-2016-05) (Task guide)
--   [ER Use financial dimensions as a data source (Part 1: Design data model)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1) (Task guide)
--   [ER Use financial dimensions as a data source (Part 2: Model mapping)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2) (Task guide)
--   [ER Use financial dimensions as a data source (Part 3: Design the report)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3) (Task guide)
--   [ER Use financial dimensions as a data source (Part 4: Run the report)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4) (Task guide)
--   [ER Configure format to do counting and summing (Part 1: Create format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-1) (Task guide)
--   [ER Configure format to do counting and summing (Part 2: Configure computations)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-2) (Task guide)
--   [ER Configure format to do counting and summing (Part 3: Use computations to make the output)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-3) (Task guide)
--   [ER Configure format to do counting and summing (Part 4: Run format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-4) (Task guide)
--   [ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 1: Design format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-1) (Task guide)
--   [ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 2: Run format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-2) (Task guide)
--   [ER Use Document Management files in format outputs (Part 1: Prepare data model)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-1) (Task guide)
--   [ER Use Document Management files in format outputs (Part 2: Extend data model)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-2) (Task guide)
--   [ER Use Document Management files in format outputs (Part 3: Create format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-3) (Task guide)
--   [ER Use Document Management files in format outputs (Part 4: Run format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-4) (Task guide)
--   [ER Use Document Management files in format outputs (Part 5: Modify and run format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-5) (Task guide)
--   [ER Generate electronic documents for payments using a format configuration](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-electronic-payments) (Task guide)
--   [ER Upgrade your format by adopting a new, base version of that format](/dynamics365/unified-operations/do-not-publish/er-upgrade-format--2016-05) (Task guide)
+Electronic reporting (ER) is the tool to use to configure electronic document formats in accordance with the legal requirements of various countries/regions. Example applications of electronic reporting include financial auditing, tax reporting, and electronic invoicing.
 
+[![electronic-reporting-example](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png) 
 
+ER has the following characteristics and capabilities:
+- Perfect tool for producing TEXT, XML, and OPENXML worksheet formats.
+- Tooling is designed for business users familiar with Excel-based formulas.
+- Highly-adaptable to adhere to changes in regulatory requirements.
+- Component versioning is available to manage draft definitions.
 
-
+For more information about the Electronic reporting tool, see [Electronic reporting overview](general-electronic-reporting.md). 
 
 
