@@ -255,17 +255,11 @@ The following table shows whether each feature is available in:
 | | Build automation: Automatic update of model version during build | Yes | Yes |
 | | Build automation: Option to include runtime packages in the deployable package of the automated build output| Yes | Yes |
 | | Compliance properties on table fields| Yes | Yes |
-| | Deployment| Yes | ? |
-| | Development tooling - Customize and add your own field descriptions| Yes | Yes |
-| | Development tooling - New tabbed workspace pattern| Yes | Yes |
 | | Validating events on form data sources and form data source fields| Yes | Yes |
-| Extensibility| | | |
-| | Changing the extended data type (EDT) of a table field using table extensions| Yes | Yes |
-| | Customize application reports using extensions| Yes | ? |
-| | Extending a group control| Yes | Yes |
-| | Extending the Country Region Codes property| Yes | Yes |
-| | Extensible controls are guided away from non-public APIs| Yes | Yes |
-| | Number sequence scope extensibility| Yes | No |
+| | Deployment| Yes | ? |
+| | Development in Visual Studio | Yes | Yes |
+| Extensibility| | Yes | Yes |
+| | All extensibility features are supported in Cloud and on-premises | | |
 | Platform | | | |
 | | Monitoring and telemetry| Yes | ? |
 | | Platform compatibility| Yes | ? |
