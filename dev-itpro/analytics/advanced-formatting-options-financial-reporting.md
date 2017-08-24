@@ -70,12 +70,12 @@ The following examples show how to format the row definition and column definiti
 
 The following table shows an example of a row definition that uses basic forcing.
 
-| Row Code | Description                      | Format Code | Related Formulas/Rows/Units | Column Restriction | Row Modifier               | Link to Financial Dimensions |
-|----------|----------------------------------|-------------|-----------------------------|-----------------|----------------|----|
-| 100      | Cash at Beginning of Period (NP) |             |                             |                    | Account Modifier = \[/BB\] | +Segment2 = \[1100\]         |
-| 130      | Cash at Beginning of Period      | CAL         | C=C.100,F=D.100             |                 |                |     |   |
-| 160      |                                  |             |                             |                 |                |     |   |
-| 190      |                                  |             |                             |                 |                |     |   |
+| Row Code | Description                      | Format Code | Related Formulas/Rows/Units | Row Modifier | Link to Financial Dimensions |
+|----------|----------------------------------|-------------|-----------------------------|----------------|----|
+| 100      | Cash at Beginning of Period (NP) |             |                             | Account Modifier = \[/BB\] | +Segment2 = \[1100\]         |
+| 130      | Cash at Beginning of Period      | CAL         | C=C.100,F=D.100             |               |     |   |
+| 160      |                                  |             |                             |              |     |   |
+| 190      |                                  |             |                             |                 |     |   |
 
 > [!NOTE] 
 > Empty columns were removed from the previous table for presentation purposes: Format Override, Normal Balance, Print Control, Column Restriction columns are not displayed.
@@ -99,18 +99,21 @@ The following table shows an example of column definition that uses basic forcin
 
 The following table shows an example of a row definition that uses forcing for a statistical report.
 
-| Row Code | Description               | Format Code | Related Formulas/Rows/Units     | Format Override      | Normal Balance | Print Control | Column Restriction | Row Modifier | Link to Financial Dimensions               |
-|----------|---------------------------|-------------|---------------------------------|----------------------|----------------|---------------|--------------------|--------------|--------------------------------------------|
-| 50       | Statistical Information   | REM         |                                 |                      |                |               |                    |              |                                            |
-| 100      | Headcount - US            | CAL         | 4                               | \#\#\#0.;($\#\#\#0.) |                |               |                    |              |                                            |
-| 115      | Headcount - International | CAL         | 11                              | \#\#\#0.;($\#\#\#0.) |                |               |                    |              |                                            |
-| 130      |                           |             |                                 |                      |                |               |                    |              |                                            |
-| 190      | US Sales                  |             |                                 |                      | C              |               |                    |              | +Segment2 = \[41\*\], Segment3 = \[00\]    |
-| 220      | International Sales       |             |                                 |                      | C              |               |                    |              | +Segment2 = \[41\*\], Segment3 = \[01:99\] |
-| 250      |                           |             |                                 |                      |                |               |                    |              |                                            |
-| 280      |                           |             |                                 |                      |                |               |                    |              |                                            |
-| 310      | US Sales                  | CAL         | D=C.190,E=C.100,F=(C.100/C.190) |                      |                |               |                    |              |                                            |
-| 340      | International Sales       | CAL         | D=C.220,E=C115,F=(C.220/C.115)  |                      |                |               |                    |              |                                            |
+| Row Code | Description               | Format Code | Related Formulas/Rows/Units     | Format Override      | Normal Balance | Link to Financial Dimensions               |
+|----------|---------------------------|-------------|---------------------------------|----------------------|----------------|--------------------|
+| 50       | Statistical Information   | REM         |                                 |                      |                |            
+| 100      | Headcount - US            | CAL         | 4                               | \#\#\#0.;($\#\#\#0.) |                |                  
+| 115      | Headcount - International | CAL         | 11                              | \#\#\#0.;($\#\#\#0.) |                |          
+| 130      |                           |             |                                 |                      |                |               
+| 190      | US Sales                  |             |                                 |                      | C              |                             +Segment2 = \[41\*\], Segment3 = \[00\]    |
+| 220      | International Sales       |             |                                 |                      | C              |                              +Segment2 = \[41\*\], Segment3 = \[01:99\] |
+| 250      |                           |             |                                 |                      |                |               |  
+| 280      |                           |             |                                 |                      |                |                         |
+| 310      | US Sales                  | CAL         | D=C.190,E=C.100,F=(C.100/C.190) |                      |                |              
+| 340      | International Sales       | CAL         | D=C.220,E=C115,F=(C.220/C.115)  |                      |                |               |
+
+> [!NOTE] 
+> Empty columns were removed from the previous table for presentation purposes: Print Control,	Column Restriction, and	Row Modifier columns are not displayed.
 
 The following table shows an example of a column definition that uses forcing for a statistical report.
 
