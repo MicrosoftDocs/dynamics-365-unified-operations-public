@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 To create and manage data import and export jobs, use the Data management workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, cleanup, or convert data before moving it.  
 
-## Data import/export framework process 
+## Data import/export process 
 When you export or import data, you perform the following steps: 
 1. Before you begin, define the format of the data to export or import. You can define formats using the Data sources setup tile.
 2. Create an import or export job that: 
@@ -46,6 +46,8 @@ When you export or import data, you perform the following steps:
 3. Validate that source and target data are mapped correctly.
 4. Verify the security for your import or export job. 
 5. Run the import or export job.
+6. Validate that the job ran as expected.
+7. Clean up the staging tables. 
 
 ## Sequencing entities
 Entities can be sequenced in a data template, or in import and export jobs. When you are running a job that contains more than one data entity, it is important to ensure that the data entities are properly sequenced. The primary reason for sequencing entities is to address any functional dependencies among entities. If entities don’t have any functional dependencies, then they can be scheduled for parallel import or export.
@@ -90,10 +92,33 @@ Use the **Applicable roles** menu to restrict the job to one or more security ro
 
 You could also restrict a job to specific users. Securing the job by users is more controlled than securing by roles if multiple users are assigned to a role.
 
-## Secure by legal entity
+### Secure a job by legal entity
 Data jobs are global in nature. This means, if a data job was created and used in a legal entity, the job will be visible in other legal entities in the system. There are application scenarios where this default behavior may be preferred. For example, an organization that imports invoices using data entities may choose to provide a centralized invoice processing team. This team is responsible for managing invoice errors for all divisions in the organization. In such a scenario, it will be useful for the centralized invoice processing team to have access to invoice import jobs from all legal entities. Hence, the default behavior would meet the requirement from a legal entity perspective.
 
 However, an organization might want to have invoice processing teams per legal entity. In such cases, a team in a legal entity should only have access to the invoice import job in its own legal entity. This requirement can be met by configuring legal entity based access control on the data jobs using the **Applicable legal entities** menu inside the data job. Once configured, a user can only see jobs that are available in the legal entity they are currently logged in to. To see jobs from other legal entity, the user must switch to the specific legal entity.
 
 A job can be secured by roles, users and legal entity at the same time.
 
+## Use job history to validate
+Job history is available for troubleshooting and investigation on both import and export jobs. The historical job runs are organized as shown below.
+
+Each job run provides the following details.
+- Execution details
+- Execution log
+
+Execution details show the state of each of the data entities that were processed by the job. This is a quick way to know the following details: 
+- What entities were executed in the run?
+- For an entity, how many records were successfully processed and how may failed?
+- The staging records for each of the entity
+
+You can download the staging data in file (export job only) or download as a package (both import and export jobs).
+
+From inside Execution details, you can also open the execution log.
+
+## Clean up staging tables
+Staging tables can be cleaned up from the **Staging clean up** feature in the data management workspace. The following options are available for choosing which records are to be deleted from which staging table.
+- Entity – if only an entity is provided, then, all records from this entity’s staging table will be deleted. You can choose this option to clean up all the data for this entity across all data projects and all jobs.
+- Job ID – if only a job ID is provided, then, all records for all entities in the chosen job will be deleted from the respective staging tables.
+- Data projects – if only a data project is chosen, then, all records for all entities and across all jobs for the chosen data project will be deleted.
+
+The above filters can be used in combination as well to further restrict the record set that is removed.
