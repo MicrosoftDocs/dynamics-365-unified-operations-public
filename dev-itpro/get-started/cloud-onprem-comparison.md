@@ -42,7 +42,7 @@ The following table shows whether each feature is available in:
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
-|Compliance and certifications | SOC 1 Type 1 certification| Yes | No |
+| Compliance and certifications | SOC 1 Type 1 certification| Yes | No |
 | Cost management| | | |
 | | Templates for configuration data projects| Yes | Yes |
 | Customization| | | |
