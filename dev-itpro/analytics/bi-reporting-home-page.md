@@ -80,9 +80,9 @@ Electronic reporting (ER) is the tool to use to configure electronic document fo
 [![electronic-reporting-example](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png) 
 
 Characteristics and capabilities of ER:
-- Perfect tool for producing TEXT, XML, and OPENXML worksheet formats.
-- Tooling is designed for business users familiar with Excel-based formulas.
-- Highly-adaptable to adhere to changes in regulatory requirements.
+- It's a perfect tool for producing TEXT, XML, and OPENXML worksheet formats.
+- The tooling is designed for business users familiar with Excel-based formulas.
+- It's highly-adaptable to adhere to changes in regulatory requirements.
 - Component versioning is available to manage draft definitions.
 
 For more information about the Electronic reporting tool, see [Electronic reporting overview](general-electronic-reporting.md). 
@@ -90,11 +90,11 @@ For more information about the Electronic reporting tool, see [Electronic report
 ## Financial reporting
 Standard financial reports are provided using the default main account categories in Finance and Operations. Use the report designer to create or modify traditional financial statements, such as income statements and balance sheets and share the results with other members of your organization. Example applications of electronic reporting include balance sheets, cash flow, and summary trial balance year over year.
 
-What are the characteristics and capabilities of financial reporting:
-- Built-in flexible financial reporting solution designed to handle complex organizational structures.
-- Fully-integrated with General ledger in Finance and Operations.
-- Create custom financial reports using the default solutions as a starting point.
-- Interactive reports with drill-down capabilities to navigate down to transaction details.
+Financial reporting has the folloiwng characteristics and capabilities:
+- It's a built-in, flexible financial reporting solution designed to handle complex organizational structures.
+- It's fully-integrated with General ledger.
+- You can create custom financial reports using the default solutions as a starting point.
+- It provides interactive reports with drill-down capabilities that allow you to navigate to transaction details.
 
 
 ## Technical reference reports
