@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Class extension: Method wrapping and Chain of Commandf (CoC)
-description: This topic discusses how to extend the business logic of public and protected methods using method wrapping. 
+title: Class extension: Method wrapping and Chain of Command
+description: This topic discusses how to extend the business logic of public and protected methods by using method wrapping. 
 author: robadawy
 manager: AnnBe
 ms.date: 08/21/2017
@@ -29,10 +29,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Class extension: Method wrapping and Chain of Commandf (CoC)
-Class extension functionality (also known as class augmentation) has been improved to allow you to wrap logic around methods defined in the base class being augmented. You can extend the logic of public and protected methods without using event handlers. When you wrap a method, you can also access public and protected methods and variables of the base class. This way, you can start transactions and easily manage state variables associated with your class.
+# Class extension: Method wrapping and Chain of Command
+The functionality for class extension, or class augmentation, has been improved. You can now wrap logic around methods that are defined in the base class that you're augmenting. You can extend the logic of public and protected methods without having to use event handlers. When you wrap a method, you can also access public and protected methods, and variables of the base class. In this way, you can start transactions and easily manage state variables that are associated with your class.
 
-Consider the following situation. A model contains the following code.
+For example, a model contains the following code.
+
 ```
 class BusinessLogic1
 {
@@ -41,7 +42,9 @@ class BusinessLogic1
     }
 }
 ```
-It is now possible to augment the functionality of the method **DoSomething** inside an extension class by reusing the same method name. An extension class must belong to a package that references the model where the augmented class is defined.
+
+You can now augment the functionality of the **DoSomething** method inside an extension class by reusing the same method name. An extension class must belong to a package that references the model where the augmented class is defined.
+
 ```
 [ExtensionOf(ClassStr(BusinessLogic1))]
 final class BusinessLogic1_Extension
@@ -54,35 +57,45 @@ final class BusinessLogic1_Extension
     }
 }
 ```
-Wrapping **DoSomething** and the required use of the **next** keyword creates a Chain of Command (CoC) for the method. Here is what happens when the following code executes.
+
+In this example, the wrapper around **DoSomething** and the required use of the **next** keyword create a Chain of Command (CoC) for the method. CoC is a design pattern where a request is handled by a series of receivers. The pattern supports loose coupling of the sender and the receivers.
+
+We now run the following code.
+
 ```
 BusinessLogic1 c = new BusinessLogic1();
 info(c.DoSomething(33));
 ```
-The system will find any method that wraps the method **DoSomething**. It will randomly execute one of these methods, for example, **DoSomething** of the **BusinessLogic1_Extension** class. When the call to next **DoSomething** occurs, the system randomly picks another method in the CoC or calls the original implementation if no further wrapped methods exist.
+
+When this code is run, the system finds any method that wraps the **DoSomething** method. The system randomly runs one of these methods, such as the **DoSomething** method of the **BusinessLogic1_Extension** class. When the call to the next **DoSomething** method occurs, the system randomly picks another method in the CoC. If no more wrapped methods exist, the system calls the original implementation.
 
 ## Supported versions
 > [!IMPORTANT]
-> The functionality described in this topic is available as of platform update 9 (CoC and access to protected methods and variables). However, this functionality requires the class being augmented to be compiled on platform update 9 or newer as well. As of August 2017, all current releases of the Dynamics 365 for Finance and Operations applications have been compiled on platform update 8 or earlier. You will then need to re-compile a base package (like Application Suite) on platform update 9 or newer in order to wrap a method that is defined in that package.
+> The functionality that is described in this topic (CoC and access to protected methods and variables) is available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition platform update 9. However, the class that is being augmented must also be compiled on Platform update 9 or later. As of August 2017, all current releases of the applications for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, have been compiled on Microsoft Dynamics 365 for Finance and Operations, Enterprise edition platform update 8 or earlier. Therefore, to wrap a method that is defined in a base package (such as Application Suite), you must recompile that base package on Platform update 9 or later.
 
 ## Capabilities
-The following sections describe in more details the capabilities of method wrapping and CoC.
+The following sections give more details about the capabilities of method wrapping and CoC.
 
 ### Wrapping public and protected methods
-Protected or public methods of classes, tables or forms can be wrapped using an extension class that augments that class, table or form. The wrapper method must have the same signature as the base method.
+Protected or public methods of classes, tables, or forms can be wrapped by using an extension class that augments that class, table, or form. The wrapper method must have the same signature as the base method.
 
-- When augmenting form classes, only root level method can be wrapped. You cannot wrap methods defined in nested classes.
-- Only methods defined in regular classes can be wrapped. Methods defined in extension classes cannot be wrapped by augmenting the extension class.
+- When you augment form classes, only root-level methods can be wrapped. You can't wrap methods that are defined in nested classes.
+- Only methods that are defined in regular classes can be wrapped. Methods that are defined in extension classes can't be wrapped by augmenting the extension classes.
 
 ### What about default parameters?
-Methods with default parameters can be wrapped by extension classes; however, the method signature in the wrapper method must not include the default value of the parameter. In other words, consider the following simple class with a method having a default parameter:
+Methods that have default parameters can be wrapped by extension classes. However, the method signature in the wrapper method must not include the default value of the parameter.
+
+For example, the following simple class has a method that has a default parameter.
+
 ``` 
- class Person 
- {
-     Public void salute( str message = “Hi”){ }
- }
+class Person 
+{
+    Public void salute( str message = "Hi"){ }
+}
 ```
-The wrapper method must look like:
+
+In this case, the wrapper method must resemble the following example.
+
 ```
 [ExtensionOf(classtr(Person))]
 final class aPerson_Extension
@@ -90,128 +103,148 @@ final class aPerson_Extension
     Public void salute( str message ){ }
 }
 ```
-Notice how in the extension class aPerson_Extension class, the salute method does not include the default value of the “message” parameter. 
+
+In the **aPerson_Extension** extension class, notice that the **salute** method doesn't include the default value of the **message** parameter. 
 
 ### Wrapping instance and static methods
-Instance and Static methods can be wrapped by extension classes. If a static method is the target to be wrapped, the method in the extension needs to be qualified with the static keyword. For example, if we have the following class A
+Instance and static methods can be wrapped by extension classes. If a static method is the target that will be wrapped, the method in the extension must be qualified by using the **static** keyword.
+
+For example, we have the following **A** class.
+
 ```
 class A 
 {
-   public static void aStaticMethod( int parameter1)
-   {
-   // …
-   }
+    public static void aStaticMethod( int parameter1)
+    {
+    // …
+    }
 }
 ```
  
-The wrapping method must look like:
+In this case, the wrapper method must resemble the following example.
+
 ```
 [ExtensionOf(classstr(A)]
 final class An_Extension
 {
-   public static void aStaticMethod( int parameter1)
-   {
-     Next aStaticMethod( 10 );
-   }
+    public static void aStaticMethod( int parameter1)
+    {
+        Next aStaticMethod( 10 );
+    }
 }
 ```
+
 > [!IMPORTANT]
-> Wrapping static methods does not apply to forms. In X++, a form class is not a new class and cannot be instantiated or referenced as a normal class. Static methods in forms do not have any semantics.
+> The ability to wrap static methods doesn't apply to forms. In X++, a form class isn't a new class, and can't be instantiated or referenced as a normal class. Static methods in forms don't have any semantics.
 
 ### Wrapper methods must always call next 
 
-Any wrapper method in an extension class must always call **next**, ensuring the next method in the chain and finally the original implementation are always called. This makes sure every method in the chain will contribute to the result.
+Wrapper methods in an extension class must always call **next**, so that the next method in the chain and, finally, the original implementation are always called. This restriction helps guarantee that every method in the chain contributes to the result.
 
-The current implementation of this restriction forces the call to **next** to be in the first-level statements in the method body.
-Some rules important rules are:
-- Calls to **next** cannot be done conditionally inside an if statement. 
-- Call to **next** cannot be done in a **while**, **do-while**, or **for** loop statements. 
-- A **next** statement cannot be preceded by a **return** statement. 
-- A call to **next** cannot be in logical expressions due to optimization of this type of expressions. At runtime, the execution of the complete expression is not guaranteed. 
+In the current implementation of this restriction, the call to **next** must be in the first-level statements in the method body.
 
-### Wrap a base method in an extension of a derived class
-The following example shows how to wrap a base method in an extension of a derived class. Assume the following class hierarchy:
+Here are some important rules:
+
+- Calls to **next** can't be done conditionally inside an **if** statement. 
+- Calls to **next** can't be done in **while**, **do-while**, or **for** loop statements. 
+- A **next** statement can't be preceded by a **return** statement. 
+- Because logical expressions are optimized, calls to **next** can't occur in logical expressions. At runtime, the execution of the complete expression isn't guaranteed. 
+
+### Wrapping a base method in an extension of a derived class
+The following example shows how to wrap a base method in an extension of a derived class. For this example, the following class hierarchy is used.
+
 ```
 class A
 {
-   public void salute(str message)
-   {
-     Info(message);
-   }
+    public void salute(str message)
+    {
+        Info(message);
+    }
 }
 
 class B extends A { }
 class C extends A { }
 ```
-Under this definition we have one base class A and two classes that derive from it, B and C. Let us augment (create an extension class) one of the derived classes, in this case B as follows:
+
+Therefore, there is one base class, **A**. Two classes, **B** and **C**, are derived from **A**. We will augment or create an extension class of one of the derived classes (in this case, **B**), as shown here.
+
 ```
 [Extensionof(classstr(B))]
 final class aB_Extension
 {
-   public void salute(str message)
-   {
-     next salute( message );
-     Info(“B extension”);
-   }
+    public void salute(str message)
+    {
+        next salute( message );
+        Info("B extension");
+    }
 }
 ```
-While the class aB_Extension is an extension of B, and B does not have a method definition for the salute method, it is still possible to wrap the salute method defined in the base class A. This means only instances of the class B will include the wrapping of the salute method. Instances of class A and class C will never call the the wrapper method defined in the extension of B. 
-This gets clearer if we implement a method to use these three classes:
+
+Although the **aB_Extension** class is an extension of **B**, and **B** doesn't have a method definition for the **salute** method, you can wrap the **salute** method that is defined in the base class, **A**. Therefore, only instances of the **B** class will include the wrapping of the **salute** method. Instances of the **A** and **C** classes will never call the wrapper method that is defined in the extension of the **B** class. 
+
+This behavior becomes clearer if we implement a method that uses these three classes.
+
 ```
 class ProgramTest 
 {
-   Public static void Main( Args _args)
-   {
-     var a = new A( );
-     var b = new B( );
-     var c = new C( );
+    Public static void Main( Args _args)
+    {
+        var a = new A( );
+        var b = new B( );
+        var c = new C( );
 
-     a.salute(“Hi”);
-     b.salute(“Hi”);
-     c.salute(“Hi”);
-   }
+        a.salute("Hi");
+        b.salute("Hi");
+        c.salute("Hi");
+    }
 }
 ```
-In the case of a.salute(“Hi”), only the message “Hi”  is shown in the infolog. The same happens for the calls to c.salute(“Hi”). On the other hand, when b.salute(“Hi”) is called, the infolog will contain “Hi” followed by “B extension”. 
-With this mechanism, it is possible to wrap the original method only for specific derived classes.
 
-### Access protected members from extension classes
-Access to protected members including fields and methods is now possible from extension classes, as of platform update 9. It is important to mention that this support is not specific to wrapping methods, but to all the methods in the class extension, making class extensions more powerful than before.
+For calls to **a.salute(“Hi”)** and **c.salute(“Hi”)**, the Infolog shows only the message “Hi.” However, when **b.salute(“Hi”)** is called, the Infolog shows “Hi” followed by “B extension.” 
 
-### The hookable attribute
-If a method is explicitly marked as **[Hookable(false)]**, the method cannot be wrapped in an extension class. In the following example, **anyMethod** cannot be wrapped in a class that augments **anyClass1**.
+By using this mechanism, you can wrap the original method only for specific derived classes.
+
+### Accessing protected members from extension classes
+As of Platform update 9, you can access protected members from extension classes. These protected members include fields and methods. Note that this support isn't specific to wrapping methods but applies all the methods in the class extension. Therefore, class extensions are more powerful than they were before.
+
+### The Hookable attribute
+If a method is explicitly marked as **[Hookable(false)]**, the method can't be wrapped in an extension class. In the following example, **anyMethod** can't be wrapped in a class that augments **anyClass1**.
+
 ```
 class anyClass1 
 {
-   [HookableAttribute(false)]
-   public void anyMethod() {…}
+    [HookableAttribute(false)]
+    public void anyMethod() {…}
 }
 ```
 
-### Final methods and the wrappable attribute
-Public and protected methods that are marked as **final** cannot be wrapped in extension classes. This restriction can be overridden with the usage of **Wrappable** attribute with the attribute parameter set to true, that is, **[Wrappable(true)]**. Similarly, if you want to override the default capability for (non final) public or protected methods, you can mark them as non wrappable, that is **[Wrappable(false)]**. In the following example, the method **doSomething** is explicitly marked to be non-wrappable, even though it is a public method. The method **doSomethingElse** is explicitly marked to by wrappable, even though it is a final method.
+### Final methods and the Wrappable attribute
+Public and protected methods that are marked as **final** can't be wrapped in extension classes. You can override this restriction by using the **Wrappable** attribute and setting the attribute parameter to **true** (**[Wrappable(true)]**). Similarly, to override the default capability for (non-final) public or protected methods, you can mark those methods as non-wrappable (**[Wrappable(false)]**).
+
+In the following example, the **doSomething** method is explicitly marked as non-wrappable, even though it's a public method. The **doSomethingElse** method is explicitly marked as wrappable, even though it's a final method.
+
 ```
 class anyClass2 
 {
-   [Wrappable(false)]
-   public void  doSomething(str message) { …}
+    [Wrappable(false)]
+    public void  doSomething(str message) { …}
 
-   [Wrappable(true)]
-   final public void  doSomethingElse(str message){ …}
+    [Wrappable(true)]
+    final public void  doSomethingElse(str message){ …}
 }
 ```
 
 ## Restrictions on wrapper methods
-The following describes restrictions on the use of CoC and method wrapping.
+The following sections describe restrictions on the use of CoC and method wrapping.
 
-### No wrapping of kernel methods 
-Kernel classes are classes defined in the kernel of the Dynamics 365 unified operations platform, they are not X++ classes. Even though extension classes are supported for kernel classes, method wrapping is not supported on methods of kernel classes. In other words, to wrap a method, the base method must be an X++ method.
+### Kernel methods can't be wrapped
+Kernel classes aren't X++ classes. Instead, they are classes that are defined in the kernel of the Microsoft Dynamics 365 Unified Operations platform. Even though extension classes are supported for kernel classes, method wrapping isn't supported for methods of kernel classes. In other words, if you want to wrap a method, the base method must be an X++ method.
 
-### X++ classes compiled with platform update 8 or earlier 
-Wrapping methods is a feature that requires specific functionality emitted by an X++ compiler that is part of platform update 9 or newer. Methods compiled with earlier versions do not have the infrastructure to support this feature.
+### X++ classes that are compiled by using Platform update 8 or earlier 
+The method wrapping feature requires specific functionality that is emitted by an X++ compiler that is part of Platform update 9 or later. Methods that are compiled by using earlier versions don't have the infrastructure to support this feature.
 
-### No wrapping of nested class methods (Forms)
-Nested classes in X++ is a concept that applies to forms for overriding data source and form control methods. Methods nested classes cannot be wrapped in class extensions.
+### Nested class methods (forms) can't be wrapped
+The concept of nested classes in X++ applies to forms for overriding data source methods and form control methods. Methods in nested classes can't be wrapped in class extensions.
 
 ### Tooling
-Support for cross reference and IntelliSense in the Visual Studio X++ Editor for the features described in this topic is not complete. It is planned to be available starting in platform update 10.
+For the features that are described in this topic, the Microsoft Visual Studio X++ editor doesn't yet offer complete support for cross-references and Microsoft IntelliSense. We plan to make complete support available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition platform update 10.
