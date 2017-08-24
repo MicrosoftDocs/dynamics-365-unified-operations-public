@@ -85,7 +85,7 @@ Characteristics and capabilities of ER:
 - It's highly-adaptable to adhere to changes in regulatory requirements.
 - Component versioning is available to manage draft definitions.
 
-For more information about the Electronic reporting tool, see [Electronic reporting overview](general-electronic-reporting.md). 
+For more information about Electronic reporting, see [Electronic reporting overview](general-electronic-reporting.md). 
 
 ## Financial reporting
 Standard financial reports are provided using the default main account categories in Finance and Operations. Use the report designer to create or modify traditional financial statements, such as income statements and balance sheets and share the results with other members of your organization. Example applications of electronic reporting include balance sheets, cash flow, and summary trial balance year over year.
@@ -96,6 +96,7 @@ Financial reporting has the folloiwng characteristics and capabilities:
 - You can create custom financial reports using the default solutions as a starting point.
 - It provides interactive reports with drill-down capabilities that allow you to navigate to transaction details.
 
+For more information about Financial reporting, see [Financial reporting](financial-reporting-intro.md). 
 
 ## Technical reference reports
 The following reports provide reference information about the objects in Finance and Operations. 
