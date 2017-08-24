@@ -89,6 +89,12 @@ For more information about the Electronic reporting tool, see [Electronic report
 
 
 ## Technical reference reports
+The following reports provide reference information about the object in Finance and Operations. 
+
+Aggregate
+
+
 [Technical refernce reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)
+
 
 
