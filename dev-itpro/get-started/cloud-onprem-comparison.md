@@ -45,7 +45,6 @@ The following table shows whether each feature is available in:
 | Compliance and certifications | SOC 1 Type 1 certification| Yes | No |
 | Cost management| | | |
 | | Templates for configuration data projects| Yes | Yes |
-| Customization| | | |
 | Data management and integration| | | |
 | | Choose to truncate data in the entity before data is imported via files or data packages | Yes | Yes |
 | | Configuration data packages| Yes | Yes |
