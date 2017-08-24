@@ -91,10 +91,14 @@ For more information about the Electronic reporting tool, see [Electronic report
 ## Technical reference reports
 The following reports provide reference information about the object in Finance and Operations. 
 
-Aggregate
-
-
-[Technical refernce reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)
+- [Aggregate data entities report](aggregate-data-entities-report.md)
+- [Aggregate measurements report](aggregate-measurements-repor.md)
+- [Data entities report](../data-entities/data-entities-report.md)
+- [Key performance indicators (KPIs) report](key-performance-indicators-report)
+- [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md)
+- [SQL Server Reporting Services reports report](SSRS-report.md)
+- [Tables report]
+- [Workflow types report](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-types-report)
 
 
 
