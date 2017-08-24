@@ -82,3 +82,18 @@ There are two mapping views: **Mapping visualization**, the default view, and **
 
 Mapping can be regenerated in the form by clicking **Generate source mapping**. Note that generated mapping behaves like the automatic mapping, so any un-mapped fields must be manually mapped.
 
+## Ensure data security
+Non-administrator user access to the Data management workspace can be restricted to only provide access to certain data jobs. Having access to a data job implies full access to the execution history of the job including access to the staging tables. It is therefore important to ensure that appropriate access controls are in place at the time when you create a data job.
+
+### Secure a job by roles and users
+Use the **Applicable roles** menu to restrict the job to one or more security roles. Users in the role will only have access to the job. 
+
+You could also restrict a job to specific users. Securing the job by users is more controlled than securing by roles if multiple users are assigned to a role.
+
+## Secure by legal entity
+Data jobs are global in nature. This means, if a data job was created and used in a legal entity, the job will be visible in other legal entities in the system. There are application scenarios where this default behavior may be preferred. For example, an organization that imports invoices using data entities may choose to provide a centralized invoice processing team. This team is responsible for managing invoice errors for all divisions in the organization. In such a scenario, it will be useful for the centralized invoice processing team to have access to invoice import jobs from all legal entities. Hence, the default behavior would meet the requirement from a legal entity perspective.
+
+However, an organization might want to have invoice processing teams per legal entity. In such cases, a team in a legal entity should only have access to the invoice import job in its own legal entity. This requirement can be met by configuring legal entity based access control on the data jobs using the **Applicable legal entities** menu inside the data job. Once configured, a user can only see jobs that are available in the legal entity they are currently logged in to. To see jobs from other legal entity, the user must switch to the specific legal entity.
+
+A job can be secured by roles, users and legal entity at the same time.
+
