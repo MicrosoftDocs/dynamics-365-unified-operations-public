@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Class extension: Method wrapping and Chain of Command
+title: Class extension - Method wrapping and Chain of Command
 description: This topic discusses how to extend the business logic of public and protected methods by using method wrapping. 
 author: robadawy
 manager: AnnBe
