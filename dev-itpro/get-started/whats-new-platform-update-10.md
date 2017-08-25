@@ -37,9 +37,6 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 10, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=856083).
 
-## Attachment presence and document count indicator  
-When viewing a record, the system will indicate the number of attachments on that record by showing a count on the Attachments button. This number will indicate that there are attachments associated with the record, without having to navigate to the attachment details form. The count will show up to 9 attachments, with more than 9 attached documents being represented as “9+”. For more information, see [Configure document management](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management).
-
 ## Browser client - Net Promoter Score integration
 This feature will periodically prompt the user to provide feedback and rank their satisfaction with Dynamics 365 for Finance and Operations, Enterprise edition.
 

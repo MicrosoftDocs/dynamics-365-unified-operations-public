@@ -2,7 +2,7 @@
 # required metadata
 
 title: Gantt chart for job scheduling 
-description: The Gantt chart is designed to empower production planners to control and optimize the production plan. The Gantt chart makes the flow of operations transparent and makes it easy to adjust the production schedule while taking into account material or resource shortages. This helps planners make the best use of available resources, minimize work in progress, and optimize throughput times for production orders.
+description: Production planners can control and optimize productions plans by using Gantt charts.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 08/23/2017

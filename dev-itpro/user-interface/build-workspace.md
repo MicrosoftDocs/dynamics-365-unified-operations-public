@@ -5,7 +5,7 @@ title: Build a workspace
 description: In this tutorial, you will create a new tile and include it in the summary section of a workspace, build a new list for a workspace, and create a data cache for the list in the workspace.
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 10794
@@ -564,16 +564,16 @@ After you've set up the data cache, you can start to use the cache in your forms
 4.  Click the **FMTRental** data source. In the **Properties** window, set the **Table** property to **FMTPickupAndReturnTableCache**.
 5.  Click **Design** &gt; **ReturningTodayGrid**. In the **Properties** window, set the **Data Source** property to **FMTPickupAndReturnTableCache**.
 6.  Inside **ReturningTodayGrid**, click **CustomerImage**. Update the **Data Source** property to **FMTPickupAndReturnTableCache** and the **Data Method** property to **customerImage**.
-7.  Inside ****ReturningTodayGrid****, click **FirstNameCopy1**. Update the **Data Source** property to **FMTPickupAndReturnTableCache** and the **Data Method** property to **fullName**.
+7.  Inside **ReturningTodayGrid**, click **FirstNameCopy1**. Update the **Data Source** property to **FMTPickupAndReturnTableCache** and the **Data Method** property to **fullName**.
 8.  Press **F7** to view code for the form.
 9.  Instrument the form so that it can react to data caching, as shown in the following code.
 
         [Form]
-        public class FMTPickingUpTodayPart extends FormRun implements SysIDataSetConsumerForm
+        public class FMTReturningTodayPart extends FormRun implements SysIDataSetConsumerForm
         {
             public void registerDatasourceOnQueryingEvent()
             {
-                FMPickupAndReturnCache_DS.OnQueryExecuting += 
+                FMTPickupAndReturnTableCache_DS.OnQueryExecuting += 
                     eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);
             }
         }

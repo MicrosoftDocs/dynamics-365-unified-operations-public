@@ -5,7 +5,7 @@ title: Test forms with custom patterns
 description: This topic how to test forms using custom patterns.
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -43,7 +43,7 @@ Introduction
 By adhering to form patterns, you gain various benefits. For example, form patterns correctly set layout properties so that forms are laid out responsively. However, when form pattern coverage is lacking (for example, there currently isn't support for many extensible controls), or when a form or container has unique requirements/uses that don't fit any pattern, developers can set the pattern to Custom. The developer then becomes responsible for ensuring a correct and responsive form layout.
 
 ## Forms that use custom patterns
-You can use the **Form Patterns** report to find the set of forms that use Custom patterns (either top-level form patterns or subpatterns). Filter the **Percent covered controls** column to show forms that have less than 100-percent coverage. For forms that have a top-level Custom pattern, **Custom** will appear in the **Patterns** column. To generate the **Form Patterns** report, start Microsoft Visual Studio, click the **DYNAMICS 365** menu, expand **Add-ins**, and then click **Run the form patterns report**. The process will take several seconds. After the report has been generated, a dialog will provide the location of the report. Browse to the specified location, and open the file in Microsoft Excel. You can then filter the report down to the models that interest you.
+You can find the forms that use custom patterns by using the **Form Patterns** report. For information on running the report, see [Form pattern add-ins](form-pattern-add-ins.md). After running the report, filter the **Percent covered controls** column to show forms that have less than 100-percent coverage. For forms that have a top-level Custom pattern, **Custom** will appear in the **Patterns** column. 
 
 ## Testing configurations
 ### Key resolution
