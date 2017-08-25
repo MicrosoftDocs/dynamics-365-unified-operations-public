@@ -2,7 +2,7 @@
 # required metadata
 
 title: Gantt chart for job scheduling 
-description: The Gantt chart is designed to empower production planners to control and optimize the production plan. The Gantt chart makes the flow of operations transparent and makes it easy to adjust the production schedule while taking into account material or resource shortages. This helps planners make the best use of available resources, minimize work in progress, and optimize throughput times for production orders.
+description: Production planners can control and optimize productions plans by using Gantt charts.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 08/23/2017
@@ -32,9 +32,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Gantt chart for job scheduling
 
 [!include[banner](../includes/banner.md)]
-
-
-The Gantt chart is designed to empower production planners to control and optimize the production plan. The Gantt chart makes the flow of operations transparent and makes it easy to adjust the production schedule while taking into account material or resource shortages. This helps planners make the best use of available resources, minimize work in progress, and optimize throughput times for production orders.
 
 The Gantt chart is designed to empower production planners to control and optimize the production plan. The Gantt chart makes the flow of operations transparent and makes it easy to adjust the production schedule while taking into account material or resource shortages. This helps planners make the best use of available resources, minimize work in progress, and optimize throughput times for production orders.
 
@@ -159,6 +156,6 @@ The Gantt chart can be opened from the following pages.
 | **Hour forecasts** (project)                                                                 | Project activities of type **Hour forecast** can be job scheduled on resources. On the **Hour forecast** page on the **Scheduling** menu you can open the Gantt chart on a order to see job scheduled project activities of type hour forecast.                                                                                                                                                                                                                                                             |
 | **Job to complete** (List in **Production floor management** workspace)                      | The **Jobs to complete list in the Production floor management** workspace shows jobs from production and batch orders that are in progress on the selected resources for the workspace. On the **Gantt chart** menu item you can open the Gantt chart, where all the jobs selected in the list will be loaded to the chart.                                                                                                                                                                                |
 | **Production orders to release** (Opened from the **Production floor management** workspace) | The production orders to release page is opened from the **Production floor management** workspace. This page shows scheduled production and batch orders pending release. On this page you can open the Gantt chart for selected production orders.                                                                                                                                                                                                                                                        |
-
-
+## See also  
+[Visual scheduling with Gantt chart for production and batch orders (Video)](https://youtu.be/BtbuShkGj4I)
 
