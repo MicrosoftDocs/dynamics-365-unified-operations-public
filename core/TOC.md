@@ -1800,7 +1800,6 @@
 #### [Create a sales order for a configurable product (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-sales-order-configurable-product?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create sales price selection criteria (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-sales-price-selection-criteria?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up attribute-based pricing for configurable products](/dynamics365/unified-operations/supply-chain/pim/tasks/set-up-attribute-based-pricing-configurable-products?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
 ### Manage dimension-based product configuration
 #### [Product dimension](/dynamics365/unified-operations/supply-chain/pim/product-dimensions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create a dimension-based product master (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-dimension-based-product-master?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1811,24 +1810,18 @@
 #### [Define configuration routes (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/define-configuration-route?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create configuration rules (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-configuration-rules?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create dimension-based configurations (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-dimension-based-configurations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
 ### Translation of product data
 #### [Translation of product information FAQ](/dynamics365/unified-operations/supply-chain/pim/translations-product-related-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
 ### Search for products 
 #### [Search for product during order entry](/dynamics365/unified-operations/supply-chain/pim/search-products-product-variants?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
 ### Prepare product for planning
 #### [Default order settings for dimensions and product variants](/dynamics365/unified-operations/supply-chain/production-control/default-order-settings?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
 ### Prepare product for production
 #### [Bills of materials and formulas](/dynamics365/unified-operations/supply-chain/production-control/bill-of-material-bom?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Use the BOM designer](/dynamics365/unified-operations/supply-chain/production-control/bom-designer-functionality?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Use the formula designer](/dynamics365/unified-operations/supply-chain/production-control/formula-designer?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
 ### Estimate cost for products
 #### [BOM calculations](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
 ### Maintain product configuration models
 #### [Build a product configuration model](/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Calculation for product configuration model FAQ](/dynamics365/unified-operations/supply-chain/pim/calculate-product-configuration-models?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
