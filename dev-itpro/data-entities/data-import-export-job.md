@@ -125,4 +125,4 @@ Staging tables can be cleaned up from the **Staging clean up** feature in the da
 - Job ID – if only a job ID is provided, then, all records for all entities in the chosen job will be deleted from the respective staging tables.
 - Data projects – if only a data project is chosen, then, all records for all entities and across all jobs for the chosen data project will be deleted.
 
-The above filters can be used in combination as well to further restrict the record set that is removed.
+The options can also be combined to further restrict the record set that is deleted.
