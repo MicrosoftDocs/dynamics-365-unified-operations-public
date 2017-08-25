@@ -183,16 +183,16 @@ The following entities require filters or special handling when you export the d
 | | Retail locator group member | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in monthly update 3 for Spring release 2017. | 
 | | Retail locator group owner | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in monthly update 3 for Spring release 2017. | 
 | | Retail devices | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in monthly update 3 for Spring release 2017. | 
-
-**Note:** When you set up a data project to copy into a legal entity, a legal entity filter for the source legal entity is automatically added to any entity field that is determined to be a legal entity field. 
-
-**Tip:** To export a single legal entity, you can create a copy into legal entity data project and create a template from it in the Templates form. The template can then be added to an export project and used to export the legal entity. 
-                         
+                      
 ### Changing the legal entity value before import
 
 If you want to change the legal entity ID to another value, you must change the values in all fields that resemble the fields that were listed earlier to the new legal entity value. For example, for Legal entities, change Company from the exported value to a new value in the exported file. 
 
-The legal entity ID is stored in many places. Therefore, it can be difficult to make this change, and you might cause errors if you try. We are considering adding a feature in a feature release to help you complete this task.
+The legal entity ID is stored in many places. Therefore, it can be difficult to make this change, and you might cause errors if you try. 
+
+**Note:** When you set up a data project to copy into a legal entity, a legal entity filter for the source legal entity is automatically added to any entity field that is determined to be a legal entity field. 
+
+**Tip:** To export a single legal entity, you can create a copy into legal entity data project and create a template from it in the Templates form. The template can then be added to an export project and used to export the legal entity. 
 
 ## Import a configuration
 
