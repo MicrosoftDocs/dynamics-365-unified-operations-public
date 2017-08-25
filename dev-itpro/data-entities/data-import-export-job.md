@@ -54,10 +54,10 @@ Entities can be sequenced in a data template, or in import and export jobs. When
 
 ### Execution units, levels, and sequences
 The execution unit, level in execution unit, and sequence of an entity are used to control the order that the data is exported or imported in.
-•	Entities in different execution units are processed in parallel.
-•	Within a unit, entities are processed in parallel if they have the same level.
-•	Within the same level, entities are processed by the sequence order within the level.
-•	After processing of one level is completed, the next level is processed
+- Entities in different execution units are processed in parallel.
+- Within a unit, entities are processed in parallel if they have the same level.
+- Within the same level, entities are processed by the sequence order within the level.
+- After processing of one level is completed, the next level is processed.
 
 #### Resequencing
 You may want to resequence in the following situations: 
@@ -78,11 +78,13 @@ Mapping is a function that is applicable to both import and export jobs.
 - In the context of an import job, mapping describes which columns in the source file become the columns in the staging table. This helps the system know which column data in the source file must be copied into which column of the staging table. 
 - In the context of an export job, mapping describes which columns of the staging table (source) become the columns of the target file.
 
-If the column names in the staging table and the file are same, then the system will automatically establish the mapping based on the names. However, if the names are different, then such columns will not be mapped automatically. In such cases, you must complete the mapping by clicking the **View map** option on the entity in the data job.
+If the column names in the staging table and the file are same, then the system will automatically establish the mapping based on the names. However, if the names are different, then such columns will not be mapped automatically. In these cases, you must complete the mapping by clicking the **View map** option on the entity in the data job.
 
 There are two mapping views: **Mapping visualization**, the default view, and **Mapping details**. A red asterisk (\*) identifies any required fields in the entity. These fields must be mapped to work with the entity. Other fields can be unmapped as required when working with the entity. To un-map a field, highlight the field in either column (Entity or Source), and then click **Delete selection**. Click **Save** to save your changes. After saving, close the form to return to the project. The field mapping from source to staging can also be edited after import using the same process.
 
 Mapping can be regenerated in the form by clicking **Generate source mapping**. Note that generated mapping behaves like the automatic mapping, so any un-mapped fields must be manually mapped.
+
+![Data mapping form](./media/dixf-map.png) 
 
 ## Ensure data security
 Non-administrator user access to the Data management workspace can be restricted to only provide access to certain data jobs. Having access to a data job implies full access to the execution history of the job including access to the staging tables. It is therefore important to ensure that appropriate access controls are in place at the time when you create a data job.
@@ -100,7 +102,9 @@ However, an organization might want to have invoice processing teams per legal e
 A job can be secured by roles, users and legal entity at the same time.
 
 ## Use job history to validate
-Job history is available for troubleshooting and investigation on both import and export jobs. The historical job runs are organized as shown below.
+Job history is available for troubleshooting and investigation on both import and export jobs. The historical job runs are organized by time ranges.
+
+![Job history ranges](./media/dixf-job-history.md.png) 
 
 Each job run provides the following details.
 - Execution details
