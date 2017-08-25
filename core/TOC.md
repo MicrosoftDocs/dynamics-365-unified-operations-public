@@ -1491,8 +1491,9 @@
 ##### [Create purchase orders](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-creation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Approve and confirm purchase orders](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-approval-confirmation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Purchase order approval mobile workspace](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Prices and discounts
+#### Prices, discounts, and rebates
 ##### [Purchase agreements](/dynamics365/unified-operations/supply-chain/procurement/purchase-agreements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Vendor rebates](/dynamics365/unified-operations/supply-chain/procurement/vendor-rebates?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Product receipts and invoicing
 ##### [Product receipt against purchase orders](/dynamics365/unified-operations/supply-chain/procurement/product-receipt-against-purchase-orders?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
