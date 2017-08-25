@@ -30,7 +30,9 @@ ms.dyn365.ops.version: Platform update 7
 ---
 # Copy configuration data from one company to another
 
-To copy configuration data, you must first export it from one company. You can then import it to another company.  
+You have two options for copying configuration data:
+1. If you are moving data between instances of Dynamics 365 for Finance and Operations, you must first export it from one company and then import it to another company.  
+2. If you want to move data from one legal entity to another in the same instance, you can use the Copy company feature
 
 ## Export a configuration
 
@@ -214,6 +216,42 @@ You're now ready to import a configuration. However, you might want to use some 
 - To change the execution sequence of any of the entities, manually edit the unit, level, or sequence. Alternatively, use the **Resequence** button to update any entities that you've selected.
 - If you must change the entity mappings, use the **View map** button.
 - To temporarily prevent the entity from being used when you export a data project, use the check box in the **Disable** column.
+
+## Copy a company
+
+The **Data management** workspace is also your hub for copying configuration data from one legal entity to another. The process resembles an export and import in one step. Much like an import, the process will add information to the legal entity if it doesn't exist or update the information where it already exists.
+
+To copy a configuration from one legal entity to another in the same instance, follow these steps.
+
+1. Open the **Data management** workspace. If you're in Standard view, click **Enhanced view**.
+2. Click the **Copy company** tile.
+3. Click **New** to create a configuration data project, and enter an ID and name for the configuration.
+4. Set the operation type for the data project to **Copy company**, and set the project category to **Configuration**.
+5. Select the legal entity that will be the source of the data to copy. The form will default to the legal entity that you are currently using.
+6. Select Yes if you want the number sequences to be copied. The entities needed to copy the numbers sequences will be added to the project and there is 
+7. If you have selected Yes for number sequences, select Yes or No to reset those number sequence to the smallest value
+8. In the legal entities fast tab, you can select existing legal entities as a destination or create new ones:
+
+    - **Create a legal entity** – Enter the legal entity ID, the legal entity name, and the region that it belongs in. Click on the Create legal entity button. The legal entity will be created and then added to the list of destination entities. **Note:** This functionality is available in monthly update 3 of the Spring 2017 release.
+    
+    - **Update a legal entity** – Select one or more legal entities from the dropdown list. Click on the Add selected button. The legal entity will be created and then added to the list of destination entities. **Note:** This functionality is available in monthly update 3 of the Spring 2017 release.
+    
+9. Add the entities that represent the information that you want to copy. You can add entities by using several methods:
+
+    - **Add one entity** – Enter the first part of the name of the entity until it appears in the lookup.
+    - **Add multiple entities** – Enter any part of the entity name, use the lookup for the module, enter any part of the tag name, or use the lookup for the entity category to show a list of entities. Press Tab to move focus away from the **Lookup** field and activate the filter. In the grid, select the entities to add.
+    - **Add a file** – Browse to a file that contains a name that matches the name of an entity and a file name extension that matches the file name extension that is in your data sources.
+    - **Add a template** – Select from a list of templates that you've loaded in your instance.
+    
+**Note:** If an entity has a field in it that represents the legal entity, a filter will be applied to that entity to include only the data for the source legal entity. The value for that field will be changed to the destination legal entity. 
+
+**Note:** Entities for documents and transactions are not available when copying a configuration.
+
+10. Click **Remove entity** to remove any selected entities, as required.
+
+After you've completed your configuration, click **Copy company** to start the import. The copy process will export the data from the source legal entity into the destination legal entity. 
+
+Each destination legal entity will have its own import data project. You can monitor your results on the **Execution details** page that appears. If there are errors, you will see them in the execution details just like you would for an import.
 
 ## Additional information about entities
 
