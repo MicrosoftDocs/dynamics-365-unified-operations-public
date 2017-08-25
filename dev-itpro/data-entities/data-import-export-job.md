@@ -92,7 +92,7 @@ If the column names in the staging table and the file are same, then the system 
 
 There are two mapping views: **Mapping visualization**, the default view, and **Mapping details**. A red asterisk (\*) identifies any required fields in the entity. These fields must be mapped to work with the entity. Other fields can be unmapped as required when working with the entity. To un-map a field, highlight the field in either column (Entity or Source), and then click **Delete selection**. Click **Save** to save your changes. After saving, close the form to return to the project. The field mapping from source to staging can also be edited after import using the same process.
 
-Mapping can be regenerated in the form by clicking **Generate source mapping**. Note that generated mapping behaves like the automatic mapping, so any un-mapped fields must be manually mapped.
+Mapping can be regenerated in the form by clicking **Generate source mapping**. Generated mapping behaves like automatic mapping, so you need to manually map any un-mapped fields.
 
 ![Data mapping form](./media/dixf-map.png) 
 
