@@ -116,6 +116,11 @@
 #### [Update standard cost in a non-manufacturing environment](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-non-manufacturing-environment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Cost management tasks
+#### [Create a finished product (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-finished-product-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Create a semi-finished product (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-semi-finished-product-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Create raw materials (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-raw-materials-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Create BOMs (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-boms-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Create routes (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-routes-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Calculate a BOM by using a multilevel structure (February 2016 only)](/dynamics365/unified-operations/supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Calculate a BOM by using a single level structure (February 2016 only)](/dynamics365/unified-operations/supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Compare active, estimated, and realized costs on a production order](/dynamics365/unified-operations/supply-chain/cost-management/tasks/compare-active-estimated-realized-costs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1842,17 +1847,6 @@
 #### [Approve a product configuration model (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/approve-product-configuration-model?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Transfer data for product models (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/transfer-data-product-models?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-
-### Product information management tasks
-#### [Create BOMs (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-boms-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create a finished product (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-finished-product-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create raw materials (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-raw-materials-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create routes (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-routes-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create a semi-finished product (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-semi-finished-product-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create a product (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-product?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Configure linked products](/dynamics365/unified-operations/supply-chain/pim/tasks/configure-linked-products?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
-
 ## [Project management and accounting](/dynamics365/unified-operations/financials/project-management/overview-project-management-accounting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Intercompany invoicing](/dynamics365/unified-operations/financials/project-management/intercompany-invoicing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Configure intercompany project invoicing](/dynamics365/unified-operations/financials/project-management/tasks/configure-intercompany-project-invoicing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1986,6 +1980,8 @@
 ### [Setting up the components of a job](/dynamics365/unified-operations/talent/create-job?toc=dynamics365/unified-operations/retail/toc.json)
 
 ## Retail tasks
+### [Create a product](/dynamics365/unified-operations/supply-chain/pim/tasks/create-product?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Configure linked products](/dynamics365/unified-operations/supply-chain/pim/tasks/configure-linked-products?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Base price and trade agreements](/dynamics365/unified-operations/retail/tasks/base-price-trade-agreements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Category pricing rules to create trade agreements](/dynamics365/unified-operations/retail/tasks/category-pricing-rules-trade-agreements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Configure credit card processing](/dynamics365/unified-operations/retail/tasks/configure-credit-card-processing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
