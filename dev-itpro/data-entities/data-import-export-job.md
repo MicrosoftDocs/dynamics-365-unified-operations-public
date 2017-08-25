@@ -38,11 +38,11 @@ To create and manage data import and export jobs, use the Data management worksp
 When you export or import data, you perform the following steps: 
 1. Before you begin, define the format of the data to export or import. You can define formats using the Data sources setup tile.
 2. Create an import or export job that: 
- - Defines the type of import or export job
- - Identifies the entities to import or export
- - Organizes the entities, so that they are processed in logical groups, and in an order that makes sense
- - Sets the data format for the job
- - Determines whether to use staging tables
+   - Defines the type of import or export job
+   - Identifies the entities to import or export
+   - Organizes the entities, so that they are processed in logical groups, and in an order that makes sense
+   - Sets the data format for the job
+   - Determines whether to use staging tables
 3. Validate that source and target data are mapped correctly.
 4. Verify the security for your import or export job. 
 5. Run the import or export job.
