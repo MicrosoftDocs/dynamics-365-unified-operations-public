@@ -32,18 +32,18 @@ ms.dyn365.ops.version: Platform update 7
 
 You have two options for copying configuration data:
 1. If you are moving data between instances of Dynamics 365 for Finance and Operations, you must first export it from one company and then import it to another company.  
-2. If you want to move data from one legal entity to another in the same instance, you can use the Copy into legal entity feature.
+2. If you want to move data from one legal entity into another legal entity in the same instance, you can use the Copy into legal entity feature.
 
 
 ## Export a configuration
 
 The **Data management** workspace is your hub for managing configuration data projects and exporting data packages. To build a configuration, you must define a data project and export the information that is represented by entities.
 
-To create a configuration data project, follow these steps.
+To create an export configuration data project, follow these steps.
 
 1. Open the **Data management** workspace. If you're in Standard view, click **Enhanced view**.
 2. Click the **Export** tile.
-3. Click **New** to create a configuration data project, and enter an ID and name for the configuration.
+3. Click **New** to create an export configuration data project, and enter an ID and name for the configuration.
 4. Set the operation type for the data project to **Export**, and set the project category to **Configuration**.
 5. Add the entities that represent the information that you want to export. You can add entities by using several methods:
 
@@ -68,12 +68,12 @@ You're now ready to export a configuration. However, you might want to use some 
 - To temporarily prevent the entity from being used when you export a data project, use the check box in the **Disable** column.
 - To open the contents of the grid in a Microsoft Excel workbook, use the **Open in Excel** button. Modify the entities as you require, and then use **Publish** to upload the changes back into Microsoft Dynamics 365 for Finance and Operations.
 
-When you've completed your configuration, click **Export** to start the export. You can monitor the results on the **Execution details** page that appears. 
+When you've completed your configuration, click **Export** to start the export. You can monitor the results on the **Execution summary** page that appears. 
 
 When the export is completed, complete the following tasks:
 
 - Use the **Download** button on the **Export** page to download the configuration settings.
-- Use the **Download package** button in the **Data management** workspace or on the **Execution details** page to download the configuration settings and the data that was exported.
+- Use the **Download package** button in the **Data management** workspace or on the **Execution summary** page to download the configuration settings and the data that was exported.
 
 ## Setup considerations for some entities that are used to export configurations
 
@@ -184,7 +184,9 @@ The following entities require filters or special handling when you export the d
 | | Retail locator group owner | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in monthly update 3 for Spring release 2017. | 
 | | Retail devices | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in monthly update 3 for Spring release 2017. | 
 
-**Note:** When you set up a data project to copy a company, a legal entity filter for the source legal entity is automatically set up on any entity field that is determined to be a legal entity field. To export a single legal entity, you can create a copy company data project and create a template from it in the Templates form. The template can then be used in an export project to export the legal entity. 
+**Note:** When you set up a data project to copy into a legal entity, a legal entity filter for the source legal entity is automatically added to any entity field that is determined to be a legal entity field. 
+
+**Tip:** To export a single legal entity, you can create a copy into legal entity data project and create a template from it in the Templates form. The template can then be added to an export project and used to export the legal entity. 
                          
 ### Changing the legal entity value before import
 
@@ -238,11 +240,11 @@ To copy a configuration from one legal entity into another in the same instance,
 6. Select Yes if you want the number sequences to be copied. The entities needed to copy the numbers sequences will be added to the project.  
 
 7. If you have selected Yes for number sequences, select Yes or No to reset those number sequence to the smallest value
-8. In the legal entities fast tab, you can select existing legal entities as a destination or create new ones:
+8. In the legal entities fast tab, you can select existing legal entities as a destination or you can create new ones:
 
-    - **Create a legal entity** – Enter the legal entity ID, the legal entity name, and the region that it belongs in. Click on the Create legal entity button. The legal entity will be created and then added to the list of destination entities. **Note:** This functionality is available in monthly update 3 of the Spring 2017 release.
+    - **Create a legal entity** – Enter the legal entity ID, the legal entity name, and the region that it belongs in. Click on the **Create legal entity button**. The legal entity will be created and then added to the list of destination entities. **Note:** This functionality is available in monthly update 3 of the Spring 2017 release.
     
-    - **Select a legal entity** – Select one or more legal entities from the dropdown list. Click on the Add selected button. The legal entity will be created and then added to the list of destination entities.     
+    - **Select a legal entity** – Select one or more legal entities from the dropdown list. Click on the **Add selected** button. The legal entity will be created and then added to the list of destination entities.     
 
 9. Add the entities that represent the information that you want to copy. You can add entities by using several methods:
 
@@ -259,7 +261,7 @@ To copy a configuration from one legal entity into another in the same instance,
 
 After you've completed your configuration, click **Copy into legal entity** to start the import. The copy process will export the data from the source legal entity into the destination legal entity. Each destination legal entity will have its own import data project. You can monitor your results on the **Execution summary** page that appears. 
 
-If there are errors, you will see them in the execution details just like you would for an import project. You can edit the errors in the staging tables and resubmit the values for each data project.
+If there are errors, you will see them on the **Execution summary** page just like you would for an import project. You can edit the errors in the staging tables and resubmit the values for each data project.
 
 ## Additional information about entities
 
