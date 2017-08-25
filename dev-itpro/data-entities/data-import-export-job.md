@@ -5,7 +5,7 @@ title: Data import and export jobs
 description: 
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/17/2017
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,12 +36,11 @@ To create and manage data import and export jobs, use the Data management worksp
 
 ## Data import/export process 
 When you export or import data, you perform the following steps: 
-1. Before you begin, define the format of the data to export or import. You can define formats using the Data sources setup tile.
 2. Create an import or export job that: 
-   - Defines the type of import or export job
+   - Defines the project category
    - Identifies the entities to import or export
-   - Organizes the entities, so that they are processed in logical groups, and in an order that makes sense
    - Sets the data format for the job
+   - Sequences the entities, so that they are processed in logical groups, and in an order that makes sense
    - Determines whether to use staging tables
 3. Validate that source and target data are mapped correctly.
 4. Verify the security for your import or export job. 
@@ -49,8 +48,22 @@ When you export or import data, you perform the following steps:
 6. Validate that the job ran as expected.
 7. Clean up the staging tables. 
 
-## Sequencing entities
-Entities can be sequenced in a data template, or in import and export jobs. When you are running a job that contains more than one data entity, it is important to ensure that the data entities are properly sequenced. The primary reason for sequencing entities is to address any functional dependencies among entities. If entities don’t have any functional dependencies, then they can be scheduled for parallel import or export.
+## Choose a project category
+We strongly recommend that you take time to choose an appropriate project category for your import or export job. Project categories can help you manage related jobs, and more easily validate that you've chosen the right job to run. Categories include Project, Configuration, Integration, and Other. 
+
+## Choose entities
+You can add specific entities to an export job, or choose a template to apply. Templates populate a job with a list of entities. The **Apply template** option is available after you have given the job a name, and saved it. 
+
+## Choose a data format
+When you select an entity, you must choose the format of the data that will be exported or imported. Formats are defined using the Data sources setup tile. Many organizations start from the formats that ship in the demo data set, which include: 
+- AX (data to be imported or exported in the same format as Finance and Operations)
+- ColonSeparated
+- CSV
+- Excel
+- Package 
+
+## Sequence entities
+Entities can be sequenced in a data template or in import and export jobs. When you are running a job that contains more than one data entity, it is important to ensure that the data entities are properly sequenced. The primary reason for sequencing entities is to address any functional dependencies among entities. If entities don’t have any functional dependencies, then they can be scheduled for parallel import or export.
 
 ### Execution units, levels, and sequences
 The execution unit, level in execution unit, and sequence of an entity are used to control the order that the data is exported or imported in.
@@ -69,9 +82,6 @@ The **Resequencing** menu is enabled when multiple entities are selected. You ca
 
 #### Sorting
 Use can use the **Sort by** option to view the entity list in sequential order.
-
-Use cases
-Following are some of the use cases when resequencing is useful.
 
 ## Mapping
 Mapping is a function that is applicable to both import and export jobs. 
