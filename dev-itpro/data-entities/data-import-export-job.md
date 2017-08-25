@@ -49,10 +49,10 @@ When you export or import data, you perform the following steps:
 7. Clean up the staging tables. 
 
 ## Create a data import or export job
-A data import or export job can be run once, or run many times. You can save your jobs as 
+A data import or export job can be run once, or run many times. 
 
 ### Choose a project category
-We strongly recommend that you take time to choose an appropriate project category for your import or export job. Project categories can help you manage related jobs, and more easily validate that you've chosen the right job to run. Categories include Project, Configuration, Integration, and Other. 
+We recommend that you take time to choose an appropriate project category for your import or export job. Project categories can help you manage related jobs. 
 
 ### Choose entities
 You can add specific entities to an export job, or choose a template to apply. Templates populate a job with a list of entities. The **Apply template** option is available after you have given the job a name, and saved it. 
