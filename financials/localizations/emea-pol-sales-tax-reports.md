@@ -3,7 +3,7 @@
 
 title: Sales tax reports for Poland (setting up tax information and other features)
 description: This topic provides information about Polish VAT reporting and the information that is legally required in VAT registers for Poland. 
-author: annbe
+author: ShylaThompson
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
@@ -21,10 +21,9 @@ ms.reviewer: shylaw
 ms.search.scope: AX 7.0.1, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 274063
-ms.assetid: 2cc5a59c-8c93-4122-afe7-5a1bd73b933d
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: annbe
+ms.author: shylaw
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
 

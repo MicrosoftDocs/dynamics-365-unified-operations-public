@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Introduction to Dynamics 365 for Finance and Operations
 [!include[banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations is Microsoft’s business application for enterprises. It enables people to quickly make smarter decisions through an intelligent user interface that provides access to real-time insights and data. It enables businesses to transform and innnovate by delivering proven business logic that allows them to redesign their business processes faster. It gives businesses the flexibility to grow at their own pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
+Microsoft Dynamics 365 for Finance and Operations is Microsoft’s business application for enterprises. It enables people to quickly make smarter decisions through an intelligent user interface that provides access to real-time insights and data. It enables businesses to transform and innovate by delivering proven business logic that allows them to redesign their business processes faster. It gives businesses the flexibility to grow at their own pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
 
-This documentation can help you learn how to make Dynamics 365 for Finance and Operations work for your business. It is connected to documentation for the related products in the Unified Operations suite, Dynamics 365 for Retail, and Dynamics 365 for Talent. 
+This documentation can help you learn how to make Dynamics 365 for Finance and Operations work for your business. It is connected to documentation for the related products: Dynamics 365 for Retail, and Dynamics 365 for Talent. 
 
 <table>
 <colgroup>
@@ -93,7 +93,7 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 <p><a href="../dev-itpro/analytics/financial-reporting-intro">Financial reporting</a></p>
 <p><a href="../dev-itpro/analytics/general-electronic-reporting">Regulatory reporting</a></p>
 
-<h3><a href="../dev-itpro/mobile-apps/mobile-platform">Mobile platform</a></h3>
+<h3><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page">Mobile platform</a></h3>
 
 <h3>Developer functionality</h3>
 <p><a href="../dev-itpro/dev-tools/developer-home-page">Developer home page</a></p>

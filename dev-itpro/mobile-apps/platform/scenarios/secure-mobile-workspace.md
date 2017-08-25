@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Help secure a mobile app workspace
+title: Help secure mobile workspaces
 description: This topic describes how to limit a user's access to a workspace.
 author: makhabaz
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Help secure a mobile app workspace
+# Help secure mobile workspaces
 This topic describes how to limit a user's access to a workspace.
 
 ## Assign a menu item to workspace

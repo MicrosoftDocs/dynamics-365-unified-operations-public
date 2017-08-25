@@ -5,7 +5,7 @@ title: Purchase complementary fiscal documents for Brazil
 description: This topic describes the concept of a purchase complementary invoice for the Brazilian localization.
 author: sndray
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -67,4 +67,9 @@ Before you can create and post purchase complementary fiscal document, the follo
 [![Example that shows an original invoice together with purchase complementary fiscal documents of each of the three types](./media/purchcomplementary-1024x349.png)](./media/purchcomplementary.png)
 
 
+For more information, see the following topics:
+
+[Create and post a purchase complementary fiscal document (Brazil)](tasks/br-00026-1-create-post-purchase-complementary-fiscal-document.md)
+
+[Cancel a purchase complementary fiscal document (Brazil)](tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md)
 

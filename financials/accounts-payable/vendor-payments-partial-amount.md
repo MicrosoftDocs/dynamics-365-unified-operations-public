@@ -3,9 +3,9 @@
 
 title: Vendor payments for a partial amount
 description: Sometimes, you might make a payment to a vendor that is less than the amount of an invoice. This article describes the various options for handling this situation. The options that are available to you depend on your business requirements and configuration. 
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 14321
 ms.assetid: 9a17075e-5325-4d55-a1e5-1791b8c460a0
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -59,4 +59,4 @@ For example, you receive a 2-percent cash discount if the invoice is paid within
 You might make a partial payment where the amount that must still be settled is very small. For example, the vendor invoice is for 1,000.00, and you pay 999.90. If the remaining amount is less than the amount that is specified for overpayments or underpayments on the **Accounts payable parameters** page, the difference is automatically posted to an overpayment/underpayment ledger account.
 
 
-
+For more information, see [Vendor payment overview](../cash-bank-management/tasks/vendor-payment-overview.md).

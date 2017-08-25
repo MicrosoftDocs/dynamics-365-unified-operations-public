@@ -3,9 +3,9 @@
 
 title: Use a customer payment to settle multiple invoices that span multiple discount periods
 description: This article shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in his article highlight how the cash discounts that are taken vary, depending on when the payment is made.
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 14511
 ms.assetid: 3e42ccb5-b9d7-4a70-8db9-4206d10fd433
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

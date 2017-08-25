@@ -239,7 +239,7 @@ metadataService.configureWorkspace({ properties-to-set });
 ### findAction
 
 
-findAction(taskName: string): [PageMetadata](view-model-ipage-ipagemetadata.md)
+findAction(actionName: string): [PageMetadata](view-model-ipage-ipagemetadata.md)
 
 Gets a copy of the current metadata instance of a specified Action, for the purpose of inspecting the metadata
 (not to be used for changing the metadata).
@@ -257,7 +257,7 @@ var newCustomerTaskMetadata = metadataService.findTask("New-customer");
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| taskName|string|An action name|
+| actionName|string|An action name|
 
 #### Returns [PageMetadata](view-model-ipage-ipagemetadata.md)
 
@@ -284,7 +284,7 @@ var firstNameControl = metadataService.findControl(newCustomerTaskMetadata, 'FMC
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| componentMetadata|any|A metadata instance|
+| componentMetadata|any|A metadata instance of the page or action|
 | controlName|string|A control name|
 
 #### Returns [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md)
@@ -321,9 +321,14 @@ var reservationDetailsMetadata = metadataService.findPage("Reservation-details")
 ### getFilterExpression
 
 
-getFilterExpression(pageName: string, listControlName: string, controlName: string, operator: [ExpressionOperator](../modules/services-business-logic-services.md#expressionoperator), value: any): DataFilter
+getFilterExpression(pageName: string, listControlName: string, controlName: string, operator: [ExpressionOperator](../modules/services-business-logic-services.md#expressionoperator), value: string): DataFilter
 
-
+Create a DataFilter object for a list control based on the provided options.
+Example:
+```javascript
+var filter = metadataService.getFilterExpression(
+ pageNames.AllCustomers, controlNames.CustomerList, controlNames.CustomerFullName, "Is", firstCustomerName),
+```
 
 
 #### Parameters
@@ -334,28 +339,32 @@ getFilterExpression(pageName: string, listControlName: string, controlName: stri
 | listControlName|string||
 | controlName|string||
 | operator|[ExpressionOperator](../modules/services-business-logic-services.md#expressionoperator)||
-| value|any||
+| value|string||
 
 #### Returns DataFilter
+
+
 
 ### getFormReference
 
 
-getFormReference(componentName: string, filterContext: any, excludeContext: boolean, filterLocalOnly?: boolean): [NavigationArgs](view-model-ipage-inavigationargs.md)
+getFormReference(componentName: string, filterContext: DataFilter, excludeContext: boolean, filterLocalOnly?: boolean): [NavigationArgs](view-model-ipage-inavigationargs.md)
 
-
+Create an INavigationArgs object for a specific page/action to be used with a navigation control.
 
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| componentName|string||
-| filterContext|any||
+| componentName|string|Name of the action/page|
+| filterContext|DataFilter||
 | excludeContext|boolean||
 | filterLocalOnly?|boolean||
 
 #### Returns [NavigationArgs](view-model-ipage-inavigationargs.md)
+
+
 
 ### hideNavigation
 

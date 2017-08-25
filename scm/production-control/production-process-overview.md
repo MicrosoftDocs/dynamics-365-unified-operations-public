@@ -43,7 +43,7 @@ The **Production control** module is linked to other modules, such as **Product 
 
 The production process is typically influenced by the cost accounting and inventory valuation methods that are chosen for a specific production process. Finance and Operations supports both actual cost (first in, first out \[FIFO\]; last in, first out \[LIFO\]; moving average; and periodic weighted average) and standard cost methods. Lean manufacturing is implemented based on the backflush costing principle.  
 
-The choice of the cost measurment methods also defines the requirements for reporting about material and resource consumption during the production process. Typically, actual cost methods require accurate reporting on the job level, whereas periodic costing methods allow for less granular reporting of material and resource consumption.
+The choice of the cost measurement methods also defines the requirements for reporting about material and resource consumption during the production process. Typically, actual cost methods require accurate reporting on the job level, whereas periodic costing methods allow for less granular reporting of material and resource consumption.
 
 ## Mixed mode manufacturing
 Different products and production topologies require the application of different order types. Finance and Operations can apply the various order types in a mixed mode. In other words, all order types can occur during the end-to-end process of producing one finished product.

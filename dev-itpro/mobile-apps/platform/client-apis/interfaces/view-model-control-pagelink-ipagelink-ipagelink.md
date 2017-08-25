@@ -33,10 +33,18 @@ Pagelink control type. A pagelink is a control that navigates to another page.
 
 ## Index
 
+### Properties
+
+* [container](view-model-control-pagelink-ipagelink-ipagelink.md#container)
+* [generic](view-model-control-pagelink-ipagelink-ipagelink.md#generic)
+* [getDataSource](view-model-control-pagelink-ipagelink-ipagelink.md#getdatasource)
+* [hidden](view-model-control-pagelink-ipagelink-ipagelink.md#hidden)
+
 ### Methods
 
 * [allowsNavigation](view-model-control-pagelink-ipagelink-ipagelink.md#allowsnavigation)
 * [applyDesign](view-model-control-pagelink-ipagelink-ipagelink.md#applydesign)
+* [dataContext](view-model-control-pagelink-ipagelink-ipagelink.md#datacontext)
 * [getCount](view-model-control-pagelink-ipagelink-ipagelink.md#getcount)
 * [getDesign](view-model-control-pagelink-ipagelink-ipagelink.md#getdesign)
 * [getNavigationHandler](view-model-control-pagelink-ipagelink-ipagelink.md#getnavigationhandler)
@@ -45,6 +53,44 @@ Pagelink control type. A pagelink is a control that navigates to another page.
 * [parent](view-model-control-pagelink-ipagelink-ipagelink.md#parent)
 * [root](view-model-control-pagelink-ipagelink-ipagelink.md#root)
 * [showCount](view-model-control-pagelink-ipagelink-ipagelink.md#showcount)
+
+## Properties
+
+### container
+
+container: boolean (optional) 
+
+True if the control is a container.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)
+
+
+### generic
+
+generic: boolean (optional) 
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)
+
+
+### getDataSource
+
+getDataSource: function(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)
+
+
+### hidden
+
+hidden: boolean
+
+True if the control is hidden.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)
+
 
 ## Methods
 
@@ -75,6 +121,17 @@ If a design already exists, the prototype chain of the design will be preserved.
 | design|[PageLinkDesign](view-model-control-pagelink-ipagelink-ipagelinkdesign.md)|object containing design properties as keys|
 
 #### Returns void
+
+### dataContext
+
+
+dataContext(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)
+
+#### Returns any
 
 ### getCount
 

@@ -25,7 +25,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: Platform update 8
+ms.dyn365.ops.version: Platform update 9
 
 ---
 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9. This version was released in July 2017 and has a build number of 7.0.4612.16224.
+This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9. This version was released in July 2017 and has a build number of 7.0.4612.35162.
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 9, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=853624).
 
@@ -96,3 +96,12 @@ The system will find any method that wraps method1. It will randomly execute one
 The functionality described in this topic is available as of Platform update 9 (CoC and access to protected methods and variables).
 
 However, this functionality requires the class being augmented to be compiled on Platform update 9. Because the current releases of the Dynamics 365 for Finance and Operations, Enterprise editon applications have been compiled on Platform update 8 or earlier, you will need to recompile a base package (like Application Suite) on Platform update 9 or newer in order to wrap a method that is defined in that package.  
+
+## OData batch request size configuration
+The default OData batch request size is 1,000 records. Microsoft can now change the size of OData batch requests for customers. Customers must log a support request through LCS to the Dynamics Service Engineering team (DSE) to increase the batch size up to a maximum value of 5,000 records. For more information, see [Submit a request to the DSE team](../lifecycle-services/submit-request-dynamics-service-engineering-team.md)
+
+## System startup performance for virtual machines
+Performance issues with loading metadata have been addressed, so you should no longer experience a system freeze when a virtual machine starts.
+
+> [!NOTE]
+> This issue will still occur on virtual machines that are used as build machines (VMs that have enlistments and compile code).  

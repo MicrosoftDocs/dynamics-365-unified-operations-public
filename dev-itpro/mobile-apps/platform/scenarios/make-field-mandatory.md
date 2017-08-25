@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Make a field mandatory by using workspace classes
+title: Set up mandatory fields through workspace classes
 description: This topic explains how to use workspace classes to make a field mandatory.
 author: makhabaz
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Make a field mandatory by using workspace classes
+# Set up mandatory fields through workspace classes
 When you use the mobile app designer to select fields for actions, some properties can be inferred. These properties include the field length, the type, and whether the field is mandatory. The workspace classes can be used to update these properties. For example, you might want to specify that the **Name** field is mandatory when a customer record is created, as shown in the following images.
 
 ![Action and fields](media/workspace-api/MarkFieldAsMandatoryDesigner.png)

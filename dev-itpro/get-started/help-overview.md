@@ -40,7 +40,7 @@ This article provides an overview of the components of the Microsoft Dynamics 36
 > [!NOTE] 
 > The following products are closely related: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; and Dynamics 365 for Talent. The same functionality may appear in all 3 products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations. Topics that are written for one product may apply to the same functionality in a related product.
 
-The Help system is shared by all Unified Operations products:
+The Help system is shared by the following products:
 - Dynamics 365 for Finance and Operations, Enterprise edition
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
@@ -80,7 +80,7 @@ site:docs.microsoft.com dynamics 365 "search term".
 
 ![Site search results](./media/site-search-results-2.png)
 
-### The docs.microsoft.com table of contents for Unified Operations
+### The docs.microsoft.com table of contents
 All products share a single table of contents on the docs site, which enables customers to see the context of the topic they are in. It also enables you to use the Filter control to find topics that you are looking for.
 
 ### How can I contribute? 
@@ -108,7 +108,7 @@ On the right, enter an email address, and a new password to create a new account
 ## Task guides
 A Task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a Task guide from the Help pane. When you first click a Task guide, the Help pane will show the step-by-step instructions for the task. Localized Task guides are now available. 
 
-We will provide different sets of task guides for each Unified Operations product. The section Accessing Task guides from the Help pane describes how to find the correct task guides for your product. 
+We will provide different sets of task guides for each product such as Dynamics 365 for Retail, Dynamics 365 for Finance and Operations, or Dynamics 365 for Talent. The section Accessing Task guides from the Help pane describes how to find the correct task guides for your product. 
 
 ![Task guide reading view](./media/task-guide-ops.png)
 
@@ -176,7 +176,7 @@ Translated Task guides are released in libraries with "All languages" in the tit
 -   If a Task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
 
 ## Additional resources
-The following table lists websites that provide Unified Operations content. Our content websites are organized to support the customer life cycle. Each phase is supported by a different set of sites. Sites that have an asterisk (\*) next to the name require that you sign in by using an account that is associated with a service plan.
+The following table lists our websites. Our content websites are organized to support the customer life cycle. Each phase is supported by a different set of sites. Sites that have an asterisk (\*) next to the name require that you sign in by using an account that is associated with a service plan.
 
 | Site                                                                     | Description                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

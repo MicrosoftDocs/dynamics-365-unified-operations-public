@@ -140,19 +140,20 @@ Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-f
 
 ### flexSize
 
-flexSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (optional) 
+flexSize: string (optional) 
 
-This property is an alias for the CSS property "flex".
-Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "flex" property.
+One number or two numbers written as a string. E.g. "(size to grow) [(size-to-shrink)]" to accomodate available space in the immediate flex container.
+This property is an alias for the CSS property "flex". Please refer to
+[this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "flex" property.
 
 > Inherited from [Design](view-model-ipage-idesign.md).[flexSize](view-model-ipage-idesign.md#flexsize)
 
 
 ### fontSize
 
-fontSize: string (optional) 
+fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (optional) 
 
-A number written as a string. E.g. "3".
+The proportional text size
 
 > Inherited from [Design](view-model-ipage-idesign.md).[fontSize](view-model-ipage-idesign.md#fontsize)
 

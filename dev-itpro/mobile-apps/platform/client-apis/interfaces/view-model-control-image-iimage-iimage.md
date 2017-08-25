@@ -36,6 +36,10 @@ Images can be of any of the following types: DataUri, Base64, URL, AOTResource, 
 
 ### Properties
 
+* [container](view-model-control-image-iimage-iimage.md#container)
+* [generic](view-model-control-image-iimage-iimage.md#generic)
+* [getDataSource](view-model-control-image-iimage-iimage.md#getdatasource)
+* [hidden](view-model-control-image-iimage-iimage.md#hidden)
 * [imageSource](view-model-control-image-iimage-iimage.md#imagesource)
 * [imageView](view-model-control-image-iimage-iimage.md#imageview)
 * [placeholderClass](view-model-control-image-iimage-iimage.md#placeholderclass)
@@ -44,6 +48,7 @@ Images can be of any of the following types: DataUri, Base64, URL, AOTResource, 
 ### Methods
 
 * [applyDesign](view-model-control-image-iimage-iimage.md#applydesign)
+* [dataContext](view-model-control-image-iimage-iimage.md#datacontext)
 * [getDesign](view-model-control-image-iimage-iimage.md#getdesign)
 * [isEditable](view-model-control-image-iimage-iimage.md#iseditable)
 * [metadata](view-model-control-image-iimage-iimage.md#metadata)
@@ -51,6 +56,42 @@ Images can be of any of the following types: DataUri, Base64, URL, AOTResource, 
 * [root](view-model-control-image-iimage-iimage.md#root)
 
 ## Properties
+
+### container
+
+container: boolean (optional) 
+
+True if the control is a container.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)
+
+
+### generic
+
+generic: boolean (optional) 
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)
+
+
+### getDataSource
+
+getDataSource: function(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)
+
+
+### hidden
+
+hidden: boolean
+
+True if the control is hidden.
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)
+
 
 ### imageSource
 
@@ -100,6 +141,17 @@ If a design already exists, the prototype chain of the design will be preserved.
 | design|[ImageDesign](view-model-control-image-iimage-iimagedesign.md)|object containing design properties as keys|
 
 #### Returns void
+
+### dataContext
+
+
+dataContext(): any
+
+
+
+> Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)
+
+#### Returns any
 
 ### getDesign
 

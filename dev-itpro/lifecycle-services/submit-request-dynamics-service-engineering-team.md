@@ -5,7 +5,7 @@ title: Submit a request to the Dynamics Service Engineering team
 description: You can submit requests directly to the Dynamics Service Engineering team by using LCS. 
 author: manalidongre
 manager: AnnBe
-ms.date: 07/26/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -51,17 +51,7 @@ The following request types are supported by this functionality:
 -   **Database refresh** – This includes, for example, the ability to refresh a database from Production to Sandbox.
 
   > [!NOTE]
-  > If you’re using Retail components, you must perform additional steps to do a database refresh.
-  > 1. Navigate to the Shared asset library.
-  > 2. Select **Software deployable package**.
-  > 3. Download the **Environment reprovisioning tool**.
-  > 4. Navigate to the asset library for your project 
-  > 5. Select **Software deployable package** and select **New** to create a new package.
-  > 6. Specify a name and description. You can use **Environment reprovisioning tool** for the package name.
-  > 7. Upload the previously downloaded package.
-  > 8. Navigate to the **Environment details** page for your target environment
-  > 9. Select **Maintain** > **Apply updates**.
-  > 10. Select the Environment reprovisioning tool that you previously uploaded and click **Apply** to apply the package.
-  > 11. Monitor the progress of the package deployment. 
+  > Once the database refresh request has been completed by DSE, you must perform the following additional steps.
+ [!include[environment-reprovision](../includes/environment-reprovision.md)]
  
 

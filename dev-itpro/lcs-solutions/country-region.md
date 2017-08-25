@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Finance and Operations includes functionality for the country/regions documented in the [Product availability guide](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). This functionality is enabled based on the primary address of the active legal entity. 
+Microsoft Dynamics 365 for Finance and Operations includes functionality for the country/regions documented in the [International product availability guide](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). This functionality is enabled based on the primary address of the active legal entity. 
 
-This topic includes lists of resources that can help you learn more about country/region-specific functionality. 
+This topic includes lists of resources that can help you learn more about country/region-specific solutions, updates, alerts and functionality. 
 
 ## Developing localized solutions
 The following resources provides guidance and information that can help developers and ISVs who are creating country/region-specific customizations or are creating a solution for a country that Microsoft does not support.
@@ -101,9 +101,13 @@ The following sections list resources by country/region.
 -   [CODA bank statement](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import)
 -   [Intervat tax declaration](/dynamics365/unified-operations/financials/localizations/emea-bel-intervat-tax-declaration)
 -   [PRODCOM report setup](/dynamics365/unified-operations/financials/localizations/emea-bel-prodcom-report)
+-   [Reconciliation reports](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports)
 
 ### Brazil
 
+-   [CIAP fixed asset](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset)
+-   [Configure fiscal books](/dynamics365/unified-operations/financials/localizations/latam-bra-configure-fiscal-books)
+-   [Export and import transactions for General ledger consolidation for Brazil](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions)
 -   [Fiscal books](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-books)
 -   [Fiscal document text placeholders](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders)
 -   [Fiscal documents](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework)
@@ -113,10 +117,12 @@ The following sections list resources by country/region.
 -   [Journals generated during the electronic payment return process](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process)
 -   [NF-e process](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process)
 -   [Parameters for legal entities](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters)
+-   [Process electronic payment remittances for Brazil](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances)
 -   [Purchase complementary fiscal documents](/dynamics365/unified-operations/financials/localizations/latam-bra-purchase-complementary-fiscal-documents)
 -   [Referenced fiscal documents](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents)
 -   [Sales complementary fiscal documents](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents)
 -   [Service electronic fiscal document](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document)
+-   [Set up, import, and verify NF-e XML documents and DANFE](/dynamics365/unified-operations/financials/localizations/latam-bra-set-up-import-nfe)
 -   [Tax attributes](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-attributes)
 -   [Tax payments](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-payments)
 -   [Taxes](/dynamics365/unified-operations/financials/localizations/latam-bra-calculate-taxes)
@@ -164,6 +170,7 @@ The following sections list resources by country/region.
 - [Exchange rate adjustments](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
 - [File formats for methods of payment](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
 - [Fixed assets disposal for Estonia and Lithuania](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
+- [Import ISO20022 files](/dynamics365/unified-operations/financials/localizations/emea-ISO20022-file-formats)
 - [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
 - [Inventory journal reports](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names)
 - [Invoice and packing slip numbering for Latvia and Lithuania](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
@@ -179,6 +186,7 @@ The following sections list resources by country/region.
 - [SEPA Direct debit overview](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
 - [Set up customer and vendor compensation](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
 - [Set up signers for print forms](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
+- [Storno accounting](/dynamics365/unified-operations/financials/localizations/emea-storno)
 - [Tax directives](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
 - [Update how amounts are displayed on reports and documents](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms) 
 - [VAT exchange rates](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
@@ -251,6 +259,7 @@ The following sections list resources by country/region.
 
 -   [Fixed asset repair statement](/dynamics365/unified-operations/financials/localizations/emea-ltu-fixed-asset-repair-statement)
 -   [Invoice and packing slip numbering](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
+-   [VAT statement details](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details)
 
 ### Mexico
 
@@ -301,6 +310,7 @@ The following sections list resources by country/region.
 -   [Fixed asset revaluation groups](/dynamics365/unified-operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
 -   [Intra-community VAT](/dynamics365/unified-operations/financials/localizations/emea-esp-intra-community-vat)
 -   [One-time customers](/dynamics365/unified-operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
+-   [Print checks by using the Spanish layout](/dynamics365/unified-operations/financials/localizations/emea-esp-print-checks-with-spanish-layout)
 -   [Spanish promissory note options](/dynamics365/unified-operations/financials/localizations/emea-esp-promissory-note-options)
 -   [Sales and purchase cycles](/dynamics365/unified-operations/financials/localizations/emea-esp-sales-purchase-cycle)
 -   [Special entries and opening sheets](/dynamics365/unified-operations/financials/localizations/emea-esp-opening-sheets-spain)
@@ -318,6 +328,7 @@ The following sections list resources by country/region.
 ### Thailand
 
 -   [Stock card reports](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports)
+-   [Substitution/adjustment tax invoice for Thailand](/dynamics365/unified-operations/financials/localizations/apac-tha-substitution-and-adjustment-invoices)
 -   [Unrealized VAT](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat)
 -   [Withholding tax](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax)
 
@@ -327,6 +338,7 @@ The following sections list resources by country/region.
 
 ### United States
 
+-   [Form 1099 in the public sector](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector)   
 -   [Form I-9 verification](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
 -   [Year-end 1099 reporting](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [Payroll](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll)
