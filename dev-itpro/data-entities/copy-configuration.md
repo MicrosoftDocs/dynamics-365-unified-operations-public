@@ -178,16 +178,13 @@ The following entities require filters or special handling when you export the d
 | Inventory management | Warehouse current postal address | Apply a filter to Company. |
 | | Site current postal address | Apply a filter to Company. | 
 | | Tracking number groups | The entity automatically filters the Number sequence scope data area by the legal entity. Therefore, you don't require a filter. However, if you must change the legal entity, the legal entity is stored in the table. | 
-
-
-**Note:** When you set up a data project to copy a company, a legal entity filter for the source legal entity is automatically set up on any entity field that is determined to be a legal entity field. To export a single legal entity, you can create a copy company data project and create a template from it in the Templates form. The template can then be used in an export project to export the legal entity. 
-=======
 | Retail | POS registers | Apply a filter to Legal entity. This entity was added to the Retail template in monthly update 3 for Spring release 2017. | 
 | | Retail store address book | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in monthly update 3 for Spring release 2017. | 
 | | Retail locator group member | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in monthly update 3 for Spring release 2017. | 
 | | Retail locator group owner | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in monthly update 3 for Spring release 2017. | 
 | | Retail devices | There is no legal entity filter for this entity so the export will include records for all legal entities. This entity was added to the Retail template in monthly update 3 for Spring release 2017. | 
 
+**Note:** When you set up a data project to copy a company, a legal entity filter for the source legal entity is automatically set up on any entity field that is determined to be a legal entity field. To export a single legal entity, you can create a copy company data project and create a template from it in the Templates form. The template can then be used in an export project to export the legal entity. 
                          
 ### Changing the legal entity value before import
 
@@ -226,16 +223,16 @@ You're now ready to import a configuration. However, you might want to use some 
 - If you must change the entity mappings, use the **View map** button.
 - To temporarily prevent the entity from being used when you export a data project, use the check box in the **Disable** column.
 
-## Copy a company
+## Copy into a legal entity
 
-The **Data management** workspace is also your hub for copying configuration information from one legal entity to another. The process resembles an export and import in one step. Much like an import, the process will add information to a legal entity if the data doesn't exist in that legal entity or update the information if it already exists.
+The **Data management** workspace is also your hub for copying configuration information from one legal entity into another. The process resembles an export and import in one step. Much like an import, the process will add information to a legal entity if the data doesn't exist in that legal entity or update the information if it already exists.
 
-To copy a configuration from one legal entity to another in the same instance, follow these steps.
+To copy a configuration from one legal entity into another in the same instance, follow these steps.
 
 1. Open the **Data management** workspace. If you're in Standard view, click **Enhanced view**.
-2. Click the **Copy company** tile.
+2. Click the **Copy into legal entity** tile.
 3. Click **New** to create a configuration data project, and enter an ID and name for the configuration.
-4. Set the operation type for the data project to **Copy company**, and set the project category to **Configuration**.
+4. Set the operation type for the data project to **Copy into legal entity**, and set the project category to **Configuration**.
 
 5. Select the legal entity that will be the source of the data to copy. The form will default to the legal entity that you are currently using.
 6. Select Yes if you want the number sequences to be copied. The entities needed to copy the numbers sequences will be added to the project.  
@@ -245,8 +242,7 @@ To copy a configuration from one legal entity to another in the same instance, f
 
     - **Create a legal entity** – Enter the legal entity ID, the legal entity name, and the region that it belongs in. Click on the Create legal entity button. The legal entity will be created and then added to the list of destination entities. **Note:** This functionality is available in monthly update 3 of the Spring 2017 release.
     
-    - **Update a legal entity** – Select one or more legal entities from the dropdown list. Click on the Add selected button. The legal entity will be created and then added to the list of destination entities. **Note:** This functionality is available in monthly update 3 of the Spring 2017 release.
-    
+    - **Select a legal entity** – Select one or more legal entities from the dropdown list. Click on the Add selected button. The legal entity will be created and then added to the list of destination entities.     
 
 9. Add the entities that represent the information that you want to copy. You can add entities by using several methods:
 
@@ -260,9 +256,10 @@ To copy a configuration from one legal entity to another in the same instance, f
 **Note:** Entities for documents and transactions are not available when copying a configuration.
 
 6. Click **Remove entity** to remove any selected entities, as required.
-After you've completed your configuration, click **Copy company** to start the import. The copy process will export the data from the source legal entity into the destination legal entity. Each destination legal entity will have its own import data project. You can monitor your results on the **Execution details** page that appears. 
-If there are errors, you will see them in the execution details just like you would for an import project. You can edit the errors in the staging tables and resubmit the values for each data project.
 
+After you've completed your configuration, click **Copy into legal entity** to start the import. The copy process will export the data from the source legal entity into the destination legal entity. Each destination legal entity will have its own import data project. You can monitor your results on the **Execution summary** page that appears. 
+
+If there are errors, you will see them in the execution details just like you would for an import project. You can edit the errors in the staging tables and resubmit the values for each data project.
 
 ## Additional information about entities
 
