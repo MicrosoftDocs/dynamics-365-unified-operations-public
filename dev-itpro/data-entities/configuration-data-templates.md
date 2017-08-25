@@ -35,7 +35,7 @@ Configuration data templates are predefined lists of entities for each module ar
 > Default configuration templates were delivered in the July 2017 release of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. The Configuration data project feature is available in Platform update 7. You can create and use your own templates in the current product release.
 
 ## Create a new configuration data template
-The **Template** page in the **Data management** workspace provides tools that let you create a template of entities. This page resembles the configurations page, and the two features work in a similar manner.
+The **Template** page in the **Data management** workspace provides tools that let you create a template of entities. This page resembles the configurations page, and the two features work in a similar manner. You must use the **enhanced view** to take advantage of the new features.
 
 To create a template, follow these steps.
 
@@ -55,9 +55,9 @@ Your template can now be used in a project. However, you might want to use some 
 - To create a template from a project, click **New** to create a template. Enter an ID and name for the template, and then click **Replace template from project**. In the list of projects that appears, select a project, and then click **Create template** to bring the project entities from that project into the open template. The values in the open template will be overwritten.
 
 ## (Delivered in the Spring 2017 release) Default data templates
-In the spring release of Dynamics 365 for Finance and Operations, Enterprise edition, we releasde predefined templates to help you create configuration data projects. The templates are sequenced, so that the data that the entities generate will be processed in the correct sequence. Our predefined templates are also designed to maintain the correct sequence when more than one template is added to the same data project. For more information, see the "Sequencing in the default templates" section.
+In the spring release of Dynamics 365 for Finance and Operations, Enterprise edition, we released predefined templates to help you create configuration data projects. The templates are sequenced, so that the data that the entities generate will be processed in the correct sequence. Our predefined templates are also designed to maintain the correct sequence when more than one template is added to the same data project. For more information, see the "Sequencing in the default templates" section.
 
-Default templates are delivered together with each new release of Dynamics 365 for Finance and Operations. Our long-term goal is to provide the templates in Microsoft Dynamics Lifecycle Services (LCS), so that you can push them to an instance of Dynamics 365 for Financial and Operations. However, for the current releases, click the **Templates** tile in the **Data management** workspace, and then click **Load default templates** to load the templates. You must be using the Enhanced view to see the **Load default templates** menu.
+Default templates are delivered together with each new release of Dynamics 365 for Finance and Operations. Our long-term goal is to provide the templates in Microsoft Dynamics Lifecycle Services (LCS), so that you can push them to an instance of Dynamics 365 for Financial and Operations. However, for the current releases, click the **Templates** tile in the **Data management** workspace, and then click **Load default templates** to load the templates. You must be using the **Enhanced view** to see the **Load default templates** menu.
 
 After the templates are loaded, you can change them to suit your business requirements. If you ever want to retrieve the original default templates, you can use the **Load default templates** button to add them back to your system. This step will replace the templates with the latest versions. If you have made changes to the templates, you can make a copy of the old templates by exporting them. Please note that loading default templates and importing templates required system administrator access to ensure that all entities are correctly loaded into the template.
 
