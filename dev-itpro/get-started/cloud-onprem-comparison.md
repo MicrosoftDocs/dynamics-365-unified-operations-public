@@ -86,7 +86,6 @@ The following table shows whether each feature is available in:
 | | Dynamics Translation Service| Yes | Yes |
 | | Global coverage - Retail| Yes | No |
 | Manufacturing| | Yes | Yes |
-| | Manufacturing – Gantt control| Yes | Yes |
 | Master planning and forecasting| | Yes | Yes |
 | Mobile  | | | |
 | | Mobile framework| Yes | Yes |
