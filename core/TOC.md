@@ -133,7 +133,7 @@
 ## Data management and integration
 
 ### [Data entities, projects, and packages](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Data entities and packages framework](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Data entities and packages framework](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Configuration data projects](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Configuration data packages](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-packages?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
