@@ -5,7 +5,7 @@ title: Synchronize sales order headers and lines from Finance and Operations to 
 description: The topic discusses the templates and underlying tasks that are used to synchronize sales order headers and lines from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to Microsoft Dynamics 365 for Sales. 
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/14/2017
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
