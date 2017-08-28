@@ -2248,6 +2248,7 @@
 #### Fundamentals
 ##### [Intrusive customizations](/dynamics365/unified-operations/dev-itpro/extensibility/intrusive-customizations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Class extensions](/dynamics365/unified-operations/dev-itpro/extensibility/class-extensions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Class extension: Method wrapping and Chain of Command](/dynamics365/unified-operations/dev-itpro/extensibility/method-wrapping-coc?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Naming guidelines](/dynamics365/unified-operations/dev-itpro/extensibility/naming-guidelines-extensions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### How do I?
 ##### [Add an enum value](/dynamics365/unified-operations/dev-itpro/extensibility/add-enum-value?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
