@@ -46,7 +46,8 @@ The following table shows whether each feature is available in:
 | Cost accounting | | Yes | Yes |
 | | Cost accounting content pack for Power BI| Yes | No |
 | | Cost accounting workspace for mobile app| Yes | No |
-| Cost management| | | |
+| Cost management| | Yes | Yes |
+| | Cost management content pack for Power BI | Yes | No |
 | Data management and integration| | | |
 | | Choose to truncate data in the entity before data is imported via files or data packages | Yes | Yes |
 | | Configuration data packages| Yes | Yes |
@@ -88,11 +89,9 @@ The following table shows whether each feature is available in:
 | | Country/region localizations & languages| Yes | Yes |
 | | Dynamics Translation Service| Yes | Yes |
 | | Global coverage - Retail| Yes | No |
-| Manufacturing| | | |
+| Manufacturing| | Yes | Yes |
 | | Manufacturing – Gantt control| Yes | Yes |
-| Master planning and forecasting| | | |
-| | Safety stock de-prioritization in master planning and capable to promise (CTP) calculation| Yes | Yes |
-| | Turn off planning processes per company| Yes | Yes |
+| Master planning and forecasting| | Yes | Yes |
 | Mobile  | | | |
 | | Mobile framework| Yes | Yes |
 | | Dynamics 365 for Unified Operations mobile app and workspaces | Yes | Yes |
@@ -111,13 +110,8 @@ The following table shows whether each feature is available in:
 | | Enhancements to the bill of materials functionality| Yes | Yes |
 | | Product variant enhancements| Yes | Yes |
 | Product master data| | | |
-| Production | | | |
-| | Cross docking from production to transfer orders| Yes | Yes |
-| | Flushing principle Available at location| Yes | Yes |
-| | Lean scheduling board| Yes | Yes |
-| | Optimize scheduling for planned production orders with overlap jobs| Yes | Yes |
-| | Production performance Power BI reports| Yes | Yes |
-| | Visual scheduling| Yes | Yes |
+| Production | | Yes | Yes |
+| | Production performance Power BI reports| Yes | No |
 | Project management and accounting| Includes all Financial management features that are part of Dynamics 365 for Finance and Operations | | |
 | Sales| | | |
 | | Prospect to cash integration of Dynamics 365 for Sales and Dynamics 365 for Operations| Yes | Yes |
