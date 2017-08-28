@@ -43,10 +43,9 @@ The following table shows whether each feature is available in:
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
 | Compliance and certifications | SOC 1 Type 1 certification| Yes | No |
-| Cost accounting | | Yes | ? |
-| | Cost accounting Power BI reports| Yes | No |
-| | Cost control workspace for Mobile app| Yes | No |
-| | Cost accounting Content pack for Power BI| Yes | No |
+| Cost accounting | | Yes | Yes |
+| | Cost accounting content pack for Power BI| Yes | No |
+| | Cost accounting workspace for mobile app| Yes | No |
 | Cost management| | | |
 | Data management and integration| | | |
 | | Choose to truncate data in the entity before data is imported via files or data packages | Yes | Yes |
