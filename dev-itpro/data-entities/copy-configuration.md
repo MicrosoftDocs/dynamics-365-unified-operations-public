@@ -227,7 +227,7 @@ You're now ready to import a configuration. However, you might want to use some 
 
 ## Copy into a legal entity
 
-The **Data management** workspace is also your hub for copying configuration information from one legal entity into another. The process resembles an export and import in one step. Much like an import, the process will add information to a legal entity if the data doesn't exist in that legal entity or update the information if it already exists.
+The **Data management** workspace is also your hub for copying configuration information from one legal entity into another. The process resembles an export and import in one step. Much like an import, the process will add information to a legal entity if the data doesn't exist in that legal entity or update the information if it already exists. 
 
 To copy a configuration from one legal entity into another in the same instance, follow these steps.
 
@@ -262,6 +262,18 @@ To copy a configuration from one legal entity into another in the same instance,
 After you've completed your configuration, click **Copy into legal entity** to start the import. The copy process will export the data from the source legal entity into the destination legal entity. Each destination legal entity will have its own import data project. You can monitor your results on the **Execution summary** page that appears. 
 
 If there are errors, you will see them on the **Execution summary** page just like you would for an import project. You can edit the errors in the staging tables and resubmit the values for each data project.
+
+### Special considerations when you copy into a legal entity
+
+When you copy into a legal entity, you have the same validation that would occur when you import a file. If dependent information is not included in your list of entities to copy, then the entity will show errors when it tries to copy into the legal entity. For example, if a customer has a default site or warehouse, you will need to 1) import the sites and warehouses as part of the copy or 2) load the sites and warehouses manually before you copy the legal entity or 3) unmap the site and warehouse fields before you copy the information.
+
+The following entities require special handling when they are used to copy into a legal entity:
+
+| Area | Entity | Action |  
+|------|--------|--------|
+| System setup | Workflow | Workflow requires additional changes before it can be copied. It is not supported at this time. |
+| General ledger | Ledger parameters | If you have continuous number sequences, the ledger parameters must be processed first. Change the sequence on your data project for ledger parameters to 15 (instead of 40). We will update the default templates in the monthly application release 3 to this value. |
+
 
 ## Additional information about entities
 
