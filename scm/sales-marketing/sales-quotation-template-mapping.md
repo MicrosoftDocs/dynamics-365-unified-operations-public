@@ -5,7 +5,7 @@ title: Synchronize sales quotation headers and lines from Sales to Finance and O
 description: The topic discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: ChristianRytt
 manager: AnnBe
-ms.date: 07/03/2017
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
