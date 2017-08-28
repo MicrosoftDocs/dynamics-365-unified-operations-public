@@ -77,11 +77,7 @@ The following table shows whether each feature is available in:
 | | Analytical workspaces | Yes | No |
 | | Intelligent business process: Recommendations| Yes | No |
 | | Intelligent business process: Demand forecasting | Yes | Yes |
-| Inventory management| | | |
-| | Additional warehouse support in manufacturing | Yes | Yes |
-| | Consignment inventory| Yes | Yes |
-| | Consignment inventory| Yes | Yes |
-| | Demand replenishment for raw material picking | Yes | Yes |
+| Inventory management| | Yes | Yes |
 | Lifecycle services| | Yes | Yes |
 | | Configurable business processes | Yes | No |
 | LinkedIn engagement| | | |
