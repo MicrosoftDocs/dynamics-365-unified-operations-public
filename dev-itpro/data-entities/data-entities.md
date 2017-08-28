@@ -51,11 +51,14 @@ A data entity has the following capabilities:
 -   It becomes the primary mechanism for exporting and importing data packages for Application Lifecycle Management (ALM) and demo data scenarios.
 -   It can be exposed as OData services, and then used in tabular-style synchronous integration scenarios and Microsoft Office integrations.
 
-[![Over1](./media/over1.png)](./media/over1.png)
+[![Data entity architecture](./media/over1.png)](./media/over1.png)
 
 ### Entity example
 
-A consumer wants to access data that is related to a customer object, but this data is currently scattered across multiple normalized tables, such as DirParty, CustTable, LogisticPostalAddress, and LogisticElectronicAddress. Therefore, the process of reading and writing customer data is very tedious. Instead, the following customer entity can be designed to encapsulate the entire underlying physical schema into a single de-normalized view. This enables simpler read/write operations and also enables abstraction of any internal interaction between the tables. [![Over2](./media/over2.png)](./media/over2.png) [![Over3](./media/over3.png)](./media/over3.png)
+A consumer wants to access data that is related to a customer object, but this data is currently scattered across multiple normalized tables, such as DirParty, CustTable, LogisticPostalAddress, and LogisticElectronicAddress. Therefore, the process of reading and writing customer data is very tedious. Instead, the following customer entity can be designed to encapsulate the entire underlying physical schema into a single de-normalized view. This enables simpler read/write operations and also enables abstraction of any internal interaction between the tables. 
+[![Denormalized tables](./media/over2.png)](./media/over2.png) 
+
+[![Normalized entity](./media/over3.png)](./media/over3.png)
 
 ### Supported scenarios
 
@@ -84,7 +87,9 @@ Data entities also support asynchronous integration through a data management pi
 
 #### Application Lifecycle Management
 
-Besides integration and business intelligence (BI) scenarios, data entities also initially support two critical ALM scenarios. The following two progressive levels of an ALM scenario show the scope of coverage by data entities. [![Over4](./media/over4.png)](./media/over4.png)
+Besides integration and business intelligence (BI) scenarios, data entities also initially support two critical ALM scenarios. The following two progressive levels of an ALM scenario show the scope of coverage by data entities. 
+
+[![Entities and lifecycle management](./media/over4.png)](./media/over4.png)
 
 ##### Configuration data provisioning
 
@@ -141,7 +146,7 @@ There are multiple ways to create an entity. For example, you can use a wizard, 
 
 #### Building an entity by using a wizard
 
-The simplest way to build an entity is to use a wizard. This wizard lets you select a root data source and expand to other related data sources, and then select fields for the entity. To start the wizard, add a new item of type **Data entity** to your project. For step-by-step instructions for using the wizard to build an entity, see [DM101 - Building and consuming Data Entities](build-consuming-data-entities.md). The following table provides information about the properties that you set for an entity in the wizard.
+The simplest way to build an entity is to use a wizard. This wizard lets you select a root data source and expand to other related data sources, and then select fields for the entity. To start the wizard, add a new item of type **Data entity** to your project. For step-by-step instructions for using the wizard to build an entity, see [Building and consuming Data Entities](build-consuming-data-entities.md). The following table provides information about the properties that you set for an entity in the wizard.
 
 | Property                            | Description                                                                                                                                                                                 |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -167,7 +172,9 @@ When you compete the wizard, it produces the following two items:
 
 #### Building an entity from a table
 
-You can quickly create an entity from a table, and then customize the properties, data sources, and fields later. Right-click the table, and then select **Addins** &gt; **Create data entity**. [![Over5](./media/over5.png)](./media/over5.png)
+You can quickly create an entity from a table, and then customize the properties, data sources, and fields later. Right-click the table, and then select **Addins** &gt; **Create data entity**. 
+
+[![Create data entity](./media/over5.png)](./media/over5.png)
 
 
 
