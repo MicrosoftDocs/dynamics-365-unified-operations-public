@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business process modeler
-description
+description:
 author: kfend
 manager: AnnBe
 ms.date: 08/27/2017
