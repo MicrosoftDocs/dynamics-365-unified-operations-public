@@ -130,10 +130,14 @@
 #### [View current WIP status on a production order](/dynamics365/unified-operations/supply-chain/cost-management/tasks/view-current-wip-status-production-order?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [View inventory statement and KPI by cost object](/dynamics365/unified-operations/supply-chain/cost-management/tasks/view-inventory-statement-kpi-cost-object?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## Data integration and management
+## Data management and integration
 
-### [Data entities](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Default data entities
+### [Data entities, projects, and packages](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Data entities and packages framework](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Configuration data projects](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Configuration data packages](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-packages?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+#### Standard data entities
 ##### [Data entities report](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-report?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Data entities: Accounts payable and taxes](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-payable-taxes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Data entities: Accounts receivable](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-receivable?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -160,47 +164,49 @@
 ##### [Data entities: System administration](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-system-administration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Data entities: Workflow](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-workflow?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-#### Migrating entities
-##### [Configuration data projects](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Configuration data packages](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-packages?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Configuration data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### Data templates
+##### [Configuration data templates](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Copy configuration data between companies](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+#### [Data import and export jobs](/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ##### [Best practices for importing vouchers using the General journal entity](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-#### Creating data entities
-##### [Data entities and packages framework](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Build and consume](/dynamics365/unified-operations/dev-itpro/data-entities/build-consuming-data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Behavioral properties](/dynamics365/unified-operations/dev-itpro/data-entities/behavioral-properties-data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Compute columns and virtual fields](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### Development for data management
+##### [Create new data entities](/dynamics365/unified-operations/dev-itpro/data-entities/build-consuming-data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entity properties](/dynamics365/unified-operations/dev-itpro/data-entities/behavioral-properties-data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Create compute columns and virtual fields](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cross-company behavior](/dynamics365/unified-operations/dev-itpro/data-entities/cross-company-behavior?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Country/region codes and configuration keys](/dynamics365/unified-operations/dev-itpro/data-entities/countryregion-codes-configuration-keys?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Handling country/region codes](/dynamics365/unified-operations/dev-itpro/data-entities/countryregion-codes-configuration-keys?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Inheritance patterns](/dynamics365/unified-operations/dev-itpro/data-entities/support-super-type-sub-type?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Wizard rules](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-wizard-rules?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Data entity wizard rules](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-wizard-rules?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Metadata properties](/dynamics365/unified-operations/dev-itpro/data-entities/metadata-properties?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Validations, defaults, and unmapped fields](/dynamics365/unified-operations/dev-itpro/data-entities/validations-defaults-unmapped-fields?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Security and data entities](/dynamics365/unified-operations/dev-itpro/data-entities/security-data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
+### Data integration
 #### [Data integration using data entities](/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Develop an entity for data migration](/dynamics365/unified-operations/dev-itpro/data-entities/develop-entity-for-data-migration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Develop composite data entities](/dynamics365/unified-operations/dev-itpro/data-entities/develop-composite-data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Configure financial cross-company data sharing](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create a record template to facilitate data entry](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Use a record template to create a new record](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/use-record-template-new-record?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Security and data entities](/dynamics365/unified-operations/dev-itpro/data-entities/security-data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Service endpoints](/dynamics365/unified-operations/dev-itpro/data-entities/services-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Service authentication troubleshooting](/dynamics365/unified-operations/dev-itpro/data-entities/troubleshoot-service-authentication?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### Integration patterns
+##### [Service endpoints](/dynamics365/unified-operations/dev-itpro/data-entities/services-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Service authentication troubleshooting](/dynamics365/unified-operations/dev-itpro/data-entities/troubleshoot-service-authentication?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [OData](/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Recurring integrations](/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [OData](/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Recurring integrations](/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Data integration using the Common Data Service](/common-data-service/entity-reference/dynamics-365-integration) 
-#### [Configure a prospect to cash scenario](/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Synchronize products from Finance and Operations to products in Sales](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Synchronize accounts from Sales to customers in Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Synchronize contacts from Sales to contacts or customers in Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/contacts-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Synchronize sales quotation headers and lines from Sales to Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-quotation-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Synchronize sales order headers and lines from Finance and Operations to Sales](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-order-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Synchronize sales invoice headers and lines from Finance and Operations to Sales](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-invoice-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Data integration using the Common Data Service](/common-data-service/entity-reference/dynamics-365-integration) 
+##### [Configure a prospect to cash scenario](/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Synchronize products from Finance and Operations to products in Sales](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Synchronize accounts from Sales to customers in Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Synchronize contacts from Sales to contacts or customers in Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/contacts-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Synchronize sales quotation headers and lines from Sales to Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-quotation-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Synchronize sales order headers and lines from Finance and Operations to Sales](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-order-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Synchronize sales invoice headers and lines from Finance and Operations to Sales](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-invoice-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Financial management
 
