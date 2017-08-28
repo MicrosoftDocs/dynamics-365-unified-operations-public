@@ -157,10 +157,8 @@ The following table shows whether each feature is available in:
 | | Compliance properties on table fields| Yes | Yes |
 | | Validating events on form data sources and form data source fields| Yes | Yes |
 | | Deployment| Yes | ? |
-| Development | | Yes | Yes |
-| | All development features are supported in Cloud and on-premises | | |
-| Extensibility| | Yes | Yes |
-| | All extensibility features are supported in Cloud and on-premises | | |
+| Development | All development features are supported in Cloud and on-premises | Yes | Yes |
+| Extensibility| All extensibility features are supported in Cloud and on-premises | Yes | Yes |
 | Platform | | | |
 | | Monitoring and telemetry| Yes | ? |
 | | Platform compatibility| Yes | ? |
