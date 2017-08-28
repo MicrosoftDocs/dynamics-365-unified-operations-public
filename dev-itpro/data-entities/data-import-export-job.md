@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data import and export jobs
-description: This topic provides information about data import and export jobs.
+description: Use the Data management workspace to create and manage data import and export jobs.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 08/28/2017
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-To create and manage data import and export jobs, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, clean up, or convert data before you move it.
+To create and manage data import and export jobs in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, clean up, or convert data before you move it.
 
 ## Data import/export process
 Here are the steps to import or export data.
@@ -60,7 +60,7 @@ A data import or export job can be run one time or many times.
 We recommend that you take the time to select an appropriate project category for your import or export job. Project categories can help you manage related jobs.
 
 ### Identify the entities to import or export
-You can add specific entities to an export job or select a template to apply. Templates fill a job with a list of entities. The **Apply template** option is available after you give the job a name and save the job.
+You can add specific entities to an import or export job or select a template to apply. Templates fill a job with a list of entities. The **Apply template** option is available after you give the job a name and save the job.
 
 ### Set the data format for the job
 When you select an entity, you must select the format of the data that will be exported or imported. You define formats by using the **Data sources setup** tile. Many organizations start from the formats that are included by default in the demo data set. Here is a list of some of these formats:
