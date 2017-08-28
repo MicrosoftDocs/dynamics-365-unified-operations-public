@@ -63,7 +63,7 @@ Make their first day special
 
 Don't make a new hire question their decision to join your company by setting a bad first impression on the first day.
 
-## Create a good first impression by:
+## Create a good first impression
 
 Creating an agenda for the day and sharing it your new hire. Don't just focus on orientation. Make sure to have fun, introduce them to people, and show them around the office.
 Keeping other employees in the loop. Let them know that someone new is joining the company. Don't leave out the people in IT, Payroll, and other administrative departments.
