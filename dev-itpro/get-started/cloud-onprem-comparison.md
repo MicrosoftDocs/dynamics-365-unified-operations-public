@@ -117,21 +117,8 @@ The following table shows whether each feature is available in:
 | Supply chain management| | | |
 | Transportation management| | | |
 | Vendor collaboration| | | |
-| Warehouse management| | | |
-| | Batch and license plate confirmation | Yes | Yes |
-| | Build your own data warehouse and incrementally export entities| Yes | Yes |
-| | Enable withdrawal kanban for warehouse processes| Yes | Yes |
-| | Item and warehouse migration process to use advanced warehouse management| Yes | Yes |
+| Warehouse management| | Yes | Yes |
 | | Mobile warehouse app| Yes | No |
-| | Movement of inventory with associated work in Warehouse management| Yes | Yes |
-| | Piece picking confirmation| Yes | Yes |
-| | Product work confirmation for cluster picking| Yes | Yes |
-| | Production output location added to the resource group member| Yes | Yes |
-| | System grouping on an open work list| Yes | Yes |
-| | Warehouse - Partial cycle counting at a location| Yes | Yes |
-| | Warehouse enhancements for high volume distribution centers| Yes | Yes |
-| | Warehouse operation enhancements| Yes | Yes |
-| | Warehouse work policies| Yes | Yes |
 | | Warehousing Power BI reports| Yes | No |
 | Web/browser client | | | |
 | | Ability to model toolbar actions in the overflow menu| Yes | Yes |
@@ -144,7 +131,7 @@ The following table shows whether each feature is available in:
 | | Task recorder | Yes | Yes |
 | | Task recorder - Save or load task recordings from the BPM library| Yes | No |
 | Support | | | |
-| | Ideas portal| Yes | ? |
+| | Ideas portal| Yes | Yes |
 | | Access to Support via the Help & Support menu| Yes | No |
 
 ## Dynamics 365 for Retail 
