@@ -3,7 +3,7 @@
 
 title: Italian black list report
 description: Learn how to set up and maintain the Italian black list report.
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

@@ -3,7 +3,7 @@
 
 title: Master planning for site coverage, warehouse not mandatory
 description: This topic describes how an item that has the site dimension set for coverage is planned.
-author: YuyuScheller
+author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

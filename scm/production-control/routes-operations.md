@@ -14,6 +14,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable
+ms.author: sorenva
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

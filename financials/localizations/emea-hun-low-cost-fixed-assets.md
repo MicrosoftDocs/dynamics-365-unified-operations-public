@@ -3,7 +3,7 @@
 
 title: Low-cost fixed assets
 description: This topic provides information about low-cost fixed assets for Hungary.
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

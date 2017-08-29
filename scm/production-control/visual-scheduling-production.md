@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-keywords: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid:
 ms.search.region: global
 ms.industry: Manufacturing
-ms.author: johanhoffmann
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

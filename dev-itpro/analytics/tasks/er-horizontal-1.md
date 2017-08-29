@@ -24,18 +24,24 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Design a format to use horizontally-expandable ranges to dynamically add columns in Excel reports for electronic reporting (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges. These steps can be performed in any company.
-To complete these steps, you must first complete these three task guides: 
-“ER Create a configuration provider and mark it as active”
-“ER Use financial dimensions as a data source (Part 1: Design data model)”
-“ER Use financial dimensions as a data source (Part 2: Model mapping)”
-You must also download and save a local copy of the template with a sample report found here: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx
+The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges. These steps can be performed in any company.
+
+To complete these steps, you must first complete these three task guides: 
+
+“ER Create a configuration provider and mark it as active”
+
+“ER Use financial dimensions as a data source (Part 1: Design data model)”
+
+“ER Use financial dimensions as a data source (Part 2: Model mapping)”
+
+You must also download and save a local copy of the template with a sample report found here: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx
+
 This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 
 

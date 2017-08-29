@@ -24,16 +24,20 @@ ms.search.region: Germany
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Electronic transmission of VAT declaration (ELSTER) (Germany)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure walks you through setting electronic tax declaration.
-This procedure was created using the demo data company DEMF. 
-This functionality is available for legal entities whose primary address is in Germany.
-You should have a valid user certificate (like test-soft-pse.pfx) and a Tax authority certificate (Coala2019.pem.cer) before you can complete this procedure.
+This procedure walks you through setting electronic tax declaration.
+
+This procedure was created using the demo data company DEMF. 
+
+This functionality is available for legal entities whose primary address is in Germany.
+
+You should have a valid user certificate (like test-soft-pse.pfx) and a Tax authority certificate (Coala2019.pem.cer) before you can complete this procedure.
+
 
 
 1. Go to Tax > Setup > Sales tax > Electronic tax declaration setup.

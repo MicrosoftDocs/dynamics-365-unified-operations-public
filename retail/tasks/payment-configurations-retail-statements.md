@@ -24,13 +24,14 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Payment configurations for Retail statements
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-This procedure demonstrates configurations for Retail store payment methods, which affect how Retail statements get created and posted.
+This procedure demonstrates configurations for Retail store payment methods, which affect how Retail statements get created and posted.
+
 This recording uses the USRT demo company.
 
 1. Go to Retail and commerce > Channels > Retail stores > All retail stores.

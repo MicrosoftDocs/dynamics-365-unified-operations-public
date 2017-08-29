@@ -24,17 +24,22 @@ ms.search.region: Malaysia
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Generate customer debit for project sales (Malaysia)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This task walks you through creating and printing project debit note for GST.
-
-To complete this task, you must be in the 'Project accountant' role and you must select the Invoice type of 'GST invoice' in general ledger parameters.
-This task was recorded using the MYMF demo data company.
-
+This task walks you through creating and printing project debit note for GST.
+
+
+
+To complete this task, you must be in the 'Project accountant' role and you must select the Invoice type of 'GST invoice' in general ledger parameters.
+
+This task was recorded using the MYMF demo data company.
+
+
+
 This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.
 
 

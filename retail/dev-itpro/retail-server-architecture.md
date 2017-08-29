@@ -3,7 +3,7 @@
 
 title: Retail Server architecture
 description: This article describes the architecture of Retail Server. Retail Server provides stateless services and business logic for Retail Modern Point of Sale (POS) and E-Commerce clients.
-author: robinr
+author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

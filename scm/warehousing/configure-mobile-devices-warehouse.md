@@ -3,7 +3,7 @@
 
 title: Set up mobile devices for warehouse work
 description: This article describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
-author: YuyuScheller
+author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

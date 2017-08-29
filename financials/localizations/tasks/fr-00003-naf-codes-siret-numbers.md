@@ -24,16 +24,20 @@ ms.search.region: France
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # NAF codes and Siret numbers (France)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure shows how to create NAF codes and then enter the codes for legal entities, customers, vendors, and prospects. NAF codes are used to identify the business of an enterprise. For instance, if your legal entity manufactures computers, the NAF code for your legal entity may be 300C, which is the NAF code for manufacturing computers and other computer hardware. If your legal entity is involved in building houses, your NAF code may be 452A.
-
-This procedure also shows how to enter siret numbers for customers, vendors, and prospects. The siret is a 14-digit number that identifies a business, a branch of the business, and a person who is associated with the business activity. You can use the siret number to verify that an enterprise is correctly registered and authorized to do business with you.
-
+This procedure shows how to create NAF codes and then enter the codes for legal entities, customers, vendors, and prospects. NAF codes are used to identify the business of an enterprise. For instance, if your legal entity manufactures computers, the NAF code for your legal entity may be 300C, which is the NAF code for manufacturing computers and other computer hardware. If your legal entity is involved in building houses, your NAF code may be 452A.
+
+
+
+This procedure also shows how to enter siret numbers for customers, vendors, and prospects. The siret is a 14-digit number that identifies a business, a branch of the business, and a person who is associated with the business activity. You can use the siret number to verify that an enterprise is correctly registered and authorized to do business with you.
+
+
+
 This procedure was created using the demo data company FRSI. This functionality is available for legal entities whose primary address is in France. You should be in either
 
 

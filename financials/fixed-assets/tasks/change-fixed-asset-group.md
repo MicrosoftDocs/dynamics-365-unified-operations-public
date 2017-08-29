@@ -24,16 +24,20 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Change a fixed asset group
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Fixed assets should be assigned to the correct fixed assets group. The fixed assets group is used when you:
- - Create inquiries and reports
- - Set up new fixed assets
- - Integrate ledgers and post fixed asset transactions to the appropriate ledger accounts
+Fixed assets should be assigned to the correct fixed assets group. The fixed assets group is used when you:
+
+ - Create inquiries and reports
+
+ - Set up new fixed assets
+
+ - Integrate ledgers and post fixed asset transactions to the appropriate ledger accounts
+
 This guide uses the USMF demo company.
 
 1. Go to Fixed assets > Fixed assets > Fixed assets.

@@ -3,7 +3,7 @@
 
 title: Fixed asset revaluation groups
 description: This topic provides information about fixed asset revaluation groups for Spain.
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

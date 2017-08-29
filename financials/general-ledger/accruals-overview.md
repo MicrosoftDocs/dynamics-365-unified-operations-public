@@ -3,7 +3,7 @@
 
 title: Accruals overview
 description: This article describes accruals, and provides information about how to set them up and create transactions.
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

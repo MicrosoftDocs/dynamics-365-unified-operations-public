@@ -3,7 +3,7 @@
 
 title: Configure SQL Server Reporting Services for an on-premises deployment
 description: This topic provides information about configuring SQL Server Reporting Services (SSRS) for an on-premises deployment.
-author: kfend
+author: sarvanisathish
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sarvanisathish
+ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 

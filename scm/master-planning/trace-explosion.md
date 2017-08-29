@@ -3,7 +3,7 @@
 
 title: Use tracing for explosion
 description: This article explains how you can use tracing to explore the causes behind the outcome of an order explosion.
-author: YuyuScheller
+author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

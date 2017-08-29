@@ -3,7 +3,7 @@
  
 title: Collaborate with internal supply chain customers
 description: This procedure shows how to view all the planned orders that will be fulfilled by an intercompany vendor. 
-author: YuyuScheller
+author: roxanadiaconu
 manager: AnnBe 
 ms.date: 10/17/2016
 ms.topic: business-process 
@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: yuyus
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Collaborate with internal supply chain customers
 

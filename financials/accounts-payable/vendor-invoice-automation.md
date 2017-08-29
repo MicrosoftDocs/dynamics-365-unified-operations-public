@@ -22,7 +22,7 @@ ms.reviewer: twheeloc
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: Shiva.Pandey
+ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ---

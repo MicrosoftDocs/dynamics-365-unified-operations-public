@@ -24,14 +24,16 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 # ms.search.industry: 
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Receive an EU entry certificate
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure walks you through registering an EU entry certificate issued by a third-party and received from your customer.
-
+This procedure walks you through registering an EU entry certificate issued by a third-party and received from your customer.
+
+
+
 The demo data company used to create this procedure is DEMF.
 
 1. Go to Accounts receivable > Inquiries and reports > Entry certificate journal.

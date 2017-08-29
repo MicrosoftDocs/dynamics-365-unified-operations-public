@@ -3,7 +3,7 @@
 
 title: Lifecycle Services for Finance and Operations partners
 description: This article explains how partners can get started with Microsoft Dynamics Lifecycle Services (LCS). 
-author: kfend
+author: manalidongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

@@ -24,16 +24,20 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Pay a vendor transaction by endorsing a customer bill of exchange (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This task walks you through paying a vendor transaction by endorsing a customer bill of exchange.
-
-Before you can complete this task, you must have at least one bill of exchange with a status of "Drawn".
-
+This task walks you through paying a vendor transaction by endorsing a customer bill of exchange.
+
+
+
+Before you can complete this task, you must have at least one bill of exchange with a status of "Drawn".
+
+
+
 This task was created using the demo data company JPMF.
 
 
