@@ -1801,7 +1801,7 @@
 ##### [Create a bar code for a product (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-bar-code-product?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Enter the GTIN code for a product (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/enter-gtin-code-product?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create batch attributes for a product (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-batch-attributes-product?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Add an image to a product](/dynamics365/unified-operations/supply-chain/pim/tasks/add-image-product?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Add an image to a product (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/add-image-product?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Translation of product information FAQ](/dynamics365/unified-operations/supply-chain/pim/translations-product-related-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Search for products 
 ##### [Search for product during order entry](/dynamics365/unified-operations/supply-chain/pim/search-products-product-variants?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1814,7 +1814,7 @@
 ##### [Add variant products to purchase orders using variant weights (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/add-variant-products-purchase-order-variant-weights?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create a sales order for a configurable product (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-sales-order-configurable-product?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create sales price selection criteria (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-sales-price-selection-criteria?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Set up attribute-based pricing for configurable products](/dynamics365/unified-operations/supply-chain/pim/tasks/set-up-attribute-based-pricing-configurable-products?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Set up attribute-based pricing for configurable products (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/set-up-attribute-based-pricing-configurable-products?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Estimate cost for products
 ##### [BOM calculations](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Maintain product configuration models
