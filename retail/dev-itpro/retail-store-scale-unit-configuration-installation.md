@@ -44,7 +44,7 @@ This topic explains how you can use self-service to configure Retail Store Scale
 2. After an application ID (client ID) and secret are created for Retail Store Scale Unit, the client ID must be accepted in Retail. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
 ## Configure a new Retail Store Scale Unit
-To create a functioning Retail Store Scale Unit, complete the procedures in all sections of this topic through the "Running the Retail Store Scale Unit installer" section.
+To create a functioning Retail Store Scale Unit, complete the procedures in all sections of this topic through the "Running the Retail Store Scale Unit installer" section.  To complete the configuration and installation, the user must first begin in Dynamics 365 for Retail headquarters and perform the initial configuration.  Then, the user must complete the installation.  Finally, the user must return to headquarters to finish the configuration so that the Retail Store Scale Unit functions properly.
 
 1. Use your Azure AD credentials to sign in to the Retail headquarters or Retail trial.
 2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**.
@@ -182,11 +182,17 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 
     > [!NOTE]
     > For information about the creation of web applications in Azure, see [Create an Azure Active Directory Application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). 
-    > When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
+    > When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and key (secret) that are created are important.
 
-9. After the application ID (client ID) and secret are created for Retail Store Scale Unit, the application ID (client ID) must be accepted in Retail. In Retail, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
-10. After the installation is completed, the final health page appears. This page shows whether the installation was successful. It also shows the health of each component, based on basic connection tests, and the location of this topic. If the installation wasn't successful, the page shows the location of the log files.
-11. If Retail Cloud POS is configured for use, a client ID is shown at the end of the installation. You must add this client ID to the **Retail shared parameters** page in Retail.
+9. After the application ID (client ID) and secret are created for Retail Store Scale Unit, the application ID (client ID) must be accepted in Retail. Follow the next sub-section to finish the configuration in headquarters.
+10. After the installation is completed, the final health page appears. This page shows whether the installation was successful. It also shows the health of each component, based on basic connection tests, and the location of this topic. If the installation wasn't successful, the page shows the location of the log files.  It is recommended to keep this final health page up until the Retail Store Scale Unit configuration is fully completed and all components are functioning properly.
+
+
+## Finish the Retail Store Scale Unitl configuration in headquarters
+The last steps require validation and verification that the Azure application ID (client ID) and key (secret) are properly accepted in headquarters to allow connections between the environment and the new Retail Store Scale Unit.
+
+1. After the application ID (client ID) and key (secret) are created for Retail Store Scale Unit and entered into the installer, the application ID (client ID) must be accepted in Retail headquarters. In Retail headquarters, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+2. If Retail Cloud POS is configured for use, a client ID is shown at the end of the installation. You must add this client ID to the **Retail shared parameters** page in Retail.
 
     1. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
@@ -195,29 +201,29 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
     5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter **https://retailstorescaleunit.retailserver.com**.
     6. On the Action Pane, select **Save**.
 
-12. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
-13. Select **Identity providers**.
-14. On the **Identity providers** FastTab, select **+Add**.
-15. In the new **Issuer** row, enter the Retail Server URL of the newly installed Retail Store Scale Unit.  At the end of the URL, add **/auth**.  The URL will resemble **https://MyComputerName/RetailServer/auth**.
+3. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+4. Select **Identity providers**.
+5. On the **Identity providers** FastTab, select **+Add**.
+6. In the new **Issuer** row, enter the Retail Server URL of the newly installed Retail Store Scale Unit.  At the end of the URL, add **/auth**.  The URL will resemble **https://MyComputerName/RetailServer/auth**.
 
     > [!NOTE]
     > There will be a new identity provider line for each Retail Store Scale Unit that is installed. Each Retail Store Scale Unit will have a URL that resembles this URL.
 
-16. In the **Name** column, enter a description for the store that the URL belongs to.
-17. In the **Type** column, select **Open ID Connect**.
+7. In the **Name** column, enter a description for the store that the URL belongs to.
+8. In the **Type** column, select **Open ID Connect**.
 
     > [!NOTE]
     > This new row must be duplicated for every Retail Store Scale Unit installation (that is, for every unique URL).
 
-18. On the Action Pane, select **Save**.
-19. On the **Identity providers** FastTab, select the newly created line. The values on the **Relying parties** FastTab are set, based on your selection.
-20. On the **Relying parties** FastTab, select **+Add**, and add the following two entries:
+9. On the Action Pane, select **Save**.
+10. On the **Identity providers** FastTab, select the newly created line. The values on the **Relying parties** FastTab are set, based on your selection.
+11. On the **Relying parties** FastTab, select **+Add**, and add the following two entries:
 
     - In the **ClientId** column, enter **Cloud POS**. Set the **Type** field to **Public** and the **UserType** field to **Worker**. 
     - In the **ClientId** column, enter **Modern POS**. Set the **Type** field to **Public** and the **UserType** field to **Worker**.
 
-21. On the Action Pane, select **Save**.
-22. When you've finished, return to the installer, and select **Finish**.
+12. On the Action Pane, select **Save**.
+13. When you've finished, return to the installer, and select **Finish**.
 
 
 
