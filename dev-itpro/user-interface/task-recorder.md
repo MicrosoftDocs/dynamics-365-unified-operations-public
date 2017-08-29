@@ -41,7 +41,7 @@ Overview
 
 ### The new Task Recorder
 
-For the release of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Task Recorder has been re-built from the ground up with a focus on high-responsiveness, a flexible extensibility API, and seamless integrations with consumers of business process recordings. We're carrying forward Task Recorder integration with the Lifecycle Services BPM tool (<https://bpm.lcs.dynamics.com>), so that users can continue to produce rich business process diagrams from recordings for analyzing and designing their applications. We're also introducing the ability for Task Recorder to auto-generate application verification tests from business process recordings, as well as playback previously recorded processes. These new features also come with new gestures that allow users to take full advantage of the powerful new Task Recorder. If you're reading this tutorial for the first time and wish to practice the topics as they're discussed, note that arabic and Roman numerals indicate actionable steps that you should take. Alphabetical entries are used to indicate paragraphs with helpful details about using Task Recorder.
+In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Task Recorder has been re-built from the ground up with a focus on high-responsiveness, a flexible extensibility API, and seamless integrations with consumers of business process recordings. We're carrying forward Task Recorder integration with the Lifecycle Services BPM tool (<https://bpm.lcs.dynamics.com>), so that users can continue to produce rich business process diagrams from recordings for analyzing and designing their applications. We're also introducing the ability for Task Recorder to auto-generate application verification tests from business process recordings, as well as playback previously recorded processes. These new features also come with new gestures that allow users to take full advantage of the powerful new Task Recorder. If you're reading this tutorial for the first time and wish to practice the topics as they're discussed, note that arabic and Roman numerals indicate actionable steps that you should take. Alphabetical entries are used to indicate paragraphs with helpful details about using Task Recorder.
 
 ### Architecture
 
@@ -62,34 +62,32 @@ The following steps show the process for creating a new recording using Task Rec
     1.  Go to **Dashboard &gt; Fleet Management &gt; Fleet setup**.
     2.  Click **Load demo data**.
     3.  When the data is finished loading, click **Close**.
-    4.  Go back to the **Dashboard** by clicking the Dynamics logo in the upper-right corner.
+    4.  Go back to the **Dashboard** by clicking the product name in the navigation bar.
 
-3.  Go to **Navigation Pane &gt; Task Recorder**.
+3.  Go to **Settings &gt; Task recorder**.
 **![This image shows the location of the Task recorder menu button, which is used to open Task recorder.](./media/taskrecorderguide-taskrecordermenubutton.png)**
 4.  The **Task Recorder Pane** opens. The user may click the "**X**" in the upper-right corner to close the **Task Recorder Pane** before beginning a new recording. The pane can be reopened by following the previous steps.
 [![This image shows the Task recorder main menu.](./media/taskrecorderguide-taskrecordermainmenu.png)](./media/taskrecorderguide-taskrecordermainmenu.png)
-5.  Click **Create** to create a new recording
-6.  Enter a name for the recording and click **Start**. Recording begins the moment **Start** is clicked. If you're following along and need inspiration for a name, use "Create a new rental reservation."
+5.  Click **Create a new recording**.
+6.  Enter a name for the recording and click **Start**. Recording begins the moment **Start** is clicked. For the Fleet example in this tutorial, we'll use the name "Create a new rental reservation."
 [![This image shows the new Task recording menu which allows you to specify a name for your recording.](./media/taskrecorderguide-taskrecordercreatemenu.png)](./media/taskrecorderguide-taskrecordercreatemenu.png) 
 **Note**: During recording, clicking the "**X**" in the upper-right corner will hide the pane without stopping the recording. The pane can be re-opened by clicking the **Task recorder** menu button that appears at the top of the screen. This icon only appears while recording is in progress. 
-
 [![This image shows the Task recorder toolbar button which allows opening the Task recorder pane while recording.](./media/taskrecorderguide-taskrecordertoolbarclose.png)](./media/taskrecorderguide-taskrecordertoolbarclose.png)
-
-7.  The **Task Recorder Pane** enters **Recording Mode.** The pane now shows information and controls related to the process of recording. For more information about how to use the buttons shown, see the [section on using the controls](#recording-controls).
+7.  The **Task Recorder** enters **Recording Mode.** The pane now shows information and controls related to the process of recording. For more information about how to use the buttons shown, see the [section on using the recording controls](#recording-controls).
 [![This image shows what the Task recorder toolbar and Task recorder pane look like during recording.](./media/taskrecorderguide-taskrecorderrecordingmode.png)](./media/taskrecorderguide-taskrecorderrecordingmode.png)
 
-Now you're ready to record a business process using Task Recorder. If you're following this guide as a first time user, you may complete the following Fleet Management scenario for the sake of example. Otherwise, you may complete your own application scenario.
+Now you're ready to record a business process using Task Recorder. If you're following this guide as a first time user, you may complete the following Fleet Management scenario as an example. Otherwise, you can record your own application scenario.
 
 ## Record a Fleet Management scenario
 1.  In the **Task Recorder Pane**, click **Start task**.
-2.  Set the **Name** to "Create a new rental customer". Leave the **Comment** blank.
+2.  Set **Name** to "Create a new rental customer". Leave the **Comment** field blank.
 3.  Click **OK**. 
 [![This image shows the menu used to start a task while recording.](./media/taskrecorderguide-taskrecorderaddingatask.png)](./media/taskrecorderguide-taskrecorderaddingatask.png)
 4.  The task is added to the **Steps list**. 
 **[![This image shows the Steps List after a Task has been added.](./media/taskrecorderguide-taskrecordertaskadded.png)](./media/taskrecorderguide-taskrecordertaskadded.png)**
 5.  Go to **Dashboard &gt; Fleet Management &gt; Reservation Management**.
 6.  Go to **All customers** under the **Summary** tab.
-7.  In the Action Pane, click (**+**) **New**.
+7.  In the Action Pane, click **New**.
 8.  Enter a first and last name for the customer.
 9.  Click **Save**.
 10. In the **Task Recorder Pane**, click **End task**. 
@@ -97,7 +95,7 @@ Now you're ready to record a business process using Task Recorder. If you're fo
 11. Return to the **Reservation Management** workspace by clicking the browser back button twice.
 12. In the **Task Recorder Pane**, click **Start task**. Name the task "Rent a vehicle to the new customer." Click **Start**.
 13. Click (**+**) **Rental** under **Summary**.
-14. Under **Information**, select a 1975 Litware McKinley as the vehicle.
+14. Under **Information**, select a "1975 Litware McKinley" as the vehicle.
 15. Under **Information**, set the customer to the one just created.
 16. Expand the **Discounts** section.
 17. Click **Add** under **Discounts** and add the Frequent Customer discount. Click **OK**.
