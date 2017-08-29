@@ -3,7 +3,7 @@
 
 title: Set up extended logon functionality for Cloud POS and MPOS
 description: This topic covers your options for setting up extended logon for Cloud POS and Retail Modern POS (MPOS).
-author: josaw1
+author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

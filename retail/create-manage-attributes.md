@@ -3,7 +3,7 @@
 
 title: Create and manage attributes
 description: This article describes attributes in Microsoft Dynamics 365 for Retail. Attributes let you describe a product and its characteristics through user-defined fields.
-author: josaw1
+author: pdp1207
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: josaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 16461

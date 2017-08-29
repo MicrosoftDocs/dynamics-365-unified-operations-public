@@ -3,7 +3,7 @@
  
 title: Collaborate with internal supply chain customers
 description: This procedure shows how to view all the planned orders that will be fulfilled by an intercompany vendor. 
-author: YuyuScheller
+author: roxanadiaconu
 manager: AnnBe 
 ms.date: 10/17/2016
 ms.topic: business-process 
