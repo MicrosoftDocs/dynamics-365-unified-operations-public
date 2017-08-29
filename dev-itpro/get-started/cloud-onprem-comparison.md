@@ -120,15 +120,7 @@ The following table shows whether each feature is available in:
 | Warehouse management| | Yes | Yes |
 | | Mobile warehouse app| Yes | No |
 | | Warehousing Power BI reports| Yes | No |
-| Web/browser client | | | |
-| | Ability to model toolbar actions in the overflow menu| Yes | Yes |
-| | Browser framework - PowerApps Host control| Yes | Yes |
-| | Create a workspace through personalization| Yes | Yes |
-| | Improved responsiveness across devices and viewports| Yes | Yes |
-| | Improved viewing experience for application reports| Yes | Yes |
-| | Personalization | Yes | Yes |
-| | Support for Right to Left languages| Yes | Yes |
-| | Task recorder | Yes | Yes |
+| Web client | | | |
 | | Task recorder - Save or load task recordings from the BPM library| Yes | No |
 | Support | | | |
 | | Ideas portal| Yes | Yes |
