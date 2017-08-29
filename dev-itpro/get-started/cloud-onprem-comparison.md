@@ -120,7 +120,7 @@ The following table shows whether each feature is available in:
 | Warehouse management| | Yes | Yes |
 | | Mobile warehouse app| Yes | No |
 | | Warehousing Power BI reports| Yes | No |
-| Web client | | | |
+| Web client  - as Tonya what we call this | | | |
 | | Task recorder - Save or load task recordings from the BPM library| Yes | No |
 | Support | | | |
 | | Ideas portal| Yes | Yes |
