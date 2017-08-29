@@ -2,7 +2,7 @@
 # required metadata
 
 title: Currency revaluation in a consolidation company
-description: 
+description: This topic describes how to revalue currency in a consolidation company. 
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017

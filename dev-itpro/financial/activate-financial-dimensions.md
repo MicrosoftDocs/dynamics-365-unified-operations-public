@@ -3,7 +3,7 @@
 
 title: Activate financial dimensions
 description: This topic contains information about the activating financial dimension process.
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

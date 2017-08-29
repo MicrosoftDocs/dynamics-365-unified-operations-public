@@ -24,18 +24,24 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create lump-sum depreciation assets using equally-divided method (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-In Japan, 3 types of fixed assets are depreciated with equal amount in each year of its service life. The 3 types are: lump sum assets, deferred assets and low-value assets. 
-
-Use this task to learn how to create a lump sum fixed asset.
-
-In order to complete this task, the Fixed Assets configuration key must be selected.
-
+In Japan, 3 types of fixed assets are depreciated with equal amount in each year of its service life. The 3 types are: lump sum assets, deferred assets and low-value assets. 
+
+
+
+Use this task to learn how to create a lump sum fixed asset.
+
+
+
+In order to complete this task, the Fixed Assets configuration key must be selected.
+
+
+
 This task uses the JPMF demo company data.
 
 

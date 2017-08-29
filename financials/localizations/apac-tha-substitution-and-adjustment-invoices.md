@@ -21,7 +21,7 @@ ms.search.region: Thailand
 # ms.search.industry: [industry; e.g. retail]
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: Enterprise edition, July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ---
 
 # Substitution/adjustment tax invoice for Thailand

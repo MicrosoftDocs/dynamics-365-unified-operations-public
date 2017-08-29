@@ -3,7 +3,7 @@
 
 title: Elimination rules
 description: This topic provides information about elimination rules and the various options for reporting about eliminations.
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

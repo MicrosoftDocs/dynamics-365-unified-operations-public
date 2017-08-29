@@ -3,7 +3,7 @@
 
 title: Retail Modern POS in offline mode
 description: This article explains how to use Retail Modern POS devices in offline mode if the Retail Server is unavailable.
-author: robinr
+author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

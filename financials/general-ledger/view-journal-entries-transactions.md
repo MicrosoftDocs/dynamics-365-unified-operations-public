@@ -3,7 +3,7 @@
 
 title: View journal entries and transactions
 description: This article explains the various ways that you can view journal entries and transactions. 
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

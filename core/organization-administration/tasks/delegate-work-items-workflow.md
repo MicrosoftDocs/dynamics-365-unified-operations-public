@@ -24,14 +24,16 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Delegate work items in a workflow
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-If you plan to be out of the office or otherwise unavailable to act on work items, you can delegate, or reassign, your work items to other users. This procedure helps you configure the system to automatically delegate your work items to another user.
-
+If you plan to be out of the office or otherwise unavailable to act on work items, you can delegate, or reassign, your work items to other users. This procedure helps you configure the system to automatically delegate your work items to another user.
+
+
+
 The demo data company used to create this procedure is USMF.
 
 

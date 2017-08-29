@@ -3,7 +3,7 @@
 
 title: Set up bar codes
 description: This article describes how to use bar codes in Microsoft Dynamics 365 for Retail.
-author: josaw1
+author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

@@ -24,18 +24,24 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Letter of guarantee transaction
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure walks through the Letter of guarantee process.
-
-The following tasks must be complete before completing this procedure:
-- Set up bank facilities and posting profiles for a letter of guarantee.
-- Create a bank facility agreement for a letter of guarantee.
-
+This procedure walks through the Letter of guarantee process.
+
+
+
+The following tasks must be complete before completing this procedure:
+
+- Set up bank facilities and posting profiles for a letter of guarantee.
+
+- Create a bank facility agreement for a letter of guarantee.
+
+
+
 This procedure uses the USMF demo company.
 
 

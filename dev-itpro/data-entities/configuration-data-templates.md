@@ -3,7 +3,7 @@
 
 title: Configuration data templates
 description: This topic describes configuration data templates and explains how to create them. 
-author: mfalkner
+author: mikefalkner
 manager: AnnBe
 ms.date: 05/23/2017
 ms.topic: article

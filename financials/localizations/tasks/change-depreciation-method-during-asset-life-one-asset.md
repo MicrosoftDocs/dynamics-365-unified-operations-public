@@ -24,18 +24,24 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Change the depreciation method during the asset life for one asset (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-In Japan, the depreciation method is permitted to change during the service life of a fixed asset.
-
-This procedure walks you through changing the depreciation profile for a fixed asset.
-
-In order to complete this task, the Fixed Assets configuration key must be selected. Also, the Undepreciated balance schedule or Years passed schedule has to be configured before you can complete this procedure.
-
+In Japan, the depreciation method is permitted to change during the service life of a fixed asset.
+
+
+
+This procedure walks you through changing the depreciation profile for a fixed asset.
+
+
+
+In order to complete this task, the Fixed Assets configuration key must be selected. Also, the Undepreciated balance schedule or Years passed schedule has to be configured before you can complete this procedure.
+
+
+
 This procedure was created using the demo data company JPMF.
 
 

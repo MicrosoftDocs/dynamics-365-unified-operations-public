@@ -24,15 +24,18 @@ ms.search.region: France
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Daily interest calculation for late payment and lump sum in the invoice and collection letter (France)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Indicate the interest calculation on an invoice.
-This procedure was created using the demo data company FRRT. 
-This functionality is available for legal entities whose primary address is in France.
+Indicate the interest calculation on an invoice.
+
+This procedure was created using the demo data company FRRT. 
+
+This functionality is available for legal entities whose primary address is in France.
+
 
 
 1. Go to Accounts receivable > Orders > All sales orders.

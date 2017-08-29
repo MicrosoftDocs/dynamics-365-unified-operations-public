@@ -24,16 +24,20 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up vendor master and purchase order to be target of consolidated invoice (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-In Japan, the vendors usually use consolidated invoice for transactions. 
-
-This task walks you through configuring a vendor master and purchase order to use the consolidated invoice. 
-
+In Japan, the vendors usually use consolidated invoice for transactions. 
+
+
+
+This task walks you through configuring a vendor master and purchase order to use the consolidated invoice. 
+
+
+
 This task was created using the demo data company JPMF.
 
 

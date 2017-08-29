@@ -3,7 +3,7 @@
 
 title: Main account types
 description: The main account types determine how a main account is used in the chart of accounts.
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
