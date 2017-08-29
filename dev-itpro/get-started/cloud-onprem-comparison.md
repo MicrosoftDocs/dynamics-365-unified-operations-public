@@ -42,7 +42,9 @@ The following table shows whether each feature is available in:
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
-| Compliance and certifications | SOC 1 Type 1 certification| Yes | No |
+| Compliance and certifications | | Yes | Yes |
+| | Compliance properties on table fields| Yes | Yes |
+| | SOC 1 Type 1 certification| Yes | No |
 | Cost accounting | | Yes | Yes |
 | | Cost accounting content pack for Power BI| Yes | No |
 | | Cost accounting workspace for mobile app| Yes | No |
@@ -152,17 +154,16 @@ The following table shows whether each feature is available in:
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
 | Administration | | | |
-| | Build automation: Automatic update of model version during build | Yes | Yes |
-| | Build automation: Option to include runtime packages in the deployable package of the automated build output| Yes | Yes |
-| | Compliance properties on table fields| Yes | Yes |
-| | Validating events on form data sources and form data source fields| Yes | Yes |
-| | Deployment| Yes | ? |
 | Development | All development features are supported in Cloud and on-premises | Yes | Yes |
 | Extensibility| All extensibility features are supported in Cloud and on-premises | Yes | Yes |
-| Platform | | | |
-| | Monitoring and telemetry| Yes | ? |
-| | Platform compatibility| Yes | ? |
-| | Upgrade| Yes | No |
-| | Upgrade and Support for Previous Versions| Yes | No |
-| | Servicing environments| Yes | No |
-| | Task guides for testing| Yes | Yes |
+| Monitoring and telemetry - Kristin? || Yes | ? |
+| Platform compatibility - Kristin? || Yes | ? |
+| Upgrade | | | |
+| | Upgrade - margo is checking | Yes | No |
+| | Upgrade and Support for Previous Versions - margo is checking | Yes | No |
+| Servicing | | | |
+| | Servicing environments - look on roadmap, yes/no does not make sense | Yes | No |
+| Build and test | | | |
+| | Build automation: Automatic update of model version during build | Yes | Yes |
+| | Build automation: Option to include runtime packages in the deployable package of the automated build output| Yes | Yes |
+| | Local task guides for testing | Yes | Yes |
