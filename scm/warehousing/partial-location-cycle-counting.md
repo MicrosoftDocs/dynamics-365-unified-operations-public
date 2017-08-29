@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-keywords: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable
+ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -24,15 +24,18 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Register and post a postdated check for a vendor
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-You can register the details of a postdated check before you issue the check to a vendor by using the journal voucher. You can also post the postdated check and generate financial transactions. Before you register and post a postdated check from a vendor, complete the following task: 
-Set up postdated checks in the Cash and bank management page. 
-
+You can register the details of a postdated check before you issue the check to a vendor by using the journal voucher. You can also post the postdated check and generate financial transactions. Before you register and post a postdated check from a vendor, complete the following task: 
+
+Set up postdated checks in the Cash and bank management page. 
+
+
+
 The role of this task guides is Treasurer. This task uses the USMF demo company.
 
 1. Go to Acounts payable > Payments > Payment journal

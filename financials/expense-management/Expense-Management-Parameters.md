@@ -3,7 +3,7 @@
 
 title: Expense management parameters
 description: The following parameters control the behavior in Expense management.
-author: knelson
+author: KimANelson
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article

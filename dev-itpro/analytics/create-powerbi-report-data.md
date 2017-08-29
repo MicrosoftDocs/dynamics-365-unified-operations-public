@@ -3,7 +3,7 @@
 
 title: Create a Power BI report by using Finance and Operations data
 description: This tutorial outlines the process for creating an end user–friendly data model, reports, and dashboards in the version of Power BI that is currently available from http - //app.powerbi.com.
-author: sericks007
+author: MilindaV2
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

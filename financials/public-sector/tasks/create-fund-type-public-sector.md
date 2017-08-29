@@ -24,13 +24,14 @@ ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a fund type in the public sector
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Fund types are categories that you can use to group funds for detailed fiscal tracking and reporting. The Generally Accepted Accounting Principles (GAAP) for state and local governmental accounting provides standards that you can follow when you set up your system of funds and fund types. 
+Fund types are categories that you can use to group funds for detailed fiscal tracking and reporting. The Generally Accepted Accounting Principles (GAAP) for state and local governmental accounting provides standards that you can follow when you set up your system of funds and fund types. 
+
 This procedure was created using the PSUS demo company data in the public sector partition.
 
 1. Go to General ledger > Chart of accounts > Funds > Fund types.

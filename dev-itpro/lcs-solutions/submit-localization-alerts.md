@@ -3,7 +3,7 @@
 
 title: Inform about country/region regulatory features
 description: This article describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the Localization and translation service. This article also explains how to track planned and released regulatory features through LCS Issue search. 
-author: shylathompson
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

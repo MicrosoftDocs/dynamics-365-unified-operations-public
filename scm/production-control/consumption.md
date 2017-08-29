@@ -3,7 +3,7 @@
 
 title: Calculate material consumption
 description: This article provides information about various options that are related to the calculation of material consumption. 
-author: YuyuScheller
+author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

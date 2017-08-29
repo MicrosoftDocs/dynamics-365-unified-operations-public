@@ -24,14 +24,16 @@ ms.search.region: United Kingdom
 # ms.search.industry: 
 ms.author: epodkolz
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a credit on the settlement discount (UK)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This walkthrough was created using the demo company DEMF with country context switched for the United Kingdom (Country/region GBR). 
-This task walks you through creating a customer invoice that includes cash discount, with further prompt payment and generating credit note on cash discount to adjust the VAT entries posted on the original invoice. 
+This walkthrough was created using the demo company DEMF with country context switched for the United Kingdom (Country/region GBR). 
+
+This task walks you through creating a customer invoice that includes cash discount, with further prompt payment and generating credit note on cash discount to adjust the VAT entries posted on the original invoice. 
+
 Prior to this task, the “Setup parameters for credit note on prompt payment discount” tasks should be completed.
 
 1. Go to Accounts receivable > Invoices > All free text invoices.

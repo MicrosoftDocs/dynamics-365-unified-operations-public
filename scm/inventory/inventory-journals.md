@@ -3,7 +3,7 @@
 
 title: Inventory journals
 description: This article describes how you can use inventory journals to post various types of physical inventory transactions. 
-author: YuyuScheller
+author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

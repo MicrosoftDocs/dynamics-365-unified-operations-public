@@ -24,17 +24,22 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Settle a postdated check for a vendor
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Settle a postdated check issued to a vendor when the bank has cleared the check transaction after the check has been overdue and cleared by the bank. 
-Complete the following procedures before you start this one.
-1) Set up postdated checks
-2) Register and post a postdated check for a vendor
-
+Settle a postdated check issued to a vendor when the bank has cleared the check transaction after the check has been overdue and cleared by the bank. 
+
+Complete the following procedures before you start this one.
+
+1) Set up postdated checks
+
+2) Register and post a postdated check for a vendor
+
+
+
 The role of this procedure is Treasurer. This procedure uses the USMF demo company.
 
 1. Go to Accounts payable > Payments > Vendor postdated checks.

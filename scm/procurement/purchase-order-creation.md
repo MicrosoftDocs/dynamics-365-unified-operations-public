@@ -3,7 +3,7 @@
 
 title: Create purchase orders
 description: This article describes the process and options when you manually create a purchase order.
-author: YuyuScheller
+author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

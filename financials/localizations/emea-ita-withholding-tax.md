@@ -3,7 +3,7 @@
 
 title: Withholding tax for Italy
 description: This topic explains how to configure up Italy-specific settings for withholding tax and Italian withholding tax reports.
-author: ShylaThompson
+author: Anasyash
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article

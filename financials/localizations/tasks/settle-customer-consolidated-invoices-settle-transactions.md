@@ -24,17 +24,22 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Settle customer consolidated invoices by using settle transactions (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-In Japan, payments are made and settled against consolidated invoice.
-
-This procedure walks you through settling a consolidated invoice using settle transactions.
-
-You need to make sure that a consolidated invoice is created and confirmed, and a payment is posted before running this procedure. 
+In Japan, payments are made and settled against consolidated invoice.
+
+
+
+This procedure walks you through settling a consolidated invoice using settle transactions.
+
+
+
+You need to make sure that a consolidated invoice is created and confirmed, and a payment is posted before running this procedure. 
+
 This procedure was created using the demo data company JPMF.
 
 1. Go to Accounts receivable > Periodic tasks > Consolidated invoice.

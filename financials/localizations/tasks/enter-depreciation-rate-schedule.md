@@ -24,18 +24,24 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Enter a depreciation rate schedule and associate to a depreciation profile (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-In Japan, the fixed asset depreciation rate is released by a government agency. You can enter the depreciation rate schedule into the system. The depreciation rate schedule is implemented as a data entity so that it can be imported from a file. 
-
-Use this task to learn how to modify the depreciation rate schedule and associate it to a depreciation profile. The import is not covered in this task. 
-
-In order to complete this task, the Fixed Assets configuration key must be selected.
-
+In Japan, the fixed asset depreciation rate is released by a government agency. You can enter the depreciation rate schedule into the system. The depreciation rate schedule is implemented as a data entity so that it can be imported from a file. 
+
+
+
+Use this task to learn how to modify the depreciation rate schedule and associate it to a depreciation profile. The import is not covered in this task. 
+
+
+
+In order to complete this task, the Fixed Assets configuration key must be selected.
+
+
+
 This task uses the JPMF demo company data.
 
 

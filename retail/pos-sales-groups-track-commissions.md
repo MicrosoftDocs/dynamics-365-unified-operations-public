@@ -3,7 +3,7 @@
 
 title: Track commissions in POS using sales groups
 description: It's a common retail practice to track sales by the associate who worked with the customer—providing assistance, up-selling, cross-selling, and processing the transaction.
-author: josaw1
+author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -26,7 +26,7 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611, Retail Version
+ms.dyn365.ops.version: Version 1611
 
 ---
 

@@ -3,7 +3,7 @@
 
 title: Assess sales performance by product
 description: You can study profitability for the top 10 products using Microsoft Dynamics 365 for Retail. 
-author: josaw1
+author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

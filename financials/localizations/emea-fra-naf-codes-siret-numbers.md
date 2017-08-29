@@ -3,7 +3,7 @@
 
 title: NAF codes and siret numbers
 description: This topic explains the purpose and usage of Nomenclature des Activités Françaises (NAF) codes and Siret numbers in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

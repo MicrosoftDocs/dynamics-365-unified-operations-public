@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Import users in bulk
 

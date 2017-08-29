@@ -3,7 +3,7 @@
 
 title: Purchase requisition overview
 description: This article describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
-author: YuyuScheller
+author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

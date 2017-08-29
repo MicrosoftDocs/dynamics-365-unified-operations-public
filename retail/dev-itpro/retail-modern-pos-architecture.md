@@ -3,7 +3,7 @@
 
 title: Retail Modern POS architecture
 description: This topic describes the POS topology.
-author: robinr
+author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

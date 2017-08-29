@@ -24,7 +24,7 @@ ms.search.region: Hungary
 # ms.search.industry: 
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Exchange rate calculation (Hungary)
 

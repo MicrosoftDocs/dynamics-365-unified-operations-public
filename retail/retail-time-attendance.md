@@ -3,7 +3,7 @@
 
 title: Retail time and attendance
 description: This topic describes the scenarios that are supported for time and attendance management in Microsoft Dynamics 365 for Retail. 
-author: MargoC
+author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

@@ -24,15 +24,18 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Inquire on deductible expenses (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This task walks you through running a query on deductible expenses.
-
-This task was created using the demo data company JPMF.
+This task walks you through running a query on deductible expenses.
+
+
+
+This task was created using the demo data company JPMF.
+
 
 
 1. Go to Fixed assets > Fixed assets > Fixed assets.

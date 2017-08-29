@@ -24,18 +24,24 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create and confirm a vendor consolidated invoice (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-In Japan, sales and purchase invoices during the month are consolidated at the end of the month to calculate the due amount. 
-
-This task walks you through creating and confirming a vendor consolidated invoice.
-
-Before you can complete this task, you must have posted purchase invoices. 
-
+In Japan, sales and purchase invoices during the month are consolidated at the end of the month to calculate the due amount. 
+
+
+
+This task walks you through creating and confirming a vendor consolidated invoice.
+
+
+
+Before you can complete this task, you must have posted purchase invoices. 
+
+
+
 This task was created using the demo data company JPMF.
 
 1. Go to Accounts payable > Periodic tasks > Consolidated invoice.

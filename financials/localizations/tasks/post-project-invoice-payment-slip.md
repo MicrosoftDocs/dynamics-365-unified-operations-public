@@ -24,16 +24,20 @@ ms.search.region: Denmark
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Post a project invoice with a payment slip (Denmark)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-You can post a free text invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment.
-Before you can complete this procedure, you must first set up a payment slip format and set up payment slips for customer invoices. 
-
-This functionality is available for legal entities whose primary address is in Denmark. 
+You can post a free text invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment.
+
+Before you can complete this procedure, you must first set up a payment slip format and set up payment slips for customer invoices. 
+
+
+
+This functionality is available for legal entities whose primary address is in Denmark. 
+
 This procedure was created using the demo data company DEMF.
 
 1. Go to Accounts receivable > Customers > All customers.

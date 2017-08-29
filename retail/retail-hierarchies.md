@@ -3,7 +3,7 @@
 
 title: Retail hierarchies
 description: This article describes retail hierarchies in Microsoft Dynamics 365 for Retail.
-author: josaw1
+author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

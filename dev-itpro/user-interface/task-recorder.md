@@ -13,7 +13,8 @@ ms.technology:
 
 # optional metadata
 
-keywords: SysTaskRecorderPane
+ms.search.form: SysTaskRecorderPane 
+# keywords:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 

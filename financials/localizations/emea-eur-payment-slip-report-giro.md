@@ -3,7 +3,7 @@
 
 title: Payment slip report for Europe
 description: This topic provides information about payment slip reports for Europe.
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
