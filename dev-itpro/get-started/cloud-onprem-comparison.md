@@ -153,8 +153,7 @@ The following table shows whether each feature is available in:
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
-| Administration | | | |
-| Development | All development features are supported in Cloud and on-premises | Yes | Yes |
+| Visual Studio development | All development features are supported in Cloud and on-premises | Yes | Yes |
 | Extensibility| All extensibility features are supported in Cloud and on-premises | Yes | Yes |
 | Monitoring and telemetry - Kristin? || Yes | ? |
 | Platform compatibility - Kristin? || Yes | ? |
