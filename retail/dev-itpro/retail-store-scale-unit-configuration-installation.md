@@ -188,7 +188,7 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 10. After the installation is completed, the final health page appears. This page shows whether the installation was successful. It also shows the health of each component, based on basic connection tests, and the location of this topic. If the installation wasn't successful, the page shows the location of the log files.  It is recommended to keep this final health page up until the Retail Store Scale Unit configuration is fully completed and all components are functioning properly.
 
 
-## Finish the Retail Store Scale Unitl configuration in headquarters
+### Finish the Retail Store Scale Unit configuration in headquarters
 The last steps require validation and verification that the Azure application ID (client ID) and key (secret) are properly accepted in headquarters to allow connections between the environment and the new Retail Store Scale Unit.
 
 1. After the application ID (client ID) and key (secret) are created for Retail Store Scale Unit and entered into the installer, the application ID (client ID) must be accepted in Retail headquarters. In Retail headquarters, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
