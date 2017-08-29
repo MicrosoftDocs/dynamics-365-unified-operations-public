@@ -2,7 +2,7 @@
 # required metadata
 
 title: Routes and operations
-description: This topic provides information about routes and operations. A route defines the process for producing a product or product variant. It describes each step (operation) in the production process and the order that these steps must be performed in. For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.
+description: This topic provides information about routes and operations. 
 author: YuyuScheller
 manager: AnnBe
 ms.date: 06/20/2017
