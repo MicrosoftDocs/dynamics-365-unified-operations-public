@@ -93,9 +93,7 @@ The following table shows whether each feature is available in:
 | | Mobile framework| Yes | Yes |
 | | Dynamics 365 for Unified Operations mobile app and workspaces | Yes | Yes |
 | Office integration| | Yes | Yes |
-| Organization administration | | | |
-| | Case management| Yes | Yes |
-| | Case management for production and quality orders| Yes | Yes |
+| Organization administration | | Yes | Yes |
 | Planning and scheduling| | | |
 | Procurement and sourcing| | | |
 | | Intercompany order processing: ATP and direct shipment| Yes | Yes |
