@@ -67,7 +67,7 @@ Don't make a new hire question their decision to join your company by setting a 
 
 Create an agenda for the day and share it with your new hire. Don't just focus on orientation. Make sure to have fun, introduce them to people, and show them around the office. Keep other employees in the loop. Let them know that someone new is joining the company. Don't leave out the people in IT, Payroll, and other administrative departments. Make sure that new hires have everything they need to get started. This includes a workspace, computer, and required credentials, software, and tools. Focus on relationships instead of paperwork.
 
-Relationships are key to getting new hires get up to speed. More importantly, they help create a sense of community and belonging at your company.
+Relationships are key to getting new hires get up to speed. More importantly, they help create a sense of community and belonging in your company.
 
 - Find an expert or champion in your company and make them an onboarding buddy.
 - Connect new hires with job-related communities or interest groups. This is a great way to find coaches or mentors.
@@ -80,7 +80,7 @@ Give your new hire the confidence and tools that they need to be successful. Thi
 
 ## Set clear milestones
 
-Set up clear checkpoints and feedback loops between you and your new hire. Create as much opportunity to intervene and course-correct as possible. You want to address issues before they become a big problem, or worse, attrition.
+Set up clear checkpoints and feedback loops between you and your new hire. Create as much opportunity to intervene and course-correct as possible. You want to address issues before they become problems, or worse, lead to attrition.
 
 Schedule a one-on-one meeting with the new employee before their first week is over. This is a great time to discuss expectations, work styles, and career growth.
 
