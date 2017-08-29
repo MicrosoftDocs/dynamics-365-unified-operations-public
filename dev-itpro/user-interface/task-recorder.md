@@ -80,7 +80,7 @@ Now you're ready to record a business process using Task Recorder. If you're fo
 ## Record a Fleet Management scenario
 1.  In the **Task Recorder Pane**, click **Start task**.
 2.  Set **Name** to "Create a new rental customer". Leave the **Comment** field blank.
-3.  Click **Ok**. 
+3.  Click **OK**. 
 [![This image shows the menu used to start a task while recording.](./media/taskrecorderguide-taskrecorderaddingatask.png)](./media/taskrecorderguide-taskrecorderaddingatask.png)
 4.  The task is added to the **Steps list**. 
 **[![This image shows the Steps List after a Task has been added.](./media/taskrecorderguide-taskrecordertaskadded.png)](./media/taskrecorderguide-taskrecordertaskadded.png)**
@@ -97,10 +97,10 @@ Now you're ready to record a business process using Task Recorder. If you're fo
 14. Under **Information**, select a "1975 Litware McKinley" as the vehicle.
 15. Under **Information**, set the customer to the one just created.
 16. Expand the **Discounts** section.
-17. Click **Add** under **Discounts** and add the Frequent Customer discount. Click **Ok**.
+17. Click **Add** under **Discounts** and add the Frequent Customer discount. Click **OK**.
 18. In the Action Pane, click **Start Rental**.
 19. Set the return date to some date in the future.
-20. Click **Ok**.
+20. Click **OK**.
 21. In the **Task Recorder Pane**, click **End task**.
 22. In the **Task Recorder Pane**, click **Stop**.
 
