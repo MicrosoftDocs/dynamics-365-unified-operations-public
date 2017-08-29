@@ -1782,7 +1782,7 @@
 ##### [Sequence production jobs for process manufacturing](/dynamics365/unified-operations/supply-chain/production-control/tasks/sequence-production-jobs-process-manufacturing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Use the safety stock journal to update minimum coverage](/dynamics365/unified-operations/supply-chain/production-control/tasks/use-safety-stock-journal-update-minimum-coverage?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Configure a worker using the mobile job device](/dynamics365/unified-operations/supply-chain/production-control/tasks/worker-mobile-job-device?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Manage unit of measure (Task guides)](/dynamics365/unified-operations/supply-chain/pim/tasks/manage-unit-measure?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Manage unit of measure (Task guides)](/dynamics365/unified-operations/supply-chain/pim/tasks/manage-unit-measure?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 
 ## [Product information management](/dynamics365/unified-operations/supply-chain/pim/product-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
