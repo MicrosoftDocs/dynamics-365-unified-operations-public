@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-o# ROBOTS: 
+# ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
