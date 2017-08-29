@@ -374,7 +374,7 @@ Task Recorder will now take screenshots of the tab that has the client running.
 
 ## Test generation
 
-After completing a business process recording using Task Recorder, a developer may import the recording file (.xml) into Visual Studio to create an X++ test. The Task Recorder Import Tool is able to generate a human-readable X++ test that translates any [Recording gestures](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_gestures), [Validations](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_controls) or [Tasks](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_controls) into the appropriate test code.
+After completing a business process recording using Task Recorder, a developer may import the recording file (.xml) into Visual Studio to create an X++ test. The Task Recorder Import Tool is able to generate a human-readable X++ test that translates any Recording gestures Validations or Tasks into the appropriate test code. <!-- The Task Recorder Import Tool is able to generate a human-readable X++ test that translates any [Recording gestures](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_gestures), [Validations](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_controls) or [Tasks](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_controls) into the appropriate test code. -->
 
 ### Import a recorded test
 
