@@ -265,15 +265,16 @@ If there are errors, you will see them on the **Execution summary** page just li
 
 ### Special considerations when you copy into a legal entity
 
-When you copy into a legal entity, you have the same validation that would occur when you import a file. If dependent information is not included in your list of entities to copy, then the entity will show errors when it tries to copy into the legal entity. For example, if a customer has a default site or warehouse, you will need to 1) import the sites and warehouses as part of the copy or 2) load the sites and warehouses manually before you copy the legal entity or 3) unmap the site and warehouse fields before you copy the information.
+When you copy into a legal entity, you have the same validation that would occur when you import a file. If dependent information is not included in your list of entities to copy, then the entity will show errors when it tries to copy into the legal entity. For example, if a customer has a default site or warehouse, you will need to 1) import the sites and warehouses as part of the copy or 2) load the sites and warehouses manually before you copy the legal entity or 3) unmap the site and warehouse fields before you copy the information. It is important to test your copy on a test environment to identify any dependencies that will cause failures.
 
 The following entities require special handling when they are used to copy into a legal entity:
 
 | Area | Entity | Action |  
 |------|--------|--------|
 | System setup | Workflow | Workflow requires additional changes before it can be copied. It is not supported at this time. |
-| General ledger | Ledger parameters | If you have continuous number sequences, the ledger parameters must be processed first. Change the sequence on your data project for ledger parameters to 15 (instead of 40). We will update the default templates in the monthly application release 3 to this value. |
-
+| General ledger | Ledger parameters | If you check for continuous number sequences but you have number sequences that are used on journal names and are not continuous, the imports will fail. You should temporarily turn off that setting in the ledger parameters. In addition, the ledger parameters must be processed first. Change the sequence on your data project for ledger parameters to 15 (instead of 40). We will update the default templates in the monthly application release 3 to this value. |
+| Acccounts payable | Vendors | Vendors have many settings that are dependent on the values that come from other entities. For example, if you update the matching settings to require three way matching but you have vendors set for two way matching, the vendor will fail validatation. |
+| Acccounts receivable | Customers | Customers have many settings that are dependent on the values that come from other entities. For example, if you have a default warehouse and site for a customer, you must add sites and warehouses first or the customer will fail validatation. The collections contact will also fail if the contact is not available in the new company. |
 
 ## Additional information about entities
 
