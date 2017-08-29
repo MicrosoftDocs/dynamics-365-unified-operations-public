@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-keywords: KanbanBoardTransferJob, KanbanFlow, KanbanRules
+ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
