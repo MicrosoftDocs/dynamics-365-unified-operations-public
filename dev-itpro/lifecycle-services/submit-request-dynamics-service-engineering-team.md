@@ -5,7 +5,7 @@ title: Submit a request to the Dynamics Service Engineering team
 description: You can submit requests directly to the Dynamics Service Engineering team by using LCS. 
 author: manalidongre
 manager: AnnBe
-ms.date: 08/14/2017
+ms.date: 08/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
