@@ -229,9 +229,9 @@ Run the following script against the imported database. The script performs the 
     ALTER DATABASE <imported database name> SET COMPATIBILITY_LEVEL = 130;
     ALTER DATABASE <imported database name> SET QUERY_STORE = ON;
  
-### Run the MajorVersionDataUpgradeWithRetail.zip package
+### Run the MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip packages
 
-Run the data upgrade deployable package, which is called MajorVersionDataUpgradeWithRetail.zip as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). You will find the MajorVersionDataUpgradeWithRetail.zip in the same location described in the article for MinorVersionDataUpgrade.zip.
+Run the data upgrade deployable packages, which are called MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). You must run both packages, one after the other.
 
 ### Upgrade a copy of the database in a development environment
 
