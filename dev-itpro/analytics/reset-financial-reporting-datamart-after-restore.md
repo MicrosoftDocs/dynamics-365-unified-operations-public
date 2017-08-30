@@ -75,7 +75,7 @@ These services will have open connections to the Finance and Operations database
 ## Reset
 ### Locate and download the latest MinorVersionDataUpgrade.zip package
 
-Locate the latest MinorVersionDataUpgrade.zip package using the directions found in [Download the latest data upgrade deployable package](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). The directions explain how to locate and download the correct version of the data upgrade package. An upgrade is not required to download the MinorVersionDataUpgrade.zip package. You only need to complete the steps in the “Download the latest data upgrade deployable package” section without performing any of the other steps in the article to retrieve a copy of the MinorVersionDataUpgrade.zip package.
+Locate the latest MinorVersionDataUpgrade.zip package using the directions found in [Download the latest data upgrade deployable package](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-packages). The directions explain how to locate and download the correct version of the data upgrade package. An upgrade is not required to download the MinorVersionDataUpgrade.zip package. You only need to complete the steps in the “Download the latest data upgrade deployable package” section without performing any of the other steps in the article to retrieve a copy of the MinorVersionDataUpgrade.zip package.
 
 ### Execute scripts against Finance and Operations database
 
