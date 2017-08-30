@@ -3,7 +3,7 @@
 
 title: Date effectivity
 description: This topic provides information about date-effective data entities and data sources, and shows how to create a date-effective entity. It also explains how date effectivity applies to read and write activities.
-author: RobinARH
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: margoc
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 24861
 ms.assetid: 63e43066-76c7-400b-be7d-d14785e7985d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kuntalme
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

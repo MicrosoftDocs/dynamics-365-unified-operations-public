@@ -3,7 +3,7 @@
 
 title: Retail SDK extensibility samples
 description: The Retail SDK includes extensibility samples. These samples are a good way to learn about different ways to customize Retail.  
-author: josaw1
+author: mugunthanm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

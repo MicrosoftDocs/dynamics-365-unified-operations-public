@@ -3,7 +3,7 @@
 
 title: Super types and sub types
 description: Describes support for inheritance patterns in data entities.
-author: RobinARH
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 25331
 ms.assetid: d59cefc0-be94-42e9-a22e-87493985dbcd
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kuntalme
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

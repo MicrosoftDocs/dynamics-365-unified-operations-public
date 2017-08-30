@@ -3,7 +3,7 @@
 
 title: Extend Commerce Data Exchange - Real-time Service
 description: This article explains how you can extend Commerce Data Exchange -  Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables retail clients to interact with retail functionality in real time.
-author: josaw1
+author: mugunthanm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
