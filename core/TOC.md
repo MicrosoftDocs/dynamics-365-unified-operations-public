@@ -1300,15 +1300,37 @@
 ## Inventory management
 ### Inbound process
 #### [Arrival overview](/dynamics365/unified-operations/supply-chain/inventory/arrival-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Set up an item arrival overview profile (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-item-arrival-overview-profile?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ### Set up inventory tracking
 #### [Inventory journals](/dynamics365/unified-operations/supply-chain/inventory/inventory-journals?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Inventory locations](/dynamics365/unified-operations/supply-chain/inventory/inventory-locations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Inventory statuses](/dynamics365/unified-operations/supply-chain/inventory/inventory-statuses?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Reserve inventory quantity](/dynamics365/unified-operations/supply-chain/inventory/reserve-inventory-quantities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Reserve the same batch for a sales order](/dynamics365/unified-operations/supply-chain/sales-marketing/reserve-same-batch-sales-order?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Create a new warehouse layout (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-new-warehouse-layout?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Maintain bar code types (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/maintain-barcode-types?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+### Inventory operations
+#### [Check the availability of stock (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/check-availability-stock?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Initialize stock levels in the warehouse (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/initialize-stock-levels-warehouse?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Transfer physical inventory within the warehouse (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/transfer-physical-inventory-within-warehouse?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Correct inventory tracking information (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/correct-inventory-tracking-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Adjust stock levels in the warehouse (basic warehousing) (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Create and maintain inventory blocking (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-maintain-inventory-blocking?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+### Inventory counting
+#### [Count inventory in a warehouse (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/count-inventory-warehouse?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Define inventory counting processes (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/define-inventory-counting-processes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+
 ### Consignment inventory
 #### [Consignment](/dynamics365/unified-operations/supply-chain/inventory/consignment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up consignment](/dynamics365/unified-operations/supply-chain/inventory/set-up-consignment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Change the ownership of consignment inventory based on production demand (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/change-ownership-consignment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Create a consignment replenishment order (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-consignment-replenishment-order?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+
 ### Quality management
 #### [Inventory on-hand mobile workspace](/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Enable quality management](/dynamics365/unified-operations/supply-chain/inventory/enable-quality-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1316,31 +1338,44 @@
 #### [Nonconformance management](/dynamics365/unified-operations/supply-chain/inventory/enable-nonconformance-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Quarantine order](/dynamics365/unified-operations/supply-chain/inventory/quarantine-orders?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Quality management process](/dynamics365/unified-operations/supply-chain/inventory/quality-management-processes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+
 ### Trace item and batch
 #### [Merge inventory batch](/dynamics365/unified-operations/supply-chain/inventory/merge-inventory-batches?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Trace item and raw material](/dynamics365/unified-operations/supply-chain/inventory/trace-items-raw-materials-inventory-production-sales?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Register serial number in the sales process](/dynamics365/unified-operations/supply-chain/sales-marketing/register-serial-numbers-sales-process?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Inventory management tasks
-#### [Adjust stock levels in the warehouse (basic warehousing)](/dynamics365/unified-operations/supply-chain/inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Change the ownership of consignment inventory based on production demand](/dynamics365/unified-operations/supply-chain/inventory/tasks/change-ownership-consignment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Check the availability of stock](/dynamics365/unified-operations/supply-chain/inventory/tasks/check-availability-stock?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Correct inventory tracking information](/dynamics365/unified-operations/supply-chain/inventory/tasks/correct-inventory-tracking-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Count inventory in a warehouse](/dynamics365/unified-operations/supply-chain/inventory/tasks/count-inventory-warehouse?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create a consignment replenishment order](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-consignment-replenishment-order?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create and maintain inventory blocking](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-maintain-inventory-blocking?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create a new warehouse layout](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-new-warehouse-layout?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### [Create and process a conformance](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-process-non-conformance?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Define inventory counting processes](/dynamics365/unified-operations/supply-chain/inventory/tasks/define-inventory-counting-processes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Initialize stock levels in the warehouse](/dynamics365/unified-operations/supply-chain/inventory/tasks/initialize-stock-levels-warehouse?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+
+
 #### [Inspect the quality of goods](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Maintain bar code types](/dynamics365/unified-operations/supply-chain/inventory/tasks/maintain-barcode-types?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+
+
 #### [Monitor consignment inventory using vendor collaboration](/dynamics365/unified-operations/supply-chain/inventory/tasks/monitor-consignment-inventory-vendor-collaboration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Set up an item arrival overview profile](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-item-arrival-overview-profile?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+
+
 #### [Set up prerequisites for management](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up quality orders](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-quality-orders?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Trace an item or raw material](/dynamics365/unified-operations/supply-chain/inventory/tasks/trace-item-or-raw-material?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Transfer physical inventory within the warehouse](/dynamics365/unified-operations/supply-chain/inventory/tasks/transfer-physical-inventory-within-warehouse?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+
 
 ## Logistics
 ### [Transportation management](/dynamics365/unified-operations/supply-chain/transportation/transportation-management-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
