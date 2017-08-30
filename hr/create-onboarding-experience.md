@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
 # ROBOTS:
-# audience: Application User
+audience: Application User
 # ms.devlang:
 # ms.reviewer:
 ms.search.scope: Operations, Core, Talent
