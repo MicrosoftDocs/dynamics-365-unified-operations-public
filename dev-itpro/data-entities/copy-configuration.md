@@ -271,12 +271,14 @@ The following entities require special handling when they are used to copy into 
 
 | Area | Entity | Action |  
 |------|--------|--------|
-| System setup | Workflow | Workflow requires additional changes before it can be copied. It is not supported at this time. |
+| System setup | Workflow | Workflow requires additional changes before it can be copied. Workflow copies are not supported at this time. |
 | General ledger | Ledger parameters | If you check for continuous number sequences but you have number sequences that are used on journal names and are not continuous, the imports will fail. You should temporarily turn off that setting in the ledger parameters. In addition, the ledger parameters must be processed first. Change the sequence on your data project for ledger parameters to 15 (instead of 40). We will update the default templates in the monthly application release 3 to this value. |
 | Acccounts payable | Vendors | Vendors have many settings that are dependent on the values that come from other entities. For example, if you update the matching settings to require three way matching but you have vendors set for two way matching, the vendor will fail validatation. |
 | Acccounts receivable | Customers | Customers have many settings that are dependent on the values that come from other entities. For example, if you have a default warehouse and site for a customer, you must add sites and warehouses first or the customer will fail validatation. The collections contact will also fail if the contact is not available in the new company. |
-| General ledger | Allocation rules | The copy into legal entity feature does not support destination legal entities in tables at this time. |
-| General ledger | Intercompany | The copy into legal entity feature does not support destination legal entities in tables at this time. |
+| Budget | Budget cost elements| There is an issue when importing budget cost elements when using an annual amount and there are budget cost elements in the Earnings basis tab. The issue will be addressed in a future release.|
+| General ledger | Allocation rules destination| The copy into legal entity feature does not support destination legal entities in tables at this time. It will only copy the destination records when the destination is equal to the source. |
+| General ledger | Intercompany | The copy into legal entity feature does not support intercompany tables at this time. |
+| Inventory management | Warehouse locations | Some warehouse locations require a location profile ID. Location profile IDs require a location format. Currently, the location format information must be manually added before the warehouse location. The entities for the location format and location profile were added in monthly update 3 for the Spring release of 2017| 
 
 ## Additional information about entities
 
