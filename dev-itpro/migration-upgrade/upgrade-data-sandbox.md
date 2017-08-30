@@ -231,7 +231,7 @@ Run the following script against the imported database. The script performs the 
  
 ### Run the MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip packages
 
-Run the data upgrade deployable packages, which are called MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). You must run both packages one after the other.
+Run the data upgrade deployable packages, which are called MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). You must run both packages, one after the other.
 
 ### Upgrade a copy of the database in a development environment
 
