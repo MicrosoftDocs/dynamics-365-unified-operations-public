@@ -5,7 +5,7 @@ title: Project resourcing
 description: This topic provides information about project resourcing.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -80,7 +80,7 @@ When you set up a worker as an intercompany resource, you must complete the setu
 
 **In the borrowing company**
 
-- Open the **Resources list**, and then, in the search filter, enter the name of the resource that you created for the lending company, to verify that the name is included in the resource list for the borrowing company.
+- On the **Resources list** page, in the search filter, enter the name of the resource that you created for the lending company, to verify that the name is included in the resource list for the borrowing company.
 
 ## Manage resource competencies
 Resource competencies are an essential part of resource management. Competencies can be used as a baseline to determine resources that have the correct balance of skills, education, certification, and project experience. You should set up this information for each resource and update it on a regular basis. In this way, you can maximize capabilities when specific resource competencies are matched during project resource assignment.
@@ -122,7 +122,7 @@ To set up competencies for a worker, you can use either the **Workers** list pag
 
 1. On the **Workers** page, in the **Workers** list, select the record for the worker that you previously set up competencies for, and open the worker record.
 2. On the Action Pane, on the **Project** tab, in the **Setup** group, select **Assign projects**.
-3. On the **Resource validation project assignments** page, on the **Projects** tab, in the **Add the project to selected projects**, filter on the **XYZ Upgrade Phase 2** project.
+3. On the **Resource validation project assignments** page, on the **Projects** tab, in the **Add the project to selected projects** field, filter on the **XYZ Upgrade Phase 2** project.
 4. In the **Remaining projects** pane, select a project, and then select the arrow button to add it to the **Selected projects** pane.
 
 You can also assign categories for a resource as you require. The category type is either **Cost** or **Revenue**. The category type is determined by your organization. If no categories are assigned for a resource, Finance and Operations looks up the default category on hour prices for cost and revenue.
@@ -168,7 +168,7 @@ The following steps show how the resource manager can set up the Senior project 
 
 ### Assign a resource to a default role
 
-To help project or resource managers, you can drill down further on the resources that can be reserved for a project. You can associate a default role with an existing resource or a newly acquired resource. For example, when Daniel was hired, he had the experience and skills to fill the Business analyst role. The resource manager assigned this role as Daniel's default role. Therefore, the resource manager added Daniel to a pool of business analysts who are available to work on projects.
+To help project or resource managers can drill down further on the resources that can be reserved for a project. You can associate a default role with an existing resource or a newly acquired resource. For example, when Daniel was hired, he had the experience and skills to fill the Business analyst role. The resource manager assigned this role as Daniel's default role. Therefore, the resource manager added Daniel to a pool of business analysts who are available to work on projects.
 
 During resource reservation, project managers can filter the role resources that are available to work on projects. They can use this information as one criterion when they perform multi-criteria decision analysis during resource fulfillment. They can also add other resource characteristics to the filter to search for resources that have specific skills, education, and experience for a given project.
 
@@ -231,7 +231,7 @@ The processes for resource synchronization help guarantee that information for t
 
 The synchronization process is designed to synchronize all resource calendar information. This information includes base calendar information about any changes to the project's Resource calendar capacity table. If new resources are added in the project, synchronization helps guarantee that the updated calendar information is available. This synchronization can be done at any time.
 
-We recommend that you use a batch. The options are available in synchronizing capacity reservations.
+We recommend that you use a batch. The options are available during synchronization of capacity reservations.
 
 1. Select **Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resources capacity roll-ups**.
 2. Set the options in the following table.
@@ -350,7 +350,7 @@ After the preceding tasks have been completed, you can complete the following ta
 - Monitor resource requests.
 - Fulfill resource requests.
 - Request a staffed resource from a WBS.
-- Book resources to a project without a request for a staffed resource.
+- Book resources to a project without having a request for a staffed resource.
 
 ## Monitor project teams
 1. On the **All projects** page, select the **Project ID** link for the **XYZ Upgrade Phase 2** project.
