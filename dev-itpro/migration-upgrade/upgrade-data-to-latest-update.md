@@ -68,14 +68,14 @@ This topic describes how to upgrade an older source database to the latest Finan
     Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\\AosService\\PackagesLocalDirectory" -metadatadir        J:\\AosService\\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
     ```
 
-5. If upgrading to the July 2017 release (also known as 7.2) 7.2.11792.56024 you must apply the following application X++ hotfixes in the destination environment before running the data upgrade in that environment. These will prevent various errors occuring during the data upgrade:
+5. If you are upgrading to the July 2017 release (also known as 7.2) 7.2.11792.56024, apply the following application X++ hotfixes in the destination environment before running the data upgrade in that environment. These will prevent various errors occuring during the data upgrade:
 
-    - KB 4036156 - Retail minor version upgrade - 'Variant number sequence is not set.' This fix package also includes KB 4035399 and KB 4035751. Note that you must have a minimum of Platform update 9 to use this package, if in any doubt install the latest binaries.
+    - KB 4036156 - Retail minor version upgrade - 'Variant number sequence is not set.' This fix package also includes KB 4035399 and KB 4035751. Note that you must have a minimum of Platform Update 9 to use this package. If you are unsure, install the latest binaries.
     
-6. If upgrading from AX 2012 install the following application X++ fixes in the destination environment before running the data upgrade:
-    - KB 4033183 - AX2012 R2 or AX2012 R3 Pre CU8 non-retail upgrade fails with Object not found for dbo.RETAILTILLLAYOUTZONE
-    - KB 4040692 - AX2012 R3 to 7.2 upgrade fails on RetailSalesLine duplicate index on SalesLineIdx.
-    - KB 4035490 - Performance issue with GeneralJournalAccountEntry MainAccount field upgrade script
+6. If you are upgrading from Microsoft Dynamics AX 2012, install the following application X++ fixes in the destination environment before you run the data upgrade:
+    - KB 4033183 - Dynamics AX 2012 R2 or Dynamics AX 2012 R3 Pre-CU8 non-retail upgrade fails with Object not found for dbo.RETAILTILLLAYOUTZONE.
+    - KB 4040692 - Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Operations 7.2 upgrade fails on RetailSalesLine duplicate index on SalesLineIdx.
+    - KB 4035490 - Performance issue with GeneralJournalAccountEntry MainAccount field upgrade script.
 
 7. If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required, because the demo data contains bad records for some kernel X++ classes.
 
