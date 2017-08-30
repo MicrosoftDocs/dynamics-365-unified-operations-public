@@ -22,8 +22,8 @@ ms.search.scope:  Operations, UnifiedOperations, Platform, Core
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: maertenm
-ms.dyn365.intro: 2017-06-30
-ms.dyn365.version: Platform update 8
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: Platform update 8
 ---
 
 # Out-of-the-box security reports

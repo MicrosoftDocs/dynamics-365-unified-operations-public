@@ -23,7 +23,7 @@ ms.reviewer: margoc
 # ms.tgt_pltfrm: 
 ms.custom: 62303
 ms.search.region: Global
-# ms.industry: 
+# ms.search.industry: 
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0

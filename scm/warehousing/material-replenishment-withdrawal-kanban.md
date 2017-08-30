@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-keywords: KanbanBoardTransferJob, KanbanFlow, KanbanRules
+ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -23,7 +23,7 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
-ms.industry: Manufacturing
+ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0

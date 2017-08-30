@@ -26,8 +26,7 @@ ms.search.region: Global
 # ms.search.industry:
 ms.author: tbisaacs
 # ms.search.validFrom:
-# ms.dyn365.ops.version:
-
+ms.dyn365.ops.version: Talent July 2017 update
 ---
 
 # Create an engaging onboarding experience

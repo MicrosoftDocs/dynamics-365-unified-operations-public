@@ -24,8 +24,8 @@ ms.assetid: 9dc45189-6e7e-4207-ad78-dbbb644dd1ce
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aneesa
-ms.dyn365.intro: 2017-05-19]
-ms.dyn365.version: Platform update 6
+ms.search.validFrom: 2017-05-19
+ms.dyn365.ops.version: Platform update 6
 ---
 
 # Configure the Workflow message processing batch job as critical
