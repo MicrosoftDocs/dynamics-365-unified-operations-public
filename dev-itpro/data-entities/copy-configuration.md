@@ -265,7 +265,9 @@ If there are errors, you will see them on the **Execution summary** page just li
 
 ### Special considerations when you copy into a legal entity
 
-When you copy into a legal entity, you have the same validation that would occur when you import a file. If dependent information is not included in your list of entities to copy, then the entity will show errors when it tries to copy into the legal entity. For example, if a customer has a default site or warehouse, you will need to 1) import the sites and warehouses as part of the copy or 2) load the sites and warehouses manually before you copy the legal entity or 3) unmap the site and warehouse fields before you copy the information. It is important to test your copy on a test environment to identify any dependencies that will cause failures.
+When you copy into a legal entity, you have the same validation that would occur when you import a file. It is important to test your copy on a test environment to identify any dependencies that will cause failures. If dependent information is not included in your list of entities to copy, then the entity will show errors when it tries to copy into the legal entity. For example, if a customer has a default site or warehouse, you will need to 1) import the sites and warehouses as part of the copy or 2) load the sites and warehouses manually before you copy the legal entity or 3) unmap the site and warehouse fields before you copy the information.
+
+You may also experience import errors if you are copying from one region into a different region. For example, you can have 1099 fields in a legal entity in the US region but, if you try to import those values into a legal entity with a German region, you will see errors on import. You should only copy information that is appropriate for the destination region.
 
 The following entities require special handling when they are used to copy into a legal entity:
 
