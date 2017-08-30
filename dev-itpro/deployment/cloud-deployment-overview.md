@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 51
+ms.reviewer: kfend
 ms.search.scope: AX 7.2.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373

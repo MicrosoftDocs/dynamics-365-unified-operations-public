@@ -24,9 +24,10 @@ ms.reviewer: josaw
 ms.custom: 24271
 ms.assetid: bbb6914b-91bc-4477-9d5a-bb48d339882f
 ms.search.region: Global
-# ms.industry: 
+# ms.search.industry: 
 ms.author: jasongre
-
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Task Recorder 

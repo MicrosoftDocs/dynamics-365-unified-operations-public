@@ -23,7 +23,7 @@ ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 1706093
 ms.assetid: 75ee68e0-4b9f-4f4d-b286-f498e0eb73fa
 ms.search.region: Global
-# ms.industry: 
+# ms.search.industry: 
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0

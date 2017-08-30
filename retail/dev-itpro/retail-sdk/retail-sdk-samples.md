@@ -3,7 +3,7 @@
 
 title: Retail SDK samples
 description: This topic describes three new samples that were released together with the Retail SDK in December 2016.
-author: josaw1
+author: mugunthanm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
