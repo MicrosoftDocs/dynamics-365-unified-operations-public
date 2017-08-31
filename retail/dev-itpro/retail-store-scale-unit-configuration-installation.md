@@ -52,7 +52,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 4. In the **Channel database ID** field, enter a unique value.
 5. In the **Channel data group** field, select the **Default** option.
 
-    > You can select any other option that you've already created.
+     You can select any other option that you've already created.
 
 6. In the **Type** field, leave the default value (**Channel database**) selected.
 7. You can leave the **Data sync interval** field blank.
