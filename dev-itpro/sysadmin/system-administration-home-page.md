@@ -5,7 +5,7 @@ title: System administration home page
 description: This topic lists resources that are available for system administrators.
 author: sericks007
 manager: AnnBe
-ms.date: 08/16/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,12 +35,14 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic lists resources that are available for system administrators.
+This topic points to content for system administrators of Dynamics 365 for Finance and Operations, Enterprise edition. This content will help them configure the system to work smoothly and effectively for your organization and business.
 
 Lifecycle Services
 ------------------
+Lifecycle Services (LCS) is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your Finance and Operations implementations.
 
--   [Microsoft Dynamics Lifecycle Services User Guide](../lifecycle-services/lcs-user-guide.md)
+- [Lifecycle Services for Finance and Operations](../lifecycle-services/lcs.md)
+- [Dynamics Lifecycle Services user guide](../lifecycle-services/lcs-user-guide.md)
 
 ## Deployment
 
