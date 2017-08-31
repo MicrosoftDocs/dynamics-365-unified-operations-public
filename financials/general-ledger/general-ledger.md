@@ -47,7 +47,7 @@ You can allocate, or distribute, monetary amounts to one or more accounts or acc
 rules. There are two types of allocations: fixed and variable. You can also settle transactions between ledger accounts and revalue 
 currency amounts. At the end of a fiscal year, you must generate closing transactions and prepare your accounts for the next fiscal year. You can use the consolidation functionality to combine the financial results for several subsidiary legal entities into results for a single, consolidated organization. The subsidiaries can be in the same Microsoft Dynamics 365 for Finance and Operations database or in separate databases.
 
-- [Consolidation and elimination overview](consolidation-elimination-overview.md)
+- [Consolidation and elimination overview](../budgeting/consolidation-elimination-overview.md)
 - [General ledger account balances](general-ledger-account-balances.md)
 - [Financial dimensions](financial-dimensions.md)
 
