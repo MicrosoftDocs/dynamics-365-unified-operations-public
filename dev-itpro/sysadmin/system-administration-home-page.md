@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic points to content for system administrators of Dynamics 365 for Finance and Operations, Enterprise edition. This content will you configure the system to work smoothly and effectively for your organization.
+This topic points to content for system administrators of Dynamics 365 for Finance and Operations, Enterprise edition. This content will help you configure the system to work smoothly and effectively for your organization.
 
 Lifecycle Services
 ------------------
@@ -54,7 +54,7 @@ You can deploy Finance and Operations in the cloud or on-premises. Cloud deploym
 - [System requirements for on-premises deployments](../get-started/system-requirements-on-prem.md)
 
 ## Hotfixes and updates
-To install the latest monthly platform update on an existing environment, go to LCS. In the Shared asset library, select the **Software deployable package** tab. You will find the latest platform update package that you can deploy. For more details, see [Upgrade Finance and Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md).
+To install the latest monthly platform update on an existing environment, go to LCS. In the Shared asset library, select the **Software deployable package** tab. You will find the latest platform update package that you can deploy. For more details, see [Upgrade Finance and Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md) and [Finance and Operations cloud platform monthly updates FAQ](faq-platform-monthly-updates.md).
 
 Application updates (X++ and binary) are available in the update tiles based on those applicable to a specific environment. Application updates can be searched for and applied as needed. All available application updates are applicable to the latest platform update. See the details for the release in the [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md). 
 
