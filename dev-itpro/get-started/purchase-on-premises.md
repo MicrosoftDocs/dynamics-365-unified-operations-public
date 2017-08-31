@@ -36,12 +36,12 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premis
 > [!NOTE]
 > Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
 
-Purchasing client access licenses
+Purchase client access licenses
 -------------------
 
 To run Finance and Operations (on-premises) you must obtain the proper number of client access licenses (CALs) for your organization per the licensing guide. The CAL purchased for an individual user determines the functionality that the user has the rights to use. User CALs can be purchased from the [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
-Purchasing server licenses
+Purchase server licenses
 --------------------------
 
 A server license is required for every server running Finance and Operations (on-premises). After purchasing your server licenses, work with your partner to download a license file from the [PartnerSource Business Center](https://businesscenter.mbs.microsoft.com/). Keep this license file handy, as the details it contains will be used when setting up your Lifecycle Services (LCS) project.
@@ -66,7 +66,7 @@ Partners can download a customer's Finance and Operations (on-premises) license 
 
 **Note**: If you cannot see registration keys in PartnerSource Business Center, you will need to ensure that your PartnerSource Business Center Profile has **Can See Registration Keys** set to **Yes**.
 
-Getting started with Lifecycle Services (LCS)
+Get started with Lifecycle Services (LCS)
 ---------------------------------------
 
 To purchase Finance and Operations (on-premises) you must have a Microsoft Online Services ID. The Microsoft Online Services ID is used to provision an LCS project that contains the necessary artifacts for Finance and Operations (on-premises). LCS is the service where on-premises environments will be provisioned, Business Process Model created/uploaded, hotfixes are made available, support cases are entered and managed, license key serial number activation submitted, etc.
