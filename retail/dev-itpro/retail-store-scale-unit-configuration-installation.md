@@ -108,7 +108,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
 6. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 
-         Browsers might block the download pop-up that is generated. Select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
+     Browsers might block the download pop-up that is generated. Select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
 
 7. On the Action Pane, select **Download**.
 8. On the drop-down menu, select **Retail Store Scale Unit package**.
