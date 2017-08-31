@@ -191,15 +191,15 @@ The last steps require validation and verification that the Azure application ID
 
     1. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
-    3. On the **Identity providers** FastTab, select the provider that begins with `**HTTPS://sts.windows.net/**`. The values on the **Relying parties** FastTab are set, based on your selection.
+    3. On the **Identity providers** FastTab, select the provider that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are set, based on your selection.
     4. On the **Relying parties** FastTab, select **+Add**. Enter the client ID that is listed in the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
-    5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter `**https://retailstorescaleunit.retailserver.com**`.
+    5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter `https://retailstorescaleunit.retailserver.com`.
     6. On the Action Pane, select **Save**.
 
 3. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
 4. Select **Identity providers**.
 5. On the **Identity providers** FastTab, select **+Add**.
-6. In the new **Issuer** row, enter the Retail Server URL of the newly installed Retail Store Scale Unit.  At the end of the URL, add **/auth**.  The URL will resemble **https://MyComputerName/RetailServer/auth**.
+6. In the new **Issuer** row, enter the Retail Server URL of the newly installed Retail Store Scale Unit.  At the end of the URL, add **/auth**.  The URL will resemble `https://MyComputerName/RetailServer/auth`.
 
     > [!NOTE]
     > There will be a new identity provider line for each Retail Store Scale Unit that is installed. Each Retail Store Scale Unit will have a URL that resembles this URL.
@@ -219,11 +219,8 @@ The last steps require validation and verification that the Azure application ID
 
 12. On the Action Pane, select **Save**.
 13. When you've finished, return to the installer, and select **Finish**.
-
-
-
-    > [!NOTE]
-    > The final page of the installer includes valuable information that you can use to test and validate that all components work correctly. Keep this page open for as long as you require to complete validation.
+   
+     The final page of the installer includes valuable information that you can use to test and validate that all components work correctly. Keep this page open for as long as you require to complete validation.
 
 > [!NOTE]
 
