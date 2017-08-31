@@ -82,7 +82,26 @@ Statements are views for the managers who are responsible for controlling costs.
 
 **Data connector**
 
-Data can be imported into Cost accounting from external systems via data connectors. For example, you can import account structures, dimensions, general ledger entries, and budget entries. You can use preconfigured data connectors or custom connectors to import data and create data connections.
+Cost accounting supports integration of data from source systems via a set of data connectors. The following data connectors are available:
+
+-  Imported transactions (pre-configured)
+-  Dynamics 365 for Finance and Operations, Enterprise edition (pre-configured)
+-  Dynamics AX (configuration required)
+
+**Note:** The data connector Imported transactions is based on data entities.
+
+**Data provider**
+
+Most source systems can provide data that matches one or more data sources in Cost accounting. To align data from the source systems with the data source in Cost accounting, a data provider needs to be configured. The following table lists the availability of data providers per data connector and data source.
+
+|  **Data sources** |  **Imported transactions data connector** | **Dynamics 365 for Finance and Operations, Enterprise edition data connector**  | **Dynamics AX data connector**  |
+|---|---|---|---|
+| Cost element dimension members  |  Yes | Yes  | Yes  |
+|  Cost object dimension members |  Yes | Yes  | Yes  |
+|  Statistical dimension members | Yes  | No  | Yes  |
+|  General ledger | Yes  | Yes  | Yes  |
+|  Budget entries  | Yes  | Yes  | Yes  |
+|  Statistical measures | Yes  | Yes  | Yes  |
 
 **Cost classification**
 
