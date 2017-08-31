@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic points to content for system administrators of Dynamics 365 for Finance and Operations, Enterprise edition. This content will help them configure the system to work smoothly and effectively for your organization and business.
+This topic points to content for system administrators of Dynamics 365 for Finance and Operations, Enterprise edition. This content will you configure the system to work smoothly and effectively for your organization.
 
 Lifecycle Services
 ------------------
@@ -45,23 +45,27 @@ Lifecycle Services (LCS) is a collaboration portal that provides an environment 
 - [Dynamics Lifecycle Services user guide](../lifecycle-services/lcs-user-guide.md)
 
 ## Deployment
+You can deploy Finance and Operations in the cloud or on-premises. Cloud deployments offer an ERP service that is fully managed by Microsoft, while on-premises deployments are deployed locally within a customer's data center.
 
 -   [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
--   [Sign up for a preview subscription](../dev-tools/sign-up-preview-subscription.md)
-- [Deploy a Microsoft Dynamics 365 for Finance and Operations demo environment](../deployment/deploy-demo-environment.md)
 - [Dynamics 365 for Finance and Operations, Enterprise edition cloud deployment overview](../deployment/cloud-deployment-overview.md)
 -   [System requirements for cloud deployments](../get-started/system-requirements.md)
 - [On-premises deployment landing page](/deployment/on-premises-deployment-landing-page.md)
 - [System requirements for on-premises deployments](../get-started/system-requirements-on-prem.md)
 
 ## Hotfixes and updates
+To install the latest monthly platform update on an existing environment, go to LCS. In the Shared asset library, select the **Software deployable package** tab. You will find the latest platform update package that you can deploy. For more details, see [Upgrade Finance and Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md).
 
-- [Finance and Operations cloud platform monthly updates FAQ](faq-platform-monthly-updates.md)
+Application updates (X++ and binary) are available in the update tiles based on those applicable to a specific environment. Application updates can be searched for and applied as needed. All available application updates are applicable to the latest platform update. See the details for the release in the [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md). 
+
+If you are already on platform update 4 or later, applying an application **binary** update will also update your Finance and Operations platform to the latest release. 
+
+![Application and binary update tiles](./media/application-and-binary-update-tiles-146x300.png)
+
+For more information about hotfixes and updates, see:
 -   [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md)
--   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
--   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
--   [Install retail hotfixes](/dynamics365/unified-operations/retail/dev-itpro/install-retail-hotfix?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
--   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
+-   [Install a metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
+-   [Apply a deployable package](..\deployment\apply-deployable-package-system.md)
 
 ## Upgrade
 
@@ -72,11 +76,11 @@ Lifecycle Services (LCS) is a collaboration portal that provides an environment 
 -   [Upgrade data in development, demo, or sandbox environments](../migration-upgrade/upgrade-data-to-latest-update.md)
 
 
-## Database administration
+## Database management
 -   [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md)
 -   [Copy a Microsoft Dynamics 365 for Finance and Operations database from SQL Server to an Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md)
--   [Request a point-in-time database restore on a non-production environment](../database/request-point-in-time-restore.md)
--   [Retain a copy of a Finance and Operations database to restore later](../database/copy-operations-database.md)
+-   [Restore a database on a non-production environment](../database/request-point-in-time-restore.md)
+-   [Create a copy of a Finance and Operations database to restore later](../database/copy-operations-database.md)
 
 ## Security
 -   [Role-based security](role-based-security.md)
