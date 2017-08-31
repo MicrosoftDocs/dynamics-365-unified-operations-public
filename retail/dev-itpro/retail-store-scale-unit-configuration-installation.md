@@ -114,8 +114,8 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 8. On the drop-down menu, select **Retail Store Scale Unit package**.
 9. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 
-    > [!NOTE]
-    > The correct installation package is automatically selected for download, based on the Retail Store Scale Unit package on the selected channel database.
+   
+     The correct installation package is automatically selected for download, based on the Retail Store Scale Unit package on the selected channel database.
 
 10. After the setup installer has been saved, on the Notification bar, select **Run**. (This step might differ, depending on the type of browser.)
 
