@@ -47,7 +47,7 @@ Cost accounting lets you collect data from various sources, such as the general 
 
 **Cost accounting ledger**
 
-The cost accounting ledger is a specialized framework that determines how processes, values, and quantities are entered and presented for a particular area in Cost accounting. The cost accounting ledger defines processes and rules for measuring costs on cost objects. It handles cost transactions, and manages documents that record the changes in values and quantities that cost transactions produce.
+Defined by calendar, currency, and cost element dimension, it controls processes and policies for measuring costs. 
 
 **Cost entry**
 
