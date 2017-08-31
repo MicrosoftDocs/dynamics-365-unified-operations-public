@@ -72,7 +72,7 @@ The process for client-side developement is described in these topics:
 + [Business logic events overview](business-logic-events-overview.md)
 + [Client APIs](client-apis/client-apis-reference.md)
 
-You can download a sample business logic file (a .js file) for Reservation management workspace from [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples).
+You can download a sample business logic file (a .js file) for the Reservation management workspace from [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples).
 
 ## Server-side development
 
