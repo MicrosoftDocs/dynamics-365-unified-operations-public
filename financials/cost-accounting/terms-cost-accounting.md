@@ -5,7 +5,7 @@ title: Cost accounting terminology
 description: This topic defines the key terms that are used in Cost accounting.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,36 +51,26 @@ Cost entries are the result of a transfer via data connectors from general ledge
 
 **Cost object**
 
-Cost objects are any type of object that costs are allocated to. Here are some typical cost objects:
+Any type of object that is selected for cost control. Costs or revenues are either directly posted on or allocated to cost objects. Some typical cost objects are:
 
--   Products
--   Projects
--   Resources
--   Departments
--   Cost centers
--   Geographic regions
+-  Products
+-  Projects
+-  Departments
+-  Cost centers
 
 Management uses cost objects to quantify costs, but also to drive profitability analysis.
 
 **Cost element**
 
-Cost elements are used as a function to track and categorize where costs flow to. There are two types of cost elements: primary costs and secondary costs. **Primary costs** The primary cost elements represent the flow of costs from financial accounting to cost accounting. The cost element structure corresponds to the profit and loss account structure in the general ledger, where a cost element can correspond to a main account. Not all main accounts must be represented as cost elements, depending on business requirements. Here are some examples of primary cost elements:
+Used as a function to track and categorize costs. There are two types of cost elements: primary and secondary.
 
--   Costs of goods sold (COGs)
--   Indirect material costs
--   Personnel costs
--   Energy costs
+Primary cost elements represent the cost flow from financial accounting to Cost accounting. The structure typically corresponds to the profit and loss account structure in the general ledger where a cost element can correspond to a main account. Not all main accounts must be represented as cost elements, depending on business requirements. 
 
-**Secondary cost element** 
-
-The secondary cost elements represent the internal flow of costs, because these costs are created and used only in Cost accounting. Secondary cost elements help guarantee that the source of costs can be traced. These cost elements are used in cost allocations and overhead calculations. Here are some examples of secondary cost elements:
-
--   Production costs
--   Production, material, and marketing overheads
+Secondary cost elements represent the internal cost flow because these costs are only used in Cost accounting. They are used in cost roll-up rules to aggregate costs into meaningful buckets used by overhead calculation. 
 
 **Cost control unit**
 
-A cost control unit represents the cost structure. It must be associated with cost object dimensions in a cost accounting ledger.
+The cost control unit represents the cost structure. The structure determines how cost flows in a hierarchical order between cost object dimensions and their respective cost objects. 
 
 **Version**
 
@@ -88,7 +78,7 @@ Versions are used to simulate, view, and compare various outcomes. By default, a
 
 **Statement**
 
-Statements are views for the managers who are responsible for controlling costs. Statements are defined by a cost controller, and they give a quick overview of actual and budgeted costs, and even deviations and calculation versions. To help guarantee that managers view only data that they are accountable for, data that appears in the statements is subject to access rules.
+Statements are views for the managers who are responsible for controlling costs. Statements are defined by a cost controller, and they provide a quick overview of actual costs, budgeted costs, and deviations. A manager can drill further into details if required. To help ensure that managers view only data that they are accountable for, data that appears in the statements is subject to access rules.
 
 **Data connector**
 
@@ -163,6 +153,22 @@ A statistical dimension is the expression of a count or sum of an object that ca
 **Statistical entry**
 
 Statistical entries hold the recorded sum or count value for a given statistical dimension. The recorded sum or count value is also referred to as the magnitude.
+
+**Published**
+
+If you set this field to Yes, a user who is assigned one of the following roles can view the report in the Cost control workspace:
+
+-  Cost accounting manager
+-  Cost accountant
+-  Cost accountant clerk
+-  Cost object controller
+
+If you set this field to No, only users who are assigned one of the following roles can view the report in the Cost control workspace:
+
+-  Cost accounting manager
+-  Cost accountant
+-  Cost accountant clerk
+
 
 
 
