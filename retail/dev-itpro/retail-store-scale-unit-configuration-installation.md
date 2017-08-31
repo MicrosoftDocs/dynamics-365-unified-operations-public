@@ -55,10 +55,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
      You can select any other option that you've already created.
 
 6. In the **Type** field, leave the default value (**Channel database**) selected.
-7. You can leave the **Data sync interval** field blank.
-
-    > [!NOTE]
-    > Alternatively, you can select a value in this field. For example, in the demo data, the value **D60-U15** specifies a 15-minute synchronization interval.
+7. You can leave the **Data sync interval** field blank. Alternatively, you can select a value in this field. For example, in the demo data, the value **D60-U15** specifies a 15-minute synchronization interval.
 
 8. On the **Retail channel** FastTab, select **Add**, and then, in the **Channel** field, select the appropriate Retail store channel. Repeat this step to add all the channels that use this database.
 
@@ -66,8 +63,8 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
 9. On the **Store Scale Unit package** FastTab, in the **Name** field, select the appropriate Retail Store Scale Unit package.
 
-    > [!NOTE]
-    > Each environment generates a base Retail Store Scale Unit package. Therefore, this field always contains at least one option.
+    
+     Each environment generates a base Retail Store Scale Unit package. Therefore, this field always contains at least one option.
 
 10. On the Action Pane, select **Save**.
 11. Go to **Retail** &gt; **Channel setup** &gt; **Channel profiles**.
@@ -78,15 +75,15 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 16. In the **Property key** field, select **Retail server URL**.
 17. In the **Property value** field, enter the URL of the Retail Server that will be installed for Retail Store Scale Unit.
 
-    > [!NOTE]
-    > The standard format for the URL of an on-premises store installation of Retail Store Scale Unit is **https://&lt;Computer Name&gt;:&lt;Port&gt;/RetailServer/Commerce**. In this format, **&lt;Computer Name&gt;** is either the fully qualified domain name (FQDN) of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that will be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
+   
+     The standard format for the URL of an on-premises store installation of Retail Store Scale Unit is **https://&lt;Computer Name&gt;:&lt;Port&gt;/RetailServer/Commerce**. In this format, **&lt;Computer Name&gt;** is either the fully qualified domain name (FQDN) of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that will be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
 
 18. On the **Profile properties** FastTab for the new channel profile, select **Add**.
 19. In the **Property key** field, select **Cloud POS URL**.
 20. In the **Property value** field, enter the URL of the Retail Server that will be installed for Retail Store Scale Unit.
 
-    > [!NOTE]
-    > The standard format for the URL of an on-premises store installation of Retail Store Scale Unit is **https://&lt;Computer Name&gt;:&lt;Port&gt;/POS**. In this format, **&lt;Computer Name&gt;** is either the FQDN of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that will be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
+   
+     The standard format for the URL of an on-premises store installation of Retail Store Scale Unit is **https://&lt;Computer Name&gt;:&lt;Port&gt;/POS**. In this format, **&lt;Computer Name&gt;** is either the FQDN of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that will be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
 
 21. On the Action Pane, select **Save**.
 22. Go to **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.
@@ -111,8 +108,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
 6. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 
-    > [!NOTE]
-    > Browsers might block the download pop-up that is generated. Select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
+         Browsers might block the download pop-up that is generated. Select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
 
 7. On the Action Pane, select **Download**.
 8. On the drop-down menu, select **Retail Store Scale Unit package**.
