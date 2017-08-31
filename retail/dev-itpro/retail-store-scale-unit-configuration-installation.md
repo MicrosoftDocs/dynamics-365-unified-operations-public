@@ -126,8 +126,8 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
 Before you run the Retail Store Scale Unit installer, make sure that the following requirements are met:
 
-- The installer requires that the Microsoft .NET Framework version 4.5.1 be installed on the system.
-- The installer installs the Retail Store Scale Unit components only on the following operating systems. Before you install any component, you must update the operating system with all service packs and updates that are available for it.
+- The installer requires that Microsoft .NET Framework version 4.5.1 be installed on the system.
+- The installer installs the Retail Store Scale Unit components only on the following operating systems. (Before you install any component, you must update the operating system with all service packs and updates that are available for it.)
 
     - Windows 7 Professional, Enterprise, or Ultimate edition (both x86 and x64 architectures). Home edition and Embedded edition aren’t supported.
     - Windows 8.1 Update 1 Pro or Enterprise edition (both x86 and x64 architectures). Standard edition isn’t supported.
@@ -151,7 +151,7 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 2. The installer validates that all prerequisites are met. If a valid version of Microsoft SQL Server isn’t found, the installer downloads and installs Microsoft SQL Server 2014 Express with Service Pack 2. 
 
     > [!NOTE]
-    > - To meet the prerequisites, SQL Server must have Full-text search, and it must support, at a minimum, Transport Layer Security (TLS) 1.2. For Microsoft SQL Server 2012, Service Pack 3 must be installed, at a minimum. For Microsoft SQL Server 2014, Service Pack 2 must be installed. 
+    > - To meet the prerequisites, SQL Server must have full-text search, and it must support, at a minimum, Transport Layer Security (TLS) 1.2. For Microsoft SQL Server 2012, Service Pack 3 must be installed, at a minimum. For Microsoft SQL Server 2014, Service Pack 2 must be installed. 
     > - If a system restart is required, the installer shows this requirement. Although the restart is recommended, the installer can continue without it.
 
 3. Verify the Application Object Server (AOS) URL, and then select **Next**. (The AOS URL is the URL that is used to access Retail headquarters.) 
@@ -161,8 +161,8 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 
 4. Select a valid Secure Sockets Layer (SSL) certificate to use for HTTPS communication. 
 
-    > [!NOTE]
-    > The certificate must use private key storage, and server authentication must be listed in the enhanced key usage property. Additionally, the certificate must be trusted locally, and it can’t be expired. It must be stored in the personal certificate store location on the local computer.
+   
+     The certificate must use private key storage, and server authentication must be listed in the enhanced key usage property. Additionally, the certificate must be trusted locally, and it can’t be expired. It must be stored in the personal certificate store location on the local computer.
 
 5. If a specific user is required, enter the user name and password that the application pool will run under. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended.
 6. On the next page, enter the user account and password for the Retail Server application pool and Async Client. By default, this account is automatically generated. However, you can manually enter the user account and password.
@@ -174,11 +174,12 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 
 8. Enter the application ID (client ID) and secret that are associated with this Retail Store Scale Unit installation. Additionally, verify the channel database ID, which is automatically entered from the configuration file. Then select **Install**. If you will use Retail Cloud POS, make sure that the **Configure Retail Cloud POS** check box at the bottom of this page is selected. This configuration requests Azure AD sign-in and automatically generates all required information in Azure so that Retail Cloud POS can be used on-premises. 
 
-    > [!NOTE]
-    > For information about the creation of web applications in Azure, see [Create an Azure Active Directory Application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). 
-    > When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and key (secret) that are created are important.
+    
+     For information about the creation of web applications in Azure, see [Create an Azure Active Directory Application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). 
+     
+     When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and key (secret) that are created are important.
 
-9. After the application ID (client ID) and secret are created for Retail Store Scale Unit, the application ID (client ID) must be accepted in Retail. Follow the next sub-section to finish the configuration in headquarters.
+9. After the application ID (client ID) and secret are created for Retail Store Scale Unit, the application ID (client ID) must be accepted in Retail. Follow the next procedure to finish the configuration in headquarters.
 10. After the installation is completed, the final health page appears. This page shows whether the installation was successful. It also shows the health of each component, based on basic connection tests, and the location of this topic. If the installation wasn't successful, the page shows the location of the log files.  It is recommended to keep this final health page up until the Retail Store Scale Unit configuration is fully completed and all components are functioning properly.
 
 
