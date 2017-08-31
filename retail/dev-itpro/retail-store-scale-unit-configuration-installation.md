@@ -235,8 +235,7 @@ The last steps require validation and verification that the Azure application ID
 
 ### Multiple-computer installation
 
-> [!NOTE]
-> Only advanced users should install Retail Store Scale Unit across multiple computers. The following set of procedures explains how to install the Retail channel database and Async Client on one computer, and Retail Server and Retail Cloud POS on a second computer. The instructions assume that both systems are on the same domain, and that users for the services that will be installed have already been created on both systems. It's important that you perform all configuration in Retail headquarters.
+Only advanced users should install Retail Store Scale Unit across multiple computers. The following set of procedures explains how to install the Retail channel database and Async Client on one computer, and Retail Server and Retail Cloud POS on a second computer. The instructions assume that both systems are on the same domain, and that users for the services that will be installed have already been created on both systems. It's important that you perform all configuration in Retail headquarters.
 
 #### Installation on the first computer
 
@@ -267,9 +266,7 @@ On the first computer, run the Retail Store Scale Unit self-service installer as
 15. Start Windows Firewall with Advanced Security.
 16. In Windows Firewall, create an inbound rule to open TCP port 1433.
 
-
-> [!NOTE]
-> For detailed information about SQL Server and Windows Firewall, see [Configure a Windows Firewall for Database Engine Access](https://msdn.microsoft.com/en-us/library/ms175043.aspx).
+For detailed information about SQL Server and Windows Firewall, see [Configure a Windows Firewall for Database Engine Access](https://msdn.microsoft.com/en-us/library/ms175043.aspx).
 
 #### Installation on the second computer
 
@@ -288,8 +285,7 @@ On the second computer, run the Retail Store Scale Unit Self-service installer a
 
 4. Select **Configure Cloud POS**, and then enter Azure AD credentials that have the correct permissions to create Azure Web Apps. 
 
-    > [!NOTE]
-    > For more information about Azure Web Apps, how to create them, and how to generate new secrets, see [Use portal to create Active Directory application and service principal that can access resources](https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/). Note that the sign-in URL and the App ID URI aren't important.
+     For more information about Azure Web Apps, how to create them, and how to generate new secrets, see [Use portal to create Active Directory application and service principal that can access resources](https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/). Note that the sign-in URL and the App ID URI aren't important.
 
 5. When setup is successful, don't exit the installer. 
 
@@ -302,15 +298,15 @@ On the second computer, run the Retail Store Scale Unit Self-service installer a
 9. If the certificate that is used isn't a valid, trusted certificate from a trusted authority, open CERTMGR.MSC, and follow these steps:
 
     1. Import the SQL Server SSL certificate that you created earlier, and add it to Trusted Root.
-    2. Open a **Command Prompt** window as an administrator, type **IISRESET**, and then press Enter.
+    2. Open a **Command Prompt** window as an administrator, type **IISRESET**, and then press **Enter**.
 
 10. If Retail Cloud POS is configured for use, a client ID is shown. You must add this client ID to the **Retail shared parameters** page in Retail.
 
     1. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
-    3. On the **Identity providers** FastTab, select the provider that begins with **HTTPS://sts.windows.net/**. The values on the **Relying parties** FastTab are set, based on your selection.
+    3. On the **Identity providers** FastTab, select the provider that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are set, based on your selection.
     4. On the **Relying parties** FastTab, select **+Add**. Enter the client ID that is listed in the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
-    5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter **https://retailstorescaleunit.retailserver.com**.
+    5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter `https://retailstorescaleunit.retailserver.com`.
     6. On the Action Pane, select **Save**.
 
 11. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**, and follow these steps:
@@ -359,9 +355,9 @@ According to current security standards, the following options should be set in 
 
 ### Troubleshoot Retail Store Scale Unit
 
-This section will be more thorough in the future. For now, here is a checklist of things to verify.
+Here is a checklist of things to verify:
 
-1. In Retail, on the **Retail shared parameters** page, verify that the correct client ID has been added to the **Relying parties** FastTab. Additionally, verify that the correct **https://retailstorescaleunit.retailserver.com** entry has been added to the **Server resource IDs** FastTab.
+1. In Retail, on the **Retail shared parameters** page, verify that the correct client ID has been added to the **Relying parties** FastTab. Additionally, verify that the correct `https://retailstorescaleunit.retailserver.com` entry has been added to the **Server resource IDs** FastTab.
 2. In Retail, verify that every client ID that was generated for each retail store exists on the **Azure Active Directory applications** page.
 3. In Retail, on the **Channel profile** page, verify that the URLs are correct. (In other words, verify that the computer name in each URL is correct, the URL is correctly formatted, and so on.)
 4. In Retail, on the **Channel database** page, verify that full synchronization correctly occurred for the new channel database.
