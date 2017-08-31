@@ -37,7 +37,7 @@ The following table shows whether each feature is available in:
 + Dynamics 365 for Finance and Operations, Enterprise Edition (on-premises)
 
 ## Dynamics 365 for Finance and Operations
-The following table lists the product areas. Cloud and on-premises support is listed for the feature as a whole. Where specific features differ from the area overall, they are listed on a separate line.
+The following table lists the product areas. Cloud and on-premises support is listed for the feature as a whole. Where specific features differ from the area overall, the features are listed on a separate line.
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
