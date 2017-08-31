@@ -191,9 +191,9 @@ The last steps require validation and verification that the Azure application ID
 
     1. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
-    3. On the **Identity providers** FastTab, select the provider that begins with `**HTTPS://sts.windows.net/**. The values on the **Relying parties** FastTab are set, based on your selection.
+    3. On the **Identity providers** FastTab, select the provider that begins with `**HTTPS://sts.windows.net/**`. The values on the **Relying parties** FastTab are set, based on your selection.
     4. On the **Relying parties** FastTab, select **+Add**. Enter the client ID that is listed in the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
-    5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter `**https://retailstorescaleunit.retailserver.com**.
+    5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter `**https://retailstorescaleunit.retailserver.com**`.
     6. On the Action Pane, select **Save**.
 
 3. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
