@@ -106,9 +106,9 @@ To learn more, see [Mobile app home page](../mobile-apps/Mobile-app-home-page.md
 ## General administration
 -   [Demo data overview](../get-started/demo-data.md)
 -   [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
--   [Maintenance mode](maintenance-mode.md)
 - [Add links to your organization's legal terms and privacy statement](legal-terms-privacy-statement.md)
 - [License codes and configuration keys report](license-codes-configuration-keys-report.md)
+-   [Maintenance mode](maintenance-mode.md)
 
 
 
