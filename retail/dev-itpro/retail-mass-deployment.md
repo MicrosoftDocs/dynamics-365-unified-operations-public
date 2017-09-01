@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Application update 3
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how you can use self-service silently to perform servicing updates, initial deployments, and some concepts of special deployment.  This topic will be updated repeatedly as the feature is developed further and more functionality is available.  At this time, only the ability to silenty update is available for use.
+This topic explains how you can use self-service silently to perform servicing updates, initial deployments, and some concepts of special deployment.  This topic will be updated repeatedly as the feature is developed further and more functionality is available.  At this time, only the ability to silently update is available for use.
 
 ## Silent Servicing
 ### Before you begin
