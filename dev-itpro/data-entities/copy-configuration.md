@@ -283,9 +283,13 @@ The following entities require special handling when they are used to copy into 
 | Acccounts receivable | Customers | Customers have many settings that are dependent on the values that come from other entities. For example, if you have a default warehouse and site for a customer, you must add sites and warehouses first or the customer will fail validatation. The collections contact will also fail if the contact is not available in the new company. |
 | Budget | Budget cost elements| There is an issue when importing budget cost elements when using an annual amount and there are budget cost elements in the Earnings basis tab. The issue will be addressed in a future release.|
 | General ledger | Ledger allocation rules destination| If you have cross company allocation rules, you will not see the destination rules for legal entities that do not match the source legal entity. The copy into legal entity feature will only copy the destination records when the destination is equal to the source. The issue will be addressed in a future release.|
+| General ledger | Ledger fiscal calendar year/period| The process is currently exporting all of the legal entities instead of just the source legal entity. The copy process works correctly. The issue will be addressed in a future release.|
 | General ledger | Intercompany accounting | The copy into legal entity feature does not support intercompany accounting at this time. The issue will be addressed in a future release.|
 | Inventory management | Warehouse locations | Some warehouse locations require a location profile ID. Location profile IDs require a location format. Currently, the location format information must be manually added before the warehouse location. The entities for the location format and location profile were added in monthly update 3 for the Spring release of 2017.| 
 | Master planning | Intercompany master plan associations | The copy into legal entity feature does not support intercompany master plan associations at this time. The issue will be addressed in a future release.| 
+| Retail | POS registers | This entity is global and cannot be copied to another legal entity.| 
+| Retail | Retail channel | This entity is global and cannot be copied to another legal entity.| 
+| Retail | Retail store address book | This entity will fail due to a dependency on Retail channel.| 
 | Sales and marketing | Intercompany trading partnerships | The copy into legal entity feature does not support intercompany trading partnerships at this time. The issue will be addressed in a future release.| 
 
 ## Additional information about entities
