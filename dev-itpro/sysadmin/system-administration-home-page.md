@@ -57,7 +57,9 @@ You can deploy Finance and Operations in the cloud or on-premises. Cloud deploym
 ## Upgrade
 When we discuss upgrade, we can be talking about anything from moving to new product version upgrades, code migration and upgrade, moving to an update, or deploying a hotfix.
 
-The processes for each type of upgrade are similar, but different enough that we think that you should review the topics for a specific task before you begin. To learn more, see [Upgrade home page](../migration-upgrade/upgrade-home-page.md).
+The processes for each type of upgrade are similar, but different enough that we think that you should review the topics for a specific task before you begin.  
+
+- [Upgrade home page](../migration-upgrade/upgrade-home-page.md)
 
 
 ## Database management
@@ -79,7 +81,10 @@ Because rules can be set up for automatic role assignment, the administrator doe
 -   [Security architecture](security-architecture.md)
 
 ## Batch processing
-Many tasks in Finance and Operations can be run as part of batch jobs. For example, batch jobs can include tasks for printing reports, performing maintenance, or sending electronic documents. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours. To learn more, see [Batch processing overview](batch-processing-overview.md).
+Many tasks in Finance and Operations can be run as part of batch jobs. For example, batch jobs can include tasks for printing reports, performing maintenance, or sending electronic documents. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours. 
+
+- [Batch processing overview](batch-processing-overview.md)
+- [Batch server overivew](batch-server-overview.md)
 
 ## Office integration
 Finance and Operations...
@@ -102,7 +107,8 @@ The Microsoft Dynamics 365 for Unified Operations mobile app enables your organi
 - IT admins or developers can easily design mobile workspaces by using the point-and-click workspace designer that is included with the web client.
 - IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework. Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don't have constant network connectivity.
 
-To learn more, see [Mobile app home page](../mobile-apps/Mobile-app-home-page.md).
+- [Mobile app home page](../mobile-apps/Mobile-app-home-page.md)
+- [Mobile workspaces](../mobile-apps/mobile-workspaces-released.md)
 
 
 ## General administration
