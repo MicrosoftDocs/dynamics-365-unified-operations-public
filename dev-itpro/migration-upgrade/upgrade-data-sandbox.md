@@ -95,6 +95,29 @@ After the copy is created, run the following Transact-SQL (T-SQL) script against
 	DEALLOCATE userCursor
 
 	go
+	
+	--remove any 2012 RTM model store procedures if they still exist
+	declare 
+	@SQL varchar(255),
+	@procname varchar(255)
+
+	set quoted_identifier off
+
+	declare     procCursor CURSOR for
+	select name from sys.procedures where name like 'XI_%' or name like 'XU_%'
+
+	OPEN procCursor
+	    FETCH procCursor into @procname
+	    WHILE @@Fetch_Status = 0
+		  BEGIN
+			set @SQL = 'DROP PROCEDURE [' + @procname + ']'
+			exec(@SQL)
+			FETCH procCursor into @procname
+		  END
+	CLOSE procCursor
+	DEALLOCATE procCursor
+
+	go
 	--If you receive message that you cannot delete users as they own a schema, then check which schema the users own - either change the ownership to another user (for exmaple to dbo) or drop the schema if it does not contain 
 	-- any objects - the examples below are for a AX2012 Demo environment you will need to edit this for your specific environment
 	if exists (select 1 from sys.schemas where name = 'contoso\admin')
