@@ -237,14 +237,15 @@ To copy a configuration from one legal entity into another in the same instance,
 4. Set the operation type for the data project to **Copy into legal entity**, and set the project category to **Configuration**.
 
 5. Select the legal entity that will be the source of the data to copy. The form will default to the legal entity that you are currently using.
-6. Select Yes if you want the number sequences to be copied. The entities needed to copy the numbers sequences will be added to the project.  
+6. In the legal entities fast tab, you can select existing legal entities as a destination or you can create new ones:
+
+    - **Create ** – Enter the legal entity ID, the legal entity name, and the region that it belongs in. Click on the **Create legal entity button**. The legal entity will be created and then added to the list of destination entities. **Note:** This functionality is available in monthly update 3 of the Spring 2017 release.
+    
+    - **Select ** – Select one or more legal entities from the dropdown list. Click on the **Add selected** button. The legal entity will be created and then added to the list of destination entities.  
+    
+7. After you have added the destination legal entities, select Yes if you want the number sequences to be copied. The entities needed to copy the number sequence codes and number sequence references will be added to the project. The execution unit, level and sequence number for these entities will be set to the numbers in the System and Shared template. If you are not using the default templates, adjust the entity sequences so that they are first in the list.
 
 7. If you have selected Yes for number sequences, select Yes or No to reset those number sequence to the smallest value
-8. In the legal entities fast tab, you can select existing legal entities as a destination or you can create new ones:
-
-    - **Create a legal entity** – Enter the legal entity ID, the legal entity name, and the region that it belongs in. Click on the **Create legal entity button**. The legal entity will be created and then added to the list of destination entities. **Note:** This functionality is available in monthly update 3 of the Spring 2017 release.
-    
-    - **Select a legal entity** – Select one or more legal entities from the dropdown list. Click on the **Add selected** button. The legal entity will be created and then added to the list of destination entities.     
 
 9. Add the entities that represent the information that you want to copy. You can add entities by using several methods:
 
@@ -253,9 +254,11 @@ To copy a configuration from one legal entity into another in the same instance,
     - **Add a file** – Browse to a file that contains a name that matches the name of an entity and a file name extension that matches the file name extension that is in your data sources.
     - **Add a template** – Select from a list of templates that you've loaded in your instance.
     
+    You can use the default templates to ensure that the correct order is maintained and then add and remove entities to match the data that you want to copy.
+    
 **Note:** If an entity has a field in it that represents the legal entity, a filter will be applied to that entity to include only the data for the source legal entity. The value for that field will be changed to the destination legal entity. 
 
-**Note:** Entities for documents and transactions are not available when copying a configuration.
+**Note:** Document, transaction, and composite entities are not available when copying into a legal entity.
 
 6. Click **Remove entity** to remove any selected entities, as required.
 
