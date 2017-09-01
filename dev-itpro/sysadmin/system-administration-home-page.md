@@ -5,7 +5,7 @@ title: System administration home page
 description: This topic lists resources that are available for system administrators.
 author: sericks007
 manager: AnnBe
-ms.date: 08/31/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -61,7 +61,7 @@ The processes for each type of upgrade are similar, but different enough that we
 
 
 ## Database management
-The following content will help move a database to new environment and restore a database to a specific point in time.
+The following content will help you move a database to new environment and restore a database to a specific point in time.
 
 -   [Copy a Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md)
 -   [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md)
@@ -91,12 +91,6 @@ Many tasks in Finance and Operations can be run as part of batch jobs. For examp
 - [Configure and send email](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email)
 - [Troubleshoot the Office integration](../office-integration/office-integration-troubleshooting.md)
 
-## Licensing
--   [ISV licensing](../dev-tools/isv-licensing.md)
-- [License codes and configuration keys report](license-codes-configuration-keys-report.md)
-
-## Retail
--   [Microsoft Dynamics 365 for Finance and Operations – Retail for IT Pros and developers](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)
 
 ## Mobile
 The Microsoft Dynamics 365 for Unified Operations mobile app enables your organization to make its business processes available on mobile devices. After you enable the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices. The mobile app includes the following features that can help increase productivity:
@@ -114,8 +108,7 @@ To learn more, see [Mobile app home page](../mobile-apps/Mobile-app-home-page.md
 -   [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
 -   [Maintenance mode](maintenance-mode.md)
 - [Add links to your organization's legal terms and privacy statement](legal-terms-privacy-statement.md)
-- [Set a user's preferred time zone](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) (Task guide)
-
+- [License codes and configuration keys report](license-codes-configuration-keys-report.md)
 
 
 
