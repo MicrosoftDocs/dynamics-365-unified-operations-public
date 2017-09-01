@@ -99,10 +99,14 @@ Many tasks in Finance and Operations can be run as part of batch jobs. For examp
 -   [Microsoft Dynamics 365 for Finance and Operations – Retail for IT Pros and developers](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)
 
 ## Mobile
--   [Mobile platform](../mobile-apps/platform/mobile-platform-home-page.md)
-- [Mobile app home page](../mobile-apps/Mobile-app-home-page.md)
-- [Mobile workspaces](../mobile-apps/mobile-workspaces-released.md)
-- [Publish a mobile workspace](../mobile-apps/publish-mobile-workspace.md)
+The Microsoft Dynamics 365 for Unified Operations mobile app enables your organization to make its business processes available on mobile devices. After you enable the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices. The mobile app includes the following features that can help increase productivity:
+
+- Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are completely offline. When a device reestablishes a network connection, offline data operations are automatically synchronized with Dynamics 365 for Finance and Operations, Enterprise edition, or Microsoft Dynamics 365 for Finance and Operations.
+- IT admins or developers can build and publish mobile workspaces that have been tailored to their organization. The app uses your existing code assets. Therefore, you don't have to re-implement your validation procedures, business logic, or security configuration.
+- IT admins or developers can easily design mobile workspaces by using the point-and-click workspace designer that is included with the web client.
+- IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework. Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don't have constant network connectivity.
+
+To learn more, see [Mobile app home page](../mobile-apps/Mobile-app-home-page.md).
 
 
 ## General administration
