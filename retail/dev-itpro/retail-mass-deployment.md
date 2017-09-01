@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mass deployment of Retail self-service components
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: This topic explains how you can use self-service silently to perform servicing updates, initial deployments, and some concepts of special deployment.  This topic will be updated repeatedly as the feature is developed further and more functionality is available.  At this time, only the ability to silenty update is available for use.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2017
@@ -31,26 +31,36 @@ ms.dyn365.ops.version: Application update 3
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how you can use self-service to configure Retail Store Scale Unit in Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud POS components. A Microsoft Dynamics 365 for Retail environment already provides these components. However, you can now configure them so that they work locally in a store, in either a single-computer setup (the default option) or a multiple-computer setup. This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.
+This topic explains how you can use self-service silently to perform servicing updates, initial deployments, and some concepts of special deployment.  This topic will be updated repeatedly as the feature is developed further and more functionality is available.  At this time, only the ability to silenty update is available for use.
 
-## Before you begin
+## Silent Servicing
+### Before you begin
 > [!IMPORTANT]
-> To help maintain a high level of security across the company, we strongly recommend that you create a new application ID (client ID) and secret for each retail store that is created. This step requires a new Web App.
+> This functionality only works in Microsoft Dynamics 365 for Retail, version 7.2, App Update 3 and beyond.  Note that silent servicing maintains all currently installed 
 
-1. Generate a Microsoft Azure Active Directory (Azure AD) app registration to create an application ID (client ID) and secret. For instructions, see [Create an Azure Active Directory Application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). This article reviews Azure user permissions and requirements, and explains how to generate an app registration.
-2. After an application ID (client ID) and secret are created for Retail Store Scale Unit, the client ID must be accepted in Retail. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+### Delimiters for Mass Deployment
+This is the list of delimiters that can currently be used in Mass Deployment execution commands.
 
-## Configure a new Retail Store Scale Unit
-To create a functioning Retail Store Scale Unit, complete the procedures in all sections of this topic through the "Running the Retail Store Scale Unit installer" section.
+#### App Update 3 and beyond
+- /S or /Silent - Silently run the installer (No graphical user interface).
+- /C or /Config - Specify the location and filename of the configuration file to use as part of this installation.
+- /FilePath - Specify a custom installation location (Not recommended for standard installation).
+- /LogFile - Specify a custom logfile location for installation logs (Not recommended for standard installation).
+- /SkipPrerequisiteCheck - Skips the check for prerequisites and prerequisite installation.  Should only be used for development and testing (Not recommended for standard installation).
+- /SkipSystemInfoCollection - Skips the System Information collection process at the beginning of the installation.  Should only be used for development and testing (Not recommended for standard installation).
+- /SkipMerchantInfo - Skips the Merchant Account Information installation at the end of the hardware station Self-service installer.  Should only be used for development and testing (Not recommended for standard installation).
 
-1. Use your Azure AD credentials to sign in to the Retail headquarters or Retail trial.
-2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**.
-3. On the **Channel database** page, on the Action Pane, select **New**.
-4. In the **Channel database ID** field, enter a unique value.
-5. In the **Channel data group** field, select the **Default** option.
+### Example commands for silent servicing
+This sub-section will showcase examples of Self-service Mass Deployment commands.  The commands listed function for all the standard Self-service installers, which include Modern POS (With and without offline), hardware station, and Retail Store Scale Unit.
 
-    > [!NOTE]
-    > You can select any other option that you've already created.
+```
+ModernPOSSetup_V72.exe /S
+```
+This command will silently update the current installation of Retail Modern POS.  This is the standard command structure used for silent servicing of currently installed components.  The structure will follow the basic values of "InstallerName.exe" and the command for silent installation "/S".  This command will utilize the configuration file that is located in the same file location as the installer, if it exists.
+> [!NOTE]
+> A configuration file is still required for Retail Store Scale Unit.  However, the installer will still keep all possible currently installed values.
 
-6. In the **Type** field, leave the default value (**Channel database**) selected.
-7. You can leave the **Data sync interval** field blank.
+```
+StoreSystemSetup_V72.exe /S /C "C:\Temp\StoreSystemSetup_V72_Houston.xml" /SkipPrerequisiteCheck
+```
+This command will silently update the current installation of Retail Store Scale Unit using a specific configuration file (Which may or may not be in the same location as the installer executable file) and will skip the prerequisite check and installation steps (Only recommended for testing and development purposes).
