@@ -61,7 +61,7 @@ The processes for each type of upgrade are similar, but different enough that we
 
 
 ## Database management
-The following content will help you move a database to new environment and restore a database to a specific point in time.
+The following content will help you move a database to new environment, and restore a database to a specific point in time.
 
 -   [Copy a Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md)
 -   [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md)
@@ -82,6 +82,8 @@ Because rules can be set up for automatic role assignment, the administrator doe
 Many tasks in Finance and Operations can be run as part of batch jobs. For example, batch jobs can include tasks for printing reports, performing maintenance, or sending electronic documents. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours. To learn more, see [Batch processing overview](batch-processing-overview.md).
 
 ## Office integration
+Finance and Operations...
+
 - [Office integration](../office-integration/office-integration.md)
 - [Office integration tutorial](../office-integration/office-integration-tutorial.md)
 - [Use the Excel add-in](../office-integration/use-excel-add-in.md)
