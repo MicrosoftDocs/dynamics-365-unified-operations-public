@@ -87,7 +87,7 @@ Many tasks in Finance and Operations can be run as part of batch jobs. For examp
 - [Batch server overivew](batch-server-overview.md)
 
 ## Office integration
-Finance and Operations...
+The Office integration provides a set of productive, collaborative, and integrated user experiences that leverage the Office suite. This functionality can help your organization become more efficient and effective.
 
 - [Office integration](../office-integration/office-integration.md)
 - [Office integration tutorial](../office-integration/office-integration-tutorial.md)
