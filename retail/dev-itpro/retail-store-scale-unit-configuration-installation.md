@@ -184,7 +184,7 @@ The last steps require validation and verification that the Azure application ID
     1. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
     3. On the **Identity providers** FastTab, select the provider that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are set, based on your selection.
-    4. On the **Relying parties** FastTab, select **+Add**. Enter the client ID that is listed in the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
+    4. On the **Relying parties** FastTab, select **+Add**. Enter the client ID that is listed in the final health screen of the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
     5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter `https://retailstorescaleunit.retailserver.com`.
     6. On the Action Pane, select **Save**.
 
@@ -221,8 +221,8 @@ The last steps require validation and verification that the Azure application ID
 >         - Retail Store Scale Unit Cloud POS
 >         - Retail Store Scale Unit Retail Server for Cloud POS
 >     - In Azure, a web application (that is, an App registration in the new Azure portal) has been manually created for each Retail Store Scale Unit installation (for example, RetailStoreScaleUnitHouston). A key (secret) has been created that can be used in the installer, as described earlier.
->     - The application ID (client ID) of the manually created web application has been added to the **Azure Active Directory applications** page in Retail, as explained in step 9 of the preceding procedure.
->     - The Retail Cloud POS application ID (client ID) that was shown at the end of the Retail Store Scale Unit installer has been added on the **Identity providers** tab, as explained in step 11 of the preceding procedure.
+>     - The application ID (client ID) of the manually created web application has been added to the **Azure Active Directory applications** page in Retail, as explained in step 1 of the preceding procedure.
+>     - The Retail Cloud POS application ID (client ID) that was shown at the end of the Retail Store Scale Unit installer has been added on the **Identity providers** FastTab, as explained in steps 3 and 4 of the preceding procedure.
 
 ### Multiple-computer installation
 
