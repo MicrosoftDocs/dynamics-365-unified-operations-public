@@ -53,48 +53,33 @@ You can deploy Finance and Operations in the cloud or on-premises. Cloud deploym
 - [On-premises deployment landing page](/deployment/on-premises-deployment-landing-page.md)
 - [System requirements for on-premises deployments](../get-started/system-requirements-on-prem.md)
 
-## Hotfixes and updates
-To install the latest monthly platform update on an existing environment, go to LCS. In the Shared asset library, select the **Software deployable package** tab. You will find the latest platform update package that you can deploy. For more details, see [Upgrade Finance and Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md) and [Finance and Operations cloud platform monthly updates FAQ](faq-platform-monthly-updates.md).
-
-Application updates (X++ and binary) are available in the update tiles based on those applicable to a specific environment. Application updates can be searched for and applied as needed. All available application updates are applicable to the latest platform update. See the details for the release in the [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md). 
-
-If you are already on platform update 4 or later, applying an application **binary** update will also update your Finance and Operations platform to the latest release. 
-
-![Application and binary update tiles](./media/application-and-binary-update-tiles-146x300.png)
-
-For more information about hotfixes and updates, see:
--   [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md)
--   [Install a metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
--   [Apply a deployable package](..\deployment\apply-deployable-package-system.md)
 
 ## Upgrade
+When we discuss upgrade, we can be talking about anything from moving to new product version upgrades, code migration and upgrade, moving to an update, or deploying a hotfix.
 
--   [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](../migration-upgrade/upgrade-latest-update.md) 
--   [Upgrade Finance and Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md)
--   [Upgrade the Dynamics 365 for Operations platform to the August 2016 release](../migration-upgrade/update-platform-each-release.md)
--   [Process for upgrading a sandbox environment](../migration-upgrade/upgrade-sandbox-environment.md)
--   [Upgrade data in development, demo, or sandbox environments](../migration-upgrade/upgrade-data-to-latest-update.md)
+The processes for each type of upgrade are similar, but different enough that we think that you should review the topics for a specific task before you begin. To learn more, see [Upgrade home page](../migration-upgrade/upgrade-home-page.md)
 
 
 ## Database management
--   [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md)
--   [Copy a Microsoft Dynamics 365 for Finance and Operations database from SQL Server to an Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md)
+The following content will help move a database to new environment and restore a database to a specific point in time.
+
+-   [Copy a Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md)
+-   [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md)
 -   [Restore a database on a non-production environment](../database/request-point-in-time-restore.md)
 -   [Create a copy of a Finance and Operations database to restore later](../database/copy-operations-database.md)
 
 ## Security
+Finance and Operations uses role-based security. Access is not granted to individual users, only to security roles. Users are assigned to roles. A user who is assigned to a security role has access to the set of privileges that is associated with that role. A user who is not assigned to any role has no privileges.
+
+Role-based security is aligned with the structure of the business. Users are assigned to security roles based on their responsibilities in the organization and their participation in business processes. The administrator grants access to the duties that users in a role perform, not to the program elements that users must use.
+
+Because rules can be set up for automatic role assignment, the administrator does not have to be involved every time that a user's responsibilities change. After security roles and rules have been set up, business managers can control day-to-day user access based on business data.
+
 -   [Role-based security](role-based-security.md)
 -   [Security architecture](security-architecture.md)
--   [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) (Task guide)
--   [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) (Task guide)
--   [Set up segregation of duties](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/set-up-segregation-duties) (Task guide)
--   [Identify and resolve conflicts in segregation of duties](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties) (Task guide)
-- [Out-of-the-box security reports](security-reports.md)
 
 ## Batch processing
--   [Batch processing overview](batch-processing-overview.md)
--   [Batch server overview](batch-server-overview.md)
--   [Create a batch job](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-batch-job) (Task guide)
+Many tasks in Finance and Operations can be run as part of batch jobs. For example, batch jobs can include tasks for printing reports, performing maintenance, or sending electronic documents. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours. To learn more, see [Batch processing overview](batch-processing-overview.md).
 
 ## Office integration
 - [Office integration](../office-integration/office-integration.md)
