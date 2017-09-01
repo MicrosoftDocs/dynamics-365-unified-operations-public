@@ -57,7 +57,7 @@ You can deploy Finance and Operations in the cloud or on-premises. Cloud deploym
 ## Upgrade
 When we discuss upgrade, we can be talking about anything from moving to new product version upgrades, code migration and upgrade, moving to an update, or deploying a hotfix.
 
-The processes for each type of upgrade are similar, but different enough that we think that you should review the topics for a specific task before you begin. To learn more, see [Upgrade home page](../migration-upgrade/upgrade-home-page.md)
+The processes for each type of upgrade are similar, but different enough that we think that you should review the topics for a specific task before you begin. To learn more, see [Upgrade home page](../migration-upgrade/upgrade-home-page.md).
 
 
 ## Database management
