@@ -3,7 +3,7 @@
 
 title: Vendor rebates
 description: This topic provides an overview of the most common tasks that you might want to perform when you work with vendor rebates. Vendor rebates help companies better manage their supplier rebate programs by automating tasks that are required in order to administer, track, and claim rebates that are earned.
-author: BibiSp
+author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
