@@ -45,18 +45,13 @@ There are two sets of APIs that support file-based integration scenarios i: the 
 If the recurring integrations API better meets your needs, see [Recurring integrations](recurring-integrations.md).
 
 ## Authentication and authorization
-All the DMF APIs uses OAuth flow for authentication. All of the below APIs, unless noted, needs to be called with a valid OAuth authentication token in order to successfully call these APIs. 
+The data management package API uses OAuth for authentication. The API must be called with a valid OAuth authentication token. The user context in which the API is called should also be established so that the proper security and user access rights can be established. 
 
-Furthermore, the context of the user in which the APIs needs to be made should be established so that the proper security and user access rights can be established. 
+When authenticating from the web client, a client ID is assigned to a specific user in **System administration** > **Setup** > **Azure Active Directory Applications**.
 
-For Client authentication flow, the client ID is assigned a specific user in System administration > Setup> Azure Active Directory Applications 
+When authenticating from native clients, the user context is embedded in the authentication flow. 
 
-For native clients, user context is embedded in the authentication flow. 
-
-Data Management Framework Package APIs 
-Let’s look at the APIs available for importing DIXF packages into Dynamics 365 for Finance and Operations. 
-
-Import APIs
+## Import APIs
 
 1.	Get Azure Writable Url API
 
