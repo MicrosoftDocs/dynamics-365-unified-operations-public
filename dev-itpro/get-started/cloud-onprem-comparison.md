@@ -113,9 +113,9 @@ The following table lists the product areas. Cloud and on-premises support is li
 | | Sales orders mobile app  | Yes | Yes |
 | Security | | Yes | Yes |
 | Service management| | Yes | Yes |
-| Supply chain management| | | |
-| Transportation management| | | |
-| Vendor collaboration| | | |
+| Supply chain management| | Yes | Yes |
+| Transportation management| | Yes | Yes |
+| Vendor collaboration| | Yes | Yes|
 | Warehouse management| | Yes | Yes |
 | | Mobile warehouse app| Yes | No |
 | | Warehousing Power BI reports| Yes | No |
