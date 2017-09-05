@@ -107,10 +107,8 @@ The following table lists the product areas. Cloud and on-premises support is li
 | Production | | Yes | Yes |
 | | Production performance Power BI reports| Yes | No |
 | Project management and accounting| Includes all Financial management features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
-| Sales| | | |
-| | Prospect to cash integration of Dynamics 365 for Sales and Dynamics 365 for Operations| Yes | Yes |
+| Sales| | Yes | Yes |
 | | Sales and profitability performance Power BI reports| Yes | No |
-| | Sales orders mobile app  | Yes | Yes |
 | Security | | Yes | Yes |
 | Service management| | Yes | Yes |
 | Supply chain management| | Yes | Yes |
