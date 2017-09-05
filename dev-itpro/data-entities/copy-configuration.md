@@ -239,9 +239,9 @@ To copy a configuration from one legal entity into another in the same instance,
 5. Select the legal entity that will be the source of the data to copy. The form will default to the legal entity that you are currently using.
 6. In the legal entities fast tab, you can select existing legal entities as a destination or you can create new ones:
 
-    - **Create ** – Enter the legal entity ID, the legal entity name, and the region that it belongs in. Click on the **Create legal entity button**. The legal entity will be created and then added to the list of destination entities. **Note:** This functionality is available in monthly update 3 of the Spring 2017 release.
+    - **Create** – Enter the legal entity ID, the legal entity name, and the region that it belongs in. Click on the **Create legal entity button**. The legal entity will be created and then added to the list of destination entities. **Note:** This functionality is available in monthly update 3 of the Spring 2017 release.
     
-    - **Select ** – Select one or more legal entities from the dropdown list. Click on the **Add selected** button. The legal entity will be created and then added to the list of destination entities.  
+    - **Select** – Select one or more legal entities from the dropdown list. Click on the **Add selected** button. The legal entity will be created and then added to the list of destination entities.  
     
 7. After you have added the destination legal entities, select Yes if you want the number sequences to be copied. The entities needed to copy the number sequence codes and number sequence references will be added to the project. The execution unit, level and sequence number for these entities are set to the numbers in the default System and Shared template. If you are not using the default templates, adjust the entity sequences so that they are first in the list.
 
@@ -285,6 +285,7 @@ The following entities require special handling when they are used to copy into 
 | General ledger | Ledger allocation rules destination| If you have cross company allocation rules, you will not see the destination rules for legal entities that do not match the source legal entity. The copy into legal entity feature will only copy the destination records when the destination is equal to the source. The issue will be addressed in a future release.|
 | General ledger | Ledger fiscal calendar year/period| The process is currently exporting all of the legal entities instead of just the source legal entity. The copy process works correctly. The issue will be addressed in a future release.|
 | General ledger | Intercompany accounting | The copy into legal entity feature does not support intercompany accounting at this time. The issue will be addressed in a future release.|
+| Inventory management | Inventory dimension parameters | There is an issue where an error on import is shown but the correct number of parameters are imported. The issue will be addressed in a future release.| 
 | Inventory management | Warehouse locations | Some warehouse locations require a location profile ID. Location profile IDs require a location format. Currently, the location format information must be manually added before the warehouse location. The entities for the location format and location profile were added in monthly update 3 for the Spring release of 2017.| 
 | Master planning | Intercompany master plan associations | The copy into legal entity feature does not support intercompany master plan associations at this time. The issue will be addressed in a future release.| 
 | Retail | POS registers | This entity is global and cannot be copied to another legal entity.| 
