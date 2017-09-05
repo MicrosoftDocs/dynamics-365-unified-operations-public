@@ -192,7 +192,7 @@ The legal entity ID is stored in many places. Therefore, it can be difficult to 
 
 **Note:** When you set up a data project to copy into a legal entity, a legal entity filter for the source legal entity is automatically added to any entity field that is determined to be a legal entity field. 
 
-**Tip:** To export a single legal entity, you can create a copy into legal entity data project and create a template from it in the Templates form. The template can then be added to an export project and used to export the legal entity. 
+**Tip:** To export a single legal entity, you can create a copy into legal entity data project and specify the legal entity that you want to copy as the source legal entity. When you add entities or load templates, that type of project will automatically add legal entity filters. You can then download the package or create a template from it in the Templates form. The package or template can then be added to an export project and used to export the legal entity. 
 
 ## Import a configuration
 
@@ -243,7 +243,7 @@ To copy a configuration from one legal entity into another in the same instance,
     
     - **Select ** – Select one or more legal entities from the dropdown list. Click on the **Add selected** button. The legal entity will be created and then added to the list of destination entities.  
     
-7. After you have added the destination legal entities, select Yes if you want the number sequences to be copied. The entities needed to copy the number sequence codes and number sequence references will be added to the project. The execution unit, level and sequence number for these entities will be set to the numbers in the System and Shared template. If you are not using the default templates, adjust the entity sequences so that they are first in the list.
+7. After you have added the destination legal entities, select Yes if you want the number sequences to be copied. The entities needed to copy the number sequence codes and number sequence references will be added to the project. The execution unit, level and sequence number for these entities are set to the numbers in the default System and Shared template. If you are not using the default templates, adjust the entity sequences so that they are first in the list.
 
 7. If you have selected Yes for number sequences, select Yes or No to reset those number sequence to the smallest value
 
@@ -254,7 +254,7 @@ To copy a configuration from one legal entity into another in the same instance,
     - **Add a file** – Browse to a file that contains a name that matches the name of an entity and a file name extension that matches the file name extension that is in your data sources.
     - **Add a template** – Select from a list of templates that you've loaded in your instance.
     
-    You can use the default templates to ensure that the correct order is maintained and then add and remove entities to match the data that you want to copy.
+    We recommend that you use the default templates to ensure that the correct order is maintained and then add and remove entities to match the data that you want to copy. You can remove the entities that you do not want to copy.
     
 **Note:** If an entity has a field in it that represents the legal entity, a filter will be applied to that entity to include only the data for the source legal entity. The value for that field will be changed to the destination legal entity. 
 
@@ -262,15 +262,15 @@ To copy a configuration from one legal entity into another in the same instance,
 
 6. Click **Remove entity** to remove any selected entities, as required.
 
-After you've completed your configuration, click **Copy into legal entity** to start the import. The copy process will export the data from the source legal entity into the destination legal entity. Each destination legal entity will have its own import data project. You can monitor your results on the **Execution summary** page that appears. 
+After you've completed your configuration, click **Copy into legal entity** to start the import. The copy process will export the data from the source legal entity into the destination legal entity. Each destination legal entity will have its own import data project. You can monitor your results on the **Execution summary** page that appears. All of the import projects that relate to the copy into legal entity project will be shown in a list on the left of the page.
 
 If there are errors, you will see them on the **Execution summary** page just like you would for an import project. You can edit the errors in the staging tables and resubmit the values for each data project.
 
 ### Special considerations when you copy into a legal entity
 
-When you copy into a legal entity, you have the same validation that would occur when you import a file. It is important to test your copy on a test environment to identify any dependencies that will cause failures. If dependent information is not included in your list of entities to copy, then the entity will show errors when it tries to copy into the legal entity. For example, if a customer has a default site or warehouse, you will need to 1) import the sites and warehouses as part of the copy or 2) load the sites and warehouses manually before you copy the legal entity or 3) unmap the site and warehouse fields before you copy the information.
+When you copy into a legal entity, you have the same validation that would occur when you import a file. It is important to test your copy on a test environment to identify any dependencies that will cause failures. If dependent information is not included in your list of entities to copy, then the entity will show errors when it tries to copy into the legal entity. For example, if a customer has a default site or warehouse, you will need to either 1) import the sites and warehouses as part of the copy or 2) load the sites and warehouses manually before you copy the legal entity or 3) unmap the site and warehouse fields before you copy the information.
 
-You may also experience import errors if you are copying from one region into a different region. For example, you can have 1099 fields in a legal entity in the US region but, if you try to import those values into a legal entity with a German region, you will see errors on import. You should only copy information that is appropriate for the destination region.
+You may also experience import errors if you are copying from one region into a different region. For example, you can have 1099 fields in a legal entity in the US region but, if you try to import those values into a legal entity with a German region, you will see errors on the import. If you are loading a template that has entities that are incorrect for a region, you will see an error that the incorrect entity was not loaded. However, it will continue to load the rest of the template. You should only copy information that is appropriate for the destination region. 
 
 The following entities require special handling when they are used to copy into a legal entity:
 
