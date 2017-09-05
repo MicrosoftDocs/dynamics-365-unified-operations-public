@@ -59,12 +59,12 @@ The following table lists the product areas. Cloud and on-premises support is li
 | | Export data to your own data warehouse| Yes | No |
 | | Enable the export of incremental updates to a data entity | Yes | No |
 | Document management| | Yes| Yes |
-| Financial management| Includes all Financial management features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
+| Financial management|  | Yes | Yes |
 | Help| | | |
 | | Retrieve help topics in the client | Yes | No |
 | | Task guides for help| Yes | No |
-| Human resources | Includes all Human resources features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
-| Payroll|  All Payroll features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
+| Human resources | | Yes | Yes |
+| Payroll|  | Yes | Yes |
 | | Direct deposit| Yes | No |
 | Intelligence| | | |
 | | Financial reporting | Yes | Yes|
