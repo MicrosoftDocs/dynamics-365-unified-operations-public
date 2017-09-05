@@ -5,7 +5,7 @@ title: System administration home page
 description: This topic lists resources that are available for system administrators.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,78 +34,75 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+This topic points to content for system administrators of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This content will help you configure the system so that it works smoothly and effectively for your organization.
 
-This topic lists resources that are available for system administrators.
+## Lifecycle Services
+Microsoft Dynamics Lifecycle Services (LCS) is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your Finance and Operations implementations.
 
-Lifecycle Services
-------------------
-
--   [Microsoft Dynamics Lifecycle Services User Guide](../lifecycle-services/lcs-user-guide.md)
+- [Lifecycle Services for Finance and Operations](../lifecycle-services/lcs.md)
+- [Dynamics Lifecycle Services user guide](../lifecycle-services/lcs-user-guide.md)
 
 ## Deployment
+You can deploy Finance and Operations in the cloud or on-premises. Cloud deployments offer an enterprise resource planning (ERP) service that is fully managed by Microsoft. On-premises deployments are deployed locally in a customer's data center.
 
--   [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
--   [Sign up for a preview subscription](../dev-tools/sign-up-preview-subscription.md)
-- [Deploy a Microsoft Dynamics 365 for Finance and Operations demo environment](../deployment/deploy-demo-environment.md)
+- [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
 - [Dynamics 365 for Finance and Operations, Enterprise edition cloud deployment overview](../deployment/cloud-deployment-overview.md)
--   [System requirements for cloud deployments](../get-started/system-requirements.md)
-- [On-premises deployment landing page](../deployment/on-premises-deployment-landing-page.md)
+- [System requirements for cloud deployments](../get-started/system-requirements.md)
+- [On-premises deployment landing page](/deployment/on-premises-deployment-landing-page.md)
 - [System requirements for on-premises deployments](../get-started/system-requirements-on-prem.md)
 
-## Hotfixes and updates
--   [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md)
--   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
--   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
--   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
-
 ## Upgrade
-- [Finance and Operations cloud platform monthly updates FAQ](faq-platform-monthly-updates.md)
--   [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](../migration-upgrade/upgrade-latest-update.md) 
--   [Upgrade Finance and Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md)
--   [Upgrade the Dynamics 365 for Operations platform to the August 2016 release](../migration-upgrade/update-platform-each-release.md)
--   [Process for upgrading a sandbox environment](../migration-upgrade/upgrade-sandbox-environment.md)
--   [Upgrade data in development, demo, or sandbox environments](../migration-upgrade/upgrade-data-to-latest-update.md)
+An upgrade can involve moving to a new product version, migrating and upgrading code, moving to an update, or deploying a hotfix.
 
+Although the processes for each type of upgrade are similar, they differ enough that you should review the topics for a specific task before you begin.
 
-## Database administration
--   [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md)
--   [Copy a Microsoft Dynamics 365 for Finance and Operations database from SQL Server to an Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md)
--   [Request a point-in-time database restore on a non-production environment](../database/request-point-in-time-restore.md)
--   [Retain a copy of a Finance and Operations database to restore later](../database/copy-operations-database.md)
+- [Upgrade home page](../migration-upgrade/upgrade-home-page.md)
+
+## Database management
+The following content will help you move a database to new environment and restore a database to a specific point in time:
+
+- [Copy a Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md)
+- [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md)
+- [Restore a database on a non-production environment](../database/request-point-in-time-restore.md)
+- [Create a copy of a Finance and Operations database to restore later](../database/copy-operations-database.md)
 
 ## Security
--   [Role-based security](role-based-security.md)
--   [Security architecture](security-architecture.md)
--   [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) (Task guide)
--   [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) (Task guide)
--   [Set up segregation of duties](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/set-up-segregation-duties) (Task guide)
--   [Identify and resolve conflicts in segregation of duties](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties) (Task guide)
+Finance and Operations uses role-based security. Access is granted only to security roles, not to individual users. Users are assigned to roles. A user who is assigned to a security role has access to the set of privileges that is associated with that role. A user who isn't assigned to any role has no privileges.
 
-## Licensing
--   [ISV licensing](../dev-tools/isv-licensing.md)
+Role-based security is aligned with the structure of the business. The security roles that a user is assigned to depend on the user's responsibilities in the organization, and his or her participation in business processes. The administrator grants access to the duties that users in a role perform, not to the program elements that users must use.
 
-## Retail
--   [Microsoft Dynamics 365 for Finance and Operations – Retail for IT Pros and developers](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)
+Because rules can be set up for automatic role assignment, the administrator doesn't have to be involved every time that a user's responsibilities change. After security roles and rules have been set up, business managers can control day-to-day user access, based on business data.
+
+- [Role-based security](role-based-security.md)
+- [Security architecture](security-architecture.md)
+
+## Batch processing
+Many tasks in Finance and Operations can be run as part of batch jobs. For example, batch jobs can include tasks for printing reports, doing maintenance, or sending electronic documents. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours.
+
+- [Batch processing overview](batch-processing-overview.md)
+- [Batch server overview](batch-server-overview.md)
+
+## Office integration
+The integration with Microsoft Office provides a set of productive, collaborative, and integrated user experiences that take advantage of the Microsoft Office suite. This functionality can help your organization become more efficient and effective.
+
+- [Office integration](../office-integration/office-integration.md)
+- [Office integration tutorial](../office-integration/office-integration-tutorial.md)
+- [Use the Excel add-in](../office-integration/use-excel-add-in.md)
+- [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
+- [Add templates to the Open lines in Excel menu](../user-interface/add-templates-open-lines-excel-menu.md)
+- [Customize the Open in Microsoft Office menu](../office-integration/customize-open-office-menu.md)
+- [Configure and send email](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email)
+- [Troubleshoot the Office integration](../office-integration/office-integration-troubleshooting.md)
 
 ## Mobile
--   [Mobile platform](../mobile-apps/platform/mobile-platform-home-page.md)
+The Microsoft Dynamics 365 for Unified Operations mobile app enables your organization to make its business processes available on mobile devices. After you enable the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices.
+
 - [Mobile app home page](../mobile-apps/Mobile-app-home-page.md)
 - [Mobile workspaces](../mobile-apps/mobile-workspaces-released.md)
-- [Publish a mobile workspace](../mobile-apps/publish-mobile-workspace.md)
-
 
 ## General administration
--   [Finance and Operations cloud platform monthly updates](faq-platform-monthly-updates.md)
--   [Batch processing overview](batch-processing-overview.md)
--   [Batch server overview](batch-server-overview.md)
--   [Create a batch job](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-batch-job) (Task guide)
--   [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
--   [Maintenance mode](maintenance-mode.md)
--   [Demo data overview](../get-started/demo-data.md)
+- [Demo data overview](../get-started/demo-data.md)
+- [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
 - [Add links to your organization's legal terms and privacy statement](legal-terms-privacy-statement.md)
-
-
-
-
-
-
+- [License codes and configuration keys report](license-codes-configuration-keys-report.md)
+- [Maintenance mode](maintenance-mode.md)

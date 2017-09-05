@@ -12,7 +12,7 @@
 
 #### Buy Finance and Operations
 ##### [Microsoft FastTrack for Dynamics 365](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Purchase Finance and Operations (on-premises)](/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Buy Finance and Operations (on-premises)](/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Deprecated features](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1313,7 +1313,6 @@
 #### [Check the availability of stock (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/check-availability-stock?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Initialize stock levels in the warehouse (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/initialize-stock-levels-warehouse?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Transfer physical inventory within the warehouse (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/transfer-physical-inventory-within-warehouse?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Correct inventory tracking information (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/correct-inventory-tracking-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Adjust stock levels in the warehouse (basic warehousing) (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create and maintain inventory blocking (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-maintain-inventory-blocking?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Inventory counting
@@ -1336,11 +1335,13 @@
 #### [Inspect the quality of goods (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up prerequisites for management (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up quality orders (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-quality-orders?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### Trace item and batch
+### Item tracking dimensions
+#### [Correct inventory tracking information (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/correct-inventory-tracking-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Merge inventory batch](/dynamics365/unified-operations/supply-chain/inventory/merge-inventory-batches?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Trace item and raw material](/dynamics365/unified-operations/supply-chain/inventory/trace-items-raw-materials-inventory-production-sales?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Register serial number in the sales process](/dynamics365/unified-operations/supply-chain/sales-marketing/register-serial-numbers-sales-process?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Trace an item or raw material (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/trace-item-or-raw-material?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 
 ## Logistics
 ### [Transportation management](/dynamics365/unified-operations/supply-chain/transportation/transportation-management-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)

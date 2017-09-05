@@ -5,7 +5,7 @@ title: Finance and Operations cloud platform monthly updates FAQ
 description: This topic provides some key information about the monthly updates of the Microsoft Dynamics 365 for Finance and Operations cloud platform.
 author: sericks
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -59,7 +59,7 @@ Monthly platform updates are backward compatible and non-breaking. We recommend 
 We recommend that you automate functional validations to reduce the validation effort.
 
 ## How long can I stay on a specific monthly update?
-You can stay up to 12 months on a monthly platform update. However, any hotfix that you need will require you to take the latest monthly update available. Typically updates fix problems with or enable new features in Finance and Operations, so you are highly encouraged to keep up to date. For more information, see [Microsoft Dynamics 365 for Finance and Operations versions and update policy](../migration-upgrade/versions-update-policy.md).
+You can stay up to 12 months on a monthly platform update. However, any hotfix that you need will require you to take the latest monthly update available. Typically updates fix problems with or enable new features in Finance and Operations, so you are highly encouraged to keep up to date. For more information, see [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md).
 
 ## Can I get a hotfix instead of the full monthly update?
 No. All hotfixes are rolled into the cumulative monthly updates. Platform updates have been cumulative in the past too. You will need to apply the latest monthly platform update to get a fix available in any of the interim updates. For instance, if you are on update 3 and the hotfix that you need is in update 4 but the latest update available is update 7, you need to apply update 7 which will include all fixes in update 4.
@@ -68,7 +68,7 @@ No. All hotfixes are rolled into the cumulative monthly updates. Platform update
 No. Monthly platform updates do not require you to upgrade your code customizations (Partner or ISV).
 
 ## How do I get application updates?
-Application updates (X++ and binary) are available in the update tiles based on those applicable to a specific environment. Application updates can be searched for and applied as needed. All available application updates are applicable to the latest platform update. See the details for the release in the [Microsoft Dynamics 365 for Finance and Operations versions and update policy](../migration-upgrade/versions-update-policy.md). 
+Application updates (X++ and binary) are available in the update tiles based on those applicable to a specific environment. Application updates can be searched for and applied as needed. All available application updates are applicable to the latest platform update. See the details for the release in the [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md). 
 
 If you are already on platform update 4 or later, applying an application **binary** update will also update your Finance and Operations platform to the latest release. 
 
