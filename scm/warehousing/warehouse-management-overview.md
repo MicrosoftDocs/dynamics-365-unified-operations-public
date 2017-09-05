@@ -30,8 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Before you start using Warehouse management, you need to configure the inbound and outbound processes for your needs.  
-## Setup for inbound processes
+Before you start using Warehouse management, you must configure the inbound and outbound processes for your needs.  
+## Setup for inbound processes (headings picked from technet)
 - Packing size categories and location stocking limits
 - Disposition codes
 - Receiving setup to use advanced shipping notice documents
@@ -39,7 +39,7 @@ Before you start using Warehouse management, you need to configure the inbound a
 - Bar codes for use in warehouse operations
 - Container types for inbound processes
 - Search definition for inbound put locations that is based on advanced shipping notices and mixed license plates
-## Setup for outbound processes
+## Setup for outbound processes (headings picked from technet)
 - Warehouse paramters for wave processing
 - Wave template
 - Packing and container closing profiles for manual packing processes
@@ -48,6 +48,23 @@ Before you start using Warehouse management, you need to configure the inbound a
 - Shipping carriers and carrier groups
 - Elements for cross docking
 - Sales order fulfillment rates
+- 
+## Content available in current doc set: 
+- Control work by using work templates and location directives
+- Manage warehouse workers
+- Set up layout
+- Warehouse work policies
+- Unit of measure and stocking policies
+- Warehouse Power BI content
+- Batch and license plate confirmation
+- Product confirmation for cluster picking
+- Mixed license plate receiving
+- Movement of inventory with associated work in Warehouse management
+- System grouping on an open work list
+- Configure Dislpay older batches within warehouse on a mobile device
+- Set up a location directive for purchase order put-away (multiple tasks) 
 
+### Receipt
 
+- 
 
