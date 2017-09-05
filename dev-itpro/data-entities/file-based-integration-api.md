@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: File-based integration APIs
-description: This topic describes the integration APIs for working with files in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+title: Data management package integration API
+description: This topic describes the data management package API for working with files in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: Sunil-Garg
 manager: 09/11/2017
 ms.topic: article
@@ -27,13 +27,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# File-based integration APIs 
+# Data management package API 
 
 [!include[banner](../includes/banner.md)]
 
-There are two primary sets of APIs that support file-based integration scenarios in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition: the recurring integration API and the data management platform package API. Both APIs support both data import and data export. This topic describes the differences between the APIs, and when we recommend using them.
+This topic describes the data management package API in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and when to use it.
 
-
+## Choose an integration API
+There are two sets of APIs that support file-based integration scenarios i: the data management package API and the recurring integration API. Both APIs support both data import and data export. The following table describes key decision points to use when deciding which API to use. 
 
 | Decision point |    Recurring integration API                                         |    Data management package API                                                               |
 |----------------------------|-------------------------------------------------------------|-------------------------------------------------------------------|
@@ -41,7 +42,9 @@ There are two primary sets of APIs that support file-based integration scenarios
 | Format                     | Files and data packages                                     | Only data packages                                                |
 | Transformation             | Supports XSLT transformation if the data file format is XML | Transformations are external to the system                  |
 
-Authentication and authorization
+If the recurring integrations API better meets your needs, see [Recurring integrations](recurring-integrations.md).
+
+## Authentication and authorization
 All the DMF APIs uses OAuth flow for authentication. All of the below APIs, unless noted, needs to be called with a valid OAuth authentication token in order to successfully call these APIs. 
 
 Furthermore, the context of the user in which the APIs needs to be made should be established so that the proper security and user access rights can be established. 
@@ -169,10 +172,8 @@ Data package file import using the DMF Package APIs
 The following sample console application showcases the data import and data export APIs
 https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/FileBasedIntegrationSamples/ConsoleAppSamples
 
-The following lab explains how to setup file based import and export using the data package APIs using the above sample code
+The following example demonstrates how to set up file-based import and export using the data package APIs.
 
 
 
-For more information:
-[Recurring integrations](recurring-integrations.md)
 
