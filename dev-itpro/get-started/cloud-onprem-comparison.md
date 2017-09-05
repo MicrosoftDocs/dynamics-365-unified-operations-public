@@ -112,7 +112,7 @@ The following table lists the product areas. Cloud and on-premises support is li
 | | Sales and profitability performance Power BI reports| Yes | No |
 | | Sales orders mobile app  | Yes | Yes |
 | Security | | Yes | Yes |
-| Service management| | | |
+| Service management| | Yes | Yes |
 | Supply chain management| | | |
 | Transportation management| | | |
 | Vendor collaboration| | | |
