@@ -173,13 +173,17 @@ Possible values:
 - Failed
 - Canceled
 
-The following diagrams show how the data management package APIs can be used to import and export data packages.
+The following diagram shows how the data management package APIs can be used to import data packages.
 
-Data package file import using the DMF Package APIs
+[!Data package file import using the data management package APIs](./media/data-package-import.png)
  
-Data package file import using the DMF Package APIs
+The following diagram shows how the data management package APIs can be used to export data packages.
+
+[!Data package file export using the management package APIs](./media/data-package-export.png)
  
-The following sample console application showcases the data import and data export APIs
+A sample console application is available on GitHub to showcase the data import and data export APIs.
+
+For more information, see: 
 https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/FileBasedIntegrationSamples/ConsoleAppSamples
 
 The following example demonstrates how to set up file-based import and export using the data package APIs.
