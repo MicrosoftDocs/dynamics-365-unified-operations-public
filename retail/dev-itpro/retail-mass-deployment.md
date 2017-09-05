@@ -39,7 +39,7 @@ This topic explains how you can use self-service silently to perform servicing u
 > This functionality only works in Microsoft Dynamics 365 for Retail, version 7.2, App Update 3 and beyond.  Note that silent servicing maintains all currently installed 
 
 ### Delimiters for mass deployment
-This is the list of delimiters that can currently be used in Mass Deployment execution commands. These delimiters apply to App Update 3 and later.
+This is the list of delimiters that can currently be used in mass deployment execution commands. These delimiters apply to App Update 3 and later.
 
 |Delimiter | Description|
 |----------|------------|
