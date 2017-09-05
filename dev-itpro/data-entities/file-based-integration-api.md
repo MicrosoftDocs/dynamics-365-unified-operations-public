@@ -35,7 +35,7 @@ There are two primary sets of APIs that support file-based integration scenarios
 
 
 
-| Recurring integration API | Data management package API                                            |                                                                   |
+| Decision point |    Recurring integration API                                         |    Data management package API                                                               |
 |----------------------------|-------------------------------------------------------------|-------------------------------------------------------------------|
 | Scheduling                 | Scheduling within Finance and Operations   | Scheduling external to Finance and Operations |
 | Format                     | Files and data packages                                     | Only data packages                                                |
