@@ -93,20 +93,14 @@ The following table lists the product areas. Cloud and on-premises support is li
 | | Dynamics 365 for Unified Operations mobile app and workspaces | Yes | Yes |
 | Office integration| | Yes | Yes |
 | Organization administration | | Yes | Yes |
-| Planning and scheduling| | | |
-| Procurement and sourcing| | | |
-| | Intercompany order processing: ATP and direct shipment| Yes | Yes |
-| | Mobile purchase order approvals| Yes | Yes |
-| | Mobile vendor collaboration| Yes | Yes |
+| Procurement and sourcing| | Yes | Yes |
 | | Punch-out to external catalog from purchase requisition| Yes | No |
 | | Purchase spend analysis Power BI reports| Yes | No |
-| Product information management | | | |
-| | Enhancements to the bill of materials functionality| Yes | Yes |
-| | Product variant enhancements| Yes | Yes |
-| Product master data| | | |
+| Product information management | | Yes | Yes |
+| Product master data| | Yes | Yes|
 | Production | | Yes | Yes |
 | | Production performance Power BI reports| Yes | No |
-| Project management and accounting| Includes all Financial management features that are part of Dynamics 365 for Finance and Operations | Yes | Yes |
+| Project management and accounting|  | Yes | Yes |
 | Sales| | Yes | Yes |
 | | Sales and profitability performance Power BI reports| Yes | No |
 | Security | | Yes | Yes |
@@ -117,10 +111,9 @@ The following table lists the product areas. Cloud and on-premises support is li
 | Warehouse management| | Yes | Yes |
 | | Mobile warehouse app| Yes | No |
 | | Warehousing Power BI reports| Yes | No |
-| Web client  - as Tonya what we call this | | | |
+| Web client | | Yes | Yes |
 | | Task recorder - Save or load task recordings from the BPM library| Yes | No |
-| Support | | | |
-| | Ideas portal| Yes | Yes |
+| Support | | Yes | Yes |
 | | Access to Support via the Help & Support menu| Yes | No |
 
 ## Dynamics 365 for Retail 
