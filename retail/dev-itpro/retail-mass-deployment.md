@@ -39,16 +39,17 @@ This topic explains how you can use self-service silently to perform servicing u
 > This functionality only works in Microsoft Dynamics 365 for Retail, version 7.2, App Update 3 and beyond.  Note that silent servicing maintains all currently installed 
 
 ### Delimiters for Mass Deployment
-This is the list of delimiters that can currently be used in Mass Deployment execution commands.
+This is the list of delimiters that can currently be used in Mass Deployment execution commands. These delimiters apply to App Update 3 and beyond.
 
-#### App Update 3 and beyond
-- -S or -Silent - Silently run the installer (No graphical user interface).
-- -C or -Config - Specify the location and filename of the configuration file to use as part of this installation.
-- -FilePath - Specify a custom installation location (Not recommended for standard installation).
-- -LogFile - Specify a custom logfile location for installation logs (Not recommended for standard installation).
-- -SkipPrerequisiteCheck - Skips the check for prerequisites and prerequisite installation.  Should only be used for development and testing (Not recommended for standard installation).
-- -SkipSystemInfoCollection - Skips the System Information collection process at the beginning of the installation.  Should only be used for development and testing (Not recommended for standard installation).
-- -SkipMerchantInfo - Skips the Merchant Account Information installation at the end of the hardware station Self-service installer.  Should only be used for development and testing (Not recommended for standard installation).
+|Delimiter | Description|
+|----------|------------|
+|-S or -Silent| Silently run the installer. (No graphical user interface) |
+|-C or -Config| Specify the location and file name of the configuration file to use as part of this installation. |
+|-FilePath| Specify a custom installation location. (Not recommended for standard installation)
+|-LogFile| Specify a custom log file location for installation logs. (Not recommended for standard installation) |
+|-SkipPrerequisiteCheck| Skips the check for prerequisites and prerequisite installation.  Should only be used for development and testing. (Not recommended for standard installation)
+|-SkipSystemInfoCollection| Skips the System Information collection process at the beginning of the installation.  Should only be used for development and testing. (Not recommended for standard installation) |
+|-SkipMerchantInfo| Skips the Merchant Account Information installation at the end of the hardware station Self-service installer.  Should only be used for development and testing. (Not recommended for standard installation) |
 
 ### Example commands for silent servicing
 This sub-section will showcase examples of Self-service Mass Deployment commands.  The commands listed function for all the standard Self-service installers, which include Modern POS (With and without offline), hardware station, and Retail Store Scale Unit.
