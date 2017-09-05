@@ -33,13 +33,13 @@ ms.dyn365.ops.version: Application update 3
 
 This topic explains how you can use self-service silently to perform servicing updates, initial deployments, and some concepts of special deployment.  This topic will be updated repeatedly as the feature is developed further and more functionality is available.  At this time, only the ability to silently update is available for use.
 
-## Silent Servicing
+## Silent servicing
 ### Before you begin
 > [!IMPORTANT]
 > This functionality only works in Microsoft Dynamics 365 for Retail, version 7.2, App Update 3 and beyond.  Note that silent servicing maintains all currently installed 
 
-### Delimiters for Mass Deployment
-This is the list of delimiters that can currently be used in Mass Deployment execution commands. These delimiters apply to App Update 3 and beyond.
+### Delimiters for mass deployment
+This is the list of delimiters that can currently be used in Mass Deployment execution commands. These delimiters apply to App Update 3 and later.
 
 |Delimiter | Description|
 |----------|------------|
@@ -49,16 +49,17 @@ This is the list of delimiters that can currently be used in Mass Deployment exe
 |-LogFile| Specify a custom log file location for installation logs. (Not recommended for standard installation) |
 |-SkipPrerequisiteCheck| Skips the check for prerequisites and prerequisite installation.  Should only be used for development and testing. (Not recommended for standard installation)
 |-SkipSystemInfoCollection| Skips the System Information collection process at the beginning of the installation.  Should only be used for development and testing. (Not recommended for standard installation) |
-|-SkipMerchantInfo| Skips the Merchant Account Information installation at the end of the hardware station Self-service installer.  Should only be used for development and testing. (Not recommended for standard installation) |
+|-SkipMerchantInfo| Skips the Merchant Account Information installation at the end of the hardware station self-service installer.  Should only be used for development and testing. (Not recommended for standard installation) |
 
 ### Example commands for silent servicing
-This sub-section will showcase examples of Self-service Mass Deployment commands.  The commands listed function for all the standard Self-service installers, which include Modern POS (With and without offline), hardware station, and Retail Store Scale Unit.
+This section will showcase examples of self-service mass deployment commands.  The commands listed function for all the standard self-service installers, which include Modern POS (with and without offline), hardware station, and Retail Store Scale Unit.
 
 ```
 ModernPOSSetup_V72.exe -S
 ```
 
 This command will silently update the current installation of Retail Modern POS.  This is the standard command structure used for silent servicing of currently installed components.  The structure will follow the basic values of "InstallerName.exe" and the command for silent installation "/S".  This command will utilize the configuration file that is located in the same file location as the installer, if it exists.
+
 > [!NOTE]
 > A configuration file is still required for Retail Store Scale Unit.  However, the installer will still keep all possible currently installed values.
 
@@ -66,4 +67,4 @@ This command will silently update the current installation of Retail Modern POS.
 StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipPrerequisiteCheck
 ```
 
-This command will silently update the current installation of Retail Store Scale Unit using a specific configuration file (Which may or may not be in the same location as the installer executable file) and will skip the prerequisite check and installation steps (Only recommended for testing and development purposes).
+This command will silently update the current installation of Retail Store Scale Unit using a specific configuration file (which may or may not be in the same location as the installer executable file) and will skip the prerequisite check and installation steps. It is only recommended for testing and development purposes.
