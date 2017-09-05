@@ -24,8 +24,8 @@ ms.assetid: c04e0a7b-1747-4b88-b729-fd820f8ab600
 ms.search.region: Global 
 # ms.search.industry: 
 ms.author: milindav
-ms.dyn365.intro: 2017-06-30
-ms.dyn365.version: Platform update 8
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: Platform update 8
 ---
 
 # Add financial dimensions to aggregate measurements

@@ -3,7 +3,7 @@
 
 title: Define and maintain retail channels
 description: This article provides an overview of the process for setting up brick-and-mortar stores, which are referred to as retail stores in Microsoft Dynamics 365 for Retail. It includes information about the tasks that you must complete both before and after you set up a retail store.
-author: josaw1
+author: mugunthanm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

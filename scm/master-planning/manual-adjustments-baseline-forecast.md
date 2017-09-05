@@ -3,7 +3,7 @@
 
 title: Make manual adjustments to the baseline forecast
 description: This article explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
-author: YuyuScheller
+author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

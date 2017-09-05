@@ -2,7 +2,7 @@
 # required metadata
 
 title: Naming guidelines
-description: 
+description: This topic describes the naming guidelines for extensions.
 author: LarsBlaaberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -24,8 +24,8 @@ ms.custom: 89563
 ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: pvillads
-ms.search.validFrom: 2017-07/01
+ms.author: lolsen
+ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ---
 

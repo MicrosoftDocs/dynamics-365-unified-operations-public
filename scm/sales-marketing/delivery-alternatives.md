@@ -3,7 +3,7 @@
 
 title: Delivery alternatives
 description: Sales order takers can use the Delivery alternatives page to discover alternative order fulfillment options.
-author: YuyuScheller
+author: ChristianRytt
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: SalesLineDeliveryDetails
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 271623

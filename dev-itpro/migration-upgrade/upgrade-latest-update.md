@@ -136,13 +136,16 @@ You can make a request via LCS for the Microsoft Servicing Engineering (DSE) Tea
 - DSE will perform the data upgrade in the production environment
 
 To upgrade any additional Tier 2 or higher sandbox environments: you do not need to upgrade these. Instead, delete them, redeploy, and then make a database refresh request to copy a database from a Tier 2 or higher environment that hase already been upgraded. Alternatively you can upgrade them manually by following [Process for Upgrading a Sandbox Environment](upgrade-sandbox-environment.md)
-For upgrading any Tier 1 environments (also known as dev boxes or one-boxes). You can deploy these with the new version and just sync to your upgraded VSTS branch. To get data for the Tier 1 environments, a developer can upgrade the database following [Upgrade data in develop, demo or sandbox environments](upgrade-data-to-latest-update.md)
+For upgrading any Tier 1 environments (also known as dev boxes or one-boxes). You can deploy these with the new version and just sync to your upgraded VSTS branch. To get data for the Tier 1 environments, a developer can upgrade the database following [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md)
 
 
 #### Use LCS to submit an upgrade request to DSE
 1. Go to the **Environment details** page for the environment that you want to upgrade, click **Maintain**, and then select **Upgrade**. A window will display where you can enter the upgrade request.
 ![Upgrade request](./media/UpgradeMaintainButton.PNG)
-2. You must submit your upgrade request 5 working days before you expect to upgrade, to help ensure that the upgrade can be performed within your expected timeframe. The advanced notice is required to prepare a new environment in the background. When downtime starts, this new environment will be swapped with the existing environment. You will not be able to see the new environment, it's a background mechanism.
+2. You must submit your upgrade request a minimum of 5 working days before you expect to upgrade, to help ensure that the upgrade can be performed within your expected timeframe. The advanced notice is required to prepare a new environment before your downtime window.
+
+   If, due to high demand, your chosen time slot is not available, the Microsoft Team will respond with the closest available time slots for you to chose from. The more advanced notice you give, the more likely you will get your first choice.
+
 3. You must allow at least 8 hours between the downtime start and downtime end times. This time is required to perform the swap in of the new environment and the data upgrade process.
 4. If you have custom code or X++ hotfixes that must be part of your upgraded environment, you must select Application deployable packages during your upgrade request. Select the deployable packages that contain your upgraded custom code and the X++ hotfixes that were created on your development or build environment during the code upgrade process. 
 

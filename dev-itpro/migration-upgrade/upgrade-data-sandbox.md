@@ -84,26 +84,32 @@ After the copy is created, run the following Transact-SQL (T-SQL) script against
 	select name from sys.sysusers where (isntuser = 1 or isntgroup =1) and name <> 'dbo'
 
 	OPEN userCursor
-		FETCH userCursor into @UserName
-		WHILE @@Fetch_Status = 0
-			  BEGIN
-					set @SQL = 'DROP USER [' + @UserName + ']'
-					exec(@SQL)
-					FETCH userCursor into @UserName
-			  END
+	    FETCH userCursor into @UserName
+	    WHILE @@Fetch_Status = 0
+		  BEGIN
+			set @SQL = 'DROP USER [' + @UserName + ']'
+			exec(@SQL)
+			FETCH userCursor into @UserName
+		  END
 	CLOSE userCursor
 	DEALLOCATE userCursor
-	RETURN
 
+	go
 	--If you receive message that you cannot delete users as they own a schema, then check which schema the users own - either change the ownership to another user (for exmaple to dbo) or drop the schema if it does not contain 
 	-- any objects - the examples below are for a AX2012 Demo environment you will need to edit this for your specific environment
-	drop schema [contoso\admin]
-	drop schema [CONTOSO\Domain Users]
-
+	if exists (select 1 from sys.schemas where name = 'contoso\admin')
+	begin
+		drop schema [contoso\admin]
+	end
+	if exists (select 1 from sys.schemas where name = 'contoso\Domain Users')
+	begin
+		drop schema [CONTOSO\Domain Users]
+	end
+	go
 	--drop all views in the current database as some refresh tempDB which is not supported in Azure SQL Database
 
 	declare 
-	@SQL varchar(255),
+	@SQL2 varchar(255),
 	@ViewName varchar(255)
 
 	set quoted_identifier off
@@ -117,18 +123,21 @@ After the copy is created, run the following Transact-SQL (T-SQL) script against
 	OPEN viewCursor
 
 	FETCH viewCursor into @ViewName
-		WHILE @@Fetch_Status = 0
-			  BEGIN
-					set @SQL = 'DROP VIEW ' + @ViewName
-					exec(@SQL)
-					FETCH viewCursor into @ViewName
-			  END
+	    WHILE @@Fetch_Status = 0
+		  BEGIN
+			set @SQL2 = 'DROP VIEW ' + @ViewName
+			exec(@SQL2)
+			FETCH viewCursor into @ViewName
+		  END
 	CLOSE viewCursor
 	DEALLOCATE viewCursor
-	RETURN
+	go
 
 	-- Drop the following procedure as it contains a tempDB reference which is not supported in Azure SQL Database
-	drop procedure MaintainShipCarrierRole
+	If exists (select 1 from sys.procedures where name = 'MaintainShipCarrierRole')
+	begin
+		drop procedure MaintainShipCarrierRole
+	end	
 
 ### Export the copied database to a bacpac file
 
@@ -166,6 +175,7 @@ You can choose how you would like to move the bacpac file to the AOS machine - y
 
 During this step, you will import the exported bacpac file to the SQL Database instance that your sandbox environment uses. You must first install the latest version of Management Studio on your sandbox AOS machine. You will then import the file by using the SQLPackage.exe tool.
 
+
 You will perform these tasks directly on the AOS machine in your sandbox environment, because there are firewall rules that restrict access to the SQL Database instance. However, by using the AOS machine, you can gain access.
 
 As for the export step, you must have the latest version of Management Studio before you start the import. This step won't work if you have an older version.
@@ -200,38 +210,38 @@ Run the following script against the imported database. The script performs the 
 -   Set the correct performance parameters.
 -   Enable the SQL Query Store feature.
 
-    CREATE USER axdeployuser FROM LOGIN axdeployuser
-    EXEC sp_addrolemember 'db_owner', 'axdeployuser'
+		CREATE USER axdeployuser FROM LOGIN axdeployuser
+		EXEC sp_addrolemember 'db_owner', 'axdeployuser'
 
-    CREATE USER axdbadmin WITH PASSWORD = '<password from lcs>'
-    EXEC sp_addrolemember 'db_owner', 'axdbadmin'
+	    CREATE USER axdbadmin WITH PASSWORD = 'password from lcs'
+	    EXEC sp_addrolemember 'db_owner', 'axdbadmin'
 
-    CREATE USER axruntimeuser WITH PASSWORD = '<password from lcs>'
-    EXEC sp_addrolemember 'db_datareader', 'axruntimeuser'
-    EXEC sp_addrolemember 'db_datawriter', 'axruntimeuser'
+	    CREATE USER axruntimeuser WITH PASSWORD = 'password from lcs'
+	    EXEC sp_addrolemember 'db_datareader', 'axruntimeuser'
+	    EXEC sp_addrolemember 'db_datawriter', 'axruntimeuser'
 
-    CREATE USER axmrruntimeuser WITH PASSWORD = '<password from lcs>'
-    EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser'
-    EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
-    EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
+	    CREATE USER axmrruntimeuser WITH PASSWORD = 'password from lcs'
+	    EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser'
+	    EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
+	    EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
 
-    CREATE USER axretailruntimeuser WITH PASSWORD = '<password from lcs>'
-    EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
-    EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
+	    CREATE USER axretailruntimeuser WITH PASSWORD = 'password from lcs'
+	    EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
+	    EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 
-    CREATE USER axretaildatasyncuser WITH PASSWORD = '<password from lcs>'
-    EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
+	    CREATE USER axretaildatasyncuser WITH PASSWORD = 'password from lcs'
+	    EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
 
-    ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
-    ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
-    ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
-    ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
-    ALTER DATABASE <imported database name> SET COMPATIBILITY_LEVEL = 130;
-    ALTER DATABASE <imported database name> SET QUERY_STORE = ON;
- 
-### Run the MajorVersionDataUpgradeWithRetail.zip package
+	    ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
+	    ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
+	    ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
+	    ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
+	    ALTER DATABASE imported-database-name SET COMPATIBILITY_LEVEL = 130;
+	    ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
 
-Run the data upgrade deployable package, which is called MajorVersionDataUpgradeWithRetail.zip as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). You will find the MajorVersionDataUpgradeWithRetail.zip in the same location described in the article for MinorVersionDataUpgrade.zip.
+### Run the MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip packages
+
+Run the data upgrade deployable packages, which are called MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). You must run both packages, one after the other.
 
 ### Upgrade a copy of the database in a development environment
 

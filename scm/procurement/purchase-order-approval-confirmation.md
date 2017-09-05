@@ -3,7 +3,7 @@
 
 title: Approve and confirm purchase orders
 description: This article describes the statuses that a purchase order (PO) goes through after it has been created, and the effect of enabling change management on POs.
-author: YuyuScheller
+author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

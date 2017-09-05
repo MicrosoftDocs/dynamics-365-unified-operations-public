@@ -24,13 +24,14 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Import a letter of credit
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure walks through the process of importing a letter of credit. The following must be set up before completing this procedure: bank facilities, posting profiles, a bank facility agreement and vendor bank details.
+This procedure walks through the process of importing a letter of credit. The following must be set up before completing this procedure: bank facilities, posting profiles, a bank facility agreement and vendor bank details.
+
 This procedure uses the USMF demo company.
 
 
@@ -113,8 +114,7 @@ This procedure uses the USMF demo company.
 1. Go to Cash and bank management > Letters of credit > Import letter of credit and import collection.
 2. In the list, find and select the desired record.
 3. In the list, click the link in the selected row.
-    * Verify the Import letter of credit status.    
-    *   
+    * Verify the Import letter of credit status.  
 4. Close the page.
 5. Close the page.
 

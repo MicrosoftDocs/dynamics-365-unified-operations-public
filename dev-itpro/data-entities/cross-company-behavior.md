@@ -3,7 +3,7 @@
 
 title: Cross-company behavior
 description: This topic provides information about how data entities interact with the cross-company concept. To understand this aspect of data entities, you must understand how tables and views apply the cross-company concept. Therefore, this topic begins with a brief review of tables and views, and then explains how data entities are related.
-author: RobinARH
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: margoc
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 25371
 ms.assetid: f293d97a-9f70-4c45-91d4-574731892353
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kuntalme
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

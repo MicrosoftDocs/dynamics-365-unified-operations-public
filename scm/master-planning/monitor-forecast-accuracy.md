@@ -3,7 +3,7 @@
 
 title: Monitor forecast accuracy
 description: This article describes the types of forecast accuracy that Microsoft Dynamics 365 for Finance and Operations calculates, and explains how you can view the accuracy values.
-author: YuyuScheller
+author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

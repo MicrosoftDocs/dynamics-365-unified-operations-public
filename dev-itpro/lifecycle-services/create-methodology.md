@@ -3,7 +3,7 @@
 
 title: Create or update a methodology (LCS)
 description: Lifecycle Services (LCS) for Microsoft Dynamics provides methodologies that you can use to ensure a more repeatable and predictable implementation project experience. You can use one of the provided methodologies or create your own. With a methodology, you can easily track and report on your progress.
-author: kfend
+author: manalidongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

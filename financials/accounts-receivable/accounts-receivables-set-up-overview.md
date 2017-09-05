@@ -3,9 +3,9 @@
 
 title: Configure Accounts receivables and Credit and collections
 description: Configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 24631
 ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

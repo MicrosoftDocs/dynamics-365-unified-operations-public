@@ -3,7 +3,7 @@
 
 title: Financial dimensions and posting 
 description: When you plan and set up your chart of accounts, you must consider how the various components will work together when you post a document or journal. These components include account structures, advanced rules, and balancing and fixed dimensions. This topic explains what each component is and how the components work together.
-author: aolson
+author: aprilolson
 manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.2.0
+ms.dyn365.ops.version: July 2017 update
 
 ---
 

@@ -3,7 +3,7 @@
 
 title: Manage vendor collaboration users
 description: This topic describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
-author: YuyuScheller
+author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

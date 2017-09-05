@@ -5,7 +5,7 @@ title: Select a form pattern
 description: This article provides information that will help you select the best form pattern for the forms that you migrate. 
 author: jasongre
 manager: AnnBe
-ms.date: 05/23/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -92,6 +92,10 @@ Sometimes, a form has an incorrect **Form.Design.Style** property value.
 ## Selecting a form pattern via visuals
 Although this approach is less useful than looking at the form metadata, you can get a lot of information about a form by running and examining it. Use the form visuals as an additional data point to help you select a form pattern. Look through the screen shots of migrated forms to find a form that looks like the target form. Additionally, make sure that the description or intent of the pattern matches the description/intent of the form.
 
+## Selecting a form pattern via the designer
+
+Right-click the **Design** node of the target form, select **Apply pattern**, and then click the pattern to apply.
+
 ## Form pattern reference guide
 ### List of classes of top-level form patterns
 
@@ -115,7 +119,7 @@ Although this approach is less useful than looking at the form metadata, you ca
 
 ### Finding forms that currently use a particular form pattern
 
-For a full list of forms that are currently using a particular form pattern, generate the **Form Patterns** report from within Microsoft Visual Studio. On the **Dynamics 365** menu, expand the **Add-ins** option, and click **Run form patterns report**. A background process generates the report. After several seconds, a message box appears in Visual Studio to indicate that the report has been generated and inform you about the location of the **Form Patterns** report file. You can filter this file by pattern to find forms that use a particular pattern.
+For a full list of forms that are currently using a particular form pattern, generate the **Form Patterns** report from within Microsoft Visual Studio. For information on running the report, see [Form pattern add-ins](form-pattern-add-ins.md). You can filter the report in Excel to find forms that use a particular pattern.
 
 ### Form pattern visuals and descriptions
 

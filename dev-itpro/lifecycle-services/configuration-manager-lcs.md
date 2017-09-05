@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: kfend
 ms.search.scope: AX 2012, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 62753

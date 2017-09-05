@@ -3,9 +3,9 @@
 
 title: Set up Credit and collections
 description: This article explains how to set up the collections functionality.
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 07/31/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 14031
 ms.assetid: dcc6da2f-9af5-4f1d-abaa-b72967b66979
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -3,7 +3,7 @@
 
 title: Move from SSAS cubes in AX 2012 to aggregate models
 description: This article explains how Dynamics 365 for Finance and Operations has transitioned from using SQL Server Analysis Services (SSAS) cubes to in-memory, real-time aggregate models for analytics.
-author: sericks007
+author: MilindaV2
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 24511

@@ -24,14 +24,16 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Generate and run out-of-box reports
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Use this task guide to run out of box reports in headquarters from different workspaces and Inquiries & Sales reports located under Retail & Commerce.
-
+Use this task guide to run out of box reports in headquarters from different workspaces and Inquiries & Sales reports located under Retail & Commerce.
+
+
+
 The demo data company used to create this recording is USRT. This recording is intended for the System administrator role.
 
 

@@ -3,7 +3,7 @@
 
 title: Manage items lent to workers
 description: Loan items are records that help managers track the physical items that your company lends to its workers. 
-author: rschloma
+author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

@@ -24,14 +24,16 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 # ms.search.industry: 
 ms.author: anasyash
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Generate an EU Intrastat declaration
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format. 
-Before you can complete this procedure, you must transfer transactions to the Intrastat. 
+This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format. 
+
+Before you can complete this procedure, you must transfer transactions to the Intrastat. 
+
 This procedure was created using the demo data company DEMF.
 
 

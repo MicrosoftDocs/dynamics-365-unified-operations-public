@@ -24,7 +24,7 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 # ms.search.industry: 
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
-ms.dyn365.ops.version: Enterprise edition, July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ---
 
 # Import ISO20022 files

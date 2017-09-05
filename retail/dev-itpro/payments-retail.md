@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: athinesh
 ms.search.validFrom: 2017-06-16
-ms.dyn365.ops.version: Dynamics 365 for Retail
+ms.dyn365.ops.version: Version 1611
 
 ---
 # Payments FAQ

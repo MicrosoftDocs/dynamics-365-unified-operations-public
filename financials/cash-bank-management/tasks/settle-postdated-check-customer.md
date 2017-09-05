@@ -24,19 +24,26 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Settle a postdated check from a customer
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-You can settle a postdated check after the check has been cleared by the bank. This financial transaction also clears the bridge account transaction for the postdated check. 
-The following tasks must be complete before you start this one.
-1) Set up postdated checks
-2) Register and post a postdated check for a customer 
-
-The role of this task guides is Treasurer.
-
+You can settle a postdated check after the check has been cleared by the bank. This financial transaction also clears the bridge account transaction for the postdated check. 
+
+The following tasks must be complete before you start this one.
+
+1) Set up postdated checks
+
+2) Register and post a postdated check for a customer 
+
+
+
+The role of this task guides is Treasurer.
+
+
+
 This procedure uses the USMF demo company.
 
 1. Go to Credit and collections > Inquiries and reports > Payments > Customer postdated checks.

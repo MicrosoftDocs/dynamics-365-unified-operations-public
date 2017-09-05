@@ -3,9 +3,9 @@
 
 title: Prospect to cash   
 description: The topic provides an overview of the Prospect to cash solution between Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Sales. 
-author: YuyuScheller
+author: ChristianRytt 
 manager: AnnBe
-ms.date: 07/12/2017
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: YuyuScheller
+ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update 
 ms.search.validFrom: 2017-07-8
 
@@ -38,12 +38,12 @@ The Prospect to cash solution uses [Data Integration](https://docs.microsoft.com
 
 This solution provides integration in the following areas: 
 
--   Maintain accounts in Sales and sync them to Finance and Operations.
--   Maintain contacts in Sales and sync them to Finance and Operations.
--   Maintain products in Finance and Operations and sync them to Sales.
-- 	Create sales quotes in Sales and sync them to Finance and Operations.
--   Create sales orders in Finance and Operations and sync them to Sales.
--   Create sales invoices in Finance and Operations and sync them to Sales.
+-   [Maintain accounts in Sales and sync them to Finance and Operations](accounts-template-mapping.md)
+-   [Maintain contacts in Sales and sync them to Finance and Operations](contacts-template-mapping.md)
+-   [Maintain products in Finance and Operations and sync them to Sales](products-template-mapping.md)
+- 	[Create sales quotes in Sales and sync them to Finance and Operations](sales-quotation-template-mapping.md)
+-   [Create sales orders in Finance and Operations and sync them to Sales](sales-order-template-mapping.md)
+-   [Create sales invoices in Finance and Operations and sync them to Sales](sales-invoice-template-mapping.md)
 
 ## System requirements for Dynamics 365 for Finance and Operations, Enterprise edition
 

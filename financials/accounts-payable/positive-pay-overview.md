@@ -3,9 +3,9 @@
 
 title: Positive pay overview
 description: This article provides information about positive pay, which is used to generate an electronic list of checks that can be presented to a bank. 
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 88463
 ms.assetid: 1e3a39d3-f9b3-4073-9730-c96a607243e2
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: abruer
+ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 

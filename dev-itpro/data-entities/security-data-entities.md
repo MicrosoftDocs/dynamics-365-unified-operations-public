@@ -3,7 +3,7 @@
 
 title: Security and data entities
 description: This topic provides information about security for data entities. Because data entities support entry point security, they are governed by the role-based security framework. The model for mapping data entity entry points to privileges and duties depends on the target scenarios. Therefore, data entities enable separate security configuration for each integration mode.
-author: kfend
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,16 +15,16 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer
+audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: margoc
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 17852
 ms.assetid: a9ede141-56fa-4310-997d-aeef184f7a52
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kuntalme
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

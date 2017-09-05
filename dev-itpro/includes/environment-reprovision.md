@@ -1,27 +1,16 @@
-When copying a database between environments, you will need to run the environment re-provisioning tool before the copied database is fully functional after being copied, to ensure that all Retail components are up-to-date.
+When copying a database between environments, you will need to run the environment re-provisioning tool before the copied database is fully functional, to ensure that all Retail components are up-to-date.
 
 > [!IMPORTANT]
 > We recommend that you run this procedure whether you are using Retail components or not, because Retail functionality is included in all environments. 
 
 Before you continue, you must make sure that the following prerequisites are met:
-If your target enviornment is running the July 2017 release or later, you must first apply KB 4035399 in your target environment.
-KB 4035399
-If your target environment is running the November release (version 1611), you must apply the following hotfixes in your target enviornment:
 
- -   KB 4025631
- -   KB 4035355
- -   KB 4035492
-
-Before you continue, you must make sure that the following prerequisites are met:
-
-1. If your target enviornment is running the July 2017 release or later, you must first apply KB 4035399 in your target environment.
-2. If your target environment is running the November release (version 1611), you must apply apply the following hotfixes in your target environment: 
-
- -   KB 4025631
- -   KB 4035355
- -   KB 4035492
- -   KB 4010947
-
+1. If your target enviornment is running the July 2017 release or later, apply KB 4035399. 
+2. If your target environment is running the November release (version 1611), apply the following hotfixes:
+  -   KB 4025631
+  -   KB 4035355
+  -   KB 4035492
+  -   KB 4010947
 3. The default channel database and the default channel data group must be named **Default**. If you've renamed them, you must change the names back.
 
 Follow these steps to run the Environment reprovisioning tool.

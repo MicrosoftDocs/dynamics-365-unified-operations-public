@@ -3,7 +3,7 @@
 
 title: Compensation and Benefits Power BI content
 description: This topic describes the Finance and Operations - Compensation and Benefits Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
-author: twheeloc
+author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

@@ -24,17 +24,22 @@ ms.search.region: Malaysia
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Self-billed invoices (Malaysia)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure walks you through the Creation and printing of Vendor self-billed invoice.
-Before you can complete this procedure, you must have selected the Use self-billed invoice option in General ledger parameters and you must be in the 'Accounts payable clerk' role.
-This procedure was created using the demo data company MYMF.
-
-
+This procedure walks you through the Creation and printing of Vendor self-billed invoice.
+
+Before you can complete this procedure, you must have selected the Use self-billed invoice option in General ledger parameters and you must be in the 'Accounts payable clerk' role.
+
+This procedure was created using the demo data company MYMF.
+
+
+
+
+
 
 
 

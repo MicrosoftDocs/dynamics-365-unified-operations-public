@@ -3,7 +3,7 @@
 
 title: Default offset accounts for vendor invoice journals and invoice approval journals
 description: 
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 62093
 ms.assetid: 553933ca-928d-4031-bb8c-f9cff458320b
 ms.search.region: global
 # ms.search.industry: 
-ms.author: abruer
+ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

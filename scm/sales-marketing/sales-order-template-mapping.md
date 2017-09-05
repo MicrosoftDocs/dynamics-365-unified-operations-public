@@ -5,7 +5,7 @@ title: Synchronize sales order headers and lines from Finance and Operations to 
 description: The topic discusses the templates and underlying tasks that are used to synchronize sales order headers and lines from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to Microsoft Dynamics 365 for Sales. 
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/14/2017
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,14 +17,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: ChristianRytt
+ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update 
 ms.search.validFrom: 2017-07-8
 
@@ -108,6 +108,10 @@ The **Sales order status** will remain active to ensure that changes from Financ
 Before synchronizing sales orders, it is important to update the systems with the following setting:
 
 ### Setup in Sales
+
+- Ensure permissions for the team that the user (from your Sales **Connection set**) is assigned to. If you are using demo data, usually the user has admin access, but not the team. Without this you will get an error that Principal team is missing when running the project from Data integrator. 
+
+    - Under **Settings** > **Security** > **Teams**, select the relevant team, click **Manage Roles** and select a role with the desired permissions e.g. System Administrator.
 
 - Under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Use system prizing calculation system** is set to **Yes**. 
 

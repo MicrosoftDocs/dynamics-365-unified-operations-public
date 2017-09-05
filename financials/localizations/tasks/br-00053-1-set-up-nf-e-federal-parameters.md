@@ -24,13 +24,14 @@ ms.search.region: Brazil
 # ms.search.industry: 
 ms.author: sndray
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up NF-e federal parameters (Brazil)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-You can set up Nota Fiscal eletrônica (NF-e) web services, rejection codes, and schemas to generate an NF-e. After you generate an NF-e, XML messages are generated and submitted to the Secretaria da Fazenda (SEFAZ). This task uses the BRMF demo company.
+You can set up Nota Fiscal eletrônica (NF-e) web services, rejection codes, and schemas to generate an NF-e. After you generate an NF-e, XML messages are generated and submitted to the Secretaria da Fazenda (SEFAZ). This task uses the BRMF demo company.
+
 
 
 1. Go to Organization administration > Organizations > Electronic fiscal documents > NF-e federal parameters.

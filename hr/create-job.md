@@ -17,15 +17,14 @@ ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
+ms.author: rschloma
 ms.reviewer: rschloma
-
 ms.search.scope: Core, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shielas
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

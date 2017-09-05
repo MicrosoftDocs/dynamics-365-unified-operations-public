@@ -3,9 +3,9 @@
 
 title: Three-way matching policies
 description: This article provides examples of three-way matching.
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: abruer
+ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

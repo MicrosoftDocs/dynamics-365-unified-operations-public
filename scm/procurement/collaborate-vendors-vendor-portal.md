@@ -3,7 +3,7 @@
 
 title: Collaborate with vendors by using the Vendor portal
 description: This topic describes how purchasing agents can use the Vendor portal to collaborate with external vendors during the purchase order confirmation process. This information applies only to the February 2016 &amp; May 2016 versions of Dynamics AX.
-author: YuyuScheller
+author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

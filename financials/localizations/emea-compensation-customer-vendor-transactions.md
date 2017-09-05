@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
+ms.search.form: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -22,7 +22,7 @@ ms.reviewer: shylaw
 # ms.tgt_pltfrm: 
 ms.custom: 1691503
 ms.search.region: Hungary, Poland
-# ms.industry: 
+# ms.search.industry: 
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0

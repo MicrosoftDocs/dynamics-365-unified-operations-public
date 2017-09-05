@@ -3,7 +3,7 @@
 
 title: Convert accounting or reporting currencies
 description: 
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

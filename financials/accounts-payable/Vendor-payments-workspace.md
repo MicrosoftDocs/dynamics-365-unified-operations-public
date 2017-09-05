@@ -3,7 +3,7 @@
 
 title: Vendor payments workspace
 description: This topic provides information about the Vendor payments workspace. The Vendor payments workspace shows information that is related to the processing of vendor payments.
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
@@ -23,7 +23,7 @@ ms.search.scope:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 

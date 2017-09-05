@@ -3,7 +3,7 @@
 
 title: Settle a partial vendor payment before the discount date with a final payment after the discount date
 description: This article walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 14411
 ms.assetid: 302ad6ae-28ee-4899-9f6b-f74424a5f50c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

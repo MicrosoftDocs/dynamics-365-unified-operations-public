@@ -3,7 +3,7 @@
 
 title: Behavioral properties on data entities
 description: 
-author: RobinARH
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: margoc
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 25341
 ms.assetid: 8e214c95-616b-4ee1-b5a4-fa5ce5147f2c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kuntalme
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

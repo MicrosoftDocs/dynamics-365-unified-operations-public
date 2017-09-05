@@ -3,7 +3,7 @@
 
 title: Expense management parameters
 description: The following parameters control the behavior in Expense management.
-author: knelson
+author: KimANelson
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
@@ -67,7 +67,7 @@ The parameters control the general behavior in Expense management.
 
 | **Field**                             | **Description**             |
 |---------------------------------------|--------------------------------------------------------------------------------------|
-|**Minimum hours for per diem**           | Enter the minimum number of hours that an employee must work in a day to be eligible to receive a per diem for travel-related expenses.                                                                                      |
+|**Minimum hours for per diem**           | Enter the default minimum number of hours that an employee must work in a day to be eligible to receive a per diem for travel-related expenses.  This value is only used as a default value for the Minimum hours field on per diem rate tiers.                                                                                      |
 |**Meal percent**                          | Enter the default percentage of the per diem for meals that is used on the first and last days of the travel-related expense when the **Calculate meal reduction by** field is set to either **Meal type per day** or **Number of meals per day**. The work day on the first and last days may be shorter than a standard work day. Therefore, the amount of the per diem on these days may differ from the standard amount. If the percent is set to 0, then the first and last day deductions will be 0.00. |
 |**Hotel percent**                        | Enter the default percentage of the per diem for hotels that is used on the first and last days of the travel-related expense. The work day on the first and last days may be shorter than a standard work day. Therefore, the amount of the per diem on these days may differ from the standard amount. If the percent is set to 0, then the first and last day deductions will be 0.00.                                              |
 |**Other percent**                        | Enter the default percentage of the per diem for miscellaneous expenses that is used on the first and last days of the travel-related expense. The work day on the first and last days may be shorter than a standard work day. Therefore, the amount of the per diem on these days may differ from the standard amount. If the percent is set to 0, then the first and last day deductions will be 0.00.                                                                                                     |

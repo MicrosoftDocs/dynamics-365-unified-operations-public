@@ -3,9 +3,9 @@
 
 title: Automatic settlement and prioritization
 description: This article describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 14531
 ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

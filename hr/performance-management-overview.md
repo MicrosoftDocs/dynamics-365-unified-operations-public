@@ -3,7 +3,7 @@
 
 title: Performance management overview
 description: The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
-author: twheeloc
+author: mikefalkner
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

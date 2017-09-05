@@ -3,7 +3,7 @@
 
 title: Split payment for invoices issued to the Public Administration
 description: This topic provides information about the split payment accounting schema.
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

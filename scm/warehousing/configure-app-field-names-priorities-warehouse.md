@@ -3,7 +3,7 @@
 
 title: Configure app field names in Warehousing app
 description: This topic describes how to define and configure warehouse app field names and priorities in Finance and Operations. 
-author: YuyuScheller
+author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

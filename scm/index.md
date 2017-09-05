@@ -64,6 +64,7 @@ These short videos help you get started with the new features that are in Micros
 -  [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
 -  [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
 -  [Approve purchase orders on a mobile device](https://youtu.be/gZ-gOlJe7H8)
+-  [Visual scheduling with Gantt chart for production and batch orders](https://youtu.be/BtbuShkGj4I)
 
 ### Tech talks
 Most of these discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
@@ -87,6 +88,7 @@ There are many topics about manufacturing and supply chain management on the <a 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Cost accounting hands-on labs</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean manufacturing: Capable to promise and kanban job scheduling</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">BOM calculation by using a costing sheet</a>
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobility in the Warehouse facilitated by Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</a>
 
 ## eLearning courses
 For information about Microsoft Dynamics 365 for Finance and Operations training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal</a>. (requires CustomerSource account) 

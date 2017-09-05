@@ -3,7 +3,7 @@
 
 title: Deploy a Retail essentials demo environment on Azure (AX 2012)
 description: 
-author: MargoC
+author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology: ax-2012
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: sericks
 ms.search.scope: AX 2012, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 13352

@@ -3,9 +3,9 @@
 
 title: Close Accounts receivable
 description: 
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 59372
 ms.assetid: c18d83e5-4adb-422a-91be-82a665d8288b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -5,7 +5,7 @@ title: Tools add-ins for Visual Studio
 description: This topic reviews the Add-ins infrastructure that has been added to Microsoft Visual Studio, so that developers can more easily add tools for development.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,21 +39,11 @@ This topic reviews the Add-ins infrastructure that has been added to Microsoft V
 
 A lot of great tools have been added to Microsoft Visual Studio to support development. However, there will always be additional tools to meet specific requirements. To make it easier to add these additional tools, an **Add-ins** infrastructure has been provided for developers. The additional tools are available in two places:
 
--   The **Add-ins** submenu on the **Dynamics 365 **menu
+-   The **Add-ins** submenu on the **Dynamics 365** menu
 -   The **Add-ins** submenu on the shortcut menu in the element designer
-
-The **Form statistics** add-in is included. It provides a summary of the pattern usage for forms. When you access the **Form statistics** add-in from the **Dynamics 365 **menu, it displays statistics for all forms. When you access the add-in from the shortcut menu for a form that is open in the form designer, it displays statistics for that form only. 
-
-[![37\_DevoToolsConcept](./media/37_devotoolsconcept.png)](./media/37_devotoolsconcept.png) 
 
 To make it easier to create your own add-ins, you can select the **Dynamics Developer Tools Add-in** project type when you create a new project in Visual Studio. This project type has the infrastructure that is required to implement an add-in.
 
-See also
---------
-
-[Developer home page](developer-home-page.md)
-
-[Development tools overview](development-tools-overview.md)
-
-
+For more information on add-ins, see:
+- [Form pattern add-ins](../user-interface/form-pattern-add-ins.md)
 

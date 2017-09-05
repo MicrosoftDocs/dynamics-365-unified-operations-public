@@ -3,7 +3,7 @@
 
 title: Production process overview
 description: This article gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period. 
-author: YuyuScheller
+author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdT
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 19832

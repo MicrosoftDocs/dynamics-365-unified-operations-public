@@ -3,7 +3,7 @@
 
 title: Deploy a Retail mobility dev/test environment on Azure (AX 2012)
 description: This article explains how to deploy a Retail mobility dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
-author: MargoC
+author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology: ax-2012
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: sericks
 ms.search.scope: AX 2012, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 13332

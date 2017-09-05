@@ -24,13 +24,14 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Establish customer payment fees
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Create payment fees for customer payments.
+Create payment fees for customer payments.
+
 This task uses the USMF demo company.
 
 1. Go to Accounts receivable > Payments setup > Payment fee.

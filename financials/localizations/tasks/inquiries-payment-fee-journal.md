@@ -24,16 +24,20 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Inquire on payment fees in a journal (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This task walks you through viewing a payment fee summary for a journal. 
-
-This task was created using the demo data company JPMF.
-
+This task walks you through viewing a payment fee summary for a journal. 
+
+
+
+This task was created using the demo data company JPMF.
+
+
+
 Role 'AP coordinator' is required for this procedure.
 
 1. Go to Accounts payable > Payments > Payment journal.

@@ -3,7 +3,7 @@
 
 title: Recurring integrations
 description: This article provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, is a critical piece that any platform must support. 
-author: RobinARH
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 24821
 ms.assetid: 70a4f748-b0bd-44b1-a118-56aacb91481c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kuntalme
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -33,9 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Recurring integrations
 
 [!include[banner](../includes/banner.md)]
-
-
-This article provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, is a critical piece that any platform must support. 
 
 The process of data migration, and movement into and out of any enterprise system, is a critical piece that any platform must support. Considerable effort and planning go into building third-party integrations between an enterprise line of business (LOB) system such as Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and various source systems. Microsoft Dynamics AX 2012 enables these scenarios through Application Integration Framework (AIF). For Finance and Operations, we have tried to simplify this process for all parties who are involved, from integration solution builders to customer end users.
 
