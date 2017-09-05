@@ -133,13 +133,13 @@ The following table lists the product areas. Cloud and on-premises support is li
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
-| Visual Studio development | All development features are supported in Cloud and on-premises | Yes | Yes |
-| Extensibility| All extensibility features are supported in Cloud and on-premises | Yes | Yes |
+| Visual Studio development |  | Yes | Yes |
+| Extensibility|  | Yes | Yes |
 | Monitoring and telemetry  || Yes | Yes |
 | Platform compatibility  || Yes |  |
 | Upgrade | | | |
-| | Upgrade - margo is checking | Yes | No |
-| | Upgrade and Support for Previous Versions - margo is checking | Yes | No |
+| | Upgrade | Yes | No |
+| | Upgrade and support for previous versions | Yes | No |
 | Servicing | | | |
 | | Servicing environments - look on roadmap, yes/no does not make sense | Yes | No |
 | Build and test | | | |
