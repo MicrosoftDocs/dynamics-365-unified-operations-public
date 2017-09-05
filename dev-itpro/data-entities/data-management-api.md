@@ -108,6 +108,7 @@ Output parameters:
 ### Export to package methods
 This method is used to initiate an export of a data package.
 
+
 ```
 DataManagementDefinitionGroups.ExportToPackage(string definitionGroupId, 
       string packageName,
@@ -120,6 +121,7 @@ Return object:
 **string executionId**
 
 Input parameters: 
+
 | Parameter                | Description                                                                                |
 |--------------------------|--------------------------------------------------------------------------------------------|
 | **string definitionGroupId** | The name of the data project for export                                                    |
