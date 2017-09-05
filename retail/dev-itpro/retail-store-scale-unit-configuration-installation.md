@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Configure and install Retail Store Scale Unit
+# Retail Store Scale Unit configuration and installation
 
 [!include[banner](../includes/banner.md)]
 
