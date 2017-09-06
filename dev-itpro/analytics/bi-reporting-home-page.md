@@ -107,7 +107,6 @@ The following reports provide reference information about the objects in Finance
 - [Key performance indicators (KPIs) report](key-performance-indicators-report.md)
 - [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md)
 - [SQL Server Reporting Services reports report](SSRS-report.md)
-- [Tables report]
 - [Workflow types report](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-types-report)
 
 
