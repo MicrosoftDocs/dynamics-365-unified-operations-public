@@ -2613,8 +2613,7 @@
 ### [License codes and configuration keys report](/dynamics365/unified-operations/dev-itpro/sysadmin/license-codes-configuration-keys-report?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Cross-company data sharing](/dynamics365/unified-operations/dev-itpro/sysadmin/cross-company-data-sharing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Maintenance mode](/dynamics365/unified-operations/dev-itpro/sysadmin/maintenance-mode?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### Security
-#### [Role-based security](/dynamics365/unified-operations/dev-itpro/sysadmin/role-based-security?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Role-based security](/dynamics365/unified-operations/dev-itpro/sysadmin/role-based-security?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Security architecture](/dynamics365/unified-operations/dev-itpro/sysadmin/security-architecture?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Security reports](/dynamics365/unified-operations/dev-itpro/sysadmin/security-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
