@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data management package integration API
-description: This topic describes the data management package API for working with files in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic describes the data management package REST API for working with files in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: Sunil-Garg
 manager: 09/11/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the data management package API in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and when to use it.
+This topic describes the data management package REST API in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and when to use it.
 
 ## Choosing an integration API
 There are two APIs in Finance and Operations that support file-based integration scenarios: the data management package API and the recurring integrations API. Both APIs support both data import and data export. The following table describes key decision points to use when deciding which API to use. 
@@ -51,11 +51,12 @@ When authenticating from the web client, a client ID is assigned to a specific u
 
 When authenticating from native clients, the user context is embedded in the authentication flow. 
 
-## Import methods
+## Import APIs
+The following APIs are used for imports.
 
-### Get Azure Writable Url
+### GetAzureWritableUrl
 
-This method is used to get a writable blob URL. Using this method, which has shared access token embedded in the URL, a data package can be uploaded to the Finance and Operations Azure Blob Storage container.
+This API is used to get a writable blob URL. Using this method, which has shared access token embedded in the URL, a data package can be uploaded to the Finance and Operations Azure Blob Storage container.
 
 ```
        DataManagementDefinitionGroups.GetAzureWriteUrl(string uniqueFileName)
@@ -74,9 +75,9 @@ Output parameters:
 **string BlobId**  The blob ID of the allocated blob conainer.
 **string BlobUrl** A writable blob URL with an embedded shared access token to write to blob storage.		
      	
-### Import from package method
+### ImportFromPackage
 
-This method is used to initiate an import from the data package that is uploaded to the Finance and Operations blob storage.
+This API is used to initiate an import from the data package that is uploaded to the Finance and Operations blob storage.
 
 ```
 DataManagementDefinitionGroups.ImportFromPackage(string packageUrl, 
@@ -103,11 +104,11 @@ Input parameters:
 Output parameters:
 **string executionId**	The execution ID of the data import.
 
-## Export methods
+## Export APIs
+The following APIs are used for exports.
 
-### Export to package methods
-This method is used to initiate an export of a data package.
-
+### ExportToPackage
+This API is used to initiate an export of a data package.
 
 ```
 DataManagementDefinitionGroups.ExportToPackage(string definitionGroupId, 
@@ -122,9 +123,9 @@ Return object:
 
 Input parameters: 
 
-| Parameter                | Description                                                                                |
+| **Parameter**                | **Description**                                                                                |
 |--------------------------|--------------------------------------------------------------------------------------------|
-| **string definitionGroupId** | The name of the data project for export                                                    |
+| **string definitionGroupId** | The name of the data project for export.                                                    |
 | **string packageName**       | The name of the exported data package.                                                     |
 | **string executionId**       | The ID to use for the job. If an empty ID is assigned, a new execution ID will be created. |
 | **bool reExecute**           | Set to True to run the target step, otherwise False.                                       |
@@ -134,9 +135,9 @@ Output parameters:
 **string executionId**	The execution ID of the data export.
 
 
-### Get exported package Url method
+### GetExportedPackageUrl
 
-This method is used to get the URL of the exported data package that was exported by called ExportToPackage.
+This API is used to get the URL of the exported data package that was exported by called ExportToPackage.
 
 ```
 DataManagementDefinitionGroups.GetExportedPackageUrl(string executionId)
@@ -151,9 +152,10 @@ Input parameters:
 Output parameters:
 **string BlobUrl**	A blob URL with an embedded shared access token to download the exported data package.
 
-## Status check methods	
+## Status check APIs	
+The following APIs are used to check status.
 
-### Get execution summary status URL method
+### GetExecutionSummaryStatus
 
 ```
 DataManagementDefinitionGroups.GetExecutionSummaryStatus(string executionId)
@@ -177,13 +179,14 @@ Possible values for execution status:
 - Failed
 - Canceled
 
+## Import and export processes 
 The following diagram shows how the data management package methods can be used to import data packages.
 
-[!Data package file import using the data management package methods](./media/data-package-import.png)
+![Data package file import using the data management package methods](./media/data-package-import.png)
  
 The following diagram shows how the data management package methods can be used to export data packages.
 
-[!Data package file export using the management package methods](./media/data-package-export.png)
+![Data package file export using the management package methods](./media/data-package-export.png)
  
 A sample console application is available on GitHub to showcase the data import and data export methods.
 
