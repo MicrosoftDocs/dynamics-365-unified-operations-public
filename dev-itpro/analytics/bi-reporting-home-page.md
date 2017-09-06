@@ -5,7 +5,7 @@ title: Intelligence
 description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: sericks007
 manager: AnnBe
-ms.date: 08/24/2017
+ms.date: 09/06/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -60,6 +60,8 @@ Working with aggregate data
 -   [Use an Electronic reporting configuration to provide Power BI with data from Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
 ## Analytical workspaces
+
+
 -   [Embedded business intelligence](analytics.md#embedded-business-intelligence)
 -   [KPI modeling and customization](analytics.md#kpi-modeling-and-customization)
 -   [Adding BI to workspaces](add-bi-workspaces.md)
