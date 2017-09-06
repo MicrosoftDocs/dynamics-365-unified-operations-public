@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mass deployment of Retail self-service components
-description: This topic explains how you can use self-service silently to perform servicing updates, initial deployments, and some concepts of special deployment.  This topic will be updated repeatedly as the feature is developed further and more functionality is available.  At this time, only the ability to silenty update is available for use.
+description: This topic explains how you can use the self-service installer to silently deploy environments, service environments, and complete special deployments.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2017
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Application update 3
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how you can use self-service silently to perform servicing updates, initial deployments, and some concepts of special deployment.  This topic will be updated repeatedly as the feature is developed further and more functionality is available.  At this time, only the ability to silently update is available for use.
+This topic explains how you can use the self-service installer to silently deploy environments, service environments, and complete special deployments. This topic will be updated repeatedly as the feature is developed further and more functionality is available.  At this time, only the ability to silently update is available for use.
 
 ## Silent servicing
 ### Before you begin
