@@ -49,7 +49,7 @@ Users can interact with data by simply clicking or touching visuals on the page.
 
  ![Power BI in a workspace](./media/Power-BI-in-D365-Workspace.png)
  
- To learn more, see:
+ To learn more:
  - [Embedded Power BI in workspaces](embed-power-bi-workspaces.md)
  - [Power BI Embedded integration](power-bi-embedded-integration.md)
  - [Add analytics to workspaces by using Power BI Embedded](add-analytics-tab-workspaces.md)
@@ -63,7 +63,10 @@ Reporting solutions are often used to capture and communicate the details of bus
 
 [![image-of-business-documents](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
 
-To learn more, see [Document Reporting Services overview](document-reporting-services.md).
+To learn more: 
+- [Document Reporting Services overview](document-reporting-services.md)
+- [Printing in Finance and Operations applications](print-document.md)
+- [Install the Document Routing Agent to enable network printer devices](install-document-routing-agent.md)
 
 
 ## Electronic reporting
