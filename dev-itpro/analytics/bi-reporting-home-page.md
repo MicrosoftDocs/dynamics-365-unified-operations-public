@@ -47,9 +47,7 @@ Finance and Operations delivers interactive reports that seamlessly integrate in
 
 Users can interact with data by simply clicking or touching visuals on the page. They can see the cause and effect, perform simple what-if operations without leaving the workspace. Thanks to stunning yet interactive visuals, your users will have fun exploring data and discovering hidden trends. 
 
- ![Power BI in a workspace](./media/Power-BI-in-D365-Workspace.png)
- 
- To learn more, see:
+To learn more, see:
  - [Embedded Power BI in workspaces](embed-power-bi-workspaces.md)
  - [Power BI Embedded integration](power-bi-embedded-integration.md)
  - [Add analytics to workspaces by using Power BI Embedded](add-analytics-tab-workspaces.md)
@@ -57,26 +55,32 @@ Users can interact with data by simply clicking or touching visuals on the page.
  - [Publish analytical applications on Power BI](publish-apps-powerbi.md)
  - [Help secure analytical workspaces and reports by using Power BI Embedded](secure-analytical-workspaces.md)
 
+ ![Power BI in a workspace](./media/Power-BI-in-D365-Workspace.png)
+ 
+
 ## Business documents and printing
-Reporting solutions are often used to capture and communicate the details of business transactions. As such, this requires a reporting solution capable of producing physical manifestations of business data using existing devices like network printers. Example applications of business documents include sales invoice, customer statements, and checks. Learn more about the enhancements to the document reporting service in Document Reporting Services overview. 
+Reporting solutions are often used to capture and communicate the details of business transactions. As such, this requires a reporting solution capable of producing physical manifestations of business data using existing devices like network printers. Example applications of business documents include sales invoice, customer statements, and checks. 
+
+To learn more, see [Document Reporting Services overview](document-reporting-services.md).
 
 [![image-of-business-documents](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png) 
 
-To learn more, see [Document Reporting Services overview](document-reporting-services.md).
 
 ## Electronic reporting
 Electronic reporting (ER) is the tool to use to configure electronic document formats in accordance with the legal requirements of various countries/regions. Example applications of electronic reporting include financial auditing, tax reporting, and electronic invoicing.
 
+To learn more, see [Electronic reporting overview](general-electronic-reporting.md). 
+
 [![electronic-reporting-example](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png) 
 
-To learn more, see [Electronic reporting overview](general-electronic-reporting.md). 
 
 ## Financial reporting
 Standard financial reports are provided using the default main account categories in Finance and Operations. Use the report designer to create or modify traditional financial statements, such as income statements and balance sheets and share the results with other members of your organization. Example applications of electronic reporting include balance sheets, cash flow, and summary trial balance year over year.
 
+To learn more, see [Financial reporting for Finance and Operations](financial-reporting-intro.md). 
+
 [![financial-reporting-example](./media/financial-reporting-example.png)](./media/financial-reporting-example.png) 
 
-To learn more, see [Financial reporting for Finance and Operations](financial-reporting-intro.md). 
 
 ## Technical reference reports
 The following reports provide reference information about the objects in Finance and Operations. 
