@@ -2613,8 +2613,7 @@
 ### [License codes and configuration keys report](/dynamics365/unified-operations/dev-itpro/sysadmin/license-codes-configuration-keys-report?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Cross-company data sharing](/dynamics365/unified-operations/dev-itpro/sysadmin/cross-company-data-sharing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Maintenance mode](/dynamics365/unified-operations/dev-itpro/sysadmin/maintenance-mode?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### Security
-#### [Role-based security](/dynamics365/unified-operations/dev-itpro/sysadmin/role-based-security?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Role-based security](/dynamics365/unified-operations/dev-itpro/sysadmin/role-based-security?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Security architecture](/dynamics365/unified-operations/dev-itpro/sysadmin/security-architecture?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Security reports](/dynamics365/unified-operations/dev-itpro/sysadmin/security-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -2623,8 +2622,7 @@
 #### [Identify and resolve conflicts in segregation of duties](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties?toc=/dynamics365/unified-operations/talent/toc.json)
 #### [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles?toc=/dynamics365/unified-operations/talent/toc.json)
 
-### Batch processing
-#### [Batch processing overview](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-processing-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Batch processing](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-processing-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Batch server overview](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-server-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create a batch job](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-batch-job?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 

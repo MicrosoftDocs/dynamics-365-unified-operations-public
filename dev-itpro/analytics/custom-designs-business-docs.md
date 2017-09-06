@@ -3,7 +3,7 @@
 
 title: Custom designs for business documents
 description: This topic shows how to create a custom report design for an existing application business document by using a pure extension model. 
-author: sericks007
+author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
