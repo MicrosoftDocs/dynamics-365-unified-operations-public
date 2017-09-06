@@ -90,6 +90,8 @@ For more information about Electronic reporting, see [Electronic reporting overv
 ## Financial reporting
 Standard financial reports are provided using the default main account categories in Finance and Operations. Use the report designer to create or modify traditional financial statements, such as income statements and balance sheets and share the results with other members of your organization. Example applications of electronic reporting include balance sheets, cash flow, and summary trial balance year over year.
 
+[![financial-reporting-example](./media/financial-reporting-example.png)](./media/financial-reporting-example.png) 
+
 Financial reporting has the folloiwng characteristics and capabilities:
 - It's a built-in, flexible financial reporting solution designed to handle complex organizational structures.
 - It's fully-integrated with General ledger.
