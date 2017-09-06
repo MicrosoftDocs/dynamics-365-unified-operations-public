@@ -41,23 +41,6 @@ This topic points you to resources that you can use to learn more about the busi
 - [Information access and reporting](information-access-reporting.md)
 - [Tech Talk: Reporting options](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
 
-Working with aggregate data
----------------------------
-
--   [Analytics](analytics.md)
--   [In-memory, real-time aggregate models replace SSAS cubes](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [Modeling and using aggregate data](model-aggregate-data.md)
--   [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
-
-## Self-service reporting
--   [Power BI integration](power-bi-integration.md)
--   [Configuring Power BI integration for workspaces](configure-power-bi-integration.md)
--   [Create a Power BI report by using Microsoft Dynamics 365 for Finance and Operations data](create-powerbi-report-data.md)
--   [Create a Power BI report and dashboard](create-powerbi-report-dashboard.md)
--   [Retail Channel Performance Power BI content](retail-channel-performance-dashboard-power-bi-data.md)
--   [Financial Performance Power BI content](financial-performance-power-bi-content-pack.md)
--   [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)
--   [Use an Electronic reporting configuration to provide Power BI with data from Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
 ## Analytical workspaces
 Finance and Operations delivers interactive reports that seamlessly integrate into application workspaces. By using rich infographics and visuals supported by Power BI (including the large number of controls provided by third parties), workspaces can provide a highly-visual, yet interactive experience for users. 
