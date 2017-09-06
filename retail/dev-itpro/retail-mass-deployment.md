@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mass deployment of Retail self-service components
-description: This topic explains how you can use the self-service installer to silently deploy environments, service environments, and complete special deployments.
+description: This topic explains how you can use self-service to do silent servicing updates, initial deployments, and some concepts of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2017
@@ -31,40 +31,40 @@ ms.dyn365.ops.version: Application update 3
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how you can use the self-service installer to silently deploy environments, service environments, and complete special deployments. This topic will be updated repeatedly as the feature is developed further and more functionality is available.  At this time, only the ability to silently update is available for use.
+This topic explains how you can use self-service to do silent servicing updates, initial deployments, and some concepts of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available.
 
 ## Silent servicing
 ### Before you begin
 > [!IMPORTANT]
-> This functionality only works in Microsoft Dynamics 365 for Retail, version 7.2, App Update 3 and beyond.  Note that silent servicing maintains all currently installed 
+> This functionality works only in Microsoft Dynamics 365 for Retail, version 7.2, App update 3 and later. Note that silent servicing maintains all components that are currently installed.
 
 ### Delimiters for mass deployment
-This is the list of delimiters that can currently be used in mass deployment execution commands. These delimiters apply to App Update 3 and later.
+The following table shows the delimiters that can currently be used in execution commands for mass deployment. These delimiters apply to App update 3 and later.
 
-|Delimiter | Description|
-|----------|------------|
-|-S or -Silent| Silently run the installer. (No graphical user interface) |
-|-C or -Config| Specify the location and file name of the configuration file to use as part of this installation. |
-|-FilePath| Specify a custom installation location. (Not recommended for standard installation)
-|-LogFile| Specify a custom log file location for installation logs. (Not recommended for standard installation) |
-|-SkipPrerequisiteCheck| Skips the check for prerequisites and prerequisite installation.  Should only be used for development and testing. (Not recommended for standard installation)
-|-SkipSystemInfoCollection| Skips the System Information collection process at the beginning of the installation.  Should only be used for development and testing. (Not recommended for standard installation) |
-|-SkipMerchantInfo| Skips the Merchant Account Information installation at the end of the hardware station self-service installer.  Should only be used for development and testing. (Not recommended for standard installation) |
+| Delimiter                 | Description |
+|---------------------------|-------------|
+| -S or -Silent             | Silently run the installer. (No graphical user interface is used.) |
+| -C or -Config             | Specify the location and file name of the configuration file to use as part of this installation. |
+| -FilePath                 | Specify a custom installation location. (We don't recommend that you use this delimiter for a standard installation.) |
+| -LogFile                  | Specify a custom log file location for the installation logs. (We don't recommend that you use this delimiter for a standard installation.) |
+| -SkipPrerequisiteCheck    | Skip the check for prerequisites and prerequisite installation.  You should use this delimiter only for development and testing. (We don't recommend that you use this delimiter for a standard installation.) |
+| -SkipSystemInfoCollection | Skip the process of collecting system information at the beginning of the installation. You should use this delimiter only for development and testing. (We don't recommend that you use this delimiter for a standard installation.) |
+| -SkipMerchantInfo         | Skip the installation of merchant account information at the end of the self-service installer for Hardware station. You should use this delimiter only for development and testing. (We don't recommend that you use this delimiter for a standard installation.) |
 
-### Example commands for silent servicing
-This section will showcase examples of self-service mass deployment commands.  The commands listed function for all the standard self-service installers, which include Modern POS (with and without offline), hardware station, and Retail Store Scale Unit.
+### Examples of commands for silent servicing
+This section shows examples of commands for self-service mass deployment. The commands that are shown work for all the standard self-service installers. These installers include the installers for Retail Modern POS (both with and without offline), Hardware station, and Retail Store Scale Unit.
+
+The following command silently updates the current installation of Modern POS. It has the standard command structure that is used for silent servicing of currently installed components. The structure uses the basic values of **InstallerName.exe** and the command for silent installation, **/S**. This command uses the configuration file that is located in the same file location as the installer, if a configuration file exists there.
 
 ```
 ModernPOSSetup_V72.exe -S
 ```
 
-This command will silently update the current installation of Retail Modern POS.  This is the standard command structure used for silent servicing of currently installed components.  The structure will follow the basic values of "InstallerName.exe" and the command for silent installation "/S".  This command will utilize the configuration file that is located in the same file location as the installer, if it exists.
-
 > [!NOTE]
-> A configuration file is still required for Retail Store Scale Unit.  However, the installer will still keep all possible currently installed values.
+> A configuration file is still required for Retail Store Scale Unit. However, the installer still keeps all possible values that are currently installed.
+
+The following command silently updates the current installation of Retail Store Scale Unit by using a specific configuration file. (This configuration file might not be in the same location as the executable file for the installer.) This command skips the prerequisite check and installation steps. We recommend that you use this command only for testing and development purposes.
 
 ```
 StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipPrerequisiteCheck
 ```
-
-This command will silently update the current installation of Retail Store Scale Unit using a specific configuration file (which may or may not be in the same location as the installer executable file) and will skip the prerequisite check and installation steps. It is only recommended for testing and development purposes.
