@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Warehouse setup
 The warehouse processes that are applied in your company, determine the setup requirements of Warehouse management. This article provides guidelines on warehouse setup to get you started using Warehouse management. 
-Setup >> Set up layout: (flyt topic op til Setup placeholder)
+Setup >> Set up layout: (flyt topic op til Setup placeholder + find det sted, hvor der står noget om inbound/outbound)
 https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json
 
 ### General warehouse parameters
