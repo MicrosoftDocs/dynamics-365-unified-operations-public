@@ -71,7 +71,10 @@ Electronic reporting (ER) is the tool to use to configure electronic document fo
 
 [![electronic-reporting-example](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png) 
 
-To learn more, see [Electronic reporting overview](general-electronic-reporting.md). 
+To learn more: 
+- [Electronic reporting overview](general-electronic-reporting.md)
+- [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Create an Electronic reporting configuration](electronic-reporting-configuration.md)
 
 
 ## Financial reporting
@@ -79,7 +82,10 @@ Standard financial reports are provided using the default main account categorie
 
 [![financial-reporting-example](./media/financial-reporting-example.png)](./media/financial-reporting-example.png) 
 
-To learn more, see [Financial reporting for Finance and Operations](financial-reporting-intro.md). 
+To learn more: 
+- [Financial reporting for Finance and Operations](financial-reporting-intro.md)
+- [Generate a financial report](generate-financial-report.md)
+- [Financial report components](financial-report-components.md)
 
 ## Technical reference reports
 The following reports provide reference information about the objects in Finance and Operations. 
