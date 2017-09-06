@@ -43,7 +43,7 @@ This topic points you to resources that you can use to learn more about the busi
 
 
 ## Analytical workspaces
-Finance and Operations delivers interactive reports that seamlessly integrate into application workspaces. By using rich infographics and visuals supported by Power BI (including the large number of controls provided by third parties), workspaces can provide a highly-visual, yet interactive experience for users. 
+Finance and Operations delivers interactive reports that seamlessly integrate into application workspaces. By using rich infographics and visuals supported by Power BI (including a large number of controls provided by third parties), workspaces can provide a highly-visual, interactive experience for users. 
 
 Users can interact with data by simply clicking or touching visuals on the page. They can see the cause and effect, perform simple what-if operations without leaving the workspace. Thanks to stunning yet interactive visuals, your users will have fun exploring data and discovering hidden trends. 
 
@@ -55,11 +55,11 @@ Users can interact with data by simply clicking or touching visuals on the page.
  - [Add analytics to workspaces by using Power BI Embedded](add-analytics-tab-workspaces.md)
  - [Publish analytical applications on Power BI](publish-apps-powerbi.md)
  - [Help secure analytical workspaces and reports by using Power BI Embedded](secure-analytical-workspaces.md)
- - [Power BI content](power-bi-home-page.md)
+ - [Power BI content for Finance and Operations](power-bi-home-page.md)
  
 
 ## Business documents and printing
-Reporting solutions are often used to capture and communicate the details of business transactions. As such, this requires a reporting solution capable of producing physical manifestations of business data using existing devices like network printers. Example applications of business documents include sales invoice, customer statements, and checks. 
+Reporting solutions are often used to capture and communicate the details of business transactions. As such, this requires a reporting solution capable of producing physical manifestations of business data using existing devices like network printers. Examples of business documents include sales invoice, customer statements, and checks. 
 
 [![image-of-business-documents](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
 
@@ -81,7 +81,7 @@ To learn more:
 
 
 ## Financial reporting
-Standard financial reports are provided using the default main account categories in Finance and Operations. Use the report designer to create or modify traditional financial statements, such as income statements and balance sheets and share the results with other members of your organization. Example applications of electronic reporting include balance sheets, cash flow, and summary trial balance year over year.
+Standard financial reports are provided using the default main account categories in Finance and Operations. Use the report designer to create or modify traditional financial statements, such as income statements and balance sheets and share the results with other members of your organization. Examples of financial reporting include balance sheets, cash flow, and summary trial balance year over year.
 
 [![financial-reporting-example](./media/financial-reporting-example.png)](./media/financial-reporting-example.png) 
 
