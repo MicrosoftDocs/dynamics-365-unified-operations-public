@@ -2623,8 +2623,7 @@
 #### [Identify and resolve conflicts in segregation of duties](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### Batch processing
-#### [Batch processing overview](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-processing-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Batch processing](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-processing-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Batch server overview](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-server-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create a batch job](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-batch-job?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
