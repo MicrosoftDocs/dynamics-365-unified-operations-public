@@ -39,7 +39,7 @@ This topic points you to resources that you can use to learn more about the busi
 
 ## Get started
 - [Information access and reporting](information-access-reporting.md)
-- [Reporting options](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
+- [Tech Talk: Reporting options](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
 
 Working with aggregate data
 ---------------------------
