@@ -55,7 +55,7 @@ Users can interact with data by simply clicking or touching visuals on the page.
  - [Add analytics to workspaces by using Power BI Embedded](add-analytics-tab-workspaces.md)
  - [Publish analytical applications on Power BI](publish-apps-powerbi.md)
  - [Help secure analytical workspaces and reports by using Power BI Embedded](secure-analytical-workspaces.md)
- - [Power BI content available for Finance and Operations](power-bi-home-page.md)
+ - [Power BI content](power-bi-home-page.md)
  
 
 ## Business documents and printing
