@@ -59,7 +59,7 @@ Working with aggregate data
 -   [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)
 -   [Use an Electronic reporting configuration to provide Power BI with data from Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
-## Building embedded analytical experiences in the Finance and Operations client
+## Analytical workspaces
 -   [Embedded business intelligence](analytics.md#embedded-business-intelligence)
 -   [KPI modeling and customization](analytics.md#kpi-modeling-and-customization)
 -   [Adding BI to workspaces](add-bi-workspaces.md)
@@ -70,7 +70,7 @@ Reporting solutions are often used to capture and communicate the details of bus
 
 [![image-of-business-documents](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png) 
 
-To learn more, see [Document Reporting Services overview](document-reporting-services.md)
+To learn more, see [Document Reporting Services overview](document-reporting-services.md).
 
 ## Electronic reporting
 Electronic reporting (ER) is the tool to use to configure electronic document formats in accordance with the legal requirements of various countries/regions. Example applications of electronic reporting include financial auditing, tax reporting, and electronic invoicing.
