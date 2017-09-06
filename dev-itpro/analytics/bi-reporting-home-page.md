@@ -70,7 +70,7 @@ Users can interact with data by simply clicking or touching visuals on the page.
  - [Embedded Power BI in workspaces](embed-power-bi-workspaces.md)
  - [Power BI Embedded integration](power-bi-embedded-integration.md)
  - [Add analytics to workspaces by using Power BI Embedded](add-analytics-tab-workspaces.md)
- - [Power BI content])(power-bi-home-page.md)
+ - [Power BI content](power-bi-home-page.md)
  - [Publish analytical applications on Power BI](publish-apps-powerbi.md)
  - [Help secure analytical workspaces and reports by using Power BI Embedded](secure-analytical-workspaces.md)
 
