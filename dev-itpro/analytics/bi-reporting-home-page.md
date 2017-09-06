@@ -65,40 +65,26 @@ Working with aggregate data
 -   [Adding BI to workspaces](add-bi-workspaces.md)
 -   [Adding contextual BI to forms](add-contextual-bi-forms.md)
 
-## Document reporting and printing
--   [Document Reporting Services Overview](document-reporting-services.md)
--   [Printing in Finance and Operations applications](print-documents.md)
--   [Install the Document Routing Agent to enable network printer devices](install-document-routing-agent.md)
--   [Run the Document Routing agent as a Windows service](run-document-routing-agent-as-windows-service.md)
--   [Creating next-generation reporting solutions](create-nextgen-reporting-solutions.md)
--   [Install the modern report design templates](install-modern-report-design-templates.md)
--   [Tips to help prevent long-running reports from timing out](prevent-long-running-reports-timing-out.md)
+## Business documents and printing
+Reporting solutions are often used to capture and communicate the details of business transactions. As such, this requires a reporting solution capable of producing physical manifestations of business data using existing devices like network printers. Example applications of business documents include sales invoice, customer statements, and checks. Learn more about the enhancements to the document reporting service in Document Reporting Services overview. 
+
+[![image-of-business-documents](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png) 
+
+To learn more, see [Document Reporting Services overview](document-reporting-services.md)
 
 ## Electronic reporting
 Electronic reporting (ER) is the tool to use to configure electronic document formats in accordance with the legal requirements of various countries/regions. Example applications of electronic reporting include financial auditing, tax reporting, and electronic invoicing.
 
 [![electronic-reporting-example](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png) 
 
-ER has the following characteristics and capabilities:
-- It's a perfect tool for producing TEXT, XML, and OPENXML worksheet formats.
-- The tooling is designed for business users familiar with Excel-based formulas.
-- It's highly-adaptable to adhere to changes in regulatory requirements.
-- Component versioning is available to manage draft definitions.
-
-For more information about Electronic reporting, see [Electronic reporting overview](general-electronic-reporting.md). 
+To learn more, see [Electronic reporting overview](general-electronic-reporting.md). 
 
 ## Financial reporting
 Standard financial reports are provided using the default main account categories in Finance and Operations. Use the report designer to create or modify traditional financial statements, such as income statements and balance sheets and share the results with other members of your organization. Example applications of electronic reporting include balance sheets, cash flow, and summary trial balance year over year.
 
 [![financial-reporting-example](./media/financial-reporting-example.png)](./media/financial-reporting-example.png) 
 
-Financial reporting has the folloiwng characteristics and capabilities:
-- It's a built-in, flexible financial reporting solution designed to handle complex organizational structures.
-- It's fully-integrated with General ledger.
-- You can create custom financial reports using the default solutions as a starting point.
-- It provides interactive reports with drill-down capabilities that allow you to navigate to transaction details.
-
-For more information about Financial reporting, see [Financial reporting](financial-reporting-intro.md). 
+To learn more, see [Financial reporting for Finance and Operations](financial-reporting-intro.md). 
 
 ## Technical reference reports
 The following reports provide reference information about the objects in Finance and Operations. 
