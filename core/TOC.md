@@ -180,7 +180,7 @@
 ##### [Handling country/region codes](/dynamics365/unified-operations/dev-itpro/data-entities/countryregion-codes-configuration-keys?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Inheritance patterns](/dynamics365/unified-operations/dev-itpro/data-entities/support-super-type-sub-type?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Data entity wizard rules](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-wizard-rules?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Metadata properties](/dynamics365/unified-operations/dev-itpro/data-entities/metadata-properties?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Metadata properties](/dynamics365/unified-operations/dev-itpro/data-entities/behavioral-properties-data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Validations, defaults, and unmapped fields](/dynamics365/unified-operations/dev-itpro/data-entities/validations-defaults-unmapped-fields?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Security and data entities](/dynamics365/unified-operations/dev-itpro/data-entities/security-data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
@@ -1770,7 +1770,7 @@
 ##### [Create a formula by copying from an existing formula](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-formula-copying-existing-formula?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ##### [Batch order lifecycle from create to start](/dynamics365/unified-operations/supply-chain/production-control/tasks/batch-order-lifecycle-start?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Classify a product using category hierarchies](/dynamics365/unified-operations/supply-chain/production-control/tasks/classify-product-category-hierarchies?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Classify a product using category hierarchies](/dynamics365/unified-operations/supply-chain/pim/tasks/classify-product-category-hierarchies?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create activity relation: Successor](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-activity-relation-successor?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create a formula by copying from an existing formula](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-formula-copying-existing-formula?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create an operations resource](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-operations-resource?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
