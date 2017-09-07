@@ -5,7 +5,7 @@ title: Intelligence
 description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: sericks007
 manager: AnnBe
-ms.date: 09/06/2017
+ms.date: 09/07/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
