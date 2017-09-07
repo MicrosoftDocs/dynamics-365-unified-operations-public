@@ -48,7 +48,7 @@ You can deploy Finance and Operations in the cloud or on-premises. Cloud deploym
 - [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
 - [Dynamics 365 for Finance and Operations, Enterprise edition cloud deployment overview](../deployment/cloud-deployment-overview.md)
 - [System requirements for cloud deployments](../get-started/system-requirements.md)
-- [On-premises deployment landing page](/deployment/on-premises-deployment-landing-page.md)
+- [On-premises deployment landing page](../deployment/on-premises-deployment-landing-page.md)
 - [System requirements for on-premises deployments](../get-started/system-requirements-on-prem.md)
 
 ## Upgrade
