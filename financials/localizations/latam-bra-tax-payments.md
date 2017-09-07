@@ -164,9 +164,9 @@ You can delete tax payments if the voucher number wasn't blank when the payment 
 
 For more information, see the following topics:
 
- - [Set up interest and fines for vendor payments](/tasks/br-00065-1-set-up-interest-fines-vendor-payments.md)
- - [Calculate interest and fines on vendor payments](/tasks/br-00065-2-calculate-interest-fines-vendor-payments.md)
- - [Set up interest and fines on customer payments](/tasks/br-00066-1-set-up-interest-fines-customer-payments.md)
- - [Calculate interest and fines on customer payements](/tasks/br-00066-2-calculate-interest-fines-customer-payments.md)
+ - [Set up interest and fines for vendor payments](tasks/br-00065-1-set-up-interest-fines-vendor-payments.md)
+ - [Calculate interest and fines on vendor payments](tasks/br-00065-2-calculate-interest-fines-vendor-payments.md)
+ - [Set up interest and fines on customer payments](tasks/br-00066-1-set-up-interest-fines-customer-payments.md)
+ - [Calculate interest and fines on customer payements](tasks/br-00066-2-calculate-interest-fines-customer-payments.md)
 
 
