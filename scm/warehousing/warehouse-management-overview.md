@@ -31,9 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 ## Warehouse setup
-The warehouse processes that are applied in your company, determine the setup requirements of Warehouse management. This article provides guidelines on warehouse setup to get you started using Warehouse management. 
-Setup >> Set up layout: (flyt topic op til Setup placeholder + find det sted, hvor der står noget om inbound/outbound)
-https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json
+The warehouse processes that are applied in your company, determine the setup requirements of Warehouse management. This article provides guidelines on the basic setup to get you started with Warehouse management. You are also directed to information about the setup of, for exaample, wave templates, work templates, work pools, and location directives that are some of the most important components in the enablement of warehouse processes in Dynamics 365 for Finance and Operations. 
+[Configure warehouse management](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration)
 
 ### General warehouse parameters
 You must set up general warehouse parameters before you can perform inbound and outbound warehouse transactions. Use the **Warehouse management parameters** form to set up the following parameters:
