@@ -30,11 +30,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-## Warehouse setup
-The warehouse processes that are applied in your company, determine the setup requirements of Warehouse management. This article provides guidelines on the basic setup to get you started with Warehouse management. You are also directed to information about the setup of, for exaample, wave templates, work templates, work pools, and location directives that are some of the most important components in the enablement of warehouse processes in Dynamics 365 for Finance and Operations. 
-[Configure warehouse management](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration)
+Warehouse management in Dynamics 365 for Finance and operations enable you to xxxx.
 
-### General warehouse parameters
+
+The warehouse processes that are applied in your company, determine the setup requirements of Warehouse management. To get started working with warehouse management you need to complete the setup of the general warehouse parameters.
+
+You must also recognize how to configure components such as wave templates, work templates, work pools, and location directives to support the business processes of you company.  
+
+## Warehouse configuration
+Read more about how to define your warehouse layout and how to enable warehouse processes according to business requirements. The most important components that you must configure are wave templates, work templates, work pools, and location directives.
+
+- [Warehouse configuration](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration)
+
+## General warehouse parameters
 You must set up general warehouse parameters before you can perform inbound and outbound warehouse transactions. Use the **Warehouse management parameters** form to set up the following parameters:
 
 What should be mentioned here? The follwing list is based on technet (for AX2012):
@@ -48,17 +56,19 @@ What should be mentioned here? The follwing list is based on technet (for AX2012
 ### Next steps
 After you configure the general warehouse parameters, you can complete the setup for the following areas
 
-Set up number sequences for warehouse management: https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json
-Set up parameters to create a warehouse location 
-Set up mobile device menus to display work or activities: Set up mobile devices for warehouse work 
-Create a location directive and a work template:  Control warehouse work by using work templates and location directives, 
-Purchase order specific: Set up a location directive for purchase order put-away, Set up a work template for purchase orders
+- Set up number sequences for warehouse management: https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json
+- Set up parameters to create a warehouse location 
+- Set up mobile device menus to display work or activities: Set up mobile devices for warehouse work 
+- Create a location directive and a work template:  Control warehouse work by using work templates and location directives, 
+- Purchase order specific: Set up a location directive for purchase order put-away, Set up a work template for purchase orders
 
 
+## Other resorces
 Migrate from AX 2012 to Finance and Operations
 Warehouse work policies
 
-Other resorces
+
+
 
 Before you start using Warehouse management, you must configure the inbound and outbound processes for your needs.  
 ## Setup for inbound processes (headings picked from technet)
