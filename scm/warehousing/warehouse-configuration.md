@@ -66,7 +66,7 @@ The entities that you create to define your warehouse layout are used in the que
 
 You must consider the physical layout of the warehouse, both to determine storage capacities (location stocking limits and location profiles) and as part of your attempts to achieve optimal warehouse processes. 
 
-Location stocking limits help guarantee that work isn't created to request that inventory be put in a location that doesn't have the physical capacity to carry the inventory. For example, if some locations within a warehouse can hold only one pallet per location, location stocking limits can be enabled. The **Quantity **value can be set to **1**, and the **Unit **value can be set to **PL** within a specific location profile grouping. 
+Location stocking limits help guarantee that work isn't created to request that inventory be put in a location that doesn't have the physical capacity to carry the inventory. For example, if some locations within a warehouse can hold only one pallet per location, location stocking limits can be enabled. The **Quantity** value can be set to **1**, and the **Unit** value can be set to **PL** within a specific location profile grouping. 
 
 If more advanced calculations are required to control the location capacity constraints, the location profile settings can be used. In this case, the weight and volume are considered when capacity calculations are done. 
 
