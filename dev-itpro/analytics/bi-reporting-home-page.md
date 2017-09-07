@@ -65,7 +65,7 @@ Reporting solutions are often used to capture and communicate the details of bus
 To learn more, see the following topics:
 
 - [Document Reporting Services overview](document-reporting-services.md)
-- [Printing in Finance and Operations applications](print-document.md)
+- [Printing in Finance and Operations applications](print-documents.md)
 - [Install the Document Routing Agent to enable network printer devices](install-document-routing-agent.md)
 
 ## Electronic reporting
