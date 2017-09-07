@@ -30,17 +30,34 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Warehouse management in Dynamics 365 for Finance and operations enable you to xxxx.
+The warehouse management system in Dynamics 365 for Finance and operations, Enterprise edition supports the following warehouse processes.
+
+## Warehouse management processes in Dynamics 365 for Finance and operations
+- Integrated support for source documents for sales orders, returns, transfer orders, production orders, and kanban  
+- Advanced, flexible, inbound and outbound material workflow support based on queries
+- Full integration with the Manufacturing and the Transportatin offerings
+- Full control of location stocking limits and location volumetrics
+- Inventory properties controlled by inventory status
+- Full batch and serial item support
+- Various item receiving capabilities
+- Multiple picking strategies
+- Out-of-the-box native app support for the next generation of barcode scanners
+- Pallet/container types for warehouse processes
+- Advanced counting capabilities
+- Label printing and label routing with Zebra ZPL support
+- Business intelligence integration into power BI
+- Manual and automatic movement of inventory
+- Fully integrated quality control (QMS)
+- Full traceability of workers' material handling
+- Outbound wave processing
+- Manual packing and automatic containerization support
+- Cluster picking
+- Simple cross docking
 
 
-The warehouse processes that are applied in your company, determine the setup requirements of Warehouse management. To get started working with warehouse management you need to complete the setup of the general warehouse parameters.
+## Get started
+To get started working with Warehouse management you need to complete the setup of the general warehouse parameters and you must configure important components such as wave templates, work templates, work pools, and location directives to support the business processes of you company.  
 
-You must also recognize how to configure components such as wave templates, work templates, work pools, and location directives to support the business processes of you company.  
-
-## Warehouse configuration
-Read more about how to define your warehouse layout and how to enable warehouse processes according to business requirements. The most important components that you must configure are wave templates, work templates, work pools, and location directives.
-
-- [Warehouse configuration](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration)
 
 ## General warehouse parameters
 You must set up general warehouse parameters before you can perform inbound and outbound warehouse transactions. Use the **Warehouse management parameters** form to set up the following parameters:
@@ -61,29 +78,11 @@ After you configure the general warehouse parameters, you can complete the setup
 - Set up mobile device menus to display work or activities: Set up mobile devices for warehouse work 
 - Create a location directive and a work template:  Control warehouse work by using work templates and location directives, 
 - Purchase order specific: Set up a location directive for purchase order put-away, Set up a work template for purchase orders
- 
-## Warehouse management system in Dynamics 365 supports the following warehouse processes:
-- Integrated support for source documents for sales orders, returns, transfer orders, production orders, and kanban  
-- Advanced, flexible, inbound and outbound material workflow support based on queries
-- Fully integrated in the Manufacturing offering
-- Fully integrated in the Transportation offering
-- Full contol of location stocking limits and location volumetrics
-- Inventory properties controlled by inventory status
-- Full batch and serial item support
-- Various item receiving capabilities
-- Multiple picking strategies
-- Out-of-the-box native app support for the next generation of barcode scanners
-- Pallet/container types for warehouse processes
-- Advanced counting capabilities
-- Label printing and label routing zebra ZPL support
-- Business intelligence integration into power BI
-- Manual and automatic movement of inventory
-- Fully integrated quality control QMS
-- Full traceability of workers' material handling
-- Outbound wave processing
-- Manual packing and automatic containerization support
-- Cluster picking
-- Simple cross docking
 
-- 
+## Warehouse configuration
+Read more about how to define your warehouse layout and how to enable warehouse processes according to business requirements. The most important components that you must configure are wave templates, work templates, work pools, and location directives.
+
+- [Warehouse configuration](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration)
+
+ 
 
