@@ -39,6 +39,7 @@ This topic points you to resources that you can use to learn more about the busi
 ## Get started
 - [Information access and reporting](information-access-reporting.md)
 - [Tech Talk: Reporting options](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
+- [Finance and Operations: Business intelligence](https://blogs.msdn.microsoft.com/dynamicsaxbi/) (blog)
 
 ## Analytical workspaces
 Finance and Operations delivers interactive reports that are seamlessly integrated into application workspaces. Workspaces can use rich infographics and visuals that are supported by Microsoft Power BI. These infographics and visuals include many controls that are provided by third parties. Therefore, workspaces can provide a highly visual, interactive experience for users.
