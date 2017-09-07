@@ -66,7 +66,7 @@ After you create the global address book, you can create additional address book
 -   [Global address book](overview-global-address-book.md)
 -   [Plan how to configure the global address book and additional address books](plan-configuration-global-address-book-additional-address-books.md)
 - [Configure the global address book](./tasks/configure-global-address-book.md)
--   [FAQ about address books](qa-address-books.md)
+-   [Address books FAQ](qa-address-books.md)
 
 
 ## Workflow
