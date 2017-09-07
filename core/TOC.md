@@ -1281,7 +1281,7 @@
 #### [Aggregate data entities report](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-data-entities-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Key performance indicator (KPI) report](/dynamics365/unified-operations/dev-itpro/analytics/key-performance-indicators-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Power BI integration](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Access Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Access Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create a Power BI report and dashboard](/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create a Power BI report by using Finance and Operations data](/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-data?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Configure Power BI integration for workspaces](/dynamics365/unified-operations/dev-itpro/analytics/configure-power-bi-integration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
