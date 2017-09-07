@@ -61,50 +61,29 @@ After you configure the general warehouse parameters, you can complete the setup
 - Set up mobile device menus to display work or activities: Set up mobile devices for warehouse work 
 - Create a location directive and a work template:  Control warehouse work by using work templates and location directives, 
 - Purchase order specific: Set up a location directive for purchase order put-away, Set up a work template for purchase orders
-
-
-## Other resorces
-Migrate from AX 2012 to Finance and Operations
-Warehouse work policies
-
-
-
-
-Before you start using Warehouse management, you must configure the inbound and outbound processes for your needs.  
-## Setup for inbound processes (headings picked from technet)
-- Packing size categories and location stocking limits
-- Disposition codes
-- Receiving setup to use advanced shipping notice documents
-- An inventory status
-- Bar codes for use in warehouse operations
-- Container types for inbound processes
-- Search definition for inbound put locations that is based on advanced shipping notices and mixed license plates
-## Setup for outbound processes (headings picked from technet)
-- Warehouse paramters for wave processing
-- Wave template
-- Packing and container closing profiles for manual packing processes
+ 
+## Warehouse management system in Dynamics 365 supports the following warehouse processes:
+- Integrated support for source documents for sales orders, returns, transfer orders, production orders, and kanban  
+- Advanced, flexible, inbound and outbound material workflow support based on queries
+- Fully integrated in the Manufacturing offering
+- Fully integrated in the Transportation offering
+- Full contol of location stocking limits and location volumetrics
+- Inventory properties controlled by inventory status
+- Full batch and serial item support
+- Various item receiving capabilities
+- Multiple picking strategies
+- Out-of-the-box native app support for the next generation of barcode scanners
+- Pallet/container types for warehouse processes
+- Advanced counting capabilities
+- Label printing and label routing zebra ZPL support
+- Business intelligence integration into power BI
+- Manual and automatic movement of inventory
+- Fully integrated quality control QMS
+- Full traceability of workers' material handling
+- Outbound wave processing
+- Manual packing and automatic containerization support
 - Cluster picking
-- Containerization
-- Shipping carriers and carrier groups
-- Elements for cross docking
-- Sales order fulfillment rates
-- 
-## Content available in current doc set: 
-- Control work by using work templates and location directives
-- Manage warehouse workers
-- Set up layout
-- Warehouse work policies
-- Unit of measure and stocking policies
-- Warehouse Power BI content
-- Batch and license plate confirmation
-- Product confirmation for cluster picking
-- Mixed license plate receiving
-- Movement of inventory with associated work in Warehouse management
-- System grouping on an open work list
-- Configure Dislpay older batches within warehouse on a mobile device
-- Set up a location directive for purchase order put-away (multiple tasks) 
-
-### Receipt
+- Simple cross docking
 
 - 
 
