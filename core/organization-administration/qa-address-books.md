@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Address books
+title: FAQ about address books
 description: 
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Address books
+# FAQ about address books
 
 [!include[banner](../includes/banner.md)]
 
