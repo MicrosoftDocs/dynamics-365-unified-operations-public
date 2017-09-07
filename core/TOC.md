@@ -1819,7 +1819,7 @@
 ##### [BOM calculations](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### Product configuration models
 #### [Build a product configuration model](/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Create dimension-based configuration
+#### [Create dimension-based configuration](/dynamics365/unified-operations/supply-chain/pim/dimension-based-product-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
 ##### [Product dimension](/dynamics365/unified-operations/supply-chain/pim/product-dimensions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Dimension-based configuration](/dynamics365/unified-operations/supply-chain/pim/dimension-based-product-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create a dimension-based product master (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-dimension-based-product-master?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
