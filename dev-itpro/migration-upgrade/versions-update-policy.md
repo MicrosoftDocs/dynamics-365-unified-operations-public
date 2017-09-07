@@ -75,6 +75,8 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 | Release          |Major or minor release         | Version          | Build number | Availability  | Expiration date | 
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
+| Application update 2 | Minor release |   | 7.2.11792.62192 | September 2017     | September 2018  | 
+| Application update 1 | Minor release |  | 7.2.11792.62089 | July 2017     | July 2018  | 
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | Major release | July 2017 update | 7.2.11792.56024| June 2017     | June 2020  | 
 | Microsoft Dynamics 365 for Operations     | Major release | 1611             | 7.1.1541.3036| November 2016 | November 2019   | 
 | Microsoft Dynamics AX |Minor release  | 7.0.1 | 7.0.1265.23014 | May 2016 | June 2017 |
@@ -111,6 +113,8 @@ The following table provides information about the recent releases of the applic
 
 |                       | **Dynamics AX 7.0** | **Dynamics AX application 7.0.1** | **Dynamics 365 for Operations (1611)** | **Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update** |
 |-----------------------|---------------------|-----------------------------------|----------------------------------------|----------------------------------------------------------------------------------|
+| **Application update 2** |           |                         |                              |   
+| **Application update 1** |           |                         |                              |   
 | **Platform update 10** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
 | **Platform update 9** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
 | **Platform update 8** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
