@@ -40,10 +40,6 @@ Learn how to integrate BPM with your VSTS projects and drive business process fo
 
 Learn how to create and edit activity diagrams.
 
-## Other Features
-
-Learn how to make the most of BPM.
-
 ## See also
 
 [Business process libraries in Business process modeler](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/business-process-libraries-business-process-modeler)
