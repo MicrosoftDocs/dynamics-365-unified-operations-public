@@ -1369,19 +1369,17 @@
 ##### [Control work by using work templates and location directives](/dynamics365/unified-operations/supply-chain/warehousing/control-warehouse-location-directives?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Unit of measure and stocking policies](/dynamics365/unified-operations/supply-chain/warehousing/unit-measure-stocking-policies?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Warehouse Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
-##### [Product confirmation for cluster picking](/dynamics365/unified-operations/supply-chain/warehousing/cluster-picking-item-confirmation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Mixed license plate receiving](/dynamics365/unified-operations/supply-chain/warehousing/mixed-license-plate-receiving?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
 ##### [System grouping on an open work list](/dynamics365/unified-operations/supply-chain/warehousing/system-group-on-open-work-list?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Configure Display older batches within warehouse on a mobile device](/dynamics365/unified-operations/supply-chain/warehousing/display-older-batches-within-warehouses?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Warehouse work policies](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-work-policies?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Movement of inventory with associated work in Warehouse management](/dynamics365/unified-operations/supply-chain/warehousing/move-inventory-associated-work?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Manage warehouse workers](/dynamics365/unified-operations/supply-chain/warehousing/manage-warehouse-workers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Picking and packing
 ##### [Batch and license plate confirmation](/dynamics365/unified-operations/supply-chain/warehousing/batch-and-license-plate-confirmation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Mixed license plate receiving](/dynamics365/unified-operations/supply-chain/warehousing/mixed-license-plate-receiving?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Configure Display older batches within warehouse on a mobile device](/dynamics365/unified-operations/supply-chain/warehousing/display-older-batches-within-warehouses?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Pick oldest batch on a mobile device](/dynamics365/unified-operations/supply-chain/warehousing/pick-oldest-batch?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Piece picking confirmation](/dynamics365/unified-operations/supply-chain/warehousing/piece-picking-confirmation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Product confirmation for cluster picking](/dynamics365/unified-operations/supply-chain/warehousing/cluster-picking-item-confirmation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Packing materials and fees](/dynamics365/unified-operations/supply-chain/warehousing/pack-materials-packing-material-fees?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Inventory counting
 ##### [Block inventory](/dynamics365/unified-operations/supply-chain/inventory/inventory-blocking?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
