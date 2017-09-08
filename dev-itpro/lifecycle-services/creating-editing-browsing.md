@@ -70,8 +70,17 @@ Use this guide to copy a global or corporate library to your project
 ![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost12.png "image")
 
 ## Browse a BPM library
-// browsing description
-//browsing image
+Select the tile you would like to browse.
+
+![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/1.PNG "image1")
+
+Select a process to view its substeps.
+
+![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/2.PNG "image2")
+
+Use the toolbar to add, delete, or import processes as child or sibling. Or,select **Collapse all** to view only parent processes. 
+
+![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/3.PNG "image3")
 
 ## Search a BPM library
 
