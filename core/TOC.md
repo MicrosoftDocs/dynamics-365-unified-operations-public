@@ -1389,8 +1389,7 @@
 ##### [Inventory location](/dynamics365/unified-operations/supply-chain/inventory/inventory-locations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Inventory status](/dynamics365/unified-operations/supply-chain/inventory/inventory-statuses?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Inventory tag counting](/dynamics365/unified-operations/supply-chain/inventory/inventory-tag-counting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Replenishment
-##### [Replenishment](/dynamics365/unified-operations/supply-chain/warehousing/replenishment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Replenishment](/dynamics365/unified-operations/supply-chain/warehousing/replenishment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Replenishment with withdrawal kanbans](/dynamics365/unified-operations/supply-chain/warehousing/material-replenishment-withdrawal-kanban?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Mobile devices
 ##### [Install and configure the warehousing app ](/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
