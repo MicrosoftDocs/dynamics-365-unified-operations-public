@@ -44,7 +44,8 @@ BankGirot MAX and BankGirot OCR file import lets you import customer payments i
 1.  Go to the **Payment journal** page.
 2.  Click **Lines**.
 3.  Click **Functions** &gt; **Import payments**.
-4.  In the dialog box, select the method of payment, and then browse to the location of the file to import. 
+4.  In the dialog box, select the method of payment, and then browse to the location of the file to import.
+
   > [!NOTE]
   >  Before you can complete this step, you must have already imported the configurations from Lifecycle Services (LCS) and set up the methods of payment. For more information, see [File formats for method of payments](emea-select-file-formats-for-the-method-of-payments.md).
 
@@ -56,6 +57,7 @@ Bankgirot Autogiro returns format for the direct debit payment format of the sam
 1.  Go to the **Payment transfers** page.
 2.  Click **Return file-customer**.
 3.  In the dialog box, select corresponding method of payment, and then browse to the location of the file to import. 
+
   > [!NOTE]
   >  Before you can complete this step, you must have already imported the configurations from Lifecycle Services (LCS) and set up the methods of payment. For more information, see [File formats for method of payments](emea-select-file-formats-for-the-method-of-payments.md).
 

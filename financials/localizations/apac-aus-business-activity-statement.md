@@ -5,7 +5,7 @@ title: Business Activity Statement (BAS)
 description: This topic provides information about the business activity statement (BAS) for Australia. The BAS is a form submitted to the Australian Taxation Office by all businesses to report their taxation obligations.          
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -85,7 +84,7 @@ The following list provides an overview of the process to calculate GST and prep
 <li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax?toc=dynamics365/unified-operations/fin-and-ops/toc.json">Create ledger posting groups.</a></li>
 <li>Set up the GST sales tax authority</li>
 <li>Create settlement periods</li>
-<li>Set up sales tax reporting codes</li>
+<li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/apac-aus-business-activity-statement.md##gst-reporting-codes">Set up sales tax reporting codes for GST</a></li>
 <li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/tasks/set-up-sales-tax-codes?toc=dynamics365/unified-operations/fin-and-ops/toc.json">Set up sales tax codes</a></li>
 <li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups?toc=dynamics365/unified-operations/fin-and-ops/toc.json">Set up sales tax groups and item sales tax groups</a></li>
 <li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/tasks/set-up-reason-codes-australia-bas?toc=dynamics365/unified-operations/fin-and-ops/toc.json">Set up reason codes for Australia BAS</a></li>
@@ -97,4 +96,51 @@ The following list provides an overview of the process to calculate GST and prep
 </tbody>
 </table>
 
+## GST reporting codes
 
+The BAS report layout is specific about how and where different amounts should be reported, about the fields that are added together and about linking the GST codes to the particular reporting codes. The GST reporting codes refer to a field number on the tax report for the report layout. The codes are linked by associating a GST code to a particular reporting code on the **Report setup** FastTab on the **GST codes** page.
+
+Based on a quarterly BAS format, the following reporting codes must be set up. These reporting codes are associated with the field that appears on the BAS report.
+
+| Report Layout | Reporting Code | Report Text                                                                | Field in BAS report |
+|---------------|----------------|----------------------------------------------------------------------------|---------------------|
+| Default       | 1              | G1 Total sales & income and other supplies                                 | G1                  |
+| Default       | 2              | G2 GST free exports                                                        | G2                  |
+| Default       | 3              | G3 Other GST free supplies                                                 | G3                  |
+| Default       | 4              | G4 Input taxed sales & income and other supplies                           | G4                  |
+| Default       | 7              | G7 Adjustment payable                                                      | G7                  |
+| Default       | 9              | G9 and 1A Goods and services tax payable                                   | G9 and 1A           |
+| Default       | 10             | G10 Capital acquisitions                                                   | G10                 |
+| Default       | 11             | G11 Other acquisitions                                                     | G11                 |
+| Default       | 13             | G13 Acquisitions for making input taxed sales & income and other supplies  | G13                 |
+| Default       | 14             | G14 Acquisitions with no GST in the price                                  | G14                 |
+| Default       | 101            | 1C Wine equalization tax payable                                           | 1C                  |
+| Default       | 102            | 1D Wine equalization tax refundable                                        | 1D                  |
+| Default       | 201            | 1E Luxury car tax payable                                                  | 1E                  |
+| Default       | 202            | 1F Luxury car tax refundable                                               | 1F                  |
+| Default       | 400            | 4 Pay As You Go Withholding                                                | 4                   |
+| Default       | 501            | 5A Pay As You Go Instalment                                                | 5A                  |
+| Default       | 502            | 5B Credit arising from reduced Pay As You Go instalment                    | 5B                  |
+| Default       | 601            | 6A Fringe benefit tax instalment                                           | 6A                  |
+| Default       | 602            | 6B Credit arising from fringe benefits tax instalment                      | 6B                  |
+| Default       | 700            | 7 Deferred company/ fund instalment                                        | 7                   |
+| Default       | 701            | 7A Deferred GST on imports                                                 | 7A                  |
+| Default       | 31             | W1 Total of salary, wages and other payments                               | W1                  |
+| Default       | 32             | W2 Amounts withheld from salary, wages and other payments                  | W2                  |
+| Default       | 33             | W3 Amounts withheld from investment distributions where no TFN is quoted   | W3                  |
+| Default       | 34             | W4 Amounts withheld from payment of invoices where no ABN is quoted        | W4                  |
+| Default       | 51             | T1 Instalment income                                                       | T1                  |
+| Default       | 52             | T2 Commissioner’s instalment rate                                          | T2                  |
+| Default       | 53             | T3 New varied instalment rate                                              | T3                  |
+| Default       | 54             | T4 Reason for variation                                                    | T4                  |
+| Default       | 61             | F1 ATO-calculated fringe benefits tax instalment                           | F1                  |
+| Default       | 62             | F2 Estimated total fringe benefits tax payable                             | F2                  |
+| Default       | 63             | F3 Varied fringe benefits tax instalment                                   | F3                  |
+| Default       | 64             | F4 Reason for fringe benefits tax variation                                | F4                  |
+| Default       | 140            | A1 Document identification number                                          | A1                  |
+| Default       | 1013           | G13 Acquisitions for making input taxed sales, income and other supplies   | G13                 |
+| Default       | 1014           | G14 Capital acquisitions with no GST in the price                          | G14                 |
+| Default       | 1015           | G15 Capital acquisitions for private use or with non-income tax deductions | G15                 |
+
+> [!NOTE] 
+> The reporting code numbers 5 and 6 are missing. This is because these two codes are used for calculated fields on the BAS report.
