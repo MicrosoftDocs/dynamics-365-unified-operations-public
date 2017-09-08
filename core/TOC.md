@@ -1384,7 +1384,9 @@
 #### Inventory counting
 ##### [Block inventory](/dynamics365/unified-operations/supply-chain/inventory/inventory-blocking?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cycle counting](/dynamics365/unified-operations/supply-chain/warehousing/cycle-counting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Define cycle counting ](/dynamics365/unified-operations/supply-chain/warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Partial location cycle counting](/dynamics365/unified-operations/supply-chain/warehousing/partial-location-cycle-counting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Define partial location cycle counting process ](/dynamics365/unified-operations/supply-chain/warehousing/tasks/define-partial-location-cycle-counting-process-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017-update?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Inventory journal](/dynamics365/unified-operations/supply-chain/inventory/inventory-journals?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Inventory location](/dynamics365/unified-operations/supply-chain/inventory/inventory-locations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Inventory status](/dynamics365/unified-operations/supply-chain/inventory/inventory-statuses?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1409,8 +1411,6 @@
 ##### [Create a location profile](/dynamics365/unified-operations/supply-chain/warehousing/tasks/create-location-profile?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create a work class](/dynamics365/unified-operations/supply-chain/warehousing/tasks/create-work-class?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cross-dock products from receiving warehouse to stores](/dynamics365/unified-operations/supply-chain/warehousing/tasks/cross-dock-products-receiving-warehouse-stores?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Define cycle counting ](/dynamics365/unified-operations/supply-chain/warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Define partial location cycle counting process ](/dynamics365/unified-operations/supply-chain/warehousing/tasks/define-partial-location-cycle-counting-process-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017-update?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Enable license plate label printing](/dynamics365/unified-operations/supply-chain/warehousing/tasks/license-plate-label-printing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Register items for an advanced warehousing enabled item using an item arrival journal](/dynamics365/unified-operations/supply-chain/warehousing/tasks/register-items-advanced-warehousing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Register items for a basic warehousing enabled item using an item arrival journal](/dynamics365/unified-operations/supply-chain/warehousing/tasks/register-items-basic-warehousing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
