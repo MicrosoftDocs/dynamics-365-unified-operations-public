@@ -3,9 +3,9 @@
 
 title: Configuration data templates
 description: This topic describes configuration data templates and explains how to create them. 
-author: mfalkner
+author: mikefalkner
 manager: AnnBe
-ms.date: 05/23/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 7
 Configuration data templates are predefined lists of entities for each module area that can be used in a data project. You can create, view, and modify these templates by using the **Template** page in the **Data management** workspace of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 > [!IMPORTANT]
-> Default configuration templates were delivered in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. The Configuration data project feature is available in Microsoft Dynamics 365 for Operations platform update 7. You can create and use your own templates in the current product release.
+> Default configuration templates were delivered in the July 2017 update. The Configuration data project feature is available in Microsoft Dynamics 365 for Operations platform update 7. You can create and use your own templates in the current product release.
 
 ## Create a new configuration data template
 The **Template** page in the **Data management** workspace provides tools that let you create a template of entities. This page resembles the configurations page, and the two features work in a similar manner. You must use **Enhanced view** to take advantage of the new features.
@@ -55,7 +55,7 @@ Your template can now be used in a project. However, you might want to use some 
 - To create a template from a project, select **New** to create a template. Enter an ID and name for the template, and then select **Replace template from project**. In the list of projects that appears, select a project, and then select **Create template** to bring the project entities from that project into the open template. The values in the open template will be overwritten.
 
 ## Default data templates
-In July 2017 update, we released predefined templates to help you create configuration data projects. The templates are sequenced, so that the data that the entities generate will be processed in the correct order. Our predefined templates are also designed to maintain the correct sequence when more than one template is added to the same data project. For more information, see the "Sequencing in the default templates" section.
+In the July 2017 update, we released predefined templates to help you create configuration data projects. The templates are sequenced, so that the data that the entities generate will be processed in the correct order. Our predefined templates are also designed to maintain the correct sequence when more than one template is added to the same data project. For more information, see the "Sequencing in the default templates" section.
 
 Default templates are delivered together with each new release of Finance and Operations. Our long-term goal is to provide the templates in Microsoft Dynamics Lifecycle Services (LCS), so that you can push them to an instance of Finance and Operations. However, for the current releases, select the **Templates** tile in the **Data management** workspace, and then select **Load default templates** to load the templates. To see the **Load default templates** menu, you must use **Enhanced view**.
 
