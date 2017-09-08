@@ -23,7 +23,7 @@ ms.reviewer: shylaw
 ms.custom: 1587884
 ms.region: India
 ms.search.scope: AX 2012
-# ms.industry: 
+# ms.search.industry: 
 ms.author: ralin
 ms.dyn365.ops.version: 2012
 # ms.search.validFrom:

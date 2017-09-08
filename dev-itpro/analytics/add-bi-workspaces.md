@@ -3,7 +3,7 @@
 
 title: Add BI to workspaces
 description: In this tutorial, you’ll add BI controls such as KPI tiles to an existing workspace. 
-author: sericks007
+author: MilindaV2
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

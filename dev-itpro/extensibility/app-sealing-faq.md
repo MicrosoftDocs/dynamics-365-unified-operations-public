@@ -3,7 +3,7 @@
 
 title: Extensibility FAQ
 description: This topic provides answers to some frequently asked questions about extensibility.
-author: dfroslieMSFT
+author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dfroslie
+ms.author: fdahl
 ms.search.validFrom: 2017-07/01
 ms.dyn365.ops.version: Platform update 9
 ---

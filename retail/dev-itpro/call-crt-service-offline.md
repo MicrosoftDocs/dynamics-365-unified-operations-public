@@ -3,7 +3,7 @@
 
 title: Call CRT service in offline mode
 description: This topic describes how provide offline support for point of sale (POS).
-author: josaw1
+author: mugunthanm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

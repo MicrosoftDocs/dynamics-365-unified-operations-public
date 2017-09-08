@@ -3,6 +3,7 @@
 
 title: Copy configuration data from one company or legal entity to another
 description: This topic describes how to use a configuration data project and configuration data templates to move company or legal entity configuration data between instances of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+
 author: mikefalkner
 manager: AnnBe
 ms.date: 09/18/2017

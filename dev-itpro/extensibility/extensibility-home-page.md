@@ -3,7 +3,7 @@
 
 title: Extensibility home page
 description: This topic provides links to topics about extensibility.
-author: RobinARH
+author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
@@ -24,7 +24,7 @@ ms.custom: 268724
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: fdahl
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 
@@ -60,6 +60,7 @@ Extensibility fundamentals includes principles and practices for how to make ext
 
 + [Intrusive customizations](intrusive-customizations.md)
 + [Class extensions](class-extensions.md)
++ [Class extension: Method wrapping and Chain of Command](method-wrapping-coc.md)
 + [Naming guidelines](naming-guidelines-extensions.md)
 
 ## How do I..?

@@ -24,13 +24,14 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Modify format to generate documents with application data update for electronic reporting (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 3: Modify model and mapping)".
+To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 3: Modify model and mapping)".
+
 The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document and update application data. In this procedure, you will modify the ER configurations to not just use them to generate electronic documents, but also to update application data. This procedure is created for users with the assigned role of system administrator or electronic reporting developer. These steps can be completed using the DEMF dataset.
 
 

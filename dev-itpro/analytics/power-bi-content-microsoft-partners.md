@@ -3,7 +3,7 @@
 
 title: Power BI content in LCS from Microsoft and your partners
 description: This topic explains how to find and install Power BI content that is distributed by the Finance and Operations team and your partners via Lifecycle Services (LCS). 
-author: sericks007
+author: MilindaV2
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

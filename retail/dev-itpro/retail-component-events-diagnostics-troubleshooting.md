@@ -3,7 +3,7 @@
 
 title: Retail component events for diagnostics and troubleshooting
 description: To enable diagnostics and troubleshooting, all Retail components, which include clients such as the Retail Modern POS and server components such as Retail Server, log their events locally to Event Viewer (or to the browser developer tools console, in case of Retail Cloud POS). This article explains where to find events from Retail-specific components.
-author: MargoC
+author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

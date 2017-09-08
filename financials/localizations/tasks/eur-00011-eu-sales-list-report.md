@@ -3,7 +3,7 @@
  
 title: Generate an EU sales list report
 description: This procedure walks you through generating the EU sales list report. 
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -24,14 +24,16 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Generate an EU sales list report
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure walks you through generating the EU sales list report. This includes transferring intra-community trade transactions to the EU sales list and running the report. This  procedure also includes creating an intra-community trade transaction for demo purposes. For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.
-This procedure applies to all European countries/regions. The procedure was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region. The procedure also uses Portugal as an exemplar EU country/region. Before you can complete this procedure, you must configure EU sales list reporting.
+This procedure walks you through generating the EU sales list report. This includes transferring intra-community trade transactions to the EU sales list and running the report. This  procedure also includes creating an intra-community trade transaction for demo purposes. For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.
+
+This procedure applies to all European countries/regions. The procedure was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region. The procedure also uses Portugal as an exemplar EU country/region. Before you can complete this procedure, you must configure EU sales list reporting.
+
 This procedure is intended for accountants.
 
 

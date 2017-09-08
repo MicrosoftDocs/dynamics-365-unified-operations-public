@@ -3,7 +3,7 @@
 
 title: Retail Modern POS installation and updates
 description: This topic describes how to configure, download, and install Retail Modern POS on various platforms. It then describes how to activate Retail Modern POS through device activation.
-author: josaw1
+author: jashanno
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: RetailChannelManagementWorkspace, RetailDevice, RetailTerminalTa
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 20501

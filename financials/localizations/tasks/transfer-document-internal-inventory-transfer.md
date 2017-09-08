@@ -3,7 +3,7 @@
  
 title: Generate a transfer document for an internal inventory transfer
 description: This procedure shows how to create transfer documents for goods movement inside a company. 
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 10/27/2016
 ms.topic: business-process 
@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Generate a transfer document for an internal inventory transfer
 

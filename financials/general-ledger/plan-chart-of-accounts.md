@@ -3,7 +3,7 @@
 
 title: Plan your chart of accounts
 description: This article provides information that will help you plan the chart of accounts for your organization.
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

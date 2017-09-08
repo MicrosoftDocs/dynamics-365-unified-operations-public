@@ -3,7 +3,7 @@
 
 title: Modeling and aggregate data
 description: This tutorial will walk you through the process of modeling aggregate data .
-author: sericks007
+author: MilindaV2
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

@@ -3,7 +3,7 @@
  
 title: Electronic tax declarations (EVAT) (Netherlands)
 description: This procedure walks you through setting up electronic tax declaration for the Netherlands. 
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -24,15 +24,18 @@ ms.search.region: Netherlands
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Electronic tax declarations (EVAT) (Netherlands)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure walks you through setting up electronic tax declaration for the Netherlands.
-This procedure was created using the demo data company DEMF. 
-This functionality is available for legal entities whose primary address is in the Netherlands.
+This procedure walks you through setting up electronic tax declaration for the Netherlands.
+
+This procedure was created using the demo data company DEMF. 
+
+This functionality is available for legal entities whose primary address is in the Netherlands.
+
 
 
 1. Go to Tax > Setup > Sales tax > Electronic tax declaration parameters.

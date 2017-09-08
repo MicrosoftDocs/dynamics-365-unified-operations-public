@@ -3,7 +3,7 @@
 
 title: Warehouse Mobile Devices Portal (WMDP) for Finance and Operations
 description: This article describes how to enable the Warehouse Mobile Devices Portal for Microsoft Dynamics 365 for Finance and Operations. It also explains how to service and upgrade your environment.
-author: YuyuScheller
+author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

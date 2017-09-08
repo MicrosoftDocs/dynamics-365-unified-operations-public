@@ -5,7 +5,7 @@ title: Upgrade Dynamics AX 2012 to Dynamics 365 for Finance and Operations, Ente
 description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: tariqbell
 manager: AnnBe
-ms.date: 08/03/2017
+ms.date: 08/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,15 +13,15 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
 ms.search.scope:  Operations, UnifiedOperations, Platform
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
+# ms.search.industry:
 ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
@@ -33,10 +33,13 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[upgrade banner](../includes/upgrade-banner.md)]
 
-In Platform update 8, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, provides an upgrade path that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations. The upgrade process is built on the following elements:
+In Platform update 8 and the July 2017 Application release, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, provides an upgrade path that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations. Currently upgrade from AX 2012 R3 is supported, support for older versions of AX 2012 will be added later. The upgrade process is built on the following elements:
 
 - Tools to help you bring forward existing custom application code from AX 2012.
 - A data upgrade process that you can use to bring your database forward. Therefore, you can upgrade your full transactional history.
+
+> [!IMPORTANT]
+> Microsoft Dynamics AX 2012 implementations that are running some [deprecated features](deprecated-features.md) cannot currently be upgraded to Finance and Operations. For example, upgrade is not possible from systems that are using either virtual companies or data partitions. If you aren’t sure whether your system can be upgraded, run the Upgrade analyzer tool. 
 
 ## Overview
 

@@ -24,16 +24,20 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Maintain impairment indicators on individual assets (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Use this task to learn how to maintain impairment indicators on individual assets.
-
-Run the task 'Setup impairment accounting common parameters' prior to this running this procedure. 
-
+Use this task to learn how to maintain impairment indicators on individual assets.
+
+
+
+Run the task 'Setup impairment accounting common parameters' prior to this running this procedure. 
+
+
+
 This task uses the JPMF demo company data.
 
 

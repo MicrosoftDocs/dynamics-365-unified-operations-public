@@ -3,7 +3,7 @@
 
 title: Upgrade budget planning
 description: There are significant differences in budget planning between Microsoft Dynamics AX 2012 and Microsoft Dynamics 365 for Finance and Operations. Some features were not upgraded and therefore require reconfiguration. This topic explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.  
-author: twheeloc
+author: ryansandness
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: robinr
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 272923

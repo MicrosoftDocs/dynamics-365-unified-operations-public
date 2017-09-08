@@ -3,7 +3,7 @@
 
 title: Extend report menu items
 description: This topic shows how to extend existing application menu items so that, after only minimal code changes, navigations are redirected to a custom reporting solution. 
-author: sericks007
+author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

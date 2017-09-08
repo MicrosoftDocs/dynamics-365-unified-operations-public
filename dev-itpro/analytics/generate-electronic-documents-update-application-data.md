@@ -17,7 +17,7 @@ ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: sericks
 ms.search.scope: AX 7.2, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27621

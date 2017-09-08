@@ -24,18 +24,24 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Settle vendor consolidated invoices by using a payment journal (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-In Japan, payments are made and settled against consolidated invoices.
-
-This procedure walks you through settling a consolidated invoice using a payment journal and payment proposal feature. 
-
-Before you complete this procedure, be sure that you have a consolidated invoice created and confirmed. 
-
+In Japan, payments are made and settled against consolidated invoices.
+
+
+
+This procedure walks you through settling a consolidated invoice using a payment journal and payment proposal feature. 
+
+
+
+Before you complete this procedure, be sure that you have a consolidated invoice created and confirmed. 
+
+
+
 This procedure was created using the demo data company JPMF.
 
 1. Go to Accounts payable > Periodic tasks > Consolidated invoice.

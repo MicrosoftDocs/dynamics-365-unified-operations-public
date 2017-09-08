@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: BI &amp; reporting home page
-description: This topic lists BI &amp; reporting resources that are available in Microsoft Dynamics 365 for Finance and Operations.
+title: Intelligence
+description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/07/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,83 +30,73 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# BI &amp; reporting home page
+# Intelligence
 
 [!include[banner](../includes/banner.md)]
 
+This topic points you to resources that you can use to learn more about the business intelligence (BI) and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-This topic lists BI &amp; reporting resources that are available in Microsoft Dynamics 365 for Finance and Operations. 
+## Get started
+- [Information access and reporting](information-access-reporting.md)
+- [Tech Talk: Reporting options](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
+- [Finance and Operations: Business intelligence](https://blogs.msdn.microsoft.com/dynamicsaxbi/) (blog)
 
-Working with aggregate data
----------------------------
+## Analytical workspaces
+Finance and Operations delivers interactive reports that are seamlessly integrated into application workspaces. Workspaces can use rich infographics and visuals that are supported by Microsoft Power BI. These infographics and visuals include many controls that are provided by third parties. Therefore, workspaces can provide a highly visual, interactive experience for users.
 
--   [Analytics](analytics.md)
--   [In-memory, real-time aggregate models replace SSAS cubes](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [Modeling and using Aggregate Data](model-aggregate-data.md)
--   [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
+Users can interact with data by clicking or touching visuals on the page. They can see cause and effect, and do simple what-if operations without leaving the workspace. Thanks to stunning, interactive visuals, your users will have fun exploring data and discovering hidden trends.
 
-## Self service reporting
--   [Power BI integration](power-bi-integration.md)
--   [Configuring Power BI integration for workspaces](configure-power-bi-integration.md)
--   [Create a Power BI report by using Microsoft Dynamics 365 for Finance and Operations data](create-powerbi-report-data.md)
--   [Create a Power BI report and dashboard](create-powerbi-report-dashboard.md)
--   [Retail Channel Performance Power BI content](retail-channel-performance-dashboard-power-bi-data.md)
--   [Financial Performance Power BI content](financial-performance-power-bi-content-pack.md)
--   [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)
--   [Use an Electronic reporting configuration to provide Power BI with data from Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+![Example of Power BI in a workspace](./media/Power-BI-in-D365-Workspace.png)
 
-## Building embedded analytical experiences in the Finance and Operations client
--   [Embedded business intelligence](analytics.md#embedded-business-intelligence)
--   [KPI modeling and customization](analytics.md#kpi-modeling-and-customization)
--   [Adding BI to workspaces](add-bi-workspaces.md)
--   [Adding contextual BI to forms](add-contextual-bi-forms.md)
+ To learn more, see the following topics:
 
-## Document reporting and printing
--   [Document Reporting Services Overview](document-reporting-services.md)
--   [Printing in Finance and Operations applications](print-documents.md)
--   [Install the Document Routing Agent to enable network printer devices](install-document-routing-agent.md)
--   [Run the Document Routing agent as a Windows service](run-document-routing-agent-as-windows-service.md)
--   [Creating next-generation reporting solutions](create-nextgen-reporting-solutions.md)
--   [Install the modern report design templates](install-modern-report-design-templates.md)
--   [Tips to help prevent long-running reports from timing out](prevent-long-running-reports-timing-out.md)
+ - [Embedded Power BI in workspaces](embed-power-bi-workspaces.md)
+ - [Power BI Embedded integration](power-bi-embedded-integration.md)
+ - [Add analytics to workspaces by using Power BI Embedded](add-analytics-tab-workspaces.md)
+ - [Publish analytical applications on Power BI](publish-apps-powerbi.md)
+ - [Help secure analytical workspaces and reports by using Power BI Embedded](secure-analytical-workspaces.md)
+ - [Power BI content for Finance and Operations](power-bi-home-page.md)
+
+## Business documents and printing
+Reporting solutions are often used to capture and communicate the details of business transactions. Therefore, a reporting solution must be able to produce physical manifestations of business data by using existing devices, such as network printers. Examples of business documents include sales invoices, customer statements, and checks.
+
+[![Example of business documents](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
+
+To learn more, see the following topics:
+
+- [Document Reporting Services overview](document-reporting-services.md)
+- [Printing in Finance and Operations applications](print-documents.md)
+- [Install the Document Routing Agent to enable network printer devices](install-document-routing-agent.md)
 
 ## Electronic reporting
--   [Electronic reporting overview](general-electronic-reporting.md)
--   [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
--   [Extending the list of Electronic reporting functions](general-electronic-reporting-formulas-list-extension.md)
--   [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
--   [Electronic reporting destinations](electronic-reporting-destinations.md)
--   [Download Electronic reporting configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
--   [Use an Electronic reporting configuration to provide Power BI with data from Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
--   [ER Create a configuration provider and mark it as active](/dynamics365/unified-operations/do-not-publish/er-configuration-provider-mark-it-active-2016-02) (Task guide)
--   [ER Design domain specific data model](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-data-model-2016-02-05) (Task guide)
--   [ER Define model mapping and select data sources](/dynamics365/unified-operations/do-not-publish/er-define-model-mapping-select-data-sources-2016-02-05) (Task guide)
--   [ER Map data model to selected data sources](/dynamics365/unified-operations/do-not-publish/er-map-data-model-selected-data-sources-2016-02-05) (Task guide)
--   [ER Design domain specific format](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-format-2016-02-05) (Task guide)
--   [ER Upload a configuration into Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services) (Task guide)
--   [ER Import a configuration from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services) (Task guide)
--   [ER Design a configuration for generating reports in OPENXML format](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11) (Task guide)
--   [ER Configure destinations](/dynamics365/unified-operations/do-not-publish/er-destinations-2016-05) (Task guide)
--   [ER Use financial dimensions as a data source (Part 1: Design data model)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1) (Task guide)
--   [ER Use financial dimensions as a data source (Part 2: Model mapping)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2) (Task guide)
--   [ER Use financial dimensions as a data source (Part 3: Design the report)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3) (Task guide)
--   [ER Use financial dimensions as a data source (Part 4: Run the report)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4) (Task guide)
--   [ER Configure format to do counting and summing (Part 1: Create format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-1) (Task guide)
--   [ER Configure format to do counting and summing (Part 2: Configure computations)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-2) (Task guide)
--   [ER Configure format to do counting and summing (Part 3: Use computations to make the output)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-3) (Task guide)
--   [ER Configure format to do counting and summing (Part 4: Run format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-4) (Task guide)
--   [ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 1: Design format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-1) (Task guide)
--   [ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 2: Run format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-2) (Task guide)
--   [ER Use Document Management files in format outputs (Part 1: Prepare data model)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-1) (Task guide)
--   [ER Use Document Management files in format outputs (Part 2: Extend data model)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-2) (Task guide)
--   [ER Use Document Management files in format outputs (Part 3: Create format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-3) (Task guide)
--   [ER Use Document Management files in format outputs (Part 4: Run format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-4) (Task guide)
--   [ER Use Document Management files in format outputs (Part 5: Modify and run format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-5) (Task guide)
--   [ER Generate electronic documents for payments using a format configuration](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-electronic-payments) (Task guide)
--   [ER Upgrade your format by adopting a new, base version of that format](/dynamics365/unified-operations/do-not-publish/er-upgrade-format--2016-05) (Task guide)
+Electronic reporting (ER) is the tool that you use to configure electronic document formats that comply with the legal requirements of various countries or regions. The applications of electronic reporting include financial auditing, tax reporting, and electronic invoicing.
 
+[![Electronic reporting example](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
 
+To learn more, see the following topics:
 
+- [Electronic reporting overview](general-electronic-reporting.md)
+- [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Create an Electronic reporting configuration](electronic-reporting-configuration.md)
 
+## Financial reporting
+Standard financial reports are provided that use the default main account categories in Finance and Operations. You can use the report designer to create or modify traditional financial statements, such as income statements and balance sheets. You can then share the results with other members of your organization. Examples of financial reporting include balance sheets, cash flow, and summary trial balance year over year.
 
+[![Financial reporting example](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
 
+To learn more, see the following topics:
+
+- [Financial reporting for Finance and Operations](financial-reporting-intro.md)
+- [Generate a financial report](generate-financial-report.md)
+- [Financial report components](financial-report-components.md)
+
+## Technical reference reports
+The following reports provide reference information about the objects in Finance and Operations:
+
+- [Aggregate data entities report](aggregate-data-entities-report.md)
+- [Aggregate measurements report](aggregate-measurements-report.md)
+- [Data entities report](../data-entities/data-entities-report.md)
+- [Key performance indicators (KPIs) report](key-performance-indicators-report.md)
+- [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md)
+- [SQL Server Reporting Services reports report](SSRS-report.md)
+- [Workflow types report](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-types-report)

@@ -4,7 +4,7 @@
 title: Microsoft Dynamics 365 for Retail for IT pros and developers
 description: This page lists the resources that are available for IT pros and developers who support Retail.
 author: RobinARH
-nmanager: AnnBe
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-o# ROBOTS: 
+# ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr

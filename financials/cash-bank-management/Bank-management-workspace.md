@@ -3,7 +3,7 @@
 
 title: Bank management workspace
 description: This topic provides information about the Bank management workspace. This workspace shows information that is related to company bank accounts, and includes a Summary view and an Analytics page. The Summary view shows summary tiles, bank account information, a balance chart, and related information. The Analytics page uses the capabilities of Microsoft Power BI to show visuals that are related to bank account balances.
-author: saraschi
+author: saraschi2
 manager: AnnBe
 ms.date: 05/25/2017
 ms.topic: article

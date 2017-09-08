@@ -17,7 +17,7 @@ ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPe
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 20471

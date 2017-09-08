@@ -3,7 +3,7 @@
 
 title: Request for quotations (RFQs)
 description: This topic provides an overview of requests for quotation (RFQs), which organizations issue when they must purchase items or services, and want to receive competitive offers from several vendors.
-author: YuyuScheller
+author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

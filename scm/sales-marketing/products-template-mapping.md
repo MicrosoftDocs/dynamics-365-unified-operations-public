@@ -5,7 +5,7 @@ title: Synchronize products from Finance and Operations to products in Sales
 description: This topic discusses the templates and underlying tasks that are used to synchronize products from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 07/03/2017
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: ChristianRytt
+ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update 
 ms.search.validFrom: 2017-07-8
 

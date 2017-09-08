@@ -24,14 +24,16 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up sales tax codes
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Sales tax codes are created for every indirect tax or duty that the legal entity is obligated to calculate, collect, and pay to sales tax authorities.
-This task uses the USMF demo company.
+Sales tax codes are created for every indirect tax or duty that the legal entity is obligated to calculate, collect, and pay to sales tax authorities.
+
+This task uses the USMF demo company.
+
 
 
 1. Go to Tax > Indirect taxes > Sales tax > Sales tax codes.

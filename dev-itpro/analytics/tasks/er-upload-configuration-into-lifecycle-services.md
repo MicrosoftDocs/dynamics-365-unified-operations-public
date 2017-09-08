@@ -24,13 +24,14 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Upload a configuration into Lifecycle Services for electronic reporting (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration and upload it into Microsoft Lifecycle Services (LCS).
+The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration and upload it into Microsoft Lifecycle Services (LCS).
+
 In this example, you will create a configuration and upload it to LCS for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies. To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure. Access to LCS is also required for completion of these steps.
 
 1. Go to Organization administration > Workspaces > Electronic reporting.

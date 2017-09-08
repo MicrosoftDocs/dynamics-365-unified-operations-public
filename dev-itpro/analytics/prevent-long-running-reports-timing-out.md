@@ -3,7 +3,7 @@
 
 title: Tips to prevent long-running reports from timing out
 description: This article provides tips that can help you prevent reports that run for a long time from timing out. 
-author: sericks007
+author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

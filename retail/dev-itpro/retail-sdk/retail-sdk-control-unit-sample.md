@@ -3,7 +3,7 @@
 
 title: Control unit sample for Sweden
 description: This topic is the building and installation guide for the sample for control unit integration for Sweden 
-author: epopov
+author: EvgenyPopovMBS
 manager: AnnBE
 ms.date: 07/01/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.search.region: Sweden
 ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2017-07-01
-ms.dyn365.ops.version: Enterprise edition, July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ---
 # Sample for Retail POS integration with control units for Sweden
 

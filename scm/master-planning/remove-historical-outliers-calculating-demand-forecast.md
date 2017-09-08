@@ -3,7 +3,7 @@
 
 title: Remove outliers from historical transaction data when calculating a demand forecast
 description: This article describes how to exclude outliers from the historical data that is used to calculate a demand forecast. By excluding outliers, you can improve forecast accuracy.
-author: YuyuScheller
+author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

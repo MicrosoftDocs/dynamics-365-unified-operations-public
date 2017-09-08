@@ -73,9 +73,9 @@ Next, rename the original AXDB database **AXDB_orig**. This database might be us
 
 Finally, rename the newly restored AX 2012 database **AXDB**.
 
-### Run the MajorVersionDataUpgradeWithRetail.zip package
+### Run the MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip packages
 
-Run the data upgrade deployable package, which is called MajorVersionDataUpgradeWithRetail.zip as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). You will find the MajorVersionDataUpgradeWithRetail.zip in the same location described in the article for MinorVersionDataUpgrade.zip.
+Run the data upgrade deployable packages, which are called MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). You must run both packages, one after the other.
 
 ## Troubleshooting data upgrade script errors
 

@@ -3,7 +3,7 @@
 
 title: Dimensions
 description: To support different dimension patterns, a set of framework data entities has been created that can be used as data sources in other entities that involve dimensions.
-author: RobinARH
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 13461
 ms.assetid: c2431895-0751-4a2a-96cb-f7df76c88f66
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kuntalme
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

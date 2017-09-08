@@ -24,18 +24,24 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create an accelerated depreciation profile and assign it to book (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-For Japan, accelerated depreciation requires configuration of a depreciation profile, just like other depreciation methods. 
-
-Use this procedure to learn how to create a depreciation profile for accelerated depreciation and assign it to a book. 
-
-In order to complete this procedure, the Fixed Asset configuration key must be selected.
-
+For Japan, accelerated depreciation requires configuration of a depreciation profile, just like other depreciation methods. 
+
+
+
+Use this procedure to learn how to create a depreciation profile for accelerated depreciation and assign it to a book. 
+
+
+
+In order to complete this procedure, the Fixed Asset configuration key must be selected.
+
+
+
 This procedure was created using the demo data company JPMF.
 
 

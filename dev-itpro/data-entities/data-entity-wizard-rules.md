@@ -3,7 +3,7 @@
 
 title: Data entity wizard rules
 description: This article provides information about the natural key expansion of surrogate foreign key fields and the expansion of child/parent relations.
-author: RobinARH
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: margoc
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 6234
 ms.assetid: 551ac5d6-980c-487f-a15c-66d7ab80924a
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kuntalme
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
