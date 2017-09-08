@@ -42,55 +42,37 @@ The following table lists the product areas. Cloud and on-premises support is li
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
 | Compliance and certifications | | Yes | Yes |
-| | Compliance properties on table fields| Yes | Yes |
 | | SOC 1 Type 1 certification| Yes | No |
 | Cost accounting | | Yes | Yes |
 | | Cost accounting content pack for Power BI| Yes | No |
 | | Cost accounting workspace for mobile app| Yes | No |
 | Cost management| | Yes | Yes |
 | | Cost management content pack for Power BI | Yes | No |
-| Data management and integration| | | |
-| | Choose to truncate data in the entity before data is imported via files or data packages | Yes | Yes |
-| | Configuration data packages| Yes | Yes |
-| | Configuration data project templates| Yes | Yes |
-| | Configuration data projects| Yes | Yes |
+| Data management and integration| | Yes | Yes |
 | | Configuration-driven extension| Yes | No |
-| | Configure cross-company data sharing by replicating reference and group data between multiple companies in the same deployment. | Yes | Yes |
 | | Export data to your own data warehouse| Yes | No |
 | | Enable the export of incremental updates to a data entity | Yes | No |
 | Document management| | Yes| Yes |
 | Financial management|  | Yes | Yes |
-| Help| | | |
-| | Retrieve help topics in the client | Yes | No |
-| | Task guides for help| Yes | No |
+| Help| | Yes | No |
 | Human resources | | Yes | Yes |
 | Payroll|  | Yes | Yes |
 | | Direct deposit| Yes | No |
-| Intelligence| | | |
-| | Financial reporting | Yes | Yes|
-| | Electronic reporting (ER) - core functionality| Yes | Yes|
+| Intelligence| | Yes | Yes |
 | | Electronic reporting (ER) - Integration with LCS | Yes | No|
 | | Electronic reporting (ER) - Integration with SharePoint | Yes | No|
-| | Business documents with SSRS | Yes | Yes |
-| | Author reports in Power BI Desktop| Yes | Yes |
 | | Integration with PowerBI.com| Yes | No |
-| | Build your own data warehouse (BYOD)| Yes | Yes |
 | | Analytical workspaces | Yes | No |
 | | Intelligent business process: Recommendations| Yes | No |
-| | Intelligent business process: Demand forecasting | Yes | Yes |
 | Inventory management| | Yes | Yes |
 | Lifecycle services| | Yes | Yes |
 | | Configurable business processes | Yes | No |
 | LinkedIn engagement| | | |
-| Localizations| | | |
-| | Country/region localizations & languages| Yes | Yes |
-| | Dynamics Translation Service| Yes | Yes |
+| Localizations| | Yes | Yes |
 | | Global coverage - Retail| Yes | No |
 | Manufacturing| | Yes | Yes |
 | Master planning and forecasting| | Yes | Yes |
-| Mobile  | | | |
-| | Mobile framework| Yes | Yes |
-| | Dynamics 365 for Unified Operations mobile app and workspaces | Yes | Yes |
+| Mobile app, workspaces, and platorm  | | Yes | Yes |
 | Office integration| | Yes | Yes |
 | Organization administration | | Yes | Yes |
 | Procurement and sourcing| | Yes | Yes |
@@ -137,12 +119,10 @@ The following table lists the product areas. Cloud and on-premises support is li
 | Extensibility|  | Yes | Yes |
 | Monitoring and telemetry  || Yes | Yes |
 | Platform compatibility  || Yes |  |
-| Upgrade | | | |
+| Upgrade | | Yes | Yes |
 | | Upgrade | Yes | No |
 | | Upgrade and support for previous versions | Yes | No |
-| Servicing | | | |
+| Servicing | | Yes | Yes |
 | | Servicing environments - look on roadmap, yes/no does not make sense | Yes | No |
-| Build and test | | | |
-| | Build automation: Automatic update of model version during build | Yes | Yes |
-| | Build automation: Option to include runtime packages in the deployable package of the automated build output| Yes | Yes |
-| | Local task guides for testing | Yes | Yes |
+| Build and test | | Yes | Yes |
+
