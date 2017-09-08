@@ -2,10 +2,10 @@
 # required metadata
 
 title: Copy configuration data from one company to another
-description: This topic describes how to use a configuration data project and configuration data templates to move company configuration data between instances of Dynamics 365 for Finance and Operations.
-author: mfalkner
+description: This topic describes how to use a configuration data project and configuration data templates to move company configuration data between instances of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+author: mikefalkner
 manager: AnnBe
-ms.date: 05/23/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,17 +30,16 @@ ms.dyn365.ops.version: Platform update 7
 ---
 # Copy configuration data from one company to another
 
-You have two options for copying configuration data:
-1. If you are moving data between instances of Dynamics 365 for Finance and Operations, you must first export it from one company and then import it to another company.  
-2. If you want to move data from one legal entity into another legal entity in the same instance, you can use the Copy into legal entity feature.
+There are two options for copying configuration data in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition:
+1. If you are moving data between instances of Finance and Operations, you must first export it from one company and then import it to another company.  
+2. If you want to move data from one legal entity into another legal entity in the same instance, you can use the **Copy into legal entity** feature.
 
 
 ## Export a configuration
 
 The **Data management** workspace is your hub for managing configuration data projects and exporting data packages. To build a configuration, you must define a data project and export the information that is represented by entities.
 
-To create an export configuration data project, follow these steps.
-
+To create an export configuration data project:
 1. Open the **Data management** workspace. If you're in Standard view, click **Enhanced view**.
 2. Click the **Export** tile.
 3. Click **New** to create an export configuration data project, and enter an ID and name for the configuration.
@@ -54,7 +53,8 @@ To create an export configuration data project, follow these steps.
 
 6. Select a target data format. The system stores that last data format that you selected. Alternatively, if you select a file, the system automatically sets the data format to the data source that matches the file name extension.
 
-    **Note:** Composite entities require an XML format.
+ > [!NOTE]
+ > Composite entities require XML format.
 
 7. Click **Add**. If you load a template, and there is already an existing entity in the project that matches an entity in the template, the entity in the project will be replaced by the entity in the template. Some templates are very large, and they might take a few seconds to be loaded.
 8. Click **Remove entity** to remove one or more selected entities.
@@ -235,17 +235,19 @@ To copy a configuration from one legal entity into another in the same instance,
 2. Click the **Copy into legal entity** tile.
 3. Click **New** to create a configuration data project, and enter an ID and name for the configuration.
 4. Set the operation type for the data project to **Copy into legal entity**, and set the project category to **Configuration**.
-
 5. Select the legal entity that will be the source of the data to copy. The form will default to the legal entity that you are currently using.
 6. In the legal entities fast tab, you can select existing legal entities as a destination or you can create new ones:
 
-    - **Create** – Enter the legal entity ID, the legal entity name, and the region that it belongs in. Click on the **Create legal entity button**. The legal entity will be created and then added to the list of destination entities. **Note:** This functionality is available in monthly update 3 of the Spring 2017 release.
+    - **Create** – Enter the legal entity ID, the legal entity name, and the region that it belongs in. Click on the **Create legal entity button**. The legal entity will be created and then added to the list of destination entities.
+    
+    > [!NOTE]
+    > This functionality is available in App update 3.
     
     - **Select** – Select one or more legal entities from the dropdown list. Click on the **Add selected** button. The legal entity will be created and then added to the list of destination entities.  
     
-7. After you have added the destination legal entities, select Yes if you want the number sequences to be copied. The entities needed to copy the number sequence codes and number sequence references will be added to the project. The execution unit, level and sequence number for these entities are set to the numbers in the default System and Shared template. If you are not using the default templates, adjust the entity sequences so that they are first in the list.
+7. After you have added the destination legal entities, click **Yes** if you want the number sequences to be copied. The entities needed to copy the number sequence codes and number sequence references will be added to the project. The execution unit, level and sequence number for these entities are set to the numbers in the default System and Shared template. If you are not using the default templates, adjust the entity sequences so that they are first in the list.
 
-7. If you have selected Yes for number sequences, select Yes or No to reset those number sequence to the smallest value
+7. If you have selected Yes for number sequences, select **Yes** or **No** to reset those number sequence to the smallest value.
 
 9. Add the entities that represent the information that you want to copy. You can add entities by using several methods:
 
@@ -256,9 +258,9 @@ To copy a configuration from one legal entity into another in the same instance,
     
     We recommend that you use the default templates to ensure that the correct order is maintained and then add and remove entities to match the data that you want to copy. You can remove the entities that you do not want to copy.
     
-**Note:** If an entity has a field in it that represents the legal entity, a filter will be applied to that entity to include only the data for the source legal entity. The value for that field will be changed to the destination legal entity. 
-
-**Note:** Document, transaction, and composite entities are not available when copying into a legal entity.
+> [!NOTE]
+> If an entity has a field in it that represents the legal entity, a filter will be applied to that entity to include only the data for the source legal entity. The value for that field will be changed to the destination legal entity. 
+> Document, transaction, and composite entities are not available when copying into a legal entity.
 
 6. Click **Remove entity** to remove any selected entities, as required.
 
@@ -297,14 +299,14 @@ The following entities require special handling when they are used to copy into 
 
 ### Rules
 
-The copy into legal entity feature supports rules, which are modifications to the data before it is added to the import staging table. These rules are used today to change the legal entity to the destination legal entity and to modify the number sequences. You can also extend the rules. 
+The copy into legal entity feature supports rules, which let you modify data before it is added to the import staging table. For example, rules are used to change the target legal entity to the destination legal entity and to modify number sequences. You can extend rules. 
 
 Rules extensions require three changes:
 1. Add your rule name to the extensible enum: DMFRulesType
-2. For each project definition group, insert the enum you’ve just create (for example: DMFRulesType::NewRule) into the DMFRules table using your source legal entity, your rule type, and the definition group name. If you require more data be stored, like various options for your rule, you can create your own table and extend the DMFRules table
-3. Create your own class to handle the data on which the rule is acting. For the DMFRules framework to instantiate the rule, decorate the class with the attribute: [DMFRulesBaseFactoryAttribute(DMFRulesType::NewRule)]
+2. For each project definition group, insert the enum you’ve just created (for example: DMFRulesType::NewRule) into the DMFRules table using your source legal entity, your rule type, and the definition group name. If you require more data be stored, like various options for your rule, you can create your own table and extend the DMFRules table
+3. Create your own class to handle the data on which the rule is acting. For the DMFRules framework to instantiate the rule, you must decorate the class with the attribute: [DMFRulesBaseFactoryAttribute(DMFRulesType::NewRule)]
 
-The class will also need to extend the DMFRulesBase class, which will require an implementation of the method DMFRulesBase.runRule(Common _staging). The _staging record will be the buffer of the staging record to apply the rule to. 
+The class will also need to extend the DMFRulesBase class, which will require an implementation of the method DMFRulesBase.runRule(Common_staging). The \_staging record will be the buffer of the staging record to apply the rule to. 
 
 ## Additional information about entities
 
