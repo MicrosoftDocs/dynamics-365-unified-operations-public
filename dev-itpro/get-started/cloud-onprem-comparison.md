@@ -67,7 +67,6 @@ The following table lists the product areas. Cloud and on-premises support is li
 | Inventory management| | Yes | Yes |
 | Lifecycle services| | Yes | Yes |
 | | Configurable business processes | Yes | No |
-| LinkedIn engagement| | | |
 | Localizations| | Yes | Yes |
 | | Global coverage - Retail| Yes | No |
 | Manufacturing| | Yes | Yes |
@@ -118,7 +117,7 @@ The following table lists the product areas. Cloud and on-premises support is li
 | Visual Studio development |  | Yes | Yes |
 | Extensibility|  | Yes | Yes |
 | Monitoring and telemetry  || Yes | Yes |
-| Platform compatibility  || Yes |  |
+| Platform compatibility  || Yes | Yes |
 | Upgrade | | Yes | Yes |
 | | Upgrade | Yes | No |
 | | Upgrade and support for previous versions | Yes | No |
