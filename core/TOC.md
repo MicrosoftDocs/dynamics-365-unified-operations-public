@@ -49,7 +49,7 @@
 #### [Change the banner or logo](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Navigation search](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Personalize the user experience](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Use lookups to find information](/dynamics365/unified-operations/fin-and-ops//get-started/use-lookups-to-find-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Use lookups to find information](/dynamics365/unified-operations/fin-and-ops/get-started/use-lookups-to-find-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Change the date for the session](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/change-date-session?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set a user's preferred time zone](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Understand Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
