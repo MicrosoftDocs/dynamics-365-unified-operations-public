@@ -295,6 +295,17 @@ The following entities require special handling when they are used to copy into 
 | Retail | Retail store address book | This entity has a dependency on Retail channel so it cannot be used.| 
 | Sales and marketing | Intercompany trading partnerships | The copy into legal entity feature does not support intercompany trading partnerships at this time. The issue will be addressed in a future release.| 
 
+### Rules
+
+The copy into legal entity feature supports rules, which are modifications to the data before it is added to the import staging table. These rules are used today to change the legal entity to the destination legal entity and to modify the number sequences. You can also extend the rules. 
+
+Rules extensions require three changes:
+1. Add your rule name to the extensible enum: DMFRulesType
+2. For each project definition group, insert the enum you’ve just create (for example: DMFRulesType::NewRule) into the DMFRules table using your source legal entity, your rule type, and the definition group name. If you require more data be stored, like various options for your rule, you can create your own table and extend the DMFRules table
+3. Create your own class to handle the data on which the rule is acting. For the DMFRules framework to instantiate the rule, decorate the class with the attribute: [DMFRulesBaseFactoryAttribute(DMFRulesType::NewRule)]
+
+The class will also need to extend the DMFRulesBase class, which will require an implementation of the method DMFRulesBase.runRule(Common _staging). The _staging record will be the buffer of the staging record to apply the rule to. 
+
 ## Additional information about entities
 
 ### Obsolete entities
