@@ -101,7 +101,7 @@ The following entities require special handling when they are used in configurat
 | | Product document attachments | For Product document attachments and Released product document attachments, you must never skip staging, because additional steps are performed in the staging environment. You must use a data package for export and import, because the export file must be accompanied by a resources folder that contains the attachments. The entities support images, documents, notes, and links. When you export, you will see an image file that has a name that looks like a globally unique identifier (GUID). This file is a valid data package that is required in order to complete the import. |
 | | Product attribute values | Product attribute values are assigned only when a user opens the **Attribute values** page from the **Products details** page. Currently, you can't import the values unless this step was performed in the golden build. |
 | Procurement | Vendor catalog | See the "Vendor catalogs import" section of [Vendor catalogs in Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) on the Supply Chain Management blog. |
-| Project | Shared category | The Shared category entity now exposes the following fields: CATEGORYID, CATEGORYNAME, EXPENSETYPE, USINEXPENSE, USINPRODUCTION, USEINPROJECT. Note when change USEINEXPENSE to yes, EXPENSETYPE should be filled using one of the valid values available in the Expense type field found on the Shared category form. |
+| Project | Shared category | The Shared category entity now exposes the following fields: CATEGORYID, CATEGORYNAME, EXPENSETYPE, USINEXPENSE, USINPRODUCTION, USEINPROJECT. If you change USEINEXPENSE to yes, EXPENSETYPE should be filled using one of the valid values available in the Expense type field found on the Shared category form. |
 
 ### Remove the mapping and apply filters for specific entity fields
 
@@ -190,9 +190,11 @@ If you want to change the legal entity ID to another value, you must change the 
 
 The legal entity ID is stored in many places. Therefore, it can be difficult to make this change, and you might cause errors if you try. 
 
-**Note:** When you set up a data project to copy into a legal entity, a legal entity filter for the source legal entity is automatically added to any entity field that is determined to be a legal entity field. 
+> [!NOTE]
+> When you set up a data project to copy into a legal entity, a legal entity filter for the source legal entity is automatically added to any entity field that is determined to be a legal entity field. 
 
-**Tip:** To export a single legal entity, you can create a copy into legal entity data project and specify the legal entity that you want to copy as the source legal entity. When you add entities or load templates, that type of project will automatically add legal entity filters. You can then download the package or create a template from it in the Templates form. The package or template can then be added to an export project and used to export the legal entity. 
+### Selecting a single legal entity for export
+To export a single legal entity, you can create a Copy into legal entity data project and specify the legal entity that you want to copy as the source legal entity. When you add entities or load templates, that type of project will automatically add legal entity filters. You can then download the package or create a template from it in the Templates form. The package or template can then be added to an export project and used to export the legal entity. 
 
 ## Import a configuration
 
