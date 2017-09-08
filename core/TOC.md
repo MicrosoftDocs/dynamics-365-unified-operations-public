@@ -1375,6 +1375,7 @@
 ##### [Manage warehouse workers](/dynamics365/unified-operations/supply-chain/warehousing/manage-warehouse-workers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Picking and packing
 ##### [Batch and license plate confirmation](/dynamics365/unified-operations/supply-chain/warehousing/batch-and-license-plate-confirmation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Create a mobile device menu item for license plate consolidation](/dynamics365/unified-operations/supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Mixed license plate receiving](/dynamics365/unified-operations/supply-chain/warehousing/mixed-license-plate-receiving?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Configure Display older batches within warehouse on a mobile device](/dynamics365/unified-operations/supply-chain/warehousing/display-older-batches-within-warehouses?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Pick oldest batch on a mobile device](/dynamics365/unified-operations/supply-chain/warehousing/pick-oldest-batch?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1393,10 +1394,8 @@
 ##### [Inventory tag counting](/dynamics365/unified-operations/supply-chain/inventory/inventory-tag-counting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Replenishment](/dynamics365/unified-operations/supply-chain/warehousing/replenishment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Replenishment with withdrawal kanbans](/dynamics365/unified-operations/supply-chain/warehousing/material-replenishment-withdrawal-kanban?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Mobile devices
-##### [Install and configure the warehousing app ](/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Install and configure the warehousing app ](/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Configure field names in warehousing app](/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Create a mobile device menu item for license plate consolidation](/dynamics365/unified-operations/supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up mobile devices for warehouse work](/dynamics365/unified-operations/supply-chain/warehousing/configure-mobile-devices-warehouse?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up a mobile device menu item for completing work in a purchase order](/dynamics365/unified-operations/supply-chain/warehousing/tasks/set-up-mobile-device-menu?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Set up a mobile device menu item to register received items](/dynamics365/unified-operations/supply-chain/warehousing/tasks/set-up-mobile-device-menu-item-register-received-items?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
