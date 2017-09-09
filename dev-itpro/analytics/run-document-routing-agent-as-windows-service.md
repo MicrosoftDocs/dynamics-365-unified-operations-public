@@ -95,17 +95,17 @@ The Document Routing Agent is now running as a Windows service.
 #### 2. Dynamics 365 Security Roles
 -   To access the application links to install the Document Routing Agent, the user must be part of the **Document routing client security role**
     
-#### 3.  Service Account
+#### 3.  Review the service account's access rights
 -   Ensure that the **DocumentRoutingService** service is running as a domain account that has access to the network devices
     
 #### 4.  Refresh Azure Service Token  
 -   Azure authentication tokens must be **refreshed every 90 days** while the Document Routing Agent is running as a Windows Service
 -   Open the client and use the menu item commands to **Sign Out** and then **Sign In** to refresh the service token
     
-#### 5.  Remote Administration
--   When connecting to the host machine using Remote Desktop, ensure that you uncheck the "Printers" option in the Local devices and resources section on the Local Resources tab 
+#### 5.  Disable shared printers for Remote Access
+-   When connecting to the host machine using Remote Desktop, ensure that you uncheck the **Printers** option in the Local devices and resources section on the Local Resources tab 
     
-#### 6.  Event logs
+#### 6.  Check the Event logs
 -   Open the system Event Viewer on the host machine 
 -   Review logs under:  **Application and Services Logs > Microsoft > Dynamics > AX-SSRSReportsShared**
 
