@@ -63,13 +63,14 @@ You must set up general warehouse configurations before you can perform inbound 
 ### Next steps
 After you configure the general warehouse parameters, you can complete the setup for the following areas:
 
-- Set up number sequences for warehouse management: https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json
-- Set up parameters to create a warehouse location 
-- Set up mobile device menus to display work or activities: Set up mobile devices for warehouse work 
-- Create a location directive and a work template:  Control warehouse work by using work templates and location directives, 
-- Purchase order specific: Set up a location directive for purchase order put-away, Set up a work template for purchase orders
+- Set up number sequences for warehouse management: [Number sequences] (/dynamics365/unified-operations//core/organization-administration/number-sequence-overview)
 
-## Warehouse configuration
+- Set up parameters to create a warehouse location 
+- Set up mobile device menus to display work or activities: [Set up mobile devices for warehouse work](/dynamics365/unified-operations/supply-chain/warehousing/configure-mobile-devices-warehouse)
+- Create a location directive and a work template:  [Control warehouse work by using work templates and location directives](/dynamics365/unified-operations/supply-chain/warehousing/control-warehouse-location-directives) 
+- Purchase order specific: [Set up a location directive for purchase order put-away](/dynamics365/unified-operations/supply-chain/transportation/set-up-location-directive-purchase-order-put-away, Set up a work template for purchase orders
+
+## Warehouse layout supporting business processes
 Read more about how to define your warehouse layout and how to enable warehouse processes according to business requirements. The most important components that you must configure are wave templates, work templates, work pools, and location directives.
 
 - [Warehouse configuration](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration)
