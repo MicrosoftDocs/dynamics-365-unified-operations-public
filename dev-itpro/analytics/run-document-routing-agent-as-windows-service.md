@@ -91,7 +91,7 @@ By default, the Document Routing Agent runs as a desktop application. To run the
 
 The Document Routing Agent is now running as a Windows service.
 
-## TROUBLESHOOTING
+## Troubleshoot
 #### 1.  Verify the network printer connection
 -   Check to make sure the active account has sufficient access rights with the **Network Printer**
 -   Verify that the user account is able to print successfully on the network device using Notepad or other local application
