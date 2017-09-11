@@ -1,4 +1,37 @@
-# Business Process Modeler
+---
+
+title: Business process modeler
+description:
+author: kfend
+manager: AnnBe
+ms.date: 08/27/2017
+ms.topic: article
+ms.prod: 
+ms.service:  dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: AX 2012, Operations, UnifiedOperations
+# ms.tgt_pltfrm: 
+ms.custom: 13301
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: ntecklu
+ms.search.validFrom: 
+ms.dyn365.ops.version: 2012
+
+---
+
+# Business process modeler
+
+[!include[banner](../includes/banner.md)]
 
 The Business Process Modeler (BPM) for Microsoft Dynamics is a tool to create, view, and modify repeatable implementations based on business-process libraries and flowcharts for Microsoft Dynamics 365. BPM helps you align your Dynamics 365 processes with industry-standard processes as described by the   [American Productivity &amp; Quality Center (APQC)](http://www.apqc.org/). You can perform fit-gap analysis between your business needs and the default processes in Dynamics 365. Additionally, you may add new business processes and create flowcharts for processes that are not already defined in Microsoft Dynamics 365. BPM is compatible with the following applications:
 
@@ -51,4 +84,3 @@ Learn how to make the most of BPM.
 [Flowcharts in Business process modeler](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/flowcharts-business-process-modeler)
 
 [Upload custom business processes to BPM](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/upload-business-processes-bpm-task-recorder)
-
