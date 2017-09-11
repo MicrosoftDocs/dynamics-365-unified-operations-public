@@ -113,8 +113,6 @@ The following table provides information about the recent releases of the applic
 
 |                       | **Dynamics AX 7.0** | **Dynamics AX application 7.0.1** | **Dynamics 365 for Operations (1611)** | **Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update** |
 |-----------------------|---------------------|-----------------------------------|----------------------------------------|----------------------------------------------------------------------------------|
-| **Application update 2** |           |                         |                              |   
-| **Application update 1** |           |                         |                              |   
 | **Platform update 10** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
 | **Platform update 9** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
 | **Platform update 8** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
