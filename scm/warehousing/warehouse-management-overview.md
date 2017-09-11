@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-The warehouse management system in Dynamics 365 for Finance and operations, Enterprise edition supports the following warehouse processes.
+The warehouse management system in Dynamics 365 for Finance and operations, Enterprise edition offers a wide pallet of capabilities to support the warehouse facility at an optimal level at any time. Warehouse management is fully integrated with other business processes in Dynamics 365 such as transportation, manufacturing, quality control, purchase, transfer, sales, and returns.
 
 ## Warehouse management processes in Dynamics 365 for Finance and operations
 - Integrated support for source documents for sales orders, returns, transfer orders, production orders, and kanban  
@@ -54,24 +54,14 @@ The warehouse management system in Dynamics 365 for Finance and operations, Ente
 - Cluster picking
 - Simple cross docking
 
-
 ## Get started
-To get started working with Warehouse management you need to complete the setup of the general warehouse parameters and you must configure important components such as wave templates, work templates, work pools, and location directives to support the business processes of you company.  
+To get started working with Warehouse management you need to complete the setup of the general warehouse parameters and to support the business processes of you company, you must configure components for inbound and outbound warehouse process workflows such as wave templates, work templates, work pools, barcode scanner flows and location directives.
 
-
-## General warehouse parameters
-You must set up general warehouse parameters before you can perform inbound and outbound warehouse transactions. Use the **Warehouse management parameters** form to set up the following parameters:
-
-What should be mentioned here? The follwing list is based on technet (for AX2012):
-- Locations 
-- License plates 
-- Inventory adjustments 
-- Work 
-- Warehouse mobile devices 
-- Inventory status 
+## General warehouse configurations
+You must set up general warehouse configurations before you can perform inbound and outbound warehouse transactions.
 
 ### Next steps
-After you configure the general warehouse parameters, you can complete the setup for the following areas
+After you configure the general warehouse parameters, you can complete the setup for the following areas:
 
 - Set up number sequences for warehouse management: https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json
 - Set up parameters to create a warehouse location 
