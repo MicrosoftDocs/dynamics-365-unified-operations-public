@@ -31,13 +31,14 @@ ms.dyn365.ops.version: Platform update 9
 
 # Cloud and on-premises feature comparison
 
-The following table shows whether each feature is available in:
+This topic shows whether each feature is available in:
 
-+ Dynamics 365 for Finance and Operations, Enterprise Edition (cloud)
-+ Dynamics 365 for Finance and Operations, Enterprise Edition (on-premises)
++ Dynamics 365 for Finance and Operations, Enterprise edition (cloud)
++ Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)
+
+The following tables list the product areas. Cloud and on-premises support is listed for the feature as a whole. Where specific features differ from the area overall, the features are listed on a separate line in the Feature column.
 
 ## Dynamics 365 for Finance and Operations
-The following table lists the product areas. Cloud and on-premises support is listed for the feature as a whole. Where specific features differ from the area overall, the features are listed on a separate line.
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
@@ -56,8 +57,6 @@ The following table lists the product areas. Cloud and on-premises support is li
 | Financial management|  | Yes | Yes |
 | Help| | Yes | No |
 | Human resources | | Yes | Yes |
-| Payroll|  | Yes | Yes |
-| | Direct deposit| Yes | No |
 | Intelligence| | Yes | Yes |
 | | Electronic reporting (ER) - Integration with LCS | Yes | No|
 | | Electronic reporting (ER) - Integration with SharePoint | Yes | No|
@@ -71,9 +70,11 @@ The following table lists the product areas. Cloud and on-premises support is li
 | | Global coverage - Retail| Yes | No |
 | Manufacturing| | Yes | Yes |
 | Master planning and forecasting| | Yes | Yes |
-| Mobile app, workspaces, and platorm  | | Yes | Yes |
+| Mobile app, workspaces, and platform  | | Yes | Yes |
 | Office integration| | Yes | Yes |
 | Organization administration | | Yes | Yes |
+| Payroll|  | Yes | Yes |
+| | Direct deposit| Yes | No |
 | Procurement and sourcing| | Yes | Yes |
 | | Punch-out to external catalog from purchase requisition| Yes | No |
 | | Purchase spend analysis Power BI reports| Yes | No |
