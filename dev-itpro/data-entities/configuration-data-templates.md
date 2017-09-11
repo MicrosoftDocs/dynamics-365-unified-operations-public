@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 7
 Configuration data templates are predefined lists of entities for each module area that can be used in a data project. You can create, view, and modify these templates by using the **Template** page in the **Data management** workspace of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 > [!IMPORTANT]
-> Default configuration templates were delivered in the July 2017 update. The Configuration data project feature is available in Microsoft Dynamics 365 for Operations platform update 7. You can create and use your own templates in the current product release.
+> Default configuration templates were delivered in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. The Configuration data project feature is available in Microsoft Dynamics 365 for Operations platform update 7. You can create and use your own templates in the current product release.
 
 ## Create a new configuration data template
 The **Template** page in the **Data management** workspace provides tools that let you create a template of entities. This page resembles the configurations page, and the two features work in a similar manner. You must use **Enhanced view** to take advantage of the new features.
@@ -43,7 +43,7 @@ To create a template, follow these steps.
 2. Add or remove entities as you require.
 3. Organize the list by using the **Sort by** button to reorder your entities by entity group, or by unit, level, and sequence.
 4. To change the sequence of any of the entities, manually edit the unit, level, or sequence. Alternatively, use the **Resequence** button to update any entities that you've selected. The **Resequence** button appears only if you select more than one entity.
-5. To add filters to an entity, use the **Filter** button. Then review the results of the filters by using the **Preview** button. If you add a filter, the **Filter** button changes to an **Edit** button.
+5. To add filters to an entity, use the **Filter** button. Then review the results of the filters by using the **Preview** button. If you add a filter, the **Filter** button is changed to an **Edit** button.
 6. If you don't want all fields to be mapped, you can use the **View map** button to exclude fields from the mapping.
 7. Select **Validate template** to change the status to **Validated**.
 
@@ -55,7 +55,7 @@ Your template can now be used in a project. However, you might want to use some 
 - To create a template from a project, select **New** to create a template. Enter an ID and name for the template, and then select **Replace template from project**. In the list of projects that appears, select a project, and then select **Create template** to bring the project entities from that project into the open template. The values in the open template will be overwritten.
 
 ## Default data templates
-In the July 2017 update, we released predefined templates to help you create configuration data projects. The templates are sequenced, so that the data that the entities generate will be processed in the correct order. Our predefined templates are also designed to maintain the correct sequence when more than one template is added to the same data project. For more information, see the "Sequencing in the default templates" section.
+In July 2017 update, we released predefined templates to help you create configuration data projects. The templates are sequenced, so that the data that the entities generate will be processed in the correct order. Our predefined templates are also designed to maintain the correct sequence when more than one template is added to the same data project. For more information, see the "Sequencing in the default templates" section.
 
 Default templates are delivered together with each new release of Finance and Operations. Our long-term goal is to provide the templates in Microsoft Dynamics Lifecycle Services (LCS), so that you can push them to an instance of Finance and Operations. However, for the current releases, select the **Templates** tile in the **Data management** workspace, and then select **Load default templates** to load the templates. To see the **Load default templates** menu, you must use **Enhanced view**.
 
@@ -77,7 +77,7 @@ The unit, level, and sequence of an entity are used to control the order that th
 
 Entities are categorized by module name, entity category, and tag.
 
-- The module represents the module that the entity is typically used for. 
+- The module represents the module that the entity is typically used for.
 - The entity category represents the type of information in the category. For example, a category might include parameters or reference data.
 - Tags provide additional details about the function of the entity in the feature area. For example, entities for the general ledger have **General ledger** as their module name. There are several tasks within the general ledger, and the tags represent those tasks. For example, **Setup** and **Journals** are tags that represent tasks that can be done for the general ledger.
 
@@ -113,7 +113,7 @@ The following table shows how the templates were set up to handle dependencies. 
 | Warehouse management    | 1    | 400 	 |
 | Production control      | 1    | 410 	 |
 | Costing                 | 1    | 420 	 |
-| Retail (see note)       | 1    | 500 	 | 
+| Retail (See the note.)  | 1    | 500 	 | 
 | Expense management      | 1    | 600 	 |
 | Project accounting      | 1    | 650 	 |
 | Human resources         | 1    | 700 	 |
@@ -135,7 +135,7 @@ Some entities are required in more than one template. For example, you must have
 
 A data project can include only one instance of an entity. If you add a template, and the template contains an entity that already exists in a data project, the entity in that template replaces the entity that is currently in the project.
 
-You can use this capability to override the default templates without changing them. For example, the **worker** field hasn't been mapped in your data project, but you have your own template that adds workers. In this case, you can build a template that includes the entities that have the **worker** field. In that template, you can map the **worker** field. Entities in the data project that don't have the field mapped will then be replaced.
+You can use this capability to override the default templates without changing them. For example, the **worker** field hasn't been mapped in your data project, but you have your own template that adds workers. In this case, you can build a template that includes the entities that have the **worker** field. In that template, you can map the **worker** field. Any entities in the data project that don't have the field mapped will then be replaced.
 
 #### Merged templates
 We have created larger templates that cover multiple module areas. You can use the larger templates or any combination of smaller templates to build a data project. The following combined templates are available:
@@ -147,6 +147,6 @@ We have created larger templates that cover multiple module areas. You can use t
 The Expense and Project Management templates aren't included in a larger template. However, they are designed so that they can easily be merged into a project that uses other templates.
  
 #### Master data
-Many default templates include entities for master data such as customers, vendors, and released products. These entities are included to indicate the proper sequence of entities that you will require after you've loaded parameters and reference data. Master entities are most often sequenced in the module bands that are numbered 100 and above. In the grid, the entity category for these entities will be **Master**.
+Many default templates include entities for master data such as customers, vendors, and released products. These entities are included to indicate the correct sequence of entities that you will require after you've loaded parameters and reference data. Master entities are most often sequenced in the module bands that are numbered 100 and above. In the grid, the entity category for these entities will be **Master**.
 
 If you don't want to include master data in your configuration, remove those entities from your project.
