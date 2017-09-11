@@ -62,6 +62,7 @@ To create a database copy, make a backup of the original database, and restore i
 
 Here is an example of the code that creates a database copy. You must modify this example to reflect your specific database names.
 
+```
 	BACKUP DATABASE [AxDB] TO  DISK = N'D:\Backups\axdb_copyForUpgrade.bak' WITH NOFORMAT, NOINIT,  
 	NAME = N'AxDB_copyForUpgrade-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION,  STATS = 10
 	GO
@@ -71,8 +72,11 @@ Here is an example of the code that creates a database copy. You must modify thi
 	MOVE N'AXDBBuild_Log' TO N'G:\MSSQL_LOGS\AxDB_CopyForUpgrade.ldf',  
 	NOUNLOAD,  STATS = 5
 
+```
+
 After the copy is created, run the following Transact-SQL (T-SQL) script against it.
 
+```
 	--remove NT users as these are not supported in Azure SQL Database
 	declare 
 	@SQL varchar(255),
@@ -96,7 +100,7 @@ After the copy is created, run the following Transact-SQL (T-SQL) script against
 
 	go
 	
-	--remove any 2012 RTM model store procedures if they still exist
+	--remove any AX 2012 RTM model store procedures that still exist
 	declare 
 	@SQL varchar(255),
 	@procname varchar(255)
@@ -118,9 +122,12 @@ After the copy is created, run the following Transact-SQL (T-SQL) script against
 	DEALLOCATE procCursor
 
 	go
-	--If you receive message that you cannot delete users as they own a schema, then check which schema the users own - either change the ownership to another user (for exmaple to dbo) or drop the schema if it does not contain 
-	-- any objects - the examples below are for a AX2012 Demo environment you will need to edit this for your specific environment
-	if exists (select 1 from sys.schemas where name = 'contoso\admin')
+	
+	--If you receive a message that you cannot delete users because they own a schema, then check which schema the user owns. 
+	--Either change the ownership to another user (for example to dbo) or drop the schema if it does not contain any objects. 
+	--The examples below are for an AX 2012 demo environment. You will need to edit this for your specific environment.
+
+        if exists (select 1 from sys.schemas where name = 'contoso\admin')
 	begin
 		drop schema [contoso\admin]
 	end
@@ -129,7 +136,7 @@ After the copy is created, run the following Transact-SQL (T-SQL) script against
 		drop schema [CONTOSO\Domain Users]
 	end
 	go
-	--drop all views in the current database as some refresh tempDB which is not supported in Azure SQL Database
+	--drop all views in the current database because some refresh the tempDB, which is not a supported action in Azure SQL Database
 
 	declare 
 	@SQL2 varchar(255),
@@ -156,11 +163,12 @@ After the copy is created, run the following Transact-SQL (T-SQL) script against
 	DEALLOCATE viewCursor
 	go
 
-	-- Drop the following procedure as it contains a tempDB reference which is not supported in Azure SQL Database
+	-- Drop the following procedure because it contains a tempDB reference that is not supported in Azure SQL Database
 	If exists (select 1 from sys.procedures where name = 'MaintainShipCarrierRole')
 	begin
 		drop procedure MaintainShipCarrierRole
 	end	
+```
 
 ### Export the copied database to a bacpac file
 
@@ -175,9 +183,11 @@ This step is important, because the export will have to be done again during the
 
 Next, open a **Command Prompt** window as an administrator, and run the following commands.
 
-	cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
+```
+cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
-	SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false
+SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false
+```
 
 Here is an explanation of the parameters:
 
@@ -207,9 +217,11 @@ For performance reasons, we recommend that you put the bacpac file on drive D on
 
 Open a **Command Prompt** window as an administrator, and run the following commands.
 
+```
 	cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
 	SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=P1
+```
 
 Here is an explanation of the parameters:
 
@@ -233,34 +245,36 @@ Run the following script against the imported database. The script performs the 
 -   Set the correct performance parameters.
 -   Enable the SQL Query Store feature.
 
-		CREATE USER axdeployuser FROM LOGIN axdeployuser
-		EXEC sp_addrolemember 'db_owner', 'axdeployuser'
+```
+	CREATE USER axdeployuser FROM LOGIN axdeployuser
+	EXEC sp_addrolemember 'db_owner', 'axdeployuser'
 
-	    CREATE USER axdbadmin WITH PASSWORD = 'password from lcs'
-	    EXEC sp_addrolemember 'db_owner', 'axdbadmin'
+	CREATE USER axdbadmin WITH PASSWORD = 'password from lcs'
+	EXEC sp_addrolemember 'db_owner', 'axdbadmin'
 
-	    CREATE USER axruntimeuser WITH PASSWORD = 'password from lcs'
-	    EXEC sp_addrolemember 'db_datareader', 'axruntimeuser'
-	    EXEC sp_addrolemember 'db_datawriter', 'axruntimeuser'
+	CREATE USER axruntimeuser WITH PASSWORD = 'password from lcs'
+	EXEC sp_addrolemember 'db_datareader', 'axruntimeuser'
+	EXEC sp_addrolemember 'db_datawriter', 'axruntimeuser'
 
-	    CREATE USER axmrruntimeuser WITH PASSWORD = 'password from lcs'
-	    EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser'
-	    EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
-	    EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
+	CREATE USER axmrruntimeuser WITH PASSWORD = 'password from lcs'
+	EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser'
+	EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
+	EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
 
-	    CREATE USER axretailruntimeuser WITH PASSWORD = 'password from lcs'
-	    EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
-	    EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
+	CREATE USER axretailruntimeuser WITH PASSWORD = 'password from lcs'
+	EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
+	EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 
-	    CREATE USER axretaildatasyncuser WITH PASSWORD = 'password from lcs'
-	    EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
+	CREATE USER axretaildatasyncuser WITH PASSWORD = 'password from lcs'
+	EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
 
-	    ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
-	    ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
-	    ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
-	    ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
-	    ALTER DATABASE imported-database-name SET COMPATIBILITY_LEVEL = 130;
-	    ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
+	ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
+	ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
+	ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
+	ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
+	ALTER DATABASE imported-database-name SET COMPATIBILITY_LEVEL = 130;
+	ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
+```
 
 ### Run the MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip packages
 
