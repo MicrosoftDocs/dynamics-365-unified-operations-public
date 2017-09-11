@@ -84,7 +84,7 @@ The following list provides an overview of the process to calculate GST and prep
 <li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax?toc=dynamics365/unified-operations/fin-and-ops/toc.json">Create ledger posting groups.</a></li>
 <li>Set up the GST sales tax authority</li>
 <li>Create settlement periods</li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/apac-aus-business-activity-statement.md##gst-reporting-codes">Set up sales tax reporting codes for GST</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/apac-aus-business-activity-statement?toc=dynamics365/unified-operations/fin-and-ops/toc.json#gst-reporting-codes">Set up sales tax reporting codes for GST</a></li>
 <li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/tasks/set-up-sales-tax-codes?toc=dynamics365/unified-operations/fin-and-ops/toc.json">Set up sales tax codes</a></li>
 <li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups?toc=dynamics365/unified-operations/fin-and-ops/toc.json">Set up sales tax groups and item sales tax groups</a></li>
 <li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/tasks/set-up-reason-codes-australia-bas?toc=dynamics365/unified-operations/fin-and-ops/toc.json">Set up reason codes for Australia BAS</a></li>
