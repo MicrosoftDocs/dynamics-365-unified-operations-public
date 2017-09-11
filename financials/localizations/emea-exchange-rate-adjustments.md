@@ -56,33 +56,47 @@ Here are the exchange rates for Canadian dollars (CAD) to U.S. dollars (USD) for
 -   December 31, 2012: 450.0000
 -   January 3, 2013: 420.0000
 
-| Event                                       | Date                             | Debit/credit | Amounts               | General ledger (GL) account    | Transaction type             | Posting type       | Credit | Correction |
-|---------------------------------------------|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
-| Invoice                                     | 1-Dec-12                         | Debit        | 10,000 CAD/40,000 USD | AR                             | Invoice                      | Customer balance   |        |            |
-| Invoice                                     | 1-Dec-12                         | Credit       | 10,000 CAD/40,000 USD | Offset                         | Invoice                      | Ledger journal     | X      |            |
-| Payment                                     | 3-Jan-13                         | Debit        | 10,000 CAD/42,000 USD | Offset                         | Payment                      | Ledger journal     |        |            |
-| Payment                                     | 3-Jan-13                         | Credit       | 10,000 CAD/42,000 USD | AR                             | Payment                      | Customer balance   | X      |            |
-| Settlement                                  | January 3, 2013 (= payment date) | Debit        | 0 CAD/2,000 USD       | AR                             | Customer                     | Exchange rate gain |        |            |
-| Settlement                                  | January 3, 2013 (= payment date) | Credit       | 0 CAD/2,000 USD       | Realized currency adj profit   | Customer                     | Exchange rate gain | X      |            |
-| Revaluation  (Standard method; date = December 31, 2012) | 31-Dec-12           | Debit        | 0 CAD/5,000 USD       | AR                             | Foreign currency revaluation | Exchange rate gain |        |            |
-| Revaluation  (Standard method; date = December 31, 2012) | 31-Dec-12           | Credit       | 0 CAD/5,000 USD       | Unrealized currency adj profit | Foreign currency revaluation | Exchange rate gain | X      |            |
-| Revaluation  (Standard method; date = December 31, 2012) | 3-Jan-13            | Debit        | 0 CAD/5,000 USD       | AR                             | Foreign currency revaluation | Exchange rate gain |        | X          |
-| Revaluation  (Standard method; date = December 31, 2012) | 3-Jan-13            | Credit       | 0 CAD/5,000 USD       | Unrealized currency adj profit | Foreign currency revaluation | Exchange rate gain | X      | X          |
+### Invoice
+| Date                             | Debit/credit | Amounts               | General ledger (GL) account    | Transaction type             | Posting type       | Credit | Correction |
+|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
+| 1-Dec-12                         | Debit        | 10,000 CAD/40,000 USD | AR                             | Invoice                      | Customer balance   |        |            |
+| 1-Dec-12                         | Credit       | 10,000 CAD/40,000 USD | Offset                         | Invoice                      | Ledger journal     | X      |
+
+### Payment
+| Date                             | Debit/credit | Amounts               | General ledger (GL) account    | Transaction type             | Posting type       | Credit | Correction |
+|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
+| 3-Jan-13                         | Debit        | 10,000 CAD/42,000 USD | Offset                         | Payment                      | Ledger journal     |        |            |
+| 3-Jan-13                         | Credit       | 10,000 CAD/42,000 USD | AR                             | Payment                      | Customer balance   | X      |            |
+
+### Settlement
+| Date                             | Debit/credit | Amounts               | General ledger (GL) account    | Transaction type             | Posting type       | Credit | Correction |
+|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
+|January 3, 2013 (= payment date) | Debit        | 0 CAD/2,000 USD       | AR                             | Customer                     | Exchange rate gain |        |            |
+January 3, 2013 (= payment date) | Credit       | 0 CAD/2,000 USD       | Realized currency adj profit   | Customer                     | Exchange rate gain | X      |            |
 
 
+### Revaluation  (Standard method; date = December 31, 2012)
+For this revaluation example, notice that the entry from January 3, 2013, is a direct reversal of the December 31, 2012 entry. Even the GL accounts and posting types are the same. Additionally, notice that the **Correction** flag has been set.
 
-For the preceding revaluation, notice that the entry from January 3, 2013, is a direct reversal of the entry above it (from December 31, 2012). Even the GL accounts and posting types are the same. Additionally, notice that the **Correction** flag has been set.
-||||||||||
-|-----------------------------------------------------------|----------|--------|-----------------|--------------------------------|------------------------------|--------------------|---|---|
-|Revaluation (Invoice date method; date = January 1, 2013)  | 1-Jan-13 | Debit  | 0 CAD/5,000 USD | AR                             | Foreign currency revaluation | Exchange rate gain |   | X |
-| Revaluation (Invoice date method; date = January 1, 2013) | 1-Jan-13 | Credit | 0 CAD/5,000 USD | Unrealized currency adj profit | Foreign currency revaluation | Exchange rate gain | X | X |
-| Revaluation (Invoice date method; date = January 1, 2013) | 3-Jan-13 | Debit  | 0 CAD/5,000 USD | AR                             | Foreign currency revaluation | Exchange rate gain |   |   |
-| Revaluation (Invoice date method; date = January 1, 2013) | 3-Jan-13 | Credit | 0 CAD/5,000 USD | Unrealized currency adj profit | Foreign currency revaluation | Exchange rate gain | X |   |
+| Date                             | Debit/credit | Amounts               | General ledger (GL) account    | Transaction type             | Posting type       | Credit | Correction |
+|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
+| 31-Dec-12           | Debit        | 0 CAD/5,000 USD       | AR                             | Foreign currency revaluation | Exchange rate gain |        |            |
+| 31-Dec-12           | Credit       | 0 CAD/5,000 USD       | Unrealized currency adj profit | Foreign currency revaluation | Exchange rate gain | X      |            |
+| 3-Jan-13            | Debit        | 0 CAD/5,000 USD       | AR                             | Foreign currency revaluation | Exchange rate gain |        | X          |
+ 3-Jan-13            | Credit       | 0 CAD/5,000 USD       | Unrealized currency adj profit | Foreign currency revaluation | Exchange rate gain | X      | X          |
+ 
 
-For the preceding revaluation, notice that the entry from January 1, 2013, is a direct reversal of the entry below it (from January 3, 2013). Even the GL accounts and posting types are the same. Additionally, notice that the **Correction** flag has been set.
+### Revaluation (Invoice date method; date = January 1, 2013)
+For this revaluation, notice that the entry from January 1, 2013, is a direct reversal of the January 3, 2013 entry). Even the GL accounts and posting types are the same. Additionally, notice that the **Correction** flag has been set.
+
+| Date   | Debit/credit | Amounts | General ledger (GL) account| Transaction type| Posting type| Credit | Correction |
+|--------|--------------|---------|----------------------------|----------------|--------|------------|--------------|
+|1-Jan-13 | Debit  | 0 CAD/5,000 USD | AR                             | Foreign currency revaluation | Exchange rate gain |   | X |
+|1-Jan-13 | Credit | 0 CAD/5,000 USD | Unrealized currency adj profit | Foreign currency revaluation | Exchange rate gain | X | X |
+|3-Jan-13 | Debit  | 0 CAD/5,000 USD | AR                             | Foreign currency revaluation | Exchange rate gain |   |   |
+|3-Jan-13 | Credit | 0 CAD/5,000 USD | Unrealized currency adj profit | Foreign currency revaluation | Exchange rate gain | X |   |
 
 The system behavior is the same, regardless of whether the **Correction** option in the **Transaction reversal** section on the **General ledger parameters** page is set to **Yes** or **No**.
-
 
 
 
