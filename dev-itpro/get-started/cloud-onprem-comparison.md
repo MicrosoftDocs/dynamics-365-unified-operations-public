@@ -115,14 +115,14 @@ The following tables list the product areas. Cloud and on-premises support is li
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
-| Visual Studio development |  | Yes | Yes |
+| Build and test | | Yes | Yes |
 | Extensibility|  | Yes | Yes |
 | Monitoring and telemetry  || Yes | Yes |
 | Platform compatibility  || Yes | Yes |
+| Servicing | | Yes | Yes |
+| | Servicing environments | Yes | No |
 | Upgrade | | Yes | Yes |
 | | Upgrade | Yes | No |
 | | Upgrade and support for previous versions | Yes | No |
-| Servicing | | Yes | Yes |
-| | Servicing environments - look on roadmap, yes/no does not make sense | Yes | No |
-| Build and test | | Yes | Yes |
+| Visual Studio development |  | Yes | Yes |
 
