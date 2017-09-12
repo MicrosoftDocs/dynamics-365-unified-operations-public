@@ -2,10 +2,10 @@
 # required metadata
 
 title: Formulas and formula versions
-description: enter a key sentence
-author: YuyuScheller 
+description: A formula defines the materials, ingredients and outcomes of a specific process manufacturing process. Together with the correspondent route, the manufacturing process is defined as a whole. Formulas are required to plan and produce the production of products in the process industries.
+author: cvocph 
 manager: AnnBe
-ms.date: 06/01/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: enter AOT form names (PlanActivity, ReqSupplyDemandSchedule)
+ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -28,7 +28,7 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
- ---
+---
 
 # Formulas and formula versions
 
@@ -38,7 +38,7 @@ A formula defines the materials, ingredients and outcomes of a specific process 
 
 A formula consists of the required ingredients and quantities that are required to produce a determined quantity of a formula item. Depending on the task that you perform, you can access formula functionality from **Inventory and warehouse management** or **Product information management**.
 
-,## Formulas and formula lines
+## Formulas and formula lines
 
 In Process manufacturing production and logistics, a formula consists of one or more formula lines, which identify the ingredients or items that make up the formula. A formula line may contain BOM items, formula items, catch weight items, purchased items, co-products, or by-products. Because many items are used in multiple products, an item may be used in more than one formula.
 
