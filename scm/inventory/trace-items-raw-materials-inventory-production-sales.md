@@ -4,26 +4,28 @@
 title: Item and raw material tracing in inventory, production, and sales
 description: This topic describes how you can use item tracing to identify where items or raw materials have been used, are being used, or will be used in production and sales processes. 
 author: YuyuScheller
+description: This topic describes how you can use item tracing to identify where items or raw materials have been used, are being used, or will be used in production and sales processes.
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
-# ROBOTS: 
+# ROBOTS:
 audience: Application User
-# ms.devlang: 
-ms.reviewer: yuyus
+# ms.devlang:
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -35,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes how you can use item tracing to identify where items or raw materials have been used, are being used, or will be used in production and sales processes. 
+This topic describes how you can use item tracing to identify where items or raw materials have been used, are being used, or will be used in production and sales processes.
 
 Item tracing functionality is available on the **Item tracing** page. The following sections describe how you can use item tracing, and what the options and limitations are.
 
@@ -146,6 +148,3 @@ You can generate the **Shipped to customers** report to identify the amount of t
 
 ## Can I trace coproducts and byproducts?
 You can trace co-products, but you can’t trace a by-product, because tracking dimensions aren't typically assigned to by-products. When you trace an item, the trace details include any related co-products. A node that contains a co-product includes the word “co-product” in the details. You can also view details about a co-product by selecting the node in the trace details and then clicking the **Production** FastTab.
-
-
-
