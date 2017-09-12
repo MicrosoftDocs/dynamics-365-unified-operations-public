@@ -736,7 +736,6 @@
 ##### [Withholding tax](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Europe
-#### [Advance holder transactions](/dynamics365/unified-operations/financials/localizations/emea-advance-holders-transactions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Advance holders](/dynamics365/unified-operations/financials/localizations/emea-advance-holders?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Advance payment to an employee (Eastern Europe)](/dynamics365/unified-operations/financials/localizations/tasks/advance-payment-employee?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Advanced invoicing](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
