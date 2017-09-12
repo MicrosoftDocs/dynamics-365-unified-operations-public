@@ -2,7 +2,7 @@
 # required metadata
 
 title: Formulas and formula versions
-description: A formula defines the materials, ingredients and outcomes of a specific process manufacturing process. Together with the correspondent route, the manufacturing process is defined as a whole. Formulas are required to plan and produce the production of products in the process industries.
+description: A formula defines the materials, ingredients and outcomes of a specific process in the process manufacturing. Formulas are used to plan and produce products in the process manufacturing.
 author: cvocph 
 manager: AnnBe
 ms.date: 09/12/2017
@@ -34,13 +34,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-A formula defines the materials, ingredients and outcomes of a specific process manufacturing process. Together with the correspondent route, the manufacturing process is defined as a whole. Formulas are required to plan and produce the production of products in the process industries.
+
+A formula defines the materials, ingredients and outcomes of a specific process in the process manufacturing. Together with the correspondent route, it defines the entire process in the process manufacturing. Formulas are used to plan and produce products in the process manufacturing.
 
 A formula consists of the required ingredients and quantities that are required to produce a determined quantity of a formula item. Depending on the task that you perform, you can access formula functionality from **Inventory and warehouse management** or **Product information management**.
 
 ## Formulas and formula lines
 
-In Process manufacturing production and logistics, a formula consists of one or more formula lines, which identify the ingredients or items that make up the formula. A formula line may contain BOM items, formula items, catch weight items, purchased items, co-products, or by-products. Because many items are used in multiple products, an item may be used in more than one formula.
+A formula consists of one or more formula lines, which identify the ingredients or items that make up the formula. A formula line may contain BOM items, formula items, catch weight items, purchased items, co-products, or by-products. Because many items are used in multiple products, an item may be used in more than one formula.
 
 An example of a formula might be a chocolate chip cookie formula. The ingredients for that formula use multiple lines, such as flour, sugar, eggs, butter, and chocolate chips. The chocolate chip cookie formula contains ingredients that are most likely used in other formulas. For example, while you make the chocolate chip cookies, there might be leftovers, such as crumbs, or some of the cookies may be over or under baked. These items could be set up as co-products or by-products depending on the production operations.
 
