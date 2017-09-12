@@ -64,5 +64,10 @@ Record-level security, which was a mechanism for securing data in Dynamics AX 2
 
 Additionally, the Table Permissions Framework helps protect some data. Data security for specific tables is enforced by Application Object Server (AOS).
 
+## Auditing
+Auditing of login/logout to Dynamics 365 for Finance and Operations is now enabled. The system logs when a user signs in or out of the application. A sign-out is logged even in the case when the user's session expires or is killed.
+
+A System administrator or Security administrator can access the audit logs by going to **System administration -> Inquiries -> User log -> SysUserLog** form.
+
 
 
