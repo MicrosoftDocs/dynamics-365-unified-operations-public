@@ -330,13 +330,26 @@ To enable relationship lookups in the Excel Data Connector, you must ensure the 
 To enable creation of header records and related lines, the header data source must be added as a set of "fields" and the lines data source must be added as a related table. This pattern can work well for document data entry scenarios such as Journal entry.
 
 To design a workbook with header fields and a lines table that enables header creation:
-1. In the Excel Add-in, click **Design** to open the Designer and click **Add fields** to add a header data source e.g. SalesOrderHeader
+1. In the Excel Add-in, click **Design** to open the Designer and click **Add fields** to add a header data source.
 2. Select the desired header fields. Be sure to include all the key fields or the **New** button won't be enabled.
-3. In the Designer, on the header data source, click the **Add related table** button represented by a double plus icon.
-4. Select the desired line fields.
+3. For all of the string header value fields, manually apply "Text" format for that cell using **Excel ribbon > Home tab > Number group > set "Number" in the format dropdown**. If the Text format isn't manually set on a string field and it happens to get a string value with leading zeros like "00045", then Excel will automatically change it to "45" and an error will be shown like: *"Unable to change the value of PurchaseOrderHeader's PurchaseOrderNumber field as it is a key field"*. The API doesn't allow for automatically applying the text formatting on individual cells (vs table columns) currently, but in the future we will hopefully eliminate the need for this workaround.
+4. In the Designer, on the header data source, click the **Add related table** button represented by a double plus icon.
+5. Select the desired line fields.
 
+An example of a header data source with a related table data source:
+- PurchaseOrderHeader (Fields)
+   - dataAreaId
+   - PurchaseOrderNumber
+   - PurchaseOrderName
+   - OrderVendorAccountNumber
+- PurchaseOrderLine (Table - related)
+   - LineNumber
+   - ItemNumber
+   - LineDescription
+   - OrderedPurchaseQuantity
+   - LineAmount
 
-To create a new header and some lines:
+To use a header and lines workbook to create a new header and some lines:
 1. In the workbook, put focus in a cell with a header value
 2. In the Excel Add-in, click **New**
 3. Enter header values and lines as needed
