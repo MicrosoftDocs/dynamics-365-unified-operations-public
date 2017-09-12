@@ -141,7 +141,7 @@ The following keyboard shortcuts apply across Dynamics 365 for Finance and Opera
 | Select or clear all rows                                                                                               | Ctrl+Shift+M                    |
 | Move to the first record                                                                                               | Ctrl+Home                       |
 | Move to the last record                                                                                                | Ctrl+End                        |
-| Execute the default action in a grid (with focus on a cell in the column with hyperlinks on all rows)                  | Enter                           |
+| Execute the default action in a grid<br><br>**Note:** This shortcut is enabled when focus is on a cell containing a hyperlink--and--all cells in that column have hyperlinks.                 | Enter                           |
 
 ## Input control shortcuts
 |                                                                              |                               |
