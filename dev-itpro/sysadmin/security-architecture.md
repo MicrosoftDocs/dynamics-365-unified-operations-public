@@ -2,7 +2,7 @@
 # required metadata
 
 title: Security architecture
-description: This article provides an overview of the security architecture of Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides an overview of the security architecture of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
 ms.date: 09/13/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides an overview of the security architecture of Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic provides an overview of the security architecture of Dynamics 365 for Finance and Operations, Enterprise edition.
 
 When you understand the security architecture of Finance and Operations, you can more easily customize security to fit the requirements of your business. The following diagram provides a high-level overview of the security architecture. 
 
@@ -51,7 +51,7 @@ Authorization is the control of access to the Finance and Operations program. S
 
 In Finance and Operations, individual security permissions are combined into privileges, and privileges are combined into duties. The administrator grants security roles access to the program by assigning duties and privileges to those roles. 
 
-Finance and Operations uses context-based security to determine access to securable objects. When a privilege is associated with an entry point (such as a menu item or a service operation), a level of access, such as **Read** or **Delete**, is specified. The Finance and Operations authorization subsystem detects the access at run time, when that entry point is accessed, and applies the specified level of access to the securable object that the entry point leads to. This functionality helps guarantee that there is no over-permissioning, and the developer gets the access that he or she intended. 
+Finance and Operations uses context-based security to determine access to securable objects. When a privilege is associated with an entry point (such as a menu item or a service operation), a level of access, such as **Read** or **Delete**, is specified. The Finance and Operations authorization subsystem detects the access at run time, when that entry point is accessed, and applies the specified level of access to the securable object that the entry point leads to. This functionality helps to ensure that there is no over-permissioning, and the developer gets the access that he or she intended. 
 
 For more information about role-based security in Finance and Operations, see [Role-based security](role-based-security.md).
 
@@ -65,9 +65,6 @@ Record-level security, which was a mechanism for securing data in Dynamics AX 2
 Additionally, the Table Permissions Framework helps protect some data. Data security for specific tables is enforced by Application Object Server (AOS).
 
 ## Auditing
-Auditing of logins and logouts to Finance and Operations is now enabled. The system logs when a user signs in or out of the application. A sign-out is logged even in the case when the user's session expires or is killed.
+Auditing of user sign in and sign out is now enabled in Finance and Operations. The system logs when a user signs in or out of the application. A sign out is logged even if the user's session expires or ends.
 
-A system administrator or security administrator can access the audit logs by going to  the **User log** page (**System administration > Inquiries > User log**).
-
-
-
+A system administrator or security administrator can access the audit logs by going to  the **User log** page (**System administration **>** Inquiries **>** User log**).
