@@ -3,23 +3,23 @@
 
 title: Quality management overview
 description: This article describes how you can use quality management in Microsoft Dynamics 365 for Finance and Operations to help improve product quality within your supply chain.
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
-# ROBOTS: 
+# ROBOTS:
 audience: Application User
-# ms.devlang: 
-ms.reviewer: yuyus
+# ms.devlang:
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
@@ -48,20 +48,20 @@ Quality management is flexible and can be implemented in various ways to meet t
 
 -   Automatically start a quality control process, based on predefined criteria (upon warehouse registration of a purchase order from a specific vendor).
 -   Block inventory during inspection to prevent non-approved inventory from being used (full blocking of purchase order quantities).
--   Use item sampling as part of a quality association to define the amount of current physical inventory that must be inspected. Sampling can be based on fixed quantities or a percentage. 
--   Create quality orders for partial receipts. To create a quality order that is based on the quantity that is physically received with an order, you must select the **Per updated quantity** check box on the **Item sampling** form. 
+-   Use item sampling as part of a quality association to define the amount of current physical inventory that must be inspected. Sampling can be based on fixed quantities or a percentage.
+-   Create quality orders for partial receipts. To create a quality order that is based on the quantity that is physically received with an order, you must select the **Per updated quantity** check box on the **Item sampling** form.
 -   Create test types that include minimum, maximum, and target test values, and perform qualitative-versus-quantitative testing that has predefined validation results.
 -   Specify an acceptable quality level (AQL) to control quality measure tolerances.
 -   Specify the resources that an inspection operation requires, such as a test area and test instruments.
 
 ## Working with quality associations
-The business process that uses a quality association can be related to various source documents, such as purchase orders, sales orders, or production orders. 
+The business process that uses a quality association can be related to various source documents, such as purchase orders, sales orders, or production orders.
 
-Each quality association record defines the set of tests, the AQL, and the sampling plan that applies to the quality orders that are generated. You must define a quality association record for each variation in a business process. For example, you can set up a quality association that generates a quality order when a purchase order product receipt is updated. Depending on the setup of the execution plan, the triggering process itself can be blocked while there is an open quality order, or the next processes, such as purchase order invoicing, can be blocked. 
+Each quality association record defines the set of tests, the AQL, and the sampling plan that applies to the quality orders that are generated. You must define a quality association record for each variation in a business process. For example, you can set up a quality association that generates a quality order when a purchase order product receipt is updated. Depending on the setup of the execution plan, the triggering process itself can be blocked while there is an open quality order, or the next processes, such as purchase order invoicing, can be blocked.
 
-**Note:** While there are open quality orders, inventory quantities are automatically blocked from being issued. Depending on the **Full blocking** setting on the **Item samplings** page, the quantity is either the quantity on the quality order or the quantity on the source document line. 
+**Note:** While there are open quality orders, inventory quantities are automatically blocked from being issued. Depending on the **Full blocking** setting on the **Item samplings** page, the quantity is either the quantity on the quality order or the quantity on the source document line.
 
-For a given business process, the quality association record identifies the event and the conditions that a quality order is generated for. The conditions can be specific to either a site or a legal entity. A quality order that involves destructive tests can be generated only when on-hand inventory exists for the event. 
+For a given business process, the quality association record identifies the event and the conditions that a quality order is generated for. The conditions can be specific to either a site or a legal entity. A quality order that involves destructive tests can be generated only when on-hand inventory exists for the event.
 
 The following examples illustrate how a quality association record is defined for the variations in each business process. For each example, the following table summarizes the events and conditions that are defined by a quality association record.
 
@@ -366,6 +366,3 @@ See also
 [Quality management processes](quality-management-processes.md)
 
 [Enabling nonconformance management](enable-nonconformance-management.md)
-
-
-
