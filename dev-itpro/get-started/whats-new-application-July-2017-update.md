@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of 7.2.11792.56024.
+title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 author: tonyafehr
 manager: AnnBe
 ms.date: 06/26/2017
@@ -27,11 +27,11 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update 
 ---
 
-# What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+# What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of 7.2.11792.56024.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 
 **Note:** Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
 
@@ -1752,49 +1752,6 @@ visit [Microsoft-tested peripheral
 devices](/dynamics365/unified-operations/retail/retail-peripherals-overview).
 This page will also be updated with a link to the POS simulator-tested devices
 as soon as that page becomes available.
-
-Integrated Retail workforce management
---------------------------------------
-
-To be profitable in reducing margin environment, retailers are constantly
-striving to reduce their operational cost. For most retailers, retail staff cost
-is a significant portion of the operational cost and so by controlling this
-cost, they can make a significant impact on their bottom-line. Also, an
-empowered and productive workforce lends itself to improved customer experience.
-
-An integrated workforce management capability for retail stores is now built on
-the Common Data Services (CDS) stack. Because this feature is built using the
-latest MPOS extensibility framework, it provides a mechanism for Microsoft to
-innovate and deliver additional capabilities at a faster cadence, without
-breaking existing customer customizations.
-
-This release of retail workforce management provides the following capabilities:
-
-**For store managers**
-
--   Create and publish shifts and schedules for workers in stores.
-
--   Annotate shifts with instructions.
-
--   Copy schedules from a previous week to the current week.
-
--   Visibility of absence requests submitted by retail workers with the ability
-    to approve or reject requests.
-
--   Visibility of shift swap and offer shift requests with the ability to
-    approve or reject requests.
-
-**For store associates**
-
--   Visibility of shifts and assigned schedules, along with instructions for the
-    shift.
-
--   Visibility of co-workers assigned to shifts.
-
--   Submit absence requests.
-
--   Submit request for shift swap with a co-worker. Submit request for ‘Offer
-    shift’.
 
 Omni-channel coupons
 --------------------

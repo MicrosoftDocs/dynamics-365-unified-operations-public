@@ -1,30 +1,30 @@
---- 
-# required metadata 
- 
+---
+# required metadata
+
 title: Set up quality orders
-description: This procedure shows you how to enable a quality management process where incoming inventory must be inspected immediately after arrival registration. 
+description: This procedure shows you how to enable a quality management process where incoming inventory must be inspected immediately after arrival registration.
 author: perlynne
-manager: AnnBe 
+manager: AnnBe
 ms.date: 11/14/2016
-ms.topic: business-process 
+ms.topic: business-process
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-ax-applications
 ms.technology:  
- 
-# optional metadata 
- 
+
+# optional metadata
+
 # ms.search.form:   
-audience: Application User 
+audience: Application User
 # ms.devlang:  
-ms.reviewer: bis
-ms.search.scope: Operations 
+ms.reviewer: YuyuScheller
+ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up quality orders
 
@@ -145,4 +145,3 @@ This procedure shows you how to enable a quality management process where incomi
 15. In the list, find and select the desired record.
 16. Click Save.
 17. Close the page.
-

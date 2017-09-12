@@ -58,7 +58,7 @@ Select a feature area to learn more about it.
 
 ### Get started  
 
-These short videos help you get started with the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update.
+These short videos help you get started with the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
 
 -  [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 -  [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)

@@ -1,30 +1,30 @@
---- 
-# required metadata 
- 
+---
+# required metadata
+
 title: Set up an item arrival overview profile
-description: This task focuses on the setup of an arrival overview profile. 
-author: BibiSp
-manager: AnnBe 
+description: This task focuses on the setup of an arrival overview profile.
+author: perlynne
+manager: AnnBe
 ms.date: 11/14/2016
-ms.topic: business-process 
+ms.topic: business-process
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-ax-applications
 ms.technology:  
- 
-# optional metadata 
- 
+
+# optional metadata
+
 # ms.search.form:   
-audience: Application User 
+audience: Application User
 # ms.devlang:  
-ms.reviewer: bis
-ms.search.scope: Operations 
+ms.reviewer: YuyuScheller
+ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: bis
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up an item arrival overview profile
 
@@ -65,4 +65,3 @@ This task focuses on the setup of an arrival overview profile. The arrival overv
     * Select receipt lines from transfer orders.  
 17. Click Save.
 18. Close the page.
-
