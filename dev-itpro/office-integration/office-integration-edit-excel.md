@@ -326,6 +326,22 @@ To enable relationship lookups in the Excel Data Connector, you must ensure the 
 1.  The Cardinality and Related Data Entity Cardinality need to be set appropriately.
 2.  At least one constraint must be added to the relationship. With the exception of dimension relationships, which are a special case, the properties constrained must both be public.
 
+## How can I enable users to create new header records as well as lines in a workbook?
+To enable creation of header records and related lines, the header data source must be added as a set of "fields" and the lines data source must be added as a related table. This pattern can work well for document data entry scenarios such as Journal entry.
+
+To design a workbook with header fields and a lines table that enables header creation:
+1. In the Excel Add-in, click **Design** to open the Designer and click **Add fields** to add a header data source e.g. SalesOrderHeader
+2. Select the desired header fields. Be sure to include all the key fields or the **New** button won't be enabled.
+3. In the Designer, on the header data source, click the **Add related table** button represented by a double plus icon.
+4. Select the desired line fields.
+
+
+To create a new header and some lines:
+1. In the workbook, put focus in a cell with a header value
+2. In the Excel Add-in, click **New**
+3. Enter header values and lines as needed
+4. Click **Publish**
+
 ### Troubleshooting
 
 If you are not seeing an expected lookup, validate relationship metadata by checking the metadata feed available at \[YourSiteURL\]/data/$metadata.  Search the $metadat feed for the public name of your entity to find its EntityType element, then make sure there is a child NavigationProperty element with a name equal to the Role value of the relationship. If the navigation property exists, it will be used by the Excel Data Connector to show a relationship lookup. Lookups are not shown under the following conditions:
