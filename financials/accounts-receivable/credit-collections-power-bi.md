@@ -45,7 +45,7 @@ All the amounts are shown in the system currency. You can set the system currenc
 By default, the credit and collections data for the current company is shown. To see the data across all companies, assign the **CustCollectionsBICrossCompany** duty to the role.
 
 ## Accessing the Power BI content
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, the **Credit and collections management** Power BI content is shown in the **Customer credit and collections** workspace.
+If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), the **Credit and collections management** Power BI content is shown in the **Customer credit and collections** workspace.
 
 ## Reports that are included in the Power BI content
 

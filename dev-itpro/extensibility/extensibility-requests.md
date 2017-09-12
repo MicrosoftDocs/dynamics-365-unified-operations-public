@@ -36,7 +36,7 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition is moving 
 You will discover that some customizations, which were possible with overlayering, cannot be done through extensions. We expect to add more extension capabilities, so that you will be able to do most of these things. For some customizations that were done with overlayering, you will need to file requests so that we are aware that we need to enable the appropriate extension points.
 
 ## What we are doing
-We've been working toward an extension-based customization model for some time now. This started with enabling extensibility and sealing the platform and foundation models. Our focus then shifted to the application. We have worked with many ISV partners to collect extensibility requirements. The July 2017 update supports many new extensibility scenarios.
+We've been working toward an extension-based customization model for some time now. This started with enabling extensibility and sealing the platform and foundation models. Our focus then shifted to the application. We have worked with many ISV partners to collect extensibility requirements. The (July 2017) supports many new extensibility scenarios.
 
 In future releases, we will be focusing on completing ISV requests and solving as many VAR-initiated requests as possible. Because we do not expect to be able to handle all requests right away, we will not enforce hard sealing of the Application Suite model in the next major product update. The next update will still support overlayering of this model; however, a warning will be shown when compiling overlayered code indicating that this is the last release in which the Application Suite model can be overlayered.
 

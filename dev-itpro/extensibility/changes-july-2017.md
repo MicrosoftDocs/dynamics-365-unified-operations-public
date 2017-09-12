@@ -1,8 +1,8 @@
 ---
 
 # required metadata
-title: Extensibility changes in the Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
-description: This is a list of extensibility features that were implemented in the July 2017 update.
+title: Extensibility changes in the Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+description: This is a list of extensibility features that were implemented in the (July 2017).
 author: FrankDahl
 manager: AnnBe
 ms.date: 08/13/2017
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Extensibility changes in the Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+# Extensibility changes in the Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
 
 [!include[banner](../includes/banner.md)]
 
-This is a list of extensibility features that were implemented in the Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of 7.2.11792.56024. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
+This is a list of extensibility features that were implemented in the Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
 
 ## Soft-sealed application models
 
