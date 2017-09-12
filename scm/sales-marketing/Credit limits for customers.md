@@ -1,8 +1,4 @@
-**Credit limits for customers [AX 2012]**
-
-*Updated: August 16, 2012*
-
-*Applies To: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2*
+**Credit limits for customers**
 
 Setting a credit limit lets you specify the maximum amount of credit to extend
 to your customers. If a credit limit is specified, it is checked automatically
@@ -60,18 +56,11 @@ set:
 To check credit limits for the following documents, you must specify additional
 settings.
 
-\| Document \| Additional setting \|
-
-\|---------------------------------------------\|--------------------------------------------------------------------------------------------------------------------------------\|
-
-\| Free text invoice \| In the Accounts receivable parameters form, in the
-Credit rating area, select Check credit limit on free text invoice. \|
-
-\| Sales order (manually entered) \| In the Accounts receivable parameters form,
-in the Credit rating area, select Check credit limit on sales order. \|
-
-\| Sales order (electronically received) \| In the Accounts receivable
-parameters form, in the AIF area, select Check credit limit for sales orders. \|
+|    Document                                    |    Additional setting                                                                                                             |
+|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+|    Free text   invoice                         |    In the Accounts receivable parameters   form, in the Credit rating area, select Check credit limit on free   text invoice.     |
+|    Sales   order (manually entered)            |    In the Accounts receivable parameters   form, in the Credit rating area, select Check credit limit on sales   order.           |
+|    Sales   order (electronically received)     |    In the Accounts receivable parameters   form, in the AIF area, select Check credit limit for sales orders.                     |
 
 **Where do I configure the way that a customer’s remaining credit is
 calculated?**
@@ -131,34 +120,10 @@ identification and the credit limit amount limit that requires identification.
 You must be a member of the System administrator (-SYSADMIN-) security role to
 make changes in this form.
 
-\| Field \| Description \|
-
-\|--------------------------------------------\|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\|
-
-\| Require identification with credit \| Select the type of identification that
-must be entered for customers to whom your legal entity extends credit. The
-option that you select in this field determines when and what type of
-information is required in the Government identification fields in the Customers
-form: \|
-
-\| Limit \| Enter the credit limit at which a government-issued license number
-or other identification is required for customers. For example, type 2000 to
-require that an identification number, such as a driver's license number, must
-be entered for customers who have a credit limit of 2,000 or higher. This field
-is available if you selected Minimum limit in the Require identification with
-credit field. \|
-
--   **No** – No government-issued identification is required, regardless of the
-    customer's credit limit.
-
--   **Yes** – A government-issued license number or other government-issued
-    identification is required if the customer's credit limit is higher than or
-    equal to zero.
-
--   **Minimum limit** – A government-issued license number or other
-    government-issued identification is required if the customer's credit limit
-    is higher than or equal to the limit that you enter in the **Limit** field
-    in this form.
+|    Field                                    |    Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    Require   identification with credit     |    Select the type of identification that must be   entered for customers to whom your legal entity extends credit. The option   that you select in this field determines when and what type of information is   required in the Government identification fields in the Customers   form:        No – No government-issued        identification is required, regardless of the customer's credit limit.     Yes – A        government-issued license number or other government-issued        identification is required if the customer's credit limit is higher than        or equal to zero.     Minimum limit – A        government-issued license number or other government-issued        identification is required if the customer's credit limit is higher than        or equal to the limit that you enter in the Limit field in this        form.        |
+|    Limit                                    |    Enter the credit limit at which a   government-issued license number or other identification is required for   customers.    For example, type 2000 to require that an   identification number, such as a driver's license number, must be entered for   customers who have a credit limit of 2,000 or higher.    This field is available if you selected Minimum   limit in the Require identification with credit field.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 **Where do I specify whether to display a warning or error if the credit limit
 is exceeded?**
@@ -170,33 +135,10 @@ log if the documents are being processed by an electronic service. You must be a
 member of the System administrator (-SYSADMIN-) security role to make changes in
 this form.
 
-\| Field \| Description \|
-
-\|--------------------------------------------\|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\|
-
-\| Require identification with credit \| Select the type of identification that
-must be entered for customers to whom your legal entity extends credit. The
-option that you select in this field determines when and what type of
-information is required in the Government identification fields in the Customers
-form: \|
-
-\| Limit \| Enter the credit limit at which a government-issued license number
-or other identification is required for customers. For example, type 2000 to
-require that an identification number, such as a driver's license number, must
-be entered for customers who have a credit limit of 2,000 or higher. This field
-is available if you selected Minimum limit in the Require identification with
-credit field. \|
-
--   **Error** – An error message is displayed. This usually stops the current
-    operation and the conflict must be resolved before the process can continue.
-
--   **Warning** – A warning message is displayed, but the process can continue.
-
--   **Error** – An error message is displayed in the **Exceptions** form, and
-    the document will not be processed until the error is resolved.
-
--   **Warning** – A warning message is displayed in the **Exceptions** form, but
-    the process can continue.
+|    Field                                                               |    Description                                                                                                                                                                                                                                                                                                                                                                                        |
+|------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    Message when exceeding credit limit (in the Credit rating area)     |    Select how messages about credit limits being   exceeded are displayed to users. Select from the following options:        Error – An        error message is displayed. This usually stops the current operation and        the conflict must be resolved before the process can continue.     Warning – A        warning message is displayed, but the process can continue.                     |
+|    Message when exceeding credit limit (in the AIF area)               |    Select how messages about credit limits being   exceeded are delivered in a log. Select from the following options:        Error – An        error message is displayed in the Exceptions form, and the        document will not be processed until the error is resolved.     Warning – A        warning message is displayed in the Exceptions form, but the        process can continue.        |
 
 **How do I specify the credit limit amount for a specific customer?**
 
