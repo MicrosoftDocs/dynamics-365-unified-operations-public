@@ -3,7 +3,7 @@
 
 title: Set up an item arrival overview profile
 description: This task focuses on the setup of an arrival overview profile.
-author: BibiSp
+author: perlynne
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
