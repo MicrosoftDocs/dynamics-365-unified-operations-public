@@ -126,6 +126,6 @@ The following table provides information about the recent releases of the applic
 | **Platform 7.0**      | Compatible          |                                   |                                        |                                                                                  |
 
 Related topics: 
-- [Finance and Operations cloud platform monthly updates FAQ](../faq-platform-monthly-updates.md)
+- [Finance and Operations cloud platform monthly updates FAQ](../sysadmin/faq-platform-monthly-updates.md)
 - [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881/modern-lifecycle-policy)
 
