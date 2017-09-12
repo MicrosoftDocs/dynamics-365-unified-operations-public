@@ -5,7 +5,7 @@ title: Security architecture
 description: This article provides an overview of the security architecture of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/12/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
