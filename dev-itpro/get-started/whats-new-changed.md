@@ -66,7 +66,7 @@ For information about how to upgrade to the latest version, see [Process for upg
 <td>July 2017 update</td>
 <td>7.2.11792.56024</td>
 <td>June 2017</td>
-<td><a href="whats-new-application-July-2017-update.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</a></td>
+<td><a href="whats-new-application-July-2017-update.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)</a></td>
 </tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Operations</td>

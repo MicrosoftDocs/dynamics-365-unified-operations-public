@@ -54,7 +54,7 @@ Profitability can be analyzed in these ways:
 -   Customer profitability (by revenue versus gross margin)
 
 ## Accessing the Power BI content
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, the **Sales and profitability performance** Power BI content is shown on the **Sales and profitability performance** page (**Sales and marketing** > **Inquiries and reports** > **Sales performance analysis** > **Sales and profitability performance**). 
+If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), the **Sales and profitability performance** Power BI content is shown on the **Sales and profitability performance** page (**Sales and marketing** > **Inquiries and reports** > **Sales performance analysis** > **Sales and profitability performance**). 
 
 ## Metrics that are included in the Power BI content
 The **Sales and profitability performance** Power BI content includes a report that consists of a set of metrics. These metrics are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the content.

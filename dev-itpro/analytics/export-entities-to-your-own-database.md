@@ -53,7 +53,7 @@ The BYOD feature is recommended for the following scenarios:
 > [!NOTE]
 > Finance and Operations doesn't allow T-SQL connections to the production database. If you're upgrading from a previous version of Finance and Operations, and you have integration solutions that require direct T-SQL access to the database, BYOD is the recommended upgrade path.
 
-As a customer of Finance and Operations, you can use either Entity store or BYOD. Ready-made operational reports (especially the reports in the July 2017 update), take advantage of embedded Power BI and Entity store. You should use ready-made operational reports as your first choice. You can also extend the operational reports to meet your requirements. You should consider BYOD as a complementary option that you use as you require.
+As a customer of Finance and Operations, you can use either Entity store or BYOD. Ready-made operational reports (especially the reports in the (July 2017)), take advantage of embedded Power BI and Entity store. You should use ready-made operational reports as your first choice. You can also extend the operational reports to meet your requirements. You should consider BYOD as a complementary option that you use as you require.
 
 ## Creating an SQL database
 

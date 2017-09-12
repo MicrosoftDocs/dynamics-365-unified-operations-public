@@ -38,8 +38,8 @@ ms.dyn365.ops.version: Version 1611
 
 This topic lists the Microsoft Power BI content that is available and points you to resources where you can learn more about it.
 
-## Power BI content for Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, the following Power BI content is available:
+## Power BI content for Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), the following Power BI content is available:
 
 - [Actual vs budget Power BI content](ledger-budgets-power-bi.md)
 - [Benefits Power BI content](benefits-power-bi.md)
