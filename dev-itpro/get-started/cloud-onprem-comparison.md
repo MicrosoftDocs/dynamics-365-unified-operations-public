@@ -31,10 +31,11 @@ ms.dyn365.ops.version: Platform update 9
 
 # Cloud and on-premises feature comparison
 
-This topic shows whether each feature is available in:
+This topic shows whether each feature is available in the cloud and on-premises versions of these products:
 
-+ Dynamics 365 for Finance and Operations, Enterprise edition (cloud)
-+ Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)
++ Dynamics 365 for Finance and Operations, Enterprise edition
++ Dynamics 365 for Retail 
++ Dynamics 365 for Talent
 
 The following tables list the product areas. Cloud and on-premises support is listed for the feature as a whole. Where specific features differ from the area overall, the features are listed on a separate line in the Feature column.
 
@@ -97,20 +98,7 @@ The following tables list the product areas. Cloud and on-premises support is li
 | Support | | Yes | Yes |
 | | Access to Support via the Help & Support menu| Yes | No |
 
-## Dynamics 365 for Retail 
-
-| Area | Feature | Cloud | On-premises|
-|---|---|---|---|
-| All Retail areas | All Retail features | Yes | No |
-
-## Dynamics 365 for Talent
-
-| Area | Feature | Cloud | On-premises|
-|---|---|---|---|
-| All Talent areas | All Talent features | Yes | No |
-
-
-## Development and administration
+### Development and administration
 
 | Area | Feature | Cloud | On-premises|
 |---|---|---|---|
@@ -124,4 +112,19 @@ The following tables list the product areas. Cloud and on-premises support is li
 | | Upgrade | Yes | No |
 | | Upgrade and support for previous versions | Yes | No |
 | Visual Studio development |  | Yes | Yes |
+
+
+## Dynamics 365 for Retail 
+
+| Area | Feature | Cloud | On-premises|
+|---|---|---|---|
+| All Retail areas | All Retail features | Yes | No |
+
+## Dynamics 365 for Talent
+
+| Area | Feature | Cloud | On-premises|
+|---|---|---|---|
+| All Talent areas | All Talent features | Yes | No |
+
+
 
