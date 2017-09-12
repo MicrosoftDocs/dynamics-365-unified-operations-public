@@ -2,28 +2,28 @@
 # required metadata
 
 title: Nonconformance management
-description: This article describes the basic setup that is required in order to use nonconformances. Additional setup is required if you want to use quality orders. 
-author: YuyuScheller
+description: This article describes the basic setup that is required in order to use nonconformances. Additional setup is required if you want to use quality orders.
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
 ms.search.form: InventParameters, InventProblemType, InventProblemTypeSetup, InventQuarantineZone, InventTestDiagnosticType, InventTestReportSetup, SysUserManagement
-# ROBOTS: 
+# ROBOTS:
 audience: Application User
-# ms.devlang: 
-ms.reviewer: yuyus
+# ms.devlang:
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 28951
 ms.assetid: a62d4ba8-eebc-4b14-b587-630be7298522
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes the basic setup that is required in order to use nonconformances. Additional setup is required if you want to use quality orders. 
+This article describes the basic setup that is required in order to use nonconformances. Additional setup is required if you want to use quality orders.
 
 To enable nonconformance management, follow these steps:
 
@@ -60,6 +60,3 @@ See also
 [Quality management processes](quality-management-processes.md)
 
 [Set up prerequisites for non-conformance management (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management)
-
-
-

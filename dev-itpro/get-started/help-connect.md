@@ -5,7 +5,7 @@ title: Connect the Help system
 description: This topic describes the components of the Help system for Microsoft Dynamics 365 for Finance and Operations, and provides an overview of how to connect them and a summary of how to create custom help. 
 author: margoc
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -55,8 +55,8 @@ Using the **System Parameters** page, system administrators connect the pieces o
 
 1.  Select the Lifecycle Services project to connect to.
 2.  Select the BPM libraries (within the selected project) to retrieve task recordings from.
-    - For Finance and Operations, for Microsoft content, select the February 2017 QPC Unified Library for Microsoft Dynamics 365 for Finance and Operations. 
-    - For Retail, we will be releasing a library in July. 
+    - For Finance and Operations, for Microsoft content, select the most recent APQC Unified Library for Finance and Operations. 
+    - For Retail, we will be releasing a library in the near future. 
     - You do not need to select a library for Talent—the connection to the correct library is established for you. 
 
 3.  Set the display order of the BPM libraries. This determines the order in which task recordings from the libraries will appear in the **Help** pane.

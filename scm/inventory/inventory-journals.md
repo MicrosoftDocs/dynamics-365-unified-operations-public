@@ -2,26 +2,26 @@
 # required metadata
 
 title: Inventory journals
-description: This article describes how you can use inventory journals to post various types of physical inventory transactions. 
+description: This article describes how you can use inventory journals to post various types of physical inventory transactions.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
-# ROBOTS: 
+# ROBOTS:
 audience: Application User
-# ms.devlang: 
-ms.reviewer: yuyus
+# ms.devlang:
+ms.reviewer: YuyuScheller
 
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
@@ -39,7 +39,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[retail name](../includes/retail-name.md)]
 
 
-This article describes how you can use inventory journals to post various types of physical inventory transactions. 
+This article describes how you can use inventory journals to post various types of physical inventory transactions.
 
 The inventory journals in Microsoft Dynamics 365 for Finance and Operations are used to post physical inventory transactions of various types, such as the posting of issues and receipts, inventory movements, the creation of bills of materials (BOMs), and the reconciliation of physical inventory. All these inventory journals are used in a similar way, but they are divided into different types.
 
@@ -101,6 +101,3 @@ A journal can be accessed by only one user at a time. If several users must acce
 
 ## Posting journal lines
 You can post the journal lines that you create at any time until you've locked an item from additional transactions. The data that you enter in a journal remains in that journal, even if you close the journal without posting the lines.
-
-
-

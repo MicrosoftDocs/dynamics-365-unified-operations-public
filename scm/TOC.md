@@ -20,7 +20,7 @@
 #### [Features not implemented in on-premises deployments](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Lifecycle policy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Operations platform update 10 (August 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-10?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Finance and Operations, Enterprise edition July 2017 update](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Finance and Operations, Enterprise edition (July 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Operations platform update 9 (July 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-9?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Operations platform update 8 (June 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-8?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Operations platform update 7 (May 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -736,7 +736,6 @@
 ##### [Withholding tax](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Europe
-#### [Advance holder transactions](/dynamics365/unified-operations/financials/localizations/emea-advance-holders-transactions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Advance holders](/dynamics365/unified-operations/financials/localizations/emea-advance-holders?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Advance payment to an employee (Eastern Europe)](/dynamics365/unified-operations/financials/localizations/tasks/advance-payment-employee?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Advanced invoicing](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice?toc=dynamics365/unified-operations/fin-and-ops/toc.json)

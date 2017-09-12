@@ -3,27 +3,27 @@
 
 title: Consignment
 description: This topic explains how to use the inbound consignment inventory processes.
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
 ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchVendorPortalConfirmedOrders
-# ROBOTS: 
+# ROBOTS:
 audience: Application User
-# ms.devlang: 
-ms.reviewer: yuyus
+# ms.devlang:
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, Operations, UnifiedOperations
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 220834
 ms.assetid: 3c9d6de4-45d4-459a-aef7-0d9ad2c22b3a
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
@@ -65,7 +65,7 @@ USMF carries out additional periodic processes:
 The vendor, US-104, can monitor the updates using the **On-hand consignment inventory** page.
 
 ## Consignment replenishment orders
-A consignment replenishment order is a document that is used to request and keep track of inventory quantities of products that a vendor intends to deliver within a certain date interval by creating ordered inventory transactions. Typically, this will be based on the forecast and actual demand of the specific products. The inventory that’s going to be received against the consignment replenishment order remains in the ownership of the vendor. Only the possession of the products related to the physical receipt update is recorded and therefore no general ledger transaction updates occur. The **Owner** dimension is used to separate information about which inventory is owned by the vendor and which is owned by the receiving legal entity. Consignment replenishment order lines have an **Open order** status as long as the full quantity of the lines has not been received or cancelled. When the full quantity has been received or canceled, the status is changed to **Completed**. The physical on-hand inventory that’s related to a consignment replenishment order can be recorded using a Registration process as well as a Product receipt update process. Registration can be done as part of the item arrival process or by manually updating the order lines. When the Product receipt update process is used, a record is made in the product receipt journal, which can be used to acknowledge the receipt of goods to the vendors. 
+A consignment replenishment order is a document that is used to request and keep track of inventory quantities of products that a vendor intends to deliver within a certain date interval by creating ordered inventory transactions. Typically, this will be based on the forecast and actual demand of the specific products. The inventory that’s going to be received against the consignment replenishment order remains in the ownership of the vendor. Only the possession of the products related to the physical receipt update is recorded and therefore no general ledger transaction updates occur. The **Owner** dimension is used to separate information about which inventory is owned by the vendor and which is owned by the receiving legal entity. Consignment replenishment order lines have an **Open order** status as long as the full quantity of the lines has not been received or cancelled. When the full quantity has been received or canceled, the status is changed to **Completed**. The physical on-hand inventory that’s related to a consignment replenishment order can be recorded using a Registration process as well as a Product receipt update process. Registration can be done as part of the item arrival process or by manually updating the order lines. When the Product receipt update process is used, a record is made in the product receipt journal, which can be used to acknowledge the receipt of goods to the vendors.
 
 [![consignment-replenishment-order](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
@@ -75,7 +75,7 @@ The process of changing the owner of the inventory from the vendor to the receiv
 -   The vendor-owned inventory is issued using an **Ownership change** reference with a **Sold** status.
 -   On-hand inventory is received by the legal entity that’s consuming it using a product receipt updated inventory transaction on the purchase order. This sets the status of the order to **Received**. Purchase orders used for consignment have the **Origin** field set to **Consignment**.
 
-It’s not possible to update the quantity on consignment purchase order lines after the order has been created. 
+It’s not possible to update the quantity on consignment purchase order lines after the order has been created.
 
 [![inventory-ownership-change-journal](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
@@ -85,7 +85,3 @@ The vendor collaboration interface has three pages related to the inbound consig
 -   **Purchase orders** **consuming consignment inventory** - Shows detailed purchase order information related to the ownership change from the consignment process.
 -   **Products received from consignment inventory** - Shows information about the items and quantities that have product receipts updated during the ownership change process.
 -   **On-hand consignment inventory** - Shows information about the consignment items that they are expected to deliver, and the items that are already physically available at the customer site.
-
-
-
-
