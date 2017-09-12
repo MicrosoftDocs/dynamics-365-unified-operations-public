@@ -67,7 +67,6 @@ The following tables list the product areas. Cloud and on-premises support is li
 | Lifecycle services| | Yes | Yes |
 | | Configurable business processes | Yes | No |
 | Localizations| | Yes | Yes |
-| | Global coverage - Retail| Yes | No |
 | Manufacturing| | Yes | Yes |
 | Master planning and forecasting| | Yes | Yes |
 | Mobile app, workspaces, and platform  | | Yes | Yes |
