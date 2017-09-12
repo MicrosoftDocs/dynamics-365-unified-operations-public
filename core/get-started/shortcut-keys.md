@@ -5,7 +5,7 @@ title: Keyboard shortcuts
 description: The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance and Operations. 
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance and Operations. 
+The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 **Note:** The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
 
@@ -78,14 +78,14 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance
 | Collapse the current FactBox                                                    | Alt+0                                     |
 
 ## Filtering shortcuts
-|                                                                                                                     |                          |
-|---------------------------------------------------------------------------------------------------------------------|--------------------------|
-| **To do this**                                                                                                      | **Press**                |
-| Open grid filtering for the current column                                                                          | Ctrl+G                   |
-| Close grid filtering for the current column                                                                         | Esc                      |
+|                                    |                          |
+|------------------------------------|--------------------------|
+| **To do this**                     | **Press**                |
+| Open grid filtering for the current column                        | Ctrl+G                   |
+| Close grid filtering for the current column                       | Esc                      |
 | Open the Filter pane (or switch focus between the Filter pane and the main form if the Filter pane is already open) | Alt+M,F or Ctrl+F3       |
-| Close the Filter pane (with focus in the Filter pane)                                                               | Esc                      |
-| Open advanced filtering/sort                                                                                        | Ctrl+Shift+F3            | 
+| Close the Filter pane (with focus in the Filter pane)             | Esc                      |
+| Open advanced filtering/sort                                      | Ctrl+Shift+F3            | 
 
 ## Form shortcuts
 |                                                     |                   |
