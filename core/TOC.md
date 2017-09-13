@@ -1689,6 +1689,7 @@
 ### Process manufacturing
 #### Maintain production master data
 ##### [Bills of materials and formulas](/dynamics365/unified-operations/supply-chain/production-control/bill-of-material-bom?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Formulas and formula versions](/dynamics365/unified-operations/supply-chain/production-control/formulas-versions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Operations resources](/dynamics365/unified-operations/supply-chain/production-control/operations-resources?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Resource capabilities](/dynamics365/unified-operations/supply-chain/production-control/resource-capabilities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Batch attributes](/dynamics365/unified-operations/supply-chain/production-control/batch-attributes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
