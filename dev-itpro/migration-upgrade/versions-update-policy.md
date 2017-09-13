@@ -88,16 +88,16 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 | Release           | Build number   | Availability  | Expiration date   |
 |-------------------|----------------|---------------|-------------------|
-| [Platform update 10](./get-started/whats-new-platform-update-10.md)| 7.0.4641.16233 | August 2017   | August 2018   |
-| [Platform update 9](./get-started/whats-new-platform-update-9.md) | 7.0.4612.35162 | July 2017     | July 2018     |
-| [Platform update 8](./get-started/whats-new-platform-update-8.md) | 7.0.4565.16212 | June 2017     | June 2018     |
-| [Platform update 7](./get-started/whats-new-platform-update-7.md) | 7.0.4542.16189 | May 2017      | May 2018      |
-| [Platform update 6](./get-started/whats-new-platform-update-6.md) | 7.0.4509.16180 | April 2017    | April 2018    |
-| [Platform update 5](./get-started/whats-new-platform-update-5.md) | 7.0.4475.16165 | March 2017    | March 2018    |
-| [Platform update 4](./get-started/whats-new-platform-update-4.md) | 7.0.4425.16161 | February 2017 | February 2018 |
-| [Platform update 3](./get-started/whats-new-platform-update-3.md) | 7.0.4307.16141 | November 2016 | November 2017 |
-| [Platform update 2](./get-started/whats-new-platform-update-2.md) | 7.0.4230.16130 | August 2016   | August 2017   | 
-| [Platform update 1](./get-started/whats-new-changed-platform-version-7-1-may-2016.md) | 7.0.4127.16103 | May 2016      | May 2017      | 
+| [Platform update 10](../get-started/whats-new-platform-update-10.md)| 7.0.4641.16233 | August 2017   | August 2018   |
+| [Platform update 9](../get-started/whats-new-platform-update-9.md) | 7.0.4612.35162 | July 2017     | July 2018     |
+| [Platform update 8](../get-started/whats-new-platform-update-8.md) | 7.0.4565.16212 | June 2017     | June 2018     |
+| [Platform update 7](../get-started/whats-new-platform-update-7.md) | 7.0.4542.16189 | May 2017      | May 2018      |
+| [Platform update 6](../get-started/whats-new-platform-update-6.md) | 7.0.4509.16180 | April 2017    | April 2018    |
+| [Platform update 5](../get-started/whats-new-platform-update-5.md) | 7.0.4475.16165 | March 2017    | March 2018    |
+| [Platform update 4](../get-started/whats-new-platform-update-4.md) | 7.0.4425.16161 | February 2017 | February 2018 |
+| [Platform update 3](../get-started/whats-new-platform-update-3.md) | 7.0.4307.16141 | November 2016 | November 2017 |
+| [Platform update 2](../get-started/whats-new-platform-update-2.md) | 7.0.4230.16130 | August 2016   | August 2017   | 
+| [Platform update 1](../get-started/whats-new-changed-platform-version-7-1-may-2016.md) | 7.0.4127.16103 | May 2016      | May 2017      | 
 | [Platform 7.0](.get-started/whats-new-changed-7-0-february-2016.md)      | 7.0.4030.16079 | February 2016 | January 2017  |
 
 ## Dates for Finance and Operations (on-premises) releases
