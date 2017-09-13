@@ -135,7 +135,6 @@ The following changes were made to support extending enumerations:
 |CatVendorConfigurationForImport|
 |CatVendorLegalEntityStatus|
 |CatVendorSiteType|
-|ChequeFormType|
 |ConsignmentReplenishmentOrderLineStatus|
 |ConsignmentReplenishmentOrderStatus|
 |CostBreakdown|
