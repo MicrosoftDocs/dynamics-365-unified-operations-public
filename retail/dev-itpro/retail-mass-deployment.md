@@ -5,7 +5,7 @@ title: Mass deployment of Retail self-service components
 description: This topic explains how you can use self-service to do silent servicing updates, initial deployments, and some concepts of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available.
 author: jashanno
 manager: AnnBe
-ms.date: 08/29/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Application update 3
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how you can use self-service to do silent servicing updates, initial deployments, and some concepts of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available.
+'This topic explains how you can use self-service to do silent servicing updates, initial deployments, and some aspects of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available.
 
 ## Silent servicing
 ### Before you begin
