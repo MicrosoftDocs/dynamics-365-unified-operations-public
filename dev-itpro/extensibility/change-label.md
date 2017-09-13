@@ -43,13 +43,13 @@ The following example shows how to extend the AccountsPayable label file to add 
 
     ![Label file wizard: Specify the label file ID page](media/ExtendLabel01.png)
 
-1. On the next page of the wizard, select the languages that should be part of the extension. In this example, **English (United States)** (**en-US**) was already the base language, and we added **Welsh** (**cy**).
+2. On the next page of the wizard, select the languages that should be part of the extension. In this example, **English (United States)** (**en-US**) was already the base language, and we added **Welsh** (**cy**).
 
     ![Label file wizard: Select languages page](media/ExtendLabel02.png)
 
-1. Complete the wizard. Two label extension files are created, as shown in the following illustration.
+3. Complete the wizard. Two label extension files are created, as shown in the following illustration.
 
     ![Label extensions files](media/ExtendLabel03.png)
 
-1. In your extension file, you can create new labels or modify the value of labels that are defined in the **AccountsPayable** label file of the Fleet Management model. Use the standard label editor to define new labels or redefine labels that already exist.
-1. At any point, you can add more languages to a label file. In your project, right-click a label file that has a name that ends in **\_extension**, and then select **Add new languages**. Then follow the wizard to add the translation files.
+4. In the extension file in this example, you can create new labels or modify the value of labels that are defined in the **AccountsPayable** label file of the Application Suite model. Use the standard label editor to define new labels or redefine labels that already exist.
+5. At any point, you can add more languages to a label file. In your project, right-click a label file that has a name that ends in **\_extension**, and then select **Add new languages**. Then follow the wizard to add the translation files.
