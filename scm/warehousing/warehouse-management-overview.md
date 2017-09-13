@@ -55,8 +55,9 @@ The Warehouse management module for Dynamics 365 for Finance and Operations, Ent
 - Simple cross docking
 
 ## Get started
-To start working with Warehouse management, you need to complete the setup of the general warehouse parameters to support the business processes of you company. 
-Go to the Warehouse parameters form to set up general warehouse parameters.
+To start working with Warehouse management, you need to complete the setup of the general warehouse parameters to support the business processes of you company.
+
+- Go to the **Warehouse management parameters** page under **Warehouse management** > **Setup** to set up general warehouse parameters.
 
 You must configure components for inbound and outbound warehouse process workflows according to business requirements. The most important components that you must configure are wave templates, work templates, work pools, and location directives.
 
