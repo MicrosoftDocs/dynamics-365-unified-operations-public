@@ -77,10 +77,10 @@ The initial release of the Finance and Operations (on-premises) software will be
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | Application update 2  | 7.2.11792.62192 | September 2017     | June 2020  | 
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | Application update 1  | 7.2.11792.62089 | July 2017     | June 2020  | 
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | Major release | July 2017 | 7.2.11792.56024| June 2017     | June 2020  | 
-| Microsoft Dynamics 365 for Operations     | Major release | 1611             | 7.1.1541.3036| November 2016 | November 2019   | 
-| Microsoft Dynamics AX |Minor release  | 7.0.1 | 7.0.1265.23014 | May 2016 | June 2017 |
-| Microsoft Dynamics AX | Major release | 7.0 | 7.0.1265.3015 | February 2016 | June 2017 |
+| [Microsoft Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update) | Major release | July 2017 | 7.2.11792.56024| June 2017     | June 2020  | 
+| [Microsoft Dynamics 365 for Operations](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611)     | Major release | 1611             | 7.1.1541.3036| November 2016 | November 2019   | 
+| [Microsoft Dynamics AX](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016) |Minor release  | 7.0.1 | 7.0.1265.23014 | May 2016 | June 2017 |
+| [Microsoft Dynamics AX](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016) | Major release | 7.0 | 7.0.1265.3015 | February 2016 | June 2017 |
 
 ### Table 2: Platform releases
 
