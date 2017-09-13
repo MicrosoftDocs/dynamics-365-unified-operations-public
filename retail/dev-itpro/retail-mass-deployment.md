@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Application update 3
 ## Silent servicing
 ### Before you begin
 > [!IMPORTANT]
-> This functionality works in Microsoft Dynamics 365 for Retail, July 2017 version with Application update 3 and later. Note that silent servicing maintains all components that are currently installed.
+> This functionality works in Microsoft Dynamics 365 for Retail. The July 2017 version with Application update 3 and later is required. Note that silent servicing maintains all components that are currently installed.
 
 ### Delimiters for mass deployment
 The following table shows the delimiters that can currently be used in execution commands for mass deployment. These delimiters apply to App update 3 and later.
