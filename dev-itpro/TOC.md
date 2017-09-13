@@ -1344,7 +1344,8 @@
 
 ## Logistics
 ### [Transportation management](/dynamics365/unified-operations/supply-chain/transportation/transportation-management-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [A new transportation engine](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Transportation management engines](/dynamics365/unified-operations/supply-chain/transportation/transportation-management-engines?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Create a new transportation management engine](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Associate a fuel index with a carrier as an accessorial charge](/dynamics365/unified-operations/supply-chain/transportation/tasks/associate-fuel-index-carrier-accessorial-charge?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create a bill of lading](/dynamics365/unified-operations/supply-chain/transportation/create-bill-of-lading?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Plan freight transportation routes](/dynamics365/unified-operations/supply-chain/transportation/plan-freight-transportation-routes-multiple-stops?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1361,7 +1362,6 @@
 #### [Set up rate masters](/dynamics365/unified-operations/supply-chain/transportation/tasks/set-up-rate-masters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up shipping carriers](/dynamics365/unified-operations/supply-chain/transportation/tasks/set-up-shipping-carriers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up transportation constraints for an item](/dynamics365/unified-operations/supply-chain/transportation/tasks/set-up-transportation-constraints-item?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Transportation engine](/dynamics365/unified-operations/supply-chain/transportation/transportation-management-engines?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Warehouse management
 #### [Warehouse configuration](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
@@ -1689,6 +1689,7 @@
 ### Process manufacturing
 #### Maintain production master data
 ##### [Bills of materials and formulas](/dynamics365/unified-operations/supply-chain/production-control/bill-of-material-bom?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Formulas and formula versions](/dynamics365/unified-operations/supply-chain/production-control/formulas-versions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Operations resources](/dynamics365/unified-operations/supply-chain/production-control/operations-resources?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Resource capabilities](/dynamics365/unified-operations/supply-chain/production-control/resource-capabilities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Batch attributes](/dynamics365/unified-operations/supply-chain/production-control/batch-attributes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
