@@ -45,7 +45,7 @@ These introductory topics contain general information about how Finance and Oper
 + [FAQ](app-sealing-faq.md) 
 
 ## What's new
-In this section, you can get to see continous updates on the extensibility related changes that come with every release or platform update starting from July 2017.
+This section lists the extensibility-related updates we've made since July 2017.
 
 + [Extensibility changes for Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)](changes-july-2017.md)
 
