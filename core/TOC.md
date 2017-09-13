@@ -2245,12 +2245,13 @@
 ### [Extensibility home page](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Introduction and getting started
 ##### [Application extensibility plans](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-roadmap?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Extensibility changes July 2017](/dynamics365/unified-operations/dev-itpro/extensibility/changes-july-2017?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Extensibility requests](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-requests?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
 ##### [FAQ](/dynamics365/unified-operations/dev-itpro/extensibility/app-sealing-faq?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
 ##### [Migrate from overlayering to extensions](/dynamics365/unified-operations/dev-itpro/extensibility/migrate-overlayer-extension?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Customize model elements using extensions (tutorial)](/dynamics365/unified-operations/dev-itpro/extensibility/customize-model-elements-extensions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Customization: overlayering and extensions](/dynamics365/unified-operations/dev-itpro/extensibility/customization-overlayering-extensions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### What's new
+##### [Extensibility changes July 2017](/dynamics365/unified-operations/dev-itpro/extensibility/changes-july-2017?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Fundamentals
 ##### [Intrusive customizations](/dynamics365/unified-operations/dev-itpro/extensibility/intrusive-customizations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Class extensions](/dynamics365/unified-operations/dev-itpro/extensibility/class-extensions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
