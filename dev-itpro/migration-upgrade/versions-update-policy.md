@@ -75,14 +75,14 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 ### Table 1: Application releases
 
-| Release          |Major or minor release         | Version          | Build number | Availability  | Expiration date | Learn more |
-|------------------|----------------------|------------------|--------------|---------------|-----------------|---------| 
-|  Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | [Application update 2](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4039142&bugId=3850590&qc=204b1f37a96118e0538a6cad6c91a398019308d0a6b558b86e1ebe35d8fb73c8)<br><br>**Note:** To access the KB, you must log in to LCS. | 7.2.11792.62192 | September 2017     | June 2020  | [KB 4039142: Application update 2](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4039142&bugId=3850590&qc=204b1f37a96118e0538a6cad6c91a398019308d0a6b558b86e1ebe35d8fb73c8)<br><br>**Note:** To access the KB, you must log in to LCS.  |
-|  Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | [Application update 1](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4035749&bugId=3845890&qc=204b1f37a96118e0538a6cad6c91a398019308d0a6b558b86e1ebe35d8fb73c8)<br><br>**Note:** To access the link above you must log in to LCS. | 7.2.11792.62089 | July 2017     | June 2020  | [KB 4035749: Application update 1](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4035749&bugId=3845890&qc=204b1f37a96118e0538a6cad6c91a398019308d0a6b558b86e1ebe35d8fb73c8)<br><br>**Note:** To access the KB, you must log in to LCS. |
-|  Dynamics 365 for Finance and Operations, Enterprise edition | Major release | [July 2017](./get-started/whats-new-application-july-2017-update.md) | 7.2.11792.56024| June 2017     | June 2020  | [What's new in Dynamics 365 for Finance and Operations, Enterprise edition - July 2017](./get-started/whats-new-application-july-2017-update.md) |
-|  Dynamics 365 for Operations     | Major release | [1611](./get-started/whats-new-dynamics-365-operations-1611.md) | 7.1.1541.3036| November 2016 | November 2019   | [What's new in Dynamics 365 for Operations version 1611](./get-started/whats-new-dynamics-365-operations-1611.md) |
-|  Dynamics AX |Minor release  | [7.0.1](./get-started/whats-new-changed-application-version-7-0-1-may-2016.md) | 7.0.1265.23014 | May 2016 | June 2017 | [What's new in Dynamics AX application version 7.0.1](./get-started/whats-new-changed-application-version-7-0-1-may-2016.md) |
-|  Dynamics AX | Major release | [7.0](./get-started/whats-new-changed-7-0-february-2016.md) | 7.0.1265.3015 | February 2016 | June 2017 | [What's new in Dynamics AX 7.0](./get-started/whats-new-changed-7-0-february-2016.md) |
+| Release          |Major or minor release         | Version          | Build number | Availability  | Expiration date | 
+|------------------|----------------------|------------------|--------------|---------------|-----------------|
+|  Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | [Application update 2](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4039142&bugId=3850590&qc=204b1f37a96118e0538a6cad6c91a398019308d0a6b558b86e1ebe35d8fb73c8)<br><br>**Note:** To access the KB, you must log in to LCS. | 7.2.11792.62192 | September 2017     | June 2020  | 
+|  Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | [Application update 1](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4035749&bugId=3845890&qc=204b1f37a96118e0538a6cad6c91a398019308d0a6b558b86e1ebe35d8fb73c8)<br><br>**Note:** To access the link above you must log in to LCS. | 7.2.11792.62089 | July 2017     | June 2020  | 
+|  Dynamics 365 for Finance and Operations, Enterprise edition | Major release | [July 2017](./get-started/whats-new-application-july-2017-update.md) | 7.2.11792.56024| June 2017     | June 2020  | 
+|  Dynamics 365 for Operations     | Major release | [1611](./get-started/whats-new-dynamics-365-operations-1611.md) | 7.1.1541.3036| November 2016 | November 2019   | 
+|  Dynamics AX |Minor release  | [7.0.1](./get-started/whats-new-changed-application-version-7-0-1-may-2016.md) | 7.0.1265.23014 | May 2016 | June 2017 | 
+|  Dynamics AX | Major release | [7.0](./get-started/whats-new-changed-7-0-february-2016.md) | 7.0.1265.3015 | February 2016 | June 2017 | 
 
 ### Table 2: Platform releases
 
