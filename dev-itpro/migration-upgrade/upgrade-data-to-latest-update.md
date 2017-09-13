@@ -60,7 +60,7 @@ This topic describes how to upgrade an older source database to the latest Finan
     - If you're upgrading from the November 2016 release (also known as 1611 or 7.1) 7.1.1541.3036: KB 4023686, "'Could not find source system version information' error when you upgrade to the latest Application Release"
     - If you're upgrading from the July 2017 release (also known as 7.2) 7.2.11792.56024: No hotfix is required for this version.
 
-    In any one-box environment, after you install the application hotfixes from step 3, make sure that a full database synchronization is run. This step is especially important for golden database environments. A full database synchronization is required, because this step fills a table (SysSetupLog) that is used when the database is upgraded. Don't run the database synchronization from Microsoft Visual Studio for this step, because the SysSetup interface won't be triggered. To trigger the SysSetup interface, run the following command from an Administrator **Command Prompt** window.
+5. In any one-box environment, after you install the application hotfixes from step 4, run a full database synchronization. This step is especially important for golden database environments. A full database synchronization is required, because this step fills a table (SysSetupLog) that is used when the database is upgraded. Don't run the database synchronization from Microsoft Visual Studio for this step, because the SysSetup interface won't be triggered. To trigger the SysSetup interface, run the following command from an Administrator **Command Prompt** window.
 
     ```
     cd J:\\AosService\\WebRoot\\bin>
@@ -82,6 +82,15 @@ This topic describes how to upgrade an older source database to the latest Finan
     ```
     delete from classidtable where id >= 0xf000 and id <= 0xffff
     ```
+
+6. If you are upgrading to the July 2017 release, you must apply the following hotfixes:    
+    - KB 4033183
+    - KB 4035399
+    - KB 4035751
+    - KB 4036156
+    
+    If you are upgrading to Dynamics 365 for Retail, you must apply KB 4037180.
+
 
 ### Additional steps if you're using Retail functionality
 If you're using Retail functionality, you must follow these steps to prepare the database before you run the data upgrade package.
