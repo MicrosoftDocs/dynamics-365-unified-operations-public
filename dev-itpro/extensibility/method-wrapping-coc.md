@@ -58,6 +58,7 @@ final class BusinessLogic1_Extension
 }
 ```
 
+
 In this example, the wrapper around **DoSomething** and the required use of the **next** keyword create a Chain of Command (CoC) for the method. CoC is a design pattern where a request is handled by a series of receivers. The pattern supports loose coupling of the sender and the receivers.
 
 We now run the following code.
@@ -71,7 +72,9 @@ When this code is run, the system finds any method that wraps the **DoSomething*
 
 ## Supported versions
 > [!IMPORTANT]
-> The functionality that is described in this topic (CoC and access to protected methods and variables) is available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition platform update 9. However, the class that is being augmented must also be compiled on Platform update 9 or later. As of August 2017, all current releases of the applications for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, have been compiled on Microsoft Dynamics 365 for Finance and Operations, Enterprise edition platform update 8 or earlier. Therefore, to wrap a method that is defined in a base package (such as Application Suite), you must recompile that base package on Platform update 9 or later.
+> The functionality that is described in this topic (CoC and access to protected methods and variables) is available in Microsoft Dynamics 365 Unified Operations Platform update 9. However, the class that is being augmented must also be compiled on Platform update 9 or later. As of August 2017, all current releases of the applications for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, have been compiled on Platform update 8 or earlier. Therefore, to wrap a method that is defined in a base package (such as Application Suite), you must recompile that base package on Platform update 9 or later.
+As an example: If you create your own extension model that is augmenting a class that exists in the Application Suite model, and if you are using CoC or acccessing protected methods/variables, you will need to build both Application Suite and your extension model. You will also need to create a deployable package that includes both models in order to deploy this functionality on a runtime environment.
+This is a temporary situation until the next release of the Microsoft Dynamics 365 for Finance and Operations application.
 
 ## Capabilities
 The following sections give more details about the capabilities of method wrapping and CoC.
