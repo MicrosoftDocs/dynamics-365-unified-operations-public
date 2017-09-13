@@ -52,7 +52,7 @@ The following table shows the delimiters that can currently be used in execution
 | -SkipMerchantInfo         | Skip the installation of merchant account information at the end of the self-service installer for Hardware station. You should use this delimiter only for development and testing. (We don't recommend that you use this delimiter for a standard installation.) |
 
 ### Examples of commands for silent servicing
-This section shows examples of commands for self-service mass deployment. The commands that are shown work for all the standard self-service installers. These installers include the installers for Retail Modern POS (both with and without offline), Hardware station, and Retail Store Scale Unit.
+This section shows examples of commands for self-service mass deployment. The commands that are shown work for all the standard self-service installers. These installers include Retail Modern POS (both the installer with offline support and the installer without offline support), hardware station, and Retail Store Scale Unit.
 
 The following command silently updates the current installation of Modern POS. It has the standard command structure that is used for silent servicing of currently installed components. The structure uses the basic values of **InstallerName.exe** and the command for silent installation, **/S**. This command uses the configuration file that is located in the same file location as the installer, if a configuration file exists there.
 
