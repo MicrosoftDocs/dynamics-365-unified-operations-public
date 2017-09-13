@@ -24,13 +24,14 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create sales orders
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure shows you how to create a sales order. You can use the procedure in demo data company USMF. Sales orders are typically created by a sales order processor. 
+This procedure shows you how to create a sales order. You can use the procedure in demo data company USMF. Sales orders are typically created by a sales order processor. 
+
 
 
 

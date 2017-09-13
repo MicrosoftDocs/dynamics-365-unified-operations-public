@@ -1,36 +1,36 @@
---- 
-# required metadata 
- 
+---
+# required metadata
+
 title: Create and process a conformance
-description: Use this procedure to perform nonconformance management, based on an existing quality order. 
+description: Use this procedure to perform nonconformance management, based on an existing quality order.
 author: perlynne
-manager: AnnBe 
+manager: AnnBe
 ms.date: 11/14/2016
-ms.topic: business-process 
+ms.topic: business-process
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-ax-applications
 ms.technology:  
- 
-# optional metadata 
- 
+
+# optional metadata
+
 # ms.search.form:   
-audience: Application User 
+audience: Application User
 # ms.devlang:  
-ms.reviewer: bibis
-ms.search.scope: Operations 
+ms.reviewer: YuyuScheller
+ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create and process a conformance
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Use this procedure to perform nonconformance management, based on an existing quality order. You can run this recording in the USMF demo company and can use the suggested values. Typically, this procedure is performed by a quality clerk.  As a prerequisite, run the “Inspect the quality of goods” task recording. To process the approval of a nonconformance, the user who runs the task recording must have a “Name” value assigned on the Users page. To use the document notes, the user must also have Document handling activated in the user options. 
+Use this procedure to perform nonconformance management, based on an existing quality order. You can run this recording in the USMF demo company and can use the suggested values. Typically, this procedure is performed by a quality clerk.  As a prerequisite, run the “Inspect the quality of goods” task recording. To process the approval of a nonconformance, the user who runs the task recording must have a “Name” value assigned on the Users page. To use the document notes, the user must also have Document handling activated in the user options.
 
 
 ## Select a quality order
@@ -81,4 +81,3 @@ Use this procedure to perform nonconformance management, based on an existing qu
 3. Click Yes.
 4. Close the page.
 5. Close the page.
-

@@ -3,7 +3,7 @@
 
 title: Retail Store Scale Unit overview
 description: This topic describes the Retail Store Scale Unit and when to use it.
-author: MargoC
+author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 219714

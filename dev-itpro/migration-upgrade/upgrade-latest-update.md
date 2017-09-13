@@ -142,7 +142,10 @@ For upgrading any Tier 1 environments (also known as dev boxes or one-boxes). Yo
 #### Use LCS to submit an upgrade request to DSE
 1. Go to the **Environment details** page for the environment that you want to upgrade, click **Maintain**, and then select **Upgrade**. A window will display where you can enter the upgrade request.
 ![Upgrade request](./media/UpgradeMaintainButton.PNG)
-2. You must submit your upgrade request 5 working days before you expect to upgrade, to help ensure that the upgrade can be performed within your expected timeframe. The advanced notice is required to prepare a new environment in the background. When downtime starts, this new environment will be swapped with the existing environment. You will not be able to see the new environment, it's a background mechanism.
+2. You must submit your upgrade request a minimum of 5 working days before you expect to upgrade, to help ensure that the upgrade can be performed within your expected timeframe. The advanced notice is required to prepare a new environment before your downtime window.
+
+   If, due to high demand, your chosen time slot is not available, the Microsoft Team will respond with the closest available time slots for you to chose from. The more advanced notice you give, the more likely you will get your first choice.
+
 3. You must allow at least 8 hours between the downtime start and downtime end times. This time is required to perform the swap in of the new environment and the data upgrade process.
 4. If you have custom code or X++ hotfixes that must be part of your upgraded environment, you must select Application deployable packages during your upgrade request. Select the deployable packages that contain your upgraded custom code and the X++ hotfixes that were created on your development or build environment during the code upgrade process. 
 
@@ -155,13 +158,14 @@ For upgrading any Tier 1 environments (also known as dev boxes or one-boxes). Yo
 
 #### Validate your sandbox environment
 - The updated environment will have the same URL, same environment name, and same machine names as the former environment.
-- When validation is completed successfully, notify the DSE team using an LCS ticket and the DSE team will retire your old environment.
+- Complete your validation and testing. If you discover a problem and want to rollback to the old environment, notify the DSE team using an LCS ticket.
+- You have up to 5 working days to request a rollback, after which Microsoft will retire the old environment.
 
 ### Upgrade your production environment
 
 1.  Use LCS to submit an Upgrade request to update the production environment in exactly the same way as you did for the sandbox environment in the previous step.
 2.  Validate.
-3.  When validation is completed successfully, notify the DSE team using an LCS ticket and the DSE team will retire your old environment.
+3.  Complete your validation and testing. If you discover a problem and want to rollback to the old environment, notify the DSE team using an LCS ticket. You have up to 5 working days to request a rollback, after which Microsoft will retire the old environment.
 
 ## Scenario 4: Upgrade to the most current platform only
 If you're running an environment that doesn't contain any customization of the platform AOT models (Application Platform, Application Foundation, Directory and Test Essentials), you can do an in-place update of your platform, without upgrading to a new environment. For more information about this process, see [Upgrade Finance and Operations to the latest platform update](upgrade-latest-platform-update.md). If you only upgrade your platform, there is no need to do code upgrade (Scenario 2 above) or run data upgrade scripts.

@@ -24,14 +24,16 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Use a record template to create a new record
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure shows how to use a previously defined record template to create a new record. To complete this procedure, you must first complete the "Create a record template to facilitate data entry" procedure.
-
+This procedure shows how to use a previously defined record template to create a new record. To complete this procedure, you must first complete the "Create a record template to facilitate data entry" procedure.
+
+
+
 This procedure uses the USMF company.
 
 1. Go to Fixed assets > Fixed assets > Fixed assets.

@@ -5,7 +5,7 @@ title: User interface development home page
 description: This topic contains links to topics about developing user interface elements.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/25/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -64,7 +64,6 @@ The form metamodel continues to be used to define controls and application logic
 -   [Check box support in tree controls](check-box-tree-controls.md)
 -   [Filtering](filtering.md)
 -   [Window management](/dynamics365/unified-operations/fin-and-ops/get-started/window-management)
--   [Form statistics addin (Office Mix)](https://mix.office.com/watch/1kuwpf3ooohty)
 -   [Code migration - context menus](..\migration-upgrade\code-migration-context-menus.md)
 -   [Code migration - mouse double click](..\migration-upgrade\code-migration-double-click.md)
 -   [Contextual data entry for lookups](contextual-data-entry-lookups.md)
@@ -87,8 +86,7 @@ The form metamodel continues to be used to define controls and application logic
 ## Form pattern guidelines
 -   [Selecting a form pattern](select-form-pattern.md)
 -   [Form styles and patterns](form-styles-patterns.md)
--   [Apply subpatterns (Office Mix)](https://mix.office.com/watch/fq2k25dzomi3)
--   [Generating the form patterns report (Office Mix)](https://mix.office.com/watch/jqzesi1uuosz)
+-   [Form pattern add-ins](form-pattern-add-ins.md)
 
 | Form patterns     | Support form patterns       | Sub patterns      |
 |---|---|---|

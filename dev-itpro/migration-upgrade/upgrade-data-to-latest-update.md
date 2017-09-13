@@ -68,7 +68,16 @@ This topic describes how to upgrade an older source database to the latest Finan
     Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\\AosService\\PackagesLocalDirectory" -metadatadir        J:\\AosService\\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
     ```
 
-5. If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required, because the demo data contains bad records for some kernel X++ classes.
+5. If you are upgrading to the July 2017 release (also known as 7.2) 7.2.11792.56024, apply the following application X++ hotfixes in the destination environment before running the data upgrade in that environment. These will prevent various errors occuring during the data upgrade:
+
+    - KB 4036156 - Retail minor version upgrade - 'Variant number sequence is not set.' This fix package also includes KB 4035399 and KB 4035751. Note that you must have a minimum of Platform Update 9 to use this package. If you are unsure, install the latest binaries.
+    
+6. If you are upgrading from Microsoft Dynamics AX 2012, install the following application X++ fixes in the destination environment before you run the data upgrade:
+    - KB 4033183 - Dynamics AX 2012 R2 or Dynamics AX 2012 R3 Pre-CU8 non-retail upgrade fails with Object not found for dbo.RETAILTILLLAYOUTZONE.
+    - KB 4040692 - Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Operations 7.2 upgrade fails on RetailSalesLine duplicate index on SalesLineIdx.
+    - KB 4035490 - Performance issue with GeneralJournalAccountEntry MainAccount field upgrade script.
+
+7. If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required, because the demo data contains bad records for some kernel X++ classes.
 
     ```
     delete from classidtable where id >= 0xf000 and id <= 0xffff
@@ -81,6 +90,7 @@ This topic describes how to upgrade an older source database to the latest Finan
     - KB 4036156
     
     If you are upgrading to Dynamics 365 for Retail, you must apply KB 4037180.
+
 
 ### Additional steps if you're using Retail functionality
 If you're using Retail functionality, you must follow these steps to prepare the database before you run the data upgrade package.
@@ -340,30 +350,29 @@ If you're using Retail functionality, you must follow these steps to prepare the
     GO
     ```
 
-## Download the latest data upgrade deployable package
-To obtain the latest data upgrade deployable package for your target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS).
+## Download the latest data upgrade deployable packages
+To obtain the latest data upgrade deployable packages for your target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS).
 
 1. In LCS, in the **Environments** section, select your target Finance and Operations environment, scroll to the bottom of the page, and then select the **All binary updates** tile. 
 
     > [!NOTE]
-    > If the **All binary updates** tile shows that zero updates available, use the data upgrade deployable package from the latest platform update package that is available in the Shared asset library in the **Software deployable package** section of LCS. For example, if you're upgrading to Microsoft Dynamics 365 for Operations version 1611 with platform update 3, and the **All binary updates** tile shows zero updates, use the **D365 for Operations Platform Update 3** package from the Shared asset library.
+    > If the **All binary updates** tile shows that zero updates available, use the data upgrade deployable package from the latest platform update package that is available in the Shared asset library in the **Software deployable package** section of LCS. For example, if you're upgrading to Microsoft Dynamics 365 for Operations July Release with Platform Update 10, and the **All binary updates** tile shows zero updates, use the **Dynamics 365 Unified Operations Platform Update 10** package from the Shared asset library.
 
-2. On the **Add hotfixes** page, select **Select all**, select **Add**, and then select **Download package**.
-3. On the next page, select **Download**.
-4. After the package is downloaded, extract the contents, and then go to the following directory to find the appropriate data upgrade deployable package file: ..\\CustomDeployablePackage
+2. On the **Binary updates** page, select **Download binaries**, on the next page, select **Download**.
+3. After the package is downloaded, extract the contents, and then go to the following directory to find the appropriate data upgrade deployable package file: ..\\CustomDeployablePackage
 
-    The name of the data upgrade deployable package varies, depending on the version that you're upgrading from and the version that you're upgrading to:
+    The name of the data upgrade deployable packages varies, depending on the version that you're upgrading from and the version that you're upgrading to:
 
-    - If you're upgrading from Microsoft Dynamics AX 2012, the package is named **MajorVersionDataUpgradeWithRetail.zip**. To find this package, download the latest binary updates for your Platform update 8 (or higher) environment.
+    - If you're upgrading from Microsoft Dynamics AX 2012, the packages are named **MajorVersionDataUpgrade.zip** and **MajorversionDataUpgrade_Retail.zip**. Both packages need to be run one after the other. To find these packages, download the latest binary updates.
     - In earlier versions (before Platform update 4), the package was named **DataUpgrade.zip**. 
     - Between Platform update 4 and Platform update 7, the package was named **MinorVersionDataUpgrade.zip**.
-    - In later versions (Platform update 8 and later), the package is named **MinorVersionDataUpgradeWithRetail.zip**. To find this package, download the latest binary updates for your Platform update 8 (or higher) environment.
+    - In later versions (Platform update 8 and later), the packages are named **MinorVersionDataUpgrade.zip** and **MinorVersionDataUpgrade_Retail.zip**. Both packages need to be run one after the other. To find these packages, download the latest binary updates.
 
 > [!NOTE]
 > Computers that are deployed from LCS will already have a local data upgrade package. However, that file is out of date and includes issues that have been resolved in later hotfixes. Always download the latest version of the file from LCS.
 
 ## Remove encryption certification rotation
-1. Extract the MinorVersionDataUpgradeWithRetail.zip deployable package to C:\\Temp or a location of your choice.
+1. Extract the MinorVersionDataUpgrade.zip deployable package to C:\\Temp or a location of your choice.
 2. In a text editor, open the C:\\Temp\\DataUpgrade\\RotateConfigData\\ServicingRotations.json file. Modify the file as shown here, and save it. This step is required only for one-box environments. Because you're removing the need for encryption certificate rotations, old data in encrypted fields in your database will no longer be readable. This issue is a technical limitation for a one-box data upgrade. New data that goes into those fields after the upgrade is completed won't be affected. For information about the affected fields, see the ["Encrypted fields in demo data"](#encrypted-fields-in-demo-data) section later in this topic.
 
     ```
@@ -400,21 +409,24 @@ This step is required if you're upgrading a database from the February 2016 rele
 
 ## Upgrade the database
 1. Install the deployable package from the C:\\Temp\\DataUpgrade folder (the location that you extracted the deployable package to earlier). For instructions, see [Install a deployable package](../deployment/install-deployable-package.md).
-2. Restore a backup of the source database to your one-box demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. 
+2. Import or restore a backup of the source database to your one-box demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. Leave the existing database in place and name your new database **imported_new**.
 
     > [!NOTE]
     > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For information about how to download and use AzCopy to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
 
 3. Run the runbook file from the deployable package until you reach Step 4: GlobalBackup.
-4. Rename the existing Update 1 database, and replace it with the source database to upgrade.
+4. Rename the existing database suffixing it with "_orig", and rename the newly restored database with the original database name, so they switch places:
 
     ```
-    ALTER DATABASE <Update1_AX_DATABASENAME> MODIFY NAME = <Update1_AX_DATABASENAME>_ORIG
-    ALTER DATABASE <Source_AX_DATABASENAME> MODIFY NAME = <Update1_AX_DATABASENAME>
+    ALTER DATABASE <original D365 database> MODIFY NAME = <original D365 database>_ORIG
+    ALTER DATABASE imported_new MODIFY NAME = <original D365 database>
     ```
 
 5. Create a backup of the source database, in case you need to revert to it, because the following steps will modify the source database.
 6. Mark Step 4 of the runbook as completed, and continue to run the runbook until it's completed. 
+
+> [!NOTE]
+> When upgrading to Platform update 8 or later or when upgrading from AX 2012 - you need to repeat the steps above in the **Upgrade the database section** for the related _Retail package after running the first package.
 
 ## Re-enable SQL change tracking
 Run the following SQL against the upgraded database to make sure that change tracking is enabled at the database level. You must specify the name of your database in the **alter database** command.

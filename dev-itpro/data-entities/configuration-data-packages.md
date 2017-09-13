@@ -3,7 +3,7 @@
 
 title: Configuration data packages
 description: This topic provides an overview of the configuration data packages that are available on Lifecycle Services.
-author: saraschi
+author: saraschi2
 manager: AnnBe
 ms.date: 06/26/2017
 ms.topic: article

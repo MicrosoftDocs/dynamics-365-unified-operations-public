@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 12373
@@ -200,11 +200,11 @@ The verification checklist shows the steps for manually verifying that the form 
         -   Typically, just the ID and Description are sufficient.
         -   There should be at least two fields.
 -   **Grid view:**
-    -    The grid has 2 to 15 fields. Typically, all mandatory fields are included, so that records can be created in the grid.
+    -   The grid has 2 to 15 fields. Typically, all mandatory fields are included, so that records can be created in the grid.
     -   A linked field lets the user open the details for the selected record.
     -   The Quick filter should default to the most likely field for a filter scenario.
     -   **Grid:**
-        -   The **Name** field should be the first column, followed by the **ID** field.
+        -   The **ID** field should be the first column (if it's needed in the grid). Otherwise, the **Name** field should be the first column.
         -   Additional grid guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md) document, in the Grid guidelines section.
 
 ## Examples

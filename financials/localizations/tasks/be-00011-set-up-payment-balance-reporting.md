@@ -24,13 +24,14 @@ ms.search.region: Belgium
 # ms.search.industry: 
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up payment balance reporting (Belgium)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Use this procedure to set up Belgisch Luxemburgs Wissel Instituut (BLWI) information for Belgium. This procedure was created by using the USSI demo data company.
+Use this procedure to set up Belgisch Luxemburgs Wissel Instituut (BLWI) information for Belgium. This procedure was created by using the USSI demo data company.
+
 This functionality is available for legal entities that have their primary address in Belgium. Before you can complete this procedure, you must set up the registration ID for Belgium and enter the registration number that should be used to create the BLWI declaration.
 
 

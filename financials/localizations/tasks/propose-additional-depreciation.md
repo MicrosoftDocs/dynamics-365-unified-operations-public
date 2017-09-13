@@ -24,16 +24,20 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Propose additional depreciation (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-In Japan, an additional depreciation is permitted under certain conditions. 
-
-Use this procedure to learn how to propose additional depreciation. Before you begin, be sure that the fixed asset has been acquired and the ordinary depreciation has been posted.  Also, be sure that the Fixed Assets configuration key is selected.
-
+In Japan, an additional depreciation is permitted under certain conditions. 
+
+
+
+Use this procedure to learn how to propose additional depreciation. Before you begin, be sure that the fixed asset has been acquired and the ordinary depreciation has been posted.  Also, be sure that the Fixed Assets configuration key is selected.
+
+
+
 This procedure uses the JPMF demo company data.
 
 1. Go to Fixed assets > Journal entries > Fixed assets journal.

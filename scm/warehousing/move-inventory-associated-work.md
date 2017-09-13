@@ -54,7 +54,7 @@ Moving items is restricted to prevent splitting of work lines. This means that i
 For staging scenarios, where the license plate you move the goods from or the license plate you move the goods to, are set as a Target LP for a work order, only movement of the entire LP is allowed, so as not to break up the Target LP.
 Only the ad hoc movement is currently supported. That means that you will not be able to move reserved inventory through the movement by template mobile device menu items.
 
-### Set up the permission to move reserved inventory for individual workers
+### Set up permission to move reserved inventory for individual workers
 
 For the worker who should be allowed to move reserved inventory, select the **Allow movement of inventory with work associated** check box under **Warehouse management** > **Setup** > **Worker**.  
 

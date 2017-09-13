@@ -3,7 +3,7 @@
 
 title: Settlement overview
 description: This article provides general information about the settlement process. It describes the types of transactions that can be settled, when and how transactions can be settled, and the results of the settlement process.
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

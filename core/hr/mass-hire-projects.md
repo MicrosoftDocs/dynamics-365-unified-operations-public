@@ -3,7 +3,7 @@
 
 title: Mass hire projects
 description: Mass hire projects allow human resources specialists to create multiple positions and efficiently hire workers into those positions.
-author: twheeloc
+author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 7481
 ms.assetid: 5f5eb271-76eb-4305-bd1c-5d171dafccc9
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

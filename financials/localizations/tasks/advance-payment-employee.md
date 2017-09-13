@@ -24,7 +24,7 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 # ms.search.industry: 
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Advance payment to an employee (Eastern Europe)
 

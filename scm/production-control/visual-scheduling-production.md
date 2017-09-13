@@ -2,7 +2,7 @@
 # required metadata
 
 title: Gantt chart for job scheduling 
-description: The Gantt chart is designed to empower production planners to control and optimize the production plan. The Gantt chart makes the flow of operations transparent and makes it easy to adjust the production schedule while taking into account material or resource shortages. This helps planners make the best use of available resources, minimize work in progress, and optimize throughput times for production orders.
+description: Production planners can control and optimize productions plans by using Gantt charts.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 08/23/2017
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-keywords: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -23,8 +23,8 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid:
 ms.search.region: global
-ms.industry: Manufacturing
-ms.author: johanhoffmann
+ms.search.industry: Manufacturing
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

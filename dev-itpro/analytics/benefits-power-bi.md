@@ -22,7 +22,7 @@ ms.search.scope: Operations, UnifiedOperations, Talent, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: JCart
+ms.author: jcart
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: July 2017 update 
 ---
@@ -36,7 +36,7 @@ This topic describes the **Benefits** Microsoft Power BI content. It explains ho
 ## Accessing the Power BI content
 The **Benefits** Power BI content is shown in the **Benefits management** workspace if you use one of the following products:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
 - Microsoft Dynamics 365 for Talent
 
 ## Reports that are included in the Power BI content

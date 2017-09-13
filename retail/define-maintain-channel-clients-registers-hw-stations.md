@@ -3,7 +3,7 @@
 
 title: Define and maintain channel clients, registers, and hardware stations
 description: This topic covers how to connect peripherals to your Retail POS.
-author: josaw1
+author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

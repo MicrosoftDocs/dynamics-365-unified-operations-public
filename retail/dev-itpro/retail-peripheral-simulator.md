@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 266544
@@ -26,7 +26,7 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.2
+ms.dyn365.ops.version: July 2017 update
 
 ---
 

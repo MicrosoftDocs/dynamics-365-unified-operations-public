@@ -3,7 +3,7 @@
 
 title: Kanban transfer board support for barcode scanners
 description: The Kanban transfer board supports scanner input from a widget barcode scanner to Select, Start, Complete, and Empty a kanban job.
-author: YuyuScheller
+author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

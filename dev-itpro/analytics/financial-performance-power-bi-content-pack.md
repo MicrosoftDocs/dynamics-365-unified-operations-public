@@ -43,7 +43,7 @@ You can access the **Financial performance** Power BI from Microsoft Dynamics Li
 ### Available from LCS
 The **Financial performance** Power BI content that is available from LCS supports the following versions:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
 - Microsoft Dynamics 365 for Operations version 1611 
 
 You can find the Power BI content in the Shared asset library in LCS. For more information about how to download the content pack and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.

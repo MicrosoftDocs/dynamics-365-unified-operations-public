@@ -3,7 +3,7 @@
 
 title: Cloud operations and servicing
 description: Finance and Operations is Microsoft's Cloud ERP offering as a managed service. This means that Microsoft is responsible for managing and operating the production environments. Microsoft’s Dynamics Service Engineering team is available 24 hours a day, 7 days a week, and 365 days a year to operate and manage our customers' production systems. 
-author: kfend
+author: manalidongre
 manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article

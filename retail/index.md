@@ -26,7 +26,7 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
-ms.dyn365.ops.version: Version 1611, Retail Version
+ms.dyn365.ops.version: Version 1611
 
 ---
 
@@ -69,13 +69,6 @@ You can make price adjustments to products, and can also set up discounts that a
 MPOS is a POS app for PCs, tablets, and phones. Sales staff can process sales transactions and customer orders, perform clienteling activities, and perform daily operations and inventory management on mobile devices anywhere in the store, and also at PC-based registers. Cloud POS is a browser-based POS that can be started in any standard browser.
 
 You will set up several components to define the relationships among a store, the POS registers in the store, and the retail peripherals that those registers use to process transactions. You will also define the characteristics of a specific instance of the POS. These characteristics include the hardware profile or setup for retail peripherals that will be used at the register, the store that the register is mapped to, the visual experience for the user who signs in to that register, and the functionalities that are enabled in the register. You will also define whether the register can operate in a disconnected or offline state.
-
-## Workforce management
-To be profitable in an environment where margins are decreasing, retailers constantly try to reduce their operational cost. For most retailers, the cost of retail staff is a significant part of the operational cost. Therefore, by controlling this cost, retailers can have a significant impact on their bottom line. Additionally, an empowered and productive workforce lends itself to improved customer experience.
-
-Retail lets store managers create and publish shifts and schedules for workers in stores, annotate shifts via instructions, copy schedules from a previous week to the current week. Additionally, managers gain visibility into absence requests that retail workers submit, and can approve or reject those requests. They also gain visibility into "shift swap" and "shift offer" requests, and can approve or reject those requests.
-
-Store associates gain visibility into shifts and assigned schedules, together with instructions for the shifts, and gain visibility into the co-workers who are assigned to shifts. They can also submit absence requests, requests for shift swaps with co-workers, and shift offer requests.
 
 ## Customize and administer Retail environments
 If you've been asked to customize your environment, or if you're responsible for deploying and maintaining your system, be sure to see the developer and system administrator content that is specific to Retail, in addition to the more general content.

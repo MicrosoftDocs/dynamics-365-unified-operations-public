@@ -62,6 +62,7 @@ To create a database copy, make a backup of the original database, and restore i
 
 Here is an example of the code that creates a database copy. You must modify this example to reflect your specific database names.
 
+```
 	BACKUP DATABASE [AxDB] TO  DISK = N'D:\Backups\axdb_copyForUpgrade.bak' WITH NOFORMAT, NOINIT,  
 	NAME = N'AxDB_copyForUpgrade-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION,  STATS = 10
 	GO
@@ -71,8 +72,11 @@ Here is an example of the code that creates a database copy. You must modify thi
 	MOVE N'AXDBBuild_Log' TO N'G:\MSSQL_LOGS\AxDB_CopyForUpgrade.ldf',  
 	NOUNLOAD,  STATS = 5
 
+```
+
 After the copy is created, run the following Transact-SQL (T-SQL) script against it.
 
+```
 	--remove NT users as these are not supported in Azure SQL Database
 	declare 
 	@SQL varchar(255),
@@ -84,26 +88,58 @@ After the copy is created, run the following Transact-SQL (T-SQL) script against
 	select name from sys.sysusers where (isntuser = 1 or isntgroup =1) and name <> 'dbo'
 
 	OPEN userCursor
-		FETCH userCursor into @UserName
-		WHILE @@Fetch_Status = 0
-			  BEGIN
-					set @SQL = 'DROP USER [' + @UserName + ']'
-					exec(@SQL)
-					FETCH userCursor into @UserName
-			  END
+	    FETCH userCursor into @UserName
+	    WHILE @@Fetch_Status = 0
+		  BEGIN
+			set @SQL = 'DROP USER [' + @UserName + ']'
+			exec(@SQL)
+			FETCH userCursor into @UserName
+		  END
 	CLOSE userCursor
 	DEALLOCATE userCursor
-	RETURN
 
-	--If you receive message that you cannot delete users as they own a schema, then check which schema the users own - either change the ownership to another user (for exmaple to dbo) or drop the schema if it does not contain 
-	-- any objects - the examples below are for a AX2012 Demo environment you will need to edit this for your specific environment
-	drop schema [contoso\admin]
-	drop schema [CONTOSO\Domain Users]
-
-	--drop all views in the current database as some refresh tempDB which is not supported in Azure SQL Database
-
+	go
+	
+	--remove any AX 2012 RTM model store procedures that still exist
 	declare 
 	@SQL varchar(255),
+	@procname varchar(255)
+
+	set quoted_identifier off
+
+	declare     procCursor CURSOR for
+	select name from sys.procedures where name like 'XI_%' or name like 'XU_%'
+
+	OPEN procCursor
+	    FETCH procCursor into @procname
+	    WHILE @@Fetch_Status = 0
+		  BEGIN
+			set @SQL = 'DROP PROCEDURE [' + @procname + ']'
+			exec(@SQL)
+			FETCH procCursor into @procname
+		  END
+	CLOSE procCursor
+	DEALLOCATE procCursor
+
+	go
+	
+	--If you receive a message that you cannot delete users because they own a schema, then check which schema the user owns. 
+	--Either change the ownership to another user (for example to dbo) or drop the schema if it does not contain any objects. 
+	--The examples below are for an AX 2012 demo environment. You will need to edit this for your specific environment.
+
+        if exists (select 1 from sys.schemas where name = 'contoso\admin')
+	begin
+		drop schema [contoso\admin]
+	end
+	if exists (select 1 from sys.schemas where name = 'contoso\Domain Users')
+	begin
+		drop schema [CONTOSO\Domain Users]
+	end
+	go
+	--drop all views in the current database because some refresh the tempDB, which is not a supported action in Azure SQL Database
+
+	declare 
+	@SQL2 varchar(255),
 	@ViewName varchar(255)
 
 	set quoted_identifier off
@@ -117,18 +153,22 @@ After the copy is created, run the following Transact-SQL (T-SQL) script against
 	OPEN viewCursor
 
 	FETCH viewCursor into @ViewName
-		WHILE @@Fetch_Status = 0
-			  BEGIN
-					set @SQL = 'DROP VIEW ' + @ViewName
-					exec(@SQL)
-					FETCH viewCursor into @ViewName
-			  END
+	    WHILE @@Fetch_Status = 0
+		  BEGIN
+			set @SQL2 = 'DROP VIEW ' + @ViewName
+			exec(@SQL2)
+			FETCH viewCursor into @ViewName
+		  END
 	CLOSE viewCursor
 	DEALLOCATE viewCursor
-	RETURN
+	go
 
-	-- Drop the following procedure as it contains a tempDB reference which is not supported in Azure SQL Database
-	drop procedure MaintainShipCarrierRole
+	-- Drop the following procedure because it contains a tempDB reference that is not supported in Azure SQL Database
+	If exists (select 1 from sys.procedures where name = 'MaintainShipCarrierRole')
+	begin
+		drop procedure MaintainShipCarrierRole
+	end	
+```
 
 ### Export the copied database to a bacpac file
 
@@ -143,9 +183,11 @@ This step is important, because the export will have to be done again during the
 
 Next, open a **Command Prompt** window as an administrator, and run the following commands.
 
-	cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
+```
+cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
-	SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false
+SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false
+```
 
 Here is an explanation of the parameters:
 
@@ -166,6 +208,7 @@ You can choose how you would like to move the bacpac file to the AOS machine - y
 
 During this step, you will import the exported bacpac file to the SQL Database instance that your sandbox environment uses. You must first install the latest version of Management Studio on your sandbox AOS machine. You will then import the file by using the SQLPackage.exe tool.
 
+
 You will perform these tasks directly on the AOS machine in your sandbox environment, because there are firewall rules that restrict access to the SQL Database instance. However, by using the AOS machine, you can gain access.
 
 As for the export step, you must have the latest version of Management Studio before you start the import. This step won't work if you have an older version.
@@ -174,9 +217,11 @@ For performance reasons, we recommend that you put the bacpac file on drive D on
 
 Open a **Command Prompt** window as an administrator, and run the following commands.
 
+```
 	cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
 	SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=P1
+```
 
 Here is an explanation of the parameters:
 
@@ -200,38 +245,40 @@ Run the following script against the imported database. The script performs the 
 -   Set the correct performance parameters.
 -   Enable the SQL Query Store feature.
 
-    CREATE USER axdeployuser FROM LOGIN axdeployuser
-    EXEC sp_addrolemember 'db_owner', 'axdeployuser'
+```
+	CREATE USER axdeployuser FROM LOGIN axdeployuser
+	EXEC sp_addrolemember 'db_owner', 'axdeployuser'
 
-    CREATE USER axdbadmin WITH PASSWORD = '<password from lcs>'
-    EXEC sp_addrolemember 'db_owner', 'axdbadmin'
+	CREATE USER axdbadmin WITH PASSWORD = 'password from lcs'
+	EXEC sp_addrolemember 'db_owner', 'axdbadmin'
 
-    CREATE USER axruntimeuser WITH PASSWORD = '<password from lcs>'
-    EXEC sp_addrolemember 'db_datareader', 'axruntimeuser'
-    EXEC sp_addrolemember 'db_datawriter', 'axruntimeuser'
+	CREATE USER axruntimeuser WITH PASSWORD = 'password from lcs'
+	EXEC sp_addrolemember 'db_datareader', 'axruntimeuser'
+	EXEC sp_addrolemember 'db_datawriter', 'axruntimeuser'
 
-    CREATE USER axmrruntimeuser WITH PASSWORD = '<password from lcs>'
-    EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser'
-    EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
-    EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
+	CREATE USER axmrruntimeuser WITH PASSWORD = 'password from lcs'
+	EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser'
+	EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
+	EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
 
-    CREATE USER axretailruntimeuser WITH PASSWORD = '<password from lcs>'
-    EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
-    EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
+	CREATE USER axretailruntimeuser WITH PASSWORD = 'password from lcs'
+	EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
+	EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 
-    CREATE USER axretaildatasyncuser WITH PASSWORD = '<password from lcs>'
-    EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
+	CREATE USER axretaildatasyncuser WITH PASSWORD = 'password from lcs'
+	EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
 
-    ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
-    ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
-    ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
-    ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
-    ALTER DATABASE <imported database name> SET COMPATIBILITY_LEVEL = 130;
-    ALTER DATABASE <imported database name> SET QUERY_STORE = ON;
- 
-### Run the MajorVersionDataUpgradeWithRetail.zip package
+	ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
+	ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
+	ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
+	ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
+	ALTER DATABASE imported-database-name SET COMPATIBILITY_LEVEL = 130;
+	ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
+```
 
-Run the data upgrade deployable package, which is called MajorVersionDataUpgradeWithRetail.zip as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). You will find the MajorVersionDataUpgradeWithRetail.zip in the same location described in the article for MinorVersionDataUpgrade.zip.
+### Run the MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip packages
+
+Run the data upgrade deployable packages, which are called MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). You must run both packages, one after the other.
 
 ### Upgrade a copy of the database in a development environment
 

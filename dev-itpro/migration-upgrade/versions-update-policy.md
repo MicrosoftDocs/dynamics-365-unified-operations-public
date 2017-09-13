@@ -75,7 +75,9 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 | Release          |Major or minor release         | Version          | Build number | Availability  | Expiration date | 
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | Major release | July 2017 update | 7.2.11792.56024| June 2017     | June 2020  | 
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | Application update 2  | 7.2.11792.62192 | September 2017     | June 2020  | 
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | Application update 1  | 7.2.11792.62089 | July 2017     | June 2020  | 
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | Major release | July 2017 | 7.2.11792.56024| June 2017     | June 2020  | 
 | Microsoft Dynamics 365 for Operations     | Major release | 1611             | 7.1.1541.3036| November 2016 | November 2019   | 
 | Microsoft Dynamics AX |Minor release  | 7.0.1 | 7.0.1265.23014 | May 2016 | June 2017 |
 | Microsoft Dynamics AX | Major release | 7.0 | 7.0.1265.3015 | February 2016 | June 2017 |
@@ -109,8 +111,9 @@ Microsoft is committed to supporting the deployments of the Finance and Operatio
 ## Support matrix
 The following table provides information about the recent releases of the application and platform for Finance and Operations, and shows which versions are compatible.
 
-|                       | **Dynamics AX 7.0** | **Dynamics AX application 7.0.1** | **Dynamics 365 for Operations (1611)** | **Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update** |
+|                       | **Dynamics AX 7.0** | **Dynamics AX application 7.0.1** | **Dynamics 365 for Operations (1611)** | **Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) and later** |
 |-----------------------|---------------------|-----------------------------------|----------------------------------------|----------------------------------------------------------------------------------|
+| **Platform update 10** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
 | **Platform update 9** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
 | **Platform update 8** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
 | **Platform update 7** | Compatible          | Compatible                        | Compatible                             |                                                                                  |
@@ -122,5 +125,7 @@ The following table provides information about the recent releases of the applic
 | **Platform update 1** | Compatible          | Compatible                        |                                        |                                                                                  |
 | **Platform 7.0**      | Compatible          |                                   |                                        |                                                                                  |
 
-
+Related topics: 
+- [Finance and Operations cloud platform monthly updates FAQ](../sysadmin/faq-platform-monthly-updates.md)
+- [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881/modern-lifecycle-policy)
 

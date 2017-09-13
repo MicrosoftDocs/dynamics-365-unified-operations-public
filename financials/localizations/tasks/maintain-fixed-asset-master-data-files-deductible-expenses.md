@@ -24,14 +24,16 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Maintain fixed asset master data files for deductible expenses (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This task walks you through maintaining fixed asset master data files for deductible expenses.
-
+This task walks you through maintaining fixed asset master data files for deductible expenses.
+
+
+
 This task was created using the demo data company JPMF.
 
 

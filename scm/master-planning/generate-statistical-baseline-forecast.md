@@ -3,7 +3,7 @@
 
 title: Generate a statistical baseline forecast
 description: This article provides information about the parameters and filters that are used in the calculation of demand forecasting. 
-author: YuyuScheller
+author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

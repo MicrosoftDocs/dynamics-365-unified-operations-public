@@ -65,8 +65,8 @@ The **Vendor collaboration** mobile workspace lets a vendor perform these tasks:
 ## Prerequisites
 The prerequisites vary, depending on the version of Microsoft Dynamics 365 that has been deployed for your organization.
 
-### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update 
-If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, has been deployed for your organization, the system administrator must publish the **Vendor collaboration** mobile workspace. For instructions, see [Publish a mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) 
+If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), has been deployed for your organization, the system administrator must publish the **Vendor collaboration** mobile workspace. For instructions, see [Publish a mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
 ### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or later
 If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 

@@ -3,7 +3,7 @@
 
 title: View transactions on settlement for Eastern Europe
 description: This topic provides information about the Transactions on settlement page for customers and vendors.
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

@@ -3,7 +3,7 @@
  
 title: Set up EU sales list reporting
 description: This task walks you through an overview of the prerequisites required for EU sales list reporting. 
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -24,14 +24,16 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up EU sales list reporting
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This task walks you through an overview of the prerequisites required for EU sales list reporting. For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.
-This task applies to all European countries/regions. The guide was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region. The guide also uses Portugal as an exemplar EU country/region.
+This task walks you through an overview of the prerequisites required for EU sales list reporting. For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.
+
+This task applies to all European countries/regions. The guide was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region. The guide also uses Portugal as an exemplar EU country/region.
+
 These tasks are intended for system administrators.
 
 

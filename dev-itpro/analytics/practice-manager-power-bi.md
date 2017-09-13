@@ -25,7 +25,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: knelson
 ms.search.validFrom: 2017-06-30 
-ms.dyn365.version: Enterprise edition, July 2017 update 
+ms.dyn365.ops.version: July 2017 update 
 
 ---
 
@@ -44,7 +44,7 @@ The **Practice manager** Power BI content contains five report pages: one overvi
 All the amounts in the content are shown in the system currency. You can set the system currency on the **System parameters** page.
 
 ## Accessing the Power BI content
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, the **Practice manager** Power BI content is shown in the **Project management** workspace.
+If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), the **Practice manager** Power BI content is shown in the **Project management** workspace.
 
 ## Reports that are included in the Power BI content
 

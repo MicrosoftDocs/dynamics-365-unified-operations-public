@@ -3,7 +3,7 @@
 
 title: Calculate material consumption
 description: This article provides information about various options that are related to the calculation of material consumption. 
-author: YuyuScheller
+author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: BOMDesignerEditBOM, BOMTable, ProdBOM
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 53401

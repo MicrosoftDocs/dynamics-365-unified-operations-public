@@ -24,18 +24,24 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create and assign an equipment group (Japan)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Use this procedure to learn how to create an equipment group and configure an equipment group it to a fixed asset.
-
-The equipment groups provide default values when creating an accelerated depreciation document.
-
-In order to complete this procedure, the Asset configuration key must be selected.
-
+Use this procedure to learn how to create an equipment group and configure an equipment group it to a fixed asset.
+
+
+
+The equipment groups provide default values when creating an accelerated depreciation document.
+
+
+
+In order to complete this procedure, the Asset configuration key must be selected.
+
+
+
 This procedure was created using the demo data company JPMF.
 
 

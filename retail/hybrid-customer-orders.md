@@ -26,7 +26,7 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611, Retail Version
+ms.dyn365.ops.version: Version 1611
 
 ---
 

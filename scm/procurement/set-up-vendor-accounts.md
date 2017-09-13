@@ -3,7 +3,7 @@
 
 title: Set up vendor accounts
 description: This topic describes the types of information that you must specify when you create a new vendor account.
-author: YuyuScheller
+author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 191053

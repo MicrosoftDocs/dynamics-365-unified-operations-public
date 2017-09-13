@@ -24,16 +24,20 @@ ms.search.region: France
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # French bills of exchange and promissory notes (France)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-The French bill of exchange remittance report displays details about remitted bills of exchange. The report includes information about your bank account, legal entity, and remittance type. It also provides a list of customer transactions that are affected by the bill of exchange. This report is used by accounts receivable clerks and accounts payable clerks to maintain customer payments. 
-
-This procedure walks you through creating the bill of exchange remittance journal and generating the bill of exchange remittance report.
-Before you can complete this procedure, you must create, approve, and post draw the bill of exchange journal.
+The French bill of exchange remittance report displays details about remitted bills of exchange. The report includes information about your bank account, legal entity, and remittance type. It also provides a list of customer transactions that are affected by the bill of exchange. This report is used by accounts receivable clerks and accounts payable clerks to maintain customer payments. 
+
+
+
+This procedure walks you through creating the bill of exchange remittance journal and generating the bill of exchange remittance report.
+
+Before you can complete this procedure, you must create, approve, and post draw the bill of exchange journal.
+
 This procedure was created using the demo data company FRSI.
 
 1. Go to Accounts receivable > Payments > Bill of exchange > Remittance journal.

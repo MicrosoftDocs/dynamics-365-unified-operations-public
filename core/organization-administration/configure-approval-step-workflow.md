@@ -5,7 +5,7 @@ title: Configure an approval step in a workflow
 description: This topic explains how to configure the properties of an approval step.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -151,7 +151,10 @@ Follow these steps to specify who the approval step should be assigned to.
 
     If the user doesn't take action on the document in the allotted time, the document is overdue. A document that is overdue is escalated, based on the options that you select in the **Escalation** area of the page.
 4.  If you assigned the approval step to multiple users or a group of users, on the **Completion policy** tab, select one of the following options:
-    -   **Single approver** – The action that is applied to the document is determined by the first person who responds. For example, Sam has submitted an expense report for USD 15,000. The expense report is currently assigned to Sue, Jo, and Bill. If Sue is the first person who responds to the document, the action that she takes is applied to the document. If Sue rejects the document, it's rejected and sent back to Sam. If Sue approves the document, it's sent to Ann for approval. ![Workflow that has an approval process](./media/workflow_multipleusersinstep.gif)
+    -   **Single approver** – The action that is applied to the document is determined by the first person who responds. For example, Sam has submitted an expense report for USD 15,000. The expense report is currently assigned to Sue, Jo, and Bill. If Sue is the first person who responds to the document, the action that she takes is applied to the document. If Sue rejects the document, it's rejected and sent back to Sam. If Sue approves the document, it's sent to Ann for approval. 
+    
+    ![Workflow that has an approval process](./media/workflow_multipleusersinstep.gif)
+    
     -   **Majority of approvers** – The action that is applied to the document is determined when most of the approvers respond. For example, Sam has submitted an expense report for USD 15,000. The expense report is currently assigned to Sue, Jo, and Bill. If Sue and Jo are the first two approvers who respond, the action that they take is applied to the document.
         -   If Sue approves the document, but Jo rejects it, the document is rejected and sent back to Sam.
         -   If both Sue and Jo approve the document, it's sent to Ann for approval.
@@ -189,6 +192,7 @@ If a user doesn't take action on a document in the allotted time, the document i
 
 1.  In the left pane, click **Escalation**.
 2.  Select the **Use escalation path** check box to create an escalation path. The system automatically assigns the document to the users who are listed in the escalation path. For example, the following table represents an escalation path.
+
     | Sequence | Escalation path      |
     |----------|----------------------|
     | 1        | Assign to: Donna     |

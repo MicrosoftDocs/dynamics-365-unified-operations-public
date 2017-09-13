@@ -3,7 +3,7 @@
 
 title: Vendor collaboration with customers
 description: This topic describes how you can use vendor collaboration in Finance and Operations to work with POs and to monitor consignment inventory.
-author: YuyuScheller
+author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

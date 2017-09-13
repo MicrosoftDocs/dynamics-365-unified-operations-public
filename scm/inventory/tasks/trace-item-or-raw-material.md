@@ -1,30 +1,30 @@
---- 
-# required metadata 
- 
+---
+# required metadata
+
 title: Trace an item or raw material
-description: This procedure demonstrates how to use item tracing to identify where items or raw materials have been used or are being used. 
+description: This procedure demonstrates how to use item tracing to identify where items or raw materials have been used or are being used.
 author: pjacobse
-manager: AnnBe 
+manager: AnnBe
 ms.date: 06/21/2016
-ms.topic: business-process 
+ms.topic: business-process
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-ax-applications
 ms.technology:  
- 
-# optional metadata 
- 
+
+# optional metadata
+
 # ms.search.form:   
-audience: Application User 
+audience: Application User
 # ms.devlang:  
-ms.reviewer: bibis
-ms.search.scope: Operations 
+ms.reviewer: YuyuScheller
+ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: pjacobse
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Trace an item or raw material
 
@@ -57,4 +57,3 @@ This procedure demonstrates how to use item tracing to identify where items or r
 8. On the Action Pane, click Tracing.
 9. Click Shipped sales orders.
 10. Close the page.
-

@@ -24,7 +24,7 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Norway
 # ms.search.industry: [industry; e.g. retail]
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: Enterprise edition, July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ---
 
 # VAT statement for Norway

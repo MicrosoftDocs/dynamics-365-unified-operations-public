@@ -24,7 +24,7 @@ ms.custom: 14361
 ms.assetid: 9f0a1883-cbe0-4cc7-b9f3-dd12fb85ebe8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: Shiva.Pandey
+ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

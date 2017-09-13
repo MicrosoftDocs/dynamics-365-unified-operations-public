@@ -3,7 +3,7 @@
 
 title: Intra-community VAT for Spain
 description: This topic provides information about the functionality for intra-community value-added tax (VAT). It explains how to turn on the functionality, calculate and print intra-community VAT amounts, and review intra-community VAT amounts that have been posted.
-author: ShylaThompson
+author: Anasyash
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
