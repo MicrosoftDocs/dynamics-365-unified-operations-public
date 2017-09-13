@@ -41,9 +41,13 @@ Dynamics 365 for Finance and Operations, Enterprise edition is customized extens
 These introductory topics contain general information about how Finance and Operations supports customization, including information on when customization transitions from overlayering to purely extension based. These topics also explain how to log extensibility requests to Microsoft, along with frequently asked questions and answers.
 
 + [Application extensibility plans](extensibility-roadmap.md)
-+ [Extensibility changes for Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)](changes-july-2017.md)
 + [Extensibility requests](extensibility-requests.md) 
 + [FAQ](app-sealing-faq.md) 
+
+## What's new
+In this section, you can get to see continous updates on the extensibility related changes that come with every release or platform update starting from July 2017.
+
++ [Extensibility changes for Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)](changes-july-2017.md)
 
 ## Getting started
 
