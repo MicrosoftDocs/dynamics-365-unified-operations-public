@@ -75,6 +75,8 @@ The initial release of the Finance and Operations (on-premises) software will be
 
 ### Table 1: Application releases
 
+For information about the new features included in each release, click the links in the **Version** column.
+
 | Release          |Major or minor release         | Version          | Build number | Availability  | Expiration date | 
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
 |  Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | [Application update 2](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4039142&bugId=3850590&qc=204b1f37a96118e0538a6cad6c91a398019308d0a6b558b86e1ebe35d8fb73c8)<br><br>**Note:** The link above points to a KB article, so you must log in to LCS. | 7.2.11792.62192 | September 2017     | June 2020  | 
@@ -85,6 +87,8 @@ The initial release of the Finance and Operations (on-premises) software will be
 |  Dynamics AX | Major release | [7.0](../get-started/whats-new-changed-7-0-february-2016.md) | 7.0.1265.3015 | February 2016 | June 2017 | 
 
 ### Table 2: Platform releases
+
+For information about the new features included in each release, click the links in the **Release** column.
 
 | Release           | Build number   | Availability  | Expiration date   |
 |-------------------|----------------|---------------|-------------------|
