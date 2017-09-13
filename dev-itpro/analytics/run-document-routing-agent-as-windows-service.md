@@ -5,7 +5,7 @@ title: Run the Document Routing Agent as a Windows service
 description: The Document Routing Agent can be run as either a desktop application or a Microsoft Windows service. This topic provides important information that will help you select the correct execution mode.
 author: TJVass
 manager: AnnBe
-ms.date: 09/11/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -91,25 +91,25 @@ By default, the Document Routing Agent runs as a desktop application. To run the
 
 The Document Routing Agent is now running as a Windows service.
 
-## Troubleshoot
+## Troubleshooting
 #### 1.  Verify the network printer connection
--   Check to make sure the active account has sufficient access rights with the **Network Printer**
--   Verify that the user account is able to print successfully on the network device using Notepad or other local application
+-   Check to make sure the active account has sufficient access rights with the **Network Printer**.
+-   Verify that the user account is able to print successfully on the network device using Notepad or another local application.
     
-#### 2. Dynamics 365 Security Roles
--   To access the application links to install the Document Routing Agent, the user must be part of the **Document routing client security role**
+#### 2. Verify security roles
+-   To access the application links to install the Document Routing Agent, the user must be part of the **Document routing client security role**.
     
 #### 3.  Review the service account's access rights
--   Ensure that the **DocumentRoutingService** service is running as a domain account that has access to the network devices
+-   Ensure that the **DocumentRoutingService** service is running as a domain account that has access to the network devices.
     
 #### 4.  Refresh Azure Service Token  
--   Azure authentication tokens must be **refreshed every 90 days** while the Document Routing Agent is running as a Windows Service
--   Open the client and use the menu item commands to **Sign Out** and then **Sign In** to refresh the service token
+-   Azure authentication tokens must be **refreshed every 90 days** while the Document Routing Agent is running as a Windows Service.
+-   Open the client and use the menu item commands to **Sign Out** and then **Sign In** to refresh the service token..
     
-#### 5.  Disable shared printers for Remote Access
--   When connecting to the host machine using Remote Desktop, ensure that you uncheck the **Printers** option in the Local devices and resources section on the Local Resources tab 
+#### 5.  Disable shared printers for remote access
+-   When connecting to the host machine using Remote Desktop, ensure that you uncheck the **Printers** option in the Local devices and resources section on the Local Resources tab. 
     
 #### 6.  Check the Event logs
--   Open the system Event Viewer on the host machine 
+-   Open the system Event Viewer on the host machine .
 -   Review logs under:  **Application and Services Logs > Microsoft > Dynamics > AX-SSRSReportsShared**
 
