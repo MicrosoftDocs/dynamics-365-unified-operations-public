@@ -51,7 +51,7 @@ The Finance and Operations online service and the Finance and Operations (on-pre
     - **Critical fixes** – Microsoft may provide a customer with a hotfix for their current platform version of Finance and Operations, or a fix may be provided in the latest platform version of Finance and Operations, at its discretion.
     - **Non-critical updates** – Customers must update to the most current Finance and Operations platform version to deploy non-critical updates.
     
-    For more information about platform updates, see [Finance and Operations cloud platform monthly updates FAQ](../sysadmin/faq-platform-monthly-updates.md).
+    For more information about platform versions, see [Finance and Operations cloud platform monthly updates FAQ](../sysadmin/faq-platform-monthly-updates.md).
 
 ## Online service update policies
 
