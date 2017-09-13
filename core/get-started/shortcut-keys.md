@@ -2,7 +2,7 @@
 # required metadata
 
 title: Keyboard shortcuts
-description: The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance and Operations. 
+description: The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: jasongre
 manager: AnnBe
 ms.date: 09/12/2017
@@ -45,23 +45,23 @@ The following keyboard shortcuts apply across Dynamics 365 for Finance and Opera
 | **To do this**                                    | **Press**                        |
 | Open action search                                | Ctrl+’ or Alt+Q                  |
 | Move to the standard Action Pane                  | Alt+M,A or Ctrl+F6               |
-| Open a tab on the Action Pane or a menu           | Enter or Space or Alt+Down Arrow |
-| Move to next/previous option in a menu            | Down Arrow / Up Arrow            |
+| Open a tab on the Action Pane or a menu           | Enter or Space or Alt+Down arrow |
+| Move to next/previous option in a menu            | Down arrow / Up arrow            |
 | Close a tab on the Action Pane or a menu          | Esc                              |
 | Simulate a right-click                            | Shift+F10                        |
 | Open the Finance and Operations context menu      | Ctrl+F10                         |
 | Execute the default button on a form/dialog box   | Alt+Enter                        |
 | Click a button or tile                            | Enter or Space                   |
-| View refresh information for a count tile         | Alt+Up Arrow                     |
+| View refresh information for a count tile         | Alt+Up arrow                     |
 
 ## Date picker shortcuts
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **To do this**                        | **Press**                                 |
-| Open the date picker                  | Alt+Down Arrow                            |
-| Move between dates in the date picker | Ctrl+Arrows                               |
-| Move to the next/previous month       | Page Down / Page Up                       |
-| Move to the next/previous year        | Ctrl+Shift+Page Down / Ctrl+Shift+Page Up |
+| Open the date picker                  | Alt+Down arrow                            |
+| Move between dates in the date picker | Ctrl+Arrow keys                               |
+| Move to the next/previous month       | Page down / Page up                       |
+| Move to the next/previous year        | Ctrl+Shift+Page down / Ctrl+Shift+Page up |
 | Move to today                         | Ctrl+Home                                 |
 | Pick today's date                     | T                                         |
 | Clear the selected date               | C                                         |
@@ -72,7 +72,7 @@ The following keyboard shortcuts apply across Dynamics 365 for Finance and Opera
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | Open the FactBox pane (or move focus to the FactBox pane if it is already open) | Alt+M,B or Ctrl+F2                        |
 | Close the FactBox pane (with focus in the FactBox pane)                         | Esc                                       |
-| Move to the next/previous FactBox (with focus in the FactBox pane)              | Alt+Shift+Down Arrow / Alt+Shift+Up Arrow |
+| Move to the next/previous FactBox (with focus in the FactBox pane)              | Alt+Shift+Down arrow / Alt+Shift+Up arrow |
 | Move to the &lt;n&gt;th FactBox (with focus in the FactBox pane)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Expand a FactBox (with focus on the FactBox header)                             | Space or Enter                            |
 | Collapse the current FactBox                                                    | Alt+0                                     |
@@ -100,8 +100,8 @@ The following keyboard shortcuts apply across Dynamics 365 for Finance and Opera
 | Toggle edit mode                                    | F2                |
 | Attach a document                                   | Ctrl+Shift+A      |
 | Export to Excel                                     | Ctrl+Shift+E      |
-| Move to the previous record (outside a grid)        | Ctrl+Up Arrow     |
-| Move to the next record (outside a grid)            | Ctrl+Down Arrow   |
+| Move to the previous record (outside a grid)        | Ctrl+Up arrow     |
+| Move to the next record (outside a grid)            | Ctrl+Down arrow   |
 | Move to the first record (outside a grid)           | Ctrl+Home         |
 | Move to the last record (outside a grid)            | Ctrl+End          |
 | Close the form (click Back)                         | Esc               |
@@ -113,11 +113,11 @@ The following keyboard shortcuts apply across Dynamics 365 for Finance and Opera
 |-----------------------------------------------------|----------------------------------------------|
 | **To do this**                                      | **Press**                                    |
 | Move to the next/previous field                     | Tab / Shift+Tab                              |
-| Move to the next/previous tab                       | Alt+Shift+Right Arrow / Alt+Shift+Left Arrow |
+| Move to the next/previous tab                       | Alt+Shift+Right arrow / Alt+Shift+Left arrow |
 | Move to the &lt;n&gt;th tab                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
-| Move to the next/previous FastTab                   | Alt+Shift+Down Arrow / Alt+Shift+Up Arrow    |
+| Move to the next/previous FastTab                   | Alt+Shift+Down arrow / Alt+Shift+Up arrow    |
 | Move to the &lt;n&gt;th FastTab                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Move to the next/previous blade (vertical tab)      | Alt+Shift+Right Arrow / Alt+Shift+Left Arrow |
+| Move to the next/previous blade (vertical tab)      | Alt+Shift+Right arrow / Alt+Shift+Left arrow |
 | Move to the &lt;n&gt;th blade (vertical tab)        | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Expand a FastTab (with focus on the FastTab header) | Space or Enter                               |
 | Collapse the current FastTab                        | Alt+0                                        |
@@ -131,17 +131,17 @@ The following keyboard shortcuts apply across Dynamics 365 for Finance and Opera
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | **To do this**                                                                                                         | **Press**                       |
 | Move to the next/previous column                                                                                       | Tab / Shift+Tab                 |
-| Move to the next/previous row                                                                                          | Down Arrow / Up Arrow           |
-| Move to the next/previous row without selecting<br><br>**Note:** This shortcut applies to multi-select scenarios only. | Ctrl+Up Arrow / Ctrl+Down Arrow |
+| Move to the next/previous row                                                                                          | Down arrow / Up arrow           |
+| Move to the next/previous row without selecting<br><br>**Note:** This shortcut applies to multi-select scenarios only. | Ctrl+Up arrow / Ctrl+Down arrow |
 | Select/clear the current row<br><br>**Note:** This shortcut applies to multi-select scenarios only.                    | Ctrl+Space / Ctrl+Click         |
 | Add the next/previous row to the selected set<br><br>**Note:** This shortcut applies to multi-select scenarios only.   | Shift+Space                     |
 | Add a range of rows to the selected set<br><br>**Note:** This shortcut applies to multi-select scenarios only.         | Shift+Click                     |
-| Go to the next/previous page of data                                                                                   | Page Up / Page Down             |
-| Create a new row at the bottom of the grid                                                                             | Down Arrow (from the last row)  |
+| Go to the next/previous page of data                                                                                   | Page up / Page down             |
+| Create a new row at the bottom of the grid                                                                             | Down arrow (from the last row)  |
 | Select or clear all rows                                                                                               | Ctrl+Shift+M                    |
 | Move to the first record                                                                                               | Ctrl+Home                       |
 | Move to the last record                                                                                                | Ctrl+End                        |
-| Execute the default action in a grid<br><br>**Note:** This shortcut is enabled when focus is on a cell containing a hyperlink--and--all cells in that column have hyperlinks.                 | Enter                           |
+| Execute the default action in a grid<br><br>**Note:** This shortcut is enabled when focus is on a cell containing a hyperlink and all cells in that column have hyperlinks.                 | Enter                           |
 
 ## Input control shortcuts
 |                                                                              |                               |
@@ -150,12 +150,12 @@ The following keyboard shortcuts apply across Dynamics 365 for Finance and Opera
 | Open the hyperlink                                                           | Ctrl+Enter                    |
 | Enter the session date in a date field                                       | D+Tab                         |
 | Enter the current date in a date field                                       | T+Tab                         |
-| Open lookup, combo box, date picker, drop dialog box                         | Alt+Down Arrow                |
+| Open lookup, combo box, date picker, drop dialog box                         | Alt+Down arrow                |
 | Close lookup, combo box, date picker, drop dialog box                        | Esc                           |
-| Move focus into a lookup (when the lookup is already open)                   | Alt+Down Arrow                |
-| Open the control's enhanced preview                                          | Alt+Up Arrow                  |
+| Move focus into a lookup (when the lookup is already open)                   | Alt+Down arrow                |
+| Open the control's enhanced preview                                          | Alt+Up arrow                  |
 | Select text in the current field                                             | Ctrl+A                        |
-| Enter/leave the text area in an HTML editor control                          | Alt+Down Arrow / Alt+Up Arrow |
+| Enter/leave the text area in an HTML editor control                          | Alt+Down arrow / Alt+Up arrow |
 | Switch focus between the text area and the toolbar in an HTML editor control | F6                            |
 
 ## Messaging shortcuts
@@ -196,8 +196,8 @@ The following keyboard shortcuts apply across Dynamics 365 for Finance and Opera
 | Use the Move tool (when in personalization mode)                                                                       | M                                   |
 | Select the current control as the one to move (when using the Move tool and no control has been selected to move yet)  | Space or Enter                      |
 | Clear the control to move (when using the Move tool)                                                                   | Esc                                 |
-| Move to the next position for the selected control (when using the Move tool)                                          | Tab or Right Arrow or Down Arrow    |
-| Move to the previous position for the selected control (when using the Move tool)                                      | Shift+Tab or Left Arrow or Up Arrow |
+| Move to the next position for the selected control (when using the Move tool)                                          | Tab or Right arrow or Down arrow    |
+| Move to the previous position for the selected control (when using the Move tool)                                      | Shift+Tab or Left arrow or Up arrow |
 | Use the Hide tool (when in personalization mode)                                                                       | H                                   |
 | Switch whether the current control is visible or hidden (when using the Hide tool)                                     | Space or Enter                      |
 | Use the Skip tool (when in personalization mode)                                                                       | K                                   |
@@ -218,15 +218,15 @@ The following keyboard shortcuts apply across Dynamics 365 for Finance and Opera
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | **To do this**                                                                                                          | **Press**                        |
-| Open the drop-down list (when the drop-down list is closed)                                                             | Alt+Down Arrow                   |
-| Move focus into the input field for the current segment in the drop-down list (when the drop-down list is already open) | Alt+Down Arrow                   |
-| Close the drop-down list                                                                                                | Alt+Up Arrow                     |
-| Close/open the right portion of the drop-down list                                                                      | Alt+Left Arrow / Alt+Right Arrow |
+| Open the drop-down list (when the drop-down list is closed)                                                             | Alt+Down arrow                   |
+| Move focus into the input field for the current segment in the drop-down list (when the drop-down list is already open) | Alt+Down arrow                   |
+| Close the drop-down list                                                                                                | Alt+Up arrow                     |
+| Close/open the right portion of the drop-down list                                                                      | Alt+Left arrow / Alt+Right arrow |
 | Switch between “Show valid” and “Show all” modes                                                                        | Alt+W                            |
 | Select the value from drop-down list and move to the next segment                                                       | Enter                            |
 | Move to the next/previous control on the page (when focus is in input control)                                          | Tab / Shift+Tab                  |
 | Move to the next/previous input field in the flyout (when focus is in the drop-down list)                               | Tab / Shift+Tab                  |
-| Move up/down a row in the lookup                                                                                        | Up Arrow / Down Arrow            |
-| Move up/down a page in the lookup                                                                                       | Page Up / Page Down              |
+| Move up/down a row in the lookup                                                                                        | Up arrow / Down arrow            |
+| Move up/down a page in the lookup                                                                                       | Page up / Page down              |
 | Move to the top/bottom of the lookup                                                                                    | Home / End                       |
 
