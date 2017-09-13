@@ -120,7 +120,7 @@ The following table shows how the templates were set up to handle dependencies. 
 | Payroll                 | 1    | 800 	 |
 
 > [!NOTE]
-> The Retail template is scheduled to be released in App update 3.
+> The Retail template is scheduled to be released in Finance and Operations, App update 3.
 
 We reserved levels 10 through 22 for shared system entities, so that those entities are processed first. Almost all systems also use the company-specific general ledger entities. Therefore, we reserved level 25 for those entities. These levels represent the minimum basic setup that is required for most shared data in a configuration.
 
