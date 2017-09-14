@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 2012
 
 # Credit limits for customers
 [!include[banner](../includes/banner.md)]
-**Credit limits for customers**
+
 
 Setting a credit limit lets you specify the maximum amount of credit to extend
 to your customers. If a credit limit is specified, it is checked automatically
