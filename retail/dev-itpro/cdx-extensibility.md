@@ -343,101 +343,67 @@ From the Retail SDK folder, open and run at SQL Server file 'ContosoRetailExtens
         {
         }
     }
+    ```
 
-1.  This method will be called by the CDX extensibility framework when you clikc the retail initialization.
+1. This method will be called by the CDX extensibility framework when you clikc the retail initialization. To ensure the CDX customization is used by the CDX extensibility module copy the below code in the above method
+    
+    ```
+    if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
+    {
+        resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_ContosoRetailExtension));
+    }
+    ```
+    
+    It's important to check the originalCDXSeedDataResource being processed is RetailCDXSeedDataAX7 before adding your custom resource to the list. Not doing so may result in unintended consequence that we won't delve into at this point.
 
-To ensure the CDX customization is used by the CDX extensibility module copy the below code in the above method
+1. To (re)initialize CDX module with the customized configuration execute the following steps.
 
-> if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
->
-> {
->
-> resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_ContosoRetailExtension));
->
-> }
+    a. Go to Retail&gt; Headquarters setup&gt; Retail scheduler&gt; Scheduler jobs&gt;
+    a. Click on Initialize retail scheduler
+    a. On the dialog that opens check the Delete existing configuration.
+    a. Click ok to start the initialization.
 
-It's important to check the originalCDXSeedDataResource being processed is RetailCDXSeedDataAX7 before adding your custom resource to the list. Not doing so may result in unintended consequence that we won't delve into at this point.
+    When the initialization is completed the CDX scheduler jobs, subjob definitions and distribution schedules will be updated using the original RetailCDXSeedDataAX7 and the customized RetailCDXSeedDataAX7\_ContosoRetailExtension resources.
 
-1.  To (re)initialize CDX module with the customized configuration execute the following steps.
+#### How to test the customization
 
-<!-- -->
+1. To see that your customization is working properly.
+    a. After the initialization is completed go to Retail &gt; Headquarters setup &gt; Retail scheduler &gt; and click on "Scheduler subjobs" link
+    a. On the subjobs table search for "RetailTransactionTable" subjob id.
+    a. On the "Set up" fast tab verify that the "Channel table name" is set to \[ext\].RetailTransactionTableView.
+    a. On the detail section go to the "Channel field mapping" section and verify that the new custom (extension) columns are listed in the mapping.
+1. To test that the CDX job will upload/pull from the channel side original and extension table using their unified view.
+    a. Create a couple of transactions in MPOS.
+    a. Since the extension table is not used in the CRT/MPOS we must manually insert data to the extension table. Run the following script after changing the necessary values
 
-1.  Go to Retail&gt; Headquarters setup&gt; Retail scheduler&gt; Scheduler jobs&gt;
+        ```
+        INSERT INTO \[ext\].\[CONTOSORETAILTRANSACTIONTABLE\] (
+        \[CONTOSORETAILSEATNUMBER\],
+        \[CONTOSORETAILSERVERSTAFFID\],
+        \[TRANSACTIONID\],
+        \[STORE\],
+        \[CHANNEL\],
+        \[TERMINAL\],
+        \[DATAAREAID\])
+        VALUES (
+        1, /\*normally this needs to be an existing seat number from ContosoRetailSeatingData table, but for this test add any number\*/
+        '000160' /\*add any staff ID here\*/,
+        'HOUSTON-HOUSTON-11-101',/\*add the transaction id you just created \*/
+        'HOUSTON', /\*add the store used to create the transaction \*/
+        5637144592, /\*add the channel RecId of the store used to create the transaction\*/
+        'HOUSTON-11', /\*add the terminalId used to create the transaction\*/
+        'USRT' /\*add the dataareaId used by the store\*/)
+        GO
+        ```
 
-2.  Click on Initialize retail scheduler
+    Repeat the same for the other transactions. Do not add a corresponding data in the \[ext\].\[CONTOSORETAILTRANSACTIONTABLE\] for some of the transactions you created in POS. This is required to check that the data from \[ax\].RetailTransactionTable is pulled/uploaded even if there is no corresponding data in the extension table.
 
-3.  On the dialog that opens check the Delete existing configuration.
+    a. Go to AX &gt; Retail &gt; Retail IT &gt; click on Distribution schedule.
+    a. From the list of distribution schedule select P-0001 which contains the RetialTransactionTable subjob we customized.
+    a. Click on "Run" from the top Action menu pane. Click Yes when the confirmation dialog pops up.
+    a. Click on "History" from the Action menu pane. (This is where we check if the uploaded session is completed successfully or not.
+    a. On the history page - Check if there is a new upload session record and that its status is set to Applied and Rows Affected is not zero.
 
-4.  Click ok to start the initialization.
+    If the upload session is applied successfully, Go to Retail &gt; Inquiries and reports &gt; Retail store transactions and search for the new transaction that were just uploaded and verify the transactions, seat number and the server staff Id custom columns have the expected value.
 
-when the initialization is completed the CDX scheduler jobs, subjob definitions and distribution schedules will be updated using the original RetailCDXSeedDataAX7 and the customized RetailCDXSeedDataAX7\_ContosoRetailExtension resources.
-
-**How to test the customization**:
-
-1) To see that your customization is working properly.
-
-1.  After the initialization is completed go to Retail &gt; Headquarters setup &gt; Retail scheduler &gt; and click on "Scheduler subjobs" link
-
-2.  On the subjobs table search for "RetailTransactionTable" subjob id.
-
-3.  On the "Set up" fast tab verify that the "Channel table name" is set to \[ext\].RetailTransactionTableView.
-
-4.  On the detail section go to the "Channel field mapping" section and verify that the new custom (extension) columns are listed in the mapping.
-
-2) To test that the CDX job will upload/pull from the channel side original and extension table using their unified view.
-
-1.  Create a couple of transactions in MPOS.
-
-2.  Since the extension table is not used in the CRT/MPOS we must manually insert data to the extension table.
-
-**Run the following script after changing the necessary values:**
-
-INSERT INTO \[ext\].\[CONTOSORETAILTRANSACTIONTABLE\] (
-
-\[CONTOSORETAILSEATNUMBER\],
-
-\[CONTOSORETAILSERVERSTAFFID\],
-
-\[TRANSACTIONID\],
-
-\[STORE\],
-
-\[CHANNEL\],
-
-\[TERMINAL\],
-
-\[DATAAREAID\])
-
-VALUES (
-
-1, /\*normally this needs to be an existing seat number from ContosoRetailSeatingData table, but for this test add any number\*/
-
-'000160' /\*add any staff ID here\*/,
-
-'HOUSTON-HOUSTON-11-101',/\*add the transaction id you just created \*/
-
-'HOUSTON', /\*add the store used to create the transaction \*/
-
-5637144592, /\*add the channel RecId of the store used to create the transaction\*/
-
-'HOUSTON-11', /\*add the terminalId used to create the transaction\*/
-
-'USRT' /\*add the dataareaId used by the store\*/)
-
-GO
-
-Repeat the same for the other transactions. Do not add a corresponding data in the \[ext\].\[CONTOSORETAILTRANSACTIONTABLE\] for some of the transactions you created in POS. This is required to check that the data from \[ax\].RetailTransactionTable is pulled/uploaded even if there is no corresponding data in the extension table.
-
-1.  Go to AX &gt; Retail &gt; Retail IT &gt; click on Distribution schedule.
-
-2.  From the list of distribution schedule select P-0001 which contains the RetialTransactionTable subjob we customized.
-
-3.  Click on "Run" from the top Action menu pane. Click Yes when the confirmation dialog pops up.
-
-4.  Click on "History" from the Action menu pane. (This is where we check if the uploaded session is completed successfully or not.
-
-5.  On the history page - Check if there is a new upload session record and that its status is set to Applied and Rows Affected is not zero.
-
-If the upload session is applied successfully, Go to Retail &gt; Inquiries and reports &gt; Retail store transactions and search for the new transaction that were just uploaded and verify the transactions, seat number and the server staff Id custom columns have the expected value.
-
-Also verify the transactions which do not have a corresponding record in the channel side extension table \[ext\].ContosoRetailTransactionTable are also uploaded. Check whether these transactions have default value for seat number and server staff ID, seat number = 0 and serer staff id = ''000160''
+    Also verify the transactions which do not have a corresponding record in the channel side extension table \[ext\].ContosoRetailTransactionTable are also uploaded. Check whether these transactions have default value for seat number and server staff ID, seat number = 0 and serer staff id = ''000160''
