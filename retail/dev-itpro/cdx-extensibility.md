@@ -60,7 +60,7 @@ Before pushing or pulling the data, you need to understand the different metadat
 1. Create your custom Dynamics 365 project and add custom table using AOT.
 1. Create a new resource file to add all custom job information’s. The template for the resource file is:
 
-'''
+```
 <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
     <Jobs>
     </jobs>
@@ -68,11 +68,11 @@ Before pushing or pulling the data, you need to understand the different metadat
         <Subjob Id="" TargetTableSchema="" TargetTableName="">
     </Subjobs>
  </RetailCdxSeedData>
-'''
+```
 
 1. Create a new Resource (xml file) in Dynamics 365 using AOT, in the resource xml file specify the new table and new job details like below. Note: Either you can add the new table part of the existing job or create a new job and add this table, in this case we are creating a new job id =”7000” and custom table = “ContosoRetailSeatingArrangementData”
 
-'''
+```
  [<RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">](file:///C:\Users\mumani\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LQW97M2L\RetailCDXSeedDataAX7_ContosoRetailExtension%20(002).xml)
     [<Jobs>](file:///C:\Users\mumani\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LQW97M2L\RetailCDXSeedDataAX7_ContosoRetailExtension%20(002).xml)
         <Job DescriptionLabelId="REX4520710" Description="Custom job" Id="7000"/>
@@ -91,7 +91,7 @@ Before pushing or pulling the data, you need to understand the different metadat
         </Subjob>
     </Subjobs>
 </RetailCdxSeedData>
-'''
+```
 
     TargetTable name is not specified here by default the system assume the target table name on the channel side is same name as the AXTable. If the target table name on the channel side is different than the source (AX table) name then in the &lt;Subjob&gt; node you can set the channel table name using the &lt;TargetTableName&gt; attribute.
 
@@ -101,7 +101,7 @@ Before pushing or pulling the data, you need to understand the different metadat
 
 1. In the Add New item window, select Resources and name the resource file as RetailCDXSeedDataAX7\_Custom and click **Add**.
 
-    ![Add new item](cdx-ext-1.png)
+    ![Add new item](media/cdx-ext-1.png)
 
 1. In the Select a Resource file window locate the resource file you created in step 2 and click Open.
 
@@ -109,7 +109,7 @@ Before pushing or pulling the data, you need to understand the different metadat
 
 1. Go to the even handler class you created in step 6 and paste the below event handler code.
 
-'''
+```
 if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
 
 {
@@ -117,7 +117,7 @@ if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
 resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom));
 
 }
-'''
+```
 
     Note: Since there are two CDX seed data definition in the system it’s imperative to specify that your extension CDX seed data is only added if the CDX seed data being generated is the version you are trying to extend that why the condition is important. If the if condition is removed your extension cdx seed data could be applied on top of the N-1 CDX seed data as well which may cause unintended consequences.
 
@@ -131,6 +131,7 @@ resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom));
 
 To pull data from new channel table to HQ the pattern remains the same, either create a new resource file and add the new resource to the event handler as second line:
 
+'''
 if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
 
 {
@@ -140,6 +141,7 @@ resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom));
 resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom1));
 
 }
+'''
 
 Or update the existing resource file with the new information, so that you don’t need to add new line.
 
@@ -147,89 +149,63 @@ To upload you have set the attribute IsUpload=”true”, In the resource file a
 
 **Sample:**
 
-> &lt;Subjob Id="ContosoRetailSeatReservationTrans" TargetTableSchema="ext" IsUpload="true" ReplicationCounterFieldName="ReplicationCounterFromOrigin" AxTableName="ContosoRetailSeatReservationTrans"&gt;
->
-> &lt;ScheduledByJobs&gt;
->
-> &lt;ScheduledByJob&gt;P-1000&lt;/ScheduledByJob&gt;
->
-> &lt;/ScheduledByJobs&gt;
->
-> &lt;AxFields&gt;
->
-> &lt;Field Name="transactionId"/&gt;
->
-> &lt;Field Name="storeId"/&gt;
->
-> &lt;Field Name="terminalId"/&gt;
->
-> &lt;Field Name="contactPhoneNo"/&gt;
->
-> &lt;Field Name="numberOfCustomers"/&gt;
->
-> &lt;Field Name="customerName"/&gt;
->
-> &lt;Field Name="reservationDate"/&gt;
->
-> &lt;Field Name="reservationTime"/&gt;
->
-> &lt;Field Name="replicationCounterFromOrigin"/&gt;
->
-> &lt;/AxFields&gt;
->
-> &lt;/Subjob&gt;
-
+```
+<Subjob Id="ContosoRetailSeatReservationTrans" TargetTableSchema="ext" IsUpload="true" ReplicationCounterFieldName="ReplicationCounterFromOrigin" AxTableName="ContosoRetailSeatReservationTrans">
+    <ScheduledByJobs>
+        <ScheduledByJob>P-1000</ScheduledByJob>
+    </ScheduledByJobs>
+    <AxFields>
+        <Field Name="transactionId"/>
+        <Field Name="storeId"/>
+        <Field Name="terminalId"/>
+        <Field Name="contactPhoneNo"/>
+        <Field Name="numberOfCustomers"/>
+        <Field Name="customerName"/>
+        <Field Name="reservationDate"/>
+        <Field Name="reservationTime"/>
+        <Field Name="replicationCounterFromOrigin"/>
+    </AxFields>
+</Subjob>
+```
 Note: You can either add this new table part of the existing pull job (P-1000) or create a new one.
 
+## Other scenarios
 For the rest of the push and pull scenarios only the sample resource file information is described because how to initialize is same as what we did in previous steps.
 
-**Push existing columns which is not mapped part of any sub jobs:**
+### Push existing columns which is not mapped part of any sub jobs:
 
 You can either push the existing unmapped column to new extension columns or existing columns in channel DB:
 
 **Sample resource file:**
 
-> &lt;Subjob Id="RetailChannelTable" TargetTableSchema="ext"&gt;
->
-> &lt;AxFields&gt;
->
-> &lt;Field Name="Payment"/&gt;
->
-> &lt;!-- Existing column which was not pushed to channel db--&gt;
->
-> &lt;Field Name="PaymMode"/&gt;
->
-> &lt;!-- Existing column which was not pushed to channel db--&gt;
->
-> &lt;Field Name="ContosoRetailWallPostMessage"/&gt;
->
-> &lt;!-- New column from the extended table --&gt;
->
-> &lt;/AxFields&gt;
->
-> &lt;/Subjob&gt;
+```
+<Subjob Id="RetailChannelTable" TargetTableSchema="ext">
+    <AxFields>
+        <Field Name="Payment"/>
+        <!-- Existing column which was not pushed to channel db-->
+        <Field Name="PaymMode"/>
+        <!-- Existing column which was not pushed to channel db-->
+        <Field Name="ContosoRetailWallPostMessage"/>
+        <!-- New column from the extended table -->
+    </AxFields>
+</Subjob>
+```
 
 Suppose if the table has a non RecId primary key then your channel side extension table should also contain the non-RecId primary keys.
 
 **Sample resource file:**
 
-> &lt;Subjob Id="RetailCustTable" TargetTableSchema="ext"&gt;
->
-> &lt;AxFields&gt;
->
-> &lt;Field Name="ReturnTaxGroup\_W"/&gt;
->
-> &lt;!-- Existing column which was not pushed to channel db--&gt;
->
-> &lt;Field Name="SSNNumber"/&gt;
->
-> &lt;!-- New column from the extended table--&gt;
->
-> &lt;/AxFields&gt;
->
-> &lt;/Subjob&gt;
->
-> &lt;/Subjobs&gt;
+```
+    <Subjob Id="RetailCustTable" TargetTableSchema="ext">
+        <AxFields>
+            <Field Name="ReturnTaxGroup\_W"/>
+            <!-- Existing column which was not pushed to channel db-->
+            <Field Name="SSNNumber"/>
+            <!-- New column from the extended table-->
+        </AxFields>
+    </Subjob>
+</Subjobs>
+```
 
 **Pull new columns to existing table:**
 
@@ -237,31 +213,26 @@ Suppose if you added new columns and want it to pull part of the existing table:
 
 Sample resource:
 
-> &lt;Subjob Id="RetailTransactionTable" TargetTableSchema="ext" TargetTableName="RetailTransactionTableView"&gt;
->
-> &lt;AxFields&gt;
->
-> &lt;Field Name="seatNumber"/&gt;
->
-> &lt;Field Name="serverStaffId"/&gt;
->
-> &lt;/AxFields&gt;
->
-> &lt;/Subjob&gt;
+```
+<Subjob Id="RetailTransactionTable" TargetTableSchema="ext" TargetTableName="RetailTransactionTableView">
+    <AxFields>
+        <Field Name="seatNumber"/>
+        <Field Name="serverStaffId"/>
+    </AxFields>
+</Subjob>
+```
 
 **Move existing sub job to another sub job:**
 
 Suppose if you want to move existing sub job to another job then just change the scheduled by job attribute in the resource file and execute it part of the event handler.
 
-> &lt;Subjob Id="DirPartyTable"&gt;
->
-> &lt;ScheduledByJobs&gt;
->
-> &lt;ScheduledByJob&gt;1000&lt;/ScheduledByJob&gt;
->
-> &lt;!--add existing subjob to another job--&gt;
->
-> &lt;/ScheduledByJobs&gt;
+```
+<Subjob Id="DirPartyTable">
+    <ScheduledByJobs>
+        <ScheduledByJob>1000</ScheduledByJob>
+        <!--add existing subjob to another job-->
+    </ScheduledByJobs>
+```
 
 **SAMPLE OVERVIEW:**
 
