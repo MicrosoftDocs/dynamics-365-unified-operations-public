@@ -3,9 +3,9 @@
 
 title: Project resourcing
 description: This topic provides information about project resourcing.
-author: twheeloc
+author: KimANelson
 manager: AnnBe
-ms.date: 08/30/2017
+ms.date: 09/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
