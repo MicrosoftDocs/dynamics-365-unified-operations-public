@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Tips to prevent long-running reports from timing out
+title: Help prevent long-running reports from timing out
 description: This article provides tips that can help you prevent reports that run for a long time from timing out. 
 author: TJVass
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Tips to prevent long-running reports from timing out
+# Help prevent long-running reports from timing out
 
 [!include[banner](../includes/banner.md)]
 
