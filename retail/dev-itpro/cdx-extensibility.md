@@ -2,7 +2,7 @@
 # required metadata
 
 title: CDX extensibility
-description: This topic describes the POS topology.
+description: 
 author: mugunthanm
 manager: AnnBe
 ms.date: 09/15/207
@@ -30,14 +30,14 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ---
 # CDX Extensibility
 
-Commerce Data Exchange is a system that transfers data between Retail headquarters and retail channels, such as online stores or brick-and-mortar stores. The data transfer between Retail HQ and channel database is controlled by scheduler jobs. Each scheduler job contains a list of scheduler sub jobs. The scheduler sub jobs contain the source and destination table names and the transfer field mapping of these tables. There are two ways to configure the data sync between the Retail HQ and channel database:
-
-+ Configure all the custom jobs and sub jobs using the CDX configuration UI
-+ Extend the retail initialization class using the extension points provided to support custom jobs and sub jobs for both push and pull.
-
-The advantage of using option 2 is you no need to configure the custom jobs in different environments (dev, test, production) instead run the retail initialization button under Retail parameters which will automatically create the custom job information’s in CDX for the data sync.
-
 This topic covers how you can extend Retail initialization class to support custom Commerce Data Exchange (CDX) sync using the extension points newly added in Dynamics 365 for Finance and Operations or Dynamics 365 for Retail platform update 8.
+
+Commerce Data Exchange is a system that transfers data between Retail headquarters (Retail HQ) and retail channels, such as online stores or brick-and-mortar stores. The data transfer between Retail HQ and the channel database is controlled by scheduler jobs. Each scheduler job contains a list of scheduler subjobs. The scheduler subjobs contain the source and destination table names and the transfer field mapping of these tables. There are two ways to configure the data sync between the Retail HQ and the channel database:
+
++ Configure all the custom jobs and subjobs using the CDX configuration user interface.
++ Extend the retail initialization class using the extension points provided to support custom jobs and subjobs for both push and pull.
+
+The advantage of using the retail initialization class is you don't need to configure the custom jobs in different environments (dev, test, production). Instead, you can run the retail initialization button under Retail parameters which will automatically create the custom job information’s in CDX for the data sync.
 
 There are different scenarios for data transfer data between Retail Headquarters and channel database:
 + Sending data from new HQ table to new channel database table using download job.
