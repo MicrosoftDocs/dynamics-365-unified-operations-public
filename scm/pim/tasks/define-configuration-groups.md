@@ -3,7 +3,7 @@
  
 title: Define configuration groups
 description: This procedure shows how to define product configuration groups by creating two groups in the demo data company USMF Company. 
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
