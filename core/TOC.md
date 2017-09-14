@@ -2108,6 +2108,10 @@
 ### [Use workflow to manage employee information](/dynamics365/unified-operations/talent/workflow-manage-employee-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Leave and absence overivew](/dynamics365/unified-operations/talent/leave-absence-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
+## Staffing your organization
+### [Attract overview](/dynamics365/unified-operations/talent/attract-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
+### [Onboard overview](/dynamics365/unified-operations/talent/create-onboarding-experience?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ## Motivate employees
 ### [Compensation plans](/dynamics365/unified-operations/talent/compensation-plans?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Create fixed compensation plans](/dynamics365/unified-operations/talent/create-fixed-compensation-plans?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
