@@ -3,7 +3,7 @@
  
 title: Create a finished product (February 2016 only)
 description: This task focuses on creating a finished product. 
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 02/07/2017
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
