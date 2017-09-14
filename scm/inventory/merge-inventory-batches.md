@@ -56,7 +56,7 @@ Yes, there are some things that you must set up before you can use the merge bat
 <tbody>
 <tr class="odd">
 <td>Journal names, inventory</td>
-<td>You must create the journal name that is used by default when you post batch merges in inventory journals. Optional but recommended: You can specify that reservations should be made automatically when the batch merge is transferred to the inventory journal. Otherwise, there is a risk that the on-hand inventory might be changed after the batch merge details are set up and the journal is posted. To enable automatic reservations for the journal name, select <strong>Automatic</strong> in the <strong><strong>Reservation</strong></strong> field.</td>
+<td>You must create a journal name of the type BOM that is used by default when you post batch merges in inventory journals. Optional but recommended: You can specify that reservations should be made automatically when the batch merge is transferred to the inventory journal. Otherwise, there is a risk that the on-hand inventory might be changed after the batch merge details are set up and the journal is posted. To enable automatic reservations for the journal name, select <strong>Automatic</strong> in the <strong><strong>Reservation</strong></strong> field.</td>
 </tr>
 <tr class="even">
 <td>Inventory and warehouse management parameters</td>
@@ -86,7 +86,7 @@ Yes, there are some things that you must set up before you can use the merge bat
 Here are some examples of scenarios where it might be useful to merge batches:
 
 -   As Sammy is walking through his warehouse, he notices that several batches of the same item have low quantities. He is expecting to receive several new shipments, and he realizes that he can free some floor space by merging the odd quantities into a new batch.
--   Sammy is receiving inventory, and he wants to combine the new batch with one that he has already received, to improve the batch attribute value of the existing batch.
+-   Sammy is receiving inventory, and he wants to combine the new batch with one that he has already received, to improve the batch attribute value of the existing batch. By doing so you create a new batch.
 
 ## Can I merge batches across sites and legal entities?
 No, you can merge only batches that have the same site and warehouse storage dimensions in one legal entity. However, you can specify a different location and pallet ID for the merged batch.
