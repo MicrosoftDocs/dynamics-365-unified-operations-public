@@ -1,10 +1,41 @@
+---
+# required metadata
+
+title: Credit limits for customers
+description: This article provides an overview of how credit limits work in Dynamics 365 for Finance and Operations.
+author: omulvad
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  TAMVendRebateAgreement
+audience: Application User
+# ms.devlang: 
+ms.reviewer: bis
+ms.search.scope: Core, Operations, Unified operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: [Global for most topics. Set Country/Region name for localizations]
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: omulvad
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 2012 
+---
+
+# Vendor rebates
+[!include[banner](../includes/banner.md)]
 **Credit limits for customers**
 
 Setting a credit limit lets you specify the maximum amount of credit to extend
 to your customers. If a credit limit is specified, it is checked automatically
 when a user attempts to update a document. If the credit limit is exceeded, a
-message is displayed to the user. This topic provides an overview of how credit
-limits work in Microsoft Dynamics AX and answers the following questions:
+message is displayed to the user. This article provides an overview of how credit
+limits work  and answers the following questions:
 
 -   What documents and processes can I check credit limits for?
 
@@ -65,7 +96,7 @@ settings.
 **Where do I configure the way that a customer’s remaining credit is
 calculated?**
 
-You can configure Microsoft Dynamics AX to calculate a customer’s remaining
+You can configure Dynamics 365 to calculate a customer’s remaining
 credit in any of the following ways:
 
 -   Compare the credit limit against the customer balance.
