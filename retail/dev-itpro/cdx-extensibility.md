@@ -234,75 +234,72 @@ Suppose if you want to move existing sub job to another job then just change the
     </ScheduledByJobs>
 ```
 
-**SAMPLE OVERVIEW:**
+## Sample overview
 
 We added new sample in RetailSDK\\Code\\Documents\\SampleExtensionsInstructions\\CDX in Dynamics 365 for Retail – App update 4 to help with the CDX extensibility. This sample describes the steps and best practices for customizing retail transactional tables by using extension tables and also show how to customize CDX to upload the customized (extension) channel side tables back to AX. At the end there is also a section that describes how to test the customization.
 
-**SETUP STEPS:**
+## Setup steps
 
 It is advised that you do these changes on an untouched Retail SDK. Or have it under source control (VSO or similar), so that you could revert at any steps easily. import the. axpp package located in the SDK and run the SQL update script on your channel database before going through the below steps: descriptions below.
 
-**How to import the AX side package that contains the customization code:**
+1. Import the AX side package that contains the customization code.
 
-1.  copy the. axpp package from the SDK folder
+    a. copy the. axpp package from the SDK folder
 
-2.  open VS &gt; click on Dynamics 365&gt; click on "Import project"
+    b. open VS &gt; click on Dynamics 365&gt; click on "Import project"
 
-3.  in the import project form specify the. axpp file path.
+    c. in the import project form specify the. axpp file path.
 
-4.  select 'current solution' or 'new solution' based on your preference.
+    d. select 'current solution' or 'new solution' based on your preference.
 
-5.  click OK to start importing the package.
+    e. click OK to start importing the package.
 
-6.  once the import is done you will have the ax files in your solution explorer.
+    f. once the import is done you will have the ax files in your solution explorer.
 
-7.  build the solution.
+    g. build the solution.
 
-8.  right click on the project and click on Synchronize database.
+    h. right click on the project and click on Synchronize database.
 
-**Run the SQL update script:**
+2. Run the SQL update script.
 
-1.  copy the ContosoRetailExtensionTablesUpdate.sql. from the Retail SDK folder. Similarly, you can run the other sample files.
+    a. copy the ContosoRetailExtensionTablesUpdate.sql. from the Retail SDK folder. Similarly, you can run the other sample files.
 
-2.  open the script in SQL browser and run it against your channel database.
+    b. open the script in SQL browser and run it against your channel database.
 
-3.  This will create the extension tables and views required to customize the transactional tables. Note the script also creates other tables which are used for other sample scenarios.
+    c. This will create the extension tables and views required to customize the transactional tables. Note the script also creates other tables which are used for other sample scenarios.
 
-**SAMPLE HOW TO STEPS AND EXPLANATIONS**
+## About the sample
 
-**1. Extending the AX data:**
+### Extending the AX data
 
 The AX side table extension is already created in the sample. But if you want to create manually then follow the below steps:
 
-1.  Launch Visual Studio.
+1. Launch Visual Studio.
 
-2.  Go to View &gt; Application Explorer.
+2. Go to View &gt; Application Explorer.
 
-3.  Select Data Model &gt; Tables &gt; RetailTransactionTable, right-click on it, select "Create extension".
+3. Select Data Model &gt; Tables &gt; RetailTransactionTable, right-click on it, select "Create extension".
 
 As a best practice, it's good to change the default name to something like RetailTransactionTable.ContosoRetailExtension. always add your unique prefix. In this sample 'ContosoRetail' is used as a unique prefix. This is helpful to avoid naming conflicts if table is extended by multiple ISVs.
 
-1.  In new table "RetailTransactionTable.ContosoRetailExtension" create two new fields:
+1. In new table "RetailTransactionTable.ContosoRetailExtension" create two new fields:
 
-    1.  Type=string, name=ContosoRetailServerStaffId - set the Extended data type property to RetailStaffId.
+    a. Type=string, name=ContosoRetailServerStaffId - set the Extended data type property to RetailStaffId.
 
-    2.  Type=int, name=ContosoRetailSeatNumber - Extended data type property is set to ContosoRetailSeatNumber.
+    b. Type=int, name=ContosoRetailSeatNumber - Extended data type property is set to ContosoRetailSeatNumber.
 
 2.  Save the changes and build your project.
-
 3.  Right click on your project and click on synchronize the database.
 
-**Note:** The unique prefix is added to the new column names as a best practice to avoid future naming conflicts. The naming conflict can occur if another ISV creates a column with the same name or if microsoft ships an update which uses a column with the same name. Even though the extension table is created in a different AOT asset, in SQL the new columns are added to the original table.
+    Note: The unique prefix is added to the new column names as a best practice to avoid future naming conflicts. The naming conflict can occur if another ISV creates a column with the same name or if microsoft ships an update which uses a column with the same name. Even though the extension table is created in a different AOT asset, in SQL the new columns are added to the original table.
 
-**2. Extending the channel side database:**
+### Extending the channel side database
 
-From the Retail SDK folder, open and run at SQL Server file 'ContosoRetailExtensionTablesUpdate.sql' This will create:
+From the Retail SDK folder, open and run at SQL Server file 'ContosoRetailExtensionTablesUpdate.sql'. Several items are created:
 
-> 1. Table \[ext\].ContosoRetailTransactionTable with the foreign key and custom (extension) fields.
++ **\[ext\].ContosoRetailTransactionTable table** with the foreign key and custom (extension) fields. In addition to the extension columns we added in the AX side tables, the channel side extension table also need to have the same primary key columns as the original channel side table. That's why \[ext\].RetailTransactionTable\_ContosoRetailExtension has the four primary key columns used in \[ax\].RetialTransactionTable. As a best practice when you add the primary key columns to the channel side extension table keep the name of the columns same as the primary key column names on original. This will help you to uptake the CDX enhancement Microsoft will ship out in the future easily.
 
-In addition to the extension columns we added in the AX side tables, the channel side extension table also need to have the same primary key columns as the original channel side table. That's why \[ext\].RetailTransactionTable\_ContosoRetailExtension has the four primary key columns used in \[ax\].RetialTransactionTable. As a best practice when you add the primary key columns to the channel side extension table keep the name of the columns same as the primary key column names on original. This will help you to uptake the CDX enhancement Microsoft will ship out in the future easily.
-
-> 2. View: \[ext\].RetailTransactionTableView joining the original channel side table and the extension channel side table.
++ **\[ext\].RetailTransactionTableView view** joining the original channel side table and the extension channel side table.
 
 This view is required for CDX to properly upload/pull the records from the channel extension table back to HQ tables. Channel side table \[ax\].RetailTransactionTable is left joined with the extension table \[ext\].ContosoRetailTransactionTable. Using an inner join in this view may have unintended consequence. For example if a record is created in \[ax\].RetailTransactionTable but your custom code doesn't create a corresponding record in the extension table, then the resulting view will filter out this records. When corresponding record is not found in the extension table, left join will set the custom columns to Null. This could cause issues when CDX pulls that record to AX. To avoid this, make sure the custom columns are defaulted (Coalesced) to a proper value as shown in the sample.
 
