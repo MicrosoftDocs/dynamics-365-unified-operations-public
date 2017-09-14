@@ -55,6 +55,7 @@ If the report uses the Report Data Provider (RDP) to retrieve data, the report s
 7.  Update the Output Menu Item so that it points to the **Controller** class instead of the report.
 
 The following video demonstrates the process: 
+
 > [!Video https://www.youtube.com/watch?v=6tdQtHV2WAc&list=UUfGIUxWmd1ZA11NB8FgVWpw]
 
 ## Use batch processing
