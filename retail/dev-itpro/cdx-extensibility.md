@@ -60,64 +60,58 @@ Before pushing or pulling the data, you need to understand the different metadat
 1. Create your custom Dynamics 365 project and add custom table using AOT.
 1. Create a new resource file to add all custom job information’s. The template for the resource file is:
 
-```
-<RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
-    <Jobs>
-    </jobs>
-    <Subjobs>
-        <Subjob Id="" TargetTableSchema="" TargetTableName="">
-    </Subjobs>
- </RetailCdxSeedData>
-```
+    ```
+    <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
+        <Jobs>
+        </jobs>
+        <Subjobs>
+            <Subjob Id="" TargetTableSchema="" TargetTableName="">
+        </Subjobs>
+     </RetailCdxSeedData>
+    ```
 
 1. Create a new Resource (xml file) in Dynamics 365 using AOT, in the resource xml file specify the new table and new job details like below. Note: Either you can add the new table part of the existing job or create a new job and add this table, in this case we are creating a new job id =”7000” and custom table = “ContosoRetailSeatingArrangementData”
 
-```
- [<RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">](file:///C:\Users\mumani\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LQW97M2L\RetailCDXSeedDataAX7_ContosoRetailExtension%20(002).xml)
-    [<Jobs>](file:///C:\Users\mumani\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LQW97M2L\RetailCDXSeedDataAX7_ContosoRetailExtension%20(002).xml)
-        <Job DescriptionLabelId="REX4520710" Description="Custom job" Id="7000"/>
-    </Jobs>
-    <Subjobs>
-        [<Subjob Id="ContosoRetailSeatingArrangementData" TargetTableSchema="ext" AxTableName="ContosoRetailSeatingArrangementData">](file:///C:\Users\mumani\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LQW97M2L\RetailCDXSeedDataAX7_ContosoRetailExtension%20(002).xml)
-            [<ScheduledByJobs>](file:///C:\Users\mumani\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LQW97M2L\RetailCDXSeedDataAX7_ContosoRetailExtension%20(002).xml)
-                <ScheduledByJob>7000</ScheduledByJob>
-            </ScheduledByJobs>
-            [<AxFields>](file:///C:\Users\mumani\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LQW97M2L\RetailCDXSeedDataAX7_ContosoRetailExtension%20(002).xml)
-                <Field Name="seatNumber"/>
-                <Field Name="capacity"/>
-                <Field Name="channelRecId"/>
-                <Field Name="RecId"/>
-             </AxFields>
-        </Subjob>
-    </Subjobs>
-</RetailCdxSeedData>
-```
+    ```
+    [<RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">](file:///C:\Users\mumani\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LQW97M2L\RetailCDXSeedDataAX7_ContosoRetailExtension%20(002).xml)
+        [<Jobs>](file:///C:\Users\mumani\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LQW97M2L\RetailCDXSeedDataAX7_ContosoRetailExtension%20(002).xml)
+            <Job DescriptionLabelId="REX4520710" Description="Custom job" Id="7000"/>
+        </Jobs>
+        <Subjobs>
+            [<Subjob Id="ContosoRetailSeatingArrangementData" TargetTableSchema="ext" AxTableName="ContosoRetailSeatingArrangementData">](file:///C:\Users\mumani\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LQW97M2L\RetailCDXSeedDataAX7_ContosoRetailExtension%20(002).xml)
+                [<ScheduledByJobs>](file:///C:\Users\mumani\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LQW97M2L\RetailCDXSeedDataAX7_ContosoRetailExtension%20(002).xml)
+                    <ScheduledByJob>7000</ScheduledByJob>
+                </ScheduledByJobs>
+                [<AxFields>](file:///C:\Users\mumani\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LQW97M2L\RetailCDXSeedDataAX7_ContosoRetailExtension%20(002).xml)
+                    <Field Name="seatNumber"/>
+                    <Field Name="capacity"/>
+                    <Field Name="channelRecId"/>
+                    <Field Name="RecId"/>
+                 </AxFields>
+            </Subjob>
+        </Subjobs>
+    </RetailCdxSeedData>
+    ```
 
     TargetTable name is not specified here by default the system assume the target table name on the channel side is same name as the AXTable. If the target table name on the channel side is different than the source (AX table) name then in the &lt;Subjob&gt; node you can set the channel table name using the &lt;TargetTableName&gt; attribute.
 
     Similarly, in the mapping section only the ax field name is specified, by default the assumption is same field name is being used on the channel side as well. If the field name on the corresponding channel table is different than the AX side then you can specify that in the mapping by setting the channel field name on the &lt;ToName&gt; attribute of the &lt;Field&gt; node.
 
-1. Right click the project and click Add > New Item
-
+1. Right click the project and click Add > New Item.
 1. In the Add New item window, select Resources and name the resource file as RetailCDXSeedDataAX7\_Custom and click **Add**.
 
     ![Add new item](media/cdx-ext-1.png)
 
 1. In the Select a Resource file window locate the resource file you created in step 2 and click Open.
-
 1. Add a new AX class that will be used to handle the registerCDXSeedDataExtension event. Search for RetailCDXSeedDataBase class. Open the class in the designer. Right click on registerCDXSeedDataExtension delegate and click 'Copy event handler'
-
 1. Go to the even handler class you created in step 6 and paste the below event handler code.
 
-```
-if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
-
-{
-
-resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom));
-
-}
-```
+    ```
+    if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
+    {
+        resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom));
+    }
+    ```
 
     Note: Since there are two CDX seed data definition in the system it’s imperative to specify that your extension CDX seed data is only added if the CDX seed data being generated is the version you are trying to extend that why the condition is important. If the if condition is removed your extension cdx seed data could be applied on top of the N-1 CDX seed data as well which may cause unintended consequences.
 
@@ -125,29 +119,25 @@ resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom));
 
     Whenever the retail initialize class runs it looks for any extension which implemented this handler if found along with the standard it will also initialize the custom information found in the resource file.
 
-1. Run the retail initialize by clicking the Initialize button under Retail parameters &gt; General tab.
+1. Run the retail initialize by clicking the Initialize button under Retail parameters > General tab.
 
 ## Pull data from new channel database table to new HQ table using push job:
 
 To pull data from new channel table to HQ the pattern remains the same, either create a new resource file and add the new resource to the event handler as second line:
 
-'''
+```
 if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
-
 {
-
-resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom));
-
-resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom1));
-
+    resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom));
+    resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom1));
 }
-'''
+```
 
 Or update the existing resource file with the new information, so that you don’t need to add new line.
 
 To upload you have set the attribute IsUpload=”true”, In the resource file add information about your custom pull job:
 
-**Sample:**
+### Sample
 
 ```
 <Subjob Id="ContosoRetailSeatReservationTrans" TargetTableSchema="ext" IsUpload="true" ReplicationCounterFieldName="ReplicationCounterFromOrigin" AxTableName="ContosoRetailSeatReservationTrans">
@@ -172,11 +162,11 @@ Note: You can either add this new table part of the existing pull job (P-1000) o
 ## Other scenarios
 For the rest of the push and pull scenarios only the sample resource file information is described because how to initialize is same as what we did in previous steps.
 
-### Push existing columns which is not mapped part of any sub jobs:
+### Push existing columns which is not mapped part of any subjobs
 
 You can either push the existing unmapped column to new extension columns or existing columns in channel DB:
 
-**Sample resource file:**
+#### Sample resource file
 
 ```
 <Subjob Id="RetailChannelTable" TargetTableSchema="ext">
@@ -191,9 +181,9 @@ You can either push the existing unmapped column to new extension columns or exi
 </Subjob>
 ```
 
-Suppose if the table has a non RecId primary key then your channel side extension table should also contain the non-RecId primary keys.
+If the table has a non RecId primary key then your channel side extension table should also contain the non-RecId primary keys.
 
-**Sample resource file:**
+#### Sample resource file
 
 ```
     <Subjob Id="RetailCustTable" TargetTableSchema="ext">
@@ -207,9 +197,9 @@ Suppose if the table has a non RecId primary key then your channel side extensio
 </Subjobs>
 ```
 
-**Pull new columns to existing table:**
+### Pull new columns to existing table:
 
-Suppose if you added new columns and want it to pull part of the existing table:
+If you add new columns and want it to pull part of the existing table:
 
 Sample resource:
 
@@ -222,9 +212,9 @@ Sample resource:
 </Subjob>
 ```
 
-**Move existing sub job to another sub job:**
+### Move existing sub job to another sub job
 
-Suppose if you want to move existing sub job to another job then just change the scheduled by job attribute in the resource file and execute it part of the event handler.
+If you want to move and existing subjob to another job then change the scheduled by job attribute in the resource file and execute it part of the event handler.
 
 ```
 <Subjob Id="DirPartyTable">
