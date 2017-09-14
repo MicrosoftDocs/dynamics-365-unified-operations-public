@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  TAMVendRebateAgreement
+# ms.search.form:  
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
@@ -27,7 +27,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012 
 ---
 
-# Vendor rebates
+# Credit limits for customers
 [!include[banner](../includes/banner.md)]
 **Credit limits for customers**
 
