@@ -43,7 +43,7 @@ This topic describes each task in the Microsoft Dynamics AX 2012 checklist that 
 
 ## Installation
 
-For AX 2012 R3 customers download the AX 2012 R3 hotfix KB 4035163. For earlier versions of AX 2012 upgrade is not supported yet.
+For AX 2012 R3 customers, download the AX 2012 R3 hotfix KB 4035163. For earlier versions of AX 2012, upgrade is not supported yet.
 
 ## Prepare model metadata
 
