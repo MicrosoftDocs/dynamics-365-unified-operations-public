@@ -1216,8 +1216,8 @@
 #### [Extend report menu items ](/dynamics365/unified-operations/dev-itpro/analytics/extend-report-menu-items?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Custom design business docs ](/dynamics365/unified-operations/dev-itpro/analytics/custom-designs-business-docs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### Electronic reporting
-#### [Electronic reporting overview](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+### [Electronic reporting](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Manage the configuration lifecycle](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create a configuration](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Configure the Electronic reporting framework](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-er-configure-parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
