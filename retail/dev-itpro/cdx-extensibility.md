@@ -41,6 +41,7 @@ This topic covers how you can extend Retail initialization class to support cust
 
 There are different scenarios for data transfer data between Retail Headquarters and channel database:
 + Sending data from new HQ table to new channel database table using download job.
++ Pull data from new channel database table to new HQ table using push job.
 
 ## Sending data from new HQ table to new channel database table using download job
 
@@ -58,6 +59,7 @@ Before pushing or pulling the data, you need to understand the different metadat
 
 1. Create your custom Dynamics 365 project and add custom table using AOT.
 1. Create a new resource file to add all custom job information’s. The template for the resource file is:
+
 '''
 <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
     <Jobs>
@@ -67,7 +69,9 @@ Before pushing or pulling the data, you need to understand the different metadat
     </Subjobs>
  </RetailCdxSeedData>
 '''
+
 1. Create a new Resource (xml file) in Dynamics 365 using AOT, in the resource xml file specify the new table and new job details like below. Note: Either you can add the new table part of the existing job or create a new job and add this table, in this case we are creating a new job id =”7000” and custom table = “ContosoRetailSeatingArrangementData”
+
 '''
  [<RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">](file:///C:\Users\mumani\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LQW97M2L\RetailCDXSeedDataAX7_ContosoRetailExtension%20(002).xml)
     [<Jobs>](file:///C:\Users\mumani\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LQW97M2L\RetailCDXSeedDataAX7_ContosoRetailExtension%20(002).xml)
@@ -88,22 +92,24 @@ Before pushing or pulling the data, you need to understand the different metadat
     </Subjobs>
 </RetailCdxSeedData>
 '''
-TargetTable name is not specified here by default the system assume the target table name on the channel side is same name as the AXTable. If the target table name on the channel side is different than the source (AX table) name then in the &lt;Subjob&gt; node you can set the channel table name using the &lt;TargetTableName&gt; attribute.
 
-Similarly, in the mapping section only the ax field name is specified, by default the assumption is same field name is being used on the channel side as well. If the field name on the corresponding channel table is different than the AX side then you can specify that in the mapping by setting the channel field name on the &lt;ToName&gt; attribute of the &lt;Field&gt; node.
+    TargetTable name is not specified here by default the system assume the target table name on the channel side is same name as the AXTable. If the target table name on the channel side is different than the source (AX table) name then in the &lt;Subjob&gt; node you can set the channel table name using the &lt;TargetTableName&gt; attribute.
 
-1.  Right click the project and click Add - &gt; New Item
+    Similarly, in the mapping section only the ax field name is specified, by default the assumption is same field name is being used on the channel side as well. If the field name on the corresponding channel table is different than the AX side then you can specify that in the mapping by setting the channel field name on the &lt;ToName&gt; attribute of the &lt;Field&gt; node.
 
-2.  In the Add New item window, select Resources and name the resource file as RetailCDXSeedDataAX7\_Custom and click Add
+1. Right click the project and click Add > New Item
 
-    <img src="media/image1.png" width="559" height="388" />
+1. In the Add New item window, select Resources and name the resource file as RetailCDXSeedDataAX7\_Custom and click **Add**.
 
-3.  In the Select a Resource file window locate the resource file you created in step \#2 and click Open.
+    ![Add new item](cdx-ext-1.png)
 
-4.  Add a new AX class that will be used to handle the registerCDXSeedDataExtension event. Search for RetailCDXSeedDataBase class. Open the class in the designer. Right click on registerCDXSeedDataExtension delegate and click 'Copy event handler'
+1. In the Select a Resource file window locate the resource file you created in step 2 and click Open.
 
-5.  Go to the even handler class you created in step 6 and paste the below event handler code.
+1. Add a new AX class that will be used to handle the registerCDXSeedDataExtension event. Search for RetailCDXSeedDataBase class. Open the class in the designer. Right click on registerCDXSeedDataExtension delegate and click 'Copy event handler'
 
+1. Go to the even handler class you created in step 6 and paste the below event handler code.
+
+'''
 if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
 
 {
@@ -111,18 +117,17 @@ if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
 resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom));
 
 }
+'''
 
-Note: Since there are two CDX seed data definition in the system it’s imperative to specify that your extension CDX seed data is only added if the CDX seed data being generated is the version you are trying to extend that why the condition is important. If the if condition is removed your extension cdx seed data could be applied on top of the N-1 CDX seed data as well which may cause unintended consequences.
+    Note: Since there are two CDX seed data definition in the system it’s imperative to specify that your extension CDX seed data is only added if the CDX seed data being generated is the version you are trying to extend that why the condition is important. If the if condition is removed your extension cdx seed data could be applied on top of the N-1 CDX seed data as well which may cause unintended consequences.
 
-Also, you no need to create separate resource file for different scenarios mentioned below you can have one file with all the custom job information and register it from the extension class.
+    Also, you no need to create separate resource file for different scenarios mentioned below you can have one file with all the custom job information and register it from the extension class.
 
-Whenever the retail initialize class runs it looks for any extension which implemented this handler if found along with the standard it will also initialize the custom information found in the resource file.
+    Whenever the retail initialize class runs it looks for any extension which implemented this handler if found along with the standard it will also initialize the custom information found in the resource file.
 
-1.  Run the retail initialize by clicking the Initialize button under Retail parameters &gt; General tab.
+1. Run the retail initialize by clicking the Initialize button under Retail parameters &gt; General tab.
 
-<!-- -->
-
-1.  **Pull data from new channel database table to new HQ table using push job:**
+## Pull data from new channel database table to new HQ table using push job:
 
 To pull data from new channel table to HQ the pattern remains the same, either create a new resource file and add the new resource to the event handler as second line:
 
