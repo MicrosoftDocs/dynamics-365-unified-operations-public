@@ -61,6 +61,13 @@ As you work with Talent, you'll decide how to structure your organization, using
 -   [Personnel actions FAQ](personnel-actions-faq.md)
 -   [Leave and absence overview](leave-absence-overview.md)
 
+## Staffing your organization
+
+Dynamics 365 for Talent includes the Attract app, which can help you identify, interview, and hire candidates that hold the skills your organization needs. As you move from recruiting through hiring, the Onboard app can help you bring your new employee into your organization by setting accurate expectations, providing information they need to get started, connecting them with colleagues, and set them up for success in their new role.  
+
+- [Attract overview](attract-overview.md)
+- [Onboard overview](create-onboarding-experience.md)
+
 ## Retain and motivate employees
 
 You can set up plans to effectively and equitably manage compensation, as well as manage items, such as computers or phones, that your organization lends to its employees. You can create fixed and variable compensation plans, as well as define rules that apply the compensation plan to meet the criteria for that plan.
