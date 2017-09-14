@@ -58,6 +58,9 @@ The following video demonstrates the process:
 
 > [!Video https://www.youtube.com/embed/6tdQtHV2WAc&list=UUfGIUxWmd1ZA11NB8FgVWpw?ecver=1]
 
+> [!Video https://www.youtube.com/embed/6tdQtHV2WAc
+
+
 ## Use batch processing
 To improve performance when you print statements or reports that include large amounts of data, use batch processing. When you use batch processing, you can run specific tasks as batch jobs and then schedule those batch jobs to run on a different computer (a batch server). By moving the processing of these tasks to a batch server, you can improve the report performance on the client computer. You can also apply range restrictions to limit the size of each batch. 
 
