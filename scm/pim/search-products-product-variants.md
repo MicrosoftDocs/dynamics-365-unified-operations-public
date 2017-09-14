@@ -3,7 +3,7 @@
 
 title: Search for products and product variants during order entry
 description: Use the <strong>Item number </strong>field to search for products and product variants when you manually create a sales order line or a purchase order line.  This lets you quickly find product variants when you only have the configuration string or one of the product dimensions available.
-author: YuyuScheller
+author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, SalesT
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 248534
