@@ -3,7 +3,7 @@
 
 title: Work breakdown structures
 description: A work breakdown structure (WBS) is a description of the work that will be done for a project. It’s a hierarchy of tasks that represents the project team’s understanding of the composition of work, and of the size, cost, and duration of each component or task.
-author: twheeloc
+author: KimANelson
 manager: AnnBe
 ms.date: 06/05/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 23861
 ms.assetid: 241a0464-0056-4a69-b468-0afbe2d5f3ae
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -54,7 +54,7 @@ To create a WBS, you must be able to create a work schedule and estimate the cos
 To use the full scheduling capabilities of the WBS features, complete the following setup:
 
 1.  Set up a default calendar and a project calendar:
-    1.  Click **Project management and accounting** &gt; **Setup** &gt; **Scheduling**. In the **Default working calendar** field, specify a default calendar. This will be the default working calendar for any new project that is created.
+    1.  Click **Project management and accounting** &gt; **Setup** &gt; **Project management and accounting parameters** &gt; **Scheduling**. In the **Default working calendar** field, specify a default calendar. This will be the default working calendar for any new project that is created.
     2.  You can change the default calendar for a specific project. Click the project’s details page, and then, on the **Project team and scheduling** FastTab, update the **Scheduling calendar** field by selecting another calendar.
 
 2.  Set up standard working days and working hours. The calendar that you set as the working calendar for your project will be used in the WBS to determine the following information:
