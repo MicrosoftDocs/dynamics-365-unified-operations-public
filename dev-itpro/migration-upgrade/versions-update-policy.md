@@ -86,7 +86,8 @@ For information about the new features included in each release, click the links
 |  Dynamics AX |Minor release  | [7.0.1](../get-started/whats-new-changed-application-version-7-0-1-may-2016.md) | 7.0.1265.23014 | May 2016 | June 2017 | 
 |  Dynamics AX | Major release | [7.0](../get-started/whats-new-changed-7-0-february-2016.md) | 7.0.1265.3015 | February 2016 | June 2017 | 
 
-* The links points
+* The link points to a KB article. You must log in to LCS to view the KB article.
+
 ### Table 2: Platform releases
 
 For information about the new features included in each release, click the links in the **Release** column.
