@@ -1206,7 +1206,7 @@
 #### [Document Reporting Services overview](/dynamics365/unified-operations/dev-itpro/analytics/document-reporting-services?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Configure SSRS for an on-premises deployment](/dynamics365/unified-operations/dev-itpro/analytics/configure-ssrs-on-premises?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Printing](/dynamics365/unified-operations/dev-itpro/analytics/print-documents?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Enable network printer devices](/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Install the Document Routing Agent to enable network printer devices](/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Document generation, publishing, and printing capabilities in on-premises deployments](/dynamics365/unified-operations/dev-itpro/analytics/printing-capabilities-on-premises?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Run the Document Routing Agent as a Windows service](/dynamics365/unified-operations/dev-itpro/analytics/run-document-routing-agent-as-windows-service?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Help prevent long-running reports from timing out](/dynamics365/unified-operations/dev-itpro/analytics/prevent-long-running-reports-timing-out?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
