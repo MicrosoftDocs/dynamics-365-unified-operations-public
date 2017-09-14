@@ -3,7 +3,7 @@
  
 title: Create a new product
 description: This task shows how to create a new shared product. 
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 06/08/2016
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

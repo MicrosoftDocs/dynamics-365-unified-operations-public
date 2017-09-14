@@ -17,7 +17,7 @@ ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResPro
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 

@@ -3,7 +3,7 @@
  
 title: Release a dimension-based product master
 description: This procedure shows how to release a product master, which will be used for the dimension-based configurations. 
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

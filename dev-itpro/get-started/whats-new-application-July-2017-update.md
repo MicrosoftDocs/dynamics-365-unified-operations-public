@@ -528,7 +528,9 @@ entities are in the same version of the product. This feature resolves the more
 challenging problem, where legal entities are running on different versions or
 instances of the same version, by connecting the data from instances in Dynamics
 AX 2012 R3 CU11 or later to Dynamics 365 for Finance and Operations, Enterprise
-edition.
+edition. 
+
+For more information, see [Cost accounting overview](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page)
 
 Cost accounting allocation bases
 --------------------------------
