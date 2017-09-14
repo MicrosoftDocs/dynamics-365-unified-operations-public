@@ -285,95 +285,64 @@ As a best practice, it's good to change the default name to something like Retai
 
 ### Extending the channel side database
 
-From the Retail SDK folder, open and run at SQL Server file 'ContosoRetailExtensionTablesUpdate.sql'. Several items are created:
+From the Retail SDK folder, open and run at SQL Server file 'ContosoRetailExtensionTablesUpdate.sql'. Several items are created and configured:
 
-+ **\[ext\].ContosoRetailTransactionTable table** with the foreign key and custom (extension) fields. In addition to the extension columns we added in the AX side tables, the channel side extension table also need to have the same primary key columns as the original channel side table. That's why \[ext\].RetailTransactionTable\_ContosoRetailExtension has the four primary key columns used in \[ax\].RetialTransactionTable. As a best practice when you add the primary key columns to the channel side extension table keep the name of the columns same as the primary key column names on original. This will help you to uptake the CDX enhancement Microsoft will ship out in the future easily.
++ The **\[ext\].ContosoRetailTransactionTable** with the foreign key and custom (extension) fields is created. In addition to the extension columns we added in the AX side tables, the channel side extension table also need to have the same primary key columns as the original channel side table. That's why \[ext\].RetailTransactionTable\_ContosoRetailExtension has the four primary key columns used in \[ax\].RetialTransactionTable. As a best practice when you add the primary key columns to the channel side extension table keep the name of the columns same as the primary key column names on original. This will help you to uptake the CDX enhancement Microsoft will ship out in the future easily.
 
-+ **\[ext\].RetailTransactionTableView view** joining the original channel side table and the extension channel side table.
++ The **\[ext\].RetailTransactionTableView** view that joins the original channel side table and the extension channel side table is created. This view is required for CDX to properly upload/pull the records from the channel extension table back to HQ tables. Channel side table \[ax\].RetailTransactionTable is left joined with the extension table \[ext\].ContosoRetailTransactionTable. Using an inner join in this view may have unintended consequence. For example if a record is created in \[ax\].RetailTransactionTable but your custom code doesn't create a corresponding record in the extension table, then the resulting view will filter out this records. When corresponding record is not found in the extension table, left join will set the custom columns to Null. This could cause issues when CDX pulls that record to AX. To avoid this, make sure the custom columns are defaulted (Coalesced) to a proper value as shown in the sample.
 
-This view is required for CDX to properly upload/pull the records from the channel extension table back to HQ tables. Channel side table \[ax\].RetailTransactionTable is left joined with the extension table \[ext\].ContosoRetailTransactionTable. Using an inner join in this view may have unintended consequence. For example if a record is created in \[ax\].RetailTransactionTable but your custom code doesn't create a corresponding record in the extension table, then the resulting view will filter out this records. When corresponding record is not found in the extension table, left join will set the custom columns to Null. This could cause issues when CDX pulls that record to AX. To avoid this, make sure the custom columns are defaulted (Coalesced) to a proper value as shown in the sample.
++ CDX is configured to upload/pull the custom columns from the channel extension table back to AX. The resource RetailCDXSeedDataAX7 contains the AX to channel table mapping information that is used by CDX to create the necessary data transfer scheduler jobs and sub jobs. To include your new extension tables or columns in the data transfer you must provide a resource file that specifies the CDX data transfer customization. As a best practice use this naming convention to avoid conflicts. RetailCDXSeedDataAX7\_ContosoRetailExtension. 'ContosoRetial' your unique extension.
 
-> 3. Configure CDX to upload/pull the custom columns from the channel extension table back to AX.
+    The sample CDX resource file contain additional customizations but for our RetailTransactionTable extension example this is the only section that would be required to pull data from the channel side and back to HQ.
 
-The resource RetailCDXSeedDataAX7 contains the AX to channel table mapping information that is used by CDX to create the necessary data transfer scheduler jobs and sub jobs. To include your new extension tables or columns in the data transfer you must provide a resource file that specifies the CDX data transfer customization. As a best practice use this naming convention to avoid conflicts. RetailCDXSeedDataAX7\_ContosoRetailExtension. 'ContosoRetial' your unique extension.
+    ```
+    <RetailCdxSeedData Name="AX7" ChannelDBSchema="ext" ChannelDBMajorVersion="7">
+        <Subjobs>
+            <!--Adding additional columns to (existing) RetailTransactionTable and wants to pull it back to HQ. For this to work partner must create a view which joins the channel table with the customized column and the original table which has all existing default columns-->
+            <Subjob Id="RetailTransactionTable" TargetTableName ="RetailTransactionTableView" TargetTableSchema="ext">
+                <!--Notice that there is no mention of the <ScheduledByJobs></ScheduledByJobs> because the subjob is already part of an upload job. -->
+                <AxFields>
+                    <!--If you notice the existing columns are not listed here in the <Field> tag, this is because the existing fields are already mapped in the main RetailCdxSeedData resource file, we only add the delta here. -->
+                    <Field Name="SeatNumber" />
+                    <Field Name="ServerStaffId" />
+                </AxFields>
+            </Subjob>
+        </Subjobs>
+    </RetailCdxSeedData>
+    ```
 
-The sample CDX resource file contain additional customizations but for our RetailTransactionTable extension example this is the only section that would be required to pull data from the channel side and back to HQ.
+    Notice the following fields at this resource (which contains the CDX seed data extension):
 
-&lt;RetailCdxSeedData Name="AX7" ChannelDBSchema="ext" ChannelDBMajorVersion="7"&gt;
+        - ChannelDBSchema='ext' so it reads from the extension schema at channel DB.
+        - <Subjob Id="RetailTransactionTable" TargetTableName ="RetailTransactionTableView" TargetTableSchema="ext">
 
-&lt;Subjobs&gt;
+    We are using the same subjob Id that is shipped by Microsoft to pull data from the channel side RetailTransactionTable back to HQ. It's important to make sure the Id is the same so that the extensibility framework knows that you are customizing that subjob. The "TargetTableName" attribute is set to the view \[ext\].RetailTransactionTableView created above so that CDX can read from the unified view and upload that data to the AX table. The AxTableName attribute is not specified as the framework already knows the AxTableName that the specified subjob uses as a sink. A pattern that will be evident to you soon is that you only need to specify the deltas when customizing the RetailCDXSeedDataAX7 resource. Any data that the framework can infer is not required to be added by extensions. If you apply the above pattern to the &lt;AXFields&gt;&lt;/AXFields&gt; section, you can see that we only specified the custom/new fields. The reason for this is that the extensibility framework can figure out the remaining list of fields from the specified subjob Id.
 
-> &lt;!--Adding additional columns to (existing) RetailTransactionTable and wants to pull it back to HQ. For this to work partner must create a view which joins the channel table with the customized column and the original table which has all existing default columns--&gt;
->
-> &lt;Subjob Id="RetailTransactionTable" TargetTableName ="RetailTransactionTableView" TargetTableSchema="ext"&gt;
->
-> &lt;!--Notice that there is no mention of the &lt;ScheduledByJobs&gt;&lt;/ScheduledByJobs&gt; because the subjob is already part of an upload job. --&gt;
++ The CDX module with the CDX customization resource is updated. To apply the customization specified in RetailCDXSeedDataAX7\_ContosoRetailExtension we need to subscribe to the registerCDXSeedDataExtension delegate. Subscribing to this event guarantee that the customization is applied when the CDX seed data initialization is run.
 
-&lt;AxFields&gt;
+#### How to subscribe to the registerCDXSeedDataExtension delegate
 
-> &lt;!--If you notice the existing columns are not listed here in the &lt;Field&gt; tag, this is because the existing fields are already mapped in the main RetailCdxSeedData resource file, we only add the delta here. --&gt;
->
-> &lt;Field Name="SeatNumber" /&gt;
->
-> &lt;Field Name="ServerStaffId" /&gt;
->
-> &lt;/AxFields&gt;
->
-> &lt;/Subjob&gt;
->
-> &lt;/Subjobs&gt;
->
-> &lt;/RetailCdxSeedData&gt;
-
-Notice the following fields at this resource (which contains the CDX seed data extension):
-
-> ChannelDBSchema='ext' so it reads from the extension schema at channel DB.
->
-> &lt;Subjob Id="RetailTransactionTable" TargetTableName ="RetailTransactionTableView" TargetTableSchema="ext"&gt;
-
-We are using the same subjob Id that is shipped by Microsoft to pull data from the channel side RetailTransactionTable back to HQ. It's important to make sure the Id is the same so that the extensibility framework knows that you are customizing that subjob. The "TargetTableName" attribute is set to the view \[ext\].RetailTransactionTableView created above so that CDX can read from the unified view and upload that data to the AX table. The AxTableName attribute is not specified as the framework already knows the AxTableName that the specified subjob uses as a sink. A pattern that will be evident to you soon is that you only need to specify the deltas when customizing the RetailCDXSeedDataAX7 resource. Any data that the framework can infer is not required to be added by extensions. If you apply the above pattern to the &lt;AXFields&gt;&lt;/AXFields&gt; section, you can see that we only specified the custom/new fields. The reason for this is that the extensibility framework can figure out the remaining list of fields from the specified subjob Id.
-
-> 4. Updating the CDX module with the CDX customization resource.
-
-To apply the customization specified in RetailCDXSeedDataAX7\_ContosoRetailExtension we need to subscribe to the registerCDXSeedDataExtension delegate. Subscribing to this event guarantee that the customization is applied when the CDX seed data initialization is run.
-
-**How to subscribe to the registerCDXSeedDataExtension delegate:**
-
-1.  Go to View &gt; Application Explorer.
-
+1.  Go to View > Application Explorer.
 2.  Search for the class RetailCDXSeedDataBase
-
 3.  Right click on the class and click open in designer.
-
 4.  Select the registerCDXSeedDataExtension delegate from the list of delegates and methods shown on the designer.
-
 5.  Right-click and click on copy event handler. This will copy the method signature you need to implement so that CDX picks up the customized CDX seed data resource.
-
 6.  Create a new class, and name the class ContosoRetailCDXSeedDataAX7EventHandler, any name will do but as a best practice don't forget to prefix the class name with your prefix.
-
 7.  Paste the code you copied in step 5.
 
-class ContosoRetailCDXSeedDataAX7EventHandler
 
-{
-
-> /// &lt;summary&gt;
->
-> /// Registers the extension CDX seed data resource to be used during CDX seed data generation..
->
-> /// &lt;/summary&gt;
->
-> /// &lt;param name="result"&gt;The result object which is used to return the resource name.&lt;/param&gt;
->
-> \[SubscribesTo(classStr(RetailCDXSeedDataBase), delegateStr(RetailCDXSeedDataBase, registerCDXSeedDataExtension))\]
->
-> public static void RetailCDXSeedDataBase\_registerCDXSeedDataExtension(str originalCDXSeedDataResource, List resources)
->
-> {
->
-> }
-
-}
+    ```
+    class ContosoRetailCDXSeedDataAX7EventHandler
+    {
+        /// <summary>
+        /// Registers the extension CDX seed data resource to be used during CDX seed data generation..
+        /// </summary>
+        /// <param name="result">The result object which is used to return the resource name.</param>
+        [SubscribesTo(classStr(RetailCDXSeedDataBase), delegateStr(RetailCDXSeedDataBase, registerCDXSeedDataExtension))]
+        public static void RetailCDXSeedDataBase\_registerCDXSeedDataExtension(str originalCDXSeedDataResource, List resources)
+        {
+        }
+    }
 
 1.  This method will be called by the CDX extensibility framework when you clikc the retail initialization.
 
