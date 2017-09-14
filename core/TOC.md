@@ -116,19 +116,21 @@
 #### [Update standard cost in a non-manufacturing environment](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-non-manufacturing-environment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Cost management tasks
-#### [Create a finished product (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-finished-product-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create a semi-finished product (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-semi-finished-product-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create raw materials (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-raw-materials-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create BOMs (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-boms-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create routes (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-routes-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Calculate a BOM by using a multilevel structure (February 2016 only)](/dynamics365/unified-operations/supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Calculate a BOM by using a single level structure (February 2016 only)](/dynamics365/unified-operations/supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Compare active, estimated, and realized costs on a production order](/dynamics365/unified-operations/supply-chain/cost-management/tasks/compare-active-estimated-realized-costs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Create a purchase order governed by budget](/dynamics365/unified-operations/supply-chain/cost-management/tasks/create-purchase-order-governed-by-budget?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [View cost entries for a cost object](/dynamics365/unified-operations/supply-chain/cost-management/tasks/view-cost-entries-cost-object?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [View cost object balance](/dynamics365/unified-operations/supply-chain/cost-management/tasks/view-cost-object-balance?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [View current WIP status on a production order](/dynamics365/unified-operations/supply-chain/cost-management/tasks/view-current-wip-status-production-order?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [View inventory statement and KPI by cost object](/dynamics365/unified-operations/supply-chain/cost-management/tasks/view-inventory-statement-kpi-cost-object?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Compare active, estimated, and realized costs on a production order](/dynamics365/unified-operations/supply-chain/cost-management/tasks/compare-active-estimated-realized-costs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Create a purchase order governed by budget](/dynamics365/unified-operations/supply-chain/cost-management/tasks/create-purchase-order-governed-by-budget?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### BOM calculations using costing sheet
+##### [Create a finished product (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-finished-product-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Create a semi-finished product (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-semi-finished-product-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Create raw materials (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-raw-materials-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Create BOMs (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-boms-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Create routes (February 2016 only)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-routes-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Calculate a BOM by using a single level structure (February 2016 only)](/dynamics365/unified-operations/supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Calculate a BOM by using a multilevel structure (February 2016 only)](/dynamics365/unified-operations/supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 
 ## Data management and integration
 
