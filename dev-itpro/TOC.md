@@ -19,19 +19,19 @@
 #### [AX 2012 features not yet implemented](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Features not implemented in on-premises deployments](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Lifecycle policy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Operations platform update 10 (August 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-10?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 10 (August 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-10?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Finance and Operations, Enterprise edition (July 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Operations platform update 9 (July 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-9?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Operations platform update 8 (June 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-8?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Operations platform update 7 (May 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Operations platform update 6 (April 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Operations platform update 5 (March 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Operations platform update 4 (February 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 9 (July 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-9?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 8 (June 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-8?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 7 (May 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 6 (April 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 5 (March 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 4 (February 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Operations version 1611 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Operations platform update 3 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Dynamics AX platform update 2 (August 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
+#### [Platform update 3 (November 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 2 (August 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
 #### [Dynamics AX application version 7.0.1 (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Dynamics AX platform update 1 (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Platform update 1 (May 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Dynamics AX 7.0 (February 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Updated task guides
 ##### [November 2016 task guides](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -530,23 +530,20 @@
 ##### [Define cost control units (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/define-cost-control-units?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create a cost accounting ledger (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-accounting-ledger?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Statistical dimension members and statistical measure provider templates](/dynamics365/unified-operations/financials/cost-accounting/statistical-measure-provider-template?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Define allocation base
-##### [Allocation base](/dynamics365/unified-operations/financials/cost-accounting/allocation-bases?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Define allocation base](/dynamics365/unified-operations/financials/cost-accounting/allocation-bases?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Define policies
 ##### [Create and assign a cost allocation policy to a cost control unit (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create and assign a cost behavior policy to a cost control unit (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create and assign a cost distribution policy to a cost control unit (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create a cost rollup policy (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-rollup-policy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Data source and data provider
-##### [Manage a data source for the cost accounting ledger (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Data source processing
-##### [Process and trace source data (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/process-trace-source-data?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Manage data source for the cost accounting ledger (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Process and trace source data (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/process-trace-source-data?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Overhead calculation
 ##### [Overhead calculation](/dynamics365/unified-operations/financials/cost-accounting/overhead-calculation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cost rollup policy and overhead calculation](/dynamics365/unified-operations/financials/cost-accounting/cost-rollup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Analysis and reporting
 ##### [Configure cost control workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Configure cost control workspace parameters (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/configure-cost-control-workspace-parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Configure cost control workspace parameters (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/configure-cost-control-workspace-parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Use cost control workspace for reporting (Video)](https://youtu.be/imsuTg8rUVk)
 ##### [Export entries to Excel (Video)](https://youtu.be/-HKHYdClvx8)
 ##### [Use content pack for Microsoft Power BI reporting](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1206,7 +1203,7 @@
 #### [Document Reporting Services overview](/dynamics365/unified-operations/dev-itpro/analytics/document-reporting-services?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Configure SSRS for an on-premises deployment](/dynamics365/unified-operations/dev-itpro/analytics/configure-ssrs-on-premises?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Printing](/dynamics365/unified-operations/dev-itpro/analytics/print-documents?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Enable network printer devices](/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Install the Document Routing Agent to enable network printer devices](/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Document generation, publishing, and printing capabilities in on-premises deployments](/dynamics365/unified-operations/dev-itpro/analytics/printing-capabilities-on-premises?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Run the Document Routing Agent as a Windows service](/dynamics365/unified-operations/dev-itpro/analytics/run-document-routing-agent-as-windows-service?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Help prevent long-running reports from timing out](/dynamics365/unified-operations/dev-itpro/analytics/prevent-long-running-reports-timing-out?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1216,8 +1213,8 @@
 #### [Extend report menu items ](/dynamics365/unified-operations/dev-itpro/analytics/extend-report-menu-items?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Custom design business docs ](/dynamics365/unified-operations/dev-itpro/analytics/custom-designs-business-docs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### Electronic reporting
-#### [Electronic reporting overview](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+### [Electronic reporting](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Manage the configuration lifecycle](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create a configuration](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Configure the Electronic reporting framework](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-er-configure-parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2107,6 +2104,10 @@
 ### [Personnel actions FAQ](/dynamics365/unified-operations/talent/personnel-actions-faq?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Use workflow to manage employee information](/dynamics365/unified-operations/talent/workflow-manage-employee-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Leave and absence overivew](/dynamics365/unified-operations/talent/leave-absence-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+## Staffing your organization
+### [Attract overview](/dynamics365/unified-operations/talent/attract-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
+### [Onboard overview](/dynamics365/unified-operations/talent/create-onboarding-experience?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Motivate employees
 ### [Compensation plans](/dynamics365/unified-operations/talent/compensation-plans?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
