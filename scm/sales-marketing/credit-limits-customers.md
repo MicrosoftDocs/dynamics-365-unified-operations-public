@@ -2,10 +2,10 @@
 # required metadata
 
 title: Credit limits for customers
-description: This article provides an overview of how credit limits work in Dynamics 365 for Finance and Operations.
+description: This article provides an overview of how credit limits work in Microsoft Dynamics 365 for Finance and Operations.
 author: omulvad
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,16 +20,16 @@ ms.reviewer: bis
 ms.search.scope: Core, Operations, Unified operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: [Global for most topics. Set Country/Region name for localizations]
+ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 2012 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Credit limits for customers
-[!include[banner](../includes/banner.md)]
 
+[!include[banner](../includes/banner.md)]
 
 Setting a credit limit lets you specify the maximum amount of credit to extend
 to your customers. If a credit limit is specified, it is checked automatically
