@@ -530,23 +530,20 @@
 ##### [Define cost control units (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/define-cost-control-units?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create a cost accounting ledger (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-accounting-ledger?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Statistical dimension members and statistical measure provider templates](/dynamics365/unified-operations/financials/cost-accounting/statistical-measure-provider-template?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Define allocation base
-##### [Allocation base](/dynamics365/unified-operations/financials/cost-accounting/allocation-bases?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Define allocation base](/dynamics365/unified-operations/financials/cost-accounting/allocation-bases?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Define policies
 ##### [Create and assign a cost allocation policy to a cost control unit (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create and assign a cost behavior policy to a cost control unit (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create and assign a cost distribution policy to a cost control unit (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create a cost rollup policy (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-rollup-policy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Data source and data provider
-##### [Manage a data source for the cost accounting ledger (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Data source processing
-##### [Process and trace source data (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/process-trace-source-data?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Manage data source for the cost accounting ledger (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Process and trace source data (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/process-trace-source-data?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Overhead calculation
 ##### [Overhead calculation](/dynamics365/unified-operations/financials/cost-accounting/overhead-calculation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cost rollup policy and overhead calculation](/dynamics365/unified-operations/financials/cost-accounting/cost-rollup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Analysis and reporting
 ##### [Configure cost control workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Configure cost control workspace parameters (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/configure-cost-control-workspace-parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Configure cost control workspace parameters (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/configure-cost-control-workspace-parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Use cost control workspace for reporting (Video)](https://youtu.be/imsuTg8rUVk)
 ##### [Export entries to Excel (Video)](https://youtu.be/-HKHYdClvx8)
 ##### [Use content pack for Microsoft Power BI reporting](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
