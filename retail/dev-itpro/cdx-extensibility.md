@@ -117,73 +117,68 @@ If you created a new Retail HQ and a new channel table and if you want to push t
 
     Also, you don't have to create separate resource files for the different scenarios mentioned belo. You can have one file with all the custom job information and register it from the extension class.
 
-    Whenever the retail initialize class runs it looks for any extension which implemented this handler. If found along with the standard, it will also initialize the custom information found in the resource file.
+    Whenever the retail initialize class runs it looks for any extension which implemented this handler. If found along with the default, it will also initialize the custom information found in the resource file.
 
-1. Run the retail initialize by clicking the Initialize button under Retail parameters > General tab.
+1. Run the retail initialization by clicking the Initialize button under Retail parameters > General tab.
 
 ## Pull data from new channel database table to new HQ table using push job:
 
-To pull data from new channel table to HQ the pattern remains the same, either create a new resource file and add the new resource to the event handler as second line:
+To pull data from new channel table to Retail HQ, there are two options:
 
-```
-if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
-{
-    resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom));
-    resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom1));
-}
-```
++ Create a new resource file and add the new resource to the event handler as second line:
 
-Or update the existing resource file with the new information, so that you don’t need to add new line.
+    ```
+    if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
+    {
+        resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom));
+        resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom1));
+    }
+    ```
 
-To upload you have set the attribute IsUpload=”true”, In the resource file add information about your custom pull job:
++ Update the existing resource file with the new information, so that you don’t need to add new line. To upload you have set the attribute IsUpload=”true”, in the resource file add information about your custom pull job as shown in the following code example:
 
-### Sample
-
-```
-<Subjob Id="ContosoRetailSeatReservationTrans" TargetTableSchema="ext" IsUpload="true" ReplicationCounterFieldName="ReplicationCounterFromOrigin" AxTableName="ContosoRetailSeatReservationTrans">
-    <ScheduledByJobs>
-        <ScheduledByJob>P-1000</ScheduledByJob>
-    </ScheduledByJobs>
-    <AxFields>
-        <Field Name="transactionId"/>
-        <Field Name="storeId"/>
-        <Field Name="terminalId"/>
-        <Field Name="contactPhoneNo"/>
-        <Field Name="numberOfCustomers"/>
-        <Field Name="customerName"/>
-        <Field Name="reservationDate"/>
-        <Field Name="reservationTime"/>
-        <Field Name="replicationCounterFromOrigin"/>
-    </AxFields>
-</Subjob>
-```
+    ```
+    <Subjob Id="ContosoRetailSeatReservationTrans" TargetTableSchema="ext" IsUpload="true"
+    ReplicationCounterFieldName="ReplicationCounterFromOrigin" AxTableName="ContosoRetailSeatReservationTrans">
+        <ScheduledByJobs>
+            <ScheduledByJob>P-1000</ScheduledByJob>
+        </ScheduledByJobs>
+        <AxFields>
+            <Field Name="transactionId"/>
+            <Field Name="storeId"/>
+            <Field Name="terminalId"/>
+            <Field Name="contactPhoneNo"/>
+            <Field Name="numberOfCustomers"/>
+            <Field Name="customerName"/>
+            <Field Name="reservationDate"/>
+            <Field Name="reservationTime"/>
+            <Field Name="replicationCounterFromOrigin"/>
+        </AxFields>
+    </Subjob>
+    ```
 Note: You can either add this new table part of the existing pull job (P-1000) or create a new one.
 
 ## Other scenarios
-For the rest of the push and pull scenarios only the sample resource file information is described because how to initialize is same as what we did in previous steps.
+For the rest of the push and pull scenarios only the sample resource file information is described, because initialization is same as in the previous steps.
 
 ### Push existing columns which is not mapped part of any subjobs
 
-You can either push the existing unmapped column to new extension columns or existing columns in channel DB:
+You can either push the existing unmapped column to new extension columns or existing columns in channel DB, as shown in the following code example. 
 
-#### Sample resource file
+    ```
+    <Subjob Id="RetailChannelTable" TargetTableSchema="ext">
+        <AxFields>
+            <Field Name="Payment"/>
+            <!-- Existing column which was not pushed to channel db-->
+            <Field Name="PaymMode"/>
+            <!-- Existing column which was not pushed to channel db-->
+            <Field Name="ContosoRetailWallPostMessage"/>
+            <!-- New column from the extended table -->
+        </AxFields>
+    </Subjob>
+    ```
 
-```
-<Subjob Id="RetailChannelTable" TargetTableSchema="ext">
-    <AxFields>
-        <Field Name="Payment"/>
-        <!-- Existing column which was not pushed to channel db-->
-        <Field Name="PaymMode"/>
-        <!-- Existing column which was not pushed to channel db-->
-        <Field Name="ContosoRetailWallPostMessage"/>
-        <!-- New column from the extended table -->
-    </AxFields>
-</Subjob>
-```
-
-If the table has a non RecId primary key then your channel side extension table should also contain the non-RecId primary keys.
-
-#### Sample resource file
+If the table has a non RecId primary key then your channel side extension table should also contain the non-RecId primary keys, as shown in the following code example:
 
 ```
     <Subjob Id="RetailCustTable" TargetTableSchema="ext">
