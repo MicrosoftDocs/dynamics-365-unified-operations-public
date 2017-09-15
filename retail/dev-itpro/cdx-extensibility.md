@@ -165,18 +165,18 @@ For the rest of the push and pull scenarios only the sample resource file inform
 
 You can either push the existing unmapped column to new extension columns or existing columns in channel DB, as shown in the following code example. 
 
-    ```
-    <Subjob Id="RetailChannelTable" TargetTableSchema="ext">
-        <AxFields>
-            <Field Name="Payment"/>
-            <!-- Existing column which was not pushed to channel db-->
-            <Field Name="PaymMode"/>
-            <!-- Existing column which was not pushed to channel db-->
-            <Field Name="ContosoRetailWallPostMessage"/>
-            <!-- New column from the extended table -->
-        </AxFields>
-    </Subjob>
-    ```
+```
+<Subjob Id="RetailChannelTable" TargetTableSchema="ext">
+    <AxFields>
+        <Field Name="Payment"/>
+        <!-- Existing column which was not pushed to channel db-->
+        <Field Name="PaymMode"/>
+        <!-- Existing column which was not pushed to channel db-->
+        <Field Name="ContosoRetailWallPostMessage"/>
+        <!-- New column from the extended table -->
+    </AxFields>
+</Subjob>
+```
 
 If the table has a non RecId primary key then your channel side extension table should also contain the non-RecId primary keys, as shown in the following code example:
 
@@ -194,9 +194,7 @@ If the table has a non RecId primary key then your channel side extension table 
 
 ### Pull new columns to existing table:
 
-If you add new columns and want it to pull part of the existing table:
-
-Sample resource:
+If you add new columns and want it to pull part of the existing table, you would use the following code:
 
 ```
 <Subjob Id="RetailTransactionTable" TargetTableSchema="ext" TargetTableName="RetailTransactionTableView">
@@ -209,7 +207,7 @@ Sample resource:
 
 ### Move existing sub job to another sub job
 
-If you want to move and existing subjob to another job then change the scheduled by job attribute in the resource file and execute it part of the event handler.
+If you want to move an existing subjob to another job, you can change the scheduled by job attribute in the resource file and execute it part of the event handler.
 
 ```
 <Subjob Id="DirPartyTable">
@@ -219,62 +217,59 @@ If you want to move and existing subjob to another job then change the scheduled
     </ScheduledByJobs>
 ```
 
-## Sample overview
+## CDX sample
 
-We added new sample in RetailSDK\\Code\\Documents\\SampleExtensionsInstructions\\CDX in Dynamics 365 for Retail – App update 4 to help with the CDX extensibility. This sample describes the steps and best practices for customizing retail transactional tables by using extension tables and also show how to customize CDX to upload the customized (extension) channel side tables back to AX. At the end there is also a section that describes how to test the customization.
+We added new sample in RetailSDK\\Code\\Documents\\SampleExtensionsInstructions\\CDX in Dynamics 365 for Retail – App update 4. The next sections discuss the steps and best practices for customizing retail transactional tables by using extension tables. Another section shows you how to customize CDX to upload the customized (extension) channel side tables back to Dynamics AX for Finance and Operations. We also included a section that describes how to test the customization.
 
 ## Setup steps
 
-It is advised that you do these changes on an untouched Retail SDK. Or have it under source control (VSO or similar), so that you could revert at any steps easily. import the. axpp package located in the SDK and run the SQL update script on your channel database before going through the below steps: descriptions below.
+We recommend that you implement these changes on an untouched Retail SDK. Another options is to place the SDK under source control, such as VSTS, so that you can easily revert at any step. You start by importing the axpp package located in the SDK and running the SQL update script on your channel database.
 
 1. Import the AX side package that contains the customization code.
 
-    a. copy the. axpp package from the SDK folder
+    a. Copy the. axpp package from the SDK folder.
 
-    b. open VS &gt; click on Dynamics 365&gt; click on "Import project"
+    b. Open Visual Studio. Click on Dynamics 365 > Import project.
 
-    c. in the import project form specify the. axpp file path.
+    c. In the import project form specify the axpp file path.
 
-    d. select 'current solution' or 'new solution' based on your preference.
+    d. Select 'Current solution' or 'New solution' based on your preference.
 
-    e. click OK to start importing the package.
+    e. Click OK to start importing the package.
 
-    f. once the import is done you will have the ax files in your solution explorer.
+    f. Once the import is done you will have the files in Solution Explorer.
 
-    g. build the solution.
+    g. Build the solution.
 
-    h. right click on the project and click on Synchronize database.
+    h. Right-click on the project and click on Synchronize database.
 
 2. Run the SQL update script.
 
-    a. copy the ContosoRetailExtensionTablesUpdate.sql. from the Retail SDK folder. Similarly, you can run the other sample files.
+    a. Copy the ContosoRetailExtensionTablesUpdate.sql. from the Retail SDK folder. Similarly, you can run the other sample files.
 
-    b. open the script in SQL browser and run it against your channel database.
+    b. Open the script in SQL browser and run it against your channel database.
 
-    c. This will create the extension tables and views required to customize the transactional tables. Note the script also creates other tables which are used for other sample scenarios.
+    This will create the extension tables and views required to customize the transactional tables. Note the script also creates other tables which are used for other sample scenarios.
 
-## About the sample
+### Extending the Dynamics AX data in the sample
 
-### Extending the AX data
+The Dynamics AX side table extension is already created in the sample. If you want to create it manually then follow the below steps:
 
-The AX side table extension is already created in the sample. But if you want to create manually then follow the below steps:
+1. Start Visual Studio.
 
-1. Launch Visual Studio.
+2. On the menu, click View > Application Explorer.
 
-2. Go to View &gt; Application Explorer.
+3. Select Data Model > Tables > RetailTransactionTable, right-click on it, select "Create extension".
 
-3. Select Data Model &gt; Tables &gt; RetailTransactionTable, right-click on it, select "Create extension".
+    As a best practice, it's good to change the default name to something like RetailTransactionTable.ContosoRetailExtension. always add your unique prefix. In this sample 'ContosoRetail' is used as a unique prefix. This is helpful to avoid naming conflicts if table is extended by multiple ISVs.
 
-As a best practice, it's good to change the default name to something like RetailTransactionTable.ContosoRetailExtension. always add your unique prefix. In this sample 'ContosoRetail' is used as a unique prefix. This is helpful to avoid naming conflicts if table is extended by multiple ISVs.
+4. In new table "RetailTransactionTable.ContosoRetailExtension" create two new fields:
 
-1. In new table "RetailTransactionTable.ContosoRetailExtension" create two new fields:
+    - Type=string, name=ContosoRetailServerStaffId - set the Extended data type property to RetailStaffId.
+    - Type=int, name=ContosoRetailSeatNumber - Extended data type property is set to ContosoRetailSeatNumber.
 
-    a. Type=string, name=ContosoRetailServerStaffId - set the Extended data type property to RetailStaffId.
-
-    b. Type=int, name=ContosoRetailSeatNumber - Extended data type property is set to ContosoRetailSeatNumber.
-
-2.  Save the changes and build your project.
-3.  Right click on your project and click on synchronize the database.
+5.  Save the changes and build your project.
+6.  Right click on your project and click on synchronize the database.
 
     Note: The unique prefix is added to the new column names as a best practice to avoid future naming conflicts. The naming conflict can occur if another ISV creates a column with the same name or if microsoft ships an update which uses a column with the same name. Even though the extension table is created in a different AOT asset, in SQL the new columns are added to the original table.
 
