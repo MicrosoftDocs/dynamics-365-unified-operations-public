@@ -518,17 +518,10 @@ a more user-friendly way to view the workflow history for an expense report.
 **Financial management \| Supply chain management**
 ===================================================
 
-Cost accounting – Cross legal entities 
+Cross legal entities reporting in Cost accounting 
 ---------------------------------------
 
-To provide in-depth managerial insights, Cost accounting needs to be able to
-cross the boundaries of legal entities because all or some of these legal
-entities serve the purpose of statutory reporting. This is easy if all legal
-entities are in the same version of the product. This feature resolves the more
-challenging problem, where legal entities are running on different versions or
-instances of the same version, by connecting the data from instances in Dynamics
-AX 2012 R3 CU11 or later to Dynamics 365 for Finance and Operations, Enterprise
-edition. 
+This feature lets you run multiple legal entities on different versions or instances of the same version by connecting the data from instances in Dynamics AX 2012 R3 CU11 or later to Dynamics 365 for Finance and Operations, Enterprise edition. You can cross the boundaries of legal entities to address both organizational and statutory reporting needs. 
 
 For more information, see [Cost accounting overview](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page).
 
