@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add a custom control to a POS view
-description: 
+description: You can enhance the information displayed on the Dynamics 365 for Retail POS views by adding custom controls. 
 author: mugunthanm
 manager: AnnBe
 ms.date: 09/15/207
@@ -32,17 +32,17 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 # Add a custom control to a POS view
 
-You can enhance the information displayed on the Dynamics 365 for Retail POS views by adding custom controls. Custom control allows you to add your own custom information to the existing POS views. Custom controls can be implemented by using the POS extension framework.
+You can enhance the information displayed on the Dynamics 365 for Retail POS views by adding custom controls. A custom control allows you to add your own custom information to the existing POS views. Custom controls can be implemented by using the POS extension framework.
 
 Custom control can be added using POS screen layout designer in Cart view where you can drag and drop the custom control and choose your own location, height and width and the you will write the extension logic in the extension project.
 
 ![POS screen layout designer in Cart view](media/pos-custom-control-1.png)
 
-Ex: in the above screen, we added three custom control using the screen layout designer. Currently only Cart view supports adding custom control using screen layout designer and for all other screens it should be done in the extension project. One advantage using screen layout designer is you can drop the custom control wherever you want within the screen but for the other screen its fixed position but you can specify the height and width.
+For example, in the above screen, we added three custom control using the screen layout designer. Currently only Cart view supports adding custom controls using a screen layout designer. For all other screens, the layout should be done in the extension project. One advantage of using the screen layout designer is that you can drop the custom control wherever you want within the screen. In other screens, the position is fixed but you can modify the position by specifying the height and width.
 
-**Custom control matrix:**
+## Custom control matrix
 
-Below is the list of views support custom control in POS:
+Below is the list of views that support custom control in POS:
 
 | POS Views                  | Support Custom control | Support screen layout designer |
 |----------------------------|------------------------|--------------------------------|
@@ -52,52 +52,43 @@ Below is the list of views support custom control in POS:
 | Customer Add/Edit view     | Yes (Work in progress) | No                             |
 | Address Add/Edit view      | Yes (Work in progress) | No                             |
 
-**Note:** Custom control support is added only in Dynamics 365 for Finance and Operation/Retail App update 3 for non-screen layout designer based views and App update 4 for screen layout designer based views.
+Note: Custom control support is added only in Dynamics 365 for Finance and Operation/Retail App update 3 for non-screen layout designer based views and App update 4 for screen layout designer based views.
 
-In the following example, we will show you how you can add custom control to one of the POS existing view using extension:
+## Create a custom control
 
-**Scenario:** We want to show the product availability information in the product details view by adding custom data list which has four columns (Location, Inventory, Reserved and Ordered). You can follow the same pattern to show any custom information you want to show in the POS views.
+In the following example, we will show you how you can add custom control to one of the POS existing view using extension. In this scenario, we want to show the product availability information in the product details view by adding a custom data list which has four columns (Location, Inventory, Reserved and Ordered). You can follow the same pattern to show any custom information you want to show in the POS views.
 
-1.  Launch visual studio 2015 in the developer VM.
-
-2.  Open the ModernPos.sln from the RetailSDK\\POS
-
-3.  In the POS.Extensions project add new folder and name it as SampleExtensions and inside it add another folder and name it as ViewExtensions
-
-4.  Add one more folder inside the ViewExtensions folder you added in the previous step and name it as SimpleProductDetails.
-
-    Note: The pattern is if you are extending view then name the folder same as the view for easy navigation and code maintenance.
-
-5.  Add new HTML and .ts inside the SimpleProductDetails folder and name it as ProductAvailabilityPanel.html and ProductAvailabilityPanel.ts
-
-    In the HTML you can add whatever information you want to show in the custom control and in the .ts file add the corresponding logic. Custom control is nothing but simple HTML page with your custom information.
-
+1. Start Visual Studio 2015 in the developer VM.
+2. Open the ModernPos.sln from the RetailSDK\\POS.
+3. In the POS.Extensions project add a new folder and name it as SampleExtensions and inside it add another folder and name it as ViewExtensions.
+4. Add one more folder inside the ViewExtensions folder you added in the previous step and name it as SimpleProductDetails. Note: The pattern is if you are extending view then name the folder same as the view for easy navigation and code maintenance.
+5.  Add new HTML and .ts inside the SimpleProductDetails folder and name it as ProductAvailabilityPanel.html and ProductAvailabilityPanel.ts. In the HTML you can add whatever information you want to show in the custom control and in the .ts file add the corresponding logic. A custom control is a simple HTML page with your custom information.
 6.  Open the ProductAvailabilityPanel.html and copy the below code:
 
-```
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-    </head>
-    <body>
-        <!-- Note: The element id is different than the id generated by the POS extensibility framework. This 'template' id is not used by the POS extensibility framework. -->
-        <script id="Microsot\_Pos\_Extensibility\_Samples\_ProductAvailabilityPanel" type="text/html">
-            <h2 class="marginTop8 marginBottom8" data-bind="text: title"></h2>
-            <div class="width400 grow col">
-                <div id="Microsot\_Pos\_Extensibility\_Samples\_ProductAvailabilityPanel\_DataList" data-bind="msPosDataList: dataList"></div>
-            </div>
-        </script>
-    </body>
-</html>
-```
+    ```
+    <!DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+            <meta charset="utf-8" />
+            <title></title>
+        </head>
+        <body>
+            <!-- Note: The element id is different than the id generated by the POS extensibility framework. This 'template' id is not used by the POS extensibility framework. -->
+            <script id="Microsot\_Pos\_Extensibility\_Samples\_ProductAvailabilityPanel" type="text/html">
+                <h2 class="marginTop8 marginBottom8" data-bind="text: title"></h2>
+                <div class="width400 grow col">
+                    <div id="Microsot\_Pos\_Extensibility\_Samples\_ProductAvailabilityPanel\_DataList" data-bind="msPosDataList: dataList"></div>
+                </div>
+            </script>
+        </body>
+    </html>
+    ```
 
-In the file, we just added POS data list control to show the product availability information and specified the width of the control.
+    In the file, you add the POS data list control to show the product availability information and specified the width of the control.
 
-You copy the full code from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails\\ ProductAvailabilityPanel.html
+    You copy the full code from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails\\ ProductAvailabilityPanel.html
 
-1.  Open the ProductAvailabilityPanel.ts and copy the below code:
+7.  Open the ProductAvailabilityPanel.ts and copy the below code:
 
     ```
     /**
@@ -119,63 +110,57 @@ You copy the full code from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\
     import { DataList, SelectionMode } from "PosUISdk/Controls/DataList";
     ```
     
-We imported the list of controls and other data objects from the POS API to write our custom logic.
+    We imported the list of controls and other data objects from the POS API to write our custom logic.
 
-1.  In next steps, we need to add the constructor and initialize the data list with the product availability information, so that when you navigate to the page it loads the product availability information.
+In next steps, we need to add the constructor and initialize the data list with the product availability information, so that when you navigate to the page it loads the product availability information. Note: We didn’t copy the source code here, but you can copy the full code from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails\\ ProductAvailabilityPanel.ts
 
-    Note: We didn’t copy the source code here, you can copy the full code from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails\\ ProductAvailabilityPanel.ts
+1.  Add a new manifest.json to you folder SampleExtensions.
 
-2.  Add new manifest.json to you folder SampleExtensions.
+1.  Copy the below code:
 
-3.  Copy the below code:
-
-```
-{
-  "$schema": "../manifestSchema.json",
-  "name": "Pos_Extensibility_Samples",
-  "publisher": "Microsoft",
-  "version": "7.2.0",
-  "minimumPosVersion": "7.2.0.0",
-  "components": {
-    "resources": {
-      "supportedUICultures": [ "en-US" ],
-      "fallbackUICulture": "en-US",
-      "culturesDirectoryPath": "Resources/Strings",
-      "stringResourcesFileName": "resources.resjson",
-      "cultureInfoOverridesFilePath": "Resources/cultureInfoOverrides.json"
-    },
-    "extend": {
-      "views": {
-        "SimpleProductDetailsView": {
-          "controlsConfig": {
-            "customControls": [
-              {
-                "controlName": "productAvailabilityPanel",
-                "htmlPath": "ViewExtensions/SimpleProductDetails/ProductAvailabilityPanel.html",
-                "modulePath": "ViewExtensions/SimpleProductDetails/ProductAvailabilityPanel"
+    ```
+    {
+      "$schema": "../manifestSchema.json",
+      "name": "Pos_Extensibility_Samples",
+      "publisher": "Microsoft",
+      "version": "7.2.0",
+      "minimumPosVersion": "7.2.0.0",
+      "components": {
+        "resources": {
+          "supportedUICultures": [ "en-US" ],
+          "fallbackUICulture": "en-US",
+          "culturesDirectoryPath": "Resources/Strings",
+          "stringResourcesFileName": "resources.resjson",
+          "cultureInfoOverridesFilePath": "Resources/cultureInfoOverrides.json"
+        },
+        "extend": {
+          "views": {
+            "SimpleProductDetailsView": {
+              "controlsConfig": {
+                "customControls": [
+                  {
+                    "controlName": "productAvailabilityPanel",
+                    "htmlPath": "ViewExtensions/SimpleProductDetails/ProductAvailabilityPanel.html",
+                    "modulePath": "ViewExtensions/SimpleProductDetails/ProductAvailabilityPanel"
+                  }
+                ]
               }
-            ]
+            }
           }
         }
       }
     }
-  }
-}
-```
+    ```
 
-Manifest informs the POS during runtime that there is custom control added in the SimpleProductDetailsView. If see the code added above, we just mentioned all the required metadata for POS to load the control.
+    The manifest informs the POS during runtime that there is custom control added in the SimpleProductDetailsView. In the code example above, we included all the required metadata for POS to load the control.
 
-Extend – Informs the POS that there is extension for existing POS feature.
+    - Extend – Informs the POS that there is extension for existing POS feature.
+    - Views – Existing POS view is extended.
+    - View Name – Which view being extended
+    - Controls config – What control we are adding. Ex: Custom control.
+    - Control metadata – Name, html file path and typescript module path (.ts file)
 
-Views – Existing POS view is extended.
-
-View Name – Which view being extended
-
-Controls config – What control we are adding. Ex: Custom control.
-
-Control metadata – Name, html file path and typescript module path (.ts file)
-
-1.  Open the extensions.json and copy the below code:
+1.  Open the extensions.json and copy this code:
 
     ```
     {
@@ -187,9 +172,7 @@ Control metadata – Name, html file path and typescript module path (.ts file)
     }
     ```
     
-In the extension.json file you will specify what are the different extension you have. In this case, we added new extension folder, so we need to specify that folder.
-
-Note: Each extension folder or package you specify here should have manifest.
+    In the extension.json file you will specify what are the different extension you have. In this case, we added new extension folder, so we need to specify that folder. Note: Each extension folder or package you specify here should have manifest.
 
 1.  Open the tsconfig.json file and include your extension, copy the below code:
 
@@ -200,14 +183,13 @@ Note: Each extension folder or package you specify here should have manifest.
     ],
     ```
     
-**How to test your extension:**
+## Test the extension
 
 1.  Press F5 and deploy the POS to test your customization.
-
 2.  Once the POS is launched, login to POS and then search for any product and navigate to product details screen, then you should see the custom control you added something like below:
 
     ![Product details screen](media/pos-custom-control-2.png)
 
-    You can copy the full code for this sample from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails.
+You can copy the full code for this sample from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails.
 
 
