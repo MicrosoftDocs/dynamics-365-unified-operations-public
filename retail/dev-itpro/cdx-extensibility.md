@@ -28,7 +28,7 @@ ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
-# CDX Extensibility
+# CDX extensibility
 
 This topic covers how you can extend the Retail initialization class to support custom Commerce Data Exchange (CDX) synchronization using the extension points newly added in Dynamics 365 for Finance and Operations or Dynamics 365 for Retail platform update 8.
 
