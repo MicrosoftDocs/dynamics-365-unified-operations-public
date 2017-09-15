@@ -530,7 +530,7 @@ instances of the same version, by connecting the data from instances in Dynamics
 AX 2012 R3 CU11 or later to Dynamics 365 for Finance and Operations, Enterprise
 edition. 
 
-For more information, see [Cost accounting overview](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page)
+For more information, see [Cost accounting overview](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page).
 
 Cost accounting allocation bases
 --------------------------------
@@ -550,6 +550,8 @@ The following allocation base types have been introduced:
 
 -   **Hierarchy allocation bases** - Combine an allocation base of any type with
     a cost object dimension hierarchy node to limit the range.
+    
+For more information, see [Allocation bases](/dynamics365/unified-operations/financials/cost-accounting/allocation-bases).
 
 Cost accounting dimension hierarchies 
 --------------------------------------
@@ -559,6 +561,8 @@ node to a new parent node in the hierarchy or perform a simple re-order of nodes
 within a parent node by using the **Move up** or **Move down** buttons. This
 significantly reduces amount of the time spent maintaining dimension
 hierarchies.
+
+For more information, see [Dimension hierarchies](/dynamics365/unified-operations/financials/cost-accounting/dimension-hierarchy).
 
 Cost accounting Get started wizard
 ----------------------------------
@@ -573,6 +577,8 @@ control workspace with your own data.
 The wizard provides a good foundation for further exploring the capabilities of
 Cost accounting.
 
+For more information, see [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU).
+
 Cost accounting ledger administration workspace
 -----------------------------------------------
 
@@ -584,6 +590,11 @@ be accessed directly from this workspace.
 The health of the cost accounting ledger and its related master data and
 reference data are monitored, such as cost objects dimensions, dimension
 hierarchies, and rules. This makes it easy to manage cost accounting ledgers.
+
+
+For more information, see [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk) and [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8).
+
+
 
 **Globalization & translation**
 ===============================
