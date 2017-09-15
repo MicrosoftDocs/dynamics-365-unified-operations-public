@@ -3,9 +3,9 @@
 
 title: Project forecasts and budgets
 description: 
-author: twheeloc
+author: KimANelson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 23501
 ms.assetid: 4e6d1384-19a2-4232-b3f3-d2590c218bd7
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

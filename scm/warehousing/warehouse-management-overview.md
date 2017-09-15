@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warehouse management
-description: Use Warehouse management to monitor and automate warehouse processes. The Warehouse management module for Microsoft Dynamics 365 for Financials and Operations, Enterprise editon lets you manage warehouse processes in manufacturing, distribution, and retail companies.
+description: Use Warehouse management to monitor and automate warehouse processes. 
 author: BibiSp
 manager: AnnBe
 ms.date: 06/20/2017
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-The warehouse management system in Dynamics 365 for Finance and operations, Enterprise edition offers a wide pallet of capabilities to support the warehouse facility at an optimal level at any time. Warehouse management is fully integrated with other business processes in Dynamics 365 such as transportation, manufacturing, quality control, purchase, transfer, sales, and returns.
+The Warehouse management module for Dynamics 365 for Finance and Operations, Enterprise edition lets you manage warehouse processes in manufacturing, distribution, and retail companies. This module has a wide range of features to support the warehouse facility at an optimal level, at any time. Warehouse management is fully integrated with other business processes in Finance and Operations such as transportation, manufacturing, quality control, purchase, transfer, sales, and returns.
 
-## Warehouse management processes in Dynamics 365 for Finance and operations
+## Warehouse management processes in Finance and Operations
 - Integrated support for source documents for sales orders, returns, transfer orders, production orders, and kanban  
 - Advanced, flexible, inbound and outbound material workflow support based on queries
-- Full integration with the Manufacturing and the Transportatin offerings
+- Full integration with the Manufacturing and the Transportation offerings
 - Full control of location stocking limits and location volumetrics
 - Inventory properties controlled by inventory status
 - Full batch and serial item support
@@ -55,24 +55,29 @@ The warehouse management system in Dynamics 365 for Finance and operations, Ente
 - Simple cross docking
 
 ## Get started
-To get started working with Warehouse management you need to complete the setup of the general warehouse parameters and to support the business processes of you company, you must configure components for inbound and outbound warehouse process workflows such as wave templates, work templates, work pools, barcode scanner flows and location directives.
+To start working with Warehouse management, you need to complete the setup of the general warehouse parameters to support the business processes of you company.
 
-## General warehouse configurations
-You must set up general warehouse configurations before you can perform inbound and outbound warehouse transactions.
+- Go to the **Warehouse management parameters** page under **Warehouse management** > **Setup** to set up general warehouse parameters.
 
-### Next steps
-After you configure the general warehouse parameters, you can complete the setup for the following areas:
+You must configure components for inbound and outbound warehouse process workflows according to business requirements. The most important components that you must configure are wave templates, work templates, work pools, and location directives.
 
-- Set up number sequences for warehouse management: [Number sequences](/dynamics365/unified-operations//core/organization-administration/number-sequence-overview)
+[Warehouse configuration](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration)
 
-- Set up parameters to create a warehouse location 
-- Set up mobile device menus to display work or activities: [Set up mobile devices for warehouse work](/dynamics365/unified-operations/supply-chain/warehousing/configure-mobile-devices-warehouse)
-- Create a location directive and a work template:  [Control warehouse work by using work templates and location directives](/dynamics365/unified-operations/supply-chain/warehousing/control-warehouse-location-directives) 
-- Purchase order specific: [Set up a location directive for purchase order put-away](/dynamics365/unified-operations/supply-chain/transportation/set-up-location-directive-purchase-order-put-away) and [Set up a work template for purchase orders](/dynamics365/unified-operations/supply-chain/warehousing/set-up-work-template-purchase-orders)
-## Warehouse layout supporting business processes
-Read more about how to define your warehouse layout and how to enable warehouse processes according to business requirements. The most important components that you must configure are wave templates, work templates, work pools, and location directives.
+[Control warehouse work by using work templates and location directives](/dynamics365/unified-operations/supply-chain/warehousing/control-warehouse-location-directives)
 
-- [Warehouse configuration](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration)
+[Set up mobile devices for warehouse work](/dynamics365/unified-operations/supply-chain/warehousing/configure-mobile-devices-warehouse)
+
+[Set up a location directive for purchase order put-away](/dynamics365/unified-operations/supply-chain/transportation/set-up-location-directive-purchase-order-put-away)
+
+[Set up a work template for purchase orders](/dynamics365/unified-operations/supply-chain/warehousing/set-up-work-template-purchase-orders)
+
+## Additional resources
+### What's new and in development
+Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.
+
+### Blogs
+You can find opinions, news, and other information about Warehouse management and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog).
+
 
  
 

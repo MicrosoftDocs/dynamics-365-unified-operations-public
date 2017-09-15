@@ -1,10 +1,41 @@
-**Credit limits for customers**
+---
+# required metadata
+
+title: Credit limits for customers
+description: This article provides an overview of how credit limits work in Microsoft Dynamics 365 for Finance and Operations.
+author: omulvad
+manager: AnnBe
+ms.date: 09/15/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: bis
+ms.search.scope: Core, Operations, Unified operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: omulvad
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0 
+---
+
+# Credit limits for customers
+
+[!include[banner](../includes/banner.md)]
 
 Setting a credit limit lets you specify the maximum amount of credit to extend
 to your customers. If a credit limit is specified, it is checked automatically
 when a user attempts to update a document. If the credit limit is exceeded, a
-message is displayed to the user. This topic provides an overview of how credit
-limits work in Microsoft Dynamics AX and answers the following questions:
+message is displayed to the user. This article provides an overview of how credit
+limits work  and answers the following questions:
 
 -   What documents and processes can I check credit limits for?
 
@@ -65,7 +96,7 @@ settings.
 **Where do I configure the way that a customer’s remaining credit is
 calculated?**
 
-You can configure Microsoft Dynamics AX to calculate a customer’s remaining
+You can configure Dynamics 365 to calculate a customer’s remaining
 credit in any of the following ways:
 
 -   Compare the credit limit against the customer balance.
@@ -157,13 +188,8 @@ master (CustCustomersMaintain) duty assigned to it to make changes in this form.
 4.  If it is required, enter a license number or other government-issued
     identification in the **Government identification** field.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    **Note**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-| In the **Accounts receivable parameters** form, a credit limit type is typically selected. However, if the credit limit type is set to **None**, you must also select the **Mandatory credit limit** check box in the **Customers** form in order to check the customer’s credit limit against the customer’s balance. For more information about credit limit types, see “What documents and processes can I check credit limits for?” in this topic. |   |   |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
-
+> [!NOTE]
+> In the **Accounts receivable parameters** form, a credit limit type is typically selected. However, if the credit limit type is set to **None**, you must also select the **Mandatory credit limit** check box in the **Customers** form in order to check the customer’s credit limit against the customer’s balance. For more information about credit limit types, see “What documents and processes can I check credit limits for?” in this topic. 
 
 **How do I manually check credit limits on sales orders?**
 
