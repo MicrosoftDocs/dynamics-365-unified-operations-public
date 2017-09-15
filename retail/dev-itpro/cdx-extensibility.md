@@ -2,7 +2,7 @@
 # required metadata
 
 title: CDX extensibility
-description: 
+description: This topic covers how you can extend the Retail initialization class to support custom Commerce Data Exchange (CDX) synchronization.
 author: mugunthanm
 manager: AnnBe
 ms.date: 09/15/207
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ---
 # CDX Extensibility
 
-This topic covers how you can extend Retail initialization class to support custom Commerce Data Exchange (CDX) sync using the extension points newly added in Dynamics 365 for Finance and Operations or Dynamics 365 for Retail platform update 8.
+This topic covers how you can extend the Retail initialization class to support custom Commerce Data Exchange (CDX) synchronization using the extension points newly added in Dynamics 365 for Finance and Operations or Dynamics 365 for Retail platform update 8.
 
 Commerce Data Exchange is a system that transfers data between Retail headquarters (Retail HQ) and retail channels, such as online stores or brick-and-mortar stores. The data transfer between Retail HQ and the channel database is controlled by scheduler jobs. Each scheduler job contains a list of scheduler subjobs. The scheduler subjobs contain the source and destination table names and the transfer field mapping of these tables. There are two ways to configure the data sync between the Retail HQ and the channel database:
 
@@ -39,26 +39,26 @@ Commerce Data Exchange is a system that transfers data between Retail headquarte
 
 The advantage of using the retail initialization class is you don't need to configure the custom jobs in different environments (dev, test, production). Instead, you can run the retail initialization button under Retail parameters which will automatically create the custom job information’s in CDX for the data sync.
 
-There are different scenarios for data transfer data between Retail Headquarters and channel database:
+There are different scenarios for data transfer data between Retail HQ and the channel database:
 + Sending data from new HQ table to new channel database table using download job.
 + Pull data from new channel database table to new HQ table using push job.
 
 ## Sending data from new HQ table to new channel database table using download job
 
-If you created a new Retail HQ and channel table and if you want to push the data between two tables, follow the below steps:
-
-Before pushing or pulling the data, you need to understand the different metadata definition in the xml resource file (The resource file contains the custom job information which will be initialized in your environment to push and pull data). How to create a new resources files is described below:
+Before pushing or pulling data, you need to understand the different metadata definitions in the xml resource file. The resource file contains the custom job information which will be initialized in your environment to push and pull data. The resource files you'll need to configure are:
 
 + ChannelDBSchema – Extension schema you created in the channel database.
 + TargetTableSchema - Extension schema you created in the channel database to add your custom tables.
-+ AxTableName – AX table name
++ AxTableName – The table name.
 + IsUpload – This flag determines whether the job is push or pull (whether you want to send data from the HQ to channel or pull data from channel to HQ) by default the value is false, it means you are sending data from HQ to channel.
-+ ScheduledByJob - It contains one or more sub jobs
++ ScheduledByJob - It contains one or more subjobs.
 + Subjob – Each individual table is added as subjob and each subjob is scheduled by one or more scheduler jobs.
 + TargetTable – Channel database table name, the target table which the push or pull job need to send data. If this value is not specified, the system assumes the target and source table name is same.
 
-1. Create your custom Dynamics 365 project and add custom table using AOT.
-1. Create a new resource file to add all custom job information’s. The template for the resource file is:
+If you created a new Retail HQ and a new channel table and if you want to push the data between two tables, follow the below steps:
+
+1. Create your custom Dynamics 365 project and add a custom table using the AOT.
+1. Create a new resource file to add all custom job information. The template for the resource file is:
 
     ```
     <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
@@ -70,7 +70,7 @@ Before pushing or pulling the data, you need to understand the different metadat
      </RetailCdxSeedData>
     ```
 
-1. Create a new Resource (xml file) in Dynamics 365 using AOT, in the resource xml file specify the new table and new job details like below. Note: Either you can add the new table part of the existing job or create a new job and add this table, in this case we are creating a new job id =”7000” and custom table = “ContosoRetailSeatingArrangementData”
+1. Create a new Xml resource in Dynamics 365 using the AOT. In the resource xml file specify the new table and new job details as shown in the followig code example. Note: Either you can add the new table part of the existing job or create a new job and add this table. In this case we are creating a new job id =”7000” and custom table = “ContosoRetailSeatingArrangementData”.
 
     ```
     [<RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">](file:///C:\Users\mumani\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LQW97M2L\RetailCDXSeedDataAX7_ContosoRetailExtension%20(002).xml)
@@ -93,9 +93,9 @@ Before pushing or pulling the data, you need to understand the different metadat
     </RetailCdxSeedData>
     ```
 
-    TargetTable name is not specified here by default the system assume the target table name on the channel side is same name as the AXTable. If the target table name on the channel side is different than the source (AX table) name then in the &lt;Subjob&gt; node you can set the channel table name using the &lt;TargetTableName&gt; attribute.
+    TargetTable name is not specified here by default. The system assumes the target table name on the channel side has the same name as AXTable. If the target table name on the channel side is different than the source (AX table) name, then in the <Subjob> node you can set the channel table name using the <TargetTableName> attribute.
 
-    Similarly, in the mapping section only the ax field name is specified, by default the assumption is same field name is being used on the channel side as well. If the field name on the corresponding channel table is different than the AX side then you can specify that in the mapping by setting the channel field name on the &lt;ToName&gt; attribute of the &lt;Field&gt; node.
+    Similarly, in the mapping section only the AxField name is specified. By default the assumption is same field name is being used on the channel side as well. If the field name on the corresponding channel table is different than the AX side then you can specify that in the mapping by setting the channel field name in the ToName attribute of the <Field> node.
 
 1. Right click the project and click Add > New Item.
 1. In the Add New item window, select Resources and name the resource file as RetailCDXSeedDataAX7\_Custom and click **Add**.
@@ -113,11 +113,11 @@ Before pushing or pulling the data, you need to understand the different metadat
     }
     ```
 
-    Note: Since there are two CDX seed data definition in the system it’s imperative to specify that your extension CDX seed data is only added if the CDX seed data being generated is the version you are trying to extend that why the condition is important. If the if condition is removed your extension cdx seed data could be applied on top of the N-1 CDX seed data as well which may cause unintended consequences.
+    Note: Since there are two CDX seed data definitions in the system, you must specify that your extension CDX seed data is only added if the CDX seed data being generated is the version you are trying to extend. If the if condition is removed your extension CDX seed data could be applied on top of the N-1 CDX seed data as well which may cause unintended consequences.
 
-    Also, you no need to create separate resource file for different scenarios mentioned below you can have one file with all the custom job information and register it from the extension class.
+    Also, you don't have to create separate resource files for the different scenarios mentioned belo. You can have one file with all the custom job information and register it from the extension class.
 
-    Whenever the retail initialize class runs it looks for any extension which implemented this handler if found along with the standard it will also initialize the custom information found in the resource file.
+    Whenever the retail initialize class runs it looks for any extension which implemented this handler. If found along with the standard, it will also initialize the custom information found in the resource file.
 
 1. Run the retail initialize by clicking the Initialize button under Retail parameters > General tab.
 
