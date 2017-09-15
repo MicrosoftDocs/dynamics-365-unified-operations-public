@@ -74,6 +74,7 @@ In the following example, we will show you how you can add custom control to one
 
 6.  Open the ProductAvailabilityPanel.html and copy the below code:
 
+```
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -90,31 +91,34 @@ In the following example, we will show you how you can add custom control to one
         </script>
     </body>
 </html>
+```
 
-> In the file, we just added POS data list control to show the product availability information and specified the width of the control.
+In the file, we just added POS data list control to show the product availability information and specified the width of the control.
 
-you copy the full code from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails\\ ProductAvailabilityPanel.html
+You copy the full code from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails\\ ProductAvailabilityPanel.html
 
 1.  Open the ProductAvailabilityPanel.ts and copy the below code:
 
-/**
-    SAMPLE CODE NOTICE
-    THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
-    OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
-    THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-    NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-**/
+    ```
+    /**
+        SAMPLE CODE NOTICE
+        THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+        OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+        THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+        NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+    **/
 
-import {
-    SimpleProductDetailsCustomControlBase,
-    ISimpleProductDetailsCustomControlState,
-    ISimpleProductDetailsCustomControlContext
-} from "PosApi/Extend/Views/SimpleProductDetailsView";
+    import {
+        SimpleProductDetailsCustomControlBase,
+        ISimpleProductDetailsCustomControlState,
+        ISimpleProductDetailsCustomControlContext
+    } from "PosApi/Extend/Views/SimpleProductDetailsView";
 
-import { ProxyEntities } from "PosApi/Entities";
-import { ArrayExtensions } from "PosApi/TypeExtensions";
-import { DataList, SelectionMode } from "PosUISdk/Controls/DataList";
-
+    import { ProxyEntities } from "PosApi/Entities";
+    import { ArrayExtensions } from "PosApi/TypeExtensions";
+    import { DataList, SelectionMode } from "PosUISdk/Controls/DataList";
+    ```
+    
 We imported the list of controls and other data objects from the POS API to write our custom logic.
 
 1.  In next steps, we need to add the constructor and initialize the data list with the product availability information, so that when you navigate to the page it loads the product availability information.
@@ -173,26 +177,29 @@ Control metadata – Name, html file path and typescript module path (.ts file)
 
 1.  Open the extensions.json and copy the below code:
 
-{
-  "extensionPackages": [
+    ```
     {
-      "baseUrl": "SampleExtensions"
+      "extensionPackages": [
+        {
+          "baseUrl": "SampleExtensions"
+        }
+      ]
     }
-  ]
-
-}
-
+    ```
+    
 In the extension.json file you will specify what are the different extension you have. In this case, we added new extension folder, so we need to specify that folder.
 
 Note: Each extension folder or package you specify here should have manifest.
 
 1.  Open the tsconfig.json file and include your extension, copy the below code:
 
-"extends": "../tsconfigs/tsmodulesconfig",
-"exclude": [
-    // "SampleExtensions"
-],
-
+    ```
+    "extends": "../tsconfigs/tsmodulesconfig",
+    "exclude": [
+        // "SampleExtensions"
+    ],
+    ```
+    
 **How to test your extension:**
 
 1.  Press F5 and deploy the POS to test your customization.
