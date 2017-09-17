@@ -1,4 +1,38 @@
-# Using Activity Diagrams with BPM
+---
+
+title: Use activity diagrams with BPM
+description: This topic provides information about using activity diagrams in a BPM library.
+author: kfend
+manager: AnnBe
+ms.date: 09/17/2017
+ms.topic: article
+ms.prod: 
+ms.service:  dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: AX 2012, Operations, UnifiedOperations
+# ms.tgt_pltfrm: 
+ms.custom: 13301
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: ntecklu
+ms.search.validFrom: 
+ms.dyn365.ops.version: 2012
+
+---
+
+# Use activity diagrams with BPM
+
+[!include[banner](../includes/banner.md)]
+
 You can associate an activity diagram with a business process. Activity diagrams are used to describe how a business process or task is completed in a proposed software solution.
 There are 3 types of activity diagrams:
 - **Task recordings** - Business processes associated with Dynamics 365 for Operations Task recordings include automatically generated activity diagrams and process steps.
