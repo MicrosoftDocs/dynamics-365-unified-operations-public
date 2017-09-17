@@ -1,21 +1,54 @@
-# Synchronize with VSTS, collect requirements, and review processes
+---
 
-The implementation stage of a project starts by synchronizing a BPM library with your Visual Studio Team Services (VSTS) project. The enables you to review processes and associate requirements with business processes. It also enables you to track the progress of your implementation project in VSTS and associate work items like bugs, tasks, backlog items, tests, and documents with requirements and business processes.
+title: Synchronize a BPM library with Visual Studio Team Services (VSTS)
+description:
+author: kfend
+manager: AnnBe
+ms.date: 09/17/2017
+ms.topic: article
+ms.prod: 
+ms.service:  dynamics-ax-platform
+ms.technology: 
 
-Currently, VSTS does not support custom work types or synchronization of business processes with custom work types.
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: AX 2012, Operations, UnifiedOperations
+# ms.tgt_pltfrm: 
+ms.custom: 13301
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: ntecklu
+ms.search.validFrom: 
+ms.dyn365.ops.version: 2012
+
+---
+
+# Synchronize a BPM library with Visual Studio Team Services (VSTS)
+
+[!include[banner](../includes/banner.md)]
+
+The implementation stage of a project starts by synchronizing a BPM library with your Visual Studio Team Services (VSTS) project. This enables you to review processes and associate requirements with business processes. By synchronizing, you can also track the progress of your implementation project in VSTS and associate work items like bugs, tasks, backlog items, tests, and documents with requirements and business processes.
+
+Currently, VSTS does not support custom work types or synchronizing business processes with custom work types.
 
 To learn more about VSTS, visit [www.visualstudio.com/team-services](http://www.visualstudio.com/team-services).
 
 ## LCS project settings: Set up Visual Studio Team Services
 
-If you have already setup Visual Studio Team Services from LCS, you can skip this section.
+If you have already setup VSTS from LCS, you can skip this section.
 
 ### Create a personal access token
 
 To connect to a VSTS project, LCS is authenticated by using a personal access token. Use the following steps to create a personal access token in VSTS.
 
 1. Sign in to (https://www.visualstudio.com/) and locate your VSTS project.
-2. In the top right corner, hover over your name, and in the menu that appears, select **Security**.
+2. In the top right corner, hover over your name, and in the menu that appears, click **Security**.
 3. Click **Add** to create a new personal access token.
 4. Give the token a name, and then enter the amount of time that you want the token to last for.
 5. Click **Create Token**.
@@ -25,14 +58,15 @@ To connect to a VSTS project, LCS is authenticated by using a personal access to
 
 1. In your LCS project, go to the **Project settings** tile.
 2. Select **Visual Studio Team Services** , and then click **Setup Visual Studio Team Services**. This configuration is needed by many LCS tools, if you have already configured LCS to connect to your VSTS project, you can skip this section or click **Change** to change the existing setup.
+
 ![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost22-1024x378.png "image")
 
 3. Enter the root URL for your VSTS account and the access token that you created earlier, and then click **Continue**.
 
 ![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost23-1024x484.png "image")
 
-1. Select your Visual Studio Team Services project.
-2. Select the work item type mappings. These are the mappings between an LCS/BPM item and the associated VSTS work item types.
+4. Select your Visual Studio Team Services project.
+25 Select the work item type mappings. These are the mappings between an LCS/BPM item and the associated VSTS work item types.
 
 ![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost24.png "image")
 
