@@ -1,7 +1,7 @@
 ---
 
 title: Complete tasks in BPM
-description:
+description: This topic provides information about additional tasks you can complete in BPM including publishing, exporting, and distributing.
 author: kfend
 manager: AnnBe
 ms.date: 09/17/2017
