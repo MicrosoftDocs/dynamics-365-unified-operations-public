@@ -50,7 +50,7 @@ The POS runtime checks the extension manifest to see if there are any extensions
 
 ## PaymentTerminalAuthorizePaymentRequestHandler
 
-**PaymentTerminalAuthorizePaymentRequestHandler** is the core payment request from POS which initiates and authorizes a card payment request, you can override this request if you want to change the authorize workflow. To override the request, you need to extend the **PaymentTerminalAuthorizePaymentRequestHandlerin** POS:
+**PaymentTerminalAuthorizePaymentRequestHandler**, the authorization request, is the core payment request from POS which initiates and authorizes a card payment request, you can override this request if you want to change the authorize workflow. To override the request, you need to extend the **PaymentTerminalAuthorizePaymentRequestHandlerin** POS:
 
 ```typescript
 /**
@@ -215,7 +215,7 @@ The full sample with how to pass extension properties is available in Retail SDK
 
 ## PaymentTerminalCapturePaymentRequestHandler
 
-**PaymentTerminalCapturePaymentRequestHandler** is another payment request from POS which initiates and capture the card payment request. Override this request if you want to change the capture workflow. To override the request, you need to extend the **PaymentTerminalCapturePaymentRequestHandler** in POS:
+**PaymentTerminalCapturePaymentRequestHandler**, the payment request, is a payment request from POS which initiates and capture the card payment request. Override this request if you want to change the capture workflow. To override the request, you need to extend the **PaymentTerminalCapturePaymentRequestHandler** in POS:
 
 ```typescript
 /**
@@ -293,11 +293,11 @@ After implementing the request logic you need to update the manifest.json with t
 }
 ```
         
-The full E2E sample with how to pass extension properties is available in Retail SDK app update 3: RetailSDK\Code\POS\Extensions\ PaymentSample.
+The full sample with how to pass extension properties is available in Retail SDK app update in the RetailSDK\Code\POS\Extensions\ PaymentSample folder.
 
-<B>PaymentTerminalExecuteTaskRequestHandler:</B>
+## PaymentTerminalExecuteTaskRequestHandler
 
-Execute task request is used from POS to initiates any custom payment device/connector operation from POS. Ex: To do health check of the payment device from POS or to do some batch processing, EOD request to payment device etc. you can override this request if you want to do any custom operation other than the standard authorize, capture, void and refund. To override the request, you need to extend the PaymentTerminalExecuteTaskRequestHandlerin POS:
+**PaymentTerminalExecuteTaskRequestHandler**, the execution request, is used from POS to initiate any custom payment device/connector operation from POS. You might use this to do a health check of the payment device from POS or to do some batch processing, or for an end-of-day request to the payment device. You override this request if you want to do any custom operation other than the standard authorize, capture, void and refund. To override the request, you need to extend the PaymentTerminalExecuteTaskRequestHandlerin POS:
 
 ```typescript
 /**
@@ -351,7 +351,7 @@ export default class PaymentTerminalExecuteTaskRequestHandlerExt extends Payment
 
 ```
          
-After implementing the request logic you need to update the manifest.json with the extension information so that POS knows to load the extension, whichever request you override you need to specify that in the manifest. 
+After implementing the request logic you need to update the manifest.json with the extension information so that POS knows to load the extension. 
 
 ```typescript
 {
@@ -378,14 +378,15 @@ After implementing the request logic you need to update the manifest.json with t
 }
 ```
 
-The full E2E sample with how to pass extension properties is available in Retail SDK app update 3: RetailSDK\Code\POS\Extensions\ PaymentSample.
+The full sample with how to pass extension properties is available in Retail SDK app update 3 in the RetailSDK\Code\POS\Extensions\ PaymentSample folder
 
 
 ## PaymentTerminalRefundPaymentRequestHandler
 
-Refund request is another payment request from POS which initiates and refund/return of the card payment, you can override this request if you want to change anything in the refund workflow. To override the request, you need to extend the PaymentTerminalRefundPaymentRequestHandler in POS.
+**PaymentTerminalRefundPaymentRequestHandler**, the refund request, is a payment request from POS which initiates a refund or return of the card payment. You override this request if you want to change the refund workflow. To override the request, you need to extend the PaymentTerminalRefundPaymentRequestHandler in POS.
 
 ## PaymentTerminalVoidPaymentRequestHandler
 
-Void request is another payment request from POS which initiates the void card payment request, you can override this request if you want to change anything in the void workflow. To override the request, you need to extend the PaymentTerminalVoidPaymentRequestHandler in POS.
-How to extend the void and refund request code pattern is same as the authorize and capture request. The full E2E sample for void and refund payment request with how to pass extension properties is available in Retail SDK app update 3: RetailSDK\Code\POS\Extensions\ PaymentSample.
+**PaymentTerminalVoidPaymentRequestHandler**, the void request, is a payment request from POS that initiates the void card payment request. You override this request if you want to change the void workflow. To override the request, you need to extend the PaymentTerminalVoidPaymentRequestHandler in POS.
+
+Extending the void and refund request code pattern is same as the authorize and capture request. The full sample for void and refund payment request with how to pass extension properties is available in Retail SDK app update 3 in the RetailSDK\Code\POS\Extensions\ PaymentSample folder.
