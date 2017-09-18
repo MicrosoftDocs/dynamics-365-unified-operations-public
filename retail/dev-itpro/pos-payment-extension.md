@@ -2,7 +2,7 @@
 # required metadata
 
 title: POS payment extension
-description:
+description: You can implement the core payment logic in the payment device or payment connector using the Hardware station APIs by using the extension points in POS to support payment extensibility.
 author: mugunthanm
 manager: AnnBe
 ms.date: 09/01/2017
@@ -31,9 +31,14 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # POS payment extension
 
-With the extension points in POS to support payment extensibility, you can implement the core payment logic in the payment device or payment connector using the Hardware station APIs. For some scenarios you need to pass some additional information such as extension properties to your connector/device or you want to show some custom messages in between the payment flow or you need some input from cashier to complete the flow and send some intermediate response back to the payment device/connector Ex: Customer ID validation status, voice authorization or show some processing dialogs like waiting for customer pin input etc. then you can override POS payment request to do this additional logics. 
+With the extension points in POS to support payment extensibility, you can implement the core payment logic in the payment device or payment connector using the Hardware station APIs. Some scenarios where you might want to do this are:
+- You need to pass additional information such as extension properties to your connector/device.
+- You want to show some custom messages in between the payment flow.
+- You need some input from cashier to complete the flow and send some intermediate response back to the payment device/connector. For example, you might need the Customer ID validation status or voice authorization. 
+- You want to show some processing dialogs like waiting for customer pin input. 
+You can override POS payment request to implement these scenarios.
 
-Below are the request/response you can override from the POS side to customize the payment flow for the above sceanrios:
+Below are the request handlers you can override from the POS side to customize the payment flow:
 
 - PaymentTerminalAuthorizePaymentRequestHandler
 - PaymentTerminalCapturePaymentRequestHandler
@@ -41,7 +46,7 @@ Below are the request/response you can override from the POS side to customize t
 - PaymentTerminalRefundPaymentRequestHandler
 - PaymentTerminalVoidPaymentRequestHandler
 
-The POS runtime checks the extension manifest and see if there is any extension for these requests and if there some extension found then it loads the extended request and execute the overridden request. In the extension project, you can override these requests and add your own implementation to call the custom payment providers and update the response based on status returned by your providers. When you override these request, you are overriding only the core logic (calling the methods in Hardware station and process the response per your own logic to show some custom messages or calling the Hardware station again by passing some additional information or sending some intermediate response back to Hardware station like voice authorization code, customer ID validation status etc.). After all your custom logic is done send the updated response you received from Hardware station (Payment device/connector) to POS, you no need to worry about how we add/void/decline the payment line and conclude the transaction based on the response, all the standard workflow is taken care by the POS.
+The POS runtime checks the extension manifest to see if there are any extensions for these request handlers. If there are extensions, then the runtime loads the extended requests and executes the overridden requests. In the extension project, you can override these requests and add your own implementation to call the custom payment providers and update the response based on status returned by your providers. When you override a request, you are overriding only the core logic. Calling the methods in Hardware station and process the response per your own logic to show some custom messages or calling the Hardware station again by passing some additional information or sending some intermediate response back to Hardware station like voice authorization code, customer ID validation status etc.). After all your custom logic is done send the updated response you received from Hardware station (Payment device/connector) to POS, you no need to worry about how we add/void/decline the payment line and conclude the transaction based on the response, all the standard workflow is taken care by the POS.
 
 ## PaymentTerminalAuthorizePaymentRequestHandler
 
