@@ -346,10 +346,6 @@ If you're using Retail functionality, you must follow these steps to prepare the
 To obtain the latest data upgrade deployable packages for your target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS).
 
 1. In LCS, in the **Environments** section, select your target Finance and Operations environment, scroll to the bottom of the page, and then select the **All binary updates** tile. 
-
-    > [!NOTE]
-    > If the **All binary updates** tile shows that zero updates available, use the data upgrade deployable package from the latest platform update package that is available in the Shared asset library in the **Software deployable package** section of LCS. For example, if you're upgrading to Microsoft Dynamics 365 for Operations July Release with Platform Update 10, and the **All binary updates** tile shows zero updates, use the **Dynamics 365 Unified Operations Platform Update 10** package from the Shared asset library.
-
 2. On the **Binary updates** page, select **Download binaries**, on the next page, select **Download**.
 3. After the package is downloaded, extract the contents, and then go to the following directory to find the appropriate data upgrade deployable package file: ..\\CustomDeployablePackage
 
