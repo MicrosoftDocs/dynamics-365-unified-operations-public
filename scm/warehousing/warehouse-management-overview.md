@@ -32,28 +32,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The Warehouse management module for Dynamics 365 for Finance and Operations, Enterprise edition lets you manage warehouse processes in manufacturing, distribution, and retail companies. This module has a wide range of features to support the warehouse facility at an optimal level, at any time. Warehouse management is fully integrated with other business processes in Finance and Operations such as transportation, manufacturing, quality control, purchase, transfer, sales, and returns.
 
-## Warehouse management processes in Finance and Operations
-- Integrated support for source documents for sales orders, returns, transfer orders, production orders, and kanban  
-- Advanced, flexible, inbound and outbound material workflow support based on queries
-- Full integration with the Manufacturing and the Transportation offerings
-- Full control of location stocking limits and location volumetrics
-- Inventory properties controlled by inventory status
-- Full batch and serial item support
-- Various item receiving capabilities
-- Multiple picking strategies
-- Out-of-the-box native app support for the next generation of barcode scanners
-- Pallet/container types for warehouse processes
-- Advanced counting capabilities
-- Label printing and label routing with Zebra ZPL support
-- Business intelligence integration into power BI
-- Manual and automatic movement of inventory
-- Fully integrated quality control (QMS)
-- Full traceability of workers' material handling
-- Outbound wave processing
-- Manual packing and automatic containerization support
-- Cluster picking
-- Simple cross docking
-
 ## Get started
 To start working with Warehouse management, you need to complete the setup of the general warehouse parameters to support the business processes of you company.
 
@@ -61,15 +39,33 @@ To start working with Warehouse management, you need to complete the setup of th
 
 You must configure components for inbound and outbound warehouse process workflows according to business requirements. The most important components that you must configure are wave templates, work templates, work pools, and location directives.
 
-[Warehouse configuration](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration)
+- [Warehouse configuration](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration)
+- [Control warehouse work by using work templates and location directives](/dynamics365/unified-operations/supply-chain/warehousing/control-warehouse-location-directives)
+- [Set up mobile devices for warehouse work](/dynamics365/unified-operations/supply-chain/warehousing/configure-mobile-devices-warehouse)
+- [Set up a location directive for purchase order put-away](/dynamics365/unified-operations/supply-chain/transportation/set-up-location-directive-purchase-order-put-away)
+- [Set up a work template for purchase orders](/dynamics365/unified-operations/supply-chain/warehousing/set-up-work-template-purchase-orders)
 
-[Control warehouse work by using work templates and location directives](/dynamics365/unified-operations/supply-chain/warehousing/control-warehouse-location-directives)
-
-[Set up mobile devices for warehouse work](/dynamics365/unified-operations/supply-chain/warehousing/configure-mobile-devices-warehouse)
-
-[Set up a location directive for purchase order put-away](/dynamics365/unified-operations/supply-chain/transportation/set-up-location-directive-purchase-order-put-away)
-
-[Set up a work template for purchase orders](/dynamics365/unified-operations/supply-chain/warehousing/set-up-work-template-purchase-orders)
+## Warehouse management processes
+- Integrated support for source documents for sales orders, returns, transfer orders, production orders, and kanban  
+- Flexible, inbound and outbound material workflow support based on queries
+- Full integration with the Manufacturing and Transportation offerings
+- Full control of location stocking limits and location volumetrics
+- Inventory properties controlled by inventory status
+- Full batch and serial item support
+- Various item receiving capabilities
+- Multiple picking strategies
+- Out-of-the-box support for the next generation of barcode scanners
+- Pallet/container types for warehouse processes
+- Advanced counting capabilities
+- Label printing and label routing with Zebra ZPL support
+- Business intelligence integration into Power BI
+- Manual and automatic movement of inventory
+- Fully-integrated quality control (QMS)
+- Full traceability of workers' material handling
+- Outbound wave processing
+- Manual packing and automatic containerization support
+- Cluster picking
+- Simple cross docking
 
 ## Additional resources
 ### What's new and in development
