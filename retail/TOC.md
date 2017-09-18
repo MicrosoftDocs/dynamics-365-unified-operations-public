@@ -1362,7 +1362,7 @@
 #### [Set up shipping carriers](/dynamics365/unified-operations/supply-chain/transportation/tasks/set-up-shipping-carriers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up transportation constraints for an item](/dynamics365/unified-operations/supply-chain/transportation/tasks/set-up-transportation-constraints-item?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### Warehouse management
+### [Warehouse management](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-management-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Warehouse configuration](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
 ##### [Control work by using work templates and location directives](/dynamics365/unified-operations/supply-chain/warehousing/control-warehouse-location-directives?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Unit of measure and stocking policies](/dynamics365/unified-operations/supply-chain/warehousing/unit-measure-stocking-policies?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
