@@ -2,7 +2,7 @@
 # required metadata
 
 title: Introduction to Dynamics 365 for Finance and Operations
-description: Documentation for Dynamics 365 for Finance and Operations, Enterprise edition. 
+description: Documentation for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: margoc
 manager: AnnBe
 ms.date: 09/18/2017
@@ -30,10 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Introduction to Dynamics 365 for Finance and Operations
+# Introduction to Microsoft Dynamics 365 for Finance and Operations
 [!include[banner](includes/banner.md)]
 
-Learn how to make Dynamics 365 for Finance and Operations work for your business, using the resources below to find great content for end users, developers, and IT professionals. This content is connected to documentation for the related products Microsoft Dynamics 365 for Retail and Microsoft Dynamics 365 for Talent. 
+Learn how to make Microsoft Dynamics 365 for Finance and Operations, Enterprise edition work for your business, using the resources below to find great content for end users, developers, and IT professionals. 
+
+Much of this content also applies to the related products: Microsoft Dynamics 365 for Retail and Microsoft Dynamics 365 for Talent. 
 
 <table>
 <colgroup>
