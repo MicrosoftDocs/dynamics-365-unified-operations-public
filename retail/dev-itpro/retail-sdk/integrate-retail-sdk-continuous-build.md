@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Integrate the Retail SDK with the continuous build system (VSTS)  TEST
+# Integrate the Retail SDK with the continuous build system (VSTS)
 
 [!include[banner](../../includes/banner.md)]
 
