@@ -3,7 +3,7 @@
 
 title: Statistical dimension members and statistical measure provider templates
 description: This topic provides information about statistical dimension members and statistical measure provider templates. Statistical dimension members can be used as an allocation base in policies such as cost distribution and cost allocation. They can also be used to report non-monetary cost consumption.
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article

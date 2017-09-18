@@ -3,7 +3,7 @@
 
 title: Define access rights for cost object controllers
 description: This topic provides information about access rights for cost object controllers. 
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/24/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-## Access rights of a cost object controller
+# Access rights of a cost object controller
 
 [!include[banner](../includes/banner.md)]
 
