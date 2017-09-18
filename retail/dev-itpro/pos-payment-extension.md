@@ -46,11 +46,11 @@ Below are the request handlers you can override from the POS side to customize t
 - PaymentTerminalRefundPaymentRequestHandler
 - PaymentTerminalVoidPaymentRequestHandler
 
-The POS runtime checks the extension manifest to see if there are any extensions for these request handlers. If there are extensions, then the runtime loads the extended requests and executes the overridden requests. In the extension project, you can override these requests and add your own implementation to call the custom payment providers and update the response based on status returned by your providers. When you override a request, you are overriding only the core logic. Calling the methods in Hardware station and process the response per your own logic to show some custom messages or calling the Hardware station again by passing some additional information or sending some intermediate response back to Hardware station like voice authorization code, customer ID validation status etc.). After all your custom logic is done send the updated response you received from Hardware station (Payment device/connector) to POS, you no need to worry about how we add/void/decline the payment line and conclude the transaction based on the response, all the standard workflow is taken care by the POS.
+The POS runtime checks the extension manifest to see if there are any extensions for these request handlers. If there are extensions, then the runtime loads the extended requests and executes the overridden requests. In the extension project, you can override these requests and add your own implementation to call the custom payment providers and update the response based on status returned by your providers. When you override a request, you are overriding only the core logic. After all your custom logic has run, you send the updated response you received from Hardware station (Payment device/connector) to POS. All the standard workflow is taken care by the POS, so that you do not need to worry about how we add/void/decline the payment line and conclude the transaction based on the response.
 
 ## PaymentTerminalAuthorizePaymentRequestHandler
 
-Authorize request is core payment request from POS which initiates and authorize the card payment request, you can override this request if you want to change anything in the authorize workflow. To override the request, you need to extend the PaymentTerminalAuthorizePaymentRequestHandlerin POS:
+**PaymentTerminalAuthorizePaymentRequestHandler** is the core payment request from POS which initiates and authorizes a card payment request, you can override this request if you want to change the authorize workflow. To override the request, you need to extend the **PaymentTerminalAuthorizePaymentRequestHandlerin** POS:
 
 ```typescript
 /**
@@ -109,7 +109,7 @@ export default class PaymentTerminalAuthorizePaymentRequestHandlerExt extends Pa
 
 ```
 
-## PaymentHandlerHelper.ts
+You need to make these changes in PaymentHandlerHelper.ts:
 
 ```typescript
 /**
@@ -190,7 +190,7 @@ export class PaymentHandlerHelper {
 
 ```
 
-After implementing the request logic you need to update the manifest.json with the extension information so that POS knows to load the extension:
+After implementing the request logic you need to update manifest.json with the extension information so that POS knows to load the extension:
 
 ```typescript
 {
@@ -211,13 +211,11 @@ After implementing the request logic you need to update the manifest.json with t
 }
 ```
 
-The full E2E sample with how to pass extension properties is available in Retail SDK app update 3: RetailSDK\Code\POS\Extensions\ PaymentSample.
+The full sample with how to pass extension properties is available in Retail SDK app update 3 in the RetailSDK\Code\POS\Extensions\ PaymentSample folder. If you check in the above sample we have only overridden the calling part and not the core logic on how to complete the payment or add payment line. The POS workflow manages that.
 
-<B>Note:</B> If you check in the above sample we just overridden the calling part and not the core logic on how to complete the payment or add payment line, it’s all taken care by the core POS workflow.
+## PaymentTerminalCapturePaymentRequestHandler
 
-<B>PaymentTerminalCapturePaymentRequestHandler:</B>
-
-Capture request is another payment request from POS which initiates and capture the card payment request, you can override this request if you want to change anything in the capture workflow. To override the request, you need to extend the PaymentTerminalCapturePaymentRequestHandler in POS:
+**PaymentTerminalCapturePaymentRequestHandler** is another payment request from POS which initiates and capture the card payment request. Override this request if you want to change the capture workflow. To override the request, you need to extend the **PaymentTerminalCapturePaymentRequestHandler** in POS:
 
 ```typescript
 /**
@@ -271,7 +269,7 @@ export default class PaymentTerminalCapturePaymentRequestHandlerExt extends Paym
 }
 ```
 
-After implementing the request logic you need to update the manifest.json with the extension information so that POS knows to load the extension, whichever request you override you need to specify that in the manifest. If you didn’t override any of our standard request then you no need to specify it in the manifest:
+After implementing the request logic you need to update the manifest.json with the extension information so that POS knows to load the extension. Any requests that you override are specified in the manifest. If you didn’t override any of the standard requests then you do not need to specify anything in the manifest. The example of the manifest shows two overriden requests.
 
 ```typescript
 {
