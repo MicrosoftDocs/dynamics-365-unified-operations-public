@@ -87,13 +87,14 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="../dev-itpro/analytics/financial-reporting-intro">Financial reporting</a></p>
 <p><a href="../dev-itpro/analytics/general-electronic-reporting">Regulatory reporting</a></p>
 
-<h3><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page">Mobile platform</a></h3>
+
 
 <h3><a href="../dev-itpro/dev-tools/developer-home-page">Development</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page">Extensibility</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities">Data management and integration</a></p>
 <p><a href="../dev-itpro/office-integration/office-integration">Office integration</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page">Continuous delivery</a></p>
+<p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page">Mobile platform</a></p>
 <p><a href="../dev-itpro/get-started/demo-data">Demo data</a></p>
 
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page">Administration</h3>
