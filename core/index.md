@@ -2,10 +2,10 @@
 # required metadata
 
 title: Introduction to Dynamics 365 for Finance and Operations
-description: Microsoft Dynamics 365 for Finance and Operations is Microsoft’s business application for enterprises. This page helps you learn and get started using the product. 
+description: Documentation for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: margoc
 manager: AnnBe
-ms.date: 07/10/2017
+ms.date: 09/18/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Introduction to Dynamics 365 for Finance and Operations
+# Introduction to Microsoft Dynamics 365 for Finance and Operations
 [!include[banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations is Microsoft’s business application for enterprises. It enables people to quickly make smarter decisions through an intelligent user interface that provides access to real-time insights and data. It enables businesses to transform and innovate by delivering proven business logic that allows them to redesign their business processes faster. It gives businesses the flexibility to grow at their own pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
+Learn how to make Microsoft Dynamics 365 for Finance and Operations, Enterprise edition work for your business, using the resources below to find great content for end users, developers, and IT professionals. 
 
-This documentation can help you learn how to make Dynamics 365 for Finance and Operations work for your business. It is connected to documentation for the related products: Dynamics 365 for Retail, and Dynamics 365 for Talent. 
+Much of this content also applies to the related products: Microsoft Dynamics 365 for Retail and Microsoft Dynamics 365 for Talent. 
 
 <table>
 <colgroup>
@@ -49,10 +49,8 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 <h3><a href="../fin-and-ops/get-started/before-you-buy">Before you buy</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription">Sign up for a preview subscription</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type">Choose a deployment option</a></p>
-<p>Buy Finance and Operations</p>
- <ul style="list-style-type:none">
   <p><a href="../fin-and-ops/get-started/fasttrack-dynamics-365-overview">FastTrack for Dynamics 365</a></p>
-  <p><a href="../dev-itpro/get-started/purchase-on-premises">Buy Finance and Operations (on-premises)</a></p></ul>
+  <p><a href="../dev-itpro/get-started/purchase-on-premises">Buy Finance and Operations (on-premises)</a></p>
 
 <h3><a href="../financials/index">Financials</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable">Accounts payable</a></p>
@@ -74,17 +72,13 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 <h3><a href="../supply-chain/index">Supply chain management</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets">Cost management</a></p>
 <p><a href="../supply-chain/inventory/inventory-locations">Inventory management</a></p>
-<p>Logistics</p>
-<ul style="list-style-type:none">
-<p><a href="../supply-chain/transportation/transportation-management-overview">Transportation management</a></p>
-<p><a href="../supply-chain/warehousing/warehouse-configuration">Warehouse management</a></p></ul>
-<p><a href="../supply-chain/master-planning/master-plans">Planning</a></p>
+<p><a href="../supply-chain/transportation/transportation-management-overview">Logistics - Transportation management</a></p>
+<p><a href="../supply-chain/warehousing/warehouse-configuration">Logistics - Warehouse management</a></p>
+<p><a href="../supply-chain/procurement/procurement-sourcing-overview">Order management - Procurement and sourcing</a></p>
+<p><a href="../supply-chain/sales-marketing/overview-sales-marketing">Order management - Sales and marketing</a></p><p><a href="../supply-chain/master-planning/master-plans">Planning</a></p>
 <p><a href="../supply-chain/pim/product-information">Product information management</a></p>
 <p><a href="../supply-chain/production-control/create-production-orders">Production control</a></p>
-<p>Order management</p>
-  <ul style="list-style-type:none">
-  <p><a href="../supply-chain/procurement/procurement-sourcing-overview">Procurement and sourcing</a></p>
-  <p><a href="../supply-chain/sales-marketing/overview-sales-marketing">Sales and marketing</a></p></ul>
+
 </td>
 <td>
 <h3><a href="../dev-itpro/analytics/information-access-reporting">Intelligence</a></h3>
@@ -95,22 +89,20 @@ This documentation can help you learn how to make Dynamics 365 for Finance and O
 
 <h3><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page">Mobile platform</a></h3>
 
-<h3>Developer functionality</h3>
-<p><a href="../dev-itpro/dev-tools/developer-home-page">Developer home page</a></p>
+<h3><a href="../dev-itpro/dev-tools/developer-home-page">Development</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page">Extensibility</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities">Data management and integration</a></p>
 <p><a href="../dev-itpro/office-integration/office-integration">Office integration</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page">Continuous delivery</a></p>
 <p><a href="../dev-itpro/get-started/demo-data">Demo data</a></p>
 
-<h3>Administrator functionality</h3>
+<h3><a href="../dev-itpro/sysadmin/system-administration-home-page">Administration</h3>
 <p><a href="../fin-and-ops/get-started/onboarding-home">Onboarding your organization</a></p>
 <p><a href="../dev-itpro/deployment/deploy-demo-environment">Deployment and servicing</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page">Upgrade</a></p>
 <p><a href="../dev-itpro/data-entities/data-management-integration-data-entity">Data management</a></p>
 <p><a href="../dev-itpro/lifecycle-services/lcs">Lifecycle Services</a></p>
 <p><a href="../fin-and-ops/organization-administration/organization-administration-home-page">Organization administration</a></p>
-<p><a href="../dev-itpro/sysadmin/system-administration-home-page">System administration</a></p>
 </td>
 <td>
 <h3>Related products</h3>
