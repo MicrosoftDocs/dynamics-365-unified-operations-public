@@ -474,7 +474,7 @@
 ##### [Split a fixed asset](/dynamics365/unified-operations/financials/fixed-assets/tasks/split-fixed-asset?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Transfer a fixed asset](/dynamics365/unified-operations/financials/fixed-assets/tasks/transfer-fixed-asset?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### Expense management
+### [Expense management](/dynamics365/unified-operations/financials/expense-management/expense-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Plan expense management](/dynamics365/unified-operations/financials/expense-management/plan-expense-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Expense management parameters](/dynamics365/unified-operations/financials/expense-management/Expense-Management-Parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Expense management mobile workspace](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
