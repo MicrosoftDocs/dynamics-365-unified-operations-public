@@ -3,7 +3,7 @@
 
 title: Warehouse configuration
 description: This article explains how to configure a warehouse. It includes information about how to enable a warehouse layout and warehouse processes.
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfil
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: bis
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 11554
