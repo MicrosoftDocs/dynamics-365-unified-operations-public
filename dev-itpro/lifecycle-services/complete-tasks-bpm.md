@@ -1,7 +1,6 @@
 ---
-
 title: Complete tasks in BPM
-description: This topic provides information about additional tasks you can complete in BPM including publishing, exporting, and distributing.
+description: This topic provides information about additional tasks that you can complete in Business process modeler (BPM). For example, you can publish a BPM library, export a methodology, and distribute a BPM library.
 author: kfend
 manager: AnnBe
 ms.date: 09/17/2017
@@ -29,47 +28,42 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Complete tasks in BPM
+# Complete tasks in Business process modeler
 
 [!include[banner](../includes/banner.md)]
 
 ## Upload a task recording
 
-1.  In your LCS project, on the **Business process libraries** page, select a library where you will upload the task recording.
+1. In Microsoft Dynamics Lifecycle Services (LCS), in your project, on the **Business process libraries** page, select the library to upload the task recording to.
 
-![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/choose%20library.PNG "image")
+    ![Libraries on the Business process libraries page](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/choose%20library.PNG "Libraries on the Business process libraries page")
 
-2.  Select the process step for the upload. 
+2. Select the process to upload the task recording to. 
 
-![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/select%20upload.PNG "image")
+    ![Selecting a process](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/select%20upload.PNG "Selecting a process")
 
-3.  Click **Upload**, click **Browse** to locate the file, and then click **Upload**.
+3. In the right pane, select **Upload**. Select **Browse** to find and select the file to upload, and then select **Upload**.
 
-![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/upload.PNG "image")
+    ![Upload AXTR dialog box](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/upload.PNG "Upload AXTR dialog box")
 
-## Export Methodology to Word
+## Export a methodology to Word
 
-1. In your LCS project, on the **Business process libraries** page, select a library to export.
+1. In your LCS project, on the **Business process libraries** page, select the library to export.
+2. Select the process to export, and then, in the right pane, select **Doc** to begin the download.
 
-![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/choose%20library.PNG "image")
-
-2.  Select the process to exportk and then on the **Overview** pane, click **Doc** to beging the download.
-Note: The methodology will begin from the process step selected.
-
-![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/select%20process.PNG "image")
+    > [!NOTE]
+    > The methodology will begin from the process step that you selected.
 
 ## Publish a BPM library
 
-  1. Go to the **Business process libraries** page.
-  2. Click the ellipsis (…) for the library that you want to publish, and then click **Publish**.
-  
-![publishing screen shot]( https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/PUB_DIS.png "Publishing Screen Shot")
+- In your LCS project, on the **Business process libraries** page, on the tile for the library that you want to copy, select the ellipsis button (…), and then select **Publish**.
+
+    ![Publishing a BPM library](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/PUB_DIS.png "Publishing a BPM library")
 
 ## Distribute a BPM library
 
-When you distribute a BPM library, the library will be available to all of the users that are a part of your organization, which would be all users who sign in to LCS using your organization's domain. For example, all users with a @contoso.com account.
+When you distribute a BPM library, the library will be available to all users who are a part of your organization. In other words, it will be available to all users who sign in to LCS by using your organization's domain (for example, all users who have an @contoso.com account).
 
-  1. Ask the customer to invite you to their project.
-  2. Sign in to the customer's LCS project using your organization's account.
-  3. Go to the **Business process libraries** page and copy the library from the **Corporate libraries** pane to the customer's project.
-
+1. Ask the customer to invite you to his or her project.
+2. Sign in to the customer's LCS project by using your organization's account.
+3. On the **Business process libraries** page, copy the library from the **Corporate libraries** pane to the customer's project.
