@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure base entities 
-description: Cost accounting is an independent module that requires the three base entities: currency, exchange rate, and fiscal calendar are configured correctly. 
+title: Configure base entities
+description: 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 09/24/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,21 +13,18 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CAMCostControlWorkspace, CAMParameters
-# ROBOTS: 
+# ms.search.form:  
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.search.scope:  AX 7.0.0, Operations, Core
+ms.search.scope: Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-
+# ms.custom: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: saraschi
+ms.search.validFrom: 2017-06-30 
+ms.dyn365.ops.version: July 2017 update 
 ---
 
 # Configure base entities 
