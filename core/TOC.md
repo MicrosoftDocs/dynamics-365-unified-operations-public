@@ -251,10 +251,6 @@
 ##### [Sales tax payments and rounding rules](/dynamics365/unified-operations/financials/general-ledger/round-sales-tax-payments?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Sales tax calculation methods in the Origin field](/dynamics365/unified-operations/financials/general-ledger/sales-tax-calculation-methods-origin-field?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Whole amount and interval calculation options for sales tax codes](/dynamics365/unified-operations/financials/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Expense management
-##### [Plan expense management](/dynamics365/unified-operations/financials/expense-management/plan-expense-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Expense management parameters](/dynamics365/unified-operations/financials/expense-management/Expense-Management-Parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Expense management mobile workspace](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### General ledger tasks
 ##### [Audit invoices and key data in accounts payable](/dynamics365/unified-operations/financials/general-ledger/tasks/audit-invoices-key-data-ap-system?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -477,6 +473,11 @@
 ##### [Set up value models](/dynamics365/unified-operations/financials/fixed-assets/tasks/set-up-value-models?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Split a fixed asset](/dynamics365/unified-operations/financials/fixed-assets/tasks/split-fixed-asset?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Transfer a fixed asset](/dynamics365/unified-operations/financials/fixed-assets/tasks/transfer-fixed-asset?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+### Expense management
+#### [Plan expense management](/dynamics365/unified-operations/financials/expense-management/plan-expense-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Expense management parameters](/dynamics365/unified-operations/financials/expense-management/Expense-Management-Parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Expense management mobile workspace](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [Budgeting](/dynamics365/unified-operations/financials/budgeting/budgeting-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Budget planning overview ](/dynamics365/unified-operations/financials/budgeting/budget-planning-overview-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
