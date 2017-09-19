@@ -3,7 +3,7 @@
 
 title: Manage warehouse workers
 description: This article describes how you can use Dynamics 365 for Finance and Operations to help control and monitor the work that's carried out by employees in your warehouses.
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
