@@ -26,6 +26,7 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Customize audit file configuration (Germany)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
