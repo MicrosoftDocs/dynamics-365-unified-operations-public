@@ -47,8 +47,8 @@ To learn more about these three entities, you can take [Module 2 Currency and ex
 
 ## Find related tasks
 
-[Fiscal calendars, fiscal years, and periods]
-[Financial dimensions]
-[Account structures]
-[Create account structures (Task guide)]
-[Budgeting overview]
+[Fiscal calendars, fiscal years, and periods](../budgeting/fiscal-calendars-fiscal-years-periods.md)
+[Financial dimensions](../general-ledger/financial-dimensions.md)
+[Account structures](../general-ledger/Default-dimensions.md)
+[Create account structures (Task guide)](../general-ledger/tasks/create-account-structures.md)
+[Budgeting overview](../budgeting/basic-budgeting-overview-configuration.md)
