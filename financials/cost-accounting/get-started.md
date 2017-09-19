@@ -47,8 +47,8 @@ We have multiple videos created to provide a guide for each major way. You can u
 | Video         | Description    | 
 | ------------- |-------------| 
 | <iframe width="100%"  src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe> | The **Get started with Cost acocunting** video walks you through a basic introduction of the Cost accounting module. A full transcript is provided below the video.|
-| <iframe width="100%"  src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe> | The **Cost accounting mobile workspace** video walks you through a basic introduction of cost analysis and reporting using mobile devices. |
-| <iframe width="100%" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>  | The **Use Excel for cost analysis** video walks you through a basic introduction of how to export cost entries to Excel for analysis and reporting. |
+| <iframe width="100%"  src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe> | The **Cost accounting mobile workspace** video walks you through a basic introduction of cost analysis and reporting using mobile devices. A full transcript is provided below the video.|
+| <iframe width="100%" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>  | The **Use Excel for cost analysis** video walks you through a basic introduction of how to export cost entries to Excel for analysis and reporting. A full transcript is provided below the video.|
 
 
 
