@@ -1,5 +1,4 @@
 ---
-
 title: Business process modeler
 description:
 author: kfend
@@ -33,36 +32,40 @@ ms.dyn365.ops.version: 2012
 
 [!include[banner](../includes/banner.md)]
 
-The Business Process Modeler (BPM) for Microsoft Dynamics is a tool you can use to create, view, and modify repeatable implementations based on business-process libraries and flowcharts. BPM helps you align your Dynamics 365 processes with industry-standard processes as described by the [American Productivity &amp; Quality Center (APQC)](http://www.apqc.org/). You can perform fit-gap analysis between your business needs and the default processes in Dynamics 365. Additionally, you may add new business processes and create flowcharts for processes that are not already defined in Microsoft Dynamics 365. BPM is compatible with the following applications:
+Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS) is a tool that you can use to create, view, and modify repeatable implementations that are based on business process libraries and flowcharts. BPM helps you align your business processes in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, with industry-standard processes that are described by the [American Productivity &amp; Quality Center (APQC)](http://www.apqc.org/). You can perform fit-gap analysis between your business requirements and the default processes in Finance and Operations. Additionally, you can add new business processes and create flowcharts for processes that aren't already defined in Finance and Operations.
 
-- Microsoft Visual Studio Team Foundation Server (TFS) – You can generate a consolidated list of gaps and import them manually into TFS as work items that include a reference to the process flow.
-- Microsoft Word – You can generate documentation for business processes.
-- Microsoft Visio – You can export business process maps to Visio files.
+BPM is compatible with the following programs:
+
+- **Microsoft Visual Studio Team Foundation Server (TFS)** – You can generate a consolidated list of gaps and manually import them into TFS as work items that include a reference to the process flow.
+- **Microsoft Word** – You can generate documentation for business processes.
+- **Microsoft Visio** – You can export business process maps to Visio files.
 
 ## Prerequisites
 
-To effectively use the Business process modeler, Microsoft Office 2010 and a Visual Studio Team Services project is required.
+To effectively use BPM, you must have Microsoft Office 2010 and a Microsoft Visual Studio Team Services (VSTS) project.
 
 ## Getting started
 
-Follow these steps to access the Business Process Modeler:
+Follow these steps to access BPM.
 
-1. [Go to Lifecycle Services](https://lcs.dynamics.com/).
-2. Sign in, open a project, and then click the **Business process modeler** tile. The **Business process libraries** displays three sections:
+1. Go to [LCS](https://lcs.dynamics.com/).
+2. Sign in, open a project, and then select the **Business process modeler** tile. The **Business process libraries** page has three sections:
 
-  - **My libraries** contains business processes that the user has created or added.
-  - **Corporate libraries** contains custom-created business processes that have been uploaded by someone in your organization.
-  - **Global libraries** contains cross-industry standard business processes.
+    - **My libraries** – This section contains business processes that the user has created or added.
+    - **Corporate libraries** – This section contains custom business processes that someone in your organization has uploaded.
+    - **Global libraries** – This section contains cross-industry standard business processes.
 
-3. To copy a standard business process library from the **Global libraries** section to the **My libraries** section, click the top right corner of the tile in the **Global libraries** section, and select **Copy**.
-4. After the business process library has been added to the **My libraries** section, click the tile to view the business process library.
+3. To copy a standard business process library from the **Global libraries** section to the **My libraries** section, select the upper-right corner of the tile in the **Global libraries** section, and then select **Copy**.
+4. After the business process library has been added to the **My libraries** section, select the tile to view the business process library.
 
-## Work in BPM libraries
-The following topics provide more information about working with BPM libraries:
+## Working in BPM libraries
+
+The following topics provide more information about how to work with BPM libraries:
+
 - [Create, edit, or browse a BPM library](creating-editing-browsing.md)
-- [Synchronize a BPM library with Visual Studio Team Services (VSTS)](implementation.md)
+- [Synchronize a BPM library with Visual Studio Team Services](implementation.md)
 - [Complete tasks in BPM](complete-tasks-bpm.md)
-- [Use activity diagrams](using-activity-diagrams.md)
+- [Use activity diagrams with BPM](using-activity-diagrams.md)
 
 ## See also
 
