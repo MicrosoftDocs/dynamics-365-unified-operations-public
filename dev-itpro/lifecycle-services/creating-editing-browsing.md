@@ -1,7 +1,7 @@
 ---
 
 title: Create, edit, and browse BPM libraries
-description: This topic provides information about how to create or edit a BPM library and how to browse an existing library..
+description: This topic provides information about how to create or edit a BPM library and how to browse an existing library.
 author: kfend
 manager: AnnBe
 ms.date: 09/18/2017
