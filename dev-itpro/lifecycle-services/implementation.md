@@ -1,6 +1,5 @@
 ---
-
-title: Synchronize a BPM library with Visual Studio Team Services (VSTS)
+title: Synchronize a BPM library with Visual Studio Team Services
 description:
 author: kfend
 manager: AnnBe
@@ -29,105 +28,99 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Synchronize a BPM library with Visual Studio Team Services (VSTS)
+# Synchronize a BPM library with Visual Studio Team Services
 
 [!include[banner](../includes/banner.md)]
 
-The implementation stage of a project starts by synchronizing a BPM library with your Visual Studio Team Services (VSTS) project. This enables you to review processes and associate requirements with business processes. By synchronizing, you can also track the progress of your implementation project in VSTS and associate work items like bugs, tasks, backlog items, tests, and documents with requirements and business processes.
+You start the implementation stage of a project by synchronizing a Business process modeler (BPM) library with your project in Microsoft Visual Studio Team Services (VSTS). In this way, you can review processes and associate requirements with business processes. By synchronizing a BPM library with a VSTS project, you can also track the progress of your implementation project in VSTS, and can associate various work items with requirements and business processes. These work items include bugs, tasks, backlog items, tests, and documents.
 
-Currently, VSTS does not support custom work types or synchronizing business processes with custom work types.
+Currently, VSTS doesn't support custom work item types or synchronization of business processes that have custom work item types.
 
-To learn more about VSTS, visit [www.visualstudio.com/team-services](http://www.visualstudio.com/team-services).
+To learn more about VSTS, go to [www.visualstudio.com/team-services](http://www.visualstudio.com/team-services).
 
-## LCS project settings: Set up Visual Studio Team Services
+## LCS project settings: Set up VSTS
 
-If you have already setup VSTS from LCS, you can skip this section.
+If you've already set up VSTS from Microsoft Dynamics Lifecycle Services (LCS), you can skip the procedures in this section.
 
 ### Create a personal access token
 
-To connect to a VSTS project, LCS is authenticated by using a personal access token. Use the following steps to create a personal access token in VSTS.
+To connect to a VSTS project, LCS is authenticated by using a personal access token. Follow these steps to create a personal access token in VSTS.
 
-1. Sign in to (https://www.visualstudio.com/) and locate your VSTS project.
-2. In the top right corner, hover over your name, and in the menu that appears, click **Security**.
-3. Click **Add** to create a new personal access token.
-4. Give the token a name, and then enter the amount of time that you want the token to last for.
-5. Click **Create Token**.
-6. Copy the token to your clipboard. You will not be able to find the token details after this step is completed, so be sure that you have copied the token before navigating away from this page.
+1. Go to <https://www.visualstudio.com>, sign in, and find your VSTS project.
+2. In the upper-right corner, hold the pointer over your name, and then, on the menu that appears, select **Security**.
+3. Select **Add** to create a new personal access token.
+4. Enter a name for the token, and then specify how long the token should last.
+5. Select **Create Token**.
+6. Copy the token to your clipboard.
+
+    > [!NOTE]
+    > You won't be able to find the token details again after you complete this step and move away from the page. Therefore, make sure that you've copied the token before you move away from the page.
 
 ### Configure your LCS project to connect to VSTS
 
-1. In your LCS project, go to the **Project settings** tile.
-2. Select **Visual Studio Team Services** , and then click **Setup Visual Studio Team Services**. This configuration is needed by many LCS tools, if you have already configured LCS to connect to your VSTS project, you can skip this section or click **Change** to change the existing setup.
+1. In your LCS project, select the **Project settings** tile.
+2. Select **Visual Studio Team Services**, and then select **Setup Visual Studio Team Services**. This configuration is required by many LCS tools. If you've already configured LCS to connect to your VSTS project, you can either skip this procedure or select **Change** to change the existing configuration.
+3. Enter the root URL for your VSTS account, and the personal access token that you created earlier, and then select **Continue**.
+4. Select your VSTS project.
+5. Specify the mapping between LCS/BPM items and the associated VSTS work item types.
 
-![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost22-1024x378.png "image")
+    ![Work item type mappings](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost24.png "Work item type mappings")
 
-3. Enter the root URL for your VSTS account and the access token that you created earlier, and then click **Continue**.
-
-![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost23-1024x484.png "image")
-
-4. Select your Visual Studio Team Services project.
-25 Select the work item type mappings. These are the mappings between an LCS/BPM item and the associated VSTS work item types.
-
-![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost24.png "image")
-
-3. Click **Continue,** review your changes, and then click **Save**.
-
-## BPM VSTS Synchronization
-
-After you have set up the connection between the LCS project and a VSTS project you will be able to synchronize a library with a VSTS project. When you synchronize a BPM library with a VSTS project, a VSTS work item is created for each business process line in the BPM library. In addition, the hierarchy of business processes in BPM is reflected in the hierarchy of work items in VSTS. The type of work items created in VSTS depends on your LCS project settings.
-
-This is a one-way sync, changes in LCS are reflected in VSTS but not the other way around.
-
-The following is synchronized:
-
-- Business process name
-- Business process description
-- Keywords (as tags)
-- Countries/regions (as tags)
-- Industry (as tags)
+6. Select **Continue**, review your changes, and then select **Save**.
 
 ## Synchronize a BPM library with a VSTS project
 
-Go to the **Business process libraries** page, select the ellipsis (…) of the library that you want to synchronize, and select **VSTS sync**.
+After you've set up the connection between the LCS project and a VSTS project, you can synchronize a BPM library with the VSTS project. When you synchronize a BPM library with a VSTS project, a VSTS work item is created for each business process line in the BPM library. In addition, the hierarchy of business processes in BPM is reflected in the hierarchy of work items in VSTS. The type of work items that are created in VSTS depends on the settings of your LCS project.
 
-![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost25.png "image")
+This synchronization is a one-way synchronization. Changes in LCS are reflected in VSTS, but changes in VSTS aren't reflected in LCS.
 
-You can also start VSTS sync from the toolbar of a BPM library.
+The following information is synchronized:
 
-![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost26.png "image")
+- Business process names
+- Business process descriptions
+- Keywords (as tags)
+- Countries or regions (as tags)
+- Industries (as tags)
 
-## Turn Off BPM VSTS Synchronization
+To synchronize a BPM library with a VSTS project, on the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **VSTS sync**.
 
-If you want to turn off sync, go back to the same menu.
+![Starting VSTS synchronization from the tile for a library](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost25.png "Starting VSTS synchronization from the tile for a library")
+
+You can also start VSTS synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **VSTS sync**.
+
+![Starting VSTS synchronization from the toolbar in a library](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost26.png "Starting VSTS synchronization from the toolbar in a library")
+
+## Turn off synchronization of BPM with VSTS
+
+To turn off synchronization, go back to the same menu.
 
 ## Review processes and add requirements
 
-During the requirements gathering phase of a project, use the BPM library to review business processes and tasks, and to identify requirements. In BPM, you can mark business processes as **Reviewed** to track the review process.
+During the project phase where you're gathering requirements, you can use the BPM library to review business processes and tasks, and to identify requirements. In BPM, you can mark business processes as reviewed to track the review process.
 
-To mark a process or sub process, as reviewed, select the process in BPM, and then select **Mark as reviewed** in the **Overview** pane.
+To mark a process or one of its child processes as reviewed, select the process in BPM, and then, in the right pane, on the **Overview** tab, select **Mark as reviewed**.
 
-![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost27.png "image")
+When a business process is marked as reviewed, the **Reviewed** column is updated. This column shows the following information:
 
-When a business process is marked as reviewed, the **Reviewed** column is updated.
+- A fraction indicates how many direct child processes have been reviewed.
+- An symbol indicates how completely the process and its child processes have been reviewed:
 
-The **Reviewed** column shows the following:
+   - **Green check mark** – The process and all its child processes have been fully reviewed.
+   - **Yellow circle** – The process and its child processes have been partially reviewed.
+   - **Red dash** – The process and its child processes haven't been reviewed.
 
-- A fraction indicating the number of direct child processes that have been reviewed.
-- An icon indicating whether this process and all its children are fully reviewed (green check mark), partially reviewed (yellow circle), or not reviewed (red dash).
+![Example of a Review column](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost28.png "Example of a Review column")
 
-![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost28.png "image")
+If a BPM library is synchronized with a VSTS project, and you mark a process as reviewed in BPM, its status is changed to **Active** in VSTS.
 
-If the BPM library is synchronized with a VSTS project, when you mark a process as reviewed its state changes to **Active** in VSTS.
+While you're reviewing a business process that is connected to VSTS, you can add a requirement directly to your VSTS project.
 
-While reviewing a business process that is connected to VSTS, you can add a requirement directly to your VSTs project.
+1. Select a business process.
+2. In the right pane, on the **Requirements** tab, select **Add requirement**.
+3. Enter a name, description, and type, and then select **Create**.
 
-1. Select the desired business process.
-2. Select the **Requirements** tab.
-3. Select **Add requirement**.
-4. Enter a name, description, and type, and then click **Create**.
+    ![Creating a requirement](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost29-179x300.png "Creating a requirement")
 
-![image](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost29-179x300.png "image")
+    In VSTS, a requirement work item is created that is associated with the current business process.
 
-This will create a requirement work item in VSTS associated with the current business process.
-
-On the **Requirements** tab, you can also navigate to the VSTS work items associated with the current business process by selecting the appropriate links.
+To go to the VSTS work items that are associated with the current business process, on the **Requirements** tab, select the appropriate links.
