@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 There are multiple ways to get started with Cost accounting. 
 
+## Articles 
+
 We have multiple articles written to provide a guide for each major way. You can use the following table to help in making a decision.
 
 | Article        | Description    | 
@@ -42,13 +44,20 @@ We have multiple articles written to provide a guide for each major way. You can
 | [Cost accounting terminology](terms-cost-accounting.md)   | This topic provides the definitions of the key terms that are used in the Cost accounting module.|
 | [Hands-on labs](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)| This document provides the step-by-step instructions of configuring the Cost accounting module that are necessary to make the actual cost analysis.   |
 
-We have multiple videos created to provide a guide for each major way. You can use the following table to help in making a decision.
+## Videos
 
-| Video         | Description    | 
-| ------------- |-------------| 
-| <iframe width="100%"  src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe> | The **Get started with Cost acocunting** video walks you through a basic introduction of the Cost accounting module. A full transcript is provided below the video.|
-| <iframe width="100%"  src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe> | The **Cost accounting mobile workspace** video walks you through a basic introduction of cost analysis and reporting using mobile devices. A full transcript is provided below the video.|
-| <iframe width="100%" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>  | The **Use Excel for cost analysis** video walks you through a basic introduction of how to export cost entries to Excel for analysis and reporting. A full transcript is provided below the video.|
+We have multiple videos created to help you get started.
 
+To use the Get started wizard in the Cost accounting module, watch the **Get started with Cost acocunting** video. A full transcript is provided below the video.
+
+> [!Video https://www.youtube.com/embed/1pUDtJQZ8FU]
+
+The **Cost accounting mobile workspace** video walks you through a basic introduction of cost analysis and reporting using mobile devices. A full transcript is provided below the video.
+
+> [!Video https://www.youtube.com/embed/imsuTg8rUVk]
+
+The **Use Excel for cost analysis** video walks you through a basic introduction of how to export cost entries to Excel for analysis and reporting. A full transcript is provided below the video.
+
+> [!Video https://www.youtube.com/embed/-HKHYdClvx8]
 
 
