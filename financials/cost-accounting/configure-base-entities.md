@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure base entities
-description: 
+description: Cost accounting is an independent module that requires the currency, exchange rate, and fiscal calendar entities are configured correctly.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 09/22/2017
