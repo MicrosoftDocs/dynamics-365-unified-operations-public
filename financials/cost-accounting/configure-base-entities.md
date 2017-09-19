@@ -40,7 +40,7 @@ Cost accounting is an independent module that requires the following three base 
 
 Before you use the module, make sure you have currency, exchange rate, and fiscal calendar defined for your company. 
 
-To learn more about these three entities, you can take [Module 2 Currency and exchange rate setup (eLearning class)](https://mbspartner.microsoft.com/AX/CourseModules/1215) (requires CustomerSource account).
+To learn more about these three entities, you can take [Module 2 Currency and exchange rate setup (eLearning)](https://mbspartner.microsoft.com/AX/CourseModules/1215) (requires CustomerSource account).
 
 ## Find related tasks
 
