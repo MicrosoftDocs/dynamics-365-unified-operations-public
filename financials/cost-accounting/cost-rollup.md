@@ -3,7 +3,7 @@
 
 title: Cost rollup policy and overhead calculation 
 description: This topic provides information about how to determine the correct level of secondary cost elements and create cost rollup rules that fit into organization reporting and cost traceability. 
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope:  AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
