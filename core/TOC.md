@@ -478,6 +478,13 @@
 #### [Plan expense management](/dynamics365/unified-operations/financials/expense-management/plan-expense-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Expense management parameters](/dynamics365/unified-operations/financials/expense-management/Expense-Management-Parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Expense management mobile workspace](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Set up workflows for expense management](/dynamics365/unified-operations/financials/expense-management/expense-workflows?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Expense management workflow](/dynamics365/unified-operations/financials/expense-management/expense-workflow?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Import and maintain credit card transactions](/dynamics365/unified-operations/financials/expense-management/import-credit-card?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Distributions on an expense report](/dynamics365/unified-operations/financials/expense-management/expense-report-distributions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Intercompany expenses](/dynamics365/unified-operations/financials/expense-management/intercompany-expense?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Expense policies](/dynamics365/unified-operations/financials/expense-management/travel-expense-policies?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 
 ### [Budgeting](/dynamics365/unified-operations/financials/budgeting/budgeting-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Budget planning overview ](/dynamics365/unified-operations/financials/budgeting/budget-planning-overview-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1738,7 +1745,7 @@
 ##### [Define lean manufacturing work cells](/dynamics365/unified-operations/supply-chain/production-control/tasks/define-lean-manufacturing-work-cells?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Define lean schedule groups](/dynamics365/unified-operations/supply-chain/production-control/tasks/define-lean-schedule-groups?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Lean pegging from sales orders](/dynamics365/unified-operations/supply-chain/production-control/tasks/lean-pegging-sales-orders?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Create a subcontracted work cell for lean manufacturing](/dynamics365/unified-operations//supply-chain/production-control/tasks/create-subcontracted-work-cell-lean-manufacturing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Create a subcontracted work cell for lean manufacturing](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-subcontracted-work-cell-lean-manufacturing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ##### [Define discrete manufacturing resource group](/dynamics365/unified-operations/supply-chain/production-control/tasks/define-discrete-manufacturing-resource-group?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
