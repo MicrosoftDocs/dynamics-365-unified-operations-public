@@ -251,10 +251,6 @@
 ##### [Sales tax payments and rounding rules](/dynamics365/unified-operations/financials/general-ledger/round-sales-tax-payments?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Sales tax calculation methods in the Origin field](/dynamics365/unified-operations/financials/general-ledger/sales-tax-calculation-methods-origin-field?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Whole amount and interval calculation options for sales tax codes](/dynamics365/unified-operations/financials/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Expense management
-##### [Plan expense management](/dynamics365/unified-operations/financials/expense-management/plan-expense-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Expense management parameters](/dynamics365/unified-operations/financials/expense-management/Expense-Management-Parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Expense management mobile workspace](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### General ledger tasks
 ##### [Audit invoices and key data in accounts payable](/dynamics365/unified-operations/financials/general-ledger/tasks/audit-invoices-key-data-ap-system?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -478,6 +474,18 @@
 ##### [Split a fixed asset](/dynamics365/unified-operations/financials/fixed-assets/tasks/split-fixed-asset?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Transfer a fixed asset](/dynamics365/unified-operations/financials/fixed-assets/tasks/transfer-fixed-asset?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
+### [Expense management](/dynamics365/unified-operations/financials/expense-management/expense-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Plan expense management](/dynamics365/unified-operations/financials/expense-management/plan-expense-management?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Expense management parameters](/dynamics365/unified-operations/financials/expense-management/Expense-Management-Parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Expense management mobile workspace](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Set up workflows for expense management](/dynamics365/unified-operations/financials/expense-management/expense-workflows?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Expense management workflow](/dynamics365/unified-operations/financials/expense-management/expense-workflow?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Import and maintain credit card transactions](/dynamics365/unified-operations/financials/expense-management/import-credit-card?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Distributions on an expense report](/dynamics365/unified-operations/financials/expense-management/expense-report-distributions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Intercompany expenses](/dynamics365/unified-operations/financials/expense-management/intercompany-expense?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Expense policies](/dynamics365/unified-operations/financials/expense-management/travel-expense-policies?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+
 ### [Budgeting](/dynamics365/unified-operations/financials/budgeting/budgeting-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Budget planning overview ](/dynamics365/unified-operations/financials/budgeting/budget-planning-overview-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Budget control overview ](/dynamics365/unified-operations/financials/budgeting/budget-control-overview-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -499,19 +507,20 @@
 #### [Report designer](/dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [Cost accounting](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Get started
+#### [Get started](/dynamics365/unified-operations/financials/cost-accounting/get-started?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cost accounting terminology](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Hands-on labs (White paper)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
 ##### [Get started with Cost accounting (Video)](https://youtu.be/1pUDtJQZ8FU)
 ##### [Cost control mobile workspace (Video)](https://youtu.be/imsuTg8rUVk)
 ##### [Use Excel for cost analysis (Video)](https://youtu.be/-HKHYdClvx8)
-##### [Hands-on labs (White paper)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
-#### Configure source system
-##### [Import currency exchange rates](/dynamics365/unified-operations/financials/general-ledger/import-currency-exchange-rates?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Configure source system](/dynamics365/unified-operations/financials/cost-accounting/configure-base-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Currency (eLearning)](https://mbspartner.microsoft.com/AX/CourseModules/1215) 
+##### [Exchange rates (eLearning)](https://mbspartner.microsoft.com/AX/CourseModules/1215) 
 ##### [Fiscal calendars, fiscal years, and periods](/dynamics365/unified-operations/financials/budgeting/fiscal-calendars-fiscal-years-periods?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Account structures](/dynamics365/unified-operations/financials/general-ledger/Default-dimensions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Create account structures (Task guide)](/dynamics365/unified-operations/financials/general-ledger/tasks/create-account-structures?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Financial dimensions](/dynamics365/unified-operations/financials/general-ledger/financial-dimensions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Budgeting overview](/dynamics365/unified-operations/financials/budgeting/budgeting-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Account structures](/dynamics365/unified-operations/financials/general-ledger/Default-dimensions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Create account structures (Task guide)](/dynamics365/unified-operations/financials/general-ledger/tasks/create-account-structures?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Budgeting overview](/dynamics365/unified-operations/financials/budgeting/basic-budgeting-overview-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Create dimensions and import dimension members
 ##### [Cost element dimensions](/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create cost elements (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-elements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)

@@ -3,9 +3,9 @@
 
 title: Planned maintenance window FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft planned maintenance windows.
-author: kfend
+author: robadawy
 manager: AnnBe
-ms.date: 05/09/2017
+ms.date: 09/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
-### What is a planned maintenance window?
+# What is a planned maintenance window?
 A planned maintenance window is the timeframe that Microsoft has scheduled to apply critical updates to your cloud service.
 
 ### How does a planned maintenance window work?
