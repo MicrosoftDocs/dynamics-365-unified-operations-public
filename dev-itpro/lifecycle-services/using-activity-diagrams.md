@@ -1,7 +1,6 @@
 ---
-
 title: Use activity diagrams with BPM
-description: This topic provides information about using activity diagrams in a BPM library.
+description: This topic provides information about how you can use activity diagrams in a BPM library.
 author: kfend
 manager: AnnBe
 ms.date: 09/17/2017
@@ -34,50 +33,60 @@ ms.dyn365.ops.version: 2012
 [!include[banner](../includes/banner.md)]
 
 You can associate an activity diagram with a business process. Activity diagrams are used to describe how a business process or task is completed in a proposed software solution.
-There are 3 types of activity diagrams:
-- **Task recordings** - Business processes that are associated with Dynamics 365 for Operations task recordings include activity diagrams and process steps that are automatically generated.
-- **Microsoft Visio** - You can associate a business process with a Visio diagram by manually uploading a Visio file.
-- **User-defined** - You can manually create or edit a BPM activity diagram.
-In addition to activity diagrams, you can describe a business process using detailed process steps.
+
+There are three types of activity diagrams:
+
+- **Task recordings** – Business processes that are associated with task recordings for Microsoft Dynamics 365 for Finance Operations, Enterprise edition, include activity diagrams and process steps that are automatically generated.
+- **Microsoft Visio** – You can associate a business process with a Visio diagram by manually uploading a Visio file.
+- **User-defined** – You can manually create or edit a Business process modeler (BPM) activity diagram.
+
+In addition to activity diagrams, you can describe a business process by using detailed process steps.
 
 ## Browse activity diagrams
-The **Diagrams** column in your BPM library indicates when a particular business process is associated with an activity diagram. The number indicates the number of child processes that include diagrams and the icon next to the number indicates whether the current node or process is associated with a diagram. These indicators do not apply to Visio diagrams.
+The **Diagrams** column in your BPM library indicates whether a particular business process is associated with an activity diagram. The number in the column indicates the number of child processes that include diagrams. The symbol next to the number indicates whether the current node or process is associated with a diagram. These indicators don't apply to Visio diagrams.
 
-![image 1](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost10.png "image 1")
+![Diagrams column](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost10.png "Diagrams column")
 
-To view or edit an activity diagram, navigate to the business process, and then in the **Overview** pane, click **Diagrams**. The **Flowchart** page will open.
+To view or edit an activity diagram, select the business process, and then, in the right pane, on the **Overview** tab, select **Diagrams**. The **Flowchart** page appears.
 
-![image 2](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost15.png "image2")
+## Activity diagrams that are created from task recordings
+You can create a task recording in your Finance and Operations environment, and save it directly to Microsoft Dynamics Lifecycle Services (LCS). In this way, you can associate the task recording with a business process in a BPM library. For more information, see [Connecting the help system](./get-started/help-connect.md) and [Create documentation or training using task recordings](./user-interface/task-recorder-training-docs.md).
 
-## Activity diagrams created from Task recordings
-You can create a Task recording in your Dynamics 365 for Operations environment and save it directly to LCS. This will associate a Task recording with a business process in a BPM library. For more information, see [Connecting the help system](./get-started/help-connect.md) and [Create documentation or training using task recordings](./user-interface/task-recorder-training-docs.md).
-The task recorder tool in Dynamics 365 for Operations allows you to create a distributable recording file (_.axtr_). You can associate a business process in BPM with a Task recording by manually uploading a recording (_.axtr_) file. In BPM, select the desired business process then select **Upload**.
+The Task recorder tool in Finance and Operations lets you create a distributable recording file. Recording files have the .axtr file name extension. You can associate a business process in BPM with a task recording by manually uploading the recording file. 
 
-![image 3](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost16.png "image 3")
+To upload a recording file, select the business process, and then, in the right pane, on the **Overview** tab, select **Upload**.
 
-BPM automatically generates an activity diagram and detailed process steps for all recordings that are created in Dynamics 365 for Operations.
+BPM automatically generates an activity diagram and detailed process steps for all task recordings that are created in Finance and Operations. The following illustration shows an example.
 
-![image 4](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost17-1024x483.png "image 4")
+![Example of an activity diagram and process steps for a task recording](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost17-1024x483.png "Example of an activity diagram and process steps for a task recording")
 
 ## Edit activity diagrams
-To edit an activity diagram, right-click on a blank area of the flowchart and in the bottom toolbar, click **Edit**. For more information about BPM flowcharts, see [Flowcharts in Business process modeler](flowcharts-business-process-modeler.md).
+To edit an activity diagram, right-click on a blank area of the flowchart, and then, on the bottom toolbar, select **Edit**. For more information about BPM flowcharts, see [Flowcharts in Business process modeler](flowcharts-business-process-modeler.md).
 
-## Microsoft Visio files
-You can associate a business process with a Visio diagram. Typically, this is used for high-level processes that can't be represented with a Task recording. BPM supports .vsd and .vsdx files, .vsdm files (macros) are not supported. When .vsd files have macros, BPM disables the execution of the macro.
-1. To view or upload a Visio file, navigate to the business process, and then select **Diagrams** in the **Overview** pane. This will open the flowchart page.
+## Visio files
+You can associate a business process with a Visio diagram. Typically, this functionality is used for high-level processes that can't be represented by a task recording. BPM supports .vsd and .vsdx files. However, it doesn't support .vsdm files (macro-enabled Visio drawing files). If a .vsd file contain macros, BPM disables the execution of the macros.
 
-![image 5](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost18.png "image 5")
+To view or upload a Visio file, follow these steps.
 
-2. Select the **Visio** tab. For more information, see the section, **Unconnected flowcharts** in the topic, [Flowcharts in Business process modeler](flowcharts-business-process-modeler.md).
+1. Select the business process, and then, in the right pane, on the **Overview** tab, select **Diagrams**.
+2. On the **Flowchart** page, select the **Visio** tab. For more information, see the "Unconnected flowcharts" section in [Flowcharts in Business process modeler](flowcharts-business-process-modeler.md).
+
 ## Edit process steps
-1. To edit process steps, right-click on a blank area of the flowchart, and in the bottom toolbar, click **Edit**.
-2. In the **Process steps** text box, enter the process steps, one step per line.
-3. To indent steps, which is the same as defining sub steps, use the **=** (equal sign). You can have more than one **=** sign to indicate a deeper level of indentation.
-For example, to render the following process steps:
-![image 6](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost19.png  "image 6")
-4. Right-click the flowchart, and then select **Edit**.
-5. In the **Process steps** text box, enter the information shown in the following graphic.
+1. To edit process steps, right-click on a blank area of the flowchart, and then, on the bottom toolbar, select **Edit**.
+2. In the **Process steps** field, enter the process steps. Enter one step per line.
+3. To indent a step, add an equal sign (=). By indenting steps, you define them as substeps. You can add more than one equal sign to indicate a deeper level of indentation and therefore a deeper level in the hierarchy.
 
-![image 7](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost20.png "image 7")
+    For example, you want to create the following process steps.
 
-Note: The **=** sign indicates the hierarchy level of a sub step.
+    ![Example of a process that has steps and substeps](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost19.png "Example of a process that has steps and substeps")
+
+    In this case, enter the following text in the **Process steps** field.
+
+    ```
+    Step 1
+    =SubStep 1.1
+    =SubStep 1.2
+    ==SubSub Step 1.2.1
+    Step 2
+    =SubStep 2.1
+    ```
