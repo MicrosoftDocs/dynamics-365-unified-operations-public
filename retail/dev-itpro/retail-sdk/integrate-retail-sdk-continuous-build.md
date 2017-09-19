@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Integrate the Retail SDK with the Dynamics 365 Unified Operations platform build definition and VSTS
-description: The LCS-integrated experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Finance and Operations and Retail components. This article outlines the manual steps for merging both build systems. 
-author: MargoC
+title: Integrate the Retail SDK with the Dynamics 365 Unified Operations platform build definition using Visual Studio Team Services
+description: This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, Enterprise edition, and Dynamics 365 for Retail using Visual Studio Team Services.  
+author: andreash1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,11 +20,9 @@ audience: Developer
 ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
 # ms.tgt_pltfrm: 
-ms.custom: 80861
-ms.assetid: bb00aa60-6058-4f2e-855e-40d6be4dcecc
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: margoc
+ms.author: andreash
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
@@ -34,10 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include[banner](../../includes/banner.md)]
 
-The LCS-integrated experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Finance and Operations and Retail components. This article outlines the manual steps for merging both build systems. 
+This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, Enterprise edition, and Dynamics 365 for Retail. The Lifecycle Services (LCS)-integrated build experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Finance and Operations and Retail components. This article outlines the manual steps for merging both build systems using Visual Studio Team Services. 
 
-Enable the build system
------------------------
+## Enable the build system
 
 To get started, you must follow all the steps to get a full continuous build system up and running. For information, see [Developer topology deployment with continuous build and test automation](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). After deployment, you create the build definition and build steps. Build at least one time, so that you become familiar with it and are sure that you can build without errors. Then move to the next step.
 
@@ -67,7 +64,3 @@ You must complete this task only if you must add built Retail binaries to the Re
 1.  Use a normal AXReference in your Retail project.
 2.  Add the corresponding AXReference folder and the XML file inside it to VSTS.
 3.  Update the Copy-RetailBinaries.ps1 file with the appropriate file commands to get the binary file from the Retail SDK to the Retail bin folder. The Microsoft Windows PowerShell file includes a sample that copies the PricingEngine.dll file into the ApplicationSuite bin folder. Depending on the modules that you're building, the files and folders must be changed so that they are in a different location.
-
-
-
-
