@@ -1,4 +1,4 @@
----
+--
 # required metadata
 
 title: Cost rollup policy and overhead calculation 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-## Cost rollup policy and overhead calculation 
+# Cost rollup policy and overhead calculation 
 
 [!include[banner](../includes/banner.md)]
 
