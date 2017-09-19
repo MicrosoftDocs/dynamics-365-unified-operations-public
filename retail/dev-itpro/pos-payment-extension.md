@@ -31,14 +31,14 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # POS payment extension
 
-With the extension points in POS to support payment extensibility, you can implement the core payment logic in the payment device or payment connector using the Hardware station APIs. Some scenarios where you might want to do this are:
+With the extension points in point of sale (POS) to support payment extensibility, you can implement the core payment logic in the payment device or payment connector using the Hardware station APIs. Some scenarios where you might want to do this are:
 - You need to pass additional information such as extension properties to your connector/device.
-- You want to show some custom messages in between the payment flow.
-- You need some input from cashier to complete the flow and send some intermediate response back to the payment device/connector. For example, you might need the Customer ID validation status or voice authorization. 
-- You want to show some processing dialogs like waiting for customer pin input. 
-You can override POS payment request to implement these scenarios.
+- You want to show custom messages in between the payment flow.
+- You need input from the cashier to complete the flow and send an intermediate response back to the payment device/connector. For example, you might need the customer ID validation status or voice authorization. 
+- You want to show processing dialog messages, such as waiting for the customer pin input. 
+You can override POS payment requests to implement these scenarios.
 
-Below are the request handlers you can override from the POS side to customize the payment flow:
+You can override the following request handlers from the POS side to customize the payment flow:
 
 - PaymentTerminalAuthorizePaymentRequestHandler
 - PaymentTerminalCapturePaymentRequestHandler
@@ -46,20 +46,20 @@ Below are the request handlers you can override from the POS side to customize t
 - PaymentTerminalRefundPaymentRequestHandler
 - PaymentTerminalVoidPaymentRequestHandler
 
-The POS runtime checks the extension manifest to see if there are any extensions for these request handlers. If there are extensions, then the runtime loads the extended requests and executes the overridden requests. In the extension project, you can override these requests and add your own implementation to call the custom payment providers and update the response based on status returned by your providers. When you override a request, you are overriding only the core logic. After all your custom logic has run, you send the updated response you received from Hardware station (Payment device/connector) to POS. All the standard workflow is taken care by the POS, so that you do not need to worry about how we add/void/decline the payment line and conclude the transaction based on the response.
+The POS runtime checks the extension manifest to see if there are any extensions for these request handlers. If there are extensions, then the runtime loads the extended requests and executes the overridden requests. In the extension project, you can override these requests, add your own implementation to call the custom payment providers, and then update the response based on the status that is returned by your providers. When you override a request, you are overriding only the core logic. After all your custom logic has run, you send the updated response that you received from Hardware station (payment device/connector) to POS. All the standard workflow is handled by the POS, so that you do not need to worry about how to add, void, or decline the payment line and conclude the transaction based on the response.
 
 ## PaymentTerminalAuthorizePaymentRequestHandler
 
-**PaymentTerminalAuthorizePaymentRequestHandler**, the authorization request, is the core payment request from POS which initiates and authorizes a card payment request, you can override this request if you want to change the authorize workflow. To override the request, you need to extend the **PaymentTerminalAuthorizePaymentRequestHandlerin** POS:
+**PaymentTerminalAuthorizePaymentRequestHandler**, the authorization request, is the core payment request from POS that initiates and authorizes a card payment request. You can override this request if you want to change the authorize workflow. To override the request, you need to extend the **PaymentTerminalAuthorizePaymentRequestHandler** in POS.
 
 ```typescript
 /**
 * SAMPLE CODE NOTICE
 * 
-* THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+* THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
 * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
 * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-* NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT
+* NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT
 * THAT ALLOWS YOU TO DO SO.
 */
 
@@ -109,16 +109,16 @@ export default class PaymentTerminalAuthorizePaymentRequestHandlerExt extends Pa
 
 ```
 
-You need to make these changes in PaymentHandlerHelper.ts:
+You need to make these changes in PaymentHandlerHelper.ts.
 
 ```typescript
 /**
  * SAMPLE CODE NOTICE
  * 
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+ * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
  * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS
  * OF MERCHANTABILITY. THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
- * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT
+ * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT
  * THAT ALLOWS YOU TO DO SO.
  */
 
@@ -190,7 +190,7 @@ export class PaymentHandlerHelper {
 
 ```
 
-After implementing the request logic you need to update manifest.json with the extension information so that POS knows to load the extension:
+After implementing the request logic, you need to update manifest.json with the extension information so that POS loads the extension.
 
 ```typescript
 {
@@ -211,20 +211,20 @@ After implementing the request logic you need to update manifest.json with the e
 }
 ```
 
-The full sample with how to pass extension properties is available in Retail SDK app update 3 in the RetailSDK\Code\POS\Extensions\ PaymentSample folder. If you check in the above sample we have only overridden the calling part and not the core logic on how to complete the payment or add payment line. The POS workflow manages that.
+The full code sample, including how to pass extension properties, is available in Retail SDK app update 3 in the RetailSDK\Code\POS\Extensions\PaymentSample folder. If you check in the above code sample, only the calling portion has been overridden, and not the core logic on how to complete the payment or add payment line. The POS workflow manages that.
 
 ## PaymentTerminalCapturePaymentRequestHandler
 
-**PaymentTerminalCapturePaymentRequestHandler**, the payment request, is a payment request from POS which initiates and capture the card payment request. Override this request if you want to change the capture workflow. To override the request, you need to extend the **PaymentTerminalCapturePaymentRequestHandler** in POS:
+**PaymentTerminalCapturePaymentRequestHandler**, the payment request, is a payment request from POS that initiates and captures the card payment request. Override this request if you want to change the capture workflow. To override the request, you need to extend the **PaymentTerminalCapturePaymentRequestHandler** in POS.
 
 ```typescript
 /**
  * SAMPLE CODE NOTICE
  * 
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+ * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
  * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF
  * MERCHANTABILITY.THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
- * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH
+ * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH
  * MICROSOFT THAT ALLOWS YOU TO DO SO.
  */
 
@@ -269,7 +269,7 @@ export default class PaymentTerminalCapturePaymentRequestHandlerExt extends Paym
 }
 ```
 
-After implementing the request logic you need to update the manifest.json with the extension information so that POS knows to load the extension. Any requests that you override are specified in the manifest. If you didn’t override any of the standard requests then you do not need to specify anything in the manifest. The example of the manifest shows two overriden requests.
+After implementing the request logic, you need to update the manifest.json with the extension information so that POS loads the extension. Any requests that you override are specified in the manifest. If you didn’t override any of the standard requests, then you do not need to specify anything in the manifest. The example of the manifest shows two overriden requests.
 
 ```typescript
 {
@@ -293,20 +293,20 @@ After implementing the request logic you need to update the manifest.json with t
 }
 ```
         
-The full sample with how to pass extension properties is available in Retail SDK app update in the RetailSDK\Code\POS\Extensions\ PaymentSample folder.
+The full code sample, with how to pass extension properties, is available in Retail SDK app update in the RetailSDK\Code\POS\Extensions\PaymentSample folder.
 
 ## PaymentTerminalExecuteTaskRequestHandler
 
-**PaymentTerminalExecuteTaskRequestHandler**, the execution request, is used from POS to initiate any custom payment device/connector operation from POS. You might use this to do a health check of the payment device from POS or to do some batch processing, or for an end-of-day request to the payment device. You override this request if you want to do any custom operation other than the standard authorize, capture, void and refund. To override the request, you need to extend the PaymentTerminalExecuteTaskRequestHandlerin POS:
+**PaymentTerminalExecuteTaskRequestHandler**, the execution request, is used from POS to initiate any custom payment device/connector operation from POS. You might use this to do a health check of the payment device from POS, to do batch processing, or for an end-of-day request to the payment device. You can override this request if you want to do a custom operation other than the standard authorize, capture, void, and refund. To override the request, you need to extend the **PaymentTerminalExecuteTaskRequestHandler** in POS.
 
 ```typescript
 /**
  * SAMPLE CODE NOTICE
  * 
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+ * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
  * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF 
  * MERCHANTABILITY. THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
- * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH
+ * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH
  * MICROSOFT THAT ALLOWS YOU TO DO SO.
  */
 
@@ -351,7 +351,7 @@ export default class PaymentTerminalExecuteTaskRequestHandlerExt extends Payment
 
 ```
          
-After implementing the request logic you need to update the manifest.json with the extension information so that POS knows to load the extension. 
+After implementing the request logic, you need to update the manifest.json with the extension information so that POS loads the extension. 
 
 ```typescript
 {
@@ -378,15 +378,15 @@ After implementing the request logic you need to update the manifest.json with t
 }
 ```
 
-The full sample with how to pass extension properties is available in Retail SDK app update 3 in the RetailSDK\Code\POS\Extensions\ PaymentSample folder
+The full code sample, with how to pass extension properties, is available in Retail SDK app update 3 in the RetailSDK\Code\POS\Extensions\PaymentSample folder
 
 
 ## PaymentTerminalRefundPaymentRequestHandler
 
-**PaymentTerminalRefundPaymentRequestHandler**, the refund request, is a payment request from POS which initiates a refund or return of the card payment. You override this request if you want to change the refund workflow. To override the request, you need to extend the PaymentTerminalRefundPaymentRequestHandler in POS.
+**PaymentTerminalRefundPaymentRequestHandler**, the refund request, is a payment request from POS that initiates a refund or return of the card payment. You override this request if you want to change the refund workflow. To override the request, you need to extend the **PaymentTerminalRefundPaymentRequestHandler** in POS.
 
 ## PaymentTerminalVoidPaymentRequestHandler
 
-**PaymentTerminalVoidPaymentRequestHandler**, the void request, is a payment request from POS that initiates the void card payment request. You override this request if you want to change the void workflow. To override the request, you need to extend the PaymentTerminalVoidPaymentRequestHandler in POS.
+**PaymentTerminalVoidPaymentRequestHandler**, the void request, is a payment request from POS that initiates the void card payment request. You override this request if you want to change the void workflow. To override the request, you need to extend the **PaymentTerminalVoidPaymentRequestHandler** in POS.
 
-Extending the void and refund request code pattern is same as the authorize and capture request. The full sample for void and refund payment request with how to pass extension properties is available in Retail SDK app update 3 in the RetailSDK\Code\POS\Extensions\ PaymentSample folder.
+Extending the void and refund request code pattern is same as the authorize and capture request. The full code sample for the void and refund payment request, with how to pass extension properties, is available in Retail SDK app update 3 in the RetailSDK\Code\POS\Extensions\PaymentSample folder.
