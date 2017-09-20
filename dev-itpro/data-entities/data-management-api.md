@@ -42,15 +42,16 @@ There are two APIs in Finance and Operations that support file-based integration
 | Format                     | Files and data packages                                     | Only data packages                                                |
 | Transformation             | Supports XSLT transformation if the data file format is XML | Transformations are external to the system                        |
 | Supported protocols        | SOAP and REST                                               | REST                                                              |
-| Service Type               | Custom Service                                              | OData action                                                      |
-| Availabiity                | RTW+                                                        | Platform Update 5 and above                                       |
+| Service type               | Custom Service                                              | OData action                                                      |
+| Availabiity                | RTW and later                                                        | Platform Update 5 and later                                       |
 
 If the recurring integrations API better meets your needs, see [Recurring integrations](recurring-integrations.md).
 
 ## Authorization
-The data management platform's package API uses OAuth 2.0 for authorizing access. The API must be called with a valid OAuth access token. You can find more details about OAuth 2.0 and AAD [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code). 
+The data management platform's package API uses OAuth 2.0 for authorizing access. The API must be called with a valid OAuth access token. You can find more details about OAuth 2.0 and Azure active directory in the article [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](/azure/active-directory/develop/active-directory-protocols-oauth-code). 
 
-> Note: When using Client Credentials Grant flow, Dynamics 365 for Finance and Operations maintains an Access Control List which can be found under **System administration** > **Setup** > **Azure Active Directory Applications**. This form captures the approved client Ids and the user security mapping that should be enforced when the APIs is called using this flow.
+> [!NOTE]
+> When using the Client Credentials Grant flow, Finance and Operations maintains an Access Control List which can be found under **System administration** > **Setup** > **Azure Active Directory Applications**. This form captures the approved client IDs and the user security mapping that should be enforced when the API is called using this flow.
 
 ## Import APIs
 The following APIs are used for performing file (data package) imports.
@@ -91,15 +92,19 @@ Output parameters:
 
 | **Parameter**                | **Description**                         |
 |------------------------------|-----------------------------------------|
-| **string BlobId**            | The blob ID of the allocated blob conainer. |
+| **string BlobId**            | The blob ID of the allocated blob container. |
 | **string BlobUrl**           | A writable blob URL shared access signature to write to blob storage. |
 
-> Note: The shared access signature is only valid within the expiry time stamped. Any request isssued after the time expiry will result in error. You can read more about this [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1)
+> [!NOTE]
+> A shared access signature (SAS) is only valid within an expiry time window. Any request isssued after the window has passed returns an error. For more information, see the article [Using shared access signatures (SAS)](/azure/storage/common/storage-dotnet-shared-access-signature-part-1).
 
 
 ### ImportFromPackage
 
-This API is used to initiate an import from the data package that is uploaded to the Finance and Operations's azure blob storage.
+This API is used to initiate an import from the data package that is uploaded to the Azure blob storage associated with your Finance and Operations implementation.
+
+> [!NOTE]
+> The export data project must have been created in Finance and Operations before you call this API. If the project does not exist, calling the API returns an error.
 
 ```CSharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage
@@ -151,9 +156,8 @@ The following APIs are used for performing file (data package) exports.
 ### ExportToPackage
 This API is used to initiate an export of a data package.
 
-> Note: The export data project should have been created in Finance and Operations as a pre-requisite to call this API. If the project does not exist, calling this API issues an error.
-
-> Note: If change tracking has been turned on, then only delta records (created since and/or updated) since last run are exported.
+> [!NOTE]
+> If change tracking has been turned on, then only records created or updated since the last run are exported (only the delta is returned).
 
 ```CSharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
@@ -239,7 +243,7 @@ The following APIs are used to check status and is used both during import and e
 
 ### GetExecutionSummaryStatus
 
-This API is used for both import and export jobs to check the status of a data project execution.
+This API is used for both import and export jobs to check the status of a data project execution job.
 
 ```CSharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
