@@ -513,7 +513,7 @@
 ##### [Get started with Cost accounting (Video)](https://youtu.be/1pUDtJQZ8FU)
 ##### [Cost control mobile workspace (Video)](https://youtu.be/imsuTg8rUVk)
 ##### [Use Excel for cost analysis (Video)](https://youtu.be/-HKHYdClvx8)
-#### [Configure source system](/dynamics365/unified-operations/financials/cost-accounting/configure-base-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Configure base entities](/dynamics365/unified-operations/financials/cost-accounting/configure-base-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Currency (eLearning)](https://mbspartner.microsoft.com/AX/CourseModules/1215) 
 ##### [Exchange rates (eLearning)](https://mbspartner.microsoft.com/AX/CourseModules/1215) 
 ##### [Fiscal calendars, fiscal years, and periods](/dynamics365/unified-operations/financials/budgeting/fiscal-calendars-fiscal-years-periods?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
