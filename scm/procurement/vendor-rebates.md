@@ -19,9 +19,9 @@ audience: Application User
 ms.reviewer: bis
 ms.search.scope: Core, Operations, Unified operations
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: [Global for most topics. Set Country/Region name for localizations]
-# ms.search.industry: [leave blank for most, retail, public sector]
+# ms.custom: no wiki topic
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012 
