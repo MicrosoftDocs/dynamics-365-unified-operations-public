@@ -151,6 +151,10 @@ The following APIs are used for performing file (data package) exports.
 ### ExportToPackage
 This API is used to initiate an export of a data package.
 
+> Note: The export data project should have been created in Finance and Operations as a pre-requisite to call this API. If the project does not exist, calling this API issues an error.
+
+> Note: If change tracking has been turned on, then only delta records (created since and/or updated) since last run are exported.
+
 ```CSharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
 BODY
