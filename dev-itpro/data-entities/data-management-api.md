@@ -53,7 +53,7 @@ The data management platform's package API uses OAuth 2.0 for authorizing access
 > Note: When using Client Credentials Grant flow, Dynamics 365 for Finance and Operations maintains an Access Control List which can be found under **System administration** > **Setup** > **Azure Active Directory Applications**. This form captures the approved client Ids and the user security mapping that should be enforced when the APIs is called using this flow.
 
 ## Import APIs
-The following APIs are used in the import flow.
+The following APIs are used for performing file (data package) imports.
 
 ### GetAzureWritableUrl
 
@@ -130,7 +130,7 @@ HTTP/1.1 200 OK
 
 Input parameters: 
 
-| **Parameter**                | **Description**                                                                                      |
+| **Parameter**                | **Description**                |
 |--------------------------|--------------------------------------------------------------------------------------------------|
 | **string packageUrl**        | The URL of the data package within the Azure Blob Storage associated with Finance and Operations |
 | **string definitionGroupId** | The name of the data project for import                                                          |
@@ -145,7 +145,7 @@ Output parameters:
 | **string executionId**       | The execution ID of the data import. |
 
 ## Export APIs
-The following APIs are used for exports.
+The following APIs are used for performing file (data package) exports.
 
 ### ExportToPackage
 This API is used to initiate an export of a data package.
@@ -157,9 +157,6 @@ DataManagementDefinitionGroups.ExportToPackage(string definitionGroupId,
       bool reExecute, 
       string legalEntityId)
 ```
-
-Return object: 
-**string executionId**
 
 Input parameters: 
 
@@ -199,27 +196,46 @@ The following APIs are used to check status.
 
 This API is used for both import and export jobs to check the status of a data project execution.
 
+```CSharp
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
+
+BODY
+{"executionId":"<executionId>"}
 ```
-DataManagementDefinitionGroups.GetExecutionSummaryStatus(string executionId)
+A successful sample response would look as follows
+
+```json
+HTTP/1.1 200 OK
+
+{  
+   "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
+   "value":{  
+      "value":"<executionStatus>"
+   }
+}
 ```
 
-Output Object: 
-**DMFExecutionSummaryStatus executionStatus**
+Input parameters: 
 
-Input parameters:
-**string executionId**	The execution ID of the data project.
+| **Parameter**                | **Description**                         |
+|------------------------------|-----------------------------------------|
+| **string executionId**       | The execution ID of the data project run.      |
+
 
 Output parameters:
-**DMFExecutionSummaryStatus executionStatus** 
+| **Parameter**                | **Description**                         |
+|------------------------------|-----------------------------------------|
+| **DMFExecutionSummaryStatus executionStatus**       | The execution status. |
 
-Possible values for execution status:
+Possible values for execution status :
 - Unknown
 - NotRun
 - Executing
 - Succeeded
 - PartiallySucceeded
 - Failed
-- Canceled
+- Canceled 
+
 
 ## Import and export processes 
 The following diagram shows how the data management package methods can be used to import data packages.
