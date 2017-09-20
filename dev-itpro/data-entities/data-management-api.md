@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data management package integration API
-description: This topic describes the data management package REST API for working with files in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic describes the data management framework's package REST API for integrating with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition using data packages.
 author: Sunil-Garg
 manager: 09/11/2017
 ms.topic: article
@@ -31,16 +31,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the data management package REST API in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and when to use it.
+This topic describes the data management framework's package REST API for integrating with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, using data packages.
 
 ## Choosing an integration API
-There are two APIs in Finance and Operations that support file-based integration scenarios: the data management package API and the recurring integrations API. Both APIs support both data import and data export. The following table describes key decision points to use when deciding which API to use. 
+There are two APIs in Finance and Operations that support file-based integration scenarios: the data management platform's package API and the recurring integrations API. Both APIs support both data import and data export scenarios. The following table describes key decision points to use when deciding which API to use. 
 
-| Decision point |    Recurring integrations API                                         |    Data management package API                                                               |
+| Decision point             |    Recurring integrations API                               |    Data management package API                                    |
 |----------------------------|-------------------------------------------------------------|-------------------------------------------------------------------|
-| Scheduling                 | Scheduling within Finance and Operations   | Scheduling external to Finance and Operations |
+| Scheduling                 | Scheduling within Finance and Operations                    | Scheduling external to Finance and Operations                     |
 | Format                     | Files and data packages                                     | Only data packages                                                |
-| Transformation             | Supports XSLT transformation if the data file format is XML | Transformations are external to the system                  |
+| Transformation             | Supports XSLT transformation if the data file format is XML | Transformations are external to the system                        |
+| Supported protocols        | SOAP and REST                                               | REST                                                              |
+| Service Type               | Custom Service                                              | OData action                                                      |
 
 If the recurring integrations API better meets your needs, see [Recurring integrations](recurring-integrations.md).
 
