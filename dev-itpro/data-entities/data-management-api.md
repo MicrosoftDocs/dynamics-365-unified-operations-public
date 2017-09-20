@@ -60,8 +60,12 @@ The following APIs are used in the import flow.
 This API is used to get a writable blob URL. Using this method, which has shared access token embedded in the URL, a data package can be uploaded to the Finance and Operations Azure Blob Storage container.
 
 ```CSharp
-   POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetAzureWriteUrl
-   BODY {"uniqueFileName":"<string>"}
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetAzureWriteUrl
+
+BODY
+{  
+   "uniqueFileName":"<string>",      
+}
 ```
 A successful sample response would look as follows
 
@@ -92,21 +96,37 @@ Output parameters:
 
 > Note: The shared access signature is only valid within the expiry time stamped. Any request isssued after the time expiry will result in error. You can read more about this [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1)
 
-     	
+
 ### ImportFromPackage
 
-This API is used to initiate an import from the data package that is uploaded to the Finance and Operations blob storage.
+This API is used to initiate an import from the data package that is uploaded to the Finance and Operations's azure blob storage.
 
+```CSharp
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage
+
+BODY
+{  
+   "packageUrl":"<string>",
+   "definitionGroupId":"<string>",
+   "executionId":"<string>",
+   "execute":<bool>,
+   "overwrite":<bool>,
+   "legalEntityId":"<string>"
+}
 ```
-DataManagementDefinitionGroups.ImportFromPackage(string packageUrl, 
-                                              string definitionGroupId, 
-                                              string executionId, 
-                                              bool execute, 
-                                              bool overwrite, 
-                                              string legalEntityId)
+
+A successful sample response would look as follows
+
+```json
+HTTP/1.1 200 OK
+
+{  
+   "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
+   "value":{  
+      "value":"<executionId>"
+   }
+}
 ```
-Return object: 
-**string executionId**
 
 Input parameters: 
 
@@ -120,7 +140,9 @@ Input parameters:
 | **string legalEntityId**     | The legal entity for the data import.                                                            |                                                         |
 
 Output parameters:
-**string executionId**	The execution ID of the data import.
+| **Parameter**                | **Description**                         |
+|------------------------------|-----------------------------------------|
+| **string executionId**       | The execution ID of the data import. |
 
 ## Export APIs
 The following APIs are used for exports.
