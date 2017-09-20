@@ -4,7 +4,7 @@ title: Value
 description: This is the base class for single value controls.
 author: shadykdc
 manager: AnnBe
-ms.date: 
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

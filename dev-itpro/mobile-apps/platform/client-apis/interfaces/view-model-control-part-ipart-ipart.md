@@ -4,7 +4,7 @@ title: Part
 description: Part control type. A part is a container control that contains only a page, allowing for a page to be embedded within a page.
 author: shadykdc
 manager: AnnBe
-ms.date: 
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

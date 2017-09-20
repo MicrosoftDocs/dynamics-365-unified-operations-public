@@ -4,7 +4,7 @@ title: Container
 description: A container control can contain any number of controls.
 author: shadykdc
 manager: AnnBe
-ms.date: 
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
