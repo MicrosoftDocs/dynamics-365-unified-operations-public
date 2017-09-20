@@ -92,7 +92,7 @@ You can also start VSTS synchronization from the toolbar in a BPM library. Selec
 
 ## Turn off synchronization of BPM with VSTS
 
-To turn off synchronization, go back to the same menu.
+To turn off synchronization, on the **Business process libraries** page, select the library that you want to stop synchronizing, select the ellipsis button (…), and then unselect **VSTS sync**..
 
 ## Review processes and add requirements
 
