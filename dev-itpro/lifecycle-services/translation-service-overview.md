@@ -38,6 +38,9 @@ Microsoft Dynamics 365 - Translation Service (DTS) is designed to enhance the pa
 DTS uses custom trained machine translation(MT) system for Microsoft’s GA languages to maximize the quality of translation output.  DTS also supports recycling of the translation from the linguistic assets so that there is no need to translate the same string again.
 
 Here is a high-level view of how the service works:
+![alt text][overview]
+
+[overview]: https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/eunji_translationservice/dev-itpro/lifecycle-services/media/dts-overview.png "How the DTS works"
  
 ## Recycling of existing translation
 The recycling is only enabled when a user uploads the XLIFF translation memory(TM) zip file.  Please refer to the XLIFF TM zip file section for more details.
