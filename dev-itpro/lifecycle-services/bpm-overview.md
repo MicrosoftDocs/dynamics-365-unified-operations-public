@@ -1,6 +1,6 @@
 ---
 title: Business process modeler
-description:
+description: This topic provides information about the Business process modeler tool in Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
 ms.date: 09/17/2017
