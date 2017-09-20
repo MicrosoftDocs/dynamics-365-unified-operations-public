@@ -335,7 +335,7 @@ From the Retail SDK folder, open and run the SQL Server **ContosoRetailExtension
     ```
     if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
     {
-        resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_ContosoRetailExtension));
+        resources.addEnd(resourceStr(RetailCDXSeedDataAX7_ContosoRetailExtension));
     }
     ```
     
