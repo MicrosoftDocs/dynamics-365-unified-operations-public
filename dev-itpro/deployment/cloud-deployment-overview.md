@@ -76,12 +76,18 @@ All Dynamics 365 for Operations front-end virtual machines in Microsoft Azure ar
 > -	Admin passwords on these environments should NOT be changed. Environments that have admin passwords changed will be flagged by Microsoft. Microsoft reserves the right to, and will reset the admin password.  
 > - Adding new user accounts to the VMs is NOT supported. Microsoft reserves the right to, and will remove the newly added user accounts.
 
-#### RDP and WinRM lockdown
-Starting October 1st 2017, Management ports on D365 for Finance and Operations will be locked down. This means that customers will no longer be able to Remote Desktop (RDP) to or use Windows Remoting (WinRM) on Tier 1 to Tier 5 sandboxes by default. You will need to explictly configure the environment to enable access to your corportate network. This may be done by an LCS admin navigating to the environment page on LCS and configuring it. Click on **Maintain** -> **Secure Access** and enter the IP Addresses that have permissions to use the management ports. The IP Addresses can either be single IP Addresses or ranges. Ranges need to be specified in the CIDR notation. Please see [Configure Azure Network Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-nsg) for more information.
+#### Remote Desktop (RDP) lockdown
+Starting October 1, 2017, customers will be required to complete additional setup to connect to Dynamics 365 for Finance and Operations virtual machines (VMs) through Microsoft Remote Desktop (RDP). This applies to all Microsoft-managed environments (including Tier 1 to Tier 5 sandboxes and add-ons). In order to connect to Tier 1 to 5 sandbox environments, you will need to explicitly enable access from your organization’s IP address space. This may be done by a Lifecycle Services (LCS) user with access to the environment page by clicking Maintain > Enable Access and entering the IP address space that will need to connect to the virtual machines through Remote Desktop. Multiple entries may be specified. Each entry is either a single IP address (example: 10.10.10.10) or a range (example: 192.168.1.0/24). These entries are used to configure the Azure Network Security Group associated with your environment’s virtual network. Please see [Filter network traffic with network security groups](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-nsg) for more information. 
 
-[!WARNING] 
+[!WARNING]
+Care should be taken to ensure that public IP addresses, such as a coffee shop location, are NOT configured.     
+ 
+[!IMPORTANT]
+Remote Desktop is enabled by default for all non-Microsoft managed environments. Microsoft recommends customers restrict access to environments that belong to their subscriptions. This may be done by configuring Network Security Group rules on their environments directly in Azure Portal.
+ 
+#### Windows Remoting (WinRM) lockdown
+Windows Remoting (WinRM) is disabled on all environments. Exceptions to enable WinRM will not be granted for any Microsoft-managed environments. Although you can enable WinRM on environments that belong to your subscriptions through Azure Portal, Microsoft strongly recommends that you do not do this.
 
-End users will not be able to connect to the management port, if they are not connected to their corporate network. Please ensure that only the corporate network range is configured for access. Care should be taken to ensure that public IP addresses such as a coffee shop location is **NOT** configured.
 
 ### Availability
 The guaranteed uptime for Dynamics 365 for Finance and Operations is 99.5%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn’t always take eight hours, we will always communicate the estimated amount of time that your environments will be down. [Find support for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics Lifecycle Services](../lifecycle-services/lcs-support.md).
