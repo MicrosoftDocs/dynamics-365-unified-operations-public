@@ -49,15 +49,17 @@ We have multiple articles written to provide a guide for each major way. You can
 We have multiple videos created to help you get started.
 
 To use the Get started wizard in the Cost accounting module, watch the **Get started with Cost acocunting** video. A full transcript is provided below the video.
+
 <br/>
 <table>
 <tr>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>
 </tr>
-</table>
+<table>
 <br/>
 
 The **Cost accounting mobile workspace** video walks you through a basic introduction of cost analysis and reporting using mobile devices. A full transcript is provided below the video.
+
 <br/>
 <table>
 <tr>
@@ -67,10 +69,11 @@ The **Cost accounting mobile workspace** video walks you through a basic introdu
 <br/>
 
 The **Use Excel for cost analysis** video walks you through a basic introduction of how to export cost entries to Excel for analysis and reporting. A full transcript is provided below the video.
+
 <br/>
 <table>
 <tr>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>
 </tr>
-<table>
+</table>
 <br/>
