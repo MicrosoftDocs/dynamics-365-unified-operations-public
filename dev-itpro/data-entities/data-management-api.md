@@ -43,6 +43,7 @@ There are two APIs in Finance and Operations that support file-based integration
 | Transformation             | Supports XSLT transformation if the data file format is XML | Transformations are external to the system                        |
 | Supported protocols        | SOAP and REST                                               | REST                                                              |
 | Service Type               | Custom Service                                              | OData action                                                      |
+| Availabiity                | RTW+                                                        | Platform Update 5 and above                                       |
 
 If the recurring integrations API better meets your needs, see [Recurring integrations](recurring-integrations.md).
 
@@ -52,28 +53,45 @@ The data management platform's package API uses OAuth 2.0 for authorizing access
 > Note: When using Client Credentials Grant flow, Dynamics 365 for Finance and Operations maintains an Access Control List which can be found under **System administration** > **Setup** > **Azure Active Directory Applications**. This form captures the approved client Ids and the user security mapping that should be enforced when the APIs is called using this flow.
 
 ## Import APIs
-The following APIs are used for imports.
+The following APIs are used in the import flow.
 
 ### GetAzureWritableUrl
 
 This API is used to get a writable blob URL. Using this method, which has shared access token embedded in the URL, a data package can be uploaded to the Finance and Operations Azure Blob Storage container.
 
+```CSharp
+   POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetAzureWriteUrl
+   BODY {"uniqueFileName":"<string>"}
 ```
-       DataManagementDefinitionGroups.GetAzureWriteUrl(string uniqueFileName)
-	Return object: 
-{
-	string BlobId,
-	String BlobUrl,
+A successful sample response would look as follows
+
+```json
+HTTP/1.1 200 OK
+
+{  
+   "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
+   "value":{  
+      "BlobId":"{<GUID>}",
+      "BlobUrl":"https://<baseurl_id>.blob.core.windows.net/dmf/<uniqueFileName>?<SAS Token>"
+   }
 }
-
 ```
 
-Input parameters:
-**string uniqueFileName** A unique file name to track blob IDs. You can include a GUID to ensure a unique file name.
+Input parameters: 
 
-Output parameters:
-**string BlobId**  The blob ID of the allocated blob conainer.
-**string BlobUrl** A writable blob URL with an embedded shared access token to write to blob storage.		
+| **Parameter**                | **Description**                         |
+|------------------------------|-----------------------------------------|
+| **string packageUrl**        | A unique file name to track blob IDs. You can include a GUID to ensure a unique file name. |
+
+Output parameters: 
+
+| **Parameter**                | **Description**                         |
+|------------------------------|-----------------------------------------|
+| **string BlobId**            | The blob ID of the allocated blob conainer. |
+| **string BlobUrl**           | A writable blob URL shared access signature to write to blob storage. |
+
+> Note: The shared access signature is only valid within the expiry time stamped. Any request isssued after the time expiry will result in error. You can read more about this [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1)
+
      	
 ### ImportFromPackage
 
@@ -157,6 +175,8 @@ The following APIs are used to check status.
 
 ### GetExecutionSummaryStatus
 
+This API is used for both import and export jobs to check the status of a data project execution.
+
 ```
 DataManagementDefinitionGroups.GetExecutionSummaryStatus(string executionId)
 ```
@@ -192,9 +212,6 @@ A sample console application is available on GitHub to showcase the data import 
 
 For more information, see: 
 https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/FileBasedIntegrationSamples/ConsoleAppSamples
-
-The following example demonstrates how to set up file-based import and export using the data package APIs.
-
 
 
 
