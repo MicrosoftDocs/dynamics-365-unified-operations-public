@@ -21,7 +21,7 @@ ms.reviewer: shylaw
 # ms.suite: 
 # ms.tgt_pltfrm: 
 ms.custom: 1587884
-ms.region: India
+ms.search.region: India
 ms.search.scope: AX 2012
 # ms.search.industry: 
 ms.author: ralin
