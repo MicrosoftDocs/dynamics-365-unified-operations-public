@@ -150,47 +150,85 @@ The following APIs are used for performing file (data package) exports.
 ### ExportToPackage
 This API is used to initiate an export of a data package.
 
+```CSharp
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
+BODY
+{  
+   "definitionGroupId":"<Data project Id>",
+   "packageName":"<Name to use for downloaded file.>",
+   "executionId":"<Execution Id if it is a rerun>",
+   "reExecute":<bool>,
+   "legalEntityId":"<Legal entity Id>"
+}
 ```
-DataManagementDefinitionGroups.ExportToPackage(string definitionGroupId, 
-      string packageName,
-      string executionId, 
-      bool reExecute, 
-      string legalEntityId)
+
+A successful sample response would look as follows
+
+```json
+HTTP/1.1 200 OK
+
+{  
+   "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
+   "value":{  
+      "value":"<executionId>"
+   }
+}
 ```
+
 
 Input parameters: 
 
-| **Parameter**                | **Description**                                                                                |
-|--------------------------|--------------------------------------------------------------------------------------------|
-| **string definitionGroupId** | The name of the data project for export.                                                    |
-| **string packageName**       | The name of the exported data package.                                                     |
+| **Parameter**                | **Description**         |
+|------------------------------|-------------------------|
+| **string definitionGroupId** | The name of the data project for export.             |
+| **string packageName**       | The name of the exported data package.                              |
 | **string executionId**       | The ID to use for the job. If an empty ID is assigned, a new execution ID will be created. |
-| **bool reExecute**           | Set to True to run the target step, otherwise False.                                       |
-| **string legalEntityId**     | The legal entity for the data import.                                                      |
+| **bool reExecute**           | Set to True to run the target step, otherwise False.               |
+| **string legalEntityId**     | The legal entity for the data import.               |
 	
 Output parameters:
-**string executionId**	The execution ID of the data export.
+| **Parameter**                | **Description**                         |
+|------------------------------|-----------------------------------------|
+| **string executionId**       | The execution ID of the data export. |
 
 
 ### GetExportedPackageUrl
 
 This API is used to get the URL of the exported data package that was exported by called ExportToPackage.
 
-```
-DataManagementDefinitionGroups.GetExportedPackageUrl(string executionId)
+```CSharp
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
+
+BODY
+{"executionId":"<Execution Id>"}
 ```
 
-Return object: 
-**string BlobUrl**
+A successful sample response would look as follows
 
-Input parameters:
-**string executionId**	The execution ID of the export data project.
+```json
+HTTP/1.1 200 OK
+
+{  
+   "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
+   "value":{  
+      "value":"https://<baseurl_id>.blob.core.windows.net/dmf/<uniqueFileName>?<SAS Token>"
+   }
+}
+```
+Input parameters: 
+
+| **Parameter**                | **Description**                         |
+|------------------------------|-----------------------------------------|
+| **string executionId**       | The execution ID of the data project run.  |
+
 
 Output parameters:
-**string BlobUrl**	A blob URL with an embedded shared access token to download the exported data package.
+| **Parameter**                | **Description**                         |
+|------------------------------|-----------------------------------------|
+| **string BlobUrl**       | A blob URL with an embedded shared access token to download the exported data package. |
 
-## Status check APIs	
-The following APIs are used to check status.
+## Status check API	
+The following APIs are used to check status and is used both during import and export flows.
 
 ### GetExecutionSummaryStatus
 
