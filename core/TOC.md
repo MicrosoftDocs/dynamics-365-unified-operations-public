@@ -513,7 +513,7 @@
 ##### [Get started with Cost accounting (Video)](https://youtu.be/1pUDtJQZ8FU)
 ##### [Cost control mobile workspace (Video)](https://youtu.be/imsuTg8rUVk)
 ##### [Use Excel for cost analysis (Video)](https://youtu.be/-HKHYdClvx8)
-#### [Configure source system](/dynamics365/unified-operations/financials/cost-accounting/configure-base-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Configure base entities](/dynamics365/unified-operations/financials/cost-accounting/configure-base-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Currency (eLearning)](https://mbspartner.microsoft.com/AX/CourseModules/1215) 
 ##### [Exchange rates (eLearning)](https://mbspartner.microsoft.com/AX/CourseModules/1215) 
 ##### [Fiscal calendars, fiscal years, and periods](/dynamics365/unified-operations/financials/budgeting/fiscal-calendars-fiscal-years-periods?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2112,7 +2112,7 @@
 ### [Set up company-specific HR parameters](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Personnel actions FAQ](/dynamics365/unified-operations/talent/personnel-actions-faq?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Use workflow to manage employee information](/dynamics365/unified-operations/talent/workflow-manage-employee-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Leave and absence overivew](/dynamics365/unified-operations/talent/leave-absence-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Leave and absence overview](/dynamics365/unified-operations/talent/leave-absence-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Staffing your organization
 ### [Attract overview](/dynamics365/unified-operations/talent/attract-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
@@ -2558,7 +2558,7 @@
 #### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [On-premises deployment](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
-#### [On-premises overivew](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [On-premises overview](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Hardware sizing](/dynamics365/unified-operations/dev-itpro/get-started/hardware-sizing-on-premises-environments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Create an on-premises project](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Set up and deploy on-premises environments](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)

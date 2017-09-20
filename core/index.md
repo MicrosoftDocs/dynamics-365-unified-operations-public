@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Introduction to Dynamics 365 for Finance and Operations
+title: Microsoft Dynamics 365 for Finance and Operations, Enterprise edition Documentation
 description: Documentation for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: margoc
 manager: AnnBe

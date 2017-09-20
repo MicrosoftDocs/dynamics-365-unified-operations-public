@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Online service and on-premises software lifecycle policy
+title: Software lifecycle policy and list of releases
 description: This topic outlines the lifecycle and support policies for both the Dynamics 365 for Finance and Operations, Enterprise edition online service and for Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) software deployments.
 author: ryanCcarlson 
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 09/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Online service and on-premises software lifecycle policy
+# Software lifecycle policy and list of releases
 
 [!include[banner](../includes/banner.md)]
 

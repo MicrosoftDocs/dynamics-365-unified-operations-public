@@ -72,7 +72,7 @@ The process for client-side development is described in these topics:
 + [Business logic events overview](business-logic-events-overview.md)
 + [Client APIs](client-apis/client-apis-reference.md)
 
-You can download a sample business logic file (a .js file) for the Reservation management workspace from [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples).
+You can download a sample business logic file (a .js file) for the Reservation management workspace. Go to [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples), open the **business_logic folder**, and locate the FM.js file
 
 ## Server-side development
 
@@ -80,7 +80,7 @@ Workspace attributes and classes are used to create, configure, and publish work
 + [Workspace class overview](scenarios/mobile-workspace-configuration.md)
 + [Server APIs (X++)](mobile-workspace-server-apis.md)
 
-You can download the sample project (an .axpp file) for the Fleet Management mobile app from [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp file)
+You can download the sample project (an .axpp file) for the Fleet Management mobile app. Go to from [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) and download the **FMMobileApp.axpp** file.
 
 ## Additional resources
 ### What's new and in development
