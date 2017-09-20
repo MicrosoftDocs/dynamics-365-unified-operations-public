@@ -131,7 +131,7 @@ HTTP/1.1 200 OK
 Input parameters: 
 
 | **Parameter**                | **Description**                |
-|--------------------------|--------------------------------------------------------------------------------------------------|
+|--------------------------|------------------------------------|
 | **string packageUrl**        | The URL of the data package within the Azure Blob Storage associated with Finance and Operations |
 | **string definitionGroupId** | The name of the data project for import                                                          |
 | **string executionId**       | The ID to use for the job. If an empty ID is assigned, a new execution ID will be created.       |
@@ -140,6 +140,7 @@ Input parameters:
 | **string legalEntityId**     | The legal entity for the data import.                                                            |                                                         |
 
 Output parameters:
+
 | **Parameter**                | **Description**                         |
 |------------------------------|-----------------------------------------|
 | **string executionId**       | The execution ID of the data import. |
