@@ -113,7 +113,7 @@ If you created a new Retail HQ table and a new channel database table, follow th
     ```
     if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
     {
-        resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom));
+        resources.addEnd(resourceStr(RetailCDXSeedDataAX7_Custom));
     }
     ```
 
@@ -189,7 +189,7 @@ If the table has a primary key that isn't **RecId**, your extension table on the
 ```
     <Subjob Id="RetailCustTable" TargetTableSchema="ext">
         <AxFields>
-            <Field Name="ReturnTaxGroup\_W"/>
+            <Field Name="ReturnTaxGroup_W"/>
             <!-- Existing column which was not pushed to channel db-->
             <Field Name="SSNNumber"/>
             <!-- New column from the extended table-->
@@ -324,7 +324,7 @@ From the Retail SDK folder, open and run the SQL Server **ContosoRetailExtension
         /// </summary>
         /// <param name="result">The result object which is used to return the resource name.</param>
         [SubscribesTo(classStr(RetailCDXSeedDataBase), delegateStr(RetailCDXSeedDataBase, registerCDXSeedDataExtension))]
-        public static void RetailCDXSeedDataBase\_registerCDXSeedDataExtension(str originalCDXSeedDataResource, List resources)
+        public static void RetailCDXSeedDataBase_registerCDXSeedDataExtension(str originalCDXSeedDataResource, List resources)
         {
         }
     }
@@ -364,22 +364,22 @@ From the Retail SDK folder, open and run the SQL Server **ContosoRetailExtension
     2. Because the extension table isn't used in the Commerce Runtime (CRT) and MPOS, you must manually insert data into the extension table. Run the following script after you change the required values.
 
         ```
-        INSERT INTO \[ext\].\[CONTOSORETAILTRANSACTIONTABLE\] (
-        \[CONTOSORETAILSEATNUMBER\],
-        \[CONTOSORETAILSERVERSTAFFID\],
-        \[TRANSACTIONID\],
-        \[STORE\],
-        \[CHANNEL\],
-        \[TERMINAL\],
-        \[DATAAREAID\])
+        INSERT INTO [ext].[CONTOSORETAILTRANSACTIONTABLE] (
+        [CONTOSORETAILSEATNUMBER],
+        [CONTOSORETAILSERVERSTAFFID],
+        [TRANSACTIONID],
+        [STORE],
+        [CHANNEL],
+        [TERMINAL],
+        [DATAAREAID])
         VALUES (
-        1, /\*normally this needs to be an existing seat number from ContosoRetailSeatingData table, but for this test add any number\*/
-        '000160' /\*add any staff ID here\*/,
-        'HOUSTON-HOUSTON-11-101',/\*add the transaction id you just created \*/
-        'HOUSTON', /\*add the store used to create the transaction \*/
-        5637144592, /\*add the channel RecId of the store used to create the transaction\*/
-        'HOUSTON-11', /\*add the terminalId used to create the transaction\*/
-        'USRT' /\*add the dataareaId used by the store\*/)
+        1, /*normally this needs to be an existing seat number from ContosoRetailSeatingData table, but for this test add any number*/
+        '000160' /*add any staff ID here*/,
+        'HOUSTON-HOUSTON-11-101',/\*add the transaction id you just created */
+        'HOUSTON', /*add the store used to create the transaction */
+        5637144592, /*add the channel RecId of the store used to create the transaction*/
+        'HOUSTON-11', /*add the terminalId used to create the transaction*/
+        'USRT' /*add the dataareaId used by the store*/)
         GO
         ```
 
