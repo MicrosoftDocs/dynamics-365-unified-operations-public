@@ -4,7 +4,7 @@ title: ImageMetadata
 description: Image metadata type.
 author: shadykdc
 manager: AnnBe
-ms.date: 
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

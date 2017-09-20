@@ -4,7 +4,7 @@ title: FileUploaderMetadata
 description: File uploader metadata type.
 author: shadykdc
 manager: AnnBe
-ms.date: 
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

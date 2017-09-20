@@ -4,7 +4,7 @@ title: InputControl
 description: Input control interface with methods and attributes for all input controls. Input controls are typically used on task pages for collecting user input, for example, for a new control.
 author: shadykdc
 manager: AnnBe
-ms.date: 
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

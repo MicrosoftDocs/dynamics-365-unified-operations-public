@@ -4,7 +4,7 @@ title: PageData
 description: Represents the data that is loaded into a page.
 author: shadykdc
 manager: AnnBe
-ms.date: 
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
