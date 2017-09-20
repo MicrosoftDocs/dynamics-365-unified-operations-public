@@ -61,7 +61,7 @@ The **Cost accounting mobile workspace** video walks you through a basic introdu
 <br/>
 <table>
 <tr>
-<iframe width="280" height="158" src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe>
 </tr>
 <table>
 <br/>
@@ -70,7 +70,7 @@ The **Use Excel for cost analysis** video walks you through a basic introduction
 <br/>
 <table>
 <tr>
-<iframe width="280" height="158" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>
 </tr>
 <table>
 <br/>
