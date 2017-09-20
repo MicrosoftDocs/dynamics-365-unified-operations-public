@@ -103,8 +103,6 @@ Output parameters:
 
 This API is used to initiate an import from the data package that is uploaded to the Azure blob storage associated with your Finance and Operations implementation.
 
-> [!NOTE]
-> The export data project must have been created in Finance and Operations before you call this API. If the project does not exist, calling the API returns an error.
 
 ```CSharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage
@@ -154,10 +152,9 @@ Output parameters:
 The following APIs are used for performing file (data package) exports.
 
 ### ExportToPackage
-This API is used to initiate an export of a data package.
-
-> [!NOTE]
-> If change tracking has been turned on, then only records created or updated since the last run are exported (only the delta is returned).
+This API is used to initiate an export of a data package. 
+- The export data project must have been created in Finance and Operations before you call this API. If the project does not exist, calling the API returns an error.
+- If change tracking has been turned on, then only records created or updated since the last run are exported (only the delta is returned).
 
 ```CSharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
