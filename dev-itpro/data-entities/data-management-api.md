@@ -46,12 +46,10 @@ There are two APIs in Finance and Operations that support file-based integration
 
 If the recurring integrations API better meets your needs, see [Recurring integrations](recurring-integrations.md).
 
-## Authentication and authorization
-The data management API uses OAuth for authentication. The API must be called with a valid OAuth authentication token. The user context in which the API is called should also be established so that the proper security and user access rights can be established. 
+## Authorization
+The data management platform's package API uses OAuth 2.0 for authorizing access. The API must be called with a valid OAuth access token. You can find more details about OAuth 2.0 and AAD [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code). 
 
-When authenticating from the web client, a client ID is assigned to a specific user in **System administration** > **Setup** > **Azure Active Directory Applications**.
-
-When authenticating from native clients, the user context is embedded in the authentication flow. 
+> Note: When using Client Credentials Grant flow, Dynamics 365 for Finance and Operations maintains an Access Control List which can be found under **System administration** > **Setup** > **Azure Active Directory Applications**. This form captures the approved client Ids and the user security mapping that should be enforced when the APIs is called using this flow.
 
 ## Import APIs
 The following APIs are used for imports.
