@@ -188,6 +188,7 @@ Input parameters:
 | **string legalEntityId**     | The legal entity for the data import.               |
 	
 Output parameters:
+
 | **Parameter**                | **Description**                         |
 |------------------------------|-----------------------------------------|
 | **string executionId**       | The execution ID of the data export. |
@@ -224,6 +225,7 @@ Input parameters:
 
 
 Output parameters:
+
 | **Parameter**                | **Description**                         |
 |------------------------------|-----------------------------------------|
 | **string BlobUrl**       | A blob URL with an embedded shared access token to download the exported data package. |
@@ -262,6 +264,7 @@ Input parameters:
 
 
 Output parameters:
+
 | **Parameter**                | **Description**                         |
 |------------------------------|-----------------------------------------|
 | **DMFExecutionSummaryStatus executionStatus**       | The execution status. |
