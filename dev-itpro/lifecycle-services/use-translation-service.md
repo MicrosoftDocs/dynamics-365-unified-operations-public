@@ -1,4 +1,4 @@
---
+---
 # required metadata
 
 title: Microsoft Dynamics 365 - Translation Service User guide
@@ -210,12 +210,10 @@ Inherited state values for recycled strings are also convenient, as you will nev
 
 
 ## Glossary
-### *XLIFF*
-XLIFF is an XML-based format created to standardize the way localizable data are passed between tools during a localization process and a common format for CAT tool files.
 
-### *Microsoft’s GA languages*
-General availability of the language versions.  The list of languages depends on the product.
-
-### *TU*
-Translation unit.  The translation unit typically contains source string, translation, state, state qualifier, and note.
+Term | Description
+--- | ---
+*XLIFF* | XLIFF is an XML-based format created to standardize the way localizable data are passed between tools during a localization process and a common format for CAT tool files.
+*Microsoft’s GA languages* | General availability of the language versions. The list of languages depends on the product.
+*TU* | Translation unit. The translation unit typically contains source string, translation, state, state qualifier, and note.
 
