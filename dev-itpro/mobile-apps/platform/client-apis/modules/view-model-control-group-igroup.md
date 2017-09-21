@@ -4,7 +4,7 @@ title: Group
 description: A group control is a container control that has any number of controls as children.
 author: shadykdc
 manager: AnnBe
-ms.date: 
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

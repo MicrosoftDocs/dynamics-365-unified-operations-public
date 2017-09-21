@@ -4,7 +4,7 @@ title: AsyncService
 description: Provides ability to perform async operations from business logic code.
 author: shadykdc
 manager: AnnBe
-ms.date: 
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

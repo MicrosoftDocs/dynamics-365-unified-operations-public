@@ -4,7 +4,7 @@ title: Services
 description: Various services that are available to the application in client runtime.
 author: shadykdc
 manager: AnnBe
-ms.date: 
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
