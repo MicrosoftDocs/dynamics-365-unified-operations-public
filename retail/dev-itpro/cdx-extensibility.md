@@ -385,7 +385,7 @@ From the Retail SDK folder, open and run the SQL Server **ContosoRetailExtension
 
         Repeat this step for the other transactions. Don't add corresponding data in [ext].[CONTOSORETAILTRANSACTIONTABLE] for some of the transactions that you created in MPOS. In this way, you can verify that the data from [ax].RetailTransactionTable is pulled and uploaded even if there is no corresponding data in the extension table.
 
-    3. Go to **Dynamics 365** &gt; **Retail** &gt; **Retail IT**, and then select **Distribution schedule**.
+    3. Go to **Dynamics 365** > **Retail** &gt; **Retail IT**, and then select **Distribution schedule**.
     4. In the list of distribution schedules, select **P-0001**. This distribution schedule contains the RetailTransactionTable subjob that you customized.
     5. On the Action Pane, select **Run**. When the confirmation message appears, select **Yes**.
     6. On the Action Pane, select **History** to open the **History** page, where you can verify that the uploaded session was completed successfully.
