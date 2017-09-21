@@ -40,17 +40,17 @@ Cost accounting is an independent module that requires data from other modules. 
 -  Cost objects
 -  Statistical dimensions
 
-A **Cost element** corresponds to a cost-relevant item in the chart of accounts. A **Cost object** corresponds to any type of financial dimensions, 
-such as products, cost centers, projects, and so on that you want to estimate, allocate costs to, or measure directly. A statistical dimension and 
-its members are used to register and control non-monetary entries. Statistical dimension members can be used as allocation base in cost distribution and allocation 
+A **Cost element** corresponds to a cost-relevant item in the chart of accounts. A **Cost object** corresponds to any type of financial dimensions, such as products, cost centers, projects, and so on that you want to estimate, allocate costs to, or measure directly. A statistical dimension and its members are used to register non-monetary entries. Statistical dimension members can be used as allocation base in cost distribution and allocation 
 
 The following diagram illustrates the dimensions in Cost accounting.
 
 [![Cost accounting dimensions](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
 
-After the master data is imported into Cost accounting, you can use it to build various perspectives that provide insights to managers at all levels of the organization.
-By default, the imported cost elements are assigned the **Primary** type. Cost elements that are created manually are assigned the **Secondary** type. 
-Secondary cost elements can be used to define the cost roll-up rules that are used when you perform cost allocation.
+After the master data is imported into Cost accounting, you can use it to build various perspectives that provide insights to managers at all levels of the organization. By default, the imported cost elements are assigned the **Primary** type. Cost elements that are created manually are assigned the **Secondary** type. Secondary cost elements can be used to define the cost roll-up rules that are used when you perform cost allocation.
+
+
+
+
 
 
 
