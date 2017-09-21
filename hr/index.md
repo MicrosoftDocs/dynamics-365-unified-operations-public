@@ -5,7 +5,7 @@ title: Microsoft Dynamics 365 for Talent
 description: Talent streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. These processes include employee retention, benefits administration, training, performance reviews, and change management.
 author: rschloma
 manager: AnnBe
-ms.date: 06/19/2017
+ms.date: 09/19/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-talent
