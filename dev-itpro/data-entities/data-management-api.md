@@ -31,12 +31,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the data management platforms's package representational state transfer (REST) application programming interface (API). The package API lets you integrate with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, by using data packages.
+This topic describes the data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, by using data packages.
 
 ## Choosing an integration API
-Two APIs in Finance and Operations support file-based integration scenarios: the data management platform's package API and the recurring integrations API. Both APIs support both data import scenarios and data export scenarios. The following table describes the main decision points that you should consider when you're trying to decide which API to use. 
+Two APIs in Finance and Operations support file-based integration scenarios: the data management framework's package API and the recurring integrations API. Both APIs support both data import scenarios and data export scenarios. The following table describes the main decision points that you should consider when you're trying to decide which API to use. 
 
-| Decision point      | Recurring integrations API | Data management platform's package API |
+| Decision point      | Recurring integrations API | Data management framework's package API |
 |---------------------|----------------------------|-----------------------------|
 | Scheduling          | Scheduling in Finance and Operations | Scheduling outside Finance and Operations |
 | Format              | Files and data packages | Only data packages  |
@@ -45,10 +45,10 @@ Two APIs in Finance and Operations support file-based integration scenarios: the
 | Service type        | Custom service | Open Data Protocol (OData) action |
 | Availability        | February 2016 release (RTW) and later | Platform update 5 and later  |
 
-If you decide that the recurring integrations API meets your requirement better than the data management platform's package API, see [Recurring integrations](recurring-integrations.md). The rest of this topic discusses the data management platform's package API.
+If you decide that the recurring integrations API meets your requirement better than the data management framework's package API, see [Recurring integrations](recurring-integrations.md). The rest of this topic discusses the data management framework's package API.
 
 ## Authorization
-The data management platform's package API uses OAuth 2.0 for authorizing access. The API must be called by using a valid OAuth access token. For more details about OAuth 2.0 and Microsoft Azure Active Directory (Azure AD), see [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](/azure/active-directory/develop/active-directory-protocols-oauth-code). 
+The data management framework's package API uses OAuth 2.0 for authorizing access. The API must be called by using a valid OAuth access token. For more details about OAuth 2.0 and Microsoft Azure Active Directory (Azure AD), see [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](/azure/active-directory/develop/active-directory-protocols-oauth-code). 
 
 > [!NOTE]
 > When you use the Client Credentials Grant flow, Finance and Operations maintains an access control list. You can find the access control list at **System administration** > **Setup** > **Azure Active Directory applications**. The **Azure Active Directory applications** page shows the approved client IDs and the user security mapping that should be enforced when the API is called by using the Client Credentials Grant flow.
