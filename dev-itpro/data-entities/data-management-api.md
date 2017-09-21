@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, by using data packages.
+This topic describes the data management platforms's package representational state transfer (REST) application programming interface (API). The package API lets you integrate with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, by using data packages.
 
 ## Choosing an integration API
 Two APIs in Finance and Operations support file-based integration scenarios: the data management platform's package API and the recurring integrations API. Both APIs support both data import scenarios and data export scenarios. The following table describes the main decision points that you should consider when you're trying to decide which API to use. 
@@ -43,7 +43,7 @@ Two APIs in Finance and Operations support file-based integration scenarios: the
 | Transformation      | Support for Extensible Stylesheet Language Transformations (XSLT) if the data file is in XML format | Transformations that are external to the system |
 | Supported protocols | SOAP and REST | REST |
 | Service type        | Custom service | Open Data Protocol (OData) action |
-| Availability        | RTW and later | Microsoft Dynamics 365 for Operations platform update 5 and later  |
+| Availability        | February 2016 release (RTW) and later | Platform update 5 and later  |
 
 If you decide that the recurring integrations API meets your requirement better than the data management platform's package API, see [Recurring integrations](recurring-integrations.md). The rest of this topic discusses the data management platform's package API.
 
@@ -57,7 +57,10 @@ The data management platform's package API uses OAuth 2.0 for authorizing access
 The following APIs are used to do file (data package) imports.
 
 ### GetAzureWritableUrl
-The **GetAzureWritableUrl** API is used to get a writable blob URL. This method has a shared access token that is embedded in the URL. You can use this method to upload a data package to the Azure Blob storage container for Finance and Operations.
+The **GetAzureWritableUrl** API is used to get a writable blob URL. This method includes a shared access signature (SAS) token that is embedded in the URL. You can use this method to upload a data package to the Azure Blob storage container for Finance and Operations.
+
+> [!NOTE]
+> An SAS is valid only during an expiry time window. Any request that is issued after the window has passed returns an error. For more information, see [Using shared access signatures (SAS)](/azure/storage/common/storage-dotnet-shared-access-signature-part-1).
 
 ```CSharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetAzureWriteUrl
@@ -91,10 +94,8 @@ HTTP/1.1 200 OK
 | Parameter      | Description |
 |----------------|-------------|
 | string BlobId  | The blob ID of the allocated blob container. |
-| string BlobUrl | A writable blob URL shared access signature (SAS) to write to blob storage. |
+| string BlobUrl | A URL with an embedded SAS token. The URL can be used to write to blob storage. |
 
-> [!NOTE]
-> An SAS is valid only during an expiry time window. Any request that is issued after the window has passed returns an error. For more information, see [Using shared access signatures (SAS)](/azure/storage/common/storage-dotnet-shared-access-signature-part-1).
 
 ### ImportFromPackage
 The **ImportFromPackage** API is used to initiate an import from the data package that is uploaded to the Azure Blob storage that is associated with your implementation of Finance and Operations.
@@ -221,7 +222,7 @@ HTTP/1.1 200 OK
 
 | Parameter      | Description |
 |----------------|-------------|
-| string BlobUrl | A blob URL that has an embedded shared access token to download the exported data package. |
+| string BlobUrl | A blob URL that has an embedded SAS token. The URL can be used to download the exported data package. |
 
 ## Status check API	
 The following APIs are used to check status. They are used during both import flows and export flows.
