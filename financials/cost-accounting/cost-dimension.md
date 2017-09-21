@@ -48,7 +48,8 @@ The following diagram illustrates the dimensions in Cost accounting.
 
 After the master data is imported into Cost accounting, you can use it to build various perspectives that provide insights to managers at all levels of the organization. By default, the imported cost elements are assigned the **Primary** type. Cost elements that are created manually are assigned the **Secondary** type. Secondary cost elements can be used to define the cost roll-up rules that are used when you perform cost allocation.
 
-
+-  [Cost element dimensions](cost-elements.md)
+-  [Create cost elements](../tasks/create-cost-elements.md)
 
 
 
