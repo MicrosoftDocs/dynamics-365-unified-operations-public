@@ -40,7 +40,7 @@ Cost accounting is an independent module that requires data from other modules. 
 -  Cost objects
 -  Statistical dimensions
 
-A **Cost element** corresponds to a cost-relevant item in the chart of accounts. A **Cost object** corresponds to any type of financial dimensions, such as products, cost centers, projects, and so on that you want to estimate, allocate costs to, or measure directly. A statistical dimension and its members are used to register non-monetary entries. Statistical dimension members can be used as allocation base in cost distribution and allocation 
+A **Cost element** corresponds to a cost-relevant item in the chart of accounts. A **Cost object** corresponds to any type of financial dimensions, such as products, cost centers, projects, and so on that you want to estimate, allocate costs to, or measure directly. A **Statistical dimension** and its members are used to register non-monetary entries. Statistical dimension members can be used as allocation base in cost distribution and allocation 
 
 The following diagram illustrates the dimensions in Cost accounting.
 
