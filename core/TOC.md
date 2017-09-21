@@ -521,7 +521,7 @@
 ##### [Account structures](/dynamics365/unified-operations/financials/general-ledger/Default-dimensions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create account structures (Task guide)](/dynamics365/unified-operations/financials/general-ledger/tasks/create-account-structures?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Budgeting overview](/dynamics365/unified-operations/financials/budgeting/basic-budgeting-overview-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Create dimensions and import dimension members
+#### [Create dimensions and import dimension members](/dynamics365/unified-operations/financials/cost-accounting/cost-dimension?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
 ##### [Cost element dimensions](/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create cost elements (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-elements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cost object dimensions](/dynamics365/unified-operations/financials/cost-accounting/cost-objects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
