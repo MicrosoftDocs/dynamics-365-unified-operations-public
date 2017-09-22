@@ -1,11 +1,11 @@
----
+-
 # required metadata
 
 title: Deployment guidelines for cash registers for Norway
 description: This topic is the building and installation guide for the Retail localiaztion for Norway
 author: EvgenyPopovMBS
 manager: vastrup
-ms.date: 22/09/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
