@@ -67,6 +67,16 @@ Extensibility fundamentals includes principles and practices for how to make ext
 + [Class extension: Method wrapping and Chain of Command](method-wrapping-coc.md)
 + [Naming guidelines](naming-guidelines-extensions.md)
 
+## Upcoming - Fall Release 2017
+
+Here is an overview of the extensibility changes proposed for the Fall Release 2017. Please leave your comments on these in the blog posts or use the [Extensibility requests](extensibility-requests.md) to contact us. 
+
++ [Inventory Dimensions](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
++ [Enabling extensibility on Pricing](https://blogs.msdn.microsoft.com/mfp/2017/09/21/enabling-extensibility-on-pricing/)
++ [Map Extensions](https://blogs.msdn.microsoft.com/mfp/2017/09/22/table-map-extensions/)
+  + [Extending table maps used as interfaces](https://blogs.msdn.microsoft.com/mfp/2017/09/22/extending-table-maps-used-as-interfaces/)
+  + [Extending table maps used for versioning](https://blogs.msdn.microsoft.com/mfp/2017/09/22/extending-table-maps-used-for-versioning/)
+
 ## How do I..?
 
 Here is where you find "How do I?" topics on customizing specific object types or code. Most of these topics are brief and to the point. There are many topics here, so searching for a particular topic may be practical.
