@@ -218,7 +218,7 @@ As shown in the architecture diagram earlier in this article, several things dep
 
 ### Application lifecycle management
 
-A good ALM solution provides version control, builds, automated builds, planning tools, tracking tools, dashboards, customization, and more. The Retail SDK is organized in such a way that it aligns well with these capabilities. Visual Studio Online is a great tool and is recommended.
+A good ALM solution provides version control, builds, automated builds, planning tools, tracking tools, dashboards, customization, and more. The Retail SDK is organized in such a way that it supports these tasks. [Visual Studio Team Services](https://docs.microsoft.com/en-us/vsts/) is a great tool and is recommended.
 
 ### Branching and versioning
 
