@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure expense management
-description: This article describes the considerations and the decisions that you must make during the planning process before you configure Expense management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. In the Expense management area, you can store information about payment methods, travel requisitions, expense reports, and policies, among other things. 
+description: This article describes the considerations and the decisions that you must make during the planning process before you configure Expense management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: KimANelson
 manager: AnnBe
 ms.date: 08/29/2017
