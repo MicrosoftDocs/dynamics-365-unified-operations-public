@@ -187,7 +187,7 @@ The following table lists our websites. Our content websites are organized to su
 | [MSDN](http://aka.ms/AXMSDN)                                             | Hosts content from previous releases that is written for developers.                                                                                                                                                                       |
 | [TechNet](http://aka.ms/TechNet)                                         | Hosts content from previous releases that is written for IT professionals and application users.                                                                                                                                           |
 | [Dynamics Community](http://community.dynamics.com/)                  | Hosts blogs, forums, and videos.                                                                                                                                                                                                           |
-| [Microsoft.com/Dynamics/](http://www.microsoft.com/dynamics/)                 | Provides evaluation and sales information.                                                                                                                                                                                                 |
+| [Microsoft.com/dynamics365/](https://www.microsoft.com/en-us/dynamics365/home)                 | Provides evaluation and sales information.                                                                                                                                                                                                 |
 
 
 
