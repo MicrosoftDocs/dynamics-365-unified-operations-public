@@ -1,4 +1,4 @@
--
+---
 # required metadata
 
 title: Deployment guidelines for cash registers for Norway
