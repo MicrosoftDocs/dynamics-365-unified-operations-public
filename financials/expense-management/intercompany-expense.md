@@ -2,9 +2,7 @@
 # required metadata
 
 title: Intercompany expenses
-description: A worker who is employed by one legal entity in an organization might perform work for another legal 
-entity in the same organization. In this situation, you can use the intercompany expense feature to assign the worker’s 
-expenses to the legal entity for which the work was performed.
+description: A worker who is employed by one legal entity in an organization might perform work for another legal entity in the same organization. In this situation, you can use the intercompany expense feature to assign the worker’s expenses to the legal entity for which the work was performed.
 author: saraschi2
 manager: AnnBe
 ms.date: 09/19/2017
@@ -15,10 +13,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:
 audience: Application User
 # ms.devlang: 
-# ms.reviewer:  twheeloc
+ms.reviewer:  twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -32,6 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Intercompany expenses
 
 [!include[banner](../includes/banner.md)]
+
 A worker who is employed by one legal entity in an organization might perform work for another legal entity in the same organization. 
 In this situation, you can use the intercompany expense feature to assign the worker’s expenses to the legal entity for which the 
 work was performed. The legal entity that employs the worker is called the loaning legal entity. The legal entity for which the worker 
