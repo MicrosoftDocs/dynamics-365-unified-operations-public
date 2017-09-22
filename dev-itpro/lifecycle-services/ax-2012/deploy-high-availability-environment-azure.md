@@ -451,7 +451,7 @@ To learn more about how we’ve configured this environment for high availabilit
 -   [FSMO placement and optimization on Active Directory domain controllers](http://support.microsoft.com/kb/223346)
 -   [Configure SQL Server and storage settings](https://technet.microsoft.com/en-us/library/dd309734.aspx)
 -   [WSFC Quorum Modes and Voting Configuration](https://msdn.microsoft.com/en-us/library/hh270280.aspx)
--   [Remote Desktop Cmdlets in Windows PowerShell](https://technet.microsoft.com/en-us/library/jj215451.aspx)
+-   [Remote Desktop Cmdlets in Windows PowerShell](https://docs.microsoft.com/en-us/powershell/module/remotedesktop/?view=win10-ps)
 
 ## 9. Learn more about the service accounts for this environment
 The following sections provide information about the service accounts that were created when you deployed the environment.
