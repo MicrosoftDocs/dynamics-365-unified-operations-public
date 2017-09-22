@@ -1745,7 +1745,8 @@
 ##### [Define lean manufacturing work cells](/dynamics365/unified-operations/supply-chain/production-control/tasks/define-lean-manufacturing-work-cells?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Define lean schedule groups](/dynamics365/unified-operations/supply-chain/production-control/tasks/define-lean-schedule-groups?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Lean pegging from sales orders](/dynamics365/unified-operations/supply-chain/production-control/tasks/lean-pegging-sales-orders?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Create a subcontracted work cell for lean manufacturing](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-subcontracted-work-cell-lean-manufacturing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Create a subcontracted work cell for lean manufacturing](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-subcontracted-work-cell-lean-manufacturing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 
 ##### [Define discrete manufacturing resource group](/dynamics365/unified-operations/supply-chain/production-control/tasks/define-discrete-manufacturing-resource-group?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
