@@ -39,11 +39,11 @@ To start working with Warehouse management, you need to complete the setup of th
 
 You must configure components for inbound and outbound warehouse process workflows according to business requirements. The most important components that you must configure are wave templates, work templates, work pools, and location directives.
 
-- [Warehouse configuration](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration)
-- [Control warehouse work by using work templates and location directives](/dynamics365/unified-operations/supply-chain/warehousing/control-warehouse-location-directives)
-- [Set up mobile devices for warehouse work](/dynamics365/unified-operations/supply-chain/warehousing/configure-mobile-devices-warehouse)
-- [Set up a location directive for purchase order put-away](/dynamics365/unified-operations/supply-chain/transportation/set-up-location-directive-purchase-order-put-away)
-- [Set up a work template for purchase orders](/dynamics365/unified-operations/supply-chain/warehousing/set-up-work-template-purchase-orders)
+- [Warehouse configuration](warehouse-configuration.md)
+- [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)
+- [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
+- [Set up a location directive for purchase order put-away](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
+- [Set up a work template for purchase orders](./tasks/set-up-work-template-purchase-orders.md)
 
 ## Warehouse management processes
 - Integrated support for source documents for sales orders, returns, transfer orders, production orders, and kanban  

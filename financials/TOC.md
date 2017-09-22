@@ -521,7 +521,7 @@
 ##### [Account structures](/dynamics365/unified-operations/financials/general-ledger/Default-dimensions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create account structures (Task guide)](/dynamics365/unified-operations/financials/general-ledger/tasks/create-account-structures?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Budgeting overview](/dynamics365/unified-operations/financials/budgeting/basic-budgeting-overview-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Create dimensions and import dimension members
+#### [Create dimensions and import dimension members](/dynamics365/unified-operations/financials/cost-accounting/cost-dimension?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
 ##### [Cost element dimensions](/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create cost elements (Task guide)](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-cost-elements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cost object dimensions](/dynamics365/unified-operations/financials/cost-accounting/cost-objects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1745,7 +1745,8 @@
 ##### [Define lean manufacturing work cells](/dynamics365/unified-operations/supply-chain/production-control/tasks/define-lean-manufacturing-work-cells?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Define lean schedule groups](/dynamics365/unified-operations/supply-chain/production-control/tasks/define-lean-schedule-groups?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Lean pegging from sales orders](/dynamics365/unified-operations/supply-chain/production-control/tasks/lean-pegging-sales-orders?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Create a subcontracted work cell for lean manufacturing](/dynamics365/unified-operations/financials/cost-accounting/tasks/create-subcontracted-work-cell-lean-manufacturing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Create a subcontracted work cell for lean manufacturing](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-subcontracted-work-cell-lean-manufacturing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 
 ##### [Define discrete manufacturing resource group](/dynamics365/unified-operations/supply-chain/production-control/tasks/define-discrete-manufacturing-resource-group?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
