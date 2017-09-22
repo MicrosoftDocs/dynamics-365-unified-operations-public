@@ -193,7 +193,7 @@ The following table lists our websites. Our content websites are organized to su
 
 See also
 --------
-[Finance and Operations help system (downloadable fact sheet)](https://mbs.microsoft.com/files/public/CS/AX2012R3/DynamicsAXHelpSystemFactSheet.pdf)
+[Finance and Operations help system (downloadable fact sheet)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 
 [Task Recorder](../user-interface/task-recorder.md)
 
