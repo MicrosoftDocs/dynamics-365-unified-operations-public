@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Channel DB extensions
-description: 
+title: Channel database (DB) extensions
+description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
 ms.date: 09/15/207
@@ -29,19 +29,19 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Channel DB extensions
+# Channel database (DB) extensions
 
-Channel database hold transitional and master data from one or more retail channels, such as Online store or brick-and-mortar stores. The master data is pushed down from the Retail Headquarters to the channel database using the commerce data exchange (CDX) and all the transactional data stored in the channel database is pulled back to the headquarters using the CDX.
+The channel database (channel DB) holds transitional and master data from one or more retail channels, such as an online store or a brick-and-mortar store. The master data is pushed down from the Retail Headquarters (Retail HQ) to the channel database using the commerce data exchange (CDX). The transactional data stored in the channel database is pulled back to the headquarters using the CDX.
 
-In this topic we will explain how we can extend the channel database for different scenarios, the steps mentioned here applies only to Dynamics 365 for Retail, Dynamics 365 for Finance and Operations, Enterprise edition.
+In this topic we explain how to extend the channel database for different scenarios. The steps here apply only to Dynamics 365 for Retail, Dynamics 365 for Finance and Operations, Enterprise edition.
 
-Before going to the different scenarios for extension, lets understand some of the new enhancement we did in channel DB extensions:
+Before going to the different scenarios for extension, it's important to understand the recent enhancements to channel DB extensions:
 
-**Ext Schema:**
+## Ext Schema
 
-In Dynamics 365 for Retail, Dynamics 365 for Finance and Operations, Enterprise edition we introduced new schema called ext schema to support extensions. In previous versions if you want to add any extension in channel DB you will do in crt or ax schema but in Dynamics 365 for Retail, Dynamics 365 for Finance and Operations, Enterprise edition versions you should not to do any changes in Microsoft schema, all changes should be done in **ext schema**, if you modify anything in our schema then during deployment in Lifecycle service it will fail saying you don’t have permission to modify the crt, ax or dbo schema. The rule is any change to channel DB should be done in ext schema.
+In Dynamics 365 for Retail and Dynamics 365, Finance and Operations, Enterprise edition we introduced a new schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In Dynamics 365 for Retail, Dynamics 365 for Finance and Operations, Enterprise edition version you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services will fail. The error reports taht don’t have permission to modify the CRT, AX, and DBO schemas. 
 
-**Best practice and Don’ts for channel DB extensions:**
+## Best practice and Don’ts for channel DB extensions
 
 1.  Don’t modify anything in crt, ax or dbo. Use the **ext schema** for all extension scenarios.
 
