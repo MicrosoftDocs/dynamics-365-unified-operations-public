@@ -52,69 +52,38 @@ In Dynamics 365 for Retail and Dynamics 365, Finance and Operations, Enterprise 
 # DON'T DO THIS
 
 ```sql
-    MERGE INTO [ax].RETAILCUSTPREFERENCE   --DONT access ax schema object
-
-     USING (SELECT DISTINCT
-
-     tp.PARENTRECID, tp.PROPERTYVALUE as [EMAILOPTIN], ct.ACCOUNTNUM, ct.DATAAREAID
-
-     FROM @TVP_EXTENSIONPROPERTIESTABLETYPE tp
-
-     JOIN [ax].CUSTTABLE ct on ct.RECID = tp.PARENTRECID  --DONT access ax schema object
-
-     WHERE tp.PARENTRECID &lt;&gt; 0 and tp.PROPERTYNAME = 'EMAILOPTIN') AS SOURCE
-
-     ON [ax].RETAILCUSTPREFERENCE.RECID = SOURCE.PARENTRECID   
-
-     and [ax].RETAILCUSTPREFERENCE.DATAAREAID = SOURCE.DATAAREAID --DONT access ax schema object
-
-     and [ax].RETAILCUSTPREFERENCE.ACCOUNTNUM = SOURCE.ACCOUNTNUM
-
-     WHEN MATCHED THEN
-
-     UPDATE SET [EMAILOPTIN] = source.[EMAILOPTIN]
-
-     WHEN NOT MATCHED THEN
-
-     INSERT
-
-     (
-
-       RECID
-
-       ,DATAAREAID
-
-       ,EMAILOPTIN
-
-       ,ACCOUNTNUM
-
-     )
-
-     VALUES
-
-     (
-
-       SOURCE.PARENTRECID
-
-       ,SOURCE.DATAAREAID
-
-       ,SOURCE.EMAILOPTIN
-
-       ,SOURCE.ACCOUNTNUM
-
-     );
-
-     SELECT @i_Error = @@ERROR;
-
-     IF @i_Error &lt;&gt; 0
-
+MERGE INTO [ax].RETAILCUSTPREFERENCE   --DONT access ax schema object
+USING (SELECT DISTINCT
+tp.PARENTRECID, tp.PROPERTYVALUE as [EMAILOPTIN], ct.ACCOUNTNUM, ct.DATAAREAID
+FROM @TVP_EXTENSIONPROPERTIESTABLETYPE tp
+JOIN [ax].CUSTTABLE ct on ct.RECID = tp.PARENTRECID  --DONT access ax schema object
+WHERE tp.PARENTRECID &lt;&gt; 0 and tp.PROPERTYNAME = 'EMAILOPTIN') AS SOURCE
+ON [ax].RETAILCUSTPREFERENCE.RECID = SOURCE.PARENTRECID   
+and [ax].RETAILCUSTPREFERENCE.DATAAREAID = SOURCE.DATAAREAID --DONT access ax schema object
+and [ax].RETAILCUSTPREFERENCE.ACCOUNTNUM = SOURCE.ACCOUNTNUM
+WHEN MATCHED THEN
+UPDATE SET [EMAILOPTIN] = source.[EMAILOPTIN]
+WHEN NOT MATCHED THEN
+INSERT
+(
+    RECID
+    ,DATAAREAID
+    ,EMAILOPTIN
+    ,ACCOUNTNUM
+)
+VALUES
+(
+    SOURCE.PARENTRECID
+    ,SOURCE.DATAAREAID
+    ,SOURCE.EMAILOPTIN
+    ,SOURCE.ACCOUNTNUM
+);
+SELECT @i_Error = @@ERROR;
+IF @i_Error &lt;&gt; 0
     BEGIN
-
     SET @i_ReturnCode = @i_Error;
-
     GOTO exit_label;
-
-    END;
+END;
 ```
 
 1.  If you are creating extension table or new table all should be done in ext schema.
