@@ -3,7 +3,7 @@
 
 title: Extensible control programming reference
 description: This topic provides reference content for extensible control programming.
-author: RobinARH
+author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
