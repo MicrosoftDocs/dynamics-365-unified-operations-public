@@ -166,6 +166,7 @@ In this scenario we will explain how to create a new table and add it to the cha
 
 If you are extending existing table, then you must either use attributes if supported for that entity or create and extended table (new table) with same primary key as the parent table. The following script extends a table.
 
+```sql
 CREATE TABLE [ext].[RETAILTRANSACTIONTABLE](
 [TRANSACTIONID] [nvarchar](44) NOT NULL, -- FK to [crt].RETAILTRANSACTIONTABLE
 [ISB2BSALES] [int] NOT NULL DEFAULT (0),
