@@ -2658,7 +2658,7 @@
 ### [Create, edit, or browse a BPM library](/dynamics365/unified-operations/dev-itpro/lifecycle-services/creating-editing-browsing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Complete tasks in a BPM library](/dynamics365/unified-operations/dev-itpro/lifecycle-services/complete-tasks-bpm?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Use activity diagrams](/dynamics365/unified-operations/dev-itpro/lifecycle-services/using-activity-diagrams?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Synchronize a BPM libary with Visual Studio Team Services (VSTS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/implementation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Synchronize a BPM libary with Visual Studio Team Services (VSTS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/synchronize-bpm-vsts?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Business process modeler flowcharts](/dynamics365/unified-operations/dev-itpro/lifecycle-services/flowcharts-business-process-modeler?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Upload custom business processes](/dynamics365/unified-operations/dev-itpro/lifecycle-services/upload-business-processes-bpm-task-recorder?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Monitoring and diagnostics ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/monitoring-diagnostics?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
