@@ -97,10 +97,11 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 -   [Add properties to a sales order](add-properties-sales-order.md)
 
 ## Retail SDK
--   [Retail SDK Overview](retail-sdk\retail-sdk-overview.md)
--   [Retail SDK packaging](retail-sdk\retail-sdk-packaging.md)
--   [Integrate the Retail SDK with the continuous build system (VSTS)](retail-sdk\integrate-retail-sdk-continuous-build.md)
--   [Retail SDK samples](retail-sdk\retail-sdk-samples.md)
+- [Retail SDK Overview](retail-sdk\retail-sdk-overview.md)
+- [Retail SDK packaging](retail-sdk\retail-sdk-packaging.md)
+- [Integrate the Retail SDK with the continuous build system (VSTS)](retail-sdk\integrate-retail-sdk-continuous-build.md)
+- [Retail SDK samples](retail-sdk\retail-sdk-samples.md)
+- [Channel database (DB) extensions](channel-db-extensions.md) 
 
 ## eCommerce
 -   [e-Commerce platform](ecommerce-platform.md)

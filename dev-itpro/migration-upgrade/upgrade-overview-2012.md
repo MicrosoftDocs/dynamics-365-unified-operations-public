@@ -187,8 +187,6 @@ For details, see [Validate: Prepare for go live](upgrade-go-live-prep.md).
 
 
 ### Supported upgrade paths
-As of June 2017, upgrade to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, version 0617 is supported from Microsoft Dynamics AX 2012 R3. All cumulative updates (CUs) of AX 2012 R3 are supported.
+Upgrade to the cloud version of Finance and Operations is supported from Microsoft Dynamics AX 2012 R3. All cumulative updates (CUs) of AX 2012 R3 are supported. 
 
-Microsoft Dynamics AX 2012 R2 and Microsoft Dynamics AX 2012 RTM aren't currently supported. Support will be added later in 2017.
-
-Only upgrade to the cloud-deployed version of Finance and Operations is supported. Upgrade to the on-premises version isn't supported. Support for upgrade to the on-premises version will be added later in 2017.
+Upgrade from Microsoft Dynamics AX 2012 R2 and Microsoft Dynamics AX 2012 RTM aren't currently supported. Upgrade to the on-premises version isn't currently supported, but will be added in the future. 
