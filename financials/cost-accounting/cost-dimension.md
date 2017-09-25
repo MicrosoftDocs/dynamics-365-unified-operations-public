@@ -34,19 +34,19 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
-Cost accounting is an independent module that requires data from other modules. Master data is categorized into 
+Cost accounting is an independent module that requires data from other modules. This data is categorized into the following:
 
 -  Cost elements
 -  Cost objects
 -  Statistical dimensions
 
-A **Cost element** corresponds to a cost-relevant item in the chart of accounts. A **Cost object** corresponds to any type of financial dimensions, such as products, cost centers, projects, and so on that you want to estimate, allocate costs to, or measure directly. A **Statistical dimension** and its members are used to register non-monetary entries. Statistical dimension members can be used as allocation base in cost distribution and allocation 
+A **Cost element** corresponds to a cost-relevant item in the chart of accounts. A **Cost object** corresponds to any type of financial dimension, such as products, cost centers, and projects that you want to estimate, allocate costs to, or measure directly. A **Statistical dimension** and its members are used to register non-monetary entries. Statistical dimension members can be used as an allocation base in cost distribution and allocation 
 
-The following diagram illustrates the dimensions in Cost accounting.
+The following diagram illustrates the dimensions that are used in Cost accounting.
 
 [![Cost accounting dimensions](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
 
-After the master data is imported into Cost accounting, you can use it to build various perspectives that provide insights to managers at all levels of the organization. By default, the imported cost elements are assigned the **Primary** type. Cost elements that are created manually are assigned the **Secondary** type. Secondary cost elements can be used to define the cost roll-up rules that are used when you perform cost allocation.
+After the data is imported into Cost accounting, you can use it to build various perspectives that provide insights to managers at all levels of the organization. The following topics provide information about creating dimensions and importing dimension members. 
 
 -  [Cost element dimensions](cost-elements.md)
 -  [Create cost elements (Task guide)](./tasks/create-cost-elements.md)
