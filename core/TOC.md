@@ -174,7 +174,7 @@
 
 ##### [Best practices for importing vouchers using the General journal entity](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-#### Development for data management
+#### Development for data entities
 ##### [Create new data entities](/dynamics365/unified-operations/dev-itpro/data-entities/build-consuming-data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Data entity properties](/dynamics365/unified-operations/dev-itpro/data-entities/behavioral-properties-data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create compute columns and virtual fields](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -193,6 +193,9 @@
 ##### [Configure financial cross-company data sharing](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create a record template to facilitate data entry](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Use a record template to create a new record](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/use-record-template-new-record?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+#### Data integration APIs
+##### [Data management package API](/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Integration patterns
 ##### [Service endpoints](/dynamics365/unified-operations/dev-itpro/data-entities/services-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
