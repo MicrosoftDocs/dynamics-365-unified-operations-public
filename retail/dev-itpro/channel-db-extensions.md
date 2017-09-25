@@ -39,17 +39,15 @@ Before going to the different scenarios for extension, it's important to underst
 
 ## Ext Schema
 
-In Dynamics 365 for Retail and Dynamics 365, Finance and Operations, Enterprise edition we introduced a new schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In Dynamics 365 for Retail, Dynamics 365 for Finance and Operations, Enterprise edition version you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services will fail. The error reports taht don’t have permission to modify the CRT, AX, and DBO schemas. 
+In Dynamics 365 for Retail and Dynamics 365 Finance and Operations, Enterprise edition we introduced a new schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In Dynamics 365 for Retail and Dynamics 365 for Finance and Operations, Enterprise edition version you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services will fail. The error reports taht don’t have permission to modify the CRT, AX, and DBO schemas. 
 
-## Best practice and Don’ts for channel DB extensions
+## Best practices for channel DB extensions
 
-1.  Don’t modify anything in crt, ax or dbo. Use the **ext schema** for all extension scenarios.
+- Don’t modify anything in the CRT, AX, or DBO schemas. Use the **ext schema** for all extension scenarios.
+- Don’t access any CRT, AX, or DBO objects in the **ext schema**. You must use the commerce runtime data service to access any channel DB artifacts.
 
-2.  Don’t access any crt, ax or dbo object in ext schema. You must use the commerce runtime data service to access any channel DB artifacts.
-
-    Example: Don’t access any of ax or crt schema in your extension like below, you should use the CRT data service to get the primary key value and using that you should insert into your extension table not by accessing our objects.
-
-# DON'T DO THIS
+### Don't do this
+The following is an example of what you should not do. Instead, you should use the CRT data service to get the primary key value and then use the primary key to insert into your extension table.
 
 ```sql
 MERGE INTO [ax].RETAILCUSTPREFERENCE   --DONT access ax schema object
@@ -86,139 +84,85 @@ IF @i_Error &lt;&gt; 0
 END;
 ```
 
-1.  If you are creating extension table or new table all should be done in ext schema.
 
-2.  Don’t modify our views, procedures, functions or any of our DB artifacts and don’t access/call any of our DB artifacts including views, defined types, functions and procedures from your extensions.
-
-3.  To access our DB artifacts, use CRT data service. Ex: if you want to extend our product search view to search some custom fields or to show custom columns in show journal views the don’t modify our views or procedures or functions in SQL use the respective CRT data service and do the extension either by overriding or using post triggers and then call your extended procedures.
-
-    **Example:**
-
-# DON'T DO THIS
+### Don't do this
+- If you are creating extension table or new table all should be done in ext schema.
+- Don’t modify any views, procedures, functions or any of the database artifacts.
+- Don’t access or call any of any database artifacts including views, defined types, functions and procedures from your extensions.
+- To access the database artifacts, use the CRT data service. For example, suppose you want to extend the product search view to search some custom fields or to show custom columns in show journal views. Don’t modify the views or procedures or functions in SQL. Instead, use the CRT data service and do the extension either by overriding or using post triggers and then call your extended procedures.
 
 ```sql
-   CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
-
-   (
-
-     SELECT
-
-     sdht.DAY,
-
-     sdht.OPENTIME,
-
-     sdht.CLOSINGTIME,
-
-     sdht.RECID,
-
-     rst.STORENUMBER
-
-     FROM [ext].[CONTOSORETAILSTOREHOURSTABLE\] sdht
-
-     INNER JOIN [ax].RETAILSTORETABLE rst ON rst.RECID = sdht.RETAILSTORETABLE  --DONT access ax schema object
-
-   )
+CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
+(
+    SELECT
+    sdht.DAY,
+    sdht.OPENTIME,
+    sdht.CLOSINGTIME,
+    sdht.RECID,
+    rst.STORENUMBER
+    FROM [ext].[CONTOSORETAILSTOREHOURSTABLE\] sdht
+    INNER JOIN [ax].RETAILSTORETABLE rst ON rst.RECID = sdht.RETAILSTORETABLE  --DONT access ax schema object
+)
 ```
 
-1.  All the extension table should have grant permission on UersRole and DeployExtensibilityRole
+## Adding extensions
+1. All the extension tables should have grant permission on **UserRole** and **DeployExtensibilityRole**.
 
-```sql
+    ```sql
     GRANT EXECUTE ON [ext].[EXTTABLENAME] TO [DeployExtensibilityRole];
+        GO
+        GRANT EXECUTE ON [ext].[EXTTABLENAME] TO [UsersRole];
+        GO
+    ```
 
+2. Grant **DataSyncUsersRole** permission if your table is going to send receive data from HQ.
+
+    ```sql
+    GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[EXTTABLENAME] TO [DataSyncUsersRole]
     GO
+    ```
 
-     
-    GRANT EXECUTE ON [ext].[EXTTABLENAME] TO [UsersRole];
+3. If you are creating extended table and want to sync the data back to HQ, then have the primary column of the parent table in the extended table.
+4. Always prefix your table, for example, **ContosoRetailTransactionTable**, so that you can avoid conflicts with other partner/ISV customizations.
 
-    GO
-```
-
-2.  Grant DataSyncUsersRole permission if you table is going to send receive data from HQ.
-
-```sql
- GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[EXTTABLENAME] TO [DataSyncUsersRole]
-
- GO
-```
-
-1.  If your creating extended table and want to sync the data back to HQ then have the primary column of the parent table in the extended table.
-
-2.  Always prefix your table. Ex:ContosoRetailTransactionTable, so that you can avoid conflicts with other partner/ISV customization.
-
-**Attributes:**
+## Attributes
 
 We extended the attribute framework in HQ to support attributes for Customers, Customer orders, cash and carry transactions and call center orders.
 
-**Customer attributes** - With the new customer attribute framework, you can use configurations to add new fields to the customer add/edit or customer details screens in POS or HQ. After configuring the customer attribute group in retail parameters, POS and HQ will automatically show up the new attribute without any code change or customization. The screen layout designer will also be configured to show the customer attributes in the transaction screen - customer panel.
+### Customer attributes
+With the new customer attribute framework, you can use configurations to add new fields to the customer add/edit or customer details screens in POS or HQ. After configuring the customer attribute group in retail parameters, POS and HQ will automatically show up the new attribute without any code change or customization. The screen layout designer will also be configured to show the customer attributes in the transaction screen - customer panel.
 
-**Order attributes** - The attribute framework will be extended to support attributes in cash and carry transactions, customer orders, and call center orders. You will be able to edit and set values directly in HQ or in CRT. All this can be done through configurations, without any database changes. (You can customization the attribute values for core business logic, not required for basic CRUD operations.)
+### Order attributes
+The attribute framework was extended to support attributes in cash and carry transactions, customer orders, and call center orders. You can edit and set values directly in HQ or in CRT. All this can be done through configurations, without any database changes. (You can customization the attribute values for core business logic, not required for basic CRUD operations.) Previously, you had to create new tables in HQ and channel DB, and then modify CRT to do this. Now all the attribute creation can be done through configuration. Before creating the extension table for customer master or for order/transaction scenarios, read the attribute article on customer and order attributes.
 
-Previously you have to create new table in HQ, channel DB and modify CRT to do this. Now all the attribute creation can be done through configuration. Before creating the extension table for customer master or for order/transaction scenarios, read the attribute article on customer and order attributes.
+## Adding a new table
 
-**New table:**
+In this scenario we will explain how to create a new table and add it to the channel DB. All extension code has access to the **ext schema**.
 
-In this scenario we will talk about to create a new table and add it to the channel DB. We did changes in CRT to make all extension code have access to the ext schema.
+1. Create a new table in the channel database in the **ext schema** either using SQL Server Management Studio Designer or using SQL scripts. The following is an example SQL script.
 
-**Steps to create a new table:**
+    ```sql
+    -- Create the extension table to store the custom fields.
+    IF (SELECT OBJECT_ID('[ext].[CONTOSORETAILSTOREHOURSTABLE]')) IS NULL
+    BEGIN
+    CREATE TABLE [ext].[CONTOSORETAILSTOREHOURSTABLE](
+    [RECID] [bigint] NOT NULL,
+    [DAY] [int] NOT NULL DEFAULT ((0)),
+    [OPENTIME] [int] NOT NULL DEFAULT ((0)),
+    [CLOSINGTIME] [int] NOT NULL DEFAULT ((0)),
+    [RETAILSTORETABLE] [bigint] NOT NULL DEFAULT ((0)),
+    CONSTRAINT [I_CONTOSORETAILSTOREHOURSTABLE_RECID] PRIMARY KEY CLUSTERED
+    (
+        [RECID] ASC
+    ) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+    ) ON [PRIMARY]
+    ALTER TABLE [ext].[CONTOSORETAILSTOREHOURSTABLE] WITH CHECK ADD CHECK (([RECID]&lt;&gt;(0)))
+    END
+    GO
+    GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[CONTOSORETAILSTOREHOURSTABLE] TO [DataSyncUsersRole]
+    GO
 
-1.  Create a new table in the channel database in the **ext schema** either using SQL server management studio designer or using SQL scripts.
-
- **Sample script:**
-
-```sql
-     /**
-
-     * SAMPLE CODE NOTICE
-
-     * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES,
-
-     * WHETHER EXPRESS OR IMPLIED, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
-
-     * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-
-     * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-
-     */
-
-     -- Create the extension table to store the custom fields.
-
-     IF (SELECT OBJECT_ID('[ext].[CONTOSORETAILSTOREHOURSTABLE]')) IS NULL
-
-     BEGIN
-
-     CREATE TABLE [ext].[CONTOSORETAILSTOREHOURSTABLE](
-
-     [RECID] [bigint] NOT NULL,
-
-     [DAY] [int] NOT NULL DEFAULT ((0)),
-
-     [OPENTIME] [int] NOT NULL DEFAULT ((0)),
-
-     [CLOSINGTIME] [int] NOT NULL DEFAULT ((0)),
-
-     [RETAILSTORETABLE] [bigint] NOT NULL DEFAULT ((0)),
-
-     CONSTRAINT [I_CONTOSORETAILSTOREHOURSTABLE_RECID] PRIMARY KEY CLUSTERED
-
-     (
-
-     [RECID] ASC
-
-     )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-
-     ) ON [PRIMARY]
-
-     ALTER TABLE [ext].[CONTOSORETAILSTOREHOURSTABLE] WITH CHECK ADD CHECK (([RECID]&lt;&gt;(0)))
-
-     END
-
-     GO
-
-     GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[CONTOSORETAILSTOREHOURSTABLE] TO [DataSyncUsersRole]
-
-     GO
-
-    **Extending existing table:**
+## Extending an existing table
 
     Even if you are extending existing table, Ex: if you want to store some custom fields in transaction table, sales line or payment trans etc. you should not modify our tables. Either use attributes if supported for that entity or create extended table (new table) with same primary key as the parent table.
 
