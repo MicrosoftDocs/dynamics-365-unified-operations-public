@@ -32,17 +32,17 @@ ms.dyn365.ops.version: July 2017 update
 [!include[banner](../includes/banner.md)]
 
 
-Cost accounting is an independent module that requires the following three base entities are configured correctly in Dynamics 365 for Finance and Operations, Enterprise edition.
+Cost accounting is an independent module that requires the following base entities are configured correctly in Dynamics 365 for Finance and Operations, Enterprise edition.
 
 -  Currency
 -  Exchange rate
 -  Fiscal calendar  
 
-Before you use the module, make sure you have currency, exchange rate, and fiscal calendar defined for your company. 
+Before you use the Cost accounting module, you need to have a currency, exchange rate, and fiscal calendar defined for your company. 
 
-To learn more about these three entities, you can take the eLearning class [Module 2 Currency and exchange rate setup](https://mbspartner.microsoft.com/AX/CourseModules/1215). (requires CustomerSource account)
+To learn more about these entities, take the eLearning training course [Module 2 Currency and exchange rate setup](https://mbspartner.microsoft.com/AX/CourseModules/1215) (requires CustomerSource account).
 
-## Find related tasks
+## Additional tasks
 
 -  [Fiscal calendars, fiscal years, and periods](../budgeting/fiscal-calendars-fiscal-years-periods.md)
 
