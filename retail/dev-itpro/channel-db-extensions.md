@@ -164,51 +164,33 @@ In this scenario we will explain how to create a new table and add it to the cha
 
 ## Extending an existing table
 
-    Even if you are extending existing table, Ex: if you want to store some custom fields in transaction table, sales line or payment trans etc. you should not modify our tables. Either use attributes if supported for that entity or create extended table (new table) with same primary key as the parent table.
+If you are extending existing table, then you must either use attributes if supported for that entity or create and extended table (new table) with same primary key as the parent table. The following script extends a table.
 
-    **Sample:**
-
-     CREATE TABLE [ext].[RETAILTRANSACTIONTABLE](
-
-     [TRANSACTIONID] [nvarchar](44) NOT NULL, -- FK to [crt].RETAILTRANSACTIONTABLE
-
-     [ISB2BSALES] [int] NOT NULL DEFAULT (0),
-
-     [EXTERNALID] [nvarchar](20) NOT NULL DEFAULT (''),
-
-     CONSTRAINT [EXT_RETAILTRANSACTIONTABLE_PK] PRIMARY KEY CLUSTERED
-
-     (
-
-     [TRANSACTIONID]
-
-     ) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-
+CREATE TABLE [ext].[RETAILTRANSACTIONTABLE](
+[TRANSACTIONID] [nvarchar](44) NOT NULL, -- FK to [crt].RETAILTRANSACTIONTABLE
+[ISB2BSALES] [int] NOT NULL DEFAULT (0),
+[EXTERNALID] [nvarchar](20) NOT NULL DEFAULT (''),
+CONSTRAINT [EXT_RETAILTRANSACTIONTABLE_PK] PRIMARY KEY CLUSTERED
+(
+    [TRANSACTIONID]
+) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
      ) ON [PRIMARY]
-
-     GO
-
-     GRANT INSERT ON [ext].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
-
-     GO
-
-     GRANT DELETE ON [ext].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
-
-     GO
-
-     GRANT UPDATE ON [ext\].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
-
-     GO
-
-     GRANT SELECT ON [ext].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
-
-     GO
+GO
+GRANT INSERT ON [ext].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
+GO
+GRANT DELETE ON [ext].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
+GO
+GRANT UPDATE ON [ext\].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
+GO
+GRANT SELECT ON [ext].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
+GO
 ```
-**New Views, Stored procedure, functions or defined types:**
 
-All new stored procedures, views or functions should be created in the ext schema like the tables and don’t access/call our DB artifacts from your procedures, views or functions.
+## Adding new views, stored procedure, functions, and defined types
 
-**Deployment check:**
+All new stored procedures, views or functions must be created in the **ext schema**. Don't access or call our database artifacts from your procedures, views, or functions.
 
-During deployment we will check if there is any modification to our DB artifacts, If you modified any of our crt, ax or dbo schema objects or accessed it for any scenario directly in SQL then deployment will be failed, you should follow the best practices mentioned above.
+## Deployment checks
+
+The deployment process determines if there are any modification to the database artifacts. If you have attempted to modify the CRT, AX, or DBO schema objects, or access them for any scenario directly in SQL, then deployment will fail.
 
