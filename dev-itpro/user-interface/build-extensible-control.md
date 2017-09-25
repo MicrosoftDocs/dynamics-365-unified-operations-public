@@ -3,7 +3,7 @@
 
 title: Build an extensible control
 description: This topic describes how to create new application controls that have a property sheet in Visual Studio and have server-side business logic.
-author: RobinARH
+author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 24291
 ms.assetid: ccc9c341-a233-4bb0-93e7-399d19fdea18
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shshabazz
+ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
