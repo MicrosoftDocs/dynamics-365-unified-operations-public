@@ -37,6 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 Learn how to make Microsoft Dynamics 365 for Finance and Operations, Enterprise edition work for your business, using the resources below to find great content for end users, developers, and IT professionals. 
 
 Much of this content also applies to the related products: Microsoft Dynamics 365 for Retail and Microsoft Dynamics 365 for Talent. 
+
 <div id="main" class="v2">
 
 <ul class="panelContent cardsF">
