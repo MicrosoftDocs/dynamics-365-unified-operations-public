@@ -57,9 +57,12 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
                         <p><a href="../dev-itpro/get-started/purchase-on-premises">Buy Finance and Operations (on-premises)</a></p>
                         <br>
                         <H3><a href="hr/hr-landing-page">Human resources</a></h3>
+<p><a href="../talent/manage-benefit-program">Benefits</a></p>
+<p><a href="../talent/performance-management-overview">Employee development and training</a></p>
+<p><a href="../talent/questionnaires">Questionnaire</a></p></p>
 <p><a href="hr/manage-recruiting-process">Recruiting</a></p>
-<p><a href="hr/localizations/noam-usa-payroll">US payroll</a></p>
-                    </div>
+<p><a href="hr/localizations/noam-usa-payroll">US payroll</a>
+                </div>
                 </div>
             </div>
         </div>
