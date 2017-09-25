@@ -2096,6 +2096,7 @@
 #### [Sample for Retail POS integration with control units for Sweden](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Retail SDK packaging](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-packaging?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Retail SDK samples ](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-samples?toc=dynamics365/unified-operations/retail/toc.json)
+#### [Channel database (DB) extensions](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/channel-db-extensions?toc=dynamics365/unified-operations/retail/toc.json)
 
 ### Commerce runtime
 #### [Loyalty extension](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/loyalty-extension-sample?toc=dynamics365/unified-operations/retail/toc.json)
