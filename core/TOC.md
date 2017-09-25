@@ -2647,7 +2647,7 @@
 ### [Configure security](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-lcs-security?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Issue search](/dynamics365/unified-operations/dev-itpro/lifecycle-services/issue-search-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Configuration manager](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configuration-manager-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Set up Configuration manager ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/set-up-configuration-manager-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Set up Configuration manager](/dynamics365/unified-operations/dev-itpro/lifecycle-services/set-up-configuration-manager-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Configure the code upgrade service](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-execute-code-upgrade?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Create a methodology ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/create-methodology?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Business process modeler](/dynamics365/unified-operations/dev-itpro/lifecycle-services/bpm-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
