@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 There are multiple ways to get started with Cost accounting. Each of the following topics provides specific information that will help you to learn more about this module.
 
--  [Cost accounting Learning map](cost-accounting-home-page.md)
+-  [Learning map](cost-accounting-home-page.md)
 -  [Cost accounting terminology](terms-cost-accounting.md)
--  [Cost accounting hands-on labs](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)|
+-  [Hands-on labs](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
 
 ## Videos
 
