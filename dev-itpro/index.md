@@ -1,1 +1,0 @@
-# Welcome to d365Ops-DevITPro!
