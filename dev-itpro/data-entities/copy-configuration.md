@@ -6,7 +6,7 @@ description: This topic describes how to use a configuration data project and co
 
 author: mikefalkner
 manager: AnnBe
-ms.date: 09/18/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
