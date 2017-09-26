@@ -58,7 +58,7 @@ Select a feature area to learn more about it.
 
 ### Get started  
 
-These short videos help you get started with the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update.
+These short videos help you get started with the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
 
 -  [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 -  [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
@@ -66,8 +66,8 @@ These short videos help you get started with the new features that are in Micros
 -  [Approve purchase orders on a mobile device](https://youtu.be/gZ-gOlJe7H8)
 -  [Visual scheduling with Gantt chart for production and batch orders](https://youtu.be/BtbuShkGj4I)
 
-### Tech talks
-Most of these discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
+### Tech conference recordings
+Most of these recordings discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
 
 -  <a href="https://youtu.be/zotrj3SbCl4">Product Configurator in Microsoft Dynamics AX</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Master Planning - tips and tricks for troubleshooting performance</a>

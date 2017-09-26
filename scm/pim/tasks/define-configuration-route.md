@@ -3,7 +3,7 @@
  
 title: Define configuration routes
 description: This procedure focuses on defining a configuration route that determines the sequence in which the configuration groups will be presented. 
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

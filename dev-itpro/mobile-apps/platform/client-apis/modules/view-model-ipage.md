@@ -4,7 +4,7 @@ title: Page
 description: The IPage interface encapsulates the various properties, life cycle and event hooks associated with a page in a workspace.
 author: shadykdc
 manager: AnnBe
-ms.date: 
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

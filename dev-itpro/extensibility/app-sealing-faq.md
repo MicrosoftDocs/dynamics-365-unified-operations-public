@@ -79,4 +79,4 @@ On-premises solutions will follow the same patterns as cloud solutions. Therefor
     
 ## How often will Microsoft provide external updates so that partners can see what extensibility enhancements have been made?
 
-We plan to provide monthly Community Technology Previews (CTPs) after Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update.
+We plan to provide monthly Community Technology Previews (CTPs) after Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of 7.2.11792.56024.
+title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 author: tonyafehr
 manager: AnnBe
 ms.date: 06/26/2017
@@ -27,11 +27,11 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update 
 ---
 
-# What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+# What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. This version was released in July 2017 and has a build number of 7.2.11792.56024.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 
 **Note:** Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
 
@@ -518,17 +518,12 @@ a more user-friendly way to view the workflow history for an expense report.
 **Financial management \| Supply chain management**
 ===================================================
 
-Cost accounting – Cross legal entities 
+Cross legal entities reporting in Cost accounting 
 ---------------------------------------
 
-To provide in-depth managerial insights, Cost accounting needs to be able to
-cross the boundaries of legal entities because all or some of these legal
-entities serve the purpose of statutory reporting. This is easy if all legal
-entities are in the same version of the product. This feature resolves the more
-challenging problem, where legal entities are running on different versions or
-instances of the same version, by connecting the data from instances in Dynamics
-AX 2012 R3 CU11 or later to Dynamics 365 for Finance and Operations, Enterprise
-edition.
+This feature lets you run multiple legal entities on different versions or instances of the same version by connecting the data from instances in Dynamics AX 2012 R3 CU11 or later to Dynamics 365 for Finance and Operations, Enterprise edition. You can cross the boundaries of legal entities to address both organizational and statutory reporting needs. 
+
+For more information, see [Cost accounting overview](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page).
 
 Cost accounting allocation bases
 --------------------------------
@@ -548,6 +543,8 @@ The following allocation base types have been introduced:
 
 -   **Hierarchy allocation bases** - Combine an allocation base of any type with
     a cost object dimension hierarchy node to limit the range.
+    
+For more information, see [Allocation bases](/dynamics365/unified-operations/financials/cost-accounting/allocation-bases).
 
 Cost accounting dimension hierarchies 
 --------------------------------------
@@ -557,6 +554,8 @@ node to a new parent node in the hierarchy or perform a simple re-order of nodes
 within a parent node by using the **Move up** or **Move down** buttons. This
 significantly reduces amount of the time spent maintaining dimension
 hierarchies.
+
+For more information, see [Dimension hierarchies](/dynamics365/unified-operations/financials/cost-accounting/dimension-hierarchy).
 
 Cost accounting Get started wizard
 ----------------------------------
@@ -571,6 +570,8 @@ control workspace with your own data.
 The wizard provides a good foundation for further exploring the capabilities of
 Cost accounting.
 
+For more information, see [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU).
+
 Cost accounting ledger administration workspace
 -----------------------------------------------
 
@@ -582,6 +583,11 @@ be accessed directly from this workspace.
 The health of the cost accounting ledger and its related master data and
 reference data are monitored, such as cost objects dimensions, dimension
 hierarchies, and rules. This makes it easy to manage cost accounting ledgers.
+
+
+For more information, see [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk) and [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8).
+
+
 
 **Globalization & translation**
 ===============================
@@ -1752,49 +1758,6 @@ visit [Microsoft-tested peripheral
 devices](/dynamics365/unified-operations/retail/retail-peripherals-overview).
 This page will also be updated with a link to the POS simulator-tested devices
 as soon as that page becomes available.
-
-Integrated Retail workforce management
---------------------------------------
-
-To be profitable in reducing margin environment, retailers are constantly
-striving to reduce their operational cost. For most retailers, retail staff cost
-is a significant portion of the operational cost and so by controlling this
-cost, they can make a significant impact on their bottom-line. Also, an
-empowered and productive workforce lends itself to improved customer experience.
-
-An integrated workforce management capability for retail stores is now built on
-the Common Data Services (CDS) stack. Because this feature is built using the
-latest MPOS extensibility framework, it provides a mechanism for Microsoft to
-innovate and deliver additional capabilities at a faster cadence, without
-breaking existing customer customizations.
-
-This release of retail workforce management provides the following capabilities:
-
-**For store managers**
-
--   Create and publish shifts and schedules for workers in stores.
-
--   Annotate shifts with instructions.
-
--   Copy schedules from a previous week to the current week.
-
--   Visibility of absence requests submitted by retail workers with the ability
-    to approve or reject requests.
-
--   Visibility of shift swap and offer shift requests with the ability to
-    approve or reject requests.
-
-**For store associates**
-
--   Visibility of shifts and assigned schedules, along with instructions for the
-    shift.
-
--   Visibility of co-workers assigned to shifts.
-
--   Submit absence requests.
-
--   Submit request for shift swap with a co-worker. Submit request for ‘Offer
-    shift’.
 
 Omni-channel coupons
 --------------------

@@ -3,7 +3,7 @@
  
 title: Create a hierarchy of product classification
 description: This procedure shows how to create a new category hierarchy and assign a commodity code hierarchy type. 
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

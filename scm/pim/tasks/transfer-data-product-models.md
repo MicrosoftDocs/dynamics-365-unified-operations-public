@@ -3,7 +3,7 @@
  
 title: Transfer data for product models
 description: Exporting data for a product configuration model requires that you have at least one product model available. 
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

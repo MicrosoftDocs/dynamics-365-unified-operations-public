@@ -60,27 +60,27 @@ These topics describe some common customizations that you can add to your mobile
 
 ## Client-side development
 
-Client-side APIs are used in the business logic file, which provides an extensibility layer to the mobile workspace that allows for customization. Some things you can access through teh client-side APIs are:
+Client-side APIs are used in the business logic file, which provides an extensibility layer to the mobile workspace that allows for customization. Some things that you can access through the client-side APIs include:
 + Metadata
 + Runtime control/page instances
 + Business data
 + Offline-first business behaviors
 + Layout and style
 
-The process for client-side developement is described in these topics:
+The process for client-side development is described in these topics:
 + [Client-side design APIs overview](scenarios/client-api-design-overview.md)
 + [Business logic events overview](business-logic-events-overview.md)
 + [Client APIs](client-apis/client-apis-reference.md)
 
-You can download a sample business logic file (a .js file) for the Reservation management workspace from [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples).
+You can download a sample business logic file (a .js file) for the Reservation management workspace. Go to [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples), open the **business_logic folder**, and locate the FM.js file
 
 ## Server-side development
 
-Workspace attributes and classes are used to create, configure and publish workspaces on the server. Server-side development is described in these topics:
+Workspace attributes and classes are used to create, configure, and publish workspaces on the server. Server-side development is described in these topics:
 + [Workspace class overview](scenarios/mobile-workspace-configuration.md)
 + [Server APIs (X++)](mobile-workspace-server-apis.md)
 
-You can download the sample project (an .axpp file) for the Fleet Management mobile app from [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp file)
+You can download the sample project (an .axpp file) for the Fleet Management mobile app. Go to from [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) and download the **FMMobileApp.axpp** file.
 
 ## Additional resources
 ### What's new and in development

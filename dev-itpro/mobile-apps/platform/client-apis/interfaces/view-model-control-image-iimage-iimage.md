@@ -4,7 +4,7 @@ title: Image
 description: Image control interface for representing images in the mobile app. Images can be of any of the following types&amp;58 DataUri, Base64, URL, AOTResource, or Symbol.
 author: shadykdc
 manager: AnnBe
-ms.date: 
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -35,7 +35,7 @@ This topic describes the **Learning** Microsoft Power BI content. It explains ho
 
 ## Accessing the Power BI content
 
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can find the **Learning** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), you can find the **Learning** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
 ## Reports that are included in the Power BI content
 

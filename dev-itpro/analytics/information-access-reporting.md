@@ -3,7 +3,7 @@
 
 title: Information access and reporting in Finance and Operations
 description: This topic explains the various reporting options available as part of the Finance and Operations platform.
-author: sericks007
+author: TJVass
 manager: AnnBe
 ms.date: 08/14/2017
 ms.topic: article

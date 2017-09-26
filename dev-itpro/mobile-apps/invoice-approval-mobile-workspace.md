@@ -53,7 +53,7 @@ Before you can use this mobile workspace, the following prerequisites must be me
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update must be deployed in your organization.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) must be deployed in your organization.</td>
 <td>System administrator</td>
 <td>See <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.
 </td>

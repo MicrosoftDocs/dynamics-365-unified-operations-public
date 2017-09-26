@@ -35,7 +35,7 @@ This topic describes the **Employee development** Microsoft Power BI content. It
 
 ## Accessing the Power BI content
 
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can find the **Employee development** content pack in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
+If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), you can find the **Employee development** content pack in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 
 ## Reports that are included in the Power BI content
 The reports that are included in the **Employee development** Power BI content have both charts and tables that contain additional information. The following table describes the reports.

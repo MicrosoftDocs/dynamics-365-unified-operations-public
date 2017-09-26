@@ -326,6 +326,35 @@ To enable relationship lookups in the Excel Data Connector, you must ensure the 
 1.  The Cardinality and Related Data Entity Cardinality need to be set appropriately.
 2.  At least one constraint must be added to the relationship. With the exception of dimension relationships, which are a special case, the properties constrained must both be public.
 
+## How can I enable users to create new header records as well as lines in a workbook?
+To enable creation of header records and related lines, the header data source must be added as a set of "fields" and the lines data source must be added as a related table. This pattern can work well for document data entry scenarios such as Journal entry.
+
+To design a workbook with header fields and a lines table that enables header creation:
+1. In the Excel Add-in, click **Design** to open the Designer and click **Add fields** to add a header data source.
+2. Select the desired header fields. Be sure to include all the key fields or the **New** button won't be enabled.
+3. For all of the string header value fields, manually apply "Text" format for that cell using **Excel ribbon > Home tab > Number group > set "Number" in the format dropdown**. If the Text format isn't manually set on a string field and it happens to get a string value with leading zeros like "00045", then Excel will automatically change it to "45" and an error will be shown like: *"Unable to change the value of PurchaseOrderHeader's PurchaseOrderNumber field as it is a key field"*. The API doesn't allow for automatically applying the text formatting on individual cells (vs table columns) currently, but in the future we will hopefully eliminate the need for this workaround.
+4. In the Designer, on the header data source, click the **Add related table** button represented by a double plus icon.
+5. Select the desired line fields.
+
+An example of a header data source with a related table data source:
+- PurchaseOrderHeader (Fields)
+   - dataAreaId
+   - PurchaseOrderNumber
+   - PurchaseOrderName
+   - OrderVendorAccountNumber
+- PurchaseOrderLine (Table - related)
+   - LineNumber
+   - ItemNumber
+   - LineDescription
+   - OrderedPurchaseQuantity
+   - LineAmount
+
+To use a header and lines workbook to create a new header and some lines:
+1. In the workbook, put focus in a cell with a header value
+2. In the Excel Add-in, click **New**
+3. Enter header values and lines as needed
+4. Click **Publish**
+
 ### Troubleshooting
 
 If you are not seeing an expected lookup, validate relationship metadata by checking the metadata feed available at \[YourSiteURL\]/data/$metadata.  Search the $metadat feed for the public name of your entity to find its EntityType element, then make sure there is a child NavigationProperty element with a name equal to the Role value of the relationship. If the navigation property exists, it will be used by the Excel Data Connector to show a relationship lookup. Lookups are not shown under the following conditions:

@@ -5,7 +5,7 @@ title: Features not implemented in on-premises deployments
 description: This topic lists features that have not been implemented in on-premises deployments.
 author: sericks007
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,7 +37,7 @@ This topic lists features that have not been implemented in on-premises deployme
 - The second section lists features that are not intended for use with on-premises deployments. There are no plans to implement these features.
 
 # Features not yet implemented
-The following features have not yet been implemented in on-premises deployments. These features have not been deprecated.
+The following features have not yet been implemented in on-premises deployments. These features have not been deprecated. If these features are critical to your on-premises deployment, please let us know by providing feedback on the [Ideas](https://ideas.dynamics.com/ideas/) site.
 
 | **Feature**                                                      | **Description**                                                                                                                                                                          |
 |------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

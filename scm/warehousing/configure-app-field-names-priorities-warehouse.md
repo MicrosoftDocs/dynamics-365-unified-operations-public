@@ -17,7 +17,7 @@ ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: bis
 ms.search.scope: Core, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 269434

@@ -3,7 +3,7 @@
 
 title: Vendor rebates
 description: This topic provides an overview of the most common tasks that you might want to perform when you work with vendor rebates. Vendor rebates help companies better manage their supplier rebate programs by automating tasks that are required in order to administer, track, and claim rebates that are earned.
-author: BibiSp
+author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -19,9 +19,9 @@ audience: Application User
 ms.reviewer: bis
 ms.search.scope: Core, Operations, Unified operations
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: [Global for most topics. Set Country/Region name for localizations]
-# ms.search.industry: [leave blank for most, retail, public sector]
+# ms.custom: no wiki topic
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012 

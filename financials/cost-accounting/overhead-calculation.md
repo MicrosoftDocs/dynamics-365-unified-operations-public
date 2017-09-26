@@ -3,7 +3,7 @@
 
 title: Overhead calculation
 description: This topic describes the typical processes for calculating and allocating overhead costs.
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
@@ -56,6 +56,7 @@ Overhead calculation runs the cost accounting policies in the correct order. You
 -   Fiscal period
 
 Overhead calculation is run independently of the version. Therefore, you can calculate the Budget version before the Actual version. Overhead calculation consists of four steps, as shown in the following illustration. In each step, a journal header is created that has journal entries. This journal header keeps the input data for each calculation step. Policies and rules are applied to each journal line, and cost entries are generated as output. Therefore, you always have full traceability. 
+
 [![Overhead calculation](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## Calculate and allocate the Electricity overhead cost
@@ -626,7 +627,8 @@ For detailed information about overhead rate policy, see Overhead rate policy an
 ### Step 4: Process the cost allocation calculation
 
 Allocation is used to allocate the balance of a cost object to other cost objects by applying an allocation base. Finance and Operations supports the reciprocal allocation method. In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized. The system automatically determines the correct order to perform the allocations in. The balance of a cost object is allocated by a single allocation base. Allocations across cost objects dimensions and their respective members are supported. The allocation order is controlled by the cost control unit. 
-[![Reciprocal method](./media/reciprocal-method.png)]
+
+[![Reciprocal method](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
 #### Define the cost allocation
 

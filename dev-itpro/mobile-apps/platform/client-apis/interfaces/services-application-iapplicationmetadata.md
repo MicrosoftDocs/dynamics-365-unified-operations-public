@@ -4,7 +4,7 @@ title: ApplicationMetadata
 description: Represents the declarative metadata of an application
 author: shadykdc
 manager: AnnBe
-ms.date: 
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -129,10 +129,10 @@ Execute the data upgrade process on a copy of your target database – if your e
 
 ### Upgrade your sandbox environment
 
-You can make a request via LCS for the Microsoft Servicing Engineering (DSE) Team to run this process for you, when the following conditions are met:
+You must make a request via LCS for the Microsoft Servicing Engineering (DSE) Team to run this process for you, when the following conditions are met:
 
-- You need to be live in production or have already deployed your production environment
-- DSE will perform the data upgrade in one Tier 2 or higher sandbox environment
+- You are live in production or have already deployed your production environment
+- DSE will perform the data upgrade in one Tier 2 or higher sandbox environment. This is used as a control - to perform the identical upgrade process in this sandbox as will be performed in production.
 - DSE will perform the data upgrade in the production environment
 
 To upgrade any additional Tier 2 or higher sandbox environments: you do not need to upgrade these. Instead, delete them, redeploy, and then make a database refresh request to copy a database from a Tier 2 or higher environment that hase already been upgraded. Alternatively you can upgrade them manually by following [Process for Upgrading a Sandbox Environment](upgrade-sandbox-environment.md)
@@ -158,13 +158,14 @@ For upgrading any Tier 1 environments (also known as dev boxes or one-boxes). Yo
 
 #### Validate your sandbox environment
 - The updated environment will have the same URL, same environment name, and same machine names as the former environment.
-- When validation is completed successfully, notify the DSE team using an LCS ticket and the DSE team will retire your old environment.
+- Complete your validation and testing. If you discover a problem and want to rollback to the old environment, notify the DSE team using an LCS ticket.
+- You have up to 5 working days to request a rollback, after which Microsoft will retire the old environment.
 
 ### Upgrade your production environment
 
 1.  Use LCS to submit an Upgrade request to update the production environment in exactly the same way as you did for the sandbox environment in the previous step.
 2.  Validate.
-3.  When validation is completed successfully, notify the DSE team using an LCS ticket and the DSE team will retire your old environment.
+3.  Complete your validation and testing. If you discover a problem and want to rollback to the old environment, notify the DSE team using an LCS ticket. You have up to 5 working days to request a rollback, after which Microsoft will retire the old environment.
 
 ## Scenario 4: Upgrade to the most current platform only
 If you're running an environment that doesn't contain any customization of the platform AOT models (Application Platform, Application Foundation, Directory and Test Essentials), you can do an in-place update of your platform, without upgrading to a new environment. For more information about this process, see [Upgrade Finance and Operations to the latest platform update](upgrade-latest-platform-update.md). If you only upgrade your platform, there is no need to do code upgrade (Scenario 2 above) or run data upgrade scripts.

@@ -41,6 +41,7 @@ The only value that is present on Microsoft Excel templates after installation i
 
 1.  Add dimensions to the DimensionCombinationEntity or the DimensionSet entity.
 2.  Add the dimensions to each template where you want dimensions in separate columns. For more information, see [Create open in Excel experiences](..\office-integration\office-integration-edit-excel.md).
+3. Add the [capability to look up financial dimension values in Excel](add-dimensions-excel-templates.md).
 3.  Publish the template.
 
 This topic shows how to modify DimensionCombinationEntity to enable the dimensions in columns for Excel. The same steps can be used to modify the DimensionSet entity. 

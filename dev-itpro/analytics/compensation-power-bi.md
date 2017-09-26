@@ -36,7 +36,7 @@ This topic describes the **Compensation** Microsoft Power BI content. It explain
 ## Accessing the Power BI content
 The **Compensation** Power BI content is shown in the **Compensation management** workspace if you use one of the following products:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
 - Microsoft Dynamics 365 for Talent
 
 ## Reports that are included in the Power BI content
@@ -52,7 +52,7 @@ The reports that are included in **Compensation** the Power BI content have both
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Extending the Power BI content
-If you're using Microsoft Dynamics 365 for Operations version 1611 or Finance and Operations, Enterprise edition July 2017 update, you can find the **Compensation** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+If you're using Microsoft Dynamics 365 for Operations version 1611 or Finance and Operations, Enterprise edition (July 2017), you can find the **Compensation** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
 Be sure to download the **Compensation** Power BI content that applies to the version of Microsoft Dynamics 365 that you're using.
 

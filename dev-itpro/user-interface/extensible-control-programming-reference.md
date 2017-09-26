@@ -3,7 +3,7 @@
 
 title: Extensible control programming reference
 description: This topic provides reference content for extensible control programming.
-author: RobinARH
+author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 50211
 ms.assetid: 0a774c73-9e5d-4faa-8716-61476c1a9b6e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shshabazz
+ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

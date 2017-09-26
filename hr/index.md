@@ -5,7 +5,7 @@ title: Microsoft Dynamics 365 for Talent
 description: Talent streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. These processes include employee retention, benefits administration, training, performance reviews, and change management.
 author: rschloma
 manager: AnnBe
-ms.date: 06/19/2017
+ms.date: 09/19/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -60,6 +60,13 @@ As you work with Talent, you'll decide how to structure your organization, using
 -   [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md) 
 -   [Personnel actions FAQ](personnel-actions-faq.md)
 -   [Leave and absence overview](leave-absence-overview.md)
+
+## Staffing your organization
+
+Dynamics 365 for Talent includes the Attract app, which can help you identify, interview, and hire candidates that hold the skills your organization needs. As you move from recruiting through hiring, the Onboard app can help you bring your new employee into your organization by setting accurate expectations, providing information they need to get started, connecting them with colleagues, and set them up for success in their new role.  
+
+- [Attract overview](attract-overview.md)
+- [Onboard overview](create-onboarding-experience.md)
 
 ## Retain and motivate employees
 

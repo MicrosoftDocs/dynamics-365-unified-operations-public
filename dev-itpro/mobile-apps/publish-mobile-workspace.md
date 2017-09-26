@@ -39,7 +39,7 @@ This topic describes the steps that system administrators must follow to publish
 > [!NOTE]
 > The mobile app was previously named *Microsoft Dynamics 365 for Finance and Operations*.
 
-## Publish a mobile workspace by using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+## Publish a mobile workspace by using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
 
 1. In your browser, start Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 2. Click **Settings** > **Mobile app**.

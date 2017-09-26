@@ -3,7 +3,7 @@
 
 title: Product-related translations FAQ
 description: This topic describes how to manage translations for products, product dimension values, and product attributes. 
-author: YuyuScheller
+author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 201853

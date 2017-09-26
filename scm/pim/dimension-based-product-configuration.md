@@ -3,7 +3,7 @@
 
 title: Dimension-based product configuration
 description: Dimension-based product configuration represents a simple solution for creating many product variants from a single product master and its bill of materials.
-author: YuyuScheller
+author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: BOMConfigRule, BOMTable, ConfigChooseFromRoute, ConfigGroup, Con
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 19821
@@ -80,5 +80,16 @@ The natural sequence for building a product model for a dimension-based product 
 
 The dimension-based configuration technology is best used for products with limited variability and the combination of the standard product dimensions size, color, style, and configuration is unsuitable for identifying a specific product variant. An example could be bicycle with frame height, wheel size, brake types, and different gears.
 
+### Next step 
 
+The following eight task guides are listed in the order in which you should complete them. 
+
+1.  [Create a dimension-based product master (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-dimension-based-product-master)
+2.  [Release a dimension-based product master (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/release-dimension-based-product-master)
+3.  [Complete basic setup of a released product master (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/complete-basic-setup-released-product-master)
+4.  [Define configuration groups (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/define-configuration-groups)
+5.  [Create a bill of materials for a dimension-based product master (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-bill-materials-dimension-based-product-master)
+6.  [Define configuration routes (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/define-configuration-route)
+7.  [Create configuration rules (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-configuration-rules)
+8.  [Create dimension-based configurations (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-dimension-based-configurations)
 

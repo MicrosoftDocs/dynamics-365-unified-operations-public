@@ -3,7 +3,7 @@
 
 title: Calculations for product configuration models FAQ
 description: This article describes calculations for product configuration models and explains how to use calculations together with constraints.
-author: YuyuScheller
+author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: PCConstraintEditor, PCProductConfigurationModelDetails, PCRuntim
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 19191

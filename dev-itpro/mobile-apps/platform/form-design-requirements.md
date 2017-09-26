@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-## Form design requirements
+# Form design requirements
 
 This section provides valuable guidelines for building Finance and Operations forms that work well with the mobile app.
 

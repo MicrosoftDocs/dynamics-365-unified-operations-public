@@ -3,27 +3,27 @@
 
 title: Reserve inventory quantities
 description: This topic describes the different options that are available for reserving inventory.
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
 ms.search.form: InventModelGroup
-# ROBOTS: 
+# ROBOTS:
 audience: Application User
-# ms.devlang: 
-ms.reviewer: yuyus
+# ms.devlang:
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 207264
 ms.assetid: 47537e4f-cdf6-4813-96fd-c945b2dfe9d4
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -87,6 +87,3 @@ There are two options related to reservations on the **Inventory and warehouse 
 ### Inventory reservation policies on the Production parameters page
 
 The value of the **Reservation** field on the **General** tab on the **Production parameters** page determines the default point in the production process at which inventory should be reserved. For example, inventory could be reserved when work is scheduled, or when work is started.
-
-
-

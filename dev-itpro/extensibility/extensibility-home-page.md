@@ -41,9 +41,13 @@ Dynamics 365 for Finance and Operations, Enterprise edition is customized extens
 These introductory topics contain general information about how Finance and Operations supports customization, including information on when customization transitions from overlayering to purely extension based. These topics also explain how to log extensibility requests to Microsoft, along with frequently asked questions and answers.
 
 + [Application extensibility plans](extensibility-roadmap.md)
-+ [Extensibility changes for Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update](changes-july-2017.md)
 + [Extensibility requests](extensibility-requests.md) 
 + [FAQ](app-sealing-faq.md) 
+
+## What's new
+This section lists the extensibility-related updates we've made since July 2017.
+
++ [Extensibility changes for Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)](changes-july-2017.md)
 
 ## Getting started
 
@@ -62,6 +66,16 @@ Extensibility fundamentals includes principles and practices for how to make ext
 + [Class extensions](class-extensions.md)
 + [Class extension: Method wrapping and Chain of Command](method-wrapping-coc.md)
 + [Naming guidelines](naming-guidelines-extensions.md)
+
+## Upcoming - Fall Release 2017
+
+Here is an overview of the extensibility changes proposed for the Fall Release 2017. Please leave your comments on these in the blog posts or use the [Extensibility requests](extensibility-requests.md) to contact us. 
+
++ [Inventory Dimensions](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
++ [Enabling extensibility on Pricing](https://blogs.msdn.microsoft.com/mfp/2017/09/21/enabling-extensibility-on-pricing/)
++ [Map Extensions](https://blogs.msdn.microsoft.com/mfp/2017/09/22/table-map-extensions/)
+  + [Extending table maps used as interfaces](https://blogs.msdn.microsoft.com/mfp/2017/09/22/extending-table-maps-used-as-interfaces/)
+  + [Extending table maps used for versioning](https://blogs.msdn.microsoft.com/mfp/2017/09/22/extending-table-maps-used-for-versioning/)
 
 ## How do I..?
 
@@ -109,4 +123,4 @@ Information on customization is also shared through various blogs where differen
 + [Responding through delegates](https://blogs.msdn.microsoft.com/mfp/2017/01/31/responding-through-delegates/)
 + [Subscribing to onValidatingWrite](https://blogs.msdn.microsoft.com/mfp/2017/01/31/subscribing-to-onvalidatingwrite/)
 + [Extending inventory dimensions](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
-
++ [Embrace the extensions mindset with Dynamics 365 for Finance and Operations](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations/)

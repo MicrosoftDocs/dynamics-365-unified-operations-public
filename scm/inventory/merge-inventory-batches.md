@@ -2,28 +2,28 @@
 # required metadata
 
 title: Merge inventory batches
-description: This article provides information about how to consolidate two or more inventory batches into a merged batch. 
-author: YuyuScheller
+description: This article provides information about how to consolidate two or more inventory batches into a merged batch.
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
-# ROBOTS: 
+# ROBOTS:
 audience: Application User
-# ms.devlang: 
-ms.reviewer: yuyus
+# ms.devlang:
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides information about how to consolidate two or more inventory batches into a merged batch. 
+This article provides information about how to consolidate two or more inventory batches into a merged batch.
 
 When you merge batches, calculations can help optimize the characteristics and batch attributes of the merged batch. After you select the source batches, you can review and change the merged batch before you post it. You can also transfer the batch merge to an inventory journal for approval. Inventory can then be reserved or posted directly from that inventory journal. When you post a merged batch, the inventory is adjusted for the source batches and the merged batch.
 
@@ -56,7 +56,7 @@ Yes, there are some things that you must set up before you can use the merge bat
 <tbody>
 <tr class="odd">
 <td>Journal names, inventory</td>
-<td>You must create the journal name that is used by default when you post batch merges in inventory journals. Optional but recommended: You can specify that reservations should be made automatically when the batch merge is transferred to the inventory journal. Otherwise, there is a risk that the on-hand inventory might be changed after the batch merge details are set up and the journal is posted. To enable automatic reservations for the journal name, select <strong>Automatic</strong> in the <strong><strong>Reservation</strong></strong> field.</td>
+<td>You must create a journal name of the type BOM that is used by default when you post batch merges in inventory journals. Optional but recommended: You can specify that reservations should be made automatically when the batch merge is transferred to the inventory journal. Otherwise, there is a risk that the on-hand inventory might be changed after the batch merge details are set up and the journal is posted. To enable automatic reservations for the journal name, select <strong>Automatic</strong> in the <strong><strong>Reservation</strong></strong> field.</td>
 </tr>
 <tr class="even">
 <td>Inventory and warehouse management parameters</td>
@@ -86,7 +86,7 @@ Yes, there are some things that you must set up before you can use the merge bat
 Here are some examples of scenarios where it might be useful to merge batches:
 
 -   As Sammy is walking through his warehouse, he notices that several batches of the same item have low quantities. He is expecting to receive several new shipments, and he realizes that he can free some floor space by merging the odd quantities into a new batch.
--   Sammy is receiving inventory, and he wants to combine the new batch with one that he has already received, to improve the batch attribute value of the existing batch.
+-   Sammy is receiving inventory, and he wants to combine the new batch with one that he has already received, to improve the batch attribute value of the existing batch. By doing so you create a new batch.
 
 ## Can I merge batches across sites and legal entities?
 No, you can merge only batches that have the same site and warehouse storage dimensions in one legal entity. However, you can specify a different location and pallet ID for the merged batch.
@@ -146,6 +146,3 @@ You can approve the inventory journal for the batch merge from the **All batch m
 
 ## After I merged a catchweight item, why can’t I see the catchweight information in the inventory journal?
 You can merge batches of catch-weight items just like all other items. However, the catch-weight information doesn't appear in the inventory journal. We recommend that you verify the catch-weight information before you transfer the batch merge to the inventory journal.
-
-
-
