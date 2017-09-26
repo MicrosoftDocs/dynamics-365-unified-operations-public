@@ -90,7 +90,6 @@ By default, Remote Desktop is enabled for all non-Microsoft managed environments
 #### Windows Remoting (WinRM) lockdown
 Windows Remoting (WinRM) is disabled on all environments. Exceptions to enable WinRM will not be granted for any Microsoft-managed environments. Although you can enable WinRM on environments that belong to your subscriptions through Azure Portal, we strongly recommends that you do not do this.
 
-
 ### Availability
 The guaranteed uptime for Dynamics 365 for Finance and Operations is 99.5%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn’t always take eight hours, we will always communicate the estimated amount of time that your environments will be down. [Find support for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics Lifecycle Services](../lifecycle-services/lcs-support.md).
 

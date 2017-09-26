@@ -185,14 +185,15 @@ Self-signed certificates can be used only for testing purposes. For convenience,
 | Purpose                                      | Explanation | Additional requirements |
 |----------------------------------------------|-------------|-------------------------|
 | SQL Server SSL certificate                   | This certificate is used to encrypt data that is transmitted across a network between an instance of SQL Server and a client application. | The domain name of the certificate should match the fully qualified domain name (FQDN) of the SQL Server instance or listener. For example, if the SQL listener is hosted on the machine DAX7SQLAOSQLA, the certificate's DNS name is DAX7SQLAOSQLA.onprem.contoso.com. |
-| Service Fabric Server certificate            | This certificate is used to help secure the node-to-node communication between the Service Fabric nodes. This certificate is also used as the Server certificate that is presented to the client that connects to the cluster. | The domain name of the certificate must match the DNS zone where AOS and Service Fabric are hosted. For example, the domain name of the certificate might be \*.onprem.contoso.com or \*.contoso.com.<p>If you use a wildcard certificate, the wildcard character applies to only one level. A subdomain, or subject alternative name (SAN), must be applied to the certificate if it has more than one level, such as \*.contoso.com in the previous example.</p> |
+| Service Fabric Server certificate            | <p>This certificate is used to help secure the node-to-node communication between the Service Fabric nodes.</p> <p> This certificate is also used as the Server certificate that is presented to the client that connects to the cluster.</p> | You can use the SSL wild card certificate of your domain. For example, \*.contoso.com. **Note:** The wild card certificate allows you to secure only the first level subdomain of the domain to which it is issued.<p>In this example, since your service fabric domain is sf.d365ffo.onprem.contoso.com, you must include this as a Subject Alternative Name (SAN) in the certificate. You will need to work with your certificate authority to acquire the additional SANs.</p> |
 | Service Fabric Client certificate            | This certificate is used by clients to view and manage the Service Fabric cluster. | |
-| Encipherment Certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords. | <p>The certificate key usage must include Data Encipherment (10) and should not include Server Authentication or Client Authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-secret-management).</p> |
-| AOS SSL Certificate                          | <p>This certificate is used as the Server certificate that is presented to the client for the AOS website. It's also used to enable Windows Communication Foundation (WCF)/Simple Object Access Protocol (SOAP) certificates.</p><p>The Service Fabric Server certificate can be used here if it's a wildcard certificate.</p> | <p>The domain name of the certificate must match the DNS zone where AOS and Service Fabric are hosted. For example, the domain name of the certificate might be \*.d365ffo.onprem.contoso.com, \*.onprem.contoso.com, or \*.contoso.com.</p><p>If you use a wildcard certificate, the wildcard applies to only one level. A subdomain, or SAN, must be applied to the certificate if it has more than one level, such as \*.contoso.com in the previous example.</p> |
+| Encipherment Certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords. The certificate must be created by using the provider **Microsoft Enhanced Cryptographic Provider v1.0** | <p>The certificate key usage must include Data Encipherment (10) and should not include Server Authentication or Client Authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-secret-management).</p> |
+| AOS SSL Certificate                          | <p>This certificate is used as the Server certificate that is presented to the client for the AOS website. It's also used to enable Windows Communication Foundation (WCF)/Simple Object Access Protocol (SOAP) certificates.</p><p>You can use the same wild card certificate that you used as the Service Fabric Server certificate</p> | <p>In this example, the domain name ax.d365ffo.onprem.contoso.com must be added to the Subject Alternative Name (SAN) as in the Service  Fabric Server certificate</p> |
 | Session Authentication certificate           | This certificate is used by AOS to help secure a user's session information. | This certificate is also the File Share certificate that will used at the time of deployment from LCS. |
-| Data Encryption and Data Signing certificate | These certificates are used by AOS to encrypt sensitive information. | |
-| Financial Reporting client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and AOS. | |
-| Reporting certificate                        | This certificate is used to help secure the communication between SSRS and AOS. | |
+| Data Encryption certificate | This certificate is used by the AOS to encrypt sensitive information.  | This must be created using the provider **Microsoft Enhanced RSA and AES Cryptographic Provider** |
+| Data Signing certificate | This certificate is used by AOS to encrypt sensitive information.  | This is separate from the Data Encryption certificate and must be created using the provider **Microsoft Enhanced RSA and AES Cryptographic Provider** |
+| Financial Reporting client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and the AOS. |  |
+| Reporting certificate                        | This certificate is used to help secure the communication between SSRS and the AOS.| This certificate must be different from the Financial Reporting Client certificate. |
 | On-Premise local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p> | |
 
 ### <a name="plansvcacct"></a> 3. Plan your users and service accounts
@@ -311,13 +312,13 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
     ```
     Import-Module .\D365FO-OP\D365FO-OP.psd1
-    .\New-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
+    New-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
 4. If you must make changes to accounts or machines, update the ConfigTemplate.xml file in the original **infrastructure** folder, copy it to this machine and then run the following script.
 
     ```
-    .\Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
+    Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
 ### <a name="configurecert"></a> 8. Configure certificates
@@ -467,7 +468,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     2. Select **Tasks** \> **New Share** to create a new share. Name the share **aos-storage**.
     3. Grant **Modify** permissions for every machine in the Service Fabric cluster except OrchestratorNodeType.
-    4. Grant **Modify** permissions for the user AOS domain user (contoso\\AXServiceUser) and the gMSA user (contoso\\svc-AXSF).
+    4. Grant **Modify** permissions for the user AOS domain user (contoso\\AXServiceUser) and the gMSA user (contoso\\svc-AXSF$).
 
 3. Follow these steps to set up the \\\\DAX7SQLAOFILE1\\agent file share:
 
