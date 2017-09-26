@@ -40,34 +40,9 @@
       "searchScope": ["Unified Operations"],
       "breadcrumb_path": "/dynamics365/unified-operations/fin-and-ops/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
-      "brand": "dyn-ops",
-      "_op_documentIdPathDepotMapping": {
-        "./": {
-          "depot_name": "MSDN.d365F-O"
-        }
-      }  
+      "brand": "dyn-ops"
     },
-
-    "fileMetadata": {
-          "titleSuffix": {
-              "fin-and-ops/**/*.md": "Finance and Operations, Enterprise",
-              "dev-itpro/**/*.md": "Finance and Operations, Enterprise",
-              "financials/**/*.md": "Finance and Operations, Enterprise",
-              "supply-chain/**/*.md": "Finance and Operations, Enterprise",
-              "talent/**/*.md": "Talent",
-              "retail/**/*.md": "Retail"
-          },
-          "ms.service": {
-              "fin-and-ops/**/*.md": "dynamics-ax-applications",
-              "financials/**/*.md": "dynamics-ax-applications",
-              "supply-chain/**/*.md": "dynamics-ax-applications",
-              "fin-and-ops/**/*.md": "dynamics-ax-applications",
-              "dev-itpro/**/*.md": "dynamics-ax-platform",
-              "talent/**/*.md": "dynamics-365-talent",
-              "retail/**/*.md": "dynamics-365-retail"
-          }
-      }
-      
+    "fileMetadata": {},  
     "template": [],
     "dest": "d365F-O"
   }
