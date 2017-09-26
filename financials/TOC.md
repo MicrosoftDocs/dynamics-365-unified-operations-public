@@ -174,7 +174,7 @@
 
 ##### [Best practices for importing vouchers using the General journal entity](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-#### Development for data management
+#### Development for data entities
 ##### [Create new data entities](/dynamics365/unified-operations/dev-itpro/data-entities/build-consuming-data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Data entity properties](/dynamics365/unified-operations/dev-itpro/data-entities/behavioral-properties-data-entities?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create compute columns and virtual fields](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -193,6 +193,9 @@
 ##### [Configure financial cross-company data sharing](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Create a record template to facilitate data entry](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Use a record template to create a new record](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/use-record-template-new-record?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+#### Data integration APIs
+##### [Data management package API](/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Integration patterns
 ##### [Service endpoints](/dynamics365/unified-operations/dev-itpro/data-entities/services-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2096,7 +2099,7 @@
 #### [Sample for Retail POS integration with control units for Sweden](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Retail SDK packaging](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-packaging?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Retail SDK samples ](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-samples?toc=dynamics365/unified-operations/retail/toc.json)
-#### [Channel database (DB) extensions](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/channel-db-extensions?toc=dynamics365/unified-operations/retail/toc.json)
+#### [Channel database (DB) extensions](/dynamics365/unified-operations/retail/dev-itpro/channel-db-extensions?toc=dynamics365/unified-operations/retail/toc.json)
 
 ### Commerce runtime
 #### [Loyalty extension](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/loyalty-extension-sample?toc=dynamics365/unified-operations/retail/toc.json)
@@ -2647,11 +2650,15 @@
 ### [Configure security](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-lcs-security?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Issue search](/dynamics365/unified-operations/dev-itpro/lifecycle-services/issue-search-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Configuration manager](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configuration-manager-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Set up Configuration manager ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/set-up-configuration-manager-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Set up Configuration manager](/dynamics365/unified-operations/dev-itpro/lifecycle-services/set-up-configuration-manager-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Configure the code upgrade service](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-execute-code-upgrade?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Create a methodology ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/create-methodology?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Business process modeler](/dynamics365/unified-operations/dev-itpro/lifecycle-services/business-process-modeler-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Business process modeler](/dynamics365/unified-operations/dev-itpro/lifecycle-services/bpm-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Business process libraries in business process modeler](/dynamics365/unified-operations/dev-itpro/lifecycle-services/business-process-libraries-business-process-modeler?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Create, edit, or browse a BPM library](/dynamics365/unified-operations/dev-itpro/lifecycle-services/creating-editing-browsing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Complete tasks in a BPM library](/dynamics365/unified-operations/dev-itpro/lifecycle-services/complete-tasks-bpm?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Use activity diagrams](/dynamics365/unified-operations/dev-itpro/lifecycle-services/using-activity-diagrams?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Synchronize a BPM libary with Visual Studio Team Services (VSTS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/synchronize-bpm-vsts?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Business process modeler flowcharts](/dynamics365/unified-operations/dev-itpro/lifecycle-services/flowcharts-business-process-modeler?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Upload custom business processes](/dynamics365/unified-operations/dev-itpro/lifecycle-services/upload-business-processes-bpm-task-recorder?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Monitoring and diagnostics ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/monitoring-diagnostics?toc=dynamics365/unified-operations/fin-and-ops/toc.json)

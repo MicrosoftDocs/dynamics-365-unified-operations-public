@@ -63,7 +63,7 @@ Follow these steps to access BPM.
 The following topics provide more information about how to work with BPM libraries:
 
 - [Create, edit, or browse a BPM library](creating-editing-browsing.md)
-- [Synchronize a BPM library with Visual Studio Team Services](implementation.md)
+- [Synchronize a BPM library with Visual Studio Team Services](synchronize-bpm-vsts.md)
 - [Complete tasks in BPM](complete-tasks-bpm.md)
 - [Use activity diagrams with BPM](using-activity-diagrams.md)
 

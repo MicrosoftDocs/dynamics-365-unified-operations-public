@@ -5,7 +5,7 @@ title: Recurring integrations
 description: This article provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, is a critical piece that any platform must support. 
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,7 @@ The process of data migration, and movement into and out of any enterprise syste
 ## Architecture
 Integration does the following:
 
--   It builds on data entities and the rich data management platform (Data Import/Export Framework \[DIXF\]).
+-   It builds on data entities and the data management framework.
 -   It enables the exchange of documents/files between Finance and Operations and any third-party application or service.
 -   It supports several document formats, source mapping, Extensible Stylesheet Language Transformations (XSLT), and filters. [![Formats](./media/image001-1024x348.png)](./media/image001.png)
 -   It uses secure REST application programming interfaces (APIs) and authorization mechanisms to receive data from and send data back to integration systems. [![REST](./media/image003-1024x431.png)](./media/image003.png)

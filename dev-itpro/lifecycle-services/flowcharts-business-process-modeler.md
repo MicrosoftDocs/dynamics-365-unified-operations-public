@@ -2,7 +2,7 @@
 # required metadata
 
 title: Flowcharts in Business process modeler
-description: You can use Business process modeler in Microsoft Dynamics Lifecycle Services (LCS) to define and store business process flowcharts for an organization. This article explains how you can modify the default connected flowcharts for Microsoft Dynamics 365 for Finance and Operations, create and upload connected flowcharts from Task recorder, and import a business process model flowchart from another library. It also explains how to upload and view unconnected flowcharts.
+description: This article explains how you can modify the default connected flowcharts in Microsoft Dynamics Lifecycle Services, create and upload connected flowcharts from Task recorder, and import a business process model flowchart from another library.
 author: robadawy
 manager: AnnBe
 ms.date: 06/16/2017
@@ -67,7 +67,7 @@ This section explains how to view a connected flowchart, how to modify it, how t
 
 Default connected flowcharts are available for many nodes in the industry-standard libraries. You can view a connected flowchart to determine whether it meets your needs. To view a connected flowchart, follow these steps:
 1.  Sign in to Microsoft Dynamics Lifecycle Services, open a project, and then click **Business process modeler**.
-2.  In the **My libraries** section, select a library to display it. For information about how to copy a standard business process library to a project, see [Business process modeler (Lifecycle Services, LCS)](business-process-modeler-lcs.md).
+2.  In the **My libraries** section, select a library to display it. For information about how to copy a standard business process library to a project, see [Business process modeler (Lifecycle Services, LCS)](./ax-2012/business-process-modeler-lcs.md).
 3.  Expand the business process library and then click a library node that has a flowchart icon associated with it. [![Flowchart BPM topic1](./media/flowchart-bpm-topic1.jpg)](./media/flowchart-bpm-topic1.jpg)The flowchart is displayed. Each activity in the process is represented by a shape in the diagram. Related information is displayed in the right pane, depending on what is selected in the diagram:
     -   If nothing is selected on the flowchart, the right pane displays a detailed list of steps for the process, usage characteristics (setup, master, or transactions), and a video. You can double-click the video to view it in full-screen mode. Usage characteristics are used in the Usage profiler to help determine the load required for a process. Identify processes as Setup when they are configuration tasks, as Master when they are Master data processes, and as Transaction when they are transactional processes. Setup and master processes are assumed to require less processing than transaction processes.
     -   If the title of a swimlane is selected, the right pane displays a list of the security roles that have access to the activities that are in the swimlane, and their corresponding duties.
