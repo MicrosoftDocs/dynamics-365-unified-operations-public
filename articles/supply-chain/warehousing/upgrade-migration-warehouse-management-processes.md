@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Migrate from AX 2012 to Finance and Operations 
-description: This article provides an overview of the product and warehouse management migration options within Dynamics 365 for Finance and Operations.
+title: Migrate products and warehouse management from AX 2012 to Finance and Operations 
+description: This topic provides an overview of product and warehouse management migration options.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
+ms.search.form:  InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Migrate from AX 2012 to Finance and Operations
+# Migrate products and warehouse management from AX 2012 to Finance and Operations
 
 This topic provides an overview of the product and warehouse management migration options within Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
@@ -74,7 +74,7 @@ Before you can use released products in the **Warehouse management** module, the
 1.  Create at least one new location profile.
 2.  Click **Warehouse management** &gt; **Setup** &gt; **Enable warehouse management processes** &gt; **Enable warehouse setup**.
 3.  On the **Enable warehouse setup** page, add the warehouses that should be enabled. You can complete this step either directly on the page or by using the Microsoft Office integration.
-4.  Assign a location profile to all the locations. You can easily complete this step by using the Microsoft Office integration directly from the page. You can either export and import the data, or use the data entity processing in [Data management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities).
+4.  Assign a location profile to all the locations. You can easily complete this step by using the Microsoft Office integration directly from the page. You can either export and import the data, or use the data entity processing in [Data management](../../dev-itpro/data-entities/data-entities.md).
 5.  Validate the changes. As part of the validation process, various validations of data integrity occur. As part of a larger upgrade process, issues that occur might have to be adjusted on the source implementation. In this case, an additional data upgrade will be required.
 6.  Process the changes.
 
@@ -85,7 +85,7 @@ Before you can use released products in the **Warehouse management** module, the
 3.  On the **Reservation hierarchy** page, define a new reservation hierarchy according to the item’s storage and tracking dimension groups.
 4.  Create one or more unit sequence groups that include at least the same units that are used for the items' inventory units.
 5.  Click **Warehouse management** &gt; **Setup** &gt; **Enable warehouse management processes** &gt; **Change storage dimension group for items**.
-6.  On the **Change storage dimension group for items** page, add the item numbers, storage dimension groups, and unit sequence groups. You can complete this step directly on the page, by using the Microsoft Office integration, or by using the data entity process in [Data management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities).
+6.  On the **Change storage dimension group for items** page, add the item numbers, storage dimension groups, and unit sequence groups. You can complete this step directly on the page, by using the Microsoft Office integration, or by using the data entity process in [Data management](../../dev-itpro/data-entities/data-entities.md).
 7.  Validate the changes. As part of the validation process, various validations of data integrity occur. As part of a larger upgrade process, issues that occur might have to be adjusted on the source implementation. In this case, additional data upgrade will be required.
 8.  Process the changes. An update of all the inventory dimensions can take a while. You can monitor the progress by using the batch jobs tasks.
 

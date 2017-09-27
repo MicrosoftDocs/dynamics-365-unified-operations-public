@@ -36,11 +36,11 @@ This article describes the steps for merging the build systems for both Dynamics
 
 ## Enable the build system
 
-To get started, you must follow all the steps to get a full continuous build system up and running. For information, see [Developer topology deployment with continuous build and test automation](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). After deployment, you create the build definition and build steps. Build at least one time, so that you become familiar with it and are sure that you can build without errors. Then move to the next step.
+To get started, you must follow all the steps to get a full continuous build system up and running. For information, see [Developer topology deployment with continuous build and test automation](../../dev-itpro/perf-test/continuous-build-test-automation.md). After deployment, you create the build definition and build steps. Build at least one time, so that you become familiar with it and are sure that you can build without errors. Then move to the next step.
 
 ## Prepare the Retail SDK
 ### Getting the Retail SDK
-If you don't already have the Retail software development kit (SDK) in the same Microsoft Visual Studio Team Services (VSTS) project, add it now. You will find the Retail SDK in any developer or build topology. Follow the branching documentation in [Retail SDK overview](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-overview). We recommend that you create your Retail SDK mirror and your Retail SDK customization branch at this time. After your Retail SDK customization branch is ready, and it has been submitted in the same VSTS project as Retail, you can start.
+If you don't already have the Retail software development kit (SDK) in the same Microsoft Visual Studio Team Services (VSTS) project, add it now. You will find the Retail SDK in any developer or build topology. Follow the branching documentation in [Retail SDK overview](dev-itpro/retail-sdk/retail-sdk-overview.md). We recommend that you create your Retail SDK mirror and your Retail SDK customization branch at this time. After your Retail SDK customization branch is ready, and it has been submitted in the same VSTS project as Retail, you can start.
 
 ## Add a repository mapping for the Retail SDK
 Edit the build definition so that it includes the location of the Retail SDK. (In other words, add a map.) [![Adding a repository mapping for the Retail SDK](./media/build-map-addition.png)](./media/build-map-addition.png)

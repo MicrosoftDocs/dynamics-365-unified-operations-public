@@ -48,7 +48,7 @@ is designed to help you fill out your Business Activity Statement, commonly know
 The following list provides an overview of the process to calculate GST and prepare the BAS in General ledger:
 
 1.  Set up GST prerequisites. Refer to the table at the end of this article.
-2.  [Set up report boxes](./tasks/add-bas-report-boxes.md) - You must set up BAS report boxes to report other non-GST tax liabilities and credits for a particular GST settlement periods.
+2.  [Set up report boxes](tasks/add-bas-report-boxes.md) - You must set up BAS report boxes to report other non-GST tax liabilities and credits for a particular GST settlement periods.
 3.  Post and settle Australian BAS to tax authorities for a particular GST settlement period.
 4.  Process payments to tax authorities.
 5.  Manually adjust journals to transfer non-GST transactions posted to the BAS reconciliation account to the correct ledger account.
@@ -81,15 +81,15 @@ The following list provides an overview of the process to calculate GST and prep
 <td><span class="ui">Related setup tasks</span></td>
 <td><ul>
 <li>Create an additional BAS reconciliation account</li>
-<li><a href="/dynamics365/unified-operations/financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax?toc=dynamics365/unified-operations/fin-and-ops/toc.json">Create ledger posting groups.</a></li>
+<li><a href="../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md">Create ledger posting groups.</a></li>
 <li>Set up the GST sales tax authority</li>
 <li>Create settlement periods</li>
-<li><a href="/dynamics365/unified-operations/financials/localizations/apac-aus-business-activity-statement?toc=dynamics365/unified-operations/fin-and-ops/toc.json#gst-reporting-codes">Set up sales tax reporting codes for GST</a></li>
-<li><a href="/dynamics365/unified-operations/financials/general-ledger/tasks/set-up-sales-tax-codes?toc=dynamics365/unified-operations/fin-and-ops/toc.json">Set up sales tax codes</a></li>
-<li><a href="/dynamics365/unified-operations/financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups?toc=dynamics365/unified-operations/fin-and-ops/toc.json">Set up sales tax groups and item sales tax groups</a></li>
-<li><a href="/dynamics365/unified-operations/financials/localizations/tasks/set-up-reason-codes-australia-bas?toc=dynamics365/unified-operations/fin-and-ops/toc.json">Set up reason codes for Australia BAS</a></li>
+<li><a href="apac-aus-business-activity-statement.md#gst-reporting-codes.md">Set up sales tax reporting codes for GST</a></li>
+<li><a href="../general-ledger/tasks/set-up-sales-tax-codes.md">Set up sales tax codes</a></li>
+<li><a href="../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md">Set up sales tax groups and item sales tax groups</a></li>
+<li><a href="tasks/set-up-reason-codes-australia-bas.md">Set up reason codes for Australia BAS</a></li>
 <li>Set up BAS fringe benefit reason codes</li>
-<li><a href="/dynamics365/unified-operations/financials/general-ledger/tasks/set-up-withholding-tax?toc=dynamics365/unified-operations/fin-and-ops/toc.json">Set up withholding tax codes and groups</a></li>
+<li><a href="../general-ledger/tasks/set-up-withholding-tax.md">Set up withholding tax codes and groups</a></li>
 <li>Specify the withholding tax group for Vendors</li>
 </ul></td>
 </tr>

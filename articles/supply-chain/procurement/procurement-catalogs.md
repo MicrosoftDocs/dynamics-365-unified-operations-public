@@ -78,7 +78,7 @@ Updates are published either automatically or manually, depending on the option 
 See also
 --------
 
-[Set up a procurement category hierarchy (Task guide)](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-procurement-category-hierarchy)
+[Set up a procurement category hierarchy (Task guide)](tasks/set-up-procurement-category-hierarchy.md)
 
 
 

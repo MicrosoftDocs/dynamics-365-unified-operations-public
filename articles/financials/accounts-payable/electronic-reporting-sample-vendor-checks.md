@@ -43,10 +43,10 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, includes 
 
 ## What do I have to set up?
 
-- Before you can print checks by using ER, at least one active check configuration must be imported into your ER configurations. For instructions, see [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+- Before you can print checks by using ER, at least one active check configuration must be imported into your ER configurations. For instructions, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 - When you configure Cash and bank management checks for the bank account, select the **Generic electronic Export format** check box, and then select the appropriate check format as an export format configuration.
 - You must also specify the number of slip lines that will be printed on the remittance. Be sure to include the header rows when you calculate this number. For the two sample check formats, the recommended number of slip lines is 17. However, this number will vary, depending on your check stock and your printer drivers.
 - We recommend that you print a test check to validate the check layout. To print a test check, select the **Print test** option. The sample check formats work best when **Margins** is set to **None** in the advanced printer properties for Microsoft Excel. After the test check has been generated, enable editing of the Excel output, and configure the page layout so that all margins are set to **0** (zero). Compare the test copy of the checks to your check stock, and adjust the settings until you're satisfied with the alignment.
 - When you generate payments for the configured bank account in the payment journal, the checks will be printed by using the specified format.
 
-For more information, see [Modify an Electronic reporting format](/dynamics365/unified-operations/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template).
+For more information, see [Modify an Electronic reporting format](../../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).

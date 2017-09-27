@@ -196,7 +196,7 @@ During one step of the configuration process, the system suggests a configuratio
 See also
 --------
 
-[Create a product number nomenclature for predefined product variants](/dynamics365/unified-operations/supply-chain/pim/tasks/create-product-number-nomenclature-predefined-variants-2016-11)
+[Create a product number nomenclature for predefined product variants](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 
-[Create a product number nomenclature for configured product variants](/dynamics365/unified-operations/supply-chain/pim/tasks/create-product-number-nomenclature-product-variants_2016_11)
+[Create a product number nomenclature for configured product variants](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 

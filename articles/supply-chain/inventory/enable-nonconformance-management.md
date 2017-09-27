@@ -55,8 +55,8 @@ To enable nonconformance management, follow these steps:
 See also
 --------
 
-[Create and process a non conformance (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-process-non-conformance)
+[Create and process a non conformance (Task guide)](tasks/create-process-non-conformance.md)
 
 [Quality management processes](quality-management-processes.md)
 
-[Set up prerequisites for non-conformance management (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management)
+[Set up prerequisites for non-conformance management (Task guide)](tasks/set-up-prerequisites-nonconformance-management.md)

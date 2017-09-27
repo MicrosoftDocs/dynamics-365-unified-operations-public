@@ -70,4 +70,4 @@ It is possible to copy locations from one warehouse to another and to create lo
 See also
 --------
 
-[Create a new warehouse layout (Task guide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-new-warehouse-layout)
+[Create a new warehouse layout (Task guide)](tasks/create-new-warehouse-layout.md)

@@ -39,9 +39,9 @@ This topic describes how purchasing agents can collaborate with external vendors
 
 The **Vendor collaboration** module is targeted at vendors who don’t have electronic data interchange (EDI) integration with Microsoft Dynamics 365 for Finance and Operations. It allows vendors to work with purchase order, invoice, and consignment inventory information. This topic describes how you can collaborate with external vendors who are using the vendor collaboration interface to work with POs and consignment inventory. It also describes how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors will see when they respond to a PO. For more information about what external vendors can do in the vendor collaboration interface, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
-For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
+For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](../../financials/accounts-payable/vendor-portal-invoicing-workspace). For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
 
-For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). 
+For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](../../financials/accounts-payable/vendor-portal-invoicing-workspace). 
 
 For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
 

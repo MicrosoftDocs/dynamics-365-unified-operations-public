@@ -82,7 +82,7 @@ See also
 
 [Tracking dimension group](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[What's new or changed](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed)
+[What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md)
 
 [Cost entries](cost-entries.md)
 

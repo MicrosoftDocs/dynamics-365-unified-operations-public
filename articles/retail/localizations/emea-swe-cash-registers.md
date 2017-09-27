@@ -77,7 +77,7 @@ Retail includes a sample for integration of POS with Sweden-specific fiscal devi
 > [!NOTE]
 > Currently, the control unit integration sample doesn't support customer orders. However, a sample that supports customer orders will be available later.
 
-For more information about the control unit integration sample, see the [sample deployment guide](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample).
+For more information about the control unit integration sample, see the [sample deployment guide](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md).
 
 ## Setting up Retail for Sweden
 
@@ -104,7 +104,7 @@ You must specify the following general settings for Sweden.
     - Item sales tax groups
     - Sales tax settings in items (item sales tax groups for sales)
 
-    For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and in Retail, see [Sales tax overview](/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview).
+    For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
 
 2. On the **All retail stores** page, update retail store details. Specifically, set the following parameters:
     
@@ -147,7 +147,7 @@ You must specify the following general settings for Sweden.
 
 ### Control unit–specific settings
 
-You must specify the following settings to enable the [integration sample](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample), so that Retail POS is integrated with control units for Sweden.
+You must specify the following settings to enable the [integration sample](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md), so that Retail POS is integrated with control units for Sweden.
 
 1. Create fiscal register configurations, and assign them to hardware profiles:
 

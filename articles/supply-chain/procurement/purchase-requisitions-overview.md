@@ -200,7 +200,7 @@ To consolidate approved purchase requisition lines, follow these steps:
 See also
 --------
 
-[Create a requisition for consumption (Task guide)](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-requisition-consumption)
+[Create a requisition for consumption (Task guide)](tasks/create-requisition-consumption.md)
 
 [Purchase requisition workflow](purchase-requisitions-workflow.md)
 

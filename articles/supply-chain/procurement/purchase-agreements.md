@@ -99,9 +99,9 @@ You can copy financial dimensions to document headers or to individual lines of 
 See also
 --------
 
-[Create a purchase agreement (Task guide)](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-agreement)
+[Create a purchase agreement (Task guide)](tasks/create-purchase-agreement.md)
 
-[Create a purchase release order from a purchase agreement (Task guide)](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement)
+[Create a purchase release order from a purchase agreement (Task guide)](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 

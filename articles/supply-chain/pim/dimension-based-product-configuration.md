@@ -74,7 +74,7 @@ The configuration route determines the sequence of the configuration groups, as 
 The configuration rules represent a mechanism for ensuring that a product included in one configuration group in a BOM enforces either an inclusion or an exclusion of a product in a different configuration group in the same BOM.
 
 ## Product modeling process
-The natural sequence for building a product model for a dimension-based product starts with defining the relevant configuration groups. It is important to ensure that all products which will be used in the BOM have been relased to the company that the product model is built for. With these building blocks in place, the user can create the BOM and assign configuration groups to all relevant BOM lines. When the BOM is complete, a configuration route can be defined for ordering the configuration groups in the proper sequence. \[caption id="attachment\_282671" align="alignnone" width="1187"\][![Dimension-based product modeling process](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) Dimension-based product modeling process\[/caption\] If there are certain products from different configuration groups that either must or must not be used together, you can create configuration rules that will enforce these product relationships. After the BOM has been tied together with a dimension-based product master through a BOM version and both have been approved and activated, you can create product configurations and enter a name for each configuration. The configurations can be defined before any transactions are generated or it can be done when the need for a certain configuration occurs.
+The natural sequence for building a product model for a dimension-based product starts with defining the relevant configuration groups. It is important to ensure that all products which will be used in the BOM have been relased to the company that the product model is built for. With these building blocks in place, the user can create the BOM and assign configuration groups to all relevant BOM lines. When the BOM is complete, a configuration route can be defined for ordering the configuration groups in the proper sequence. [![Dimension-based product modeling process](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) Dimension-based product modeling process\[/caption\] If there are certain products from different configuration groups that either must or must not be used together, you can create configuration rules that will enforce these product relationships. After the BOM has been tied together with a dimension-based product master through a BOM version and both have been approved and activated, you can create product configurations and enter a name for each configuration. The configurations can be defined before any transactions are generated or it can be done when the need for a certain configuration occurs.
 
 ### Suggested use
 
@@ -84,12 +84,12 @@ The dimension-based configuration technology is best used for products with li
 
 The following eight task guides are listed in the order in which you should complete them. 
 
-1.  [Create a dimension-based product master (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-dimension-based-product-master)
-2.  [Release a dimension-based product master (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/release-dimension-based-product-master)
-3.  [Complete basic setup of a released product master (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/complete-basic-setup-released-product-master)
-4.  [Define configuration groups (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/define-configuration-groups)
-5.  [Create a bill of materials for a dimension-based product master (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-bill-materials-dimension-based-product-master)
-6.  [Define configuration routes (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/define-configuration-route)
-7.  [Create configuration rules (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-configuration-rules)
-8.  [Create dimension-based configurations (Task guide)](/dynamics365/unified-operations/supply-chain/pim/tasks/create-dimension-based-configurations)
+1.  [Create a dimension-based product master (Task guide)](tasks/create-dimension-based-product-master.md)
+2.  [Release a dimension-based product master (Task guide)](tasks/release-dimension-based-product-master.md)
+3.  [Complete basic setup of a released product master (Task guide)](tasks/complete-basic-setup-released-product-master.md)
+4.  [Define configuration groups (Task guide)](tasks/define-configuration-groups.md)
+5.  [Create a bill of materials for a dimension-based product master (Task guide)](tasks/create-bill-materials-dimension-based-product-master.md)
+6.  [Define configuration routes (Task guide)](tasks/define-configuration-route.md)
+7.  [Create configuration rules (Task guide)](tasks/create-configuration-rules.md)
+8.  [Create dimension-based configurations (Task guide)](tasks/create-dimension-based-configurations.md)
 

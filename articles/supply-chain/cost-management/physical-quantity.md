@@ -148,7 +148,7 @@ See also
 
 [Cost entries](cost-entries.md)
 
-[What's new and changed](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed)
+[What's new and changed](../../fin-and-ops/get-started/whats-new-changed.md)
 
 
 
