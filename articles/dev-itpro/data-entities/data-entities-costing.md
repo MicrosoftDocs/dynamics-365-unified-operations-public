@@ -55,9 +55,9 @@ Available data entities
 See also
 --------
 
-[Data entities and packages framework](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages)
+[Data entities and packages framework](data-entities/data-entities-data-packages)
 
-[Data entities ](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities)
+[Data entities ](data-entities/data-entities)
 
 
 

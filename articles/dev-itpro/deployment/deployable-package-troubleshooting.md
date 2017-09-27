@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 1
 ---
 
 # Troubleshooting guide for package deployment issues
-This topic provides detailed information that will help you troubleshoot issues that might occur when you apply packages on your Tier 1 or Tier 2 through Tier 5 environments. For information about how to apply a package, see [Apply a deployable package](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system).
+This topic provides detailed information that will help you troubleshoot issues that might occur when you apply packages on your Tier 1 or Tier 2 through Tier 5 environments. For information about how to apply a package, see [Apply a deployable package](deployment/apply-deployable-package-system).
 
 ## General troubleshooting and diagnostics
 If a package isn't successfully applied, you have two options:

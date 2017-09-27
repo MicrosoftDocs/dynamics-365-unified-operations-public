@@ -95,7 +95,7 @@ We recommend always utilizing SQL Server in either a cluster or mirroring setup.
 
 ### Active Directory Federation Services (AD FS)
 For AD FS sizing, see the [AD FS Server Capacity
-documentation](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).
+documentation](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).
 
 A [sizing spreadsheet](http://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx)
 is available for planning the number of instances in your deployment.

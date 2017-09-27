@@ -57,7 +57,7 @@ First, export the report designs located in the Report Designer, using the follo
 5.  Enter a file name and select a secure location where you want to save the exported report definitions.
 6.  Click **Save**.
 
-The file can be copied or uploaded to a secure location, allowing it to be imported into a different environment at another time. Information about using a Microsoft Azure storage account can be found in [Transfer data with the AzCopy Command-Line Utility](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). 
+The file can be copied or uploaded to a secure location, allowing it to be imported into a different environment at another time. Information about using a Microsoft Azure storage account can be found in [Transfer data with the AzCopy Command-Line Utility](/azure/storage/storage-use-azcopy). 
 > [!NOTE]
 > Microsoft doesn’t provide a storage account as part of your Finance and Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. 
 > [!WARNING]

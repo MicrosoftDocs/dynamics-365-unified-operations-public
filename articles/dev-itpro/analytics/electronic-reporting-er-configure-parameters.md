@@ -77,5 +77,5 @@ In addition to the basic functionality, ER has other functionality that you can 
 
 ## See also
 
-- [Electronic reporting overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting)
-- [Electronic reporting destinations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-destinations)
+- [Electronic reporting overview](analytics/general-electronic-reporting)
+- [Electronic reporting destinations](analytics/electronic-reporting-destinations)

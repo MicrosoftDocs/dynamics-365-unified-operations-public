@@ -68,7 +68,7 @@ For more information about the Power BI Embedded service, see the [Power BI Embe
 ## Frequently asked questions
 
 ### Can I customize the Power BI embedded reports?
-Yes. To customize the Power BI embedded reports, just install Power BI Desktop in a one-box environment, and follow the steps in [Author and distribute Power BI reports with Entity store](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json).
+Yes. To customize the Power BI embedded reports, just install Power BI Desktop in a one-box environment, and follow the steps in [Author and distribute Power BI reports with Entity store](analytics/author-distribute-power-bi-reports).
  
 ### Do customers have to purchase a separate Power BI license to use the new embedded analytics?
 No, customers don't have to purchase a separate Power BI license to use the new embedded analytics. However, a Power BI Pro license is required in order to connect to Entity Store from PowerBI.com by using DirectQuery.
@@ -77,7 +77,7 @@ No, customers don't have to purchase a separate Power BI license to use the new 
 No, you can't currently do data mash-ups by using external data in the embedded reports.
  
 ### Can I help secure data to only those companies that I have access to?
-Yes, the single company view prevents users from accessing data from companies that they don’t have access to. For more information about how to help secure custom solutions, see [Help secure analytical workspaces and reports by using Power BI Embedded](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/secure-analytical-workspaces?toc=dynamics365/unified-operations/fin-and-ops/toc.json).
+Yes, the single company view prevents users from accessing data from companies that they don’t have access to. For more information about how to help secure custom solutions, see [Help secure analytical workspaces and reports by using Power BI Embedded](analytics/secure-analytical-workspaces).
  
 ### How is currency shown across multiple companies?
 Currency is shown as a system currency. The system currency is defined on the **System parameters** page in Finance and Operations.

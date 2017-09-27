@@ -77,7 +77,7 @@ Task guides are available from the product help pane and they provide a guided w
 
 To find task guides, navigate to a page in Microsoft Dynamics 365 for Finance and Operations and click Help. Task guides that use the page are listed in the help pane. You can also use the help pane to search for task guides by title.
 
-To learn more, see [Task guides](/dynamics365/unified-operations/dev-itpro/get-started/help-overview#task-guides).
+To learn more, see [Task guides](get-started/help-overview#task-guides).
 
 
 ## Country/region specific help topics

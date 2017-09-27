@@ -122,6 +122,6 @@ After the build is completed, retail deployable packages(RetailDeployablePackag
  ## Deploy the Retail Deployable packages:
  
 To deploy the packages either manually or using the LCS automated flow, please follow the below link:
-[Apply a deployable package](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system)
+[Apply a deployable package](/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system)
 
-[Install a deployable package](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/install-deployable-package)
+[Install a deployable package](/dynamics365/operations/dev-itpro/deployment/install-deployable-package)

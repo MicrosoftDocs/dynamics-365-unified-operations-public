@@ -69,6 +69,6 @@ The following topics provide more information about how to work with BPM librari
 
 ## See also
 
-[Business process libraries in Business process modeler](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/business-process-libraries-business-process-modeler)
+[Business process libraries in Business process modeler](lifecycle-services/business-process-libraries-business-process-modeler)
 
-[Upload custom business processes to BPM](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/upload-business-processes-bpm-task-recorder)
+[Upload custom business processes to BPM](lifecycle-services/upload-business-processes-bpm-task-recorder)

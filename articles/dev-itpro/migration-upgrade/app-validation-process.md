@@ -44,7 +44,7 @@ If you use Document management, existing documents or attachments that are store
 
 ## Print management
 
-If you use Print management, the references to network printers from AX 2012 won’t be valid. You must set up and reference network printers on the **Document routing** page. For more information, see [Install the Document Routing Agent to enable network printer devices](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent).
+If you use Print management, the references to network printers from AX 2012 won’t be valid. You must set up and reference network printers on the **Document routing** page. For more information, see [Install the Document Routing Agent to enable network printer devices](analytics/install-document-routing-agent).
 
 ## Retail
 
@@ -60,7 +60,7 @@ Additionally, you must run all jobs (9999) for the channel database. Click **Ret
 
 After you complete the upgrade from AX 2012, you must set up resource capacity roll-up and project ledger intercompany posting.
 
-To run the Resource capacity roll-up batch job, click **Project management and accounting** > **Inquiries and reports** > **Capacity synchronization**. You must run this batch job to set up the resource and resource calendar reservation data. This data will be required if you use project resource scheduling. For more information, see [Project resourcing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/project-management/project-resourcing).
+To run the Resource capacity roll-up batch job, click **Project management and accounting** > **Inquiries and reports** > **Capacity synchronization**. You must run this batch job to set up the resource and resource calendar reservation data. This data will be required if you use project resource scheduling. For more information, see [Project resourcing](/dynamics365/unified-operations/financials/project-management/project-resourcing).
 
 To enable project ledger intercompany posting, click **Project management and accounting** > **Setup** > **Posting** > **Ledger posting setup**. On the **Cost accounts** tab, in the **Ledger account types** field, select **Intercompany cost**, and then enter the details of the lending legal entity. On the **Revenue accounts** tab, in the **Ledger account types** field, select **Intercompany revenue**, and then enter details of the borrowing legal entity.
 
@@ -70,4 +70,4 @@ After you complete the upgrade from AX 2012, you must set up Budget planning col
 
 Additionally, you must update Budget planning processes so that they use the appropriate layout for each budget stage. To update Budget planning processes, click **Budgeting** > **Setup** > **Budget planning** > **Budget planning process**.
 
-For more information about Budget planning upgrade, see [Upgrading to Budget planning from Microsoft Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-budget-planning).
+For more information about Budget planning upgrade, see [Upgrading to Budget planning from Microsoft Dynamics AX 2012](migration-upgrade/upgrade-budget-planning).
