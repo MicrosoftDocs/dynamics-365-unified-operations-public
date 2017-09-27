@@ -75,16 +75,16 @@ Translated task guides were first shipped in the May 2016 APQC Unified Library, 
 ## Creating custom help
 You can create custom help for Finance and Operations, and for Retail by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. You cannot create custom task guides for Talent. 
 
-For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see [How to create a task recording to use as documentation or training](../dev-itpro/user-interface/task-recorder.md).
+For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder.md).
 
 See also
 --------
 
 [Help overview](help-overview.md)
 
-[Task recorder overview](../dev-itpro/user-interface/task-recorder.md)
+[Task recorder overview](../../dev-itpro/user-interface/task-recorder.md)
 
-[How to create a task recording to use as documentation or training](../dev-itpro/user-interface/task-recorder-training-docs.md)
+[How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder-training-docs.md)
 
 
 

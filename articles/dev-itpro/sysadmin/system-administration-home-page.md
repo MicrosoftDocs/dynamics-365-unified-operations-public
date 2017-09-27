@@ -91,7 +91,7 @@ The integration with Microsoft Office provides a set of productive, collaborativ
 - [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
 - [Add templates to the Open lines in Excel menu](../user-interface/add-templates-open-lines-excel-menu.md)
 - [Customize the Open in Microsoft Office menu](../office-integration/customize-open-office-menu.md)
-- [Configure and send email](../../fin-and-ops/organization-administration/configure-email)
+- [Configure and send email](../../fin-and-ops/organization-administration/configure-email.md)
 - [Troubleshoot the Office integration](../office-integration/office-integration-troubleshooting.md)
 
 ## Mobile

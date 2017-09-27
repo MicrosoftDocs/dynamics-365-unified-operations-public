@@ -58,7 +58,7 @@ Follow these steps to set up the project.
 8.  Click **Create**.
 
 ## Invite participants to the project
-Invite participants that should have access to the project, so that they can submit and review regulatory alerts. For information about how to invite users, see [Configure lifecycle services security](lifecycle-services/configure-lcs-security).
+Invite participants that should have access to the project, so that they can submit and review regulatory alerts. For information about how to invite users, see [Configure lifecycle services security](../lifecycle-services/configure-lcs-security.md).
 
 ## Access the regulatory alert submission service
 1.  In your LCS project, scroll to the right side of the page, and then, under **More tools**, click **Localization and translation**.

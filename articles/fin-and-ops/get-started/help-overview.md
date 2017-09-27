@@ -125,11 +125,11 @@ Task guides are created by using Task Recorder. When you use Task Recorder, all 
 -   **Save task recordings to BPM** – You can save a task recording to a line of a hierarchy in a BPM library in LCS. When you save a task recording to BPM, a flowchart diagram is generated and displayed, together with the steps of the recording. **Note:** To display a task recording in the Finance and Operations Help pane and play it as a task guide, you'll have to save the recording to a BPM library.
 -   **Save task recordings as Word documents** – By saving a task recording as a Microsoft Word document, you can easily produce printable training guides for your organization.
 
-For more information about Task Recorder, see [Task recorder in Finance and Operations](../dev-itpro/user-interface/task-recorder.md).
+For more information about Task Recorder, see [Task recorder in Finance and Operations](../../dev-itpro/user-interface/task-recorder.md).
 
 ### Creating customized task recordings
 
-You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Finance and Operations implementation. To display a task recording in the Finance and Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](../dev-itpro/user-interface/task-recorder.md).
+You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Finance and Operations implementation. To display a task recording in the Finance and Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](../../dev-itpro/user-interface/task-recorder.md).
 
 ## In-product Help
 To access Help content within Finance and Operations, either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. 
@@ -195,9 +195,9 @@ See also
 --------
 [Finance and Operations help system (downloadable fact sheet)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 
-[Task Recorder](../dev-itpro/user-interface/task-recorder.md)
+[Task Recorder](../../dev-itpro/user-interface/task-recorder.md)
 
-[Create documentation or training using Task recordings](../dev-itpro/user-interface/task-recorder.md)
+[Create documentation or training using Task recordings](../../dev-itpro/user-interface/task-recorder.md)
 
 [New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
 [New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)

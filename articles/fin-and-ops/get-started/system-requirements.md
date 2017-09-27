@@ -158,7 +158,7 @@ The computer must meet all system requirements for installing and using the foll
 -   At least 10 GB of free space (The channel database can require a large amount of space.)
 
 ## Requirements for development on local VMs
-For information about the requirements for development on local virtual machines (VMs), see [VM running on-premises](../dev-itpro/dev-tools/access-instances.md).
+For information about the requirements for development on local virtual machines (VMs), see [VM running on-premises](../../dev-itpro/dev-tools/access-instances.md).
 
 
 ## See also

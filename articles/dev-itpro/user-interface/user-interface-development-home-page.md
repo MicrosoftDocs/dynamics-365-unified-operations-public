@@ -63,7 +63,7 @@ The form metamodel continues to be used to define controls and application logic
 -   [Sizing for input controls and grid columns](sizing-input-controls-grid-columns.md)
 -   [Check box support in tree controls](check-box-tree-controls.md)
 -   [Filtering](filtering.md)
--   [Display pages side-by-side using the Open in New Window icon](../../fin-and-ops/get-started/display-pages-side-by-side)
+-   [Display pages side-by-side using the Open in New Window icon](../../fin-and-ops/get-started/display-pages-side-by-side.md)
 -   [Code migration - context menus](..\migration-upgrade\code-migration-context-menus.md)
 -   [Code migration - mouse double click](..\migration-upgrade\code-migration-double-click.md)
 -   [Contextual data entry for lookups](contextual-data-entry-lookups.md)

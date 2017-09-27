@@ -69,6 +69,6 @@ The following topics provide more information about how to work with BPM librari
 
 ## See also
 
-[Business process libraries in Business process modeler](lifecycle-services/business-process-libraries-business-process-modeler)
+[Business process libraries in Business process modeler](business-process-libraries-business-process-modeler.md)
 
-[Upload custom business processes to BPM](lifecycle-services/upload-business-processes-bpm-task-recorder)
+[Upload custom business processes to BPM](upload-business-processes-bpm-task-recorder.md)

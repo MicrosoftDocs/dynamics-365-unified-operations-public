@@ -535,4 +535,4 @@ For support if you're performing compatibility tests, and for other inquiries, s
 
 ## See also
 
-[Retail peripherals overview](../../retail-peripherals-overview.md)
+[Retail peripherals overview](../retail-peripherals-overview.md)
