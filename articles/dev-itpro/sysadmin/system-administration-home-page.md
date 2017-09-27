@@ -47,9 +47,9 @@ You can deploy Finance and Operations in the cloud or on-premises. Cloud deploym
 
 - [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
 - [Dynamics 365 for Finance and Operations, Enterprise edition cloud deployment overview](../deployment/cloud-deployment-overview.md)
-- [System requirements for cloud deployments](../fin-and-ops/get-started/system-requirements.md)
+- [System requirements for cloud deployments](../../fin-and-ops/get-started/system-requirements.md)
 - [On-premises deployment landing page](../deployment/on-premises-deployment-landing-page.md)
-- [System requirements for on-premises deployments](../fin-and-ops/get-started/system-requirements-on-prem.md)
+- [System requirements for on-premises deployments](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 
 ## Upgrade
 An upgrade can involve moving to a new product version, migrating and upgrading code, moving to an update, or deploying a hotfix.
@@ -91,7 +91,7 @@ The integration with Microsoft Office provides a set of productive, collaborativ
 - [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
 - [Add templates to the Open lines in Excel menu](../user-interface/add-templates-open-lines-excel-menu.md)
 - [Customize the Open in Microsoft Office menu](../office-integration/customize-open-office-menu.md)
-- [Configure and send email](../fin-and-ops/organization-administration/configure-email)
+- [Configure and send email](../../fin-and-ops/organization-administration/configure-email)
 - [Troubleshoot the Office integration](../office-integration/office-integration-troubleshooting.md)
 
 ## Mobile
@@ -101,7 +101,7 @@ The Microsoft Dynamics 365 for Unified Operations mobile app enables your organi
 - [Mobile workspaces](../mobile-apps/mobile-workspaces-released.md)
 
 ## General administration
-- [Demo data overview](../fin-and-ops/get-started/demo-data.md)
+- [Demo data overview](../../fin-and-ops/get-started/demo-data.md)
 - [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
 - [Add links to your organization's legal terms and privacy statement](legal-terms-privacy-statement.md)
 - [License codes and configuration keys report](license-codes-configuration-keys-report.md)

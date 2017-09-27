@@ -39,7 +39,7 @@ This topic provides some key information about the monthly updates of the Micros
 What's the rationale behind the cloud platform monthly updates?
 ---------------------------------------------------------------
 
-The cloud platform is [locked](../fin-and-ops/get-started/whats-new-platform-update-3.md) as of Dynamics 365 for Operations platform update 3. Locking the platform enables rich customizations that use extensions while allowing you to make updates without costly code upgrades. Starting with platform update 4, the cloud platform releases monthly updates so that new and existing environments can stay up-to-date with the latest innovations with a click of a button. 
+The cloud platform is [locked](../../fin-and-ops/get-started/whats-new-platform-update-3.md) as of Dynamics 365 for Operations platform update 3. Locking the platform enables rich customizations that use extensions while allowing you to make updates without costly code upgrades. Starting with platform update 4, the cloud platform releases monthly updates so that new and existing environments can stay up-to-date with the latest innovations with a click of a button. 
 
 Monthly updates are backward compatible and non-breaking. An explicit opt-in option will be added for features that alter the behavior of existing features.
 
@@ -51,7 +51,7 @@ To install the latest monthly platform update on an existing environment, go to 
 New environments that are deployed will include the latest platform update.
 
 ## How do I know what's changed in the monthly platform update?
-To see a list of the new or changed features in the latest monthly update, click [here](../fin-and-ops/get-started/whats-new-changed.md).
+To see a list of the new or changed features in the latest monthly update, click [here](../../fin-and-ops/get-started/whats-new-changed.md).
 
 ## What should I test to approve the platform monthly update?
 Monthly platform updates are backward compatible and non-breaking. We recommend that you run your main business process regressions tests, and then deploy into PROD.

@@ -59,5 +59,5 @@ For customers who choose to run Finance and Operations in their own data center,
 The additional costs to deploy and manage these capabilities might lead to higher deployment costs and a greater Total Cost of Ownership (TCO). Tools for deploying the Finance and Operations software and updates will be available to partners and customers via Lifecycle Services. Unlike the cloud deployment option, Advanced Analytics and Azure Machine Learning services are not included in the on-premises deployment option. 
 
 There are several features that are not yet enabled in on-premises option. These features will be available in future updates. 
-For more information, see [Features not implemented in on-premises deployments](../fin-and-ops/get-started/features-not-implemented-on-prem.md).
+For more information, see [Features not implemented in on-premises deployments](../../fin-and-ops/get-started/features-not-implemented-on-prem.md).
 

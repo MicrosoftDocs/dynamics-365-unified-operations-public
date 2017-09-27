@@ -46,10 +46,10 @@ The following table shows the Power BI content that the reports are copied from 
 | Power BI content that is included     | Reports |
 |---------------------------------------|---------|
 | [Financial performance](financial-performance-power-bi-content-pack.md) | <ul><li>Revenue</li><li>Expenses</li><li>Net income</li><li>Gross margin</li><li>Current ratio</li><li>Total accounts payable</li><li>Total accounts receivable</li><li>Expenses by account category</li><li>Expenses - Actual vs budget</li><li>Revenue - Actual vs budget</li></ul> |
-| [Cash overview](../financials/cash-bank-management/Cash-Overview-Power-BI-content.md) | <ul><li>Cash flow forecast</li><li>Bank account balance</li><li>Balance by currency</li></ul> |
+| [Cash overview](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md) | <ul><li>Cash flow forecast</li><li>Bank account balance</li><li>Balance by currency</li></ul> |
 | [Sales and profitability](sales-profitability-performance-content-pack.md) | <ul><li>Revenue by region</li><li>Top 10 customers by revenue</li><li>Top 10 products by revenue</li></ul> |
-| [Credit and collections management](../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Customer past due</li><li>Customers over credit limit</li><li>Aged balances</li></ul> |
-| [Purchase spend analysis](../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Purchases by month/day</li><li>Top 10 vendors by purchases</li><li>Top 10 products by purchases</li></ul> |
+| [Credit and collections management](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Customer past due</li><li>Customers over credit limit</li><li>Aged balances</li></ul> |
+| [Purchase spend analysis](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Purchases by month/day</li><li>Top 10 vendors by purchases</li><li>Top 10 products by purchases</li></ul> |
 
 ## Extending the Power BI content
 By using the content packs that are available in Microsoft Dynamics Lifecycle Services (LCS), you can provide great analytics to people who don't sign in to Microsoft Dynamics 365. You can modify these content packs so that they include other reports or visuals, and then publish the content packs to your Power BI.com tenant for analysis.

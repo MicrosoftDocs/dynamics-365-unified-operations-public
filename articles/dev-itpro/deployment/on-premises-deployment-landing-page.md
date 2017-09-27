@@ -37,10 +37,10 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 
 ## Get started
 - [Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) overview](on-premises-overview.md)
-- [System requirements for on-premises deployments](../fin-and-ops/get-started/system-requirements-on-prem.md)
-- [Hardware sizing for on-premises environments](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
+- [System requirements for on-premises deployments](../../fin-and-ops/get-started/system-requirements-on-prem.md)
+- [Hardware sizing for on-premises environments](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
-- [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](../fin-and-ops/get-started/purchase-on-premises.md)
+- [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md)
 
 ## Onboard
 - [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
@@ -49,13 +49,13 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 - [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md)
 
 ## Work in your on-premises deployment
-- [Configure document management](../fin-and-ops/organization-administration/configure-document-management)
+- [Configure document management](../../fin-and-ops/organization-administration/configure-document-management)
 - [Import Electronic reporting configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Document generation, publishing, and printing capabilities in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
 - [Set up technical support](../lifecycle-services/support-experience.md)
 - [Client Internet connection troubleshooting](../user-interface/client-disconnected.md)
 
 ## Other resources
-- [Features not implemented in on-premises deployments](../fin-and-ops/get-started/features-not-implemented-on-prem.md)
+- [Features not implemented in on-premises deployments](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Deprecated features](../migration-upgrade/deprecated-features.md)
  

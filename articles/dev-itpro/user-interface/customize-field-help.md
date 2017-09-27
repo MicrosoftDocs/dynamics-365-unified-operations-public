@@ -64,7 +64,7 @@ See also
 
 [Create and use localizable labels in the client](create-localizable-labels-client.md)
 
-[View and export field descriptions](../fin-and-ops/get-started/view-export-field-descriptions)
+[View and export field descriptions](../../fin-and-ops/get-started/view-export-field-descriptions)
 
 
 

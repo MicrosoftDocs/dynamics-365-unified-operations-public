@@ -1,8 +1,8 @@
 # [Development & administration for Dynamics 365 for Financials and Operations](index.md)
 
-## [System requirements for cloud deployments](get-started/system-requirements.md)
-## [System requirements for on-premises deployments](get-started/system-requirements-on-prem.md)
-## [Demo data](get-started/demo-data.md)
+## [System requirements for cloud deployments](../../fin-and-ops/get-started/system-requirements.md)
+## [System requirements for on-premises deployments](../../fin-and-ops/get-started/system-requirements-on-prem.md)
+## [Demo data](../../fin-and-ops/get-started/demo-data.md)
 
 
 ## [Develop and customize using Visual Studio](dev-tools/developer-home-page.md)
@@ -413,7 +413,7 @@
 
 ### [On-premises deployment](deployment/on-premises-deployment-landing-page.md)
 #### [On-premises overview](deployment/on-premises-overview.md)
-#### [Hardware sizing](get-started/hardware-sizing-on-premises-environments.md)
+#### [Hardware sizing](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 #### [Create an on-premises project](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 #### [Set up and deploy on-premises environments](deployment/setup-deploy-on-premises-environments.md)
 #### [Develop and deploy custom models to on-premises environments](deployment/develop-deploy-custom-models-on-premises.md)

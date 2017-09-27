@@ -73,7 +73,7 @@ Platform and application updates are applied as deployable package on an environ
     - For Application updates, check the version of the model that included the fix. For example, if the fix was in Application suite, then the version of the Application suite is updated.
 
 ## Upgrade your environment
-For information about how to upgrade your Dynamics 365 for Operation instance to the latest version, see [Overview of moving to the latest update of Finance and Operations](../migration-upgrade/upgrade-latest-update.md) and [What's new or changed](../fin-and-ops/get-started/whats-new-changed.md).
+For information about how to upgrade your Dynamics 365 for Operation instance to the latest version, see [Overview of moving to the latest update of Finance and Operations](../migration-upgrade/upgrade-latest-update.md) and [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md).
 
 ## Environment data management
 These are the options for managing databases, including the ability to copy a database from one environment to another or restore a database to a previous state.
