@@ -76,7 +76,7 @@ If you're using Microsoft Dynamics 365 for Operations version 1611, the followin
 
 - [Compensation and benefits Power BI content](compensation-and-benefits-analysis-power-bi-content-pack.md)   
 - [Cost accounting analysis Power BI content](cost-accounting-analysis-content-pack.md) 
-- [Credit and collections management Power BI content](../../financials/accounts-receivable/credit-collections-power-bi.md
+- [Credit and collections management Power BI content](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Employee competencies and development Power BI content](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
 - [Financial performance Power BI content](financial-performance-power-bi-content-pack.md)
 - [Organizational training Power BI content](organizational-training-analysis-power-bi-content-pack.md) 
