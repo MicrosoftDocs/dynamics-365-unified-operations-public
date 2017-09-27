@@ -77,5 +77,5 @@ In addition to the basic functionality, ER has other functionality that you can 
 
 ## See also
 
-- [Electronic reporting overview](analytics/general-electronic-reporting)
-- [Electronic reporting destinations](analytics/electronic-reporting-destinations)
+- [Electronic reporting overview](general-electronic-reporting.md)
+- [Electronic reporting destinations](electronic-reporting-destinations.md)

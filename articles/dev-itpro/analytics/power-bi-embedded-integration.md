@@ -43,7 +43,7 @@ The integration of Finance and Operations and [Power BI](http://www.powerbi.com/
 - Report filters that are based on user and session context information, such as company or date range
 - The ability to navigate directly to a specific tab on a Power BI report via menu items
 
-For more information about customizations that use extensions, see [Customization: Overlayering and extensions](..\extensibility\customization-overlayering-extensions.md).
+For more information about customizations that use extensions, see [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
 
 ## Why might I want to use Power BI Embedded?
 Although both Power BI services are available, it's important that you know which service is best suited to target application scenarios. The following illustration shows a comparison of features across services.
@@ -68,7 +68,7 @@ For more information about the Power BI Embedded service, see the [Power BI Embe
 ## Frequently asked questions
 
 ### Can I customize the Power BI embedded reports?
-Yes. To customize the Power BI embedded reports, just install Power BI Desktop in a one-box environment, and follow the steps in [Author and distribute Power BI reports with Entity store](analytics/author-distribute-power-bi-reports).
+Yes. To customize the Power BI embedded reports, just install Power BI Desktop in a one-box environment, and follow the steps in [Author and distribute Power BI reports with Entity store](author-distribute-power-bi-reports.md).
  
 ### Do customers have to purchase a separate Power BI license to use the new embedded analytics?
 No, customers don't have to purchase a separate Power BI license to use the new embedded analytics. However, a Power BI Pro license is required in order to connect to Entity Store from PowerBI.com by using DirectQuery.
@@ -77,7 +77,7 @@ No, customers don't have to purchase a separate Power BI license to use the new 
 No, you can't currently do data mash-ups by using external data in the embedded reports.
  
 ### Can I help secure data to only those companies that I have access to?
-Yes, the single company view prevents users from accessing data from companies that they don’t have access to. For more information about how to help secure custom solutions, see [Help secure analytical workspaces and reports by using Power BI Embedded](analytics/secure-analytical-workspaces).
+Yes, the single company view prevents users from accessing data from companies that they don’t have access to. For more information about how to help secure custom solutions, see [Help secure analytical workspaces and reports by using Power BI Embedded](secure-analytical-workspaces.md).
  
 ### How is currency shown across multiple companies?
 Currency is shown as a system currency. The system currency is defined on the **System parameters** page in Finance and Operations.
