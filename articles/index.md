@@ -32,7 +32,6 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Microsoft Dynamics 365 for Finance and Operations Documentation
-[!include[banner](articles/includes/banner.md)]
 
 Learn how to make Microsoft Dynamics 365 for Finance and Operations, Enterprise edition work for your business, using the resources below to find great content for end users, developers, and IT professionals. 
 
