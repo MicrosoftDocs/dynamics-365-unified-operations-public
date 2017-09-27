@@ -63,7 +63,7 @@ For new environments, the topology will include update 4.
 In [Dynamics 365 for Operations version 1611](whats-new-platform-update-3.md), the platform models can't be overlayered. Therefore, because all the updates are binary from this release forward, the **Platform X++ Updates** tile is no longer required. Customers who are on versions that are earlier than Dynamics 365 for Operations version 1611 will continue to see the **Platform X++ Updates** tile for any customizations to the platform models. Because binary updates are cumulative, we recommended that you always apply the latest update. For more details, see the [LCS blog](https://blogs.msdn.microsoft.com/lcs/2017/01/26/january-2017-release-notes/). Here's an overview of some of the other features in Microsoft Dynamics 365 for Operations platform update 4.
 
 ## Embedded Power BI reports are licensed for all users
-[Power BI Embedded](../analytics/embed-power-bi-workspaces.md) lets all users access rich graphical views of analytical data that is bundled with Dynamics 365 for Operations applications. The reports are embedded in the Dynamics 365 for Operations application. No additional licenses are required in order to access them. 
+[Power BI Embedded](../dev-itpro/analytics/embed-power-bi-workspaces.md) lets all users access rich graphical views of analytical data that is bundled with Dynamics 365 for Operations applications. The reports are embedded in the Dynamics 365 for Operations application. No additional licenses are required in order to access them. 
 
 Support for the existing [tile pinning experience](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/) that is provided through PowerBI.com service integration will continue. To access some PowerBI.com functionality outside this embedded experience, you must obtain a Pro license separately.
 
@@ -74,7 +74,7 @@ You can now embed full-page, Power BI driven interactive reports in workspaces. 
 
 If you're a power user or business analyst, you can use Power BI tools to tweak the ready-made reports or create new reports. If you're a developer, you can use the reports that your users develop as workspaces to create rich navigation experiences within the product. If you're in the partner and independent software vendor (ISV) community, you can now build rich workspaces that include Power BI experiences, and you can release these workspaces as part of your solution. 
 
-If you're an ISV or a systems integrator, you can [package Power BI enabled workspaces](../analytics/power-bi-embedded-integration.md) (together with navigational experiences) as part of a Microsoft Dynamics Lifecycle Services (LCS) solution. Your customers get the same experience but don't have to have a PowerBI.com subscription. The solution works with just Dynamics 365 for Operations. 
+If you're an ISV or a systems integrator, you can [package Power BI enabled workspaces](../dev-itpro/analytics/power-bi-embedded-integration.md) (together with navigational experiences) as part of a Microsoft Dynamics Lifecycle Services (LCS) solution. Your customers get the same experience but don't have to have a PowerBI.com subscription. The solution works with just Dynamics 365 for Operations. 
 
 For more details about these features and other Power BI features, see the [BI blog](https://blogs.msdn.microsoft.com/dynamicsaxbi/).
 
@@ -84,7 +84,7 @@ We have made major progress on the mobile framework for Dynamics 365 for Operati
 [![Workspace that was built by using the mobile framework](./media/444444444444-1024x533.png)](./media/444444444444.png)
 
 ## Visual scheduling
-We have made updates to [visual scheduling](../user-interface/gantt-development-guide.md) in this release:
+We have made updates to [visual scheduling](../dev-itpro/user-interface/gantt-development-guide.md) in this release:
 
 -   You can now explicitly order activities in the Gantt chart. You can set the order of activities in the Gantt chart and move tasks within the same project.
 -   Visual icons are available for tasks. For example, there are icons for warning and errors.

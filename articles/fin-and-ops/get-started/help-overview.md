@@ -57,11 +57,11 @@ You can access both help topics and task guides from the Help pane in whichever 
 This topic describes the Help system, and explains how you can create custom documentation and training resources for your organization.
 
 > [!IMPORTANT]
-> The **Task guides** tab is currently not available in Microsoft Dynamics 365 for Talent and Microsoft Dynamics 365 for Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index) for both Retail and Talent.
+> The **Task guides** tab is currently not available in Microsoft Dynamics 365 for Talent and Microsoft Dynamics 365 for Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](../index.md) for both Retail and Talent.
 
 ## Help on docs.microsoft.com
 
-The docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)) is the primary source of product documentation for Finance and Operations. The site offers the following features:
+The docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](../index.md)) is the primary source of product documentation for Finance and Operations. The site offers the following features:
 
 -   **Access to the most up-to-date content** – The site gives us a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps to ensure that you have access to the latest technical information.
 -   **Content that is written by experts** – The site provides a richer set of product documentation that can be enhanced by community members both inside and outside Microsoft.
@@ -125,11 +125,11 @@ Task guides are created by using Task Recorder. When you use Task Recorder, all 
 -   **Save task recordings to BPM** – You can save a task recording to a line of a hierarchy in a BPM library in LCS. When you save a task recording to BPM, a flowchart diagram is generated and displayed, together with the steps of the recording. **Note:** To display a task recording in the Finance and Operations Help pane and play it as a task guide, you'll have to save the recording to a BPM library.
 -   **Save task recordings as Word documents** – By saving a task recording as a Microsoft Word document, you can easily produce printable training guides for your organization.
 
-For more information about Task Recorder, see [Task recorder in Finance and Operations](../user-interface/task-recorder.md).
+For more information about Task Recorder, see [Task recorder in Finance and Operations](../dev-itpro/user-interface/task-recorder.md).
 
 ### Creating customized task recordings
 
-You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Finance and Operations implementation. To display a task recording in the Finance and Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](../user-interface/task-recorder.md).
+You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Finance and Operations implementation. To display a task recording in the Finance and Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](../dev-itpro/user-interface/task-recorder.md).
 
 ## In-product Help
 To access Help content within Finance and Operations, either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. 
@@ -195,9 +195,9 @@ See also
 --------
 [Finance and Operations help system (downloadable fact sheet)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 
-[Task Recorder](../user-interface/task-recorder.md)
+[Task Recorder](../dev-itpro/user-interface/task-recorder.md)
 
-[Create documentation or training using Task recordings](../user-interface/task-recorder.md)
+[Create documentation or training using Task recordings](../dev-itpro/user-interface/task-recorder.md)
 
 [New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
 [New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
