@@ -100,9 +100,9 @@ The following table includes links to resources that can help you implement both
 <ul>
 
 <li><a href="../../financials/cost-accounting/cost-controlling-mobile-workspace.md">Cost controlling mobile workspaces</a></li>
-<li><a href="../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Inventory on-hand mobile workspace</a></li>
-<li><a href="../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Sales orders mobile workspaces</a></li>
-<li><a href="../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Vendor collaboration mobile workspace</a></li>
+<li><a href="../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Inventory on-hand mobile workspace</a></li>
+<li><a href="../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Sales orders mobile workspaces</a></li>
+<li><a href="../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Vendor collaboration mobile workspace</a></li>
 <li><a href="../../financials/project-management/project-time-entry-mobile-workspace.md">Project time entry mobile workspace</a></li>
 <li><a href="../../financials/expense-management/expense-management-mobile-workspace.md">Expense management mobile workspace</a></li>
 
