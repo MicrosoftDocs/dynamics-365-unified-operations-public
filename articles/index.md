@@ -54,7 +54,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
                         <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription">Sign up for a preview subscription</a></p>
                         <p><a href="../dev-itpro/deployment/choose-deployment-type">Choose a deployment option</a></p>
                         <p><a href="../fin-and-ops/get-started/fasttrack-dynamics-365-overview">FastTrack for Dynamics 365</a></p>
-                        <p><a href="../dev-itpro/get-started/purchase-on-premises">Buy Finance and Operations (on-premises)</a></p>
+                        <p><a href="../fin-and-ops/get-started/purchase-on-premises">Buy Finance and Operations (on-premises)</a></p>
                         <br>
                         <H3><a href="hr/hr-landing-page">Human resources</a></h3>
 <p><a href="../talent/manage-benefit-program">Benefits</a></p>
@@ -154,7 +154,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="../dev-itpro/office-integration/office-integration">Office integration</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page">Continuous delivery</a></p>
 <p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page">Mobile platform</a></p>
-<p><a href="../dev-itpro/get-started/demo-data">Demo data</a></p>
+<p><a href="../fin-and-ops/get-started/demo-data">Demo data</a></p>
                     </div>
                 </div>
             </div>

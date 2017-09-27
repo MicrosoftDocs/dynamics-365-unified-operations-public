@@ -74,7 +74,7 @@ Electronic invoicing is based on [electronic reporting](/dynamics365/unified-ope
 The electronic invoices and credit notes that you generate include required information, such as a European Article Numbering (EAN) number, contact person, dimension account number, and address information for the customer. Validation rules are applied when invoices are generated so you can verify that the correct information has been entered. The set of required information may differ from country to country. Because the requirements, as well as supported countries and formats, is subject to change, you should always go to the Shared asset library on Microsoft Dynamics Lifecycle services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**.
 
 ## Additional information
-For more details about how to set up electronic invoices, you can play the following [Task guides](/dynamics365/unified-operations/dev-itpro/get-started/help-overview#task-guides) in the Help pane:
+For more details about how to set up electronic invoices, you can play the following [Task guides](/dynamics365/unified-operations/fin-and-ops/get-started/help-overview#task-guides) in the Help pane:
 
  - Set up OIOUBL electronic invoicing
  - Import OIOUBL electronic invoicing configurations
