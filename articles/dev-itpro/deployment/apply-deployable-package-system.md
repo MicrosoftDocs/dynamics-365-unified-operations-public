@@ -216,7 +216,7 @@ In a production environment, unlike in a sandbox environment or other types of e
 
 ## Deploying packages in Retail environments
 
-If you're using Microsoft Dynamics 365 for Retail components (such as Retail Modern POS), after you've applied a deployable package in your environment, you must also update your in-store components. For more information, see [Retail Modern POS installation and updates](/dynamics365/unified-operations/retail/retail-modern-pos-device-activation).
+If you're using Microsoft Dynamics 365 for Retail components (such as Retail Modern POS), after you've applied a deployable package in your environment, you must also update your in-store components. For more information, see [Retail Modern POS installation and updates](../retail/retail-modern-pos-device-activation).
 
 ## See also
 

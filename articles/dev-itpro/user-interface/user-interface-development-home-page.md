@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic contains links to topics about developing user interface elements.
 
-The user interface for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition differs significantly from the interface for Microsoft Dynamics AX 2012. The client in Dynamics AX 2012 is a Microsoft Win32 application that has extensions that use ActiveX, WinForm, or WPF controls. The X++ application logic runs on the client for the form and table methods, and some logic occurs on the server. For controls, both the X++ logic application programming interface (API) and the physical Win32 control are tightly connected on the client. The client is an HTML web client that runs in all major browsers. These browsers include Microsoft Edge, Internet Explorer 11, Chrome, and Safari (see [System requirements](../get-started/system-requirements.md)). The move to a web client has produced the following changes to client forms and controls:
+The user interface for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition differs significantly from the interface for Microsoft Dynamics AX 2012. The client in Dynamics AX 2012 is a Microsoft Win32 application that has extensions that use ActiveX, WinForm, or WPF controls. The X++ application logic runs on the client for the form and table methods, and some logic occurs on the server. For controls, both the X++ logic application programming interface (API) and the physical Win32 control are tightly connected on the client. The client is an HTML web client that runs in all major browsers. These browsers include Microsoft Edge, Internet Explorer 11, Chrome, and Safari (see [System requirements](../fin-and-ops/get-started/system-requirements.md)). The move to a web client has produced the following changes to client forms and controls:
 
 -   The physical presentation of forms and controls is now HTML, JavaScript, and CSS within the browser.
 -   Form controls are split into logical and physical parts. The X++ logical API and related state run on the server.
@@ -63,7 +63,7 @@ The form metamodel continues to be used to define controls and application logic
 -   [Sizing for input controls and grid columns](sizing-input-controls-grid-columns.md)
 -   [Check box support in tree controls](check-box-tree-controls.md)
 -   [Filtering](filtering.md)
--   [Display pages side-by-side using the Open in New Window icon](/dynamics365/unified-operations/fin-and-ops/get-started/display-pages-side-by-side)
+-   [Display pages side-by-side using the Open in New Window icon](../fin-and-ops/get-started/display-pages-side-by-side)
 -   [Code migration - context menus](..\migration-upgrade\code-migration-context-menus.md)
 -   [Code migration - mouse double click](..\migration-upgrade\code-migration-double-click.md)
 -   [Contextual data entry for lookups](contextual-data-entry-lookups.md)

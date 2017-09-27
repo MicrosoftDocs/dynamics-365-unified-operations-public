@@ -81,10 +81,10 @@ For information about the new features included in each release, click the links
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
 |  Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | [Application update 2](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4039142&bugId=3850590&qc=204b1f37a96118e0538a6cad6c91a398019308d0a6b558b86e1ebe35d8fb73c8)* | 7.2.11792.62192 | September 2017     | June 2020  | 
 |  Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | [Application update 1](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4035749&bugId=3845890&qc=204b1f37a96118e0538a6cad6c91a398019308d0a6b558b86e1ebe35d8fb73c8)* | 7.2.11792.62089 | July 2017     | June 2020  | 
-|  Dynamics 365 for Finance and Operations, Enterprise edition | Major release | [July 2017](../get-started/whats-new-application-july-2017-update.md) | 7.2.11792.56024| June 2017     | June 2020  | 
-|  Dynamics 365 for Operations     | Major release | [1611](../get-started/whats-new-dynamics-365-operations-1611.md) | 7.1.1541.3036| November 2016 | November 2019   | 
-|  Dynamics AX |Minor release  | [7.0.1](../get-started/whats-new-changed-application-version-7-0-1-may-2016.md) | 7.0.1265.23014 | May 2016 | June 2017 | 
-|  Dynamics AX | Major release | [7.0](../get-started/whats-new-changed-7-0-february-2016.md) | 7.0.1265.3015 | February 2016 | June 2017 | 
+|  Dynamics 365 for Finance and Operations, Enterprise edition | Major release | [July 2017](../fin-and-ops/get-started/whats-new-application-july-2017-update.md) | 7.2.11792.56024| June 2017     | June 2020  | 
+|  Dynamics 365 for Operations     | Major release | [1611](../fin-and-ops/get-started/whats-new-dynamics-365-operations-1611.md) | 7.1.1541.3036| November 2016 | November 2019   | 
+|  Dynamics AX |Minor release  | [7.0.1](../fin-and-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md) | 7.0.1265.23014 | May 2016 | June 2017 | 
+|  Dynamics AX | Major release | [7.0](../fin-and-ops/get-started/whats-new-changed-7-0-february-2016.md) | 7.0.1265.3015 | February 2016 | June 2017 | 
 
 \* The link points to a KB article. You must log in to LCS to view the KB article.
 
@@ -94,17 +94,17 @@ For information about the new features included in each release, click the links
 
 | Release           | Build number   | Availability  | Expiration date   |
 |-------------------|----------------|---------------|-------------------|
-| [Platform update 10](../get-started/whats-new-platform-update-10.md)| 7.0.4641.16233 | August 2017   | August 2018   |
-| [Platform update 9](../get-started/whats-new-platform-update-9.md) | 7.0.4612.35162 | July 2017     | July 2018     |
-| [Platform update 8](../get-started/whats-new-platform-update-8.md) | 7.0.4565.16212 | June 2017     | June 2018     |
-| [Platform update 7](../get-started/whats-new-platform-update-7.md) | 7.0.4542.16189 | May 2017      | May 2018      |
-| [Platform update 6](../get-started/whats-new-platform-update-6.md) | 7.0.4509.16180 | April 2017    | April 2018    |
-| [Platform update 5](../get-started/whats-new-platform-update-5.md) | 7.0.4475.16165 | March 2017    | March 2018    |
-| [Platform update 4](../get-started/whats-new-platform-update-4.md) | 7.0.4425.16161 | February 2017 | February 2018 |
-| [Platform update 3](../get-started/whats-new-platform-update-3.md) | 7.0.4307.16141 | November 2016 | November 2017 |
-| [Platform update 2](../get-started/whats-new-platform-update-2.md) | 7.0.4230.16130 | August 2016   | August 2017   | 
-| [Platform update 1](../get-started/whats-new-changed-platform-version-7-1-may-2016.md) | 7.0.4127.16103 | May 2016      | May 2017      | 
-| [Platform 7.0](../get-started/whats-new-changed-7-0-february-2016.md)      | 7.0.4030.16079 | February 2016 | January 2017  |
+| [Platform update 10](../fin-and-ops/get-started/whats-new-platform-update-10.md)| 7.0.4641.16233 | August 2017   | August 2018   |
+| [Platform update 9](../fin-and-ops/get-started/whats-new-platform-update-9.md) | 7.0.4612.35162 | July 2017     | July 2018     |
+| [Platform update 8](../fin-and-ops/get-started/whats-new-platform-update-8.md) | 7.0.4565.16212 | June 2017     | June 2018     |
+| [Platform update 7](../fin-and-ops/get-started/whats-new-platform-update-7.md) | 7.0.4542.16189 | May 2017      | May 2018      |
+| [Platform update 6](../fin-and-ops/get-started/whats-new-platform-update-6.md) | 7.0.4509.16180 | April 2017    | April 2018    |
+| [Platform update 5](../fin-and-ops/get-started/whats-new-platform-update-5.md) | 7.0.4475.16165 | March 2017    | March 2018    |
+| [Platform update 4](../fin-and-ops/get-started/whats-new-platform-update-4.md) | 7.0.4425.16161 | February 2017 | February 2018 |
+| [Platform update 3](../fin-and-ops/get-started/whats-new-platform-update-3.md) | 7.0.4307.16141 | November 2016 | November 2017 |
+| [Platform update 2](../fin-and-ops/get-started/whats-new-platform-update-2.md) | 7.0.4230.16130 | August 2016   | August 2017   | 
+| [Platform update 1](../fin-and-ops/get-started/whats-new-changed-platform-version-7-1-may-2016.md) | 7.0.4127.16103 | May 2016      | May 2017      | 
+| [Platform 7.0](../fin-and-ops/get-started/whats-new-changed-7-0-february-2016.md)      | 7.0.4030.16079 | February 2016 | January 2017  |
 
 ## Dates for Finance and Operations (on-premises) releases
 

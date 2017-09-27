@@ -401,7 +401,7 @@
 
 ## Supply chain development
 ### [Gantt development guide](user-interface/gantt-development-guide.md)
-### [Create a new transportation management engine](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine.md)
+### [Create a new transportation management engine](../supply-chain/transportation/create-new-transportation-management-engine.md)
 
 
 ## Deployment
