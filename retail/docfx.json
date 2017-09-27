@@ -1,0 +1,52 @@
+{
+  "build": {
+    "content": [
+        {
+        "files": [
+          "**/*.md"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "**/_themes/**", 
+          "**/_themes.pdf/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.gif",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "searchScope": ["Unified Operations"],
+      "breadcrumb_path": "/dynamics365/unified-operations/fin-and-ops/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-Dynamics365",
+      "brand": "dyn-ops",
+      "titleSuffix": "Retail", 
+      "ms.service": "dynamics-365-retail",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.d365OpsRetail"
+        }
+      }
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "d365Ops-Retail"
+  }
+}

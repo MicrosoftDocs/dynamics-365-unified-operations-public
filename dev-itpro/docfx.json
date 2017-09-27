@@ -1,0 +1,52 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "**/_themes/**", 
+          "**/_themes.pdf/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.gif",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "searchScope": ["Unified Operations"],
+      "breadcrumb_path": "/dynamics365/unified-operations/fin-and-ops/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-Dynamics365",
+      "brand": "dyn-ops",
+      "titleSuffix": "Finance and Operations, Enterprise", 
+      "ms.service": "dynamics-ax-platform",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.d365OpsDevITPro"
+        }
+      }
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "d365Ops-DevITPro"
+  }
+}
