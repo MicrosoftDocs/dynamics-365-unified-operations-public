@@ -44,8 +44,8 @@ Number sequences
 Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. A master data record or transaction record that requires an identifier is referred to as a *reference*. Before you can create new records for a reference, you must set up a number sequence and associate it with the reference.
 
 -   [Number sequence overview](number-sequence-overview.md)
--   [Set up number sequences by using a wizard](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard) (Task guide)
--   [Set up number sequences on an individual basis](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis) (Task guide)
+-   [Set up number sequences by using a wizard](tasks/set-up-number-sequences-wizard.md) (Task guide)
+-   [Set up number sequences on an individual basis](tasks/set-up-number-sequences-individual-basis.md) (Task guide)
 
 ## Organizations
 An organization is a group of people who are working together to carry out a business process or achieve a goal. Organizational hierarchies represent the relationships between the organizations that make up your business.
@@ -54,9 +54,9 @@ Before you set up organizations and organization hierarchies in Finance and Oper
 
 -   [Organizations and organizational hierarchies](organizations-organizational-hierarchies.md)
 -   [Plan your organizational hierarchy](plan-organizational-hierarchy.md)
--   [Create an organization hierarchy](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (Task guide)
--   [Create a legal entity](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (Task guide)
--   [Create an operating unit](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit) (Task guide)
+-   [Create an organization hierarchy](tasks/create-organization-hierarchy.md) (Task guide)
+-   [Create a legal entity](tasks/create-legal-entity.md) (Task guide)
+-   [Create an operating unit](tasks/create-operating-unit.md) (Task guide)
 
 ## Address books
 The global address book is a centralized repository for master data that must be stored for all internal and external persons and organizations that the company interacts with. The data that is associated with party records includes the party's name, address, and contact information. 
@@ -65,7 +65,7 @@ After you create the global address book, you can create additional address book
 
 -   [Global address book](overview-global-address-book.md)
 -   [Plan how to configure the global address book and additional address books](plan-configuration-global-address-book-additional-address-books.md)
-- [Configure the global address book](./tasks/configure-global-address-book.md)
+- [Configure the global address book](tasks/configure-global-address-book.md)
 -   [Address books FAQ](qa-address-books.md)
 
 
@@ -83,7 +83,7 @@ An electronic signature confirms the identity of a person who is about to start 
 In Finance and Operations, you can use electronic signatures for critical business processes. Some processes have built-in electronic signature capabilities. You can also create custom signature requirements for any database table and field.
 
 -   [Electronic signature overview](electronic-signature-overview.md)
--   [Set up electronic signatures](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures) (Task guide)
+-   [Set up electronic signatures](tasks/set-up-electronic-signatures.md) (Task guide)
 
 ## Case management
 By planning, tracking, and analyzing cases, you can develop efficient resolutions that can be used for similar issues. For example, when customer service representatives or Human Resources generalists create cases, they can find information in knowledge articles to help them work with or resolve a case more efficiently. 
@@ -95,11 +95,11 @@ By planning, tracking, and analyzing cases, you can develop efficient resolution
 Record templates can help you to create records more quickly. You can create a record template so that field values that are used often do not have to be entered explicitly for each new record. 
 
 -   [Record templates](record-templates.md)
-- [Create a record template to facilitate data entry](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry) (Task guide)
-- [Use a record template to create a new record](/dynamics365/unified-operations/dev-itpro/data-entities/tasks/use-record-template-new-record) (Task guide)
+- [Create a record template to facilitate data entry](../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md) (Task guide)
+- [Use a record template to create a new record](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (Task guide)
 
 ## General organization administration
--   [Change the banner or logo](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (Task guide)
+-   [Change the banner or logo](../get-started/tasks/change-banner-or-logo.md) (Task guide)
 - [Configure document management](configure-document-management.md)
 - [Configure and send email](configure-email.md)
 -   [Date/time data and time zones](date-time-zones.md)
