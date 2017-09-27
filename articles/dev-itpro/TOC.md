@@ -1,7 +1,7 @@
 # [Development & administration for Dynamics 365 for Financials and Operations](index.md)
 
 ## [System requirements for cloud deployments](get-started/system-requirements.md)
-## [System requirements for on-premises deployments](get-started/system-requirements-on-prem?toc=toc.json.md)
+## [System requirements for on-premises deployments](get-started/system-requirements-on-prem.md)
 ## [Demo data](get-started/demo-data.md)
 
 
@@ -405,18 +405,18 @@
 
 
 ## Deployment
-### [Deploy a demo environment](deployment/deploy-demo-environment?toc=toc.json.md)
+### [Deploy a demo environment](deployment/deploy-demo-environment.md)
 
 ### Cloud deployment
-#### [Azure Resource Manager onboarding](deployment/arm-onboarding?toc=toc.json.md)
-#### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](deployment/expressroute?toc=toc.json.md)
+#### [Azure Resource Manager onboarding](deployment/arm-onboarding.md)
+#### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](deployment/expressroute.md)
 
 ### [On-premises deployment](deployment/on-premises-deployment-landing-page.md)
-#### [On-premises overview](deployment/on-premises-overview?toc=toc.json.md)
-#### [Hardware sizing](get-started/hardware-sizing-on-premises-environments?toc=toc.json.md)
-#### [Create an on-premises project](lifecycle-services/lbd-create-lcs-on-prem-project?toc=toc.json.md)
-#### [Set up and deploy on-premises environments](deployment/setup-deploy-on-premises-environments?toc=toc.json.md)
-#### [Develop and deploy custom models to on-premises environments](deployment/develop-deploy-custom-models-on-premises?toc=toc.json.md)
+#### [On-premises overview](deployment/on-premises-overview.md)
+#### [Hardware sizing](get-started/hardware-sizing-on-premises-environments.md)
+#### [Create an on-premises project](lifecycle-services/lbd-create-lcs-on-prem-project.md)
+#### [Set up and deploy on-premises environments](deployment/setup-deploy-on-premises-environments.md)
+#### [Develop and deploy custom models to on-premises environments](deployment/develop-deploy-custom-models-on-premises.md)
 
 ### Deploy custom code
 #### [Create a deployable package](deployment/create-apply-deployable-package.md)
@@ -479,11 +479,11 @@
 ### [Role-based security](sysadmin/role-based-security.md)
 #### [Security architecture](sysadmin/security-architecture.md)
 #### [Security reports](sysadmin/security-reports.md)
-#### [Create new users](sysadmin/tasks/create-new-users?toc=toc.json.md)
-#### [Import users in bulk](sysadmin/tasks/import-bulk-users?toc=toc.json.md)
-#### [Set up segregation of duties](sysadmin/tasks/set-up-segregation-duties?toc=toc.json.md)
-#### [Identify and resolve conflicts in segregation of duties](sysadmin/tasks/identify-resolve-conflicts-segregation-duties?toc=toc.json.md)
-#### [Assign users to security roles](sysadmin/tasks/assign-users-security-roles?toc=toc.json.md)
+#### [Create new users](sysadmin/tasks/create-new-users.md)
+#### [Import users in bulk](sysadmin/tasks/import-bulk-users.md)
+#### [Set up segregation of duties](sysadmin/tasks/set-up-segregation-duties.md)
+#### [Identify and resolve conflicts in segregation of duties](sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md)
+#### [Assign users to security roles](sysadmin/tasks/assign-users-security-roles.md)
 
 ### [Batch processing](sysadmin/batch-processing-overview.md)
 #### [Batch server overview](sysadmin/batch-server-overview.md)
