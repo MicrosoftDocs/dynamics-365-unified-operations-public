@@ -84,7 +84,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 
 </td>
 <td>
-<h3><a href="dev-itpro/analytics/information-access-reporting.md">Intelligence</a></h3>
+<h3><a href="dev-itpro/analytics/bi-reporting-home-page.md">Intelligence</a></h3>
 <p><a href="dev-itpro/analytics/analytics.md">Analytics</a></p>
  <p><a href="dev-itpro/analytics/document-reporting-services.md">Business documents</a></p>
 <p><a href="dev-itpro/analytics/financial-reporting-intro.md">Financial reporting</a></p>
