@@ -55,43 +55,46 @@ When you are in the LCS home page, you are not tied to any project yet until you
 ![alt text](./media/dts-home-dashboard.png "DTS dashboard view from LCS home access")  
 
 ## Alignment
-If you have previously translated files, you can create XLIFF TM to recycle the translation for newer version of source files.
-Align tool can be accessed by clicking the icon in the DTS project dashboard.
-  
+If you have previously translated files, you can create a XLIFF TM to recycle the files translation for new or newer version of source files.
+The Align tool can be accessed by clicking the **Align** icon in the DTS project dashboard.  
 
-Select source and target languages as well as the files to be aligned.  Clicking the Align button will perform the alignment and pops up the download dialog when the result is ready.  You may need to explicitly allow popup on the browser.
- 
+![alt text](./media/dts-align-icon.png "Align icon")  
 
-Here are some tips to create a quality XLIFF TM.  Alignment tool is smart enough to alleviate some of these issues, but it is easier to troubleshoot when you see the unexpected results in the output:
-1.	Make sure the source and target files have same number of resources
-2.	Make sure the resources are in the same order in source and target files
-3.	Make sure there is no empty strings.  The screenshots below show examples of empty strings from source and translation
+Once in the Align page, select source and target languages as well as the files to be aligned. Clicking the **Align** button will perform the alignment and pops up the download dialog box once the result is ready. You may need to explicitly allow popup in your browser.  
+
+![alt text](./media/dts-align1.png "Align")  
+
+Here are some tips to create the best XLIFF TM. The Align tool tool is smart enough to alleviate some of these issues, but it is easier to prevent them before you see the unexpected results in the output by following these simple rules:
+  1.	Make sure both source and target files have the same number of resources.
+  2.	Make sure the resources are in the same order in both source and target files.
+  3.	Make sure there is no empty strings. The screenshots below show examples of empty strings from source and target.
 
 Here is an example of empty strings in the source files. 
  
+![alt text](./media/dts-align3.png "Empty strings")  
 
-These empty strings are inherited into the XLIFF TM.  ‘Rebate’ with empty target string is likely to be translated to empty string if this XLIFF TM is used.
- 
+These empty strings are inherited into the XLIFF TM. ‘Rebate’ with empty target string is likely to be translated to empty string if this XLIFF TM is used.  
 
-It is a good practice to review the aligned XLIFF before using it as TM.  Reviewed TUs should be marked as ‘Final’ or ‘Signed off’ so that they won’t be confused with not-yet-reviewed translations.
+![alt text](./media/dts-align4.png "Missing strings")  
 
+It is a good practice to review the aligned XLIFF before using it as a TM. Reviewed TUs should be marked as _‘Final’_ or _‘Signed off’_ so that they won’t be confused with unreviewed translations.  
 
 ## Creating a translation request
+In the main dashboard, click on the **Add** icon to start creating the new translation request.  
 
-In the main dashboard, click ‘Add’ icon to start creating the new translation request.
- 
+![alt text](./media/dts-request1.png "Add a new request")  
 
 Fill out the necessary fields for the request.
 
-  +	**Request name** – Add name to your request to easily identify it.
-  +	**Product name** – Product name that your source files are used for. 
-  +	**Product version** – Version of Product.
+  +	**Request name** – Give a name to your request to easily identify it.
+  +	**Product name** – Select the product that your source files are supporting. 
+  +	**Product version** – Select the version of the product.
   +	**Target country/region** – Select a country/region to use the translation service for.
   +	**Translation source language** – Select a language that source files are written in.
   +	**Translation target language** – Select a language to translate into.
 
-When selecting the languages, you will notice that there are some language names in **bold**.  Microsoft ships those languages, hence there are Microsoft trained MT system available.
-Please note that you will have to select **English – United States** for either source or target language to take advantage of Microsoft trained MT system.
+When selecting the languages, you will notice that some language names are in **bold**. Microsoft ships those languages commercially for the supported products (General Availability languages or GA languages), hence there are Microsoft trained MT systems available in those languages (trained on Dynamics terminology). For non-GA languages the MT system falls back to the general domain training.  
+Please note that you will have to select **English – United States** for either source or target language to take advantage of Microsoft trained MT system on Dynamics linguistic assets.  
 
 For example:
 
@@ -101,48 +104,52 @@ English – United States |	Japanese	| Microsoft trained MT system
 Japanese |	English – United States	| Microsoft trained MT system
 German	| Japanese	| Generic MT system*
 
-*Unless the user provides XLIFF TM with more than 10,000 TUs.
- 
-Click Create and confirming the information will complete the creation of the request, and take you to the next step, ‘Upload’.
+*Unless the user provides XLIFF TM with more than 10,000 TUs.  
 
+![alt text](./media/dts-request2.png "Create a new request")
+ 
+Click **Create** to confirm the information and complete the creation of the request. This will take you to the next step, _‘Upload’_.  
 
 ## Uploading the files
-Clicking the plus sign will fly out the File upload pane.  You can upload a single zip file for each of two file types: Source zip file and XLIF TM zip file.
- 
+Clicking the **Plus** icon will bring the **File upload** pane. You can upload a single zip file for each of two file types: Source zip file and XLIF TM zip file.  
 
 ### Source zip file
-As the name implies, source zip file is the zip file that contains all the source files you wish to translate in the request.  Different file types can be included as long as they are the supported file types for the product.  Please refer to the Supported products for the supported file types.
+As the name implies, source zip file is the zip file that contains all the source files you wish to translate in the request. Different file types can be included as long as they are the supported file types for the product. Please refer to the _Supported products_ for the supported file types.  
 
+![alt text](./media/dts-upload1.png "File upload")  
 
 ### XLIFF TM zip file (Optional)
-If you have XLIFF files from the previous DTS request, or used Alignment tool to create XLIFF TM, you can zip the XLIFF files and upload here.  Strings that match are recycled into the new source files so that you can keep the consistency between the product versions.  T detail about the XLIFF is explained in the XLIFF TM section
+If you have XLIFF files from the previous DTS request, or used the **Align** tool to create a XLIFF TM, you can zip the XLIFF files and upload here. Strings that 100% match are recycled into the new source files so that you can keep the consistency between product versions. Details about the XLIFF can be found in the _XLIFF TM_ section.  
 
-In addition to the recycle, DTS will use XLIFF TM to create a customized MT system based on these rules:
+![alt text](./media/dts-upload2.png "File upload")  
+
+In addition to the recycling process, DTS will use the XLIFF TM to create a customized MT system based on these rules:
 
   + Either source or target language is Microsoft’s GA language, AND the other language is **English- United States**.
   +	Either source or target language is **NOT** Microsoft’s GA language, AND XLIFF TM contains more than 10,000 translation units(TUs).
 
-DTS will use generic MT system after the recycle if:
+DTS will use general domain MT system after the recycling if:
 
-  +	Either source or target language is **NOT** Microsoft’s GA language, AND XLIFF TM contains less than 10,000 translation units(TUs).  This is due to the requirement of MT Hub.
+  +	Either source or target language is **NOT** Microsoft’s GA language, AND XLIFF TM contains less than 10,000 translation units(TUs).  This is due to the requirements set by MT Hub.
   
+When necessary files are uploaded, click **Submit** to start the translation process.
 
-When necessary files are uploaded, click ‘Submit’ for the DTS to start the translation process.
+![alt text](./media/dts-submit.png "Submit")  
 
-Here is a rough estimate on how long the process will take.  Please note that the process time depends on the number of requests in the queue and wordcount of the submitted files.
+Please note that the process time depends on the number of requests in the DTS queue and wordcount volume of the submitted files.
 
   +	Request without XLIFF TM : As short as few minutes (depends on the file size.)
 
   +	Request with XLIFF TM:
 
      + Creating a custom MT system: 2~3 days
-     + Using generic MT system: As short as few minutes (depends on the file size.)
+     + Using generic MT system: As few minutes (depends on the file size.)
 
 
 ## Translation complete
-When the translation is complete, you will receive an email notification. The result is available in the Request output section in the DTS. 
+When the translation process is complete, you will receive an email notification. The result is available in the **Request output** section of DTS. 
 
- 
+![alt text](./media/dts-output.png "Request output") 
 
 When translation is complete two types of files are provided.  
 
