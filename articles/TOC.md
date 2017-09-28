@@ -513,7 +513,7 @@
 ### [Cost accounting](financials/cost-accounting/cost-accounting-home-page.md)
 #### [Get started](financials/cost-accounting/get-started.md)
 ##### [Cost accounting terminology](financials/cost-accounting/terms-cost-accounting.md)
-##### [Hands-on labs (White paper)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc.md)
+##### [Cost accounting hands-on labs (White paper)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc.md)
 ##### [Get started with Cost accounting (Video)](https://youtu.be/1pUDtJQZ8FU.md)
 ##### [Cost control mobile workspace (Video)](https://youtu.be/imsuTg8rUVk.md)
 ##### [Use Excel for cost analysis (Video)](https://youtu.be/-HKHYdClvx8.md)

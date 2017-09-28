@@ -4,7 +4,8 @@
 title: Data management package integration API
 description: This topic describes the data management framework's package REST API. The package API lets you integrate with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, by using data packages.
 author: Sunil-Garg
-manager: 09/21/2017
+ms.date: 09/21/2017
+manager: AnnBe
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

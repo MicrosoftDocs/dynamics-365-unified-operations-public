@@ -58,7 +58,7 @@ The following table lists the tools that are provided in LCS and describes the p
 | [Usage profiler](ax-2012/usage-profiler-lcs.md)                           | Usage profiler is a data-gathering tool that helps you describe your projected or current usage of an. The usage profile that is generated can be used for various purposes, such as hardware sizing and support.                                                                                                                                                                                                                                                                                                 |
 | [Downloadable tools](ax-2012/lcs-downloadable-tools-formerly-informationsource.md)                       | The Downloadable tools page provides a set of tools that were previously hosted on Microsoft Dynamics InformationSource.                                                                                                                                                                                                                                                                                                                                                                                          |
 
-The LCS team is also blogging at the [Lifecycle Services Engineering blog](http://blogs.msdn.com/b/lcs/). Subscribe to our RSS feed to keep up with our posts and announcements.
+The LCS team is also blogging at the [Lifecycle Services Engineering blog](https://blogs.msdn.microsoft.com/lcs/). Subscribe to our RSS feed to keep up with our posts and announcements.
 
 See also
 --------

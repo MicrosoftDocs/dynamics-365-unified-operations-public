@@ -5,7 +5,7 @@ title: CDX extensibility
 description: This topic explains how you can extend the Retail initialization class to support custom Commerce Data Exchange (CDX) synchronization.
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/15/207
+ms.date: 09/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail

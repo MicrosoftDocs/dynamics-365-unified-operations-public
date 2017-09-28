@@ -2,7 +2,7 @@
 # required metadata
 
 title: General ledger and Financial reporting home page
-description: Use General ledger to define and manage the legal entity’s financial records. The general ledger is a register of debit and credit entries. These entries are classified using the accounts that are listed in a chart of accounts. 
+description: Use General ledger to define and manage the legal entity’s financial records.  
 author: twheeloc
 manager: AnnBe
 ms.date: 08/31/2017
@@ -27,8 +27,6 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
----
 
 ---
 

@@ -84,7 +84,7 @@ The following list provides an overview of the process to calculate GST and prep
 <li><a href="../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md">Create ledger posting groups.</a></li>
 <li>Set up the GST sales tax authority</li>
 <li>Create settlement periods</li>
-<li><a href="apac-aus-business-activity-statement.md#gst-reporting-codes.md">Set up sales tax reporting codes for GST</a></li>
+<li><a href="#gst-reporting-codes">Set up sales tax reporting codes for GST</a></li>
 <li><a href="../general-ledger/tasks/set-up-sales-tax-codes.md">Set up sales tax codes</a></li>
 <li><a href="../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md">Set up sales tax groups and item sales tax groups</a></li>
 <li><a href="tasks/set-up-reason-codes-australia-bas.md">Set up reason codes for Australia BAS</a></li>
