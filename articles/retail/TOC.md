@@ -2,21 +2,21 @@
 
 ## Payments
 ### [Payment methods](payment-methods.md)
-### [Credit card setup, authorization, and capture](../../financials/accounts-receivable/credit-card-authorizations.md?toc=dynamics365/unified-operations/retail/toc.json)
+### [Credit card setup, authorization, and capture](../financials/accounts-receivable/credit-card-authorizations.md)
 ### [Configure payment methods for POS](cash-denominations.md)
 ### [Payments FAQ](dev-itpro/payments-retail.md)
 
 ## Purchase orders
-### [Purchase order overview](../../supply-chain/procurement/purchase-order-overview.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Create purchase orders](../../supply-chain/procurement/purchase-order-creation.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Product receipt against purchase orders](../../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Approve and confirm purchase orders](../../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Purchase order approval mobile workspace](../../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=dynamics365/unified-operations/retail/toc.json)
+### [Purchase order overview](../supply-chain/procurement/purchase-order-overview.md)
+### [Create purchase orders](../supply-chain/procurement/purchase-order-creation.md)
+### [Product receipt against purchase orders](../supply-chain/procurement/product-receipt-against-purchase-orders.md)
+### [Approve and confirm purchase orders](../supply-chain/procurement/purchase-order-approval-confirmation.md)
+### [Purchase order approval mobile workspace](../supply-chain/procurement/purchase-order-mobile-workspace.md)
 
 ## Sales tax
-### [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Sales tax calculation methods in the Origin field](../../financials/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Whole amount and Interval calculation options for sales tax codes](../../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=dynamics365/unified-operations/retail/toc.json)
+### [Sales tax overview](../financials/general-ledger/indirect-taxes-overview.md)
+### [Sales tax calculation methods in the Origin field](../financials/general-ledger/sales-tax-calculation-methods-origin-field.md)
+### [Whole amount and Interval calculation options for sales tax codes](../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md)
 
 ## Call center
 ### [Call center overview](call-center-functionality.md)
@@ -81,43 +81,43 @@
 ### [Create coupons for retail sales](retail-coupons.md)
 
 ## Products and merchandising
-### [Product information overview](../../supply-chain/pim/product-information.md.md?toc=dynamics365/unified-operations/retail/toc.json)
+### [Product information overview](../supply-chain/pim/product-information.md.md)
 ### [Retail hierarchies](retail-hierarchies.md)
 ### [Create and manage attributes](create-manage-attributes.md)
 ### [Set up retail products](set-up-retail-products.md)
-### [Product dimensions](../../supply-chain/pim/product-dimensions.md?toc=dynamics365/unified-operations/retail/toc.json)
+### [Product dimensions](../supply-chain/pim/product-dimensions.md)
 ### [Set up bar codes](set-up-bar-codes.md)
 ### [Set up bar code masks](set-up-bar-code-masks.md)
 ### [Set up assortments](set-up-assortments.md)
 ### [Sell and return products outside of an assortment](sell-return-outside-assortments.md)
-### [Default order settings for dimensions and product variants](../../supply-chain/production-control/default-order-settings.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Search for products and product variants during order entry](../../supply-chain/pim/search-products-product-variants.md?toc=dynamics365/unified-operations/retail/toc.json)
+### [Default order settings for dimensions and product variants](../supply-chain/production-control/default-order-settings.md)
+### [Search for products and product variants during order entry](../supply-chain/pim/search-products-product-variants.md)
 
 ## Loyalty
 ### [Set up a customer loyalty program](set-up-customer-loyalty-program.md)
 
 ## Inventory
 ### [Manage store inventory](work-with-store-inventory.md)
-### [Register serial numbers in the sales process](../../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Inventory journals](../../supply-chain/inventory/inventory-journals.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Inventory tag counting](../../supply-chain/inventory/inventory-tag-counting.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [FIFO with physical value and marking](../../supply-chain/cost-management/fifo-physical-value-marking.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [LIFO Date with physical value and marking](../../supply-chain/cost-management/lifo-date-physical-value-marking.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [LIFO with physical value and marking](../../supply-chain/cost-management/lifo-physical-value-marking.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Weighted average date](../../supply-chain/cost-management/weighted-average-date.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Weighted average with physical value and marking](../../supply-chain/cost-management/weighted-average-physical-value-marking.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Quarantine orders](../../supply-chain/inventory/quarantine-orders.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Running average cost price](../../supply-chain/cost-management/running-average-cost-price.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Tracking running average cost per inventory dimension](../../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md?toc=dynamics365/unified-operations/retail/toc.json)
+### [Register serial numbers in the sales process](../supply-chain/sales-marketing/register-serial-numbers-sales-process.md)
+### [Inventory journals](../supply-chain/inventory/inventory-journals.md)
+### [Inventory tag counting](../supply-chain/inventory/inventory-tag-counting.md)
+### [FIFO with physical value and marking](../supply-chain/cost-management/fifo-physical-value-marking.md)
+### [LIFO Date with physical value and marking](../supply-chain/cost-management/lifo-date-physical-value-marking.md)
+### [LIFO with physical value and marking](../supply-chain/cost-management/lifo-physical-value-marking.md)
+### [Weighted average date](../supply-chain/cost-management/weighted-average-date.md)
+### [Weighted average with physical value and marking](../supply-chain/cost-management/weighted-average-physical-value-marking.md)
+### [Quarantine orders](../supply-chain/inventory/quarantine-orders.md)
+### [Running average cost price](../supply-chain/cost-management/running-average-cost-price.md)
+### [Tracking running average cost per inventory dimension](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
 
 ## Human resources
-### [Organize your workforce using departments, jobs, and positions](../../talent/departments-jobs-positions.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Setting up the components of a job](../../talent/create-job.md?toc=dynamics365/unified-operations/retail/toc.json)
+### [Organize your workforce using departments, jobs, and positions](../talent/departments-jobs-positions.md)
+### [Setting up the components of a job](../talent/create-job.md)
 
 ## Retail tasks
-### [Create a product](../../supply-chain/pim/tasks/create-product.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Configure linked products](../../supply-chain/pim/tasks/configure-linked-products.md?toc=dynamics365/unified-operations/retail/toc.json)
-### [Release a product/product master to legal entities](../../supply-chain/pim/tasks/release-product-product-master-legal-entities.md?toc=dynamics365/unified-operations/retail/toc.json)
+### [Create a product](../supply-chain/pim/tasks/create-product.md)
+### [Configure linked products](../supply-chain/pim/tasks/configure-linked-products.md)
+### [Release a product/product master to legal entities](../supply-chain/pim/tasks/release-product-product-master-legal-entities.md)
 ### [Base price and trade agreements](tasks/base-price-trade-agreements.md)
 ### [Category pricing rules to create trade agreements](tasks/category-pricing-rules-trade-agreements.md)
 ### [Configure credit card processing](tasks/configure-credit-card-processing.md)
@@ -165,7 +165,7 @@
 #### [Retail channel communications](dev-itpro/define-retail-channel-communications-cdx.md)
 #### [MPOS architecture](dev-itpro/retail-modern-pos-architecture.md)
 #### [Retail online store publishing architecture](dev-itpro/retail-online-store-publishing-architecture.md)
-#### [Retail Channel Performance Power BI content](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=dynamics365/unified-operations/retail/toc.json)
+#### [Retail Channel Performance Power BI content](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ### Deployment and hotfixes
 #### [Retail Store Scale Unit configuration and installation](dev-itpro/retail-store-scale-unit-configuration-installation.md)
@@ -176,7 +176,7 @@
 ##### [Secure retail Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
 #### [Retail Hardware Station configuration and installation](retail-hardware-station-configuration-installation.md)
 #### [Retail component events for diagnostics and troubleshooting](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
-#### [Apply a deployable package](../../dev-itpro/deployment/apply-deployable-package-system.md?toc=dynamics365/unified-operations/retail/toc.json)
+#### [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md)
 
 ### Upgrade and N-1 support
 #### [Overview of upgrade and N-1 support](dev-itpro/overview-upgrade-n-minus1.md)

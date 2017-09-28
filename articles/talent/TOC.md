@@ -40,5 +40,5 @@
 ### [Evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
 
 ## Workplace safety and compliance (United States)
-### [Form I-9 employment verification](../../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=dynamics365/unified-operations/talent/toc.json)
-### [Comply with the ADA](../../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=dynamics365/unified-operations/talent/toc.json)
+### [Form I-9 employment verification](../../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
+### [Comply with the ADA](../../fin-and-ops/hr/localizations/noam-usa-comply-ada.md)
