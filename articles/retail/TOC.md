@@ -1,4 +1,4 @@
-# [Overview of Dynamics 365 for Retail](index.md)
+# [Welcome to Dynamics 365 for Retail](index.md)
 
 # Payments
 ## [Payment methods](payment-methods.md)
