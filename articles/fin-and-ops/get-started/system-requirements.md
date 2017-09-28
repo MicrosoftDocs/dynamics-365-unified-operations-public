@@ -163,4 +163,4 @@ For information about the requirements for development on local virtual machines
 
 ## See also
 
-[Get an evaluation copy of Dynamics 365 for Finance and Operations, Enterprise edition](../../dev-itpro/dev-tools/get-evaluation-copy)
+[Get an evaluation copy of Dynamics 365 for Finance and Operations, Enterprise edition](../../dev-itpro/dev-tools/get-evaluation-copy.md)

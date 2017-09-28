@@ -49,7 +49,7 @@ Electronic signatures are a regulations compliance requirement for several regul
 ## Electronic signatures in Dynamics 365 for Finance and Operations
 In Finance and Operations, you can use electronic signatures for critical business processes. Some processes have built-in electronic signature capabilities. You can also create custom signature requirements for any database table and field. 
 
-Electronic signatures have built-in digital signature functionality. Every user who signs documents must obtain a valid cryptographic certificate. When a document is signed, the private key that is associated with that certificate is validated. Finance and Operations records electronic signature information in a log to provide an audit trail. To set up electronic signatures, see [Set up electronic signatures (Task guide)](organization-administration/tasks/set-up-electronic-signatures).
+Electronic signatures have built-in digital signature functionality. Every user who signs documents must obtain a valid cryptographic certificate. When a document is signed, the private key that is associated with that certificate is validated. Finance and Operations records electronic signature information in a log to provide an audit trail. To set up electronic signatures, see [Set up electronic signatures (Task guide)](tasks/set-up-electronic-signatures.md).
 
 ## Users who require access to electronic signatures
 Three kinds of users typically require security access to electronic signatures: electronic signature administrators, signers, and electronic signature auditors.

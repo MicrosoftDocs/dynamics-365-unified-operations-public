@@ -1045,7 +1045,7 @@ Operations, Enterprise edition.
 The Practice manager Power BI content contains five report pages: one overview
 page and four pages that provide details about project costs, revenues, earned
 value management, and hour metrics that are split out across various dimensions.
-For more information, see [Practice manager Power BI content](../../dev-itpro/analytics/practice-manager-power-bi).
+For more information, see [Practice manager Power BI content](../../dev-itpro/analytics/practice-manager-power-bi.md).
 
 Fixed asset management workspace and embedded Power BI content 
 ---------------------------------------------------------------

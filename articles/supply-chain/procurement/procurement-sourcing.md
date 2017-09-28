@@ -53,7 +53,7 @@ Procurement and sourcing covers all steps from identifying a need for product an
 -   [Create solicitation types and scoring criteria for RFQs](tasks/create-solicitation-types-scoring-criteria-rfqs.md)
 
 ## Vendor management and collaboration
--   [Setting up vendor accounts](set-up-vendor-accounts.md.md)
+-   [Setting up vendor accounts](set-up-vendor-accounts.md)
 -   [Create a vendor account](tasks/create-vendor-account.md)
 -   [Create a vendor bank account](tasks/create-vendor-bank-account.md)
 -   [Search for vendors](tasks/search-vendors.md)

@@ -59,4 +59,4 @@ Accommodations represent changes to work environments or business operations tha
 See also
 --------
 
-[Dynamics 365 for Talent](../../talent/index)
+[Dynamics 365 for Talent](../../talent/index.md)

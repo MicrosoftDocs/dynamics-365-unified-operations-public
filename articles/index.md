@@ -50,18 +50,18 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
                         </div>-->
                     </div>
                     <div class="cardText">
-                        <h3><a href="../fin-and-ops/get-started/before-you-buy.md">Before you buy</a></h3>
-                        <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Sign up for a preview subscription</a></p>
-                        <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Choose a deployment option</a></p>
-                        <p><a href="../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
-                        <p><a href="../fin-and-ops/get-started/purchase-on-premises.md">Buy Finance and Operations (on-premises)</a></p>
+                        <h3><a href="../unified-operations/fin-and-ops/get-started/before-you-buy.md">Before you buy</a></h3>
+                        <p><a href="../unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription.md">Sign up for a preview subscription</a></p>
+                        <p><a href="../unified-operations/dev-itpro/deployment/choose-deployment-type.md">Choose a deployment option</a></p>
+                        <p><a href="../unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
+                        <p><a href="../unified-operations/fin-and-ops/get-started/purchase-on-premises.md">Buy Finance and Operations (on-premises)</a></p>
                         <br>
                         <H3><a href="fin-and-ops/hr/hr-landing-page.md">Human resources</a></h3>
 <p><a href="../talent/manage-benefit-program.md">Benefits</a></p>
 <p><a href="../talent/performance-management-overview.md">Employee development and training</a></p>
 <p><a href="../talent/questionnaires.md">Questionnaire</a></p></p>
-<p><a href="fin-and-ops/hr/manage-recruiting-process.md">Recruiting</a></p>
-<p><a href="fin-and-ops/hr/localizations/noam-usa-payroll.md">US payroll</a>
+<p><a href="/unified-operations/fin-and-ops/hr/manage-recruiting-process.md">Recruiting</a></p>
+<p><a href="/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll.md">US payroll</a>
                 </div>
                 </div>
             </div>
@@ -77,18 +77,18 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
                         </div>-->
                     </div>
                     <div class="cardText">
-                        <h3><a href="../financials/index.md">Financials</a></h3>
-<p><a href="../financials/accounts-payable/accounts-payable.md">Accounts payable</a></p>
-<p><a href="../financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></p>
-<p><a href="../financials/budgeting/budgeting-overview.md">Budgeting</a></p>
-<p><a href="../financials/cash-bank-management/cash-bank-management.md">Cash and bank management</a></p>
-<p><a href="../financials/general-ledger/audit-policy-rules.md">Compliance</a></p>
-<p><a href="../financials/cost-accounting/cost-accounting-home-page.md">Cost accounting</a></p>
-<p><a href="../financials/fixed-assets/fixed-assets.md">Fixed assets</a></p>
-<p><a href="../financials/general-ledger/general-ledger.md">General ledger</a></p>
-<p><a href="../financials/project-management/overview-project-management-accounting.md">Project management</a></p>
-<p><a href="../financials/public-sector/public-sector-functionality.md">Public sector</a></p>
-<p><a href="../dev-itpro/lcs-solutions/country-region.md">Regional regulatory features</a></p>
+                        <h3><a href="../unified-operations/financials/index.md">Financials</a></h3>
+<p><a href="../unified-operations/financials/accounts-payable/accounts-payable.md">Accounts payable</a></p>
+<p><a href="../unified-operations/financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></p>
+<p><a href="../unified-operations/financials/budgeting/budgeting-overview.md">Budgeting</a></p>
+<p><a href="../unified-operations/financials/cash-bank-management/cash-bank-management.md">Cash and bank management</a></p>
+<p><a href="../unified-operations/financials/general-ledger/audit-policy-rules.md">Compliance</a></p>
+<p><a href="../unified-operations/financials/cost-accounting/cost-accounting-home-page.md">Cost accounting</a></p>
+<p><a href="../unified-operations/financials/fixed-assets/fixed-assets.md">Fixed assets</a></p>
+<p><a href="../unified-operations/financials/general-ledger/general-ledger.md">General ledger</a></p>
+<p><a href="../unified-operations/financials/project-management/overview-project-management-accounting.md">Project management</a></p>
+<p><a href="../unified-operations/financials/public-sector/public-sector-functionality.md">Public sector</a></p>
+<p><a href="../unified-operations/dev-itpro/lcs-solutions/country-region.md">Regional regulatory features</a></p>
                     </div>
                 </div>
             </div>
@@ -104,16 +104,16 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
                         </div>-->
                     </div>
                     <div class="cardText">
-<h3><a href="../supply-chain/index.md">Supply chain management</a></h3>
-<p><a href="../supply-chain/cost-management/costing-sheets.md">Cost management</a></p>
-<p><a href="../supply-chain/inventory/inventory-locations.md">Inventory management</a></p>
-<p><a href="../supply-chain/transportation/transportation-management-overview.md">Logistics - Transportation management</a></p>
-<p><a href="../supply-chain/warehousing/warehouse-configuration.md">Logistics - Warehouse management</a></p>
-<p><a href="../supply-chain/procurement/procurement-sourcing-overview.md">Order management - Procurement and sourcing</a></p>
-<p><a href="../supply-chain/sales-marketing/overview-sales-marketing.md">Order management - Sales and marketing</a></p>
-<p><a href="../supply-chain/master-planning/master-plans.md">Planning</a></p>
-<p><a href="../supply-chain/pim/product-information.md">Product information management</a></p>
-<p><a href="../supply-chain/production-control/create-production-orders.md">Production control</a></p>
+<h3><a href="../unified-operations/supply-chain/index.md">Supply chain management</a></h3>
+<p><a href="../unified-operations/supply-chain/cost-management/costing-sheets.md">Cost management</a></p>
+<p><a href="../unified-operations/supply-chain/inventory/inventory-locations.md">Inventory management</a></p>
+<p><a href="../unified-operations/supply-chain/transportation/transportation-management-overview.md">Logistics - Transportation management</a></p>
+<p><a href="../unified-operations/supply-chain/warehousing/warehouse-configuration.md">Logistics - Warehouse management</a></p>
+<p><a href="../unified-operations/supply-chain/procurement/procurement-sourcing-overview.md">Order management - Procurement and sourcing</a></p>
+<p><a href="../unified-operations/supply-chain/sales-marketing/overview-sales-marketing.md">Order management - Sales and marketing</a></p>
+<p><a href="../unified-operations/supply-chain/master-planning/master-plans.md">Planning</a></p>
+<p><a href="../unified-operations/supply-chain/pim/product-information.md">Product information management</a></p>
+<p><a href="../unified-operations/supply-chain/production-control/create-production-orders.md">Production control</a></p>
                     </div>
                 </div>
             </div>
@@ -129,11 +129,11 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
                         </div>-->
                     </div>
                     <div class="cardText">
-<h3><a href="../dev-itpro/analytics/information-access-reporting.md">Intelligence</a></h3>
-<p><a href="../dev-itpro/analytics/analytics.md">Analytics</a></p>
- <p><a href="../dev-itpro/analytics/document-reporting-services.md">Business documents</a></p>
-<p><a href="../dev-itpro/analytics/financial-reporting-intro.md">Financial reporting</a></p>
-<p><a href="../dev-itpro/analytics/general-electronic-reporting.md">Regulatory reporting</a></p>
+<h3><a href="../unified-operations/dev-itpro/analytics/information-access-reporting.md">Intelligence</a></h3>
+<p><a href="../unified-operations/dev-itpro/analytics/analytics.md">Analytics</a></p>
+<p><a href="../unified-operations/dev-itpro/analytics/document-reporting-services.md">Business documents</a></p>
+<p><a href="../unified-operations/dev-itpro/analytics/financial-reporting-intro.md">Financial reporting</a></p>
+<p><a href="../unified-operations/dev-itpro/analytics/general-electronic-reporting.md">Regulatory reporting</a></p>
                     </div>
                 </div>
             </div>
@@ -149,13 +149,13 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
                         </div>-->
                     </div>
                     <div class="cardText">
-                       <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Development</h3>
-<p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Extensibility</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Data management and integration</a></p>
-<p><a href="../dev-itpro/office-integration/office-integration.md">Office integration</a></p>
-<p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Continuous delivery</a></p>
-<p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobile platform</a></p>
-<p><a href="../fin-and-ops/get-started/demo-data.md">Demo data</a></p>
+                       <h3><a href="../unified-operations/dev-itpro/dev-tools/developer-home-page.md">Development</h3>
+<p><a href="../unified-operations/dev-itpro/extensibility/extensibility-home-page.md">Extensibility</a></p>
+<p><a href="../unified-operations/dev-itpro/data-entities/data-entities.md">Data management and integration</a></p>
+<p><a href="../unified-operations/dev-itpro/office-integration/office-integration.md">Office integration</a></p>
+<p><a href="../unified-operations/dev-itpro/dev-tools/continuous-delivery-home-page.md">Continuous delivery</a></p>
+<p><a href="../unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobile platform</a></p>
+<p><a href="../unified-operations/fin-and-ops/get-started/demo-data.md">Demo data</a></p>
                     </div>
                 </div>
             </div>
@@ -171,13 +171,13 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
                         </div>-->
                     </div>
                     <div class="cardText">
-<h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Administration</h3>
-<p><a href="../fin-and-ops/get-started/onboarding-home.md">Onboarding your organization</a></p>
-<p><a href="../dev-itpro/deployment/deploy-demo-environment.md">Deployment and servicing</a></p>
-<p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrade</a></p>
-<p><a href="../dev-itpro/data-entities/data-management-integration-data-entity.md">Data management</a></p>
-<p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
-<p><a href="../fin-and-ops/organization-administration/organization-administration-home-page.md">Organization administration</a></p>
+<h3><a href="../unified-operations/dev-itpro/sysadmin/system-administration-home-page.md">Administration</h3>
+<p><a href="../unified-operations/fin-and-ops/get-started/onboarding-home.md">Onboarding your organization</a></p>
+<p><a href="../unified-operations/dev-itpro/deployment/deploy-demo-environment.md">Deployment and servicing</a></p>
+<p><a href="../unified-operations/dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrade</a></p>
+<p><a href="../unified-operations/dev-itpro/data-entities/data-management-integration-data-entity.md">Data management</a></p>
+<p><a href="../unified-operations/dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
+<p><a href="../unified-operations/fin-and-ops/organization-administration/organization-administration-home-page.md">Organization administration</a></p>
                     </div>
                 </div>
             </div>

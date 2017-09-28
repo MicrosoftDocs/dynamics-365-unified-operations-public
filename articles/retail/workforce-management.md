@@ -38,7 +38,7 @@ The Workforce management (WFM) service takes advantage of the familiar point of 
 
 By using this service, store managers can easily create and publish weekly work schedule for their stores. Store workers can then quickly view their own schedules and the schedules of their colleagues. In that way, they can learn who will be working with them during the assigned shifts. Store workers can also create requests for absence, shift swap, and shift offer. All these requests trigger a defined workflow.
 
-During a shift, store workers can take advantage of the clock-in and clock-out feature that is built into the POS clients. The data is then sent to the headquarters (HQ) for payroll processing. The clock-in and clock-out feature is an existing capability of the POS. For more information about the setup and supported scenarios, see [Clock in and clock out](/dynamics365/operations/retail/retail-time-attendance).
+During a shift, store workers can take advantage of the clock-in and clock-out feature that is built into the POS clients. The data is then sent to the headquarters (HQ) for payroll processing. The clock-in and clock-out feature is an existing capability of the POS. For more information about the setup and supported scenarios, see [Clock in and clock out](retail-time-attendance.md).
 
 ## Supported scenarios
 This section provides more information about the supported scenarios.

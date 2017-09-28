@@ -117,7 +117,7 @@ There is no difference between document handling and document management. Both t
 
 Document management lets you add notes, documents, and other files to records.
 
-Print management lets you control print settings for selected reports. Print settings include the number of copies, the printer destination, and the multilanguage text that can be included on the report. For more information, see [Document Reporting Services overview](../../dev-itpro/analytics/document-reporting-services).
+Print management lets you control print settings for selected reports. Print settings include the number of copies, the printer destination, and the multilanguage text that can be included on the report. For more information, see [Document Reporting Services overview](../../dev-itpro/analytics/document-reporting-services.md).
 
 ### What is the difference between document types and file types?
 

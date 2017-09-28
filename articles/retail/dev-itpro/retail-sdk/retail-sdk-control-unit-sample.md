@@ -156,4 +156,4 @@ Follow these steps to create and apply deployable packages that contain Retail c
         ```
 
 2. Run **msbuild** for the whole Retail SDK to create deployable packages.
-3. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+3. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](retail-sdk-packaging.md).

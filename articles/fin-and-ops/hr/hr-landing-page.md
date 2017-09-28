@@ -52,7 +52,7 @@ Develop a human resources strategy
 
 As you work with Human resources, you'll decide how to structure your organization, using elements, such as departments, jobs, and positions. These are among the foundational elements that you'll configure in Human resources. Individual employees are assigned to positions which are associated with jobs.
 
--   [Organize your workforce using departments, jobs, and positions](../../talent/departments-jobs-positions.m)
+-   [Organize your workforce using departments, jobs, and positions](../../talent/departments-jobs-positions.md)
 -   [Set up company-specific HR parameters](../../talent/set-up-company-specific-hr-parameters.md)
 -   [Set up HR parameters across legal entities](../../talent/set-up-hr-parameters-across-legal-entities.md) 
 
@@ -60,8 +60,8 @@ As you work with Human resources, you'll decide how to structure your organizati
 
 Recruitment projects manage the content used in advertisements for open positions, and can help you manage applications for job openings. You can use them to track responses to job postings for a specific recruitment project, or specific applicants, and update the status of open positions. You can also hire single applicants or manage "mass hire projects," that facilitate hiring multiple workers, for example, to meet seasonal business needs.
 
--   [Manage a recruiting process](../../talent/manage-recruiting-process.md)
--   [Mass hire projects](../../talent/mass-hire-projects.md) 
+-   [Manage a recruiting process](manage-recruiting-process.md)
+-   [Mass hire projects](mass-hire-projects.md) 
 
 After you've hired staff, you can set up plans to effectively and equitably manage compensation, as well as manage items, such as computers or phones, that your organization lends to its employees. You can create fixed and variable compensation plans, as well as define rules that apply the compensation plan to meet the criteria for that plan.
 

@@ -97,8 +97,8 @@ In addition to compensating your staff with wages, salaries, and bonuses, you ca
 
 Talent can help you maintain a safe work environment that’s in compliance with applicable laws, including the Americans with Disabilities Act and immigration and naturalization laws, among others. For example, you can manage the physical requirements for specific jobs, as well as track requests for accommodations that can help your organization optimize the skills of its workforce.
 
--   [Form I-9 employment verification](../../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
--   [Comply with the Americans with Disabilities Act](../../fin-and-ops/hr/localizations/noam-usa-comply-ada.md)
+-   [Form I-9 employment verification](../../../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
+-   [Comply with the Americans with Disabilities Act](../../../fin-and-ops/hr/localizations/noam-usa-comply-ada.md)
 
 ## Gather information using questionnaires
 

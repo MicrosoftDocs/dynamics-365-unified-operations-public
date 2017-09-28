@@ -119,7 +119,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1.  On your mobile device, select the **Inventory on-hand** workspace.
 
-2.  Select **Check on-hand for an item**. You see a list of the products that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md).
+2.  Select **Check on-hand for an item**. You see a list of the products that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](../../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md).
 3.  If your item isn't in the list, select **Search more**. Search by product number, or switch to a search by product name.
 
 4.  Select a product. If the item has an image, the image is shown.

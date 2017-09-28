@@ -43,16 +43,16 @@ Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to se
 
 Select a feature area to learn more about it.
 
-- [Cost accounting](../../financials/cost-accounting/cost-accounting-home-page.md)
-- [Cost management](cost-management\costing-sheets.md)  
-- [Inventory management](inventory\consignment.md)
-- [Master planning](master-planning\introduction-demand-forecasting.md)
-- [Procurement and sourcing](procurement\procurement-sourcing-overview.md)
-- [Product information management](pim\product-information.md)
-- [Production control](production-control\production-process-overview.md)
-- [Sales and marketing](sales-marketing\overview-sales-marketing.md)
-- [Transportation management](transportation\transportation-management-overview.md)
-- [Warehouse management](warehousing\warehouse-configuration.md)
+- [Cost accounting](../../unified-operations/financials/cost-accounting/cost-accounting-home-page.md)
+- [Cost management](cost-management/costing-sheets.md)  
+- [Inventory management](inventory/consignment.md)
+- [Master planning](master-planning/introduction-demand-forecasting.md)
+- [Procurement and sourcing](procurement/procurement-sourcing-overview.md)
+- [Product information management](pim/product-information.md)
+- [Production control](production-control/production-process-overview.md)
+- [Sales and marketing](sales-marketing/overview-sales-marketing.md)
+- [Transportation management](transportation/transportation-management-overview.md)
+- [Warehouse management](warehousing/warehouse-configuration.md)
 
 ## Videos
 

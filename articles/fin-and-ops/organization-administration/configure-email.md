@@ -166,9 +166,9 @@ The system talks to Exchange or an SMTP server like a normal email client, so st
 See also
 --------
 
-[Office integration troubleshooting](../../dev-itpro/office-integration/office-integration-troubleshooting)
+[Office integration troubleshooting](../../dev-itpro/office-integration/office-integration-troubleshooting.md)
 
-[Office integration tutorial](../../dev-itpro/office-integration/office-integration-tutorial)
+[Office integration tutorial](../../dev-itpro/office-integration/office-integration-tutorial.md)
 
 [Configure email functionality in Microsoft Dynamics AX [AX 2012]](https://technet.microsoft.com/en-us/library/aa834374.aspx)
 
