@@ -601,3 +601,5 @@
 ### [Planned maintenance window FAQ](lifecycle-services/planned-maintenance-window-faq.md) 
 ### [Cloud operations and servicing](lifecycle-services/cloud-operations-servicing.md)
 ### [Manage Finance and Operations Support experiences](lifecycle-services/cloud-powered-support-lcs.md)
+
+## [Return to Dynamics 365 Table of Contents](../index.md)
