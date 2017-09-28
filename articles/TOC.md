@@ -139,6 +139,7 @@
 #### [Data entities and packages framework](dev-itpro/data-entities/data-entities-data-packages.md)
 ##### [Configuration data projects](dev-itpro/data-entities/configuration-data-projects.md)
 ##### [Configuration data packages](dev-itpro/data-entities/configuration-data-packages.md)
+#### [Track changes to an entity](dev-itpro/data-entities/entity-change-track.md)
 
 #### Standard data entities
 ##### [Data entities report](dev-itpro/data-entities/data-entities-report.md)
