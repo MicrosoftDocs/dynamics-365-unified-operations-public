@@ -76,7 +76,7 @@ If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or 
 <tr class="even">
 <td>Publish the <strong>Purchase order approval</strong> mobile workspace.</td>
 <td>System administrator</td>
-<td>See <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</td>
+<td>See <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publish a mobile workspace</a>.</td>
 </tr>
 </tbody>
 </table>

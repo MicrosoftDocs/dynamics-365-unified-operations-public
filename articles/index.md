@@ -172,7 +172,6 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
                     </div>
                     <div class="cardText">
 <h3><a href="dev-itpro/sysadmin/system-administration-home-page.md">Administration</h3>
-<p><a href="fin-and-ops/get-started/onboarding-home.md">Onboarding your organization</a></p>
 <p><a href="dev-itpro/deployment/deploy-demo-environment.md">Deployment and servicing</a></p>
 <p><a href="dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrade</a></p>
 <p><a href="dev-itpro/data-entities/data-management-integration-data-entity.md">Data management</a></p>

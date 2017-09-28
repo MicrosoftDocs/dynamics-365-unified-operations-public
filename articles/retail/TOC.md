@@ -81,7 +81,7 @@
 ### [Create coupons for retail sales](retail-coupons.md)
 
 ## Products and merchandising
-### [Product information overview](../supply-chain/pim/product-information.md.md)
+### [Product information overview](../supply-chain/pim/product-information.md)
 ### [Retail hierarchies](retail-hierarchies.md)
 ### [Create and manage attributes](create-manage-attributes.md)
 ### [Set up retail products](set-up-retail-products.md)

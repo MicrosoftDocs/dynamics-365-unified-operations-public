@@ -43,7 +43,7 @@ Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to se
 
 Select a feature area to learn more about it.
 
-- [Cost accounting](../../unified-operations/financials/cost-accounting/cost-accounting-home-page.md)
+- [Cost accounting](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Cost management](cost-management/costing-sheets.md)  
 - [Inventory management](inventory/consignment.md)
 - [Master planning](master-planning/introduction-demand-forecasting.md)
