@@ -58,5 +58,5 @@ Product Name |	Version |	File format |	Remark
 **Dynamics AX 2012**	| All versions	| .ktd, .ald	|
 **Dynamics for Finance and Operations, Enterprise edition** | All versions |	.label.txt	|
 **Dynamics CRM**	| 2011~2015 |	.resx, .js	|
-**Dynamics NAV** | 2013~2017	| .etx, .stx, .resx, .txt, .xml |	.txt amd .xml are in NAV specific format
+**Dynamics NAV** | 2013~2017	| .etx, .stx, .resx, .txt, .xml |	.txt and .xml are in NAV specific format
 
