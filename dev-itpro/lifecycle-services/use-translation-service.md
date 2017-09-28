@@ -30,9 +30,29 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Microsoft Dynamics 365 - Translation Service User guide 
+# Microsoft Dynamics 365 - Translation Service - User guide 
 
 [!include[banner](../includes/banner.md)]
+
+## Accessing the Dynamics 365 - Translation Service
+There are two ways to access the Dynamics 365 - Translation Service (DTS) in Lifecycle Services (LCS).  
+
+### Option 1: Accessing from LCS Home page
+Once you sign in to LCS, scroll the screen to the right to find the tiles waffle. Click the **Translation service** tile to access the DTS dashboard space.  
+
+![alt text](./media/dts-tile.png "DTS tile")  
+
+### Option 2: Accessing from within an LCS project
+If you are creating a new LCS project or have an existing LCS project, access the project. Once you are in the project, scroll the screen to the far right to find the **Translation service** tile in **More tools** section and click on it.  
+
+### What is the difference between the two options?
+A LCS project is always tied to a product. So, any translation service request you submit from a project will carry the product type/version information automatically from the project, and you are not allowed to select a different product for the Translation service request. Also, when you are in a LCS project, the project owner and the users will have the access permission to the Translation service dashboard and to the service requests you have submitted from that project. This is useful when you work on one product translation project with a group of people in LCS. Below is an example of the dashboard view you and your project users may see.  
+
+![alt text](./media/dts-project-dashboard.png "DTS dashboard view from within a project")
+
+When you are in the LCS home page, you are not tied to any project yet until you create or access a LCS project. In light of that, when you access DTS from LCS home page and create a translation service request, you will be given a choice to select a product to use for the request. You can continue to add more requests with different products selection just by switching the product choice without having to exit the service and access a different translation project. This is very convenient when you are a partner or ISV working on multiple product translation projects. However, since you access the service outside a LCS project, not other user can view your requests in the translation service dashboard than you. So, this option provides you with your own dashboard to show all translation requests you make across all projects and from LCS home page, and help you manage them in one place. Below is an example dashboard view when accessing from LCS home page.  
+
+![alt text](./media/dts-home-dashboard.png "DTS dashboard view from LCS home access")  
 
 ## Alignment
 If you have previously translated files, you can create XLIFF TM to recycle the translation for newer version of source files.
