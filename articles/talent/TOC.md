@@ -1,4 +1,4 @@
-# [Overview of Dynamics 365 for Talent](index.md)
+# [Welcome to Dynamics 365 for Talent](index.md)
 
 # Getting started
 ## [System requirements and update policy](talent-versions-update-policy.md)
