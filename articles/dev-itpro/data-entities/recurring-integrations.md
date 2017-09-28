@@ -106,6 +106,9 @@ After the client downloads the data, an acknowledgment must be sent back to Fina
 
 Use the API.
 
+> ![NOTE]
+> The body of the response of /enqueue must be sent in the body of the /ack POST request.
+
     https://<baseurl>/api/connector/ack/<activity id>
 
 **Example**
