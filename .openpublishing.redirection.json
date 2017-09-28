@@ -1,11 +1,6 @@
 { 
   "redirections": [ 
     {   
-        "source_path": "dev-itpro/get-started/", 
-        "redirect_url": "/dynamics365/unified-operations/fin-and-ops/get-started/", 
-        "redirect_document_id": true 
-    }, 
-    {   
         "source_path": "fin-and-ops/index.md", 
         "redirect_url": "/dynamics365/unified-operations/index", 
         "redirect_document_id": true 

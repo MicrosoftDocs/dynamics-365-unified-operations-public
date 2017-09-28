@@ -74,7 +74,7 @@ You will set up several components to define the relationships among a store, th
 If you've been asked to customize your environment, or if you're responsible for deploying and maintaining your system, be sure to see the developer and system administrator content that is specific to Retail, in addition to the more general content.
 
 - [Dynamics 365 for Retail for IT Pros and Developers](dev-itpro/dev-retail-home-page.md)
-- [Microsoft Dynamics 365 for Retail for Developers and IT Pros](../dev-itpro/dev-tools/developer-home-page.md)
+- [Development and Administration for Dynamics 365 for Finance and Operations](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## Additional resources
 ### What's new and in development
