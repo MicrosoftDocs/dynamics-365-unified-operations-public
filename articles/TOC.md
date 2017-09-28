@@ -1870,3 +1870,7 @@
 ### [Project time entry mobile workspace](financials/project-management/project-time-entry-mobile-workspace.md)
 
 # [Development & administration for Dynamics 365 for Finance and Operations](dev-itpro/toc.md)
+
+# [Dynamics 365 for Retail](retail/toc.md)
+
+# [Dynamics 365 for Talent](talent/toc.md)
