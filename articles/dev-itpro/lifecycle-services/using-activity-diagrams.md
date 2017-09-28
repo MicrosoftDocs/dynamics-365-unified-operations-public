@@ -58,7 +58,7 @@ To upload a recording file, select the business process, and then, in the right 
 
 BPM automatically generates an activity diagram and detailed process steps for all task recordings that are created in Finance and Operations. The following illustration shows an example.
 
-![Example of an activity diagram and process steps for a task recording](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost17-1024x483.png "Example of an activity diagram and process steps for a task recording")
+![Example of an activity diagram and process steps for a task recording](./media/NEWBPM_BlogPost17-1024x483.png "Example of an activity diagram and process steps for a task recording")
 
 ## Edit activity diagrams
 To edit an activity diagram, right-click on a blank area of the flowchart, and then, on the bottom toolbar, select **Edit**. For more information about BPM flowcharts, see [Flowcharts in Business process modeler](flowcharts-business-process-modeler.md).
@@ -78,7 +78,7 @@ To view or upload a Visio file, follow these steps.
 
     For example, you want to create the following process steps.
 
-    ![Example of a process that has steps and substeps](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost19.png "Example of a process that has steps and substeps")
+    ![Example of a process that has steps and substeps](./media/NEWBPM_BlogPost19.png "Example of a process that has steps and substeps")
 
     In this case, enter the following text in the **Process steps** field.
 

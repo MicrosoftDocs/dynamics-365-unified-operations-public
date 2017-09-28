@@ -36,15 +36,15 @@ ms.dyn365.ops.version: 2012
 
 1. In Microsoft Dynamics Lifecycle Services (LCS), in your project, on the **Business process libraries** page, select the library to upload the task recording to.
 
-    ![Libraries on the Business process libraries page](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/choose%20library.PNG "Libraries on the Business process libraries page")
+    ![Libraries on the Business process libraries page](./media/choose-library.PNG "Libraries on the Business process libraries page")
 
 2. Select the process to upload the task recording to. 
 
-    ![Selecting a process](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/select%20upload.PNG "Selecting a process")
+    ![Selecting a process](./media/select-upload.PNG "Selecting a process")
 
 3. In the right pane, select **Upload**. Select **Browse** to find and select the file to upload, and then select **Upload**.
 
-    ![Upload AXTR dialog box](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/upload.PNG "Upload AXTR dialog box")
+    ![Upload AXTR dialog box](./media/upload.PNG "Upload AXTR dialog box")
 
 ## Export a methodology to Word
 
@@ -58,7 +58,7 @@ ms.dyn365.ops.version: 2012
 
 - In your LCS project, on the **Business process libraries** page, on the tile for the library that you want to copy, select the ellipsis button (…), and then select **Publish**.
 
-    ![Publishing a BPM library](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/PUB_DIS.png "Publishing a BPM library")
+    ![Publishing a BPM library](./media/PUB_DIS.png "Publishing a BPM library")
 
 ## Distribute a BPM library
 

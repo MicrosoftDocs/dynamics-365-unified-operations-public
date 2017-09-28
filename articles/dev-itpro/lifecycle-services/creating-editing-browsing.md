@@ -50,7 +50,7 @@ This topic provides information about how to create or edit a Business process m
 1. In the BPM library, select an existing process.
 2. Select **Add process**. You can select to add the process as a child or a sibling of the selected process node. In this way, you can create a semantic hierarchy of business processes.
 
-    ![Adding a process](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost06.png "Add process")
+    ![Adding a process](./media/NEWBPM_BlogPost06.png "Add process")
 
 ## Edit the properties of a process
 
@@ -59,7 +59,7 @@ This topic provides information about how to create or edit a Business process m
 3. Enter a name and description for the process node.
 4. Select the industries and the countries or regions that the process applies to. You can also add keywords and links. Keywords let you define categories, work streams, or other metadata. Links (URLs) let you reference external sites or documentation.
 
-    ![Process properties](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost08-194x300.png "Process details")
+    ![Process properties](./media/NEWBPM_BlogPost08-194x300.png "Process details")
 
 5. When you've finished editing the properties, select **Save**.
 
@@ -69,7 +69,7 @@ You can move a process node or assign it to another parent node in the BPM hiera
 
 1. Select the process node to move, and then select **Move process**. You can select to move the process up or down, or you can select **Move** to see more options.
 
-    ![Moving a process](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/NEWBPM_BlogPost09.png "Move process")
+    ![Moving a process](./media/NEWBPM_BlogPost09.png "Move process")
 
 2. If you selected **Move**, you can browse the hierarchy, select a node to move the process to, and then select **Move as child** or **Move as sibling**. To cancel the move operation, select **Cancel**.
 
@@ -92,11 +92,11 @@ Follow these steps to copy a global or corporate library to your project.
 1. On the **Business process libraries** page, double-click the tile for the library that you want to browse.
 2. In the BPM library, select a process to view its substeps.
 
-    ![Process and its substeps](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/2.PNG "Process and its substeps")
+    ![Process and its substeps](./media/2.PNG "Process and its substeps")
 
 3. Use the buttons on the toolbar to add, delete, or import processes as a child or a sibling. You can also select **Collapse all** to view only parent processes. 
 
-    ![Toolbar](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/3.PNG "Toolbar")
+    ![Toolbar](./media/3.PNG "Toolbar")
 
 ## Search a BPM library
 
@@ -109,4 +109,4 @@ You can search for words or phrases in your BPM library. The search functionalit
 
 - You can also search for Application Object Tree (AOT) elements that are part of the task recordings for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, that are in your library. Typically, these AOT elements are the names of pages or menu items. When you search for an AOT element, prefix it with a dollar sign ($). For example, enter **$CustTable** in the search box.
 
-![Search box](https://github.com/ntecklu/Dynamics-365-Operations/blob/nahva-bpm-overview/dev-itpro/lifecycle-services/media/searching.png "Search box")
+![Search box](./media/searching.png "Search box")
