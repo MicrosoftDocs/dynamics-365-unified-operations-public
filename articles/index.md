@@ -50,7 +50,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="dev-itpro/dev-tools/sign-up-preview-subscription.md">Sign up for a preview subscription</a></p>
  <p><a href="dev-itpro/deployment/choose-deployment-type.md">Choose a deployment option</a></p>
   <p><a href="fin-and-ops/get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
-  <p><a href="dev-itpro/get-started/purchase-on-premises.md">Buy Finance and Operations (on-premises)</a></p>
+  <p><a href="fin-and-ops/get-started/purchase-on-premises.md">Buy Finance and Operations (on-premises)</a></p>
 
 <h3><a href="financials/index.md">Financials</a></h3>
 <p><a href="financials/accounts-payable/accounts-payable.md">Accounts payable</a></p>
@@ -98,7 +98,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="dev-itpro/office-integration/office-integration.md">Office integration</a></p>
 <p><a href="dev-itpro/dev-tools/continuous-delivery-home-page.md">Continuous delivery</a></p>
 <p><a href="dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobile platform</a></p>
-<p><a href="dev-itpro/get-started/demo-data.md">Demo data</a></p>
+<p><a href="fin-and-ops/get-started/demo-data.md">Demo data</a></p>
 
 <h3><a href="dev-itpro/sysadmin/system-administration-home-page.md">Administration</h3>
 <p><a href="dev-itpro/deployment/deploy-demo-environment.md">Deployment and servicing</a></p>
