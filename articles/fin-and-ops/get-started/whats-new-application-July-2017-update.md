@@ -1067,7 +1067,7 @@ can dive into patterns and understand trends that lie hidden beneath the data,
 and make strategic decisions, such as major upgrades and plant re-tooling
 proactively, backed with data.
 
-For more information, see [Fixed asset management workspace](../../financials/fixed-assets/fixed-asset-management-workspace).
+For more information, see [Fixed asset management workspace](../../financials/fixed-assets/fixed-asset-management-workspace.md).
 
 Power BI reporting with financial dimensions 
 ---------------------------------------------
