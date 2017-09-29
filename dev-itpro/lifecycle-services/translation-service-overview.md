@@ -2,10 +2,10 @@
 # required metadata
 
 title: Microsoft Dynamics 365 - Translation Service
-description: The Microsoft Dynamics 365 - Translation Service (DTS) is designed to enhance the partners and ISVs translation experience of their solutions or when adding a new language for supported Dynamics products
+description: The Microsoft Dynamics 365 - Translation Service (DTS) is designed to enhance the partner and ISV translation experience of their solutions or when adding a new language for supported Microsoft Dynamics products.
 author: kfend
 manager: AnnBe
-ms.date: 09/17/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 6154
 ms.assetid: ejchoGIT
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: ejchoGIT
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -34,21 +34,21 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 - Translation Service (DTS) is designed to enhance the partners and ISVs translation experience of their solutions or when adding a new language for [supported Dynamics products](./translation-service-overview.md#supported-products).  
+The Microsoft Dynamics 365 - Translation Service (DTS) is designed to enhance the translation experience for partners and ISVs with their solutions or when adding a new language for [supported Dynamics products](./translation-service-overview.md#supported-products).  
 
-DTS uses custom trained machine translation (MT) system for [Microsoft’s GA languages](./use-translation-service.md#glossary) to maximize the quality of translation output. DTS also supports translation recycling from Dynamics and/or Partners/ISVs linguistic assets so identical strings are translated once and consistently. 
+DTS uses a custom-trained machine translation (MT) system for [Microsoft’s GA languages](./use-translation-service.md#glossary) to maximize the quality of the translation output. DTS also supports translation recycling from Microsoft Dynamics and Partners/ISVs linguistic assets so that identical strings are translated one time and consistently. 
 
-Here is a high-level view of how the service works:
-![alt text][overview]
+The following is a high-level view of how the service works:
+![alt text][overview of the Microsoft Dynamcis 365 - Translation Service]
 
 [overview]: ./media/dts-overview.png "How the DTS works" 
  
-## Recycling of Partners/ISVs existing translations
-Partners/ISVs linguistic assets recycling is only enabled when they upload them in XLIFF translation memory (TM) zip file format. Please refer to the [XLIFF TM zip file](./use-translation-service.md#xliff-tm) section for more details. 
+## Recycle partners and ISVs existing translations
+Recycling partners and ISVs linguistic assets is enabled only when the assets are uploaded in the XLIFF translation memory (TM) zip file format. Fro more information, see [XLIFF TM zip file](./use-translation-service.md#xliff-tm).
 
-## Custom trained MT system
-DTS uses Microsoft Translator Hub (MT Hub) from Microsoft Research to customize the MT system for the Dynamics products.
-The use of custom trained MT system is limited to Microsoft’s Dynamics GA languages unless partners/ISVs upload XLIFF TMs that contain more than 10,000 translation units ([TU](./use-translation-service.md#glossary)s). In such case, DTS will create a custom trained MT specific to the request. 
+## Custom-trained MT system
+DTS uses Microsoft Translator Hub (MT Hub) from Microsoft Research to customize the MT system for Microsoft Dynamics products.
+The use of the custom-trained MT system is limited to Microsoft’s Dynamics GA languages unless partners and ISVs upload XLIFF TMs that contain more than 10,000 translation units ([TU](./use-translation-service.md#glossary)s). In those cases, DTS will create a custom-trained MT that is specific to the request. 
 
 ## Supported products
 DTS currently supports the following product versions.  
