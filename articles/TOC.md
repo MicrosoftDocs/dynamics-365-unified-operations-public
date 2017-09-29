@@ -206,7 +206,7 @@
 ##### [OData](dev-itpro/data-entities/odata.md)
 ##### [Recurring integrations](dev-itpro/data-entities/recurring-integrations.md)
 
-#### [Data integration using the Common Data Service](/common-data-service/entity-reference/dynamics-365-integration) 
+#### [Data integration using the Common Data Service](dev-itpro/data-entities/data-integration-cds.md) 
 ##### [Configure a prospect to cash scenario](supply-chain/sales-marketing/prospect-to-cash.md)
 ###### [Synchronize products from Finance and Operations to products in Sales](supply-chain/sales-marketing/products-template-mapping.md)
 ###### [Synchronize accounts from Sales to customers in Finance and Operations](supply-chain/sales-marketing/accounts-template-mapping.md)
@@ -215,7 +215,7 @@
 ###### [Synchronize sales order headers and lines from Finance and Operations to Sales](supply-chain/sales-marketing/sales-order-template-mapping.md)
 ###### [Synchronize sales invoice headers and lines from Finance and Operations to Sales](supply-chain/sales-marketing/sales-invoice-template-mapping.md)
 
-## Financial management
+## [Financial management](financials/index.md)
 
 ### [General ledger](financials/general-ledger/general-ledger.md)
 #### Accounts
