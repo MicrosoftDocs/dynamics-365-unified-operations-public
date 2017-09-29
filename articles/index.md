@@ -52,7 +52,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
   <p><a href="fin-and-ops/get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
   <p><a href="fin-and-ops/get-started/purchase-on-premises.md">Buy Finance and Operations (on-premises)</a></p>
 
-<h3><a href="financials/index.md">Financials</a></h3>
+<h3><a href="financials/index.md">Financial management</a></h3>
 <p><a href="financials/accounts-payable/accounts-payable.md">Accounts payable</a></p>
 <p><a href="financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></p>
 <p><a href="financials/budgeting/budgeting-overview.md">Budgeting</a></p>
@@ -80,7 +80,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="supply-chain/procurement/procurement-sourcing-overview.md">Order management - Procurement and sourcing</a></p>
 <p><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Order management - Sales and marketing</a></p><p><a href="supply-chain/master-planning/master-plans.md">Planning</a></p>
 <p><a href="supply-chain/pim/product-information.md">Product information management</a></p>
-<p><a href="supply-chain/production-control/create-production-orders.md">Production control</a></p>
+<p><a href="supply-chain/production-control/production-process-overview.md">Production control</a></p>
 
 </td>
 <td>
