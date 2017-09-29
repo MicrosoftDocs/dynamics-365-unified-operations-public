@@ -30,33 +30,30 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Microsoft Dynamics 365 - Translaion Service - Overview
+# Microsoft Dynamics 365 - Translation Service - Overview
 
 [!include[banner](../includes/banner.md)]
 
 The Microsoft Dynamics 365 - Translation Service (DTS) is designed to enhance the translation experience for partners and ISVs with their solutions or when adding a new language for [supported Dynamics products](./translation-service-overview.md#supported-products).  
 
-DTS uses a custom-trained machine translation (MT) system for [Microsoft’s GA languages](./use-translation-service.md#glossary) to maximize the quality of the translation output. DTS also supports translation recycling from Microsoft Dynamics and Partners/ISVs linguistic assets so that identical strings are translated one time and consistently. 
+DTS uses a custom-trained machine translation (MT) system for [Microsoft’s General Availability (GA) languages](./use-translation-service.md#glossary) to maximize the quality of the translation output. DTS also supports translation recycling from Microsoft Dynamics and partners/ISVs linguistic assets so that identical strings are translated one time and consistently. 
 
-The following is a high-level view of how the service works:
-![alt text][overview of the Microsoft Dynamcis 365 - Translation Service]
-
-[overview]: ./media/dts-overview.png "How the DTS works" 
+The following diagram shows a high-level view of how the service works. ![alt text](./media/dts-overview.png "How the DTS works")
  
-## Recycle partners and ISVs existing translations
-Recycling partners and ISVs linguistic assets is enabled only when the assets are uploaded in the XLIFF translation memory (TM) zip file format. Fro more information, see [XLIFF TM zip file](./use-translation-service.md#xliff-tm).
+## Recycle existing translations
+Recycling existing linguistic assets is enabled only when the assets are uploaded in the XLIFF translation memory (TM) zip file format. For more information, see [XLIFF TM zip file](./use-translation-service.md#xliff-tm).
 
 ## Custom-trained MT system
 DTS uses Microsoft Translator Hub (MT Hub) from Microsoft Research to customize the MT system for Microsoft Dynamics products.
-The use of the custom-trained MT system is limited to Microsoft’s Dynamics GA languages unless partners and ISVs upload XLIFF TMs that contain more than 10,000 translation units ([TU](./use-translation-service.md#glossary)s). In those cases, DTS will create a custom-trained MT that is specific to the request. 
+The use of the custom-trained MT system is limited to Microsoft’s Dynamics GA languages unless partners and ISVs upload XLIFF TM files that contain more than 10,000 translation units (TU). A TU typically contains a source string, translation, state, state qualifier, and note. In those cases, DTS will create a custom-trained MT that is specific to the request. 
 
 ## Supported products
 DTS currently supports the following product versions.  
 
-Product Name |	Version |	File format supported |	Note
+Product name |	Version |	File format supported |	Note
 --- | --- | --- | ---
 **Dynamics AX 2012**	| All versions	| .ktd, .ald	|
 **Dynamics for Finance and Operations, Enterprise edition** | All versions |	.label.txt	|
-**Dynamics CRM**	| 2011~2015 |	.resx, .js	|
-**Dynamics NAV** | 2013~2017	| .etx, .stx, .resx, .txt, .xml |	.txt and .xml are in NAV specific formats
+**Dynamics CRM**	| 2011-2015 |	.resx, .js	|
+**Dynamics NAV** | 2013-2017	| .etx, .stx, .resx, .txt, .xml |	.txt and .xml are in NAV-specific formats
 
