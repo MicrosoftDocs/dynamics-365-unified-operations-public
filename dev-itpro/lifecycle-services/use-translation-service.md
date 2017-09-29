@@ -165,7 +165,7 @@ We encourage you to post-edit the translations in the provided XLIFF file using 
 ## Editing the translation in XLIFF
 The XLIFF file will look similar to this when opened in the Multilingual Editor.  
  
-![alt text](./media/dts-editor.png "Multilingual Editor") 
+![alt text](./media/dts-editor1.png "Multilingual Editor") 
 
 Note that there are red and yellow circles towards the beginning of each line indicating the state of the translation. These states are automatically assigned by DTS depending on where the translation came from.
 
@@ -190,7 +190,7 @@ Clicking the **Regenerate** button will take you to the Regenerate pane where yo
 
 ![alt text](./media/dts-regenerate-upload.png "Regenerate Upload")  
 
-Once Upload button is clicked, DTS will ask you to confirm the upload. DTS will regenerate the new output immediately after the confirmation.
+Once **Upload** button is clicked, DTS will ask you to confirm the upload. DTS will regenerate the new output immediately after the confirmation.
 
 ![alt text](./media/dts-regenerate-output.png "Regenerate output")  
 
