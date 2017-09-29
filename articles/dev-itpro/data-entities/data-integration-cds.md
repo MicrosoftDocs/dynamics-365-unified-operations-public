@@ -38,4 +38,4 @@ You can use Common Data Service to enable the flow of data between Microsoft Dyn
 
 For more information about the Common Data Service data integration feature, see [Dynamics 365 Data Integration](/common-data-service/entity-reference/dynamics-365-integration).
 
-For an example of using Common Data Service, see [Configure a prospect to cash scenario](supply-chain/sales-marketing/prospect-to-cash.md). 
+For an example of using Common Data Service, see [Configure a prospect to cash scenario](../supply-chain/sales-marketing/prospect-to-cash.md). 
