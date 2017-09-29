@@ -48,7 +48,7 @@ Partners/ISVs linguistic assets recycling is only enabled when they upload them 
 
 ## Custom trained MT system
 DTS uses Microsoft Translator Hub (MT Hub) from Microsoft Research to customize the MT system for the Dynamics products.
-The use of custom trained MT system is limited to Microsoft’s Dynamics GA languages unless partners/ISVs upload XLIFF TMs that contain more than 10,000 translation units (TUs). In such case, DTS will create a custom trained MT specific to the request. 
+The use of custom trained MT system is limited to Microsoft’s Dynamics GA languages unless partners/ISVs upload XLIFF TMs that contain more than 10,000 translation units ([TU](./use-translation-service.md#glossary)s). In such case, DTS will create a custom trained MT specific to the request. 
 
 ## Supported products
 DTS currently supports the following product versions.  
