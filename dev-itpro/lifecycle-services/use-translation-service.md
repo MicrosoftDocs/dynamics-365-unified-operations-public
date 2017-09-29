@@ -77,7 +77,7 @@ These empty strings are inherited into the XLIFF TM. ‘Rebate’ with empty tar
 
 ![alt text](./media/dts-align4.png "Missing strings")  
 
-It is a good practice to review the aligned XLIFF before using it as a TM. Reviewed TUs should be marked as _‘Final’_ or _‘Signed off’_ so that they won’t be confused with unreviewed translations.  
+It is a good practice to review the aligned XLIFF before using it as a TM. Reviewed TUs should be marked as _Final_ or _Signed off_ so that they won’t be confused with unreviewed translations.  
 
 ## Creating a translation request
 In the main dashboard, click on the **Add** icon to start creating the new translation request.  
@@ -151,96 +151,88 @@ When the translation process is complete, you will receive an email notification
 
 ![alt text](./media/dts-output.png "Request output") 
 
-When translation is complete two types of files are provided.  
+Once the translation process is done, two types of output files are produced:  
 
-  + File for translation review  
-    You can download the XLIFF file and edit to improve the translation in this multilingual file.  
+  + Multilingual files in XLIFF format for translation review  
+    You can download the XLIFF file to review and edit the translations in this multilingual file which shows side by side source and target languages.  
 
-  + Translated file in native format  
-    Download this file if you have no intention to edit the translation.
+  + Translated file in native format (same format to the source files)  
+    Download this file if you have no intention to review and edit the translations.
 
-We encourage you to post-edit the translations in the provided XLIFF file, or at least review them to make sure the translation output is up to your product’s standard.  
+We encourage you to post-edit the translations in the provided XLIFF file using the free Multilingual Editor provided or any XLIFF editor, or at least review them to make sure the translation output is up to your product’s quality standard.  
 
 
 ## Editing the translation in XLIFF
-
-The XLIFF file will look similar to this when opened in the Multilingual Editor.
+The XLIFF file will look similar to this when opened in the Multilingual Editor.  
  
+![alt text](./media/dts-editor.png "Multilingual Editor") 
 
+Note that there are red and yellow circles towards the beginning of each line indicating the state of the translation. These states are automatically assigned by DTS depending on where the translation came from.
 
-Note that there are red and yellow circles towards the beginning of each line indicating the state of the translation.  These states are automatically assigned by the DTS depending of where the translation came from.
++	Red circle: the text is machine translated. DTS assigns the state as _Needs Review_*
 
-+	Red circle  
-  The text is machine translated. DTS assigns the state as ‘Needs Review’*
++	Yellow, Green/Yellow, Green circle: the text is recycled. DTS inherited the state from the XLIFF TM used in the request.
 
-+	Yellow, Green/Yellow, Green circle  
-  The text is recycled. DTS inherited the state from the XLIFF TM used in the request.
+*Please note that the state value shown may be slightly different depending on the XLIFF editor you are using.
 
-*Please note that the state value shown may be slightly different depending on the XLIFF editor.
+You may apply the filter and only display the _Needs Review_ strings to verify the translation.  
 
-You may apply the filter and only display the ‘Needs Review’ strings to verify the translation.  
+![alt text](./media/dts-editor2.png "Needs Review")  
  
-Reviewed string should be marked as “Translated”, “Final”, or "Signed off” so that they can be used for recycling. **Translations that are marked as “Needs Review” will not be included for recycling.**
+Reviewed string should be marked as _Translated_, _Final_, or _Signed off_ so that they can be used for recycling. **Translations that are marked as _Needs Review_ will not be included for recycling.**
 
 ## Regenerate
-When you finish reviewing the translation, you will need to regenerate the output files based on the change you made in the XLIFF files.  
+When you are done reviewing the translations and made edits, you will need to regenerate the output files based on the change you made in the XLIFF files.  
 
- 
+![alt text](./media/dts-regenerate.png "Regenerate")  
 
-Clicking the Regenerate button will take you to the Regenerate pane where you can upload the edited XLIFF files.  Please make sure to zip the files before uploading.
+Clicking the **Regenerate** button will take you to the Regenerate pane where you can upload the edited XLIFF files. Please make sure to zip the edited XLIFF files before uploading.
 
- 
+![alt text](./media/dts-regenerate-upload.png "Regenerate Upload")  
 
-Once Upload button is clicked, DTS will ask you to confirm the upload.  DTS will regenerate the new output immediately after the confirmation.
+Once Upload button is clicked, DTS will ask you to confirm the upload. DTS will regenerate the new output immediately after the confirmation.
 
- 
+![alt text](./media/dts-regenerate-output.png "Regenerate output")  
 
-You can repeat this regenerate process as many time as necessary.
+You can repeat this regenerate process as many times as necessary.
 
 ## XLIFF TM
-DTS uses bi-lingual XLIFF format to store source and target language pairs.  XLIFF format is based on the XML; therefore, you can open it with any text editor.  However, we recommend using one of the XLIFF editors that are specifically designed to work with this format.  We use Multilingual Editor available as a part of Multilingual App Toolkit(MAT) since it is one of the free options available.
+DTS uses bi-lingual XLIFF format to store source and target language pairs. XLIFF format is based on XML, therefore, you can open it with any text editor. However, we recommend using XLIFF editors that are specifically designed to work with this format. You can use Microsoft free Multilingual Editor available in [Multilingual App Toolkit (MAT)](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit).
 
-In DTS, you can obtain XLIFF TM in two different ways.
+In DTS, you can obtain a XLIFF TM in two different ways.
 
-+	By running alignment tool  
-  When you have previously translated files along with corresponding source files, you can use alignment tool to create XLIFF TM.  For details, please refer to the Alignment section
+  +	By running Align tool  
+  When you have previously translated files along with corresponding source files, you can use the Align tool to create a XLIFF TM. For more details, please refer to the _Alignment_ section in this documentation.
 
-+	By completing the translation request  
-  When translation request is complete, DTS will provide user XLIFF TMs as well as the translated files in the source format.
+  +	By completing the translation request  
+  When a translation request is completed, DTS will provide user with XLIFF TMs as well as the translated files in the source format.
 
-XLIFF files contain series of translation units(TUs) that are extracted from the source files.  Here is an example of a translation unit:
+XLIFF files contain series of translation units (TUs) that are extracted from the source files. Here is an example of a translation unit:
 
-    <trans-unit id="PRO39" translate="yes" xml:space="preserve">
-    <source>Rebate</source>
-    <target state="translated" state-qualifier="exact-match">リベート</target>
-    </trans-unit>
+![alt text](./media/dts-xlf.png "XLIFF translation unit")  
 
-Same translation unit looks like in the Multilingual Editor (blue highlighted):
+Same translation unit looks like this in the Multilingual Editor (blue highlighted):  
  
-
+![alt text](./media/dts-editor3.png "XLIFF translation unit")  
 
 ## State
-Each translation in the XLIFF file is associated with the state value.  DTS assigns these values to each translation depending on how the string is translated.
-When XLIFF TM is created with alignment tool, all translations are marked as ‘Translated’.  This is because the aligned TUs are produced from known good translations (i.e. previous product version).
+Each translation in the XLIFF file is associated with a state value. DTS assigns these values to each translation depending on how the string is translated.
+When XLIFF TM is created with Align tool, all translations are marked as _Translated_. This is because the aligned TUs are produced from known good translations (i.e. previous product version).
 
-However, when the XLIFF files are generated as results of the translation request, there are two types of states that may be used:
+However, when the XLIFF files are generated as results of a translation request, there are two types of states that may be used:
 
-+	Needs Review  
-  The string has been machine translated.
+  +	_Needs Review_: the string has been machine translated.
+  +	_Translated, Final_, or _Signed off_: These strings have been recycled. The states were inherited from the XLIFF TM.
 
-+	Translated, Final, or Signed off  
-  These strings have been recycled. The states were inherited from the XLIFF TM.
+This helps to immediately identify the _Needs Review_ strings when post editing. Post-reviewed string should be marked as _Translated_, _Final_, or _Signed off_ so that they can be used for recycling. **Translations that are marked as _Needs Review_ will not be included for recycling.**
 
-This is convenient as you can focus on the “Needs Review” strings when post editing.  Reviewed string should be marked as “Translated”, “Final”, or "Signed off” so that they can be used for recycling. **Translations that are marked as “Needs Review” will not be included for recycling.**
-
-Inherited state values for recycled strings are also convenient, as you will never have to review the same string (with identical ID) again.
-
+Inherited state values for recycled strings are also helpful as you will never have to review the same string (with identical ID) again.  
 
 ## Glossary
 
 Term | Description
 --- | ---
 *XLIFF* | XLIFF is an XML-based format created to standardize the way localizable data are passed between tools during a localization process and a common format for CAT tool files.
-*Microsoft’s GA languages* | General availability of the language versions. The list of languages depends on the product.
+*Microsoft’s GA languages* | GA means General availability of theMicrosoft produced languages depend on the product.
 *TU* | Translation unit. The translation unit typically contains source string, translation, state, state qualifier, and note.
 
