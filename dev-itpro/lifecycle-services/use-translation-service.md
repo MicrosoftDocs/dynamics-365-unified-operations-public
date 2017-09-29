@@ -114,12 +114,12 @@ Click **Create** to confirm the information and complete the creation of the req
 Clicking the **Plus** icon will bring the **File upload** pane. You can upload a single zip file for each of two file types: Source zip file and XLIF TM zip file.  
 
 ### Source zip file
-As the name implies, source zip file is the zip file that contains all the source files you wish to translate in the request. Different file types can be included as long as they are the supported file types for the product. Please refer to the _Supported products_ for the supported file types.  
+As the name implies, source zip file is the zip file that contains all the source files you wish to translate in the request. Different file types can be included as long as they are the supported file types for the product. Please refer to the [Supported products](./translation-service-overview.md#supported-products) for the supported file types.  
 
 ![alt text](./media/dts-upload1.png "File upload")  
 
 ### XLIFF TM zip file (Optional)
-If you have XLIFF files from the previous DTS request, or used the **Align** tool to create a XLIFF TM, you can zip the XLIFF files and upload here. Strings that 100% match are recycled into the new source files so that you can keep the consistency between product versions. Details about the XLIFF can be found in the _XLIFF TM_ section.  
+If you have XLIFF files from the previous DTS request, or used the **Align** tool to create a XLIFF TM, you can zip the XLIFF files and upload here. Strings that 100% match are recycled into the new source files so that you can keep the consistency between product versions. Details about the XLIFF can be found in the [XLIFF TM](./use-translation-service.md#xliff-tm) section.  
 
 ![alt text](./media/dts-upload2.png "File upload")  
 
@@ -202,7 +202,7 @@ DTS uses bi-lingual XLIFF format to store source and target language pairs. XLIF
 In DTS, you can obtain a XLIFF TM in two different ways.
 
   +	By running Align tool  
-  When you have previously translated files along with corresponding source files, you can use the Align tool to create a XLIFF TM. For more details, please refer to the _Alignment_ section in this documentation.
+  When you have previously translated files along with corresponding source files, you can use the Align tool to create a XLIFF TM. For more details, please refer to the [Alignment](./use-translation-service.md#alignment) section in this documentation.
 
   +	By completing the translation request  
   When a translation request is completed, DTS will provide user with XLIFF TMs as well as the translated files in the source format.
