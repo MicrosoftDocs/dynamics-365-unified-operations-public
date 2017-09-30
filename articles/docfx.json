@@ -45,27 +45,27 @@
       "_op_documentIdPathDepotMapping": {
         "dev-itpro/": {
           "folder_relative_path_in_docset": ".",
-          "depot_name": "MSDN.d365Ops-DevITPro"
+          "depot_name": "MSDN.d365OpsDevITPro"
         },
         "financials/": {
           "folder_relative_path_in_docset": ".",
-          "depot_name": "MSDN.d365Ops-Financials"
+          "depot_name": "MSDN.d365OpsFinancials"
         },
         "fin-and-ops/": {
           "folder_relative_path_in_docset": ".",
-          "depot_name": "MSDN.d365Ops-Core"
+          "depot_name": "MSDN.d365OpsCore"
         },
         "retail/": {
           "folder_relative_path_in_docset": ".",
-          "depot_name": "MSDN.d365Ops-Retail"
+          "depot_name": "MSDN.d365OpsRetail"
         },
         "supply-chain/": {
           "folder_relative_path_in_docset": ".",
-          "depot_name": "MSDN.d365Ops-SCM"
+          "depot_name": "MSDN.d365OpsSCM"
         },
         "talent/": {
           "folder_relative_path_in_docset": ".",
-          "depot_name": "MSDN.d365Ops-Talent"
+          "depot_name": "MSDN.d365OpsHR"
         }
       }
     },
