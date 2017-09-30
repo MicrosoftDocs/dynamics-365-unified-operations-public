@@ -41,7 +41,33 @@
       "extendBreadcrumb": "true",
       "breadcrumb_path": "/dynamics365/unified-operations-test/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
-      "brand": "dyn-ops"
+      "brand": "dyn-ops",
+      "_op_documentIdPathDepotMapping": {
+        "dev-itpro/": {
+          "folder_relative_path_in_docset": ".",
+          "depot_name": "MSDN.d365Ops-DevITPro"
+        },
+        "financials/": {
+          "folder_relative_path_in_docset": ".",
+          "depot_name": "MSDN.d365Ops-Financials"
+        },
+        "fin-and-ops/": {
+          "folder_relative_path_in_docset": ".",
+          "depot_name": "MSDN.d365Ops-Core"
+        },
+        "retail/": {
+          "folder_relative_path_in_docset": ".",
+          "depot_name": "MSDN.d365Ops-Retail"
+        },
+        "supply-chain/": {
+          "folder_relative_path_in_docset": ".",
+          "depot_name": "MSDN.d365Ops-SCM"
+        },
+        "talent/": {
+          "folder_relative_path_in_docset": ".",
+          "depot_name": "MSDN.d365Ops-Talent"
+        }
+      }
     },
     "fileMetadata": {},  
     "template": [],
