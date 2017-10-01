@@ -320,142 +320,142 @@
       },
       {
         "source_path" : "dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated",
        "redirect_document_id" : true
     },
        {
         "source_path" : "dev-itpro/get-started/demo-data.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/demo-data",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/demo-data",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/features-not-implemented-on-prem.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/features-not-implemented-on-prem",
        "redirect_document_id" : true  
        },
        {
        "source_path" : "dev-itpro/get-started/hardware-sizing-on-premises-environments.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/hardware-sizing-on-premises-environments",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/hardware-sizing-on-premises-environments",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/help-connect.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/help-connect",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/help-connect",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/help-overview.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/help-overview",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/help-overview",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/new-task-guides-available-february-2016.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/new-task-guides-available-february-2016",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/new-task-guides-november-2016.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/new-task-guides-november-2016",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/new-updated-task-guides-available-august-2016.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/new-updated-task-guides-available-august-2016",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/new-updated-task-guides-available-may-2016.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/new-updated-task-guides-available-may-2016",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/purchase-on-premises.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/purchase-on-premises",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/system-requirements-on-prem.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/system-requirements-on-prem",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements-on-prem",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/system-requirements.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/system-requirements",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/whats-new-application-July-2017-update.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-application-July-2017-update",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/whats-new-changed-7-0-february-2016.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-7-0-february-2016",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-platform-version-7-1-may-2016",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/whats-new-changed.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/whats-new-dynamics-365-operations-1611.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-dynamics-365-operations-1611",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/whats-new-platform-update-10.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-10",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-10",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/whats-new-platform-update-2.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-2",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/whats-new-platform-update-3.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-3",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/whats-new-platform-update-4.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-4",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/whats-new-platform-update-5.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-5",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/whats-new-platform-update-6.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-6",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/whats-new-platform-update-7.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-7",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/whats-new-platform-update-8.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-8",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-8",
        "redirect_document_id" : true  
        },
        {
         "source_path" : "dev-itpro/get-started/whats-new-platform-update-9.md",
-       "redirect_url" : "/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-9",
+       "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-9",
        "redirect_document_id" : true  
        } 
   ]
