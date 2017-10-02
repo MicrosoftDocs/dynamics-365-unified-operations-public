@@ -49,38 +49,36 @@ You can set up outbound rules to determine how you want the program to handle th
 
 ## Picking route status for sales and transfer orders 
 
-Navigation path: **Account receivable \> Setup \> Account receivable parameters \> Updates \>
+**Account receivable \> Setup \> Account receivable parameters \> Updates \>
 Picking route status.**
 
-Add a screenshot 
-
-![](media/abdf8c50fd334c002282dd2bf955a1de.png)
+[![picking-route-status-for-sales-orders](./media/picking-route-status-sales-order.png)](./media/picking-route-status-sales-order.png)
 
 If the field is set to **Completed**, the picking process will take place automatically as part of the picking list generation process. If the field is set to **Activated**, the picking list lines will need to be updated manually.
 
-The same setup applies for transfer orders. You find **Picking route status** under **Inventory management \> Setup \> Inventory and warehouse management parameters \> Transport \> Picking route status.**
+The same setup applies for transfer orders. **Picking route status** under **Inventory management \> Setup \> Inventory and warehouse management parameters \> Transport \> Picking route status.**
 
-![](media/e23ce15bd0c09776fa808e6c32bf0cf8.png)
+[![picking-route-status-for-transfer-orders](./media/picking-route-status-transfer-order.png)](./media/picking-route-status-transfer-order.png)
 
 ## End output inventory orders
 
-Navigation path: **Inventory management \> Setup \> Inventory and warehouse management parameters
+**Inventory management \> Setup \> Inventory and warehouse management parameters
 \> General \> End output inventory orders.**
 
-![](media/86fa51876cdddf8ab803e6f06698bf93.png)
+[![end-output-inventory-orders](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
 When some items in the inventory can’t be picked as part of the picking list process. For example, a warehouse worker reduces the quantities on picking lines and processes the picking list, the remaining unpicked quantities can either be reported back to the order level (Parameter set to Yes) or kept as an open output order quantity (Parameter set to No), and thereby remain as released to
 the warehouse and need to be added to a new picking list as part of the **Open output order** functionality.
 
-![](media/0f4645d7e7e791e8e080a242411558d1.png)
+[![open-output-inventory-orders](./media/open-output-order.png)](./media/open-output-order.png)
 
-![](media/aa3f050c07ab0f0aa18ae2814ff0ad98.png)
+[![open-output-inventory-orders-functionality](./media/end-output-inventory-order.png)](./media/end-output-inventory-order.png)
 
 ## Reduce quantity
 
 The third parameter which can be used as part of the picking list generation process is the **Reduce quantity** parameter. This setup goes together with the **Reservation** setting, which will trigger a reservation process as part of the release to the warehouse.
 
-![](media/3faaaf09a51352fa4f7c81b95cfd86f4.png)
+[![reduce-quantity](./media/reduce-quantity.png)](./media/reduce-quantity.png)
 
 ## Example of an outbound process for a sales order
 
@@ -88,8 +86,8 @@ Imagine there a sales order for two items. During the picking list generation, i
 
 As part of the generation of the picking list, the inventory which has not already been reserved will be reserved during the picking list generation. The unavailable inventory can be either removed from the sales order or released to the warehouse for outbound processing at a later point in time when inventory is available for picking.
 
-![](media/b87c5d558c2f4dd531e613309811b7d0.png)
+[![update-picking-list](./media/update-picking-list.png)](./media/update-picking-list.png)
 
 As soon as all the picking lines have been picked on the **Picking list registration** page, the associated shipment will be completed and the sales order packing slip process can be initialized based on the picked inventory.
 
-![](media/50553c851ec869b7f3d770213b0c2870.png)
+[![update-outbound-shipments](./media/outbound-shipments.png)](./media/outbound-shipments.png)
