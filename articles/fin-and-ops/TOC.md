@@ -1359,6 +1359,7 @@
 #### [Create a bill of lading](../supply-chain/transportation/create-bill-of-lading.md)
 #### [Plan freight transportation routes](../supply-chain/transportation/plan-freight-transportation-routes-multiple-stops.md)
 #### [Plan loads using hub consolidation](../supply-chain/transportation/plan-loads-hub-consolidation.md)
+#### [Include weight and volume on load](../supply-chain/transportation/include-weight-volume-on-load.md) 
 #### [Reconcile freight manually](../supply-chain/transportation/tasks/reconcile-freight-manually.md)
 #### [Reconcile freight](../supply-chain/transportation/reconcile-freight-transportation-management.md)
 #### [Register driver check-in and check-out for an appointment](../supply-chain/transportation/tasks/register-driver-check-check-out-appointment.md)
