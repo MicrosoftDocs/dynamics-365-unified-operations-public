@@ -46,7 +46,7 @@ Organizations often need to ensure that the links to their legal terms and priva
 
     2.  Enter the link to a page that outlines the privacy statement for your organization.
 
-> [!Note]
+> [!NOTE]
 > Make sure that you enter the full URL, starting with either https or http.
 
 2.  Click **Save**.
@@ -69,7 +69,7 @@ To validate that the links have been added, on the toolbar at the top of the pag
 
 Click on these links to validate that they open the appropriate pages. 
 
-> [!Note]
+> [!NOTE]
 > The links open in a new window, so if you have a pop-up blocker enabled, you will have to add an exception to your pop-up blocker settings to allow Finance and Operations and Retail to launch a new window.
 
 
