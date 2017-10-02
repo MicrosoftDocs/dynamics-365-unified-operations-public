@@ -40,19 +40,25 @@ This topic explains how administrators can add links to their organization's leg
 Organizations often need to ensure that the links to their legal terms and privacy statement are readily available and visible to users in order to meet legal and compliance requirements. Administrators of an organization can follow these steps to have the links to their legal terms and privacy statement be available in the **About** pane (**Settings** &gt; **About**).
 
 ## Add links
-1. Go to the **System parameters** page and click **Legal and Privacy**. On this page you can:
+1.  Go to the **System parameters** page and click **Legal and Privacy.** On this page:
 
-  -   Enter the link to a page that outlines the legal terms for your organization.
-  -   Enter the link to a page that outlines the privacy statement for your organization.
+    1.  Enter the link to a page that outlines the legal terms for your organization.
 
-  > [!NOTE]
-  > Make sure that you enter the full URL, starting with either https or http. 
+    2.  Enter the link to a page that outlines the privacy statement for your organization.
 
-2. Click **Save**.
+>   **Note**: Make sure that you enter the full URL, starting with either https or http.
 
-3. If you are using Dynamics 365 for Retail, go to the **Distribution schedules** page. On this page:
-  - Select the **1110** job.
-  - Click **Run now**.
+1.  Click **Save**.
+
+2.  If you are using Dynamics 365 for Retail, go to the **Distribution
+    schedules** page. On this page:
+
+    1.  Select the **1110 – Global configuration** job.
+
+    2.  Click **Run now**.
+
+>   To verify that that the job completed, go to the **Download sessions** page.
+
 
 ## Validate links
 To validate that the links have been added, on the toolbar at the top of the page, click the **Settings** icon, and then click **About**. In the **Links** section of the pane, you should see two new links:
