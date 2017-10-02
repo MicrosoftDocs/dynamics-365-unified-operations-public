@@ -3,7 +3,7 @@ title: Business process modeler
 description: This topic provides information about the Business process modeler tool in Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
-ms.date: 09/17/2017
+ms.date: 10/02/2017
 ms.topic: article
 ms.prod: 
 ms.service:  dynamics-ax-platform
@@ -40,7 +40,7 @@ BPM is compatible with the following programs:
 - **Microsoft Word** – You can generate documentation for business processes.
 - **Microsoft Visio** – You can export business process maps to Visio files.
 
-**Note:** The information in this topic is specific only to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. For information about Business process modeler and Microsoft Dynamics AX 2012, see [Business process modeler](../ax-2012/business-process-modeler-lcs.md). 
+**Note:** The information in this topic is specific only to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. For information about Business process modeler and Microsoft Dynamics AX 2012, see [Business process modeler](ax-2012/business-process-modeler-lcs.md). 
 
 ## Prerequisites
 
