@@ -79,6 +79,7 @@ For information about the new features included in each release, click the links
 
 | Release          |Major or minor release         | Version          | Build number | Availability  | Expiration date | 
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
+|  Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | [Application update 3](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4043284&bugId=3857197&qc=a454835bf86493b0a878eed878045540ba632d897fabdc0b13c60f58292c7a84)* | 7.2.11792.62370 | September 2017     | June 2020  | 
 |  Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | [Application update 2](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4039142&bugId=3850590&qc=204b1f37a96118e0538a6cad6c91a398019308d0a6b558b86e1ebe35d8fb73c8)* | 7.2.11792.62192 | September 2017     | June 2020  | 
 |  Dynamics 365 for Finance and Operations, Enterprise edition | Minor release | [Application update 1](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4035749&bugId=3845890&qc=204b1f37a96118e0538a6cad6c91a398019308d0a6b558b86e1ebe35d8fb73c8)* | 7.2.11792.62089 | July 2017     | June 2020  | 
 |  Dynamics 365 for Finance and Operations, Enterprise edition | Major release | [July 2017](../../fin-and-ops/get-started/whats-new-application-july-2017-update.md) | 7.2.11792.56024| June 2017     | June 2020  | 
