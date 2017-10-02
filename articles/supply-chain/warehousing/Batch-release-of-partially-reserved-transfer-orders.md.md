@@ -73,8 +73,7 @@ processed accordingly.
     set the **Fulfillment rate**, **Value type**, and **Fulfillment violation
     message** fields.
 
-Set the fulfillment policies for transfer orders and sales orders
------------------------------------------------------------------
+### Set the fulfillment policies for transfer orders and sales orders
 
 -   To set the fulfillment policies for transfer orders, click **Inventory
     management** \> **Setup** \> **Inventory and warehouse management
@@ -85,8 +84,7 @@ Set the fulfillment policies for transfer orders and sales orders
     receivable** \> **Setup** \> **Accounts receivable parameters** \>
     **Warehouse management**, and then select a sales order fulfillment policy.
 
-Allow release in a batch and specify the quantity that should be release in a batch
------------------------------------------------------------------------------------
+## Allow release in a batch and specify the quantity that should be release in a batch
 
 A batch job is used to release orders to a warehouse in a batch. The parameters
 that distinguish the orders that should be run in a batch job are set on the
