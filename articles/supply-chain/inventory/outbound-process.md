@@ -41,9 +41,9 @@ This topic provides overview information about the outbound process in Inventory
 
 Output orders are used to link the sales and transfer order lines with the outbound picking processes using picking lists.
 
-When picking lists are generated from either sales or transfer orders, output orders and shipments will be automatically created. A picking list will have a one-to-one relationship with a shipment. The transfers order shipment or the sales order packing slip can be processed from the shipment.
+When picking lists are generated from either sales or transfer orders, output orders and shipments will be automatically created. A picking list will have a one-to-one relationship with a shipment. The transfers order shipment or the sales order packing slip can be processed from the shipment. The following diagram shows the the outbound order process. 
 
-Add a diagram
+[![outbound order process overview](./media/outbound-order.png)](./media/outbound-order.png)
 
 You can set up outbound rules to determine how you want the program to handle the outbound process. You can use these rules to control the shipment process, in particular, at which stage in the process you can send a shipment. The following settings define how the outbound processes are handled.
 
