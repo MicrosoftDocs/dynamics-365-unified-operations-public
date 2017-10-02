@@ -78,7 +78,7 @@ Finance and Operations uses standalone Service Fabric. For more information, see
 
 ## Infrastructure
 
-Finance and Operations is designed to work on a hyper-converged architecture. The hardware configuration includes the following components:
+Finance and Operations is designed to work on a hyper-v virtualized environment that is based on Windows Servers. The hardware configuration includes the following components:
 
 - Standalone Service Fabric cluster that is based on Windows Server 2016 virtual machines (VMs)
 - Microsoft SQL Server (Both Clustered SQL and Always-On are supported.)
