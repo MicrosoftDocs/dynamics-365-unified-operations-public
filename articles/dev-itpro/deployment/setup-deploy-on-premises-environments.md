@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 08/14/2017
+ms.date: 10/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -78,7 +78,11 @@ Finance and Operations uses standalone Service Fabric. For more information, see
 
 ## Infrastructure
 
-Finance and Operations is designed to work on a hyper-converged architecture. The hardware configuration includes the following components:
+Finance and Operations is designed to work on a hyper-v virtualized environment that is based on Windows Servers. 
+
+    > [!Note]
+    > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructures, including Azure.
+The hardware configuration includes the following components:
 
 - Standalone Service Fabric cluster that is based on Windows Server 2016 virtual machines (VMs)
 - Microsoft SQL Server (Both Clustered SQL and Always-On are supported.)
