@@ -63,6 +63,13 @@ For information about how to upgrade to the latest version, see [Process for upg
 <tbody>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Application update 3</td>
+<td>7.2.11792.62370</td>
+<td>September 2017</td>
+<td><a href="https://fix.lcs.dynamics.com/Issue/Resolved?kb=4043284&bugId=3857197&qc=a454835bf86493b0a878eed878045540ba632d897fabdc0b13c60f58292c7a84">KB 4043284 Application Update 3 for Dynamics 365 for Operations (Binary part)</a></td>
+</tr>
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>Application update 2</td>
 <td>7.2.11792.62192</td>
 <td>September 2017</td>
