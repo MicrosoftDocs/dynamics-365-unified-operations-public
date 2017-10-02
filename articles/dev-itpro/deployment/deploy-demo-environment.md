@@ -48,8 +48,8 @@ Use this procedure to deploy a single-box, demo environment on Azure through LCS
 1. In LCS, open your project, and then, in the **Environments** section, click the plus sign (**+**).
 2. Select the Azure environment topology, and then select **Demo**.
 3. Select a topology.
-- For Finance and Operations: Select the most recent Azure Resource Manager (ARM) topology. Currently, the most recent topology is **Dynamics 365 for Operations – Demo (Release 1611 – ARM enabled)**.
-- For Retail: Select **Dynamics 365 for Retail - Demo**.
+  - For Finance and Operations: Select the most recent Azure Resource Manager (ARM) topology.
+  - For Retail: Select **Dynamics 365 for Retail - Demo**.
 4. In the **Deploy environment** dialog box, enter the name of the environment. This name should be unique in the Azure subscription. To make environments easy to identify, you might want to form an acronym from the user’s name and the topology.
 5. Select the size of the virtual machine (VM). All the sizes for VMs that are enabled for ARM end with v2. You must use D* v2 sizes for Finance and Operations workloads. We recommend D12v2.
 6. Set the **Instances** field to 1.
