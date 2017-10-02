@@ -1389,6 +1389,7 @@
 ##### [Pick oldest batch on a mobile device](../supply-chain/warehousing/pick-oldest-batch.md)
 ##### [Piece picking confirmation](../supply-chain/warehousing/piece-picking-confirmation.md)
 ##### [Product confirmation for cluster picking](../supply-chain/warehousing/cluster-picking-item-confirmation.md)
+##### [Batch release of partially reserved transfer orders](../supply-chain/warehousing/batch-release-of partially-reserved-transfer-orders.md)
 ##### [Packing materials and fees](../supply-chain/warehousing/pack-materials-packing-material-fees.md)
 #### Inventory counting
 ##### [Block inventory](../supply-chain/inventory/inventory-blocking.md)
