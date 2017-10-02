@@ -40,6 +40,8 @@ BPM is compatible with the following programs:
 - **Microsoft Word** – You can generate documentation for business processes.
 - **Microsoft Visio** – You can export business process maps to Visio files.
 
+**Note:** The information in this topic is specific only to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. For information about Business process modeler and Microsoft Dynamics AX 2012, see [Business process modeler](../ax-2012/business-process-modeler-lcs.md). 
+
 ## Prerequisites
 
 To effectively use BPM, you must have Microsoft Office 2010 and a Microsoft Visual Studio Team Services (VSTS) project.
@@ -66,9 +68,7 @@ The following topics provide more information about how to work with BPM librari
 - [Synchronize a BPM library with Visual Studio Team Services](synchronize-bpm-vsts.md)
 - [Complete tasks in BPM](complete-tasks-bpm.md)
 - [Use activity diagrams with BPM](using-activity-diagrams.md)
+- [Business process libraries in Business process modeler](business-process-libraries-business-process-modeler.md)
+- [Flowcharts in Business process modeler](flowcharts-business-process-modeler.md)
 
-## See also
 
-[Business process libraries in Business process modeler](business-process-libraries-business-process-modeler.md)
-
-[Upload custom business processes to BPM](upload-business-processes-bpm-task-recorder.md)
