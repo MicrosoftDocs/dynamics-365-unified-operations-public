@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration
+ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 # ROBOTS:
 audience: Application User
 # ms.devlang:
