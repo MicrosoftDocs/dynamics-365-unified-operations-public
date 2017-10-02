@@ -72,7 +72,7 @@ the warehouse and need to be added to a new picking list as part of the **Open o
 
 [![open-output-inventory-orders](./media/open-output-order.png)](./media/open-output-order.png)
 
-[![open-output-inventory-orders-functionality](./media/end-output-inventory-order.png)](./media/end-output-inventory-order.png)
+[![open-output-inventory-orders-functionality](./media/end-output-inventory-order.png)](./media/open-output-order-function.png)
 
 ## Reduce quantity
 
