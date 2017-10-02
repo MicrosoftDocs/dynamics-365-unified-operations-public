@@ -50,13 +50,13 @@ values are used in the rate route workbench, where they help define the rate and
 route for loads, and they are also used for transportation tenders and driver
 check-in.
 
-Where it applies
+## Where it applies
 
 The functionality for including the container weight and volume on a load
 applies in transportation management processes, such as the rate route
 workbench, transportation tenders, and driver check-in.
 
-How it is set up
+## How it is set up
 
 The number of containers that should be considered for a load is calculated
 based on the weight and volume of the container, and on the percentage of the
