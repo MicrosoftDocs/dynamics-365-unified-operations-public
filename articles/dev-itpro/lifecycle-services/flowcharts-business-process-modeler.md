@@ -109,6 +109,7 @@ You can export a business process model flowchart to a Visio file.
 5.  The file will be treated as a download that you can open or save.
 
 ### Mark a change to not be a gap
+Please note that gap functionality has been deprecated in LCS. Learn how to use VSTS Synchronization here.(PLEASE LINK TO https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/synchronize-bpm-vsts?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 Any time you modify a flowchart, a gap is automatically created. You can modify any change to no longer be considered a gap. To modify a change, follow these steps:
 1.  Select the object that you added, and then right-click it.
@@ -137,7 +138,6 @@ Unconnected flowcharts can be very helpful for describing high-level business pr
 A business process with an unconnected Visio flowchart associated with it will have a document icon on its title bar. [![Flowchart BPM topic2](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
 -   Click the document icon to view the flowchart.
 -   Click **Download** on the Visio page to download the flowchart.
-
 
 
 
