@@ -49,9 +49,9 @@ Organizations often need to ensure that the links to their legal terms and priva
 > [!Note]
 > Make sure that you enter the full URL, starting with either https or http.
 
-1.  Click **Save**.
+2.  Click **Save**.
 
-2.  If you are using Dynamics 365 for Retail, go to the **Distribution
+3.  If you are using Dynamics 365 for Retail, go to the **Distribution
     schedules** page. On this page:
 
     1.  Select the **1110 – Global configuration** job.
