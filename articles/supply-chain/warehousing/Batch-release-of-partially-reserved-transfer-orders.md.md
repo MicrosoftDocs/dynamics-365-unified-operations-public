@@ -51,8 +51,7 @@ another.
 
 ## How it is set up
 
-Specify fulfillment criteria for transfer orders and sales orders
------------------------------------------------------------------
+### Specify fulfillment criteria for transfer orders and sales orders
 
 Before an order can be partially released to a warehouse in a batch, the
 fulfillment criteria must be met. These fulfillment criteria are determined by
