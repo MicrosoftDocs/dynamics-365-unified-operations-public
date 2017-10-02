@@ -84,7 +84,7 @@ The third parameter which can be used as part of the picking list generation pro
 
 ## Example of an outbound process for a sales order
 
-Imagine there a sales order for two items. During the picking list generation, it has been enabled to only release and thereby create picking lines for the available inventory on-hand by selecting the **Reduce quantity** parameter and the picking must be reported via a picking list registration process (**Picking route status** = Activated).
+Imagine there is a sales order for two items. During the picking list generation, it has been enabled to only release and thereby create picking lines for the available inventory on-hand by selecting the **Reduce quantity** parameter and the picking must be reported via a picking list registration process (**Picking route status** = Activated).
 
 As part of the generation of the picking list, the inventory which has not already been reserved will be reserved during the picking list generation. The unavailable inventory can be either removed from the sales order or released to the warehouse for outbound processing at a later point in time when inventory is available for picking.
 
