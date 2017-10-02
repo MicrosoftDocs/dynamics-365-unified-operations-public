@@ -1,4 +1,36 @@
-Include container weight and volume on load
+---
+# required metadata
+
+title: Include container weight and volume on load
+description: This topic describes how to set up and apply functionality to include container weight and volume on loads.
+author: pjacobse
+manager: AnnBe
+ms.date: 05/26/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:
+audience: Application User
+# ms.devlang: 
+ms.reviewer: bis
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+# ms.tgt_pltfrm: 
+ms.custom: 269384
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: pjacobse
+ms.search.validFrom: 2017-09-20
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+# Include container weight and volume on load
+
+[!include[banner](../includes/banner.md)]
 
 The functionality for including the container weight and volume on a load gives
 a clear representation of the total weight and volume of containers and items
