@@ -26,7 +26,11 @@ ms.author: pjacobse
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
 
-Batch release of partially reserved transfer orders
+---
+
+# Batch release of partially reserved transfer orders
+
+[!include[banner](../includes/banner.md)]
 
 The functionality for batch release of partially reserved transfer orders lets
 you partially release transfer orders to a warehouse by using a batch job.
@@ -38,14 +42,14 @@ The release of orders to a warehouse is an advanced warehouse management
 process. This process involves activities, such as picking, packing, and
 shipping, that a warehouse worker can perform by using a mobile device.
 
-Where it applies
+## Where it applies
 
 For this functionality, transfer orders are released to a warehouse by using a
 batch job. This functionality is useful when you don’t have enough inventory in
 the warehouse, but you still want to transfer items from one warehouse to
 another.
 
-How it is set up
+## How it is set up
 
 Specify fulfillment criteria for transfer orders and sales orders
 -----------------------------------------------------------------
