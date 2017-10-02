@@ -46,7 +46,8 @@ Organizations often need to ensure that the links to their legal terms and priva
 
     2.  Enter the link to a page that outlines the privacy statement for your organization.
 
->   **Note**: Make sure that you enter the full URL, starting with either https or http.
+    >   [!Note]
+    >   Make sure that you enter the full URL, starting with either https or http.
 
 1.  Click **Save**.
 
