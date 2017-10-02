@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ROBOTS: 
-audience: IT Pro
+audience: Application user
 # ms.devlang: 
 ms.reviewer: shylaw
 # ms.suite: 
