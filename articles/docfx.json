@@ -36,6 +36,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "contributors_to_exclude": ["OpenLocalizationService"], 
       "layout": "Conceptual",
       "searchScope": ["Unified Operations"],
       "extendBreadcrumb": "true",
