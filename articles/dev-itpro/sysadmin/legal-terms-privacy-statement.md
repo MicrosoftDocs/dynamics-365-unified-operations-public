@@ -69,7 +69,8 @@ To validate that the links have been added, on the toolbar at the top of the pag
 
 Click on these links to validate that they open the appropriate pages. 
 
-**Note:** The links open in a new window, so if you have a pop-up blocker enabled, you will have to add an exception to your pop-up blocker settings to allow Finance and Operations and Retail to launch a new window.
+> [!Note]
+> The links open in a new window, so if you have a pop-up blocker enabled, you will have to add an exception to your pop-up blocker settings to allow Finance and Operations and Retail to launch a new window.
 
 
 
