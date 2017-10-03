@@ -81,11 +81,11 @@ Customers are now required to complete additional setup to connect to Dynamics 3
 
 As of **October 15th 2017**, all new deployments will enforce this requirements. Customers will not be able to access their environments until they configure access. For all existing environments, the Microsoft Service Engineering team is sending out email communications with enforcement dates.
 
-[!NOTE]
-Ensure that public IP addresses, such as a coffee shop location, are NOT configured.     
+> [!NOTE]
+> Ensure that public IP addresses, such as a coffee shop location, are NOT configured.     
  
-[!IMPORTANT]
-By default, Remote Desktop is enabled for all non-Microsoft managed environments. We recommend that customers restrict access to any environments that belong to their subscriptions. This can be done by configuring Network Security Group rules on the environments directly in Azure Portal.
+> [!IMPORTANT]
+> By default, Remote Desktop is enabled for all non-Microsoft managed environments. We recommend that customers restrict access to any environments that belong to their subscriptions. This can be done by configuring Network Security Group rules on the environments directly in Azure Portal.
  
 #### Windows Remoting (WinRM) lockdown
 Windows Remoting (WinRM) is disabled on all environments. Exceptions to enable WinRM will not be granted for any Microsoft-managed environments. Although you can enable WinRM on environments that belong to your subscriptions through Azure Portal, we strongly recommends that you do not do this.
