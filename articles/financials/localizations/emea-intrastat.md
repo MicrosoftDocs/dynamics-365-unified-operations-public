@@ -111,6 +111,10 @@ The following table lists the prerequisites for Intrastat reporting.
 <td>Electronic reporting</td>
 <td>Set up electronic reporting configurations to export Intrastat data in an electronic file that has the format that is requested by the relevant authorities, and to preview Intrastat data in a user-friendly, readable format (for example, in Microsoft Excel).</td>
 </tr>
+<tr class="even">
+<td>Warehousing</td>
+<td>Associate vendor accounts with warehouse codes for filling tax exempt number when transferring Transfer order.</td>
+</tr>
 </tbody>
 </table>
 
