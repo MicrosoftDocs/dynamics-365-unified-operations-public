@@ -63,15 +63,17 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 -   [Security best practices for Retail Cloud POS in a shared environment](secure-retail-cloud-pos.md)
 
 ## Customize POS
--   [Retail POS screen layouts](..\pos-screen-layouts.md)
--   [Install the POS Layout designer](..\install-pos-layout-designer.md)
--   [Use Retail Modern POS in offline mode](retail-modern-pos-offline.md)
--   [Call a new or customized CRT service in offline mode](call-crt-service-offline.md)
--   [Modern POS and Cloud POS trigger extensibility](modern-pos-trigger-extensibility.md)
--   [Add a new custom control to an MPOS screen layout](add-new-custom-control-mpos-screen-layout.md)
--   [Implementing a return policy by using triggers](trigger-example-return-policy.md)
--   [Blocking a transaction by using triggers](trigger-example-blocking-transaction.md)
--   [Add extension properties to a Customer entity](add-extension-properties.md)
+- [Retail POS screen layouts](..\pos-screen-layouts.md)
+- [Install the POS Layout designer](..\install-pos-layout-designer.md)
+- [Use Retail Modern POS in offline mode](retail-modern-pos-offline.md)
+- [Call a new or customized CRT service in offline mode](call-crt-service-offline.md)
+- [Modern POS and Cloud POS trigger extensibility](modern-pos-trigger-extensibility.md)
+- [Add a new custom control to an MPOS screen layout](add-new-custom-control-mpos-screen-layout.md)
+- [Implementing a return policy by using triggers](trigger-example-return-policy.md)
+- [Blocking a transaction by using triggers](trigger-example-blocking-transaction.md)
+- [Add extension properties to a Customer entity](add-extension-properties.md)
+- [Add a custom control to a POS view](pos-custom-control.md)
+- [POS payment extension](pos-payment-extension.md)
 
 ## Integrating Retail
 -   [Create a Retail Experience app](create-retail-experience-app.md)
@@ -102,6 +104,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Integrate the Retail SDK with the continuous build system (VSTS)](retail-sdk\integrate-retail-sdk-continuous-build.md)
 - [Retail SDK samples](retail-sdk\retail-sdk-samples.md)
 - [Channel database (DB) extensions](channel-db-extensions.md) 
+- [CDX extensibility](cdx-extensibility.md)
 
 ## eCommerce
 -   [e-Commerce platform](ecommerce-platform.md)

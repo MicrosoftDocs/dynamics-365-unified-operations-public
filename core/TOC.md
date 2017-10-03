@@ -4,6 +4,7 @@
 ### [Before you buy](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Sign up for preview subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Deploy a demo environment](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Cloud and on-premises feature comparison](/dynamics365/unified-operations/fin-and-ops/get-started/cloud-prem-comparison?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Choose a deployment option](/dynamics365/unified-operations/dev-itpro/deployment/choose-deployment-type?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Cloud deployment](/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [System requirements for cloud deployments](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2065,8 +2066,11 @@
 ###### [Install the POS Layout designer](/dynamics365/unified-operations/retail/install-pos-layout-designer?toc=dynamics365/unified-operations/retail/toc.json)
 ##### [Configure MPOS for offline mode](/dynamics365/unified-operations/retail/dev-itpro/retail-modern-pos-offline?toc=dynamics365/unified-operations/retail/toc.json)
 ##### [MPOS and Cloud POS trigger extensibility](/dynamics365/unified-operations/retail/dev-itpro/modern-pos-trigger-extensibility?toc=dynamics365/unified-operations/retail/toc.json)
+##### [Add a custom control to a POS view](/dynamics365/unified-operations/retail/dev-itpro/pos-custom-control?toc=dynamics365/unified-operations/retail/toc.json)
+##### [POS payment extension](/dynamics365/unified-operations/retail/dev-itpro/pos-payment-extension?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Create a Retail Experience app](/dynamics365/unified-operations/retail/dev-itpro/create-retail-experience-app?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Hardware Station overview and extensibility](/dynamics365/unified-operations/retail/dev-itpro/hardware-station-extensibility?toc=dynamics365/unified-operations/retail/toc.json)
+
 #### Retail Server
 ##### [Extend a Retail Server OData controller](/dynamics365/unified-operations/retail/dev-itpro/extend-retail-server-odata-controller?toc=dynamics365/unified-operations/retail/toc.json)
 ##### [Web API and OData controllers](/dynamics365/unified-operations/retail/dev-itpro/odata-controllers-api?toc=dynamics365/unified-operations/retail/toc.json)
@@ -2100,6 +2104,7 @@
 #### [Retail SDK packaging](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-packaging?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Retail SDK samples ](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-samples?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Channel database (DB) extensions](/dynamics365/unified-operations/retail/dev-itpro/channel-db-extensions?toc=dynamics365/unified-operations/retail/toc.json)
+#### [CDX extensibility](/dynamics365/unified-operations/retail/dev-itpro/cdx-extensibility?toc=dynamics365/unified-operations/retail/toc.json)
 
 ### Commerce runtime
 #### [Loyalty extension](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/loyalty-extension-sample?toc=dynamics365/unified-operations/retail/toc.json)
