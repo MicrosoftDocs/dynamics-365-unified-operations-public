@@ -2,7 +2,7 @@
 # required metadata
 
 title: Outbound process 
-description: This topic provides overview information about the outbound process in Inventory management. 
+description: This topic provides an overview of the outbound process in Inventory management. 
 author: perlynne
 manager: AnnBe
 ms.date: 10/02/2017
@@ -34,62 +34,58 @@ ms.search.validFrom: 2016-02-28
 
 [!include[banner](../includes/banner.md)]
 
-
-This topic provides overview information about the outbound process in Inventory management.
+This topic provides an overview of the outbound process in Inventory management.
 
 ## Output orders
 
-Output orders are used to link the sales and transfer order lines with the outbound picking processes using picking lists.
+Output orders are used to link sales order lines and transfer order lines with the outbound picking processes that use picking lists.
 
-When picking lists are generated from either sales or transfer orders, output orders and shipments will be automatically created. A picking list will have a one-to-one relationship with a shipment. The transfers order shipment or the sales order packing slip can be processed from the shipment. 
+When picking lists are generated from either sales orders or transfer orders, output orders and shipments are automatically created. A picking list has a one-to-one relationship with a shipment. The transfer order shipment or the sales order packing slip can be processed from the shipment. 
 
-The following diagram shows the the outbound order process. 
+The following diagram shows an overview of the process for outbound orders. 
 
-[![outbound order process overview](./media/outbound-order.png)](./media/outbound-order.png)
+[![Overview of the outbound order process](./media/outbound-order.png)](./media/outbound-order.png)
 
-You can set up outbound rules to determine how you want the program to handle the outbound process. You can use these rules to control the shipment process, in particular, at which stage in the process you can send a shipment. The following settings define how the outbound processes are handled.
+You can set up outbound rules to define how the program should handle the outbound process. You can use these rules to control the shipment process. In particular, you can use the rules to control which stage in the process a shipment can be sent during. The following settings define how the outbound processes are handled.
 
 ## Picking route status for sales and transfer orders 
 
-**Account receivable \> Setup \> Account receivable parameters \> Updates \>
-Picking route status.**
+Go to **Account receivable** \> **Setup** \> **Account receivable parameters**, and then, on the **Updates** tab, select a value in the **Picking route status** field.
 
-[![picking-route-status-for-sales-orders](./media/picking-route-status-sales-order.png)](./media/picking-route-status-sales-order.png)
+[![Picking route status field for sales orders](./media/picking-route-status-sales-order.png)](./media/picking-route-status-sales-order.png)
 
-If the field is set to **Completed**, the picking process will take place automatically as part of the picking list generation process. If the field is set to **Activated**, the picking list lines will need to be updated manually.
+If the **Picking route status** field is set to **Completed**, the picking process occurs automatically as part of the process of generating picking lists. If the field is set to **Activated**, the picking list lines must be manually updated.
 
-The same setup applies for transfer orders. **Picking route status** under **Inventory management \> Setup \> Inventory and warehouse management parameters \> Transport \> Picking route status.**
+The same setup applies to transfer orders. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**, and then, on the **Transport** tab, select a value in the **Picking route status** field.
 
-[![picking-route-status-for-transfer-orders](./media/picking-route-status-transfer-order.png)](./media/picking-route-status-transfer-order.png)
+[![Picking route status field for transfer orders](./media/picking-route-status-transfer-order.png)](./media/picking-route-status-transfer-order.png)
 
 ## End output inventory orders
 
-**Inventory management \> Setup \> Inventory and warehouse management parameters
-\> General \> End output inventory orders.**
+Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**, and then, on the **General** tab, set the **End output inventory order** option.
 
-[![end-output-inventory-orders](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
+[![End output inventory order option](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
-When some items in the inventory can’t be picked as part of the picking list process. For example, a warehouse worker reduces the quantities on picking lines and processes the picking list, the remaining unpicked quantities can either be reported back to the order level (Parameter set to Yes) or kept as an open output order quantity (Parameter set to No), and thereby remain as released to
-the warehouse and need to be added to a new picking list as part of the **Open output order** functionality.
+Sometimes, some items in inventory can't be picked as part of the picking list process. For example, this situation might occur if a warehouse worker reduces the quantities on picking lines and processes the picking list. If the **End output inventory order** option is set to **Yes**, the remaining unpicked quantities are reported back to the order level. If the option is set to **No**, the remaining unpicked quantities are kept as an open output order quantity. In this case, the quantities remain released to the warehouse and must be added to a new picking list as part of the **Open output orders** functionality.
 
-[![open-output-inventory-orders](./media/open-output-order.png)](./media/open-output-order.png)
+[![Open output orders command on the Functions menu](./media/open-output-order.png)](./media/open-output-order.png)
 
-[![open-output-inventory-orders-functionality](./media/open-output-order-function.png)](./media/open-output-order-function.png)
+[![Functions menu on the Open output orders page](./media/open-output-order-function.png)](./media/open-output-order-function.png)
 
 ## Reduce quantity
 
-The third parameter which can be used as part of the picking list generation process is the **Reduce quantity** parameter. This setup goes together with the **Reservation** setting, which will trigger a reservation process as part of the release to the warehouse.
+The third parameter that you can use as part of the process of generating picking lists is the **Reduce quantity** parameter. The setting of this parameter works together with the **Reservation** setting that triggers a reservation process as part of the release to the warehouse.
 
-[![reduce-quantity](./media/reduce-quantity.png)](./media/reduce-quantity.png)
+[![Reduce quantity parameter](./media/reduce-quantity.png)](./media/reduce-quantity.png)
 
 ## Example of an outbound process for a sales order
 
-Imagine there is a sales order for two items. During the picking list generation, it has been enabled to only release and thereby create picking lines for the available inventory on-hand by selecting the **Reduce quantity** parameter and the picking must be reported via a picking list registration process (**Picking route status** = Activated).
+For this example, there is a sales order for two items. During picking list generation, you select the **Reduce quantity** parameter. Therefore, you release and create picking lines only for available on-hand inventory. The picking must be reported via a registration process for picking lists (**Picking route status** = **Activated**).
 
-As part of the generation of the picking list, the inventory which has not already been reserved will be reserved during the picking list generation. The unavailable inventory can be either removed from the sales order or released to the warehouse for outbound processing at a later point in time when inventory is available for picking.
+The inventory that hasn't already been reserved is reserved during picking list generation. The unavailable inventory can be either removed from the sales order or released to the warehouse for outbound processing later, when inventory is available for picking.
 
-[![update-picking-list](./media/update-picking-list.png)](./media/update-picking-list.png)
+[![Update the picking list](./media/update-picking-list.png)](./media/update-picking-list.png)
 
-As soon as all the picking lines have been picked on the **Picking list registration** page, the associated shipment will be completed and the sales order packing slip process can be initialized based on the picked inventory.
+As soon as all the picking lines have been picked on the **Picking list registration** page, the associated shipment is completed. The process for sales order packing slips can then be initialized based on the picked inventory.
 
-[![update-outbound-shipments](./media/outbound-shipments.png)](./media/outbound-shipments.png)
+[![Update outbound shipments](./media/outbound-shipments.png)](./media/outbound-shipments.png)
