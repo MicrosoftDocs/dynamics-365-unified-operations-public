@@ -62,6 +62,8 @@ Organizations often need to ensure that the links to their legal terms and priva
 
 
 ## Validate links
+
+### Validate the links in Finance and Operations or Retail
 To validate that the links have been added, on the toolbar at the top of the page, click the **Settings** icon, and then click **About**. In the **Links** section of the pane, you should see two new links:
 
 -   **Your organization’s Legal terms**
@@ -71,6 +73,9 @@ Click on these links to validate that they open the appropriate pages.
 
 > [!NOTE]
 > The links open in a new window, so if you have a pop-up blocker enabled, you will have to add an exception to your pop-up blocker settings to allow Finance and Operations and Retail to launch a new window.
+
+### Validate the links in MPOS and CPOS
+To validate that the links have been added, go to the **Settings** page. In the **About** section, click on the links to validate that they open the appropriate pages.
 
 
 
