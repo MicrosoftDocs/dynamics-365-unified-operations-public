@@ -3,7 +3,7 @@ title: Use activity diagrams with BPM
 description: This topic provides information about how you can use activity diagrams in a BPM library.
 author: kfend
 manager: AnnBe
-ms.date: 09/17/2017
+ms.date: 10/02/2017
 ms.topic: article
 ms.prod: 
 ms.service:  dynamics-ax-platform
@@ -37,7 +37,7 @@ You can associate an activity diagram with a business process. Activity diagrams
 There are three types of activity diagrams:
 
 - **Task recordings** – Business processes that are associated with task recordings for Microsoft Dynamics 365 for Finance Operations, Enterprise edition, include activity diagrams and process steps that are automatically generated.
-- **Microsoft Visio** – You can associate a business process with a Visio diagram by manually uploading a Visio file.
+- **Microsoft Visio** – You can associate Ua business process with a Visio diagram by manually uploading a Visio file.
 - **User-defined** – You can manually create or edit a Business process modeler (BPM) activity diagram.
 
 In addition to activity diagrams, you can describe a business process by using detailed process steps.
@@ -48,6 +48,17 @@ The **Diagrams** column in your BPM library indicates whether a particular busin
 [![monitoringanddiagnostics01](./media/browse_activity_diagrams.JPG)](./media/browse_activity_diagrams.JPG)
 
 To view or edit an activity diagram, select the business process, and then, in the right pane, on the **Overview** tab, select **Diagrams**. The **Flowchart** page appears.
+
+## Upload Task Recording
+To upoload a task recording, open the business process library that you want to upload to. Select the prcoess step that you want to upload the task recording to, and then click **Upload**.
+
+[![activitydiagrams01](./media/activity_diagrams_01.jpg)](./media/activity_diagrams_01.jpg)
+
+
+In the right pane, click **Browse** to choose a file, and then click **Upload**.
+
+[![activitydiagrams02](./media/activity_diagrams_02.jpg)](./media/activity_diagrams_02.jpg)
+
 
 ## Activity diagrams that are created from task recordings
 You can create a task recording in your Finance and Operations environment, and save it directly to Microsoft Dynamics Lifecycle Services (LCS). In this way, you can associate the task recording with a business process in a BPM library. For more information, see [Connecting the help system](../../fin-and-ops/get-started/help-connect.md) and [Create documentation or training using task recordings](../user-interface/task-recorder-training-docs.md).
