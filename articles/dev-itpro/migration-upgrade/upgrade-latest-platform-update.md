@@ -53,7 +53,9 @@ The Microsoft Dynamics 365 for Finance and Operations platform consists of the f
 ## Overall flow
 The following illustration shows the overall process for upgrading the Finance and Operations platform to the latest update.
 [![Upgrade process for implementations that have no customization of the platform](./media/flownocustomisations.jpg)](./media/flownocustomisations.jpg)
-If you are already running on platform update 4 or later, updating the Finance and Operations platform to the latest release is a simple servicing operation. Once the platform update package is in your LCS asset library, follow the flow to apply an update from the LCS environment page.
+
+If you are already running on platform update 4 or later, updating the Finance and Operations platform to the latest release is a simple servicing operation. Once the platform update package is in your LCS asset library, follow the flow to apply an update from the LCS environment page: Select Apply updates under Maintain then select the platform update package.
+[![Apply updates](./media/applyupdates.jpg)](./media/applyupdates.jpg)
 
 ### Migrate files for Document management
 After upgrading to Platform update 6 or later, an administrator needs to click the **Migrate Files** button on the **Document management parameters** page to finish the upgrade process. This will migrate any attachments stored in the database to blob storage. The migration will run as a batch process and could take a long time, depending on the number and size of the files being moved from the database into Azure blob storage. The attachments will continue to be available to users while the migration process is running, so there should be no noticeable effects from the migration. To check if the batch process is still running, look for the **Migrate files stored in the database to blob storage** process on the **Batch jobs** page.
