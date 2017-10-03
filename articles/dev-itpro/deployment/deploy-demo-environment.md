@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploy a demo environment
-description: This topic explains how to deploy a demo environment on Microsoft Azure using Microsoft Dynamics Lifecycle Services (LCS). This applies to those using Dynamics 365 for Finance and Operations and Dynamics 365 for Retail.
+description: This topic explains how to deploy a demo environment on Microsoft Azure using Microsoft Dynamics Lifecycle Services (LCS). This applies to Dynamics 365 for Finance and Operations and Dynamics 365 for Retail.
 author: sarvanisathish
 manager: AnnBe
 ms.date: 10/02/2017
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 2, Application update 4
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to deploy a demo environment on Microsoft Azure using Microsoft Dynamics Lifecycle Services (LCS). This topic applies to those deploying a demo environment of:
+This topic explains how to deploy a demo environment on Microsoft Azure using Microsoft Dynamics Lifecycle Services (LCS). This topic applies to deploying a demo environment for:
 
 - Dynamics 365 for Finance and Operations
 - Dynamics 365 for Retail
@@ -51,21 +51,23 @@ Use this procedure to deploy a demo environment on Azure using LCS.
 1. In LCS, open your project, and then, in the **Environments** section, click the plus sign (**+**).
 2. Select the Azure environment topology, and then select **Demo**.
 3. Select a topology.
-  - For Finance and Operations: Select the most recent Azure Resource Manager (ARM) topology for Finance and Operations.
-  - For Retail: Select **Dynamics 365 for Retail - Demo**.
-4. In the **Deploy environment** dialog box, enter the name of the environment. This name should be unique in the Azure subscription. To make environments easy to identify, you might want to form an acronym from the user’s name and the topology.
-5. Select the size of the virtual machine (VM). All the sizes for VMs that are enabled for ARM end with v2. You must use D* v2 sizes for Finance and Operations workloads. We recommend D12v2.
+  - For Finance and Operations, select the most recent Azure Resource Manager (ARM) topology for Finance and Operations.
+  - For Retail, select **Dynamics 365 for Retail - Demo**.
+4. In the **Deploy environment** dialog box, enter the name of the environment. This name should be unique in the Azure subscription. To make environments easy to identify, consider forming an acronym using the user’s name and the topology.
+5. Select the size of the virtual machine (VM). All the sizes for VMs that are enabled for ARM end with v2. You must use D v2 sizes for Finance and Operations workloads. We recommend D12v2.
 6. Set the **Instances** field to 1.
-Note: The size of the VM and the number of instances affect the cost of your subscription. For more information, see the [Azure pricing](https://azure.microsoft.com/en-us/pricing/) page.
-7. Click **Advanced settings** to add customizations to your deployment. However, for the demo environment, we recommend that you keep the default settings.
+
+  **Note:** The size of the VM and the number of instances affect the cost of your subscription. For more information, see [Azure pricing](https://azure.microsoft.com/en-us/pricing/).
+  
+7. Click **Advanced settings** to add customizations to your deployment. For the demo environment, we recommend that you keep the default settings.
 8. Agree to the licensing and pricing terms, and then click **Next**.
 9. In the **Confirm** message box, click **Deploy**.
 10. Open the **Cloud hosted environments** page to view the status of the deployment. After the deployment is successfully completed, the environment will be ready.
 
-## Log on to your demo enviornment
+## Log on to your demo environment
 To log on to your demo environment, do the following.
 
 1. In LCS, open the **Cloud-hosted environments** page, and select the demo environment that you just deployed.
-2. Scroll to the right and in the **Environment details** pane, under **Cloud services**, click the **Log on to environment** link.
-
-
+2. Scroll to the right and in the **Environment details** pane, under **Cloud services**, click the appropriate link:
+  - **Log on to Finance and Operations**
+  - **Log on to Retail**
