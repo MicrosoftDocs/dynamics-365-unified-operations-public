@@ -52,12 +52,12 @@ To view or edit an activity diagram, select the business process, and then, in t
 ## Upload Task Recording
 To upoload a task recordin, open the business process library you want to upload to. Select the prcoess step you wish to upload the task recording and select Upload.
 
-[![activitydiagrams01](./media/activity_diagrams_01.png)](./media/activity_diagrams_01.png)
+[![activitydiagrams01](./media/activity_diagrams_01.jpg)](./media/activity_diagrams_01.jpg)
 
 
 In the right pane, select Browse to choose a file, then press Upload.
 
-[![activitydiagrams02](./media/activity_diagrams_02.png)](./media/activity_diagrams_02.png)
+[![activitydiagrams02](./media/activity_diagrams_02.jpg)](./media/activity_diagrams_02.jpg)
 
 
 ## Activity diagrams that are created from task recordings
