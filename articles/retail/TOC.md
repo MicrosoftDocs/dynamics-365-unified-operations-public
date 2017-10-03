@@ -1,7 +1,7 @@
 # [Welcome to Dynamics 365 for Retail](index.md)
 
 # Get started
-## [What's new or changed](../get-started/whats-new.md)
+## [What's new or changed](get-started/whats-new.md)
 
 # Payments
 ## [Payment methods](payment-methods.md)
