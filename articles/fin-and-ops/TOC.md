@@ -1,7 +1,5 @@
 # [Dynamics 365 for Finance and Operations](index.md)
 
-## [Introduction to Finance and Operations](index.md)
-
 ## Get started
 ### [Before you buy](get-started/before-you-buy.md)
 #### [Sign up for preview subscription](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
