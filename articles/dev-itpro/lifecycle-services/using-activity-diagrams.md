@@ -50,12 +50,12 @@ The **Diagrams** column in your BPM library indicates whether a particular busin
 To view or edit an activity diagram, select the business process, and then, in the right pane, on the **Overview** tab, select **Diagrams**. The **Flowchart** page appears.
 
 ## Upload Task Recording
-To upoload a task recordin, open the business process library you want to upload to. Select the prcoess step you wish to upload the task recording and select Upload.
+To upoload a task recording, open the business process library that you want to upload to. Select the prcoess step that you want to upload the task recording to, and then click **Upload**.
 
 [![activitydiagrams01](./media/activity_diagrams_01.jpg)](./media/activity_diagrams_01.jpg)
 
 
-In the right pane, select Browse to choose a file, then press Upload.
+In the right pane, click **Browse** to choose a file, and then click **Upload**.
 
 [![activitydiagrams02](./media/activity_diagrams_02.jpg)](./media/activity_diagrams_02.jpg)
 
