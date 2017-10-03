@@ -45,6 +45,4 @@ Merchandising managers can also define default values for an additional set of p
 
 You can use logical grouping properties to select which updated product properties should be pushed to associated products.
 
-![New enhanced view of Update products](media/NewUpdateProductsEnhancedView.PNG)
-
 Merchandising managers can modify these inherited product properties for each product, to meet individual business requirements.
