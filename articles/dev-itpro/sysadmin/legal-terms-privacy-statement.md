@@ -63,7 +63,7 @@ Organizations often need to ensure that the links to their legal terms and priva
 
 ## Validate links
 
-### Validate the links in Finance and Operations or Retail
+### Validate the links in Finance and Operations and Retail
 To validate that the links have been added, on the toolbar at the top of the page, click the **Settings** icon, and then click **About**. In the **Links** section of the pane, you should see two new links:
 
 -   **Your organization’s Legal terms**
