@@ -58,8 +58,7 @@ Organizations often need to ensure that the links to their legal terms and priva
 
     2.  Click **Run now**.
 
->   To verify that that the job completed, go to the **Download sessions** page.
-
+>   To verify that the job completed, go to the **Download sessions** page.
 
 ## Validate links
 
@@ -69,13 +68,10 @@ To validate that the links have been added, on the toolbar at the top of the pag
 -   **Your organization’s Legal terms**
 -   **Your organization’s Privacy and Cookies**
 
-Click on these links to validate that they open the appropriate pages. 
+Click these links to validate that the appropriate pages open. 
 
 > [!NOTE]
-> The links open in a new window, so if you have a pop-up blocker enabled, you will have to add an exception to your pop-up blocker settings to allow Finance and Operations and Retail to launch a new window.
+> The links open in a new window, so if you have a pop-up blocker enabled, you will need to add an exception to your pop-up blocker settings to launch a new window.
 
-### Validate the links in MPOS and CPOS
-To validate that the links have been added, go to the **Settings** page. In the **About** section, click on the links to validate that they open the appropriate pages.
-
-
-
+### Validate the links in Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS)
+To validate that the links have been added, go to the **Settings** page. In the **About** section, click the links to validate that the appropriate pages open.
