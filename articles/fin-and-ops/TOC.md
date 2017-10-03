@@ -1,4 +1,4 @@
-# [Dynamics 365 for Finance and Operations](../index.md)
+# [Dynamics 365 for Finance and Operations](articles/index.md)
 
 ## Get started
 ### [Before you buy](get-started/before-you-buy.md)
