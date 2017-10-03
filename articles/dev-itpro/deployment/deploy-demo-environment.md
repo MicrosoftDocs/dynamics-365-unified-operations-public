@@ -66,8 +66,6 @@ Note: The size of the VM and the number of instances affect the cost of your sub
 To log on to your demo environment, do the following.
 
 1. In LCS, open the **Cloud-hosted environments** page, and select the demo environment that you just deployed.
-2. Scroll to the right and in the **Environment details** pane, under **Cloud services**, click the appropriate link:
-  - **Log on to Finance and Operations**
-  - **Log on to Retail**
+2. Scroll to the right and in the **Environment details** pane, under **Cloud services**, click the **Log on to environment** link.
 
 
