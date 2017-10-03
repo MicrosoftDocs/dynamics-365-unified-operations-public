@@ -40,8 +40,9 @@ This topic describes the replenishment strategies that are available for warehou
 -   **Wave demand replenishment** – This strategy creates replenishment work for outbound orders or loads if inventory isn't available when the wave creates work. For example, replenishment work can be created if the quantity that is required for a sales order isn't available when a wave is processed.
 -   **Min/Max replenishment** – This strategy uses minimum and maximum stocking limits to determine when locations should be replenished. The item and location criteria define the inventory that is evaluated for replenishment. Min/Max replenishment templates are the primary mechanism for maintaining optimal levels in picking locations. To ensure that enough pick face inventory is available to meet wave demand, you can use demand replenishment as a supplement between Min/Max replenishment cycles.
 -   **Load demand replenishment** – This strategy sums the demand for several loads and creates the replenishment work that is required in order to stock the relevant picking locations. This strategy helps to ensure that the loads that are created can be picked in the warehouse after they are released.
+-   **Immediate replenishment** – This strategy replenishes inventory before a wave execution if allocation fails for a location directive line with a replenishment template. 
 
-All three strategies create replenishment work, based on a replenishment template.
+All four strategies create replenishment work, based on a replenishment template.
 
 ## Wave demand replenishment
 
@@ -65,6 +66,9 @@ Note that the Min/Max replenishment strategy can't replenish an empty location u
 
 ## Load demand replenishment
 Load demand replenishment sums the demand for several loads and creates the replenishment work that is required to stock the relevant picking locations. Load demand replenishment resembles Wave demand replenishment in many ways. The main difference is how and when Load demand replenishment and Wave demand replenishment are run. Like Min/Max replenishment, Load demand replenishment is run by using a batch job. To set up the batch job, on the **Load demand replenishment** page, select the replenishment template that you want to use, and set a filter query to specify which loads are used to determine the demand. The location query defines the locations that any available quantity will be subtracted from to meet the aggregated demand of the loads.
+
+## Immediate replenishment
+Instead of having to sum up demand at the end of an allocation process and do replenisment on the basis of the summed up quantity, you can apply the Immediate replenishment strategy. With this strategy you can have the inventory replenished right after a location directive line fails and this allows you to set up the replenishment to be restricted by specific units and with quantities that are set for specific locations.
 
 ## Replenishment prerequisites
 | Prerequisite            | Description                                                                                                                                                                                                                                        |
