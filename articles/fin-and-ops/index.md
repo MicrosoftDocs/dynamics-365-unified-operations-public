@@ -118,7 +118,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="../retail/call-center-functionality.md">Call center</p>
 <p><a href="../retail/define-maintain-retail-channels.md">Channel setup and management</p>
 <p><a href="../retail/retail-peripherals-overview.md">MPOS and Cloud POS</p>
-<p><a href="../retail/../dev-itpro/dev-retail-home-page.md">Retail developer and administration</p>
+<p><a href="../retail/dev-itpro/dev-retail-home-page.md">Retail developer and administration</p>
 
 </td>
 </tr>
