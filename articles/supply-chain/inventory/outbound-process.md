@@ -5,7 +5,7 @@ title: Outbound process
 description: This topic provides an overview of the outbound process in Inventory management. 
 author: perlynne
 manager: AnnBe
-ms.date: 10/02/2017
+ms.date: 10/04/2017
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
