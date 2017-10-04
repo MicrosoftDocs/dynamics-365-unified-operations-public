@@ -58,7 +58,7 @@ Because an LCS project is always tied to a product, any translation request that
 ![DTS dashboard that is opened from within a project](./media/dts-project-dashboard.png "DTS dashboard that is opened from within a project")
 
 ## Alignment
-If you have files that were previously translated, you can recycle the translated files for a newer version of the source files by creating a translation memory (TM) that uses XML Localization Interchange File Format (XLIFF). On the DTS project dashboard, select the **Align** button to access the Align tool.
+If you have files that were previously translated, you can recycle the translated files for a newer version of the source files by creating a translation memory (TM) that uses XML Localization Interchange File Format (XLIFF). On the DTS dashboard, select the **Align** button to access the Align tool.
 
 ![Align button](./media/dts-align-icon.png "Align button")
 
@@ -108,7 +108,7 @@ Review the aligned XLIFF file before you use it as a TM. Translation units (TUs)
 3. Select **Create**.
 
 ## Upload the files
-Select the **Plus** button to open the **File upload** dialog box. You can upload one zip file for each of two files types: the source labels file and the XLIFF TM file. 
+Select the plus sign (**+**) button to open the **File upload** dialog box. You can upload one zip file for each of two files types: the source labels file and the XLIFF TM file. 
 
 ### Source labels zip file
 The source labels zip file contains all the source files that should be translated in the translation request. The source labels file can include files that have different file types, provided that the file types are supported for the product. For more information about supported file types, see [Supported products](./translation-service-overview.md#supported-products).
@@ -123,9 +123,9 @@ If you have XLIFF files from a previous translation request, or if you used the 
 In addition to using the XLIFF TM for the recycling process, DTS uses the XLIFF TM to create a customized MT system, based on the following rules:
 
 + Either the source language or the target language is a Microsoft GA language, and the other language is **English – United States**.
-+	Either the source language or the target language isn't a Microsoft GA language, and the XLIFF TM contains more than 10,000 TUs.
++ Neither the source language or the target language is a Microsoft GA language, and the XLIFF TM contains more than 10,000 TUs.
 
-If either the source language or the target language isn't a Microsoft GA language, and the XLIFF TM contains fewer than 10,000 TUs, DTS uses a general domain MT system after the recycling. This behavior occurs because of the requirements that are set by MT Hub.
+If neither the source language or the target language is a Microsoft GA language, and the XLIFF TM contains fewer than 10,000 TUs, DTS uses a general domain MT system after the recycling. This behavior occurs because of the requirements that are set by MT Hub.
 
 After you've uploaded the required files, select **Submit** to start the translation process.
 
@@ -218,5 +218,5 @@ Inherited state values for recycled strings are also helpful, because you will n
 | Term                   | Description |
 |------------------------|-------------|
 | XLIFF                  | XML Localization Interchange File Format. XLIFF is an XML-based format that was created to standardize the way that localizable data is passed between tools during a localization process, and to serve as a common format for computer-aided translation (CAT) tool files. |
-| Microsoft GA languages | GA means General availability of the Microsoft produced languages depend on the product. |
-| TU                     | Translation unit. A TU typically contains a source string, translation, state, state qualifier, and note. |
+| Microsoft GA languages | A general availability of the Microsoft produced languages. This list varies depending on the product. |
+| TU                     | A translation unit which typically contains a source string, translation, state, state qualifier, and note. |
