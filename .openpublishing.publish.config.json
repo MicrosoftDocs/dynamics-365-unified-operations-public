@@ -50,22 +50,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "d365Ops-SCM",
-      "build_source_folder": "scm",
-      "build_output_subfolder": "d365Ops-SCM",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "d365Ops-Talent",
       "build_source_folder": "hr",
       "build_output_subfolder": "d365Ops-Talent",
