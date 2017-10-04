@@ -36,7 +36,8 @@ ms.dyn365.ops.version: Platform update 1
 
 This topic describes how you can use Lifecycle Services (LCS) to automatically apply updates to a Finance and Operations environment. Finance and Operations updates are applied using deployable packages.
 
-**Note:** Package application causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
+> [!IMPORTANT]
+> Applying packages causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
 
 ## Supported environments
 
@@ -52,8 +53,8 @@ For other topologies (below), you must use Remote Desktop Protocol (RDP) to conn
 
 ## Key concepts
 
-- **Deployable package** – A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Finance and Operations application (AOT) package, or a new Finance and Operations application (AOT) package.
-For more details, see [Key concepts detailed](#key-concepts-detailed) at the end of this topic.
+Before you begin, you should underestand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Finance and Operations application (AOT) package, or a new Finance and Operations application (AOT) package. The AXInstaller creates a runbook that helps you install a package. For more details, see
+For more details, see [Packages, runbooks, and the AXUpdateInstaller in depth](#packages-runbooks-and-the-AXUpdateInstaller-in-depth) at the end of this topic.
 
 ## Supported package types
 
@@ -77,7 +78,8 @@ For more details, see [Key concepts detailed](#key-concepts-detailed) at the end
 
 ## Apply a package to a non-production environment by using LCS
 
-**Note:** Package application causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
+> [!IMPORTANT]
+> Applying packages causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
 
 Before you begin, verify that the deployable package has been uploaded to the Asset library in LCS.
 
@@ -127,7 +129,8 @@ If package application isn't successful, you have two options:
     ![Failed status](./media/parallelexecutionsandbox_failedstate.jpg)
 - Click **Abort** to stop package application.
 
-    **Note:** If you click **Abort**, you don't roll back the changes that have already been made to your environment. To proceed, you must fix the issue.
+> [!Note]
+> If you click **Abort**, you don't roll back the changes that have already been made to your environment. To proceed, you must fix the issue.
     
     [![Message box that appears when you abort package application](./media/applypackage_sandbox_13-1024x274.png)](./media/applypackage_sandbox_13.png)
 
@@ -148,7 +151,8 @@ In a production environment, unlike in a sandbox environment or other types of e
 7. Select the type of package to apply.
 8. Select the package to apply in your production environment, and then click **Schedule** to submit a request to the Service Engineering team to apply it.
 
-    **Note:** The list of packages includes only the packages that have been successfully signed off in the sandbox environment, and that have been marked as release candidates.
+> [!NOTE]
+> The list of packages includes only the packages that have been successfully signed off in the sandbox environment, and that have been marked as release candidates.
 9. Specify the date and time to schedule package application for, click **Submit**, and then click **OK** to confirm. Note that your environments will be down and unavailable to perform business while the package is being applied.
 10. Refresh the page. Two fields on the page indicate the status of the request.
 
@@ -198,15 +202,19 @@ In a production environment, unlike in a sandbox environment or other types of e
 
 If you're using Microsoft Dynamics 365 for Retail components (such as Retail Modern POS), after you've applied a deployable package in your environment, you must also update your in-store components. For more information, see [Retail Modern POS installation and updates](../../retail/retail-modern-pos-device-activation.md).
 
-## Key concepts detailed
+## Packages, runbooks, and the AXUpdateInstaller in depth
 
-- **Deployable package** – A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Finance and Operations application (AOT) package, or a new Finance and Operations application (AOT) package.
+Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use to apply updates. 
+
+**Deployable package** – A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Finance and Operations application (AOT) package, or a new Finance and Operations application (AOT) package.
 
     [![Example of a deployable package](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
-- **Runbook** – The deployment runbook is a series of steps that are generated in order to apply the deployable package to the target environment. Some steps are automated, and some steps are manual. AXUpdateInstaller lets you run these steps one at a time and in the correct order.
+
+**Runbook** – The deployment runbook is a series of steps that are generated in order to apply the deployable package to the target environment. Some steps are automated, and some steps are manual. AXUpdateInstaller lets you run these steps one at a time and in the correct order.
 
     [![Example of a deployment runbook](./media/applypackage_runbook-1024x528.jpg)](./media/applypackage_runbook.jpg)
-- **AXUpdateInstaller** – When you create a customization package from Microsoft Visual Studio or a Microsoft binary update, the installer executable is bundled together with the deployable package. The installer generates the runbook for the specified topology. The installer can also run steps in order, according to the runbook for a specific topology.
+
+**AXUpdateInstaller** – When you create a customization package from Microsoft Visual Studio or a Microsoft binary update, the installer executable is bundled together with the deployable package. The installer generates the runbook for the specified topology. The installer can also run steps in order, according to the runbook for a specific topology.
 
 ## See also
 
