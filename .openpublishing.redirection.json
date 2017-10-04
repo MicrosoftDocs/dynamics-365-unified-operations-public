@@ -154,6 +154,11 @@
           "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy",
           "redirect_document_id" : true 
       },
+          {   
+          "source_path" : "core/index.md", 
+          "redirect_url" : "/dynamics365/unified-operations/index", 
+          "redirect_document_id" : true 
+      }, 
       {   
           "source_path" : "hr/manage-recruiting-process.md", 
           "redirect_url" : "/dynamics365/unified-operations/fin-and-ops/hr/manage-recruiting-process", 
@@ -450,4 +455,3 @@
        } 
   ]
   } 
-  
