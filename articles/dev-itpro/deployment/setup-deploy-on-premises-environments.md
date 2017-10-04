@@ -47,8 +47,8 @@ These components depend on the following system software:
 - Microsoft Windows Server 2016
 - Microsoft SQL Server 2016 SP1, which has following features:
     - Full-text index search is enabled.
-    - SQL Server Reporting Services (SSRS)
-    - SQL Server Integration Services (SSIS)
+    - SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines.
+    - SQL Server Integration Services (SSIS) - This is deployed on AOS virtual machines.
 
     > [!WARNING]
     > The application won't run if Full Text Search isn't enabled.
@@ -80,8 +80,10 @@ Finance and Operations uses standalone Service Fabric. For more information, see
 
 Finance and Operations is designed to work on a hyper-v virtualized environment that is based on Windows Servers. 
 
-    > [!Note]
-    > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructures, including Azure.
+ > [!WARNING]
+ > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructure, including Azure.
+  
+    
 The hardware configuration includes the following components:
 
 - Standalone Service Fabric cluster that is based on Windows Server 2016 virtual machines (VMs)
@@ -167,9 +169,10 @@ The following steps must be completed to set up the infrastructure for Finance a
 13. [Set up SQL Server](#setupsql)
 14. [Configure the databases](#configuredb)
 15. [Encrypt credentials](#encryptcred)
-16. [Set up SSRS](#setupssrs)
-17. [Configure AD FS](#configureadfs)
-18. [Configure a connector and install an on-premises local agent](#configureconnector)
+16. [Set up SSIS](#setupssis)
+17. [Set up SSRS](#setupssrs)
+18. [Configure AD FS](#configureadfs)
+19. [Configure a connector and install an on-premises local agent](#configureconnector)
 
 ### <a name="plandomain"></a> 1. Plan your domain name and DNS zones
 
@@ -645,12 +648,22 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | clip
     ```
 
-### <a name="setupssrs"></a> 16. Set up SSRS
+### <a name="setupssis"></a> 16. Set up SSIS
+
+To enable Data management and Integration workloads, SSIS must be installed on each of the AOS virtual machines. Complete the following steps on each AOS virtual machine.
+
+1. Verify that the machine has access to the SSIS installation and open the SSIS Setup Wizard. 
+2. In the **Feature Selection** window, in the **Features** pane, select the **Integration Services** and **SQL Client Connectivity SDK** check boxes. 
+3. Complete the setup and verify that the installation was successful. 
+
+For more information, see [Install integration services](https://docs.microsoft.com/en-us/sql/integration-services/install-windows/install-integration-services). 
+
+### <a name="setupssrs"></a> 17. Set up SSRS
 
 1. Before you begin, make sure that the prerequisites that are listed at the beginning of this topic are installed.
 2. Follow the steps in [Configure SQL Server Reporting Services for an on-premises deployment](../analytics/configure-ssrs-on-premises.md).
 
-### <a name="configureadfs"></a> 17. Configure AD FS
+### <a name="configureadfs"></a> 18. Configure AD FS
 
 Before you can complete this procedure, AD FS must be deployed on Windows Server 2016. For information about how to deploy AD FS, see [Deployment Guide Windows Server 2016 and 2012 R2 AD FS Deployment Guide](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
 
@@ -695,7 +708,7 @@ Finally, make sure that you can access the AD FS OpenID Configuration URL on a S
 
 You've now complete the setup of the infrastructure. The following sections describe how to navigate to [LCS](https://lcs.dynamics.com) to set up your connector and deploy your Finance and Operations environment.
 
-### <a name="configureconnector"></a> 18. Configure a connector and install an on-premises local agent
+### <a name="configureconnector"></a> 19. Configure a connector and install an on-premises local agent
 
 1. Sign in to [LCS](https://lcs.dynamics.com/), and open the on-premises implementation project.
 2. On the hamburger menu, select **Project settings**.
