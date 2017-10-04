@@ -33,7 +33,6 @@ ms.dyn365.ops.version: Platform update 3
 
 [!include[banner](../includes/banner.md)]
 
-
 This topic explains how to upgrade your Microsoft Dynamics 365 for Finance and Operations platform version to the latest platform release.
 
 Overview
@@ -78,7 +77,8 @@ Platform update packages are released by Microsoft and can be imported from the 
 From a process perspective, deploying a platform upgrade package resembles a binary hotfix deployable package.
 
 -   To apply a platform update package to your cloud development, build, demo, tier-2 sandbox, or production environment, update directly from LCS.
-[![Apply updates](./media/applyupdates.jpg)](./media/applyupdates.jpg) For more details, follow the instructions for applying a binary hotfix in [Apply a deployable package on a Microsoft Dynamics 365 for Finance and Operations system](..\deployment\apply-deployable-package-system.md).
+[![Apply updates](./media/applyupdates.jpg)](./media/applyupdates.jpg) 
+For more details, follow the instructions for applying a binary hotfix in [Apply a deployable package on a Microsoft Dynamics 365 for Finance and Operations system](..\deployment\apply-deployable-package-system.md).
 
 -   To apply a platform update package to your local development environments (environments not connected to LCS servicing), follow the instructions in the next section.
 
@@ -188,7 +188,7 @@ This means two things:
 ### How to Delete platform metadata hotfixes from your VSTS project?
 
 > [!NOTE]
-> Skip this section if you are already on Platform update 3 and updating to a newer platform.
+> This section is not relevant if you are already on Platform update 3 and updating to a newer platform.
 
 Before you install the new platform update, you must clean up your Microsoft Visual Studio Team Services (VSTS) source control project.
 Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your VSTS project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
