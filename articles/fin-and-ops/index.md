@@ -19,7 +19,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: margoc
 
-
 # ms.tgt_pltfrm: 
 ms.custom: 62303
 ms.search.region: Global
@@ -75,12 +74,13 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <h3><a href="../supply-chain/index.md">Supply chain management</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Cost management</a></p>
 <p><a href="../supply-chain/inventory/inventory-locations.md">Inventory management</a></p>
-<p><a href="../supply-chain/transportation/transportation-management-overview.md">Logistics - Transportation management</a></p>
-<p><a href="../supply-chain/warehousing/warehouse-configuration.md">Logistics - Warehouse management</a></p>
-<p><a href="../supply-chain/procurement/procurement-sourcing-overview.md">Order management - Procurement and sourcing</a></p>
-<p><a href="../supply-chain/sales-marketing/overview-sales-marketing.md">Order management - Sales and marketing</a></p><p><a href="../supply-chain/master-planning/master-plans.md">Planning</a></p>
+<p><a href="../supply-chain/master-planning/master-plans.md">Master planning</a></p>
+<p><a href="../supply-chain/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></p>
 <p><a href="../supply-chain/pim/product-information.md">Product information management</a></p>
 <p><a href="../supply-chain/production-control/production-process-overview.md">Production control</a></p>
+<p><a href="../supply-chain/sales-marketing/overview-sales-marketing.md">Sales and marketing</a></p>
+<p><a href="../supply-chain/transportation/transportation-management-overview.md">Transportation management</a></p>
+<p><a href="../supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></p>
 
 </td>
 <td>
