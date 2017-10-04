@@ -55,7 +55,7 @@ All classes are public. If you remove the **public** modifier, the system still 
 
 ### Creating variables in a class
 
-All classes are public, but all member variables are implicitly private. However, even though all member variables are private, you can't decorate a member variable with the **private** keyword. All member variables belong to only object instances of the class. The following example shows how to use accessor methods to make the variable data public.
+All classes are public, but all member variables are implicitly protected. However, you can modify the member variable declaration by using the private, protected or public keywords. All member variables belong to only object instances of the class. The following example shows how to use accessor methods to make the variable data public.
 
     public class HasAFirstName
     {
