@@ -41,8 +41,13 @@ Integration does the following:
 
 -   It builds on data entities and the data management framework.
 -   It enables the exchange of documents/files between Finance and Operations and any third-party application or service.
--   It supports several document formats, source mapping, Extensible Stylesheet Language Transformations (XSLT), and filters. [![Formats](./media/image001-1024x348.png)](./media/image001.png)
--   It uses secure REST application programming interfaces (APIs) and authorization mechanisms to receive data from and send data back to integration systems. [![REST](./media/image003-1024x431.png)](./media/image003.png)
+-   It supports several document formats, source mapping, Extensible Stylesheet Language Transformations (XSLT), and filters. 
+
+ [![Formats](./media/image001-1024x348.png)](./media/image001.png)
+
+-   It uses secure REST application programming interfaces (APIs) and authorization mechanisms to receive data from and send data back to integration systems. 
+
+ [![REST](./media/image003-1024x431.png)](./media/image003.png)
 
 ## Authorization for the integration REST API
 The integration REST API uses the same OAuth 2.0 authentication model as the other service endpoints. Before the integrating client application can consume this endpoint, you must create an application ID in Microsoft Azure Active Directory (AAD) and give it appropriate permission to Finance and Operations. When you create and enable a recurring job, you'll be prompted to enter the AAD application ID that will be interacting with that recurring job. Therefore, be sure to note down the application ID.
@@ -52,12 +57,16 @@ The integration REST API uses the same OAuth 2.0 authentication model as the oth
 
 1.  On the main dashboard, click the **Data management** tile to open the data management workspace.
 2.  Click the **Import or Export** tile to create a new data project. 
- > [!NOTE]
- > If you have an existing data project, click **Load project** on any data project card on the **Data projects** tab.
+
+> [!NOTE]
+> If you have an existing data project, click **Load project** on any data project card on the **Data projects** tab.
+
 3.  Enter a valid job name, data source, and entity name.
 4.  Upload a data file for one or more entities. Make sure that each entity is added, and that no errors occur. 
- > [!NOTE]
- > You can click each entity data card to set up, review, or modify field maps, and to set up XSLT-based transforms that must be applied to inbound data. For export data projects, the entity card also shows a filter link, so that you can set up filters to filter out data. Currently, all recurring data jobs in a data project use the same filter.
+
+> [!NOTE]
+> You can click each entity data card to set up, review, or modify field maps, and to set up XSLT-based transforms that must be applied to inbound data. For export data projects, the entity card also shows a filter link, so that you can set up filters to filter out data. Currently, all recurring data jobs in a data project use the same filter.
+
 5.  Click **Save**.
 
 ### Create a recurring data job
@@ -69,14 +78,25 @@ The integration REST API uses the same OAuth 2.0 authentication model as the oth
     -   Specify **File** to indicate that your external integration will push individual files for processing via this recurring data job. In this case, the format of the file that is expected is the same as the format that was specified when the entity was added to the data project.
     -   Specify **Data package** to indicate that you can push only data package files for processing. A data package is a new format for submitting multiple data files as a single unit that can be used in integration jobs.
 
-5.  Click **Set processing recurrence**, and set a valid recurrence for your data job. [![Processing recurrent](./media/image007-11_16.png)](./media/image007-11_16.png)
+5.  Click **Set processing recurrence**, and set a valid recurrence for your data job. 
+
+ [![Processing recurrent](./media/image007-11_16.png)](./media/image007-11_16.png)
+
 6.  Optional: Click **Set monitoring recurrence**, and provide a monitoring recurrence. 
+
  > [!NOTE]
  > Currently, the monitoring recurrence enables load monitoring only on your recurring data job queue. No additional policies are supported via this service. You can use this feature to fine-tune the processing recurrence as required by load demand.
+
 7.  Click **OK**, and then click **Yes** in the confirmation dialog box.
 
 ## Manage recurring data jobs
-Open the System Administration workspace (not module) and click the Data Management IT tile. [![Data management workspace](./media/image011_2016-300x292.png)](./media/image011_2016.png) In this workspace, on the **Recurring data job** tab, click the recurring job to view more details for. The **Management** page contains a grid that lists any messages that are waiting in the queue. This view helps you monitor messages and processing status. [![Management page](./media/image013.jpg)](./media/image013.jpg)
+Open the System Administration workspace (not module) and click the Data Management IT tile. 
+
+[![Data management workspace](./media/image011_2016-300x292.png)](./media/image011_2016.png) 
+
+In this workspace, on the **Recurring data job** tab, click the recurring job to view more details for. The **Management** page contains a grid that lists any messages that are waiting in the queue. This view helps you monitor messages and processing status. 
+
+[![Management page](./media/image013.jpg)](./media/image013.jpg)
 
 ## Submitting data to recurring data jobs
 You can use well-known integration REST endpoints to integrate with the client, submit documents (import), or poll available documents for download (export). These endpoints support OAuth.
@@ -90,7 +110,9 @@ Make an HTTP POST call against the following URL.
 
     https://<baseurl>/api/connector/enqueue/<activity id>?entity=<entity name>
 
-In the message body, you can the pass the data as a memory stream. **Example**
+In the message body, you can the pass the data as a memory stream. 
+
+**Example**
 
     POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/enqueue/%7B6D31E09F-0249-459F-94F0-AAD9C2C47B64%7D?entity=Customer%20Groups
 
@@ -120,6 +142,3 @@ Use the API.
 **Example**
 
     POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
-
-
-
