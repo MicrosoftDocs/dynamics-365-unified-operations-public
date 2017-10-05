@@ -89,7 +89,7 @@ The following columns specify where the Operations can be invoked:
 | 518 | Expense accounts | Record money that is removed from the cash drawer for occasional expenses. | Yes | Yes | Yes | Yes | No |
 | 919 | Extended log on | Assign or remove permission to log on by scanning a bar code or by swiping a card | Yes | Yes | Yes | No | No |
 | 1201 | Float entry | Allows the user to add additional money to the current drawer or shift | Yes | Yes | Yes | Yes | No |
-| 1218 | Force unlock peripheral | Operation not supported | NA | NA | NA | NA | No |
+| 1218 | Force unlock peripheral | This operation is used internally by the system to unlock POS peripherals | NA | NA | NA | NA | No |
 | 520 | Gift card balance | Display the balance of a gift card | Yes | Yes | No | No | No |
 | 708 | Inactivate device | Deactivates the current device, preventing it from being used as a POS register. | No | No | No | No | No |
 | 517 | Income accounts | Record money that is put into the cash drawer for a reason other than a sale. | Yes | Yes | Yes | Yes | No |
