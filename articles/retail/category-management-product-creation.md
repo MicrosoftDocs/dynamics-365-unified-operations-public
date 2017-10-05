@@ -48,12 +48,12 @@ You can switch between managing legal-entity specific properties across all lega
 
 ![Toggle view between an individual and all Legal entities](media/ToggleToEditForAllLegalEntities.PNG)  
 
-Merchandising managers can also define default values for an additional set of product properties at the level of an individual category. These property values are inherited by a product, based on their association with a category at the time of product creation.
+Merchandising managers can also define default values for an additional set of product properties at the level of an individual category. These property values are inherited by a product, based on their association with a category at the time of product creation. And these inherited product properties can be modified for each product, to meet individual business requirements.
 
-## Select properties to update products from the Retail product category form
+## New style to select properties to update products from the Retail product category form
 
 You can use logical grouping properties to select which updated product properties should be pushed to associated products.
 
 ![New enhanced view of Update products](media/NewUpdateProductsEnhancedView.PNG)
 
-Merchandising managers can modify these inherited product properties for each product, to meet individual business requirements.
+
