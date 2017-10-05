@@ -114,6 +114,7 @@ Based on a quarterly BAS format, the following reporting codes must be set up. T
 | Default       | 11             | G11 Other acquisitions                                                     | G11                 |
 | Default       | 13             | G13 Acquisitions for making input taxed sales & income and other supplies  | G13                 |
 | Default       | 14             | G14 Acquisitions with no GST in the price                                  | G14                 |
+| Default       | 15             | Non-income tax deductible acquisitions                                     | G15                 |
 | Default       | 18             | G18 Adjustment (credit)                                                    | G18                 |
 | Default       | 101            | 1C Wine equalization tax payable                                           | 1C                  |
 | Default       | 102            | 1D Wine equalization tax refundable                                        | 1D                  |
