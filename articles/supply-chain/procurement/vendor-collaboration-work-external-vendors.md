@@ -136,7 +136,7 @@ To change a PO that has already been responded to, you must send a new version o
 
 ### Cancelling a PO
 
-When you cancel a PO, the status is changed to **Approved**. You must send the PO back to the vendor via the Vendor portal, so that the vendor can confirm or reject the cancellation. After the cancellation is confirmed, the PO appears in the vendor’s list of confirmed POs as **Cancelled**.
+When you cancel a PO, the status is changed to **Approved**. You must send the PO back to the vendor, so that the vendor can confirm or reject the cancellation. After the cancellation is confirmed, the PO appears in the vendor’s list of confirmed POs as **Cancelled**.
 
 ### Adding attachments to a PO
 
