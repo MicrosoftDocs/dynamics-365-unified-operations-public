@@ -1310,6 +1310,7 @@
 #### [Arrival overview](../supply-chain/inventory/arrival-overview.md)
 #### [Set up an item arrival overview profile (Task guide)](../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md)
 ### Set up inventory tracking
+### [Outbound process](../supply-chain/inventory/outbound-process.md)
 #### [Inventory journals](../supply-chain/inventory/inventory-journals.md)
 #### [Inventory locations](../supply-chain/inventory/inventory-locations.md)
 #### [Inventory statuses](../supply-chain/inventory/inventory-statuses.md)
