@@ -53,8 +53,7 @@ For other topologies (below), you must use Remote Desktop Protocol (RDP) to conn
 
 ## Key concepts
 
-Before you begin, you should underestand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Finance and Operations application (AOT) package, or a new Finance and Operations application (AOT) package. The AXInstaller creates a runbook that helps you install a package. For more details, see
-For more details, see [Packages, runbooks, and the AXUpdateInstaller in depth](#packages-runbooks-and-the-AXUpdateInstaller-in-depth) at the end of this topic.
+Before you begin, you should underestand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Finance and Operations application (AOT) package, or a new Finance and Operations application (AOT) package. The AXInstaller creates a runbook that enables installing a package. For more details, see [Packages, runbooks, and the AXUpdateInstaller in depth](#packages-runbooks-and-the-AXUpdateInstaller-in-depth) at the end of this topic.
 
 ## Supported package types
 
