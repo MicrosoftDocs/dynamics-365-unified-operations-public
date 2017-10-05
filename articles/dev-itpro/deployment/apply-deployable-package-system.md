@@ -48,7 +48,7 @@ The following topologies support package deployment that uses automated flows in
 For other topologies (below), you must use Remote Desktop Protocol (RDP) to connect to the environment and install from the command line. For information about manual package deployment, see [Install  a deployable package](install-deployable-package.md).
 
 - Local development environments (Downloadable virtual hard disk [VHD])
-- Multi-box Dev/test environments in Microsoft Azure (Partner and trial projects)
+- Multi-box dev/test environments in Microsoft Azure (Partner and trial projects)
 
 ## Key concepts
 
