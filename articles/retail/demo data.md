@@ -34,6 +34,13 @@ ms.dyn365.ops.version: Retail April 2017 update
 
 This topic provides information about demo data screen layouts provided for the Microsoft Dynamics 365 for Retail point of sale (POS) experiences.
 
+[Overview](#overview)<br>
+[Anatomy of a screen layout ID](#anatomy-of-a-screen-layout-id)<br>
+[Layout sizes](#layout-sizes)<br>
+[Companies and brands](#companies-and-brands)<br>
+[User sign in matrix](#user-sign-in-matrix)<br>
+[Reference icons and images](#reference-icons-and-images)<br>
+
 ## Overview
 
 The example screen layouts included with Dynamics 365 for Retail demo data provide content optimized for various segments of retail, store workers, and devices.  A single layout can contain several layout sizes and button grid combinations to ensure coverage as store workers transition between devices and stations.  This document will highlight the differences between these layouts, the operations they provide, and the overall experiences they deliver.
