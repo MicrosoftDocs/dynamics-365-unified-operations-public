@@ -597,10 +597,8 @@ Here is the formula that can be designed: FORMAT (CONCATENATE (@&quot;SYS70894&q
 <td>GETENUMVALUEBYNAME (enumeration data source path, enumeration value label text)</td>
 <td>Returns a value of a specified enumeration data source by specified text of this enumeration label.</td>
 <td>The following example shows the enumeration ReportDirection introduced in a data model. Note that labels are defined for enumeration values.
-
-<a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> 
-
-The following examples show:
+<a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>  
+  The following examples show:
 <ul><li>Model enumeration <strong>ReportDirection</strong> inserted into a report as a data source <strong>$Direction</strong></li>
 <li>ER expression <strong>$IsArrivals</strong> designed to use model enumeration as parameter of this function. The value of this expression is <strong>TRUE</strong>.
 
