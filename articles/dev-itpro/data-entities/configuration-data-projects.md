@@ -30,7 +30,8 @@ ms.dyn365.ops.version: Platform update 7
 ---
 # Configuration data projects
 
-## Overview
+[!include[banner](../includes/banner.md)]
+
 Configuration data projects are used to manage the movement of company configuration data between instances of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. They are intended to support the following scenarios:
 
 - **Export of configurations** – Create configurations of entities, and use the data management framework to export the configurations to a package.
