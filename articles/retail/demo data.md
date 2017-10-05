@@ -49,7 +49,7 @@ The example screen layouts included with Dynamics 365 for Retail demo data provi
 
 To find screen layouts in Dynamics 365 for Retail, navigate to **Retail > Channel setup > POS setup >POS > Screen layouts**.
 
-<!-- Insert Fig 2.1 here -->
+![Screen layouts form in Dynamics 365 for Retail](../media/demo-screen-layouts-fig-2-1.png)
 
 Screen layout IDs allow a maximum of 10 characters.  We use three pieces of information to build the string for a given ID.
 
@@ -81,7 +81,7 @@ Screen layout IDs allow a maximum of 10 characters.  We use three pieces of info
 ### Example layout
 F3MGR (Fabrikam + Layout version 3 + Store Manager)
 
-<!-- instert Fig 2.2 here -->
+![Welcome screen for the Fabrikam store manager](../media/demo-screen-layouts-fig-2-2.png)
 
 
 ## Layout sizes
@@ -111,7 +111,7 @@ Sizes are provided for these common resolutions.
 > In MPOS or CPOS, navigate to the **Settings** page and locate the **Session information** section.  In that section you will find the current Screen layout ID and layout resolution size being used.  You can also see the actual window resolution for your current application or browser frame.<br><br>
 > Using that information, you can locate the source of the layout content in Dynamics 365 for Retail by navigating to **Channel setup > POS setup >POS > Screen layouts**.
 
-<!-- Insert Fig 3.1 here -->
+![Screen layouts and resolution sizes in Dynamics 365 for Retail and POS](../media/demo-screen-layouts-fig-3-1.png)
 
 ## Companies and brands
 
