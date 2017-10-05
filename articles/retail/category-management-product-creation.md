@@ -1,3 +1,4 @@
+
 ---
 # Product category management and creation
 
@@ -33,11 +34,19 @@ ms.dyn365.ops.version:
 
 Enhancements that have been made to the management experience for Retail product categories let merchandising managers have a correlation between Retail product hierarchy and released product details. To view these enhancements, in the **Category & product management**  workspace, select **Retail product hierarchy** to open the **New structure of Retail product category** page. 
 
+![Category & product management workspace](media/LaunchRetailProductHierarchy.png)
+
 In previous releases, product properties were divided into Basic product properties and Retail product properties, based on the scope of their applicability. Retail product properties were *global*. In other words, for a given product property, the same value is shared across all legal entities. Basic product properties were *legal entity–specific*. In other words, a given product property might differ across legal entities, based on individual business requirements.
 
 With these enhancements, for product properties in the Retail product category, we continue to separate the fields, based on their applicability within a group, to reflect the released product details form structure.
 
+![Grouping of fields based on their scope of applicability](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
+
 You can switch between managing legal-entity specific properties across all legal entities and managing them for a specific legal entity. Just select **View/Edit for all legal entities** or **View/Edit for a specific legal entity** as you require.
+
+![Toggle view between an individual and all Legal entities](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+
+![Toggle view between an individual and all Legal entities](media/ToggleToEditForAllLegalEntities.PNG)  
 
 Merchandising managers can also define default values for an additional set of product properties at the level of an individual category. These property values are inherited by a product, based on their association with a category at the time of product creation.
 
