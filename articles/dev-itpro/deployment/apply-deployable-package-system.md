@@ -19,8 +19,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
-# ms.tgt_pltfrm: 
-ms.custom: 107013
+# ms.tgt_pltfrm: ms.custom: 107013
 ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
 ms.search.region: Global
 # ms.search.industry: 
@@ -34,7 +33,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes how you can use Lifecycle Services (LCS) to automatically apply updates to a Finance and Operations environment. Finance and Operations updates are applied using deployable packages.
+This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to automatically apply updates to a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition environment. Finance and Operations updates are applied using deployable packages.
 
 > [!IMPORTANT]
 > Applying packages causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
@@ -53,7 +52,7 @@ For other topologies (below), you must use Remote Desktop Protocol (RDP) to conn
 
 ## Key concepts
 
-Before you begin, you should underestand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Finance and Operations application (AOT) package, or a new Finance and Operations application (AOT) package. The AXInstaller creates a runbook that enables installing a package. For more details, see [Packages, runbooks, and the AXUpdateInstaller in depth](#packages-runbooks-and-the-AXUpdateInstaller-in-depth) at the end of this topic.
+Before you begin, you should understand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Finance and Operations application (AOT) package, or a new Finance and Operations application (AOT) package. The AXInstaller creates a runbook that enables installing a package. For more details, see [Packages, runbooks, and the AXUpdateInstaller in depth](#packages-runbooks-and-the-AXUpdateInstaller-in-depth) at the end of this topic.
 
 ## Supported package types
 
