@@ -39,6 +39,8 @@ This topic describes the configuration tasks that are needed to set up Finance a
 
 The vendor collaboration interface exposes a limited set of information about purchase orders, invoices, and consignment stock to external vendor users. This topic describes the configuration tasks that you need to set up vendor collaboration in Finance and Operations. It also describes how to set up a workflow to provision new vendor collaboration users, and manage the security roles for these users.
 
+The information in this topic about the setup of security roles for vendor collaboration applies only to the current version of Dynamics 365 for Finance and Operations. In the February 2016 and May 2016 versions of Microsoft Dynamics AX, you collaborate with vendors by using the **Vendor portal** module. For information about user permissions for the Vendor portal in Microsoft Dynamics AX, see [Vendor portal user security](configure-security-vendor-portal-users.md).
+
 ## Set up vendor collaboration security roles
 A procurement professional or a vendor with sufficient permissions can request that a contact person is provisioned as a user by activating **Provision vendor user** on the contact person record. In this process the user permission for the new external user has to be selected and the new vendor user request is submitted. It’s important that you correctly set up the user permissions that are available to select in the vendor user request for the vendor collaboration to ensure that vendors don’t get unintended access to additional information in Finance and Operations.  
 
