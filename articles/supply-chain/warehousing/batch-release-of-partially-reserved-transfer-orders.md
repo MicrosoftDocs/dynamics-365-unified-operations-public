@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 
+title: Batch release of partially reserved transfer orders
 description: This topic describes how to set up and apply batch release of partially reserved transfer orders from a mobile device.
 author: pjacobse
 manager: AnnBe
