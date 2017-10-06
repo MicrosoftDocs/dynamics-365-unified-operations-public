@@ -139,6 +139,8 @@
 #### [Data entities and packages framework](../dev-itpro/data-entities/data-entities-data-packages.md)
 ##### [Configuration data projects](../dev-itpro/data-entities/configuration-data-projects.md)
 ##### [Configuration data packages](../dev-itpro/data-entities/configuration-data-packages.md)
+##### [Copy configuration data between companies](../dev-itpro/data-entities/copy-configuration.md)
+##### [Configuration data templates](../dev-itpro/data-entities/configuration-data-templates.md)
 #### [Track changes to an entity](../dev-itpro/data-entities/entity-change-track.md)
 
 #### Standard data entities
@@ -167,10 +169,6 @@
 ##### [Data entities: Sales and marketing pre-sales](../dev-itpro/data-entities/data-entities-sales-marketing-pre-sales.md)
 ##### [Data entities: System administration](../dev-itpro/data-entities/data-entities-system-administration.md)
 ##### [Data entities: Workflow](../dev-itpro/data-entities/data-entities-workflow.md)
-
-#### Data templates
-##### [Configuration data templates](../dev-itpro/data-entities/configuration-data-templates.md)
-###### [Copy configuration data between companies](../dev-itpro/data-entities/copy-configuration.md)
 
 #### [Data import and export jobs](../dev-itpro/data-entities/data-import-export-job.md)
 
