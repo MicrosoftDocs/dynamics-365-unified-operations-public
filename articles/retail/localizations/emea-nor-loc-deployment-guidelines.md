@@ -291,6 +291,7 @@ This part is equivalent to RetailServer controller but for local CommerceRuntime
     ```
 
     > [!NOTE]
+    >
     > Refer to ***readme.md*** instructions file in Pos.Extensions project for more details and samples how-to include source code folder and enable extensions loading
 
 5. Rebuild the solution.
