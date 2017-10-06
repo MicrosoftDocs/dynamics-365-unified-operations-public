@@ -90,6 +90,7 @@ For information about the new features included in each release, click the links
 
 | Release           | Build number   | Availability  | Expiration date   |
 |-------------------|----------------|---------------|-------------------|
+| [Platform update 11](../../fin-and-ops/get-started/whats-new-platform-update-11.md)| 7.0.4679.35176 | October 2017   | October 2018   |
 | [Platform update 10](../../fin-and-ops/get-started/whats-new-platform-update-10.md)| 7.0.4641.16233 | August 2017   | August 2018   |
 | [Platform update 9](../../fin-and-ops/get-started/whats-new-platform-update-9.md) | 7.0.4612.35162 | July 2017     | July 2018     |
 | [Platform update 8](../../fin-and-ops/get-started/whats-new-platform-update-8.md) | 7.0.4565.16212 | June 2017     | June 2018     |
@@ -117,6 +118,7 @@ The following table provides information about the recent releases of the applic
 
 |                       | **Dynamics AX 7.0** | **Dynamics AX application 7.0.1** | **Dynamics 365 for Operations (1611)** | **Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) and later** |
 |-----------------------|---------------------|-----------------------------------|----------------------------------------|----------------------------------------------------------------------------------|
+| **Platform update 11** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
 | **Platform update 10** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
 | **Platform update 9** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
 | **Platform update 8** | Compatible          | Compatible                        | Compatible                             | Compatible                                                                       |
