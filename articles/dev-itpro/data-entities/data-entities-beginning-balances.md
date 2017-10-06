@@ -34,7 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-
 This article provides a list of the data entities that are available for beginning balance functionality that is related to Budget control. If you're using Budget control, you must set it up and activate it before any balances are posted. Any transactional data that is posted before Budget control is activated won't be included.
 
 Suggested data entities to use to import beginning balances

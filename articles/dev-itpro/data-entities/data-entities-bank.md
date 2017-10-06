@@ -34,7 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-
 This article provides a list of the data entities that are available for Bank and cash management.
 
 Available data entities

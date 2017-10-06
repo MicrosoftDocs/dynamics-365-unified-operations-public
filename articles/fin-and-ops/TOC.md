@@ -20,6 +20,7 @@
 #### [AX 2012 features not yet implemented](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Features not implemented in on-premises deployments](get-started/features-not-implemented-on-prem.md)
 #### [Lifecycle policy](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Platform update 11 (October 2017)](get-started/whats-new-platform-update-11.md)
 #### [Platform update 10 (August 2017)](get-started/whats-new-platform-update-10.md)
 #### [Finance and Operations, Enterprise edition (July 2017)](get-started/whats-new-application-July-2017-update.md)
 #### [Platform update 9 (July 2017)](get-started/whats-new-platform-update-9.md)
@@ -139,7 +140,9 @@
 #### [Data entities and packages framework](../dev-itpro/data-entities/data-entities-data-packages.md)
 ##### [Configuration data projects](../dev-itpro/data-entities/configuration-data-projects.md)
 ##### [Configuration data packages](../dev-itpro/data-entities/configuration-data-packages.md)
-#### [Track changes to an entity](../dev-itpro/data-entities/entity-change-track.md)
+##### [Copy configuration data between companies](../dev-itpro/data-entities/copy-configuration.md)
+##### [Configuration data templates](../dev-itpro/data-entities/configuration-data-templates.md)
+##### [Track changes to an entity](../dev-itpro/data-entities/entity-change-track.md)
 
 #### Standard data entities
 ##### [Data entities report](../dev-itpro/data-entities/data-entities-report.md)
@@ -167,10 +170,6 @@
 ##### [Data entities: Sales and marketing pre-sales](../dev-itpro/data-entities/data-entities-sales-marketing-pre-sales.md)
 ##### [Data entities: System administration](../dev-itpro/data-entities/data-entities-system-administration.md)
 ##### [Data entities: Workflow](../dev-itpro/data-entities/data-entities-workflow.md)
-
-#### Data templates
-##### [Configuration data templates](../dev-itpro/data-entities/configuration-data-templates.md)
-###### [Copy configuration data between companies](../dev-itpro/data-entities/copy-configuration.md)
 
 #### [Data import and export jobs](../dev-itpro/data-entities/data-import-export-job.md)
 
@@ -1309,13 +1308,13 @@
 ### Inbound process
 #### [Arrival overview](../supply-chain/inventory/arrival-overview.md)
 #### [Set up an item arrival overview profile (Task guide)](../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md)
-### Set up inventory tracking
 ### [Outbound process](../supply-chain/inventory/outbound-process.md)
+#### [Reserve inventory quantity](../supply-chain/inventory/reserve-inventory-quantities.md)
+#### [Reserve the same batch for a sales order](../supply-chain/sales-marketing/reserve-same-batch-sales-order.md)
+### Set up inventory tracking
 #### [Inventory journals](../supply-chain/inventory/inventory-journals.md)
 #### [Inventory locations](../supply-chain/inventory/inventory-locations.md)
 #### [Inventory statuses](../supply-chain/inventory/inventory-statuses.md)
-#### [Reserve inventory quantity](../supply-chain/inventory/reserve-inventory-quantities.md)
-#### [Reserve the same batch for a sales order](../supply-chain/sales-marketing/reserve-same-batch-sales-order.md)
 #### [Create a new warehouse layout (Task guide)](../supply-chain/inventory/tasks/create-new-warehouse-layout.md)
 #### [Maintain bar code types (Task guide)](../supply-chain/inventory/tasks/maintain-barcode-types.md)
 ### Inventory operations
@@ -1350,9 +1349,6 @@
 #### [Trace item and raw material](../supply-chain/inventory/trace-items-raw-materials-inventory-production-sales.md)
 #### [Register serial number in the sales process](../supply-chain/sales-marketing/register-serial-numbers-sales-process.md)
 #### [Trace an item or raw material (Task guide)](../supply-chain/inventory/tasks/trace-item-or-raw-material.md)
-
-
-
 
 
 ## Master planning

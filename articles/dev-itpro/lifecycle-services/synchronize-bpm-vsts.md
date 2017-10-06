@@ -64,7 +64,7 @@ To connect to a VSTS project, LCS is authenticated by using a personal access to
 4. Select your VSTS project.
 5. Specify the mapping between LCS/BPM items and the associated VSTS work item types.
 
-    ![Work item type mappings](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost24.png "Work item type mappings")
+    ![Work item type mappings](./media/newbpm_BlogPost24.png)
 
 6. Select **Continue**, review your changes, and then select **Save**.
 
@@ -84,11 +84,11 @@ The following information is synchronized:
 
 To synchronize a BPM library with a VSTS project, on the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **VSTS sync**.
 
-![Starting VSTS synchronization from the tile for a library](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost25.png "Starting VSTS synchronization from the tile for a library")
+![Starting VSTS synchronization from the tile for a library](./media/newbpm_BlogPost25.png)
 
 You can also start VSTS synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **VSTS sync**.
 
-![Starting VSTS synchronization from the toolbar in a library](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost26.png "Starting VSTS synchronization from the toolbar in a library")
+![Starting VSTS synchronization from the toolbar in a library](./media/newbpm_BlogPost26.png)
 
 ## Turn off synchronization of BPM with VSTS
 
@@ -109,7 +109,7 @@ When a business process is marked as reviewed, the **Reviewed** column is update
    - **Yellow circle** – The process and its child processes have been partially reviewed.
    - **Red dash** – The process and its child processes haven't been reviewed.
 
-![Example of a Review column](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost28.png "Example of a Review column")
+![Example of a Review column](./media/newbpm_BlogPost28.png)
 
 If a BPM library is synchronized with a VSTS project, and you mark a process as reviewed in BPM, its status is changed to **Active** in VSTS.
 
@@ -119,7 +119,7 @@ While you're reviewing a business process that is connected to VSTS, you can add
 2. In the right pane, on the **Requirements** tab, select **Add requirement**.
 3. Enter a name, description, and type, and then select **Create**.
 
-    ![Creating a requirement](https://github.com/ntecklu/Dynamics-365-Operations/blob/master/NEWBPM_BlogPost29-179x300.png "Creating a requirement")
+    ![Creating a requirement](./media/newbpm_BlogPost29.png)
 
     In VSTS, a requirement work item is created that is associated with the current business process.
 
