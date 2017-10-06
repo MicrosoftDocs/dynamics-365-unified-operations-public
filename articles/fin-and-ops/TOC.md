@@ -141,7 +141,7 @@
 ##### [Configuration data packages](../dev-itpro/data-entities/configuration-data-packages.md)
 ##### [Copy configuration data between companies](../dev-itpro/data-entities/copy-configuration.md)
 ##### [Configuration data templates](../dev-itpro/data-entities/configuration-data-templates.md)
-#### [Track changes to an entity](../dev-itpro/data-entities/entity-change-track.md)
+##### [Track changes to an entity](../dev-itpro/data-entities/entity-change-track.md)
 
 #### Standard data entities
 ##### [Data entities report](../dev-itpro/data-entities/data-entities-report.md)
