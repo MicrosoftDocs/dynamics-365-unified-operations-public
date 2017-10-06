@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Retail April 2017 update
 
 ---
 
-# Using example screen layouts and sizes in MPOS/CPOS
+# Using the demo data screen layouts in MPOS/CPOS
 
-This topic provides information about demo data screen layouts provided for the Microsoft Dynamics 365 for Retail point of sale (POS) experiences.
+This topic provides information about screen layouts that are included with the demo data set for the Microsoft Dynamics 365 for Retail point of sale (POS) experiences.
 
 [Overview](#overview)<br>
 [Anatomy of a screen layout ID](#anatomy-of-a-screen-layout-id)<br>
@@ -43,13 +43,15 @@ This topic provides information about demo data screen layouts provided for the 
 
 ## Overview
 
-The example screen layouts included with Dynamics 365 for Retail demo data provide content optimized for various segments of retail, store workers, and devices.  A single layout can contain several layout sizes and button grid combinations to ensure coverage as store workers transition between devices and stations.  This document will highlight the differences between these layouts, the operations they provide, and the overall experiences they deliver.
+The example screen layouts included with Dynamics 365 for Retail demo data provide content optimized for various segments of retail, store worker roles, and devices.  A single layout can contain several layout sizes and button grid combinations to ensure coverage as store workers transition between devices and stations.  This document will highlight the differences between these layouts, the operations they provide, and the overall experiences they deliver.
+
+![Cross device demo data layouts](../retail/media/demo-screen-layouts-fig-1-1.png)
 
 ## Anatomy of a screen layout ID
 
 To find screen layouts in Dynamics 365 for Retail, navigate to **Retail > Channel setup > POS setup >POS > Screen layouts**.
 
-![Screen layouts form in Dynamics 365 for Retail](../media/demo-screen-layouts-fig-2-1.png)
+![Screen layouts form in Dynamics 365 for Retail](../retail/media/demo-screen-layouts-fig-2-1.png)
 
 Screen layout IDs allow a maximum of 10 characters.  We use three pieces of information to build the string for a given ID.
 
@@ -81,7 +83,7 @@ Screen layout IDs allow a maximum of 10 characters.  We use three pieces of info
 ### Example layout
 F3MGR (Fabrikam + Layout version 3 + Store Manager)
 
-![Welcome screen for the Fabrikam store manager](../media/demo-screen-layouts-fig-2-2.png)
+![Welcome screen for the Fabrikam store manager](../retail/media/demo-screen-layouts-fig-2-2.png)
 
 
 ## Layout sizes
@@ -106,12 +108,11 @@ Sizes are provided for these common resolutions.
 
 *These additional layout sizes are only availalbe in Adventure Works and Fabrikam layouts
 
->[!TIP]<br><br>
-> POS selects layout sizes automatically based on the closest size available for the current app window resolution.<br><br>
-> In MPOS or CPOS, navigate to the **Settings** page and locate the **Session information** section.  In that section you will find the current Screen layout ID and layout resolution size being used.  You can also see the actual window resolution for your current application or browser frame.<br><br>
-> Using that information, you can locate the source of the layout content in Dynamics 365 for Retail by navigating to **Channel setup > POS setup >POS > Screen layouts**.
+>[!TIP]POS selects layout sizes automatically based on the closest size available for the current app window resolution.<br><br>
+> In MPOS or CPOS, navigate to the **Settings** page and locate the **Session information** section.  In that section you will find the current screen layout ID and layout resolution size being used.  You can also see the actual window resolution for your current application or browser frame.<br><br>
+> Using that information, you can locate the source of the layout content in Dynamics 365 for Retail by navigating to **Channel setup > POS setup > POS > Screen layouts**.
 
-![Screen layouts and resolution sizes in Dynamics 365 for Retail and POS](../media/demo-screen-layouts-fig-3-1.png)
+![Screen layouts and resolution sizes in Dynamics 365 for Retail and POS](../retail/media/demo-screen-layouts-fig-3-1.png)
 
 ## Companies and brands
 
@@ -125,22 +126,25 @@ Each fictitious company is targeted for a different retail segment, and includes
 | Fabrikam        	| Houston  	| Fashion        	| Green  	| Light 	|
 | Contoso         	| Boston   	| Electronics    	| Red    	| Dark  	|
 
->[!TIP]<br><br>
-> Adventure Works and Fabrikam are the two flagship brands.  Contoso is available, but not all layouts have been provided.
+>[!TIP]Adventure Works and Fabrikam are the two flagship brands.  Contoso is available, but not all layouts have been provided.
 
 ### Adventure Works
-<!-- Insert Fig 4.1 here -->
+![Demo data welcome page for Adventure Works](../retail/media/demo-screen-layouts-fig-4-1a.png)
+
+![Demo data transaction page for Adventure Works](../retail/media/demo-screen-layouts-fig-4-1b.png)
 
 ### Fabrikam
-<!-- Insert Fig 4.2 here -->
+![Demo data welcome page for Fabrikam](../retail/media/demo-screen-layouts-fig-4-2a.png)
+
+![Demo data transaction page for Fabrikam](../retail/media/demo-screen-layouts-fig-4-2b.png)
 
 ### Contoso
-<!-- Insert Fig 4.3 here -->
+![Demo data layouts for Contoso](../retail/media/demo-screen-layouts-fig-4-3.png)
 
 
 ## User sign in matrix
 
-Users have been provided to light up the various screen layouts.  Using the table below, you should be able to access any of the screens.
+Users have been provided to light up the various screen layouts.  Using the table below, you should be able to access any of the screens by signing in with the corresponding operator ID.
 
 | Company         	| Screen layout ID 	| Persona       	| Operator ID            	|
 |-----------------	|------------------	|---------------	|------------------------	|
@@ -155,14 +159,13 @@ Users have been provided to light up the various screen layouts.  Using the tabl
 | Contoso         	| n/a              	| Stock Clerk   	| n/a                    	|
 
 
->[!TIP]<br><br>
-> For best results, activate a register in the corresponding store location as the company of the persona you plan to use when signing in.  This will ensure that the visual profile and branding images align across the experience.  For example, if you are interested in seeing a Fabrikam layout for a cashier, you should activate using a register in the Houston store.
+>[!TIP]For best results, activate a register in the corresponding store location as the company of the persona you plan to use when signing in.  This will ensure that the visual profile and branding images align across the experience.  For example, if you are interested in seeing a Fabrikam layout for a cashier, you should activate using a register in the Houston store.
 
 ## Reference icons and images
 
 The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail > Channel setup > POS setup > POS > Images**.
 
-<!-- Insert Fig 5.1 here -->
+![Images in Dynamics 365 for Retail](../retail/media/demo-screen-layouts-fig-5-1.png)
 
-Use the <linked> spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs.
+Use the [POS Icon and Image Mapping](../retail/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs.
 
