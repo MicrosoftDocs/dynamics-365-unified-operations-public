@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deployment guidelines for cash registers for Norway
-description: This topic is the deployment guide for the Retail localization for Norway
+description: This topic is a deployment guide for the Retail localization for Norway
 author: alexchern0v
 manager: olegkl
 ms.date: 09/22/2017
@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-10-15
 
 **NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.**
 
-This sample shows how to create Microsoft Dynamics 365 for Retail extensions to integrate Retail Modern POS or Cloud POS with sales transaction digital signing service and Norwegian SAF-T reports. 
+This guide demonstrates how to enable Microsoft Dynamics 365 for Retail localization for Norway. The localization consists of a number of extensions of Dynamics 365 for Retail components, including extensions for printing of custom fields in receipts, registration of additional audit events and sales and payment transactions in Point of Sale, digital signing of sales transactions, and printing of X/Z reports in local formats.
 
 This sample is a part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](./retail-sdk-overview.md).
 
