@@ -3,7 +3,7 @@
 
 title: Deployment guidelines for cash registers for Norway
 description: This topic is a deployment guide for the Retail localization for Norway
-author: alexchern0v
+author: AlexChern0v
 manager: olegkl
 ms.date: 09/22/2017
 ms.topic: article
@@ -34,9 +34,9 @@ ms.search.validFrom: 2017-10-15
 
 **NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.**
 
-This guide demonstrates how to enable Microsoft Dynamics 365 for Retail localization for Norway. The localization consists of a number of extensions of Dynamics 365 for Retail components, including extensions for printing of custom fields in receipts, registration of additional audit events and sales and payment transactions in Point of Sale, digital signing of sales transactions, and printing of X/Z reports in local formats.
+This guide demonstrates how to enable the Microsoft Dynamics 365 for Retail localization for Norway. The localization consists of a number of extensions of Dynamics 365 for Retail components, including extensions for printing of custom fields in receipts, registration of additional audit events and sales and payment transactions in Point of Sale, digital signing of sales transactions, and printing of X/Z reports in local formats. For more information on the Microsoft Dynamics 365 for Retail localization for Norway, see [Cash registers for Norway](./emea-nor-cash-registers.md).
 
-This sample is a part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](./retail-sdk-overview.md).
+This sample is a part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 This sample consists of extensions for the Commerce runtime (CRT), Retail Server (RS) and point of sale (POS). To run this sample, you must modify and build the CRT, RS and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
@@ -46,20 +46,20 @@ Follow these steps to set up a development environment so that you can test and 
 
 ### The CRT extension components
 
-The CRT extension components are included to CommerceRuntime samples. For following paragraphs open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\SampleExtensions\CommerceRuntime**.
+The CRT extension components are included in CommerceRuntime samples. For following paragraphs open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\SampleExtensions\CommerceRuntime**.
 
 #### ReceiptsNorway component
-1. Find the ***Runtime.Extensions.ReceiptsNorway*** project, and build it.
+1. Find the ***Runtime.Extensions.ReceiptsNorway*** project and build it.
 
-2. Locate the ***Contoso.Commerce.Runtime.ReceiptsNorway.dll*** assembly files in *`Extensions.ReceiptsNorway\bin\Debug`* folder
+2. Locate the ***Contoso.Commerce.Runtime.ReceiptsNorway.dll*** assembly file in *`Extensions.ReceiptsNorway\bin\Debug`* folder.
 
 3. Copy the assembly file to the CRT extensions folder:
 
-    - **Retail Server:** Copy the assembly to the *`\bin\ext`* folder under the IIS Retail server site location.
+    - **Retail Server:** Copy the assembly to the *`\bin\ext`* folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the *`\ext`* folder under the local CRT client broker location.
 
 4. Locate the extensions configuration file for CRT:
-    - **Retail Server:** The file is named ***commerceruntime.ext.config***, and located in *`bin\ext`* folder under the IIS Retail server site location.
+    - **Retail Server:** The file is named ***commerceruntime.ext.config*** and located in *`bin\ext`* folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named ***CommerceRuntime.MPOSOffline.Ext.config***, and it's under the local CRT client broker location.
 
 5. Register the CRT change in the extensions configuration file.
@@ -73,15 +73,15 @@ The CRT extension components are included to CommerceRuntime samples. For follow
 
 #### RegisterAuditEvent sample component
 1. Find the ***Runtime.Extensions.RegisterAuditEventSample*** project, and build it.
-2. Locate the ***Contoso.Commerce.Runtime.RegisterAuditEventSample.dll*** assembly files in *`Extensions.RegisterAuditEventSample\bin\Debug`* folder
+2. Locate the ***Contoso.Commerce.Runtime.RegisterAuditEventSample.dll*** assembly file in *`Extensions.RegisterAuditEventSample\bin\Debug`* folder
 
 3. Copy the assembly file to the CRT extensions folder:
 
-    - **Retail Server:** Copy the assembly to the *`\bin\ext`* folder under the IIS Retail server site location.
+    - **Retail Server:** Copy the assembly to the *`\bin\ext`* folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the *`\ext`* folder under the local CRT client broker location.
 
 4. Locate the extensions configuration file for CRT:
-    - **Retail Server:** The file is named ***commerceruntime.ext.config***, and located in *`bin\ext`* folder under the IIS Retail server site location.
+    - **Retail Server:** The file is named ***commerceruntime.ext.config*** and located in *`bin\ext`* folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named ***CommerceRuntime.MPOSOffline.Ext.config***, and it's under the local CRT client broker location.
 
 5. Register the CRT change in the extensions configuration file.
@@ -94,16 +94,16 @@ The CRT extension components are included to CommerceRuntime samples. For follow
     > Do **not** edit the ***commerceruntime.config*** and ***CommerceRuntime.MPOSOffline.config*** files. These files are not intended for any customizations.
 
 #### SalesPaymentTransExt component
-1. Find the ***Runtime.Extensions.SalesPaymentTransExt*** project, and build it.
-2. Locate the ***Contoso.Commerce.Runtime.SalesPaymentTransExt.dll*** assembly files in *`Extensions.SalesPaymentTransExt\bin\Debug`* folder
+1. Find the ***Runtime.Extensions.SalesPaymentTransExt*** project and build it.
+2. Locate the ***Contoso.Commerce.Runtime.SalesPaymentTransExt.dll*** assembly file in *`Extensions.SalesPaymentTransExt\bin\Debug`* folder
 
 3. Copy the assembly file to the CRT extensions folder:
 
-    - **Retail Server:** Copy the assembly to the *`\bin\ext`* folder under the IIS Retail server site location.
+    - **Retail Server:** Copy the assembly to the *`\bin\ext`* folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the *`\ext`* folder under the local CRT client broker location.
 
 4. Locate the extensions configuration file for CRT:
-    - **Retail Server:** The file is named ***commerceruntime.ext.config***, and located in *`bin\ext`* folder under the IIS Retail server site location.
+    - **Retail Server:** The file is named ***commerceruntime.ext.config*** and located in *`bin\ext`* folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named ***CommerceRuntime.MPOSOffline.Ext.config***, and it's under the local CRT client broker location.
 
 5. Register the CRT change in the extensions configuration file.
@@ -126,11 +126,11 @@ The CRT extension components are included to CommerceRuntime samples. For follow
 
 3. Copy above files to the CRT extensions folder:
 
-    - **Retail Server:** Copy the assembly to the *`\bin\ext`* folder under the IIS Retail server site location.
+    - **Retail Server:** Copy the assembly to the *`\bin\ext`* folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the *`\ext`* folder under the local CRT client broker location.
 
 4. Locate the extensions configuration file for CRT:
-    - **Retail Server:** The file is named ***commerceruntime.ext.config***, and located in *`bin\ext`* folder under the IIS Retail server site location.
+    - **Retail Server:** The file is named ***commerceruntime.ext.config*** and located in *`bin\ext`* folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named ***CommerceRuntime.MPOSOffline.Ext.config***, and it's under the local CRT client broker location.
 
 5. Register the CRT change in the extensions configuration file.
@@ -143,15 +143,15 @@ The CRT extension components are included to CommerceRuntime samples. For follow
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files are not intended for any customizations.
 
 #### XZReportsNorway component
-1. Find the ***Runtime.Extensions.XZReportsNorway*** project, and build it.
-2. Locate the ***Contoso.Commerce.Runtime.XZReportsNorway.dll*** assembly files in *`Extensions.XZReportsNorway\bin\Debug`* folder
+1. Find the ***Runtime.Extensions.XZReportsNorway*** project and build it.
+2. Locate the ***Contoso.Commerce.Runtime.XZReportsNorway.dll*** assembly file in *`Extensions.XZReportsNorway\bin\Debug`* folder
 3. Copy the assembly file to the CRT extensions folder:
 
-    - **Retail Server:** Copy the assembly to the *`\bin\ext`* folder under the IIS Retail server site location.
+    - **Retail Server:** Copy the assembly to the *`\bin\ext`* folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the *`\ext`* folder under the local CRT client broker location.
 
 4. Locate the extensions configuration file for CRT:
-    - **Retail Server:** The file is named ***commerceruntime.ext.config***, and located in *`bin\ext`* folder under the IIS Retail server site location.
+    - **Retail Server:** The file is named ***commerceruntime.ext.config*** and located in *`bin\ext`* folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named ***CommerceRuntime.MPOSOffline.Ext.config***, and it's under the local CRT client broker location.
 
 5. Register the CRT change in the extensions configuration file.
@@ -163,17 +163,17 @@ The CRT extension components are included to CommerceRuntime samples. For follow
     > [!NOTE]
     > Do **not** edit the *commerceruntime.config* and *CommerceRuntime.MPOSOffline.config* files. These files are not intended for any customizations.
 
-### The RS extension components
+### The Retail Server extension components
 
 #### SalesTransactionSignature RS sample component
 
 1. Find the ***RetailServer.Extensions.SalesTransactionSignatureSample*** project in *`RetailSDK\SampleExtensions\RetailServer\RetailServer.Extensions.SalesTransactionSignatureSample`* folder and build it
 
-2. Locate the ***Contoso.RetailServer.SalesTransactionSignatureSample.dll*** assembly files in *`RetailServer\Extensions.SalesTransactionSignatureSample\bin\Debug`* folder
+2. Locate the ***Contoso.RetailServer.SalesTransactionSignatureSample.dll*** assembly file in *`RetailServer\Extensions.SalesTransactionSignatureSample\bin\Debug`* folder
 
-3. Copy the assembly file to the *`\bin`* folder under the IIS Retail server site location.
+3. Copy the assembly file to the *`\bin`* folder under the IIS Retail Server site location.
 
-4. Locate the configuration file for RS. The file is named ***web.config***, and located in root folder under the IIS Retail server site location.
+4. Locate the configuration file for RS. The file is named ***web.config*** and located in root folder under the IIS Retail Server site location.
 
 5. Register the RS extensions in ***extensionComposition*** section of configuration file.
 
@@ -186,9 +186,9 @@ The CRT extension components are included to CommerceRuntime samples. For follow
     1. Find the following files in *`CommerceRuntime\Extensions.SalesTransactionSignatureSample\bin\Debug`*:
         - The ***Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll*** assembly
         - The ***Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config*** configuration file
-    2. Copy above files to the *`\bin`* folder under the IIS Retail server site location.
+    2. Copy above files to the *`\bin`* folder under the IIS Retail Server site location.
 
-    3. Register the CRT change in the extensions configuration file for CRT, naming ***commerceruntime.ext.config***, and locating in *`bin`* folder under the IIS Retail server site location.
+    3. Register the CRT change in the extensions configuration file for CRT, naming ***commerceruntime.ext.config***, and locating in *`bin`* folder under the IIS Retail Server site location.
 
     ``` xml
        <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
@@ -203,11 +203,11 @@ The CRT extension components are included to CommerceRuntime samples. For follow
 
 #### Implement the proxy code for offline mode 
 
-This part is equivalent to RetailServer controller but for local CommerceRuntime when the client is not connected
+This part is equivalent to the Retail Server controller, but it extends the local Commerce Runtime used when the client is not connected.
 
-1. Change @(RetailServerLibraryPathForProxyGeneration) section of *`customization.settings`* to use the new RetailServer assembly for proxy generation
+1. Change the @(RetailServerLibraryPathForProxyGeneration) section of *`customization.settings`* to use the new Retail Server assembly for proxy generation.
 
-2. Implement following interface methods in the ***StoreOperationsManager*** class. For now, just add this:
+2. Implement the following interface methods in the ***StoreOperationsManager*** class. For the first iteration, add the following code:
 
     ``` csharp
     public Task<bool> SalesTransactionSignatureServiceIsReady()
@@ -221,11 +221,11 @@ This part is equivalent to RetailServer controller but for local CommerceRuntime
     }
     ```
 
-3. In order to regenerate the proxy code build the Proxies folder from command line (`msbuild /t:Rebuild`)
+3. In order to regenerate the proxy code, build the Proxies folder from command line (`msbuild /t:Rebuild`).
 
-4. Open *`RetailSDK\Proxies\RetailProxy\Proxies.RetailProxy.csproj`*, add *`RetailSDK\SampleExtensions\CommerceRuntime\Extensions.SalesTransactionSignatureSample\CommerceRuntime.Extensions.SalesTransactionSignatureSample`* project to the solution and add a project reference to the ***RetailProxy*** project referencing ***SalesTransactionSignatureSample***
+4. Open *`RetailSDK\Proxies\RetailProxy\Proxies.RetailProxy.csproj`*, add *`RetailSDK\SampleExtensions\CommerceRuntime\Extensions.SalesTransactionSignatureSample\CommerceRuntime.Extensions.SalesTransactionSignatureSample`* project to the solution and add a project reference to the ***RetailProxy*** project referencing ***SalesTransactionSignatureSample***.
 
-5. Implement interface methods in the ***StoreOperationsManager*** class correctly now.
+5. Adjust the interface methods in the ***StoreOperationsManager*** class:
 
     ``` csharp
     public Task<bool> SalesTransactionSignatureServiceIsReady()
@@ -239,7 +239,7 @@ This part is equivalent to RetailServer controller but for local CommerceRuntime
     }
     ```
 
-6. Update ***dllhost.exe.config*** so the ClientBroker will load new RetailProxy assembly
+6. Update ***dllhost.exe.config*** so that the Client Broker will load new RetailProxy assembly
     ``` xml
         <add key="RetailProxyAssemblyName" value="Contoso.Commerce.RetailProxy" />
         <add key="AdaptorCallerFullTypeName" value="Contoso.Commerce.RetailProxy.Adapters.AdaptorCaller" />
@@ -251,7 +251,7 @@ This part is equivalent to RetailServer controller but for local CommerceRuntime
 
 2. Include existing ***AuditEventExtensionSample*** and ***SalesTransactionSignatureSample*** source code folders in the ***Pos.Extensions*** project.
 
-3. Enable the extensions compiling in ***tsconfig.json*** by removing ***AuditEventExtensionSample*** and ***SalesTransactionSignatureSample*** folders from exclude list.
+3. Enable the extensions compiling in ***tsconfig.json*** by removing ***AuditEventExtensionSample*** and ***SalesTransactionSignatureSample*** folders from the exclude list.
 
 4. Enable the extensions loading in ***extensions.json*** by adding the following lines in the appropriate place.
 
@@ -277,7 +277,7 @@ This part is equivalent to RetailServer controller but for local CommerceRuntime
 
 2. Include existing ***AuditEventExtensionSample*** and ***SalesTransactionSignatureSample*** source code folders in the ***Pos.Extensions*** project.
 
-3. Enable the extensions compiling in ***tsconfig.json*** by removing ***AuditEventExtensionSample*** and ***SalesTransactionSignatureSample*** folders from exclude list.
+3. Enable the extensions compiling in ***tsconfig.json*** by removing ***AuditEventExtensionSample*** and ***SalesTransactionSignatureSample*** folders from the exclude list.
 
 4. Enable the extensions loading in ***extensions.json*** by adding the following lines in the appropriate place.
 
@@ -300,9 +300,9 @@ This part is equivalent to RetailServer controller but for local CommerceRuntime
 
 7. Test the functionality.
 
-### Set up required parameters in Retail headquarters.
+### Set up required parameters in Retail Headquarters.
 
-For more information, see **TODO: Add link**
+For more information, see [Cash registers for Norway](./emea-nor-cash-registers.md).
 
 ## Production environment
 
@@ -350,4 +350,4 @@ Follow these steps to create and apply deployable packages that contain Retail c
 
 3. Run **msbuild** for the whole Retail SDK to create deployable packages.
 
-4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
