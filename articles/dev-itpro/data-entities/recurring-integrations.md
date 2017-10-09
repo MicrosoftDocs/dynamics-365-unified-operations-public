@@ -154,3 +154,20 @@ It must be noted that, if the backing batch history record was deleted, the corr
 
 ![Showing batch status](../media/showing batch status.png)
 
+###Option to not upload file or a package with zero records in recurring exports
+When using recurring exports in Dynamics 365 for Finance and Operations, users can choose to not upload the generated file or the package if the total record count in the file or the package is zero. This helps in certain scenarios when integrations depend on such logic.
+
+The option ‘Prevent upload when zero records’ is available when configuring the recurring export job. Once the recurring job is scheduled, the option is also available to be changed later as well. This option is only available when using file or package data sources.
+
+Image 1
+
+
+There could be execution runs where files or packages were uploaded and runs where they were not uploaded (because there was nothing to upload). To facilitate debugging in cases when it is suspected that the file was not uploaded when it was supposed to be or vice versa, two new columns have been added to the manage messages form for the recurring export job.
+
+image2
+
+
+The total records exported column shows the total record count that were exported. If this is 0 then, it means, there were no records exported to the file or in the package (no records in any of the files inside the package). Note that, jobs that were executed prior to upgrading to platform update 12 or beyond will not show any value after upgrading in this column.
+
+The file uploaded successfully shows a tick mark if the file or the package was uploaded successfully by the recurring export job. If the file did not upload due to an error or if the file did not upload because there were zero records (when this option was enabled), the column will have a blank value. Note that, jobs that were executed prior to upgrading to platform update 12 or beyond will not show any value after upgrading in this column.
+
