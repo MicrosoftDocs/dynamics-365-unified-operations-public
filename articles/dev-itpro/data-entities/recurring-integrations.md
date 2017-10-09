@@ -159,12 +159,12 @@ When using recurring exports in Dynamics 365 for Finance and Operations, users c
 
 The option ‘Prevent upload when zero records’ is available when configuring the recurring export job. Once the recurring job is scheduled, the option is also available to be changed later as well. This option is only available when using file or package data sources.
 
-Image 1
+![Prevent file upload option](../media/Prevent file upload option.png)
 
 
 There could be execution runs where files or packages were uploaded and runs where they were not uploaded (because there was nothing to upload). To facilitate debugging in cases when it is suspected that the file was not uploaded when it was supposed to be or vice versa, two new columns have been added to the manage messages form for the recurring export job.
 
-image2
+![Showing batch status](../media/showing batch status.png)
 
 
 The total records exported column shows the total record count that were exported. If this is 0 then, it means, there were no records exported to the file or in the package (no records in any of the files inside the package). Note that, jobs that were executed prior to upgrading to platform update 12 or beyond will not show any value after upgrading in this column.
