@@ -96,6 +96,7 @@ In this example, the **SysODataActionAttribute** class decorates the **Calculate
         return returnList;
     }
 
+
 In this example, the **SysODataCollectionAttribute** class enables OData to expose strongly typed collections from X++. This class takes in three parameters:
 
 -   The name of the parameter that is a list (use **return** for the return value of the method)
@@ -122,6 +123,7 @@ The OData protocol supports many similar filtering and querying options on entit
 OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints](services-home-page.md).
 
 ##Tips & Ticks
+
 ###Running multiple requests in a single transaction:
 OData $batch framework has a concept called changeset. Each changeset can contain a list of requests which are to be treated as single atomic unit. Meaning, either all the requests are executed successfully or none, should any of the requests fail. OData service in D365FO does support this feature. To send a batch request with a list of requests in a single changeset, using OData client, see the following sample code. Note the use of the option SaveChangesOptions.BatchWithSingleChangeset in SaveChanges(). This ensures that all the requests are bundled in a single changeset. 
 public static void CreateProductColors(Resources context)
