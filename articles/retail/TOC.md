@@ -178,6 +178,7 @@
 #### [Retail POS device activation](dev-itpro/retail-device-activation.md)
 #### [Secure retail Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
 ### [Retail Hardware Station configuration and installation](retail-hardware-station-configuration-installation.md)
+### [Mass deployment of Retail self-service components](dev-itpro/retail-mass-deployment.md)
 ### [Retail component events for diagnostics and troubleshooting](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
 ### [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md)
 
