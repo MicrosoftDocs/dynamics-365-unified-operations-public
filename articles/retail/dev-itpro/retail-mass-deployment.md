@@ -29,14 +29,11 @@ ms.dyn365.ops.version: Application update 3
 
 # Mass deployment of Retail self-service components
 
-[!include[banner](../includes/banner.md)]
-
-'This topic explains how you can use self-service to do silent servicing updates, initial deployments, and some aspects of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available.
+This topic explains how you can use self-service to do silent servicing updates, initial deployments, and some aspects of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available.
 
 ## Silent servicing
 ### Before you begin
-> [!IMPORTANT]
-> This functionality works in Microsoft Dynamics 365 for Retail. The July 2017 version with Application update 3 or later is required. Note that silent servicing maintains all components that are currently installed.
+This functionality works in Microsoft Dynamics 365 for Retail. The July 2017 version with Application update 3 or later is required. Note that silent servicing maintains all components that are currently installed.
 
 ### Delimiters for mass deployment
 The following table shows the delimiters that can currently be used in execution commands for mass deployment. These delimiters apply to App update 3 and later.
