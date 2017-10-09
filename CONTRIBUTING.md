@@ -96,7 +96,7 @@ If you have sample code, include the code as inline code blocks in your topic. T
 If you submit a pull request with new or significant changes to documentation, you will need to submit an online Contribution License Agreement (CLA) if you are not an employee of Microsoft. You will need complete the online form before your pull request can be accepted. You must sign the CLA before your pull request is merged. This is a one-time requirement for projects on the Dynamics 365 documentation site. You can read more about [Contribution License Agreements (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
 
 ## Do's and don'ts
-Here are some guiding rules that you should keep in mind when you're contributing to Dynamics 365 for Finance and Operations documentation.
+Here are some guiding rules that you should keep in mind when you're contributing to the documentation.
 
 - **Do** use the [template](./template.md) file as the starting point of your work.
 - **Do** create a separate branch on your fork before working on topics. This makes it easier to recover from problems in your branches and go back to a good, known point.
