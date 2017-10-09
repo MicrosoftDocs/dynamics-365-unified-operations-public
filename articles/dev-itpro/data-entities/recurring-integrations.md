@@ -133,7 +133,7 @@ After the client downloads the data, an acknowledgment must be sent back to Fina
 
 ### For acknowledging
 
-Use the API.
+Use the following API.
 
 > [!NOTE]
 > The body of the response of /enqueue must be sent in the body of the /ack POST request.
@@ -144,31 +144,36 @@ Use the API.
 
     POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
     
-##Tips & Tricks
+## Tips & Tricks
 
-###Viewing batch status from data management for recurring integrations
-Recurring integration data jobs run in batch mode. At times when the recurring jobs fail, troubleshooting the failure also involves investigating the batch job instance. To make this investigation easier, the ‘manage messages’ form for a recurring data job now shows the batch job status as well.
+### Viewing batch status from data management for recurring integrations
+Recurring integration data jobs run in batch mode. When a recurring job fails, troubleshooting the failure also involves investigating the batch job instance. To make this investigation easier, the **Manage messages** form for a recurring data job now shows the batch job status as well.
 
-The batch job status is retrieved asynchronously from the batch framework for the identified recurring data job. The user must click ‘Get batch status’ to start the retrieval of batch status. The batch status on the form will get updated on clicking the form refresh after the status was retrieved.
+The batch job status is retrieved asynchronously from the batch framework for the specified recurring data job. The user must click **Get batch status**, and then refresh the form to see the most up to date batch status. 
 
-It must be noted that, if the backing batch history record was deleted, the corresponding status on the data management form will be blank. This is shown in the example below
+> [!NOTE]
+> If the batch history record is deleted, the status for the job on the Data management form will be blank. This is shown in the example below.
 
 ![Showing batch status](./media/show-batch-status.png)
 
-###Option to not upload file or a package with zero records in recurring exports
-When using recurring exports in Dynamics 365 for Finance and Operations, users can choose to not upload the generated file or the package if the total record count in the file or the package is zero. This helps in certain scenarios when integrations depend on such logic.
+### Prevent upload when zero records
+When using recurring exports in Finance and Operations, you can choose to not upload a generated file or package if the total record count in the file or package is zero.
 
-The option ‘Prevent upload when zero records’ is available when configuring the recurring export job. Once the recurring job is scheduled, the option is also available to be changed later as well. This option is only available when using file or package data sources.
+The **Prevent upload when zero records** option can be set when you configure a recurring export job, or after a job has been created. This option is only available when using file or package data sources.
 
 ![Prevent file upload option](./media/prevent-file-upload.png)
 
+### Debugging uploads
+Your implementation may include runs of recurring jobs in which files or packages were uploaded, and runs in which no files or packages are uploaded, because there was nothing to upload. To facilitate debugging in cases when it is suspected that the file was not uploaded when it was supposed to be or vice versa, use the **Manage messages** form for the recurring export job.
 
-There could be execution runs where files or packages were uploaded and runs where they were not uploaded (because there was nothing to upload). To facilitate debugging in cases when it is suspected that the file was not uploaded when it was supposed to be or vice versa, two new columns have been added to the manage messages form for the recurring export job.
+The **Total records exported** column shows the total record count that was exported. If it contains a value of 0, then no records were exported to the file or included in the package. 
+
+> [!NOTE]
+> This feature was added in Platform update 12. Jobs that were run before to upgrading to Platform update 12 will not display values in this column.
+
+The **File uploaded successfully** column displays a checkmark if the file or the package was uploaded successfully. If the file did not upload because of an error or because there were zero records, the column will be blank. 
+
+> [!NOTE]
+> This feature was added in Platform update 12. Jobs that were run before to upgrading to Platform update 12 will not display values in this column.
 
 ![Showing batch status](./media/show-batch-status.png)
-
-
-The total records exported column shows the total record count that were exported. If this is 0 then, it means, there were no records exported to the file or in the package (no records in any of the files inside the package). Note that, jobs that were executed prior to upgrading to platform update 12 or beyond will not show any value after upgrading in this column.
-
-The file uploaded successfully shows a tick mark if the file or the package was uploaded successfully by the recurring export job. If the file did not upload due to an error or if the file did not upload because there were zero records (when this option was enabled), the column will have a blank value. Note that, jobs that were executed prior to upgrading to platform update 12 or beyond will not show any value after upgrading in this column.
-
