@@ -98,7 +98,6 @@ Open the System Administration workspace (not module) and click the Data Managem
 In this workspace, on the **Recurring data job** tab, click the recurring job to view more details for. The **Management** page contains a grid that lists any messages that are waiting in the queue. This view helps you monitor messages and processing status. 
 
 [![Management page](./media/image013.jpg)](./media/image013.jpg)
-
 ## Submitting data to recurring data jobs
 ou can use well-known integration REST endpoints to integrate with the client, submit documents (import), or poll available documents for download (export). These endpoints support OAuth.
 
@@ -153,5 +152,5 @@ The batch job status is retrieved asynchronously from the batch framework for th
 
 It must be noted that, if the backing batch history record was deleted, the corresponding status on the data management form will be blank. This is shown in the example below
 
-![Showing batch status](./media/showing batch status.png)]
+![Showing batch status](./media/showing batch status.png)
 
