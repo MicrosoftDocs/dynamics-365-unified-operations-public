@@ -168,14 +168,12 @@ The **Prevent upload when zero records** option can be set when you configure a 
 ### Debugging uploads
 Your implementation may include runs of recurring jobs in which files or packages were uploaded, and runs in which no files or packages are uploaded, because there was nothing to upload. To facilitate debugging in cases when it is suspected that the file was not uploaded when it was supposed to be or vice versa, use the **Manage messages** form for the recurring export job.
 
-The **Total records exported** column shows the total record count that was exported. If it contains a value of 0, then no records were exported to the file or included in the package. 
-
 > [!NOTE]
-> This feature was added in Platform update 12. Jobs that were run before to upgrading to Platform update 12 will not display values in this column.
+> These features were added in Platform update 12. Jobs that were run before to upgrading to Platform update 12 will not display values in the following columns.
+
+The **Total records exported** column shows the total record count that was exported. If it contains a value of 0, then no records were exported to the file or included in the package. 
 
 The **File uploaded successfully** column displays a checkmark if the file or the package was uploaded successfully. If the file did not upload because of an error or because there were zero records, the column will be blank. 
 
-> [!NOTE]
-> This feature was added in Platform update 12. Jobs that were run before to upgrading to Platform update 12 will not display values in this column.
 
 ![Showing batch status](./media/show-batch-status.png)
