@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mobile barcode support
-description: This topic describes how to handle *****.
+description: This topic describes how to handle the Warehouse mobile scanning app on Android-compatible devices.
 author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
