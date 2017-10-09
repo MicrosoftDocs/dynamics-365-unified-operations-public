@@ -100,7 +100,7 @@ In this workspace, on the **Recurring data job** tab, click the recurring job to
 [![Management page](./media/image013.jpg)](./media/image013.jpg)
 
 ## Submitting data to recurring data jobs
-You can use well-known integration REST endpoints to integrate with the client, submit documents (import), or poll available documents for download (export). These endpoints support OAuth.
+ou can use well-known integration REST endpoints to integrate with the client, submit documents (import), or poll available documents for download (export). These endpoints support OAuth.
 
 ## Integration REST APIs
 The following set of APIs is used to exchange data between the integration client and Finance and Operations.
@@ -110,7 +110,7 @@ The following set of APIs is used to exchange data between the integration clien
 Make an HTTP POST call against the following URL.
 
     https://<baseurl>/api/connector/enqueue/<activity id>?entity=<entity name>
-
+[
 In the message body, you can the pass the data as a memory stream. 
 
 **Example**
@@ -153,5 +153,5 @@ The batch job status is retrieved asynchronously from the batch framework for th
 
 It must be noted that, if the backing batch history record was deleted, the corresponding status on the data management form will be blank. This is shown in the example below
 
-[!Recurring-integrations[showing batch status](./media/showing batch status.png)](./media/showing batch status.png)
+![Showing batch status](./media/showing batch status.png)](./media/showing batch status.png)
 
