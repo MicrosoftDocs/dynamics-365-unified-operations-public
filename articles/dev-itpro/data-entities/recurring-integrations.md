@@ -153,5 +153,5 @@ The batch job status is retrieved asynchronously from the batch framework for th
 
 It must be noted that, if the backing batch history record was deleted, the corresponding status on the data management form will be blank. This is shown in the example below
 
-[!include[banner](./media/showing batch status.png)](./media/showing batch status.png)
+[!Recurring-integrations[showing batch status](./media/showing batch status.png)](./media/showing batch status.png)
 
