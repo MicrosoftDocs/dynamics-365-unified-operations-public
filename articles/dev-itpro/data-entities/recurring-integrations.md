@@ -43,11 +43,11 @@ Integration does the following:
 -   It enables the exchange of documents/files between Finance and Operations and any third-party application or service.
 -   It supports several document formats, source mapping, Extensible Stylesheet Language Transformations (XSLT), and filters. 
 
- [![Formats](./media/image001-1024x348.png)](./media/image001.png)
+ ![Formats](./media/image001-1024x348.png)
 
 -   It uses secure REST application programming interfaces (APIs) and authorization mechanisms to receive data from and send data back to integration systems. 
 
- [![REST](./media/image003-1024x431.png)](./media/image003.png)
+ ![REST](./media/image003-1024x431.png)
 
 ## Authorization for the integration REST API
 The integration REST API uses the same OAuth 2.0 authentication model as the other service endpoints. Before the integrating client application can consume this endpoint, you must create an application ID in Microsoft Azure Active Directory (AAD) and give it appropriate permission to Finance and Operations. When you create and enable a recurring job, you'll be prompted to enter the AAD application ID that will be interacting with that recurring job. Therefore, be sure to note down the application ID.
@@ -93,11 +93,11 @@ The integration REST API uses the same OAuth 2.0 authentication model as the oth
 ## Manage recurring data jobs
 Open the System Administration workspace (not module) and click the Data Management IT tile. 
 
-[![Data management workspace](./media/image011_2016-300x292.png)](./media/image011_2016.png) 
+![Data management workspace](./media/image011_2016-300x292.png)
 
 In this workspace, on the **Recurring data job** tab, click the recurring job to view more details for. The **Management** page contains a grid that lists any messages that are waiting in the queue. This view helps you monitor messages and processing status. 
 
-[![Management page](./media/image013.jpg)](./media/image013.jpg)
+![Management page](./media/image013.jpg)
 ## Submitting data to recurring data jobs
 ou can use well-known integration REST endpoints to integrate with the client, submit documents (import), or poll available documents for download (export). These endpoints support OAuth.
 
@@ -109,14 +109,15 @@ The following set of APIs is used to exchange data between the integration clien
 Make an HTTP POST call against the following URL.
 
     https://<baseurl>/api/connector/enqueue/<activity id>?entity=<entity name>
-[
+
 In the message body, you can the pass the data as a memory stream. 
 
 **Example**
 
     POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/enqueue/%7B6D31E09F-0249-459F-94F0-AAD9C2C47B64%7D?entity=Customer%20Groups
 
-To get the activity ID, go to the manage recurring job view, and copy and paste the GUID (highlighted in the following screen shot). [![Manage recurring job](./media/image015.jpg)](./media/image015.jpg)
+To get the activity ID, go to the manage recurring job view, and copy and paste the GUID (highlighted in the following screen shot). 
+![Manage recurring job](./media/image015.jpg)
 
 ### For export (dequeue)
 
@@ -152,19 +153,19 @@ The batch job status is retrieved asynchronously from the batch framework for th
 
 It must be noted that, if the backing batch history record was deleted, the corresponding status on the data management form will be blank. This is shown in the example below
 
-![Showing batch status](../media/showing batch status.png)
+![Showing batch status](./media/show-batch-status.png)
 
 ###Option to not upload file or a package with zero records in recurring exports
 When using recurring exports in Dynamics 365 for Finance and Operations, users can choose to not upload the generated file or the package if the total record count in the file or the package is zero. This helps in certain scenarios when integrations depend on such logic.
 
 The option ‘Prevent upload when zero records’ is available when configuring the recurring export job. Once the recurring job is scheduled, the option is also available to be changed later as well. This option is only available when using file or package data sources.
 
-![Prevent file upload option](../media/Prevent file upload option.png)
+![Prevent file upload option](./media/prevent-file-upload.png)
 
 
 There could be execution runs where files or packages were uploaded and runs where they were not uploaded (because there was nothing to upload). To facilitate debugging in cases when it is suspected that the file was not uploaded when it was supposed to be or vice versa, two new columns have been added to the manage messages form for the recurring export job.
 
-![Showing batch status](../media/showing batch status.png)
+![Showing batch status](./media/show-batch-status.png)
 
 
 The total records exported column shows the total record count that were exported. If this is 0 then, it means, there were no records exported to the file or in the package (no records in any of the files inside the package). Note that, jobs that were executed prior to upgrading to platform update 12 or beyond will not show any value after upgrading in this column.
