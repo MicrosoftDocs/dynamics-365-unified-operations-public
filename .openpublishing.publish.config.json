@@ -43,6 +43,10 @@
     "master": [
       "Publish",
       "Pdf"
+    ],
+      "pu12-pdf": [
+      "Publish",
+      "Pdf"
     ]
   },
   "need_generate_pdf_url_template": true,
