@@ -19,8 +19,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
-# ms.tgt_pltfrm: 
-ms.custom: 107013
+# ms.tgt_pltfrm: ms.custom: 107013
 ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
 ms.search.region: Global
 # ms.search.industry: 
@@ -34,31 +33,26 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include[banner](../includes/banner.md)]
 
-**Note:** Package application causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
+This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to automatically apply updates to a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition environment. Finance and Operations updates are applied using deployable packages.
+
+> [!IMPORTANT]
+> Applying packages causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
 
 ## Supported environments
 
 The following topologies support package deployment that uses automated flows in Microsoft Dynamics Lifecycle Services (LCS):
 
-- **LCS Implementation Project** – All environments are supported, but there are some limitations for build environments. The build environments that actually have a build server installed will only show Platform updates; application deployable packages would still need to be installed manually if you are using a build server as a development machine. Automated package application is self-serve in all environments except production environments. For production environments, customers must use LCS to submit a request to the Service Engineering team to apply packages.
-- **LCS Partner Projects** – Developer only environments (where build servers = 0) and demo environments are supported.
-- **Trial Projects** – Demo environments are supported.
+- **LCS Implementation Project** – All environment types are supported. Automated package application is a self-service operation in all environments except production environments. For production environments, customers must use LCS to submit a request to the Service Engineering team to apply packages.
+- **LCS Partner and Trial Projects** – All environment types are supported, except multi-box dev/test topologies.
 
 For other topologies (below), you must use Remote Desktop Protocol (RDP) to connect to the environment and install from the command line. For information about manual package deployment, see [Install  a deployable package](install-deployable-package.md).
 
 - Local development environments (Downloadable virtual hard disk [VHD])
-- Development/test environments in Microsoft Azure (Partner and trial projects)
-- Build environments in an LCS Implementation project
+- Multi-box dev/test environments in Microsoft Azure (Partner and trial projects)
 
 ## Key concepts
 
-- **Deployable package** – A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Finance and Operations application (AOT) package, or a new Finance and Operations application (AOT) package.
-
-    [![Example of a deployable package](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
-- **Runbook** – The deployment runbook is a series of steps that are generated in order to apply the deployable package to the target environment. Some steps are automated, and some steps are manual. AXUpdateInstaller lets you run these steps one at a time and in the correct order.
-
-    [![Example of a deployment runbook](./media/applypackage_runbook-1024x528.jpg)](./media/applypackage_runbook.jpg)
-- **AXUpdateInstaller** – When you create a customization package from Microsoft Visual Studio or a Microsoft binary update, the installer executable is bundled together with the deployable package. The installer generates the runbook for the specified topology. The installer can also run steps in order, according to the runbook for a specific topology.
+Before you begin, you should understand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Finance and Operations application (AOT) package, or a new Finance and Operations application (AOT) package. The AXInstaller creates a runbook that enables installing a package. For more details, see [Packages, runbooks, and the AXUpdateInstaller in depth](#packages-runbooks-and-the-AXUpdateInstaller-in-depth) at the end of this topic.
 
 ## Supported package types
 
@@ -77,13 +71,13 @@ For other topologies (below), you must use Remote Desktop Protocol (RDP) to conn
     - Platform version checks
     - Types of packages
 
-- **If you're updating a build environment**, see [Prerequisite steps for build environments](#prerequisite-steps-for-build-environments).
 - **Make sure that the package is applied in a sandbox environment before it's applied in the production environment.** To help guarantee that the production environment is always in a good state, we want to make sure that the package is tested in a sandbox environment before it's applied in the production environment. Therefore, before you request that the package be applied in your production environment, make sure that it has been applied in your sandbox environment by using the automated flows.
 - **If you want to apply multiple packages, create a merged package that can be applied first in a sandbox environment and then in the production environment.** Application of a single package in an average environment requires about 5 hours of downtime. To avoid additional hours of downtime when you must apply multiple packages, you can create a single combined package that contains one package of each type. If you select a binary package and an application deployable package in the Asset library, a **Merge** button becomes available on the toolbar. By clicking this button, you can merge the two packages into a single package and therefore reduce the total downtime by half.
 
 ## Apply a package to a non-production environment by using LCS
 
-**Note:** Package application causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
+> [!IMPORTANT]
+> Applying packages causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
 
 Before you begin, verify that the deployable package has been uploaded to the Asset library in LCS.
 
@@ -103,20 +97,6 @@ Before you begin, verify that the deployable package has been uploaded to the As
 
     [![Deployed status](./media/parallelexecutionsandbox_signedoffstate.png)](./media/parallelexecutionsandbox_signedoffstate.png)
 8. To sign off on package application, click **Sign off** if there are no issues. If issues occurred when you applied the package, click **Sign off with issues**.
-
-### Prerequisite steps for build environments
-
-If a build virtual machine (VM) has already been used for one or more builds, before you apply a binary update to the VM, you should use RDP to connect to the VM and restore the metadata packages folder from the metadata backup folder. You should then delete the metadata backup. These steps help guarantee that a platform update will be applied in a clean environment. The next build process will then detect that no metadata backup exists, and a new metadata backup will be created automatically. This new metadata backup will include the updated platform. 
-
-To determine whether a complete metadata backup exists, look for a BackupComplete.txt file in I:\\DynamicsBackup\\Packages (or C:\\DynamicsBackup\\Packages on a downloadable VHD). If this file is present, a metadata backup exists. The file will contain a timestamp that indicates when it was created. To restore the deployment's metadata packages folder from the metadata backup, open an elevated Microsoft Windows PowerShell **Command Prompt** window, and run the following command. This command runs the same script that is used in the first step of the build process.
-
-    if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\DynamicsSDK\PrepareForBuild.ps1 }
-
-**Note:** Run the preceding command only if a complete metadata backup exists. If a complete metadata backup doesn't exist, the command will create a new backup. This command will stop the Finance and Operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder. You should see output that resembles the following example.
-
-*6:17:52 PM: Preparing build environment...* *6:17:53 PM: Updating Dynamics SDK registry key with specified values...* *6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...* *6:17:53 PM: Stopping Finance and Operations deployment...* *6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created**.* *6:18:06 PM: **Restoring metadata packages from backup...*** *6:22:56 PM: **Metadata packages successfully restored from backup**.* *6:22:57 PM: Preparing build environment complete.* *6:22:57 PM: Script completed with exit code: 0*
-
-After the metadata backup has been restored, delete (or rename) the metadata backup folder (DynamicsBackup\\Packages), so that the build process will no longer find it.
 
 ### Troubleshooting
 
@@ -147,9 +127,10 @@ If package application isn't successful, you have two options:
     ![Failed status](./media/parallelexecutionsandbox_failedstate.jpg)
 - Click **Abort** to stop package application.
 
-    **Note:** If you click **Abort**, you don't roll back the changes that have already been made to your environment. To proceed, you must fix the issue.
+> [!Note]
+> If you click **Abort**, you don't roll back the changes that have already been made to your environment. To proceed, you must fix the issue.
     
-    [![Message box that appears when you abort package application](./media/applypackage_sandbox_13-1024x274.png)](./media/applypackage_sandbox_13.png)
+[![Message box that appears when you abort package application](./media/applypackage_sandbox_13-1024x274.png)](./media/applypackage_sandbox_13.png)
 
 ## Apply a package to a production environment by using LCS
 
@@ -168,7 +149,8 @@ In a production environment, unlike in a sandbox environment or other types of e
 7. Select the type of package to apply.
 8. Select the package to apply in your production environment, and then click **Schedule** to submit a request to the Service Engineering team to apply it.
 
-    **Note:** The list of packages includes only the packages that have been successfully signed off in the sandbox environment, and that have been marked as release candidates.
+> [!NOTE]
+> The list of packages includes only the packages that have been successfully signed off in the sandbox environment, and that have been marked as release candidates.
 9. Specify the date and time to schedule package application for, click **Submit**, and then click **OK** to confirm. Note that your environments will be down and unavailable to perform business while the package is being applied.
 10. Refresh the page. Two fields on the page indicate the status of the request.
 
@@ -217,6 +199,20 @@ In a production environment, unlike in a sandbox environment or other types of e
 ## Deploying packages in Retail environments
 
 If you're using Microsoft Dynamics 365 for Retail components (such as Retail Modern POS), after you've applied a deployable package in your environment, you must also update your in-store components. For more information, see [Retail Modern POS installation and updates](../../retail/retail-modern-pos-device-activation.md).
+
+## Packages, runbooks, and the AXUpdateInstaller in depth
+
+Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use to apply updates. 
+
+**Deployable package** – A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Finance and Operations application (AOT) package, or a new Finance and Operations application (AOT) package.
+
+[![Example of a deployable package](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
+
+**Runbook** – The deployment runbook is a series of steps that are generated in order to apply the deployable package to the target environment. Some steps are automated, and some steps are manual. AXUpdateInstaller lets you run these steps one at a time and in the correct order.
+
+[![Example of a deployment runbook](./media/applypackage_runbook-1024x528.jpg)](./media/applypackage_runbook.jpg)
+
+**AXUpdateInstaller** – When you create a customization package from Microsoft Visual Studio or a Microsoft binary update, the installer executable is bundled together with the deployable package. The installer generates the runbook for the specified topology. The installer can also run steps in order, according to the runbook for a specific topology.
 
 ## See also
 
