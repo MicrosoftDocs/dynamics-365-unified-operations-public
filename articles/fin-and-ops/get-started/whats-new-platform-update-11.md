@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 11. This version was released in October 2017.
 author: tonyafehr
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -55,6 +55,13 @@ also support full export, which is typically used for initial data population.
 Incremental operation propagates insert and update operations to the destination
 database. With this addition, BYOD incremental refresh operations delete records
 in the destination database if corresponding records are deleted in source.
+
+## Cloud and Edge elements 
+The metadata properties, **Operational domain** and **Subscriber access level** have been added for tables, views, data entities, menu items, and service operations. The new metadata properties are needed to support [Cloud and Edge deployments](https://community.dynamics.com/b/msftdynamicsblog/archive/2017/02/23/the-right-cloud-option-for-your-business), and are visible in Microsoft Visual Studio. 
+
+Additionally, three tables, **Deployment**, **DeploymentAccessibleCompany**, and **NumberSequenceDeployments** have been added, for the same purpose. 
+
+At this time, you are not required to uptake the new properties and tables.
 
 ## Copy legal entity configurations to a new legal entity
 
