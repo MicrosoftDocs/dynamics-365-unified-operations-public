@@ -91,15 +91,17 @@ The integration REST API uses the same OAuth 2.0 authentication model as the oth
 7.  Click **OK**, and then click **Yes** in the confirmation dialog box.
 
 ## Manage recurring data jobs
-Open the System Administration workspace (not module) and click the Data Management IT tile. 
+1. In the **System Administration** workspace (not module), click the **Data Management IT** tile. 
 
-![Data management workspace](./media/image011_2016-300x292.png)
+ ![Data management workspace](./media/image011_2016-300x292.png)
 
-In this workspace, on the **Recurring data job** tab, click the recurring job to view more details for. The **Management** page contains a grid that lists any messages that are waiting in the queue. This view helps you monitor messages and processing status. 
+2. In this workspace, on the **Recurring data job** tab, click the recurring job to view details. The **Management** page contains a grid that lists any messages that are waiting in the queue. This view helps you monitor messages and processing status. 
 
 ![Management page](./media/image013.jpg)
+
 ## Submitting data to recurring data jobs
-ou can use well-known integration REST endpoints to integrate with the client, submit documents (import), or poll available documents for download (export). These endpoints support OAuth.
+
+You can use integration REST endpoints to integrate with the client, submit documents (import), or poll available documents for download (export). These endpoints support OAuth.
 
 ## Integration REST APIs
 The following set of APIs is used to exchange data between the integration client and Finance and Operations.
