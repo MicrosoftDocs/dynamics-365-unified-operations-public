@@ -1098,7 +1098,7 @@
 #### [Distribute and complete a questionnaire](../talent/distribute-questionnaires.md)
 #### [Evaluate the results of a questionnaire](../talent/evaluate-questionnaire-results.md)
 
-### Workplace safety and compliance (United States.md)
+### Workplace safety and compliance (United States)
 #### [Form I-9 employment verification](hr/localizations/noam-usa-form-i-9-verification.md)
 #### [Employment verification using form I-9](hr/localizations/tasks/employment-verification-i9-verification.md)
 #### [Set up I-9 document types](hr/localizations/tasks/set-up-i9-document-types.md)
