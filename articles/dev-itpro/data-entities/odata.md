@@ -124,6 +124,6 @@ OData sits on the same authentication stack as the server. For more information 
 ##Tips & Ticks
 
 
-
+![1\_Odata](./media/1_odata.png)
 
 
