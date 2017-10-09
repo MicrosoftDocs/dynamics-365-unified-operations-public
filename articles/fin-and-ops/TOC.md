@@ -1818,6 +1818,7 @@
 #### [Unit of measure and stocking policies](../supply-chain/warehousing/unit-measure-stocking-policies.md)
 #### [Warehouse Power BI content](../dev-itpro/analytics/warehouse-power-bi-content.md)
 #### [System grouping on an open work list](../supply-chain/warehousing/system-group-on-open-work-list.md)
+#### [Mobile barcode support](../supply-chain/warehousing/mobile-barcode-support.md)
 ### [Warehouse work policies](../supply-chain/warehousing/warehouse-work-policies.md)
 #### [Movement of inventory with associated work in Warehouse management](../supply-chain/warehousing/move-inventory-associated-work.md)
 #### [Manage warehouse workers](../supply-chain/warehousing/manage-warehouse-workers.md)
