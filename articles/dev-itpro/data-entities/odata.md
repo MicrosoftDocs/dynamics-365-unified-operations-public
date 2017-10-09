@@ -74,7 +74,8 @@ OData entities are based on the concept of an updatable view. When the **IsPubli
 ## Setting navigation properties between OData entities
 Links between OData entities are described by a navigation property. Navigation properties describe the navigation from one end of an association to the other end.
 
-## Adding actions on OData entities
+
+#### Adding actions on OData entities
 Actions provide a way to inject behaviors into the data model. To add actions, add a method to the updatable view, and decorate that method with specific attributes. Here is an example.
 
     [SysODataActionAttribute("CalcMaintenanceDuration", true)]
@@ -119,6 +120,9 @@ The OData protocol supports many similar filtering and querying options on entit
 
 ## Authentication
 OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints](services-home-page.md).
+
+##Tips & Ticks
+
 
 
 
