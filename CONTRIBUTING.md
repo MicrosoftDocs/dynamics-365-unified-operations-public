@@ -1,7 +1,12 @@
-# Contributing to Finance and Operations documentation
-Welcome! Thank you for your interest in contributing to Microsoft Dynamics 365 for Finance and Operations documentation.
+# Contributing to this documentation
+Welcome! Thank you for your interest in contributing to Microsoft Dynamics 365 documentation. 
 
-In this topic you'll find the basic process for adding or updating content that is published on the [Finance and Operations documentation site](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops). 
+In this topic you'll find the basic process for adding or updating content for:
+- Dynamics 365 for Finance and Operations
+- Dynamics 365 for Retail
+- Dynamics 365 for Talent
+
+This documentation is published [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/index).
 
 ## Table of contents 
 
@@ -29,19 +34,29 @@ The GitHub UI supports the creation of new files and dragging and dropping image
 * [Upload files to your repositories](https://github.com/blog/2105-upload-files-to-your-repositories)
 
 ## Ways to contribute
-You can submit updates to the [Finance and Operations documentation site](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops) as follows:
+In this topic you'll find the basic process for adding or updating content for:
+- Dynamics 365 for Finance and Operations
+- Dynamics 365 for Retail
+- Dynamics 365 for Talent
 
-* **Minor changes** - You can easily contribute to technical content in the GitHub user interface by clicking the **Edit** button in the topic that you want to modify on the [Finance and Operations documentation site](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops).
+You can submit minor changes or larger submissions as follows:
+
+* **Minor changes** - You can easily contribute minor updates by clicking the **Edit** button in the topic that you want to modify.
+
 * **Larger submissions** - If you're making substantial changes to an existing topic, adding or changing images, or contributing a new topic, you need to fork the **MicrosoftDocs/Dynamics-365-Operations** repository, use GitHub or install your favorite Markdown editor, and learn some Git commands.
 
 ### Minor changes
 If you only need to make textual updates to an existing topic, you can use GitHub's web-based Markdown editor to submit your changes. 
 
-1. On the [Finance and Operations documentation site](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops), click the **Edit** button in the topic that you want to modify.
+1. Click **Edit** in the topic that you want to modify. The GitHub version of the topic will open.
 
-2. Click the edit (pencil) icon in the GitHub version of the topic.
+2. Click the edit (pencil) icon. 
 
- This opens the GitHub web editor that makes it easy to submit changes.
+3. Edit the topic, as needed using Markdown.
+
+4. Click the **Propose file change** button.
+
+5. Click the **Create pull request** button to submit your changes.
  
 Minor corrections or clarifications that you submit are covered by the [docs.microsoft.com Terms of Use](https://docs.microsoft.com/legal/termsofuse).
 
