@@ -82,6 +82,7 @@ The integration REST API uses the same OAuth 2.0 authentication model as the oth
 
  [![Processing recurrent](./media/image007-11_16.png)](./media/image007-11_16.png)
 
+
 6.  Optional: Click **Set monitoring recurrence**, and provide a monitoring recurrence. 
 
  > [!NOTE]
@@ -142,3 +143,15 @@ Use the API.
 **Example**
 
     POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
+    
+##Tips & Tricks
+
+###Viewing batch status from data management for recurring integrations
+Recurring integration data jobs run in batch mode. At times when the recurring jobs fail, troubleshooting the failure also involves investigating the batch job instance. To make this investigation easier, the ‘manage messages’ form for a recurring data job now shows the batch job status as well.
+
+The batch job status is retrieved asynchronously from the batch framework for the identified recurring data job. The user must click ‘Get batch status’ to start the retrieval of batch status. The batch status on the form will get updated on clicking the form refresh after the status was retrieved.
+
+It must be noted that, if the backing batch history record was deleted, the corresponding status on the data management form will be blank. This is shown in the example below
+
+[!include[banner](../includes/banner.md)]
+
