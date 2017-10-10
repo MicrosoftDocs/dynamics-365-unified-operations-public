@@ -45,14 +45,23 @@ This topic describes how to subscribe to the preview/partner offer and deploy an
 
 ## Key terms
 -   **Microsoft Online Services tenant** – A tenant is the group of all subscriptions and users for your organization. The tenant is created at the same time as your first subscription in Microsoft Online Services.
+
 -   **Subscription** – A subscription provides you with an online, cloud environment and experience. It also lets you see how customizations that you develop can be deployed to the cloud.
+
 -   **Microsoft Azure Active Directory** – The cloud environment includes Azure Active Directory (AD), which helps you manage users, groups, security roles, and licenses for online applications, similarly to the way that you manage them for on-premise environments.
+
 -   **Users** – Users of the services that your organization has subscribed to are managed in Azure AD. Any users in your tenant can be added and assigned to security roles.
+
 -   **Developers and administrators** – Developers and administrators are users who also have access to Lifecycle Services that lets them manage projects and environments. These users are also end users.
+
 -   **Organizational account** – Users receive Azure AD credentials, which are separate from other desktop or corporate credentials. The Azure AD credentials are used to sign in to Microsoft Office 365 and other Microsoft cloud services. Users sign in by using their organizational account. 
+
         **Important:** For this release, we ask that you not use any existing credentials that are associated with other online services, such as Office 365 or Microsoft Dynamics CRM Online.
+        
 -   **Microsoft account** – Microsoft accounts, which were formerly known as Passport accounts or Windows Live ID accounts, can't currently be used with Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, or other Microsoft Online Services. However, Microsoft accounts are still required for Microsoft Connect and other Microsoft Business Solutions sites, such as CustomerSource, PartnerSource, Information Source, and Microsoft Dynamics Community. You will continue to use your Microsoft account to access these services.
+
 -   **Office 365 admin center** – The subscription management portal that Office 365 provides for administrators. The Office 365 admin center is used to provide user and subscription management functions.
+
 -   **Environments** – You can deploy as many single virtual machine (VM) instances as you require. We call these instances *environments*.
 
 ## Prerequisites
