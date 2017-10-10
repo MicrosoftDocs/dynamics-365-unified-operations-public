@@ -60,8 +60,12 @@ Additional fields are added to receipt totals, in order to exclude non-sales tra
 - Deposits
 - Prepayments
 
-### Register additional events in POS Transaction journal
-The following events should be registered in the POS transaction journal/POS Fiscal event log: price look-up; tax overrides; qty corrections; clearing the transactions from the channel database. This information is also available in the exported journal and/or X/Z-reports.
+### POS Transaction journal
+The following events are registered in the POS transaction journal/POS Fiscal event log: 
+- Price look-up
+- Tax overrides
+- Quantity corrections
+- Clearing the transactions from the channel database. This information is also included in the exported journal and/or X/Z-reports.
 
 ### X and Z reports
 X and Z reports now include more information than the core retail documents. For example, the name and organization number of the enterprise as well as the number of price look-ups specified by product group and amount are both included in the reports.
@@ -71,13 +75,13 @@ Each sales transaction should  be digitally signed. The signature should be reco
 
 ### SAF-T Cash register audit file
 You can export the POS transaction journal in the predefined SAF-T (Standard Audit File - Tax) Cash register format. This audit file can be exported for the following scenarios:
-- per company
-- one store
-- all stores
-- one terminal
-- all terminals
+- Per company
+- Per store
+- All stores
+- Per terminal
+- All terminals
 
-The SAF-T cash register format must be implemented at HQ using Electronic reporting. The format configuration is available to download from Lifecycle Services. For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+The SAF-T cash register format must be implemented at Retail HQ using Electronic reporting. The format configuration is available to download from Lifecycle Services. For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
 ## Setting up Retail for Norway
 
