@@ -1305,7 +1305,7 @@
 
 
 ## Inventory management
-### Inbound process
+### [Inbound process](../supply-chain/inventory/arrival-overview.md)
 #### [Arrival overview](../supply-chain/inventory/arrival-overview.md)
 #### [Set up an item arrival overview profile (Task guide)](../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md)
 ### [Outbound process](../supply-chain/inventory/outbound-process.md)
@@ -1332,23 +1332,23 @@
 #### [Change the ownership of consignment inventory based on production demand (Task guide)](../supply-chain/inventory/tasks/change-ownership-consignment.md)
 #### [Create a consignment replenishment order (Task guide)](../supply-chain/inventory/tasks/create-consignment-replenishment-order.md)
 #### [Monitor consignment inventory using vendor collaboration (Task guide)](../supply-chain/inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
-### Quality management
-#### [Inventory on-hand mobile workspace](../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)
-#### [Enable quality management](../supply-chain/inventory/enable-quality-management.md)
-#### [Inventory blocking](../supply-chain/inventory/inventory-blocking.md)
-#### [Nonconformance management](../supply-chain/inventory/enable-nonconformance-management.md)
-#### [Quarantine order](../supply-chain/inventory/quarantine-orders.md)
+### [Quality management](../supply-chain/inventory/quality-management-processes.md)
 #### [Quality management process](../supply-chain/inventory/quality-management-processes.md)
+#### [Enable quality management](../supply-chain/inventory/enable-quality-management.md)
+#### [Nonconformance management](../supply-chain/inventory/enable-nonconformance-management.md)
 #### [Create and process a conformance (Task guide)](../supply-chain/inventory/tasks/create-process-non-conformance.md)
-#### [Inspect the quality of goods (Task guide)](../supply-chain/inventory/tasks/inspect-quality-goods.md)
-#### [Set up prerequisites for management (Task guide)](../supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management.md)
+#### [Quarantine order](../supply-chain/inventory/quarantine-orders.md)
 #### [Set up quality orders (Task guide)](../supply-chain/inventory/tasks/set-up-quality-orders.md)
+#### [Inspect the quality of goods (Task guide)](../supply-chain/inventory/tasks/inspect-quality-goods.md)
+#### [Inventory blocking](../supply-chain/inventory/inventory-blocking.md)
+#### [Set up prerequisites for management (Task guide)](../supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management.md)
 ### Item tracking dimensions
 #### [Correct inventory tracking information (Task guide)](../supply-chain/inventory/tasks/correct-inventory-tracking-information.md)
 #### [Merge inventory batch](../supply-chain/inventory/merge-inventory-batches.md)
 #### [Trace item and raw material](../supply-chain/inventory/trace-items-raw-materials-inventory-production-sales.md)
 #### [Register serial number in the sales process](../supply-chain/sales-marketing/register-serial-numbers-sales-process.md)
 #### [Trace an item or raw material (Task guide)](../supply-chain/inventory/tasks/trace-item-or-raw-material.md)
+#### [Inventory on-hand mobile workspace](../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)
 
 
 ## Master planning
