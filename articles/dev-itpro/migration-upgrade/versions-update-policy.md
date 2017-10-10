@@ -94,6 +94,8 @@ For information about the new features included in each release, click the links
 |  Dynamics 365 for Finance and Operations, Enterprise edition | Application update 2: [KB 4039142Application Update 2 for Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4039142&bugId=3850590&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df), [KB 4039487Application Update 2 for Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4039487&bugId=3850591&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df) | 7.2.11792.62192 | September 2017     | 
 |  Dynamics 365 for Finance and Operations, Enterprise edition | Application update 1: [KB 4035749Application Update 1 for Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4035749&bugId=3845890&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df), [KB 4035751Application Update 1 for Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4035751&bugId=3845891&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df) | 7.2.11792.62089 | July 2017     | 
 
+\* The link points to a Knowledge Base (KB) article. You must log in to Lifecycle Services (LCS) to view the KB article.
+
 ### Table 3: Platform releases
 
 For information about the new features included in each release, click the links in the **Release** column.
