@@ -97,6 +97,8 @@ To use Lifecycle services to manage your environments, you need to create a new 
     
 6.  Enter the project information and then click **Create**.
 
+      If you plan to evaluate Dynamics 365 for Retail, in the **Product name** list, be sure to select **Microsoft Dynamics 365 for Retail**.
+
     [![3](./media/31.jpg)](./media/31.jpg)The new project for managing your instance is now created.
 
     ![ProjectWorkspace](./media/projectworkspace.jpg)
