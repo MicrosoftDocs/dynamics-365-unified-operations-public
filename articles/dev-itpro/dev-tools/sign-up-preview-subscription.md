@@ -5,10 +5,10 @@ title: Sign up for a preview subscription
 description: This topics describes how to subscribe to the preview/partner offer and deploy an environment.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,15 +18,15 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 13211
 ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2016-02-28, 2017-09-31  
+ms.dyn365.ops.version: AX 7.0.0, Application update 3 
 
 ---
 
@@ -49,7 +49,8 @@ This topic describes how to subscribe to the preview/partner offer and deploy an
 -   **Microsoft Azure Active Directory** – The cloud environment includes Azure Active Directory (AD), which helps you manage users, groups, security roles, and licenses for online applications, similarly to the way that you manage them for on-premise environments.
 -   **Users** – Users of the services that your organization has subscribed to are managed in Azure AD. Any users in your tenant can be added and assigned to security roles.
 -   **Developers and administrators** – Developers and administrators are users who also have access to Lifecycle Services that lets them manage projects and environments. These users are also end users.
--   **Organizational account** – Users receive Azure AD credentials, which are separate from other desktop or corporate credentials. The Azure AD credentials are used to sign in to Microsoft Office 365 and other Microsoft cloud services. Users sign in by using their organizational account. **Important:** For this release, we ask that you not use any existing credentials that are associated with other online services, such as Office 365 or Microsoft Dynamics CRM Online.
+-   **Organizational account** – Users receive Azure AD credentials, which are separate from other desktop or corporate credentials. The Azure AD credentials are used to sign in to Microsoft Office 365 and other Microsoft cloud services. Users sign in by using their organizational account. 
+        **Important:** For this release, we ask that you not use any existing credentials that are associated with other online services, such as Office 365 or Microsoft Dynamics CRM Online.
 -   **Microsoft account** – Microsoft accounts, which were formerly known as Passport accounts or Windows Live ID accounts, can't currently be used with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition or other Microsoft Online Services. However, Microsoft accounts are still required for Microsoft Connect and other Microsoft Business Solutions sites, such as CustomerSource, PartnerSource, Lifecycle Services, Information Source, and Microsoft Dynamics Community. You will continue to use your Microsoft account to access these services.
 -   **Office 365 admin center** – The subscription management portal that Office 365 provides for administrators. The Office 365 admin center is used to provide user and subscription management functions.
 -   **Environments** – You can deploy as many single virtual machine (VM) instances as you require. We call these instances *environments*.
