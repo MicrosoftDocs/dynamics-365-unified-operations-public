@@ -122,11 +122,14 @@ The OData protocol supports many similar filtering and querying options on entit
 ## Authentication
 OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints](services-home-page.md).
 
-##Tips & Ticks
+## Tips & Ticks
 
-###Running multiple requests in a single transaction:
-OData $batch framework has a concept called changeset. Each changeset can contain a list of requests which are to be treated as single atomic unit. Meaning, either all the requests are executed successfully or none, should any of the requests fail. OData service in D365FO does support this feature. To send a batch request with a list of requests in a single changeset, using OData client, see the following sample code. Note the use of the option SaveChangesOptions.BatchWithSingleChangeset in SaveChanges(). This ensures that all the requests are bundled in a single changeset. 
-public static void CreateProductColors(Resources context)
+### Running multiple requests in a single transaction
+The OData batch framework uses *changesets*. Each changeset contains a list of requests that are to be treated as single atomic unit. This means that either all of the requests are executed successfully or none are, if any of the requests fail. The following sample code describes how to send a batch request with a list of requests in a single changeset. 
+
+The use of the option SaveChangesOptions.BatchWithSingleChangeset in SaveChanges() ensures that all requests are bundled in a single changeset. 
+
+    '''public static void CreateProductColors(Resources context)
         {
             var productColorsCollection = new DataServiceCollection<ProductColor>(context);
 
@@ -140,12 +143,13 @@ public static void CreateProductColors(Resources context)
 
             context.SaveChanges(SaveChangesOptions.BatchWithSingleChangeset);
         }
+    '''
 
-###How to prevent a POST to unset records using OData client:
-When creating a new record using OData client, like shown in the code snippet below, properties that are not set are also included in the request body with default values assigned to them. To avoid this and to post only properties that are set explicitly use SaveChangesOptions.PostOnlySetProperties option in SaveChanges().
-Eg: context.SaveChanges(SaveChangesOptions.PostOnlySetProperties);
+### How to prevent a POST to unset records using OData client
+When you create a new record using the OData client, properties that are not set are also included in the request body with default values assigned to them. To avoid this and to post only properties that are set explicitly, use the SaveChangesOptions.PostOnlySetProperties option in SaveChanges().
 
-public static void CreateVendor(Resources context)
+    ''' 
+    public static void CreateVendor(Resources context)
         {
             var vendorCollection = new DataServiceCollection<Vendor>(context);
             var vendor = new Vendor();
@@ -157,6 +161,4 @@ public static void CreateVendor(Resources context)
             // Save specifying PostOnlySetProperties flag
             context.SaveChanges();
         }
-
-
-
+    '''
