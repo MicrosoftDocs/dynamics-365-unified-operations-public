@@ -69,5 +69,5 @@ To log on to your demo environment, do the following.
 
 1. In LCS, open the **Cloud-hosted environments** page, and select the demo environment that you just deployed.
 2. Scroll to the right and in the **Environment details** pane, under **Cloud services**, click the appropriate link:
-  - **Log on to Finance and Operations**
-  - **Log on to Retail**
+      - **Log on to Finance and Operations**
+      - **Log on to Retail**
