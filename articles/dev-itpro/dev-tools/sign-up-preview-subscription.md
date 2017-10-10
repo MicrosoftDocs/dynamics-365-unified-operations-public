@@ -87,7 +87,7 @@ To use Lifecycle services to manage your environments, you need to create a new 
 1.  Go to <https://lcs.dynamics.com/Logon/Index>
 2.  Click **Sign in**.
 3.  **Login** with the account you used to subscribe.
-4.  Click the **+ **icon to create a new project. 
+4.  Click the plus icon (+) to create a new project. 
 
     [![1](./media/11-1024x473.jpg)](./media/11.jpg)
     
