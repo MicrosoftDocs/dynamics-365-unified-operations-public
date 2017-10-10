@@ -58,6 +58,26 @@ The following learning map shows the major concepts and tasks that make up the f
 
 
 
+## Additional resources
 
+### What's new and in development
+
+Go to the Microsoft Dynamics 365 Roadmap to see what new features have been released and what new features are in development.
+
+### Blogs
+
+You can find opinions, news, and other information about Accounts payable and other solutions on the Microsoft Dynamics 365 blog.
+
+There are many posts about General ledger on the Microsoft Dynamics AX product team blog. Although some of these posts were written for the previous version of General ledger, the same concepts still apply, and the procedures are also similar in the current version.
+
+The Microsoft Dynamics Operations Partner Community Blog gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
+
+### Task guides
+
+Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.
+
+### Videos
+
+Check out the how-to videos that are now available on the Microsoft Dynamics 365 YouTube Channel.
 
 
