@@ -154,7 +154,7 @@ Here are some important rules:
 - Because logical expressions are optimized, calls to **next** can't occur in logical expressions. At runtime, the execution of the complete expression isn't guaranteed.
 
 > [!NOTE]
-> The author of the original implementation of a method can explicitly allow wrapper methods to skip calling next. If the method you are wrapping is tagged with the [Replaceable] attribute, an extension class can wrap this method without calling the **next** keyword. Replaceable methods are methods that implement logic that can safely to be "replaced" by custom implementation. This functionality is available as of platform update 11. 
+> The author of the original implementation of a method can explicitly allow wrapper methods to skip calling next. If the method you are wrapping is tagged with the [Replaceable] attribute, an extension class can wrap this method without calling the **next** keyword. Replaceable methods are methods that implement logic that can safely be "replaced" by custom implementation. This functionality is available with the release of Platform Update 11. 
 
 ### Wrapping a base method in an extension of a derived class
 The following example shows how to wrap a base method in an extension of a derived class. For this example, the following class hierarchy is used.
