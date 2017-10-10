@@ -5,7 +5,7 @@ title: Personalize the user experience
 description: This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 10/06/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,7 +41,7 @@ There are many types of personalizations in Microsoft Dynamics 365 for Finance a
 
 All personalizations, of any type, that a user makes in Finance and Operations are for that user only, regardless of the company that the user interacts with. Changes that a user makes to a page don't affect other users in the system.
 
-## Systemwide options for the current user
+## System-wide options for the current user
 In the Navigation bar you'll find a gear image that is called the **Settings** menu button. Opening the **Settings** menu will show a number of choices. Selecting **Options** will open the user **Options** page. There you'll find four option tabs: 
 
 -   **Visual** - Use to choose a color theme and the default size of the elements on your pages.
@@ -54,9 +54,9 @@ Implicit personalizations are those personalizations that you perform simply by 
 
 **Grid columns** - You can adjust the width of a column in a list by selecting the sizing bar to the left or right of the column header and sliding it left or right to the desired width. Finance and Operations will store the width that you'd like and show that column with that width every time you open the page with that list. 
 
-**FastTabs** - Some pages have expandable sections called FastTabs. Finance and Operations will store which FastTabs you have expanded, and which FastTabs you have collapsed. Each time you return to the page, those same FastTabs will be expanded or collapsed based on the last time you used them. In this article, we'll explain how to change the order of your FastTab sections. In some cases, collapsing a FastTab may improve performance because Finance and Operations will not need to retrieve the information for that FastTab until the FastTab is expanded. 
+**FastTabs** - Some pages have expandable sections called *FastTabs*. Finance and Operations will store which FastTabs you have expanded, and which FastTabs you have collapsed. Each time you return to the page, those same FastTabs will be expanded or collapsed based on the last time you used them. In this article, we'll explain how to change the order of your FastTab sections. In some cases, collapsing a FastTab may improve performance because Finance and Operations will not need to retrieve the information for that FastTab until the FastTab is expanded. 
 
-**Fact Boxes** - Some pages have a section called a Fact Box pane. This pane contains read-only information related to the current subject of the page. Each section in the Fact Box Pane is called a Fact Box. You can expand or collapse a Fact Box and Finance and Operations will store your preference. In some cases, collapsing a Fact Box may improve performance because Finance and Operations will not need to retrieve the information for that Fact Box until the Fact Box is expanded.
+**Fact Boxes** - Some pages have a section called a *Fact Box* pane. This pane contains read-only information related to the current subject of the page. Each section in the Fact Box Pane is called a Fact Box. You can expand or collapse a Fact Box and Finance and Operations will store your preference. In some cases, collapsing a Fact Box may improve performance because Finance and Operations will not need to retrieve the information for that Fact Box until the Fact Box is expanded.
 
 ## Explicit personalizations using the Personalization toolbar
 Every person and company has a different perspective on which data is most important to them, or which data isn’t needed for the way they run their business. The ability to tailor the way your information is ordered, interacted with, or even hidden is key to making Finance and Operations a personal and productive experience. 
@@ -67,29 +67,33 @@ Explicit personalizations are those personalizations that you perform explicitly
 
 You’ll personalize an element on your page in this manner if you simply want to change the element's label, hide the element so that it isn’t shown on the page (this doesn’t change any data, it simply doesn’t show you the information), include the information in the FastTab summary section (if the element is in a FastTab), skip the field when tabbing, or make it so that data cannot be changed by marking it as “Don’t Edit." 
 
-When you want to move or hide elements or make several changes, you can use the Personalization toolbar, available from the elements Property window by choosing **Personalize this form**. The Personalization toolbar is also available on the form's Action pane, under the Personalize group of the **Options** tab. Select **Personalize this form** and you'll see the Personalization toolbar. 
+When you want to move or hide elements or make several changes, you can use the Personalization toolbar, available from the elements Property window by choosing **Personalize this form**. The Personalization toolbar is also available on the form's Action pane, under the **Personalize** group of the **Options** tab. Select **Personalize this form** and you'll see the Personalization toolbar. 
 
 [![Personalization toolbar](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-The Personalization toolbar has a number of personalization actions. Choose the **Select** tool when you want to select and change the properties of many elements, one at a time. First, click the Select tool, and then click the element whose properties that you want to modify. When you select an element, the element's property window will open and you can modify any of the properties for that element. You can repeat the process for other elements on your form that are personalizable. In some cases, you'll select an element and see that some of the properties are not modifiable. This means that based on the way the current element is used, Finance and Operations cannot let you change that property. For example, you cannot hide a field that is required. 
+The Personalization toolbar has a number of personalization actions. 
 
-Choose the **Move** tool when you want to select and move an element to a different location within the current group of elements. (You cannot move an element outside of its parent group). First, click the Move tool and then click the element that you want to move. When you click the element that you want to move, Finance and Operations will scan the form to understand where this element can be moved and create a series of "drop zones" that show as a colored, bold line next to the area where the element can be dropped as you drag the element around within the current group. 
+- Choose the **Select** tool when you want to select and change the properties of many elements, one at a time. First, click the Select tool, and then click the element whose properties that you want to modify. When you select an element, the element's property window will open and you can modify any of the properties for that element. You can repeat the process for other elements on your form that are personalizable. In some cases, you'll select an element and see that some of the properties are not modifiable. This means that based on the way the current element is used, Finance and Operations cannot let you change that property. For example, you cannot hide a field that is required. 
 
-Choose the **Hide** tool to select and hide an element. To hide an element, simply choose the Hide tool and click the element that you'd like to hide. When you choose the Hide tool, all currently hidden elements will be made visible and shown in a shaded container so that you can choose the element to unhide it. Choose the Select tool to see how he page will look with the selected elements hidden. Choose the **Summary** tool when you want a numeric or string field to show in the FastTab summary area. The Summary tool will only apply to fields that are contained within a FastTab section. When you choose the Summary tool, Finance and Operations will show all fields that have been selected as summary fields by enclosing them in a shaded container. You can interactively add and remove fields from a FastTab summary by clicking the field. 
+- Choose the **Move** tool when you want to select and move an element to a different location within the current group of elements. (You cannot move an element outside of its parent group). First, click the Move tool and then click the element that you want to move. When you click the element that you want to move, Finance and Operations will scan the form to understand where this element can be moved and create a series of "drop zones" that show as a colored, bold line next to the area where the element can be dropped as you drag the element around within the current group. 
 
-Choose the **Skip** tool to remove an element from the page's keyboard tab sequence. When you choose the Skip tool, all currently skipped elements will be shown in a shaded container so that you can choose them again to make them part of the tab sequence by selecting a skipped element. 
+- Choose the **Hide** tool to select and hide an element. To hide an element, simply choose the Hide tool and click the element that you'd like to hide. When you choose the Hide tool, all currently hidden elements will be made visible and shown in a shaded container so that you can choose the element to unhide it. Choose the Select tool to see how he page will look with the selected elements hidden. 
 
-Choose the **Edit** tool when you want to mark an element as Editable or Not Editable. When you choose the Edit tool, all currently non-editable elements will be shown in a shaded container so that you can choose them to make them editable. Note, some fields are required and cannot be made non-editable. Those fields will appear with a padlock icon next to them. 
+- Choose the **Summary** tool when you want a numeric or string field to show in the FastTab summary area. The Summary tool will only apply to fields that are contained within a FastTab section. When you choose the Summary tool, Finance and Operations will show all fields that have been selected as summary fields by enclosing them in a shaded container. You can interactively add and remove fields from a FastTab summary by clicking the field. 
 
-Choose the **Add** tool to add a field to your page. With the add tool, you cannot create a new field, but you can add fields that are part of the current page definition, but not shown on the page. When you choose the Add tool, you'll first need to select the group or area where you'd like to add a field. A dialog box will display the list of fields related to the section that you've selected. From that dialog box, you can select one or more fields to add and click Insert. If you later want to remove a field that you've previously added, repeat the process, but simply clear the field that you previously added. 
+- Choose the **Skip** tool to remove an element from the page's keyboard tab sequence. When you choose the Skip tool, all currently skipped elements will be shown in a shaded container so that you can choose them again to make them part of the tab sequence by selecting a skipped element. 
 
-Choose the **Manage** button to see a list of management options related to all personalizations for the current page. 
+- Choose the **Edit** tool when you want to mark an element as *Editable* or *Not Editable*. When you choose the Edit tool, all currently non-editable elements will be shown in a shaded container so that you can choose them to make them editable. Note, some fields are required and cannot be made non-editable. Those fields will appear with a padlock icon next to them. 
 
-Choose **Clear** to reset the page to its default, installed state. All personalizations on the current page will be cleared. There is no undo action, so only use this option when you are certain that you want to reset your page. 
+- Choose the **Add** tool to add a field to your page. With the add tool, you cannot create a new field, but you can add fields that are part of the current page definition, but not shown on the page. When you choose the Add tool, you'll first need to select the group or area where you'd like to add a field. A dialog box will display the list of fields related to the section that you've selected. From that dialog box, you can select one or more fields to add and click **Insert**. If you later want to remove a field that you've previously added, repeat the process, but simply clear the field that you previously added. 
 
-Choose **Import** to use a personalization from a personalization file that you or someone else previously created for this page. Importing a personalization will clear any personalizations that you've performed on the entire page and instead use all of the personalizations from the selected file. If you want to save or share a personalization, then you'll select the **Export** option to save the personalizations to a file. 
+- Choose the **Manage** button to see a list of management options related to all personalizations for the current page. 
 
-Choose the **Close** button to close the toolbar and return the page to it's previously interactive state. 
+- Choose **Clear** to reset the page to its default, installed state. All personalizations on the current page will be cleared. There is no undo action, so only use this option when you are certain that you want to reset your page. 
+
+- Choose **Import** to use a personalization from a personalization file that you or someone else previously created for this page. Importing a personalization will clear any personalizations that you've performed on the entire page and instead use all of the personalizations from the selected file. If you want to save or share a personalization, then you'll select the **Export** option to save the personalizations to a file. 
+
+- Choose the **Close** button to close the toolbar and return the page to it's previously interactive state. 
 
 With the Personalization toolbar, saving is implicit. Your personalizations take effect immediately as you make them and there is no need to click a **Save** button. In some cases, you'll see a padlock icon next to an element when you select a tool. This means that in order for the page to work as correctly, you cannot modify the properties related to the selected tool. When the Personalization toolbar is opened, the page becomes non-interactive. You cannot enter data or expand or collapse sections.
 
