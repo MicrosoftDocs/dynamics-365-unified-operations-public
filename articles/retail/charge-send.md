@@ -28,6 +28,8 @@ ms.author: asharchw
 ms.search.validFrom: 2017-10-10
 ms.dyn365.ops.version: Retail Version
 
+---
+
 # Ship an order from a different store
 
 With the Charge send feature in Dynamics 365 for Retail, customer orders can be placed in one store and shipped from another store. 
