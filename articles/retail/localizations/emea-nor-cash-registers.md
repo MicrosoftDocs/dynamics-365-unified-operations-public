@@ -59,5 +59,20 @@ Each sales transaction should  be digitally signed. The signature should be reco
 ### AF-T Cash register export
 It should be possible to export the POS transaction journal in the predefined SAF-T (Standard Audit File - Tax) Cash register format.
 
+## Setting up Retail for Norway
+
+This section describes the Retail settings that are specific to and recommended for Norway. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
+
+To use the Norway-specific functionality for Retail, you must complete these tasks:
+
+|Set up task                                 | Information                                                                     |
+|--------------------------------------------|---------------------------------------------------------------------------------|
+|Select legal entity primary address         |Select a primary address for the legal entity that is located in Norway          |
+|Set up functionality profiles               |You must enable auditing and set up receipt numbering.                           |
+|Update POS permissions groups and individual permission settings for store workers                |Set the **Allow printing receipt copy** permission to an appropriate value: **Allow always** – The operator can print a copy of a receipt multiple times. **Allow only once** – The operator can print a copy of a receipt only one time. **Allow only once, and only if HQ DB is available** – The operator can print a copy of a receipt only one time, and only if the headquarters database is available through Real-Time service, so that the system can verify that no copies of the receipt have previously been printed in any store. **Never** – The operator can't print a copy of a receipt.            |
+|Set up hardware profiles                    | Set the **Receipt profile ID** to be **Print** and you must enable the Microsoft XPS Document Writer printer.            |
+|Set up sales tax            |You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services.            |
+|Set up receipt formats            |            |
+|            |            |
 
 
