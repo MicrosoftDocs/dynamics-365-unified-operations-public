@@ -1336,12 +1336,12 @@
 #### [Quality management process](../supply-chain/inventory/quality-management-processes.md)
 #### [Enable quality management](../supply-chain/inventory/enable-quality-management.md)
 #### [Nonconformance management](../supply-chain/inventory/enable-nonconformance-management.md)
+#### [Set up prerequisites for management (Task guide)](../supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management.md)
 #### [Create and process a conformance (Task guide)](../supply-chain/inventory/tasks/create-process-non-conformance.md)
 #### [Quarantine order](../supply-chain/inventory/quarantine-orders.md)
 #### [Set up quality orders (Task guide)](../supply-chain/inventory/tasks/set-up-quality-orders.md)
 #### [Inspect the quality of goods (Task guide)](../supply-chain/inventory/tasks/inspect-quality-goods.md)
 #### [Inventory blocking](../supply-chain/inventory/inventory-blocking.md)
-#### [Set up prerequisites for management (Task guide)](../supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management.md)
 ### Item tracking dimensions
 #### [Correct inventory tracking information (Task guide)](../supply-chain/inventory/tasks/correct-inventory-tracking-information.md)
 #### [Merge inventory batch](../supply-chain/inventory/merge-inventory-batches.md)
