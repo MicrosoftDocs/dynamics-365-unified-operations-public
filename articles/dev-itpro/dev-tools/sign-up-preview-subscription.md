@@ -56,7 +56,7 @@ This topic describes how to subscribe to the preview/partner offer and deploy an
 
 -   **Organizational account** – Users receive Azure AD credentials, which are separate from other desktop or corporate credentials. The Azure AD credentials are used to sign in to Microsoft Office 365 and other Microsoft cloud services. Users sign in by using their organizational account. 
 
-        **Important:** For this release, we ask that you not use any existing credentials that are associated with other online services, such as Office 365 or Microsoft Dynamics CRM Online.
+       **Important:** For this release, we ask that you not use any existing credentials that are associated with other online services, such as Office 365 or Microsoft Dynamics CRM Online.
         
 -   **Microsoft account** – Microsoft accounts, which were formerly known as Passport accounts or Windows Live ID accounts, can't currently be used with Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, or other Microsoft Online Services. However, Microsoft accounts are still required for Microsoft Connect and other Microsoft Business Solutions sites, such as CustomerSource, PartnerSource, Information Source, and Microsoft Dynamics Community. You will continue to use your Microsoft account to access these services.
 
