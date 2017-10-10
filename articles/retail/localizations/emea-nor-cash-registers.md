@@ -34,10 +34,10 @@ To learn about common POS features that are available to customers in all countr
 
 ## Overview of cash register functionality for Norway
 
-### Receipt changes
-The following additions to receipts are implemented using custom fields.
+### Receipts
+Receipts for Norway include additional information that was implemented using custom fields.
 
-#### Header texts
+#### Receipt headers
 Receipt headers include text that identifies the type of receipt. For example, a sales receipt will include the text "Salskvittering". 
 
 This following receipt types will include header text: 
@@ -49,10 +49,10 @@ This following receipt types will include header text:
 - delivery receipt
 
 #### Signed transaction sequential number
-The signed transaction sequential number is listed on the receipt in order to identify a link between the printed receipt and the digital signature in the database.
+The signed transaction sequential number is listed on the receipt in order to associate a printed receipt with a digital signature in the database.
 
 #### Receipt totals
-Additional fields are added to receipt totals, in order to exclude non-sales transactions from receipt totals. Non-sales transactions include:
+The receipt totals section exclude non-sales transactions. Non-sales transactions include:
 - Issuing a gift card
 - Adding funds to a gift card
 - Deposits
@@ -66,7 +66,7 @@ The following events are registered in the POS transaction journal/POS Fiscal ev
 - Clearing the transactions from the channel database. This information is also included in the exported journal and/or X/Z-reports.
 
 ### X and Z reports
-X and Z reports now include more information than the core retail documents. For example, the name and organization number of the enterprise as well as the number of price look-ups specified by product group and amount are both included in the reports.
+X and Z reports include more information than the core retail documents. For example, the name and organization number of the enterprise as well as the number of price look-ups specified by product group and amount are both included in the reports.
 
 ### Digitally signing sales data
 Each sales transaction should  be digitally signed. The signature should be recorded in the POS transaction journal/POS Fiscal event log and should be further available in the exported journal.
