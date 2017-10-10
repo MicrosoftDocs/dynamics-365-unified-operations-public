@@ -36,7 +36,10 @@ To learn about common POS features that are available to customers in all countr
 
 ## Overview of cash register functionality for Norway
 
-### Receipt header texts
+### Receipt changes
+The following additions to receipts are implemented using custom fields.
+
+#### Header texts
 Receipt headers include text that identifies the type of receipt. For example, a sales receipt will include the text "Salskvittering". 
 
 This following receipt types will include header text: 
@@ -47,17 +50,27 @@ This following receipt types will include header text:
 - training receipt
 - delivery receipt
 
+#### Signed transaction sequential number
+The signed transaction sequential number is listed on the receipt in order to identify a link between the printed receipt and the digital signature in the database.
+
+#### Receipt totals
+Additional fields are added to receipt totals, in order to exclude non-sales transactions from receipt totals. Non-sales transactions include:
+- Issuing a gift card
+- Adding funds to a gift card
+- Deposits
+- Prepayments
+
 ### Register additional events in POS Transaction journal
 The following events should be registered in the POS transaction journal/POS Fiscal event log: price look-up; tax overrides; qty corrections; clearing the transactions from the channel database. This information is also available in the exported journal and/or X/Z-reports.
 
-### Print local X/Z reports
-X/Z reports include more information than the core retail documents. For example, the name and organization number of the enterprise as well as the number of price look-ups specified by product group and amount are both included in the reports.
+### X and Z reports
+X and Z reports now include more information than the core retail documents. For example, the name and organization number of the enterprise as well as the number of price look-ups specified by product group and amount are both included in the reports.
 
 ### Digitally signing sales data
 Each sales transaction should  be digitally signed. The signature should be recorded in the POS transaction journal/POS Fiscal event log and should be further available in the exported journal.
 
-### AF-T Cash register export
-It should be possible to export the POS transaction journal in the predefined SAF-T (Standard Audit File - Tax) Cash register format.
+### SAF-T Cash register audit file
+You can export the POS transaction journal in the predefined SAF-T (Standard Audit File - Tax) Cash register format.
 
 ## Setting up Retail for Norway
 
@@ -71,8 +84,8 @@ To use the Norway-specific functionality for Retail, you must complete these tas
 |Set up functionality profiles               |You must enable auditing and set up receipt numbering.                           |
 |Update POS permissions groups and individual permission settings for store workers                |Set the **Allow printing receipt copy** permission to an appropriate value: **Allow always** – The operator can print a copy of a receipt multiple times. **Allow only once** – The operator can print a copy of a receipt only one time. **Allow only once, and only if HQ DB is available** – The operator can print a copy of a receipt only one time, and only if the headquarters database is available through Real-Time service, so that the system can verify that no copies of the receipt have previously been printed in any store. **Never** – The operator can't print a copy of a receipt.            |
 |Set up hardware profiles                    | Set the **Receipt profile ID** to be **Print** and you must enable the Microsoft XPS Document Writer printer.            |
-|Set up sales tax            |You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services.            |
-|Set up receipt formats            |            |
+|Set up sales tax            |You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).           |
+|Set up receipt formats            | [Receipt templates and printing](../receipt-templates-printing.md)           |
 |            |            |
 
 
