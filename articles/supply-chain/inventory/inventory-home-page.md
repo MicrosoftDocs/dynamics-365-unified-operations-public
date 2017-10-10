@@ -62,15 +62,12 @@ The following learning map shows the major concepts and tasks that make up the f
 
 ### What's new and in development
 
-Go to the Microsoft Dynamics 365 Roadmap to see what new features have been released and what new features are in development.
+Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.
 
-### Blogs
+### Manufacturing and supply chain management blogs
 
-You can find opinions, news, and other information about Accounts payable and other solutions on the Microsoft Dynamics 365 blog.
-
-There are many posts about General ledger on the Microsoft Dynamics AX product team blog. Although some of these posts were written for the previous version of General ledger, the same concepts still apply, and the procedures are also similar in the current version.
-
-The Microsoft Dynamics Operations Partner Community Blog gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
+You can find opinions, news, and other information about Inventory management and other solutions on the
+[Dynamics AX Manufacturing R&D Team Blog](https://blogs.msdn.microsoft.com/axmfg) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### Task guides
 
