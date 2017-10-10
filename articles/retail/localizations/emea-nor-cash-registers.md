@@ -30,8 +30,6 @@ ms.dyn365.ops.version: Application update 4
 
 This topic provides an overview of the cash register functionality that is available for Norway in Microsoft Dynamics 365 for Retail. It also provides guidelines for setting up the functionality.
 
-## Common POS features
-
 To learn about common POS features that are available to customers in all countries or regions, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
 
 ## Overview of cash register functionality for Norway
