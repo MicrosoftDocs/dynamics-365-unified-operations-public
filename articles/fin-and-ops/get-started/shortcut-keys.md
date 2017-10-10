@@ -40,7 +40,7 @@ The following keyboard shortcuts apply across Dynamics 365 for Finance and Opera
 **Note:** The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
 
 ## Finding a shorcut
-As of Platform update 11, users can discover currently available shortcuts directly from the user interface. Simply right-click on a control and select **View shortcuts**. This will open a dialog showing the shortcuts you can use based on where you are on the page. 
+As of Platform update 11, users can discover currently available shortcuts directly from the user interface. Simply right-click on a control and select **View shortcuts**. This will open a dialog box showing the shortcuts you can use based on where you are on the page. 
 
 
 ## Action shortcuts
