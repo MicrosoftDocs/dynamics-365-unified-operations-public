@@ -70,7 +70,14 @@ X and Z reports now include more information than the core retail documents. For
 Each sales transaction should  be digitally signed. The signature should be recorded in the POS transaction journal/POS Fiscal event log and should be further available in the exported journal.
 
 ### SAF-T Cash register audit file
-You can export the POS transaction journal in the predefined SAF-T (Standard Audit File - Tax) Cash register format.
+You can export the POS transaction journal in the predefined SAF-T (Standard Audit File - Tax) Cash register format. This audit file can be exported for the following scenarios:
+- per company
+- one store
+- all stores
+- one terminal
+- all terminals
+
+The SAF-T cash register format must be implemented at HQ using Electronic reporting. The format configuration is available to download from Lifecycle Services. For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
 ## Setting up Retail for Norway
 
