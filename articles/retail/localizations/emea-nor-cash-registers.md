@@ -4,8 +4,8 @@
 title: Cash registers for Norway
 description: This topic provides an overview of the cash register functionality that is available for Norway. 
 author: EvgenyPopovMBS
-manager: vastrup
-ms.date: 09/22/2017
+manager: annbe
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,11 +20,11 @@ ms.reviewer: shylaw
 ms.search.scope: Retail, Operations, Core, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Sweden
+ms.search.region: Norway
 ms.search.industry: Retail
 ms.author: epopov
-ms.search.validFrom: 2017-10-15
-# ms.dyn365.ops.version: App update 4
+ms.search.validFrom: 2017-10-31
+ms.dyn365.ops.version: Application update 4
 ---
 # Cash registers for Norway
 
@@ -93,6 +93,6 @@ To use the Norway-specific functionality for Retail, you must complete these tas
 |Set up hardware profiles                    | Set the **Receipt profile ID** to be **Print** and you must enable the Microsoft XPS Document Writer printer.            |
 |Set up sales tax            |You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).           |
 |Set up receipt formats            | [Receipt templates and printing](../receipt-templates-printing.md)           |
-|            |            |
+
 
 
