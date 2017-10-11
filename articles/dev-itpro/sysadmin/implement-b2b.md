@@ -64,21 +64,20 @@ The tenant administator of your Azure AD tenant will need to complete the follow
 8. In the **Add API access** pane, do the following:
     1. Click the **Select an API** tab. Click **Microsoft Graph**, and then click **Select**.
     
-    2. On the **Select permissions** tab, select the following application permissions:
+    2. In the **Select permissions** tab, select the following application permissions:
          - **Read and write all users' full profiles**
          - **Read and write directory data**
     
-    3. Select the following delegatded permission:
+    3. Select the following delegated permission:
          - **Sign in and read user profile**
      
-    4. Then click **Select** and **Done**.
+    4. Click **Select** and **Done**.
     
 9. In the **Required permissions** blade, click **Grant Permissions**, and then click **Yes** to assign the permissions.
 
 10. Click **All settings** > **Keys**, and then do the following: 
-
-  1. Enter a name of the key in the **Description** field.
-  2. Set the expiration duration in the **Expires** field.
+    1. Enter a name of the key in the **Description** field.
+    2. Set the expiration duration in the **Expires** field.
   
 11. Click **Save**. Saving the key will display the **Value**. 
 
