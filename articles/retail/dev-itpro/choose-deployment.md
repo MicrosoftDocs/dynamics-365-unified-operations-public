@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 # Choose a deployment option
 
-You can use retail functionality in one of 2 ways:
+You can use retail functionality in 1 of 2 ways:
  
 - Option 1: **Dynamics 365 for Retail**
 - Option 2: **Dynamics 365 for Finance and Operations**
