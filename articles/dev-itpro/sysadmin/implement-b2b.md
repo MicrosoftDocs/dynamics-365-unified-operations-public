@@ -1,4 +1,4 @@
- dis---
+---
 # required metadata
 
 title: B2B functionality in Dynamics 365 for Finance and Operations, Enterprise edition
