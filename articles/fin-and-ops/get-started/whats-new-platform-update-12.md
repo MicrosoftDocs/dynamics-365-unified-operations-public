@@ -35,4 +35,4 @@ ms.dyn365.ops.version: Platform update 11
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12. This version was released in October 2017 and has a build number of XXXXXXXXXXXXXX.
 
-Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 11, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=856083).
+Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 12, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=856083).
