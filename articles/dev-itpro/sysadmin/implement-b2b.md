@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form: B2B Invitation Configuration
 # ROBOTS: 
 audience: developer, IT Pro
 # ms.devlang: 
