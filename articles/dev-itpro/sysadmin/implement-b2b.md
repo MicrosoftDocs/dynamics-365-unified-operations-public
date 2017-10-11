@@ -62,16 +62,14 @@ The tenant administator of your Azure AD tenant will need to complete the follow
 7. Click **All settings** > **Required permissions** > **Add**.
 
 8. In the **Add API access** pane, do the following:
-
-  1. Click the **Select an API** tab. Click **Microsoft Graph**, and then click **Select**.
-  2. On the **Select permissions** tab, select the following permissions and then click **Done**.
+    1. Click the **Select an API** tab. Click **Microsoft Graph**, and then click **Select**.
+    2. On the **Select permissions** tab, select the following permissions and then click **Done**.
+        **APPLICATION PERMISSIONS** 
+            - Read and write all users' full profiles
+            - Read and write directory data
     
-    **APPLICATION PERMISSIONS** 
-    - Read and write all users' full profiles
-    - Read and write directory data
-    
-    **DELEGATED PERMISSIONS**
-    - Sign in and read user profile
+        **DELEGATED PERMISSIONS**
+            - Sign in and read user profile
     
 9. In the **Required permissions** blade, click **Grant Permissions**, and then click **Yes** to assign the permissions.
 
