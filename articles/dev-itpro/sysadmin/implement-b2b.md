@@ -2,7 +2,7 @@
 # required metadata
 
 title: B2B functionality in Dynamics 365 for Finance and Operations, Enterprise edition
-description: This article provides information about implementing the business-to-business transaction functionality in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic provides information about implementing the business-to-business transaction functionality in Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
 ms.date: 10/11/2017
@@ -30,19 +30,19 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# Export B2B users to Azure AD automatically
-You can export business-to-business (B2B) users automatically to Azure active directory (AD). 
+# Export B2B users to Azure AD
+You can automatically export business-to-business (B2B) users to Azure Active Directory (Azure AD). 
 
-In the past, B2B users were first exported manually to a .csv file. Then the AAD tenant administrator had to use this file to manually add the users to Azure AD using the Azure portal. 
+In the past, B2B users were exported manually to a .csv file. Then the Azure AD tenant administrator had to use this file to manually add the users to Azure AD using the Azure portal. 
 
-In order to enable the automatic export feature, a one-time setup and configuration process must be completede. Once the process is completed, you may use the **Provision new user** workflow task to export B2B users to Azure AD automatically.
+To enable the automatic export feature, a one-time setup and configuration process must be completed. When the process is completed, you can use the **Provision new user** workflow task to automatically export B2B users to Azure AD.
 
-The one-time set up and configuration means you'll need to: 
+The one-time set up and configuration means that you'll need to: 
 1. Set up a B2B invitation service application in Azure AD.
 2. Configure the B2B invitation service settings in Finance and Operations.
 
 ### Set up a B2B invitation service application in Azure AD
-The tenant administator of your Azure AD tenant will need to complete the following steps.
+The tenant administrator of your Azure AD tenant will need to complete the following steps.
 
 1. Log on to the [Azure portal](https://portal.azure.com) as the tenant administrator. 
 
@@ -52,10 +52,10 @@ The tenant administator of your Azure AD tenant will need to complete the follow
 
 4. Click **App registrations** > **New application registration**.
 
-5. Enter the folliwng information, and then click **Create**.
+5. Enter the following information, and then click **Create**.
     1. In the **Name** field, enter the name of the application. For example: **B2B admin application**.
     2. In the **Application type** field, select **Web app /API**.
-    3. In the **Sign-on URL** field, enter the URL of Finance and Operations.
+    3. In the **Sign-on URL** field, enter the URL for Finance and Operations.
   
 6. Click the **App registrations** tab, click the newly created application, copy the **Application ID**, and save it. You will need this later.
 
@@ -84,9 +84,9 @@ The tenant administator of your Azure AD tenant will need to complete the follow
     > [!WARNING]
     > Be sure to copy the key **Value** after saving the key. This value will not be available when you leave the blade.
 
-### Configure the B2B invitation service settings in Finance and Operations, Enterprise edition
+### Configure the B2B invitation service settings in Finance and Operations
 
-1. Log in to the Dynamics 365 for Finance and Operations, Enterprise edition as administrator.
+1. Sign in to Dynamics 365 for Finance and Operations, Enterprise edition as administrator.
 
 2. Navigate to the **B2B Invitation Configuration** page, and click **Edit**.
 
@@ -96,17 +96,8 @@ The tenant administator of your Azure AD tenant will need to complete the follow
 
 5. In the **Client ID** field, enter the **Application ID** (which you noted in step 6 of the previous procedure).
 
-6. Enter the key **Value** copied from the above procedure into the **Application Key** field.
+6. Enter the key **Value**, copied from the above procedure, into the **Application Key** field.
 
 7. **Save** the settings.
 
-Now you may start using the **Provision new users** workflow task in your workflows to export B2B users to Azure AD automatically.
-
-
-
-
-
-  
-  
-  
-
+Now you can start using the **Provision new users** workflow task in your workflows to automatically export B2B users to Azure AD.
