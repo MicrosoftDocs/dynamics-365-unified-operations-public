@@ -31,10 +31,11 @@ ms.dyn365.ops.version: Platform update 12
 ---
 
 # Export B2B users to AAD automatically in Dynamics 365 for Finance and Operations, Enterprise edition
-With Platform Update 12, you are now able to export B2B users automatically to AAD. In the past the B2B users were first exported manually to a .csv file. Then the AAD tenant administrator had to pick up this file and add the user to AAD manually in the AAD portal. Below are the steps to use the automated export functionality.
+With Platform Update 12, you are now able to export B2B users automatically to AAD. In the past the B2B users were first exported manually to a .csv file. Then the AAD tenant administrator had to pick up this file and add the user to AAD manually in the AAD portal. 
 
-## Pre-requisites
-In order to enable the automatic export feature a one time setup and configuration must be exercised. The one time setup and configuration includes 
+In order to enable the automatic export feature a one time setup and configuration must be exercised. Once the onetime setup is completed, you may use the **Provision new user** workflow task to enable automatically export B2B users to AAD.
+
+The one time setup and configuration includes 
 1. Setting up an B2B invitation service application in Azure Active Directory
 2. Configure the B2B invitation service settings in Dynamics 365 for Finance and Operations, Enterprise edition
 
@@ -49,8 +50,9 @@ The tenant administator of your AAD tenant will need to complete the following s
   1. **Name** of the application. e.g. B2B admin application.
   2. Web app /API for **ApplicationType**
   3. **Sign-on URL** of your Dynamics 365 for Finance and Operations, Enterprise edition application
-6. In the **App registrations** blade, navigate to the newly created application and navigate to **Settings -> Required permissions -> Add**
-7. In the **Add API access** blade go to 
+6. In the **App registrations** blade, navigate to the newly created application, copy the **Application ID** and save it. You will need this later.
+7. Navigate to **Settings -> Required permissions -> Add**
+8. In the **Add API access** blade go to 
   1. **Select an API** and select **Microsoft Graph**
   2. **Select permissions** and select the below permissions and click on **Done**
     -APPLICATION PERMISSIONS 
@@ -58,17 +60,26 @@ The tenant administator of your AAD tenant will need to complete the following s
     Read and write all users' full profiles
     -DELEGATED PERMISSIONS 
     Sign in and read user profile
-8. In the **Required permissions** blade, navigate to the **Grant permissions** tab and click on **Yes** to assign the permissions.
-9. In the **Settings -> Keys** blade, 
+9. In the **Required permissions** blade, navigate to the **Grant permissions** tab and click on **Yes** to assign the permissions.
+10. In the **Settings -> Keys** blade, 
   1. Enter a name of the key in **Description** field
   2. Set the Expiration duration in **Expires** field
-10. Saving the Key will display the **Value**. 
+11. Saving the Key will display the **Value**. 
 
 [!WARNING]
 
 Ensure you copy the Key **Value** on save. This value will not be available when you leave the blade
 
+### Configure the B2B invitation service settings in Dynamics 365 for Finance and Operations, Enterprise edition
+1. Log in to the Dynamics 365 for Finance and Operations, Enterprise edition as administrator
+2. Navigate to **System administration -> Setup -> B2B Invitation Configuration** form and click **Edit** 
+3. Select **Enabled**
+4. Verify **Tenant ID** is the same as the **Directory ID** copied from the above setup
+5. Enter the **Application ID** copied from the above step into **Client ID**
+6. Enter the Key **Value** copied from the above step into **Application Key**
+7. **Save** the settings
 
+Now you may start using the **Provision new users** workflow task in your workflows to export the B2B users to AAD automatically.
 
 
 
