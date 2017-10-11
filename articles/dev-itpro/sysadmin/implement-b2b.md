@@ -45,16 +45,25 @@ The one-time set up and configuration means you'll need to:
 The tenant administator of your Azure AD tenant will need to complete the following steps.
 
 1. Log on to the [Azure portal](https://portal.azure.com) as the tenant administrator. 
+
 2. Click **Azure Active Directory** > **Properties**.
+
 3. Copy the **Directory ID** (this is the tenant ID) and save it. You will need this later.
+
 4. Click **App registrations** > **New application registration**.
+
 5. Enter the folliwng information, and then click **Create**.
+
   1. In the **Name** field, enter the name of the application. For example: **B2B admin application**.
   2. In the **Application type** field, select **Web app /API**.
   3. In the **Sign-on URL** field, enter the URL of Finance and Operations.
+  
 6. Click the **App registrations** tab, click the newly created application, copy the **Application ID**, and save it. You will need this later.
+
 7. Click **All settings** > **Required permissions** > **Add**.
+
 8. In the **Add API access** pane, do the following:
+
   1. Click the **Select an API** tab. Click **Microsoft Graph**, and then click **Select**.
   2. On the **Select permissions** tab, select the following permissions and then click **Done**.
     
@@ -66,22 +75,32 @@ The tenant administator of your Azure AD tenant will need to complete the follow
     - Sign in and read user profile
     
 9. In the **Required permissions** blade, click **Grant Permissions**, and then click **Yes** to assign the permissions.
+
 10. Click **All settings** > **Keys**, and then do the following: 
+
   1. Enter a name of the key in the **Description** field.
   2. Set the expiration duration in the **Expires** field.
+  
 11. Click **Save**. Saving the key will display the **Value**. 
 
     > [!WARNING]
     > Be sure to copy the key **Value** after saving the key. This value will not be available when you leave the blade.
 
 ### Configure the B2B invitation service settings in Finance and Operations, Enterprise edition
-1. Log in to the Dynamics 365 for Finance and Operations, Enterprise edition as administrator
-2. Navigate to **System administration -> Setup -> B2B Invitation Configuration** form and click **Edit** 
-3. Select **Enabled**
-4. Verify **Tenant ID** is the same as the **Directory ID** copied from the above setup
-5. Enter the **Application ID** copied from the above step into **Client ID**
-6. Enter the Key **Value** copied from the above step into **Application Key**
-7. **Save** the settings
+
+1. Log in to the Dynamics 365 for Finance and Operations, Enterprise edition as administrator.
+
+2. Navigate to **System administration -> Setup -> B2B Invitation Configuration** form and click **Edit**.
+
+3. Select **Enabled**.
+
+4. Verify **Tenant ID** is the same as the **Directory ID** copied from the above setup.
+
+5. Enter the **Application ID** copied from the above step into **Client ID**.
+
+6. Enter the Key **Value** copied from the above step into **Application Key**.
+
+7. **Save** the settings.
 
 Now you may start using the **Provision new users** workflow task in your workflows to export the B2B users to AAD automatically.
 
