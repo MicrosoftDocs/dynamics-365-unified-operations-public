@@ -129,7 +129,7 @@ The OData batch framework uses *changesets*. Each changeset contains a list of r
 
 The use of the option SaveChangesOptions.BatchWithSingleChangeset in SaveChanges() ensures that all requests are bundled in a single changeset. 
 
-    '''public static void CreateProductColors(Resources context)
+    public static void CreateProductColors(Resources context)
         {
             var productColorsCollection = new DataServiceCollection<ProductColor>(context);
 
@@ -143,22 +143,29 @@ The use of the option SaveChangesOptions.BatchWithSingleChangeset in SaveChanges
 
             context.SaveChanges(SaveChangesOptions.BatchWithSingleChangeset);
         }
-    '''
 
-### How to prevent a POST to unset records using OData client
-When you create a new record using the OData client, properties that are not set are also included in the request body with default values assigned to them. To avoid this and to post only properties that are set explicitly, use the SaveChangesOptions.PostOnlySetProperties option in SaveChanges().
+###How to prevent POSTing unset records using OData client:
+When creating a new record using OData client, as shown in example 1, properties that are not set are also included in the request body with default values assigned to them. To avoid this and to post only properties that are set explicitly use SaveChangesOptions.PostOnlySetProperties option in SaveChanges(). See example 2.
 
-    ''' 
-    public static void CreateVendor(Resources context)
+Example 1:
+public static void CreateVendor(Resources context)
         {
             var vendorCollection = new DataServiceCollection<Vendor>(context);
             var vendor = new Vendor();
             vendorCollection.Add(vendor);
-
             // set properties
-            // Do not set properties that are not editable 
-
-            // Save specifying PostOnlySetProperties flag
             context.SaveChanges();
         }
-    '''
+
+Example 2:
+public static void CreateVendor(Resources context)
+        {
+            var vendorCollection = new DataServiceCollection<Vendor>(context);
+            var vendor = new Vendor();
+            vendorCollection.Add(vendor);
+            // set properties
+
+            // Save specifying PostOnlySetProperties flag
+            context.SaveChanges(SaveChangesOptions.PostOnlySetProperties);
+        }
+
