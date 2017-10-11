@@ -30,12 +30,12 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# Export B2B users to AAD automatically in Dynamics 365 for Finance and Operations, Enterprise edition
-With Platform Update 12, you are now able to export B2B users automatically to AAD. In the past the B2B users were first exported manually to a .csv file. Then the AAD tenant administrator had to pick up this file and add the user to AAD manually in the AAD portal. 
+# Export B2B users to Azure AD automatically
+You can export business-to-business (B2B) users automatically to Azure active directory (AD). 
 
-In order to enable the automatic export feature a one time setup and configuration must be exercised. Once the onetime setup is completed, you may use the **Provision new user** workflow task to enable automatically export B2B users to AAD.
+In the past, B2B users were first exported manually to a .csv file. Then the AAD tenant administrator had to use this file to manually add the users to Azure AD using the Azure portal. 
 
-For more information about Azure AD B2B collaboration, see [What is Azure AD B2B collaboration?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
+In order to enable the automatic export feature, a one-time setup and configuration process must be completede. Once the process is completed, you may use the **Provision new user** workflow task to enable automatically export B2B users to AAD.
 
 The one-time set up and configuration means you'll need to: 
 1. Set up a B2B invitation service application in Azure AD.
@@ -88,19 +88,19 @@ The tenant administator of your Azure AD tenant will need to complete the follow
 
 1. Log in to the Dynamics 365 for Finance and Operations, Enterprise edition as administrator.
 
-2. Navigate to **System administration -> Setup -> B2B Invitation Configuration** form and click **Edit**.
+2. Navigate to the **B2B Invitation Configuration** page, and click **Edit**.
 
 3. Select **Enabled**.
 
-4. Verify **Tenant ID** is the same as the **Directory ID** copied from the above setup.
+4. Verify that the **Tenant ID** is the same as the **Directory ID** (which you noted in step 3 of the previous procedure).
 
-5. Enter the **Application ID** copied from the above step into **Client ID**.
+5. In the **Client ID** field, enter the **Application ID** (which you noted in step 6 of the previous procedure).
 
-6. Enter the Key **Value** copied from the above step into **Application Key**.
+6. Enter the key **Value** copied from the above procedure into the **Application Key** field.
 
 7. **Save** the settings.
 
-Now you may start using the **Provision new users** workflow task in your workflows to export the B2B users to AAD automatically.
+Now you may start using the **Provision new users** workflow task in your workflows to export the B2B users to Azure AD automatically.
 
 
 
@@ -110,4 +110,3 @@ Now you may start using the **Provision new users** workflow task in your workfl
   
   
 
-[!include[banner](../includes/banner.md)]
