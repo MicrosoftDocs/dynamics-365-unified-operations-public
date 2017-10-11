@@ -53,10 +53,9 @@ The tenant administator of your Azure AD tenant will need to complete the follow
 4. Click **App registrations** > **New application registration**.
 
 5. Enter the folliwng information, and then click **Create**.
-
-  1. In the **Name** field, enter the name of the application. For example: **B2B admin application**.
-  2. In the **Application type** field, select **Web app /API**.
-  3. In the **Sign-on URL** field, enter the URL of Finance and Operations.
+    1. In the **Name** field, enter the name of the application. For example: **B2B admin application**.
+    2. In the **Application type** field, select **Web app /API**.
+    3. In the **Sign-on URL** field, enter the URL of Finance and Operations.
   
 6. Click the **App registrations** tab, click the newly created application, copy the **Application ID**, and save it. You will need this later.
 
