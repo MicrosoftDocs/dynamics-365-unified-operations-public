@@ -120,7 +120,11 @@ You're already set up as a user of your Lifecycle Services project. If you've al
 6.  Repeat steps 2 through 5 for all users in your organization.
 
 ## Deploy environments
-Environments should be deployed to an existing Azure subscription. **Note:** Each developer of an environment must deploy his or her own system to Azure. However, only the first project user must set up the Azure subscription for deployment. You can create environments in two ways:
+Environments should be deployed to an existing Azure subscription. 
+
+**Note:** Each developer of an environment must deploy his or her own system to Azure. However, only the first project user must set up the Azure subscription for deployment. 
+
+You can create environments in two ways:
 
 -   Deploy to Microsoft cloud services (Azure)
 -   Download a local VHD
