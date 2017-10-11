@@ -2,7 +2,7 @@
 # required metadata
 
 title: Choose a deployment option
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: This topic explains the differnces in the retail functionality between Dynamics 365 for Retail and Dynamics 365 for Finance and Operations.
 author: ashishmsft 
 manager: AnnBe
 ms.date: 10/11/2017
