@@ -48,9 +48,9 @@ or the bulk location areas.
 transports based on the contents of the shipment. You can use picking lists and output orders to ship items to production or to the 
 distribution channels.
 
--  Inventory control includes the raw materials, work-in-process items, and finished goods that a company has on hand for its own 
+-  Inventory control includes the raw materials, semi-finished goods, and finished goods that a company has on hand for its own 
 production processes or for sale to customers. As inventory is considered an asset, inventory accounting methods are used to create a 
-valuation, which has impact on the amount of the expenses charged to the cost of goods in an accounting period. You can define cost structure, define prices and price calculation, close inventory, adjust inventory, and recalculate inventory.
+valuation, which has impact on the amount of the expenses charged to the cost of goods in an accounting period. You can define cost structure, define prices and price calculation, close inventory, adjust inventory, and recalculate inventory. Learn more, see [Inventory accounting in Cost management](../cost-management/inventory-close.md).
 
 ## Learning map
 
