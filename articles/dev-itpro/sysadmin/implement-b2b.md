@@ -35,7 +35,7 @@ You can export business-to-business (B2B) users automatically to Azure active di
 
 In the past, B2B users were first exported manually to a .csv file. Then the AAD tenant administrator had to use this file to manually add the users to Azure AD using the Azure portal. 
 
-In order to enable the automatic export feature, a one-time setup and configuration process must be completede. Once the process is completed, you may use the **Provision new user** workflow task to enable automatically export B2B users to AAD.
+In order to enable the automatic export feature, a one-time setup and configuration process must be completede. Once the process is completed, you may use the **Provision new user** workflow task to export B2B users to Azure AD automatically.
 
 The one-time set up and configuration means you'll need to: 
 1. Set up a B2B invitation service application in Azure AD.
@@ -100,7 +100,7 @@ The tenant administator of your Azure AD tenant will need to complete the follow
 
 7. **Save** the settings.
 
-Now you may start using the **Provision new users** workflow task in your workflows to export the B2B users to Azure AD automatically.
+Now you may start using the **Provision new users** workflow task in your workflows to export B2B users to Azure AD automatically.
 
 
 
