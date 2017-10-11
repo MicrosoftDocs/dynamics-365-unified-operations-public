@@ -43,7 +43,9 @@ Use Master planning to perform the following business processes:
 -  You can process the action messages and futures messages that are generated during master scheduling. You can use this information to modify planned orders.
 -  You can process planned orders and kanbans.
 
-[![Learning map](./media/master-planning.gif)](./media/master-planning.gif)
+## Business processes
+
+[![Business processes](./media/master-planning.gif)](./media/master-planning.gif)
 
 ## Additional resources
 
