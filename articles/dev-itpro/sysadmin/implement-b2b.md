@@ -65,11 +65,11 @@ The tenant administator of your Azure AD tenant will need to complete the follow
     1. Click the **Select an API** tab. Click **Microsoft Graph**, and then click **Select**.
     
     2. On the **Select permissions** tab, select the following application permissions:
-      - **Read and write all users' full profiles**
-      - **Read and write directory data**
+         - **Read and write all users' full profiles**
+         - **Read and write directory data**
     
     3. Select the following delegatded permission:
-      - **Sign in and read user profile**
+         - **Sign in and read user profile**
      
     4. Then click **Select** and **Done**.
     
