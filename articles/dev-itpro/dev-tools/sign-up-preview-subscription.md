@@ -155,7 +155,7 @@ Start on the **Lifecycle Services Project** page.
     [![pic7](./media/pic7.jpg)](./media/pic7.jpg)
     
 13. Click the environment to view details about the deployment status. The first deployment will take a few hours, but each subsequent deployment will be much faster.
-14. When the deployment status changes to **Deployed**, click **Login **to connect to the client, or click the VM name to the development machine by using Remote Desktop. After the deployment is completed, you can find the base URL, and also the information that you require to connect to the environment via Remote Desktop.
+14. When the deployment status changes to **Deployed**, click **Login **to connect to the client, or click the VM name to the development machine by using Remote Desktop. After the deployment is completed, you can find the base URL, and the information that you require to connect to the environment via Remote Desktop.
 
 ## Use the features of Lifecycle Services
 Lifecycle Services is the starting point for performing online administrative activities. Here are some of these activities:
