@@ -43,7 +43,7 @@ Below are some key differences between Dynamics 365 for Retail and Dynamics 365 
 | Capability   |  Dynamics 365 for Retail   |  Dynamics 365 for Finance and Operations  |
 |--------------|----------------------------|-------------------------------------------|
 |Seamless app model updates which do not require to be compiled or code merged with your customizations. | Yes | No|
-|Seamless retail channel component updates (Retail POS, Channel database, Retail Server) which do not require code merge with your customizations. | Yes | No |
+|Seamless retail channel component updates (Retail POS, Channel database, Retail Server) which do not require code merge with your customizations. | Yes | Yes |
 |Retail essentials scope and enhanced seed data initialization. | Yes (Enabled by default) | Yes (Available) |
 |Full functional foot-print for a wide range of business processes. | Yes ( Available - requires Unified Operations license or P1 license) | Yes (Enabled by default) |
 
