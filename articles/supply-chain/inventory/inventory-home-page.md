@@ -54,7 +54,7 @@ valuation, which has impact on the amount of the expenses charged to the cost of
 
 ## Learning map
 
-The following learning map shows the major concepts and tasks that make up the framework of the Inventory management module. 
+The following learning map shows the major concepts and tasks that make up the framework of the Inventory management module. One or multiple topics are proivded to help you learn about a concept or task.
 
 [![Learning map](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
 
