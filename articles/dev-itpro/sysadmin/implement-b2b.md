@@ -38,8 +38,8 @@ In order to enable the automatic export feature a one time setup and configurati
 For more information about Azure AD B2B collaboration, see [What is Azure AD B2B collaboration?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
 
 The one-time set up and configuration means you'll need to: 
-1. Set up a B2B invitation service application in Azure AD.
-2. Configure the B2B invitation service settings in Finance and Operations.
+- Set up a B2B invitation service application in Azure AD.
+- Configure the B2B invitation service settings in Finance and Operations.
 
 ### Set up a B2B invitation service application in Azure AD
 The tenant administator of your Azure AD tenant will need to complete the following steps.
