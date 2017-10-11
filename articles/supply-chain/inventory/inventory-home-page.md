@@ -54,9 +54,9 @@ valuation, which has impact on the amount of the expenses charged to the cost of
 
 ## Learning map
 
-The following learning map shows the major concepts and tasks that make up the framework of the Inventory management module. Click the links in the **Quick links section** to learn how to use the module.
+The following learning map shows the major concepts and tasks that make up the framework of the Inventory management module. 
 
-
+[![Learning map](./media/inventory-learning-map.PNG)](./media/inventory-learning-map.PNG)
 
 ## Additional resources
 
@@ -72,9 +72,5 @@ You can find opinions, news, and other information about Inventory management an
 ### Task guides
 
 Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.
-
-### Videos
-
-Check out the how-to videos that are now available on the Microsoft Dynamics 365 YouTube Channel.
 
 
