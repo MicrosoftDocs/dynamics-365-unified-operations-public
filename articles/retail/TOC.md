@@ -172,7 +172,7 @@
 
 ## Deployment and hotfixes
 ### [Retail Store Scale Unit configuration and installation](dev-itpro/retail-store-scale-unit-configuration-installation.md)
-#### [Retail store system, before you begin](dev-itpro/retail-store-system-begin.md)
+#### [Retail Store Scale Unit overview](dev-itpro/retail-store-system-begin.md)
 ### [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md)
 #### [Manage Retail accounts and devices from headquarters](set-up-activation-accounts-validate-devices-hq.md)
 #### [Retail POS device activation](dev-itpro/retail-device-activation.md)
