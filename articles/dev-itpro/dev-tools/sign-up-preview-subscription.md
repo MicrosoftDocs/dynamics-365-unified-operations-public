@@ -5,7 +5,7 @@ title: Sign up for a preview subscription
 description: This topics describes how to subscribe to the preview/partner offer and deploy an environment.
 author: RobinARH
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
