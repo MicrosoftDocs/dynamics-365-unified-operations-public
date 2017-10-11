@@ -1357,12 +1357,8 @@
 ### [Physical and financial update](../supply-chain/cost-management/physical-financial-updates.md)
 
 
-
-
-
 ## Master planning
-### Create demand forecast
-#### [Demand forecast overview](../supply-chain/master-planning/introduction-demand-forecasting.md)
+### [Demand forecast](../supply-chain/master-planning/introduction-demand-forecasting.md)
 #### [Set up a demand forecast](../supply-chain/master-planning/demand-forecasting-setup.md)
 #### [Import historical data for demand forecasts](../supply-chain/master-planning/import-historical-data.md)
 #### [Generate a statistical baseline forecast](../supply-chain/master-planning/generate-statistical-baseline-forecast.md)
@@ -1374,12 +1370,7 @@
 #### [Create a baseline forecast (Task guide)](../supply-chain/master-planning/tasks/create-baseline-forecast.md)
 #### [Modify a demand forecast manually (Task guide)](../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md)
 
-### Master plan
-#### [Action messages](../supply-chain/master-planning/action-messages.md)
-#### [Coverage settings](../supply-chain/master-planning/coverage-settings.md)
-#### [Delays](../supply-chain/master-planning/delays.md)
-#### [Master plans](../supply-chain/master-planning/master-plans.md)
-#### [Monitor a master planning run (Task guide)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
+### [Master plan](../supply-chain/master-planning/master-plans.md)
 #### [Master plans and multisite functionality](../supply-chain/master-planning/master-plan-multisite-functionality.md)
 ##### [Plan for site coverage, mandatory warehouse](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
 ##### [Plan for site coverage, warehouse not mandatory](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
@@ -1387,16 +1378,20 @@
 ##### [Plan for site and warehouse coverage, warehouse not mandatory](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 ##### [Determine the BOM version](../supply-chain/master-planning/master-plan-bom-version-determined.md)
 ##### [Explosion of a BOM version](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
-##### [Maintain planned orders](../supply-chain/master-planning/maintain-planned-orders.md)
-##### [Trace an explosion](../supply-chain/master-planning/trace-explosion.md)
-##### [Define coverage rules for items (Task guide)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
-##### [Create a plan for a site (Task guide)](../supply-chain/master-planning/tasks/create-plan-site.md)
-##### [Create a schedule for a site (Task guide)](../supply-chain/master-planning/tasks/create-schedule-site.md)
-##### [Generate a constrained plan (Task guide)](../supply-chain/master-planning/tasks/constrained-plan.md)
-##### [Create an intercompany plan (Task guide)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
-##### [Create a material plan for co-products (Task guide)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
-##### [View outbound planned intercompany demand (Task guide)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
-##### [Collaborate with internal supply chain customers (Task guide)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
+#### [Action messages](../supply-chain/master-planning/action-messages.md)
+#### [Coverage settings](../supply-chain/master-planning/coverage-settings.md)
+#### [Delays](../supply-chain/master-planning/delays.md)
+#### [Maintain planned orders](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [Trace an explosion](../supply-chain/master-planning/trace-explosion.md)
+#### [Monitor a master planning run (Task guide)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
+#### [Define coverage rules for items (Task guide)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
+#### [Create a plan for a site (Task guide)](../supply-chain/master-planning/tasks/create-plan-site.md)
+#### [Create a schedule for a site (Task guide)](../supply-chain/master-planning/tasks/create-schedule-site.md)
+#### [Generate a constrained plan (Task guide)](../supply-chain/master-planning/tasks/constrained-plan.md)
+#### [Create an intercompany plan (Task guide)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
+#### [Create a material plan for co-products (Task guide)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
+#### [View outbound planned intercompany demand (Task guide)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
+#### [Collaborate with internal supply chain customers (Task guide)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 
 
 ## [Mobile app](../dev-itpro/mobile-apps/Mobile-app-home-page.md)
