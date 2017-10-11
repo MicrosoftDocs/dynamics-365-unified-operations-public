@@ -2,7 +2,7 @@
 # required metadata
 
 title: Absence registration in Time and attendance
-description: This topic describes how to handle ***.
+description: This topic describes how to handle absence registrations in Time and attendance.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 05/26/2017
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This wiki topic describes the concepts of absence and how to use it in time and
+This topic describes the concepts of absence and how to handle absence in Time and
 attendance.
 
  
@@ -45,7 +45,7 @@ attendance.
 
  
 
-A worker is regarded as absence if he is not working according to his normal
+A that is  worker is considered absent if he is not working according to his normal
 work hours. The normal work hours are defined in the workers standard time
 profile.
 
