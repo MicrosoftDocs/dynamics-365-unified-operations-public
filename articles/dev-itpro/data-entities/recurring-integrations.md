@@ -39,15 +39,15 @@ The process of data migration, and movement into and out of any enterprise syste
 ## Architecture
 Integration does the following things:
 
-- It builds on data entities and the data management framework.
+- It builds on data entities and the Data management framework.
 - It enables the exchange of documents or files between Finance and Operations and any third-party application or service.
 - It supports several document formats, source mapping, Extensible Stylesheet Language Transformations (XSLT), and filters. 
 
-    ![Document/file exchange in several document formats](./media/image001-1024x348.png)
+    ![Document/file exchange in several document formats](./media/recurring-integrations.png)
 
 - It uses secure REST application programming interfaces (APIs) and authorization mechanisms to receive data from, and send data back to, integration systems. 
 
-    ![REST](./media/image003-1024x431.png)
+    ![Set up recurring integrations](./media/set-up-recurring.png)
 
 ## Authorization for the integration REST API
 The integration REST API uses the same OAuth 2.0 authentication model as the other service endpoints. Before the integrating client application can consume this endpoint, you must create an application ID in Microsoft Azure Active Directory (Azure AD) and give it appropriate permission to Finance and Operations. When you create and enable a recurring job, you're prompted to enter the Azure AD application ID that will interact with that recurring job. Therefore, be sure to make a note of the application ID.
