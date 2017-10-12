@@ -33,16 +33,16 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Customer attributes
 
-We extended the attribute framework in headquarters (HQ) to support attributes for Customers, Customer orders, Cash and carry transactions, and Call center orders.
+We extended the attribute framework in headquarters (HQ) to support attributes for customers, customer orders, cash and carry transactions, and call center orders.
 
 > [!NOTE]
-> The attributes are read-only, but in the case of Customer or Order attributes, you can edit and set the values at the individual customer or order level too.
+> The attributes are read-only, but in the case of customer or order attributes, you can edit and set values at the individual customer or order level too.
 
-With the new Customer attribute framework, you can use configurations to add new fields to the customer master, and show that automatically in customer add/edit or customer details screens in POS or HQ. After configuring the customer attribute group in retail parameters, POS and HQ will automatically show up the new attribute without any code change or customization. The customer card in the POS transaction screen can also be configured to show the customer attributes using the screen layout designer.
+With the new customer attribute framework, you can use configurations to add new fields to the customer master record, and show that automatically in **Customer add/edit** or **Customer details** screens in POS or HQ. After configuring the customer attribute group in retail parameters, POS and HQ will automatically show up the new attribute without any code change or customization. The customer card in the POS transaction screen can also be configured to show the customer attributes using the screen layout designer.
 
 # Why and when you should customer attributes
 
-If you want to add new fields to customer master and capture the information in POS or HQ then you can use this feature. Previously to add a new field in customer master and to show it in HQ and POS, you must create new extension table in HQ, channel DB and modify CRT and POS code inline to do this. You must write code in CRT and POS to read/write to the extension fields and to show it in POS, handle this in different POS views and scenarios like Customer details screen, customer panel in transaction screen etc. and in CRT you need to handle all insert, Select and update operation. Now with the new functionality all this can be done through configuration without writing any code or creating custom extension tables in HQ or channel. With the first version we are not supporting datetime and reference attribute type, in those you should use extension properties and custom control to show the details in POS.
+If you want to add new fields to the customer master record and capture the information in POS or HQ, then you can use this feature. Previously, to add a new field to the customer master record and display it in HQ and POS, you had to create new extension table in HQ, channel DB and modify CRT and POS code inline to do this. You must write code in CRT and POS to read/write to the extension fields and to show it in POS, handle this in different POS views and scenarios like Customer details screen, customer panel in transaction screen etc. and in CRT you need to handle all insert, Select and update operation. Now with the new functionality all this can be done through configuration without writing any code or creating custom extension tables in HQ or channel. With the first version we are not supporting datetime and reference attribute type, in those you should use extension properties and custom control to show the details in POS.
 
 ## How to configure customer attributes in POS and HQ
 
