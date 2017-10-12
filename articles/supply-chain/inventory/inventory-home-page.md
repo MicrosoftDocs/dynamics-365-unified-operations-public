@@ -36,11 +36,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 You can use Inventory management for 
 
-1. [Inbound operations](arrival-overview.md)
-2. [Quality assurance](quality-management-processes.md)
-3. [Inventory activities](inventory-journals.md)
-4. [Outbound operations](outbound-process.md)
-5. [Inventory control](../cost-management/inventory-close.md) (To learn more, see [Inventory accounting in Cost management](../cost-management/inventory-close.md).)
+-  [Inbound operations](arrival-overview.md)
+-  [Quality assurance](quality-management-processes.md)
+-  [Inventory activities](inventory-journals.md)
+-  [Outbound operations](outbound-process.md)
+-  [Inventory control](../cost-management/inventory-close.md) (To learn more, see [Inventory accounting in Cost management](../cost-management/inventory-close.md).)
 
 ## Learning map
 
