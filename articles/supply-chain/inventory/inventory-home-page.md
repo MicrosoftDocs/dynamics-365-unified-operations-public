@@ -34,18 +34,29 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-You can use Inventory management for inbound and outbound operations, quality assurance, inventory activities, and inventory control.
+You can use Inventory management for inbound operations, quality assurance, inventory activities, outbound operations, and inventory control.
 
--  On the **Arrival overview** page, you can keep track of expected items and use arrival journals to register receipts. 
+[Inbound operations](arrival-overview.md)
+
+On the **Arrival overview** page, you can keep track of expected items and use arrival journals to register receipts. 
 After items have arrived in the inbound dock, you can use pallet transports to guide the flow through the warehouse to the picking 
 or the bulk location areas.
 
--  You can set up quality inspection and quarantine of products as an automated process by using quality associations or you can manually put products on hold in various stages of the order process cycle.
+[Quality assurance](quality-management-processes.md)
 
--  You can perform periodical inventory activities, such as set up inventory tracking, perform item counting, manage consignment inventory and item tracking dimensions. 
+You can set up quality inspection and quarantine of products as an automated process by using quality associations or you can manually put products on hold in various stages of the order process cycle.
 
--  You can process shipments for complete orders, parts of orders, or a consolidation of multiple orders and create picking routes or pallet transports based on the contents of the shipment. You can use picking lists and output orders to ship items to production or to  
+[Inventory activities](inventory-journals.md)
+
+You can perform periodical inventory activities, such as set up inventory tracking, perform item counting, manage consignment inventory and item tracking dimensions. 
+
+[Outbound operations](outbound-process.md)
+
+You can process shipments for complete orders, parts of orders, or a consolidation of multiple orders and create picking routes or pallet transports based on the contents of the shipment. You can use picking lists and output orders to ship items to production or to  
 distribution channels.
+
+[Inventory control](../cost-management/inventory-close.md)
+
 
 -  Inventory control includes the raw materials, semi-finished goods, and finished goods that a company has on hand for its own 
 production processes or for sale to customers. Because inventory is considered an asset, inventory accounting methods are used to create a valuation, which has impact on the amount of the expenses charged to the cost of goods in an accounting period. You can define cost structure, define prices and price calculation. You can also close, adjust, and recalculate inventory. To learn more, see [Inventory accounting in Cost management](../cost-management/inventory-close.md).
@@ -54,7 +65,7 @@ production processes or for sale to customers. Because inventory is considered a
 
 The following learning map shows the major concepts and tasks that make up the framework of the Inventory management module. Refer to the topics listed to help you learn about a concept or task.
 
-[![Inventory learning map](./media/inventory-home-page.png)](./media/inventory-home-page.png)
+[![Inventory learning map](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
 
 ## Additional resources
 
