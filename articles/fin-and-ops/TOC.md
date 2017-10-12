@@ -1349,7 +1349,7 @@
 
 
 ## Master planning
-### [Demand forecast](../supply-chain/master-planning/introduction-demand-forecasting.md)
+### [Demand forecasting](../supply-chain/master-planning/introduction-demand-forecasting.md)
 #### [Set up a demand forecast](../supply-chain/master-planning/demand-forecasting-setup.md)
 #### [Import historical data for demand forecasts](../supply-chain/master-planning/import-historical-data.md)
 #### [Generate a statistical baseline forecast](../supply-chain/master-planning/generate-statistical-baseline-forecast.md)
@@ -1362,6 +1362,11 @@
 #### [Modify a demand forecast manually (Task guide)](../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md)
 
 ### [Master plan](../supply-chain/master-planning/master-plans.md)
+#### [Coverage settings](../supply-chain/master-planning/coverage-settings.md)
+#### [Maintain planned orders](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [Delays](../supply-chain/master-planning/delays.md)
+#### [Action messages](../supply-chain/master-planning/action-messages.md)
+#### [Trace an explosion](../supply-chain/master-planning/trace-explosion.md)
 #### [Master plans and multisite functionality](../supply-chain/master-planning/master-plan-multisite-functionality.md)
 ##### [Plan for site coverage, mandatory warehouse](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
 ##### [Plan for site coverage, warehouse not mandatory](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
@@ -1369,11 +1374,6 @@
 ##### [Plan for site and warehouse coverage, warehouse not mandatory](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 ##### [Determine the BOM version](../supply-chain/master-planning/master-plan-bom-version-determined.md)
 ##### [Explosion of a BOM version](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
-#### [Action messages](../supply-chain/master-planning/action-messages.md)
-#### [Coverage settings](../supply-chain/master-planning/coverage-settings.md)
-#### [Delays](../supply-chain/master-planning/delays.md)
-#### [Maintain planned orders](../supply-chain/master-planning/maintain-planned-orders.md)
-#### [Trace an explosion](../supply-chain/master-planning/trace-explosion.md)
 #### [Monitor a master planning run (Task guide)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
 #### [Define coverage rules for items (Task guide)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
 #### [Create a plan for a site (Task guide)](../supply-chain/master-planning/tasks/create-plan-site.md)
