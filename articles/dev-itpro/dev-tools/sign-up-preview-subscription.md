@@ -149,7 +149,7 @@ LCS is the starting point for performing online administrative activities. Here 
 
     [![Phases and tasks](./media/pic8.jpg)](./media/pic8.jpg)[](./media/methodologyreview.png)
     
-    **Phases and tasks** lets you view tools and resources that are available throughout your enterprise resource planning (ERP) experience.
+    The phases and task information lets you view tools and resources that are available throughout your enterprise resource planning (ERP) experience.
 
 2. Scroll to the right, and review the tiles.
 
