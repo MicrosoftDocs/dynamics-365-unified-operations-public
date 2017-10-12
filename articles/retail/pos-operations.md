@@ -5,7 +5,7 @@ title: POS operations
 description: This topic provides details about the point of sale (POS) operations in Microsoft Dynamics 365 for Retail. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: jblucher
 manager: AnnBe
-ms.date: 09/27/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -184,7 +184,7 @@ The following columns specify where the operations can be invoked:
 | 916 | Windows workflow foundation | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 924 | X report for bank cards | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | Yes |
 
-\* The operation is available in offline mode only when a customer order or sales quotation is being created, and only if offline creation of customer orders and sales quotations is configured in the POS functionality profile. The operation can't be performed when orders are created by using the Real-time Service, or when orders are recalled or edited.
+\* The operation is available in offline mode only when a customer order or sales quotation is being created, and only if offline creation of customer orders and sales quotations is configured in the POS functionality profile. The operation can't be performed when orders are created by using Real-time Service, or when orders are recalled or edited.
 
 † The operation can be performed in offline mode only when the POS is configured to allow for offline creation of customers in the POS functionality profile.
 
