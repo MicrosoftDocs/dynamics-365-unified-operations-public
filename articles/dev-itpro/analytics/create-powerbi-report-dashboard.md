@@ -63,38 +63,32 @@ View the OData feed in your web browser
 3.  To validate that data entities are exposed by using the OData v4 endpoint, add a suffix of “data” to the URL. The URL should now be in the following format: https://*yourenvironment*.cloudax.dynamics.com/data
 4.  If you’re using Internet Explorer, you must download the JSON file before you can view it. To view the JSON file, you must have Microsoft Visual Studio or a similar tool. If you’re using Chrome, you can view the feed in your browser window. 
 
-    [![Feed Example](./media/1-1024x616.png)](./media/1.png)
+    [![JSON file](./media/1-1024x616.png)](./media/1.png)
 
 Access OData endpoints in Power Query
 =====================================
 
 1.  Start Excel.
 2.  On the **Power Query** tab, click **From Other Sources** &gt; **From OData Feed**. 
-    [![2](./media/2-1024x457.png)](./media/2.png)
+    [![Power Query tab in Excel](./media/2-1024x457.png)](./media/2.png)
 
 3.  In the dialog box, enter the URL of the OData endpoint, and then click **OK**. For example, the URL will be in the following format: https://*yourenvironment*.cloudax.dynamics.com/data 
     
-    [![3](./media/3.png)](./media/3.png)
+4.  Power Query requests that you authenticate the OData feed. Select **Organizational account** as the authentication method, and then click **Sign in**. 
 
-4.  Power Query requests that you authenticate the OData feed. Select **Organizational account** as the authentication method, and then click **Sign in**. [![4](./media/4.png)](./media/4.png) **Note:** Finance and Operations uses Microsoft Azure Active Directory (AAD) to authenticate users. When you select **Organizational account** and enter your credentials, you're authenticated against Finance and Operations and are presented with only the data that you have access to through the Finance and Operations security model. Power Query displays a list of available entities.
+       > [!Note]
+       > Finance and Operations uses Microsoft Azure Active Directory (AAD) to authenticate users. When you select **Organizational account** and enter your credentials, you're authenticated against Finance and Operations and are presented with only the data that you have access to through the Finance and Operations security model. Power Query displays a list of available entities.
+
 5.  Click **Connect**. The Power Query **Navigator** pane is loaded. 
-
-    [![5](./media/5.png)](./media/5.png)
 
 6.  Use the **Navigator** pane to select the following entities, and then click **Load**:
     -   FiscalCalendars
     -   GeneralLedgerActivities
     -   MainAccounts
-
-    [![6](./media/6.png)](./media/6.png) 
     
-    Power Query loads the data from Finance and Operations into the Excel data model. Depending on the size of the data set, this process might require some time. 
+        Power Query loads the data from Finance and Operations into the Excel data model. Depending on the size of the data set, this process might require some time. 
     
-    [![7](./media/7.png)](./media/7.png)
-
 7.  Double-click **MainAccounts** to load the query. 
-
-    [![8](./media/8.png)](./media/8.png)
 
 8.  You can now use Power Query to perform transformations on your data set. For example, you can rename columns and transform values in the data set.
     1.  On the **Home** tab, click **Choose Columns**, select the following fields, and then click **OK**:
@@ -126,25 +120,25 @@ In this section, we will review the Excel data model to optimize the data for re
 
     You should now have two relationships that join your three entities. 
     
-    [![9](./media/9.png)](./media/9.png) 
+    > [!Note]
+    > Depending on your version of Office, the appearance of the **Manage Relationships** dialog box might differ slightly.
     
-    **Note:** Depending on your version of Office, the appearance of the **Manage Relationships** dialog box might differ slightly.
 3.  Close the **Manage Relationships** dialog box.
+
 4.  You can now hide fields that are used only for calculations or relationships from the end user. Follow these steps:
     1.  On the **GeneralLedgerActivities** tab, right-click the **MainAccountRecID** column, and then select **Hide from Client Tools**.
     2.  Repeat the previous step across all entities for fields that should not be presented to the end user.
 
 5.  To help guarantee that values are presented correctly, set the data type and format for all fields. Select the **Expenses** column, and set the data type and format to **Decimal Number**. Repeat this step across all fields to improve the presentation in visualizations and Q&A. 
-    
-    [![10](./media/10.png)](./media/10.png)
 
 6.  You can now add a calculated measure to use in reports. Use the **Measures** pane at the bottom of the PowerPivot window to create two new measures. Follow these steps:
     1.  Click in the **Measure** pane, enter the following formula, and then press Enter: Total Expenses this year:=calculate(sum(\[Expenses\]),'FiscalCalendars'\[YearOffset\]=0)
     2.  Click in the cell below the previous cell, and enter the following formula: Total Expenses last year:=calculate(sum(\[Expenses\]),'FiscalCalendars'\[YearOffset\]=-1)
 
-    **Note:** These formulas use the Finance and Operations language. Both formulas sum the **Expenses** column, but each applies a different filter to your fiscal calendars on the year offset. A year offset of **0** specifies the current financial year, and a year offset of **-1** specifies last financial year. This step lets users take advantage of their custom Finance and Operations fiscal calendars in Power BI. 
+    > [!Note]
+    > These formulas use the Finance and Operations language. Both formulas sum the **Expenses** column, but each applies a different filter to your fiscal calendars on the year offset. A year offset of **0** specifies the current financial year, and a year offset of **-1** specifies last financial year. This step lets users take advantage of their custom Finance and Operations fiscal calendars in Power BI. 
     
-    [![11](./media/111.png)](./media/111.png)
+    [![PowerPivot window](./media/111.png)](./media/111.png)
 
 7.  Click each new measure, and set the format to **Decimal Number**. Then close the Power Pivot data model.
 
@@ -165,7 +159,7 @@ In this section, we will create a basic report by using Power View.
     1.  Click the table, and then, on the **Design** tab, click **Column Chart** &gt; **Stacked Column** to change the table into a column chart.
     2.  Expand the size of the column chart until it fills two-thirds of your report. To expand the chart, drag the corners. 
         
-        [![12](./media/121-1024x645.png)](./media/121.png)
+        [![To expand the chart, drag the corners](./media/121-1024x645.png)](./media/121.png)
 
     3.  To add more detail to the chart, select the following fields in the Power View **Fields** pane:
         -   FiscalCalendars – Quarters
@@ -176,13 +170,13 @@ In this section, we will create a basic report by using Power View.
         1.  Drag **PeriodName** to the **AXIS** area underneath **Quarter**.
         2.  Drag **Main Account Category** to the **Legend** area.
 
-        **Note:** As you add fields from the three entities, notice that they are presented in a single visualization. This is possible because of the relationships that you previously set up in the Power Pivot data model. 
+        > [!Note}
+        > As you add fields from the three entities, notice that they are presented in a single visualization. This is possible because of the relationships that you previously set up in the Power Pivot data model. 
         
-        [![](./media/13.png)](./media/13.png)
+   
 
 3.  You can now drill into the quarter by double-clicking the **Q1** column.
     
-    [![](./media/14.png)](./media/14.png)
 
 4.  In the **Click here to add a title** field, enter a title for your report.
 5.  Save the Excel workbook to your local machine or to Microsoft OneDrive.
@@ -195,32 +189,28 @@ In this section, we will create a dashboard by using the data model that we crea
 1.  Start your web browser, and go to <http://app.powerbi.com>.
 2.  Sign in, if sign-in is required. If you don't have a Power BI license, you must activate a trial, or contact your administrator.
 3.  Create a new dashboard by clicking the plus sign (**+**) next to **Dashboards**. Enter a suitable name. The blank dashboard resembles the following screen shot.
-    
-    [![](./media/15.png)](./media/15.png)
+   
 
 4.  Select the **Get Data** option to import data into the dashboard. A page that resembles the following screen shot appears. 
 
-    [![](./media/16-1024x448.png)](./media/16.png)
+    [![Power BI Preview](./media/16-1024x448.png)](./media/16.png)
 
 5.  Select **Excel Workbook**, and then click **Connect**. In the **File picker** dialog box, click **Browse**, and select the Excel model that you saved in the previous section. Then click **Connect**. 
 
-    [![](./media/17-1024x490.png)](./media/17.png) 
+    [![Uploading your file to Power BI](./media/17-1024x490.png)](./media/17.png) 
     
     A blank chart icon appears in the dashboard to indicate that the data is available. 
     
-    [![](./media/18-1024x451.png)](./media/18.png)
+    [![Blank chart icon](./media/18-1024x451.png)](./media/18.png)
 
 6.  Click the blank chart icon. The Power View report that you previously authored appears. You can author additional reports and pin them to the dashboard by using PowerBI.com functionality. 
 
-    [![](./media/19-1024x395.png)](./media/19.png)
+    [![The Power View report that you previously authored appears.](./media/19-1024x395.png)](./media/19.png)
 
 7.  Click the chart, and then click the **Pin** button in the upper-right corner to pin the report to your dashboard. 
 
-    [![](./media/20.png)](./media/20.png)
-
 8.  In the left navigation pane, click your dashboard to return to it. Your chart now appears in the dashboard. 
     
-    [![](./media/21.png)](./media/21.png)
 
 You can repeat this process to build out your dashboard.
 
