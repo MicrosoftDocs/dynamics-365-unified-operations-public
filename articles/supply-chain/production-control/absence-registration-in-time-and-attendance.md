@@ -68,16 +68,16 @@ absence, doctor's appointments, jury duty, and children's sickness.
 If you know that a worker is going to be absent for a coming period, such as an upcoming vacation, you can use planned absence. You set up planned absence by configuring the absence code to consider the planned absence. With a planned absence setup you can avoid getting prompted for an absence code in the planned absence period when calculating users' time registrations. Planned absence can be defined for a single worker or as a batch job where you can bulk update the workers' planned absence.
 
 ### Set up planned absence
-1 Click **Human resources** -> **Workers** -> **Employees**, and select an employee.
-2 Click **Time** -> **Time assignments** -> **Time Absence registration**, and set up the planned absence . 
+1.	Click **Human resources** -> **Workers** -> **Employees**, and select an employee.
+2.	Click **Time** -> **Time assignments** -> **Time Absence registration**, and set up the planned absence . 
 
 ## Planned absence interrupted
 If you apply the option **Interrupt** on a planned absence setup, the planned absence will
 be interrupted if the worker logs in during the planned absence period. Subsequently, the planned absence will be marked as **Interrupted** and it will not have any effect on future calculations. 
 
 ### Set up planned absence with interruption
-1 Navigate to the **Time Absence registration** page as described in the guidelines to set up planned absence
-2 Select **Interrupt**.
+1.	Navigate to the **Time Absence registration** page as described in the guidelines to set up planned absence
+2.	Select **Interrupt**.
 
 The use of the **Interrupt** option is applicable when time is registered through the Shop floor terminal
 or the Shop floor device, but it is not applicable if the registrations are entered on the
@@ -115,18 +115,22 @@ in a Flex+ period, no absence is calculated and half an hour is added to the
 worker's flex balance.
 
  
-## Register absence in the calculation and approve process
+## Absence in the calculation and approve process
 
-The workers time registrations must be calculated and approved before they can
-be transferred as pay items to a payroll system. In the calculate and approve
-pages is it possible to make changes to the workers time registrations including
-the workers absence registration. If a time period is manually provided with an
-absence code by the approver, the absence code for this period will not be
+Workers time registrations must be calculated and approved before they can
+be transferred as pay items to a payroll system. 
+
+An approver can make changes to a worker's time registrations, including any absence that the worker has registered. If the approver manually enters a time period with an absence code, the absence code for this period will not be
 overridden by the default absence code from the time and attendance parameters.
-If for example a worker is clock-in at 10am and select Late as absence code,
-then he later informs the supervisor that from 9am to 10am he had a doctor's
-appointment, which should not result in deduction in the payroll. The supervisor
-will adjust the two hours Late absence from 8am to 10am with a manual entered
-Illness absence for one hour.
+
+For example, a worker might clock in at 10am and select an absence code that signifies that he is late,
+and then later inform the supervisor that from 8am to 10am he had a doctor's appointment. A doctor's appointment should not result in deduction in the payroll so in this case the supervisor can adjust the two hours absence from 8am to 10am with a manually entered
+absence of two hours that signifies illness.
+
+### Calculate and approve absence 
+""In the calculate and approve pages"" (path)
+
+1.	Click ???
+
 
  
