@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: 
+title: Customer attributes
 description: 
-author: 
+author: mugunthanm 
 manager: AnnBe
-ms.date: 10/05/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -15,47 +15,42 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Application User
+audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.reviewer: robinr
+ms.search.scope: Retail, Operations 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: 
-ms.search.validFrom: 2016-10-05
+ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 
 ---
 
-**Customer attributes:**
+# Customer attributes
 
+We extended the attribute framework in headquarters (HQ) to support attributes for Customers, Customer orders, Cash and carry transactions, and Call center orders.
 
+> [!NOTE]
+> The attributes are read-only, but in the case of Customer or Order attributes, you can edit and set the values at the individual customer or order level too.
 
-**Attributes:**
+With the new Customer attribute framework, you can use configurations to add new fields to the customer master, and show that automatically in customer add/edit or customer details screens in POS or HQ. After configuring the customer attribute group in retail parameters, POS and HQ will automatically show up the new attribute without any code change or customization. The customer card in the POS transaction screen can also be configured to show the customer attributes using the screen layout designer.
 
-We extended the attribute framework in HQ to support attributes for Customers, Customer orders, cash and carry transactions and call center orders.
+# Why and when you should customer attributes
 
-**Note:** The attributes in product is read-only but in case of customer or order attributes you can edit and set the values at individual customer or at order level too.
+If you want to add new fields to customer master and capture the information in POS or HQ then you can use this feature. Previously to add a new field in customer master and to show it in HQ and POS, you must create new extension table in HQ, channel DB and modify CRT and POS code inline to do this. You must write code in CRT and POS to read/write to the extension fields and to show it in POS, handle this in different POS views and scenarios like Customer details screen, customer panel in transaction screen etc. and in CRT you need to handle all insert, Select and update operation. Now with the new functionality all this can be done through configuration without writing any code or creating custom extension tables in HQ or channel. With the first version we are not supporting datetime and reference attribute type, in those you should use extension properties and custom control to show the details in POS.
 
-**Customer attributes**:
+## How to configure customer attributes in POS and HQ
 
-With the new customer attribute framework, you can use configurations to add new fields to the customer master and show that automatically in customer add/edit or customer details screens in POS or HQ. After configuring the customer attribute group in retail parameters, POS and HQ will automatically show up the new attribute without any code change or customization. The customer card in the POS transaction screen can also be configured to show the customer attributes using the screen layout designer.
-
-**Why and when you should customer attributes:**
-
-If you want to add new fields to customer master and capture the information in POS or HQ then you can use this feature. Previously to add a new field in customer master and to show it in HQ and POS you must create new extension table in HQ, channel DB and modify CRT and POS code inline to do this. You must write code in CRT and POS to read/write to the extension fields and to show it in POS, handle this in different POS views and scenarios like Customer details screen, customer panel in transaction screen etc. and in CRT you need to handle all insert, Select and update operation. Now with the new functionality all this can be done through configuration without writing any code or creating custom extension tables in HQ or channel. With the first version we are not supporting datetime and reference attribute type, in those you should use extension properties and custom control to show the details in POS.
-
-**How to configure customer attributes in POS and HQ:**
-
-**Define attribute types:**
+### Define attribute types
 
 1.  Click **Product information management** &gt; **Setup** &gt; **Categories and** **Attributes** &gt; **Attribute types**.
 
-2.  In the **Attribute types** form, click New to add a new attribute type.
+2.  In the **Attribute types** form, click **New** to add a new attribute type.
 
 3.  Enter a name for the attribute type.
 
@@ -65,15 +60,16 @@ If you want to add new fields to customer master and capture the information in 
 
 6.  To define a fixed list of values for the attribute type, select the **Fixed list** check box. Then, on the **Values** FastTab, add the list of values.
 
- **Note:** The **Fixed list** check box is available only for the **Text** attribute type.
+    > [!NOTE]
+    > The **Fixed list** check box is available only for the **Text** attribute type.
 
-1.  To define a range of valid values for the attribute type, select the **Value range** check box. Then, on the **Range** FastTab, enter the valid range of values.
+7.  To define a range of valid values for the attribute type, select the **Value range** check box. Then, on the **Range** FastTab, enter the valid range of values.
 
-**Define attributes**
+### Define attributes
 
 1.  Click **Product information management** &gt; **Setup** &gt; **Categories and** **Attributes** &gt; **Attributes**.
 
-2.  In the **Attributes** form, click New to add a new attribute.
+2.  In the **Attributes** form, click **New** to add a new attribute.
 
 3.  Enter the name, friendly name, description, and any help text that you want to display to the user for the attribute.
 
@@ -85,13 +81,13 @@ If you want to add new fields to customer master and capture the information in 
 
 7.  Repeat steps 2 through 6 to add more attributes.
 
-**Define attribute group:**
+### Define attribute group
 
 1.  Click **Product information management** &gt; **Setup** &gt; &gt; **Categories and** **Attributes** &gt; **Attribute groups**.
 
-2.  In the **Attribute groups** form, click New to add a new attribute group.
+2.  In the **Attribute groups** form, click **New** to add a new attribute group.
 
-3.  Enter the name, and On the **General** FastTab enter friendly name, description, and any help text for the attribute group.
+3.  Enter the name, and in the **General** FastTab enter friendly name, description, and any help text for the attribute group.
 
 4.  Click the **Attributes** FastTab.
 
@@ -99,15 +95,15 @@ If you want to add new fields to customer master and capture the information in 
 
 6.  Click **Translate** to open the **Text translation** form, where you can enter the description, friendly name, and help text for the attribute group in additional languages.
 
-**Link the attribute group to the customers in Retail parameters:**
+### Link the attribute group to the customers in Retail parameters
 
-1.  Click **Retail** &gt; **Headquarters** **setup** &gt; **Parameters** &gt; **Retail** **parameters**
+1.  Click **Retail** &gt; **Headquarters** **setup** &gt; **Parameters** &gt; **Retail** **parameters**.
 
-2.  On the general tab, select the attribute group to be displayed in POS in Customer attribute group field.
+2.  On the **General** tab, select the attribute group to be displayed in POS in the Customer attribute group field.
 
-**Run the distribution jobs:**
+### Run the distribution jobs
 
-1.  Click **Retail** &gt; **Retail** **IT** &gt; **Distribution** **schedule**
+1.  Click **Retail** &gt; **Retail** **IT** &gt; **Distribution** **schedule**.
 
 2.  Select the Customers job (1010) and click the Run now button in the action bar. On prompt click Yes.
 
@@ -166,4 +162,4 @@ If you want to add new fields to customer master and capture the information in 
 
 
 
-# 
+
