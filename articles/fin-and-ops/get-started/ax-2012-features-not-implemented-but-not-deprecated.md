@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Dynamics AX 2012 features that haven't been implemented but aren't deprecated
+title: Dynamics AX 2012 features that have been postponed
 description: This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Although these features haven't yet been implemented, they aren't deprecated. 
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/13/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Dynamics AX 2012 features that haven't been implemented but aren't deprecated
+# Dynamics AX 2012 features that have been postponed
 
 [!include[banner](../includes/banner.md)]
 
@@ -46,12 +46,14 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 <tr class="header">
 <th>Feature</th>
 <th>Description</th>
+<th>Update as of October, 13 2017
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Intelligent Data Management Framework (IDMF)</td>
 <td>IDMF is an add-on tool that lets system administrators optimize the performance of Microsoft Dynamics AX installations. IDMF assesses the health of the application, analyzes current usage patterns, and helps reduce database size.</td>
+<td></td>
 </tr><tr class="odd">
 <td>Alerts</td>
 <td>Implementation of the alerts functionality is planned for a future update. Alerts help users keep track of data changes in the system.</td>
