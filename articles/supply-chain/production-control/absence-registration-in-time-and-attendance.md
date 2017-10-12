@@ -53,7 +53,7 @@ example, be configured to deduct or grant pay. A company can, for example, defin
 Automatic absence codes can be set up to be used for calculating workers' time when no absence is registered. The workers time profile determines if the absence code for standard time or flex time is used. 
 
 ### Set up standard and flex time 
--  Configure the standrd and flex-time parameters by using the **Auto insert absence** or **Auto insert Flex-** options on the **Time and attendance parameters** page.
+-  Configure the standard and flex-time parameters by using the **Auto insert absence** or **Auto insert Flex-** options on the **Time and attendance parameters** page.
 
 ## Absence groups
 
@@ -62,18 +62,18 @@ absence, doctor's appointments, jury duty, and children's sickness.
 
 
 ## Planned absence
-If you know that a worker is going to be absent for a coming period, such as an upcoming vacation, you can use planned absence. You set up planned absence by configuring the absence code to consider the planned absence. With a planned absence setup you can avoid getting prompted for an absence code in the planned absence period when calculating users' time registrations. Planned absence can be defined for a single worker or as a batch job where you can bulk update the workers' planned absence.
+If you know that a worker is going to be absent for a period, such as an upcoming vacation, you can use planned absence. You set up planned absence by configuring the absence code to consider the planned absence. With a planned absence setup you can avoid getting prompted for an absence code during the absence period when calculating users' time registrations. Planned absence can be defined for a single worker or as a batch job where you can bulk update the workers' planned absence.
 
 ### Set up planned absence
 1.	Click **Human resources** -> **Workers** -> **Employees**, and select an employee.
-2.	Click **Time** -> **Time assignments** -> **Time Absence registration**, and set up the planned absence . 
+2.	Click **Time** -> **Time assignments** -> **Time Absence registration**, and set up the planned absence. 
 
 ## Planned absence interrupted
 If you apply the option **Interrupt** on a planned absence setup, the planned absence will
 be interrupted if the worker logs in during the planned absence period. Subsequently, the planned absence will be marked as **Interrupted** and it will not have any effect on future calculations. 
 
 ### Set up planned absence with interruption
-1.	Navigate to the **Time Absence registration** page as described in the guidelines to set up planned absence
+1.	Navigate to the **Time Absence registration** page as described in the guidelines to set up planned absence.
 2.	Select **Interrupt**.
 
 The use of the **Interrupt** option is applicable when time is registered through the Shop floor terminal
@@ -94,20 +94,20 @@ The examples uses this profile.
 
 ### Example 1 - Logging out in the Flex- period
 
-The worker clocks in at 8:00am and clocks out at 3:30pm.
+The worker clocks in at 8:00 a.m. and clocks out at 3:30 p.m.
 
 As the worker clocks out in a Flex- period, no absence is calculated and half an
 hour is deducted from the worker's flex balance.
 
 ### Example 2 - Logging out in the Standard time period
 
-The worker clocks in at 8:00am and clocks out at 2:30pm. 
+The worker clocks in at 8:00 a.m. and clocks out at 2:30 p.m. 
 
 As the worker clocks out during the standard time period, absence is calculated from 2:30pm to 4pm and an absence period of 1.5 hours is registered. An an absence code for that period is required.
 
 ### Example 3 - Logging out in the Flex+ period
 
-The worker clocks in at 8:00am and clocks out at 4:30pm. As the worker clocks out
+The worker clocks in at 8:00 a.m. and clocks out at 4:30 p.m. As the worker clocks out
 in a Flex+ period, no absence is calculated and half an hour is added to the
 worker's flex balance.
 
@@ -120,13 +120,11 @@ be transferred as pay items to a payroll system.
 An approver can make changes to a worker's time registrations, including any absence that the worker has registered. If the approver manually enters a time period with an absence code, the absence code for this period will not be
 overridden by the default absence code from the time and attendance parameters.
 
-For example, a worker might clock in at 10am and select an absence code that signifies that he is late,
-and then later he might inform the supervisor that from 8am to 10am he had a doctor's appointment. A doctor's appointment should not result in deduction in the payroll so in this case the supervisor can adjust the two hours absence from 8am to 10am with a manually entered absence code of two hours that signifies illness.
+For example, a worker might clock in at 10 a.m. and select an absence code that signifies that he is late,
+and then later he might inform the supervisor that from 8 a.m. to 10 a.m. he actually had a doctor's appointment. A doctor's appointment should not result in deduction in the payroll so in this case the supervisor can adjust the two hours of absence from 8 a.m. to 10 a.m. with a manually entered absence code of two hours that signifies illness.
 
 ### Calculate and approve absence 
-""In the calculate and approve pages"" (path)
-
-1.	Click Time attendance -> Review and approve -> Approve or Calculate 
+-	Click **Time attendance** -> **Review and approve** -> **Approve or Calculate** 
 
 
  
