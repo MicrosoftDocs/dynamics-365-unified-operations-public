@@ -41,54 +41,45 @@ attendance.
 
  
 
-**Absence**
+**Absence based on normal work hours**
 
- 
+A worker who is not working according to normal work hours is considered absent for the periods that deviate from the normal work hours. The normal work hours are defined in the worker's standard time profile.
 
-A that is  worker is considered absent if he is not working according to his normal
-work hours. The normal work hours are defined in the workers standard time
-profile.
+For example, if a worker is working on a day profile with clock-in at 7:00am and
+clock-out at 3:00pm and he clocks in at 9:00am, then he is considered to be absent
+from 7:00am to 9:00am on that day. 
 
-If a worker is for example working on a day profile with clock-in at 7:00am and
-clock-out at 3:00pm and is clocking in at 9:00am, then he is regarded as absence
-from 7:00am to 9:00am on that day. The worker will in that case be prompted for
-a reason for being absence by selecting from a list of absence codes defined by
-the company. Different rules can be applied to absence codes; a code can for
-example be configured to deduct or grant pay. A company could for example define
-an absence code **Late** for coming in late without any good reason, that
-deducts pay, and an absence code **Internal course** that when selected will not
-deduct the workers’ pay in the time he was absence attending an internal course.
+The worker will in that case be prompted for a reason for the absence and he can provide the reason by selecting an absence code.
 
-**Absence groups and codes**
+**Absence codes**
+Absence codes are defined by the company and they define types of absence.
+Different rules can be applied to absence codes. A code can, for
+example, be configured to deduct or grant pay. A company can, for example, define an absence code called ***Late*** for coming in late without any good reason and an absence code called ***Internal course*** for time spent on internal courses. ***Late*** could be set up to deduct pay and ***Internal course*** would not deduct from the workers’ pay in the time he was absence attending an internal course.
 
-Absence codes are grouped in Absence groups. In that way it is possible to group
-codes with common characteristics for example group of absence codes for legal
-absence doctor's appointment, jury duty and a sick child.
+Automatic absence codes can be set up to be used for calculating workers' time when no absence is registered. The workers time profile determines if the absence code for standard time or flex time is used. You can configure the standrd and flex-time parameters by using the **Auto insert absence** or **Auto insert Flex-** options on the **Time and attendance parameters** page.
 
- 
+**Absence groups**
 
-In the setup we have capabilities to setup auto absence codes that will be used
-when the workers time is calculated. If no absence if given for a worker, the
-auto absence code from setup is used. The workers time profile determine if the
-absence code for Auto insert absence or Auto insert Flex- is used.
+Absence codes are grouped in Absence groups. You use absence groups to group codes with common characteristics such as codes for legal
+absence, doctor's appointments, jury duty, and children's sickness.
 
- 
 
 **Planned absence**
 
-You can set up **planned absence**, with the use of an absence code. You use
-**Planned absence** if you know that a worker is going to be absence for a
-coming period, for example a coming vacation period. This way you avoid getting
-prompted for an absence code in the planned absence period when calculating the
-users time registrations. Planned absence can be defined on a single worker or
-as a batch job where you can bulk update the workers planned absence. With the
-use of the option **Interrupt** on **Planned absence**, the planned absence will
-be interrupted if the worker is logging in in the planned absence period. After
-that the planned absence will be marked as **Interrupted** and will not have any
-effect for future calculations. The use of the **Interrupt** option is
-applicable when the time registrations are done through the shop floor terminal
-or the shop floor device, but not when the registrations are done through the
-calculate and approval pages or the Electronic time card page.
+Using an absence code, you can set up planned absence. Planned absence can be used if you know that a worker is going to be absence for a coming period such as upcoming vacation. This way you can avoid getting
+prompted for an absence code in the planned absence period when calculating users' time registrations. Planned absence can be defined for a single worker or as a batch job where you can bulk update the workers planned absence. 
+
+***Set up planned absence***
+1
+2
+
+
+If you apply the option **Interrupt** on a planned absence setup, the planned absence will
+be interrupted if the worker logs in during the planned absence period. Subsequently, the planned absence will be marked as **Interrupted** and will not have any
+effect on future calculations. The use of the **Interrupt** option is
+applicable when time is registered through the Shop floor terminal
+or the Shop floor device, but it is not applicable if the registrations are entered on the
+calculate and approval pages or on the Electronic time card page.
 
  
 
