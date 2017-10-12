@@ -32,22 +32,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-**Introduction:**
-
- 
-
 This topic describes the concepts of absence and how to handle absence in Time and
 attendance.
 
- 
+##Absence based on normal work hours
 
-**Absence based on normal work hours**
+A worker is considered absent for the hours where he is not working according to normal work hours. The normal work hours are defined in the worker's standard time profile.
 
-A worker who is not working according to normal work hours is considered absent for the periods that deviate from the normal work hours. The normal work hours are defined in the worker's standard time profile.
-
-For example, if a worker is working on a day profile with clock-in at 7:00am and
-clock-out at 3:00pm and he clocks in at 9:00am, then he is considered to be absent
-from 7:00am to 9:00am on that day. 
+For example, if a worker is working on a day profile with clock-in at 7:00 a.m. and
+clock-out at 3:00 p.m. and he clocks in at 9:00 a.m., then he is considered to be absent
+from 7:00 a.m. to 9:00 a.m. on that day. 
 
 The worker will in that case be prompted for a reason for the absence and he can provide the reason by selecting an absence code.
 
@@ -56,7 +50,10 @@ Absence codes are defined by the company and they define types of absence.
 Different rules can be applied to absence codes. A code can, for
 example, be configured to deduct or grant pay. A company can, for example, define an absence code called ***Late*** for coming in late without any good reason and an absence code called ***Internal course*** for time spent on internal courses. ***Late*** could be set up to deduct pay and ***Internal course*** would not deduct from the workers’ pay in the time he was absence attending an internal course.
 
-Automatic absence codes can be set up to be used for calculating workers' time when no absence is registered. The workers time profile determines if the absence code for standard time or flex time is used. You can configure the standrd and flex-time parameters by using the **Auto insert absence** or **Auto insert Flex-** options on the **Time and attendance parameters** page.
+Automatic absence codes can be set up to be used for calculating workers' time when no absence is registered. The workers time profile determines if the absence code for standard time or flex time is used. 
+
+### Set up standard and flex time 
+-  Configure the standrd and flex-time parameters by using the **Auto insert absence** or **Auto insert Flex-** options on the **Time and attendance parameters** page.
 
 ## Absence groups
 
