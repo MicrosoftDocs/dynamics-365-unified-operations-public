@@ -105,59 +105,61 @@ If you want to add new fields to customer master and capture the information in 
 
 1.  Click **Retail** &gt; **Retail** **IT** &gt; **Distribution** **schedule**.
 
-2.  Select the Customers job (1010) and click the Run now button in the action bar. On prompt click Yes.
+2.  Select the **Customers** job (1010) and click the **Run now** button in the Action Pane. When prompted, click **Yes**.
 
-3.  Select the Global configuration (1110) and click the Run now button in the action bar. On prompt click Yes.
+3.  Select the **Global configuration** job (1110) and click the **Run now** button in the Action Pane. When prompted, click **Yes**.
 
-**View Customer attributes:**
+### View customer attributes
 
-**HQ:**
+#### HQ
 
-1.  Click **Retail &gt;** **Customers** &gt; **All Customers**
+1.  Click **Retail &gt;** **Customers** &gt; **All Customers**.
 
-2.  Click the **Retail tab** in action bar and then click the **Retail attributes** under the **Attribute section** to view or edit the attribute values.
+2.  Click the **Retail tab** in the Action Pane, and then click  **Retail attributes** under **Attribute section** to view or edit the attribute values.
+
+#### POS
+
+1.  Launch POS and navigate to the **Customer Add/Edit** screen to set or update the attribute values for the customer, or navigate to the **Customer details** screen to view the configured attributes.
+
+### Display customer attribute in Customer panel in POS transaction screen
+
+#### HQ
+
+1.  Click **Retail &gt;** **Channel** **setup** &gt; **POS Setup** &gt; **POS &gt; Screen layouts**.
+
+2.  In the **screen layout** form, click **New** to create a new screen layout or use any existing screen layout.
+
+3.  Enter the screen layout ID and name.
+
+4.  In the **Layout sizes** FastTab, click the **Add** button to add new layout sizes for the POS.
+
+5.  In the **Name** drop-down list, select the desired POS screen resolution.
+
+6.  Click the **Layout designer** button under the **Layout sized** FastTab.
+
+7.  If prompted, click **Yes** to download and install the Retail Designer Host by clicking the **Install/Run** button.
+
+8.  When prompted, enter the Dynamics 365 username and password to open the designer.
+
+9.  When the designer is launched, drag and drop the **Customer** card anywhere in the screen layout designer.
+
+10. Right click the **Customer** card, and click **Customize**.
+
+11. When the **Customization - Customer** card form opens, select the required attributes form the **Available columns** section and click the **&gt**; button to move it to the **Selected columns** section. You can move the attributes up or down by clicking the **Up** or **Down** buttons.
+
+12. When done, click **OK** to save the changes.
+
+13. Close the screen layout designer by clicking the **X** button on the top-right corner, and when prompted click **Yes** to save the changes.
+
+14. Click **Retail** &gt; **Retail** **IT** &gt; **Distribution** **schedule**.
+
+15. Select the **Registers** job (1090) and click the **Run now** button in the Action Pane. When prompted, click **Yes**.
 
 **POS:**
 
-1.  Launch POS and navigate to Customer Add/Edit screen to set or update the attribute values for the customer or navigate to customer details screen to view the configured attributes.
+1.  Launch POS and add a customer to a transaction. 
 
-**Display customer attribute in Customer panel in POS transaction screen:**
-
-**HQ:**
-
-1.  Click **Retail &gt;** **Channel** **setup** &gt; **POS Setup** &gt; **POS &gt; Screen layouts**
-
-2.  In the **screen layout** form Click New to create a new screen layout or use any existing screen layout.
-
-3.  Enter the screen layout ID and Name.
-
-4.  In the Layout sizes FastTab, click Add button to add a new layout sizes for the POS.
-
-5.  In the Name drop down selected the desired POS screen resolution.
-
-6.  Click the Layout designer button under the Layout sized FastTab.
-
-7.  If prompted click Yes to download and install the Retail Designer Host by clicking the Install/Run button.
-
-8.  On prompt enter the Dynamics 365 username and password to open the designer.
-
-9.  When the designer is launched, drag and drop the Customer card anywhere in the screen layout designer.
-
-10. Right click the Customer card and click Customize.
-
-11. When the Customization- Customer card form opens, select the required attributes form the Available columns section and click the &gt; button to move it to the Selected Columns section. You can move the attributes up or down by clicking the Up or Down buttons.
-
-12. Once done, Click OK to save the changes.
-
-13. Close the Screen layout designer by clicking the X button on the top right corner and when prompted Click Yes to save the changes.
-
-14. Click **Retail** &gt; **Retail** **IT** &gt; **Distribution** **schedule**
-
-15. Select the Registers job (1090) and click the Run now button in the action bar. On prompt click Yes.
-
-**POS:**
-
-1.  Launch POS and add customer to a transaction. Navigate to transaction screen to view the attributes added in the Customer card.
+2.  Navigate to transaction screen to view the attributes added to the **Customer** card.
 
 
 
