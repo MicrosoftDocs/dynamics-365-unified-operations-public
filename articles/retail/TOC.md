@@ -39,6 +39,7 @@
 ## [Retail time and attendance](retail-time-attendance.md)
 
 # Modern Point of Sale (MPOS) and Cloud POS
+## [POS operations](POS-operations.md)
 ## Hardware peripherals
 ### [Retail peripherals overview](retail-peripherals-overview.md)
 ### [Microsoft tested POS hardware peripherals](microsoft-tested-pos-hardware-peripherals.md)
