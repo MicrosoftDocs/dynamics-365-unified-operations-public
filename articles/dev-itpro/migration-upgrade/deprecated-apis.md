@@ -732,12 +732,6 @@ Remove usage from your code.</td>
 <td>defaultMark</td>
 <td></td>
 </tr>
-<tr class="even">
-<td>FormDataSource</td>
-<td>Method</td>
-<td>displayOption</td>
-<td></td>
-</tr>
 <tr class="odd">
 <td>FormDataSource</td>
 <td>Method</td>
