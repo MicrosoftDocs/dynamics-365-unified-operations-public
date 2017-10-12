@@ -39,7 +39,7 @@ This topic provides information about screen layouts that are included with the 
 [Layout sizes](#layout-sizes)<br>
 [Companies and brands](#companies-and-brands)<br>
 [User sign in matrix](#user-sign-in-matrix)<br>
-[Reference icons and images](#reference-icons-and-images)<br>
+<!-- [Reference icons and images](#reference-icons-and-images)<br> -->
 
 ## Overview
 
@@ -161,11 +161,15 @@ Users have been provided to light up the various screen layouts.  Using the tabl
 
 >[!TIP]For best results, activate a register in the corresponding store location as the company of the persona you plan to use when signing in.  This will ensure that the visual profile and branding images align across the experience.  For example, if you are interested in seeing a Fabrikam layout for a cashier, you should activate using a register in the Houston store.
 
-## Reference icons and images
+<!-- Hiding until the content page is available on CustomerSource -->
 
-The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail > Channel setup > POS setup > POS > Images**.
+<!-- ## Reference icons and images -->
 
-![Images in Dynamics 365 for Retail](../retail/media/demo-screen-layouts-fig-5-1.png)
+<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail > Channel setup > POS setup > POS > Images**. -->
 
-Use the [POS Icon and Image Mapping](../retail/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs.
+<!-- ![Images in Dynamics 365 for Retail](../retail/media/demo-screen-layouts-fig-5-1.png) -->
+
+<!-- Use the [POS Icon and Image Mapping](../retail/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
+
+<!-- END HIDDEN CONTENT -->
 
