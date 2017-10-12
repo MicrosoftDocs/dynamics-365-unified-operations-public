@@ -1304,7 +1304,7 @@
 #### [Publish analytical applications on Power BI](../dev-itpro/analytics/publish-apps-powerbi.md)
 
 
-## Inventory management
+## [Inventory management](../supply-chain/inventory/inventory-home-page.md)
 ### [Arrival overview](../supply-chain/inventory/arrival-overview.md)
 ### [Set up an item arrival overview profile (Task guide)](../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md)
 ### [Quality management process](../supply-chain/inventory/quality-management-processes.md)
