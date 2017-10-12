@@ -40,7 +40,7 @@ You can use Inventory management for
 2. [Quality assurance](quality-management-processes.md)
 3. [Inventory activities](inventory-journals.md)
 4. [Outbound operations](outbound-process.md)
-5. [Inventory control](../cost-management/inventory-close.md): To learn more, see [Inventory accounting in Cost management](../cost-management/inventory-close.md).
+5. [Inventory control](../cost-management/inventory-close.md) (To learn more, see [Inventory accounting in Cost management](../cost-management/inventory-close.md).)
 
 ## Learning map
 
