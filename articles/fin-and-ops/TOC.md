@@ -1519,7 +1519,7 @@
 #### [Submit and approve project budgets](../supply-chain/procurement/tasks/submit-approve-project-budget.md)
 #### [Submit and approve project budget revisions](../supply-chain/procurement/tasks/submit-approve-project-budget-revision.md)
 
-## Production
+## [Production](../supply-chain/production-control/production-process-overview.md)
 ### [Production process overview](../supply-chain/production-control/production-process-overview.md)
 ### [Mixed mode planning: Combine discrete, process, and lean sourcing](../supply-chain/production-control/mixed-mode-plan.md)
 ### [Manage subcontracting work in production](../supply-chain/production-control/manage-subcontract-work-production.md)
