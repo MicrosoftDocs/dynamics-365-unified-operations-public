@@ -1304,7 +1304,7 @@
 #### [Publish analytical applications on Power BI](../dev-itpro/analytics/publish-apps-powerbi.md)
 
 
-## Inventory management
+## [Inventory management](../supply-chain/inventory/inventory-home-page.md)
 ### [Arrival overview](../supply-chain/inventory/arrival-overview.md)
 ### [Set up an item arrival overview profile (Task guide)](../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md)
 ### [Quality management process](../supply-chain/inventory/quality-management-processes.md)
@@ -1326,10 +1326,10 @@
 ### [Initialize stock levels in the warehouse (Task guide)](../supply-chain/inventory/tasks/initialize-stock-levels-warehouse.md)
 ### [Transfer physical inventory within the warehouse (Task guide)](../supply-chain/inventory/tasks/transfer-physical-inventory-within-warehouse.md)
 ### [Adjust stock levels in the warehouse (basic warehousing.md) (Task guide)](../supply-chain/inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing.md)
+### [Inventory tag counting)](../supply-chain/inventory/inventory-tag-counting.md)
 ### [Count inventory in a warehouse (Task guide)](../supply-chain/inventory/tasks/count-inventory-warehouse.md)
 ### [Define inventory counting processes (Task guide)](../supply-chain/inventory/tasks/define-inventory-counting-processes.md)
-### [Consignment](../supply-chain/inventory/consignment.md)
-### [Set up consignment](../supply-chain/inventory/set-up-consignment.md)
+### [Set up consignment](../supply-chain/inventory/consignment.md)
 ### [Change the ownership of consignment inventory based on production demand (Task guide)](../supply-chain/inventory/tasks/change-ownership-consignment.md)
 ### [Create a consignment replenishment order (Task guide)](../supply-chain/inventory/tasks/create-consignment-replenishment-order.md)
 ### [Monitor consignment inventory using vendor collaboration (Task guide)](../supply-chain/inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
@@ -1342,19 +1342,10 @@
 ### [Outbound process](../supply-chain/inventory/outbound-process.md)
 ### [Reserve inventory quantity](../supply-chain/inventory/reserve-inventory-quantities.md)
 ### [Reserve the same batch for a sales order](../supply-chain/sales-marketing/reserve-same-batch-sales-order.md)
+### [Inventory close](../supply-chain/cost-management/inventory-close.md)
 ### [Running average cost price](../supply-chain/cost-management/running-average-cost-price.md)
 ### [Adjust on-hand inventory cost value](../supply-chain/cost-management/adjust-hand-inventory-cost-values.md)
 ### [Tracking running average cost per inventory dimension](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
-### [Inventory close](../supply-chain/cost-management/inventory-close.md)
-### [FIFO with physical value and marking](../supply-chain/cost-management/fifo-physical-value-marking.md)
-### [LIFO Date with physical value and marking](../supply-chain/cost-management/lifo-date-physical-value-marking.md)
-### [LIFO with physical value and marking](../supply-chain/cost-management/lifo-physical-value-marking.md)
-### [Moving average](../supply-chain/cost-management/moving-average.md)
-### [Weighted average date](../supply-chain/cost-management/weighted-average-date.md)
-### [Weighted average with physical value and marking](../supply-chain/cost-management/weighted-average-physical-value-marking.md)
-### [Inventory object value](../supply-chain/cost-management/physical-quantity.md)
-### [Include physical value](../supply-chain/cost-management/include-physical-value.md)
-### [Physical and financial update](../supply-chain/cost-management/physical-financial-updates.md)
 
 
 ## Master planning
@@ -1528,7 +1519,7 @@
 #### [Submit and approve project budgets](../supply-chain/procurement/tasks/submit-approve-project-budget.md)
 #### [Submit and approve project budget revisions](../supply-chain/procurement/tasks/submit-approve-project-budget-revision.md)
 
-## Production
+## [Production](../supply-chain/production-control/production-process-overview.md)
 ### [Production process overview](../supply-chain/production-control/production-process-overview.md)
 ### [Mixed mode planning: Combine discrete, process, and lean sourcing](../supply-chain/production-control/mixed-mode-plan.md)
 ### [Manage subcontracting work in production](../supply-chain/production-control/manage-subcontract-work-production.md)
