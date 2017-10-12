@@ -77,7 +77,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 <tr class="even">
 <td>Employee self-service (ESS)</td>
 <td>ESS lets you enter requisitions for employees through a procurement site, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. ESS also lets you configure security and punch-out to external catalogs. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization on a requisition. Additionally, the ability to approve a vendor invoice and the functionality for confirming receipts that are associated with requisitions that lead to purchases aren't currently available.</td>
-<td>This feature was implemented in Dynamics 365 for Operations version 1611.</td>
+<td>Implemented in Dynamics 365 for Operations version 1611</td>
 </tr>
 <tr class="odd">
 <td>Customer self-service (CSS)</td>
@@ -87,17 +87,17 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 <tr class="even">
 <td>Cost accounting</td>
 <td>The <strong>Cost accounting</strong> module is designed to meet the requirements of internal costs and profitability reports at multiple organizational levels. To define the cost object level, the module depends on a correct mapping of financial dimensions. The module lets you perform advanced allocations of cost origin from expenditures that are registered in the general ledger or budget, and also lets you compare realized costs and budgeted costs.</td>
-<td>This feature was implemented in Dynamics 365 for Operations version 1611.</td>
+<td>Implemented in Dynamics 365 for Operations version 1611</td>
 </tr>
 <tr class="even">
 <td>Absence management in Human resources</td>
 <td>Functionality for entering absence transactions through both ESS and the client isn't included. Additionally, functionality for approving those absence transactions as a manager isn't included. In a future update, the current functionality will be enhanced to support a wider range of scenarios. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
-<td>This feature was implemented in Dynamics 365 for Finance and Operations in July 2017.</td>
+<td>Implemented in Dynamics 365 for Finance and Operations in July 2017</td>
 </tr>
 <tr class="odd">
 <td>US Payroll</td>
 <td>US Payroll isn't included. Limited initial setup capabilities will be available through the <strong>Human Resources 1</strong> &gt; <strong>Payroll</strong> configuration key.</td>
-<td>This feature was implemented in Dynamics 365 for Operations version 1611.</td></tr>
+<td>Implemented in Dynamics 365 for Operations version 1611</td></tr>
 <tr class="even">
 <td>External questionnaire and recruiting functionality</td>
 <td>Functionality for externally posting questionnaires and open jobs will be added in a future update.</td>
@@ -129,7 +129,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 <tr class="even">
 <td>Microsoft Project client integration</td>
 <td>The Microsoft Project client is integrated with projects.</td>
-<td>This feature was implemented in Dynamics 365 for Finance and Operations in July 2017.</td></tr>
+<td>Implemented in Dynamics 365 for Finance and Operations in July 2017</td></tr>
 <tr class="odd">
 <td>Specifications for Electronic reporting (ER) payment formats</td>
 <td>Currently, payment format specifications must be entered manually. In a future update, you will be able to select payment format specifications in a list. Currently, the following payment specifications are supported per payment format.
