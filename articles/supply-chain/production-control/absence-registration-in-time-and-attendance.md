@@ -85,10 +85,10 @@ calculate and approval pages or on the **Electronic timecard** page.
 
 ## Example of the use of absence in a flex profile
 
-In the following are three examples of how absence is calculated in a profile
+The following three examples illustrate how absence is calculated in a profile
 with flex periods.
 
-In all three examples uses the below profile.
+The examples uses this profile.
 
 | Clock-in | Standard time | Break        | Standard time | Flex-     | Clock-out | Flex+     |
 |----------|---------------|--------------|---------------|-----------|-----------|-----------|
@@ -97,29 +97,24 @@ In all three examples uses the below profile.
 
 ### Example 1 - Logging out in the Flex- period
 
-The worker clocks-in at 8:00am and clock-out at 3:30pm.
+The worker clocks in at 8:00am and clocks out at 3:30pm.
 
-As the worker is clocking out in a Flex- period no absence is calculated a half
-hour is deducted from the workers flex balance.
+As the worker clocks out in a Flex- period, no absence is calculated and half an
+hour is deducted from the worker's flex balance.
 
 ### Example 2 - Logging out in the Standard time period
 
-Worker clock-in at 8:00am and clock-out at 2:30pm. As the worker is clocking out
-in the standard time period absence is calculated from 2:30pm to 4pm = 1.5 hours
-and an absence code for that period is required.
+The worker clocks in at 8:00am and clocks out at 2:30pm. 
 
- 
+As the worker clocks out during the standard time period, absence is calculated from 2:30pm to 4pm and an absence period of 1.5 hours is registered. An an absence code for that period is required.
 
 ### Example 3 - Logging out in the Flex+ period
 
-Worker clock-in at 8:00am and clock-out at 4:30pm. As the worker is clocking out
-in a Flex+ period no absence is calculated and a half hour is added to the
-workers flex balance.
+The worker clocks in at 8:00am and clocks out at 4:30pm. As the worker clocks out
+in a Flex+ period, no absence is calculated and half an hour is added to the
+worker's flex balance.
 
  
-
- 
-
 ## Register absence in the calculation and approve process
 
 The workers time registrations must be calculated and approved before they can
