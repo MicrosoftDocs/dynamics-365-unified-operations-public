@@ -124,13 +124,12 @@ An approver can make changes to a worker's time registrations, including any abs
 overridden by the default absence code from the time and attendance parameters.
 
 For example, a worker might clock in at 10am and select an absence code that signifies that he is late,
-and then later inform the supervisor that from 8am to 10am he had a doctor's appointment. A doctor's appointment should not result in deduction in the payroll so in this case the supervisor can adjust the two hours absence from 8am to 10am with a manually entered
-absence of two hours that signifies illness.
+and then later he might inform the supervisor that from 8am to 10am he had a doctor's appointment. A doctor's appointment should not result in deduction in the payroll so in this case the supervisor can adjust the two hours absence from 8am to 10am with a manually entered absence code of two hours that signifies illness.
 
 ### Calculate and approve absence 
 ""In the calculate and approve pages"" (path)
 
-1.	Click ???
+1.	Click Time attendance -> Review and approve -> Approve or Calculate 
 
 
  
