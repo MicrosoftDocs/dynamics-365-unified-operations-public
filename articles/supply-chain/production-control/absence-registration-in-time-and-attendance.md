@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic describes the concepts of absence and how to handle absence in Time and
 attendance.
 
-##Absence based on normal work hours
+## Absence based on normal work hours
 
 A worker is considered absent for the hours where he is not working according to normal work hours. The normal work hours are defined in the worker's standard time profile.
 
