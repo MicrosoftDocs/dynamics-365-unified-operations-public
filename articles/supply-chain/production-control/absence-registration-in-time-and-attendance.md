@@ -65,30 +65,28 @@ absence, doctor's appointments, jury duty, and children's sickness.
 
 
 **Planned absence**
-
-Using an absence code, you can set up planned absence. Planned absence can be used if you know that a worker is going to be absence for a coming period such as upcoming vacation. This way you can avoid getting
-prompted for an absence code in the planned absence period when calculating users' time registrations. Planned absence can be defined for a single worker or as a batch job where you can bulk update the workers planned absence. 
+If you know that a worker is going to be absent for a coming period, such as an upcoming vacation, you can use planned absence. You set up planned absence by configuring the absence code to consider the planned absence. With a planned absence setup you can avoid getting prompted for an absence code in the planned absence period when calculating users' time registrations. Planned absence can be defined for a single worker or as a batch job where you can bulk update the workers' planned absence.
 
 ***Set up planned absence***
-1
-2
+1 Click **Human resources** -> **Workers** -> **Employees**, and select an employee.
+2 Click **Time** -> **Time assignments** -> **Time Absence registration**, and set up the planned absence . 
 
-
+**Planned absence interrupted**
 If you apply the option **Interrupt** on a planned absence setup, the planned absence will
-be interrupted if the worker logs in during the planned absence period. Subsequently, the planned absence will be marked as **Interrupted** and will not have any
-effect on future calculations. The use of the **Interrupt** option is
-applicable when time is registered through the Shop floor terminal
-or the Shop floor device, but it is not applicable if the registrations are entered on the
-calculate and approval pages or on the Electronic time card page.
+be interrupted if the worker logs in during the planned absence period. Subsequently, the planned absence will be marked as **Interrupted** and it will not have any effect on future calculations. 
 
- 
+***Set up planned absence with interruption***
+1 Navigate to the **Time Absence registration** page as described in the guidelines to set up planned absence
+2 Select **Interrupt**.
+
+The use of the **Interrupt** option is applicable when time is registered through the Shop floor terminal
+or the Shop floor device, but it is not applicable if the registrations are entered on the
+calculate and approval pages or on the **Electronic timecard** page.
 
 **Example of the use of absence in a flex profile**
 
 In the following are three examples of how absence is calculated in a profile
 with flex periods.
-
- 
 
 In all three examples uses the below profile.
 
@@ -96,7 +94,6 @@ In all three examples uses the below profile.
 |----------|---------------|--------------|---------------|-----------|-----------|-----------|
 | 8pm      | 9am - 11:30am | 11:30am 12pm | 12pm - 3pm    | 3pm - 4pm | 4pm       | 4pm - 6pm |
 
- 
 
 **Example 1 - Logging out in the Flex- period**
 
