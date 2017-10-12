@@ -54,7 +54,7 @@ production processes or for sale to customers. Because inventory is considered a
 
 The following learning map shows the major concepts and tasks that make up the framework of the Inventory management module. Refer to the topics listed to help you learn about a concept or task.
 
-[![Learning map](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
+[![Inventory learning map](./media/inventory-home-page.png)](./media/inventory-home-page.png)
 
 ## Additional resources
 
