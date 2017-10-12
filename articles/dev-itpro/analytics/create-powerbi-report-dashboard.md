@@ -70,6 +70,7 @@ Access OData endpoints in Power Query
 
 1.  Start Excel.
 2.  On the **Power Query** tab, click **From Other Sources** &gt; **From OData Feed**. 
+
     [![Power Query tab in Excel](./media/2-1024x457.png)](./media/2.png)
 
 3.  In the dialog box, enter the URL of the OData endpoint, and then click **OK**. For example, the URL will be in the following format: https://*yourenvironment*.cloudax.dynamics.com/data 
@@ -134,6 +135,7 @@ In this section, we will review the Excel data model to optimize the data for re
 6.  You can now add a calculated measure to use in reports. Use the **Measures** pane at the bottom of the PowerPivot window to create two new measures. Follow these steps:
     1.  Click in the **Measure** pane, enter the following formula, and then press Enter: Total Expenses this year:=calculate(sum(\[Expenses\]),'FiscalCalendars'\[YearOffset\]=0)
     2.  Click in the cell below the previous cell, and enter the following formula: Total Expenses last year:=calculate(sum(\[Expenses\]),'FiscalCalendars'\[YearOffset\]=-1)
+    
 
     > [!Note]
     > These formulas use the Finance and Operations language. Both formulas sum the **Expenses** column, but each applies a different filter to your fiscal calendars on the year offset. A year offset of **0** specifies the current financial year, and a year offset of **-1** specifies last financial year. This step lets users take advantage of their custom Finance and Operations fiscal calendars in Power BI. 
@@ -169,6 +171,7 @@ In this section, we will create a basic report by using Power View.
     4.  If the fields in the chart don't appear as you expected, you must drag the fields in the Power View pane, and put them into the correct **Axis** and **Legend** areas.
         1.  Drag **PeriodName** to the **AXIS** area underneath **Quarter**.
         2.  Drag **Main Account Category** to the **Legend** area.
+
 
         > [!Note}
         > As you add fields from the three entities, notice that they are presented in a single visualization. This is possible because of the relationships that you previously set up in the Power Pivot data model. 
