@@ -1326,6 +1326,7 @@
 ### [Initialize stock levels in the warehouse (Task guide)](../supply-chain/inventory/tasks/initialize-stock-levels-warehouse.md)
 ### [Transfer physical inventory within the warehouse (Task guide)](../supply-chain/inventory/tasks/transfer-physical-inventory-within-warehouse.md)
 ### [Adjust stock levels in the warehouse (basic warehousing.md) (Task guide)](../supply-chain/inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing.md)
+### [Inventory tag counting)](../supply-chain/inventory/inventory-tag-counting.md)
 ### [Count inventory in a warehouse (Task guide)](../supply-chain/inventory/tasks/count-inventory-warehouse.md)
 ### [Define inventory counting processes (Task guide)](../supply-chain/inventory/tasks/define-inventory-counting-processes.md)
 ### [Consignment](../supply-chain/inventory/consignment.md)
@@ -1342,19 +1343,10 @@
 ### [Outbound process](../supply-chain/inventory/outbound-process.md)
 ### [Reserve inventory quantity](../supply-chain/inventory/reserve-inventory-quantities.md)
 ### [Reserve the same batch for a sales order](../supply-chain/sales-marketing/reserve-same-batch-sales-order.md)
+### [Inventory close](../supply-chain/cost-management/inventory-close.md)
 ### [Running average cost price](../supply-chain/cost-management/running-average-cost-price.md)
 ### [Adjust on-hand inventory cost value](../supply-chain/cost-management/adjust-hand-inventory-cost-values.md)
 ### [Tracking running average cost per inventory dimension](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
-### [Inventory close](../supply-chain/cost-management/inventory-close.md)
-### [FIFO with physical value and marking](../supply-chain/cost-management/fifo-physical-value-marking.md)
-### [LIFO Date with physical value and marking](../supply-chain/cost-management/lifo-date-physical-value-marking.md)
-### [LIFO with physical value and marking](../supply-chain/cost-management/lifo-physical-value-marking.md)
-### [Moving average](../supply-chain/cost-management/moving-average.md)
-### [Weighted average date](../supply-chain/cost-management/weighted-average-date.md)
-### [Weighted average with physical value and marking](../supply-chain/cost-management/weighted-average-physical-value-marking.md)
-### [Inventory object value](../supply-chain/cost-management/physical-quantity.md)
-### [Include physical value](../supply-chain/cost-management/include-physical-value.md)
-### [Physical and financial update](../supply-chain/cost-management/physical-financial-updates.md)
 
 
 ## Master planning
