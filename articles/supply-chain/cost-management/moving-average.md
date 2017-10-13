@@ -3,7 +3,7 @@
 
 title: Moving average
 description: 
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
