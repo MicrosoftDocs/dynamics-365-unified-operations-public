@@ -1424,9 +1424,7 @@
 #### [Vendor collaboration with customers](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
 #### [Set up an external catalog for PunchOut eProcurement](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
 #### [Use external catalogs for PunchOut eProcurement](../supply-chain/procurement/use-external-catalogs-for-punchout.md)
-#### [Collaborate with vendors by using the Vendor portal](../supply-chain/procurement/collaborate-vendors-vendor-portal.md)
 #### [Vendor collaboration mobile workspace](../supply-chain/procurement/vendor-collaboration-mobile-workspace.md)
-#### [Vendor portal user security](../supply-chain/procurement/configure-security-vendor-portal-users.md)
 
 ## [Organization administration](organization-administration/organization-administration-home-page.md)
 ### [Number sequences](organization-administration/number-sequence-overview.md)
