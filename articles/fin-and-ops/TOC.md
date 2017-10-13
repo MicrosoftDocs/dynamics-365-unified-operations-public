@@ -123,11 +123,11 @@
 #### [Update standard cost in a non-manufacturing environment](../supply-chain/cost-management/update-standard-costs-non-manufacturing-environment.md)
 ### Cost management tasks
 #### BOM calculations using costing sheet (task guides in sequence for the white paper)
-##### [Create a finished product (February 2016 only)](../supply-chain/pim/tasks/create-finished-product-2016-02.md)
-##### [Create a semi-finished product (February 2016 only)](../supply-chain/pim/tasks/create-semi-finished-product-2016-02.md)
-##### [Create raw materials (February 2016 only)](../supply-chain/pim/tasks/create-raw-materials-2016-02.md)
-##### [Create BOMs (February 2016 only)](../supply-chain/pim/tasks/create-boms-2016-02.md)
-##### [Create routes (February 2016 only)](../supply-chain/pim/tasks/create-routes-2016-02.md)
+##### [Create a finished product (February 2016 only)](../supply-chain/cost-management/tasks/create-finished-product-2016-02.md)
+##### [Create a semi-finished product (February 2016 only)](../supply-chain/cost-management/tasks/create-semi-finished-product-2016-02.md)
+##### [Create raw materials (February 2016 only)](../supply-chain/cost-management/tasks/create-raw-materials-2016-02.md)
+##### [Create BOMs (February 2016 only)](../supply-chain/cost-management/tasks/create-boms-2016-02.md)
+##### [Create routes (February 2016 only)](../supply-chain/cost-management/tasks/create-routes-2016-02.md)
 ##### [Calculate a BOM by using a single level structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02.md)
 ##### [Calculate a BOM by using a multilevel structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02.md)
 
