@@ -40,15 +40,17 @@ The following learning map shows the major concepts and tasks that make up the f
 
 [![Learning map for cost accounting](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
+> [!NOTE]
+> Cost accounting is an independent module that requires the base entities **Currency**, **Exchange rate**, and **Fiscal calendar** are configured correctly in Dynamics 365 for Finance and Operations, Enterprise edition. Before you use the Cost accounting module, you need to have a currency, exchange rate, and fiscal calendar defined for your company. To learn more about these entities, you can take the eLearning training course [Currency, Exchange rate, and Fiscal calendar](https://mbspartner.microsoft.com/Home) (requires CustomerSource account). 
+
 ## Quick links
 |      |   |
 |------|---|
-|  [Get started](terms-cost-accounting.md)    | [Configure source system](../general-ledger/financial-dimensions.md)  |
-|  [Create dimensions and import dimension members](cost-elements.md)    |[Create dimension hierarchy](dimension-hierarchy.md)   |
-|  [Create basic setup](./tasks/define-cost-control-units.md)    |  [Define allocation base](allocation-bases.md) |
-|    [Define policies](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md)  | [Data source and data provider](./tasks/manage-data-source-cost-accounting-ledger.md)  |
-| [Data source processing](./tasks/process-trace-source-data.md)     | [Overhead calculation](overhead-calculation.md)  |
-|   [Analysis and reporting](cost-control-workspace.md)   |   |
+|  [Get started](terms-cost-accounting.md)      |[Create dimensions](cost-elements.md)  |
+|  [Create dimension hierarchy](dimension-hierarchy.md)  |[Create basic setup](./tasks/define-cost-control-units.md)| 
+| [Define allocation base](allocation-bases.md)|[Define policies](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
+| [Data source and data provider](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Data source and data provider](./tasks/process-trace-source-data.md)     | 
+|[Overhead calculation](overhead-calculation.md)  | [Analysis and reporting](cost-control-workspace.md)   |
 
 ## Get started videos<br/>
 

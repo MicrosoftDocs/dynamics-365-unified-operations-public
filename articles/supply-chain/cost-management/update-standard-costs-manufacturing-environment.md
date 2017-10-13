@@ -3,7 +3,7 @@
 
 title: Update standard costs in a manufacturing environment
 description: This article provides guidance about how to update standard costs in a manufacturing environment. 
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

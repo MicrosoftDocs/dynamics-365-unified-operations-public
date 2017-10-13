@@ -3,7 +3,7 @@
 
 title: Inventory close
 description: As part of the process to settle issue transactions with receipt transactions, you can also choose to have the general ledger updated to reflect the adjustments that have been made.
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
