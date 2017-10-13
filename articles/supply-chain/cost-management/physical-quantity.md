@@ -3,7 +3,7 @@
 
 title: Inventory object values
 description: This article provides information about how the values of an inventory object are calculated. 
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
