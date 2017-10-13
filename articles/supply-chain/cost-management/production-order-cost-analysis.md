@@ -3,7 +3,7 @@
 
 title: Production order cost analysis
 description: This article provides information about the cost analysis that you can do for completed and current production orders. You can analyze the estimated costs and actual costs by using the Price calculation page or the Cost estimates and costings report. You can view information about the estimated and actual costs (and quantity) for each component item, the routing operation, and the indirect cost.
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
