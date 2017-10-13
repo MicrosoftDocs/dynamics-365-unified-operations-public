@@ -1655,7 +1655,7 @@
 
 
 ## [Product information management](../supply-chain/pim/product-information.md)
-### Product information
+### [Product information](../supply-chain/pim/product-information.md)
 #### [Create a hierarchy of product classification (Task guide)](../supply-chain/pim/tasks/create-hierarchy-product-classification.md)
 #### [Classify a product using category hierarchies (Task guide)](../supply-chain/pim/tasks/classify-product-category-hierarchies.md)
 #### [Product number nomenclature](../supply-chain/pim/product-variant-identification-nomenclature.md)
@@ -1691,7 +1691,7 @@
 ##### [Define configuration routes (Task guide)](../supply-chain/pim/tasks/define-configuration-route.md)
 ##### [Create configuration rules (Task guide)](../supply-chain/pim/tasks/create-configuration-rules.md)
 ##### [Create dimension-based configurations (Task guide)](../supply-chain/pim/tasks/create-dimension-based-configurations.md)
-#### [Set up a constraint-based configuration model](../supply-chain/pim/set-up-maintain-product-configuration-model.md)
+#### [Create constraint-based configuration](../supply-chain/pim/set-up-maintain-product-configuration-model.md)
 ##### [Calculation for product configuration model FAQ](../supply-chain/pim/calculate-product-configuration-models.md)
 ##### [Configuration rule](../supply-chain/pim/configuration-rules.md)
 ##### [Expression constraint and table constraint](../supply-chain/pim/expression-constraints-table-constraints-product-configuration-models.md)
