@@ -5,7 +5,7 @@ title: Create a Power BI report and dashboard
 description: This tutorial guides you though the process of creating a basic Power BI report and explains how to start to create a dashboard on PowerBI.com.
 author: clwesene
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -137,10 +137,10 @@ In this section, we will review the Excel data model to optimize the data for re
     2.  Click in the cell below the previous cell, and enter the following formula: Total Expenses last year:=calculate(sum(\[Expenses\]),'FiscalCalendars'\[YearOffset\]=-1)
     
 
-    > [!Note]
-    > These formulas use the Finance and Operations language. Both formulas sum the **Expenses** column, but each applies a different filter to your fiscal calendars on the year offset. A year offset of **0** specifies the current financial year, and a year offset of **-1** specifies last financial year. This step lets users take advantage of their custom Finance and Operations fiscal calendars in Power BI. 
+  > [!Note]
+  > These formulas use the Finance and Operations language. Both formulas sum the **Expenses** column, but each applies a different filter to your fiscal calendars on the year offset. A year offset of **0** specifies the current financial year, and a year offset of **-1** specifies last financial year. This step lets users take advantage of their custom Finance and Operations fiscal calendars in Power BI. 
     
-    [![PowerPivot window](./media/111.png)](./media/111.png)
+ [![PowerPivot window](./media/111.png)](./media/111.png)
 
 7.  Click each new measure, and set the format to **Decimal Number**. Then close the Power Pivot data model.
 
