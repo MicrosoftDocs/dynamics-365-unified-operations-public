@@ -50,7 +50,9 @@ As more and more registers are generated and then linked to the appropriate devi
 In the Dynamics 365 for Finance and Operations or Dynamics 365 for Retail solution, the simplest necessities to begin managing devices are already provided.  Next, it is important to make certain that the implementation being planned takes all proper considerations to minimize pain and maximize benefit.
 ## Implementation considerations
 Below are some things to consider as you plan your implementation of inventory management related features at your Retail store and Distribution locations.
+
 If the discussion is still occurring whether Retail Modern POS or Retail Cloud POS would be better for a specific business, review the implementation considerations document Modern POS and Cloud POS "[ADD LINK HERE]".
+
 If the discussion is still occurring whether to utilize Retail Store Scale Unit, review the implementation considerations document Retail Store Scale Unit "[ADD LINK HERE]".
 
 ### Generate the physical topology
@@ -69,7 +71,9 @@ After planning is finished and all potential details are known, the eventual res
 
 ### Distributed deployment
 While reading this sub-heading, it would be useful to also read through the [Retail Modern POS configuration and installation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/retail-modern-pos-device-activation) document.
+
 While reading this sub-heading, it would be useful to also read through the [Mass Deployment](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment) document.
+
 As the device count soars into the hundreds or even thousands of devices, the manual configuration, installation, and activation of the POS application quickly becomes impractical to continue to complete manually.  There are several concepts that can be utilized to alleviate, assist, or even manage devices at a large scale:
 *	Devices form – On the form showcasing the details of a device, using Retail Modern POS, there are two sets of fields that assist in knowing information regarding the POS client to be used on the device.  Under the Register package sub-heading are four fields.  The first three fields (Package name, Package description, and Version number) showcase the version of the Retail Modern POS package that should be installed (now or in the future) on the device.  The fourth field states the currently installed MPOS version, allowing for easy viewing for any device.
 *	Channel deployment workspace – This workspace allows for quickly viewing a large, filterable set of stores, registers, devices, and more.  This workspace is also where the mass deployment options exist (See the mass deployment document shown at the start of this sub-heading for more information).  Frequently referencing this workspace can speed up access to important forms, decrease validation times for post-deployment status checks, and efficiently assist in managing device statuses.
