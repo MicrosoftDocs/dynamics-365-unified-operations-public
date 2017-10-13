@@ -80,7 +80,10 @@
 ### Inventory costing
 #### [Adjust on-hand inventory cost value](../supply-chain/cost-management/adjust-hand-inventory-cost-values.md)
 #### [Cost object](../supply-chain/cost-management/cost-object.md)
+#### [View cost object balance (task guide)](../supply-chain/cost-management/tasks/view-cost-object-balance.md)
+#### [View inventory statement and KPI by cost object (task guide)](../supply-chain/cost-management/tasks/view-inventory-statement-kpi-cost-object.md)
 #### [Cost entry](../supply-chain/cost-management/cost-entries.md)
+#### [View cost entries for a cost object (task guide)](../supply-chain/cost-management/tasks/view-cost-entries-cost-object.md)
 #### [Cost group](../supply-chain/cost-management/cost-groups.md)
 #### [FIFO with physical value and marking](../supply-chain/cost-management/fifo-physical-value-marking.md)
 #### [Include physical value](../supply-chain/cost-management/include-physical-value.md)
@@ -105,6 +108,8 @@
 #### [Display charges for a manufactured item](../supply-chain/cost-management/charges-manufactured-item.md)
 #### [Production order cost analysis](../supply-chain/cost-management/production-order-cost-analysis.md)
 #### [Production order cost estimation](../supply-chain/cost-management/production-order-cost-estimation.md)
+#### [View current WIP status on a production order (task guide)](../supply-chain/cost-management/tasks/view-current-wip-status-production-order.md)
+#### [Compare active, estimated, and realized costs on a production order (task guide)](../supply-chain/cost-management/tasks/compare-active-estimated-realized-costs.md)
 #### [Production posting](../supply-chain/cost-management/production-posting.md)
 #### [Set up a product that can be produced or procured](../supply-chain/cost-management/manufactured-items-treated-as-purchased-items.md)
 #### [Total cost allocation method](../supply-chain/cost-management/methodology-total-cost-allocation.md)
@@ -116,15 +121,8 @@
 #### [Update standard cost in a manufacturing environment](../supply-chain/cost-management/update-standard-costs-manufacturing-environment.md)
 #### [Update standard cost for a new manufactured item](../supply-chain/cost-management/update-standard-costs-new-manufactured-item.md)
 #### [Update standard cost in a non-manufacturing environment](../supply-chain/cost-management/update-standard-costs-non-manufacturing-environment.md)
-
 ### Cost management tasks
-#### [View cost entries for a cost object](../supply-chain/cost-management/tasks/view-cost-entries-cost-object.md)
-#### [View cost object balance](../supply-chain/cost-management/tasks/view-cost-object-balance.md)
-#### [View current WIP status on a production order](../supply-chain/cost-management/tasks/view-current-wip-status-production-order.md)
-#### [View inventory statement and KPI by cost object](../supply-chain/cost-management/tasks/view-inventory-statement-kpi-cost-object.md)
-#### [Compare active, estimated, and realized costs on a production order](../supply-chain/cost-management/tasks/compare-active-estimated-realized-costs.md)
-#### [Create a purchase order governed by budget](../supply-chain/cost-management/tasks/create-purchase-order-governed-by-budget.md)
-#### BOM calculations using costing sheet
+#### BOM calculations using costing sheet (task guides in sequence for the white paper)
 ##### [Create a finished product (February 2016 only)](../supply-chain/pim/tasks/create-finished-product-2016-02.md)
 ##### [Create a semi-finished product (February 2016 only)](../supply-chain/pim/tasks/create-semi-finished-product-2016-02.md)
 ##### [Create raw materials (February 2016 only)](../supply-chain/pim/tasks/create-raw-materials-2016-02.md)
