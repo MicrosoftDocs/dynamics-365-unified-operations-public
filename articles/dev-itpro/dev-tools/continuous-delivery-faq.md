@@ -137,16 +137,20 @@ Add an average of $15 monthly for storage (non premium) per VM.
 
 This is not supported. However, you can provision more than one developer account on the same VM, they just cannot develop concurrently. For details, see [Enable a new developer on a development machine](enable-development-machine.md).
 
+If you are a Microsoft partner developing code for more than one customer, we recommend having at least one development VM per customer. In addition, you will need one addittional VM for every additional developer working on a customer project. Development VMs can be thought of as disposable assets, as long as your source code is checked into version control (Visual Studio Team Services) and you keep a backup of test databases. 
+
 ## Customer implementation LCS projects
 ### How many sandbox environments do I need within an LCS customer implementation project?
 
-A customer subscription comes with three environments by default: a dev or build environment, a tier-2 sandbox environment, and a production environment. You can use the tier-2 sandbox environment as both a configuration environment and a UAT environment before (or after) the application goes live in production. After configuring the sandbox with the code and data that you need to go live (also known as your *gold configuration*), you can run your validation on the same environment. When your validation passes, you can restore your sandbox database to the point in time of its gold configuration. You can then deploy your code to production and copy the sandbox database to your production environment. If you prefer to have two separate sandbox environments, one for pre-production validation and the other to serve as your gold configuration, you can purchase an additional tier-2 sandbox. The following servicing requests and tools are supported by Lifecycle Services, which may help you decide whether one tier-2 sandbox is sufficient for your implementation.
+A customer subscription comes with three environments by default: a dev or build environment, a tier-2 sandbox environment, and a production environment. You can use the tier-2 sandbox environment as a configuration and a UAT environment before the application goes live in production. After configuring the sandbox with the code and data that you need to go live (also known as your *gold configuration*), you can run your validation on the same environment. When your validation passes, restore your sandbox database to the point in time of its gold configuration. You can then deploy your code to production and copy the sandbox database to your production environment. You can also chose to have more than one sandbox (Tier-2 or higher) environments, especially after your application is live. One sandbox can be used as a pre-production UAT environment, and ther other sandboxes can be used for configuration, upgrade or other scenarios. You can purchase additional tier-2 (or higher) sandboxes. 
+The following servicing requests and tools are supported by Lifecycle Services, which may help you decide whether one tier-2 sandbox is sufficient for your implementation.
 
 1.  Restore a sandbox database to a point in time.
 2.  Copy a sandbox database to a production environment (only allowed before the application is live in production).
 3.  Apply configuration data packages on a sandbox environment.
 4.  Apply configuration data packages on a production environment.
-5.  Refresh a sandbox database from production. Copy the production environment's database to a tier-2 sandbox environment. This is typical after the application is live and you want to debug an issue or validate upcoming updates.
+5. Refresh a sandbox database from production. Copy the production environment's database to a tier-2 sandbox environment. This is typical after the application is live and you want to debug an issue or validate upcoming updates.
+6.  Apply updates (Hotfixes, customizations) to a sandbox environments for validation before applying them to a production environment.  
 
 
 
