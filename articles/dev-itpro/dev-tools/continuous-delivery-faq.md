@@ -35,14 +35,14 @@ ms.dyn365.ops.version: Platform update 2
 [!include[banner](../includes/banner.md)]
 
 
-This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management.
+This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 Customization
 -------------
 
 ### Do I customize (overlayer) or use extensions?
 
-Application customization is enabled using a new framework, called *extensions*. Developers can create extension models that compile into separate assemblies and distributable packages. Within an extension model, developers can create new elements, extend elements that belong to other models and customize business logic using event handlers and plugins. Extensions enable faster builds, more efficient application lifecycle management and movement of code, better performance at design time, and minimal cost for application upgrades. You can still create customizations by using *overlayering* of metadata and code, which is a framework similar to what was available in Dynamics AX 2012. When you overlayer code, you can freely modify X++ code and metadata, but you will be compiling into the same package (same assembly) of the code that you are customizing. Here are some guidelines:
+Application customization is enabled using a new framework, called *extensions*. Developers can create extension models that compile into separate assemblies and distributable packages. Within an extension model, developers can create new elements, extend elements that belong to other models and customize business logic using event handlers and plugins. Extensions enable faster builds, more efficient application lifecycle management and movement of code, better performance at design time, and minimal cost for application upgrades. You can still create customizations by using *overlayering* of metadata and code, which is a framework similar to what was available in Microsoft Dynamics AX 2012. When you overlayer code, you can freely modify X++ code and metadata, but you will be compiling into the same package (same assembly) of the code that you are customizing. Here are some guidelines:
 
 -   Use extensions as your default mode of development and fall back to overlayering only as a last resort.
 -   When you need to overlayer code, do not include functional or business logic in the overlayered code. Instead, define and call a delegate method, then implement the logic in your extension model using an event handler. For a detailed example in the context of code migration, see [Delegates.](../migration-upgrade/delegates-migration.md)
@@ -142,7 +142,7 @@ If you are a Microsoft partner developing code for more than one customer, we re
 ## Customer implementation LCS projects
 ### How many sandbox environments do I need within an LCS customer implementation project?
 
-A customer subscription comes with three environments by default: a dev or build environment, a tier-2 sandbox environment, and a production environment. You can use the tier-2 sandbox environment as a configuration and a UAT environment before the application goes live in production. After configuring the sandbox with the code and data that you need to go live (also known as your *gold configuration*), you can run your validation on the same environment. When your validation passes, restore your sandbox database to the point in time of its gold configuration. You can then deploy your code to production and copy the sandbox database to your production environment. You can also chose to have more than one sandbox (Tier-2 or higher) environments, especially after your application is live. One sandbox can be used as a pre-production UAT environment, and ther other sandboxes can be used for configuration, upgrade or other scenarios. You can purchase additional tier-2 (or higher) sandboxes. 
+A customer subscription comes with three environments by default: a dev or build environment, a tier-2 sandbox environment, and a production environment. You can use the tier-2 sandbox environment as a configuration and a UAT environment before the application goes live in production. After configuring the sandbox with the code and data that you need to go live (also known as your *gold configuration*), you can run your validation on the same environment. When your validation passes, restore your sandbox database to the point in time of its gold configuration. You can then deploy your code to production and copy the sandbox database to your production environment. You can also chose to have more than one sandbox environment that is is tier-2 or higher, especially after your application is live. One sandbox can be used as a pre-production UAT environment, and ther other sandboxes can be used for configuration, upgrade or other scenarios. You can purchase additional tier-2 or higher sandboxes. 
 The following servicing requests and tools are supported by Lifecycle Services, which may help you decide whether one tier-2 sandbox is sufficient for your implementation.
 
 1.  Restore a sandbox database to a point in time.
@@ -151,7 +151,3 @@ The following servicing requests and tools are supported by Lifecycle Services,�
 4.  Apply configuration data packages on a production environment.
 5. Refresh a sandbox database from production. Copy the production environment's database to a tier-2 sandbox environment. This is typical after the application is live and you want to debug an issue or validate upcoming updates.
 6.  Apply updates (Hotfixes, customizations) to a sandbox environments for validation before applying them to a production environment.  
-
-
-
-
