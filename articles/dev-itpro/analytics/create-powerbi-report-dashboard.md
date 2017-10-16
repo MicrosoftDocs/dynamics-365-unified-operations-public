@@ -87,7 +87,7 @@ Access OData endpoints in Power Query
     -   GeneralLedgerActivities
     -   MainAccounts
     
-        Power Query loads the data from Finance and Operations into the Excel data model. Depending on the size of the data set, this process might require some time. 
+    Power Query loads the data from Finance and Operations into the Excel data model. Depending on the size of the data set, this process might require some time. 
     
 7.  Double-click **MainAccounts** to load the query. 
 
@@ -136,10 +136,10 @@ In this section, we will review the Excel data model to optimize the data for re
     1.  Click in the **Measure** pane, enter the following formula, and then press Enter: Total Expenses this year:=calculate(sum(\[Expenses\]),'FiscalCalendars'\[YearOffset\]=0)
     2.  Click in the cell below the previous cell, and enter the following formula: Total Expenses last year:=calculate(sum(\[Expenses\]),'FiscalCalendars'\[YearOffset\]=-1)
     
- > [!Note]
- > These formulas use the Finance and Operations language. Both formulas sum the **Expenses** column, but each applies a different filter to your fiscal calendars on the year offset. A year offset of **0** specifies the current financial year, and a year offset of **-1** specifies last financial year. This step lets users take advantage of their custom Finance and Operations fiscal calendars in Power BI. 
     
- [![PowerPivot window](./media/111.png)](./media/111.png)
+    **Note:** These formulas use the Finance and Operations language. Both formulas sum the **Expenses** column, but each applies a different filter to your fiscal calendars on the year offset. A year offset of **0** specifies the current financial year, and a year offset of **-1** specifies last financial year. This step lets users take advantage of their custom Finance and Operations fiscal calendars in Power BI. 
+    
+    [![PowerPivot window](./media/111.png)](./media/111.png)
 
 7.  Click each new measure, and set the format to **Decimal Number**. Then close the Power Pivot data model.
 
@@ -175,9 +175,8 @@ In this section, we will create a basic report by using Power View.
        - Drag **PeriodName** to the **AXIS** area underneath **Quarter**.
        - Drag **Main Account Category** to the **Legend** area.
 
-
-       > [!Note}
-       > As you add fields from the three entities, notice that they are presented in a single visualization. This is possible because of the relationships that you previously set up in the Power Pivot data model.  
+       
+       **Note:** As you add fields from the three entities, notice that they are presented in a single visualization. This is possible because of the relationships that you previously set up in the Power Pivot data model.  
 
 3.  You can now drill into the quarter by double-clicking the **Q1** column.
    
