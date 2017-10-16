@@ -58,10 +58,15 @@ If the discussion is still occurring whether to utilize Retail Store Scale Unit,
 Planning is the single most critical requirement to successfully implement an ERP solution.  One of the key deliverables of this planning should be a physical topology.  This physical topology visualizes many of the informational details of how a company looks from the lowest point of sale device to the highest headquarters network connections.  The minimal set of deliverables to complete should include the following:
 
 -	Store templates – A store template is one or more diagrams that show how a physical location, such as a retail brick and mortar store, is laid out.  These diagrams serve long-term as a means of easily implementing future locations and quickly assessing how to fix or improve issues that are found.  The store template should include the following details:
-  -	Location – The physical layout of a location, detailing where all devices that exist in the location are placed.
-  -	Network – The network infrastructure layout internally and details of internet connectivity (Bandwidth up and down, thread count, latency to headquarters or other important internet locations, etc.).
-  *	Device – The details of all devices that exist in a location, including the specifications of the devices or some form of associable tag where details can quickly be found.
-  *	Peripheral – List of all peripherals that attaches to a device, count of peripherals, and physical location of all peripherals, often with associable tag where details can quickly be found.
+
+    -	Location – The physical layout of a location, detailing where all devices that exist in the location are placed.
+  
+    -	Network – The network infrastructure layout internally and details of internet connectivity (Bandwidth up and down, thread count, latency to headquarters or other important internet locations, etc.).
+  
+    *	Device – The details of all devices that exist in a location, including the specifications of the devices or some form of associable tag where details can quickly be found.
+  
+    *	Peripheral – List of all peripherals that attaches to a device, count of peripherals, and physical location of all peripherals, often with associable tag where details can quickly be found.
+  
 *	Naming methodology – It is important as a function of implementing to maintain common naming conventions across all devices.  Generate the rules that govern the naming convention used and stick to it.
   *	Important note: When generating this naming methodology, it is recommended that the registers are named the same (or very similar) to the device which should be named the same (or very similar) to the physical computer name (Friendly name) on which the register functions.
 *	Procedures plan – The larger a business grows, the more critical it becomes to keep procedures in place that maintain enough order to efficiently run the business.  This, especially, is a living document that must be maintained and appended often.  This plan should showcase how to perform almost every action that will be repeated within the stores that make up a company.
