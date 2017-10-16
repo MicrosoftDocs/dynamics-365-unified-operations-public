@@ -44,21 +44,36 @@ Using data packages to deliver demo data provides some benefits over using the c
 
 The demo data packages are designed to be layered on top of each other as shown in this diagram:
 
-![Demo data packages](./media/demodata.png)
+![Demo data packages](./media/DemoData.png)
 
-The base package, System and Shared, is the foundation for all other packages. This package creates the legal entities, loads the global address book, and adds additional shared information. It must be loaded first to support all of the remaining packages. Once the package is loaded, you will have the following legal entities:
+### System and shared
+The base package, System and Shared, is the foundation for all other packages. This package creates the legal entities, loads the global address book, and adds additional shared information. It must be loaded first to support all of the remaining packages. The package is entitled "100 - System and Shared.zip"
+
+Once the package is loaded, you will have the following legal entities:
 
 | Legal entity | Description |  
 |------|--------|
-| HQUS | The US based headquarters for your demo company. This company was based on the original USMF data but changed to remove the manufacturing focus in the name. |
-| HQEU | The non-US based headquarters for your demo company. This company was based on the original DEMF data but changed to remove the manufacturing focus in the name. |
+| HQUS | The US based headquarters for your demo company. This company was based on the original USMF data but changed to remove the manufacturing focus in the name. It includes setup information intended for US companies.|
+| HQEU | The non-US based headquarters for your demo company. This company was based on the original DEMF data but changed to remove the manufacturing focus in the name. It includes setup information intended for non-US companies.|
 | CONS | A small consolidations company. |
 | PICH | A process industries company focused on chemicals. |
 | PIFB | A process industries company focused on food and beverage. |
 
+You can expect approximately 30 minutes to load this package. The time required to import this package will vary based on the speed of your instance.   
+
+### Financials
+There are several packages that contain the financials data for a company. These data packages are entitled "200 - Financials" followed by the legal entity for which they were intended. For examples, the financial data packages for HQUS are entitled "200 - Financials - HQUS.zip".
+
+At least two financials companies are required for cross company tasks such as centralized payments. All customers and vendors have been added to each legal entity (CHECK THIS). (TEST THIS).
+
+You can expect approximately 15 minutes to load each package. The time required to import this package will vary based on the speed of your instance.
+
+### Supply chain
+There are several packages that contain the supply data for a company.
+
+You can expect approximately 30 minutes to load each package. The time required to import this package will vary based on the speed of your instance.
 
 
-The remaining packages contain application demo data for various scenarios.  
+## Loading the packages
 
-### Timing
-
+The data packages must be loaded in a specific order into a specific legal entity. The number preceding the name of the package provides guidance to the order t
