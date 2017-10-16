@@ -1604,7 +1604,7 @@
 ##### [Create a kanban rule for multiple activities (task guide)](../supply-chain/production-control/tasks/create-kanban-rule-multiple-activities.md)
 ##### [Create a new kanban rule by duplicating an existing kanban rule (task guide)](../supply-chain/production-control/tasks/create-new-kanban-rule-duplicating-existing-kanban-rule.md)
 ##### [Create a replacement kanban rule (task guide)](../supply-chain/production-control/tasks/create-replacement-kanban-rule.md)
-##### [Create a sal (task guide)es event kanban rule (task guide)](../supply-chain/production-control/tasks/create-sales-event-k (task guide)anban-rule.md)
+##### [Create a sales event kanban rule (task guide)](../supply-chain/production-control/tasks/create-sales-event-k (task guide)anban-rule.md)
 ##### [Create a withdrawal kanban rule (ta (task guide)sk guide)](../supply-chain/production-control/tasks/create-withdrawal-kanban-rule.md)
 ##### [Execute kanban process jobs (task guide)](../supply-chain/production-control/tasks/execute-kanban-process-jobs.md)
 ##### [Move scheduled kanban jobs (task guide)](../supply-chain/production-control/tasks/move-scheduled-kanban-jobs.md)
