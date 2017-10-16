@@ -2,8 +2,8 @@
 # required metadata
 
 title: Device management implementation guidance
-description:This document has been prepared as an added supplement to the standard user documentation.  The Insights and Implementation Consideration document is intended to provide an implementer with additional background, tips, and guidance for things to consider when deploying a Dynamics 365 feature.   Implementation resources should review and follow guidance in these documents as part of their deployment process, with the goal of utilizing this information to assist them in avoiding unnecessary issues that could impact user satisfaction or performance.
-author: Jarad Shannon
+description: This document has been prepared as an added supplement to the standard user documentation.  The Insights and Implementation Consideration document is intended to provide an implementer with additional background, tips, and guidance for things to consider when deploying a Dynamics 365 feature.   Implementation resources should review and follow guidance in these documents as part of their deployment process, with the goal of utilizing this information to assist them in avoiding unnecessary issues that could impact user satisfaction or performance.
+author: jashanno
 manager: AnnBe
 ms.date: 10/16/2017
 ms.topic: article
