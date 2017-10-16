@@ -156,7 +156,10 @@ At this point, you can use the Power Pivot data model to optimize your data so t
 In this section, we will create a basic report by using Power View.
 
 1.  On the **Insert** tab, click **Power View**. Excel loads a blank Power View report. Notice that your three entities appear in the **Power View Fields** pane on the right side.
-2.  Expand **GeneralLedgerActivities**, and then click **Total Expense this year**. Notice that Power View adds the field to a table on the report. Follow these steps:
+2.  Expand **GeneralLedgerActivities**, and then click **Total Expense this year**. 
+
+    Notice that Power View adds the field to a table on the report. Follow these steps:
+    
     1.  Click the table, and then, on the **Design** tab, click **Column Chart** &gt; **Stacked Column** to change the table into a column chart.
     2.  Expand the size of the column chart until it fills two-thirds of your report. To expand the chart, drag the corners. 
         
@@ -168,19 +171,18 @@ In this section, we will create a basic report by using Power View.
         -   MainAccounts – Main Account Category
 
     4.  If the fields in the chart don't appear as you expected, you must drag the fields in the Power View pane, and put them into the correct **Axis** and **Legend** areas.
-        1.  Drag **PeriodName** to the **AXIS** area underneath **Quarter**.
-        2.  Drag **Main Account Category** to the **Legend** area.
+    
+       - Drag **PeriodName** to the **AXIS** area underneath **Quarter**.
+       - Drag **Main Account Category** to the **Legend** area.
 
 
-        > [!Note}
-        > As you add fields from the three entities, notice that they are presented in a single visualization. This is possible because of the relationships that you previously set up in the Power Pivot data model. 
-        
-   
+       > [!Note}
+       > As you add fields from the three entities, notice that they are presented in a single visualization. This is possible because of the relationships that you previously set up in the Power Pivot data model.  
 
 3.  You can now drill into the quarter by double-clicking the **Q1** column.
-    
-
+   
 4.  In the **Click here to add a title** field, enter a title for your report.
+
 5.  Save the Excel workbook to your local machine or to Microsoft OneDrive.
 
 Upload the Excel workbook to PowerBI.com
