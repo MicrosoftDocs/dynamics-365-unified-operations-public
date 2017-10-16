@@ -54,16 +54,16 @@ This topic lists Microsoft Dynamics AX 2012 features that were postponed. These 
 <tr class="odd">
 <td>Intelligent Data Management Framework (IDMF)</td>
 <td>IDMF is an add-on tool that lets system administrators optimize the performance of Microsoft Dynamics AX installations. IDMF assesses the health of the application, analyzes current usage patterns, and helps reduce database size.</td>
-<td></td>
+<td>Not implemented</td>
 </tr><tr class="odd">
 <td>Alerts</td>
 <td>Implementation of the alerts functionality is planned for a future update. Alerts help users keep track of data changes in the system.</td>
-<td></td>
+<td>Not implemented</td>
 </tr>
 <tr class="even">
 <td><strong>Graphics</strong> tab in the <strong>Fixed asset value model</strong> and <strong>Depreciation book profile</strong> forms</td>
 <td>The chart shows the depreciation, accumulated depreciation, and net book value over time. Users can click the <strong>Data</strong> tab to view more detailed information than the chart shows. This chart will be redesigned in a future update.</td>
-<td></td>
+<td>Not implemented</td>
 </tr>
 <tr class="odd">
 <td>Vendor portal</td>
@@ -80,7 +80,7 @@ This topic lists Microsoft Dynamics AX 2012 features that were postponed. These 
 <tr class="odd">
 <td>Customer self-service (CSS)</td>
 <td>CSS lets you create approved customer records, and lets users view selected product catalogs, order items, and view the status of invoices. It also provides the ability to create and follow return orders.</td>
-<td></td>
+<td>Not implemented</td>
 </tr>
 <tr class="even">
 <td>Cost accounting</td>
@@ -99,7 +99,7 @@ This topic lists Microsoft Dynamics AX 2012 features that were postponed. These 
 <tr class="even">
 <td>External questionnaire and recruiting functionality</td>
 <td>Functionality for externally posting questionnaires and open jobs will be added in a future update.</td>
-<td></td></tr>
+<td>External questionnaire hs not been implemented.<br><br>Recruiting functionality is available in the Attract app for Dynamics 365 for Talent.</td></tr>
 <tr class="odd">
 <td>Main account allocations for accounting distributions</td>
 <td>Allocation rules that are defined for a main account won't be applied on accounting distributions. In a future update, main allocation rules will be applied during journalization.</td>
@@ -107,11 +107,11 @@ This topic lists Microsoft Dynamics AX 2012 features that were postponed. These 
 <tr class="even">
 <td>Client right-to-left (RTL) layout</td>
 <td>The web client uses only left-to-right (LTR) layout for controls and labels. The ability to use RTL layout for Arabic and Hebrew languages will be added in a future update.</td>
-<td></td></tr>
+<td>Implemented in platform update 3.</td></tr>
 <tr class="odd">
 <td>Client drag-and-drop</td>
 <td>The web client controls have application programming interfaces (APIs) for drag-and-drop operations, but these APIs are based on the deprecated desktop client technology and must be redesigned to work on the new web client platform. APIs to support drag-and-drop operations will be reviewed for inclusion in a future update.</td>
-<td></td></tr>
+<td>Not implemented</td></tr>
 <tr class="even">
 <td>Vendor catalog import</td>
 <td>Vendor catalog import is available and uses the new data management capabilities for import. However, this feature doesn't support the import of product images and attributes. It also doesn't let you generate schema files per vendor catalog. This functionality will be added in a future update.</td>
@@ -119,7 +119,7 @@ This topic lists Microsoft Dynamics AX 2012 features that were postponed. These 
 <tr class="odd">
 <td>General budget reservations</td>
 <td>This document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes. This functionality will be added in a future update.</td>
-<td></td></tr>
+<td>Not implemented</td></tr>
 <tr class="even">
 <td>Electronic data exchange</td>
 <td>The electronic exchange of documents, such as order confirmations and similar supply chain management (SCM) documents that were previously enabled as AIF documents, isn't supported. This functionality will be added in a future update.</td>
@@ -308,23 +308,23 @@ This topic lists Microsoft Dynamics AX 2012 features that were postponed. These 
 </tr>
 </tbody>
 </table></td>
-<td></td></tr>
+<td>Not implemented</td></tr>
 <tr class="even">
 <td>Fiscal printers for Poland</td>
 <td>Integration with Polish fiscal printers, such as the Posnet Thermal and Elzab Omega printer types, enables the required information to be sent to the fiscal printer in the correct format during invoice posting. This feature will be available in a future update.</td>
-<td></td></tr>
+<td>Not implemented</td></tr>
 <tr class="odd">
 <td>Bank payment order for Latvia and Lithuania</td>
 <td>You can print a payment order for Latvia and Lithuania. This feature will be available in a future update.</td>
-<td></td></tr>
+<td>Not implemented</td></tr>
 <tr class="even">
 <td>Bankgirot AP return format for Sweden</td>
 <td>The Bankgirot return format is used to import bank return messages. This feature will be available in a future update.</td>
-<td></td></tr>
+<td>Not implemented</td></tr>
 <tr class="odd">
 <td>Secure global address book</td>
 <td>The ability to secure the global address book by legal entity and address book has not yet been implemented. This feature will be available in a future update.</td>
-<td></td></tr>
+<td>Not implemented</td></tr>
 </tbody>
 </table>
 
