@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Retail Insights and Implementation Considerations - Device Management
+title: Device management implementation guidance
 description:This document has been prepared as an added supplement to the standard user documentation.  The Insights and Implementation Consideration document is intended to provide an implementer with additional background, tips, and guidance for things to consider when deploying a Dynamics 365 feature.   Implementation resources should review and follow guidance in these documents as part of their deployment process, with the goal of utilizing this information to assist them in avoiding unnecessary issues that could impact user satisfaction or performance.
 author: Jarad Shannon
 manager: AnnBe
-ms.date: 10/12/2017
+ms.date: 10/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -15,9 +15,9 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Application User
+audience: IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -25,20 +25,12 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: 
-ms.search.validFrom: 2017-10-12
+ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
-# Microsoft Dynamics 365 for Retail Insights and Implementation Considerations - Device Management
-
-[!include[banner](includes/banner.md)]
-
-
-## Disclaimer
-This document is not intended to cover all features and functions of device management for the Dynamics 365 for Finance and Operations or Dynamics 365 for Retail applications.   This document has been prepared as a supplemental tool for anyone implementing device management related functionality in a Retail environment.   This document is intended to provide background and implementation tips to consider as you plan for your implementation.
-
-## Purpose of this document
-This document has been prepared as an added supplement to the standard user documentation.  The Insights and Implementation Consideration document is intended to provide an implementer with additional background, tips, and guidance for things to consider when deploying a Dynamics 365 feature.   Implementation resources should review and follow guidance in these documents as part of their deployment process, with the goal of utilizing this information to assist them in avoiding unnecessary issues that could impact user satisfaction or performance.
+# Device management implementation guidance
+This topic is for those implementing device management-related functionality in a retail environment and provides implementation tips and guidance to consider as you plan for your implementation.
 
 ## Insights
 Below is an overview of the feature and the business reasons to consider using this feature.
