@@ -86,7 +86,7 @@ For information about the new features included in each release, click the links
 
 ### Table 2: Application updates
 
-The application updates listed below consist of a small subset of application enhancements released on top of Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). These updates don't affect the support lifecycle of the release, but are in-line with the July 2017 release.
+The application updates listed below are conmprised of a small subset of application enhancements released on top of Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). These updates don't affect the support lifecycle of the release, but are in-line with the July 2017 release.
 
 For information about the new features included in each update, click the links in the **Version** column.
 
