@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 
-description: 
+title: The demo data screen layouts in MPOS/CPOS
+description: This topic provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Microsoft Dynamics 365 for Retail.
 author: zalin
 manager: AnnBe
 ms.date: 10/05/2017
@@ -30,136 +30,140 @@ ms.dyn365.ops.version: Retail April 2017 update
 
 ---
 
-# Using the demo data screen layouts in MPOS/CPOS
+# Demo data screen layouts in MPOS/CPOS
 
-This topic provides information about screen layouts that are included with the demo data set for the Microsoft Dynamics 365 for Retail point of sale (POS) experiences.
-
-[Overview](#overview)<br>
-[Anatomy of a screen layout ID](#anatomy-of-a-screen-layout-id)<br>
-[Layout sizes](#layout-sizes)<br>
-[Companies and brands](#companies-and-brands)<br>
-[User sign in matrix](#user-sign-in-matrix)<br>
-<!-- [Reference icons and images](#reference-icons-and-images)<br> -->
+This topic provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Microsoft Dynamics 365 for Retail.
 
 ## Overview
 
-The example screen layouts included with Dynamics 365 for Retail demo data provide content optimized for various segments of retail, store worker roles, and devices.  A single layout can contain several layout sizes and button grid combinations to ensure coverage as store workers transition between devices and stations.  This document will highlight the differences between these layouts, the operations they provide, and the overall experiences they deliver.
+The sample screen layouts that are included with Retail demo data provide content that is optimized for various retail segments, store worker roles, and devices. A single layout can contain several layout sizes and combinations of button grids, to help ensure coverage as store workers move between devices and stations. This topic highlights the differences between these layouts, the operations that they provide, and the overall experiences that they deliver.
 
-![Cross device demo data layouts](../retail/media/demo-screen-layouts-fig-1-1.png)
+![Cross-device demo data layouts](../retail/media/demo-screen-layouts-fig-1-1.png)
 
 ## Anatomy of a screen layout ID
 
-To find screen layouts in Dynamics 365 for Retail, navigate to **Retail > Channel setup > POS setup >POS > Screen layouts**.
+To find screen layouts in Retail, go to **Retail** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**.
 
-![Screen layouts form in Dynamics 365 for Retail](../retail/media/demo-screen-layouts-fig-2-1.png)
+![Screen layouts page in Retail](../retail/media/demo-screen-layouts-fig-2-1.png)
 
-Screen layout IDs allow a maximum of 10 characters.  We use three pieces of information to build the string for a given ID.
+Screen layout IDs can have a maximum of 10 characters. The ID is a string that consists of three pieces of information, in this order:
 
-[Company] + [Layout version] + [Persona]
+1. Company
+2. Layout version
+3. Persona
 
 ### Company
 
-| Letter 	| Company         	|
-|--------	|-----------------	|
-| A      	| Adventure Works 	|
-| F      	| Fabrikam         	|
-| C      	| Contoso        	|
+| Letter | Company         |
+|--------|-----------------|
+| A      | Adventure Works |
+| F      | Fabrikam        |
+| C      | Contoso         |
 
 ### Layout version
 
-| Version number 	| Description                                                                                	|
-|----------------	|--------------------------------------------------------------------------------------------	|
-| 3              	| Base version that includes multi-screen size support for various devices and aspect ratios 	|
-| 3.1            	| Base version with additional support for “Recommended products” panel                      	|
+| Version number | Description                                                                                |
+|----------------|--------------------------------------------------------------------------------------------|
+| 3              | The base version that supports multiple screen sizes for various devices and aspect ratios |
+| 3.1            | The base version that has additional support for the **Recommended products** panel        |
 
 ### Persona
 
-| Abbreviation 	| Persona       	| Contents                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   	|
-|--------------	|---------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| CSH          	| Cashier       	| Cashier layouts include all transaction related operations such as customer orders, returns, discounts, voids, and gift cards.  Daily tasks are included for inventory management such as price check, inventory lookup and stock counts.  Basic shift management is provided for start amount, suspending shifts, and time clock.                                                                                                                                                                                         	|
-| MGR          	| Store Manager 	| Store Manager layouts include all transaction operations found in cashier layouts, with the addition of tax overrides.  Daily tasks are included for inventory management such as price check, inventory lookup and stock counts.  Shift management is provided for starting, suspending and closing shifts.  Also, drawer operations for entries, removals, tender declarations, along with safe and bank drops.  Finally, manager layouts also include access to performance reports, as well as printing X & Z-reports. 	|
-| STK          	| Stock Clerk   	| Stock Clerk layouts are optimized for inventory management, and include access to daily tasks for price check, inventory lookup, picking and receiving, stock count and kit disassembly.  Basic shift operations for time clock and suspending shifts are provided as well.  Though mainly intended for back office tasks, stock clerks have the same operations as cashiers for transaction screens.                                                                                                                      	|
+| Abbreviation | Persona       | Contents |
+|--------------|---------------|----------|
+| CSH          | Cashier       | Cashier layouts include all transaction-related operations, such as customer orders, returns, discounts, voids, and gift cards. These layouts also include daily tasks for inventory management, such price checks, inventory lookups, and stock counts. Basic shift management is also provided for start amounts, suspending shifts, and time clock. |
+| MGR          | Store Manager | Store Manager layouts include all transaction-related operations that are found in the Cashier layouts but also include tax overrides. These layouts also include daily tasks for inventory management, such as price checks, inventory lookups, and stock counts. Shift management is provided for starting, suspending, and closing shifts. Additionally, the layouts include drawer operations for entries, removals, tender declarations, and safe and bank drops. Finally, these layouts include access to performance reports, and enable X and Z reports to be printed. |
+| STK          | Stock Clerk   | Stock Clerk layouts are optimized for inventory management. They include access to daily tasks for price checks, inventory lookups, picking and receiving, stock counts, and kit disassembly. These layouts also provide basic shift operations for time clock and suspending shifts. Although these layouts are intended mainly for back-office tasks, stock clerks have the same operations as cashiers for transaction screens. |
 
 ### Example layout
-F3MGR (Fabrikam + Layout version 3 + Store Manager)
+
+Here is an example of a screen layout ID for the Fabrikam company, layout version 3, and the Store Manager persona:
+
+F3MGR
+
+The following illustration shows an example of the Welcome screen for a Fabrikam store manager.
 
 ![Welcome screen for the Fabrikam store manager](../retail/media/demo-screen-layouts-fig-2-2.png)
 
-
 ## Layout sizes
 
-### Full vs. Compact
-A screen layout can contain configurations for both full and compact devices. This configuration allows a user to be assigned to a single screen layout that will work across various sizes and form factors within the store.
+### Full vs. compact layouts
 
-**Modern POS - Full** - Full layouts are typically best used for larger displays such as PC monitors or tablets. Users can choose which UI elements to include, determine their size and placement, and configure their detailed properties. Full layouts support both portrait and landscape configurations.
+A screen layout can have configurations for both full devices and compact devices. Therefore, a user can be assigned to a single screen layout that will work across various sizes and form factors in the store.
 
-**Modern POS - Compact** - Compact layouts are typically best used for phones or small tablets. Design possibilities are limited for compact devices. Users can configure the columns and fields for the receipt and totals panes.
+- **Modern POS - Full** – Typically, full layouts are best used for larger displays, such as desktop computer monitors or tablets. Users can select the UI elements that the layout includes, specify the size and placement of those elements, and configure their detailed properties. Full layouts support both portrait and landscape configurations.
+- **Modern POS - Compact** – Typically, compact layouts are best used for phones or small tablets. Design possibilities are limited for compact devices. Users can configure the columns and fields for the receipt pane and the totals pane.
 
-### Provided screen resolutions
-Sizes are provided for these common resolutions.
+### Screen resolutions that are provided
 
-| Layout type 	| Resolution 	| Aspect ratio 	| Target display          	|
-|-------------	|------------	|--------------	|-------------------------	|
-| Compact*    	| 480x853    	| 16:9         	| Phones                  	|
-| Full        	| 1024x768   	| 4:3          	| Tablets                 	|
-| Full*       	| 1280x720   	| 16:9         	| Tablets                 	|
-| Full        	| 1366x768   	| 16:9         	| Tablets, larger screens 	|
-| Full        	| 1440x960   	| 3:2          	| Tablets, larger screens 	|
+The following table shows the layout sizes that are provided for typical screen resolutions.
 
-*These additional layout sizes are only availalbe in Adventure Works and Fabrikam layouts
+| Layout type | Resolution | Aspect ratio | Target display          |
+|-------------|------------|--------------|-------------------------|
+| Compact\*   | 480 × 853  | 16:9         | Phones                  |
+| Full        | 1024 × 768 | 4:3          | Tablets                 |
+| Full\*      | 1280 × 720 | 16:9         | Tablets                 |
+| Full        | 1366 × 768 | 16:9         | Tablets, larger screens |
+| Full        | 1440 × 960 | 3:2          | Tablets, larger screens |
 
->[!TIP]POS selects layout sizes automatically based on the closest size available for the current app window resolution.<br><br>
-> In MPOS or CPOS, navigate to the **Settings** page and locate the **Session information** section.  In that section you will find the current screen layout ID and layout resolution size being used.  You can also see the actual window resolution for your current application or browser frame.<br><br>
-> Using that information, you can locate the source of the layout content in Dynamics 365 for Retail by navigating to **Channel setup > POS setup > POS > Screen layouts**.
+\* These additional layout sizes are available only in Adventure Works and Fabrikam layouts.
 
-![Screen layouts and resolution sizes in Dynamics 365 for Retail and POS](../retail/media/demo-screen-layouts-fig-3-1.png)
+>[!TIP]
+> POS automatically selects layout sizes, based on the closest size that is available for the screen resolution of the current app window. To find the screen layout ID and layout resolution that are currently used, in Retail Modern POS (MPOS) or Retail Cloud POS (CPOS), open the **Settings** page, and look in the **Session information** section. You can also see the actual window resolution for your current application or browser frame. After you have this information, you can find the source of the layout content in Retail by going to **Channel setup** > **POS setup** > **POS** > **Screen layouts**.
+
+![Screen layouts and layout resolutions/sizes in Retail and POS](../retail/media/demo-screen-layouts-fig-3-1.png)
 
 ## Companies and brands
 
-Each fictitious company is targeted for a different retail segment, and includes product catalogs tuned for their market.  The companies include a unique visual brand to accompany their products.  Brands include accent color, dark or light theme, and accompanying photographs to provide realistic experiences.
+Each fictitious company is targeted to a different retail segment and includes product catalogs that are tuned for the company's market. Each company has a unique visual brand that accompanies its products. Branding elements include the accent color, dark or light theme, and accompanying photographs that provide realistic experiences.
 
-### Company segment and visual characteristics  
+### Company segment and visual characteristics
 
-| Company         	| Location 	| Segment        	| Accent 	| Theme 	|
-|-----------------	|----------	|----------------	|--------	|-------	|
-| Adventure Works 	| Seattle  	| Sporting Goods 	| Blue   	| Dark  	|
-| Fabrikam        	| Houston  	| Fashion        	| Green  	| Light 	|
-| Contoso         	| Boston   	| Electronics    	| Red    	| Dark  	|
+| Company         | Location | Segment        | Accent | Theme |
+|-----------------|----------|----------------|--------|-------|
+| Adventure Works | Seattle  | Sporting Goods | Blue   | Dark  |
+| Fabrikam        | Houston  | Fashion        | Green  | Light |
+| Contoso         | Boston   | Electronics    | Red    | Dark  |
 
->[!TIP]Adventure Works and Fabrikam are the two flagship brands.  Contoso is available, but not all layouts have been provided.
+>[!NOTE]
+> Adventure Works and Fabrikam are the two flagship brands. Contoso is available, but not all layouts have been provided.
+
+The following illustrations show examples of the welcome page and transaction page for the three fictitious companies.
 
 ### Adventure Works
+
 ![Demo data welcome page for Adventure Works](../retail/media/demo-screen-layouts-fig-4-1a.png)
 
 ![Demo data transaction page for Adventure Works](../retail/media/demo-screen-layouts-fig-4-1b.png)
 
 ### Fabrikam
+
 ![Demo data welcome page for Fabrikam](../retail/media/demo-screen-layouts-fig-4-2a.png)
 
 ![Demo data transaction page for Fabrikam](../retail/media/demo-screen-layouts-fig-4-2b.png)
 
 ### Contoso
-![Demo data layouts for Contoso](../retail/media/demo-screen-layouts-fig-4-3.png)
 
+![Demo data layouts for Contoso](../retail/media/demo-screen-layouts-fig-4-3.png)
 
 ## User sign in matrix
 
-Users have been provided to light up the various screen layouts.  Using the table below, you should be able to access any of the screens by signing in with the corresponding operator ID.
+Users have been provided for the various screen layouts. By using the following table, you should be able to access any of the screens. Just sign in by using an appropriate operator ID.
 
-| Company         	| Screen layout ID 	| Persona       	| Operator ID            	|
-|-----------------	|------------------	|---------------	|------------------------	|
-| Adventure Works 	| A3MGR            	| Store Manager 	| 000154, 000137, 000073 	|
-| Adventure Works 	| A3CSH            	| Cashier       	| 000150, 000175, 000165 	|
-| Adventure Works 	| A3STK            	| Stock Clerk   	| 000155, 000181, 000152 	|
-| Fabrikam        	| F3MGR            	| Store Manager 	| 000160, 000168, 000163 	|
-| Fabrikam        	| F3CSH            	| Cashier       	| 000161, 000113, 000114 	|
-| Fabrikam        	| F3STK            	| Stock Clerk   	| 000164, 000112, 000123 	|
-| Contoso         	| C3MGR            	| Store Manager 	| 000100, 000111         	|
-| Contoso         	| C3CSH            	| Cashier       	| 000110, 000120         	|
-| Contoso         	| n/a              	| Stock Clerk   	| n/a                    	|
+| Company         | Screen layout ID | Persona       	| Operator IDs           |
+|-----------------|------------------|---------------	|------------------------|
+| Adventure Works | A3MGR            | Store Manager 	| 000154, 000137, 000073 |
+| Adventure Works | A3CSH            | Cashier       	| 000150, 000175, 000165 |
+| Adventure Works | A3STK            | Stock Clerk   	| 000155, 000181, 000152 |
+| Fabrikam        | F3MGR            | Store Manager 	| 000160, 000168, 000163 |
+| Fabrikam        | F3CSH            | Cashier       	| 000161, 000113, 000114 |
+| Fabrikam        | F3STK            | Stock Clerk   	| 000164, 000112, 000123 |
+| Contoso         | C3MGR            | Store Manager 	| 000100, 000111         |
+| Contoso         | C3CSH            | Cashier       	| 000110, 000120         |
+| Contoso         | Not applicable   | Stock Clerk   	| Not applicable         |
 
-
->[!TIP]For best results, activate a register in the corresponding store location as the company of the persona you plan to use when signing in.  This will ensure that the visual profile and branding images align across the experience.  For example, if you are interested in seeing a Fabrikam layout for a cashier, you should activate using a register in the Houston store.
+>[!TIP]
+> For best results, activate a register in the corresponding store location, and set the company to the company of the persona that you plan to use when you sign in. In this way, you help guarantee that the visual profile and branding images are aligned across the experience. For example, if you're interested in seeing a Fabrikam layout for a cashier, you should activate a register in the Houston store.
 
 <!-- Hiding until the content page is available on CustomerSource -->
 
@@ -172,4 +176,3 @@ Users have been provided to light up the various screen layouts.  Using the tabl
 <!-- Use the [POS Icon and Image Mapping](../retail/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 
 <!-- END HIDDEN CONTENT -->
-
