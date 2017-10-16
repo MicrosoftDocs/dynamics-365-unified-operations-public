@@ -172,10 +172,10 @@ In this section, we will create a basic report by using Power View.
 
     4.  If the fields in the chart don't appear as you expected, you must drag the fields in the Power View pane, and put them into the correct **Axis** and **Legend** areas.
     
-       - Drag **PeriodName** to the **AXIS** area underneath **Quarter**.
-       - Drag **Main Account Category** to the **Legend** area.
+        - Drag **PeriodName** to the **AXIS** area underneath **Quarter**.
+        - Drag **Main Account Category** to the **Legend** area.
 
-       As you add fields from the three entities, notice that they are presented in a single visualization. This is possible because of the relationships that you previously set up in the Power Pivot data model.  
+        As you add fields from the three entities, notice that they are presented in a single visualization. This is possible because of the relationships that you previously set up in the Power Pivot data model.  
 
 3.  You can now drill into the quarter by double-clicking the **Q1** column.
    
