@@ -49,8 +49,7 @@ The Finance and Operations online service and the Finance and Operations (on-pre
 - Platform versions are supported for one year as specified in Table 3 later in this topic. Platform versions maintain backward compatibility. See the support matrix table below for more detail. Critical fixes and non-critical updates are handled in the following way:
 
     - **Critical fixes** – Microsoft may provide a customer with a hotfix for their current platform version of Finance and Operations, or a fix may be provided in the latest platform version of Finance and Operations, at its discretion.
-    - **Non-critical updates** – Customers must update to the most current Finance and Operations platform version to deploy non-critical updates.
-    
+    - **Non-critical updates** – Customers must update to the most current Finance and Operations platform version to deploy non-critical updates.    
     For more information about platform versions, see [Finance and Operations cloud platform monthly updates FAQ](../sysadmin/faq-platform-monthly-updates.md).
 
 ## Online service update policies
@@ -86,7 +85,7 @@ For information about the new features included in each release, click the links
 
 ### Table 2: Application updates
 
-The application updates listed below are conmprised of a small subset of application enhancements released on top of Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). These updates don't affect the support lifecycle of the release, but are in-line with the July 2017 release.
+The application updates listed below are comprised of a small subset of application enhancements released on top of Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). These updates don't affect the support lifecycle of the release, but are in-line with the July 2017 release.
 
 For information about the new features included in each update, click the links in the **Version** column.
 
