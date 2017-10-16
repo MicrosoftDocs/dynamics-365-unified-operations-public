@@ -108,8 +108,10 @@ The following table shows the layout sizes that are provided for typical screen 
 
 \* These additional layout sizes are available only in Adventure Works and Fabrikam layouts.
 
+
 >[!TIP]
 > POS automatically selects layout sizes, based on the closest size that is available for the screen resolution of the current app window. To find the screen layout ID and layout resolution that are currently used, in Retail Modern POS (MPOS) or Retail Cloud POS (CPOS), open the **Settings** page, and look in the **Session information** section. You can also see the actual window resolution for your current application or browser frame. After you have this information, you can find the source of the layout content in Retail by going to **Channel setup** > **POS setup** > **POS** > **Screen layouts**.
+
 
 ![Screen layouts and layout resolutions/sizes in Retail and POS](../retail/media/demo-screen-layouts-fig-3-1.png)
 
@@ -125,8 +127,10 @@ Each fictitious company is targeted to a different retail segment and includes p
 | Fabrikam        | Houston  | Fashion        | Green  | Light |
 | Contoso         | Boston   | Electronics    | Red    | Dark  |
 
+
 >[!NOTE]
 > Adventure Works and Fabrikam are the two flagship brands. Contoso is available, but not all layouts have been provided.
+
 
 The following illustrations show examples of the welcome page and transaction page for the three fictitious companies.
 
@@ -162,8 +166,10 @@ Users have been provided for the various screen layouts. By using the following 
 | Contoso         | C3CSH            | Cashier       	| 000110, 000120         |
 | Contoso         | Not applicable   | Stock Clerk   	| Not applicable         |
 
+
 >[!TIP]
 > For best results, activate a register in the corresponding store location, and set the company to the company of the persona that you plan to use when you sign in. In this way, you help guarantee that the visual profile and branding images are aligned across the experience. For example, if you're interested in seeing a Fabrikam layout for a cashier, you should activate a register in the Houston store.
+
 
 <!-- Hiding until the content page is available on CustomerSource -->
 
