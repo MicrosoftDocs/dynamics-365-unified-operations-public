@@ -1527,6 +1527,10 @@
 ##### [Create production orders](../supply-chain/production-control/create-production-orders.md)
 ##### [Release production orders](../supply-chain/production-control/release-production-orders.md)
 ##### [Reverse the production order status](../supply-chain/production-control/reverse-production-order-status.md)
+##### [Register material consumption using a mobile device](../supply-chain/production-control/register-material-consumption-hand-held-device.md)
+##### [Control raw material consumption by using flushing principles](../supply-chain/production-control/flushing-principles.md) 
+##### [Cross-docking from production orders to outbound docks](../supply-chain/production-control/cross-docking-opportunities.md)
+##### [Set the production output location for finished goods](../supply-chain/production-control/production-output-location.md)
 ##### [Report production orders as finished](../supply-chain/production-control/report-production-orders-as-finished.md)
 ##### [Report BOMs as finished](../supply-chain/production-control/report-boms-as-finished.md)
 ##### [Material substitution in manufacturing](../supply-chain/production-control/substitute-items-bom-lines.md)
@@ -1537,55 +1541,31 @@
 ##### [Allocate time to jobs in a job bundle](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Calculate material consumption](../supply-chain/production-control/consumption.md)
 ##### [Production posting](../supply-chain/cost-management/production-posting.md)
-#### Manage raw materials
-##### [Cross-docking from production orders to outbound docks](../supply-chain/production-control/cross-docking-opportunities.md)
-##### [Register material consumption using a mobile device](../supply-chain/production-control/register-material-consumption-hand-held-device.md)
-##### [Controlling raw material consumption by using flushing principles](../supply-chain/production-control/flushing-principles.md) 
-#### Manage finished goods
-##### [Set the production output location for finished goods](../supply-chain/production-control/production-output-location.md)
-
 #### Discrete manufacturing tasks
 ##### [Define discrete manufacturing resource group (task guides)](../supply-chain/production-control/tasks/define-discrete-manufacturing-resource-group.md)
-##### [Activate a production flow version (task guides)](../supply-chain/production-control/tasks/activate-production-flow-version.md)
 ##### [Add an existing activity to a production flow version (task guides)](../supply-chain/production-control/tasks/add-existing-activity-production-flow-version.md)
-##### [Add a predecessor to a production flow activity (task guides)](../supply-chain/production-control/tasks/add-predecessor-production-flow-activity.md)
-##### [Create a production flow version (task guides)](../supply-chain/production-control/tasks/create-production-flow-version.md)
 ##### [Deactivate a production flow version (task guides)](../supply-chain/production-control/tasks/deactivate-production-flow-version.md)
 ##### [Define an expiry date for a production flow version (task guides)](../supply-chain/production-control/tasks/define-expiry-date-production-flow-version.md)
 ##### [Define production flow models (task guides)](../supply-chain/production-control/tasks/define-production-flow-models.md)
-##### [Validate a production flow and version (task guides)](../supply-chain/production-control/tasks/validate-production-flow-version.md)
 ##### [Create working time scheduling properties (task guides)](../supply-chain/production-control/tasks/create-working-time-scheduling-properties.md)
 ##### [Create working time templates (task guides)](../supply-chain/production-control/tasks/create-working-time-templates.md)
-##### [Create a production order (task guides)](../supply-chain/production-control/tasks/create-production-order.md)
-##### [End a production order (task guides)](../supply-chain/production-control/tasks/end-production-order.md)
-##### [Estimate a production order (task guides)](../supply-chain/production-control/tasks/estimate-production-order.md)
-##### [Release a production order (task guides)](../supply-chain/production-control/tasks/release-production-order.md)
-##### [Report a production order as finished (task guides)](../supply-chain/production-control/tasks/report-production-order-finished.md)
-##### [Schedule a production order (task guides)](../supply-chain/production-control/tasks/schedule-production-order.md)
-##### [Schedule a production order with operations and job scheduling (task guides)](../supply-chain/production-control/tasks/schedule-production-order-operations-job-scheduling.md)
-##### [Start a production order (task guides)](../supply-chain/production-control/tasks/start-production-order.md)
-
-##### [Copy co-products from an existing formula version (task guides)](../supply-chain/production-control/tasks/copy-co-products-existing-formula-version.md)
-##### [Copy a formula (task guides)](../supply-chain/production-control/tasks/copy-formula.md)
-##### [Create a formula by copying from an existing formula (task guides)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
-
-##### [Batch order lifecycle from create to start (task guides)](../supply-chain/production-control/tasks/batch-order-lifecycle-start.md)
-##### [Classify a product using category hierarchies (task guides)](../supply-chain/pim/tasks/classify-product-category-hierarchies.md)
-##### [Create activity relation: Successor (task guides)](../supply-chain/production-control/tasks/create-activity-relation-successor.md)
-##### [Create a formula by copying from an existing formula (task guides)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
+##### Manage production order lifecycle
+###### [Create a production order (task guides)](../supply-chain/production-control/tasks/create-production-order.md)
+###### [Estimate a production order (task guides)](../supply-chain/production-control/tasks/estimate-production-order.md)
+###### [Schedule a production order (task guides)](../supply-chain/production-control/tasks/schedule-production-order.md)
+###### [Release a production order (task guides)](../supply-chain/production-control/tasks/release-production-order.md)
+###### [Start a production order (task guides)](../supply-chain/production-control/tasks/start-production-order.md)
+###### [Report a production order as finished (task guides)](../supply-chain/production-control/tasks/report-production-order-finished.md)
+###### [End a production order (task guides)](../supply-chain/production-control/tasks/end-production-order.md)
+###### [Schedule a production order with operations and job scheduling (task guides)](../supply-chain/production-control/tasks/schedule-production-order-operations-job-scheduling.md)
 ##### [Create an operations resource (task guides)](../supply-chain/production-control/tasks/create-operations-resource.md)
-##### [Create a value stream (task guides)](../supply-chain/production-control/tasks/create-value-stream.md)
 ##### [Define resource capabilities (task guides)](../supply-chain/production-control/tasks/define-resource-capabilities.md)
 ##### [Enable the payroll process for time and attendance (task guides)](../supply-chain/production-control/tasks/payroll-process-time-attendance.md)
 ##### [Report as finished to a plate-controlled location (task guides)](../supply-chain/production-control/tasks/report-finished-non-license-plate-controlled-location-2016-11.md)
 ##### [Report progress on a mobile job device (task guides)](../supply-chain/production-control/tasks/report-progress-mobile-job-device.md)
-##### [Sequence production jobs for process manufacturing (task guides)](../supply-chain/production-control/tasks/sequence-production-jobs-process-manufacturing.md)
 ##### [Use the safety stock journal to update minimum coverage (task guides)](../supply-chain/production-control/tasks/use-safety-stock-journal-update-minimum-coverage.md)
 ##### [Configure a worker using the mobile job device (task guides)](../supply-chain/production-control/tasks/worker-mobile-job-device.md)
 ##### [Manage unit of measure (Task guides)](../supply-chain/pim/tasks/manage-unit-measure.md)
-
-
-
 
 ### Lean manufacturing 
 #### [Lean manufacturing overview](../supply-chain/production-control/lean-manufacturing-overview.md)
@@ -1603,8 +1583,15 @@
 #### Lean manufacturing tasks
 ##### [Define lean manufacturing work cells (task guide)](../supply-chain/production-control/tasks/define-lean-manufacturing-work-cells.md)
 ##### [Define lean schedule groups (task guide)](../supply-chain/production-control/tasks/define-lean-schedule-groups.md)
-##### [Create process activities for lean manufacturing (task guide)](../supply-chain/production-control/tasks/create-process-activities-lean-manufacturing.md)
-##### [Create transfer activities for lean manufacturing (task guide)](../supply-chain/production-control/tasks/create-transfer-activities-lean-manufacturing.md)
+##### Production flows and activities in lean manufacturing 
+###### [Create a production flow version (task guides)](../supply-chain/production-control/tasks/create-production-flow-version.md)
+###### [Create process activities for lean manufacturing (task guide)](../supply-chain/production-control/tasks/create-process-activities-lean-manufacturing.md)
+###### [Create transfer activities for lean manufacturing (task guide)](../supply-chain/production-control/tasks/create-transfer-activities-lean-manufacturing.md)
+###### [Validate a production flow and version (task guides)](../supply-chain/production-control/tasks/validate-production-flow-version.md)
+###### [Activate a production flow version (task guides)](../supply-chain/production-control/tasks/activate-production-flow-version.md)
+###### [Create activity relation: Successor (task guides)](../supply-chain/production-control/tasks/create-activity-relation-successor.md)
+###### [Add a predecessor to a production flow activity (task guides)](../supply-chain/production-control/tasks/add-predecessor-production-flow-activity.md)
+###### [Create a value stream (task guides)](../supply-chain/production-control/tasks/create-value-stream.md)
 ##### [Lean pegging from sales orders (task guide)](../supply-chain/production-control/tasks/lean-pegging-sales-orders.md)
 ##### [Create a subcontracted work cell for lean manufacturing (task guide)](../supply-chain/production-control/tasks/create-subcontracted-work-cell-lean-manufacturing.md)
 ##### [Add a kanban quantity calculation policy to a kanban rule (task guide)](../supply-chain/production-control/tasks/add-kanban-quantity-calculation-policy-kanban-rule.md)
@@ -1629,20 +1616,6 @@
 ##### [Transfer materials with kanban jobs (task guide)](../supply-chain/production-control/tasks/transfer-materials-kanban-jobs.md)
 ##### [Update kanban status (task guide)](../supply-chain/production-control/tasks/update-kanban-status.md)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Process manufacturing
 #### Maintain production master data
 ##### [Bills of materials and formulas](../supply-chain/production-control/bill-of-material-bom.md)
@@ -1666,6 +1639,13 @@
 ##### [Allocate time to jobs in a job bundle](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Calculate material consumption](../supply-chain/production-control/consumption.md)
 ##### [Production posting](../supply-chain/cost-management/production-posting.md)
+#### Process manufacturing tasks
+##### [Copy a formula (task guides)](../supply-chain/production-control/tasks/copy-formula.md)
+##### [Create a formula by copying from an existing formula (task guides)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
+##### [Copy co-products from an existing formula version (task guides)](../supply-chain/production-control/tasks/copy-co-products-existing-formula-version.md)
+##### [Create a formula by copying from an existing formula (task guides)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
+##### [Batch order lifecycle from create to start (task guides)](../supply-chain/production-control/tasks/batch-order-lifecycle-start.md)
+##### [Sequence production jobs for process manufacturing (task guides)](../supply-chain/production-control/tasks/sequence-production-jobs-process-manufacturing.md)
 
 
 
