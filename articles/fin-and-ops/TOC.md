@@ -1537,6 +1537,7 @@
 ##### [Registration for manufacturing execution](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Production feedback](../supply-chain/production-control/production-feedback.md)
 ##### [Time and attendance registration](../supply-chain/production-control/time-attendance-registrations.md)
+##### [Absence registration in Time and attendance](..//supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 #### Manage financials in production
 ##### [Allocate time to jobs in a job bundle](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Calculate material consumption](../supply-chain/production-control/consumption.md)
