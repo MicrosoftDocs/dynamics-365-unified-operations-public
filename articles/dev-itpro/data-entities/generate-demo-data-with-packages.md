@@ -47,7 +47,7 @@ The demo data packages are designed to be layered on top of each other as shown 
 ![Demo data packages](./media/DemoData.png)
 
 ### System and shared
-The base package, System and Shared, is the foundation for all other packages. This package creates the legal entities, loads the global address book, and adds additional shared information. It must be loaded first to support all of the remaining packages. The package is entitled "100 - System and Shared.zip"
+The base package, **System and Shared**, is the foundation for all other packages. This package creates the legal entities, loads the global address book, and adds additional shared information. It must be loaded first to support all of the remaining packages. The package is entitled "100 - System and Shared.zip"
 
 Once the package is loaded, you will have the following legal entities:
 
@@ -62,9 +62,11 @@ Once the package is loaded, you will have the following legal entities:
 You can expect approximately 30 minutes to load this package. The time required to import this package will vary based on the speed of your instance.   
 
 ### Financials
-There are several packages that contain the financials data for a company. These data packages are entitled "200 - Financials" followed by the legal entity for which they were intended. For examples, the financial data packages for HQUS are entitled "200 - Financials - HQUS.zip".
+The **Financial** data packages contain data for general ledger, bank, accounts payable, tax, accounts receivable, fixed assets, and budgeting for a single company. These data packages are entitled "200 - Financials" followed by the legal entity for which they were intended. For examples, the financial data packages for HQUS are entitled "200 - Financials - HQUS.zip".
 
-At least two financials companies are required for cross company tasks such as centralized payments. All customers and vendors have been added to each legal entity (CHECK THIS). (TEST THIS).
+At least two financials companies are required for cross company tasks such as centralized payments. All customers and vendors have been added to each legal entity to facilitate the cross company tasks. (CHECK THIS). (TEST THIS). The CONS company is required if you want to do consolidations. 
+
+The financial data packages also have five inventory products to support the creation of invoices that will move through the accounts receivables and accounts payables processes. These items use a minimum of inventory and product functionality to support those process while eliminating complexity of setting up products when you want to demonstrate only financials functionality. More complete products will be added when you import the supply chain packages.  
 
 You can expect approximately 15 minutes to load each package. The time required to import this package will vary based on the speed of your instance.
 
@@ -76,4 +78,14 @@ You can expect approximately 30 minutes to load each package. The time required 
 
 ## Loading the packages
 
-The data packages must be loaded in a specific order into a specific legal entity. The number preceding the name of the package provides guidance to the order t
+The data packages must be loaded in a specific order into a specific legal entity. The number preceding the name of the package provides guidance to the order that the data must be loaded. For example, to load the the HQUS financials, you must import "100 - System and shared.zip" first, followed by "200 - Financials - HQUS.zip". If you want to add supply chain data to the HQUS company, add "300 - Supply chain - HQUS.zip"
+
+We recommend the following combinations:
+
+| Description | ABC |  
+|------|--------|
+
+
+## Transactions
+
+
