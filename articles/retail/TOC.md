@@ -61,6 +61,7 @@
 ### [Hybrid customer orders](hybrid-customer-orders.md)
 ## Sales associates
 ### [Track commissions in POS using sales groups](pos-sales-groups-track-commissions.md)
+## [Ship an order from a different store](charge-send.md)
 ## Device activation
 ### [Configure and install MPOS](retail-modern-pos-device-activation.md)
 ### [Set up extended logon for Cloud POS and MPOS](extended-logon.md)
