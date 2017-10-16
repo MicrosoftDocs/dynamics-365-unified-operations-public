@@ -74,7 +74,7 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
 1. On the **Data project** page, select **Create recurring data job**.
 2. Enter a valid name and a description for the recurring data job.
 3. On the **Set up authorization policy** tab, enter the application ID that was generated for your application, and mark it as enabled.
-4. Expand **Advanced options**, and specify either **File** or **Data package**.
+4. Expand **Advanced options** tab, and specify either **File** or **Data package**.
 
     - **File** – Your external integration will push individual files so that they can be processed via this recurring data job. In this case, the format of the file that is expected is the same as the format that was specified when the entity was added to the data project.
     - **Data package** – You can push only data package files for processing. A data package is a new format that lets you submit multiple data files as a single unit that can be used in integration jobs.
@@ -88,9 +88,7 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
 7. Select **OK**, and then select **Yes** in the confirmation message box.
 
 ## Manage recurring data jobs
-1. In the **System administration** workspace (not the **System administration** module), select the **Data Management IT** tile. 
-
-    ![Data Management IT](./media/image011_2016-300x292.png)
+1. In the **System administration** workspace (not the **System administration** module), select the **Data Management IT** workspace. 
 
 2. In the workspace, on the **Recurring data job** tab, select the recurring job to view the details. The **Manage scheduled data jobs** page contains a grid that lists any messages that are waiting in the queue. Therefore, you can monitor messages and the processing status. 
 
@@ -141,13 +139,13 @@ Use the following API.
     POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
     
 ## Tips and tricks
-### Viewing the batch job status for recurring integrations from data management 
-Recurring integration data jobs run in batch mode. If a recurring job fails, you must investigate the instance of the batch job as part of the troubleshooting process. To make this investigation easier, the **Manage messages** page for a recurring data job now shows the status of the batch job.
+### Viewing the batch job status for recurring integrations from the Data management workspace
+Recurring integration data jobs run in batch mode. If a recurring job fails, you must investigate the instance of the batch job as part of the troubleshooting process. To make this investigation easier, click **Manage messages** to get to the **Process status for recurring data job** page, which now shows the status of the batch job.
 
 The batch job status is retrieved asynchronously from the batch framework for the specified recurring data job. To see the most up-to-date batch job status, select **Get batch status**, and then refresh the page. 
 
 > [!NOTE]
-> If the record for the batch history is deleted, the status for the batch job on the **Processing status for recurring data job** page will be blank, as shown in the following example.
+> If the record for the batch history is deleted, the status for the batch job on the **Processing status for recurring data job** page will be blank.
 
 ![Batch job status](./media/show-batch-status.png)
 
@@ -158,7 +156,6 @@ You can set the **Prevent upload when zero records** option either when you conf
 
 ![Prevent upload when zero records](./media/prevent-file-upload.png)
 
-### Debugging uploads
 Your implementation might include runs of recurring jobs where files or packages were uploaded. Your implementation might also include runs where no files or packages were uploaded, because there was nothing to upload. If you suspect that a file that should have been uploaded wasn't uploaded, or that a file that should not have been uploaded was uploaded, you can use the **Manage messages** page for the recurring export job to help with the debugging process.
 
 > [!NOTE]
