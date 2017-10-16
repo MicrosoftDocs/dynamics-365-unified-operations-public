@@ -132,7 +132,7 @@
 ##### [Calculate a BOM by using a multilevel structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02.md)
 
 
-## Data management and integration
+## Data management platform
 
 ### [Data entities, projects, and packages](../dev-itpro/data-entities/data-entities.md)
 #### [Data entities and packages framework](../dev-itpro/data-entities/data-entities-data-packages.md)
@@ -185,23 +185,24 @@
 ##### [Validations, defaults, and unmapped fields](../dev-itpro/data-entities/validations-defaults-unmapped-fields.md)
 ##### [Security and data entities](../dev-itpro/data-entities/security-data-entities.md)
 
-### Data integration
+### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md)
+
+## Data integration framework
+
+### Data integration APIs
+#### [Data management package API](../dev-itpro/data-entities/data-management-api.md)
+#### [Service endpoints](../dev-itpro/data-entities/services-home-page.md)
+##### [Service authentication troubleshooting](../dev-itpro/data-entities/troubleshoot-service-authentication.md)
+#### [OData](../dev-itpro/data-entities/odata.md)
+#### [Recurring integrations](../dev-itpro/data-entities/recurring-integrations.md)
+
+### Development for integration
 #### [Data integration using data entities](../dev-itpro/data-entities/data-management-integration-data-entity.md)
 ##### [Develop an entity for data migration](../dev-itpro/data-entities/develop-entity-for-data-migration.md)
 ##### [Develop composite data entities](../dev-itpro/data-entities/develop-composite-data-entities.md)
 ##### [Configure financial cross-company data sharing](../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md)
 ##### [Create a record template to facilitate data entry](../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md)
 ##### [Use a record template to create a new record](../dev-itpro/data-entities/tasks/use-record-template-new-record.md)
-
-#### Data integration APIs
-##### [Data management package API](../dev-itpro/data-entities/data-management-api.md)
-
-#### Integration patterns
-##### [Service endpoints](../dev-itpro/data-entities/services-home-page.md)
-###### [Service authentication troubleshooting](../dev-itpro/data-entities/troubleshoot-service-authentication.md)
-
-##### [OData](../dev-itpro/data-entities/odata.md)
-##### [Recurring integrations](../dev-itpro/data-entities/recurring-integrations.md)
 
 #### [Data integration using the Common Data Service](../dev-itpro/data-entities/data-integration-cds.md) 
 ##### [Configure a prospect to cash scenario](../supply-chain/sales-marketing/prospect-to-cash.md)
@@ -1285,7 +1286,7 @@
 #### [Add Power BI to workspaces](../dev-itpro/analytics/add-bi-workspaces.md)
 #### [Pin Power BI reports to workspaces](../dev-itpro/analytics/pin-power-bi-reports.md)
 #### [Power BI integration with Entity store](../dev-itpro/analytics/power-bi-integration-entity-store.md)
-#### [Export entities to your own Azure SQL database](../dev-itpro/analytics/export-entities-to-your-own-database.md)
+#### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md)
 #### [Author analytical reports by using Power BI Desktop](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
 #### [Publish analytical applications on Power BI](../dev-itpro/analytics/publish-apps-powerbi.md)
 
@@ -1537,6 +1538,7 @@
 ##### [Registration for manufacturing execution](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Production feedback](../supply-chain/production-control/production-feedback.md)
 ##### [Time and attendance registration](../supply-chain/production-control/time-attendance-registrations.md)
+##### [Absence registration in Time and attendance](..//supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 #### Manage financials in production
 ##### [Allocate time to jobs in a job bundle](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Calculate material consumption](../supply-chain/production-control/consumption.md)

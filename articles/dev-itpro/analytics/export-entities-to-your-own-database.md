@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Export entities to your own Azure SQL database
+title: Bring your own database
 description: This topic explains how to export entities to your own Azure SQL database.
 author: MilindaV2
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -27,7 +27,7 @@ ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2 
 ---
 
-# Export entities to your own Azure SQL database
+# Bring your own database
 
 [!include[banner](../includes/banner.md)]
 
