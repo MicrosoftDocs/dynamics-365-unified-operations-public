@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dynamics AX 2012 features that have been postponed
-description: This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Although these features haven't yet been implemented, they aren't deprecated. 
+title: Postponed features
+description: This topic lists Microsoft Dynamics AX 2012 features that were postponed. This means that these features were not deprecated, but not implmented in Dynamics AX 7.0. 
 author: sericks007
 manager: AnnBe
 ms.date: 10/13/2017
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Dynamics AX 2012 features that have been postponed
+# Postponed features
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Although these features haven't yet been implemented, they aren't deprecated. 
+This topic lists Microsoft Dynamics AX 2012 features that were postponed. This means that these features were not deprecated, but not implmented in Dynamics AX 7.0. 
 
 > [!Note]
 > If a feature has been implemented since we originally published this topic, we indicate that in the **Update** column.
@@ -47,7 +47,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </colgroup>
 <thead>
 <tr class="header">
-<th>Feature</th>
+<th>Dynamics AX 2012 feature that was postponed</th>
 <th>Description</th>
 <th>Update (as of October, 13 2017)
 </tr>
