@@ -32,3 +32,33 @@ ms.dyn365.ops.version: Platform update 11
 
 [!include[banner](../includes/banner.md)]
 
+Demo data has been delivered as a database in prior releases. Starting in the Fall 2017 release, a variation of some of the demo data will also be released in LCS as data packages in the shared asset library. These packages are designed to be loaded onto an empty environment and you can choose which packages that you need to load for your demonstration. 
+
+Using data packages to deliver demo data provides some benefits over using the current database:
+1. The download times are signficantly smaller.
+2. You can import only the data packages that you need.
+3. You can edit the spreadsheets to customize the data for your customers. 
+4. Updated demo data can be provided through LCS very quickly.
+
+## How the packages are organized
+
+The demo data packages are designed to be layered on top of each other as shown in this diagram:
+
+![Demo data packages](./media/demodata.png)
+
+The base package, System and Shared, is the foundation for all other packages. This package creates the legal entities, loads the global address book, and adds additional shared information. It must be loaded first to support all of the remaining packages. Once the package is loaded, you will have the following legal entities:
+
+| Legal entity | Description |  
+|------|--------|
+| HQUS | The US based headquarters for your demo company. This company was based on the original USMF data but changed to remove the manufacturing focus in the name. |
+| HQEU | The non-US based headquarters for your demo company. This company was based on the original DEMF data but changed to remove the manufacturing focus in the name. |
+| CONS | A small consolidations company. |
+| PICH | A process industries company focused on chemicals. |
+| PIFB | A process industries company focused on food and beverage. |
+
+
+
+The remaining packages contain application demo data for various scenarios.  
+
+### Timing
+
