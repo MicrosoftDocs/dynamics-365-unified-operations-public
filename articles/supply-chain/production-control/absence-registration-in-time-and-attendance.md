@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the concepts for absence and explains how to handle absence in Time and attendance.
 
-## Absence that is based on normal work hours
+## Absence that is based on regular work hours
 
-Workers are considered absent for any hours that they don't work during their normal work hours. Normal work hours are defined in a worker's standard time profile.
+Workers are considered absent for any hours that they don't work during their regular work hours. Regular work hours are defined in a worker's standard time profile.
 
 For example, a worker is working on a day profile that has clock-in at 7:00 AM and clock-out at 3:00 PM. If the worker clocks in at 9:00 AM, he is considered absent from 7:00 AM to 9:00 AM on that day.
 
@@ -54,7 +54,7 @@ You can set up automatic absence codes. These absence codes can be used to calcu
 
 ### Set up standard time and flex time
 
-- Configure the parameters for standard time and flex time by using the **Auto insert absence** or **Auto insert Flex-** options on the **Time and attendance parameters** page.
+- Configure the parameters for standard time and flex time by using the **Auto insert absence** and **Auto insert Flex-** options on the **Time and attendance parameters** page.
 
 ## Absence groups
 
