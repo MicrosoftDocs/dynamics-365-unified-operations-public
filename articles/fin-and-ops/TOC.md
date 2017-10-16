@@ -1556,6 +1556,48 @@
 #### Operate kanban jobs
 ##### [Kanban transfer board support for barcode scanners](../supply-chain/production-control/kanban-transfer-board-support-barcode-scanner.md)
 ##### [Production feedback](../supply-chain/production-control/production-feedback.md)
+
+##### [Add a kanban quantity calculation policy to a kanban rule (task guide)](../supply-chain/production-control/tasks/add-kanban-quantity-calculation-policy-kanban-rule.md)
+##### [Calculate kanban quantity suggestions (task guide)](../supply-chain/production-control/tasks/calculate-kanban-quantity-suggestions.md)
+##### [Change kanban rules for a process job (task guide)](../supply-chain/production-control/tasks/change-kanban-rules-process-job.md)
+##### [Create a BOM line event kanban rule (task guide)](../supply-chain/production-control/tasks/create-bom-line-event-kanban-rule.md)
+##### [Create a fixed quantity kanban rule for manufacturing (task guide)](../supply-chain/production-control/tasks/create-fixed-quantity-kanban-rule-manufacturing.md)
+##### [Create a kanban rule using a kanban line event (task guide)](../supply-chain/production-control/tasks/create-kanban-rule-kanban-line-event.md)
+##### [Create a kanban rule using a minimum stock event (task guide)](../supply-chain/production-control/tasks/create-kanban-rule-minimum-stock-event.md)
+##### [Create a kanban rule for multiple activities (task guide)](../supply-chain/production-control/tasks/create-kanban-rule-multiple-activities.md)
+##### [Create a new kanban rule by duplicating an existing kanban rule (task guide)](../supply-chain/production-control/tasks/create-new-kanban-rule-duplicating-existing-kanban-rule.md)
+##### [Create a replacement kanban rule (task guide)](../supply-chain/production-control/tasks/create-replacement-kanban-rule.md)
+##### [Create a sal (task guide)es event kanban rule (task guide)](../supply-chain/production-control/tasks/create-sales-event-k (task guide)anban-rule.md)
+##### [Create a withdrawal kanban rule (ta (task guide)sk guide)](../supply-chain/production-control/tasks/create-withdrawal-kanban-rule.md)
+##### [Execute kanban process jobs (task guide)](../supply-chain/production-control/tasks/execute-kanban-process-jobs.md)
+##### [Move scheduled kanban jobs (task guide)](../supply-chain/production-control/tasks/move-scheduled-kanban-jobs.md)
+##### [Prepare a process kanban job when materials are available for the work cell (task guide)](../supply-chain/production-control/tasks/prepare-kanban-job-materials.md)
+##### [Prepare a process kanban job when materials are not available for the work cell (task guide)](../supply-chain/production-control/tasks/prepare-process-kanban-job-materials-not-available.md)
+##### [Remove a kanban job from the schedule (task guide)](../supply-chain/production-control/tasks/remove-kanban-job-schedule.md)
+##### [Revert kanban job status (task guide)](../supply-chain/production-control/tasks/revert-kanban-job-status.md)
+##### [Schedule kanban jobs (task guide)](../supply-chain/production-control/tasks/schedule-kanban-jobs.md)
+##### [Transfer materials with kanban jobs (task guide)](../supply-chain/production-control/tasks/transfer-materials-kanban-jobs.md)
+##### [Update kanban status (task guide)](../supply-chain/production-control/tasks/update-kanban-status.md)
+
+##### [Create process activities for lean manufacturing (task guide)](../supply-chain/production-control/tasks/create-process-activities-lean-manufacturing.md)
+##### [Create transfer activities for lean manufacturing (task guide)](../supply-chain/production-control/tasks/create-transfer-activities-lean-manufacturing.md)
+##### [Define lean manufacturing work cells (task guide)](../supply-chain/production-control/tasks/define-lean-manufacturing-work-cells.md)
+##### [Define lean schedule groups (task guide)](../supply-chain/production-control/tasks/define-lean-schedule-groups.md)
+##### [Lean pegging from sales orders (task guide)](../supply-chain/production-control/tasks/lean-pegging-sales-orders.md)
+##### [Create a subcontracted work cell for lean manufacturing (task guide)](../supply-chain/production-control/tasks/create-subcontracted-work-cell-lean-manufacturing.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Process manufacturing
 #### Maintain production master data
 ##### [Bills of materials and formulas](../supply-chain/production-control/bill-of-material-bom.md)
@@ -1581,34 +1623,6 @@
 ##### [Production posting](../supply-chain/cost-management/production-posting.md)
 
 #### Production tasks
-##### [Add a kanban quantity calculation policy to a kanban rule](../supply-chain/production-control/tasks/add-kanban-quantity-calculation-policy-kanban-rule.md)
-##### [Calculate kanban quantity suggestions](../supply-chain/production-control/tasks/calculate-kanban-quantity-suggestions.md)
-##### [Change kanban rules for a process job](../supply-chain/production-control/tasks/change-kanban-rules-process-job.md)
-##### [Create a BOM line event kanban rule](../supply-chain/production-control/tasks/create-bom-line-event-kanban-rule.md)
-##### [Create a fixed quantity kanban rule for manufacturing](../supply-chain/production-control/tasks/create-fixed-quantity-kanban-rule-manufacturing.md)
-##### [Create a kanban rule using a kanban line event](../supply-chain/production-control/tasks/create-kanban-rule-kanban-line-event.md)
-##### [Create a kanban rule using a minimum stock event](../supply-chain/production-control/tasks/create-kanban-rule-minimum-stock-event.md)
-##### [Create a kanban rule for multiple activities](../supply-chain/production-control/tasks/create-kanban-rule-multiple-activities.md)
-##### [Create a new kanban rule by duplicating an existing kanban rule](../supply-chain/production-control/tasks/create-new-kanban-rule-duplicating-existing-kanban-rule.md)
-##### [Create a replacement kanban rule](../supply-chain/production-control/tasks/create-replacement-kanban-rule.md)
-##### [Create a sales event kanban rule](../supply-chain/production-control/tasks/create-sales-event-kanban-rule.md)
-##### [Create a withdrawal kanban rule](../supply-chain/production-control/tasks/create-withdrawal-kanban-rule.md)
-##### [Execute kanban process jobs](../supply-chain/production-control/tasks/execute-kanban-process-jobs.md)
-##### [Move scheduled kanban jobs](../supply-chain/production-control/tasks/move-scheduled-kanban-jobs.md)
-##### [Prepare a process kanban job when materials are available for the work cell](../supply-chain/production-control/tasks/prepare-kanban-job-materials.md)
-##### [Prepare a process kanban job when materials are not available for the work cell](../supply-chain/production-control/tasks/prepare-process-kanban-job-materials-not-available.md)
-##### [Remove a kanban job from the schedule](../supply-chain/production-control/tasks/remove-kanban-job-schedule.md)
-##### [Revert kanban job status](../supply-chain/production-control/tasks/revert-kanban-job-status.md)
-##### [Schedule kanban jobs](../supply-chain/production-control/tasks/schedule-kanban-jobs.md)
-##### [Transfer materials with kanban jobs (February 2016 only)](../supply-chain/production-control/tasks/transfer-materials-kanban-jobs.md)
-##### [Update kanban status](../supply-chain/production-control/tasks/update-kanban-status.md)
-
-##### [Create process activities for lean manufacturing](../supply-chain/production-control/tasks/create-process-activities-lean-manufacturing.md)
-##### [Create transfer activities for lean manufacturing](../supply-chain/production-control/tasks/create-transfer-activities-lean-manufacturing.md)
-##### [Define lean manufacturing work cells](../supply-chain/production-control/tasks/define-lean-manufacturing-work-cells.md)
-##### [Define lean schedule groups](../supply-chain/production-control/tasks/define-lean-schedule-groups.md)
-##### [Lean pegging from sales orders](../supply-chain/production-control/tasks/lean-pegging-sales-orders.md)
-##### [Create a subcontracted work cell for lean manufacturing](../supply-chain/production-control/tasks/create-subcontracted-work-cell-lean-manufacturing.md)
 
 
 ##### [Define discrete manufacturing resource group](../supply-chain/production-control/tasks/define-discrete-manufacturing-resource-group.md)
