@@ -40,7 +40,7 @@ This topic provides an overview of the cash register functionality that is avail
 
 To learn about common POS features that are available to customers in all countries or regions, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
 
-The following POS features implemented previously and available to customers in all countries or regions may be used for Norway specifically:
+The following POS localization features implemented previously and available to customers in all countries or regions may be used for Norway specifically:
 
 - **Print text fields on the receipt in a large font size.** You can use the **Font size** parameter in the Receipt format designer to specify that the large font size should be used for a field in a receipt format. (The large font size is approximately double the usual font size.) For example, you can use this parameter to print the "Copy" indicator on a receipt copy in large characters.
 
@@ -48,6 +48,17 @@ The following POS features implemented previously and available to customers in 
 
 - **Prevent a copy of a receipt from being printed more than one time.** When the parameter **Audit** in the POS functionality profile is enabled, the **Allow printing receipt copies** POS permission controls whether receipt copies can be printed. There is also an option to prevent a copy of a receipt from being printed more than one time. 
 
+Additionally, the following POS features that were implemented for Norway have been made available to customers in all countries or regions:
+
+- **Register additional events in the POS audit event log.** If the **Audit** parameter is enabled in the POS functionality profile, the following events are registered in the POS audit event log:
+
+  - Price look-up
+
+  - Tax overrides
+
+  - Quantity corrections
+
+  - Clearing the transactions from the channel database
 
 ### Receipts
 Receipts for Norway include additional information that was implemented using custom fields.
@@ -75,10 +86,7 @@ The receipt totals section exclude non-sales transactions. Non-sales transaction
 
 ### POS Transaction journal
 The following events are registered in the POS transaction journal/POS Fiscal event log: 
-- Price look-up
-- Tax overrides
-- Quantity corrections
-- Clearing the transactions from the channel database. This information is also included in the exported journal and/or X/Z-reports.
+
 
 ### X and Z reports
 X and Z reports include more information than the core retail documents. For example, the name and organization number of the enterprise as well as the number of price look-ups specified by product group and amount are both included in the reports.
