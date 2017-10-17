@@ -51,7 +51,7 @@ When you first visit Lifecycle Services (LCS) after acquiring the necessary lice
  
 As indicated in the table above, if you choose to deploy Dynamics 365 for Retail--and you have the necessary licenses--you will have the option, at deployment time, to configure the solution: 
 
-- If you want the solution configured for retail functionality only, select **Retail only**. 
+- If you want the solution scoped to retail functionality only, select **Retail only**. 
 - If you want to enable additionaly functionality, select **Retail + Opertions**.
  
 ![Deployment settings](media/Deployment-settings.png)
