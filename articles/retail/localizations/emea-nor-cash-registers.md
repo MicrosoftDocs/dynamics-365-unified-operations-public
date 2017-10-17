@@ -58,7 +58,7 @@ Additionally, the following POS feature that was implemented for Norway has been
 
   - Line quantity corrections
 
-  - Clearing the transactions from the channel database
+  - Clearing transactions from the channel database
 
 ### Norway-specific POS features
 
@@ -114,22 +114,21 @@ Receipts for Norway may include additional information that was implemented usin
   
   - Adding funds to a gift card
 
-### POS Transaction journal
-The following events are registered in the POS transaction journal/POS Fiscal event log: 
+#### X and Z reports
 
+X and Z reports include information according to local requirements. For example, total cash sales amounts include only cash sales transaction amount and exclude issue gift card operations, as well as prepayments; total cash sales are also listed per item groups and per payment methods. In addition, cumulative Grand total sales and Grand total return amounts are maintained.
 
-### X and Z reports
-X and Z reports include more information than the core retail documents. For example, the name and organization number of the enterprise as well as the number of price look-ups specified by product group and amount are both included in the reports.
+#### SAF-T Cash Register audit file
 
-### SAF-T Cash register audit file
-You can export the POS transaction journal in the predefined SAF-T (Standard Audit File - Tax) Cash register format. This audit file can be exported for the following scenarios:
+You can export the POS transaction journal in the predefined SAF-T (Standard Audit File - Tax) Cash Register format. This audit file can be exported for the following scenarios:
+
 - Per company
 - Per store
 - All stores
 - Per terminal
 - All terminals
 
-The SAF-T cash register format must be implemented at Retail HQ using Electronic reporting. The format configuration is available to download from Lifecycle Services. For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+The SAF-T cash Register format must be implemented at Retail HQ using Electronic reporting. The format configuration is available to download from Lifecycle Services. For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
 ## Setting up Retail for Norway
 
