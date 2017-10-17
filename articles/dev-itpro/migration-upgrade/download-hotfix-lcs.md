@@ -49,11 +49,27 @@ Use this tutorial to download updates from Lifecycle Services (LCS). This tutori
 ## Download an udpate
 
 1.  Log in to LCS with your credentials.
+
 2.  Select an environment from the LCS project.
+
 3.  On the **Environment** page, under the **Monitoring** section, update tiles are shown. For Dynamics 365 for Finance and Operations, you will see 2 update tiles (X++ updates and Binary updates). These two types of updates can be independently downloaded and applied, although certain X++ updates may depend on binary updates and vice versa, which will be described in the update description.
+
 4.  Select one of the update tiles to view the list of available hotfixes that can be used to create a hotfix package for download.
-5.  Select the applicable KBs, and then click **Add hotfix to package**. [![Add hotfix](./media/add-hotfixes.png)](./media/add-hotfixes.png) **Note**: For X++ updates, if you want to download all available updates at this point, you should click on Select all and then click on **Add** instead of **Add hotfix to package**.
-6.  Click **Download package** to download the hotfix package. [![Download hotfix](./media/donwload-hotfix.png)](./media/donwload-hotfix.png) After you select **Download package**, the **Review and download hotfixes** page will open. Use this page to review selected hotfixes, discard the package, return to the hotfix selections, or download the final package. [![Review and download hotfixes](./media/review-and-download-hotfixes.png)](./media/review-and-download-hotfixes.png)
+
+5.  Select the applicable KBs, and then click **Add hotfix to package**. 
+
+  [![Add hotfix](./media/add-hotfixes.png)](./media/add-hotfixes.png) 
+
+  > [!Note]
+  > For X++ updates, if you want to download all available updates at this point, you should click on Select all and then click on **Add** instead of **Add hotfix to package**.
+  
+6.  Click **Download package** to download the hotfix package. 
+
+  [![Download hotfix](./media/donwload-hotfix.png)](./media/donwload-hotfix.png) 
+
+  After you select **Download package**, the **Review and download hotfixes** page will open. Use this page to review selected hotfixes, discard the package, return to the hotfix selections, or download the final package. 
+  
+  [![Review and download hotfixes](./media/review-and-download-hotfixes.png)](./media/review-and-download-hotfixes.png)
 
 This tutorial is a part of the [Servicing environments](..\dev-tools\developer-home-page.md#service-environments) content.
 
