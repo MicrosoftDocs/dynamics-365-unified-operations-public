@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Data entities and packages framework
-description: This topic provides information about using data entities and data entity packages. 
-author: kfend
+title: Data management framework
+description: This topic provides information about using the data management framework to manage data entities and data entity packages. 
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,30 +17,41 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: margocs
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 96283
 ms.assetid: e67f5edc-1087-4867-8955-b2a40d94217f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities and packages framework
+# Data management framework
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides information about using data entities and data entity packages. 
+This topic describes how to use the data management framework to manage data entities and data entity packages in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
-Data entities
--------------
+## Data management concepts
+In addition to data entities, the data management framework consists of the following: 
 
-Data entities provide conceptual abstraction and encapsulation of underlying table schema that represent data concepts and functionalities. In Microsoft Dynamics AX 2012, most tables, like the Customer and Vendor tables, were de-normalized and split into multiple tables. This was beneficial from a database design point of view, but made it difficult for implementers and ISV’s to use without a thorough understanding of the physical schema. Data entities were introduced as part of data management to be used as a layer of abstraction to easily understand by using business concepts. In previous versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, there were multiple ways to manage data, such as Microsoft Excel Add-ins, AIF, and DIXF. The concept of data entities combines those different concepts into one. After data entities are created, you should be able to reuse them for an Excel Add-ins, import/export, or integration. The following table shows core data management scenarios.
+|                  |                                                                                                                                                                                        |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Data project** | A project that contains configured data entities, which include mapping and default processing options.                                                                                |
+| **Data job**     | A job that contains an execution instance of the data project, uploaded files, schedule (recurrence), and processing options.                                                          |
+| **Job history**  | Histories of source to staging and staging to target.                                                                                                                                  |
+| **Data package** | A single compressed file that contains a data project manifest and/or data files. This is generated from a data job and used for import or export of multiple files with the manifest. |
+
+## Data entities
+
+Data entities are conceptual abstractions and encapsulations of underlying table schemas, which represent data concepts and functionality. In the older version of Finance and Operations, Microsoft Dynamics AX 2012, most tables, such as the Customer and Vendor table, were de-normalized and split into multiple tables. Splitting up the table was beneficial from a database design point of view, but made it difficult for implementers and ISV’s to use without a thorough understanding of the physical schema. 
+
+Data entities were introduced to provide a layer of abstraction that can be easily understand by users familiar with business concepts. After data entities are created, you should be able to reuse them for an Excel Add-ins, import/export, or integration. The following table shows core data management scenarios.
 
 <table>
 <colgroup>
@@ -89,15 +100,7 @@ Starting a new implementation can be difficult because the knowledge of the dat
 -   Maintaining a reusable library of data templates and datasets.
 -   Data packages is a new concept that allows you to build incremental data entities. Data entities can be sequenced inside the packages. You can name data packages, which can be easily identifiable during import or export. When building data packages, data entities can be mapped on staging tables in a tabular format or by using available visual representation in data management. You can also drag-and-drop columns manually, depending on the mapping that you want for an entity. During import, data can easily be viewed using data management enabling data comparison.
 
-## Data management concepts
-The following terms are introduced.
 
-|                  |                                                                                                                                                                                        |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Data project** | A project that contains configured data entities, which include mapping and default processing options.                                                                                |
-| **Data job**     | A job that contains an execution instance of the data project, uploaded files, schedule (recurrence), and processing options.                                                          |
-| **Job history**  | Histories of source to staging and staging to target.                                                                                                                                  |
-| **Data package** | A single compressed file that contains a data project manifest and/or data files. This is generated from a data job and used for import or export of multiple files with the manifest. |
 
 ## Using data entities
 The following sections provide quick snapshots of the different functionalities of data management using data entities. The goal is to help to you strategize and make effective decisions on how to best utilize the available tools during data migration. You will also find tips and tricks on how to effectively use each area during data migration. A list of available data entities for each area can also be found with the suggested data sequences, showing data dependencies. Microsoft provides data packages that can be found on Lifecycle Services (LCS) as an initial guide. The information in this document can be used as a guide for creating your own packages. The description of each data entity shows what the object contains and if it is needed during data migration.
@@ -220,8 +223,6 @@ Import is the process of pulling data into a system utilizing data entities. The
 
 See also
 --------
-
-[Data entities](data-entities.md)
 
 [Data entities](data-entities.md)
 
