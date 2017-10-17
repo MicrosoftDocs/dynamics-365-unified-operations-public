@@ -37,8 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This tutorial guides you though the process of creating a basic Power BI report and explains how to start to create a dashboard on PowerBI.com.
 
-Key concepts
-------------
+## Key concepts
 
 -   **Power BI** – The cloud-based analytics visualization platform that is used to extract, transform, and present data from Microsoft Dynamics 365 for Finance and Operations (and other systems), so that users can interact with the data and share it.
 -   **Microsoft Power Query for Excel** – The Microsoft Excel–based tool that you can use to extract and transform data from Finance and Operations (through OData feeds) into an Excel-based data model that is used in Power BI reporting.
@@ -55,8 +54,7 @@ Excel and the latest version of Power Query are required. Note the following po
 2.  Start Excel, and verify that the **Power Query** tab is available.
 3.  Enable the Microsoft SQL Server Power Pivot for Excel add-in and the Power View add-in.
 
-View the OData feed in your web browser
-=======================================
+## View the OData feed in your web browser
 
 1.  Start a web browser, and enter the URL that is used to access your Finance and Operations deployment. This URL will be in the following format: https://*yourenvrionment*.cloudax.dynamics.com
 2.  Sign in by entering your credentials, if you aren't already signed in.
@@ -65,8 +63,7 @@ View the OData feed in your web browser
 
     [![JSON file](./media/1-1024x616.png)](./media/1.png)
 
-Access OData endpoints in Power Query
-=====================================
+## Access OData endpoints in Power Query
 
 1.  Start Excel.
 2.  On the **Power Query** tab, click **From Other Sources** &gt; **From OData Feed**. 
@@ -182,8 +179,7 @@ In this section, we will create a basic report by using Power View.
 
 5.  Save the Excel workbook to your local machine or to Microsoft OneDrive.
 
-Upload the Excel workbook to PowerBI.com
-========================================
+## Upload the Excel workbook to PowerBI.com
 
 In this section, we will create a dashboard by using the data model that we created in Power Query.
 
