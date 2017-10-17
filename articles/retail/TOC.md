@@ -40,6 +40,7 @@
 
 # Modern Point of Sale (MPOS) and Cloud POS
 ## [POS operations](POS-operations.md)
+## [Demo data screen layouts in MPOS/CPOS](demo-data.md)
 ## Hardware peripherals
 ### [Retail peripherals overview](retail-peripherals-overview.md)
 ### [Microsoft tested POS hardware peripherals](microsoft-tested-pos-hardware-peripherals.md)
