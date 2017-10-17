@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data management framework
-description: This topic provides information about using the data management framework to manage data entities and data entity packages. 
+description: This describes the data management framework in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -37,62 +37,37 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to use the data management framework to manage data entities and data entity packages in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
-## Data management concepts
-In addition to data entities, the data management framework consists of the following: 
+The data management framework consists of the following concepts: 
 
-|                  |                                                                                                                                                                                        |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Data project** | A project that contains configured data entities, which include mapping and default processing options.                                                                                |
-| **Data job**     | A job that contains an execution instance of the data project, uploaded files, schedule (recurrence), and processing options.                                                          |
-| **Job history**  | Histories of source to staging and staging to target.                                                                                                                                  |
-| **Data package** | A single compressed file that contains a data project manifest and/or data files. This is generated from a data job and used for import or export of multiple files with the manifest. |
+- **Data project**: A project that contains configured data entities, which include mapping and default processing options.
+- **Data job**: A job that contains an execution instance of the data project, uploaded files, schedule (recurrence), and processing options.
+- **Job history**: Histories of source to staging and staging to target.
+- **Data package**:  A single compressed file that contains a data project manifest and/or data files. This is generated from a data job and used for import or export of multiple files with the manifest. 
+- **Data entities**: A data entity is a conceptual abstraction and encapsulation of one of more underlying tables. A data entity represents a common data concept or functionality, for example, Customers or Vendors. Data entities are intended to be easily understand by users familiar with business concepts. After data entities are created, you can reuse them through the Excel Add-in, use them to define import/export packages, or use them for integrations. 
 
-## Data entities
+## Data management scenarios
+The data management framework supports the following core data management scenarios:
 
-Data entities are conceptual abstractions and encapsulations of underlying table schemas, which represent data concepts and functionality. In the older version of Finance and Operations, Microsoft Dynamics AX 2012, most tables, such as the Customer and Vendor table, were de-normalized and split into multiple tables. Splitting up the table was beneficial from a database design point of view, but made it difficult for implementers and ISV’s to use without a thorough understanding of the physical schema. 
+- Data migration
+- Set up and copy configurations
+    - Copy configurations between companies or environments
+    - Configure processes or modules using Microsoft Dynamics Lifecycle Services (LCS)
+- Integration
+    - Real-time service based integration
+    - Asynchronous integration
 
-Data entities were introduced to provide a layer of abstraction that can be easily understand by users familiar with business concepts. After data entities are created, you should be able to reuse them for an Excel Add-ins, import/export, or integration. The following table shows core data management scenarios.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Data Migration</strong></td>
-<td><ul>
-<li>Migrate reference, master, and document data from legacy or external systems.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Setup and copy configuration</strong></td>
-<td><ul>
-<li>Copy configuration between company/environments.</li>
-<li>Configure processes or modules using the Lifecycle Services (LCS) environment.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><strong>Integration</strong></td>
-<td><ul>
-<li>Real-time service based integration.</li>
-<li>Asynchronous integration.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+### Data migration
+Using the data management framework, you can quickly migrate reference, master, and document data from legacy or external systems. The framework is intended to help you quickly migrate data by using the following features: 
 
-## Data migration
-The following pain points can occur during migration:
+-   You can select only the entities you need to migrate. 
+-   If an import error occurs, you can skip selected records and choose to proceed with the import using only the good data, opting to then fix and import the bad data later. You will be able to partially continue and use errors to quickly find bad data. 
+-   You can move data entities straight from one Finance and Operations system to another, without having to go through Excel, or XML. 
+-   Data imports can be easily scheduled using a batch, which offers flexibility when it is required to run. For example, you can migrate customer groups, customers, vendors, and other data entities in the system at any time.
 
--   Inability to quickly do iterative migration and validations.
--   Multiple hops that lead to multiple dependencies and change of errors.
--   Complexity due to repeated manual interventions.
--   Difficulty in tracing and error troubleshooting.
--   Difficulty migrating a large volume of data within a time constraint.
--   During migration, you can strategize and choose data entities. Data entities also save time during implementation because previous activities required data export from a database, data export validation, and data transformation to files such as Excel or XML. These hoops have been eliminated. If an import error occurs, you can skip selected records and choose to proceed with the import using the good data, opting to then fix and import the bad data later. You will be allowed to partially continue and bad data will be indicated by using errors. Data imports can be easily scheduled using a batch, which offers flexibility when it is required to run. For example, you can migrate customer groups, customers, vendors, and other data entities in the system at any time.
+### Set up and copy configuration
+You can use the data management framework to copy configurations between companies or environments, and configure processes or modules using Microsoft Dynamics Lifecycle Services (LCS). 
 
-## Set up and copy configuration
 Starting a new implementation can be difficult because the knowledge of the data that needs to be entered can sometimes be limited. Data must be entered by module, or it must be configured using business processes. It is even more difficult to determine data dependencies and how the data sequencing should be configured in the implementation. Re-usability is also a factor as to where and how data can be used across environments. These pain points are now addressed. Movement of data becomes easier as it moves from test to staging to production environments. Movement of data can occur in any order. This is not a movement of the entire database but rather, only the data entities that you have chosen. Migration now allows:
 
 -   Moving data between two similar systems.
