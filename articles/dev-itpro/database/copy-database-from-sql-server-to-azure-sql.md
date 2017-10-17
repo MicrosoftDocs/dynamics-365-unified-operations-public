@@ -58,7 +58,6 @@ If you encounter issues, see the "Known issues and limitations" section at the e
 
 ## Prerequisites
 
-- The source SQL Server–based environment must be running Microsoft SQL Server 2016 Release to Manufacturing (RTM) (13.0.1601.5) or later. The Community Technology Preview (CTP) versions of SQL Server 2016 might cause errors. If the source environment is running an earlier version of SQL Server 2016, you must first back up the database and restore it to another environment that is running SQL Server 2016 RTM (13.0.1601.5) or later.
 - To import a database into an Azure SQL Database environment, you must install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the Application Object Server (AOS) computer in **that** environment. You then do the bacpac import on the AOS computer. There are two reasons for this requirement:
 
     - Because of an Internet Protocol (IP) access restriction on all instances of Finance and Operations that run on Azure SQL Database, connections are allowed only from a computer in that environment.
@@ -135,9 +134,9 @@ A successful export and import of the database requires all these changes.
 
 ## Export the database from SQL Server
 
-Next, open a **Command Prompt** window as an administrator, and run the following commands.
+Next, open a **Command Prompt** window as an administrator, and run the following commands (if the 140 folder dosn't exist you need to install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx))
 
-    cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
+    cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
     SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false
 
 Here is an explanation of the parameters:
@@ -153,9 +152,9 @@ Copy the .bacpac file that was generated in the previous step to the AOS compute
 > [!NOTE]
 > Microsoft doesn't provide a storage account as part of your Finance and Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. For performance reasons, we recommend that you put the .bacpac file on drive D on the AOS computer. (For more details, see the "Known issues and limitations" section.)
 
-Open a **Command Prompt** window as an administrator, and run the following commands.
+Open a **Command Prompt** window as an administrator, and run the following commands (if the 140 folder doesn't exist, you need to install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx))
 
-    cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
+    cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
 
     SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=P2
 
