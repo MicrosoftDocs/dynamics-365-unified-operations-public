@@ -116,7 +116,7 @@ Receipts for Norway may include additional information that was implemented usin
 
 #### X and Z reports
 
-X and Z reports include information according to local requirements. For example, total cash sales amounts include only cash sales transaction amount and exclude issue gift card operations, as well as prepayments; total cash sales are also listed per item groups and per payment methods. In addition, cumulative Grand total sales and Grand total return amounts are maintained.
+X and Z reports include information according to Norwegian requirements. For example, total cash sales amounts include only cash sales transaction amount and exclude issue gift card operations, as well as prepayments; total cash sales are also listed per item groups and per payment methods. In addition, cumulative Grand total sales and Grand total return amounts are maintained.
 
 #### SAF-T Cash Register audit file
 
