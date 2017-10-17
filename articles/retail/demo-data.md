@@ -3,7 +3,7 @@
 
 title: The demo data screen layouts in MPOS/CPOS
 description: This topic provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Microsoft Dynamics 365 for Retail.
-author: zalin
+author: zlinster
 manager: AnnBe
 ms.date: 10/05/2017
 ms.topic: article
