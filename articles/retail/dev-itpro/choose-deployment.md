@@ -36,7 +36,7 @@ Retail functionality is available in the following products:
  
 Dynamics 365 for Retail contains core retail functionality that is typically used by most retailers. This tailored functionality improves productivity and helps to ease the on-boarding and training processes for your employees. 
 
-With Dynamics 365 for Retail, you also have the option to enable additional functionality. This means that you could potentially configure a Dynamics 365 for Retail enviroment to have the same functional footprint as a Dynamics 365 for Finance and Operations environment.
+With Dynamics 365 for Retail, you also have the option to enable additional functionality. This means that you could potentially deploy a Dynamics 365 for Retail enviroment that has the same functional footprint as a Dynamics 365 for Finance and Operations environment.
  
 The following table lists the key differences between Dynamics 365 for Retail and Dynamics 365 for Finance and Operations.
 
@@ -47,8 +47,8 @@ The following table lists the key differences between Dynamics 365 for Retail an
 |Deploy a solution that is, by default, scoped to provide retail funitonality only. | Yes  | No  |
 |Optimize your financials and operations to drive growth and make real-time, data-driven decisions with an intelligent, modern enterprise business application.| No*<br><br>\* You can enable additional functionality with a Unified Operations license or P1 license. | Yes |
 
-When you first visit Lifecycle Services (LCS) after acquiring the necessary licenses for your tenant, you will be prompted to choose an implementation project type (Dynamics 365 for Retail or Dynamics 365 for Finance & Operations). You can use the above considerations to choose the right product to implement.
+When you first visit Lifecycle Services (LCS) after acquiring the necessary licenses for your tenant, you will be prompted to choose an implementation project type, which is where you must select **Dynamics 365 for Retail** or **Dynamics 365 for Finance and Operations**. You can use the above considerations to choose the right product to deploy.
  
-If you choose to implement Dynamics 365 for Retail, and have the necessary licenses, you will also have the option, at environment deployment time, to configure it for tailored retail functionality, or **Retail + Operations** functionality. 
+As indicated in the table above, if you choose to deploy Dynamics 365 for Retail--and you have the necessary licenses--you will also have the option, at deployment time, to configure it for tailored retail functionality, or **Retail + Operations** functionality. 
  
 ![Deployment settings](media/Deployment-settings.png)
