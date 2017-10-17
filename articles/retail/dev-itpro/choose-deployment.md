@@ -36,7 +36,7 @@ Retail functionality is available in the following products:
  
 Dynamics 365 for Retail contains core retail functionality that is typically used by most retailers. This tailored functionality improves productivity and helps to ease the on-boarding and training processes for your employees. 
 
-With Dynamics 365 for Retail, you also have the option to enable additional functionality. This means that you could potentially deploy a Dynamics 365 for Retail enviroment that has the same functional footprint as a Dynamics 365 for Finance and Operations environment.
+With Dynamics 365 for Retail, you also have the option to enable additional functionality. This means that you could deploy a Dynamics 365 for Retail enviroment that has the same functional footprint as a Dynamics 365 for Finance and Operations environment.
  
 The following table lists the key differences between Dynamics 365 for Retail and Dynamics 365 for Finance and Operations.
 
