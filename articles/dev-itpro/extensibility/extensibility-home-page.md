@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition is customized extensively by partners, value add resellers (VARs), and even some customers. This is a strength of the product which historically has been supported through overlayering of the application code. The move to the cloud with more agile servicing and frequent updates requires a less intrusive customization model that makes updates less likely to impact custom solutions. This new model is called extensibility and will ultimately replace customization by overlayering. 
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition is customized extensively by partners, value added resellers (VARs), and even some customers. This is a strength of the product which historically has been supported through overlayering of the application code. The move to the cloud with more agile servicing and frequent updates requires a less intrusive customization model that makes updates less likely to impact custom solutions. This new model is called extensibility and will ultimately replace customization by overlayering. 
 
 In addition, extensibility is the only extension model supported for app model customizations in Microsoft Dynamics 365 for Retail. Overlayering is not supported.
 
