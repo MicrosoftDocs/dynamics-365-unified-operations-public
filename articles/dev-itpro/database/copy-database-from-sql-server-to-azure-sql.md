@@ -134,7 +134,10 @@ A successful export and import of the database requires all these changes.
 
 ## Export the database from SQL Server
 
-Next, open a **Command Prompt** window as an administrator, and run the following commands (if the **140** folder doesn't exist you need to install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx))
+Next, open a **Command Prompt** window as an administrator, and run the following commands.
+
+> [!IMPORTANT]
+> If the **140** folder doesn't exist, you need to install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx)).
 
     cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
     SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false
@@ -152,7 +155,9 @@ Copy the .bacpac file that was generated in the previous step to the AOS compute
 > [!NOTE]
 > Microsoft doesn't provide a storage account as part of your Finance and Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. For performance reasons, we recommend that you put the .bacpac file on drive D on the AOS computer. (For more details, see the "Known issues and limitations" section.)
 
-Open a **Command Prompt** window as an administrator, and run the following commands (if the 140 folder doesn't exist, you need to install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx))
+Open a **Command Prompt** window as an administrator, and run the following commands
+> [!IMPORTANT]
+> If the **140** folder doesn't exist, you need to install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx)).
 
     cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
 
