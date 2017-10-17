@@ -40,7 +40,7 @@ Follow these steps to set up a development environment, so that you can test and
 
 ### The CRT extension components
 
-The CRT extension components are included in CommerceRuntime samples. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
+The CRT extension components are included in the CRT samples. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
 #### ReceiptsNorway component
 
