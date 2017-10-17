@@ -29,10 +29,10 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 # Deployment options
 
-You can use retail functionality in one of 2 ways:
+Retail functionality is available in the following products:
  
-- Option 1: **Dynamics 365 for Retail**
-- Option 2: **Dynamics 365 for Finance and Operations**
+- Dynamics 365 for Retail
+- Dynamics 365 for Finance and Operations
  
 Dynamics 365 for Retail contains core retail functionality that is typically used by most retailers. This tailored functionality improves productivity and helps to ease the on-boarding and training processes for your employees.
 
