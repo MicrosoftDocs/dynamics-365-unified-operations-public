@@ -97,19 +97,22 @@ The digitally signing process uses an RSA 1024 bit key with a SHA-1 hash functio
 The signature is stored in the Store DB and HQ DB together with the transaction data
 
 #### Receipts
+
 Receipts for Norway may include additional information that was implemented using custom fields.
 
-- **Receipt titles**. It is possible to add a field to a receipt format layout that identifies the type of receipt. For example, a sales receipt will include the text "Sales receipt". 
+- **Receipt title**. It is possible to add a field to a receipt format layout that identifies the type of receipt. For example, a sales receipt will include the text "Sales receipt". 
 
-- **Signed transaction sequential number**
-The signed transaction sequential number is listed on the receipt in order to associate a printed receipt with a digital signature in the database.
+- **Signed transaction sequential number**. The signed transaction sequential number may be listed on the receipt in order to associate a printed receipt with a digital signature in the database.
 
-#### Receipt totals
-The receipt totals section exclude non-sales transactions. Non-sales transactions include:
-- Issuing a gift card
-- Adding funds to a gift card
-- Deposits
-- Prepayments
+- **Receipt totals**. Custom receipt total fields exclude non-sales amounts from total transaction amounts. Non-sales amounts include:
+
+  - Prepayments (customer account deposit)
+
+  - Prepayments for sales orders (customer order deposit)
+
+  - Issuing a gift card
+  
+  - Adding funds to a gift card
 
 ### POS Transaction journal
 The following events are registered in the POS transaction journal/POS Fiscal event log: 
