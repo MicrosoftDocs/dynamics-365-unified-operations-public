@@ -134,7 +134,7 @@ A successful export and import of the database requires all these changes.
 
 ## Export the database from SQL Server
 
-Next, open a **Command Prompt** window as an administrator, and run the following commands (if the 140 folder dosn't exist you need to install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx))
+Next, open a **Command Prompt** window as an administrator, and run the following commands (if the **140** folder doesn't exist you need to install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx))
 
     cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
     SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false
