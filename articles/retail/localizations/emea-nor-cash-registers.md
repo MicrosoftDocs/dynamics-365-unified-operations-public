@@ -4,8 +4,8 @@
 title: Cash registers for Norway
 description: This topic provides an overview of the cash register functionality that is available for Norway. 
 author: EvgenyPopovMBS
-manager: annbe
-ms.date: 10/10/2017
+manager: vastrup
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:
+ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailHardwareProfile, RetailFiscalPrinterConfigTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -28,11 +28,26 @@ ms.dyn365.ops.version: Application update 4
 ---
 # Cash registers for Norway
 
-This topic provides an overview of the cash register functionality that is available for Norway in Microsoft Dynamics 365 for Retail. It also provides guidelines for setting up the functionality.
+This topic provides an overview of the cash register functionality that is available for Norway in Microsoft Dynamics 365 for Retail. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
+
+- Common point-of sale (POS) features that are made available to customers in all countries or regions, such as an option to prevent printing a copy of a receipt more than one time
+
+- Norway-specific features, such as digital signature for sales transactions
+
+## Overview of cash register functionality for Norway
+
+### Common POS features
 
 To learn about common POS features that are available to customers in all countries or regions, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
 
-## Overview of cash register functionality for Norway
+The following POS features implemented previously and available to customers in all countries or regions may be used for Norway specifically:
+
+- **Print text fields on the receipt in a large font size.** You can use the **Font size** parameter in the Receipt format designer to specify that the large font size should be used for a field in a receipt format. (The large font size is approximately double the usual font size.) For example, you can use this parameter to print the "Copy" indicator on a receipt copy in large characters.
+
+- **Register the printing of receipt copies in the POS audit event log.** You can use the **Audit** parameter in the POS functionality profile to enable the printing of receipt copies and other POS audit events to be registered. The audit events are registered in the channel database and in Retail headquarters. You can view the audit events on the **Audit events** page.
+
+- **Prevent a copy of a receipt from being printed more than one time.** When the parameter **Audit** in the POS functionality profile is enabled, the **Allow printing receipt copies** POS permission controls whether receipt copies can be printed. There is also an option to prevent a copy of a receipt from being printed more than one time. 
+
 
 ### Receipts
 Receipts for Norway include additional information that was implemented using custom fields.
