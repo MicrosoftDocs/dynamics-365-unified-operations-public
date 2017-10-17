@@ -5,7 +5,7 @@ title: Create a Power BI report and dashboard
 description: This tutorial guides you though the process of creating a basic Power BI report and explains how to start to create a dashboard on PowerBI.com.
 author: clwesene
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,8 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This tutorial guides you though the process of creating a basic Power BI report and explains how to start to create a dashboard on PowerBI.com.
 
-Key concepts
-------------
+## Key concepts
 
 -   **Power BI** – The cloud-based analytics visualization platform that is used to extract, transform, and present data from Microsoft Dynamics 365 for Finance and Operations (and other systems), so that users can interact with the data and share it.
 -   **Microsoft Power Query for Excel** – The Microsoft Excel–based tool that you can use to extract and transform data from Finance and Operations (through OData feeds) into an Excel-based data model that is used in Power BI reporting.
@@ -55,8 +54,7 @@ Excel and the latest version of Power Query are required. Note the following po
 2.  Start Excel, and verify that the **Power Query** tab is available.
 3.  Enable the Microsoft SQL Server Power Pivot for Excel add-in and the Power View add-in.
 
-View the OData feed in your web browser
-=======================================
+## View the OData feed in your web browser
 
 1.  Start a web browser, and enter the URL that is used to access your Finance and Operations deployment. This URL will be in the following format: https://*yourenvrionment*.cloudax.dynamics.com
 2.  Sign in by entering your credentials, if you aren't already signed in.
@@ -65,8 +63,7 @@ View the OData feed in your web browser
 
     [![JSON file](./media/1-1024x616.png)](./media/1.png)
 
-Access OData endpoints in Power Query
-=====================================
+## Access OData endpoints in Power Query
 
 1.  Start Excel.
 2.  On the **Power Query** tab, click **From Other Sources** &gt; **From OData Feed**. 
@@ -87,7 +84,7 @@ Access OData endpoints in Power Query
     -   GeneralLedgerActivities
     -   MainAccounts
     
-        Power Query loads the data from Finance and Operations into the Excel data model. Depending on the size of the data set, this process might require some time. 
+    Power Query loads the data from Finance and Operations into the Excel data model. Depending on the size of the data set, this process might require some time. 
     
 7.  Double-click **MainAccounts** to load the query. 
 
@@ -135,12 +132,10 @@ In this section, we will review the Excel data model to optimize the data for re
 6.  You can now add a calculated measure to use in reports. Use the **Measures** pane at the bottom of the PowerPivot window to create two new measures. Follow these steps:
     1.  Click in the **Measure** pane, enter the following formula, and then press Enter: Total Expenses this year:=calculate(sum(\[Expenses\]),'FiscalCalendars'\[YearOffset\]=0)
     2.  Click in the cell below the previous cell, and enter the following formula: Total Expenses last year:=calculate(sum(\[Expenses\]),'FiscalCalendars'\[YearOffset\]=-1)
-    
 
-    > [!Note]
-    > These formulas use the Finance and Operations language. Both formulas sum the **Expenses** column, but each applies a different filter to your fiscal calendars on the year offset. A year offset of **0** specifies the current financial year, and a year offset of **-1** specifies last financial year. This step lets users take advantage of their custom Finance and Operations fiscal calendars in Power BI. 
+        These formulas use the Finance and Operations language. Both formulas sum the **Expenses** column, but each applies a different filter to your fiscal calendars on the year offset. A year offset of **0** specifies the current financial year, and a year offset of **-1** specifies last financial year. This step lets users take advantage of their custom Finance and Operations fiscal calendars in Power BI. 
     
-    [![PowerPivot window](./media/111.png)](./media/111.png)
+    ![PowerPivot window](./media/111.png)
 
 7.  Click each new measure, and set the format to **Decimal Number**. Then close the Power Pivot data model.
 
@@ -157,7 +152,10 @@ At this point, you can use the Power Pivot data model to optimize your data so t
 In this section, we will create a basic report by using Power View.
 
 1.  On the **Insert** tab, click **Power View**. Excel loads a blank Power View report. Notice that your three entities appear in the **Power View Fields** pane on the right side.
-2.  Expand **GeneralLedgerActivities**, and then click **Total Expense this year**. Notice that Power View adds the field to a table on the report. Follow these steps:
+2.  Expand **GeneralLedgerActivities**, and then click **Total Expense this year**. 
+
+    Notice that Power View adds the field to a table on the report. Follow these steps:
+    
     1.  Click the table, and then, on the **Design** tab, click **Column Chart** &gt; **Stacked Column** to change the table into a column chart.
     2.  Expand the size of the column chart until it fills two-thirds of your report. To expand the chart, drag the corners. 
         
@@ -169,23 +167,19 @@ In this section, we will create a basic report by using Power View.
         -   MainAccounts – Main Account Category
 
     4.  If the fields in the chart don't appear as you expected, you must drag the fields in the Power View pane, and put them into the correct **Axis** and **Legend** areas.
-        1.  Drag **PeriodName** to the **AXIS** area underneath **Quarter**.
-        2.  Drag **Main Account Category** to the **Legend** area.
+    
+        - Drag **PeriodName** to the **AXIS** area underneath **Quarter**.
+        - Drag **Main Account Category** to the **Legend** area.
 
-
-        > [!Note}
-        > As you add fields from the three entities, notice that they are presented in a single visualization. This is possible because of the relationships that you previously set up in the Power Pivot data model. 
-        
-   
+        As you add fields from the three entities, notice that they are presented in a single visualization. This is possible because of the relationships that you previously set up in the Power Pivot data model.  
 
 3.  You can now drill into the quarter by double-clicking the **Q1** column.
-    
-
+   
 4.  In the **Click here to add a title** field, enter a title for your report.
+
 5.  Save the Excel workbook to your local machine or to Microsoft OneDrive.
 
-Upload the Excel workbook to PowerBI.com
-========================================
+## Upload the Excel workbook to PowerBI.com
 
 In this section, we will create a dashboard by using the data model that we created in Power Query.
 
@@ -217,7 +211,7 @@ In this section, we will create a dashboard by using the data model that we crea
 
 You can repeat this process to build out your dashboard.
 
-# See also
+## See also
 
 [Power BI integration in Finance and Operations](power-bi-integration.md)
 [Configuring Power BI integration for workspaces](configure-power-bi-integration.md)
