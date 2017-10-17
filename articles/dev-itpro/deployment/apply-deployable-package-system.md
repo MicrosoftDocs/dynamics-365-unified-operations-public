@@ -2,10 +2,10 @@
 # required metadata
 
 title: Apply a deployable package to an environment
-description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a Finance and Operations environment.
+description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to an environment.
 author: manalidongre
 manager: AnnBe
-ms.date: 05/31/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,14 +33,14 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to automatically apply updates to a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition environment. Finance and Operations updates are applied using deployable packages.
+This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to automatically apply updates to either a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition environment or a Microsoft Dynamics 365 for Retail environment. Updates are applied using deployable packages.
 
 > [!IMPORTANT]
 > Applying packages causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
 
 ## Supported environments
 
-The following topologies support package deployment that uses automated flows in Microsoft Dynamics Lifecycle Services (LCS):
+The following topologies support package deployment that uses automated flows in LCS:
 
 - **LCS Implementation Project** – All environment types are supported. Automated package application is a self-service operation in all environments except production environments. For production environments, customers must use LCS to submit a request to the Service Engineering team to apply packages.
 - **LCS Partner and Trial Projects** – All environment types are supported, except multi-box dev/test topologies.
@@ -52,7 +52,7 @@ For other topologies (below), you must use Remote Desktop Protocol (RDP) to conn
 
 ## Key concepts
 
-Before you begin, you should understand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Finance and Operations application (AOT) package, or a new Finance and Operations application (AOT) package. The AXInstaller creates a runbook that enables installing a package. For more details, see [Packages, runbooks, and the AXUpdateInstaller in depth](#packages-runbooks-and-the-AXUpdateInstaller-in-depth) at the end of this topic.
+Before you begin, you should understand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. The AXInstaller creates a runbook that enables installing a package. For more details, see [Packages, runbooks, and the AXUpdateInstaller in depth](#packages-runbooks-and-the-AXUpdateInstaller-in-depth) at the end of this topic.
 
 ## Supported package types
 
@@ -204,7 +204,7 @@ If you're using retail components (such as Retail Modern POS), after you've appl
 
 Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use to apply updates. 
 
-**Deployable package** – A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Finance and Operations or Dynamics 365 for Retail environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. Deployable packages downloaded from LCS or created in a development environment cannot be cross-applied across product types, i.e. a Dynamics 365 for Finance & Operations deployable package cannot be applied on a Dynamics 365 for Retail environment, and vice versa. If you have an existing customization for Dynamics 365 for Finance & Operations that is compatible with Dynamics 365 for Retail, and would like to apply to a Dynamics 365 for Retail environment you will need to re-package your source code in a Dynamics 365 for Retail development environment, and conversely if moving in the other direction.   
+**Deployable package** – A deployable package is a unit of deployment that can be applied in any Finance and Operations or Retail environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. Deployable packages downloaded from LCS or created in a development environment cannot be applied across product types. That is, a Finance and Operations deployable package cannot be applied in a Retail environment, and vice versa. If you have an existing customization for Finance and Operations that is compatible with Retail, and would like to apply it to a  Retail environment, you will need to re-package your source code in a Retail development environment, and conversely if moving in the other direction.   
 
 [![Example of a deployable package](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
 
