@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Apply a deployable package to a Finance and Operations environment
+title: Apply a deployable package to an environment
 description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a Finance and Operations environment.
 author: manalidongre
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Apply a deployable package to a Finance and Operations environment
+# Apply a deployable package to an environment
 
 [!include[banner](../includes/banner.md)]
 
@@ -81,7 +81,7 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 
 Before you begin, verify that the deployable package has been uploaded to the Asset library in LCS.
 
-1. For a binary update, upload the package directly to the Asset library. For information about how to download an update from LCS, see [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
+1. For a binary update, upload the package directly to the Asset library. For information about how to download an update from LCS, see [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
 
     For an application (AOT) deployable package that results from an X++ hotfix, or from application customizations and extensions, create the deployable package in your development or build environment, and then upload it to the Asset library.
 2. Open the **Environment details** view for the environment where you want to apply the package.
@@ -134,12 +134,12 @@ If package application isn't successful, you have two options:
 
 ## Apply a package to a production environment by using LCS
 
-In a production environment, unlike in a sandbox environment or other types of environments, package application through LCS isn't self-serve. Customers and partners must submit a request to the Service Engineering team to apply a package when the customer is ready for the downtime. 
+In a production environment, unlike in a sandbox environment or other types of environments, package application through LCS isn't self-serve. Customers and partners must submit a request to Microsoft to apply a package when the customer is ready for the downtime. 
 
-1. Download an update from LCS. For information about how to download an update from LCS, see [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
+1. Download an update from LCS. For information about how to download an update from LCS, see [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
 
     - For a binary update, upload the update deployable package directly to the Asset library.
-    - For an application/X++ hotfix, apply the package in a development environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create and apply a deployable package](create-apply-deployable-package.md).
+    - For an application/X++ update, apply the package in a development environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create and apply a deployable package](create-apply-deployable-package.md).
 
 2. On the **Asset library** page in LCS, on the tab that corresponds to the asset type (**Software deployable package**), select a package, and then click **Release candidate**.
 3. Apply the package in a sandbox environment by using the instructions earlier in this topic.
@@ -158,9 +158,9 @@ In a production environment, unlike in a sandbox environment or other types of e
     - **Actionable by** – This field indicates who must take action.
 
     ![Request status and Actionable by fields](./media/applypackage_prod_7-1024x269.png)
-11. The Service Engineering team either accepts or denies the request.
+11. Microsoft either accepts or denies the request.
 
-    - If the request is accepted, the Service Engineering team begins to update the environment.
+    - If the request is accepted, Microsoft begins to update the environment.
     
     ![Accepted request: Request status = Request accepted, Actionable by = Microsoft](./media/applypackage_prod_9-1024x384.png)
     - If the request is denied, Microsoft informs the customer about the reason for denial and the action that the customer must take. The customer can then reschedule the request, change the package, or cancel the request.
@@ -183,7 +183,7 @@ In a production environment, unlike in a sandbox environment or other types of e
 - After the deployment is successfully completed, the **Servicing status** field is set to **Completed**, but the **Request status** field is still set to **In progress**, because the request hasn't yet been closed.
 
     ![Successful deployment: Servicing status = Completed, Request status = In progress](./media/applypackage_prod_13-1024x392.png)
-- After the Service Engineering team has finished applying the request, you must close the request by clicking **Close servicing request**.
+- After Microsoft has finished applying the request, you must close the request by clicking **Close servicing request**.
 - When you close a successful request, in the **Edit work item details** dialog box, set the **Service request status** field to **Succeeded**, and then click **Submit**.
 
 ### Unsuccessful package application
@@ -198,13 +198,13 @@ In a production environment, unlike in a sandbox environment or other types of e
 
 ## Deploying packages in Retail environments
 
-If you're using Microsoft Dynamics 365 for Retail components (such as Retail Modern POS), after you've applied a deployable package in your environment, you must also update your in-store components. For more information, see [Retail Modern POS installation and updates](../../retail/retail-modern-pos-device-activation.md).
+If you're using retail components (such as Retail Modern POS), after you've applied a deployable package in your environment, you must also update your in-store components. For more information, see [Retail Modern POS installation and updates](../../retail/retail-modern-pos-device-activation.md).
 
 ## Packages, runbooks, and the AXUpdateInstaller in depth
 
 Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use to apply updates. 
 
-**Deployable package** – A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Finance and Operations application (AOT) package, or a new Finance and Operations application (AOT) package.
+**Deployable package** – A deployable package is a unit of deployment that can be applied in any Microsoft Dynamics 365 for Finance and Operations or Dynamics 365 for Retail environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. Deployable packages downloaded from LCS or created in a development environment cannot be cross-applied across product types, i.e. a Dynamics 365 for Finance & Operations deployable package cannot be applied on a Dynamics 365 for Retail environment, and vice versa. If you have an existing customization for Dynamics 365 for Finance & Operations that is compatible with Dynamics 365 for Retail, and would like to apply to a Dynamics 365 for Retail environment you will need to re-package your source code in a Dynamics 365 for Retail development environment, and conversely if moving in the other direction.   
 
 [![Example of a deployable package](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
 
