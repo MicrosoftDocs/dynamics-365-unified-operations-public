@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Application update 4
 
 This topic provides an overview of the cash register functionality that is available for Norway in Microsoft Dynamics 365 for Retail. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
 
-- Common point-of sale (POS) features that are made available to customers in all countries or regions, such as an option to prevent printing a copy of a receipt more than one time
+- Common point-of-sale (POS) features that are made available to customers in all countries or regions, such as an option to prevent printing a copy of a receipt more than one time
 
 - Norway-specific features, such as digital signature for sales transactions
 
@@ -48,33 +48,60 @@ The following POS localization features implemented previously and available to 
 
 - **Prevent a copy of a receipt from being printed more than one time.** When the parameter **Audit** in the POS functionality profile is enabled, the **Allow printing receipt copies** POS permission controls whether receipt copies can be printed. There is also an option to prevent a copy of a receipt from being printed more than one time. 
 
-Additionally, the following POS features that were implemented for Norway have been made available to customers in all countries or regions:
+Additionally, the following POS feature that was implemented for Norway has been made available to customers in all countries or regions:
 
 - **Register additional events in the POS audit event log.** If the **Audit** parameter is enabled in the POS functionality profile, the following events are registered in the POS audit event log:
 
-  - Price look-up
+  - Price checks
 
   - Tax overrides
 
-  - Quantity corrections
+  - Line quantity corrections
 
   - Clearing the transactions from the channel database
 
-### Receipts
-Receipts for Norway include additional information that was implemented using custom fields.
+### Norway-specific POS features
 
-#### Receipt headers
-Receipt headers include text that identifies the type of receipt. For example, a sales receipt will include the text "Salskvittering". 
+The following Norway-specific POS features are enabled when the **ISO code** parameter in the POS functionality profile is set to **NO**.
 
-This following receipt types will include header text: 
-- sales receipt
-- return receipt
-- copy receipt
-- pro forma receipt
-- training receipt
-- delivery receipt
+#### Digitally signing sales data
 
-#### Signed transaction sequential number
+Each sales transaction is digitally signed. The signature is created and recorded in the POS transaction journal in parallel with finalizing the transaction, and is further available in the journal exported for audit purposes.
+
+Only cash sales transactions are signed. Excluded from the signing process are, for example:
+
+- Prepayments (customer account deposit)
+
+- Prepayments for sales orders (customer order deposit)
+
+- Issuing a gift card
+
+- Non-sale transactions (float entry, tender removal, etc.)
+
+The data being signed is a text string consisting of the following data fields separated by semicolons:
+
+- Previous signature for the same POS (“0” for the first transaction)
+
+- Transaction date
+
+- Transaction time
+
+- Sequential signed transaction number
+
+- Transaction amount including tax
+
+- Transaction amount excluding tax
+
+The digitally signing process uses an RSA 1024 bit key with a SHA-1 hash function (RSA-SHA1-1024). A certificate installed on the Retail Server is used for signing. The unique identifier of the certificate (footprint) is recorded together with the signature.
+
+The signature is stored in the Store DB and HQ DB together with the transaction data
+
+#### Receipts
+Receipts for Norway may include additional information that was implemented using custom fields.
+
+- **Receipt titles**. It is possible to add a field to a receipt format layout that identifies the type of receipt. For example, a sales receipt will include the text "Sales receipt". 
+
+- **Signed transaction sequential number**
 The signed transaction sequential number is listed on the receipt in order to associate a printed receipt with a digital signature in the database.
 
 #### Receipt totals
@@ -90,9 +117,6 @@ The following events are registered in the POS transaction journal/POS Fiscal ev
 
 ### X and Z reports
 X and Z reports include more information than the core retail documents. For example, the name and organization number of the enterprise as well as the number of price look-ups specified by product group and amount are both included in the reports.
-
-### Digitally signing sales data
-Each sales transaction should  be digitally signed. The signature should be recorded in the POS transaction journal/POS Fiscal event log and should be further available in the exported journal.
 
 ### SAF-T Cash register audit file
 You can export the POS transaction journal in the predefined SAF-T (Standard Audit File - Tax) Cash register format. This audit file can be exported for the following scenarios:
