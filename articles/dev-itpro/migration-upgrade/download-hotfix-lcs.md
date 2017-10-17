@@ -52,7 +52,7 @@ Use this tutorial to download updates from Microsoft Dynamics Lifecycle Services
 
 2.  Select an environment from the LCS project.
 
-3.  On the **Environment** page, under the **Monitoring** section, update tiles are shown. For Finance and Operations, you will see 2 update tiles (X++ updates and Binary updates). These two types of updates can be independently downloaded and applied, although certain X++ updates may depend on binary updates and vice versa, which will be described in the update description.
+3.  On the **Environment** page, under the **Monitoring** section, update tiles are shown. For Retail, you will see only Binary updates, and for Finance and Operations, you will see both X++ updates and Binary updates. These two types of updates can be independently downloaded and applied, although certain X++ updates may depend on binary updates and vice versa. Dependencies will be included in the update description.
 
 4.  Select one of the update tiles to view the list of available hotfixes that can be used to create a hotfix package for download.
 
