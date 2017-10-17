@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,15 +18,15 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, 
 # ms.tgt_pltfrm: 
 ms.custom: 13211
 ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.search.validFrom: 2016-02-28, 2017-09-31
-ms.dyn365.ops.version: AX 7.0.0, Application update 3 
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
