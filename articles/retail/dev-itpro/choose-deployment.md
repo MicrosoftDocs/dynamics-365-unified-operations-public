@@ -5,7 +5,7 @@ title: Deployment options
 description: This topic explains the differences in the retail functionality between Dynamics 365 for Retail and Dynamics 365 for Finance and Operations.
 author: ashishmsft 
 manager: AnnBe
-ms.date: 10/11/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -34,18 +34,18 @@ Retail functionality is available in the following products:
 - Dynamics 365 for Retail
 - Dynamics 365 for Finance and Operations
  
-Dynamics 365 for Retail contains core retail functionality that is typically used by most retailers. This tailored functionality improves productivity and helps to ease the on-boarding and training processes for your employees.
+Dynamics 365 for Retail contains core retail functionality that is typically used by most retailers. This tailored functionality improves productivity and helps to ease the on-boarding and training processes for your employees. 
 
-With Dynamics 365 for Retail, you also have the option to enable additional functionality, which means that you have the full functional footprint of Dynamics 365 Finance and Operations.
+With Dynamics 365 for Retail, you also have the option to enable additional functionality. This means that you could potentially configure a Dynamics 365 for Retail enviroment to have the same functional footprint as a Dynamics 365 for Finance and Operations environment.
  
-The following table lists of the some key differences between Dynamics 365 for Retail and Dynamics 365 for Finance and Operations.
+The following table lists the key differences between Dynamics 365 for Retail and Dynamics 365 for Finance and Operations.
 
 | Capability   |  Dynamics 365 for Retail   |  Dynamics 365 for Finance and Operations  |
 |--------------|----------------------------|-------------------------------------------|
 |Seamless app model updates, which do not need to be compiled or merged with your customizations. | Yes | No|
-|Seamless retail channel component updates (Retail POS, Channel database, Retail Server), which do not need to be merge with your customizations. | Yes | Yes |
-|Retail essentials scope and enhanced seed data initialization. | Yes (Enabled by default) | Yes (Available) |
-|Fully-functional footprint for a wide range of business processes. | Yes (Available - requires Unified Operations license or P1 license) | Yes (Enabled by default) |
+|Seamless retail channel component updates (Retail POS, Channel database, Retail Server), which do not need to be merged with your customizations. | Yes | Yes |
+|By default, solution is scoped to provide retail funitonality only. | Yes  | No  |
+|Optimize your financials and operations to drive growth and make real-time, data-driven decisions at global scale—all with an intelligent, modern enterprise business application.| No*<br><br> (Available - requires Unified Operations license or P1 license) | Yes |
 
 When you first visit Lifecycle Services (LCS) after acquiring the necessary licenses for your tenant, you will be prompted to choose an implementation project type (Dynamics 365 for Retail or Dynamics 365 for Finance & Operations). You can use the above considerations to choose the right product to implement.
  
