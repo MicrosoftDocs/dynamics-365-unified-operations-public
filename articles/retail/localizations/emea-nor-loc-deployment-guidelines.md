@@ -346,12 +346,12 @@ In order to enable the digital signature in the Offline mode for Modern POS, you
 
 1. Log on to POS.
 
-2. Open the **Connection status** form and make sure the Offline DB is fully synchronized, that is, the **Pending downloads** field is equal to zero.
+2. Open the **Database connection status** form and make sure the Offline DB is fully synchronized, that is, the **Pending downloads** field is equal to zero.
 
 3. Log off from POS.
 
 4. Log on to POS.
 
-5. Open the **Connection status** form and make sure the Offline DB is fully synchronized, that is, the **Pending transactions in offline database** field is equal to zero.
+5. Open the **Database connection status** form and make sure the Offline DB is fully synchronized, that is, the **Pending transactions in offline database** field is equal to zero.
 
 6. Restart the Modern POS application.
