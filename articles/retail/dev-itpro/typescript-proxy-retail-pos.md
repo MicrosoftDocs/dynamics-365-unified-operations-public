@@ -2,7 +2,7 @@
 # required metadata
 
 title: Typescript proxy for Retail POS
-description: This topic explains how you can extend the Retail initialization class to support custom Commerce Data Exchange (CDX) synchronization.
+description: 
 author: mugunthanm
 manager: AnnBe
 ms.date: 10/20/2017
