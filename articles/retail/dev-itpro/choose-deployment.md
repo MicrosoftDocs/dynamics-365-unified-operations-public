@@ -44,11 +44,14 @@ The following table lists the key differences between Dynamics 365 for Retail an
 |--------------|----------------------------|-------------------------------------------|
 |Receive app model updates seamlessly. (App model updates do not need to be compiled or merged with your customizations.) | Yes | No|
 |Receive retail channel component updates seamlessly. (Retail channel components updates do not need to be merged with your customizations.) | Yes | Yes |
-|Deploy a solution that is, by default, scoped to provide retail funitonality only. | Yes  | No  |
+|Deploy a solution that is scoped to provide retail funitonality only. | Yes  | No  |
 |Optimize your financials and operations to drive growth and make real-time, data-driven decisions with an intelligent, modern enterprise business application.| No*<br><br>\* You can enable additional functionality with a Unified Operations license or P1 license. | Yes |
 
 When you first visit Lifecycle Services (LCS) after acquiring the necessary licenses for your tenant, you will be prompted to choose an implementation project type, which is where you must select **Dynamics 365 for Retail** or **Dynamics 365 for Finance and Operations**. You can use the above considerations to choose the right product to deploy.
  
-As indicated in the table above, if you choose to deploy Dynamics 365 for Retail--and you have the necessary licenses--you will also have the option, at deployment time, to configure it for tailored retail functionality, or **Retail + Operations** functionality. 
+As indicated in the table above, if you choose to deploy Dynamics 365 for Retail--and you have the necessary licenses--you will have the option, at deployment time, to configure the solution: 
+
+- If you want the solution configured for retail functionality only, select **Retail only**. 
+- If you want to enable additionaly functionality, select **Retail + Opertions**.
  
 ![Deployment settings](media/Deployment-settings.png)
