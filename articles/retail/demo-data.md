@@ -148,7 +148,7 @@ The following illustrations show examples of the welcome page and transaction pa
 
 ### Contoso
 
-![Demo data layouts for Contoso](../retail/media/demo-screen-layouts-fig-4-3a.png)
+![Demo data layouts for Contoso](../retail/media/demo-screen-layouts-fig-4-3.png)
 
 ## User sign in matrix
 
