@@ -148,7 +148,7 @@ If you have fields in entities that you want the system to generate data for on 
 
 [![Generate dataw](./media/dataentitiesdatapackages18.png)](./media/dataentitiesdatapackages18.png)
 
-### Turning off automatically generated number sequences
+### Turn off automatically generated number sequences
 Many entities support automatic generation of identifiers based on number sequence setup. For example, when creating a product, the product number is automatically generated and the form does not allow you to edit values manually. 
 
 [![Automatic number sequence.png](./media/dataentitiesdatapackages15.png-300x213.jpg)](./media/dataentitiesdatapackages15.png.jpg) 
