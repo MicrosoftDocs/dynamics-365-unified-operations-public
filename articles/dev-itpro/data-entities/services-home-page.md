@@ -34,93 +34,91 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This article describes the service endpoints that are available.
+This article describes the service endpoints that are available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012. 
 
 ## List of services
 The following table lists all the service endpoints.
 
-| Service endpoint            | Dynamics AX 2012 | Finance and Operations     |
+| Service endpoint            | AX 2012 | Finance and Operations     |
 |-----------------------------|------------------|--------------------------------|
-| Document Services (AXDs)    | Yes              | No – Replaced by data entities |
-| SOAP-based Metadata Service | Yes              | No – Replaced by REST metadata |
-| SOAP-based Query Service    | Yes              | No – Replaced by OData         |
-| OData Query Service         | Yes              | No – Replaced by OData         |
-| SOAP-based Custom Service   | Yes              | Yes                            |
-| JSON-based Custom Service   | No               | Yes                   |
+| Document services (AXDs)    | Yes              | No – Replaced by data entities |
+| SOAP-based metadata service | Yes              | No – Replaced by REST metadata |
+| SOAP-based query service    | Yes              | No – Replaced by OData         |
+| OData query service         | Yes              | No – Replaced by OData         |
+| SOAP-based custom service   | Yes              | Yes                            |
+| JSON-based custom service   | No               | Yes                   |
 | OData Service               | No               | Yes                   |
 | REST Metadata Service       | No               | Yes                   |
 
-## Custom services
-### SOAP-based Custom Service
 
-The SOAP-based services remain the same as they were in Dynamics AX 2012.
+## Custom services
+When a developer writes a custom service under a service group, the service group is always deployed on two endpoints:
+-   SOAP endpoint 
+-   JSON endpoint
+
+### SOAP-based custom service
+
+SOAP-based services remain the same as they were in AX 2012.
+
+Code examples for consuming custom services using SOAP are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/SoapConsoleApplication).
 
 #### Key changes
 
 -   All the service groups under the **AOTService group** node are automatically deployed.
 -   All services that must be deployed must be part of a service group.
 
-The SOAP endpoint is at https://&lt;host\_uri&gt;/soap/Services/&lt;service\_group\_name&gt;. **Example:** https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/UserSessionService?wsdl The following documentation is from the Dynamics AX 2012 X++ Custom SOAP Services, and it will help you design and write services:
+The SOAP endpoint is at https://&lt;host\_uri&gt;/soap/Services/&lt;service\_group\_name&gt;. 
 
+**Example:** https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/UserSessionService?wsdl 
+
+For more information, see:
 -   [Using Custom Services \[AX 2012\] (TechNet)](http://technet.microsoft.com/en-us/library/hh509052.aspx)
--   [Walkthrough: Exposing an X++ Class as a Data Contract \[AX 2012\] (TechNet)](http://technet.microsoft.com/en-us/library/gg844225.aspx)
+-   [Walkthrough: Exposing an X++ Class as a Data Contract (TechNet)](http://technet.microsoft.com/en-us/library/gg844225.aspx)
+-   [Custom services Office Mix presentation](https://mix.office.com/watch/12e4fejbgj429). 
 
-**Code examples -** We have some sample code examples for consuming Custom services at <https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/SoapConsoleApplication>
 
 ### JSON-based Custom Service
 
-This feature enables X++ classes to be consumed as JSON services. In other words, the return data set is in JSON format. JSON, which stands for JavaScript Object Notation, is a compact, lightweight format that is commonly used communicate data between the client and the server. After the developer has written the services under service groups, the service groups are always deployed on two endpoints:
+This feature enables X++ classes to be consumed as JSON services. In other words, the return data set is in JSON format. JSON, which stands for JavaScript Object Notation, is a compact, lightweight format that is commonly used communicate data between the client and the server. 
 
--   SOAP endpoint (mentioned in the previous section)
--   JSON endpoint
+The JSON Endpoint is at https://&lt;host\_uri&gt;/api/Services/&lt;service\_group\_name&gt;/&lt;service\_group\_service\_name&gt;/&lt;operation\_name&gt;. 
 
-The JSON Endpoint is at https://&lt;host\_uri&gt;/api/Services/&lt;service\_group\_name&gt;/&lt;service\_group\_service\_name&gt;/&lt;operation\_name&gt;. **Example:** https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo You can find a Microsoft Office Mix presentation about this topic [here](https://mix.office.com/watch/12e4fejbgj429). **Code examples -** We have some sample code examples for consuming Json services at <https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/JsonConsoleApplication>
+Code examples for consuming JSON services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/JsonConsoleApplication).
 
-## OData Services
-There is an OData REST endpoint. This endpoint exposes all the data entities that are marked as **IsPublic** in the Application Object Tree (AOT). It supports complete CRUD (create, retrieve, update, and delete) functionality that users can use to insert and retrieve data from the system. Detailed labs for this feature are on the LCS methodology. You can find an Office Mix presentation about OData Services [here](https://mix.office.com/watch/1aym08mqyjghi).
+**Example:** https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo 
+
+
+## OData services
+We provide an OData REST endpoint. This endpoint exposes all the data entities that are marked as **IsPublic** in the Application Object Tree (AOT). It supports complete CRUD (create, retrieve, update, and delete) functionality that users can use to insert and retrieve data from the system. Detailed labs for this feature are on the LCS methodology. You can find an Office Mix presentation about OData Services [here](https://mix.office.com/watch/1aym08mqyjghi).
+
+Code examples for consuming Odata services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication).
 
 ### Supported features from the OData specification
 
-The following table lists the high-level features that are enabled the OData, per the [OData specification](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).
+The following are the high-level features that are enabled for the OData service, per the [OData specification](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).
 
-OData v4 feature
+- CRUD support is handled through HTTP verb support for POST, PATCH, PUT, and DELETE. 
+- Available query options are
+ -   $filter
+ -   $count
+ -   $orderby
+ -   $skip
+ -   $top
+ -   $expand
+ -   $select
+- The OData service supports serving driven paging with a maximum page size of 1,000.
 
-Details
+For more information, see: [OData actions that are bound to entities](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398355)
 
-OData v4 specification reference
+#### Filter details
 
-CRUD
-
-HTTP Verb support for POST, PATCH, PUT, and DELETE
-
-Query options
-
--   $filter
--   $count
--   $orderby
--   $skip
--   $top
--   $expand
--   $select
-
-Server-driven paging
-
-The maximum page size that is served is 1,000.
-
-Actions that are bound to entities
-
-<http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398355>
-
-Actions that are bound to entity sets
-
-Built-in operators for $filter
-
+There are built-in operators for $filter
 -   Equals
--   Not Equals
--   Greater Than
--   Greater Than or Equal
--   Less Than
--   Less Than or Equal
+-   Not equals
+-   Greater than
+-   Greater than or equal
+-   Less than
+-   Less than or equal
 -   And
 -   Or
 -   Not
@@ -129,39 +127,35 @@ Built-in operators for $filter
 -   Multiplication
 -   Division
 
-<http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html#_Toc406398096>
+You can also use the **Contains** option with $filter requests. It has been implemented as a wildcard character. For example: http://host/service/EntitySet?$filter=StringField eq '\*retail\*'
 
-**Contains** option in $filter
+For more information, see [OData operators](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html#_Toc406398096)
 
-Implemented as a wildcard character** Example:** http://host/service/EntitySet?$filter=StringField eq '\*retail\*'
+#### Batch requests
+Batch requests are supported in the OData service. For more information, see [OData batch requests](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398359).
 
-Batch requests
+#### Metadata annotations
 
-<http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398359>
+/data/$metadata provides annotations. EnumType is support in $metadata.
 
-Metadata annotations
+![EnumType metadata](./media/metadata.png)
 
-/data/$metadata has out-of-box annotations.
-
-**EnumType** support
-
-Example of how EnumType is supported in $metadata: [![metadata](./media/metadata.png)](./media/metadata.png)
-
-**Code examples -** We have some sample code examples for consuming Odata services at <https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication>
 
 ### Cross-company behavior
 
-By default, OData returns only data that belongs to the user's default company. To see data from outside the user's default company, specify the **?cross-company=true** query option. This option will return data from all companies that the user has access to. **Example:** http://\[baseURI\]/data/FleetCustomers?cross-company=true To filter by a particular company that isn't your default company, use the following syntax: http://\[baseURI\]/data/FleetCustomers?$filter=dataAreaId eq 'usrt'&cross-company=true
+By default, OData returns only data that belongs to the user's default company. To see data from outside the user's default company, specify the **?cross-company=true** query option. This option will return data from all companies that the user has access to. 
+
+**Example:** http://\[baseURI\]/data/FleetCustomers?cross-company=true 
+
+To filter by a particular company that isn't your default company, use the following syntax: 
+
+http://\[baseURI\]/data/FleetCustomers?$filter=dataAreaId eq 'usrt'&cross-company=true
 
 ### Validate methods
 
 The following table summarizes the validate methods that the OData stack calls implicitly on the corresponding data entity.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>OData</th>
@@ -209,22 +203,33 @@ The following table summarizes the validate methods that the OData stack calls i
 </table>
 
 ## REST Metadata Service
-The REST metadata service is a read-only service. In other words, users can make only GET requests. The main purpose of this endpoint is to provide metadata information for elements. It is an OData implementation. This endpoint is hosted at http://\[baseURI\]/Metadata. Currently, this endpoint provides metadata for the following elements:
+The REST metadata service is a read-only service. In other words, users can make only GET requests. The main purpose of this endpoint is to provide metadata information for elements. It is an OData implementation. 
 
--   **Labels** – This gets labels from the system. They have a dual pair key, language, and ID, so that you can retrieve the value of the label. **Example:** https://\[baseURI\]/metadata/Labels(Id='@SVC\_ODataLabelFile:Label1',Language='en-us')
--   **Data entities** – This returns a JSON-formatted list of all the data entities in the system. **Example:** https://\[baseURI\]/Metadata/DataEntities
+This endpoint is hosted at http://\[baseURI\]/Metadata. 
 
-We will support more sets of metadata as new scenarios require it.
+Currently, this endpoint provides metadata for the following elements:
+
+-   **Labels** – Returns labels from the system. Labels have a dual pair key of language and ID, so that you can retrieve the value of the label. 
+    **Example:** https://\[baseURI\]/metadata/Labels(Id='@SVC\_ODataLabelFile:Label1',Language='en-us')
+-   **Data entities** – Returns a JSON-formatted list of all the data entities in the system. 
+    **Example:** https://\[baseURI\]/Metadata/DataEntities
 
 ## Authentication
-OData Services, JSON-based Custom Service, and REST Metadata Service support standard OAuth 2.0 authentication. You can read more about OAuth 2.0 [here](//msdn.microsoft.com/en-us/library/azure/dn645545.aspx). We currently support [Authorization Code Grant flow](https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx). Two kinds of application are supported in Microsoft Azure Active Directory (AAD):
+OData services, JSON-based custom services, and the REST metadata service support standard OAuth 2.0 authentication. 
+
+We currently support [Authorization Code Grant flow](https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx). 
+
+Two kinds of application are supported in Microsoft Azure Active Directory (AAD):
 
 -   **Native client application** – This flow uses a user name and password for authentication and authorization.
--   **Web application (Confidential client)** – A confidential client is an application that can keep a client password confidential to the world. The authorization server assigned this client password to the client application. This will be supported post-RTW.
+-   **Web application (Confidential client)** – A confidential client is an application that can keep a client password confidential to the world. The authorization server assigned this client password to the client application. 
+
+For more information, see: 
+[Authorize access to web applications using OAuth 2.0 and Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/dn645545.aspx)
 
 ### OAuth – Authorization Code Grant flow
 
-[![1\_Services](./media/1_services.png)](./media/1_services.png)
+[![Authorization code grant flow](./media/1_services.png)](./media/1_services.png)
 
 ### Register a native application with AAD
 
