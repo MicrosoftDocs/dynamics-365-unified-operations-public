@@ -3,7 +3,7 @@ title: Business process modeler
 description: This topic provides information about the Business process modeler tool in Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
-ms.date: 10/02/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod: 
 ms.service:  dynamics-ax-platform
@@ -36,7 +36,6 @@ Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS) is
 
 BPM is compatible with the following programs:
 
-- **Microsoft Visual Studio Team Foundation Server (TFS)** – You can generate a consolidated list of gaps and manually import them into TFS as work items that include a reference to the process flow.
 - **Microsoft Word** – You can generate documentation for business processes.
 - **Microsoft Visio** – You can export business process maps to Visio files.
 
