@@ -67,11 +67,9 @@ Code examples for consuming custom services using SOAP are available in the [Mic
 -   All the service groups under the **AOTService group** node are automatically deployed.
 -   All services that must be deployed must be part of a service group.
 
-The SOAP endpoint is at https:\/\/&lt;host\_uri&gt;/soap/Services/&lt;service\_group\_name&gt;. 
+The SOAP endpoint is at `https://host_uri/soap/services/service_group_name`. 
 
-**Example:** 
-```https:\/\/usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/UserSessionService?wsdl 
-```
+**Example:** `https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/UserSessionService?wsdl`
 
 For more information, see:
 -   [Using Custom Services \[AX 2012\] (TechNet)](http://technet.microsoft.com/en-us/library/hh509052.aspx)
@@ -83,16 +81,12 @@ For more information, see:
 
 This feature enables X++ classes to be consumed as JSON services. In other words, the return data set is in JSON format. JSON, which stands for JavaScript Object Notation, is a compact, lightweight format that is commonly used communicate data between the client and the server. 
 
-The JSON Endpoint is at 
-```
-https://&lt;host\_uri&gt;/api/Services/&lt;service\_group\_name&gt;/&lt;service\_group\_service\_name&gt;/&lt;operation\_name&gt;. 
-```
+The JSON Endpoint is at `https://host_uri/api/services/service_group_name/service_group_service_name/operation_name`.
+
+**Example:** `https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo`
+
 Code examples for consuming JSON services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/JsonConsoleApplication).
 
-**Example:** 
-```
-https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo
-```
 
 ## OData services
 We provide an OData REST endpoint. This endpoint exposes all the data entities that are marked as **IsPublic** in the Application Object Tree (AOT). It supports complete CRUD (create, retrieve, update, and delete) functionality that users can use to insert and retrieve data from the system. Detailed labs for this feature are on the LCS methodology. 
@@ -135,11 +129,7 @@ There are built-in operators for $filter
 -   Multiplication
 -   Division
 
-You can also use the **Contains** option with $filter requests. It has been implemented as a wildcard character. For example:
-
-```
-http://host/service/EntitySet?$filter=StringField eq '\*retail\*'
-```
+You can also use the **Contains** option with $filter requests. It has been implemented as a wildcard character. For example: `http://host/service/EntitySet?$filter=StringField eq '\*retail\*'`
 
 For more information, see [OData operators](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html#_Toc406398096).
 
@@ -157,16 +147,11 @@ Batch requests are supported in the OData service. For more information, see [OD
 
 By default, OData returns only data that belongs to the user's default company. To see data from outside the user's default company, specify the **?cross-company=true** query option. This option will return data from all companies that the user has access to. 
 
-**Example:** 
-```
-http://[baseURI\]/data/FleetCustomers?cross-company=true 
-```
+**Example:** `http://[baseURI\]/data/FleetCustomers?cross-company=true`
 
 To filter by a particular company that isn't your default company, use the following syntax: 
+`http://[baseURI\]/data/FleetCustomers?$filter=dataAreaId eq 'usrt'&cross-company=true`
 
-```
-http://[baseURI\]/data/FleetCustomers?$filter=dataAreaId eq 'usrt'&cross-company=true
-```
 ### Validate methods
 
 The following table summarizes the validate methods that the OData stack calls implicitly on the corresponding data entity.
@@ -221,23 +206,17 @@ The following table summarizes the validate methods that the OData stack calls i
 ## REST Metadata Service
 The REST metadata service is a read-only service. In other words, users can make only GET requests. The main purpose of this endpoint is to provide metadata information for elements. It is an OData implementation. 
 
-This endpoint is hosted at http://\[baseURI\]/Metadata. 
+This endpoint is hosted at `http://\[baseURI\]/Metadata`.
 
 Currently, this endpoint provides metadata for the following elements:
 
 -   **Labels** – Returns labels from the system. Labels have a dual pair key of language and ID, so that you can retrieve the value of the label. 
 
-    **Example:** 
-    ```
-    https://[baseURI\]/metadata/Labels(Id='@SVC\_ODataLabelFile:Label1',Language='en-us')
-    ```
+    **Example:** `https://[baseURI\]/metadata/Labels(Id='@SVC\_ODataLabelFile:Label1',Language='en-us')`
 
 -   **Data entities** – Returns a JSON-formatted list of all the data entities in the system. 
 
-    **Example:** 
-    ```
-    https:\//\[baseURI\]/Metadata/DataEntities
-    ```
+    **Example:** `https://[baseURI\]/Metadata/DataEntities`
 
 ## Authentication
 OData services, JSON-based custom services, and the REST metadata service support standard OAuth 2.0 authentication. 
