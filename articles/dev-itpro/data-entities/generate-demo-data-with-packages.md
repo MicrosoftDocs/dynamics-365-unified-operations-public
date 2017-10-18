@@ -85,6 +85,7 @@ We recommend the following combinations:
 | Description | ABC |  
 |------|--------|
 
+In some cases, there may be different data packages that have the same entities in them. If you load multiple packages in the same data project and those packages have data for the same entity, the data for entities that are loaded last will be the data that is used.
 
 ## Transactions
 
