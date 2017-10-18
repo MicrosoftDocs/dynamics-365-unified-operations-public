@@ -34,7 +34,13 @@ ms.dyn365.ops.version: 2012
 
 You start the implementation stage of a project by synchronizing a Business process modeler (BPM) library with your project in Microsoft Visual Studio Team Services (VSTS). In this way, you can review processes and associate requirements with business processes. By synchronizing a BPM library with a VSTS project, you can also track the progress of your implementation project in VSTS, and can associate various work items with requirements and business processes. These work items include bugs, tasks, backlog items, tests, and documents.
 
-Currently, VSTS doesn't support custom work item types or synchronization of business processes that have custom work item types.
+Currently, VSTS doesn't support custom work item types or synchronization of business processes that have custom work item types. A warning stating such will appear, if you choose to ignore the warning and go forward attempting VSTS sync with a custom template please make sure the template:
+- Does not delete any work item type
+- Does not delete any state of a work item type
+- Does not add any required field to a work item type
+
+Otherwise, sync issues may occur. 
+
 
 To learn more about VSTS, go to [www.visualstudio.com/team-services](http://www.visualstudio.com/team-services).
 
