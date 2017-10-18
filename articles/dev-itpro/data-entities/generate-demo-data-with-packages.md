@@ -80,12 +80,31 @@ You can expect approximately 30 minutes to load each package. The time required 
 
 The data packages must be loaded in a specific order into a specific legal entity. The number preceding the name of the package provides guidance to the order that the data must be loaded. For example, to load the the HQUS financials, you must import "100 - System and shared.zip" first, followed by "200 - Financials - HQUS.zip". If you want to add supply chain data to the HQUS company, add "300 - Supply chain - HQUS.zip"
 
+Follow these steps to load the packages:
+1) Start with an empty instance where no data is loaded
+2) Open the data management workspace
+3) Click on the Import tile to create an import job
+4) Add a title to the job. For example, "Import shared information"
+5) Select "Add file" 
+6) Select "Upload and add" and browse to the data package that you want to import. You will need to start with the System and Shared data package.
+7) Select the data package and wait for the data to load
+8) Once the data is loaded, close the dialogue and click on Import 
+9) Repeat the process for additional packages. Be sure to change to the company for which the data package was intended. For example, switch to the HQUS company before importing the data package
+
+### Loading package combinations
 We recommend the following combinations:
 
 | Description | ABC |  
 |------|--------|
 
 In some cases, there may be different data packages that have the same entities in them. If you load multiple packages in the same data project and those packages have data for the same entity, the data for entities that are loaded last will be the data that is used.
+
+###Manual steps
+There are some steps that you will need to do manually once you have loaded the data. 
+1) If you want to login as a specific user, you will need to change the user's email address to the login address that you want to use. You can make that change in System administration, Users
+2) You will need to start the Workflow jobs. Use System administration, Workflow infrastructure configuration and click on Ok. The workflow jobs will be started.
+
+
 
 ## Transactions
 
