@@ -85,7 +85,7 @@ The JSON Endpoint is at https://&lt;host\_uri&gt;/api/Services/&lt;service\_grou
 
 Code examples for consuming JSON services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/JsonConsoleApplication).
 
-**Example:** https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo 
+**Example:** https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo
 
 
 ## OData services
@@ -108,7 +108,7 @@ The following are the high-level features that are enabled for the OData service
  -   $select
 - The OData service supports serving driven paging with a maximum page size of 1,000.
 
-For more information, see: [OData actions that are bound to entities](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398355)
+For more information, see: [OData actions that are bound to entities](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398355).
 
 #### Filter details
 
@@ -129,7 +129,7 @@ There are built-in operators for $filter
 
 You can also use the **Contains** option with $filter requests. It has been implemented as a wildcard character. For example: http://host/service/EntitySet?$filter=StringField eq '\*retail\*'
 
-For more information, see [OData operators](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html#_Toc406398096)
+For more information, see [OData operators](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html#_Toc406398096).
 
 #### Batch requests
 Batch requests are supported in the OData service. For more information, see [OData batch requests](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398359).
@@ -210,8 +210,11 @@ This endpoint is hosted at http://\[baseURI\]/Metadata.
 Currently, this endpoint provides metadata for the following elements:
 
 -   **Labels** – Returns labels from the system. Labels have a dual pair key of language and ID, so that you can retrieve the value of the label. 
+
     **Example:** https://\[baseURI\]/metadata/Labels(Id='@SVC\_ODataLabelFile:Label1',Language='en-us')
+
 -   **Data entities** – Returns a JSON-formatted list of all the data entities in the system. 
+
     **Example:** https://\[baseURI\]/Metadata/DataEntities
 
 ## Authentication
@@ -228,7 +231,7 @@ For more information, see:
 - [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/dn645545.aspx)
 - [Troubleshoot service authentication](troubleshoot-service-authentication.md)
 
-### OAuth – Authorization Code Grant flow
+The following illustration describes how authorization must be configured. 
 
 ![Authorization code grant flow](./media/services-authentication.png)
 
@@ -293,24 +296,23 @@ In AX 2012, you could consume web services from X++ code by adding Microsoft Vis
 3.  Create a new static class, and wrap the StockQuote service operation as shown in the following example.
 
 ```
-              public static string GetQuote(string s)
-                {
-                    var binding = new System.ServiceModel.BasicHttpBinding();
-                    var endpointAddress = new EndpointAddress("http://www.webservicex.net/stockquote.asmx");
-                    ServiceLibrary.QuoteReference.StockQuoteSoapClient client = new ServiceLibrary.QuoteReference.StockQuoteSoapClient(binding, endpointAddress);
+ public static string GetQuote(string s)
+     {
+       var binding = new System.ServiceModel.BasicHttpBinding();
+       var endpointAddress = new EndpointAddress("http://www.webservicex.net/stockquote.asmx");
+       ServiceLibrary.QuoteReference.StockQuoteSoapClient client = new ServiceLibrary.QuoteReference.StockQuoteSoapClient(binding, endpointAddress);
 
-                    //GetQuote is the operation on the StockQuote service
-                    return client.GetQuote("MSFT");
-                }
+     //GetQuote is the operation on the StockQuote service
+      return client.GetQuote("MSFT");
+     }
 ```
 4.  Build the project. The binary ExternalServiceLibrary.dll is created.
 5.  Create a new Dynamics project in Visual Studio.
 6.  Add **ExternalServiceLibrary.dll** as a reference.
 7.  In the X++ class, you can use the external web services that were referenced in ExternalesrviceLibrary.dll.
 ```
-           public static void main(Args _args)
-            {
-                info(ServiceLibrary.StockQuoteClass::GetQuote("MSFT"));
-            }
-
+ public static void main(Args _args)
+     {
+       info(ServiceLibrary.StockQuoteClass::GetQuote("MSFT"));
+      }
 ```
