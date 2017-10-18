@@ -34,17 +34,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-You can use Inventory management for 
+You can use Inventory management to perform the following tasks:
 
 -  [Inbound operations](arrival-overview.md)
 -  [Quality assurance](quality-management-processes.md)
 -  [Inventory activities](inventory-journals.md)
 -  [Outbound operations](outbound-process.md)
--  [Inventory control](../cost-management/inventory-close.md) (To learn more, see [Inventory accounting in Cost management](../cost-management/inventory-close.md).)
+-  [Inventory control](../cost-management/inventory-close.md) 
 
 ## Learning map
 
-The following learning map shows the major concepts and tasks that make up the framework of the Inventory management module. Refer to the topics listed to help you learn about a concept or task.
+The following learning map shows the major concepts and tasks that make up the framework of the Inventory management module. This learning map lists the Inventory management topics that have been written to help you learn about a concept or task in this module. Click on the learning map below to expand it and learn more about the topics that are part of Inventory management. This learning map will help you get started.
+
 
 [![Inventory learning map](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
 
@@ -52,6 +53,9 @@ The following learning map shows the major concepts and tasks that make up the f
 
 ### What's new and in development
 Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.
+
+### Inventory accounting 
+To learn more, see [Inventory accounting in Cost management](../cost-management/inventory-close.md).
 
 ### Manufacturing and supply chain management blogs
 You can find opinions, news, and other information about Inventory management and other solutions on the
