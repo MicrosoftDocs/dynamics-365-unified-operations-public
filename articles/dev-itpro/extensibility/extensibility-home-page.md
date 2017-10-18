@@ -40,7 +40,7 @@ In addition, extensibility is the only extension model supported for app model c
 
 ## Introduction
 
-These introductory topics contain general information about how Finance and Operations supports customization, including information on when customization transitions from overlayering to purely extension based. These topics also explain how to log extensibility requests to Microsoft, along with frequently asked questions and answers.
+These introductory topics contain general information about customization, including information on when customization transitions from overlayering to purely extension based. These topics also explain how to log extensibility requests to Microsoft, along with frequently asked questions and answers.
 
 + [Application extensibility plans](extensibility-roadmap.md)
 + [Extensibility requests](extensibility-requests.md) 
