@@ -110,4 +110,4 @@ In this scenario, the workspaces and reports that the sales manager from Contoso
     2. Select the **Other user** check box, and then enter **USMF** in the text box.
     3. Select the **CompanyFilter** check box.
 
-The reports will now show data as if you're running the USMF company. For more information, see [Row level security with Power BI Embedded](/azure/power-bi-embedded/power-bi-embedded-rls).
+The reports will now show data as if you're running the USMF company. 
