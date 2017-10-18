@@ -5,7 +5,7 @@ title: Cash registers for Norway
 description: This topic provides an overview of the cash register functionality that is available for Norway. 
 author: EvgenyPopovMBS
 manager: vastrup
-ms.date: 10/17/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -94,7 +94,7 @@ The data being signed is a text string consisting of the following data fields s
 
 The digitally signing process uses an RSA 1024 bit key with a SHA-1 hash function (RSA-SHA1-1024). A certificate installed on the Retail Server is used for signing. The unique identifier of the certificate (footprint) is recorded together with the signature.
 
-The signature is stored in the Store DB and HQ DB together with the transaction data
+The signature is stored in the Store DB and HQ DB together with the transaction data. You can view the transaction signature, together with the transaction data used to generate the signature, on the **Retail store transactions** page, the tab **Fiscal transactions**. 
 
 #### Receipts
 
