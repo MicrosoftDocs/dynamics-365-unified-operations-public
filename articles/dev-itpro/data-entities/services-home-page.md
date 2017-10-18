@@ -225,40 +225,49 @@ Two kinds of application are supported in Microsoft Azure Active Directory (AAD
 -   **Web application (Confidential client)** – A confidential client is an application that can keep a client password confidential to the world. The authorization server assigned this client password to the client application. 
 
 For more information, see: 
-[Authorize access to web applications using OAuth 2.0 and Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/dn645545.aspx)
+- [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/dn645545.aspx)
+- [Troubleshoot service authentication](troubleshoot-service-authentication.md)
 
 ### OAuth – Authorization Code Grant flow
 
-[![Authorization code grant flow](./media/1_services.png)](./media/1_services.png)
+![Authorization code grant flow](./media/services-authentication.png)
 
 ### Register a native application with AAD
 
-Before any clients can communicate with the services, they must be registered in AAD. These steps will help you register an application with AAD. **Note:** These steps don't have to be completed by all the people in your organization. Only one Azure Service Administrator user can add the application and share the client ID with the developers. **Prerequisite:** You must have an Azure subscription and admin access to Active Directory.
+Before any clients can communicate with the services, they must be registered in AAD. These steps will help you register an application with AAD. 
+
+> [!NOTE]
+> Only one Azure Service Administrator user should add the application and share the client ID with the developers. You must have an Azure subscription and administrator access to Active Directory to perform this procedure.
 
 1.  In a web browser, go to <http://manage.windowsazure.com/>.
 2.  Enter the user name and password of the user who has access to the Azure subscription. After the credentials are authenticated, Azure Portal opens.
-3.  In Azure Portal, in the left navigation pane, click **Active Directory**. [![2\_Services](./media/2_services.png)](./media/2_services.png)
+3.  In Azure Portal, in the left navigation pane, click **Active Directory**. 
 4.  In the grid, select the Active Directory instance that is being used.
-5.  On the top toolbar, click **Applications**. [![3\_Services](./media/3_services.png)](./media/3_services.png)
+5.  On the top toolbar, click **Applications**. 
 6.  In the bottom pane, click **Add**. The **Add application** wizard starts.
-7.  Add a new native client application. Enter information in the wizard as shown in the following screen shots. [![4\_Services](./media/4_services.png)](./media/4_services.png) [![5\_Services](./media/5_services.png)](./media/5_services.png) [![6\_Services](./media/6_services.png)](./media/6_services.png)
-8.  Click the check mark button to complete the wizard. After you complete the wizard, the new application page opens. [![native client app](./media/native-client-app.png)](./media/native-client-app.png)
+7.  Add a new native client application: 
+ - Click **Add an application my organization is developing**. 
+ - Give it a name, and then click **Native client application**.
+ - Click the check mark button to complete the wizard. 
+  After you complete the wizard, the new application page opens. 
+   ![Native client app](./media/native-client-app.png)
 9.  On the top toolbar, click **Configure**.
-10. Scroll down until you see the **Permissions to other applications** section. Click **Add Application** in this section. [![7\_Services](./media/7_services.png)](./media/7_services.png)
+10. Scroll down until you see the **Permissions to other applications** section. Click **Add Application** in this section. ![Add application](./media/7_services.png)
 11. Select **Microsoft Dynamics ERP** in the list.
 12. Click the **Complete check** button in the right corner of the page.
-13. In the **Delegate Permissions** list, select all the check boxes. **Note:** We are working on cleaning up this list. [![8\_Services](./media/8_services.png)](./media/8_services.png)
+13. In the **Delegate Permissions** list, select all check boxes.
 14. Make a note of the following two pieces of information:
-    -   **Client ID** – As you scroll toward the top of this page, you will see **Client ID** displayed.
+    -   **Client ID**
     -   **Redirect URI**
 
 After you have these two pieces of information, you're ready to write your client code.
 
 ### Client sample code
 
-The following is the sample code for getting the token from AAD. In this flow, the user will be presented with the consent form (for cross-tenant application) and the user/name sign-in form.
+The following is the sample code for getting a token from AAD. In this flow, the user will be presented with the consent form (for cross-tenant application) and a sign-in form.
 
-    UriBuilder uri = new UriBuilder ("https://login.windows.net/contoso2ax.onmicrosoft.com");
+```
+ UriBuilder uri = new UriBuilder ("https://login.windows.net/contoso2ax.onmicrosoft.com");
                
     AuthenticationContext authenticationContext = new AuthenticationContext(uri.ToString());
 
@@ -267,19 +276,23 @@ The following is the sample code for getting the token from AAD. In this flow, t
                 
     //this gets the authorization token, which needs to be passed in the Header of the HTTP Requests
     string authenticationHeader = authenticationResult.CreateAuthorizationHeader();
+```
 
 To pass the user name and password without showing a pop-up, you can use the following overload of **AcquireToken**.
 
+```
     UserCredential userCred = new UserCredential (username, password);
     authenticationContext.AcquireToken("https://axdynamics1001aos.cloud.dynamics.com", clientId, userCred);
+```
 
 ## Consuming external web services
-In previous versions, you could consume web services from X++ code by adding Microsoft Visual Studio projects as a reference and by using **Aif::CreateServiceClient**. This scenario is supported, but the steps have changed. Application Integration Framework (AIF) is no longer supported. The following steps show how to consume an external StockQuote service from X++.
+In AX 2012, you could consume web services from X++ code by adding Microsoft Visual Studio projects as a reference and by using **Aif::CreateServiceClient**. This scenario is supported, but the steps have changed. Application Integration Framework (AIF) is no longer supported. The following steps show how to consume an external StockQuote service from X++.
 
 1.  Create a new Class Library project in Visual Studio, and name it **ExternalServiceLibrary.csproj**.
 2.  In the Visual Studio project, add a service reference to the external web service: **http://www.webservicex.net/stockquote.asmx**
 3.  Create a new static class, and wrap the StockQuote service operation as shown in the following example.
 
+```
               public static string GetQuote(string s)
                 {
                     var binding = new System.ServiceModel.BasicHttpBinding();
@@ -289,22 +302,15 @@ In previous versions, you could consume web services from X++ code by adding Mic
                     //GetQuote is the operation on the StockQuote service
                     return client.GetQuote("MSFT");
                 }
-
+```
 4.  Build the project. The binary ExternalServiceLibrary.dll is created.
 5.  Create a new Dynamics project in Visual Studio.
 6.  Add **ExternalServiceLibrary.dll** as a reference.
 7.  In the X++ class, you can use the external web services that were referenced in ExternalesrviceLibrary.dll.
-
+```
            public static void main(Args _args)
             {
                 info(ServiceLibrary.StockQuoteClass::GetQuote("MSFT"));
             }
 
-
-See also
---------
-
-[Troubleshoot service authentication](troubleshoot-service-authentication.md)
-
-
-
+```
