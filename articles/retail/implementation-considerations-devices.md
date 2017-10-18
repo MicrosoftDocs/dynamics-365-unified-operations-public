@@ -2,7 +2,7 @@
 # required metadata
 
 title: Device management implementation guidance
-description: This document has been prepared as an added supplement to the standard user documentation.  The Insights and Implementation Consideration document is intended to provide an implementer with additional background, tips, and guidance for things to consider when deploying a Dynamics 365 feature.   Implementation resources should review and follow guidance in these documents as part of their deployment process, with the goal of utilizing this information to assist them in avoiding unnecessary issues that could impact user satisfaction or performance.
+description: This topic is for those implementing device management-related functionality in a retail environment, and provides implementation tips and guidance to consider as you plan for your implementation.
 author: jashanno
 manager: AnnBe
 ms.date: 10/16/2017
@@ -30,49 +30,47 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
 # Device management implementation guidance
-This topic is for those implementing device management-related functionality in a retail environment and provides implementation tips and guidance to consider as you plan for your implementation.
+This topic is for those implementing device management-related functionality in a retail environment, and provides implementation tips and guidance to consider as you plan for your implementation.
 
-## Insights
-Below is an overview of the feature and the business reasons to consider using this feature.
+## Overview
+A device is an instrument on which a point of sale application can be installed, configured, and utilized to perform necessary operations to run (or at least assist) the business that owns the instrument.  This is an eloquent way of stating that a device is a piece of technology that runs a point of sale application to help run a business.  This business does not need to be specifically a retail operation.  For example, a hospital has a gift shop, a warehouse manages inventory, and a law firm generates an invoice.  What is critical is that the application makes business operations simpler, more efficient, or just better managed and recorded.  No matter what the scenario in which it is used, devices are critical aspects.  Eventually, as the count of devices being used continuously increases, it becomes more and more valuable to put processes in place to track and manage these devices.  This is called “device management”.
 
-A device, as it pertains to Microsoft Dynamics and business, is an instrument on which a point of sale application can be installed, configured, and utilized to perform necessary operations to run (or at least assist) the business that owns the instrument.  This is an eloquent way of stating that a device is a piece of technology that runs a point of sale application to help run a business.  This business does not need to be specifically a retail operation.  A hospital has a gift shop, a warehouse manages inventory, or a law firm generates an invoice.  What is critical is that the application makes business operations simpler, more efficient, or just better managed and recorded.  No matter what the scenario in which it is used, devices are critical aspects.  Eventually, as the count of devices being used continuously increases, it becomes more and more valuable to put processes in place to track and manage these devices.  This is called “Device Management”.
+In the Dynamics 365 for Finance and Operations or Dynamics 365 for Retail solution, the point of sale application to be discussed here will be Retail Modern Point of Sale (MPOS).  MPOS allows users to complete business operations quickly, efficiently, and simply while assisting the headquarters with the management of the many devices running MPOS across the business.  While there are many pieces surrounding this MPOS register that will be discussed, the two critical aspects of an MPOS device are the business oriented “register” and the physical oriented “device”.
 
-In the Dynamics 365 for Finance and Operations or Dynamics 365 for Retail solution, the point of sale application to be discussed here will be Retail Modern Point of Sale, or MPOS.  MPOS allows users to complete business operations quickly, efficiently, and simply while assisting the headquarters with the management of the many devices running MPOS across the business.  While there are many pieces surrounding this MPOS register that will be discussed, the two critical aspects of an MPOS device are the business oriented “Register” and the physical oriented “Device”.
+The form titled **Registers** is the virtual tracking mechanism for the business oriented details of an instance of the Modern Point of Sale application.  The visual profile to use, the auto logoff time, or the store that the register is a part of are all details stored within the virtual register.  When the register is set up and configured properly, it is then linked to a virtually created device.
 
-The form titled “Registers” is the virtual tracking mechanism for the business oriented details of an instance of the Modern Point of Sale application.  The visual profile to use, the auto logoff time, or the store that the register is a part of are all details stored within the virtual register.  When the register is setup and configured properly, it is then linked to a virtually created device.
+The form titled **Devices** is the virtual tracking mechanism for the physical concept of a device.  The business oriented register is linked here to complete the configuration and prepare for installation.  Details such as the validation status, when the point of sale application was activated, and the version to be installed or is currently installed are all stored within the virtual device.
 
-The form titled “Devices” is the virtual tracking mechanism for the physical concept of a device.  The business oriented register is linked here to complete the configuration and prepare for installation.  Details such as the validation status, when the point of sale application was activated, and the version to be installed or is currently installed are all stored within the virtual device.
-
-As more and more registers are generated and then linked to the appropriate devices, the management (both physically and virtually) becomes critically important.  Look at a real device, such as a Microsoft Surface that will run MPOS.  The Surface needs to be configured for the business as it may be on a domain or require additional software specific to that business.  The Surface must have Modern POS installed and activated.  Over time, the device may need servicing, replacement, or could even be stolen.  When multiplied by dozens, hundreds, or even thousands of devices, processes must be put into place to properly watch, manage, and verify the status of all the devices both in use and not in use. 
+As more and more registers are generated and then linked to the appropriate devices, the management (both physically and virtually) becomes critically important.  Look at a real device, such as a Microsoft Surface that will run MPOS.  The Surface needs to be configured for the business as it may be on a domain or require additional software specific to that business.  The Surface must have Modern POS installed and activated.  Over time, the device may need servicing, replacement, or could even be stolen.  When multiplied by dozens, hundreds, or even thousands of devices, processes must be put in place to properly watch, manage, and verify the status of all the devices both in use and not in use. 
 
 In the Dynamics 365 for Finance and Operations or Dynamics 365 for Retail solution, the simplest necessities to begin managing devices are already provided.  Next, it is important to make certain that the implementation being planned takes all proper considerations to minimize pain and maximize benefit.
 
 ## Implementation considerations
-Below are some things to consider as you plan your implementation of inventory management related features at your Retail store and Distribution locations.
+Below are some things to consider as you plan your implementation of inventory management related features at your retail store and distribution locations.
 
-If the discussion is still occurring whether Retail Modern POS or Retail Cloud POS would be better for a specific business, review the implementation considerations document Modern POS and Cloud POS "[ADD LINK HERE]".
+If the discussion is still occurring whether Retail Modern POS or Retail Cloud POS would be better for a specific business, review the implementation considerations document Modern POS and Cloud POS **ADD LINK HERE**.
 
-If the discussion is still occurring whether to utilize Retail Store Scale Unit, review the implementation considerations document Retail Store Scale Unit "[ADD LINK HERE]".
+If the discussion is still occurring whether to utilize Retail Store Scale Unit, review the implementation considerations document Retail Store Scale Unit **ADD LINK HERE**.
 
 ### Generate the physical topology
 Planning is the single most critical requirement to successfully implement an ERP solution.  One of the key deliverables of this planning should be a physical topology.  This physical topology visualizes many of the informational details of how a company looks from the lowest point of sale device to the highest headquarters network connections.  The minimal set of deliverables to complete should include the following:
 
--	Store templates – A store template is one or more diagrams that show how a physical location, such as a retail brick and mortar store, is laid out.  These diagrams serve long-term as a means of easily implementing future locations and quickly assessing how to fix or improve issues that are found.  The store template should include the following details:
+-	**Store templates** – A store template is one or more diagrams that show how a physical location, such as a retail brick and mortar store, is laid out.  These diagrams serve long-term as a means of easily implementing future locations and quickly assessing how to fix or improve issues that are found.  The store template should include the following details:
 
-    -	Location – The physical layout of a location, detailing where all devices that exist in the location are placed.
+    -	**Location** – The physical layout of a location, detailing where all devices that exist in the location are placed.
   
-    -	Network – The network infrastructure layout internally and details of internet connectivity (Bandwidth up and down, thread count, latency to headquarters or other important internet locations, etc.).
+    -	**Network** – The network infrastructure layout internally and details of internet connectivity (bandwidth up and down, thread count, latency to headquarters or other important internet locations, etc.).
   
-    *	Device – The details of all devices that exist in a location, including the specifications of the devices or some form of associable tag where details can quickly be found.
+    *	**Device** – The details of all devices that exist in a location, including the specifications of the devices or some form of associable tag where details can quickly be found.
   
-    *	Peripheral – List of all peripherals that attaches to a device, count of peripherals, and physical location of all peripherals, often with associable tag where details can quickly be found.
+    *	**Peripheral** – List of all peripherals that attaches to a device, count of peripherals, and physical location of all peripherals, often with associable tag where details can quickly be found.
   
-*	Naming methodology – It is important as a function of implementing to maintain common naming conventions across all devices.  Generate the rules that govern the naming convention used and stick to it.
+*	**Naming methodology** – It is important as a function of implementing to maintain common naming conventions across all devices.  Generate the rules that govern the naming convention used and stick to it.
 
      > [!Note]
      > When generating this naming methodology, it is recommended that the registers are named the same (or very similar) to the device which should be named the same (or very similar) to the physical computer name (Friendly name) on which the register functions.
      
-*	Procedures plan – The larger a business grows, the more critical it becomes to keep procedures in place that maintain enough order to efficiently run the business.  This, especially, is a living document that must be maintained and appended often.  This plan should showcase how to perform almost every action that will be repeated within the stores that make up a company.
+*	**Procedures plan** – The larger a business grows, the more critical it becomes to keep procedures in place that maintain enough order to efficiently run the business.  This, especially, is a living document that must be maintained and appended often.  This plan should showcase how to perform almost every action that will be repeated within the stores that make up a company.
 
 *	Servicing plan – As business continues, servicing becomes more and more critical.  When to replace devices, when to update devices and peripherals (both the applications and the operating systems), and how to perform these needed operations.  This will change from business to business, but most certainly should be planned for.
 
