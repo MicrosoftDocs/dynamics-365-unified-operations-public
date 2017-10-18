@@ -42,9 +42,9 @@ To learn about common POS features that are available to customers in all countr
 
 The following POS localization features implemented previously and available to customers in all countries or regions may be used for Norway specifically:
 
-- **Print text fields on the receipt in a large font size.** You can use the **Font size** parameter in the Receipt format designer to specify that the large font size should be used for a field in a receipt format. (The large font size is approximately double the usual font size.) For example, you can use this parameter to print the "Copy" indicator on a receipt copy in large characters.
+- **Print text fields on a receipt in a large font size.** You can use the **Font size** parameter in the Receipt format designer to specify that the large font size should be used for a field in the receipt format. (The large font size is approximately double the usual font size.) For example, you can use this parameter to print the "Copy" indicator on a receipt copy in large characters.
 
-- **Register the printing of receipt copies in the POS audit event log.** You can use the **Audit** parameter in the POS functionality profile to enable the printing of receipt copies and other POS audit events to be registered. The audit events are registered in the channel database and in Retail headquarters. You can view the audit events on the **Audit events** page.
+- **Register the printing of receipt copies in the POS audit event log.** You can use the **Audit** parameter in the POS functionality profile to enable the printing of receipt copies and other POS audit events to be registered. The audit events are registered in the channel database and in Retail Headquarters. You can view the audit events on the **Audit events** page.
 
 - **Prevent a copy of a receipt from being printed more than one time.** When the parameter **Audit** in the POS functionality profile is enabled, the **Allow printing receipt copies** POS permission controls whether receipt copies can be printed. There is also an option to prevent a copy of a receipt from being printed more than one time. 
 
@@ -64,7 +64,7 @@ Additionally, the following POS feature that was implemented for Norway has been
 
 The following Norway-specific POS features are enabled when the **ISO code** parameter in the POS functionality profile is set to **NO**.
 
-#### Digitally signing sales data
+#### Digitally signing sales transactions
 
 Each sales transaction is digitally signed. The signature is created and recorded in the POS transaction journal in parallel with finalizing the transaction, and is further available in the journal exported for audit purposes.
 
@@ -120,7 +120,9 @@ X and Z reports include information according to Norwegian requirements. For exa
 
 #### SAF-T Cash Register audit file
 
-You can export the POS transaction journal in the predefined SAF-T (Standard Audit File - Tax) Cash Register format. This audit file can be exported for the following scenarios:
+You can export the POS transaction journal in the predefined SAF-T (Standard Audit File - Tax) Cash Register format. The audit file includes information about the organizaton, relevant master data (such as item groups and items, tax codes, etc.), cash sales transaction data with their signatures, non-sales event data, and end-of-date report date.
+
+The audit file can be exported for the following scenarios:
 
 - Per company
 - Per store
@@ -128,7 +130,7 @@ You can export the POS transaction journal in the predefined SAF-T (Standard Aud
 - Per terminal
 - All terminals
 
-The SAF-T cash Register format must be implemented at Retail HQ using Electronic reporting. The format configuration is available to download from Lifecycle Services. For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+The SAF-T Cash Register format is implemented at Retail Headquarters using Electronic reporting. The format configuration is available to download from Lifecycle Services. For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
 ## Setting up Retail for Norway
 
