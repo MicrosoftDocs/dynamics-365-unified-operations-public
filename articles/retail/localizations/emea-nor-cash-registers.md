@@ -94,7 +94,7 @@ The data being signed is a text string consisting of the following data fields s
 
 The digitally signing process uses an RSA 1024 bit key with a SHA-1 hash function (RSA-SHA1-1024). A certificate installed on the Retail Server is used for signing. The unique identifier of the certificate (footprint) is recorded together with the signature.
 
-The signature is stored in the Store DB and HQ DB together with the transaction data. You can view the transaction signature, together with the transaction data used to generate the signature, on the **Retail store transactions** page, the tab **Fiscal transactions**. 
+The signature is stored in the Store DB and HQ DB together with the transaction data. You can view the transaction signature, together with the transaction data used to generate the signature, on the **Retail store transactions** page, the fast tab **Fiscal transactions**. 
 
 #### Receipts
 
@@ -130,7 +130,7 @@ The audit file can be exported for the following scenarios:
 - Per terminal
 - All terminals
 
-The SAF-T Cash Register format is implemented at Retail Headquarters using Electronic reporting. The format configuration is available to download from Lifecycle Services. For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+The SAF-T Cash Register format is implemented at Retail Headquarters using [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md). The format configuration is available to download from Lifecycle Services. For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
 ## Setting up Retail for Norway
 
@@ -140,11 +140,11 @@ To use the Norway-specific functionality for Retail, you must complete these tas
 
 |Set up task                                 | Information                                                                     |
 |--------------------------------------------|---------------------------------------------------------------------------------|
-|Select legal entity primary address         |Select a primary address for the legal entity that is located in Norway          |
+|Set up legal entity                         |Make sure the legal entity name is specified. It will be printed in X and Z reports. Select a primary address for the legal entity that is located in Norway. Finally, specify the organization number in the **Routing number** field on the **Bank account information** fast tab|
+|Set up value-added tax (VAT) per Norwegian requirements|You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md)|
 |Set up functionality profiles               |You must enable auditing and set up receipt numbering.                           |
 |Update POS permissions groups and individual permission settings for store workers  |Set the **Allow printing receipt copy** permission to an appropriate value: **Allow always** – The operator can print a copy of a receipt multiple times. **Allow only once** – The operator can print a copy of a receipt only one time. **Allow only once, and only if HQ DB is available** – The operator can print a copy of a receipt only one time, and only if the headquarters database is available through Real-Time service, so that the system can verify that no copies of the receipt have previously been printed in any store. **Never** – The operator can't print a copy of a receipt.            |
 |Set up hardware profiles                    | Set the **Receipt profile ID** to be **Print**                                   |
-|Set up sales tax            |You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).           |
 |Set up receipt formats            | [Receipt templates and printing](../receipt-templates-printing.md)           |
 
 
