@@ -5,7 +5,7 @@ title: Plan your Dynamics AX 2012 R3 deployment on Azure
 description: Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make. This article guides you through the planning process. 
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service:
@@ -40,17 +40,28 @@ Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there ar
 > [!NOTE]
 > AX 2012 R3 can also be deployed on-premises. For details, see the topic [Install Microsoft Dynamics AX 2012](https://technet.microsoft.com/en-us/library/dd362138.aspx).
 
-Verify that you can log on to Lifecycle Services
-------------------------------------------------
+## Verify that you can log on to Lifecycle Services
 
-Microsoft Dynamics Lifecycle Services is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use the Cloud-hosted environments tool, available on the Lifecycle Services website, to deploy AX 2012 R3 on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. 
+Microsoft Dynamics Lifecycle Services (LCS) is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use the Cloud-hosted environments tool, available on the Lifecycle Services website, to deploy AX 2012 R3 on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. [Verify that you can log on to Lifecycle Services](https://lcs.dynamics.com/)
+
+## Supported deployments of AX 2012 R3 on Azure
+Deployments of AX 2012 R3 on Azure are supported by Microsoft in the following scenarios: 
+- The deployment has been performed through LCS. Microsoft does not support deployments of AX 2012 R3 on Azure that were performed outside of LCS. 
+- Deployments have been performed through supported Azure Resource Manager scripts (link to ARM scripts)
+- Other deployments that have been performed using the following guidance: 
+   - SQL is deployed in a High Availability topology (using SQL Clustering/Always On).
+   - SQL best practices have been followed for deployment in Azure, using the [Performance best practices for SQL Server in Azure Virtual Machines](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance). 
+   - Best practices for SQL Server configuration for AX 2012 have been followed, as specified in [Configure SQL Server and storage settings (TechNet)](https://technet.microsoft.com/en-us/library/dd309734.aspx). 
+   - The System diagnostic tool is installed and best practices are followed, as specified in [System diagnostics](system-diagnostics-lcs.md) 
 
 > [!NOTE]
-> Deployments of AX 2012 R3 on Azure are supported by Microsoft only when the deployments have been performed through Lifecycle Services (LCS). Microsoft does not support deployments of AX 2012 R3 on Azure that were performed outside of LCS. 
-> If you have an issue in an unsupported AX 2012 R3 on Azure environment, and can reproduce the same issue in an AX 2012 R3 environment that was either deployed to Azure through LCS, or deployed locally, Microsoft can provide support. [Verify that you can log on to Lifecycle Services](https://lcs.dynamics.com/)
+> If you have an issue in an unsupported AX 2012 R3 on Azure environment, and can reproduce the same issue in an AX 2012 R3 environment that was either deployed to Azure through LCS, or deployed locally, Microsoft can provide support. 
 
 ## Purchase an Azure subscription
-To use Azure, you must purchase a subscription. For information about subscription plans and pricing details, see the [Azure pricing](https://azure.microsoft.com/en-us/pricing/) page. Then follow the instructions on that page to purchase a subscription. The subscription must be large enough to support the AX 2012 R3 environment that you want to deploy on Azure. The following table lists the types of AX 2012 R3 environments that you can deploy on Azure, and the number of cores required to deploy each environment in its default configuration. **Note:** Keep in mind that when you deploy an environment, you can change the number and size of the virtual machines that are deployed. However, this table lists the number of cores required to deploy each environment in its *default* configuration.
+To use Azure, you must purchase a subscription. For information about subscription plans and pricing details, see the [Azure pricing](https://azure.microsoft.com/en-us/pricing/) page. Then follow the instructions on that page to purchase a subscription. The subscription must be large enough to support the AX 2012 R3 environment that you want to deploy on Azure. The following table lists the types of AX 2012 R3 environments that you can deploy on Azure, and the number of cores required to deploy each environment in its default configuration. 
+
+> [!NOTE]
+> Keep in mind that when you deploy an environment, you can change the number and size of the virtual machines that are deployed. However, this table lists the number of cores required to deploy each environment in its *default* configuration.
 
 **Environment type:** - Demo
 
@@ -88,7 +99,8 @@ If you already have an Azure subscription, note the following:
 -   **To view the size of your subscription:** You can view the size of your subscription in the Azure management portal. To do so, log on to the [Azure management portal](https://manage.windowsazure.com/), and then click **Settings** &gt; **Usage**.
 -   **To increase the size of your subscription:** To increase the size of your subscription, you’ll need to create a support ticket with the Azure support team. To do so, go to the [Azure support options](http://azure.microsoft.com/en-us/support/options/) page, and then click **Get Support** to create the support ticket. When creating the support ticket, be sure to indicate that the ticket is for billing support.
 
-**Note:** The Cloud Solution Provider (CSP) program is currently not supported with Lifecycle Services due to the Azure Resource Manager (ARM) requirement.
+> [!NOTE]
+> The Cloud Solution Provider (CSP) program is currently not supported with Lifecycle Services due to the Azure Resource Manager (ARM) requirement.
 
 ## Purchase and Azure support plan
 Azure support plans provide technical and billing support for Azure. The Azure support plans offer flexible support options that will allow you to select the right level of support for your Azure deployment. The support options range from support services included with your Azure subscription at no charge to premier support services. To learn about the available support plans and to purchase a plan, see the [Azure support plans](http://www.windowsazure.com/en-us/support/plans/) page.
@@ -121,7 +133,10 @@ When a topology is deployed, the deployment system will inspect the virtual mach
 A Cloud Service will be created with the following naming scheme: Version-Topology-EnvironmentName-SKU-GUID Please consider the Cloud Services resource requirements for you deployments and request additional Cloud Services capacity in your Azure Subscription from Azure Support if necessary.
 
 ## Plan for storage accounts
-For each project created in Lifecycle Services, one or more distinct storage accounts will be created in the Azure subscription. A storage account is created when you connect your project to your Azure subscription. This storage account is a Locally Redundant Storage (LRS) account, and is used to house scripts and VHDs which are required for deployments. An additional Premium storage account is created for each project when the first Premium storage-enabled topology is deployed from the project. Storage accounts are not shared across Lifecycle Services projects, even if the deployments are to the same Azure subscription. When a Premium storage account is created, it too is created as LRS. For more information about storage, click [here](http://azure.microsoft.com/en-us/pricing/details/storage). Consider which topologies and the number of environments that will be deployed into the same Lifecycle Services (LCS) project and Azure Connector. Premium storage account aside, by default there is 1 storage account for each LCS project and Azure Connector. Be aware that Azure storage has [limits](https://azure.microsoft.com/en-us/documentation/articles/azure-subscription-service-limits/#storage-limits), specifically 20,000 IOPS (input/output operations per second) per standard storage account. Combined with 500 IOPS per VHD, that leaves roughly 40 ***highly utilized*** VHDs before throttling occurs. To mitigate this, we recommend that you leverage multiple Azure Connectors and/or multiple LCS projects. For example, consider having production environments in one LCS project, and Dev/Test environments in another. Note: Not all VHDs that LCS deploys will be highly utilized, such as the installation VHD.
+For each project created in Lifecycle Services, one or more distinct storage accounts will be created in the Azure subscription. A storage account is created when you connect your project to your Azure subscription. This storage account is a Locally Redundant Storage (LRS) account, and is used to house scripts and VHDs which are required for deployments. An additional Premium storage account is created for each project when the first Premium storage-enabled topology is deployed from the project. Storage accounts are not shared across Lifecycle Services projects, even if the deployments are to the same Azure subscription. When a Premium storage account is created, it too is created as LRS. For more information about storage, click [here](http://azure.microsoft.com/en-us/pricing/details/storage). Consider which topologies and the number of environments that will be deployed into the same Lifecycle Services (LCS) project and Azure Connector. Premium storage account aside, by default there is 1 storage account for each LCS project and Azure Connector. Be aware that Azure storage has [limits](https://azure.microsoft.com/en-us/documentation/articles/azure-subscription-service-limits/#storage-limits), specifically 20,000 IOPS (input/output operations per second) per standard storage account. Combined with 500 IOPS per VHD, that leaves roughly 40 ***highly utilized*** VHDs before throttling occurs. To mitigate this, we recommend that you leverage multiple Azure Connectors and/or multiple LCS projects. For example, consider having production environments in one LCS project, and Dev/Test environments in another. 
+
+> [!NOTE]
+> Not all VHDs that LCS deploys will be highly utilized, such as the installation VHD.
 
 ## Plan your SQL Server configuration
 Azure Premium Storage delivers high-performance, low-latency disk support for I/O intensive workloads running on Azure virtual machines (VMs). With Premium Storage, your applications can have up to 32 TB of storage per VM, achieve 50,000 IOPS per VM, and have extremely low latencies for read operations. Premium Storage is required for AX 2012 R3 deployments that will be used in a production capacity. Premium Storage is enabled by default for High Availability deployments when Azure DS-series VMs are selected. Premium Storage is only offered on DS-series VMs at this time. Premium Storage is enabled exclusively for the SQL Server AlwaysOn database servers, while non-Premium storage is used for all other storage needs. When a SQL Server AlwaysOn availability set is created, Lifecycle Services will attach a disk for every disk slot supported by the DS-series VM selected. For more information about VM disk capacity, click [here](https://msdn.microsoft.com/en-us/library/azure/dn197896.aspx). Different VM sizes will come with varying maximums for throughput and IOPS. As a result, when you are planning your SQL Server configuration, please be familiar with these limitations to ensure that you are deploying the most efficient and cost effective solution for your business. Please follow the guidance found in [Premium Storage: High-Performance Storage for Azure Virtual Machine Workloads](https://azure.microsoft.com/en-us/documentation/articles/storage-premium-storage-preview-portal/), particularly the section, **Throttling when using Premium Storage**. The SQL Server AlwaysOn availability set is created automatically through Lifecycle Services. It is important to consider your data and performance needs before deploying a High Availability topology for use with a production system. Please refer to Azure Premium Storage information [here](http://azure.microsoft.com/en-us/documentation/articles/storage-premium-storage-preview-portal/). Once you have planned your deployment with Premium Storage, the High Availability topology provides configuration options to help you achieve your cost and performance objectives. Under Advanced Settings for the High Availability topology, the following SQL Server configuration options appear:
@@ -237,10 +252,14 @@ You’ll use the Cloud-hosted environments tool in Lifecycle Services to deploy 
 -   Retail mobility dev/test environment
 -   High availability environment
 
-**Note: **In these environments, SQL Server is configured to use the SQL\_Latin1\_General\_CP1\_CI\_AS collation.
+> [!NOTE]
+> In these environments, SQL Server is configured to use the SQL\_Latin1\_General\_CP1\_CI\_AS collation.
 
 ## AX 2012 R3 and AX 2012 R3 CU8 demo environments
-There are two AX 2012 R3 demo environments: one environment includes Cumulative Update 8, and the other does not. The following table lists details about each environment. **Note: **The virtual machine included in each environment is a single-instance virtual machine. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/).
+There are two AX 2012 R3 demo environments: one environment includes Cumulative Update 8, and the other does not. The following table lists details about each environment. 
+
+> [!NOTE]
+> The virtual machine included in each environment is a single-instance virtual machine. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/).
 
 <table>
 <colgroup>
@@ -356,7 +375,10 @@ There are two AX 2012 R3 demo environments: one environment includes Cumulative 
  
 
 ## Retail Essentials demo environment
-Deploy this environment to demo Retail essentials. Retail essentials is a retail-centric configuration option for Microsoft Dynamics AX. This environment includes one virtual machine, by default. This virtual machine has Windows Server—and the software and sample data that you’ll need to demo Retail essentials—already installed on it. The following table lists details about the default Retail essentials demo environment. When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines. **Note: **The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/).
+Deploy this environment to demo Retail essentials. Retail essentials is a retail-centric configuration option for Microsoft Dynamics AX. This environment includes one virtual machine, by default. This virtual machine has Windows Server—and the software and sample data that you’ll need to demo Retail essentials—already installed on it. The following table lists details about the default Retail essentials demo environment. When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines. 
+
+> [!NOTE]
+> The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/).
 
 <table>
 <colgroup>
@@ -424,10 +446,17 @@ Deploy these development environments when you need to quickly jumpstart a devel
 -   Development: Includes all-in-one VMs deployed with Active Directory.
 -   Development with shared SQL Server: Includes all-in-one VMs deployed with Active Directory. The database for each development VM instance will be deployed to a shared SQL Server instance.
 
-For those doing BI development you can deploy one instance for the purpose. All other instances will not deploy with BI. The development VMs provided have all the AX 2012 R3 components installed with Visual Studio 2013 and AX 2012 R3 development tools. The VMs are joined to the Active Directory domain at deployment time. If you provided an Active Directory domain as a customization option, then the VMs will join to that domain. Development VMs will be deployed up to the point of the AX 2012 R3 checklist, and have all the software installed that is listed in the Test environment. **Note: **The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/).
+For those doing BI development you can deploy one instance for the purpose. All other instances will not deploy with BI. The development VMs provided have all the AX 2012 R3 components installed with Visual Studio 2013 and AX 2012 R3 development tools. The VMs are joined to the Active Directory domain at deployment time. If you provided an Active Directory domain as a customization option, then the VMs will join to that domain. Development VMs will be deployed up to the point of the AX 2012 R3 checklist, and have all the software installed that is listed in the Test environment. 
+
+> [!NOTE]
+> The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/).
 
 ## Test environment
-This environment includes several virtual machines, by default. These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 testing purposes—already installed on them. The following table lists details about the default test environment. When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines. **Note: **The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/). **Note: **Data Import/Export Framework (DIXF) components are not installed by default. If you want to use DIXF, you must use your own SQL Server installation media to install SQL Server Integration Services (SSIS) on the SQL Server machine. After you install SSIS, you can use the Dynamics AX CD (available on a connected drive within the VMs) to install the DIXF components on the AOS and then client machines.
+This environment includes several virtual machines, by default. These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 testing purposes—already installed on them. The following table lists details about the default test environment. When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines. 
+
+> [!NOTE]
+> The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/). 
+> Data Import/Export Framework (DIXF) components are not installed by default. If you want to use DIXF, you must use your own SQL Server installation media to install SQL Server Integration Services (SSIS) on the SQL Server machine. After you install SSIS, you can use the Dynamics AX CD (available on a connected drive within the VMs) to install the DIXF components on the AOS and then client machines.
 
 <table>
 <colgroup>
@@ -517,7 +546,7 @@ This environment includes several virtual machines, by default. These virtual ma
 <li>Management Studio</li>
 </ul></li>
 </ul>
-<strong>Note:</strong> Reporting Services is configured to run in Native mode. To use Power View, you’ll need to complete additional configuration steps. For more information, see the prerequisites listed in <a href="https://technet.microsoft.com/en-us/library/jj933492.aspx">Create a report by using Power View to connect to a cube</a>.
+    <strong>Note: </strong> Reporting Services is configured to run in Native mode. To use Power View, you’ll need to complete additional configuration steps. For more information, see the prerequisites listed in <a href="https://technet.microsoft.com/en-us/library/jj933492.aspx">Create a report by using Power View to connect to a cube</a>.
 <ul>
 <li>AX 2012 R3 or AX 2012 R3 CU8 components:
 <ul>
@@ -634,7 +663,10 @@ This environment includes several virtual machines, by default. These virtual ma
  
 
 ## Retail Essentials dev/test environment
-Deploy this environment to develop or test features for Retail essentials. This environment includes one virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail essentials development and testing purposes—already installed on it. The following table lists details about the default Retail essentials dev/test environment. When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines. **Note: **The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/).
+Deploy this environment to develop or test features for Retail essentials. This environment includes one virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail essentials development and testing purposes—already installed on it. The following table lists details about the default Retail essentials dev/test environment. When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines. 
+
+> [!NOTE]
+> The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/).
 
 <table>
 <colgroup>
@@ -697,7 +729,10 @@ Deploy this environment to develop or test features for Retail essentials. This 
  
 
 ## Retail ecommerce dev/test environment
-Deploy this environment to create and test an online sales channel that is fully integrated with AX 2012 R3. This environment includes one virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail e-commerce—already installed on it. The following table lists details about the default Retail e-commerce dev/test environment. When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines. **Note: **The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/).
+Deploy this environment to create and test an online sales channel that is fully integrated with AX 2012 R3. This environment includes one virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail e-commerce—already installed on it. The following table lists details about the default Retail e-commerce dev/test environment. When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines. 
+
+> [!NOTE]
+> The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/).
 
 <table>
 <colgroup>
@@ -737,10 +772,10 @@ Deploy this environment to create and test an online sales channel that is fully
 </tbody>
 </table>
 
- 
-
 ## Retail mobility dev/test environment
-Deploy this environment to enable your sales staff to process sales transactions, enter customer orders, and perform daily operations and inventory management with mobile devices anywhere in a store. This environment includes one virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail mobility—already installed on it. The following table lists details about the default Retail mobility dev/test environment. When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines. **Note: **The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/).
+Deploy this environment to enable your sales staff to process sales transactions, enter customer orders, and perform daily operations and inventory management with mobile devices anywhere in a store. This environment includes one virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail mobility—already installed on it. The following table lists details about the default Retail mobility dev/test environment. When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines. 
+> [!NOTE]
+> The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/).
 
 <table>
 <colgroup>
@@ -782,7 +817,12 @@ Deploy this environment to enable your sales staff to process sales transactions
  
 
 ## High availability environment
-Deploy this environment to use AX 2012 R3 in an environment that can be configured for high availability. This environment includes several virtual machines. These virtual machines have Windows Server—and the software that you’ll need to use AX 2012 R3—already installed on them. The following table lists details about the default high availability environment. When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines. **Note: **Azure Premium Storage is required for high availability environments. For more information, see [Deploy a high availability environment on Azure](deploy-high-availability-environment-azure.md). **Note:** The virtual machines in this environment are covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/). **Note: **Data Import/Export Framework (DIXF) components are not installed by default. If you want to use DIXF, you must use your own SQL Server installation media to install SQL Server Integration Services (SSIS) on the SQL Server machine. After you install SSIS, you can use the Dynamics AX CD (available on a connected drive within the VMs) to install the DIXF components on the AOS and then client machines.
+Deploy this environment to use AX 2012 R3 in an environment that can be configured for high availability. This environment includes several virtual machines. These virtual machines have Windows Server—and the software that you’ll need to use AX 2012 R3—already installed on them. The following table lists details about the default high availability environment. When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines. 
+
+> [!NOTE]
+> Azure Premium Storage is required for high availability environments. For more information, see [Deploy a high availability environment on Azure](deploy-high-availability-environment-azure.md). 
+> The virtual machines in this environment are covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/). 
+> Data Import/Export Framework (DIXF) components are not installed by default. If you want to use DIXF, you must use your own SQL Server installation media to install SQL Server Integration Services (SSIS) on the SQL Server machine. After you install SSIS, you can use the Dynamics AX CD (available on a connected drive within the VMs) to install the DIXF components on the AOS and then client machines.
 
 <table>
 <colgroup>
@@ -799,7 +839,7 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 <td><strong>Software installed</strong></td>
 </tr>
 <tr class="even">
-<td>3<strong>Note: </strong>Three domain controllers are deployed in this environment. If one domain controller fails, you must be left with two, online domain controllers in order to meet Azure’s <a href="http://azure.microsoft.com/en-us/support/legal/sla/">Service Level Agreement</a>.</td>
+<td>3<strong>Note: </strong>Three domain controllers are deployed in this environment. If one domain controller fails, you must be left with two, online domain controllers in order to meet Azure’s <a href="http://azure.microsoft.com/en-us/support/legal/sla/">Service Level Agreement</a>.</td>
 <td>Domain controller</td>
 <td><strong>Size:</strong> D1: Basic compute tier (1 core, 3.5 GB memory)<strong>Default name:</strong> AD-&lt;GUID&gt;</td>
 <td><ul>
@@ -1040,6 +1080,3 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 - [Deploy a Retail e-commerce dev/test environment on Azure](deploy-retail-ecommerce-devtest-environment-azure.md) 
 - [Deploy a Retail mobility dev/test environment on Azure](deploy-retail-mobility-devtest-environment-azure.md) 
 - [Deploy a high availability environment on Azure](deploy-high-availability-environment-azure.md)
-
-
-
