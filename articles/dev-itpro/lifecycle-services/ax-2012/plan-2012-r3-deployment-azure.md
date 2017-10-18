@@ -40,13 +40,8 @@ Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there ar
 > [!NOTE]
 > AX 2012 R3 can also be deployed on-premises. For details, see the topic [Install Microsoft Dynamics AX 2012](https://technet.microsoft.com/en-us/library/dd362138.aspx).
 
-## Verify that you can log on to Lifecycle Services
-
-Microsoft Dynamics Lifecycle Services (LCS) is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use the Cloud-hosted environments tool, available on the Lifecycle Services website, to deploy AX 2012 R3 on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. [Verify that you can log on to Lifecycle Services](https://lcs.dynamics.com/)
-
-## Supported deployments of AX 2012 R3 on Azure
 Deployments of AX 2012 R3 on Azure are supported by Microsoft in the following scenarios: 
-- The deployment has been performed through LCS. Microsoft does not support deployments of AX 2012 R3 on Azure that were performed outside of LCS. 
+- The deployment has been performed through Microsoft Dynamics Lifecycle Services (LCS). 
 - Deployments have been performed through supported Azure Resource Manager scripts (link to ARM scripts)
 - Other deployments that have been performed using the following guidance: 
    - SQL is deployed in a High Availability topology (using SQL Clustering/Always On).
@@ -56,6 +51,9 @@ Deployments of AX 2012 R3 on Azure are supported by Microsoft in the following s
 
 > [!NOTE]
 > If you have an issue in an unsupported AX 2012 R3 on Azure environment, and can reproduce the same issue in an AX 2012 R3 environment that was either deployed to Azure through LCS, or deployed locally, Microsoft can provide support. 
+
+## Verify that you can log on to Lifecycle Services
+Lifecycle Services (LCS) is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use the Cloud-hosted environments tool, available on the Lifecycle Services website, to deploy AX 2012 R3 on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. [Verify that you can log on to Lifecycle Services](https://lcs.dynamics.com/)
 
 ## Purchase an Azure subscription
 To use Azure, you must purchase a subscription. For information about subscription plans and pricing details, see the [Azure pricing](https://azure.microsoft.com/en-us/pricing/) page. Then follow the instructions on that page to purchase a subscription. The subscription must be large enough to support the AX 2012 R3 environment that you want to deploy on Azure. The following table lists the types of AX 2012 R3 environments that you can deploy on Azure, and the number of cores required to deploy each environment in its default configuration. 
