@@ -47,7 +47,8 @@ Deployments of AX 2012 R3 on Azure are supported by Microsoft in the following s
    - The System diagnostic tool is installed and best practices are followed, as specified in [System diagnostics](system-diagnostics-lcs.md) 
 
 > [!NOTE]
-> If you have an issue in an unsupported AX 2012 R3 on Azure environment, and can reproduce the same issue in an AX 2012 R3 environment that was either deployed to Azure through LCS, or deployed locally, Microsoft can provide support. 
+> If you have an issue in an unsupported AX 2012 R3 on Azure environment, and can reproduce the same issue in an AX 2012 R3 environment that was either deployed to Azure through LCS, or deployed locally, Microsoft can provide support.
+
 > AX 2012 R3 can also be deployed on-premises. For details, see the topic [Install Microsoft Dynamics AX 2012](https://technet.microsoft.com/en-us/library/dd362138.aspx).
 
 ## Verify that you can log on to Lifecycle Services
