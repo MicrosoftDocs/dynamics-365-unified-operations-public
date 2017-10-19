@@ -158,7 +158,7 @@ You must create sales tax codes, sales tax groups, and item sales tax groups. Yo
 
 You must enable auditing and set up receipt numbering.
 
-## Update POS permissions groups and individual permission settings for store workers
+### Update POS permissions groups and individual permission settings for store workers
 
 Set the **Allow printing receipt copy** permission to an appropriate value:
 
@@ -170,14 +170,68 @@ Set the **Allow printing receipt copy** permission to an appropriate value:
     
 - **Never** – The operator can't print a copy of a receipt.
     
-### Make the required changes to receipt formats for sales receipts
+### Configure custom fields to be used in receipt formats for sales receipts
 
-Change the value of the **Print behavior** field to **Always print** for the receipt format.
-    
-In the Receipt format designer, make these changes:
+Make the following steps to configure custom fields:
+
+1. On the **Language text** page, add the following records for the captions of the custom receipt layout fields. Note that the Language ID, Text ID and Text fields are provided for example, and can be changed according to your requirements.
+
+|Language ID|Text|Text ID|
+|-------|----------------------------------------|--------|
+|en-US|Receipt title|**900011**|
+|en-US|Is gift card|**900012**|
+|en-US|Total (sales)|**900013**|
+|en-US|Tax total (sales)|**900014**|
+|en-US|Total with tax (sales)|**900015**|
+|en-US|Tax amount (sales)|**900016**|
+|en-US|Cash transaction ID|**900017**|
+
+2. On the **Custom fields** page, add the following records for the custom receipt layout fields. Note that Caption text IDs must correspond to the Text IDs specified on the previous step:
+
+|Name|Type|Caption text ID|
+|-----------------|----------|--------|
+|**ReceiptTitle**|Receipt|**900011**|
+|**IsGiftCard**|Receipt|**900012**|
+|**SalesTotalExt**|Receipt|**900013**|
+|**TaxTotalExt**|Receipt|**900014**|
+|**TotalWithTaxExt**|Receipt|**900015**|
+|**AmountPerTaxExt**|Receipt|**900016**|
+|**CashTransactionSequentialNumber**|Receipt|**900017**|
+            
+### Configure receipt formats
+
+For all required receipt formats, change the value of the **Print behavior** field to **Always print** for the receipt format.
+
+In the Receipt format designer, add the following custom fields to appropriate receipt sections (note that field names correspond to the language texts defined in the previous section):
+
+1. Header:
+
+    - **Receipt title**. This field identifies the type of receipt
+
+    - **Cash transaction ID**. This field prints the sequential number of the signed cash transaction.
+
+2. Lines
+
+    - **Is gift card**. This field marks the receipt line as related to the Issue gift card or the Add to gift card operations.
+
+3. Footer:
+
+    - **Total (sales)**. This field prints the receipt's total cash sale amount excluding tax and excluding prepayments and gift card operations.
+
+    - **Tax total (sales)**. This field prints the receipt's total tax amount for cash sale, excluding prepayments and gift card operations. 
+
+    - **Total with tax (sales)**. This field prints the receipt's total cash sale amount including tax and  excluding prepayments and gift card operations.
+
+    - **Tax amount (sales)**. This field prints the receipt's tax amount for cash sales, excluding prepayments and gift card operations, per tax code. 
 
 See [Receipt templates and printing](../receipt-templates-printing.md) for more information on working with receipt formats.
 
 ### Configure SAF-T Cash Register export format
 
+Set up...
+
 The format configuration is available to download from Lifecycle Services. For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+
+### Configure Retail channel components
+
+You must configure Retail channel component extensions to enable Norway-specific functionalty. For more information, see the [deployment guidelines](./emea-nor-loc-deployment-guidelines.md)
