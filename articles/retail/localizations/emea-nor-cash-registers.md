@@ -130,7 +130,7 @@ The audit file can be exported for the following scenarios:
 - Per terminal
 - All terminals
 
-The SAF-T Cash Register format is implemented at Retail Headquarters using [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md). The format configuration is available to download from Lifecycle Services. For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+The SAF-T Cash Register format is implemented at Retail Headquarters using [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md). 
 
 ## Setting up Retail for Norway
 
@@ -142,39 +142,42 @@ To use the Norway-specific functionality for Retail, you must complete these tas
 
 - Set the **ISO code** field to **NO** (Norway) in the POS functionality profile of every store that is located in Norway.
 
-You must specify the following settings for Norway:
+You must specify the following settings for Norway.
 
-1. Set up legal entity
+### Set up legal entity
 
-  - Make sure the legal entity name is specified. It will be printed in X and Z reports;
+Make sure the legal entity name is specified. It will be printed in X and Z reports;
   
-  - Specify the organization number in the **Routing number** field on the **Bank account information** fast tab.
+Specify the organization number in the **Routing number** field on the **Bank account information** fast tab.
   
-2. Set up value-added tax (VAT) per Norwegian requirements. You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md). You also need to specify sales tax groups and enable the **Prices include sales tax** option for stores located in Norway
+### Set up value-added tax (VAT) per Norwegian requirements
 
-3. Set up functionality profiles. You must enable auditing and set up receipt numbering.
+You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md). You also need to specify sales tax groups and enable the **Prices include sales tax** option for stores located in Norway
 
-4. Update POS permissions groups and individual permission settings for store workers. Set the **Allow printing receipt copy** permission to an appropriate value:
+### Set up functionality profiles
 
-    - **Allow always** – The operator can print a copy of a receipt multiple times;
+You must enable auditing and set up receipt numbering.
+
+## Update POS permissions groups and individual permission settings for store workers
+
+Set the **Allow printing receipt copy** permission to an appropriate value:
+
+-  **Allow always** – The operator can print a copy of a receipt multiple times;
     
-    - **Allow only once** – The operator can print a copy of a receipt only one time;
+- **Allow only once** – The operator can print a copy of a receipt only one time;
     
-    - **Allow only once, and only if HQ DB is available** – The operator can print a copy of a receipt only one time, and only if the headquarters database is available through Real-Time service, so that the system can verify that no copies of the receipt have previously been printed in any store;
+- **Allow only once, and only if HQ DB is available** – The operator can print a copy of a receipt only one time, and only if the headquarters database is available through Real-Time service, so that the system can verify that no copies of the receipt have previously been printed in any store;
     
-    - **Never** – The operator can't print a copy of a receipt.
+- **Never** – The operator can't print a copy of a receipt.
     
-5. Make the required changes to receipt formats for sales receipts:
+### Make the required changes to receipt formats for sales receipts
 
-    - Change the value of the **Print behavior** field to **Always print** for the receipt format.
+Change the value of the **Print behavior** field to **Always print** for the receipt format.
     
-    - In the Receipt format designer, make these changes:
+In the Receipt format designer, make these changes:
 
+See [Receipt templates and printing](../receipt-templates-printing.md) for more information on working with receipt formats.
 
-|Set up task                                 | Information                                                                     |
-|--------------------------------------------|---------------------------------------------------------------------------------|
-|Set up legal entity                         | Select a primary address for the legal entity that is located in Norway. Finally, |
+### Configure SAF-T Cash Register export format
 
-|Make the required changes to receipt formats for sales receipts|Set the **Print behavior** field to **Always print** for the receipt formats you want to be printed. In the Receipt format designer, add 
-See [Receipt templates and printing](../receipt-templates-printing.md) for more information on working with receipt formats           |
-
+The format configuration is available to download from Lifecycle Services. For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
