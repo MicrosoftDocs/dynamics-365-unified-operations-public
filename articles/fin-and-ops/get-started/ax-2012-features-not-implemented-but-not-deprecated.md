@@ -65,13 +65,6 @@ This topic lists Microsoft Dynamics AX 2012 features that were postponed. These 
 <td>The chart shows the depreciation, accumulated depreciation, and net book value over time. Users can click the <strong>Data</strong> tab to view more detailed information than the chart shows. This chart will be redesigned in a future update.</td>
 <td>Not implemented</td>
 </tr>
-<tr class="odd">
-<td>Vendor portal</td>
-<td>Vendor portal lets you certify and validate suppliers as claims users through identity providers such as Microsoft account or Yahoo. It also supports unsolicited vendor sign-up. Vendor portal lets vendors review purchase orders, update their own (supplier) data, review product receipts to generate invoices, and upload and maintain a product catalog. Vendor portal lets you collaborate with or notify a supplier, and also lets you upload requests for quotation (RFQs) and allow vendors to respond to them. A vendor portal interface will be available in the web client, for Microsoft Azure Active Directory (Azure AD) users who have a dedicated security role. These users can review, confirm, and reject purchase orders, and can view confirmed orders.
-<p>The ability for the vendor to view and respond to purchase orders, and to create draft invoices has been included in Dynamics 365 for Financials and Operations in recent releases. So has the ability to initiate a Vendor user request workflow, to onboard new external (AAD account) users defined as contact persons for the vendor. </p>
-</td>
-<td>Implemented in <version></td>
-</tr>
 <tr class="even">
 <td>Employee self-service (ESS)</td>
 <td>ESS lets you enter requisitions for employees through a procurement site, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. ESS also lets you configure security and punch-out to external catalogs. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization on a requisition. Additionally, the ability to approve a vendor invoice and the functionality for confirming receipts that are associated with requisitions that lead to purchases aren't currently available.</td>
@@ -112,10 +105,6 @@ This topic lists Microsoft Dynamics AX 2012 features that were postponed. These 
 <td>Client drag-and-drop</td>
 <td>The web client controls have application programming interfaces (APIs) for drag-and-drop operations, but these APIs are based on the deprecated desktop client technology and must be redesigned to work on the new web client platform. APIs to support drag-and-drop operations will be reviewed for inclusion in a future update.</td>
 <td>Not implemented</td></tr>
-<tr class="even">
-<td>Vendor catalog import</td>
-<td>Vendor catalog import is available and uses the new data management capabilities for import. However, this feature doesn't support the import of product images and attributes. It also doesn't let you generate schema files per vendor catalog. This functionality will be added in a future update.</td>
-<td>Implemented in <version></td></tr>
 <tr class="odd">
 <td>General budget reservations</td>
 <td>This document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes. This functionality will be added in a future update.</td>
