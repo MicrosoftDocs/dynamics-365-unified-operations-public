@@ -152,7 +152,7 @@ Specify the organization number in the **Routing number** field on the **Bank ac
   
 ### Set up value-added tax (VAT) per Norwegian requirements
 
-You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md). You also need to specify sales tax groups and enable the **Prices include sales tax** option for stores located in Norway
+You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md). You also need to specify sales tax groups and enable the **Prices include sales tax** option for stores located in Norway.
 
 ### Set up functionality profiles
 
@@ -172,9 +172,7 @@ Set the **Allow printing receipt copy** permission to an appropriate value:
     
 ### Configure custom fields to be used in receipt formats for sales receipts
 
-Make the following steps to configure custom fields:
-
-1. On the **Language text** page, add the following records for the captions of the custom receipt layout fields. Note that the Language ID, Text ID and Text fields are provided for example, and can be changed according to your requirements.
+On the **Language text** page, add the following records for the captions of the custom receipt layout fields. Note that the Language ID, Text ID and Text fields are provided for example, and can be changed according to your requirements:
 
 |Language ID|Text|Text ID|
 |-------|----------------------------------------|--------|
@@ -186,7 +184,7 @@ Make the following steps to configure custom fields:
 |en-US|Tax amount (sales)|**900016**|
 |en-US|Cash transaction ID|**900017**|
 
-2. On the **Custom fields** page, add the following records for the custom receipt layout fields. Note that Caption text IDs must correspond to the Text IDs specified on the previous step:
+On the **Custom fields** page, add the following records for the custom receipt layout fields. Note that Caption text IDs must correspond to the Text IDs specified on the previous step:
 
 |Name|Type|Caption text ID|
 |-----------------|----------|--------|
