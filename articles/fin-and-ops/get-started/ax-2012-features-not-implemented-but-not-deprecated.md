@@ -120,8 +120,6 @@ This topic lists Microsoft Dynamics AX 2012 features that were postponed. These 
 <td>General budget reservations</td>
 <td>This document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes. This functionality will be added in a future update.</td>
 <td>Not implemented</td></tr>
-<tr class="even">
-<tr class="even">
 <td>Microsoft Project client integration</td>
 <td>The Microsoft Project client is integrated with projects.</td>
 <td>Implemented in Dynamics 365 for Finance and Operations in July 2017</td></tr>
