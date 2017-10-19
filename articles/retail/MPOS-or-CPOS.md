@@ -65,11 +65,11 @@ As much as MPOS and CPOS are the same, there are some key differences that must 
 
 **Cloud POS:** Since Cloud POS runs in a browser the application is not installed on the device.  The browser accesses the application code from the Cloud POS server .  Due to this fact, Cloud POS cannot directly access POS hardware or work in an offline state.
 
-###Store deployment considerations
+### Store deployment considerations
 In addition to the choice of platform and formfactor, the retailer also needs to choose from multiple deployment choices at the store.  The table below specifies the available configurations for each POS options.
 
 |POS application         |Retail server        |Offline available|
-|------------------------|---------------------|-----------------|
+|:------------------------|:---------------------|:-----------------|
 |MPOS for Windows        |Cloud or RSSU        |Yes              |
 |MPOS for iOS or Android |Cloud or RSSU        |No               |
 |Cloud POS               |Cloud or RSSU        |No               |
