@@ -352,7 +352,7 @@ To obtain the latest data upgrade deployable packages for your target environmen
     The name of the data upgrade deployable packages varies, depending on the version that you're upgrading from and the version that you're upgrading to:
 
     - If you're upgrading from Microsoft Dynamics AX 2012, the packages are named **MajorVersionDataUpgrade.zip** and **MajorversionDataUpgrade_Retail.zip**. Both packages need to be run one after the other. To find these packages, download the latest binary updates.
-    - If you're upgrading from a previous release of Finance and Operations, the packages are named **MinorVersionDataUpgrade.zip** and **MinorVersionDataUpgrade_Retail.zip**. Both packages need to be run one after the other. To find these packages, download the latest binary updates (In earlier versions (before Platform update 4), there was one package named **DataUpgrade.zip**).
+    - If you're upgrading from a previous release of Finance and Operations, the packages are named **MinorVersionDataUpgrade.zip** and **MinorVersionDataUpgrade_Retail.zip**. Both packages need to be run one after the other. To find these packages, download the latest binary updates (In versions before Platform update 4, there was one package named **DataUpgrade.zip**).
 
 > [!NOTE]
 > Computers that are deployed from LCS will already have a local data upgrade package. However, that file is out of date and includes issues that have been resolved in later hotfixes. Always download the latest version of the file from LCS.
