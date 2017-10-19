@@ -61,7 +61,7 @@ As much as MPOS and CPOS are the same, there are some key differences that must 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**iOS/Android:**  The application on these platforms acts as a host for the Cloud POS application code.  This means that the application code itself comes from the Cloud POS server on Azure or the Retail Store Scale Unit (RSSU). 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Learn more about **Retail Store Scale Unit** here: https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Learn more about **Retail Store Scale Unit** [here.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)
 
 **Cloud POS:** Since Cloud POS runs in a browser the application is not installed on the device.  The browser accesses the application code from the Cloud POS server .  Due to this fact, Cloud POS cannot directly access POS hardware or work in an offline state.
 
@@ -78,12 +78,12 @@ In addition to the choice of platform and formfactor, the retailer also needs to
 
 **Offline mode:**  MPOS for Windows supports offline mode, which allows the POS to continue to process sales even if it has been disconnected from its Retail server and then sync with the channel database when connectivity is restored.  MPOS utilizes its own embedded instance of the CRT and temporarily utilizes its own local data source (offline SQL database). 
 
-Learn more about offline functionality available at POS here: https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/pos-offline-functionality
+Learn more about offline functionality available at POS [here.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/pos-offline-functionality)
 
 ###POS peripheral/hardware considerations
 Another area to consider is how the POS will access devices and peripherals such as printers, cash drawers, and payment terminals.  Only MPOS for Windows supports direct communication to these devices.  MPOS for Windows Phone, iOS or Android, and Cloud POS require a hardware station to access the devices.  Hardware stations can be dedicated to a POS register or shared among the registers within the store.
 
-Learn more about hardware station here: https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation
+Learn more about hardware station [here.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation)
 
 ## Implementation Considerations
 Below are some things to consider as you plan your POS implementation at your retail stores.
@@ -101,7 +101,7 @@ Below are some things to consider as you plan your POS implementation at your re
 
 3.	**Hardware devices/peripherals** – A key aspect of a Retail POS system is its ability to utilize POS peripherals such as printers, cash drawers, and payment terminals.  While any of the POS options available can utilize peripheral devices, only Retail Modern POS for Windows can support them directly.  For all other applications one or more Hardware stations are required.  This adds additional flexibility, but also additional components to be deployed, configured, and serviced.
 
-4.	**System requirements** – Each POS application has varying system requirements.  Be sure to check the latest information before making your selection.  Running Cloud POS in a browser for example provides a wider selection of supported operation systems. Learn more about system requirements here: https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements
+4.	**System requirements** – Each POS application has varying system requirements.  Be sure to check the latest information before making your selection.  Running Cloud POS in a browser for example provides a wider selection of supported operation systems. Learn more about system requirements [here.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements)
  
 5.	**Deployment and servicing** – Depending on the application and deployment choices, the complexity of the deployment and servicing requirements can vary.  For example, with a cloud hosted Cloud POS deployment there is no need to install and update on each device, which greatly reduces complexity and cost.  Deploying MPOS with offline on each register, along with shared hardware stations will vastly increase the number of end points to be managed.
 
