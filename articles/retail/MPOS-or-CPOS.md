@@ -80,7 +80,7 @@ In addition to the choice of platform and formfactor, the retailer also needs to
 
 Learn more about offline functionality available at POS [here.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/pos-offline-functionality)
 
-###POS peripheral/hardware considerations
+### POS peripheral/hardware considerations
 Another area to consider is how the POS will access devices and peripherals such as printers, cash drawers, and payment terminals.  Only MPOS for Windows supports direct communication to these devices.  MPOS for Windows Phone, iOS or Android, and Cloud POS require a hardware station to access the devices.  Hardware stations can be dedicated to a POS register or shared among the registers within the store.
 
 Learn more about hardware station [here.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation)
@@ -92,9 +92,9 @@ Below are some things to consider as you plan your POS implementation at your re
 
 2.	**Connectivity** - Network availability (WAN and LAN) is a major factor that needs careful considerations.  The cost and simplicity benefits of a zero footprint, cloud hosted solution, are completely lost if system is not available for business-critical processes. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unless the connectivity for a given device is extremely dependable and resilient, or the retail can accept a certain amount of down time, it is recommended to either:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unless the connectivity for a given device is extremely dependable and resilient, or the retailer can accept a certain amount of down time, it is recommended to either:
 
-* Utilize Retail Modern POS on Windows with offline enabled
+* Utilize Retail Modern POS on Windows - with offline enabled
 * Deploy a Retail Store Scale Unit on premises 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It should also be noted that these options are not mutually exclusive.  For the most reliable topology, retailers can deploy a local RSSU reducing the dependency on internet connectivity or Azure availability and offline enabled POS registers should there be an issue with the local server or network.
