@@ -120,7 +120,7 @@ X and Z reports include information according to Norwegian requirements. For exa
 
 #### SAF-T Cash Register audit file
 
-You can export the POS transaction journal in the predefined SAF-T (Standard Audit File - Tax) Cash Register format. The audit file includes information about the organizaton, relevant master data (such as item groups and items, tax codes, etc.), cash sales transaction data with their signatures, non-sales event data, and end-of-date report date.
+You can export the POS transaction journal in the predefined SAF-T (Standard Audit File - Tax) Cash Register format. The audit file includes information about the organization, relevant master data (such as item groups and items, tax codes, etc.), cash sales transaction data with their signatures, non-sales event data, and end-of-date report date.
 
 The audit file can be exported for the following scenarios:
 
@@ -238,4 +238,4 @@ On the **Retail parameters** page, tab **Electronic documents**, select the **NO
 
 ### Configure Retail channel components
 
-You must configure Retail channel component extensions to enable Norway-specific functionalty. For more information, see the [deployment guidelines](./emea-nor-loc-deployment-guidelines.md)
+You must configure Retail channel component extensions to enable Norway-specific functionality. For more information, see the [deployment guidelines](./emea-nor-loc-deployment-guidelines.md)
