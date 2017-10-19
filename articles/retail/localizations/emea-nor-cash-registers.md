@@ -228,9 +228,13 @@ See [Receipt templates and printing](../receipt-templates-printing.md) for more 
 
 ### Configure SAF-T Cash Register export format
 
-Set up...
+The SAF-T Cash Register configuration is available to download from Lifecycle Services. For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You need to download the following configurations:
 
-The format configuration is available to download from Lifecycle Services. For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+- **Retail channel data** data model
+
+- **NO SAF-T Cash Register** format
+
+On the **Retail parameters** page, tab **Electronic documents**, select the **NO SAF-T Cash Register** format in the **SAF-T Cash register export format** field.
 
 ### Configure Retail channel components
 
