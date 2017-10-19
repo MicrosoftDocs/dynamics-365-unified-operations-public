@@ -124,11 +124,12 @@ You can export the POS transaction journal in the predefined SAF-T (Standard Aud
 
 The audit file can be exported for the following scenarios:
 
-- Per company
 - Per store
 - All stores
 - Per terminal
 - All terminals
+
+You can also send a report from one legal entity on behalf of another legal entity. In this case you need to run the export from the operating legal entity and specify the reporting legal entity as the **Sender** of the report.
 
 The SAF-T Cash Register format is implemented at Retail Headquarters using [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md). 
 
@@ -232,7 +233,15 @@ The SAF-T Cash Register configuration is available to download from Lifecycle Se
 
 - **NO SAF-T Cash Register** format
 
-On the **Retail parameters** page, tab **Electronic documents**, select the **NO SAF-T Cash Register** format in the **SAF-T Cash register export format** field.
+After importing the configurations, on the **Retail parameters** page, tab **Electronic documents**, select the **NO SAF-T Cash Register** format in the **SAF-T Cash register export format** field.
+
+You also need to map required master data to predefined SAF-T standard codes. See the SAF-T Cash register documentation provided by the Norwegian Tax Administration for more details. To create the mapping, a new field **SAF-T Cash register code** should be populated beforehand on the following pages:
+
+- Item groups
+
+- Payment methods
+
+- Sales tax codes
 
 ### Configure Retail channel components
 
