@@ -512,7 +512,7 @@
 ## [Upload custom business processes](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Monitoring and diagnostics ](lifecycle-services/monitoring-diagnostics.md)
 ## [Asset library](lifecycle-services/asset-library.md)
-## [Microsoft Dynmaics 365 - Translation Service overview](lifecycle-services/translation-service-overview.md)
+## [Microsoft Dynamics 365 - Translation Service overview](lifecycle-services/translation-service-overview.md)
 ### [Microsoft Dynamics 365 Translation Service user guide  ](lifecycle-services/use-translation-service.md)
 
 ## Dynamics AX 2012 Lifecycle Services features
