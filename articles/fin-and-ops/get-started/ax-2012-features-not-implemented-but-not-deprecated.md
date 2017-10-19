@@ -121,9 +121,6 @@ This topic lists Microsoft Dynamics AX 2012 features that were postponed. These 
 <td>This document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes. This functionality will be added in a future update.</td>
 <td>Not implemented</td></tr>
 <tr class="even">
-<td>Electronic data exchange</td>
-<td>The electronic exchange of documents, such as order confirmations and similar supply chain management (SCM) documents that were previously enabled as AIF documents, isn't supported. This functionality will be added in a future update.</td>
-<td></td>
 <tr class="even">
 <td>Microsoft Project client integration</td>
 <td>The Microsoft Project client is integrated with projects.</td>
