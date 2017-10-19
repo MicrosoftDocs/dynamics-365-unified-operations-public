@@ -347,7 +347,7 @@ To obtain the latest data upgrade deployable packages for your target environmen
 
 1. In LCS, in the **Environments** section, select your target Finance and Operations environment, scroll to the bottom of the page, and then select the **All binary updates** tile (or **Platform updates** tile).
 2. On the **Binary updates** page, select **Download binaries**. On the next page, select **Save package** to save it to the LCS Asset library.
-3. Go to the Asset library > Software deployable package tab and download the package. Extract it and then go to the following directory to find the appropriate data upgrade deployable package file: ..\\CustomDeployablePackage
+3. Go to the **Asset library** > **Software deployable package** tab and download the package. Extract it and then go to the following directory to find the appropriate data upgrade deployable package file: ..\\CustomDeployablePackage
 
     The name of the data upgrade deployable packages varies, depending on the version that you're upgrading from and the version that you're upgrading to:
 
