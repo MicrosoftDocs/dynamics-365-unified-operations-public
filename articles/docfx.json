@@ -55,7 +55,7 @@
         },
         "financials/": {
           "folder_relative_path_in_docset": ".",
-          "depot_name": "MSDN.d365OpsFiancials"
+          "depot_name": "MSDN.d365OpsFinancials"
         },
         "fin-and-ops/": {
           "folder_relative_path_in_docset": ".",

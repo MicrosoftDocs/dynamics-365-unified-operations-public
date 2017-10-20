@@ -5,7 +5,7 @@ title: Take a trace using Trace parser
 description: This tutorial provides guidelines on how to take traces.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This tutorial provides guidelines on how to take traces.
+This tutorial provides guidelines on how to take traces in Microsoft Dynamics 365 for Finance and Operations.
 
-In this tutorial, you'll take a tour of how to collect and download traces. The trace analysis tool works largely similar to the Dynamics AX 2012 version yet it is not backward compatible and you can't use it to analyze Dynamics AX 2012 traces. The trace parser tool can be found in the PerfSDK folder on your development deployments.
+In this tutorial, you'll take a tour of how to collect and download traces. The trace analysis tool works largely similar to the Microsoft Dynamics AX 2012 version, but it is not backward compatible and can't be used to analyze AX 2012 traces. The trace parser tool can be found in the PerfSDK folder on your development deployments.
 
 ## Prerequisites
 This tutorial requires that you access the environment as an administrator on the instance. The administrator can also grant rights to other users to take a trace. In this way you can trace scenarios which can't be reproduced with administrative rights.
@@ -52,7 +52,7 @@ This tutorial requires that you access the environment as an administrator on th
 4.  Perform actions that need to be analyzed like for example opening "Accounts payable &gt; Vendors &gt; All vendors".
 5.  When you are finished, click **Stop trace**. Then, you can select one of the following options (for this tutorial, select the second option):
     -   **Download trace** – Store the captured trace on a local machine. You can analyze a downloaded trace with the desktop version of Trace Parser. **Note**: If you download a trace it will not be available for later uploading.
-    -   **Upload trace **– Store the trace in the cloud for later downloading by for example the admin, it will be automatically deleted after 7 days and can also be deleted manually from the captured traces form.
+    -   **Upload trace** – Store the trace in the cloud for later downloading by for example the admin, it will be automatically deleted after 7 days and can also be deleted manually from the captured traces form.
 
 **Please note:** If your scenario takes more than 1-2 minutes it is better to try to take multiple smaller traces of 30 seconds each as the trace will likely get too big to be easily analyzed and there is a risk for losing data if the trace gets too big.
 
@@ -71,7 +71,7 @@ This tutorial requires that you access the environment as an administrator on th
 4.  Click on the user name to get to the user options.
 5.  Delete the trace if you want. You might do this if you have downloaded it.
 
-**Note: **The trace will be deleted after 7 days. For more information about the desktop version of trace parser, see [Trace parser: Using the desktop version to diagnose problems and analyze performance issues](trace-parser.md).
+**Note:** The trace will be deleted after 7 days. For more information about the desktop version of trace parser, see [Trace parser: Using the desktop version to diagnose problems and analyze performance issues](trace-parser.md).
 
 
 
