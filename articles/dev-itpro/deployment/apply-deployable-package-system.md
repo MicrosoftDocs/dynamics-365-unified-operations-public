@@ -87,15 +87,18 @@ Before you begin, verify that the deployable package has been uploaded to the As
 2. Open the **Environment details** view for the environment where you want to apply the package.
 3. Click **Maintain** &gt; **Apply updates** to apply an update.
 4. Select the package to apply. Use the filter at the top to find your package.
-5. Click **Apply**. Notice that the status in the upper right of the **Environment details** view changes to **Queued**, and that an **Environment updates** section now shows the progress of the package.
+5. Click **Apply**. Notice that the status in the upper-right corner of the **Environment details** view changes to **Queued**, and that an **Environment updates** section now shows the progress of the package.
 
     [![Queued status](./media/parallelexecutionsandbox_queuedstate.jpg)](./media/parallelexecutionsandbox_queuedstate.jpg)
-6. Refresh the page to see the progress of package application. Notice that the servicing status is **In Progress**, and that the environment status is **Servicing**.
+    
+6. Refresh the page to see the progress of the package application. Notice that the servicing status is **In Progress**, and that the environment status is **Servicing**.
 
     [![Servicing status](./media/parallelexecutionsandbox_servicingstate.png)](./media/parallelexecutionsandbox_servicingstate.png)
+    
 7. Continue to refresh the page to see the status updates for the package application request. When the package has been applied, the environment status changes to **Deployed**, and the servicing status changes to **Completed**.
 
     [![Deployed status](./media/parallelexecutionsandbox_signedoffstate.png)](./media/parallelexecutionsandbox_signedoffstate.png)
+    
 8. To sign off on package application, click **Sign off** if there are no issues. If issues occurred when you applied the package, click **Sign off with issues**.
 
 ### Troubleshooting
@@ -114,7 +117,7 @@ If package application isn't successful, you can download either the logs or the
 2. Unzip the log files.
 3. Select the role that a step failed for, such as **AOS** or **BI**.
 4. Select the VM where the step failed. This information appears in the **Machine name** column in the **Environment updates** section.
-5. In the logs for the VM, select the folder that corresponds to the step where the issue occurred. The folder name identifies the step that each folder corresponds to. For example, if the issue occurred in the executing a step, select the **ExecuteRunbook\*** folder.
+5. In the logs for the VM, select the folder that corresponds to the step where the issue occurred. The folder name identifies the step that each folder corresponds to. For example, if the issue occurred in the executing of a step, select the **ExecuteRunbook\*** folder.
 
 For example, if the folder name is ExecuteRunbook-b0c5c413-dae3-4a7a-a0c4-d558614f7e98-1\_I0\_R0, the step number is highlighted and is the number after the globally unique identifier (GUID).
 
@@ -125,6 +128,7 @@ If package application isn't successful, you have two options:
 - Click **Resume** to retry the operation that failed.
 
     ![Failed status](./media/parallelexecutionsandbox_failedstate.jpg)
+    
 - Click **Abort** to stop package application.
 
 > [!Note]
@@ -151,6 +155,7 @@ In a production environment, unlike in a sandbox environment or other types of e
 
 > [!NOTE]
 > The list of packages includes only the packages that have been successfully signed off in the sandbox environment, and that have been marked as release candidates.
+
 9. Specify the date and time to schedule package application for, click **Submit**, and then click **OK** to confirm. Note that your environments will be down and unavailable to perform business while the package is being applied.
 10. Refresh the page. Two fields on the page indicate the status of the request.
 
@@ -158,11 +163,13 @@ In a production environment, unlike in a sandbox environment or other types of e
     - **Actionable by** – This field indicates who must take action.
 
     ![Request status and Actionable by fields](./media/applypackage_prod_7-1024x269.png)
+    
 11. Microsoft either accepts or denies the request.
 
     - If the request is accepted, Microsoft begins to update the environment.
     
     ![Accepted request: Request status = Request accepted, Actionable by = Microsoft](./media/applypackage_prod_9-1024x384.png)
+    
     - If the request is denied, Microsoft informs the customer about the reason for denial and the action that the customer must take. The customer can then reschedule the request, change the package, or cancel the request.
     
     ![Denied request: Request status = Request denied, Actionable by = Customer/Partner](./media/applypackage_prod_8-1024x322.png)
@@ -170,6 +177,7 @@ In a production environment, unlike in a sandbox environment or other types of e
     At any time, the customer can use the **Comments** field to post comments to the request.
     
     ![Example of comments that are posted to a request](./media/applypackage_prod_10-1024x336.png)
+    
 12. After the environment is serviced, you can monitor the status. The **Servicing status** field indicates the status of package application.
 
     [![Servicing status and Request status fields](./media/applypackage_prod_11-1024x399.png)](./media/applypackage_prod_11.png)
@@ -180,9 +188,10 @@ In a production environment, unlike in a sandbox environment or other types of e
 
 ### Successful package application
 
-- After the deployment is successfully completed, the **Servicing status** field is set to **Completed**, but the **Request status** field is still set to **In progress**, because the request hasn't yet been closed.
+- After the deployment is successfully completed, the **Servicing status** field is set to **Completed**, but the **Request status** field is still set to **In progress** because the request hasn't yet been closed.
 
     ![Successful deployment: Servicing status = Completed, Request status = In progress](./media/applypackage_prod_13-1024x392.png)
+    
 - After Microsoft has finished applying the request, you must close the request by clicking **Close servicing request**.
 - When you close a successful request, in the **Edit work item details** dialog box, set the **Service request status** field to **Succeeded**, and then click **Submit**.
 
@@ -191,9 +200,11 @@ In a production environment, unlike in a sandbox environment or other types of e
 - If package application isn't successfully completed, Microsoft will investigate the issue. The **Servicing status** field will indicate that package application has failed.
 
     ![Unsuccessful package deployment: Servicing status = Failed](./media/applypackage_prod_17.png)
+    
 - When deployment fails, Microsoft can abort the package, revert the environment to a good state, and send the request back to the customer, so that the customer can validate the environment and close the request. If there is an issue in the package, the customer must submit a new request that includes the new package.
 
     ![Comment from Microsoft that changes were reverted, and that the customer must validate the environment](./media/applypackage_prod_18-1024x346.png)
+    
 - When you close a failed request, in the **Edit work item details** dialog box, set the **Service request status** field to **Aborted**.
 
 ## Deploying packages in Retail environments
