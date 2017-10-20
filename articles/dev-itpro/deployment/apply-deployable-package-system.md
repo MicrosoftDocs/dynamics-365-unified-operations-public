@@ -131,10 +131,10 @@ If package application isn't successful, you have two options:
     
 - Click **Abort** to stop package application.
 
-> [!Note]
-> If you click **Abort**, you don't roll back the changes that have already been made to your environment. To proceed, you must fix the issue.
+    > [!Note]
+    > If you click **Abort**, you don't roll back the changes that have already been made to your environment. To proceed, you must fix the issue.
     
-[![Message box that appears when you abort package application](./media/applypackage_sandbox_13-1024x274.png)](./media/applypackage_sandbox_13.png)
+    [![Message box that appears when you abort package application](./media/applypackage_sandbox_13-1024x274.png)](./media/applypackage_sandbox_13.png)
 
 ## Apply a package to a production environment by using LCS
 
