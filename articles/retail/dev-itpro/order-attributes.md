@@ -185,7 +185,7 @@ public void OnExecuting(Request request)
 
  var getCartServiceRequest = new GetCartServiceRequest(new CartSearchCriteria(suspendCartRequest.CartId), QueryResultSettings.SingleRecord);
 
-Cart cart = request.RequestContext.Execute&lt;GetCartServiceResponse&gt;(getCartServiceRequest).Carts.Single();
+Cart cart = request.RequestContext.Execute<GetCartServiceResponse>(getCartServiceRequest).Carts.Single();
 
 // Update the transaction header attribute for customer order.
 
@@ -203,7 +203,7 @@ if (cartUpdated)
 
 var saveCartRequest = new SaveCartRequest(cart);
 
- request.RequestContext.Execute&lt;SaveCartResponse&gt;(saveCartRequest);
+ request.RequestContext.Execute<SaveCartResponse>(saveCartRequest);
 
 } } } }
 
@@ -298,17 +298,17 @@ The scenario we took was whenever you create any B2B order and want to set the B
 
  let currentCart: ProxyEntities.Cart;
 
- return this.context.runtime.executeAsync&lt;GetCurrentCartClientResponse&gt;(new GetCurrentCartClientRequest())
+ return this.context.runtime.executeAsync<GetCurrentCartClientResponse>(new GetCurrentCartClientRequest())
 
- .then((getCurrentCartClientResponse: ClientEntities.ICancelableDataResult&lt;GetCurrentCartClientResponse;):
+ .then((getCurrentCartClientResponse: ClientEntities.ICancelableDataResult<GetCurrentCartClientResponse>):
 
- Promise&lt;ClientEntities.ICancelableDataResult&lt;GetCustomerClientResponse = {
+ Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>> => {
 
  currentCart = getCurrentCartClientResponse.data.result;
 
  // Gets the current customer.
 
- let result: Promise&lt;ClientEntities.ICancelableDataResult&lt;GetCustomerClientResponse;
+ let result: Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>>;
 
  if (!ObjectExtensions.isNullOrUndefined(currentCart) && !ObjectExtensions.isNullOrUndefined(currentCart.CustomerId)) {
 
@@ -316,7 +316,7 @@ The scenario we took was whenever you create any B2B order and want to set the B
 
  new GetCustomerClientRequest(currentCart.CustomerId);
 
- result = this.context.runtime.executeAsync&lt;GetCustomerClientResponse&gt;(getCurrentCustomerClientRequest);
+ result = this.context.runtime.executeAsync<GetCustomerClientResponse>(getCurrentCustomerClientRequest);
 
  } else {
 
@@ -328,15 +328,15 @@ The scenario we took was whenever you create any B2B order and want to set the B
 
  })
 
- .then((getCurrentCustomerClientResponse: ClientEntities.ICancelableDataResult&lt;GetCustomerClientResponse):
+ .then((getCurrentCustomerClientResponse: ClientEntities.ICancelableDataResult<GetCustomerClientResponse>):
 
- Promise&lt;ClientEntities.ICancelableDataResult&lt;ShowMessageDialogClientResponse = {
+ Promise<ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>> => {
 
  let currentCustomer: ProxyEntities.Customer = getCurrentCustomerClientResponse.data.result;
 
  // If the cart is a customer order with a B2B customer, then we display a dialog to determine if the order should be B2B.
 
- let result: Promise&lt;ClientEntities.ICancelableDataResult&lt;ShowMessageDialogClientResponse;
+ let result: Promise<ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>>;
 
  if (!ObjectExtensions.isNullOrUndefined(currentCart)
 
@@ -380,11 +380,11 @@ The scenario we took was whenever you create any B2B order and want to set the B
 
  };
 
- let showMessageDialogClientRequest: ShowMessageDialogClientRequest ShowMessageDialogClientResponse =
+ let showMessageDialogClientRequest: ShowMessageDialogClientRequest<ShowMessageDialogClientResponse> =
 
  new ShowMessageDialogClientRequest(showMessageDialogClientRequestOptions);
 
- result = this.context.runtime.executeAsync&lt;ShowMessageDialogClientResponse(showMessageDialogClientRequest);
+ result = this.context.runtime.executeAsync<ShowMessageDialogClientResponse>(showMessageDialogClientRequest);
 
  } else {
 
@@ -398,13 +398,13 @@ The scenario we took was whenever you create any B2B order and want to set the B
 
  .then((showMessageDialogClientResponse: ClientEntities.ICancelableDataResult&lt;ShowMessageDialogClientResponse):
 
- Promise&lt;ClientEntities.ICancelableDataResult&lt;SaveAttributesOnCartClientResponse {
+ Promise<ClientEntities.ICancelableDataResult<SaveAttributesOnCartClientResponse>> => {
 
  // Save the B2B attribute value depending on the dialog result.
 
  let messageDialogResult: ClientEntities.Dialogs.IMessageDialogResult = showMessageDialogClientResponse.data.result;
 
- let result: Promise&lt;ClientEntities.ICancelableDataResult&lt;SaveAttributesOnCartClientResponse;
+ let result: Promise<ClientEntities.ICancelableDataResult<SaveAttributesOnCartClientResponse>>;
 
  if (!ObjectExtensions.isNullOrUndefined(messageDialogResult)) {
 
@@ -418,7 +418,7 @@ The scenario we took was whenever you create any B2B order and want to set the B
 
  let attributeValues: ProxyEntities.AttributeValueBase[] = [attributeValue];
 
- let saveAttributesOnCartRequest: SaveAttributesOnCartClientRequest&lt;SaveAttributesOnCartClientResponse =
+ let saveAttributesOnCartRequest: SaveAttributesOnCartClientRequest<SaveAttributesOnCartClientResponse> =
 
  new SaveAttributesOnCartClientRequest(attributeValues);
 
@@ -452,7 +452,7 @@ The scenario we took was whenever you create any B2B order and want to set the B
 
  if (!ObjectExtensions.isNullOrUndefined(customer.Attributes)) {
 
- for (let i: number = 0; i&lt;customer.Attributes.length; i++) {
+ for (let i: number = 0; i < customer.Attributes.length; i++) {
 
  let currentAttribute: ProxyEntities.CustomerAttribute = customer.Attributes[i];
 
