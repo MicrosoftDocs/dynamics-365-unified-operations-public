@@ -154,8 +154,8 @@ In a production environment, unlike in a sandbox environment or other types of e
 7. Select the type of package to apply.
 8. Select the package to apply in your production environment, and then click **Schedule** to submit a request to the Service Engineering team to apply it.
 
-> [!NOTE]
-> The list of packages includes only the packages that have been successfully signed off in the sandbox environment, and that have been marked as release candidates.
+    > [!NOTE]
+    > The list of packages includes only the packages that have been successfully signed off in the sandbox environment, and that have been marked as release candidates.
 
 9. Specify the date and time to schedule package application for, click **Submit**, and then click **OK** to confirm. Note that your environments will be down and unavailable to perform business while the package is being applied.
 10. Refresh the page. Two fields on the page indicate the status of the request.
