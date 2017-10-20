@@ -71,7 +71,7 @@ Extensibility fundamentals includes principles and practices for how to make ext
 
 ## Future changes 
 
-The following topics provide an overview of the extensibility changes proposed in future releases of Dynamics 365 for Finance and Operations. If you have comments or suggestions about these features, please provide feedback on these blog posts or contact us using [Extensibility requests](extensibility-requests.md). 
+The following topics provide an overview of the extensibility changes proposed for the fall release of Finance and Operations. If you have comments or suggestions about these features, please provide feedback on these blog posts or contact us using [Extensibility requests](extensibility-requests.md). 
 
 + [Inventory dimensions](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
 + [Enabling extensibility on pricing](https://blogs.msdn.microsoft.com/mfp/2017/09/21/enabling-extensibility-on-pricing/)
