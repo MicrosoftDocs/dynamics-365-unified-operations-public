@@ -69,9 +69,9 @@ Extensibility fundamentals includes principles and practices for how to make ext
 + [Class extension: Method wrapping and Chain of Command](method-wrapping-coc.md)
 + [Naming guidelines](naming-guidelines-extensions.md)
 
-## Future changes 
+## Upcoming: Fall release 2017 
 
-The following topics provide an overview of the extensibility changes proposed for the fall release of Finance and Operations. If you have comments or suggestions about these features, please provide feedback on these blog posts or contact us using [Extensibility requests](extensibility-requests.md). 
+The following topics provide an overview of the extensibility changes proposed for the fall 2017 release of Finance and Operations. If you have comments or suggestions about these features, please provide feedback on these blog posts or contact us using [Extensibility requests](extensibility-requests.md). 
 
 + [Inventory dimensions](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
 + [Enabling extensibility on pricing](https://blogs.msdn.microsoft.com/mfp/2017/09/21/enabling-extensibility-on-pricing/)
