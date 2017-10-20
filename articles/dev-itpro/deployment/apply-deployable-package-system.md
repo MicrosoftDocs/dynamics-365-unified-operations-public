@@ -109,6 +109,7 @@ If package application isn't successful, you can download either the logs or the
 
 ![Download log and Download runbook buttons](./media/applypackage_sandbox_10.png)
 
+
 ![Troubleshooting](./media/parallelexecutionsandbox_troubleshooting.jpg)
 
 #### Using the logs
@@ -119,7 +120,7 @@ If package application isn't successful, you can download either the logs or the
 4. Select the VM where the step failed. This information appears in the **Machine name** column in the **Environment updates** section.
 5. In the logs for the VM, select the folder that corresponds to the step where the issue occurred. The folder name identifies the step that each folder corresponds to. For example, if the issue occurred in the executing of a step, select the **ExecuteRunbook\*** folder.
 
-For example, if the folder name is ExecuteRunbook-b0c5c413-dae3-4a7a-a0c4-d558614f7e98-1\_I0\_R0, the step number is highlighted and is the number after the globally unique identifier (GUID).
+    For example, if the folder name is ExecuteRunbook-b0c5c413-dae3-4a7a-a0c4-d558614f7e98-1\_I0\_R0, the step number is highlighted and is the number after the globally unique identifier (GUID).
 
 #### Package failure
 
