@@ -52,7 +52,7 @@ For other topologies (below), you must use Remote Desktop Protocol (RDP) to conn
 
 ## Key concepts
 
-Before you begin, you should understand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. The AXInstaller creates a runbook that enables installing a package. For more details, see [Packages, runbooks, and the AXUpdateInstaller in depth](#packages-runbooks-and-the-AXUpdateInstaller-in-depth) at the end of this topic.
+Before you begin, you should understand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. The AXInstaller creates a runbook that enables installing a package. For more details, see [Packages, runbooks, and the AXUpdateInstaller in depth](#packages-runbooks-and-the-AXUpdateInstaller-in-depth) at the end of this topic.
 
 ## Supported package types
 
