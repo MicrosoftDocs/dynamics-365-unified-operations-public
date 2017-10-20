@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Download hotfixes from Lifecycle Services
+title: Download updates from Lifecycle Services
 description: Use this tutorial to download hotfixes for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, from Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
