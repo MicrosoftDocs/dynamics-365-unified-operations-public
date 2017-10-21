@@ -1,3 +1,4 @@
+
 ## Inventory look up on POS - 
 
 
@@ -48,7 +49,7 @@ Upon clicking **'View all variants'** from *'Product details page'* of a **produ
 
 And as you may notice, there are various kind of variant tiles 
 
-| Variant Tile On-hand value | Description                                                                                                                                                                                                               |
+| **Variant Tile On-hand value** | **Description**                                                                                                                                                                                                               |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Numeric (>0)               | It indicates that a particular variant is released to the selected location, and user can interact with that individual cell to perform additional actions.                                                               |
 | Numeric (= 0)              | It indicates that a particular variant is released to the selected location, and there's no availability of that item in selected location but user can interact with that individual cell to perform additional actions. |
@@ -62,5 +63,20 @@ User can swiftly **change the pivot** for dimensions by choosing the dimension t
 
 ![PivotChanged](media/PivotChanged.png)
 
+Additionally, to boost productivity of a store-associate there are additional actions one can perform from a product-dimension based matrix form of inventory look-up:
+ 
+1. Change the store location to look up inventory availability of all product variants at other location (Other stores in store-locator group as well as standard/default type of distribution center.) 
+1. Sell an individual product variant to a customer (cash & carry, pick up at store, ship to address) 
+1. Provide the customer with available-to-promise information of an individual product variant at desired location 
 
+![VariantTileActions](media/VariantActions.png)
+(*Note - The display order of dimensions is alphabetic - that's because the display order for the dimensions on this product were not configured*) 
 
+| **Actions**              | **Description**                                                                                                                                                                                                          |
+|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Sell now             | It shall add selected item variant to the transaction & re-direct user to the transaction screen. (*Not available when selected location is of type distribution center*)                                             |
+| Pick up in store     | It creates a customer order for that item variant to be picked up from the selected location & re-directs user to the transaction screen. (*Not available when selected location is of type distribution center*)     |
+| Ship product         | It creates a customer order for that item variant to be shipped from the selected location & re-directs user to the transaction screen.                                                                              |
+| Availability         | Shows the available to promise information (ATP) for the selected variant combination for the selected location.                                                                                                     |
+| Show all locations      | Switches user to standard inventory look up view, showcasing inventory availability information for that particular item variant across all stores in store-locator group and standard/default distribution centers. |
+| View product details | Re-directs user to the product details page of the associated product master.                                                                                                                                        |
