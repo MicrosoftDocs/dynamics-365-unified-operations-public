@@ -94,7 +94,7 @@ Plug-ins are extension points that are defined by the base application. By using
 
 ### Class Extensions
 
-Class extensions enable you to augment a class by adding methods and variables to existing classes. For more details refer to the topic [class extensions](class-extensions.md).
+Class extensions enable you to augment a class by adding methods and variables to existing classes, tables and forms. For more details refer to the topic [class extensions](class-extensions.md).
 
 ## Form extensions
 You can extend the functionality of a form by extending its controls and data sources. For example, in a form extension, you can:
@@ -106,10 +106,9 @@ You can extend the functionality of a form by extending its controls and data so
 -   Change a form's help text.
 -   Change a form's caption.
 -   Add a new data source.
--   Change properties at the data-source level.
 -   Add a form part.
 
-Other ways to customize a form, such as reordering controls in the form or subscribing to form or control events, are planned to be included in a future release. In Microsoft Dynamics AX 2012, you could override form methods. In the current version, you use extensions to implement event handlers that are called from the base implementations of form methods. The following table lists each method and its associated events.
+Other ways to customize a form, such as reordering controls in the form are planned to be included in a future release. In Microsoft Dynamics AX 2012, you could override form methods. In the current version, you use extensions to implement event handlers that are called from the base implementations of form methods. The following table lists each method and its associated events.
 
 |**Published form DataSource method**|**Preceding event**|**Succeeding event**|
 |---|---|---|
