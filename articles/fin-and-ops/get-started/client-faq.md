@@ -5,7 +5,7 @@ title: Finance and Operations client FAQ
 description: This article provides answers to frequently asked questions about the Microsoft Dynamics 365 for Finance and Operations client.
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -48,7 +48,7 @@ The security settings on your browser might prevent the symbols from being loade
 ## I miss the ribbon from Dynamics AX 2012. Can I keep Action Pane tabs open all the time?
 We are planning to implement this feature soon. Users will then be able to choose to keep the tabs on Action Panes open all the time. Otherwise, the tabs will be collapsed when they aren't being used, to gain more screen space for the page.
 
-## Why do I sometimes see different shortcut menus when I rightclick?
+## Why do I sometimes see different shortcut menus when I right click?
 If you right-click in an editable field (or if text is selected), the browser's shortcut menu is displayed. This menu gives you access to the **Cut**, **Copy**, and **Paste** commands. We can't embed these commands into the Finance and Operations shortcut menus because, for security reasons, browsers don’t allow us to programmatically access the system clipboard.
 
 If you right-click a field label or the value of a read-only control, you'll see the Finance and Operations shortcut menu.
