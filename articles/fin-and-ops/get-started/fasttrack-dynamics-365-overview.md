@@ -64,16 +64,29 @@ To get started with FastTrack for Dynamics 365 for Finance and Operations, you m
 ## Overview: Microsoft FastTrack for Dynamics 365
 During FastTrack engagements, the Dynamics FastTrack engineering team will offer customers opportunities to get practical guidance on cloud deployment, help with usage and adoption, and assist with removing blockers during implementation through the following interactions:
 
--   **Regular touchpoints** are typically 30-minute calls that continue throughout the duration of the engagements. Small technical proof points are sometimes provided to help remove customer roadblocks.
+-   **Regular touchpoints** are typically 30-minute calls that continue throughout the duration of the engagements. Small technical proof points are sometimes provided to help remove customer roadblocks. Touchpoints are biweekly through the Initiate, Design, and Build phases, and weekly during the Deploy and Operate phases
 -   **Workshops** are interactive outcome-based activities, and may involve automation and tooling. Customers and partners can provide input prior to the workshops and customize them for their engagements.
 -   **Tech talks** focus on providing technical depth and best practices that empower both customers and partners with knowledge that is specific to the subject areas. These talks often provide an overview of available tooling and/or content.
 
-All sessions are delivered remotely by the FastTrack engineering team. We have time zone-based resources to cover major markets in the Americas, EMEA, and APAC. [![FastTrack diagram](./media/fasttrack-ops-1024x438.png)](./media/fasttrack-ops.png)
+All sessions are delivered remotely by the FastTrack engineering team. We have time zone-based resources to cover major markets in the Americas, EMEA, and APAC. 
+
+FastTrack sessions are scheduled throughout the stages of the project lifecycle.  
+
+- Initiate
+- Design
+- Build
+- Deploy
+- Operate
+
+The following diagram summarizes how the lifecycle stages relate to the workshops and techtalks, which is explained in detail below. 
+
+[![FastTrack diagram](./media/fasttrack-ops-1024x438.png)](./media/fasttrack-ops.png)
+
 
 ## Workshops
 Workshops are interactive outcome-based activities, and may involve automation and tooling. Customers and partners can provide input prior to the workshops and customize them for their engagements.
 
-#### Kickoff workshop
+#### Kickoff workshop (W1.2, Initiate phase)
 
 The Kickoff workshop is designed to initiate FastTrack engagements and provide introduction to services available through FastTrack and onboarding guidance. Topics are likely to include:
 
@@ -90,7 +103,7 @@ The Kickoff workshop is designed to initiate FastTrack engagements and provide i
 
 The typical format is a one-hour Skype call. The recommended attendees include key stakeholders from customer, partner, and Microsoft teams.
 
-### Governance workshop
+### Governance workshop (W2.2, Design phase)
 
 The Governance workshop is designed to provide planning and governance recommendations based on project needs and best practices from other cloud deployments. Topics are likely to include:
 
@@ -105,7 +118,7 @@ The Governance workshop is designed to provide planning and governance recommend
 
 The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Project managers are mandatory.
 
-### Solution workshop
+### Solution workshop (W3.1, Build phase)
 
 The Solution workshop is designed to provide guidance on solution design alignment with our public cloud deployment approach, a review of the product roadmap, and project goals and schedule. Topics are likely to include:
 
@@ -124,7 +137,7 @@ The Solution workshop is designed to provide guidance on solution design alignme
 
 The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
 
-### Build workshop
+### Build workshop (W3.2, Build phase)
 
 The Build workshop is designed to review the development approach, build progress, quality, risks, and blockers. Topics are likely to include:
 
@@ -139,7 +152,7 @@ The Build workshop is designed to review the development approach, build progres
 
 The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Solution architects and technical leads are mandatory.
 
-### Pre go-live readiness workshop
+### Pre go-live readiness workshop (W4.1, Deploy phase)
 
 The Pre go-live readiness workshop is designed to ensure that there are no last-minute blockers during cutover and go-live. Topics are likely to include:
 
@@ -155,7 +168,7 @@ The Pre go-live readiness workshop is designed to ensure that there are no last-
 
 The typical format is 1.5-hour Skype call. The recommended attendees include key business users and subject matter experts. Hyper-care team leads are mandatory.
 
-### Post go-live review workshop
+### Post go-live review workshop (W5.1, Operate phase)
 
 The Post go-live review workshop is designed to wrap up the FastTrack engagement. Topics are likely to include:
 
@@ -173,7 +186,7 @@ Tech talks focus on providing technical depth and best practices that empower bo
 
 Some of the tech talks are recorded, and the recordings are available on the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
-### Lifecycle Services (LCS) usage tech talk
+### Lifecycle Services (LCS) usage tech talk (T1.1, Initiate phase)
 
 The Lifecycle Services usage tech talk is designed to introduce customers to LCS. Key topics might include:
 
@@ -186,7 +199,7 @@ The Lifecycle Services usage tech talk is designed to introduce customers to LCS
 
 The typical format is a one-hour Skype call. The recommended attendees include key stakeholders from the customer, partner, and Microsoft teams.
 
-### Tenant/Visual Studio online configuration tech talk
+### Tenant/Visual Studio online configuration tech talk (T1.2, Initiate phase)
 
 The Tenant/Visual Studio Online configuration tech talk is designed to provide guidance on how to configure tenant and Visual Studio Online. Key topics might include:
 
@@ -197,7 +210,7 @@ The Tenant/Visual Studio Online configuration tech talk is designed to provide g
 
 The typical format is a one-hour Skype call. The recommended attendees include technical resources from customer and partner teams.
 
-### Environment plan tech talk
+### Environment plan tech talk (T2.1, Design phase)
 
 The Environment plan tech talk is designed to provide guidance on how to plan and use environments. Key topics might include:
 
@@ -210,7 +223,7 @@ The Environment plan tech talk is designed to provide guidance on how to plan an
 
 The typical format is a one-hour Skype call. The recommended attendees include technical resources from customer and partner teams.
 
-### Development Application Lifecycle Management (ALM) tech talk
+### Development Application Lifecycle Management (ALM) tech talk (T2.2, Design phase)
 
 The Development ALM tech talk is designed to provide guidance on ALM best practices. Key topics might include:
 
@@ -223,7 +236,7 @@ The Development ALM tech talk is designed to provide guidance on ALM best practi
 
 The typical format is a one-hour Skype call. The recommended attendees include technical resources from customer and partner teams.
 
-### Integration guidelines tech talk
+### Integration guidelines tech talk (T2.3, Design phase)
 
 The Integration guidelines tech talk is designed to provide guidance on key integration topics throughout implementation. Key topics might include:
 
@@ -235,7 +248,7 @@ The Integration guidelines tech talk is designed to provide guidance on key inte
 
 The typical format is a one-hour Skype call. The recommended attendees include technical resources from customer and partner teams.
 
-### Reporting and Business Intelligence (BI) guidance tech talk
+### Reporting and Business Intelligence (BI) guidance tech talk (T2.4, Design phase)
 
 The Reporting and BI guidance tech talk is designed to provide guidance on leveraging key analytics capabilities of Finance and Operations. Key topics might include:
 
@@ -248,7 +261,7 @@ The Reporting and BI guidance tech talk is designed to provide guidance on lever
 
 The typical format is a one-hour Skype call. The recommended attendees include technical resources from the customer and partner teams.
 
-### Data management tech talk
+### Data management tech talk (T2.5, Build phase)
 
 The Data management tech talk is designed to provide guidance on how to migrate and/or manage data entities and packages. Key topics might include:
 
@@ -264,7 +277,7 @@ The Data management tech talk is designed to provide guidance on how to migrate 
 
 The typical format is a 1.5-hour Skype call. The recommended attendees include technical resources from customer and partner teams.
 
-### Performance testing tech talk
+### Performance testing tech talk (T3.1, Build phase)
 
 The Performance testing tech talk is designed to provide guidance on planning and executing performance testing. Key topics might include:
 
@@ -277,7 +290,7 @@ The Performance testing tech talk is designed to provide guidance on planning an
 
 The typical format is a one-hour Skype call. The recommended attendees include technical resources from customer and partner teams.
 
-### Servicing tech talk
+### Servicing tech talk (T3.2, Build phase)
 
 The Servicing tech talk is designed to provide guidance on the servicing options available to customers. Key topics might include:
 
