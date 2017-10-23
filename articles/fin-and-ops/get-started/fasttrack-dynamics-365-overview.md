@@ -86,7 +86,7 @@ The following diagram summarizes how the lifecycle stages relate to the workshop
 ## Workshops
 Workshops are interactive outcome-based activities, and may involve automation and tooling. Customers and partners can provide input prior to the workshops and customize them for their engagements.
 
-#### Kickoff workshop (W1.2, Initiate phase)
+### Kickoff workshop (W1.2, Initiate phase)
 
 The Kickoff workshop is designed to initiate FastTrack engagements and provide introduction to services available through FastTrack and onboarding guidance. Topics are likely to include:
 
