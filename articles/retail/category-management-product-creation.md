@@ -36,11 +36,11 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic describes an enhanced way to manage Retail product categories and products in Dynamics 365 for Retail. These enhancements let merchandising managers view a common structure of product properties between Retail product hierarchy and released product details.
 
-To learn more about managing Retail product categories, go to **Retail product hierarchy** from the **Category & product management** workspace, and notice the enhanced structure of **Retail product category** page.
+To learn more about managing Retail product categories, go to **Retail product hierarchy** from the **Category & product management** workspace, and note the enhanced structure of the **Retail product category** page.
 
 ![Category & product management workspace](media/LaunchRetailProductHierarchy.png)
 
-In the previous version, product properties were divided into **Basic product properties** and **Retail product properties**, based on the scope of their applicability. **Retail product properties** were *global* by scope of applicability, which means that for a given **Retail product property**, the same value is shared across all legal entities. **Basic product properties** are *legal entity specific*. In other words, for a given **Basic product property** the value can differ across legal entities, based on individual business requirements.
+In previous versions, product properties were divided into **Basic product properties** and **Retail product properties**, based on the scope of their applicability. **Retail product properties** were *global* by scope of applicability, which means that for a given **Retail product property**, the same value is shared across all legal entities. **Basic product properties** are *legal entity specific*. In other words, for a given **Basic product property** the value can differ across legal entities, based on individual business requirements.
 
 In the enhanced Retail product category structure, product properties are logically separated based on their applicability within a group, to reflect the released product details form structure.
 
@@ -52,7 +52,7 @@ You can switch between managing legal-entity specific properties across all lega
 
 ![Toggle view between an individual and all Legal entities](media/ToggleToEditForAllLegalEntities.PNG)  
 
-Compared to the previous version, in the new Retail product category structure a merchandising manager can also define default values for an additional set of product properties at an individual category level. At the time of product creation, these default product property values are inherited by a product, based on their association with an individual category from Retail product hierarchy. These inherited product properties can also be modified for each product, to meet individual business requirements.
+Compared to previous versions, in the new Retail product category structure a merchandising manager can also define default values for an additional set of product properties at an individual category level. At the time of product creation, these default product property values are inherited by a product, based on their association with an individual category from Retail product hierarchy. These inherited product properties can also be modified for each product, to meet individual business requirements.
 
 ## Select properties to update products from the Retail product category form 
  
