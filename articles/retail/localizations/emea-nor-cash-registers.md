@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cash registers for Norway
-description: This topic provides an overview of the cash register functionality that is available for Norway. 
+description: This topic provides an overview of the cash register functionality that is available for Norway. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 manager: vastrup
 ms.date: 10/23/2017
@@ -30,97 +30,78 @@ ms.dyn365.ops.version: Application update 4
 
 This topic provides an overview of the cash register functionality that is available for Norway in Microsoft Dynamics 365 for Retail. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
 
-- Common point-of-sale (POS) features that are made available to customers in all countries or regions, such as an option to prevent printing a copy of a receipt more than one time
-
-- Norway-specific features, such as digital signature for sales transactions
+- Common point-of-sale (POS) features that are available to customers in all countries or regions. Examples include an option that lets you prevent a copy of a receipt from being printed more than one time.
+- Norway-specific features, such as digital signatures for sales transactions.
 
 ## Overview of cash register functionality for Norway
 
 ### Common POS features
 
-To learn about common POS features that are available to customers in all countries or regions, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
+To learn about POS features that are available to customers in all countries or regions, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
 
-The following POS localization features implemented previously and available to customers in all countries or regions may be used for Norway specifically:
+The following POS localization features that were previously implemented and made available to customers in all countries or regions can now be used specifically for Norway:
 
-- **Print text fields on a receipt in a large font size.** You can use the **Font size** parameter in the Receipt format designer to specify that the large font size should be used for a field in the receipt format. (The large font size is approximately double the usual font size.) For example, you can use this parameter to print the "Copy" indicator on a receipt copy in large characters.
+- **Print text fields on a receipt in a large font size.** You can use the **Font size** parameter in the Receipt format designer to specify that the large font size should be used for a field in the receipt format. (The large font size is approximately double the usual font size.) For example, you can use this parameter to print the "Copy" indicator on a copy of a receipt in large characters.
+- **Register the printing of receipt copies in the POS audit event log.** You can use the **Audit** parameter in the POS functionality profile to enable copies of receipts to be printed and other POS audit events to be registered. The audit events are registered in the channel database and in Retail Headquarters. You can view the audit events on the **Audit events** page.
+- **Prevent a copy of a receipt from being printed more than one time.** When the **Audit** parameter in the POS functionality profile is enabled, the **Allow printing receipt copies** POS permission controls whether copies of receipts can be printed. There is also an option that lets you prevent a copy of a receipt from being printed more than one time. 
 
-- **Register the printing of receipt copies in the POS audit event log.** You can use the **Audit** parameter in the POS functionality profile to enable the printing of receipt copies and other POS audit events to be registered. The audit events are registered in the channel database and in Retail Headquarters. You can view the audit events on the **Audit events** page.
+Additionally, the following POS feature that was previously implemented for Norway has now been made available to customers in all countries or regions:
 
-- **Prevent a copy of a receipt from being printed more than one time.** When the parameter **Audit** in the POS functionality profile is enabled, the **Allow printing receipt copies** POS permission controls whether receipt copies can be printed. There is also an option to prevent a copy of a receipt from being printed more than one time. 
-
-Additionally, the following POS feature that was implemented for Norway has been made available to customers in all countries or regions:
-
-- **Register additional events in the POS audit event log.** If the **Audit** parameter is enabled in the POS functionality profile, the following events are registered in the POS audit event log:
+- **Register additional events in the POS audit event log.** If the **Audit** parameter in the POS functionality profile is enabled, the following events are registered in the POS audit event log:
 
   - Price checks
-
   - Tax overrides
-
-  - Line quantity corrections
-
+  - Corrections to line quantities
   - Clearing transactions from the channel database
 
 ### Norway-specific POS features
 
-The following Norway-specific POS features are enabled when the **ISO code** parameter in the POS functionality profile is set to **NO**.
+The following Norway-specific POS features are enabled when the **ISO code** parameter in the POS functionality profile is set to **No**.
 
-#### Digitally signing sales transactions
+#### Digital signing of sales transactions
 
-Each sales transaction is digitally signed. The signature is created and recorded in the POS transaction journal in parallel with finalizing the transaction, and is further available in the journal exported for audit purposes.
+Every sales transaction is digitally signed. The signature is created and recorded in the POS transaction journal at the same time that the transaction is finalized. The signature is also available in the journal that is exported for audit purposes.
 
-Only cash sales transactions are signed. Excluded from the signing process are, for example:
+Only transactions for cash sales are signed. Here are some examples of transactions that are excluded from the signing process:
 
 - Prepayments (customer account deposit)
-
 - Prepayments for sales orders (customer order deposit)
-
 - Issuing a gift card
+- Non-sales transactions (float entry, tender removal, and so on)
 
-- Non-sale transactions (float entry, tender removal, etc.)
+The data that is signed is a text string that consists of the following data fields. The data fields are separated by semicolons.
 
-The data being signed is a text string consisting of the following data fields separated by semicolons:
-
-- Previous signature for the same POS (“0” for the first transaction)
-
+- Previous signature for the same POS (A zero [**0**] is used for the first transaction.)
 - Transaction date
-
 - Transaction time
-
 - Sequential signed transaction number
-
 - Transaction amount including tax
-
 - Transaction amount excluding tax
 
-The digitally signing process uses an RSA 1024 bit key with a SHA-1 hash function (RSA-SHA1-1024). A certificate installed on the Retail Server is used for signing. The unique identifier of the certificate (footprint) is recorded together with the signature.
+The digital signing process uses an RSA 1024-bit key that has a SHA-1 hash function (RSA-SHA1-1024). A certificate that is installed on Retail Server is used for signing. The unique identifier of the certificate (footprint) is recorded together with the signature.
 
-The signature is stored in the Store DB and HQ DB together with the transaction data. You can view the transaction signature, together with the transaction data used to generate the signature, on the **Retail store transactions** page, the fast tab **Fiscal transactions**. 
+The signature is stored in the store database and the headquarters (HQ) database together with the transaction data. You can view the transaction signature, together with the transaction data that was used to generate it, on the **Fiscal transactions** FastTab of the **Retail store transactions** page. 
 
 #### Receipts
 
-Receipts for Norway may include additional information that was implemented using custom fields.
+Receipts for Norway can include additional information that was implemented by using custom fields:
 
-- **Receipt title**. It is possible to add a field to a receipt format layout that identifies the type of receipt. For example, a sales receipt will include the text "Sales receipt". 
-
-- **Signed transaction sequential number**. The signed transaction sequential number may be listed on the receipt in order to associate a printed receipt with a digital signature in the database.
-
-- **Receipt totals**. Custom receipt total fields exclude non-sales amounts from total transaction amounts. Non-sales amounts include:
+- **Receipt title** – You can add a field to a receipt format layout to identify the type of receipt. For example, a sales receipt will include the text "Sales receipt."
+- **Signed transaction sequential number** – The sequential number of a signed transaction can appear on the receipt to associate a printed receipt with a digital signature in the database.
+- **Receipt totals** – Custom fields for receipt totals exclude non-sales amounts from total transaction amounts. Non-sales amounts include amounts for the following operations:
 
   - Prepayments (customer account deposit)
-
   - Prepayments for sales orders (customer order deposit)
-
   - Issuing a gift card
-  
   - Adding funds to a gift card
 
 #### X and Z reports
 
-X and Z reports include information according to Norwegian requirements. For example, total cash sales amounts include only cash sales transaction amount and exclude issue gift card operations, as well as prepayments; total cash sales are also listed per item group and per payment method. In addition, cumulative Grand total sales and Grand total return amounts are maintained and printed.
+The information that is included on X and Z reports is based on Norwegian requirements. For example, total cash sale amounts include only amounts for cash sales transactions and exclude issue gift card operations and prepayments. Total cash sales are also listed per item group and payment method. In addition, cumulative grand total sales amounts and grand total return amounts are maintained and printed.
 
 #### SAF-T Cash Register audit file
 
-You can export the POS transaction journal in the predefined SAF-T (Standard Audit File - Tax) Cash Register format. The audit file includes information about the organization, relevant master data (such as item groups and items, tax codes, etc.), cash sales transaction data with their signatures, non-sales event data, and end-of-date report date.
+You can export the POS transaction journal in the predefined Standard Audit File - Tax (SAF-T) Cash Register format. The audit file includes information about the organization, relevant master data (such as item groups, items, and tax codes), cash sales transaction data together with signatures for those transactions, non-sales event data, and end-of-date report data.
 
 The audit file can be exported for the following scenarios:
 
@@ -129,9 +110,9 @@ The audit file can be exported for the following scenarios:
 - Per terminal
 - All terminals
 
-You can also send a report from one legal entity on behalf of another legal entity. In this case you need to run the export from the operating legal entity and specify the reporting legal entity as the **Sender** of the report.
+You can also send a report from one legal entity on behalf of another legal entity. In this case, you must run the export from the operating legal entity and specify the reporting legal entity as the sender of the report.
 
-The SAF-T Cash Register format is implemented at Retail Headquarters using [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md). 
+The SAF-T Cash Register format is implemented at Retail Headquarters by using [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md). 
 
 ## Setting up Retail for Norway
 
@@ -140,20 +121,21 @@ This section describes the Retail settings that are specific to and recommended 
 To use the Norway-specific functionality for Retail, you must complete these tasks:
 
 - Set the **Country/region** field to **NOR** (Norway) in the primary address of the legal entity.
-
 - Set the **ISO code** field to **NO** (Norway) in the POS functionality profile of every store that is located in Norway.
 
-You must specify the following settings for Norway.
+You must also specify the following settings for Norway.
 
-### Set up legal entity
+### Set up the legal entity
 
-Make sure the legal entity name is specified. It will be printed in X and Z reports;
+Make sure that the name of the legal entity is specified. This name will be printed on X and Z reports.
   
-Specify the organization number in the **Routing number** field on the **Bank account information** fast tab.
+Additionally, on the **Bank account information** FastTab, in the **Routing number** field, specify the organization number.
   
 ### Set up value-added tax (VAT) per Norwegian requirements
 
-You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md). You also need to specify sales tax groups and enable the **Prices include sales tax** option for stores located in Norway.
+You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+
+You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in Norway.
 
 ### Set up functionality profiles
 
@@ -163,86 +145,76 @@ You must enable auditing and set up receipt numbering.
 
 Set the **Allow printing receipt copy** permission to an appropriate value:
 
--  **Allow always** – The operator can print a copy of a receipt multiple times;
-    
-- **Allow only once** – The operator can print a copy of a receipt only one time;
-    
-- **Allow only once, and only if HQ DB is available** – The operator can print a copy of a receipt only one time, and only if the headquarters database is available through Real-Time service, so that the system can verify that no copies of the receipt have previously been printed in any store;
-    
+- **Allow always** – The operator can print a copy of a receipt multiple times.
+- **Allow only once** – The operator can print a copy of a receipt only one time.
+- **Allow only once, and only if HQ DB is available** – The operator can print a copy of a receipt only one time, and only if the HQ database is available through Real-Time service, so that the system can verify that no copies of the receipt have previously been printed in any store.
 - **Never** – The operator can't print a copy of a receipt.
     
-### Configure custom fields to be used in receipt formats for sales receipts
+### Configure custom fields so that they can be used in receipt formats for sales receipts
 
-On the **Language text** page, add the following records for the captions of the custom receipt layout fields. Note that the Language ID, Text ID and Text fields are provided for example, and can be changed according to your requirements:
+On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet to your requirements.
 
-|Language ID|Text|Text ID|
-|-------|----------------------------------------|--------|
-|en-US|Receipt title|**900011**|
-|en-US|Is gift card|**900012**|
-|en-US|Total (sales)|**900013**|
-|en-US|Tax total (sales)|**900014**|
-|en-US|Total with tax (sales)|**900015**|
-|en-US|Tax amount (sales)|**900016**|
-|en-US|Cash transaction ID|**900017**|
+| Language ID | Text                   | Text ID |
+|-------------|------------------------|---------|
+| en-US       | Receipt title          | 900011  |
+| en-US       | Is gift card           | 900012  |
+| en-US       | Total (sales)          | 900013  |
+| en-US       | Tax total (sales)      | 900014  |
+| en-US       | Total with tax (sales) | 900015  |
+| en-US       | Tax amount (sales)     | 900016  |
+| en-US       | Cash transaction ID    | 900017  |
 
-On the **Custom fields** page, add the following records for the custom receipt layout fields. Note that Caption text IDs must correspond to the Text IDs specified on the previous step:
+On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
-|Name|Type|Caption text ID|
-|-----------------|----------|--------|
-|**ReceiptTitle**|Receipt|**900011**|
-|**IsGiftCard**|Receipt|**900012**|
-|**SalesTotalExt**|Receipt|**900013**|
-|**TaxTotalExt**|Receipt|**900014**|
-|**TotalWithTaxExt**|Receipt|**900015**|
-|**AmountPerTaxExt**|Receipt|**900016**|
-|**CashTransactionSequentialNumber**|Receipt|**900017**|
+| Name                            | Type    | Caption text ID |
+|---------------------------------|---------|-----------------|
+| ReceiptTitle                    | Receipt | 900011          |
+| IsGiftCard                      | Receipt | 900012          |
+| SalesTotalExt                   | Receipt | 900013          |
+| TaxTotalExt                     | Receipt | 900014          |
+| TotalWithTaxExt                 | Receipt | 900015          |
+| AmountPerTaxExt                 | Receipt | 900016          |
+| CashTransactionSequentialNumber | Receipt | 900017          |
             
 ### Configure receipt formats
 
 For all required receipt formats, change the value of the **Print behavior** field to **Always print** for the receipt format.
 
-In the Receipt format designer, add the following custom fields to appropriate receipt sections (note that field names correspond to the language texts defined in the previous section):
+In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
 
 1. Header:
 
-    - **Receipt title**. This field identifies the type of receipt
+    - **Receipt title** – This field identifies the type of receipt.
+    - **Cash transaction ID** – This field prints the sequential number of the signed cash transaction.
 
-    - **Cash transaction ID**. This field prints the sequential number of the signed cash transaction.
+2. Lines:
 
-2. Lines
-
-    - **Is gift card**. This field marks the receipt line as related to the Issue gift card or the Add to gift card operations.
+    - **Is gift card** – This field marks the receipt line as related to the Issue gift card or Add to gift card operation.
 
 3. Footer:
 
-    - **Total (sales)**. This field prints the receipt's total cash sale amount excluding tax and excluding prepayments and gift card operations.
+    - **Total (sales)** – This field prints the receipt's total cash sale amount. The amount excludes tax. Prepayments and gift card operations are excluded.
+    - **Tax total (sales)** – This field prints the receipt's total tax amount for cash sales. Prepayments and gift card operations are excluded. 
+    - **Total with tax (sales)** – This field prints the receipt's total cash sale amount. The amount includes tax. Prepayments and gift card operations are excluded.
+    - **Tax amount (sales)** – This field prints the receipt's tax amount for cash sales per tax code. Prepayments and gift card operations are excluded. 
 
-    - **Tax total (sales)**. This field prints the receipt's total tax amount for cash sale, excluding prepayments and gift card operations. 
+For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
 
-    - **Total with tax (sales)**. This field prints the receipt's total cash sale amount including tax and  excluding prepayments and gift card operations.
+### Configure the SAF-T Cash Register export format
 
-    - **Tax amount (sales)**. This field prints the receipt's tax amount for cash sales, excluding prepayments and gift card operations, per tax code. 
-
-See [Receipt templates and printing](../receipt-templates-printing.md) for more information on working with receipt formats.
-
-### Configure SAF-T Cash Register export format
-
-The SAF-T Cash Register configuration is available to download from Lifecycle Services. For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You need to download the following configurations:
+The SAF-T Cash Register configuration is available for download from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following configurations:
 
 - **Retail channel data** data model
-
 - **NO SAF-T Cash Register** format
 
-After importing the configurations, on the **Retail parameters** page, tab **Electronic documents**, select the **NO SAF-T Cash Register** format in the **SAF-T Cash register export format** field.
+After you import the configurations, on the **Retail parameters** page, on the **Electronic documents** tab, in the **SAF-T Cash register export format** field, select the **NO SAF-T Cash Register** format.
 
-You also need to map required master data to predefined SAF-T standard codes. See the SAF-T Cash register documentation provided by the Norwegian Tax Administration for more details. To create the mapping, a new field **SAF-T Cash register code** should be populated beforehand on the following pages:
+You must also map required master data to predefined SAF-T standard codes. For more information, see the SAF-T Cash register documentation that is provided by the Norwegian Tax Administration. Before you create the mapping, the new **SAF-T Cash register code** field should set on the following pages:
 
 - Item groups
-
 - Payment methods
-
 - Sales tax codes
 
 ### Configure Retail channel components
 
-You must configure Retail channel component extensions to enable Norway-specific functionality. For more information, see the [deployment guidelines](./emea-nor-loc-deployment-guidelines.md)
+To enable Norway-specific functionality, you must configure extensions for Retail channel components. For more information, see the [deployment guidelines](./emea-nor-loc-deployment-guidelines.md).
