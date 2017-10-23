@@ -45,6 +45,4 @@ The following request types are supported by this functionality:
 -   **Package application** – To apply a package to the production environment, on the **Environment details** page, click **Maintain** to select the package to apply, and then select **Schedule**.
 -   **Environment deployment** – To set the deployment options and submit a request to the Dynamics Service Engineering team to deploy a new environment, click **Configure** on the **Environments** pane.
 -   **Database point-in-time restore** – This includes, for example, restoring a non-production database to a specific point in time.
--   **Database refresh** – This includes, for example, the ability to refresh a database from production to sandbox. For more information, see [Upgrade data to latest update](../migration-upgrade/upgrade-data-to-latest-update.md#before-you-begin).
- 
-
+-   **Database refresh** – This includes, for example, the ability to refresh a database from production to sandbox. 
