@@ -53,30 +53,29 @@ Before you can test a service using an external application, you must register t
 
     ![Azure portal](./media/odata_azure1.png)
 
-1.  On the **Azure Active Directory** (AAD) properties tab, note the tenant ID, listed in the **Directory ID** field. You will need it   later for retrieving an AAD authentication token.
+2.  On the **Azure Active Directory** (AAD) properties tab, note the tenant ID, listed in the **Directory ID** field. You will need it   later for retrieving an AAD authentication token.
 
     ![Directory ID](./media/odata_azure2.png)
     
-1.  Click the **App registrations** tab, then click **New application registration**.
+3.  Click the **App registrations** tab, then click **New application registration**.
 
     ![App registrations](./media/odata_azure3.png)
 
-1.  Provide a name that identifies the external application that you are registering. Select **Web app / API** for an application that will authenticate with a shared secret. In this context, the Sign-on URL does not matter, so use localhost.
+4.  Provide a name that identifies the external application that you are registering. Select **Web app / API** for an application that will authenticate with a shared secret. In this context, the Sign-on URL does not matter, so use localhost.
 
     ![Application name](./media/odata_azure4.png)
 
-1.  Select the new application. Copy the Application ID, which you will need later to request an AAD authentication token. Click **Required permissions**.
+5.  Select the new application. Copy the Application ID, which you will need later to request an AAD authentication token. Click **Required permissions**.
     
     ![Required permissions](./media/odata_azure5.png)
 
-1.  Click **Add**, and then click **Select an API**.
+6.  Click **Add**, and then click **Select an API**.
 
     ![Select API](./media/odata_azure6.png)
 
-1.  Select **Microsoft Dynamics ERP**.
+7.  Select **Microsoft Dynamics ERP**.
 
-1.  For permissions, at a minimum you must select the following options
-    under Delegated Permissions:
+8.  For permissions, at a minimum you must select the following options under Delegated Permissions:
 
      - Access Dynamics AX Custom Service
      - Access Dynamics AX data
@@ -84,26 +83,22 @@ Before you can test a service using an external application, you must register t
 
     ![Delegated permissions](./media/odata_azure7.png)
 
-1.  Click **Done**.
+9.  Click **Done**.
 
-1.  Click **Keys**. In the blade that opens, provide a description, set the **Expires** value to **Never expires**, and then click **Save**.
+10.  Click **Keys**. In the blade that opens, provide a description, set the **Expires** value to **Never expires**, and then click **Save**.
 
     ![Expiry](./media/odata_azure9.png)
 
-1.  When you have saved the new key, a value will be displayed in the  **Value** column.
+11.  When you have saved the new key, a value will be displayed in the  **Value** column.
 
     > [!IMPORTANT]
     > Make sure you copy this value, because this is the only time that you will see it, and you need this secret key to complete your OAuth authentication and receive an AAD token.
 
     ![Secret key](./media/odata_azure10.png)
 
- 
-
 ### Register your external application in Finance and Operations
 
-1.  Open Finance and Operations and navigate to System
-    administration-&gt;Setup-&gt;Azure Active Directory applications.
-
+1.  Open Finance and Operations and navigate to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**.
 2.  Click **New**.
     ![Client ID](./media/odata_fo1.png)
 
@@ -124,10 +119,10 @@ Postman (<https://www.getpostman.com/postman>) is a commonly used tool for inter
 2.  Click the gear icon and then **Manage environments** to create or update an environment.
    ![Gear with Manage environments](./media/postman1.png)
    
-1.  Provide a name for your environment and then click **Bulk Edit**.
+3.  Provide a name for your environment and then click **Bulk Edit**.
    ![Name and bulk edit](./media/postman2.png)
 
-1.  Enter key-value pairs as follows, one pair per line, with key and value separated by a colon, ":".
+4.  Enter key-value pairs as follows, one pair per line, with key and value separated by a colon, ":".
 
     | Key           | Value                                                                                  |
     |---------------|----------------------------------------------------------------------------------------|
@@ -137,24 +132,23 @@ Postman (<https://www.getpostman.com/postman>) is a commonly used tool for inter
     | grant_type    | client_credentials                                                                     |
     | resource      | The base URL of the Finance and Operations instance                                    |
 
-1.  Verify that the key-value pairs can be parsed correctly by clicking the **Key-Value Edit** button and reviewing the results.
+5.  Verify that the key-value pairs can be parsed correctly by clicking the **Key-Value Edit** button and reviewing the results.
 
    ![Key value edit](./media/postman3.png)
+   
+6.  Close the environment window.
 
-1.  Close the environment window.
-
-1.  Select the new or updated environment from the field next to the gear and inspection icons.
+7.  Select the new or updated environment from the field next to the gear and inspection icons.
 
    ![Environment selection](./media/postman5.png)
 
-1.  To retrieve an AAD token, create a POST request with a URL conforming to the format
+8.  To retrieve an AAD token, create a POST request with a URL conforming to the format
     `https://login.microsoftonline.com/\[tenant ID\]/oauth2/token\`.
-    You can use a URL parameter referring to the tenant\_id environment variable, such as
-    `https://login.microsoftonline.com/:tenant\_id/oauth2/token\`.
+    You can use a URL parameter referring to the tenant\_id environment variable, such as    `https://login.microsoftonline.com/:tenant\_id/oauth2/token\`.
 
    ![Retrieve AAD](./media/postman6.png)
 
-1.  Click the **Body** tab and add body elements as request parameters, referring to the environment variables you created earlier. You can do this by clicking **Bulk edit** and then entering the same keys in the table above, followed by a colon, ":", and then repeating the key name enclosed in double braces. For example,
+9.  Click the **Body** tab and add body elements as request parameters, referring to the environment variables you created earlier. You can do this by clicking **Bulk edit** and then entering the same keys in the table above, followed by a colon, ":", and then repeating the key name enclosed in double braces. For example,
     `grant\_type:{{grant\_type}}\`.
 
    ![Retrieve AAD](./media/postman7.png)
@@ -162,7 +156,7 @@ Postman (<https://www.getpostman.com/postman>) is a commonly used tool for inter
 
    ![Bulk edit](./media/postman8.png)
  
-1.  Click the **Tests** tab and create a test that will validate that the response is reasonable and store the returned authorization
+10.  Click the **Tests** tab and create a test that will validate that the response is reasonable and store the returned authorization
     token in an environment variable. The following code snippet will accomplish this:
     ```
     var json = JSON.parse(responseBody);
@@ -175,26 +169,25 @@ Postman (<https://www.getpostman.com/postman>) is a commonly used tool for inter
 
    ![Code snippet](./media/postman9.png)
  
+11.  Click **Save**, provide a name and collection for the request, and  then click **Save** again.
 
-1.  Click **Save**, provide a name and collection for the request, and  then click **Save** again.
-
-1.  Click **Send** to make the authorization request. The **Body** tab should now contain an AAD token, along with other response details.
+12.  Click **Send** to make the authorization request. The **Body** tab should now contain an AAD token, along with other response details.
 
    ![AAD token](./media/postman11.png)
 
-1. Because of the test code, the token is now in an environment variable. You can see this by clicking on the **Environment quick look** button (the eye icon).
+13. Because of the test code, the token is now in an environment variable. You can see this by clicking on the **Environment quick look** button (the eye icon).
 
    ![Environment quick look](./media/postman12.png)
 
-1.  Now create a request to perform a create, read, update or delete operations on the desired data entity via the OData service. Craft the URL for what you need. See [Odata](odata.md) for more information. You may find it useful to parameterize the request, using a variable stored in the environment, as shown above. We use a Customer Account parameter in the GET query example below, which returns name and address details for the customer account specified in the environment variable. Note also that special characters must be correctly URL encoded:
+14.  Now create a request to perform a create, read, update or delete operations on the desired data entity via the OData service. Craft the URL for what you need. See [Odata](odata.md) for more information. You may find it useful to parameterize the request, using a variable stored in the environment, as shown above. We use a Customer Account parameter in the GET query example below, which returns name and address details for the customer account specified in the environment variable. Note also that special characters must be correctly URL encoded:
 
 `https://\[D356fFOEE instance URL\]/data/Customers?\$format=json&\$filter=CustomerAccount%20eq%20%27{{custAccount}}%27&\$select=CustomerAccount,Name,AddressDescription,FullPrimaryAddress\`
 
-1. Add an 'Authorization' header referring to the authorization token retrieved earlier and stored in the bearerToken environment variable. The token must be prefixed by 'Bearer ' in the header.
+15. Add an Authorization header referring to the authorization token retrieved earlier and stored in the bearerToken environment variable. The token must be prefixed by 'Bearer ' in the header.
 
    ![Bearer token](./media/postman13.png)
 
-1.  Provide a test to help validate the response. The following code
+16.  Provide a test to help validate the response. The following code
     snippet will test that non-empty, JSON-formatted data is returned in
     the response body:
 
@@ -205,7 +198,7 @@ Postman (<https://www.getpostman.com/postman>) is a commonly used tool for inter
     responseBody !== '{}';\
     ```
 
-1.  Save and send the request, and then verify the result.
+18.  Save and send the request, and then verify the result.
 
    ![Test](./media/postman14.png)
 
@@ -222,7 +215,7 @@ testing scenarios. This procedure is not an endorsement of SoapUI, since other s
 
    ![SoapUI](./media/soapui1.png)
 
- 1.  Complete the information for the project.
+2.  Complete the information for the project.
 
     -   The Initial WSDL URL will be the service address (conforming to the format \[Finance and Operations instance base
     URL\]/soap/services/\[service group name\]) suffixed by "?wsdl".
@@ -237,24 +230,24 @@ testing scenarios. This procedure is not an endorsement of SoapUI, since other s
    ![Sample requests checkbox](./media/soapui2.png)
  
 
-1.  Since we chose to create sample requests, we see that one is created
+3.  Since we chose to create sample requests, we see that one is created
     for each available service operation.
 
    ![sample requests](./media/soapui3.png)
  
 
-1.  Right-click the newly create project and click **New TestSuite** to create a TestSuite, which will generate a POST request for an AAD authorization token.
+4.  Right-click the newly create project and click **New TestSuite** to create a TestSuite, which will generate a POST request for an AAD authorization token.
 
-1.  Right-click on the test suite and click **New TestCase**.
+5.  Right-click on the test suite and click **New TestCase**.
 
-1.  Expand the test case, right-click on **Test Steps**, click **Add Step** and then **HTTP Request**.
+6.  Expand the test case, right-click on **Test Steps**, click **Add Step** and then **HTTP Request**.
  
-1.  Give the request a name and then click **OK**.
+7.  Give the request a name and then click **OK**.
  
-1.  Enter a name for the test step. The endpoint to use for the POST request is:
+8.  Enter a name for the test step. The endpoint to use for the POST request is:
     `[https://login.microsoftonline.com/\[tenant\_id\]/oauth2/token](https://login.microsoftonline.com/%5btenant_id%5d/oauth2/token)\`
 
-1. Use the plus button next to Parameters to add the following values:
+9. Use the plus button next to Parameters to add the following values:
 
     | Parameter     | Value                                              |
     |---------------|----------------------------------------------------|
@@ -265,27 +258,15 @@ testing scenarios. This procedure is not an endorsement of SoapUI, since other s
 
    ![Parameters](./media/soapui6.png)
 
-1.  Ensure the parameters are in the POST body, by selecting **Post QueryString**, and clicking **Play**. An access token should be returned in the response pane. The values will be most readable if you select the JSON response tab. Copy the access token for use in the authorization header of subsequent requests.
+10.  Ensure the parameters are in the POST body, by selecting **Post QueryString**, and clicking **Play**. An access token should be returned in the response pane. The values will be most readable if you select the JSON response tab. Copy the access token for use in the authorization header of subsequent requests.
 
     ![Post QueryString](./media/soapui7.png)
 
-1.  Now navigate back to the first request node under the GetUserSessionInfo SOAP sample request. Click the plus button under the left-hand request pane to add a Header named ‘Authorization’. Paste the access token, prefixed by **Bearer**, into the **Value** field.
+11.  Now navigate back to the first request node under the GetUserSessionInfo SOAP sample request. Click the plus button under the left-hand request pane to add a Header named ‘Authorization’. Paste the access token, prefixed by **Bearer**, into the **Value** field.
 
-2.  The sample requests SoapUI creates will not work unaltered. You need
-    to edit the call context and Body to be consistent with the schema
-    for what you are trying to do. For our simple scenario, we can
-    merely edit the (optional) call context elements to be null-valued.
-    We can do this by inserting a forward slash ‘/’ before the greater
-    than ‘&gt;’ in the opening tag, then commenting out the question
-    mark "?" characters (which are not valid content for the XML schema)
-    and the closing tags, with the standard ‘&lt;!—‘ ‘--&gt;’ syntax
-    delimiting the beginning and end of the comments. Alternatively, the
-    result would be the same if you just deleted the ‘?’ characters,
-    thus leaving the context elements empty.
+12.  The sample requests SoapUI creates will not work unaltered. You need to edit the call context and Body to be consistent with the schema for what you are trying to do. For our simple scenario, we can edit the (optional) call context elements to be null-valued. We can do this by inserting a forward slash ‘/’ before the greater than ‘&gt;’ in the opening tag, then commenting out the question mark "?" characters (which are not valid content for the XML schema) and the closing tags, with the standard ‘&lt;!—‘ ‘--&gt;’ syntax delimiting the beginning and end of the comments. Alternatively, the result would be the same if you just deleted the ‘?’ characters, thus leaving the context elements empty.
 
-3.  Now that the SOAP request is ready, click **Play** and validate the
-    result on the right:
-
+13.  Now that the SOAP request is ready, click **Play** and validate the result on the right:
      ![Validate](./media/soapui8.png)
 
 In our example we have now successfully authenticated then queried the UserSessionService via SOAP!
