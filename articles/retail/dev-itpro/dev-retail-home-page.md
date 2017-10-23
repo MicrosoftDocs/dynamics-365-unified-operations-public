@@ -61,6 +61,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 -   [Manage Retail accounts and devices from headquarters](..\set-up-activation-accounts-validate-devices-hq.md)
 -   [Retail POS device activation](retail-device-activation.md)
 -   [Security best practices for Retail Cloud POS in a shared environment](secure-retail-cloud-pos.md)
+-   [External gift card support](gift-card.md)
 
 ## Customize POS
 - [Retail POS screen layouts](..\pos-screen-layouts.md)
