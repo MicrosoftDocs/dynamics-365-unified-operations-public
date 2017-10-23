@@ -34,138 +34,68 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Although Microsoft provides sample code for consuming Microsoft Dynamics
-365 for Finance and Operations, Enterprise edition, services at
-<https://github.com/Microsoft/Dynamics-AX-Integration>, there are many
-scenarios in which the other endpoint in an integration may not be using
-a Microsoft stack. Even when the other end-point is, for example, using
-the OData client code Microsoft makes available, it can still be useful
-to:
+Although Microsoft provides sample code for consuming Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, services at
+<https://github.com/Microsoft/Dynamics-AX-Integration>, there are many scenarios in which the other endpoint in an integration may not be using a Microsoft stack. Even when the other end-point is, for example, using the OData client code Microsoft makes available, it can still be useful to:
 
 -   Explore and analyze how an interaction’s messages are constructed
-
 -   Test the response of a service to a well-known request
-
 -   Determine what exceptions will look like to the other end-point
 
-There are many commonly used tools available which help meet the goals
-listed above. This article is not an endorsement of any tool. We provide
-examples using some common software utilities, but the principles should
-be broadly applicable to similar tools.
+There are many commonly used tools available which help meet the goals listed above. This article is not an endorsement of any tool. We provide examples using some common software utilities, but the principles should be broadly applicable to similar tools.
 
-## Prerequisites: 
+## Prerequisites
 
-Before you can test using an external application, you must register it
-in Microsoft Azure, and Finance and Operations.
+Before you can test a service using an external application, you must register the application in Microsoft Azure, and in Finance and Operations.
 
 ### Register your external application in Azure
 
-1.  Navigate to the Azure Portal. You can navigate there from the
-    appropriate project in Lifecycle Services (LCS):
+1.  Navigate to the Azure Portal. You can navigate there from the appropriate project in Lifecycle Services (LCS):
 
-![](media/image1.png){width="6.5in" height="2.7805555555555554in"}
+    ![Azure portal](./media/odata_azure1.png)
 
-1.  On the **Azure Active Directory** (AAD) properties tab, note the
-    tenant ID, listed in the **Directory ID** field. You will need this
-    later for retrieving an AAD authentication token.
+1.  On the **Azure Active Directory** (AAD) properties tab, note the tenant ID, listed in the **Directory ID** field. You will need it   later for retrieving an AAD authentication token.
 
-![](media/image2.png){width="4.7604122922134735in"
-height="3.8203313648293964in"}
+    ![Directory ID](./media/odata_azure2.png)
+    
+1.  Click the **App registrations** tab, then click **New application registration**.
 
- 
+    ![App registrations](./media/odata_azure3.png)
 
-1.  Click the **App registrations** tab, then click **New application
-    registration**.
+1.  Provide a name that identifies the external application that you are registering. Select **Web app / API** for an application that will authenticate with a shared secret. In this context, the Sign-on URL does not matter, so use localhost.
 
-![](media/image3.png){width="3.620313867016623in"
-height="2.720236220472441in"}
+    ![Application name](./media/odata_azure4.png)
 
- 
-
-1.  Provide a name that identifies the external application that you are
-    registering. Select **Web app / API** for an application that will
-    authenticate with a shared secret. In this context, the Sign-on URL
-    does not matter, so use localhost.
-
-![Machine generated alternative text: \* NameO PostmanClient Application
-type O Web app / API \* Sign-on URL O http://localhost
-](media/image4.png){width="1.8173917322834645in"
-height="1.3850448381452318in"}
-
-1.  Select the new application. Copy the Application ID, which you will
-    need later to request an AAD authentication token. Click **Required
-    permissions**.![Machine generated alternative text: PostmanClient X
-    Registered app Settings Essentials A Display name PostmanClient
-    Application type Web app / API Home page http://localhost Manifest
-    Application ID 2e7ca966-18a2-49aO-979d-Oa35a89320e6 Object ID
-    429bdff3-22e2-4d7e-962c-7d96aOfb65ae Managed application in local
-    directory PostmanClient All settings Settings p Filter settings
-    GENERAL Properties — Reply URLs Owners API ACCESS Required
-    permissions Keys TROUBLESHOOTING + SUPPORT Troubleshoot u New
-    support request ](media/image5.png){width="5.130435258092739in"
-    height="3.0093711723534557in"}
-
- 
+1.  Select the new application. Copy the Application ID, which you will need later to request an AAD authentication token. Click **Required permissions**.
+    
+    ![Required permissions](./media/odata_azure5.png)
 
 1.  Click **Add**, and then click **Select an API**.
 
-![Machine generated alternative text: Required permissions Add API Grant
-Permissions APPLICATION PERM'... X DELEGATED PERM'S... Windows Azure
-Active Directory Add API access Select an API Select permissions
-](media/image6.png){width="3.9478258967629047in"
-height="1.0880938320209974in"}
+    ![Select API](./media/odata_azure6.png)
 
 1.  Select **Microsoft Dynamics ERP**.
 
-![Machine generated alternative text: Select an API Search for other
-applications with Service Principal name Windows Azure Active Directory
-Microsoft Graph Microsoft Dynamics ERP Windows Azure Service Management
-API Office 365 Management APIs
-](media/image7.png){width="3.1304352580927386in"
-height="1.7020669291338584in"}
-
-1.  For permissions, at a minimum you must select the options listed
+1.  For permissions, at a minimum you must select the following options
     under Delegated Permissions:
 
-> - Access Dynamics AX Custom Service
->
-> - Access Dynamics AX data
->
-> - Access Dynamics AX online as organization users
+     - Access Dynamics AX Custom Service
+     - Access Dynamics AX data
+     - Access Dynamics AX online as organization users
 
-![](media/image8.png){width="2.8669149168853894in"
-height="1.5734700349956257in"}
-
- 
+    ![Delegated permissions](./media/odata_azure7.png)
 
 1.  Click **Done**.
 
-![](media/image9.png){width="3.721738845144357in"
-height="3.353581583552056in"}
+1.  Click **Keys**. In the blade that opens, provide a description, set the **Expires** value to **Never expires**, and then click **Save**.
 
- 
+    ![Expiry](./media/odata_azure9.png)
 
-1.  Click **Keys**. In the blade that opens, provide a description, set
-    the **Expires** value to **Never expires**, and then click **Save**.
+1.  When you have saved the new key, a value will be displayed in the  **Value** column.
 
-![Machine generated alternative text: Settings p Filter settings GENERAL
-Properties — Reply URLs Owners API ACCESS Required permissions Keys
-TROUBLESHOOTING + SUPPORT Troubleshoot u New support request X Keys x
-Discard DESCRIPTION Postman key/ EXPIRES Never expires VALUE Value will
-be displayed on save ](media/image10.png){width="5.660869422572178in"
-height="2.4260870516185475in"}
+    > [!IMPORTANT]
+    > Make sure you copy this value, because this is the only time that you will see it, and you need this secret key to complete your OAuth authentication and receive an AAD token.
 
- 
-
-1.  When you have saved the new key, a value will be displayed in the
-    **Value** column.
-
-> Important: Make sure you copy this value, because this is the only
-> time that you will see it, and you need this secret key to complete
-> your OAuth authentication and receive an AAD token.
-
-![](media/image11.png){width="5.360464785651794in"
-height="1.3401159230096238in"}
+    ![Secret key](./media/odata_azure10.png)
 
  
 
@@ -175,58 +105,26 @@ height="1.3401159230096238in"}
     administration-&gt;Setup-&gt;Azure Active Directory applications.
 
 2.  Click **New**.
+    ![Client ID](./media/odata_fo1.png)
 
-![Machine generated alternative text: Dynamics 365 v Finance and
-Operations Z Edit + New Delete OPTIONS P Click the edit button to make
-changes. Azure Active Directory applications p Filter V Client Id
-d71706-90fe-4952-9f7c- b6bc... Name Admin System administration &gt;
-Setup &gt; Azure Active Directory applications User ID Admin
-](media/image12.png){width="6.12in" height="2.0in"}
+3. Populate the fields for the new record. Use the Application ID you registered in AAD as the Client ID. Identify the application with a name and select an appropriate service account User ID, and then click **Save**.
 
+    In this example we have selected the Admin user, but it is a better practice to provision a dedicated service account with the correct permissions for the operations to be conducted.
+
+   ![Save client ID](./media/odata_fo2.png)
  
+We are now done with the prerequisite setup. After our external application retrieves an AAD authentication token, it should now be able
+to use the token in an authorization HTTP header to make subsequent service calls, for example, via OData or SOAP.
 
-Populate the fields for the new record. Use the Application ID you
-registered in AAD as the Client ID. Identify the application with a name
-and select an appropriate service account User ID, and then click
-**Save**.
+## Query Finance and Operations OData by using Postman
 
-In this example we have selected the Admin user, but it is a better
-practice to provision a dedicated service account with the correct
-permissions for the operations to be conducted..
-
-![Machine generated alternative text: Save -k New Delete OPTIONS P Azure
-Active Directory applications p Filter V Client Id
-2e7ca966-18a2-49aO-979d-Oa3... Name Postman User ID Admin
-](media/image13.png){width="4.35in" height="1.36in"}
-
- 
-
-We are now done with the prerequisite setup. After our external
-application retrieves an AAD authentication token, it should now be able
-to use the token in an authorization HTTP header to make subsequent
-service calls, for example, via OData or SOAP.
-
-Query Finance and Operations OData by using Postman
-
-Postman (<https://www.getpostman.com/postman>) is a commonly used tool
-for interacting with RESTful services (such as OData) in API development
-and testing scenarios. This procedure is not an endorsement of Postman,
-since other such tools are available, however we are using it to
-illustrate the concepts and messages involved in authenticating with AAD
-using OAuth, and then making OData requests to and receiving responses
-from Finance and Operations.
-
-**Creating an OData query in Postman**
+Postman (<https://www.getpostman.com/postman>) is a commonly used tool for interacting with RESTful services (such as OData) in API development and testing scenarios. This procedure is not an endorsement of Postman, since other such tools are available, however we are using it to illustrate the concepts and messages involved in authenticating with AAD using OAuth, and then making OData requests to and receiving responses from Finance and Operations.
 
 1.  Start Postman.
-
 2.  Click the gear icon and then **Manage environments** to create or
     update an environment.
-
-![Machine generated alternative text: SYNC OFF No Environment Sign In
-Manage Environments Shared Environments
-](media/image14.png){width="1.99in" height="0.87in"}
-
+   ![Gear with Manage environments](./media/postman1.png)
+   
 1.  Provide a name for your environment and then click **Bulk Edit**.
 
 ![Machine generated alternative text: MANAGE ENVIRONMENTS Manage
