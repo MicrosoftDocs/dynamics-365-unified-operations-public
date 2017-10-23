@@ -129,13 +129,13 @@ Postman (<https://www.getpostman.com/postman>) is a commonly used tool for inter
 
 1.  Enter key-value pairs as follows, one pair per line, with key and value separated by a colon, ":".
 
-  **Key**          **Value**
-  ---------------- ----------------------------------------------------------------------------------------
-  tenant\_id       The Azure tenant ID, as looked up during the prerequisite setup
-  client\_id       The AAD Application ID registered during the prerequisite setup
-  client\_secret   The secret key generated during application registration during the prerequisite setup
-  grant\_type      client\_credentials
-  resource         The base URL of the Finance and Operations instance
+    | Key           | Value                                                                                  |
+    |---------------|----------------------------------------------------------------------------------------|
+    | tenant_id     | The Azure tenant ID, as looked up during the prerequisite setup                        |
+    | client_id     | The AAD Application ID registered during the prerequisite setup                        |
+    | client_secret | The secret key generated during application registration during the prerequisite setup |
+    | grant_type    | client_credentials                                                                     |
+    | resource      | The base URL of the Finance and Operations instance                                    |
 
 1.  Verify that the key-value pairs can be parsed correctly by clicking the **Key-Value Edit** button and reviewing the results.
 
@@ -256,12 +256,12 @@ testing scenarios. This procedure is not an endorsement of SoapUI, since other s
 
 1. Use the plus button next to Parameters to add the following values:
 
-  Parameter        value
-  ---------------- ----------------------------------------------------
-  grant\_type      client\_credentials
-  client\_id       Application ID from AAD application registration
-  client\_secret   Secret key value from AAD application registration
-  resource         Finance and Operations instance URL
+    | Parameter     | Value                                              |
+    |---------------|----------------------------------------------------|
+    | grant_type    | client_credentials                                 |
+    | client_id     | Application ID from AAD application registration   |
+    | client_secret | Secret key value from AAD application registration |
+    | resource      | Finance and Operations instance URL                |
 
    ![Parameters](./media/soapui6.png)
 
