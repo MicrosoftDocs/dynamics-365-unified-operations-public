@@ -1,6 +1,5 @@
-
 ---
-# Enhanced product and category management
+# required metadata
 
 title: Product category management 
 description: This topic describes how merchandising managers can use Retail product categories to manage relationships between Retail product hierarchy and released product details. 
