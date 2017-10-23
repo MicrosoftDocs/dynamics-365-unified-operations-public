@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for Norway
 description: This topic is a deployment guide for the Retail localization for Norway.
 author: AlexChern0v
 manager: olegkl
-ms.date: 10/06/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,7 +19,7 @@ audience: Developer
 ms.reviewer: shylaw
 ms.search.scope: Retail
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: 
 ms.search.region: Norway
 ms.search.industry: Retail
 ms.author: v-alexec
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: App update 4
 ---
 # Deployment guidelines for cash registers for Norway
 
-This topic is a deployment guide that shows how to enable the Microsoft Dynamics 365 for Retail localization for Norway. The localization consists of several extensions of Retail components. For examples, the extensions let you print custom fields on receipts, register additional audit events and sales and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X/Z reports in local formats. For more information about the Retail localization for Norway, see [Cash registers for Norway](./emea-nor-cash-registers.md).
+This topic is a deployment guide that shows how to enable the Microsoft Dynamics 365 for Retail localization for Norway. The localization consists of several extensions of Retail components. For examples, the extensions let you print custom fields on receipts, register additional audit events and sales and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the Retail localization for Norway, see [Cash registers for Norway](./emea-nor-cash-registers.md).
 
 This sample is part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
