@@ -5,7 +5,7 @@ title: Inventory management home page
 description: This topic provides an overview of Inventory management.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 10/12/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -44,7 +44,7 @@ You can use Inventory management to perform the following tasks:
 
 ## Learning map
 
-The following learning map shows the major concepts and tasks that make up the framework of the Inventory management module. This learning map lists the Inventory management topics that have been written to help you learn about a concept or task in this module. Click on the learning map below to expand it and learn more about the topics that are part of Inventory management. This learning map will help you get started.
+The following learning map shows the major concepts and tasks that make up the framework of the Inventory management module. Click the learning map below to expand it. This learning map will help you get started.
 
 
 [![Inventory learning map](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
