@@ -36,9 +36,9 @@ Microsoft Dynamics 365 for Retail now supports external gift cards. Therefore, r
 
 The out-of-box Verifone Payment connector has also been updated so that it supports the functionality for external gift cards. The initial update enables integration with GiveX.
 
-The external gift card must be configured for both the headquarters and the POS. Before the gift card can be configured, the retailer must have an account with an external gift card service provider.
+The external gift card must be configured for both the Retail headquarters and the POS. Before the gift card can be configured, the retailer must have an account with an external gift card service provider.
 
-## Headquarters configuration
+## Retail headquarters configuration
 
 1. Search for **hardware profile** to open the **POS hardware profile** page.
 2. On the **POS hardware profile** page, follow these steps:
