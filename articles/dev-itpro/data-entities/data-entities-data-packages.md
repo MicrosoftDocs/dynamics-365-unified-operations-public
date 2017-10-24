@@ -213,7 +213,7 @@ Import is the process of pulling data into a system utilizing data entities. The
 
     ### System users entity
 
-    -   While importing the system users entity, you may receive a integrity violation error if there is a guest user in the exported package. The guest user must be deleted from the package in order for the entity to work.
+    -   While importing the system users entity, you may receive an integrity violation error if there is a guest user in the exported package. The guest user must be deleted from the package in order for the entity to work.
     -   If a record already exists in the **UserInfo** table (the Admin record would most likely always exist), the import will fail for those records but work for other records.
 
 
