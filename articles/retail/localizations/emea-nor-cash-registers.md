@@ -45,7 +45,7 @@ The following POS localization features that were previously implemented and mad
 - **Register the printing of receipt copies in the POS audit event log.** You can use the **Audit** parameter in the POS functionality profile to enable copies of receipts to be printed and other POS audit events to be registered. The audit events are registered in the channel database and in Retail Headquarters. You can view the audit events on the **Audit events** page.
 - **Prevent a copy of a receipt from being printed more than one time.** When the **Audit** parameter in the POS functionality profile is enabled, the **Allow printing receipt copies** POS permission controls whether copies of receipts can be printed. There is also an option that lets you prevent a copy of a receipt from being printed more than one time. 
 
-Additionally, the following POS feature that was previously implemented for Norway has now been made available to customers in all countries or regions:
+Additionally, the following POS feature was implemented for Norway but made available to customers in all countries or regions:
 
 - **Register additional events in the POS audit event log.** If the **Audit** parameter in the POS functionality profile is enabled, the following events are registered in the POS audit event log:
 
@@ -86,7 +86,7 @@ The signature is stored in the store database and the headquarters (HQ) database
 
 Receipts for Norway can include additional information that was implemented by using custom fields:
 
-- **Receipt title** – You can add a field to a receipt format layout to identify the type of receipt. For example, a sales receipt will include the text "Sales receipt."
+- **Receipt title** – You can add a field to a receipt format layout to identify the type of receipt. For example, a sales receipt will include the text "Sales receipt".
 - **Signed transaction sequential number** – The sequential number of a signed transaction can appear on the receipt to associate a printed receipt with a digital signature in the database.
 - **Receipt totals** – Custom fields for receipt totals exclude non-sales amounts from total transaction amounts. Non-sales amounts include amounts for the following operations:
 
@@ -97,7 +97,7 @@ Receipts for Norway can include additional information that was implemented by u
 
 #### X and Z reports
 
-The information that is included on X and Z reports is based on Norwegian requirements. For example, total cash sale amounts include only amounts for cash sales transactions and exclude issue gift card operations and prepayments. Total cash sales are also listed per item group and payment method. In addition, cumulative grand total sales amounts and grand total return amounts are maintained and printed.
+The information that is included on X and Z reports is based on Norwegian requirements. For example, **Total cash sales** amounts include only amounts for cash sales transactions and exclude issue gift card operations and prepayments. Total cash sales are also listed per item group and payment method. In addition, cumulative **Grand total sales** and **Grand total returns** amounts are maintained and printed.
 
 #### SAF-T Cash Register audit file
 
@@ -209,7 +209,7 @@ The SAF-T Cash Register configuration is available for download from Microsoft D
 
 After you import the configurations, on the **Retail parameters** page, on the **Electronic documents** tab, in the **SAF-T Cash register export format** field, select the **NO SAF-T Cash Register** format.
 
-You must also map required master data to predefined SAF-T standard codes. For more information, see the SAF-T Cash register documentation that is provided by the Norwegian Tax Administration. Before you create the mapping, the new **SAF-T Cash register code** field should set on the following pages:
+You must also map required master data to predefined SAF-T standard codes. For more information, see the SAF-T Cash register documentation that is provided by the Norwegian Tax Administration. To create the mapping, the new **SAF-T Cash register code** field should be set on the following pages:
 
 - Item groups
 - Payment methods
