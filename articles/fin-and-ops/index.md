@@ -73,7 +73,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 
 <h3><a href="../supply-chain/index.md">Supply chain management</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Cost management</a></p>
-<p><a href="../supply-chain/inventory/inventory-locations.md">Inventory management</a></p>
+<p><a href="../supply-chain/inventory/inventory-home-page.md">Inventory management</a></p>
 <p><a href="../supply-chain/master-planning/master-plans.md">Master planning</a></p>
 <p><a href="../supply-chain/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></p>
 <p><a href="../supply-chain/pim/product-information.md">Product information management</a></p>

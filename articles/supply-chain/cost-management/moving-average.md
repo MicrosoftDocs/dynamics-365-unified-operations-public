@@ -86,7 +86,7 @@ In this example, the moving average cost is adjusted for a product.
 In the **Settlements for voucher** page, you can see an adjustment of 4.00 posted to the Cost revaluation for moving average account.
 
 ## Moving average with production
-Moving average supports produced items. If you plan to use moving average in a production environment, the **Use estimated cost price** slider in the **Production control parameters** page should be selcted. This means that the cost price that is calculated during estimation is used instead of the actual BOM calculation cost price.
+Moving average supports produced items. If you plan to use moving average in a production environment, the **Use estimated cost price** slider in the **Production control parameters** page should be selected. This means that the cost price that is calculated during estimation is used instead of the actual BOM calculation cost price.
 
 ## Moving average with a backdated transaction
 Backdated transactions are assigned the current moving average cost, and the product’s physical quantity is updated, but the product’s moving average cost is not affected. In this moving average example, a backdated transaction for a moving average product is posted.

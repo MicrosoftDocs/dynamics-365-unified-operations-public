@@ -5,7 +5,7 @@ title: Deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 07/10/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -387,7 +387,7 @@ Federal tax statement for ICMS tax
 
 |                              |                                                                                                                       |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| **Reason for deprecation**       | This statement is not longer applicable in some Brazilian states.                                                     |
+| **Reason for deprecation**       | This statement is no longer applicable in some Brazilian states.                                                     |
 | **Replaced by another feature?** | No. Users can use Generic Electronic reporting tool to configure the statement if required under specific situations. |
 | **Modules affected**             | Fiscal books                                                                                                          |
 
@@ -397,7 +397,7 @@ Federal tax statement for ICMS tax
 
 |                              |                                                                             |
 |------------------------------|-----------------------------------------------------------------------------|
-| **Reason for deprecation**       | This method of contingency is not longer applicable in all Brazilian states |
+| **Reason for deprecation**       | This method of contingency is no longer applicable in all Brazilian states |
 | **Replaced by another feature?** | No                                                                          |
 | **Modules affected**             | Accounts receivable                                                         |
 
@@ -806,7 +806,7 @@ The virtual companies feature is no longer supported in Dynamics AX. The virtual
 <td><b>Reason for deprecation</b></td>
 <td><ul>
 <li>Virtual companies must be set up before data is stored in the tables. Retrofitting virtual companies onto an existing implementation is very difficult.</li>
-<li>Because there has been so much data normalization in the current version of Dynamics AX, it has become difficult to know what to add to the table collections. For example, it's difficult to know which tables to share. All the tables referenced from tables that are in a virtual company must also added. Because of table normalization, even simple master data that is spread across multiple tables must be part of the virtual company. Any mistake that is made here will cause functional issues.</li>
+<li>Because there has been so much data normalization in the current version of Dynamics AX, it has become difficult to know what to add to the table collections. For example, it's difficult to know which tables to share. All the tables referenced from tables that are in a virtual company must also be added. Because of table normalization, even simple master data that is spread across multiple tables must be part of the virtual company. Any mistake that is made here will cause functional issues.</li>
 <li>When a table is part of a virtual company, it loses information about the origin of the data, and only the virtual company is recorded.</li>
 </ul></td>
 </tr>

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Total cost allocation method
-description: This article provides guidelines for using total cost allocation (TCA). TCA is a method of calculating the cost between the main formula item for a batch order and the co-products that are defined for the formula.
+description: This topic provides guidelines for using total cost allocation (TCA). TCA is a method of calculating the cost between the main formula item for a batch order and the co-products that are defined for the formula.
 author: AndersGirke
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides guidelines for using total cost allocation (TCA). TCA is a method of calculating the cost between the main formula item for a batch order and the co-products that are defined for the formula.
+This topic provides guidelines for using total cost allocation (TCA). TCA is a method of calculating the cost between the main formula item for a batch order and the co-products that are defined for the formula.
 
 Total cost allocation (TCA) is a method of calculating the cost between the main formula item for a batch order and the co-products that are defined for the formula. This method is dynamic. It calculates the cost as a weighted average between the quantities that are reported as finished for the formula item and the co-products. When TCA is used, you don't have to review cost allocations for every batch order. If TCA isn't used, the formula calculation uses existing functionality.
 
@@ -45,7 +45,7 @@ Here are some of the guidelines for using TCA for co-products:
 -   If you set the **Total Cost Allocation** slider to **Yes** for a formula version, co-products must have a cost price that is more than 0 (zero). The value can be retrieved from the active cost version for the same site, or for the first site for a formula that isn't site-specific. This condition is validated when the formula is approved.
 
     -   You don’t need to manually enter cost allocation percentages for co-products. Instead, the system automatically creates the cost allocation percentage as the average of active cost prices of co-products. 
-    -   You don’t need to enter standard cost for non-standard cost items that are co-products. There are two types of costing versions in the system:standard cost and planned cost 
+    -   You don’t need to enter standard cost for non-standard cost items that are co-products. There are two types of costing versions in the system: standard cost and planned cost 
     -   If an item isn’t valuated by the standard cost valuation method, we recommend you use an active cost price in the planned cost version. This price is used for cost estimation, for example, BOM calculation, production cost estimation, and fallback price in the inventory valuation process. 
 
 -   If you set the **Total Cost Allocation** slider to **Yes** for the formula version and the following conditions are true, the method of cost allocation is **TCA**, and the percentage of cost allocation is unchanged:

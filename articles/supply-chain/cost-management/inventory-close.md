@@ -5,7 +5,7 @@ title: Inventory close
 description: As part of the process to settle issue transactions with receipt transactions, you can also choose to have the general ledger updated to reflect the adjustments that have been made.
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -56,7 +56,7 @@ When you create a purchase order from a sales order, the general ledger accounts
 
 After the update is completed, you can review the ledger voucher that is posted because of one of these tasks.
 
-1.  On the **Closing and adjustment**page, on the **Overview**tab, select the update to review.
+1.  On the **Closing and adjustment** page, on the **Overview** tab, select the update to review.
 2.  Click **Details**, and then select **Voucher**.
 
 ## Effects of the inventory close process on the general ledger

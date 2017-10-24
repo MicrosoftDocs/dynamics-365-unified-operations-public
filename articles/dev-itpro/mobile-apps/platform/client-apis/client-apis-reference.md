@@ -158,7 +158,7 @@ ms.dyn365.ops.version:
 
   * [all](modules/defer.md#all)
 
-  * [defer](modules/defer.md#defer)
+  * [defer](modules/defer.md)
 
   * [Deferred](interfaces/defer-ideferred.md)
 

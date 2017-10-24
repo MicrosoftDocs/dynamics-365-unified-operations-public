@@ -66,8 +66,8 @@ Below are the list fo configurations available in Customization.Settings file:
 -   **CustomVersion** – Specify the custom file version for all assemblies that are built by using the Retail SDK.
 -   **CustomName** – Specify the custom name for the assembly.
 -   **CustomDescription** – Specify the description for the assembly.
--   **CustomDescription** – Specify the publisher for the assembly.
--   **CustomDescription** – Specify the copyright for the assembly.
+-   **CustomPublisher** – Specify the publisher for the assembly.
+-   **CustomPublisherDisplayName** – Specify the copyright for the assembly.
 -   **SignAssembly** – Specify **True** if you want to sign the assembly during the build.
 -   **DelaySign** – Specify **True** if you want to delay signing of the assets during the build.
 -   **AssemblyOriginatorKeyFile** – Specify the strong name key to use to sign the assembly.

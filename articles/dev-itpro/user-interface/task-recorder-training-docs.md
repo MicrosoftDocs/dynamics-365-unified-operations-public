@@ -5,7 +5,7 @@ title: Create documentation or training using Task recordings
 description: This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
 author: josaw1
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -89,7 +89,7 @@ This is what the notes annotation looks like in the "bubble" in the task guide.
 
 [![screen4](./media/screen4.png)](./media/screen4.png)
 
--   **Info step**: These annotations are created by right clicking on a control or anywhere on a form &lt; **Task recorder** &lt; **Add info step. **Info steps appear as a numbered step at whatever point you insert it, even though no action was recorded in the UI. You can add a form-level info step or an info step associated with a control. When an info step is associated with a form, the task guide “bubble” will appear someplace on the form, with no pointer, when the task guide is played. When an info step is associated with a control, the task guide “bubble” will point to the control when the task guide is played. In the Help pane, an info step annotation will appear as a numbered step with whatever text you entered. Use info steps to prepare the user for the next steps, to describe steps that need to be done outside of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, or to refer to other recordings (although you cannot create hyperinks in annotations.).
+-   **Info step**: These annotations are created by right clicking on a control or anywhere on a form &lt; **Task recorder** &lt; **Add info step. **Info steps appear as a numbered step at whatever point you insert it, even though no action was recorded in the UI. You can add a form-level info step or an info step associated with a control. When an info step is associated with a form, the task guide “bubble” will appear someplace on the form, with no pointer, when the task guide is played. When an info step is associated with a control, the task guide “bubble” will point to the control when the task guide is played. In the Help pane, an info step annotation will appear as a numbered step with whatever text you entered. Use info steps to prepare the user for the next steps, to describe steps that need to be done outside of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, or to refer to other recordings (although you cannot create hyperlinks in annotations).
 
 **Determine how long to make your recording**
 
