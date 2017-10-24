@@ -43,7 +43,7 @@ The Retail proxy reduces this effort by auto generating the proxy for all the cu
 
 There two types of proxy to support cross platform:
 
-- Typescript proxy: The typescript proxy is used by the POS to access any Retail server APIs and CRT entities. If the POS is using Retail server then it needs the typescript proxy. Without the typescript proxy, POS will not be able to communicate with the Retail server for any operations/workflow.
+- Typescript proxy: The Typescript proxy is used by the POS to access any Retail server APIs and CRT entities. If the POS is using Retail server then it needs the typescript proxy. Without the typescript proxy, POS will not be able to communicate with the Retail server for any operations/workflow.
 - C# proxy: The C# proxy is used by POS when its offline (POS directly talks to CRT without Retail Server) and e-commerce. If you want your customization to work in offline (POS) and want your e-commerce client to access the RS APIs then you need to generate the C\# proxy.
 
 [!NOTE] The Typescript proxy and C# proxy are different and the steps to create them are different.
@@ -56,11 +56,11 @@ Use the CommerceProxyGenerator.exe from Retail SDK\\Reference folder to generate
 
 1. Copy these libraries to Retail SDK\\Reference folder before generating the proxy. You can find these libraries from **Retail SDK\\Reference\\...**.
 
-    1.  Microsoft.OData.Core.dll@ 6.11.0.0
-    2.  Microsoft.OData.Edm.dll@ 6.11.0.0
-    3.  Microsoft.Spatial.dll@ 6.11.0.0
-    4.  System.Web.Http.dll@ 5.2.2.0
-    5.  System.Web.OData.dll@ 5.5.1.0
+    - Microsoft.OData.Core.dll@ 6.11.0.0
+    - Microsoft.OData.Edm.dll@ 6.11.0.0
+    - Microsoft.Spatial.dll@ 6.11.0.0
+    - System.Web.Http.dll@ 5.2.2.0
+    - System.Web.OData.dll@ 5.5.1.0
 
 2. Copy the customized RS/CRT libraries to the **Retail SDK\\reference** folder.
 3. Open the command prompt in admin and navigate to the **...\\Retail SDK\\Reference** folder and run the below command to generate the proxy, the proxy files will be generated in the same folder.
