@@ -1,488 +1,11 @@
-**Order attributes**:
-
-The attribute framework was previously supported only in online orders, now its extended to support attributes in cash and carry transactions, customer orders, and call center orders. With this new feature or enhancement, you will be able to edit and set attributes values for orders directly in HQ , POS and CRT, to set the values in HQ for call center orders we added the HQ forms to edit and update the values but there is no out of the box UI available in POS to set the value, you can extend POS to add new UI or if you don’t need any UI and just want to set only business logic then you can do that in CRT directly. You will customize CRT only for business logic not for any binding pipeline like read, write to both HQ and channel it’s all automated. New attributes can be created using the HQ configurations, without any database changes. Previously you must create new table in HQ, channel DB and modify CRT to do this.
-
-**Why and when you should customer attributes:**
-
-If you want to add new fields to cash & carry transaction or customer or call center order and capture the information in POS or HQ then you can use this feature. Previously to add a new field to cash and carry transaction (Transaction Header or lines) or customer order in POS you must create new extension table in HQ, channel DB and modify CRT and POS code inline to handle different screens and operation like update, inset etc., also configure CDX to sync the data between channel and HQ. Now with the new functionality all this can be done through configuration without writing any code or creating custom extension tables in HQ or channel expect for the core business logic and POS UI. With the first version we are supporting only string attribute type but in the future, it will be extended to support other attribute type. If you want the data to come from master table and it involves complex search and core business logic in x++ then use extension properties.
-
-**How to configure order attributes in HQ:**
-
-**Define attribute types:**
-
-1.  Click **Product information management** &gt; **Setup** &gt; **Categories and** **Attributes** &gt; **Attribute types**.
-
-2.  In the **Attribute types** form, click New to add a new attribute type.
-
-3.  Enter a name for the attribute type.
-
-4.  On the **General** FastTab, in the **Type** field, select the type of data that can be entered for attributes that are assigned to this data type.
-
-5.  If the attribute type is **Decimal** or **Integer**, select a unit of measure.
-
-6.  To define a fixed list of values for the attribute type, select the **Fixed list** check box. Then, on the **Values** FastTab, add the list of values.
-
- **Note:** The **Fixed list** check box is available only for the **Text** attribute type.
-
-1.  To define a range of valid values for the attribute type, select the **Value range** check box. Then, on the **Range** FastTab, enter the valid range of values.
-
-**Define attributes**
-
-1.  Click **Product information management** &gt; **Setup** &gt; **Categories and** **Attributes** &gt; **Attributes**.
-
-2.  In the **Attributes** form, click New to add a new attribute.
-
-3.  Enter the name, friendly name, description, and any help text that you want to display to the user for the attribute.
-
-4.  In the **Attribute type** field, select the attribute type to assign to the attribute.
-
-5.  Depends on the attribute type, in the **Default value** field enter the value or range of values that is displayed by default when this attribute is assigned to a customer.
-
-6.  Click **Translate**, and then, in the **Text translation** form, enter the name, description, friendly name, and help text for the attribute in different languages.
-
-7.  Repeat steps 2 through 6 to add more attributes.
-
-**Define attribute group:**
-
-1.  Click **Product information management** &gt; **Setup** &gt; &gt; **Categories and** **Attributes** &gt; **Attribute groups**.
-
-2.  In the **Attribute groups** form, click New to add a new attribute group.
-
-3.  Enter the name, and On the **General** FastTab enter friendly name, description, and any help text for the attribute group.
-
-4.  Click the **Attributes** FastTab.
-
-5.  Click **Add** to add attributes to the attribute group. In the **Default value** field, you can enter a default value for the selected attributes.
-
-6.  Click **Translate** to open the **Text translation** form, where you can enter the description, friendly name, and help text for the attribute group in additional languages.
-
-**Link the attribute group to the channel:**
-
-1.  Click **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**
-
-2.  Select the channel for which you want to link the attributes in the channel form.
-
-3.  On the **Set up** tab, click the **Sales order attributes menu** under the **attribute group**.
-
-4.  In the **Sales order attribute groups** form Click New to link the attribute group to the channel.
-
-5.  In the **Name** field select the attribute group you want to link from the drop down.
-
-6.  In the **Apply attributes to** filed select any of the below options:
-
-     Header – The attributes will apply only to the transaction header.
-
-     Lines – The attribute will apply only to the transaction lines.
-
-     Default – The attribute will apply to both transaction header and lines.
-
-1.  Click Save.
-
-**Run the distribution jobs:**
-
-1.  Click **Retail** &gt; **Retail** **IT** &gt; **Distribution** **schedule**
-
-2.  Select the Products (1040) and click the Run now button in the action bar. On prompt click Yes, this required only if added any new Attributes, Attribute type or Attribute group.
-
-3.  Select the Channel configuration job (1070) and click the Run now button in the action bar. On prompt click Yes.
-
-**How to set attribute values for call center orders:**
-
-After you configure the order attributes to channel, go to customer service or All Sales order and create a new call center order.
-
-1.  After or during the creation of customer order, if you want to set attribute value for the transaction header then click the **Retail** tab in the Action bar and then click Retail Attributes menu.
-
-2.  In the Sales order attributes values form you can set the values for the attributes, the list of attributes shown in this form is based on the attribute group you configured for that channel.
-
-3.  Suppose if you want to set attribute values at the line level then Select the Lines view in the Sales order form and then select the line for which you want to set the attribute value and click Retail &gt; Retail attributes under the Sales order lines group.
-
-4.  Repeat the step 3 for all the sales lines for which you want to set the values.
-
-**How to view the attributes values for Cash and Carry transaction in HQ:**
-
-After you run the p-job and pulled your transaction to HQ, you can view the attribute values for the cash and carry transaction, currently there in no UI available in POS to view the order attributes, you must extend POS to show the order attribute values.
-
-**To view the attribute value for cash and carry transactions:**
-
-1.  Navigate to **Retail** &gt; **Inquires and reports** &gt; **Retail store transactions**
-
-2.  To view the transaction header attributes, click the Retail attributes button in the action bar.
-
-3.  To view the transaction lines attributes, click the **Transaction** &gt; **Sales transaction** button in the action bar.
-
-4.  In the **Sales transactions form** select any line and click the Retail attributes menu in the action bar to view the lines attributes.
-
-**Note:** Only the attributes configured part of your attribute group and linked to the channel will show up in the HQ UI.
-
-
-**How to extend attributes to do some business logic in CRT:**
-
-**Retail SDK sample:**
-
-We added in new sample in Retail SDK (Retail SDK\\SampleExtensions\\CommerceRuntime\\Extensions.TransactionAttributesSample) to set business logic for order attributes in CRT. In this sample we have written code only for the business logic and not for how to save or read the attributes because read and write for attribute is automated.
-
-The scenario we took was whenever you suspend a cart and set some attribute value and clear it when you resume the cart, so we added pre trigger for SuspendCartRequest and wrote the business logic. Similarly extend any trigger or override any request in CRT based on your scenario to set the logic.
-
-**Sample code:**
-
-/**
- * SAMPLE CODE NOTICE
- * 
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
- * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
- * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
- */
-
-1.  Create a new C\# portable class library project and copy paste the below code:
-```C#
-
-
-public class CustomSuspendCartTrigger : IRequestTrigger
-
-{
-// summary
-// Gets the list of supported request types.
-
-// summary
-
-public IEnumerable<Type> SupportedRequestTypes
-
-{
-
-  get
-  {
-    return new [ ]
-   {
-  typeof(SuspendCartRequest)
-  };
-  }
-}
-
-// summary
-
-// Pre trigger code.
-
-// summary
-
-// param name="request" The request param
-
-public void OnExecuting(Request request)
-
-{
-
-  ThrowIf.Null(request, "request");
-
-  Type requestedType = request.GetType();
-
-  if (requestedType == typeof(SuspendCartRequest))
-
-  {
-
- SuspendCartRequest suspendCartRequest = request as SuspendCartRequest;
-
-// Get the cart.
-
- var getCartServiceRequest = new GetCartServiceRequest(new CartSearchCriteria(suspendCartRequest.CartId), QueryResultSettings.SingleRecord);
-
-Cart cart = request.RequestContext.Execute<GetCartServiceResponse>(getCartServiceRequest).Carts.Single();
-
-// Update the transaction header attribute for customer order.
-
-if (cart.CartType == CartType.CustomerOrder)
-
-{
-
- bool cartUpdated = CustomCartHelper.CreateUpdateTransactionHeaderAttribute(cart, reserveNow: false, updateAttribute: true);
-
-if (cartUpdated)
-
-{
-
-// Save the cart after updating the header attribute.
-
-var saveCartRequest = new SaveCartRequest(cart);
-
- request.RequestContext.Execute<SaveCartResponse>(saveCartRequest);
-
-} } } }
-
-// summary
-
-// Post trigger code.
-
-// summary
-
-// param name="request" The request param
-
-// param name="response" The response param
-
-public void OnExecuted(Request request, Response response)
-
-{
-
-}
-```
-**Note:** The full sample code is available in Retail SDK:
-
-Retail SDK\\SampleExtensions\\CommerceRuntime\\Extensions.TransactionAttributesSample
-
-**How to extend attributes to do some business logic in POS:**
-
-We added in new sample in Retail SDK (Retail SDK\\Code\\POS\\Extensions\\B2BSample) to set business logic for order attributes in POS. In this sample we have written code only for the business logic and not for how to save or read attribute values because read and write for attribute is automated. You can set values for attributes either in CRT or POS based on your scenario if your values are based on customer input then do it in client and if there is some business logic involved then do in CRT.
-
-The scenario we took was whenever you create any B2B order and want to set the B2B attribute value Yes or No based on customer input. We extended the PreEndTransactionTrigger in POS to set the values. Similarly, for your scenario you can extend any POS trigger or override the request accordingly.
-
-1.  Open ModernPOS.Sln/ CloudPos.sln from Retail SDK.
-
-2.  Create a new extension folder under POS.Extension project in Retail SDK.
-
-3.  Add a new manifest.json file in the new extension folder you created.
-
-4.  Copy paste the below code:
-```typescript
- {
-
- "$schema": "..manifestSchema.json",
-
- "name": "Pos_Extensibility_B2BSample",
-
- "publisher": "Microsoft",
-
- "version": "7.2.0",
-
- "minimumPosVersion": "7.2.0.0",
-
- "components": {
-
- "resources": {
-
- "supportedUICultures": [ "en-US" ],
-
- "fallbackUICulture": "en-US",
-
- "culturesDirectoryPath": "Resources/Strings",
-
- "stringResourcesFileName": "resources.resjson"
-
- },
-
- "extend": {
-
- "triggers": [
-
- {
-
- "triggerType": "PreEndTransaction",
-
- "modulePath": "TriggerHandlers/PreEndTransactionTrigger"
-
- }  ]
-
- } } }
-```
-1.  Create a new ts file to implement the PreEndTransactionTrigger and copy paste the below code:
-
-```typescript
-/**
-
- * Executes the trigger functionality.
-
- * @param {Triggers.IPreEndTransactionTriggerOptions} options The options provided to the trigger.
-
- */
-
- public execute(options: Triggers.IPreEndTransactionTriggerOptions): Promise&lt;ClientEntities.ICancelable {
-
- console.log("Executing PreEndTransactionTrigger with options " + JSON.stringify(options) + ".");
-
- let currentCart: ProxyEntities.Cart;
-
- return this.context.runtime.executeAsync<GetCurrentCartClientResponse>(new GetCurrentCartClientRequest())
-
- .then((getCurrentCartClientResponse: ClientEntities.ICancelableDataResult<GetCurrentCartClientResponse>):
-
- Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>> => {
-
- currentCart = getCurrentCartClientResponse.data.result;
-
- // Gets the current customer.
-
- let result: Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>>;
-
- if (!ObjectExtensions.isNullOrUndefined(currentCart) && !ObjectExtensions.isNullOrUndefined(currentCart.CustomerId)) {
-
- let getCurrentCustomerClientRequest: GetCustomerClientRequest&lt;GetCustomerClientResponse =
-
- new GetCustomerClientRequest(currentCart.CustomerId);
-
- result = this.context.runtime.executeAsync<GetCustomerClientResponse>(getCurrentCustomerClientRequest);
-
- } else {
-
- result = Promise.resolve({ canceled: false, data: new GetCustomerClientResponse(null) });
-
- }
-
- return result;
-
- })
-
- .then((getCurrentCustomerClientResponse: ClientEntities.ICancelableDataResult<GetCustomerClientResponse>):
-
- Promise<ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>> => {
-
- let currentCustomer: ProxyEntities.Customer = getCurrentCustomerClientResponse.data.result;
-
- // If the cart is a customer order with a B2B customer, then we display a dialog to determine if the order should be B2B.
-
- let result: Promise<ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>>;
-
- if (!ObjectExtensions.isNullOrUndefined(currentCart)
-
- && currentCart.CustomerOrderModeValue === ProxyEntities.CustomerOrderMode.CustomerOrderCreateOrEdit
-
- && !ObjectExtensions.isNullOrUndefined(currentCustomer)
-
- && this.isCustomerB2B(currentCustomer)) {
-
- let yesButton: ClientEntities.Dialogs.IDialogResultButton = {
-
- id: PreEndTransactionTrigger.DIALOG_YES_BUTTON_ID,
-
- label: this.context.resources.getString("string_0"),  "Yes"
-
- result: PreEndTransactionTrigger.DIALOG_RESULT_YES
-
- };
-
- let noButton: ClientEntities.Dialogs.IDialogResultButton = {
-
- id: PreEndTransactionTrigger.DIALOG_NO_BUTTON_ID,
-
- label: this.context.resources.getString("string_1"),  "No"
-
- result: PreEndTransactionTrigger.DIALOG_RESULT_NO
-
- };
-
- let showMessageDialogClientRequestOptions: ClientEntities.Dialogs.IMessageDialogOptions = {
-
- title: this.context.resources.getString("string_2"),  "B2B Order"
-
- subTitle: StringExtensions.EMPTY,
-
- message: this.context.resources.getString("string_3"),  "Do you want to mark this order as a B2B order?"
-
- button1: yesButton,
-
- button2: noButton
-
- };
-
- let showMessageDialogClientRequest: ShowMessageDialogClientRequest<ShowMessageDialogClientResponse> =
-
- new ShowMessageDialogClientRequest(showMessageDialogClientRequestOptions);
-
- result = this.context.runtime.executeAsync<ShowMessageDialogClientResponse>(showMessageDialogClientRequest);
-
- } else {
-
- result = Promise.resolve({ canceled: false, data: new ShowMessageDialogClientResponse(null) });
-
- }
-
- return result;
-
- })
-
- .then((showMessageDialogClientResponse: ClientEntities.ICancelableDataResult&lt;ShowMessageDialogClientResponse):
-
- Promise<ClientEntities.ICancelableDataResult<SaveAttributesOnCartClientResponse>> => {
-
- // Save the B2B attribute value depending on the dialog result.
-
- let messageDialogResult: ClientEntities.Dialogs.IMessageDialogResult = showMessageDialogClientResponse.data.result;
-
- let result: Promise<ClientEntities.ICancelableDataResult<SaveAttributesOnCartClientResponse>>;
-
- if (!ObjectExtensions.isNullOrUndefined(messageDialogResult)) {
-
- let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
-
- attributeValue.Name = PreEndTransactionTrigger.B2B_CART_ATTRIBUTE_NAME;
-
- attributeValue.TextValue = messageDialogResult.dialogResult === PreEndTransactionTrigger.DIALOG_RESULT_YES?
-
- PreEndTransactionTrigger.B2B_ATTRIBUTE_VALUE_TRUE : PreEndTransactionTrigger.B2B_ATTRIBUTE_VALUE_FALSE;
-
- let attributeValues: ProxyEntities.AttributeValueBase[] = [attributeValue];
-
- let saveAttributesOnCartRequest: SaveAttributesOnCartClientRequest<SaveAttributesOnCartClientResponse> =
-
- new SaveAttributesOnCartClientRequest(attributeValues);
-
- result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
-
- } else {
-
- result = Promise.resolve({ canceled: false, data: new SaveAttributesOnCartClientResponse(null) });
-
- }
-
- return result;
-
- });
-
- }
-
- /**
-
- * Returns whether or not the given customer is a B2B customer.
-
- * @param {ProxyEntities.Customer} customer The customer.
-
- * @returns {boolean} Whether or not the given customer is a B2B customer.
-
- */
-
- private isCustomerB2B(customer: ProxyEntities.Customer): boolean {
-
- let isB2B: boolean = false;
-
- if (!ObjectExtensions.isNullOrUndefined(customer.Attributes)) {
-
- for (let i: number = 0; i < customer.Attributes.length; i++) {
-
- let currentAttribute: ProxyEntities.CustomerAttribute = customer.Attributes[i];
-
- if (currentAttribute.Name === PreEndTransactionTrigger.B2B_CUSTOMER_ATTRIBUTE_NAME) {
-
- if (!ObjectExtensions.isNullOrUndefined(currentAttribute.AttributeValue.BooleanValue)) {
-
- isB2B = currentAttribute.AttributeValue.BooleanValue;
-
- }
-
- break;
-
- }  }  }
-
- return isB2B;
-
- } } } }
-```
-**Note:** The full sample code is available in Retail SDK: Retail SDK\\POS\\Extensions\\B2BSample
-
-**Note:** Only the configured attributes will show up in the HQ UI, even if you set/add some attributes and attributes values in the code but it’s not part of the attribute group you linked to the channel then it will not show up in the HQ UI.
 ---
 # required metadata
 
 title: Order attributes
-description: 
+description:  
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/20/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -501,10 +24,299 @@ ms.custom: 83892
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mumani
-ms.search.validFrom: 2017-10-20
-ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
+ms.search.validFrom: 2017-10-24
+ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
 # Order attributes
+
+The attribute framework was previously supported only in online orders, now its extended to support attributes in cash and carry transactions, customer orders, and call center orders. With this new feature or enhancement, you will be able to edit and set attributes values for orders directly in HQ , POS and CRT, to set the values in HQ for call center orders we added the HQ forms to edit and update the values but there is no out of the box UI available in POS to set the value, you can extend POS to add new UI or if you don’t need any UI and just want to set only business logic then you can do that in CRT directly. You will customize CRT only for business logic not for any binding pipeline like read, write to both HQ and channel it’s all automated. New attributes can be created using the HQ configurations, without any database changes. Previously you must create new table in HQ, channel DB and modify CRT to do this.
+
+## Why and when you should customer attributes
+
+If you want to add new fields to cash & carry transaction or customer or call center order and capture the information in POS or HQ then you can use this feature. Previously to add a new field to cash and carry transaction (Transaction Header or lines) or customer order in POS you must create new extension table in HQ, channel DB and modify CRT and POS code inline to handle different screens and operation like update, inset etc., also configure CDX to sync the data between channel and HQ. Now with the new functionality all this can be done through configuration without writing any code or creating custom extension tables in HQ or channel expect for the core business logic and POS UI. With the first version we are supporting only string attribute type but in the future, it will be extended to support other attribute type. If you want the data to come from master table and it involves complex search and core business logic in x++ then use extension properties.
+
+## Define attribute types
+
+First you need to define the attribute types and assign valid ranges to them.
+
+1. Click **Product information management** > **Setup** > **Categories and Attributes** > **Attribute types**.
+2. In the **Attribute types** form, click **New** to add a new attribute type.
+3. Enter a name for the attribute type.
+4. On the **General** FastTab, in the **Type** field, select the type of data that can be entered for attributes that are assigned to this data type.
+5. If the attribute type is **Decimal** or **Integer**, select a unit of measure.
+6. To define a fixed list of values for the attribute type, select the **Fixed list** check box. Then, on the **Values** FastTab, add the list of values.
+    [!NOTE] The **Fixed list** check box is available only for the **Text** attribute type.
+7. To define a range of valid values for the attribute type, select the **Value range** check box. Then, on the **Range** FastTab, enter the valid range of values.
+
+## Define the attributes 
+
+Next you define the attributes. For each attribute you want to define, follow these steps:
+
+1.  Click **Product information management** > **Setup** > **Categories and** **Attributes** > **Attributes**.
+2.  In the **Attributes** form, click New to add a new attribute.
+3.  Enter the name, friendly name, description, and any help text that you want to display to the user for the attribute.
+4.  In the **Attribute type** field, select the attribute type to assign to the attribute.
+5.  Depending on the attribute type, in the **Default value** field enter the value or range of values that is displayed by default when this attribute is assigned to a customer.
+6.  Click **Translate**. In the **Text translation** form, enter the name, description, friendly name, and help text for the attribute in different languages.
+
+
+## Define attribute groups
+
+1.  Click **Product information management** &gt; **Setup** &gt; &gt; **Categories and** **Attributes** &gt; **Attribute groups**.
+2.  In the **Attribute groups** form, click New to add a new attribute group.
+3.  Enter the name, and On the **General** FastTab enter friendly name, description, and any help text for the attribute group.
+4.  Click the **Attributes** FastTab.
+5.  Click **Add** to add attributes to the attribute group. In the **Default value** field, you can enter a default value for the selected attributes.
+6.  Click **Translate** to open the **Text translation** form, where you can enter the description, friendly name, and help text for the attribute group in additional languages.
+
+## Link the attribute group to the channel
+
+1.  Click **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**
+2.  Select the channel for which you want to link the attributes in the channel form.
+3.  On the **Set up** tab, click the **Sales order attributes menu** under the **attribute group**.
+4.  In the **Sales order attribute groups** form Click New to link the attribute group to the channel.
+5.  In the **Name** field select the attribute group you want to link from the drop down.
+6.  In the **Apply attributes to** filed select any of the below options:
+
+     Header – The attributes will apply only to the transaction header.
+
+     Lines – The attribute will apply only to the transaction lines.
+
+     Default – The attribute will apply to both transaction header and lines.
+
+1.  Click Save.
+
+## Run the distribution jobs
+
+1.  Click **Retail** &gt; **Retail** **IT** &gt; **Distribution** **schedule**
+2.  Select the Products (1040) and click the Run now button in the action bar. On prompt click Yes, this required only if added any new Attributes, Attribute type or Attribute group.
+3.  Select the Channel configuration job (1070) and click the Run now button in the action bar. On prompt click Yes.
+
+## Set attribute values for call center orders
+
+After you configure the order attributes to channel, go to customer service or All Sales order and create a new call center order.
+
+1.  After or during the creation of customer order, if you want to set attribute value for the transaction header then click the **Retail** tab in the Action bar and then click Retail Attributes menu.
+2.  In the Sales order attributes values form you can set the values for the attributes, the list of attributes shown in this form is based on the attribute group you configured for that channel.
+3.  Suppose if you want to set attribute values at the line level then Select the Lines view in the Sales order form and then select the line for which you want to set the attribute value and click Retail &gt; Retail attributes under the Sales order lines group.
+4.  Repeat the step 3 for all the sales lines for which you want to set the values.
+
+## View the attributes values for Cash and Carry transaction in HQ
+
+After you run the p-job and pulled your transaction to HQ, you can view the attribute values for the cash and carry transaction, currently there in no UI available in POS to view the order attributes, you must extend POS to show the order attribute values.
+
+1.  Navigate to **Retail** &gt; **Inquires and reports** &gt; **Retail store transactions**
+2.  To view the transaction header attributes, click the Retail attributes button in the action bar.
+3.  To view the transaction lines attributes, click the **Transaction** &gt; **Sales transaction** button in the action bar.
+4.  In the **Sales transactions form** select any line and click the Retail attributes menu in the action bar to view the lines attributes.
+
+**Note:** Only the attributes configured part of your attribute group and linked to the channel will show up in the HQ UI.
+
+
+Extend attributes to do some business logic in CRT
+
+**Retail SDK sample:**
+
+We added in new sample in Retail SDK (Retail SDK\\SampleExtensions\\CommerceRuntime\\Extensions.TransactionAttributesSample) to set business logic for order attributes in CRT. In this sample we have written code only for the business logic and not for how to save or read the attributes because read and write for attribute is automated.
+
+The scenario we took was whenever you suspend a cart and set some attribute value and clear it when you resume the cart, so we added pre trigger for SuspendCartRequest and wrote the business logic. Similarly extend any trigger or override any request in CRT based on your scenario to set the logic.
+
+
+1.  Create a new C\# portable class library project and copy paste the below code:
+
+```C#
+public class CustomSuspendCartTrigger : IRequestTrigger
+{
+    // summary
+    // Gets the list of supported request types.
+    public IEnumerable<Type> SupportedRequestTypes
+    {
+        get
+        {
+            return new [ ] { typeof(SuspendCartRequest)};
+        }
+     }
+
+    // Pre trigger code.
+
+    // summary
+    // param name="request" The request param
+    public void OnExecuting(Request request)
+    {
+        ThrowIf.Null(request, "request");
+        Type requestedType = request.GetType();
+        if (requestedType == typeof(SuspendCartRequest))
+        {
+            SuspendCartRequest suspendCartRequest = request as SuspendCartRequest;
+            // Get the cart.
+            var getCartServiceRequest = new GetCartServiceRequest(
+                new CartSearchCriteria(suspendCartRequest.CartId), QueryResultSettings.SingleRecord);
+            Cart cart = request.RequestContext.Execute<GetCartServiceResponse>(getCartServiceRequest).Carts.Single();
+            
+            // Update the transaction header attribute for customer order.
+            if (cart.CartType == CartType.CustomerOrder)
+            {
+                bool cartUpdated = CustomCartHelper.CreateUpdateTransactionHeaderAttribute(
+                    cart, reserveNow: false, updateAttribute: true);
+                if (cartUpdated)
+                {
+                    // Save the cart after updating the header attribute.
+                    var saveCartRequest = new SaveCartRequest(cart);
+                    request.RequestContext.Execute<SaveCartResponse>(saveCartRequest);
+                } 
+            } 
+        } 
+    }
+
+    // Post trigger code.
+
+    // summary
+    // param name="request" The request param
+
+    // param name="response" The response param
+    public void OnExecuted(Request request, Response response)
+    {
+    }
+```
+
+The full sample code is located in the Retail SDK at **Retail SDK\\SampleExtensions\\CommerceRuntime\\Extensions.TransactionAttributesSample**.
+
+## Extend attributes to do some business logic in POS
+
+We added a new sample to the Retail SDK (Retail SDK\\Code\\POS\\Extensions\\B2BSample) to set business logic for order attributes in POS. In this sample we have written code only for the business logic and not for how to save or read attribute values because read and write for attribute is automated. You can set values for attributes either in CRT or POS based on your scenario if your values are based on customer input then do it in client and if there is some business logic involved then do in CRT.
+
+The scenario we took was whenever you create any B2B order and want to set the B2B attribute value Yes or No based on customer input. We extended the PreEndTransactionTrigger in POS to set the values. Similarly, for your scenario you can extend any POS trigger or override the request accordingly.
+
+1.  Open ModernPOS.Sln/ CloudPos.sln from Retail SDK.
+2.  Create a new extension folder under POS.Extension project in Retail SDK.
+3.  Add a new manifest.json file in the new extension folder you created.
+4.  Copy paste the below code:
+```typescript
+{
+    "$schema": "..manifestSchema.json",
+    "name": "Pos_Extensibility_B2BSample",
+    "publisher": "Microsoft",
+    "version": "7.2.0",
+    "minimumPosVersion": "7.2.0.0",
+    "components": {
+    "resources": {
+    "supportedUICultures": [ "en-US" ],
+    "fallbackUICulture": "en-US",
+    "culturesDirectoryPath": "Resources/Strings",
+    "stringResourcesFileName": "resources.resjson" 
+},
+
+"extend": {
+    "triggers": [
+    {
+        "triggerType": "PreEndTransaction",
+        "modulePath": "TriggerHandlers/PreEndTransactionTrigger"
+    }  
+    ]
+} } }
+```
+1.  Create a new ts file to implement the PreEndTransactionTrigger and copy paste the below code:
+
+```typescript
+/**
+ * Executes the trigger functionality.
+ * @param {Triggers.IPreEndTransactionTriggerOptions} options The options provided to the trigger.
+ */
+
+ public execute(options: Triggers.IPreEndTransactionTriggerOptions): Promise&lt;ClientEntities.ICancelable {
+ console.log("Executing PreEndTransactionTrigger with options " + JSON.stringify(options) + ".");
+ let currentCart: ProxyEntities.Cart;
+ return this.context.runtime.executeAsync<GetCurrentCartClientResponse>(new GetCurrentCartClientRequest())
+ .then((getCurrentCartClientResponse: ClientEntities.ICancelableDataResult<GetCurrentCartClientResponse>):
+ Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>> => {
+ currentCart = getCurrentCartClientResponse.data.result;
+ // Gets the current customer.
+ let result: Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>>;
+ if (!ObjectExtensions.isNullOrUndefined(currentCart) && !ObjectExtensions.isNullOrUndefined(currentCart.CustomerId)) {
+ let getCurrentCustomerClientRequest: GetCustomerClientRequest&lt;GetCustomerClientResponse =
+ new GetCustomerClientRequest(currentCart.CustomerId);
+ result = this.context.runtime.executeAsync<GetCustomerClientResponse>(getCurrentCustomerClientRequest);
+ } else {
+ result = Promise.resolve({ canceled: false, data: new GetCustomerClientResponse(null) });
+ }
+ return result;
+ })
+ .then((getCurrentCustomerClientResponse: ClientEntities.ICancelableDataResult<GetCustomerClientResponse>):
+ Promise<ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>> => {
+ let currentCustomer: ProxyEntities.Customer = getCurrentCustomerClientResponse.data.result;
+ // If the cart is a customer order with a B2B customer, then we display a dialog to determine if the order should be B2B.
+ let result: Promise<ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>>;
+ if (!ObjectExtensions.isNullOrUndefined(currentCart)
+ && currentCart.CustomerOrderModeValue === ProxyEntities.CustomerOrderMode.CustomerOrderCreateOrEdit
+ && !ObjectExtensions.isNullOrUndefined(currentCustomer)
+ && this.isCustomerB2B(currentCustomer)) {
+ let yesButton: ClientEntities.Dialogs.IDialogResultButton = {
+ id: PreEndTransactionTrigger.DIALOG_YES_BUTTON_ID,
+ label: this.context.resources.getString("string_0"),  "Yes"
+ result: PreEndTransactionTrigger.DIALOG_RESULT_YES
+ };
+ let noButton: ClientEntities.Dialogs.IDialogResultButton = {
+ id: PreEndTransactionTrigger.DIALOG_NO_BUTTON_ID,
+ label: this.context.resources.getString("string_1"),  "No"
+ result: PreEndTransactionTrigger.DIALOG_RESULT_NO
+ };
+ let showMessageDialogClientRequestOptions: ClientEntities.Dialogs.IMessageDialogOptions = {
+ title: this.context.resources.getString("string_2"),  "B2B Order"
+ subTitle: StringExtensions.EMPTY,
+ message: this.context.resources.getString("string_3"),  "Do you want to mark this order as a B2B order?"
+ button1: yesButton,
+ button2: noButton
+ };
+ let showMessageDialogClientRequest: ShowMessageDialogClientRequest<ShowMessageDialogClientResponse> =
+ new ShowMessageDialogClientRequest(showMessageDialogClientRequestOptions);
+ result = this.context.runtime.executeAsync<ShowMessageDialogClientResponse>(showMessageDialogClientRequest);
+ } else {
+ result = Promise.resolve({ canceled: false, data: new ShowMessageDialogClientResponse(null) });
+ }
+ return result;
+ })
+ .then((showMessageDialogClientResponse: ClientEntities.ICancelableDataResult&lt;ShowMessageDialogClientResponse):
+ Promise<ClientEntities.ICancelableDataResult<SaveAttributesOnCartClientResponse>> => {
+ // Save the B2B attribute value depending on the dialog result.
+ let messageDialogResult: ClientEntities.Dialogs.IMessageDialogResult = showMessageDialogClientResponse.data.result;
+ let result: Promise<ClientEntities.ICancelableDataResult<SaveAttributesOnCartClientResponse>>;
+ if (!ObjectExtensions.isNullOrUndefined(messageDialogResult)) {
+ let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
+ attributeValue.Name = PreEndTransactionTrigger.B2B_CART_ATTRIBUTE_NAME;
+ attributeValue.TextValue = messageDialogResult.dialogResult === PreEndTransactionTrigger.DIALOG_RESULT_YES?
+ PreEndTransactionTrigger.B2B_ATTRIBUTE_VALUE_TRUE : PreEndTransactionTrigger.B2B_ATTRIBUTE_VALUE_FALSE;
+ let attributeValues: ProxyEntities.AttributeValueBase[] = [attributeValue];
+ let saveAttributesOnCartRequest: SaveAttributesOnCartClientRequest<SaveAttributesOnCartClientResponse> =
+ new SaveAttributesOnCartClientRequest(attributeValues);
+ result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
+ } else {
+ result = Promise.resolve({ canceled: false, data: new SaveAttributesOnCartClientResponse(null) });
+ }
+ return result;
+ });
+ }
+ /**
+ * Returns whether or not the given customer is a B2B customer.
+ * @param {ProxyEntities.Customer} customer The customer.
+ * @returns {boolean} Whether or not the given customer is a B2B customer.
+ */
+ private isCustomerB2B(customer: ProxyEntities.Customer): boolean {
+ let isB2B: boolean = false;
+ if (!ObjectExtensions.isNullOrUndefined(customer.Attributes)) {
+ for (let i: number = 0; i < customer.Attributes.length; i++) {
+ let currentAttribute: ProxyEntities.CustomerAttribute = customer.Attributes[i];
+ if (currentAttribute.Name === PreEndTransactionTrigger.B2B_CUSTOMER_ATTRIBUTE_NAME) {
+ if (!ObjectExtensions.isNullOrUndefined(currentAttribute.AttributeValue.BooleanValue)) {
+ isB2B = currentAttribute.AttributeValue.BooleanValue;
+ }
+ break;
+ }  }  }
+ return isB2B;
+ } } } }
+```
+**Note:** The full sample code is available in Retail SDK: Retail SDK\\POS\\Extensions\\B2BSample
+
+**Note:** Only the configured attributes will show up in the HQ UI, even if you set/add some attributes and attributes values in the code but it’s not part of the attribute group you linked to the channel then it will not show up in the HQ UI.
 
