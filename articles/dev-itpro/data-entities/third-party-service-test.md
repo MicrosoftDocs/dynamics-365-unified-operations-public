@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Using third party service testing utilities with Finance and Operations
-description: This article describes how to set up third party utilities to test services for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+title: Use third-party service testing utilities with Finance and Operations
+description: This topic describes how to set up third-party utilities to test services for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 10/20/2017
@@ -30,243 +30,172 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Using third party service testing utilities with Microsoft Dynamics 365 for Finance and Operations
+# Use third-party service testing utilities with Microsoft Dynamics 365 for Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-Although Microsoft provides sample code for consuming Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, services at
-<https://github.com/Microsoft/Dynamics-AX-Integration>, there are many scenarios in which the other endpoint in an integration may not be using a Microsoft stack. Even when the other end-point is, for example, using the OData client code Microsoft makes available, it can still be useful to:
+At <https://github.com/Microsoft/Dynamics-AX-Integration>, Microsoft provides sample code for consuming services for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. However, there are many scenarios where the other endpoint in an integration might not use a Microsoft stack. Even when the other endpoint does use, for example, the Open Data Protocol (OData) client code that Microsoft makes available, you might find it useful to perform the following actions:
 
--   Explore and analyze how an interaction’s messages are constructed
--   Test the response of a service to a well-known request
--   Determine what exceptions will look like to the other end-point
+- Explore and analyze how an interaction's messages are constructed.
+- Test the response of a service to a well-known request.
+- Determine how exceptions will appear to the other endpoint.
 
-There are many commonly used tools available which help meet the goals listed above. This article is not an endorsement of any tool. We provide examples using some common software utilities, but the principles should be broadly applicable to similar tools.
+Many frequently used tools that will help you perform these actions are available. This topic isn't an endorsement of any tool. Although it provides examples that use some frequently used software utilities, the principles should broadly apply to other, similar tools.
 
 ## Prerequisites
 
-Before you can test a service using an external application, you must register the application in Microsoft Azure, and in Finance and Operations.
+Before you can test a service by using an external application, you must register the application in Microsoft Azure, and in Finance and Operations.
 
-### Register your external application in Azure
+### Register the external application in Azure
 
-1.  Navigate to the Azure Portal. You can navigate there from the appropriate project in Lifecycle Services (LCS):
+1. From the appropriate project in Microsoft Dynamics Lifecycle Services (LCS), open Azure portal.
 
-    ![Azure portal](./media/odata_azure1.png)
+    ![Open Azure portal](./media/odata_azure1.png)
 
-2.  On the **Azure Active Directory** (AAD) properties tab, note the tenant ID, listed in the **Directory ID** field. You will need it   later for retrieving an AAD authentication token.
+2. In Azure portal, on the **Azure Active Directory** tab, select **Properties**, and make a note of the tenant ID in the **Directory ID** field. You will require the tenant ID later to retrieve an Azure Active Directory (Azure AD) authentication token.
+3. On the **Azure Active Directory** tab, select **App registrations**, and then select **New application registration**.
+4. Enter a name that identifies the external application that you're registering. For an application that will authenticate by using a shared secret, select **Web app / API**. In this context, the sign-on URL doesn't matter. Therefore, use **localhost**.
+5. Select the new application, and copy the application ID. You will require the application ID later to request an Azure AD authentication token. Select **Required permissions**.
+6. Select **Add**, and then select **Select an API**.
+7. Select **Microsoft Dynamics ERP**.
+8. Under **Delegated permissions**, you must select, at a minimum, the following options:
 
-    ![Directory ID](./media/odata_azure2.png)
-    
-3.  Click the **App registrations** tab, then click **New application registration**.
+    - Access Dynamics AX Custom Service
+    - Access Dynamics AX data
+    - Access Dynamics AX online as organization users
 
-    ![App registrations](./media/odata_azure3.png)
+9. Select **Done**.
+10. Select **Keys**. In the dialog box that appears, enter a description, set the **Expires** value to **Never expires**, and then select **Save**.
 
-4.  Provide a name that identifies the external application that you are registering. Select **Web app / API** for an application that will authenticate with a shared secret. In this context, the Sign-on URL does not matter, so use localhost.
-
-    ![Application name](./media/odata_azure4.png)
-
-5.  Select the new application. Copy the Application ID, which you will need later to request an AAD authentication token. Click **Required permissions**.
-    
-    ![Required permissions](./media/odata_azure5.png)
-
-6.  Click **Add**, and then click **Select an API**.
-
-    ![Select API](./media/odata_azure6.png)
-
-7.  Select **Microsoft Dynamics ERP**.
-
-8.  For permissions, at a minimum you must select the following options under Delegated Permissions:
-
-     - Access Dynamics AX Custom Service
-     - Access Dynamics AX data
-     - Access Dynamics AX online as organization users
-
-    ![Delegated permissions](./media/odata_azure7.png)
-
-9.  Click **Done**.
-
-10.  Click **Keys**. In the blade that opens, provide a description, set the **Expires** value to **Never expires**, and then click **Save**.
-
-    ![Expiry](./media/odata_azure9.png)
-
-11.  When you have saved the new key, a value will be displayed in the  **Value** column.
+    After you've saved the new key, a value appears in the **Value** column.
 
     > [!IMPORTANT]
-    > Make sure you copy this value, because this is the only time that you will see it, and you need this secret key to complete your OAuth authentication and receive an AAD token.
-
-    ![Secret key](./media/odata_azure10.png)
+    > Make sure that you copy this value, because you won't see it again, and you will require this secret key to complete your OAuth authentication and receive an Azure AD token.
 
 ### Register your external application in Finance and Operations
 
-1.  Open Finance and Operations and navigate to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**.
-2.  Click **New**.
-    ![Client ID](./media/odata_fo1.png)
+1. In Finance and Operations, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**.
+2. Select **New**.
+3. Fill in the fields for the new record:
 
-3. Populate the fields for the new record. Use the Application ID you registered in AAD as the Client ID. Identify the application with a name and select an appropriate service account User ID, and then click **Save**.
+    - In the **Client Id** field, enter the application ID that you registered in Azure AD.
+    - In the **Name** field, enter a name for the application.
+    - In the **User ID** field, select an appropriate service account user ID. For this example, we have selected the **Admin** user. However, as a better practice, you should provision a dedicated service account that has the correct permissions for the operations that must be performed.
+    
+    When you've finished, select **Save**.
 
-    In this example we have selected the Admin user, but it is a better practice to provision a dedicated service account with the correct permissions for the operations to be conducted.
-
-   ![Save client ID](./media/odata_fo2.png)
- 
-We are now done with the prerequisite setup. After our external application retrieves an AAD authentication token, it should now be able
-to use the token in an authorization HTTP header to make subsequent service calls, for example, via OData or SOAP.
+You've now finished setting up the prerequisites. After the external application retrieves an Azure AD authentication token, it should now be able to use the token in an authorization HTTP header to make subsequent service calls via OData or SOAP, for example.
 
 ## Query Finance and Operations OData by using Postman
 
-Postman (<https://www.getpostman.com/postman>) is a commonly used tool for interacting with RESTful services (such as OData) in API development and testing scenarios. This procedure is not an endorsement of Postman, since other such tools are available, however we are using it to illustrate the concepts and messages involved in authenticating with AAD using OAuth, and then making OData requests to and receiving responses from Finance and Operations.
+Postman (<https://www.getpostman.com/postman>) is a tool  that is often used to interact with RESTful services (such as OData) in scenarios that involve the development and testing of application programming interfaces (APIs). This procedure isn't an endorsement of Postman, and other similar tools are available. However, we are using Postman to illustrate the concepts and messages that are involved when you use OAuth to authenticate with Azure AD, and then make OData requests to and receive responses from Finance and Operations.
 
-1.  Start Postman.
-2.  Click the gear icon and then **Manage environments** to create or update an environment.
-   ![Gear with Manage environments](./media/postman1.png)
-   
-3.  Provide a name for your environment and then click **Bulk Edit**.
-   ![Name and bulk edit](./media/postman2.png)
+1. Start Postman.
+2. In the upper-right corner, select the gear button, and then select **Manage environments** to create or update an environment.
+3. Enter a name for the environment, and then select **Bulk Edit**.
+4. Enter key-value pairs as shown in the following table. Enter one pair per line, and separate the key and value by using a colon (:).
 
-4.  Enter key-value pairs as follows, one pair per line, with key and value separated by a colon, ":".
+    | Key           | Value                                                                                               |
+    |---------------|-----------------------------------------------------------------------------------------------------|
+    | tenant\_id     | The Azure tenant ID that you looked up during the setup of prerequisites                            |
+    | client\_id     | The Azure AD application ID that you registered during the setup of prerequisites                   |
+    | client\_secret | The secret key that you generated during application registration during the setup of prerequisites |
+    | grant\_type    | client\_credentials                                                                                  |
+    | resource      | The base URL of the Finance and Operations instance                                                 |
 
-    | Key           | Value                                                                                  |
-    |---------------|----------------------------------------------------------------------------------------|
-    | tenant_id     | The Azure tenant ID, as looked up during the prerequisite setup                        |
-    | client_id     | The AAD Application ID registered during the prerequisite setup                        |
-    | client_secret | The secret key generated during application registration during the prerequisite setup |
-    | grant_type    | client_credentials                                                                     |
-    | resource      | The base URL of the Finance and Operations instance                                    |
+5. To verify that the key-value pairs can be parsed correctly, select **Key-Value Edit**, and review the results.
+6. Close the environment page.
+7. In the field to the left of the gear and eye buttons, select the new or updated environment.
+8. To retrieve an Azure AD token, create a POST request that has a URL in the format `https://login.microsoftonline.com/[tenant ID]/oauth2/token`.
 
-5.  Verify that the key-value pairs can be parsed correctly by clicking the **Key-Value Edit** button and reviewing the results.
+    You can use a URL parameter that refers to the **tenant\_id** environment variable, such as `https://login.microsoftonline.com/:tenant_id/oauth2/token`.
 
-   ![Key value edit](./media/postman3.png)
-   
-6.  Close the environment window.
+    ![Retrieve an Azure AD token](./media/postman6.png)
 
-7.  Select the new or updated environment from the field next to the gear and inspection icons.
+9. On the **Body** tab, add body elements as request parameters that refer to the environment variables that you created earlier. Select **Bulk Edit**, enter the keys from the previous table, enter a colon (:), and then enter the key name again but enclose it in double braces ({{}}). Enter one request parameter per line. For example, enter **grant\_type:{{grant\_type}}**. Here is an example.
 
-   ![Environment selection](./media/postman5.png)
-
-8.  To retrieve an AAD token, create a POST request with a URL conforming to the format
-    `https://login.microsoftonline.com/\[tenant ID\]/oauth2/token\`.
-    You can use a URL parameter referring to the tenant\_id environment variable, such as    `https://login.microsoftonline.com/:tenant\_id/oauth2/token\`.
-
-   ![Retrieve AAD](./media/postman6.png)
-
-9.  Click the **Body** tab and add body elements as request parameters, referring to the environment variables you created earlier. You can do this by clicking **Bulk edit** and then entering the same keys in the table above, followed by a colon, ":", and then repeating the key name enclosed in double braces. For example,
-    `grant\_type:{{grant\_type}}\`.
-
-   ![Retrieve AAD](./media/postman7.png)
+    ![Body elements](./media/postman8.png)
  
-
-   ![Bulk edit](./media/postman8.png)
- 
-10.  Click the **Tests** tab and create a test that will validate that the response is reasonable and store the returned authorization
-    token in an environment variable. The following code snippet will accomplish this:
-    ```
-    var json = JSON.parse(responseBody);
-
-    tests\["Get AAD Token"\] = !json.error && responseBody !== '' &&
-    responseBody !== '{}' && json.access\_token !== '';
-
-    postman.setEnvironmentVariable("bearerToken", json.access\_token);
-    ```
-
-   ![Code snippet](./media/postman9.png)
- 
-11.  Click **Save**, provide a name and collection for the request, and  then click **Save** again.
-
-12.  Click **Send** to make the authorization request. The **Body** tab should now contain an AAD token, along with other response details.
-
-   ![AAD token](./media/postman11.png)
-
-13. Because of the test code, the token is now in an environment variable. You can see this by clicking on the **Environment quick look** button (the eye icon).
-
-   ![Environment quick look](./media/postman12.png)
-
-14.  Now create a request to perform a create, read, update or delete operations on the desired data entity via the OData service. Craft the URL for what you need. See [Odata](odata.md) for more information. You may find it useful to parameterize the request, using a variable stored in the environment, as shown above. We use a Customer Account parameter in the GET query example below, which returns name and address details for the customer account specified in the environment variable. Note also that special characters must be correctly URL encoded:
-
-`https://\[D356fFOEE instance URL\]/data/Customers?\$format=json&\$filter=CustomerAccount%20eq%20%27{{custAccount}}%27&\$select=CustomerAccount,Name,AddressDescription,FullPrimaryAddress\`
-
-15. Add an Authorization header referring to the authorization token retrieved earlier and stored in the bearerToken environment variable. The token must be prefixed by 'Bearer ' in the header.
-
-   ![Bearer token](./media/postman13.png)
-
-16.  Provide a test to help validate the response. The following code
-    snippet will test that non-empty, JSON-formatted data is returned in
-    the response body:
+10. On the **Tests** tab, create a test that validates that the response is reasonable, and that stores the returned authorization token in an environment variable. Here is an example.
 
     ```
     var json = JSON.parse(responseBody);
-
-    tests\["Get customer info"\] = !json.error && responseBody !== '' &&
-    responseBody !== '{}';\
+    tests["Get Azure AD Token"] = !json.error && responseBody !== '' && responseBody !== '{}' && json.access_token !== '';
+    postman.setEnvironmentVariable("bearerToken", json.access_token);
     ```
 
-18.  Save and send the request, and then verify the result.
+11. Select **Save**, enter a name and collection for the request, and then select **Save** again.
+12. Select **Send** to make the authorization request. The **Body** tab should now contain an Azure AD token together with other response details.
 
-   ![Test](./media/postman14.png)
+    ![Azure AD token](./media/postman11.png)
 
-   ![Results](./media/postman15.png)
+13. Because of the test code, the token is now in an environment variable. You can see that the token is an environment variable by selecting the **Environment quick look** button (the eye button).
 
-In our example we have now successfully authenticated then used the OData service to read a customer record!
+    ![Environment quick look](./media/postman12.png)
 
-## Query the Finance and Operations SOAP custom service with SoapUI
+14. Create a request to perform create, read, update, or delete (CRUD) operations on the desired data entity via the OData service. Create the URL according to your requirements. For more information, see [Odata](odata.md). You might find it useful to parameterize the request by using a variable that is stored in the environment, as shown earlier. The following example of a GET query uses a **Customer Account** parameter. The query returns name and address details for the customer account that is specified in the environment variable. Note that special characters must be correctly URL-encoded.
 
-SoapUI (<https://www.soapui.org/>) is a commonly used tool for interacting with SOAP and REST web services in API development and
-testing scenarios. This procedure is not an endorsement of SoapUI, since other such tools are available, however we are using it to illustrate the concepts and messages involved in authenticating with Azure Active Directory using OAuth, and then making SOAP requests to and receiving responses from Finance and Operations.
+    ```
+    https://[Finance and Operations instance URL]/data/Customers?$format=json&$filter=CustomerAccount%20eq%20%27{{custAccount}}%27&$select=CustomerAccount,Name,AddressDescription,FullPrimaryAddress
+    ```
 
-1.  Launch SoapUI, and click the SOAP button to create a project.
+15. Add an Authorization header that refers to the authorization token that was retrieved earlier and stored in the **bearerToken** environment variable. The token must be prefixed by **Bearer** in the header.
 
-   ![SoapUI](./media/soapui1.png)
+    ![Bearer token](./media/postman13.png)
 
-2.  Complete the information for the project.
+16. Create a test to help validate the response. The following example tests that non-empty, JSON-formatted data is returned in the response body.
 
-    -   The Initial WSDL URL will be the service address (conforming to the format \[Finance and Operations instance base
-    URL\]/soap/services/\[service group name\]) suffixed by "?wsdl".
-    -   For more information, see the [Services home page](services-home-page).
+    ```
+    var json = JSON.parse(responseBody);
+    tests["Get customer info"] = !json.error && responseBody !== '' && responseBody !== '{}';
+    ```
 
-        For example, we are querying the user session service at the URL:
-    `https://\[Finance and Operations base URL/soap/services/UserSessionService?wsdl\`
+17. Save and send the request, and then verify the result.
 
-    -   Provide a Project Name.
-    -   Select the **Create sample requests for all operations** checkbox.
+    ![Result](./media/postman15.png)
 
-   ![Sample requests checkbox](./media/soapui2.png)
- 
+In our example, we have now successfully authenticated and then used the OData service to read a customer record.
 
-3.  Since we chose to create sample requests, we see that one is created
-    for each available service operation.
+## Query the Finance and Operations SOAP custom service by using SoapUI
 
-   ![sample requests](./media/soapui3.png)
- 
+SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with SOAP and REST web services in scenarios that involve API development and testing. This procedure isn't an endorsement of SoapUI, and other similar tools are available. However, we are using SoapUI to illustrate the concepts and messages that are involved when you use OAuth to authenticate with Azure AD, and then make SOAP requests to and receive responses from Finance and Operations.
 
-4.  Right-click the newly create project and click **New TestSuite** to create a TestSuite, which will generate a POST request for an AAD authorization token.
+1. Start SoapUI, and select the **SOAP** button to create a project.
+2. Complete the information for the project:
 
-5.  Right-click on the test suite and click **New TestCase**.
+    - In the **Project Name** field, enter a name for the project.
+    - In the **Initial WSDL** field, enter the service address, and add the suffix **?wsdl**. (The service address should be in the format \[Finance and Operations instance base URL\]/soap/services/\[service group name\].) For more information, see the [Services home page](services-home-page).
 
-6.  Expand the test case, right-click on **Test Steps**, click **Add Step** and then **HTTP Request**.
- 
-7.  Give the request a name and then click **OK**.
- 
-8.  Enter a name for the test step. The endpoint to use for the POST request is:
-    `[https://login.microsoftonline.com/\[tenant\_id\]/oauth2/token](https://login.microsoftonline.com/%5btenant_id%5d/oauth2/token)\`
+        For example, we are querying the user session service at the URL `https://[Finance and Operations base URL]/soap/services/UserSessionService?wsdl`.
 
-9. Use the plus button next to Parameters to add the following values:
+    - Select the **Create sample requests for all operations?** check box.
 
-    | Parameter     | Value                                              |
-    |---------------|----------------------------------------------------|
-    | grant_type    | client_credentials                                 |
-    | client_id     | Application ID from AAD application registration   |
-    | client_secret | Secret key value from AAD application registration |
-    | resource      | Finance and Operations instance URL                |
+    Because you selected to create sample requests, one sample request is created for each service operation that is available.
 
-   ![Parameters](./media/soapui6.png)
+    ![Sample requests](./media/soapui3.png)
 
-10.  Ensure the parameters are in the POST body, by selecting **Post QueryString**, and clicking **Play**. An access token should be returned in the response pane. The values will be most readable if you select the JSON response tab. Copy the access token for use in the authorization header of subsequent requests.
+4. Right-click the new project, and then select **New TestSuite** to create a test suite. This test suite will generate a POST request for an Azure AD authorization token.
+5. Right-click the test suite, and then select **New TestCase**.
+6. Expand the test case, right-click **Test Steps**, select **Add Step**, and then select **HTTP Request**.
+7. Enter a name for the request, and then select **OK**.
+8. Enter a name for the test step. The endpoint that you should use for the POST request is `[https://login.microsoftonline.com/[tenant_id]/oauth2/token](https://login.microsoftonline.com/%5btenant_id%5d/oauth2/token)`.
+9. Use the plus sign (**+**) button next to **Parameters** to add the following values.
 
-    ![Post QueryString](./media/soapui7.png)
+    | Parameter     | Value                                                           |
+    |---------------|-----------------------------------------------------------------|
+    | grant\_type    | client\_credentials                                              |
+    | client\_id     | The application ID from the Azure AD application registration   |
+    | client\_secret | The secret key value from the Azure AD application registration |
+    | resource      | The URL of the Finance and Operations instance                  |
 
-11.  Now navigate back to the first request node under the GetUserSessionInfo SOAP sample request. Click the plus button under the left-hand request pane to add a Header named ‘Authorization’. Paste the access token, prefixed by **Bearer**, into the **Value** field.
+10. To make sure that the parameters are in the POST body, select **Post QueryString**, and then select **Play**. An access token should be returned in the response pane. The values will be most readable if you use the **JSON response** tab. Copy the access token so that you can use it in the authorization header of subsequent requests.
+11. Go back to the first request node under the **GetUserSessionInfo** SOAP sample request. In the request pane on the left, select the plus sign (**+**) button to add a header that is named **Authorization**. Paste the access token into the **Value** field, and add the prefix **Bearer**.
+12. The sample requests that SoapUI creates won't work unless you modify them. You must edit the call context and body so that they are consistent with the schema for what you're trying to do.
 
-12.  The sample requests SoapUI creates will not work unaltered. You need to edit the call context and Body to be consistent with the schema for what you are trying to do. For our simple scenario, we can edit the (optional) call context elements to be null-valued. We can do this by inserting a forward slash ‘/’ before the greater than ‘&gt;’ in the opening tag, then commenting out the question mark "?" characters (which are not valid content for the XML schema) and the closing tags, with the standard ‘&lt;!—‘ ‘--&gt;’ syntax delimiting the beginning and end of the comments. Alternatively, the result would be the same if you just deleted the ‘?’ characters, thus leaving the context elements empty.
+    For our simple scenario, you can edit the optional call context elements so that they are null-valued. Insert a forward slash (/) before the greater than sign (&gt;) in the opening tags. Then comment out the question marks (?) and the closing tags by using the standard &lt;!--...--&gt; syntax to delimit the start and end of the comments. (Question marks aren't valid content for the XML schema.) Alternatively, you can just delete the question marks (?) so that the context elements are empty.
 
-13.  Now that the SOAP request is ready, click **Play** and validate the result on the right:
-     ![Validate](./media/soapui8.png)
+13. The SOAP request is now ready. Select **Play**, and validate the result on the right.
 
-In our example we have now successfully authenticated then queried the UserSessionService via SOAP!
+    ![Validate the results](./media/soapui8.png)
+
+In our example, we have now successfully authenticated and then queried UserSessionService via SOAP.
