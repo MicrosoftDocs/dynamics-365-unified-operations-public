@@ -2,7 +2,7 @@
 # required metadata
 
 title: Order attributes
-description:  
+description: This topic shows how to edit and set attributes values for orders directly in HQ , POS, and CRT.
 author: mugunthanm
 manager: AnnBe
 ms.date: 10/24/2017
