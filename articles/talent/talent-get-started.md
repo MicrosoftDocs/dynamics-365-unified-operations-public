@@ -36,7 +36,7 @@ Microsoft Dynamics 365 for Talent lets you modify the user interface and set opt
 > The following products are closely related: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; and Dynamics 365 for Talent. The same functionality may appear in all 3 products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations. Topics that are written for one product may apply to the same functionality in a related product.
 
 ### Personalizing Talent 
-As you work with Talent, you can set a number of options that make getting your work done faster and easier. 
+The following topics show how you can set a number of options that make getting your work done faster and easier. 
 
 -   [Personalize the user experience](../fin-and-ops/get-started/personalize-user-experience.md) This topic explains different types of personalizations and shows how you can adapt parts of the product to more closely suite your preferences.
 
@@ -47,10 +47,14 @@ As you work with Talent, you can set a number of options that make getting your 
 -   [Keyboard shortcuts](../fin-and-ops/get-started/shortcut-keys.md) This topic lists keyboard shortcuts for the United States keyboard layout. 
 
 ### Accessing information
--   [Use lookups to find information](../fin-and-ops/get-started/use-lookups-to-find-information.md) This topic shows how lookups can help you quickly find the correct or desired value. In this topic, you will learn about how lookups work in Microsoft Dynamics 365 for Finance and Operations, as well as Talent. The topic also includes tips to help you optimize your use of them.
+The following topics can help you use lookups, and the search and filtering features, to find information quickly. 
+
+-   [Use lookups to find information](../fin-and-ops/get-started/use-lookups-to-find-information.md) This topic shows how lookups can help you quickly find the correct or desired value. The topic describes how lookups work and includes tips to help you optimize your use of them.
+
+-   [Advanced filtering and query syntax](../fin-and-ops/get-started/advanced-filtering-query-options.md) This article describes the filtering and query options that are available when you use the "matches" operator in the Advanced filter/sort dialog.
 
 -   [Navigation search](../fin-and-ops/get-started/navigation-search.md) This topic explains how to use the search functionality to navigate to pages. The application includes a number of areas and pages to help you perform various tasks. Using the navigation search feature can help you quickly find the pages that you need to complete your tasks. 
 
--   [Action search](../fin-and-ops/get-started/action-search.md) This article describes the action search functionality. Action search will help you find and run actions on a page. Pages in Microsoft Dynamics 365 for Finance and Operations, and in Talent, primarily expose commands on Action Panes, both the standard Action Pane that appears at the top of a page and the toolbars that appear in various sections of a page.
+-   [Action search](../fin-and-ops/get-started/action-search.md) This article describes the action search functionality. Action search will help you find and run actions on a page. The pages in the product primarily expose commands on Action Panes, both the standard Action Pane that appears at the top of a page and the toolbars that appear in various sections of a page.
 
 
