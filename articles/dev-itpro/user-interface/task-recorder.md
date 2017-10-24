@@ -363,9 +363,9 @@ Using a pre-release Chrome extension, Task Recorder is able to take screenshots 
 
 ![This image shows the location of the Extensions menu in Google Chrome.](./media/taskrecorderguide-googlechromeextensionsmenu.png) 
 
-3.  Select the **Developer mode** box
+3.  Select the **Developer mode** box.
 4.  Click **Load unpacked extension**.
-5.  Browse to the folder containing the Task Recorder extension, select the folder, and click **OK**. The extension is loaded. Ensure that the **Enabled** box is selected to turn the extension on.With a locally hosted developer machine, the extension should be located at &lt;local disk&gt;FMLabTaskRecorderScreenshot.Otherwise, you can download the FMLab folder which contains the extension from GitHub at<https://github.com/Microsoft/FMLab>.
+5.  Browse to the folder containing the Task Recorder extension, select the folder, and click **OK**. The extension is loaded. Ensure that the **Enabled** box is selected to turn the extension on. With a locally hosted developer machine, the extension should be located at &lt;local disk&gt;FMLabTaskRecorderScreenshot. Otherwise, you can download the FMLab folder which contains the extension from GitHub at<https://github.com/Microsoft/FMLab>.
 
 [![This image shows what the Extensions settings page looks like once the screenshot extension has been loaded.](./media/taskrecorderguide-googlechromeextensionsmenu1.png)](./media/taskrecorderguide-googlechromeextensionsmenu1.png)
 
@@ -375,7 +375,7 @@ Task Recorder will now take screenshots of the tab that has the client running.
 
 ## Test generation
 
-After completing a business process recording using Task Recorder, a developer may import the recording file (.xml) into Visual Studio to create an X++ test. The Task Recorder Import Tool is able to generate a human-readable X++ test that translates any Recording gestures Validations or Tasks into the appropriate test code. <!-- The Task Recorder Import Tool is able to generate a human-readable X++ test that translates any [Recording gestures](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_gestures), [Validations](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_controls) or [Tasks](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_controls) into the appropriate test code. -->
+After completing a business process recording using Task Recorder, a developer may import the recording file (.xml) into Visual Studio to create an X++ test. The Task Recorder Import Tool is able to generate a human-readable X++ test that translates any Recording gestures, Validations, or Tasks into the appropriate test code. <!-- The Task Recorder Import Tool is able to generate a human-readable X++ test that translates any [Recording gestures](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_gestures), [Validations](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_controls) or [Tasks](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_controls) into the appropriate test code. -->
 
 ### Import a recorded test
 
