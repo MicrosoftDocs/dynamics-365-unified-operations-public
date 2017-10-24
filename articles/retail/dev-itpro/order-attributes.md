@@ -31,11 +31,11 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 # Order attributes
 
-The attribute framework was previously supported only in online orders, now its extended to support attributes in cash and carry transactions, customer orders, and call center orders. With this new feature or enhancement, you will be able to edit and set attributes values for orders directly in HQ , POS and CRT, to set the values in HQ for call center orders we added the HQ forms to edit and update the values but there is no out of the box UI available in POS to set the value, you can extend POS to add new UI or if you don’t need any UI and just want to set only business logic then you can do that in CRT directly. You will customize CRT only for business logic not for any binding pipeline like read, write to both HQ and channel it’s all automated. New attributes can be created using the HQ configurations, without any database changes. Previously you must create new table in HQ, channel DB and modify CRT to do this.
+The attribute framework was previously supported only in online orders, now it is extended to support attributes in cash and carry transactions, customer orders, and call center orders. With this new enhancement, you can edit and set attributes values for orders directly in HQ , POS and CRT. To set the values in HQ for call center orders we added the HQ forms to edit and update the values, but there is no out of the box UI available in POS to set the value. You can extend POS to add new UI. If you don’t need any UI and want to add only business logic then you can do that in CRT directly. New attributes can be created using the HQ configurations, without any database changes. Previously you had to create new tables in HQ and channel DB and then modify.
 
 ## Why and when you should customer attributes
 
-If you want to add new fields to cash & carry transaction or customer or call center order and capture the information in POS or HQ then you can use this feature. Previously to add a new field to cash and carry transaction (Transaction Header or lines) or customer order in POS you must create new extension table in HQ, channel DB and modify CRT and POS code inline to handle different screens and operation like update, inset etc., also configure CDX to sync the data between channel and HQ. Now with the new functionality all this can be done through configuration without writing any code or creating custom extension tables in HQ or channel expect for the core business logic and POS UI. With the first version we are supporting only string attribute type but in the future, it will be extended to support other attribute type. If you want the data to come from master table and it involves complex search and core business logic in x++ then use extension properties.
+If you want to add new fields to cash & carry transactions or customer or call center orders and capture the information in POS or HQ then you would use customer attributes. Previously to add a new field to cash and carry transaction (Transaction Header or lines) or customer order in POS you had to create a new extension table in HQ and channel DB and then modify CRT and POS code inline to handle different screens and operations. You also had to configure CDX to sync the data between channel DB and HQ. With customer attributes, all this can be done through configuration without writing any code or creating custom extension tables other than the the core business logic and POS UI. With this first version we are supporting only the string attribute type. In the future, we will support other attribute types. If you want the data to come from the master table and it involves complex search and core business logic in X++, then you should use extension properties.
 
 ## Define attribute types
 
@@ -54,18 +54,17 @@ First you need to define the attribute types and assign valid ranges to them.
 
 Next you define the attributes. For each attribute you want to define, follow these steps:
 
-1.  Click **Product information management** > **Setup** > **Categories and** **Attributes** > **Attributes**.
-2.  In the **Attributes** form, click New to add a new attribute.
+1.  Click **Product information management** > **Setup** > **Categories and Attributes** > **Attributes**.
+2.  In the **Attributes** form, click **New** to add a new attribute.
 3.  Enter the name, friendly name, description, and any help text that you want to display to the user for the attribute.
 4.  In the **Attribute type** field, select the attribute type to assign to the attribute.
 5.  Depending on the attribute type, in the **Default value** field enter the value or range of values that is displayed by default when this attribute is assigned to a customer.
 6.  Click **Translate**. In the **Text translation** form, enter the name, description, friendly name, and help text for the attribute in different languages.
 
-
 ## Define attribute groups
 
-1.  Click **Product information management** &gt; **Setup** &gt; &gt; **Categories and** **Attributes** &gt; **Attribute groups**.
-2.  In the **Attribute groups** form, click New to add a new attribute group.
+1.  Click **Product information management** > **Setup** > **Categories and Attributes** > **Attribute groups**.
+2.  In the **Attribute groups** form, click **New** to add a new attribute group.
 3.  Enter the name, and On the **General** FastTab enter friendly name, description, and any help text for the attribute group.
 4.  Click the **Attributes** FastTab.
 5.  Click **Add** to add attributes to the attribute group. In the **Default value** field, you can enter a default value for the selected attributes.
@@ -73,35 +72,31 @@ Next you define the attributes. For each attribute you want to define, follow th
 
 ## Link the attribute group to the channel
 
-1.  Click **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**
+1.  Click **Retail** > **Channels** > **Retail stores** > **All retail stores**.
 2.  Select the channel for which you want to link the attributes in the channel form.
-3.  On the **Set up** tab, click the **Sales order attributes menu** under the **attribute group**.
-4.  In the **Sales order attribute groups** form Click New to link the attribute group to the channel.
+3.  On the **Set up** tab, click the **Sales order attributes** under the **attribute group**.
+4.  In the **Sales order attribute groups** form click **New** to link the attribute group to the channel.
 5.  In the **Name** field select the attribute group you want to link from the drop down.
 6.  In the **Apply attributes to** filed select any of the below options:
-
-     Header – The attributes will apply only to the transaction header.
-
-     Lines – The attribute will apply only to the transaction lines.
-
-     Default – The attribute will apply to both transaction header and lines.
-
-1.  Click Save.
+    - Header – The attributes will apply only to the transaction header.
+    - Lines – The attribute will apply only to the transaction lines.
+    - Default – The attribute will apply to both transaction header and lines.
+7.  Click Save.
 
 ## Run the distribution jobs
 
-1.  Click **Retail** &gt; **Retail** **IT** &gt; **Distribution** **schedule**
-2.  Select the Products (1040) and click the Run now button in the action bar. On prompt click Yes, this required only if added any new Attributes, Attribute type or Attribute group.
-3.  Select the Channel configuration job (1070) and click the Run now button in the action bar. On prompt click Yes.
+1. Click **Retail** > **Retail IT** > **Distribution schedule**.
+2. Select **Products (1040)** and click the **Run now** button in the action bar. When prompted, click **Yes**. This required only if you added any new attributes, attribute types or attribute groups.
+3. Select **Channel configuration job (1070)** and click the **Run now** button in the action bar. When prompted, click **Yes**. 
 
 ## Set attribute values for call center orders
 
-After you configure the order attributes to channel, go to customer service or All Sales order and create a new call center order.
+After you configure the order attributes for the channel, go to **Customer service** or **All Sales order** and create a new call center order.
 
-1.  After or during the creation of customer order, if you want to set attribute value for the transaction header then click the **Retail** tab in the Action bar and then click Retail Attributes menu.
-2.  In the Sales order attributes values form you can set the values for the attributes, the list of attributes shown in this form is based on the attribute group you configured for that channel.
-3.  Suppose if you want to set attribute values at the line level then Select the Lines view in the Sales order form and then select the line for which you want to set the attribute value and click Retail &gt; Retail attributes under the Sales order lines group.
-4.  Repeat the step 3 for all the sales lines for which you want to set the values.
+1. After or during the creation of a customer order, if you want to set an attribute value for the transaction header then click the **Retail** tab in the Action bar and then click **Retail Attributes**.
+2. In the **Sales order attributes values** form you can set the values for the attributes. The list of attributes shown in this form is based on the attribute group you configured for that channel.
+3. If you want to set attribute values at the line level then select the **Lines** view in the **Sales order form** and then select the line for which you want to set the attribute value. Click **Retail** > **Retail attributes** under the **Sales order lines group**.
+4. Repeat the step 3 for all the sales lines for which you want to set the values.
 
 ## View the attributes values for Cash and Carry transaction in HQ
 
