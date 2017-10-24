@@ -5,7 +5,7 @@ title: Dynamics AX 2012 features that were postponed
 description: This topic lists Microsoft Dynamics AX 2012 features that were postponed. This means that these features were not deprecated, but not implmented in Dynamics AX 7.0. 
 author: sericks007
 manager: AnnBe
-ms.date: 10/23/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -114,7 +114,7 @@ This topic lists Microsoft Dynamics AX 2012 features that were postponed. These 
 <td>Implemented in Dynamics 365 for Finance and Operations in July 2017</td></tr>
 <tr class="odd">
 <td>Specifications for Electronic reporting (ER) payment formats</td>
-<td>Currently, payment format specifications must be entered manually. In a future update, you will be able to select payment format specifications in a list. Currently, the following payment specifications are supported per payment format.
+<td>Currently, payment format specifications must be entered manually. In a future update, you will be able to select payment format specifications in a list. Currently, the following payment specifications are supported per payment format.<p></p>
 <p><strong>Note:</strong> Values for these supported payment specifications are used as payment specification parameters in the <strong>Payment specification</strong> form for a selected method of payment.</p>
 <p><strong>BTL91 for the Netherlands</strong></p>
 <table>
