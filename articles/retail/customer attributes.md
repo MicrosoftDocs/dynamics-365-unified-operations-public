@@ -42,7 +42,7 @@ The new customer attribute framework lets you use configurations to add new fiel
 
 ## Why and when you should configure customer attributes
 
-If you want to add new fields to the customer master record, and capture the information in POS or Retail headquarters, you can use this feature. Previously, to add a new field to the customer master record and show it in POS and Retail headquarters, you had to create new extension table in Retail headquarters and the channel database, and make inline modifications to Commerce runtime (CRT) and POS code. You had to write code in CRT and POS to read/write to the extension fields and show it in POS, you had to handle this in various POS views and scenarios, such as the **Customer details** screen and the customer panel on the transaction screen. In addition, in CRT, you had to handle all insert, select, and update operations. However, the new functionality lets you complete all these steps through configuration. You don't have to write any code or create custom extension tables in Retail headquarters or the channel database.
+If you want to add new fields to the customer master record, and capture the information in POS or Retail headquarters, you can use this feature. Previously, to add a new field to the customer master record and show it in POS and Retail headquarters, you had to create new extension table in Retail headquarters and the channel database, and make inline modifications to Commerce runtime (CRT) and POS code. You had to write code in CRT and POS to read/write to the extension fields and show it in POS. You had to handle this in various POS views and scenarios, such as the **Customer details** screen and the **Customer** panel on the transaction screen. In addition, in CRT, you had to handle all insert, select, and update operations. However, the new functionality lets you complete all these steps through configuration. You don't have to write any code or create custom extension tables in Retail headquarters or the channel database.
 
 The first version of this functionality doesn't support datetime and reference attribute types. For those attribute types, you should use extension properties and custom controls to show the details in POS.
 
@@ -50,7 +50,7 @@ The first version of this functionality doesn't support datetime and reference a
 
 ### Define attribute types
 
-1. Select **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attribute types**.
+1. Select **Product information management** > **Setup** &gt; **Categories and attributes** > **Attribute types**.
 2. On the **Attribute types** page, select **New** to add a new attribute type.
 3. Enter a name for the attribute type.
 4. On the **General** FastTab, in the **Type** field, select the type of data that can be entered for attributes that are assigned to this data type.
@@ -64,7 +64,7 @@ The first version of this functionality doesn't support datetime and reference a
 
 ### Define attributes
 
-1. Select **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attributes**.
+1. Select **Product information management** > **Setup** > **Categories and attributes** > **Attributes**.
 2. On the **Attributes** page, select **New** to add a new attribute.
 3. Enter the name, friendly name, description, and any Help text that should be shown to the user for the attribute.
 4. In the **Attribute type** field, select the attribute type to assign to the attribute.
@@ -74,7 +74,7 @@ The first version of this functionality doesn't support datetime and reference a
 
 ### Define an attribute group
 
-1. Select **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attribute groups**.
+1. Select **Product information management** > **Setup** > **Categories and attributes** > **Attribute groups**.
 2. On the **Attribute groups** page, select **New** to add a new attribute group.
 3. Enter the name, and then, on the **General** FastTab, enter the friendly name, description, and any Help text for the attribute group.
 4. On the **Attributes** FastTab, select **Add** to add attributes to the attribute group. In the **Default value** field, you can enter a default value for the selected attributes.
@@ -82,12 +82,12 @@ The first version of this functionality doesn't support datetime and reference a
 
 ### Link the attribute group to the customers in the Retail parameters
 
-1. Select **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail parameters**.
+1. Select **Retail** > **Headquarters setup** > **Parameters** > **Retail parameters**.
 2. On the **General** tab, in the **Customer attribute group** field, select the attribute group that should be shown in POS.
 
 ### Run the distribution jobs
 
-1. Select **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
+1. Select **Retail** > **Retail IT** > **Distribution schedule**.
 2. Select the **Customers** job (1010), and then, on the Action Pane, select **Run now**. When you're prompted, select **Yes**.
 3. Select the **Global configuration** job (1110), and then, on the Action Pane, select **Run now**. When you're prompted, select **Yes**.
 
@@ -95,7 +95,7 @@ The first version of this functionality doesn't support datetime and reference a
 
 #### Retail headquarters
 
-1. Select **Retail** &gt; **Customers** &gt; **All customers**.
+1. Select **Retail** > **Customers** > **All customers**.
 2. On the Action Pane, on the **Retail**, in the **Attribute** section, select **Retail attributes** to view or edit the attribute values.
 
 #### POS
@@ -106,7 +106,7 @@ The first version of this functionality doesn't support datetime and reference a
 
 #### Retail headquarters
 
-1. Select **Retail** &gt; **Channel setup** &gt; **POS Setup** &gt; **POS** &gt; **Screen layouts**.
+1. Select **Retail** > **Channel setup** > **POS Setup** > **POS** > **Screen layouts**.
 2. On the **screen layout** page, select **New** to create a new screen layout, or select an existing screen layout.
 3. Enter the ID and name for the screen layout.
 4. On the **Layout sizes** FastTab, select the **Add** button to add new layout sizes for the POS.
@@ -116,7 +116,7 @@ The first version of this functionality doesn't support datetime and reference a
 8. When you're prompted, enter the Microsoft Dynamics 365 user name and password to start the designer.
 9. After the designer is started, drag the **Customer** card anywhere in the screen layout designer.
 10. Right-click the **Customer** card, and then select **Customize**.
-11. When the page for the **Customization - Customer** card appears, select the required attributes in the **Available columns** section, and then select the right arrow button (**&gt;**) to move them to the **Selected columns** section. You can move the attributes up or down by selecting the **Up** or **Down** buttons.
+11. When the page for the **Customization - Customer** card appears, select the required attributes in the **Available columns** section, and then select the right arrow button (**>**) to move them to the **Selected columns** section. You can move the attributes up or down by selecting the **Up** or **Down** buttons.
 12. When you've finished, select **OK** to save your changes.
 13. Close the screen layout designer by selecting the **Close** button (**X**) in the upper-right corner. When you're prompted, select **Yes** to save your changes.
 14. Select **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
