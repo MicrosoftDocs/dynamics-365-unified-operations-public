@@ -33,7 +33,14 @@ ms.dyn365.ops.version: AX 7.2.0, Talent July 2017 update
 Microsoft Dynamics 365 for Talent lets you adapt the user interface and set options to help you adapt the software to your preferences. This topic provides  information that guides you in adapting the user interface to your preferences, as well as connecting to the Help resources that available within the product, and on the docs.microsoft.com site.
 
 ### Personalizing Talent 
-As you work with Talent, you can set a number of preferences that making getting your work done faster and easier. 
+As you work with Talent, you can set a number of preferences that make getting your work done faster and easier. 
 
--   [Personalize the user experience](fin-and-ops/get-started/personalize-user-experience.md)
+-   [Personalize the user experience](..fin-and-ops/get-started/personalize-user-experience.md) This topic explains different types of personalizations and shows how you can use them to match your preferences.
 
+-   [Use lookups to find information](fin-and-ops/get-started/use-lookups-to-find-information.md) This topic shows how you can change the appearance and behavior of workspaces. 
+
+-   [Configure and filter workspaces](fin-and-ops/get-started/configure-filter-workspaces.md) This topic shows how you can change the appearance and behavior of workspaces.
+
+-   [Display pages side-by-side using the Open in New Window icon](fin-and-ops/get-started/display-pages-side-by-side.md)
+
+### Accessing information
