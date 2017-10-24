@@ -71,7 +71,7 @@ For the following sorts of work, we strongly recommend that you install and lear
 
 If you're making substantial changes to an existing topic, adding or changing images, or contributing a new topic, follow these steps. 
 
-1. Fork the **MicrosoftDocs/Dynamics-365-Operations** repository.
+1. Fork the **MicrosoftDocs/Dynamics-365-Unified-Operations** repository.
 
 2. Create a branch for your topic.
 
