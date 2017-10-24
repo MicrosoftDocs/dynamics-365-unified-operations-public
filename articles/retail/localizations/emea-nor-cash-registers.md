@@ -209,7 +209,7 @@ The SAF-T Cash Register configuration is available for download from Microsoft D
 
 After you import the configurations, on the **Retail parameters** page, on the **Electronic documents** tab, in the **SAF-T Cash register export format** field, select the **NO SAF-T Cash Register** format.
 
-You must also map required master data to predefined SAF-T standard codes. For more information, see the SAF-T Cash register documentation that is provided by the Norwegian Tax Administration. To create the mapping, the new **SAF-T Cash register code** field should be set on the following pages:
+You must also map required master data to predefined SAF-T standard codes. For more information, see the SAF-T Cash register documentation that is provided by the Norwegian Tax Administration. To create the mapping, you must set the new **SAF-T Cash register code** field on the following pages:
 
 - Item groups
 - Payment methods
