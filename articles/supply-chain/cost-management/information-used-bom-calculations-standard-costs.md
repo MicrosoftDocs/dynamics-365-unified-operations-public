@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: BOM calculations with standard costs
+title: Information used in BOM calculations with standard costs
 description: Bills of material (BOM) calculations use data from several sources to calculate the standard costs of a manufactured item. The sources include information about items, bills routings, indirect cost calculation formulas, and the costing version.
 author: AndersGirke
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# BOM calculations with standard costs
+# Information used in BOM calculations with standard costs
 
 [!include[banner](../includes/banner.md)]
 
