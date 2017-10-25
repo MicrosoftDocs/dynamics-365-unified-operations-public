@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 When configuring the SQL Azure connection for BYOD entity publish, you can choose to also enable SQL triggers in your BYOD. This option is available as shown below.
 
-![Configure SQL trigger](../media/SQLTrigger.png) 
+![Configure SQL trigger](./media/SQLTrigger.png) 
 
 When this option is enabled, the BYOD export job will enable SQL triggers in the target BYOD. This provides an opportunity for downstream processes to hook into the trigger to orchestrate actions that must be started after records are inserted by the BYOD process. One trigger per bulk insert operation is supported. The size of the bulk insert is determined by the ‘Maximum insert commit’ size parameter in data management framework.
 
