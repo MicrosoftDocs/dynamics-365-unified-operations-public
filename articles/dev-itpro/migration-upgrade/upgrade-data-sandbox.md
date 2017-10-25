@@ -146,9 +146,10 @@ After the copy is created, run the following Transact-SQL (T-SQL) script against
 
 	declare     viewCursor CURSOR for
 
-	select viewname = v.name
-	from sys.views v
-	order by v.name
+	select s.name + '.' + v.name 
+	from sys.views v, sys.schemas s 
+	where s.schema_id = v.schema_id
+    	order by v.name
 
 	OPEN viewCursor
 
