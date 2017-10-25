@@ -2,10 +2,10 @@
 # required metadata
 
 title: Default offset accounts for vendor invoice journals and invoice approval journals
-description: 
+description: This topic will help you decide where you should assign default accounts for invoice journals.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
