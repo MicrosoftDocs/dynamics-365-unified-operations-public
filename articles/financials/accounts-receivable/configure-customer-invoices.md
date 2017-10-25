@@ -2,10 +2,10 @@
 # required metadata
 
 title: Create a customer invoice
-description: 
+description: A **customer invoice for a sales order** is a bill that is related to a sale, and that an organization gives to a customer.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

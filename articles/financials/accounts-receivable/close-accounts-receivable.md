@@ -2,10 +2,10 @@
 # required metadata
 
 title: Close Accounts receivable
-description: 
+description: The following topic lists the pages that support the close Accounts receivable business process.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
