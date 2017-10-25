@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configuration 
-description: 
+description: This topic provides information about the Intelligent Data Management Framework (IDMF) functionality in Microsoft Dynamics AX.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
