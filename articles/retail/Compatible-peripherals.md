@@ -1,5 +1,4 @@
 ---
-
 # required metadata
 
 title: Peripheral compatibility for Retail  
