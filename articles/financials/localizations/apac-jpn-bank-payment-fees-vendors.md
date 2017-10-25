@@ -3,7 +3,7 @@
 
 title: Bank payment fees covered by vendors
 description: In Japan, the bank payment fees are usually covered by vendors (the receiving party). This topic answers some of the frequently asked questions about bank payment fees that are covered by vendors.
-author: RichardLuan
+author: yijialuan
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
