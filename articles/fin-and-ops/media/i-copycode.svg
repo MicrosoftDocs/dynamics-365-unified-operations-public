@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/css" href="../styles/icons.css"?>
+
+<svg id="testing"  data-name="testing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+
+<title>i</title>
+<polygon class="fill-white" points="2 12 5 12 5 3 8.29 3 6.29 1 2 1 2 12"/>
+<polygon class="fill-white" points="6 15 14 15 14 8 10 8 10 4 6 4 6 15"/>
+<polygon class="fill-white" points="11 4.71 11 7 13.29 7 11 4.71"/>
+
+<path  class="testing" d="M10.71,3,15,7.29V16H5V13H1V0H6.71l3,3ZM2,12H5V3H8.29l-2-2H2Zm4,3h8V8H10V4H6ZM11,4.71V7h2.29Z"/>
+</svg>
