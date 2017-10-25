@@ -3,7 +3,7 @@
 
 title: Get started with Microsoft Dynamics 365 for Talent
 description: This topic provides information about how to adapt the user interface to your preferences, as well as connect to the Help resources that are available within the product, and on the docs.microsoft.com site. 
-author: twheeloc
+author: rschloma
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
@@ -57,4 +57,14 @@ The following topics explain how to use lookups, and the search and filtering fe
 
 -   [Action search](../fin-and-ops/get-started/action-search.md) - This topic describes the action search functionality. Action search will help you find and run actions on a page. The pages in the product primarily expose commands on Action Panes, both the standard Action Pane that appears at the top of a page and the toolbars that appear in various sections of a page.
 
+## Additional resources
+
+### What's new and in development
+Go to the Microsoft Dynamics 365 Roadmap to see what new features have been released and what new features are in development.
+
+### Blogs
+You can find opinions, news, and other information about Accounts payable and other solutions on the [Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
+
+### Videos
+Check out the how-to videos that are now available on the Microsoft Dynamics 365 YouTube Channel.
 
