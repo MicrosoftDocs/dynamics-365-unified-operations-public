@@ -2,10 +2,10 @@
 # required metadata
 
 title: Expense management
-description: 
+description: Use Expense management to create an integrated workflow where you can store payment method information, import credit card transactions, and track the money that employees are spending when they incur expenses for your business.
 author: twheeloc
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
