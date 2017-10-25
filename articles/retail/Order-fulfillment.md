@@ -37,11 +37,11 @@ to easy overstock scenarios for a specific store, or may be desirable from a log
 Operation ID 928, “Order fulfillment”, can be added to a point of sale button grid to access the unified order fulfillment page in the
 point of sale. This operations is bound by the following permissions: 
 
--Allow create order
--Allow edit order
--Allow retrieve order
--Allow accept order 
--Allow reject order
+  - Allow create order
+  - Allow edit order
+  - Allow retrieve order
+  - Allow accept order 
+  - Allow reject order
 
 The operations ‘Allow accept order’ and ‘Allow reject order’ were created specifically for the unified order fulfillment operations, while the others are previously existing operations that have been extended to the ‘Allow accept order’ operation as applicable. 
 
