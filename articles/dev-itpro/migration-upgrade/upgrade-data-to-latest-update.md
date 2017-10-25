@@ -84,12 +84,8 @@ This topic describes how to upgrade an older source database to the latest Finan
     delete from classidtable where id >= 0xf000 and id <= 0xffff
     ```
 
-
-### Additional steps if you're using Retail functionality
-If you're using Retail functionality, you must follow these steps to prepare the database before you run the data upgrade package.
-
-- Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that you have no unsynchronized transactional data in the cloud version of the channel database.
-- Delete the cloud version of the retail channel database in the source environment. This database will be re-created as part of the upgrade. Delete the primary cloud-hosted channel database by running the following script. 
+8. Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that you have no unsynchronized transactional data in the cloud version of the channel database.
+9.  Delete the cloud version of the retail channel database in the source environment. This database will be re-created as part of the upgrade. Delete the primary cloud-hosted channel database by running the following script. 
 
     > [!NOTE]
     > If you have customizations that rely on the retail channel database schema, you might encounter errors in the following steps. If you encounter errors, you must delete your channel database customizations, and then rerun the script.
