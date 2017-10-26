@@ -4,6 +4,6 @@ Instead of using GitHub issues, please consider these options if you need help o
 
 -	Suggested changes to technical articles are best handled as proposals for change through pull requests. Each pull request is reviewed by the article author or a related subject matter expert for the article.
 
--	If you need support using Azure, your best bets are StackOverflow, MSDN forums, and our support channels. See https://azure.microsoft.com/en-us/support/forums/ and https://azure.microsoft.com/en-us/support/options/.
+-	If you need support using Microsoft Dynamics 365 for Finance and Operations, your best bets are the Dynamics 365 community forums (https://community.dynamics.com/) and our support channels. For more information about support, see https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support.
 
--	Product and feature feedback is best handled through the general feedback for Azure: https://feedback.azure.com 
+-	Product and feature feedback is best handled through the Dynamics 365 Ideas Portal: https://ideas.dynamics.com/ideas/ 
