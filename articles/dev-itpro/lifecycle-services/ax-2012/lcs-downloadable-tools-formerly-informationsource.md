@@ -2,10 +2,10 @@
 # required metadata
 
 title: Lifecycle Services downloadable tools (AX 2012)
-description: 
-author: RobinARH
+description: This topic provides information about the tools that are available for download from Lifecycle Services (LCS).
+author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
