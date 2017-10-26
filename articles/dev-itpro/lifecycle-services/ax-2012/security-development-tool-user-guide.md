@@ -2,7 +2,7 @@
 # required metadata
 
 title: Security Development Tool (AX 2012)
-description: 
+description: This topic provides information about how to create and maintain security artifacts such as roles, duties, and privileges by using the Security Development Tool.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
