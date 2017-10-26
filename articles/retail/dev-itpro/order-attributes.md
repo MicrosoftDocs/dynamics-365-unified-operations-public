@@ -35,7 +35,7 @@ Previously, the attribute framework supported attributes only in online orders. 
 
 ## Why and when you should customer attributes
 
-If you want to add new fields to cash-and-carry transactions, customer orders, or call center orders, and if you want to capture the information in the POS or Retail headquarters, use customer attributes. Previously, to add a new field to a cash-and-carry transaction (transaction header or lines) or a customer order in the POS, you had to create a new extension table in Retail headquarters and the channel database, and then make inline changes to CRT and POS code to handle the various screens and operations. You also had to configure Commerce Data Exchange to synchronize the data between the channel database and Retail headquarters. However, customer attributes now let you complete all these actions through configuration. You don't have to write any code or create custom extension tables except the core business logic and the POS UI.
+If you want to add new fields to cash-and-carry transactions, customer orders, or call center orders, and if you want to capture the information in the POS or Retail headquarters, use customer attributes. Previously, to add a new field to a cash-and-carry transaction (transaction header or lines) or a customer order in the POS, you had to create a new extension table in Retail headquarters and the channel database, and then make inline changes to CRT and POS code to handle the various screens and operations. You also had to configure Commerce Data Exchange to synchronize the data between the channel database and Retail headquarters. However, customer attributes now let you complete all these actions through configuration. You don't have to write any code or create custom extension tables, but you still need to create the core business logic and the POS UI.
 
 This first version supports only the **String** attribute type, but future versions will support other attribute types. If you want the data to come from the master table, and that data involves complex search logic and core business logic in X++, you should use extension properties.
 
@@ -73,8 +73,8 @@ Next, you must define the attributes. Follow these steps for each attribute that
 ## Link the attribute group to the channel
 
 1. Go to **Retail** > **Channels** > **Retail stores** > **All retail stores**.
-2. Select the channel that the attributes on the channel page should be linked for.
-3. On the **Set up** tab, select the **Sales order attributes** under the **attribute group**.
+2. Select the channel that the attributes on the **Channel** page should be linked to.
+3. On the **Set up** tab, select **Sales order attributes** under **Attribute group**.
 4. On the **Sales order attribute groups** page, select **New** to link the attribute group to the channel.
 5. In the **Name** field, select the attribute group to link to the channel.
 6. In the **Apply attributes to** field, select one of the following options:
@@ -97,12 +97,12 @@ After you configure the order attributes for the channel, go to **Customer servi
 
 1. After or during the creation of a customer order, if you want to set an attribute value for the transaction header, on the Action Pane, on the **Retail** tab, select **Retail Attributes**.
 2. On the **Sales order attributes values** page, you can set the values for the attributes. The list of attributes on this page is based on the attribute group that you configured for the channel.
-3. To set attribute values at the line level, on the **Sales order** page, select the **Lines** view, and then select the line to set the attribute value for. Under the **Sales order lines group**, select **Retail** > **Retail attributes**.
+3. To set attribute values at the line level, on the **Sales order** page, select the **Lines** view, and then select the line to set the attribute value for. Under **Sales order lines group**, select **Retail** > **Retail attributes**.
 4. Repeat step 3 for all the sales lines that you want to set the values for.
 
 ## View the attributes values for cash-and-carry transactions in Retail headquarters
 
-After you've run the job and pulled a cash-and-carry transaction into Retail headquarters, you can view the attribute values for that transaction. The POS doesn't provide a UI for viewing order attributes. Therefore, to view the order attribute values, you must extend the POS.
+After you've run the distribution job and pulled a cash-and-carry transaction into Retail headquarters, you can view the attribute values for that transaction. The POS doesn't provide a UI for viewing order attributes. Therefore, to view the order attribute values, you must extend the POS.
 
 1. Go to **Retail** > **Inquires and reports** > **Retail store transactions**.
 2. To view the transaction header attributes, on the Action Pane, select **Retail attributes**.
@@ -116,7 +116,7 @@ After you've run the job and pulled a cash-and-carry transaction into Retail hea
 
 A new sample that has been added to the Retail SDK adds business logic for order attributes in CRT. This sample includes code only for the business logic. It doesn't show how to save or read the attributes, because read and write operations for attributes are automated.
 
-The sample implements the following scenario: Whenever you suspend a cart and then set some attribute value and clear it when you resume the cart. A pre-trigger was added for **SuspendCartRequest**, and the business logic was written. You can extend any trigger or override any request in CRT to set the logic, based on your scenario.
+The sample implements the following scenario: Whenever you suspend a cart, you set set an attribute value. When you resume the cart, you want to clear that value. A pre-trigger was added for **SuspendCartRequest**, and the business logic was written. You can extend any trigger or override any request in CRT to set the logic, based on your scenario.
 
 You can find the full sample code in the Retail SDK at Retail SDK\\SampleExtensions\\CommerceRuntime\\Extensions.TransactionAttributesSample.
 
@@ -222,7 +222,7 @@ You can find the full sample code in the Retail SDK at Retail SDK\\POS\\Extensio
      * @param {Triggers.IPreEndTransactionTriggerOptions} options The options provided to the trigger.
      */
 
-    public execute(options: Triggers.IPreEndTransactionTriggerOptions): Promise&lt;ClientEntities.ICancelable {
+    public execute(options: Triggers.IPreEndTransactionTriggerOptions): Promise<ClientEntities.ICancelable {
         console.log("Executing PreEndTransactionTrigger with options " + JSON.stringify(options) + ".");
         let currentCart: ProxyEntities.Cart;
         return this.context.runtime.executeAsync<GetCurrentCartClientResponse>(new GetCurrentCartClientRequest())
@@ -232,7 +232,7 @@ You can find the full sample code in the Retail SDK at Retail SDK\\POS\\Extensio
             // Gets the current customer.
             let result: Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>>;
             if (!ObjectExtensions.isNullOrUndefined(currentCart) && !ObjectExtensions.isNullOrUndefined(currentCart.CustomerId)) {
-                let getCurrentCustomerClientRequest: GetCustomerClientRequest&lt;GetCustomerClientResponse =
+                let getCurrentCustomerClientRequest: GetCustomerClientRequest<GetCustomerClientResponse =
                     new GetCustomerClientRequest(currentCart.CustomerId);
                 result = this.context.runtime.executeAsync<GetCustomerClientResponse>(getCurrentCustomerClientRequest);
             } else {
@@ -274,7 +274,7 @@ You can find the full sample code in the Retail SDK at Retail SDK\\POS\\Extensio
         }
         return result;
     })
-    .then((showMessageDialogClientResponse: ClientEntities.ICancelableDataResult&lt;ShowMessageDialogClientResponse):
+    .then((showMessageDialogClientResponse: ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse):
         Promise<ClientEntities.ICancelableDataResult<SaveAttributesOnCartClientResponse>> => {
         // Save the B2B attribute value depending on the dialog result.
         let messageDialogResult: ClientEntities.Dialogs.IMessageDialogResult = showMessageDialogClientResponse.data.result;
