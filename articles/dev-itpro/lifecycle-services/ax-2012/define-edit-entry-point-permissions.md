@@ -2,10 +2,10 @@
 # required metadata
 
 title: Define or edit entry point permissions (AX 2012)
-description: 
+description: This topic provides information about how to create or modify entry point permissions in Dynamics AX. 
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
