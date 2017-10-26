@@ -107,5 +107,4 @@ The following illustrations show an example of a template mapping in Data integr
 
 ![Template mapping in Data integration](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
-## Related topics
 
