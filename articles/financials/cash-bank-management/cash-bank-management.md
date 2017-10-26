@@ -5,7 +5,7 @@ title: Cash and bank management home page
 description: You can use Cash and bank management to maintain the legal entity’s bank accounts and the financial instruments that are associated with those bank accounts. 
 author: twheeloc
 manager: AnnBe
-ms.date: 08/21/2017
+ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -98,10 +98,10 @@ features are in development.
 
 #### Blogs
 
-You can find opinions, news, and other information about Cash and bank managment and other solutions on the [Microsoft Dynamics 365 blog]
+You can find opinions, news, and other information about Cash and bank management and other solutions on the [Microsoft Dynamics 365 blog]
 (https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
-There are many posts about Cash and bank managment on the [Microsoft Dynamics AX product team blog](https://blogs.msdn.microsoft.com/dax/). Although some of these posts were written for the previous version of Cash and bank managment, the same concepts still apply, and the procedures are also similar in the current version.
+There are many posts about Cash and bank management on the [Microsoft Dynamics AX product team blog](https://blogs.msdn.microsoft.com/dax/). Although some of these posts were written for the previous version of Cash and bank management, the same concepts still apply, and the procedures are also similar in the current version.
 
 The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) 
 gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
