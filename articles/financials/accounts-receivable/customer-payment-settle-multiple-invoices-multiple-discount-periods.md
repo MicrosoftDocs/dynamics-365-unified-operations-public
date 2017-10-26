@@ -2,10 +2,10 @@
 # required metadata
 
 title: Use a customer payment to settle multiple invoices that span multiple discount periods
-description: This article shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in his article highlight how the cash discounts that are taken vary, depending on when the payment is made.
+description: This topic shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in his article highlight how the cash discounts that are taken vary, depending on when the payment is made.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in his article highlight how the cash discounts that are taken vary, depending on when the payment is made.
+This topic shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in his article highlight how the cash discounts that are taken vary, depending on when the payment is made.
 
 Fabrikam sells goods to customer 4032. Fabrikam offers a cash discount of 1 percent if the invoice is paid in 14 days. Fabrikam also offers cash discounts on partial payments. The settement parameters are located on the **Accounts receivable parameters** page.
 
@@ -91,7 +91,7 @@ If Arnie wants the payment amount to be only 1,485.00, he clicks **No** and then
 
 1.  Invoice FTI-10040 is fully settled for 1,000.00, because it was entered on May 15 and is the oldest invoice. No cash discount is taken. The remaining amount on the payment transaction is 485.00.
 2.  Invoice FTI-10041 isn't settled at all. Invoices FTI-10041 and FTI-10042 were entered on the same date. However, a 1-percent discount is available to invoice FTI-10041, and a 2-percent discount is available to invoice FTI-10042. Because a better discount is available to invoice FTI-10042, the remaining 485.00 is settled with invoice FTI-10042.
-3.  Invoice FTI-10042 is settled with the remaining 485.00. Fabrikam offers partial discounts. In this case, the discount is 9.90 (= 485.00 ÷ 0.98 × 0.02). The amount (485.00) is divided by 0.98, because there is a 2-percent discount (therefore,the customer pays 98 percent of the invoice). The result is then multiplied by the discount percentage, or 2 percent. The payment of 485.00 plus the discount of 9.90 equals 494.90. The amount of the original invoice was 1,000.00. Therefore, the transaction has a balance of 505.10 (= 1,000.00 – 494.90).
+3.  Invoice FTI-10042 is settled with the remaining 485.00. Fabrikam offers partial discounts. In this case, the discount is 9.90 (= 485.00 ÷ 0.98 × 0.02). The amount (485.00) is divided by 0.98, because there is a 2-percent discount (therefore, the customer pays 98 percent of the invoice). The result is then multiplied by the discount percentage, or 2 percent. The payment of 485.00 plus the discount of 9.90 equals 494.90. The amount of the original invoice was 1,000.00. Therefore, the transaction has a balance of 505.10 (= 1,000.00 – 494.90).
 
 Arnie views the information on the **Customer transactions** page.
 
