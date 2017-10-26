@@ -102,9 +102,7 @@ Go to **Settings** > **Administration** > **System settings** > **Sales**, and m
 
 - A price list is required in order to create invoices in Sales. Update the value map for **pricelevelid.name \[Price list name\]** to the price list that is used in Sales per currency. You can use the default price list for a single currency. Alternatively, if you have price lists in multiple currencies, you can use a value map.
 
-    The template value for **pricelevelid.name \[Price list name\]** is a value map that is based on currency.
-
-    usd: CRM Service USA (sample).
+    The template value for **pricelevelid.name \[Price list name\]** is CRM Service USA (sample).  
 
 #### SalesInvoiceLine task
 
