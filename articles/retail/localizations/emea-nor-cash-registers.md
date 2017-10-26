@@ -71,12 +71,12 @@ Only transactions for cash sales are signed. Here are some examples of transacti
 
 The data that is signed is a text string that consists of the following data fields. The data fields are separated by semicolons.
 
-- Previous signature for the same POS (A zero [**0**] is used for the first transaction.)
-- Transaction date
-- Transaction time
-- Sequential signed transaction number
-- Transaction amount including tax
-- Transaction amount excluding tax
+1. Previous signature for the same POS (A zero [**0**] is used for the first transaction.)
+2. Transaction date
+3. Transaction time
+4. Sequential signed transaction number
+5. Transaction amount including tax
+6. Transaction amount excluding tax
 
 The digital signing process uses an RSA 1024-bit key that has a SHA-1 hash function (RSA-SHA1-1024). A certificate that is installed on Retail Server is used for signing. The unique identifier of the certificate (footprint) is recorded together with the signature.
 
@@ -147,7 +147,7 @@ Set the **Allow printing receipt copy** permission to an appropriate value:
 
 - **Allow always** – The operator can print a copy of a receipt multiple times.
 - **Allow only once** – The operator can print a copy of a receipt only one time.
-- **Allow only once, and only if HQ DB is available** – The operator can print a copy of a receipt only one time, and only if the HQ database is available through Real-Time service, so that the system can verify that no copies of the receipt have previously been printed in any store.
+- **Allow only once, and only if HQ DB is available** – The operator can print a copy of a receipt only one time, and only if the HQ database is available through Commerce Data Exchange: Real-time Service, so that the system can verify that no copies of the receipt have previously been printed in any store.
 - **Never** – The operator can't print a copy of a receipt.
     
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
