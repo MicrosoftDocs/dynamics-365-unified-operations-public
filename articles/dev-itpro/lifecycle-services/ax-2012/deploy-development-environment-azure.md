@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploy a development environment on Azure (AX 2012)
-description: This topic provides information about how to deploy a development environment on Azure. 
+description: This topic provides information about how to deploy a development environment on Microsoft Azure. 
 author: kfend
 manager: AnnBe
 ms.date: 10/26/2017
