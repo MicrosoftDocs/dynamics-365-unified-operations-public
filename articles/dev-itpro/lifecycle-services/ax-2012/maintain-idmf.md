@@ -2,10 +2,10 @@
 # required metadata
 
 title: Maintainance in the Intelligent Data Management Framework (AX 2012)
-description: 
+description: This topic provides information about the database settings in the Intelligent Data Management Framework (IDMF).
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
