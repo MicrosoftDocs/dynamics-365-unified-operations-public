@@ -113,6 +113,8 @@ The following illustration shows an example of a template mapping in Data integr
 
 ## Related topics
 
+[Prospect to cash](prospect-to-cash.md)
+
 [Synchronize accounts directly from Sales to customers in Finance and Operations](accounts-template-mapping-direct.md)
 
 [Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](contacts-template-mapping-direct.md)
