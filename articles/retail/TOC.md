@@ -242,9 +242,6 @@
 ### [Retail SDK samples ](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [Channel database (DB) extensions](dev-itpro/channel-db-extensions.md)
 ### [CDX extensibility](dev-itpro/cdx-extensibility.md)
-### [Order attributes](dev-itpro/order-attributes.md)
-### [Customer attributes](dev-itpro/customer-attributes.md)
-### [Retail Typescript and C# proxy](dev-itpro/typescript-proxy-retail-pos.md)
 
 
 ## Commerce runtime
