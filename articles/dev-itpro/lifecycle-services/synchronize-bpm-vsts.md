@@ -1,4 +1,4 @@
- ---
+---
 title: Synchronize a BPM library with Visual Studio Team Services
 description: This topic provides information about how to synchronize a BPM library in LCS wtih Visual Studio Team Services (VSTS).
 author: kfend
