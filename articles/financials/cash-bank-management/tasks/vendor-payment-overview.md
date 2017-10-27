@@ -5,7 +5,7 @@ title: Vendor payment overview
 description: This task guide will walk you through various methods used to create vendor payments, including how to use a payment proposal or manually entering a one-off payment. 
 author: kweekley
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 10/27/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -59,7 +59,7 @@ This task guide will walk you through various methods used to create vendor paym
 18. Scan your payments and make sure the method of payment is defined for all payments. 
     * If you generate the payments, such as printing a cheque or creating an electronic payment, the method of payment must be defined. The method of payment will also default the bank account from the payment will be made.  
 19. Click New to create a one-off payment.
-    * A one-off payment can be added to a payment journal at any time prior to posting. This is done by clicking the New button and adding the payment information manually, rather then using the Payment proposal.  
+    * A one-off payment can be added to a payment journal at any time prior to posting. This is done by clicking the New button and adding the payment information manually, rather than using the Payment proposal.  
 20. Select the vendor to whom the payment will be made.
 21. If an invoice exists to pay, select Settle transactions to select the invoice for payment.
     * If this is a prepayment, this step is optional. You can create the payment without selecting any invoice.  
@@ -72,7 +72,7 @@ This task guide will walk you through various methods used to create vendor paym
 26. Click Yes.
 27. Choose Generate payment to print Cheques or create the electronic payment file.
 28. Select the method of payment that you want to generate.
-    * The payment journal can contains payments for both Cheques and electronic payments, but you can only generate one payment type at a time.  
+    * The payment journal can contain payments for both Cheques and electronic payments, but you can only generate one payment type at a time.  
 29. Select the bank account from which to generate the payments.
 30. Click OK.
     * Payments will only be generated for payments that match the Method of payment and Bank account you selected.  
