@@ -5,7 +5,7 @@ title: Set up fixed assets
 description: This topic provides an overview of Fixed assets module setup.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/02/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -61,12 +61,12 @@ For more information, see [Set up books](tasks/set-up-value-models.md).
 ## Fixed asset posting profiles
 After you set up books, you can create the posting profile. The posting profile must be defined by book, but it can also be defined at a more detailed level. For example, you can define the posting profile for the combination of a book and a fixed asset group, or even for an individual fixed asset book. By default, the ledger accounts that are defined are used for your fixed asset transactions.
 
-You must define the ledger accounts that are used during the disposal processes, both disposal sales and disposal scraps. At the time of disposal, the fixed asset transactions that were previously posted are reversed out of the original accounts, and the net amounts are moved to the appropriate account for gain and loss for asset disposal. To help guarantee that transactions are correctly reversed, you must set up accounts for each type of transaction that you use in your business. The main account should be the original account that you set on the posting profile for the transaction type, and the offset account should be your gain and loss for disposal account. The exception is the net book value. In this case, both the main account and the offset account should be set to the gain and loss for disposal account. For more informations, see [Set up fixed asset posting profiles](tasks/set-up-fixed-asset-posting-profiles.md)
+You must define the ledger accounts that are used during the disposal processes, both disposal sales and disposal scraps. At the time of disposal, the fixed asset transactions that were previously posted are reversed out of the original accounts, and the net amounts are moved to the appropriate account for gain and loss for asset disposal. To help guarantee that transactions are correctly reversed, you must set up accounts for each type of transaction that you use in your business. The main account should be the original account that you set on the posting profile for the transaction type, and the offset account should be your gain and loss for disposal account. The exception is the net book value. In this case, both the main account and the offset account should be set to the gain and loss for disposal account. For more information, see [Set up fixed asset posting profiles](tasks/set-up-fixed-asset-posting-profiles.md)
 
 ## Fixed asset groups
 Fixed asset group is the only required field when you create a fixed asset. The value of this field determines the default value of several informational fields for the asset. Books are set up so that a default book is assigned to each asset in a group. You can then set attributes for the books that are specific to a group of assets, such as Service life and Depreciation convention.
 
-You can also define special depreciation allowances, or bonus depreciation, for a specific combination of a fixed asset group and a book. You must assign a priority to the special depreciation allowance to specify the order that allowances are calculated in when multiple allowances are assigned to a book. For more informations, see [Set up fixed asset groups](tasks/set-up-fixed-asset-groups.md)
+You can also define special depreciation allowances, or bonus depreciation, for a specific combination of a fixed asset group and a book. You must assign a priority to the special depreciation allowance to specify the order that allowances are calculated in when multiple allowances are assigned to a book. For more information, see [Set up fixed asset groups](tasks/set-up-fixed-asset-groups.md)
 
 ## Fixed asset parameters
 The last step is to update the fixed asset parameters.
@@ -81,5 +81,5 @@ You can configure reason codes so that they are required for changes to a fixed 
 
 Finally, on the Number sequences tab, you define number sequences for Fixed assets. The Fixed asset number sequence can be overridden by the Fixed asset group number sequence if it has been specified.
 
-For more information, see [Create a fixed assets](tasks/create-fixed-asset.md).
+For more information, see [Create a fixed asset](tasks/create-fixed-asset.md).
 
