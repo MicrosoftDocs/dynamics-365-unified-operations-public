@@ -2,10 +2,10 @@
 # required metadata
 
 title: Sales tax overview
-description: This article provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
+description: This topic provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,7 +39,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[retail name](../includes/retail-name.md)]
 
 
-This article provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
+This topic provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
 
 Overview
 --------
@@ -65,7 +65,7 @@ The following table describes the entities and the sequence for the tax setup.
 | Setup activity                                                  | Required/Optional and description                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Create main accounts.                                           | Required. Before you can set up the sales tax functionality, the main accounts that the company uses to pay and record taxes must be created.                                                                                                                                                                             |
-| Set up ledger posting groups for sales tax.                     | Required. Ledger posting groups define the main accounts for recording and paying sales taxes.   For more information, see [Set up ledger posting groupss for sales tax](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
+| Set up ledger posting groups for sales tax.                     | Required. Ledger posting groups define the main accounts for recording and paying sales taxes.   For more information, see [Set up ledger posting groups for sales tax](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
 | Set up sales tax authorities.                                   | Required. Sales tax authorities are the entities that tax must be reported and paid to.    For more information, see [Set up sales tax authorities](tasks/set-up-sales-tax-authorities.md).                                                                                                                                          |
 | Set up sales tax settlement periods.                            | Required. Sales tax settlement periods contain information about when and how often sales tax must be reported and paid. They are related to a sales tax authority.                                                                                                                                                       |
 | Set up sales tax reporting codes.                               | Optional. Sales tax reporting codes can be assigned to sales tax codes to report amounts for multiple sales tax codes under one sales tax reporting code. For more information, see [Set up sales tax reporting codes](tasks/set-up-sales-tax-reporting-codes.md).                                         |

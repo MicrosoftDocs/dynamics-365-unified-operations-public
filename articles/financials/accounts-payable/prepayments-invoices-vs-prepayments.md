@@ -2,10 +2,10 @@
 # required metadata
 
 title: Prepayment invoices vs. prepayments
-description: This article provides describes and contrasts the two methods that organizations can use for advance payments (prepayments). In one method, you create a prepayment invoice that is associated with a purchase order. In the other method, you create prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers.
+description: This topic describes and contrasts the two methods that organizations can use for advance payments (prepayments). In one method, you create a prepayment invoice that is associated with a purchase order. In the other method, you create prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides describes and contrasts the two methods that organizations can use for advance payments (prepayments). In one method, you create a prepayment invoice that is associated with a purchase order. In the other method, you create prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers.
+This topic describes and contrasts the two methods that organizations can use for advance payments (prepayments). In one method, you create a prepayment invoice that is associated with a purchase order. In the other method, you create prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers.
 
 Organizations might issue prepayments (advance payments) to vendors for goods or services before those goods or services are fulfilled. Two methods can be used to issue prepayments to vendors. To minimize risk, you can track prepayments by defining the prepayment on a purchase order. For this method, you must create a prepayment invoice that is associated with a purchase order. This method is referred to as prepayment invoicing. Organizations that don't want to track prepayments as closely or don't receive a prepayment invoice from their vendor can use prepayment journal vouchers instead of the prepayment invoicing method. You can create prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers. For this method, you can't track which prepayments to a vendor are made against which purchase orders. However, you can mark a posted prepayment for settlement against a purchase order.
 
@@ -60,7 +60,7 @@ Accounting practices in many countries/regions require that prepayments from a c
 7.  After the vendor delivers the goods or services, record the invoice. If you settled the prepayment against the purchase order or sale order in step 6, the prepayment is automatically settled against the invoice that you created. If you didn't settle the prepayment against the purchase order or sales order, you can manually settle it against the invoice by using **Settle transactions** on the customer or vendor page. The prepayment amount is then reversed out of the temporarily AP/AR ledger account. Additionally, if taxes were calculated, they are reversed, because the invoice has the actual taxes.
 
 ## Overview of the prepayment invoicing process
-Prepayment invoices are a common business practice. A vendor issues prepayment invoices to require a deposit on the purchase before the purchase order is fulfilled. For example, some vendors require a prepayment for custom goods or services. If an vendor issues an invoice that requests prepayment, you can use the prepayment invoicing feature. A prepayment value can be defined on the purchase order, a prepayment invoice is recorded and paid, and then the prepayment invoice is applied to the final invoice. Follow these steps to create a prepayment.
+Prepayment invoices are a common business practice. A vendor issues prepayment invoices to require a deposit on the purchase before the purchase order is fulfilled. For example, some vendors require a prepayment for custom goods or services. If a vendor issues an invoice that requests prepayment, you can use the prepayment invoicing feature. A prepayment value can be defined on the purchase order, a prepayment invoice is recorded and paid, and then the prepayment invoice is applied to the final invoice. Follow these steps to create a prepayment.
 
 1.  The purchasing agent creates, confirms, and then submits a purchase order that the vendor has requested prepayment for. The prepayment value is defined on the purchase order as part of the agreement.
 2.  The vendor submits a prepayment invoice.

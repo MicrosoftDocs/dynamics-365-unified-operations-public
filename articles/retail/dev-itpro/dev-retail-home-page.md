@@ -107,6 +107,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Channel database (DB) extensions](channel-db-extensions.md) 
 - [CDX extensibility](cdx-extensibility.md)
 
+
 ## eCommerce
 -   [e-Commerce platform](ecommerce-platform.md)
 -   [e-Commerce platform SDK](ecommerce-platform-sdk.md)

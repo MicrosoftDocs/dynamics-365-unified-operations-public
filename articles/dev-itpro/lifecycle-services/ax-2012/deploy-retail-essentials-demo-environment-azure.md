@@ -2,10 +2,10 @@
 # required metadata
 
 title: Deploy a Retail essentials demo environment on Azure (AX 2012)
-description: 
+description: This article explains how to deploy a Retail essentials demo environment on Microsoft Azure.
 author: aamirallaqaband
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 

@@ -2,10 +2,10 @@
 # required metadata
 
 title: System diagnostics 
-description: 
+description: This topic provides information about System diagnostics in Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 

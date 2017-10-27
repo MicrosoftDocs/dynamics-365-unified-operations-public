@@ -5,7 +5,7 @@ title: Close Accounts receivable
 description: The following topic lists the pages that support the close Accounts receivable business process.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -48,7 +48,7 @@ Close periods in the general ledger
 
 | Page name                            | Usage                                                                                      |
 |--------------------------------------|--------------------------------------------------------------------------------------------|
-|Batch job                             | View or create batch jobs. Batch jobs might not be completed, and you want make sure that all posting is completed.                                                                                                               |
+|Batch job                             | View or create batch jobs. Batch jobs might not be completed, and you want to make sure that all posting is completed.                                                                                                               |
 |Confirm sales order                   | Update sales orders.                                                                       |
 |Foreign currency revaluation          | Generate transactions that update the value of open customer transactions in foreign currencies.                                                                                                                         |
 | Journal                              | Post invoices, payments, and promissory notes.                                             |

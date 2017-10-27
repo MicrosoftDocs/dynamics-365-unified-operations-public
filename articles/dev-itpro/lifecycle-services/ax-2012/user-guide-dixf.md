@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data import/export framework user guide (AX 2012)
-description: 
+description: This topic provides information about how to use the Data import/export framework (DIXF) in Dynamics AX.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 

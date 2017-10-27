@@ -5,7 +5,7 @@ title: Behavioral properties on data entities
 description: This topic describes the behavioral data entity properties that let you override property values on the tables or views that are the data sources of that entity. 
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -161,7 +161,7 @@ This behavior is enforced for all consumers – X++, OData, and so on. <strong>
 <td>Allow edit</td>
 <td>Auto, No, Yes</td>
 <td>Auto</td>
-<td>The behavior is the same as the behavior for <strong>AllowEditOnCreate</strong>, but it applies to updates to <em>existing</em> records instead of new records that are being created.This behavior is enforced for all consumers – X++, OData, and so on.</td>
+<td>The behavior is the same as the behavior for <strong>AllowEditOnCreate</strong>, but it applies to updates to <em>existing</em> records instead of new records that are being created. This behavior is enforced for all consumers – X++, OData, and so on.</td>
 </tr>
 <tr class="odd">
 <td>Behavior</td>
@@ -169,7 +169,7 @@ This behavior is enforced for all consumers – X++, OData, and so on. <strong>
 <td>Mandatory</td>
 <td>Auto, No, Yes</td>
 <td>Auto</td>
-<td><strong>Auto:</strong> The property is inherited from the underlying table field.This behavior is enforced for all consumers – X++, OData, and so on. <strong>Important:</strong> The <strong>No</strong> and <strong>Yes</strong> values do <em>not</em> override the setting on the field in the underlying table.</td>
+<td><strong>Auto:</strong> The property is inherited from the underlying table field. This behavior is enforced for all consumers – X++, OData, and so on. <strong>Important:</strong> The <strong>No</strong> and <strong>Yes</strong> values do <em>not</em> override the setting on the field in the underlying table.</td>
 </tr>
 </tbody>
 </table>

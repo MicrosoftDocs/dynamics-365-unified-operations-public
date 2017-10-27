@@ -5,7 +5,7 @@ title: Synchronize sales order headers and lines from Finance and Operations to 
 description: The topic discusses the templates and underlying tasks that are used to synchronize sales order headers and lines from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to Microsoft Dynamics 365 for Sales. 
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -119,7 +119,7 @@ Before synchronizing sales orders, it is important to update the systems with th
 
 ### Setup in Finance and Operations
 
-Set **Sales and marketing** > **Periodic tasks** > **Calculate sales totals** to run as a batch job, with **Calculate totals for sales orders** set to **Yes**. This is important because only the sales orders with sales totals calculated will be synced to CDS and Sales. The frequence of the batch job should be alligned with the frequence of the sales order synchronization.
+Set **Sales and marketing** > **Periodic tasks** > **Calculate sales totals** to run as a batch job, with **Calculate totals for sales orders** set to **Yes**. This is important because only the sales orders with sales totals calculated will be synced to CDS and Sales. The frequency of the batch job should be alligned with the frequency of the sales order synchronization.
 
 ### Setup in the Data integration project
 
