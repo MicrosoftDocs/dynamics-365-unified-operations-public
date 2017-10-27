@@ -30,12 +30,10 @@ ms.dyn365.ops.version: Platform update 11
 ---
 # Generate demo data by using data packages
 
-[!include[banner](../includes/banner.md)]
-
-Demo data has been delivered as a database in prior releases. Starting in the Fall 2017 release, a variation of some of the demo data will also be released in LCS as data packages in the shared asset library. These packages are designed to be loaded onto an empty environment and you can choose which packages that you need to load for your demonstration. 
+Demo data has been delivered as a database in prior releases. Starting in the Fall 2017 release, a subset of the demo data with changes will also be released in LCS as data packages in the shared asset library. These packages are designed to be loaded onto an empty environment and you can choose which packages that you need to load for your demonstration. 
 
 Using data packages to deliver demo data provides some benefits over using the current database:
-1. The download times are signficantly smaller.
+1. The download times are signficantly faster.
 2. You can import only the data packages that you need.
 3. You can edit the spreadsheets to customize the data for your customers. 
 4. Updated demo data can be provided through LCS very quickly.
@@ -59,7 +57,7 @@ Once the package is loaded, you will have the following legal entities:
 | PICH | A process industries company focused on chemicals. |
 | PIFB | A process industries company focused on food and beverage. |
 
-You can expect approximately 30 minutes to load this package. The time required to import this package will vary based on the speed of your instance.   
+You can expect approximately 30 minutes to load this package. However, the time required to import this package will vary based on the speed of your instance.   
 
 ### Financials
 The **Financial** data packages contain data for general ledger, bank, accounts payable, tax, accounts receivable, fixed assets, and budgeting for a single company. These data packages are entitled "200 - Financials" followed by the legal entity for which they were intended. For examples, the financial data packages for HQUS are entitled "200 - Financials - HQUS.zip".
@@ -68,7 +66,7 @@ At least two financials companies are required for cross company tasks such as c
 
 The financial data packages also have five inventory products to support the creation of invoices that will move through the accounts receivables and accounts payables processes. These items use a minimum of inventory and product functionality to support those process while eliminating complexity of setting up products when you want to demonstrate only financials functionality. More complete products will be added when you import the supply chain packages.  
 
-You can expect approximately 15 minutes to load each package. The time required to import this package will vary based on the speed of your instance.
+You can expect approximately 15 minutes to load each package. However, the time required to import this package will vary based on the speed of your instance.
 
 ### Supply chain
 There are several packages that contain the supply data for a company.
