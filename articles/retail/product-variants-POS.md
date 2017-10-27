@@ -32,7 +32,7 @@ On inventory look up page, in addition to the *current quantity on hand, reserve
 
 ![ATP](media/ATP.png)
 
-**How to navigate to 'Dimension based matrix view' showing all variants availability information?
+**How to navigate to 'Dimension based matrix view' showing all variants availability information?**
 
 There are two ways to navigate to **'Dimension based matrix view'** and on following two pages 
 	1. Product details page and
