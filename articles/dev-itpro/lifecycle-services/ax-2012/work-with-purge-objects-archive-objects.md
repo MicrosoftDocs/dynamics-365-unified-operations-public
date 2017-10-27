@@ -2,10 +2,10 @@
 # required metadata
 
 title: Purge and archive objects (AX 2012)
-description: 
+description: This topic provides information about purge and archive objects in the Intelligent Data Management Framework (IDMF).
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
