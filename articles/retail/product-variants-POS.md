@@ -20,7 +20,7 @@ On inventory look-up page along with quantity on-hand, you shall also notice the
 
 **Ordered quantity** refers to *'Ordered in total'* value from back-office for an entered product number at the given location. 
 
-** What’s the nature of locations for which inventory availability information is shown? **
+**What’s the nature of locations for which inventory availability information is shown?**
 
 The locations list comprises of two types of entities - **Retail stores** & **Distribution centers**. 
 
