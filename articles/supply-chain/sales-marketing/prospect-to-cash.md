@@ -45,6 +45,8 @@ This solution provides integration in the following areas:
 -   [Create sales orders in Finance and Operations and sync them to Sales](sales-order-template-mapping.md)
 -   [Create sales invoices in Finance and Operations and sync them to Sales](sales-invoice-template-mapping.md)
 
+This solution provides direct synchronization in the following areas:
+
 -   [Maintain accounts in Sales and sync them directly from Sales to Finance and Operations](accounts-template-mapping-direct.md)
 -   [Maintain products in Finance and Operations and sync them directly to Sales](products-template-mapping-direct.md)
 -   [Maintain contacts in Sales and sync them directly to contacts or customers in Finance and Operations](contacts-template-mapping-direct.md)
