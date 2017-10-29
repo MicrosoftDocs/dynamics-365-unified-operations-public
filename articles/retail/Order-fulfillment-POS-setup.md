@@ -1,6 +1,3 @@
-
-
-
 ---
 # required metadata
 
@@ -55,7 +52,7 @@ The order fulfillment operation does not have its own permission out of the box,
 
 At the store level, a configuration setting is available that determines whether an order line must be accepted manually from within the point of sale. If that configuration option is not set, order lines will be accepted by default. If that configuration option is turned on, users at the point of sale will need to have the 'Allow accept order' permission to accept orders from within the point of sale. 
 
-Order lines may also be rejected from the point of sale. Rejecting an order line signifies that it will not be fulfilled at that store and sends the order line back for reassignment to another store or warehouse. Order line rejection permission is granted through the 'Allow order reject' permission. 
+Order lines may also be rejected from the point of sale. Rejecting an order line signifies that it will not be fulfilled at that store and sends the order line back for reassignment to another store or warehouse. Order line rejection permission is granted through the 'Allow order reject' permission. The capability to reject order lines will be released as a hotfix shortly after AppUpdate 5 ships.
 
 ### Enabling manual order acceptance
 
@@ -85,7 +82,7 @@ The order fulfillment view lists order lines for fulfillment at the store and in
   - Customer name
   - Fulfillment status
   
-Additional information for a specific order line can be viewed by selecting the order line and then opening the flyout located just below the logged in user/shift information shown in the point of sale header. This flyout includes 2 tabs one for line details and another for order details. The line details tab includes the following information:
+Additional information for a specific order line can be viewed by selecting the order line and then opening the flyout located just below the logged in user/shift information shown in the point of sale header. This flyout includes 2 tabs- one for line details and another for order details. The line details tab includes the following information:
 
   - Quantity ordered
   - Quantity remaining to be shipped/picked up
@@ -113,15 +110,33 @@ By default, orders will have a status of 'Accepted'. Order status can be viewed 
 
 **Accept**: If "Manual accept" is configured at the channel level, lines must be first accepted before they can move through the order fulfillment process.
 
-**Pick**: The pick option supports several actions. First is "Picking" which updates the status of the order line so others in the store do not attempt to pick the same line. Next is "Print picking list" which will print a picking list for the selected line or lines and also update their status to "Picking". Finally is "Mark as picked" which indicates the line has been picked. "Mark as picked" initiates corresponding inventory transactions in the back office. Picking actions can be performed at the same time for multiple order lines across orders and for all modes of delivery.
+**Pick**: The pick option supports several actions. First is "Picking" which updates the status of the order line so others in the store do not attempt to pick the same line. Next is "Print picking list" which will print a picking list for the selected line or lines and also update their status to "Picking". Picking list formats are controlled as part of receipt formats. For more information on setting up receipt formats see [Receipt templates and printing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/receipt-templates-printing). Finally is "Mark as picked" which indicates the line has been picked. "Mark as picked" initiates corresponding inventory transactions in the back office. Picking actions can be performed at the same time for multiple order lines across orders and for all modes of delivery.
 
-**Reject**: Lines or partial lines may be rejected. This allows them to be reassigned from the back office to another store or warehouse. Lines may only be rejected if they have not yet been picked or packed. To reject a line that has already been picked or packed, that line must be unpicked or unpacked from the back office. 
+**Reject**: Lines or partial lines may be rejected. This allows them to be reassigned from the back office to another store or warehouse. Lines may only be rejected if they have not yet been picked or packed. To reject a line that has already been picked or packed, that line must be unpicked or unpacked from the back office. The capability to reject order lines will be released as a hotfix shortly after AppUpdate 5 ships.
 
-**Pack**: The pack option supports two actions. "Print packing slip" will print a packing slip for the selected lines and "Mark as packed" will and mark the lines as packed and mark the lines as delivered in the back office.  Only order lines that belong to the same order and have the same mode of delivery may be packed at the same time.
+**Pack**: The pack option supports two actions. "Print packing slip" will print a packing slip for the selected lines and "Mark as packed" will and mark the lines as packed and mark the lines as delivered in the back office.  Only order lines that belong to the same order and have the same mode of delivery may be packed at the same time.Packing slip formats are controlled as part of receipt formats. For more information on setting up receipt formats see [Receipt templates and printing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Ship**: The ship action will mark selected lines as 'Delivered' in the back office. Once a line has been fully shipped, it will not appear again in the store fulfillment view.
 
 **Pickup**: The pickup action adds the lines to the transaction view for pickup. If there are other lines on the order that aren't currently being picked up, they will be added to the transaction view with qantity zero. Once a line has been fully picked up, it will no longer appear in the order fulfillment view. 
+
+### Order fulfillment filtering
+
+Order fulfillment at the point of sale includes filtering to help the user easily find what they need. Filters can be changed through the action pane at the bottom of the point of sale screen. By default, a "Delivery type" filter is applied, based on how the operation is set up. If the operation is set up with the parameter "All orders" then that filter is applied when accessing order fulfillment. The same applies for the "Store pickup" and "Ship from store parameters". Other filters that can be applied to the order fulfillment view include:
+
+  - Customer number
+  - Customer name
+  - Customer email
+  - Order number
+  - Mode of delivery
+  - Receipt number
+  - Channel Reference ID
+  - Originating store number
+  - Line status
+  - Created date
+  - Delivery date
+  - Receipt date
+
 
 
 
