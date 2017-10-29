@@ -1,4 +1,4 @@
---
+---
 # required metadata
 
 title: Display order notifications in Point of Sale
