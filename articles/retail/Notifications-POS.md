@@ -35,16 +35,13 @@ In today's modern retail environment, the store associates are assigned various 
 
 Currently, the system provides the capability to display notifications for Order fulfillment operation, however, the framework is designed to be extensible, so that, in near future, the developers will be able to write notification handler for any operation and display the notifications on POS.  
 
- ## Enable the notifications for order fulfillment operation
+## Enable the notifications for order fulfillment operation
 
 To enable the notification for the order fulfillment operation, follow the below steps:
 
 * Navigate to Operations form - Retail > Channel setup > POS setup > POS > Operations
 * Search for the Order fulfillment operation and select the "Enable notifications" checkbox for this operation. This indicates to the notification framework to listen to the handler for the Order fulfillment operation. If the handler is implemented, then the notifications will be displayed on POS, else, the notifications will not be displayed for this operation.
-
 * Navigate to the "POS permissions" associated with the workers and under the "Notifications" fast tab, add the Order fulfillment operation with the "Display order" as 1. When there is more than one notification configured, the display order is used to arrange the notification from top to bottom with 1 being on top. Only those operations can be added for which the "Enable notifications" checkbox has been checked. Also, the notifications will be displayed only for the operations that have been added here and only to those workers for whom the operations have been added to the corresponding POS permissions. 
-
- 
 
 Note:
 Notifications can be overridden at the user level by navigating to the worker's record and selecting "POS Permissions" then editing that user's notification subscription.
