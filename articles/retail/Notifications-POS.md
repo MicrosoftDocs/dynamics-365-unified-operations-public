@@ -28,14 +28,10 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 
-# Display
-notifications in Point of Sale
+# Display notifications in Point of Sale
 
- 
 
-In today's modern
-retail environment, the store associates are assigned various tasks such as
-helping customers, ringing transactions, performing stock counts, receiving
+In today's modern retail environment, the store associates are assigned various tasks such as helping customers, ringing transactions, performing stock counts, receiving
 orders in store etc. Our Point of Sale (POS) clients empower the associates to
 do these and much more, all in a single application. With various tasks to be
 performed during a day, there was a need to notify the associates, whenever
