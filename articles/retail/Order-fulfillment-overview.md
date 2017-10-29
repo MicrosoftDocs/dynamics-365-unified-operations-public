@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Store fulfillment
+title: Store order fulfillment overview
 description: This topic provides an overview for store order fulfillment. 
 author: rubencdelgado
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Order fulfillment in the Point of Sale
+# Store order fulfillment overview
 
 Many retailers would like to optimize order fulfillment by enabling stores to fill orders. Order fulfillment at the store level can help
 to ease overstock scenarios for a specific store, or may be desirable from a logistical standpoint in cases where a store has extra
