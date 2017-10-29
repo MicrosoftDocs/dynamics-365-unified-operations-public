@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 # Order fulfillment in the Point of Sale
 
-Many retailers would like to optimize order fulfillment byaenabling stores to fill orders. Order fulfillment at the store level can help
+Many retailers would like to optimize order fulfillment by enabling stores to fill orders. Order fulfillment at the store level can help
 to ease overstock scenarios for a specific store, or may be desirable from a logistical standpoint in cases where a store has extra
 capacity or is located within closer shipping distance to the customer. To address this need, a unified order fulfillment operation is
 available at the point of sale.
@@ -42,15 +42,12 @@ The order fulfillment operation in the point of sale provides a single work area
 ## Accessing unified order fulfillment in the point of sale
 
 Operation ID 928, “Order fulfillment”, can be added to a point of sale button grid to access the unified order fulfillment page in the
-point of sale. This operations is bound by the following permissions: 
+point of sale. 
 
-  - Allow create order
-  - Allow edit order
-  - Allow retrieve order
-  - Allow accept order 
-  - Allow reject order
+The order fulfillment operation does not have its own permission out of the box, but in the future, users may require the 'Allow retreive order' permission to invoke the operation from the point of sale.
 
-The operations ‘Allow accept order’ and ‘Allow reject order’ were created specifically for the unified order fulfillment operations, while the others are previously existing operations that have been extended to the ‘Allow accept order’ operation as applicable. 
+At the store level, a configuration setting is available that determines whether an order line must be accepted manually from within the point of sale. If that configuration option is not set, order lines will be accepted by default. If that configuration option is turned on, users at the point of sale will need to have the 'Allow accept order' permission to accept orders from within the point of sale.
+Order lines may also be rejected from the point of sale. Rejecting an order line signifies that it will not be fulfilled at that store and sends the order line back for reassignment to another store or warehouse. Order line rejection permission is granted through the 'Allow order reject' permission. The capability to reject order lines will be released as a hotfix shortly after AppUpdate 5 ships.
 
 ## Parameters for the Order fulfillment operation
 
@@ -109,7 +106,7 @@ Once an order has been accepted, lines may be selected and marked as ‘Picking�
 Picking lists can be printed at the point of sale to assist workers performing the picking process. A printed picking list can be carried with the worker performing picking and as products are picked, the worker would manually mark them as picked on the picking list. 
 
 The picking list format is configured in Dynamics 365 and added to the receipt profile. For more information about setting up receipt
-profiles, see: https://technet.microsoft.com/en-us/library/hh597197.aspx
+profiles, see [Receipt templates and printing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 If lines are selected and a picking list is printed for those lines, they are automatically updated with the status ‘Picking’. 
 
@@ -133,7 +130,7 @@ Order lines may be packed at any point after the order line has been accepted.
   Resuting status: Packed or Partially packed
   Resulting back office status: Delivered or Partially delivered
 
-This action marks lines as packed or partially packed and prints a packing slip. A packing slip can be printed to validate the products that have been packed together. The packing slip format is configured in Dynamics 365 and added to the receipt profile. For more information about setting up receipt profiles, see: https://technet.microsoft.com/en-us/library/hh597197.aspx
+This action marks lines as packed or partially packed and prints a packing slip. A packing slip can be printed to validate the products that have been packed together. The packing slip format is configured in Dynamics 365 and added to the receipt profile. For more information about setting up receipt profiles, see [Receipt templates and printing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Action: Mark as packed**
   Resuting status: Packed or Partially packed
@@ -144,7 +141,11 @@ The ‘Mark as packed’ action can be used to indicate that lines are packed wi
 
 If an order line is packed in error, the packing slip journal must be corrected at the back office. 
 
-Only lines on the same order and with the same mode of delivery can be packed at the same time. 
+Only lines on the same order and with the same mode of delivery can be packed at the same time.
+
+As of AppUpdate 5, the option to mark store pickup lines as "Packed" is disabled. This capability will be added via hotfix shortly after release of AppUpdate5. 
+
+Also after release of AppUpdate 5, the packing slip creation process will be enhanced to support injection of 3rd party shipping information into the packing slip process. 
 
 ## Pick up
 
@@ -182,19 +183,19 @@ Only lines from the same order may be shipped at the same time. If the lines fro
 
 ## Line quantity tracking
 
-A single order line of quantity greater than one may be processed over time, resulting in multiple sub states for order lines. For example, if a builder has a project that required 500 boards, but the builder will only pick up or have a few boards delivered over the course of the project, there could be quantities that are being picked, packed and shipped at the same time. 
+A single order line of quantity greater than one may be processed over time, resulting in multiple sub states for order lines. For example, if a builder has a project that required 500 boards, but the builder will only pick up or have a few boards delivered at a time over the course of the project, there could be quantities that are being picked, packed and shipped at the same time. 
 
-Any time a line is selected, the remaining amount for the line will be auto-filled to assume that the remaining quantity is being processed.Using the above example, if 200 boards have already been picked and the line for boards is selected for picking, the remaining quantity will be automatically filled in the quantity dialog. The same is true if 200 boards have already been invoiced. In that case, only the remaining quantity will be auto filled. 
+Any time a line is selected, the remaining amount for the line will be auto-filled to assume that the remaining quantity is being processed. Using the above example, if 200 boards have already been picked and the line for boards is selected for picking, the remaining quantity of 300 will be automatically filled in the quantity dialog. The same is true if 200 boards have already been invoiced. In that case, only the remaining quantity will be auto filled. 
 
 Continuing with the above example, if 200 boards are marked as packed and shipping is then selected, the full amount of 500 will be autofilled. If only 200 boards are shipped, the system will assume that the previously packed boards are being shipped and the packed quantity will be decremented. If 201 boards are shipped, the packed boards are first decremented with the remaining single board being decremented from the quantity remaining. 
 
 ## Line statuses explained
 
-Order lines in the point of sale have several statuses to reflect the state of the order line. Statuses in the point of sale and back office do not match in all cases. Order line status can be viewed through the point of sale using the order fulfillment operations. In the back office, order lines can be viewed from the order details. Order details can be accessed through Retail > Customers > All customer orders. Select the order ID to view order details. From order details select the sales order tab, then 'Detailed status' under the 'View' subheader. 
+Order lines in the point of sale have several statuses to reflect the state of the order line. Statuses in the point of sale and back office do not match in all cases. Order line status can be viewed through the point of sale using the order fulfillment operations. In the back office, order lines can be viewed from the order details. Order details can be accessed through **Retail** > **Customers** > **All customer orders**. Select the order ID to view order details. From order details select the sales order tab, then 'Detailed status' under the 'View' subheader. 
 
 **Pending**- Order lines that have been assigned to a store, but not yet accepted with have the "Pending" status when viewed at the point of sale. Lines pending acceptance in the point of sale will have the "Order processing" status in the back office.
 
-**Accepted**- Order lines that have been manually accepted or automatically accepted will have the status of "Accepted" whenviewed at the point of sale. Lines with the "Accepted" status will show as "Order processing" in the back office.
+**Accepted**- Order lines that have been manually accepted or automatically accepted will have the status of "Accepted" when viewed at the point of sale. Lines with the "Accepted" status will show as "Order processing" in the back office.
 
 **Picking**- Lines that are currently being picked at the store level have the status of "Picking". Those same lines, when viewed at the back office, will show as "Order processing".
 
@@ -206,4 +207,19 @@ Order lines in the point of sale have several statuses to reflect the state of t
 
 **Invoiced** Lines that have been fully invoiced at the point of sale will no longer show up for fulfillment. In the back office the status for those lines is "Invoiced".
 
+## Order fulfillment filtering
 
+Order fulfillment at the point of sale includes filtering to help the user easily find what they need. Filters can be changed through the action pane at the bottom of the point of sale screen. By default, a "Delivery type" filter is applied, based on how the operation is set up. If the operation is set up with the parameter "All orders" then that filter is applied when accessing order fulfillment. The same applies for the "Store pickup" and "Ship from store parameters". Other filters that can be applied to the order fulfillment view include:
+
+  - Customer number
+  - Customer name
+  - Customer email
+  - Order number
+  - Mode of delivery
+  - Receipt number
+  - Channel Reference ID
+  - Originating store number
+  - Line status
+  - Created date
+  - Delivery date
+  - Receipt date
