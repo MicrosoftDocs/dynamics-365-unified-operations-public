@@ -207,13 +207,13 @@ The client is an HTML web client that runs in all major browsers. For informati
 - [Mobile platform home page](../mobile-apps/platform/mobile-platform-home-page.md)
 
 ## Global finance management
-- [Dimension entry control dialog support](../financial/financial-dev-home-page.md)
+- [Financials development home page](../financial/financial-dev-home-page.md)
 
 ## Licensing
 - [ISV licensing](isv-licensing.md)
 
 ## Supply chain management
-- [Gantt development guide](..\user-interface\gantt-development-guide.md)
+- [Gantt development guide](../user-interface/gantt-development-guide.md)
 - [Create a new transportation management engine](..\..\articles\supply-chain\transportation\create-new-transportation-management-engine)
 
 # See also
