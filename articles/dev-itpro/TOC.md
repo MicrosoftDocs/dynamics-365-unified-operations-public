@@ -137,12 +137,6 @@
 #### [Change a label](extensibility/change-label.md)
 #### [Extend the number sequence scope](extensibility/extend-number-sequence-scope.md)
 
-## [Continuous delivery home page](dev-tools/continuous-delivery-home-page.md)
-### [Development and continuous delivery FAQ](dev-tools/continuous-delivery-faq.md)
-### [Exclude test packages from the build output](dev-tools/exclude-test-packages.md)
-### [Manage third-party models and runtime packages by using source control](dev-tools/manage-runtime-packages.md)
-### [Version models in the automated build](dev-tools/version-models-build.md)
-
 ## Performance home page
 ### [Take a trace using Trace parser](perf-test/trace-trace-tutorial.md)
 ### [PerfSDK and multiuser testing with Visual Studio Team Services](perf-test/perfsdk-tutorial.md)
@@ -152,10 +146,8 @@
 ### [Testing and validations](perf-test/testing-validation.md)
 ### [Test projects in Visual Studio](perf-test/testing-support.md)
 ### [Deployment with continuous build and test automation](perf-test/continuous-build-test-automation.md)
-## Dates
-### [Date effectivity](dev-tools/date-effectivity.md)
-## Licensing
-### [ISV licensing](dev-tools/isv-licensing.md)
+## [Date effectivity](dev-tools/date-effectivity.md)
+## [ISV licensing](dev-tools/isv-licensing.md)
 
 # [User interface development](user-interface/user-interface-development-home-page.md)
 ## Tutorials
@@ -355,6 +347,13 @@
 #### [Value Type](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md)
 #### [ValueDesign Type](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md)
 #### [ValueMetadata Type](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
+
+# [Continuous delivery home page](dev-tools/continuous-delivery-home-page.md)
+## [Development and continuous delivery FAQ](dev-tools/continuous-delivery-faq.md)
+## [Exclude test packages from the build output](dev-tools/exclude-test-packages.md)
+## [Manage third-party models and runtime packages by using source control](dev-tools/manage-runtime-packages.md)
+## [Version models in the automated build](dev-tools/version-models-build.md)
+
 
 # Release solutions using Lifecycle Services
 ## [Develop and release](lcs-solutions/lcs-solutions-app-source.md)
