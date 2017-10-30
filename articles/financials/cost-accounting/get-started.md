@@ -5,7 +5,7 @@ title: Get started
 description: There are multiple ways to get started with Cost accounting. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 09/26/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,7 +42,7 @@ There are multiple ways to get started with Cost accounting. Each of the followi
 
 The following videos will help you get started with Cost accounting. A full transcript is provided below each video.
 
-To use the Get started wizard in the Cost accounting module, watch the **Get started with Cost acocunting** video. 
+To use the Get started wizard in the Cost accounting module, watch the **Get started with Cost accounting** video. 
 
 <br/>
 <table>
