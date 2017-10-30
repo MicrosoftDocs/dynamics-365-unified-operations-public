@@ -43,7 +43,7 @@ consumed for the production process.
     warehouse to the production input location. The material is moved with the
     use of warehouse work for raw material picking and requires the
     configuration of warehouse processes for raw material picking. For more
-    information, see [Replenishment](replenishment.md) and [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)
+    information, see [Replenishment](replenishment.md) and [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md).
 
 **Methods to release BOM and formula lines**
 
