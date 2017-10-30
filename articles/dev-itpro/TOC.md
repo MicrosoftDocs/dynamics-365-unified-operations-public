@@ -137,7 +137,7 @@
 #### [Change a label](extensibility/change-label.md)
 #### [Extend the number sequence scope](extensibility/extend-number-sequence-scope.md)
 
-## Performance home page
+## Performance
 ### [Take a trace using Trace parser](perf-test/trace-trace-tutorial.md)
 ### [PerfSDK and multiuser testing with Visual Studio Team Services](perf-test/perfsdk-tutorial.md)
 ### [Diagnose problems and analyze performance issues using Trace parser](perf-test/trace-parser.md)
