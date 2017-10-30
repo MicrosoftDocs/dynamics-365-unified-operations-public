@@ -141,6 +141,7 @@ The following links (also included in the methodology) describe key concepts and
 -   [How to import a SQL Server Analysis Services Project into the AOT](https://technet.microsoft.com/en-us/library/dn754850.aspx)
 -   [Database synchronization](database-synchronization.md)
 -   [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)
+- [Upgrade and migration](..\migration-upgrade\upgrade-home-page)
 
 ## Move packages between environments
 -   [Create and apply a deployable package](..\deployment\create-apply-deployable-package.md)
@@ -202,15 +203,10 @@ The client is an HTML web client that runs in all major browsers. For informati
 ## Build workspaces
 ### Tutorials
 
--   [Modeling and using aggregate data](..\analytics\model-aggregate-data.md)
--   [Adding KPI’s to workspaces](..\analytics\add-bi-workspaces.md)
--   [Building navigation](..\user-interface\build-navigation.md)
+- [Intelligence](..\analytics\bi-reporting-home-page.md)
 
 ### Concepts
 
--   [In-memory, real-time aggregate models replace SSAS cubes](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [Building operational workspaces](..\user-interface\build-workspaces.md)
--   [Tile and lit-caching for workspaces](..\user-interface\tile-list-caching-workspaces.md)
 -   [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)
 
 ## Mobile platform
