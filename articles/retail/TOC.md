@@ -194,6 +194,7 @@
 ### [Install N-1 components](dev-itpro/n-1-installation-configuration.md)
 
 ## Environment configuration
+### [Add links to your organization's legal terms and privacy statement](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
 ### [Manage Bing Maps](dev-itpro/manage-bing-maps.md)
 
 ## Extensibility
