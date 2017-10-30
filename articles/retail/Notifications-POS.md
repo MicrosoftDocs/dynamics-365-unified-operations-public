@@ -5,7 +5,7 @@ title: Display order notifications in Point of Sale
 description: This topic describes enabling order notifications in the point of sale and the notifications framework which can be extended to other operations. 
 author: rubencdelgado
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
