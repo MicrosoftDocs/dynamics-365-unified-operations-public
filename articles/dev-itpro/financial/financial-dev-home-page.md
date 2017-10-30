@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Developer home page
-description: This topic provides links to topics about development.
+title: Financials development home page
+description: This topic provides links to topics about financials development.
 author: RobinARH
 manager: AnnBe
 ms.date: 10/30/2017
-ms.topic: index-page
+ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
@@ -21,7 +21,6 @@ ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 21631
-ms.assetid: 06e26767-6056-4755-b47e-0bda71833581
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
