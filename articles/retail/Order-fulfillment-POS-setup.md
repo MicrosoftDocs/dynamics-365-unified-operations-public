@@ -13,18 +13,19 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: [Pick one: Application User/Developer/IT Pro]
+# ms.search.form:  
+audience: Application User
 # ms.devlang: 
-# ms.reviewer: [Content Strategist microsoft alias]
+# ms.reviewer: josaw
 ms.search.scope: 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: [Global for most topics. Set Country/Region name for localizations]
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: [author's Microsoft alias]
-ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
+# ms.custom: 
+ms.search.region: Global
+# ms.search.industry: Retail
+ms.author: rubencdelgado
+ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
+
 
 ---
 
