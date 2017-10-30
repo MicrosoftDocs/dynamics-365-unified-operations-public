@@ -5,7 +5,7 @@ title: Create a fixed asset with additional depreciation (Japan)
 description: In Japan, a fixed asset is permitted to post an additional depreciation amount, under certain conditions. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 09/22/2016
+ms.date: 10/30/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -45,7 +45,7 @@ In order to complete this procedure, the Fixed Assets configuration key must be 
 This was created using the demo data company JPMF.
 
 
-## Create a fixed assset and assign an additional depreciation profile to it
+## Create a fixed asset and assign an additional depreciation profile to it
 1. Go to Fixed assets > Fixed assets > Fixed assets.
 2. Click New.
 3. In the Fixed asset group field, select a value.
