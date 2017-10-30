@@ -6,7 +6,7 @@ description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
 ms.date: 10/30/2017
-ms.topic: index-page
+ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
