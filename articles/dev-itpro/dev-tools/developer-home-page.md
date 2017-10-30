@@ -30,23 +30,22 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Developer home page
+# Develop and customize using Visual Studio
 
 [!include[banner](../includes/banner.md)]
 
 
 This topic provides links to topics about development.
 
-Overview
---------
+## Overview
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition represents the next-generation enterprise resource planning (ERP) offering from Microsoft. It is designed to enable the entire ERP application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. It leverages the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft. This release introduces significant changes to the development experience. These changes include:
 
--   Development tools that are decoupled from any running environment. You develop against local, XML-based files, not the online database.
--   Microsoft Visual Studio replaces MorphX as the development environment. The Visual Studio environment is customized to provide you with a smooth and familiar experience.
--   The X++ compiler generates Common Intermediate Language (CIL) for all features. CIL is the same intermediate language used by other .NET-based (managed) languages, such as the C\# programming language.
--   New browser-based client and new design patterns for forms that you can leverage to provide an improved end-user experience.
--   The new Application Lifecycle Model (ALM) for build automation, test automation, and deployment of models to the cloud.
+- Development tools that are decoupled from any running environment. You develop against local, XML-based files, not the online database.
+- Microsoft Visual Studio is the development environment. The Visual Studio environment is customized to provide you with a smooth and familiar experience.
+- The X++ compiler generates Common Intermediate Language (CIL) for all features. CIL is the same intermediate language used by other .NET-based (managed) languages, such as the C\# programming language.
+- You can leverage the browser-based client and the design patterns for forms to provide an improved end-user experience.
+- You use the Application Lifecycle Model (ALM) for build automation, test automation, and deployment of models to the cloud.
 
 ## Architecture
 -   [Application stack and server architecture](application-stack-server-architecture.md)
@@ -93,6 +92,7 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition represent
 -   [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)
 -   [Resolve conflicts using Visual Studio](https://mix.office.com/watch/1rl75ei2cs6d7)
 -   [Enable a new user account to develop on a development VM](enable-development-machine.md)
+-   [Updating the Visual Studio development tools](update-development-tools.md)
 
 ## X++ programming language
 ### Tutorials
@@ -144,13 +144,6 @@ The following links (also included in the methodology) describe key concepts and
 
 ## Move packages between environments
 -   [Create and apply a deployable package](..\deployment\create-apply-deployable-package.md)
-
-## Service environments
--   [Download hotfixes from Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md)
--   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
--   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
--   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
--   [Updating the Visual Studio development tools](update-development-tools.md)
 
 ## Performance
 -   [Take a trace with the Trace Parser and analyze it](..\perf-test\trace-trace-tutorial.md)
