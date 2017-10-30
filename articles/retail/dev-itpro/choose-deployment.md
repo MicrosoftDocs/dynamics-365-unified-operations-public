@@ -44,7 +44,7 @@ The following table lists the key differences between Dynamics 365 for Retail an
 |--------------|----------------------------|-------------------------------------------|
 |Receive app model updates seamlessly. (App model updates do not need to be compiled or merged with your customizations.) | Yes | No|
 |Receive retail channel component updates seamlessly. (Retail channel components updates do not need to be merged with your customizations.) | Yes | Yes |
-|Deploy a solution that is scoped to provide retail functionality only. | Yes  | Yes*<br><br>Can be configured after deployment.  |
+|Deploy a solution that is scoped to provide retail functionality only. | Yes  | Yes*<br><br>* Can be configured after deployment.  |
 |Optimize your financials and operations to drive growth and make real-time, data-driven decisions with an intelligent, modern enterprise business application.| No*<br><br>\* You can enable additional functionality with a Unified Operations Plan or Dynamics 365 Plan. | Yes |
 
 For more information about licensing, see the [Licensing Guide](http://download.microsoft.com/documents/en-us/dynamics/pricing/Dynamics_365_Enterprise_edition_Licensing_Guide.pdf).
