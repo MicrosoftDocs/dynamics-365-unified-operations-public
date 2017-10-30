@@ -203,8 +203,3 @@ See also
 [New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
 [New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
 [New task guides (February 2016)](new-task-guides-available-february-2016.md)
-
-
-
-
-
