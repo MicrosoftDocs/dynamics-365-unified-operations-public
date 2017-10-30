@@ -229,9 +229,7 @@ The client is an HTML web client that runs in all major browsers. For informati
 ## Supply chain management
 - [Gantt development guide](..\user-interface\gantt-development-guide.md)
 
-
 # See also
-
 [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
 
 
