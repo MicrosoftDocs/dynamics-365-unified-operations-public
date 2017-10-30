@@ -373,9 +373,7 @@
 ### [Separate localization models](lcs-solutions/separate-localization-models.md)
 ### [Submit a regulatory alert](lcs-solutions/submit-localization-alerts.md)
 
-
-
-# Financials development
+# [Financials development](financial/financial-dev-home-page.md)
 ## [Dimensions](financial/dimensions.md)
 ## [Add dimensions to an Excel template](financial/dimensions-overview.md)
 ## [Dimension Entry control dialog support](financial/dimension-entry-control-dialog-support.md)
