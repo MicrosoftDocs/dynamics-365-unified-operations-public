@@ -1,3 +1,32 @@
+---
+# required metadata
+
+title: Releasing BOM and formula lines to the warehouse
+description: This article describes the process to release raw materials for BOM and formula lines to the warehouse.
+author: johanhoffmann
+manager: AnnBe
+ms.date: 10/30/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: bis
+ms.search.scope: AX 7.3.0, Operations, UnifiedOperations
+# ms.tgt_pltfrm: 
+ms.custom: 1705903
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: johanho
+ms.search.validFrom: 2018-03-28
+ms.dyn365.ops.version: AX 7.3.0
+---
 **Releasing BOM and formula lines to the warehouse**
 
 This article describes the process of releasing raw materials for BOM and
@@ -14,10 +43,7 @@ consumed for the production process.
     warehouse to the production input location. The material is moved with the
     use of warehouse work for raw material picking and requires the
     configuration of warehouse processes for raw material picking. For more
-    information, see
-    <https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/replenishment>
-    and
-    https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/control-warehouse-location-directives
+    information, see [Replenishment](replenishment.md) and [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)
 
 **Methods to release BOM and formula lines**
 
