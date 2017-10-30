@@ -106,6 +106,9 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Retail SDK samples](retail-sdk\retail-sdk-samples.md)
 - [Channel database (DB) extensions](channel-db-extensions.md) 
 - [CDX extensibility](cdx-extensibility.md)
+- [Order attributes](order-attributes.md)
+- [Customer attributes](customer-attributes.md)
+- [Retail Typescript and C# proxy](typescript-proxy-retail-pos.md)
 
 
 ## eCommerce

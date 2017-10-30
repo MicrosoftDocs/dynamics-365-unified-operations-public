@@ -1,0 +1,53 @@
+# Testing the new code owners feature in GitHub. Please contact Margo if you have questions.
+
+# @global-owner1 and @global-owner2 will be requested for
+# review when someone opens a pull request.
+*       @microsoftdocs/axdocs
+
+/articles/dev-itpro/analytics	@sericks007 @kfend
+/articles/dev-itpro/database	@margoc
+/articles/dev-itpro/data-entities	@margoc
+/articles/dev-itpro/deployment	@kfend
+/articles/dev-itpro/dev-ref	@robinarh
+/articles/dev-itpro/dev-tools	@robinarh
+/articles/dev-itpro/extensibility	@robinarh
+/articles/dev-itpro/financial	@robinarh @twheeloc
+/articles/dev-itpro/lcs-solutions	@kfend
+/articles/dev-itpro/lifecycle-services	@kfend
+/articles/dev-itpro/migration-upgrade	@margoc
+/articles/dev-itpro/mobile-apps	@robinarh
+/articles/dev-itpro/office-integration	@sericks007
+/articles/dev-itpro/perf-test	@margoc
+/articles/dev-itpro/sysadmin	@sericks007
+/articles/dev-itpro/user-interface	@robinarh
+/articles/financials/accounts-payable	@twheeloc
+/articles/financials/accounts-receivable	@twheeloc
+/articles/financials/budgeting	@twheeloc
+/articles/financials/cash-bank-management	@twheeloc
+/articles/financials/cost-accounting	@yuyus
+/articles/financials/expense-management	@twheeloc
+/articles/financials/fixed-assets	@twheeloc
+/articles/financials/general-ledger	@twheeloc
+/articles/financials/localizations	@shylaw
+/articles/financials/project-management	@twheeloc
+/articles/financials/public-sector	@twheeloc
+/articles/fin-and-ops/get-started	@sericks007
+/articles/fin-and-ops/hr	@rschloma
+/articles/fin-and-ops/hr/localizations	@shylaw
+/articles/fin-and-ops/organization-administration	@sericks007
+/articles/retail	@josaw1
+/articles/retail/dev-itpro	@sericks007
+/articles/retail/dev-itpro/retail-sdk	@robinarh
+/articles/retail/get-started	@josaw1
+/articles/retail/localizations	@shylaw
+/articles/supply-chain/cost-management	@yuyus
+/articles/supply-chain/inventory	@yuyus
+/articles/supply-chain/master-planning	@yuyus
+/articles/supply-chain/pim	@yuyus
+/articles/supply-chain/procurement	@yuyus
+/articles/supply-chain/production-control	@yuyus
+/articles/supply-chain/sales-marketing	@yuyus
+/articles/supply-chain/transportation	@bibisp
+/articles/supply-chain/warehousing	@bibisp
+/articles/talent	@rschloma
+

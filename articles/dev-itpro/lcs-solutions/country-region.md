@@ -5,7 +5,7 @@ title: Localization and regulatory features
 description: This topic includes lists of resources that can help you learn more about country/region-specific functionality.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -70,7 +70,7 @@ The Electronic reporting (ER) tool allows you to configure formats for electroni
 -   [Download Electronic reporting configurations from Lifecycle Services](../analytics/download-electronic-reporting-configuration-lcs.md)
 -   [Import Electronic reporting configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 -   [Configure Electronic reporting to pull data into Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
--   [Generate electronic documents and and update application data using the Electronic reporting tool](../analytics/generate-electronic-documents-update-application-data.md)
+-   [Generate electronic documents and update application data using the Electronic reporting tool](../analytics/generate-electronic-documents-update-application-data.md)
 
 ## Task guides
 Task guides are available from the product help pane and they provide a guided walk-through of key business processes. You can open a task guide to read the steps of a business process or you can play a task guide to walk through a business process and enter data.
