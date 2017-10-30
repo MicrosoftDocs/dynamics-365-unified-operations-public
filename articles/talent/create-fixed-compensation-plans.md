@@ -3,7 +3,7 @@
 
 title: Create fixed compensation plans
 description: Fixed compensation refers to an employee's regular gross salary or wages. This article describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
-author: twheeloc
+author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEv
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: rschloma
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 ms.custom: 15991
 ms.assetid: ef8cf992-176c-4c98-9dff-6510e1eb9f1c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: kherr75
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
