@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Developer home page
+title: Develop and customize using Visual Studio
 description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
