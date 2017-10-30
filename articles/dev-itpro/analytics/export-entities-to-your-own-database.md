@@ -65,6 +65,7 @@ You should also create an SQL user account to sign in to the database. Write dow
 
 If you're using this functionality for integration with a business intelligence (BI) tool, you should consider creating an SQL premium database. Premium databases support clustered columnstore indexes (CCIs). CCIs are in-memory indexes that improve the performance of read queries that are typical in analytical and reporting workloads. If you're using this functionality to export data into a staging database or for general integration purposes, you can use a standard database.
 
+
 ## Configuring the entity export option
 
 Start the Finance and Operations client, and then, on the **Data management** workspace, select the **Configure Entity export to database** tile.
@@ -83,6 +84,8 @@ In this connection string, the logical server name should resemble **nnnn.databa
 
 After you enter the connection string, select **Validate**, and make sure that the connection is successful.
 
+The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option provides an opportunity for you to hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger per bulk insert operation is supported. The size of the bulk insert is determined by the **Maximum insert commit** size parameter in the Data management framework.
+
 The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining CCIs for entities that are copied from Finance and Operations. However, CCIs are currently supported only on SQL premium databases. Therefore, to enable this option, you must create an SQL premium database.
 
 When the validation is passed, the database that you configured for entity export now appears in the lists, as shown in the following illustration.
@@ -90,6 +93,8 @@ When the validation is passed, the database that you configured for entity expor
 ![Database for entity export](media/e3bcecdb0ff1532d890915903b378c60.png)
 
 Next, you can publish one or more entities to the new database by selecting the **Publish** option on the menu.
+
+
 
 ### Publishing the entity schema to the database
 
@@ -159,22 +164,23 @@ Full push truncates the table and inserts all the records from the selected enti
 
 You can create a data project that has multiple entities. You can schedule this data project to run by using the Finance and Operations batch framework. You also schedule the data export job to run on a recurring basis by selecting the **Create recurring data job** option.
 
-### Best practices and known limitations
+### Known limitations
 
 In Platform update 8, there are several known limitations in this feature.
 
-**Incremental push doesn't propagate records that have been deleted in the source**
+#### Incremental push doesn't propagate records that have been deleted in the source**
 
 If records are deleted from any table in the source entity, corresponding delete operations aren't applied to the destination database. If you work with entities where records are deleted, we recommended that you periodically do full-push update operations.
 
-**Export data projects are specific to a single legal entity**
+#### Export data projects are specific to a single legal entity
 
 You can't create a single job to export data across multiple legal entities. When you create a data project to export data, the job exports data from the current legal entity. If you must export data from multiple legal entities, you must create multiple data projects by switching legal entities.
 
-**You can't export composite entities into BYOD**
+#### You can't export composite entities into your own database
 
 Currently, composite entities aren't supported. You must export individual entities that make up the composite entity. However, you can export both the entities in the same data project.
 
-**Entities that don't have unique keys can’t be exported by using incremental push**
+#### Entities that don't have unique keys can’t be exported by using incremental push
 
 You might face this limitation especially when you try to incrementally export records from a few ready-made entities. Because these entities were designed to enable the import of data into Finance and Operations, they don't have a unique key. However, you can enable change tracking only for entities that have a unique key. Therefore, there is a limitation on incremental push. One workaround is to extend the required entity and define a unique key.
+
