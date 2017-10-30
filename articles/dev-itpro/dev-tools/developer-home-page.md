@@ -5,7 +5,7 @@ title: Developer home page
 description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
-ms.date: 08/17/2017
+ms.date: 10/30/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -137,11 +137,13 @@ The following links (also included in the methodology) describe key concepts and
 
 ### Additional concepts
 
--   [Delegates for migration](..\migration-upgrade\delegates-migration.md)
--   [How to import a SQL Server Analysis Services Project into the AOT](https://technet.microsoft.com/en-us/library/dn754850.aspx)
--   [Database synchronization](database-synchronization.md)
--   [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)
+- [Delegates for migration](..\migration-upgrade\delegates-migration.md)
+- [How to import a SQL Server Analysis Services Project into the AOT](https://technet.microsoft.com/en-us/library/dn754850.aspx)
+- [Database synchronization](database-synchronization.md)
+- [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)
 - [Upgrade and migration](..\migration-upgrade\upgrade-home-page)
+- [Workflow subsystem updates](..\migration-upgrade\workflow-subsystem.md)
+
 
 ## Move packages between environments
 -   [Create and apply a deployable package](..\deployment\create-apply-deployable-package.md)
@@ -188,9 +190,6 @@ The client is an HTML web client that runs in all major browsers. For informati
 -   [Data entities home page](..\data-entities\data-entities.md)
 -   [OData](..\data-entities\odata.md)
 
-## Workflow
--   [Workflow subsystem](..\migration-upgrade\workflow-subsystem.md)
-
 ## Testing support in Visual Studio
 -   [Testing and validation](..\perf-test\testing-validation.md)
 -   [Support for testing in Visual Studio](..\perf-test\testing-support.md)
@@ -200,40 +199,35 @@ The client is an HTML web client that runs in all major browsers. For informati
 ## Office integration
 -   [Office integration](..\office-integration\office-integration.md)
 
-## Build workspaces
-### Tutorials
-
+## Intelligence
 - [Intelligence](..\analytics\bi-reporting-home-page.md)
-
-### Concepts
-
--   [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)
+- [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)
 
 ## Mobile platform
--   [Mobile platform home page](../mobile-apps/platform/mobile-platform-home-page.md)
+- [Mobile platform home page](../mobile-apps/platform/mobile-platform-home-page.md)
 
 ## Global finance management
--   [Dimension entry control dialog support](..\financial\dimension-entry-control-dialog-support.md)
--   [Dimension entry control migration](..\financial\dimension-entry-control-migration.md)
--   [Dimension entry control uptake](..\financial\dimension-entry-control-uptake.md)
--   [Add dimensions to the Microsoft Excel template](..\financial\dimensions-overview.md)
--   [Create Open in Office experiences for Excel and Word](..\office-integration\office-integration-edit-excel.md)
--   [Add templates to open lines in Excel menu](..\user-interface\add-templates-open-lines-excel-menu.md)
--   [Segmented entry control dialog support](..\financial\segmented-entry-control-dialog-support.md)
--   [Segmented entry control metadata specification](..\financial\segmented-entry-control-metadata-specification.md)
--   [Segmented entry control - migration guidance](..\financial\segmented-entry-control-migration-guidance.md)
--   [Segmented Entry control migration walkthrough](..\financial\segmented-entry-control-conversion.md)
--   [Segmented entry control parm Specification](..\financial\segmented-entry-control-parm-method-specification.md)
--   [Creating exchange rate providers](..\financial\create-exchange-rate-providers.md)
--   [Financial dimension configuration for integrating applications](..\financial\financial-dimension-configuration-integration.md)
--   [Activating financial dimensions](..\financial\activate-financial-dimensions.md)
--   [Add the ability to look up values for financial dimensions in Microsoft Excel templates](..\financial\add-dimensions-excel-templates.md)
+- [Dimension entry control dialog support](..\financial\dimension-entry-control-dialog-support.md)
+- [Dimension entry control migration](..\financial\dimension-entry-control-migration.md)
+- [Dimension entry control uptake](..\financial\dimension-entry-control-uptake.md)
+- [Add dimensions to the Microsoft Excel template](..\financial\dimensions-overview.md)
+- [Create Open in Office experiences for Excel and Word](..\office-integration\office-integration-edit-excel.md)
+- [Add templates to open lines in Excel menu](..\user-interface\add-templates-open-lines-excel-menu.md)
+- [Segmented entry control dialog support](..\financial\segmented-entry-control-dialog-support.md)
+- [Segmented entry control metadata specification](..\financial\segmented-entry-control-metadata-specification.md)
+- [Segmented entry control - migration guidance](..\financial\segmented-entry-control-migration-guidance.md)
+- [Segmented Entry control migration walkthrough](..\financial\segmented-entry-control-conversion.md)
+- [Segmented entry control parm Specification](..\financial\segmented-entry-control-parm-method-specification.md)
+- [Creating exchange rate providers](..\financial\create-exchange-rate-providers.md)
+- [Financial dimension configuration for integrating applications](..\financial\financial-dimension-configuration-integration.md)
+- [Activating financial dimensions](..\financial\activate-financial-dimensions.md)
+- [Add the ability to look up values for financial dimensions in Microsoft Excel templates](..\financial\add-dimensions-excel-templates.md)
 
 ## Licensing
--   [ISV licensing](isv-licensing.md)
+- [ISV licensing](isv-licensing.md)
 
 ## Supply chain management
--   [Gantt development guide](..\user-interface\gantt-development-guide.md)
+- [Gantt development guide](..\user-interface\gantt-development-guide.md)
 
 
 # See also
