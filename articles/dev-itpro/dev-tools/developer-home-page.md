@@ -191,13 +191,13 @@ The client is an HTML web client that runs in all major browsers. For informati
 -   [OData](..\data-entities\odata.md)
 
 ## Testing support in Visual Studio
--   [Testing and validation](..\perf-test\testing-validation.md)
--   [Support for testing in Visual Studio](..\perf-test\testing-support.md)
--   [Developer topology deployment with continuous build and test automation](..\perf-test\continuous-build-test-automation.md)
--   [Task Recorder](..\user-interface\task-recorder.md)
+- [Testing and validation](..\perf-test\testing-validation.md)
+- [upport for testing in Visual Studio](..\perf-test\testing-support.md)
+- [Developer topology deployment with continuous build and test automation](..\perf-test\continuous-build-test-automation.md)
+- [Task Recorder](..\user-interface\task-recorder.md)
 
 ## Office integration
--   [Office integration](..\office-integration\office-integration.md)
+- [Office integration](..\office-integration\office-integration.md)
 
 ## Intelligence
 - [Intelligence](..\analytics\bi-reporting-home-page.md)
@@ -207,21 +207,7 @@ The client is an HTML web client that runs in all major browsers. For informati
 - [Mobile platform home page](../mobile-apps/platform/mobile-platform-home-page.md)
 
 ## Global finance management
-- [Dimension entry control dialog support](..\financial\dimension-entry-control-dialog-support.md)
-- [Dimension entry control migration](..\financial\dimension-entry-control-migration.md)
-- [Dimension entry control uptake](..\financial\dimension-entry-control-uptake.md)
-- [Add dimensions to the Microsoft Excel template](..\financial\dimensions-overview.md)
-- [Create Open in Office experiences for Excel and Word](..\office-integration\office-integration-edit-excel.md)
-- [Add templates to open lines in Excel menu](..\user-interface\add-templates-open-lines-excel-menu.md)
-- [Segmented entry control dialog support](..\financial\segmented-entry-control-dialog-support.md)
-- [Segmented entry control metadata specification](..\financial\segmented-entry-control-metadata-specification.md)
-- [Segmented entry control - migration guidance](..\financial\segmented-entry-control-migration-guidance.md)
-- [Segmented Entry control migration walkthrough](..\financial\segmented-entry-control-conversion.md)
-- [Segmented entry control parm Specification](..\financial\segmented-entry-control-parm-method-specification.md)
-- [Creating exchange rate providers](..\financial\create-exchange-rate-providers.md)
-- [Financial dimension configuration for integrating applications](..\financial\financial-dimension-configuration-integration.md)
-- [Activating financial dimensions](..\financial\activate-financial-dimensions.md)
-- [Add the ability to look up values for financial dimensions in Microsoft Excel templates](..\financial\add-dimensions-excel-templates.md)
+- [Dimension entry control dialog support](../financial/financial-dev-home-page.md)
 
 ## Licensing
 - [ISV licensing](isv-licensing.md)
