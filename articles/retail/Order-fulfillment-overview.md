@@ -5,7 +5,7 @@ title: Store order fulfillment overview
 description: This topic provides an overview for store order fulfillment. 
 author: rubencdelgado
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
