@@ -38,9 +38,6 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development/build environment.
 
 > [!IMPORTANT]
-> Applying packages causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
-
-> [!IMPORTANT]
 > This topic applies only to the below two topologies:
 - Local development environments (Downloadable virtual hard disk [VHD])
 - Multi-box dev/test environments in Microsoft Azure (Partner and trial projects)
