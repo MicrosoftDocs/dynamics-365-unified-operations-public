@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Restore a database on a non-production environment
+# Request a database refresh
 
 [!include[banner](../includes/banner.md)]
 
