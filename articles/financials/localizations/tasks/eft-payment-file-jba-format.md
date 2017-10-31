@@ -50,7 +50,7 @@ This task uses the JPMF demo company data.
 8. Click Save.
 9. Click Generate payments.
 10. In the Method of payment field, select a method of payment that is enabled for the JBA file format.
-11. In the File name field, Specify a file name for the generated file..
+11. In the File name field, Specify a file name for the generated file.
 12. Use the value noted previously in the Bank account field
     * Select a Offset bank account in the vendor journal lines.  
 13. Click OK.
