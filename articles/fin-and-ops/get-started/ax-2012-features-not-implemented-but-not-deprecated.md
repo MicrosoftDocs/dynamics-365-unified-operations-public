@@ -82,12 +82,12 @@ This topic lists Microsoft Dynamics AX 2012 features that were postponed. These 
 </tr>
 <tr class="even">
 <td>Absence management in Human resources</td>
-<td>Functionality for entering absence transactions through both ESS and the client isn't included. Additionally, functionality for approving those absence transactions as a manager isn't included. In a future update, the current functionality will be enhanced to support a wider range of scenarios. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
-<td>Implemented in Dynamics 365 for Finance and Operations in July 2017</td>
+<td>Functionality for entering absence transactions through both ESS and the client isn't included in Dynamics 365 for Finance and Operations. Additionally, functionality for approving those absence transactions as a manager isn't included.  Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
+<td>Implemented in Dynamics 365 for Talent</td>
 </tr>
 <tr class="odd">
 <td>US Payroll</td>
-<td>US Payroll isn't included. Limited initial setup capabilities will be available through the <strong>Human Resources 1</strong> &gt; <strong>Payroll</strong> configuration key.</td>
+<td>US Payroll provides gross-to-net processing for employees in the United States. With Payroll you can set up, enter, and maintain all payroll records and transactions. </td>
 <td>Implemented in Dynamics 365 for Operations version 1611</td></tr>
 <tr class="even">
 <td>External questionnaire and recruiting functionality</td>
