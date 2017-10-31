@@ -2,10 +2,10 @@
 # required metadata
 
 title: Fixed asset impairment accounting on cash generating units
-description: This article introduces the features for fixed asset impairment that are included in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. The primary objective of this article is to give the user an overview of the conceptual model for impairment accounting. 
+description: This topic introduces the features for fixed asset impairment that are included in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. The primary objective of this article is to give the user an overview of the conceptual model for impairment accounting. 
 author: rake-gui
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,12 +34,12 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article introduces the features for fixed asset impairment that are included in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. The primary objective of this article is to give the user an overview of the conceptual model for impairment accounting. 
+This topic introduces the features for fixed asset impairment that are included in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. The primary objective of this article is to give the user an overview of the conceptual model for impairment accounting. 
 
 Fixed assets might be susceptible to impairment (decline) of their value because of factors such as poor management, new competition, and technological innovations. Impairment losses are stated in a profit and loss account. The impairment value is measured by comparing the value of the fixed asset or income generating unit with its recoverable amount. The recoverable amount is the highest value that can be obtained from selling the fixed asset or income that is generated from operation of the fixed asset. In Japan, impairment of fixed assets is done in accordance with No. 6 of Japanese generally accepted accounting principles (GAAP), where a two-step method is used. The first step is a recognition test of impairment loss, and the second step is measurement of the impairment loss. After impairment, the recoverable amount will be the new net book value of the fixed asset for future depreciation calculation. The impairment work process includes the following major tasks.
 
 ## CGU groups
-The primary page is **CGU groups** (**Fixed assets** &gt; **Setup** &gt; **Impairment** &gt; **CGU groups**). CGU groups are the entire combination of a impairment process. In a given CGU group, a user can assign one particular fixed asset to only one cash generating unit. This restriction doesn't apply when the user creates a different CGU group and then creates cash generating units under that group. Creating multiple CGU groups is useful for simulations to find the most appropriate grouping of fixed assets.
+The primary page is **CGU groups** (**Fixed assets** &gt; **Setup** &gt; **Impairment** &gt; **CGU groups**). CGU groups are the entire combination of the impairment process. In a given CGU group, a user can assign one particular fixed asset to only one cash generating unit. This restriction doesn't apply when the user creates a different CGU group and then creates cash generating units under that group. Creating multiple CGU groups is useful for simulations to find the most appropriate grouping of fixed assets.
 
 ## Cash generating units
 The primary page is **Cash generating groups** (**Fixed assets** &gt; **Setup** &gt; **Impairment** &gt; **Cash generating groups**). A user can create cash generating units under a CGU group and then assign individual fixed assets to each cash generating unit. The user can also directly assign the fixed assets to the CGU group if those assets are shared assets or goodwill. Impairment on shared assets and goodwill will be tested and measured on the CGU group unit, in compliance with Method I under Japanese GAAP. A user can also apply Method II. In this case, the user will have to allocate the net book value of the shared assets and goodwill to each cash generating unit.
