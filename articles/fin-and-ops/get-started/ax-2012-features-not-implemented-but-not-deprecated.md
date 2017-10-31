@@ -53,7 +53,7 @@ This topic lists Microsoft Dynamics AX 2012 features that were postponed. These 
 <tbody>
 <tr class="odd">
 <td>Intelligent Data Management Framework (IDMF)</td>
-<td>IDMF is an add-on tool that lets system administrators optimize the performance of Microsoft Dynamics AX installations. IDMF assesses the health of the application, analyzes current usage patterns, and helps reduce database size.</td>
+<td>IDMF is an add-on tool that lets system administrators optimize  performance. IDMF assesses the health of the application, analyzes current usage patterns, and helps reduce database size.</td>
 <td>Not implemented</td>
 </tr><tr class="odd">
 <td>Alerts</td>
