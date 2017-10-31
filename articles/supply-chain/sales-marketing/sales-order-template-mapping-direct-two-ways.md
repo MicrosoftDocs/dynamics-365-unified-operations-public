@@ -79,28 +79,27 @@ In Finance and operations, filters in the template ensure that only the relevant
 
 - After creating or modifying a sales order, the batch job **Calculate sales totals** in Finance and Operations must be executed. Only the sales orders with sales totals calculated will be synced to Sales.
 
-### Freight tax
+## Freight tax
 
-Sales doesn’t support tax on header level as all tax is stored on line level. 
-To support Header charge tax from Finance and Operations, e.g. tax on freight, this synchronizes to Sales as a Write in product with the name ‘Freight Tax’ that has the tax amount from Finance and Operations. This way the standard price calculation in Sales can be used for totals, even with header tax from Finance and Operations. 
+Sales doesn’t support tax at header level because tax is stored at line level. To support tax at header level from Finance and Operations, for example, tax on freight, the tax is synced to Sales as a **Write-In Product** with the name *reight Tax* that has the tax amount from Finance and Operations. This way, the standard price calculation in Sales can be used for totals, even with the header tax from Finance and Operations. 
 
-### Discount calculation and rounding
+## Discount calculation and rounding
 
-The discount calculation model differs between Sales and Finance and Operations. The final discount amount on a sales line in Finance and Operations can be the result of a combination of discount amounts and discount percentages. If this final discount amount is divided by the quantity on the line, there can be a rounding which would not be taken into account if a rounded ‘Per unit’ discount amount were to synchronize to CRM. To ensure that the full discount amount from a sales line in Finance and Operations synchronizes correctly to Sales, the full amount has to be synchronized without being divided by line quantity. For this reason, the requirement in Sales is to define that line discount is Per line item.
+The discount calculation model differs in Sales and Finance and Operations. The final discount amount on a sales line in Finance and Operations can be the result of a combination of discount amounts and discount percentages. If this final discount amount is divided by the quantity on the line, there can be a rounding, which would not be taken into account if a rounded *Per unit* discount amount were synced to Sales. To ensure that the full discount amount from a sales line in Finance and Operations synchronizes correctly to Sales, the full amount has to be synchronized without being divided by line quantity. For this reason, you need to define the line discount per line item in Sales.
 
-When a sales order line is synchronized in the other direction, from Sales to Operations, the full line discount amount is used. Since there is no field in Operations which can store the full discount amount for a line, the amount will be divided by quantity and stored in the Line discount field. Any rounding which may happen in this division is stored in the Sales charges field on the sales line.
+When a sales order line is synced from Sales to Finance and Operations, the full line discount amount is used. Since there is no field in Finance and Operations, which can store the full discount amount for a line, the amount will be divided by quantity and stored in the **Line discount** field. Any rounding which may happen in this division is stored in the **Sales charges** field on the sales line.
 
 **Example**
 
-Sync Sales to Finance and Operations
+Sync from Sales to Finance and Operations
 
-    Sales: Qty = 3, Per line Discount = $10.00    
-    Finance and Operations: Qty = 3, Line discount amount = $3.33, Sales charge = -$0.01
+-  Sales: Qty = 3, Per line Discount = $10.00    
+-  Finance and Operations: Qty = 3, Line discount amount = $3.33, Sales charge = -$0.01
 
-Sync Finance and Operations to Sales
+Sync from Finance and Operations to Sales
 
-    Finance and Operations: Qty = 3, Line discount amount = $3.33, Sales charge = -$0.01    
-    Sales: Qty = 3, Per line Discount = 3 * $3.33 + $0.01 = $10.00
+-  Finance and Operations: Qty = 3, Line discount amount = $3.33, Sales charge = -$0.01    
+-  Sales: Qty = 3, Per line Discount = 3 * $3.33 + $0.01 = $10.00
 
 ## Prospect to cash solution for Sales
 
