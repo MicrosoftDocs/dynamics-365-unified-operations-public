@@ -439,7 +439,7 @@
 #### [Migrate an upgraded sales cube to the entity store](migration-upgrade/migrate-upgraded-cube-entity-store.md)
 #### [Upgrade budget planning](migration-upgrade/upgrade-budget-planning.md)
 
-## Code migration and upgrade
+## [Code migration and upgrade](migration-upgrade/code-migration-home-page.md)
 ### [Prepare to migrate code](migration-upgrade/prepare-migration.md)
 ### [Configure Visual Studio Team Services mapping during code migration](migration-upgrade/configure-vso-solution.md)
 ### [Split models](dev-tools/model-split.md)
