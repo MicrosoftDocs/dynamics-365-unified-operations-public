@@ -29,7 +29,6 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
 
 ---
-
 # Apply updates to an on-premises deployment
 
 [!include[banner](../includes/banner.md)]
@@ -74,6 +73,6 @@ To apply hotfixes to an already deployed environment, complete steps 1 and 2 lis
 ## Apply the latest platform update 
 At this time, there is no support to apply platform updates. 
 
-## Apply application binary updates?
+## Apply application binary updates
 At this time, there is no support to apply application binary updates. 
 
