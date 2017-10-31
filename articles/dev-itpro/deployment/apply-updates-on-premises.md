@@ -62,7 +62,7 @@ There are two ways to find available application hotfixes:
 
 Complete the following steps to apply the hotfix.
 
-1.Download the required hotfix to your development environment, and then follow the steps in the article, Create a deployable package (create-apply-deployable-package.md).  
+1. Download the required hotfix to your development environment, and then follow the steps in the article, Create a deployable package (create-apply-deployable-package.md).  
 2. After you have the deployable package, upload the package to the Lifecycle Services Asset library on the **Software deployable packages** tab.  
 Similar to applying code customizations, you can include the deployable package as an asset during environment deployment flow. 
 3. In the **Advanced settings** of the **Configure deployment flow**, click **Configure**, select the application deployable package to apply, and then click **Done** to continue with the environment deployment process. 
