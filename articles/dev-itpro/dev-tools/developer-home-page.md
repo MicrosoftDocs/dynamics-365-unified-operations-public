@@ -146,7 +146,6 @@ The following links (also included in the methodology) describe key concepts and
 - [Workflow subsystem updates](..\migration-upgrade\workflow-subsystem.md)
 - [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 
-
 ## Move packages between environments
 -   [Create and apply a deployable package](..\deployment\create-apply-deployable-package.md)
 
@@ -174,8 +173,8 @@ The client is an HTML web client that runs in all major browsers. For informati
 - [Demo of Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/1hkvtnc8sc7l6)
 
 ## Data entities and OData
--   [Data entities home page](..\data-entities\data-entities.md)
--   [OData](..\data-entities\odata.md)
+- [Data entities home page](..\data-entities\data-entities.md)
+- [OData](..\data-entities\odata.md)
 
 ## Testing support in Visual Studio
 - [Testing and validation](..\perf-test\testing-validation.md)
