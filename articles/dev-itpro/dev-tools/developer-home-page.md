@@ -113,7 +113,8 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition represent
 -   [X++ language reference](..\dev-ref\xpp-language-reference.md)
 
 ## Customize with extensions and overlayering
--   [Extensibility home page](..\extensibility\extensibility-home-page.md)
+- [Extensibility home page](..\extensibility\extensibility-home-page.md)
+- [Customize App Suite reports using extensions](..\analytics\customize-app-suite-reports-with-extensions.md)
 
 ## Code migration
 ### Migrate your code
@@ -143,6 +144,7 @@ The following links (also included in the methodology) describe key concepts and
 - [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)
 - [Upgrade and migration](..\migration-upgrade\upgrade-home-page)
 - [Workflow subsystem updates](..\migration-upgrade\workflow-subsystem.md)
+- [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 
 
 ## Move packages between environments
@@ -164,27 +166,12 @@ The following links (also included in the methodology) describe key concepts and
 The client is an HTML web client that runs in all major browsers. For information about developing and customizing the user interface, see the [User interface development home page](..\user-interface\user-interface-development-home-page.md).
 
 ## Analytics
-### Tutorials
-
--   [How to create a Power BI report](..\analytics\create-powerbi-report-data.md)
--   [Create a Power BI report and dashboard](..\analytics\create-powerbi-report-dashboard.md)
--   [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
--   [Customize App Suite reports using extensions](..\analytics\customize-app-suite-reports-with-extensions.md)
-
-### Concepts
-
--   [Analytics](..\analytics\analytics.md)
--   [Power BI integration](..\analytics\power-bi-integration.md)
--   [Configuring Power BI integration for workspaces](..\analytics\configure-power-bi-integration.md)
+- [Analytics](..\analytics\analytics.md)
 
 ## Reporting services
--   [Create next-generation reporting solutions](..\analytics\create-nextgen-reporting-solutions.md)
--   [Document Reporting Services overview](..\analytics\document-reporting-services.md)
--   [Tips to help prevent long-running reports from timing out](..\analytics\prevent-long-running-reports-timing-out.md)
--   [Power BI integration](..\analytics\power-bi-integration.md)
--   [Extending the list of electronic reporting functions](..\analytics\general-electronic-reporting-formulas-list-extension.md)
--   [Introduction to Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/wdl1dquy2tve)
--   [Demo of Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/1hkvtnc8sc7l6)
+- [Electronic reporting overview](..\analytics\general-electronic-reporting.md)
+- [Introduction to Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/wdl1dquy2tve)
+- [Demo of Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/1hkvtnc8sc7l6)
 
 ## Data entities and OData
 -   [Data entities home page](..\data-entities\data-entities.md)
