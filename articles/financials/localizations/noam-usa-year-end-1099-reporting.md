@@ -2,10 +2,10 @@
 # required metadata
 
 title: Year-end 1099 reporting
-description: If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information to the U.S. tax authorities at the end of the calendar year. The vendors are typically individuals who are not employees and who provide services to your organization. You must also send a statement to each 1099 vendor that you do business with, informing them of the amount that you are reporting to the tax authorities.
+description: If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information to the US tax authorities at the end of the calendar year. T
 author: abruer
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -62,7 +62,7 @@ You might follow these steps to generate either an export file or a printed 1099
 ## Create a copy of a 1099 form
 At any point during the year, a vendor might request that you provide a copy of their 1099 form. To print a copy, click Print on the Vendor settlement for 1099s page. If a vendor asks for a list of all invoices that were included on a 1099 form, you can print the Tax 1099 detail report.
 
-## Partial payments and crosscompany payment settlements
+## Partial payments and cross-company payment settlements
 If you make a partial payment for an invoice, the 1099 amount is saved to reflect the partial payment. For example, if the invoice amount is 200.00 and the 1099 amount is 50.00, and the payment is 100.00 (50 percent of the invoice), the 1099 amount that is saved is 25.00 instead of 50.00. If an invoice is paid by another company (cross-company payment settlements), the company that makes the payments must create the 1099 statements.
 
 ## 1099G and 1099S forms
