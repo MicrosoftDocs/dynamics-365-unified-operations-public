@@ -5,7 +5,7 @@ title: Develop and customize using Visual Studio
 description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,7 +45,7 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition represent
 - Microsoft Visual Studio is the development environment. The Visual Studio environment is customized to provide you with a smooth and familiar experience.
 - The X++ compiler generates Common Intermediate Language (CIL) for all features. CIL is the same intermediate language used by other .NET-based (managed) languages, such as the C\# programming language.
 - You can leverage the browser-based client and the design patterns for forms to provide an improved end-user experience.
-- You use the Application Lifecycle Model (ALM) for build automation, test automation, and deployment of models to the cloud.
+- The Application Lifecycle Model (ALM) supports build automation, test automation, and deployment of models to the cloud.
 
 ## Architecture
 -   [Application stack and server architecture](application-stack-server-architecture.md)
