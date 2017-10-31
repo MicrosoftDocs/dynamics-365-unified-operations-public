@@ -100,7 +100,7 @@ This topic lists Microsoft Dynamics AX 2012 features that were postponed. These 
 <tr class="even">
 <td>Client right-to-left (RTL) layout</td>
 <td>The web client uses only left-to-right (LTR) layout for controls and labels. The ability to use RTL layout for Arabic and Hebrew languages will be added in a future update.</td>
-<td>Implemented in platform update 3.</td></tr>
+<td>Implemented in platform update 2.</td></tr>
 <tr class="odd">
 <td>Client drag-and-drop</td>
 <td>The web client controls have application programming interfaces (APIs) for drag-and-drop operations, but these APIs are based on the deprecated desktop client technology and must be redesigned to work on the new web client platform. APIs to support drag-and-drop operations will be reviewed for inclusion in a future update.</td>
