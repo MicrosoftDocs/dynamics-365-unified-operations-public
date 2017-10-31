@@ -92,7 +92,7 @@ This topic lists Microsoft Dynamics AX 2012 features that were postponed. These 
 <tr class="even">
 <td>External questionnaire and recruiting functionality</td>
 <td>Functionality for externally posting questionnaires and open jobs will be added in a future update to Dynamics 365 for Talent.</td>
-<td>External questionnaire hs not been implemented.<br><br>Recruiting functionality is available in the Attract app for Dynamics 365 for Talent.</td></tr>
+<td>External questionnaire has not been implemented.<br><br>Recruiting functionality is available in the Attract app for Dynamics 365 for Talent.</td></tr>
 <tr class="odd">
 <td>Main account allocations for accounting distributions</td>
 <td>Allocation rules that are defined for a main account won't be applied on accounting distributions. In a future update, main allocation rules will be applied during journalization.</td>
