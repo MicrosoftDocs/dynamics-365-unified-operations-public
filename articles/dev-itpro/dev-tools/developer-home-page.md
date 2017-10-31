@@ -117,49 +117,22 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition represent
 - [Customize App Suite reports using extensions](..\analytics\customize-app-suite-reports-with-extensions.md)
 
 ## Code migration
-### Migrate your code
-
-To migrate your code, use the "Migrate and Create Solutions" methodology in Lifecycle Services.
-
-### Key concepts
-
-The following links (also included in the methodology) describe key concepts and steps in the migration process. The links are listed here in the order that we recommend you read them.
-
--   [Overview: Prepare to migrate](..\migration-upgrade\prepare-migration.md)
--   [Migrate from AX 2012 (Office Mix)](https://mix.office.com/watch/4gsvk592c685)
--   [Migrate between versions (Office Mix)](https://mix.office.com/watch/os2wff38zi6f)
--   [Configure and execute the code upgrade service in Lifecycle Services](../lifecycle-services/configure-execute-code-upgrade.md)
--   [Configure your VSTS mapping after a code upgrade](..\migration-upgrade\configure-vso-solution.md)
--   [Resolve conflicts using Visual Studio (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7)
--   [Understanding the model split](model-split.md)
--   [Deprecated features](..\migration-upgrade\deprecated-features.md)
--   [Deprecated API’s](..\migration-upgrade\deprecated-apis.md)
--   [Development tools performance tips](https://mix.office.com/watch/rnp6ng9wu8kx)
-
-### Additional concepts
-
-- [Delegates for migration](..\migration-upgrade\delegates-migration.md)
-- [How to import a SQL Server Analysis Services Project into the AOT](https://technet.microsoft.com/en-us/library/dn754850.aspx)
-- [Database synchronization](database-synchronization.md)
-- [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)
-- [Upgrade and migration](..\migration-upgrade\upgrade-home-page)
-- [Workflow subsystem updates](..\migration-upgrade\workflow-subsystem.md)
-- [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
+- [Code migration and upgrade home page](../migration-upgrade/code-migration-home-page.md)
 
 ## Move packages between environments
--   [Create and apply a deployable package](..\deployment\create-apply-deployable-package.md)
+- [Create and apply a deployable package](..\deployment\create-apply-deployable-package.md)
 
 ## Performance
--   [Take a trace with the Trace Parser and analyze it](..\perf-test\trace-trace-tutorial.md)
--   [Introduction to the PerfSDK and multiuser testing with Visual Studio Online](..\perf-test\perfsdk-tutorial.md)
--   [Using the desktop version of trace parser to diagnose problems and analyze performance issues](..\perf-test\trace-parser.md)
--   [Performance timer](..\perf-test\performance-timer.md)
--   [Expanding data with the Data Expansion tool (Office Mix)](https://mix.office.com/watch/11cet1u4nmn64)
--   [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)
--   [The performance timer and other tools (Office Mix)](https://mix.office.com/watch/ij5cqidra5q3)
--   [Using Task Recorder to create a single user performance test (Office Mix)](https://mix.office.com/watch/qtdlasy2rcf3)
--   [The performance timer and other tools (Office Mix)](https://mix.office.com/watch/ij5cqidra5q3)
--   [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)
+- [Take a trace with the Trace Parser and analyze it](..\perf-test\trace-trace-tutorial.md)
+- [Introduction to the PerfSDK and multiuser testing with Visual Studio Online](..\perf-test\perfsdk-tutorial.md)
+- [Using the desktop version of trace parser to diagnose problems and analyze performance issues](..\perf-test\trace-parser.md)
+- [Performance timer](..\perf-test\performance-timer.md)
+- [Expanding data with the Data Expansion tool (Office Mix)](https://mix.office.com/watch/11cet1u4nmn64)
+- [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)
+- [The performance timer and other tools (Office Mix)](https://mix.office.com/watch/ij5cqidra5q3)
+- [Using Task Recorder to create a single user performance test (Office Mix)](https://mix.office.com/watch/qtdlasy2rcf3)
+- [The performance timer and other tools (Office Mix)](https://mix.office.com/watch/ij5cqidra5q3)
+- [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)
 
 ## User interface concepts
 The client is an HTML web client that runs in all major browsers. For information about developing and customizing the user interface, see the [User interface development home page](..\user-interface\user-interface-development-home-page.md).
