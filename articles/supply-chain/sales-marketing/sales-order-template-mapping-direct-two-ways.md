@@ -160,7 +160,7 @@ Go to **Sales and marketing** > **Periodic tasks** > **Calculate sales totals**,
     
     - Default template value for **pricelevelid.name [Price List Name]** is CRM Service USA (sample). 
 
-#### SalesLine task
+### SalesLine task
    
 -  Make sure that the needed **ValueMap** for **SalesUnitSymbol** in Finance and Operations exists.
 -  Make sure that the needed units are defined in Sales.
@@ -205,6 +205,6 @@ The following illustrations show an example of a template mapping in data integr
 
 [Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](contacts-template-mapping-direct.md)
 
-[Synchronize sales order headers and lines from Finance and Operations to Sales](sales-marketing/sales-order-template-mapping.md)
+[Synchronize sales order headers and lines from Finance and Operations to Sales](sales-order-template-mapping.md)
 
 [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](sales-invoice-template-mapping-direct.md)
