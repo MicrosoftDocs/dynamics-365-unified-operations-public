@@ -1,9 +1,5 @@
 # Testing the new code owners feature in GitHub. Please contact Margo if you have questions.
 
-# @global-owner1 and @global-owner2 will be requested for
-# review when someone opens a pull request.
-*       @microsoftdocs/axdocs
-
 /articles/dev-itpro/analytics	@sericks007 @kfend
 /articles/dev-itpro/database	@margoc
 /articles/dev-itpro/data-entities	@margoc
@@ -44,9 +40,9 @@
 /articles/supply-chain/inventory	@yuyus
 /articles/supply-chain/master-planning	@yuyus
 /articles/supply-chain/pim	@yuyus
-/articles/supply-chain/procurement	@yuyus
+/articles/supply-chain/procurement	@bibisp
 /articles/supply-chain/production-control	@yuyus
-/articles/supply-chain/sales-marketing	@yuyus
+/articles/supply-chain/sales-marketing	@yuyus @bibisp
 /articles/supply-chain/transportation	@bibisp
 /articles/supply-chain/warehousing	@bibisp
 /articles/talent	@rschloma

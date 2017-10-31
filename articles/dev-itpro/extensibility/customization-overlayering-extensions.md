@@ -239,7 +239,7 @@ You can create label extension files in order to modify the string value of a la
 4.  If your goal is to create translations of the FLM label, right-click on the FLM\_Extension element in your project and select **Add new languages**. Follow the wizard to add translation files to the FLM labels.
 
 > [!NOTE]
-> If the FLM_Extension file already exists in another model, you can name your file **FLM_Extension<N>** where <N> is any integer.
+> If the FLM_Extension file already exists in another model, you can name your file **FLM_ExtensionN** where N is any integer (For example FLM_Extension2, FLM_Extension3, ...etc)
 
 ## Extension of Country/Region Codes
 

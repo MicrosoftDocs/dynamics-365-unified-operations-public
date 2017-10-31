@@ -5,7 +5,7 @@ title: Post the pre-acquisition of a fixed asset
 description: This topic explains how to set up and post fixed asset pre-acquisitions.
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,7 +38,7 @@ This topic explains how to set up and post fixed asset pre-acquisitions.
 
 **Note:** The functionality for posting fixed asset pre-acquisitions is available only for legal entities that have their primary address in Hungary or the Czech Republic. A pre-acquisition of a fixed asset isn't depreciable, and it doesn't affect the acquisition costs or the net book value of the fixed asset. When you post a pre-acquisition, the status of the fixed asset is changed to **Acquired**. A fixed asset that has the **Acquired** status isn't depreciable. By contrast, when you post an acquisition, the status is changed to **Open**, and the fixed asset is depreciable.
 
-## Set up preacquisitions
+## Set up pre-acquisitions
 Before you can post a pre-acquisition, you must complete the following setup:
 
 -   On the **Fixed assets parameters** page, set the **Allow pre-acquisitions** option to **Yes**.

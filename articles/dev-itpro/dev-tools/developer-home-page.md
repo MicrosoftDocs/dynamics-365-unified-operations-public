@@ -5,7 +5,7 @@ title: Developer home page
 description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
-ms.date: 08/17/2017
+ms.date: 10/30/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,23 +30,22 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Developer home page
+# Develop and customize using Visual Studio
 
 [!include[banner](../includes/banner.md)]
 
 
 This topic provides links to topics about development.
 
-Overview
---------
+## Overview
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition represents the next-generation enterprise resource planning (ERP) offering from Microsoft. It is designed to enable the entire ERP application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. It leverages the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft. This release introduces significant changes to the development experience. These changes include:
 
--   Development tools that are decoupled from any running environment. You develop against local, XML-based files, not the online database.
--   Microsoft Visual Studio replaces MorphX as the development environment. The Visual Studio environment is customized to provide you with a smooth and familiar experience.
--   The X++ compiler generates Common Intermediate Language (CIL) for all features. CIL is the same intermediate language used by other .NET-based (managed) languages, such as the C\# programming language.
--   New browser-based client and new design patterns for forms that you can leverage to provide an improved end-user experience.
--   The new Application Lifecycle Model (ALM) for build automation, test automation, and deployment of models to the cloud.
+- Development tools that are decoupled from any running environment. You develop against local, XML-based files, not the online database.
+- Microsoft Visual Studio is the development environment. The Visual Studio environment is customized to provide you with a smooth and familiar experience.
+- The X++ compiler generates Common Intermediate Language (CIL) for all features. CIL is the same intermediate language used by other .NET-based (managed) languages, such as the C\# programming language.
+- You can leverage the browser-based client and the design patterns for forms to provide an improved end-user experience.
+- You use the Application Lifecycle Model (ALM) for build automation, test automation, and deployment of models to the cloud.
 
 ## Architecture
 -   [Application stack and server architecture](application-stack-server-architecture.md)
@@ -93,6 +92,7 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition represent
 -   [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)
 -   [Resolve conflicts using Visual Studio](https://mix.office.com/watch/1rl75ei2cs6d7)
 -   [Enable a new user account to develop on a development VM](enable-development-machine.md)
+-   [Updating the Visual Studio development tools](update-development-tools.md)
 
 ## X++ programming language
 ### Tutorials
@@ -137,20 +137,16 @@ The following links (also included in the methodology) describe key concepts and
 
 ### Additional concepts
 
--   [Delegates for migration](..\migration-upgrade\delegates-migration.md)
--   [How to import a SQL Server Analysis Services Project into the AOT](https://technet.microsoft.com/en-us/library/dn754850.aspx)
--   [Database synchronization](database-synchronization.md)
--   [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)
+- [Delegates for migration](..\migration-upgrade\delegates-migration.md)
+- [How to import a SQL Server Analysis Services Project into the AOT](https://technet.microsoft.com/en-us/library/dn754850.aspx)
+- [Database synchronization](database-synchronization.md)
+- [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)
+- [Upgrade and migration](..\migration-upgrade\upgrade-home-page)
+- [Workflow subsystem updates](..\migration-upgrade\workflow-subsystem.md)
+
 
 ## Move packages between environments
 -   [Create and apply a deployable package](..\deployment\create-apply-deployable-package.md)
-
-## Service environments
--   [Download hotfixes from Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md)
--   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
--   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
--   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
--   [Updating the Visual Studio development tools](update-development-tools.md)
 
 ## Performance
 -   [Take a trace with the Trace Parser and analyze it](..\perf-test\trace-trace-tutorial.md)
@@ -194,9 +190,6 @@ The client is an HTML web client that runs in all major browsers. For informati
 -   [Data entities home page](..\data-entities\data-entities.md)
 -   [OData](..\data-entities\odata.md)
 
-## Workflow
--   [Workflow subsystem](..\migration-upgrade\workflow-subsystem.md)
-
 ## Testing support in Visual Studio
 -   [Testing and validation](..\perf-test\testing-validation.md)
 -   [Support for testing in Visual Studio](..\perf-test\testing-support.md)
@@ -206,49 +199,37 @@ The client is an HTML web client that runs in all major browsers. For informati
 ## Office integration
 -   [Office integration](..\office-integration\office-integration.md)
 
-## Build workspaces
-### Tutorials
-
--   [Modeling and using aggregate data](..\analytics\model-aggregate-data.md)
--   [Adding KPI’s to workspaces](..\analytics\add-bi-workspaces.md)
--   [Building navigation](..\user-interface\build-navigation.md)
-
-### Concepts
-
--   [In-memory, real-time aggregate models replace SSAS cubes](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [Building operational workspaces](..\user-interface\build-workspaces.md)
--   [Tile and lit-caching for workspaces](..\user-interface\tile-list-caching-workspaces.md)
--   [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)
+## Intelligence
+- [Intelligence](..\analytics\bi-reporting-home-page.md)
+- [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)
 
 ## Mobile platform
--   [Mobile platform home page](../mobile-apps/platform/mobile-platform-home-page.md)
+- [Mobile platform home page](../mobile-apps/platform/mobile-platform-home-page.md)
 
 ## Global finance management
--   [Dimension entry control dialog support](..\financial\dimension-entry-control-dialog-support.md)
--   [Dimension entry control migration](..\financial\dimension-entry-control-migration.md)
--   [Dimension entry control uptake](..\financial\dimension-entry-control-uptake.md)
--   [Add dimensions to the Microsoft Excel template](..\financial\dimensions-overview.md)
--   [Create Open in Office experiences for Excel and Word](..\office-integration\office-integration-edit-excel.md)
--   [Add templates to open lines in Excel menu](..\user-interface\add-templates-open-lines-excel-menu.md)
--   [Segmented entry control dialog support](..\financial\segmented-entry-control-dialog-support.md)
--   [Segmented entry control metadata specification](..\financial\segmented-entry-control-metadata-specification.md)
--   [Segmented entry control - migration guidance](..\financial\segmented-entry-control-migration-guidance.md)
--   [Segmented Entry control migration walkthrough](..\financial\segmented-entry-control-conversion.md)
--   [Segmented entry control parm Specification](..\financial\segmented-entry-control-parm-method-specification.md)
--   [Creating exchange rate providers](..\financial\create-exchange-rate-providers.md)
--   [Financial dimension configuration for integrating applications](..\financial\financial-dimension-configuration-integration.md)
--   [Activating financial dimensions](..\financial\activate-financial-dimensions.md)
--   [Add the ability to look up values for financial dimensions in Microsoft Excel templates](..\financial\add-dimensions-excel-templates.md)
+- [Dimension entry control dialog support](..\financial\dimension-entry-control-dialog-support.md)
+- [Dimension entry control migration](..\financial\dimension-entry-control-migration.md)
+- [Dimension entry control uptake](..\financial\dimension-entry-control-uptake.md)
+- [Add dimensions to the Microsoft Excel template](..\financial\dimensions-overview.md)
+- [Create Open in Office experiences for Excel and Word](..\office-integration\office-integration-edit-excel.md)
+- [Add templates to open lines in Excel menu](..\user-interface\add-templates-open-lines-excel-menu.md)
+- [Segmented entry control dialog support](..\financial\segmented-entry-control-dialog-support.md)
+- [Segmented entry control metadata specification](..\financial\segmented-entry-control-metadata-specification.md)
+- [Segmented entry control - migration guidance](..\financial\segmented-entry-control-migration-guidance.md)
+- [Segmented Entry control migration walkthrough](..\financial\segmented-entry-control-conversion.md)
+- [Segmented entry control parm Specification](..\financial\segmented-entry-control-parm-method-specification.md)
+- [Creating exchange rate providers](..\financial\create-exchange-rate-providers.md)
+- [Financial dimension configuration for integrating applications](..\financial\financial-dimension-configuration-integration.md)
+- [Activating financial dimensions](..\financial\activate-financial-dimensions.md)
+- [Add the ability to look up values for financial dimensions in Microsoft Excel templates](..\financial\add-dimensions-excel-templates.md)
 
 ## Licensing
--   [ISV licensing](isv-licensing.md)
+- [ISV licensing](isv-licensing.md)
 
 ## Supply chain management
--   [Gantt development guide](..\user-interface\gantt-development-guide.md)
-
+- [Gantt development guide](..\user-interface\gantt-development-guide.md)
 
 # See also
-
 [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
 
 
