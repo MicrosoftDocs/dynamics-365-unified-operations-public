@@ -74,6 +74,13 @@ There are several packages that contain the supply data for a company.
 You can expect approximately 30 minutes to load each package. The time required to import this package will vary based on the speed of your instance.
 
 
+## Steps to take before loading packages
+
+There are some steps that you will need to do manually before you load the data. 
+1) If you want to login as a specific user, you will need to change the user's email address to the login address that you want to use. You can make that change in the User information data entity spreadsheet or, after loading data, in the System administration, Users form.
+2) You will need to start the Workflow jobs. Use System administration, Workflow infrastructure configuration and click on Ok. The workflow jobs will be started.
+3) The ready to post scheduler must be started. This batch will post transactions automatically. Use Demo Data, ??? to open the form. Select Create scheduler and set up the batch to be recurring.
+
 ## Loading the packages
 
 The data packages must be loaded in a specific order into a specific legal entity. The number preceding the name of the package provides guidance to the order that the data must be loaded. For example, to load the the HQUS financials, you must import "100 - System and shared.zip" first, followed by "200 - Financials - HQUS.zip". If you want to add supply chain data to the HQUS company, add "300 - Supply chain - HQUS.zip"
@@ -97,13 +104,11 @@ We recommend the following combinations:
 
 In some cases, there may be different data packages that have the same entities in them. If you load multiple packages in the same data project and those packages have data for the same entity, the data for entities that are loaded last will be the data that is used.
 
-###Manual steps
-There are some steps that you will need to do manually once you have loaded the data. 
-1) If you want to login as a specific user, you will need to change the user's email address to the login address that you want to use. You can make that change in System administration, Users
-2) You will need to start the Workflow jobs. Use System administration, Workflow infrastructure configuration and click on Ok. The workflow jobs will be started.
+### Steps to take after loading packages
 
 
 
-## Transactions
+
+## Transactions and automatic posting
 
 
