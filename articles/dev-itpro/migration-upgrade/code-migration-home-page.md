@@ -50,7 +50,7 @@ The following links (also included in the methodology) describe key concepts and
 - [Understanding the model split](../dev-tools/model-split.md)
 - [Deprecated features](deprecated-features.md)
 - [Deprecated API’s](deprecated-apis.md)
-- [Development tools performance tips](https://mix.office.com/watch/rnp6ng9wu8kx)
+- [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)
 
 ## Additional concepts
 
