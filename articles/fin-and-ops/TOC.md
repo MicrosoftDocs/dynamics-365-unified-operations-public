@@ -1213,8 +1213,10 @@
 #### [List of SQL Server Reporting Services reports](../dev-itpro/analytics/SSRS-report.md)
 #### [Create reporting solutions](../dev-itpro/analytics/create-nextgen-reporting-solutions.md)
 #### [Install report design templates](../dev-itpro/analytics/install-modern-report-design-templates.md)
-#### [Extend report menu items ](../dev-itpro/analytics/extend-report-menu-items.md)
-#### [Custom design business docs ](../dev-itpro/analytics/custom-designs-business-docs.md)
+#### [Customize App Suite reports using extensions](../dev-itpro/analytics/customize-app-suite-reports-with-extensions.md)
+#### [Expand Application Suite report data sets](../dev-itpro/analytics/expand-app-suite-report-data-sets.md)
+#### [Extend report menu items](../dev-itpro/analytics/extend-report-menu-items.md)
+#### [Custom design business docs](../dev-itpro/analytics/custom-designs-business-docs.md)
 
 
 ### [Electronic reporting](../dev-itpro/analytics/general-electronic-reporting.md)
