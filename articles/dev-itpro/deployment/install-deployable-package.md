@@ -5,7 +5,7 @@ title: Install a deployable package
 description: This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development/build environment.
 author: manalidongre
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,7 +37,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development/build environment.
 
-This command line process requires remote access (RDP) to the environments. In most cases, you can apply a deployable package to an environment directly from Dynamics Lifecycle Services (LCS) as described in [Apply a deployable package on a system](apply-deployable-package-system.md), without the need to understand the process described on this page.
+> [!IMPORTANT]
+> This topic applies to only two topologies:
+- Local development environments (Downloadable virtual hard disk [VHD])
+- Multi-box dev/test environments in Microsoft Azure (Partner and trial projects)
+
+> For all other environments that are deployed through LCS, you can apply a deployable package to an environment directly from Dynamics Lifecycle Services (LCS) as described in the topic, [Apply a deployable package on a system](apply-deployable-package-system.md).
 
 ## Key concepts
 -   **Deployable package**– A deployable package is a unit of deployment that can be applied in any environment. It can consist of a binary hotfix to the AOS runtime components, an updated application package, or a new application package.
