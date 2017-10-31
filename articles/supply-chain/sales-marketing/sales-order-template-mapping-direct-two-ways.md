@@ -107,9 +107,9 @@ New fields are added to the **Order** entity and displayed on the page:
 
 - **Is Maintained Externally** - Set to **Yes** when the order is coming from Finance and Operations.
 
-- **Processing status** - Used to show the processing status of the order in Finance and Operations. Values are:
+- **Processing status** - This field shows the processing status of the order in Finance and Operations. The following values are available:
 
-    - Draft (Initial status when order is created in Sales - only processing status in Sales that is editable)
+    - Draft (Initial status when order is created in Sales - only the processing status in Sales is editable)
     - Active (Status after activated with the Activate button in Sales)
     - Confirmed
     - Packing Slip
@@ -134,72 +134,77 @@ Before synchronizing sales orders, it is important to update the systems with th
 
 ### Setup in Sales
 
-- Ensure permissions for the team that the user (from your Sales **Connection set**) is assigned to. If you are using demo data, usually the user has admin access, but not the team. Without this you will get an error that Principal team is missing when running the project from Data integrator. 
+- Make sure that permissions are set up for the team that the user from your Sales **Connection set** is assigned to. If you are using demo data, the user usually has admin access, but the team doesn't have admin access. If the team doesn't have admin access, when you run the project from Data integration, you will get an error that Principal team is missing. 
 
-    - Under **Settings** > **Security** > **Teams**, select the relevant team, click **Manage Roles** and select a role with the desired permissions e.g. System Administrator.
+    - Go to **Settings** > **Security** > **Teams**, select the relevant team, click **Manage Roles** and select a role with the desired permissions, such as **System Administrator**.
 
-- Under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Use system prizing calculation system** is set to **Yes**. 
+   - Go to **Settings** > **Administration** > **System settings** > **Sales**, make sure that **Use system prizing calculation system** is set to **Yes**. 
 
-- Under **Settings** > **Administration** > **System settings** > **Sales**, ensure that **Discount calculation method** is set to **Line item**. 
+   - Go to **Settings** > **Administration** > **System settings** > **Sales**, make sure that **Discount calculation method** is set to **Line item**. 
 
 ### Setup in Finance and Operations
 
-Set **Sales and marketing** > **Periodic tasks** > **Calculate sales totals** to run as a batch job, with **Calculate totals for sales orders** set to **Yes**. This is important because only the sales orders with sales totals calculated will be synced to Sales. The frequence of the batch job should be alligned with the frequence of the sales order synchronization.
+Go to **Sales and marketing** > **Periodic tasks** > **Calculate sales totals**, and set the job to run as a batch job. Set **Calculate totals for sales orders** option to **Yes**. This is important because only the sales orders with sales totals calculated will be synced to Sales. The frequence of the batch job should be alligned with the frequence of the sales order synchronization.
 
 ### Setup in the Data integration project Sales Orders (Sales to Fin and Ops) - Direct
 
-- Ensure that the needed mapping exists for **Shipto_country to DeliveryAddressCountryRegionISOCode**. You can make a default for blank value in the ValueMap by setting the left side to "blank" and right side to the desired country.
+- Make sure that the needed mapping exists for **Shipto_country to DeliveryAddressCountryRegionISOCode**. You can make *Blank* a default value in the **ValueMap** by setting the left side to *Blank* and right side to the desired country.
 
-    - Template value is **ValueMap** with a number of countries mapped and "blank" = US
+    - Template value is **ValueMap** with a number of countries mapped and *Bank* = US
     
 ### Setup in the Data integration project Sales Orders (Fin and Ops to Sales) - Direct
 
 #### SalesHeader task
 
-- **Price list** is required to create orders in Sales. Update the **ValueMap** for **pricelevelid.name [Price List Name]** to the **Price list** used in Sales per currency. You can either used the default **Price list** for single currency or use **ValueMap** if you have **Price lists** in multiple currencies.
+- **Price list** is required to create orders in Sales. Update the **ValueMap** for **pricelevelid.name [Price List Name]** to the **Price list** used in Sales per currency. You can use the default **Price list** for a single currency. Alternatively, if you have price lists in multiple currencies, you can use **ValueMap**.
     
     - Default template value for **pricelevelid.name [Price List Name]** is CRM Service USA (sample). 
 
 #### SalesLine task
    
-- Ensure that the needed **ValueMap** for **SalesUnitSymbol** in Finance and Operations exists and also that the needed units are defined in Sales.
+-  Make sure that the needed **ValueMap** for **SalesUnitSymbol** in Finance and Operations exists.
+-  Make sure that the needed units are defined in Sales.
 
     - Template value with **ValueMap** is defined for **SalesUnitSymbol to oumid.name**.
 
-## Template mapping in data integrator
+## Template mapping in Data integration
 
 > [!NOTE]
 > The **Payment terms**, **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** fields aren't part of the default mappings. To map these fields, you must set up a value mapping that is specific to the data in the organizations that the entity is synchronized between.
 
-The following illustrations show an example of a template mapping in data integrator.
+The following illustrations show an example of a template mapping in data integration.
+
+> [!NOTE]
+> The mapping shows which field information will be synchronized from Sales to Finance and Operations, or from Finance and Operations to Sales.
+
 
 ### Sales Orders (Fin and Ops to Sales) - Direct / OrderHeader
 
-![Template mapping in data integrator](./media/sales-order-direct-template-mapping-data-integrator-1.png)
+[![Template mapping in data integrator](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
 
 ### Sales Orders (Fin and Ops to Sales) - Direct / OrderLine
 
-![Template mapping in data integrator](./media/sales-order-direct-template-mapping-data-integrator-2.png)
+[![Template mapping in data integrator](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
 
 ### Sales Orders (Sales to Fin and Ops) - Direct / OrderHeader
 
-![Template mapping in data integrator](./media/sales-order-direct-template-mapping-data-integrator-3.png)
+[![Template mapping in data integrator](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
 
 ### Sales Orders (Sales to Fin and Ops) - Direct / OrderLine
 
-![Template mapping in data integrator](./media/sales-order-direct-template-mapping-data-integrator-4.png)
+[![Template mapping in data integrator](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
-sales-marketing/media/sales-order-template-mapping-data-integrator-4.png
 
 ## Related topics
 
-[Synchronize products from Finance and Operations to products in Sales](products-template-mapping.md)
+[Prospect to cash](prospect-to-cash.md)
 
-[Synchronize accounts from Sales to customers in Finance and Operations](accounts-template-mapping.md)
+[Synchronize accounts directly from Sales to customers in Finance and Operations](accounts-template-mapping-direct.md)
 
-[Synchronize contacts from Sales to contacts or customers in Finance and Operations](contacts-template-mapping.md)
+[Synchronize products directly from Finance and Operations to products in Sales](products-template-mapping-direct.md)
 
-[Synchronize sales quotation headers and lines from Sales to Finance and Operations](sales-quotation-template-mapping.md)
+[Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](contacts-template-mapping-direct.md)
 
-[Synchronize sales invoice headers and lines from Finance and Operations to Sales](sales-invoice-template-mapping.md)
+[Synchronize sales order headers and lines from Finance and Operations to Sales](sales-marketing/sales-order-template-mapping.md)
 
+[Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](sales-invoice-template-mapping-direct.md)
