@@ -5,7 +5,7 @@ title: Titres de recette in the public sector in France
 description: The titre de recette is used by the director to notify the accountant that the organization is entitled to collect a specific amount from another entity, and to authorize the accountant to deposit that amount. The director or the accountant may delegate a representative to perform the task, but the responsibility for each task remains with the director or the accountant. The titre maintains the strict separation that is required between the operational role of the director and the accounting role of the accountant.
 author: rschloma
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -48,7 +48,7 @@ From the **Maintain titres de recette** page, the director can complete the foll
 To submit titres to the accountant for deposit, the director collects the printed titres and their related documentation under a borderau de titre.
 
 -   Print the titres assigned to a bordereau from the **Records to include** FastTab on the **Titre de recette report** page.
--   Print the bordereau from the the **Records to include** FastTab on the **Bordereau de titre report** page.
+-   Print the bordereau from the **Records to include** FastTab on the **Bordereau de titre report** page.
 
 ## Accountant’s tasks
 From the **Maintain titres de recette** page or from the **Titre de recette** tab on the free text invoice page, the accountant can accept, reject, or hold titres. When a titre is rejected, the director status changes to Not reviewed, and the titre and bordereau de titre numbers are cleared.
