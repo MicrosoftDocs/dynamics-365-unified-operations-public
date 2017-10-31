@@ -5,7 +5,7 @@ title: Split payment for invoices issued to the Public Administration
 description: This topic provides information about the split payment accounting schema.
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -74,7 +74,7 @@ Create a new VAT book to register invoices to Public administration. Create a ne
 -   Register a free text invoice for a customer with split payment settings.
 
 ## Working with the split payment invoices
-When posting the invoice, such as sales order, free text invoice, or project invoice. with the Split payment sales tax group, the reversing sales tax transactions with relevant tax codes are posted to eliminate the tax being accrued. To reduce the customer balance, a customer transaction for the sales tax amount is created and automatically settled with the invoice while invoice posting. This reduces the customer balance by the VAT amount. **Note:** The tax transactions posted with the **Split payment **option selected are excluded from the sales tax payment process. eInvoices created using the Split payment process have an"S" in the tag &lt;EsigibilitaIVA&gt;.
+When posting the invoice, such as sales order, free text invoice, or project invoice. with the Split payment sales tax group, the reversing sales tax transactions with relevant tax codes are posted to eliminate the tax being accrued. To reduce the customer balance, a customer transaction for the sales tax amount is created and automatically settled with the invoice while invoice posting. This reduces the customer balance by the VAT amount. **Note:** The tax transactions posted with the **Split payment **option selected are excluded from the sales tax payment process. eInvoices created using the Split payment process have an "S" in the tag &lt;EsigibilitaIVA&gt;.
 
 ### Booking example for sales invoice
 
