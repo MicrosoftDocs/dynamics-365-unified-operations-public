@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Synchronize sales order headers and lines directly between Sales and Finance and Operations
-description: The topic discusses the templates and underlying tasks that are used to synchronize sales order headers and lines directly between Microsoft Dynamics 365 for Sales and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+title: Two-way syncing sales order headers and lines directly between Sales and Finance and Operations
+description: The topic discusses the templates and underlying tasks that are used to run two-way synchronization of sales order headers and lines directly between Microsoft Dynamics 365 for Sales and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,15 +30,17 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Synchronize sales order headers and lines directly between Sales and Finance and Operations
+# Two-way syncing sales order headers and lines directly between Sales and Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-The topic discusses the templates and underlying tasks that are used to synchronize sales order headers and lines directly between Microsoft Dynamics 365 for Sales and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
- 
+The topic discusses the templates and underlying tasks that are used to run two-way synchronization of sales order headers and lines directly between Microsoft Dynamics 365 for Sales and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+
 ## Template and tasks
 
-The following templates and underlying tasks are used to synchronize sales order headers and lines directly between Finance and Operations and Sales:
+To access the available templates, open [PowerApps Admin Center](https://preview.admin.powerapps.com/dataintegration). Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
+
+The following templates and underlying tasks are used to run two-way synchronization of sales order headers and lines directly between Sales and Finance and Operations:
 
 - **Name of template in Data integration** 
 
@@ -50,7 +52,7 @@ The following templates and underlying tasks are used to synchronize sales order
     - OrderHeader
     - OrderLine
 
-Sync tasks required prior to Sales order header and lines sync:
+The following synchronization tasks are required before synchronization of sales invoice headers and lines can occur:
 
 - Products (Fin and Ops to Sales) - Direct
 - Accounts (Sales to Fin and Ops) - Direct (if used)
@@ -65,11 +67,11 @@ Sync tasks required prior to Sales order header and lines sync:
 
 ## Entity flow
 
-Sales orders are created in Sales and synchronized to Finance and Operations when activated with the 'Sales Orders (Sales to Fin and Ops) - Direct' template. In order to activate and sync orders from Sales they have to consist of only externally maintained products, no write-in products are allowed. Once activated the sales order will become read only from the UI and from this point updates are done from Finance and Operations. When the sales order is Confirmed any updates or fulfillment status will sync from Finance and Operations to Sales with the 'Sales Orders (Fin and Ops to Sales) - Direct' template. 
-It is also possible to create new sales orders in Finance and Operations and skip the creation from Sales, as in the above flow they will sync to Sales once Confirmed.
+Sales orders are created in Sales and synchronized to Finance and Operations when the **Sales Orders (Sales to Fin and Ops) - Direct** template is activated. In order to activate and sync orders from Sales, the orders must consist of products that are maintained externally. This means no write-in products are allowed. Once the synchronization is activated, the sales order will become read-only in the user interface. At this point, the updates are made from Finance and Operations. When the sales order has the **Confirmed** status, any updates or fulfillment status will be synced from Finance and Operations to Sales using the **Sales Orders (Fin and Ops to Sales) - Direct** template.
 
-In Finance and operations
-Filters in the template ensure that only relevant sales orders are included in the synchronization:
+It is also possible to create new sales orders in Finance and Operations, so you can skip creating orders from Sales. Once a sales order has the **Confirmed** status, the order will be synced to Sales as described in the above paragraph. 
+
+In Finance and operations, filters in the template ensure that only the relevant sales orders are included in the synchronization:
 
 - Both ordering and invoicing customer on the sales order that originate from Sales will be included in the synchronization. In Finance and Operations, the fields **OrderingCustomerIsExternallyMaintained** and **InvoiceCustomerIsExternallyMaintained** are used to track the synchronization in the data entities.
 
