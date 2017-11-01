@@ -2,10 +2,10 @@
 # required metadata
 
 title: Set up payroll for workers
-description: Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits. This information is used when you generate pay statements for the worker. In addition, if contribution and deduction amounts are changed on a benefit, that change must be made for each worker who is enrolled in that benefit. This topics provides information about these tasks and the fields that are used to complete them.
+description: Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits. This information is used when you generate pay statements for the worker. In addition, if contribution and deduction amounts are changed on a benefit, that change must be made for each worker who is enrolled in that benefit. 
 author: rschloma
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../../includes/banner.md)]
 
 
-Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits. This information is used when you generate pay statements for the worker. In addition, if contribution and deduction amounts are changed on a benefit, that change must be made for each worker who is enrolled in that benefit. This topics provides information about these tasks and the fields that are used to complete them.
+Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits. This information is used when you generate pay statements for the worker. In addition, if contribution and deduction amounts are changed on a benefit, that change must be made for each worker who is enrolled in that benefit. This topic provides information about these tasks and the fields that are used to complete them.
 
 For more information, see [Payroll data updates FAQ](noam-usa-payroll-data-updates.md). [![Flow of worker and position tasks](./media/worker-tasks.gif)](./media/worker-tasks.gif)
 
