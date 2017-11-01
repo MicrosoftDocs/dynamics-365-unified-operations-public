@@ -5,7 +5,7 @@ title: Process compensation
 description: Compensation processing allows you to calculate new base compensation amounts for your employees based on equity adjustments, merit increase targets, and performance.
 author: kherr75
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -74,7 +74,7 @@ To view the process results, open the **Process results** page. A new compensati
 
 The **Process results** page contains information about the process run including when the run occurred, the user who ran the process, and whether any errors occurred when the process was run. You can also mark the **Locked** option to disable the **Load compensation** button and prevent anyone from loading the compensation events to the employee records. Clicking the **Employees results** button will display the list of employees included in the run.
 
-The **Employee results** option shows information about the process itself, as well as any compensation actions performed in the process. The **Fixed compensation** section will contain a record for each action included in the process event for the compensation plan. The **Current Guildeline** and **Recommendation** columns will display more information for the action selected in the **Fixed compensation** section. If **Enable recommendations** was marked for the action, the Recommendation fields will be editable. This will let you manually adjust the amounts for the employee. Note that if you marked **Use previous result** for the action on the process event, you must manually update the amounts for any dependent actions.
+The **Employee results** option shows information about the process itself, as well as any compensation actions performed in the process. The **Fixed compensation** section will contain a record for each action included in the process event for the compensation plan. The **Current Guideline** and **Recommendation** columns will display more information for the action selected in the **Fixed compensation** section. If **Enable recommendations** was marked for the action, the Recommendation fields will be editable. This will let you manually adjust the amounts for the employee. Note that if you marked **Use previous result** for the action on the process event, you must manually update the amounts for any dependent actions.
 
 When the compensation amounts have been reviewed for an employee and any adjustments to the recommended values have been made, you can change the **Status** on the **Employee event** line to indicate whether the event has been approved or should be ignored. Optionally, you can erase any changes made to the employee’s recommendation by clicking the **Recalculate** button. This will mark the existing employee event with a status of Ignore and create a new employee event with recalculated values.
 

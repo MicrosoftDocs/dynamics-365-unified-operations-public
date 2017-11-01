@@ -5,7 +5,7 @@ title: Adjustment inflation declaration report
 description: Microsoft Dynamics 365 for Finance and Operations, Enterprise edition users can process inflation adjustments by using INPC rates, various methods (such as opening balance, balance, monthly balance, and transaction date), and various dimensions.
 author: sndray
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -115,7 +115,7 @@ This report shows the calculation of the profit and loss inflation adjustment fo
 
 ### Inventory report
 
-This report shows the calculation of the inventory account code inflation adjustment for the selected period. It must shows all main accounts that have the following parameter values:
+This report shows the calculation of the inventory account code inflation adjustment for the selected period. It must show all main accounts that have the following parameter values:
 
 -   The **B-10 adjustment** slider is on for the main account.
 -   The adjustment type of the main account is **Balance**.

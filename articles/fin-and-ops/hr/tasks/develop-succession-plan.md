@@ -5,7 +5,7 @@ title: Develop a succession plan
 description: As your organization grows, and you consider succession planning, you may want to find someone who has similar skills to another person. 
 author: kherr75
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 11/01/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -41,7 +41,7 @@ As your organization grows, and you consider succession planning, you may want t
 7. Click Person.
 8. In the Person field, type in a name, or select the drop down.  Example: Cassie Hicks.
 9. Click OK.
-10. Exapnd the certificates fast tab to view or edit the certificates included in the skill mapping.
+10. Expand the certificates fast tab to view or edit the certificates included in the skill mapping.
 11. Expand the Skills fast tab to view or edit the skills to be included.
 12. In the list, mark the first row.  Example:  Accounting
 13. Click the Optional checkbox.
