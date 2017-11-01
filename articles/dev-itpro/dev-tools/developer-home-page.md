@@ -151,7 +151,7 @@ The client is an HTML web client that runs in all major browsers. For informati
 
 ## Testing support in Visual Studio
 - [Testing and validation](..\perf-test\testing-validation.md)
-- [upport for testing in Visual Studio](..\perf-test\testing-support.md)
+- [Support for testing in Visual Studio](..\perf-test\testing-support.md)
 - [Developer topology deployment with continuous build and test automation](..\perf-test\continuous-build-test-automation.md)
 - [Task Recorder](..\user-interface\task-recorder.md)
 
