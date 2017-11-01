@@ -373,9 +373,7 @@
 ### [Separate localization models](lcs-solutions/separate-localization-models.md)
 ### [Submit a regulatory alert](lcs-solutions/submit-localization-alerts.md)
 
-
-
-# Financials development
+# [Financials development](financial/financial-dev-home-page.md)
 ## [Dimensions](financial/dimensions.md)
 ## [Add dimensions to an Excel template](financial/dimensions-overview.md)
 ## [Dimension Entry control dialog support](financial/dimension-entry-control-dialog-support.md)
@@ -441,7 +439,7 @@
 #### [Migrate an upgraded sales cube to the entity store](migration-upgrade/migrate-upgraded-cube-entity-store.md)
 #### [Upgrade budget planning](migration-upgrade/upgrade-budget-planning.md)
 
-## Code migration and upgrade
+## [Code migration and upgrade](migration-upgrade/code-migration-home-page.md)
 ### [Prepare to migrate code](migration-upgrade/prepare-migration.md)
 ### [Configure Visual Studio Team Services mapping during code migration](migration-upgrade/configure-vso-solution.md)
 ### [Split models](dev-tools/model-split.md)
