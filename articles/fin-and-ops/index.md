@@ -103,7 +103,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Administration</h3>
 <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Deployment</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrade</a></p>
-<p><a href="../dev-itpro/dev-tools/developer-home-page.md#service-environments">Servicing</a></p>
+<p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Servicing</a></p>
 <p><a href="../dev-itpro/data-entities/data-management-integration-data-entity.md">Data management</a></p>
 <p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">Organization administration</a></p>

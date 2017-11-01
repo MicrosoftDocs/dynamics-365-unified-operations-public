@@ -53,7 +53,7 @@ You can access configuration data packages from LCS. You can either apply them t
 4.  Select the configuration data package.
 5.  Click **Pick**.
 
-At this point, you can use the **Consume** function to apply the process data package to an LCS environment.
+At this point, you can use the **Consume** function to apply the process data package to an LCS environment. 
 
 You can also download the individual data package files from the **Data package** area. Use the **Data management** workspace in Finance and Operations to import the data packages from LCS. For more information about how to import and export configurations, see [Copy configuration data between companies](copy-configuration.md).
 

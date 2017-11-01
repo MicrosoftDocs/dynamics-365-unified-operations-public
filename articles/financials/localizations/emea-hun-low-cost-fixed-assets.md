@@ -5,7 +5,7 @@ title: Low-cost fixed assets
 description: This topic provides information about low-cost fixed assets for Hungary.
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,7 +38,7 @@ This topic provides information about low-cost fixed assets for Hungary.
 
 A low-cost asset is an asset for which the acquisition cost doesn't exceed a predefined amount. Hungarian tax law defines the limit (threshold) for low-cost assets. These assets can be fully depreciated at the same time that they are acquired.
 
-## Set up parameters for lowcost fixed assets
+## Set up parameters for low-cost fixed assets
 ### Set up the low-cost asset threshold
 
 To set up the limit for low-cost assets, click **Fixed assets** &gt; **Setup** &gt; **Fixed assets parameters**. Then, in the **Low-cost asset threshold** field, enter the value limit for low-cost assets.
