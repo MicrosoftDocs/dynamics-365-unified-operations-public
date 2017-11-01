@@ -141,7 +141,7 @@ The following links (also included in the methodology) describe key concepts and
 - [How to import a SQL Server Analysis Services Project into the AOT](https://technet.microsoft.com/en-us/library/dn754850.aspx)
 - [Database synchronization](database-synchronization.md)
 - [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)
-- [Upgrade and migration](..\migration-upgrade\upgrade-home-page)
+- [Upgrade and migration](..\migration-upgrade\upgrade-home-page.md)
 - [Workflow subsystem updates](..\migration-upgrade\workflow-subsystem.md)
 
 
