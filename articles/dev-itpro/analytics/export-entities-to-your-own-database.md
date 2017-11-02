@@ -68,31 +68,31 @@ If you're using this functionality for integration with a business intelligence 
 
 ## Configuring the entity export option
 
-Start the Finance and Operations client, and then, on the **Data management** workspace, select the **Configure Entity export to database** tile.
+1. Start the Finance and Operations client, and then, on the **Data management** workspace, select the **Configure Entity export to database** tile.
 
-![Configure Entity export to database tile](media/6b9943828c28d71fa5624d89c2390831.png)
+    ![Configure Entity export to database tile](media/6b9943828c28d71fa5624d89c2390831.png)
 
-If you've configured any databases, a list is shown. Otherwise, you must configure a new database. Select **New**, and enter a unique name and a description for the new database. Note that you can export entities into multiple databases.
+2. If you've configured any databases, a list is shown. Otherwise, you must configure a new database. Select **New**, and enter a unique name and a description for the new database. Note that you can export entities into multiple databases.
 
-![New Record page](media/76001d314ff150e6c1b4c87d349c2bea.png)
+    ![New Record page](media/76001d314ff150e6c1b4c87d349c2bea.png)
 
-Next, you must enter the connection string in the following format.
+3. Next, you must enter the connection string in the following format.
 
-    Data Source=<logical server name>,1433; Initial Catalog=<your DB name>; Integrated Security=False; User ID=<SQL user ID>; Password=<password>
+    `Data Source=<logical server name>,1433; Initial Catalog=<your DB name>; Integrated Security=False; User ID=<SQL user ID>; Password=<password>`
 
-In this connection string, the logical server name should resemble **nnnn.database.windows.net**. You should be able to find the logical server name from the Azure portal.
+4. In this connection string, the logical server name should resemble **nnnn.database.windows.net**. You should be able to find the logical server name from the Azure portal.
 
-After you enter the connection string, select **Validate**, and make sure that the connection is successful.
+5. After you enter the connection string, select **Validate**, and make sure that the connection is successful.
 
-The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option provides an opportunity for you to hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger per bulk insert operation is supported. The size of the bulk insert is determined by the **Maximum insert commit** size parameter in the Data management framework.
+  - The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option provides an opportunity for you to hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger per bulk insert operation is supported. The size of the bulk insert is determined by the **Maximum insert commit** size parameter in the Data management framework.
 
-The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining CCIs for entities that are copied from Finance and Operations. However, CCIs are currently supported only on SQL premium databases. Therefore, to enable this option, you must create an SQL premium database.
+  - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining CCIs for entities that are copied from Finance and Operations. However, CCIs are currently supported only on SQL premium databases. Therefore, to enable this option, you must create an SQL premium database.
 
-When the validation is passed, the database that you configured for entity export now appears in the lists, as shown in the following illustration.
+6. When the validation is passed, the database that you configured for entity export now appears in the lists, as shown in the following illustration.
 
-![Database for entity export](media/e3bcecdb0ff1532d890915903b378c60.png)
+    ![Database for entity export](media/e3bcecdb0ff1532d890915903b378c60.png)
 
-Next, you can publish one or more entities to the new database by selecting the **Publish** option on the menu.
+7. Next, you can publish one or more entities to the new database by selecting the **Publish** option on the menu.
 
 
 
