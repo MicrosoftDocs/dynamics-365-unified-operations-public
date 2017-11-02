@@ -111,7 +111,7 @@ This procedure describes how to automate the containerization of loads in Wareho
 6. In the Wave step code field, type a value.
 7. Select the Allow split picks check box.
 8. Click Save.
-9. Click Containier mixing constraints.
+9. Click Container mixing constraints.
     * Mixing logic breaks allows you to set up rules for packing allocation lines in containers. For example, if you add the Item number field, when items are assigned to containers, a new container will be created when there is a new item number. This is will prevent workers from packing allocations lines for two different customers in the same container.  
 10. Click New.
 11. In the Table field, select an option.
