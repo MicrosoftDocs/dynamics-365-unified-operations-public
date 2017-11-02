@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Create formate for counting and summing for electronic reporting (ER)
+title: Create format for counting and summing for electronic reporting (ER)
 description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output. 
 author: NickSelin
 manager: AnnBe 
-ms.date: 10/28/2016
+ms.date: 11/02/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create formate for counting and summing for electronic reporting (ER)
+# Create format for counting and summing for electronic reporting (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
