@@ -18,7 +18,7 @@ ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 75083
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9

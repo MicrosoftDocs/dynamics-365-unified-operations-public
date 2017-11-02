@@ -18,7 +18,7 @@ ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, Pr
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f

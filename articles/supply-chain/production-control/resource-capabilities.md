@@ -18,7 +18,7 @@ ms.search.form: WrkCtrCapability, WrkCtrTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29961
 ms.assetid: 30e38233-2a64-4070-911f-8ffd78dd8281

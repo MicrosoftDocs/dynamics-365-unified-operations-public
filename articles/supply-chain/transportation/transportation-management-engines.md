@@ -18,7 +18,7 @@ ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateE
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3

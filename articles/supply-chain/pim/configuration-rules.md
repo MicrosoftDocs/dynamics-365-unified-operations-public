@@ -18,7 +18,7 @@ ms.search.form: BOMConfigRule
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19761
 ms.assetid: e4c6622d-1e2d-4a4d-8047-c553a25d4f87

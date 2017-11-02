@@ -18,7 +18,7 @@ ms.search.form: EcoResCategory, EcoResCategoryHierarchyListPage, EcoResCategoryH
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20911
 ms.assetid: a1b30d2a-a370-402a-b3bd-d562adca55f0

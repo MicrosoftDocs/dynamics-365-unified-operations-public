@@ -18,7 +18,7 @@ ms.search.form: InventCostOnhandItem
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19131
 ms.assetid: dd2663d8-bcc0-47b1-b36d-57433143487c

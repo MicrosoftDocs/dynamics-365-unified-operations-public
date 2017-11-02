@@ -18,7 +18,7 @@ ms.search.form: ProdSchedule
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 198073
 ms.assetid: 12c28b11-80aa-4668-b15b-724cb24890bd

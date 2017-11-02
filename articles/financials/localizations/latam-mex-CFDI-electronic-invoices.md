@@ -18,7 +18,7 @@ ms.search.form: EInvoiceCFDIJour_MX, EInvoiceCFDIPACTable_MX, EInvoiceParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29791
 ms.assetid: b6861a2c-c132-48a2-97b5-9cb1020e0512

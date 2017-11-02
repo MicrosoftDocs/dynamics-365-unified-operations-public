@@ -18,7 +18,7 @@ ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanAct
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267034
 ms.assetid: 15c76a51-fa6d-42d2-994a-c67df6bae6a9

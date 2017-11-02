@@ -18,7 +18,7 @@ ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10923
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Iceland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom

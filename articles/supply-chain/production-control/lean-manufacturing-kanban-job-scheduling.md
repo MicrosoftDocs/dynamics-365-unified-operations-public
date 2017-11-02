@@ -18,7 +18,7 @@ ms.search.form: KanbanBoardScheduleJobForward, KanbanBoardShowJobs, KanbanJobSch
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 52961
 ms.assetid: fe3b4822-6140-4b02-bebb-1fc17be2bce8

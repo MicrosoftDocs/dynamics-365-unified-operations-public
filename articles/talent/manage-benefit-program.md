@@ -18,7 +18,7 @@ ms.search.form: HcmBenefitEligibilityDetail, HcmBenefitSelection, SysPolicyListP
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15681
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090

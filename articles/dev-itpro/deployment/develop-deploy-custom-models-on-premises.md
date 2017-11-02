@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations, Platform, AX Platform
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 107013
 ms.assetid: 

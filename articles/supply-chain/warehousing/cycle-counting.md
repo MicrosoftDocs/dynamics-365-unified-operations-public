@@ -18,7 +18,7 @@ ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThres
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e

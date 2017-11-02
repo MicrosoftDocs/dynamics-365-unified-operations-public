@@ -18,7 +18,7 @@ ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea

@@ -18,7 +18,7 @@ ms.search.form: LedgerTransVoucher
 audience: Application User
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13031
 ms.assetid: 281c7ea6-4dfd-4d1f-994f-c361ee299dbe

@@ -18,7 +18,7 @@ ms.search.form: LedgerAccuralTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14131
 ms.assetid: 0489b59a-37a7-4a78-87bf-4b597e9efad9

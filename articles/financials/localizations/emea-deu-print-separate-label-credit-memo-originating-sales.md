@@ -18,7 +18,7 @@ ms.search.form: OMLegalEntity
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28871
 ms.search.region: Germany

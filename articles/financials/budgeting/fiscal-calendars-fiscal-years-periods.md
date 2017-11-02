@@ -18,7 +18,7 @@ ms.search.form: FiscalCalendars
 audience: Application User
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25851
 ms.assetid: a968a5e5-585e-4389-aa4e-c885a7e23413

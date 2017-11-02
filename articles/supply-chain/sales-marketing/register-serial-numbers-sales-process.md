@@ -19,7 +19,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
 
-ms.search.scope: CoreOperations, Retail
+ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 28931

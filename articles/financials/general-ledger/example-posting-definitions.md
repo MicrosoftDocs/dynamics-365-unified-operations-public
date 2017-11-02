@@ -18,7 +18,7 @@ ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15772
 ms.assetid: 3864e4da-853f-403d-b906-79631d80b363

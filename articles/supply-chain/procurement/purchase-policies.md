@@ -18,7 +18,7 @@ ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11614
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f

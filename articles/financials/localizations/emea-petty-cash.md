@@ -18,7 +18,7 @@ ms.search.form: RCashBalance, RCashCountStatementForm, RCashPosting, RCashRemain
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268504
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia

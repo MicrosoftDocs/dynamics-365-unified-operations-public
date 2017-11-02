@@ -18,7 +18,7 @@ ms.search.form: SysDataSharingConfiguration
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89071
 ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311

@@ -18,7 +18,7 @@ ms.search.form: PurchYearEndClose
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19601
 ms.assetid: ba9a7abc-bd18-47c2-b745-96cdcec8ac98

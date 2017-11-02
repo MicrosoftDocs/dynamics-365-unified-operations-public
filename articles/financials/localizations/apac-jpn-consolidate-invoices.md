@@ -18,7 +18,7 @@ ms.search.form: CustConsInvoice_JP, VendConsInvoice_JP
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10314
 ms.assetid: bd7255d9-0b0e-4372-8563-eaa559adbf24

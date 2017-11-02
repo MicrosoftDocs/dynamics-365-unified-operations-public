@@ -18,7 +18,7 @@ ms.search.form: BudgetDetailsInquiry, CustGroup, JournalizingDefinition, Journal
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27271
 ms.search.region: Global

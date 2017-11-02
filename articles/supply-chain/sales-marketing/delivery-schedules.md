@@ -18,7 +18,7 @@ ms.search.form: PurchDeliverySchedule, SalesDeliverySchedule, SalesQuotationDeli
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 213984
 ms.assetid: 44cac104-c36c-4371-a992-9178b3fd65e9

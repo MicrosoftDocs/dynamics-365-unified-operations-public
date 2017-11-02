@@ -19,7 +19,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
 
-ms.search.scope: CoreOperations, Retail
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846

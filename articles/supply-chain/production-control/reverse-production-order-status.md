@@ -18,7 +18,7 @@ ms.search.form: ProdParmStatusDecrease
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70131
 ms.assetid: b1e0df43-b388-4326-8fb7-501f30c89776

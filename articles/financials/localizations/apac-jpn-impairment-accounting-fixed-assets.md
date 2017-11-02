@@ -18,7 +18,7 @@ ms.search.form: AssetImpairmentAssetTransInquire_JP, AssetImpairmentIndicator_JP
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28811
 ms.search.region: Japan

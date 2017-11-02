@@ -18,7 +18,7 @@ ms.search.form: HcmJob, HcmPosition, OMOperatingUnit
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: CoreOperations, Retail
+ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 87933

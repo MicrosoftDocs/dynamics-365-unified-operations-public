@@ -18,7 +18,7 @@ ms.search.form: BudgetControlApportionments, BudgetControlConfiguration, BudgetC
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19471
 ms.assetid: 8cecf3cc-8916-44d7-8c73-d6254a61f62b

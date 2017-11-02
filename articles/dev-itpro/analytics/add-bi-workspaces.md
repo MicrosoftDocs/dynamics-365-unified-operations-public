@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Unified Operations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24551
 ms.assetid: 78a85e0a-e002-41b5-85b7-e2772317d56e

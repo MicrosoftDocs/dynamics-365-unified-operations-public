@@ -18,7 +18,7 @@ ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdT
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a

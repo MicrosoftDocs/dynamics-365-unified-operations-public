@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: CoreOperations, 
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13211
 ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130

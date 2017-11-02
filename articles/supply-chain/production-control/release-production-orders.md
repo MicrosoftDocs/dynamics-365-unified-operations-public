@@ -18,7 +18,7 @@ ms.search.form: ProdParmRelease
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2414
 ms.assetid: 50c2257b-2924-44f5-b7c1-11f498092053

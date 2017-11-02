@@ -18,7 +18,7 @@ ms.search.form: InventOrderEntryDeadlineGroup, InventOrderEntryDeadlineParameter
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 7151
 ms.assetid: bbc4f9a2-df4b-4d92-9f18-25282a85541f

@@ -18,7 +18,7 @@ ms.search.form: Tax1099Fields, Tax1099Summary
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6861
 ms.assetid: 518633aa-b341-47e6-ac7b-7c5841b50dc3

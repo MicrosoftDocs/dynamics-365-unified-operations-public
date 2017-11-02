@@ -18,7 +18,7 @@ ms.search.form: DIOTDeclarationConcept_MX, DIOTDeclarationTaxCode_MX, VendTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79334
 ms.assetid: 0cdb4da3-dca8-4e31-8fd5-8a1f785b5104

@@ -18,7 +18,7 @@ ms.search.form: CostingVersion
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 78183
 ms.assetid: 1e41953f-cdb9-4598-b776-46e49383a773

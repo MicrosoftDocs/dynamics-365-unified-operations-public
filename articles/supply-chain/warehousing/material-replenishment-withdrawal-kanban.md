@@ -18,7 +18,7 @@ ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

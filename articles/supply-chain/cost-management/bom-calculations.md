@@ -18,7 +18,7 @@ ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, Sa
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 273763
 ms.assetid: c6fa3348-eafa-4847-9132-e65c5f55cbf4

@@ -18,7 +18,7 @@ ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16141
 ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275

@@ -18,7 +18,7 @@ ms.search.form: LedgerJournalTransVendPaym, TaxAuthority, TaxWithholdGroup, TaxW
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30081
 ms.search.region: United Kingdom

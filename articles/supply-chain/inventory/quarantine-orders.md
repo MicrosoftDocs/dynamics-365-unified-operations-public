@@ -18,7 +18,7 @@ ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQ
 audience: Application User
 # ms.devlang:
 ms.reviewer: YuyuScheller
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e

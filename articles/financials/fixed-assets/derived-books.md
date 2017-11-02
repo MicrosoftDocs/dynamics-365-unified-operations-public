@@ -18,7 +18,7 @@ ms.search.form: AssetBookTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3401
 ms.assetid: 862d6450-187b-497f-9822-cce45f2c65a9
