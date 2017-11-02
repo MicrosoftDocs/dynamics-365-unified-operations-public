@@ -7,7 +7,7 @@ author: YuyuScheller
 description: This topic describes how you can use item tracing to identify where items or raw materials have been used, are being used, or will be used in production and sales processes.
 author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -144,7 +144,7 @@ You can export the information from the summary pages to Microsoft Excel. Open t
 The trace details include information about quality orders and nonconformances that involve the item or raw material. To view a summary of quality orders and nonconformances, click **Quality orders** or **Non conformances** on the Action Pane. **Note:** Destructive quality orders can appear more than one time in the trace details. When a destructive quality order is created for a document, such as a purchase order, it appears for each transaction for that document.
 
 ## Are there any reporting capabilities that are related to item tracing?
-You can generate the **Shipped to customers** report to identify the amount of the item or raw material that has been shipped and the customers that it was shipped to. For a an inquiry that is related to compliance, you can generate the report for all customers. For an inquiry that is related to customer service, you can generate the report for a selected customer. If the product was a raw material that was used in the production of a finished item, the finished item is also included. **Note:** If you’re using the features for deleting or archiving sales orders, the report results also include any sales orders that have been deleted or archived.
+You can generate the **Shipped to customers** report to identify the amount of the item or raw material that has been shipped and the customers that it was shipped to. For an inquiry that is related to compliance, you can generate the report for all customers. For an inquiry that is related to customer service, you can generate the report for a selected customer. If the product was a raw material that was used in the production of a finished item, the finished item is also included. **Note:** If you’re using the features for deleting or archiving sales orders, the report results also include any sales orders that have been deleted or archived.
 
 ## Can I trace coproducts and byproducts?
 You can trace co-products, but you can’t trace a by-product, because tracking dimensions aren't typically assigned to by-products. When you trace an item, the trace details include any related co-products. A node that contains a co-product includes the word “co-product” in the details. You can also view details about a co-product by selecting the node in the trace details and then clicking the **Production** FastTab.
