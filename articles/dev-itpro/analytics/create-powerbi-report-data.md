@@ -5,7 +5,7 @@ title: Create a Power BI report by using Finance and Operations data
 description: This tutorial outlines the process for creating an end user–friendly data model, reports, and dashboards in the version of Power BI that is currently available from http - //app.powerbi.com.
 author: MilindaV2
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -97,7 +97,7 @@ Microsoft Excel 2013 is required, together with PowerQuery (a post–February 20
 
     [![PowerBI8](./media/powerbi8.png)](./media/powerbi8.png) 
     
-    PowerQuery will load the data into the Excel data model. Depending on the size of the data set, this step mtake some time. 
+    PowerQuery will load the data into the Excel data model. Depending on the size of the data set, this step may take some time. 
     
         [![PowerBI9](./media/powerbi9.png)](./media/powerbi9.png)
 
