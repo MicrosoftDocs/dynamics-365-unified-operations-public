@@ -41,24 +41,19 @@ In Rainier, we deprecated these events as there is no notion of a rich client. I
 To assist migrating logic from previous release, we have incorporated new events in the  ApplicationStartupEventManager class.
 
 ## static delegate void onSystemStartup()
-    /// Event that occurs when the system starts up.
-    /// The event is raised once per AOS upon startup.
+This even occurs when the system starts up. It is raised once per AOS upon startup.
 
 ## static delegate void onFirstTimeUserInteractiveSessionCreated() {}
-    /// Event that occurs when the system is creating an interactive session for the first time for a user.
-    /// The event is raised once per user per AOS.
+This event occurs when the system is creating an interactive session for the first time for a user. It is raised once per user per AOS.
 
 ## static delegate void onFirstTimeUserNonInteractiveSessionCreated() {}
-    /// Event that occurs when the system is creating a non interactive session for the first time for a user.
-    /// The event is raised once per user per AOS.
+This event occurs when the system is creating a non interactive session for the first time for a user. It is raised once per user per AOS.
 
 ## static delegate void onInteractiveSessionCreated() {}
-    /// Event that occurs when an interactive session is created and ready for use.
-    /// The event is raised once per interactive session creation for any user.
+This event occurs when an interactive session is created and ready for use. It is raised once per interactive session creation for any user.
 
 ## static delegate void onSessionCreated(boolean _isBatch, boolean _isInteractive) {}
-    /// Event that occurs when the session is created and ready for use.
-    /// <param name="_isBatch">Whether the system is running a batch job.</param>
-    /// <param name="_isInteractive">Whether the session is interactive.</param>
-    /// The event is raised once per user session creation for any user.
+This event occurs when the session is created and ready for use. It is raised once per interactive session creation for any user.
+*_isBatch* specifies whether the system is running a batch job.
+*_isInteractive* specifies whether the session is interactive.
 
