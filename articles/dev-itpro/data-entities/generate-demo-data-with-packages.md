@@ -110,5 +110,9 @@ In some cases, there may be different data packages that have the same entities 
 
 
 ## Transactions and automatic posting
+Many scenarios for demo data require that transactions be processed after they are imported. You can process transactions using the Ready to post feature, which includes both a form that allows you to define which transactions should be posted and an entity that allows you to import the definitions and automatically execute them.
+
+Follow these steps to use the Ready to post form:
 
 
+Follow these steps to use the Ready to post entity:
