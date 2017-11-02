@@ -41,12 +41,8 @@ To use the Support tool, you must have previously created a project in Lifecycle
 ## Open a new incident
 1.  [Go to Lifecycle Services](https://lcs.dynamics.com).
 2.  Open a project, and then click the **Support** tile.
-3.  On the **Incidents list** application bar, click **Create**.
+3. On the **Submitted to Microsoft** tab, click **Submit an incident**.
 4.  Search for an existing solution by keyword or by object path in the Application Object Tree (AOT).
-    
-    | **Note**                                                  |
-    |-----------------------------------------------------------|
-    | If you click a solution, **Issue search** opens on a new tab. |
 5.  If you don’t find an existing solution, click **Create incident**.
 6.  On the **Share diagnostic data** page, select the appropriate environment. If you have not previously run System diagnostics in your environment, you are prompted to install and run it. After you run System diagnostics, you must update the **Share diagnostic data** page.
 7.  On the **Describe the issue** pages, enter details about the issue and then click **Submit**.
