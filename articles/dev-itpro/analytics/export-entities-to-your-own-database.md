@@ -74,7 +74,7 @@ If you're using this functionality for integration with a business intelligence 
 
 2. If you've configured any databases, a list is shown. Otherwise, you must configure a new database. Select **New**, and enter a unique name and a description for the new database. Note that you can export entities into multiple databases.
 
-    ![New Record page](media/76001d314ff150e6c1b4c87d349c2bea.png)
+    ![New Record page](media/NewRecord.png)
 
 3. Next, you must enter the connection string in the following format.
 
