@@ -33,27 +33,27 @@ ms.dyn365.ops.version: Platform update 4
 
 # Use delegates for startup customizations
 
-Some overlayering patterns for code in AX2012 have been replaced by delegates. Many applications are hooking up to the startup and shutdown sequence through customizing specific methods. Automatically transforming these to use the delegate instead would move these customizations out of ApplicationPlatform and contribute to eventually prohibiting customizations to it without creating extra work for the developer.
-
-From Dynamics AX 2012, there were customization points to allow subscribing to events (through Application.Startup delegates) raised when the client is initializing.
-In Rainier, we deprecated these events as there is no notion of a rich client. In the server only server sessions are considered.
-
-To assist migrating logic from previous release, we have incorporated new events in the  ApplicationStartupEventManager class.
+In Dynamics AX 2012, there were customization points that allowed you to subscribe to events (Application.Startup delegates) that were raised when the client was initializing. In Dynamics 365 for Finance and Operations, Enterprise Edition, these events were deprecated as there is no notion of a rich client. In the server only server sessions are considered. So that you can migrate logic from previous releases, new events have been added to the **ApplicationStartupEventManager** class.
 
 ## static delegate void onSystemStartup()
-This even occurs when the system starts up. It is raised once per AOS upon startup.
+- This event occurs when the system starts up. 
+- It is raised once per AOS upon startup.
 
 ## static delegate void onFirstTimeUserInteractiveSessionCreated()
-This event occurs when the system is creating an interactive session for the first time for a user. It is raised once per user per AOS.
+- This event occurs when the system is creating an interactive session for the first time for a user. 
+- It is raised once per user per AOS.
 
 ## static delegate void onFirstTimeUserNonInteractiveSessionCreated()
-This event occurs when the system is creating a non interactive session for the first time for a user. It is raised once per user per AOS.
+- This event occurs when the system is creating a non-interactive session for the first time for a user. 
+- It is raised once per user per AOS.
 
 ## static delegate void onInteractiveSessionCreated()
-This event occurs when an interactive session is created and ready for use. It is raised once per interactive session creation for any user.
+- This event occurs when an interactive session is created and ready for use. 
+- It is raised once per interactive session creation for any user.
 
 ## static delegate void onSessionCreated(boolean _isBatch, boolean _isInteractive)
-This event occurs when the session is created and ready for use. It is raised once per interactive session creation for any user.
-*_isBatch* specifies whether the system is running a batch job.
-*_isInteractive* specifies whether the session is interactive.
+- This event occurs when the session is created and ready for use. 
+- It is raised once per interactive session creation for any user.
+- *_isBatch* specifies whether the system is running a batch job.
+- *_isInteractive* specifies whether the session is interactive.
 
