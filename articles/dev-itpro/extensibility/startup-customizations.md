@@ -43,16 +43,16 @@ To assist migrating logic from previous release, we have incorporated new events
 ## static delegate void onSystemStartup()
 This even occurs when the system starts up. It is raised once per AOS upon startup.
 
-## static delegate void onFirstTimeUserInteractiveSessionCreated() {}
+## static delegate void onFirstTimeUserInteractiveSessionCreated()
 This event occurs when the system is creating an interactive session for the first time for a user. It is raised once per user per AOS.
 
-## static delegate void onFirstTimeUserNonInteractiveSessionCreated() {}
+## static delegate void onFirstTimeUserNonInteractiveSessionCreated()
 This event occurs when the system is creating a non interactive session for the first time for a user. It is raised once per user per AOS.
 
-## static delegate void onInteractiveSessionCreated() {}
+## static delegate void onInteractiveSessionCreated()
 This event occurs when an interactive session is created and ready for use. It is raised once per interactive session creation for any user.
 
-## static delegate void onSessionCreated(boolean _isBatch, boolean _isInteractive) {}
+## static delegate void onSessionCreated(boolean _isBatch, boolean _isInteractive)
 This event occurs when the session is created and ready for use. It is raised once per interactive session creation for any user.
 *_isBatch* specifies whether the system is running a batch job.
 *_isInteractive* specifies whether the session is interactive.
