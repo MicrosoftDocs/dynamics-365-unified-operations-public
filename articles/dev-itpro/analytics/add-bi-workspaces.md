@@ -360,7 +360,7 @@ Now that you defined a KPI tile, you can put it in the interface so the user can
 8.  Click **Ctrl+F5** to run the form.
 9.  You’ll see the modified workspace with the tile definition.
 
-## Add a drillthru link from a KPI tile to a different form
+## Add a drill-thru link from a KPI tile to a different form
 KPI tiles drill-down to the **KPIDetails** form by default. So, unless you change the drill-thru destination within the KPI definition, KPI tiles will always take the user to the details page for that KPI. In this exercise, you’ll modify the default drill-thru destination.
 
 1.  Select the KPI **FMRevenuePerRentalMargin** in Solution Explorer and double-click. KPI designer will be displayed with the KPI **FMRevenuePerRentalMargin.**
@@ -398,7 +398,7 @@ To work with the sample, you must install the provided demo data.
     
     [![BI10](./media/bi10.png)](./media/bi10.png)
 
-8.  Click on **App links**. 
+8.  Click **App links**. 
     
     [![BI11](./media/bi11.png)](./media/bi11.png)
     
