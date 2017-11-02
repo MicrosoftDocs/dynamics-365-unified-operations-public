@@ -2,10 +2,10 @@
 # required metadata
 
 title: Supply chain management home page
-description: This page points to resources that will help you use the Microsoft Dynamics 365 for Finance and Operations - Supply Chain management more effectively. 
+description: This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 07/20/2017
+ms.date: 11/02/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](includes/banner.md)]
 
-This page points to resources that will help you use the Microsoft Dynamics 365 for Finance and Operations - Supply Chain management more effectively. 
+This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 ## What's new and in development
 Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development. 
