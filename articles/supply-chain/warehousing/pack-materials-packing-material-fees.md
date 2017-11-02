@@ -5,7 +5,7 @@ title: Packing materials and fees
 description: Packing material fees are paid to a recycling company at certain intervals. An amount is paid, per unit of weight, for each material that a packing unit consists of. Packing material fees are calculated and reported, but no ledger transactions are posted because the fees are not regarded as taxes to be paid to an authority.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -59,7 +59,7 @@ When you create a sales order line, the system checks to see whether packing uni
 ## Packing units on purchase order lines
 Packing material transactions for a purchase order line are not created by the system. You create transactions for invoiced purchase order lines manually in the **Packing material transactions** page.
 
-## Set up customer packagingmaterialfee license numbers
+## Set up customer packaging-material-fee license numbers
 If the customers pay the packaging material fees, specify the customers' packaging-material-fee license numbers in the **Customers** page. When a license number has been assigned to a customer, the packaging material fees are calculated automatically when sales orders are invoiced. After invoicing, the **Calculate fee** check box is cleared in the **Packing material transactions** page, because you do not have to calculate and print a report. You can print the packaging material weights on the invoice, and inform the customers that they pay the fees. 
 
 If your company pays the packaging material fees, do not specify the customer license numbers. After invoicing, the **Calculate fee** check box is selected in the **Packing material transactions** page. This indicates that the fees are calculated when a report is created. You can print the weights on the invoice, and indicate that your company pays the fees.
