@@ -18,7 +18,7 @@ ms.search.form: PowerBIConfiguration
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31001
 ms.assetid: bf6eff60-4a30-4338-a55f-1f2a97d3debe

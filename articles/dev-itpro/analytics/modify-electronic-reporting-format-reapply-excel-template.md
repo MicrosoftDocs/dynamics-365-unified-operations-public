@@ -3,21 +3,21 @@
 
 title: Modify an Electronic reporting format by reapplying a Microsoft Excel template
 description: This topic provides information about how you can modify the Electronic reporting (ER) format that is used to generate business documents by reapplying a modified Excel template. 
-author: kfend
+author: NickSelin
 manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: Lifecycle Services
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
 
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 # ROBOTS: 
-audience: Developer
+audience: Developer, IT Pro, Application user
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27621

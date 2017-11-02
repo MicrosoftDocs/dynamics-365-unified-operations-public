@@ -18,7 +18,7 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a

@@ -3,7 +3,7 @@
 
 title: Formula designer in Electronic reporting
 description: This topic explains how to use the formula designer in Electronic reporting (ER).
-author: kfend
+author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9

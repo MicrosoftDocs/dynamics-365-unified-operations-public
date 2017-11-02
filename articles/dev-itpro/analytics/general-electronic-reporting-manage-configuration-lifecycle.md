@@ -3,7 +3,7 @@
 
 title: Manage the Electronic reporting configuration lifecycle
 description: This topic describes how to manage the lifecycle of Electronic reporting (ER) configurations for the Microsoft Dynamics 365 for Finance and Operations solution.
-author: kfend
+author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesig
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: CoreOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58801
 ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
