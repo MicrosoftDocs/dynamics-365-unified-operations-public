@@ -5,7 +5,7 @@ title: Add BI to workspaces
 description: In this tutorial, you’ll add BI controls such as KPI tiles to an existing workspace. 
 author: MilindaV2
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -158,7 +158,7 @@ Trend analysis is vital to the KPI experience and the KPI details page provides
 -   **Top contributors:** Who or what are biggest contributors?
 -   **Bottom contributors:** Who or what are contributing least?
 
-When you define a new KPI, you get the these trends by default – the system tries to guess which trends may be relevant. This happens, even if the developer does not specify these trends when defining the KPI. As a developer who is aware of the business context, you may wish to identify specific trends that need to be shown to the user – not the default trends shown. In the following example, let’s build specific trend charts to the KPI so that users can quickly diagnose the problem.
+When you define a new KPI, you get these trends by default – the system tries to guess which trends may be relevant. This happens, even if the developer does not specify these trends when defining the KPI. As a developer who is aware of the business context, you may wish to identify specific trends that need to be shown to the user – not the default trends shown. In the following example, let’s build specific trend charts to the KPI so that users can quickly diagnose the problem.
 
 ### Modify the default time trend chart
 
