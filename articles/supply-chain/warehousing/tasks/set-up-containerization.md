@@ -5,7 +5,7 @@ title: Set up containerization
 description: This procedure describes how to automate the containerization of loads in Warehouse management. 
 author: YuyuScheller
 manager: AnnBe 
-ms.date: 06/07/2016
+ms.date: 11/02/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -86,7 +86,7 @@ This procedure describes how to automate the containerization of loads in Wareho
 ## Set up a container group
 1. Go to Warehouse management > Setup > Containers > Container groups.
 2. Click New.
-    * You can set up logical groups of container types. For each group, you can specify the sequence in which to pack the containers and the percentage of the containers to fill.The size dimensions of the item is used to determine whether it will fit in a container. The container that is closest to the size dimensions of the item is used. If you have multiple container types in a group, we recommend that you arrange the sequence by size, so that the largest container is first, number 1 in the sequence, and the smallest container is last.    
+    * You can set up logical groups of container types. For each group, you can specify the sequence in which to pack the containers and the percentage of the containers to fill. The size dimensions of the item is used to determine whether it will fit in a container. The container that is closest to the size dimensions of the item is used. If you have multiple container types in a group, we recommend that you arrange the sequence by size, so that the largest container is first, number 1 in the sequence, and the smallest container is last.    
 3. In the Container group ID field, type a value.
 4. In the Description field, type a value.
 5. Click New.
