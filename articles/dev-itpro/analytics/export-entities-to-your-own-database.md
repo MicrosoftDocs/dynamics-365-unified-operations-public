@@ -83,10 +83,9 @@ If you're using this functionality for integration with a business intelligence 
 4. In this connection string, the logical server name should resemble **nnnn.database.windows.net**. You should be able to find the logical server name from the Azure portal.
 
 5. After you enter the connection string, select **Validate**, and make sure that the connection is successful.
+    - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining CCIs for entities that are copied from Finance and Operations. However, CCIs are currently supported only on SQL premium databases. Therefore, to enable this option, you must create an SQL premium database.
+    - The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option provides an opportunity for you to hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger per bulk insert operation is supported. The size of the bulk insert is determined by the **Maximum insert commit** size parameter in the Data management framework.
 
-  - The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option provides an opportunity for you to hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger per bulk insert operation is supported. The size of the bulk insert is determined by the **Maximum insert commit** size parameter in the Data management framework.
-
-  - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining CCIs for entities that are copied from Finance and Operations. However, CCIs are currently supported only on SQL premium databases. Therefore, to enable this option, you must create an SQL premium database.
 
 6. When the validation is passed, the database that you configured for entity export now appears in the lists, as shown in the following illustration.
 
