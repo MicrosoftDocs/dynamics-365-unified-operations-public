@@ -5,7 +5,7 @@ title: Arrival overview
 description: This topic provides information about the Arrival overview feature. The Arrival overview page is part of this feature and provides an overview of all items that are expected to arrive as incoming items.
 author: perlynne
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -107,7 +107,7 @@ Sammy can view the following information:
 
 ### Update journals
 
-To register one or more order lines that are due to be processed, Sammy can select the lines in the overview grid or in the line grid, and then click **Journals** &gt; **Show arrivals from receipts**. The item arrival headers that match the lines are shown. To purchase order product receipt update the registered items, Sammy can access the item arrival journal headers that are ready for update. To access these item arrival journal headers, he clicks **Journals** &gt; **Product receipt ready journals**. All the header lines that are ready for product receipt update in the specified warehouse range are shown. (The header lines that are shown aren't related to the day interval).
+To register one or more order lines that are due to be processed, Sammy can select the lines in the overview grid or in the line grid, and then click **Journals** &gt; **Show arrivals from receipts**. The item arrival headers that match the lines are shown. To update the purchase order product receipt for the registered items, Sammy can access the item arrival journal headers that are ready for update. To access these item arrival journal headers, he clicks **Journals** &gt; **Product receipt ready journals**. All the header lines that are ready for product receipt update in the specified warehouse range are shown. (The header lines that are shown aren't related to the day interval).
 
 ### Start an arrival registration
 
