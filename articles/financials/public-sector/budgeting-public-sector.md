@@ -18,7 +18,7 @@ ms.search.form: BudgetControlApportionments, BudgetControlConfiguration, BudgetC
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: CoreOperations
 # ms.tgt_pltfrm: 
 ms.custom: 19471
 ms.assetid: 8cecf3cc-8916-44d7-8c73-d6254a61f62b

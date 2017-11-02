@@ -18,7 +18,7 @@ ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: CoreOperations
 # ms.tgt_pltfrm: 
 ms.custom: 54532
 ms.assetid: cd239da5-f434-4d1b-8196-5414c888d76d

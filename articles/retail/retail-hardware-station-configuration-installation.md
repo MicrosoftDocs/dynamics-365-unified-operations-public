@@ -18,7 +18,7 @@ ms.search.form: RetailHardwareStation
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: CoreOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 27161
 ms.assetid: eb164a9d-5538-4b6f-81ad-87e05d92eca5

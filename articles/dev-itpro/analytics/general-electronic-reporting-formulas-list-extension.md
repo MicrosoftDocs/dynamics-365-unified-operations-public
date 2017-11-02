@@ -18,7 +18,7 @@ ms.search.form: ERExpressionDesignerFormula
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: CoreOperations
 # ms.tgt_pltfrm: 
 ms.custom: 58911
 ms.assetid: 62c740dc-6a88-4ded-9c41-6857b82b335e

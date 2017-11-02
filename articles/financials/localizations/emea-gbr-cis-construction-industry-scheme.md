@@ -18,7 +18,7 @@ ms.search.form: LedgerJournalTransVendPaym, TaxAuthority, TaxWithholdGroup, TaxW
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: CoreOperations
 # ms.tgt_pltfrm: 
 ms.custom: 30081
 ms.search.region: United Kingdom

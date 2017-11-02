@@ -18,7 +18,7 @@ ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340

@@ -18,7 +18,7 @@ ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 7.2, Operations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27621
 ms.assetid: 018a11ae-854c-4f36-9358-8c39baca882d

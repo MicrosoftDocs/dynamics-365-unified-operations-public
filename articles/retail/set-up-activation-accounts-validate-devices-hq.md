@@ -18,7 +18,7 @@ ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPe
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: CoreOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 20471
 ms.assetid: 5394e10c-539c-4e26-a097-504c6950cd56
