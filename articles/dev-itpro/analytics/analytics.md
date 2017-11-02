@@ -2,10 +2,10 @@
 # required metadata
 
 title: Analytics, aggregate measurements, and KPI modeling
-description: This article discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
+description: This topic discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
 author: MilindaV2
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
+This topic discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
 
 Embedded business intelligence
 ------------------------------
@@ -71,7 +71,7 @@ An aggregate measurement is a model that contains a collection of measures toget
 By using the model-driven approach, you can create data entities by directly referencing aggregate measurements and aggregate dimensions. These are known as aggregate data entities. Aggregate data entities are read-only data entities that are used for reporting purposes. To consume aggregate data when you build charts and other client controls, add the aggregate data to a form as a data source. You can also consume aggregate data entities programmatically in C\# or X++ code.
 
 ## Aggregate programming model
-The Aggregate programming model lets a developer consume aggregate data programmatically by using either X++ or C\# code. Data that you retrieve by using the Aggregate programming model can be used as a data source in forms and reports. A developer can add aggregate data that is modeled in perspectives to an **AXQuery** object. The developer can also use an existing aggregate data entity to create an query that can be extended by adding filters and additional columns that aren't present in the aggregate data entity. Bulk Move is a capability that is associated with the Aggregate programming model. When a query is run by the kernel, the developer can move all the records to a temporary or regular table without iterating row by row. Bulk Move provides a very efficient way to move data from aggregate models to temporary tables.
+The Aggregate programming model lets a developer consume aggregate data programmatically by using either X++ or C\# code. Data that you retrieve by using the Aggregate programming model can be used as a data source in forms and reports. A developer can add aggregate data that is modeled in perspectives to an **AXQuery** object. The developer can also use an existing aggregate data entity to create a query that can be extended by adding filters and additional columns that aren't present in the aggregate data entity. Bulk Move is a capability that is associated with the Aggregate programming model. When a query is run by the kernel, the developer can move all the records to a temporary or regular table without iterating row by row. Bulk Move provides a very efficient way to move data from aggregate models to temporary tables.
 
 ## Method expressions
 Method expressions are a programming model for constructing rich calculations that are used to define fields in a data entity. Method expressions enhance the computed column capability that was introduced in AX 2012 views. Method expressions let you build expressions by using the C\# or X++ programming language. You can also create calculations on aggregate data that was previously coded by using MDX. Method expressions can be shared across the program.
