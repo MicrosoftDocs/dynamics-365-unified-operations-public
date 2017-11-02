@@ -193,7 +193,7 @@ In this section you will create a basic report by using PowerView.
 
     3.  You will notice that the fields on the chart aren't presented the way that you expected. To fix this, drag the fields to the correct axis and legend areas.
         1.  Drag **PeriodName** to the **AXIS** area underneath **Quarter**.
-        2.  Drag **Main Account Category** to the **Legend** area. **Note:** As you add fields from the three entities, you wil notice that all three are presented in a single visualization. This is possible because of the relationships that you set up in the PowerPivot data model earlier in this tutorial. 
+        2.  Drag **Main Account Category** to the **Legend** area. **Note:** As you add fields from the three entities, you will notice that all three are presented in a single visualization. This is possible because of the relationships that you set up in the PowerPivot data model earlier in this tutorial. 
             
             [![PowerBI15](./media/powerbi15.png)](./media/powerbi15.png)
 
