@@ -76,7 +76,7 @@ The Aggregate programming model lets a developer consume aggregate data programm
 ## Method expressions
 Method expressions are a programming model for constructing rich calculations that are used to define fields in a data entity. Method expressions enhance the computed column capability that was introduced in AX 2012 views. Method expressions let you build expressions by using the C\# or X++ programming language. You can also create calculations on aggregate data that was previously coded by using MDX. Method expressions can be shared across the program.
 
-## Inmemory, nearrealtime aggregate measurements
+## In-memory, near-real-time aggregate measurements
 In Finance and Operations, aggregate measurements are deployed to Microsoft SQL Server non-clustered column store indexes (NCCI). Therefore, they can take advantage of the in-memory computing (IMC) engine that is built into Microsoft SQL Server 2016 as Azure DB. Aggregate measurements that have the IMC engine as their destination are referred to as in-memory, near-real-time (IM-NRT) aggregate measurements. These aggregate measurements don't require that a Microsoft SQL Server Analysis Services (SSAS) server be used. Because these models don't involve data updates, the queries that are sent to them reflect the latest state of data in the operational database. That is why it's referred to as near-real-time.
 
 ## KPI modeling and customization
