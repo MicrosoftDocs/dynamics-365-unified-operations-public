@@ -2,7 +2,7 @@
 # required metadata
 
 title: Supply chain management home page
-description: This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+description: This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.   
 author: YuyuScheller
 manager: AnnBe
 ms.date: 11/02/2017
