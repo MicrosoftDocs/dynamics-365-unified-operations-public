@@ -5,7 +5,7 @@ title: Set up sales commission rules
 description: This procedure shows you how to set up and enable sales commission calculation and tracking. 
 author: omulvad
 manager: AnnBe 
-ms.date: 11/10/2016
+ms.date: 11/03/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -49,7 +49,7 @@ This procedure shows you how to set up and enable sales commission calculation a
     * A Commission sales group specifies the employees in sales representative roles who are eligible to receive a commission when a customer associated with the relevant sales group buys certain items.  
     * In the USMF demo data company, there is a sales group called "Sales reps US."  
 13. On the Action Pane, click General.
-14. Click Sales rep..
+14. Click Sales rep.
     * The Sales rep. page displays a list of the company's sales people who are associated with a specific commission group. You can assign multiple sales representatives to the same group and define their respective share of the total commission fee as a percentage value. The total commission share across all employees must not exceed 100.  
 15. In the list, mark the selected row.
 16. Click Edit.
