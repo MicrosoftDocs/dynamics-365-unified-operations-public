@@ -5,7 +5,7 @@ title: Projects
 description: The Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project type is part of the development tools. 
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-The Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project type is part of the development tools.This project type resembles other projects in Visual Studio. It helps you organize and manage the elements that you're working with for a model. For example, the project can have folders that help you group the elements. A Visual Studio solution can contain multiple projects. There is one important constraint for a project: it can contain elements from only one model. If you must work with elements from different models, you must use multiple projects in your Visual Studio solution.
+The Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project type is part of the development tools. This project type resembles other projects in Visual Studio. It helps you organize and manage the elements that you're working with for a model. For example, the project can have folders that help you group the elements. A Visual Studio solution can contain multiple projects. There is one important constraint for a project: it can contain elements from only one model. If you must work with elements from different models, you must use multiple projects in your Visual Studio solution.
 
 ## Create a new project
 To create a new, empty project, follow these steps.
