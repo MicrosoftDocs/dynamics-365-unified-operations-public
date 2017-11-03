@@ -17,7 +17,7 @@
 
 ### [What's new or changed](get-started/whats-new-changed.md)
 #### [Deprecated features](../dev-itpro/migration-upgrade/deprecated-features.md)
-#### [AX 2012 features not yet implemented](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
+#### [AX 2012 features that were postponed](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Features not implemented in on-premises deployments](get-started/features-not-implemented-on-prem.md)
 #### [Lifecycle policy](../dev-itpro/migration-upgrade/versions-update-policy.md)
 #### [Platform update 11 (October 2017)](get-started/whats-new-platform-update-11.md)
