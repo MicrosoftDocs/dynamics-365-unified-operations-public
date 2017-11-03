@@ -141,8 +141,8 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 #### SalesTransactionSignatureSample.Messages component
 
-    > [!NOTE]
-    > This section applies to Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates.
+> [!NOTE]
+> This section applies to Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates.
 
 1. Find the **Runtime.Extensions.SalesTransactionSignatureSample.Messages** project.
 2. In the **Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the following files:
@@ -283,13 +283,13 @@ This part is equivalent to the Retail Server controller, but it extends the loca
         throw new NotImplementedException();
     }
     ```
-3. To regenerate the proxy code, build the **Proxies** folder from the command line (**msbuild /t:Rebuild**).
+3. To regenerate the proxy code, build the **Proxies** folder from the command line (**msbuild /t:Rebuild**). 
 
-In Dynamics 365 for Finance and Operations, Enterprise edition, Application update 4, open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**, add the **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\CommerceRuntime.Extensions.SalesTransactionSignatureSample** project to the solution, and add a project reference to the **RetailProxy** project to reference **SalesTransactionSignatureSample**.
+4. In Dynamics 365 for Finance and Operations, Enterprise edition, Application update 4, open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**, add the **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\CommerceRuntime.Extensions.SalesTransactionSignatureSample** project to the solution, and add a project reference to the **RetailProxy** project to reference **SalesTransactionSignatureSample**.
 
-In Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**, add the **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\CommerceRuntime.Extensions.SalesTransactionSignatureSample.Messages** project to the solution, and add a project reference to the **RetailProxy** project to reference **SalesTransactionSignatureSample.Messages**.
+5. In Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**, add the **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\CommerceRuntime.Extensions.SalesTransactionSignatureSample.Messages** project to the solution, and add a project reference to the **RetailProxy** project to reference **SalesTransactionSignatureSample.Messages**.
 
-5. Adjust the interface methods in the **StoreOperationsManager** class.
+6. Adjust the interface methods in the **StoreOperationsManager** class.
 
     > In Dynamics 365 for Finance and Operations, Enterprise edition, Application update 4, adjust the following code:
 
@@ -317,7 +317,7 @@ In Dynamics 365 for Finance and Operations, Enterprise edition, Application upda
     }
     ```
 
-6. Update the **dllhost.exe.config** file so that the client broker loads the new RetailProxy assembly.
+7. Update the **dllhost.exe.config** file so that the client broker loads the new RetailProxy assembly.
 
     ``` xml
         <add key="RetailProxyAssemblyName" value="Contoso.Commerce.RetailProxy" />
