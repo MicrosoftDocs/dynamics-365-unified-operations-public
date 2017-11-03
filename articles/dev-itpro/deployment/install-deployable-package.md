@@ -35,24 +35,35 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development/build environment.
+This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development or build environment.
 
 > [!IMPORTANT]
-> This topic applies to only two topologies:
-- Local development environments (Downloadable virtual hard disk [VHD])
-- Multi-box dev/test environments in Microsoft Azure (Partner and trial projects)
 
-> For all other environments that are deployed through LCS, you can apply a deployable package to an environment directly from Dynamics Lifecycle Services (LCS) as described in the topic, [Apply a deployable package on a system](apply-deployable-package-system.md).
+> For most environments, you can apply a deployable package to an environment directly from Dynamics Lifecycle Services (LCS) as described in the topic, [Apply a deployable package on a system](apply-deployable-package-system.md).
+> This topic applies only for environment types that do not support applying updates via LCS, like Local development environments (Downloadable virtual hard disk [VHD]) or Multi-box dev/test environments in Microsoft Azure (LCS Partner and trial projects). You can also use this topic when you want to use the command line to install deployable packages instead of using LCS.
 
 ## Key concepts
 -   **Deployable package**– A deployable package is a unit of deployment that can be applied in any environment. It can consist of a binary hotfix to the AOS runtime components, an updated application package, or a new application package.
 -   **AXUpdateInstaller**– A deployable package has the installer executable bundled in it. When the package is downloaded to a computer, the installer is available.
 -   **Runbook**– The deployment runbook is a series of steps that is generated for applying the deployable package to the target environment. Some of the steps are automated, and some are manual. AXUpdateInstaller provides the capability to run these steps one by one and in the correct sequence.
 
+## Install an application (AOT) deployable package on a development environment
+An AOT deployable package is a package that contains customizations and extensions to your application. If you simply want to install an AOT deployable package on a development or demo environment using the command line, you can skip the rest of the details in this topic and follow the instructions in this section.
+1. On the VM, download the zip file of the deployable package. Make sure that the **zip** file is stored in a non-user folder. **Note:** After you download the zip file, right-click it, and then select **Properties**. Then, in the **Properties** dialog box, on the **General** tab, click **Unblock** to unlock the files. 
+2. Extract the files.
+3. Open a command prompt and go to the extracted folder.
+4. Execute the following
+```
+> AXUpdateInstaller.exe devinstall
+```
+The **devinstall** option install the AOT deployable pacjage on your VM. This command does not execute database synchronization, you will need to run database synchronization from Visual Studio after installing the deployable package.
+
+As of platform update 12, the devinstall option does not require you to be an administrator on the VM.
+
 ## Collect topology configuration data
 1.  In Microsoft Dynamics Lifecycle Services (LCS), open the **Environment** page.
 2.  Click the name of a virtual machine (VM), and establish a Remote Desktop connection to the VM by using the user name and password that are provided on the **Environment** page.
-3.  On the VM, download the zip file for the deployable package from LCS. **Note:** After you download the zip file, right-click it, and then select **Properties**. Then, in the **Properties** dialog box, on the **General** tab, click **Unblock** to unlock the files. Finally, extract the files, and continue with the next step. Also, make sure that the **zip** file is stored in a non-user folder
+3.  On the VM, download the zip file for the deployable package from LCS. **Note:** After you download the zip file, right-click it, and then select **Properties**. Then, in the **Properties** dialog box, on the **General** tab, click **Unblock** to unlock the files. Finally, extract the files, and continue with the next step. Also, make sure that the **zip** file is stored in a non-user folder.
 4.  In the folder where the deployable package was extracted, find and open the file that is named DefaultTopologyData.xml. You must populate this file with the VM name and installed components.
     -   To populate the VM name, follow these steps:
         1.  Open Windows Explorer, right-click **This PC**, and then select **Properties**.
