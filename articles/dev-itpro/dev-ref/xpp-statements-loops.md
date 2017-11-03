@@ -5,7 +5,7 @@ title: X++ statements, loops, and exception handling
 description: This topic describes statements, loops, and exception handling in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -394,7 +394,7 @@ The following code example handles a **CLRError** exception.
 The following code example uses a **retry** statement.
 
     // This example shows how to use the retry statement. The print
-    // statements are included becuase retry causes earlier Infolog 
+    // statements are included because retry causes earlier Infolog 
     // messages to be erased. 
     static void TryCatchRetry4Job(Args _args)
     {
