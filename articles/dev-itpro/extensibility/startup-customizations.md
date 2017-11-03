@@ -33,7 +33,9 @@ ms.dyn365.ops.version: Platform update 4
 
 # Use delegates for startup customizations
 
-In Dynamics AX 2012, there were customization points that allowed you to subscribe to events (Application.Startup delegates) that were raised when the client was initializing. In Dynamics 365 for Finance and Operations, Enterprise Edition, these events were deprecated as there is no notion of a rich client. In the server only server sessions are considered. So that you can migrate logic from previous releases, new events have been added to the **ApplicationStartupEventManager** class.
+In Dynamics AX 2012, there were customization points that allowed you to subscribe to events (Application.Startup delegates) that were raised when the client was initializing. In Dynamics 365 for Finance and Operations, Enterprise edition, these events were deprecated because there is no concept of a rich client. On the server, only server sessions are considered, however because you can migrate logic from previous releases, new events have been added to the **ApplicationStartupEventManager** class. 
+
+The following sections highlight the new data sources that you can add to existing forms by using extensions.
 
 ## static delegate void onSystemStartup()
 - This event occurs when the system starts up. 
