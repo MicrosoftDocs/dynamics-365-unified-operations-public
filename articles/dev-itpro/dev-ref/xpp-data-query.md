@@ -1279,7 +1279,7 @@ You can use the **notexists join** keyword pair in a **delete\_from** statement.
 ## Maintain fast SQL operations
 There are situations where record set–based operations can be converted to slower record-by-record operations. The following table identifies these situations.
 
-| Situation                                                                    | DELETE\_FROM | UPDATE\_RECORDSET | INSERT\_RECORDSET | ARRAY\_INSERT | Use this setting for overrides |
+| Situation                                                                    | DELETE_FROM | UPDATE_RECORDSET | INSERT_RECORDSET | ARRAY_INSERT | Use this setting for overrides |
 |------------------------------------------------------------------------------|--------------|-------------------|-------------------|---------------|--------------------------------|
 | Non-SQL tables                                                               | Yes          | Yes               | Yes               | Yes           | Not applicable                 |
 | Delete actions                                                               | Yes          | No                | No                | No            | **skipDeleteActions**          |
