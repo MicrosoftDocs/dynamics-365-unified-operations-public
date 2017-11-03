@@ -3,7 +3,7 @@
 
 title: Electronic reporting overview
 description: This topic provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
-author: kfend
+author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
@@ -17,8 +17,8 @@ ms.search.form: ERWorkspace
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f

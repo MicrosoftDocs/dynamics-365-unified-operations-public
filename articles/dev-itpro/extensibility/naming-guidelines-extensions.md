@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform, AX Platform
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 

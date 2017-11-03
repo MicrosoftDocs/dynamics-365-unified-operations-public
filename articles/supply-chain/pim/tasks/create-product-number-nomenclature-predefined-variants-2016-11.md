@@ -5,7 +5,7 @@ title: Create a product number for predefined product variants
 description: This guide shows you how to set up a product number nomenclature for predefined product variants, and how you assign it to the appropriate product dimension group. 
 author: BibiSp
 manager: AnnBe 
-ms.date: 09/26/2016
+ms.date: 11/03/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -37,7 +37,7 @@ This guide shows you how to set up a product number nomenclature for predefined 
 1. Click Product variant model definition.
 2. Click Product nomenclature.
 3. Click New.
-4. In the Name field, enter a nomenclature name that helps to identify the target product dimension group, for example, ColorSize..
+4. In the Name field, enter a nomenclature name that helps to identify the target product dimension group, for example, ColorSize.
 5. In the Description field, type a value.
 6. Click Add.
 7. Click Product master number.

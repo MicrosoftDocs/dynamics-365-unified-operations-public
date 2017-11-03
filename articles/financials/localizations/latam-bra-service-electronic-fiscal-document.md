@@ -18,7 +18,7 @@ ms.search.form: BrazilParameters, ConfDefGroups_BR, ConfDefGroupWizard_BR, ConfD
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269984
 ms.assetid: 46e40a3a-784f-4a1e-b185-c4b8ad63518f

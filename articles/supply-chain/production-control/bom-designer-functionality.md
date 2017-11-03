@@ -2,10 +2,10 @@
 # required metadata
 
 title: BOM designer functionality
-description: This article describes how you can use the BOM designer page to design and work with tree structures for bills of materials (BOMs). You can click Setup to select different configurations and specify what information appears on the lines of the tree.
+description: This topic describes how you can use the BOM designer page to design and work with tree structures for bills of materials (BOMs).
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: BOMDesigner
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20981
 ms.assetid: 2b92eec1-d28c-4965-9086-939c77b3c62b
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes how you can use the BOM designer page to design and work with tree structures for bills of materials (BOMs). You can click Setup to select different configurations and specify what information appears on the lines of the tree.
+This topic describes how you can use the BOM designer page to design and work with tree structures for bills of materials (BOMs). You can click Setup to select different configurations and specify what information appears on the lines of the tree.
 
 When you open the **BOM designer** page from the **Released products** page, it displays the hierarchy of bills of materials (BOMs) that are active and approved for the selected item, the default order site of the item, and the actual date.  
 
@@ -69,7 +69,7 @@ The filter that is applied for the BOM and route is displayed in the header of t
 <tbody>
 <tr class="odd">
 <td>Product dimensions</td>
-<td>If the selected finished product is a product master, you can define the active product dimensions for the main selection.<strong>Note:</strong> If you open the BOM designer for a product that isn't a product master, no product dimensions can be selected in the <strong>Filter</strong> dialog box.</td>
+<td>If the selected finished product is a product master, you can define the active product dimensions for the main selection. <strong>Note:</strong> If you open the BOM designer for a product that isn't a product master, no product dimensions can be selected in the <strong>Filter</strong> dialog box.</td>
 </tr>
 <tr class="even">
 <td>Site</td>

@@ -18,7 +18,7 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment, Payroll
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221144
 ms.assetid: e87ff0bd-0594-45a6-bd54-5f8d085e1894

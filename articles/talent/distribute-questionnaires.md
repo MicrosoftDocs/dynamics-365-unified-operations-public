@@ -18,7 +18,7 @@ ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailPar
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470

@@ -18,7 +18,7 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollWorkerTaxCode, Payrol
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 248404
 ms.assetid: d6530f02-bbee-4d8e-94e7-173aecb4452e

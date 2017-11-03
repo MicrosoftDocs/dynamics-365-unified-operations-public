@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: C0E2E0F9-19C1-4CE0-A81C-1ACFA841F6AB

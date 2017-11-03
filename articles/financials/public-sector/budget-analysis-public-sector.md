@@ -18,7 +18,7 @@ ms.search.form: BudgetAnalysisInquiry_PSN, BudgetControlStatistics, DimensionDet
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19641
 ms.assetid: a1055712-0a20-425d-939d-de8564c358b8

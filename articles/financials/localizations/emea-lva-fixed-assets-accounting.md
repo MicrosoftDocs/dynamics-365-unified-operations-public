@@ -18,7 +18,7 @@ ms.search.form: AssetBookTable, AssetDepreciationProfile, AssetTable, AssetTaxDe
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264374
 ms.assetid: cbf94106-2c1b-45dd-8734-18a2a56a4682

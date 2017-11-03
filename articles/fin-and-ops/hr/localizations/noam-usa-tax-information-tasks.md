@@ -18,7 +18,7 @@ ms.search.form: PayrollTaxCode, PayrollTaxGroup, PayrollWorkerTaxCode, PayrollWo
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222684
 ms.assetid: 5fc7b03b-0a18-4dd5-a717-85e40fbbf357
