@@ -2,7 +2,7 @@
 # required metadata
 
 title: Request a database refresh
-description:
+description: A database refresh enables you to copy the database of your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition production environment (including the Financial Reporting database) into a target sandbox UAT environment.
 author: Robadawy
 manager: AnnBe
 ms.date: 10/31/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations lets you request that a database be refreshed. 
+You can use Microsoft Dynamics Lifecycle Services to request that the database of a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in a sandbox user acceptance testing (UAT) environment be refreshed. A database refresh enables you to copy the database of your production environment (including the Financial Reporting database) into the target sandbox UAT environment. If you own another UAT environment, you can also copy the databases from that environment. This functionality enables you to test upcoming code changes on a UAT environment using production data. It also allows you to copy a production database into a UAT environment for debugging purposes.
 
 ## Database refresh process
 The Microsoft Service Engineering team will take your environment offline, complete the refresh, and then bring the environment back online. You can expect the downtime period to be less than two hours. The period after you enter your request and before our Service Engineers take action will be longer than your environment downtime. In the future, we will provide a self-service method that you can use to perform your database refreshes.
@@ -43,23 +43,23 @@ The Microsoft Service Engineering team will take your environment offline, compl
 2.  On the **Work items** page, click **Add** on the toolbar, and then click **Database refresh**. 
 3.  In the **Request for database refresh** dialog box, follow these steps:
     1.  In the **Environment name** field, select the environment to refresh. 
-    2.  In the **Database** field, the database to refresh is always Microsoft Dynamics AX or Microsoft Dynamics 365 for Finance and Operations. Other databases, such as Entity store or Financial reporting, aren't currently supported for point-in-time restores.
+    2.  In the **Database** field, the database to refresh is always Microsoft Dynamics AX or Microsoft Dynamics 365 for Finance and Operations. Other databases, such as Entity store aren't currently supported for database refresh.
     3.  Carefully read and acknowledge the statements that have check boxes next to them.
 4.  After you submit your request, you will be redirected to the list of work items. Here, you can view the status of the request, or reschedule or cancel the request.
 5.  When the Microsoft Service Engineering team has acknowledged that it can complete your request, the status of the request changes to **Request accepted**. At this point, you can follow any of these steps:
     -   Wait for the Service Engineering team to complete the refresh. When restore is completed, the status changes to **Succeeded**.
-    -   Reschedule the request by clicking the ID, or by selecting the request and then clicking **Reschedule** on the toolbar. You can then change the downtime windows dates and times, and the point in time to restore to.
+    -   Reschedule the request by clicking the ID, or by selecting the request and then clicking **Reschedule** on the toolbar. You can then change the downtime windows dates and times.
     -   Cancel the request by selecting the request and then clicking **Cancel** on the toolbar.
 
 ## Conditions of a database refresh
-Here is the list of requirements and conditions of operation for a point-in-time restore:
+Here is the list of requirements and conditions of operation for a database refresh:
 
 -   Requests must be submitted 24 hours before the desired downtime window, to help guarantee that resources will be available to complete the request.
 -   A refresh erases the existing database in the target environment. The existing database can't be recovered after the refresh is completed.
 -   The target environment will be unavailable until the refresh process is completed.
--   The point-in-time restore will affect only the Dynamics 365 for Finance and Operations database.
+-   The refresh will affect only the Dynamics 365 for Finance and Operations and Financial Reporting databases.
     -   Document handling documents that are stored in Azure blob storage won't be changed and will remain in their current state. The same rule applies to any documents that are stored in Azure blob storage through X++ customization.
-    -   The Financial reporting database will also remain in the current state and must be reset after the refresh is completed.
+
 
 ## Steps to complete after a database refresh for environments using retail functionality
 When refreshing a database, you will need to run the environment re-provisioning tool before the copied database is fully functional, to ensure that all Retail components are up-to-date.
