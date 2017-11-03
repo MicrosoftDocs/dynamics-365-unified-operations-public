@@ -18,7 +18,7 @@ ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagi
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2194
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9

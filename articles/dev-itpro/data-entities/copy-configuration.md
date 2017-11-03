@@ -19,7 +19,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 77523
 ms.search.region: Global

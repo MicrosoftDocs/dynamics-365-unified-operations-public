@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 106163
 ms.assetid: 

@@ -3,22 +3,22 @@
 
 title: Generate electronic documents and update application data using the Electronic reporting tool
 description: You can design Electronic reporting (ER) formats that can be used in the Finance and Operations application to generate outgoing electronic documents. You can also design ER formats that parse incoming electronic documents and use the content in those documents to update application data.
-author: kfend
+author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: Lifecycle Services
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
 
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 # ROBOTS: 
-audience: Developer, IT Pro
+audience: Developer, IT Pro, Application user
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: AX 7.2, Operations
+ms.reviewer: kfend
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 27621
 ms.assetid: 018a11ae-854c-4f36-9358-8c39baca882d

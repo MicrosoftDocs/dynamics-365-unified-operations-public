@@ -18,7 +18,7 @@ ms.search.form: Talent
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, AX 7.2.0, Talent, UnifiedOperations
+ms.search.scope: Core, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.2.0, Talent July 2017 update
+ms.dyn365.ops.version: Talent July 2017 update
 
 ---
 ## Getting started with Microsoft Dynamics 365 for Talent

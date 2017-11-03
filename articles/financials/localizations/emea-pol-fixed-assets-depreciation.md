@@ -18,7 +18,7 @@ ms.search.form: AssetBook, AssetDepreciationGroup_W, AssetParameters, AssetPosti
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264274
 ms.search.region: Poland

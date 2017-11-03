@@ -18,7 +18,7 @@ ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQuali
 audience: Application User
 # ms.devlang:
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0

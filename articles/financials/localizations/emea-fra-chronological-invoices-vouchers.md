@@ -18,7 +18,7 @@ ms.search.form: CustParameters, NumberSequenceGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264514
 ms.search.region: France

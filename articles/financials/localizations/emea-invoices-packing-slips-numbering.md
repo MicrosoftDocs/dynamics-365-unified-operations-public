@@ -18,7 +18,7 @@ ms.search.form: LtInvoiceAutoNumberingGroups, LtInvoiceAutonumberingTable, Numbe
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268484
 ms.search.region: Latvia, Lithuania
