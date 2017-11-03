@@ -64,9 +64,9 @@ criteria for needing attention.
 **Tile - Unreleased material lines needing attention**
 
 A BOM or formula line can be released to warehouse in three different ways:
-- as part of a production or batch order release 
-- as a manual release
-- automatically with the use of a batch job. 
+- As part of a production or batch order release. 
+- As a manual release.
+- Automatically with the use of a batch job. 
 
 For more information see: [Release BOM and formula lines to the warehouse](releasing-bom-and-formula-lines-to-warehouse.md). 
 
