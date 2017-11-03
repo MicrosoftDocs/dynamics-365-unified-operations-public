@@ -62,7 +62,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
     ```
 
-    > [!NOTE]
+    > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
 #### RegisterAuditEvent sample component
@@ -85,7 +85,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
     ```
 
-    > [!NOTE]
+    > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
 #### SalesPaymentTransExt component
@@ -108,7 +108,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
     ```
 
-    > [!NOTE]
+    > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
 #### SalesTransactionSignature sample component
@@ -136,10 +136,10 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
     ```
 
-    > [!NOTE]
+    > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-#### SalesTransactionSignatureSample.Messages component
+#### SalesTransactionSignatureSample.Messages component (Application update 5)
 
 > [!NOTE]
 > This section applies to Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates.
@@ -165,7 +165,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
     ```
 
-    > [!NOTE]
+    > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
 #### XZReportsNorway component
@@ -188,7 +188,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
     ```
 
-    > [!NOTE]
+    > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
 ### The Retail Server extension components
@@ -205,17 +205,17 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
     ```
 
-6. Register the dependencies of the Retail Server extensions (Application update 4 only):
+6. Register the dependencies of the Retail Server extensions 
+ > [!NOTE]
+ > This process is different for Application update 4 and Application update 5.
+
+**Application update 4 only**
     
-    > [!NOTE]
-    > This section applies to Dynamics 365 for Finance and Operations, Enterprise edition, Application update 4 only.
-
-
+  This section applies to Dynamics 365 for Finance and Operations, Enterprise edition, Application update 4 only.
+    
     1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
-
         - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
         - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
-
     2. Copy the files to the **\\bin** folder under the IIS Retail Server site location.
     3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
 
@@ -223,20 +223,17 @@ The CRT extension components are included in the CRT samples. To complete the fo
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
         ```
 
-        > [!NOTE]
+        > [!WARNING]
         > Do **not** edit the commerceruntime.config file. This file isn't intended for any customizations.
         > 
         > This step resembles the step for including the SalesTransactionSignature CRT extension component, but it uses a different destination folder: bin  instead of bin\\ext. You must use the bin folder to help guarantee that the Retail Server extension is successfully loaded.
         
-7. Register the dependencies of the Retail Server extensions (Application update 5 and further updates):
-
-    > [!NOTE]
-    > This section applies to Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates.
+ **Application update 5 and further updates**
+    
+  This section applies to Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates.
 
     1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the following files:
-
         - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** assembly file
-
     2. Copy the files to the **\\bin** folder under the IIS Retail Server site location.
     3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
 
