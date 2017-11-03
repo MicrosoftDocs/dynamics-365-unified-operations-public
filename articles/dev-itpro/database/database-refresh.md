@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Request a database refresh
+title: Request a sandbox database refresh
 description: A database refresh enables you to copy the database of your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition production environment (including the Financial Reporting database) into a target sandbox UAT environment.
 author: Robadawy
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Request a database refresh
+# Request a sandbox database refresh
 
 [!include[banner](../includes/banner.md)]
 
