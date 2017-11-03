@@ -1277,18 +1277,65 @@ You can use the **notexists join** keyword pair in a **delete\_from** statement.
     }
 
 ## Maintain fast SQL operations
-There are situations where record set–based operations can be converted to slower record-by-record operations. The following table identifies these situations.
+There are situations where record set–based operations can be converted to slower record-by-record operations. The following information identifies these situations.
 
-| Situation                                                                    | DELETE_FROM | UPDATE_RECORDSET | INSERT_RECORDSET | ARRAY_INSERT | Use this setting for overrides |
-|------------------------------------------------------------------------------|--------------|-------------------|-------------------|---------------|--------------------------------|
-| Non-SQL tables                                                               | Yes          | Yes               | Yes               | Yes           | Not applicable                 |
-| Delete actions                                                               | Yes          | No                | No                | No            | **skipDeleteActions**          |
-| The database log is enabled.                                                 | Yes          | Yes               | Yes               | No            | **skipDatabaseLog**            |
-| Overridden method                                                            | Yes          | Yes               | Yes               | Yes           | **skipDataMethods**            |
-| Alerts are set up for the table.                                             | Yes          | Yes               | Yes               | No            | **skipEvents**                 |
-| The **ValidTimeStateFieldType** property on a table isn't equal to **None**. | Yes          | Yes               | Yes               | Yes           | Not applicable                 |
 
-You can use the settings that are shown in the last column to explicitly skip or ignore one or more factors that adversely affect performance. If, for some reason, one of the previously mentioned SQL operations is downgraded to a record-by-record operation, all the **skip\*** settings are also ignored. For example, in the following code, the **insert** method on the myTable table is run, even though it's explicitly stated that this method should be skipped if a container or memo field is defined for myTable.
+### Non-SQL tables
+| Operation | Can be converted |
+|---|---|
+|DELETE_FROM|Yes|
+|UPDATE_RECORDSET|Yes|
+|INSERT_RECORDSET|Yes|
+|ARRAY_INSERT|Yes|
+|Use this setting for overrides|Not applicable|
+
+### Delete actions
+| Operation | Can be converted |
+|---|---|
+|DELETE_FROM|Yes|
+|UPDATE_RECORDSET|No|
+|INSERT_RECORDSET|No|
+|ARRAY_INSERT|No|
+|Use this setting for overrides|**skipDeleteActions**|
+
+### The database log is enabled.
+| Operation | Can be converted |
+|---|---|
+|DELETE_FROM|Yes|
+|UPDATE_RECORDSET|Yes|
+|INSERT_RECORDSET|Yes|
+|ARRAY_INSERT|No|
+|Use this setting for overrides|**skipDatabaseLog**|
+
+### Overridden method
+| Operation | Can be converted |
+|---|---|
+|DELETE_FROM|Yes|
+|UPDATE_RECORDSET|Yes|
+|INSERT_RECORDSET|Yes|
+|ARRAY_INSERT|Yes|
+|Use this setting for overrides|**skipDataMethods**|
+
+### Alerts are set up for the table.
+| Operation | Can be converted |
+|---|---|
+|DELETE_FROM|Yes|
+|UPDATE_RECORDSET|Yes|
+|INSERT_RECORDSET|Yes|
+|ARRAY_INSERT|No|
+|Use this setting for overrides|**skipEvents**|
+
+### The ValidTimeStateFieldType property on a table isn't equal to None.
+| Operation | Can be converted |
+|---|---|
+|DELETE_FROM|Yes|
+|UPDATE_RECORDSET|Yes|
+|INSERT_RECORDSET|Yes|
+|ARRAY_INSERT|Yes|
+|Use this setting for overrides|Not applicable|
+
+
+You can use the settings that are shown for **Use this setting for overrides** to explicitly skip or ignore one or more factors that adversely affect performance. If, for some reason, one of the previously mentioned SQL operations is downgraded to a record-by-record operation, all the **skip\*** settings are also ignored. For example, in the following code, the **insert** method on the myTable table is run, even though it's explicitly stated that this method should be skipped if a container or memo field is defined for myTable.
 
     public void tutorialRecordInsertList()
     {
