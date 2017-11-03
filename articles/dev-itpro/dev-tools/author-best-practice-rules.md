@@ -2,10 +2,10 @@
 # required metadata
 
 title: Authoring best practices
-description: This topic describes how you can author best practice rules in C#, for both metadata and X++ code. Best practice checks are run by the compiler and in daily builds to catch objectionable practices that are unacceptable in shipping code. The features can also be used to author simple one-of tools to gather information about the application.
+description: This topic describes how you can author best practice rules in C#, for both metadata and X++ code. 
 author: pvillads
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -239,7 +239,7 @@ At this point we have looped through any attributes, and collected a list of aut
         }
     }
 
-In other words, we need to create an diagnostic message to let the user know about the transgression of the rule. As noted before, it is important to call the base implementation of your visitor, which will then call visitor methods for all the nodes that are contained in the method. However, in this case, we do not want to do any further processing once we have determined if the author attribute is on the list.
+In other words, we need to create a diagnostic message to let the user know about the transgression of the rule. As noted before, it is important to call the base implementation of your visitor, which will then call visitor methods for all the nodes that are contained in the method. However, in this case, we do not want to do any further processing once we have determined if the author attribute is on the list.
 
 ### Add a class for the diagnostic message
 
