@@ -5,7 +5,7 @@ title: X++ and debugger features
 description: This tutorial is for developers to use advanced constructs of the X++ language and take advantage of productive debugger features. This is a walkthrough of the new features with exercises included to practice using these features. 
 author: pvillads
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -194,7 +194,7 @@ If you're in the scope of the class where the const is defined, you can omit the
 
 ### Exercise
 
-The fleet application contains the FMDataHelper class that contains the following macro defintions.
+The fleet application contains the FMDataHelper class that contains the following macro definitions.
 
     public class FMDataHelper
     {
@@ -482,7 +482,7 @@ It will issue the error message:
 
     Instances of type 'Query' cannot be added to a container.
 
-If the type of the element that is added to the container is anytype the compiler can't make the determination of whether or not the value is a reference type. The compiler will allow this under the assumption that the user knows what they're doing. The compiler won't diagnose the following code as erroneous:
+If the type of the element that is added to the container is any type that the compiler can't make the determination of whether the value is a reference type. The compiler will allow this under the assumption that the user knows what they're doing. The compiler won't diagnose the following code as erroneous:
 
     anytype a = new Query();
             container c = [a];
@@ -490,7 +490,7 @@ If the type of the element that is added to the container is anytype the compile
 but an error will be thrown at runtime.
 
 ## Cross company clause can contain arbitrary expressions
-The crosscompany clause can be used on select statements to indicate the companies that the search statement should take into account. The syntax hasn't been enhanced to allow arbitrary expressions (of type container) instead of a single identifier, which is a variable of type container.
+The cross company clause can be used on select statements to indicate the companies that the search statement should take into account. The syntax hasn't been enhanced to allow arbitrary expressions (of type container) instead of a single identifier, which is a variable of type container.
 
       private void SampleMethod()
       {
@@ -508,7 +508,7 @@ Now, it's possible to provide the expression without having to use a variable fo
         select crosscompany: (['dat'] + ['dmo']) t;
       }
 
-## The mkDate predefined function no longer accepts shorthand values
+## mkDate predefined function no longer accepts shorthand values
 In legacy systems, it was possible to use "shorthand" values for the year argument of the mkDate function. The effect can be seen in the following code sample.
 
     static void Job16(Args _args)
@@ -578,7 +578,7 @@ The Visual Studio debugger supports conditional breakpoints and breakpoints that
 
 -   Hit count enables you to determine how many times the breakpoint is hit before the debugger breaks execution. By default, the debugger breaks execution every time that the breakpoint is hit. You can set a hit count to tell the debugger to break every 2 times the breakpoint is hit, or every 10 times, or every 512 times, or any other number you choose. Hit counts can be useful because some bugs don't appear the first time your program executes a loop, calls a function, or accesses a variable. Sometimes, the bug might not appear until the 100th or the 1000th iteration. To debug such a problem, you can set a breakpoint with a hit count of 100 or 1000.
 -   Condition is an expression that determines whether the breakpoint is hit or skipped. When the debugger reaches the breakpoint, it'll evaluate the condition. The breakpoint will be hit only if the condition is satisfied. You can use a condition with a location breakpoint to stop at a specified location only when a certain condition is true. For example, suppose you're debugging a banking program where the account balance is never allowed to go below zero. You might set breakpoints at certain locations in the code and attach a condition such as balance &lt; 0 to each one. When you run the program, execution will break at those locations only when the balance is less than zero. You can examine variables and program state at the first breakpoint location, and then continue execution to the second breakpoint location, and so on.
--   Action specifies something that should occur when the breakpoint is hit. By default, the debugger breaks execution, but you can choose to print a message or run a Visual Studio macro instead. If you decide to print a message instead of breaking, the breakpoint has an effect very similar to a Trace statement. This method of using breakpoints is called tracepoints
+-   Action specifies something that should occur when the breakpoint is hit. By default, the debugger breaks execution, but you can choose to print a message or run a Visual Studio macro instead. If you decide to print a message instead of breaking, the breakpoint has an effect very similar to a Trace statement. This method of using breakpoints is called trace points.
 
 #### Exercise
 
@@ -596,7 +596,7 @@ Consider the following code:
       }
     }
 
-Put a breakpoint on the print statements by pressing F9 while that statement is selected. This will create a normal, unconditional breakpoint. Now, use the mouse to open the context menu for the breakpoint and select **Condition**. Put in a condition that indicates that the breakpoint should happen when the value of the 'i' variable exceeds 5. Set the class as a startup project, and the class containing the code as the startup item in the project. Run the code. Feel free to modify the value of 'i' using the debugger. Now, remove this breakpoint, and use the Hit count feature to accomplish the same thing. **Note**: A breakpoint can have several conditions. It's often helpful to hover the cursor over the breakpoint, causing an informative tooltip to appear. Tracepoints are often useful tot race execution. Insert a tracepoint on the line in question and log the value of the variable. The trace output will appear in the output window in the debugger.
+Put a breakpoint on the print statements by pressing F9 while that statement is selected. This will create a normal, unconditional breakpoint. Now, use the mouse to open the context menu for the breakpoint and select **Condition**. Put in a condition that indicates that the breakpoint should happen when the value of the 'i' variable exceeds 5. Set the class as a startup project, and the class containing the code as the startup item in the project. Run the code. Feel free to modify the value of 'i' using the debugger. Now, remove this breakpoint, and use the Hit count feature to accomplish the same thing. **Note**: A breakpoint can have several conditions. It's often helpful to hover the cursor over the breakpoint, causing an informative tooltip to appear. Trace points are often useful tot race execution. Insert a trace point on the line in question and log the value of the variable. The trace output will appear in the output window in the debugger.
 
 ### The immediate window
 
