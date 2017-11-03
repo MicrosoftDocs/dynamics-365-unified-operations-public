@@ -590,6 +590,7 @@
 ## [Copy a database from SQL Server to a production Azure SQL Database environment](database/copy-database-from-sql-server-to-azure-sql.md)
 ## [Restore a database on a non-production environment](database/request-point-in-time-restore.md)
 ## [Export a copy of a database to restore later](database/copy-operations-database.md)
+## [Request a sandbox database refresh](database/database-refresh.md )
 
 # Support
 ## [Get support for Dynamics 365 for Finance and Operations, Enterprise edition and Lifecycle Services](lifecycle-services/lcs-support.md)
