@@ -62,7 +62,7 @@ The **Automatic release of BOM and formula lines** batch job goes through select
 
 In the query for the **Automatic release of BOM and formula lines** batch job, you can set up a filter criterion to specify how many days ahead the job should look for lines that have unreleased quantities. In the query for the job, in the **Raw material date** field, use the **(LessThanDate())** function as a filter criterion.
 
-The following illustration shows a production order that has two jobs. Each job is set up to consume a quantity of material. In this illustration, the release time fence equals the number of days that has been specified in the **(LessThanDate())** criterion. For example, **(LessThanDate(2))** indicates that the job should look for unreleased quantities only within a time fence of two days.
+The following illustration shows a production order that has two jobs, 10 and 20, that cover the assembly and packing for the production order. Each job is set up to consume a quantity of material. In this illustration, the release time fence that is indicated by the green arrow below the time line equals the number of days that has been specified in the **(LessThanDate())** criterion. For example, **(LessThanDate(2))** indicates that the job should look for unreleased quantities only within a time fence of two days.
 
 ![Example of a production order that has two batch jobs](media/bach-job-setup.PNG)
 
