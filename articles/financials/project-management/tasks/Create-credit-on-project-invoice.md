@@ -30,7 +30,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Steps (10)
 1. Go to Project management and accounting > Projects > All projects. 
 2. In the list, find and select the desired record. 
 3. Select the Project ID that is used for the Credit Note. 
