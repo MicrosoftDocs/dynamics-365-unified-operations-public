@@ -2,10 +2,10 @@
 # required metadata
 
 title: Create a workflow
-description: This topics explains how to create a workflow.
+description: This topic explains how to create a workflow.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 2
 [!include[banner](../includes/banner.md)]
 
 
-This topics explains how to create a workflow.
+This topic explains how to create a workflow.
 
 Open the workflow editor
 ------------------------
