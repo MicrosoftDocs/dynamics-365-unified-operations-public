@@ -52,7 +52,7 @@ Throughout this table, under the **Reason for Deprecation** heading, "the client
 <table>
 <tbody>
 | Object | Type | Name | Notes |
-|---|---|---|---
+|---|---|---|---|
 | ActionPane |Method |tabChanged | Updates to ActionPanes (or controls inside of ActionPanes) should be done based on the active row, not when the tab becomes active. |
 | ActionPaneTab |Method |
 selectionChanged |Updates to ActionPaneTabs (or controls inside of ActionPaneTabs) should be done based on the active row, not when the tab becomes active. |
