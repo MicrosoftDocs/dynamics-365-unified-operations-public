@@ -1,3 +1,33 @@
+---
+# required metadata
+
+title: Visibility into material exceptions
+description: This topic describes how to get an increased visibility into exceptions for raw materials for production and
+batch orders.
+author: johanhoffmann
+manager: AnnBe
+ms.date: 10/30/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: bis
+ms.search.scope: AX 7.3.0, Operations, UnifiedOperations
+# ms.tgt_pltfrm: 
+ms.custom: 1705903
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: johanho
+ms.search.validFrom: 2018-03-28
+ms.dyn365.ops.version: AX 7.3.0
+---
 **Visibility into material exceptions**
 
 With the use of three tiles in the Production floor management workspace you can
