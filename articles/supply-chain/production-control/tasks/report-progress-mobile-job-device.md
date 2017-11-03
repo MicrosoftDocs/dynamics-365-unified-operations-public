@@ -5,7 +5,7 @@ title: Report progress on a mobile job device
 description: This procedure shows you how to start and report progress on a production job in the job device registration form. 
 author: YuyuScheller
 manager: AnnBe 
-ms.date: 11/11/2016
+ms.date: 11/03/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -34,14 +34,14 @@ This procedure shows you how to start and report progress on a production job in
 
 
 
-To be able to run this procedure you must have the System administator or Machine Operator role associated with the user account.
+To be able to run this procedure you must have the System administrator or Machine Operator role associated with the user account.
 
 1. Go to Production control > Manufacturing execution > Job card device.
-2. In the WorkerTextField field, enter the badge of a worker. In the USMF demo data type '123' for Christina Portra..
+2. In the WorkerTextField field, enter the badge of a worker. In the USMF demo data type '123' for Christina Portra.
 3. Click Log in.
 4. Click the Filter button.
 5. Check or uncheck the Apply configuration filter check box. If you set a filter you can use production unit 110 in USMF.
-6. In the Production unit field, select the ressource group for which production jobs the worker can work on.
+6. In the Production unit field, select the resource group for which production jobs the worker can work on.
 7. In the list, click the link in the selected row.
 8. Click OK.
 9. Click the Start job button.
