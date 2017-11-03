@@ -2,10 +2,10 @@
 # required metadata
 
 title: Bills of materials and formulas
-description: This article provides information about bills of materials (BOMs) and formulas, which are a central part of the definition of products and product variants. BOMs and formulas specify the required materials or ingredients for a specific product. Formulas also specify the co-products and by-products that are received in a specific production context. 
+description: This topic provides information about bills of materials (BOMs) and formulas, which are a central part of the definition of products and product variants. 
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,12 +35,12 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides information about bills of materials (BOMs) and formulas, which are a central part of the definition of products and product variants. BOMs and formulas specify the required materials or ingredients for a specific product. Formulas also specify the co-products and by-products that are received in a specific production context. 
+This topic provides information about bills of materials (BOMs) and formulas, which are a central part of the definition of products and product variants. BOMs and formulas specify the required materials or ingredients for a specific product. Formulas also specify the co-products and by-products that are received in a specific production context. 
 
 Bills of materials
 ------------------
 
-A bill of materials (BOM) defines the components that are required in order to produce a product. The components can be raw materials, semifinished products, or ingredients. In some cases, services can be referenced in a BOM. However, BOMs typically describe the *material resources* that are required.  
+A bill of materials (BOM) defines the components that are required in order to produce a product. The components can be raw materials, semi-finished products, or ingredients. In some cases, services can be referenced in a BOM. However, BOMs typically describe the *material resources* that are required.  
 
 When it's combined with a route or production flow that describes the operations and resources that are required in order to build a product, the BOM forms the foundation for calculating the estimated cost of the product.  
 
@@ -65,7 +65,7 @@ In the product lifecycle, many types of BOM might be created for various reasons
 -   **Engineering BOM** – This BOM is typically used when you design products that are based on existing product portfolios. Engineering BOMs are structured to simplify the design process and group complex products into engineering modules. For simple products, it might be possible to engineering BOMs for the actual production process. However, for other products, the engineering BOM must be converted to an actual production BOM. Engineering BOMS are typically represented by phantoms in the BOM hierarchy. Although engineering BOMs can be used for the planning and execution of manufacturing operations, this approach can lead to inefficiencies, especially in repetitive operations where many orders are created.
 -   **Planning BOM** – This BOM is used to do planning for material requirements. The demand of components and ingredients is calculated based on the demand of the finished products. Like costing BOMs, planning BOMs might represent a specific mix of material that is used in a period.
 -   **Production BOM** – This is the actual BOM that is used for a specific production. A production BOM must take into account the actual resources that are used to produce the product. When a production order, batch order, or kanban is created, the multiple levels of BOMs that are represented by phantoms are collapsed into one level and distributed over the operations for the order.
--   **Costing BOM** – This BOM is used to calculated the estimated cost of a product. For example, you can use a costing BOM when standard cost is used or the estimated planned cost of a given product is calculated. Costing BOMs can refer to a specific mix of materials and resources that is expected to be used. Therefore, you can use the costing BOM to create a representative estimated cost for a period and help avoid variances over time.
+-   **Costing BOM** – This BOM is used to calculate the estimated cost of a product. For example, you can use a costing BOM when standard cost is used or the estimated planned cost of a given product is calculated. Costing BOMs can refer to a specific mix of materials and resources that is expected to be used. Therefore, you can use the costing BOM to create a representative estimated cost for a period and help avoid variances over time.
 
 The types of BOM that are actually used in an implementation depend on the implementation, and also on the business scenarios and requirements. In simple implementations, a planning BOM, production BOM, and costing BOM can be modeled as one BOM. In environments that have frequent engineering changes and multiple alternative routes, a larger set of BOM types will probably be required.
 
