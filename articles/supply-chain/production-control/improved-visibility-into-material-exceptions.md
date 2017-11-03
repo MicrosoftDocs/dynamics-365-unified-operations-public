@@ -63,10 +63,14 @@ criteria for needing attention.
 
 **Tile - Unreleased material lines needing attention**
 
-A BOM or formula line can be released to warehouse in three different ways 1) as
-part of a production or batch order release 2) as a manual release 3)
-automatically with the use of a batch job. For more information see: [Release BOM and formula lines to the warehouse](releasing-bom-and-formula-lines-to-warehouse.md). If a
-BOM or formula line has not been released or has only been partly released and
+A BOM or formula line can be released to warehouse in three different ways:
+- as part of a production or batch order release 
+- as a manual release
+- automatically with the use of a batch job. 
+
+For more information see: [Release BOM and formula lines to the warehouse](releasing-bom-and-formula-lines-to-warehouse.md). 
+
+If a BOM or formula line has not been released or has only been partly released and
 the date and filter criteria of the workspace are met, then the line will be
 included in the calculation of the number on the tile.
 
