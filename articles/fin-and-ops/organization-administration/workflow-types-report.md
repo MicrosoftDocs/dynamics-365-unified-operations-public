@@ -5,7 +5,7 @@ title: Workflow types report
 description: This topic points you to a report that lists the workflow types that are available in Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,7 +40,7 @@ This topic points you to a report that lists the workflow types that are availab
 To create a workflow, you must first select the *type* of workflow that you want to create. For example, you may want to create a **Purchase requisition line review** workflow to define who must approve line items on purchase requisitions. For more information about creating a workflow, see [Create a workflow](create-workflow.md).
 
 ## View the report
-The [Workflow types report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)lists each type of workflow that is available. The report also describes what each type of workflow is used for and indicates whether the workflows of each type are associated with a specific company in the organization or with the whole organization.
+The [Workflow types report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each type of workflow that is available. The report also describes what each type of workflow is used for and indicates whether the workflows of each type are associated with a specific company in the organization or with the whole organization.
 
 
 
