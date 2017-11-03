@@ -5,7 +5,7 @@ title: Programming language support
 description: This topic reviews the changes made to the compiler for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: pvillads
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic reviews the changes made to the compiler for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. The X++ compiler has been rewritten. No backward-incompatible changes have been introduced to X++ except where required by structural changes to the product. A few language enhancements have been added. A new X++ best practice tool has also been implemented, which allows the addition of user-defined custom rules.
 
-## No more pcode, everything is in .NET Framework CIL
+## No more p-code, everything is in .NET Framework CIL
 Through Microsoft Dynamics AX 2012, X++ source code was compiled into p-code, which was understood by the interpreter at run time. Optionally, you could then compile the p-code into Microsoft .NET CIL (Common Intermediate Language). CIL is what the .NET compilers for C\# and Visual Basic generate. However, X++ CIL code was usable only in limited cases, mainly for code executed in services and batch jobs. The new X++ compiler generates CIL only. There is no more p-code. The following tools that worked with p-code are now obsolete and have been removed from Dynamics AX and replaced by .NET tools:
 
 -   The X++ compiler that generated p-code.
@@ -96,7 +96,7 @@ X++ is now a first-class citizen in the .NET world. Therefore we are adding to X
 -   Attributes are now applied to the handlers of delegates and methods, to map the handlers to those targets.
 -   Classes can now be nested in X++ source code. Nested classes are available only inside forms (such as a class that extends FormRun) to represent controls, data sources, or data fields.
 
-## Backwardincompatible changes to X++
+## Backward-incompatible changes to X++
 There are a few changes to X++ that require corresponding changes in legacy custom X++ source code. Most of these changes are in the following list:
 
 -   The following keywords are no longer part of the X++ language, and their use causes compilation errors:
