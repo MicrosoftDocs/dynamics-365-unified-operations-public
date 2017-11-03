@@ -64,7 +64,7 @@ In the query for the **Automatic release of BOM and formula lines** batch job, y
 
 The following illustration shows a production order that has two jobs. Each job is set up to consume a quantity of material. In this illustration, the release time fence equals the number of days that has been specified in the **(LessThanDate())** criterion. For example, **(LessThanDate(2))** indicates that the job should look for unreleased quantities only within a time fence of two days.
 
-![Example of a production order that has two batch jobs](media/ea57638d37dee90551c6cf6137c171d1.png)
+![Example of a production order that has two batch jobs](media/bach-job-setup.png)
 
 ## Releasing material per operation number or in proportion to the amount of finished goods
 
