@@ -2,10 +2,10 @@
 # required metadata
 
 title: Time and attendance registration
-description: Time registration workers can enter different types of time registrations, for example, clock in, clock out, register indirect activities, and absence registration. This article describes registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets. 
+description: Time registration workers can enter different types of time registrations, for example, clock in, clock out, register indirect activities, and absence registration. This topic describes registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-Time registration workers can enter different types of time registrations, for example, clock in, clock out, register indirect activities, and absence registration. This article describes registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets. 
+Time registration workers can enter different types of time registrations, for example, clock in, clock out, register indirect activities, and absence registration. This topic describes registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets. 
 
 Registrations
 -------------
@@ -69,7 +69,7 @@ After setup, the workers can enter different types of registrations.
 -   Indirect activities, which are non-productive activities a worker might engage in during a workday. Examples of these activities include meetings or cleaning their workspace.
 -   Overtime, which can be registered either as extra hours, flextime, or overtime.
 
-## Adding clockout registrations
+## Adding clock-out registrations
 If a worker forgets to clock-out at the end of their workday, the missing registration can be added by running a batch job. The system will compare the clock-in time and the clock-out time according to the associated profile of the worker, and automatically insert the missing clock-out registration to match the profile’s end time. Both the clock-in and clock-out registrations are vital for the subsequent calculation and approval of time registrations before they can be transferred to payroll.
 
 ## Calculating registrations
