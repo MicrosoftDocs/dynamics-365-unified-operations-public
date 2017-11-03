@@ -81,7 +81,7 @@ To control the operations that material should be released to, use the **Release
 
 The following illustration shows a production order that has two operations, 10 and 20. In this example, if you limit the release to operation 10, only material M9203 will be released.
 
-![Example of the release of material per operation number](media/bach-job-setup.PNG)
+![Example of the release of material per operation number](media/two-operations.PNG)
 
 ### Release material in proportion to the amount of finished goods
 
