@@ -72,6 +72,11 @@ All sessions are delivered remotely by the FastTrack engineering team. We have t
 
 FastTrack sessions are scheduled throughout the stages of the project lifecycle. The following diagram summarizes how the lifecycle stages relate to the workshops and techtalks, which are described in detail below. 
 
+**Legend**
+- T: Tech talk
+- W: Workshop
+- Tech talks and Workshops in bold are included for 20-149 seats
+
 |          INITIATE          |             DESIGN            |           BUILD          |             DEPLOY             |       OPERATE       |
 |:--------------------------:|:-----------------------------:|:------------------------:|:------------------------------:|:-------------------:|
 |    Bi-weekly touchpoints   |     Bi-weekly touchpoints     |   Bi-weekly touchpoints  |       Weekly touchpoints       |  Weekly touchpoints |
@@ -91,10 +96,6 @@ FastTrack sessions are scheduled throughout the stages of the project lifecycle.
 |                            |            Upgrade            |                          |                                |                     |
 
 
-**Legend**
-- T: Tech talk
-- W: Workshop
-- Items in bold are included for 20-149 seats
 
 
 ## Workshops
