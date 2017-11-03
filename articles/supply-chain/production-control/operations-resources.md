@@ -5,7 +5,7 @@ title: Operations resources
 description: Operations resources perform the activities of a project or a production process. They can be of different types, and can have different capabilities. 
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -66,7 +66,7 @@ Operations resources are assigned to activities when a project or a production i
 
 -   **Capacity** – Specify the operations resource's capacity per hour in terms of the capacity unit of measure.
 -   **Batch capacity** – Specify the maximum number of pieces that the operations resource can process per run.
--   **Efficiency percentage** – Specify the efficiency that you expect from the operations resource. The efficiency percentage adjusts the throughput of the operations resource and affects the time that is reserved for the resource. The lead times for the operations that use the operations resource are also adjusted accordingly. Here is the formula that is used for the calculation: Scheduling time = Time × 100 ÷ Efficiency percentage In this formula, *Time* includes both the run time and setup time.
+-   **Efficiency percentage** – Specify the efficiency that you expect from the operations resource. The efficiency percentage adjusts the throughput of the operations resource and affects the time that is reserved for the resource. The lead times for the operations that use the operations resource are also adjusted accordingly. Here is the formula that is used for the calculation: Scheduling time = Time × 100 ÷ Efficiency percentage. *Time* includes both the run time and setup time.
 -   **Operations scheduling percentage** – Specify the maximum percentage of capacity of the operations resource that you want to use in operations scheduling. To allow for flexibility in capacity during job scheduling, you should set this percentage to less than 100 percent.
 -   **Finite capacity** – Set this option to **Yes** if the operations resource should be scheduled based on the actual capacity that is available, and if existing capacity reservations should be considered. If this option is set to **No**, the operations resource is assumed to have infinite capacity, and the resource might therefore be overbooked.
 -   **Finite property** – Set this option to **Yes** if you want the operations resource to be scheduled based on the actual capacity that is available with respect to the required working time scheduling properties.
