@@ -70,14 +70,14 @@ On each server in your environment that hosts an AOS instance or Microsoft Dynam
 
 To grant access to collect data from the Windows registry on the server that hosts the SQL Server business database:
 1.  Click **Start**, click **Run**, type **regedit**, and then press **Enter**.
-2.  Expand **HKEY\_LOCAL\_MACHINE**, navigate to the subkey **SystemCurrentControlSetControlPriorityControl**, right-click it and select **Permissions**.
+2.  Expand **HKEY\_LOCAL\_MACHINE**, navigate to the subkey **System\CurrentControlSet\Control\PriorityControl**, right-click it and select **Permissions**.
 3.  Add the user that you want to associate with the Lifecycle Services Diagnostic Service.
 4.  Select the user that you added, and then allow read permissions.
 5.  Click **Advanced Security Settings**, and then ensure that the permissions are inherited by the child objects.
 
 To grant access to collect data from the Windows registry on a server that hosts one or more AOS instances:
 1.  Click **Start**, click **Run**, type **regedit**, and press **Enter**.
-2.  Expand **HKEY\_LOCAL\_MACHINE**, navigate to the subkey **SystemCurrentControlSetServicesDynamics Server6.0**, right-click it and select **Permissions**.
+2.  Expand **HKEY\_LOCAL\_MACHINE**, navigate to the subkey **System\CurrentControlSet\Services\Dynamics Server\6.0**, right-click it and select **Permissions**.
 3.  Add the user that you want to associate with the Lifecycle Services Diagnostic Service.
 4.  Select the user that you added, and then allow read permissions.
 5.  Click **Advanced Security Settings**, and then ensure that the permissions are inherited by the child objects.
