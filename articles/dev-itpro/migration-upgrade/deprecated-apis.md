@@ -54,7 +54,7 @@ Throughout this table, under the <br/>**Reason for Deprecation** heading, "the c
 |---|---|---|---|
 | ActionPane |Method |tabChanged | Updates to ActionPanes (or controls inside of ActionPanes) should be done based on the active row, not when the tab becomes active. |
 | ActionPaneTab |Method | selectionChanged |Updates to ActionPaneTabs (or controls inside of ActionPaneTabs) should be done based on the active row, not when the tab becomes active. |
-| Box |Method |yesNoTextMenuLinkText | |
+| Box |Method |yesNoTextMenu- LinkText | |
 | ComboBox |Method |getEditText |**Overview**<br/>N/A<br/>**Reason for deprecation**<br/>Redundant.<br/>**Migration notes**<br/>Use getText instead. |
 | DataSet DataSetNode DataSetRun |Class | |**Overview**<br/>Used in Dynamics AX 2012 with Enterprise Portal.<br/>**Reason for deprecation**<br/>Not applicable in the client.<h4 ><br/><br/>**Migration notes**<br/>Remove calls to these APIs from your code. |
 | DataSourceMethodInfo DataSourceMethodInfoList |Class | | |
@@ -64,7 +64,7 @@ Helper |Class | | |
 | Form |Method | addhistory currentHistoryName currentHistoryState updateHistory |**Overview**<br/>Used in Dynamics AX 2012 with address bar.<br/>**Reason for deprecation**<br/>Navigation model in the client has changed.<br/><br/>**Migration notes**<br/>Remove calls to these APIs from your code. |
 | Form |Method |arrange | |
 | Form |Method |controlCallingMethod | |
-| Form |Method |controlMethodOverload controlMethodOverloadObject |**Overview**<br/>Used in Dynamics AX 2012 to register override methods.<br/>**Reason for deprecation**<br/>This is not a clean and recommended way to register override methods.<br/><br/>**Migration notes**<br/>Use registerOverrideMethod instead. |
+| Form |Method |controlMethod- Overload controlMethod- OverloadObject |**Overview**<br/>Used in Dynamics AX 2012 to register override methods.<br/>**Reason for deprecation**<br/>This is not a clean and recommended way to register override methods.<br/><br/>**Migration notes**<br/>Use registerOverrideMethod instead. |
 | Form |Method |copy cut paste | |
 | Form |Method |delAutoCompleteString getAutoCompleteString setAutoCompleteString |**Overview**<br/>Used in Dynamics AX 2012 to set, get, and delete automatic suggestions.<br/>**Reason for deprecation**<br/>Specific to Dynamics AX 2012 Windows client.<br/>**Migration notes**<br/>Remove calls to these APIs from your code. |
 | Form |Method |firstField | |
@@ -74,7 +74,7 @@ Helper |Class | | |
 | Form |Method |lastField nextField nextGroup prevField prevGroup | |
 | Form |Method |Lock lockWindowUpdate unLock |**Overview**<br/>These methods were used to prevent the redrawing of windows when performing a set of UI updates. Without these the window would be redrawn in response to each individual change leading to bad end-user experience and degraded performance.<br/>**Reason for deprecation**<br/>These methods are specific to the Windows client and are no longer needed for the client.<br/>**Migration notes**<br/>A code upgrade rule has been provided to remove occurrences of these APIs. You can safely remove any calls to these APIs from your code. |
 | Form |Method |print printPreview send |**Overview**<br/>Used in Dynamics AX 2012 to override the Auto Report generation for the form<br/>**Reason for deprecation**<br/>Microsoft Office 365 integration offers a better user experience in the client.  The ‘Export’ function is available for the user in the Dynamics AX client forms.<br/>**Migration notes**<br/>Remove calls to these APIs from your code. |
-| Form |Method |redraw resetStatusBarBackgroundColor setStatusBarBackgroundColor sysColorChanged |**Overview**<br/>Used to control styles or colors.<br/>**Reason for deprecation**<br/>Remove ability for developers to specify the colors via API for consistent visuals.<br/>**Migration notes**<br/>A code upgrade rule has been provided to remove occurrences of the redraw API. Remove usage of these APIs from your code. |
+| Form |Method |redraw resetStatusBar- BackgroundColor setStatusBar- BackgroundColor sysColorChanged |**Overview**<br/>Used to control styles or colors.<br/>**Reason for deprecation**<br/>Remove ability for developers to specify the colors via API for consistent visuals.<br/>**Migration notes**<br/>A code upgrade rule has been provided to remove occurrences of the redraw API. Remove usage of these APIs from your code. |
 | Form |Method |reload | |
 | Form |Method |resetSize |**Overview**<br/>This method was used when controls were added/removed from a form causing its size to change. Without it the window might not be correctly sized to account for the added/removed controls.<br/>**Reason for deprecation**<br/>These methods are specific to the Windows client and are no longer needed for the client.<br/>**Migration notes**<br/>You can safely remove any calls to these APIs from your code. |
 | Form |Method |resize | |
@@ -86,7 +86,7 @@ Helper |Class | | |
 | FormControl |Method |copy cut paste | |
 | FormControl |Method |dateTextChange | |
 | FormControl |Method |editControl | |
-| FormControl |Method |hasControlPositionOverride | |
+| FormControl |Method |hasControl- PositionOverride | |
 | FormControl |Method |helpField | |
 | FormControl |Method |hWnd |**Overview**<br/>N/A<br/>**Reason for deprecation**<br/>Specific to Dynamics AX 2012 Windows client and not compatible with the client.<br/>**Migration notes**<br/>Remove usage of these APIs from your code. |
 | FormControl |Method |inputSearch | |
@@ -104,7 +104,7 @@ Helper |Class | | |
 | FormControl / FormDesign | Property | AcquireFocus |  |
 | FormControl / FormDesign | Property | ActiveBackCol ActiveBackColor ActiveBackColorRGB ActiveForeColor ActiveForeColorRGB AlternateRowShading BackgroundColor BackgroundColorRGB BackStyle BackStyleRGB CharacterSet ColorScheme DrawFocusRect ForegroundColor ForegroundColorRGB GridLines GridLinesStyle PromptRect | **Overview** <br/>Used to control styles or colors.<br/>**Reason for deprecation** <br/>Remove ability for developers to specify the colors via API for consistent visuals.<br/>**Migration notes** <br/>Remove usage of these APIs from your code. |
 | FormControl / FormDesign | Property | AlignChild AlignChildren AlignControl Border BottomMargin BottomMarginMode ColumnSpace ColumnSpaceMode ColumnSpaceValue Left LeftMargin LeftMarginMode LeftMode RightMargin RightMarginMode SizeHeight SizeWidth TabAppearance TabAutoChange TabLayout TabMode TabPlacement Top TopMargin TopMarginMode TopMode VerticalSpacing VerticalSpacingMode VerticalSpacingValue | **Overview** <br/>Used to control layout.<br/>**Reason for deprecation** <br/>Remove ability for developers to control layout using this property to achieve a consistent layout.<h4 ><br/>**Migration notes** <br/>Remove usage of these APIs from your code. Use styles or CSS instead. |
-| FormControl / FormDesign | Property | AllowDocking AlwaysOnTop ArrangeGuide ArrangeWhen ContainerScrollHorizontalOffset ContainerScrollVerticalOffset IMEMode MaximizeBox MinimizeBox Mode NeededAccessLevel ProgressType Securable SecurityKey StatusBarStyle WindowResize |**Overview** <br/>N/A<br/>**Reason for deprecation** <br/>Specific to Dynamics AX 2012 Windows client, no longer needed.<br/>**Migration notes** <br/>Remove usage of these APIs from your code. |
+| FormControl / FormDesign | Property | AllowDocking AlwaysOnTop ArrangeGuide ArrangeWhen ContainerScroll- HorizontalOffset ContainerScroll- VerticalOffset IMEMode MaximizeBox MinimizeBox Mode NeededAccessLevel ProgressType Securable SecurityKey StatusBarStyle WindowResize |**Overview** <br/>N/A<br/>**Reason for deprecation** <br/>Specific to Dynamics AX 2012 Windows client, no longer needed.<br/>**Migration notes** <br/>Remove usage of these APIs from your code. |
 | FormControl / FormDesign | Property | Bold |  |
 | FormControl / FormDesign | Property | CanScroll |  |
 | FormControl / FormDesign | Property | DisabledImage DisabledImageLocation DisabledResource |  |
@@ -147,11 +147,11 @@ Helper |Class | | |
 | FormDataSource | Method | maxPagingRowCountValue pagingEnabled startRowIndex setPagingParameters totalNumberOfRows |**Overview** <br/>Used in Dynamics AX 2012 with Enterprise Portal<br/>**Reason for deprecation** <br/>Not applicable in the client.<br/>**Migration notes** <br/>Remove calls to these APIs from your code. |
 | FormDataSource | Method | print |  |
 | FormDesign | Method | cssClass localWebMenu showWebHelp supportReload |**Overview** <br/>Used in Dynamics AX 2012 with Enterprise Portal<br/>**Reason for deprecation** <br/>Not applicable in the client.<br/>**Migration notes** <br/>Remove calls to these APIs from your code. |
-| FormObjectSetNotify | Method | onPagingParametersChanged |  |
+| FormObjectSetNotify | Method | onPaging- ParametersChanged |  |
 | FormObjectSetPaging- ParamsChangedEvtArgs | Class |  |  |
 | Global xInfo |Method |endLengthyOperation startLengthyOperation |**Overview** <br/>These methods were used to show/stop showing a progress indicator during long running operations.<br/>**Reason for deprecation** <br/>In the client, the system automatically takes care of showing/hiding the progress indicator and calls to these APIs are not needed.<br/>**Migration notes** <br/>You can safely remove any calls to these APIs from your code. |
-| Image | Method |  captureScreen captureWindow clipboardCopy clipboardPaste crop displayImage displayOrign exportBitmap flip getImageDimensionUnits getPixel height imageInfo imageSpotlight promoteColor reduceColorOctree resize rotate saveImage saveType transparent width |  |
-| ListPage Page | Method |  activeActionPaneTabNames | **Overview** <br/>This method was used to find the active action pane tab.<br/>**Reason for deprecation** <br/>In the client, Action Pane tabs are handled client-side only, the server is not aware of the state.<h4 ><br/>**Migration notes** <br/>Remove usage of this API from your code. |
+| Image | Method |captureScreen captureWindow clipboardCopy clipboardPaste crop displayImage displayOrign exportBitmap flip getImageDimensionUnits getPixel height imageInfo imageSpotlight promoteColor reduceColorOctree resize rotate saveImage saveType transparent width |  |
+| ListPage Page | Method |  activeActionPane- TabNames | **Overview** <br/>This method was used to find the active action pane tab.<br/>**Reason for deprecation** <br/>In the client, Action Pane tabs are handled client-side only, the server is not aware of the state.<h4 ><br/>**Migration notes** <br/>Remove usage of this API from your code. |
 | MessageWin | Class |  |  |
 | Object | Method | notify notifyAll wait | **Overview** <br/>Used to block and wait for an interaction/operation and notify to unblock.<br/>**Reason for deprecation** <br/>These calls are deprecated for all objects except formRun and it’s derivatives.<br/>**Migration notes** <br/>Calls to these APIs from formRun or it’s derivatives are allowed.  Calls to these APIs from any other object should be removed. |
 | Object | Method | objectOnServer | **Overview** <br/>Used to determine whether an object is on the server.<br/>**Reason for deprecation** <br/>This is redundant and no longer required because all objects are on the server.<br/>**Migration notes** <br/>You can safely remove calls to these APIs from you code. It will always evaluate to true. |
