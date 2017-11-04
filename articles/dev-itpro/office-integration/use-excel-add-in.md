@@ -84,16 +84,25 @@ If data sources have been added as related, the header is published before the l
 ## Add or remove columns
 You can use the designer to adjust the columns that are automatically added to the worksheet.
 
-1.  Start the data source designer of the Excel add-in by clicking the **Options** button (the gear symbol) and then selecting the **Enable design** check box.
-2.  Click **Design** in the Excel add-in. All the data sources are listed.
-3.  Next to the data source, click the **Edit** button (the pencil symbol).
-4.  Adjust the list in the **Selected fields** list as you require:
+Note: If the **Design** button is not shown in the Excel add-in below the **Filter** button, then enable the data source designer by clicking the **Options** button (the gear symbol) and then selecting the **Enable design** check box.
+
+1.  Click **Design** in the Excel add-in. All the data sources are listed.
+2.  Next to the data source, click the **Edit** button (the pencil symbol).
+3.  Adjust the list in the **Selected fields** list as you require:
     -   To add a field from the **Available fields** list to the **Selected fields** list, click the field, and then click **Add**. Alternatively, double-click the field.
     -   To remove a field from the **Selected fields** list, click the field, and then click **Remove**. Alternatively, double-click the field.
     -   To change the order of fields, click the field in the **Selected fields** list, click a field, and then click **Up** or **Down**.
 
-5. To apply your changes to the data source, click **Update**. Then click **Done** to exit the designer. 
-6. If you added a field (column), click **Refresh** to pull in an updated set of data.
+4. To apply your changes to the data source, click **Update**. Then click **Done** to exit the designer. 
+5. If you added a field (column), click **Refresh** to pull in an updated set of data.
+
+## Copy Environment Data
+The data read into the workbook from one environment can be copied to a different environment, but you can't just change the connection URL since the data cache in the workbook will continue to treat the data as existing data. Instead, use the following steps to access the **Copy Environment Data** capability so the data can be published into a new environment as new data:
+1. Click the **Options** button (the gear symbol), expand the **Data Connector** section, and then click the **Copy Environment Data** button.
+2. Provide the server URL for the new environment.
+3. Click OK and click Yes to confirm the action. The add-in will now restart, connect to the new environment, and any existing data in the workbook will be treated as new data. 
+4. Once the add-in restarts, a message box will be shown to indicate that the workbook is in environment copy mode. 
+5. To copy the data into the new environment as new data, click Publish. Or to cancel the environment copy and review the existing data in the new environment, click Refresh.
 
 ## Troubleshooting
 There are a few issues that can be resolved through some easy steps.
