@@ -188,8 +188,8 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
     ```
 
-    > [!WARNING]
-    > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+   > [!WARNING]
+   > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
 ### The Retail Server extension components
 
@@ -238,11 +238,11 @@ This section applies to Dynamics 365 for Finance and Operations, Enterprise edit
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
         ```
-
-     > [!WARNING]
-     > Do **not** edit the commerceruntime.config file. This file isn't intended for any customizations.
-     > 
-     > This step resembles the step for including the SalesTransactionSignature.Messages CRT extension component, but it uses a different destination folder: bin  instead of bin\\ext. You must use the bin folder to help guarantee that the Retail Server extension is successfully loaded.
+        
+        > [!WARNING]
+        > Do **not** edit the commerceruntime.config file. This file isn't intended for any customizations.
+        > 
+        > This step resembles the step for including the SalesTransactionSignature.Messages CRT extension component, but it uses a different destination folder: bin  instead of bin\\ext. You must use the bin folder to help guarantee that the Retail Server extension is successfully loaded.
 
 ### The Modern POS extension components
 
