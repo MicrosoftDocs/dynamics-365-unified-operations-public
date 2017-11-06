@@ -18,7 +18,7 @@ ms.technology:
 audience: Application user, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
