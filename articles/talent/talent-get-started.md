@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 
 ---
-## Getting started with Microsoft Dynamics 365 for Talent
+# Getting started with Microsoft Dynamics 365 for Talent
 In Microsoft Dynamics 365 for Talent it's easy to modify the user interface and set options that make the software more intuitive for your needs. This topic includes links to topics that provide information on how to adapt the user interface to your preferences. The topic also includes links to information that can help you find information in the system efficiently and accurately. 
 
 > [!NOTE] 
@@ -60,11 +60,11 @@ The following topics explain how to use lookups, and the search and filtering fe
 ## Additional resources
 
 ### What's new and in development
-Go to the Microsoft Dynamics 365 Roadmap to see what new features have been released and what new features are in development.
+Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/#application=c6ae025f-e42a-e711-810d-3863bb363e80) to see what new features have been released and what new features are in development.
 
 ### Blogs
 You can find opinions, news, and other information about Accounts payable and other solutions on the [Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
 
 ### Videos
-Check out the how-to videos that are now available on the Microsoft Dynamics 365 YouTube Channel.
+Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
