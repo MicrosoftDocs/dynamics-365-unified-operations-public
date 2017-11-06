@@ -28,7 +28,7 @@ ms.search.validFrom: 2017-12-01
 
 ---
 
-# Adjustment inflation declaration report
+# CFDI layout version 3.3
 
 [!include[banner](../includes/banner.md)]
 
