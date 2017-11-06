@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 125983
 ms.assetid: 52a14e01-8e80-4e12-8c92-ab8e28ffed62

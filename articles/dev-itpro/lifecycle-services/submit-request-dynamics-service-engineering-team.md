@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 254564
 ms.assetid: 43ea0eae-34c8-4f97-8c98-c711844534d9
@@ -42,7 +42,7 @@ You can now submit requests directly to the Dynamics Service Engineering (DSE) 
 The following request types are supported by this functionality:
 
 -   **Other requests** – This includes requests other than those listed above or automated flow requests. For example, you might use this request type for upgrade or to request the system be put into maintenance mode. Note, this should not be used to submit support requests.
--   **Package application** – To apply a package to the production environment, on the **Environment details** page, click **Maintain** to select the package to apply, and then select **Schedule**.
+-   **Package application** – To apply a package to the production environment, on the **Environment details** page, click **Maintain** to select the package to apply, and then select **Schedule**. For more information, see [Apply a deployable package](../deployment/apply-deployable-package-system.md).
 -   **Environment deployment** – To set the deployment options and submit a request to the Dynamics Service Engineering team to deploy a new environment, click **Configure** on the **Environments** pane.
--   **Database point-in-time restore** – This includes, for example, restoring a non-production database to a specific point in time.
--   **Database refresh** – This includes, for example, the ability to refresh a database from production to sandbox. 
+-   **Database point-in-time restore** – This includes, for example, restoring a non-production database to a specific point in time. for more information, see [Request a point-in-time restore](../database/request-point-in-time-restore.md).
+-   **Database refresh** – This includes, for example, the ability to refresh a database from production to sandbox. For more information, see [Request a sandbox database refresh](../database/database-refresh.md).

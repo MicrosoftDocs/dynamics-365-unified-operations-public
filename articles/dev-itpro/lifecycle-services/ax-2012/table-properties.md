@@ -186,12 +186,12 @@ For more information about dimensions and star and snowflake schemas, see <a hre
 </tr>
 <tr class="even">
 <td><strong><span class="ui">ModifiedDateTime</span></strong></td>
-<td>Indicates whether the system maintains the <strong><span class="code">ModifiedDate</span></strong> field for the records in a table. This field records the date of the last modification of a record.</td>
+<td>Indicates whether the system maintains the <strong><span class="code">ModifiedDateTime</span></strong> field for the records in a table. This field records the date of the last modification of a record.</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">ModifiedTime</span></strong></td>
-<td>Indicates whether the system maintains the <strong><span class="code">ModifiedDateTime</span></strong> field for the records in a table. This field records the date and time when a record was last modified.</td>
+<td>Indicates whether the system maintains the <strong><span class="code">ModifiedTime</span></strong> field for the records in a table. This field records the time when a record was last modified.</td>
 <td></td>
 </tr>
 <tr class="even">

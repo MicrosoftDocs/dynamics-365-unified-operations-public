@@ -5,7 +5,7 @@ title: X++ conversion run-time functions
 description: This topic describes the conversion run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -354,11 +354,11 @@ Converts the specified date to a string.
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | date       | The date to convert.                                                                                                                                                                                        |
 | sequence   | A three-digit number that indicates the sequence for the components of the date: **1** for day, **2** for month, and **3** for year.                                                                        |
-| day        | A enumeration value that indicates the format for the day component of the date.                                                                                                                            |
-| separator1 | A enumeration value that indicates the separator to use between the first two components of the date.                                                                                                       |
-| month      | A enumeration value that indicates the format for the month component of the date.                                                                                                                          |
-| separator2 | A enumeration value that indicates the separator to use between the last two components of the date.                                                                                                        |
-| year       | A enumeration value that indicates the format for the year component of the date.                                                                                                                           |
+| day        | An enumeration value that indicates the format for the day component of the date.                                                                                                                            |
+| separator1 | An enumeration value that indicates the separator to use between the first two components of the date.                                                                                                       |
+| month      | An enumeration value that indicates the format for the month component of the date.                                                                                                                          |
+| separator2 | An enumeration value that indicates the separator to use between the last two components of the date.                                                                                                        |
+| year       | An enumeration value that indicates the format for the year component of the date.                                                                                                                           |
 | flags      | A **DateFlags** enumeration value that indicates whether the language settings on the local computer should be used to calculate the proper left-to-right or right-to-left sequence in the returned string. |
 
 ### Return value
