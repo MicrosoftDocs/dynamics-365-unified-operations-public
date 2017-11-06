@@ -40,14 +40,14 @@ batch orders.
 
 3.  Open warehouse work needing attention
 
-For all three tiles, the **Raw material date** of the BOM and formula lines will
+For all three tiles, the raw material date of the BOM and formula lines will
 be compared against the workspace date and the filters for **Production unit,
 Resource group** and **Resource** that are set in the **Configure my work
 space** menu. The workspace date defaults to today’s date but it can be adjusted
 by the user.
 
-An unreleased BOM or formula line qualifies for needing attention if the **Raw
-material date** of the line equals to or is earlier than the **Work space date**
+An unreleased BOM or formula line qualifies for needing attention if the raw
+material date of the line equals to or is earlier than the work space date
 and meets the criteria of the filters in the work space.
 
 In the below figure the blue bar represents a production job scheduled on a
