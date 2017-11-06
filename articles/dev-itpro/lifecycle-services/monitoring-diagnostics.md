@@ -104,6 +104,12 @@ Several tools and resources are available in the Monitoring and diagnostics port
 <li>System diagnostics</li>
 </ul></td>
 </tr>
+ <tr class="even">
+<td>Environments deployed in customer/partner subscriptions</td>
+<td><ul>
+<li>System diagnostics</li>
+</ul></td>
+</tr>
 </tbody>
 </table>
 
