@@ -2,7 +2,7 @@
 # required metadata
 
 title: Request a sandbox database refresh
-description: This topic explains how to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, in a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the database of your production environment (and the Financial Reporting database) into the target sandbox UAT environment.
+description: This topic explains how to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, in a sandbox user acceptance testing (UAT) environment. 
 author: Robadawy
 manager: AnnBe
 ms.date: 10/31/2017
@@ -39,7 +39,7 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to request a refresh of 
 This functionality lets you use production data to test upcoming code changes in a UAT environment. You can also copy a production database into a UAT environment for debugging purposes.
 
 ## Database refresh process
-The Microsoft Service Engineering team will take your environment offline, complete the refresh, and then bring the environment back online. You can expect the downtime period to be less than two hours. The period after you enter your request and before our Service Engineers take action will be longer than your environment's downtime. In the future, we will provide a self-service method that you can use to perform your database refreshes.
+The Microsoft Service Engineering team will take your environment offline, complete the refresh, and then bring the environment back online. You can expect the downtime period to be approximately two hours. The period after you enter your request and before our Service Engineers take action will be longer than your environment's downtime. In the future, we will provide a self-service method that you can use to perform your database refreshes.
 
 1. In LCS, select the hamburger icon in the upper left, and then select **Work items**.
 2. On the **Work items** page, select **Add** on the toolbar, and then select **Database refresh**.
@@ -63,8 +63,13 @@ Here is the list of requirements and conditions of operation for a database refr
 - A refresh erases the existing database in the target environment. The existing database can't be recovered after the refresh is completed.
 - The target environment will be unavailable until the refresh process is completed.
 - The refresh will affect only the Finance and Operations and Financial Reporting databases.
+- Documents in Azure blob storage are not copied from one environment to another. This means that attached document handling documents and teamplates won't be changed and will remain in their current state. 
+- All users except the Admin user and other internal service user accounts will be disabled. This process allows the Admin user to delete or obfuscate data before allowing others users back into the system. 
+- The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs. 
+- All batches that were set to run are set to Withhold status, to stop batches from running before the environment has been reconfigured. 
+- The SMTP server configuration, all emaill addresses, and all print management settings, including network printers are removed. 
+- Any user with a role of Project owner or Enivoronment managemer in LCS will have acccess to the SQL and machine credentials for all non-production environments. 
 
-    Document handling documents that are stored in Microsoft Azure blob storage won't be changed and will remain in their current state. The same rule applies to any documents that are stored in Azure blob storage through X++ customization.
 
 ## Steps to complete after a database refresh for environments that use Retail functionality
 When a database is refreshed, you must run the Environment reprovisioning tool before the copied database is fully functional. This step helps guarantee that all Retail components are up to date.
