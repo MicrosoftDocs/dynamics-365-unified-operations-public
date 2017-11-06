@@ -17,12 +17,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Norway
 ms.search.industry: Retail
 ms.author: v-alexec
+ms.search.scope: Retail
 ms.search.validFrom: 2017-10-15
 ms.dyn365.ops.version: App update 4
 ---
@@ -230,7 +230,7 @@ This section applies to Dynamics 365 for Finance and Operations, Enterprise edit
         > 
         > This step resembles the step for including the SalesTransactionSignature CRT extension component, but it uses a different destination folder: bin  instead of bin\\ext. You must use the bin folder to help guarantee that the Retail Server extension is successfully loaded.
         
-##### Application update 5 and further updates 
+##### Application update 5 and later
 This section applies to Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates. Complete the steps below to register the dependencies of the Retail Server extensions.
 
    1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the following files:
@@ -256,7 +256,7 @@ This part is equivalent to the Retail Server controller, but it extends the loca
 1. Change the **@(RetailServerLibraryPathForProxyGeneration)** section of the **customization.settings** file to use the new Retail Server assembly for proxy generation.
 2. Implement the following interface methods in the **StoreOperationsManager** class. For the first iteration, add the following code.
 
-    > Application update 4, add the following code:
+    > For Application update 4, add the following code:
 
     ``` csharp
     public Task<bool> SalesTransactionSignatureServiceIsReady()
@@ -269,7 +269,7 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     }
     ```
 
-    > Application update 5 and later versions, add the following code:
+    > For Application update 5 and later, add the following code:
 
     ``` csharp
     public Task<bool> SalesTransactionSignatureServiceIsReady(string correlationId)
@@ -282,18 +282,14 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     }
     ```
 3. To regenerate the proxy code, build the **Proxies** folder from the command line (**msbuild /t:Rebuild**). 
-    > [!NOTE]
-    > This step is different for Application update 4 and Application update 5.
+ 
+  > For Application update 4, open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**, add the           **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\CommerceRuntime.Extensions.SalesTransactionSignatureSample** project to the solution, and add a project reference to the **RetailProxy** project to reference **SalesTransactionSignatureSample**.
 
-   -  Application update 4: 
-        Open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**, add the           **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\CommerceRuntime.Extensions.SalesTransactionSignatureSample** project to the solution, and add a project reference to the **RetailProxy** project to reference **SalesTransactionSignatureSample**.
-
-   - Application update 5 and later: 
-   Open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**, add the **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\CommerceRuntime.Extensions.SalesTransactionSignatureSample.Messages** project to the solution, and add a project reference to the **RetailProxy** project to reference **SalesTransactionSignatureSample.Messages**.
+  > For Application update 5 and later, open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**, add the **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\CommerceRuntime.Extensions.SalesTransactionSignatureSample.Messages** project to the solution, and add a project reference to the **RetailProxy** project to reference **SalesTransactionSignatureSample.Messages**.
 
 6. Adjust the interface methods in the **StoreOperationsManager** class.
 
-    > Application update 4, adjust the following code:
+    > For Application update 4, adjust the following code:
 
     ``` csharp
     public Task<bool> SalesTransactionSignatureServiceIsReady()
@@ -306,7 +302,7 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     }
     ```
 
-    > In Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates adjust the following code:
+    > For Application update 5 and later, adjust the following code:
 
     ``` csharp
     public Task<bool> SalesTransactionSignatureServiceIsReady(string correlationId)
@@ -387,7 +383,7 @@ Follow these steps to create and apply deployable packages that contain Retail c
 
     1. Add the following lines to the **composition** section of the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files.
 
-        > For Dynamics 365 for Finance and Operations, Enterprise edition, Application update 4, add the following lines:
+        > For Application update 4, add the following lines:
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
@@ -397,7 +393,7 @@ Follow these steps to create and apply deployable packages that contain Retail c
         <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
         ```
 
-        > For Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates add the following lines:
+        > For Application update 5 and later, add the following lines:
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
@@ -425,7 +421,7 @@ Follow these steps to create and apply deployable packages that contain Retail c
 
     2. Add following lines to the **ItemGroup** section to include the CRT extensions in the deployable packages.
 
-        > For Dynamics 365 for Finance and Operations, Enterprise edition, Application update 4, add the following lines:
+        > For Application update 4, add the following lines:
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
@@ -436,7 +432,7 @@ Follow these steps to create and apply deployable packages that contain Retail c
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
         ```
         
-        > For Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates add the following lines:
+        > For Application update 5 and later, add the following lines:
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
@@ -450,7 +446,7 @@ Follow these steps to create and apply deployable packages that contain Retail c
 
     3. Add following lines to the **ItemGroup** section to include the Retail Server extension in the deployable packages.
 
-        > For Dynamics 365 for Finance and Operations, Enterprise edition, Application update 4, add the following lines:
+        > For Application update 4, add the following lines:
         
         ``` xml
         <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
@@ -458,7 +454,7 @@ Follow these steps to create and apply deployable packages that contain Retail c
         <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
         ```
 
-        > For Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates add the following lines:
+        > For Application update 5 and later versions, add the following lines:
 
         ``` xml
         <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
