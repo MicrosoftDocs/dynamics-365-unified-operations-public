@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268584
 ms.assetid: e399ab34-4bfa-4b6d-a956-d425c1395ea3

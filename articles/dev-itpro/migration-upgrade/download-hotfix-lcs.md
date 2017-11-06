@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 56171
 ms.assetid: 61069cf2-6c3f-4ebc-bbee-b21b1c99626a
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Use this tutorial to download updates from Microsoft Dynamics Lifecycle Services (LCS). This tutorial is a part of the [Servicing environments](..\dev-tools\developer-home-page.md#service-environments) content.
+Use this tutorial to download updates from Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Types of updates
 

@@ -3,7 +3,7 @@
 
 title: Configure Electronic reporting to pull data into Power BI
 description: This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance of Finance and Operations to Power BI services. As an example, this topic uses Intrastat transactions as business data that must be transferred. The Power BI map visualization uses this Intrastat transaction data to present a view for analysis of company import/export activities on the Power BI report.
-author: kfend
+author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567

@@ -5,7 +5,7 @@ title: Service endpoints
 description: This topic describes the service endpoints that are available.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This article describes the service endpoints that are available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012. 
+This topic describes the service endpoints that are available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012. 
 
 ## List of services
 The following table lists all the service endpoints.
@@ -93,7 +93,7 @@ We provide an OData REST endpoint. This endpoint exposes all the data entities t
 
 For more information, see the [Office Mix presentation about OData Services](https://mix.office.com/watch/1aym08mqyjghi).
 
-Code examples for consuming Odata services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication).
+Code examples for consuming OData services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication).
 
 ### Supported features from the OData specification
 

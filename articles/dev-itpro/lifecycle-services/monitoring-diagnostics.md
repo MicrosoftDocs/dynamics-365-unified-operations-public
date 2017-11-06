@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267184
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de

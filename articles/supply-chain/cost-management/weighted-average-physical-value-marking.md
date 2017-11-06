@@ -2,10 +2,10 @@
 # required metadata
 
 title: Weighted average with physical value and marking
-description: 
+description: Weighted average is an inventory model based on the weighted average principle, where issues from inventory are valued at the average value of the items that are received into inventory during the inventory closing period, plus any on-hand inventory from the previous period.
 author: AndersGirke
 manager: AnnBe
-ms.date: 10/24/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,7 +19,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
 
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 65501
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[retail name](../includes/retail-name.md)]
 
-
+Weighted average is an inventory model based on the weighted average principle, where issues from inventory are valued at the average value of the items that are received into inventory during the inventory closing period, plus any on-hand inventory from the previous period.
 
 When you run an inventory closing, all receipts are settled against a virtual issue, which holds the total received quantity and value. This virtual issue has a corresponding virtual receipt from which the issues are settled. In this manner, all issues get the same average cost. The virtual issue and receipt can be seen as a virtual transfer, which is named the weighted average inventory closing transfer.
 

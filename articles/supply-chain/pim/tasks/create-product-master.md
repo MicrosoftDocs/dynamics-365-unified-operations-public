@@ -3,7 +3,7 @@
  
 title: Create a product master
 description: Create a product master for the predefined variants. 
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

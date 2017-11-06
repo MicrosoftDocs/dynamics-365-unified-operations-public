@@ -6,7 +6,7 @@ title: Help overview
 description: This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 author: margoc
 manager: AnnBe
-ms.date: 10/23/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,7 +19,7 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Help overview
+# Help system overview
 
 [!include[banner](../includes/banner.md)]
 
@@ -83,9 +83,11 @@ site:docs.microsoft.com dynamics 365 "search term".
 ### The docs.microsoft.com table of contents
 All products share a single table of contents on the docs site, which enables customers to see the context of the topic they are in. It also enables you to use the Filter control to find topics that you are looking for.
 
-### How can I contribute? 
+### Give feedback 
+We really like customer feedback. You can either comment, or suggest changes to our content through GitHub.
 
-Leave us a comment! 
+##### Leave us a comment 
+If you have feedback or questions about a topic, leave us a comment at the bottom of the page. 
 
 1 Click **Comments** to get to the comments at the bottom of the page.
 
@@ -103,6 +105,18 @@ Or
 On the right, enter an email address, and a new password to create a new account for the site. 
 
 ![Sign in options](./media/signin-options.png)
+
+##### Suggest a change or contribute content through GitHub
+To suggest a change, you'll need to have a GitHub account, and sign a Contributor License Agreement.  After you submit a pull request, we'll review your proposed changes. If necessary, we'll discuss them internally, and then get back to you.  
+
+To get started, click the **Edit** (pencil) button on a topic, or go to our repo at https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
+
+For more information, please refer to our contributor's guide: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
+
+
+> [!NOTE]
+> We will only be accepting contributions to our English repositories at this time.  
+> We don't accept Issues reported through GitHub--be sure to use a pull request for content suggestions. Product and feature feedback is best handled through the Dynamics 365 Ideas Portal: https://ideas.dynamics.com/ideas/. 
 
 
 ## Task guides
@@ -203,8 +217,3 @@ See also
 [New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
 [New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
 [New task guides (February 2016)](new-task-guides-available-february-2016.md)
-
-
-
-
-

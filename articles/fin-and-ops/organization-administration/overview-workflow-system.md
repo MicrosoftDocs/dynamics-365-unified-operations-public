@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 56381
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919

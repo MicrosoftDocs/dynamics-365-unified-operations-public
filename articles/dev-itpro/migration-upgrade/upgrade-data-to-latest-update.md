@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 106163
 ms.assetid: 0c78b7a9-a360-4ef8-92ef-e4e9ff70cee7
@@ -70,9 +70,10 @@ This topic describes how to upgrade an older source database to the latest Finan
 
 5. If you are upgrading to the July 2017 release (also known as 7.2) 7.2.11792.56024, apply the following application X++ hotfixes in the destination environment before running the data upgrade in that environment. These will prevent various errors occuring during the data upgrade:
 
-    - KB 4036156 - Retail minor version upgrade - 'Variant number sequence is not set.' This fix package also includes KB 4035399 and KB 4035751. Note that you must have a minimum of Platform Update 9 to use this package. If you are unsure, install the latest binaries.
+    - KB 4036156 - Retail minor version upgrade - 'Variant number sequence is not set.' This hotfix package also includes KB 4035399 and KB 4035751. Note that you must have a minimum of Platform Update 9 to use this package. If you are unsure, install the latest binaries.
+    - KB 4045801 - "Scheduler job has failed" error encountered when upgrading from Fall 2016 update to July 2017 update.
     
-6. If you are upgrading from Microsoft Dynamics AX 2012, install the following application X++ fixes in the destination environment before you run the data upgrade:
+6. If you are upgrading from Microsoft Dynamics AX 2012, install the following application X++ hotfixes in the destination environment before you run the data upgrade:
     - KB 4033183 - Dynamics AX 2012 R2 or Dynamics AX 2012 R3 Pre-CU8 non-retail upgrade fails with Object not found for dbo.RETAILTILLLAYOUTZONE.
     - KB 4040692 - Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Operations 7.2 upgrade fails on RetailSalesLine duplicate index on SalesLineIdx.
     - KB 4035490 - Performance issue with GeneralJournalAccountEntry MainAccount field upgrade script.
@@ -83,12 +84,8 @@ This topic describes how to upgrade an older source database to the latest Finan
     delete from classidtable where id >= 0xf000 and id <= 0xffff
     ```
 
-
-### Additional steps if you're using Retail functionality
-If you're using Retail functionality, you must follow these steps to prepare the database before you run the data upgrade package.
-
-- Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that you have no unsynchronized transactional data in the cloud version of the channel database.
-- Delete the cloud version of the retail channel database in the source environment. This database will be re-created as part of the upgrade. Delete the primary cloud-hosted channel database by running the following script. 
+8. Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that you have no unsynchronized transactional data in the cloud version of the channel database.
+9.  Delete the cloud version of the retail channel database in the source environment. This database will be re-created as part of the upgrade. Delete the primary cloud-hosted channel database by running the following script. 
 
     > [!NOTE]
     > If you have customizations that rely on the retail channel database schema, you might encounter errors in the following steps. If you encounter errors, you must delete your channel database customizations, and then rerun the script.

@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Developer home page
+title: Develop and customize using Visual Studio
 description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
-ms.date: 08/17/2017
-ms.topic: index-page
+ms.date: 10/31/2017
+ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21631
 ms.assetid: 06e26767-6056-4755-b47e-0bda71833581
@@ -30,23 +30,22 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Developer home page
+# Develop and customize using Visual Studio
 
 [!include[banner](../includes/banner.md)]
 
 
 This topic provides links to topics about development.
 
-Overview
---------
+## Overview
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition represents the next-generation enterprise resource planning (ERP) offering from Microsoft. It is designed to enable the entire ERP application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. It leverages the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft. This release introduces significant changes to the development experience. These changes include:
 
--   Development tools that are decoupled from any running environment. You develop against local, XML-based files, not the online database.
--   Microsoft Visual Studio replaces MorphX as the development environment. The Visual Studio environment is customized to provide you with a smooth and familiar experience.
--   The X++ compiler generates Common Intermediate Language (CIL) for all features. CIL is the same intermediate language used by other .NET-based (managed) languages, such as the C\# programming language.
--   New browser-based client and new design patterns for forms that you can leverage to provide an improved end-user experience.
--   The new Application Lifecycle Model (ALM) for build automation, test automation, and deployment of models to the cloud.
+- Development tools that are decoupled from any running environment. You develop against local, XML-based files, not the online database.
+- Microsoft Visual Studio is the development environment. The Visual Studio environment is customized to provide you with a smooth and familiar experience.
+- The X++ compiler generates Common Intermediate Language (CIL) for all features. CIL is the same intermediate language used by other .NET-based (managed) languages, such as the C\# programming language.
+- You can leverage the browser-based client and the design patterns for forms to provide an improved end-user experience.
+- The Application Lifecycle Model (ALM) supports build automation, test automation, and deployment of models to the cloud.
 
 ## Architecture
 -   [Application stack and server architecture](application-stack-server-architecture.md)
@@ -93,6 +92,7 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition represent
 -   [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)
 -   [Resolve conflicts using Visual Studio](https://mix.office.com/watch/1rl75ei2cs6d7)
 -   [Enable a new user account to develop on a development VM](enable-development-machine.md)
+-   [Updating the Visual Studio development tools](update-development-tools.md)
 
 ## X++ programming language
 ### Tutorials
@@ -113,142 +113,69 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition represent
 -   [X++ language reference](..\dev-ref\xpp-language-reference.md)
 
 ## Customize with extensions and overlayering
--   [Extensibility home page](..\extensibility\extensibility-home-page.md)
+- [Extensibility home page](..\extensibility\extensibility-home-page.md)
+- [Customize App Suite reports using extensions](..\analytics\customize-app-suite-reports-with-extensions.md)
 
 ## Code migration
-### Migrate your code
-
-To migrate your code, use the "Migrate and Create Solutions" methodology in Lifecycle Services.
-
-### Key concepts
-
-The following links (also included in the methodology) describe key concepts and steps in the migration process. The links are listed here in the order that we recommend you read them.
-
--   [Overview: Prepare to migrate](..\migration-upgrade\prepare-migration.md)
--   [Migrate from AX 2012 (Office Mix)](https://mix.office.com/watch/4gsvk592c685)
--   [Migrate between versions (Office Mix)](https://mix.office.com/watch/os2wff38zi6f)
--   [Configure and execute the code upgrade service in Lifecycle Services](../lifecycle-services/configure-execute-code-upgrade.md)
--   [Configure your VSTS mapping after a code upgrade](..\migration-upgrade\configure-vso-solution.md)
--   [Resolve conflicts using Visual Studio (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7)
--   [Understanding the model split](model-split.md)
--   [Deprecated features](..\migration-upgrade\deprecated-features.md)
--   [Deprecated API’s](..\migration-upgrade\deprecated-apis.md)
--   [Development tools performance tips](https://mix.office.com/watch/rnp6ng9wu8kx)
-
-### Additional concepts
-
--   [Delegates for migration](..\migration-upgrade\delegates-migration.md)
--   [How to import a SQL Server Analysis Services Project into the AOT](https://technet.microsoft.com/en-us/library/dn754850.aspx)
--   [Database synchronization](database-synchronization.md)
--   [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)
+- [Code migration and upgrade home page](../migration-upgrade/code-migration-home-page.md)
 
 ## Move packages between environments
--   [Create and apply a deployable package](..\deployment\create-apply-deployable-package.md)
-
-## Service environments
--   [Download hotfixes from Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md)
--   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
--   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
--   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
--   [Updating the Visual Studio development tools](update-development-tools.md)
+- [Create and apply a deployable package](..\deployment\create-apply-deployable-package.md)
 
 ## Performance
--   [Take a trace with the Trace Parser and analyze it](..\perf-test\trace-trace-tutorial.md)
--   [Introduction to the PerfSDK and multiuser testing with Visual Studio Online](..\perf-test\perfsdk-tutorial.md)
--   [Using the desktop version of trace parser to diagnose problems and analyze performance issues](..\perf-test\trace-parser.md)
--   [Performance timer](..\perf-test\performance-timer.md)
--   [Expanding data with the Data Expansion tool (Office Mix)](https://mix.office.com/watch/11cet1u4nmn64)
--   [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)
--   [The performance timer and other tools (Office Mix)](https://mix.office.com/watch/ij5cqidra5q3)
--   [Using Task Recorder to create a single user performance test (Office Mix)](https://mix.office.com/watch/qtdlasy2rcf3)
--   [The performance timer and other tools (Office Mix)](https://mix.office.com/watch/ij5cqidra5q3)
--   [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)
+- [Take a trace with the Trace Parser and analyze it](..\perf-test\trace-trace-tutorial.md)
+- [Introduction to the PerfSDK and multiuser testing with Visual Studio Online](..\perf-test\perfsdk-tutorial.md)
+- [Using the desktop version of trace parser to diagnose problems and analyze performance issues](..\perf-test\trace-parser.md)
+- [Performance timer](..\perf-test\performance-timer.md)
+- [Expanding data with the Data Expansion tool (Office Mix)](https://mix.office.com/watch/11cet1u4nmn64)
+- [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)
+- [The performance timer and other tools (Office Mix)](https://mix.office.com/watch/ij5cqidra5q3)
+- [Using Task Recorder to create a single user performance test (Office Mix)](https://mix.office.com/watch/qtdlasy2rcf3)
+- [The performance timer and other tools (Office Mix)](https://mix.office.com/watch/ij5cqidra5q3)
+- [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)
 
 ## User interface concepts
 The client is an HTML web client that runs in all major browsers. For information about developing and customizing the user interface, see the [User interface development home page](..\user-interface\user-interface-development-home-page.md).
 
 ## Analytics
-### Tutorials
-
--   [How to create a Power BI report](..\analytics\create-powerbi-report-data.md)
--   [Create a Power BI report and dashboard](..\analytics\create-powerbi-report-dashboard.md)
--   [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
--   [Customize App Suite reports using extensions](..\analytics\customize-app-suite-reports-with-extensions.md)
-
-### Concepts
-
--   [Analytics](..\analytics\analytics.md)
--   [Power BI integration](..\analytics\power-bi-integration.md)
--   [Configuring Power BI integration for workspaces](..\analytics\configure-power-bi-integration.md)
+- [Analytics](..\analytics\analytics.md)
 
 ## Reporting services
--   [Create next-generation reporting solutions](..\analytics\create-nextgen-reporting-solutions.md)
--   [Document Reporting Services overview](..\analytics\document-reporting-services.md)
--   [Tips to help prevent long-running reports from timing out](..\analytics\prevent-long-running-reports-timing-out.md)
--   [Power BI integration](..\analytics\power-bi-integration.md)
--   [Extending the list of electronic reporting functions](..\analytics\general-electronic-reporting-formulas-list-extension.md)
--   [Introduction to Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/wdl1dquy2tve)
--   [Demo of Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/1hkvtnc8sc7l6)
+- [Electronic reporting overview](..\analytics\general-electronic-reporting.md)
+- [Introduction to Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/wdl1dquy2tve)
+- [Demo of Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/1hkvtnc8sc7l6)
 
 ## Data entities and OData
--   [Data entities home page](..\data-entities\data-entities.md)
--   [OData](..\data-entities\odata.md)
-
-## Workflow
--   [Workflow subsystem](..\migration-upgrade\workflow-subsystem.md)
+- [Data entities home page](..\data-entities\data-entities.md)
+- [OData](..\data-entities\odata.md)
 
 ## Testing support in Visual Studio
--   [Testing and validation](..\perf-test\testing-validation.md)
--   [Support for testing in Visual Studio](..\perf-test\testing-support.md)
--   [Developer topology deployment with continuous build and test automation](..\perf-test\continuous-build-test-automation.md)
--   [Task Recorder](..\user-interface\task-recorder.md)
+- [Testing and validation](..\perf-test\testing-validation.md)
+- [Support for testing in Visual Studio](..\perf-test\testing-support.md)
+- [Developer topology deployment with continuous build and test automation](..\perf-test\continuous-build-test-automation.md)
+- [Task Recorder](..\user-interface\task-recorder.md)
 
 ## Office integration
--   [Office integration](..\office-integration\office-integration.md)
+- [Office integration](..\office-integration\office-integration.md)
 
-## Build workspaces
-### Tutorials
-
--   [Modeling and using aggregate data](..\analytics\model-aggregate-data.md)
--   [Adding KPI’s to workspaces](..\analytics\add-bi-workspaces.md)
--   [Building navigation](..\user-interface\build-navigation.md)
-
-### Concepts
-
--   [In-memory, real-time aggregate models replace SSAS cubes](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [Building operational workspaces](..\user-interface\build-workspaces.md)
--   [Tile and lit-caching for workspaces](..\user-interface\tile-list-caching-workspaces.md)
--   [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)
+## Intelligence
+- [Intelligence](..\analytics\bi-reporting-home-page.md)
+- [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)
 
 ## Mobile platform
--   [Mobile platform home page](../mobile-apps/platform/mobile-platform-home-page.md)
+- [Mobile platform home page](../mobile-apps/platform/mobile-platform-home-page.md)
 
 ## Global finance management
--   [Dimension entry control dialog support](..\financial\dimension-entry-control-dialog-support.md)
--   [Dimension entry control migration](..\financial\dimension-entry-control-migration.md)
--   [Dimension entry control uptake](..\financial\dimension-entry-control-uptake.md)
--   [Add dimensions to the Microsoft Excel template](..\financial\dimensions-overview.md)
--   [Create Open in Office experiences for Excel and Word](..\office-integration\office-integration-edit-excel.md)
--   [Add templates to open lines in Excel menu](..\user-interface\add-templates-open-lines-excel-menu.md)
--   [Segmented entry control dialog support](..\financial\segmented-entry-control-dialog-support.md)
--   [Segmented entry control metadata specification](..\financial\segmented-entry-control-metadata-specification.md)
--   [Segmented entry control - migration guidance](..\financial\segmented-entry-control-migration-guidance.md)
--   [Segmented Entry control migration walkthrough](..\financial\segmented-entry-control-conversion.md)
--   [Segmented entry control parm Specification](..\financial\segmented-entry-control-parm-method-specification.md)
--   [Creating exchange rate providers](..\financial\create-exchange-rate-providers.md)
--   [Financial dimension configuration for integrating applications](..\financial\financial-dimension-configuration-integration.md)
--   [Activating financial dimensions](..\financial\activate-financial-dimensions.md)
--   [Add the ability to look up values for financial dimensions in Microsoft Excel templates](..\financial\add-dimensions-excel-templates.md)
+- [Financials development home page](../financial/financial-dev-home-page.md)
 
 ## Licensing
--   [ISV licensing](isv-licensing.md)
+- [ISV licensing](isv-licensing.md)
 
 ## Supply chain management
--   [Gantt development guide](..\user-interface\gantt-development-guide.md)
-
+- [Gantt development guide](../user-interface/gantt-development-guide.md)
+- [Create a new transportation management engine](../../supply-chain/transportation/create-new-transportation-management-engine.md)
 
 # See also
-
 [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
 
 

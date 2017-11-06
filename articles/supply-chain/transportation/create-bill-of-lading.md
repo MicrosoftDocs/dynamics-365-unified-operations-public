@@ -18,7 +18,7 @@ ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 193583
 ms.assetid: 1ad0c1cb-4346-4042-a59b-923115fac03e

@@ -5,7 +5,7 @@ title: Mandats de paiement in the public sector in France
 description: The mandat de paiement is used by the director to notify the accountant that the organization is obligated to pay a specific amount to another entity, and to authorize the accountant to pay that amount. The mandat maintains the strict separation that is required between the operational role of the director and the accounting role of the accountant.
 author: rschloma
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27231
 ms.search.region: France
@@ -49,7 +49,7 @@ From the **Maintain mandats de paiement** page, the director can complete the fo
 To submit mandats to the accountant for payment, the director collects the printed mandats and their related documentation under a bordereau de mandat.
 
 -   Print the mandats assigned to a bordereau from the **Records to include** FastTab on the **Mandat de paiement report** page.
--   Print the bordereau from the the **Records to include** FastTab on the **Bordereau de mandat report** page.
+-   Print the bordereau from the **Records to include** FastTab on the **Bordereau de mandat report** page.
 
 ## Accountant’s tasks
 From the **Maintain mandats de paiement** page or from the **Mandat de paiement** tab on the pending vendor invoices or open vendor invoices page, the accountant can accept, reject, or hold mandats. When a mandat is rejected, the director status changes to **Not reviewed**, and the mandat and bordereau de mandat numbers are cleared.

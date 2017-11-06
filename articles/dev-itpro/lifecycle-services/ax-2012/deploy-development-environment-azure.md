@@ -2,10 +2,10 @@
 # required metadata
 
 title: Deploy a development environment on Azure (AX 2012)
-description: 
+description: This topic provides information about how to deploy a development environment on Microsoft Azure. 
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17591
 ms.assetid: eaef3391-e5fe-43f9-98d9-db9fb6951363

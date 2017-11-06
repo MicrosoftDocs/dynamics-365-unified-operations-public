@@ -18,7 +18,7 @@ ms.search.form: InventStdCostConv
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50891
 ms.assetid: 73af66cf-c924-45be-837a-a648dbd05a31

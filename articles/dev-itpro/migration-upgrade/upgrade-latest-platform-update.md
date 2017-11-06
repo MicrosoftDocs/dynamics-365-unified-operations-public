@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 253274
 ms.assetid: a70a4f28-9269-4b35-bc29-1edba0b92d83

@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Register and post a postdated check for a customer
-description: You can register details of a postdated cheque received from a customer. 
+description: You can register details of a postdated check received from a customer. 
 author: kweekley
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 10/26/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-You can register details of a postdated cheque received from a customer. You can also post the postdated cheque and generate financial transactions.   Complete the following tasks before you register and post a postdated cheque received from a customer:   • Set up postdated Cheques in the Cash and bank management page • Set up a method of payment for postdated Cheques   The role for this procedure is Treasurer. This procedure uses the USMF demo company.
+You can register details of a postdated check received from a customer. You can also post the postdated check and generate financial transactions.   Complete the following tasks before you register and post a postdated check received from a customer:   • Set up postdated check in the Cash and bank management page • Set up a method of payment for postdated checks   The role for this procedure is Treasurer. This procedure uses the USMF demo company.
 
 1. Go to Accounts receivable > Payments > Payment journal.
 2. Click New.
@@ -39,16 +39,16 @@ You can register details of a postdated cheque received from a customer. You can
 5. In the list, mark the selected row.
 6. In the Account field, specify the desired values.
 7. In the Credit field, enter a number.
-    * Enter the amount specified in the postdated cheque.  
+    * Enter the amount specified in the postdated check.  
 8. Click the Payment tab.
 9. In the Method of payment field, type a value.
-    * Select the method of payment for the postdated cheque  
+    * Select the method of payment for the postdated check.  
 10. Click the Postdated checks tab.
 11. In the Maturity date field, enter a date.
-    * Enter the date when the postdated cheque is due for payment.  
+    * Enter the date when the postdated check is due for payment.  
 12. In the Issuing bank branch field, type a value.
-    * Enter the bank details of the postdated cheque.  
-13. In the cheque number field, type a value.
+    * Enter the bank details of the postdated check.  
+13. In the check number field, type a value.
 14. In the Issuing bank name field, type a value.
     * Enter the bank details of the postdated check.  
 15. Click Post.

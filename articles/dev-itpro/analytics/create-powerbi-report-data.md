@@ -5,7 +5,7 @@ title: Create a Power BI report by using Finance and Operations data
 description: This tutorial outlines the process for creating an end user–friendly data model, reports, and dashboards in the version of Power BI that is currently available from http - //app.powerbi.com.
 author: MilindaV2
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24531
 ms.assetid: f944f045-8dd1-4b38-be17-7ce958124eeb
@@ -97,7 +97,7 @@ Microsoft Excel 2013 is required, together with PowerQuery (a post–February 20
 
     [![PowerBI8](./media/powerbi8.png)](./media/powerbi8.png) 
     
-    PowerQuery will load the data into the Excel data model. Depending on the size of the data set, this step mtake some time. 
+    PowerQuery will load the data into the Excel data model. Depending on the size of the data set, this step may take some time. 
     
         [![PowerBI9](./media/powerbi9.png)](./media/powerbi9.png)
 
@@ -193,7 +193,7 @@ In this section you will create a basic report by using PowerView.
 
     3.  You will notice that the fields on the chart aren't presented the way that you expected. To fix this, drag the fields to the correct axis and legend areas.
         1.  Drag **PeriodName** to the **AXIS** area underneath **Quarter**.
-        2.  Drag **Main Account Category** to the **Legend** area. **Note:** As you add fields from the three entities, you wil notice that all three are presented in a single visualization. This is possible because of the relationships that you set up in the PowerPivot data model earlier in this tutorial. 
+        2.  Drag **Main Account Category** to the **Legend** area. **Note:** As you add fields from the three entities, you will notice that all three are presented in a single visualization. This is possible because of the relationships that you set up in the PowerPivot data model earlier in this tutorial. 
             
             [![PowerBI15](./media/powerbi15.png)](./media/powerbi15.png)
 

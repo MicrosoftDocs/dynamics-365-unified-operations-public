@@ -3,9 +3,9 @@
 
 title: Financial report components
 description: This article describes how the components, or building blocks, of report definitions are used in financial reporting. These building blocks include row definitions, column definitions, and reporting tree definitions. The article explains how to organize and lock building blocks, and how to work with building block groups. 
-author: ShylaThompson
+author: aolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
@@ -35,13 +35,13 @@ ms.dyn365.ops.version: AX 7.0.1
 [!include[banner](../includes/banner.md)]
 
 
-This article describes how the components, or building blocks, of report definitions are used in financial reporting. These building blocks include row definitions, column definitions, and reporting tree definitions. The article explains how to organize and lock building blocks, and how to work with building block groups. 
+This article describes how the components, or building blocks, of report definitions are used in financial reporting. These building blocks include row definitions, column definitions, and reporting tree definitions. The article explains how to organize and lock building blocks. 
 
-The design philosophy behind financial report designer is to break information down into the smallest component or building block, and then mix and match the components as required. Therefore, your report formatting is separate from your financial data, and you can change the design of a report without modifying the financial data in your Microsoft Dynamics ERP system. By using this building block approach, you can combine text, amounts, and calculations to produce the reports that you require. Additionally, this flexibility encourages creativity by making it easy for you to view your operations in different ways. The individual building blocks of a report definition are similar to a three-dimensional spreadsheet, but they have more power. A report definition specifies the row definition, column definition, and optional reporting tree definition that should be used for the report. It also includes information about where to store the report that is generated and how to format it. For better reusability and sharing, you can create a building block group, which is a collection of existing report definitions, row definitions, column definitions, reporting tree definitions, and dimension sets that are associated with a company in.
+The design philosophy behind financial report designer is to break information down into the smallest component or building block, and then mix and match the components as required. Therefore, your report formatting is separate from your financial data, and you can change the design of a report without modifying the financial data in your Microsoft Dynamics ERP system. By using this building block approach, you can combine text, amounts, and calculations to produce the reports that you require. Additionally, this flexibility encourages creativity by making it easy for you to view your operations in different ways. The individual building blocks of a report definition are similar to a three-dimensional spreadsheet, but they have more power. A report definition specifies the row definition, column definition, and optional reporting tree definition that should be used for the report. It also includes information about where to store the report that is generated and how to format it. 
 
 ## Building blocks of a report
-| Building block            | Description                                                                                                                                                                                                                                                                              | For more information                                                                                                 |
-|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| Building block            | Description                     | For more information                                    |
+|---------------------------|---------------------------------|---------------------------------------------------------|
 | Row definition            | A row definition defines the descriptive lines (for example, salaries or sales) on a report. It also lists the segment values or dimensions that contain the values for each line item, and includes row formatting and calculations.                                                    | [Row definitions](row-definitions-financial-reporting.md)                       |
 | Column definition         | A column definition defines the period to use when data is extracted from the financial dimensions. It also includes column formatting and calculations.                                                                                                                                 | [Column definitions](column-definitions-financial-reports.md)         |
 | Reporting tree definition | A reporting tree definition resembles an organizational chart. It contains individual reporting units that represent each box in the chart. The units can be either individual departments from the financial data or higher-level units that summarize data from other reporting units. | [Reporting tree definitions](financial-reporting-tree-definitions.md) |
@@ -71,44 +71,20 @@ To unlock a locked building block, open the building block, and then click **Pro
 
 ## Building block groups
 
-Building blocks are the row definitions, column definitions, reporting tree definitions, and report definitions that you create for a report. Building block groups are collections of the definitions and dimension sets that are associated with a company. Building block groups can be company-specific, or several companies can share the same set of building blocks. If some of your companies have a different chart of accounts, you might want to use a different building block group for each company. Alternatively, you might want to name all your individual building blocks to reflect the company that they are compatible with.
-### Create a building block group
+Building blocks are the row definitions, column definitions, reporting tree definitions, and report definitions that you create for a report. Building block groups are collections of the definitions and dimension sets. 
 
-1.  In Report Designer, on the **Company** menu, click **Building block groups**.
-2.  In the **Building block groups** dialog box, click **New**.
-3.  Enter a unique name and description for the building block group. Each field can contain a maximum of 256 characters. (This number includes spaces.)
-4.  Click **OK** to create the new building block group.
-
-### Assign a building block group
-
-After you a create block group, you must assign it to at least one company. You can then create report, row, column, and reporting tree definitions, and save them in the building block group. You must close all building blocks before you start the following procedure.
-1.  In Report Designer, on the **Company** menu, click **Companies**.
-2.  In the **Companies** dialog box, select the company to assign a building block group to.
-3.  Click **Modify**.
-4.  In the **Modify Company** dialog box, in the **Building block group** field, select the building block group to assign to the company, or click **New** to create a new building block group.
-5.  Click **OK** to assign the building block group.
-6.  Click **Close** to close the **Companies** dialog box. The building block group that you selected is now assigned to the company. Now, all new row definitions, column definitions, and so on, that are created will be part of the building block group that is assigned to this company. You can also import a .tdbx file or report from another system.
 
 ### View a building block group
 
-After a building block group has been created and is being used, you can view all the building blocks that are assigned to it. You can also export or import a building block group, and perform additional maintenance on building block groups.
+You can view all the building blocks that are assigned to a building block group. You can also export or import a building block group.
 1.  In Report Designer, on the **Company** menu, click **Building Block Groups**.
 2.  In the **Building Block Groups** dialog box, select the building block to view.
 3.  Click **View** to open the **View Building Block Group** dialog box, where you can view the contents of the building block group.
 4.  Click **Close** to close the dialog boxes.
 
-### Save a building block group under a new name
-
-You can save an existing building block group under a new name. You can then modify the new building block group without changing the original building block group.
-1.  In Report Designer, on the **Company** menu, click **Building Block Groups**.
-2.  In the **Building Block Groups** dialog box, select the building block group to save under a new name.
-3.  Click **Save As**.
-4.  Enter a new name and description for the building block group.
-5.  Click **OK**. The new building block group appears in the **Building Block Groups** dialog box.
-
 ### Export a building block group
 
-You can export a building block group or specific report building blocks in a building block group. You can use the exported building block group as a backup. You can also copy the exported data between building block groups or Finance and Operations installations. Report designer includes the referenced font styles and dimension sets together with the building block group.
+You can export a building block group or specific report building blocks in a building block group. You can use the exported building block group as a backup. You can also copy the exported data between Finance and Operations installations. Report designer includes the referenced font styles and dimension sets together with the building block group.
 1.  In Report Designer, on the **Company** menu, click **Building Block Groups**.
 2.  In the **Building Block Groups** dialog box, select the building block group to export, and then click **Export**.
 3.  In the **Export** dialog box, select the report definitions to export:
@@ -122,7 +98,7 @@ You can export a building block group or specific report building blocks in a bu
 
 ### Import a building block group
 
-You can import a building block group into an existing building block group, or you can create a new building block group for the data. All imported building block groups retain their original font styles and company references, and include the relevant dimension sets.
+You can import a building block group into an existing building block group. All imported building block groups retain their original font styles and company references, and include the relevant dimension sets.
 1.  In Report Designer, on the **Company** menu, click **Building Block Groups**.
 2.  In the **Building Block Groups** dialog box, select the building block to import a building block group into, and then click **Import**.
 3.  In the **Open** dialog box, select the building block group to import, and then click **Open**.

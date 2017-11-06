@@ -2,10 +2,10 @@
 # required metadata
 
 title: System diagnostics 
-description: 
+description: This topic provides information about System diagnostics in Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 19061
 ms.assetid: 9a217373-f72b-4a28-adef-79900e40c872

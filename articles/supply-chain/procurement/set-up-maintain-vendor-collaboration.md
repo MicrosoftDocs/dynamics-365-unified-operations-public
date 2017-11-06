@@ -18,7 +18,7 @@ ms.search.form: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220774
 ms.assetid: 69d05e8b-7dc2-48ea-bc24-bea9ac963579

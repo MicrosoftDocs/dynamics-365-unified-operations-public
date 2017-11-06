@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.2.0, Operations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
 ms.assetid: 

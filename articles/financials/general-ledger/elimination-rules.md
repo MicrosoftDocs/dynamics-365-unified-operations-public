@@ -18,7 +18,7 @@ ms.search.form: LedgerEliminationRule
 audience: Application User
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8

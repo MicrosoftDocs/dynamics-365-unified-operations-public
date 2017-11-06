@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations, Core, UnifiedOperations
+ms.search.scope: Retail, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 252934
 ms.assetid: 4b9f733b-bf28-4b85-94de-4f7adf67a62c

@@ -18,7 +18,7 @@ ms.search.form: CAMCostControlWorkspace, CAMParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope:  AX 7.0.0, Operations, Core
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

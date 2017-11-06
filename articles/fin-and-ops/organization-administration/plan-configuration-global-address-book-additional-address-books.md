@@ -2,10 +2,10 @@
 # required metadata
 
 title: Plan how to configure the global address book and additional address books
-description: This article describes the considerations and decisions that you must make during the planning process, before you set up and configure the global address book and any additional address books in Microsoft Dynamics 365 for Finance and Operations. Some of the decisions will require that you confirm the decisions that have been made for other areas of the product, such as the organization hierarchy.
+description: This topic describes the considerations and decisions that you must make during the planning process, before you set up and configure the global address book and any additional address books in Microsoft Dynamics 365 for Finance and Operations. Some of the decisions will require that you confirm the decisions that have been made for other areas of the product, such as the organization hierarchy.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: DirAddressBook, DirAddressBookTeam, DirParameters, DirPartyTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23341
 ms.assetid: a41cd8de-9ee0-4275-aea5-131db5326e5b
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes the considerations and decisions that you must make during the planning process, before you set up and configure the global address book and any additional address books in Microsoft Dynamics 365 for Finance and Operations. Some of the decisions will require that you confirm the decisions that have been made for other areas of the product, such as the organization hierarchy.
+This topic describes the considerations and decisions that you must make during the planning process, before you set up and configure the global address book and any additional address books in Microsoft Dynamics 365 for Finance and Operations. Some of the decisions will require that you confirm the decisions that have been made for other areas of the product, such as the organization hierarchy.
 
 Global address book
 -------------------
@@ -53,7 +53,7 @@ Before you begin to work with the global address book, you must determine the de
 -   Which user roles should have access to the private addresses and contact information of party records?
 
 ## Additional address books
-After you create the global address book, you can create additional address books as you require, such as a separate address book for each company in your organization or for each line of business. For example, Fabrikam is an international organization that has multiple companies and multiple lines of business. Fabrikam plans to create an address book for each line of business. For lines of business that occur in more than one location, such as the pneumatic tools business, Fabrikam plans to create an address book for each location. Chris, the IT manager at Fabrikam, has created the following list of address books that are required. This list also also describes the party records that each address book must include.
+After you create the global address book, you can create additional address books as you require, such as a separate address book for each company in your organization or for each line of business. For example, Fabrikam is an international organization that has multiple companies and multiple lines of business. Fabrikam plans to create an address book for each line of business. For lines of business that occur in more than one location, such as the pneumatic tools business, Fabrikam plans to create an address book for each location. Chris, the IT manager at Fabrikam, has created the following list of address books that are required. This list also describes the party records that each address book must include.
 
 -   **Public Sector Contracts (PubSC)** – Party records for all parties that are involved in the public sector contracts that Fabrikam holds.
 -   **Private Sector Contracts (PriSC)** – Party records for all parties that are involved in the private sector contracts that Fabrikam holds.
