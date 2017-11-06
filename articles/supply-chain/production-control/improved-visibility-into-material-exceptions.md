@@ -59,7 +59,7 @@ than the workspace date so the day where consumption of the raw material was
 supposed to start has been exceeded and thus the BOM and formula lines meet the
 criteria for needing attention.
 
-![Improved visibility](./media/improved-visibility.png)]
+![Improved visibility](./media/improved-visibility.png)
 
 **Tile - Unreleased material lines needing attention**
 
