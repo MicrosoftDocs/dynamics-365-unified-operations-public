@@ -55,15 +55,15 @@ However, the BYOD feature is recommended for the following scenarios:
 
 As a customer of Finance and Operations, you can use either Entity store or BYOD. The ready-made operational reports that are available take advantage of embedded Power BI and Entity store. You should use ready-made operational reports as your first choice. You can also extend the ready-made operational reports to meet your requirements. You should consider BYOD a complementary option that you use as you require.
 
-## Creating an SQL database
+## Creating a SQL database
 
-Before you can configure the entity export option and use the BYOD feature, you must create an SQL database by using Azure portal.
+Before you can configure the entity export option and use the BYOD feature, you must create a SQL database by using Azure portal.
 
-For one-box development environments, you can create a database in the local Microsoft SQL Server database. However, this database should be used only for development and testing purposes. For production environments, you must create an SQL database.
+For one-box development environments, you can create a database in the local Microsoft SQL Server database. However, this database should be used only for development and testing purposes. For production environments, you must create a SQL database.
 
-You should also create an SQL user account for sign-in to the database. Write down the server name, database name, and the SQL user ID and password. You will use this information when you configure the entity export option in the next section.
+You should also create a SQL user account for sign-in to the database. Write down the server name, database name, and the SQL user ID and password. You will use this information when you configure the entity export option in the next section.
 
-If you're using the BYOD feature for integration with a business intelligence (BI) tool, you should consider creating an SQL premium database. Premium databases support clustered columnstore indexes (CCIs). CCIs are in-memory indexes that improve the performance of read queries that are typical in analytical and reporting workloads. If you're using the BYOD feature to export data into a staging database or for general integration purposes, you can use a standard database.
+If you're using the BYOD feature for integration with a business intelligence (BI) tool, you should consider creating a SQL premium database. Premium databases support clustered columnstore indexes (CCIs). CCIs are in-memory indexes that improve the performance of read queries that are typical in analytical and reporting workloads. If you're using the BYOD feature to export data into a staging database or for general integration purposes, you can use a standard database.
 
 ## Configuring the entity export option
 
@@ -79,8 +79,8 @@ If you're using the BYOD feature for integration with a business intelligence (B
 
 4. Select **Validate**, and make sure that the connection is successful.
 
-    - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining CCIs for entities that are copied from Finance and Operations. However, CCIs are currently supported only on SQL premium databases. Therefore, to enable this option, you must create an SQL premium database.
-    - The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option lets you hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger is supported per bulk insert operation. The size of the bulk insert is determined by the **Maximum insert commit** size parameter in the Data management framework.
+    - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining CCIs for entities that are copied from Finance and Operations. However, CCIs are currently supported only on SQL premium databases. Therefore, to enable this option, you must create a SQL premium database.
+    - The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option lets you hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger is supported per bulk insert operation. The size of the bulk insert is determined by the **Maximum insert commit size** parameter in the Data management framework.
 
     When the validation is passed, the database that you configured for entity export appears in lists of databases, as shown in the following illustration.
 
@@ -138,7 +138,7 @@ When you confirm the publish operation, the system publishes the schema to the d
 By selecting the **Show published only** option on the **Publish** page, you can show only the entities that were published to a given destination database. The Publish function creates the entity schema in the database. You can navigate to the database and see the table schemas that were created, together with corresponding indexes.
 
 > [!NOTE]
-> Currently, you can't export composite entities into BYOD. You must export each entity in the composite entity.
+> Currently, you can't use BYOD to export composite entities into a database. You must export each entity in the composite entity.
 
 ## Exporting data into your database
 
