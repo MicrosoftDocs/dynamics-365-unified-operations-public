@@ -34,6 +34,9 @@ This sample is part of the Retail software development kit (SDK). For informatio
 
 This sample consists of extensions for the Commerce runtime (CRT), Retail Server, and POS. To run this sample, you must modify and build the CRT, Retail Server, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
+> [!NOTE] 
+> Some steps in the procedures within this topic differ if you have Microsoft Dynamics 365 for Finance and Operations, Enterprise edition Application update 4 instead of a later version.
+
 ## Development environment
 
 Follow these steps to set up a development environment, so that you can test and extend the sample.
@@ -207,10 +210,10 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 6. Register the dependencies of the Retail Server extensions 
  > [!NOTE]
- > This step is different for Application update 4 and Application update 5.
+ > This step is different for Application update 4 than later versions. 
 
 ##### Application update 4 only
-This section applies to Dynamics 365 for Finance and Operations, Enterprise edition, Application update 4 only.
+This section applies to Dynamics 365 for Finance and Operations, Enterprise edition, Application update 4 only. Complete the steps below to register the dependencies of the Retail Server extensions.
    
    1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
         - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
@@ -228,7 +231,7 @@ This section applies to Dynamics 365 for Finance and Operations, Enterprise edit
         > This step resembles the step for including the SalesTransactionSignature CRT extension component, but it uses a different destination folder: bin  instead of bin\\ext. You must use the bin folder to help guarantee that the Retail Server extension is successfully loaded.
         
 ##### Application update 5 and further updates 
-This section applies to Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates.
+This section applies to Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates. Complete the steps below to register the dependencies of the Retail Server extensions.
 
    1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the following files:
         - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** assembly file
@@ -253,7 +256,7 @@ This part is equivalent to the Retail Server controller, but it extends the loca
 1. Change the **@(RetailServerLibraryPathForProxyGeneration)** section of the **customization.settings** file to use the new Retail Server assembly for proxy generation.
 2. Implement the following interface methods in the **StoreOperationsManager** class. For the first iteration, add the following code.
 
-    > In Dynamics 365 for Finance and Operations, Enterprise edition, Application update 4, add the following code:
+    > Application update 4, add the following code:
 
     ``` csharp
     public Task<bool> SalesTransactionSignatureServiceIsReady()
@@ -266,7 +269,7 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     }
     ```
 
-    > In Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates add the following code:
+    > Application update 5 and later versions, add the following code:
 
     ``` csharp
     public Task<bool> SalesTransactionSignatureServiceIsReady(string correlationId)
@@ -279,14 +282,18 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     }
     ```
 3. To regenerate the proxy code, build the **Proxies** folder from the command line (**msbuild /t:Rebuild**). 
+    > [!NOTE]
+    > This step is different for Application update 4 and Application update 5.
 
-4. In Dynamics 365 for Finance and Operations, Enterprise edition, Application update 4, open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**, add the **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\CommerceRuntime.Extensions.SalesTransactionSignatureSample** project to the solution, and add a project reference to the **RetailProxy** project to reference **SalesTransactionSignatureSample**.
+   -  Application update 4: 
+        Open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**, add the           **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\CommerceRuntime.Extensions.SalesTransactionSignatureSample** project to the solution, and add a project reference to the **RetailProxy** project to reference **SalesTransactionSignatureSample**.
 
-5. In Dynamics 365 for Finance and Operations, Enterprise edition, Application update 5, and further updates open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**, add the **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\CommerceRuntime.Extensions.SalesTransactionSignatureSample.Messages** project to the solution, and add a project reference to the **RetailProxy** project to reference **SalesTransactionSignatureSample.Messages**.
+   - Application update 5 and later: 
+   Open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**, add the **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\CommerceRuntime.Extensions.SalesTransactionSignatureSample.Messages** project to the solution, and add a project reference to the **RetailProxy** project to reference **SalesTransactionSignatureSample.Messages**.
 
 6. Adjust the interface methods in the **StoreOperationsManager** class.
 
-    > In Dynamics 365 for Finance and Operations, Enterprise edition, Application update 4, adjust the following code:
+    > Application update 4, adjust the following code:
 
     ``` csharp
     public Task<bool> SalesTransactionSignatureServiceIsReady()
