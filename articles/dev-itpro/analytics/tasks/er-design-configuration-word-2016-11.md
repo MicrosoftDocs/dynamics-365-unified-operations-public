@@ -34,9 +34,9 @@ The following steps explain how a user in either the System administrator or Ele
 
 To complete these steps, you must first complete the steps in the “Create an ER configuration for generating reports in OPENXML format” task guide. In advance, you must also download and save the following templates locally for the sample report:
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReport.docx
+[Template of Payment Report](https://go.microsoft.com/fwlink/?linkid=862266)
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReportBounded.docx
+[Bounded Template of Payment Report](https://go.microsoft.com/fwlink/?linkid=862266)
 
 This procedure is for a feature that was added in Microsoft Dynamics 365 for Operations version 1611.
 
@@ -53,7 +53,7 @@ This procedure is for a feature that was added in Microsoft Dynamics 365 for Ope
 ## Replace the Excel template with the Word template
     * Currently, the Excel document is used as a template to generate the output in OPENXML format. We will import the report’s template in Word format.  
 1. Click Attachments.
-    * Replace the existing Excel template with the Word template that you downloaded earlier, SampleVendPaymDocReport.docx. Note, this template only contains the layout of the document we want to generate as ER output.  
+    * Replace the existing Excel template with the Word template that you downloaded earlier, Template of Payment Report. Note, this template only contains the layout of the document we want to generate as ER output.  
 2. Click Delete.
 3. Click Yes.
 4. Click New.
