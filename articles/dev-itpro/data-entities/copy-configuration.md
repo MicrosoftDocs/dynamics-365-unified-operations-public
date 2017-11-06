@@ -114,20 +114,20 @@ The following entities might have to be unmapped or filtered.
 
 | Area | Entity | Action |
 |------|--------|--------|
-| System setup | Operating unit | Unmap Manager personnel number unless workers have been imported. |
-| | User information | Apply a filter where **ID** isn't equal to **Admin**. Unmap Person name, and use the User to person relationship entity to map system users to directory users. |
-| Accounts payable | Vendors | Unmap Purchase site (DefaultPurchaseSite) and Warehouse (DefaultProcurementWarehouseID) unless they are set up. Unmap the vendor bank account ID. The Vendor bank account entity will set up the link to the bank account when it's imported. |
-| Accounts receivable | Customer details | Unmap Employee responsible number unless workers have been imported. Unmap Collections contact person (CollectionsContactPersonID) unless workers and their contact information have been imported. Unmap the site (SiteID) and warehouse (WarehouseID) unless they have already been imported. |
-| Inventory management | Warehouse current postal address | Unmap Picking store area and Input store area unless Retail information has been imported. |
-| Product information management | Products | Unmap NMFCCode and STCCCode. Currently, no entities are available for those codes. The STTCCode entity was added in Finance and Operations 7.2.3. |
-| | Released products | Unmap the project category, default product color, default configuration, default product size, and default product style. The Released products entity is self-referencing and hasn't yet been updated to load these fields in a single pass. |
-| | Period template | The Period template entity is a shared entity. Although it can be filtered by legal entity, the Period template lines entity doesn't have a **Legal entity** field. To import a single legal entity, you can filter the period template. However, you must currently remove the period template lines that aren't related to that legal entity. |
-| | Item coverage group | Unmap Period template ID unless it has already been added manually. |
-| Procurement | Vendors | Unmap Purchase site (DefaultPurchaseSite) and Warehouse (DefaultProcurementWarehouseID) unless they are set up. Unmap the 1099 box ID (Tax1099BoxID) and 1099 type (Tax1099Type) unless you've opened the 1099 form. Unmap the vendor bank account ID. The Vendor bank account entity will set up the link to the bank account when it's imported. |
-| Sales and marketing | Leads | Unmap LeadOpeningPersonnelNumber, LeadClosingPersonnelNumber, and LeadResponsiblePersonnelNumber unless workers have been imported. |
-| Project management | Projects | Unmap WorkerArchitectPersonnelNumber, WorkerRespFinancialPersonnelNumber, WorkerResponsiblePersonnelNumber, and WorkerRespSalesPersonnelNumber unless workers have been imported. |
-| Retail | POS visual profiles | Unmap Pallet, because no entity is currently available. The POS visual profiles entity was added to the Retail template in Finance and Operations 7.2.3. |
-| | Retail channel | Unmap Channel profile name (ChannelProfileName) and Live database connection profile name (LiveDatabaseConnectionProfileName), because no entity is currently available. The Retail channel entity was added to the Retail template in Finance and Operations 7.2.3. |
+| System setup | Operating unit | Unmap the **Manager personnel number** field unless workers have been imported. |
+| | User information | Apply a filter where **ID** isn't equal to **Admin**. Unmap the **Person name** field, and use the **User** field in the **Person relationship** entity to map system users to directory users. |
+| Accounts payable | Vendors | Unmap the **Purchase site (DefaultPurchaseSite)** and **Warehouse (DefaultProcurementWarehouseID)** fields unless they are set up. Unmap the **Vendor bank account ID** field. The Vendor bank account entity will set up the link to the bank account when it's imported. |
+| Accounts receivable | Customer details | Unmap the **Employee responsible number** field unless workers have been imported. Unmap the **Collections contact person (CollectionsContactPersonID)** field unless workers and their contact information have been imported. Unmap the **Site (SiteID)** and **Warehouse (WarehouseID)** fields unless they have already been imported. |
+| Inventory management | Warehouse current postal address | Unmap the **Picking store area** and **Input store area** fields unless retail information has been imported. |
+| Product information management | Products | Unmap the **NMFCCode** and **STCCCode** fields. Currently, no entities are available for those codes. The STTCCode entity was added in Finance and Operations 7.2.3. |
+| | Released products | Unmap the **Project category**, **Default product color**, **Default configuration**, **Default product size**, and **Default product style** fields. The **Released products** entity is self-referencing and hasn't yet been updated to load these fields in a single pass. |
+| | Period template | The Period template entity is a shared entity. Although it can be filtered by legal entity, the Period template lines entity doesn't have a **Legal entity** field. To import a single legal entity, you can filter the period template. You must remove the period template lines that aren't related to the legal entity that you have imported. |
+| | Item coverage group | Unmap the **Period template ID** field unless it has already been added manually. |
+| Procurement | Vendors | Unmap the **Purchase site (DefaultPurchaseSite)** and **Warehouse (DefaultProcurementWarehouseID)** fields unless they are set up. Unmap the **1099 box ID (Tax1099BoxID)** and **1099 type (Tax1099Type)** fields unless you've opened the 1099 form. Unmap the **Vendor bank account ID** field. The Vendor bank account entity will set up the link to the bank account when it's imported. |
+| Sales and marketing | Leads | Unmap the **LeadOpeningPersonnelNumber**, **LeadClosingPersonnelNumber**, and **LeadResponsiblePersonnelNumber** fields unless workers have been imported. |
+| Project management | Projects | Unmap the **WorkerArchitectPersonnelNumber**, **WorkerRespFinancialPersonnelNumber**, **WorkerResponsiblePersonnelNumber**, and **WorkerRespSalesPersonnelNumber** fields unless workers have been imported. |
+| Retail | POS visual profiles | Unmap the **Pallet** field, because no entity is currently available. The POS visual profiles entity was added to the Retail template in Finance and Operations 7.2.3. |
+| | Retail channel | Unmap the **Channel profile name (ChannelProfileName)** and **Live database connection profile name (LiveDatabaseConnectionProfileName)** fields, because no entity is currently available. The Retail channel entity was added to the Retail template in Finance and Operations 7.2.3. |
 
 ### Golden builds that have multiple legal entities
 
@@ -242,13 +242,13 @@ To copy a configuration from one legal entity to another legal entity in the sam
 5. Select the legal entity that should be the source of the data to copy. By default, the legal entity that you're currently using is selected.
 6. On the **Legal entities** FastTab, you can select existing legal entities as a destination, or you can create new legal entities:
 
-    - **Select** – Select one or more legal entities in the list, and then select **Add selected**. The legal entities are created and added to the list of destination legal entities.
+    - **Select** – Select one or more legal entities in the list, and then select **Add selected**. The legal entities are added to the list of destination legal entities.
     - **Create** – Enter the legal entity ID, the legal entity name, and the region that the legal entity belongs in. Then select **Create legal entity**. The legal entity is created and added to the list of destination legal entities.
 
     > [!NOTE]
     > The functionality for creating destination legal entities is available in Finance and Operations 7.2.3.
 
-7. After you've added the destination legal entities, select **Yes** if the number sequences should be copied. The entities that are required in order to copy the number sequence codes and number sequence references will be added to the project. The execution unit, level, and sequence number for these entities are set to the numbers in the default System and Shared template. If you aren't using the default templates, adjust the entity sequences so that they are first in the list.
+7. After you've added the destination legal entities, select **Yes** if the number sequences should be copied. The entities that are required in order to copy the number sequence codes and number sequence references will be added to the project. The execution unit, level, and sequence number for these entities are set to the numbers in the default System and Shared templates. If you aren't using the default templates, adjust the entity sequences so that they are first in the list.
 8. If you selected **Yes** for number sequences, select **Yes** or **No** to specify whether those number sequences should be reset to the smallest value.
 9. Add the entities that represent the information that you want to copy. You can add entities by using several methods:
 
