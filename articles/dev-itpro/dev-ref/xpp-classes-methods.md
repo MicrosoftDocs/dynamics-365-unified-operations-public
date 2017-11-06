@@ -5,7 +5,7 @@ title: X++ classes and methods
 description: This topic describes how to create and use classes and interfaces in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -284,7 +284,7 @@ Several modifiers can be applied to method declarations. Some of the modifiers c
 -   **public** – Methods that are declared as **public** can be accessed anywhere that the class is accessible, and they can be overridden by subclasses. Methods that have no access modifier are implicitly public.
 -   **protected** – Methods that are declared as **protected** can be called only from methods in the class and in subclasses that extend the class where the method is declared.
 -   **private** – Methods that are declared as **private** can be called only from methods in the class where the private method is declared.
--   **static** – The method is a class method and doesn't act on an instance. Static methods can't refer to instance variables. They aren't invoked on an instance of the class. Instead, the are invoked by using the class name (for example, **MyClass::aStaticProcedure()**).
+-   **static** – The method is a class method and doesn't act on an instance. Static methods can't refer to instance variables. They aren't invoked on an instance of the class. Instead, they are invoked by using the class name (for example, **MyClass::aStaticProcedure()**).
 
 ### Methods that have modifiers
 

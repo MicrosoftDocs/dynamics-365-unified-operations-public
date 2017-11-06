@@ -2,10 +2,10 @@
 # required metadata
 
 title: Workflow elements
-description: This article describes the various elements that make up a workflow.
+description: This topic describes the various elements that make up a workflow.
 author: sericks007
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes the various elements that make up a workflow.
+This topic describes the various elements that make up a workflow.
 
 A workflow consists of elements. The sections that follow describe each type of element.
 
@@ -64,7 +64,7 @@ An *approval process* is a process that consists of separate steps. At each appr
 -   Request a change to the document.
 -   Assign the document to another user for approval.
 
-## Lineitem workflow elements
+## Line-item workflow elements
 A workflow can be created to process either documents or the line items on a document. For example, you've created an approval workflow for timesheets. (We will refer to this workflow as the *document workflow*.) You can add a *line-item workflow* element to that document workflow. When the line-item element is run, each line item on the document is submitted for processing. You might want all the line items to be processed by the same line-item workflow, or you might want each line item to be processed by a different line-item workflow. Imagine that an employee has submitted a timesheet that resembles the following figure.
 
 ![Workflow with line items](./media/workflow_lineitemworkflow.gif) 
@@ -75,7 +75,7 @@ In this scenario, you might want to create the following line-item workflows:
 -   **Line-item workflow 2** – This workflow is used to process line items where the project ID is 2222.
 -   **Line-item workflow 3** – This workflow is used to process line items where the project ID is 3333.
 
-## Flowcontrol elements
+## Flow-control elements
 The following elements let you design workflows that have alternate branches or branches that run at the same time.
 
 ### Manual decision

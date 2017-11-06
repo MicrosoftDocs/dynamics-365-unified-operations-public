@@ -5,7 +5,7 @@ title: LINQ provider for C#
 description: This topic discusses the LINQ provider.
 author: pvillads
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -116,7 +116,7 @@ There's a good match between the `while select` syntax used in X++ and the speci
 
 ### Limitation of the specialized LINQ syntax
 
-A limitation of the specialized LINQ syntax is that is can't be augmented with extensions to the LINQ provider. In contrast, standard syntax of method calls plus the lambda operator can be extended as needed. For instance, the LINQ framework provides a method for cross-company hints that can't be expressed in the special syntax for LINQ in C\#. Fortunately, due to the ability to compose queries, this limitation need not be a major problem. Calls to esoteric LINQ methods can be appended to the specialized LINQ syntax. The following C\# code shows this being done for the **crosscompany** method.
+A limitation of the specialized LINQ syntax is that it can't be augmented with extensions to the LINQ provider. In contrast, standard syntax of method calls plus the lambda operator can be extended as needed. For instance, the LINQ framework provides a method for cross-company hints that can't be expressed in the special syntax for LINQ in C\#. Fortunately, due to the ability to compose queries, this limitation need not be a major problem. Calls to esoteric LINQ methods can be appended to the specialized LINQ syntax. The following C\# code shows this being done for the **crosscompany** method.
 
     var query = (from ct in customers
                 from trans in customerTransactions

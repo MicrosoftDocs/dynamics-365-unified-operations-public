@@ -77,7 +77,7 @@ Cloud environments can be accessed both as an end user and as a developer. The d
 
 After you sign in to the environment through Remote Desktop, if you want to access the local application from the browser, use the same base URL that you use to access the application from a remote computer. The previous section explains how to obtain this base URL from LCS.
 
-## VM that is running onpremises
+## VM that is running on-premises
 An environment virtual hard disk (VHD) is made available for download from LCS, so that it can be set up on a local machine. This system is intended to be accessed by a developer.
 
 1.  On the main page for your LCS project, in the **Environments** section, click the plus sign (**+**), and then click **Locally**. You're taken to the Connect site.
