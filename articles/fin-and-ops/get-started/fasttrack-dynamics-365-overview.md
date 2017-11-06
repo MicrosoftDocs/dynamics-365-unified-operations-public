@@ -70,17 +70,32 @@ During FastTrack engagements, the Dynamics FastTrack engineering team will offer
 
 All sessions are delivered remotely by the FastTrack engineering team. We have time zone-based resources to cover major markets in the Americas, EMEA, and APAC. 
 
-FastTrack sessions are scheduled throughout the stages of the project lifecycle.  
+FastTrack sessions are scheduled throughout the stages of the project lifecycle. The following diagram summarizes how the lifecycle stages relate to the workshops and techtalks, which are described in detail below. 
 
-- Initiate
-- Design
-- Build
-- Deploy
-- Operate
+**Legend**
+- T: Tech talk
+- W: Workshop
+- Tech talks and Workshops in bold are included for 20-149 seats
 
-The following diagram summarizes how the lifecycle stages relate to the workshops and techtalks, which is explained in detail below. 
+|          INITIATE          |             DESIGN            |           BUILD          |             DEPLOY             |       OPERATE       |
+|:--------------------------:|:-----------------------------:|:------------------------:|:------------------------------:|:-------------------:|
+|    Bi-weekly touchpoints   |     Bi-weekly touchpoints     |   Bi-weekly touchpoints  |       Weekly touchpoints       |  Weekly touchpoints |
+|            **W 1.1**           |             W 2.2             |           W 3.1          |              **W 4.1**             |        W 5.1        |
+| Pre-kickoff (partner only) | Solution milestone workshop   | Build milestone workshop | Pre go-live milestone workshop | Post go-live review |
+|            **W 1.2**           |             W 2.1             |           W 3.2          |                                |                     |
+|           Kickoff          | Governance milestone workshop |  Build iterations (CRP)  |                                |                     |
+|            **T 1.1**           |             **T 2.1**             |           **T 3.1**          |                                |                     |
+|          LCS usage         |        Environment plan       |    Performance testing   |                                |                     |
+|            **T 1.2**           |             **T 2.2**             |           **T 3.2**          |                                |                     |
+|  Tenant/VSTS configuration |        Development ALM        |         Servicing        |                                |                     |
+|                            |             **T 2.3**             |                          |                                |                     |
+|                            |     Integration guidelines    |                          |                                |                     |
+|                            |             **T 2.4**             |                          |                                |                     |
+|                            |         Data migration        |                          |                                |                     |
+|                            |             **T 2.5**             |                          |                                |                     |
+|                            |            Upgrade            |                          |                                |                     |
 
-[![FastTrack diagram](./media/fasttrack-ops-1024x438.png)](./media/fasttrack-ops.png)
+
 
 
 ## Workshops
