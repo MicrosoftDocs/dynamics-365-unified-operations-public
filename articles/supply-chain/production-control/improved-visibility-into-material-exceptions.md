@@ -54,7 +54,7 @@ In the below figure the blue bar represents a production job scheduled on a
 resource. The job is scheduled to start on 2017/05/01, and this is the raw
 material date, that is, the date where the materials assigned to the job, in the
 BOM and formula lines, need to be ready. The other date in the figure,
-2017/05/06, represents the work space date. The Raw material date is earlier
+2017/05/06, represents the work space date. The raw material date is earlier
 than the workspace date so the day where consumption of the raw material was
 supposed to start has been exceeded and thus the BOM and formula lines meet the
 criteria for needing attention.
@@ -93,7 +93,7 @@ released. When the wave is processed, warehouse work for raw material picking is
 generated. If the wave template is set to not process at release, the wave will
 remain in an unprocessed state. The **Unprocessed waves needing attention** tile
 shows the number of BOM and formula lines that are released to warehouse on
-unprocessed waves where the Raw material date of the lines is earlier or equal
+unprocessed waves where the raw material date of the lines is earlier than or equal
 to the workspace date. It is also a prerequisite that the lines are consumed by
 an operation resource that applies to the filter of the workspace.
 
@@ -105,7 +105,7 @@ manually process the wave.
 **Tile - Open warehouse work needing attention**
 
 This tile shows the number of BOM and formula lines released to warehouse with
-unprocessed work where the Raw material date of the lines is earlier or equal to
+unprocessed work where the raw material date of the lines is earlier than or equal to
 the workspace date. It is also a prerequisite that the lines are consumed by an
 operation resource that applies to the filter of the workspace.
 
